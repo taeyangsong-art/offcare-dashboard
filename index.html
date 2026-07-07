@@ -40,14 +40,19 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, var(--bg-grad-1) 0%, var(--bg-grad-2) 100%);
+    /* 1) 어두운 오버레이(가독성)  2) 호날두 배경 사진  3) 사진 없을 때 대체 그라데이션 */
+    background:
+      linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.60)),
+      url('ronaldo.jpg') center center / cover no-repeat fixed,
+      linear-gradient(135deg, var(--bg-grad-1) 0%, var(--bg-grad-2) 100%);
+    background-color: var(--bg-grad-2);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding: 40px 16px;
     color: var(--text);
-    transition: background .3s;
+    transition: background-color .3s;
   }
   .app {
     background: var(--card);
