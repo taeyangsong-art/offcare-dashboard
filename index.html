@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>여행 준비물 체크리스트</title>
+<style>
+  :root {
+    --bg-grad-1: #667eea;
+    --bg-grad-2: #764ba2;
+    --card: #ffffff;
+    --text: #1f2937;
+    --text-soft: #6b7280;
+    --text-faint: #b0b4bd;
+    --border: #e5e7eb;
+    --hairline: #f0f0f2;
+    --hover: #f8f8fb;
+    --accent: #667eea;
+    --accent-hover: #5a6fd6;
+    --chip-bg: #eef0f4;
+    --chip-text: #4b5563;
+    --del-hover-bg: #ffe8e8;
+  }
+  html[data-theme="dark"] {
+    --bg-grad-1: #1e1b3a;
+    --bg-grad-2: #2d1f45;
+    --card: #1f2233;
+    --text: #e8eaf0;
+    --text-soft: #9aa0b0;
+    --text-faint: #5c6273;
+    --border: #333850;
+    --hairline: #2a2e42;
+    --hover: #262a3d;
+    --accent: #818cf8;
+    --accent-hover: #939dff;
+    --chip-bg: #2a2e42;
+    --chip-text: #b0b4c8;
+    --del-hover-bg: #4a2020;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, var(--bg-grad-1) 0%, var(--bg-grad-2) 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 16px;
+    color: var(--text);
+    transition: background .3s;
+  }
+  .app {
+    background: var(--card);
+    width: 100%;
+    max-width: 520px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,.25);
+    overflow: hidden;
+    transition: background .3s;
+  }
+  header {
+    padding: 26px 28px 22px;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  header h1 {
+    font-size: 21px;
+    font-weight: 800;
+    letter-spacing: -.02em;
+  }
+  header h1 .icon { margin-right: 6px; }
+  .theme-btn {
+    flex: 0 0 auto;
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    background: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background .2s, transform .1s;
+    color: var(--text);
+  }
+  .theme-btn:hover { background: var(--hover); }
+  .theme-btn:active { transform: scale(.92); }
+
+  .progress-wrap { margin-top: 18px; }
+  .progress-text {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-soft);
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .progress-text b { color: var(--accent); }
+  .progress-bar {
+    height: 8px;
+    background: var(--chip-bg);
+    border-radius: 99px;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--accent), var(--bg-grad-2));
+    border-radius: 99px;
+    transition: width .35s ease;
+  }
+
+  .presets {
+    padding: 18px 28px 4px;
+  }
+  .presets .presets-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-faint);
+    letter-spacing: .04em;
+    margin-bottom: 10px;
+  }
+  .preset-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .preset-chip {
+    padding: 8px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 99px;
+    background: transparent;
+    color: var(--chip-text);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .15s;
+  }
+  .preset-chip:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .preset-chip:active { transform: scale(.95); }
+
+  .input-row {
+    display: flex;
+    gap: 8px;
+    padding: 16px 28px 18px;
+  }
+  .input-row input.text {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    font-size: 15px;
+    outline: none;
+    background: var(--card);
+    color: var(--text);
+    transition: border-color .2s;
+  }
+  .input-row input.text:focus { border-color: var(--accent); }
+  .input-row select {
+    flex: 0 0 auto;
+    padding: 12px 10px;
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    font-size: 14px;
+    background: var(--card);
+    color: var(--text);
+    outline: none;
+    cursor: pointer;
+  }
+  .input-row button {
+    flex: 0 0 auto;
+    padding: 0 18px;
+    border: none;
+    border-radius: 12px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background .2s, transform .1s;
+  }
+  .input-row button:hover { background: var(--accent-hover); }
+  .input-row button:active { transform: scale(.96); }
+
+  .list {
+    padding: 0 16px 20px;
+    max-height: 46vh;
+    overflow-y: auto;
+  }
+  .cat-group { margin-bottom: 6px; }
+  .cat-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 12px 6px;
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--text-soft);
+    letter-spacing: .02em;
+  }
+  .cat-head .cat-count {
+    font-weight: 600;
+    color: var(--text-faint);
+    font-size: 12px;
+  }
+  ul.items { list-style: none; }
+  ul.items li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 12px;
+    transition: background .15s;
+  }
+  ul.items li:hover { background: var(--hover); }
+  .check {
+    flex: 0 0 auto;
+    width: 22px;
+    height: 22px;
+    border: 2px solid var(--border);
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .15s;
+  }
+  .check.done {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+  .check.done::after {
+    content: '';
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2.5px 2.5px 0;
+    transform: rotate(45deg) translateY(-1px);
+  }
+  .label {
+    flex: 1;
+    font-size: 16px;
+    cursor: pointer;
+    word-break: break-all;
+    transition: color .15s;
+    padding: 2px 0;
+  }
+  .label.done {
+    text-decoration: line-through;
+    color: var(--text-faint);
+  }
+  .label-edit {
+    flex: 1;
+    font-size: 16px;
+    padding: 1px 4px;
+    border: 1.5px solid var(--accent);
+    border-radius: 6px;
+    outline: none;
+    background: var(--card);
+    color: var(--text);
+  }
+  .del {
+    flex: 0 0 auto;
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: transparent;
+    color: var(--text-faint);
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all .15s;
+  }
+  .del:hover { background: var(--del-hover-bg); color: #ef4444; }
+  .empty {
+    text-align: center;
+    color: var(--text-faint);
+    font-size: 14px;
+    padding: 40px 20px;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="header-top">
+        <h1><span class="icon">🧳</span>여행 준비물 체크리스트</h1>
+        <button class="theme-btn" id="themeBtn" aria-label="다크모드 전환" title="다크모드 전환">🌙</button>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-text">
+          <span id="progressLabel">0개 중 0개 완료</span>
+          <b id="progressPct">0%</b>
+        </div>
+        <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+      </div>
+    </header>
+
+    <div class="presets">
+      <div class="presets-label">📋 템플릿 불러오기</div>
+      <div class="preset-chips">
+        <button class="preset-chip" data-preset="해외">✈️ 해외여행</button>
+        <button class="preset-chip" data-preset="국내">🚗 국내여행</button>
+        <button class="preset-chip" data-preset="캠핑">⛺ 캠핑</button>
+        <button class="preset-chip" data-preset="출장">💼 출장</button>
+      </div>
+    </div>
+
+    <div class="input-row">
+      <input type="text" class="text" id="itemInput" placeholder="항목 입력..." autocomplete="off">
+      <select id="catSelect" title="카테고리">
+        <option value="서류">서류</option>
+        <option value="전자기기">전자기기</option>
+        <option value="의류">의류</option>
+        <option value="세면도구">세면도구</option>
+        <option value="기타">기타</option>
+      </select>
+      <button id="addBtn">추가</button>
+    </div>
+
+    <div class="list" id="list"></div>
+  </div>
+
+<script>
+  // 카테고리 표시 순서 및 아이콘
+  const CATEGORIES = [
+    { key: '서류',     icon: '📄' },
+    { key: '전자기기', icon: '🔌' },
+    { key: '의류',     icon: '👕' },
+    { key: '세면도구', icon: '🧴' },
+    { key: '기타',     icon: '📦' },
+  ];
+
+  // 템플릿/프리셋 정의: { text, cat }
+  const PRESETS = {
+    해외: [
+      { text: '여권',            cat: '서류' },
+      { text: '항공권 / e-티켓',  cat: '서류' },
+      { text: '해외여행자 보험',  cat: '서류' },
+      { text: '환전 / 신용카드',  cat: '서류' },
+      { text: '휴대폰 충전기',    cat: '전자기기' },
+      { text: '멀티 어댑터',      cat: '전자기기' },
+      { text: '보조배터리',       cat: '전자기기' },
+      { text: '상하의 / 속옷',    cat: '의류' },
+      { text: '겉옷 / 외투',      cat: '의류' },
+      { text: '칫솔 / 치약',      cat: '세면도구' },
+      { text: '기초 화장품',      cat: '세면도구' },
+      { text: '상비약',           cat: '기타' },
+    ],
+    국내: [
+      { text: '신분증',          cat: '서류' },
+      { text: '숙소 예약 확인',   cat: '서류' },
+      { text: '휴대폰 충전기',    cat: '전자기기' },
+      { text: '보조배터리',       cat: '전자기기' },
+      { text: '갈아입을 옷',      cat: '의류' },
+      { text: '속옷 / 양말',      cat: '의류' },
+      { text: '세면도구 세트',    cat: '세면도구' },
+      { text: '수건',             cat: '세면도구' },
+      { text: '상비약',           cat: '기타' },
+      { text: '간식 / 물',        cat: '기타' },
+    ],
+    캠핑: [
+      { text: '예약 확인증',      cat: '서류' },
+      { text: '랜턴 / 손전등',    cat: '전자기기' },
+      { text: '보조배터리',       cat: '전자기기' },
+      { text: '방수 겉옷',        cat: '의류' },
+      { text: '여벌 옷 / 양말',   cat: '의류' },
+      { text: '휴대용 세면도구',  cat: '세면도구' },
+      { text: '물티슈',           cat: '세면도구' },
+      { text: '텐트 / 타프',      cat: '기타' },
+      { text: '침낭 / 매트',      cat: '기타' },
+      { text: '버너 / 코펠',      cat: '기타' },
+      { text: '아이스박스',       cat: '기타' },
+      { text: '상비약 / 벌레퇴치제', cat: '기타' },
+    ],
+    출장: [
+      { text: '신분증 / 명함',    cat: '서류' },
+      { text: '출장 서류 / 발표자료', cat: '서류' },
+      { text: '노트북',           cat: '전자기기' },
+      { text: '노트북 충전기',    cat: '전자기기' },
+      { text: '휴대폰 충전기',    cat: '전자기기' },
+      { text: '보조배터리',       cat: '전자기기' },
+      { text: '정장 / 셔츠',      cat: '의류' },
+      { text: '속옷 / 양말',      cat: '의류' },
+      { text: '세면도구 세트',    cat: '세면도구' },
+      { text: '면도기',           cat: '세면도구' },
+      { text: '상비약',           cat: '기타' },
+    ],
+  };
+
+  let items = []; // { text, done, cat }
+  let uid = 0;
+
+  const listEl = document.getElementById('list');
+  const inputEl = document.getElementById('itemInput');
+  const catSelect = document.getElementById('catSelect');
+  const addBtn = document.getElementById('addBtn');
+  const progressLabel = document.getElementById('progressLabel');
+  const progressPct = document.getElementById('progressPct');
+  const progressFill = document.getElementById('progressFill');
+  const themeBtn = document.getElementById('themeBtn');
+
+  function render() {
+    listEl.innerHTML = '';
+
+    if (items.length === 0) {
+      const empty = document.createElement('div');
+      empty.className = 'empty';
+      empty.innerHTML = '아직 항목이 없어요.<br>위에서 템플릿을 불러오거나 직접 추가해보세요! ✈️';
+      listEl.appendChild(empty);
+      updateProgress();
+      return;
+    }
+
+    // 카테고리별로 그룹핑해서 순서대로 렌더
+    CATEGORIES.forEach(cat => {
+      const group = items.filter(it => it.cat === cat.key);
+      if (group.length === 0) return;
+
+      const doneCount = group.filter(it => it.done).length;
+
+      const groupEl = document.createElement('div');
+      groupEl.className = 'cat-group';
+
+      const head = document.createElement('div');
+      head.className = 'cat-head';
+      head.innerHTML = `<span>${cat.icon} ${cat.key}</span><span class="cat-count">${doneCount}/${group.length}</span>`;
+      groupEl.appendChild(head);
+
+      const ul = document.createElement('ul');
+      ul.className = 'items';
+
+      group.forEach(item => {
+        ul.appendChild(buildRow(item));
+      });
+
+      groupEl.appendChild(ul);
+      listEl.appendChild(groupEl);
+    });
+
+    updateProgress();
+  }
+
+  function buildRow(item) {
+    const li = document.createElement('li');
+
+    const check = document.createElement('div');
+    check.className = 'check' + (item.done ? ' done' : '');
+    check.addEventListener('click', () => { item.done = !item.done; render(); });
+
+    const label = document.createElement('span');
+    label.className = 'label' + (item.done ? ' done' : '');
+    label.textContent = item.text;
+    // 클릭하면 인라인 수정
+    label.addEventListener('click', () => startEdit(li, item, label));
+
+    const del = document.createElement('button');
+    del.className = 'del';
+    del.innerHTML = '&times;';
+    del.setAttribute('aria-label', '삭제');
+    del.addEventListener('click', () => {
+      items = items.filter(it => it !== item);
+      render();
+    });
+
+    li.appendChild(check);
+    li.appendChild(label);
+    li.appendChild(del);
+    return li;
+  }
+
+  function startEdit(li, item, label) {
+    const editInput = document.createElement('input');
+    editInput.type = 'text';
+    editInput.className = 'label-edit';
+    editInput.value = item.text;
+    li.replaceChild(editInput, label);
+    editInput.focus();
+    editInput.setSelectionRange(item.text.length, item.text.length);
+
+    let finished = false;
+    const commit = () => {
+      if (finished) return;
+      finished = true;
+      const v = editInput.value.trim();
+      if (v) item.text = v;
+      render();
+    };
+    editInput.addEventListener('blur', commit);
+    editInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') { commit(); }
+      else if (e.key === 'Escape') { finished = true; render(); }
+    });
+  }
+
+  function updateProgress() {
+    const total = items.length;
+    const done = items.filter(i => i.done).length;
+    const pct = total === 0 ? 0 : Math.round((done / total) * 100);
+    progressLabel.textContent = `${total}개 중 ${done}개 완료`;
+    progressPct.textContent = `${pct}%`;
+    progressFill.style.width = pct + '%';
+  }
+
+  function addItem() {
+    const text = inputEl.value.trim();
+    if (!text) return;
+    items.push({ text, done: false, cat: catSelect.value });
+    inputEl.value = '';
+    inputEl.focus();
+    render();
+  }
+
+  function loadPreset(name) {
+    const preset = PRESETS[name];
+    if (!preset) return;
+    if (items.length > 0) {
+      const ok = confirm(`'${name}' 템플릿을 불러올까요?\n현재 목록은 새 목록으로 교체됩니다.`);
+      if (!ok) return;
+    }
+    items = preset.map(p => ({ text: p.text, done: false, cat: p.cat }));
+    render();
+  }
+
+  // 이벤트 바인딩
+  addBtn.addEventListener('click', addItem);
+  inputEl.addEventListener('keydown', (e) => { if (e.key === 'Enter') addItem(); });
+
+  document.querySelectorAll('.preset-chip').forEach(chip => {
+    chip.addEventListener('click', () => loadPreset(chip.dataset.preset));
+  });
+
+  // 다크모드 토글
+  function setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    themeBtn.textContent = theme === 'dark' ? '☀️' : '🌙';
+  }
+  themeBtn.addEventListener('click', () => {
+    const cur = document.documentElement.getAttribute('data-theme');
+    setTheme(cur === 'dark' ? 'light' : 'dark');
+  });
+  // 시스템 설정 기반 초기값
+  setTheme(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+  render();
+</script>
+</body>
+</html>
