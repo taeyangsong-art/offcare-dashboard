@@ -3,528 +3,1031 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>여행 준비물 체크리스트</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Offline Care Team 원격파트 대시보드</title>
 <style>
-  :root {
-    /* Apple design tokens — light (default) */
-    --page-bg: #f5f5f7;       /* parchment canvas */
-    --card: #ffffff;          /* white utility card */
-    --ink: #1d1d1f;           /* near-black text */
-    --muted: #7a7a7a;         /* ink-muted-48 */
-    --muted-strong: #333333;  /* ink-muted-80 */
-    --hairline: #e0e0e0;
-    --accent: #0066cc;        /* Action Blue — the single accent */
-    --accent-focus: #0071e3;
-    --track: #e8e8ed;         /* progress track */
+  :root{
+    --ink:#1d1d1f; --ink-soft:#424245; --gray:#6e6e73; --gray2:#86868b;
+    --line:#d2d2d7; --line-soft:#e8e8ed; --surface:#f5f5f7; --surface2:#fafafa;
+    --canvas:#ffffff; --blue:#0071e3; --blue-soft:#e8f1fd; --blue-deep:#0060c0;
+    --red:#ff3b30; --red-soft:#ffecec; --green:#34c759; --green-soft:#e7f8ec;
+    --orange:#ff9500; --purple:#5e5ce6;
+    --sat:#0a84ff; --sun:#ff3b30;
+    --shadow:0 1px 3px rgba(0,0,0,.06),0 6px 20px rgba(0,0,0,.05);
+    --radius:18px;
   }
-  html[data-theme="dark"] {
-    --page-bg: #1d1d1f;
-    --card: #272729;          /* near-black tile 1 */
-    --ink: #ffffff;           /* on-dark */
-    --muted: #cccccc;         /* body-muted on dark */
-    --muted-strong: #cccccc;
-    --hairline: rgba(255,255,255,0.14);
-    --accent: #2997ff;        /* Sky Link Blue — dark-surface accent */
-    --accent-focus: #2997ff;
-    --track: #3a3a3d;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { -webkit-text-size-adjust: 100%; }
-  body {
-    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    font-feature-settings: "ss03";
-    background: var(--page-bg);
-    color: var(--ink);
-    min-height: 100vh;
-    line-height: 1.47;
-    transition: background-color .3s, color .3s;
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro KR","Apple SD Gothic Neo",
+      "Pretendard","Segoe UI",Roboto,sans-serif;
+    background:var(--surface); color:var(--ink);
+    -webkit-font-smoothing:antialiased; line-height:1.45;
+    display:flex; min-height:100vh;
   }
 
-  /* ---- global nav: the only pure-black surface ---- */
-  .global-nav {
-    height: 44px;
-    background: #000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 clamp(16px, 5vw, 40px);
-    position: sticky;
-    top: 0;
-    z-index: 50;
+  /* ===== Sidebar ===== */
+  .sidebar{
+    width:248px; flex:0 0 248px; background:var(--canvas);
+    border-right:1px solid var(--line-soft); padding:26px 16px;
+    display:flex; flex-direction:column; gap:6px; position:sticky; top:0; height:100vh;
   }
-  .global-nav .wordmark {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: -0.224px;
+  .brand{padding:4px 12px 22px; }
+  .brand h1{font-size:17px; font-weight:700; letter-spacing:-.02em; line-height:1.3}
+  .brand p{font-size:12px; color:var(--gray2); margin-top:4px}
+  .nav-label{font-size:11px; font-weight:700; letter-spacing:.06em; color:var(--gray2);
+    padding:8px 12px 4px; text-transform:uppercase}
+  .navbtn{
+    display:flex; align-items:center; gap:11px; width:100%; text-align:left;
+    padding:11px 13px; border:none; background:none; border-radius:11px;
+    font-size:15px; font-weight:500; color:var(--ink-soft); cursor:pointer;
+    transition:background .15s, color .15s; font-family:inherit;
   }
-  .nav-toggle {
-    background: #1d1d1f;
-    color: #fff;
-    border: none;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: -0.224px;
-    border-radius: 8px;           /* rounded.sm */
-    padding: 6px 13px;
-    cursor: pointer;
-    transition: transform .12s;
-  }
-  .nav-toggle:active { transform: scale(0.95); }
+  .navbtn:hover{background:var(--surface)}
+  .navbtn.active{background:var(--blue); color:#fff; font-weight:600}
+  .navbtn .ic{width:20px; text-align:center; font-size:16px}
+  .lock-out{margin-top:auto; display:flex; align-items:center; justify-content:center; gap:8px;
+    padding:11px 13px; border:1px solid var(--line-soft); background:none; border-radius:11px;
+    font-size:13px; font-weight:600; color:var(--gray); cursor:pointer; font-family:inherit; transition:.15s}
+  .lock-out:hover{background:var(--surface); color:var(--ink)}
 
-  /* ---- content container ---- */
-  .wrap {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: clamp(40px, 8vw, 72px) clamp(16px, 5vw, 24px) 96px;
-  }
+  /* ===== Main ===== */
+  .main{flex:1; min-width:0; padding:32px 40px 64px; overflow-x:hidden}
+  .page-head{display:flex; align-items:flex-end; justify-content:space-between; gap:20px;
+    flex-wrap:wrap; margin-bottom:26px}
+  .page-head h2{font-size:30px; font-weight:700; letter-spacing:-.03em}
+  .page-head .sub{font-size:14px; color:var(--gray); margin-top:5px}
 
-  /* ---- hero header ---- */
-  .hero h1 {
-    font-size: clamp(34px, 6vw, 40px);
-    font-weight: 600;
-    line-height: 1.10;
-    letter-spacing: -0.02em;      /* Apple-tight */
-  }
-  .hero .tagline {
-    font-size: 21px;
-    font-weight: 400;
-    line-height: 1.19;
-    letter-spacing: 0.01em;
-    color: var(--muted);
-    margin-top: 10px;
-  }
+  /* controls */
+  .controls{display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+  .seg{display:inline-flex; background:var(--surface); border-radius:11px; padding:3px;
+    border:1px solid var(--line-soft)}
+  .seg button{border:none; background:none; padding:8px 16px; border-radius:8px;
+    font-size:13px; font-weight:600; color:var(--gray); cursor:pointer; font-family:inherit;
+    transition:.15s}
+  .seg button.on{background:var(--canvas); color:var(--ink); box-shadow:0 1px 2px rgba(0,0,0,.08)}
+  input[type=date]{font-family:inherit; font-size:14px; padding:9px 13px; border:1px solid var(--line);
+    border-radius:11px; background:var(--canvas); color:var(--ink); cursor:pointer}
+  .btn{border:none; background:var(--canvas); border:1px solid var(--line);
+    padding:9px 15px; border-radius:11px; font-size:13px; font-weight:600; color:var(--ink);
+    cursor:pointer; font-family:inherit; transition:.15s}
+  .btn:hover{background:var(--surface)}
+  .btn.primary{background:var(--blue); color:#fff; border-color:var(--blue)}
+  .btn.primary:hover{background:var(--blue-deep)}
 
-  /* ---- progress ---- */
-  .progress {
-    margin-top: 32px;
-  }
-  .progress-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    font-size: 17px;
-    font-weight: 400;
-    letter-spacing: -0.374px;
-    margin-bottom: 12px;
-  }
-  .progress-row .count b { font-weight: 600; }
-  .progress-row .pct { color: var(--accent); font-weight: 600; }
-  .progress-track {
-    height: 6px;
-    background: var(--track);
-    border-radius: 9999px;
-    overflow: hidden;
-  }
-  .progress-fill {
-    height: 100%;
-    width: 0%;
-    background: var(--accent);
-    border-radius: 9999px;
-    transition: width .35s ease;
-  }
+  /* KPI cards */
+  .kpis{display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:24px}
+  .kpi{background:var(--canvas); border-radius:var(--radius); padding:20px 22px; box-shadow:var(--shadow)}
+  .kpi .lab{font-size:13px; color:var(--gray); font-weight:600}
+  .kpi .val{font-size:34px; font-weight:700; letter-spacing:-.03em; margin-top:8px; line-height:1}
+  .kpi .val small{font-size:15px; font-weight:600; color:var(--gray2); margin-left:3px}
+  .kpi .delta{font-size:12.5px; margin-top:8px; font-weight:600}
+  .kpi .delta.up{color:var(--green)} .kpi .delta.down{color:var(--red)} .kpi .delta.flat{color:var(--gray2)}
 
-  /* ---- presets ---- */
-  .presets { margin-top: 40px; }
-  .section-label {
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: -0.224px;
-    color: var(--muted);
-    margin-bottom: 14px;
-  }
-  .preset-chips { display: flex; flex-wrap: wrap; gap: 10px; }
-  .chip-ghost {
-    /* button-secondary-pill: ghost pill */
-    background: transparent;
-    color: var(--accent);
-    border: 1px solid var(--accent);
-    border-radius: 9999px;        /* rounded.pill */
-    padding: 9px 18px;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: -0.224px;
-    cursor: pointer;
-    transition: transform .12s;
-  }
-  .chip-ghost:active { transform: scale(0.95); }
+  /* card */
+  .card{background:var(--canvas); border-radius:var(--radius); padding:24px; box-shadow:var(--shadow);
+    margin-bottom:24px}
+  .card-head{display:flex; align-items:center; justify-content:space-between; margin-bottom:18px; gap:12px}
+  .card-head h3{font-size:17px; font-weight:700; letter-spacing:-.01em}
+  .card-head .hint{font-size:12.5px; color:var(--gray2)}
+  .grid2{display:grid; grid-template-columns:1.15fr .85fr; gap:24px; align-items:start}
 
-  /* ---- input row ---- */
-  .input-row {
-    margin-top: 40px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-  .input-row .text {
-    flex: 1 1 200px;
-    min-width: 0;
-    background: var(--card);
-    color: var(--ink);
-    border: 1px solid var(--hairline);
-    border-radius: 9999px;        /* search-input is a pill */
-    padding: 12px 20px;
-    font-size: 17px;
-    letter-spacing: -0.374px;
-    outline: none;
-    transition: border-color .15s;
-  }
-  .input-row .text:focus { border-color: var(--accent-focus); }
-  .input-row .cat {
-    flex: 0 0 auto;
-    background: var(--card);
-    color: var(--ink);
-    border: 1px solid var(--hairline);
-    border-radius: 9999px;
-    padding: 12px 16px;
-    font-size: 14px;
-    letter-spacing: -0.224px;
-    outline: none;
-    cursor: pointer;
-  }
-  .btn-primary {
-    /* button-primary: Action Blue pill */
-    flex: 0 0 auto;
-    background: var(--accent);
-    color: #fff;
-    border: none;
-    border-radius: 9999px;        /* rounded.pill */
-    padding: 11px 22px;
-    font-size: 17px;
-    font-weight: 400;
-    letter-spacing: -0.374px;
-    cursor: pointer;
-    transition: transform .12s;
-  }
-  .btn-primary:active { transform: scale(0.95); }
-  .btn-primary:focus-visible { outline: 2px solid var(--accent-focus); outline-offset: 2px; }
+  /* chart */
+  .chart-wrap{width:100%; overflow-x:auto}
+  svg{display:block; max-width:100%}
+  .bar-row{margin-bottom:11px}
+  .bar-meta{display:flex; justify-content:space-between; font-size:13px; margin-bottom:5px}
+  .bar-meta .nm{font-weight:600; color:var(--ink-soft)}
+  .bar-meta .ct{font-weight:700; color:var(--ink)}
+  .bar-track{height:10px; background:var(--surface); border-radius:6px; overflow:hidden}
+  .bar-fill{height:100%; border-radius:6px; background:linear-gradient(90deg,var(--blue),#4a9bff);
+    transition:width .5s cubic-bezier(.22,1,.36,1)}
 
-  /* ---- list: one utility card per category ---- */
-  .list { margin-top: 40px; display: flex; flex-direction: column; gap: 20px; }
-  .cat-card {
-    background: var(--card);
-    border: 1px solid var(--hairline);
-    border-radius: 18px;          /* rounded.lg — no shadow */
-    overflow: hidden;
-  }
-  .cat-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 24px;
-    border-bottom: 1px solid var(--hairline);
-  }
-  .cat-head .name {
-    font-size: 21px;
-    font-weight: 600;
-    letter-spacing: -0.01em;
-  }
-  .cat-head .count {
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: -0.224px;
-    color: var(--muted);
-  }
-  .item {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    padding: 15px 24px;
-    border-bottom: 1px solid var(--hairline);
-  }
-  .item:last-child { border-bottom: none; }
-  .check {
-    flex: 0 0 auto;
-    width: 22px;
-    height: 22px;
-    border: 1.5px solid var(--hairline);
-    border-radius: 7px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color .15s, border-color .15s;
-  }
-  .check.done { background: var(--accent); border-color: var(--accent); }
-  .check.done::after {
-    content: '';
-    width: 5px;
-    height: 10px;
-    border: solid #fff;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg) translateY(-1px);
-  }
-  .label {
-    flex: 1;
-    font-size: 17px;
-    font-weight: 400;
-    letter-spacing: -0.374px;
-    cursor: pointer;
-    word-break: break-all;
-  }
-  .label.done { text-decoration: line-through; color: var(--muted); }
-  .label-edit {
-    flex: 1;
-    font-size: 17px;
-    letter-spacing: -0.374px;
-    background: var(--page-bg);
-    color: var(--ink);
-    border: 1px solid var(--accent-focus);
-    border-radius: 8px;
-    padding: 2px 8px;
-    outline: none;
-  }
-  .del {
-    flex: 0 0 auto;
-    width: 28px;
-    height: 28px;
-    background: transparent;
-    border: none;
-    color: var(--muted);
-    font-size: 20px;
-    line-height: 1;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: color .15s;
-  }
-  .del:hover { color: var(--ink); }
+  /* table */
+  table{width:100%; border-collapse:collapse; font-size:14px}
+  th{text-align:left; font-size:12px; font-weight:700; color:var(--gray); letter-spacing:.02em;
+    padding:11px 12px; border-bottom:1px solid var(--line); white-space:nowrap}
+  th.num,td.num{text-align:right}
+  td{padding:9px 12px; border-bottom:1px solid var(--line-soft); vertical-align:middle}
+  tr:last-child td{border-bottom:none}
+  .emp-name{font-weight:600}
+  .count-input{width:74px; text-align:right; font-family:inherit; font-size:14px; font-weight:600;
+    padding:7px 9px; border:1px solid var(--line); border-radius:9px; background:var(--surface2);
+    color:var(--ink); transition:.15s}
+  .count-input:focus{outline:none; border-color:var(--blue); background:#fff; box-shadow:0 0 0 3px var(--blue-soft)}
+  tfoot td{font-weight:700; border-top:2px solid var(--line); padding-top:13px}
+  .rank{display:inline-flex; width:22px; height:22px; align-items:center; justify-content:center;
+    border-radius:7px; background:var(--surface); font-size:12px; font-weight:700; color:var(--gray)}
 
-  .empty {
-    text-align: center;
-    color: var(--muted);
-    font-size: 17px;
-    letter-spacing: -0.374px;
-    padding: 56px 20px;
-    line-height: 1.6;
+  /* pending lookup */
+  .search-box{width:100%; font-family:inherit; font-size:14px; padding:11px 14px; border:1px solid var(--line);
+    border-radius:12px; background:var(--surface2); color:var(--ink); transition:.15s}
+  .search-box:focus{outline:none; border-color:var(--blue); background:#fff; box-shadow:0 0 0 3px var(--blue-soft)}
+  .trow-time{color:var(--gray2); font-size:13px; white-space:nowrap}
+  .trow-biz{font-family:'SF Mono',ui-monospace,Menlo,Consolas,monospace; font-size:13px; color:var(--slate,#454b54)}
+  .status-tag{display:inline-block; font-size:11px; font-weight:700; padding:3px 8px; border-radius:6px; margin:1px 2px 1px 0; white-space:nowrap}
+  .status-tag.absent{background:var(--red-soft); color:var(--red)}
+  .status-tag.unassigned{background:#fff4d6; color:#a8620a}
+
+  /* mini trend bars in table */
+  .spark{display:inline-flex; align-items:flex-end; gap:2px; height:22px}
+  .spark i{width:5px; background:var(--blue-soft); border-radius:2px; display:block}
+  .spark i.hi{background:var(--blue)}
+
+  /* ===== Duty calendar ===== */
+  .cal-toolbar{display:flex; align-items:center; gap:14px; margin-bottom:20px}
+  .cal-toolbar .mtitle{font-size:22px; font-weight:700; letter-spacing:-.02em; min-width:150px}
+  .navround{width:38px; height:38px; border-radius:50%; border:1px solid var(--line); background:var(--canvas);
+    font-size:17px; cursor:pointer; color:var(--ink); display:inline-flex; align-items:center; justify-content:center}
+  .navround:hover{background:var(--surface)}
+  .cal-grid{display:grid; grid-template-columns:repeat(7,1fr); gap:8px}
+  .dow{font-size:12px; font-weight:700; text-align:center; padding:6px 0; color:var(--gray)}
+  .dow.s-sat{color:var(--sat)} .dow.s-sun{color:var(--sun)}
+  .daycell{background:var(--canvas); border:1px solid var(--line-soft); border-radius:14px; min-height:150px;
+    padding:9px; display:flex; flex-direction:column; gap:6px}
+  .daycell.empty{background:transparent; border:none}
+  .daycell.today{border:2px solid var(--blue); box-shadow:0 0 0 3px var(--blue-soft)}
+  .daycell.holi{background:var(--red-soft)}
+  .dnum{font-size:14px; font-weight:700; display:flex; align-items:center; gap:5px}
+  .dnum.s-sat{color:var(--sat)} .dnum.s-sun{color:var(--sun)}
+  .holi-tag{font-size:10px; font-weight:700; color:var(--red); background:#fff; padding:1px 6px;
+    border-radius:6px; border:1px solid var(--red-soft)}
+  .duty-slot{display:flex; align-items:center; gap:6px}
+  .slot-tag{font-size:10px; font-weight:800; letter-spacing:.02em; padding:3px 6px; border-radius:6px;
+    flex:0 0 auto; width:38px; text-align:center}
+  .slot-tag.day{background:#fff3cd; color:#946200}
+  .slot-tag.aft{background:#d9edff; color:#0060c0}
+  .slot-tag.nit{background:#e4e0ff; color:#4b45c0}
+  .slot-tag.inst{background:#d6f5e3; color:#1a7d47}
+  .slot-field{flex:1; min-width:0; font-size:12.5px; padding:5px 7px; border:1px solid transparent;
+    border-radius:7px; background:var(--surface); cursor:text; color:var(--ink); font-family:inherit;
+    min-height:27px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .slot-field:hover{background:var(--surface2); border-color:var(--line-soft)}
+  .slot-field:empty::before{content:"이름 입력"; color:var(--gray2)}
+  .slot-field:focus{outline:none; border-color:var(--blue); background:#fff; box-shadow:0 0 0 3px var(--blue-soft);
+    white-space:normal}
+
+  /* ===== Share calendar ===== */
+  .sel{font-family:inherit; font-size:14px; padding:9px 13px; border:1px solid var(--line);
+    border-radius:11px; background:var(--canvas); color:var(--ink); cursor:pointer}
+  .daycell.share{min-height:118px; gap:4px}
+  .daycell.share .dnum{justify-content:space-between; width:100%}
+  .add-ev{margin-left:auto; width:20px; height:20px; border-radius:6px; border:none; cursor:pointer;
+    background:var(--surface); color:var(--gray); font-size:15px; line-height:1; font-weight:700;
+    display:inline-flex; align-items:center; justify-content:center; transition:.15s}
+  .add-ev:hover{background:var(--blue); color:#fff}
+  .ev-list{display:flex; flex-direction:column; gap:4px; overflow:hidden}
+  .ev-chip{display:flex; align-items:flex-start; gap:5px; font-size:11px; font-weight:700; padding:4px 5px 4px 7px;
+    border-radius:7px; line-height:1.35; transition:.15s}
+  .ev-chip:hover{filter:brightness(.96)}
+  .ev-dot{width:7px; height:7px; border-radius:50%; flex:0 0 auto; margin-top:3px; display:inline-block}
+  .ev-txt{flex:1; min-width:0; display:flex; flex-direction:column; gap:1px; white-space:normal; word-break:keep-all}
+  .ev-head{font-weight:800}
+  .ev-time{font-weight:700; opacity:.95}
+  .ev-memo{font-weight:600; opacity:.85}
+  .ev-del{flex:0 0 auto; border:none; background:transparent; color:inherit; cursor:pointer;
+    font-size:14px; line-height:1; opacity:.45; padding:0 1px; margin-top:-1px; font-weight:700}
+  .ev-del:hover{opacity:1}
+
+  /* form modal */
+  .form-modal{text-align:left; width:min(440px,92vw)}
+  .form-modal h4{text-align:center}
+  .form-row{display:flex; align-items:center; gap:12px; margin-bottom:12px}
+  .form-row label{flex:0 0 56px; font-size:13px; font-weight:700; color:var(--gray)}
+  .form-row input, .form-row select{flex:1; font-family:inherit; font-size:14px; padding:9px 11px;
+    border:1px solid var(--line); border-radius:10px; background:var(--surface2); color:var(--ink)}
+  .form-row input:focus, .form-row select:focus{outline:none; border-color:var(--blue); background:#fff;
+    box-shadow:0 0 0 3px var(--blue-soft)}
+  .time-range{flex:1; display:flex; align-items:center; gap:8px}
+  .time-range select{flex:1; min-width:0}
+  .time-range .tilde{color:var(--gray); font-weight:700}
+
+  /* ===== Lock / Login (참신 경고성) ===== */
+  .lock{position:fixed; inset:0; z-index:100; display:flex; align-items:center; justify-content:center;
+    background:radial-gradient(120% 120% at 50% 0%,#14e0cf 0%,#00a3ff 42%,#0057d9 100%);
+    padding:24px; overflow:hidden; transition:opacity .4s ease}
+  .lock.hide{opacity:0; pointer-events:none}
+  .float-emoji{position:absolute; font-size:56px; opacity:.22; user-select:none; pointer-events:none;
+    filter:drop-shadow(0 6px 12px rgba(0,0,0,.15)); animation:floaty 7s ease-in-out infinite}
+  .float-emoji.e1{top:12%; left:12%; animation-delay:0s}
+  .float-emoji.e2{top:20%; right:14%; font-size:48px; animation-delay:1.2s}
+  .float-emoji.e3{bottom:16%; left:16%; font-size:44px; animation-delay:2.1s}
+  .float-emoji.e4{bottom:20%; right:12%; animation-delay:.6s}
+  @keyframes floaty{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-22px) rotate(6deg)}}
+
+  .lock-card{position:relative; background:var(--canvas); border-radius:30px; padding:40px 38px 30px;
+    width:min(440px,93vw); text-align:center; box-shadow:0 30px 90px rgba(0,40,90,.45);
+    animation:cardPop .5s cubic-bezier(.22,1.2,.36,1)}
+  @keyframes cardPop{0%{transform:scale(.9) translateY(14px); opacity:0}100%{transform:scale(1) translateY(0); opacity:1}}
+
+  .lock-badge{display:inline-flex; align-items:center; gap:6px; background:#fff4d6; color:#a8620a;
+    font-size:12.5px; font-weight:800; letter-spacing:-.01em; padding:7px 14px; border-radius:20px;
+    margin-bottom:20px; animation:badgePulse 1.6s ease-in-out infinite}
+  @keyframes badgePulse{0%,100%{box-shadow:0 0 0 0 rgba(255,149,0,.35)}50%{box-shadow:0 0 0 8px rgba(255,149,0,0)}}
+
+  .logo-wrap{position:relative; display:inline-flex; align-items:center; justify-content:center; margin-bottom:14px}
+  .pulse-ring{position:absolute; width:96px; height:96px; border-radius:26px; background:#00a3ff;
+    opacity:.35; animation:ring 1.8s ease-out infinite}
+  @keyframes ring{0%{transform:scale(.85); opacity:.4}100%{transform:scale(1.5); opacity:0}}
+  .logo-tile{position:relative; width:88px; height:88px; border-radius:24px;
+    background:linear-gradient(145deg,#19e3d0 0%,#00a3ff 55%,#0071e3 100%);
+    display:flex; align-items:center; justify-content:center; box-shadow:0 12px 26px rgba(0,120,220,.45);
+    animation:wobble 2.6s ease-in-out infinite}
+  @keyframes wobble{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+  .logo-s{font-size:52px; font-weight:900; color:#fff; letter-spacing:-.04em; font-style:italic;
+    text-shadow:0 2px 6px rgba(0,0,0,.18)}
+  .lock-wordmark{font-size:15px; font-weight:800; color:var(--ink); letter-spacing:-.01em; margin-bottom:18px}
+  .lock-wordmark span{color:var(--gray2); font-weight:600}
+
+  .lock-q{font-size:30px; font-weight:800; letter-spacing:-.03em; color:var(--ink); line-height:1.22; margin-bottom:12px}
+  .lock-q em{font-style:normal; color:#0071e3; position:relative}
+  .lock-q em::after{content:''; position:absolute; left:-2px; right:-2px; bottom:2px; height:9px;
+    background:rgba(0,163,255,.22); border-radius:4px; z-index:-1}
+  .wave{display:inline-block; animation:wave 1.4s ease-in-out infinite; transform-origin:70% 80%}
+  @keyframes wave{0%,60%,100%{transform:rotate(0)}15%{transform:rotate(20deg)}30%{transform:rotate(-12deg)}45%{transform:rotate(16deg)}}
+
+  .lock-desc{font-size:14.5px; color:var(--gray); line-height:1.6; margin-bottom:20px}
+  .lock-desc b{color:var(--ink); font-weight:800}
+  .lock-input{width:100%; font-family:inherit; font-size:17px; font-weight:600; text-align:center; padding:15px 16px;
+    border:2px solid var(--line); border-radius:15px; background:var(--surface2); color:var(--ink); transition:.15s}
+  .lock-input:focus{outline:none; border-color:#00a3ff; background:#fff; box-shadow:0 0 0 4px rgba(0,163,255,.18)}
+  .lock-input.shake{animation:shake .4s}
+  @keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-9px)}40%,80%{transform:translateX(9px)}}
+  .lock-err{min-height:20px; font-size:13px; font-weight:700; color:var(--red); margin:10px 0 2px}
+  .lock-btn{width:100%; padding:16px; font-size:16px; font-weight:800; letter-spacing:-.01em; border:none;
+    border-radius:15px; color:#fff; cursor:pointer; font-family:inherit; margin-top:6px;
+    background:linear-gradient(135deg,#00b3e6,#0071e3); box-shadow:0 10px 24px rgba(0,113,227,.4); transition:.15s}
+  .lock-btn:hover{filter:brightness(1.06); transform:translateY(-1px)}
+  .lock-btn:active{transform:translateY(0)}
+  .lock-foot{font-size:12px; color:var(--gray2); font-weight:600; margin-top:18px}
+
+  /* alert modal */
+  .overlay{position:fixed; inset:0; background:rgba(0,0,0,.32); backdrop-filter:blur(3px);
+    display:flex; align-items:center; justify-content:center; z-index:50; opacity:0; pointer-events:none;
+    transition:opacity .25s}
+  .overlay.show{opacity:1; pointer-events:auto}
+  .modal{background:var(--canvas); border-radius:22px; padding:30px 32px; width:min(420px,90vw);
+    box-shadow:0 20px 60px rgba(0,0,0,.25); text-align:center; transform:scale(.94); transition:transform .25s}
+  .overlay.show .modal{transform:scale(1)}
+  .modal .bell{font-size:40px; margin-bottom:12px}
+  .modal h4{font-size:20px; font-weight:700; letter-spacing:-.02em; margin-bottom:8px}
+  .modal p{font-size:15px; color:var(--ink-soft); line-height:1.6}
+  .modal .names{font-weight:700; color:var(--blue)}
+  .modal .date-line{font-size:13px; color:var(--gray2); margin-top:6px}
+  .modal .acts{margin-top:22px; display:flex; gap:10px; justify-content:center}
+
+  .legend{display:flex; gap:16px; flex-wrap:wrap; font-size:12.5px; color:var(--gray); margin-top:16px}
+  .legend span{display:inline-flex; align-items:center; gap:6px}
+  .swatch{width:12px; height:12px; border-radius:4px; display:inline-block}
+
+  @media (max-width:900px){
+    .sidebar{display:none}
+    .main{padding:22px 18px 48px}
+    .kpis{grid-template-columns:repeat(2,1fr)}
+    .grid2{grid-template-columns:1fr}
+    .cal-grid{gap:4px}
+    .daycell{min-height:auto; padding:6px}
   }
 </style>
 </head>
 <body>
-  <nav class="global-nav">
-    <span class="wordmark">🧳 여행 준비물</span>
-    <button class="nav-toggle" id="themeBtn">다크 모드</button>
-  </nav>
 
-  <main class="wrap">
-    <header class="hero">
-      <h1>여행 준비물 체크리스트.</h1>
-      <p class="tagline">챙길 것을 하나도 빠뜨리지 않도록.</p>
+<!-- Lock / Login screen -->
+<div class="lock" id="lock">
+  <span class="float-emoji e1">⏰</span>
+  <span class="float-emoji e2">🖐️</span>
+  <span class="float-emoji e3">✅</span>
+  <span class="float-emoji e4">⏰</span>
+  <div class="lock-card">
+    <div class="lock-badge">⚠️ 대시보드 입장 전 필수 체크</div>
+    <div class="lock-wordmark">Shifty <span>· 출근 체크</span></div>
+    <h3 class="lock-q">아 맞다,<br><em>시프티</em> 찍으셨나요? <span class="wave">🖐️</span></h3>
+    <p class="lock-desc">확인하셨다면 아래에 답변을 입력하고 입장하세요.</p>
+    <input type="text" id="lockInput" class="lock-input" placeholder="답변을 입력하세요"
+      autocomplete="off" onkeydown="if(event.key==='Enter') submitLogin()">
+    <div class="lock-err" id="lockErr"></div>
+    <button class="lock-btn" onclick="submitLogin()">입장하기</button>
+    <div class="lock-foot">Offline Care Team · 원격파트 대시보드</div>
+  </div>
+</div>
 
-      <div class="progress">
-        <div class="progress-row">
-          <span class="count" id="progressLabel"><b>0개</b> 중 <b>0개</b> 완료</span>
-          <span class="pct" id="progressPct">0%</span>
-        </div>
-        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
-      </div>
-    </header>
+<!-- Sidebar -->
+<aside class="sidebar">
+  <div class="brand">
+    <h1>Offline Care Team<br>원격파트 대시보드</h1>
+    <p>Remote Part Dashboard</p>
+  </div>
+  <div class="nav-label">카테고리</div>
+  <nav id="nav"></nav>
+  <button class="lock-out" onclick="relock()">🔒 잠금</button>
+</aside>
 
-    <section class="presets">
-      <div class="section-label">템플릿 불러오기</div>
-      <div class="preset-chips">
-        <button class="chip-ghost" data-preset="해외">해외여행</button>
-        <button class="chip-ghost" data-preset="국내">국내여행</button>
-        <button class="chip-ghost" data-preset="캠핑">캠핑</button>
-        <button class="chip-ghost" data-preset="출장">출장</button>
-      </div>
-    </section>
+<!-- Main -->
+<main class="main" id="main"></main>
 
-    <div class="input-row">
-      <input type="text" class="text" id="itemInput" placeholder="항목 입력..." autocomplete="off">
-      <select class="cat" id="catSelect" title="카테고리">
-        <option value="서류">서류</option>
-        <option value="전자기기">전자기기</option>
-        <option value="의류">의류</option>
-        <option value="세면도구">세면도구</option>
-        <option value="기타">기타</option>
-      </select>
-      <button class="btn-primary" id="addBtn">추가</button>
+<!-- Duty alert modal -->
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <div class="bell">🔔</div>
+    <h4>당직근무 알림</h4>
+    <p id="modalText"></p>
+    <div class="date-line" id="modalDate"></div>
+    <div class="acts">
+      <button class="btn primary" onclick="closeModal()">확인</button>
     </div>
+  </div>
+</div>
 
-    <div class="list" id="list"></div>
-  </main>
+<!-- Share event form modal -->
+<div class="overlay" id="shareOverlay">
+  <div class="modal form-modal">
+    <h4 style="margin-bottom:18px">일정 공유 추가</h4>
+    <div class="form-row"><label>날짜</label><input type="date" id="sfDate"></div>
+    <div class="form-row"><label>직원</label>
+      <select id="sfEmp"></select></div>
+    <div class="form-row"><label>유형</label>
+      <select id="sfType"></select></div>
+    <div class="form-row"><label>시간</label>
+      <div class="time-range">
+        <select id="sfStart"></select>
+        <span class="tilde">~</span>
+        <select id="sfEnd"></select>
+      </div></div>
+    <div class="form-row"><label>내용</label><input type="text" id="sfTitle" placeholder="예: 거래처 미팅 (선택)"></div>
+    <div class="acts">
+      <button class="btn" onclick="closeShareForm()">취소</button>
+      <button class="btn primary" onclick="submitShare()">추가</button>
+    </div>
+  </div>
+</div>
+
+<!-- 슬랙 집계 데이터 (날짜별 누적) — /원격집계 스킬이 갱신 -->
+<script src="slack-data.js"></script>
 
 <script>
-  const CATEGORIES = [
-    { key: '서류',     icon: '📄' },
-    { key: '전자기기', icon: '🔌' },
-    { key: '의류',     icon: '👕' },
-    { key: '세면도구', icon: '🧴' },
-    { key: '기타',     icon: '📦' },
-  ];
+/* ================= Config ================= */
+const EMPLOYEES = ["김기범","서상원","김규빈","김동욱","송태양","김현기","배선유","최민석","심성현"];
+const CATEGORIES = [
+  {key:"onboarding", name:"온보딩", icon:"🚀"},
+  {key:"as",         name:"AS",     icon:"🔧"},
+  {key:"transfer",   name:"명의변경", icon:"📝"},
+  {key:"menu",       name:"메뉴등록", icon:"🍱"},
+  {key:"voc",        name:"VOC",    icon:"💬"},
+  {key:"delivery",   name:"배달",    icon:"🛵"},
+  {key:"share",      name:"공유",    icon:"📢"},
+  {key:"duty",       name:"당직근무", icon:"📅"},
+];
 
-  const PRESETS = {
-    해외: [
-      { text: '여권', cat: '서류' }, { text: '항공권 / e-티켓', cat: '서류' },
-      { text: '해외여행자 보험', cat: '서류' }, { text: '환전 / 신용카드', cat: '서류' },
-      { text: '휴대폰 충전기', cat: '전자기기' }, { text: '멀티 어댑터', cat: '전자기기' },
-      { text: '보조배터리', cat: '전자기기' }, { text: '상하의 / 속옷', cat: '의류' },
-      { text: '겉옷 / 외투', cat: '의류' }, { text: '칫솔 / 치약', cat: '세면도구' },
-      { text: '기초 화장품', cat: '세면도구' }, { text: '상비약', cat: '기타' },
-    ],
-    국내: [
-      { text: '신분증', cat: '서류' }, { text: '숙소 예약 확인', cat: '서류' },
-      { text: '휴대폰 충전기', cat: '전자기기' }, { text: '보조배터리', cat: '전자기기' },
-      { text: '갈아입을 옷', cat: '의류' }, { text: '속옷 / 양말', cat: '의류' },
-      { text: '세면도구 세트', cat: '세면도구' }, { text: '수건', cat: '세면도구' },
-      { text: '상비약', cat: '기타' }, { text: '간식 / 물', cat: '기타' },
-    ],
-    캠핑: [
-      { text: '예약 확인증', cat: '서류' }, { text: '랜턴 / 손전등', cat: '전자기기' },
-      { text: '보조배터리', cat: '전자기기' }, { text: '방수 겉옷', cat: '의류' },
-      { text: '여벌 옷 / 양말', cat: '의류' }, { text: '휴대용 세면도구', cat: '세면도구' },
-      { text: '물티슈', cat: '세면도구' }, { text: '텐트 / 타프', cat: '기타' },
-      { text: '침낭 / 매트', cat: '기타' }, { text: '버너 / 코펠', cat: '기타' },
-      { text: '아이스박스', cat: '기타' }, { text: '상비약 / 벌레퇴치제', cat: '기타' },
-    ],
-    출장: [
-      { text: '신분증 / 명함', cat: '서류' }, { text: '출장 서류 / 발표자료', cat: '서류' },
-      { text: '노트북', cat: '전자기기' }, { text: '노트북 충전기', cat: '전자기기' },
-      { text: '휴대폰 충전기', cat: '전자기기' }, { text: '보조배터리', cat: '전자기기' },
-      { text: '정장 / 셔츠', cat: '의류' }, { text: '속옷 / 양말', cat: '의류' },
-      { text: '세면도구 세트', cat: '세면도구' }, { text: '면도기', cat: '세면도구' },
-      { text: '상비약', cat: '기타' },
-    ],
-  };
+// 공유(일정) 이벤트 유형
+const SHARE_TYPES = {
+  annual:  {label:"연차",   color:"#ff3b30", soft:"#ffe5e3"},
+  half:    {label:"반차",   color:"#ff9500", soft:"#fff0dc"},
+  time:    {label:"시간차", color:"#ffcc00", soft:"#fff8d6"},
+  outside: {label:"외부일정", color:"#5e5ce6", soft:"#e8e7ff"},
+  edu:     {label:"교육일정", color:"#0aa5b1", soft:"#d6f2f5"},
+  meeting: {label:"회의",   color:"#0071e3", soft:"#e2effc"},
+  etc:     {label:"기타",   color:"#34c759", soft:"#e2f7e8"},
+};
 
-  let items = [];
+// 2026 대한민국 공휴일 (대체공휴일 포함, 대표)
+const HOLIDAYS = {
+  "2026-01-01":"신정",
+  "2026-02-16":"설날","2026-02-17":"설날","2026-02-18":"설날",
+  "2026-03-01":"삼일절","2026-03-02":"대체공휴일",
+  "2026-05-05":"어린이날","2026-05-24":"부처님오신날","2026-05-25":"대체공휴일",
+  "2026-06-03":"지방선거","2026-06-06":"현충일",
+  "2026-08-15":"광복절","2026-08-17":"대체공휴일",
+  "2026-09-24":"추석","2026-09-25":"추석","2026-09-26":"추석",
+  "2026-10-03":"개천절","2026-10-05":"대체공휴일","2026-10-09":"한글날",
+  "2026-12-25":"성탄절",
+};
 
-  const listEl = document.getElementById('list');
-  const inputEl = document.getElementById('itemInput');
-  const catSelect = document.getElementById('catSelect');
-  const addBtn = document.getElementById('addBtn');
-  const progressLabel = document.getElementById('progressLabel');
-  const progressPct = document.getElementById('progressPct');
-  const progressFill = document.getElementById('progressFill');
-  const themeBtn = document.getElementById('themeBtn');
+/* ================= Storage ================= */
+const LS_COUNT = "opcare_counts_v1";
+const LS_DUTY  = "opcare_duty_v1";
+const LS_SHARE = "opcare_share_v1";
+let COUNTS = load(LS_COUNT, {});   // { cat: { "YYYY-MM-DD": { emp: n } } }
+let DUTY   = load(LS_DUTY, {});    // { "YYYY-MM-DD": { day, aft, nit } }
+let SHARE  = load(LS_SHARE, {});   // { "YYYY-MM-DD": [ {id, emp, type, title, time} ] }
 
-  function render() {
-    listEl.innerHTML = '';
+function load(k, def){ try{ const v=JSON.parse(localStorage.getItem(k)); return v==null?def:v; }catch(e){ return def; } }
+function save(k, v){ localStorage.setItem(k, JSON.stringify(v)); }
 
-    if (items.length === 0) {
-      const empty = document.createElement('div');
-      empty.className = 'empty';
-      empty.innerHTML = '아직 항목이 없어요.<br>위에서 템플릿을 불러오거나 직접 추가해보세요.';
-      listEl.appendChild(empty);
-      updateProgress();
-      return;
+/* ================= Date helpers ================= */
+function today(){ return new Date(); }  // 실제 오늘 사용
+function ymd(d){ const y=d.getFullYear(), m=String(d.getMonth()+1).padStart(2,'0'), dd=String(d.getDate()).padStart(2,'0'); return `${y}-${m}-${dd}`; }
+function parseYmd(s){ const [y,m,dd]=s.split("-").map(Number); return new Date(y,m-1,dd); }
+function addDays(d,n){ const x=new Date(d); x.setDate(x.getDate()+n); return x; }
+function startOfWeek(d){ const x=new Date(d); const dow=(x.getDay()+6)%7; return addDays(x,-dow); } // 월요일 시작
+function fmtKDate(d){ const w=["일","월","화","수","목","금","토"][d.getDay()];
+  return `${d.getFullYear()}년 ${d.getMonth()+1}월 ${d.getDate()}일 (${w})`; }
+function fmtShort(s){ const d=parseYmd(s); return `${d.getMonth()+1}/${d.getDate()}`; }
+
+/* ================= State ================= */
+let activeCat = "onboarding";
+let viewMode = "day";               // day | week | month
+let selDate = ymd(today());
+let dutyMonth = new Date(today().getFullYear(), today().getMonth(), 1);
+let shareMonth = new Date(today().getFullYear(), today().getMonth(), 1);
+let shareFilter = "all"; // all | 직원명
+
+/* ================= Count data access ================= */
+function getCount(cat, date, emp){ return (COUNTS[cat] && COUNTS[cat][date] && COUNTS[cat][date][emp]) || 0; }
+function setCount(cat, date, emp, n){
+  if(!COUNTS[cat]) COUNTS[cat]={};
+  if(!COUNTS[cat][date]) COUNTS[cat][date]={};
+  if(n>0) COUNTS[cat][date][emp]=n; else delete COUNTS[cat][date][emp];
+  save(LS_COUNT, COUNTS);
+}
+function rangeDates(mode, refStr){
+  const ref = parseYmd(refStr); const out=[];
+  if(mode==="day"){ out.push(refStr); }
+  else if(mode==="week"){ const s=startOfWeek(ref); for(let i=0;i<7;i++) out.push(ymd(addDays(s,i))); }
+  else { const y=ref.getFullYear(), m=ref.getMonth(), last=new Date(y,m+1,0).getDate();
+    for(let i=1;i<=last;i++) out.push(ymd(new Date(y,m,i))); }
+  return out;
+}
+function sumRange(cat, dates, emp){
+  return dates.reduce((a,d)=>{
+    if(emp) return a + getCount(cat,d,emp);
+    const day = COUNTS[cat] && COUNTS[cat][d] ? Object.values(COUNTS[cat][d]).reduce((x,y)=>x+y,0) : 0;
+    return a + day;
+  }, 0);
+}
+
+/* ================= Render: Nav ================= */
+function renderNav(){
+  document.getElementById("nav").innerHTML = CATEGORIES.map(c=>`
+    <button class="navbtn ${c.key===activeCat?'active':''}" onclick="selectCat('${c.key}')">
+      <span class="ic">${c.icon}</span>${c.name}
+    </button>`).join("");
+}
+function selectCat(k){ activeCat=k; renderNav(); renderMain(); window.scrollTo(0,0); }
+
+/* ================= Main dispatch ================= */
+function renderMain(){
+  if(activeCat==="duty") renderDuty();
+  else if(activeCat==="share") renderShare();
+  else renderStats();
+}
+
+/* ================= Stats page ================= */
+function renderStats(){
+  const cat = CATEGORIES.find(c=>c.key===activeCat);
+  const dayDates   = rangeDates("day", selDate);
+  const weekDates  = rangeDates("week", selDate);
+  const monthDates = rangeDates("month", selDate);
+
+  const todayTotal = sumRange(activeCat, dayDates);
+  const weekTotal  = sumRange(activeCat, weekDates);
+  const monthTotal = sumRange(activeCat, monthDates);
+
+  const prevDay   = sumRange(activeCat, [ymd(addDays(parseYmd(selDate),-1))]);
+  const prevWeek  = sumRange(activeCat, rangeDates("week", ymd(addDays(startOfWeek(parseYmd(selDate)),-7))));
+  const refM=parseYmd(selDate); const pm=new Date(refM.getFullYear(),refM.getMonth()-1,15);
+  const prevMonth = sumRange(activeCat, rangeDates("month", ymd(pm)));
+
+  const viewDates = rangeDates(viewMode, selDate);
+  const viewLabel = viewMode==="day"?"일별":viewMode==="week"?"주별":"월별";
+
+  const empTotals = EMPLOYEES.map(e=>({emp:e, n:sumRange(activeCat, viewDates, e)}));
+  const maxEmp = Math.max(1, ...empTotals.map(e=>e.n));
+  const sortedEmp = [...empTotals].sort((a,b)=>b.n-a.n);
+
+  document.getElementById("main").innerHTML = `
+    <div class="page-head">
+      <div>
+        <h2>${cat.icon} ${cat.name}</h2>
+        <div class="sub">일자별 처리 건수 · 직원별 실적 관리</div>
+      </div>
+      <div class="controls">
+        <div class="seg">
+          <button class="${viewMode==='day'?'on':''}"   onclick="setView('day')">일별</button>
+          <button class="${viewMode==='week'?'on':''}"  onclick="setView('week')">주별</button>
+          <button class="${viewMode==='month'?'on':''}" onclick="setView('month')">월별</button>
+        </div>
+        <input type="date" value="${selDate}" onchange="setDate(this.value)">
+        <button class="btn" onclick="setDate('${ymd(today())}')">오늘</button>
+      </div>
+    </div>
+
+    <div class="kpis">
+      ${kpiCard("오늘 처리건수", todayTotal, prevDay, "전일 대비")}
+      ${kpiCard("이번주 처리건수", weekTotal, prevWeek, "전주 대비")}
+      ${kpiCard("이번달 처리건수", monthTotal, prevMonth, "전월 대비")}
+      ${kpiPlain("일 평균 (이번달)", monthDates.length? (monthTotal/monthDates.length):0)}
+    </div>
+
+    <div class="card">
+        <div class="card-head">
+          <h3>직원별 처리건수 입력</h3>
+          <span class="hint">${fmtKDate(parseYmd(selDate))} · 선택일 기준 입력</span>
+        </div>
+        <table>
+          <thead>
+            <tr><th style="width:44px">#</th><th>직원</th>
+              <th class="num">${fmtShort(selDate)} 입력</th>
+              <th class="num">${viewLabel} 합계</th>
+              <th style="width:120px">추이(7일)</th></tr>
+          </thead>
+          <tbody>
+            ${EMPLOYEES.map((e,i)=>{
+              const dayVal=getCount(activeCat,selDate,e);
+              const viewSum=sumRange(activeCat,viewDates,e);
+              return `<tr>
+                <td><span class="rank">${i+1}</span></td>
+                <td class="emp-name">${e}</td>
+                <td class="num"><input class="count-input" type="number" min="0" value="${dayVal||''}"
+                  placeholder="0" onchange="onInput('${e}',this.value)"></td>
+                <td class="num" style="font-weight:700">${viewSum}</td>
+                <td>${spark(activeCat,e)}</td>
+              </tr>`;}).join("")}
+          </tbody>
+          <tfoot>
+            <tr><td></td><td>합계</td>
+              <td class="num">${sumRange(activeCat,[selDate])}</td>
+              <td class="num">${sumRange(activeCat,viewDates)}</td><td></td></tr>
+          </tfoot>
+        </table>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <h3>기간별 처리건수 추이</h3>
+        <span class="hint">${viewLabel} · ${viewRangeText(viewMode,selDate)}</span>
+      </div>
+      ${trendChart(activeCat, viewMode, selDate)}
+    </div>
+
+    ${activeCat==="as" ? pendingCard() : ""}
+  `;
+}
+
+// 미처리·확인필요 건 (슬랙 채널 스캔) — 선택 날짜 기준, 상호/사업자 조회
+function pendingCard(){
+  const day=slackDay(selDate);
+  if(!day){
+    return `<div class="card">
+      <div class="card-head"><h3>🔎 미처리 · 확인필요 건</h3>
+        <span class="hint">원격 AS요청 채널</span></div>
+      <div class="note" style="text-align:center;color:var(--gray2);padding:26px 0">
+        ${fmtShort(selDate)} 은(는) 슬랙 집계 데이터가 없습니다. <br>
+        <span style="font-size:13px">터미널에서 <b>/원격집계</b> 를 실행하면 그날 데이터가 채워집니다.</span></div>
+    </div>`;
+  }
+  const list=day.pending||[];
+  const rows=list.map(p=>{
+    const tags=p.reasons.map(r=>{
+      const isAbsent=/부재/.test(r);
+      return `<span class="status-tag ${isAbsent?'absent':'unassigned'}">${r}</span>`;
+    }).join(" ");
+    const searchKey=(p.store+" "+p.biz).toLowerCase();
+    return `<tr data-key="${searchKey}">
+      <td class="trow-time">${p.time}</td>
+      <td class="emp-name">${p.store}</td>
+      <td class="trow-biz">${p.biz}</td>
+      <td>${tags}</td>
+      <td>${p.handler||'<span style="color:var(--gray2)">-</span>'}</td>
+    </tr>`;
+  }).join("");
+  return `<div class="card">
+    <div class="card-head">
+      <h3>🔎 미처리 · 확인필요 건</h3>
+      <span class="hint">원격 AS요청 채널 · ${fmtShort(selDate)} 기준${day.updatedAt?` (${day.updatedAt} 갱신)`:''} · ${list.length}건</span>
+    </div>
+    <p class="note" style="margin:-6px 0 14px;font-size:13px;color:var(--gray)">
+      담당자(원격OOO)·카테고리 이모지가 없거나 <b>부재</b> 이모지가 찍힌 건입니다. 상호명 또는 사업자번호로 조회하세요.</p>
+    <input class="search-box" type="text" placeholder="상호명 또는 사업자번호 검색…" oninput="filterPending(this.value)">
+    <table style="margin-top:12px">
+      <thead><tr><th style="width:60px">시간</th><th>상호</th><th style="width:130px">사업자번호</th><th>상태</th><th style="width:80px">담당</th></tr></thead>
+      <tbody id="pendingBody">${rows}</tbody>
+    </table>
+    <div id="pendingEmpty" class="note" style="display:none;text-align:center;color:var(--gray2);padding:20px 0">검색 결과가 없습니다.</div>
+  </div>`;
+}
+function filterPending(q){
+  q=(q||"").trim().toLowerCase();
+  let shown=0;
+  document.querySelectorAll("#pendingBody tr").forEach(tr=>{
+    const hit=(tr.dataset.key||"").includes(q);
+    tr.style.display=hit?"":"none";
+    if(hit) shown++;
+  });
+  const emp=document.getElementById("pendingEmpty");
+  if(emp) emp.style.display=shown===0?"block":"none";
+}
+
+function kpiCard(lab, val, prev, tag){
+  const diff = val-prev;
+  const cls = diff>0?"up":diff<0?"down":"flat";
+  const arrow = diff>0?"▲":diff<0?"▼":"–";
+  const pct = prev>0? Math.round(Math.abs(diff)/prev*100)+"%" : (val>0?"신규":"0%");
+  return `<div class="kpi">
+    <div class="lab">${lab}</div>
+    <div class="val">${val}<small>건</small></div>
+    <div class="delta ${cls}">${arrow} ${pct} <span style="color:var(--gray2);font-weight:500">${tag}</span></div>
+  </div>`;
+}
+function kpiPlain(lab, val){
+  return `<div class="kpi">
+    <div class="lab">${lab}</div>
+    <div class="val">${val.toFixed(1)}<small>건</small></div>
+    <div class="delta flat">평균 처리량</div>
+  </div>`;
+}
+function medal(i){ return i===0?"🥇":i===1?"🥈":i===2?"🥉":`<span style="color:var(--gray2)">${i+1}.</span>`; }
+function viewRangeText(mode,ref){
+  const dates=rangeDates(mode,ref);
+  if(mode==="day") return fmtKDate(parseYmd(ref));
+  return `${fmtShort(dates[0])} ~ ${fmtShort(dates[dates.length-1])}`;
+}
+
+// 7일 스파크라인
+function spark(cat,emp){
+  const end=parseYmd(selDate); let vals=[];
+  for(let i=6;i>=0;i--) vals.push(getCount(cat,ymd(addDays(end,-i)),emp));
+  const mx=Math.max(1,...vals);
+  return `<span class="spark">${vals.map(v=>{
+    const h=Math.max(3, v/mx*22);
+    return `<i class="${v===mx&&v>0?'hi':''}" style="height:${h}px"></i>`;}).join("")}</span>`;
+}
+
+// 기간 추이 막대 차트 (SVG)
+function trendChart(cat, mode, ref){
+  const dates = rangeDates(mode, ref);
+  const vals = dates.map(d=> sumRange(cat,[d]));
+  const mx = Math.max(1, ...vals);
+  const gapUnit = Math.min(64, Math.max(30, 720/dates.length));
+  const W=Math.max(560, dates.length*gapUnit);
+  const H=220, pad=28, gap=(W-pad*2)/dates.length, bw=gap*0.6;
+  const bars = dates.map((d,i)=>{
+    const v=vals[i]; const h=(H-50)*(v/mx);
+    const x=pad + i*gap + (gap-bw)/2, y=H-30-h;
+    const dd=parseYmd(d); const isToday=d===ymd(today());
+    const lbl = mode==="month"? (dd.getDate()) : `${dd.getMonth()+1}/${dd.getDate()}`;
+    const col = isToday? "var(--blue)" : "#cfe3fb";
+    return `<g>
+      <rect x="${x}" y="${y}" width="${bw}" height="${h}" rx="4" fill="${col}"></rect>
+      ${v>0?`<text x="${x+bw/2}" y="${y-6}" text-anchor="middle" font-size="11" font-weight="700" fill="#424245">${v}</text>`:''}
+      <text x="${x+bw/2}" y="${H-12}" text-anchor="middle" font-size="10" fill="#86868b">${lbl}</text>
+    </g>`;
+  }).join("");
+  const total = vals.reduce((a,b)=>a+b,0);
+  return `<div class="chart-wrap">
+    <svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
+      <line x1="${pad}" y1="${H-30}" x2="${W-pad}" y2="${H-30}" stroke="var(--line)" stroke-width="1"></line>
+      ${bars}
+    </svg>
+  </div>
+  <div class="legend">
+    <span><span class="swatch" style="background:var(--blue)"></span>오늘</span>
+    <span><span class="swatch" style="background:#cfe3fb"></span>처리건수</span>
+    <span style="margin-left:auto;font-weight:600;color:var(--ink)">기간 합계 ${total}건</span>
+  </div>`;
+}
+
+/* ================= Handlers (stats) ================= */
+function setView(m){ viewMode=m; renderStats(); }
+function setDate(v){ selDate=v; renderStats(); }
+function onInput(emp, val){ setCount(activeCat, selDate, emp, Math.max(0, parseInt(val)||0)); renderStats(); }
+
+/* ================= Duty page ================= */
+function renderDuty(){
+  const y=dutyMonth.getFullYear(), m=dutyMonth.getMonth();
+  const first=new Date(y,m,1), lastDate=new Date(y,m+1,0).getDate();
+  const lead=first.getDay();
+  const cells=[];
+  for(let i=0;i<lead;i++) cells.push(null);
+  for(let d=1;d<=lastDate;d++) cells.push(d);
+
+  const dows=["일","월","화","수","목","금","토"];
+  const todayStr=ymd(today());
+
+  const dayCells = cells.map(d=>{
+    if(d===null) return `<div class="daycell empty"></div>`;
+    const dateObj=new Date(y,m,d), ds=ymd(dateObj), dow=dateObj.getDay();
+    const holi=HOLIDAYS[ds]; const isSun=dow===0||!!holi; const isSat=dow===6;
+    const rec=DUTY[ds]||{};
+    const numCls = isSun?"s-sun":isSat?"s-sat":"";
+    return `<div class="daycell ${ds===todayStr?'today':''} ${holi?'holi':''}">
+      <div class="dnum ${numCls}">${d}${holi?`<span class="holi-tag">${holi}</span>`:''}</div>
+      ${slot("day","주간",ds,rec.day)}
+      ${slot("aft","오후",ds,rec.aft)}
+      ${slot("nit","야간",ds,rec.nit)}
+      ${slot("inst","행사",ds,rec.inst)}
+    </div>`;
+  }).join("");
+
+  document.getElementById("main").innerHTML = `
+    <div class="page-head">
+      <div>
+        <h2>📅 당직근무</h2>
+        <div class="sub">날짜별 주간 · 오후 · 야간 · 행사 담당자를 지정하세요. 항목을 클릭하면 바로 수정됩니다.</div>
+      </div>
+      <div class="controls">
+        <button class="btn" onclick="dutyToday()">이번 달</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="cal-toolbar">
+        <button class="navround" onclick="dutyNav(-1)">‹</button>
+        <div class="mtitle">${y}년 ${m+1}월</div>
+        <button class="navround" onclick="dutyNav(1)">›</button>
+      </div>
+      <div class="cal-grid">
+        ${dows.map((w,i)=>`<div class="dow ${i===6?'s-sat':i===0?'s-sun':''}">${w}</div>`).join("")}
+        ${dayCells}
+      </div>
+      <div class="legend">
+        <span><span class="swatch" style="background:var(--sat)"></span>토요일</span>
+        <span><span class="swatch" style="background:var(--sun)"></span>일요일 · 공휴일</span>
+        <span><span class="slot-tag day" style="width:auto;padding:2px 6px">주간</span></span>
+        <span><span class="slot-tag aft" style="width:auto;padding:2px 6px">오후</span></span>
+        <span><span class="slot-tag nit" style="width:auto;padding:2px 6px">야간</span></span>
+        <span><span class="slot-tag inst" style="width:auto;padding:2px 6px">행사</span></span>
+      </div>
+    </div>
+  `;
+}
+function slot(type,label,ds,val){
+  const cls = type==="day"?"day":type==="aft"?"aft":type==="nit"?"nit":"inst";
+  return `<div class="duty-slot">
+    <span class="slot-tag ${cls}">${label}</span>
+    <div class="slot-field" contenteditable="true" spellcheck="false"
+      onblur="saveDuty('${ds}','${type}',this.innerText)">${val?escapeHtml(val):''}</div>
+  </div>`;
+}
+function escapeHtml(s){ return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function saveDuty(ds,type,text){
+  const v=text.trim();
+  if(!DUTY[ds]) DUTY[ds]={};
+  if(v) DUTY[ds][type]=v; else delete DUTY[ds][type];
+  if(Object.keys(DUTY[ds]).length===0) delete DUTY[ds];
+  save(LS_DUTY, DUTY);
+}
+function dutyNav(n){ dutyMonth=new Date(dutyMonth.getFullYear(), dutyMonth.getMonth()+n, 1); renderDuty(); }
+function dutyToday(){ dutyMonth=new Date(today().getFullYear(), today().getMonth(), 1); renderDuty(); }
+
+/* ================= Share (공유 일정) page ================= */
+function shareEvents(ds){
+  let list = SHARE[ds] || [];
+  if(shareFilter!=="all") list = list.filter(e=>e.emp===shareFilter);
+  return list;
+}
+function typeMeta(t){ return SHARE_TYPES[t] || SHARE_TYPES.etc; }
+
+function renderShare(){
+  const y=shareMonth.getFullYear(), m=shareMonth.getMonth();
+  const first=new Date(y,m,1), lastDate=new Date(y,m+1,0).getDate();
+  const lead=first.getDay();
+  const cells=[];
+  for(let i=0;i<lead;i++) cells.push(null);
+  for(let d=1;d<=lastDate;d++) cells.push(d);
+  const dows=["일","월","화","수","목","금","토"];
+  const todayStr=ymd(today());
+
+  // 이번 달 요약 카운트
+  const monthPrefix = `${y}-${String(m+1).padStart(2,'0')}`;
+  const summary = {};
+  Object.keys(SHARE).forEach(ds=>{ if(ds.startsWith(monthPrefix)) SHARE[ds].forEach(e=>{ summary[e.type]=(summary[e.type]||0)+1; }); });
+
+  const dayCells = cells.map(d=>{
+    if(d===null) return `<div class="daycell share empty"></div>`;
+    const dateObj=new Date(y,m,d), ds=ymd(dateObj), dow=dateObj.getDay();
+    const holi=HOLIDAYS[ds]; const isSun=dow===0||!!holi; const isSat=dow===6;
+    const numCls = isSun?"s-sun":isSat?"s-sat":"";
+    const evs=shareEvents(ds);
+    const chips = evs.map(e=>{
+      const t=typeMeta(e.type);
+      const tt=`${e.emp} · ${t.label}${e.time?' · '+e.time:''}${e.title?' · '+e.title:''}`;
+      return `<div class="ev-chip" style="background:${t.soft};color:${t.color}" title="${escapeHtml(tt)}">
+        <span class="ev-dot" style="background:${t.color}"></span>
+        <span class="ev-txt"><span class="ev-head">${escapeHtml(e.emp)} · ${t.label}</span>${e.time?`<span class="ev-time">🕒 ${escapeHtml(e.time)}</span>`:''}${e.title?`<span class="ev-memo">${escapeHtml(e.title)}</span>`:''}</span>
+        <button class="ev-del" title="삭제" onclick="removeShare('${ds}','${e.id}')">×</button></div>`;
+    }).join("");
+    return `<div class="daycell share ${ds===todayStr?'today':''} ${holi?'holi':''}">
+      <div class="dnum ${numCls}">${d}${holi?`<span class="holi-tag">${holi}</span>`:''}
+        <button class="add-ev" title="일정 추가" onclick="openShareForm('${ds}')">+</button></div>
+      <div class="ev-list">${chips}</div>
+    </div>`;
+  }).join("");
+
+  document.getElementById("main").innerHTML = `
+    <div class="page-head">
+      <div>
+        <h2>📢 공유</h2>
+        <div class="sub">연차 · 반차 · 시간차 · 외부일정 · 교육일정 · 회의를 팀원과 공유하세요. 일정마다 시작~종료 시간을 넣을 수 있고, 달력에 시간·내용이 함께 표시됩니다. 삭제는 일정의 × 버튼을 누르세요.</div>
+      </div>
+      <div class="controls">
+        <select class="sel" onchange="setShareFilter(this.value)">
+          <option value="all" ${shareFilter==='all'?'selected':''}>전체 직원</option>
+          ${EMPLOYEES.map(e=>`<option value="${e}" ${shareFilter===e?'selected':''}>${e}</option>`).join("")}
+        </select>
+        <button class="btn primary" onclick="openShareForm('${ymd(today())}')">+ 일정 추가</button>
+        <button class="btn" onclick="shareToday()">이번 달</button>
+      </div>
+    </div>
+
+    <div class="kpis">
+      ${shareKpi("annual", summary.annual||0)}
+      ${shareKpi("half", (summary.half||0)+(summary.time||0), "반차·시간차")}
+      ${shareKpi("outside", (summary.outside||0)+(summary.edu||0), "외부·교육일정")}
+      ${shareKpi("meeting", summary.meeting||0)}
+    </div>
+
+    <div class="card">
+      <div class="cal-toolbar">
+        <button class="navround" onclick="shareNav(-1)">‹</button>
+        <div class="mtitle">${y}년 ${m+1}월</div>
+        <button class="navround" onclick="shareNav(1)">›</button>
+      </div>
+      <div class="cal-grid">
+        ${dows.map((w,i)=>`<div class="dow ${i===6?'s-sat':i===0?'s-sun':''}">${w}</div>`).join("")}
+        ${dayCells}
+      </div>
+      <div class="legend">
+        ${Object.entries(SHARE_TYPES).map(([k,t])=>`<span><span class="swatch" style="background:${t.color}"></span>${t.label}</span>`).join("")}
+      </div>
+    </div>
+  `;
+}
+function shareKpi(type, n, labelOverride){
+  const t=typeMeta(type);
+  return `<div class="kpi">
+    <div class="lab"><span class="ev-dot" style="background:${t.color};margin-right:6px"></span>${labelOverride||t.label} (이번달)</div>
+    <div class="val">${n}<small>건</small></div>
+    <div class="delta flat">공유된 일정</div>
+  </div>`;
+}
+function setShareFilter(v){ shareFilter=v; renderShare(); }
+function shareNav(n){ shareMonth=new Date(shareMonth.getFullYear(), shareMonth.getMonth()+n, 1); renderShare(); }
+function shareToday(){ shareMonth=new Date(today().getFullYear(), today().getMonth(), 1); renderShare(); }
+
+function openShareForm(ds){
+  document.getElementById("sfDate").value = ds;
+  document.getElementById("sfEmp").value = shareFilter!=="all"?shareFilter:EMPLOYEES[0];
+  document.getElementById("sfType").value = "annual";
+  document.getElementById("sfStart").value = "";
+  document.getElementById("sfEnd").value = "";
+  document.getElementById("sfTitle").value = "";
+  document.getElementById("shareOverlay").classList.add("show");
+}
+function closeShareForm(){ document.getElementById("shareOverlay").classList.remove("show"); }
+function submitShare(){
+  const ds=document.getElementById("sfDate").value;
+  const emp=document.getElementById("sfEmp").value;
+  const type=document.getElementById("sfType").value;
+  const s=document.getElementById("sfStart").value, e2=document.getElementById("sfEnd").value;
+  let time="";
+  if(s&&e2) time=`${s} ~ ${e2}`; else if(s) time=`${s} ~`; else if(e2) time=`~ ${e2}`;
+  const title=document.getElementById("sfTitle").value.trim();
+  if(!ds||!emp) return;
+  if(!SHARE[ds]) SHARE[ds]=[];
+  SHARE[ds].push({ id:"e"+ds.replace(/-/g,'')+"_"+SHARE[ds].length+"_"+emp.length, emp, type, time, title });
+  save(LS_SHARE, SHARE);
+  closeShareForm();
+  renderShare();
+}
+function timeOptions(){
+  let opts = `<option value="">미지정</option>`;
+  for(let h=7; h<=18; h++){
+    for(const mm of ["00","30"]){
+      if(h===18 && mm==="30") break; // 18:00 까지
+      const v=`${String(h).padStart(2,'0')}:${mm}`;
+      opts += `<option value="${v}">${v}</option>`;
     }
+  }
+  return opts;
+}
+function removeShare(ds, id){
+  if(!SHARE[ds]) return;
+  const ev=SHARE[ds].find(e=>e.id===id); if(!ev) return;
+  const t=typeMeta(ev.type);
+  if(!confirm(`${ev.emp}님의 ${t.label}${ev.title?' ('+ev.title+')':''} 일정을 삭제할까요?`)) return;
+  SHARE[ds]=SHARE[ds].filter(e=>e.id!==id);
+  if(SHARE[ds].length===0) delete SHARE[ds];
+  save(LS_SHARE, SHARE);
+  renderShare();
+}
 
-    CATEGORIES.forEach(cat => {
-      const group = items.filter(it => it.cat === cat.key);
-      if (group.length === 0) return;
-      const doneCount = group.filter(it => it.done).length;
+/* ================= Duty alert (하루 전) ================= */
+function checkDutyAlert(){
+  const tomorrow=addDays(today(),1); const ds=ymd(tomorrow);
+  const rec=DUTY[ds]; if(!rec) return;
+  const names=[];
+  if(rec.day) names.push(`${rec.day}님(주간)`);
+  if(rec.aft) names.push(`${rec.aft}님(오후)`);
+  if(rec.nit) names.push(`${rec.nit}님(야간)`);
+  if(names.length===0) return;
+  const flag="opcare_dutyalert_"+ymd(today());
+  if(sessionStorage.getItem(flag)) return;
+  sessionStorage.setItem(flag,"1");
+  document.getElementById("modalText").innerHTML =
+    `내일은 <span class="names">${names.join(", ")}</span> 당직근무일입니다.`;
+  document.getElementById("modalDate").textContent = fmtKDate(tomorrow);
+  document.getElementById("overlay").classList.add("show");
+}
+function closeModal(){ document.getElementById("overlay").classList.remove("show"); }
 
-      const card = document.createElement('div');
-      card.className = 'cat-card';
+/* ================= Login / Lock ================= */
+const LS_AUTH = "opcare_authed_v1";
+const PASS = "시프티";
+function checkAuth(){
+  // 저장된 로그인 날짜가 '오늘'이면 통과, 날짜가 바뀌면 다시 로그인
+  if(localStorage.getItem(LS_AUTH)===ymd(today())){
+    document.getElementById("lock").classList.add("hide");
+    checkDutyAlert();
+  }else{
+    const el=document.getElementById("lockInput");
+    setTimeout(()=>el.focus(), 200);
+  }
+}
+function relock(){
+  localStorage.removeItem(LS_AUTH);
+  const lockEl=document.getElementById("lock"), input=document.getElementById("lockInput");
+  input.value=""; document.getElementById("lockErr").textContent="";
+  lockEl.classList.remove("hide");
+  setTimeout(()=>input.focus(), 200);
+}
+function submitLogin(){
+  const input=document.getElementById("lockInput");
+  const err=document.getElementById("lockErr");
+  if(input.value.trim()===PASS){
+    localStorage.setItem(LS_AUTH, ymd(today()));   // 오늘 날짜 저장 → 같은 날은 자동 통과, 다음날 다시 요청
+    document.getElementById("lock").classList.add("hide");
+    err.textContent="";
+    checkDutyAlert();
+  }else{
+    err.textContent="답변이 올바르지 않습니다. 다시 입력해 주세요.";
+    input.classList.remove("shake"); void input.offsetWidth; input.classList.add("shake");
+    input.select();
+  }
+}
 
-      const head = document.createElement('div');
-      head.className = 'cat-head';
-      head.innerHTML = `<span class="name">${cat.icon} ${cat.key}</span><span class="count">${doneCount} / ${group.length}</span>`;
-      card.appendChild(head);
+/* ================= Init ================= */
+(function init(){
+  // 공유 폼 select 채우기
+  document.getElementById("sfEmp").innerHTML = EMPLOYEES.map(e=>`<option value="${e}">${e}</option>`).join("");
+  document.getElementById("sfType").innerHTML = Object.entries(SHARE_TYPES).map(([k,t])=>`<option value="${k}">${t.label}</option>`).join("");
+  document.getElementById("sfStart").innerHTML = timeOptions();
+  document.getElementById("sfEnd").innerHTML = timeOptions();
+  if(!localStorage.getItem(LS_COUNT)) seedDemo();
+  if(!localStorage.getItem(LS_SHARE)) seedShare();
+  applySlackData();
+  renderNav(); renderMain(); checkAuth();
+})();
 
-      group.forEach(item => card.appendChild(buildRow(item)));
-      listEl.appendChild(card);
+// slack-data.js 의 날짜별 집계를 대시보드에 반영 (AS/온보딩은 슬랙이 원본 → 매 로드 시 해당 날짜 덮어씀)
+function applySlackData(){
+  const days=(window.SLACK_DATA&&window.SLACK_DATA.days)||{};
+  for(const [date,entry] of Object.entries(days)){
+    for(const [cat,obj] of Object.entries(entry.counts||{})){
+      if(!COUNTS[cat]) COUNTS[cat]={};
+      COUNTS[cat][date]=Object.assign({}, obj);
+    }
+  }
+  save(LS_COUNT, COUNTS);
+}
+// 선택한 날짜의 슬랙 집계 항목 (없으면 null)
+function slackDay(date){ return (window.SLACK_DATA&&window.SLACK_DATA.days&&window.SLACK_DATA.days[date])||null; }
+
+function seedShare(){
+  const base=today();
+  const add=(off,emp,type,title,time)=>{ const ds=ymd(addDays(base,off));
+    if(!SHARE[ds])SHARE[ds]=[]; SHARE[ds].push({id:"seed"+off+emp.length+type,emp,type,title:title||"",time:time||""}); };
+  add(0,"김기범","meeting","주간 파트 회의","10:00~11:00");
+  add(0,"서상원","outside","거래처 방문","14:00~");
+  add(1,"김규빈","annual","");
+  add(1,"송태양","time","병원","15:00~17:00");
+  add(2,"최민석","half","오후 반차");
+  add(3,"김동욱","meeting","월간 리뷰","16:00~17:00");
+  add(5,"배선유","annual","");
+  add(-1,"심성현","outside","교육 참석");
+  save(LS_SHARE, SHARE);
+}
+
+function seedDemo(){
+  const cats=CATEGORIES.filter(c=>c.key!=="duty"&&c.key!=="share").map(c=>c.key);
+  const base=today();
+  for(let i=0;i<28;i++){
+    const ds=ymd(addDays(base,-i));
+    const dow=parseYmd(ds).getDay();
+    if(dow===0) continue;
+    cats.forEach(cat=>{
+      EMPLOYEES.forEach((e,idx)=>{
+        const n=Math.max(0, Math.round((Math.sin((i+idx)*1.3)+1)*3.5 + (idx%4)));
+        if(n>0){ if(!COUNTS[cat])COUNTS[cat]={}; if(!COUNTS[cat][ds])COUNTS[cat][ds]={}; COUNTS[cat][ds][e]=n; }
+      });
     });
-
-    updateProgress();
   }
-
-  function buildRow(item) {
-    const row = document.createElement('div');
-    row.className = 'item';
-
-    const check = document.createElement('div');
-    check.className = 'check' + (item.done ? ' done' : '');
-    check.addEventListener('click', () => { item.done = !item.done; render(); });
-
-    const label = document.createElement('span');
-    label.className = 'label' + (item.done ? ' done' : '');
-    label.textContent = item.text;
-    label.addEventListener('click', () => startEdit(row, item, label));
-
-    const del = document.createElement('button');
-    del.className = 'del';
-    del.innerHTML = '&times;';
-    del.setAttribute('aria-label', '삭제');
-    del.addEventListener('click', () => { items = items.filter(it => it !== item); render(); });
-
-    row.appendChild(check);
-    row.appendChild(label);
-    row.appendChild(del);
-    return row;
-  }
-
-  function startEdit(row, item, label) {
-    const editInput = document.createElement('input');
-    editInput.type = 'text';
-    editInput.className = 'label-edit';
-    editInput.value = item.text;
-    row.replaceChild(editInput, label);
-    editInput.focus();
-    editInput.setSelectionRange(item.text.length, item.text.length);
-
-    let finished = false;
-    const commit = () => {
-      if (finished) return;
-      finished = true;
-      const v = editInput.value.trim();
-      if (v) item.text = v;
-      render();
-    };
-    editInput.addEventListener('blur', commit);
-    editInput.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') commit();
-      else if (e.key === 'Escape') { finished = true; render(); }
-    });
-  }
-
-  function updateProgress() {
-    const total = items.length;
-    const done = items.filter(i => i.done).length;
-    const pct = total === 0 ? 0 : Math.round((done / total) * 100);
-    progressLabel.innerHTML = `<b>${total}개</b> 중 <b>${done}개</b> 완료`;
-    progressPct.textContent = `${pct}%`;
-    progressFill.style.width = pct + '%';
-  }
-
-  function addItem() {
-    const text = inputEl.value.trim();
-    if (!text) return;
-    items.push({ text, done: false, cat: catSelect.value });
-    inputEl.value = '';
-    inputEl.focus();
-    render();
-  }
-
-  function loadPreset(name) {
-    const preset = PRESETS[name];
-    if (!preset) return;
-    if (items.length > 0 && !confirm(`'${name}' 템플릿을 불러올까요?\n현재 목록은 새 목록으로 교체됩니다.`)) return;
-    items = preset.map(p => ({ text: p.text, done: false, cat: p.cat }));
-    render();
-  }
-
-  addBtn.addEventListener('click', addItem);
-  inputEl.addEventListener('keydown', (e) => { if (e.key === 'Enter') addItem(); });
-  document.querySelectorAll('.chip-ghost').forEach(chip => {
-    chip.addEventListener('click', () => loadPreset(chip.dataset.preset));
-  });
-
-  function setTheme(theme) {
-    document.documentElement.setAttribute('data-theme', theme);
-    themeBtn.textContent = theme === 'dark' ? '라이트 모드' : '다크 모드';
-  }
-  themeBtn.addEventListener('click', () => {
-    const cur = document.documentElement.getAttribute('data-theme');
-    setTheme(cur === 'dark' ? 'light' : 'dark');
-  });
-  setTheme(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-
-  render();
+  save(LS_COUNT, COUNTS);
+  // 당직근무 샘플: 내일/모레 당직자 지정 (알림 확인용)
+  const tmr=ymd(addDays(base,1));
+  DUTY[tmr]={day:"김기범",aft:"서상원",nit:"김규빈"};
+  DUTY[ymd(addDays(base,2))]={day:"김동욱",aft:"송태양",nit:"김현기"};
+  DUTY[ymd(base)]={day:"배선유",aft:"최민석",nit:"심성현"};
+  save(LS_DUTY, DUTY);
+}
 </script>
 </body>
 </html>
