@@ -471,8 +471,10 @@ function fmtShort(s){ const d=parseYmd(s); return `${d.getMonth()+1}/${d.getDate
 
 /* ================= State ================= */
 let activeCat = "overview";
-let viewMode = "day";               // day | week | month
+let viewMode = "day";               // day | week | month | custom
 let selDate = ymd(today());
+let rangeStart = ymd(addDays(today(),-6));  // 커스텀 기간 시작
+let rangeEnd = ymd(today());                // 커스텀 기간 종료
 let dutyMonth = new Date(today().getFullYear(), today().getMonth(), 1);
 let shareMonth = new Date(today().getFullYear(), today().getMonth(), 1);
 let shareFilter = "all"; // all | 직원명
@@ -486,6 +488,12 @@ function setCount(cat, date, emp, n){
   save(LS_COUNT, COUNTS);
 }
 function rangeDates(mode, refStr){
+  if(mode==="custom"){
+    const out=[]; let s=parseYmd(rangeStart), e=parseYmd(rangeEnd);
+    if(e<s){ const t=s; s=e; e=t; }               // 뒤집혀 선택돼도 정상 처리
+    for(let d=new Date(s); d<=e; d=addDays(d,1)) out.push(ymd(d));
+    return out;
+  }
   const ref = parseYmd(refStr); const out=[];
   if(mode==="day"){ out.push(refStr); }
   else if(mode==="week"){ const s=startOfWeek(ref); for(let i=0;i<7;i++) out.push(ymd(addDays(s,i))); }
@@ -493,6 +501,25 @@ function rangeDates(mode, refStr){
     for(let i=1;i<=last;i++) out.push(ymd(new Date(y,m,i))); }
   return out;
 }
+// 기간 라벨/컨트롤 (모든 페이지 공용)
+function viewLabelOf(){ return {day:'일별',week:'주별',month:'월별',custom:'기간'}[viewMode]||'일별'; }
+function periodControls(){
+  const seg=`<div class="seg">
+    <button class="${viewMode==='day'?'on':''}"    onclick="setView('day')">일별</button>
+    <button class="${viewMode==='week'?'on':''}"   onclick="setView('week')">주별</button>
+    <button class="${viewMode==='month'?'on':''}"  onclick="setView('month')">월별</button>
+    <button class="${viewMode==='custom'?'on':''}" onclick="setView('custom')">기간</button>
+  </div>`;
+  const picker = viewMode==='custom'
+    ? `<input type="date" value="${rangeStart}" onchange="setRangeStart(this.value)">
+       <span style="color:var(--gray);font-weight:600">~</span>
+       <input type="date" value="${rangeEnd}" onchange="setRangeEnd(this.value)">`
+    : `<input type="date" value="${selDate}" onchange="setDate(this.value)">
+       <button class="btn" onclick="setDate('${ymd(today())}')">오늘</button>`;
+  return seg+picker;
+}
+function setRangeStart(v){ rangeStart=v; renderMain(); }
+function setRangeEnd(v){ rangeEnd=v; renderMain(); }
 function sumRange(cat, dates, emp){
   return dates.reduce((a,d)=>{
     if(emp) return a + getCount(cat,d,emp);
@@ -524,7 +551,7 @@ function renderMain(){
 /* ================= Overview (전체 현황) ================= */
 function renderOverview(){
   const viewDates = rangeDates(viewMode, selDate);
-  const viewLabel = viewMode==="day"?"일별":viewMode==="week"?"주별":"월별";
+  const viewLabel = viewLabelOf();
 
   const catTotals = WORK_CATS.map(c=>({...c, total:sumRange(c.key, viewDates)}));
   const grand = catTotals.reduce((a,c)=>a+c.total,0);
@@ -542,15 +569,7 @@ function renderOverview(){
         <h2>📊 전체 현황</h2>
         <div class="sub">모든 카테고리 · 직원별 처리건수를 한 화면에서 · ${viewRangeText(viewMode,selDate)}</div>
       </div>
-      <div class="controls">
-        <div class="seg">
-          <button class="${viewMode==='day'?'on':''}"   onclick="setView('day')">일별</button>
-          <button class="${viewMode==='week'?'on':''}"  onclick="setView('week')">주별</button>
-          <button class="${viewMode==='month'?'on':''}" onclick="setView('month')">월별</button>
-        </div>
-        <input type="date" value="${selDate}" onchange="setDate(this.value)">
-        <button class="btn" onclick="setDate('${ymd(today())}')">오늘</button>
-      </div>
+      <div class="controls">${periodControls()}</div>
     </div>
 
     <div class="ov-tiles">
@@ -624,7 +643,7 @@ function renderStats(){
   const prevMonth = sumRange(activeCat, rangeDates("month", ymd(pm)));
 
   const viewDates = rangeDates(viewMode, selDate);
-  const viewLabel = viewMode==="day"?"일별":viewMode==="week"?"주별":"월별";
+  const viewLabel = viewLabelOf();
 
   const empTotals = EMPLOYEES.map(e=>({emp:e, n:sumRange(activeCat, viewDates, e)}));
   const maxEmp = Math.max(1, ...empTotals.map(e=>e.n));
@@ -636,15 +655,7 @@ function renderStats(){
         <h2>${cat.icon} ${cat.name}</h2>
         <div class="sub">일자별 처리 건수 · 직원별 실적 관리</div>
       </div>
-      <div class="controls">
-        <div class="seg">
-          <button class="${viewMode==='day'?'on':''}"   onclick="setView('day')">일별</button>
-          <button class="${viewMode==='week'?'on':''}"  onclick="setView('week')">주별</button>
-          <button class="${viewMode==='month'?'on':''}" onclick="setView('month')">월별</button>
-        </div>
-        <input type="date" value="${selDate}" onchange="setDate(this.value)">
-        <button class="btn" onclick="setDate('${ymd(today())}')">오늘</button>
-      </div>
+      <div class="controls">${periodControls()}</div>
     </div>
 
     <div class="kpis">
