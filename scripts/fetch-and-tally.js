@@ -71,14 +71,15 @@ function tally(msgs) {
     // 확인 담당자 (OOO_확인) — 예: 태양_확인 → 송태양
     let confirmPerson = null;
     for (const n of names) { const cm = n.match(/^(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)(_확인.*)?$/); if (cm) { confirmPerson = personMap[cm[1]]; break; } }
+    const has2ndAbsent = names.some(n => /2차.?부재/.test(n)); // 2차부재는 확인필요에서 제외
 
     if (emp && catKey) {                 // 완료 → 집계
       if (!counts[catKey]) counts[catKey] = {};
       counts[catKey][emp] = (counts[catKey][emp] || 0) + 1; completed++;
     } else if (emp && isExtern) {         // 외주 완료
       extern[emp] = (extern[emp] || 0) + 1;
-    } else if (confirmPerson && !emp && !catKey && !isExtern) {
-      // 확인(OOO_확인)만 되고 완료(원격OOO)·분류(카테고리)가 안 된 건만 확인필요로 적재
+    } else if (confirmPerson && !emp && !catKey && !isExtern && !has2ndAbsent) {
+      // 확인(OOO_확인)만 되고 완료(원격OOO)·분류(카테고리)가 안 됐고 2차부재가 아닌 건만 확인필요로 적재
       pending.push({ time, store, biz, handler: confirmPerson, reasons: ['확인 후 미완료'] });
     }
     // 그 외(무반응 / 부재만 / 이미 분류됨) → 적재하지 않음

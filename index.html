@@ -595,7 +595,7 @@ function pendingCard(){
       <span class="hint">원격 AS요청 채널 · ${fmtShort(selDate)} 기준${day.updatedAt?` (${day.updatedAt} 갱신)`:''} · ${list.length}건</span>
     </div>
     <p class="note" style="margin:-6px 0 14px;font-size:13px;color:var(--gray)">
-      <b>확인(OOO_확인)</b>만 되고 아직 <b>완료(원격OOO)·분류(AS/온보딩)</b>가 안 된 건입니다. 담당자는 확인한 사람으로 표기됩니다. 상호명 또는 사업자번호로 조회하세요.</p>
+      <b>확인(OOO_확인)</b>만 되고 아직 <b>완료(원격OOO)·분류(AS/온보딩)</b>가 안 된 건입니다. (<b>2차부재</b> 건은 제외) 담당자는 확인한 사람으로 표기됩니다. 상호명 또는 사업자번호로 조회하세요.</p>
     <input class="search-box" type="text" placeholder="상호명 또는 사업자번호 검색…" oninput="filterPending(this.value)">
     <table style="margin-top:12px">
       <thead><tr><th style="width:60px">시간</th><th>상호</th><th style="width:130px">사업자번호</th><th>상태</th><th style="width:80px">담당</th></tr></thead>
