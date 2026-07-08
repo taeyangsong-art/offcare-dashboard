@@ -45,15 +45,17 @@
 
 ---
 
-## 동작 요약
+## 동작 요약 (하루 2회 실행)
 ```
-매일 21:00 KST
-  → GitHub Actions 실행
-  → scripts/fetch-and-tally.js 가 슬랙 API로 오늘 메시지 집계
-  → slack-data.js 갱신 후 자동 커밋
+① 21:00 KST — 진행 현황 집계 (오늘)      : daily-slack-tally
+② 00:30 KST — 어제 최종 마감 집계        : daily-slack-tally-final
+     ↑ 야간 직원의 21:00~24:00 업무까지 포함해 '전날'을 완전 확정
+  → 각 실행이 slack-data.js 갱신 후 자동 커밋
   → GitHub Pages 자동 재배포
   → 팀 전원이 https://taeyangsong-art.github.io/test/ 에서 최신 실적 확인
 ```
+> 집계 대상 날짜는 `TALLY_DATE_OFFSET`(0=오늘, -1=어제)로 제어하며,
+> 하루 경계(00:00~24:00 KST)를 정확히 잘라 자정 넘어 실행해도 그날치만 집계합니다.
 
 ## 수동 집계(백업)
 토큰 없이 Claude Code에서 `/원격집계` 를 실행하면, 슬랙 커넥터로 읽어 `slack-data.js`를 갱신합니다. (로컬 확인용)

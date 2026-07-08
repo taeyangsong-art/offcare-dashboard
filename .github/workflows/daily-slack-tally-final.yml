@@ -1,16 +1,17 @@
-name: daily-slack-tally (progress)
+name: daily-slack-tally (final)
 
-# 진행 현황 집계: 매일 21:00 KST (12:00 UTC) '오늘'을 집계 + 수동 실행 버튼
+# 최종 마감 집계: 매일 00:30 KST (15:30 UTC)에 '어제(방금 끝난 하루)'를 완전 집계.
+# 야간 직원의 21:00~24:00 업무까지 모두 포함해 그날을 최종 확정한다.
 on:
   schedule:
-    - cron: '0 12 * * *'
+    - cron: '30 15 * * *'
   workflow_dispatch: {}
 
 permissions:
   contents: write
 
 jobs:
-  tally:
+  tally-final:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,11 +20,11 @@ jobs:
         with:
           node-version: '20'
 
-      - name: 슬랙 집계 실행 (오늘)
+      - name: 슬랙 집계 실행 (어제 최종)
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           SLACK_CHANNEL: C09HRUSG4TX
-          TALLY_DATE_OFFSET: '0'
+          TALLY_DATE_OFFSET: '-1'
         run: node scripts/fetch-and-tally.js
 
       - name: 변경 시 커밋 & 푸시
@@ -34,6 +35,6 @@ jobs:
             echo "변경 없음 — 커밋 생략"
           else
             git add slack-data.js
-            git commit -m "chore: 원격 AS 집계 자동 갱신 ($(TZ=Asia/Seoul date +%Y-%m-%d))"
+            git commit -m "chore: 원격 AS 최종 집계 ($(TZ=Asia/Seoul date -d 'yesterday' +%Y-%m-%d))"
             git push
           fi
