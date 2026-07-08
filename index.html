@@ -74,6 +74,40 @@
   .btn.primary{background:var(--blue); color:#fff; border-color:var(--blue)}
   .btn.primary:hover{background:var(--blue-deep)}
 
+  /* sidebar divider */
+  .nav-div{height:1px; background:var(--line-soft); margin:8px 12px}
+
+  /* ===== Overview ===== */
+  .ov-tiles{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:24px}
+  .ov-tile{background:var(--canvas); border-radius:16px; padding:16px 18px; box-shadow:var(--shadow);
+    border-left:4px solid var(--c,var(--blue))}
+  .ov-tile .ov-name{font-size:13px; font-weight:600; color:var(--gray); display:flex; align-items:center; gap:6px}
+  .ov-tile .ov-ic{font-size:15px}
+  .ov-tile .ov-val{font-size:28px; font-weight:700; letter-spacing:-.03em; margin-top:7px; line-height:1}
+  .ov-tile .ov-val small{font-size:13px; font-weight:600; color:var(--gray2); margin-left:3px}
+  .ov-tile.grand{background:var(--ink); border-left-color:var(--blue)}
+  .ov-tile.grand .ov-name{color:var(--stone)}
+  .ov-tile.grand .ov-val{color:#fff}
+
+  table.matrix{width:100%; border-collapse:collapse; font-size:14px; min-width:640px}
+  table.matrix th{background:var(--surface); color:var(--steel,#6b7280); font-weight:700; font-size:12px;
+    text-align:right; padding:10px 12px; border-bottom:1px solid var(--line); line-height:1.35; white-space:nowrap}
+  table.matrix th:first-child{text-align:left}
+  table.matrix td{padding:9px 12px; border-bottom:1px solid var(--line-soft); text-align:right}
+  table.matrix td:first-child{text-align:left; white-space:nowrap}
+  table.matrix .mcell{font-weight:600; border-radius:4px}
+  table.matrix .zero{color:var(--muted)}
+  table.matrix .tot{font-weight:800; background:var(--surface-soft)}
+  table.matrix tfoot td{font-weight:800; border-top:2px solid var(--line); background:var(--surface)}
+  table.matrix tbody tr:hover td{background:var(--surface-soft)}
+
+  .stack-row{display:flex; align-items:center; gap:12px; margin-bottom:9px}
+  .stack-name{flex:0 0 64px; font-size:14px; font-weight:600; color:var(--ink-soft)}
+  .stack-track{flex:1; height:16px; background:var(--surface); border-radius:8px; overflow:hidden}
+  .stack-fill{height:100%; display:flex; border-radius:8px; overflow:hidden; transition:width .5s cubic-bezier(.22,1,.36,1)}
+  .stack-fill span{display:block; min-width:2px}
+  .stack-total{flex:0 0 40px; text-align:right; font-size:14px; font-weight:700}
+
   /* KPI cards */
   .kpis{display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:24px}
   .kpi{background:var(--canvas); border-radius:var(--radius); padding:20px 22px; box-shadow:var(--shadow)}
@@ -283,6 +317,7 @@
     .sidebar{display:none}
     .main{padding:22px 18px 48px}
     .kpis{grid-template-columns:repeat(2,1fr)}
+    .ov-tiles{grid-template-columns:repeat(2,1fr)}
     .grid2{grid-template-columns:1fr}
     .cal-grid{gap:4px}
     .daycell{min-height:auto; padding:6px}
@@ -377,6 +412,17 @@ const CATEGORIES = [
   {key:"duty",       name:"당직근무", icon:"📅"},
 ];
 
+// 전체 현황에 집계할 업무 카테고리 (+ 외주). 색상은 스택 차트/범례용
+const WORK_CATS = [
+  {key:"onboarding", name:"온보딩",   icon:"🚀", color:"#0071e3"},
+  {key:"as",         name:"AS",       icon:"🔧", color:"#34c759"},
+  {key:"transfer",   name:"명의변경", icon:"📝", color:"#ff9500"},
+  {key:"menu",       name:"메뉴등록", icon:"🍱", color:"#5e5ce6"},
+  {key:"voc",        name:"VOC",      icon:"💬", color:"#ff2d55"},
+  {key:"delivery",   name:"배달",     icon:"🛵", color:"#00c7be"},
+  {key:"extern",     name:"외주",     icon:"🧩", color:"#8e8e93"},
+];
+
 // 공유(일정) 이벤트 유형
 const SHARE_TYPES = {
   annual:  {label:"연차",   color:"#ff3b30", soft:"#ffe5e3"},
@@ -423,7 +469,7 @@ function fmtKDate(d){ const w=["일","월","화","수","목","금","토"][d.getD
 function fmtShort(s){ const d=parseYmd(s); return `${d.getMonth()+1}/${d.getDate()}`; }
 
 /* ================= State ================= */
-let activeCat = "onboarding";
+let activeCat = "overview";
 let viewMode = "day";               // day | week | month
 let selDate = ymd(today());
 let dutyMonth = new Date(today().getFullYear(), today().getMonth(), 1);
@@ -456,7 +502,10 @@ function sumRange(cat, dates, emp){
 
 /* ================= Render: Nav ================= */
 function renderNav(){
-  document.getElementById("nav").innerHTML = CATEGORIES.map(c=>`
+  const ov=`<button class="navbtn ${activeCat==='overview'?'active':''}" onclick="selectCat('overview')">
+      <span class="ic">📊</span>전체 현황</button>
+    <div class="nav-div"></div>`;
+  document.getElementById("nav").innerHTML = ov + CATEGORIES.map(c=>`
     <button class="navbtn ${c.key===activeCat?'active':''}" onclick="selectCat('${c.key}')">
       <span class="ic">${c.icon}</span>${c.name}
     </button>`).join("");
@@ -465,10 +514,97 @@ function selectCat(k){ activeCat=k; renderNav(); renderMain(); window.scrollTo(0
 
 /* ================= Main dispatch ================= */
 function renderMain(){
-  if(activeCat==="duty") renderDuty();
+  if(activeCat==="overview") renderOverview();
+  else if(activeCat==="duty") renderDuty();
   else if(activeCat==="share") renderShare();
   else renderStats();
 }
+
+/* ================= Overview (전체 현황) ================= */
+function renderOverview(){
+  const viewDates = rangeDates(viewMode, selDate);
+  const viewLabel = viewMode==="day"?"일별":viewMode==="week"?"주별":"월별";
+
+  const catTotals = WORK_CATS.map(c=>({...c, total:sumRange(c.key, viewDates)}));
+  const grand = catTotals.reduce((a,c)=>a+c.total,0);
+
+  const empRows = EMPLOYEES.map(e=>{
+    const cells = WORK_CATS.map(c=>sumRange(c.key, viewDates, e));
+    return {emp:e, cells, total:cells.reduce((a,b)=>a+b,0)};
+  }).sort((a,b)=>b.total-a.total);
+  const maxEmp = Math.max(1, ...empRows.map(r=>r.total));
+  const maxCell = Math.max(1, ...empRows.flatMap(r=>r.cells));
+
+  document.getElementById("main").innerHTML = `
+    <div class="page-head">
+      <div>
+        <h2>📊 전체 현황</h2>
+        <div class="sub">모든 카테고리 · 직원별 처리건수를 한 화면에서 · ${viewRangeText(viewMode,selDate)}</div>
+      </div>
+      <div class="controls">
+        <div class="seg">
+          <button class="${viewMode==='day'?'on':''}"   onclick="setView('day')">일별</button>
+          <button class="${viewMode==='week'?'on':''}"  onclick="setView('week')">주별</button>
+          <button class="${viewMode==='month'?'on':''}" onclick="setView('month')">월별</button>
+        </div>
+        <input type="date" value="${selDate}" onchange="setDate(this.value)">
+        <button class="btn" onclick="setDate('${ymd(today())}')">오늘</button>
+      </div>
+    </div>
+
+    <div class="ov-tiles">
+      ${catTotals.map(c=>`
+        <div class="ov-tile" style="--c:${c.color}">
+          <div class="ov-name"><span class="ov-ic">${c.icon}</span>${c.name}</div>
+          <div class="ov-val">${c.total}<small>건</small></div>
+        </div>`).join("")}
+      <div class="ov-tile grand">
+        <div class="ov-name">Σ 전체 합계</div>
+        <div class="ov-val">${grand}<small>건</small></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <h3>직원별 · 카테고리별 처리건수</h3>
+        <span class="hint">${viewLabel} · 색이 진할수록 많음</span>
+      </div>
+      <div style="overflow-x:auto">
+        <table class="matrix">
+          <thead><tr><th>직원</th>${WORK_CATS.map(c=>`<th class="num">${c.icon}<br>${c.name}</th>`).join("")}<th class="num tot">합계</th></tr></thead>
+          <tbody>
+            ${empRows.map((r,i)=>`<tr>
+              <td class="emp-name">${medal(i)} ${r.emp}</td>
+              ${r.cells.map((n,ci)=>`<td class="num mcell" style="${n>0?`background:${hexA(WORK_CATS[ci].color,0.08+n/maxCell*0.30)}`:''}">${n||'<span class="zero">·</span>'}</td>`).join("")}
+              <td class="num tot">${r.total}</td>
+            </tr>`).join("")}
+          </tbody>
+          <tfoot><tr><td>합계</td>${catTotals.map(c=>`<td class="num">${c.total}</td>`).join("")}<td class="num tot">${grand}</td></tr></tfoot>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <h3>직원별 처리량 (카테고리 구성)</h3>
+        <span class="hint">${viewLabel} · 막대 길이 = 총 처리량</span>
+      </div>
+      ${empRows.map(r=>`
+        <div class="stack-row">
+          <div class="stack-name">${r.emp}</div>
+          <div class="stack-track"><div class="stack-fill" style="width:${r.total/maxEmp*100}%">
+            ${WORK_CATS.map((c,ci)=>r.cells[ci]>0?`<span style="flex:${r.cells[ci]};background:${c.color}" title="${c.name} ${r.cells[ci]}건"></span>`:'').join("")}
+          </div></div>
+          <div class="stack-total">${r.total}</div>
+        </div>`).join("")}
+      <div class="legend">
+        ${WORK_CATS.map(c=>`<span><span class="swatch" style="background:${c.color}"></span>${c.name}</span>`).join("")}
+      </div>
+    </div>
+  `;
+}
+// hex + alpha → rgba
+function hexA(hex,a){ const n=parseInt(hex.slice(1),16); return `rgba(${n>>16&255},${n>>8&255},${n&255},${a})`; }
 
 /* ================= Stats page ================= */
 function renderStats(){
@@ -710,8 +846,8 @@ function trendChart(cat, mode, ref){
 }
 
 /* ================= Handlers (stats) ================= */
-function setView(m){ viewMode=m; renderStats(); }
-function setDate(v){ selDate=v; renderStats(); }
+function setView(m){ viewMode=m; renderMain(); }
+function setDate(v){ selDate=v; renderMain(); }
 function onInput(emp, val){ setCount(activeCat, selDate, emp, Math.max(0, parseInt(val)||0)); renderStats(); }
 
 /* ================= Duty page ================= */
