@@ -60,26 +60,28 @@ function tally(msgs) {
     if (store.length > 30) store = store.slice(0, 30);
     const biz = ((text.match(/사업자\s*번?호?\s*[:：]\s*([\d\-]+)/) || [])[1] || '').replace(/-/g, '').trim();
 
+    // 완료 담당자 (원격OOO)
     let emp = null;
     for (const n of names) { const pm = n.match(/^원격(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)$/); if (pm) { emp = personMap[pm[1]]; break; } }
-    let catKey = null, isExtern = false;
+    // 카테고리 이모지
+    let catKey = null;
     for (const n of names) { if (catMap[n]) { catKey = catMap[n]; break; } }
-    if (!catKey && names.includes('원격외주')) isExtern = true;
-    if (!catKey && !isExtern && emp) catKey = 'as';
-    const absentTags = names.filter(n => /부재/.test(n));
-    const absent = absentTags.length > 0;
+    const isExtern = !catKey && names.includes('원격외주');
+    if (!catKey && !isExtern && emp) catKey = 'as'; // 완료 담당자 있고 카테고리 없으면 기본 AS
+    // 확인 담당자 (OOO_확인) — 예: 태양_확인 → 송태양
+    let confirmPerson = null;
+    for (const n of names) { const cm = n.match(/^(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)(_확인.*)?$/); if (cm) { confirmPerson = personMap[cm[1]]; break; } }
 
-    if (isExtern && emp && !absent) { extern[emp] = (extern[emp] || 0) + 1; continue; }
-    if (emp && catKey && !absent) {
+    if (emp && catKey) {                 // 완료 → 집계
       if (!counts[catKey]) counts[catKey] = {};
       counts[catKey][emp] = (counts[catKey][emp] || 0) + 1; completed++;
-    } else {
-      const reasons = [];
-      if (absent) reasons.push(...absentTags.map(x => x.replace(/_/g, ' ')));
-      if (!emp) reasons.push('담당자 미지정');
-      else if (!catKey && !isExtern) reasons.push('카테고리 미지정');
-      pending.push({ time, store, biz, handler: emp || '', reasons });
+    } else if (emp && isExtern) {         // 외주 완료
+      extern[emp] = (extern[emp] || 0) + 1;
+    } else if (confirmPerson && !emp && !catKey && !isExtern) {
+      // 확인(OOO_확인)만 되고 완료(원격OOO)·분류(카테고리)가 안 된 건만 확인필요로 적재
+      pending.push({ time, store, biz, handler: confirmPerson, reasons: ['확인 후 미완료'] });
     }
+    // 그 외(무반응 / 부재만 / 이미 분류됨) → 적재하지 않음
   }
   pending.sort((a, b) => (b.time || '').localeCompare(a.time || ''));
   return { counts, pending, extern, completed, latest };
