@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 20,
+  "version": 21,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -99,9 +99,76 @@ window.SLACK_DATA = {
           "install": 3,
           "nps": 7
         },
+        "npsDist": {
+          "0": 1,
+          "2": 2,
+          "3": 1,
+          "5": 4,
+          "6": 1,
+          "8": 2,
+          "9": 3,
+          "10": 7
+        },
+        "installDist": {
+          "2": 1,
+          "3": 1,
+          "5": 3
+        },
         "byIndustry": {
           "서비스[학원]": 4,
           "카페": 1
+        },
+        "byTenure": {
+          "6개월": {
+            "total": 10,
+            "low": 4
+          },
+          "3개월": {
+            "total": 2,
+            "low": 0
+          },
+          "12개월": {
+            "total": 1,
+            "low": 0
+          },
+          "1개월": {
+            "total": 3,
+            "low": 2
+          },
+          "구매설치": {
+            "total": 5,
+            "low": 2
+          }
+        },
+        "byVan": {
+          "KPN": {
+            "total": 1,
+            "low": 1
+          },
+          "DAOU": {
+            "total": 6,
+            "low": 3
+          },
+          "SECTA9": {
+            "total": 3,
+            "low": 0
+          },
+          "KSNET": {
+            "total": 2,
+            "low": 0
+          },
+          "SMARTRO": {
+            "total": 4,
+            "low": 0
+          },
+          "KIS": {
+            "total": 4,
+            "low": 3
+          },
+          "NICE": {
+            "total": 1,
+            "low": 1
+          }
         },
         "reasonCounts": {
           "필요한 기능이 없거나 몰라서 불편": 2,
