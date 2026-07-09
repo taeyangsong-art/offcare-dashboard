@@ -327,6 +327,11 @@
   .ev-del{flex:0 0 auto; border:none; background:transparent; color:#fff; cursor:pointer;
     font-size:15px; line-height:1; opacity:.7; padding:0 1px; margin-top:-1px; font-weight:700}
   .ev-del:hover{opacity:1}
+  .ev-chip.gcal{background:#e8f0fe; color:#174ea6; border:1px solid #c6dafc; box-shadow:none; cursor:default}
+  .ev-chip.gcal .ev-txt{color:#174ea6}
+  .ev-chip.gcal .ev-sub{opacity:.85}
+  .ev-gtag{flex:0 0 auto; width:18px; height:18px; border-radius:5px; background:#1a73e8; color:#fff;
+    font-size:11px; font-weight:800; display:inline-flex; align-items:center; justify-content:center; margin-top:1px}
 
   /* form modal */
   .form-modal{text-align:left; width:min(440px,92vw)}
@@ -1637,11 +1642,18 @@ function renderShare(){
         <span class="ev-txt"><span class="ev-head">${escapeHtml(e.emp)}</span><span class="ev-sub">${t.label}${e.time?' · '+escapeHtml(e.time):''}</span>${e.title?`<span class="ev-memo">${escapeHtml(e.title)}</span>`:''}</span>
         <button class="ev-del" title="삭제" onclick="event.stopPropagation();removeShare('${ds}','${e.id}')">×</button></div>`;
     }).join("");
+    // 구글 캘린더 회의(읽기 전용)
+    const gchips = gcalDay(ds).map(g=>{
+      const tt=`${g.title}${g.time?' · '+g.time:''} — 구글 캘린더(읽기 전용)`;
+      return `<div class="ev-chip gcal" title="${escapeHtml(tt)}">
+        <span class="ev-gtag">G</span>
+        <span class="ev-txt"><span class="ev-head">${escapeHtml(g.title)}</span><span class="ev-sub">${g.time?'🕒 '+escapeHtml(g.time):'종일'}</span></span></div>`;
+    }).join("");
     return `<div class="daycell share ${ds===todayStr?'today':''} ${holi?'holi':''}"
       ondragover="shareDragOver(event,this)" ondragleave="shareDragLeave(this)" ondrop="shareDrop(event,'${ds}',this)">
       <div class="dnum ${numCls}">${d}${holi?`<span class="holi-tag">${holi}</span>`:''}
         <button class="add-ev" title="일정 추가" onclick="openShareForm('${ds}')">+</button></div>
-      <div class="ev-list">${chips}</div>
+      <div class="ev-list">${chips}${gchips}</div>
     </div>`;
   }).join("");
 
@@ -1649,7 +1661,7 @@ function renderShare(){
     <div class="page-head">
       <div>
         <h2>📢 공유</h2>
-        <div class="sub">연차 · 반차 · 시간차 · 휴가 · 외부일정 · 교육일정 · 회의를 팀원과 공유하세요. <b>일정 색상은 직원별</b>로 구분됩니다(아래 범례 참고). <b>일정을 클릭하면 수정</b>, <b>드래그하면 날짜 이동</b>, × 버튼으로 삭제됩니다.</div>
+        <div class="sub">연차 · 반차 · 시간차 · 휴가 등 개인 일정은 <b>직원별 색상</b>으로 표시되고, <b>회사 구글 캘린더의 회의 일정</b>은 파란 <b>G</b> 칩으로 자동 표시됩니다(읽기 전용). 개인 일정은 <b>클릭 수정 · 드래그 이동 · × 삭제</b>가 됩니다.</div>
       </div>
       <div class="controls">
         <select class="sel" onchange="setShareFilter(this.value)">
@@ -1680,6 +1692,7 @@ function renderShare(){
       </div>
       <div class="legend">
         ${EMPLOYEES.map(n=>`<span><span class="swatch" style="background:${empColor(n)}"></span>${n}</span>`).join("")}
+        <span style="margin-left:6px"><span class="swatch" style="background:#e8f0fe;border:1px solid #c6dafc"></span>회의(구글)</span>
       </div>
     </div>
   `;
@@ -1906,13 +1919,19 @@ function boot(){
   renderNav(); renderMain(); checkAuth();
   startAutoRefresh();
 }
-// slack-data.js 를 캐시 무효화(?t=)하여 항상 최신본을 불러온 뒤 시작
+// slack-data.js, calendar-data.js 를 캐시 무효화(?t=)하여 항상 최신본을 불러온 뒤 시작
 (function(){
-  var s=document.createElement("script");
-  s.src="slack-data.js?t="+Date.now();
-  s.onload=boot; s.onerror=boot;   // 로드 실패해도 앱은 뜨도록
-  document.head.appendChild(s);
+  function load(src, cb){ var s=document.createElement("script"); s.src=src+"?t="+Date.now(); s.onload=cb; s.onerror=cb; document.head.appendChild(s); }
+  load("slack-data.js", function(){ load("calendar-data.js", boot); });   // 둘 다(실패해도) 로드 후 부팅
 })();
+// 선택 날짜의 구글 캘린더 일정 배열 (없으면 [])
+function gcalDay(date){ return (window.GCAL_DATA&&window.GCAL_DATA.days&&window.GCAL_DATA.days[date])||[]; }
+function reloadCalendarData(cb){
+  var s=document.createElement("script"); s.src="calendar-data.js?t="+Date.now();
+  s.onload=function(){ if(s.parentNode)s.parentNode.removeChild(s); if(cb)cb(); };
+  s.onerror=function(){ if(s.parentNode)s.parentNode.removeChild(s); if(cb)cb(); };
+  document.head.appendChild(s);
+}
 // slack-data.js 를 다시 로드 (콜백에서 최신 window.SLACK_DATA 사용)
 function reloadSlackData(cb){
   var s=document.createElement("script");
@@ -1933,6 +1952,11 @@ function startAutoRefresh(){
     reloadSlackData(function(){
       const cur=(window.SLACK_DATA && window.SLACK_DATA.version) || 0;
       if(cur!==prev){ applySlackData(); if(activeCat!=="duty" && activeCat!=="share") renderMain(); }
+    });
+    const gprev=(window.GCAL_DATA && window.GCAL_DATA.version) || 0;
+    reloadCalendarData(function(){
+      const gcur=(window.GCAL_DATA && window.GCAL_DATA.version) || 0;
+      if(gcur!==gprev && activeCat==="share") renderShare();
     });
   }, 120000);
 }
