@@ -177,6 +177,12 @@
   .voc-sel,.voc-note{width:100%; font-family:inherit; font-size:12.5px; padding:6px 8px; border:1px solid var(--line);
     border-radius:8px; background:var(--surface2); color:var(--ink)}
   .voc-sel:focus,.voc-note:focus{outline:none; border-color:var(--blue); background:#fff; box-shadow:0 0 0 3px var(--blue-soft)}
+  .navbtn.sub{padding:9px 13px 9px 30px; font-size:14px; color:var(--gray); font-weight:500}
+  .navbtn.sub .ic{font-size:12px; color:var(--gray2)}
+  .navbtn.sub.active{background:var(--blue-soft); color:var(--blue-deep); font-weight:700}
+  .voc-comment{width:100%; min-height:130px; font-family:inherit; font-size:14px; line-height:1.65; padding:14px 16px;
+    border:1px solid var(--line); border-radius:12px; background:var(--surface2); color:var(--ink); resize:vertical}
+  .voc-comment:focus{outline:none; border-color:var(--blue); background:#fff; box-shadow:0 0 0 3px var(--blue-soft)}
 
   /* pending lookup */
   .search-box{width:100%; font-family:inherit; font-size:14px; padding:11px 14px; border:1px solid var(--line);
@@ -487,6 +493,8 @@ let COUNTS = load(LS_COUNT, {});   // { cat: { "YYYY-MM-DD": { emp: n } } }
 let DUTY   = load(LS_DUTY, {});    // { "YYYY-MM-DD": { day, aft, nit } }
 let SHARE  = load(LS_SHARE, {});   // { "YYYY-MM-DD": [ {id, emp, type, title, time} ] }
 let VOCEDIT= load(LS_VOCEDIT, {}); // { "date|storeId|time": { industry, reasonCat, note } } — VOC 수기 보정
+const LS_VOCCOMMENT = "opcare_voccomment_v1";
+let VOCCOMMENT = load(LS_VOCCOMMENT, {}); // { "YYYY-MM": "먼슬리 코멘트" }
 
 function load(k, def){ try{ const v=JSON.parse(localStorage.getItem(k)); return v==null?def:v; }catch(e){ return def; } }
 function save(k, v){ localStorage.setItem(k, JSON.stringify(v)); }
@@ -569,10 +577,16 @@ function renderNav(){
   const ov=`<button class="navbtn ${activeCat==='overview'?'active':''}" onclick="selectCat('overview')">
       <span class="ic">📊</span>전체 현황</button>
     <div class="nav-div"></div>`;
-  document.getElementById("nav").innerHTML = ov + CATEGORIES.map(c=>`
-    <button class="navbtn ${c.key===activeCat?'active':''}" onclick="selectCat('${c.key}')">
-      <span class="ic">${c.icon}</span>${c.name}
-    </button>`).join("");
+  document.getElementById("nav").innerHTML = ov + CATEGORIES.map(c=>{
+    const active = (c.key===activeCat) || (c.key==='voc' && activeCat==='voc-monthly');
+    let btn = `<button class="navbtn ${active?'active':''}" onclick="selectCat('${c.key}')">
+      <span class="ic">${c.icon}</span>${c.name}</button>`;
+    if(c.key==='voc' && (activeCat==='voc'||activeCat==='voc-monthly')){
+      btn += `<button class="navbtn sub ${activeCat==='voc-monthly'?'active':''}" onclick="selectCat('voc-monthly')">
+        <span class="ic">└</span>Monthly</button>`;
+    }
+    return btn;
+  }).join("");
 }
 function selectCat(k){ activeCat=k; renderNav(); renderMain(); window.scrollTo(0,0); }
 
@@ -582,6 +596,7 @@ function renderMain(){
   else if(activeCat==="duty") renderDuty();
   else if(activeCat==="share") renderShare();
   else if(activeCat==="voc") renderVoc();
+  else if(activeCat==="voc-monthly") renderVocMonthly();
   else renderStats();
 }
 
@@ -824,6 +839,87 @@ function renderVoc(){
   `;
 }
 function filterVoc(q){ q=(q||'').trim().toLowerCase(); document.querySelectorAll('#vocBody tr').forEach(tr=>{ tr.style.display=(tr.dataset.key||'').includes(q)?'':'none'; }); }
+
+/* ================= VOC Monthly (먼슬리 발표용) ================= */
+function vocMonthAgg(){
+  const dates=rangeDates('month', selDate);
+  const v=aggVoc(dates);
+  const byInd={}, byReason={};
+  v.alerts.forEach(a=>{ const ed=VOCEDIT[vocKey(a)]||{};
+    const ind=ed.industry||a.indBucket||'미지정';
+    const rea=ed.reasonCat||(a.reasons[0]&&a.reasons[0].cat)||VOC_REASONS[5];
+    byInd[ind]=(byInd[ind]||0)+1; byReason[rea]=(byReason[rea]||0)+1; });
+  return {dates, v, byInd, byReason, totalIn:v.alerts.length};
+}
+function vocDailyTrend(dates){
+  const counts=dates.map(d=>{ const vv=(slackDay(d)||{}).voc; return vv?(vv.alerts||[]).length:0; });
+  const mx=Math.max(1,...counts);
+  const n=dates.length, bw=16, gap=8, padL=12, padR=12, H=170, base=H-30, plotH=H-46;
+  const W=Math.max(560, padL+padR+n*(bw+gap));
+  const bars=dates.map((d,i)=>{ const c=counts[i], h=c/mx*plotH, x=padL+i*(bw+gap), y=base-h, day=parseYmd(d).getDate();
+    return `<rect x="${x}" y="${y.toFixed(1)}" width="${bw}" height="${h.toFixed(1)}" rx="2" fill="${c>0?'#ff3b30':'#ececf0'}"></rect>`
+      +(c>0?`<text x="${x+bw/2}" y="${(y-4).toFixed(1)}" text-anchor="middle" font-size="9" font-weight="700" fill="#424245">${c}</text>`:'')
+      +`<text x="${x+bw/2}" y="${base+14}" text-anchor="middle" font-size="8.5" fill="#86868b">${day}</text>`;
+  }).join('');
+  return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}"><line x1="${padL-4}" y1="${base}" x2="${W-padR+4}" y2="${base}" stroke="#d2d2d7"/>${bars}</svg></div>`;
+}
+function renderVocMonthly(){
+  const ref=parseYmd(selDate), y=ref.getFullYear(), mo=ref.getMonth();
+  const mkey=`${y}-${String(mo+1).padStart(2,'0')}`;
+  const {dates,v,byInd,byReason,totalIn}=vocMonthAgg();
+  const indRows=Object.entries(byInd).sort((a,b)=>b[1]-a[1]);
+  const reaRows=Object.entries(byReason).sort((a,b)=>b[1]-a[1]);
+  const indMax=Math.max(1,...indRows.map(r=>r[1]));
+  const reaMax=Math.max(1,...reaRows.map(r=>r[1]));
+  const lowRate=v.responses?Math.round(totalIn/v.responses*100):0;
+  const comment=VOCCOMMENT[mkey]||'';
+  document.getElementById("main").innerHTML=`
+    <div class="page-head">
+      <div><h2>💬 VOC Monthly</h2><div class="sub">${y}년 ${mo+1}월 먼슬리 발표 자료 · 저점률 ${lowRate}%</div></div>
+      <div class="controls">
+        <button class="navround" onclick="vocMonthNav(-1)">‹</button>
+        <div class="mtitle" style="min-width:110px;font-size:19px">${y}.${String(mo+1).padStart(2,'0')}</div>
+        <button class="navround" onclick="vocMonthNav(1)">›</button>
+        <button class="btn" onclick="vocMonthToday()">이번 달</button>
+      </div>
+    </div>
+    <div class="kpis">
+      ${vocKpi('총 응답', v.responses)}
+      ${vocKpi('총 인입(저점)', totalIn)}
+      ${vocKpi('구매설치 저점', v.install.low, v.install.count)}
+      ${vocKpi('추천의향 저점', v.nps.low, v.nps.count)}
+    </div>
+    <div class="grid2">
+      <div class="card"><div class="card-head"><h3>업종별 인입</h3><span class="hint">총 ${totalIn}건</span></div>
+        ${indRows.length?indRows.map(([n,c])=>barRow(n,c,indMax,'#0071e3')).join(''):'<div class="empty-note">인입 없음 👍</div>'}</div>
+      <div class="card"><div class="card-head"><h3>인입 이유별</h3><span class="hint">저점 사유</span></div>
+        ${reaRows.length?reaRows.map(([n,c])=>barRow(n.split('(')[0],c,reaMax,'#ff3b30')).join(''):'<div class="empty-note">인입 없음 👍</div>'}</div>
+    </div>
+    <div class="card"><div class="card-head"><h3>일별 인입 추이</h3><span class="hint">${mo+1}월</span></div>${vocDailyTrend(dates)}</div>
+    <div class="card">
+      <div class="card-head"><h3>📝 먼슬리 코멘트</h3>
+        <button class="btn primary" onclick="vocGenComment('${mkey}')">✨ 자동 요약 초안</button></div>
+      <textarea class="voc-comment" id="vocComment" placeholder="이 달의 VOC 인사이트·액션플랜을 작성하세요. (자동 저장)" onchange="saveVocComment('${mkey}', this.value)">${escapeHtml(comment)}</textarea>
+      <div class="note" style="font-size:12px;color:var(--gray2);margin-top:8px">코멘트는 브라우저에 자동 저장 · 정교한 AI 코멘트가 필요하면 클로드에게 "${mkey} VOC 코멘트 써줘"라고 요청하세요.</div>
+    </div>
+  `;
+}
+function vocMonthNav(n){ const r=parseYmd(selDate); selDate=ymd(new Date(r.getFullYear(), r.getMonth()+n, 1)); renderVocMonthly(); }
+function vocMonthToday(){ selDate=ymd(today()); renderVocMonthly(); }
+function saveVocComment(mkey, text){ if(text&&text.trim()) VOCCOMMENT[mkey]=text; else delete VOCCOMMENT[mkey]; save(LS_VOCCOMMENT, VOCCOMMENT); }
+function vocGenComment(mkey){
+  const {v,byInd,byReason,totalIn}=vocMonthAgg();
+  const ti=Object.entries(byInd).sort((a,b)=>b[1]-a[1]).slice(0,3);
+  const tr=Object.entries(byReason).sort((a,b)=>b[1]-a[1]).slice(0,3);
+  let s=`[${mkey} VOC 먼슬리 요약]\n`;
+  s+=`• 총 응답 ${v.responses}건 중 VOC 인입(저점) ${totalIn}건 (저점률 ${v.responses?Math.round(totalIn/v.responses*100):0}%)\n`;
+  s+=`• 구매설치 저점 ${v.install.low}건 · 추천의향 저점 ${v.nps.low}건\n`;
+  if(ti.length) s+=`• 업종: ${ti.map(([n,c])=>n+' '+c+'건').join(' / ')}\n`;
+  if(tr.length) s+=`• 주요 사유: ${tr.map(([n,c])=>n.split('(')[0]+' '+c+'건').join(' / ')}\n`;
+  s+=`• 인사이트/액션: `;
+  const el=document.getElementById('vocComment'); if(el){ el.value=s; el.focus(); }
+  saveVocComment(mkey, s);
+}
 
 /* ================= Stats page ================= */
 function renderStats(){
