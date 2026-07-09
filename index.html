@@ -619,9 +619,9 @@ function renderOverview(){
     <div class="card">
       <div class="card-head">
         <h3>직원별 처리량 (카테고리 구성)</h3>
-        <span class="hint">${viewLabel} · 세로 막대 = 총 처리량 · 색 = 카테고리</span>
+        <span class="hint">${viewLabel} · 직원별로 카테고리 막대를 분리 표시</span>
       </div>
-      ${columnChart(empRows, maxEmp)}
+      ${columnChart(empRows, maxCell)}
       <div class="legend">
         ${WORK_CATS.map(c=>`<span><span class="swatch" style="background:${c.color}"></span>${c.name}</span>`).join("")}
       </div>
@@ -631,30 +631,47 @@ function renderOverview(){
 // hex + alpha → rgba
 function hexA(hex,a){ const n=parseInt(hex.slice(1),16); return `rgba(${n>>16&255},${n>>8&255},${n&255},${a})`; }
 
-// 직원별 세로 스택 막대차트 (카테고리 구성) — 세그먼트에 카테고리 수치 표기
-function columnChart(empRows, maxEmp){
-  const n=empRows.length;
-  const colW=48, gap=20, padL=16, padR=16, topPad=28, botPad=44;
-  const W=Math.max(560, padL+padR + n*colW + (n-1)*gap);
-  const H=320, base=H-botPad, plotH=H-topPad-botPad;
-  const mx=Math.max(1, maxEmp);
-  const bars=empRows.map((r,i)=>{
-    const x=padL + i*(colW+gap);
-    let y=base;
-    const segs=WORK_CATS.map((c,ci)=>{
-      const v=r.cells[ci]; if(v<=0) return "";
-      const h=v/mx*plotH; y-=h;
-      const lbl = h>=15 ? `<text x="${x+colW/2}" y="${y+h/2+4}" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">${v}</text>` : "";
-      return `<rect x="${x}" y="${y.toFixed(1)}" width="${colW}" height="${h.toFixed(1)}" fill="${c.color}"><title>${c.name} ${v}건</title></rect>${lbl}`;
+// 직원별 그룹(묶음) 세로 막대차트 — 직원마다 카테고리별 막대를 분리 표시
+function columnChart(empRows, maxCell){
+  const cats=WORK_CATS, nc=cats.length, ng=empRows.length;
+  const barW=12, barGap=3, groupGap=32, padL=20, padR=20, topPad=22, botPad=46;
+  const groupW=nc*barW+(nc-1)*barGap;
+  const W=Math.max(560, padL+padR + ng*groupW + (ng-1)*groupGap);
+  const H=340, base=H-botPad, plotH=H-topPad-botPad;
+  const mx=Math.max(1, maxCell);
+  const groups=empRows.map((r,gi)=>{
+    const gx=padL + gi*(groupW+groupGap);
+    const bars=cats.map((c,ci)=>{
+      const v=r.cells[ci];
+      const bx=gx+ci*(barW+barGap);
+      if(v<=0) return `<rect x="${bx}" y="${base-2}" width="${barW}" height="2" rx="1" fill="#ececf0"/>`;
+      const h=v/mx*plotH, y=base-h;
+      return `<rect x="${bx}" y="${y.toFixed(1)}" width="${barW}" height="${h.toFixed(1)}" rx="2.5" fill="${c.color}"><title>${r.emp} · ${c.name} ${v}건</title></rect>`
+        + `<text x="${bx+barW/2}" y="${(y-4).toFixed(1)}" text-anchor="middle" font-size="10" font-weight="700" fill="#424245">${v}</text>`;
     }).join("");
-    const total = r.total>0 ? `<text x="${x+colW/2}" y="${(y-8).toFixed(1)}" text-anchor="middle" font-size="14" font-weight="800" fill="#1d1d1f">${r.total}</text>` : "";
-    const name = `<text x="${x+colW/2}" y="${base+20}" text-anchor="middle" font-size="12.5" font-weight="600" fill="#424245">${r.emp}</text>`;
-    return `${segs}${total}${name}`;
+    const sep = gi>0 ? `<line x1="${(gx-groupGap/2).toFixed(1)}" y1="${topPad}" x2="${(gx-groupGap/2).toFixed(1)}" y2="${base}" stroke="#f2f2f5"/>` : "";
+    const name = `<text x="${gx+groupW/2}" y="${base+22}" text-anchor="middle" font-size="13" font-weight="700" fill="#1d1d1f">${r.emp}</text>`;
+    const tot = `<text x="${gx+groupW/2}" y="${base+38}" text-anchor="middle" font-size="11" font-weight="600" fill="#86868b">합계 ${r.total}</text>`;
+    return sep+bars+name+tot;
   }).join("");
-  return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" style="max-width:100%">
-    <line x1="${padL-8}" y1="${base}" x2="${W-padR+8}" y2="${base}" stroke="#d2d2d7" stroke-width="1"/>
-    ${bars}
+  return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
+    <line x1="${padL-8}" y1="${base}" x2="${W-padR+8}" y2="${base}" stroke="#d2d2d7"/>
+    ${groups}
   </svg></div>`;
+}
+// 단일 카테고리 세로 막대차트 (직원별) — 외주 등
+function simpleColumn(pairs, color){
+  const n=pairs.length, colW=42, gap=24, padL=18, padR=18, topPad=24, botPad=42;
+  const W=Math.max(360, padL+padR + n*colW + (n-1)*gap);
+  const H=230, base=H-botPad, plotH=H-topPad-botPad;
+  const mx=Math.max(1, ...pairs.map(p=>p[1]));
+  const bars=pairs.map(([nm,v],i)=>{
+    const x=padL + i*(colW+gap), h=v/mx*plotH, y=base-h;
+    return `<rect x="${x}" y="${y.toFixed(1)}" width="${colW}" height="${h.toFixed(1)}" rx="3" fill="${color}"><title>${nm} ${v}건</title></rect>`
+      + `<text x="${x+colW/2}" y="${(y-6).toFixed(1)}" text-anchor="middle" font-size="13" font-weight="800" fill="#1d1d1f">${v}</text>`
+      + `<text x="${x+colW/2}" y="${base+19}" text-anchor="middle" font-size="12.5" font-weight="600" fill="#424245">${nm}</text>`;
+  }).join("");
+  return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}"><line x1="${padL-6}" y1="${base}" x2="${W-padR+6}" y2="${base}" stroke="#d2d2d7"/>${bars}</svg></div>`;
 }
 
 /* ================= Stats page ================= */
@@ -749,7 +766,6 @@ function externCard(){
   if(!ex||Object.keys(ex).length===0) return "";
   const rows=Object.entries(ex).sort((a,b)=>b[1]-a[1]);
   const total=rows.reduce((a,[,n])=>a+n,0);
-  const maxv=Math.max(1,...rows.map(r=>r[1]));
   return `<div class="card">
     <div class="card-head">
       <h3>🧩 외주 처리 (별도 집계)</h3>
@@ -757,11 +773,7 @@ function externCard(){
     </div>
     <p class="note" style="margin:-6px 0 14px;font-size:13px;color:var(--gray)">
       <b>원격외주</b> 이모지가 찍힌 처리완료 건입니다. AS·온보딩과 <b>별도로</b> 집계됩니다.</p>
-    ${rows.map(([emp,n])=>`
-      <div class="bar-row">
-        <div class="bar-meta"><span class="nm">${emp}</span><span class="ct">${n}건</span></div>
-        <div class="bar-track"><div class="bar-fill" style="width:${n/maxv*100}%"></div></div>
-      </div>`).join("")}
+    ${simpleColumn(rows, "#8e8e93")}
   </div>`;
 }
 
