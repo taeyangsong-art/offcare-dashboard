@@ -374,6 +374,30 @@
   .ev-chip.gcal .ev-sub{opacity:.85}
   .ev-gtag{flex:0 0 auto; width:18px; height:18px; border-radius:5px; background:#1a73e8; color:#fff;
     font-size:11px; font-weight:800; display:inline-flex; align-items:center; justify-content:center; margin-top:1px}
+  .ev-chip.gcal.duty{border-color:#ffd8a8; background:#fff8ef}
+  .ev-duty{display:block; font-size:11.5px; font-weight:800; color:#b45309; background:#fff3d6; border-radius:5px; padding:1px 6px; margin-top:3px; align-self:flex-start}
+  /* 원격 근무 당번 카드 */
+  .duty-remote-card .card-head{align-items:center}
+  .dr-list{display:flex; flex-direction:column; gap:7px}
+  .dr-row{display:flex; align-items:center; gap:10px; padding:9px 12px; border:1px solid var(--line-soft); border-radius:10px; background:var(--surface2)}
+  .dr-row.next{border-color:#ffd8a8; background:#fff8ef}
+  .dr-when{flex:0 0 auto; font-size:13px; font-weight:700; color:var(--gray); min-width:80px}
+  .dr-title{flex:1; font-size:14px; font-weight:600; color:var(--ink); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .dr-person{flex:0 0 auto; font-size:13.5px; font-weight:800; color:#b45309; background:#fff3d6; padding:3px 12px; border-radius:20px}
+  /* 30분 전 당번 팝업 */
+  .duty-pop-overlay{position:fixed; inset:0; background:rgba(15,15,15,.55); backdrop-filter:blur(3px); display:flex; align-items:center; justify-content:center; z-index:9999; animation:dutyfade .2s ease}
+  @keyframes dutyfade{from{opacity:0}to{opacity:1}}
+  .duty-pop{background:var(--canvas,#fff); border-radius:22px; padding:30px 34px; text-align:center; max-width:340px; width:88%;
+    box-shadow:0 24px 60px rgba(0,0,0,.32); animation:dutypop .3s cubic-bezier(.2,.9,.3,1.3)}
+  @keyframes dutypop{from{transform:scale(.85) translateY(12px);opacity:0}to{transform:none;opacity:1}}
+  .duty-pop-ic{font-size:52px; line-height:1}
+  .duty-pop-sub{margin-top:8px; font-size:13px; font-weight:800; color:#ff9500; letter-spacing:.02em}
+  .duty-pop-title{margin-top:3px; font-size:20px; font-weight:800; color:var(--ink); letter-spacing:-.02em}
+  .duty-pop-badge{margin-top:18px; font-size:12px; font-weight:700; color:var(--gray)}
+  .duty-pop-person{margin-top:3px; font-size:36px; font-weight:800; letter-spacing:-.03em; color:#b45309}
+  .duty-pop-time{margin-top:8px; font-size:14px; color:var(--gray)}
+  .duty-pop-btn{margin-top:22px; width:100%; border:none; background:var(--blue,#1f4ffa); color:#fff; font-size:15px; font-weight:700; padding:13px; border-radius:13px; cursor:pointer}
+  .duty-pop-btn:hover{filter:brightness(1.06)}
 
   /* form modal */
   .form-modal{text-align:left; width:min(440px,92vw)}
@@ -559,6 +583,62 @@ const EMP_COLORS = {
   "송태양":"#e03131","김현기":"#0c8599","배선유":"#9c36b5","최민석":"#c2255c","심성현":"#495057"
 };
 function empColor(n){ return EMP_COLORS[n] || "#495057"; }
+// 회의 중 원격 근무 당번 순번 (정기회의·타운홀 공통, 순서대로 1명씩 남음)
+const DUTY_ORDER = ["배선유","송태양","김동욱","김현기","서상원","김규빈","심성현"];
+const DUTY_ANCHOR_DATE = "2026-07-10";   // 이 날 회의 = 김현기(순번 idx 3) 기준으로 전체 정렬
+const DUTY_ANCHOR_IDX = 3;
+const LS_DUTYALERT = "opcare_dutyalert_v1";
+function isDutyMeeting(t){ return /정기회의|타운홀|town\s*hall/i.test(t||""); }
+function meetingDutyList(){
+  const days=(window.GCAL_DATA&&window.GCAL_DATA.days)||{}; const list=[];
+  Object.keys(days).forEach(d=>(days[d]||[]).forEach(e=>{ if(isDutyMeeting(e.title)) list.push({date:d, time:e.time||"", title:e.title}); }));
+  list.sort((a,b)=>(a.date+"|"+a.time).localeCompare(b.date+"|"+b.time));
+  return list;
+}
+function dutyMap(){
+  const list=meetingDutyList();
+  let a=list.findIndex(m=>m.date===DUTY_ANCHOR_DATE);
+  if(a<0){ a=list.findIndex(m=>m.date>=DUTY_ANCHOR_DATE); if(a<0) a=Math.max(0,list.length-1); }
+  const map={};
+  list.forEach((m,i)=>{ map[m.date+"|"+m.time+"|"+m.title]=DUTY_ORDER[(((i-a+DUTY_ANCHOR_IDX)%7)+7)%7]; });
+  return map;
+}
+function meetingStart(m){
+  const t=(m.time||"").split("~")[0].trim(); if(!/^\d{1,2}:\d{2}$/.test(t)) return null;
+  const p=m.date.split("-").map(Number), q=t.split(":").map(Number);
+  return new Date(p[0],p[1]-1,p[2],q[0],q[1],0,0);
+}
+// 30분 전 알림 체크(탭 열려 있을 때). 1분마다 호출됨.
+function checkDutyAlert(){
+  if(!window.GCAL_DATA) return;
+  const now=new Date(), today=ymd(now), map=dutyMap(), alerted=load(LS_DUTYALERT,{});
+  meetingDutyList().filter(m=>m.date===today).forEach(m=>{
+    const st=meetingStart(m); if(!st) return;
+    const diff=(st-now)/60000, key=m.date+"|"+m.time+"|"+m.title;
+    if(diff>0 && diff<=30 && !alerted[key]){ alerted[key]=true; showDutyPopup(m, map[key], Math.max(1,Math.round(diff))); }
+  });
+  Object.keys(alerted).forEach(k=>{ if((k.split("|")[0]||"")<today) delete alerted[k]; });
+  save(LS_DUTYALERT,alerted);
+}
+function showDutyPopup(m, person, mins){
+  const ex=document.getElementById("dutyPop"); if(ex) ex.remove();
+  const el=document.createElement("div"); el.id="dutyPop"; el.className="duty-pop-overlay";
+  el.innerHTML=`<div class="duty-pop">
+    <div class="duty-pop-ic">🏠</div>
+    <div class="duty-pop-sub">${mins}분 후 시작</div>
+    <div class="duty-pop-title">${escapeHtml(m.title)}</div>
+    <div class="duty-pop-badge">이번 회의 원격 근무 당번</div>
+    <div class="duty-pop-person">${escapeHtml(person||"-")}</div>
+    <div class="duty-pop-time">🕒 ${escapeHtml(m.time||"")}</div>
+    <button class="duty-pop-btn" onclick="document.getElementById('dutyPop').remove()">확인했어요 👍</button>
+  </div>`;
+  document.body.appendChild(el);
+  try{ if(window.Notification && Notification.permission==="granted") new Notification(`🏠 ${m.title} ${mins}분 전`, {body:`원격 근무 당번: ${person}`}); }catch(e){}
+}
+function enableDutyNotif(){
+  if(!window.Notification){ alert("이 브라우저는 알림을 지원하지 않아요."); return; }
+  Notification.requestPermission().then(p=>alert(p==="granted"?"브라우저 알림이 켜졌어요! 🔔 (탭이 열려 있을 때 30분 전 알려드려요)":"알림이 꺼져 있어요. 주소창 왼쪽 자물쇠 아이콘 → 알림 허용으로 켤 수 있어요."));
+}
 const CATEGORIES = [
   {key:"voc",        name:"VOC",    icon:"💬"},
   {key:"share",      name:"공유",    icon:"📢"},
@@ -1712,6 +1792,8 @@ function renderShare(){
   for(let d=1;d<=lastDate;d++) cells.push(d);
   const dows=["일","월","화","수","목","금","토"];
   const todayStr=ymd(today());
+  const dmap=dutyMap();   // 회의별 원격 당번
+  const dutyUpcoming=meetingDutyList().filter(mm=>mm.date>=todayStr).slice(0,4).map(mm=>({...mm, person:dmap[mm.date+"|"+mm.time+"|"+mm.title]}));
 
   // 이번 달 요약 카운트
   const monthPrefix = `${y}-${String(m+1).padStart(2,'0')}`;
@@ -1732,12 +1814,13 @@ function renderShare(){
         <span class="ev-txt"><span class="ev-head">${escapeHtml(e.emp)}</span><span class="ev-sub">${t.label}${e.time?' · '+escapeHtml(e.time):''}</span>${e.title?`<span class="ev-memo">${escapeHtml(e.title)}</span>`:''}</span>
         <button class="ev-del" title="삭제" onclick="event.stopPropagation();removeShare('${ds}','${e.id}')">×</button></div>`;
     }).join("");
-    // 구글 캘린더 회의(읽기 전용)
+    // 구글 캘린더 회의(읽기 전용) + 원격 근무 당번 표시
     const gchips = gcalDay(ds).map(g=>{
-      const tt=`${g.title}${g.time?' · '+g.time:''} — 구글 캘린더(읽기 전용)`;
-      return `<div class="ev-chip gcal" title="${escapeHtml(tt)}">
+      const who=dmap[ds+"|"+(g.time||"")+"|"+g.title];
+      const tt=`${g.title}${g.time?' · '+g.time:''}${who?' · 원격 당번: '+who:''} — 구글 캘린더(읽기 전용)`;
+      return `<div class="ev-chip gcal ${who?'duty':''}" title="${escapeHtml(tt)}">
         <span class="ev-gtag">G</span>
-        <span class="ev-txt"><span class="ev-head">${escapeHtml(g.title)}</span><span class="ev-sub">${g.time?'🕒 '+escapeHtml(g.time):'종일'}</span></span></div>`;
+        <span class="ev-txt"><span class="ev-head">${escapeHtml(g.title)}</span><span class="ev-sub">${g.time?'🕒 '+escapeHtml(g.time):'종일'}</span>${who?`<span class="ev-duty">🏠 ${escapeHtml(who)}</span>`:''}</span></div>`;
     }).join("");
     return `<div class="daycell share ${ds===todayStr?'today':''} ${holi?'holi':''}"
       ondragover="shareDragOver(event,this)" ondragleave="shareDragLeave(this)" ondrop="shareDrop(event,'${ds}',this)">
@@ -1762,6 +1845,13 @@ function renderShare(){
         <button class="btn" onclick="shareToday()">이번 달</button>
       </div>
     </div>
+
+    ${dutyUpcoming.length?`<div class="card duty-remote-card">
+      <div class="card-head"><h3>🏠 회의 중 원격 근무 당번</h3><span class="hint">정기회의·타운홀 순번</span>
+        <button class="btn" style="margin-left:auto" onclick="enableDutyNotif()">🔔 알림 켜기</button></div>
+      <div class="dr-list">${dutyUpcoming.map((mm,i)=>`<div class="dr-row ${i===0?'next':''}"><span class="dr-when">${fmtShort(mm.date)}${mm.time?' '+escapeHtml(mm.time.split('~')[0]):''}</span><span class="dr-title">${escapeHtml(mm.title)}</span><span class="dr-person">🏠 ${escapeHtml(mm.person||'-')}</span></div>`).join('')}</div>
+      <div class="note" style="font-size:12px;color:var(--gray2);margin-top:10px">순번: ${DUTY_ORDER.join(' → ')} · 회의 <b>30분 전 팝업</b>으로 알려드려요(대시보드 탭이 열려 있을 때)</div>
+    </div>`:''}
 
     <div class="kpis">
       ${shareKpi("annual", summary.annual||0)}
@@ -2008,6 +2098,7 @@ function boot(){
   applySlackData();
   renderNav(); renderMain(); checkAuth();
   startAutoRefresh();
+  checkDutyAlert(); setInterval(checkDutyAlert, 60000);   // 회의 30분 전 당번 알림
 }
 // 데이터 파일을 GitHub 원본(raw)에서 직접 fetch → Pages 배포를 안 기다리고 반영(지연 최대 ~5분).
 // raw 실패 시 로컬(Pages) 파일로 폴백. 파일은 "window.XXX = {...};" 형태라 함수로 실행해 window에 반영.
