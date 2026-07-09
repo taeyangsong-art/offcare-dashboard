@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13,
+  "version": 14,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -152,34 +152,50 @@ window.SLACK_DATA = {
       ]
     },
     "2026-07-09": {
-      "updatedAt": "11:10",
+      "updatedAt": "12:13",
       "counts": {
-        "as": {
-          "배선유": 7,
-          "심성현": 5,
-          "김규빈": 3,
-          "김현기": 1,
-          "송태양": 5
-        },
         "extern": {
+          "김동욱": 1,
           "서상원": 1
         },
+        "as": {
+          "송태양": 6,
+          "심성현": 8,
+          "배선유": 9,
+          "김규빈": 6,
+          "김현기": 3,
+          "김동욱": 2
+        },
         "onboarding": {
-          "김현기": 1
+          "김규빈": 1,
+          "배선유": 1,
+          "김현기": 2,
+          "송태양": 1
         },
         "transfer": {
-          "송태양": 4,
+          "송태양": 6,
           "심성현": 1
         },
         "menu": {
+          "김규빈": 2,
           "배선유": 3
         }
       },
       "pending": [
         {
-          "time": "11:09",
-          "store": "주식회사 세리필라테스",
-          "biz": "6198107301",
+          "time": "11:57",
+          "store": "수에스테틱",
+          "biz": "3822601783",
+          "handler": "송태양",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "11:46",
+          "store": "탐휘트니스 헬스&amp;PT 길음점(문화비)",
+          "biz": "6450303534",
           "handler": "김현기",
           "cat": "as",
           "reasons": [
@@ -187,46 +203,30 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "11:00",
-          "store": "제이 앤 플러스(호박이네쌀공방)",
-          "biz": "",
-          "handler": "송태양",
-          "cat": "transfer",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "10:54",
-          "store": "궁동포차",
-          "biz": "6241302653",
-          "handler": "배선유",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "10:54",
-          "store": "카페율하온진해용원점",
-          "biz": "7751801729",
-          "handler": "김규빈",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "10:37",
-          "store": "편한셀프세차",
-          "biz": "3593901274",
+          "time": "11:30",
+          "store": "돌(DOL)",
+          "biz": "2171259344",
           "handler": "김동욱",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
           ]
         }
-      ]
+      ],
+      "voc": {
+        "responses": 5,
+        "install": {
+          "count": 0,
+          "low": 0
+        },
+        "nps": {
+          "count": 0,
+          "low": 0
+        },
+        "byIndustry": {},
+        "reasonCounts": {},
+        "alerts": []
+      }
     }
   }
 };
