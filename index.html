@@ -282,7 +282,7 @@
   .daycell.empty{background:transparent; border:none}
   .daycell.today{border:2px solid var(--blue); box-shadow:0 0 0 3px var(--blue-soft)}
   .daycell.holi{background:var(--red-soft)}
-  .dnum{font-size:14px; font-weight:700; display:flex; align-items:center; gap:5px}
+  .dnum{font-size:16px; font-weight:800; display:flex; align-items:center; gap:5px}
   .dnum.s-sat{color:var(--sat)} .dnum.s-sun{color:var(--sun)}
   .holi-tag{font-size:10px; font-weight:700; color:var(--red); background:#fff; padding:1px 6px;
     border-radius:6px; border:1px solid var(--red-soft)}
@@ -304,27 +304,28 @@
   /* ===== Share calendar ===== */
   .sel{font-family:inherit; font-size:14px; padding:9px 13px; border:1px solid var(--line);
     border-radius:11px; background:var(--canvas); color:var(--ink); cursor:pointer}
-  .daycell.share{min-height:118px; gap:4px}
+  .daycell.share{min-height:172px; gap:6px}
   .daycell.share .dnum{justify-content:space-between; width:100%}
   .add-ev{margin-left:auto; width:20px; height:20px; border-radius:6px; border:none; cursor:pointer;
     background:var(--surface); color:var(--gray); font-size:15px; line-height:1; font-weight:700;
     display:inline-flex; align-items:center; justify-content:center; transition:.15s}
   .add-ev:hover{background:var(--blue); color:#fff}
-  .ev-list{display:flex; flex-direction:column; gap:4px; overflow:hidden}
-  .ev-chip{display:flex; align-items:flex-start; gap:5px; font-size:11px; font-weight:700; padding:4px 5px 4px 7px;
-    border-radius:7px; line-height:1.35; transition:.15s}
-  .ev-chip:hover{filter:brightness(.96)}
+  .ev-list{display:flex; flex-direction:column; gap:5px; overflow:hidden}
+  .ev-chip{display:flex; align-items:flex-start; gap:6px; font-size:13px; font-weight:700; padding:7px 8px 7px 10px;
+    border-radius:10px; line-height:1.4; color:#fff; box-shadow:0 1px 2px rgba(0,0,0,.12); transition:.15s}
+  .ev-chip:hover{filter:brightness(1.08)}
   .ev-chip{cursor:grab}
   .ev-chip:active{cursor:grabbing}
   .ev-chip.dragging{opacity:.4}
   .daycell.share.drop-hover{border:2px dashed var(--blue); background:var(--blue-soft)}
   .ev-dot{width:7px; height:7px; border-radius:50%; flex:0 0 auto; margin-top:3px; display:inline-block}
-  .ev-txt{flex:1; min-width:0; display:flex; flex-direction:column; gap:1px; white-space:normal; word-break:keep-all}
-  .ev-head{font-weight:800}
+  .ev-txt{flex:1; min-width:0; display:flex; flex-direction:column; gap:2px; white-space:normal; word-break:keep-all; color:#fff}
+  .ev-head{font-weight:800; font-size:14px; letter-spacing:-.01em}
+  .ev-sub{font-weight:700; font-size:12px; opacity:.95}
   .ev-time{font-weight:700; opacity:.95}
-  .ev-memo{font-weight:600; opacity:.85}
-  .ev-del{flex:0 0 auto; border:none; background:transparent; color:inherit; cursor:pointer;
-    font-size:14px; line-height:1; opacity:.45; padding:0 1px; margin-top:-1px; font-weight:700}
+  .ev-memo{font-weight:600; font-size:11.5px; opacity:.9}
+  .ev-del{flex:0 0 auto; border:none; background:transparent; color:#fff; cursor:pointer;
+    font-size:15px; line-height:1; opacity:.7; padding:0 1px; margin-top:-1px; font-weight:700}
   .ev-del:hover{opacity:1}
 
   /* form modal */
@@ -505,6 +506,12 @@
 <script>
 /* ================= Config ================= */
 const EMPLOYEES = ["김기범","서상원","김규빈","김동욱","송태양","김현기","배선유","최민석","심성현"];
+// 공유 캘린더 — 직원별 고유 색상(흰 글씨가 잘 보이는 진한 톤)
+const EMP_COLORS = {
+  "김기범":"#1f6feb","서상원":"#2f9e44","김규빈":"#e8590c","김동욱":"#6741d9",
+  "송태양":"#e03131","김현기":"#0c8599","배선유":"#9c36b5","최민석":"#c2255c","심성현":"#495057"
+};
+function empColor(n){ return EMP_COLORS[n] || "#495057"; }
 const CATEGORIES = [
   {key:"voc",        name:"VOC",    icon:"💬"},
   {key:"share",      name:"공유",    icon:"📢"},
@@ -1624,10 +1631,10 @@ function renderShare(){
     const evs=shareEvents(ds);
     const chips = evs.map(e=>{
       const t=typeMeta(e.type);
+      const col=empColor(e.emp);
       const tt=`${e.emp} · ${t.label}${e.time?' · '+e.time:''}${e.title?' · '+e.title:''}`;
-      return `<div class="ev-chip" draggable="true" ondragstart="shareDragStart(event,'${ds}','${e.id}')" ondragend="shareDragEnd(event)" onclick="shareChipClick(event,'${ds}','${e.id}')" style="background:${t.soft};color:${t.color}" title="${escapeHtml(tt)} — 클릭: 수정 · 드래그: 이동">
-        <span class="ev-dot" style="background:${t.color}"></span>
-        <span class="ev-txt"><span class="ev-head">${escapeHtml(e.emp)} · ${t.label}</span>${e.time?`<span class="ev-time">🕒 ${escapeHtml(e.time)}</span>`:''}${e.title?`<span class="ev-memo">${escapeHtml(e.title)}</span>`:''}</span>
+      return `<div class="ev-chip" draggable="true" ondragstart="shareDragStart(event,'${ds}','${e.id}')" ondragend="shareDragEnd(event)" onclick="shareChipClick(event,'${ds}','${e.id}')" style="background:${col}" title="${escapeHtml(tt)} — 클릭: 수정 · 드래그: 이동">
+        <span class="ev-txt"><span class="ev-head">${escapeHtml(e.emp)}</span><span class="ev-sub">${t.label}${e.time?' · '+escapeHtml(e.time):''}</span>${e.title?`<span class="ev-memo">${escapeHtml(e.title)}</span>`:''}</span>
         <button class="ev-del" title="삭제" onclick="event.stopPropagation();removeShare('${ds}','${e.id}')">×</button></div>`;
     }).join("");
     return `<div class="daycell share ${ds===todayStr?'today':''} ${holi?'holi':''}"
@@ -1642,7 +1649,7 @@ function renderShare(){
     <div class="page-head">
       <div>
         <h2>📢 공유</h2>
-        <div class="sub">연차 · 반차 · 시간차 · 외부일정 · 교육일정 · 회의를 팀원과 공유하세요. 일정마다 시작~종료 시간을 넣을 수 있고, 달력에 시간·내용이 함께 표시됩니다. <b>일정을 클릭하면 수정</b>, <b>드래그하면 날짜 이동</b>, × 버튼으로 삭제됩니다.</div>
+        <div class="sub">연차 · 반차 · 시간차 · 휴가 · 외부일정 · 교육일정 · 회의를 팀원과 공유하세요. <b>일정 색상은 직원별</b>로 구분됩니다(아래 범례 참고). <b>일정을 클릭하면 수정</b>, <b>드래그하면 날짜 이동</b>, × 버튼으로 삭제됩니다.</div>
       </div>
       <div class="controls">
         <select class="sel" onchange="setShareFilter(this.value)">
@@ -1672,7 +1679,7 @@ function renderShare(){
         ${dayCells}
       </div>
       <div class="legend">
-        ${Object.entries(SHARE_TYPES).map(([k,t])=>`<span><span class="swatch" style="background:${t.color}"></span>${t.label}</span>`).join("")}
+        ${EMPLOYEES.map(n=>`<span><span class="swatch" style="background:${empColor(n)}"></span>${n}</span>`).join("")}
       </div>
     </div>
   `;
