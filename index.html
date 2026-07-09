@@ -171,6 +171,8 @@
   .voc-reason{font-size:12.5px; line-height:1.5; margin:2px 0; color:var(--ink-soft)}
   .voc-rcat{display:inline-block; background:var(--red-soft); color:var(--red); font-weight:700; font-size:11px;
     padding:1px 7px; border-radius:6px; margin-right:5px; white-space:nowrap}
+  .praise-emp{display:inline-block; background:var(--green-soft); color:var(--green-text,#166534); font-weight:700;
+    font-size:12px; padding:2px 9px; border-radius:7px}
   .voc-rawind{font-size:11px; color:var(--gray2); margin-top:2px}
   .voc-rawtxt{font-size:12px; color:var(--ink-soft); line-height:1.45}
   .voc-table td{vertical-align:top}
@@ -737,14 +739,16 @@ function simpleColumn(pairs, color){
 /* ================= VOC (고객 설문) page ================= */
 // 기간 내 VOC 집계 합산
 function aggVoc(dates){
-  const agg={responses:0,install:{count:0,low:0},nps:{count:0,low:0},byIndustry:{},reasonCounts:{},alerts:[]};
+  const agg={responses:0,install:{count:0,low:0},nps:{count:0,low:0},high:{install:0,nps:0},byIndustry:{},reasonCounts:{},alerts:[],praises:[]};
   dates.forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v) return;
     agg.responses+=v.responses||0;
     if(v.install){agg.install.count+=v.install.count||0; agg.install.low+=v.install.low||0;}
     if(v.nps){agg.nps.count+=v.nps.count||0; agg.nps.low+=v.nps.low||0;}
+    if(v.high){agg.high.install+=v.high.install||0; agg.high.nps+=v.high.nps||0;}
     for(const k in (v.byIndustry||{})) agg.byIndustry[k]=(agg.byIndustry[k]||0)+v.byIndustry[k];
     for(const k in (v.reasonCounts||{})) agg.reasonCounts[k]=(agg.reasonCounts[k]||0)+v.reasonCounts[k];
     (v.alerts||[]).forEach(a=>agg.alerts.push(Object.assign({date:d},a)));
+    (v.praises||[]).forEach(p=>agg.praises.push(Object.assign({date:d},p)));
   });
   return agg;
 }
@@ -829,6 +833,19 @@ function renderVoc(){
     </div>
 
     <div class="card">
+      <div class="card-head"><h3>👏 직원 칭찬 · 고점</h3><span class="hint">고점(구매설치≥4·추천≥9) ${v.high.install+v.high.nps}건 · 칭찬 ${v.praises.length}건</span></div>
+      ${v.praises.length?`<div style="overflow-x:auto"><table style="margin-top:6px">
+        <thead><tr><th style="width:52px">시간</th><th>매장명</th><th style="width:80px">매장ID</th><th style="width:90px">담당</th><th class="num" style="width:96px">점수</th><th>고객 원문</th></tr></thead>
+        <tbody>${v.praises.map(p=>{
+          const sc=`${p.install!=null?`설치 ${p.install}`:''}${p.install!=null&&p.nps!=null?' · ':''}${p.nps!=null?`추천 ${p.nps}`:''}`;
+          return `<tr><td class="trow-time">${p.time||''}</td><td class="emp-name">${escapeHtml(p.store||'-')}</td><td class="trow-biz">${p.storeId||'-'}</td>
+            <td>${p.emp?`<span class="praise-emp">${escapeHtml(p.emp)}</span>`:'<span style="color:var(--gray2)">-</span>'}</td>
+            <td class="num" style="color:var(--green);font-weight:800;white-space:nowrap">${sc||'-'}</td>
+            <td class="voc-rawtxt">${escapeHtml(p.text||'-')}</td></tr>`;}).join('')}</tbody>
+      </table></div>`:'<div class="empty-note">이 기간 칭찬·고점 적재 건이 없습니다</div>'}
+    </div>
+
+    <div class="card">
       <div class="card-head"><h3>🔎 저점 확인필요 매장</h3><span class="hint">${v.alerts.length}건 · 업종·저점이유 선택 + 처리내용 기록(자동 저장)</span></div>
       ${v.alerts.length?`<input class="search-box" type="text" placeholder="매장명 또는 매장ID 검색…" oninput="filterVoc(this.value)">
       <div style="overflow-x:auto"><table class="voc-table" style="margin-top:12px">
@@ -872,6 +889,9 @@ function renderVocMonthly(){
   const indMax=Math.max(1,...indRows.map(r=>r[1]));
   const reaMax=Math.max(1,...reaRows.map(r=>r[1]));
   const lowRate=v.responses?Math.round(totalIn/v.responses*100):0;
+  const byPraiseEmp={}; v.praises.forEach(p=>{ if(p.emp) byPraiseEmp[p.emp]=(byPraiseEmp[p.emp]||0)+1; });
+  const praiseEmpRows=Object.entries(byPraiseEmp).sort((a,b)=>b[1]-a[1]);
+  const peMax=Math.max(1,...praiseEmpRows.map(r=>r[1]));
   const comment=VOCCOMMENT[mkey]||'';
   document.getElementById("main").innerHTML=`
     <div class="page-head">
@@ -896,6 +916,10 @@ function renderVocMonthly(){
         ${reaRows.length?reaRows.map(([n,c])=>barRow(n.split('(')[0],c,reaMax,'#ff3b30')).join(''):'<div class="empty-note">인입 없음 👍</div>'}</div>
     </div>
     <div class="card"><div class="card-head"><h3>일별 인입 추이</h3><span class="hint">${mo+1}월</span></div>${vocDailyTrend(dates)}</div>
+    <div class="card">
+      <div class="card-head"><h3>👏 직원 칭찬 · 고점</h3><span class="hint">고점(설치≥4·추천≥9) ${v.high.install+v.high.nps}건 · 칭찬 ${v.praises.length}건</span></div>
+      ${praiseEmpRows.length?`<div class="note" style="margin-bottom:10px;font-size:13px;color:var(--gray)">담당자 확인 리액션/칭찬 문구가 잡힌 건의 직원별 집계</div>`+praiseEmpRows.map(([n,c])=>barRow(n,c,peMax,'#34c759')).join(''):'<div class="empty-note">이 달 담당 표기된 칭찬 적재 건이 없습니다</div>'}
+    </div>
     <div class="card">
       <div class="card-head"><h3>📝 먼슬리 코멘트</h3>
         <button class="btn primary" onclick="vocGenComment('${mkey}')">✨ 자동 요약 초안</button></div>

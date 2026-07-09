@@ -52,6 +52,11 @@ function mapIndustry(raw){
   for(const r of VOC_INDUSTRY_RULES){ if(r.kw.some(k=>raw.includes(k))) return r.label; }
   return '기타';
 }
+// 칭찬 판별 키워드 (원문에 포함되면 직원칭찬으로 적재)
+const VOC_PRAISE_KW = ['친절','좋았','좋아요','좋습니','최고','감사','만족스','깔끔','빠르','세심','훌륭','신속','편리','도움','대박','꼼꼼','상냥'];
+// 고점 기준
+const VOC_HIGH_INSTALL = 4;  // 구매설치 ≥4 (만점5)
+const VOC_HIGH_NPS = 9;      // 추천의향 ≥9 (만점10)
 const pad = n => String(n).padStart(2, '0');
 
 // 집계 대상 날짜: TALLY_DATE_OFFSET (0=오늘, -1=어제). 새벽 최종집계는 -1 로 '전날' 마감.
@@ -172,20 +177,33 @@ function tallyVoc(msgs, voc) {
     const attr = (name) => { const mm = text.match(new RegExp('\\*' + name + '\\*\\s*\\n\\s*([^\\n]+)')); return mm ? mm[1].trim() : ''; };
     const store = attr('매장명'), storeId = attr('매장ID');
 
+    // 리액션에서 담당 직원(원격OOO 또는 OOO_확인) 추출
+    const names = (m.reactions || []).map(r => r.name);
+    let praiseEmp = null;
+    for (const nm of names) { const pm = nm.match(/^원격(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)$/); if (pm) { praiseEmp = personMap[pm[1]]; break; } const cm = nm.match(/^(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)(_확인.*)?$/); if (cm) { praiseEmp = personMap[cm[1]]; break; } }
+    const allAns = qa.map(x => x[1]).join(' ');
+    const hasPraiseWord = VOC_PRAISE_KW.some(k => allAns.includes(k));
+
     voc.responses++;
     const indBucket = mapIndustry(industry);       // 원본 업종 → 7개 버킷(+기타)
     if (indBucket) voc.byIndustry[indBucket] = (voc.byIndustry[indBucket] || 0) + 1;
     const reasons = [];
-    if (!isNaN(install)) { voc.install.count++; if (install <= 2) { voc.install.low++; const c = classifyReason(installReason); voc.reasonCounts[c] = (voc.reasonCounts[c] || 0) + 1; reasons.push({ q: '구매설치', score: install, text: installReason, cat: c }); } }
-    if (!isNaN(nps))     { voc.nps.count++;     if (nps <= 5)     { voc.nps.low++;     const c = classifyReason(npsReason);     voc.reasonCounts[c] = (voc.reasonCounts[c] || 0) + 1; reasons.push({ q: '추천의향', score: nps, text: npsReason, cat: c }); } }
+    if (!isNaN(install)) { voc.install.count++; if (install <= 2) { voc.install.low++; const c = classifyReason(installReason); voc.reasonCounts[c] = (voc.reasonCounts[c] || 0) + 1; reasons.push({ q: '구매설치', score: install, text: installReason, cat: c }); } else if (install >= VOC_HIGH_INSTALL) voc.high.install++; }
+    if (!isNaN(nps))     { voc.nps.count++;     if (nps <= 5)     { voc.nps.low++;     const c = classifyReason(npsReason);     voc.reasonCounts[c] = (voc.reasonCounts[c] || 0) + 1; reasons.push({ q: '추천의향', score: nps, text: npsReason, cat: c }); } else if (nps >= VOC_HIGH_NPS) voc.high.nps++; }
     if (reasons.length) voc.alerts.push({ time, store, storeId, industry, indBucket, install: isNaN(install) ? null : install, nps: isNaN(nps) ? null : nps, reasons });
+
+    // 직원 칭찬 적재: 담당자확인 리액션 또는 칭찬 문구가 있으면
+    if (praiseEmp || hasPraiseWord) {
+      const ptext = (installReason + ' ' + npsReason).trim() || allAns.slice(0, 100);
+      voc.praises.push({ time, store, storeId, indBucket, emp: praiseEmp || '', install: isNaN(install) ? null : install, nps: isNaN(nps) ? null : nps, text: ptext, byReaction: !!praiseEmp });
+    }
   }
 }
 
 (async () => {
   const counts = {}, pending = [];
   let completed = 0, externCount = 0, latest = '';
-  const voc = { responses: 0, install: { count: 0, low: 0 }, nps: { count: 0, low: 0 }, byIndustry: {}, reasonCounts: {}, alerts: [], latest: '' };
+  const voc = { responses: 0, install: { count: 0, low: 0 }, nps: { count: 0, low: 0 }, high: { install: 0, nps: 0 }, byIndustry: {}, reasonCounts: {}, alerts: [], praises: [], latest: '' };
   let hasVoc = false;
   for (const ch of CHANNELS) {
     let msgs;
