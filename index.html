@@ -707,7 +707,7 @@ function renderOverview(){
   const duty = DUTY[todayStr]||{};
   const dutyRowsHTML = [['day','주간'],['aft','오후'],['nit','야간'],['inst','행사']].map(([t,lab])=>`<div class="dt-row"><span class="slot-tag ${t}">${lab}</span><span class="dt-name">${duty[t]?escapeHtml(duty[t]):'—'}</span></div>`).join('');
   const leaveToday=(SHARE[todayStr]||[]).filter(e=>['annual','half','time'].includes(e.type));
-  const leaveHTML = leaveToday.length?leaveToday.map(e=>`${escapeHtml(e.emp)}(${typeMeta(e.type).label})`).join(', '):'없음';
+  const leaveHTML = leaveToday.length?leaveToday.map(e=>`${escapeHtml(e.emp)}(${typeMeta(e.type).label}${e.time?' '+escapeHtml(e.time):''})`).join(', '):'없음';
 
   document.getElementById("main").innerHTML = `
     <div class="page-head">
@@ -734,14 +734,9 @@ function renderOverview(){
       <div class="hl-item">
         <div class="hl-lab">📅 오늘 연차·휴가</div>
         <div class="hl-big">${leaveToday.length}<small>명</small></div>
-        <div class="ov-delta flat"><span>${leaveToday.length?leaveToday.length+'명':'없음'}</span></div>
+        <div class="ov-delta flat"><span>${leaveToday.length?leaveHTML:'없음'}</span></div>
       </div>
     </div>
-
-    ${leaveToday.length?`<div class="card">
-      <div class="card-head"><h3>📅 오늘 연차 · 휴가</h3><span class="hint">${fmtShort(todayStr)} · ${leaveToday.length}명</span></div>
-      <div class="leave-list">${leaveToday.map(e=>{const t=typeMeta(e.type);return `<div class="leave-item"><span class="leave-emp">${escapeHtml(e.emp)}</span><span class="leave-type" style="background:${t.soft};color:${t.color}">${t.label}</span>${e.time?`<span class="leave-time">🕒 ${escapeHtml(e.time)}</span>`:''}</div>`;}).join('')}</div>
-    </div>`:''}
 
     <div class="ov-tiles">
       ${catTotals.map(c=>`
