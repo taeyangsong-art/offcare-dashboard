@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9,
+  "version": 10,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126,56 +126,34 @@ window.SLACK_DATA = {
       ]
     },
     "2026-07-09": {
-      "updatedAt": "10:37",
+      "updatedAt": "11:00",
       "counts": {
         "as": {
-          "심성현": 2,
-          "송태양": 5,
-          "배선유": 5
+          "배선유": 6,
+          "김규빈": 3,
+          "심성현": 4,
+          "김현기": 1,
+          "송태양": 5
+        },
+        "extern": {
+          "서상원": 1
         },
         "onboarding": {
           "김현기": 1
         },
         "transfer": {
-          "송태양": 2,
+          "송태양": 4,
           "심성현": 1
+        },
+        "menu": {
+          "배선유": 3
         }
       },
       "pending": [
         {
-          "time": "10:30",
-          "store": "카페위한",
-          "biz": "5301201949",
-          "handler": "송태양",
-          "cat": "transfer",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "10:26",
-          "store": "오카에시",
-          "biz": "7620403383",
-          "handler": "서상원",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "10:21",
-          "store": "주식회사 세리필라테스",
-          "biz": "6198107301",
-          "handler": "김현기",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "10:20",
-          "store": "또바기감자탕",
-          "biz": "5765600275",
+          "time": "10:54",
+          "store": "카페율하온진해용원점",
+          "biz": "7751801729",
           "handler": "김규빈",
           "cat": "as",
           "reasons": [
@@ -183,20 +161,20 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "10:20",
-          "store": "엘씨오카페",
-          "biz": "7973901670",
-          "handler": "김규빈",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "10:15",
-          "store": "옥이네",
-          "biz": "8551402308",
+          "time": "10:39",
+          "store": "(재)한국기계전기전자시험연구",
+          "biz": "1238214098",
           "handler": "심성현",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "10:37",
+          "store": "편한셀프세차",
+          "biz": "3593901274",
+          "handler": "김동욱",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
