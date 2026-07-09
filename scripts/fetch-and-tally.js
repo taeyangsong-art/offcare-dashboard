@@ -126,11 +126,27 @@ function tallyInto(msgs, ch, counts, pending) {
   return { completed, externCount, latest };
 }
 
+// 메시지의 blocks까지 모두 훑어 텍스트 재구성 (봇 리치 메시지 대응)
+function collectText(node, out) {
+  if (!node) return;
+  if (Array.isArray(node)) { for (const n of node) collectText(n, out); return; }
+  if (typeof node === 'object') {
+    if (typeof node.text === 'string') out.push(node.text);
+    for (const k in node) { const val = node[k]; if (val && typeof val === 'object') collectText(val, out); }
+  }
+}
+function blocksText(m) {
+  const out = [m.text || ''];
+  collectText(m.blocks, out);
+  collectText(m.attachments, out);
+  return out.join('\n');
+}
+
 // VOC 설문 응답 파싱 → 점수/업종/저점사유 집계
 function tallyVoc(msgs, voc) {
   for (const m of msgs) {
     if (m.subtype && m.subtype !== 'bot_message') continue;
-    let text = (m.text || '').replace(/&gt;/g, '>').replace(/&lt;/g, '<').replace(/&amp;/g, '&');
+    let text = blocksText(m).replace(/&gt;/g, '>').replace(/&lt;/g, '<').replace(/&amp;/g, '&');
     if (!/merchant_service_feedback|서비스 피드백/.test(text)) continue; // 설문 응답만
     const time = kstHM(m.ts);
     if (time > voc.latest) voc.latest = time;
