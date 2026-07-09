@@ -196,6 +196,11 @@
   .voc-rawind{font-size:11px; color:var(--gray2); margin-top:2px}
   .voc-rawtxt{font-size:12px; color:var(--ink-soft); line-height:1.45}
   .voc-table td{vertical-align:top}
+  .voc-stat{font-weight:700}
+  .voc-stat.done{background:var(--green-soft); color:#166534; border-color:#bbf7d0}
+  .cnt-badge{display:inline-block; min-width:22px; text-align:center; background:var(--red-soft); color:var(--red);
+    font-size:13px; font-weight:800; padding:1px 8px; border-radius:20px; margin-left:4px; vertical-align:middle}
+  .cnt-badge.done{background:var(--green-soft); color:#166534}
   .voc-sel,.voc-note{width:100%; font-family:inherit; font-size:12.5px; padding:6px 8px; border:1px solid var(--line);
     border-radius:8px; background:var(--surface2); color:var(--ink)}
   .voc-sel:focus,.voc-note:focus{outline:none; border-color:var(--blue); background:#fff; box-shadow:0 0 0 3px var(--blue-soft)}
@@ -788,8 +793,34 @@ function saveVocEdit(key, field, val){
   if(val==='') delete VOCEDIT[key][field]; else VOCEDIT[key][field]=val;
   if(Object.keys(VOCEDIT[key]).length===0) delete VOCEDIT[key];
   save(LS_VOCEDIT, VOCEDIT);
-  if(field==='reasonCat') renderVoc();   // 저점사유 차트 갱신
+  if(field==='reasonCat'||field==='status') renderVoc();   // 사유차트/상태이동 반영
 }
+// 저점 매장 표의 한 행 (업종·저점이유·처리내용·상태 편집)
+function vocAlertRow(a){
+  const key=vocKey(a), ed=VOCEDIT[key]||{};
+  const indVal=ed.industry!=null?ed.industry:(a.indBucket||'');
+  const reaVal=ed.reasonCat!=null?ed.reasonCat:((a.reasons[0]&&a.reasons[0].cat)||'');
+  const note=ed.note||'', statVal=ed.status||'처리중';
+  const score=`${a.install!=null?`구매설치 ${a.install}`:''}${a.install!=null&&a.nps!=null?'<br>':''}${a.nps!=null?`추천 ${a.nps}`:''}`;
+  const reasonTxt=a.reasons.map(r=>`<div class="voc-reason">${escapeHtml(r.text||'-')}</div>`).join("");
+  const indSel=`<select class="voc-sel" onchange="saveVocEdit('${key}','industry',this.value)"><option value="">미지정</option>${VOC_INDUSTRIES.map(x=>`<option ${x===indVal?'selected':''}>${x}</option>`).join('')}</select>`;
+  const reaSel=`<select class="voc-sel" onchange="saveVocEdit('${key}','reasonCat',this.value)"><option value="">미지정</option>${VOC_REASONS.map(x=>`<option value="${escapeHtml(x)}" ${x===reaVal?'selected':''}>${escapeHtml(x.split('(')[0])}</option>`).join('')}</select>`;
+  const noteInput=`<input class="voc-note" type="text" value="${escapeHtml(note)}" placeholder="처리 내용 입력…" onchange="saveVocEdit('${key}','note',this.value)">`;
+  const statSel=`<select class="voc-sel voc-stat ${statVal==='처리완료'?'done':''}" onchange="saveVocEdit('${key}','status',this.value)"><option ${statVal==='처리중'?'selected':''}>처리중</option><option ${statVal==='처리완료'?'selected':''}>처리완료</option></select>`;
+  const searchKey=((a.store||'')+' '+(a.storeId||'')).toLowerCase();
+  return `<tr class="voc-alert-row" data-key="${searchKey}">
+    <td class="trow-time">${a.time||''}</td>
+    <td class="emp-name">${escapeHtml(a.store||'-')}${a.industry?`<div class="voc-rawind">원본: ${escapeHtml(a.industry)}</div>`:''}</td>
+    <td class="trow-biz">${a.storeId||'-'}</td>
+    <td>${indSel}</td>
+    <td class="num" style="color:var(--red);font-weight:800;white-space:nowrap">${score||'-'}</td>
+    <td>${reaSel}</td>
+    <td class="voc-rawtxt">${reasonTxt}</td>
+    <td>${noteInput}</td>
+    <td>${statSel}</td>
+  </tr>`;
+}
+const VOC_ALERT_HEAD=`<tr><th style="width:52px">시간</th><th style="min-width:110px">매장명</th><th style="width:76px">매장ID</th><th style="width:140px">업종</th><th class="num" style="width:92px">저점</th><th style="width:150px">저점이유</th><th style="min-width:180px">고객 원문</th><th style="min-width:160px">처리 내용</th><th style="width:108px">상태</th></tr>`;
 function renderVoc(){
   const viewDates=rangeDates(viewMode,selDate);
   const viewLabel=viewLabelOf();
@@ -806,28 +837,9 @@ function renderVoc(){
   const reasonRows=Object.entries(reasonCounts).sort((a,b)=>b[1]-a[1]);
   const reaMax=Math.max(1,...reasonRows.map(r=>r[1]));
 
-  const alertRows=v.alerts.map(a=>{
-    const key=vocKey(a), ed=VOCEDIT[key]||{};
-    const indVal=ed.industry!=null?ed.industry:(a.indBucket||'');
-    const reaVal=ed.reasonCat!=null?ed.reasonCat:((a.reasons[0]&&a.reasons[0].cat)||'');
-    const note=ed.note||'';
-    const score=`${a.install!=null?`구매설치 ${a.install}`:''}${a.install!=null&&a.nps!=null?'<br>':''}${a.nps!=null?`추천 ${a.nps}`:''}`;
-    const reasonTxt=a.reasons.map(r=>`<div class="voc-reason">${escapeHtml(r.text||'-')}</div>`).join("");
-    const indSel=`<select class="voc-sel" onchange="saveVocEdit('${key}','industry',this.value)"><option value="">미지정</option>${VOC_INDUSTRIES.map(x=>`<option ${x===indVal?'selected':''}>${x}</option>`).join('')}</select>`;
-    const reaSel=`<select class="voc-sel" onchange="saveVocEdit('${key}','reasonCat',this.value)"><option value="">미지정</option>${VOC_REASONS.map(x=>`<option value="${escapeHtml(x)}" ${x===reaVal?'selected':''}>${escapeHtml(x.split('(')[0])}</option>`).join('')}</select>`;
-    const noteInput=`<input class="voc-note" type="text" value="${escapeHtml(note)}" placeholder="처리 내용 입력…" onchange="saveVocEdit('${key}','note',this.value)">`;
-    const searchKey=((a.store||'')+' '+(a.storeId||'')).toLowerCase();
-    return `<tr data-key="${searchKey}">
-      <td class="trow-time">${a.time||''}</td>
-      <td class="emp-name">${escapeHtml(a.store||'-')}${a.industry?`<div class="voc-rawind">원본: ${escapeHtml(a.industry)}</div>`:''}</td>
-      <td class="trow-biz">${a.storeId||'-'}</td>
-      <td>${indSel}</td>
-      <td class="num" style="color:var(--red);font-weight:800;white-space:nowrap">${score||'-'}</td>
-      <td>${reaSel}</td>
-      <td class="voc-rawtxt">${reasonTxt}</td>
-      <td>${noteInput}</td>
-    </tr>`;
-  }).join("");
+  const isDone=a=>(VOCEDIT[vocKey(a)]||{}).status==='처리완료';
+  const pendingAlerts=v.alerts.filter(a=>!isDone(a));
+  const doneAlerts=v.alerts.filter(isDone);
 
   document.getElementById("main").innerHTML=`
     <div class="page-head">
@@ -855,21 +867,24 @@ function renderVoc(){
     </div>
 
     <div class="card">
-      <div class="card-head"><h3>👏 칭찬 · 고점</h3><span class="hint">고점(구매설치 5·추천 10 만점) ${v.high.install+v.high.nps}건 · 칭찬/확인 ${v.praises.filter(praiseVisible).length}건</span></div>
-      ${praiseCardsHTML(v.praises)}
+      <div class="card-head"><h3>🔎 저점 확인필요 매장 <span class="cnt-badge">${pendingAlerts.length}</span></h3><span class="hint">업종·저점이유·처리내용·상태 편집 · '처리완료' 선택 시 아래로 이동</span></div>
+      ${v.alerts.length?`<input class="search-box" type="text" placeholder="매장명 또는 매장ID 검색…" oninput="filterVoc(this.value)">
+      <div style="overflow-x:auto"><table class="voc-table" style="margin-top:12px">
+        <thead>${VOC_ALERT_HEAD}</thead>
+        <tbody>${pendingAlerts.length?pendingAlerts.map(vocAlertRow).join(''):`<tr><td colspan="9" style="text-align:center;color:var(--gray2);padding:22px 0">처리중인 저점 건이 없습니다 👍</td></tr>`}</tbody>
+      </table></div>`:'<div class="empty-note">이 기간 저점 건이 없습니다 👍</div>'}
     </div>
 
     <div class="card">
-      <div class="card-head"><h3>🔎 저점 확인필요 매장</h3><span class="hint">${v.alerts.length}건 · 업종·저점이유 선택 + 처리내용 기록(자동 저장)</span></div>
-      ${v.alerts.length?`<input class="search-box" type="text" placeholder="매장명 또는 매장ID 검색…" oninput="filterVoc(this.value)">
-      <div style="overflow-x:auto"><table class="voc-table" style="margin-top:12px">
-        <thead><tr><th style="width:52px">시간</th><th style="min-width:120px">매장명</th><th style="width:80px">매장ID</th><th style="width:150px">업종(선택)</th><th class="num" style="width:96px">저점</th><th style="width:160px">저점이유(선택)</th><th style="min-width:200px">고객 원문</th><th style="min-width:180px">처리 내용</th></tr></thead>
-        <tbody id="vocBody">${alertRows}</tbody>
-      </table></div>`:'<div class="empty-note">이 기간 저점 건이 없습니다 👍</div>'}
+      <div class="card-head"><h3>✅ 처리완료 매장 <span class="cnt-badge done">${doneAlerts.length}</span></h3><span class="hint">상태를 '처리중'으로 되돌리면 다시 위로 이동</span></div>
+      ${doneAlerts.length?`<div style="overflow-x:auto"><table class="voc-table">
+        <thead>${VOC_ALERT_HEAD}</thead>
+        <tbody>${doneAlerts.map(vocAlertRow).join('')}</tbody>
+      </table></div>`:'<div class="empty-note">처리완료된 매장이 없습니다 — 위 표에서 상태를 <b>처리완료</b>로 바꾸면 이리로 옮겨집니다</div>'}
     </div>
   `;
 }
-function filterVoc(q){ q=(q||'').trim().toLowerCase(); document.querySelectorAll('#vocBody tr').forEach(tr=>{ tr.style.display=(tr.dataset.key||'').includes(q)?'':'none'; }); }
+function filterVoc(q){ q=(q||'').trim().toLowerCase(); document.querySelectorAll('.voc-alert-row').forEach(tr=>{ tr.style.display=(tr.dataset.key||'').includes(q)?'':'none'; }); }
 // 삭제되지 않은 칭찬만
 function praiseVisible(p){ const e=VOCPRAISE[vocKey(p)]; return !(e&&e.deleted); }
 // 칭찬 섹션 (검색 + 카드 + 삭제 + 복원)
