@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 21,
+  "version": 22,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -455,38 +455,40 @@ window.SLACK_DATA = {
       ]
     },
     "2026-07-09": {
-      "updatedAt": "15:03",
+      "updatedAt": "15:27",
       "counts": {
+        "as": {
+          "최민석": 1,
+          "김동욱": 12,
+          "송태양": 12,
+          "김현기": 10,
+          "심성현": 18,
+          "배선유": 19,
+          "서상원": 3,
+          "김기범": 3,
+          "김규빈": 10
+        },
+        "onboarding": {
+          "심성현": 2,
+          "김동욱": 6,
+          "송태양": 4,
+          "최민석": 1,
+          "김규빈": 4,
+          "배선유": 1,
+          "김현기": 2
+        },
         "extern": {
           "서상원": 3,
           "김기범": 1,
           "김동욱": 1
         },
-        "as": {
-          "배선유": 19,
-          "서상원": 3,
-          "심성현": 16,
-          "송태양": 11,
-          "김동욱": 11,
-          "김현기": 9,
-          "김기범": 3,
-          "김규빈": 10
-        },
-        "onboarding": {
-          "김동욱": 4,
-          "송태양": 3,
-          "김규빈": 4,
-          "심성현": 1,
-          "배선유": 1,
-          "김현기": 2
-        },
         "transfer": {
-          "송태양": 7,
+          "송태양": 8,
           "김동욱": 1,
           "심성현": 1
         },
         "menu": {
-          "김규빈": 4,
+          "김규빈": 6,
           "배선유": 4
         },
         "delivery": {
@@ -495,9 +497,9 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "15:00",
-          "store": "타코비스버거",
-          "biz": "7015701009",
+          "time": "15:27",
+          "store": "샤사 명일고덕역점",
+          "biz": "2010169443",
           "handler": "심성현",
           "cat": "as",
           "reasons": [
@@ -505,20 +507,20 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "15:00",
-          "store": "시오 아카이브",
-          "biz": "2582002527",
-          "handler": "송태양",
+          "time": "15:22",
+          "store": "우직(WOOZIK)",
+          "biz": "5470104098",
+          "handler": "김동욱",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
           ]
         },
         {
-          "time": "14:57",
-          "store": "여우굴",
-          "biz": "1571002415",
-          "handler": "김동욱",
+          "time": "15:15",
+          "store": "마니부티나",
+          "biz": "3071513486",
+          "handler": "김현기",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
@@ -543,38 +545,103 @@ window.SLACK_DATA = {
           "reasons": [
             "확인 후 미완료"
           ]
-        },
-        {
-          "time": "14:00",
-          "store": "별이즉석떡볶이",
-          "biz": "4406300862",
-          "handler": "김현기",
-          "cat": "delivery",
-          "reasons": [
-            "확인 후 미완료"
-          ]
         }
       ],
       "voc": {
-        "responses": 5,
+        "responses": 8,
         "install": {
-          "count": 1,
+          "count": 3,
           "low": 0
         },
         "nps": {
-          "count": 5,
+          "count": 8,
           "low": 0
         },
         "high": {
-          "install": 1,
-          "nps": 3
+          "install": 2,
+          "nps": 6
+        },
+        "npsDist": {
+          "8": 2,
+          "10": 6
+        },
+        "installDist": {
+          "4": 1,
+          "5": 2
         },
         "byIndustry": {
+          "서비스[학원]": 2,
           "도소매": 1
+        },
+        "byTenure": {
+          "12개월": {
+            "total": 1,
+            "low": 0
+          },
+          "구매설치": {
+            "total": 3,
+            "low": 0
+          },
+          "3개월": {
+            "total": 1,
+            "low": 0
+          },
+          "1개월": {
+            "total": 1,
+            "low": 0
+          },
+          "6개월": {
+            "total": 2,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "KSNET": {
+            "total": 1,
+            "low": 0
+          },
+          "KPN": {
+            "total": 2,
+            "low": 0
+          },
+          "KIS": {
+            "total": 2,
+            "low": 0
+          },
+          "DAOU": {
+            "total": 1,
+            "low": 0
+          },
+          "SECTA9": {
+            "total": 2,
+            "low": 0
+          }
         },
         "reasonCounts": {},
         "alerts": [],
         "praises": [
+          {
+            "time": "15:13",
+            "store": "근본 재활운동센터",
+            "storeId": "526778",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "직관적으로 잘되어있어요 편리하고 직관적이에요",
+            "byReaction": false
+          },
+          {
+            "time": "15:13",
+            "store": "스터디카페 더딩글 대전점",
+            "storeId": "524758",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 4,
+            "nps": 10,
+            "text": "무인이라 설치만 했는데 그에 따른 자세한 사항은 알아서 찾아보라고함 기기 자체가 무료이고 이용하기 편리 해서",
+            "byReaction": false
+          },
           {
             "time": "10:05",
             "store": "구자은피아노교습소",
