@@ -91,10 +91,14 @@
   .ov-tile .ov-ic{font-size:18px}
   .ov-tile .ov-val{font-size:40px; font-weight:800; letter-spacing:-.03em; margin-top:9px; line-height:1}
   .ov-tile .ov-val small{font-size:16px; font-weight:600; color:var(--gray2); margin-left:4px}
+  .ov-tile .ov-delta{font-size:12.5px; font-weight:700; margin-top:7px}
+  .ov-tile .ov-delta.up{color:var(--green)} .ov-tile .ov-delta.down{color:var(--red)} .ov-tile .ov-delta.flat{color:var(--gray2)}
+  .ov-tile .ov-delta span{color:var(--gray2); font-weight:500}
   .ov-tile.grand{background:linear-gradient(135deg,#0071e3,#4a9bff); border-left-color:#0060c0}
   .ov-tile.grand .ov-name{color:rgba(255,255,255,.9)}
   .ov-tile.grand .ov-val{color:#fff}
   .ov-tile.grand .ov-val small{color:rgba(255,255,255,.85)}
+  .ov-tile.grand .ov-delta,.ov-tile.grand .ov-delta span{color:rgba(255,255,255,.92)}
 
   table.matrix{width:100%; border-collapse:collapse; font-size:14px; min-width:640px}
   table.matrix th{background:var(--surface); color:var(--steel,#6b7280); font-weight:700; font-size:12px;
@@ -567,8 +571,10 @@ function renderOverview(){
   const viewDates = rangeDates(viewMode, selDate);
   const viewLabel = viewLabelOf();
 
-  const catTotals = WORK_CATS.map(c=>({...c, total:sumRange(c.key, viewDates)}));
+  const prevDates = prevViewDates();
+  const catTotals = WORK_CATS.map(c=>({...c, total:sumRange(c.key, viewDates), prev:sumRange(c.key, prevDates)}));
   const grand = catTotals.reduce((a,c)=>a+c.total,0);
+  const grandPrev = catTotals.reduce((a,c)=>a+c.prev,0);
 
   const empRows = EMPLOYEES.map(e=>{
     const cells = WORK_CATS.map(c=>sumRange(c.key, viewDates, e));
@@ -591,10 +597,12 @@ function renderOverview(){
         <div class="ov-tile" style="--c:${c.color}">
           <div class="ov-name"><span class="ov-ic">${c.icon}</span>${c.name}</div>
           <div class="ov-val">${c.total}<small>건</small></div>
+          ${deltaHTML(c.total, c.prev)}
         </div>`).join("")}
       <div class="ov-tile grand">
         <div class="ov-name">Σ 전체 합계</div>
         <div class="ov-val">${grand}<small>건</small></div>
+        ${deltaHTML(grand, grandPrev)}
       </div>
     </div>
 
@@ -632,6 +640,22 @@ function renderOverview(){
 }
 // hex + alpha → rgba
 function hexA(hex,a){ const n=parseInt(hex.slice(1),16); return `rgba(${n>>16&255},${n>>8&255},${n&255},${a})`; }
+
+// 현재 보기(일/주/월/기간)의 '직전 동일 기간' 날짜들
+function prevViewDates(){
+  if(viewMode==='day')   return rangeDates('day',  ymd(addDays(parseYmd(selDate),-1)));
+  if(viewMode==='week')  return rangeDates('week', ymd(addDays(startOfWeek(parseYmd(selDate)),-7)));
+  if(viewMode==='month'){ const r=parseYmd(selDate); return rangeDates('month', ymd(new Date(r.getFullYear(), r.getMonth()-1, 15))); }
+  const cur=rangeDates('custom',selDate), len=cur.length||1, start=parseYmd(cur[0]), out=[];
+  for(let i=len;i>=1;i--) out.push(ymd(addDays(start,-i)));   // 같은 길이의 직전 구간
+  return out;
+}
+function prevLabel(){ return ({day:'전일',week:'전주',month:'전월',custom:'직전'})[viewMode]||'전일'; }
+function deltaHTML(cur,prev){
+  const diff=cur-prev, cls=diff>0?'up':diff<0?'down':'flat', arrow=diff>0?'▲':diff<0?'▼':'–';
+  const pct=prev>0?Math.round(Math.abs(diff)/prev*100)+'%':(cur>0?'신규':'0%');
+  return `<div class="ov-delta ${cls}">${arrow} ${pct} <span>${prevLabel()} 대비</span></div>`;
+}
 
 // 직원별 그룹(묶음) 세로 막대차트 — 직원마다 카테고리별 막대를 분리 표시
 function columnChart(empRows, maxCell){
