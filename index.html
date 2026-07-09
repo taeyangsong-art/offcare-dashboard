@@ -721,6 +721,11 @@ let rangeEnd = ymd(today());                // 커스텀 기간 종료
 let dutyMonth = new Date(today().getFullYear(), today().getMonth(), 1);
 let shareMonth = new Date(today().getFullYear(), today().getMonth(), 1);
 let shareFilter = "all"; // all | 직원명
+// 전체현황 전용 기간 (다른 탭과 독립 · 탭 진입 시 오늘로 리셋)
+let ovMode = "day";                          // day | month | range
+let ovDate = ymd(today());
+let ovStart = ymd(addDays(today(),-6));
+let ovEnd = ymd(today());
 
 /* ================= Count data access ================= */
 function getCount(cat, date, emp){ return (COUNTS[cat] && COUNTS[cat][date] && COUNTS[cat][date][emp]) || 0; }
@@ -767,6 +772,46 @@ function setRangeStart(v){ rangeStart=v; renderMain(); }
 function setRangeEnd(v){ rangeEnd=v; renderMain(); }
 function setQuickRange(days){ viewMode='custom'; rangeEnd=ymd(today()); rangeStart=ymd(addDays(today(),-(days-1))); renderMain(); }
 function isQuickRange(days){ return viewMode==='custom' && rangeEnd===ymd(today()) && rangeStart===ymd(addDays(today(),-(days-1))); }
+/* ===== 전체현황 전용 기간 (일별/월별/기간) ===== */
+function ovDates(){
+  if(ovMode==='range'){ const out=[]; let s=parseYmd(ovStart), e=parseYmd(ovEnd); if(e<s){const t=s;s=e;e=t;} for(let d=new Date(s); d<=e; d=addDays(d,1)) out.push(ymd(d)); return out; }
+  if(ovMode==='month'){ const r=parseYmd(ovDate), y=r.getFullYear(), m=r.getMonth(), last=new Date(y,m+1,0).getDate(), out=[]; for(let i=1;i<=last;i++) out.push(ymd(new Date(y,m,i))); return out; }
+  return [ovDate];
+}
+function ovPrevDates(){
+  if(ovMode==='day') return [ymd(addDays(parseYmd(ovDate),-1))];
+  if(ovMode==='month'){ const r=parseYmd(ovDate), pm=new Date(r.getFullYear(), r.getMonth()-1, 15), y=pm.getFullYear(), m=pm.getMonth(), last=new Date(y,m+1,0).getDate(), out=[]; for(let i=1;i<=last;i++) out.push(ymd(new Date(y,m,i))); return out; }
+  const cur=ovDates(), n=cur.length, s=parseYmd(cur[0]), out=[]; for(let i=n;i>0;i--) out.push(ymd(addDays(s,-i))); return out;
+}
+function ovLabel(){ return ovMode==='day'?'일별':ovMode==='month'?'월별':'기간'; }
+function ovRangeText(){
+  if(ovMode==='day') return fmtShort(ovDate)+' 하루';
+  if(ovMode==='month'){ const r=parseYmd(ovDate); return `${r.getFullYear()}.${String(r.getMonth()+1).padStart(2,'0')} 한달`; }
+  const cur=ovDates(); return `${fmtShort(cur[0])} ~ ${fmtShort(cur[cur.length-1])} (${cur.length}일)`;
+}
+function overviewControls(){
+  const seg=`<div class="seg">
+    <button class="${ovMode==='day'?'on':''}" onclick="setOvMode('day')">일별</button>
+    <button class="${ovMode==='month'?'on':''}" onclick="setOvMode('month')">월별</button>
+    <button class="${ovMode==='range'?'on':''}" onclick="setOvMode('range')">기간</button>
+  </div>`;
+  const picker = ovMode==='range'
+    ? `<input type="date" value="${ovStart}" onchange="setOvStart(this.value)"><span style="color:var(--gray);font-weight:600">~</span><input type="date" value="${ovEnd}" onchange="setOvEnd(this.value)">`
+    : `<input type="date" value="${ovDate}" onchange="setOvDate(this.value)">`;
+  const quick=`<button class="btn${isOvYesterday()?' primary':''}" onclick="setOvYesterday()">어제</button>
+    <button class="btn${isOvRange(7)?' primary':''}" onclick="setOvRange(7)">최근 7일</button>
+    <button class="btn${isOvRange(30)?' primary':''}" onclick="setOvRange(30)">최근 30일</button>`;
+  return seg+picker+quick;
+}
+function setOvMode(m){ ovMode=m; renderOverview(); }
+function setOvDate(v){ ovMode='day'; ovDate=v; renderOverview(); }
+function setOvStart(v){ ovMode='range'; ovStart=v; renderOverview(); }
+function setOvEnd(v){ ovMode='range'; ovEnd=v; renderOverview(); }
+function setOvYesterday(){ ovMode='day'; ovDate=ymd(addDays(today(),-1)); renderOverview(); }
+function isOvYesterday(){ return ovMode==='day' && ovDate===ymd(addDays(today(),-1)); }
+function setOvRange(days){ ovMode='range'; ovEnd=ymd(today()); ovStart=ymd(addDays(today(),-(days-1))); renderOverview(); }
+function isOvRange(days){ return ovMode==='range' && ovEnd===ymd(today()) && ovStart===ymd(addDays(today(),-(days-1))); }
+function resetOverviewPeriod(){ ovMode='day'; ovDate=ymd(today()); ovStart=ymd(addDays(today(),-6)); ovEnd=ymd(today()); }
 function sumRange(cat, dates, emp){
   return dates.reduce((a,d)=>{
     if(emp) return a + getCount(cat,d,emp);
@@ -791,7 +836,7 @@ function renderNav(){
     return btn;
   }).join("");
 }
-function selectCat(k){ activeCat=k; renderNav(); renderMain(); window.scrollTo(0,0); }
+function selectCat(k){ if(k==='overview') resetOverviewPeriod(); activeCat=k; renderNav(); renderMain(); window.scrollTo(0,0); }
 
 /* ================= Main dispatch ================= */
 function renderMain(){
@@ -805,10 +850,10 @@ function renderMain(){
 
 /* ================= Overview (전체 현황) ================= */
 function renderOverview(){
-  const viewDates = rangeDates(viewMode, selDate);
-  const viewLabel = viewLabelOf();
+  const viewDates = ovDates();
+  const viewLabel = ovLabel();
 
-  const prevDates = prevViewDates();
+  const prevDates = ovPrevDates();
   const workCatTotals = WORK_CATS.map(c=>({...c, total:sumRange(c.key, viewDates), prev:sumRange(c.key, prevDates)}));
   const workGrand = workCatTotals.reduce((a,c)=>a+c.total,0);
   const vocTot = aggVoc(viewDates).alerts.length, vocPrevN = aggVoc(prevDates).alerts.length;
@@ -824,7 +869,7 @@ function renderOverview(){
   const maxCell = Math.max(1, ...empRows.flatMap(r=>r.cells));
 
   // ── 헤드라인/알림/근무 계산 ──
-  const periodWord = viewLabel==='일별'?'오늘':viewLabel;
+  const periodWord = ovMode==='day' ? (ovDate===ymd(today())?'오늘':fmtShort(ovDate)) : ovLabel();
   const mvp = grand>0 ? empRows[0] : null;
   const todayStr = ymd(today());
   const tday = slackDay(todayStr);
@@ -845,9 +890,9 @@ function renderOverview(){
     <div class="page-head">
       <div>
         <h2>📊 전체 현황 <span class="live-dot" title="자동 갱신 중"></span></h2>
-        <div class="sub">모든 카테고리 · 직원별 처리건수를 한 화면에서 · ${viewRangeText(viewMode,selDate)}${(function(){const dd=slackDay(ymd(today()));return dd&&dd.updatedAt?` · 최신 집계 ${dd.updatedAt}`:'';})()}</div>
+        <div class="sub">모든 카테고리 · 직원별 처리건수를 한 화면에서 · ${ovRangeText()}${(function(){const dd=slackDay(ymd(today()));return dd&&dd.updatedAt?` · 최신 집계 ${dd.updatedAt}`:'';})()}</div>
       </div>
-      <div class="controls">${periodControls()}</div>
+      <div class="controls">${overviewControls()}</div>
     </div>
 
     <div class="card headline">
@@ -885,7 +930,7 @@ function renderOverview(){
     </div>
 
     <div class="grid2">
-      <div class="card"><div class="card-head"><h3>📈 처리 추이</h3><span class="hint">${viewLabel} · ${viewRangeText(viewMode,selDate)}</span></div>${overviewTrend(viewDates)}</div>
+      <div class="card"><div class="card-head"><h3>📈 처리 추이</h3><span class="hint">${viewLabel} · ${ovRangeText()}</span></div>${overviewTrend(viewDates)}</div>
       <div class="card"><div class="card-head"><h3>🍩 카테고리 구성</h3><span class="hint">${viewLabel} · 비중</span></div>
         ${donutChart(catTotals.filter(c=>c.total>0).map(c=>[c.name,c.total,c.color]))}</div>
     </div>
