@@ -175,7 +175,7 @@ function tallyVoc(msgs, voc) {
       else if (/업종을 선택/.test(q)) { industry = a; }
     }
     const attr = (name) => { const mm = text.match(new RegExp('\\*' + name + '\\*\\s*\\n\\s*([^\\n]+)')); return mm ? mm[1].trim() : ''; };
-    const store = attr('매장명'), storeId = attr('매장ID');
+    const store = attr('매장명'), storeId = attr('매장ID'), tenure = attr('수집 유형'), van = attr('밴');
 
     // 리액션에서 담당 직원(원격OOO 또는 OOO_확인) 추출
     const names = (m.reactions || []).map(r => r.name);
@@ -188,8 +188,11 @@ function tallyVoc(msgs, voc) {
     const indBucket = mapIndustry(industry);       // 원본 업종 → 7개 버킷(+기타)
     if (indBucket) voc.byIndustry[indBucket] = (voc.byIndustry[indBucket] || 0) + 1;
     const reasons = [];
-    if (!isNaN(install)) { voc.install.count++; if (install <= 2) { voc.install.low++; const c = classifyReason(installReason); voc.reasonCounts[c] = (voc.reasonCounts[c] || 0) + 1; reasons.push({ q: '구매설치', score: install, text: installReason, cat: c }); } else if (install >= VOC_HIGH_INSTALL) voc.high.install++; }
-    if (!isNaN(nps))     { voc.nps.count++;     if (nps <= 5)     { voc.nps.low++;     const c = classifyReason(npsReason);     voc.reasonCounts[c] = (voc.reasonCounts[c] || 0) + 1; reasons.push({ q: '추천의향', score: nps, text: npsReason, cat: c }); } else if (nps >= VOC_HIGH_NPS) voc.high.nps++; }
+    if (!isNaN(install)) { voc.install.count++; voc.installDist[install] = (voc.installDist[install] || 0) + 1; if (install <= 2) { voc.install.low++; const c = classifyReason(installReason); voc.reasonCounts[c] = (voc.reasonCounts[c] || 0) + 1; reasons.push({ q: '구매설치', score: install, text: installReason, cat: c }); } else if (install >= VOC_HIGH_INSTALL) voc.high.install++; }
+    if (!isNaN(nps))     { voc.nps.count++; voc.npsDist[nps] = (voc.npsDist[nps] || 0) + 1;             if (nps <= 5)     { voc.nps.low++;     const c = classifyReason(npsReason);     voc.reasonCounts[c] = (voc.reasonCounts[c] || 0) + 1; reasons.push({ q: '추천의향', score: nps, text: npsReason, cat: c }); } else if (nps >= VOC_HIGH_NPS) voc.high.nps++; }
+    const isLow = reasons.length > 0;
+    if (tenure) { if (!voc.byTenure[tenure]) voc.byTenure[tenure] = { total: 0, low: 0 }; voc.byTenure[tenure].total++; if (isLow) voc.byTenure[tenure].low++; }
+    if (van)    { if (!voc.byVan[van])       voc.byVan[van]       = { total: 0, low: 0 }; voc.byVan[van].total++;       if (isLow) voc.byVan[van].low++; }
     if (reasons.length) voc.alerts.push({ time, store, storeId, industry, indBucket, install: isNaN(install) ? null : install, nps: isNaN(nps) ? null : nps, reasons });
 
     // 칭찬 적재: 저점(reasons)이 아니면서 담당자확인 리액션 또는 칭찬 문구가 있는 건만 (저점 처리건은 제외)
@@ -203,7 +206,7 @@ function tallyVoc(msgs, voc) {
 (async () => {
   const counts = {}, pending = [];
   let completed = 0, externCount = 0, latest = '';
-  const voc = { responses: 0, install: { count: 0, low: 0 }, nps: { count: 0, low: 0 }, high: { install: 0, nps: 0 }, byIndustry: {}, reasonCounts: {}, alerts: [], praises: [], latest: '' };
+  const voc = { responses: 0, install: { count: 0, low: 0 }, nps: { count: 0, low: 0 }, high: { install: 0, nps: 0 }, npsDist: {}, installDist: {}, byIndustry: {}, byTenure: {}, byVan: {}, reasonCounts: {}, alerts: [], praises: [], latest: '' };
   let hasVoc = false;
   for (const ch of CHANNELS) {
     let msgs;
