@@ -254,6 +254,13 @@
   .vd-cnt{flex:0 0 auto; font-size:13px; font-weight:800; color:var(--gray)}
   .voc-drill-body{padding:2px 12px 12px; border-top:1px solid var(--line-soft)}
   .vd-top{font-size:13px; color:var(--ink); background:var(--surface2); border:1px solid var(--line-soft); border-radius:8px; padding:8px 10px; margin:10px 0 8px}
+  .vd-reasons{background:var(--canvas); border:1px solid var(--line-soft); border-radius:8px; padding:10px 11px; margin:10px 0 8px}
+  .vd-reasons-h{font-size:12.5px; color:var(--ink); margin-bottom:9px}
+  .vd-rrow{display:flex; align-items:center; gap:8px; margin:5px 0}
+  .vd-rname{flex:0 0 45%; font-size:12.5px; color:var(--ink-soft); font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .vd-rbar{flex:1; height:7px; background:var(--line-soft); border-radius:5px; overflow:hidden}
+  .vd-rbar>span{display:block; height:100%; background:#ff9500; border-radius:5px}
+  .vd-rcnt{flex:0 0 auto; font-size:12px; font-weight:800; color:var(--gray); min-width:30px; text-align:right}
   .voc-detail-list{display:flex; flex-direction:column; gap:8px}
   .voc-detail-item{background:var(--surface2); border:1px solid var(--line-soft); border-radius:9px; padding:9px 11px}
   .vd-head{display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:5px}
@@ -1070,8 +1077,12 @@ function vocGroupDrill(entries, max, color, topReason){
     let topLine='';
     if(topReason){
       const rc={}; items.forEach(x=>rc[x.rea]=(rc[x.rea]||0)+1);
-      const top=Object.entries(rc).sort((a,b)=>b[1]-a[1]);
-      topLine=`<div class="vd-top">🥇 가장 많은 이유: <b>${escapeHtml(top[0][0].split('(')[0])}</b> (${top[0][1]}건)${top.slice(1,3).map(t=>` · ${escapeHtml(t[0].split('(')[0])} ${t[1]}`).join('')}</div>`;
+      const rows=Object.entries(rc).sort((a,b)=>b[1]-a[1]);
+      const rmax=Math.max(1,...rows.map(r=>r[1]));
+      topLine=`<div class="vd-reasons">
+        <div class="vd-reasons-h">🥇 가장 많은 이유: <b>${escapeHtml(rows[0][0].split('(')[0])}</b> (${rows[0][1]}건) · 전체 이유 ${rows.length}개</div>
+        ${rows.map(([r,c])=>`<div class="vd-rrow"><span class="vd-rname" title="${escapeHtml(r)}">${escapeHtml(r.split('(')[0])}</span><span class="vd-rbar"><span style="width:${c/rmax*100}%"></span></span><span class="vd-rcnt">${c}건</span></div>`).join('')}
+      </div>`;
     }
     return `<details class="voc-drill">
       <summary><span class="vd-name">${escapeHtml(name.split('(')[0])}</span><span class="vd-bar"><span class="vd-fill" style="width:${cnt/max*100}%;background:${color}"></span></span><span class="vd-cnt">${cnt}건</span></summary>
