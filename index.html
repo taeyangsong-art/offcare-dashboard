@@ -729,9 +729,9 @@ function renderOverview(){
       </div>
       <div class="hl-sep"></div>
       <div class="hl-item">
-        <div class="hl-lab">🔔 지금 미처리</div>
-        <div class="hl-big" style="color:${pendTotal?'var(--red)':'var(--green)'}">${pendTotal}<small>건</small></div>
-        <div class="ov-delta flat"><span>${pendTotal?'확인 필요':'모두 처리됨 ✅'}</span></div>
+        <div class="hl-lab">📅 오늘 연차·휴가</div>
+        <div class="hl-big">${leaveToday.length}<small>명</small></div>
+        <div class="ov-delta flat"><span>${leaveToday.length?leaveToday.map(e=>escapeHtml(e.emp)).join(', '):'없음'}</span></div>
       </div>
     </div>
 
