@@ -165,6 +165,12 @@
   .rank{display:inline-flex; width:22px; height:22px; align-items:center; justify-content:center;
     border-radius:7px; background:var(--surface); font-size:12px; font-weight:700; color:var(--gray)}
 
+  /* VOC */
+  .empty-note{text-align:center; color:var(--gray2); font-size:14px; padding:34px 0}
+  .voc-reason{font-size:12.5px; line-height:1.5; margin:2px 0; color:var(--ink-soft)}
+  .voc-rcat{display:inline-block; background:var(--red-soft); color:var(--red); font-weight:700; font-size:11px;
+    padding:1px 7px; border-radius:6px; margin-right:5px; white-space:nowrap}
+
   /* pending lookup */
   .search-box{width:100%; font-family:inherit; font-size:14px; padding:11px 14px; border:1px solid var(--line);
     border-radius:12px; background:var(--surface2); color:var(--ink); transition:.15s}
@@ -433,10 +439,9 @@ const WORK_CATS = [
   {key:"as",         name:"AS",       icon:"🔧", color:"#34c759"},
   {key:"transfer",   name:"명의변경", icon:"📝", color:"#ff9500"},
   {key:"menu",       name:"메뉴등록", icon:"🍱", color:"#5e5ce6"},
-  {key:"voc",        name:"VOC",      icon:"💬", color:"#ff2d55"},
   {key:"delivery",   name:"배달",     icon:"🛵", color:"#00c7be"},
   {key:"extern",     name:"외주",     icon:"🧩", color:"#8e8e93"},
-];
+];  // VOC는 직원별 처리가 아니라 고객 설문이라 전용 페이지로 별도 표시
 
 // 공유(일정) 이벤트 유형
 const SHARE_TYPES = {
@@ -563,6 +568,7 @@ function renderMain(){
   if(activeCat==="overview") renderOverview();
   else if(activeCat==="duty") renderDuty();
   else if(activeCat==="share") renderShare();
+  else if(activeCat==="voc") renderVoc();
   else renderStats();
 }
 
@@ -699,6 +705,88 @@ function simpleColumn(pairs, color){
   }).join("");
   return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}"><line x1="${padL-6}" y1="${base}" x2="${W-padR+6}" y2="${base}" stroke="#d2d2d7"/>${bars}</svg></div>`;
 }
+
+/* ================= VOC (고객 설문) page ================= */
+// 기간 내 VOC 집계 합산
+function aggVoc(dates){
+  const agg={responses:0,install:{count:0,low:0},nps:{count:0,low:0},byIndustry:{},reasonCounts:{},alerts:[]};
+  dates.forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v) return;
+    agg.responses+=v.responses||0;
+    if(v.install){agg.install.count+=v.install.count||0; agg.install.low+=v.install.low||0;}
+    if(v.nps){agg.nps.count+=v.nps.count||0; agg.nps.low+=v.nps.low||0;}
+    for(const k in (v.byIndustry||{})) agg.byIndustry[k]=(agg.byIndustry[k]||0)+v.byIndustry[k];
+    for(const k in (v.reasonCounts||{})) agg.reasonCounts[k]=(agg.reasonCounts[k]||0)+v.reasonCounts[k];
+    (v.alerts||[]).forEach(a=>agg.alerts.push(Object.assign({date:d},a)));
+  });
+  return agg;
+}
+function vocKpi(lab,val,denom){
+  return `<div class="kpi"><div class="lab">${lab}</div><div class="val">${val}<small>건</small></div>
+    <div class="delta flat">${denom!=null?`응답 ${denom}건 중`:'&nbsp;'}</div></div>`;
+}
+function barRow(name,val,max,color){
+  return `<div class="bar-row"><div class="bar-meta"><span class="nm">${escapeHtml(name)}</span><span class="ct">${val}건</span></div>
+    <div class="bar-track"><div class="bar-fill" style="width:${val/max*100}%;background:${color}"></div></div></div>`;
+}
+function renderVoc(){
+  const viewDates=rangeDates(viewMode,selDate);
+  const viewLabel=viewLabelOf();
+  const v=aggVoc(viewDates);
+  const indRows=Object.entries(v.byIndustry).sort((a,b)=>b[1]-a[1]);
+  const reasonRows=Object.entries(v.reasonCounts).sort((a,b)=>b[1]-a[1]);
+  const indMax=Math.max(1,...indRows.map(r=>r[1]));
+  const reaMax=Math.max(1,...reasonRows.map(r=>r[1]));
+  const lowTotal=v.install.low+v.nps.low;
+  const alertRows=v.alerts.map(a=>{
+    const score=`${a.install!=null?`구매설치 ${a.install}`:''}${a.install!=null&&a.nps!=null?'<br>':''}${a.nps!=null?`추천 ${a.nps}`:''}`;
+    const reasonTxt=a.reasons.map(r=>`<div class="voc-reason"><span class="voc-rcat">${escapeHtml(r.cat.split('(')[0])}</span>${escapeHtml(r.text||'-')}</div>`).join("");
+    const key=((a.store||'')+' '+(a.storeId||'')).toLowerCase();
+    return `<tr data-key="${key}">
+      <td class="trow-time">${a.time||''}</td>
+      <td class="emp-name">${escapeHtml(a.store||'-')}</td>
+      <td class="trow-biz">${a.storeId||'-'}</td>
+      <td>${escapeHtml(a.industry||'-')}</td>
+      <td class="num" style="color:var(--red);font-weight:800;white-space:nowrap">${score||'-'}</td>
+      <td>${reasonTxt}</td>
+    </tr>`;
+  }).join("");
+
+  document.getElementById("main").innerHTML=`
+    <div class="page-head">
+      <div><h2>💬 VOC (고객 설문)</h2>
+        <div class="sub">구매설치 경험(만점5)·추천의향(만점10) 저점 모니터링 · 업종/사유 집계 · ${viewRangeText(viewMode,selDate)}</div></div>
+      <div class="controls">${periodControls()}</div>
+    </div>
+
+    <div class="kpis">
+      ${vocKpi('총 응답', v.responses)}
+      ${vocKpi('구매설치 저점(≤2)', v.install.low, v.install.count)}
+      ${vocKpi('추천의향 저점(≤5)', v.nps.low, v.nps.count)}
+      ${vocKpi('저점 합계', lowTotal)}
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <div class="card-head"><h3>업종별 응답</h3><span class="hint">${viewLabel} · ${indRows.length}개 업종</span></div>
+        ${indRows.length?indRows.map(([n,c])=>barRow(n,c,indMax,'#0071e3')).join(''):'<div class="empty-note">데이터 없음</div>'}
+      </div>
+      <div class="card">
+        <div class="card-head"><h3>저점 사유 카운트</h3><span class="hint">${viewLabel} · 자동 분류</span></div>
+        ${reasonRows.length?reasonRows.map(([n,c])=>barRow(n.split('(')[0],c,reaMax,'#ff3b30')).join(''):'<div class="empty-note">저점 없음 👍</div>'}
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h3>🔎 저점 확인필요 매장</h3><span class="hint">${v.alerts.length}건 · 매장명/매장ID 검색</span></div>
+      ${v.alerts.length?`<input class="search-box" type="text" placeholder="매장명 또는 매장ID 검색…" oninput="filterVoc(this.value)">
+      <div style="overflow-x:auto"><table style="margin-top:12px">
+        <thead><tr><th style="width:56px">시간</th><th>매장명</th><th style="width:88px">매장ID</th><th style="width:88px">업종</th><th class="num" style="width:110px">저점</th><th>사유(자동분류 · 원문)</th></tr></thead>
+        <tbody id="vocBody">${alertRows}</tbody>
+      </table></div>`:'<div class="empty-note">이 기간 저점 건이 없습니다 👍</div>'}
+    </div>
+  `;
+}
+function filterVoc(q){ q=(q||'').trim().toLowerCase(); document.querySelectorAll('#vocBody tr').forEach(tr=>{ tr.style.display=(tr.dataset.key||'').includes(q)?'':'none'; }); }
 
 /* ================= Stats page ================= */
 function renderStats(){

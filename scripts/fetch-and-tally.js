@@ -15,10 +15,27 @@ const CHANNELS = [
   { id: 'C07CL4BV9QT', label: '명의변경',    defaultCat: 'transfer', forceCat: 'transfer' },  // 비공개 전용: 전부 명의변경
   { id: 'C08740SFT1S', label: '메뉴등록',    defaultCat: 'menu',     forceCat: 'menu' },      // 공개 전용: 전부 메뉴등록(봇 접수 메시지 포함)
   { id: 'C0ASD02FFML', label: '배달요청',    defaultCat: 'delivery', forceCat: 'delivery' },  // 공개 전용: 전부 배달
+  { id: 'C07B5E78J23', label: 'VOC',         type: 'voc' },                                   // 설문 응답(점수/업종/사유) 별도 파싱
 ];
 
 const personMap = { '규빈':'김규빈','선유':'배선유','성현':'심성현','동욱':'김동욱','현기':'김현기','태양':'송태양','기범':'김기범','상원':'서상원','민석':'최민석' };
 const catMap = { '원격온보딩':'onboarding', '원격as':'as', '원격명의변경':'transfer', '원격메뉴등록':'menu', '원격voc':'voc', '원격배달':'delivery' };
+
+// VOC 저점 사유 자동분류 규칙 (label = 표시 카테고리, kw = 포함되면 그 카테고리로 분류). 순서대로 첫 매칭 우선.
+const VOC_REASON_RULES = [
+  { label:'사용중 오류가 자주 발생함',            kw:['오류','에러','렉','버그','튕','멈춤','먹통','안돼','안 돼','안됨','안 됨','재실행','재부팅','느리','지연','오작동'] },
+  { label:'단말기 설치나 초기 과정이 어려움',      kw:['설치','초기','세팅','연동','연결','프린터','설정','장비'] },
+  { label:'고객센터 연락이 매우 힘듦',            kw:['연락','전화','고객센터','상담','통화','응대','문의','콜'] },
+  { label:'구매,계약과정에서 설명이 부족',        kw:['설명','계약','구매','안내','가입','상술'] },
+  { label:'필요한 기능이 없거나 몰라서 불편',      kw:['기능','없','몰라','모르','불편','어렵','복잡'] },
+  { label:'기타 이슈(정산/직원에 대한 불만/호영님출몰)', kw:['정산','직원','호영','불만','태도'] },
+];
+const VOC_REASON_ETC = '기타 이슈(정산/직원에 대한 불만/호영님출몰)';
+function classifyReason(text){
+  if(!text) return VOC_REASON_ETC;
+  for(const r of VOC_REASON_RULES){ if(r.kw.some(k=>text.includes(k))) return r.label; }
+  return VOC_REASON_ETC;
+}
 const pad = n => String(n).padStart(2, '0');
 
 // 집계 대상 날짜: TALLY_DATE_OFFSET (0=오늘, -1=어제). 새벽 최종집계는 -1 로 '전날' 마감.
@@ -93,19 +110,66 @@ function tallyInto(msgs, ch, counts, pending) {
   return { completed, externCount, latest };
 }
 
+// VOC 설문 응답 파싱 → 점수/업종/저점사유 집계
+function tallyVoc(msgs, voc) {
+  for (const m of msgs) {
+    if (m.subtype && m.subtype !== 'bot_message') continue;
+    let text = (m.text || '').replace(/&gt;/g, '>').replace(/&lt;/g, '<').replace(/&amp;/g, '&');
+    if (!/merchant_service_feedback|서비스 피드백/.test(text)) continue; // 설문 응답만
+    const time = kstHM(m.ts);
+    if (time > voc.latest) voc.latest = time;
+
+    // 문항(*...*) → 답변(> ...) 페어링
+    const qa = []; let curQ = null, curA = [];
+    for (let ln of text.split('\n')) {
+      ln = ln.trim();
+      const qm = ln.match(/^\*(.+?)\*$/);
+      if (qm) { if (curQ !== null) qa.push([curQ, curA.join(' ').trim()]); curQ = qm[1].trim(); curA = []; continue; }
+      const am = ln.match(/^>\s*(.+)/);
+      if (am && curQ !== null) curA.push(am[1].trim());
+    }
+    if (curQ !== null) qa.push([curQ, curA.join(' ').trim()]);
+
+    let install = NaN, installReason = '', nps = NaN, npsReason = '', industry = '';
+    for (let i = 0; i < qa.length; i++) {
+      const q = qa[i][0], a = qa[i][1];
+      if (/구매설치 경험/.test(q)) { install = parseFloat(a); if (qa[i+1] && /이유/.test(qa[i+1][0])) installReason = qa[i+1][1]; }
+      else if (/추천할 의향이 얼마나/.test(q)) { nps = parseFloat(a); if (qa[i+1] && /이유/.test(qa[i+1][0])) npsReason = qa[i+1][1]; }
+      else if (/업종을 선택/.test(q)) { industry = a; }
+    }
+    const attr = (name) => { const mm = text.match(new RegExp('\\*' + name + '\\*\\s*\\n\\s*([^\\n]+)')); return mm ? mm[1].trim() : ''; };
+    const store = attr('매장명'), storeId = attr('매장ID');
+
+    voc.responses++;
+    if (industry) voc.byIndustry[industry] = (voc.byIndustry[industry] || 0) + 1;
+    const reasons = [];
+    if (!isNaN(install)) { voc.install.count++; if (install <= 2) { voc.install.low++; const c = classifyReason(installReason); voc.reasonCounts[c] = (voc.reasonCounts[c] || 0) + 1; reasons.push({ q: '구매설치', score: install, text: installReason, cat: c }); } }
+    if (!isNaN(nps))     { voc.nps.count++;     if (nps <= 5)     { voc.nps.low++;     const c = classifyReason(npsReason);     voc.reasonCounts[c] = (voc.reasonCounts[c] || 0) + 1; reasons.push({ q: '추천의향', score: nps, text: npsReason, cat: c }); } }
+    if (reasons.length) voc.alerts.push({ time, store, storeId, industry, install: isNaN(install) ? null : install, nps: isNaN(nps) ? null : nps, reasons });
+  }
+}
+
 (async () => {
   const counts = {}, pending = [];
   let completed = 0, externCount = 0, latest = '';
+  const voc = { responses: 0, install: { count: 0, low: 0 }, nps: { count: 0, low: 0 }, byIndustry: {}, reasonCounts: {}, alerts: [], latest: '' };
+  let hasVoc = false;
   for (const ch of CHANNELS) {
     let msgs;
     try { msgs = await fetchAll(ch.id); }
     catch (e) { console.error(`  ⚠ [${ch.label}] 읽기 실패(${e.message}) — 건너뜀 (봇 초대/권한 확인)`); continue; }
-    const r = tallyInto(msgs, ch, counts, pending);
-    completed += r.completed; externCount += r.externCount; if (r.latest > latest) latest = r.latest;
-    console.log(`  [${ch.label}] 메시지 ${msgs.length}건`);
+    if (ch.type === 'voc') {
+      tallyVoc(msgs, voc); hasVoc = true;
+      console.log(`  [${ch.label}] 응답 ${voc.responses} · 구매설치저점 ${voc.install.low} · NPS저점 ${voc.nps.low}`);
+    } else {
+      const r = tallyInto(msgs, ch, counts, pending);
+      completed += r.completed; externCount += r.externCount; if (r.latest > latest) latest = r.latest;
+      console.log(`  [${ch.label}] 메시지 ${msgs.length}건`);
+    }
   }
   pending.sort((a, b) => (b.time || '').localeCompare(a.time || ''));
-  console.log(`[${targetDate}] 완료 ${completed} · 확인필요 ${pending.length} · 외주 ${externCount}`);
+  if (voc.latest > latest) latest = voc.latest;
+  console.log(`[${targetDate}] 완료 ${completed} · 확인필요 ${pending.length} · 외주 ${externCount} · VOC응답 ${voc.responses}`);
 
   let data = { version: 0, days: {} };
   if (fs.existsSync(OUT)) {
@@ -113,7 +177,9 @@ function tallyInto(msgs, ch, counts, pending) {
     try { new Function('window', fs.readFileSync(OUT, 'utf8'))(win); if (win.SLACK_DATA) data = win.SLACK_DATA; } catch (e) {}
   }
   data.days = data.days || {};
-  data.days[targetDate] = { updatedAt: latest, counts, pending };
+  const dayEntry = { updatedAt: latest, counts, pending };
+  if (hasVoc && voc.responses > 0) { delete voc.latest; dayEntry.voc = voc; }
+  data.days[targetDate] = dayEntry;
   data.version = (data.version || 0) + 1;
   const header = '/*\n * 슬랙 원격 처리 채널(AS요청·명의변경 등) 집계 데이터 (날짜별 누적)\n * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.\n */\n';
   fs.writeFileSync(OUT, header + 'window.SLACK_DATA = ' + JSON.stringify(data, null, 2) + ';\n', 'utf8');
