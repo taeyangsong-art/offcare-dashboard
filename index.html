@@ -240,6 +240,33 @@
   .voc-table td{vertical-align:top}
   .voc-stat{font-weight:700}
   .voc-stat.done{background:var(--green-soft); color:#166534; border-color:#bbf7d0}
+  .voc-stat.hold{background:#fff4d6; color:#a8620a; border-color:#ffe1a8}
+  /* VOC 드릴다운(업종/사유 → 매장 상세) */
+  .voc-drill{border:1px solid var(--line-soft); border-radius:10px; margin-bottom:8px; overflow:hidden; background:var(--surface2)}
+  .voc-drill summary{list-style:none; cursor:pointer; display:flex; align-items:center; gap:10px; padding:10px 12px}
+  .voc-drill summary::-webkit-details-marker{display:none}
+  .voc-drill summary::before{content:'▸'; color:var(--gray2); font-size:11px; transition:.15s; flex:0 0 auto}
+  .voc-drill[open] summary::before{transform:rotate(90deg)}
+  .voc-drill[open]{background:var(--canvas)}
+  .vd-name{flex:0 0 auto; font-size:14px; font-weight:700; color:var(--ink); min-width:92px}
+  .vd-bar{flex:1; height:8px; background:var(--line-soft); border-radius:5px; overflow:hidden}
+  .vd-fill{display:block; height:100%; border-radius:5px}
+  .vd-cnt{flex:0 0 auto; font-size:13px; font-weight:800; color:var(--gray)}
+  .voc-drill-body{padding:2px 12px 12px; border-top:1px solid var(--line-soft)}
+  .vd-top{font-size:13px; color:var(--ink); background:var(--surface2); border:1px solid var(--line-soft); border-radius:8px; padding:8px 10px; margin:10px 0 8px}
+  .voc-detail-list{display:flex; flex-direction:column; gap:8px}
+  .voc-detail-item{background:var(--surface2); border:1px solid var(--line-soft); border-radius:9px; padding:9px 11px}
+  .vd-head{display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:5px}
+  .vd-store{font-size:14px; font-weight:800; color:var(--ink)}
+  .vd-id{font-size:11.5px; color:var(--gray2)}
+  .vd-score{font-size:11.5px; font-weight:700; color:var(--red); background:var(--red-soft); padding:1px 8px; border-radius:20px}
+  .vd-stat{font-size:11px; font-weight:700; padding:1px 8px; border-radius:20px; background:#e9ecef; color:#495057}
+  .vd-stat.done{background:var(--green-soft); color:#166534}
+  .vd-stat.hold{background:#fff4d6; color:#a8620a}
+  .vd-content,.vd-note{font-size:13px; color:var(--ink-soft); line-height:1.5}
+  .vd-note{margin-top:3px}
+  .vd-content b,.vd-note b{font-size:10.5px; color:var(--gray); font-weight:800; margin-right:6px; letter-spacing:.02em}
+  .vd-empty{color:var(--gray2)}
   .cnt-badge{display:inline-block; min-width:22px; text-align:center; background:var(--red-soft); color:var(--red);
     font-size:13px; font-weight:800; padding:1px 8px; border-radius:20px; margin-left:4px; vertical-align:middle}
   .cnt-badge.done{background:var(--green-soft); color:#166534}
@@ -548,6 +575,7 @@ const SHARE_TYPES = {
 // VOC 수기 선택용 목록 (드롭다운)
 const VOC_INDUSTRIES = ["서비스[뷰티,헤어]","서비스[학원]","카페","요식업","서비스[체육]","서비스[숙박]","도소매","기타"];
 const VOC_REASONS = ["필요한 기능이 없거나 몰라서 불편","고객센터 연락이 매우 힘듦","사용중 오류가 자주 발생함","단말기 설치나 초기 과정이 어려움","구매,계약과정에서 설명이 부족","기타 이슈(정산/직원에 대한 불만/호영님출몰)"];
+const VOC_STATUSES = ["처리중","부재","통화거부","처리완료"];
 
 // 2026 대한민국 공휴일 (대체공휴일 포함, 대표)
 const HOLIDAYS = {
@@ -981,7 +1009,8 @@ function vocAlertRow(a){
   const indSel=`<select class="voc-sel" onchange="saveVocEdit('${key}','industry',this.value)"><option value="">미지정</option>${VOC_INDUSTRIES.map(x=>`<option ${x===indVal?'selected':''}>${x}</option>`).join('')}</select>`;
   const reaSel=`<select class="voc-sel" onchange="saveVocEdit('${key}','reasonCat',this.value)"><option value="">미지정</option>${VOC_REASONS.map(x=>`<option value="${escapeHtml(x)}" ${x===reaVal?'selected':''}>${escapeHtml(x.split('(')[0])}</option>`).join('')}</select>`;
   const noteInput=`<input class="voc-note" type="text" value="${escapeHtml(note)}" placeholder="처리 내용 입력…" onchange="saveVocEdit('${key}','note',this.value)">`;
-  const statSel=`<select class="voc-sel voc-stat ${statVal==='처리완료'?'done':''}" onchange="saveVocEdit('${key}','status',this.value)"><option ${statVal==='처리중'?'selected':''}>처리중</option><option ${statVal==='처리완료'?'selected':''}>처리완료</option></select>`;
+  const statCls=statVal==='처리완료'?'done':(statVal==='처리중'?'':'hold');
+  const statSel=`<select class="voc-sel voc-stat ${statCls}" onchange="saveVocEdit('${key}','status',this.value)">${VOC_STATUSES.map(o=>`<option ${statVal===o?'selected':''}>${o}</option>`).join('')}</select>`;
   const searchKey=((a.store||'')+' '+(a.storeId||'')).toLowerCase();
   return `<tr class="voc-alert-row" data-key="${searchKey}">
     <td class="trow-time">${a.time||''}</td>
@@ -996,21 +1025,49 @@ function vocAlertRow(a){
   </tr>`;
 }
 const VOC_ALERT_HEAD=`<tr><th style="width:52px">시간</th><th style="min-width:110px">매장명</th><th style="width:76px">매장ID</th><th style="width:140px">업종</th><th class="num" style="width:92px">저점</th><th style="width:150px">저점이유</th><th style="min-width:180px">고객 원문</th><th style="min-width:160px">처리 내용</th><th style="width:108px">상태</th></tr>`;
+// 매장 상세 리스트 (매장명 · 저점내용 · 해결내용 · 상태)
+function storeDetailList(items){
+  return `<div class="voc-detail-list">${items.map(s=>`
+    <div class="voc-detail-item">
+      <div class="vd-head"><span class="vd-store">${escapeHtml(s.store)}</span>${s.storeId?`<span class="vd-id">ID ${escapeHtml(s.storeId)}</span>`:''}${s.score?`<span class="vd-score">${escapeHtml(s.score)}</span>`:''}<span class="vd-stat ${s.statCls}">${escapeHtml(s.status)}</span></div>
+      <div class="vd-content"><b>저점내용</b>${escapeHtml(s.content)}</div>
+      <div class="vd-note"><b>해결내용</b>${s.note?escapeHtml(s.note):'<span class="vd-empty">미입력</span>'}</div>
+    </div>`).join('')}</div>`;
+}
+// 업종/사유 드릴다운(클릭 시 매장 상세 펼침). topReason=true면 '가장 많은 이유' 요약 표시
+function vocGroupDrill(entries, max, color, topReason){
+  return entries.map(([name, items])=>{
+    const cnt=items.length;
+    let topLine='';
+    if(topReason){
+      const rc={}; items.forEach(x=>rc[x.rea]=(rc[x.rea]||0)+1);
+      const top=Object.entries(rc).sort((a,b)=>b[1]-a[1]);
+      topLine=`<div class="vd-top">🥇 가장 많은 이유: <b>${escapeHtml(top[0][0].split('(')[0])}</b> (${top[0][1]}건)${top.slice(1,3).map(t=>` · ${escapeHtml(t[0].split('(')[0])} ${t[1]}`).join('')}</div>`;
+    }
+    return `<details class="voc-drill">
+      <summary><span class="vd-name">${escapeHtml(name.split('(')[0])}</span><span class="vd-bar"><span class="vd-fill" style="width:${cnt/max*100}%;background:${color}"></span></span><span class="vd-cnt">${cnt}건</span></summary>
+      <div class="voc-drill-body">${topLine}${storeDetailList(items)}</div>
+    </details>`;
+  }).join('');
+}
 function renderVoc(){
   const viewDates=rangeDates(viewMode,selDate);
   const viewLabel=viewLabelOf();
   const v=aggVoc(viewDates);
-  const indRows=Object.entries(v.byIndustry).sort((a,b)=>b[1]-a[1]);
-  const indMax=Math.max(1,...indRows.map(r=>r[1]));
   const lowTotal=v.install.low+v.nps.low;
 
-  // 저점 사유: 매장 1건당 대표 사유(수기 보정 우선)로 집계
-  const reasonCounts={};
-  v.alerts.forEach(a=>{ const ed=VOCEDIT[vocKey(a)]||{};
-    const cat=ed.reasonCat||(a.reasons[0]&&a.reasons[0].cat)||VOC_REASONS[5];
-    reasonCounts[cat]=(reasonCounts[cat]||0)+1; });
-  const reasonRows=Object.entries(reasonCounts).sort((a,b)=>b[1]-a[1]);
-  const reaMax=Math.max(1,...reasonRows.map(r=>r[1]));
+  // 저점 alert 정규화 (매장명·저점내용·해결내용·상태) + 업종/사유 그룹핑
+  const statClsOf=s=>s==='처리완료'?'done':(s==='처리중'?'':'hold');
+  const alertInfo=v.alerts.map(a=>{ const ed=VOCEDIT[vocKey(a)]||{}; const st=ed.status||'처리중';
+    return { store:a.store||'-', storeId:a.storeId||'',
+      ind: ed.industry||a.indBucket||'미지정',
+      rea: ed.reasonCat||(a.reasons[0]&&a.reasons[0].cat)||VOC_REASONS[5],
+      content:(a.reasons||[]).map(r=>r.text).filter(Boolean).join(' / ')||'-',
+      note: ed.note||'', status:st, statCls:statClsOf(st),
+      score:`${a.install!=null?'설치'+a.install:''}${a.install!=null&&a.nps!=null?'·':''}${a.nps!=null?'추천'+a.nps:''}` }; });
+  const groupBy=key=>{ const g={}; alertInfo.forEach(x=>{(g[x[key]]=g[x[key]]||[]).push(x);}); return Object.entries(g).sort((a,b)=>b[1].length-a[1].length); };
+  const indEntries=groupBy('ind'), reaEntries=groupBy('rea');
+  const indDMax=Math.max(1,...indEntries.map(e=>e[1].length)), reaDMax=Math.max(1,...reaEntries.map(e=>e[1].length));
 
   const isDone=a=>(VOCEDIT[vocKey(a)]||{}).status==='처리완료';
   const pendingAlerts=v.alerts.filter(a=>!isDone(a));
@@ -1032,12 +1089,12 @@ function renderVoc(){
 
     <div class="grid2">
       <div class="card">
-        <div class="card-head"><h3>업종별 응답</h3><span class="hint">${viewLabel} · ${indRows.length}개 업종</span></div>
-        ${indRows.length?indRows.map(([n,c])=>barRow(n,c,indMax,'#0071e3')).join(''):'<div class="empty-note">데이터 없음</div>'}
+        <div class="card-head"><h3>🏭 업종별 저점 인입</h3><span class="hint">업종 클릭 → 가장 많은 이유 + 매장 상세</span></div>
+        ${indEntries.length?vocGroupDrill(indEntries, indDMax, '#0071e3', true):'<div class="empty-note">저점 없음 👍</div>'}
       </div>
       <div class="card">
-        <div class="card-head"><h3>저점 사유 카운트</h3><span class="hint">${viewLabel} · 자동+수기 보정</span></div>
-        ${reasonRows.length?reasonRows.map(([n,c])=>barRow(n.split('(')[0],c,reaMax,'#ff3b30')).join(''):'<div class="empty-note">저점 없음 👍</div>'}
+        <div class="card-head"><h3>😟 저점 사유별</h3><span class="hint">사유 클릭 → 매장명·저점내용·해결내용</span></div>
+        ${reaEntries.length?vocGroupDrill(reaEntries, reaDMax, '#ff3b30', false):'<div class="empty-note">저점 없음 👍</div>'}
       </div>
     </div>
 
