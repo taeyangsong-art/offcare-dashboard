@@ -78,6 +78,10 @@
 
   /* sidebar divider */
   .nav-div{height:1px; background:var(--line-soft); margin:8px 12px}
+  /* live 갱신 표시 */
+  .live-dot{display:inline-block; width:9px; height:9px; border-radius:50%; background:var(--green);
+    margin-left:6px; vertical-align:middle; animation:livePulse 1.8s ease-in-out infinite}
+  @keyframes livePulse{0%,100%{box-shadow:0 0 0 0 rgba(52,199,89,.5)}50%{box-shadow:0 0 0 6px rgba(52,199,89,0)}}
 
   /* ===== Overview ===== */
   .ov-tiles{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:24px}
@@ -576,8 +580,8 @@ function renderOverview(){
   document.getElementById("main").innerHTML = `
     <div class="page-head">
       <div>
-        <h2>📊 전체 현황</h2>
-        <div class="sub">모든 카테고리 · 직원별 처리건수를 한 화면에서 · ${viewRangeText(viewMode,selDate)}</div>
+        <h2>📊 전체 현황 <span class="live-dot" title="자동 갱신 중"></span></h2>
+        <div class="sub">모든 카테고리 · 직원별 처리건수를 한 화면에서 · ${viewRangeText(viewMode,selDate)}${(function(){const dd=slackDay(ymd(today()));return dd&&dd.updatedAt?` · 최신 집계 ${dd.updatedAt}`:'';})()}</div>
       </div>
       <div class="controls">${periodControls()}</div>
     </div>
@@ -1244,6 +1248,7 @@ function boot(){
   if(!localStorage.getItem(LS_SHARE)) seedShare();
   applySlackData();
   renderNav(); renderMain(); checkAuth();
+  startAutoRefresh();
 }
 // slack-data.js 를 캐시 무효화(?t=)하여 항상 최신본을 불러온 뒤 시작
 (function(){
@@ -1252,6 +1257,29 @@ function boot(){
   s.onload=boot; s.onerror=boot;   // 로드 실패해도 앱은 뜨도록
   document.head.appendChild(s);
 })();
+// slack-data.js 를 다시 로드 (콜백에서 최신 window.SLACK_DATA 사용)
+function reloadSlackData(cb){
+  var s=document.createElement("script");
+  s.src="slack-data.js?t="+Date.now();
+  s.onload=function(){ if(s.parentNode) s.parentNode.removeChild(s); if(cb) cb(); };
+  s.onerror=function(){ if(s.parentNode) s.parentNode.removeChild(s); };
+  document.head.appendChild(s);
+}
+// 근실시간 자동 갱신: 2분마다 최신 데이터 확인 → 바뀌었으면 조용히 다시 그림
+function startAutoRefresh(){
+  setInterval(function(){
+    const ae=document.activeElement;
+    if(ae && (/^(INPUT|SELECT|TEXTAREA)$/.test(ae.tagName) || ae.isContentEditable)) return; // 입력 중이면 건너뜀
+    if(document.querySelector(".overlay.show")) return;   // 모달 열림
+    const lock=document.getElementById("lock");
+    if(lock && !lock.classList.contains("hide")) return;  // 로그인 전
+    const prev=(window.SLACK_DATA && window.SLACK_DATA.version) || 0;
+    reloadSlackData(function(){
+      const cur=(window.SLACK_DATA && window.SLACK_DATA.version) || 0;
+      if(cur!==prev){ applySlackData(); if(activeCat!=="duty" && activeCat!=="share") renderMain(); }
+    });
+  }, 120000);
+}
 
 // slack-data.js 의 날짜별 집계를 대시보드에 반영 (AS/온보딩은 슬랙이 원본 → 매 로드 시 해당 날짜 덮어씀)
 function applySlackData(){

@@ -1,9 +1,9 @@
 name: daily-slack-tally (progress)
 
-# 진행 현황 집계: 매일 21:00 KST (12:00 UTC) '오늘'을 집계 + 수동 실행 버튼
+# 근실시간 진행 집계: 업무시간(09:00~22:45 KST = 00:00~13:45 UTC) 15분마다 '오늘' 집계 + 수동 실행
 on:
   schedule:
-    - cron: '0 12 * * *'
+    - cron: '*/15 0-13 * * *'
   workflow_dispatch: {}
 
 permissions:
