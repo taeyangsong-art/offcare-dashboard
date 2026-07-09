@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 19,
+  "version": 20,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -254,28 +254,6 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
-            "time": "22:26",
-            "store": "매쓰퀸수학국어학원",
-            "storeId": "323913",
-            "indBucket": "",
-            "emp": "",
-            "install": null,
-            "nps": 5,
-            "text": "아주 중요한 기본 기능의 부재",
-            "byReaction": false
-          },
-          {
-            "time": "18:55",
-            "store": "나래수학교습소",
-            "storeId": "331213",
-            "indBucket": "",
-            "emp": "송태양",
-            "install": null,
-            "nps": 3,
-            "text": "종이 프린터기 아직도 연결 못함..안됨.. 문의 어디에서 할지 모르겠음. 월별 매출표 어디서 찾아야할지 모르겠음. 이거보시면 연락주세요.. 제가 연락을 못받을때가 많지만..",
-            "byReaction": true
-          },
-          {
             "time": "16:44",
             "store": "제이에이치펄스랩",
             "storeId": "195052",
@@ -296,17 +274,6 @@ window.SLACK_DATA = {
             "nps": 9,
             "text": "쓰기에 편리함",
             "byReaction": false
-          },
-          {
-            "time": "15:36",
-            "store": "세인트폴주니어불당어학원",
-            "storeId": "510524",
-            "indBucket": "서비스[학원]",
-            "emp": "송태양",
-            "install": 2,
-            "nps": 2,
-            "text": "소프트웨어가 너무 부실해요 기기자체는 좋은데 소프트웨어 오류가 너무 많고 업체의 개선의지도 없어서 다른 업체로 바꾸고 싶어요",
-            "byReaction": true
           },
           {
             "time": "15:36",
@@ -340,17 +307,6 @@ window.SLACK_DATA = {
             "nps": 10,
             "text": "편리,디자인예쁨,홍보효과",
             "byReaction": false
-          },
-          {
-            "time": "15:19",
-            "store": "윤이네 포케샌드",
-            "storeId": "493671",
-            "indBucket": "",
-            "emp": "송태양",
-            "install": null,
-            "nps": 0,
-            "text": "며칠전 에러사건도 그렇고 배달 대행사 연결도 매우 불편합니다 게다가 고객센터 연결도 매우 힘들어요",
-            "byReaction": true
           },
           {
             "time": "15:06",
