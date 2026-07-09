@@ -14,6 +14,7 @@ const CHANNELS = [
   { id: 'C09HRUSG4TX', label: '원격 AS요청', defaultCat: 'as',       forceCat: null },        // 공개: 이모지로 AS/온보딩/외주 구분
   { id: 'C07CL4BV9QT', label: '명의변경',    defaultCat: 'transfer', forceCat: 'transfer' },  // 비공개 전용: 전부 명의변경
   { id: 'C08740SFT1S', label: '메뉴등록',    defaultCat: 'menu',     forceCat: 'menu' },      // 공개 전용: 전부 메뉴등록(봇 접수 메시지 포함)
+  { id: 'C0ASD02FFML', label: '배달요청',    defaultCat: 'delivery', forceCat: 'delivery' },  // 공개 전용: 전부 배달
 ];
 
 const personMap = { '규빈':'김규빈','선유':'배선유','성현':'심성현','동욱':'김동욱','현기':'김현기','태양':'송태양','기범':'김기범','상원':'서상원','민석':'최민석' };
