@@ -192,8 +192,8 @@ function tallyVoc(msgs, voc) {
     if (!isNaN(nps))     { voc.nps.count++;     if (nps <= 5)     { voc.nps.low++;     const c = classifyReason(npsReason);     voc.reasonCounts[c] = (voc.reasonCounts[c] || 0) + 1; reasons.push({ q: '추천의향', score: nps, text: npsReason, cat: c }); } else if (nps >= VOC_HIGH_NPS) voc.high.nps++; }
     if (reasons.length) voc.alerts.push({ time, store, storeId, industry, indBucket, install: isNaN(install) ? null : install, nps: isNaN(nps) ? null : nps, reasons });
 
-    // 직원 칭찬 적재: 담당자확인 리액션 또는 칭찬 문구가 있으면
-    if (praiseEmp || hasPraiseWord) {
+    // 칭찬 적재: 저점(reasons)이 아니면서 담당자확인 리액션 또는 칭찬 문구가 있는 건만 (저점 처리건은 제외)
+    if (!reasons.length && (praiseEmp || hasPraiseWord)) {
       const ptext = (installReason + ' ' + npsReason).trim() || allAns.slice(0, 100);
       voc.praises.push({ time, store, storeId, indBucket, emp: praiseEmp || '', install: isNaN(install) ? null : install, nps: isNaN(nps) ? null : nps, text: ptext, byReaction: !!praiseEmp });
     }
