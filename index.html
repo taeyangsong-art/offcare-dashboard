@@ -1919,27 +1919,25 @@ function boot(){
   renderNav(); renderMain(); checkAuth();
   startAutoRefresh();
 }
-// slack-data.js, calendar-data.js 를 캐시 무효화(?t=)하여 항상 최신본을 불러온 뒤 시작
-(function(){
-  function load(src, cb){ var s=document.createElement("script"); s.src=src+"?t="+Date.now(); s.onload=cb; s.onerror=cb; document.head.appendChild(s); }
-  load("slack-data.js", function(){ load("calendar-data.js", boot); });   // 둘 다(실패해도) 로드 후 부팅
-})();
+// 데이터 파일을 GitHub 원본(raw)에서 직접 fetch → Pages 배포를 안 기다리고 반영(지연 최대 ~5분).
+// raw 실패 시 로컬(Pages) 파일로 폴백. 파일은 "window.XXX = {...};" 형태라 함수로 실행해 window에 반영.
+var DATA_BASE = "https://raw.githubusercontent.com/taeyangsong-art/test/main/";
+function loadData(file, cb){
+  var urls = [DATA_BASE + file, file];   // 원본 우선 → 안되면 로컬(Pages)
+  (function tryNext(i){
+    if(i >= urls.length){ if(cb) cb(false); return; }
+    fetch(urls[i] + "?t=" + Date.now(), {cache:"no-store"})
+      .then(function(r){ if(!r.ok) throw 0; return r.text(); })
+      .then(function(txt){ (new Function(txt))(); if(cb) cb(true); })
+      .catch(function(){ tryNext(i+1); });
+  })(0);
+}
+// 최초 로드(둘 다) → 부팅. 데이터 실패해도 앱은 뜸.
+loadData("slack-data.js", function(){ loadData("calendar-data.js", function(){ boot(); }); });
 // 선택 날짜의 구글 캘린더 일정 배열 (없으면 [])
 function gcalDay(date){ return (window.GCAL_DATA&&window.GCAL_DATA.days&&window.GCAL_DATA.days[date])||[]; }
-function reloadCalendarData(cb){
-  var s=document.createElement("script"); s.src="calendar-data.js?t="+Date.now();
-  s.onload=function(){ if(s.parentNode)s.parentNode.removeChild(s); if(cb)cb(); };
-  s.onerror=function(){ if(s.parentNode)s.parentNode.removeChild(s); if(cb)cb(); };
-  document.head.appendChild(s);
-}
-// slack-data.js 를 다시 로드 (콜백에서 최신 window.SLACK_DATA 사용)
-function reloadSlackData(cb){
-  var s=document.createElement("script");
-  s.src="slack-data.js?t="+Date.now();
-  s.onload=function(){ if(s.parentNode) s.parentNode.removeChild(s); if(cb) cb(); };
-  s.onerror=function(){ if(s.parentNode) s.parentNode.removeChild(s); };
-  document.head.appendChild(s);
-}
+function reloadSlackData(cb){ loadData("slack-data.js", cb); }
+function reloadCalendarData(cb){ loadData("calendar-data.js", cb); }
 // 근실시간 자동 갱신: 2분마다 최신 데이터 확인 → 바뀌었으면 조용히 다시 그림
 function startAutoRefresh(){
   setInterval(function(){
