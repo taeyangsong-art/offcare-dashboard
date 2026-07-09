@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 17,
+  "version": 18,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -95,6 +95,10 @@ window.SLACK_DATA = {
           "count": 21,
           "low": 8
         },
+        "high": {
+          "install": 3,
+          "nps": 7
+        },
         "byIndustry": {
           "서비스[학원]": 4,
           "카페": 1
@@ -110,6 +114,7 @@ window.SLACK_DATA = {
             "store": "매쓰퀸수학국어학원",
             "storeId": "323913",
             "industry": "",
+            "indBucket": "",
             "install": null,
             "nps": 5,
             "reasons": [
@@ -126,6 +131,7 @@ window.SLACK_DATA = {
             "store": "나래수학교습소",
             "storeId": "331213",
             "industry": "",
+            "indBucket": "",
             "install": null,
             "nps": 3,
             "reasons": [
@@ -142,6 +148,7 @@ window.SLACK_DATA = {
             "store": "위드베이커리(With bakery)",
             "storeId": "494010",
             "industry": "",
+            "indBucket": "",
             "install": null,
             "nps": 5,
             "reasons": [
@@ -158,6 +165,7 @@ window.SLACK_DATA = {
             "store": "세인트폴주니어불당어학원",
             "storeId": "510524",
             "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
             "install": 2,
             "nps": 2,
             "reasons": [
@@ -180,6 +188,7 @@ window.SLACK_DATA = {
             "store": "미묘",
             "storeId": "326463",
             "industry": "",
+            "indBucket": "",
             "install": null,
             "nps": 2,
             "reasons": [
@@ -196,6 +205,7 @@ window.SLACK_DATA = {
             "store": "윤이네 포케샌드",
             "storeId": "493671",
             "industry": "",
+            "indBucket": "",
             "install": null,
             "nps": 0,
             "reasons": [
@@ -212,6 +222,7 @@ window.SLACK_DATA = {
             "store": "더채움수학교습소",
             "storeId": "301128",
             "industry": "",
+            "indBucket": "",
             "install": null,
             "nps": 5,
             "reasons": [
@@ -228,6 +239,7 @@ window.SLACK_DATA = {
             "store": "정앤정스터디입시학원",
             "storeId": "533889",
             "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
             "install": 5,
             "nps": 5,
             "reasons": [
@@ -238,6 +250,118 @@ window.SLACK_DATA = {
                 "cat": "필요한 기능이 없거나 몰라서 불편"
               }
             ]
+          }
+        ],
+        "praises": [
+          {
+            "time": "22:26",
+            "store": "매쓰퀸수학국어학원",
+            "storeId": "323913",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 5,
+            "text": "아주 중요한 기본 기능의 부재",
+            "byReaction": false
+          },
+          {
+            "time": "18:55",
+            "store": "나래수학교습소",
+            "storeId": "331213",
+            "indBucket": "",
+            "emp": "송태양",
+            "install": null,
+            "nps": 3,
+            "text": "종이 프린터기 아직도 연결 못함..안됨.. 문의 어디에서 할지 모르겠음. 월별 매출표 어디서 찾아야할지 모르겠음. 이거보시면 연락주세요.. 제가 연락을 못받을때가 많지만..",
+            "byReaction": true
+          },
+          {
+            "time": "16:44",
+            "store": "제이에이치펄스랩",
+            "storeId": "195052",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "깔끔 편의성",
+            "byReaction": false
+          },
+          {
+            "time": "16:24",
+            "store": "올제인지학습센터",
+            "storeId": "319903",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 9,
+            "text": "쓰기에 편리함",
+            "byReaction": false
+          },
+          {
+            "time": "15:36",
+            "store": "세인트폴주니어불당어학원",
+            "storeId": "510524",
+            "indBucket": "서비스[학원]",
+            "emp": "송태양",
+            "install": 2,
+            "nps": 2,
+            "text": "소프트웨어가 너무 부실해요 기기자체는 좋은데 소프트웨어 오류가 너무 많고 업체의 개선의지도 없어서 다른 업체로 바꾸고 싶어요",
+            "byReaction": true
+          },
+          {
+            "time": "15:36",
+            "store": "송현컴퓨터학원",
+            "storeId": "537637",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "처음엔 좀 당황 했는데, 이리 저리 몇번 실패를 거듭하며 토스프론트와 포스앱의 뛰어난 기능을 알게됨. 그냥 최고.",
+            "byReaction": false
+          },
+          {
+            "time": "15:24",
+            "store": "은진식당",
+            "storeId": "320081",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "편리함",
+            "byReaction": false
+          },
+          {
+            "time": "15:24",
+            "store": "원주 고양이 카페&미용&호텔 오묘",
+            "storeId": "329012",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "편리,디자인예쁨,홍보효과",
+            "byReaction": false
+          },
+          {
+            "time": "15:19",
+            "store": "윤이네 포케샌드",
+            "storeId": "493671",
+            "indBucket": "",
+            "emp": "송태양",
+            "install": null,
+            "nps": 0,
+            "text": "며칠전 에러사건도 그렇고 배달 대행사 연결도 매우 불편합니다 게다가 고객센터 연결도 매우 힘들어요",
+            "byReaction": true
+          },
+          {
+            "time": "15:06",
+            "store": "오브잇(ove it)",
+            "storeId": "539994",
+            "indBucket": "카페",
+            "emp": "",
+            "install": 5,
+            "nps": 9,
+            "text": "초기 설치시 직접와서 설치하고 선정리까지 해주고 가셔서 좋았습니다 네이버스마트플레이스 플러스 연동이 토스만 안되더라구요 ㅠ 그래서 별 하나 뺍니다",
+            "byReaction": false
           }
         ]
       }
