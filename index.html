@@ -755,7 +755,7 @@ function renderStats(){
     </div>
 
     ${activeCat==="as" ? externCard() : ""}
-    ${activeCat==="as" ? pendingCard() : ""}
+    ${pendingCard()}
   `;
 }
 
@@ -777,19 +777,12 @@ function externCard(){
   </div>`;
 }
 
-// 미처리·확인필요 건 (슬랙 채널 스캔) — 선택 날짜 기준, 상호/사업자 조회
+// 미처리·확인필요 건 (슬랙 채널 스캔) — 선택 날짜 + 현재 카테고리 기준
 function pendingCard(){
   const day=slackDay(selDate);
-  if(!day){
-    return `<div class="card">
-      <div class="card-head"><h3>🔎 미처리 · 확인필요 건</h3>
-        <span class="hint">원격 AS요청 채널</span></div>
-      <div class="note" style="text-align:center;color:var(--gray2);padding:26px 0">
-        ${fmtShort(selDate)} 은(는) 슬랙 집계 데이터가 없습니다. <br>
-        <span style="font-size:13px">터미널에서 <b>/원격집계</b> 를 실행하면 그날 데이터가 채워집니다.</span></div>
-    </div>`;
-  }
-  const list=day.pending||[];
+  if(!day) return "";
+  const list=(day.pending||[]).filter(p=>(p.cat||'as')===activeCat);
+  if(list.length===0) return "";
   const rows=list.map(p=>{
     const tags=p.reasons.map(r=>{
       const isAbsent=/부재/.test(r);
@@ -807,10 +800,10 @@ function pendingCard(){
   return `<div class="card">
     <div class="card-head">
       <h3>🔎 미처리 · 확인필요 건</h3>
-      <span class="hint">원격 AS요청 채널 · ${fmtShort(selDate)} 기준${day.updatedAt?` (${day.updatedAt} 갱신)`:''} · ${list.length}건</span>
+      <span class="hint">${fmtShort(selDate)} 기준${day.updatedAt?` (${day.updatedAt} 갱신)`:''} · ${list.length}건</span>
     </div>
     <p class="note" style="margin:-6px 0 14px;font-size:13px;color:var(--gray)">
-      <b>확인(OOO_확인)</b>만 되고 아직 <b>완료(원격OOO)·분류(AS/온보딩)</b>가 안 된 건입니다. (<b>2차부재</b> 건은 제외) 담당자는 확인한 사람으로 표기됩니다. 상호명 또는 사업자번호로 조회하세요.</p>
+      <b>확인(OOO_확인)</b>만 되고 아직 <b>완료(원격OOO)</b>가 안 된 건입니다. (<b>2차부재</b> 제외) 담당자는 확인한 사람으로 표기됩니다. 상호명 또는 사업자번호로 조회하세요.</p>
     <input class="search-box" type="text" placeholder="상호명 또는 사업자번호 검색…" oninput="filterPending(this.value)">
     <table style="margin-top:12px">
       <thead><tr><th style="width:60px">시간</th><th>상호</th><th style="width:130px">사업자번호</th><th>상태</th><th style="width:80px">담당</th></tr></thead>
