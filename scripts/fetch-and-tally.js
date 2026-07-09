@@ -36,6 +36,22 @@ function classifyReason(text){
   for(const r of VOC_REASON_RULES){ if(r.kw.some(k=>text.includes(k))) return r.label; }
   return VOC_REASON_ETC;
 }
+
+// VOC 업종 버킷 매핑 (원본 업종값 → 표시 버킷). 순서대로 첫 매칭 우선.
+const VOC_INDUSTRY_RULES = [
+  { label:'서비스[뷰티,헤어]', kw:['뷰티','헤어','미용','네일','피부','에스테틱','왁싱','반영구','바버','속눈썹','메이크업','태닝','이용'] },
+  { label:'서비스[학원]',      kw:['학원','교습소','교육','공부방','과외','스터디','어학','음악','미술','태권도','피아노'] },
+  { label:'카페',             kw:['카페','커피','디저트','브런치','베이커리','제과','빵','도넛','스무디'] },
+  { label:'요식업',           kw:['음식','식당','요식','고기','치킨','분식','한식','중식','일식','양식','주점','술집','포차','횟집','뷔페','국밥','김밥','피자','버거','곱창','족발','보쌈','찜','국수','라멘','파스타','돈까스','포장마차','이자카야'] },
+  { label:'서비스[체육]',      kw:['체육','헬스','필라테스','요가','골프','스포츠','피티','운동','클라이밍','수영','복싱'] },
+  { label:'서비스[숙박]',      kw:['숙박','호텔','모텔','펜션','게스트','여관','민박','리조트'] },
+  { label:'도소매',           kw:['도매','소매','판매','마트','편의점','슈퍼','상점','쇼핑','잡화','문구','의류','세탁'] },
+];
+function mapIndustry(raw){
+  if(!raw) return '';
+  for(const r of VOC_INDUSTRY_RULES){ if(r.kw.some(k=>raw.includes(k))) return r.label; }
+  return '기타';
+}
 const pad = n => String(n).padStart(2, '0');
 
 // 집계 대상 날짜: TALLY_DATE_OFFSET (0=오늘, -1=어제). 새벽 최종집계는 -1 로 '전날' 마감.
@@ -141,7 +157,8 @@ function tallyVoc(msgs, voc) {
     const store = attr('매장명'), storeId = attr('매장ID');
 
     voc.responses++;
-    if (industry) voc.byIndustry[industry] = (voc.byIndustry[industry] || 0) + 1;
+    const indBucket = mapIndustry(industry);       // 원본 업종 → 7개 버킷(+기타)
+    if (indBucket) voc.byIndustry[indBucket] = (voc.byIndustry[indBucket] || 0) + 1;
     const reasons = [];
     if (!isNaN(install)) { voc.install.count++; if (install <= 2) { voc.install.low++; const c = classifyReason(installReason); voc.reasonCounts[c] = (voc.reasonCounts[c] || 0) + 1; reasons.push({ q: '구매설치', score: install, text: installReason, cat: c }); } }
     if (!isNaN(nps))     { voc.nps.count++;     if (nps <= 5)     { voc.nps.low++;     const c = classifyReason(npsReason);     voc.reasonCounts[c] = (voc.reasonCounts[c] || 0) + 1; reasons.push({ q: '추천의향', score: nps, text: npsReason, cat: c }); } }
