@@ -225,11 +225,9 @@
   .ev-head{font-weight:800}
   .ev-time{font-weight:700; opacity:.95}
   .ev-memo{font-weight:600; opacity:.85}
-  .ev-btns{flex:0 0 auto; display:flex; gap:2px; margin-top:-1px}
-  .ev-del,.ev-edit{border:none; background:transparent; color:inherit; cursor:pointer;
-    line-height:1; opacity:.45; padding:0 1px; font-weight:700}
-  .ev-del{font-size:14px} .ev-edit{font-size:11px}
-  .ev-del:hover,.ev-edit:hover{opacity:1}
+  .ev-del{flex:0 0 auto; border:none; background:transparent; color:inherit; cursor:pointer;
+    font-size:14px; line-height:1; opacity:.45; padding:0 1px; margin-top:-1px; font-weight:700}
+  .ev-del:hover{opacity:1}
 
   /* form modal */
   .form-modal{text-align:left; width:min(440px,92vw)}
@@ -984,10 +982,10 @@ function renderShare(){
     const chips = evs.map(e=>{
       const t=typeMeta(e.type);
       const tt=`${e.emp} · ${t.label}${e.time?' · '+e.time:''}${e.title?' · '+e.title:''}`;
-      return `<div class="ev-chip" draggable="true" ondragstart="shareDragStart(event,'${ds}','${e.id}')" ondragend="shareDragEnd(event)" style="background:${t.soft};color:${t.color}" title="${escapeHtml(tt)} — 드래그해서 날짜 이동">
+      return `<div class="ev-chip" draggable="true" ondragstart="shareDragStart(event,'${ds}','${e.id}')" ondragend="shareDragEnd(event)" onclick="shareChipClick(event,'${ds}','${e.id}')" style="background:${t.soft};color:${t.color}" title="${escapeHtml(tt)} — 클릭: 수정 · 드래그: 이동">
         <span class="ev-dot" style="background:${t.color}"></span>
         <span class="ev-txt"><span class="ev-head">${escapeHtml(e.emp)} · ${t.label}</span>${e.time?`<span class="ev-time">🕒 ${escapeHtml(e.time)}</span>`:''}${e.title?`<span class="ev-memo">${escapeHtml(e.title)}</span>`:''}</span>
-        <span class="ev-btns"><button class="ev-edit" title="수정" onclick="openShareEdit('${ds}','${e.id}')">✎</button><button class="ev-del" title="삭제" onclick="removeShare('${ds}','${e.id}')">×</button></span></div>`;
+        <button class="ev-del" title="삭제" onclick="event.stopPropagation();removeShare('${ds}','${e.id}')">×</button></div>`;
     }).join("");
     return `<div class="daycell share ${ds===todayStr?'today':''} ${holi?'holi':''}"
       ondragover="shareDragOver(event,this)" ondragleave="shareDragLeave(this)" ondrop="shareDrop(event,'${ds}',this)">
@@ -1001,7 +999,7 @@ function renderShare(){
     <div class="page-head">
       <div>
         <h2>📢 공유</h2>
-        <div class="sub">연차 · 반차 · 시간차 · 외부일정 · 교육일정 · 회의를 팀원과 공유하세요. 일정마다 시작~종료 시간을 넣을 수 있고, 달력에 시간·내용이 함께 표시됩니다. <b>일정을 드래그하면 다른 날짜로 이동</b>되고, 삭제는 × 버튼을 누르세요.</div>
+        <div class="sub">연차 · 반차 · 시간차 · 외부일정 · 교육일정 · 회의를 팀원과 공유하세요. 일정마다 시작~종료 시간을 넣을 수 있고, 달력에 시간·내용이 함께 표시됩니다. <b>일정을 클릭하면 수정</b>, <b>드래그하면 날짜 이동</b>, × 버튼으로 삭제됩니다.</div>
       </div>
       <div class="controls">
         <select class="sel" onchange="setShareFilter(this.value)">
@@ -1060,6 +1058,11 @@ function openShareForm(ds){
   document.getElementById("sfEnd").value = "";
   document.getElementById("sfTitle").value = "";
   document.getElementById("shareOverlay").classList.add("show");
+}
+// 일정 칩 클릭 → 수정 팝업 (삭제 버튼 클릭은 제외)
+function shareChipClick(ev, ds, id){
+  if(ev.target.closest(".ev-del")) return;
+  openShareEdit(ds, id);
 }
 // 기존 일정 수정: 폼에 값 채우고 수정 모드로 열기
 function openShareEdit(ds, id){
