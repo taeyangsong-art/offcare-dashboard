@@ -36,5 +36,9 @@ jobs:
           else
             git add slack-data.js
             git commit -m "chore: 원격 AS 최종 집계 ($(TZ=Asia/Seoul date -d 'yesterday' +%Y-%m-%d))"
-            git push
+            for i in 1 2 3 4 5; do
+              git pull --rebase --autostash origin main && git push && { echo "푸시 성공"; exit 0; }
+              echo "푸시 경합 — 재시도 $i..."; sleep 4
+            done
+            echo "푸시 5회 실패"; exit 1
           fi
