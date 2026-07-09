@@ -97,6 +97,11 @@
   .dt-name{font-weight:600; color:var(--ink)}
   .dt-leave{font-size:13.5px; color:var(--slate,#454b54); border-top:1px solid var(--line-soft); padding-top:11px}
   .dt-leave b{color:var(--ink)}
+  .leave-list{display:flex; flex-direction:column; gap:8px}
+  .leave-item{display:flex; align-items:center; justify-content:space-between; gap:10px; padding:9px 13px;
+    background:var(--surface2); border:1px solid var(--line-soft); border-radius:11px}
+  .leave-emp{font-size:15px; font-weight:700; color:var(--ink)}
+  .leave-type{font-size:12px; font-weight:700; padding:3px 10px; border-radius:20px; white-space:nowrap}
   .rank-row{display:flex; gap:12px; flex-wrap:wrap}
   .rank-item{flex:1; min-width:96px; text-align:center; padding:14px 10px; border-radius:14px;
     background:var(--surface2); border:1px solid var(--line-soft)}
@@ -753,9 +758,9 @@ function renderOverview(){
     <div class="grid2">
       <div class="card"><div class="card-head"><h3>🔔 미처리 · 확인필요</h3><span class="hint">오늘 기준 · ${pendTotal}건</span></div>
         ${pendTotal?`<div class="alert-list">${alertListHTML}</div>`:'<div class="empty-note">지금 챙길 미처리 건이 없습니다 ✅</div>'}</div>
-      <div class="card"><div class="card-head"><h3>📅 오늘 근무 현황</h3><span class="hint">${fmtShort(todayStr)}</span></div>
-        <div class="duty-today">${dutyRowsHTML}</div>
-        <div class="dt-leave"><b>오늘 연차/휴가</b> · ${leaveHTML}</div></div>
+      <div class="card"><div class="card-head"><h3>📅 오늘 연차 · 휴가</h3><span class="hint">${fmtShort(todayStr)} · ${leaveToday.length}명</span></div>
+        ${leaveToday.length?`<div class="leave-list">${leaveToday.map(e=>`<div class="leave-item"><span class="leave-emp">${escapeHtml(e.emp)}</span><span class="leave-type" style="background:${typeMeta(e.type).soft};color:${typeMeta(e.type).color}">${typeMeta(e.type).label}${e.time?' · '+escapeHtml(e.time):''}</span></div>`).join('')}</div>`:'<div class="empty-note">오늘 연차·휴가자가 없습니다</div>'}
+      </div>
     </div>
 
     <div class="grid2">
