@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10,
+  "version": 11,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126,12 +126,12 @@ window.SLACK_DATA = {
       ]
     },
     "2026-07-09": {
-      "updatedAt": "11:00",
+      "updatedAt": "11:08",
       "counts": {
         "as": {
-          "배선유": 6,
+          "배선유": 7,
+          "심성현": 5,
           "김규빈": 3,
-          "심성현": 4,
           "김현기": 1,
           "송태양": 5
         },
@@ -151,20 +151,30 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "11:00",
+          "store": "제이 앤 플러스(호박이네쌀공방)",
+          "biz": "",
+          "handler": "송태양",
+          "cat": "transfer",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
           "time": "10:54",
-          "store": "카페율하온진해용원점",
-          "biz": "7751801729",
-          "handler": "김규빈",
+          "store": "궁동포차",
+          "biz": "6241302653",
+          "handler": "배선유",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
           ]
         },
         {
-          "time": "10:39",
-          "store": "(재)한국기계전기전자시험연구",
-          "biz": "1238214098",
-          "handler": "심성현",
+          "time": "10:54",
+          "store": "카페율하온진해용원점",
+          "biz": "7751801729",
+          "handler": "김규빈",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
