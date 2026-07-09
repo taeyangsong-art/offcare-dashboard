@@ -987,12 +987,12 @@ function renderVocMonthly(){
     </div>
     <div class="card"><div class="card-head"><h3>일별 인입 추이</h3><span class="hint">${mo+1}월</span></div>${vocDailyTrend(dates)}</div>
     <div class="card">
-      <div class="card-head"><h3>👏 칭찬 · 고점 (직원별 집계)</h3><span class="hint">고점(설치 5·추천 10 만점) ${v.high.install+v.high.nps}건 · 칭찬/확인 ${vpCount}건</span></div>
-      ${praiseEmpRows.length?`<div class="note" style="margin-bottom:10px;font-size:13px;color:var(--gray)">담당자 확인 리액션/칭찬 문구/수기지정 기준 직원별 집계</div>`+praiseEmpRows.map(([n,c])=>barRow(n,c,peMax,'#34c759')).join(''):'<div class="empty-note">이 달 담당 지정된 칭찬이 없습니다 — 아래에서 직원을 지정하세요</div>'}
-    </div>
-    <div class="card">
       <div class="card-head"><h3>💚 칭찬 상세 · 직원 지정</h3><span class="hint">${vpCount}건 · 각 카드에서 담당 직원 선택 · 불필요한 건 × 삭제</span></div>
       ${praiseCardsHTML(v.praises)}
+    </div>
+    <div class="card">
+      <div class="card-head"><h3>👏 칭찬 · 고점 (직원별 집계)</h3><span class="hint">고점(설치 5·추천 10 만점) ${v.high.install+v.high.nps}건 · 칭찬/확인 ${vpCount}건</span></div>
+      ${praiseEmpRows.length?`<div class="note" style="margin-bottom:10px;font-size:13px;color:var(--gray)">담당자 확인 리액션/칭찬 문구/수기지정 기준 직원별 집계</div>`+praiseEmpRows.map(([n,c])=>barRow(n,c,peMax,'#34c759')).join(''):'<div class="empty-note">담당 지정된 칭찬이 없습니다 — 위 카드에서 직원을 지정하세요</div>'}
     </div>
     <div class="card">
       <div class="card-head"><h3>📝 먼슬리 코멘트</h3>
