@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 22,
+  "version": 23,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -455,51 +455,104 @@ window.SLACK_DATA = {
       ]
     },
     "2026-07-09": {
-      "updatedAt": "15:27",
+      "updatedAt": "17:00",
       "counts": {
         "as": {
-          "최민석": 1,
-          "김동욱": 12,
-          "송태양": 12,
-          "김현기": 10,
-          "심성현": 18,
-          "배선유": 19,
-          "서상원": 3,
-          "김기범": 3,
-          "김규빈": 10
+          "김규빈": 13,
+          "김동욱": 15,
+          "김현기": 13,
+          "최민석": 8,
+          "배선유": 21,
+          "송태양": 15,
+          "심성현": 21,
+          "서상원": 4,
+          "김기범": 3
         },
         "onboarding": {
-          "심성현": 2,
-          "김동욱": 6,
-          "송태양": 4,
-          "최민석": 1,
-          "김규빈": 4,
-          "배선유": 1,
-          "김현기": 2
+          "배선유": 2,
+          "심성현": 3,
+          "서상원": 1,
+          "김규빈": 5,
+          "김현기": 3,
+          "김동욱": 8,
+          "최민석": 2,
+          "송태양": 4
         },
         "extern": {
-          "서상원": 3,
+          "서상원": 4,
+          "김현기": 1,
           "김기범": 1,
           "김동욱": 1
         },
         "transfer": {
-          "송태양": 8,
+          "송태양": 9,
           "김동욱": 1,
           "심성현": 1
         },
         "menu": {
-          "김규빈": 6,
+          "김규빈": 7,
           "배선유": 4
         },
         "delivery": {
+          "최민석": 1,
           "김현기": 1
         }
       },
       "pending": [
         {
-          "time": "15:27",
-          "store": "샤사 명일고덕역점",
-          "biz": "2010169443",
+          "time": "16:51",
+          "store": "티에이치(TH) 용인대 유도장",
+          "biz": "8869502198",
+          "handler": "송태양",
+          "cat": "transfer",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "16:45",
+          "store": "이윤진",
+          "biz": "3279601718",
+          "handler": "김현기",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "16:45",
+          "store": "언제나꽃식물원",
+          "biz": "2149325126",
+          "handler": "배선유",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "16:44",
+          "store": "휴네일",
+          "biz": "7831102021",
+          "handler": "김동욱",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "16:43",
+          "store": "샤인빔의원",
+          "biz": "2181505065",
+          "handler": "김동욱",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "16:39",
+          "store": "채덮밥",
+          "biz": "4560903218",
           "handler": "심성현",
           "cat": "as",
           "reasons": [
@@ -507,10 +560,20 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "15:22",
-          "store": "우직(WOOZIK)",
-          "biz": "5470104098",
-          "handler": "김동욱",
+          "time": "16:32",
+          "store": "슈가",
+          "biz": "3623400994",
+          "handler": "김기범",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "16:00",
+          "store": "재니샵",
+          "biz": "1333901202",
+          "handler": "김현기",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
@@ -525,101 +588,241 @@ window.SLACK_DATA = {
           "reasons": [
             "확인 후 미완료"
           ]
-        },
-        {
-          "time": "14:45",
-          "store": "태양호 태양수산",
-          "biz": "6849200119",
-          "handler": "송태양",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "14:00",
-          "store": "뉴월드 경산점",
-          "biz": "1578703037",
-          "handler": "배선유",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
         }
       ],
       "voc": {
-        "responses": 8,
+        "responses": 22,
         "install": {
-          "count": 3,
+          "count": 6,
           "low": 0
         },
         "nps": {
-          "count": 8,
-          "low": 0
+          "count": 22,
+          "low": 3
         },
         "high": {
-          "install": 2,
-          "nps": 6
+          "install": 4,
+          "nps": 11
         },
         "npsDist": {
-          "8": 2,
-          "10": 6
+          "0": 1,
+          "3": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 5,
+          "9": 1,
+          "10": 11
         },
         "installDist": {
+          "3": 1,
           "4": 1,
-          "5": 2
+          "5": 4
         },
         "byIndustry": {
-          "서비스[학원]": 2,
-          "도소매": 1
+          "도소매": 2,
+          "서비스[뷰티,헤어]": 1,
+          "카페": 1,
+          "서비스[학원]": 2
         },
         "byTenure": {
-          "12개월": {
-            "total": 1,
-            "low": 0
-          },
           "구매설치": {
+            "total": 6,
+            "low": 1
+          },
+          "6개월": {
+            "total": 8,
+            "low": 1
+          },
+          "12개월": {
             "total": 3,
             "low": 0
           },
           "3개월": {
-            "total": 1,
-            "low": 0
+            "total": 4,
+            "low": 1
           },
           "1개월": {
             "total": 1,
             "low": 0
-          },
-          "6개월": {
-            "total": 2,
-            "low": 0
           }
         },
         "byVan": {
+          "SECTA9": {
+            "total": 6,
+            "low": 1
+          },
+          "NICE": {
+            "total": 3,
+            "low": 0
+          },
+          "SMARTRO": {
+            "total": 3,
+            "low": 1
+          },
           "KSNET": {
-            "total": 1,
+            "total": 2,
             "low": 0
           },
           "KPN": {
-            "total": 2,
+            "total": 3,
             "low": 0
           },
           "KIS": {
-            "total": 2,
-            "low": 0
+            "total": 4,
+            "low": 1
           },
           "DAOU": {
             "total": 1,
             "low": 0
-          },
-          "SECTA9": {
-            "total": 2,
-            "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
+          "고객센터 연락이 매우 힘듦": 1
+        },
+        "alerts": [
+          {
+            "time": "16:44",
+            "store": "고운 그곳에",
+            "storeId": "486293",
+            "industry": "도소매",
+            "indBucket": "도소매",
+            "install": 3,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "나이들어 조금어려움",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ]
+          },
+          {
+            "time": "16:02",
+            "store": "애즈비영어키즈카페",
+            "storeId": "311461",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "고객센터 답이느림",
+                "cat": "고객센터 연락이 매우 힘듦"
+              }
+            ]
+          },
+          {
+            "time": "15:36",
+            "store": "화육공간",
+            "storeId": "432284",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "장애 관련 무책임함",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ]
+          }
+        ],
         "praises": [
+          {
+            "time": "16:02",
+            "store": "클라우드 9 브리즈",
+            "storeId": "330910",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 8,
+            "text": "다 좋은데 좀 느려요",
+            "byReaction": false
+          },
+          {
+            "time": "15:52",
+            "store": "잔잔히",
+            "storeId": "187246",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "조작법이 매우 쉽고, 구성을 원하는대로 할 수 있어서 좋았음. 결제 및 적립 시스템도 간단해서 사용하기 용이함.",
+            "byReaction": false
+          },
+          {
+            "time": "15:44",
+            "store": "쌩얼 EYE LASH",
+            "storeId": "533720",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "설치하는데 어려움 없었다 편리하다",
+            "byReaction": false
+          },
+          {
+            "time": "15:37",
+            "store": "카페 라파우자",
+            "storeId": "434964",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "직관적이고 복잡하지 않아 편리함",
+            "byReaction": false
+          },
+          {
+            "time": "15:32",
+            "store": "맨즈헤어",
+            "storeId": "324750",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "빠르게계산이잘됩니다",
+            "byReaction": false
+          },
+          {
+            "time": "15:32",
+            "store": "우아(Woo ah !)",
+            "storeId": "306916",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 9,
+            "text": "편리하고 초기 비용 없음",
+            "byReaction": false
+          },
+          {
+            "time": "15:32",
+            "store": "온다노체(Onda Noche)",
+            "storeId": "320187",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 8,
+            "text": "간편하긴 한데 살짝 불편한 것도 있어요",
+            "byReaction": false
+          },
+          {
+            "time": "15:32",
+            "store": "리치크레",
+            "storeId": "320294",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 8,
+            "text": "편리함",
+            "byReaction": false
+          },
           {
             "time": "15:13",
             "store": "근본 재활운동센터",
