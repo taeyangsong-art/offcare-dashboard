@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11,
+  "version": 12,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126,7 +126,7 @@ window.SLACK_DATA = {
       ]
     },
     "2026-07-09": {
-      "updatedAt": "11:08",
+      "updatedAt": "11:10",
       "counts": {
         "as": {
           "배선유": 7,
@@ -150,6 +150,16 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
+        {
+          "time": "11:09",
+          "store": "주식회사 세리필라테스",
+          "biz": "6198107301",
+          "handler": "김현기",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
         {
           "time": "11:00",
           "store": "제이 앤 플러스(호박이네쌀공방)",
