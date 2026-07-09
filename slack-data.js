@@ -1,9 +1,9 @@
 /*
- * 슬랙 #0_원격_as_요청 채널 집계 데이터 (날짜별 누적)
+ * 슬랙 원격 처리 채널(AS요청·명의변경 등) 집계 데이터 (날짜별 누적)
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8,
+  "version": 9,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126,9 +126,83 @@ window.SLACK_DATA = {
       ]
     },
     "2026-07-09": {
-      "updatedAt": "",
-      "counts": {},
-      "pending": []
+      "updatedAt": "10:37",
+      "counts": {
+        "as": {
+          "심성현": 2,
+          "송태양": 5,
+          "배선유": 5
+        },
+        "onboarding": {
+          "김현기": 1
+        },
+        "transfer": {
+          "송태양": 2,
+          "심성현": 1
+        }
+      },
+      "pending": [
+        {
+          "time": "10:30",
+          "store": "카페위한",
+          "biz": "5301201949",
+          "handler": "송태양",
+          "cat": "transfer",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "10:26",
+          "store": "오카에시",
+          "biz": "7620403383",
+          "handler": "서상원",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "10:21",
+          "store": "주식회사 세리필라테스",
+          "biz": "6198107301",
+          "handler": "김현기",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "10:20",
+          "store": "또바기감자탕",
+          "biz": "5765600275",
+          "handler": "김규빈",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "10:20",
+          "store": "엘씨오카페",
+          "biz": "7973901670",
+          "handler": "김규빈",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "10:15",
+          "store": "옥이네",
+          "biz": "8551402308",
+          "handler": "심성현",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ]
     }
   }
 };
