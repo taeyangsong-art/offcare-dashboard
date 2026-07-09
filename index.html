@@ -267,6 +267,14 @@
   .vd-note{margin-top:3px}
   .vd-content b,.vd-note b{font-size:10.5px; color:var(--gray); font-weight:800; margin-right:6px; letter-spacing:.02em}
   .vd-empty{color:var(--gray2)}
+  /* 저점율 행 (사용기간/VAN) */
+  .ratio-row{margin-bottom:13px}
+  .ratio-head{display:flex; justify-content:space-between; align-items:baseline; gap:8px; margin-bottom:5px}
+  .ratio-nm{font-size:14px; font-weight:700; color:var(--ink)}
+  .ratio-val b{font-size:17px; font-weight:800}
+  .ratio-sub{color:var(--gray2); font-size:12px; margin-left:6px}
+  .ratio-track{height:10px; background:var(--line-soft); border-radius:6px; overflow:hidden}
+  .ratio-fill{height:100%; border-radius:6px; transition:width .3s}
   .cnt-badge{display:inline-block; min-width:22px; text-align:center; background:var(--red-soft); color:var(--red);
     font-size:13px; font-weight:800; padding:1px 8px; border-radius:20px; margin-left:4px; vertical-align:middle}
   .cnt-badge.done{background:var(--green-soft); color:#166534}
@@ -1025,6 +1033,27 @@ function vocAlertRow(a){
   </tr>`;
 }
 const VOC_ALERT_HEAD=`<tr><th style="width:52px">시간</th><th style="min-width:110px">매장명</th><th style="width:76px">매장ID</th><th style="width:140px">업종</th><th class="num" style="width:92px">저점</th><th style="width:150px">저점이유</th><th style="min-width:180px">고객 원문</th><th style="min-width:160px">처리 내용</th><th style="width:108px">상태</th></tr>`;
+// 저점 alert 정규화(매장명·업종·사유·저점내용·해결내용·상태) — renderVoc/먼슬리 공용
+function vocStatCls(s){ return s==='처리완료'?'done':(s==='처리중'?'':'hold'); }
+function vocAlertInfo(alerts){
+  return (alerts||[]).map(a=>{ const ed=VOCEDIT[vocKey(a)]||{}; const st=ed.status||'처리중';
+    return { store:a.store||'-', storeId:a.storeId||'',
+      ind: ed.industry||a.indBucket||'미지정',
+      rea: ed.reasonCat||(a.reasons[0]&&a.reasons[0].cat)||VOC_REASONS[5],
+      content:(a.reasons||[]).map(r=>r.text).filter(Boolean).join(' / ')||'-',
+      note: ed.note||'', status:st, statCls:vocStatCls(st),
+      score:`${a.install!=null?'설치'+a.install:''}${a.install!=null&&a.nps!=null?'·':''}${a.nps!=null?'추천'+a.nps:''}` }; });
+}
+function vocGroupEntries(alerts, key){ const g={}; vocAlertInfo(alerts).forEach(x=>{(g[x[key]]=g[x[key]]||[]).push(x);}); return Object.entries(g).sort((a,b)=>b[1].length-a[1].length); }
+// 응답 대비 저점율 행 (예: 저점 6/21 = 29%)
+function ratioRow(name, low, total){
+  const pct = total? Math.round(low/total*100):0;
+  const sev = pct>=40?'#ff3b30':pct>=20?'#ff9500':'#34c759';
+  return `<div class="ratio-row">
+    <div class="ratio-head"><span class="ratio-nm">${escapeHtml(name)}</span><span class="ratio-val"><b style="color:${sev}">${pct}%</b><span class="ratio-sub">저점 ${low}/${total}</span></span></div>
+    <div class="ratio-track"><div class="ratio-fill" style="width:${total?low/total*100:0}%;background:${sev}"></div></div>
+  </div>`;
+}
 // 매장 상세 리스트 (매장명 · 저점내용 · 해결내용 · 상태)
 function storeDetailList(items){
   return `<div class="voc-detail-list">${items.map(s=>`
@@ -1056,17 +1085,8 @@ function renderVoc(){
   const v=aggVoc(viewDates);
   const lowTotal=v.install.low+v.nps.low;
 
-  // 저점 alert 정규화 (매장명·저점내용·해결내용·상태) + 업종/사유 그룹핑
-  const statClsOf=s=>s==='처리완료'?'done':(s==='처리중'?'':'hold');
-  const alertInfo=v.alerts.map(a=>{ const ed=VOCEDIT[vocKey(a)]||{}; const st=ed.status||'처리중';
-    return { store:a.store||'-', storeId:a.storeId||'',
-      ind: ed.industry||a.indBucket||'미지정',
-      rea: ed.reasonCat||(a.reasons[0]&&a.reasons[0].cat)||VOC_REASONS[5],
-      content:(a.reasons||[]).map(r=>r.text).filter(Boolean).join(' / ')||'-',
-      note: ed.note||'', status:st, statCls:statClsOf(st),
-      score:`${a.install!=null?'설치'+a.install:''}${a.install!=null&&a.nps!=null?'·':''}${a.nps!=null?'추천'+a.nps:''}` }; });
-  const groupBy=key=>{ const g={}; alertInfo.forEach(x=>{(g[x[key]]=g[x[key]]||[]).push(x);}); return Object.entries(g).sort((a,b)=>b[1].length-a[1].length); };
-  const indEntries=groupBy('ind'), reaEntries=groupBy('rea');
+  // 업종/사유 그룹핑 (드릴다운용)
+  const indEntries=vocGroupEntries(v.alerts,'ind'), reaEntries=vocGroupEntries(v.alerts,'rea');
   const indDMax=Math.max(1,...indEntries.map(e=>e[1].length)), reaDMax=Math.max(1,...reaEntries.map(e=>e[1].length));
 
   const isDone=a=>(VOCEDIT[vocKey(a)]||{}).status==='처리완료';
@@ -1189,6 +1209,8 @@ function renderVocMonthly(){
   const reaRows=Object.entries(byReason).sort((a,b)=>b[1]-a[1]);
   const indMax=Math.max(1,...indRows.map(r=>r[1]));
   const reaMax=Math.max(1,...reaRows.map(r=>r[1]));
+  const mIndEntries=vocGroupEntries(v.alerts,'ind'), mReaEntries=vocGroupEntries(v.alerts,'rea');
+  const mIndDMax=Math.max(1,...mIndEntries.map(e=>e[1].length)), mReaDMax=Math.max(1,...mReaEntries.map(e=>e[1].length));
   const lowRate=v.responses?Math.round(totalIn/v.responses*100):0;
   const byPraiseEmp={}; v.praises.forEach(p=>{ if(!praiseVisible(p)) return; const ov=VOCPRAISE[vocKey(p)]; const emp=(ov&&ov.emp)||p.emp; if(emp) byPraiseEmp[emp]=(byPraiseEmp[emp]||0)+1; });
   const vpCount=v.praises.filter(praiseVisible).length;
@@ -1267,10 +1289,10 @@ function renderVocMonthly(){
     </div>
 
     <div class="grid2">
-      <div class="card"><div class="card-head"><h3>📅 사용기간(차수)별</h3><span class="hint">응답 / 저점</span></div>
-        ${tenRows.length?tenRows.map(([n,o])=>barRow(n+` (저점 ${o.low})`,o.total,tenMax,'#5e5ce6')).join(''):'<div class="empty-note">데이터 없음</div>'}</div>
-      <div class="card"><div class="card-head"><h3>🏦 VAN사별</h3><span class="hint">응답 / 저점</span></div>
-        ${vanRows.length?vanRows.map(([n,o])=>barRow(n+` (저점 ${o.low})`,o.total,vanMax,'#00c7be')).join(''):'<div class="empty-note">데이터 없음</div>'}</div>
+      <div class="card"><div class="card-head"><h3>📅 사용기간(차수)별 저점율</h3><span class="hint">응답 대비 저점 비율</span></div>
+        ${tenRows.length?tenRows.map(([n,o])=>ratioRow(n,o.low,o.total)).join(''):'<div class="empty-note">데이터 없음</div>'}</div>
+      <div class="card"><div class="card-head"><h3>🏦 VAN사별 저점율</h3><span class="hint">응답 대비 저점 비율</span></div>
+        ${vanRows.length?vanRows.map(([n,o])=>ratioRow(n,o.low,o.total)).join(''):'<div class="empty-note">데이터 없음</div>'}</div>
     </div>
 
     <div class="grid2">
@@ -1281,10 +1303,10 @@ function renderVocMonthly(){
     </div>
 
     <div class="grid2">
-      <div class="card"><div class="card-head"><h3>업종별 인입</h3><span class="hint">총 ${totalIn}건</span></div>
-        ${indRows.length?indRows.map(([n,c])=>barRow(n,c,indMax,'#0071e3')).join(''):'<div class="empty-note">인입 없음 👍</div>'}</div>
-      <div class="card"><div class="card-head"><h3>인입 이유별</h3><span class="hint">저점 사유</span></div>
-        ${reaRows.length?reaRows.map(([n,c])=>barRow(n.split('(')[0],c,reaMax,'#ff3b30')).join(''):'<div class="empty-note">인입 없음 👍</div>'}</div>
+      <div class="card"><div class="card-head"><h3>🏭 업종별 인입</h3><span class="hint">업종 클릭 → 가장 많은 이유 + 매장 상세</span></div>
+        ${mIndEntries.length?vocGroupDrill(mIndEntries, mIndDMax, '#0071e3', true):'<div class="empty-note">인입 없음 👍</div>'}</div>
+      <div class="card"><div class="card-head"><h3>😟 인입 이유별</h3><span class="hint">사유 클릭 → 매장명·저점내용·해결내용</span></div>
+        ${mReaEntries.length?vocGroupDrill(mReaEntries, mReaDMax, '#ff3b30', false):'<div class="empty-note">인입 없음 👍</div>'}</div>
     </div>
     <div class="card"><div class="card-head"><h3>일별 인입 추이</h3><span class="hint">${mo+1}월</span></div>${vocDailyTrend(dates)}</div>
     <div class="card">
