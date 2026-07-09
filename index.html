@@ -650,11 +650,11 @@ function prevViewDates(){
   for(let i=len;i>=1;i--) out.push(ymd(addDays(start,-i)));   // 같은 길이의 직전 구간
   return out;
 }
-function prevLabel(){ return ({day:'전일',week:'전주',month:'전월',custom:'직전'})[viewMode]||'전일'; }
+function prevLabel(){ return ({day:'어제보다',week:'지난주보다',month:'지난달보다',custom:'직전보다'})[viewMode]||'어제보다'; }
 function deltaHTML(cur,prev){
   const diff=cur-prev, cls=diff>0?'up':diff<0?'down':'flat', arrow=diff>0?'▲':diff<0?'▼':'–';
   const pct=prev>0?Math.round(Math.abs(diff)/prev*100)+'%':(cur>0?'신규':'0%');
-  return `<div class="ov-delta ${cls}">${arrow} ${pct} <span>${prevLabel()} 대비</span></div>`;
+  return `<div class="ov-delta ${cls}">${arrow} ${pct} <span>${prevLabel()}</span></div>`;
 }
 
 // 직원별 그룹(묶음) 세로 막대차트 — 직원마다 카테고리별 막대를 분리 표시
