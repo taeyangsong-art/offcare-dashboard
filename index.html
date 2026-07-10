@@ -180,6 +180,14 @@
   .si-buy:hover{filter:brightness(1.1)}
   .si-buy.own{background:#e6eeff; color:#1a56db}
   .si-buy.on{background:var(--green,#16a34a); color:#fff; cursor:default}
+  .r-title{font-size:11px; font-weight:800; margin-right:4px}
+  .tr-legendary{background-size:200% auto; animation:titleShine 2.6s linear infinite}
+  @keyframes titleShine{to{background-position:-200% center}}
+  .preview-hint{font-size:12.5px; color:var(--gray2); margin:-8px 2px 16px; font-weight:600}
+  .game-me.previewing{outline:2px dashed #c8a2ff; outline-offset:2px}
+  .game-me.previewing::after{content:'👀 미리보기'; position:absolute; top:10px; right:14px; font-size:12px; font-weight:800; color:#8a3ffb}
+  .game-me{position:relative}
+  .shop-item{cursor:pointer}
   /* 리프레쉬 타임 */
   .rt-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:16px}
   .rt-slot{border:2px solid var(--line-soft); border-radius:18px; padding:20px 22px; background:var(--surface2); transition:.15s}
@@ -1007,7 +1015,7 @@ const GAME_ITEMS = {
     {id:'t_night',name:'심야의 수호자',price:50,rarity:'rare'},
     {id:'t_phoenix',name:'불사조',price:80,rarity:'epic'},
     {id:'t_master',name:'원격 마스터',price:110,rarity:'epic'},
-    {id:'t_god',name:'원격의 신',price:200,rarity:'legendary'},
+    {id:'t_god',name:'원격의 신',price:200,rarity:'legendary',grad:'linear-gradient(90deg,#e8820a,#ff5a8a,#c77dff,#4ea8ff,#e8820a)'},
   ],
   nametag: [
     {id:'n_none',name:'기본',price:0,rarity:'common'},
@@ -1036,8 +1044,23 @@ function partE(cat,id){ const it=itemById(cat,id); return it?(it.e||''):''; }
 function titleName(eq){ const t=itemById('title',(eq||{}).title); return t?t.name:''; }
 function nametagStyle(eq){ const n=itemById('nametag',(eq||{}).nametag); if(!n) return ''; if(n.grad) return `background:${n.grad};-webkit-background-clip:text;background-clip:text;color:transparent`; let s=''; if(n.color) s+=`color:${n.color};`; if(n.glow) s+=`text-shadow:0 0 8px ${n.glow};`; return s; }
 function avatarBig(eq){ eq=eq||{}; return `<div class="avatar-big">${partE('hat',eq.hat)?`<div class="ab-hat">${partE('hat',eq.hat)}</div>`:''}<div class="ab-face">${partE('face',eq.face)||'🙂'}</div><div class="ab-outfit">${partE('outfit',eq.outfit)||'👕'}</div>${partE('pet',eq.pet)?`<div class="ab-pet">${partE('pet',eq.pet)}</div>`:''}</div>`; }
+// 타이틀 등급별 폰트색·후광
+function titleStyleOf(t){ if(!t) return ''; if(t.grad) return `background:${t.grad};-webkit-background-clip:text;background-clip:text;color:transparent`; const map={common:'color:#6b7280',rare:'color:#1a73e8;text-shadow:0 0 6px rgba(26,115,232,.55)',epic:'color:#9c36b5;text-shadow:0 0 8px rgba(156,54,181,.6)',legendary:'color:#e8820a;text-shadow:0 0 10px rgba(232,130,10,.8)'}; return map[t.rarity]||map.common; }
+function titleStyle(eq){ return titleStyleOf(itemById('title',(eq||{}).title)); }
+// 내 캐릭터 카드 내부(미리보기 시 이 부분만 교체)
+function gameMeInner(emp, eq){ const t=itemById('title',(eq||{}).title);
+  return `${avatarBig(eq)}
+    <div class="gm-right">
+      ${t?`<div class="gm-title tr-${t.rarity}" style="${titleStyleOf(t)}">[${escapeHtml(t.name)}]</div>`:''}
+      <div class="gm-name" style="${nametagStyle(eq)}">${escapeHtml(emp)}</div>
+      <div class="gm-coins">🪙 <b>${empAvail(emp)}</b><span>보유 코인</span></div>
+      <div class="gm-sub">누적 처리 ${empHandled(emp)}건 · 총 획득 ${empCoins(emp)}코인 · 사용 ${gs(emp).spent||0}코인</div>
+    </div>`;
+}
+function previewEq(cat,id){ const emp=gameMe; if(!emp) return; const eq=Object.assign({},(gs(emp).equipped||{})); eq[cat]=id; const box=document.getElementById('gmBox'); if(box){ box.innerHTML=gameMeInner(emp,eq); box.classList.add('previewing'); } }
+function clearPreview(){ const emp=gameMe; if(!emp) return; const box=document.getElementById('gmBox'); if(box){ box.innerHTML=gameMeInner(emp,(gs(emp).equipped||{})); box.classList.remove('previewing'); } }
 // 랭킹 등 이름 표시(타이틀+얼굴+네임택 색)
-function rankNameHTML(emp){ const eq=(GAME[emp]||{}).equipped||{}; const f=partE('face',eq.face), tt=titleName(eq); return `${f?`<span class="r-face">${f}</span>`:''}${tt?`<span class="r-title">[${escapeHtml(tt)}]</span>`:''}<span style="${nametagStyle(eq)}">${escapeHtml(emp)}</span>`; }
+function rankNameHTML(emp){ const eq=(GAME[emp]||{}).equipped||{}; const f=partE('face',eq.face), t=itemById('title',eq.title); return `${f?`<span class="r-face">${f}</span>`:''}${t?`<span class="r-title tr-${t.rarity}" style="${titleStyleOf(t)}">[${escapeHtml(t.name)}]</span>`:''}<span style="${nametagStyle(eq)}">${escapeHtml(emp)}</span>`; }
 function saveGame(){ save(LS_GAME,GAME); if(GAME_API){ fetch(GAME_API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({game:GAME})}).catch(()=>{}); } }
 function loadGameCloud(cb){ if(!GAME_API){ if(cb)cb(); return; } fetch(GAME_API+'?t='+Date.now()).then(r=>r.json()).then(d=>{ if(d&&d.game) GAME=d.game; save(LS_GAME,GAME); if(cb)cb(); }).catch(()=>{ if(cb)cb(); }); }
 function setGameMe(v){ gameMe=v; save("opcare_gameme_v1",gameMe); renderGame(); }
@@ -1053,8 +1076,10 @@ function buyOrEquip(cat,id){
 function unequipPart(cat){ const emp=gameMe; if(!emp) return; const g=gs(emp); if(g.equipped) delete g.equipped[cat]; saveGame(); renderGame(); }
 function shopCard(cat,it,emp){
   const eq=(gs(emp).equipped||{})[cat]===it.id, owned=owns(emp,cat,it.id), r=it.rarity||'common';
-  const disp = it.e!==undefined ? (it.e||'✕') : (cat==='nametag'?`<span style="${nametagStyle({nametag:it.id})}">가나</span>`:`[${escapeHtml(it.name)}]`);
-  return `<div class="shop-item ${eq?'equipped':''}" style="--rar:${RARITY[r]}">
+  const disp = it.e!==undefined ? (it.e||'✕')
+    : (cat==='nametag' ? `<span style="${nametagStyle({nametag:it.id})}">가나</span>`
+    : `<span class="tr-${r}" style="${titleStyleOf(it)}">[${escapeHtml(it.name)}]</span>`);
+  return `<div class="shop-item ${eq?'equipped':''}" style="--rar:${RARITY[r]}" onmouseenter="previewEq('${cat}','${it.id}')" onmouseleave="clearPreview()">
     <div class="si-rar">${RARITY_KO[r]}</div>
     <div class="si-disp">${disp}</div>
     <div class="si-name">${escapeHtml(it.name)}</div>
@@ -1069,15 +1094,8 @@ function renderGame(){
   else{
     const emp=gameMe, g=gs(emp), eq=g.equipped||{};
     body=`
-    <div class="card game-me">
-      ${avatarBig(eq)}
-      <div class="gm-right">
-        ${titleName(eq)?`<div class="gm-title">[${escapeHtml(titleName(eq))}]</div>`:''}
-        <div class="gm-name" style="${nametagStyle(eq)}">${escapeHtml(emp)}</div>
-        <div class="gm-coins">🪙 <b>${empAvail(emp)}</b><span>보유 코인</span></div>
-        <div class="gm-sub">누적 처리 ${empHandled(emp)}건 · 총 획득 ${empCoins(emp)}코인 · 사용 ${g.spent||0}코인</div>
-      </div>
-    </div>
+    <div class="card game-me" id="gmBox">${gameMeInner(emp, eq)}</div>
+    <div class="preview-hint">💡 아이템에 마우스를 올리면 위 캐릭터에 <b>미리 입어보기</b> 돼요</div>
     ${shopSection('title','👑 타이틀',emp)}
     ${shopSection('nametag','🏷️ 네임택',emp)}
     <div class="grid2"><div style="grid-column:1/-1;font-weight:800;font-size:15px;color:var(--gray);padding:4px 2px">🧙 아바타 꾸미기</div></div>
