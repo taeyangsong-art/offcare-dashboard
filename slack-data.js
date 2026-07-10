@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 31,
+  "version": 32,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -879,12 +879,12 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-10": {
-      "updatedAt": "14:00",
+      "updatedAt": "14:13",
       "counts": {
         "as": {
-          "서상원": 9,
+          "서상원": 10,
           "심성현": 15,
-          "김동욱": 9,
+          "김동욱": 10,
           "김규빈": 12,
           "송태양": 4,
           "김현기": 12
@@ -902,7 +902,7 @@ window.SLACK_DATA = {
           "서상원": 1
         },
         "transfer": {
-          "송태양": 10
+          "송태양": 11
         },
         "menu": {
           "김규빈": 4
@@ -914,9 +914,9 @@ window.SLACK_DATA = {
       "pending": [
         {
           "time": "13:43",
-          "store": "용용선생 광주수완점",
-          "biz": "3260102789",
-          "handler": "서상원",
+          "store": "제이바이 끌림",
+          "biz": "7252602067",
+          "handler": "김동욱",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
@@ -953,21 +953,21 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "13:00",
-          "store": "샤인빔의원",
-          "biz": "2181505065",
-          "handler": "김동욱",
+          "time": "12:56",
+          "store": "명인카츠",
+          "biz": "5853301599",
+          "handler": "심성현",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
           ]
         },
         {
-          "time": "12:56",
-          "store": "명인카츠",
-          "biz": "5853301599",
-          "handler": "심성현",
-          "cat": "as",
+          "time": "12:30",
+          "store": "포아유 에스테틱 상암DMC점",
+          "biz": "",
+          "handler": "송태양",
+          "cat": "transfer",
           "reasons": [
             "확인 후 미완료"
           ]
@@ -994,13 +994,13 @@ window.SLACK_DATA = {
         }
       ],
       "voc": {
-        "responses": 3,
+        "responses": 4,
         "install": {
           "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 3,
+          "count": 4,
           "low": 1
         },
         "high": {
@@ -1009,6 +1009,7 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "5": 1,
+          "7": 1,
           "9": 1,
           "10": 1
         },
@@ -1019,6 +1020,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 1,
+            "low": 0
+          },
           "구매설치": {
             "total": 1,
             "low": 0
@@ -1033,6 +1038,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SMARTRO": {
+            "total": 1,
+            "low": 0
+          },
           "KIS": {
             "total": 1,
             "low": 0
