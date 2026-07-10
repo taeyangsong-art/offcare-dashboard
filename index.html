@@ -154,6 +154,32 @@
   .voc-snap{display:flex; gap:24px; flex-wrap:wrap}
   .snap-big{font-size:30px; font-weight:800; letter-spacing:-.03em; line-height:1.1; color:var(--ink); margin-top:3px}
   .voc-proc{font-weight:700; color:var(--green,#166534)}
+  /* 🎮 원격 상점 */
+  .r-face{margin-right:3px}
+  .r-title{font-size:11px; font-weight:800; color:#9c36b5; margin-right:4px}
+  .game-me{display:flex; align-items:center; gap:22px; background:linear-gradient(160deg,#f3f0ff,#fff)}
+  .avatar-big{position:relative; width:96px; height:96px; flex:0 0 auto; background:radial-gradient(circle at 50% 40%,#fff,#eef);
+    border:2px solid #e4dcff; border-radius:20px; display:flex; align-items:center; justify-content:center; font-size:48px}
+  .ab-hat{position:absolute; top:-6px; font-size:30px}
+  .ab-outfit{position:absolute; bottom:2px; font-size:24px}
+  .ab-pet{position:absolute; right:-8px; bottom:-6px; font-size:26px}
+  .gm-title{font-size:14px; font-weight:800; color:#9c36b5}
+  .gm-name{font-size:26px; font-weight:800; letter-spacing:-.02em; color:var(--ink)}
+  .gm-coins{font-size:20px; font-weight:700; margin-top:6px}
+  .gm-coins b{font-size:26px; color:#e8a020}
+  .gm-coins span{font-size:12px; color:var(--gray); font-weight:600; margin-left:5px}
+  .gm-sub{font-size:12.5px; color:var(--gray2); margin-top:4px}
+  .shop-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(120px,1fr)); gap:12px}
+  .shop-item{border:2px solid var(--rar); border-radius:14px; padding:12px 10px; text-align:center; background:var(--surface2); position:relative}
+  .shop-item.equipped{box-shadow:0 0 0 3px color-mix(in srgb,var(--rar) 30%,transparent)}
+  .si-rar{font-size:10px; font-weight:800; color:var(--rar); letter-spacing:.03em}
+  .si-disp{font-size:30px; line-height:1.1; margin:6px 0 4px; min-height:34px; display:flex; align-items:center; justify-content:center; font-weight:800}
+  .si-name{font-size:13px; font-weight:700; color:var(--ink); margin-bottom:9px}
+  .si-buy{width:100%; border:none; border-radius:9px; padding:8px; font-family:inherit; font-size:12.5px; font-weight:800; cursor:pointer;
+    background:var(--ink); color:#fff; transition:.15s}
+  .si-buy:hover{filter:brightness(1.1)}
+  .si-buy.own{background:#e6eeff; color:#1a56db}
+  .si-buy.on{background:var(--green,#16a34a); color:#fff; cursor:default}
   /* 리프레쉬 타임 */
   .rt-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:16px}
   .rt-slot{border:2px solid var(--line-soft); border-radius:18px; padding:20px 22px; background:var(--surface2); transition:.15s}
@@ -722,6 +748,7 @@ const CATEGORIES = [
   {key:"voc",        name:"VOC",    icon:"💬"},
   {key:"share",      name:"공유",    icon:"📢"},
   {key:"duty",       name:"당직근무", icon:"📅"},
+  {key:"game",       name:"원격 상점", icon:"🎮"},
 ];
 
 // 전체 현황에 집계할 업무 카테고리 (+ 외주). 색상은 스택 차트/범례용
@@ -964,7 +991,106 @@ function renderMain(){
   else if(activeCat==="share") renderShare();
   else if(activeCat==="voc") renderVoc();
   else if(activeCat==="voc-monthly") renderVocMonthly();
+  else if(activeCat==="game") renderGame();
   else renderStats();
+}
+
+/* ================= 🎮 원격 상점 (게임) ================= */
+const GAME_API = "";                 // ← Apps Script 웹앱 URL 넣으면 팀 공유(클라우드). 비우면 이 브라우저에만 저장
+const GAME_COIN_PER = 10;            // 원격 10건 = 🪙1코인
+const RARITY = {common:'#8a94a6', rare:'#1a73e8', epic:'#9c36b5', legendary:'#e8820a'};
+const RARITY_KO = {common:'일반', rare:'레어', epic:'에픽', legendary:'전설'};
+const GAME_ITEMS = {
+  title: [
+    {id:'t_novice',name:'견습 원격러',price:0,rarity:'common'},
+    {id:'t_hand',name:'번개손',price:30,rarity:'rare'},
+    {id:'t_night',name:'심야의 수호자',price:50,rarity:'rare'},
+    {id:'t_phoenix',name:'불사조',price:80,rarity:'epic'},
+    {id:'t_master',name:'원격 마스터',price:110,rarity:'epic'},
+    {id:'t_god',name:'원격의 신',price:200,rarity:'legendary'},
+  ],
+  nametag: [
+    {id:'n_none',name:'기본',price:0,rarity:'common'},
+    {id:'n_blue',name:'하늘',price:15,color:'#1a73e8',rarity:'common'},
+    {id:'n_pink',name:'핑크',price:15,color:'#ff5a8a',rarity:'common'},
+    {id:'n_green',name:'민트',price:15,color:'#0f9d58',rarity:'common'},
+    {id:'n_gold',name:'골드',price:45,color:'#d89000',rarity:'rare'},
+    {id:'n_fire',name:'불꽃',price:75,color:'#ff3b30',glow:'#ff6a3a',rarity:'epic'},
+    {id:'n_rainbow',name:'무지개',price:130,grad:'linear-gradient(90deg,#ff5a8a,#ffb84e,#4ea8ff,#7ee081)',rarity:'legendary'},
+  ],
+  hat: [{id:'h_none',name:'없음',price:0,e:'',rarity:'common'},{id:'h_cap',name:'캡',price:10,e:'🧢',rarity:'common'},{id:'h_wizard',name:'마법사',price:40,e:'🧙',rarity:'rare'},{id:'h_crown',name:'왕관',price:70,e:'👑',rarity:'epic'},{id:'h_halo',name:'천사링',price:90,e:'😇',rarity:'legendary'}],
+  face: [{id:'f_smile',name:'기본',price:0,e:'😀',rarity:'common'},{id:'f_cool',name:'쿨',price:10,e:'😎',rarity:'common'},{id:'f_robot',name:'로봇',price:30,e:'🤖',rarity:'rare'},{id:'f_star',name:'별눈',price:45,e:'🤩',rarity:'epic'},{id:'f_devil',name:'악마',price:55,e:'😈',rarity:'epic'}],
+  outfit: [{id:'o_none',name:'기본',price:0,e:'👕',rarity:'common'},{id:'o_suit',name:'정장',price:25,e:'🤵',rarity:'common'},{id:'o_ninja',name:'닌자',price:50,e:'🥷',rarity:'rare'},{id:'o_hero',name:'히어로',price:80,e:'🦸',rarity:'epic'},{id:'o_king',name:'왕',price:120,e:'🫅',rarity:'legendary'}],
+  pet: [{id:'p_none',name:'없음',price:0,e:'',rarity:'common'},{id:'p_cat',name:'고양이',price:20,e:'🐱',rarity:'common'},{id:'p_dog',name:'강아지',price:20,e:'🐶',rarity:'common'},{id:'p_unicorn',name:'유니콘',price:100,e:'🦄',rarity:'epic'},{id:'p_dragon',name:'드래곤',price:150,e:'🐉',rarity:'legendary'}],
+};
+const LS_GAME = "opcare_game_v1";
+let GAME = load(LS_GAME, {});         // { emp: {spent, owned:[], equipped:{}} }
+let gameMe = load("opcare_gameme_v1", "");
+function gs(emp){ if(!GAME[emp]) GAME[emp]={spent:0,owned:[],equipped:{}}; return GAME[emp]; }
+function itemById(cat,id){ return (GAME_ITEMS[cat]||[]).find(x=>x.id===id); }
+function empHandled(emp){ let t=0; for(const cat in COUNTS){ for(const d in COUNTS[cat]){ t+=COUNTS[cat][d][emp]||0; } } return t; }
+function empCoins(emp){ return Math.floor(empHandled(emp)/GAME_COIN_PER); }
+function empAvail(emp){ return empCoins(emp)-(gs(emp).spent||0); }
+function owns(emp,cat,id){ const it=itemById(cat,id); if(it&&it.price===0) return true; return (gs(emp).owned||[]).includes(cat+':'+id); }
+function partE(cat,id){ const it=itemById(cat,id); return it?(it.e||''):''; }
+function titleName(eq){ const t=itemById('title',(eq||{}).title); return t?t.name:''; }
+function nametagStyle(eq){ const n=itemById('nametag',(eq||{}).nametag); if(!n) return ''; if(n.grad) return `background:${n.grad};-webkit-background-clip:text;background-clip:text;color:transparent`; let s=''; if(n.color) s+=`color:${n.color};`; if(n.glow) s+=`text-shadow:0 0 8px ${n.glow};`; return s; }
+function avatarBig(eq){ eq=eq||{}; return `<div class="avatar-big">${partE('hat',eq.hat)?`<div class="ab-hat">${partE('hat',eq.hat)}</div>`:''}<div class="ab-face">${partE('face',eq.face)||'🙂'}</div><div class="ab-outfit">${partE('outfit',eq.outfit)||'👕'}</div>${partE('pet',eq.pet)?`<div class="ab-pet">${partE('pet',eq.pet)}</div>`:''}</div>`; }
+// 랭킹 등 이름 표시(타이틀+얼굴+네임택 색)
+function rankNameHTML(emp){ const eq=(GAME[emp]||{}).equipped||{}; const f=partE('face',eq.face), tt=titleName(eq); return `${f?`<span class="r-face">${f}</span>`:''}${tt?`<span class="r-title">[${escapeHtml(tt)}]</span>`:''}<span style="${nametagStyle(eq)}">${escapeHtml(emp)}</span>`; }
+function saveGame(){ save(LS_GAME,GAME); if(GAME_API){ fetch(GAME_API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({game:GAME})}).catch(()=>{}); } }
+function loadGameCloud(cb){ if(!GAME_API){ if(cb)cb(); return; } fetch(GAME_API+'?t='+Date.now()).then(r=>r.json()).then(d=>{ if(d&&d.game) GAME=d.game; save(LS_GAME,GAME); if(cb)cb(); }).catch(()=>{ if(cb)cb(); }); }
+function setGameMe(v){ gameMe=v; save("opcare_gameme_v1",gameMe); renderGame(); }
+function buyOrEquip(cat,id){
+  const emp=gameMe; if(!emp){ alert('먼저 상단에서 본인 이름을 선택하세요 🙂'); return; }
+  const it=itemById(cat,id); if(!it) return; const g=gs(emp);
+  if(!owns(emp,cat,id)){
+    if(empAvail(emp)<it.price){ alert('🪙 코인이 부족해요!\n원격을 더 처리하면 코인이 쌓여요 (10건 = 1코인)'); return; }
+    g.spent=(g.spent||0)+it.price; g.owned=g.owned||[]; g.owned.push(cat+':'+id);
+  }
+  g.equipped=g.equipped||{}; g.equipped[cat]=id; saveGame(); renderGame();
+}
+function unequipPart(cat){ const emp=gameMe; if(!emp) return; const g=gs(emp); if(g.equipped) delete g.equipped[cat]; saveGame(); renderGame(); }
+function shopCard(cat,it,emp){
+  const eq=(gs(emp).equipped||{})[cat]===it.id, owned=owns(emp,cat,it.id), r=it.rarity||'common';
+  const disp = it.e!==undefined ? (it.e||'✕') : (cat==='nametag'?`<span style="${nametagStyle({nametag:it.id})}">가나</span>`:`[${escapeHtml(it.name)}]`);
+  return `<div class="shop-item ${eq?'equipped':''}" style="--rar:${RARITY[r]}">
+    <div class="si-rar">${RARITY_KO[r]}</div>
+    <div class="si-disp">${disp}</div>
+    <div class="si-name">${escapeHtml(it.name)}</div>
+    <button class="si-buy ${eq?'on':owned?'own':''}" onclick="buyOrEquip('${cat}','${it.id}')">${eq?'✓ 착용중':owned?'착용하기':(it.price===0?'착용':'🪙 '+it.price)}</button>
+  </div>`;
+}
+function shopSection(cat,label,emp){ const canoff=['hat','face','outfit','pet'].includes(cat); return `<div class="card"><div class="card-head"><h3>${label}</h3>${canoff?`<button class="btn" onclick="unequipPart('${cat}')">해제</button>`:''}</div><div class="shop-grid">${GAME_ITEMS[cat].map(it=>shopCard(cat,it,emp)).join('')}</div></div>`; }
+function renderGame(){
+  const opts=EMPLOYEES.map(e=>`<option ${e===gameMe?'selected':''}>${e}</option>`).join('');
+  let body;
+  if(!gameMe){ body=`<div class="card"><div class="empty-note">상단에서 <b>본인 이름</b>을 선택하면 상점이 열려요 🎮</div></div>`; }
+  else{
+    const emp=gameMe, g=gs(emp), eq=g.equipped||{};
+    body=`
+    <div class="card game-me">
+      ${avatarBig(eq)}
+      <div class="gm-right">
+        ${titleName(eq)?`<div class="gm-title">[${escapeHtml(titleName(eq))}]</div>`:''}
+        <div class="gm-name" style="${nametagStyle(eq)}">${escapeHtml(emp)}</div>
+        <div class="gm-coins">🪙 <b>${empAvail(emp)}</b><span>보유 코인</span></div>
+        <div class="gm-sub">누적 처리 ${empHandled(emp)}건 · 총 획득 ${empCoins(emp)}코인 · 사용 ${g.spent||0}코인</div>
+      </div>
+    </div>
+    ${shopSection('title','👑 타이틀',emp)}
+    ${shopSection('nametag','🏷️ 네임택',emp)}
+    <div class="grid2"><div style="grid-column:1/-1;font-weight:800;font-size:15px;color:var(--gray);padding:4px 2px">🧙 아바타 꾸미기</div></div>
+    ${shopSection('hat','🎩 모자',emp)}
+    ${shopSection('face','😀 얼굴',emp)}
+    ${shopSection('outfit','👕 의상',emp)}
+    ${shopSection('pet','🐾 펫',emp)}`;
+  }
+  document.getElementById("main").innerHTML=`
+    <div class="page-head"><div><h2>🎮 원격 상점</h2><div class="sub">원격 <b>10건 = 🪙1코인</b> · 코인으로 타이틀·네임택·아바타를 획득!${GAME_API?'':' · <b style="color:var(--red)">(현재 이 브라우저에만 저장 — 팀 공유 세팅 필요)</b>'}</div></div>
+      <div class="controls"><select class="sel" onchange="setGameMe(this.value)"><option value="">👤 본인 선택</option>${opts}</select></div>
+    </div>
+    ${body}`;
 }
 
 /* ================= Overview (전체 현황) ================= */
@@ -1072,7 +1198,7 @@ function renderOverview(){
 
     <div class="grid2">
       <div class="card light-rank"><div class="card-head"><h3>😇 직원 랭킹 <span class="rank-sub">🍭 천국의 명단</span></h3><span class="hint">${viewLabel} 처리량 TOP</span></div>
-        <div class="rank-row">${empRows.slice(0,5).map((r,i)=>`<div class="rank-item light ${i<3?'top':''}"${i<3?` style="animation-delay:${(i*0.4).toFixed(2)}s"`:''}><div class="rank-medal">${['👑','😇','🍭','🍬','⭐'][i]||'⭐'}</div><div class="rank-name">${r.emp}</div><div class="rank-val">${r.total}건</div></div>`).join('')}</div>
+        <div class="rank-row">${empRows.slice(0,5).map((r,i)=>`<div class="rank-item light ${i<3?'top':''}"${i<3?` style="animation-delay:${(i*0.4).toFixed(2)}s"`:''}><div class="rank-medal">${['👑','😇','🍭','🍬','⭐'][i]||'⭐'}</div><div class="rank-name">${rankNameHTML(r.emp)}</div><div class="rank-val">${r.total}건</div></div>`).join('')}</div>
       </div>
       <div class="card dark-rank"><div class="card-head"><h3>⚡ 누락 랭킹 <span class="rank-sub">💀 어둠의 명단</span></h3><span class="hint">미처리·확인필요 담당</span></div>
         <div class="rank-row">${missRows.length?missRows.map((r,i)=>`<div class="rank-item dark ${i===0?'worst':''}"><div class="rank-medal">${['💀','☠️','⚰️','🦇','👻'][i]||'🕸️'}</div><div class="rank-name">${escapeHtml(r[0])}</div><div class="rank-val">${r[1]}건 누락</div></div>`).join(''):'<div class="empty-note" style="color:#b8a8d8">누락 없음 — 평화롭습니다 🕊️</div>'}</div>
@@ -2304,6 +2430,7 @@ function boot(){
   applySlackData();
   checkRefreshWeek();                                     // 새 주면 리프레쉬 타임 초기화
   renderNav(); renderMain(); checkAuth();
+  loadGameCloud(function(){ if(activeCat==='game'||activeCat==='overview') renderMain(); });   // 게임 데이터 팀 공유 로드
   startAutoRefresh();
   checkDutyAlert(); setInterval(checkDutyAlert, 60000);   // 회의 30분 전 당번 알림
   setInterval(checkRefreshWeek, 300000);                 // 탭 오래 켜둬도 월요일 넘어가면 초기화
