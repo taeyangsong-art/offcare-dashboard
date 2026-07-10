@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 68,
+  "version": 69,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -847,10 +847,10 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-10": {
-      "updatedAt": "21:30",
+      "updatedAt": "21:42",
       "counts": {
         "as": {
-          "최민석": 12,
+          "최민석": 13,
           "김기범": 4,
           "서상원": 24,
           "김동욱": 19,
@@ -897,14 +897,14 @@ window.SLACK_DATA = {
         }
       ],
       "voc": {
-        "responses": 27,
+        "responses": 28,
         "install": {
           "count": 6,
           "low": 1
         },
         "nps": {
-          "count": 27,
-          "low": 10
+          "count": 28,
+          "low": 11
         },
         "high": {
           "install": 4,
@@ -912,6 +912,7 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "0": 3,
+          "1": 1,
           "2": 1,
           "3": 2,
           "4": 1,
@@ -933,6 +934,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 2,
+            "low": 1
+          },
           "3개월": {
             "total": 11,
             "low": 3
@@ -948,13 +953,13 @@ window.SLACK_DATA = {
           "1개월": {
             "total": 4,
             "low": 3
-          },
-          "12개월": {
-            "total": 1,
-            "low": 0
           }
         },
         "byVan": {
+          "NICE": {
+            "total": 5,
+            "low": 2
+          },
           "KPN": {
             "total": 2,
             "low": 0
@@ -966,10 +971,6 @@ window.SLACK_DATA = {
           "KIS": {
             "total": 10,
             "low": 3
-          },
-          "NICE": {
-            "total": 4,
-            "low": 1
           },
           "SMARTRO": {
             "total": 2,
@@ -985,13 +986,31 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "사용중 오류가 자주 발생함": 2,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 5,
           "필요한 기능이 없거나 몰라서 불편": 1,
           "고객센터 연락이 매우 힘듦": 2,
-          "사용중 오류가 자주 발생함": 1,
           "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "21:31",
+            "store": "문그로우",
+            "storeId": "209437",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "최근 부쩍 피크시간때 안됨이슈",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": ""
+          },
           {
             "time": "17:21",
             "store": "나의다짐",
