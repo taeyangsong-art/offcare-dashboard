@@ -179,6 +179,17 @@
   .kpi .val small{font-size:15px; font-weight:600; color:var(--gray2); margin-left:3px}
   .kpi .delta{font-size:12.5px; margin-top:8px; font-weight:600}
   .kpi .delta.up{color:var(--green)} .kpi .delta.down{color:var(--red)} .kpi .delta.flat{color:var(--gray2)}
+  /* 컬러 KPI (VOC·먼슬리 상단) */
+  .kpi.k-blue{background:linear-gradient(160deg,#eef4ff,#fbfdff); border-left:5px solid #1a73e8}
+  .kpi.k-blue .val{color:#1a56db}
+  .kpi.k-amber{background:linear-gradient(160deg,#fff6e4,#fffdf6); border-left:5px solid #ff9500}
+  .kpi.k-amber .val{color:#c77800}
+  .kpi.k-coral{background:linear-gradient(160deg,#ffeef1,#fff8f9); border-left:5px solid #ff5a5f}
+  .kpi.k-coral .val{color:#e0315a}
+  .kpi.k-red{background:linear-gradient(160deg,#ffe8e8,#fff6f6); border-left:5px solid #ff3b30}
+  .kpi.k-red .val{color:#d92d20}
+  .kpi.k-teal{background:linear-gradient(160deg,#e3f8f5,#f5fffd); border-left:5px solid #0aa5b1}
+  .kpi.k-teal .val{color:#0a8a94}
 
   /* card */
   .card{background:var(--canvas); border-radius:var(--radius); padding:24px; box-shadow:var(--shadow);
@@ -771,7 +782,6 @@ function viewLabelOf(){ return {day:'일별',week:'주별',month:'월별',custom
 function periodControls(){
   const seg=`<div class="seg">
     <button class="${viewMode==='day'?'on':''}"    onclick="setView('day')">일별</button>
-    <button class="${viewMode==='week'?'on':''}"   onclick="setView('week')">주별</button>
     <button class="${viewMode==='month'?'on':''}"  onclick="setView('month')">월별</button>
     <button class="${viewMode==='custom'?'on':''}" onclick="setView('custom')">기간</button>
   </div>`;
@@ -780,7 +790,7 @@ function periodControls(){
        <span style="color:var(--gray);font-weight:600">~</span>
        <input type="date" value="${rangeEnd}" onchange="setRangeEnd(this.value)">`
     : `<input type="date" value="${selDate}" onchange="setDate(this.value)">
-       <button class="btn" onclick="setDate('${ymd(today())}')">오늘</button>`;
+       <button class="btn${isYesterday()?' primary':''}" onclick="setYesterday()">어제</button>`;
   const quick=`<button class="btn${isQuickRange(7)?' primary':''}" onclick="setQuickRange(7)">최근 7일</button>
     <button class="btn${isQuickRange(30)?' primary':''}" onclick="setQuickRange(30)">최근 30일</button>`;
   return seg+picker+quick;
@@ -853,7 +863,7 @@ function renderNav(){
     return btn;
   }).join("");
 }
-function selectCat(k){ if(k==='overview') resetOverviewPeriod(); activeCat=k; renderNav(); renderMain(); window.scrollTo(0,0); }
+function selectCat(k){ if(k==='overview') resetOverviewPeriod(); if(k==='voc') resetVocPeriod(); activeCat=k; renderNav(); renderMain(); window.scrollTo(0,0); }
 
 /* ================= Main dispatch ================= */
 function renderMain(){
@@ -1134,16 +1144,16 @@ function distColumnChart(dist, maxScore, colorFn){
   return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}"><line x1="${padL-4}" y1="${base}" x2="${W-padR+4}" y2="${base}" stroke="#d2d2d7"/>${bars}</svg></div>`;
 }
 // 전월 대비 타일 (higherBad=true면 증가가 나쁨→빨강)
-function momTile(label,cur,prev,higherBad,suffix){
+function momTile(label,cur,prev,higherBad,suffix,tone){
   const diff=cur-prev, good=higherBad?diff<0:diff>0, cls=diff===0?'flat':(good?'up':'down'), arrow=diff>0?'▲':diff<0?'▼':'–';
   const pct=prev?Math.round(Math.abs(diff)/Math.abs(prev)*100)+'%':(cur?'신규':'0%');
-  return `<div class="kpi"><div class="lab">${label}</div><div class="val">${cur}${suffix||'<small>건</small>'}</div>
+  return `<div class="kpi ${tone||''}"><div class="lab">${label}</div><div class="val">${cur}${suffix||'<small>건</small>'}</div>
     <div class="delta ${cls}">${arrow} ${pct} <span style="color:var(--gray2);font-weight:500">전월 ${prev}</span></div></div>`;
 }
 function progressBar(pct,color){ return `<div class="prog"><div class="prog-fill" style="width:${Math.min(100,pct)}%;background:${color}"></div></div>`; }
 function quoteCard(text, meta, tone){ return `<div class="quote-card ${tone}"><div class="quote-text">“${escapeHtml((text||'-').slice(0,160))}”</div><div class="quote-meta">${escapeHtml(meta||'')}</div></div>`; }
-function vocKpi(lab,val,denom){
-  return `<div class="kpi"><div class="lab">${lab}</div><div class="val">${val}<small>건</small></div>
+function vocKpi(lab,val,denom,tone){
+  return `<div class="kpi ${tone||''}"><div class="lab">${lab}</div><div class="val">${val}<small>건</small></div>
     <div class="delta flat">${denom!=null?`응답 ${denom}건 중`:'&nbsp;'}</div></div>`;
 }
 function barRow(name,val,max,color){
@@ -1257,10 +1267,10 @@ function renderVoc(){
     </div>
 
     <div class="kpis">
-      ${vocKpi('총 응답', v.responses)}
-      ${vocKpi('구매설치 저점(≤2)', v.install.low, v.install.count)}
-      ${vocKpi('추천의향 저점(≤5)', v.nps.low, v.nps.count)}
-      ${vocKpi('저점 합계', lowTotal)}
+      ${vocKpi('총 응답', v.responses, null, 'k-blue')}
+      ${vocKpi('구매설치 저점(≤2)', v.install.low, v.install.count, 'k-amber')}
+      ${vocKpi('추천의향 저점(≤5)', v.nps.low, v.nps.count, 'k-coral')}
+      ${vocKpi('저점 합계', lowTotal, null, 'k-red')}
     </div>
 
     <div class="grid2">
@@ -1404,10 +1414,10 @@ function renderVocMonthly(){
     <div class="card">
       <div class="card-head"><h3>📈 전월 대비</h3><span class="hint">${y}.${String(mo).padStart(2,'0')||12} 대비</span></div>
       <div class="kpis" style="margin:0">
-        ${momTile('총 응답', v.responses, pv.responses, false)}
-        ${momTile('총 인입(저점)', totalIn, pvIn, true)}
-        ${momTile('저점률', lowRate, pvRate, true, '<small>%</small>')}
-        ${momTile('NPS', ns.nps, vocNpsStats(pv.npsDist).nps, false, '')}
+        ${momTile('총 응답', v.responses, pv.responses, false, undefined, 'k-blue')}
+        ${momTile('총 인입(저점)', totalIn, pvIn, true, undefined, 'k-amber')}
+        ${momTile('저점률', lowRate, pvRate, true, '<small>%</small>', 'k-coral')}
+        ${momTile('NPS', ns.nps, vocNpsStats(pv.npsDist).nps, false, '', 'k-teal')}
       </div>
     </div>
 
@@ -1765,6 +1775,9 @@ function trendChart(cat, mode, ref){
 /* ================= Handlers (stats) ================= */
 function setView(m){ viewMode=m; renderMain(); }
 function setDate(v){ selDate=v; renderMain(); }
+function setYesterday(){ viewMode='day'; selDate=ymd(addDays(today(),-1)); renderMain(); }
+function isYesterday(){ return viewMode==='day' && selDate===ymd(addDays(today(),-1)); }
+function resetVocPeriod(){ viewMode='day'; selDate=ymd(today()); }
 function onInput(emp, val){ setCount(activeCat, selDate, emp, Math.max(0, parseInt(val)||0)); renderStats(); }
 
 /* ================= Duty page ================= */
