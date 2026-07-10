@@ -120,14 +120,14 @@ function tallyInto(msgs, ch, counts, pending) {
       const who = doer || '미지정';
       counts.extern = counts.extern || {};
       counts.extern[who] = (counts.extern[who] || 0) + 1; externCount++;
-    } else if (hasAbsent) {                  // 1차/2차 부재 → 완료(처리)에서 제외, 확인필요로 남김
-      pending.push({ time, store, biz, handler: doer || '미지정', cat: ch.forceCat || emojiCat || ch.defaultCat, reasons: [absTag] });
-    } else if (emp) {                        // 완료 → 카테고리 집계 (전용채널은 forceCat)
+    } else if (emp || emojiCat) {            // 완료담당자(원격OOO) 또는 카테고리 이모지(AS/온보딩/명의변경 등) → 처리(완료). 부재가 찍혀 있어도 처리로 인정
       const catKey = ch.forceCat || emojiCat || ch.defaultCat;
+      const who = emp || confirmPerson || '미지정';
       counts[catKey] = counts[catKey] || {};
-      counts[catKey][emp] = (counts[catKey][emp] || 0) + 1; completed++;
-    } else if (confirmPerson && !emojiCat && !hasExtern) {
-      // 확인만 되고 완료·분류가 안 된 건 → 확인필요
+      counts[catKey][who] = (counts[catKey][who] || 0) + 1; completed++;
+    } else if (hasAbsent) {                  // 완료·카테고리 이모지 없이 '부재만' → 확인필요(처리 제외)
+      pending.push({ time, store, biz, handler: doer || '미지정', cat: ch.forceCat || ch.defaultCat, reasons: [absTag] });
+    } else if (confirmPerson) {              // 확인만 → 확인필요
       pending.push({ time, store, biz, handler: confirmPerson, cat: ch.forceCat || ch.defaultCat, reasons: ['확인 후 미완료'] });
     }
   }
