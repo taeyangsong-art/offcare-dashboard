@@ -410,7 +410,12 @@
   .dr-row.next{border-color:#ffd8a8; background:#fff8ef}
   .dr-when{flex:0 0 auto; font-size:13px; font-weight:700; color:var(--gray); min-width:80px}
   .dr-title{flex:1; font-size:14px; font-weight:600; color:var(--ink); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
-  .dr-person{flex:0 0 auto; font-size:13.5px; font-weight:800; color:#b45309; background:#fff3d6; padding:3px 12px; border-radius:20px}
+  .dr-person{flex:0 0 auto; display:inline-flex; align-items:center; gap:4px; font-size:13.5px; font-weight:800; color:#b45309; background:#fff3d6; padding:2px 6px 2px 10px; border-radius:20px}
+  .dr-sel{border:none; background:transparent; font-family:inherit; font-size:13.5px; font-weight:800; color:#b45309; cursor:pointer; padding:1px 2px; border-radius:6px}
+  .dr-sel:hover{background:rgba(180,83,9,.12)}
+  .dr-sel:focus{outline:none}
+  .dr-reset{border:none; background:transparent; color:#b45309; cursor:pointer; font-size:13px; font-weight:800; padding:0 3px; opacity:.7}
+  .dr-reset:hover{opacity:1}
   /* 30분 전 당번 팝업 */
   .duty-pop-overlay{position:fixed; inset:0; background:rgba(15,15,15,.55); backdrop-filter:blur(3px); display:flex; align-items:center; justify-content:center; z-index:9999; animation:dutyfade .2s ease}
   @keyframes dutyfade{from{opacity:0}to{opacity:1}}
@@ -721,6 +726,10 @@ const LS_VOCEDIT = "opcare_vocedit_v1";
 let COUNTS = load(LS_COUNT, {});   // { cat: { "YYYY-MM-DD": { emp: n } } }
 let DUTY   = load(LS_DUTY, {});    // { "YYYY-MM-DD": { day, aft, nit } }
 let SHARE  = load(LS_SHARE, {});   // { "YYYY-MM-DD": [ {id, emp, type, title, time} ] }
+const LS_DUTYOVER = "opcare_dutyover_v1";
+let DUTYOVER = load(LS_DUTYOVER, {});   // { "date|time|title": "직원명" } — 회의 원격당번 수동 지정
+function saveDutyOverride(key, name){ if(name) DUTYOVER[key]=name; else delete DUTYOVER[key]; save(LS_DUTYOVER, DUTYOVER); renderShare(); }
+function dutyPersonAt(key, mapVal){ return DUTYOVER[key] || mapVal || ''; }
 let VOCEDIT= load(LS_VOCEDIT, {}); // { "date|storeId|time": { industry, reasonCat, note } } — VOC 수기 보정
 const LS_VOCCOMMENT = "opcare_voccomment_v1";
 let VOCCOMMENT = load(LS_VOCCOMMENT, {}); // { "YYYY-MM": "먼슬리 코멘트" }
@@ -1879,8 +1888,8 @@ function renderShare(){
   for(let d=1;d<=lastDate;d++) cells.push(d);
   const dows=["일","월","화","수","목","금","토"];
   const todayStr=ymd(today());
-  const dmap=dutyMap();   // 회의별 원격 당번
-  const dutyUpcoming=meetingDutyList().filter(mm=>mm.date>=todayStr).slice(0,4).map(mm=>({...mm, person:dmap[mm.date+"|"+mm.time+"|"+mm.title]}));
+  const dmap=dutyMap();   // 회의별 원격 당번(순번 자동)
+  const dutyUpcoming=meetingDutyList().filter(mm=>mm.date>=todayStr).slice(0,4).map(mm=>{ const k=mm.date+"|"+mm.time+"|"+mm.title; return {...mm, key:k, person:dutyPersonAt(k, dmap[k])}; });
 
   // 이번 달 요약 카운트
   const monthPrefix = `${y}-${String(m+1).padStart(2,'0')}`;
@@ -1903,7 +1912,7 @@ function renderShare(){
     }).join("");
     // 구글 캘린더 회의(읽기 전용) + 원격 근무 당번 표시
     const gchips = gcalDay(ds).map(g=>{
-      const who=dmap[ds+"|"+(g.time||"")+"|"+g.title];
+      const gk=ds+"|"+(g.time||"")+"|"+g.title; const who=dutyPersonAt(gk, dmap[gk]);
       const tt=`${g.title}${g.time?' · '+g.time:''}${who?' · 원격 당번: '+who:''} — 구글 캘린더(읽기 전용)`;
       return `<div class="ev-chip gcal ${who?'duty':''}" title="${escapeHtml(tt)}">
         <span class="ev-gtag">G</span>
@@ -1959,8 +1968,8 @@ function renderShare(){
     ${dutyUpcoming.length?`<div class="card duty-remote-card">
       <div class="card-head"><h3>🏠 회의 중 원격 근무 당번</h3><span class="hint">정기회의·타운홀 순번</span>
         <button class="btn" style="margin-left:auto" onclick="enableDutyNotif()">🔔 알림 켜기</button></div>
-      <div class="dr-list">${dutyUpcoming.map((mm,i)=>`<div class="dr-row ${i===0?'next':''}"><span class="dr-when">${fmtShort(mm.date)}${mm.time?' '+escapeHtml(mm.time.split('~')[0]):''}</span><span class="dr-title">${escapeHtml(mm.title)}</span><span class="dr-person">🏠 ${escapeHtml(mm.person||'-')}</span></div>`).join('')}</div>
-      <div class="note" style="font-size:12px;color:var(--gray2);margin-top:10px">순번: ${DUTY_ORDER.join(' → ')} · 회의 <b>30분 전 팝업</b>으로 알려드려요(대시보드 탭이 열려 있을 때)</div>
+      <div class="dr-list">${dutyUpcoming.map((mm,i)=>`<div class="dr-row ${i===0?'next':''}"><span class="dr-when">${fmtShort(mm.date)}${mm.time?' '+escapeHtml(mm.time.split('~')[0]):''}</span><span class="dr-title">${escapeHtml(mm.title)}</span><span class="dr-person">🏠 <select class="dr-sel" onchange="saveDutyOverride('${mm.key}', this.value)">${EMPLOYEES.map(e=>`<option ${e===mm.person?'selected':''}>${e}</option>`).join('')}</select>${DUTYOVER[mm.key]?`<button class="dr-reset" title="순번 자동으로 되돌리기" onclick="saveDutyOverride('${mm.key}','')">↺</button>`:''}</span></div>`).join('')}</div>
+      <div class="note" style="font-size:12px;color:var(--gray2);margin-top:10px">순번: ${DUTY_ORDER.join(' → ')} · 이름을 바꾸면 <b>달력에도 반영</b> · ↺ = 순번 자동 · 회의 <b>30분 전 팝업</b> 알림(탭 열려 있을 때)</div>
     </div>`:''}
   `;
 }
