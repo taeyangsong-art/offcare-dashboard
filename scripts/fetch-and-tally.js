@@ -108,7 +108,8 @@ function tallyInto(msgs, ch, counts, pending) {
     let emp = null;
     for (const n of names) { const pm = n.match(/^원격(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)$/); if (pm) { emp = personMap[pm[1]]; break; } }
     let emojiCat = null;
-    for (const n of names) { if (catMap[n]) { emojiCat = catMap[n]; break; } }
+    for (const n of names) { if (catMap[n] && catMap[n] !== 'voc') { emojiCat = catMap[n]; break; } }  // 원격voc는 업무 카테고리로 안 씀(설문 VOC로 별도 집계)
+    const hasVocTag = names.includes('원격voc');
     const hasExtern = names.includes('원격외주');
     let confirmPerson = null;
     for (const n of names) { const cm = n.match(/^(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)(_확인.*)?$/); if (cm) { confirmPerson = personMap[cm[1]]; break; } }
@@ -118,6 +119,7 @@ function tallyInto(msgs, ch, counts, pending) {
     const doer = emp || confirmPerson;
 
     if (hasDup) { dup++; continue; }         // 중복 이모지 → 집계 제외 (재처리는 중복 표시 없으니 별개 건으로 정상 집계됨)
+    if (hasVocTag && !emojiCat && !ch.forceCat) { continue; }   // 원격voc만 찍힌 순수 VOC 참조 → 업무 집계 제외(설문 VOC로만 관리)
 
     if (hasExtern && doer) {                 // 외주 → 별도 집계
       const who = doer || '미지정';
