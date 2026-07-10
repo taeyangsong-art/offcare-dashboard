@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 37,
+  "version": 38,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -880,53 +880,54 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-10": {
-      "updatedAt": "15:00",
+      "updatedAt": "15:15",
       "counts": {
+        "as": {
+          "서상원": 14,
+          "심성현": 23,
+          "김현기": 17,
+          "김동욱": 14,
+          "송태양": 6,
+          "김규빈": 13
+        },
         "extern": {
-          "김동욱": 2,
-          "서상원": 2
+          "서상원": 4,
+          "김동욱": 2
         },
         "onboarding": {
+          "심성현": 3,
           "김동욱": 3,
-          "심성현": 2,
           "송태양": 3,
           "김현기": 2,
           "김규빈": 3,
           "서상원": 1
         },
-        "as": {
-          "김동욱": 13,
-          "김현기": 16,
-          "서상원": 13,
-          "심성현": 21,
-          "김규빈": 13,
-          "송태양": 5
-        },
         "transfer": {
-          "송태양": 14
+          "송태양": 15
         },
         "menu": {
-          "김규빈": 7
+          "김규빈": 9
         },
         "delivery": {
+          "최민석": 1,
           "서상원": 3
         }
       },
       "pending": [
         {
-          "time": "14:26",
-          "store": "크리아트티앤디미술교습소",
-          "biz": "6579601905",
+          "time": "15:00",
+          "store": "마린코스트충남",
+          "biz": "",
           "handler": "송태양",
-          "cat": "as",
+          "cat": "transfer",
           "reasons": [
-            "확인 후 미완료"
+            "1차 부재"
           ]
         },
         {
-          "time": "14:24",
-          "store": "주식회사 에스앤피(S&amp;P Co., Ltd.)",
-          "biz": "2948803861",
+          "time": "14:34",
+          "store": "폴라리스 심리상담연구소",
+          "biz": "3101017125",
           "handler": "심성현",
           "cat": "as",
           "reasons": [
@@ -934,13 +935,23 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "14:20",
-          "store": "탐휘트니스 헬스&amp;PT 길음점(문화비)",
-          "biz": "6450303534",
-          "handler": "송태양",
-          "cat": "transfer",
+          "time": "14:34",
+          "store": "아트톡미술학원",
+          "biz": "6429601413",
+          "handler": "김현기",
+          "cat": "as",
           "reasons": [
-            "2차 부재"
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "14:30",
+          "store": "교연수학",
+          "biz": "3999201675",
+          "handler": "심성현",
+          "cat": "as",
+          "reasons": [
+            "1차 부재"
           ]
         },
         {
@@ -950,7 +961,7 @@ window.SLACK_DATA = {
           "handler": "송태양",
           "cat": "as",
           "reasons": [
-            "1차 부재"
+            "2차 부재"
           ]
         },
         {
@@ -975,24 +986,26 @@ window.SLACK_DATA = {
         }
       ],
       "voc": {
-        "responses": 4,
+        "responses": 9,
         "install": {
           "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 4,
-          "low": 1
+          "count": 9,
+          "low": 3
         },
         "high": {
           "install": 1,
-          "nps": 1
+          "nps": 2
         },
         "npsDist": {
-          "5": 1,
+          "0": 1,
+          "5": 2,
           "7": 1,
-          "9": 1,
-          "10": 1
+          "8": 1,
+          "9": 2,
+          "10": 2
         },
         "installDist": {
           "5": 1
@@ -1002,8 +1015,8 @@ window.SLACK_DATA = {
         },
         "byTenure": {
           "3개월": {
-            "total": 1,
-            "low": 0
+            "total": 6,
+            "low": 2
           },
           "구매설치": {
             "total": 1,
@@ -1019,6 +1032,14 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SECTA9": {
+            "total": 4,
+            "low": 2
+          },
+          "NICE": {
+            "total": 1,
+            "low": 0
+          },
           "SMARTRO": {
             "total": 1,
             "low": 0
@@ -1037,9 +1058,46 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
-          "단말기 설치나 초기 과정이 어려움": 1
+          "단말기 설치나 초기 과정이 어려움": 2,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
         },
         "alerts": [
+          {
+            "time": "15:14",
+            "store": "해잇박스",
+            "storeId": "431971",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "처음엔 계약해야하니까 담당자 연결이 빠르고 친절했는데, 사용하다 문의사항이 발생하면 답변받는데까지 시간이 오래 소요됨 토스결제시스템으로 다 맞추고싶어서, 무선단말기 문의를 했더니 구매후에 문의하라고해서 말이야 방구야. 라는 생각이 듦. 무선단말기 처음 쓰는데 문의도 못해보고 냅다 구매하고 문의를 해야하는 시스템이 맞는건가 싶음. 약정이 끝나면 네이버로 갈아 탈 예정",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": ""
+          },
+          {
+            "time": "15:14",
+            "store": "모래내책방",
+            "storeId": "436806",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "토스프론트 카메라가 바코드를 잘 인식하지 못해서 셀프결제 어려움",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": ""
+          },
           {
             "time": "08:01",
             "store": "도림",
@@ -1060,6 +1118,17 @@ window.SLACK_DATA = {
           }
         ],
         "praises": [
+          {
+            "time": "15:13",
+            "store": "우드바우어의밤",
+            "storeId": "434738",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 9,
+            "text": "좋아요 가끔 오류가있어서 9점이요",
+            "byReaction": false
+          },
           {
             "time": "07:36",
             "store": "네일멜로(Nail Mello)",
