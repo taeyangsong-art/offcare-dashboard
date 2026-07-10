@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 41,
+  "version": 42,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -880,31 +880,32 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-10": {
-      "updatedAt": "16:00",
+      "updatedAt": "16:15",
       "counts": {
         "as": {
           "김현기": 19,
           "서상원": 17,
+          "최민석": 1,
+          "심성현": 25,
           "송태양": 8,
-          "심성현": 24,
           "김동욱": 14,
           "김규빈": 13
+        },
+        "onboarding": {
+          "김현기": 5,
+          "심성현": 5,
+          "최민석": 2,
+          "김규빈": 4,
+          "김동욱": 3,
+          "송태양": 3,
+          "서상원": 1
         },
         "extern": {
           "서상원": 4,
           "김동욱": 2
         },
-        "onboarding": {
-          "심성현": 5,
-          "최민석": 2,
-          "김규빈": 4,
-          "김현기": 4,
-          "김동욱": 3,
-          "송태양": 3,
-          "서상원": 1
-        },
         "transfer": {
-          "송태양": 16
+          "송태양": 17
         },
         "menu": {
           "김규빈": 10
@@ -916,21 +917,21 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "15:51",
-          "store": "틈새라면 송파법조단지점",
-          "biz": "5112202494",
-          "handler": "송태양",
-          "cat": "transfer",
+          "time": "16:09",
+          "store": "스시 이지언",
+          "biz": "6180269901",
+          "handler": "김동욱",
+          "cat": "as",
           "reasons": [
             "확인 후 미완료"
           ]
         },
         {
-          "time": "15:37",
-          "store": "드롭탑(홍대점)",
-          "biz": "2490700638",
-          "handler": "심성현",
-          "cat": "as",
+          "time": "16:00",
+          "store": "오자뷰티샵",
+          "biz": "",
+          "handler": "송태양",
+          "cat": "transfer",
           "reasons": [
             "확인 후 미완료"
           ]
@@ -953,6 +954,16 @@ window.SLACK_DATA = {
           "cat": "as",
           "reasons": [
             "1차 부재"
+          ]
+        },
+        {
+          "time": "15:15",
+          "store": "쿠아이",
+          "biz": "7253102076",
+          "handler": "미지정",
+          "cat": "as",
+          "reasons": [
+            "2차 부재"
           ]
         },
         {
@@ -1017,13 +1028,13 @@ window.SLACK_DATA = {
         }
       ],
       "voc": {
-        "responses": 20,
+        "responses": 21,
         "install": {
           "count": 4,
           "low": 0
         },
         "nps": {
-          "count": 20,
+          "count": 21,
           "low": 7
         },
         "high": {
@@ -1036,7 +1047,7 @@ window.SLACK_DATA = {
           "5": 3,
           "6": 1,
           "7": 1,
-          "8": 2,
+          "8": 3,
           "9": 3,
           "10": 6
         },
@@ -1050,6 +1061,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 2,
+            "low": 0
+          },
           "3개월": {
             "total": 10,
             "low": 3
@@ -1065,13 +1080,13 @@ window.SLACK_DATA = {
           "구매설치": {
             "total": 4,
             "low": 1
-          },
-          "6개월": {
-            "total": 1,
-            "low": 0
           }
         },
         "byVan": {
+          "NICE": {
+            "total": 2,
+            "low": 0
+          },
           "KIS": {
             "total": 8,
             "low": 2
@@ -1095,10 +1110,6 @@ window.SLACK_DATA = {
           "SECTA9": {
             "total": 4,
             "low": 2
-          },
-          "NICE": {
-            "total": 1,
-            "low": 0
           }
         },
         "reasonCounts": {
@@ -1236,6 +1247,17 @@ window.SLACK_DATA = {
           }
         ],
         "praises": [
+          {
+            "time": "16:09",
+            "store": "명량꽈배기",
+            "storeId": "329806",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 8,
+            "text": "장사를시작 했는데 카드기만 사용하다가 아들이 토스를 추천하고 구입해서 설치가지 해줬어요  손님이 많아 바쁠때도 혼자 장사를 할수있어요 다른 분들한테 추천했어요 편리하다고 ㅎㅎ",
+            "byReaction": false
+          },
           {
             "time": "15:44",
             "store": "금석",
