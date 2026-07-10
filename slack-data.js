@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 47,
+  "version": 48,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -880,13 +880,13 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-10": {
-      "updatedAt": "17:29",
+      "updatedAt": "17:45",
       "counts": {
         "as": {
-          "김규빈": 16,
+          "서상원": 20,
+          "김규빈": 17,
+          "김현기": 27,
           "송태양": 10,
-          "김현기": 26,
-          "서상원": 19,
           "김동욱": 17,
           "심성현": 33,
           "최민석": 3
@@ -908,7 +908,7 @@ window.SLACK_DATA = {
           "송태양": 19
         },
         "menu": {
-          "김규빈": 14
+          "김규빈": 16
         },
         "delivery": {
           "최민석": 3,
@@ -917,10 +917,30 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "17:16",
-          "store": "오에라",
-          "biz": "7822501889",
+          "time": "17:18",
+          "store": "오카에시",
+          "biz": "7620403383",
           "handler": "김현기",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "17:18",
+          "store": "파나픽셀",
+          "biz": "3512701980",
+          "handler": "송태양",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "17:15",
+          "store": "푸롯츠",
+          "biz": "5671102676",
+          "handler": "김동욱",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
@@ -933,7 +953,7 @@ window.SLACK_DATA = {
           "handler": "김동욱",
           "cat": "as",
           "reasons": [
-            "확인 후 미완료"
+            "1차 부재"
           ]
         },
         {
@@ -944,56 +964,6 @@ window.SLACK_DATA = {
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "16:45",
-          "store": "명품수제찹쌀꽈배기",
-          "biz": "5866200818",
-          "handler": "김규빈",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "15:15",
-          "store": "쿠아이",
-          "biz": "7253102076",
-          "handler": "미지정",
-          "cat": "as",
-          "reasons": [
-            "2차 부재"
-          ]
-        },
-        {
-          "time": "15:00",
-          "store": "개나리옥 무뚜기설렁탕",
-          "biz": "6220879680",
-          "handler": "김현기",
-          "cat": "as",
-          "reasons": [
-            "2차 부재"
-          ]
-        },
-        {
-          "time": "14:19",
-          "store": "그루브 필라테스",
-          "biz": "7841003287",
-          "handler": "송태양",
-          "cat": "as",
-          "reasons": [
-            "2차 부재"
-          ]
-        },
-        {
-          "time": "11:00",
-          "store": "콩알2",
-          "biz": "5277300232",
-          "handler": "김규빈",
-          "cat": "as",
-          "reasons": [
-            "2차 부재"
           ]
         }
       ],
