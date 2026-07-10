@@ -124,6 +124,7 @@
   .rank-val{font-size:13px; color:var(--gray); margin-top:2px; font-weight:600}
   .voc-snap{display:flex; gap:24px; flex-wrap:wrap}
   .snap-big{font-size:30px; font-weight:800; letter-spacing:-.03em; line-height:1.1; color:var(--ink); margin-top:3px}
+  .voc-proc{font-size:13px; font-weight:700; color:var(--green,#166534); margin-top:2px}
   /* live 갱신 표시 */
   .live-dot{display:inline-block; width:9px; height:9px; border-radius:50%; background:var(--green);
     margin-left:6px; vertical-align:middle; animation:livePulse 1.8s ease-in-out infinite}
@@ -893,10 +894,13 @@ function renderOverview(){
   const prevDates = ovPrevDates();
   const workCatTotals = WORK_CATS.map(c=>({...c, total:sumRange(c.key, viewDates), prev:sumRange(c.key, prevDates)}));
   const workGrand = workCatTotals.reduce((a,c)=>a+c.total,0);
-  const vocTot = aggVoc(viewDates).alerts.length, vocPrevN = aggVoc(prevDates).alerts.length;
-  const catTotals = [...workCatTotals, {key:'voc', name:'VOC', icon:'💬', color:'#ff2d55', total:vocTot, prev:vocPrevN}];
-  const grand = catTotals.reduce((a,c)=>a+c.total,0);
-  const grandPrev = catTotals.reduce((a,c)=>a+c.prev,0);
+  const workGrandPrev = workCatTotals.reduce((a,c)=>a+c.prev,0);
+  const vAlerts = aggVoc(viewDates).alerts, vAlertsPrev = aggVoc(prevDates).alerts;
+  const vocTot = vAlerts.length, vocPrevN = vAlertsPrev.length;                                  // VOC 인입(저점)
+  const vocAttr = vAlerts.filter(a=>a.emp).length, vocAttrPrev = vAlertsPrev.filter(a=>a.emp).length;  // VOC 처리(담당자 지정된 것)
+  const catTotals = [...workCatTotals, {key:'voc', name:'VOC', icon:'💬', color:'#ff2d55', total:vocTot, prev:vocPrevN, proc:vocAttr}];
+  const grand = workGrand + vocAttr;              // 총 처리 = 업무 처리 + VOC 처리(담당자 지정)
+  const grandPrev = workGrandPrev + vocAttrPrev;
   const pendCarry=(function(){ const t=ymd(today()), yd=ymd(addDays(today(),-1)), mm={}; [yd,t].forEach(ds=>((slackDay(ds)||{}).pending||[]).forEach(p=>{ mm[(p.store||'')+'|'+(p.biz||'')+'|'+(p.time||'')]=1; })); return Object.keys(mm).length; })();
 
   // VOC 저점을 확인 담당자(emp) 기준으로 직원별 집계
@@ -961,7 +965,9 @@ function renderOverview(){
       ${catTotals.map(c=>`
         <div class="ov-tile" style="--c:${c.color}">
           <div class="ov-name"><span class="ov-ic">${c.icon}</span>${c.name}</div>
-          <div class="ov-val">${c.total}<small>건</small></div>
+          ${c.key==='voc'
+            ? `<div class="ov-val">${c.total}<small>건 인입</small></div><div class="voc-proc">처리 ${c.proc}건</div>`
+            : `<div class="ov-val">${c.total}<small>건</small></div>`}
           ${deltaHTML(c.total, c.prev)}
         </div>`).join("")}
       <div class="ov-tile pend" style="--c:#ff9500">
@@ -974,7 +980,7 @@ function renderOverview(){
     <div class="grid2">
       <div class="card"><div class="card-head"><h3>📈 처리 추이</h3><span class="hint">최근 7일 (오늘 강조)</span></div>${overviewTrend(trendDates)}</div>
       <div class="card"><div class="card-head"><h3>🍩 카테고리 구성</h3><span class="hint">${viewLabel} · 비중</span></div>
-        ${donutChart(catTotals.filter(c=>c.total>0).map(c=>[c.name,c.total,c.color]))}</div>
+        ${donutChart(catTotals.map(c=>[c.name,(c.key==='voc'?c.proc:c.total),c.color]).filter(e=>e[1]>0))}</div>
     </div>
 
     ${overviewPendingCard()}
@@ -1010,7 +1016,7 @@ function renderOverview(){
               <td class="num tot">${r.total+r.vc}</td>
             </tr>`).join("")}
           </tbody>
-          <tfoot><tr><td>합계</td>${workCatTotals.map(c=>`<td class="num">${c.total}</td>`).join("")}<td class="num">${vocTot}</td><td class="num tot">${grand}</td></tr></tfoot>
+          <tfoot><tr><td>합계</td>${workCatTotals.map(c=>`<td class="num">${c.total}</td>`).join("")}<td class="num">${vocAttr}</td><td class="num tot">${grand}</td></tr></tfoot>
         </table>
       </div>
     </div>
