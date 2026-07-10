@@ -81,12 +81,22 @@
   .nav-div{height:1px; background:var(--line-soft); margin:8px 12px}
 
   /* Overview 헤드라인/알림/근무/랭킹 */
-  .headline{display:flex; align-items:stretch; gap:8px; flex-wrap:wrap}
-  .hl-item{flex:1; min-width:140px; display:flex; flex-direction:column; justify-content:center; gap:3px}
-  .hl-sep{width:1px; background:var(--line-soft); align-self:stretch}
-  .hl-lab{font-size:13px; font-weight:600; color:var(--gray)}
-  .hl-big{font-size:32px; font-weight:800; letter-spacing:-.03em; line-height:1.1; color:var(--ink)}
+  .headline{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-bottom:24px}
+  .hl-card{border-radius:20px; padding:18px 20px; border:1.5px solid transparent; position:relative; overflow:hidden; transition:transform .15s}
+  .hl-card:hover{transform:translateY(-2px)}
+  .hl-card.blue{background:linear-gradient(155deg,#e9f2ff,#f6faff); border-color:#d5e6ff}
+  .hl-card.gold{background:linear-gradient(155deg,#fff5db,#fffdf4); border-color:#ffe6a8}
+  .hl-card.mint{background:linear-gradient(155deg,#e4faef,#f4fffa); border-color:#c3efd7}
+  .hl-ic{font-size:26px; line-height:1; margin-bottom:8px}
+  .hl-lab{font-size:13px; font-weight:700; color:var(--gray)}
+  .hl-big{font-size:33px; font-weight:800; letter-spacing:-.03em; line-height:1.12; margin-top:2px; color:var(--ink)}
   .hl-big small{font-size:14px; font-weight:600; color:var(--gray2); margin-left:2px}
+  .hl-card.blue .hl-big{color:#1a56db}
+  .hl-card.gold .hl-big{color:#c77800}
+  .hl-card.mint .hl-big{color:#0f9d58}
+  .hl-card .ov-delta{margin-top:7px; font-size:12.5px; font-weight:700}
+  .hl-card .ov-delta.up{color:var(--green)} .hl-card .ov-delta.down{color:var(--red)} .hl-card .ov-delta.flat{color:var(--gray2)}
+  .hl-card .ov-delta span{color:var(--gray2); font-weight:500}
   .alert-list{display:flex; flex-direction:column; gap:8px}
   .alert-item{display:flex; align-items:center; justify-content:space-between; padding:11px 14px;
     background:var(--red-soft); border-radius:11px; font-size:14px; font-weight:600; color:var(--ink)}
@@ -135,6 +145,10 @@
   .ov-tile.grand .ov-val{color:#fff}
   .ov-tile.grand .ov-val small{color:rgba(255,255,255,.85)}
   .ov-tile.grand .ov-delta,.ov-tile.grand .ov-delta span{color:rgba(255,255,255,.92)}
+  .ov-tile.pend{background:linear-gradient(135deg,#fff0df,#fff8f1); border-left-color:#ff9500}
+  .ov-tile.pend .ov-name{color:#b45309}
+  .ov-tile.pend .ov-val{color:#e8590c}
+  .ov-tile.pend .ov-delta,.ov-tile.pend .ov-delta span{color:#c2703a}
 
   table.matrix{width:100%; border-collapse:collapse; font-size:14px; min-width:640px}
   table.matrix th{background:var(--surface); color:var(--steel,#6b7280); font-weight:700; font-size:12px;
@@ -497,6 +511,7 @@
     .main{padding:22px 18px 48px}
     .kpis{grid-template-columns:repeat(2,1fr)}
     .ov-tiles{grid-template-columns:repeat(2,1fr)}
+    .headline{grid-template-columns:1fr}
     .grid2{grid-template-columns:1fr}
     .cal-grid{gap:4px}
     .daycell{min-height:auto; padding:6px}
@@ -863,6 +878,7 @@ function renderOverview(){
   const catTotals = [...workCatTotals, {key:'voc', name:'VOC', icon:'💬', color:'#ff2d55', total:vocTot, prev:vocPrevN}];
   const grand = catTotals.reduce((a,c)=>a+c.total,0);
   const grandPrev = catTotals.reduce((a,c)=>a+c.prev,0);
+  const pendCarry=(function(){ const t=ymd(today()), yd=ymd(addDays(today(),-1)), mm={}; [yd,t].forEach(ds=>((slackDay(ds)||{}).pending||[]).forEach(p=>{ mm[(p.store||'')+'|'+(p.biz||'')+'|'+(p.time||'')]=1; })); return Object.keys(mm).length; })();
 
   const empRows = EMPLOYEES.map(e=>{
     const cells = WORK_CATS.map(c=>sumRange(c.key, viewDates, e));
@@ -898,21 +914,22 @@ function renderOverview(){
       <div class="controls">${overviewControls()}</div>
     </div>
 
-    <div class="card headline">
-      <div class="hl-item">
+    <div class="headline">
+      <div class="hl-card blue">
+        <div class="hl-ic">📦</div>
         <div class="hl-lab">${periodWord} 총 처리</div>
         <div class="hl-big">${grand}<small>건</small></div>
         ${deltaHTML(grand, grandPrev)}
       </div>
-      <div class="hl-sep"></div>
-      <div class="hl-item">
-        <div class="hl-lab">🏆 ${periodWord} MVP</div>
-        <div class="hl-big">${mvp?mvp.emp:'-'}</div>
+      <div class="hl-card gold">
+        <div class="hl-ic">🏆</div>
+        <div class="hl-lab">${periodWord} MVP</div>
+        <div class="hl-big">${mvp?escapeHtml(mvp.emp):'-'}</div>
         <div class="ov-delta flat"><span>${mvp?mvp.total+'건 처리':'데이터 없음'}</span></div>
       </div>
-      <div class="hl-sep"></div>
-      <div class="hl-item">
-        <div class="hl-lab">📅 오늘 연차·휴가</div>
+      <div class="hl-card mint">
+        <div class="hl-ic">🌴</div>
+        <div class="hl-lab">오늘 연차·휴가</div>
         <div class="hl-big">${leaveToday.length}<small>명</small></div>
         <div class="ov-delta flat"><span>${leaveToday.length?leaveHTML:'없음'}</span></div>
       </div>
@@ -925,10 +942,10 @@ function renderOverview(){
           <div class="ov-val">${c.total}<small>건</small></div>
           ${deltaHTML(c.total, c.prev)}
         </div>`).join("")}
-      <div class="ov-tile grand">
-        <div class="ov-name">Σ 전체 합계</div>
-        <div class="ov-val">${grand}<small>건</small></div>
-        ${deltaHTML(grand, grandPrev)}
+      <div class="ov-tile pend" style="--c:#ff9500">
+        <div class="ov-name"><span class="ov-ic">🔎</span>부재·미처리</div>
+        <div class="ov-val">${pendCarry}<small>건</small></div>
+        <div class="ov-delta flat"><span>어제~오늘 이월 · 확인필요</span></div>
       </div>
     </div>
 
