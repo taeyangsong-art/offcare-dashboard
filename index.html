@@ -282,6 +282,8 @@
   .ratio-sub{color:var(--gray2); font-size:12px; margin-left:6px}
   .ratio-track{height:10px; background:var(--line-soft); border-radius:6px; overflow:hidden}
   .ratio-fill{height:100%; border-radius:6px; transition:width .3s}
+  .day-badge{display:inline-block; font-size:11px; font-weight:800; padding:2px 8px; border-radius:20px; background:var(--surface2); color:var(--gray); white-space:nowrap}
+  .day-badge.today{background:var(--blue-soft); color:var(--blue)}
   .cnt-badge{display:inline-block; min-width:22px; text-align:center; background:var(--red-soft); color:var(--red);
     font-size:13px; font-weight:800; padding:1px 8px; border-radius:20px; margin-left:4px; vertical-align:middle}
   .cnt-badge.done{background:var(--green-soft); color:#166534}
@@ -1630,15 +1632,20 @@ function filterPending(q){
 
 // 전체현황용 — 오늘 전 카테고리 미처리·확인필요 통합 (유형 컬럼 + 검색)
 function overviewPendingCard(){
-  const day=slackDay(ymd(today()));
-  const list=(day&&day.pending)||[];
-  const head=`<div class="card-head"><h3>🔎 미처리 · 확인필요 <span class="cnt-badge">${list.length}</span></h3><span class="hint">오늘${day&&day.updatedAt?` (${day.updatedAt} 갱신)`:''} · 상호/사업자 검색</span></div>`;
+  const t=ymd(today()), yd=ymd(addDays(today(),-1));
+  const collect=ds=>((slackDay(ds)||{}).pending||[]).map(p=>({...p, _date:ds}));
+  const merged={}; [...collect(yd), ...collect(t)].forEach(p=>{ merged[(p.store||'')+'|'+(p.biz||'')+'|'+(p.time||'')]=p; });
+  const list=Object.values(merged);
+  const upd=(slackDay(t)||{}).updatedAt;
+  const head=`<div class="card-head"><h3>🔎 미처리 · 확인필요 <span class="cnt-badge">${list.length}</span></h3><span class="hint">어제~오늘 이월${upd?` (${upd} 갱신)`:''} · 상호/사업자 검색</span></div>`;
   if(!list.length) return `<div class="card">${head}<div class="empty-note">지금 챙길 미처리·확인필요 건이 없습니다 ✅</div></div>`;
-  const rows=list.slice().sort((a,b)=>(b.time||'').localeCompare(a.time||'')).map(p=>{
+  const rows=list.slice().sort((a,b)=>((b._date||'')+(b.time||'')).localeCompare((a._date||'')+(a.time||''))).map(p=>{
     const c=WORK_CATS.find(w=>w.key===(p.cat||'as'))||{name:p.cat||'AS',color:'#8e8e93'};
-    const tags=p.reasons.map(r=>`<span class="status-tag ${/부재/.test(r)?'absent':'unassigned'}">${r}</span>`).join(" ");
+    const tags=p.reasons.map(r=>`<span class="status-tag ${/부재/.test(r)?'absent':'unassigned'}">${escapeHtml(r)}</span>`).join(" ");
+    const dayBadge=p._date===t?`<span class="day-badge today">오늘</span>`:`<span class="day-badge">어제</span>`;
     const searchKey=((p.store||'')+" "+(p.biz||'')).toLowerCase();
     return `<tr data-key="${searchKey}">
+      <td>${dayBadge}</td>
       <td><span class="cat-chip" style="background:${hexA(c.color,.12)};color:${c.color}">${c.name}</span></td>
       <td class="trow-time">${p.time}</td>
       <td class="emp-name">${escapeHtml(p.store||'')}</td>
@@ -1649,10 +1656,10 @@ function overviewPendingCard(){
   }).join("");
   return `<div class="card">${head}
     <p class="note" style="margin:-6px 0 14px;font-size:13px;color:var(--gray)">
-      <b>확인(OOO_확인)</b>만 되고 아직 <b>완료(원격OOO)</b>가 안 된 건입니다. (<b>2차부재</b> 제외) 담당자는 확인한 사람으로 표기됩니다.</p>
+      <b>완료(원격OOO)</b>가 안 됐거나 <b>1·2차 부재</b>가 찍힌 건입니다. <b>부재 건은 처리(완료)에서 제외</b>되고, 미처리는 <b>다음날까지 이월</b>됩니다.</p>
     <input class="search-box" type="text" placeholder="상호명 또는 사업자번호 검색…" oninput="filterOvPending(this.value)">
     <div style="overflow-x:auto"><table style="margin-top:12px">
-      <thead><tr><th style="width:96px">유형</th><th style="width:56px">시간</th><th>상호</th><th style="width:126px">사업자번호</th><th>상태</th><th style="width:72px">담당</th></tr></thead>
+      <thead><tr><th style="width:48px">일자</th><th style="width:92px">유형</th><th style="width:52px">시간</th><th>상호</th><th style="width:122px">사업자번호</th><th>상태</th><th style="width:70px">담당</th></tr></thead>
       <tbody id="ovPendBody">${rows}</tbody>
     </table></div>
     <div id="ovPendEmpty" class="note" style="display:none;text-align:center;color:var(--gray2);padding:20px 0">검색 결과가 없습니다.</div>

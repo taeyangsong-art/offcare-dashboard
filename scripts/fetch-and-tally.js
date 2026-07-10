@@ -112,19 +112,22 @@ function tallyInto(msgs, ch, counts, pending) {
     const hasExtern = names.includes('원격외주');
     let confirmPerson = null;
     for (const n of names) { const cm = n.match(/^(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)(_확인.*)?$/); if (cm) { confirmPerson = personMap[cm[1]]; break; } }
-    const has2ndAbsent = names.some(n => /2차.?부재/.test(n));
+    const hasAbsent = names.some(n => /부재/.test(n));                       // 1차/2차 부재
+    const absTag = names.some(n => /2차.?부재/.test(n)) ? '2차 부재' : '1차 부재';
     const doer = emp || confirmPerson;
 
     if (hasExtern && doer) {                 // 외주 → 별도 집계
       const who = doer || '미지정';
       counts.extern = counts.extern || {};
       counts.extern[who] = (counts.extern[who] || 0) + 1; externCount++;
+    } else if (hasAbsent) {                  // 1차/2차 부재 → 완료(처리)에서 제외, 확인필요로 남김
+      pending.push({ time, store, biz, handler: doer || '미지정', cat: ch.forceCat || emojiCat || ch.defaultCat, reasons: [absTag] });
     } else if (emp) {                        // 완료 → 카테고리 집계 (전용채널은 forceCat)
       const catKey = ch.forceCat || emojiCat || ch.defaultCat;
       counts[catKey] = counts[catKey] || {};
       counts[catKey][emp] = (counts[catKey][emp] || 0) + 1; completed++;
-    } else if (confirmPerson && !emojiCat && !hasExtern && !has2ndAbsent) {
-      // 확인만 되고 완료·분류·2차부재가 아닌 건 → 확인필요 (카테고리 태그 부여)
+    } else if (confirmPerson && !emojiCat && !hasExtern) {
+      // 확인만 되고 완료·분류가 안 된 건 → 확인필요
       pending.push({ time, store, biz, handler: confirmPerson, cat: ch.forceCat || ch.defaultCat, reasons: ['확인 후 미완료'] });
     }
   }
