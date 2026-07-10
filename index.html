@@ -1891,10 +1891,10 @@ function renderShare(){
   const dmap=dutyMap();   // 회의별 원격 당번(순번 자동)
   const dutyUpcoming=meetingDutyList().filter(mm=>mm.date>=todayStr).slice(0,4).map(mm=>{ const k=mm.date+"|"+mm.time+"|"+mm.title; return {...mm, key:k, person:dutyPersonAt(k, dmap[k])}; });
 
-  // 이번 달 요약 카운트
-  const monthPrefix = `${y}-${String(m+1).padStart(2,'0')}`;
+  // 이번 주 요약 카운트 (오늘이 속한 주)
+  const weekStart = startOfWeek(today());
   const summary = {};
-  Object.keys(SHARE).forEach(ds=>{ if(ds.startsWith(monthPrefix)) SHARE[ds].forEach(e=>{ summary[e.type]=(summary[e.type]||0)+1; }); });
+  for(let i=0;i<7;i++){ const ds=ymd(addDays(weekStart,i)); (SHARE[ds]||[]).forEach(e=>{ summary[e.type]=(summary[e.type]||0)+1; }); }
 
   const dayCells = cells.map(d=>{
     if(d===null) return `<div class="daycell share empty"></div>`;
@@ -1976,7 +1976,7 @@ function renderShare(){
 function shareKpi(type, n, labelOverride){
   const t=typeMeta(type);
   return `<div class="kpi">
-    <div class="lab"><span class="ev-dot" style="background:${t.color};margin-right:6px"></span>${labelOverride||t.label} (이번달)</div>
+    <div class="lab"><span class="ev-dot" style="background:${t.color};margin-right:6px"></span>${labelOverride||t.label} (이번주)</div>
     <div class="val">${n}<small>건</small></div>
     <div class="delta flat">공유된 일정</div>
   </div>`;
