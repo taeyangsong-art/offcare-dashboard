@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 72,
+  "version": 73,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -847,10 +847,10 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-10": {
-      "updatedAt": "22:15",
+      "updatedAt": "22:41",
       "counts": {
         "as": {
-          "최민석": 17,
+          "최민석": 19,
           "김기범": 4,
           "서상원": 24,
           "김동욱": 19,
@@ -897,13 +897,13 @@ window.SLACK_DATA = {
         }
       ],
       "voc": {
-        "responses": 28,
+        "responses": 29,
         "install": {
           "count": 6,
           "low": 1
         },
         "nps": {
-          "count": 28,
+          "count": 29,
           "low": 11
         },
         "high": {
@@ -919,7 +919,7 @@ window.SLACK_DATA = {
           "5": 3,
           "6": 1,
           "7": 1,
-          "8": 5,
+          "8": 6,
           "9": 4,
           "10": 6
         },
@@ -934,6 +934,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 6,
+            "low": 2
+          },
           "12개월": {
             "total": 2,
             "low": 1
@@ -946,16 +950,16 @@ window.SLACK_DATA = {
             "total": 6,
             "low": 2
           },
-          "6개월": {
-            "total": 5,
-            "low": 2
-          },
           "1개월": {
             "total": 4,
             "low": 3
           }
         },
         "byVan": {
+          "SMARTRO": {
+            "total": 3,
+            "low": 1
+          },
           "NICE": {
             "total": 5,
             "low": 2
@@ -971,10 +975,6 @@ window.SLACK_DATA = {
           "KIS": {
             "total": 10,
             "low": 3
-          },
-          "SMARTRO": {
-            "total": 2,
-            "low": 1
           },
           "DAOU": {
             "total": 2,
