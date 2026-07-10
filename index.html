@@ -122,6 +122,21 @@
   .rank-medal{font-size:22px; font-weight:800; color:var(--gray)}
   .rank-name{font-size:15px; font-weight:700; margin-top:4px; color:var(--ink)}
   .rank-val{font-size:13px; color:var(--gray); margin-top:2px; font-weight:600}
+  /* 랭킹 테마 — 천국(밝음) vs 어둠 */
+  .rank-sub{font-size:12px; font-weight:800; margin-left:6px}
+  .light-rank{background:linear-gradient(165deg,#eef5ff,#fff5fb); border:1px solid #dbe8ff}
+  .light-rank .rank-sub{color:#ff86c2}
+  .rank-item.light{background:#fff; border:1px solid #e6eeff}
+  .rank-item.light.top{background:linear-gradient(180deg,#fff8e6,#fffdf7); border-color:#ffe6a0; box-shadow:0 3px 12px rgba(255,200,60,.18)}
+  .dark-rank{background:linear-gradient(165deg,#171029,#251536); border:1px solid #3a2856; color:#e9e2f7}
+  .dark-rank .card-head h3{color:#f1e9ff}
+  .dark-rank .hint{color:#a08cc6}
+  .dark-rank .rank-sub{color:#c9a0ff; text-shadow:0 0 8px rgba(160,90,255,.6)}
+  .rank-item.dark{background:rgba(255,255,255,.04); border:1px solid #43305f}
+  .rank-item.dark .rank-name{color:#f1e9ff}
+  .rank-item.dark .rank-val{color:#d98bb4}
+  .rank-item.dark.worst{background:linear-gradient(180deg,#3c1c33,#2a1740); border-color:#8a2f52; animation:darkpulse 2.2s ease-in-out infinite}
+  @keyframes darkpulse{0%,100%{box-shadow:0 0 12px rgba(190,40,95,.32)}50%{box-shadow:0 0 26px rgba(190,40,95,.62)}}
   .voc-snap{display:flex; gap:24px; flex-wrap:wrap}
   .snap-big{font-size:30px; font-weight:800; letter-spacing:-.03em; line-height:1.1; color:var(--ink); margin-top:3px}
   .voc-proc{font-weight:700; color:var(--green,#166534)}
@@ -955,6 +970,8 @@ function renderOverview(){
   const grand = workGrand + vocAttr;              // 총 처리 = 업무 처리 + VOC 처리(담당자 지정)
   const grandPrev = workGrandPrev + vocAttrPrev;
   const pendCarry=(function(){ const t=ymd(today()), yd=ymd(addDays(today(),-1)), mm={}; [yd,t].forEach(ds=>((slackDay(ds)||{}).pending||[]).forEach(p=>{ mm[(p.store||'')+'|'+(p.biz||'')+'|'+(p.time||'')]=1; })); return Object.keys(mm).length; })();
+  // 누락 랭킹 — 미처리·확인필요(어제~오늘)에 적재된 담당자 카운트
+  const missRows=(function(){ const t=ymd(today()), yd=ymd(addDays(today(),-1)), mm={}; [yd,t].forEach(ds=>((slackDay(ds)||{}).pending||[]).forEach(p=>{ mm[(p.store||'')+'|'+(p.biz||'')+'|'+(p.time||'')]=p; })); const cnt={}; Object.values(mm).forEach(p=>{ const hd=p.handler; if(hd&&hd!=='미지정') cnt[hd]=(cnt[hd]||0)+1; }); return Object.entries(cnt).sort((a,b)=>b[1]-a[1]).slice(0,5); })();
 
   // VOC 저점을 확인 담당자(emp) 기준으로 직원별 집계
   const vocByEmp={}; aggVoc(viewDates).alerts.forEach(a=>{ if(a.emp) vocByEmp[a.emp]=(vocByEmp[a.emp]||0)+1; });
@@ -1039,17 +1056,11 @@ function renderOverview(){
     ${overviewPendingCard()}
 
     <div class="grid2">
-      <div class="card"><div class="card-head"><h3>🏅 직원 랭킹</h3><span class="hint">${viewLabel} 처리량 TOP</span></div>
-        <div class="rank-row">${empRows.slice(0,5).map((r,i)=>`<div class="rank-item ${i<3?'top':''}"><div class="rank-medal">${medal(i)}</div><div class="rank-name">${r.emp}</div><div class="rank-val">${r.total}건</div></div>`).join('')}</div>
+      <div class="card light-rank"><div class="card-head"><h3>😇 직원 랭킹 <span class="rank-sub">🍭 천국의 명단</span></h3><span class="hint">${viewLabel} 처리량 TOP</span></div>
+        <div class="rank-row">${empRows.slice(0,5).map((r,i)=>`<div class="rank-item light ${i<3?'top':''}"><div class="rank-medal">${['👑','😇','🍭','🍬','⭐'][i]||'⭐'}</div><div class="rank-name">${r.emp}</div><div class="rank-val">${r.total}건</div></div>`).join('')}</div>
       </div>
-      <div class="card"><div class="card-head"><h3>💬 VOC 스냅샷</h3><span class="hint">오늘</span></div>
-        <div class="voc-snap">
-          <div><div class="hl-lab">응답</div><div class="snap-big">${vocToday.responses}</div></div>
-          <div><div class="hl-lab">저점 인입</div><div class="snap-big" style="color:var(--red)">${vocToday.alerts.length}</div></div>
-          <div><div class="hl-lab">NPS</div><div class="snap-big" style="color:${vns.nps>=0?'var(--green)':'var(--red)'}">${vns.nps}</div></div>
-          <div><div class="hl-lab">추천 평균</div><div class="snap-big">${vns.avg.toFixed(1)}</div></div>
-        </div>
-        <div class="note" style="font-size:12px;color:var(--gray2);margin-top:10px">자세한 분석은 왼쪽 <b>💬 VOC</b> 메뉴에서 확인하세요.</div>
+      <div class="card dark-rank"><div class="card-head"><h3>⚡ 누락 랭킹 <span class="rank-sub">💀 어둠의 명단</span></h3><span class="hint">미처리·확인필요 담당</span></div>
+        <div class="rank-row">${missRows.length?missRows.map((r,i)=>`<div class="rank-item dark ${i===0?'worst':''}"><div class="rank-medal">${['💀','☠️','⚰️','🦇','👻'][i]||'🕸️'}</div><div class="rank-name">${escapeHtml(r[0])}</div><div class="rank-val">${r[1]}건 누락</div></div>`).join(''):'<div class="empty-note" style="color:#b8a8d8">누락 없음 — 평화롭습니다 🕊️</div>'}</div>
       </div>
     </div>
 
