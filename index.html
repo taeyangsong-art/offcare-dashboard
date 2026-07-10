@@ -757,6 +757,33 @@ function refreshTimeCard(){
     <div class="rt-grid">${refreshSlots().map(s=>`<div class="rt-slot${REFRESH[s.key]?' on':''}"><div class="rt-time">${s.label}</div><input class="rt-name" type="text" value="${escapeHtml(REFRESH[s.key]||'')}" placeholder="이름" onchange="saveRefresh('${s.key}',this.value,this)"></div>`).join('')}</div>
   </div>`;
 }
+// 리프레쉬 타임은 한 주(월~일) 유지 → 새 주(월요일) 시작 시 자동 초기화 + 알림
+const LS_REFRESH_WEEK = "opcare_refreshweek_v1";
+let REFRESH_WEEK = load(LS_REFRESH_WEEK, "");
+function mondayOf(d){ const x=new Date(d); const day=x.getDay(); x.setDate(x.getDate()+(day===0?-6:1-day)); return ymd(x); }
+function checkRefreshWeek(){
+  const thisMon = mondayOf(today());
+  if(!REFRESH_WEEK){ REFRESH_WEEK = thisMon; save(LS_REFRESH_WEEK, REFRESH_WEEK); return; }
+  if(REFRESH_WEEK !== thisMon){          // 새 주 시작 → 초기화
+    REFRESH = {}; save(LS_REFRESH, REFRESH);
+    REFRESH_WEEK = thisMon; save(LS_REFRESH_WEEK, REFRESH_WEEK);
+    if(activeCat==='share') renderShare();
+    showRefreshResetAlert();
+  }
+}
+function showRefreshResetAlert(){
+  const ex=document.getElementById('rtPop'); if(ex) ex.remove();
+  const el=document.createElement('div'); el.id='rtPop'; el.className='duty-pop-overlay';
+  el.innerHTML=`<div class="duty-pop">
+    <div class="duty-pop-ic">☕</div>
+    <div class="duty-pop-sub">새 주가 시작됐어요!</div>
+    <div class="duty-pop-title">리프레쉬 타임 초기화</div>
+    <div class="duty-pop-badge">지난주 휴게 이름이 모두 지워졌어요</div>
+    <div class="duty-pop-person" style="font-size:19px;line-height:1.35">이번 주 휴게시간을<br>얼른 등록해주세요 🙌</div>
+    <button class="duty-pop-btn" onclick="document.getElementById('rtPop').remove(); selectCat('share');">등록하러 가기</button>
+  </div>`;
+  document.body.appendChild(el);
+}
 let VOCEDIT= load(LS_VOCEDIT, {}); // { "date|storeId|time": { industry, reasonCat, note } } — VOC 수기 보정
 const LS_VOCCOMMENT = "opcare_voccomment_v1";
 let VOCCOMMENT = load(LS_VOCCOMMENT, {}); // { "YYYY-MM": "먼슬리 코멘트" }
@@ -2227,9 +2254,11 @@ function boot(){
   if(!localStorage.getItem(LS_COUNT)) seedDemo();
   if(!localStorage.getItem(LS_SHARE)) seedShare();
   applySlackData();
+  checkRefreshWeek();                                     // 새 주면 리프레쉬 타임 초기화
   renderNav(); renderMain(); checkAuth();
   startAutoRefresh();
   checkDutyAlert(); setInterval(checkDutyAlert, 60000);   // 회의 30분 전 당번 알림
+  setInterval(checkRefreshWeek, 300000);                 // 탭 오래 켜둬도 월요일 넘어가면 초기화
 }
 // 데이터 파일을 GitHub 원본(raw)에서 직접 fetch → Pages 배포를 안 기다리고 반영(지연 최대 ~5분).
 // raw 실패 시 로컬(Pages) 파일로 폴백. 파일은 "window.XXX = {...};" 형태라 함수로 실행해 window에 반영.
