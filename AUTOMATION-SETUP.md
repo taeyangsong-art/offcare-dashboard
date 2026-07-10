@@ -73,6 +73,34 @@
 
 ---
 
+## ④ 진짜 30분 자동 — 외부 크론(cron-job.org)으로 GitHub 깨우기
+
+GitHub 예약(schedule)은 부하 시 드롭돼서 불안정합니다. 외부 크론이 GitHub 워크플로를 30분마다 **강제 실행**하면 안정적입니다.
+
+### A. GitHub 토큰(PAT) 발급 (한 번만)
+1. GitHub → 우상단 프로필 → **Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token**
+2. **Repository access**: Only select repositories → `taeyangsong-art/test`
+3. **Permissions → Repository permissions → Actions: Read and write** (그 외는 No access)
+4. Expiration은 길게(1년) → **Generate** → 토큰(`github_pat_...`) 복사
+   - ⚠️ 채팅에 붙여넣지 말 것. cron-job.org에만 입력.
+
+### B. cron-job.org에 등록 (무료)
+1. https://cron-job.org 가입 → **Create cronjob**
+2. **URL**: `https://api.github.com/repos/taeyangsong-art/test/actions/workflows/daily-slack-tally.yml/dispatches`
+3. **Schedule**: Every 30 minutes (또는 업무시간 09:00~23:00만)
+4. **Advanced → Request method**: `POST`
+5. **Headers** 추가:
+   - `Authorization`: `Bearer github_pat_...(위 토큰)`
+   - `Accept`: `application/vnd.github+json`
+   - `Content-Type`: `application/json`
+6. **Request body**: `{"ref":"main"}`
+7. Save → 다음 30분마다 자동으로 GitHub 집계가 돕니다.
+
+> 응답이 **204 No Content** 면 정상(실행 트리거 성공). 401/403이면 토큰 권한 확인.
+> 최종 마감(어제 확정)은 GitHub 내장 cron(00:30)이 그대로 담당하거나, 같은 방식으로 `daily-slack-tally-final.yml` 도 별도 등록하면 됩니다.
+
+---
+
 ## 이모지 규칙(집계 기준)
 - 담당자: `원격규빈`=김규빈, `원격선유`=배선유, `원격성현`=심성현, `원격동욱`=김동욱, `원격현기`=김현기, `원격태양`=송태양, `원격기범`=김기범, `원격상원`=서상원, `원격민석`=최민석
 - 카테고리: `원격as`=AS, `원격온보딩`=온보딩

@@ -116,16 +116,14 @@ function tallyInto(msgs, ch, counts, pending, seen) {
     const absTag = names.some(n => /2차.?부재/.test(n)) ? '2차 부재' : '1차 부재';
     const doer = emp || confirmPerson;
 
-    const dupId = biz || store;              // 매장 식별(사업자번호 우선) — 중복 매장 제외용
+    const dupId = biz || store;              // 매장 식별(사업자번호 우선). 하루에 같은 매장은 카테고리 무관 1회만(글로벌 dedupe)
     if (hasExtern && doer) {                 // 외주 → 별도 집계
-      const dk = 'extern|' + dupId;
-      if (dupId && seen.has(dk)) { dup++; }
-      else { if (dupId) seen.add(dk); const who = doer || '미지정'; counts.extern = counts.extern || {}; counts.extern[who] = (counts.extern[who] || 0) + 1; externCount++; }
+      if (dupId && seen.has(dupId)) { dup++; }
+      else { if (dupId) seen.add(dupId); const who = doer || '미지정'; counts.extern = counts.extern || {}; counts.extern[who] = (counts.extern[who] || 0) + 1; externCount++; }
     } else if (emp || emojiCat) {            // 완료담당자(원격OOO) 또는 카테고리 이모지(AS/온보딩/명의변경 등) → 처리(완료). 부재가 찍혀 있어도 처리로 인정
       const catKey = ch.forceCat || emojiCat || ch.defaultCat;
-      const dk = catKey + '|' + dupId;
-      if (dupId && seen.has(dk)) { dup++; }  // 같은 매장 같은 카테고리 중복 → 제외(스프레드시트 기준)
-      else { if (dupId) seen.add(dk); const who = emp || confirmPerson || '미지정'; counts[catKey] = counts[catKey] || {}; counts[catKey][who] = (counts[catKey][who] || 0) + 1; completed++; }
+      if (dupId && seen.has(dupId)) { dup++; }  // 이미 오늘 카운트된 매장 → 제외(스프레드시트 기준)
+      else { if (dupId) seen.add(dupId); const who = emp || confirmPerson || '미지정'; counts[catKey] = counts[catKey] || {}; counts[catKey][who] = (counts[catKey][who] || 0) + 1; completed++; }
     } else if (hasAbsent) {                  // 완료·카테고리 이모지 없이 '부재만' → 확인필요(처리 제외)
       pending.push({ time, store, biz, handler: doer || '미지정', cat: ch.forceCat || ch.defaultCat, reasons: [absTag] });
     } else if (confirmPerson) {              // 확인만 → 확인필요
