@@ -1933,13 +1933,6 @@ function renderShare(){
       </div>
     </div>
 
-    ${dutyUpcoming.length?`<div class="card duty-remote-card">
-      <div class="card-head"><h3>🏠 회의 중 원격 근무 당번</h3><span class="hint">정기회의·타운홀 순번</span>
-        <button class="btn" style="margin-left:auto" onclick="enableDutyNotif()">🔔 알림 켜기</button></div>
-      <div class="dr-list">${dutyUpcoming.map((mm,i)=>`<div class="dr-row ${i===0?'next':''}"><span class="dr-when">${fmtShort(mm.date)}${mm.time?' '+escapeHtml(mm.time.split('~')[0]):''}</span><span class="dr-title">${escapeHtml(mm.title)}</span><span class="dr-person">🏠 ${escapeHtml(mm.person||'-')}</span></div>`).join('')}</div>
-      <div class="note" style="font-size:12px;color:var(--gray2);margin-top:10px">순번: ${DUTY_ORDER.join(' → ')} · 회의 <b>30분 전 팝업</b>으로 알려드려요(대시보드 탭이 열려 있을 때)</div>
-    </div>`:''}
-
     <div class="kpis">
       ${shareKpi("annual", summary.annual||0)}
       ${shareKpi("half", (summary.half||0)+(summary.time||0), "반차·시간차")}
@@ -1962,6 +1955,13 @@ function renderShare(){
         <span style="margin-left:6px"><span class="swatch" style="background:#e8f0fe;border:1px solid #c6dafc"></span>회의(구글)</span>
       </div>
     </div>
+
+    ${dutyUpcoming.length?`<div class="card duty-remote-card">
+      <div class="card-head"><h3>🏠 회의 중 원격 근무 당번</h3><span class="hint">정기회의·타운홀 순번</span>
+        <button class="btn" style="margin-left:auto" onclick="enableDutyNotif()">🔔 알림 켜기</button></div>
+      <div class="dr-list">${dutyUpcoming.map((mm,i)=>`<div class="dr-row ${i===0?'next':''}"><span class="dr-when">${fmtShort(mm.date)}${mm.time?' '+escapeHtml(mm.time.split('~')[0]):''}</span><span class="dr-title">${escapeHtml(mm.title)}</span><span class="dr-person">🏠 ${escapeHtml(mm.person||'-')}</span></div>`).join('')}</div>
+      <div class="note" style="font-size:12px;color:var(--gray2);margin-top:10px">순번: ${DUTY_ORDER.join(' → ')} · 회의 <b>30분 전 팝업</b>으로 알려드려요(대시보드 탭이 열려 있을 때)</div>
+    </div>`:''}
   `;
 }
 function shareKpi(type, n, labelOverride){
