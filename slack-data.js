@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 56,
+  "version": 57,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -847,11 +847,11 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-10": {
-      "updatedAt": "18:44",
+      "updatedAt": "19:00",
       "counts": {
         "as": {
+          "김기범": 3,
           "서상원": 24,
-          "김기범": 2,
           "최민석": 5,
           "김동욱": 19,
           "김현기": 30,
@@ -885,9 +885,9 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "18:38",
-          "store": "오태윤의 케이팝(KPOP) 댄스",
-          "biz": "3019865937",
+          "time": "18:43",
+          "store": "망치유통",
+          "biz": "4967300393",
           "handler": "김기범",
           "cat": "as",
           "reasons": [
