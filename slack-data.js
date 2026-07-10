@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 44,
+  "version": 45,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -880,35 +880,35 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-10": {
-      "updatedAt": "16:45",
+      "updatedAt": "17:00",
       "counts": {
         "as": {
+          "김현기": 23,
           "서상원": 18,
-          "심성현": 30,
-          "김현기": 21,
+          "심성현": 31,
           "김규빈": 14,
           "최민석": 3,
           "김동욱": 16,
           "송태양": 8
         },
-        "extern": {
-          "김동욱": 3,
-          "서상원": 4
-        },
         "onboarding": {
+          "서상원": 3,
           "김동욱": 4,
           "김현기": 5,
-          "서상원": 2,
           "김규빈": 5,
           "심성현": 5,
           "최민석": 2,
           "송태양": 3
         },
+        "extern": {
+          "김동욱": 3,
+          "서상원": 4
+        },
         "transfer": {
           "송태양": 18
         },
         "menu": {
-          "김규빈": 12
+          "김규빈": 14
         },
         "delivery": {
           "최민석": 3,
@@ -917,11 +917,21 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "16:29",
-          "store": "준스(JOONS)",
-          "biz": "1052185328",
-          "handler": "김규빈",
-          "cat": "menu",
+          "time": "16:36",
+          "store": "서해랜드푸드",
+          "biz": "1043192811",
+          "handler": "김현기",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "16:24",
+          "store": "바른양생테라피",
+          "biz": "4822602141",
+          "handler": "김동욱",
+          "cat": "as",
           "reasons": [
             "확인 후 미완료"
           ]
@@ -957,16 +967,6 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "14:30",
-          "store": "교연수학",
-          "biz": "3999201675",
-          "handler": "심성현",
-          "cat": "as",
-          "reasons": [
-            "1차 부재"
-          ]
-        },
-        {
           "time": "14:19",
           "store": "그루브 필라테스",
           "biz": "7841003287",
@@ -988,17 +988,17 @@ window.SLACK_DATA = {
         }
       ],
       "voc": {
-        "responses": 23,
+        "responses": 24,
         "install": {
-          "count": 4,
+          "count": 5,
           "low": 0
         },
         "nps": {
-          "count": 23,
+          "count": 24,
           "low": 8
         },
         "high": {
-          "install": 3,
+          "install": 4,
           "nps": 6
         },
         "npsDist": {
@@ -1008,20 +1008,24 @@ window.SLACK_DATA = {
           "5": 3,
           "6": 1,
           "7": 1,
-          "8": 3,
+          "8": 4,
           "9": 4,
           "10": 6
         },
         "installDist": {
           "3": 1,
-          "5": 3
+          "5": 4
         },
         "byIndustry": {
+          "도소매": 3,
           "서비스[학원]": 1,
-          "도소매": 2,
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 5,
+            "low": 1
+          },
           "6개월": {
             "total": 4,
             "low": 1
@@ -1037,20 +1041,16 @@ window.SLACK_DATA = {
           "12개월": {
             "total": 1,
             "low": 0
-          },
-          "구매설치": {
-            "total": 4,
-            "low": 1
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 9,
+            "low": 2
+          },
           "NICE": {
             "total": 4,
             "low": 1
-          },
-          "KIS": {
-            "total": 8,
-            "low": 2
           },
           "SMARTRO": {
             "total": 2,
