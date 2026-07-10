@@ -181,8 +181,31 @@
   .si-buy.own{background:#e6eeff; color:#1a56db}
   .si-buy.on{background:var(--green,#16a34a); color:#fff; cursor:default}
   .r-title{font-size:11px; font-weight:800; margin-right:4px}
-  .tr-legendary{background-size:200% auto; animation:titleShine 2.6s linear infinite}
+  .tr-legendary,.tr-mythic{background-size:200% auto; animation:titleShine 2.6s linear infinite}
   @keyframes titleShine{to{background-position:-200% center}}
+  /* 🎣 낚시터 */
+  .fish-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px}
+  .fish-spot{border-radius:16px; padding:18px 16px; text-align:center; color:#fff; border:2px solid rgba(255,255,255,.25)}
+  .fish-spot.fs-low{background:linear-gradient(160deg,#4aa3c7,#2d7d9a)}
+  .fish-spot.fs-mid{background:linear-gradient(160deg,#5a67d8,#3f2b96)}
+  .fish-spot.fs-high{background:linear-gradient(160deg,#0b1b3a,#123a5e); border-color:#3fa9ff}
+  .fs-emoji{font-size:38px; line-height:1}
+  .fs-name{font-size:17px; font-weight:800; margin-top:6px}
+  .fs-desc{font-size:12px; opacity:.9; margin-top:5px; min-height:30px}
+  .fs-cost{font-size:13px; font-weight:700; margin:8px 0 12px}
+  .fs-btn{width:100%; border:none; border-radius:11px; padding:11px; font-family:inherit; font-size:14px; font-weight:800; cursor:pointer;
+    background:#fff; color:#123; transition:.15s}
+  .fs-btn:hover:not(:disabled){transform:translateY(-2px)}
+  .fs-btn:disabled{opacity:.5; cursor:not-allowed}
+  .fish-pop{background:var(--canvas,#fff); border-radius:22px; padding:30px 34px; text-align:center; max-width:320px; width:88%;
+    box-shadow:0 24px 60px rgba(0,0,0,.3)}
+  .fish-pop.reveal{animation:dutypop .3s cubic-bezier(.2,.9,.3,1.3); border:3px solid var(--rc)}
+  .fp-rod{font-size:52px; animation:fpwiggle .6s ease-in-out infinite}
+  @keyframes fpwiggle{0%,100%{transform:rotate(-12deg)}50%{transform:rotate(12deg)}}
+  .fp-wait{margin-top:12px; font-size:15px; font-weight:700; color:var(--gray)}
+  .fp-emoji{font-size:60px; line-height:1}
+  .fp-big{margin-top:8px; font-size:24px; font-weight:800; letter-spacing:-.02em; color:var(--ink)}
+  .fp-sub{margin-top:6px; font-size:14px; color:var(--gray)}
   .preview-hint{font-size:12.5px; color:var(--gray2); margin:-8px 2px 16px; font-weight:600}
   .game-me.previewing{outline:2px dashed #c8a2ff; outline-offset:2px}
   .game-me.previewing::after{content:'👀 미리보기'; position:absolute; top:10px; right:14px; font-size:12px; font-weight:800; color:#8a3ffb}
@@ -1005,31 +1028,34 @@ function renderMain(){
 
 /* ================= 🎮 원격 상점 (게임) ================= */
 const GAME_API = "https://script.google.com/macros/s/AKfycbwlPj0fbNjMWTpU1jiGI3gUNPvOE8MlZ7ANqgQP41ZrWE0vo4r2en1pSYZVgEiYYR8M_A/exec";   // Apps Script 웹앱(팀 공유 클라우드)
-const GAME_COIN_PER = 10;            // 원격 10건 = 🪙1코인
-const RARITY = {common:'#8a94a6', rare:'#1a73e8', epic:'#9c36b5', legendary:'#e8820a'};
-const RARITY_KO = {common:'일반', rare:'레어', epic:'에픽', legendary:'전설'};
+const GAME_COIN_PER = 1;             // 원격 1건 = 🪙1코인
+const RARITY = {common:'#8a94a6', rare:'#1a73e8', epic:'#9c36b5', legendary:'#e8820a', mythic:'#e0218a'};
+const RARITY_KO = {common:'일반', rare:'레어', epic:'에픽', legendary:'전설', mythic:'신화'};
 const GAME_ITEMS = {
   title: [
     {id:'t_novice',name:'견습 원격러',price:0,rarity:'common'},
-    {id:'t_hand',name:'번개손',price:30,rarity:'rare'},
-    {id:'t_night',name:'심야의 수호자',price:50,rarity:'rare'},
-    {id:'t_phoenix',name:'불사조',price:80,rarity:'epic'},
-    {id:'t_master',name:'원격 마스터',price:110,rarity:'epic'},
-    {id:'t_god',name:'원격의 신',price:200,rarity:'legendary',grad:'linear-gradient(90deg,#e8820a,#ff5a8a,#c77dff,#4ea8ff,#e8820a)'},
+    {id:'t_hand',name:'번개손',price:80,rarity:'rare'},
+    {id:'t_night',name:'심야의 수호자',price:120,rarity:'rare'},
+    {id:'t_phoenix',name:'불사조',price:200,rarity:'epic'},
+    {id:'t_master',name:'원격 마스터',price:320,rarity:'epic'},
+    {id:'t_god',name:'원격의 신',price:600,rarity:'legendary',grad:'linear-gradient(90deg,#e8820a,#ff5a8a,#c77dff,#4ea8ff,#e8820a)'},
+    {id:'t_kraken',name:'심해의 지배자',price:1200,rarity:'mythic',fishOnly:true,grad:'linear-gradient(90deg,#00f5d4,#4ea8ff,#8a5cff,#00f5d4)'},
+    {id:'t_fishking',name:'전설의 낚시왕',price:1500,rarity:'mythic',fishOnly:true,grad:'linear-gradient(90deg,#ffd34e,#ff5a8a,#00f5d4,#ffd34e)'},
   ],
   nametag: [
     {id:'n_none',name:'기본',price:0,rarity:'common'},
-    {id:'n_blue',name:'하늘',price:15,color:'#1a73e8',rarity:'common'},
-    {id:'n_pink',name:'핑크',price:15,color:'#ff5a8a',rarity:'common'},
-    {id:'n_green',name:'민트',price:15,color:'#0f9d58',rarity:'common'},
-    {id:'n_gold',name:'골드',price:45,color:'#d89000',rarity:'rare'},
-    {id:'n_fire',name:'불꽃',price:75,color:'#ff3b30',glow:'#ff6a3a',rarity:'epic'},
-    {id:'n_rainbow',name:'무지개',price:130,grad:'linear-gradient(90deg,#ff5a8a,#ffb84e,#4ea8ff,#7ee081)',rarity:'legendary'},
+    {id:'n_blue',name:'하늘',price:40,color:'#1a73e8',rarity:'common'},
+    {id:'n_pink',name:'핑크',price:40,color:'#ff5a8a',rarity:'common'},
+    {id:'n_green',name:'민트',price:40,color:'#0f9d58',rarity:'common'},
+    {id:'n_gold',name:'골드',price:120,color:'#d89000',rarity:'rare'},
+    {id:'n_fire',name:'불꽃',price:220,color:'#ff3b30',glow:'#ff6a3a',rarity:'epic'},
+    {id:'n_rainbow',name:'무지개',price:450,grad:'linear-gradient(90deg,#ff5a8a,#ffb84e,#4ea8ff,#7ee081)',rarity:'legendary'},
+    {id:'n_aurora',name:'오로라',price:1000,rarity:'mythic',fishOnly:true,grad:'linear-gradient(90deg,#00f5d4,#8a5cff,#ff5a8a,#00f5d4)'},
   ],
-  hat: [{id:'h_none',name:'없음',price:0,e:'',rarity:'common'},{id:'h_cap',name:'캡',price:10,e:'🧢',rarity:'common'},{id:'h_wizard',name:'마법사',price:40,e:'🧙',rarity:'rare'},{id:'h_crown',name:'왕관',price:70,e:'👑',rarity:'epic'},{id:'h_halo',name:'천사링',price:90,e:'😇',rarity:'legendary'}],
-  face: [{id:'f_smile',name:'기본',price:0,e:'😀',rarity:'common'},{id:'f_cool',name:'쿨',price:10,e:'😎',rarity:'common'},{id:'f_robot',name:'로봇',price:30,e:'🤖',rarity:'rare'},{id:'f_star',name:'별눈',price:45,e:'🤩',rarity:'epic'},{id:'f_devil',name:'악마',price:55,e:'😈',rarity:'epic'}],
-  outfit: [{id:'o_none',name:'기본',price:0,e:'👕',rarity:'common'},{id:'o_suit',name:'정장',price:25,e:'🤵',rarity:'common'},{id:'o_ninja',name:'닌자',price:50,e:'🥷',rarity:'rare'},{id:'o_hero',name:'히어로',price:80,e:'🦸',rarity:'epic'},{id:'o_king',name:'왕',price:120,e:'🫅',rarity:'legendary'}],
-  pet: [{id:'p_none',name:'없음',price:0,e:'',rarity:'common'},{id:'p_cat',name:'고양이',price:20,e:'🐱',rarity:'common'},{id:'p_dog',name:'강아지',price:20,e:'🐶',rarity:'common'},{id:'p_unicorn',name:'유니콘',price:100,e:'🦄',rarity:'epic'},{id:'p_dragon',name:'드래곤',price:150,e:'🐉',rarity:'legendary'}],
+  hat: [{id:'h_none',name:'없음',price:0,e:'',rarity:'common'},{id:'h_cap',name:'캡',price:30,e:'🧢',rarity:'common'},{id:'h_wizard',name:'마법사',price:110,e:'🧙',rarity:'rare'},{id:'h_crown',name:'왕관',price:200,e:'👑',rarity:'epic'},{id:'h_halo',name:'천사링',price:300,e:'😇',rarity:'legendary'},{id:'h_straw',name:'밀짚모자',price:700,e:'👒',rarity:'mythic',fishOnly:true}],
+  face: [{id:'f_smile',name:'기본',price:0,e:'😀',rarity:'common'},{id:'f_cool',name:'쿨',price:30,e:'😎',rarity:'common'},{id:'f_robot',name:'로봇',price:90,e:'🤖',rarity:'rare'},{id:'f_star',name:'별눈',price:150,e:'🤩',rarity:'epic'},{id:'f_devil',name:'악마',price:180,e:'😈',rarity:'epic'}],
+  outfit: [{id:'o_none',name:'기본',price:0,e:'👕',rarity:'common'},{id:'o_suit',name:'정장',price:70,e:'🤵',rarity:'common'},{id:'o_ninja',name:'닌자',price:150,e:'🥷',rarity:'rare'},{id:'o_hero',name:'히어로',price:250,e:'🦸',rarity:'epic'},{id:'o_king',name:'왕',price:380,e:'🫅',rarity:'legendary'}],
+  pet: [{id:'p_none',name:'없음',price:0,e:'',rarity:'common'},{id:'p_cat',name:'고양이',price:60,e:'🐱',rarity:'common'},{id:'p_dog',name:'강아지',price:60,e:'🐶',rarity:'common'},{id:'p_unicorn',name:'유니콘',price:300,e:'🦄',rarity:'epic'},{id:'p_dragon',name:'드래곤',price:450,e:'🐉',rarity:'legendary'},{id:'p_kraken',name:'크라켄',price:800,e:'🦑',rarity:'mythic',fishOnly:true},{id:'p_whale',name:'고래',price:800,e:'🐋',rarity:'mythic',fishOnly:true}],
 };
 const LS_GAME = "opcare_game_v1";
 let GAME = load(LS_GAME, {});         // { emp: {spent, owned:[], equipped:{}} }
@@ -1086,7 +1112,7 @@ function shopCard(cat,it,emp){
     <button class="si-buy ${eq?'on':owned?'own':''}" onclick="buyOrEquip('${cat}','${it.id}')">${eq?'✓ 착용중':owned?'착용하기':(it.price===0?'착용':'🪙 '+it.price)}</button>
   </div>`;
 }
-function shopSection(cat,label,emp){ const canoff=['hat','face','outfit','pet'].includes(cat); return `<div class="card"><div class="card-head"><h3>${label}</h3>${canoff?`<button class="btn" onclick="unequipPart('${cat}')">해제</button>`:''}</div><div class="shop-grid">${GAME_ITEMS[cat].map(it=>shopCard(cat,it,emp)).join('')}</div></div>`; }
+function shopSection(cat,label,emp){ const canoff=['hat','face','outfit','pet'].includes(cat); const list=GAME_ITEMS[cat].filter(it=>!it.fishOnly||owns(emp,cat,it.id)); return `<div class="card"><div class="card-head"><h3>${label}</h3>${canoff?`<button class="btn" onclick="unequipPart('${cat}')">해제</button>`:''}</div><div class="shop-grid">${list.map(it=>shopCard(cat,it,emp)).join('')}</div></div>`; }
 function renderGame(){
   const opts=EMPLOYEES.map(e=>`<option ${e===gameMe?'selected':''}>${e}</option>`).join('');
   let body;
@@ -1096,6 +1122,7 @@ function renderGame(){
     body=`
     <div class="card game-me" id="gmBox">${gameMeInner(emp, eq)}</div>
     <div class="preview-hint">💡 아이템에 마우스를 올리면 위 캐릭터에 <b>미리 입어보기</b> 돼요</div>
+    ${fishingSection(emp)}
     ${shopSection('title','👑 타이틀',emp)}
     ${shopSection('nametag','🏷️ 네임택',emp)}
     <div class="grid2"><div style="grid-column:1/-1;font-weight:800;font-size:15px;color:var(--gray);padding:4px 2px">🧙 아바타 꾸미기</div></div>
@@ -1109,6 +1136,63 @@ function renderGame(){
       <div class="controls"><select class="sel" onchange="setGameMe(this.value)"><option value="">👤 본인 선택</option>${opts}</select></div>
     </div>
     ${body}`;
+}
+/* ===== 🎣 낚시터 (가챠) ===== */
+const FISH = {
+  low:  {emoji:'🏞️', name:'초급 낚시터', cost:1,  entry:0,  desc:'누구나 · 대부분 꽝, 최악 -1코인',
+    loot:[ {w:38,t:'none'}, {w:22,t:'coin',min:-1,max:-1}, {w:22,t:'coin',min:1,max:2}, {w:12,t:'item',rar:['common']}, {w:5,t:'item',rar:['rare']}, {w:1,t:'item',rar:['epic']} ]},
+  mid:  {emoji:'⛵', name:'중급 낚시터', cost:3,  entry:20, desc:'20코인↑ 입장 · 확률 UP, 최악 -3코인',
+    loot:[ {w:24,t:'none'}, {w:12,t:'coin',min:-3,max:-2}, {w:24,t:'coin',min:2,max:5}, {w:18,t:'item',rar:['common','rare']}, {w:13,t:'item',rar:['rare','epic']}, {w:7,t:'item',rar:['epic']}, {w:2,t:'item',rar:['legendary']} ]},
+  high: {emoji:'🌊', name:'고급 낚시터', cost:10, entry:0,  desc:'초희귀 신화 아이템! 최악 -10코인',
+    loot:[ {w:15,t:'none'}, {w:10,t:'coin',min:-10,max:-5}, {w:20,t:'coin',min:5,max:20}, {w:16,t:'item',rar:['rare','epic']}, {w:19,t:'item',rar:['epic','legendary']}, {w:14,t:'item',rar:['legendary']}, {w:6,t:'item',rar:['mythic'],fish:true} ]},
+};
+let fishBusy=false;
+function randInt(a,b){ return a+Math.floor(Math.random()*(b-a+1)); }
+function rollLoot(loot){ const tot=loot.reduce((a,x)=>a+x.w,0); let r=Math.random()*tot; for(const x of loot){ if((r-=x.w)<0) return x; } return loot[loot.length-1]; }
+function pickItem(rars, fishOnly){ const pool=[]; for(const cat in GAME_ITEMS){ for(const it of GAME_ITEMS[cat]){ if(it.price===0) continue; if(!rars.includes(it.rarity)) continue; if(fishOnly && !it.fishOnly) continue; if(!fishOnly && it.fishOnly) continue; pool.push(Object.assign({cat},it)); } } return pool.length?pool[Math.floor(Math.random()*pool.length)]:null; }
+const CAT_KO={title:'타이틀',nametag:'네임택',hat:'모자',face:'얼굴',outfit:'의상',pet:'펫'};
+function resolveLoot(emp,out){ const g=gs(emp);
+  if(out.t==='none') return {emoji:'🐚',big:'꽝!',sub:'빈 낚싯대... 다음 기회에!',cls:'miss'};
+  if(out.t==='coin'){ const n=randInt(out.min,out.max); g.spent=(g.spent||0)-n; return {emoji:n>=0?'🪙':'💸',big:(n>=0?'+':'')+n+' 코인',sub:n>=0?'월척! 코인 획득':'앗! 코인이 빠져나갔다...',cls:n>=0?'coin':'bad'}; }
+  const it=pickItem(out.rar,out.fish);
+  if(!it){ g.spent=(g.spent||0)-3; return {emoji:'🪙',big:'+3 코인',sub:'낚을 새 아이템이 없어 코인으로!',cls:'coin'}; }
+  if(owns(emp,it.cat,it.id)){ const ref=Math.max(3,Math.ceil(it.price*0.25)); g.spent=(g.spent||0)-ref; return {emoji:'♻️',big:'중복 → +'+ref+'코인',sub:'['+it.name+'] 이미 보유! 코인 환급',cls:'coin'}; }
+  g.owned=g.owned||[]; g.owned.push(it.cat+':'+it.id);
+  return {emoji:it.e||'🎁',big:'['+it.name+']',sub:RARITY_KO[it.rarity]+' '+(CAT_KO[it.cat]||'')+' 획득!',cls:'item',rarity:it.rarity};
+}
+function castFish(spot){
+  const emp=gameMe; if(!emp){ alert('먼저 본인을 선택하세요 🙂'); return; }
+  const f=FISH[spot]; if(fishBusy) return;
+  if(f.entry && empAvail(emp)<f.entry){ alert(f.name+'는 '+f.entry+'코인 이상 있어야 입장할 수 있어요!'); return; }
+  if(empAvail(emp)<f.cost){ alert('🪙 코인이 부족해요! (캐스트 '+f.cost+'코인)'); return; }
+  fishBusy=true; const g=gs(emp); g.spent=(g.spent||0)+f.cost; saveGame(); showFishing(f);
+  setTimeout(()=>{ const res=resolveLoot(emp, rollLoot(f.loot)); saveGame(); showFishResult(res); renderGame(); fishBusy=false; }, 1400);
+}
+function showFishing(f){
+  let el=document.getElementById('fishPop'); if(!el){ el=document.createElement('div'); el.id='fishPop'; el.className='duty-pop-overlay'; document.body.appendChild(el); }
+  el.innerHTML=`<div class="fish-pop"><div class="fp-rod">🎣</div><div class="fp-wait">${escapeHtml(f.name)}<br>입질을 기다리는 중...</div></div>`;
+}
+function showFishResult(res){
+  const el=document.getElementById('fishPop'); if(!el) return; const col=res.rarity?RARITY[res.rarity]:'#8a94a6';
+  el.innerHTML=`<div class="fish-pop reveal" style="--rc:${col}">
+    <div class="fp-emoji">${res.emoji}</div>
+    <div class="fp-big" ${res.rarity?`style="color:${col}"`:''}>${escapeHtml(res.big)}</div>
+    <div class="fp-sub">${escapeHtml(res.sub)}</div>
+    <button class="duty-pop-btn" onclick="document.getElementById('fishPop').remove()">확인 🎣</button>
+  </div>`;
+}
+function fishingSection(emp){ const av=empAvail(emp);
+  return `<div class="card fish-card">
+    <div class="card-head"><h3>🎣 낚시터 (가챠)</h3><span class="hint">낚싯대를 던져 아이템·코인을 낚으세요! (운 필요)</span></div>
+    <div class="fish-grid">${['low','mid','high'].map(k=>{ const f=FISH[k], locked=(f.entry&&av<f.entry), cant=av<f.cost;
+      return `<div class="fish-spot fs-${k}">
+        <div class="fs-emoji">${f.emoji}</div>
+        <div class="fs-name">${f.name}</div>
+        <div class="fs-desc">${f.desc}</div>
+        <div class="fs-cost">캐스트 <b>🪙${f.cost}</b>${f.entry?` · 입장 ${f.entry}↑`:''}</div>
+        <button class="fs-btn" ${(locked||cant)?'disabled':''} onclick="castFish('${k}')">${locked?`🔒 ${f.entry}코인 필요`:cant?'코인 부족':'🎣 낚싯대 던지기'}</button>
+      </div>`; }).join('')}</div>
+  </div>`;
 }
 
 /* ================= Overview (전체 현황) ================= */
