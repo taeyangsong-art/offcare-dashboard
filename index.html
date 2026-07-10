@@ -852,6 +852,7 @@ function renderMain(){
 function renderOverview(){
   const viewDates = ovDates();
   const viewLabel = ovLabel();
+  const trendDates = []; for(let i=6;i>=0;i--) trendDates.push(ymd(addDays(today(),-i)));   // 처리 추이는 항상 최근 7일
 
   const prevDates = ovPrevDates();
   const workCatTotals = WORK_CATS.map(c=>({...c, total:sumRange(c.key, viewDates), prev:sumRange(c.key, prevDates)}));
@@ -930,7 +931,7 @@ function renderOverview(){
     </div>
 
     <div class="grid2">
-      <div class="card"><div class="card-head"><h3>📈 처리 추이</h3><span class="hint">${viewLabel} · ${ovRangeText()}</span></div>${overviewTrend(viewDates)}</div>
+      <div class="card"><div class="card-head"><h3>📈 처리 추이</h3><span class="hint">최근 7일 (오늘 강조)</span></div>${overviewTrend(trendDates)}</div>
       <div class="card"><div class="card-head"><h3>🍩 카테고리 구성</h3><span class="hint">${viewLabel} · 비중</span></div>
         ${donutChart(catTotals.filter(c=>c.total>0).map(c=>[c.name,c.total,c.color]))}</div>
     </div>
