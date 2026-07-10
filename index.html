@@ -750,7 +750,7 @@ function dutyPersonAt(key, mapVal){ return DUTYOVER[key] || mapVal || ''; }
 const LS_REFRESH = "opcare_refresh_v1";
 let REFRESH = load(LS_REFRESH, {});   // { "0900": "이름" } — 리프레쉬(휴게) 타임
 function saveRefresh(key, val, inp){ val=(val||'').trim(); if(val) REFRESH[key]=val; else delete REFRESH[key]; save(LS_REFRESH, REFRESH); if(inp&&inp.closest('.rt-slot')) inp.closest('.rt-slot').classList.toggle('on', !!val); }
-function refreshSlots(){ const out=[]; for(let h=9; h<18; h++){ for(const mm of ['00','30']){ const s=(''+h).padStart(2,'0')+':'+mm; const eh=mm==='00'?h:h+1, em=mm==='00'?'30':'00'; out.push({key:(''+h).padStart(2,'0')+mm, label:s+'~'+(''+eh).padStart(2,'0')+':'+em}); } } return out; }
+function refreshSlots(){ const out=[]; for(let h=9; h<18; h++){ if(h===12||h===13) continue; for(const mm of ['00','30']){ const s=(''+h).padStart(2,'0')+':'+mm; const eh=mm==='00'?h:h+1, em=mm==='00'?'30':'00'; out.push({key:(''+h).padStart(2,'0')+mm, label:s+'~'+(''+eh).padStart(2,'0')+':'+em}); } } return out; }
 function refreshTimeCard(){
   return `<div class="card rt-card">
     <div class="card-head"><h3>☕ 원격팀 리프레쉬 타임</h3><span class="hint">09:00~18:00 · 30분 단위 · 원하는 칸에 이름</span></div>
