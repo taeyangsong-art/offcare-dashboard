@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 30,
+  "version": 31,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -879,36 +879,83 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-10": {
-      "updatedAt": "10:30",
+      "updatedAt": "14:00",
       "counts": {
         "as": {
-          "김규빈": 2,
-          "서상원": 4,
-          "김동욱": 3,
-          "송태양": 2,
-          "심성현": 2,
-          "김현기": 2
-        },
-        "onboarding": {
-          "서상원": 1,
-          "김규빈": 2,
-          "심성현": 1
+          "서상원": 9,
+          "심성현": 15,
+          "김동욱": 9,
+          "김규빈": 12,
+          "송태양": 4,
+          "김현기": 12
         },
         "extern": {
+          "서상원": 2,
+          "김동욱": 1
+        },
+        "onboarding": {
+          "김동욱": 2,
+          "심성현": 2,
+          "송태양": 2,
+          "김현기": 2,
+          "김규빈": 2,
           "서상원": 1
         },
         "transfer": {
-          "송태양": 3
+          "송태양": 10
+        },
+        "menu": {
+          "김규빈": 4
         },
         "delivery": {
-          "서상원": 1
+          "서상원": 3
         }
       },
       "pending": [
         {
-          "time": "10:19",
-          "store": "강창구찹쌀진순대 인천청라점",
-          "biz": "1372139442",
+          "time": "13:43",
+          "store": "용용선생 광주수완점",
+          "biz": "3260102789",
+          "handler": "서상원",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "13:34",
+          "store": "에그힙",
+          "biz": "5011894307",
+          "handler": "김현기",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "13:30",
+          "store": "홍콩가",
+          "biz": "1140497646",
+          "handler": "심성현",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "13:30",
+          "store": "바른양생테라피",
+          "biz": "4822602141",
+          "handler": "심성현",
+          "cat": "as",
+          "reasons": [
+            "1차 부재"
+          ]
+        },
+        {
+          "time": "13:00",
+          "store": "샤인빔의원",
+          "biz": "2181505065",
           "handler": "김동욱",
           "cat": "as",
           "reasons": [
@@ -916,20 +963,30 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "10:18",
-          "store": "뷰티인사이드",
-          "biz": "6180745485",
+          "time": "12:56",
+          "store": "명인카츠",
+          "biz": "5853301599",
+          "handler": "심성현",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "11:00",
+          "store": "콩알2",
+          "biz": "5277300232",
           "handler": "김규빈",
           "cat": "as",
           "reasons": [
-            "확인 후 미완료"
+            "2차 부재"
           ]
         },
         {
-          "time": "10:01",
-          "store": "선웅방재",
-          "biz": "2391202797",
-          "handler": "김동욱",
+          "time": "10:42",
+          "store": "(주)건축집단마 마미",
+          "biz": "1318556561",
+          "handler": "심성현",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
@@ -937,26 +994,35 @@ window.SLACK_DATA = {
         }
       ],
       "voc": {
-        "responses": 2,
+        "responses": 3,
         "install": {
-          "count": 0,
+          "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 2,
+          "count": 3,
           "low": 1
         },
         "high": {
-          "install": 0,
-          "nps": 0
+          "install": 1,
+          "nps": 1
         },
         "npsDist": {
           "5": 1,
-          "9": 1
+          "9": 1,
+          "10": 1
         },
-        "installDist": {},
-        "byIndustry": {},
+        "installDist": {
+          "5": 1
+        },
+        "byIndustry": {
+          "서비스[뷰티,헤어]": 1
+        },
         "byTenure": {
+          "구매설치": {
+            "total": 1,
+            "low": 0
+          },
           "1개월": {
             "total": 1,
             "low": 1
@@ -967,6 +1033,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 1,
+            "low": 0
+          },
           "KSNET": {
             "total": 1,
             "low": 1
