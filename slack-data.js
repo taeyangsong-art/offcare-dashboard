@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 38,
+  "version": 39,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -880,14 +880,14 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-10": {
-      "updatedAt": "15:15",
+      "updatedAt": "15:29",
       "counts": {
         "as": {
           "서상원": 14,
-          "심성현": 23,
+          "심성현": 24,
+          "송태양": 7,
           "김현기": 17,
           "김동욱": 14,
-          "송태양": 6,
           "김규빈": 13
         },
         "extern": {
@@ -895,15 +895,16 @@ window.SLACK_DATA = {
           "김동욱": 2
         },
         "onboarding": {
+          "최민석": 1,
+          "김현기": 3,
           "심성현": 3,
           "김동욱": 3,
           "송태양": 3,
-          "김현기": 2,
           "김규빈": 3,
           "서상원": 1
         },
         "transfer": {
-          "송태양": 15
+          "송태양": 16
         },
         "menu": {
           "김규빈": 9
@@ -915,19 +916,29 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "15:00",
-          "store": "마린코스트충남",
-          "biz": "",
+          "time": "15:14",
+          "store": "루미벨라",
+          "biz": "6780403491",
           "handler": "송태양",
-          "cat": "transfer",
+          "cat": "as",
           "reasons": [
-            "1차 부재"
+            "확인 후 미완료"
           ]
         },
         {
-          "time": "14:34",
-          "store": "폴라리스 심리상담연구소",
-          "biz": "3101017125",
+          "time": "15:13",
+          "store": "화덕피자 피움(KIS)",
+          "biz": "2591702705",
+          "handler": "김동욱",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "15:00",
+          "store": "더프레시달달 검단신도시점",
+          "biz": "5801103149",
           "handler": "심성현",
           "cat": "as",
           "reasons": [
@@ -935,10 +946,20 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "14:34",
-          "store": "아트톡미술학원",
-          "biz": "6429601413",
+          "time": "15:00",
+          "store": "개나리옥 무뚜기설렁탕",
+          "biz": "6220879680",
           "handler": "김현기",
+          "cat": "as",
+          "reasons": [
+            "2차 부재"
+          ]
+        },
+        {
+          "time": "14:34",
+          "store": "폴라리스 심리상담연구소",
+          "biz": "3101017125",
+          "handler": "심성현",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
@@ -986,41 +1007,49 @@ window.SLACK_DATA = {
         }
       ],
       "voc": {
-        "responses": 9,
+        "responses": 13,
         "install": {
-          "count": 1,
+          "count": 4,
           "low": 0
         },
         "nps": {
-          "count": 9,
-          "low": 3
+          "count": 13,
+          "low": 4
         },
         "high": {
-          "install": 1,
-          "nps": 2
+          "install": 3,
+          "nps": 3
         },
         "npsDist": {
           "0": 1,
-          "5": 2,
+          "5": 3,
+          "6": 1,
           "7": 1,
-          "8": 1,
+          "8": 2,
           "9": 2,
-          "10": 2
+          "10": 3
         },
         "installDist": {
-          "5": 1
+          "3": 1,
+          "5": 3
         },
         "byIndustry": {
+          "서비스[학원]": 1,
+          "도소매": 2,
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 1,
+            "low": 0
+          },
+          "구매설치": {
+            "total": 4,
+            "low": 1
+          },
           "3개월": {
             "total": 6,
             "low": 2
-          },
-          "구매설치": {
-            "total": 1,
-            "low": 0
           },
           "1개월": {
             "total": 1,
@@ -1032,6 +1061,14 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KSNET": {
+            "total": 2,
+            "low": 1
+          },
+          "KIS": {
+            "total": 4,
+            "low": 1
+          },
           "SECTA9": {
             "total": 4,
             "low": 2
@@ -1044,24 +1081,34 @@ window.SLACK_DATA = {
             "total": 1,
             "low": 0
           },
-          "KIS": {
-            "total": 1,
-            "low": 0
-          },
-          "KSNET": {
-            "total": 1,
-            "low": 1
-          },
           "DAOU": {
             "total": 1,
             "low": 0
           }
         },
         "reasonCounts": {
-          "단말기 설치나 초기 과정이 어려움": 2,
-          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
+          "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "15:21",
+            "store": "깜밥 누룽지",
+            "storeId": "532689",
+            "industry": "도소매",
+            "indBucket": "도소매",
+            "install": 5,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "물어보면 추천 해 주는 정도",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": ""
+          },
           {
             "time": "15:14",
             "store": "해잇박스",
@@ -1118,6 +1165,17 @@ window.SLACK_DATA = {
           }
         ],
         "praises": [
+          {
+            "time": "15:21",
+            "store": "비상잉글리시아이동광영어교습소",
+            "storeId": "532177",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 3,
+            "nps": 8,
+            "text": "설치 오류가 생겨서 친절하게 답변해주고 기기 사용료가 없어서",
+            "byReaction": false
+          },
           {
             "time": "15:13",
             "store": "우드바우어의밤",
