@@ -890,12 +890,15 @@ function renderOverview(){
   const grandPrev = catTotals.reduce((a,c)=>a+c.prev,0);
   const pendCarry=(function(){ const t=ymd(today()), yd=ymd(addDays(today(),-1)), mm={}; [yd,t].forEach(ds=>((slackDay(ds)||{}).pending||[]).forEach(p=>{ mm[(p.store||'')+'|'+(p.biz||'')+'|'+(p.time||'')]=1; })); return Object.keys(mm).length; })();
 
+  // VOC 저점을 확인 담당자(emp) 기준으로 직원별 집계
+  const vocByEmp={}; aggVoc(viewDates).alerts.forEach(a=>{ if(a.emp) vocByEmp[a.emp]=(vocByEmp[a.emp]||0)+1; });
   const empRows = EMPLOYEES.map(e=>{
     const cells = WORK_CATS.map(c=>sumRange(c.key, viewDates, e));
-    return {emp:e, cells, total:cells.reduce((a,b)=>a+b,0)};
+    const vc = vocByEmp[e]||0;
+    return {emp:e, cells, vc, total:cells.reduce((a,b)=>a+b,0)};   // total=업무처리(랭킹·MVP·차트용, VOC 제외)
   }).sort((a,b)=>b.total-a.total);
   const maxEmp = Math.max(1, ...empRows.map(r=>r.total));
-  const maxCell = Math.max(1, ...empRows.flatMap(r=>r.cells));
+  const maxCell = Math.max(1, ...empRows.flatMap(r=>[...r.cells, r.vc]));
 
   // ── 헤드라인/알림/근무 계산 ──
   const periodWord = ovMode==='day' ? (ovDate===ymd(today())?'오늘':fmtShort(ovDate)) : ovLabel();
@@ -985,19 +988,20 @@ function renderOverview(){
     <div class="card">
       <div class="card-head">
         <h3>직원별 · 카테고리별 처리건수</h3>
-        <span class="hint">${viewLabel} · 색이 진할수록 많음</span>
+        <span class="hint">${viewLabel} · VOC는 확인 담당자 기준 · 색이 진할수록 많음</span>
       </div>
       <div style="overflow-x:auto">
         <table class="matrix">
-          <thead><tr><th>직원</th>${WORK_CATS.map(c=>`<th class="num">${c.icon}<br>${c.name}</th>`).join("")}<th class="num tot">합계</th></tr></thead>
+          <thead><tr><th>직원</th>${WORK_CATS.map(c=>`<th class="num">${c.icon}<br>${c.name}</th>`).join("")}<th class="num">💬<br>VOC</th><th class="num tot">합계</th></tr></thead>
           <tbody>
             ${empRows.map((r,i)=>`<tr>
               <td class="emp-name">${medal(i)} ${r.emp}</td>
               ${r.cells.map((n,ci)=>`<td class="num mcell" style="${n>0?`background:${hexA(WORK_CATS[ci].color,0.08+n/maxCell*0.30)}`:''}">${n||'<span class="zero">·</span>'}</td>`).join("")}
-              <td class="num tot">${r.total}</td>
+              <td class="num mcell" style="${r.vc>0?`background:${hexA('#ff2d55',0.08+r.vc/maxCell*0.30)}`:''}">${r.vc||'<span class="zero">·</span>'}</td>
+              <td class="num tot">${r.total+r.vc}</td>
             </tr>`).join("")}
           </tbody>
-          <tfoot><tr><td>합계</td>${workCatTotals.map(c=>`<td class="num">${c.total}</td>`).join("")}<td class="num tot">${workGrand}</td></tr></tfoot>
+          <tfoot><tr><td>합계</td>${workCatTotals.map(c=>`<td class="num">${c.total}</td>`).join("")}<td class="num">${vocTot}</td><td class="num tot">${grand}</td></tr></tfoot>
         </table>
       </div>
     </div>
