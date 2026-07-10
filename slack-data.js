@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 57,
+  "version": 58,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -847,12 +847,12 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-10": {
-      "updatedAt": "19:00",
+      "updatedAt": "19:15",
       "counts": {
         "as": {
-          "김기범": 3,
+          "최민석": 7,
+          "김기범": 4,
           "서상원": 24,
-          "최민석": 5,
           "김동욱": 19,
           "김현기": 30,
           "김규빈": 18,
@@ -860,7 +860,7 @@ window.SLACK_DATA = {
           "심성현": 34
         },
         "onboarding": {
-          "최민석": 4,
+          "최민석": 5,
           "심성현": 6,
           "송태양": 7,
           "김동욱": 6,
@@ -884,16 +884,6 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
-        {
-          "time": "18:43",
-          "store": "망치유통",
-          "biz": "4967300393",
-          "handler": "김기범",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
         {
           "time": "17:12",
           "store": "드롭탑 강천산(대구)휴게소점",
