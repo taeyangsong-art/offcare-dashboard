@@ -93,7 +93,7 @@ async function fetchAll(channelId) {
 }
 
 // 한 채널의 메시지를 공유 counts/pending 에 누적
-function tallyInto(msgs, ch, counts, pending, seen) {
+function tallyInto(msgs, ch, counts, pending) {
   let completed = 0, externCount = 0, dup = 0, latest = '';
   for (const m of msgs) {
     if (m.subtype && m.subtype !== 'bot_message') continue; // 봇 접수 메시지(메뉴채널)는 집계, 시스템 메시지는 제외
@@ -114,16 +114,20 @@ function tallyInto(msgs, ch, counts, pending, seen) {
     for (const n of names) { const cm = n.match(/^(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)(_확인.*)?$/); if (cm) { confirmPerson = personMap[cm[1]]; break; } }
     const hasAbsent = names.some(n => /부재/.test(n));                       // 1차/2차 부재
     const absTag = names.some(n => /2차.?부재/.test(n)) ? '2차 부재' : '1차 부재';
+    const hasDup = names.some(n => /중복/.test(n));                          // 팀이 '진짜 중복'에만 찍는 표시
     const doer = emp || confirmPerson;
 
-    const dupId = biz || store;              // 매장 식별(사업자번호 우선). 하루에 같은 매장은 카테고리 무관 1회만(글로벌 dedupe)
+    if (hasDup) { dup++; continue; }         // 중복 이모지 → 집계 제외 (재처리는 중복 표시 없으니 별개 건으로 정상 집계됨)
+
     if (hasExtern && doer) {                 // 외주 → 별도 집계
-      if (dupId && seen.has(dupId)) { dup++; }
-      else { if (dupId) seen.add(dupId); const who = doer || '미지정'; counts.extern = counts.extern || {}; counts.extern[who] = (counts.extern[who] || 0) + 1; externCount++; }
+      const who = doer || '미지정';
+      counts.extern = counts.extern || {};
+      counts.extern[who] = (counts.extern[who] || 0) + 1; externCount++;
     } else if (emp || emojiCat) {            // 완료담당자(원격OOO) 또는 카테고리 이모지(AS/온보딩/명의변경 등) → 처리(완료). 부재가 찍혀 있어도 처리로 인정
       const catKey = ch.forceCat || emojiCat || ch.defaultCat;
-      if (dupId && seen.has(dupId)) { dup++; }  // 이미 오늘 카운트된 매장 → 제외(스프레드시트 기준)
-      else { if (dupId) seen.add(dupId); const who = emp || confirmPerson || '미지정'; counts[catKey] = counts[catKey] || {}; counts[catKey][who] = (counts[catKey][who] || 0) + 1; completed++; }
+      const who = emp || confirmPerson || '미지정';
+      counts[catKey] = counts[catKey] || {};
+      counts[catKey][who] = (counts[catKey][who] || 0) + 1; completed++;
     } else if (hasAbsent) {                  // 완료·카테고리 이모지 없이 '부재만' → 확인필요(처리 제외)
       pending.push({ time, store, biz, handler: doer || '미지정', cat: ch.forceCat || ch.defaultCat, reasons: [absTag] });
     } else if (confirmPerson) {              // 확인만 → 확인필요
@@ -206,7 +210,7 @@ function tallyVoc(msgs, voc) {
 }
 
 (async () => {
-  const counts = {}, pending = [], seen = new Set();
+  const counts = {}, pending = [];
   let completed = 0, externCount = 0, dupTotal = 0, latest = '';
   const voc = { responses: 0, install: { count: 0, low: 0 }, nps: { count: 0, low: 0 }, high: { install: 0, nps: 0 }, npsDist: {}, installDist: {}, byIndustry: {}, byTenure: {}, byVan: {}, reasonCounts: {}, alerts: [], praises: [], latest: '' };
   let hasVoc = false;
@@ -218,9 +222,9 @@ function tallyVoc(msgs, voc) {
       tallyVoc(msgs, voc); hasVoc = true;
       console.log(`  [${ch.label}] 응답 ${voc.responses} · 구매설치저점 ${voc.install.low} · NPS저점 ${voc.nps.low}`);
     } else {
-      const r = tallyInto(msgs, ch, counts, pending, seen);
+      const r = tallyInto(msgs, ch, counts, pending);
       completed += r.completed; externCount += r.externCount; dupTotal += r.dup; if (r.latest > latest) latest = r.latest;
-      console.log(`  [${ch.label}] 메시지 ${msgs.length}건 (중복 제외 ${r.dup})`);
+      console.log(`  [${ch.label}] 메시지 ${msgs.length}건 (중복이모지 제외 ${r.dup})`);
     }
   }
   pending.sort((a, b) => (b.time || '').localeCompare(a.time || ''));
