@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 28,
+  "version": 29,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -875,9 +875,140 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-10": {
-      "updatedAt": "",
-      "counts": {},
-      "pending": []
+      "updatedAt": "10:30",
+      "counts": {
+        "as": {
+          "김규빈": 2,
+          "서상원": 4,
+          "김동욱": 3,
+          "송태양": 2,
+          "심성현": 2,
+          "김현기": 2
+        },
+        "onboarding": {
+          "서상원": 1,
+          "김규빈": 2,
+          "심성현": 1
+        },
+        "extern": {
+          "서상원": 1
+        },
+        "transfer": {
+          "송태양": 3
+        },
+        "delivery": {
+          "서상원": 1
+        }
+      },
+      "pending": [
+        {
+          "time": "10:19",
+          "store": "강창구찹쌀진순대 인천청라점",
+          "biz": "1372139442",
+          "handler": "김동욱",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "10:18",
+          "store": "뷰티인사이드",
+          "biz": "6180745485",
+          "handler": "김규빈",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "10:01",
+          "store": "선웅방재",
+          "biz": "2391202797",
+          "handler": "김동욱",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
+      "voc": {
+        "responses": 2,
+        "install": {
+          "count": 0,
+          "low": 0
+        },
+        "nps": {
+          "count": 2,
+          "low": 1
+        },
+        "high": {
+          "install": 0,
+          "nps": 0
+        },
+        "npsDist": {
+          "5": 1,
+          "9": 1
+        },
+        "installDist": {},
+        "byIndustry": {},
+        "byTenure": {
+          "1개월": {
+            "total": 1,
+            "low": 1
+          },
+          "6개월": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "KSNET": {
+            "total": 1,
+            "low": 1
+          },
+          "DAOU": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 1
+        },
+        "alerts": [
+          {
+            "time": "08:01",
+            "store": "도림",
+            "storeId": "499556",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "네트워크 연결이 자주 장애가 일어나서 불안하다",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": ""
+          }
+        ],
+        "praises": [
+          {
+            "time": "07:36",
+            "store": "네일멜로(Nail Mello)",
+            "storeId": "280178",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 9,
+            "text": "편리해요",
+            "byReaction": false
+          }
+        ]
+      }
     }
   }
 };
