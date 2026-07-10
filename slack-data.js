@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 49,
+  "version": 50,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -478,9 +478,6 @@ window.SLACK_DATA = {
           "김현기": 3,
           "김동욱": 8
         },
-        "voc": {
-          "송태양": 2
-        },
         "extern": {
           "서상원": 5,
           "김현기": 1,
@@ -513,36 +510,6 @@ window.SLACK_DATA = {
           "cat": "as",
           "reasons": [
             "1차 부재"
-          ]
-        },
-        {
-          "time": "15:00",
-          "store": "정성가득",
-          "biz": "8041003505",
-          "handler": "심성현",
-          "cat": "as",
-          "reasons": [
-            "2차 부재"
-          ]
-        },
-        {
-          "time": "15:00",
-          "store": "윤슬테라피",
-          "biz": "2350503404",
-          "handler": "심성현",
-          "cat": "as",
-          "reasons": [
-            "2차 부재"
-          ]
-        },
-        {
-          "time": "13:00",
-          "store": "나래수학교습소",
-          "biz": "8469202296",
-          "handler": "심성현",
-          "cat": "as",
-          "reasons": [
-            "2차 부재"
           ]
         }
       ],
