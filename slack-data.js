@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 53,
+  "version": 54,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -847,25 +847,26 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-10": {
-      "updatedAt": "18:30",
+      "updatedAt": "18:44",
       "counts": {
         "as": {
-          "최민석": 4,
+          "김기범": 2,
+          "최민석": 5,
           "김동욱": 19,
-          "심성현": 35,
           "김현기": 30,
           "김규빈": 18,
           "송태양": 12,
-          "서상원": 23
+          "서상원": 23,
+          "심성현": 34
         },
         "onboarding": {
+          "심성현": 6,
           "송태양": 7,
           "최민석": 3,
           "김동욱": 6,
           "서상원": 4,
           "김현기": 5,
-          "김규빈": 5,
-          "심성현": 5
+          "김규빈": 5
         },
         "extern": {
           "김동욱": 3,
@@ -884,9 +885,9 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "18:27",
-          "store": "훼밀리스포츠",
-          "biz": "1139520201",
+          "time": "18:38",
+          "store": "오태윤의 케이팝(KPOP) 댄스",
+          "biz": "3019865937",
           "handler": "김기범",
           "cat": "as",
           "reasons": [
@@ -905,13 +906,13 @@ window.SLACK_DATA = {
         }
       ],
       "voc": {
-        "responses": 26,
+        "responses": 27,
         "install": {
           "count": 6,
           "low": 1
         },
         "nps": {
-          "count": 26,
+          "count": 27,
           "low": 10
         },
         "high": {
@@ -926,7 +927,7 @@ window.SLACK_DATA = {
           "5": 3,
           "6": 1,
           "7": 1,
-          "8": 4,
+          "8": 5,
           "9": 4,
           "10": 6
         },
@@ -941,6 +942,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 11,
+            "low": 3
+          },
           "구매설치": {
             "total": 6,
             "low": 2
@@ -948,10 +953,6 @@ window.SLACK_DATA = {
           "6개월": {
             "total": 5,
             "low": 2
-          },
-          "3개월": {
-            "total": 10,
-            "low": 3
           },
           "1개월": {
             "total": 4,
@@ -963,6 +964,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 2,
+            "low": 0
+          },
           "SECTA9": {
             "total": 5,
             "low": 3
@@ -982,10 +987,6 @@ window.SLACK_DATA = {
           "DAOU": {
             "total": 2,
             "low": 1
-          },
-          "KPN": {
-            "total": 1,
-            "low": 0
           },
           "KSNET": {
             "total": 2,
