@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 141,
+  "version": 142,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1280,10 +1280,10 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-11": {
-      "updatedAt": "15:11",
+      "updatedAt": "15:28",
       "counts": {
         "as": {
-          "서상원": 1,
+          "서상원": 3,
           "미지정": 6,
           "김동욱": 28
         },
@@ -1306,6 +1306,16 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "15:23",
+          "store": "럭셔리노래연습장",
+          "biz": "7843500420",
+          "handler": "김동욱",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
           "time": "15:05",
           "store": "우마이크레페 망미점",
           "biz": "1213393444",
@@ -1327,41 +1337,67 @@ window.SLACK_DATA = {
         }
       ],
       "voc": {
-        "responses": 3,
+        "responses": 7,
         "install": {
-          "count": 1,
+          "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 3,
-          "low": 1
+          "count": 7,
+          "low": 3
         },
         "high": {
-          "install": 1,
-          "nps": 1
+          "install": 2,
+          "nps": 2
         },
         "npsDist": {
+          "1": 1,
           "2": 1,
-          "8": 1,
-          "10": 1
+          "4": 1,
+          "8": 2,
+          "10": 2
         },
         "installDist": {
-          "5": 1
+          "5": 2
         },
         "byIndustry": {
-          "도소매": 1
+          "도소매": 2
         },
         "byTenure": {
+          "구매설치": {
+            "total": 2,
+            "low": 0
+          },
+          "3개월": {
+            "total": 2,
+            "low": 2
+          },
+          "6개월": {
+            "total": 1,
+            "low": 0
+          },
           "12개월": {
             "total": 2,
             "low": 1
-          },
-          "구매설치": {
-            "total": 1,
-            "low": 0
           }
         },
         "byVan": {
+          "SMARTRO": {
+            "total": 1,
+            "low": 0
+          },
+          "KPN": {
+            "total": 2,
+            "low": 1
+          },
+          "SECTA9": {
+            "total": 1,
+            "low": 1
+          },
+          "KIS": {
+            "total": 1,
+            "low": 0
+          },
           "NICE": {
             "total": 1,
             "low": 1
@@ -1369,16 +1405,49 @@ window.SLACK_DATA = {
           "KSNET": {
             "total": 1,
             "low": 0
-          },
-          "KPN": {
-            "total": 1,
-            "low": 0
           }
         },
         "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
           "필요한 기능이 없거나 몰라서 불편": 1
         },
         "alerts": [
+          {
+            "time": "15:21",
+            "store": "정뷰티살롱",
+            "storeId": "430936",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 4,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 4,
+                "text": "어쩔땐 좋은데 처음에 시작할때 로딩 너무 오래걸리고 최근 이슈땜에 불안함",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": ""
+          },
+          {
+            "time": "15:21",
+            "store": "송정한식뷔페",
+            "storeId": "434863",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "서버끊김 결제느림 삼성페이인식",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": ""
+          },
           {
             "time": "15:06",
             "store": "위드미헤어",
@@ -1399,6 +1468,17 @@ window.SLACK_DATA = {
           }
         ],
         "praises": [
+          {
+            "time": "15:28",
+            "store": "에코샷 골프",
+            "storeId": "480340",
+            "indBucket": "도소매",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "설명도 잘되있고 쉬워요. 토스가 편리하고 간편해요",
+            "byReaction": false
+          },
           {
             "time": "15:06",
             "store": "드루와점핑다이어트 자이점",
