@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 140,
+  "version": 141,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1280,11 +1280,15 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-11": {
-      "updatedAt": "15:00",
+      "updatedAt": "15:11",
       "counts": {
         "as": {
+          "서상원": 1,
           "미지정": 6,
           "김동욱": 28
+        },
+        "extern": {
+          "김동욱": 1
         },
         "onboarding": {
           "김동욱": 1
@@ -1302,31 +1306,43 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "14:22",
-          "store": "황금상황버섯삼계탕,오리",
-          "biz": "5081492433",
+          "time": "15:05",
+          "store": "우마이크레페 망미점",
+          "biz": "1213393444",
           "handler": "김동욱",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
           ]
+        },
+        {
+          "time": "15:00",
+          "store": "더203에스티(THE203st)",
+          "biz": "5931901589",
+          "handler": "미지정",
+          "cat": "as",
+          "reasons": [
+            "1차 부재"
+          ]
         }
       ],
       "voc": {
-        "responses": 1,
+        "responses": 3,
         "install": {
           "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 1,
-          "low": 0
+          "count": 3,
+          "low": 1
         },
         "high": {
           "install": 1,
           "nps": 1
         },
         "npsDist": {
+          "2": 1,
+          "8": 1,
           "10": 1
         },
         "installDist": {
@@ -1336,20 +1352,64 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 2,
+            "low": 1
+          },
           "구매설치": {
             "total": 1,
             "low": 0
           }
         },
         "byVan": {
+          "NICE": {
+            "total": 1,
+            "low": 1
+          },
+          "KSNET": {
+            "total": 1,
+            "low": 0
+          },
           "KPN": {
             "total": 1,
             "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "필요한 기능이 없거나 몰라서 불편": 1
+        },
+        "alerts": [
+          {
+            "time": "15:06",
+            "store": "위드미헤어",
+            "storeId": "209497",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 2,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 2,
+                "text": "불편하다.",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": ""
+          }
+        ],
         "praises": [
+          {
+            "time": "15:06",
+            "store": "드루와점핑다이어트 자이점",
+            "storeId": "182183",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 8,
+            "text": "편함",
+            "byReaction": false
+          },
           {
             "time": "13:28",
             "store": "브로스커스텀",
