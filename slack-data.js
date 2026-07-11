@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 123,
+  "version": 124,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1280,10 +1280,13 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-11": {
-      "updatedAt": "10:44",
+      "updatedAt": "10:54",
       "counts": {
         "as": {
           "김동욱": 12
+        },
+        "onboarding": {
+          "김동욱": 1
         },
         "transfer": {
           "김동욱": 2
@@ -1294,9 +1297,9 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "10:09",
-          "store": "가장맛있는 후라이드 안동점",
-          "biz": "1535400985",
+          "time": "10:44",
+          "store": "자미원",
+          "biz": "1321416714",
           "handler": "김동욱",
           "cat": "as",
           "reasons": [
