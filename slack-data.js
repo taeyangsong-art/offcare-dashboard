@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 164,
+  "version": 165,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1280,10 +1280,10 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-11": {
-      "updatedAt": "20:30",
+      "updatedAt": "20:43",
       "counts": {
         "as": {
-          "서상원": 9,
+          "서상원": 10,
           "김동욱": 42,
           "미지정": 14
         },
@@ -1307,13 +1307,13 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "voc": {
-        "responses": 24,
+        "responses": 25,
         "install": {
           "count": 9,
           "low": 0
         },
         "nps": {
-          "count": 24,
+          "count": 25,
           "low": 4
         },
         "high": {
@@ -1328,7 +1328,7 @@ window.SLACK_DATA = {
           "6": 2,
           "7": 1,
           "8": 4,
-          "9": 1,
+          "9": 2,
           "10": 12
         },
         "installDist": {
@@ -1343,7 +1343,7 @@ window.SLACK_DATA = {
         },
         "byTenure": {
           "1개월": {
-            "total": 5,
+            "total": 6,
             "low": 1
           },
           "12개월": {
@@ -1365,7 +1365,7 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KIS": {
-            "total": 10,
+            "total": 11,
             "low": 1
           },
           "KSNET": {
@@ -1473,6 +1473,17 @@ window.SLACK_DATA = {
           }
         ],
         "praises": [
+          {
+            "time": "20:43",
+            "store": "고르곤",
+            "storeId": "498161",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 9,
+            "text": "모든 점이 좋은데 업종 특성상 네이버 리뷰가 중요하다 보니 그 점이 조금 아쉬움이 남습니다. 가격 입력해서 사용하니 그냥 화면 없는 단말기와 차별성이 적네요. 디자인은 깔끔해서 좋습니다.",
+            "byReaction": false
+          },
           {
             "time": "20:08",
             "store": "레더준",
