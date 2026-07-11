@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 147,
+  "version": 148,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1280,12 +1280,12 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-11": {
-      "updatedAt": "16:28",
+      "updatedAt": "16:45",
       "counts": {
         "as": {
-          "서상원": 5,
-          "미지정": 9,
-          "김동욱": 33
+          "김동욱": 34,
+          "미지정": 10,
+          "서상원": 5
         },
         "extern": {
           "김동욱": 1
@@ -1306,27 +1306,27 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "voc": {
-        "responses": 13,
+        "responses": 15,
         "install": {
           "count": 3,
           "low": 0
         },
         "nps": {
-          "count": 13,
+          "count": 15,
           "low": 4
         },
         "high": {
           "install": 3,
-          "nps": 6
+          "nps": 7
         },
         "npsDist": {
           "1": 1,
           "2": 1,
           "3": 1,
           "4": 1,
-          "6": 1,
+          "6": 2,
           "8": 2,
-          "10": 6
+          "10": 7
         },
         "installDist": {
           "5": 3
@@ -1336,6 +1336,10 @@ window.SLACK_DATA = {
           "도소매": 2
         },
         "byTenure": {
+          "12개월": {
+            "total": 4,
+            "low": 1
+          },
           "구매설치": {
             "total": 3,
             "low": 0
@@ -1351,13 +1355,17 @@ window.SLACK_DATA = {
           "3개월": {
             "total": 2,
             "low": 2
-          },
-          "12개월": {
-            "total": 2,
-            "low": 1
           }
         },
         "byVan": {
+          "NICE": {
+            "total": 2,
+            "low": 1
+          },
+          "KPN": {
+            "total": 3,
+            "low": 1
+          },
           "KIS": {
             "total": 4,
             "low": 1
@@ -1373,14 +1381,6 @@ window.SLACK_DATA = {
           "SMARTRO": {
             "total": 1,
             "low": 0
-          },
-          "KPN": {
-            "total": 2,
-            "low": 1
-          },
-          "NICE": {
-            "total": 1,
-            "low": 1
           },
           "KSNET": {
             "total": 1,
@@ -1467,6 +1467,17 @@ window.SLACK_DATA = {
           }
         ],
         "praises": [
+          {
+            "time": "16:37",
+            "store": "아담리즈수학학원 시흥배곧센터",
+            "storeId": "204875",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 6,
+            "text": "지금의 토스단말기 형태는 학원업종에 맞는 형태는 아니라고 봅니다. 요식업에 맞춰져있지요.",
+            "byReaction": false
+          },
           {
             "time": "16:28",
             "store": "명지탁구클럽",
