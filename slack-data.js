@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 158,
+  "version": 159,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1280,10 +1280,10 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-11": {
-      "updatedAt": "18:42",
+      "updatedAt": "19:29",
       "counts": {
         "as": {
-          "서상원": 7,
+          "서상원": 8,
           "김동욱": 42,
           "미지정": 14
         },
@@ -1307,17 +1307,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "voc": {
-        "responses": 21,
+        "responses": 22,
         "install": {
-          "count": 8,
+          "count": 9,
           "low": 0
         },
         "nps": {
-          "count": 21,
+          "count": 22,
           "low": 4
         },
         "high": {
-          "install": 5,
+          "install": 6,
           "nps": 10
         },
         "npsDist": {
@@ -1327,28 +1327,28 @@ window.SLACK_DATA = {
           "4": 1,
           "6": 2,
           "7": 1,
-          "8": 3,
+          "8": 4,
           "9": 1,
           "10": 10
         },
         "installDist": {
           "4": 3,
-          "5": 5
+          "5": 6
         },
         "byIndustry": {
+          "카페": 2,
           "서비스[학원]": 3,
-          "카페": 1,
           "기타": 1,
           "도소매": 3
         },
         "byTenure": {
+          "구매설치": {
+            "total": 9,
+            "low": 0
+          },
           "1개월": {
             "total": 4,
             "low": 1
-          },
-          "구매설치": {
-            "total": 8,
-            "low": 0
           },
           "12개월": {
             "total": 4,
@@ -1365,7 +1365,7 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KIS": {
-            "total": 8,
+            "total": 9,
             "low": 1
           },
           "SMARTRO": {
