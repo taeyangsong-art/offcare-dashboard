@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 115,
+  "version": 116,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1280,13 +1280,24 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-11": {
-      "updatedAt": "08:19",
+      "updatedAt": "09:00",
       "counts": {
         "as": {
           "김동욱": 4
         }
       },
-      "pending": []
+      "pending": [
+        {
+          "time": "09:00",
+          "store": "오쌤플러스 수학학원",
+          "biz": "5729002178",
+          "handler": "김동욱",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ]
     }
   }
 };
