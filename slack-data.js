@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 150,
+  "version": 151,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1280,12 +1280,12 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-11": {
-      "updatedAt": "17:07",
+      "updatedAt": "17:29",
       "counts": {
         "as": {
+          "미지정": 12,
           "김동욱": 37,
-          "서상원": 6,
-          "미지정": 10
+          "서상원": 6
         },
         "extern": {
           "김동욱": 1
@@ -1317,18 +1317,18 @@ window.SLACK_DATA = {
         }
       ],
       "voc": {
-        "responses": 19,
+        "responses": 20,
         "install": {
-          "count": 7,
+          "count": 8,
           "low": 0
         },
         "nps": {
-          "count": 19,
+          "count": 20,
           "low": 4
         },
         "high": {
-          "install": 4,
-          "nps": 9
+          "install": 5,
+          "nps": 10
         },
         "npsDist": {
           "1": 1,
@@ -1338,21 +1338,21 @@ window.SLACK_DATA = {
           "6": 2,
           "8": 3,
           "9": 1,
-          "10": 9
+          "10": 10
         },
         "installDist": {
           "4": 3,
-          "5": 4
+          "5": 5
         },
         "byIndustry": {
-          "서비스[학원]": 2,
+          "서비스[학원]": 3,
           "카페": 1,
           "기타": 1,
           "도소매": 3
         },
         "byTenure": {
           "구매설치": {
-            "total": 7,
+            "total": 8,
             "low": 0
           },
           "12개월": {
@@ -1373,6 +1373,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SMARTRO": {
+            "total": 2,
+            "low": 0
+          },
           "NICE": {
             "total": 3,
             "low": 1
@@ -1392,10 +1396,6 @@ window.SLACK_DATA = {
           "SECTA9": {
             "total": 2,
             "low": 1
-          },
-          "SMARTRO": {
-            "total": 1,
-            "low": 0
           },
           "KSNET": {
             "total": 1,
@@ -1482,6 +1482,17 @@ window.SLACK_DATA = {
           }
         ],
         "praises": [
+          {
+            "time": "17:29",
+            "store": "하이브뮤직스튜디오",
+            "storeId": "539525",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "좋네요 좋아요",
+            "byReaction": false
+          },
           {
             "time": "16:59",
             "store": "엘로타로사주",
