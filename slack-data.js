@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 153,
+  "version": 154,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1280,12 +1280,12 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-11": {
-      "updatedAt": "17:57",
+      "updatedAt": "18:14",
       "counts": {
         "as": {
-          "김동욱": 41,
-          "미지정": 13,
-          "서상원": 6
+          "서상원": 7,
+          "김동욱": 42,
+          "미지정": 14
         },
         "extern": {
           "김동욱": 1
@@ -1304,18 +1304,7 @@ window.SLACK_DATA = {
           "김동욱": 1
         }
       },
-      "pending": [
-        {
-          "time": "17:57",
-          "store": "개나리옥 무뚜기설렁탕",
-          "biz": "6220879680",
-          "handler": "김동욱",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        }
-      ],
+      "pending": [],
       "voc": {
         "responses": 20,
         "install": {
