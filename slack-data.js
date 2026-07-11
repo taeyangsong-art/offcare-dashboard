@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 137,
+  "version": 138,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1280,10 +1280,10 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-11": {
-      "updatedAt": "14:10",
+      "updatedAt": "14:22",
       "counts": {
         "as": {
-          "김동욱": 26,
+          "김동욱": 27,
           "미지정": 4
         },
         "onboarding": {
@@ -1293,8 +1293,8 @@ window.SLACK_DATA = {
           "김동욱": 2
         },
         "menu": {
-          "미지정": 1,
-          "김동욱": 1
+          "김동욱": 2,
+          "미지정": 1
         },
         "delivery": {
           "김동욱": 1
@@ -1302,9 +1302,9 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "14:10",
-          "store": "곰순이네상점",
-          "biz": "3443301265",
+          "time": "14:22",
+          "store": "황금상황버섯삼계탕,오리",
+          "biz": "5081492433",
           "handler": "김동욱",
           "cat": "as",
           "reasons": [
