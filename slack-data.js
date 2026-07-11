@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 143,
+  "version": 144,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1280,12 +1280,12 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-11": {
-      "updatedAt": "15:41",
+      "updatedAt": "15:46",
       "counts": {
         "as": {
-          "김동욱": 30,
-          "서상원": 3,
-          "미지정": 7
+          "서상원": 4,
+          "김동욱": 32,
+          "미지정": 8
         },
         "extern": {
           "김동욱": 1
@@ -1304,68 +1304,28 @@ window.SLACK_DATA = {
           "김동욱": 1
         }
       },
-      "pending": [
-        {
-          "time": "15:40",
-          "store": "다길김밥",
-          "biz": "6732601675",
-          "handler": "서상원",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "15:39",
-          "store": "청담각 짜장짬뽕전문점",
-          "biz": "4832802003",
-          "handler": "김동욱",
-          "cat": "as",
-          "reasons": [
-            "1차 부재"
-          ]
-        },
-        {
-          "time": "15:05",
-          "store": "우마이크레페 망미점",
-          "biz": "1213393444",
-          "handler": "김동욱",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "15:00",
-          "store": "더203에스티(THE203st)",
-          "biz": "5931901589",
-          "handler": "미지정",
-          "cat": "as",
-          "reasons": [
-            "1차 부재"
-          ]
-        }
-      ],
+      "pending": [],
       "voc": {
-        "responses": 9,
+        "responses": 11,
         "install": {
           "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 9,
+          "count": 11,
           "low": 3
         },
         "high": {
           "install": 2,
-          "nps": 4
+          "nps": 5
         },
         "npsDist": {
           "1": 1,
           "2": 1,
           "4": 1,
+          "6": 1,
           "8": 2,
-          "10": 4
+          "10": 5
         },
         "installDist": {
           "5": 2
@@ -1374,6 +1334,10 @@ window.SLACK_DATA = {
           "도소매": 2
         },
         "byTenure": {
+          "6개월": {
+            "total": 3,
+            "low": 0
+          },
           "1개월": {
             "total": 2,
             "low": 0
@@ -1386,16 +1350,16 @@ window.SLACK_DATA = {
             "total": 2,
             "low": 2
           },
-          "6개월": {
-            "total": 1,
-            "low": 0
-          },
           "12개월": {
             "total": 2,
             "low": 1
           }
         },
         "byVan": {
+          "DAOU": {
+            "total": 2,
+            "low": 0
+          },
           "SECTA9": {
             "total": 2,
             "low": 1
