@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 162,
+  "version": 163,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1280,7 +1280,7 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-11": {
-      "updatedAt": "19:44",
+      "updatedAt": "20:14",
       "counts": {
         "as": {
           "서상원": 9,
@@ -1307,18 +1307,18 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "voc": {
-        "responses": 22,
+        "responses": 24,
         "install": {
           "count": 9,
           "low": 0
         },
         "nps": {
-          "count": 22,
+          "count": 24,
           "low": 4
         },
         "high": {
           "install": 6,
-          "nps": 10
+          "nps": 12
         },
         "npsDist": {
           "1": 1,
@@ -1329,7 +1329,7 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 4,
           "9": 1,
-          "10": 10
+          "10": 12
         },
         "installDist": {
           "4": 3,
@@ -1342,17 +1342,17 @@ window.SLACK_DATA = {
           "도소매": 3
         },
         "byTenure": {
-          "구매설치": {
-            "total": 9,
-            "low": 0
-          },
           "1개월": {
-            "total": 4,
+            "total": 5,
             "low": 1
           },
           "12개월": {
-            "total": 4,
+            "total": 5,
             "low": 1
+          },
+          "구매설치": {
+            "total": 9,
+            "low": 0
           },
           "6개월": {
             "total": 3,
@@ -1365,8 +1365,12 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KIS": {
-            "total": 9,
+            "total": 10,
             "low": 1
+          },
+          "KSNET": {
+            "total": 2,
+            "low": 0
           },
           "SMARTRO": {
             "total": 2,
@@ -1387,10 +1391,6 @@ window.SLACK_DATA = {
           "SECTA9": {
             "total": 2,
             "low": 1
-          },
-          "KSNET": {
-            "total": 1,
-            "low": 0
           }
         },
         "reasonCounts": {
@@ -1473,6 +1473,17 @@ window.SLACK_DATA = {
           }
         ],
         "praises": [
+          {
+            "time": "20:08",
+            "store": "레더준",
+            "storeId": "192848",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "편리성",
+            "byReaction": false
+          },
           {
             "time": "17:29",
             "store": "하이브뮤직스튜디오",
