@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 120,
+  "version": 121,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1280,16 +1280,27 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-11": {
-      "updatedAt": "10:00",
+      "updatedAt": "10:10",
       "counts": {
         "as": {
-          "김동욱": 10
+          "김동욱": 11
         },
         "transfer": {
-          "김동욱": 1
+          "김동욱": 2
         }
       },
-      "pending": []
+      "pending": [
+        {
+          "time": "10:10",
+          "store": "영월 동강 다슬기",
+          "biz": "4041271850",
+          "handler": "김동욱",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ]
     }
   }
 };
