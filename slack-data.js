@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 127,
+  "version": 128,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1280,10 +1280,11 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-11": {
-      "updatedAt": "11:43",
+      "updatedAt": "12:00",
       "counts": {
         "as": {
-          "김동욱": 19
+          "김동욱": 21,
+          "미지정": 1
         },
         "onboarding": {
           "김동욱": 1
@@ -1295,18 +1296,7 @@ window.SLACK_DATA = {
           "김동욱": 1
         }
       },
-      "pending": [
-        {
-          "time": "11:25",
-          "store": "드롭탑 함평나비(무안)휴게소",
-          "biz": "1568501691",
-          "handler": "김동욱",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        }
-      ]
+      "pending": []
     }
   }
 };
