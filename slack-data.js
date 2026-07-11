@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 179,
+  "version": 180,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1609,9 +1609,60 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-12": {
-      "updatedAt": "",
+      "updatedAt": "00:01",
       "counts": {},
-      "pending": []
+      "pending": [],
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 1,
+          "low": 0
+        },
+        "nps": {
+          "count": 1,
+          "low": 0
+        },
+        "high": {
+          "install": 1,
+          "nps": 1
+        },
+        "npsDist": {
+          "10": 1
+        },
+        "installDist": {
+          "5": 1
+        },
+        "byIndustry": {
+          "요식업": 1
+        },
+        "byTenure": {
+          "구매설치": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "SMARTRO": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {},
+        "alerts": [],
+        "praises": [
+          {
+            "time": "00:01",
+            "store": "권선반찬",
+            "storeId": "541635",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "친절하게 설명을 잘해주세요 자세하게 설명",
+            "byReaction": false
+          }
+        ]
+      }
     }
   }
 };
