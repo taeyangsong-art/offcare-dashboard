@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 134,
+  "version": 135,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1283,8 +1283,8 @@ window.SLACK_DATA = {
       "updatedAt": "13:28",
       "counts": {
         "as": {
-          "김동욱": 24,
-          "미지정": 3
+          "미지정": 4,
+          "김동욱": 24
         },
         "onboarding": {
           "김동욱": 1
@@ -1293,10 +1293,22 @@ window.SLACK_DATA = {
           "김동욱": 2
         },
         "menu": {
+          "미지정": 1,
           "김동욱": 1
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "12:00",
+          "store": "(주)호퍼스키친",
+          "biz": "1358564855",
+          "handler": "김동욱",
+          "cat": "delivery",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "voc": {
         "responses": 1,
         "install": {
