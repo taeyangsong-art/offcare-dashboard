@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 144,
+  "version": 145,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1280,11 +1280,11 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-11": {
-      "updatedAt": "15:46",
+      "updatedAt": "16:12",
       "counts": {
         "as": {
+          "김동욱": 33,
           "서상원": 4,
-          "김동욱": 32,
           "미지정": 8
         },
         "extern": {
@@ -1306,14 +1306,14 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "voc": {
-        "responses": 11,
+        "responses": 12,
         "install": {
           "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 11,
-          "low": 3
+          "count": 12,
+          "low": 4
         },
         "high": {
           "install": 2,
@@ -1322,6 +1322,7 @@ window.SLACK_DATA = {
         "npsDist": {
           "1": 1,
           "2": 1,
+          "3": 1,
           "4": 1,
           "6": 1,
           "8": 2,
@@ -1334,12 +1335,12 @@ window.SLACK_DATA = {
           "도소매": 2
         },
         "byTenure": {
+          "1개월": {
+            "total": 3,
+            "low": 1
+          },
           "6개월": {
             "total": 3,
-            "low": 0
-          },
-          "1개월": {
-            "total": 2,
             "low": 0
           },
           "구매설치": {
@@ -1356,6 +1357,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 3,
+            "low": 1
+          },
           "DAOU": {
             "total": 2,
             "low": 0
@@ -1363,10 +1368,6 @@ window.SLACK_DATA = {
           "SECTA9": {
             "total": 2,
             "low": 1
-          },
-          "KIS": {
-            "total": 2,
-            "low": 0
           },
           "SMARTRO": {
             "total": 1,
@@ -1386,10 +1387,29 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "고객센터 연락이 매우 힘듦": 1,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
           "필요한 기능이 없거나 몰라서 불편": 1
         },
         "alerts": [
+          {
+            "time": "16:11",
+            "store": "237오므카레 서초 지파이브점",
+            "storeId": "475320",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "큐알코드 결재인데 기존 주문이 자동으로 안지워져서 손님들이 결재 잘못됐다고 하루에도 몇번씩 문의 함. 바쁜 점심시간에 테이블 비우기를 어떻게 계속 해주나요. 문의해도 답변도 없네요",
+                "cat": "고객센터 연락이 매우 힘듦"
+              }
+            ],
+            "emp": ""
+          },
           {
             "time": "15:21",
             "store": "정뷰티살롱",
