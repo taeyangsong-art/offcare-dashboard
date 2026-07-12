@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 256,
+  "version": 257,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1609,18 +1609,18 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-12": {
-      "updatedAt": "17:44",
+      "updatedAt": "18:55",
       "counts": {},
       "pending": [],
       "voc": {
-        "responses": 22,
+        "responses": 23,
         "install": {
           "count": 6,
           "low": 1
         },
         "nps": {
-          "count": 22,
-          "low": 5
+          "count": 23,
+          "low": 6
         },
         "high": {
           "install": 1,
@@ -1629,6 +1629,7 @@ window.SLACK_DATA = {
         "npsDist": {
           "0": 2,
           "3": 3,
+          "4": 1,
           "6": 1,
           "8": 1,
           "9": 3,
@@ -1646,6 +1647,10 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 3,
+            "low": 1
+          },
           "12개월": {
             "total": 5,
             "low": 1
@@ -1653,10 +1658,6 @@ window.SLACK_DATA = {
           "3개월": {
             "total": 8,
             "low": 2
-          },
-          "6개월": {
-            "total": 2,
-            "low": 0
           },
           "구매설치": {
             "total": 6,
@@ -1668,6 +1669,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SECTA9": {
+            "total": 6,
+            "low": 2
+          },
           "KSNET": {
             "total": 2,
             "low": 0
@@ -1684,10 +1689,6 @@ window.SLACK_DATA = {
             "total": 4,
             "low": 0
           },
-          "SECTA9": {
-            "total": 5,
-            "low": 1
-          },
           "NICE": {
             "total": 2,
             "low": 1
@@ -1698,10 +1699,28 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
-          "사용중 오류가 자주 발생함": 3,
+          "사용중 오류가 자주 발생함": 4,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 3
         },
         "alerts": [
+          {
+            "time": "18:55",
+            "store": "아야서울(ayaseoul)",
+            "storeId": "314381",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 4,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 4,
+                "text": "시스템 먹통 된 적 있고 서비스센터 불친절",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": ""
+          },
           {
             "time": "16:29",
             "store": "함양군농촌마을관광협동조합 산삼주제관점",
