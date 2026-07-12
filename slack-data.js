@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 267,
+  "version": 268,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1609,17 +1609,17 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-12": {
-      "updatedAt": "19:25",
+      "updatedAt": "21:21",
       "counts": {},
       "pending": [],
       "voc": {
-        "responses": 24,
+        "responses": 25,
         "install": {
           "count": 6,
           "low": 1
         },
         "nps": {
-          "count": 24,
+          "count": 25,
           "low": 6
         },
         "high": {
@@ -1632,7 +1632,7 @@ window.SLACK_DATA = {
           "4": 1,
           "6": 1,
           "7": 1,
-          "8": 1,
+          "8": 2,
           "9": 3,
           "10": 12
         },
@@ -1648,6 +1648,10 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 2,
+            "low": 1
+          },
           "6개월": {
             "total": 4,
             "low": 1
@@ -1663,15 +1667,11 @@ window.SLACK_DATA = {
           "구매설치": {
             "total": 6,
             "low": 2
-          },
-          "1개월": {
-            "total": 1,
-            "low": 1
           }
         },
         "byVan": {
           "KSNET": {
-            "total": 3,
+            "total": 4,
             "low": 0
           },
           "SECTA9": {
@@ -1832,6 +1832,17 @@ window.SLACK_DATA = {
           }
         ],
         "praises": [
+          {
+            "time": "21:21",
+            "store": "로지을 카페(Ro-jieul kafe)",
+            "storeId": "498130",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 8,
+            "text": "일단 누구나 다루기 쉬운 UX/UI가 좋습니다만, 디테일에서 약간 아쉬운 면은 있기에.. 10점 아닌 8점을 드렸습니다.",
+            "byReaction": false
+          },
           {
             "time": "17:44",
             "store": "스파피부관리샵",
