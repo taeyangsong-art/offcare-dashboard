@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 240,
+  "version": 241,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1609,48 +1609,56 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-12": {
-      "updatedAt": "14:43",
+      "updatedAt": "15:14",
       "counts": {},
       "pending": [],
       "voc": {
-        "responses": 3,
+        "responses": 6,
         "install": {
-          "count": 2,
-          "low": 0
+          "count": 4,
+          "low": 1
         },
         "nps": {
-          "count": 3,
+          "count": 6,
           "low": 0
         },
         "high": {
           "install": 1,
-          "nps": 2
+          "nps": 3
         },
         "npsDist": {
-          "9": 1,
-          "10": 2
+          "8": 1,
+          "9": 2,
+          "10": 3
         },
         "installDist": {
-          "3": 1,
+          "2": 1,
+          "3": 2,
           "5": 1
         },
         "byIndustry": {
+          "기타": 1,
+          "도소매": 1,
           "요식업": 2
         },
         "byTenure": {
           "12개월": {
-            "total": 1,
+            "total": 2,
             "low": 0
           },
           "구매설치": {
-            "total": 2,
-            "low": 0
+            "total": 4,
+            "low": 1
           }
         },
         "byVan": {
           "KPN": {
-            "total": 1,
+            "total": 3,
             "low": 0
+          },
+          "KIS": {
+            "total": 1,
+            "low": 1
           },
           "SECTA9": {
             "total": 1,
@@ -1661,9 +1669,41 @@ window.SLACK_DATA = {
             "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
+        },
+        "alerts": [
+          {
+            "time": "15:06",
+            "store": "자작나무 아카데미",
+            "storeId": "536189",
+            "industry": "공방",
+            "indBucket": "기타",
+            "install": 2,
+            "nps": 8,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 2,
+                "text": "첨이라 어려움",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": ""
+          }
+        ],
         "praises": [
+          {
+            "time": "15:14",
+            "store": "유원헤어",
+            "storeId": "211267",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "이번 결제 문제 사건에 대한 토스의 대응이 정말 인상적이었습니다. 문제 발생 직후부터 상황을 빠르게 안내해 주었고, 고객 입장에서 불안하지 않도록 지속적으로 공지와 대응이 이루어져 신뢰가 더욱 커졌습니다. 저 역시 매장에서 토스 단말기를 사용하고 있는데, 이번 일을 보면서 “토스로 바꾸길 정말 잘했다”는 생각이 들었습니다. 단순히 결제만 되는 단말기가 아니라 문제가 생겼을 때 얼마나 빠르고 책임감 있게 대응하는지가 더 중요하다는 걸 느꼈습니다. 앞으로도 안심하고 사용할 수 있을 것 같고, 토스 단말기로 변경한 것을 한 번도 후회한 적이 없습니다. 앞으로도 지금처럼 믿을 수 있는 서비스와 빠른 대응을 기대하겠습니다.",
+            "byReaction": false
+          },
           {
             "time": "14:43",
             "store": "홍플라워",
