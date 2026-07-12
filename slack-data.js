@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 238,
+  "version": 239,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1609,17 +1609,17 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-12": {
-      "updatedAt": "09:34",
+      "updatedAt": "14:43",
       "counts": {},
       "pending": [],
       "voc": {
-        "responses": 2,
+        "responses": 3,
         "install": {
           "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 2,
+          "count": 3,
           "low": 0
         },
         "high": {
@@ -1627,6 +1627,7 @@ window.SLACK_DATA = {
           "nps": 2
         },
         "npsDist": {
+          "9": 1,
           "10": 2
         },
         "installDist": {
@@ -1637,12 +1638,20 @@ window.SLACK_DATA = {
           "요식업": 2
         },
         "byTenure": {
+          "12개월": {
+            "total": 1,
+            "low": 0
+          },
           "구매설치": {
             "total": 2,
             "low": 0
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 1,
+            "low": 0
+          },
           "SECTA9": {
             "total": 1,
             "low": 0
@@ -1655,6 +1664,17 @@ window.SLACK_DATA = {
         "reasonCounts": {},
         "alerts": [],
         "praises": [
+          {
+            "time": "14:43",
+            "store": "홍플라워",
+            "storeId": "210574",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 9,
+            "text": "사용하기에 편리합니다",
+            "byReaction": false
+          },
           {
             "time": "09:34",
             "store": "온정(시부야함바그)",
