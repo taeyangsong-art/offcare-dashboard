@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 242,
+  "version": 243,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1609,27 +1609,29 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-12": {
-      "updatedAt": "15:29",
+      "updatedAt": "15:49",
       "counts": {},
       "pending": [],
       "voc": {
-        "responses": 11,
+        "responses": 14,
         "install": {
           "count": 4,
           "low": 1
         },
         "nps": {
-          "count": 11,
-          "low": 0
+          "count": 14,
+          "low": 2
         },
         "high": {
           "install": 1,
-          "nps": 7
+          "nps": 8
         },
         "npsDist": {
+          "0": 1,
+          "3": 1,
           "8": 1,
           "9": 3,
-          "10": 7
+          "10": 8
         },
         "installDist": {
           "2": 1,
@@ -1642,6 +1644,14 @@ window.SLACK_DATA = {
           "요식업": 2
         },
         "byTenure": {
+          "1개월": {
+            "total": 1,
+            "low": 1
+          },
+          "12개월": {
+            "total": 4,
+            "low": 1
+          },
           "3개월": {
             "total": 4,
             "low": 0
@@ -1650,23 +1660,27 @@ window.SLACK_DATA = {
             "total": 1,
             "low": 0
           },
-          "12개월": {
-            "total": 2,
-            "low": 0
-          },
           "구매설치": {
             "total": 4,
             "low": 1
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 3,
+            "low": 2
+          },
+          "KSNET": {
+            "total": 1,
+            "low": 0
+          },
+          "NICE": {
+            "total": 1,
+            "low": 1
+          },
           "SECTA9": {
             "total": 4,
             "low": 0
-          },
-          "KIS": {
-            "total": 2,
-            "low": 1
           },
           "SMARTRO": {
             "total": 2,
@@ -1678,9 +1692,46 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "사용중 오류가 자주 발생함": 2,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
         },
         "alerts": [
+          {
+            "time": "15:49",
+            "store": "다인카페",
+            "storeId": "500226",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "이유 없는 에러 때문에 매장 운영에 어려움을 겪었던 기억만 하연 절대 추천하고 싶지 않습니다!",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": ""
+          },
+          {
+            "time": "15:44",
+            "store": "라파스 베이커리",
+            "storeId": "205001",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "너무 업데이트도 많고 결제할때 렉도 많이 걸림",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": ""
+          },
           {
             "time": "15:06",
             "store": "자작나무 아카데미",
@@ -1701,6 +1752,17 @@ window.SLACK_DATA = {
           }
         ],
         "praises": [
+          {
+            "time": "15:44",
+            "store": "파노라마",
+            "storeId": "200019",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "일단 단말기 사용비용이 저렴해요 디자인도 깔끔하고, 사용하기가 편해요",
+            "byReaction": false
+          },
           {
             "time": "15:29",
             "store": "블랙카페",
