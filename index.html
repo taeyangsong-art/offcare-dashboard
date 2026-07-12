@@ -206,6 +206,19 @@
   .fp-emoji{font-size:60px; line-height:1}
   .fp-big{margin-top:8px; font-size:24px; font-weight:800; letter-spacing:-.02em; color:var(--ink)}
   .fp-sub{margin-top:6px; font-size:14px; color:var(--gray)}
+  .fish-room{color:#fff; text-align:center}
+  .fish-room.fs-low{background:linear-gradient(160deg,#4aa3c7,#2d7d9a)}
+  .fish-room.fs-mid{background:linear-gradient(160deg,#5a67d8,#3f2b96)}
+  .fish-room.fs-high{background:linear-gradient(160deg,#0b1b3a,#123a5e)}
+  .fr-scene{position:relative; height:130px; display:flex; align-items:center; justify-content:center; font-size:70px}
+  .fr-rod{position:absolute; top:6px; right:34%; font-size:40px; animation:fpwiggle 1.4s ease-in-out infinite}
+  .fr-cast{margin-top:6px; border:none; border-radius:14px; padding:15px 20px; font-family:inherit; font-size:16px; font-weight:800;
+    background:#fff; color:#123; cursor:pointer; box-shadow:0 8px 20px rgba(0,0,0,.25); transition:.15s}
+  .fr-cast:hover:not(:disabled){transform:translateY(-2px)}
+  .fr-cast:disabled{opacity:.55; cursor:not-allowed}
+  .fr-odds{margin-top:14px; font-size:13px; font-weight:600; opacity:.95}
+  .fp-own{font-size:11px; font-weight:800; color:var(--gray2); margin-top:2px}
+  .fp-own.yes{color:var(--green,#16a34a)}
   .preview-hint{font-size:12.5px; color:var(--gray2); margin:-8px 2px 16px; font-weight:600}
   .game-me.previewing{outline:2px dashed #c8a2ff; outline-offset:2px}
   .game-me.previewing::after{content:'👀 미리보기'; position:absolute; top:10px; right:14px; font-size:12px; font-weight:800; color:#8a3ffb}
@@ -1003,17 +1016,21 @@ function renderNav(){
       <span class="ic">📊</span>전체 현황</button>
     <div class="nav-div"></div>`;
   document.getElementById("nav").innerHTML = ov + CATEGORIES.map(c=>{
-    const active = (c.key===activeCat) || (c.key==='voc' && activeCat==='voc-monthly');
+    const active = (c.key===activeCat) || (c.key==='voc' && activeCat==='voc-monthly') || (c.key==='game' && activeCat==='game-fish');
     let btn = `<button class="navbtn ${active?'active':''}" onclick="selectCat('${c.key}')">
       <span class="ic">${c.icon}</span>${c.name}</button>`;
     if(c.key==='voc' && (activeCat==='voc'||activeCat==='voc-monthly')){
       btn += `<button class="navbtn sub ${activeCat==='voc-monthly'?'active':''}" onclick="selectCat('voc-monthly')">
         <span class="ic">└</span>Monthly</button>`;
     }
+    if(c.key==='game' && (activeCat==='game'||activeCat==='game-fish')){
+      btn += `<button class="navbtn sub ${activeCat==='game-fish'?'active':''}" onclick="selectCat('game-fish')">
+        <span class="ic">└</span>🎣 낚시터</button>`;
+    }
     return btn;
   }).join("");
 }
-function selectCat(k){ if(k==='overview'){ resetOverviewPeriod(); celebrateMvp=true; } if(k==='voc') resetVocPeriod(); activeCat=k; renderNav(); renderMain(); window.scrollTo(0,0); }
+function selectCat(k){ if(k==='overview'){ resetOverviewPeriod(); celebrateMvp=true; } if(k==='voc') resetVocPeriod(); if(k==='game-fish') fishRoom=null; activeCat=k; renderNav(); renderMain(); window.scrollTo(0,0); }
 
 /* ================= Main dispatch ================= */
 function renderMain(){
@@ -1023,6 +1040,7 @@ function renderMain(){
   else if(activeCat==="voc") renderVoc();
   else if(activeCat==="voc-monthly") renderVocMonthly();
   else if(activeCat==="game") renderGame();
+  else if(activeCat==="game-fish") renderGameFish();
   else renderStats();
 }
 
@@ -1121,8 +1139,7 @@ function renderGame(){
     const emp=gameMe, g=gs(emp), eq=g.equipped||{};
     body=`
     <div class="card game-me" id="gmBox">${gameMeInner(emp, eq)}</div>
-    <div class="preview-hint">💡 아이템에 마우스를 올리면 위 캐릭터에 <b>미리 입어보기</b> 돼요</div>
-    ${fishingSection(emp)}
+    <div class="preview-hint">💡 아이템에 마우스를 올리면 위 캐릭터에 <b>미리 입어보기</b> 돼요 · 코인은 왼쪽 <b>🎣 낚시터</b>에서도 획득!</div>
     ${shopSection('title','👑 타이틀',emp)}
     ${shopSection('nametag','🏷️ 네임택',emp)}
     <div class="grid2"><div style="grid-column:1/-1;font-weight:800;font-size:15px;color:var(--gray);padding:4px 2px">🧙 아바타 꾸미기</div></div>
@@ -1166,7 +1183,7 @@ function castFish(spot){
   if(f.entry && empAvail(emp)<f.entry){ alert(f.name+'는 '+f.entry+'코인 이상 있어야 입장할 수 있어요!'); return; }
   if(empAvail(emp)<f.cost){ alert('🪙 코인이 부족해요! (캐스트 '+f.cost+'코인)'); return; }
   fishBusy=true; const g=gs(emp); g.spent=(g.spent||0)+f.cost; saveGame(); showFishing(f);
-  setTimeout(()=>{ const res=resolveLoot(emp, rollLoot(f.loot)); saveGame(); showFishResult(res); renderGame(); fishBusy=false; }, 1400);
+  setTimeout(()=>{ const res=resolveLoot(emp, rollLoot(f.loot)); saveGame(); showFishResult(res); renderMain(); fishBusy=false; }, 1400);
 }
 function showFishing(f){
   let el=document.getElementById('fishPop'); if(!el){ el=document.createElement('div'); el.id='fishPop'; el.className='duty-pop-overlay'; document.body.appendChild(el); }
@@ -1181,18 +1198,45 @@ function showFishResult(res){
     <button class="duty-pop-btn" onclick="document.getElementById('fishPop').remove()">확인 🎣</button>
   </div>`;
 }
-function fishingSection(emp){ const av=empAvail(emp);
-  return `<div class="card fish-card">
-    <div class="card-head"><h3>🎣 낚시터 (가챠)</h3><span class="hint">낚싯대를 던져 아이템·코인을 낚으세요! (운 필요)</span></div>
-    <div class="fish-grid">${['low','mid','high'].map(k=>{ const f=FISH[k], locked=(f.entry&&av<f.entry), cant=av<f.cost;
-      return `<div class="fish-spot fs-${k}">
-        <div class="fs-emoji">${f.emoji}</div>
-        <div class="fs-name">${f.name}</div>
-        <div class="fs-desc">${f.desc}</div>
-        <div class="fs-cost">캐스트 <b>🪙${f.cost}</b>${f.entry?` · 입장 ${f.entry}↑`:''}</div>
-        <button class="fs-btn" ${(locked||cant)?'disabled':''} onclick="castFish('${k}')">${locked?`🔒 ${f.entry}코인 필요`:cant?'코인 부족':'🎣 낚싯대 던지기'}</button>
-      </div>`; }).join('')}</div>
-  </div>`;
+let fishRoom=null;   // 입장한 낚시터 (null=로비)
+function enterFishRoom(spot){ const emp=gameMe; if(!emp){ alert('먼저 본인을 선택하세요 🙂'); return; } const f=FISH[spot]; if(f.entry && empAvail(emp)<f.entry){ alert(f.name+'는 '+f.entry+'코인 이상 있어야 입장할 수 있어요!'); return; } fishRoom=spot; renderGameFish(); window.scrollTo(0,0); }
+function leaveFishRoom(){ fishRoom=null; renderGameFish(); window.scrollTo(0,0); }
+function fishOdds(spot){ const loot=FISH[spot].loot, tot=loot.reduce((a,x)=>a+x.w,0); let none=0,coin=0,item=0,minus=0; loot.forEach(x=>{ if(x.t==='none')none+=x.w; else if(x.t==='coin'){ if((x.max||0)<0)minus+=x.w; else coin+=x.w; } else item+=x.w; }); const p=n=>Math.round(n/tot*100); return {none:p(none),coin:p(coin),item:p(item),minus:p(minus)}; }
+function fishItemPreview(spot){ const seen={}, items=[]; FISH[spot].loot.filter(x=>x.t==='item').forEach(x=>{ for(const cat in GAME_ITEMS){ for(const it of GAME_ITEMS[cat]){ if(it.price===0) continue; if(!x.rar.includes(it.rarity)) continue; if(x.fish&&!it.fishOnly) continue; if(!x.fish&&it.fishOnly) continue; const k=cat+':'+it.id; if(!seen[k]){ seen[k]=1; items.push(Object.assign({cat},it)); } } } }); const ord={mythic:0,legendary:1,epic:2,rare:3,common:4}; return items.sort((a,b)=>(ord[a.rarity]-ord[b.rarity])); }
+function fishPreviewCard(it,emp){ const owned=owns(emp,it.cat,it.id), r=it.rarity;
+  const disp = it.e!==undefined ? (it.e||'✕') : (it.cat==='nametag'?`<span style="${nametagStyle({nametag:it.id})}">가나</span>`:`<span class="tr-${r}" style="${titleStyleOf(it)}">[${escapeHtml(it.name)}]</span>`);
+  return `<div class="shop-item" style="--rar:${RARITY[r]}"><div class="si-rar">${RARITY_KO[r]}</div><div class="si-disp">${disp}</div><div class="si-name">${escapeHtml(it.name)}</div><div class="fp-own ${owned?'yes':''}">${owned?'✓ 보유':'미보유'}</div></div>`;
+}
+function renderGameFish(){
+  const emp=gameMe;
+  const opts=EMPLOYEES.map(e=>`<option ${e===emp?'selected':''}>${e}</option>`).join('');
+  const head=`<div class="page-head"><div><h2>🎣 낚시터</h2><div class="sub">코인으로 낚싯대를 던져 아이템·코인을 낚으세요!${emp?` · 🪙 <b>${empAvail(emp)}</b> 보유`:''}</div></div>
+    <div class="controls"><select class="sel" onchange="setGameMe(this.value)"><option value="">👤 본인 선택</option>${opts}</select></div></div>`;
+  if(!emp){ document.getElementById("main").innerHTML=head+`<div class="card"><div class="empty-note">상단에서 <b>본인</b>을 선택하면 낚시터에 입장할 수 있어요 🎣</div></div>`; return; }
+  if(fishRoom){ renderFishRoom(fishRoom, emp); return; }
+  // 로비 — 낚시터 3곳
+  document.getElementById("main").innerHTML=head+`<div class="fish-grid">${['low','mid','high'].map(k=>{ const f=FISH[k], locked=(f.entry&&empAvail(emp)<f.entry);
+    return `<div class="fish-spot fs-${k}">
+      <div class="fs-emoji">${f.emoji}</div><div class="fs-name">${f.name}</div>
+      <div class="fs-desc">${f.desc}</div>
+      <div class="fs-cost">캐스트 <b>🪙${f.cost}</b>${f.entry?` · 입장 ${f.entry}코인↑`:''}</div>
+      <button class="fs-btn" ${locked?'disabled':''} onclick="enterFishRoom('${k}')">${locked?`🔒 ${f.entry}코인 필요`:'⛵ 입장하기'}</button>
+    </div>`; }).join('')}</div>`;
+}
+function renderFishRoom(spot, emp){
+  const f=FISH[spot], od=fishOdds(spot), items=fishItemPreview(spot), cant=empAvail(emp)<f.cost;
+  document.getElementById("main").innerHTML=`
+    <div class="page-head"><div><h2>${f.emoji} ${f.name}</h2><div class="sub">캐스트 🪙${f.cost} · 보유 🪙<b>${empAvail(emp)}</b></div></div>
+      <div class="controls"><button class="btn" onclick="leaveFishRoom()">← 낚시터 목록</button></div></div>
+    <div class="card fish-room fs-${spot}">
+      <div class="fr-scene"><div class="fr-water">${f.emoji}</div><div class="fr-rod">🎣</div></div>
+      <button class="fr-cast" ${cant?'disabled':''} onclick="castFish('${spot}')">${cant?'🪙 코인이 부족해요':`🎣 낚싯대 던지기 (🪙${f.cost})`}</button>
+      <div class="fr-odds">🎁 아이템 <b>${od.item}%</b> · 🪙 코인 <b>${od.coin}%</b> · 🐚 꽝 ${od.none}% · 💸 코인손실 ${od.minus}%</div>
+    </div>
+    <div class="card">
+      <div class="card-head"><h3>🎁 이 낚시터에서 낚을 수 있는 것</h3><span class="hint">${items.length}종${spot==='high'?' · 신화 전용!':''}</span></div>
+      ${items.length?`<div class="shop-grid">${items.map(it=>fishPreviewCard(it,emp)).join('')}</div>`:'<div class="empty-note">아이템 없음(코인 위주)</div>'}
+    </div>`;
 }
 
 /* ================= Overview (전체 현황) ================= */
