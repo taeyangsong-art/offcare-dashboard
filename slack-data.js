@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 346,
+  "version": 347,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -2570,15 +2570,15 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-13": {
-      "updatedAt": "14:45",
+      "updatedAt": "15:00",
       "counts": {
         "as": {
           "김기범": 6,
-          "서상원": 7,
-          "심성현": 13,
+          "서상원": 9,
+          "심성현": 14,
+          "배선유": 14,
           "김현기": 18,
           "송태양": 7,
-          "배선유": 13,
           "김규빈": 5
         },
         "onboarding": {
@@ -2592,7 +2592,7 @@ window.SLACK_DATA = {
           "서상원": 4
         },
         "transfer": {
-          "송태양": 8,
+          "송태양": 10,
           "심성현": 3
         },
         "menu": {
@@ -2603,9 +2603,29 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "14:00",
-          "store": "가장맛있는 후라이드 안동점",
-          "biz": "1535400985",
+          "time": "14:41",
+          "store": "유니팝 서동탄역센터",
+          "biz": "7729101801",
+          "handler": "심성현",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "14:32",
+          "store": "키노(KINO)",
+          "biz": "6010666898",
+          "handler": "김현기",
+          "cat": "as",
+          "reasons": [
+            "1차 부재"
+          ]
+        },
+        {
+          "time": "14:23",
+          "store": "강화순무김치찌개(상암점)",
+          "biz": "7593801405",
           "handler": "배선유",
           "cat": "as",
           "reasons": [
