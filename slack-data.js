@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 330,
+  "version": 331,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -2509,17 +2509,19 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-13": {
-      "updatedAt": "11:14",
+      "updatedAt": "11:30",
       "counts": {
+        "as": {
+          "김기범": 2,
+          "서상원": 1,
+          "심성현": 9,
+          "배선유": 7,
+          "송태양": 3,
+          "김현기": 5,
+          "김규빈": 1
+        },
         "extern": {
           "서상원": 1
-        },
-        "as": {
-          "송태양": 3,
-          "김기범": 1,
-          "김현기": 5,
-          "심성현": 7,
-          "배선유": 5
         },
         "onboarding": {
           "김규빈": 1,
@@ -2528,7 +2530,7 @@ window.SLACK_DATA = {
           "김현기": 1
         },
         "transfer": {
-          "송태양": 2,
+          "송태양": 3,
           "심성현": 1
         },
         "menu": {
@@ -2538,9 +2540,9 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "10:57",
-          "store": "옛날손짜장",
-          "biz": "2120855012",
+          "time": "11:23",
+          "store": "카츠쇼우",
+          "biz": "7010103989",
           "handler": "배선유",
           "cat": "as",
           "reasons": [
@@ -2548,9 +2550,9 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "10:57",
-          "store": "이플 플라워",
-          "biz": "5466700718",
+          "time": "11:13",
+          "store": "연우샵",
+          "biz": "8311200881",
           "handler": "배선유",
           "cat": "as",
           "reasons": [
@@ -2558,9 +2560,9 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "10:55",
-          "store": "이헤어플러스",
-          "biz": "4081176689",
+          "time": "11:11",
+          "store": "모모",
+          "biz": "2171664092",
           "handler": "심성현",
           "cat": "as",
           "reasons": [
@@ -2568,10 +2570,10 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "10:30",
-          "store": "카공 라이프",
-          "biz": "6225201040",
-          "handler": "김규빈",
+          "time": "10:55",
+          "store": "이헤어플러스",
+          "biz": "4081176689",
+          "handler": "심성현",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
