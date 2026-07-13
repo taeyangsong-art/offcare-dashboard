@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 320,
+  "version": 321,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1987,11 +1987,11 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-13": {
-      "updatedAt": "10:00",
+      "updatedAt": "10:15",
       "counts": {
         "as": {
-          "배선유": 1,
-          "심성현": 2,
+          "배선유": 2,
+          "심성현": 4,
           "김현기": 2,
           "송태양": 1
         },
@@ -2000,6 +2000,7 @@ window.SLACK_DATA = {
           "심성현": 1
         },
         "transfer": {
+          "송태양": 1,
           "심성현": 1
         },
         "menu": {
@@ -2008,23 +2009,43 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "10:00",
-          "store": "오에라",
-          "biz": "7822501889",
+          "time": "10:13",
+          "store": "가장맛있는 후라이드 안동점",
+          "biz": "1535400985",
           "handler": "김현기",
+          "cat": "delivery",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "10:11",
+          "store": "봉주르팔당",
+          "biz": "1318178738",
+          "handler": "심성현",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
           ]
         },
         {
-          "time": "09:57",
-          "store": "주식회사 드림금거래소",
-          "biz": "5538802140",
-          "handler": "심성현",
-          "cat": "as",
+          "time": "10:03",
+          "store": "태국 팟타이",
+          "biz": "1160672325",
+          "handler": "배선유",
+          "cat": "menu",
           "reasons": [
             "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "10:00",
+          "store": "소프 sof",
+          "biz": "4163207970",
+          "handler": "심성현",
+          "cat": "delivery",
+          "reasons": [
+            "1차 부재"
           ]
         }
       ],
