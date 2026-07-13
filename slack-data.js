@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 365,
+  "version": 366,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -8326,6 +8326,43 @@ window.SLACK_DATA = {
           "cat": "as",
           "emp": "김동욱"
         }
+      ],
+      "dup": [
+        {
+          "time": "16:09",
+          "store": "에듀스퀘어학원",
+          "biz": "6639801976",
+          "handler": "미지정",
+          "cat": "as"
+        },
+        {
+          "time": "15:33",
+          "store": "책방, 쉼이 있는",
+          "biz": "7579502148",
+          "handler": "미지정",
+          "cat": "as"
+        },
+        {
+          "time": "14:35",
+          "store": "레스트커피룸",
+          "biz": "",
+          "handler": "미지정",
+          "cat": "transfer"
+        },
+        {
+          "time": "11:52",
+          "store": "카페 우유니(cafe uyuni)",
+          "biz": "4221801015",
+          "handler": "미지정",
+          "cat": "menu"
+        },
+        {
+          "time": "11:00",
+          "store": "뷰티인사이드",
+          "biz": "6180745485",
+          "handler": "미지정",
+          "cat": "as"
+        }
       ]
     },
     "2026-07-11": {
@@ -9235,7 +9272,8 @@ window.SLACK_DATA = {
           "cat": "as",
           "emp": "김동욱"
         }
-      ]
+      ],
+      "dup": []
     },
     "2026-07-12": {
       "updatedAt": "22:08",
@@ -9670,7 +9708,8 @@ window.SLACK_DATA = {
           "cat": "menu",
           "emp": "배선유"
         }
-      ]
+      ],
+      "dup": []
     },
     "2026-07-13": {
       "updatedAt": "18:51",
@@ -27044,6 +27083,266 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "기능이 깔끔하고 필요한 것만 있어서 사용하기 편해요",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
+      }
+    },
+    "2026-06-12": {
+      "updatedAt": "",
+      "counts": {},
+      "pending": [],
+      "voc": {
+        "responses": 23,
+        "install": {
+          "count": 10,
+          "low": 1
+        },
+        "nps": {
+          "count": 22,
+          "low": 3
+        },
+        "high": {
+          "install": 4,
+          "nps": 13
+        },
+        "npsDist": {
+          "0": 1,
+          "1": 1,
+          "4": 1,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 13
+        },
+        "installDist": {
+          "1": 1,
+          "3": 2,
+          "4": 3,
+          "5": 4
+        },
+        "byIndustry": {
+          "서비스[학원]": 5,
+          "요식업": 1,
+          "서비스[뷰티,헤어]": 2,
+          "카페": 1,
+          "도소매": 1
+        },
+        "byTenure": {
+          "구매설치": {
+            "total": 10,
+            "low": 2
+          },
+          "12개월": {
+            "total": 2,
+            "low": 0
+          },
+          "1개월": {
+            "total": 6,
+            "low": 1
+          },
+          "3개월": {
+            "total": 2,
+            "low": 0
+          },
+          "6개월": {
+            "total": 3,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "SECTA9": {
+            "total": 8,
+            "low": 1
+          },
+          "KSNET": {
+            "total": 2,
+            "low": 0
+          },
+          "KIS": {
+            "total": 5,
+            "low": 1
+          },
+          "DAOU": {
+            "total": 1,
+            "low": 0
+          },
+          "KPN": {
+            "total": 3,
+            "low": 1
+          },
+          "NICE": {
+            "total": 1,
+            "low": 0
+          },
+          "SMARTRO": {
+            "total": 3,
+            "low": 0
+          }
+        },
+        "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 1,
+          "필요한 기능이 없거나 몰라서 불편": 1,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
+          "사용중 오류가 자주 발생함": 1
+        },
+        "alerts": [
+          {
+            "time": "16:35",
+            "store": "무브온 발레핏&필라테스",
+            "storeId": "500560",
+            "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
+            "install": 1,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "아이샵케어 고객센터와 전화 연결이 너무 안됩니다.자세한 설치 설명도 안되어있어요.",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              },
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "결제 취소처리를 포스기에서 직접 못하는게 너무 불편해요.포스사장님 어플로만 해야된다는게 불편합니다.",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 플레이스 인입되어 및 유선프린터 연동 도움 드림 • 고객센터 인력은 지속 채용중 안내 및 불편을 드린 점 사과 • [기록용: 고객센터에 연결하거나 상담받기가 힘들었어요/ 서비스업 뷰티헤어] 플레이스 인입되어 프린터 점검 및 유선프린터 연동 도움 드림 고객센터 인력은 지속 채용중 안내 및 불편을 드린 점 사과 [기록용: 고객센터에 연결하거나 상담받기가 힘",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "15:34",
+            "store": "고결헤어",
+            "storeId": "499526",
+            "industry": "뷰티",
+            "indBucket": "서비스[뷰티,헤어]",
+            "install": 5,
+            "nps": 4,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 4,
+                "text": "....",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:19",
+            "store": "브이아이핏(문화비)",
+            "storeId": "453619",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "고객센터랑 연결 잘안됨 (사용방법 초기세팅시 궁금한거 )",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 키오스크모드 설정 및 교육 완료 • 고객센터 연결 관련 불편을 드려 사과 드림. 지속 채용중 및 자정까지 운영하니 여유로운 시간대에 연락주시면 원할하게 연결 가능함 안내 • [기록용: 고객센터에 연결하거나 상담받기가 힘들었어요/ 서비스업 체육] 키오스크모드 설정 및 교육 완료 고객센터 연결 관련 불편을 드려 사과 드림. 지속 채용중 및 자정까지 운영하니",
+            "doneDate": "2026-07-13"
+          }
+        ],
+        "praises": [
+          {
+            "time": "16:29",
+            "store": "돈화문 나뷔 한복",
+            "storeId": "337203",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "무료ᆞ 모든페이가능",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:49",
+            "store": "뷰티바이라",
+            "storeId": "456632",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "편리해서",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:34",
+            "store": "아르벨헤어",
+            "storeId": "497072",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "영상톰화로두 아주자세히 설명해주시구 친절히 끝까지. 마무리해주섰어요 기계두 깔끔하고 쓰기편하고. 고객정보등등 여러가지을 할수있어서 편하게 쓸것같아 추천드리구싶다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:34",
+            "store": "에끌레레(Eclele)",
+            "storeId": "483444",
+            "indBucket": "카페",
+            "emp": "",
+            "install": 3,
+            "nps": 10,
+            "text": "선이  많아서  무지  고민하면서  설치했어요 자리도  차지하지  않고  좋아요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:19",
+            "store": "고운날사진관",
+            "storeId": "460696",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "사용하기가 편함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "14:21",
+            "store": "단비식당",
+            "storeId": "313685",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 8,
+            "text": "가끔 렉이 걸려서 느리거나 끊기는 문제를 제외하곤(아직 명확한 원인을 잘 모르겠습니다) 크기도 크지 않아서 자리차지도 많이 하지 않고, 여러가지 결제기능이 편하게 사용가능해서 만족스럽습니다. 특히 초기 사업을 시작할때 처음 3년간 무료로 사용해 볼 수 있는 점이 가장 좋았어요.",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "12:33",
+            "store": "모든샵",
+            "storeId": "488745",
+            "indBucket": "도소매",
+            "emp": "",
+            "install": 4,
+            "nps": 8,
+            "text": "쉽지만은 않았지만  설명서 따라 해보니 설치완료라 잘 사용하고 있습니다. 작아도 편리했어요",
             "byReaction": false,
             "doneDate": ""
           }
