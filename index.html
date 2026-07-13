@@ -205,13 +205,16 @@
   .gm-coins span{font-size:12px; color:var(--gray); font-weight:600; margin-left:5px}
   .gm-sub{font-size:12.5px; color:var(--gray2); margin-top:4px}
   .shop-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(120px,1fr)); gap:12px}
-  .shop-item{border:2px solid var(--rar); border-radius:14px; padding:12px 10px; text-align:center; background:var(--surface2); position:relative}
+  .shop-item{border:2px solid var(--rar); border-radius:14px; padding:12px 10px; text-align:center; background:var(--surface2); position:relative;
+    display:flex; flex-direction:column}
   .shop-item.equipped{box-shadow:0 0 0 3px color-mix(in srgb,var(--rar) 30%,transparent)}
   .si-rar{font-size:10px; font-weight:800; color:var(--rar); letter-spacing:.03em}
-  .si-disp{font-size:30px; line-height:1.1; margin:6px 0 4px; min-height:34px; display:flex; align-items:center; justify-content:center; font-weight:800}
+  .si-disp{font-size:30px; line-height:1.15; margin:6px 0 4px; min-height:46px; display:flex; align-items:center; justify-content:center; font-weight:800}
+  /* 타이틀 텍스트는 크기 줄이고 2줄까지 허용 (카드 높이 균일) */
+  .si-disp .tr-common,.si-disp .tr-rare,.si-disp .tr-epic,.si-disp .tr-legendary,.si-disp .tr-mythic{font-size:14px; line-height:1.35; word-break:keep-all}
   .si-name{font-size:13px; font-weight:700; color:var(--ink); margin-bottom:9px}
   .si-buy{width:100%; border:none; border-radius:9px; padding:8px; font-family:inherit; font-size:12.5px; font-weight:800; cursor:pointer;
-    background:var(--ink); color:#fff; transition:.15s}
+    background:var(--ink); color:#fff; transition:.15s; margin-top:auto}
   .si-buy:hover{filter:brightness(1.1)}
   .si-buy.own{background:#e6eeff; color:#1a56db}
   .si-buy.on{background:var(--green,#16a34a); color:#fff; cursor:default}
