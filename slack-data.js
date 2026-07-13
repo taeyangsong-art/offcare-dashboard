@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 334,
+  "version": 335,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -364,7 +364,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "깔끔 편의성",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:24",
@@ -375,7 +376,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 9,
             "text": "쓰기에 편리함",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:36",
@@ -386,7 +388,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "처음엔 좀 당황 했는데, 이리 저리 몇번 실패를 거듭하며 토스프론트와 포스앱의 뛰어난 기능을 알게됨. 그냥 최고.",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:24",
@@ -397,7 +400,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "편리함",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:24",
@@ -408,7 +412,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "편리,디자인예쁨,홍보효과",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:06",
@@ -419,7 +424,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 9,
             "text": "초기 설치시 직접와서 설치하고 선정리까지 해주고 가셔서 좋았습니다 네이버스마트플레이스 플러스 연동이 토스만 안되더라구요 ㅠ 그래서 별 하나 뺍니다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           }
         ]
       }
@@ -749,7 +755,8 @@ window.SLACK_DATA = {
             "install": 4,
             "nps": 7,
             "text": "설명부족 아직까지는 그렇게 편리한지는 모르겠다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:52",
@@ -760,7 +767,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 7,
             "text": "대체로 사용하는데 편리하지만 입금되는 기간이 (Days) 좀더 짧으면 합니다.",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:42",
@@ -771,7 +779,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "사용하기도 간편하고 디자인도 깔끔해서 좋아요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:17",
@@ -782,7 +791,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "사용법도 편리하고 작아서 마음에 든다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:28",
@@ -793,7 +803,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "편리함 편리해서",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:28",
@@ -804,7 +815,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 9,
             "text": "혼자서 설치하기 쉬웠음 직관적이라 사용하기 편리함",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:28",
@@ -815,7 +827,8 @@ window.SLACK_DATA = {
             "install": 4,
             "nps": 9,
             "text": "편리하고 디자인도 깔끔 사용법 어렵지않고 좋았어요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:28",
@@ -826,7 +839,8 @@ window.SLACK_DATA = {
             "install": 4,
             "nps": 9,
             "text": "편리한 면도 있고 디자인도 예뻐요 사용법도 어려운 것이 없어서 좋았습니다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:28",
@@ -837,7 +851,8 @@ window.SLACK_DATA = {
             "install": 4,
             "nps": 9,
             "text": "편리하고 디자인깔끔 사용법 간편하고 좋았음",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "08:56",
@@ -848,7 +863,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "전화를 거는 것은 어렵지만 직원의 도움을 받아 쉽게 설정할 수 있습니다. 설정이 간단합니다.",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "08:26",
@@ -859,7 +875,8 @@ window.SLACK_DATA = {
             "install": 3,
             "nps": 10,
             "text": "혼자하기 어려워서 고객센터 영상통화로 설치안내 받았습니다 기기가 깔끔하고 안정적이며, 사용하기 편리합니다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           }
         ]
       }
@@ -1138,7 +1155,8 @@ window.SLACK_DATA = {
             "install": 4,
             "nps": 10,
             "text": "설치방법이 간단했는데 영수증이 안나오니 좀 이상하긴해요^^ 깔끔한디자인과 편리한사용법이 너무좋아요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:02",
@@ -1149,7 +1167,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 8,
             "text": "다 좋은데 좀 느려요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:52",
@@ -1160,7 +1179,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "조작법이 매우 쉽고, 구성을 원하는대로 할 수 있어서 좋았음. 결제 및 적립 시스템도 간단해서 사용하기 용이함.",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:44",
@@ -1171,7 +1191,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "설치하는데 어려움 없었다 편리하다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:37",
@@ -1182,7 +1203,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "직관적이고 복잡하지 않아 편리함",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:32",
@@ -1193,7 +1215,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "빠르게계산이잘됩니다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:32",
@@ -1204,7 +1227,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 9,
             "text": "편리하고 초기 비용 없음",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:32",
@@ -1215,7 +1239,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 8,
             "text": "간편하긴 한데 살짝 불편한 것도 있어요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:32",
@@ -1226,7 +1251,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 8,
             "text": "편리함",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:13",
@@ -1237,7 +1263,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "직관적으로 잘되어있어요 편리하고 직관적이에요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:13",
@@ -1248,7 +1275,8 @@ window.SLACK_DATA = {
             "install": 4,
             "nps": 10,
             "text": "무인이라 설치만 했는데 그에 따른 자세한 사항은 알아서 찾아보라고함 기기 자체가 무료이고 이용하기 편리 해서",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "10:05",
@@ -1259,7 +1287,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "너무간편하고 편리",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "09:42",
@@ -1270,7 +1299,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "간편하고 깔끔합니다 안바꿀이유가 없음",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           }
         ]
       }
@@ -1681,7 +1711,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 9,
             "text": "간편하고 초보자들도 잘 따라서 할수있어서 좋아요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:09",
@@ -1692,7 +1723,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 8,
             "text": "장사를시작 했는데 카드기만 사용하다가 아들이 토스를 추천하고 구입해서 설치가지 해줬어요  손님이 많아 바쁠때도 혼자 장사를 할수있어요 다른 분들한테 추천했어요 편리하다고 ㅎㅎ",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:44",
@@ -1703,7 +1735,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "편리함",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:34",
@@ -1714,7 +1747,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "편리하고 디자인도 예뻐서 만족도 100프로입니다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:21",
@@ -1725,7 +1759,8 @@ window.SLACK_DATA = {
             "install": 3,
             "nps": 8,
             "text": "설치 오류가 생겨서 친절하게 답변해주고 기기 사용료가 없어서",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:13",
@@ -1736,7 +1771,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 9,
             "text": "좋아요 가끔 오류가있어서 9점이요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "07:36",
@@ -1747,7 +1783,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 9,
             "text": "편리해요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           }
         ]
       }
@@ -1968,7 +2005,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 9,
             "text": "모든 점이 좋은데 업종 특성상 네이버 리뷰가 중요하다 보니 그 점이 조금 아쉬움이 남습니다. 가격 입력해서 사용하니 그냥 화면 없는 단말기와 차별성이 적네요. 디자인은 깔끔해서 좋습니다.",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "20:08",
@@ -1979,7 +2017,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "편리성",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "17:29",
@@ -1990,7 +2029,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "좋네요 좋아요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:59",
@@ -2001,7 +2041,8 @@ window.SLACK_DATA = {
             "install": 4,
             "nps": 9,
             "text": "퍈리하게 이용함 사영퍈리",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:59",
@@ -2012,7 +2053,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "아쉬운건 있습니다. 토스포스를 컴퓨터로 하고싶은데.. 랜과 와이파이가 엇갈려있어서.. 좀 아쉽긴했습니다! 다른 UX,UI 다 좋습니다. 넘어가는 트렌지션도 너무 완벽해요. 토스가.. 최곱니다.",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:37",
@@ -2023,7 +2065,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 6,
             "text": "지금의 토스단말기 형태는 학원업종에 맞는 형태는 아니라고 봅니다. 요식업에 맞춰져있지요.",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:28",
@@ -2034,7 +2077,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "하라는대로 하니 되던데요? ㅎ 편리한거 같아요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:41",
@@ -2045,7 +2089,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "결제도  편하고 기능도  많고 간편해서  좋아요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:41",
@@ -2056,7 +2101,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "일단공짜고 쓰기편하고 너무좋아요 디자인도 완전짱이쁘고 페이스페이도되고요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:28",
@@ -2067,7 +2113,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "설명도 잘되있고 쉬워요. 토스가 편리하고 간편해요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:06",
@@ -2078,7 +2125,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 8,
             "text": "편함",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "13:28",
@@ -2089,7 +2137,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "유선으로 설명들으며 설치가 매우친절했어요 간단한조작, 작은크기의 기계",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           }
         ]
       }
@@ -2382,7 +2431,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 8,
             "text": "일단 누구나 다루기 쉬운 UX/UI가 좋습니다만, 디테일에서 약간 아쉬운 면은 있기에.. 10점 아닌 8점을 드렸습니다.",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "17:44",
@@ -2393,7 +2443,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "감사합니다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:29",
@@ -2404,7 +2455,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "간편하고 깔끔하다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:06",
@@ -2415,7 +2467,8 @@ window.SLACK_DATA = {
             "install": 3,
             "nps": 10,
             "text": "혼자하깃힘들어서 도움받아서하느라 그래도 디쟌이나 월사요료부분",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:59",
@@ -2426,7 +2479,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "뷰티샵운영에  예약스스템  안내자동카톡 보내주는기능도 편하고  결제시스템 도 너무좋습니다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:44",
@@ -2437,7 +2491,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "일단 단말기 사용비용이 저렴해요 디자인도 깔끔하고, 사용하기가 편해요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:29",
@@ -2448,7 +2503,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "편하고좋아요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:24",
@@ -2459,7 +2515,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "간편하고 쓰기도도편해요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:14",
@@ -2470,7 +2527,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "이번 결제 문제 사건에 대한 토스의 대응이 정말 인상적이었습니다. 문제 발생 직후부터 상황을 빠르게 안내해 주었고, 고객 입장에서 불안하지 않도록 지속적으로 공지와 대응이 이루어져 신뢰가 더욱 커졌습니다. 저 역시 매장에서 토스 단말기를 사용하고 있는데, 이번 일을 보면서 “토스로 바꾸길 정말 잘했다”는 생각이 들었습니다. 단순히 결제만 되는 단말기가 아니라 문제가 생겼을 때 얼마나 빠르고 책임감 있게 대응하는지가 더 중요하다는 걸 느꼈습니다. 앞으로도 안심하고 사용할 수 있을 것 같고, 토스 단말기로 변경한 것을 한 번도 후회한 적이 없습니다. 앞으로도 지금처럼 믿을 수 있는 서비스와 빠른 대응을 기대하겠습니다.",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "14:43",
@@ -2481,7 +2539,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 9,
             "text": "사용하기에 편리합니다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "09:34",
@@ -2492,7 +2551,8 @@ window.SLACK_DATA = {
             "install": 3,
             "nps": 10,
             "text": "프린크 연결 동영상이 허접함 깔끔하다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "00:01",
@@ -2503,25 +2563,25 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "친절하게 설명을 잘해주세요 자세하게 설명",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           }
         ]
       }
     },
     "2026-07-13": {
-      "updatedAt": "11:43",
+      "updatedAt": "12:00",
       "counts": {
         "as": {
-          "김현기": 7,
+          "김현기": 8,
+          "김규빈": 2,
           "배선유": 9,
           "김기범": 2,
           "심성현": 10,
-          "서상원": 1,
-          "송태양": 3,
-          "김규빈": 1
+          "송태양": 3
         },
         "extern": {
-          "서상원": 1
+          "서상원": 2
         },
         "onboarding": {
           "김규빈": 1,
@@ -2540,9 +2600,9 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "11:39",
-          "store": "에코편의점",
-          "biz": "7530903098",
+          "time": "11:43",
+          "store": "윤선생광남초영어교습소",
+          "biz": "6529201561",
           "handler": "김현기",
           "cat": "as",
           "reasons": [
@@ -2601,13 +2661,13 @@ window.SLACK_DATA = {
         }
       ],
       "voc": {
-        "responses": 2,
+        "responses": 3,
         "install": {
           "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 2,
+          "count": 3,
           "low": 0
         },
         "high": {
@@ -2615,6 +2675,7 @@ window.SLACK_DATA = {
           "nps": 1
         },
         "npsDist": {
+          "7": 1,
           "9": 1,
           "10": 1
         },
@@ -2625,6 +2686,10 @@ window.SLACK_DATA = {
           "기타": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 1,
+            "low": 0
+          },
           "구매설치": {
             "total": 1,
             "low": 0
@@ -2636,7 +2701,7 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "SMARTRO": {
-            "total": 2,
+            "total": 3,
             "low": 0
           }
         },
@@ -2652,7 +2717,8 @@ window.SLACK_DATA = {
             "install": 4,
             "nps": 9,
             "text": "설치하기 편리함 깔끔하고 마음에 듬",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "00:01",
@@ -2663,7 +2729,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "실사용이 편리하고 호환도 잘되서 좋습니다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           }
         ]
       }
@@ -2838,7 +2905,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "사용도 편리하고 보여지는 부분도 좋습니다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:16",
@@ -2849,7 +2917,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 8,
             "text": "편리하나 통신 장애",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:03",
@@ -2860,7 +2929,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "기사님이 너무 친절 편리해서",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:46",
@@ -2871,7 +2941,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 7,
             "text": "사용하기도 편하고 저렴해서 좋습니다. 그런데 한달사이에 오류가 여러번 나서 영업에 지장이 많습니다. 오류가 있으면 콜센타 통화가 되던지 언제부터 정상화가 된다는 알림이 있어야 고객에게 말씀을 드리는데 콜센타 전화도 안되고 공지도 없고 너무 무책임한것 같습니다.",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:27",
@@ -2882,7 +2953,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "사용법이 편리하고 다양한 기능이 있어 만족합니다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:27",
@@ -2893,7 +2965,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "일단 예쁘다, 깔끔하다.인테리어에 효과적이다. 설치비가 무료다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:22",
@@ -2904,7 +2977,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "편리합니다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:12",
@@ -2915,7 +2989,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 8,
             "text": "네이버연동.예약스케줄칸이조금불편함",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "13:02",
@@ -2926,7 +3001,8 @@ window.SLACK_DATA = {
             "install": 4,
             "nps": 10,
             "text": "쉽게 설치할수있게 설명서를 보내주셨지만ㅎ 연결선이 몇개있어 헷갈려서 처음엔 버벅거렸지만ㅎ 잘 해결했습니다. 간단히 설치할수있어 편했습니다. 간단하게 설치할수있고 고객관리 문자서비스도 편하게 이용할수있어서 좋아서 추천해주고 싶습니다.^^",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           }
         ]
       }
@@ -3287,7 +3363,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "공명현팀장님께서 정말정말 친절하고 프로답게 하나부터 열까지 세세한 교육과 책임감으로 급한일정에도 불구하고,완벽하게 오픈준비를 늦은밤까지 도와주셔서 감사의 말씀 드립니다. 프로다운 공명현팀장님 큰도움을받은 백합팀장님 처음 시작때부터 감사했던 김동규팀장님 감사합니다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "18:29",
@@ -3298,7 +3375,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "빠르고 간편함",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:10",
@@ -3309,7 +3387,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "설치하기 간편 좋아요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:10",
@@ -3320,7 +3399,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 9,
             "text": "어렵지 않게 설치했엉ㅎ 편리하고 간편해서",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:22",
@@ -3331,7 +3411,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "사용도 편하고 무료라 더좋아요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           }
         ]
       }
@@ -3767,7 +3848,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "편리하고 예쁘고",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "18:11",
@@ -3778,7 +3860,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "깔끔한 화면과 기기, 시스템",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:59",
@@ -3789,7 +3872,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "좋아요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:46",
@@ -3800,7 +3884,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "친절하고 기기의 편리함 편의성.",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:29",
@@ -3811,7 +3896,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 9,
             "text": "1.그래도 신속하게 대응해 주셔서 큰 불편함이 없습니다.. 2.사용할 수록 더 좋은 기능들을 알게 되니 조금 더 좋습니다..",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:16",
@@ -3822,7 +3908,8 @@ window.SLACK_DATA = {
             "install": 4,
             "nps": 9,
             "text": "상세한 설명이 맘에듬 편리하게 사용가능",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:10",
@@ -3833,7 +3920,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "결제가 편합니다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:10",
@@ -3844,7 +3932,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "간편하게 쓰기 좋아요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           }
         ]
       }
@@ -4296,7 +4385,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "간편하고 이쁨 ㅋㅋ기계가 편리하고 이쁨ㅋ",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "21:34",
@@ -4307,7 +4397,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "고객님의 만족도가 너무 좋아요~",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "20:55",
@@ -4318,7 +4409,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "친절하게 설명및 잘가르쳐 주심 넘 편하고 저렴하고 좋아서요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "20:25",
@@ -4329,7 +4421,8 @@ window.SLACK_DATA = {
             "install": 4,
             "nps": 8,
             "text": "심플하면서도 깔끔함. 아직 아쉬운 기능이 있음. (예: 공부방 등 면세사업자는 추가 상품 메뉴를 만들 때마다 면세에 체크했는지 계속해서 확인해야하는 문제점 등.) 심플하면서도 깔끔함. 아직 아쉬운 기능이 있음. (예: 공부방 등 면세사업자는 추가 상품 메뉴를 만들 때마다 면세에 체크했는지 계속해서 확인해야하는 문제점 등.)",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "17:24",
@@ -4340,7 +4433,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "사용하기 좋은 인터페이스, 깔끔한디자인, 쉬운설치 사용용이성",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "17:07",
@@ -4351,7 +4445,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "편리한 시스템과 빠른 상담 일처리응대  등이 자영업자가 매장운영하는데 큰 도움이 됩니다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:54",
@@ -4362,7 +4457,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 7,
             "text": "간단함 편리함 및 디자인",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:03",
@@ -4373,7 +4469,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "너무 편리함",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:48",
@@ -4384,7 +4481,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "편리합니다.",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:37",
@@ -4395,7 +4493,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "너무쓰기좋아요 예쁘고",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:24",
@@ -4406,7 +4505,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "친절 신속 편리하고 신속성",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:24",
@@ -4417,7 +4517,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 7,
             "text": "편리함 깔끔하고 편리",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:24",
@@ -4428,7 +4529,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "굉장히 심플하고 간단함 여태 왜 다른 포스를 쓰고있었는지 후회 될 정도 시스템도 좋고 기능도 많은데 심플함",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:24",
@@ -4439,7 +4541,8 @@ window.SLACK_DATA = {
             "install": 4,
             "nps": 8,
             "text": "괜찮았어요 사용 편리하고 단말기 예쁨",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:24",
@@ -4450,7 +4553,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "쉽다 기계가 예쁘고 편리하다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:17",
@@ -4461,7 +4565,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 7,
             "text": "소품샵인데 재고관리하기 더 좋았으면 합니다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           }
         ]
       }
@@ -4800,7 +4905,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 8,
             "text": "별로 불편없이 잘 사용하고 있는데 타사제품을 잘 몰라서요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:39",
@@ -4811,7 +4917,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 7,
             "text": "업데이트자주되고 몇일전 결재가 너무 안되서 손님을 귀찮게했음",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:30",
@@ -4822,7 +4929,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 8,
             "text": "우리는나이가있어,사용방범을잘모릅니다,자세히설멍해주시고,직접 애뉴판도 해주셨 어요 시대변화에동참,나이먹은사람도할수있다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:30",
@@ -4833,7 +4941,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "설치가 간편하고 설치에 대한 설명이 잘 되어 있습니다. 결제 및 결산관리가 편리하고 비대면 설치가 가능하고 신청후 배송까지 빠르기 때문입니다.",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:30",
@@ -4844,7 +4953,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "직접 설치해주시지 않아도 영상통화로 친절하게 잘 알려주셔서 잘 설치할 수 있었어요 우선 디자인이 깔끔해서 어디에든 잘 어울리고 배경화면이랑 영수증에 이미지를 넣을 수 있어서 만족스럽습니다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:24",
@@ -4855,7 +4965,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 8,
             "text": "직관적이고 사용하기 편리합니다.",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:19",
@@ -4866,7 +4977,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 8,
             "text": "연동성 및 직관성은 훌륭합니다. 다만, 장애 관련 공지 및 대응이 미흡합니다.",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:13",
@@ -4877,7 +4989,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 8,
             "text": "간편하고  이전의  결제 통신 문제  이외에 문제는  없었습니다.  고객 삼당이  오래  걸리기는하지만 해결되었습니댜",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           }
         ]
       }
@@ -5104,7 +5217,8 @@ window.SLACK_DATA = {
             "install": 3,
             "nps": 8,
             "text": "포스프로그램pc로받아서 사용하는부분이 좀어렵네요 방문설치면 설명듣고 더 좋았을거같아요 설치하고나니 좀편해요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "18:22",
@@ -5115,7 +5229,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 9,
             "text": "포스가 연결이 안되거나 버퍼링 걸릴때가 있고 상담원 연결이 너ㅡㅡㅡ무 오래걸려요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "17:47",
@@ -5126,7 +5241,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "깔끔하고 세련된 디자인 그리고 사용하기 간편",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "17:08",
@@ -5137,7 +5253,8 @@ window.SLACK_DATA = {
             "install": 4,
             "nps": 7,
             "text": "비교적 친절하게 사용법 설명 해 주심 편리하고 깔끔하다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "17:08",
@@ -5148,7 +5265,8 @@ window.SLACK_DATA = {
             "install": 3,
             "nps": 10,
             "text": "어렵진 않았는데 완전 쉽진 않아서 오래걸렸습니다 편리하고 간편하고 예쁨",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:57",
@@ -5159,7 +5277,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 9,
             "text": "상품을 세세하게 분류하여 결제하기 편하네요~ 단지 탭이 항상 켜져있어야해서 조금 불편한 점이 있긴 하네요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:17",
@@ -5170,7 +5289,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "편리함",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:47",
@@ -5181,7 +5301,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 8,
             "text": "학원에서 사용중인데 학생들이름에 메뉴명이라고 적힌게 수정이되지않는다고해서요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:47",
@@ -5192,7 +5313,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 8,
             "text": "가장 큰 장점은 셀프설치와 관리의 편리함, 선결제 시스템과 토스 자체 쿠폰발행 이벤트 등은 매출에도 도움이 됩니다.",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:38",
@@ -5203,7 +5325,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "리뷰로 바로 쓸 수있고 너무좋아요 지인한테 소개해주고 싶어요 ~",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "11:00",
@@ -5214,7 +5337,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "편리함",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           }
         ]
       }
@@ -5491,7 +5615,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "결제가 편해요.",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "17:54",
@@ -5502,7 +5627,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "일단 전 무료인게 젤 좋습니다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:54",
@@ -5513,7 +5639,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "예쁘고 편리하고 좋아요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:45",
@@ -5524,7 +5651,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "모두만족 모두만족",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:54",
@@ -5535,7 +5663,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 9,
             "text": "전반적으로좋았고 진동벨연동ㅇㅣ아쉽습니다 지난번 먹통된사건도 아쉽네요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:15",
@@ -5546,7 +5675,8 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 9,
             "text": "설치가 간편합니다 필수라거 생각합니다 매출 상승 및 유지관리에 도움이 됩니다.",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:09",
@@ -5557,7 +5687,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "사용하기 너무편리합니다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:09",
@@ -5568,7 +5699,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "간편하고 사용편리합니다.",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           }
         ]
       }
@@ -5857,7 +5989,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "사용하기 편리하고 페이스페이가 되니 좋아요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:35",
@@ -5868,7 +6001,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 9,
             "text": "무료임. 키오스크기능으로 1인사장에게 매우 도움됨. 마케팅마세지 월 300건 무료는 진짜 획기적임",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:59",
@@ -5879,7 +6013,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 8,
             "text": "사용편리",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:35",
@@ -5890,7 +6025,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "편합니다. 연동이 안되는 부분만 빼고는 만족스럽습니다.",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:14",
@@ -5901,7 +6037,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 6,
             "text": "결제마다 폰에 접속하는게 불펼함",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           }
         ]
       }
@@ -6296,7 +6433,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "사용하기 편리함",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "17:46",
@@ -6307,7 +6445,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "매우 만족합니다. 기능도 편리하고 사용하기에 너무 좋습니다.",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "16:10",
@@ -6318,7 +6457,8 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 8,
             "text": "전체적으로 뷰티업을 하는 사람에게 금액이라던지 기록이라던지가 중요한데  전체 다 될수 있는 부분이 가장 좋습니다",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
           },
           {
             "time": "15:21",
@@ -6329,7 +6469,4750 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 10,
             "text": "편해요",
-            "byReaction": false
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
+      }
+    },
+    "2026-06-13": {
+      "updatedAt": "",
+      "counts": {},
+      "pending": [],
+      "voc": {
+        "responses": 15,
+        "install": {
+          "count": 7,
+          "low": 1
+        },
+        "nps": {
+          "count": 15,
+          "low": 1
+        },
+        "high": {
+          "install": 4,
+          "nps": 10
+        },
+        "npsDist": {
+          "5": 1,
+          "7": 1,
+          "9": 3,
+          "10": 10
+        },
+        "installDist": {
+          "1": 1,
+          "3": 1,
+          "4": 1,
+          "5": 4
+        },
+        "byIndustry": {
+          "요식업": 3,
+          "서비스[뷰티,헤어]": 1,
+          "서비스[학원]": 1,
+          "카페": 1,
+          "도소매": 1
+        },
+        "byTenure": {
+          "1개월": {
+            "total": 4,
+            "low": 0
+          },
+          "6개월": {
+            "total": 2,
+            "low": 1
+          },
+          "구매설치": {
+            "total": 7,
+            "low": 1
+          },
+          "12개월": {
+            "total": 2,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "SMARTRO": {
+            "total": 2,
+            "low": 0
+          },
+          "SECTA9": {
+            "total": 3,
+            "low": 0
+          },
+          "KSNET": {
+            "total": 3,
+            "low": 1
+          },
+          "KPN": {
+            "total": 3,
+            "low": 0
+          },
+          "KIS": {
+            "total": 3,
+            "low": 1
+          },
+          "NICE": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {
+          "필요한 기능이 없거나 몰라서 불편": 1,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
+        },
+        "alerts": [
+          {
+            "time": "22:00",
+            "store": "도전해동검도",
+            "storeId": "133294",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "영수증안나오는거불편하고 거래취소안되는거 불편합니다",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 전자영수증 설정은 이미 하고계심 -&gt; 영수프린터 사용니즈로 렌탈비용 발생 안내 • 단말기 자체에서 결제취소도 가능했으면 좋겠다는 의견 -&gt; 해당 내용 담당부서에 전달드려보겠으나, 개발가능성은 매우 낮은 점, 자사 프론트는 토스포스 연동으로 사용 하는 것으로 개발된 제품인 점 설명 전자영수증 설정은 이미 하고계심 - 영수프린터 사용니즈로 렌탈비",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "15:11",
+            "store": "용남문구점",
+            "storeId": "505379",
+            "industry": "도소매",
+            "indBucket": "도소매",
+            "install": 1,
+            "nps": 10,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "기기등록하기가 쉬워서 좋아요 :grinning:",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
+        "praises": [
+          {
+            "time": "21:43",
+            "store": "떡대장",
+            "storeId": "503596",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "다좋습니다 굿입니다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "17:27",
+            "store": "브로이즘",
+            "storeId": "417998",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "너무편리하고 예뻐요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "17:12",
+            "store": "나미스뷰티",
+            "storeId": "466302",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "쓰기좋아요 편리한데 예약금 해제하면 계산할때 원래금액이 안나오는게 불편해요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "16:22",
+            "store": "카페(Cafe) 로몬",
+            "storeId": "193270",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "포스 화면에서 수동 결제 후 다시 키오스크 켜는 버튼 누를 필요없이 키오스크 자동 전환 하는 버튼이나 설정 만들어주시면 정말 감사하겠습니다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:41",
+            "store": "서울남부범죄피해자지원센터부설(희망카페나무)",
+            "storeId": "500805",
+            "indBucket": "카페",
+            "emp": "",
+            "install": 5,
+            "nps": 9,
+            "text": "친절 다양한 정보제공",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:22",
+            "store": "유의미커피로스터즈(역삼점)",
+            "storeId": "196008",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 9,
+            "text": "UI가 쉽고 의견이 빨리반영된다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "01:07",
+            "store": "올라이트 술집",
+            "storeId": "490496",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "친절하고 상세하게 설명해 주셨습니다 모든게 편하네요",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
+      }
+    },
+    "2026-06-14": {
+      "updatedAt": "",
+      "counts": {},
+      "pending": [],
+      "voc": {
+        "responses": 16,
+        "install": {
+          "count": 5,
+          "low": 1
+        },
+        "nps": {
+          "count": 16,
+          "low": 3
+        },
+        "high": {
+          "install": 2,
+          "nps": 9
+        },
+        "npsDist": {
+          "0": 1,
+          "5": 2,
+          "7": 1,
+          "8": 1,
+          "9": 2,
+          "10": 9
+        },
+        "installDist": {
+          "1": 1,
+          "3": 2,
+          "5": 2
+        },
+        "byIndustry": {
+          "서비스[뷰티,헤어]": 2,
+          "도소매": 1,
+          "서비스[숙박]": 1,
+          "서비스[학원]": 1
+        },
+        "byTenure": {
+          "3개월": {
+            "total": 4,
+            "low": 1
+          },
+          "구매설치": {
+            "total": 5,
+            "low": 2
+          },
+          "6개월": {
+            "total": 2,
+            "low": 0
+          },
+          "12개월": {
+            "total": 2,
+            "low": 0
+          },
+          "1개월": {
+            "total": 3,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "SECTA9": {
+            "total": 4,
+            "low": 2
+          },
+          "KPN": {
+            "total": 3,
+            "low": 1
+          },
+          "NICE": {
+            "total": 1,
+            "low": 0
+          },
+          "KSNET": {
+            "total": 3,
+            "low": 0
+          },
+          "KIS": {
+            "total": 1,
+            "low": 0
+          },
+          "DAOU": {
+            "total": 1,
+            "low": 0
+          },
+          "SMARTRO": {
+            "total": 2,
+            "low": 0
+          },
+          "KOVAN": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {
+          "필요한 기능이 없거나 몰라서 불편": 2,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
+          "단말기 설치나 초기 과정이 어려움": 1
+        },
+        "alerts": [
+          {
+            "time": "20:13",
+            "store": "팩토아이매쓰학원",
+            "storeId": "383365",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "결제는 편하나 영수증 출력이 불편",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "18:49",
+            "store": "오라헤어",
+            "storeId": "496524",
+            "industry": "뷰티",
+            "indBucket": "서비스[뷰티,헤어]",
+            "install": 3,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "무료이용으로 여러가지 프로그램이나 혜택이 좋으나 신규이면 정말 괜찮지만 바꾸기가 쉽지 않다.",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 네이버플레이스 연동요청 -&gt; 불가능 안내 • 핸드SOS 고객정보 이관 방법 문의 -&gt; 핸드SOS 측에 고객정보 엑셀자료 추출요청 하신 뒤 플레이스 고객센터로 연락주시면 이관 받아보실 수 있음 안내. • 고객센터번호 안내 완료 • [기록용: 기타이슈/ 고객정보이관 / 서비스업 뷰티헤어] 네이버플레이스 연동요청 - 불가능 안내 핸드SOS 고객정보",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "05:45",
+            "store": "잉글리시아이대방더퍼스트영어교습소",
+            "storeId": "424008",
+            "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
+            "install": 1,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "설치 너무힘들었고 지금도 사용하기 불편함",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              },
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "사용하기 불편",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 수업중으로 통화 힘듦 • 고객센터 번호 안내드렸고 추후 연락주시면 재연동 도움드리겠음 안내 • [기록용:단말기 설치나 초기 설정이 어렵게 느껴졌어요/ 프론트 / 서비스업 학원] 수업중으로 통화 힘듦 고객센터 번호 안내드렸고 추후 연락주시면 재연동 도움드리겠음 안내 [기록용:단말기 설치나 초기 설정이 어렵게 느껴졌어요/ 프론트 / 서비스업 학원]",
+            "doneDate": "2026-07-13"
+          }
+        ],
+        "praises": [
+          {
+            "time": "17:12",
+            "store": "피제리아오로",
+            "storeId": "368012",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "진짜개편함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "16:18",
+            "store": "경대북문꽃집 쁘띠플라워",
+            "storeId": "335671",
+            "indBucket": "도소매",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "사용하기가 편리 간단하게 사용하기 편해서",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:59",
+            "store": "윤프로CAR",
+            "storeId": "188163",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "결제편함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:42",
+            "store": "에프제이수학(FJ Math)",
+            "storeId": "407225",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "편리.간편.저렴",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:29",
+            "store": "멍멍나래 장현점",
+            "storeId": "195151",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "비용이 안나가는게 정말 좋아요!",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:18",
+            "store": "그린파크여관",
+            "storeId": "496034",
+            "indBucket": "서비스[숙박]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "상담도 좋앗고 설치가 간편해서 좋앗어요 사용하기좋아요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:12",
+            "store": "금강 힐링캠프",
+            "storeId": "405331",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "무선으로 와이파이만 연결해 사용할수 있는점이 만족스럽습니다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "12:32",
+            "store": "메리멜트커피(MERRY MELT COFFEE)",
+            "storeId": "448167",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 9,
+            "text": "전반적으로 사용하기 편함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "09:01",
+            "store": "에스엔피이(SNPE)바른자세척추운동광교상현역점",
+            "storeId": "462494",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 9,
+            "text": "결제가 쉽고 편함",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
+      }
+    },
+    "2026-06-15": {
+      "updatedAt": "",
+      "counts": {},
+      "pending": [],
+      "voc": {
+        "responses": 19,
+        "install": {
+          "count": 7,
+          "low": 0
+        },
+        "nps": {
+          "count": 19,
+          "low": 3
+        },
+        "high": {
+          "install": 6,
+          "nps": 12
+        },
+        "npsDist": {
+          "0": 1,
+          "3": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "9": 1,
+          "10": 12
+        },
+        "installDist": {
+          "4": 1,
+          "5": 6
+        },
+        "byIndustry": {
+          "서비스[뷰티,헤어]": 4,
+          "카페": 1,
+          "서비스[학원]": 1,
+          "요식업": 1
+        },
+        "byTenure": {
+          "구매설치": {
+            "total": 7,
+            "low": 0
+          },
+          "1개월": {
+            "total": 7,
+            "low": 1
+          },
+          "12개월": {
+            "total": 2,
+            "low": 1
+          },
+          "3개월": {
+            "total": 2,
+            "low": 0
+          },
+          "6개월": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "byVan": {
+          "KSNET": {
+            "total": 3,
+            "low": 1
+          },
+          "NICE": {
+            "total": 2,
+            "low": 0
+          },
+          "KPN": {
+            "total": 2,
+            "low": 0
+          },
+          "SMARTRO": {
+            "total": 7,
+            "low": 1
+          },
+          "KIS": {
+            "total": 3,
+            "low": 1
+          },
+          "SECTA9": {
+            "total": 1,
+            "low": 0
+          },
+          "DAOU": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {
+          "필요한 기능이 없거나 몰라서 불편": 2,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
+        },
+        "alerts": [
+          {
+            "time": "17:10",
+            "store": "유일무",
+            "storeId": "407201",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "카드결제시 언제통장에 들어가는지 알수가없어서 자꾸 확인하게됨 그리고 결제후에 예약등록하면 다시 결제를해야해서 복잡함;",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 카드결제대금 정산은 영업일기준 23일 소요됨 양해 • 선결제 후 예약시에는 예약탭에서 상품추가 없이 예약 잡으신 뒤, '결제없이 방문처리'로 후처리 가능함 교육 및 설명 • 추가 문의사항은 없으시고 추후 문의사항은 고객센터로 연락주시면 도와드리겠음 안내 후 통화종료 • [기록용: 기타이슈/ 정산 / 서비스업 뷰티헤어] 카드결제대금 정산은 영업일기준 23",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "15:36",
+            "store": "동네한바퀴",
+            "storeId": "183319",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "아직까지 불편한점과 추가 개선사항부분들이 많은데 바로 업데이트는 안되는듯 합니다",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 바쁘신관계로 재통화 가능시간 문자로 알려주신다고 하심 바쁘신관계로 재통화 가능시간 문자로 알려주신다고 하심 / 2차부재 2차부재",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "15:12",
+            "store": "미래 팜 아카데미",
+            "storeId": "303756",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "상호변경신청한지가 15일이 다되도록 변경이이뤄지지 않는다.. 직무유기..",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 서류보완관련 솔라피전송 확인 • 1차부재 히스토리 서류보완관련 솔라피전송 확인 1차부재 안녕하세요, 대표님. 아이샵케어입니다. 보완 해야 할 서류 사항이 있어서 문자드립니다. 아래 링크를 통해 보완 할 서류를 제출 해주시면 감사하겠습니다. ▶ ▶ 필요 서류: (사업자 등록증, 통장 사본) 1. 사업자 등록증 사진 위에 임의로 편집을 하면 제출이 불가합니",
+            "doneDate": "2026-07-13"
+          }
+        ],
+        "praises": [
+          {
+            "time": "22:57",
+            "store": "한비(구월점)",
+            "storeId": "498085",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "친절했어요 편해요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "20:41",
+            "store": "멍쓰담",
+            "storeId": "462147",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "모든카드가다되고 결제하기도쉽고 일매출현황이 잘정리되어서 좋아요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "19:26",
+            "store": "마릴린헤어부티크",
+            "storeId": "495610",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "기사님이 신속정확하게 설치하여 주셨어요 외관과 쓰임이 편하고 고급스러워요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "19:07",
+            "store": "와틀&비(Wattle&B.)",
+            "storeId": "190948",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "사용하기 편리함. 무료로 주는 프린트용지도 좋음",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "18:56",
+            "store": "캄눅",
+            "storeId": "489678",
+            "indBucket": "카페",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "설치 방법도 간단하고 기기 사용법도 편리해요 다른 매장에 사용하더라도 간편할 거 같아서요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:25",
+            "store": "포시즌양주팜",
+            "storeId": "491706",
+            "indBucket": "서비스[학원]",
+            "emp": "송태양",
+            "install": 5,
+            "nps": 10,
+            "text": "사용법이 간단하고 편리합니다. 단말기와 터치스크린이 연동되어 별다른 복잡하지 않아 사용하기가 매우 편리합니다.",
+            "byReaction": true,
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "15:25",
+            "store": "카페 차누",
+            "storeId": "490190",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "설치하다가 불편한점은 서비스센터에 전화 했더니 바로 영상통화로 해결해줘서 너무 좋았어요 설치 간편하고 좋아요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:19",
+            "store": "꼼래쉬",
+            "storeId": "334865",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "편리하고 간단해서",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "14:09",
+            "store": "일킬로그램(1kg) 탕수육 일산시장점",
+            "storeId": "463090",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "사용하기 편리",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
+      }
+    },
+    "2026-06-16": {
+      "updatedAt": "",
+      "counts": {},
+      "pending": [],
+      "voc": {
+        "responses": 22,
+        "install": {
+          "count": 10,
+          "low": 2
+        },
+        "nps": {
+          "count": 22,
+          "low": 6
+        },
+        "high": {
+          "install": 3,
+          "nps": 10
+        },
+        "npsDist": {
+          "3": 1,
+          "5": 5,
+          "6": 2,
+          "7": 1,
+          "8": 1,
+          "9": 2,
+          "10": 10
+        },
+        "installDist": {
+          "2": 2,
+          "3": 3,
+          "4": 2,
+          "5": 3
+        },
+        "byIndustry": {
+          "서비스[뷰티,헤어]": 5,
+          "카페": 3,
+          "도소매": 1,
+          "기타": 1
+        },
+        "byTenure": {
+          "구매설치": {
+            "total": 10,
+            "low": 6
+          },
+          "6개월": {
+            "total": 5,
+            "low": 0
+          },
+          "1개월": {
+            "total": 3,
+            "low": 0
+          },
+          "12개월": {
+            "total": 3,
+            "low": 1
+          },
+          "3개월": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "byVan": {
+          "KPN": {
+            "total": 7,
+            "low": 3
+          },
+          "SECTA9": {
+            "total": 4,
+            "low": 1
+          },
+          "SMARTRO": {
+            "total": 4,
+            "low": 1
+          },
+          "KSNET": {
+            "total": 4,
+            "low": 1
+          },
+          "KIS": {
+            "total": 3,
+            "low": 2
+          }
+        },
+        "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 4,
+          "구매,계약과정에서 설명이 부족": 1,
+          "필요한 기능이 없거나 몰라서 불편": 1,
+          "단말기 설치나 초기 과정이 어려움": 1,
+          "사용중 오류가 자주 발생함": 1
+        },
+        "alerts": [
+          {
+            "time": "20:03",
+            "store": "머리하세요",
+            "storeId": "497587",
+            "industry": "미용",
+            "indBucket": "서비스[뷰티,헤어]",
+            "install": 2,
+            "nps": 10,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 2,
+                "text": "만족해서",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "19:33",
+            "store": "아리에뜰",
+            "storeId": "499656",
+            "industry": "카페/베이커리",
+            "indBucket": "카페",
+            "install": 4,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "너무 고가",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "16:02",
+            "store": "어스24스터디카페",
+            "storeId": "496243",
+            "industry": "카페/베이커리",
+            "indBucket": "카페",
+            "install": 3,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "서비스 설명 부족",
+                "cat": "구매,계약과정에서 설명이 부족"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 관련 내용으로 불편을 야기한 점 사과 • 키오스크모드 설정법 사용방법 전체적인 교육 완료 • 고객센터 자정까지 운영하며 지속적인 채용진행 중이니 양해 부탁드림 • [기록용: 고객센터에 연결하거나 상담받기가 힘들었어요/ 카페] 관련 내용으로 불편을 야기한 점 사과 키오스크모드 설정법 사용방법 전체적인 교육 완료 고객센터 자정까지 운영하며 지속적인 채용진행",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "15:43",
+            "store": "별별당 떡볶이&꼬마김밥",
+            "storeId": "182443",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "처음써봐서",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:32",
+            "store": "내일디디 스위트",
+            "storeId": "506170",
+            "industry": "뷰티",
+            "indBucket": "서비스[뷰티,헤어]",
+            "install": 4,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "다른기능을 많이 추가하거나 필요로 한다면 다른기기 사용해도 될거같아요",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:32",
+            "store": "회복테라피",
+            "storeId": "502969",
+            "industry": "뷰티",
+            "indBucket": "서비스[뷰티,헤어]",
+            "install": 3,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "토스 사용 방법이 어려운 듯 아닌듯",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "1차부재 1차부재 / • 방문설치 받아보셨으나 전체적인 사용법 교육 원하셔서 사용법 교육 [기록용:단말기 설치나 초기 설정이 어렵게 느껴졌어요/ 프론트 / 서비스업 뷰티헤어] 방문설치 받아보셨으나 전체적인 사용법 교육 원하셔서 사용법 교육 [기록용:단말기 설치나 초기 설정이 어렵게 느껴졌어요/ 프론트 / 서비스업 뷰티헤어]",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "12:55",
+            "store": "안녕꼬순내",
+            "storeId": "378942",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "이름10글자 제한으로 반려견이름견종을 다 표기하기 어려움. 옵션설정 불편함. 1일단위로밖에 설정이 안되어 1박이상 호텔링 스케줄은 포스에 입력이 불가능함.",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 타매장 있음 /플레이스 또한 인지중이나 예약관련 리소스 부족 예상 타매장 동일이력 있음 /플레이스 또한 인지중이나 예약관련 리소스 부족 예상 1. 고객 이름 등록이 10글자로제한되어 있어 불편 2. 세차장을 운영하는 저같은 경우 전화번호 1개에(1명의 고객) 차량 2대 이상 등록이 필요한데 전화번호 수정도, 동일 번호로 2명 고객등록이 불가해서 불편 3",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "10:30",
+            "store": "이킵팩토리",
+            "storeId": "504178",
+            "industry": "오토바이센터",
+            "indBucket": "기타",
+            "install": 2,
+            "nps": 6,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 2,
+                "text": "설치 기사님이 오셔서 해주는줄 알았는데 기기만 보내고 알아서 설치를 하라고 하니 벙찌고 멀해야하는지 영상을봐도 똑같이 안됨 고객센터 전화를하는데도 전화를 안받음 13통정도 전화를해서 받아서 겨우겨우 설치를 할수있었습니다",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 키오스크모드로 사용이 힘든 매장으로 금액입력결제모드로 설정 도움드림 • 방문설치 인지 자가설치인지 언급도 없이 매장으로 단말기만 보내주셔서 당황하셨다고 함. 관련 내용으로 불쾌한 경험을 하게 해드린 점 사과 • [기록용:단말기 설치나 초기 설정이 어렵게 느껴졌어요/ 프론트 / 서비스업 기타] 키오스크모드로 사용이 힘든 매장으로 금액입력결제모드로 설정 도",
+            "doneDate": "2026-07-13"
+          }
+        ],
+        "praises": [
+          {
+            "time": "19:51",
+            "store": "밤부루뜨(Bambroot)",
+            "storeId": "314260",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "결제가 편리하고 잘 되고 토스를 사용하는 고객들이 많아 리뷰를 자연스럽게 달아줘서 매장홍보까지 되는 효과",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "19:48",
+            "store": "자세균형 연구소",
+            "storeId": "446863",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "문의시 응답이 빠르고 친철함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "17:49",
+            "store": "하나요가",
+            "storeId": "309518",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 7,
+            "text": "사용이편리",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "16:32",
+            "store": "카페 로피(LOAFY)",
+            "storeId": "504642",
+            "indBucket": "카페",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "편리하다 편리하다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:43",
+            "store": "호트커피 (HOAT COFFEE)",
+            "storeId": "185768",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "일단 너무 편리한 인터페이스와 사용인 것 같습니다!",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:32",
+            "store": "파충류샵크레하우스",
+            "storeId": "430257",
+            "indBucket": "도소매",
+            "emp": "송태양",
+            "install": 3,
+            "nps": 8,
+            "text": "핸드폰과 연결이 안되서 어려워요 어려움 ㅠ",
+            "byReaction": true,
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "15:13",
+            "store": "비올라래쉬",
+            "storeId": "185908",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 9,
+            "text": "고객관리도 편리하고 좋아요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "13:46",
+            "store": "스멜비(smell b)",
+            "storeId": "460112",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 9,
+            "text": "직관적이라 편해요, 1점 뺀 이유는 배민 쿠팡이랑 품절을 연결시켜준다고 들었는데 아니여서 뺏습니다",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
+      }
+    },
+    "2026-06-17": {
+      "updatedAt": "",
+      "counts": {},
+      "pending": [],
+      "voc": {
+        "responses": 30,
+        "install": {
+          "count": 11,
+          "low": 2
+        },
+        "nps": {
+          "count": 30,
+          "low": 11
+        },
+        "high": {
+          "install": 2,
+          "nps": 10
+        },
+        "npsDist": {
+          "0": 3,
+          "3": 3,
+          "4": 1,
+          "5": 4,
+          "6": 4,
+          "7": 2,
+          "8": 2,
+          "9": 1,
+          "10": 10
+        },
+        "installDist": {
+          "1": 2,
+          "3": 3,
+          "4": 4,
+          "5": 2
+        },
+        "byIndustry": {
+          "카페": 5,
+          "서비스[학원]": 2,
+          "요식업": 1,
+          "기타": 2,
+          "서비스[뷰티,헤어]": 1
+        },
+        "byTenure": {
+          "구매설치": {
+            "total": 11,
+            "low": 4
+          },
+          "6개월": {
+            "total": 3,
+            "low": 1
+          },
+          "1개월": {
+            "total": 8,
+            "low": 4
+          },
+          "3개월": {
+            "total": 3,
+            "low": 0
+          },
+          "12개월": {
+            "total": 5,
+            "low": 2
+          }
+        },
+        "byVan": {
+          "SMARTRO": {
+            "total": 9,
+            "low": 6
+          },
+          "SECTA9": {
+            "total": 7,
+            "low": 1
+          },
+          "KPN": {
+            "total": 4,
+            "low": 1
+          },
+          "KIS": {
+            "total": 3,
+            "low": 1
+          },
+          "KSNET": {
+            "total": 5,
+            "low": 1
+          },
+          "NICE": {
+            "total": 2,
+            "low": 1
+          }
+        },
+        "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 2,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 8,
+          "사용중 오류가 자주 발생함": 1,
+          "구매,계약과정에서 설명이 부족": 1,
+          "필요한 기능이 없거나 몰라서 불편": 1
+        },
+        "alerts": [
+          {
+            "time": "23:58",
+            "store": "시골로스터리",
+            "storeId": "493223",
+            "industry": "카페/베이커리",
+            "indBucket": "카페",
+            "install": 1,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "설치기사가 너무 불 친절 하고 예의가 너무 없습니다. 설치하러 오셔서 어디서 왔는지 말씀도 없고 인사도 없이 주머니에 한손을 넣어두신 상태로 설치하러 왔다가 다였으며 설치하는동안에도 한손은 계속 주머니에 넣어둔 상태로와이파이 여기치라고 하고 사용법을 알려주시지도 않으면서 제가 먼저 물어본것에 대하여 기사임에도 불구하고  토스단말기 사용법에 대하여 모르시는게 다반사였습니다 결국 제가 계속하여 물어보니 본사 콜센터에 전화 하여 물어보시고 그거마저도 못 알아 들어 제가 옆에서 들으면서해결하였습니다. 결국 본인은 모르신다고 전화번호 알려주시면서 여기 전화해서 물어보라 하시고,가셨습니다 . 또한 기존에 저희가 사용하던 단말기를 이거는 구입한거냐고 물으셔서 구입한거라고 한차례 말씀드렸는데 가시기 전에도 이건 구입한거냐 필요하냐,계속 해서 물어보시고 제가 구입한거다,필요하다 하니 본인이 중고거래도 해서 그런다며 가져 가실려 했습니다 . 정말  와서 선만 꽂아주는거면 왜 기사를 불렀는지 와서 한거…",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              },
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "서비스 최악",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "22:40",
+            "store": "시골로스터리",
+            "storeId": "493223",
+            "industry": "카페/베이커리",
+            "indBucket": "카페",
+            "install": 1,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "설치기사가 너무 불 친절 하고 예의가 너무 없습니다. 설치하러 오셔서 어디서 왔는지 말씀도 없고 인사도 없이 주머니에 한손을 넣어두신 상태로 설치하러 왔다가 다였으며 설치하는동안에도 한손은 계속 주머니에 넣어둔 상태로와이파이 여기치라고 하고 사용법을 알려주시지도 않으면서 제가 먼저 물어본것에 대하여 기사임에도 불구하고  토스단말기 사용법에 대하여 모르시는게 다반사였습니다 결국 제가 계속하여 물어보니 본사 콜센터에 전화 하여 물어보시고 그거마저도 못 알아 들어 제가 옆에서 들으면서해결하였습니다. 결국 본인은 모르신다고 전화번호 알려주시면서 여기 전화해서 물어보라 하시고,가셨습니다 . 또한 기존에 저희가 사용하던 단말기를 이거는 구입한거냐고 물으셔서 구입한거라고 한차례 말씀드렸는데 가시기 전에도 이건 구입한거냐 필요하냐,계속 해서 물어보시고 제가 구입한거다,필요하다 하니 본인이 중고거래도 해서 그런다며 가져 가실려 했습니다 . 정말  와서 선만 꽂아주는거면 왜 기사를 불렀는지 와서 한거…",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              },
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "서비스 최악",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "<!subteam^S087TUQFYG0 / • 불편한 경험 하게 해드려 대신 사과 • 기억하고 싶지않은 경험이며 길게 통화는 힘드시다며 끊으심 • [기록용: 기타이슈/ 외주 불친절 / 카페] 불편한 경험 하게 해드려 대신 사과 기억하고 싶지않은 경험이며 길게 통화는 힘드시다며 끊으심 [기록용: 기타이슈/ 외주 불친절 / 카페]",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "19:09",
+            "store": "에듀라인수학교습소",
+            "storeId": "462620",
+            "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
+            "install": 3,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "학원에서 뭔가 주문하는듯한 결제방법이 이상하다",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "17:57",
+            "store": "브라운도어",
+            "storeId": "315911",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "편리하고 편집이 쉬워서 좋습니다",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "17:54",
+            "store": "장돌이어묵",
+            "storeId": "466135",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "용지가안나와요",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 금액입력결제모드로 결제시 토스포스 프로그램 실행 중인 상태여야 영수증 자동출력됨 설명 • [기록용: 기타이슈/ 프린터 / 요식업] 금액입력결제모드로 결제시 토스포스 프로그램 실행 중인 상태여야 영수증 자동출력됨 설명 [기록용: 기타이슈/ 프린터 / 요식업]",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "16:19",
+            "store": "미벗",
+            "storeId": "194344",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "배달어플 호환이 잘안됨",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:38",
+            "store": "몬퓨리엘 아뜰리에",
+            "storeId": "483646",
+            "industry": "뷰티",
+            "indBucket": "서비스[뷰티,헤어]",
+            "install": 3,
+            "nps": 4,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 4,
+                "text": "ㆍ",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 유선프린터 연결이 안되어 고객센터 인입하셨으나 지속적인 통화실패로 온도감 높은 상태 • 유선프린터 연동은 다행히 완료하신 상태로, 관련 내용으로 사과 드리는 것으로 마무리 • [기록용: 고객센터에 연결하거나 상담받기가 힘들었어요/ 서비스업 뷰티헤어] 유선프린터 연결이 안되어 고객센터 인입하셨으나 지속적인 통화실패로 온도감 높은 상태 유선프린터 연동은 다",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "15:23",
+            "store": "올데이짐",
+            "storeId": "464997",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "수수료가 너무 비쌈 설명부족햇음",
+                "cat": "구매,계약과정에서 설명이 부족"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "2차부재 2차부재",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "15:23",
+            "store": "텐퍼센트 울산보람병원점",
+            "storeId": "470547",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "기존 대비 각종 페이류 인식률이 유의미하게 높지 않음 어디에 대야 하는지도 정확히 모르겠고 심지어 유가지원금 카드는 마그네틱 잘 안 읽힘",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 님 안녕하세요, 상기매장 OB진행 하려 하였으나 자대리점(현은시스템) 매장으로 가입 심사 결과는 도대체 언제 알려주나요? 된 건지 안 된 건지 안 됐으면 추가제출서류가 뭔지 알려줘야 뭘 진행할 것 아닙니까 이 부분에 허들이 있어 OB 진행이 불가능한 상황입니다. 현은시스템 측에서 심사 결과에 대해 OB를 진행 해주셔야 할 것 같아서요 또한 프론트에서 페",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "15:19",
+            "store": "스페이스에임(Space aim)",
+            "storeId": "191132",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "카드사 할부 안 되는 점이 아쉬워요",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "1차부재 1차부재 / • 할부결제방법 교육 • 무이자할부 문의하셔서 카드사별로 상이한 부분으로 자사에서 안내 불가한 사항이니 카드사에 문의하시면 됨 안내 • [기록용: 기타이슈/ 할부 / 서비스업 뷰티헤어] 할부결제방법 교육 무이자할부 문의하셔서 카드사별로 상이한 부분으로 자사에서 안내 불가한 사항이니 카드사에 문의하시면 됨 안내 [기록용: 기타이슈/ 할부",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "09:52",
+            "store": "쩨리몽",
+            "storeId": "459359",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "카드사 정산이 너무 느림",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
+        "praises": [
+          {
+            "time": "18:57",
+            "store": "바이트참(BITE CHARM)",
+            "storeId": "313710",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "조작이 편리함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "16:39",
+            "store": "카페 명안가",
+            "storeId": "486557",
+            "indBucket": "카페",
+            "emp": "",
+            "install": 3,
+            "nps": 7,
+            "text": "영상 가이드에 있는 제품과 받아본 제품이 달라서 연결잭을 어디에 꽂아야 하는지 잘 모르겠었음. 깔끔한 디자인과 편리함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "16:19",
+            "store": "온앤오프플러스",
+            "storeId": "195999",
+            "indBucket": "",
+            "emp": "송태양",
+            "install": null,
+            "nps": 6,
+            "text": "카카오페이결제안됨 바코드결제안됨",
+            "byReaction": true,
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "16:09",
+            "store": "온클래식필라테스&온더런",
+            "storeId": "490579",
+            "indBucket": "서비스[학원]",
+            "emp": "송태양",
+            "install": 4,
+            "nps": 8,
+            "text": "사용방법을 검색하면서 설치했고 아직도 적립이나 포인트제에 대해 정확히 모르겠습니다 ㅠ 앞에 답변과 동일합니다",
+            "byReaction": true,
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "15:39",
+            "store": "양주덕계역아이폰수리 내폰살려",
+            "storeId": "477850",
+            "indBucket": "기타",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "만족스러워요 추천할만해요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:32",
+            "store": "워너비",
+            "storeId": "326612",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "편리해요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:26",
+            "store": "슈에뜨카페",
+            "storeId": "318524",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "편하고 좋고 문제발생시 상담도 친절",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:23",
+            "store": "에덴네일스킨",
+            "storeId": "453314",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "사용이 편리해요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:23",
+            "store": "커피앤스튜디오나이브",
+            "storeId": "461287",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 6,
+            "text": "사용이 편리하고 자리를 많이 차지하지않아서 좋음",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
+      }
+    },
+    "2026-06-18": {
+      "updatedAt": "",
+      "counts": {},
+      "pending": [],
+      "voc": {
+        "responses": 21,
+        "install": {
+          "count": 6,
+          "low": 0
+        },
+        "nps": {
+          "count": 21,
+          "low": 1
+        },
+        "high": {
+          "install": 4,
+          "nps": 15
+        },
+        "npsDist": {
+          "5": 1,
+          "7": 2,
+          "8": 1,
+          "9": 2,
+          "10": 15
+        },
+        "installDist": {
+          "3": 2,
+          "5": 4
+        },
+        "byIndustry": {
+          "서비스[뷰티,헤어]": 3,
+          "서비스[학원]": 2,
+          "카페": 1
+        },
+        "byTenure": {
+          "1개월": {
+            "total": 7,
+            "low": 0
+          },
+          "6개월": {
+            "total": 2,
+            "low": 0
+          },
+          "12개월": {
+            "total": 4,
+            "low": 1
+          },
+          "구매설치": {
+            "total": 6,
+            "low": 0
+          },
+          "3개월": {
+            "total": 2,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "KSNET": {
+            "total": 4,
+            "low": 1
+          },
+          "SMARTRO": {
+            "total": 3,
+            "low": 0
+          },
+          "NICE": {
+            "total": 4,
+            "low": 0
+          },
+          "KIS": {
+            "total": 5,
+            "low": 0
+          },
+          "DAOU": {
+            "total": 1,
+            "low": 0
+          },
+          "KPN": {
+            "total": 3,
+            "low": 0
+          },
+          "SECTA9": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 1
+        },
+        "alerts": [
+          {
+            "time": "15:56",
+            "store": "리햅포러스(Rehab4us)",
+            "storeId": "168912",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "모든것이 직접 접촉이 아닌 쳇봇이나 문자로 이뤄집니다. 직관적이지 않아 업무처리에 딜레이가 있습니다. 전화 연결도 매우힘들고 귀측에서 척척 알아서 처리해주는 사안은 극히 일부고 소비자가 해야 할 일을 안내하는 데에 지나지 않아 무슨 코치받는 느낌입니다. 결국 해주는건 없고 해야할 일만 지시받으니 울며겨자먹기로 '냅둬' '관둬' 가 만연합니다.별로 친숙해지는 느낌이 안고 남의 옷입은 느낌입니다.끝.",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 통화거부 통화거부",
+            "doneDate": "2026-07-13"
+          }
+        ],
+        "praises": [
+          {
+            "time": "21:32",
+            "store": "젓가락질 잘해야만 밥을 먹나요",
+            "storeId": "464640",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "전 직장에서도 썼었기에 편리하게 잘 쓰고있음",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "20:06",
+            "store": "헤쎄드(HESED)",
+            "storeId": "317530",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "편리 종이안갈아도 되고 각종페이결제 되서",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "17:31",
+            "store": "여우숲(The Fox Forest)",
+            "storeId": "382791",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "사용하기 편리하고 포터블해서 갖고 나갈 수도 있어요.",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "16:31",
+            "store": "가죽공방 현",
+            "storeId": "455824",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "디자인이 깔끔해서 맘에들고 사용하기도 편리해서 잘쓰고 있습니다.",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "16:16",
+            "store": "패들엑스테니스인더스트리",
+            "storeId": "491380",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 3,
+            "nps": 9,
+            "text": "지시대로 잘설치 하였지만 조금 당황스러웠어요 기기가 편리한거 같습니다.",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:30",
+            "store": "리바이브샵",
+            "storeId": "448893",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "단말기랑 어플사용이 편리함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:30",
+            "store": "커피안",
+            "storeId": "462799",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "사용하기 편하고 디자인도 심플하고 좋아요 기능도 여러가지 있고 핸드폰이랑 연동도 되고요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:15",
+            "store": "토마토바버샵",
+            "storeId": "509577",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "설치가편하고 좋아요 사용편리 디자인 실용성.토스지원이벤트",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:15",
+            "store": "크리아트산성자이미술교습소",
+            "storeId": "511725",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "설치방법 몰라서 전화했더니 매우 친절하게 알려주심 ^^",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:15",
+            "store": "드미룬뷰티",
+            "storeId": "504767",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "처음에 설정을 잘못해서 어려웠지만 영상통화로 자세히 설명해주셔서 잘했어요 공간 차지도 안하고 인테리어를 해치지 않아서 넘 좋아요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "14:26",
+            "store": "달콤네일",
+            "storeId": "195166",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "사용하기 편리해요",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
+      }
+    },
+    "2026-06-19": {
+      "updatedAt": "",
+      "counts": {},
+      "pending": [],
+      "voc": {
+        "responses": 24,
+        "install": {
+          "count": 8,
+          "low": 1
+        },
+        "nps": {
+          "count": 24,
+          "low": 5
+        },
+        "high": {
+          "install": 3,
+          "nps": 16
+        },
+        "npsDist": {
+          "1": 2,
+          "3": 3,
+          "7": 1,
+          "9": 2,
+          "10": 16
+        },
+        "installDist": {
+          "1": 1,
+          "4": 4,
+          "5": 3
+        },
+        "byIndustry": {
+          "서비스[뷰티,헤어]": 3,
+          "카페": 2,
+          "도소매": 1,
+          "기타": 1,
+          "서비스[학원]": 1
+        },
+        "byTenure": {
+          "3개월": {
+            "total": 5,
+            "low": 2
+          },
+          "구매설치": {
+            "total": 8,
+            "low": 1
+          },
+          "1개월": {
+            "total": 6,
+            "low": 0
+          },
+          "6개월": {
+            "total": 2,
+            "low": 1
+          },
+          "12개월": {
+            "total": 3,
+            "low": 1
+          }
+        },
+        "byVan": {
+          "KSNET": {
+            "total": 5,
+            "low": 1
+          },
+          "KPN": {
+            "total": 3,
+            "low": 0
+          },
+          "DAOU": {
+            "total": 1,
+            "low": 0
+          },
+          "NICE": {
+            "total": 2,
+            "low": 1
+          },
+          "SECTA9": {
+            "total": 5,
+            "low": 1
+          },
+          "KIS": {
+            "total": 6,
+            "low": 2
+          },
+          "SMARTRO": {
+            "total": 2,
+            "low": 0
+          }
+        },
+        "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 3,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
+          "필요한 기능이 없거나 몰라서 불편": 2
+        },
+        "alerts": [
+          {
+            "time": "16:24",
+            "store": "금보가",
+            "storeId": "504198",
+            "industry": "도소매",
+            "indBucket": "도소매",
+            "install": 1,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "방운설치가 필요합니다! 프린터.cctv,씨네빔등 부가 서비스의 안내가 절대 불만 입니다 영수증 출력을 못해 손님들의 항의를 듣고 있어요ㅠ",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              },
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "나이 많은 점주들은  적응의 시간이 필요해요  방문설치  도움이 적용되어야~~",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• • 프린터 케이블 오구매로 반품 및 재구매 진행중인 매장으로 구매후 프린터 연결 도움드릴 예정 히스토리 프린터 케이블 오구매로 반품 및 재구매 진행중인 매장으로 구매후 프린터 연결 도움드릴 예정 / • OB완료. 현재 B케이블 구매하신 상태 • 케이블 수령 후 바로 연락주시면 신속하게 프린터 연동 도움 드리겠음 안내 후 통화종료 OB완료. 현재 B케이블",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "15:42",
+            "store": "통식당",
+            "storeId": "265301",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "모든것이 카톡으로 이루어 지는점",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 우리카드 가맹신청 서류를 카톡으로 발송하다가 허들이 있어 우리카드 결제를 못받는 상황 • 고객센터 유선연결 요청하시어 자정까지 운영하오니 금일 오후시간에 연락주셔서 유 선으로 진행 안내 • [기록용: 고객센터에 연결하거나 상담받기가 힘들었어요/ 요식업] 우리카드 가맹신청 서류를 카톡으로 발송하다가 허들이 있어 우리카드 결제를 못받는 상황 고객센터 유선연",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "15:34",
+            "store": "레이지버거클럽 부암점",
+            "storeId": "28931",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "테이블 호출기능",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:18",
+            "store": "황학대상회",
+            "storeId": "384821",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "바로결제기능이없네요",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 통화거부 통화거부",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "15:18",
+            "store": "메아뷰티",
+            "storeId": "368290",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "카드결제시 연결이 정말 잘안되서 매번 난감하네요....",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 2개월전 2개월전 교체이력 • 해당증상으로 불편을 끼쳐드린 점 사과 • 프론트 교체 안내 및 장비 수령 후 고객센터 연락주시면 재연동 도움드리겠음 안내 후 통화종료 • [기록용:포스 및 단말기 사용중 오류가 자주 발생했어요/ 연결끊김 / 서비스업 뷰티] 해당증상으로 불편을 끼쳐드린 점 사과 프론트 교체 안내 및 장비 수령 후 고객센터 연락주시면 재연동 ",
+            "doneDate": "2026-07-13"
+          }
+        ],
+        "praises": [
+          {
+            "time": "18:54",
+            "store": "슬로모(SLO-MO)",
+            "storeId": "505824",
+            "indBucket": "카페",
+            "emp": "",
+            "install": 4,
+            "nps": 10,
+            "text": "편리하지만은 않았음 좋음",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "18:24",
+            "store": "뉴한나미용실",
+            "storeId": "510340",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 5,
+            "nps": 9,
+            "text": "친절히 잘 가르쳐 주셔서 설치를 잘 할수 있었습니다 매우 만족하고 다른업종에도 추천하고 싶어요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "17:54",
+            "store": "손이예쁜날",
+            "storeId": "509541",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 4,
+            "nps": 10,
+            "text": "살짝 어려운면이 있었어요 디자인이 깔끔하구 예뻐서용",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:24",
+            "store": "카페시하",
+            "storeId": "511972",
+            "indBucket": "카페",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "친절한 설명 소프트웨어가 강점",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:24",
+            "store": "아쿠아플로우스위밍랩",
+            "storeId": "514438",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 4,
+            "nps": 10,
+            "text": "헷갈렸지만 잘 설치됨 결제가 편리",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:07",
+            "store": "더블유(W)창 광주점",
+            "storeId": "466558",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "편리함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:03",
+            "store": "이루어짐PT&운동과학센터 매탄점",
+            "storeId": "198078",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "너무 편리합니다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "06:01",
+            "store": "두유라이크",
+            "storeId": "189054",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "사용이 편하고 예뻐요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "00:07",
+            "store": "젤리즈펫",
+            "storeId": "318260",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "엄청 간편하고 편리함",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
+      }
+    },
+    "2026-06-20": {
+      "updatedAt": "",
+      "counts": {},
+      "pending": [],
+      "voc": {
+        "responses": 21,
+        "install": {
+          "count": 8,
+          "low": 2
+        },
+        "nps": {
+          "count": 21,
+          "low": 3
+        },
+        "high": {
+          "install": 4,
+          "nps": 8
+        },
+        "npsDist": {
+          "0": 2,
+          "1": 1,
+          "7": 2,
+          "8": 4,
+          "9": 4,
+          "10": 8
+        },
+        "installDist": {
+          "1": 1,
+          "2": 1,
+          "4": 2,
+          "5": 4
+        },
+        "byIndustry": {
+          "서비스[뷰티,헤어]": 4,
+          "요식업": 2,
+          "서비스[학원]": 1,
+          "기타": 1
+        },
+        "byTenure": {
+          "1개월": {
+            "total": 6,
+            "low": 0
+          },
+          "12개월": {
+            "total": 3,
+            "low": 0
+          },
+          "3개월": {
+            "total": 2,
+            "low": 0
+          },
+          "구매설치": {
+            "total": 8,
+            "low": 2
+          },
+          "6개월": {
+            "total": 2,
+            "low": 1
+          }
+        },
+        "byVan": {
+          "NICE": {
+            "total": 2,
+            "low": 0
+          },
+          "KSNET": {
+            "total": 3,
+            "low": 0
+          },
+          "SMARTRO": {
+            "total": 4,
+            "low": 0
+          },
+          "KPN": {
+            "total": 5,
+            "low": 0
+          },
+          "KIS": {
+            "total": 4,
+            "low": 1
+          },
+          "SECTA9": {
+            "total": 1,
+            "low": 1
+          },
+          "KOVAN": {
+            "total": 1,
+            "low": 1
+          },
+          "DAOU": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {
+          "구매,계약과정에서 설명이 부족": 3,
+          "단말기 설치나 초기 과정이 어려움": 1,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
+        },
+        "alerts": [
+          {
+            "time": "16:01",
+            "store": "원파인데이학원",
+            "storeId": "512676",
+            "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
+            "install": 1,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "기기값설명 안함",
+                "cat": "구매,계약과정에서 설명이 부족"
+              },
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "설명부족",
+                "cat": "구매,계약과정에서 설명이 부족"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 통화 녹취록 확인 연매출 3억 이상 초과 매장으로 5500원 발생 고지함 (36초 경) 통화 녹취록 확인 연매출 3억 이상 초과 매장으로 5500원 발생 고지함 (36초 경) / / • 1차부재 1차부재 / 2차부재 2차부재",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "15:30",
+            "store": "진남기업",
+            "storeId": "500172",
+            "industry": "제조업",
+            "indBucket": "기타",
+            "install": 2,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 2,
+                "text": "설명이 너무 부족함",
+                "cat": "구매,계약과정에서 설명이 부족"
+              },
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "설치가 어렵고 프린터기 별도 구매에 대한 설명이 없다. 무료인듯 광고하지만 무료가 아니다.",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 1차부재 1차부재 / 2차부재 2차부재",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "15:18",
+            "store": "보드레스킨",
+            "storeId": "320739",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "요금을 자꾸 내야되서 좀 그러내요 무료인지알았는데 뷰티사랑넷을 얼마만큼 결제가 되어야지만 무료라해서 괜히 한거같아요..",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
+        "praises": [
+          {
+            "time": "21:12",
+            "store": "에츠헤어살롱 옥정점",
+            "storeId": "197698",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 9,
+            "text": "사용하기편하고 as가 잘 되서요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "18:31",
+            "store": "체인지헤어",
+            "storeId": "504062",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "설치가 쉽고 간단했어요^^ 보기에도 예쁘고 사용하기 편리해요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "16:31",
+            "store": "빨간맛상회",
+            "storeId": "506422",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "친절한 설명 좋아요 사용 용이함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:31",
+            "store": "커피랑",
+            "storeId": "509438",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 4,
+            "nps": 8,
+            "text": "그냥 할 만했다 깔끔하고 편함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:31",
+            "store": "네일 더 캄&큐릭스",
+            "storeId": "509708",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 4,
+            "nps": 9,
+            "text": "쉬운듯 쉽지않아요! 초기 관리자번호 입력에서 관리자번호를 몰라서 고객센터 챗봇에 문의해야함 등.. 일단, 카드단말기가 예쁨. 결제가 용이해요!",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:31",
+            "store": "주식회사 포커스",
+            "storeId": "358043",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "쉽고 편리함 쉽고 편리함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:31",
+            "store": "뷰티옥(BEAUTY OK)",
+            "storeId": "507807",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "쉬웠어요 좋아요 쉬워요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:18",
+            "store": "뷰티온니(beauty only)",
+            "storeId": "317158",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 9,
+            "text": "간편해서 좋아요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:14",
+            "store": "디테일링 앤 케어(Detailing and care)",
+            "storeId": "472949",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "편리함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:10",
+            "store": "타코의밤",
+            "storeId": "194211",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 7,
+            "text": "대체로 만족하지만 개선했으면 하는 부분이 있어서 7점 입니다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "05:42",
+            "store": "어 닭발",
+            "storeId": "446392",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 8,
+            "text": "기대했던것이상으로 편리하고 유용하네요",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
+      }
+    },
+    "2026-06-21": {
+      "updatedAt": "",
+      "counts": {},
+      "pending": [],
+      "voc": {
+        "responses": 24,
+        "install": {
+          "count": 10,
+          "low": 0
+        },
+        "nps": {
+          "count": 24,
+          "low": 1
+        },
+        "high": {
+          "install": 6,
+          "nps": 13
+        },
+        "npsDist": {
+          "0": 1,
+          "7": 1,
+          "8": 5,
+          "9": 4,
+          "10": 13
+        },
+        "installDist": {
+          "3": 1,
+          "4": 3,
+          "5": 6
+        },
+        "byIndustry": {
+          "서비스[학원]": 4,
+          "도소매": 2,
+          "요식업": 2,
+          "서비스[뷰티,헤어]": 1,
+          "카페": 1
+        },
+        "byTenure": {
+          "구매설치": {
+            "total": 10,
+            "low": 0
+          },
+          "1개월": {
+            "total": 7,
+            "low": 1
+          },
+          "3개월": {
+            "total": 3,
+            "low": 0
+          },
+          "12개월": {
+            "total": 3,
+            "low": 0
+          },
+          "6개월": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "KSNET": {
+            "total": 4,
+            "low": 0
+          },
+          "KPN": {
+            "total": 3,
+            "low": 0
+          },
+          "SECTA9": {
+            "total": 5,
+            "low": 0
+          },
+          "SMARTRO": {
+            "total": 5,
+            "low": 0
+          },
+          "KIS": {
+            "total": 5,
+            "low": 0
+          },
+          "NICE": {
+            "total": 1,
+            "low": 0
+          },
+          "DAOU": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "reasonCounts": {
+          "필요한 기능이 없거나 몰라서 불편": 1
+        },
+        "alerts": [
+          {
+            "time": "11:20",
+            "store": "미라클(MIRACLE)",
+            "storeId": "467676",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "개선사항 얘기해도 나아지는게 없네요",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 히스토리 • 752개 상품 등록하여 사용중, 아무래도 많은 상품이 등록 되어 있다보니, 카테고리별로 검색이 가능했으면 좋겠다고 하심 • 토스포스 내 상품 등록 창에서 이미지를 추가하면 가운데 바꾸기 버튼을 없앨 수 있는지? 해당 내용 업데이트 될 수 있도록 담당부서에 전달 드려보겠음 안내[부정/사용할 수 있는 기능이 있는지 몰랐거나, 찾기 어려웠어요/도",
+            "doneDate": "2026-07-13"
+          }
+        ],
+        "praises": [
+          {
+            "time": "16:21",
+            "store": "정원산책 카페",
+            "storeId": "466664",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 8,
+            "text": "​1. 가장 만족스러운 점 (장점) ​비용 부담 없는 서비스, 높은 자유도의 커스텀 기능 ​2. 화면 구성 및 디자인 개선 요청 (UI/UX) ​현황 페이지 배경색 변경 (다크 모드 등): 현재 현황 페이지의 바탕화면이 어두운 톤으로 지원된다면, 주문서 내용이 시각적으로 훨씬 더 명확하게 눈에 들어올 것 같습니다. ​글자 크기 옵션 세분화 (더 큰 글씨 추가): 현재 '작은 글씨'와 '큰 글씨' 옵션이 제공되지만, '큰 글씨'조차 가시성이 다소 부족합니다. 바쁜 현장에서 한눈에 볼 수 있도록 더 큰 글씨 옵션이 추가되었으면 합니다. ​주문 화면 수정 시 UI 오류 개선: 포스 주문 화면에서 옵션이나 메뉴를 수정하고 나면, 갑자기 글씨가 더 작아지거나 키(버튼) 크기가 임의로 변하는 현상이 있습니다. 이 레이아웃 오류를 수정해 주세요. ​3. 기능 및 성능 개선 요청 ​주문서 내 '총 메뉴 개수' 표기: 주문서 자체에도 해당 주문의 총 메뉴 개수가 한눈에 보이도록 표기해 주시면…",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:47",
+            "store": "로마네 성수",
+            "storeId": "190415",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 9,
+            "text": "기본기능이 충실하게 잘 되어있고 비용이 거의 들지 않습니다.",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:37",
+            "store": "비비드버튼",
+            "storeId": "512370",
+            "indBucket": "도소매",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "설치가 전혀 어렵지 않았어요! 너무 편하고 좋습니다 토스단말기 하나로 할수있는게 정말 많네요 아주 만족합니다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:37",
+            "store": "다한다 송화",
+            "storeId": "515300",
+            "indBucket": "도소매",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "설치가 쉽고, 이용이 편리함 좋으니까요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:31",
+            "store": "메밀치킨",
+            "storeId": "409868",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 9,
+            "text": "좋아요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:21",
+            "store": "불란서간식집",
+            "storeId": "469463",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "편리함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:07",
+            "store": "앵커스터디카페 워크라운지",
+            "storeId": "514006",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "편리 좋음",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:07",
+            "store": "로스트파라다이스",
+            "storeId": "513200",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "응답빠름 좋아요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:07",
+            "store": "엘스킨뷰티",
+            "storeId": "476282",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 5,
+            "nps": 9,
+            "text": "설치하기 ~좋았어요(쉽게 할 수 있어어요~ 편리합니다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:07",
+            "store": "부자수산",
+            "storeId": "500173",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 4,
+            "nps": 9,
+            "text": "설명서대로 해도 안되는 부분이 있었음 설치만 하면 사용은 편리한거같음",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "14:25",
+            "store": "하나요가",
+            "storeId": "309518",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "사용이편리",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "12:20",
+            "store": "네일다영",
+            "storeId": "450373",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "사용하기 편리해요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "11:36",
+            "store": "마이네임",
+            "storeId": "491746",
+            "indBucket": "카페",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "간단한 설치 빠른 응대, 단말기 사용 편리성",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
+      }
+    },
+    "2026-06-22": {
+      "updatedAt": "",
+      "counts": {},
+      "pending": [],
+      "voc": {
+        "responses": 15,
+        "install": {
+          "count": 3,
+          "low": 0
+        },
+        "nps": {
+          "count": 15,
+          "low": 2
+        },
+        "high": {
+          "install": 2,
+          "nps": 8
+        },
+        "npsDist": {
+          "0": 1,
+          "5": 1,
+          "6": 2,
+          "7": 1,
+          "8": 2,
+          "10": 8
+        },
+        "installDist": {
+          "3": 1,
+          "5": 2
+        },
+        "byIndustry": {
+          "카페": 1,
+          "도소매": 1,
+          "기타": 1
+        },
+        "byTenure": {
+          "6개월": {
+            "total": 1,
+            "low": 0
+          },
+          "12개월": {
+            "total": 3,
+            "low": 0
+          },
+          "1개월": {
+            "total": 3,
+            "low": 1
+          },
+          "구매설치": {
+            "total": 3,
+            "low": 1
+          },
+          "3개월": {
+            "total": 5,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "SMARTRO": {
+            "total": 4,
+            "low": 1
+          },
+          "KSNET": {
+            "total": 3,
+            "low": 0
+          },
+          "KPN": {
+            "total": 2,
+            "low": 1
+          },
+          "KIS": {
+            "total": 1,
+            "low": 0
+          },
+          "SECTA9": {
+            "total": 4,
+            "low": 0
+          },
+          "NICE": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
+          "단말기 설치나 초기 과정이 어려움": 1
+        },
+        "alerts": [
+          {
+            "time": "18:59",
+            "store": "모니크헤어",
+            "storeId": "477355",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "안쓰는중",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "[기록용: 기타이슈/네이버플레이스/서비스업 뷰티헤어] [기록용: 기타이슈/네이버플레이스/서비스업 뷰티헤어]",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "15:14",
+            "store": "백구생(Baekusaeng)",
+            "storeId": "488909",
+            "industry": "양조장",
+            "indBucket": "기타",
+            "install": 3,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "어르신들은 설치가 불편할 것으로 예상",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
+        "praises": [
+          {
+            "time": "16:14",
+            "store": "(주)제주감성2",
+            "storeId": "518530",
+            "indBucket": "카페",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "친절 기능 풍부",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "16:14",
+            "store": "루녹스 (LUNOX)",
+            "storeId": "493646",
+            "indBucket": "도소매",
+            "emp": "",
+            "install": 5,
+            "nps": 8,
+            "text": "기계가 아주 만족스러움 설치가 쉬움 푯말 같은걸 좀 더 다양하게 줬음 좋겠음",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:38",
+            "store": "SSUN NAIL(썬네일)",
+            "storeId": "407588",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "기계렌탈비가 없고 기계가 심플하고 깔끔해요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:28",
+            "store": "동구상사, 비오는날의 오후(B5 COFFEE)",
+            "storeId": "468469",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "심플하고 편리함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:24",
+            "store": "미니멀 스토리지 광안점",
+            "storeId": "199379",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "데이터를 참고하기에 너무 유용함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:08",
+            "store": "동백서가",
+            "storeId": "388120",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "깔끔한 인테페이스",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
+      }
+    },
+    "2026-06-23": {
+      "updatedAt": "",
+      "counts": {},
+      "pending": [],
+      "voc": {
+        "responses": 21,
+        "install": {
+          "count": 6,
+          "low": 1
+        },
+        "nps": {
+          "count": 21,
+          "low": 1
+        },
+        "high": {
+          "install": 3,
+          "nps": 13
+        },
+        "npsDist": {
+          "0": 1,
+          "7": 2,
+          "8": 5,
+          "10": 13
+        },
+        "installDist": {
+          "1": 1,
+          "4": 2,
+          "5": 3
+        },
+        "byIndustry": {
+          "서비스[뷰티,헤어]": 1,
+          "서비스[학원]": 3,
+          "요식업": 2
+        },
+        "byTenure": {
+          "구매설치": {
+            "total": 6,
+            "low": 1
+          },
+          "6개월": {
+            "total": 5,
+            "low": 0
+          },
+          "3개월": {
+            "total": 3,
+            "low": 0
+          },
+          "1개월": {
+            "total": 3,
+            "low": 0
+          },
+          "12개월": {
+            "total": 4,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "KPN": {
+            "total": 2,
+            "low": 0
+          },
+          "NICE": {
+            "total": 2,
+            "low": 0
+          },
+          "SMARTRO": {
+            "total": 4,
+            "low": 0
+          },
+          "SECTA9": {
+            "total": 5,
+            "low": 0
+          },
+          "KSNET": {
+            "total": 4,
+            "low": 0
+          },
+          "KIS": {
+            "total": 3,
+            "low": 1
+          },
+          "DAOU": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
+        },
+        "alerts": [
+          {
+            "time": "15:51",
+            "store": "플로웰(Flowell English)어학원",
+            "storeId": "517201",
+            "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
+            "install": 1,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "업종이 학원임을 알리고 상담했는데도 상담시 자세한 설명없었고 받아서 설치할 당시 단말기에서 카드취소가 안된다는걸 알게되서 매우 불편함을 느끼고 반품까지 고민하게됨. 이후 키오스크 기능 사용시 주문번호 멘트를 삭제할 수 없다는 안내를 받음. 광고로 토스단말기 엄청 편하다고 홍보하고 있지만 현실에서는 업종에 따른 서비스자체가 구성 안되어있음. 학원업종 선택했음에도 주문번호가 자동설정되며 삭제가 안되고 카드취소나 프린트를 이용하려면 추가 기기를 구매해야한다는 사실을 배송받고 추후 안내받음. 사전 고지가 명확해야한다고 생각함. 그리고 메일로 받아본 계약서에 적히 상호명, 영문명 등 오류가 많아서 매우 불쾌했음",
+                "cat": "사용중 오류가 자주 발생함"
+              },
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "앞 내용과 동일",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 통화녹취 확인 • 상담사가 먼저 학원업종인 것 확인 및 고지 • 종이영수증 출력 안되며 전자영수증 기능 있음 고지 통화녹취 확인 상담사가 먼저 학원업종인 것 확인 및 고지 종이영수증 출력 안되며 전자영수증 기능 있음 고지 / • OB 완료 • 영수증 출력 및 학원업종 관련해서는 녹취록 확인하였고 오해가 있으신 것 수긍 • 단말기에서 바로 취소가 안되는 ",
+            "doneDate": "2026-07-13"
+          }
+        ],
+        "praises": [
+          {
+            "time": "22:23",
+            "store": "이쏘어네일",
+            "storeId": "510861",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 4,
+            "nps": 7,
+            "text": "혼자 설치 하긴 했는데 살짝 버버가렸어요 깔끔합니다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "21:41",
+            "store": "러블리헤어",
+            "storeId": "319908",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "편리함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "20:46",
+            "store": "웅천세일공인중개사사무소",
+            "storeId": "354810",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 8,
+            "text": "사용편리",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "18:36",
+            "store": "히든보컬스튜디오",
+            "storeId": "451682",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "결제시스템이 매우 간편해서 편리하다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "17:09",
+            "store": "리스펙NJ",
+            "storeId": "317345",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "결제하기가 간편하고 메뉴등록하는것도 간편해서 좋습니다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "16:15",
+            "store": "NY과학교습소",
+            "storeId": "403993",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "편리한 기능으로 결재 방식 소통이 원활합니다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "16:01",
+            "store": "태인쌤",
+            "storeId": "197661",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "사용이 편리하고 꾸준한 업데이트로 오류가 적어요.",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:51",
+            "store": "퍼플무용 아카데미",
+            "storeId": "512622",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "일단 너무예쁘고 간편해요 이거저거 구매비용이나 렌탈비용도없는데 디자인도 이쁘고 다 만족!!!!!!!! 소문많이냈습니다아",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:31",
+            "store": "메종블리스",
+            "storeId": "198972",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 7,
+            "text": "하루매출을 못적고 넘어갈때 그날당일로 등록할수없으니 불편해요.",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:31",
+            "store": "좋은날엔",
+            "storeId": "198750",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 8,
+            "text": "만족",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:21",
+            "store": "스튜디오가림",
+            "storeId": "509869",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "쉽고 빠르다 사용하기 편리함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:21",
+            "store": "두루미추어탕",
+            "storeId": "513013",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 4,
+            "nps": 8,
+            "text": "설명서가없고 전화연결 상담받아야하는데 연결이 너무 오래걸림 합리적인 점수라 생각합니다",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
+      }
+    },
+    "2026-06-24": {
+      "updatedAt": "",
+      "counts": {},
+      "pending": [],
+      "voc": {
+        "responses": 25,
+        "install": {
+          "count": 11,
+          "low": 1
+        },
+        "nps": {
+          "count": 25,
+          "low": 3
+        },
+        "high": {
+          "install": 6,
+          "nps": 16
+        },
+        "npsDist": {
+          "4": 1,
+          "5": 2,
+          "7": 1,
+          "8": 3,
+          "9": 2,
+          "10": 16
+        },
+        "installDist": {
+          "2": 1,
+          "3": 3,
+          "4": 1,
+          "5": 6
+        },
+        "byIndustry": {
+          "도소매": 4,
+          "카페": 1,
+          "서비스[뷰티,헤어]": 3,
+          "서비스[학원]": 2,
+          "기타": 1
+        },
+        "byTenure": {
+          "3개월": {
+            "total": 8,
+            "low": 0
+          },
+          "6개월": {
+            "total": 5,
+            "low": 1
+          },
+          "구매설치": {
+            "total": 11,
+            "low": 2
+          },
+          "1개월": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "SECTA9": {
+            "total": 4,
+            "low": 0
+          },
+          "KOVAN": {
+            "total": 1,
+            "low": 0
+          },
+          "KIS": {
+            "total": 7,
+            "low": 1
+          },
+          "KPN": {
+            "total": 6,
+            "low": 1
+          },
+          "NICE": {
+            "total": 1,
+            "low": 0
+          },
+          "SMARTRO": {
+            "total": 5,
+            "low": 1
+          },
+          "DAOU": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {
+          "구매,계약과정에서 설명이 부족": 2,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2
+        },
+        "alerts": [
+          {
+            "time": "18:31",
+            "store": "모던 세탁",
+            "storeId": "512504",
+            "industry": "세탁",
+            "indBucket": "도소매",
+            "install": 3,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "설명을 부좆",
+                "cat": "구매,계약과정에서 설명이 부족"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:58",
+            "store": "이이이이이(EEEEE)합정역점",
+            "storeId": "507410",
+            "industry": "뷰티",
+            "indBucket": "서비스[뷰티,헤어]",
+            "install": 2,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 2,
+                "text": "굳이 필요하지 않은 케이블 선들이 2개나와서 헷갈림(단독으로 사용할경우에 선들까지옴. 세트로구매했음)",
+                "cat": "구매,계약과정에서 설명이 부족"
+              },
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "아직 많이 사용안해봤지만, 편리함",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:46",
+            "store": "노라벨Nolabel",
+            "storeId": "309143",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 4,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 4,
+                "text": "수수료가 쎔",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
+        "praises": [
+          {
+            "time": "16:28",
+            "store": "네페아(Nymphea)",
+            "storeId": "512766",
+            "indBucket": "카페",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "컴팩트한 사이즈와 예쁜 디자인, 어플 사용 편의성, 사용자 시인성 등 전부 좋습니다. 3번과 같은 이유입니다.",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "16:22",
+            "store": "제이에듀멘토학원",
+            "storeId": "406835",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "원하던 프로그램이 다 있음",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:58",
+            "store": "하이네일",
+            "storeId": "515344",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 4,
+            "nps": 10,
+            "text": "고객센터로 문의하면서 설치했음 매우친절 인테리어효과 깔끔 편리 관리기능",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:46",
+            "store": "웜업(WARM UP)",
+            "storeId": "313213",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "편리합니다.",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:28",
+            "store": "가챠#(GACHA#)",
+            "storeId": "508256",
+            "indBucket": "도소매",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "간편해요 간편함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:22",
+            "store": "조천당",
+            "storeId": "413256",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 9,
+            "text": "편리함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:12",
+            "store": "수수안",
+            "storeId": "450408",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "인테리어 효과가 크고 간편해요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "07:25",
+            "store": "행담차문화원",
+            "storeId": "514239",
+            "indBucket": "기타",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "쉽게 설치가능하게 원격으로 도움 받았음 설치 쉽고 따로 사용료 없으니까",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
+      }
+    },
+    "2026-06-25": {
+      "updatedAt": "",
+      "counts": {},
+      "pending": [],
+      "voc": {
+        "responses": 27,
+        "install": {
+          "count": 5,
+          "low": 1
+        },
+        "nps": {
+          "count": 27,
+          "low": 6
+        },
+        "high": {
+          "install": 3,
+          "nps": 14
+        },
+        "npsDist": {
+          "0": 2,
+          "3": 1,
+          "5": 3,
+          "6": 1,
+          "7": 2,
+          "8": 2,
+          "9": 2,
+          "10": 14
+        },
+        "installDist": {
+          "1": 1,
+          "4": 1,
+          "5": 3
+        },
+        "byIndustry": {
+          "요식업": 1,
+          "서비스[뷰티,헤어]": 2,
+          "서비스[학원]": 1,
+          "도소매": 1
+        },
+        "byTenure": {
+          "1개월": {
+            "total": 7,
+            "low": 0
+          },
+          "구매설치": {
+            "total": 5,
+            "low": 1
+          },
+          "3개월": {
+            "total": 7,
+            "low": 4
+          },
+          "12개월": {
+            "total": 5,
+            "low": 1
+          },
+          "6개월": {
+            "total": 3,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "SECTA9": {
+            "total": 9,
+            "low": 2
+          },
+          "KSNET": {
+            "total": 7,
+            "low": 1
+          },
+          "KIS": {
+            "total": 3,
+            "low": 0
+          },
+          "KPN": {
+            "total": 6,
+            "low": 3
+          },
+          "SMARTRO": {
+            "total": 2,
+            "low": 0
+          }
+        },
+        "reasonCounts": {
+          "필요한 기능이 없거나 몰라서 불편": 1,
+          "단말기 설치나 초기 과정이 어려움": 2,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 3,
+          "고객센터 연락이 매우 힘듦": 1
+        },
+        "alerts": [
+          {
+            "time": "17:31",
+            "store": "고유의 목소리",
+            "storeId": "407914",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "너무 복잡해요",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "17:01",
+            "store": "래쉬기릿",
+            "storeId": "423553",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "네이버플레이스 연동 불가",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "16:01",
+            "store": "김지현 영어수학",
+            "storeId": "385222",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "온라인 결제를 더 많이 사용합니다. 온라인 결제가 되었음 좋겠어요.",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:37",
+            "store": "온헤어",
+            "storeId": "515118",
+            "industry": "뷰티",
+            "indBucket": "서비스[뷰티,헤어]",
+            "install": 1,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "통화가어렵습니다.시설도불편합니다",
+                "cat": "고객센터 연락이 매우 힘듦"
+              },
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "전화로설치되었는지확인해주지않아요",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 점주 고령으로 원격설치 불가, 차주 화요일 오전11시 방문설치 예정 • [기록용: 고객센터에 연결하거나 상담받기가 힘들었어요/ 서비스업 뷰티헤어] 점주 고령으로 원격설치 불가, 차주 화요일 오전11시 방문설치 예정 [기록용: 고객센터에 연결하거나 상담받기가 힘들었어요/ 서비스업 뷰티헤어]",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "15:31",
+            "store": "뉴엘헤어",
+            "storeId": "423292",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "배경화면 을 못바꿔요",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:15",
+            "store": "퀸즈EVT영어학원",
+            "storeId": "185636",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "저리로 대출해서 거래하게 하고 12%까지 올리고 고신용자에게 연장도 안 해주고 아주 나쁨",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• OB완료 • 토스뱅크 대출받으신 내용을 플레이스에 적어주신거 같다고 함 • [기록용: 기타이슈/서비스업 학원] OB완료 토스뱅크 대출받으신 내용을 플레이스에 적어주신거 같다고 함 [기록용: 기타이슈/서비스업 학원]",
+            "doneDate": "2026-07-13"
+          }
+        ],
+        "praises": [
+          {
+            "time": "21:51",
+            "store": "싱글벙글 산약초 건강원",
+            "storeId": "450883",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 9,
+            "text": "비용 없이 친절하게 안내해주시고 사용할 수 있게 해주셔서 큰 힘이 됩니다.",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "20:51",
+            "store": "도구돼지국밥",
+            "storeId": "477117",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "편리하고 가격이 싸요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "18:07",
+            "store": "독도새우",
+            "storeId": "516447",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 5,
+            "nps": 9,
+            "text": "친절하게 설명을 자세히 차근차근해주셨어요 사용하기 쉬워서",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "16:50",
+            "store": "대치명문영어 교습소",
+            "storeId": "183120",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "문제 있을 때 친절히 응대해 주셔서",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "16:20",
+            "store": "바르다미술교습소",
+            "storeId": "476228",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "너무 편함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:37",
+            "store": "망포플레이팩토창의수학교습소",
+            "storeId": "513034",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "토스 단말기 만족합니다 사용법이 편리합니다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:37",
+            "store": "미샤창원대동백화점",
+            "storeId": "512958",
+            "indBucket": "도소매",
+            "emp": "",
+            "install": 4,
+            "nps": 10,
+            "text": "천천히 설명해주셔서 감사했습니다 사용하기 간편해서",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:31",
+            "store": "모들플라워",
+            "storeId": "417278",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "디자인도 예쁘고 사용법도 간단하고 결제도 편리해서 좋습니다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:24",
+            "store": "우도바라기",
+            "storeId": "316456",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "사용하기 편리 프론트에서 고객이 직접 주문과 결제가능해서 1인매장에 아주편리",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:24",
+            "store": "밝은세상 안경원",
+            "storeId": "320506",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 8,
+            "text": "세련된 디자인과 PC 연동과 자체로도 결제가되어 편리해요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:15",
+            "store": "윤슬로네일",
+            "storeId": "192050",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "사용이 편리하고 업데이트가 자주 되어서 좋아요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "11:14",
+            "store": "포미",
+            "storeId": "189913",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "너무 좋아요",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
+      }
+    },
+    "2026-06-26": {
+      "updatedAt": "",
+      "counts": {},
+      "pending": [],
+      "voc": {
+        "responses": 27,
+        "install": {
+          "count": 10,
+          "low": 3
+        },
+        "nps": {
+          "count": 27,
+          "low": 10
+        },
+        "high": {
+          "install": 3,
+          "nps": 10
+        },
+        "npsDist": {
+          "0": 3,
+          "1": 1,
+          "3": 2,
+          "5": 4,
+          "7": 1,
+          "8": 1,
+          "9": 5,
+          "10": 10
+        },
+        "installDist": {
+          "1": 2,
+          "2": 1,
+          "3": 2,
+          "4": 2,
+          "5": 3
+        },
+        "byIndustry": {
+          "서비스[학원]": 3,
+          "요식업": 1,
+          "서비스[뷰티,헤어]": 4,
+          "카페": 1,
+          "도소매": 1
+        },
+        "byTenure": {
+          "1개월": {
+            "total": 5,
+            "low": 3
+          },
+          "12개월": {
+            "total": 5,
+            "low": 1
+          },
+          "3개월": {
+            "total": 5,
+            "low": 2
+          },
+          "6개월": {
+            "total": 2,
+            "low": 0
+          },
+          "구매설치": {
+            "total": 10,
+            "low": 5
+          }
+        },
+        "byVan": {
+          "SECTA9": {
+            "total": 6,
+            "low": 2
+          },
+          "KSNET": {
+            "total": 6,
+            "low": 2
+          },
+          "SMARTRO": {
+            "total": 6,
+            "low": 2
+          },
+          "KIS": {
+            "total": 2,
+            "low": 0
+          },
+          "KPN": {
+            "total": 6,
+            "low": 4
+          },
+          "NICE": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 5,
+          "필요한 기능이 없거나 몰라서 불편": 2,
+          "단말기 설치나 초기 과정이 어려움": 4,
+          "고객센터 연락이 매우 힘듦": 1
+        },
+        "alerts": [
+          {
+            "time": "20:23",
+            "store": "네일보네이즈",
+            "storeId": "198440",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "오류가 많이나고 응대직원이 불친절하다고 느낌.",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "CX일괄문자발송 CX일괄문자발송",
+            "doneDate": ""
+          },
+          {
+            "time": "19:38",
+            "store": "불패칼국수 월피동점",
+            "storeId": "410939",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "오늘 점심 저녁 바쁜시간에 결제안되는 사태를 보고",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "CX일괄문자발송 CX일괄문자발송",
+            "doneDate": ""
+          },
+          {
+            "time": "17:08",
+            "store": "달보드레",
+            "storeId": "405599",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "26일 장애건으로 영업에 지장 받응",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "CX 일괄문자발송 CX 일괄문자발송",
+            "doneDate": ""
+          },
+          {
+            "time": "15:43",
+            "store": "살롱드유니(헤드스파)",
+            "storeId": "161635",
+            "industry": "뷰티",
+            "indBucket": "서비스[뷰티,헤어]",
+            "install": 3,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "익숙치않은 기계사용의 불편함",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:43",
+            "store": "큐티클헤어",
+            "storeId": "523061",
+            "industry": "뷰티",
+            "indBucket": "서비스[뷰티,헤어]",
+            "install": 1,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "설치과정이 어려웠어요",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              },
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "설치과정이 어렵고 기본용지가 동봉되어 오지 않아 신청하니 착불택배비 붙음",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 처리완료 원격인입건 처리완료 상호: 큐티클헤어 / KPN 사업자번호: 1273950824 핸드폰 번호: 01024253228 / 갤 주소: 경기도 동두천시 중앙로 110-17 (지행동) 현대프라자 101호 큐티클헤어 인입유형: 온라인 공급유형: 임대 배달제휴: 자대리점: N 내용:포프+유프 온보딩 요청드립니다. 상호: 큐티클헤어 / KPN 사업자번호: ",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "15:43",
+            "store": "프렌잉글리시 월평황실점",
+            "storeId": "440976",
+            "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
+            "install": 3,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "포스 활용이 어려워요ㅜ",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "CX일괄문자발송 CX일괄문자발송",
+            "doneDate": ""
+          },
+          {
+            "time": "15:26",
+            "store": "킨느(kynne)",
+            "storeId": "459996",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "네이버리뷰작성이 힘듭니다 토스리뷰는 장사에 별 도움이 안됩니다",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "[기록용: 기타이슈/네이버연동/서비스업 뷰티헤어] [기록용: 기타이슈/네이버연동/서비스업 뷰티헤어]",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "15:26",
+            "store": "시은순환요가",
+            "storeId": "482055",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "금액 별도 입력 결제 방법이 없음",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "1차부재 1차부재 / 2차부재 2차부재",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "15:13",
+            "store": "좋은 움직임 연구소 헬스&PT",
+            "storeId": "491958",
+            "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
+            "install": 2,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 2,
+                "text": "아무래도 설명서랑 영상만 보고 따라하기는 어려움. 고객센터나 판매자에게 물어보기 편하게 하는게 없음. 팔고 땡",
+                "cat": "고객센터 연락이 매우 힘듦"
+              },
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "필요는 하면 알려는 줘도 젊은 사람아니면 추천안할듯",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 프론트온보딩 및 금액입력결제모드, 전자영수증 세팅 및 사용법 교육 완료 • 고객센터 번호 모르셔서 안내 해드림 • [기록용: 고객센터에 연결하거나 상담받기가 힘들었어요/ 서비스업 체육] 프론트온보딩 및 금액입력결제모드, 전자영수증 세팅 및 사용법 교육 완료 고객센터 번호 모르셔서 안내 해드림 [기록용: 고객센터에 연결하거나 상담받기가 힘들었어요/ 서비스",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "12:25",
+            "store": "타니예르",
+            "storeId": "431885",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "고객센터 연결 사실상 불가",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "CX일괄문자발송 CX일괄문자발송",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "11:12",
+            "store": "핸썸가이",
+            "storeId": "514667",
+            "industry": "뷰티",
+            "indBucket": "서비스[뷰티,헤어]",
+            "install": 1,
+            "nps": 9,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "설치하라는데로 해도 아무것도 안되고.. 심지어 배경화면도 안바뀌고.. 넘넘 어려웠어요.. 그냥 전원 연결하고 간단히 하라는거 따라하면 될줄 알았는데.. 삼일동안 끙끙 대다가.. 아들 불러서 했는데.. 아들도 머 이렇게 쉽지 않냐고~~",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "1차부재 1차부재 / 2차부재 2차부재",
+            "doneDate": "2026-07-13"
+          }
+        ],
+        "praises": [
+          {
+            "time": "21:28",
+            "store": "주식회사 마켓윙스",
+            "storeId": "471165",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "편리함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "16:44",
+            "store": "심리상담소 홀씨",
+            "storeId": "464751",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "친절한 설명과 함께 잘 설치해주셨어요 설치도 잘 해주셨지만 기본적으로 알아야할 부분들에 대한 설명을 잘 해주셨어요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "16:43",
+            "store": "오늘도부담없이",
+            "storeId": "509991",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "자세하게 설명서 보내주셔서 아들이 설치했어요 편리하게 사용할수있고 간편해서 좋아요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "16:07",
+            "store": "서나결",
+            "storeId": "416548",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "편리",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:43",
+            "store": "황지영헤어스크린",
+            "storeId": "523446",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 5,
+            "nps": 9,
+            "text": "간편하고.생각보다어렵지않고 편리해요 일단빠르고단말기모양도세련돠고 친절히상담잘해주고톡도빠른답장해주고좋아요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:22",
+            "store": "목가적",
+            "storeId": "197867",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 8,
+            "text": "타 포스프로그램에 비해 간편하고 피드백빠르고 좋음",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:22",
+            "store": "더건강한피티(문화비)",
+            "storeId": "201487",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 9,
+            "text": "아주 좋습니다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:22",
+            "store": "나무와 풀",
+            "storeId": "184918",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "편리하고 포스기로 할수 있는게 많아서 좋습니다",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
+      }
+    },
+    "2026-06-27": {
+      "updatedAt": "",
+      "counts": {},
+      "pending": [],
+      "voc": {
+        "responses": 24,
+        "install": {
+          "count": 1,
+          "low": 0
+        },
+        "nps": {
+          "count": 24,
+          "low": 10
+        },
+        "high": {
+          "install": 1,
+          "nps": 5
+        },
+        "npsDist": {
+          "0": 4,
+          "1": 2,
+          "2": 2,
+          "5": 2,
+          "6": 1,
+          "7": 5,
+          "8": 2,
+          "9": 1,
+          "10": 5
+        },
+        "installDist": {
+          "5": 1
+        },
+        "byIndustry": {
+          "서비스[학원]": 1
+        },
+        "byTenure": {
+          "6개월": {
+            "total": 6,
+            "low": 3
+          },
+          "1개월": {
+            "total": 9,
+            "low": 3
+          },
+          "3개월": {
+            "total": 4,
+            "low": 2
+          },
+          "12개월": {
+            "total": 4,
+            "low": 2
+          },
+          "구매설치": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "SMARTRO": {
+            "total": 4,
+            "low": 2
+          },
+          "SECTA9": {
+            "total": 6,
+            "low": 3
+          },
+          "KIS": {
+            "total": 3,
+            "low": 0
+          },
+          "KSNET": {
+            "total": 4,
+            "low": 3
+          },
+          "KPN": {
+            "total": 3,
+            "low": 1
+          },
+          "NICE": {
+            "total": 2,
+            "low": 0
+          },
+          "KOVAN": {
+            "total": 1,
+            "low": 1
+          },
+          "DAOU": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {
+          "필요한 기능이 없거나 몰라서 불편": 1,
+          "단말기 설치나 초기 과정이 어려움": 2,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
+          "고객센터 연락이 매우 힘듦": 1,
+          "사용중 오류가 자주 발생함": 4
+        },
+        "alerts": [
+          {
+            "time": "23:11",
+            "store": "이연서 캘리그라피",
+            "storeId": "318521",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "편하거나 불편함이 없다",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "16:44",
+            "store": "강프로휠타이어",
+            "storeId": "374914",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "아침 출근해서 첫결재때는 연결이 항상 끊겨있음ㅋㅋ 영수증 재출력이 일상. 판매한 하청업체도 대응도 배째라 위약금내라식 대응. 진심으로 토스 회사는 망하시길 바랍니다. 이 정도면 다단계사기회사지요.",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• • 금액입력결제모드로 결제시 토스포스 실행되어 있는 상태여야 자동출력됨 설명 드리고 프론트관련 AS 도움드리겠다 하였으나 지속적으로 통화거부하시며 VOC 저점인입되는 매장 히스토리 금액입력결제모드로 결제시 토스포스 실행되어 있는 상태여야 자동출력됨 설명 드리고 프론트관련 AS 도움드리겠다 하였으나 지속적으로 통화거부하시며 VOC 저점인입되는 매장 • •",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "16:29",
+            "store": "카페 완도리",
+            "storeId": "202586",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 2,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 2,
+                "text": "시스템 불안정",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "CX일괄문자발송 CX일괄문자발송",
+            "doneDate": ""
+          },
+          {
+            "time": "16:09",
+            "store": "해법영어교습소",
+            "storeId": "280296",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "상담내용과 관리 부분이 아예 다르고 소개 해서 전화 번호 드려도 연락도 없고 최악 입니다",
+                "cat": "고객센터 연락이 매우 힘듦"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "/ • 지인추천 이벤트 관련 기상담 안내까지 드린 매장으로 추천한 지인이 프론트 구매안한 매장으로 이벤트대상 아님 설명드린 매장 • 지속 인입되어 통화하였으나 온도감 높으심 통화거부 • 문자로 해당 내용 재발송 안내 히스토리 지인추천 이벤트 관련 기상담 안내까지 드린 매장으로 추천한 지인이 프론트 구매안한 매장으로 이벤트대상 아님 설명드린 매장 지속 인입되",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "16:03",
+            "store": "배정동카페",
+            "storeId": "483576",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 2,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 2,
+                "text": "토스포스기 오류가 있을지 몰랐는데 영업시간에 오류가 생기니 너무 불편함 포스기 오류에 대한 문제 해결이 시급해보임",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "토스장애이슈 안내 문자 발송 토스장애이슈 안내 문자 발송",
+            "doneDate": ""
+          },
+          {
+            "time": "15:59",
+            "store": "굿앳 (Good ATT)",
+            "storeId": "202306",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "어제와같은 서버 문제가 하루에 두번씩이나 생긴게 이해할 수없어요. 특히 12시부터 18시부터 점심 , 저녁 피크타임에 이래버리니.. 게다가 고객센터 전화연결이 힘들어서 추천하지 않습니다.",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "CX일괄문자발송 CX일괄문자발송",
+            "doneDate": ""
+          },
+          {
+            "time": "15:39",
+            "store": "코딩앤플레이 평택고덕점",
+            "storeId": "322697",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "아직까지 부족한것 같다",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "2차부재 2차부재",
+            "doneDate": "2026-07-13"
+          },
+          {
+            "time": "15:33",
+            "store": "리플주",
+            "storeId": "468085",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "단말기에러",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "CX일괄안내예정 CX일괄안내예정",
+            "doneDate": ""
+          },
+          {
+            "time": "15:33",
+            "store": "라라카페",
+            "storeId": "463789",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "26일 결제 지연 및 불가 현상(토스 설치 대리점 포함 토스 상담원 연락 자체 불가 누구도 상황 해결책 제시 못함 추후 달랑 문자한통 모니터링중이라 보내고 해결안됨 고소하고싶음 장사 중대한 피해 입음",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "CX일괄문자발송 CX일괄문자발송",
+            "doneDate": ""
+          },
+          {
+            "time": "10:12",
+            "store": "만취살롱",
+            "storeId": "418958",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "프로그램오류 개선 너무 안됨 영업방해등 문제가 자주 발생 문제발생시 응대등 추천하지 않음",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "CX일괄문자발송 CX일괄문자발송",
+            "doneDate": ""
+          }
+        ],
+        "praises": [
+          {
+            "time": "20:04",
+            "store": "150.우리끼리 키즈카페 블럭마을 평택지제점",
+            "storeId": "458560",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 7,
+            "text": "영수증 프린트가 필요한 상황에 대처하기 힘들고 토스 사장님 어플을 사용할 때 메뉴 수정, 관리할 때 글씨가 너무 작아서 휴대폰으로 할 때 너무 불편해서",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "19:34",
+            "store": "헤세커피",
+            "storeId": "485747",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "사용자 사용자 편의성이 최고",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:59",
+            "store": "곱다",
+            "storeId": "200398",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "무료이용에 편리함 굿굿",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:39",
+            "store": "손끝에내린단비",
+            "storeId": "305964",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "편리하기도 하고 어느 영업장이나 잘어울릴거같아요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:33",
+            "store": "자이모 보컬 스튜디오",
+            "storeId": "450342",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 9,
+            "text": "프로그램 실행할때 부팅, 로딩이 느림",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:33",
+            "store": "원유방아간",
+            "storeId": "485771",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "기능이 깔끔하고 필요한 것만 있어서 사용하기 편해요",
+            "byReaction": false,
+            "doneDate": ""
           }
         ]
       }
