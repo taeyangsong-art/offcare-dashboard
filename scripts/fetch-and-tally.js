@@ -9,12 +9,13 @@ const TOKEN = process.env.SLACK_BOT_TOKEN;
 const OUT = 'slack-data.js';
 if (!TOKEN) { console.error('SLACK_BOT_TOKEN 환경변수가 필요합니다.'); process.exit(1); }
 
-// 집계 대상 채널. defaultCat = 카테고리 이모지 없을 때 기본, forceCat = 전용채널이라 항상 그 카테고리로 집계(외주 제외)
+// 집계 대상 채널. defaultCat = 카테고리 이모지 없을 때 기본(AS채널만),
+// requireCat=true = 해당 카테고리 이모지가 찍힌 것만 집계(원격as가 찍히면 AS로 집계, 무이모지는 미집계)
 const CHANNELS = [
-  { id: 'C09HRUSG4TX', label: '원격 AS요청', defaultCat: 'as',       forceCat: null },        // 공개: 이모지로 AS/온보딩/외주 구분
-  { id: 'C07CL4BV9QT', label: '명의변경',    defaultCat: 'transfer', forceCat: 'transfer' },  // 비공개 전용: 전부 명의변경
-  { id: 'C08740SFT1S', label: '메뉴등록',    defaultCat: 'menu',     forceCat: 'menu' },      // 공개 전용: 전부 메뉴등록(봇 접수 메시지 포함)
-  { id: 'C0ASD02FFML', label: '배달요청',    defaultCat: 'delivery', forceCat: 'delivery' },  // 공개 전용: 전부 배달
+  { id: 'C09HRUSG4TX', label: '원격 AS요청', defaultCat: 'as' },                              // 공개: 이모지로 AS/온보딩/외주 구분, 무이모지→AS
+  { id: 'C07CL4BV9QT', label: '명의변경',    defaultCat: 'transfer', requireCat: true },      // 원격명의변경 이모지가 찍힌 것만(원격as→AS)
+  { id: 'C08740SFT1S', label: '메뉴등록',    defaultCat: 'menu',     requireCat: true },      // 원격메뉴등록 이모지가 찍힌 것만(원격as→AS)
+  { id: 'C0ASD02FFML', label: '배달요청',    defaultCat: 'delivery', requireCat: true },      // 원격배달 이모지가 찍힌 것만(원격as→AS)
   { id: 'C07B5E78J23', label: 'VOC',         type: 'voc' },                                   // 설문 응답(점수/업종/사유) 별도 파싱
 ];
 
@@ -119,22 +120,24 @@ function tallyInto(msgs, ch, counts, pending) {
     const doer = emp || confirmPerson;
 
     if (hasDup) { dup++; continue; }         // 중복 이모지 → 집계 제외 (재처리는 중복 표시 없으니 별개 건으로 정상 집계됨)
-    if (hasVocTag && !emojiCat && !ch.forceCat) { continue; }   // 원격voc만 찍힌 순수 VOC 참조 → 업무 집계 제외(설문 VOC로만 관리)
+    if (hasVocTag && !emojiCat) { continue; }   // 원격voc만 찍힌 순수 VOC 참조 → 업무 집계 제외(설문 VOC로만 관리)
 
+    // requireCat 채널(명의변경/메뉴등록/배달)은 카테고리 이모지가 찍힌 것만 집계 → 카테고리는 항상 emojiCat이 결정.
+    // (예: 명의변경 채널에 원격as가 찍히면 AS로 집계, 원격명의변경이 찍혀야 명의변경으로 집계)
     if (hasExtern && doer) {                 // 외주 → 별도 집계
       const who = doer || '미지정';
       counts.extern = counts.extern || {};
       counts.extern[who] = (counts.extern[who] || 0) + 1; externCount++;
-    } else if (emp || emojiCat) {            // 완료담당자(원격OOO) 또는 카테고리 이모지(AS/온보딩/명의변경 등) → 처리(완료). 부재가 찍혀 있어도 처리로 인정
-      const catKey = ch.forceCat || emojiCat || ch.defaultCat;
+    } else if (emojiCat || (emp && !ch.requireCat)) {   // 카테고리 이모지 있음, 또는 AS채널에서 완료담당자만(→defaultCat). requireCat 채널은 이모지 필수
+      const catKey = emojiCat || ch.defaultCat;
       const who = emp || confirmPerson || '미지정';
       counts[catKey] = counts[catKey] || {};
       counts[catKey][who] = (counts[catKey][who] || 0) + 1; completed++;
     } else if (hasAbsent) {                  // 완료·카테고리 이모지 없이 '부재만'
       // 2차부재(재부재=연락 불가)는 확인필요에서 제외, 1차부재만 확인필요로 남김
-      if (absTag !== '2차 부재') pending.push({ time, store, biz, handler: doer || '미지정', cat: ch.forceCat || ch.defaultCat, reasons: [absTag] });
+      if (absTag !== '2차 부재') pending.push({ time, store, biz, handler: doer || '미지정', cat: ch.defaultCat, reasons: [absTag] });
     } else if (confirmPerson) {              // 확인만 → 확인필요
-      pending.push({ time, store, biz, handler: confirmPerson, cat: ch.forceCat || ch.defaultCat, reasons: ['확인 후 미완료'] });
+      pending.push({ time, store, biz, handler: confirmPerson, cat: ch.defaultCat, reasons: ['확인 후 미완료'] });
     }
   }
   return { completed, externCount, dup, latest };
