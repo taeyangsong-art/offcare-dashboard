@@ -257,6 +257,17 @@
   .fr-odds{margin-top:14px; font-size:13px; font-weight:600; opacity:.95}
   .fp-own{font-size:11px; font-weight:800; color:var(--gray2); margin-top:2px}
   .fp-own.yes{color:var(--green,#16a34a)}
+  /* 🔍 아이템 미리보기 툴팁 */
+  .item-tip{position:fixed; z-index:9999; display:none; pointer-events:none; left:0; top:0; animation:tipIn .12s ease-out}
+  @keyframes tipIn{from{opacity:0; transform:scale(.9)}to{opacity:1; transform:scale(1)}}
+  .it-tip-inner{background:var(--canvas,#fff); border:2px solid var(--rar,#8a94a6); border-radius:16px; padding:14px 16px;
+    min-width:150px; text-align:center; box-shadow:0 16px 40px rgba(0,0,0,.28), 0 0 20px var(--rar,#8a94a6)}
+  .it-tip-top{display:flex; gap:6px; justify-content:center; align-items:center; margin-bottom:8px}
+  .it-tip-rar{font-size:12px; font-weight:800; letter-spacing:.03em}
+  .it-tip-fish{font-size:10px; font-weight:800; color:#0aa5b1; background:#e0f7fa; border-radius:20px; padding:2px 8px}
+  .it-tip-disp{min-height:52px; display:flex; align-items:center; justify-content:center; margin:2px 0 8px}
+  .it-tip-name{font-size:13px; font-weight:700; color:var(--ink)}
+  .it-tip-foot{margin-top:6px; font-size:12px; font-weight:700; color:var(--gray)}
   .preview-hint{font-size:12.5px; color:var(--gray2); margin:-8px 2px 16px; font-weight:600}
   .game-me.previewing{outline:2px dashed #c8a2ff; outline-offset:2px}
   .game-me.previewing::after{content:'👀 미리보기'; position:absolute; top:10px; right:14px; font-size:12px; font-weight:800; color:#8a3ffb}
@@ -1149,6 +1160,23 @@ function gameMeInner(emp, eq){ const t=itemById('title',(eq||{}).title);
 }
 function previewEq(cat,id){ const emp=gameMe; if(!emp) return; const eq=Object.assign({},(gs(emp).equipped||{})); eq[cat]=id; const box=document.getElementById('gmBox'); if(box){ box.innerHTML=gameMeInner(emp,eq); box.classList.add('previewing'); } }
 function clearPreview(){ const emp=gameMe; if(!emp) return; const box=document.getElementById('gmBox'); if(box){ box.innerHTML=gameMeInner(emp,(gs(emp).equipped||{})); box.classList.remove('previewing'); } }
+// 🔍 아이템 마우스오버 → 그 자리에 미리보기 팝업
+const CAT_LABEL={title:'타이틀',nametag:'네임택',hat:'모자',face:'얼굴',outfit:'의상',pet:'펫'};
+function itemTipHTML(cat,id){ const it=itemById(cat,id); if(!it) return ''; const r=it.rarity||'common';
+  let big; if(cat==='title') big=`<span class="tr-${r}" style="${titleStyleOf(it)};font-size:24px;font-weight:800">[${escapeHtml(it.name)}]</span>`;
+  else if(cat==='nametag') big=`<span style="${nametagStyle({nametag:id})};font-size:24px;font-weight:800">홍길동</span>`;
+  else big=`<div style="font-size:52px;line-height:1">${it.e||'✕'}</div>`;
+  const owned=gameMe?owns(gameMe,cat,id):false;
+  return `<div class="it-tip-inner" style="--rar:${RARITY[r]}">
+    <div class="it-tip-top"><span class="it-tip-rar" style="color:${RARITY[r]}">${RARITY_KO[r]}</span>${it.fishOnly?'<span class="it-tip-fish">🎣 낚시전용</span>':''}</div>
+    <div class="it-tip-disp">${big}</div>
+    <div class="it-tip-name">${CAT_LABEL[cat]||''} · ${escapeHtml(it.name)}</div>
+    <div class="it-tip-foot">${it.price===0?'기본 제공':(owned?'✓ 보유중':(it.fishOnly?'낚시로만 획득':'🪙 '+it.price+' 코인'))}</div>
+  </div>`;
+}
+function showItemTip(e,cat,id){ let t=document.getElementById('itemTip'); if(!t){ t=document.createElement('div'); t.id='itemTip'; t.className='item-tip'; document.body.appendChild(t); } const html=itemTipHTML(cat,id); if(!html){ hideItemTip(); return; } t.innerHTML=html; t.style.display='block'; moveItemTip(e); }
+function moveItemTip(e){ const t=document.getElementById('itemTip'); if(!t||t.style.display!=='block') return; const pad=16, w=t.offsetWidth, h=t.offsetHeight; let x=e.clientX+pad, y=e.clientY+pad; if(x+w>window.innerWidth-8) x=e.clientX-w-pad; if(y+h>window.innerHeight-8) y=e.clientY-h-pad; if(x<8)x=8; if(y<8)y=8; t.style.left=x+'px'; t.style.top=y+'px'; }
+function hideItemTip(){ const t=document.getElementById('itemTip'); if(t) t.style.display='none'; }
 // 랭킹 등 이름 표시(타이틀+얼굴+네임택 색)
 function rankNameHTML(emp){ const eq=(GAME[emp]||{}).equipped||{}; const f=partE('face',eq.face), t=itemById('title',eq.title); return `${f?`<span class="r-face">${f}</span>`:''}${t?`<span class="r-title tr-${t.rarity}" style="${titleStyleOf(t)}">[${escapeHtml(t.name)}]</span>`:''}<span style="${nametagStyle(eq)}">${escapeHtml(emp)}</span>`; }
 function saveGame(){ save(LS_GAME,GAME); if(GAME_API){ fetch(GAME_API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({game:GAME})}).catch(()=>{}); } }
@@ -1169,7 +1197,7 @@ function shopCard(cat,it,emp){
   const disp = it.e!==undefined ? (it.e||'✕')
     : (cat==='nametag' ? `<span style="${nametagStyle({nametag:it.id})}">가나</span>`
     : `<span class="tr-${r}" style="${titleStyleOf(it)}">[${escapeHtml(it.name)}]</span>`);
-  return `<div class="shop-item ${eq?'equipped':''}" style="--rar:${RARITY[r]}" onmouseenter="previewEq('${cat}','${it.id}')" onmouseleave="clearPreview()">
+  return `<div class="shop-item ${eq?'equipped':''}" style="--rar:${RARITY[r]}" onmouseenter="previewEq('${cat}','${it.id}');showItemTip(event,'${cat}','${it.id}')" onmousemove="moveItemTip(event)" onmouseleave="clearPreview();hideItemTip()">
     <div class="si-rar">${RARITY_KO[r]}</div>
     <div class="si-disp">${disp}</div>
     <div class="si-name">${escapeHtml(it.name)}</div>
@@ -1261,7 +1289,7 @@ function fishOdds(spot){ const loot=FISH[spot].loot, tot=loot.reduce((a,x)=>a+x.
 function fishItemPreview(spot){ const seen={}, items=[]; FISH[spot].loot.filter(x=>x.t==='item').forEach(x=>{ for(const cat in GAME_ITEMS){ for(const it of GAME_ITEMS[cat]){ if(it.price===0) continue; if(!x.rar.includes(it.rarity)) continue; if(x.fish&&!it.fishOnly) continue; if(!x.fish&&it.fishOnly) continue; const k=cat+':'+it.id; if(!seen[k]){ seen[k]=1; items.push(Object.assign({cat},it)); } } } }); const ord={mythic:0,legendary:1,epic:2,rare:3,common:4}; return items.sort((a,b)=>(ord[a.rarity]-ord[b.rarity])); }
 function fishPreviewCard(it,emp){ const owned=owns(emp,it.cat,it.id), r=it.rarity;
   const disp = it.e!==undefined ? (it.e||'✕') : (it.cat==='nametag'?`<span style="${nametagStyle({nametag:it.id})}">가나</span>`:`<span class="tr-${r}" style="${titleStyleOf(it)}">[${escapeHtml(it.name)}]</span>`);
-  return `<div class="shop-item" style="--rar:${RARITY[r]}"><div class="si-rar">${RARITY_KO[r]}</div><div class="si-disp">${disp}</div><div class="si-name">${escapeHtml(it.name)}</div><div class="fp-own ${owned?'yes':''}">${owned?'✓ 보유':'미보유'}</div></div>`;
+  return `<div class="shop-item" style="--rar:${RARITY[r]}" onmouseenter="showItemTip(event,'${it.cat}','${it.id}')" onmousemove="moveItemTip(event)" onmouseleave="hideItemTip()"><div class="si-rar">${RARITY_KO[r]}</div><div class="si-disp">${disp}</div><div class="si-name">${escapeHtml(it.name)}</div><div class="fp-own ${owned?'yes':''}">${owned?'✓ 보유':'미보유'}</div></div>`;
 }
 function renderGameFish(){
   const emp=gameMe;
