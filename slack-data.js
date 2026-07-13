@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 315,
+  "version": 316,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1987,9 +1987,20 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-13": {
-      "updatedAt": "08:45",
+      "updatedAt": "09:00",
       "counts": {},
-      "pending": [],
+      "pending": [
+        {
+          "time": "09:00",
+          "store": "엘위스영어학원",
+          "biz": "6539002026",
+          "handler": "배선유",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "voc": {
         "responses": 2,
         "install": {
