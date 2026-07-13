@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 335,
+  "version": 336,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -2570,24 +2570,24 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-13": {
-      "updatedAt": "12:00",
+      "updatedAt": "12:07",
       "counts": {
         "as": {
-          "김현기": 8,
-          "김규빈": 2,
+          "김현기": 9,
+          "김규빈": 3,
           "배선유": 9,
           "김기범": 2,
           "심성현": 10,
           "송태양": 3
         },
+        "onboarding": {
+          "김현기": 2,
+          "심성현": 3,
+          "김규빈": 1,
+          "서상원": 1
+        },
         "extern": {
           "서상원": 2
-        },
-        "onboarding": {
-          "김규빈": 1,
-          "심성현": 2,
-          "서상원": 1,
-          "김현기": 1
         },
         "transfer": {
           "송태양": 3,
@@ -2600,11 +2600,31 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "11:43",
-          "store": "윤선생광남초영어교습소",
-          "biz": "6529201561",
+          "time": "12:02",
+          "store": "도담이네열무밭",
+          "biz": "4260701705",
           "handler": "김현기",
           "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "11:59",
+          "store": "나를위한 에스테틱",
+          "biz": "5192501831",
+          "handler": "심성현",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "11:49",
+          "store": "언플로우 로스터즈",
+          "biz": "",
+          "handler": "심성현",
+          "cat": "transfer",
           "reasons": [
             "확인 후 미완료"
           ]
@@ -2614,16 +2634,6 @@ window.SLACK_DATA = {
           "store": "에스앤피이(SNPE) 바른자세 척추운동 경성대점",
           "biz": "8522500699",
           "handler": "배선유",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "11:30",
-          "store": "미미래쉬",
-          "biz": "5654001521",
-          "handler": "심성현",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
