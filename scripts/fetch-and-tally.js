@@ -333,8 +333,11 @@ async function tallyVoc(msgs, voc, channelId, opts) {
   }
   data.days = data.days || {};
 
-  // ===== 업무 채널 집계 (백필이면 BACKFILL_FROM~오늘 여러 날, 아니면 오늘 하루) =====
-  const workDates = backfillFrom ? dateList(backfillFrom, targetDate) : [targetDate];
+  // ===== 업무 채널 집계 (백필이면 BACKFILL_FROM~오늘, 아니면 최근 3일 롤링) =====
+  // 최근 3일을 매번 다시 훑어, 어제/그제 건에 나중에 찍힌 중복·완료·부재 변경도 반영.
+  const wdStartObj = new Date(Date.UTC(Y, M, D - 2));
+  const wdStart = `${wdStartObj.getUTCFullYear()}-${pad(wdStartObj.getUTCMonth() + 1)}-${pad(wdStartObj.getUTCDate())}`;
+  const workDates = backfillFrom ? dateList(backfillFrom, targetDate) : dateList(wdStart, targetDate);
   if (backfillFrom) console.log(`[백필] ${backfillFrom} ~ ${targetDate} (${workDates.length}일) 재집계`);
   for (const dstr of workDates) {
     const b = boundsOf(dstr);
