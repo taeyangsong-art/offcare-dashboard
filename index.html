@@ -1344,10 +1344,10 @@ function renderOverview(){
   const workGrandPrev = workCatTotals.reduce((a,c)=>a+c.prev,0);
   const vAgg = aggVoc(viewDates), vAggPrev = aggVoc(prevDates);
   const vAlerts = vAgg.alerts, vAlertsPrev = vAggPrev.alerts;
-  const vocTot = vAlerts.length, vocPrevN = vAlertsPrev.length;                                  // VOC 인입(저점)
-  // VOC 처리 = 이 기간 완료된 모든 VOC(저점+칭찬), 설문(인입)일 기준 일별 집계
-  const vocAttr = vAlerts.filter(a=>a.emp).length + (vAgg.praises||[]).filter(p=>p.emp).length;
-  const vocAttrPrev = vAlertsPrev.filter(a=>a.emp).length + (vAggPrev.praises||[]).filter(p=>p.emp).length;
+  const vocTot = vAlerts.length, vocPrevN = vAlertsPrev.length;                                  // VOC 인입(저점, 인입일 기준)
+  // VOC 처리 = 완료일(doneDate)이 이 기간인 모든 VOC(저점+칭찬) — 완료한 날짜 기준
+  const vocDoneCur = vocDoneInRange(viewDates), vocDonePrv = vocDoneInRange(prevDates);
+  const vocAttr = vocDoneCur.cnt, vocAttrPrev = vocDonePrv.cnt;
   const catTotals = [...workCatTotals, {key:'voc', name:'VOC', icon:'💬', color:'#ff2d55', total:vocTot, prev:vocPrevN, proc:vocAttr}];
   const grandProc = workGrand + vocAttr;              // 처리 = 업무 처리 + VOC 처리(담당자 지정)
   const grandProcPrev = workGrandPrev + vocAttrPrev;
@@ -1362,7 +1362,7 @@ function renderOverview(){
   const missRows=(function(){ const cnt={}; ovPend.forEach(p=>{ const hd=p.handler; if(hd&&hd!=='미지정') cnt[hd]=(cnt[hd]||0)+1; }); return Object.entries(cnt).sort((a,b)=>b[1]-a[1]).slice(0,5); })();
 
   // VOC 저점을 확인 담당자(emp) 기준으로 직원별 집계
-  const vocByEmp={}; vAlerts.forEach(a=>{ if(a.emp) vocByEmp[a.emp]=(vocByEmp[a.emp]||0)+1; }); (vAgg.praises||[]).forEach(p=>{ if(p.emp) vocByEmp[p.emp]=(vocByEmp[p.emp]||0)+1; });
+  const vocByEmp = vocDoneCur.byEmp;   // 완료일 기준 직원별 VOC 처리
   const empRows = EMPLOYEES.map(e=>{
     const cells = WORK_CATS.map(c=>sumRange(c.key, viewDates, e));
     const vc = vocByEmp[e]||0;
@@ -1514,7 +1514,8 @@ function hexA(hex,a){ const n=parseInt(hex.slice(1),16); return `rgba(${n>>16&25
 
 // 전체 처리 추이 (기간 내 일별 전 카테고리 합계)
 function overviewTrend(dates){
-  const vals=dates.map(d=>{ const v=(slackDay(d)||{}).voc; const vp=v?((v.alerts||[]).filter(a=>a.emp).length+(v.praises||[]).filter(p=>p.emp).length):0; const ab=((slackDay(d)||{}).pending||[]).filter(p=>(p.reasons||[]).some(r=>/부재/.test(r))).length; return WORK_CATS.reduce((a,c)=>a+sumRange(c.key,[d]),0)+vp+ab; });   // 업무 + VOC 처리(설문일 기준) + 부재 미처리 = 원격 총 건수와 동일 기준
+  const vocDB=vocDoneByDay();
+  const vals=dates.map(d=>{ const vp=vocDB[d]||0; const ab=((slackDay(d)||{}).pending||[]).filter(p=>(p.reasons||[]).some(r=>/부재/.test(r))).length; return WORK_CATS.reduce((a,c)=>a+sumRange(c.key,[d]),0)+vp+ab; });   // 업무 + VOC 처리(완료일 기준) + 부재 미처리 = 원격 총 건수와 동일 기준
   const mx=Math.max(1,...vals);
   const gapUnit=Math.min(60,Math.max(28,720/dates.length));
   const W=Math.max(520,dates.length*gapUnit), H=200, pad=26, gap=(W-pad*2)/dates.length, bw=gap*0.6;
@@ -1749,6 +1750,7 @@ function renderVoc(){
   const viewDates=vocViewDates();
   const viewLabel=viewLabelOf();
   const v=aggVoc(viewDates);
+  const vDoneByDay=vocDoneByDay();   // 완료일 기준 일별 처리 건수
   const lowTotal=v.install.low+v.nps.low;
 
   // 업종/사유 그룹핑 (드릴다운용)
@@ -1779,8 +1781,8 @@ function renderVoc(){
     </div>
 
     <div class="card">
-      <div class="card-head"><h3>📅 일별 VOC 처리</h3><span class="hint">확인+완료완료 찍힌 건 · 설문일 기준 · 기간 합계 ${vocProcTotal(viewDates)}건</span></div>
-      <div class="vday-grid">${viewDates.map(d=>{ const n=vocProcOfDay(d); return `<div class="vday${n>0?' has':''}"><div class="vday-n">${n}</div><div class="vday-d">${fmtShort(d)}</div></div>`; }).join('')}</div>
+      <div class="card-head"><h3>📅 일별 VOC 처리</h3><span class="hint">확인+완료완료 찍힌 건 · 완료일 기준 · 기간 합계 ${viewDates.reduce((a,d)=>a+(vDoneByDay[d]||0),0)}건</span></div>
+      <div class="vday-grid">${viewDates.map(d=>{ const n=vDoneByDay[d]||0; return `<div class="vday${n>0?' has':''}"><div class="vday-n">${n}</div><div class="vday-d">${fmtShort(d)}</div></div>`; }).join('')}</div>
     </div>
 
     <div class="grid2">
@@ -2759,9 +2761,9 @@ function applySlackData(){
 // 선택한 날짜의 슬랙 집계 항목 (없으면 null)
 function slackDay(date){ return (window.SLACK_DATA&&window.SLACK_DATA.days&&window.SLACK_DATA.days[date])||null; }
 function allSlackDates(){ return (window.SLACK_DATA&&window.SLACK_DATA.days)?Object.keys(window.SLACK_DATA.days).sort():[]; }
-// 하루의 VOC 처리(완료) 건수 = 담당자(emp) 지정된 저점+칭찬 (설문일 기준)
-function vocProcOfDay(d){ const v=(slackDay(d)||{}).voc; return v?((v.alerts||[]).filter(a=>a.emp).length+(v.praises||[]).filter(p=>p.emp).length):0; }
-function vocProcTotal(dates){ return dates.reduce((a,d)=>a+vocProcOfDay(d),0); }
+// VOC 처리(완료)를 완료일(doneDate) 기준으로 집계 — 설문 원본 날짜와 무관
+function vocDoneByDay(){ const map={}; allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ if(x.emp&&x.doneDate) map[x.doneDate]=(map[x.doneDate]||0)+1; }); }); return map; }
+function vocDoneInRange(dates){ const set=new Set(dates); let cnt=0; const byEmp={}; allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ if(x.emp&&x.doneDate&&set.has(x.doneDate)){ cnt++; byEmp[x.emp]=(byEmp[x.emp]||0)+1; } }); }); return {cnt, byEmp}; }
 
 function seedShare(){
   const base=today();

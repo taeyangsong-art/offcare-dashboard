@@ -299,8 +299,9 @@ async function tallyVoc(msgs, voc, channelId, opts) {
         const reps = await fetchReplies(channelId, m.ts);
         autoNote = cleanNote(reps.map(r => blocksText(r)).join(' / '));
       }
-      // 완료일 = 설문(인입)일 기준 — 일별로 분산 집계 (리액션 시각을 알 수 없어 완료건을 하루로 몰지 않음)
-      const doneDate = empVal ? (opts.dayDate || '') : '';
+      // 완료일 = 최초로 완료 감지한 날(오늘). 한 번 기록되면 유지 → 이후엔 완료한 날짜대로 일별 분산.
+      // (첫 집계 때는 그동안 밀린 완료건이 한 번 '오늘'로 몰릴 수 있음)
+      const doneDate = empVal ? (prior.doneDate || opts.todayKstDate || '') : '';
       voc.alerts.push({ time, store, storeId, industry, indBucket, install: isNaN(install) ? null : install, nps: isNaN(nps) ? null : nps, reasons,
         emp: empVal,
         autoStatus: autoDone ? '처리완료' : '', autoEmp: autoDone ? handler : '', autoNote, doneDate });
@@ -308,7 +309,9 @@ async function tallyVoc(msgs, voc, channelId, opts) {
 
     // 칭찬/일반 응답 적재: 저점이 아니면서 처리(담당자) 또는 칭찬 문구가 있는 건 (emp 있으면 '처리'로 집계됨)
     if (!reasons.length && (empVal || hasPraiseWord)) {
-      const pdoneDate = empVal ? (opts.dayDate || '') : '';
+      const pkey = (opts.dayDate || '') + '|' + (storeId || '') + '|' + time;
+      const pprior = (opts.priorMap || {})[pkey] || {};
+      const pdoneDate = empVal ? (pprior.doneDate || opts.todayKstDate || '') : '';
       const ptext = (installReason + ' ' + npsReason).trim() || allAns.slice(0, 100);
       voc.praises.push({ time, store, storeId, indBucket, emp: empVal, install: isNaN(install) ? null : install, nps: isNaN(nps) ? null : nps, text: ptext, byReaction: !!empVal, doneDate: pdoneDate });
     }
