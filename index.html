@@ -951,10 +951,27 @@ function startOfWeek(d){ const x=new Date(d); const dow=(x.getDay()+6)%7; return
 function fmtKDate(d){ const w=["일","월","화","수","목","금","토"][d.getDay()];
   return `${d.getFullYear()}년 ${d.getMonth()+1}월 ${d.getDate()}일 (${w})`; }
 function fmtShort(s){ const d=parseYmd(s); return `${d.getMonth()+1}/${d.getDate()}`; }
+// 공용 기간 헬퍼 (어제/오늘/최근N일/기간)
+function lastNDays(n){ const out=[]; for(let i=n-1;i>=0;i--) out.push(ymd(addDays(today(),-i))); return out; }
+function dateRangeList(s,e){ let a=parseYmd(s), b=parseYmd(e); if(b<a){const t=a;a=b;b=t;} const out=[]; for(let d=new Date(a); d<=b; d=addDays(d,1)) out.push(ymd(d)); return out; }
+function periodDates(mode, cStart, cEnd){
+  if(mode==='yesterday') return [ymd(addDays(today(),-1))];
+  if(mode==='d7') return lastNDays(7);
+  if(mode==='d30') return lastNDays(30);
+  if(mode==='range'||mode==='custom') return dateRangeList(cStart, cEnd);
+  return [ymd(today())]; // today
+}
+function periodRangeText(dates){ if(!dates.length) return ''; return dates.length===1?fmtShort(dates[0]):`${fmtShort(dates[0])} ~ ${fmtShort(dates[dates.length-1])} (${dates.length}일)`; }
+const PERIOD_LABEL={yesterday:'어제',today:'오늘',d7:'최근 7일',d30:'최근 30일',range:'기간',custom:'기간'};
+function periodSeg(mode, prefix){
+  const rangeKey = prefix==='Ov' ? 'range' : 'custom';
+  const opt=(k,l)=>`<button class="${mode===k?'on':''}" onclick="setP${prefix}('${k}')">${l}</button>`;
+  return `<div class="seg">${opt('yesterday','어제')}${opt('today','오늘')}${opt('d7','최근 7일')}${opt('d30','최근 30일')}${opt(rangeKey,'기간')}</div>`;
+}
 
 /* ================= State ================= */
 let activeCat = "overview";
-let viewMode = "day";               // day | week | month | custom
+let viewMode = "today";             // yesterday | today | d7 | d30 | custom
 let selDate = ymd(today());
 let rangeStart = ymd(addDays(today(),-6));  // 커스텀 기간 시작
 let rangeEnd = ymd(today());                // 커스텀 기간 종료
@@ -962,8 +979,7 @@ let dutyMonth = new Date(today().getFullYear(), today().getMonth(), 1);
 let shareMonth = new Date(today().getFullYear(), today().getMonth(), 1);
 let shareFilter = "all"; // all | 직원명
 // 전체현황 전용 기간 (다른 탭과 독립 · 탭 진입 시 오늘로 리셋)
-let ovMode = "day";                          // day | month | range
-let ovDate = ymd(today());
+let ovMode = "today";                        // yesterday | today | d7 | d30 | range
 let ovStart = ymd(addDays(today(),-6));
 let ovEnd = ymd(today());
 
@@ -989,68 +1005,36 @@ function rangeDates(mode, refStr){
     for(let i=1;i<=last;i++) out.push(ymd(new Date(y,m,i))); }
   return out;
 }
-// 기간 라벨/컨트롤 (모든 페이지 공용)
-function viewLabelOf(){ return {day:'일별',week:'주별',month:'월별',custom:'기간'}[viewMode]||'일별'; }
+// 기간 라벨/컨트롤 (VOC 등 · 어제/오늘/최근7일/최근30일/기간)
+function viewLabelOf(){ return PERIOD_LABEL[viewMode]||'오늘'; }
+function vocViewDates(){ return periodDates(viewMode, rangeStart, rangeEnd); }
+function vocRangeText(){ return periodRangeText(vocViewDates()); }
 function periodControls(){
-  const seg=`<div class="seg">
-    <button class="${viewMode==='day'?'on':''}"    onclick="setView('day')">일별</button>
-    <button class="${viewMode==='month'?'on':''}"  onclick="setView('month')">월별</button>
-    <button class="${viewMode==='custom'?'on':''}" onclick="setView('custom')">기간</button>
-  </div>`;
   const picker = viewMode==='custom'
     ? `<input type="date" value="${rangeStart}" onchange="setRangeStart(this.value)">
        <span style="color:var(--gray);font-weight:600">~</span>
        <input type="date" value="${rangeEnd}" onchange="setRangeEnd(this.value)">`
-    : `<input type="date" value="${selDate}" onchange="setDate(this.value)">
-       <button class="btn${isYesterday()?' primary':''}" onclick="setYesterday()">어제</button>`;
-  const quick=`<button class="btn${isQuickRange(7)?' primary':''}" onclick="setQuickRange(7)">최근 7일</button>
-    <button class="btn${isQuickRange(30)?' primary':''}" onclick="setQuickRange(30)">최근 30일</button>`;
-  return seg+picker+quick;
+    : '';
+  return periodSeg(viewMode,'View')+picker;
 }
-function setRangeStart(v){ rangeStart=v; renderMain(); }
-function setRangeEnd(v){ rangeEnd=v; renderMain(); }
-function setQuickRange(days){ viewMode='custom'; rangeEnd=ymd(today()); rangeStart=ymd(addDays(today(),-(days-1))); renderMain(); }
-function isQuickRange(days){ return viewMode==='custom' && rangeEnd===ymd(today()) && rangeStart===ymd(addDays(today(),-(days-1))); }
-/* ===== 전체현황 전용 기간 (일별/월별/기간) ===== */
-function ovDates(){
-  if(ovMode==='range'){ const out=[]; let s=parseYmd(ovStart), e=parseYmd(ovEnd); if(e<s){const t=s;s=e;e=t;} for(let d=new Date(s); d<=e; d=addDays(d,1)) out.push(ymd(d)); return out; }
-  if(ovMode==='month'){ const r=parseYmd(ovDate), y=r.getFullYear(), m=r.getMonth(), last=new Date(y,m+1,0).getDate(), out=[]; for(let i=1;i<=last;i++) out.push(ymd(new Date(y,m,i))); return out; }
-  return [ovDate];
-}
-function ovPrevDates(){
-  if(ovMode==='day') return [ymd(addDays(parseYmd(ovDate),-1))];
-  if(ovMode==='month'){ const r=parseYmd(ovDate), pm=new Date(r.getFullYear(), r.getMonth()-1, 15), y=pm.getFullYear(), m=pm.getMonth(), last=new Date(y,m+1,0).getDate(), out=[]; for(let i=1;i<=last;i++) out.push(ymd(new Date(y,m,i))); return out; }
-  const cur=ovDates(), n=cur.length, s=parseYmd(cur[0]), out=[]; for(let i=n;i>0;i--) out.push(ymd(addDays(s,-i))); return out;
-}
-function ovLabel(){ return ovMode==='day'?'일별':ovMode==='month'?'월별':'기간'; }
-function ovRangeText(){
-  if(ovMode==='day') return fmtShort(ovDate)+' 하루';
-  if(ovMode==='month'){ const r=parseYmd(ovDate); return `${r.getFullYear()}.${String(r.getMonth()+1).padStart(2,'0')} 한달`; }
-  const cur=ovDates(); return `${fmtShort(cur[0])} ~ ${fmtShort(cur[cur.length-1])} (${cur.length}일)`;
-}
+function setPView(m){ viewMode=m; renderMain(); }
+function setRangeStart(v){ viewMode='custom'; rangeStart=v; renderMain(); }
+function setRangeEnd(v){ viewMode='custom'; rangeEnd=v; renderMain(); }
+/* ===== 전체현황 전용 기간 (어제/오늘/최근7일/최근30일/기간) ===== */
+function ovDates(){ return periodDates(ovMode, ovStart, ovEnd); }
+function ovPrevDates(){ const cur=ovDates(), n=cur.length, s=parseYmd(cur[0]), out=[]; for(let i=n;i>0;i--) out.push(ymd(addDays(s,-i))); return out; }
+function ovLabel(){ return PERIOD_LABEL[ovMode]||'오늘'; }
+function ovRangeText(){ return periodRangeText(ovDates()); }
 function overviewControls(){
-  const seg=`<div class="seg">
-    <button class="${ovMode==='day'?'on':''}" onclick="setOvMode('day')">일별</button>
-    <button class="${ovMode==='month'?'on':''}" onclick="setOvMode('month')">월별</button>
-    <button class="${ovMode==='range'?'on':''}" onclick="setOvMode('range')">기간</button>
-  </div>`;
   const picker = ovMode==='range'
     ? `<input type="date" value="${ovStart}" onchange="setOvStart(this.value)"><span style="color:var(--gray);font-weight:600">~</span><input type="date" value="${ovEnd}" onchange="setOvEnd(this.value)">`
-    : `<input type="date" value="${ovDate}" onchange="setOvDate(this.value)">`;
-  const quick=`<button class="btn${isOvYesterday()?' primary':''}" onclick="setOvYesterday()">어제</button>
-    <button class="btn${isOvRange(7)?' primary':''}" onclick="setOvRange(7)">최근 7일</button>
-    <button class="btn${isOvRange(30)?' primary':''}" onclick="setOvRange(30)">최근 30일</button>`;
-  return seg+picker+quick;
+    : '';
+  return periodSeg(ovMode,'Ov')+picker;
 }
-function setOvMode(m){ ovMode=m; renderOverview(); }
-function setOvDate(v){ ovMode='day'; ovDate=v; renderOverview(); }
+function setPOv(m){ ovMode=m; renderOverview(); }
 function setOvStart(v){ ovMode='range'; ovStart=v; renderOverview(); }
 function setOvEnd(v){ ovMode='range'; ovEnd=v; renderOverview(); }
-function setOvYesterday(){ ovMode='day'; ovDate=ymd(addDays(today(),-1)); renderOverview(); }
-function isOvYesterday(){ return ovMode==='day' && ovDate===ymd(addDays(today(),-1)); }
-function setOvRange(days){ ovMode='range'; ovEnd=ymd(today()); ovStart=ymd(addDays(today(),-(days-1))); renderOverview(); }
-function isOvRange(days){ return ovMode==='range' && ovEnd===ymd(today()) && ovStart===ymd(addDays(today(),-(days-1))); }
-function resetOverviewPeriod(){ ovMode='day'; ovDate=ymd(today()); ovStart=ymd(addDays(today(),-6)); ovEnd=ymd(today()); }
+function resetOverviewPeriod(){ ovMode='today'; ovStart=ymd(addDays(today(),-6)); ovEnd=ymd(today()); }
 function sumRange(cat, dates, emp){
   return dates.reduce((a,d)=>{
     if(emp) return a + getCount(cat,d,emp);
@@ -1361,7 +1345,7 @@ function renderOverview(){
   const maxCell = Math.max(1, ...empRows.flatMap(r=>[...r.cells, r.vc]));
 
   // ── 헤드라인/알림/근무 계산 ──
-  const periodWord = ovMode==='day' ? (ovDate===ymd(today())?'오늘':fmtShort(ovDate)) : ovLabel();
+  const periodWord = ovLabel();
   const mvp = grand>0 ? empRows[0] : null;
   const todayStr = ymd(today());
   const tday = slackDay(todayStr);
@@ -1730,7 +1714,7 @@ function vocGroupDrill(entries, max, color, topReason){
   }).join('');
 }
 function renderVoc(){
-  const viewDates=rangeDates(viewMode,selDate);
+  const viewDates=vocViewDates();
   const viewLabel=viewLabelOf();
   const v=aggVoc(viewDates);
   const lowTotal=v.install.low+v.nps.low;
@@ -1741,8 +1725,8 @@ function renderVoc(){
 
   const isDone=a=>vocDone((VOCEDIT[vocKey(a)]||{}).status);
   // 미처리(처리중) 저점 건은 날짜가 지나도 계속 누적 표시 — 조회기간 종료일까지의 전체 미처리 건
-  const rangeEnd=viewDates[viewDates.length-1];
-  const carryDates=allSlackDates().filter(d=>d<=rangeEnd);
+  const carryEnd=viewDates[viewDates.length-1];
+  const carryDates=allSlackDates().filter(d=>d<=carryEnd);
   const carryAgg=aggVoc(carryDates);
   const pendingAlerts=carryAgg.alerts.filter(a=>!isDone(a)).sort((a,b)=>(a.date||'').localeCompare(b.date||''));
   const doneAlerts=v.alerts.filter(isDone);
@@ -1750,7 +1734,7 @@ function renderVoc(){
   document.getElementById("main").innerHTML=`
     <div class="page-head">
       <div><h2>💬 VOC (고객 설문)</h2>
-        <div class="sub">구매설치 경험(만점5)·추천의향(만점10) 저점 모니터링 · 업종/사유 집계 · ${viewRangeText(viewMode,selDate)}</div></div>
+        <div class="sub">구매설치 경험(만점5)·추천의향(만점10) 저점 모니터링 · 업종/사유 집계 · ${vocRangeText()}</div></div>
       <div class="controls">${periodControls()}</div>
     </div>
 
@@ -2265,7 +2249,7 @@ function setView(m){ viewMode=m; renderMain(); }
 function setDate(v){ selDate=v; renderMain(); }
 function setYesterday(){ viewMode='day'; selDate=ymd(addDays(today(),-1)); renderMain(); }
 function isYesterday(){ return viewMode==='day' && selDate===ymd(addDays(today(),-1)); }
-function resetVocPeriod(){ viewMode='day'; selDate=ymd(today()); }
+function resetVocPeriod(){ viewMode='today'; selDate=ymd(today()); rangeStart=ymd(addDays(today(),-6)); rangeEnd=ymd(today()); }
 function onInput(emp, val){ setCount(activeCat, selDate, emp, Math.max(0, parseInt(val)||0)); renderStats(); }
 
 /* ================= Duty page ================= */
