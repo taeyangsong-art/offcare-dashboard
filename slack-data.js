@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 338,
+  "version": 339,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -2570,19 +2570,20 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-13": {
-      "updatedAt": "12:40",
+      "updatedAt": "13:01",
       "counts": {
         "as": {
-          "김현기": 13,
+          "서상원": 1,
+          "배선유": 11,
+          "김현기": 14,
           "김규빈": 5,
-          "배선유": 9,
           "김기범": 2,
           "심성현": 10,
           "송태양": 3
         },
         "onboarding": {
+          "심성현": 5,
           "김현기": 2,
-          "심성현": 3,
           "김규빈": 1,
           "서상원": 1
         },
@@ -2595,28 +2596,38 @@ window.SLACK_DATA = {
         },
         "menu": {
           "김규빈": 4,
-          "배선유": 5
+          "배선유": 6
         }
       },
       "pending": [
         {
-          "time": "12:40",
-          "store": "더본헤어",
-          "biz": "2242033293",
-          "handler": "심성현",
+          "time": "13:00",
+          "store": "미미헤어",
+          "biz": "8780400702",
+          "handler": "송태양",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
           ]
         },
         {
-          "time": "11:37",
-          "store": "에스앤피이(SNPE) 바른자세 척추운동 경성대점",
-          "biz": "8522500699",
+          "time": "13:00",
+          "store": "삼미당",
+          "biz": "3760900797",
           "handler": "배선유",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "12:30",
+          "store": "으음 에스프레소",
+          "biz": "2466300751",
+          "handler": "송태양",
+          "cat": "transfer",
+          "reasons": [
+            "1차 부재"
           ]
         },
         {
@@ -2635,16 +2646,6 @@ window.SLACK_DATA = {
           "biz": "1535400985",
           "handler": "김현기",
           "cat": "delivery",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "10:05",
-          "store": "요거트가족",
-          "biz": "1891602210",
-          "handler": "배선유",
-          "cat": "menu",
           "reasons": [
             "확인 후 미완료"
           ]
