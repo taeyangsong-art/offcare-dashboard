@@ -203,6 +203,20 @@
   .fp-rod{font-size:52px; animation:fpwiggle .6s ease-in-out infinite}
   @keyframes fpwiggle{0%,100%{transform:rotate(-12deg)}50%{transform:rotate(12deg)}}
   .fp-wait{margin-top:12px; font-size:15px; font-weight:700; color:var(--gray)}
+  .fp-cast-scene{position:relative; height:96px; display:flex; align-items:center; justify-content:center}
+  .fp-cast-scene .fp-rod{position:relative; z-index:2}
+  .fp-bob{position:absolute; bottom:6px; font-size:16px; animation:frFloat 1.4s ease-in-out infinite}
+  .fp-ripple{position:absolute; bottom:8px; width:20px; height:20px; border:2px solid #4ea8ff; border-radius:50%; opacity:0; animation:fpRipple 1.8s ease-out infinite}
+  .fp-ripple.d2{animation-delay:.6s} .fp-ripple.d3{animation-delay:1.2s}
+  @keyframes fpRipple{0%{transform:scale(.4);opacity:.7}100%{transform:scale(3.4);opacity:0}}
+  .fish-pop.win{box-shadow:0 24px 60px rgba(0,0,0,.3), 0 0 40px var(--rc)}
+  .fish-pop.epic-up{animation:dutypop .3s cubic-bezier(.2,.9,.3,1.3), winShake .5s ease-in-out 2}
+  @keyframes winShake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px) rotate(-1deg)}75%{transform:translateX(6px) rotate(1deg)}}
+  .fp-rays{position:absolute; top:22px; left:50%; width:220px; height:220px; margin-left:-110px; z-index:0;
+    background:conic-gradient(var(--rc) 0 8deg, transparent 8deg 30deg, var(--rc) 30deg 38deg, transparent 38deg 60deg, var(--rc) 60deg 68deg, transparent 68deg 90deg, var(--rc) 90deg 98deg, transparent 98deg 120deg, var(--rc) 120deg 128deg, transparent 128deg 150deg, var(--rc) 150deg 158deg, transparent 158deg 180deg, var(--rc) 180deg 188deg, transparent 188deg 210deg, var(--rc) 210deg 218deg, transparent 218deg 240deg, var(--rc) 240deg 248deg, transparent 248deg 270deg, var(--rc) 270deg 278deg, transparent 278deg 300deg, var(--rc) 300deg 308deg, transparent 308deg 330deg, var(--rc) 330deg 338deg, transparent 338deg 360deg);
+    opacity:.35; border-radius:50%; animation:raysSpin 9s linear infinite; -webkit-mask:radial-gradient(circle,transparent 30%,#000 34%); mask:radial-gradient(circle,transparent 30%,#000 34%)}
+  @keyframes raysSpin{to{transform:rotate(360deg)}}
+  .fish-pop .fp-emoji,.fish-pop .fp-big,.fish-pop .fp-sub,.fish-pop .duty-pop-btn{position:relative; z-index:1}
   .fp-emoji{font-size:60px; line-height:1}
   .fp-big{margin-top:8px; font-size:24px; font-weight:800; letter-spacing:-.02em; color:var(--ink)}
   .fp-sub{margin-top:6px; font-size:14px; color:var(--gray)}
@@ -210,8 +224,32 @@
   .fish-room.fs-low{background:linear-gradient(160deg,#4aa3c7,#2d7d9a)}
   .fish-room.fs-mid{background:linear-gradient(160deg,#5a67d8,#3f2b96)}
   .fish-room.fs-high{background:linear-gradient(160deg,#0b1b3a,#123a5e)}
-  .fr-scene{position:relative; height:130px; display:flex; align-items:center; justify-content:center; font-size:70px}
-  .fr-rod{position:absolute; top:6px; right:34%; font-size:40px; animation:fpwiggle 1.4s ease-in-out infinite}
+  .fr-scene{position:relative; height:180px; border-radius:16px; overflow:hidden; margin-bottom:16px;
+    background:linear-gradient(180deg,rgba(255,255,255,.18),rgba(0,0,0,.15))}
+  .fr-shimmer{position:absolute; inset:0; background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);
+    background-size:220% 100%; animation:frShimmer 3.2s linear infinite; pointer-events:none}
+  @keyframes frShimmer{to{background-position:-220% 0}}
+  .fr-sun{position:absolute; top:14px; left:50%; transform:translateX(-50%); font-size:62px; filter:drop-shadow(0 4px 10px rgba(0,0,0,.3)); animation:frBob 3s ease-in-out infinite}
+  @keyframes frBob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-8px)}}
+  .fr-rod{position:absolute; top:8px; right:26%; font-size:44px; transform-origin:bottom left; animation:fpwiggle 1.6s ease-in-out infinite}
+  .fr-float{position:absolute; bottom:44px; right:30%; font-size:15px; animation:frFloat 1.9s ease-in-out infinite}
+  @keyframes frFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
+  .fr-wave{position:absolute; left:-20%; right:-20%; height:38px; border-radius:45%;
+    background:rgba(255,255,255,.16); animation:frWave 4s ease-in-out infinite}
+  .fr-wave.w1{bottom:-14px; animation-duration:3.4s}
+  .fr-wave.w2{bottom:-24px; background:rgba(255,255,255,.12); animation-duration:4.6s; animation-direction:reverse}
+  .fr-wave.w3{bottom:-34px; background:rgba(255,255,255,.09); animation-duration:5.6s}
+  @keyframes frWave{0%,100%{transform:translateX(-6%) scaleY(1)}50%{transform:translateX(6%) scaleY(1.25)}}
+  .fr-bubbles span{position:absolute; bottom:-12px; width:9px; height:9px; border-radius:50%;
+    background:rgba(255,255,255,.5); animation:frBubble 3.6s ease-in infinite}
+  .fr-bubbles span:nth-child(1){left:12%; animation-delay:0s}
+  .fr-bubbles span:nth-child(2){left:26%; animation-delay:.8s; width:6px;height:6px}
+  .fr-bubbles span:nth-child(3){left:40%; animation-delay:1.6s}
+  .fr-bubbles span:nth-child(4){left:58%; animation-delay:.4s; width:5px;height:5px}
+  .fr-bubbles span:nth-child(5){left:72%; animation-delay:2.2s}
+  .fr-bubbles span:nth-child(6){left:84%; animation-delay:1.2s; width:7px;height:7px}
+  .fr-bubbles span:nth-child(7){left:48%; animation-delay:2.8s; width:4px;height:4px}
+  @keyframes frBubble{0%{transform:translateY(0);opacity:0}20%{opacity:.9}100%{transform:translateY(-170px);opacity:0}}
   .fr-cast{margin-top:6px; border:none; border-radius:14px; padding:15px 20px; font-family:inherit; font-size:16px; font-weight:800;
     background:#fff; color:#123; cursor:pointer; box-shadow:0 8px 20px rgba(0,0,0,.25); transition:.15s}
   .fr-cast:hover:not(:disabled){transform:translateY(-2px)}
@@ -1059,6 +1097,10 @@ const GAME_ITEMS = {
     {id:'t_god',name:'원격의 신',price:600,rarity:'legendary',grad:'linear-gradient(90deg,#e8820a,#ff5a8a,#c77dff,#4ea8ff,#e8820a)'},
     {id:'t_kraken',name:'심해의 지배자',price:1200,rarity:'mythic',fishOnly:true,grad:'linear-gradient(90deg,#00f5d4,#4ea8ff,#8a5cff,#00f5d4)'},
     {id:'t_fishking',name:'전설의 낚시왕',price:1500,rarity:'mythic',fishOnly:true,grad:'linear-gradient(90deg,#ffd34e,#ff5a8a,#00f5d4,#ffd34e)'},
+    {id:'ft_novice',name:'초보 낚시꾼',price:60,rarity:'common',fishOnly:true},
+    {id:'ft_angler',name:'월척 헌터',price:150,rarity:'rare',fishOnly:true,color:'#0aa5b1'},
+    {id:'ft_wanderer',name:'바다의 방랑자',price:350,rarity:'epic',fishOnly:true,color:'#2d3fa0',glow:'#3f5fff'},
+    {id:'ft_captain',name:'폭풍의 선장',price:700,rarity:'legendary',fishOnly:true,grad:'linear-gradient(90deg,#0aa5b1,#4ea8ff,#0aa5b1)'},
   ],
   nametag: [
     {id:'n_none',name:'기본',price:0,rarity:'common'},
@@ -1069,11 +1111,15 @@ const GAME_ITEMS = {
     {id:'n_fire',name:'불꽃',price:220,color:'#ff3b30',glow:'#ff6a3a',rarity:'epic'},
     {id:'n_rainbow',name:'무지개',price:450,grad:'linear-gradient(90deg,#ff5a8a,#ffb84e,#4ea8ff,#7ee081)',rarity:'legendary'},
     {id:'n_aurora',name:'오로라',price:1000,rarity:'mythic',fishOnly:true,grad:'linear-gradient(90deg,#00f5d4,#8a5cff,#ff5a8a,#00f5d4)'},
+    {id:'fn_water',name:'물빛',price:60,color:'#4aa3c7',rarity:'common',fishOnly:true},
+    {id:'fn_coral',name:'산호',price:150,color:'#ff7a9a',rarity:'rare',fishOnly:true},
+    {id:'fn_deep',name:'심해',price:350,color:'#2d3fa0',glow:'#3f5fff',rarity:'epic',fishOnly:true},
+    {id:'fn_tide',name:'해일',price:700,grad:'linear-gradient(90deg,#0aa5b1,#00f5d4,#0aa5b1)',rarity:'legendary',fishOnly:true},
   ],
-  hat: [{id:'h_none',name:'없음',price:0,e:'',rarity:'common'},{id:'h_cap',name:'캡',price:30,e:'🧢',rarity:'common'},{id:'h_wizard',name:'마법사',price:110,e:'🧙',rarity:'rare'},{id:'h_crown',name:'왕관',price:200,e:'👑',rarity:'epic'},{id:'h_halo',name:'천사링',price:300,e:'😇',rarity:'legendary'},{id:'h_straw',name:'밀짚모자',price:700,e:'👒',rarity:'mythic',fishOnly:true}],
+  hat: [{id:'h_none',name:'없음',price:0,e:'',rarity:'common'},{id:'h_cap',name:'캡',price:30,e:'🧢',rarity:'common'},{id:'h_wizard',name:'마법사',price:110,e:'🧙',rarity:'rare'},{id:'h_crown',name:'왕관',price:200,e:'👑',rarity:'epic'},{id:'h_halo',name:'천사링',price:300,e:'😇',rarity:'legendary'},{id:'fh_bucket',name:'벙거지',price:60,e:'🎩',rarity:'common',fishOnly:true},{id:'fh_sailor',name:'선장모자',price:350,e:'⚓',rarity:'epic',fishOnly:true},{id:'h_straw',name:'밀짚모자',price:700,e:'👒',rarity:'mythic',fishOnly:true}],
   face: [{id:'f_smile',name:'기본',price:0,e:'😀',rarity:'common'},{id:'f_cool',name:'쿨',price:30,e:'😎',rarity:'common'},{id:'f_robot',name:'로봇',price:90,e:'🤖',rarity:'rare'},{id:'f_star',name:'별눈',price:150,e:'🤩',rarity:'epic'},{id:'f_devil',name:'악마',price:180,e:'😈',rarity:'epic'}],
   outfit: [{id:'o_none',name:'기본',price:0,e:'👕',rarity:'common'},{id:'o_suit',name:'정장',price:70,e:'🤵',rarity:'common'},{id:'o_ninja',name:'닌자',price:150,e:'🥷',rarity:'rare'},{id:'o_hero',name:'히어로',price:250,e:'🦸',rarity:'epic'},{id:'o_king',name:'왕',price:380,e:'🫅',rarity:'legendary'}],
-  pet: [{id:'p_none',name:'없음',price:0,e:'',rarity:'common'},{id:'p_cat',name:'고양이',price:60,e:'🐱',rarity:'common'},{id:'p_dog',name:'강아지',price:60,e:'🐶',rarity:'common'},{id:'p_unicorn',name:'유니콘',price:300,e:'🦄',rarity:'epic'},{id:'p_dragon',name:'드래곤',price:450,e:'🐉',rarity:'legendary'},{id:'p_kraken',name:'크라켄',price:800,e:'🦑',rarity:'mythic',fishOnly:true},{id:'p_whale',name:'고래',price:800,e:'🐋',rarity:'mythic',fishOnly:true}],
+  pet: [{id:'p_none',name:'없음',price:0,e:'',rarity:'common'},{id:'p_cat',name:'고양이',price:60,e:'🐱',rarity:'common'},{id:'p_dog',name:'강아지',price:60,e:'🐶',rarity:'common'},{id:'p_unicorn',name:'유니콘',price:300,e:'🦄',rarity:'epic'},{id:'p_dragon',name:'드래곤',price:450,e:'🐉',rarity:'legendary'},{id:'fp_fish',name:'물고기',price:60,e:'🐟',rarity:'common',fishOnly:true},{id:'fp_octopus',name:'문어',price:150,e:'🐙',rarity:'rare',fishOnly:true},{id:'fp_shark',name:'상어',price:350,e:'🦈',rarity:'epic',fishOnly:true},{id:'fp_turtle',name:'거북이',price:700,e:'🐢',rarity:'legendary',fishOnly:true},{id:'p_kraken',name:'크라켄',price:800,e:'🦑',rarity:'mythic',fishOnly:true},{id:'p_whale',name:'고래',price:800,e:'🐋',rarity:'mythic',fishOnly:true}],
 };
 const LS_GAME = "opcare_game_v1";
 let GAME = load(LS_GAME, {});         // { emp: {spent, owned:[], equipped:{}} }
@@ -1156,21 +1202,28 @@ function renderGame(){
 }
 /* ===== 🎣 낚시터 (가챠) ===== */
 const FISH = {
-  low:  {emoji:'🏞️', name:'초급 낚시터', cost:1,  entry:0,  desc:'누구나 · 대부분 꽝, 최악 -1코인',
-    loot:[ {w:38,t:'none'}, {w:22,t:'coin',min:-1,max:-1}, {w:22,t:'coin',min:1,max:2}, {w:12,t:'item',rar:['common']}, {w:5,t:'item',rar:['rare']}, {w:1,t:'item',rar:['epic']} ]},
-  mid:  {emoji:'⛵', name:'중급 낚시터', cost:3,  entry:20, desc:'20코인↑ 입장 · 확률 UP, 최악 -3코인',
-    loot:[ {w:24,t:'none'}, {w:12,t:'coin',min:-3,max:-2}, {w:24,t:'coin',min:2,max:5}, {w:18,t:'item',rar:['common','rare']}, {w:13,t:'item',rar:['rare','epic']}, {w:7,t:'item',rar:['epic']}, {w:2,t:'item',rar:['legendary']} ]},
-  high: {emoji:'🌊', name:'고급 낚시터', cost:10, entry:0,  desc:'초희귀 신화 아이템! 최악 -10코인',
-    loot:[ {w:15,t:'none'}, {w:10,t:'coin',min:-10,max:-5}, {w:20,t:'coin',min:5,max:20}, {w:16,t:'item',rar:['rare','epic']}, {w:19,t:'item',rar:['epic','legendary']}, {w:14,t:'item',rar:['legendary']}, {w:6,t:'item',rar:['mythic'],fish:true} ]},
+  low:  {emoji:'🏞️', name:'초급 낚시터', cost:1,  entry:0,  desc:'누구나 · 코인 30%, 아이템 1%, 최악 -1코인',
+    loot:[ {w:490,t:'none'}, {w:300,t:'coin',big:true}, {w:200,t:'coin',min:-1,max:-1}, {w:10,t:'item',rar:['common','rare'],fish:true} ]},
+  mid:  {emoji:'⛵', name:'중급 낚시터', cost:3,  entry:20, desc:'20코인↑ · 코인 30%, 아이템 3%, 최악 -3코인',
+    loot:[ {w:550,t:'none'}, {w:300,t:'coin',big:true}, {w:120,t:'coin',min:-3,max:-2}, {w:30,t:'item',rar:['rare','epic'],fish:true} ]},
+  high: {emoji:'🌊', name:'고급 낚시터', cost:10, entry:0,  desc:'신화 전용! 코인 30%, 아이템 5%↓, 최악 -10코인',
+    loot:[ {w:560,t:'none'}, {w:300,t:'coin',big:true}, {w:90,t:'coin',min:-10,max:-5}, {w:40,t:'item',rar:['epic','legendary'],fish:true}, {w:10,t:'item',rar:['mythic'],fish:true} ]},
 };
 let fishBusy=false;
 function randInt(a,b){ return a+Math.floor(Math.random()*(b-a+1)); }
+// 코인 획득량: 1~1000, 큰 금액일수록 극희박 (1000코인 ≈ 0.001%)
+function pickCoinAmount(){ const T=[{w:50000,a:1,b:5},{w:25000,a:6,b:20},{w:15000,a:21,b:80},{w:7000,a:81,b:200},{w:2500,a:201,b:500},{w:490,a:501,b:999},{w:1,a:1000,b:1000}]; const tot=T.reduce((s,t)=>s+t.w,0); let r=Math.random()*tot; for(const t of T){ if((r-=t.w)<0) return randInt(t.a,t.b); } return 1; }
 function rollLoot(loot){ const tot=loot.reduce((a,x)=>a+x.w,0); let r=Math.random()*tot; for(const x of loot){ if((r-=x.w)<0) return x; } return loot[loot.length-1]; }
 function pickItem(rars, fishOnly){ const pool=[]; for(const cat in GAME_ITEMS){ for(const it of GAME_ITEMS[cat]){ if(it.price===0) continue; if(!rars.includes(it.rarity)) continue; if(fishOnly && !it.fishOnly) continue; if(!fishOnly && it.fishOnly) continue; pool.push(Object.assign({cat},it)); } } return pool.length?pool[Math.floor(Math.random()*pool.length)]:null; }
 const CAT_KO={title:'타이틀',nametag:'네임택',hat:'모자',face:'얼굴',outfit:'의상',pet:'펫'};
 function resolveLoot(emp,out){ const g=gs(emp);
   if(out.t==='none') return {emoji:'🐚',big:'꽝!',sub:'빈 낚싯대... 다음 기회에!',cls:'miss'};
-  if(out.t==='coin'){ const n=randInt(out.min,out.max); g.spent=(g.spent||0)-n; return {emoji:n>=0?'🪙':'💸',big:(n>=0?'+':'')+n+' 코인',sub:n>=0?'월척! 코인 획득':'앗! 코인이 빠져나갔다...',cls:n>=0?'coin':'bad'}; }
+  if(out.t==='coin'){ const n = out.big ? pickCoinAmount() : randInt(out.min,out.max); g.spent=(g.spent||0)-n;
+    if(n<0) return {emoji:'💸',big:n+' 코인',sub:'앗! 코인이 빠져나갔다...',cls:'bad'};
+    const jackpot=n>=1000, huge=n>=500, big=n>=100;
+    return {emoji:jackpot?'💰':huge?'🤑':big?'💵':'🪙', big:'+'+n+' 코인',
+      sub:jackpot?'🎉 잭팟!!! 1000코인 대박!!!':huge?'🌟 초대박! 엄청난 월척!':big?'월척! 대량 획득!':'코인 획득!',
+      cls:'coin', rarity:jackpot?'mythic':huge?'legendary':big?'epic':null}; }
   const it=pickItem(out.rar,out.fish);
   if(!it){ g.spent=(g.spent||0)-3; return {emoji:'🪙',big:'+3 코인',sub:'낚을 새 아이템이 없어 코인으로!',cls:'coin'}; }
   if(owns(emp,it.cat,it.id)){ const ref=Math.max(3,Math.ceil(it.price*0.25)); g.spent=(g.spent||0)-ref; return {emoji:'♻️',big:'중복 → +'+ref+'코인',sub:'['+it.name+'] 이미 보유! 코인 환급',cls:'coin'}; }
@@ -1187,16 +1240,19 @@ function castFish(spot){
 }
 function showFishing(f){
   let el=document.getElementById('fishPop'); if(!el){ el=document.createElement('div'); el.id='fishPop'; el.className='duty-pop-overlay'; document.body.appendChild(el); }
-  el.innerHTML=`<div class="fish-pop"><div class="fp-rod">🎣</div><div class="fp-wait">${escapeHtml(f.name)}<br>입질을 기다리는 중...</div></div>`;
+  el.innerHTML=`<div class="fish-pop casting"><div class="fp-cast-scene"><div class="fp-ripple"></div><div class="fp-ripple d2"></div><div class="fp-ripple d3"></div><div class="fp-rod">🎣</div><div class="fp-bob">🔴</div></div><div class="fp-wait">${escapeHtml(f.name)}<br>🎣 찌를 던졌다! 입질을 기다리는 중...</div></div>`;
 }
 function showFishResult(res){
   const el=document.getElementById('fishPop'); if(!el) return; const col=res.rarity?RARITY[res.rarity]:'#8a94a6';
-  el.innerHTML=`<div class="fish-pop reveal" style="--rc:${col}">
+  const win=!!res.rarity, epicUp=['epic','legendary','mythic'].includes(res.rarity);
+  el.innerHTML=`<div class="fish-pop reveal ${win?'win':''} ${epicUp?'epic-up':''}" style="--rc:${col}">
+    ${win?'<div class="fp-rays"></div>':''}
     <div class="fp-emoji">${res.emoji}</div>
     <div class="fp-big" ${res.rarity?`style="color:${col}"`:''}>${escapeHtml(res.big)}</div>
     <div class="fp-sub">${escapeHtml(res.sub)}</div>
     <button class="duty-pop-btn" onclick="document.getElementById('fishPop').remove()">확인 🎣</button>
   </div>`;
+  if(epicUp && typeof fireMvpConfetti==='function'){ try{ fireMvpConfetti(); }catch(e){} }
 }
 let fishRoom=null;   // 입장한 낚시터 (null=로비)
 function enterFishRoom(spot){ const emp=gameMe; if(!emp){ alert('먼저 본인을 선택하세요 🙂'); return; } const f=FISH[spot]; if(f.entry && empAvail(emp)<f.entry){ alert(f.name+'는 '+f.entry+'코인 이상 있어야 입장할 수 있어요!'); return; } fishRoom=spot; renderGameFish(); window.scrollTo(0,0); }
@@ -1229,7 +1285,14 @@ function renderFishRoom(spot, emp){
     <div class="page-head"><div><h2>${f.emoji} ${f.name}</h2><div class="sub">캐스트 🪙${f.cost} · 보유 🪙<b>${empAvail(emp)}</b></div></div>
       <div class="controls"><button class="btn" onclick="leaveFishRoom()">← 낚시터 목록</button></div></div>
     <div class="card fish-room fs-${spot}">
-      <div class="fr-scene"><div class="fr-water">${f.emoji}</div><div class="fr-rod">🎣</div></div>
+      <div class="fr-scene">
+        <div class="fr-shimmer"></div>
+        <div class="fr-bubbles">${'<span></span>'.repeat(7)}</div>
+        <div class="fr-sun">${f.emoji}</div>
+        <div class="fr-rod">🎣</div>
+        <div class="fr-float">🔴</div>
+        <div class="fr-wave w1"></div><div class="fr-wave w2"></div><div class="fr-wave w3"></div>
+      </div>
       <button class="fr-cast" ${cant?'disabled':''} onclick="castFish('${spot}')">${cant?'🪙 코인이 부족해요':`🎣 낚싯대 던지기 (🪙${f.cost})`}</button>
       <div class="fr-odds">🎁 아이템 <b>${od.item}%</b> · 🪙 코인 <b>${od.coin}%</b> · 🐚 꽝 ${od.none}% · 💸 코인손실 ${od.minus}%</div>
     </div>
