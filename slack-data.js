@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 361,
+  "version": 362,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1969,7 +1969,7 @@ window.SLACK_DATA = {
             "emp": "",
             "autoStatus": "",
             "autoEmp": "",
-            "autoNote": "",
+            "autoNote": "토스장애이슈 토스장애이슈",
             "doneDate": ""
           },
           {
@@ -1988,11 +1988,11 @@ window.SLACK_DATA = {
                 "cat": "필요한 기능이 없거나 몰라서 불편"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 금액입력결제모드로 결제시 토스포스 실행되어 있어야 영수증 출력됨 설명 및 테스트 완료 • [기록용:포스 및 단말기 사용중 오류가 자주 발생했어요/금액입력결제모드/ 서비스업 뷰티헤어] 금액입력결제모드로 결제시 토스포스 실행되어 있어야 영수증 출력됨 설명 및 테스트 완료 [기록용:포스 및 단말기 사용중 오류가 자주 발생했어요/금액입력결제모드/ 서비스업 뷰티",
+            "doneDate": "2026-07-13"
           }
         ],
         "praises": [
@@ -2304,11 +2304,11 @@ window.SLACK_DATA = {
                 "cat": "사용중 오류가 자주 발생함"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• OB완료. • 통신 연결 끊김 문구로 인터넷 업체에서 해결 하셨다고 함 • [기록용:포스 및 단말기 사용중 오류가 자주 발생했어요/통신끊김/ 도소매업] OB완료. 통신 연결 끊김 문구로 인터넷 업체에서 해결 하셨다고 함 [기록용:포스 및 단말기 사용중 오류가 자주 발생했어요/통신끊김/ 도소매업]",
+            "doneDate": "2026-07-13"
           },
           {
             "time": "16:06",
@@ -2395,7 +2395,7 @@ window.SLACK_DATA = {
             "emp": "",
             "autoStatus": "",
             "autoEmp": "",
-            "autoNote": "",
+            "autoNote": "1차부재 1차부재",
             "doneDate": ""
           },
           {
@@ -2570,10 +2570,10 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-13": {
-      "updatedAt": "18:30",
+      "updatedAt": "18:39",
       "counts": {
         "as": {
-          "최민석": 9,
+          "최민석": 10,
           "김현기": 29,
           "김기범": 12,
           "서상원": 12,
@@ -2583,10 +2583,10 @@ window.SLACK_DATA = {
           "김규빈": 5
         },
         "onboarding": {
+          "최민석": 2,
           "심성현": 9,
           "김현기": 3,
           "송태양": 2,
-          "최민석": 1,
           "배선유": 4,
           "서상원": 3,
           "김규빈": 1
@@ -2610,10 +2610,10 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "18:25",
-          "store": "위드미헤어",
-          "biz": "1113793218",
-          "handler": "송태양",
+          "time": "18:39",
+          "store": "땅이콩이땅콩빵",
+          "biz": "7803701528",
+          "handler": "김기범",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
@@ -2976,6 +2976,20 @@ window.SLACK_DATA = {
         ]
       },
       "done": [
+        {
+          "time": "18:33",
+          "store": "하루소반",
+          "biz": "4267900611",
+          "cat": "as",
+          "emp": "최민석"
+        },
+        {
+          "time": "18:30",
+          "store": "리더스 용현 태권도장",
+          "biz": "3389601493",
+          "cat": "onboarding",
+          "emp": "최민석"
+        },
         {
           "time": "18:24",
           "store": "무카이",
