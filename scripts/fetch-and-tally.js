@@ -165,9 +165,9 @@ function cleanNote(s) {
     .replace(/\s+/g, ' ').trim().slice(0, 200);
 }
 
-// 한 채널의 메시지를 공유 counts/pending/done/dupList 에 누적
-function tallyInto(msgs, ch, counts, pending, done, dupList) {
-  done = done || []; dupList = dupList || [];
+// 한 채널의 메시지를 공유 counts/pending/done 에 누적
+function tallyInto(msgs, ch, counts, pending, done) {
+  done = done || [];
   let completed = 0, externCount = 0, dup = 0, latest = '';
   for (const m of msgs) {
     if (m.subtype && m.subtype !== 'bot_message') continue; // 봇 접수 메시지(메뉴채널)는 집계, 시스템 메시지는 제외
@@ -192,7 +192,7 @@ function tallyInto(msgs, ch, counts, pending, done, dupList) {
     const hasDup = names.some(n => /중복/.test(n));                          // 팀이 '진짜 중복'에만 찍는 표시
     const doer = emp || confirmPerson;
 
-    if (hasDup) { dup++; dupList.push({ time, store, biz, handler: doer || '미지정', cat: emojiCat || ch.defaultCat }); continue; }   // 중복 → 처리/부재/미처리엔 안 들어가고 '중복'으로 별도 적재
+    if (hasDup) { dup++; continue; }         // 중복 이모지 → 집계 제외 (재처리는 중복 표시 없으니 별개 건으로 정상 집계됨)
     if (hasVocTag && !emojiCat) { continue; }   // 원격voc만 찍힌 순수 VOC 참조 → 업무 집계 제외(설문 VOC로만 관리)
 
     // requireCat 채널(명의변경/메뉴등록/배달)은 카테고리 이모지가 찍힌 것만 집계 → 카테고리는 항상 emojiCat이 결정.
@@ -341,20 +341,19 @@ async function tallyVoc(msgs, voc, channelId, opts) {
   if (backfillFrom) console.log(`[백필] ${backfillFrom} ~ ${targetDate} (${workDates.length}일) 재집계`);
   for (const dstr of workDates) {
     const b = boundsOf(dstr);
-    const counts = {}, pending = [], done = [], dupList = [];
+    const counts = {}, pending = [], done = [];
     let completed = 0, externCount = 0, dupTotal = 0, latest = '';
     for (const ch of workChs) {
       let msgs;
       try { msgs = await fetchAllRange(ch.id, b.oldest, b.latestBound); }
       catch (e) { console.error(`  ⚠ [${ch.label} ${dstr}] 읽기 실패(${e.message}) — 건너뜀`); continue; }
-      const r = tallyInto(msgs, ch, counts, pending, done, dupList);
+      const r = tallyInto(msgs, ch, counts, pending, done);
       completed += r.completed; externCount += r.externCount; dupTotal += r.dup; if (r.latest > latest) latest = r.latest;
     }
     pending.sort((a, b) => (b.time || '').localeCompare(a.time || ''));
     done.sort((a, b) => (b.time || '').localeCompare(a.time || ''));
-    dupList.sort((a, b) => (b.time || '').localeCompare(a.time || ''));
     const de = data.days[dstr] || {};
-    de.counts = counts; de.pending = pending; de.done = done; de.dup = dupList;
+    de.counts = counts; de.pending = pending; de.done = done;
     if (latest && latest > (de.updatedAt || '')) de.updatedAt = latest;
     if (!de.updatedAt) de.updatedAt = latest || '';
     data.days[dstr] = de;
