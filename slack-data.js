@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 347,
+  "version": 348,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -2570,21 +2570,22 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-13": {
-      "updatedAt": "15:00",
+      "updatedAt": "15:15",
       "counts": {
         "as": {
+          "서상원": 10,
+          "심성현": 15,
           "김기범": 6,
-          "서상원": 9,
-          "심성현": 14,
           "배선유": 14,
           "김현기": 18,
           "송태양": 7,
           "김규빈": 5
         },
         "onboarding": {
+          "송태양": 1,
+          "심성현": 7,
           "배선유": 4,
           "서상원": 3,
-          "심성현": 6,
           "김현기": 2,
           "김규빈": 1
         },
@@ -2599,17 +2600,40 @@ window.SLACK_DATA = {
           "배선유": 8,
           "서상원": 1,
           "김규빈": 4
+        },
+        "delivery": {
+          "최민석": 1
         }
       },
       "pending": [
         {
-          "time": "14:41",
-          "store": "유니팝 서동탄역센터",
-          "biz": "7729101801",
+          "time": "15:00",
+          "store": "에밋 복싱",
+          "biz": "7209001889",
+          "handler": "김현기",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "14:55",
+          "store": "선산곱창",
+          "biz": "5040946739",
           "handler": "심성현",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "14:49",
+          "store": "등촌샤브칼국수(문지점)",
+          "biz": "2340303858",
+          "handler": "심성현",
+          "cat": "as",
+          "reasons": [
+            "1차 부재"
           ]
         },
         {
@@ -2654,53 +2678,180 @@ window.SLACK_DATA = {
         }
       ],
       "voc": {
-        "responses": 3,
+        "responses": 9,
         "install": {
-          "count": 1,
-          "low": 0
+          "count": 5,
+          "low": 2
         },
         "nps": {
-          "count": 3,
-          "low": 0
+          "count": 9,
+          "low": 2
         },
         "high": {
-          "install": 0,
-          "nps": 1
+          "install": 2,
+          "nps": 4
         },
         "npsDist": {
+          "0": 1,
+          "5": 1,
           "7": 1,
-          "9": 1,
-          "10": 1
+          "9": 2,
+          "10": 4
         },
         "installDist": {
-          "4": 1
+          "1": 2,
+          "4": 1,
+          "5": 2
         },
         "byIndustry": {
-          "기타": 1
+          "기타": 2,
+          "서비스[학원]": 2,
+          "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
-          "1개월": {
-            "total": 1,
-            "low": 0
-          },
           "구매설치": {
-            "total": 1,
-            "low": 0
+            "total": 5,
+            "low": 2
           },
           "3개월": {
+            "total": 3,
+            "low": 1
+          },
+          "1개월": {
             "total": 1,
             "low": 0
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 4,
+            "low": 2
+          },
+          "KPN": {
+            "total": 2,
+            "low": 1
+          },
           "SMARTRO": {
             "total": 3,
             "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
+          "필요한 기능이 없거나 몰라서 불편": 1,
+          "단말기 설치나 초기 과정이 어려움": 1
+        },
+        "alerts": [
+          {
+            "time": "15:13",
+            "store": "원픽(ONE PICK)",
+            "storeId": "463246",
+            "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
+            "install": 1,
+            "nps": 9,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "편하고 좋았습니다.",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:13",
+            "store": "모쓰 바버샵 (MOTH BARBERSHOP)",
+            "storeId": "539489",
+            "industry": "뷰티",
+            "indBucket": "서비스[뷰티,헤어]",
+            "install": 1,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "아니 바버샵에 이라고말했더니 이딴걸 가져다줘요?",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              },
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "존나불편해요진짜 그러고 환불도 안된대요 박스버렸다고",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:06",
+            "store": "얼큰이맵닥",
+            "storeId": "432106",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "배달의민족 연결이 원할하지않습니다. 배달연결해놔도 다 끊겨요 하루하루 다시해야합니다. 연결이 안되어있으니 총매출 보기가힘들어요.",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
         "praises": [
+          {
+            "time": "15:13",
+            "store": "금호모터스",
+            "storeId": "544763",
+            "indBucket": "기타",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "쉽게설치가능해서좋아요 직관적으로 쉽게사용가능",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:13",
+            "store": "오케이스크린골프",
+            "storeId": "541367",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "편리해요 깔끔하고 편리해요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:06",
+            "store": "더 콤(THE COMB)",
+            "storeId": "438070",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "편리해요",
+            "byReaction": false,
+            "doneDate": ""
+          },
           {
             "time": "08:41",
             "store": "씨엔 엔터테인먼트(C. N Entertainment)",
