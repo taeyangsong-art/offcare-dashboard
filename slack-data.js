@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 349,
+  "version": 350,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -2570,15 +2570,15 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-13": {
-      "updatedAt": "15:26",
+      "updatedAt": "15:41",
       "counts": {
         "as": {
+          "김현기": 20,
           "서상원": 10,
-          "김현기": 19,
+          "송태양": 8,
           "배선유": 16,
           "심성현": 16,
           "김기범": 6,
-          "송태양": 7,
           "김규빈": 5
         },
         "onboarding": {
@@ -2607,20 +2607,20 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "15:23",
-          "store": "수고했어 오늘도",
-          "biz": "5773800478",
-          "handler": "배선유",
+          "time": "15:32",
+          "store": "멕시코코 하시엔다",
+          "biz": "8824201319",
+          "handler": "서상원",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
           ]
         },
         {
-          "time": "15:18",
-          "store": "노원경춘마루",
-          "biz": "8318102153",
-          "handler": "김현기",
+          "time": "15:23",
+          "store": "수고했어 오늘도",
+          "biz": "5773800478",
+          "handler": "배선유",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
@@ -2637,10 +2637,20 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "15:00",
-          "store": "황제족발",
-          "biz": "8990603995",
-          "handler": "송태양",
+          "time": "15:06",
+          "store": "핀셀미술학원",
+          "biz": "8989202152",
+          "handler": "김현기",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "15:03",
+          "store": "다정제말",
+          "biz": "2350703752",
+          "handler": "심성현",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
@@ -2688,26 +2698,26 @@ window.SLACK_DATA = {
         }
       ],
       "voc": {
-        "responses": 10,
+        "responses": 14,
         "install": {
           "count": 5,
           "low": 2
         },
         "nps": {
-          "count": 10,
-          "low": 2
+          "count": 14,
+          "low": 4
         },
         "high": {
           "install": 2,
-          "nps": 4
+          "nps": 5
         },
         "npsDist": {
-          "0": 1,
-          "5": 1,
+          "0": 2,
+          "5": 2,
           "7": 1,
           "8": 1,
-          "9": 2,
-          "10": 4
+          "9": 3,
+          "10": 5
         },
         "installDist": {
           "1": 2,
@@ -2720,6 +2730,14 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 4,
+            "low": 2
+          },
+          "6개월": {
+            "total": 3,
+            "low": 1
+          },
           "1개월": {
             "total": 2,
             "low": 0
@@ -2727,15 +2745,23 @@ window.SLACK_DATA = {
           "구매설치": {
             "total": 5,
             "low": 2
-          },
-          "3개월": {
-            "total": 3,
-            "low": 1
           }
         },
         "byVan": {
           "KPN": {
-            "total": 3,
+            "total": 4,
+            "low": 2
+          },
+          "SECTA9": {
+            "total": 1,
+            "low": 0
+          },
+          "KSNET": {
+            "total": 1,
+            "low": 0
+          },
+          "DAOU": {
+            "total": 1,
             "low": 1
           },
           "KIS": {
@@ -2748,11 +2774,55 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
-          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 4,
           "필요한 기능이 없거나 몰라서 불편": 1,
           "단말기 설치나 초기 과정이 어려움": 1
         },
         "alerts": [
+          {
+            "time": "15:36",
+            "store": "더 다온 음악학원",
+            "storeId": "433276",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "학원용은 아닌것 같인요",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:31",
+            "store": "아이편한LED",
+            "storeId": "326405",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "dd",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:13",
             "store": "원픽(ONE PICK)",
