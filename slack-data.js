@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 348,
+  "version": 349,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -2570,14 +2570,14 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-13": {
-      "updatedAt": "15:15",
+      "updatedAt": "15:26",
       "counts": {
         "as": {
           "서상원": 10,
-          "심성현": 15,
+          "김현기": 19,
+          "배선유": 16,
+          "심성현": 16,
           "김기범": 6,
-          "배선유": 14,
-          "김현기": 18,
           "송태양": 7,
           "김규빈": 5
         },
@@ -2607,9 +2607,19 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "15:00",
-          "store": "에밋 복싱",
-          "biz": "7209001889",
+          "time": "15:23",
+          "store": "수고했어 오늘도",
+          "biz": "5773800478",
+          "handler": "배선유",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "15:18",
+          "store": "노원경춘마루",
+          "biz": "8318102153",
           "handler": "김현기",
           "cat": "as",
           "reasons": [
@@ -2617,10 +2627,20 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "14:55",
-          "store": "선산곱창",
-          "biz": "5040946739",
-          "handler": "심성현",
+          "time": "15:15",
+          "store": "처갓집반찬",
+          "biz": "",
+          "handler": "송태양",
+          "cat": "transfer",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "15:00",
+          "store": "황제족발",
+          "biz": "8990603995",
+          "handler": "송태양",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
@@ -2647,16 +2667,6 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "14:23",
-          "store": "강화순무김치찌개(상암점)",
-          "biz": "7593801405",
-          "handler": "배선유",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
           "time": "13:13",
           "store": "뮤리엘 스킨&amp;왁싱",
           "biz": "1952300573",
@@ -2678,13 +2688,13 @@ window.SLACK_DATA = {
         }
       ],
       "voc": {
-        "responses": 9,
+        "responses": 10,
         "install": {
           "count": 5,
           "low": 2
         },
         "nps": {
-          "count": 9,
+          "count": 10,
           "low": 2
         },
         "high": {
@@ -2695,6 +2705,7 @@ window.SLACK_DATA = {
           "0": 1,
           "5": 1,
           "7": 1,
+          "8": 1,
           "9": 2,
           "10": 4
         },
@@ -2709,6 +2720,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 2,
+            "low": 0
+          },
           "구매설치": {
             "total": 5,
             "low": 2
@@ -2716,20 +2731,16 @@ window.SLACK_DATA = {
           "3개월": {
             "total": 3,
             "low": 1
-          },
-          "1개월": {
-            "total": 1,
-            "low": 0
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 3,
+            "low": 1
+          },
           "KIS": {
             "total": 4,
             "low": 2
-          },
-          "KPN": {
-            "total": 2,
-            "low": 1
           },
           "SMARTRO": {
             "total": 3,
