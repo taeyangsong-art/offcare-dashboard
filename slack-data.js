@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 356,
+  "version": 357,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -2570,11 +2570,11 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-13": {
-      "updatedAt": "17:10",
+      "updatedAt": "17:29",
       "counts": {
         "as": {
-          "심성현": 23,
-          "김기범": 7,
+          "김기범": 8,
+          "심성현": 24,
           "서상원": 11,
           "김현기": 25,
           "최민석": 4,
@@ -2595,12 +2595,12 @@ window.SLACK_DATA = {
           "서상원": 6
         },
         "transfer": {
-          "송태양": 14,
+          "송태양": 16,
           "심성현": 3
         },
         "menu": {
+          "김규빈": 12,
           "배선유": 11,
-          "김규빈": 11,
           "서상원": 2
         },
         "delivery": {
@@ -2608,6 +2608,16 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
+        {
+          "time": "17:26",
+          "store": "제이프(J : NEFF)",
+          "biz": "5934001583",
+          "handler": "심성현",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
         {
           "time": "17:08",
           "store": "비케이아카데미",
@@ -2619,26 +2629,6 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "16:30",
-          "store": "앨리‘s 로드하우스(Allie's Roadhouse)",
-          "biz": "",
-          "handler": "송태양",
-          "cat": "transfer",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "16:30",
-          "store": "주식회사 케이에스시(북구)",
-          "biz": "7898803108",
-          "handler": "송태양",
-          "cat": "transfer",
-          "reasons": [
-            "1차 부재"
-          ]
-        },
-        {
           "time": "14:32",
           "store": "키노(KINO)",
           "biz": "6010666898",
@@ -2646,6 +2636,16 @@ window.SLACK_DATA = {
           "cat": "as",
           "reasons": [
             "1차 부재"
+          ]
+        },
+        {
+          "time": "13:42",
+          "store": "피자마루 양산중앙점",
+          "biz": "6971201126",
+          "handler": "배선유",
+          "cat": "menu",
+          "reasons": [
+            "확인 후 미완료"
           ]
         },
         {
