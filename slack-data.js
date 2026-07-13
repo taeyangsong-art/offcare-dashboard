@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 353,
+  "version": 354,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -2570,16 +2570,16 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-13": {
-      "updatedAt": "16:30",
+      "updatedAt": "16:38",
       "counts": {
         "extern": {
           "서상원": 6
         },
         "as": {
-          "배선유": 20,
-          "심성현": 20,
+          "최민석": 4,
+          "배선유": 21,
+          "심성현": 21,
           "김현기": 23,
-          "최민석": 2,
           "서상원": 10,
           "송태양": 8,
           "김기범": 6,
@@ -2595,13 +2595,13 @@ window.SLACK_DATA = {
           "김규빈": 1
         },
         "transfer": {
-          "송태양": 12,
+          "송태양": 13,
           "심성현": 3
         },
         "menu": {
+          "김규빈": 6,
           "배선유": 8,
-          "서상원": 1,
-          "김규빈": 4
+          "서상원": 1
         },
         "delivery": {
           "최민석": 1
@@ -2609,19 +2609,19 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "16:05",
-          "store": "호돌이네",
-          "biz": "4811200968",
-          "handler": "배선유",
-          "cat": "as",
+          "time": "16:38",
+          "store": "카페새봄",
+          "biz": "3771902273",
+          "handler": "송태양",
+          "cat": "transfer",
           "reasons": [
             "확인 후 미완료"
           ]
         },
         {
-          "time": "16:04",
-          "store": "아움(AUM)",
-          "biz": "2023104004",
+          "time": "16:30",
+          "store": "이지스텔레콤은평역촌점",
+          "biz": "4610903199",
           "handler": "심성현",
           "cat": "as",
           "reasons": [
@@ -2639,19 +2639,9 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "15:50",
-          "store": "소룡",
-          "biz": "",
-          "handler": "송태양",
-          "cat": "transfer",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "15:10",
-          "store": "취하리",
-          "biz": "5292301135",
+          "time": "15:21",
+          "store": "천왕숯불화로구이",
+          "biz": "1035900699",
           "handler": "김규빈",
           "cat": "menu",
           "reasons": [
