@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 368,
+  "version": 369,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -9712,7 +9712,7 @@ window.SLACK_DATA = {
       "dup": []
     },
     "2026-07-13": {
-      "updatedAt": "19:18",
+      "updatedAt": "19:38",
       "counts": {
         "as": {
           "최민석": 14,
@@ -9741,6 +9741,7 @@ window.SLACK_DATA = {
           "심성현": 3
         },
         "menu": {
+          "최민석": 1,
           "배선유": 14,
           "김규빈": 13,
           "서상원": 2
@@ -10077,6 +10078,13 @@ window.SLACK_DATA = {
         ]
       },
       "done": [
+        {
+          "time": "19:38",
+          "store": "바다향기",
+          "biz": "3840403301",
+          "cat": "menu",
+          "emp": "최민석"
+        },
         {
           "time": "19:18",
           "store": "강창구찹쌀진순대 여의도2호점",
