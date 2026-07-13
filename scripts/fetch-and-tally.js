@@ -265,9 +265,9 @@ async function tallyVoc(msgs, voc, channelId, opts) {
 
     // VOC 담당자 = '원격voc' 이모지 + '원격OOO'(완료 담당자)가 둘 다 찍힌 경우 그 사람 (설문 적재는 점수대로 유지, 담당자만 이 기준)
     const names = (m.reactions || []).map(r => r.name);
-    // 🆕 VOC 처리완료 = OOO_확인_(담당 확인) + ishopcare(완료=아이샵케어 VOC체크) 두 개
+    // 🆕 VOC 처리완료 = OOO_확인_(담당 확인) + 완료완료(완료=아이샵케어 VOC체크) 두 개
     const hasVocTag = names.includes('원격voc');
-    const hasIshop = names.includes('ishopcare');
+    const hasIshop = names.includes('완료완료');
     let confirmP = null, remoteP = null;
     for (const nm of names) {
       let mm;
