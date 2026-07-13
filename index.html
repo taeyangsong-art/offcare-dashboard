@@ -517,6 +517,9 @@
   .voc-sel,.voc-note{width:100%; font-family:inherit; font-size:12.5px; padding:6px 8px; border:1px solid var(--line);
     border-radius:8px; background:var(--surface2); color:var(--ink)}
   .voc-sel:focus,.voc-note:focus{outline:none; border-color:var(--blue); background:#fff; box-shadow:0 0 0 3px var(--blue-soft)}
+  /* 처리내용: 평소 1줄만 보이고, 클릭(focus)하거나 마우스 올리면 펼쳐져 전체 내용 표시 */
+  .voc-note{resize:vertical; line-height:1.5; height:32px; overflow:hidden; cursor:text; transition:height .12s}
+  .voc-note:focus,.voc-note:hover{height:104px; overflow:auto}
   .navbtn.sub{padding:9px 13px 9px 30px; font-size:14px; color:var(--gray); font-weight:500}
   .navbtn.sub .ic{font-size:12px; color:var(--gray2)}
   .navbtn.sub.active{background:var(--blue-soft); color:var(--blue-deep); font-weight:700}
@@ -1718,13 +1721,12 @@ function vocAlertRow(a){
   const reasonTxt=a.reasons.map(r=>`<div class="voc-reason">${escapeHtml(r.text||'-')}</div>`).join("");
   const indSel=`<select class="voc-sel" onchange="saveVocEdit('${key}','industry',this.value)"><option value="">미지정</option>${VOC_INDUSTRIES.map(x=>`<option ${x===indVal?'selected':''}>${x}</option>`).join('')}</select>`;
   const reaSel=`<select class="voc-sel" onchange="saveVocEdit('${key}','reasonCat',this.value)"><option value="">미지정</option>${VOC_REASONS.map(x=>`<option value="${escapeHtml(x)}" ${x===reaVal?'selected':''}>${escapeHtml(x.split('(')[0])}</option>`).join('')}</select>`;
-  const noteInput=`<input class="voc-note" type="text" value="${escapeHtml(note)}" placeholder="처리 내용 입력…" onchange="saveVocEdit('${key}','note',this.value)">`;
+  const noteInput=`<textarea class="voc-note" rows="1" placeholder="처리 내용 입력…" title="클릭하면 전체 내용 표시" onchange="saveVocEdit('${key}','note',this.value)">${escapeHtml(note)}</textarea>`;
   const statSel=`<select class="voc-sel voc-stat ${vocStatColorCls(statVal)}" onchange="saveVocEdit('${key}','status',this.value)">${VOC_STATUSES.map(o=>`<option ${statVal===o?'selected':''}>${o}</option>`).join('')}</select>`;
   const searchKey=((a.store||'')+' '+(a.storeId||'')).toLowerCase();
   return `<tr class="voc-alert-row" data-key="${searchKey}">
     <td class="trow-time">${a.time||''}${a.date?`<div class="voc-rawind">${fmtShort(a.date)}</div>`:''}</td>
     <td class="emp-name">${escapeHtml(a.store||'-')}${(vocDone(statVal)&&a.doneDate)?`<div class="voc-donedate">✓ ${fmtShort(a.doneDate)} 완료${a.autoEmp?' · '+escapeHtml(a.autoEmp):''}</div>`:''}${a.industry?`<div class="voc-rawind">원본: ${escapeHtml(a.industry)}</div>`:''}</td>
-    <td class="trow-biz">${a.storeId||'-'}</td>
     <td>${indSel}</td>
     <td class="num" style="color:var(--red);font-weight:800;white-space:nowrap">${score||'-'}</td>
     <td>${reaSel}</td>
@@ -1733,7 +1735,7 @@ function vocAlertRow(a){
     <td>${statSel}</td>
   </tr>`;
 }
-const VOC_ALERT_HEAD=`<tr><th style="width:52px">시간</th><th style="min-width:110px">매장명</th><th style="width:76px">매장ID</th><th style="width:140px">업종</th><th class="num" style="width:92px">저점</th><th style="width:150px">저점이유</th><th style="min-width:180px">고객 원문</th><th style="min-width:160px">처리 내용</th><th style="width:108px">상태</th></tr>`;
+const VOC_ALERT_HEAD=`<tr><th style="width:52px">시간</th><th style="min-width:110px">매장명</th><th style="width:140px">업종</th><th class="num" style="width:92px">저점</th><th style="width:150px">저점이유</th><th style="min-width:180px">고객 원문</th><th style="min-width:190px">처리 내용</th><th style="width:108px">상태</th></tr>`;
 // 저점 alert 정규화(매장명·업종·사유·저점내용·해결내용·상태) — renderVoc/먼슬리 공용
 function vocDone(s){ return s==='처리완료' || s==='OB필요없음' || s==='부재' || s==='통화거부'; }   // 확인필요에서 빠지는(해결) 상태 — 부재·통화거부도 처리완료로 간주
 function vocStatCls(s){ return vocDone(s)?'done':(s==='처리중'?'':'hold'); }
@@ -1845,7 +1847,7 @@ function renderVoc(){
       ${pendingAlerts.length||v.alerts.length?`<input class="search-box" type="text" placeholder="매장명 또는 매장ID 검색…" oninput="filterVoc(this.value)">
       <div style="overflow-x:auto"><table class="voc-table" style="margin-top:12px">
         <thead>${VOC_ALERT_HEAD}</thead>
-        <tbody>${pendingAlerts.length?pendingAlerts.map(vocAlertRow).join(''):`<tr><td colspan="9" style="text-align:center;color:var(--gray2);padding:22px 0">처리중인 저점 건이 없습니다 👍</td></tr>`}</tbody>
+        <tbody>${pendingAlerts.length?pendingAlerts.map(vocAlertRow).join(''):`<tr><td colspan="8" style="text-align:center;color:var(--gray2);padding:22px 0">처리중인 저점 건이 없습니다 👍</td></tr>`}</tbody>
       </table></div>`:'<div class="empty-note">이 기간 저점 건이 없습니다 👍</div>'}
     </div>
 
