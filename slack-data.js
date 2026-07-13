@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 317,
+  "version": 318,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1987,33 +1987,37 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-13": {
-      "updatedAt": "09:14",
+      "updatedAt": "09:30",
       "counts": {
         "as": {
-          "김현기": 1
+          "심성현": 1,
+          "김현기": 2
         },
         "transfer": {
           "송태양": 1,
           "심성현": 1
+        },
+        "menu": {
+          "배선유": 2
         }
       },
       "pending": [
         {
-          "time": "09:14",
-          "store": "강창구찹쌀진순대 토평점",
-          "biz": "4688700056",
-          "handler": "배선유",
-          "cat": "menu",
+          "time": "09:30",
+          "store": "제니뷰티(Jenny Beauty)",
+          "biz": "4983101796",
+          "handler": "심성현",
+          "cat": "as",
           "reasons": [
             "확인 후 미완료"
           ]
         },
         {
-          "time": "09:11",
-          "store": "츠하오",
-          "biz": "1561402744",
-          "handler": "김현기",
-          "cat": "as",
+          "time": "09:09",
+          "store": "빵굼터",
+          "biz": "1130993259",
+          "handler": "배선유",
+          "cat": "menu",
           "reasons": [
             "확인 후 미완료"
           ]
