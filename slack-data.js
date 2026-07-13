@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 354,
+  "version": 355,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -2570,20 +2570,20 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-13": {
-      "updatedAt": "16:38",
+      "updatedAt": "17:00",
       "counts": {
-        "extern": {
-          "서상원": 6
-        },
         "as": {
+          "심성현": 22,
           "최민석": 4,
           "배선유": 21,
-          "심성현": 21,
-          "김현기": 23,
+          "김현기": 24,
           "서상원": 10,
           "송태양": 8,
           "김기범": 6,
           "김규빈": 5
+        },
+        "extern": {
+          "서상원": 6
         },
         "onboarding": {
           "송태양": 2,
@@ -2595,13 +2595,13 @@ window.SLACK_DATA = {
           "김규빈": 1
         },
         "transfer": {
-          "송태양": 13,
+          "송태양": 14,
           "심성현": 3
         },
         "menu": {
-          "김규빈": 6,
-          "배선유": 8,
-          "서상원": 1
+          "배선유": 9,
+          "김규빈": 11,
+          "서상원": 2
         },
         "delivery": {
           "최민석": 1
@@ -2609,9 +2609,39 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "16:38",
-          "store": "카페새봄",
-          "biz": "3771902273",
+          "time": "17:00",
+          "store": "가장맛있는 후라이드 안동점",
+          "biz": "1535400985",
+          "handler": "배선유",
+          "cat": "menu",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "16:50",
+          "store": "디오프",
+          "biz": "4022698409",
+          "handler": "심성현",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "16:37",
+          "store": "불정반점",
+          "biz": "6571502472",
+          "handler": "김현기",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "16:30",
+          "store": "앨리‘s 로드하우스(Allie's Roadhouse)",
+          "biz": "",
           "handler": "송태양",
           "cat": "transfer",
           "reasons": [
@@ -2620,29 +2650,19 @@ window.SLACK_DATA = {
         },
         {
           "time": "16:30",
-          "store": "이지스텔레콤은평역촌점",
-          "biz": "4610903199",
-          "handler": "심성현",
-          "cat": "as",
+          "store": "주식회사 케이에스시(북구)",
+          "biz": "7898803108",
+          "handler": "송태양",
+          "cat": "transfer",
           "reasons": [
-            "확인 후 미완료"
+            "1차 부재"
           ]
         },
         {
-          "time": "16:00",
-          "store": "프루타 맨션(FRUTA MANSION)",
-          "biz": "6110594701",
-          "handler": "김현기",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "15:21",
-          "store": "천왕숯불화로구이",
-          "biz": "1035900699",
-          "handler": "김규빈",
+          "time": "16:17",
+          "store": "카페노아",
+          "biz": "6721402678",
+          "handler": "배선유",
           "cat": "menu",
           "reasons": [
             "확인 후 미완료"
