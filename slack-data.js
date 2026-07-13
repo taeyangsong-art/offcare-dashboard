@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 322,
+  "version": 323,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1987,11 +1987,11 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-13": {
-      "updatedAt": "10:21",
+      "updatedAt": "10:30",
       "counts": {
         "as": {
+          "심성현": 5,
           "배선유": 2,
-          "심성현": 4,
           "김현기": 2,
           "송태양": 1
         },
@@ -2009,10 +2009,30 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "10:20",
-          "store": "인네일",
-          "biz": "6974900915",
+          "time": "10:30",
+          "store": "오카에시",
+          "biz": "7620403383",
+          "handler": "김현기",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "10:28",
+          "store": "클레버 카페",
+          "biz": "5862602254",
           "handler": "송태양",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "10:20",
+          "store": "중국성",
+          "biz": "7525001051",
+          "handler": "심성현",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
@@ -2034,16 +2054,6 @@ window.SLACK_DATA = {
           "biz": "1535400985",
           "handler": "김현기",
           "cat": "delivery",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "10:11",
-          "store": "봉주르팔당",
-          "biz": "1318178738",
-          "handler": "심성현",
-          "cat": "as",
           "reasons": [
             "확인 후 미완료"
           ]
