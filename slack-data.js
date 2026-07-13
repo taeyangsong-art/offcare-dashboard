@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 351,
+  "version": 352,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -2570,22 +2570,23 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-13": {
-      "updatedAt": "16:00",
+      "updatedAt": "16:14",
       "counts": {
-        "extern": {
-          "서상원": 5
-        },
         "as": {
-          "배선유": 17,
-          "김현기": 22,
+          "배선유": 19,
+          "김현기": 23,
+          "심성현": 19,
+          "최민석": 2,
           "서상원": 10,
-          "심성현": 17,
           "송태양": 8,
-          "최민석": 1,
           "김기범": 6,
           "김규빈": 5
         },
+        "extern": {
+          "서상원": 5
+        },
         "onboarding": {
+          "최민석": 1,
           "송태양": 1,
           "심성현": 7,
           "배선유": 4,
@@ -2594,7 +2595,7 @@ window.SLACK_DATA = {
           "김규빈": 1
         },
         "transfer": {
-          "송태양": 10,
+          "송태양": 11,
           "심성현": 3
         },
         "menu": {
@@ -2608,19 +2609,9 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "15:41",
-          "store": "사계월 책방",
-          "biz": "7232102464",
-          "handler": "심성현",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "15:23",
-          "store": "명품수제찹쌀꽈배기",
-          "biz": "5866200818",
+          "time": "16:01",
+          "store": "키노(KINO)",
+          "biz": "6010666898",
           "handler": "배선유",
           "cat": "as",
           "reasons": [
@@ -2628,23 +2619,43 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "15:15",
-          "store": "처갓집반찬",
+          "time": "16:00",
+          "store": "프루타 맨션(FRUTA MANSION)",
+          "biz": "6110594701",
+          "handler": "김현기",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "16:00",
+          "store": "엠엔비(MnB)",
+          "biz": "1682501555",
+          "handler": "송태양",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "16:00",
+          "store": "꿈을 볶는 커피하우스",
+          "biz": "7733001837",
+          "handler": "심성현",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "15:50",
+          "store": "소룡",
           "biz": "",
           "handler": "송태양",
           "cat": "transfer",
           "reasons": [
-            "1차 부재"
-          ]
-        },
-        {
-          "time": "14:49",
-          "store": "등촌샤브칼국수(문지점)",
-          "biz": "2340303858",
-          "handler": "심성현",
-          "cat": "as",
-          "reasons": [
-            "1차 부재"
+            "확인 후 미완료"
           ]
         },
         {
