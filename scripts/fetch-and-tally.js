@@ -93,6 +93,29 @@ async function fetchAll(channelId) {
   return msgs;
 }
 
+// 스레드 답글 읽기 (VOC 처리내용 자동 수집용)
+async function fetchReplies(channelId, ts) {
+  try {
+    const url = new URL('https://slack.com/api/conversations.replies');
+    url.searchParams.set('channel', channelId);
+    url.searchParams.set('ts', ts);
+    url.searchParams.set('limit', '50');
+    const res = await fetch(url, { headers: { Authorization: 'Bearer ' + TOKEN } });
+    const j = await res.json();
+    if (!j.ok) return [];
+    return (j.messages || []).slice(1); // 첫 메시지(부모=설문)는 제외
+  } catch (e) { return []; }
+}
+// 처리내용 텍스트 정리(멘션/URL/마크다운 제거 후 요약 길이로 컷)
+function cleanNote(s) {
+  return (s || '')
+    .replace(/<https?:\/\/[^>|]+(?:\|[^>]+)?>/g, '')   // slack 링크
+    .replace(/https?:\/\/\S+/g, '')                     // 맨 URL
+    .replace(/<@[^>]+>/g, '').replace(/<#[^>]+>/g, '')  // 멘션
+    .replace(/[*_>`~]/g, '').replace(/:[a-z0-9_+\-]+:/gi, '')
+    .replace(/\s+/g, ' ').trim().slice(0, 200);
+}
+
 // 한 채널의 메시지를 공유 counts/pending 에 누적
 function tallyInto(msgs, ch, counts, pending) {
   let completed = 0, externCount = 0, dup = 0, latest = '';
@@ -160,7 +183,7 @@ function blocksText(m) {
 }
 
 // VOC 설문 응답 파싱 → 점수/업종/저점사유 집계
-function tallyVoc(msgs, voc) {
+async function tallyVoc(msgs, voc, channelId) {
   for (const m of msgs) {
     if (m.subtype && m.subtype !== 'bot_message') continue;
     let text = blocksText(m).replace(/&gt;/g, '>').replace(/&lt;/g, '<').replace(/&amp;/g, '&');
@@ -193,6 +216,10 @@ function tallyVoc(msgs, voc) {
     const names = (m.reactions || []).map(r => r.name);
     let praiseEmp = null;
     if (names.includes('원격voc')) { for (const nm of names) { const pm = nm.match(/^원격(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)$/); if (pm) { praiseEmp = personMap[pm[1]]; break; } } }
+    // 🆕 VOC 자동 처리완료: 'OOO_확인_'(담당 확인) + 'ishopcare'(아이샵케어 VOC체크 완료) 둘 다 찍히면 처리완료
+    let vocConfirm = null;
+    for (const nm of names) { const cm = nm.match(/^(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)_?확인_?$/); if (cm) { vocConfirm = personMap[cm[1]]; break; } }
+    const autoDone = !!(vocConfirm && names.includes('ishopcare'));
     const allAns = qa.map(x => x[1]).join(' ');
     const hasPraiseWord = VOC_PRAISE_KW.some(k => allAns.includes(k));
 
@@ -205,7 +232,17 @@ function tallyVoc(msgs, voc) {
     const isLow = reasons.length > 0;
     if (tenure) { if (!voc.byTenure[tenure]) voc.byTenure[tenure] = { total: 0, low: 0 }; voc.byTenure[tenure].total++; if (isLow) voc.byTenure[tenure].low++; }
     if (van)    { if (!voc.byVan[van])       voc.byVan[van]       = { total: 0, low: 0 }; voc.byVan[van].total++;       if (isLow) voc.byVan[van].low++; }
-    if (reasons.length) voc.alerts.push({ time, store, storeId, industry, indBucket, install: isNaN(install) ? null : install, nps: isNaN(nps) ? null : nps, reasons, emp: praiseEmp || '' });
+    if (reasons.length) {
+      // 처리내용 자동 수집: 스레드 답글 텍스트를 요약(정리)해서 기입
+      let autoNote = '';
+      if ((m.reply_count || 0) > 0 && channelId) {
+        const reps = await fetchReplies(channelId, m.ts);
+        autoNote = cleanNote(reps.map(r => blocksText(r)).join(' / '));
+      }
+      voc.alerts.push({ time, store, storeId, industry, indBucket, install: isNaN(install) ? null : install, nps: isNaN(nps) ? null : nps, reasons,
+        emp: praiseEmp || (autoDone ? vocConfirm : ''),
+        autoStatus: autoDone ? '처리완료' : '', autoEmp: autoDone ? vocConfirm : '', autoNote });
+    }
 
     // 칭찬 적재: 저점(reasons)이 아니면서 담당자확인 리액션 또는 칭찬 문구가 있는 건만 (저점 처리건은 제외)
     if (!reasons.length && (praiseEmp || hasPraiseWord)) {
@@ -225,7 +262,7 @@ function tallyVoc(msgs, voc) {
     try { msgs = await fetchAll(ch.id); }
     catch (e) { console.error(`  ⚠ [${ch.label}] 읽기 실패(${e.message}) — 건너뜀 (봇 초대/권한 확인)`); continue; }
     if (ch.type === 'voc') {
-      tallyVoc(msgs, voc); hasVoc = true;
+      await tallyVoc(msgs, voc, ch.id); hasVoc = true;
       console.log(`  [${ch.label}] 응답 ${voc.responses} · 구매설치저점 ${voc.install.low} · NPS저점 ${voc.nps.low}`);
     } else {
       const r = tallyInto(msgs, ch, counts, pending);

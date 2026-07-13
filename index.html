@@ -1354,7 +1354,7 @@ function renderOverview(){
   if(tday&&tday.pending) tday.pending.forEach(p=>{ const c=p.cat||'as'; pendByCat[c]=(pendByCat[c]||0)+1; });
   const vocToday = aggVoc([todayStr]);
   const vns = vocNpsStats(vocToday.npsDist);
-  const vocPend = vocToday.alerts.filter(a=>!vocDone((VOCEDIT[vocKey(a)]||{}).status)).length;
+  const vocPend = vocToday.alerts.filter(a=>!vocDone(vocEffStatus(a))).length;
   const pendTotal = Object.values(pendByCat).reduce((a,b)=>a+b,0)+vocPend;
   const alertListHTML = Object.entries(pendByCat).map(([k,n])=>`<div class="alert-item"><span>${catNameOf(k)} 미처리</span><span class="alert-cnt">${n}</span></div>`).join('')+(vocPend?`<div class="alert-item"><span>VOC 저점 미처리</span><span class="alert-cnt">${vocPend}</span></div>`:'');
   const duty = DUTY[todayStr]||{};
@@ -1640,7 +1640,7 @@ function vocAlertRow(a){
   const key=vocKey(a), ed=VOCEDIT[key]||{};
   const indVal=ed.industry!=null?ed.industry:(a.indBucket||'');
   const reaVal=ed.reasonCat!=null?ed.reasonCat:((a.reasons[0]&&a.reasons[0].cat)||'');
-  const note=ed.note||'', statVal=ed.status||'처리중';
+  const note=ed.note!=null?ed.note:(a.autoNote||''), statVal=ed.status||a.autoStatus||'처리중';
   const score=`${a.install!=null?`구매설치 ${a.install}`:''}${a.install!=null&&a.nps!=null?'<br>':''}${a.nps!=null?`추천 ${a.nps}`:''}`;
   const reasonTxt=a.reasons.map(r=>`<div class="voc-reason">${escapeHtml(r.text||'-')}</div>`).join("");
   const indSel=`<select class="voc-sel" onchange="saveVocEdit('${key}','industry',this.value)"><option value="">미지정</option>${VOC_INDUSTRIES.map(x=>`<option ${x===indVal?'selected':''}>${x}</option>`).join('')}</select>`;
@@ -1665,13 +1665,16 @@ const VOC_ALERT_HEAD=`<tr><th style="width:52px">시간</th><th style="min-width
 // 저점 alert 정규화(매장명·업종·사유·저점내용·해결내용·상태) — renderVoc/먼슬리 공용
 function vocDone(s){ return s==='처리완료' || s==='OB필요없음' || s==='부재' || s==='통화거부'; }   // 확인필요에서 빠지는(해결) 상태 — 부재·통화거부도 처리완료로 간주
 function vocStatCls(s){ return vocDone(s)?'done':(s==='처리중'?'':'hold'); }
+// 유효 상태/처리내용: 사용자가 직접 수정(VOCEDIT)했으면 그 값, 아니면 슬랙 자동값(확인+아이샵케어 이모지 → 처리완료 / 스레드 처리내용)
+function vocEffStatus(a){ const ed=VOCEDIT[vocKey(a)]||{}; return ed.status || a.autoStatus || '처리중'; }
+function vocEffNote(a){ const ed=VOCEDIT[vocKey(a)]||{}; return ed.note!=null?ed.note:(a.autoNote||''); }
 function vocAlertInfo(alerts){
-  return (alerts||[]).map(a=>{ const ed=VOCEDIT[vocKey(a)]||{}; const st=ed.status||'처리중';
+  return (alerts||[]).map(a=>{ const ed=VOCEDIT[vocKey(a)]||{}; const st=ed.status||a.autoStatus||'처리중';
     return { store:a.store||'-', storeId:a.storeId||'',
       ind: ed.industry||a.indBucket||'미지정',
       rea: ed.reasonCat||(a.reasons[0]&&a.reasons[0].cat)||VOC_REASONS[5],
       content:(a.reasons||[]).map(r=>r.text).filter(Boolean).join(' / ')||'-',
-      note: ed.note||'', status:st, statCls:vocStatCls(st),
+      note: ed.note!=null?ed.note:(a.autoNote||''), status:st, statCls:vocStatCls(st),
       score:`${a.install!=null?'설치'+a.install:''}${a.install!=null&&a.nps!=null?'·':''}${a.nps!=null?'추천'+a.nps:''}` }; });
 }
 function vocGroupEntries(alerts, key){ const g={}; vocAlertInfo(alerts).forEach(x=>{(g[x[key]]=g[x[key]]||[]).push(x);}); return Object.entries(g).sort((a,b)=>b[1].length-a[1].length); }
@@ -1723,7 +1726,7 @@ function renderVoc(){
   const indEntries=vocGroupEntries(v.alerts,'ind'), reaEntries=vocGroupEntries(v.alerts,'rea');
   const indDMax=Math.max(1,...indEntries.map(e=>e[1].length)), reaDMax=Math.max(1,...reaEntries.map(e=>e[1].length));
 
-  const isDone=a=>vocDone((VOCEDIT[vocKey(a)]||{}).status);
+  const isDone=a=>vocDone(vocEffStatus(a));
   // 미처리(처리중) 저점 건은 날짜가 지나도 계속 누적 표시 — 조회기간 종료일까지의 전체 미처리 건
   const carryEnd=viewDates[viewDates.length-1];
   const carryDates=allSlackDates().filter(d=>d<=carryEnd);
@@ -1862,7 +1865,7 @@ function renderVocMonthly(){
   const ns=vocNpsStats(v.npsDist), avgInstall=avgScore(v.installDist);   // NPS 지표
   const npsColor=s=>s>=9?'#34c759':s>=7?'#ff9500':'#ff3b30';
   const insColor=s=>s>=4?'#34c759':s>=3?'#ff9500':'#ff3b30';
-  const doneCount=v.alerts.filter(a=>vocDone((VOCEDIT[vocKey(a)]||{}).status)).length;
+  const doneCount=v.alerts.filter(a=>vocDone(vocEffStatus(a))).length;
   const doneRate=totalIn?Math.round(doneCount/totalIn*100):0;
   const posCount=vpCount+(v.high.install+v.high.nps), sentTot=posCount+totalIn;
   const posRate=sentTot?Math.round(posCount/sentTot*100):0;
