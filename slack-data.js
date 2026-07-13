@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 366,
+  "version": 367,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -9712,7 +9712,7 @@ window.SLACK_DATA = {
       "dup": []
     },
     "2026-07-13": {
-      "updatedAt": "18:51",
+      "updatedAt": "19:18",
       "counts": {
         "as": {
           "최민석": 14,
@@ -9741,8 +9741,8 @@ window.SLACK_DATA = {
           "심성현": 3
         },
         "menu": {
+          "배선유": 14,
           "김규빈": 13,
-          "배선유": 12,
           "서상원": 2
         },
         "delivery": {
@@ -9750,18 +9750,7 @@ window.SLACK_DATA = {
           "최민석": 1
         }
       },
-      "pending": [
-        {
-          "time": "14:32",
-          "store": "키노(KINO)",
-          "biz": "6010666898",
-          "handler": "김현기",
-          "cat": "as",
-          "reasons": [
-            "1차 부재"
-          ]
-        }
-      ],
+      "pending": [],
       "voc": {
         "responses": 19,
         "install": {
@@ -10088,6 +10077,20 @@ window.SLACK_DATA = {
         ]
       },
       "done": [
+        {
+          "time": "19:18",
+          "store": "강창구찹쌀진순대 여의도2호점",
+          "biz": "5348600910",
+          "cat": "menu",
+          "emp": "배선유"
+        },
+        {
+          "time": "19:18",
+          "store": "강창구찹쌀진순대여의도1호점",
+          "biz": "1060144017",
+          "cat": "menu",
+          "emp": "배선유"
+        },
         {
           "time": "18:51",
           "store": "이석민피자",
@@ -11536,6 +11539,15 @@ window.SLACK_DATA = {
           "biz": "1573801517",
           "cat": "menu",
           "emp": "배선유"
+        }
+      ],
+      "dup": [
+        {
+          "time": "14:32",
+          "store": "키노(KINO)",
+          "biz": "6010666898",
+          "handler": "미지정",
+          "cat": "as"
         }
       ]
     },
