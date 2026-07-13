@@ -265,12 +265,19 @@ async function tallyVoc(msgs, voc, channelId, opts) {
 
     // VOC 담당자 = '원격voc' 이모지 + '원격OOO'(완료 담당자)가 둘 다 찍힌 경우 그 사람 (설문 적재는 점수대로 유지, 담당자만 이 기준)
     const names = (m.reactions || []).map(r => r.name);
-    let praiseEmp = null;
-    if (names.includes('원격voc')) { for (const nm of names) { const pm = nm.match(/^원격(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)$/); if (pm) { praiseEmp = personMap[pm[1]]; break; } } }
-    // 🆕 VOC 자동 처리완료: 'OOO_확인_'(담당 확인) + 'ishopcare'(아이샵케어 VOC체크 완료) 둘 다 찍히면 처리완료
-    let vocConfirm = null;
-    for (const nm of names) { const cm = nm.match(/^(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)_?확인_?$/); if (cm) { vocConfirm = personMap[cm[1]]; break; } }
-    const autoDone = !!(vocConfirm && names.includes('ishopcare'));
+    // 🆕 VOC 처리완료 = 세 개 모두: 원격voc(원격VOC) + OOO_확인_(담당 확인) + OOO_완료(담당 완료)
+    const hasVocTag = names.includes('원격voc');
+    let confirmP = null, doneP = null, remoteP = null;
+    for (const nm of names) {
+      let mm;
+      if (!confirmP && (mm = nm.match(/^(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)_?확인_?$/))) confirmP = personMap[mm[1]];
+      if (!doneP    && (mm = nm.match(/^(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)_?완료_?$/))) doneP = personMap[mm[1]];
+      if (!remoteP  && (mm = nm.match(/^원격(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)$/)))     remoteP = personMap[mm[1]];
+    }
+    const autoDone = hasVocTag && !!confirmP && !!doneP;         // 세 개 모두 찍힘
+    const handler = doneP || confirmP || remoteP || '';
+    // 담당자(emp): 처리완료면 handler, 아니면 구방식(원격voc+원격OOO) 호환
+    const empVal = autoDone ? handler : ((hasVocTag && remoteP) ? remoteP : '');
     const allAns = qa.map(x => x[1]).join(' ');
     const hasPraiseWord = VOC_PRAISE_KW.some(k => allAns.includes(k));
 
@@ -295,14 +302,14 @@ async function tallyVoc(msgs, voc, channelId, opts) {
       // 완료일: 이미 완료로 기록된 적 있으면 그 날짜 유지, 이번에 처음 완료되면 '오늘'로 적재
       const doneDate = autoDone ? (prior.doneDate || opts.todayKstDate || '') : '';
       voc.alerts.push({ time, store, storeId, industry, indBucket, install: isNaN(install) ? null : install, nps: isNaN(nps) ? null : nps, reasons,
-        emp: praiseEmp || (autoDone ? vocConfirm : ''),
-        autoStatus: autoDone ? '처리완료' : '', autoEmp: autoDone ? vocConfirm : '', autoNote, doneDate });
+        emp: empVal,
+        autoStatus: autoDone ? '처리완료' : '', autoEmp: autoDone ? handler : '', autoNote, doneDate });
     }
 
-    // 칭찬 적재: 저점(reasons)이 아니면서 담당자확인 리액션 또는 칭찬 문구가 있는 건만 (저점 처리건은 제외)
-    if (!reasons.length && (praiseEmp || hasPraiseWord)) {
+    // 칭찬/일반 응답 적재: 저점이 아니면서 처리(담당자) 또는 칭찬 문구가 있는 건 (emp 있으면 '처리'로 집계됨)
+    if (!reasons.length && (empVal || hasPraiseWord)) {
       const ptext = (installReason + ' ' + npsReason).trim() || allAns.slice(0, 100);
-      voc.praises.push({ time, store, storeId, indBucket, emp: praiseEmp || '', install: isNaN(install) ? null : install, nps: isNaN(nps) ? null : nps, text: ptext, byReaction: !!praiseEmp });
+      voc.praises.push({ time, store, storeId, indBucket, emp: empVal, install: isNaN(install) ? null : install, nps: isNaN(nps) ? null : nps, text: ptext, byReaction: !!empVal });
     }
   }
 }
