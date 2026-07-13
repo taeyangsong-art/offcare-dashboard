@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 352,
+  "version": 353,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -2570,24 +2570,24 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-13": {
-      "updatedAt": "16:14",
+      "updatedAt": "16:30",
       "counts": {
+        "extern": {
+          "서상원": 6
+        },
         "as": {
-          "배선유": 19,
+          "배선유": 20,
+          "심성현": 20,
           "김현기": 23,
-          "심성현": 19,
           "최민석": 2,
           "서상원": 10,
           "송태양": 8,
           "김기범": 6,
           "김규빈": 5
         },
-        "extern": {
-          "서상원": 5
-        },
         "onboarding": {
+          "송태양": 2,
           "최민석": 1,
-          "송태양": 1,
           "심성현": 7,
           "배선유": 4,
           "서상원": 3,
@@ -2595,7 +2595,7 @@ window.SLACK_DATA = {
           "김규빈": 1
         },
         "transfer": {
-          "송태양": 11,
+          "송태양": 12,
           "심성현": 3
         },
         "menu": {
@@ -2609,10 +2609,20 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "16:01",
-          "store": "키노(KINO)",
-          "biz": "6010666898",
+          "time": "16:05",
+          "store": "호돌이네",
+          "biz": "4811200968",
           "handler": "배선유",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "16:04",
+          "store": "아움(AUM)",
+          "biz": "2023104004",
+          "handler": "심성현",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
@@ -2629,31 +2639,21 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "16:00",
-          "store": "엠엔비(MnB)",
-          "biz": "1682501555",
-          "handler": "송태양",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "16:00",
-          "store": "꿈을 볶는 커피하우스",
-          "biz": "7733001837",
-          "handler": "심성현",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
           "time": "15:50",
           "store": "소룡",
           "biz": "",
           "handler": "송태양",
           "cat": "transfer",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "15:10",
+          "store": "취하리",
+          "biz": "5292301135",
+          "handler": "김규빈",
+          "cat": "menu",
           "reasons": [
             "확인 후 미완료"
           ]
@@ -2690,18 +2690,18 @@ window.SLACK_DATA = {
         }
       ],
       "voc": {
-        "responses": 15,
+        "responses": 16,
         "install": {
           "count": 5,
           "low": 2
         },
         "nps": {
-          "count": 15,
+          "count": 16,
           "low": 5
         },
         "high": {
           "install": 2,
-          "nps": 5
+          "nps": 6
         },
         "npsDist": {
           "0": 2,
@@ -2709,7 +2709,7 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 1,
           "9": 3,
-          "10": 5
+          "10": 6
         },
         "installDist": {
           "1": 2,
@@ -2722,6 +2722,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 3,
+            "low": 0
+          },
           "12개월": {
             "total": 1,
             "low": 1
@@ -2734,16 +2738,16 @@ window.SLACK_DATA = {
             "total": 3,
             "low": 1
           },
-          "1개월": {
-            "total": 2,
-            "low": 0
-          },
           "구매설치": {
             "total": 5,
             "low": 2
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 5,
+            "low": 2
+          },
           "KPN": {
             "total": 5,
             "low": 3
@@ -2759,10 +2763,6 @@ window.SLACK_DATA = {
           "DAOU": {
             "total": 1,
             "low": 1
-          },
-          "KIS": {
-            "total": 4,
-            "low": 2
           },
           "SMARTRO": {
             "total": 3,
@@ -2915,6 +2915,18 @@ window.SLACK_DATA = {
           }
         ],
         "praises": [
+          {
+            "time": "16:27",
+            "store": "린다 스칼프앤뷰티",
+            "storeId": "497441",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "친절하고 이해하기 쉽게 설명해 주샤서 좋아요",
+            "byReaction": false,
+            "doneDate": ""
+          },
           {
             "time": "15:13",
             "store": "금호모터스",
