@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 350,
+  "version": 351,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -2570,14 +2570,18 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-13": {
-      "updatedAt": "15:41",
+      "updatedAt": "16:00",
       "counts": {
+        "extern": {
+          "서상원": 5
+        },
         "as": {
-          "김현기": 20,
+          "배선유": 17,
+          "김현기": 22,
           "서상원": 10,
+          "심성현": 17,
           "송태양": 8,
-          "배선유": 16,
-          "심성현": 16,
+          "최민석": 1,
           "김기범": 6,
           "김규빈": 5
         },
@@ -2588,9 +2592,6 @@ window.SLACK_DATA = {
           "서상원": 3,
           "김현기": 2,
           "김규빈": 1
-        },
-        "extern": {
-          "서상원": 4
         },
         "transfer": {
           "송태양": 10,
@@ -2607,10 +2608,10 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "15:32",
-          "store": "멕시코코 하시엔다",
-          "biz": "8824201319",
-          "handler": "서상원",
+          "time": "15:41",
+          "store": "사계월 책방",
+          "biz": "7232102464",
+          "handler": "심성현",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
@@ -2618,8 +2619,8 @@ window.SLACK_DATA = {
         },
         {
           "time": "15:23",
-          "store": "수고했어 오늘도",
-          "biz": "5773800478",
+          "store": "명품수제찹쌀꽈배기",
+          "biz": "5866200818",
           "handler": "배선유",
           "cat": "as",
           "reasons": [
@@ -2633,27 +2634,7 @@ window.SLACK_DATA = {
           "handler": "송태양",
           "cat": "transfer",
           "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "15:06",
-          "store": "핀셀미술학원",
-          "biz": "8989202152",
-          "handler": "김현기",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "15:03",
-          "store": "다정제말",
-          "biz": "2350703752",
-          "handler": "심성현",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
+            "1차 부재"
           ]
         },
         {
@@ -2698,14 +2679,14 @@ window.SLACK_DATA = {
         }
       ],
       "voc": {
-        "responses": 14,
+        "responses": 15,
         "install": {
           "count": 5,
           "low": 2
         },
         "nps": {
-          "count": 14,
-          "low": 4
+          "count": 15,
+          "low": 5
         },
         "high": {
           "install": 2,
@@ -2713,7 +2694,7 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "0": 2,
-          "5": 2,
+          "5": 3,
           "7": 1,
           "8": 1,
           "9": 3,
@@ -2730,6 +2711,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 1,
+            "low": 1
+          },
           "3개월": {
             "total": 4,
             "low": 2
@@ -2749,8 +2734,8 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KPN": {
-            "total": 4,
-            "low": 2
+            "total": 5,
+            "low": 3
           },
           "SECTA9": {
             "total": 1,
@@ -2774,11 +2759,33 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 2,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 4,
-          "필요한 기능이 없거나 몰라서 불편": 1,
-          "단말기 설치나 초기 과정이 어려움": 1
+          "필요한 기능이 없거나 몰라서 불편": 1
         },
         "alerts": [
+          {
+            "time": "15:53",
+            "store": "커피 모먼트 (coffee moment)",
+            "storeId": "208807",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "프론트연결이 너무 자주 끊겨요",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:36",
             "store": "더 다온 음악학원",
