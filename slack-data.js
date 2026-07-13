@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 325,
+  "version": 326,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -5621,6 +5621,434 @@ window.SLACK_DATA = {
             "install": null,
             "nps": 6,
             "text": "결제마다 폰에 접속하는게 불펼함",
+            "byReaction": false
+          }
+        ]
+      }
+    },
+    "2026-06-28": {
+      "updatedAt": "",
+      "counts": {},
+      "pending": [],
+      "voc": {
+        "responses": 27,
+        "install": {
+          "count": 1,
+          "low": 0
+        },
+        "nps": {
+          "count": 27,
+          "low": 13
+        },
+        "high": {
+          "install": 0,
+          "nps": 9
+        },
+        "npsDist": {
+          "0": 6,
+          "2": 1,
+          "3": 2,
+          "4": 2,
+          "5": 2,
+          "8": 3,
+          "9": 2,
+          "10": 9
+        },
+        "installDist": {
+          "3": 1
+        },
+        "byIndustry": {
+          "요식업": 1
+        },
+        "byTenure": {
+          "3개월": {
+            "total": 7,
+            "low": 5
+          },
+          "12개월": {
+            "total": 5,
+            "low": 2
+          },
+          "구매설치": {
+            "total": 1,
+            "low": 0
+          },
+          "1개월": {
+            "total": 7,
+            "low": 3
+          },
+          "6개월": {
+            "total": 7,
+            "low": 3
+          }
+        },
+        "byVan": {
+          "KIS": {
+            "total": 5,
+            "low": 4
+          },
+          "NICE": {
+            "total": 7,
+            "low": 3
+          },
+          "SECTA9": {
+            "total": 4,
+            "low": 2
+          },
+          "KPN": {
+            "total": 3,
+            "low": 0
+          },
+          "SMARTRO": {
+            "total": 3,
+            "low": 2
+          },
+          "KSNET": {
+            "total": 4,
+            "low": 2
+          },
+          "DAOU": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 1,
+          "사용중 오류가 자주 발생함": 9,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
+          "필요한 기능이 없거나 몰라서 불편": 1
+        },
+        "alerts": [
+          {
+            "time": "22:22",
+            "store": "요가피플",
+            "storeId": "406602",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 4,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 4,
+                "text": "가끔 인터넷 연결이 잘 안되있을때 그러는지 멈출때가 있네요?",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "18:10",
+            "store": "벼리네점빵(KIS)",
+            "storeId": "463301",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "바쁜시간에..오류로 결제불가..",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "CX일괄문자발송 CX일괄문자발송",
+            "doneDate": ""
+          },
+          {
+            "time": "17:51",
+            "store": "국밥쌀롱&포차쌀롱",
+            "storeId": "362058",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "몇일전 토스프로그램장애로 손님들 돌아가  피해입음",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "CX일괄문자발송 CX일괄문자발송",
+            "doneDate": ""
+          },
+          {
+            "time": "17:21",
+            "store": "레오 밸런스 랩(LEO BALANCE LAB)",
+            "storeId": "375914",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "오류도 많고 일반단말기쓰는게 더 편한거같아요",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "CX일괄문자발송 CX일괄문자발송",
+            "doneDate": ""
+          },
+          {
+            "time": "16:21",
+            "store": "라온J",
+            "storeId": "375770",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "카드단말기및 포스가 이용되지않아서 불편했어요.긴급결제도안되서 손님들이 불편해했습니다.",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "CX일괄문자발송 CX일괄문자발송",
+            "doneDate": ""
+          },
+          {
+            "time": "15:46",
+            "store": "선산곱창",
+            "storeId": "321845",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "에러가남  가입자에게 빨리통보하고 해결해야지 고객센터 전화불통     답답하게 일처리함",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "CX일괄문자발송 CX일괄문자발송",
+            "doneDate": ""
+          },
+          {
+            "time": "15:45",
+            "store": "달콤풀",
+            "storeId": "318182",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 4,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 4,
+                "text": "써보니 포스화면 글자가 잘 안보여도 크기를  조절할수 있으면 좋겠어요 그리고 키오스크 화면에 광고도 크기를 줄이거나 할슈있으면 좋겠어요 또 이번 결제불거 사건으로 추천 하고 싶지 않아요 비상결제 모드도 제대로 되지 않아 너무 곤란 했어요",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "CX일괄문자발송 CX일괄문자발송",
+            "doneDate": ""
+          },
+          {
+            "time": "15:36",
+            "store": "수호정",
+            "storeId": "197938",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "지금 2번정도 크게 토스 문제로 오류가 걸려 결제할 때 진땀뺀적이 있었음.",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "CX일괄문자발송 CX일괄문자발송",
+            "doneDate": ""
+          },
+          {
+            "time": "15:20",
+            "store": "양산국밥(정관점)",
+            "storeId": "422945",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "몇일 전 전산먹통 전까지는 10점 만점이었음.",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "CX일괄문자발송 CX일괄문자발송",
+            "doneDate": ""
+          },
+          {
+            "time": "15:09",
+            "store": "고토(KO TO mens)",
+            "storeId": "473686",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "아 그래요 제가 오픈한지 한달차긴한데 엇그제 토스 시스템먹통되서 예약도안되고 들어갈수없어서 생긴 불이익은 매출산정안되니까 전혀보상받지못하죠 :) 아그리고 뭐지원금 마니준다퍼다준다 이런말저런말다싸질러놓고 달랑 단말기하나에 추첨통해준다고 써져있고 과대광고 지림",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "CX일괄문자발송 CX일괄문자발송",
+            "doneDate": ""
+          },
+          {
+            "time": "15:05",
+            "store": "크렘 에 카도",
+            "storeId": "199418",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 2,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 2,
+                "text": "에러가 너무 자주일어남",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "CX일괄문자발송 CX일괄문자발송",
+            "doneDate": ""
+          },
+          {
+            "time": "11:08",
+            "store": "블랑포유",
+            "storeId": "461175",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "너무느리고 연결도자주끊깁니다 전에 신화포스썻었는데 너무비교되고 해지하고싶은데 1년은써야해서참고있어요 진심으로 별로에요 개선되었음합니다.",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "CX일괄문자발송 CX일괄문자발송",
+            "doneDate": ""
+          },
+          {
+            "time": "10:14",
+            "store": "등촌샤브칼국수 남영역점",
+            "storeId": "310375",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "잦은 포스 오류와 상담원 통화 난이",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "CX일괄문자발송 CX일괄문자발송",
+            "doneDate": ""
+          }
+        ],
+        "praises": [
+          {
+            "time": "18:10",
+            "store": "한지촌",
+            "storeId": "472511",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "사용하기 편리함",
+            "byReaction": false
+          },
+          {
+            "time": "17:46",
+            "store": "이레테크앤컨설팅 주식회사",
+            "storeId": "313470",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "매우 만족합니다. 기능도 편리하고 사용하기에 너무 좋습니다.",
+            "byReaction": false
+          },
+          {
+            "time": "16:10",
+            "store": "피부미희",
+            "storeId": "457783",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 8,
+            "text": "전체적으로 뷰티업을 하는 사람에게 금액이라던지 기록이라던지가 중요한데  전체 다 될수 있는 부분이 가장 좋습니다",
+            "byReaction": false
+          },
+          {
+            "time": "15:21",
+            "store": "나로에스테틱",
+            "storeId": "417926",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "편해요",
             "byReaction": false
           }
         ]
