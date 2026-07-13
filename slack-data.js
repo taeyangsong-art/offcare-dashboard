@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 364,
+  "version": 365,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -190,7 +190,7 @@ window.SLACK_DATA = {
             "emp": "",
             "autoStatus": "",
             "autoEmp": "",
-            "autoNote": "",
+            "autoNote": "1차부재 1차부재",
             "doneDate": ""
           },
           {
@@ -9676,7 +9676,7 @@ window.SLACK_DATA = {
       "updatedAt": "18:51",
       "counts": {
         "as": {
-          "최민석": 13,
+          "최민석": 14,
           "김기범": 13,
           "김현기": 29,
           "서상원": 12,
@@ -9703,7 +9703,7 @@ window.SLACK_DATA = {
         },
         "menu": {
           "김규빈": 13,
-          "배선유": 11,
+          "배선유": 12,
           "서상원": 2
         },
         "delivery": {
@@ -9717,26 +9717,6 @@ window.SLACK_DATA = {
           "store": "키노(KINO)",
           "biz": "6010666898",
           "handler": "김현기",
-          "cat": "as",
-          "reasons": [
-            "1차 부재"
-          ]
-        },
-        {
-          "time": "13:42",
-          "store": "피자마루 양산중앙점",
-          "biz": "6971201126",
-          "handler": "배선유",
-          "cat": "menu",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "13:13",
-          "store": "뮤리엘 스킨&amp;왁싱",
-          "biz": "1952300573",
-          "handler": "배선유",
           "cat": "as",
           "reasons": [
             "1차 부재"
@@ -10069,6 +10049,13 @@ window.SLACK_DATA = {
         ]
       },
       "done": [
+        {
+          "time": "18:51",
+          "store": "이석민피자",
+          "biz": "1191618386",
+          "cat": "as",
+          "emp": "최민석"
+        },
         {
           "time": "18:48",
           "store": "탕수육",
@@ -10831,6 +10818,13 @@ window.SLACK_DATA = {
           "biz": "6971201126",
           "cat": "extern",
           "emp": "서상원"
+        },
+        {
+          "time": "13:42",
+          "store": "피자마루 양산중앙점",
+          "biz": "6971201126",
+          "cat": "menu",
+          "emp": "배선유"
         },
         {
           "time": "13:41",
@@ -20063,11 +20057,11 @@ window.SLACK_DATA = {
                 "cat": "사용중 오류가 자주 발생함"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
             "autoNote": "• 현재 매장이 아닌 관계로 익일 오전10시 30분 예약 점검 안내 현재 매장이 아닌 관계로 익일 오전10시 30분 예약 점검 안내 / 통화거부 통화거부",
-            "doneDate": ""
+            "doneDate": "2026-07-13"
           },
           {
             "time": "15:40",
