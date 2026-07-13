@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 359,
+  "version": 360,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -1650,11 +1650,11 @@ window.SLACK_DATA = {
                 "cat": "단말기 설치나 초기 과정이 어려움"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
             "autoNote": "1차부재 1차부재",
-            "doneDate": ""
+            "doneDate": "2026-07-13"
           },
           {
             "time": "15:14",
@@ -2570,16 +2570,16 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-13": {
-      "updatedAt": "18:00",
+      "updatedAt": "18:15",
       "counts": {
         "as": {
+          "최민석": 7,
+          "김현기": 29,
+          "김기범": 12,
           "서상원": 12,
-          "김기범": 10,
-          "김현기": 27,
-          "최민석": 5,
+          "송태양": 9,
           "심성현": 26,
           "배선유": 21,
-          "송태양": 8,
           "김규빈": 5
         },
         "onboarding": {
@@ -2599,7 +2599,7 @@ window.SLACK_DATA = {
           "심성현": 3
         },
         "menu": {
-          "김규빈": 12,
+          "김규빈": 13,
           "배선유": 11,
           "서상원": 2
         },
@@ -2610,19 +2610,9 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "17:48",
-          "store": "(주)태원제이엠푸드",
-          "biz": "4838603749",
-          "handler": "김기범",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "17:42",
-          "store": "지우신당 (로완타로)",
-          "biz": "5841802840",
+          "time": "18:15",
+          "store": "",
+          "biz": "8809601989",
           "handler": "송태양",
           "cat": "as",
           "reasons": [
@@ -2630,13 +2620,13 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "17:41",
-          "store": "리더스 용현 태권도장",
-          "biz": "3389601493",
-          "handler": "김현기",
-          "cat": "as",
+          "time": "17:43",
+          "store": "퀸즈에스테틱",
+          "biz": "1082153451",
+          "handler": "심성현",
+          "cat": "transfer",
           "reasons": [
-            "확인 후 미완료"
+            "1차 부재"
           ]
         },
         {
@@ -2671,18 +2661,18 @@ window.SLACK_DATA = {
         }
       ],
       "voc": {
-        "responses": 18,
+        "responses": 19,
         "install": {
           "count": 6,
           "low": 2
         },
         "nps": {
-          "count": 18,
+          "count": 19,
           "low": 5
         },
         "high": {
           "install": 3,
-          "nps": 7
+          "nps": 8
         },
         "npsDist": {
           "0": 2,
@@ -2690,7 +2680,7 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 1,
           "9": 4,
-          "10": 7
+          "10": 8
         },
         "installDist": {
           "1": 2,
@@ -2704,6 +2694,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 5,
+            "low": 2
+          },
           "구매설치": {
             "total": 6,
             "low": 2
@@ -2719,19 +2713,15 @@ window.SLACK_DATA = {
           "12개월": {
             "total": 1,
             "low": 1
-          },
-          "3개월": {
-            "total": 4,
-            "low": 2
           }
         },
         "byVan": {
-          "SECTA9": {
-            "total": 2,
+          "SMARTRO": {
+            "total": 5,
             "low": 0
           },
-          "SMARTRO": {
-            "total": 4,
+          "SECTA9": {
+            "total": 2,
             "low": 0
           },
           "KIS": {
@@ -2898,6 +2888,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "18:07",
+            "store": "뮤. muu.",
+            "storeId": "435115",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "전체적으로 깔끔하고 토스 자체 오류건에 대해서도 응대가 빠름",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "17:02",
             "store": "온담 PT",
             "storeId": "321658",
@@ -2985,6 +2987,41 @@ window.SLACK_DATA = {
       },
       "done": [
         {
+          "time": "18:08",
+          "store": "담으시옷",
+          "biz": "3464401137",
+          "cat": "as",
+          "emp": "최민석"
+        },
+        {
+          "time": "18:03",
+          "store": "(봉명동)(주) 형과아우",
+          "biz": "1398802492",
+          "cat": "menu",
+          "emp": "김규빈"
+        },
+        {
+          "time": "18:00",
+          "store": "카페마슬",
+          "biz": "4332802013",
+          "cat": "as",
+          "emp": "김현기"
+        },
+        {
+          "time": "17:54",
+          "store": "용용선생 광주수완점",
+          "biz": "3260102789",
+          "cat": "as",
+          "emp": "최민석"
+        },
+        {
+          "time": "17:50",
+          "store": "푸드탕스",
+          "biz": "5541202513",
+          "cat": "as",
+          "emp": "김기범"
+        },
+        {
           "time": "17:48",
           "store": "용용선생 제주시청점",
           "biz": "6031650988",
@@ -2992,11 +3029,32 @@ window.SLACK_DATA = {
           "emp": "서상원"
         },
         {
+          "time": "17:48",
+          "store": "(주)태원제이엠푸드",
+          "biz": "4838603749",
+          "cat": "as",
+          "emp": "김기범"
+        },
+        {
           "time": "17:45",
           "store": "리버스튜디오",
           "biz": "8183201814",
           "cat": "as",
           "emp": "김기범"
+        },
+        {
+          "time": "17:42",
+          "store": "지우신당 (로완타로)",
+          "biz": "5841802840",
+          "cat": "as",
+          "emp": "송태양"
+        },
+        {
+          "time": "17:41",
+          "store": "리더스 용현 태권도장",
+          "biz": "3389601493",
+          "cat": "as",
+          "emp": "김현기"
         },
         {
           "time": "17:40",
