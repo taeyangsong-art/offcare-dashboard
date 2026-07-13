@@ -265,17 +265,17 @@ async function tallyVoc(msgs, voc, channelId, opts) {
 
     // VOC 담당자 = '원격voc' 이모지 + '원격OOO'(완료 담당자)가 둘 다 찍힌 경우 그 사람 (설문 적재는 점수대로 유지, 담당자만 이 기준)
     const names = (m.reactions || []).map(r => r.name);
-    // 🆕 VOC 처리완료 = 세 개 모두: 원격voc(원격VOC) + OOO_확인_(담당 확인) + OOO_완료(담당 완료)
+    // 🆕 VOC 처리완료 = OOO_확인_(담당 확인) + ishopcare(완료=아이샵케어 VOC체크) 두 개
     const hasVocTag = names.includes('원격voc');
-    let confirmP = null, doneP = null, remoteP = null;
+    const hasIshop = names.includes('ishopcare');
+    let confirmP = null, remoteP = null;
     for (const nm of names) {
       let mm;
       if (!confirmP && (mm = nm.match(/^(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)_?확인_?$/))) confirmP = personMap[mm[1]];
-      if (!doneP    && (mm = nm.match(/^(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)_?완료_?$/))) doneP = personMap[mm[1]];
       if (!remoteP  && (mm = nm.match(/^원격(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)$/)))     remoteP = personMap[mm[1]];
     }
-    const autoDone = hasVocTag && !!confirmP && !!doneP;         // 세 개 모두 찍힘
-    const handler = doneP || confirmP || remoteP || '';
+    const autoDone = !!confirmP && hasIshop;                     // 확인 + 아이샵케어 VOC체크(ishopcare)
+    const handler = confirmP || remoteP || '';
     // 담당자(emp): 처리완료면 handler, 아니면 구방식(원격voc+원격OOO) 호환
     const empVal = autoDone ? handler : ((hasVocTag && remoteP) ? remoteP : '');
     const allAns = qa.map(x => x[1]).join(' ');
