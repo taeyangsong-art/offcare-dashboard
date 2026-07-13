@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 343,
+  "version": 344,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -2570,19 +2570,19 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-13": {
-      "updatedAt": "14:00",
+      "updatedAt": "14:15",
       "counts": {
         "as": {
-          "송태양": 6,
-          "서상원": 4,
+          "심성현": 12,
+          "송태양": 7,
+          "서상원": 5,
           "김기범": 4,
-          "배선유": 12,
-          "김현기": 14,
-          "김규빈": 5,
-          "심성현": 10
+          "김현기": 16,
+          "배선유": 13,
+          "김규빈": 5
         },
         "extern": {
-          "서상원": 3
+          "서상원": 4
         },
         "onboarding": {
           "배선유": 2,
@@ -2603,9 +2603,19 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "13:51",
-          "store": "건강의료기",
-          "biz": "1300756065",
+          "time": "14:00",
+          "store": "리움1619(Rium1619)",
+          "biz": "8595800946",
+          "handler": "송태양",
+          "cat": "transfer",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "13:48",
+          "store": "우리말해&amp;해법보습학원",
+          "biz": "2489201697",
           "handler": "심성현",
           "cat": "as",
           "reasons": [
@@ -2613,20 +2623,10 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "13:30",
-          "store": "봄에스테틱 셀포랩점",
-          "biz": "5161202850",
-          "handler": "송태양",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "13:27",
-          "store": "천심",
-          "biz": "1801902363",
-          "handler": "김현기",
+          "time": "13:36",
+          "store": "미미헤어",
+          "biz": "8780400702",
+          "handler": "배선유",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
@@ -2636,16 +2636,6 @@ window.SLACK_DATA = {
           "time": "13:13",
           "store": "뮤리엘 스킨&amp;왁싱",
           "biz": "1952300573",
-          "handler": "배선유",
-          "cat": "as",
-          "reasons": [
-            "1차 부재"
-          ]
-        },
-        {
-          "time": "13:00",
-          "store": "요앤스(yoens)",
-          "biz": "6425600776",
           "handler": "배선유",
           "cat": "as",
           "reasons": [
