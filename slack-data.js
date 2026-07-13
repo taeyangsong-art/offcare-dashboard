@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 337,
+  "version": 338,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -2570,11 +2570,11 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-13": {
-      "updatedAt": "12:30",
+      "updatedAt": "12:40",
       "counts": {
         "as": {
-          "김규빈": 4,
-          "김현기": 11,
+          "김현기": 13,
+          "김규빈": 5,
           "배선유": 9,
           "김기범": 2,
           "심성현": 10,
@@ -2590,7 +2590,7 @@ window.SLACK_DATA = {
           "서상원": 2
         },
         "transfer": {
-          "심성현": 2,
+          "심성현": 3,
           "송태양": 3
         },
         "menu": {
@@ -2600,33 +2600,13 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "12:16",
-          "store": "소소베이글",
-          "biz": "1663301646",
-          "handler": "김규빈",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "12:02",
-          "store": "따스한정 다이어트",
-          "biz": "",
-          "handler": "심성현",
-          "cat": "transfer",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "11:59",
-          "store": "나를위한 에스테틱",
-          "biz": "5192501831",
+          "time": "12:40",
+          "store": "더본헤어",
+          "biz": "2242033293",
           "handler": "심성현",
           "cat": "as",
           "reasons": [
-            "1차 부재"
+            "확인 후 미완료"
           ]
         },
         {
