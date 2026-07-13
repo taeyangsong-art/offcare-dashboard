@@ -79,7 +79,7 @@ function dateList(fromS, toS) { const out = []; for (let t = dateUTC(fromS), e =
 // 백필: BACKFILL_FROM=YYYY-MM-DD 지정 시 그 날부터 오늘까지 모든 카테고리를 날짜별로 다시 적재 (일회성)
 const backfillFrom = (process.env.BACKFILL_FROM || '').trim();
 // VOC 롤링 재집계 시작일 = min(오늘-14일, 백필시작일). 과거 설문에 뒤늦게 '확인+완료' 이모지 찍히면 반영.
-const VOC_LOOKBACK = 14;
+const VOC_LOOKBACK = 30;
 const defMinObj = new Date(Date.UTC(Y, M, D - VOC_LOOKBACK));
 const defMin = `${defMinObj.getUTCFullYear()}-${pad(defMinObj.getUTCMonth() + 1)}-${pad(defMinObj.getUTCDate())}`;
 const minDate = (backfillFrom && backfillFrom < defMin) ? backfillFrom : defMin;
@@ -299,8 +299,8 @@ async function tallyVoc(msgs, voc, channelId, opts) {
         const reps = await fetchReplies(channelId, m.ts);
         autoNote = cleanNote(reps.map(r => blocksText(r)).join(' / '));
       }
-      // 완료일: 이미 완료로 기록된 적 있으면 그 날짜 유지, 이번에 처음 완료되면 '오늘'로 적재
-      const doneDate = autoDone ? (prior.doneDate || opts.todayKstDate || '') : '';
+      // 완료일: 처음 완료된 날 유지, 이번에 처음 완료되면 '오늘'로 적재 (과거 설문도 오늘 이모지 찍으면 오늘자)
+      const doneDate = empVal ? (autoDone ? (prior.doneDate || opts.todayKstDate || '') : (opts.dayDate || '')) : '';
       voc.alerts.push({ time, store, storeId, industry, indBucket, install: isNaN(install) ? null : install, nps: isNaN(nps) ? null : nps, reasons,
         emp: empVal,
         autoStatus: autoDone ? '처리완료' : '', autoEmp: autoDone ? handler : '', autoNote, doneDate });
@@ -308,8 +308,11 @@ async function tallyVoc(msgs, voc, channelId, opts) {
 
     // 칭찬/일반 응답 적재: 저점이 아니면서 처리(담당자) 또는 칭찬 문구가 있는 건 (emp 있으면 '처리'로 집계됨)
     if (!reasons.length && (empVal || hasPraiseWord)) {
+      const pkey = (opts.dayDate || '') + '|' + (storeId || '') + '|' + time;
+      const pprior = (opts.priorMap || {})[pkey] || {};
+      const pdoneDate = empVal ? (autoDone ? (pprior.doneDate || opts.todayKstDate || '') : (opts.dayDate || '')) : '';
       const ptext = (installReason + ' ' + npsReason).trim() || allAns.slice(0, 100);
-      voc.praises.push({ time, store, storeId, indBucket, emp: empVal, install: isNaN(install) ? null : install, nps: isNaN(nps) ? null : nps, text: ptext, byReaction: !!empVal });
+      voc.praises.push({ time, store, storeId, indBucket, emp: empVal, install: isNaN(install) ? null : install, nps: isNaN(nps) ? null : nps, text: ptext, byReaction: !!empVal, doneDate: pdoneDate });
     }
   }
 }
@@ -354,7 +357,7 @@ async function tallyVoc(msgs, voc, channelId, opts) {
   if (vocCh) {
     // 이전 완료일/처리내용 보존용 맵 (완료일은 최초 완료된 날 유지)
     const priorMap = {};
-    for (const d in data.days) { const vv = data.days[d].voc; if (!vv) continue; for (const a of (vv.alerts || [])) { const k = d + '|' + (a.storeId || '') + '|' + (a.time || ''); priorMap[k] = { doneDate: a.doneDate || '', autoNote: a.autoNote || '' }; } }
+    for (const d in data.days) { const vv = data.days[d].voc; if (!vv) continue; for (const a of [...(vv.alerts || []), ...(vv.praises || [])]) { const k = d + '|' + (a.storeId || '') + '|' + (a.time || ''); priorMap[k] = { doneDate: a.doneDate || '', autoNote: a.autoNote || '' }; } }
     let wide = [];
     try { wide = await fetchAllRange(vocCh.id, oldestWide, latestBound); }
     catch (e) { console.error(`  ⚠ [VOC] 기간 읽기 실패(${e.message}) — VOC 재집계 생략`); }
