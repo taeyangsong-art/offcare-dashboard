@@ -31,8 +31,9 @@ function readBlob_() {
 }
 
 function json_(obj) {
-  return ContentService.createTextOutput(JSON.stringify(obj))
-    .setMimeType(ContentService.MimeType.JSON);
+  var out = ContentService.createTextOutput(JSON.stringify(obj));
+  out.setMimeType(ContentService.MimeType.JSON);
+  return out;
 }
 
 // 2단계 깊이 병합: patch = { section: { key: value|null } }. value===null 이면 그 key 삭제.
