@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 482,
+  "version": 483,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -26927,16 +26927,16 @@ window.SLACK_DATA = {
           "emp": "배선유"
         }
       ],
-      "updatedAt": "22:32",
+      "updatedAt": "23:11",
       "voc": {
-        "responses": 23,
+        "responses": 24,
         "install": {
           "count": 6,
           "low": 2
         },
         "nps": {
-          "count": 23,
-          "low": 8
+          "count": 24,
+          "low": 9
         },
         "high": {
           "install": 1,
@@ -26944,6 +26944,7 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "0": 1,
+          "1": 1,
           "3": 2,
           "4": 1,
           "5": 4,
@@ -26964,13 +26965,13 @@ window.SLACK_DATA = {
           "요식업": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 6,
+            "low": 1
+          },
           "12개월": {
             "total": 4,
             "low": 2
-          },
-          "6개월": {
-            "total": 5,
-            "low": 0
           },
           "1개월": {
             "total": 4,
@@ -26986,6 +26987,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SECTA9": {
+            "total": 3,
+            "low": 1
+          },
           "KSNET": {
             "total": 3,
             "low": 1
@@ -27005,19 +27010,37 @@ window.SLACK_DATA = {
           "SMARTRO": {
             "total": 2,
             "low": 1
-          },
-          "SECTA9": {
-            "total": 2,
-            "low": 0
           }
         },
         "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 3,
           "사용중 오류가 자주 발생함": 3,
           "단말기 설치나 초기 과정이 어려움": 4,
-          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
           "고객센터 연락이 매우 힘듦": 1
         },
         "alerts": [
+          {
+            "time": "23:11",
+            "store": "캐리비안회적",
+            "storeId": "321515",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "서비스 절차가 너무 함",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "18:35",
             "store": "언커먼무드",
