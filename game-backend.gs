@@ -103,9 +103,13 @@ function mergePatch_(base, patch) {
 }
 
 function doGet(e) {
-  var p = (e && e.parameter) || {};
-  if (p.action) { return handleAuth_(p); }
-  return json_({ game: readBlob_() });
+  try {
+    var p = (e && e.parameter) || {};
+    if (p.action) { return handleAuth_(p); }
+    return json_({ game: readBlob_() });
+  } catch (err) {
+    return json_({ ok: false, error: String(err) });
+  }
 }
 
 function doPost(e) {
