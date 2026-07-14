@@ -2777,11 +2777,6 @@ function renderShare(){
   const dmap=dutyMap();   // 회의별 원격 당번(순번 자동)
   const dutyUpcoming=meetingDutyList().filter(mm=>mm.date>=todayStr).slice(0,4).map(mm=>{ const k=mm.date+"|"+mm.time+"|"+mm.title; return {...mm, key:k, person:dutyPersonAt(k, dmap[k])}; });
 
-  // 이번 주 요약 카운트 (오늘이 속한 주)
-  const weekStart = startOfWeek(today());
-  const summary = {};
-  for(let i=0;i<7;i++){ const ds=ymd(addDays(weekStart,i)); (SHARE[ds]||[]).forEach(e=>{ summary[e.type]=(summary[e.type]||0)+1; }); }
-
   const dayCells = cells.map(d=>{
     if(d===null) return `<div class="daycell share empty"></div>`;
     const dateObj=new Date(y,m,d), ds=ymd(dateObj), dow=dateObj.getDay();
@@ -2826,13 +2821,6 @@ function renderShare(){
         <button class="btn primary" onclick="openShareForm('${ymd(today())}')">+ 일정 추가</button>
         <button class="btn" onclick="shareToday()">이번 달</button>
       </div>
-    </div>
-
-    <div class="kpis">
-      ${shareKpi("annual", summary.annual||0)}
-      ${shareKpi("half", (summary.half||0)+(summary.time||0), "반차·시간차")}
-      ${shareKpi("outside", (summary.outside||0)+(summary.edu||0), "외부·교육일정")}
-      ${shareKpi("meeting", summary.meeting||0)}
     </div>
 
     <div class="card">
