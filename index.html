@@ -223,6 +223,25 @@
   .ab-svg svg{display:block}
   .ab-facex{position:absolute; top:27%; left:0; right:0; text-align:center; font-size:30px; line-height:1;
     filter:drop-shadow(0 1px 1px rgba(0,0,0,.2)); pointer-events:none}
+  .pt-sw{display:inline-block; width:30px; height:30px; border-radius:50%; border:2px solid #fff; box-shadow:0 0 0 1px rgba(0,0,0,.15)}
+  .pt-sw.sq{border-radius:8px}
+  .pt-x{font-size:22px; color:#b8bcc4; font-weight:800}
+  .pt-mini{display:block}
+  .it-tip-part{display:flex; align-items:center; justify-content:center}
+  .it-tip-part .pt-sw{width:44px; height:44px}
+  .it-tip-part .pt-mini{width:70px; height:70px}
+  .avatar-secthead{display:flex; align-items:center; justify-content:space-between; gap:10px;
+    font-weight:800; font-size:15px; color:var(--gray); padding:8px 2px 2px}
+  .gender-pop{background:#fff; border-radius:22px; padding:26px 30px; text-align:center;
+    box-shadow:0 24px 60px rgba(0,0,0,.32); max-width:92vw}
+  .gp-title{font-size:20px; font-weight:800; margin-bottom:18px; color:var(--ink)}
+  .gp-opts{display:flex; gap:18px; justify-content:center}
+  .gp-card{border:2px solid #e5e5e5; border-radius:18px; padding:14px 20px; background:#fafafa;
+    cursor:pointer; transition:.15s; font-family:inherit}
+  .gp-card:hover{border-color:#6E3FE5; transform:translateY(-3px); box-shadow:0 10px 24px rgba(110,63,229,.2)}
+  .gp-av{pointer-events:none}
+  .gp-lb{font-size:16px; font-weight:800; margin-top:8px; color:var(--ink)}
+  .gp-note{font-size:12.5px; color:var(--gray); margin-top:16px}
   .ab-pet{position:absolute; bottom:14px; right:9px; font-size:31px; z-index:4;
     filter:drop-shadow(0 2px 3px rgba(0,0,0,.2)); animation:abFloat 2.4s ease-in-out infinite}
   .ab-platform{position:absolute; bottom:12px; width:74px; height:12px; border-radius:50%;
@@ -1342,8 +1361,79 @@ const GAME_ITEMS = {
     {id:'fn_tide',name:'해일',price:700,grad:'linear-gradient(90deg,#0aa5b1,#00f5d4,#0aa5b1)',rarity:'legendary',fishOnly:true},
   ],
   hat: [{id:'h_none',name:'없음',price:0,e:'',rarity:'common'},{id:'h_cap',name:'캡',price:30,e:'🧢',rarity:'common'},{id:'h_wizard',name:'마법사',price:110,e:'🧙',rarity:'rare'},{id:'h_crown',name:'왕관',price:200,e:'👑',rarity:'epic'},{id:'h_halo',name:'천사링',price:300,e:'😇',rarity:'legendary'},{id:'fh_bucket',name:'벙거지',price:60,e:'🎩',rarity:'common',fishOnly:true},{id:'fh_sailor',name:'선장모자',price:350,e:'⚓',rarity:'epic',fishOnly:true},{id:'h_straw',name:'밀짚모자',price:700,e:'👒',rarity:'mythic',fishOnly:true}],
-  face: [{id:'f_smile',name:'기본',price:0,e:'😀',rarity:'common'},{id:'f_cool',name:'쿨',price:30,e:'😎',rarity:'common'},{id:'f_robot',name:'로봇',price:90,e:'🤖',rarity:'rare'},{id:'f_star',name:'별눈',price:150,e:'🤩',rarity:'epic'},{id:'f_devil',name:'악마',price:180,e:'😈',rarity:'epic'}],
-  outfit: [{id:'o_none',name:'기본',price:0,e:'👕',rarity:'common'},{id:'o_suit',name:'정장',price:70,e:'🤵',rarity:'common'},{id:'o_ninja',name:'닌자',price:150,e:'🥷',rarity:'rare'},{id:'o_hero',name:'히어로',price:250,e:'🦸',rarity:'epic'},{id:'o_king',name:'왕',price:380,e:'🫅',rarity:'legendary'}],
+  skin: [
+    {id:'sk_light',name:'밝은',price:0,rarity:'common',col:'#ffe8cf',ln:'#e9c3a0'},
+    {id:'sk_normal',name:'보통',price:0,rarity:'common',col:'#ffe0bd',ln:'#eab98f'},
+    {id:'sk_tan',name:'태닝',price:40,rarity:'common',col:'#f0c48f',ln:'#d19a5c'},
+    {id:'sk_brown',name:'갈색',price:40,rarity:'common',col:'#c68642',ln:'#9c6428'},
+  ],
+  hair: [
+    {id:'h_short',name:'단발',price:0,rarity:'common',hs:'short'},
+    {id:'h_bang',name:'앞머리',price:30,rarity:'common',hs:'bang'},
+    {id:'h_spike',name:'스파이크',price:60,rarity:'rare',hs:'spike'},
+    {id:'h_bob',name:'보브',price:60,rarity:'rare',hs:'bob'},
+    {id:'h_long',name:'롱헤어',price:90,rarity:'epic',hs:'long'},
+    {id:'h_pony',name:'포니테일',price:120,rarity:'epic',hs:'ponytail'},
+  ],
+  dye: [
+    {id:'dy_brown',name:'브라운',price:0,rarity:'common',col:'#6b4a2b',hi:'#a07b4a',ln:'#4d3620'},
+    {id:'dy_black',name:'블랙',price:30,rarity:'common',col:'#332f2f',hi:'#5a5252',ln:'#232020'},
+    {id:'dy_blonde',name:'금발',price:60,rarity:'rare',col:'#e6b64c',hi:'#f5d98a',ln:'#b78e2e'},
+    {id:'dy_pink',name:'핑크',price:120,rarity:'epic',col:'#f47ea8',hi:'#ffb3ce',ln:'#d85c88'},
+    {id:'dy_blue',name:'블루',price:120,rarity:'epic',col:'#4f79c9',hi:'#8aa8e6',ln:'#375aa0'},
+    {id:'dy_silver',name:'실버',price:250,rarity:'legendary',col:'#c9cdd6',hi:'#eef0f4',ln:'#a3a8b3'},
+  ],
+  eyes: [
+    {id:'ey_basic',name:'기본',price:0,rarity:'common',es:'basic'},
+    {id:'ey_round',name:'동그란',price:40,rarity:'common',es:'round'},
+    {id:'ey_lash',name:'속눈썹',price:60,rarity:'rare',es:'lash'},
+    {id:'ey_sharp',name:'날카로운',price:80,rarity:'rare',es:'sharp'},
+    {id:'ey_heart',name:'하트눈',price:200,rarity:'epic',es:'heart'},
+  ],
+  brows: [
+    {id:'bw_basic',name:'기본',price:0,rarity:'common',bs:'basic'},
+    {id:'bw_thick',name:'진한',price:20,rarity:'common',bs:'thick'},
+    {id:'bw_thin',name:'얇은',price:20,rarity:'common',bs:'thin'},
+    {id:'bw_angry',name:'날렵',price:40,rarity:'rare',bs:'angry'},
+  ],
+  mouth: [
+    {id:'mo_smile',name:'미소',price:0,rarity:'common',ms:'smile'},
+    {id:'mo_grin',name:'활짝',price:30,rarity:'common',ms:'grin'},
+    {id:'mo_oh',name:'오!',price:30,rarity:'common',ms:'oh'},
+    {id:'mo_cat',name:'냐옹',price:40,rarity:'rare',ms:'cat'},
+    {id:'mo_cool',name:'시크',price:40,rarity:'rare',ms:'cool'},
+  ],
+  top: [
+    {id:'top_tee',name:'티셔츠',price:0,rarity:'common',ts:'tee',col:'#4a90e2'},
+    {id:'top_tee_pk',name:'핑크티',price:30,rarity:'common',ts:'tee',col:'#f47ea8'},
+    {id:'top_hood',name:'후드',price:80,rarity:'rare',ts:'hoodie',col:'#5a6b8c'},
+    {id:'top_suit',name:'정장',price:150,rarity:'rare',ts:'suit',col:'#2f3542'},
+    {id:'top_dress',name:'드레스',price:200,rarity:'epic',ts:'dress',col:'#e05a8a'},
+    {id:'top_armor',name:'갑옷',price:350,rarity:'legendary',ts:'armor',col:'#8a94a6'},
+  ],
+  pants: [
+    {id:'pt_pants',name:'바지',price:0,rarity:'common',ps:'pants',col:'#3a4a63'},
+    {id:'pt_jeans',name:'청바지',price:30,rarity:'common',ps:'pants',col:'#3f5c8a'},
+    {id:'pt_shorts',name:'반바지',price:40,rarity:'common',ps:'shorts',col:'#5a6b8c'},
+    {id:'pt_skirt',name:'치마',price:60,rarity:'rare',ps:'skirt',col:'#e05a8a'},
+  ],
+  shoes: [
+    {id:'sh_basic',name:'기본',price:0,rarity:'common',ss:'basic',col:'#5a3a24'},
+    {id:'sh_sneaker',name:'운동화',price:40,rarity:'common',ss:'sneaker',col:'#e05555'},
+    {id:'sh_boots',name:'부츠',price:80,rarity:'rare',ss:'boots',col:'#4a3020'},
+    {id:'sh_heels',name:'구두',price:80,rarity:'rare',ss:'heels',col:'#c0392b'},
+  ],
+  gloves: [
+    {id:'gl_none',name:'없음',price:0,rarity:'common',gs:'none'},
+    {id:'gl_basic',name:'장갑',price:40,rarity:'common',gs:'basic',col:'#3a4a63'},
+    {id:'gl_gaunt',name:'건틀릿',price:120,rarity:'epic',gs:'gauntlet',col:'#8a94a6'},
+  ],
+  cape: [
+    {id:'cp_none',name:'없음',price:0,rarity:'common',cs:'none'},
+    {id:'cp_red',name:'빨강망토',price:100,rarity:'rare',cs:'plain',col:'#c0392b'},
+    {id:'cp_blue',name:'파랑망토',price:100,rarity:'rare',cs:'plain',col:'#2f6fc0'},
+    {id:'cp_star',name:'별빛망토',price:300,rarity:'legendary',cs:'plain',col:'#5a3fb0'},
+  ],
   pet: [{id:'p_none',name:'없음',price:0,e:'',rarity:'common'},{id:'p_cat',name:'고양이',price:60,e:'🐱',rarity:'common'},{id:'p_dog',name:'강아지',price:60,e:'🐶',rarity:'common'},{id:'p_unicorn',name:'유니콘',price:300,e:'🦄',rarity:'epic'},{id:'p_dragon',name:'드래곤',price:450,e:'🐉',rarity:'legendary'},{id:'fp_fish',name:'물고기',price:60,e:'🐟',rarity:'common',fishOnly:true},{id:'fp_octopus',name:'문어',price:150,e:'🐙',rarity:'rare',fishOnly:true},{id:'fp_shark',name:'상어',price:350,e:'🦈',rarity:'epic',fishOnly:true},{id:'fp_turtle',name:'거북이',price:700,e:'🐢',rarity:'legendary',fishOnly:true},{id:'p_kraken',name:'크라켄',price:800,e:'🦑',rarity:'mythic',fishOnly:true},{id:'p_whale',name:'고래',price:800,e:'🐋',rarity:'mythic',fishOnly:true}],
 };
 const LS_GAME = "opcare_game_v1";
@@ -1358,68 +1448,133 @@ function owns(emp,cat,id){ const it=itemById(cat,id); if(it&&it.price===0) retur
 function partE(cat,id){ const it=itemById(cat,id); return it?(it.e||''):''; }
 function titleName(eq){ const t=itemById('title',(eq||{}).title); return t?t.name:''; }
 function nametagStyle(eq){ const n=itemById('nametag',(eq||{}).nametag); if(!n) return ''; if(n.grad) return `background:${n.grad};-webkit-background-clip:text;background-clip:text;color:transparent`; let s=''; if(n.color) s+=`color:${n.color};`; if(n.glow) s+=`text-shadow:0 0 8px ${n.glow};`; return s; }
-/* 오리지널 치비 캐릭터 — 메이플st 느낌의 매끈한 2D 아바타(저작권 무관 자체 제작).
-   부드러운 곡선 · 큰 반짝이는 눈 · 볼터치. faceEmoji 장착 시 얼굴은 이모지로 대체. */
-function pixelChar(faceEmoji, shirt){
-  const shirtCol = shirt || '#4a90e2';
-  const skin='#ffe0bd', skinLn='#eab98f', hair='#6b4a2b', hairHi='#a07b4a';
-  const face = faceEmoji ? '' : `
-    <g>
-      <ellipse cx="47" cy="59" rx="6.2" ry="8.2" fill="#3b2a20"/>
-      <ellipse cx="73" cy="59" rx="6.2" ry="8.2" fill="#3b2a20"/>
-      <circle cx="44.8" cy="55.5" r="2.6" fill="#fff"/>
-      <circle cx="70.8" cy="55.5" r="2.6" fill="#fff"/>
-      <circle cx="49" cy="62" r="1.3" fill="#fff" opacity=".85"/>
-      <circle cx="75" cy="62" r="1.3" fill="#fff" opacity=".85"/>
-    </g>
-    <path d="M40,47 Q47,43.5 54,47" stroke="#5a3f27" stroke-width="1.7" fill="none" stroke-linecap="round"/>
-    <path d="M66,47 Q73,43.5 80,47" stroke="#5a3f27" stroke-width="1.7" fill="none" stroke-linecap="round"/>
-    <ellipse cx="39" cy="67" rx="5.2" ry="3.1" fill="#ff9db0" opacity=".55"/>
-    <ellipse cx="81" cy="67" rx="5.2" ry="3.1" fill="#ff9db0" opacity=".55"/>
-    <path d="M53,70 Q60,76.5 67,70" stroke="#c86a5e" stroke-width="2.1" fill="none" stroke-linecap="round"/>`;
+/* ===== 오리지널 레이어드 아바타 (남/여 · 꾸미기 파츠, 저작권 무관 자체 제작 SVG) ===== */
+const AVATAR_CATS = ['skin','hair','dye','eyes','brows','mouth','top','pants','shoes','gloves','cape'];
+function eqItem(eq,cat,def){ return itemById(cat,(eq||{})[cat]) || itemById(cat,def); }
+// --- 파츠 렌더러 (viewBox 120x150 기준) ---
+function pCape(cs,col){ if(!cs||cs==='none') return '';
+  return `<path d="M40,88 Q60,82 80,88 L94,134 Q60,143 26,134 Z" fill="${col}"/><path d="M44,88 Q60,84 76,88 L76,96 Q60,92 44,96 Z" fill="#00000026"/>`; }
+function pHairBack(hs,col){ switch(hs){
+  case 'long': return `<ellipse cx="60" cy="53" rx="40" ry="40" fill="${col}"/><path d="M22,54 Q16,98 30,118 L41,114 Q33,84 37,58 Z" fill="${col}"/><path d="M98,54 Q104,98 90,118 L79,114 Q87,84 83,58 Z" fill="${col}"/>`;
+  case 'ponytail': return `<ellipse cx="60" cy="53" rx="39" ry="39" fill="${col}"/><path d="M86,34 Q112,40 104,76 Q99,98 85,90 Q97,66 80,48 Z" fill="${col}"/>`;
+  case 'bob': return `<ellipse cx="60" cy="54" rx="41" ry="40" fill="${col}"/><path d="M22,56 Q20,84 31,94 L41,90 Q34,72 36,58 Z" fill="${col}"/><path d="M98,56 Q100,84 89,94 L79,90 Q86,72 84,58 Z" fill="${col}"/>`;
+  default: return `<ellipse cx="60" cy="53" rx="39" ry="39" fill="${col}"/>`; } }
+function pHairFront(hs,col,hi){ const streak=`<path d="M40,25 Q52,18 65,23" stroke="${hi}" stroke-width="3" fill="none" stroke-linecap="round" opacity=".6"/>`;
+  switch(hs){
+  case 'spike': return `<path d="M26,52 L32,18 L41,40 L50,14 L60,36 L70,14 L79,40 L88,18 L94,52 Q60,40 26,52 Z" fill="${col}"/>`;
+  case 'bob':
+  case 'long': return `<path d="M26,54 C24,26 42,14 60,14 C78,14 96,26 94,54 Q82,46 63,47 L60,20 L57,47 Q38,46 26,54 Z" fill="${col}"/>${streak}`;
+  case 'ponytail': return `<path d="M27,53 C24,27 42,15 60,15 C78,15 96,27 93,53 Q84,44 70,47 L66,22 Q50,20 40,34 Q34,44 27,53 Z" fill="${col}"/>${streak}`;
+  case 'bang': return `<path d="M25,54 C23,25 42,13 60,13 C78,13 97,25 95,54 Q88,44 82,50 Q75,40 68,50 Q61,40 54,50 Q47,40 40,50 Q33,44 25,54 Z" fill="${col}"/>${streak}`;
+  default: return `<path d="M27,53 C24,27 42,15 60,15 C78,15 96,27 93,53 Q86,42 80,51 Q73,40 66,50 Q60,41 54,50 Q47,40 40,51 Q34,42 27,53 Z" fill="${col}"/>${streak}`; } }
+function pEyes(es){ const L=47,R=73,y=59;
+  const lash=(x,d)=>`<path d="M${x+d*6},${y-6} Q${x+d*9},${y-9} ${x+d*11},${y-7}" stroke="#2a2018" stroke-width="1.6" fill="none" stroke-linecap="round"/>`;
+  switch(es){
+  case 'round': return `<circle cx="${L}" cy="${y}" r="8.5" fill="#3b2a20"/><circle cx="${R}" cy="${y}" r="8.5" fill="#3b2a20"/><circle cx="${L-2.5}" cy="${y-3}" r="3" fill="#fff"/><circle cx="${R-2.5}" cy="${y-3}" r="3" fill="#fff"/>`;
+  case 'sharp': return `<path d="M${L-7},${y-2} Q${L},${y-6} ${L+7},${y-1} Q${L},${y+4} ${L-7},${y-2} Z" fill="#3b2a20"/><path d="M${R-7},${y-1} Q${R},${y-6} ${R+7},${y-2} Q${R},${y+4} ${R-7},${y-1} Z" fill="#3b2a20"/><circle cx="${L-1}" cy="${y-2}" r="1.8" fill="#fff"/><circle cx="${R+1}" cy="${y-2}" r="1.8" fill="#fff"/>`;
+  case 'lash': return `<ellipse cx="${L}" cy="${y}" rx="6.2" ry="8.2" fill="#3b2a20"/><ellipse cx="${R}" cy="${y}" rx="6.2" ry="8.2" fill="#3b2a20"/><circle cx="${L-2.2}" cy="${y-3.5}" r="2.6" fill="#fff"/><circle cx="${R-2.2}" cy="${y-3.5}" r="2.6" fill="#fff"/>${lash(L,-1)}${lash(R,1)}`;
+  case 'heart': return `<ellipse cx="${L}" cy="${y}" rx="6.5" ry="8.2" fill="#3b2a20"/><ellipse cx="${R}" cy="${y}" rx="6.5" ry="8.2" fill="#3b2a20"/><path d="M${L},${y+2} l-2.4,-2.8 a1.5,1.5 0 0 1 2.4,-0.2 a1.5,1.5 0 0 1 2.4,0.2 Z" fill="#ff5a8a"/><path d="M${R},${y+2} l-2.4,-2.8 a1.5,1.5 0 0 1 2.4,-0.2 a1.5,1.5 0 0 1 2.4,0.2 Z" fill="#ff5a8a"/>`;
+  default: return `<ellipse cx="${L}" cy="${y}" rx="6.2" ry="8.2" fill="#3b2a20"/><ellipse cx="${R}" cy="${y}" rx="6.2" ry="8.2" fill="#3b2a20"/><circle cx="${L-2.2}" cy="${y-3.5}" r="2.6" fill="#fff"/><circle cx="${R-2.2}" cy="${y-3.5}" r="2.6" fill="#fff"/><circle cx="${L+2}" cy="${y+3}" r="1.3" fill="#fff" opacity=".85"/><circle cx="${R+2}" cy="${y+3}" r="1.3" fill="#fff" opacity=".85"/>`; } }
+function pBrows(bs,col){ col=col||'#5a3f27'; const L='M40,47 Q47,43.5 54,47', R='M66,47 Q73,43.5 80,47';
+  switch(bs){
+  case 'thick': return `<path d="${L}" stroke="${col}" stroke-width="3.2" fill="none" stroke-linecap="round"/><path d="${R}" stroke="${col}" stroke-width="3.2" fill="none" stroke-linecap="round"/>`;
+  case 'thin': return `<path d="${L}" stroke="${col}" stroke-width="1.1" fill="none" stroke-linecap="round"/><path d="${R}" stroke="${col}" stroke-width="1.1" fill="none" stroke-linecap="round"/>`;
+  case 'angry': return `<path d="M40,45 L54,48.5" stroke="${col}" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M66,48.5 L80,45" stroke="${col}" stroke-width="2" fill="none" stroke-linecap="round"/>`;
+  default: return `<path d="${L}" stroke="${col}" stroke-width="1.8" fill="none" stroke-linecap="round"/><path d="${R}" stroke="${col}" stroke-width="1.8" fill="none" stroke-linecap="round"/>`; } }
+function pMouth(ms){ switch(ms){
+  case 'grin': return `<path d="M53,70 Q60,79 67,70 Z" fill="#c0392b"/><path d="M54,70.5 Q60,72 66,70.5 L66,71.6 Q60,71 54,71.6 Z" fill="#fff"/>`;
+  case 'cat': return `<path d="M53,71 Q56.5,74 60,71 Q63.5,74 67,71" stroke="#c86a5e" stroke-width="2" fill="none" stroke-linecap="round"/>`;
+  case 'cool': return `<path d="M55,72 L65,72" stroke="#c86a5e" stroke-width="2" fill="none" stroke-linecap="round"/>`;
+  case 'oh': return `<ellipse cx="60" cy="72" rx="3" ry="3.6" fill="#c0392b"/>`;
+  default: return `<path d="M53,70 Q60,76.5 67,70" stroke="#c86a5e" stroke-width="2.1" fill="none" stroke-linecap="round"/>`; } }
+function pTop(ts,col){ const sleeve=`<path d="M44,91 Q31,95 31,108" stroke="${col}" stroke-width="9.5" fill="none" stroke-linecap="round"/><path d="M76,91 Q89,95 89,108" stroke="${col}" stroke-width="9.5" fill="none" stroke-linecap="round"/>`;
+  const body=`<path d="M41,89 Q60,82 79,89 L83,117 Q60,123 37,117 Z" fill="${col}" stroke="#0000001c" stroke-width="1"/>`;
+  switch(ts){
+  case 'dress': return `${sleeve}<path d="M41,89 Q60,82 79,89 L92,131 Q60,139 28,131 Z" fill="${col}" stroke="#0000001c" stroke-width="1"/><path d="M52,86 Q60,93 68,86" stroke="#00000022" stroke-width="2" fill="none" stroke-linecap="round"/>`;
+  case 'hoodie': return `${sleeve}${body}<path d="M50,86 Q60,96 70,86 Q66,92 60,92 Q54,92 50,86 Z" fill="#00000026"/><rect x="50" y="104" width="20" height="9" rx="3" fill="#00000018"/><path d="M57,92 L57,100 M63,92 L63,100" stroke="#ffffff88" stroke-width="1.4"/>`;
+  case 'suit': return `${sleeve}${body}<path d="M60,86 L52,90 L58,105 Z" fill="#fff"/><path d="M60,86 L68,90 L62,105 Z" fill="#fff"/><path d="M60,88 L57,98 L60,109 L63,98 Z" fill="#c0392b"/>`;
+  case 'armor': return `${sleeve}${body}<ellipse cx="43" cy="92" rx="8" ry="6" fill="${col}" stroke="#0000002c"/><ellipse cx="77" cy="92" rx="8" ry="6" fill="${col}" stroke="#0000002c"/><path d="M60,90 L60,116 M48,101 L72,101" stroke="#ffffff55" stroke-width="1.6"/>`;
+  default: return `${sleeve}${body}<path d="M52,86 Q60,93 68,86" stroke="#00000022" stroke-width="2" fill="none" stroke-linecap="round"/>`; } }
+function pPants(ps,col,skin){ switch(ps){
+  case 'skirt': return `<path d="M40,112 L80,112 L86,124 Q60,130 34,124 Z" fill="${col}"/><rect x="49" y="122" width="8" height="13" rx="4" fill="${skin}"/><rect x="63" y="122" width="8" height="13" rx="4" fill="${skin}"/>`;
+  case 'shorts': return `<rect x="46.5" y="107" width="11" height="14" rx="4" fill="${col}"/><rect x="62.5" y="107" width="11" height="14" rx="4" fill="${col}"/><rect x="48" y="120" width="8" height="14" rx="4" fill="${skin}"/><rect x="64" y="120" width="8" height="14" rx="4" fill="${skin}"/>`;
+  default: return `<rect x="47" y="107" width="10.5" height="27" rx="5.2" fill="${col}"/><rect x="62.5" y="107" width="10.5" height="27" rx="5.2" fill="${col}"/>`; } }
+function pShoes(ss,col){ switch(ss){
+  case 'boots': return `<rect x="45" y="124" width="12" height="12" rx="3" fill="${col}"/><rect x="63" y="124" width="12" height="12" rx="3" fill="${col}"/><ellipse cx="51" cy="137" rx="9" ry="4" fill="${col}"/><ellipse cx="69" cy="137" rx="9" ry="4" fill="${col}"/>`;
+  case 'sneaker': return `<ellipse cx="50" cy="135" rx="9.5" ry="5.5" fill="${col}"/><ellipse cx="70" cy="135" rx="9.5" ry="5.5" fill="${col}"/><ellipse cx="50" cy="137.5" rx="9.5" ry="2.5" fill="#fff"/><ellipse cx="70" cy="137.5" rx="9.5" ry="2.5" fill="#fff"/>`;
+  case 'heels': return `<path d="M43,132 L57,132 L55,137 L46,137 Z" fill="${col}"/><path d="M63,132 L77,132 L74,137 L65,137 Z" fill="${col}"/>`;
+  default: return `<ellipse cx="50" cy="136" rx="9" ry="5.2" fill="${col}"/><ellipse cx="70" cy="136" rx="9" ry="5.2" fill="${col}"/>`; } }
+function pGloves(gsr,col,skin){ if(gsr==='gauntlet') return `<rect x="25.5" y="103" width="11" height="12" rx="4" fill="${col}"/><rect x="83.5" y="103" width="11" height="12" rx="4" fill="${col}"/>`;
+  const c=(gsr&&gsr!=='none')?col:skin; return `<circle cx="31" cy="108" r="5.6" fill="${c}"/><circle cx="89" cy="108" r="5.6" fill="${c}"/>`; }
+function charSvg(eq, gender){ eq=eq||{}; const g=gender||'m';
+  const sk=eqItem(eq,'skin','sk_normal'), dy=eqItem(eq,'dye','dy_brown');
+  const ha=eqItem(eq,'hair', g==='f'?'h_long':'h_short'), ey=eqItem(eq,'eyes', g==='f'?'ey_lash':'ey_basic');
+  const bw=eqItem(eq,'brows','bw_basic'), mo=eqItem(eq,'mouth','mo_smile');
+  const tp=eqItem(eq,'top','top_tee'), pt=eqItem(eq,'pants','pt_pants');
+  const gl=eqItem(eq,'gloves','gl_none'), cp=eqItem(eq,'cape','cp_none'), sh=eqItem(eq,'shoes','sh_basic');
+  const skin=sk.col, skinLn=sk.ln, hairCol=dy.col, hairHi=dy.hi, browCol=dy.ln||'#5a3f27';
+  const legs = tp.ts==='dress' ? '' : pPants(pt.ps, pt.col, skin);
   return `<div class="ab-svg"><svg width="94" height="118" viewBox="0 0 120 150">
-    <ellipse cx="60" cy="53" rx="40" ry="40" fill="${hair}"/>
-    <rect x="47" y="107" width="10.5" height="27" rx="5.2" fill="#3a4a63"/>
-    <rect x="62.5" y="107" width="10.5" height="27" rx="5.2" fill="#3a4a63"/>
-    <ellipse cx="50" cy="136" rx="9" ry="5.2" fill="#5a3a24"/>
-    <ellipse cx="70" cy="136" rx="9" ry="5.2" fill="#5a3a24"/>
-    <path d="M44,91 Q31,95 31,107" stroke="${shirtCol}" stroke-width="9.5" fill="none" stroke-linecap="round"/>
-    <path d="M76,91 Q89,95 89,107" stroke="${shirtCol}" stroke-width="9.5" fill="none" stroke-linecap="round"/>
-    <circle cx="31" cy="109" r="5.6" fill="${skin}"/>
-    <circle cx="89" cy="109" r="5.6" fill="${skin}"/>
-    <path d="M41,89 Q60,82 79,89 L83,117 Q60,123 37,117 Z" fill="${shirtCol}" stroke="#0000001f" stroke-width="1"/>
-    <path d="M52,86 Q60,93 68,86" stroke="#00000022" stroke-width="2" fill="none" stroke-linecap="round"/>
+    ${pCape(cp.cs, cp.col)}
+    ${legs}
+    ${pShoes(sh.ss, sh.col)}
+    ${pTop(tp.ts, tp.col)}
+    ${pGloves(gl.gs, gl.col, skin)}
     <rect x="54" y="76" width="12" height="10" rx="3.5" fill="${skin}"/>
+    ${pHairBack(ha.hs, hairCol)}
     <ellipse cx="60" cy="56" rx="33" ry="31" fill="${skin}" stroke="${skinLn}" stroke-width="1.4"/>
     <ellipse cx="28" cy="59" rx="4.2" ry="6" fill="${skin}" stroke="${skinLn}" stroke-width="1"/>
     <ellipse cx="92" cy="59" rx="4.2" ry="6" fill="${skin}" stroke="${skinLn}" stroke-width="1"/>
-    ${face}
-    <path d="M27,53 C24,27 42,15 60,15 C78,15 96,27 93,53 Q86,42 80,51 Q73,40 66,50 Q60,41 54,50 Q47,40 40,51 Q34,42 27,53 Z" fill="${hair}"/>
-    <path d="M39,25 Q52,18 65,23" stroke="${hairHi}" stroke-width="3" fill="none" stroke-linecap="round" opacity=".7"/>
-  </svg>${faceEmoji?`<span class="ab-facex">${faceEmoji}</span>`:''}</div>`;
+    <ellipse cx="39" cy="67" rx="5.2" ry="3.1" fill="#ff9db0" opacity=".5"/>
+    <ellipse cx="81" cy="67" rx="5.2" ry="3.1" fill="#ff9db0" opacity=".5"/>
+    ${pEyes(ey.es)}
+    ${pBrows(bw.bs, browCol)}
+    ${pMouth(mo.ms)}
+    ${pHairFront(ha.hs, hairCol, hairHi)}
+  </svg></div>`;
 }
-function avatarBig(eq){ eq=eq||{};
+function avatarBig(eq, gender){ eq=eq||{};
   const hat=partE('hat',eq.hat), pet=partE('pet',eq.pet);
-  const faceIt=itemById('face',eq.face), outfitIt=itemById('outfit',eq.outfit);
-  const faceCustom = (faceIt && faceIt.id!=='f_smile') ? faceIt.e : '';       // 기본(😀) 외 표정만 오버레이
-  const outfitCustom = (outfitIt && outfitIt.id!=='o_none') ? outfitIt.e : ''; // 구매 의상(전신 이모지) 착용 여부
-  const charInner = outfitCustom
-    ? `<div class="ab-face">${faceCustom||'😀'}</div><div class="ab-body">${outfitCustom}</div>`  // 구매 의상 → 기존 이모지 캐릭터
-    : pixelChar(faceCustom);                                                                        // 기본 → 오리지널 도트 캐릭터
   return `<div class="avatar-big">
     <div class="ab-glow"></div>
     <div class="ab-sparkle s1">✨</div><div class="ab-sparkle s2">⭐</div><div class="ab-sparkle s3">✨</div>
     <div class="ab-platform"></div>
-    <div class="ab-char">${hat?`<div class="ab-hat">${hat}</div>`:''}${charInner}</div>
+    <div class="ab-char">${hat?`<div class="ab-hat">${hat}</div>`:''}${charSvg(eq, gender)}</div>
     ${pet?`<div class="ab-pet">${pet}</div>`:''}
   </div>`;
 }
+// 상점 카드용 미니 썸네일
+function miniPart(cat,it){
+  if(cat==='skin'||cat==='dye') return `<span class="pt-sw" style="background:${it.col}"></span>`;
+  if(['top','pants','shoes','gloves','cape'].includes(cat)){
+    if(it.gs==='none'||it.cs==='none') return `<span class="pt-x">✕</span>`;
+    return `<span class="pt-sw sq" style="background:${it.col}"></span>`;
+  }
+  return `<svg class="pt-mini" width="46" height="46" viewBox="20 8 80 80">${miniFeature(cat,it)}</svg>`;
+}
+function miniFeature(cat,it){ const head=`<ellipse cx="60" cy="56" rx="26" ry="25" fill="#ffe0bd"/>`;
+  if(cat==='hair') return `${head}${pHairBack(it.hs,'#6b4a2b')}<ellipse cx="60" cy="56" rx="26" ry="25" fill="#ffe0bd"/>${pHairFront(it.hs,'#6b4a2b','#a07b4a')}`;
+  if(cat==='eyes') return `${head}${pEyes(it.es)}`;
+  if(cat==='brows') return `${head}${pEyes('basic')}${pBrows(it.bs,'#5a3f27')}`;
+  if(cat==='mouth') return `${head}${pMouth(it.ms)}`;
+  return ''; }
+// 성별 선택
+function chooseGender(g){ const emp=gameMe; if(!emp) return; gs(emp).gender=g; saveGame(); const o=document.getElementById('genderPop'); if(o) o.remove(); renderGame(); }
+function genderModal(){ return `<div id="genderPop" class="duty-pop-overlay"><div class="gender-pop">
+    <div class="gp-title">캐릭터를 선택하세요 🎮</div>
+    <div class="gp-opts">
+      <button class="gp-card" onclick="chooseGender('m')"><div class="gp-av">${charSvg({}, 'm')}</div><div class="gp-lb">👦 남자</div></button>
+      <button class="gp-card" onclick="chooseGender('f')"><div class="gp-av">${charSvg({}, 'f')}</div><div class="gp-lb">👧 여자</div></button>
+    </div>
+    <div class="gp-note">나중에 상점에서 언제든 바꿀 수 있어요</div>
+  </div></div>`; }
+function showGenderModal(){ if(!gameMe) return; const o=document.getElementById('genderPop'); if(o) o.remove(); document.body.insertAdjacentHTML('beforeend', genderModal()); }
 // 타이틀 등급별 폰트색·후광
 function titleStyleOf(t){ if(!t) return ''; if(t.grad) return `background:${t.grad};-webkit-background-clip:text;background-clip:text;color:transparent`; const map={common:'color:#6b7280',rare:'color:#1a73e8;text-shadow:0 0 6px rgba(26,115,232,.55)',epic:'color:#9c36b5;text-shadow:0 0 8px rgba(156,54,181,.6)',legendary:'color:#e8820a;text-shadow:0 0 10px rgba(232,130,10,.8)'}; return map[t.rarity]||map.common; }
 function titleStyle(eq){ return titleStyleOf(itemById('title',(eq||{}).title)); }
 // 내 캐릭터 카드 내부(미리보기 시 이 부분만 교체)
 function gameMeInner(emp, eq){ const t=itemById('title',(eq||{}).title);
-  return `${avatarBig(eq)}
+  return `${avatarBig(eq, (GAME[emp]||{}).gender)}
     <div class="gm-right">
       ${t?`<div class="gm-title tr-${t.rarity}" style="${titleStyleOf(t)}">[${escapeHtml(t.name)}]</div>`:''}
       <div class="gm-name" style="${nametagStyle(eq)}">${escapeHtml(emp)}</div>
@@ -1430,10 +1585,11 @@ function gameMeInner(emp, eq){ const t=itemById('title',(eq||{}).title);
 function previewEq(cat,id){ const emp=gameMe; if(!emp) return; const eq=Object.assign({},(gs(emp).equipped||{})); eq[cat]=id; const box=document.getElementById('gmBox'); if(box){ box.innerHTML=gameMeInner(emp,eq); box.classList.add('previewing'); } }
 function clearPreview(){ const emp=gameMe; if(!emp) return; const box=document.getElementById('gmBox'); if(box){ box.innerHTML=gameMeInner(emp,(gs(emp).equipped||{})); box.classList.remove('previewing'); } }
 // 🔍 아이템 마우스오버 → 그 자리에 미리보기 팝업
-const CAT_LABEL={title:'타이틀',nametag:'네임택',hat:'모자',face:'얼굴',outfit:'의상',pet:'펫'};
+const CAT_LABEL={title:'타이틀',nametag:'네임택',hat:'모자',pet:'펫',skin:'피부',hair:'헤어',dye:'염색',eyes:'눈',brows:'눈썹',mouth:'입',top:'상의',pants:'하의',shoes:'신발',gloves:'장갑',cape:'망토'};
 function itemTipHTML(cat,id){ const it=itemById(cat,id); if(!it) return ''; const r=it.rarity||'common';
   let big; if(cat==='title') big=`<span class="tr-${r}" style="${titleStyleOf(it)};font-size:24px;font-weight:800">[${escapeHtml(it.name)}]</span>`;
   else if(cat==='nametag') big=`<span style="${nametagStyle({nametag:id})};font-size:24px;font-weight:800">홍길동</span>`;
+  else if(AVATAR_CATS.includes(cat)) big=`<div class="it-tip-part">${miniPart(cat,it)}</div>`;
   else big=`<div style="font-size:52px;line-height:1">${it.e||'✕'}</div>`;
   const owned=gameMe?owns(gameMe,cat,id):false;
   return `<div class="it-tip-inner" style="--rar:${RARITY[r]}">
@@ -1530,7 +1686,8 @@ async function buyOrEquip(cat,id){
 function unequipPart(cat){ const emp=gameMe; if(!emp) return; const g=gs(emp); if(g.equipped) delete g.equipped[cat]; saveGame(); renderGame(); }
 function shopCard(cat,it,emp){
   const eq=(gs(emp).equipped||{})[cat]===it.id, owned=owns(emp,cat,it.id), r=it.rarity||'common';
-  const disp = it.e!==undefined ? (it.e||'✕')
+  const disp = AVATAR_CATS.includes(cat) ? miniPart(cat,it)
+    : it.e!==undefined ? (it.e||'✕')
     : (cat==='nametag' ? `<span style="${nametagStyle({nametag:it.id})}">가나</span>`
     : `<span class="tr-${r}" style="${titleStyleOf(it)}">[${escapeHtml(it.name)}]</span>`);
   return `<div class="shop-item ${eq?'equipped':''}" style="--rar:${RARITY[r]}" onmouseenter="previewEq('${cat}','${it.id}');showItemTip(event,'${cat}','${it.id}')" onmousemove="moveItemTip(event)" onmouseleave="clearPreview();hideItemTip()">
@@ -1540,7 +1697,7 @@ function shopCard(cat,it,emp){
     <button class="si-buy ${eq?'on':owned?'own':''}" onclick="buyOrEquip('${cat}','${it.id}')">${eq?'✓ 착용중':owned?'착용하기':(it.price===0?'착용':'🪙 '+it.price)}</button>
   </div>`;
 }
-function shopSection(cat,label,emp){ const canoff=['hat','face','outfit','pet'].includes(cat); const list=GAME_ITEMS[cat].filter(it=>!it.fishOnly||owns(emp,cat,it.id)); return `<div class="card"><div class="card-head"><h3>${label}</h3>${canoff?`<button class="btn" onclick="unequipPart('${cat}')">해제</button>`:''}</div><div class="shop-grid">${list.map(it=>shopCard(cat,it,emp)).join('')}</div></div>`; }
+function shopSection(cat,label,emp){ const canoff=['hat','pet','cape','gloves'].includes(cat); const list=GAME_ITEMS[cat].filter(it=>!it.fishOnly||owns(emp,cat,it.id)); return `<div class="card"><div class="card-head"><h3>${label}</h3>${canoff?`<button class="btn" onclick="unequipPart('${cat}')">해제</button>`:''}</div><div class="shop-grid">${list.map(it=>shopCard(cat,it,emp)).join('')}</div></div>`; }
 function renderGame(){
   const opts=EMPLOYEES.map(e=>`<option ${e===gameMe?'selected':''}>${e}</option>`).join('');
   let body;
@@ -1552,10 +1709,19 @@ function renderGame(){
     <div class="preview-hint">💡 아이템에 마우스를 올리면 위 캐릭터에 <b>미리 입어보기</b> 돼요 · 코인은 왼쪽 <b>🎣 낚시터</b>에서도 획득!</div>
     ${shopSection('title','👑 타이틀',emp)}
     ${shopSection('nametag','🏷️ 네임택',emp)}
-    <div class="grid2"><div style="grid-column:1/-1;font-weight:800;font-size:15px;color:var(--gray);padding:4px 2px">🧙 아바타 꾸미기</div></div>
+    <div class="avatar-secthead"><span>🧙 아바타 꾸미기</span><button class="btn" onclick="showGenderModal()">${(g.gender==='f'?'👧 여자':'👦 남자')} · 성별 바꾸기</button></div>
+    ${shopSection('skin','🎨 피부',emp)}
+    ${shopSection('hair','💇 헤어',emp)}
+    ${shopSection('dye','🌈 염색',emp)}
+    ${shopSection('eyes','👀 눈',emp)}
+    ${shopSection('brows','✏️ 눈썹',emp)}
+    ${shopSection('mouth','👄 입',emp)}
+    ${shopSection('top','👕 상의',emp)}
+    ${shopSection('pants','👖 하의',emp)}
+    ${shopSection('shoes','👟 신발',emp)}
+    ${shopSection('gloves','🧤 장갑',emp)}
+    ${shopSection('cape','🦸 망토',emp)}
     ${shopSection('hat','🎩 모자',emp)}
-    ${shopSection('face','😀 얼굴',emp)}
-    ${shopSection('outfit','👕 의상',emp)}
     ${shopSection('pet','🐾 펫',emp)}`;
   }
   document.getElementById("main").innerHTML=`
@@ -1563,6 +1729,7 @@ function renderGame(){
       <div class="controls"><select class="sel" onchange="setGameMe(this.value)"><option value="">👤 본인 선택</option>${opts}</select><button class="btn" onclick="adminResetPin()" title="관리자: 직원 PIN 초기화">🔧 PIN 초기화</button></div>
     </div>
     ${body}`;
+  if(gameMe && GAME[gameMe] && !GAME[gameMe].gender) showGenderModal();
 }
 /* ===== 🎣 낚시터 (가챠) ===== */
 const FISH = {
@@ -1579,7 +1746,7 @@ function randInt(a,b){ return a+Math.floor(Math.random()*(b-a+1)); }
 function pickCoinAmount(){ const T=[{w:50000,a:1,b:5},{w:25000,a:6,b:20},{w:15000,a:21,b:80},{w:7000,a:81,b:200},{w:2500,a:201,b:500},{w:490,a:501,b:999},{w:1,a:1000,b:1000}]; const tot=T.reduce((s,t)=>s+t.w,0); let r=Math.random()*tot; for(const t of T){ if((r-=t.w)<0) return randInt(t.a,t.b); } return 1; }
 function rollLoot(loot){ const tot=loot.reduce((a,x)=>a+x.w,0); let r=Math.random()*tot; for(const x of loot){ if((r-=x.w)<0) return x; } return loot[loot.length-1]; }
 function pickItem(rars, fishOnly){ const pool=[]; for(const cat in GAME_ITEMS){ for(const it of GAME_ITEMS[cat]){ if(it.price===0) continue; if(!rars.includes(it.rarity)) continue; if(fishOnly && !it.fishOnly) continue; if(!fishOnly && it.fishOnly) continue; pool.push(Object.assign({cat},it)); } } return pool.length?pool[Math.floor(Math.random()*pool.length)]:null; }
-const CAT_KO={title:'타이틀',nametag:'네임택',hat:'모자',face:'얼굴',outfit:'의상',pet:'펫'};
+const CAT_KO={title:'타이틀',nametag:'네임택',hat:'모자',pet:'펫',skin:'피부',hair:'헤어',dye:'염색',eyes:'눈',brows:'눈썹',mouth:'입',top:'상의',pants:'하의',shoes:'신발',gloves:'장갑',cape:'망토'};
 function resolveLoot(emp,out){ const g=gs(emp);
   if(out.t==='none') return {emoji:'🐚',big:'꽝!',sub:'빈 낚싯대... 다음 기회에!',cls:'miss'};
   if(out.t==='coin'){ const n = out.big ? pickCoinAmount() : randInt(out.min,out.max); g.spent=(g.spent||0)-n;
