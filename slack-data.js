@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 428,
+  "version": 429,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -27398,10 +27398,10 @@ window.SLACK_DATA = {
     "2026-07-14": {
       "counts": {
         "as": {
-          "심성현": 2,
-          "김현기": 2,
-          "김동욱": 1,
-          "배선유": 2
+          "김동욱": 3,
+          "배선유": 3,
+          "심성현": 3,
+          "김현기": 3
         },
         "onboarding": {
           "김동욱": 1
@@ -27411,8 +27411,74 @@ window.SLACK_DATA = {
           "김동욱": 3
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "10:13",
+          "store": "그라츠커피랩",
+          "biz": "1170988097",
+          "handler": "심성현",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "10:06",
+          "store": "황토골",
+          "biz": "2722101273",
+          "handler": "송태양",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "10:05",
+          "store": "유한상사 호돌이푸드",
+          "biz": "2158786329",
+          "handler": "배선유",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "done": [
+        {
+          "time": "10:08",
+          "store": "빠흐 오피스 (PAR OFFICE)",
+          "biz": "4205101092",
+          "cat": "as",
+          "emp": "김동욱"
+        },
+        {
+          "time": "10:07",
+          "store": "플러스마이너스밀크티카페 삼척점",
+          "biz": "8701902414",
+          "cat": "as",
+          "emp": "배선유"
+        },
+        {
+          "time": "10:04",
+          "store": "돌담",
+          "biz": "4161085260",
+          "cat": "as",
+          "emp": "심성현"
+        },
+        {
+          "time": "10:00",
+          "store": "안목",
+          "biz": "4430703178",
+          "cat": "as",
+          "emp": "김현기"
+        },
+        {
+          "time": "10:00",
+          "store": "주식회사 에이티식스컴퍼니",
+          "biz": "5328701749",
+          "cat": "as",
+          "emp": "김동욱"
+        },
         {
           "time": "09:49",
           "store": "헤어로와",
@@ -27512,7 +27578,7 @@ window.SLACK_DATA = {
           "emp": "배선유"
         }
       ],
-      "updatedAt": "10:00",
+      "updatedAt": "10:15",
       "voc": {
         "responses": 2,
         "install": {
