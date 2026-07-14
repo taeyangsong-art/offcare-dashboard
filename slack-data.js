@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 448,
+  "version": 449,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -25465,14 +25465,14 @@ window.SLACK_DATA = {
     "2026-07-14": {
       "counts": {
         "as": {
+          "김동욱": 17,
+          "김현기": 14,
           "최민석": 1,
           "서상원": 1,
-          "심성현": 18,
+          "심성현": 19,
+          "배선유": 13,
           "송태양": 5,
-          "김동욱": 14,
-          "김현기": 13,
           "김규빈": 6,
-          "배선유": 12,
           "김기범": 2
         },
         "onboarding": {
@@ -25482,8 +25482,8 @@ window.SLACK_DATA = {
           "김동욱": 1
         },
         "transfer": {
-          "김동욱": 3,
-          "송태양": 5
+          "송태양": 7,
+          "김동욱": 3
         },
         "menu": {
           "배선유": 9,
@@ -25496,29 +25496,9 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "14:58",
-          "store": "꽃처럼",
-          "biz": "2210825661",
-          "handler": "김동욱",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "14:49",
-          "store": "뉴에스제이아쿠아",
-          "biz": "6418703769",
-          "handler": "심성현",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "14:40",
-          "store": "짬뽕애호가",
-          "biz": "3225000958",
+          "time": "15:13",
+          "store": "카츠쇼우",
+          "biz": "7010103989",
           "handler": "배선유",
           "cat": "as",
           "reasons": [
@@ -25526,11 +25506,11 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "14:30",
-          "store": "주식회사 파티오히터",
-          "biz": "4158603862",
-          "handler": "송태양",
-          "cat": "transfer",
+          "time": "15:08",
+          "store": "강창구찹쌀진순대(이천1호점)",
+          "biz": "2490301866",
+          "handler": "심성현",
+          "cat": "as",
           "reasons": [
             "확인 후 미완료"
           ]
@@ -25548,6 +25528,34 @@ window.SLACK_DATA = {
       ],
       "done": [
         {
+          "time": "15:02",
+          "store": "카페오누",
+          "biz": "7040902248",
+          "cat": "as",
+          "emp": "김동욱"
+        },
+        {
+          "time": "15:01",
+          "store": "발레보발레학원",
+          "biz": "4119961031",
+          "cat": "as",
+          "emp": "김현기"
+        },
+        {
+          "time": "15:00",
+          "store": "다쏜다 원모바일",
+          "biz": "1446500857",
+          "cat": "as",
+          "emp": "김동욱"
+        },
+        {
+          "time": "14:58",
+          "store": "꽃처럼",
+          "biz": "2210825661",
+          "cat": "as",
+          "emp": "김동욱"
+        },
+        {
           "time": "14:55",
           "store": "레브빈뮤직스튜디오음악교습소",
           "biz": "8179101569",
@@ -25562,11 +25570,25 @@ window.SLACK_DATA = {
           "emp": "서상원"
         },
         {
+          "time": "14:49",
+          "store": "뉴에스제이아쿠아",
+          "biz": "6418703769",
+          "cat": "as",
+          "emp": "심성현"
+        },
+        {
           "time": "14:41",
           "store": "장군갈비",
           "biz": "2061380015",
           "cat": "as",
           "emp": "심성현"
+        },
+        {
+          "time": "14:40",
+          "store": "짬뽕애호가",
+          "biz": "3225000958",
+          "cat": "as",
+          "emp": "배선유"
         },
         {
           "time": "14:39",
@@ -25588,6 +25610,20 @@ window.SLACK_DATA = {
           "biz": "4949801822",
           "cat": "as",
           "emp": "김동욱"
+        },
+        {
+          "time": "14:30",
+          "store": "주식회사 파티오히터",
+          "biz": "4158603862",
+          "cat": "transfer",
+          "emp": "송태양"
+        },
+        {
+          "time": "14:30",
+          "store": "앙소레 스트링 뮤직",
+          "biz": "6573701058",
+          "cat": "transfer",
+          "emp": "송태양"
         },
         {
           "time": "14:28",
@@ -26255,25 +26291,27 @@ window.SLACK_DATA = {
           "emp": "배선유"
         }
       ],
-      "updatedAt": "15:00",
+      "updatedAt": "15:14",
       "voc": {
-        "responses": 3,
+        "responses": 9,
         "install": {
           "count": 1,
           "low": 1
         },
         "nps": {
-          "count": 3,
-          "low": 1
+          "count": 9,
+          "low": 3
         },
         "high": {
           "install": 0,
-          "nps": 1
+          "nps": 4
         },
         "npsDist": {
-          "3": 1,
+          "3": 2,
+          "5": 1,
           "8": 1,
-          "10": 1
+          "9": 1,
+          "10": 4
         },
         "installDist": {
           "1": 1
@@ -26282,34 +26320,96 @@ window.SLACK_DATA = {
           "요식업": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 3,
+            "low": 2
+          },
+          "6개월": {
+            "total": 2,
+            "low": 0
+          },
+          "1개월": {
+            "total": 3,
+            "low": 0
+          },
           "구매설치": {
             "total": 1,
             "low": 1
-          },
-          "1개월": {
-            "total": 2,
-            "low": 0
           }
         },
         "byVan": {
-          "KIS": {
-            "total": 1,
-            "low": 1
-          },
           "SECTA9": {
-            "total": 1,
+            "total": 2,
             "low": 0
           },
           "KPN": {
+            "total": 2,
+            "low": 1
+          },
+          "KIS": {
+            "total": 3,
+            "low": 2
+          },
+          "SMARTRO": {
+            "total": 1,
+            "low": 0
+          },
+          "DAOU": {
             "total": 1,
             "low": 0
           }
         },
         "reasonCounts": {
+          "고객센터 연락이 매우 힘듦": 1,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "사용중 오류가 자주 발생함": 1,
           "단말기 설치나 초기 과정이 어려움": 1
         },
         "alerts": [
+          {
+            "time": "15:14",
+            "store": "단지분식",
+            "storeId": "433282",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "문의남겻는데 처리 안해쥼",
+                "cat": "고객센터 연락이 매우 힘듦"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:14",
+            "store": "장인화삼겹",
+            "storeId": "439235",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "쿠팡이츠 요기요 자동주문접수 만들어주세요",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "10:19",
             "store": "오늘도 초밥",
