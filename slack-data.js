@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 436,
+  "version": 437,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -25465,10 +25465,10 @@ window.SLACK_DATA = {
     "2026-07-14": {
       "counts": {
         "as": {
-          "심성현": 11,
-          "김동욱": 8,
+          "김현기": 8,
+          "심성현": 13,
+          "김동욱": 9,
           "배선유": 6,
-          "김현기": 7,
           "김기범": 2,
           "송태양": 1
         },
@@ -25478,7 +25478,8 @@ window.SLACK_DATA = {
           "김동욱": 1
         },
         "transfer": {
-          "송태양": 3
+          "송태양": 3,
+          "김동욱": 1
         },
         "menu": {
           "배선유": 6,
@@ -25490,20 +25491,10 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "11:55",
-          "store": "명성정육식당",
-          "biz": "6110658769",
+          "time": "12:00",
+          "store": "안녕속초바다야",
+          "biz": "4561902294",
           "handler": "김동욱",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "11:54",
-          "store": "블링하우스",
-          "biz": "1104615171",
-          "handler": "심성현",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
@@ -25520,16 +25511,6 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "11:00",
-          "store": "숨플루트교습소",
-          "biz": "8699302243",
-          "handler": "김동욱",
-          "cat": "transfer",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
           "time": "10:18",
           "store": "카페88수제버거베이커리",
           "biz": "8140902981",
@@ -25541,6 +25522,34 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "11:57",
+          "store": "생생 어물시장",
+          "biz": "6867300579",
+          "cat": "as",
+          "emp": "김현기"
+        },
+        {
+          "time": "11:55",
+          "store": "왕대뼈해장국 순대국",
+          "biz": "1093656135",
+          "cat": "as",
+          "emp": "심성현"
+        },
+        {
+          "time": "11:55",
+          "store": "명성정육식당",
+          "biz": "6110658769",
+          "cat": "as",
+          "emp": "김동욱"
+        },
+        {
+          "time": "11:54",
+          "store": "블링하우스",
+          "biz": "1104615171",
+          "cat": "as",
+          "emp": "심성현"
+        },
         {
           "time": "11:50",
           "store": "다쏜다 원모바일",
@@ -25631,6 +25640,13 @@ window.SLACK_DATA = {
           "biz": "8312200857",
           "cat": "onboarding",
           "emp": "심성현"
+        },
+        {
+          "time": "11:00",
+          "store": "숨플루트교습소",
+          "biz": "8699302243",
+          "cat": "transfer",
+          "emp": "김동욱"
         },
         {
           "time": "11:00",
@@ -25906,7 +25922,7 @@ window.SLACK_DATA = {
           "emp": "배선유"
         }
       ],
-      "updatedAt": "12:00",
+      "updatedAt": "12:11",
       "voc": {
         "responses": 3,
         "install": {
