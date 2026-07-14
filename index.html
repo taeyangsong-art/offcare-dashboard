@@ -1024,6 +1024,7 @@ function checkRefreshWeek(){
     REFRESH = {}; save(LS_REFRESH, REFRESH);
     REFRESH_WEEK = thisMon; save(LS_REFRESH_WEEK, REFRESH_WEEK);
     if(activeCat==='share') renderShare();
+    else if(activeCat==='share-refresh') renderShareRefresh();
     showRefreshResetAlert();
   }
 }
@@ -1184,12 +1185,16 @@ function renderNav(){
       <span class="ic">📊</span>전체 현황</button>
     <div class="nav-div"></div>`;
   document.getElementById("nav").innerHTML = ov + CATEGORIES.map(c=>{
-    const active = (c.key===activeCat) || (c.key==='voc' && activeCat==='voc-monthly') || (c.key==='game' && activeCat==='game-fish');
+    const active = (c.key===activeCat) || (c.key==='voc' && activeCat==='voc-monthly') || (c.key==='game' && activeCat==='game-fish') || (c.key==='share' && activeCat==='share-refresh');
     let btn = `<button class="navbtn ${active?'active':''}" onclick="selectCat('${c.key}')">
       <span class="ic">${c.icon}</span>${c.name}</button>`;
     if(c.key==='voc' && (activeCat==='voc'||activeCat==='voc-monthly')){
       btn += `<button class="navbtn sub ${activeCat==='voc-monthly'?'active':''}" onclick="selectCat('voc-monthly')">
         <span class="ic">└</span>Monthly</button>`;
+    }
+    if(c.key==='share' && (activeCat==='share'||activeCat==='share-refresh')){
+      btn += `<button class="navbtn sub ${activeCat==='share-refresh'?'active':''}" onclick="selectCat('share-refresh')">
+        <span class="ic">└</span>☕ 리프레쉬 타임</button>`;
     }
     if(c.key==='game' && (activeCat==='game'||activeCat==='game-fish')){
       btn += `<button class="navbtn sub ${activeCat==='game-fish'?'active':''}" onclick="selectCat('game-fish')">
@@ -1205,6 +1210,7 @@ function renderMain(){
   if(activeCat==="overview") renderOverview();
   else if(activeCat==="duty") renderDuty();
   else if(activeCat==="share") renderShare();
+  else if(activeCat==="share-refresh") renderShareRefresh();
   else if(activeCat==="voc") renderVoc();
   else if(activeCat==="voc-monthly") renderVocMonthly();
   else if(activeCat==="game") renderGame();
@@ -2851,7 +2857,17 @@ function renderShare(){
       <div class="dr-list">${dutyUpcoming.map((mm,i)=>`<div class="dr-row ${i===0?'next':''}"><span class="dr-when">${fmtShort(mm.date)}${mm.time?' '+escapeHtml(mm.time.split('~')[0]):''}</span><span class="dr-title">${escapeHtml(mm.title)}</span><span class="dr-person">🏠 <select class="dr-sel" onchange="saveDutyOverride('${mm.key}', this.value)">${EMPLOYEES.map(e=>`<option ${e===mm.person?'selected':''}>${e}</option>`).join('')}</select>${DUTYOVER[mm.key]?`<button class="dr-reset" title="순번 자동으로 되돌리기" onclick="saveDutyOverride('${mm.key}','')">↺</button>`:''}</span></div>`).join('')}</div>
       <div class="note" style="font-size:12px;color:var(--gray2);margin-top:10px">순번: ${DUTY_ORDER.join(' → ')} · 이름을 바꾸면 <b>달력에도 반영</b> · ↺ = 순번 자동 · 회의 <b>30분 전 팝업</b> 알림(탭 열려 있을 때)</div>
     </div>`:''}
+  `;
+}
 
+function renderShareRefresh(){
+  document.getElementById("main").innerHTML = `
+    <div class="page-head">
+      <div>
+        <h2>☕ 원격팀 리프레쉬 타임</h2>
+        <div class="sub">14:00~17:30, 30분 단위로 원하는 칸에 <b>이름</b>을 적어 리프레쉬(휴게) 시간을 공유하세요. 매주 월요일 자동 초기화됩니다.</div>
+      </div>
+    </div>
     ${refreshTimeCard()}
   `;
 }
