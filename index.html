@@ -110,6 +110,11 @@
   .detail-x{border:none; background:var(--surface2); width:30px; height:30px; border-radius:50%; font-size:15px; cursor:pointer; color:var(--gray)}
   .detail-x:hover{background:var(--line-soft)}
   .detail-scroll{overflow:auto; margin-top:12px}
+  .dm-num{color:var(--gray2); font-weight:700; font-size:12px; text-align:center}
+  .dm-st{font-size:11px; font-weight:800; padding:2px 8px; border-radius:20px; white-space:nowrap}
+  .hl-card.clickable{cursor:pointer; transition:.15s}
+  .hl-card.clickable:hover{transform:translateY(-2px); box-shadow:0 10px 24px rgba(0,0,0,.1)}
+  .hl-drill{font-size:11px; opacity:.5; margin-left:2px}
   /* 🎁 팀 목표 */
   .tg-sub-lab{font-size:13px; font-weight:700; color:#7c5cff; background:#efeaff; padding:2px 10px; border-radius:20px; margin-left:6px}
   .tg-month{font-size:15px; font-weight:800; color:var(--ink); min-width:96px; text-align:center; display:inline-block}
@@ -1568,9 +1573,9 @@ function renderOverview(){
     </div>
 
     <div class="headline">
-      <div class="hl-card blue">
+      <div class="hl-card blue clickable" onclick="showDoneDetail('all','')" title="클릭 → 상호·사업자 상세 보기">
         <div class="hl-ic">📦</div>
-        <div class="hl-lab">${periodWord} 원격 총 건수</div>
+        <div class="hl-lab">${periodWord} 원격 총 건수 <span class="hl-drill">🔎</span></div>
         <div class="hl-big">${grandAll}<small>건</small></div>
         ${deltaHTML(grandAll, grandAllPrev)}
         ${(absentCnt||confirmCnt)?`<div class="ov-delta flat" style="margin-top:2px"><span>처리 ${grandProc}${absentCnt?` + 부재 ${absentCnt}`:''}${confirmCnt?` + 확인필요 ${confirmCnt}`:''}</span></div>`:''}
@@ -1684,23 +1689,30 @@ function hexA(hex,a){ const n=parseInt(hex.slice(1),16); return `rgba(${n>>16&25
 function catLabelOf(k){ if(k==='voc')return 'VOC'; const c=WORK_CATS.find(w=>w.key===k); return c?c.name:k; }
 function catChip(k){ const c=WORK_CATS.find(w=>w.key===k); const col=k==='voc'?'#ff2d55':(c?c.color:'#8e8e93'); return `<span class="cat-chip" style="background:${hexA(col,.14)};color:${col}">${catLabelOf(k)}</span>`; }
 // 처리 상세 모달: mode='cat'(카테고리별) 또는 'emp'(직원별) — 상호/사업자/유형/담당 조회
+function detailStatusBadge(st){ const col={'처리':'#166534','부재':'#b91c1c','확인필요':'#c2410c'}[st]||'#475569', bg={'처리':'#dcfce7','부재':'#ffe1de','확인필요':'#ffedd5'}[st]||'#eef1f5'; return `<span class="dm-st" style="background:${bg};color:${col}">${st}</span>`; }
 function showDoneDetail(mode, key){
   const dates=ovDates(), set=new Set(dates); let items=[], title='';
+  const pushVocDone=()=>{ allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ if(x.emp&&x.doneDate&&set.has(x.doneDate)) items.push({time:x.time,store:x.store,biz:x.storeId,emp:x.emp,cat:'voc',date:x.doneDate,st:'처리'}); }); }); };
   if(mode==='cat'){
     title = catLabelOf(key)+' 처리 상세';
-    if(key==='voc'){ allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ if(x.emp&&x.doneDate&&set.has(x.doneDate)) items.push({time:x.time,store:x.store,biz:x.storeId,emp:x.emp,cat:'voc',date:x.doneDate}); }); }); }
-    else { dates.forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.cat===key) items.push({time:x.time,store:x.store,biz:x.biz,emp:x.emp,cat:x.cat,date:d}); })); }
-  } else {
+    if(key==='voc'){ pushVocDone(); }
+    else { dates.forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.cat===key) items.push({time:x.time,store:x.store,biz:x.biz,emp:x.emp,cat:x.cat,date:d,st:'처리'}); })); }
+  } else if(mode==='emp'){
     title = key+' 처리 상세';
-    dates.forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp===key) items.push({time:x.time,store:x.store,biz:x.biz,emp:x.emp,cat:x.cat,date:d}); }));
+    dates.forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp===key) items.push({time:x.time,store:x.store,biz:x.biz,emp:x.emp,cat:x.cat,date:d,st:'처리'}); }));
+  } else { // 'all' = 원격 총 건수 (처리 + 부재 + 확인필요)
+    title = '원격 총 건수 상세';
+    dates.forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>items.push({time:x.time,store:x.store,biz:x.biz,emp:x.emp,cat:x.cat,date:d,st:'처리'})));
+    pushVocDone();
+    dates.forEach(d=>((slackDay(d)||{}).pending||[]).forEach(x=>{ const ab=(x.reasons||[]).some(r=>/부재/.test(r)); items.push({time:x.time,store:x.store,biz:x.biz,emp:x.handler,cat:x.cat,date:d,st:ab?'부재':'확인필요'}); }));
   }
   items.sort((a,b)=>((b.date||'')+(b.time||'')).localeCompare((a.date||'')+(a.time||'')));
-  const rows = items.length? items.map(x=>`<tr class="dm-row" data-k="${((x.store||'')+' '+(x.biz||'')).toLowerCase()}"><td class="trow-time">${fmtShort(x.date)}<br>${x.time||''}</td><td>${catChip(x.cat)}</td><td class="emp-name">${escapeHtml(x.store||'-')}</td><td class="trow-biz">${escapeHtml(x.biz||'-')}</td><td>${escapeHtml(x.emp||'-')}</td></tr>`).join('')
-    : `<tr><td colspan="5" style="text-align:center;color:var(--gray2);padding:22px">상세 데이터가 없습니다.<br><span style="font-size:12px">과거 일자는 <b>backfill</b> 워크플로 실행 후 표시됩니다.</span></td></tr>`;
+  const rows = items.length? items.map((x,i)=>`<tr class="dm-row" data-k="${((x.store||'')+' '+(x.biz||'')).toLowerCase()}"><td class="dm-num">${i+1}</td><td class="trow-time">${fmtShort(x.date)}<br>${x.time||''}</td><td>${detailStatusBadge(x.st)}</td><td>${catChip(x.cat)}</td><td class="emp-name">${escapeHtml(x.store||'-')}</td><td class="trow-biz">${escapeHtml(x.biz||'-')}</td><td>${escapeHtml(x.emp||'-')}</td></tr>`).join('')
+    : `<tr><td colspan="7" style="text-align:center;color:var(--gray2);padding:22px">상세 데이터가 없습니다.<br><span style="font-size:12px">과거 일자는 <b>backfill</b> 워크플로 실행 후 표시됩니다.</span></td></tr>`;
   let el=document.getElementById('doneModal'); if(!el){ el=document.createElement('div'); el.id='doneModal'; el.className='detail-overlay'; el.onclick=e=>{ if(e.target===el) el.remove(); }; document.body.appendChild(el); }
-  el.innerHTML=`<div class="detail-box"><div class="detail-head"><h3>${escapeHtml(title)} <span class="cnt-badge">${items.length}</span></h3><button class="detail-x" onclick="document.getElementById('doneModal').remove()">✕</button></div>
+  el.innerHTML=`<div class="detail-box"><div class="detail-head"><h3>${escapeHtml(title)} <span class="cnt-badge">${items.length}건</span></h3><button class="detail-x" onclick="document.getElementById('doneModal').remove()">✕</button></div>
     <input class="search-box" type="text" placeholder="상호명 또는 사업자번호 검색…" oninput="filterDoneModal(this.value)">
-    <div class="detail-scroll"><table class="voc-table"><thead><tr><th style="width:56px">시간</th><th style="width:96px">유형</th><th>상호</th><th style="width:120px">사업자</th><th style="width:70px">담당</th></tr></thead><tbody id="doneModalBody">${rows}</tbody></table></div></div>`;
+    <div class="detail-scroll"><table class="voc-table"><thead><tr><th style="width:34px">#</th><th style="width:52px">시간</th><th style="width:72px">상태</th><th style="width:88px">유형</th><th>상호</th><th style="width:110px">사업자</th><th style="width:62px">담당</th></tr></thead><tbody id="doneModalBody">${rows}</tbody></table></div></div>`;
 }
 function filterDoneModal(q){ q=(q||'').trim().toLowerCase(); document.querySelectorAll('#doneModalBody .dm-row').forEach(tr=>{ tr.style.display=(tr.dataset.k||'').includes(q)?'':'none'; }); }
 
