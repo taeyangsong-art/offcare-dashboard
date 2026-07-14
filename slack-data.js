@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 426,
+  "version": 427,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -27398,39 +27398,35 @@ window.SLACK_DATA = {
     "2026-07-14": {
       "counts": {
         "as": {
+          "김현기": 2,
           "김동욱": 1,
           "배선유": 2,
-          "김현기": 1,
           "심성현": 1
+        },
+        "onboarding": {
+          "김동욱": 1
         },
         "menu": {
           "김동욱": 1,
           "배선유": 2
         }
       },
-      "pending": [
+      "pending": [],
+      "done": [
         {
           "time": "09:30",
           "store": "카페율하온진해용원점",
           "biz": "7751801729",
-          "handler": "김현기",
           "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
+          "emp": "김현기"
         },
         {
           "time": "09:30",
           "store": "가온",
           "biz": "1052083323",
-          "handler": "김동욱",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        }
-      ],
-      "done": [
+          "cat": "onboarding",
+          "emp": "김동욱"
+        },
         {
           "time": "09:27",
           "store": "아임독애견샵",
@@ -27488,7 +27484,7 @@ window.SLACK_DATA = {
           "emp": "배선유"
         }
       ],
-      "updatedAt": "09:30",
+      "updatedAt": "09:45",
       "voc": {
         "responses": 2,
         "install": {
