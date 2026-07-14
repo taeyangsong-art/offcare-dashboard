@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 430,
+  "version": 431,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -25464,15 +25464,19 @@ window.SLACK_DATA = {
     },
     "2026-07-14": {
       "counts": {
+        "onboarding": {
+          "심성현": 1,
+          "김동욱": 1
+        },
         "as": {
-          "김동욱": 4,
-          "심성현": 5,
-          "배선유": 3,
+          "김동욱": 6,
+          "심성현": 6,
+          "배선유": 4,
           "송태양": 1,
           "김현기": 3
         },
-        "onboarding": {
-          "김동욱": 1
+        "transfer": {
+          "송태양": 1
         },
         "menu": {
           "배선유": 3,
@@ -25481,30 +25485,20 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "10:22",
-          "store": "더 밀러(THE MILLER)",
-          "biz": "7556400742",
-          "handler": "심성현",
+          "time": "10:43",
+          "store": "형과아우누룽지삼계탕 영도점",
+          "biz": "2651203081",
+          "handler": "김기범",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
           ]
         },
         {
-          "time": "10:22",
-          "store": "엘로나 뷰티",
-          "biz": "2104636705",
-          "handler": "송태양",
-          "cat": "transfer",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "10:20",
-          "store": "숙이네 즉석김",
-          "biz": "1075539164",
-          "handler": "김동욱",
+          "time": "10:30",
+          "store": "카페마슬",
+          "biz": "4332802013",
+          "handler": "배선유",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
@@ -25519,19 +25513,44 @@ window.SLACK_DATA = {
           "reasons": [
             "확인 후 미완료"
           ]
-        },
-        {
-          "time": "10:05",
-          "store": "유한상사 호돌이푸드",
-          "biz": "2158786329",
-          "handler": "배선유",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
         }
       ],
       "done": [
+        {
+          "time": "10:30",
+          "store": "마루카오디오",
+          "biz": "1343294724",
+          "cat": "onboarding",
+          "emp": "심성현"
+        },
+        {
+          "time": "10:28",
+          "store": "철정휴게소(편의점)",
+          "biz": "8188700891",
+          "cat": "as",
+          "emp": "김동욱"
+        },
+        {
+          "time": "10:22",
+          "store": "더 밀러(THE MILLER)",
+          "biz": "7556400742",
+          "cat": "as",
+          "emp": "심성현"
+        },
+        {
+          "time": "10:22",
+          "store": "엘로나 뷰티",
+          "biz": "2104636705",
+          "cat": "transfer",
+          "emp": "송태양"
+        },
+        {
+          "time": "10:20",
+          "store": "숙이네 즉석김",
+          "biz": "1075539164",
+          "cat": "as",
+          "emp": "김동욱"
+        },
         {
           "time": "10:19",
           "store": "(봉명동)(주) 형과아우",
@@ -25573,6 +25592,13 @@ window.SLACK_DATA = {
           "biz": "2722101273",
           "cat": "as",
           "emp": "송태양"
+        },
+        {
+          "time": "10:05",
+          "store": "유한상사 호돌이푸드",
+          "biz": "2158786329",
+          "cat": "as",
+          "emp": "배선유"
         },
         {
           "time": "10:04",
@@ -25694,7 +25720,7 @@ window.SLACK_DATA = {
           "emp": "배선유"
         }
       ],
-      "updatedAt": "10:30",
+      "updatedAt": "10:43",
       "voc": {
         "responses": 3,
         "install": {
