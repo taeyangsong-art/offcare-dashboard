@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 443,
+  "version": 444,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -25465,9 +25465,9 @@ window.SLACK_DATA = {
     "2026-07-14": {
       "counts": {
         "as": {
-          "김규빈": 5,
-          "배선유": 10,
-          "송태양": 2,
+          "김규빈": 6,
+          "배선유": 12,
+          "송태양": 3,
           "김현기": 11,
           "심성현": 15,
           "김동욱": 11,
@@ -25483,8 +25483,8 @@ window.SLACK_DATA = {
           "김동욱": 2
         },
         "menu": {
+          "배선유": 8,
           "김규빈": 1,
-          "배선유": 7,
           "김동욱": 3
         },
         "delivery": {
@@ -25493,33 +25493,33 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "13:36",
-          "store": "땡기네 김밥",
-          "biz": "2113517705",
-          "handler": "배선유",
-          "cat": "menu",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "13:29",
-          "store": "청춘쪽갈비",
-          "biz": "6430601128",
-          "handler": "송태양",
+          "time": "14:00",
+          "store": "안녕속초바다야",
+          "biz": "4561902294",
+          "handler": "김동욱",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
           ]
         },
         {
-          "time": "13:15",
-          "store": "무위(MUWEE)",
-          "biz": "1951002867",
-          "handler": "배선유",
+          "time": "14:00",
+          "store": "소주왕",
+          "biz": "8193801518",
+          "handler": "김현기",
           "cat": "as",
           "reasons": [
-            "1차 부재"
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "14:00",
+          "store": "나를위한 에스테틱",
+          "biz": "5192501831",
+          "handler": "심성현",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
           ]
         },
         {
@@ -25545,11 +25545,39 @@ window.SLACK_DATA = {
       ],
       "done": [
         {
+          "time": "13:53",
+          "store": "옹드 커피",
+          "biz": "1573801517",
+          "cat": "as",
+          "emp": "김규빈"
+        },
+        {
+          "time": "13:45",
+          "store": "알로록",
+          "biz": "1061553264",
+          "cat": "as",
+          "emp": "배선유"
+        },
+        {
+          "time": "13:36",
+          "store": "땡기네 김밥",
+          "biz": "2113517705",
+          "cat": "menu",
+          "emp": "배선유"
+        },
+        {
           "time": "13:33",
           "store": "정가네떡볶이",
           "biz": "4880603456",
           "cat": "menu",
           "emp": "김규빈"
+        },
+        {
+          "time": "13:29",
+          "store": "청춘쪽갈비",
+          "biz": "6430601128",
+          "cat": "as",
+          "emp": "송태양"
         },
         {
           "time": "13:25",
@@ -25577,6 +25605,13 @@ window.SLACK_DATA = {
           "store": "장군갈비",
           "biz": "2061380015",
           "cat": "menu",
+          "emp": "배선유"
+        },
+        {
+          "time": "13:15",
+          "store": "무위(MUWEE)",
+          "biz": "1951002867",
+          "cat": "as",
           "emp": "배선유"
         },
         {
@@ -26105,7 +26140,7 @@ window.SLACK_DATA = {
           "emp": "배선유"
         }
       ],
-      "updatedAt": "13:45",
+      "updatedAt": "14:00",
       "voc": {
         "responses": 3,
         "install": {
