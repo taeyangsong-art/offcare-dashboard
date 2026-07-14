@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 449,
+  "version": 450,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -25464,13 +25464,16 @@ window.SLACK_DATA = {
     },
     "2026-07-14": {
       "counts": {
+        "extern": {
+          "서상원": 1
+        },
         "as": {
-          "김동욱": 17,
+          "김동욱": 18,
+          "배선유": 14,
+          "심성현": 20,
           "김현기": 14,
-          "최민석": 1,
+          "최민석": 2,
           "서상원": 1,
-          "심성현": 19,
-          "배선유": 13,
           "송태양": 5,
           "김규빈": 6,
           "김기범": 2
@@ -25486,7 +25489,7 @@ window.SLACK_DATA = {
           "김동욱": 3
         },
         "menu": {
-          "배선유": 9,
+          "배선유": 11,
           "김규빈": 1,
           "김동욱": 3
         },
@@ -25496,20 +25499,20 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "15:13",
-          "store": "카츠쇼우",
-          "biz": "7010103989",
-          "handler": "배선유",
-          "cat": "as",
+          "time": "15:24",
+          "store": "해양 참치",
+          "biz": "",
+          "handler": "송태양",
+          "cat": "transfer",
           "reasons": [
             "확인 후 미완료"
           ]
         },
         {
-          "time": "15:08",
-          "store": "강창구찹쌀진순대(이천1호점)",
-          "biz": "2490301866",
-          "handler": "심성현",
+          "time": "15:00",
+          "store": "뮤리엘 스킨&amp;왁싱",
+          "biz": "1952300573",
+          "handler": "김기범",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
@@ -25527,6 +25530,34 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "15:21",
+          "store": "미래엔 수학학원",
+          "biz": "3029702393",
+          "cat": "extern",
+          "emp": "서상원"
+        },
+        {
+          "time": "15:14",
+          "store": "(주)두드림비엔비 #3",
+          "biz": "7948603197",
+          "cat": "as",
+          "emp": "김동욱"
+        },
+        {
+          "time": "15:13",
+          "store": "카츠쇼우",
+          "biz": "7010103989",
+          "cat": "as",
+          "emp": "배선유"
+        },
+        {
+          "time": "15:08",
+          "store": "강창구찹쌀진순대(이천1호점)",
+          "biz": "2490301866",
+          "cat": "as",
+          "emp": "심성현"
+        },
         {
           "time": "15:02",
           "store": "카페오누",
@@ -25549,6 +25580,13 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         },
         {
+          "time": "15:00",
+          "store": "린다린다",
+          "biz": "1690303501",
+          "cat": "as",
+          "emp": "최민석"
+        },
+        {
           "time": "14:58",
           "store": "꽃처럼",
           "biz": "2210825661",
@@ -25561,6 +25599,13 @@ window.SLACK_DATA = {
           "biz": "8179101569",
           "cat": "as",
           "emp": "최민석"
+        },
+        {
+          "time": "14:55",
+          "store": "237오므카레 본점",
+          "biz": "1815301060",
+          "cat": "menu",
+          "emp": "배선유"
         },
         {
           "time": "14:53",
@@ -25596,6 +25641,13 @@ window.SLACK_DATA = {
           "biz": "2776600697",
           "cat": "as",
           "emp": "송태양"
+        },
+        {
+          "time": "14:39",
+          "store": "텐파이프 세준",
+          "biz": "4496600647",
+          "cat": "menu",
+          "emp": "배선유"
         },
         {
           "time": "14:32",
@@ -26291,35 +26343,46 @@ window.SLACK_DATA = {
           "emp": "배선유"
         }
       ],
-      "updatedAt": "15:14",
+      "updatedAt": "15:30",
       "voc": {
-        "responses": 9,
+        "responses": 13,
         "install": {
-          "count": 1,
+          "count": 3,
           "low": 1
         },
         "nps": {
-          "count": 9,
-          "low": 3
+          "count": 13,
+          "low": 5
         },
         "high": {
           "install": 0,
-          "nps": 4
+          "nps": 5
         },
         "npsDist": {
           "3": 2,
-          "5": 1,
+          "5": 3,
+          "7": 1,
           "8": 1,
           "9": 1,
-          "10": 4
+          "10": 5
         },
         "installDist": {
-          "1": 1
+          "1": 1,
+          "4": 2
         },
         "byIndustry": {
+          "서비스[학원]": 2,
           "요식업": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 2,
+            "low": 2
+          },
+          "구매설치": {
+            "total": 3,
+            "low": 1
+          },
           "3개월": {
             "total": 3,
             "low": 2
@@ -26331,24 +26394,24 @@ window.SLACK_DATA = {
           "1개월": {
             "total": 3,
             "low": 0
-          },
-          "구매설치": {
-            "total": 1,
-            "low": 1
           }
         },
         "byVan": {
-          "SECTA9": {
-            "total": 2,
-            "low": 0
-          },
           "KPN": {
-            "total": 2,
+            "total": 3,
+            "low": 2
+          },
+          "KSNET": {
+            "total": 1,
             "low": 1
           },
           "KIS": {
-            "total": 3,
+            "total": 5,
             "low": 2
+          },
+          "SECTA9": {
+            "total": 2,
+            "low": 0
           },
           "SMARTRO": {
             "total": 1,
@@ -26360,12 +26423,56 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "사용중 오류가 자주 발생함": 2,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
           "고객센터 연락이 매우 힘듦": 1,
-          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
-          "사용중 오류가 자주 발생함": 1,
           "단말기 설치나 초기 과정이 어려움": 1
         },
         "alerts": [
+          {
+            "time": "15:30",
+            "store": "옛골한식뷔페",
+            "storeId": "212921",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "오류도 많고 종종 먹통이 될경우 문의하거나 해결방안을 구할 곳이 아에없음 고객센터는 연락자체가 불가능함",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:30",
+            "store": "꼴통수산",
+            "storeId": "198067",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "이번 장애 발생 때문",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:14",
             "store": "단지분식",
@@ -26439,7 +26546,20 @@ window.SLACK_DATA = {
             "doneDate": ""
           }
         ],
-        "praises": []
+        "praises": [
+          {
+            "time": "15:21",
+            "store": "손명현국어교습소",
+            "storeId": "542631",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 4,
+            "nps": 7,
+            "text": "기사 방문이라 편리, 자세한 설명 미비 스마트하지 않다",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
       }
     }
   }
