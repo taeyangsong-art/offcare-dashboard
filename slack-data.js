@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 435,
+  "version": 436,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -25465,8 +25465,8 @@ window.SLACK_DATA = {
     "2026-07-14": {
       "counts": {
         "as": {
+          "심성현": 11,
           "김동욱": 8,
-          "심성현": 9,
           "배선유": 6,
           "김현기": 7,
           "김기범": 2,
@@ -25481,7 +25481,7 @@ window.SLACK_DATA = {
           "송태양": 3
         },
         "menu": {
-          "배선유": 5,
+          "배선유": 6,
           "김동욱": 3
         },
         "delivery": {
@@ -25490,23 +25490,33 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "11:41",
-          "store": "맘스플래닛 평촌센터",
-          "biz": "5579101916",
-          "handler": "배선유",
-          "cat": "menu",
+          "time": "11:55",
+          "store": "명성정육식당",
+          "biz": "6110658769",
+          "handler": "김동욱",
+          "cat": "as",
           "reasons": [
             "확인 후 미완료"
           ]
         },
         {
-          "time": "11:30",
-          "store": "청춘쪽갈비",
-          "biz": "6430601128",
+          "time": "11:54",
+          "store": "블링하우스",
+          "biz": "1104615171",
           "handler": "심성현",
           "cat": "as",
           "reasons": [
-            "1차 부재"
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "11:48",
+          "store": "에녹농수산물",
+          "biz": "1109371895",
+          "handler": "김동욱",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
           ]
         },
         {
@@ -25531,6 +25541,27 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "11:50",
+          "store": "다쏜다 원모바일",
+          "biz": "1446500857",
+          "cat": "as",
+          "emp": "심성현"
+        },
+        {
+          "time": "11:45",
+          "store": "아틀레",
+          "biz": "6793901523",
+          "cat": "as",
+          "emp": "심성현"
+        },
+        {
+          "time": "11:41",
+          "store": "맘스플래닛 평촌센터",
+          "biz": "5579101916",
+          "cat": "menu",
+          "emp": "배선유"
+        },
         {
           "time": "11:27",
           "store": "바우버터아틀리에",
@@ -25875,7 +25906,7 @@ window.SLACK_DATA = {
           "emp": "배선유"
         }
       ],
-      "updatedAt": "11:45",
+      "updatedAt": "12:00",
       "voc": {
         "responses": 3,
         "install": {
