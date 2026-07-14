@@ -357,6 +357,8 @@
   .it-tip-rar{font-size:12px; font-weight:800; letter-spacing:.03em}
   .it-tip-fish{font-size:10px; font-weight:800; color:#0aa5b1; background:#e0f7fa; border-radius:20px; padding:2px 8px}
   .it-tip-disp{min-height:52px; display:flex; align-items:center; justify-content:center; margin:2px 0 8px}
+  .it-tip-char{display:flex; justify-content:center; align-items:flex-start; height:126px; overflow:hidden; margin:2px 0 8px}
+  .it-tip-char .avatar-big{transform:scale(.82); transform-origin:top center; margin-bottom:-20px}
   .it-tip-name{font-size:13px; font-weight:700; color:var(--ink)}
   .it-tip-foot{margin-top:6px; font-size:12px; font-weight:700; color:var(--gray)}
   .preview-hint{font-size:12.5px; color:var(--gray2); margin:-8px 2px 16px; font-weight:600}
@@ -1592,9 +1594,16 @@ function itemTipHTML(cat,id){ const it=itemById(cat,id); if(!it) return ''; cons
   else if(AVATAR_CATS.includes(cat)) big=`<div class="it-tip-part">${miniPart(cat,it)}</div>`;
   else big=`<div style="font-size:52px;line-height:1">${it.e||'✕'}</div>`;
   const owned=gameMe?owns(gameMe,cat,id):false;
+  // 외형을 바꾸는 파츠는 '내 캐릭터에 입혀본' 모습을 팝업에 띄움
+  const tryOnCats = AVATAR_CATS.concat(['hat','pet']);
+  let disp;
+  if(gameMe && tryOnCats.includes(cat)){
+    const peq=Object.assign({}, (gs(gameMe).equipped||{})); peq[cat]=id;
+    disp=`<div class="it-tip-char">${avatarBig(peq, (GAME[gameMe]||{}).gender)}</div>`;
+  } else { disp=`<div class="it-tip-disp">${big}</div>`; }
   return `<div class="it-tip-inner" style="--rar:${RARITY[r]}">
     <div class="it-tip-top"><span class="it-tip-rar" style="color:${RARITY[r]}">${RARITY_KO[r]}</span>${it.fishOnly?'<span class="it-tip-fish">🎣 낚시전용</span>':''}</div>
-    <div class="it-tip-disp">${big}</div>
+    ${disp}
     <div class="it-tip-name">${CAT_LABEL[cat]||''} · ${escapeHtml(it.name)}</div>
     <div class="it-tip-foot">${it.price===0?'기본 제공':(owned?'✓ 보유중':(it.fishOnly?'낚시로만 획득':'🪙 '+it.price+' 코인'))}</div>
   </div>`;
