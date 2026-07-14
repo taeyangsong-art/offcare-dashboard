@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 438,
+  "version": 439,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -25465,9 +25465,9 @@ window.SLACK_DATA = {
     "2026-07-14": {
       "counts": {
         "as": {
-          "김현기": 10,
+          "김현기": 11,
+          "심성현": 14,
           "김동욱": 11,
-          "심성현": 13,
           "배선유": 6,
           "김기범": 2,
           "송태양": 1
@@ -25478,8 +25478,8 @@ window.SLACK_DATA = {
           "김동욱": 1
         },
         "transfer": {
-          "송태양": 3,
-          "김동욱": 1
+          "김동욱": 2,
+          "송태양": 3
         },
         "menu": {
           "배선유": 6,
@@ -25522,6 +25522,27 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "12:35",
+          "store": "올, 꽃",
+          "biz": "4419302216",
+          "cat": "as",
+          "emp": "김현기"
+        },
+        {
+          "time": "12:31",
+          "store": "3H경남 남양산센터",
+          "biz": "1661902843",
+          "cat": "as",
+          "emp": "심성현"
+        },
+        {
+          "time": "12:22",
+          "store": "여수 딸기야 모찌 오동도점",
+          "biz": "5435001307",
+          "cat": "transfer",
+          "emp": "김동욱"
+        },
         {
           "time": "12:11",
           "store": "교촌치킨(행신역점)",
@@ -25950,7 +25971,7 @@ window.SLACK_DATA = {
           "emp": "배선유"
         }
       ],
-      "updatedAt": "12:22",
+      "updatedAt": "12:35",
       "voc": {
         "responses": 3,
         "install": {
