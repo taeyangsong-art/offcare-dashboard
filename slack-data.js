@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 433,
+  "version": 434,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -25464,21 +25464,21 @@ window.SLACK_DATA = {
     },
     "2026-07-14": {
       "counts": {
+        "as": {
+          "심성현": 8,
+          "김현기": 7,
+          "김동욱": 7,
+          "김기범": 1,
+          "배선유": 5,
+          "송태양": 1
+        },
         "onboarding": {
           "심성현": 2,
           "송태양": 1,
           "김동욱": 1
         },
-        "as": {
-          "김현기": 4,
-          "심성현": 7,
-          "김기범": 1,
-          "배선유": 5,
-          "김동욱": 6,
-          "송태양": 1
-        },
         "transfer": {
-          "송태양": 1
+          "송태양": 2
         },
         "menu": {
           "배선유": 5,
@@ -25490,9 +25490,19 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "11:10",
-          "store": "응급실국물떡볶이구미구평점",
-          "biz": "8240903518",
+          "time": "11:27",
+          "store": "바우버터아틀리에",
+          "biz": "3748503128",
+          "handler": "김동욱",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "11:24",
+          "store": "카페 우유니(cafe uyuni)",
+          "biz": "4221801015",
           "handler": "심성현",
           "cat": "as",
           "reasons": [
@@ -25500,21 +25510,21 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "11:05",
-          "store": "동거독락",
-          "biz": "",
-          "handler": "송태양",
-          "cat": "transfer",
+          "time": "11:21",
+          "store": "카페드롭탑(평택터미널점)",
+          "biz": "3652001511",
+          "handler": "배선유",
+          "cat": "as",
           "reasons": [
             "확인 후 미완료"
           ]
         },
         {
           "time": "11:00",
-          "store": "가온",
-          "biz": "1052083323",
-          "handler": "김동욱",
-          "cat": "as",
+          "store": "퀸즈에스테틱",
+          "biz": "1082153451",
+          "handler": "송태양",
+          "cat": "transfer",
           "reasons": [
             "확인 후 미완료"
           ]
@@ -25541,6 +25551,48 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "11:10",
+          "store": "응급실국물떡볶이구미구평점",
+          "biz": "8240903518",
+          "cat": "as",
+          "emp": "심성현"
+        },
+        {
+          "time": "11:05",
+          "store": "동거독락",
+          "biz": "",
+          "cat": "transfer",
+          "emp": "송태양"
+        },
+        {
+          "time": "11:03",
+          "store": "모녀김밥",
+          "biz": "4792501590",
+          "cat": "as",
+          "emp": "김현기"
+        },
+        {
+          "time": "11:00",
+          "store": "가온",
+          "biz": "1052083323",
+          "cat": "as",
+          "emp": "김동욱"
+        },
+        {
+          "time": "11:00",
+          "store": "맘스플래닛 평촌센터",
+          "biz": "5579101916",
+          "cat": "as",
+          "emp": "김현기"
+        },
+        {
+          "time": "11:00",
+          "store": "더 밀러(THE MILLER)",
+          "biz": "7556400742",
+          "cat": "as",
+          "emp": "김현기"
+        },
         {
           "time": "11:00",
           "store": "소코드레스",
@@ -25808,7 +25860,7 @@ window.SLACK_DATA = {
           "emp": "배선유"
         }
       ],
-      "updatedAt": "11:10",
+      "updatedAt": "11:30",
       "voc": {
         "responses": 3,
         "install": {
