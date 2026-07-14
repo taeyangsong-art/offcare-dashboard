@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 463,
+  "version": 464,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -25465,8 +25465,8 @@ window.SLACK_DATA = {
     "2026-07-14": {
       "counts": {
         "as": {
-          "심성현": 27,
-          "최민석": 6,
+          "심성현": 28,
+          "최민석": 7,
           "김동욱": 23,
           "김기범": 4,
           "김현기": 22,
@@ -25492,7 +25492,7 @@ window.SLACK_DATA = {
           "김동욱": 4
         },
         "menu": {
-          "배선유": 17,
+          "배선유": 19,
           "김규빈": 1,
           "김동욱": 3
         },
@@ -25504,9 +25504,19 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "18:02",
-          "store": "최주부백개장",
-          "biz": "1102244200",
+          "time": "18:42",
+          "store": "호텔 모뭄",
+          "biz": "6398502837",
+          "handler": "서상원",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "18:26",
+          "store": "포도술 문래",
+          "biz": "1952900992",
           "handler": "배선유",
           "cat": "menu",
           "reasons": [
@@ -25536,11 +25546,32 @@ window.SLACK_DATA = {
       ],
       "done": [
         {
+          "time": "18:30",
+          "store": "아네모네 키친",
+          "biz": "4032095174",
+          "cat": "as",
+          "emp": "심성현"
+        },
+        {
+          "time": "18:30",
+          "store": "더 베니 (The Benny)",
+          "biz": "4414301304",
+          "cat": "as",
+          "emp": "최민석"
+        },
+        {
           "time": "18:19",
           "store": "몰트앤캐스크 다산점",
           "biz": "3341602538",
           "cat": "as",
           "emp": "심성현"
+        },
+        {
+          "time": "18:17",
+          "store": "이엠커피 부산 남포점",
+          "biz": "6624101339",
+          "cat": "menu",
+          "emp": "배선유"
         },
         {
           "time": "18:09",
@@ -25555,6 +25586,13 @@ window.SLACK_DATA = {
           "biz": "8595800946",
           "cat": "as",
           "emp": "최민석"
+        },
+        {
+          "time": "18:02",
+          "store": "최주부백개장",
+          "biz": "1102244200",
+          "cat": "menu",
+          "emp": "배선유"
         },
         {
           "time": "18:00",
@@ -26789,16 +26827,16 @@ window.SLACK_DATA = {
           "emp": "배선유"
         }
       ],
-      "updatedAt": "18:30",
+      "updatedAt": "18:42",
       "voc": {
-        "responses": 20,
+        "responses": 21,
         "install": {
           "count": 6,
           "low": 2
         },
         "nps": {
-          "count": 20,
-          "low": 7
+          "count": 21,
+          "low": 8
         },
         "high": {
           "install": 1,
@@ -26807,6 +26845,7 @@ window.SLACK_DATA = {
         "npsDist": {
           "0": 1,
           "3": 2,
+          "4": 1,
           "5": 4,
           "7": 2,
           "8": 1,
@@ -26825,6 +26864,10 @@ window.SLACK_DATA = {
           "요식업": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 4,
+            "low": 1
+          },
           "6개월": {
             "total": 4,
             "low": 0
@@ -26840,13 +26883,13 @@ window.SLACK_DATA = {
           "3개월": {
             "total": 4,
             "low": 2
-          },
-          "1개월": {
-            "total": 3,
-            "low": 0
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 4,
+            "low": 3
+          },
           "DAOU": {
             "total": 3,
             "low": 0
@@ -26863,22 +26906,40 @@ window.SLACK_DATA = {
             "total": 2,
             "low": 1
           },
-          "KPN": {
-            "total": 3,
-            "low": 2
-          },
           "SECTA9": {
             "total": 2,
             "low": 0
           }
         },
         "reasonCounts": {
+          "사용중 오류가 자주 발생함": 3,
           "단말기 설치나 초기 과정이 어려움": 4,
-          "사용중 오류가 자주 발생함": 2,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
           "고객센터 연락이 매우 힘듦": 1
         },
         "alerts": [
+          {
+            "time": "18:35",
+            "store": "언커먼무드",
+            "storeId": "498305",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 4,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 4,
+                "text": "다른고객관리프로그램과 결제 시스템 연동이 안됨",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:51",
             "store": "서구 시찌다",
