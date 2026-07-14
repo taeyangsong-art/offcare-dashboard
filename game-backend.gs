@@ -6,6 +6,7 @@
 // GET  ?action=...     : auth (status/checkPin/sendOtp/setPin/setPinDirect).
 
 var SHEET_ID = '';
+var ADMIN_KEY = 'CHANGE_ME_1234';   // CHANGE THIS to your own secret. Used for admin PIN reset.
 
 // Employee emails for OTP. Keys are \u escapes of the app names (pure ASCII, paste-proof).
 // Fill the empty '' parts with each person's @ishopcare email.
@@ -195,6 +196,18 @@ function handleAuth_(p) {
       saveSecret_(sec3);
       return json_({ ok: true });
     } finally { try { lock3.releaseLock(); } catch (e) {} }
+  }
+
+  if (action === 'clearPin') {
+    if (String(p.key) !== ADMIN_KEY) { return json_({ ok: false, error: 'bad_key' }); }
+    var lock4 = LockService.getScriptLock();
+    try {
+      lock4.waitLock(10000);
+      var sec4 = readSecret_(); sec4.pins = sec4.pins || {}; sec4.fails = sec4.fails || {};
+      delete sec4.pins[emp]; delete sec4.fails[emp];
+      saveSecret_(sec4);
+      return json_({ ok: true });
+    } finally { try { lock4.releaseLock(); } catch (e) {} }
   }
 
   return json_({ ok: false, error: 'unknown_action' });
