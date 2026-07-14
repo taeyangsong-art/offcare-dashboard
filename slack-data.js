@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 450,
+  "version": 451,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -25464,19 +25464,19 @@ window.SLACK_DATA = {
     },
     "2026-07-14": {
       "counts": {
-        "extern": {
-          "서상원": 1
-        },
         "as": {
-          "김동욱": 18,
+          "김동욱": 19,
+          "서상원": 2,
           "배선유": 14,
           "심성현": 20,
           "김현기": 14,
           "최민석": 2,
-          "서상원": 1,
           "송태양": 5,
           "김규빈": 6,
           "김기범": 2
+        },
+        "extern": {
+          "서상원": 1
         },
         "onboarding": {
           "배선유": 1,
@@ -25485,7 +25485,7 @@ window.SLACK_DATA = {
           "김동욱": 1
         },
         "transfer": {
-          "송태양": 7,
+          "송태양": 8,
           "김동욱": 3
         },
         "menu": {
@@ -25494,16 +25494,27 @@ window.SLACK_DATA = {
           "김동욱": 3
         },
         "delivery": {
+          "최민석": 1,
           "김현기": 1
         }
       },
       "pending": [
         {
-          "time": "15:24",
-          "store": "해양 참치",
-          "biz": "",
-          "handler": "송태양",
-          "cat": "transfer",
+          "time": "15:31",
+          "store": "식객",
+          "biz": "6282901676",
+          "handler": "김현기",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "15:23",
+          "store": "소다팥",
+          "biz": "8763801466",
+          "handler": "배선유",
+          "cat": "menu",
           "reasons": [
             "확인 후 미완료"
           ]
@@ -25530,6 +25541,27 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "15:39",
+          "store": "웅이분식",
+          "biz": "5880902817",
+          "cat": "as",
+          "emp": "김동욱"
+        },
+        {
+          "time": "15:38",
+          "store": "신조선족발",
+          "biz": "4456400302",
+          "cat": "as",
+          "emp": "서상원"
+        },
+        {
+          "time": "15:24",
+          "store": "해양 참치",
+          "biz": "",
+          "cat": "transfer",
+          "emp": "송태양"
+        },
         {
           "time": "15:21",
           "store": "미래엔 수학학원",
@@ -25584,6 +25616,13 @@ window.SLACK_DATA = {
           "store": "린다린다",
           "biz": "1690303501",
           "cat": "as",
+          "emp": "최민석"
+        },
+        {
+          "time": "15:00",
+          "store": "형주네보리밥",
+          "biz": "6484401111",
+          "cat": "delivery",
           "emp": "최민석"
         },
         {
@@ -26343,20 +26382,20 @@ window.SLACK_DATA = {
           "emp": "배선유"
         }
       ],
-      "updatedAt": "15:30",
+      "updatedAt": "15:45",
       "voc": {
-        "responses": 13,
+        "responses": 14,
         "install": {
           "count": 3,
           "low": 1
         },
         "nps": {
-          "count": 13,
+          "count": 14,
           "low": 5
         },
         "high": {
           "install": 0,
-          "nps": 5
+          "nps": 6
         },
         "npsDist": {
           "3": 2,
@@ -26364,7 +26403,7 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 1,
           "9": 1,
-          "10": 5
+          "10": 6
         },
         "installDist": {
           "1": 1,
@@ -26375,6 +26414,10 @@ window.SLACK_DATA = {
           "요식업": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 3,
+            "low": 0
+          },
           "12개월": {
             "total": 2,
             "low": 2
@@ -26387,16 +26430,16 @@ window.SLACK_DATA = {
             "total": 3,
             "low": 2
           },
-          "6개월": {
-            "total": 2,
-            "low": 0
-          },
           "1개월": {
             "total": 3,
             "low": 0
           }
         },
         "byVan": {
+          "DAOU": {
+            "total": 2,
+            "low": 0
+          },
           "KPN": {
             "total": 3,
             "low": 2
@@ -26414,10 +26457,6 @@ window.SLACK_DATA = {
             "low": 0
           },
           "SMARTRO": {
-            "total": 1,
-            "low": 0
-          },
-          "DAOU": {
             "total": 1,
             "low": 0
           }
