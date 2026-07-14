@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 439,
+  "version": 440,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -25466,7 +25466,7 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김현기": 11,
-          "심성현": 14,
+          "심성현": 15,
           "김동욱": 11,
           "배선유": 6,
           "김기범": 2,
@@ -25491,10 +25491,20 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "12:05",
-          "store": "한라산청담",
-          "biz": "6121391416",
-          "handler": "심성현",
+          "time": "13:00",
+          "store": "청정자원",
+          "biz": "7381302215",
+          "handler": "송태양",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "12:56",
+          "store": "한남포차",
+          "biz": "1060565946",
+          "handler": "배선유",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
@@ -25563,6 +25573,13 @@ window.SLACK_DATA = {
           "biz": "5891302743",
           "cat": "as",
           "emp": "김동욱"
+        },
+        {
+          "time": "12:05",
+          "store": "한라산청담",
+          "biz": "6121391416",
+          "cat": "as",
+          "emp": "심성현"
         },
         {
           "time": "12:00",
@@ -25971,7 +25988,7 @@ window.SLACK_DATA = {
           "emp": "배선유"
         }
       ],
-      "updatedAt": "12:35",
+      "updatedAt": "13:00",
       "voc": {
         "responses": 3,
         "install": {
