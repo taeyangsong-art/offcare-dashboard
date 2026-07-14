@@ -1415,7 +1415,13 @@ function loadCloud(cb){
   }).catch(()=>{ if(cb)cb(); });
 }
 function loadGameCloud(cb){ loadCloud(cb); }   // 하위호환
-function setGameMe(v){ gameMe=v; save("opcare_gameme_v1",gameMe); renderGame(); }
+async function setGameMe(v){
+  gameMe=v; save("opcare_gameme_v1",gameMe); renderGame();
+  if(v && GAME_API && !isGameAuthed(v)){
+    const ok = await requireAuth(v);      // 이름 선택 즉시 PIN 입력/최초설정 창
+    if(!ok){ gameMe=""; save("opcare_gameme_v1",gameMe); renderGame(); }   // 실패/취소 → 선택 해제
+  }
+}
 /* ===== 코인 사용 본인 인증 (직원별 PIN + 이메일 OTP, 서버 검증) ===== */
 const LS_GAMEAUTH = "opcare_gameauth_v1";
 let GAMEAUTH = load(LS_GAMEAUTH, {});   // { emp: 만료ms } — 이 브라우저에서 인증된 세션 (7일)
