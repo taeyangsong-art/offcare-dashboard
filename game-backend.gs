@@ -7,19 +7,28 @@
 
 var SHEET_ID = '';
 
-// Employee company emails for OTP (keys = names shown in the app). FILL THE EMPTY '' PARTS.
+// Employee emails for OTP. Keys are \u escapes of the app names (pure ASCII, paste-proof).
+// Fill the empty '' parts with each person's @ishopcare email.
 var EMP_EMAIL = {
-  '송태양': 'taeyang.song@ishopcare.co.kr',   // 송태양
-  '김기범': '',   // 김기범
-  '서상원': '',   // 서상원
-  '김규빈': '',   // 김규빈
-  '김동욱': '',   // 김동욱
-  '김현기': '',   // 김현기
-  '배선유': '',   // 배선유
-  '최민석': '',   // 최민석
-  '심성현': ''    // 심성현
+  '송태양': 'taeyang.song@ishopcare.co.kr',  // song tae-yang
+  '김기범': '',  // gim gi-beom
+  '서상원': '',  // seo sang-won
+  '김규빈': '',  // gim gyu-bin
+  '김동욱': '',  // gim dong-uk
+  '김현기': '',  // gim hyeon-gi
+  '배선유': '',  // bae seon-yu
+  '최민석': '',  // choe min-seok
+  '심성현': ''   // sim seong-hyeon
 };
-function emailOf_(emp) { return EMP_EMAIL[emp] || ''; }
+function norm_(s) { try { return ('' + s).normalize('NFC'); } catch (x) { return '' + s; } }
+function emailOf_(emp) {
+  if (EMP_EMAIL[emp]) { return EMP_EMAIL[emp]; }
+  var e = norm_(emp);
+  for (var k in EMP_EMAIL) {
+    if (norm_(k) === e && EMP_EMAIL[k]) { return EMP_EMAIL[k]; }
+  }
+  return '';
+}
 
 function store_() {
   var ss;
@@ -103,13 +112,13 @@ function doPost(e) {
 }
 
 function handleAuth_(p) {
-  var emp = p.emp || '';
+  var emp = norm_(p.emp || '');
   var action = p.action;
 
   if (action === 'status') {
     var s0 = readSecret_();
     var pins0 = s0.pins || {};
-    return json_({ ok: true, hasPin: !!pins0[emp], hasEmail: !!emailOf_(emp) });
+    return json_({ ok: true, hasPin: !!pins0[emp], hasEmail: !!emailOf_(emp), got: emp });
   }
 
   if (action === 'checkPin') {
