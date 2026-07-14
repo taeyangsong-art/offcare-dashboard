@@ -219,6 +219,10 @@
   .ab-hat{font-size:38px; line-height:1; margin-bottom:-17px; z-index:3; filter:drop-shadow(0 2px 2px rgba(0,0,0,.16))}
   .ab-face{font-size:56px; line-height:1; z-index:2; filter:drop-shadow(0 3px 4px rgba(0,0,0,.15))}
   .ab-body{font-size:46px; line-height:1; margin-top:-13px; z-index:1; filter:drop-shadow(0 3px 4px rgba(0,0,0,.13))}
+  .ab-svg{position:relative; z-index:2; filter:drop-shadow(0 3px 4px rgba(0,0,0,.16))}
+  .ab-svg svg{display:block}
+  .ab-facex{position:absolute; top:24%; left:0; right:0; text-align:center; font-size:26px; line-height:1;
+    filter:drop-shadow(0 1px 1px rgba(0,0,0,.2)); pointer-events:none}
   .ab-pet{position:absolute; bottom:14px; right:9px; font-size:31px; z-index:4;
     filter:drop-shadow(0 2px 3px rgba(0,0,0,.2)); animation:abFloat 2.4s ease-in-out infinite}
   .ab-platform{position:absolute; bottom:12px; width:74px; height:12px; border-radius:50%;
@@ -1354,13 +1358,62 @@ function owns(emp,cat,id){ const it=itemById(cat,id); if(it&&it.price===0) retur
 function partE(cat,id){ const it=itemById(cat,id); return it?(it.e||''):''; }
 function titleName(eq){ const t=itemById('title',(eq||{}).title); return t?t.name:''; }
 function nametagStyle(eq){ const n=itemById('nametag',(eq||{}).nametag); if(!n) return ''; if(n.grad) return `background:${n.grad};-webkit-background-clip:text;background-clip:text;color:transparent`; let s=''; if(n.color) s+=`color:${n.color};`; if(n.glow) s+=`text-shadow:0 0 8px ${n.glow};`; return s; }
+/* 오리지널 도트(픽셀) 캐릭터 — 메이플st 느낌, 저작권 무관 자체 제작.
+   H:머리 h:머리하이라이트 S:피부 E:눈 M:입 B:상의 W:옷깃 P:바지 O:신발 */
+const PX_PAL = {H:'#6b4a2b',h:'#9a774a',S:'#ffdcb0',E:'#2b2118',M:'#d05a52',B:'#3f7fe0',W:'#eaf1ff',P:'#39404d',O:'#7a4a28'};
+const PX_MAP = [
+  "....HHHHHHHH....",
+  "...HHHHHHHHHH...",
+  "..HHHHHHHHHHHH..",
+  "..HhhhhhhhhhhH..",
+  "..HSSSSSSSSSSH..",
+  "..HSSSSSSSSSSH..",
+  "..HSSEESSEESSH..",
+  "..HSSEESSEESSH..",
+  "..HSSSSSSSSSSH..",
+  "..HSSSSMMSSSSH..",
+  "..HSSSSSSSSSSH..",
+  "...SSSSSSSSSS...",
+  "....WBBBBBBW....",
+  "...BBBBBBBBBB...",
+  "..SBBBBBBBBBBS..",
+  "..SBBBBBBBBBBS..",
+  "...BBBBBBBBBB...",
+  "...PPPP..PPPP...",
+  "...PPPP..PPPP...",
+  "...OOOO..OOOO..."
+];
+function pixelChar(faceEmoji, shirt){
+  const px=6, W=16, rects=[];
+  for(let y=0; y<PX_MAP.length; y++){
+    const row=PX_MAP[y]; let x=0;
+    while(x<W){
+      let c=row[x];
+      if(c==='.'||c===undefined){ x++; continue; }
+      if(faceEmoji && (c==='E'||c==='M')) c='S';   // 표정 이모지 장착 시 눈·입 숨김
+      let run=1;
+      while(x+run<W){ let n=row[x+run]; if(faceEmoji&&(n==='E'||n==='M')) n='S'; if(n===c) run++; else break; }
+      const col = (c==='B' && shirt) ? shirt : (PX_PAL[c]||'#000');
+      rects.push(`<rect x="${x*px}" y="${y*px}" width="${run*px}" height="${px}" fill="${col}"/>`);
+      x+=run;
+    }
+  }
+  const w=Math.round(W*px*0.9), h=Math.round(PX_MAP.length*px*0.9);
+  return `<div class="ab-svg"><svg width="${w}" height="${h}" viewBox="0 0 ${W*px} ${PX_MAP.length*px}" shape-rendering="crispEdges">${rects.join('')}</svg>${faceEmoji?`<span class="ab-facex">${faceEmoji}</span>`:''}</div>`;
+}
 function avatarBig(eq){ eq=eq||{};
-  const hat=partE('hat',eq.hat), face=partE('face',eq.face)||'🙂', body=partE('outfit',eq.outfit)||'👕', pet=partE('pet',eq.pet);
+  const hat=partE('hat',eq.hat), pet=partE('pet',eq.pet);
+  const faceIt=itemById('face',eq.face), outfitIt=itemById('outfit',eq.outfit);
+  const faceCustom = (faceIt && faceIt.id!=='f_smile') ? faceIt.e : '';       // 기본(😀) 외 표정만 오버레이
+  const outfitCustom = (outfitIt && outfitIt.id!=='o_none') ? outfitIt.e : ''; // 구매 의상(전신 이모지) 착용 여부
+  const charInner = outfitCustom
+    ? `<div class="ab-face">${faceCustom||'😀'}</div><div class="ab-body">${outfitCustom}</div>`  // 구매 의상 → 기존 이모지 캐릭터
+    : pixelChar(faceCustom);                                                                        // 기본 → 오리지널 도트 캐릭터
   return `<div class="avatar-big">
     <div class="ab-glow"></div>
     <div class="ab-sparkle s1">✨</div><div class="ab-sparkle s2">⭐</div><div class="ab-sparkle s3">✨</div>
     <div class="ab-platform"></div>
-    <div class="ab-char">${hat?`<div class="ab-hat">${hat}</div>`:''}<div class="ab-face">${face}</div><div class="ab-body">${body}</div></div>
+    <div class="ab-char">${hat?`<div class="ab-hat">${hat}</div>`:''}${charInner}</div>
     ${pet?`<div class="ab-pet">${pet}</div>`:''}
   </div>`;
 }
