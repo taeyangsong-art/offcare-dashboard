@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 456,
+  "version": 457,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -25465,20 +25465,20 @@ window.SLACK_DATA = {
     "2026-07-14": {
       "counts": {
         "as": {
-          "배선유": 15,
-          "김현기": 19,
-          "최민석": 4,
+          "최민석": 5,
+          "서상원": 3,
+          "배선유": 18,
+          "김현기": 20,
           "심성현": 23,
           "송태양": 6,
           "김동욱": 19,
-          "서상원": 2,
           "김기범": 3,
           "김규빈": 6
         },
         "onboarding": {
+          "최민석": 2,
           "배선유": 2,
           "김동욱": 2,
-          "최민석": 1,
           "심성현": 3,
           "송태양": 2
         },
@@ -25501,9 +25501,19 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "16:31",
-          "store": "파이하우스",
-          "biz": "1201236784",
+          "time": "16:50",
+          "store": "트리드 앤 라메르",
+          "biz": "2400602312",
+          "handler": "송태양",
+          "cat": "transfer",
+          "reasons": [
+            "1차 부재"
+          ]
+        },
+        {
+          "time": "16:39",
+          "store": "강창구찹쌀진순대 양재역점",
+          "biz": "5445600055",
           "handler": "배선유",
           "cat": "as",
           "reasons": [
@@ -25511,10 +25521,10 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "16:20",
-          "store": "굿찜 본점",
-          "biz": "3345100977",
-          "handler": "김현기",
+          "time": "16:31",
+          "store": "파이하우스",
+          "biz": "1201236784",
+          "handler": "배선유",
           "cat": "as",
           "reasons": [
             "1차 부재"
@@ -25532,6 +25542,55 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "16:52",
+          "store": "멜티드버거",
+          "biz": "5712502008",
+          "cat": "as",
+          "emp": "최민석"
+        },
+        {
+          "time": "16:50",
+          "store": "소망유통",
+          "biz": "4263400513",
+          "cat": "as",
+          "emp": "서상원"
+        },
+        {
+          "time": "16:41",
+          "store": "세상의 모든 튀김",
+          "biz": "8023401074",
+          "cat": "as",
+          "emp": "배선유"
+        },
+        {
+          "time": "16:41",
+          "store": "글로우스킨랩",
+          "biz": "2465701026",
+          "cat": "as",
+          "emp": "배선유"
+        },
+        {
+          "time": "16:40",
+          "store": "휴대폰유치원",
+          "biz": "4990903461",
+          "cat": "as",
+          "emp": "김현기"
+        },
+        {
+          "time": "16:32",
+          "store": "솔드 아웃 팩토리",
+          "biz": "3673601707",
+          "cat": "as",
+          "emp": "배선유"
+        },
+        {
+          "time": "16:31",
+          "store": "매쓰두잉센터수학교습소",
+          "biz": "7779202272",
+          "cat": "onboarding",
+          "emp": "최민석"
+        },
         {
           "time": "16:30",
           "store": "오(O)설",
@@ -26527,20 +26586,20 @@ window.SLACK_DATA = {
           "emp": "배선유"
         }
       ],
-      "updatedAt": "16:45",
+      "updatedAt": "17:00",
       "voc": {
-        "responses": 17,
+        "responses": 18,
         "install": {
           "count": 5,
           "low": 2
         },
         "nps": {
-          "count": 17,
+          "count": 18,
           "low": 7
         },
         "high": {
           "install": 0,
-          "nps": 7
+          "nps": 8
         },
         "npsDist": {
           "0": 1,
@@ -26549,7 +26608,7 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 1,
           "9": 1,
-          "10": 7
+          "10": 8
         },
         "installDist": {
           "1": 2,
@@ -26562,6 +26621,10 @@ window.SLACK_DATA = {
           "요식업": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 3,
+            "low": 2
+          },
           "3개월": {
             "total": 4,
             "low": 2
@@ -26574,16 +26637,16 @@ window.SLACK_DATA = {
             "total": 3,
             "low": 0
           },
-          "12개월": {
-            "total": 2,
-            "low": 2
-          },
           "1개월": {
             "total": 3,
             "low": 0
           }
         },
         "byVan": {
+          "KSNET": {
+            "total": 2,
+            "low": 1
+          },
           "KIS": {
             "total": 7,
             "low": 3
@@ -26599,10 +26662,6 @@ window.SLACK_DATA = {
           "KPN": {
             "total": 3,
             "low": 2
-          },
-          "KSNET": {
-            "total": 1,
-            "low": 1
           },
           "SECTA9": {
             "total": 2,
