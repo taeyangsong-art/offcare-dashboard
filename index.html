@@ -232,8 +232,11 @@
   .it-tip-part .pt-mini{width:70px; height:70px}
   .avatar-secthead{display:flex; align-items:center; justify-content:space-between; gap:10px;
     font-weight:800; font-size:15px; color:var(--gray); padding:8px 2px 2px}
-  .gender-pop{background:#fff; border-radius:22px; padding:26px 30px; text-align:center;
+  .gender-pop{position:relative; background:#fff; border-radius:22px; padding:26px 30px; text-align:center;
     box-shadow:0 24px 60px rgba(0,0,0,.32); max-width:92vw}
+  .gp-x{position:absolute; top:12px; right:14px; width:32px; height:32px; border:none; border-radius:50%;
+    background:#f2f2f4; color:#6b7280; font-size:16px; font-weight:800; cursor:pointer; line-height:1; transition:.15s}
+  .gp-x:hover{background:#ffe0e0; color:#e0218a}
   .gp-title{font-size:20px; font-weight:800; margin-bottom:18px; color:var(--ink)}
   .gp-opts{display:flex; gap:18px; justify-content:center}
   .gp-card{border:2px solid #e5e5e5; border-radius:18px; padding:14px 20px; background:#fafafa;
@@ -1561,8 +1564,11 @@ function miniFeature(cat,it){ const head=`<ellipse cx="60" cy="56" rx="26" ry="2
   if(cat==='mouth') return `${head}${pMouth(it.ms)}`;
   return ''; }
 // 성별 선택
+let genderDismissed=false;   // X로 닫으면 이 세션에서 자동 팝업 안 함(상점 버튼으로는 다시 열림)
 function chooseGender(g){ const emp=gameMe; if(!emp) return; gs(emp).gender=g; saveGame(); const o=document.getElementById('genderPop'); if(o) o.remove(); renderGame(); }
+function closeGenderModal(){ genderDismissed=true; const o=document.getElementById('genderPop'); if(o) o.remove(); }
 function genderModal(){ return `<div id="genderPop" class="duty-pop-overlay"><div class="gender-pop">
+    <button class="gp-x" onclick="closeGenderModal()" title="닫기">✕</button>
     <div class="gp-title">캐릭터를 선택하세요 🎮</div>
     <div class="gp-opts">
       <button class="gp-card" onclick="chooseGender('m')"><div class="gp-av">${charSvg({}, 'm')}</div><div class="gp-lb">👦 남자</div></button>
@@ -1570,7 +1576,7 @@ function genderModal(){ return `<div id="genderPop" class="duty-pop-overlay"><di
     </div>
     <div class="gp-note">나중에 상점에서 언제든 바꿀 수 있어요</div>
   </div></div>`; }
-function showGenderModal(){ if(!gameMe) return; const o=document.getElementById('genderPop'); if(o) o.remove(); document.body.insertAdjacentHTML('beforeend', genderModal()); }
+function showGenderModal(){ if(!gameMe) return; genderDismissed=false; const o=document.getElementById('genderPop'); if(o) o.remove(); document.body.insertAdjacentHTML('beforeend', genderModal()); }
 // 타이틀 등급별 폰트색·후광
 function titleStyleOf(t){ if(!t) return ''; if(t.grad) return `background:${t.grad};-webkit-background-clip:text;background-clip:text;color:transparent`; const map={common:'color:#6b7280',rare:'color:#1a73e8;text-shadow:0 0 6px rgba(26,115,232,.55)',epic:'color:#9c36b5;text-shadow:0 0 8px rgba(156,54,181,.6)',legendary:'color:#e8820a;text-shadow:0 0 10px rgba(232,130,10,.8)'}; return map[t.rarity]||map.common; }
 function titleStyle(eq){ return titleStyleOf(itemById('title',(eq||{}).title)); }
@@ -1749,7 +1755,7 @@ function renderGame(){
       <div class="controls"><select class="sel" onchange="setGameMe(this.value)"><option value="">👤 본인 선택</option>${opts}</select><button class="btn" onclick="adminResetPin()" title="관리자: 직원 PIN 초기화">🔧 PIN 초기화</button></div>
     </div>
     ${body}`;
-  if(gameMe && GAME[gameMe] && !GAME[gameMe].gender) showGenderModal();
+  if(gameMe && GAME[gameMe] && !GAME[gameMe].gender && !genderDismissed){ const o=document.getElementById('genderPop'); if(o)o.remove(); document.body.insertAdjacentHTML('beforeend', genderModal()); }
 }
 /* ===== 🎣 낚시터 (가챠) ===== */
 const FISH = {
