@@ -1618,18 +1618,29 @@ function cloudBlob(){ return { _v:2, players:GAME, vocEdit:VOCEDIT, vocPraise:VO
 // 변경된 항목만 patch로 전송 → 서버가 잠금+병합(동시편집 안전, 경량)
 function pushPatch(patch){ if(!GAME_API) return; fetch(GAME_API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({patch})}).catch(()=>{}); }
 function saveGame(){ save(LS_GAME,GAME); if(gameMe&&GAME[gameMe]) pushPatch({players:{[gameMe]:GAME[gameMe]}}); }
+// 로컬↔클라우드 병합: 클라우드에 있는 키는 클라우드 값 우선, 로컬에만 있는 키는 보존 + 복원(재업로드).
+// → 클라우드 초기화(시트 재생성) 사고가 나도 로컬 데이터가 지워지지 않고 오히려 클라우드를 되살림.
+function mergeCloudDict(localObj, cloudObj){
+  const merged=Object.assign({}, localObj||{});
+  const restore={};
+  if(cloudObj) for(const k in cloudObj) merged[k]=cloudObj[k];
+  if(localObj) for(const k in localObj) if(!cloudObj || !(k in cloudObj)) restore[k]=localObj[k];
+  return {merged, restore};
+}
 function loadCloud(cb){
   if(!GAME_API){ if(cb)cb(); return; }
   fetch(GAME_API+'?t='+Date.now()).then(r=>r.json()).then(d=>{
     const b=d&&d.game;
     if(b){
-      if(b._v||b.players){   // 신규 통합 포맷
-        if(b.players) GAME=b.players;
-        if(b.vocEdit) VOCEDIT=b.vocEdit;
-        if(b.vocPraise) VOCPRAISE=b.vocPraise;
-        if(b.vocComment) VOCCOMMENT=b.vocComment;
-        if(b.dutyOver) DUTYOVER=b.dutyOver;
-      } else { GAME=b; }     // 구 포맷(게임 데이터만)
+      if(b._v||b.players){   // 신규 통합 포맷 — 파괴적 덮어쓰기 대신 병합
+        const rp={};
+        const mP=mergeCloudDict(GAME,b.players);       GAME=mP.merged;       if(Object.keys(mP.restore).length) rp.players=mP.restore;
+        const mE=mergeCloudDict(VOCEDIT,b.vocEdit);     VOCEDIT=mE.merged;     if(Object.keys(mE.restore).length) rp.vocEdit=mE.restore;
+        const mR=mergeCloudDict(VOCPRAISE,b.vocPraise); VOCPRAISE=mR.merged;   if(Object.keys(mR.restore).length) rp.vocPraise=mR.restore;
+        const mC=mergeCloudDict(VOCCOMMENT,b.vocComment);VOCCOMMENT=mC.merged; if(Object.keys(mC.restore).length) rp.vocComment=mC.restore;
+        const mD=mergeCloudDict(DUTYOVER,b.dutyOver);   DUTYOVER=mD.merged;    if(Object.keys(mD.restore).length) rp.dutyOver=mD.restore;
+        if(Object.keys(rp).length) pushPatch(rp);      // 로컬에만 있던 데이터를 클라우드에 복원
+      } else { GAME=mergeCloudDict(GAME,b).merged; }   // 구 포맷(게임 데이터만)
       save(LS_GAME,GAME); save(LS_VOCEDIT,VOCEDIT); save(LS_VOCPRAISE,VOCPRAISE); save(LS_VOCCOMMENT,VOCCOMMENT); save(LS_DUTYOVER,DUTYOVER);
     }
     if(cb)cb();
@@ -2339,9 +2350,10 @@ function renderVoc(){
   const indDMax=Math.max(1,...indEntries.map(e=>e[1].length)), reaDMax=Math.max(1,...reaEntries.map(e=>e[1].length));
 
   const isDone=a=>vocDone(vocEffStatus(a));
-  // 미처리(처리중) 저점 건은 날짜가 지나도 계속 누적 표시 — 조회기간 종료일까지의 전체 미처리 건
+  // 미처리(처리중) 저점 건은 날짜가 지나도 누적 표시 — 단, 최근 1달(31일) 이내만. 1달 넘은 미처리는 자동 제외.
   const carryEnd=viewDates[viewDates.length-1];
-  const carryDates=allSlackDates().filter(d=>d<=carryEnd);
+  const carryStart=ymd(addDays(parseYmd(carryEnd), -31));
+  const carryDates=allSlackDates().filter(d=>d>=carryStart && d<=carryEnd);
   const carryAgg=aggVoc(carryDates);
   const pendingAlerts=carryAgg.alerts.filter(a=>!isDone(a)).sort((a,b)=>(a.date||'').localeCompare(b.date||''));
   // 완료 매장도 누적: 조회기간 종료일까지 완료된 건 전체, 완료일 최신순
