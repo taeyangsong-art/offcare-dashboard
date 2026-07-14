@@ -1076,6 +1076,21 @@ let shareMonth = new Date(today().getFullYear(), today().getMonth(), 1);
 let shareFilter = "all"; // all | 직원명
 // 전체현황 전용 기간 (다른 탭과 독립 · 탭 진입 시 오늘로 리셋)
 let ovMode = "today";                        // yesterday | today | d7 | d30 | range
+let ovShift = "all";                         // all(전체) | night(야간, 18:00 이후 인입)
+const NIGHT_FROM = "18:00";                   // 야간 기준 시각
+function isNightTime(t){ return (t||"") >= NIGHT_FROM; }
+function shiftToggle(){ return `<div class="seg"><button class="${ovShift==='all'?'on':''}" onclick="setOvShift('all')">☀️ 전체</button><button class="${ovShift==='night'?'on':''}" onclick="setOvShift('night')">🌙 야간</button></div>`; }
+function setOvShift(s){ ovShift=s; renderOverview(); }
+// 야간(18:00 이후 인입) 항목 = 처리(done)+미처리(pending)+VOC처리, 시간>=18:00
+function nightItems(dates){
+  const out=[], set=new Set(dates);
+  dates.forEach(d=>{
+    ((slackDay(d)||{}).done||[]).forEach(x=>{ if(isNightTime(x.time)) out.push({time:x.time,store:x.store,biz:x.biz,emp:x.emp,cat:x.cat,date:d,st:'처리'}); });
+    ((slackDay(d)||{}).pending||[]).forEach(x=>{ if(isNightTime(x.time)){ const ab=(x.reasons||[]).some(r=>/부재/.test(r)); out.push({time:x.time,store:x.store,biz:x.biz,emp:x.handler,cat:x.cat,date:d,st:ab?'부재':'확인필요'}); } });
+  });
+  allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ if(x.emp&&x.doneDate&&set.has(x.doneDate)&&isNightTime(x.time)) out.push({time:x.time,store:x.store,biz:x.storeId,emp:x.emp,cat:'voc',date:x.doneDate,st:'처리'}); }); });
+  return out;
+}
 let ovStart = ymd(addDays(today(),-6));
 let ovEnd = ymd(today());
 
@@ -1159,7 +1174,7 @@ function renderNav(){
     return btn;
   }).join("");
 }
-function selectCat(k){ if(k==='overview'){ resetOverviewPeriod(); celebrateMvp=true; } if(k==='voc') resetVocPeriod(); if(k==='game-fish') fishRoom=null; if(k==='teamgoal') teamGoalRef=today(); activeCat=k; renderNav(); renderMain(); window.scrollTo(0,0); }
+function selectCat(k){ if(k==='overview'){ resetOverviewPeriod(); celebrateMvp=true; ovShift='all'; } if(k==='voc') resetVocPeriod(); if(k==='game-fish') fishRoom=null; if(k==='teamgoal') teamGoalRef=today(); activeCat=k; renderNav(); renderMain(); window.scrollTo(0,0); }
 
 /* ================= Main dispatch ================= */
 function renderMain(){
@@ -1506,6 +1521,7 @@ function renderFishRoom(spot, emp){
 
 /* ================= Overview (전체 현황) ================= */
 function renderOverview(){
+  if(ovShift==='night'){ renderNight(); return; }
   const viewDates = ovDates();
   const viewLabel = ovLabel();
   const trendDates = []; for(let i=6;i>=0;i--) trendDates.push(ymd(addDays(today(),-i)));   // 처리 추이는 항상 최근 7일
@@ -1569,7 +1585,7 @@ function renderOverview(){
         <h2>📊 전체 현황 <span class="live-dot" title="자동 갱신 중"></span></h2>
         <div class="sub">모든 카테고리 · 직원별 처리건수를 한 화면에서 · ${ovRangeText()}${(function(){const dd=slackDay(ymd(today()));return dd&&dd.updatedAt?` · 최신 집계 ${dd.updatedAt}`:'';})()}</div>
       </div>
-      <div class="controls">${overviewControls()}</div>
+      <div class="controls">${shiftToggle()}${overviewControls()}</div>
     </div>
 
     <div class="headline">
@@ -1706,6 +1722,9 @@ function showDoneDetail(mode, key){
     pushVocDone();
     dates.forEach(d=>((slackDay(d)||{}).pending||[]).forEach(x=>{ const ab=(x.reasons||[]).some(r=>/부재/.test(r)); items.push({time:x.time,store:x.store,biz:x.biz,emp:x.handler,cat:x.cat,date:d,st:ab?'부재':'확인필요'}); }));
   }
+  openDetailModal(title, items);
+}
+function openDetailModal(title, items){
   items.sort((a,b)=>((b.date||'')+(b.time||'')).localeCompare((a.date||'')+(a.time||'')));
   const rows = items.length? items.map((x,i)=>`<tr class="dm-row" data-k="${((x.store||'')+' '+(x.biz||'')).toLowerCase()}"><td class="dm-num">${i+1}</td><td class="trow-time">${fmtShort(x.date)}<br>${x.time||''}</td><td>${detailStatusBadge(x.st)}</td><td>${catChip(x.cat)}</td><td class="emp-name">${escapeHtml(x.store||'-')}</td><td class="trow-biz">${escapeHtml(x.biz||'-')}</td><td>${escapeHtml(x.emp||'-')}</td></tr>`).join('')
     : `<tr><td colspan="7" style="text-align:center;color:var(--gray2);padding:22px">상세 데이터가 없습니다.<br><span style="font-size:12px">과거 일자는 <b>backfill</b> 워크플로 실행 후 표시됩니다.</span></td></tr>`;
@@ -1715,6 +1734,71 @@ function showDoneDetail(mode, key){
     <div class="detail-scroll"><table class="voc-table"><thead><tr><th style="width:34px">#</th><th style="width:52px">시간</th><th style="width:72px">상태</th><th style="width:88px">유형</th><th>상호</th><th style="width:110px">사업자</th><th style="width:62px">담당</th></tr></thead><tbody id="doneModalBody">${rows}</tbody></table></div></div>`;
 }
 function filterDoneModal(q){ q=(q||'').trim().toLowerCase(); document.querySelectorAll('#doneModalBody .dm-row').forEach(tr=>{ tr.style.display=(tr.dataset.k||'').includes(q)?'':'none'; }); }
+function showNightDetail(){ openDetailModal('🌙 야간 상세 (18:00 이후 인입)', nightItems(ovDates())); }
+function showNightCat(catKey){ openDetailModal('🌙 야간 · '+catLabelOf(catKey)+' 상세', nightItems(ovDates()).filter(x=>x.cat===catKey)); }
+function showNightEmp(emp){ openDetailModal('🌙 야간 · '+emp+' 처리 상세', nightItems(ovDates()).filter(x=>x.emp===emp&&x.st==='처리')); }
+
+/* ================= 🌙 야간 현황 ================= */
+function renderNight(){
+  const viewDates=ovDates();
+  const items=nightItems(viewDates);
+  const doneItems=items.filter(x=>x.st==='처리'), pendItems=items.filter(x=>x.st!=='처리');
+  const absentN=pendItems.filter(x=>x.st==='부재').length, confirmN=pendItems.filter(x=>x.st==='확인필요').length;
+  const total=doneItems.length, grandAll=total+pendItems.length;
+  // 카테고리별
+  const catCnt={}; doneItems.forEach(x=>catCnt[x.cat]=(catCnt[x.cat]||0)+1);
+  const catTotals=[...WORK_CATS, {key:'voc',name:'VOC',icon:'💬',color:'#ff2d55'}].map(c=>({...c, total:catCnt[c.key]||0})).filter(c=>c.total>0);
+  // 직원별
+  const empCnt={}; doneItems.forEach(x=>{ if(x.emp&&x.emp!=='미지정') empCnt[x.emp]=(empCnt[x.emp]||0)+1; });
+  const empRows=EMPLOYEES.map(e=>({emp:e, total:empCnt[e]||0})).sort((a,b)=>b.total-a.total);
+  const maxE=Math.max(1,...empRows.map(r=>r.total));
+  const mvp = empRows[0]&&empRows[0].total>0 ? empRows[0] : null;
+  document.getElementById("main").innerHTML=`
+    <div class="page-head">
+      <div><h2>🌙 야간 현황 <span class="tg-sub-lab" style="background:#e8eeff;color:#3457d5">18:00 이후 인입</span></h2>
+        <div class="sub">오후 6시 이후 인입된 건만 별도 집계 (전체현황에도 포함됨) · ${ovRangeText()}</div></div>
+      <div class="controls">${shiftToggle()}${overviewControls()}</div>
+    </div>
+
+    <div class="headline">
+      <div class="hl-card blue clickable" onclick="showNightDetail()" title="클릭 → 상세">
+        <div class="hl-ic">🌙</div>
+        <div class="hl-lab">${ovLabel()} 야간 총 건수 <span class="hl-drill">🔎</span></div>
+        <div class="hl-big">${grandAll}<small>건</small></div>
+        ${(absentN||confirmN)?`<div class="ov-delta flat" style="margin-top:2px"><span>처리 ${total}${absentN?` + 부재 ${absentN}`:''}${confirmN?` + 확인필요 ${confirmN}`:''}</span></div>`:`<div class="ov-delta flat"><span>처리 ${total}건</span></div>`}
+      </div>
+      <div class="hl-card gold">
+        <div class="hl-ic">🏆</div>
+        <div class="hl-lab">${ovLabel()} 야간 MVP</div>
+        <div class="hl-big">${mvp?escapeHtml(mvp.emp):'-'}</div>
+        ${mvp?`<div class="mvp-proc" onclick="showNightEmp('${mvp.emp}')"><b>${mvp.total}</b><small>건 처리</small><span class="mvp-proc-hint">🔎 상세 보기</span></div>`:`<div class="ov-delta flat"><span>야간 처리 없음</span></div>`}
+      </div>
+      <div class="hl-card mint">
+        <div class="hl-ic">🌛</div>
+        <div class="hl-lab">야간 미처리</div>
+        <div class="hl-big">${pendItems.length}<small>건</small></div>
+        <div class="ov-delta flat"><span>부재 ${absentN} · 확인필요 ${confirmN}</span></div>
+      </div>
+    </div>
+
+    <div class="ov-tiles">
+      ${catTotals.length? catTotals.map(c=>`
+        <div class="ov-tile clickable" style="--c:${c.color}" onclick="showNightCat('${c.key}')" title="클릭 → 상세">
+          <div class="ov-name"><span class="ov-ic">${c.icon}</span>${c.name}<span class="ov-drill-ic">🔎</span></div>
+          <div class="ov-val">${c.total}<small>건</small></div>
+        </div>`).join('') : '<div class="empty-note" style="grid-column:1/-1">이 기간 야간(18:00 이후) 처리 건이 없습니다</div>'}
+    </div>
+
+    <div class="card light-rank"><div class="card-head"><h3>🌙 야간 직원 랭킹</h3><span class="hint">${ovLabel()} 야간 처리량 TOP</span></div>
+      <div class="rank-row">${empRows.filter(r=>r.total>0).slice(0,5).map((r,i)=>`<div class="rank-item light ${i<3?'top':''}"><div class="rank-medal">${['🥇','🥈','🥉','🏅','🏅'][i]||'🏅'}</div><div class="rank-name">${rankNameHTML(r.emp)}</div><div class="rank-val">${r.total}건</div></div>`).join('')||'<div class="empty-note">야간 처리 데이터 없음</div>'}</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h3>👥 직원별 야간 처리</h3><span class="hint">${ovRangeText()} · 18:00 이후</span></div>
+      ${empRows.some(r=>r.total>0)? empRows.filter(r=>r.total>0).map(r=>`<div class="bar-row"><div class="bar-meta"><span class="nm">${escapeHtml(r.emp)}</span><span class="ct">${r.total}건</span></div><div class="bar-track"><div class="bar-fill" style="width:${r.total/maxE*100}%;background:#3457d5"></div></div></div>`).join('') : '<div class="empty-note">야간 처리 데이터가 없습니다</div>'}
+    </div>
+  `;
+}
 
 // 전체 처리 추이 (기간 내 일별 전 카테고리 합계)
 function overviewTrend(dates){
