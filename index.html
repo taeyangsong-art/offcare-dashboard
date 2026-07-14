@@ -1001,7 +1001,7 @@ let DUTY   = load(LS_DUTY, {});    // { "YYYY-MM-DD": { day, aft, nit } }
 let SHARE  = load(LS_SHARE, {});   // { "YYYY-MM-DD": [ {id, emp, type, title, time} ] }
 const LS_DUTYOVER = "opcare_dutyover_v1";
 let DUTYOVER = load(LS_DUTYOVER, {});   // { "date|time|title": "직원명" } — 회의 원격당번 수동 지정
-function saveDutyOverride(key, name){ if(name) DUTYOVER[key]=name; else delete DUTYOVER[key]; save(LS_DUTYOVER, DUTYOVER); renderShare(); }
+function saveDutyOverride(key, name){ if(name) DUTYOVER[key]=name; else delete DUTYOVER[key]; save(LS_DUTYOVER, DUTYOVER); pushCloud(); renderShare(); }
 function dutyPersonAt(key, mapVal){ return DUTYOVER[key] || mapVal || ''; }
 const LS_REFRESH = "opcare_refresh_v1";
 let REFRESH = load(LS_REFRESH, {});   // { "0900": "이름" } — 리프레쉬(휴게) 타임
@@ -1392,8 +1392,29 @@ function moveItemTip(e){ const t=document.getElementById('itemTip'); if(!t||t.st
 function hideItemTip(){ const t=document.getElementById('itemTip'); if(t) t.style.display='none'; }
 // 랭킹 등 이름 표시(타이틀+얼굴+네임택 색)
 function rankNameHTML(emp){ const eq=(GAME[emp]||{}).equipped||{}; const f=partE('face',eq.face), t=itemById('title',eq.title); return `${f?`<span class="r-face">${f}</span>`:''}${t?`<span class="r-title tr-${t.rarity}" style="${titleStyleOf(t)}">[${escapeHtml(t.name)}]</span>`:''}<span style="${nametagStyle(eq)}">${escapeHtml(emp)}</span>`; }
-function saveGame(){ save(LS_GAME,GAME); if(GAME_API){ fetch(GAME_API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({game:GAME})}).catch(()=>{}); } }
-function loadGameCloud(cb){ if(!GAME_API){ if(cb)cb(); return; } fetch(GAME_API+'?t='+Date.now()).then(r=>r.json()).then(d=>{ if(d&&d.game) GAME=d.game; save(LS_GAME,GAME); if(cb)cb(); }).catch(()=>{ if(cb)cb(); }); }
+// 팀 공유 클라우드 = {players:GAME, vocEdit, vocPraise, vocComment, dutyOver} 통합 블롭 (백엔드는 game 블롭을 그대로 저장/반환)
+function cloudBlob(){ return { _v:2, players:GAME, vocEdit:VOCEDIT, vocPraise:VOCPRAISE, vocComment:VOCCOMMENT, dutyOver:DUTYOVER }; }
+let cloudTimer=null;
+function pushCloud(){ if(!GAME_API) return; clearTimeout(cloudTimer); cloudTimer=setTimeout(()=>{ fetch(GAME_API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({game:cloudBlob()})}).catch(()=>{}); }, 400); }
+function saveGame(){ save(LS_GAME,GAME); pushCloud(); }
+function loadCloud(cb){
+  if(!GAME_API){ if(cb)cb(); return; }
+  fetch(GAME_API+'?t='+Date.now()).then(r=>r.json()).then(d=>{
+    const b=d&&d.game;
+    if(b){
+      if(b._v||b.players){   // 신규 통합 포맷
+        if(b.players) GAME=b.players;
+        if(b.vocEdit) VOCEDIT=b.vocEdit;
+        if(b.vocPraise) VOCPRAISE=b.vocPraise;
+        if(b.vocComment) VOCCOMMENT=b.vocComment;
+        if(b.dutyOver) DUTYOVER=b.dutyOver;
+      } else { GAME=b; }     // 구 포맷(게임 데이터만)
+      save(LS_GAME,GAME); save(LS_VOCEDIT,VOCEDIT); save(LS_VOCPRAISE,VOCPRAISE); save(LS_VOCCOMMENT,VOCCOMMENT); save(LS_DUTYOVER,DUTYOVER);
+    }
+    if(cb)cb();
+  }).catch(()=>{ if(cb)cb(); });
+}
+function loadGameCloud(cb){ loadCloud(cb); }   // 하위호환
 function setGameMe(v){ gameMe=v; save("opcare_gameme_v1",gameMe); renderGame(); }
 function buyOrEquip(cat,id){
   const emp=gameMe; if(!emp){ alert('먼저 상단에서 본인 이름을 선택하세요 🙂'); return; }
@@ -1926,7 +1947,7 @@ function saveVocEdit(key, field, val){
   if(!VOCEDIT[key]) VOCEDIT[key]={};
   if(val==='') delete VOCEDIT[key][field]; else VOCEDIT[key][field]=val;
   if(Object.keys(VOCEDIT[key]).length===0) delete VOCEDIT[key];
-  save(LS_VOCEDIT, VOCEDIT);
+  save(LS_VOCEDIT, VOCEDIT); pushCloud();
   if(field==='reasonCat'||field==='status') renderVoc();   // 사유차트/상태이동 반영
 }
 // 저점 매장 표의 한 행 (업종·저점이유·처리내용·상태 편집)
@@ -2142,16 +2163,16 @@ function saveVocPraise(key, emp){
   if(!VOCPRAISE[key]) VOCPRAISE[key]={};
   if(emp==='') delete VOCPRAISE[key].emp; else VOCPRAISE[key].emp=emp;
   if(!VOCPRAISE[key].deleted && Object.keys(VOCPRAISE[key]).length===0) delete VOCPRAISE[key];
-  save(LS_VOCPRAISE, VOCPRAISE); rerenderVoc();
+  save(LS_VOCPRAISE, VOCPRAISE); pushCloud(); rerenderVoc();
 }
 function deleteVocPraise(key){
   if(!confirm('이 칭찬 건을 목록에서 삭제할까요? (나중에 복원 가능)')) return;
   if(!VOCPRAISE[key]) VOCPRAISE[key]={};
-  VOCPRAISE[key].deleted=true; save(LS_VOCPRAISE, VOCPRAISE); rerenderVoc();
+  VOCPRAISE[key].deleted=true; save(LS_VOCPRAISE, VOCPRAISE); pushCloud(); rerenderVoc();
 }
 function restorePraise(){
   Object.keys(VOCPRAISE).forEach(k=>{ delete VOCPRAISE[k].deleted; if(Object.keys(VOCPRAISE[k]).length===0) delete VOCPRAISE[k]; });
-  save(LS_VOCPRAISE, VOCPRAISE); rerenderVoc();
+  save(LS_VOCPRAISE, VOCPRAISE); pushCloud(); rerenderVoc();
 }
 function rerenderVoc(){ if(activeCat==='voc-monthly') renderVocMonthly(); else if(activeCat==='voc') renderVoc(); }
 
@@ -2308,7 +2329,7 @@ function renderVocMonthly(){
 }
 function vocMonthNav(n){ const r=parseYmd(selDate); selDate=ymd(new Date(r.getFullYear(), r.getMonth()+n, 1)); renderVocMonthly(); }
 function vocMonthToday(){ selDate=ymd(today()); renderVocMonthly(); }
-function saveVocComment(mkey, text){ if(text&&text.trim()) VOCCOMMENT[mkey]=text; else delete VOCCOMMENT[mkey]; save(LS_VOCCOMMENT, VOCCOMMENT); }
+function saveVocComment(mkey, text){ if(text&&text.trim()) VOCCOMMENT[mkey]=text; else delete VOCCOMMENT[mkey]; save(LS_VOCCOMMENT, VOCCOMMENT); pushCloud(); }
 function vocGenComment(mkey){
   const {v,byInd,byReason,totalIn}=vocMonthAgg();
   const ti=Object.entries(byInd).sort((a,b)=>b[1]-a[1]).slice(0,3);
@@ -3006,7 +3027,7 @@ function boot(){
   applySlackData();
   checkRefreshWeek();                                     // 새 주면 리프레쉬 타임 초기화
   renderNav(); renderMain(); checkAuth();
-  loadGameCloud(function(){ if(activeCat==='game'||activeCat==='overview'||activeCat==='teamgoal') renderMain(); });   // 게임 데이터(보유 코인) 팀 공유 로드
+  loadCloud(function(){ renderMain(); });   // 팀 공유 클라우드 로드(게임 코인 + VOC 편집·직원지정·먼슬리코멘트·당번) → 활성 탭 재렌더
   startAutoRefresh();
   checkDutyAlert(); setInterval(checkDutyAlert, 60000);   // 회의 30분 전 당번 알림
   setInterval(checkRefreshWeek, 300000);                 // 탭 오래 켜둬도 월요일 넘어가면 초기화
