@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 465,
+  "version": 466,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -25464,12 +25464,9 @@ window.SLACK_DATA = {
     },
     "2026-07-14": {
       "counts": {
-        "extern": {
-          "서상원": 3
-        },
         "as": {
+          "최민석": 8,
           "심성현": 28,
-          "최민석": 6,
           "김동욱": 23,
           "김기범": 4,
           "김현기": 22,
@@ -25477,6 +25474,9 @@ window.SLACK_DATA = {
           "송태양": 7,
           "서상원": 3,
           "김규빈": 6
+        },
+        "extern": {
+          "서상원": 3
         },
         "onboarding": {
           "최민석": 5,
@@ -25525,6 +25525,20 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "19:00",
+          "store": "수제당 케익전문",
+          "biz": "6666700706",
+          "cat": "as",
+          "emp": "최민석"
+        },
+        {
+          "time": "18:55",
+          "store": "해우리 제철음식",
+          "biz": "7450304041",
+          "cat": "as",
+          "emp": "최민석"
+        },
         {
           "time": "18:42",
           "store": "호텔 모뭄",
@@ -26821,15 +26835,15 @@ window.SLACK_DATA = {
           "emp": "배선유"
         }
       ],
-      "updatedAt": "19:00",
+      "updatedAt": "19:15",
       "voc": {
-        "responses": 21,
+        "responses": 22,
         "install": {
           "count": 6,
           "low": 2
         },
         "nps": {
-          "count": 21,
+          "count": 22,
           "low": 8
         },
         "high": {
@@ -26843,7 +26857,7 @@ window.SLACK_DATA = {
           "5": 4,
           "7": 2,
           "8": 1,
-          "9": 1,
+          "9": 2,
           "10": 9
         },
         "installDist": {
@@ -26858,13 +26872,13 @@ window.SLACK_DATA = {
           "요식업": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 5,
+            "low": 0
+          },
           "1개월": {
             "total": 4,
             "low": 1
-          },
-          "6개월": {
-            "total": 4,
-            "low": 0
           },
           "구매설치": {
             "total": 6,
@@ -26880,13 +26894,13 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "DAOU": {
+            "total": 4,
+            "low": 0
+          },
           "KPN": {
             "total": 4,
             "low": 3
-          },
-          "DAOU": {
-            "total": 3,
-            "low": 0
           },
           "KIS": {
             "total": 8,
