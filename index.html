@@ -1394,8 +1394,8 @@ function hideItemTip(){ const t=document.getElementById('itemTip'); if(t) t.styl
 function rankNameHTML(emp){ const eq=(GAME[emp]||{}).equipped||{}; const f=partE('face',eq.face), t=itemById('title',eq.title); return `${f?`<span class="r-face">${f}</span>`:''}${t?`<span class="r-title tr-${t.rarity}" style="${titleStyleOf(t)}">[${escapeHtml(t.name)}]</span>`:''}<span style="${nametagStyle(eq)}">${escapeHtml(emp)}</span>`; }
 // 팀 공유 클라우드 = {players:GAME, vocEdit, vocPraise, vocComment, dutyOver} 통합 블롭 (백엔드는 game 블롭을 그대로 저장/반환)
 function cloudBlob(){ return { _v:2, players:GAME, vocEdit:VOCEDIT, vocPraise:VOCPRAISE, vocComment:VOCCOMMENT, dutyOver:DUTYOVER }; }
-// 변경된 항목만 patch로 전송 → 서버가 잠금+병합(동시편집 안전). game은 구백엔드 호환 폴백.
-function pushPatch(patch){ if(!GAME_API) return; fetch(GAME_API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({patch, game:cloudBlob()})}).catch(()=>{}); }
+// 변경된 항목만 patch로 전송 → 서버가 잠금+병합(동시편집 안전, 경량)
+function pushPatch(patch){ if(!GAME_API) return; fetch(GAME_API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({patch})}).catch(()=>{}); }
 function saveGame(){ save(LS_GAME,GAME); if(gameMe&&GAME[gameMe]) pushPatch({players:{[gameMe]:GAME[gameMe]}}); }
 function loadCloud(cb){
   if(!GAME_API){ if(cb)cb(); return; }
