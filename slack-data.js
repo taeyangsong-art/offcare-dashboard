@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 480,
+  "version": 481,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -25492,7 +25492,7 @@ window.SLACK_DATA = {
           "김동욱": 4
         },
         "menu": {
-          "최민석": 1,
+          "최민석": 2,
           "배선유": 20,
           "김규빈": 1,
           "김동욱": 3
@@ -25622,6 +25622,13 @@ window.SLACK_DATA = {
           "store": "해우리 제철음식",
           "biz": "7450304041",
           "cat": "as",
+          "emp": "최민석"
+        },
+        {
+          "time": "18:47",
+          "store": "형과아우 누룽지삼계탕 대구 칠곡점",
+          "biz": "7983401362",
+          "cat": "menu",
           "emp": "최민석"
         },
         {
@@ -26920,20 +26927,20 @@ window.SLACK_DATA = {
           "emp": "배선유"
         }
       ],
-      "updatedAt": "22:00",
+      "updatedAt": "22:32",
       "voc": {
-        "responses": 22,
+        "responses": 23,
         "install": {
           "count": 6,
           "low": 2
         },
         "nps": {
-          "count": 22,
+          "count": 23,
           "low": 8
         },
         "high": {
           "install": 1,
-          "nps": 9
+          "nps": 10
         },
         "npsDist": {
           "0": 1,
@@ -26943,7 +26950,7 @@ window.SLACK_DATA = {
           "7": 2,
           "8": 1,
           "9": 2,
-          "10": 9
+          "10": 10
         },
         "installDist": {
           "1": 2,
@@ -26957,6 +26964,10 @@ window.SLACK_DATA = {
           "요식업": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 4,
+            "low": 2
+          },
           "6개월": {
             "total": 5,
             "low": 0
@@ -26969,16 +26980,16 @@ window.SLACK_DATA = {
             "total": 6,
             "low": 3
           },
-          "12개월": {
-            "total": 3,
-            "low": 2
-          },
           "3개월": {
             "total": 4,
             "low": 2
           }
         },
         "byVan": {
+          "KSNET": {
+            "total": 3,
+            "low": 1
+          },
           "DAOU": {
             "total": 4,
             "low": 0
@@ -26990,10 +27001,6 @@ window.SLACK_DATA = {
           "KIS": {
             "total": 8,
             "low": 3
-          },
-          "KSNET": {
-            "total": 2,
-            "low": 1
           },
           "SMARTRO": {
             "total": 2,
