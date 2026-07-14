@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 466,
+  "version": 467,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -25465,7 +25465,7 @@ window.SLACK_DATA = {
     "2026-07-14": {
       "counts": {
         "as": {
-          "최민석": 8,
+          "최민석": 9,
           "심성현": 28,
           "김동욱": 23,
           "김기범": 4,
@@ -25525,6 +25525,13 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "19:15",
+          "store": "심리상담센터 본디",
+          "biz": "7439102350",
+          "cat": "as",
+          "emp": "최민석"
+        },
         {
           "time": "19:00",
           "store": "수제당 케익전문",
@@ -26835,7 +26842,7 @@ window.SLACK_DATA = {
           "emp": "배선유"
         }
       ],
-      "updatedAt": "19:15",
+      "updatedAt": "19:30",
       "voc": {
         "responses": 22,
         "install": {
