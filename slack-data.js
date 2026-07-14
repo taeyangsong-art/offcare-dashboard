@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 440,
+  "version": 441,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -25465,10 +25465,11 @@ window.SLACK_DATA = {
     "2026-07-14": {
       "counts": {
         "as": {
+          "김규빈": 2,
+          "배선유": 8,
           "김현기": 11,
           "심성현": 15,
           "김동욱": 11,
-          "배선유": 6,
           "김기범": 2,
           "송태양": 1
         },
@@ -25478,8 +25479,8 @@ window.SLACK_DATA = {
           "김동욱": 1
         },
         "transfer": {
-          "김동욱": 2,
-          "송태양": 3
+          "송태양": 4,
+          "김동욱": 2
         },
         "menu": {
           "배선유": 6,
@@ -25491,20 +25492,30 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "13:00",
-          "store": "청정자원",
-          "biz": "7381302215",
-          "handler": "송태양",
+          "time": "13:13",
+          "store": "준영이네 작은시장",
+          "biz": "3299702194",
+          "handler": "배선유",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
           ]
         },
         {
-          "time": "12:56",
-          "store": "한남포차",
-          "biz": "1060565946",
-          "handler": "배선유",
+          "time": "13:04",
+          "store": "코마치로스시",
+          "biz": "5821002829",
+          "handler": "김규빈",
+          "cat": "as",
+          "reasons": [
+            "1차 부재"
+          ]
+        },
+        {
+          "time": "13:00",
+          "store": "청정자원",
+          "biz": "7381302215",
+          "handler": "송태양",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
@@ -25532,6 +25543,41 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "13:07",
+          "store": "속초회사교동점",
+          "biz": "6831702515",
+          "cat": "as",
+          "emp": "김규빈"
+        },
+        {
+          "time": "13:05",
+          "store": "3H지압침대여수신기센터",
+          "biz": "8220503324",
+          "cat": "transfer",
+          "emp": "송태양"
+        },
+        {
+          "time": "13:03",
+          "store": "드포유",
+          "biz": "6412302318",
+          "cat": "as",
+          "emp": "배선유"
+        },
+        {
+          "time": "13:00",
+          "store": "리버스튜디오",
+          "biz": "8183201814",
+          "cat": "as",
+          "emp": "김규빈"
+        },
+        {
+          "time": "12:56",
+          "store": "한남포차",
+          "biz": "1060565946",
+          "cat": "as",
+          "emp": "배선유"
+        },
         {
           "time": "12:35",
           "store": "올, 꽃",
@@ -25988,7 +26034,7 @@ window.SLACK_DATA = {
           "emp": "배선유"
         }
       ],
-      "updatedAt": "13:00",
+      "updatedAt": "13:15",
       "voc": {
         "responses": 3,
         "install": {
