@@ -495,6 +495,9 @@
   .praise-sel:focus{outline:none; border-color:var(--green); box-shadow:0 0 0 3px var(--green-soft)}
   .voc-rawind{font-size:11px; color:var(--gray2); margin-top:2px}
   .voc-donedate{font-size:11px; color:#1e40af; font-weight:800; margin-top:2px}
+  .quote-card.clickable{cursor:pointer; transition:.12s}
+  .quote-card.clickable:hover{transform:translateY(-1px); box-shadow:0 4px 12px rgba(0,0,0,.08)}
+  .quote-more{font-size:11px; font-weight:800; color:var(--blue,#1a73e8); margin-left:6px; white-space:nowrap}
   .vrep-more-box{display:none}
   .vrep-more-box.open{display:block}
   .vrep-toggle{width:100%; margin-top:8px; border:1px dashed var(--line); background:var(--surface2); color:var(--gray);
@@ -1888,7 +1891,25 @@ function momTile(label,cur,prev,higherBad,suffix,tone){
     <div class="delta ${cls}">${arrow} ${pct} <span style="color:var(--gray2);font-weight:500">전월 ${prev}</span></div></div>`;
 }
 function progressBar(pct,color){ return `<div class="prog"><div class="prog-fill" style="width:${Math.min(100,pct)}%;background:${color}"></div></div>`; }
-function quoteCard(text, meta, tone){ return `<div class="quote-card ${tone}"><div class="quote-text">“${escapeHtml((text||'-').slice(0,300))}”</div><div class="quote-meta">${escapeHtml(meta||'')}</div></div>`; }
+let VOCQUOTE = [];   // 대표 저점/칭찬 카드 클릭 상세용 (renderVocMonthly 렌더 시 채워짐)
+function quoteCard(text, meta, tone, full){
+  const t=(text||'-'), short=t.length>72?t.slice(0,72)+'…':t;
+  const id = full ? (VOCQUOTE.push(full)-1) : -1;
+  return `<div class="quote-card ${tone}${full?' clickable':''}"${full?` onclick="showVocQuote(${id})" title="클릭 → 전체 인입내용"`:''}>
+    <div class="quote-text">“${escapeHtml(short)}”</div>
+    <div class="quote-meta">${escapeHtml(meta||'')}${full?' <span class="quote-more">🔎 전체보기</span>':''}</div></div>`;
+}
+function showVocQuote(id){
+  const d=VOCQUOTE[id]; if(!d) return;
+  const meta=[ d.store||'-', d.storeId?'ID '+d.storeId:'', d.industry?escapeHtml(d.industry):'', d.install!=null?'구매설치 '+d.install:'', d.nps!=null?'추천 '+d.nps:'', d.emp?'담당 '+escapeHtml(d.emp):'' ].filter(Boolean).join(' · ');
+  const body = (d.texts&&d.texts.length)
+    ? d.texts.map(x=>`<div class="vdt-sec"><div class="vdt-lab">${x.q?escapeHtml(x.q):'고객 원문'}${x.score!=null?` <span style="color:${d.type==='저점'?'#ff3b30':'#16a34a'}">(${x.score}점)</span>`:''}</div><div class="vdt-quote">“${escapeHtml(x.text||'-')}”</div></div>`).join('')
+    : `<div class="vdt-sec"><div class="vdt-lab">고객 원문</div><div class="vdt-quote">“${escapeHtml(d.text||'-')}”</div></div>`;
+  const noteHtml = d.note ? `<div class="vdt-sec"><div class="vdt-lab">📝 처리 내용</div><div class="vdt-note">${escapeHtml(d.note)}</div></div>` : '';
+  let el=document.getElementById('vocQuoteModal'); if(!el){ el=document.createElement('div'); el.id='vocQuoteModal'; el.className='detail-overlay'; el.onclick=e=>{ if(e.target===el) el.remove(); }; document.body.appendChild(el); }
+  el.innerHTML=`<div class="detail-box"><div class="detail-head"><h3>${d.type==='저점'?'😡':'😀'} ${escapeHtml(d.store||'-')}${d.status?` <span class="cnt-badge">${escapeHtml(d.status)}</span>`:''}</h3><button class="detail-x" onclick="document.getElementById('vocQuoteModal').remove()">✕</button></div>
+    <div class="detail-scroll vdt-body"><div class="vdt-meta">${meta}</div>${body}${noteHtml}</div></div>`;
+}
 function vocKpi(lab,val,denom,tone){
   return `<div class="kpi ${tone||''}"><div class="lab">${lab}</div><div class="val">${val}<small>건</small></div>
     <div class="delta flat">${denom!=null?`응답 ${denom}건 중`:'&nbsp;'}</div></div>`;
@@ -2144,6 +2165,7 @@ function vocDailyTrend(dates){
   return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}"><line x1="${padL-4}" y1="${base}" x2="${W-padR+4}" y2="${base}" stroke="#d2d2d7"/>${bars}</svg></div>`;
 }
 function renderVocMonthly(){
+  VOCQUOTE=[];
   const ref=parseYmd(selDate), y=ref.getFullYear(), mo=ref.getMonth();
   const mkey=`${y}-${String(mo+1).padStart(2,'0')}`;
   const {dates,v,byInd,byReason,totalIn}=vocMonthAgg();
@@ -2242,9 +2264,9 @@ function renderVocMonthly(){
 
     <div class="grid2">
       <div class="card"><div class="card-head"><h3>😡 대표 저점 VOC</h3><span class="hint">워딩·길이 기준 상위 5 · 더보기 → 10</span></div>
-        ${worstAll.length?vocRepBox(worstAll.map(a=>quoteCard((a.reasons[0]&&a.reasons[0].text)||'-', `${a.store||'-'} · ${a.nps!=null?'추천 '+a.nps:''}${a.install!=null?' 설치 '+a.install:''}`,'neg'))):'<div class="empty-note">저점 없음 👍</div>'}</div>
+        ${worstAll.length?vocRepBox(worstAll.map(a=>quoteCard((a.reasons[0]&&a.reasons[0].text)||'-', `${a.store||'-'} · ${a.nps!=null?'추천 '+a.nps:''}${a.install!=null?' 설치 '+a.install:''}`,'neg',{type:'저점',store:a.store,storeId:a.storeId,industry:a.industry,install:a.install,nps:a.nps,texts:(a.reasons||[]).map(r=>({q:r.q,score:r.score,text:r.text})),note:vocEffNote(a),status:vocEffStatus(a)}))):'<div class="empty-note">저점 없음 👍</div>'}</div>
       <div class="card"><div class="card-head"><h3>😀 대표 칭찬 VOC</h3><span class="hint">길이·표현 기준 상위 5 · 더보기 → 10</span></div>
-        ${bestAll.length?vocRepBox(bestAll.map(p=>quoteCard(p.text, `${p.store||'-'} · ${p.nps!=null?'추천 '+p.nps:''}${p.install!=null?' 설치 '+p.install:''}`,'pos'))):'<div class="empty-note">칭찬 없음</div>'}</div>
+        ${bestAll.length?vocRepBox(bestAll.map(p=>quoteCard(p.text, `${p.store||'-'} · ${p.nps!=null?'추천 '+p.nps:''}${p.install!=null?' 설치 '+p.install:''}`,'pos',{type:'칭찬',store:p.store,storeId:p.storeId,install:p.install,nps:p.nps,text:p.text,emp:(VOCPRAISE[vocKey(p)]||{}).emp||p.emp}))):'<div class="empty-note">칭찬 없음</div>'}</div>
     </div>
 
     <div class="grid2">
