@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 564,
+  "version": 565,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -27258,7 +27258,7 @@ window.SLACK_DATA = {
     "2026-07-15": {
       "counts": {
         "as": {
-          "최민석": 10,
+          "최민석": 12,
           "심성현": 34,
           "송태양": 20,
           "김현기": 21,
@@ -27317,6 +27317,20 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "18:22",
+          "store": "모멘토",
+          "biz": "8930603376",
+          "cat": "as",
+          "emp": "최민석"
+        },
+        {
+          "time": "18:20",
+          "store": "제니스",
+          "biz": "2295300397",
+          "cat": "as",
+          "emp": "최민석"
+        },
         {
           "time": "18:03",
           "store": "만통치킨 인천논현점",
@@ -28669,7 +28683,7 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "18:36",
+      "updatedAt": "19:00",
       "voc": {
         "responses": 19,
         "install": {
