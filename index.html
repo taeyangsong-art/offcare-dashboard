@@ -581,6 +581,17 @@
   .vd-fill{display:block; height:100%; border-radius:5px}
   .vd-cnt{flex:0 0 auto; font-size:13px; font-weight:800; color:var(--gray)}
   .vd-pct{display:inline-block; font-size:11.5px; font-weight:800; color:#1F4FFA; background:#eef2ff; border-radius:20px; padding:1px 7px; margin-left:3px}
+  .mom-wrap{flex:0 0 auto; display:inline-flex; gap:4px; align-items:center; margin-left:2px}
+  .mom{font-size:10.5px; font-weight:800; border-radius:6px; padding:1px 5px; white-space:nowrap}
+  .mom.up{color:#c2410c; background:#ffedd5}     /* 저점 증가/상승 = 악화 */
+  .mom.down{color:#1a7f37; background:#dcfce7}   /* 저점 감소/하락 = 개선 */
+  .mom.same{color:#8a94a6; background:#eef1f5}
+  .mom.new{color:#7e22ce; background:#f3e8ff}
+  .voc-sec-comment{margin-top:12px; border-top:1px dashed var(--line); padding-top:10px}
+  .vsc-head{display:flex; align-items:center; justify-content:space-between; font-size:12.5px; font-weight:800; color:var(--gray); margin-bottom:6px}
+  .btn.xs{font-size:11.5px; padding:4px 10px; border-radius:8px; background:var(--purple,#6E3FE5); color:#fff; border:none; cursor:pointer; font-family:inherit; font-weight:700}
+  .btn.xs:hover{filter:brightness(1.08)}
+  .voc-comment.sm{min-height:66px; font-size:13px}
   .vd-rpct{font-size:11px; font-weight:700; color:var(--gray2,#9AA0A6); margin-left:2px}
   .voc-drill-body{padding:2px 12px 12px; border-top:1px solid var(--line-soft)}
   .voc-drill-sum{display:flex; align-items:center; gap:10px; padding:11px 12px; margin-bottom:8px; cursor:pointer;
@@ -2483,7 +2494,23 @@ function storeDetailList(items){
 }
 // 업종/사유 드릴다운(클릭 시 매장 상세 펼침). topReason=true면 '가장 많은 이유' 요약 표시
 let VOCDRILL={}, vdSeq=0;   // 업종/이유 클릭 → 큰 모달로 보여줄 상세 저장
-function vocGroupDrill(entries, max, color, topReason){
+// 전월 대비 비교 맵: {name:{isNew}|{rankDelta,pctDelta}}  (저점이라 ↑=악화(빨강), ↓=개선(파랑))
+function buildMoMCmp(cur, prev, total, prevTotal){
+  const pr={}, pp={}; prev.forEach(([n,it],i)=>{ pr[n]=i+1; pp[n]=Math.round(it.length/(prevTotal||1)*100); });
+  const m={};
+  cur.forEach(([n,it],i)=>{ const cr=i+1, cp=Math.round(it.length/(total||1)*100);
+    m[n] = (pr[n]==null) ? {isNew:true, pctDelta:cp} : {rankDelta:pr[n]-cr, pctDelta:cp-pp[n], prevRank:pr[n]}; });
+  return m;
+}
+function momBadge(c){
+  if(!c) return '<span class="mom-wrap"><span class="mom same" title="전월 데이터 없음">–</span></span>';
+  if(c.isNew) return '<span class="mom-wrap"><span class="mom new" title="전월 미인입 신규">NEW</span></span>';
+  const rd=c.rankDelta, pd=c.pctDelta;
+  const rank = rd>0?`<span class="mom up" title="순위 ${rd}단계 상승(악화)">▲${rd}</span>`:rd<0?`<span class="mom down" title="순위 ${-rd}단계 하락(개선)">▼${-rd}</span>`:`<span class="mom same" title="순위 동일">순위=</span>`;
+  const pct = pd>0?`<span class="mom up" title="비중 ${pd}%p 증가">+${pd}%p</span>`:pd<0?`<span class="mom down" title="비중 ${-pd}%p 감소">${pd}%p</span>`:`<span class="mom same">0%p</span>`;
+  return `<span class="mom-wrap">${rank}${pct}</span>`;
+}
+function vocGroupDrill(entries, max, color, topReason, cmp){
   const total=entries.reduce((a,e)=>a+e[1].length,0)||1;   // 전체 모수(인입 합계)
   return entries.map(([name, items])=>{
     const cnt=items.length, pct=Math.round(cnt/total*100);
@@ -2504,13 +2531,49 @@ function vocGroupDrill(entries, max, color, topReason){
       : storeDetailList(items);
     VOCDRILL[id]={title:nm, cnt, pct, icon:topReason?'🏭':'😟', html:bodyHtml};
     return `<div class="voc-drill-sum" onclick="showVocDrill('${id}')" title="클릭 → 크게 보기">
-      <span class="vd-name">${escapeHtml(nm)}</span><span class="vd-bar"><span class="vd-fill" style="width:${cnt/max*100}%;background:${color}"></span></span><span class="vd-cnt">${cnt}건 <span class="vd-pct">${pct}%</span></span><span class="vd-open">🔍</span>
+      <span class="vd-name">${escapeHtml(nm)}</span><span class="vd-bar"><span class="vd-fill" style="width:${cnt/max*100}%;background:${color}"></span></span><span class="vd-cnt">${cnt}건 <span class="vd-pct">${pct}%</span></span>${cmp?momBadge(cmp[name]):''}<span class="vd-open">🔍</span>
     </div>`;
   }).join('');
 }
 function showVocDrill(id){ const d=VOCDRILL[id]; if(!d) return;
   let el=document.getElementById('vocDrillModal'); if(!el){ el=document.createElement('div'); el.id='vocDrillModal'; el.className='detail-overlay'; el.onclick=e=>{ if(e.target===el) el.remove(); }; document.body.appendChild(el); }
   el.innerHTML=`<div class="detail-box vd-modal"><div class="detail-head"><h3>${d.icon||'🔎'} ${escapeHtml(d.title)} <span class="cnt-badge">${d.cnt}건 · ${d.pct}%</span></h3><button class="detail-x" onclick="document.getElementById('vocDrillModal').remove()">✕</button></div><div class="detail-scroll vd-modal-body">${d.html}</div></div>`;
+}
+// ── 업종/이유 섹션 자동 코멘트(데이터 분석 기반) + 코멘트 칸 ──
+let VOCMOMDATA=null;   // renderVocMonthly가 채우는 스냅샷(자동 코멘트 재생성용)
+function autoComment(entries, cmp, total, kind){
+  if(!entries || !entries.length) return `이번 달 ${kind}별 저점 인입이 없습니다.`;
+  const nm=e=>e[0].split('(')[0];
+  const t=entries[0], tn=nm(t), tc=t[1].length, tp=Math.round(tc/(total||1)*100), c=cmp[t[0]]||{};
+  let s=`이번 달 ${kind}별 저점은 '${tn}' ${tc}건(${tp}%)으로 1위입니다.`;
+  if(c.isNew) s+=` 전월엔 없던 신규 최다 항목이라 원인 점검이 필요합니다.`;
+  else if(c.rankDelta>0) s+=` 전월 대비 ${c.rankDelta}단계 상승했습니다.`;
+  else if(c.rankDelta<0) s+=` 전월 대비 ${-c.rankDelta}단계 내렸지만 여전히 1위입니다.`;
+  else s+=` 전월과 같은 1위입니다.`;
+  if(c.pctDelta>0) s+=` 비중은 전월比 ${c.pctDelta}%p 증가.`;
+  else if(c.pctDelta<0) s+=` 비중은 전월比 ${-c.pctDelta}%p 감소.`;
+  const arr=entries.map(e=>({n:nm(e), c:cmp[e[0]]||{}}));
+  const rise=arr.filter(x=>!x.c.isNew && (x.c.pctDelta||0)>=5 && x.n!==tn).sort((a,b)=>b.c.pctDelta-a.c.pctDelta)[0];
+  if(rise) s+=` 특히 '${rise.n}'이 ${rise.c.pctDelta}%p 급증해 주의가 필요합니다.`;
+  const news=arr.filter(x=>x.c.isNew && x.n!==tn).map(x=>x.n).slice(0,2);
+  if(news.length) s+=` 신규 유입: ${news.join(', ')}.`;
+  const fall=arr.filter(x=>(x.c.pctDelta||0)<=-5 && x.n!==tn).sort((a,b)=>a.c.pctDelta-b.c.pctDelta)[0];
+  if(fall) s+=` 반면 '${fall.n}'은 ${-fall.c.pctDelta}%p 감소해 개선세입니다.`;
+  return s;
+}
+function vocSecCommentBox(type, mkey, entries, cmp, total, kind){
+  const key=mkey+'|'+type, saved=VOCCOMMENT[key];
+  const shown=(saved!=null&&saved!=='')?saved:autoComment(entries,cmp,total,kind);
+  return `<div class="voc-sec-comment">
+    <div class="vsc-head"><span>💬 코멘트</span><button class="btn xs" onclick="genVocSecComment('${type}')" title="데이터 기반 자동 코멘트 다시 생성">🤖 AI 자동 생성</button></div>
+    <textarea class="voc-comment sm" id="vsc-${type}" placeholder="전월 대비 인사이트를 적거나 AI 자동 생성을 눌러보세요 (자동 저장)" onchange="saveVocComment('${key}', this.value)">${escapeHtml(shown)}</textarea>
+  </div>`;
+}
+function genVocSecComment(type){
+  const d=VOCMOMDATA; if(!d) return;
+  const src = type==='ind' ? {e:d.indEntries, c:d.indCmp, k:'업종'} : {e:d.reaEntries, c:d.reaCmp, k:'이유'};
+  const txt = autoComment(src.e, src.c, d.total, src.k);
+  const ta=document.getElementById('vsc-'+type); if(ta){ ta.value=txt; saveVocComment(d.mkey+'|'+type, txt); }
 }
 function renderVoc(){
   const viewDates=vocViewDates();
@@ -2690,6 +2753,10 @@ function renderVocMonthly(){
   // ── 추가 지표 ──
   const pv=aggVoc(rangeDates('month', ymd(new Date(y, mo-1, 15))));   // 전월
   const pvIn=pv.alerts.length, pvRate=pv.responses?Math.round(pvIn/pv.responses*100):0;
+  // 전월 대비 업종/이유 순위·비중 비교 + 자동 코멘트용 스냅샷
+  const pIndEntries=vocGroupEntries(pv.alerts,'ind'), pReaEntries=vocGroupEntries(pv.alerts,'rea');
+  const indCmp=buildMoMCmp(mIndEntries, pIndEntries, totalIn, pvIn), reaCmp=buildMoMCmp(mReaEntries, pReaEntries, totalIn, pvIn);
+  VOCMOMDATA={mkey, total:totalIn, indEntries:mIndEntries, indCmp, reaEntries:mReaEntries, reaCmp};
   const ns=vocNpsStats(v.npsDist), avgInstall=avgScore(v.installDist);   // NPS 지표
   const npsColor=s=>s>=9?'#34c759':s>=7?'#ff9500':'#ff3b30';
   const insColor=s=>s>=4?'#34c759':s>=3?'#ff9500':'#ff3b30';
@@ -2760,10 +2827,12 @@ function renderVocMonthly(){
     </div>
 
     <div class="grid2">
-      <div class="card"><div class="card-head"><h3>🏭 업종별 인입</h3><span class="hint">업종 클릭 → 가장 많은 이유 + 매장 상세</span></div>
-        ${mIndEntries.length?vocGroupDrill(mIndEntries, mIndDMax, '#0071e3', true):'<div class="empty-note">인입 없음 👍</div>'}</div>
-      <div class="card"><div class="card-head"><h3>😟 인입 이유별</h3><span class="hint">사유 클릭 → 매장명·저점내용·해결내용</span></div>
-        ${mReaEntries.length?vocGroupDrill(mReaEntries, mReaDMax, '#ff3b30', false):'<div class="empty-note">인입 없음 👍</div>'}</div>
+      <div class="card"><div class="card-head"><h3>🏭 업종별 인입</h3><span class="hint">전월 대비 순위·비중 · 항목 클릭 → 상세</span></div>
+        ${mIndEntries.length?vocGroupDrill(mIndEntries, mIndDMax, '#0071e3', true, indCmp):'<div class="empty-note">인입 없음 👍</div>'}
+        ${mIndEntries.length?vocSecCommentBox('ind', mkey, mIndEntries, indCmp, totalIn, '업종'):''}</div>
+      <div class="card"><div class="card-head"><h3>😟 인입 이유별</h3><span class="hint">전월 대비 순위·비중 · 항목 클릭 → 상세</span></div>
+        ${mReaEntries.length?vocGroupDrill(mReaEntries, mReaDMax, '#ff3b30', false, reaCmp):'<div class="empty-note">인입 없음 👍</div>'}
+        ${mReaEntries.length?vocSecCommentBox('rea', mkey, mReaEntries, reaCmp, totalIn, '이유'):''}</div>
     </div>
 
     <div class="grid2">
