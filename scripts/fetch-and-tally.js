@@ -58,6 +58,9 @@ const VOC_PRAISE_KW = ['친절','응대','영상통화','화상통화','전화',
 // 고점 기준 (만점)
 const VOC_HIGH_INSTALL = 5;  // 구매설치 5 (만점)
 const VOC_HIGH_NPS = 10;     // 추천의향 10 (만점)
+// '확인 후 미완료' 유예: 확인 이모지 뒤에도 완료/카테고리 이모지가 안 찍힌 채 이 시간이 지나야 미처리로 적재.
+// (슬랙 API가 이모지 시각을 안 주므로 메시지 게시 시각 기준 경과시간으로 근사)
+const CONFIRM_GRACE_SEC = 3600; // 1시간
 const pad = n => String(n).padStart(2, '0');
 
 // 집계 대상 날짜: TALLY_DATE_OFFSET (0=오늘, -1=어제). 새벽 최종집계는 -1 로 '전날' 마감.
@@ -211,8 +214,9 @@ function tallyInto(msgs, ch, counts, pending, done) {
     } else if (hasAbsent) {                  // 완료·카테고리 이모지 없이 '부재만'
       // 2차부재(재부재=연락 불가)는 확인필요에서 제외, 1차부재만 확인필요로 남김
       if (absTag !== '2차 부재') pending.push({ time, store, biz, handler: doer || '미지정', cat: ch.defaultCat, reasons: [absTag] });
-    } else if (confirmPerson) {              // 확인만 → 확인필요
-      pending.push({ time, store, biz, handler: confirmPerson, cat: ch.defaultCat, reasons: ['확인 후 미완료'] });
+    } else if (confirmPerson) {              // 확인만 찍힘 → 완료·카테고리 이모지 없이 1시간 지나면 '확인 후 미완료'
+      const ageSec = now.getTime() / 1000 - parseFloat(m.ts || '0');
+      if (ageSec >= CONFIRM_GRACE_SEC) pending.push({ time, store, biz, handler: confirmPerson, cat: ch.defaultCat, reasons: ['확인 후 미완료'] });
     }
   }
   return { completed, externCount, dup, latest };
