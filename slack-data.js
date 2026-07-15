@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 563,
+  "version": 564,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -27258,10 +27258,10 @@ window.SLACK_DATA = {
     "2026-07-15": {
       "counts": {
         "as": {
-          "최민석": 8,
+          "최민석": 10,
           "심성현": 34,
           "송태양": 20,
-          "김현기": 20,
+          "김현기": 21,
           "배선유": 17,
           "김동욱": 17,
           "김규빈": 10,
@@ -27281,6 +27281,7 @@ window.SLACK_DATA = {
           "서상원": 5
         },
         "transfer": {
+          "최민석": 1,
           "송태양": 9
         },
         "menu": {
@@ -27294,6 +27295,16 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
+        {
+          "time": "17:35",
+          "store": "플레이팩토내흥수학교습소",
+          "biz": "8449702112",
+          "handler": "김동욱",
+          "cat": "as",
+          "reasons": [
+            "1차 부재"
+          ]
+        },
         {
           "time": "16:56",
           "store": "더마 리바이브",
@@ -27318,6 +27329,27 @@ window.SLACK_DATA = {
           "store": "주식회사 엘제이 (Lj)",
           "biz": "5958503671",
           "cat": "as",
+          "emp": "최민석"
+        },
+        {
+          "time": "18:00",
+          "store": "금손뷰티살롱",
+          "biz": "2623901645",
+          "cat": "as",
+          "emp": "최민석"
+        },
+        {
+          "time": "18:00",
+          "store": "앤동전노래연습장",
+          "biz": "5290103577",
+          "cat": "as",
+          "emp": "최민석"
+        },
+        {
+          "time": "18:00",
+          "store": "프리즘홀(프리즘플러스)",
+          "biz": "",
+          "cat": "transfer",
           "emp": "최민석"
         },
         {
@@ -27368,6 +27400,13 @@ window.SLACK_DATA = {
           "biz": "5401002636",
           "cat": "as",
           "emp": "배선유"
+        },
+        {
+          "time": "17:45",
+          "store": "티씨지 컬렉트 스토어(TCG COLLECT STORE)",
+          "biz": "6422602200",
+          "cat": "as",
+          "emp": "김현기"
         },
         {
           "time": "17:41",
@@ -28630,7 +28669,7 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "18:22",
+      "updatedAt": "18:36",
       "voc": {
         "responses": 19,
         "install": {
