@@ -1391,7 +1391,7 @@ const GAME_ITEMS = {
     {id:'t_fishking',name:'전설의 낚시왕',price:1500,rarity:'mythic',fishOnly:true,grad:'linear-gradient(90deg,#ffd34e,#ff5a8a,#00f5d4,#ffd34e)'},
     {id:'ft_novice',name:'초보 낚시꾼',price:60,rarity:'common',fishOnly:true},
     {id:'ft_angler',name:'월척 헌터',price:150,rarity:'rare',fishOnly:true,color:'#0aa5b1'},
-    {id:'ft_wanderer',name:'바다의 방랑자',price:350,rarity:'epic',fishOnly:true,color:'#2d3fa0',glow:'#3f5fff'},
+    {id:'ft_wanderer',name:'전문가',price:350,rarity:'epic',fishOnly:true,color:'#2d3fa0',glow:'#3f5fff'},
     {id:'ft_captain',name:'폭풍의 선장',price:700,rarity:'legendary',fishOnly:true,grad:'linear-gradient(90deg,#0aa5b1,#4ea8ff,#0aa5b1)'},
   ],
   nametag: [
@@ -1834,10 +1834,10 @@ function renderGame(){
 }
 /* ===== 🎣 낚시터 (가챠) ===== */
 const FISH = {
-  low:  {emoji:'🏞️', name:'초급 낚시터', cost:1,  entry:0,  desc:'누구나 · 아이템 10%, 코인 50%, 꽝 30%, 최악 -1코인',
-    loot:[ {w:300,t:'none'}, {w:500,t:'coin',big:true}, {w:100,t:'coin',min:-1,max:-1}, {w:100,t:'item',rar:['common','rare'],fish:true} ]},
-  mid:  {emoji:'⛵', name:'중급 낚시터', cost:3,  entry:0, reqLowItem:true, desc:'초급 아이템 1개 획득 시 캐스팅 가능 · 아이템 3%, 최악 -30코인',
-    loot:[ {w:550,t:'none'}, {w:300,t:'coin',big:true}, {w:120,t:'coin',min:-30,max:-15}, {w:30,t:'item',rar:['rare','epic'],fish:true} ]},
+  low:  {emoji:'🏞️', name:'초급 낚시터', cost:1,  entry:0,  desc:'누구나 · 아이템 10%, 코인 30%, 꽝 50%, 최악 -1코인',
+    loot:[ {w:500,t:'none'}, {w:300,t:'coin',big:true}, {w:100,t:'coin',min:-1,max:-1}, {w:100,t:'item',rar:['common','rare'],fish:true} ]},
+  mid:  {emoji:'⛵', name:'중급 낚시터', cost:3,  entry:0, reqLowItem:true, desc:'초급 아이템 1개 획득 시 캐스팅 가능 · 아이템 10%, 코인 30%, 꽝 50%, 최악 -30코인',
+    loot:[ {w:500,t:'none'}, {w:300,t:'coin',big:true}, {w:100,t:'coin',min:-30,max:-15}, {w:100,t:'item',rar:['rare','epic'],fish:true} ]},
   high: {emoji:'🌊', name:'고급 낚시터', cost:10, entry:0,  desc:'신화 전용! 코인 30%, 아이템 5%↓, 최악 -10코인',
     loot:[ {w:560,t:'none'}, {w:300,t:'coin',big:true}, {w:90,t:'coin',min:-10,max:-5}, {w:40,t:'item',rar:['epic','legendary'],fish:true}, {w:10,t:'item',rar:['mythic'],fish:true} ]},
 };
