@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 523,
+  "version": 524,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -27252,7 +27252,18 @@ window.SLACK_DATA = {
           "김동욱": 1
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "08:14",
+          "store": "힘난다버거 태평점",
+          "biz": "8523001708",
+          "handler": "배선유",
+          "cat": "menu",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "done": [
         {
           "time": "00:15",
@@ -27262,7 +27273,7 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "08:14"
+      "updatedAt": "09:00"
     }
   }
 };
