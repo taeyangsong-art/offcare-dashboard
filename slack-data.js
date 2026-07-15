@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 528,
+  "version": 529,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -27246,9 +27246,11 @@ window.SLACK_DATA = {
     "2026-07-15": {
       "counts": {
         "as": {
+          "배선유": 3,
+          "송태양": 1,
+          "심성현": 2,
           "김동욱": 1,
-          "김현기": 1,
-          "심성현": 1
+          "김현기": 1
         },
         "menu": {
           "배선유": 3,
@@ -27260,9 +27262,29 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "09:58",
-          "store": "멕시카나 망포점",
-          "biz": "3302901497",
+          "time": "10:07",
+          "store": "365데이안경콘택트",
+          "biz": "1040427269",
+          "handler": "김현기",
+          "cat": "as",
+          "reasons": [
+            "1차 부재"
+          ]
+        },
+        {
+          "time": "10:00",
+          "store": "빠흐 오피스 (PAR OFFICE)",
+          "biz": "4205101092",
+          "handler": "김동욱",
+          "cat": "as",
+          "reasons": [
+            "1차 부재"
+          ]
+        },
+        {
+          "time": "10:00",
+          "store": "터미널순대",
+          "biz": "3081069197",
           "handler": "심성현",
           "cat": "as",
           "reasons": [
@@ -27270,10 +27292,10 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "09:26",
-          "store": "카페프레소",
-          "biz": "6231303023",
-          "handler": "배선유",
+          "time": "10:00",
+          "store": "주식회사 민휘",
+          "biz": "2798802752",
+          "handler": "김규빈",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
@@ -27281,6 +27303,34 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "10:00",
+          "store": "블렛(VLAT) 별내 바버샵",
+          "biz": "4812400281",
+          "cat": "as",
+          "emp": "배선유"
+        },
+        {
+          "time": "10:00",
+          "store": "보민헤어",
+          "biz": "8574400472",
+          "cat": "as",
+          "emp": "송태양"
+        },
+        {
+          "time": "10:00",
+          "store": "카페 아마리스",
+          "biz": "8293601530",
+          "cat": "as",
+          "emp": "배선유"
+        },
+        {
+          "time": "09:58",
+          "store": "멕시카나 망포점",
+          "biz": "3302901497",
+          "cat": "as",
+          "emp": "심성현"
+        },
         {
           "time": "09:45",
           "store": "루아베이크바",
@@ -27301,6 +27351,13 @@ window.SLACK_DATA = {
           "biz": "3840703700",
           "cat": "as",
           "emp": "김현기"
+        },
+        {
+          "time": "09:26",
+          "store": "카페프레소",
+          "biz": "6231303023",
+          "cat": "as",
+          "emp": "배선유"
         },
         {
           "time": "09:12",
@@ -27338,7 +27395,67 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "10:00"
+      "updatedAt": "10:10",
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 0,
+          "low": 0
+        },
+        "nps": {
+          "count": 1,
+          "low": 1
+        },
+        "high": {
+          "install": 0,
+          "nps": 0
+        },
+        "npsDist": {
+          "2": 1
+        },
+        "installDist": {},
+        "byIndustry": {},
+        "byTenure": {
+          "1개월": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "byVan": {
+          "SMARTRO": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1
+        },
+        "alerts": [
+          {
+            "time": "10:10",
+            "store": "엠라인(M Line)",
+            "storeId": "424742",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 2,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 2,
+                "text": "너무느리고 자꾸 오류 나고 예약문자. 보내는 시간이 정해져있어 늦게 예약잡으시는분은 문자를 못받아 문자보내는시간을 내가 정할수있게 했으면 좋겠고 고객관리가 될줄알고 토스 쓰는건데 프로그램 기능이 별루이네요",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
+        "praises": []
+      }
     }
   }
 };
