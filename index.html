@@ -1415,23 +1415,23 @@ const GAME_ITEMS = {
     {id:'h_bang',name:'앞머리',price:30,rarity:'common',hs:'bang'},
     {id:'h_spike',name:'스파이크',price:60,rarity:'rare',hs:'spike'},
     {id:'h_bob',name:'보브',price:60,rarity:'rare',hs:'bob'},
-    {id:'h_long',name:'롱헤어',price:90,rarity:'epic',hs:'long'},
-    {id:'h_pony',name:'포니테일',price:120,rarity:'epic',hs:'ponytail'},
+    {id:'h_long',name:'롱헤어',price:90,rarity:'epic',hs:'long',fishOnly:true},
+    {id:'h_pony',name:'포니테일',price:120,rarity:'epic',hs:'ponytail',fishOnly:true},
   ],
   dye: [
     {id:'dy_brown',name:'브라운',price:0,rarity:'common',col:'#6b4a2b',hi:'#a07b4a',ln:'#4d3620'},
     {id:'dy_black',name:'블랙',price:30,rarity:'common',col:'#332f2f',hi:'#5a5252',ln:'#232020'},
     {id:'dy_blonde',name:'금발',price:60,rarity:'rare',col:'#e6b64c',hi:'#f5d98a',ln:'#b78e2e'},
-    {id:'dy_pink',name:'핑크',price:120,rarity:'epic',col:'#f47ea8',hi:'#ffb3ce',ln:'#d85c88'},
-    {id:'dy_blue',name:'블루',price:120,rarity:'epic',col:'#4f79c9',hi:'#8aa8e6',ln:'#375aa0'},
-    {id:'dy_silver',name:'실버',price:250,rarity:'legendary',col:'#c9cdd6',hi:'#eef0f4',ln:'#a3a8b3'},
+    {id:'dy_pink',name:'핑크',price:120,rarity:'epic',col:'#f47ea8',hi:'#ffb3ce',ln:'#d85c88',fishOnly:true},
+    {id:'dy_blue',name:'블루',price:120,rarity:'epic',col:'#4f79c9',hi:'#8aa8e6',ln:'#375aa0',fishOnly:true},
+    {id:'dy_silver',name:'실버',price:250,rarity:'legendary',col:'#c9cdd6',hi:'#eef0f4',ln:'#a3a8b3',fishOnly:true},
   ],
   eyes: [
     {id:'ey_basic',name:'기본',price:0,rarity:'common',es:'basic'},
     {id:'ey_round',name:'동그란',price:40,rarity:'common',es:'round'},
     {id:'ey_lash',name:'속눈썹',price:60,rarity:'rare',es:'lash'},
     {id:'ey_sharp',name:'날카로운',price:80,rarity:'rare',es:'sharp'},
-    {id:'ey_heart',name:'하트눈',price:200,rarity:'epic',es:'heart'},
+    {id:'ey_heart',name:'하트눈',price:200,rarity:'epic',es:'heart',fishOnly:true},
   ],
   brows: [
     {id:'bw_basic',name:'기본',price:0,rarity:'common',bs:'basic'},
@@ -1451,8 +1451,8 @@ const GAME_ITEMS = {
     {id:'top_tee_pk',name:'핑크티',price:30,rarity:'common',ts:'tee',col:'#f47ea8'},
     {id:'top_hood',name:'후드',price:80,rarity:'rare',ts:'hoodie',col:'#5a6b8c'},
     {id:'top_suit',name:'정장',price:150,rarity:'rare',ts:'suit',col:'#2f3542'},
-    {id:'top_dress',name:'드레스',price:200,rarity:'epic',ts:'dress',col:'#e05a8a'},
-    {id:'top_armor',name:'갑옷',price:350,rarity:'legendary',ts:'armor',col:'#8a94a6'},
+    {id:'top_dress',name:'드레스',price:200,rarity:'epic',ts:'dress',col:'#e05a8a',fishOnly:true},
+    {id:'top_armor',name:'갑옷',price:350,rarity:'legendary',ts:'armor',col:'#8a94a6',fishOnly:true},
   ],
   pants: [
     {id:'pt_pants',name:'바지',price:0,rarity:'common',ps:'pants',col:'#3a4a63'},
@@ -1469,15 +1469,15 @@ const GAME_ITEMS = {
   gloves: [
     {id:'gl_none',name:'없음',price:0,rarity:'common',gs:'none'},
     {id:'gl_basic',name:'장갑',price:40,rarity:'common',gs:'basic',col:'#3a4a63'},
-    {id:'gl_gaunt',name:'건틀릿',price:120,rarity:'epic',gs:'gauntlet',col:'#8a94a6'},
+    {id:'gl_gaunt',name:'건틀릿',price:120,rarity:'epic',gs:'gauntlet',col:'#8a94a6',fishOnly:true},
   ],
   cape: [
     {id:'cp_none',name:'없음',price:0,rarity:'common',cs:'none'},
     {id:'cp_red',name:'빨강망토',price:100,rarity:'rare',cs:'plain',col:'#c0392b'},
     {id:'cp_blue',name:'파랑망토',price:100,rarity:'rare',cs:'plain',col:'#2f6fc0'},
-    {id:'cp_star',name:'별빛망토',price:300,rarity:'legendary',cs:'plain',col:'#5a3fb0'},
+    {id:'cp_star',name:'별빛망토',price:300,rarity:'legendary',cs:'plain',col:'#5a3fb0',fishOnly:true},
   ],
-  pet: [{id:'p_none',name:'없음',price:0,e:'',rarity:'common'},{id:'p_cat',name:'고양이',price:60,e:'🐱',rarity:'common'},{id:'p_dog',name:'강아지',price:60,e:'🐶',rarity:'common'},{id:'p_unicorn',name:'유니콘',price:300,e:'🦄',rarity:'epic'},{id:'p_dragon',name:'드래곤',price:450,e:'🐉',rarity:'legendary'},{id:'fp_fish',name:'물고기',price:60,e:'🐟',rarity:'common',fishOnly:true},{id:'fp_octopus',name:'문어',price:150,e:'🐙',rarity:'rare',fishOnly:true},{id:'fp_shark',name:'상어',price:350,e:'🦈',rarity:'epic',fishOnly:true},{id:'fp_turtle',name:'거북이',price:700,e:'🐢',rarity:'legendary',fishOnly:true},{id:'p_kraken',name:'크라켄',price:800,e:'🦑',rarity:'mythic',fishOnly:true},{id:'p_whale',name:'고래',price:800,e:'🐋',rarity:'mythic',fishOnly:true}],
+  pet: [{id:'p_none',name:'없음',price:0,e:'',rarity:'common'},{id:'p_cat',name:'고양이',price:60,e:'🐱',rarity:'common',fishOnly:true},{id:'p_dog',name:'강아지',price:60,e:'🐶',rarity:'common',fishOnly:true},{id:'p_unicorn',name:'유니콘',price:300,e:'🦄',rarity:'epic',fishOnly:true},{id:'p_dragon',name:'드래곤',price:450,e:'🐉',rarity:'legendary',fishOnly:true},{id:'fp_fish',name:'물고기',price:60,e:'🐟',rarity:'common',fishOnly:true},{id:'fp_octopus',name:'문어',price:150,e:'🐙',rarity:'rare',fishOnly:true},{id:'fp_shark',name:'상어',price:350,e:'🦈',rarity:'epic',fishOnly:true},{id:'fp_turtle',name:'거북이',price:700,e:'🐢',rarity:'legendary',fishOnly:true},{id:'p_kraken',name:'크라켄',price:800,e:'🦑',rarity:'mythic',fishOnly:true},{id:'p_whale',name:'고래',price:800,e:'🐋',rarity:'mythic',fishOnly:true}],
 };
 const LS_GAME = "opcare_game_v1";
 let GAME = load(LS_GAME, {});         // { emp: {spent, owned:[], equipped:{}} }
