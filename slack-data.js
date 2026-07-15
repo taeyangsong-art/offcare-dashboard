@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 536,
+  "version": 537,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -27258,11 +27258,11 @@ window.SLACK_DATA = {
     "2026-07-15": {
       "counts": {
         "as": {
+          "김현기": 5,
+          "심성현": 11,
           "김동욱": 3,
           "송태양": 7,
-          "심성현": 10,
           "배선유": 5,
-          "김현기": 4,
           "김규빈": 1
         },
         "extern": {
@@ -27287,17 +27287,31 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "11:59",
-          "store": "신항갈비왕",
-          "biz": "8264100900",
-          "handler": "심성현",
-          "cat": "as",
+          "time": "12:07",
+          "store": "요고 프로즌요거트 선부점",
+          "biz": "2773301247",
+          "handler": "김규빈",
+          "cat": "menu",
           "reasons": [
             "확인 후 미완료"
           ]
         }
       ],
       "done": [
+        {
+          "time": "12:06",
+          "store": "온당 Korean Tofu Culture",
+          "biz": "7028802325",
+          "cat": "as",
+          "emp": "김현기"
+        },
+        {
+          "time": "12:01",
+          "store": "캠핑애견놀이터poljjac",
+          "biz": "7871402572",
+          "cat": "as",
+          "emp": "심성현"
+        },
         {
           "time": "11:35",
           "store": "공릉동 닭한마리",
@@ -27628,7 +27642,7 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "11:59",
+      "updatedAt": "12:07",
       "voc": {
         "responses": 2,
         "install": {
