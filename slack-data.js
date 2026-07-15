@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 585,
+  "version": 586,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -27283,7 +27283,7 @@ window.SLACK_DATA = {
           "서상원": 5
         },
         "transfer": {
-          "최민석": 1,
+          "최민석": 2,
           "송태양": 9
         },
         "menu": {
@@ -27438,6 +27438,13 @@ window.SLACK_DATA = {
           "biz": "2405800685",
           "cat": "onboarding",
           "emp": "서상원"
+        },
+        {
+          "time": "19:30",
+          "store": "엘리트리트 (Elitreat)",
+          "biz": "1833001918",
+          "cat": "transfer",
+          "emp": "최민석"
         },
         {
           "time": "19:18",
@@ -28863,14 +28870,14 @@ window.SLACK_DATA = {
       ],
       "updatedAt": "23:41",
       "voc": {
-        "responses": 21,
+        "responses": 22,
         "install": {
           "count": 5,
           "low": 3
         },
         "nps": {
-          "count": 21,
-          "low": 8
+          "count": 22,
+          "low": 9
         },
         "high": {
           "install": 1,
@@ -28879,7 +28886,7 @@ window.SLACK_DATA = {
         "npsDist": {
           "0": 3,
           "2": 3,
-          "5": 2,
+          "5": 3,
           "6": 2,
           "8": 4,
           "9": 2,
@@ -28897,6 +28904,10 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 4,
+            "low": 1
+          },
           "6개월": {
             "total": 4,
             "low": 3
@@ -28912,13 +28923,13 @@ window.SLACK_DATA = {
           "구매설치": {
             "total": 5,
             "low": 3
-          },
-          "3개월": {
-            "total": 3,
-            "low": 0
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 7,
+            "low": 2
+          },
           "KSNET": {
             "total": 3,
             "low": 1
@@ -28926,10 +28937,6 @@ window.SLACK_DATA = {
           "KPN": {
             "total": 5,
             "low": 3
-          },
-          "KIS": {
-            "total": 6,
-            "low": 1
           },
           "DAOU": {
             "total": 3,
@@ -28945,13 +28952,35 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "고객센터 연락이 매우 힘듦": 2,
           "사용중 오류가 자주 발생함": 5,
           "단말기 설치나 초기 과정이 어려움": 2,
-          "고객센터 연락이 매우 힘듦": 1,
           "구매,계약과정에서 설명이 부족": 1,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2
         },
         "alerts": [
+          {
+            "time": "23:54",
+            "store": "무시무시(Moussy Moussy)",
+            "storeId": "439691",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "즉각적인 유선상담 어려움.",
+                "cat": "고객센터 연락이 매우 힘듦"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "19:39",
             "store": "레트리(RETRI)",
@@ -29194,6 +29223,12 @@ window.SLACK_DATA = {
           }
         ]
       }
+    },
+    "2026-07-16": {
+      "counts": {},
+      "pending": [],
+      "done": [],
+      "updatedAt": ""
     }
   }
 };
