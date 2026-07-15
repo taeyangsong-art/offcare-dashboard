@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 556,
+  "version": 557,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -27258,14 +27258,14 @@ window.SLACK_DATA = {
     "2026-07-15": {
       "counts": {
         "as": {
-          "김현기": 14,
+          "김현기": 15,
+          "심성현": 27,
           "최민석": 6,
           "김기범": 11,
           "김규빈": 9,
           "송태양": 15,
-          "심성현": 26,
           "배선유": 15,
-          "김동욱": 12,
+          "김동욱": 13,
           "서상원": 1
         },
         "extern": {
@@ -27294,6 +27294,20 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:48",
+          "store": "리그프렙영어교습소",
+          "biz": "7069601828",
+          "cat": "as",
+          "emp": "김현기"
+        },
+        {
+          "time": "16:44",
+          "store": "연피아노음악교습소",
+          "biz": "1109840117",
+          "cat": "as",
+          "emp": "심성현"
+        },
         {
           "time": "16:34",
           "store": "리그프렙영어교습소",
@@ -27391,6 +27405,13 @@ window.SLACK_DATA = {
           "biz": "6149503665",
           "cat": "as",
           "emp": "심성현"
+        },
+        {
+          "time": "16:00",
+          "store": "롯데시네마 잠실 (팝업)",
+          "biz": "3138700979",
+          "cat": "as",
+          "emp": "김동욱"
         },
         {
           "time": "16:00",
@@ -28359,7 +28380,7 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "16:45",
+      "updatedAt": "17:00",
       "voc": {
         "responses": 16,
         "install": {
