@@ -1848,8 +1848,28 @@ function pickCoinAmount(){ const T=[{w:50000,a:1,b:5},{w:25000,a:6,b:20},{w:1500
 function rollLoot(loot){ const tot=loot.reduce((a,x)=>a+x.w,0); let r=Math.random()*tot; for(const x of loot){ if((r-=x.w)<0) return x; } return loot[loot.length-1]; }
 // ── 펫 능력치(perk): 낚시 결과에 반영 ──
 function petPerk(emp){ const it=itemById('pet',(gs(emp).equipped||{}).pet); return (it&&it.perk)||{}; }
-// 능력치로 확률표 가중치 조정: 꽝↓(miss), 아이템↑(item), 코인손실 확률↓(loss)
-function perkedLoot(loot, perk){ perk=perk||{}; return loot.map(x=>{ let w=x.w; if(x.t==='none') w=w*(1-(perk.miss||0)); else if(x.t==='item') w=w*(1+(perk.item||0)); else if(x.t==='coin'&&x.min!=null&&x.min<0) w=w*(1-(perk.loss||0)); return Object.assign({},x,{w:Math.max(0,w)}); }); }
+// 능력치는 '각 결과의 자기 확률'에 곱연산 → 아이템 1% + 아이템+10%펫 = 정확히 1.1%.
+// 아이템↑(item)·꽝↓(miss)·손실↓(loss)을 각 확률에 곱하고, 남는 확률은 코인획득이 흡수.
+function rollLootPerk(loot, perk){
+  perk=perk||{};
+  const tot=loot.reduce((a,x)=>a+x.w,0)||1;
+  const items=loot.filter(x=>x.t==='item');
+  const nones=loot.filter(x=>x.t==='none');
+  const losses=loot.filter(x=>x.t==='coin'&&x.min!=null&&x.min<0);
+  const coins=loot.filter(x=>x.t==='coin'&&!(x.min!=null&&x.min<0));
+  const pOf=arr=>arr.reduce((a,x)=>a+x.w,0)/tot;
+  const pItem=pOf(items)*(1+(perk.item||0));
+  const pNone=pOf(nones)*(1-(perk.miss||0));
+  const pLoss=pOf(losses)*(1-(perk.loss||0));
+  const pCoin=Math.max(0, 1-pItem-pNone-pLoss);   // 줄어든 꽝·손실만큼 코인 획득이 흡수
+  const sum=pItem+pCoin+pLoss+pNone;
+  const pick=arr=>{ const t2=arr.reduce((a,x)=>a+x.w,0)||1; let rr=Math.random()*t2; for(const x of arr){ if((rr-=x.w)<0) return x; } return arr[arr.length-1]; };
+  const r=Math.random()*sum; let acc=pItem;
+  if(r<acc && items.length) return pick(items);
+  acc+=pCoin; if(r<acc && coins.length) return pick(coins);
+  acc+=pLoss; if(r<acc && losses.length) return pick(losses);
+  return nones.length?pick(nones):(coins.length?pick(coins):loot[0]);
+}
 function perkDesc(perk){ if(!perk) return ''; const p=[]; if(perk.item)p.push(`아이템 확률 +${Math.round(perk.item*100)}%`); if(perk.coin)p.push(`코인 획득 ${perk.coin>=1?'×'+(1+perk.coin):'+'+Math.round(perk.coin*100)+'%'}`); if(perk.miss)p.push(`꽝 -${Math.round(perk.miss*100)}%`); if(perk.loss)p.push(perk.loss>=1?'코인손실 방어(0%)':`코인손실 -${Math.round(perk.loss*100)}%`); return p.join(' · '); }
 function pickItem(rars, fishOnly){ const pool=[]; for(const cat in GAME_ITEMS){ for(const it of GAME_ITEMS[cat]){ if(it.price===0) continue; if(!rars.includes(it.rarity)) continue; if(fishOnly && !it.fishOnly) continue; if(!fishOnly && it.fishOnly) continue; pool.push(Object.assign({cat},it)); } } return pool.length?pool[Math.floor(Math.random()*pool.length)]:null; }
 const CAT_KO={title:'타이틀',nametag:'네임택',hat:'모자',pet:'펫',skin:'피부',hair:'헤어',dye:'염색',eyes:'눈',brows:'눈썹',mouth:'입',top:'상의',pants:'하의',shoes:'신발',gloves:'장갑',cape:'망토'};
@@ -1877,7 +1897,7 @@ async function castFish(spot){
   if(empAvail(emp)<f.cost){ alert('🪙 코인이 부족해요! (캐스트 '+f.cost+'코인)'); return; }
   if(!(await requireAuth(emp))) return;   // 코인 소모 → 본인 인증
   fishBusy=true; addSpent(emp, f.cost); saveGame(); showFishing(f);
-  setTimeout(()=>{ const res=resolveLoot(emp, rollLoot(perkedLoot(f.loot, petPerk(emp)))); saveGame(); showFishResult(res); renderMain(); fishBusy=false; }, 1400);
+  setTimeout(()=>{ const res=resolveLoot(emp, rollLootPerk(f.loot, petPerk(emp))); saveGame(); showFishResult(res); renderMain(); fishBusy=false; }, 1400);
 }
 function showFishing(f){
   let el=document.getElementById('fishPop'); if(!el){ el=document.createElement('div'); el.id='fishPop'; el.className='duty-pop-overlay'; document.body.appendChild(el); }
