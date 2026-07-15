@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 558,
+  "version": 559,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -27257,23 +27257,23 @@ window.SLACK_DATA = {
     },
     "2026-07-15": {
       "counts": {
+        "as": {
+          "김동욱": 16,
+          "배선유": 16,
+          "심성현": 30,
+          "송태양": 18,
+          "김규빈": 10,
+          "김현기": 16,
+          "최민석": 6,
+          "김기범": 11,
+          "서상원": 1
+        },
         "onboarding": {
+          "김동욱": 8,
           "배선유": 6,
-          "김동욱": 7,
           "김규빈": 2,
           "김현기": 2,
           "심성현": 2
-        },
-        "as": {
-          "김동욱": 15,
-          "심성현": 29,
-          "송태양": 17,
-          "김규빈": 10,
-          "김현기": 15,
-          "최민석": 6,
-          "김기범": 11,
-          "배선유": 15,
-          "서상원": 1
         },
         "extern": {
           "김동욱": 2,
@@ -27295,6 +27295,27 @@ window.SLACK_DATA = {
       "pending": [],
       "done": [
         {
+          "time": "17:18",
+          "store": "에녹농수산물",
+          "biz": "1109371895",
+          "cat": "as",
+          "emp": "김동욱"
+        },
+        {
+          "time": "17:10",
+          "store": "로칼 은평점",
+          "biz": "7583901675",
+          "cat": "as",
+          "emp": "배선유"
+        },
+        {
+          "time": "17:10",
+          "store": "이아뷰티왁싱당산점",
+          "biz": "3243500892",
+          "cat": "onboarding",
+          "emp": "김동욱"
+        },
+        {
           "time": "17:08",
           "store": "프루타 맨션(FRUTA MANSION)",
           "biz": "6110594701",
@@ -27303,10 +27324,24 @@ window.SLACK_DATA = {
         },
         {
           "time": "17:00",
+          "store": "빛날푸드",
+          "biz": "3255800502",
+          "cat": "as",
+          "emp": "심성현"
+        },
+        {
+          "time": "17:00",
           "store": "유미테라피",
           "biz": "2660903051",
           "cat": "onboarding",
           "emp": "김동욱"
+        },
+        {
+          "time": "17:00",
+          "store": "희타로",
+          "biz": "8153501612",
+          "cat": "as",
+          "emp": "송태양"
         },
         {
           "time": "17:00",
@@ -27368,6 +27403,13 @@ window.SLACK_DATA = {
           "time": "16:48",
           "store": "리그프렙영어교습소",
           "biz": "7069601828",
+          "cat": "as",
+          "emp": "김현기"
+        },
+        {
+          "time": "16:46",
+          "store": "주식회사 잇슬립코드(EatSleepCode Co.,Lt",
+          "biz": "3388701735",
           "cat": "as",
           "emp": "김현기"
         },
@@ -28450,16 +28492,16 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "17:13",
+      "updatedAt": "17:30",
       "voc": {
-        "responses": 16,
+        "responses": 17,
         "install": {
           "count": 5,
           "low": 3
         },
         "nps": {
-          "count": 16,
-          "low": 6
+          "count": 17,
+          "low": 7
         },
         "high": {
           "install": 1,
@@ -28467,7 +28509,7 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "0": 2,
-          "2": 2,
+          "2": 3,
           "5": 2,
           "6": 2,
           "8": 3,
@@ -28486,6 +28528,10 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 3,
+            "low": 3
+          },
           "1개월": {
             "total": 4,
             "low": 2
@@ -28498,16 +28544,16 @@ window.SLACK_DATA = {
             "total": 5,
             "low": 3
           },
-          "6개월": {
-            "total": 2,
-            "low": 2
-          },
           "3개월": {
             "total": 3,
             "low": 0
           }
         },
         "byVan": {
+          "DAOU": {
+            "total": 3,
+            "low": 3
+          },
           "KIS": {
             "total": 5,
             "low": 1
@@ -28520,10 +28566,6 @@ window.SLACK_DATA = {
             "total": 3,
             "low": 2
           },
-          "DAOU": {
-            "total": 2,
-            "low": 2
-          },
           "SECTA9": {
             "total": 3,
             "low": 1
@@ -28534,13 +28576,35 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "사용중 오류가 자주 발생함": 4,
           "단말기 설치나 초기 과정이 어려움": 2,
           "고객센터 연락이 매우 힘듦": 1,
-          "사용중 오류가 자주 발생함": 3,
           "구매,계약과정에서 설명이 부족": 1,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2
         },
         "alerts": [
+          {
+            "time": "17:17",
+            "store": "디엠디엠디",
+            "storeId": "324904",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 2,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 2,
+                "text": "네이버 플레이스? 등록 안됨!",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:59",
             "store": "뉴맨남성컷전문점",
