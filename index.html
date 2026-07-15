@@ -1466,6 +1466,16 @@ const GAME_ITEMS = {
     {id:'h_bob',name:'보브',price:60,rarity:'rare',hs:'bob'},
     {id:'h_long',name:'롱헤어',price:90,rarity:'epic',hs:'long',fishOnly:true},
     {id:'h_pony',name:'포니테일',price:120,rarity:'epic',hs:'ponytail',fishOnly:true},
+    {id:'h_buzz',name:'스포츠머리',price:30,rarity:'common',hs:'buzz',gender:'m'},
+    {id:'h_twoblock',name:'투블럭',price:80,rarity:'rare',hs:'twoblock',gender:'m'},
+    {id:'h_slick',name:'슬릭백',price:120,rarity:'epic',hs:'slick',gender:'m'},
+  ],
+  beard: [
+    {id:'bd_none',name:'없음',price:0,rarity:'common',bds:'none',gender:'m'},
+    {id:'bd_stubble',name:'까칠수염',price:30,rarity:'common',bds:'stubble',gender:'m'},
+    {id:'bd_mustache',name:'콧수염',price:40,rarity:'common',bds:'mustache',gender:'m'},
+    {id:'bd_goatee',name:'턱수염',price:60,rarity:'rare',bds:'goatee',gender:'m'},
+    {id:'bd_full',name:'풍성수염',price:120,rarity:'epic',bds:'full',gender:'m'},
   ],
   dye: [
     {id:'dy_brown',name:'브라운',price:0,rarity:'common',col:'#6b4a2b',hi:'#a07b4a',ln:'#4d3620'},
@@ -1559,7 +1569,7 @@ function partE(cat,id){ const it=itemById(cat,id); return it?(it.e||''):''; }
 function titleName(eq){ const t=itemById('title',(eq||{}).title); return t?t.name:''; }
 function nametagStyle(eq){ const n=itemById('nametag',(eq||{}).nametag); if(!n) return ''; if(n.grad) return `background:${n.grad};-webkit-background-clip:text;background-clip:text;color:transparent`; let s=''; if(n.color) s+=`color:${n.color};`; if(n.glow) s+=`text-shadow:0 0 8px ${n.glow};`; return s; }
 /* ===== 오리지널 레이어드 아바타 (남/여 · 꾸미기 파츠, 저작권 무관 자체 제작 SVG) ===== */
-const AVATAR_CATS = ['skin','hair','dye','eyes','brows','mouth','top','pants','shoes','gloves','cape'];
+const AVATAR_CATS = ['skin','hair','dye','eyes','brows','mouth','beard','top','pants','shoes','gloves','cape'];
 function eqItem(eq,cat,def){ return itemById(cat,(eq||{})[cat]) || itemById(cat,def); }
 // --- 파츠 렌더러 (viewBox 120x150 기준) ---
 function pCape(cs,col){ if(!cs||cs==='none') return '';
@@ -1568,6 +1578,9 @@ function pHairBack(hs,col){ switch(hs){
   case 'long': return `<ellipse cx="60" cy="53" rx="40" ry="40" fill="${col}"/><path d="M22,54 Q16,98 30,118 L41,114 Q33,84 37,58 Z" fill="${col}"/><path d="M98,54 Q104,98 90,118 L79,114 Q87,84 83,58 Z" fill="${col}"/>`;
   case 'ponytail': return `<ellipse cx="60" cy="53" rx="39" ry="39" fill="${col}"/><path d="M86,34 Q112,40 104,76 Q99,98 85,90 Q97,66 80,48 Z" fill="${col}"/>`;
   case 'bob': return `<ellipse cx="60" cy="54" rx="41" ry="40" fill="${col}"/><path d="M22,56 Q20,84 31,94 L41,90 Q34,72 36,58 Z" fill="${col}"/><path d="M98,56 Q100,84 89,94 L79,90 Q86,72 84,58 Z" fill="${col}"/>`;
+  case 'buzz': return `<ellipse cx="60" cy="50" rx="35" ry="32" fill="${col}"/>`;
+  case 'twoblock': return `<ellipse cx="60" cy="47" rx="34" ry="33" fill="${col}"/>`;
+  case 'slick': return `<ellipse cx="60" cy="49" rx="37" ry="36" fill="${col}"/>`;
   default: return `<ellipse cx="60" cy="53" rx="39" ry="39" fill="${col}"/>`; } }
 function pHairFront(hs,col,hi){ const streak=`<path d="M40,25 Q52,18 65,23" stroke="${hi}" stroke-width="3" fill="none" stroke-linecap="round" opacity=".6"/>`;
   switch(hs){
@@ -1576,6 +1589,9 @@ function pHairFront(hs,col,hi){ const streak=`<path d="M40,25 Q52,18 65,23" stro
   case 'long': return `<path d="M26,54 C24,26 42,14 60,14 C78,14 96,26 94,54 Q82,46 63,47 L60,20 L57,47 Q38,46 26,54 Z" fill="${col}"/>${streak}`;
   case 'ponytail': return `<path d="M27,53 C24,27 42,15 60,15 C78,15 96,27 93,53 Q84,44 70,47 L66,22 Q50,20 40,34 Q34,44 27,53 Z" fill="${col}"/>${streak}`;
   case 'bang': return `<path d="M25,54 C23,25 42,13 60,13 C78,13 97,25 95,54 Q88,44 82,50 Q75,40 68,50 Q61,40 54,50 Q47,40 40,50 Q33,44 25,54 Z" fill="${col}"/>${streak}`;
+  case 'buzz': return `<path d="M29,50 C28,26 42,20 60,20 C78,20 92,26 91,50 Q86,42 80,45 Q73,39 66,44 Q60,39 54,44 Q47,39 40,45 Q34,42 29,50 Z" fill="${col}"/>`;
+  case 'twoblock': return `<path d="M27,54 C22,22 40,12 60,12 C80,12 98,22 93,54 Q88,40 80,47 Q71,38 61,45 Q51,38 42,47 Q33,41 27,54 Z" fill="${col}"/><path d="M30,53 Q35,50 40,52 M90,53 Q85,50 80,52" stroke="#00000022" stroke-width="2" fill="none" stroke-linecap="round"/>${streak}`;
+  case 'slick': return `<path d="M30,44 C30,20 44,16 60,16 C76,16 90,20 90,44 Q83,30 60,31 Q37,30 30,44 Z" fill="${col}"/><path d="M38,24 Q60,19 82,24" stroke="${hi}" stroke-width="2.4" fill="none" stroke-linecap="round" opacity=".6"/><path d="M40,30 Q60,26 80,30" stroke="${hi}" stroke-width="2" fill="none" stroke-linecap="round" opacity=".45"/>`;
   default: return `<path d="M27,53 C24,27 42,15 60,15 C78,15 96,27 93,53 Q86,42 80,51 Q73,40 66,50 Q60,41 54,50 Q47,40 40,51 Q34,42 27,53 Z" fill="${col}"/>${streak}`; } }
 function pEyes(es){ const L=47,R=73,y=59;
   const lash=(x,d)=>`<path d="M${x+d*6},${y-6} Q${x+d*9},${y-9} ${x+d*11},${y-7}" stroke="#2a2018" stroke-width="1.6" fill="none" stroke-linecap="round"/>`;
@@ -1597,6 +1613,12 @@ function pMouth(ms){ switch(ms){
   case 'cool': return `<path d="M55,72 L65,72" stroke="#c86a5e" stroke-width="2" fill="none" stroke-linecap="round"/>`;
   case 'oh': return `<ellipse cx="60" cy="72" rx="3" ry="3.6" fill="#c0392b"/>`;
   default: return `<path d="M53,70 Q60,76.5 67,70" stroke="#c86a5e" stroke-width="2.1" fill="none" stroke-linecap="round"/>`; } }
+function pBeard(bds,col){ col=col||'#5a3f27'; switch(bds){
+  case 'stubble': return `<path d="M37,66 Q40,84 60,86 Q80,84 83,66 Q74,78 60,78 Q46,78 37,66 Z" fill="${col}" opacity=".32"/>`;
+  case 'mustache': return `<path d="M49,68 Q54,66 60,68 Q66,66 71,68 Q66,72 60,70 Q54,72 49,68 Z" fill="${col}"/>`;
+  case 'goatee': return `<path d="M53,68 Q56,67 60,68 Q64,67 67,68 Q64,71 60,69.5 Q56,71 53,68 Z" fill="${col}"/><path d="M53,77 Q60,88 67,77 Q64,83 60,83 Q56,83 53,77 Z" fill="${col}"/>`;
+  case 'full': return `<path d="M35,60 Q37,85 60,89 Q83,85 85,60 Q80,76 60,77 Q40,76 35,60 Z" fill="${col}"/><path d="M49,68 Q54,66 60,68 Q66,66 71,68 Q66,72 60,70 Q54,72 49,68 Z" fill="${col}"/>`;
+  default: return ''; } }
 function pTop(ts,col){ const sleeve=`<path d="M44,91 Q31,95 31,108" stroke="${col}" stroke-width="9.5" fill="none" stroke-linecap="round"/><path d="M76,91 Q89,95 89,108" stroke="${col}" stroke-width="9.5" fill="none" stroke-linecap="round"/>`;
   const body=`<path d="M41,89 Q60,82 79,89 L83,117 Q60,123 37,117 Z" fill="${col}" stroke="#0000001c" stroke-width="1"/>`;
   switch(ts){
@@ -1619,7 +1641,7 @@ function pGloves(gsr,col,skin){ if(gsr==='gauntlet') return `<rect x="25.5" y="1
 function charSvg(eq, gender){ eq=eq||{}; const g=gender||'m';
   const sk=eqItem(eq,'skin','sk_normal'), dy=eqItem(eq,'dye','dy_brown');
   const ha=eqItem(eq,'hair', g==='f'?'h_long':'h_short'), ey=eqItem(eq,'eyes', g==='f'?'ey_lash':'ey_basic');
-  const bw=eqItem(eq,'brows','bw_basic'), mo=eqItem(eq,'mouth','mo_smile');
+  const bw=eqItem(eq,'brows','bw_basic'), mo=eqItem(eq,'mouth','mo_smile'), bd=eqItem(eq,'beard','bd_none');
   const tp=eqItem(eq,'top','top_tee'), pt=eqItem(eq,'pants','pt_pants');
   const gl=eqItem(eq,'gloves','gl_none'), cp=eqItem(eq,'cape','cp_none'), sh=eqItem(eq,'shoes','sh_basic');
   const skin=sk.col, skinLn=sk.ln, hairCol=dy.col, hairHi=dy.hi, browCol=dy.ln||'#5a3f27';
@@ -1639,6 +1661,7 @@ function charSvg(eq, gender){ eq=eq||{}; const g=gender||'m';
     <ellipse cx="81" cy="67" rx="5.2" ry="3.1" fill="#ff9db0" opacity=".5"/>
     ${pEyes(ey.es)}
     ${pBrows(bw.bs, browCol)}
+    ${pBeard(bd.bds, hairCol)}
     ${pMouth(mo.ms)}
     ${pHairFront(ha.hs, hairCol, hairHi)}
   </svg></div>`;
@@ -1667,6 +1690,7 @@ function miniFeature(cat,it){ const head=`<ellipse cx="60" cy="56" rx="26" ry="2
   if(cat==='eyes') return `${head}${pEyes(it.es)}`;
   if(cat==='brows') return `${head}${pEyes('basic')}${pBrows(it.bs,'#5a3f27')}`;
   if(cat==='mouth') return `${head}${pMouth(it.ms)}`;
+  if(cat==='beard') return `${head}${pBeard(it.bds,'#6b4a2b')}${pMouth('smile')}`;
   return ''; }
 // 성별 선택
 let genderDismissed=false;   // X로 닫으면 이 세션에서 자동 팝업 안 함(상점 버튼으로는 다시 열림)
@@ -1698,7 +1722,7 @@ function gameMeInner(emp, eq){ const t=itemById('title',(eq||{}).title);
 function previewEq(cat,id){ const emp=gameMe; if(!emp) return; const eq=Object.assign({},(gs(emp).equipped||{})); eq[cat]=id; const box=document.getElementById('gmBox'); if(box){ box.innerHTML=gameMeInner(emp,eq); box.classList.add('previewing'); } }
 function clearPreview(){ const emp=gameMe; if(!emp) return; const box=document.getElementById('gmBox'); if(box){ box.innerHTML=gameMeInner(emp,(gs(emp).equipped||{})); box.classList.remove('previewing'); } }
 // 🔍 아이템 마우스오버 → 그 자리에 미리보기 팝업
-const CAT_LABEL={title:'타이틀',nametag:'네임택',hat:'모자',pet:'펫',skin:'피부',hair:'헤어',dye:'염색',eyes:'눈',brows:'눈썹',mouth:'입',top:'상의',pants:'하의',shoes:'신발',gloves:'장갑',cape:'망토'};
+const CAT_LABEL={title:'타이틀',nametag:'네임택',hat:'모자',pet:'펫',skin:'피부',hair:'헤어',dye:'염색',eyes:'눈',brows:'눈썹',mouth:'입',beard:'수염',top:'상의',pants:'하의',shoes:'신발',gloves:'장갑',cape:'망토'};
 function itemTipHTML(cat,id){ const it=itemById(cat,id); if(!it) return ''; const r=it.rarity||'common';
   let big; if(cat==='title') big=`<span class="tr-${r}" style="${titleStyleOf(it)};font-size:24px;font-weight:800">[${escapeHtml(it.name)}]</span>`;
   else if(cat==='nametag') big=`<span style="${nametagStyle({nametag:id})};font-size:24px;font-weight:800">홍길동</span>`;
@@ -1843,7 +1867,9 @@ function shopCard(cat,it,emp){
     <button class="si-buy ${eq?'on':owned?'own':''} ${locked?'locked':''}" onclick="buyOrEquip('${cat}','${it.id}')">${btnLabel}</button>
   </div>`;
 }
-function shopSection(cat,label,emp){ const canoff=['hat','pet','cape','gloves'].includes(cat); const list=GAME_ITEMS[cat].filter(it=>!it.fishOnly||owns(emp,cat,it.id)); return `<div class="card"><div class="card-head"><h3>${label}</h3>${canoff?`<button class="btn" onclick="unequipPart('${cat}')">해제</button>`:''}</div><div class="shop-grid">${list.map(it=>shopCard(cat,it,emp)).join('')}</div></div>`; }
+// 성별 전용 아이템(gender:'m'/'f')은 해당 성별로 설정했을 때만 노출. 미설정 시 기본 남자('m').
+function genderOK(emp,it){ if(!it.gender) return true; return it.gender===((gs(emp).gender)||'m'); }
+function shopSection(cat,label,emp){ const canoff=['hat','pet','cape','gloves','beard'].includes(cat); const list=GAME_ITEMS[cat].filter(it=>(!it.fishOnly||owns(emp,cat,it.id))&&genderOK(emp,it)); return `<div class="card"><div class="card-head"><h3>${label}</h3>${canoff?`<button class="btn" onclick="unequipPart('${cat}')">해제</button>`:''}</div><div class="shop-grid">${list.map(it=>shopCard(cat,it,emp)).join('')}</div></div>`; }
 function renderGame(){
   const opts=EMPLOYEES.map(e=>`<option ${e===gameMe?'selected':''}>${e}</option>`).join('');
   let body;
@@ -1863,6 +1889,7 @@ function renderGame(){
     ${shopSection('eyes','👀 눈',emp)}
     ${shopSection('brows','✏️ 눈썹',emp)}
     ${shopSection('mouth','👄 입',emp)}
+    ${g.gender!=='f'?shopSection('beard','🧔 수염',emp):''}
     ${shopSection('top','👕 상의',emp)}
     ${shopSection('pants','👖 하의',emp)}
     ${shopSection('shoes','👟 신발',emp)}
@@ -1925,8 +1952,8 @@ function rollLootPerk(loot, perk){
   return nones.length?pick(nones):(coins.length?pick(coins):loot[0]);
 }
 function perkDesc(perk){ if(!perk) return ''; const p=[]; if(perk.item)p.push(`아이템 확률 +${Math.round(perk.item*100)}%`); if(perk.coin)p.push(`코인 획득 ${perk.coin>=1?'×'+(1+perk.coin):'+'+Math.round(perk.coin*100)+'%'}`); if(perk.miss)p.push(`꽝 -${Math.round(perk.miss*100)}%`); if(perk.loss)p.push(perk.loss>=1?'코인손실 방어(0%)':`코인손실 -${Math.round(perk.loss*100)}%`); return p.join(' · '); }
-function pickItem(rars, fishOnly, emp){ const pool=[]; for(const cat in GAME_ITEMS){ for(const it of GAME_ITEMS[cat]){ if(it.price===0) continue; if(it.targetOnly) continue; if(!rars.includes(it.rarity)) continue; if(fishOnly && !it.fishOnly) continue; if(!fishOnly && it.fishOnly) continue; if(emp && owns(emp,cat,it.id)) continue; pool.push(Object.assign({cat},it)); } } return pool.length?pool[Math.floor(Math.random()*pool.length)]:null; }
-const CAT_KO={title:'타이틀',nametag:'네임택',hat:'모자',pet:'펫',skin:'피부',hair:'헤어',dye:'염색',eyes:'눈',brows:'눈썹',mouth:'입',top:'상의',pants:'하의',shoes:'신발',gloves:'장갑',cape:'망토'};
+function pickItem(rars, fishOnly, emp){ const pool=[]; for(const cat in GAME_ITEMS){ for(const it of GAME_ITEMS[cat]){ if(it.price===0) continue; if(it.targetOnly) continue; if(it.gender && emp && !genderOK(emp,it)) continue; if(!rars.includes(it.rarity)) continue; if(fishOnly && !it.fishOnly) continue; if(!fishOnly && it.fishOnly) continue; if(emp && owns(emp,cat,it.id)) continue; pool.push(Object.assign({cat},it)); } } return pool.length?pool[Math.floor(Math.random()*pool.length)]:null; }
+const CAT_KO={title:'타이틀',nametag:'네임택',hat:'모자',pet:'펫',skin:'피부',hair:'헤어',dye:'염색',eyes:'눈',brows:'눈썹',mouth:'입',beard:'수염',top:'상의',pants:'하의',shoes:'신발',gloves:'장갑',cape:'망토'};
 function resolveLoot(emp,out){ const g=gs(emp);
   if(out.t==='none') return {emoji:'🐚',big:'꽝!',sub:'빈 낚싯대... 다음 기회에!',cls:'miss'};
   if(out.t==='coin'){ const perk=petPerk(emp); let n = out.big ? pickCoinAmount() : randInt(out.min,out.max);
