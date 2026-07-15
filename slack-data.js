@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 561,
+  "version": 562,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -27258,18 +27258,19 @@ window.SLACK_DATA = {
     "2026-07-15": {
       "counts": {
         "as": {
+          "최민석": 7,
+          "심성현": 34,
+          "김현기": 20,
           "배선유": 17,
-          "심성현": 33,
           "송태양": 19,
           "김동욱": 17,
-          "김현기": 19,
           "김규빈": 10,
-          "최민석": 6,
           "김기범": 11,
           "서상원": 1
         },
         "onboarding": {
-          "김동욱": 8,
+          "최민석": 1,
+          "김동욱": 9,
           "배선유": 6,
           "김규빈": 2,
           "김현기": 2,
@@ -27306,6 +27307,34 @@ window.SLACK_DATA = {
       ],
       "done": [
         {
+          "time": "17:59",
+          "store": "포엔트(FOANT)",
+          "biz": "5601003231",
+          "cat": "as",
+          "emp": "최민석"
+        },
+        {
+          "time": "17:51",
+          "store": "뷰티스팟",
+          "biz": "6253800914",
+          "cat": "onboarding",
+          "emp": "최민석"
+        },
+        {
+          "time": "17:49",
+          "store": "카페 새참",
+          "biz": "3061739551",
+          "cat": "as",
+          "emp": "심성현"
+        },
+        {
+          "time": "17:48",
+          "store": "로얄코테즈 다산점",
+          "biz": "2977400681",
+          "cat": "as",
+          "emp": "김현기"
+        },
+        {
           "time": "17:46",
           "store": "정음평생교육원",
           "biz": "2724401442",
@@ -27318,6 +27347,13 @@ window.SLACK_DATA = {
           "biz": "5401002636",
           "cat": "as",
           "emp": "배선유"
+        },
+        {
+          "time": "17:41",
+          "store": "더플룻",
+          "biz": "3141512205",
+          "cat": "onboarding",
+          "emp": "김동욱"
         },
         {
           "time": "17:30",
@@ -28573,20 +28609,20 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "18:00",
+      "updatedAt": "18:12",
       "voc": {
-        "responses": 17,
+        "responses": 19,
         "install": {
           "count": 5,
           "low": 3
         },
         "nps": {
-          "count": 17,
+          "count": 19,
           "low": 7
         },
         "high": {
           "install": 1,
-          "nps": 4
+          "nps": 5
         },
         "npsDist": {
           "0": 2,
@@ -28594,8 +28630,8 @@ window.SLACK_DATA = {
           "5": 2,
           "6": 2,
           "8": 3,
-          "9": 1,
-          "10": 4
+          "9": 2,
+          "10": 5
         },
         "installDist": {
           "1": 1,
@@ -28609,13 +28645,13 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 6,
+            "low": 2
+          },
           "6개월": {
             "total": 3,
             "low": 3
-          },
-          "1개월": {
-            "total": 4,
-            "low": 2
           },
           "12개월": {
             "total": 2,
@@ -28631,21 +28667,21 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 6,
+            "low": 1
+          },
+          "KPN": {
+            "total": 4,
+            "low": 2
+          },
           "DAOU": {
             "total": 3,
             "low": 3
           },
-          "KIS": {
-            "total": 5,
-            "low": 1
-          },
           "KSNET": {
             "total": 2,
             "low": 1
-          },
-          "KPN": {
-            "total": 3,
-            "low": 2
           },
           "SECTA9": {
             "total": 3,
