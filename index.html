@@ -580,6 +580,8 @@
   .vd-bar{flex:1; height:8px; background:var(--line-soft); border-radius:5px; overflow:hidden}
   .vd-fill{display:block; height:100%; border-radius:5px}
   .vd-cnt{flex:0 0 auto; font-size:13px; font-weight:800; color:var(--gray)}
+  .vd-pct{display:inline-block; font-size:11.5px; font-weight:800; color:#1F4FFA; background:#eef2ff; border-radius:20px; padding:1px 7px; margin-left:3px}
+  .vd-rpct{font-size:11px; font-weight:700; color:var(--gray2,#9AA0A6); margin-left:2px}
   .voc-drill-body{padding:2px 12px 12px; border-top:1px solid var(--line-soft)}
   .vd-top{font-size:13px; color:var(--ink); background:var(--surface2); border:1px solid var(--line-soft); border-radius:8px; padding:8px 10px; margin:10px 0 8px}
   .vd-reasons{background:var(--canvas); border:1px solid var(--line-soft); border-radius:8px; padding:10px 11px; margin:10px 0 8px}
@@ -2456,20 +2458,21 @@ function storeDetailList(items){
 }
 // 업종/사유 드릴다운(클릭 시 매장 상세 펼침). topReason=true면 '가장 많은 이유' 요약 표시
 function vocGroupDrill(entries, max, color, topReason){
+  const total=entries.reduce((a,e)=>a+e[1].length,0)||1;   // 전체 모수(인입 합계)
   return entries.map(([name, items])=>{
-    const cnt=items.length;
+    const cnt=items.length, pct=Math.round(cnt/total*100);
     let topLine='';
     if(topReason){
       const rc={}; items.forEach(x=>rc[x.rea]=(rc[x.rea]||0)+1);
       const rows=Object.entries(rc).sort((a,b)=>b[1]-a[1]);
       const rmax=Math.max(1,...rows.map(r=>r[1]));
       topLine=`<div class="vd-reasons">
-        <div class="vd-reasons-h">🥇 가장 많은 이유: <b>${escapeHtml(rows[0][0].split('(')[0])}</b> (${rows[0][1]}건) · 전체 이유 ${rows.length}개</div>
-        ${rows.map(([r,c])=>`<div class="vd-rrow"><span class="vd-rname" title="${escapeHtml(r)}">${escapeHtml(r.split('(')[0])}</span><span class="vd-rbar"><span style="width:${c/rmax*100}%"></span></span><span class="vd-rcnt">${c}건</span></div>`).join('')}
+        <div class="vd-reasons-h">🥇 가장 많은 이유: <b>${escapeHtml(rows[0][0].split('(')[0])}</b> (${rows[0][1]}건, ${Math.round(rows[0][1]/cnt*100)}%) · 전체 이유 ${rows.length}개</div>
+        ${rows.map(([r,c])=>`<div class="vd-rrow"><span class="vd-rname" title="${escapeHtml(r)}">${escapeHtml(r.split('(')[0])}</span><span class="vd-rbar"><span style="width:${c/rmax*100}%"></span></span><span class="vd-rcnt">${c}건 <span class="vd-rpct">${Math.round(c/cnt*100)}%</span></span></div>`).join('')}
       </div>`;
     }
     return `<details class="voc-drill">
-      <summary><span class="vd-name">${escapeHtml(name.split('(')[0])}</span><span class="vd-bar"><span class="vd-fill" style="width:${cnt/max*100}%;background:${color}"></span></span><span class="vd-cnt">${cnt}건</span></summary>
+      <summary><span class="vd-name">${escapeHtml(name.split('(')[0])}</span><span class="vd-bar"><span class="vd-fill" style="width:${cnt/max*100}%;background:${color}"></span></span><span class="vd-cnt">${cnt}건 <span class="vd-pct">${pct}%</span></span></summary>
       <div class="voc-drill-body">${topLine}${storeDetailList(items)}</div>
     </details>`;
   }).join('');
