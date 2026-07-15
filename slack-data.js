@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 583,
+  "version": 584,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -27258,7 +27258,7 @@ window.SLACK_DATA = {
     "2026-07-15": {
       "counts": {
         "as": {
-          "최민석": 25,
+          "최민석": 26,
           "김기범": 13,
           "심성현": 34,
           "송태양": 20,
@@ -27287,7 +27287,7 @@ window.SLACK_DATA = {
           "송태양": 9
         },
         "menu": {
-          "최민석": 1,
+          "최민석": 2,
           "배선유": 6,
           "김규빈": 3,
           "김동욱": 1
@@ -27320,6 +27320,13 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "22:40",
+          "store": "파이하우스",
+          "biz": "1201236784",
+          "cat": "as",
+          "emp": "최민석"
+        },
         {
           "time": "22:40",
           "store": "데브시스터즈#6(주)(Devsisters Corp. )",
@@ -27388,6 +27395,13 @@ window.SLACK_DATA = {
           "store": "SUNNY(써니)",
           "biz": "3889301901",
           "cat": "as",
+          "emp": "최민석"
+        },
+        {
+          "time": "19:43",
+          "store": "카페메일빈디저트",
+          "biz": "5872302353",
+          "cat": "menu",
           "emp": "최민석"
         },
         {
@@ -28847,15 +28861,15 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "22:40",
+      "updatedAt": "23:19",
       "voc": {
-        "responses": 20,
+        "responses": 21,
         "install": {
           "count": 5,
           "low": 3
         },
         "nps": {
-          "count": 20,
+          "count": 21,
           "low": 8
         },
         "high": {
@@ -28867,7 +28881,7 @@ window.SLACK_DATA = {
           "2": 3,
           "5": 2,
           "6": 2,
-          "8": 3,
+          "8": 4,
           "9": 2,
           "10": 5
         },
@@ -28883,6 +28897,10 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 4,
+            "low": 3
+          },
           "12개월": {
             "total": 3,
             "low": 2
@@ -28890,10 +28908,6 @@ window.SLACK_DATA = {
           "1개월": {
             "total": 6,
             "low": 2
-          },
-          "6개월": {
-            "total": 3,
-            "low": 3
           },
           "구매설치": {
             "total": 5,
@@ -28905,6 +28919,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KSNET": {
+            "total": 3,
+            "low": 1
+          },
           "KPN": {
             "total": 5,
             "low": 3
@@ -28916,10 +28934,6 @@ window.SLACK_DATA = {
           "DAOU": {
             "total": 3,
             "low": 3
-          },
-          "KSNET": {
-            "total": 2,
-            "low": 1
           },
           "SECTA9": {
             "total": 3,
