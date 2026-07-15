@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 540,
+  "version": 541,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -27276,6 +27276,9 @@ window.SLACK_DATA = {
           "서상원": 2,
           "김동욱": 1
         },
+        "transfer": {
+          "송태양": 2
+        },
         "menu": {
           "김규빈": 2,
           "배선유": 5,
@@ -27287,6 +27290,46 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "13:10",
+          "store": "새론헤어",
+          "biz": "6672701319",
+          "handler": "송태양",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "13:04",
+          "store": "무쇠계",
+          "biz": "3975501015",
+          "handler": "김기범",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "13:00",
+          "store": "그릴라운지",
+          "biz": "7310803295",
+          "handler": "김기범",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "13:00",
+          "store": "블랑온",
+          "biz": "5333101804",
+          "handler": "김동욱",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
           "time": "12:51",
           "store": "자담치킨 전포점",
           "biz": "7642002416",
@@ -27295,19 +27338,16 @@ window.SLACK_DATA = {
           "reasons": [
             "확인 후 미완료"
           ]
-        },
-        {
-          "time": "12:30",
-          "store": "이불섬",
-          "biz": "",
-          "handler": "송태양",
-          "cat": "transfer",
-          "reasons": [
-            "확인 후 미완료"
-          ]
         }
       ],
       "done": [
+        {
+          "time": "13:00",
+          "store": "나의 꽃들 (My flowers)",
+          "biz": "",
+          "cat": "transfer",
+          "emp": "송태양"
+        },
         {
           "time": "12:56",
           "store": "타마르 크레페리",
@@ -27342,6 +27382,13 @@ window.SLACK_DATA = {
           "biz": "5410204189",
           "cat": "as",
           "emp": "김현기"
+        },
+        {
+          "time": "12:30",
+          "store": "이불섬",
+          "biz": "",
+          "cat": "transfer",
+          "emp": "송태양"
         },
         {
           "time": "12:29",
@@ -27708,7 +27755,7 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "13:00",
+      "updatedAt": "13:14",
       "voc": {
         "responses": 2,
         "install": {
