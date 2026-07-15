@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 549,
+  "version": 550,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -27257,26 +27257,27 @@ window.SLACK_DATA = {
     },
     "2026-07-15": {
       "counts": {
+        "onboarding": {
+          "김현기": 2,
+          "김동욱": 6,
+          "배선유": 4,
+          "심성현": 2,
+          "김규빈": 1
+        },
         "as": {
-          "송태양": 12,
+          "김동욱": 11,
+          "최민석": 1,
+          "김규빈": 4,
+          "송태양": 13,
+          "심성현": 22,
           "배선유": 11,
-          "김동욱": 10,
-          "심성현": 21,
-          "서상원": 1,
-          "김현기": 9,
-          "김기범": 5,
-          "김규빈": 3
+          "김기범": 6,
+          "김현기": 10,
+          "서상원": 1
         },
         "extern": {
           "서상원": 5,
           "김동욱": 1
-        },
-        "onboarding": {
-          "배선유": 4,
-          "김동욱": 5,
-          "심성현": 2,
-          "김현기": 1,
-          "김규빈": 1
         },
         "transfer": {
           "송태양": 7
@@ -27290,14 +27291,74 @@ window.SLACK_DATA = {
           "심성현": 1
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "14:00",
+          "store": "카페 in cake",
+          "biz": "4786400694",
+          "handler": "최민석",
+          "cat": "delivery",
+          "reasons": [
+            "1차 부재"
+          ]
+        }
+      ],
       "done": [
+        {
+          "time": "15:02",
+          "store": "도도한댕댕",
+          "biz": "3724101057",
+          "cat": "onboarding",
+          "emp": "김현기"
+        },
+        {
+          "time": "15:01",
+          "store": "아뜰리에 몽 미술교습소",
+          "biz": "8849901721",
+          "cat": "as",
+          "emp": "김동욱"
+        },
+        {
+          "time": "15:01",
+          "store": "토티왁싱",
+          "biz": "6253101684",
+          "cat": "as",
+          "emp": "최민석"
+        },
+        {
+          "time": "15:00",
+          "store": "네일은 꽃길",
+          "biz": "5773901474",
+          "cat": "as",
+          "emp": "김규빈"
+        },
+        {
+          "time": "15:00",
+          "store": "곰삼이",
+          "biz": "8803301932",
+          "cat": "as",
+          "emp": "송태양"
+        },
         {
           "time": "15:00",
           "store": "킴스베이크하우스",
           "biz": "2570404008",
           "cat": "as",
           "emp": "송태양"
+        },
+        {
+          "time": "15:00",
+          "store": "안씨네 고깃간",
+          "biz": "4853901234",
+          "cat": "as",
+          "emp": "심성현"
+        },
+        {
+          "time": "15:00",
+          "store": "틴트랩",
+          "biz": "7492801879",
+          "cat": "onboarding",
+          "emp": "김동욱"
         },
         {
           "time": "15:00",
@@ -27333,6 +27394,20 @@ window.SLACK_DATA = {
           "biz": "6900302777",
           "cat": "extern",
           "emp": "서상원"
+        },
+        {
+          "time": "14:53",
+          "store": "오늘은 카레(순천점)",
+          "biz": "4740703283",
+          "cat": "as",
+          "emp": "김기범"
+        },
+        {
+          "time": "14:53",
+          "store": "먹을꼬얌",
+          "biz": "1114329532",
+          "cat": "as",
+          "emp": "김현기"
         },
         {
           "time": "14:42",
@@ -28049,28 +28124,53 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "15:15",
+      "updatedAt": "15:30",
       "voc": {
-        "responses": 2,
+        "responses": 10,
         "install": {
-          "count": 0,
-          "low": 0
-        },
-        "nps": {
-          "count": 2,
+          "count": 4,
           "low": 2
         },
+        "nps": {
+          "count": 10,
+          "low": 4
+        },
         "high": {
-          "install": 0,
-          "nps": 0
+          "install": 1,
+          "nps": 3
         },
         "npsDist": {
+          "2": 2,
+          "5": 2,
+          "6": 1,
+          "8": 1,
+          "9": 1,
+          "10": 3
+        },
+        "installDist": {
+          "1": 1,
           "2": 1,
+          "4": 1,
           "5": 1
         },
-        "installDist": {},
-        "byIndustry": {},
+        "byIndustry": {
+          "카페": 2,
+          "서비스[뷰티,헤어]": 1,
+          "도소매": 1
+        },
         "byTenure": {
+          "구매설치": {
+            "total": 4,
+            "low": 2
+          },
+          "3개월": {
+            "total": 3,
+            "low": 0
+          },
+          "6개월": {
+            "total": 1,
+            "low": 1
+          },
           "1개월": {
             "total": 2,
             "low": 2
@@ -28078,6 +28178,18 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KIS": {
+            "total": 4,
+            "low": 1
+          },
+          "SECTA9": {
+            "total": 3,
+            "low": 1
+          },
+          "KPN": {
+            "total": 1,
+            "low": 1
+          },
+          "DAOU": {
             "total": 1,
             "low": 1
           },
@@ -28087,10 +28199,84 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
-          "단말기 설치나 초기 과정이 어려움": 1,
-          "사용중 오류가 자주 발생함": 1
+          "구매,계약과정에서 설명이 부족": 1,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
+          "사용중 오류가 자주 발생함": 2,
+          "단말기 설치나 초기 과정이 어려움": 1
         },
         "alerts": [
+          {
+            "time": "15:29",
+            "store": "바닐라웨이",
+            "storeId": "542763",
+            "industry": "카페/베이커리",
+            "indBucket": "카페",
+            "install": 2,
+            "nps": 6,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 2,
+                "text": "선 두개면 됐는데 온갖 선을 다 보내서 시간 소비를 많이함. 추후에 필요할수있어서 보냈으면 그 설명이 있어야한다고 생각함",
+                "cat": "구매,계약과정에서 설명이 부족"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:28",
+            "store": "인우다(inwooda)",
+            "storeId": "541960",
+            "industry": "뷰티",
+            "indBucket": "서비스[뷰티,헤어]",
+            "install": 1,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "힘들다",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              },
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "보통이라서..",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:16",
+            "store": "팡드버거",
+            "storeId": "334867",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 2,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 2,
+                "text": "최근 포스기 오류로 피크타임 주문 손실 사례가 있었음",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "토스장애이슈 토스장애이슈",
+            "doneDate": ""
+          },
           {
             "time": "11:10",
             "store": "밀로(meallo)",
@@ -28136,7 +28322,20 @@ window.SLACK_DATA = {
             "doneDate": ""
           }
         ],
-        "praises": []
+        "praises": [
+          {
+            "time": "15:29",
+            "store": "카페마슬",
+            "storeId": "532804",
+            "indBucket": "카페",
+            "emp": "",
+            "install": 4,
+            "nps": 10,
+            "text": "원격지원으로 수월하게 했지만 만족스럽게 진행했습니다 설치하고나니 고객분도 그렇고 사장입장에서의 만족도 큽니다",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
       }
     }
   }
