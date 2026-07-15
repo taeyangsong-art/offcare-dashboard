@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 530,
+  "version": 531,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -27246,13 +27246,15 @@ window.SLACK_DATA = {
     "2026-07-15": {
       "counts": {
         "as": {
-          "송태양": 2,
+          "송태양": 3,
+          "김규빈": 1,
+          "심성현": 3,
           "김현기": 2,
           "배선유": 3,
-          "심성현": 2,
           "김동욱": 1
         },
         "onboarding": {
+          "배선유": 1,
           "심성현": 1,
           "김규빈": 1
         },
@@ -27266,43 +27268,61 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "10:29",
-          "store": "온담",
-          "biz": "6056400689",
-          "handler": "김규빈",
+          "time": "10:40",
+          "store": "초록점빵",
+          "biz": "8451502666",
+          "handler": "김현기",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
           ]
+        },
+        {
+          "time": "10:30",
+          "store": "제이티에이라인 특공무술 뉴웨이브 신현 주짓수 플레이점핑",
+          "biz": "8179202527",
+          "handler": "김동욱",
+          "cat": "as",
+          "reasons": [
+            "1차 부재"
+          ]
+        }
+      ],
+      "done": [
+        {
+          "time": "10:30",
+          "store": "코튼서울",
+          "biz": "5602900750",
+          "cat": "as",
+          "emp": "송태양"
+        },
+        {
+          "time": "10:29",
+          "store": "온담",
+          "biz": "6056400689",
+          "cat": "as",
+          "emp": "김규빈"
         },
         {
           "time": "10:27",
           "store": "어반그릴(URBAN GRILL)",
           "biz": "1762202137",
-          "handler": "심성현",
           "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
+          "emp": "심성현"
         },
-        {
-          "time": "10:18",
-          "store": "딜라이트보청기",
-          "biz": "2043650979",
-          "handler": "배선유",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        }
-      ],
-      "done": [
         {
           "time": "10:21",
           "store": "모쓰 바버샵 (MOTH BARBERSHOP)",
           "biz": "5491802513",
           "cat": "as",
           "emp": "송태양"
+        },
+        {
+          "time": "10:18",
+          "store": "딜라이트보청기",
+          "biz": "2043650979",
+          "cat": "onboarding",
+          "emp": "배선유"
         },
         {
           "time": "10:07",
@@ -27417,7 +27437,7 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "10:30",
+      "updatedAt": "10:40",
       "voc": {
         "responses": 1,
         "install": {
