@@ -1648,7 +1648,7 @@ function itemTipHTML(cat,id){ const it=itemById(cat,id); if(!it) return ''; cons
     ${disp}
     <div class="it-tip-name">${CAT_LABEL[cat]||''} · ${escapeHtml(it.name)}</div>
     ${it.ach?(function(){ const a=gameMe?achStatus(gameMe,it):null; return `<div class="it-tip-req">🎯 ${escapeHtml(a?a.label:achShort(it.ach))}${a?` · 진행 <b>${escapeHtml(a.prog)}</b>`:''}<br><span style="opacity:.8">달성 시 코인 없이 무료 획득</span></div>`; })():''}
-    <div class="it-tip-foot">${it.price===0?'기본 제공':(owned?'✓ 보유중':(it.fishOnly?'낚시로만 획득':'🪙 '+it.price+' 코인'))}</div>
+    <div class="it-tip-foot">${it.ach?(owned?'✓ 보유중':(gameMe&&achStatus(gameMe,it).ok?'🎁 지금 무료 획득 가능!':'🎯 달성 시 무료 획득')):(it.price===0?'기본 제공':(owned?'✓ 보유중':(it.fishOnly?'낚시로만 획득':'🪙 '+it.price+' 코인')))}</div>
   </div>`;
 }
 function showItemTip(e,cat,id){ let t=document.getElementById('itemTip'); if(!t){ t=document.createElement('div'); t.id='itemTip'; t.className='item-tip'; document.body.appendChild(t); } const html=itemTipHTML(cat,id); if(!html){ hideItemTip(); return; } t.innerHTML=html; t.style.display='block'; moveItemTip(e); }
