@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 525,
+  "version": 526,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -9539,11 +9539,11 @@ window.SLACK_DATA = {
                 "cat": "단말기 설치나 초기 과정이 어려움"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
             "autoNote": "1차부재 1차부재",
-            "doneDate": ""
+            "doneDate": "2026-07-15"
           }
         ],
         "praises": [
@@ -27246,11 +27246,21 @@ window.SLACK_DATA = {
     "2026-07-15": {
       "counts": {
         "menu": {
-          "배선유": 2,
+          "배선유": 3,
           "김동욱": 1
         }
       },
       "pending": [
+        {
+          "time": "09:26",
+          "store": "카페프레소",
+          "biz": "6231303023",
+          "handler": "배선유",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
         {
           "time": "09:12",
           "store": "카페헐리우드",
@@ -27260,19 +27270,16 @@ window.SLACK_DATA = {
           "reasons": [
             "확인 후 미완료"
           ]
-        },
+        }
+      ],
+      "done": [
         {
           "time": "09:11",
           "store": "(주)창구유통 강창구찹쌀진순대 광장점",
           "biz": "4688700056",
-          "handler": "배선유",
           "cat": "menu",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        }
-      ],
-      "done": [
+          "emp": "배선유"
+        },
         {
           "time": "08:59",
           "store": "몽블랑",
@@ -27295,7 +27302,7 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "09:12"
+      "updatedAt": "09:26"
     }
   }
 };
