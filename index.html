@@ -1390,7 +1390,8 @@ const GAME_ITEMS = {
     {id:'t_kraken',name:'심해의 지배자',price:1200,rarity:'mythic',fishOnly:true,grad:'linear-gradient(90deg,#00f5d4,#4ea8ff,#8a5cff,#00f5d4)'},
     {id:'t_fishking',name:'전설의 낚시왕',price:1500,rarity:'mythic',fishOnly:true,grad:'linear-gradient(90deg,#ffd34e,#ff5a8a,#00f5d4,#ffd34e)'},
     {id:'ft_novice',name:'초보 낚시꾼',price:60,rarity:'common',fishOnly:true},
-    {id:'ft_wanderer',name:'전문가',price:350,rarity:'epic',fishOnly:true,color:'#2d3fa0',glow:'#3f5fff'},
+    {id:'ft_wanderer',name:'전문가',price:350,rarity:'epic',fishOnly:true,targetOnly:true,color:'#2d3fa0',glow:'#3f5fff'},
+    {id:'t_whale',name:'고래',price:800,rarity:'legendary',fishOnly:true,targetOnly:true,grad:'linear-gradient(90deg,#4ea8ff,#00f5d4,#8a5cff,#4ea8ff)'},
     {id:'ft_captain',name:'폭풍의 선장',price:700,rarity:'legendary',fishOnly:true,grad:'linear-gradient(90deg,#0aa5b1,#4ea8ff,#0aa5b1)'},
   ],
   nametag: [
@@ -1836,16 +1837,20 @@ function renderGame(){
 const FISH = {
   low:  {emoji:'🏞️', name:'초급 낚시터', cost:1,  entry:0,  desc:'누구나 · 아이템 10%(에픽 전문가 타이틀 포함!), 코인 30%, 꽝 50%, 최악 -1코인',
     loot:[ {w:500,t:'none'}, {w:300,t:'coin',big:true}, {w:100,t:'coin',min:-1,max:-1}, {w:70,t:'item',rar:['common','rare'],fish:true}, {w:30,t:'item',id:'ft_wanderer'} ]},
-  mid:  {emoji:'⛵', name:'중급 낚시터', cost:3,  entry:0, reqLowItem:true, desc:'전문가 타이틀 획득 시 캐스팅 가능 · 아이템 10%, 코인 30%, 꽝 50%, 최악 -30코인',
-    loot:[ {w:500,t:'none'}, {w:300,t:'coin',big:true}, {w:100,t:'coin',min:-30,max:-15}, {w:100,t:'item',rar:['rare','epic'],fish:true} ]},
-  high: {emoji:'🌊', name:'고급 낚시터', cost:10, entry:0,  desc:'신화 전용! 코인 30%, 아이템 5%↓, 최악 -10코인',
+  mid:  {emoji:'⛵', name:'중급 낚시터', cost:3,  entry:0, reqLowItem:true, desc:'전문가 타이틀 획득 시 캐스팅 가능 · 아이템 10%(고래 타이틀 포함!), 코인 30%, 꽝 50%, 최악 -5코인',
+    loot:[ {w:500,t:'none'}, {w:300,t:'coin',big:true}, {w:100,t:'coin',min:-5,max:-2}, {w:70,t:'item',rar:['rare','epic'],fish:true}, {w:30,t:'item',id:'t_whale'} ]},
+  high: {emoji:'🌊', name:'고급 낚시터', cost:10, entry:0, reqItems:['pet:p_unicorn','pet:fp_shark'], desc:'중급에서 유니콘·상어 펫 획득 시 캐스팅 가능 · 신화 전용! 최악 -10코인',
     loot:[ {w:560,t:'none'}, {w:300,t:'coin',big:true}, {w:90,t:'coin',min:-10,max:-5}, {w:40,t:'item',rar:['epic','legendary'],fish:true}, {w:10,t:'item',rar:['mythic'],fish:true} ]},
 };
 let fishBusy=false;
 // 입장 조건(코인만) — 입장은 자유롭게 허용, 조건은 캐스팅에서만 검사
 function fishGate(emp, f){ if(f.entry && empAvail(emp)<f.entry) return {ok:false, msg:f.name+'는 '+f.entry+'코인 이상 있어야 입장할 수 있어요!'}; return {ok:true}; }
 // 캐스팅 조건(전제조건: 초급 아이템 1개 이상 획득)
-function fishCastGate(emp, f){ if(f.reqLowItem && !owns(emp,'title','ft_wanderer')) return {ok:false, msg:'🔒 초급 낚시터에서 [전문가] 타이틀을 먼저 획득해야 여기서 낚싯대를 던질 수 있어요!'}; return {ok:true}; }
+function fishCastGate(emp, f){
+  if(f.reqLowItem && !owns(emp,'title','ft_wanderer')) return {ok:false, short:'전문가 타이틀 필요', msg:'🔒 초급 낚시터에서 [전문가] 타이틀을 먼저 획득해야 여기서 낚싯대를 던질 수 있어요!'};
+  if(f.reqItems){ const miss=f.reqItems.filter(k=>{ const p=k.split(':'); return !owns(emp,p[0],p[1]); }); if(miss.length) return {ok:false, short:'유니콘·상어 펫 필요', msg:'🔒 중급 낚시터에서 [유니콘]🦄·[상어]🦈 펫을 모두 획득해야 여기서 낚싯대를 던질 수 있어요!'}; }
+  return {ok:true};
+}
 function randInt(a,b){ return a+Math.floor(Math.random()*(b-a+1)); }
 // 코인 획득량: 1~1000, 큰 금액일수록 극희박 (1000코인 ≈ 0.001%)
 function pickCoinAmount(){ const T=[{w:50000,a:1,b:5},{w:25000,a:6,b:20},{w:15000,a:21,b:80},{w:7000,a:81,b:200},{w:2500,a:201,b:500},{w:490,a:501,b:999},{w:1,a:1000,b:1000}]; const tot=T.reduce((s,t)=>s+t.w,0); let r=Math.random()*tot; for(const t of T){ if((r-=t.w)<0) return randInt(t.a,t.b); } return 1; }
@@ -1875,7 +1880,7 @@ function rollLootPerk(loot, perk){
   return nones.length?pick(nones):(coins.length?pick(coins):loot[0]);
 }
 function perkDesc(perk){ if(!perk) return ''; const p=[]; if(perk.item)p.push(`아이템 확률 +${Math.round(perk.item*100)}%`); if(perk.coin)p.push(`코인 획득 ${perk.coin>=1?'×'+(1+perk.coin):'+'+Math.round(perk.coin*100)+'%'}`); if(perk.miss)p.push(`꽝 -${Math.round(perk.miss*100)}%`); if(perk.loss)p.push(perk.loss>=1?'코인손실 방어(0%)':`코인손실 -${Math.round(perk.loss*100)}%`); return p.join(' · '); }
-function pickItem(rars, fishOnly){ const pool=[]; for(const cat in GAME_ITEMS){ for(const it of GAME_ITEMS[cat]){ if(it.price===0) continue; if(!rars.includes(it.rarity)) continue; if(fishOnly && !it.fishOnly) continue; if(!fishOnly && it.fishOnly) continue; pool.push(Object.assign({cat},it)); } } return pool.length?pool[Math.floor(Math.random()*pool.length)]:null; }
+function pickItem(rars, fishOnly, emp){ const pool=[]; for(const cat in GAME_ITEMS){ for(const it of GAME_ITEMS[cat]){ if(it.price===0) continue; if(it.targetOnly) continue; if(!rars.includes(it.rarity)) continue; if(fishOnly && !it.fishOnly) continue; if(!fishOnly && it.fishOnly) continue; if(emp && owns(emp,cat,it.id)) continue; pool.push(Object.assign({cat},it)); } } return pool.length?pool[Math.floor(Math.random()*pool.length)]:null; }
 const CAT_KO={title:'타이틀',nametag:'네임택',hat:'모자',pet:'펫',skin:'피부',hair:'헤어',dye:'염색',eyes:'눈',brows:'눈썹',mouth:'입',top:'상의',pants:'하의',shoes:'신발',gloves:'장갑',cape:'망토'};
 function resolveLoot(emp,out){ const g=gs(emp);
   if(out.t==='none') return {emoji:'🐚',big:'꽝!',sub:'빈 낚싯대... 다음 기회에!',cls:'miss'};
@@ -1888,7 +1893,7 @@ function resolveLoot(emp,out){ const g=gs(emp);
     return {emoji:jackpot?'💰':huge?'🤑':big?'💵':'🪙', big:'+'+n+' 코인',
       sub:jackpot?'🎉 잭팟!!! 1000코인 대박!!!':huge?'🌟 초대박! 엄청난 월척!':big?'월척! 대량 획득!':'코인 획득!',
       cls:'coin', rarity:jackpot?'mythic':huge?'legendary':big?'epic':null}; }
-  const it = out.id ? itemByIdAny(out.id) : pickItem(out.rar,out.fish);
+  const it = out.id ? itemByIdAny(out.id) : pickItem(out.rar,out.fish,emp);
   if(!it){ addSpent(emp, -3); return {emoji:'🪙',big:'+3 코인',sub:'낚을 새 아이템이 없어 코인으로!',cls:'coin'}; }
   if(owns(emp,it.cat,it.id)){ const ref=Math.max(3,Math.ceil(it.price*0.25)); addSpent(emp, -ref); return {emoji:'♻️',big:'중복 → +'+ref+'코인',sub:'['+it.name+'] 이미 보유! 코인 환급',cls:'coin'}; }
   g.owned=g.owned||[]; g.owned.push(it.cat+':'+it.id);
@@ -1927,7 +1932,7 @@ function leaveFishRoom(){ fishRoom=null; renderGameFish(); window.scrollTo(0,0);
 function fishOdds(spot){ const loot=FISH[spot].loot, tot=loot.reduce((a,x)=>a+x.w,0); let none=0,coin=0,item=0,minus=0; loot.forEach(x=>{ if(x.t==='none')none+=x.w; else if(x.t==='coin'){ if((x.max||0)<0)minus+=x.w; else coin+=x.w; } else item+=x.w; }); const p=n=>Math.round(n/tot*100); return {none:p(none),coin:p(coin),item:p(item),minus:p(minus)}; }
 function fishItemPreview(spot){ const seen={}, items=[]; FISH[spot].loot.filter(x=>x.t==='item').forEach(x=>{
     if(x.id){ const it=itemByIdAny(x.id); if(it){ const k=it.cat+':'+it.id; if(!seen[k]){ seen[k]=1; items.push(it); } } return; }   // 지정 아이템
-    for(const cat in GAME_ITEMS){ for(const it of GAME_ITEMS[cat]){ if(it.price===0) continue; if(!x.rar||!x.rar.includes(it.rarity)) continue; if(x.fish&&!it.fishOnly) continue; if(!x.fish&&it.fishOnly) continue; const k=cat+':'+it.id; if(!seen[k]){ seen[k]=1; items.push(Object.assign({cat},it)); } } }
+    for(const cat in GAME_ITEMS){ for(const it of GAME_ITEMS[cat]){ if(it.price===0) continue; if(it.targetOnly) continue; if(!x.rar||!x.rar.includes(it.rarity)) continue; if(x.fish&&!it.fishOnly) continue; if(!x.fish&&it.fishOnly) continue; const k=cat+':'+it.id; if(!seen[k]){ seen[k]=1; items.push(Object.assign({cat},it)); } } }
   }); const ord={mythic:0,legendary:1,epic:2,rare:3,common:4}; return items.sort((a,b)=>(ord[a.rarity]-ord[b.rarity])); }
 function fishPreviewCard(it,emp){ const owned=owns(emp,it.cat,it.id), r=it.rarity;
   const disp = it.e!==undefined ? (it.e||'✕') : (it.cat==='nametag'?`<span style="${nametagStyle({nametag:it.id})}">가나</span>`:`<span class="tr-${r}" style="${titleStyleOf(it)}">[${escapeHtml(it.name)}]</span>`);
@@ -1945,17 +1950,17 @@ function renderGameFish(){
   const petbar = (mp&&mp.perk)
     ? `<div class="fish-petbar"><span class="fpb-emoji">${mp.e||'🐾'}</span><span>착용 펫 <b>${escapeHtml(mp.name)}</b> · ${escapeHtml(perkDesc(mp.perk))}</span></div>`
     : `<div class="fish-petbar" style="background:#f1f5f9;color:#64748b"><span class="fpb-emoji">🐾</span><span>펫을 착용하면 낚시 능력치 보너스! (에픽↑ 펫은 낚시터에서 획득)</span></div>`;
-  document.getElementById("main").innerHTML=head+petbar+`<div class="fish-grid">${['low','mid','high'].map(k=>{ const f=FISH[k]; const locked=!fishGate(emp,f).ok; const needItem=f.reqLowItem&&!owns(emp,'title','ft_wanderer');
+  document.getElementById("main").innerHTML=head+petbar+`<div class="fish-grid">${['low','mid','high'].map(k=>{ const f=FISH[k]; const locked=!fishGate(emp,f).ok; const cg=fishCastGate(emp,f);
     return `<div class="fish-spot fs-${k}">
       <div class="fs-emoji">${f.emoji}</div><div class="fs-name">${f.name}</div>
       <div class="fs-desc">${f.desc}</div>
-      <div class="fs-cost">캐스트 <b>🪙${f.cost}</b>${f.entry?` · 입장 ${f.entry}코인↑`:''}${needItem?` · <b style="color:#e0218a">전문가 타이틀 필요</b>`:''}</div>
+      <div class="fs-cost">캐스트 <b>🪙${f.cost}</b>${f.entry?` · 입장 ${f.entry}코인↑`:''}${!cg.ok?` · <b style="color:#e0218a">${cg.short}</b>`:''}</div>
       <button class="fs-btn" ${locked?'disabled':''} onclick="enterFishRoom('${k}')">${locked?`🔒 ${f.entry}코인 필요`:'⛵ 입장하기'}</button>
     </div>`; }).join('')}</div>`;
 }
 function renderFishRoom(spot, emp){
   const f=FISH[spot], od=fishOdds(spot), items=fishItemPreview(spot), cant=empAvail(emp)<f.cost;
-  const castLocked=!fishCastGate(emp,f).ok;
+  const cg=fishCastGate(emp,f), castLocked=!cg.ok;
   document.getElementById("main").innerHTML=`
     <div class="page-head"><div><h2>${f.emoji} ${f.name}</h2><div class="sub">캐스트 🪙${f.cost} · 보유 🪙<b>${empAvail(emp)}</b></div></div>
       <div class="controls"><button class="btn" onclick="leaveFishRoom()">← 낚시터 목록</button></div></div>
@@ -1968,7 +1973,7 @@ function renderFishRoom(spot, emp){
         <div class="fr-float">🔴</div>
         <div class="fr-wave w1"></div><div class="fr-wave w2"></div><div class="fr-wave w3"></div>
       </div>
-      <button class="fr-cast" ${(cant||castLocked)?'disabled':''} onclick="castFish('${spot}')">${castLocked?'🔒 초급에서 [전문가] 타이틀을 먼저 획득하세요':(cant?'🪙 코인이 부족해요':`🎣 낚싯대 던지기 (🪙${f.cost})`)}</button>
+      <button class="fr-cast" ${(cant||castLocked)?'disabled':''} onclick="castFish('${spot}')">${castLocked?('🔒 '+cg.short):(cant?'🪙 코인이 부족해요':`🎣 낚싯대 던지기 (🪙${f.cost})`)}</button>
       <div class="fr-odds">🎁 아이템 <b>${od.item}%</b> · 🪙 코인 <b>${od.coin}%</b> · 🐚 꽝 ${od.none}% · 💸 코인손실 ${od.minus}%</div>
     </div>
     <div class="card">
