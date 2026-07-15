@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 532,
+  "version": 533,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -9445,11 +9445,11 @@ window.SLACK_DATA = {
                 "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
             "autoNote": "1차부재 1차부재",
-            "doneDate": ""
+            "doneDate": "2026-07-15"
           },
           {
             "time": "15:31",
@@ -27032,11 +27032,11 @@ window.SLACK_DATA = {
                 "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 통화거부, 고령으로 통화에 거부감 통화거부, 고령으로 통화에 거부감",
+            "doneDate": "2026-07-15"
           },
           {
             "time": "18:35",
@@ -27082,11 +27082,11 @@ window.SLACK_DATA = {
                 "cat": "단말기 설치나 초기 과정이 어려움"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 작일 도움드림 작일 원격설치 도움드림 온보딩 사용 방법 안내 완료 온보딩 사용 방법 안내 완료",
+            "doneDate": "2026-07-15"
           },
           {
             "time": "15:51",
@@ -27229,6 +27229,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "18:10",
+            "store": "신사아카데미 합기도 주짓수",
+            "storeId": "331346",
+            "indBucket": "",
+            "emp": "송태양",
+            "install": null,
+            "nps": 7,
+            "text": "학원인데 주문내역 나오는게불편",
+            "byReaction": true,
+            "doneDate": "2026-07-15"
+          },
+          {
             "time": "15:21",
             "store": "손명현국어교습소",
             "storeId": "542631",
@@ -27245,11 +27257,15 @@ window.SLACK_DATA = {
     },
     "2026-07-15": {
       "counts": {
+        "extern": {
+          "서상원": 1,
+          "김동욱": 1
+        },
         "as": {
-          "송태양": 4,
+          "송태양": 5,
+          "김현기": 4,
+          "심성현": 5,
           "배선유": 4,
-          "심성현": 4,
-          "김현기": 3,
           "김동욱": 2,
           "김규빈": 1
         },
@@ -27258,11 +27274,8 @@ window.SLACK_DATA = {
           "심성현": 1,
           "김규빈": 1
         },
-        "extern": {
-          "김동욱": 1
-        },
         "menu": {
-          "배선유": 3,
+          "배선유": 4,
           "김동욱": 1
         },
         "delivery": {
@@ -27271,27 +27284,62 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "11:00",
-          "store": "슬링 seulring",
-          "biz": "8802900654",
-          "handler": "김현기",
+          "time": "11:14",
+          "store": "오므라이스 연구소",
+          "biz": "1460304055",
+          "handler": "심성현",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
           ]
         },
         {
-          "time": "11:00",
-          "store": "주식회사 픽트로스터리 망원점",
-          "biz": "8038503266",
-          "handler": "심성현",
-          "cat": "as",
+          "time": "11:14",
+          "store": "위너스식당",
+          "biz": "1233090990",
+          "handler": "배선유",
+          "cat": "menu",
           "reasons": [
-            "1차 부재"
+            "확인 후 미완료"
           ]
         }
       ],
       "done": [
+        {
+          "time": "11:06",
+          "store": "군산꽃삼겹수송점",
+          "biz": "8214001305",
+          "cat": "extern",
+          "emp": "서상원"
+        },
+        {
+          "time": "11:04",
+          "store": "와인에비뉴(WINE AVENUE) 성신여대점",
+          "biz": "4380603747",
+          "cat": "menu",
+          "emp": "배선유"
+        },
+        {
+          "time": "11:02",
+          "store": "신사아카데미 합기도 주짓수",
+          "biz": "7859102257",
+          "cat": "as",
+          "emp": "송태양"
+        },
+        {
+          "time": "11:00",
+          "store": "슬링 seulring",
+          "biz": "8802900654",
+          "cat": "as",
+          "emp": "김현기"
+        },
+        {
+          "time": "11:00",
+          "store": "주식회사 픽트로스터리 망원점",
+          "biz": "8038503266",
+          "cat": "as",
+          "emp": "심성현"
+        },
         {
           "time": "10:56",
           "store": "커피 모먼트 (coffee moment)",
@@ -27489,42 +27537,70 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "11:00",
+      "updatedAt": "11:15",
       "voc": {
-        "responses": 1,
+        "responses": 2,
         "install": {
           "count": 0,
           "low": 0
         },
         "nps": {
-          "count": 1,
-          "low": 1
+          "count": 2,
+          "low": 2
         },
         "high": {
           "install": 0,
           "nps": 0
         },
         "npsDist": {
-          "2": 1
+          "2": 1,
+          "5": 1
         },
         "installDist": {},
         "byIndustry": {},
         "byTenure": {
           "1개월": {
-            "total": 1,
-            "low": 1
+            "total": 2,
+            "low": 2
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 1,
+            "low": 1
+          },
           "SMARTRO": {
             "total": 1,
             "low": 1
           }
         },
         "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 1,
           "사용중 오류가 자주 발생함": 1
         },
         "alerts": [
+          {
+            "time": "11:10",
+            "store": "밀로(meallo)",
+            "storeId": "502405",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "일단 로딩이 너무 오래걸리구요 .. ㅎ! 쿠폰의 형태기 좀 다양했으면 좋겠어요. 이름 설정을 다른 걸로 설정해놨는데, 고객님이 결제할 때 깜짝할인쿠폰! 이런식으로 떠서 한 번 더 설명하기가 곤란하네요..",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "10:10",
             "store": "엠라인(M Line)",
@@ -27544,7 +27620,7 @@ window.SLACK_DATA = {
             "emp": "",
             "autoStatus": "",
             "autoEmp": "",
-            "autoNote": "",
+            "autoNote": "1차부재 1차부재",
             "doneDate": ""
           }
         ],
