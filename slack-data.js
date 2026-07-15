@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 543,
+  "version": 544,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -27258,16 +27258,16 @@ window.SLACK_DATA = {
     "2026-07-15": {
       "counts": {
         "onboarding": {
+          "배선유": 4,
           "김동욱": 5,
-          "배선유": 3,
           "심성현": 2,
           "김현기": 1,
           "김규빈": 1
         },
         "as": {
-          "김동욱": 5,
+          "김동욱": 6,
+          "배선유": 7,
           "송태양": 10,
-          "배선유": 6,
           "김기범": 3,
           "김규빈": 3,
           "김현기": 6,
@@ -27292,6 +27292,20 @@ window.SLACK_DATA = {
       "pending": [],
       "done": [
         {
+          "time": "13:47",
+          "store": "바나요가",
+          "biz": "8221402308",
+          "cat": "onboarding",
+          "emp": "배선유"
+        },
+        {
+          "time": "13:41",
+          "store": "캐로타",
+          "biz": "5681503055",
+          "cat": "as",
+          "emp": "김동욱"
+        },
+        {
           "time": "13:35",
           "store": "타로 코코로",
           "biz": "2900803931",
@@ -27304,6 +27318,13 @@ window.SLACK_DATA = {
           "biz": "8023401074",
           "cat": "as",
           "emp": "김동욱"
+        },
+        {
+          "time": "13:33",
+          "store": "고운피부 에스테틱",
+          "biz": "5283201416",
+          "cat": "as",
+          "emp": "배선유"
         },
         {
           "time": "13:30",
@@ -27803,7 +27824,7 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "13:44",
+      "updatedAt": "14:00",
       "voc": {
         "responses": 2,
         "install": {
