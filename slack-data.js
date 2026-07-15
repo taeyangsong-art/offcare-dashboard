@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 539,
+  "version": 540,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -27258,23 +27258,23 @@ window.SLACK_DATA = {
     "2026-07-15": {
       "counts": {
         "as": {
+          "김동욱": 4,
+          "김규빈": 3,
           "김현기": 6,
-          "김규빈": 2,
-          "심성현": 12,
-          "김동욱": 3,
+          "심성현": 13,
           "송태양": 7,
           "배선유": 5
+        },
+        "onboarding": {
+          "심성현": 2,
+          "김동욱": 1,
+          "김현기": 1,
+          "배선유": 2,
+          "김규빈": 1
         },
         "extern": {
           "서상원": 2,
           "김동욱": 1
-        },
-        "onboarding": {
-          "김동욱": 1,
-          "김현기": 1,
-          "배선유": 2,
-          "심성현": 1,
-          "김규빈": 1
         },
         "menu": {
           "김규빈": 2,
@@ -27287,17 +27287,55 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "12:45",
-          "store": "카페 in cake",
-          "biz": "4786400694",
-          "handler": "심성현",
-          "cat": "delivery",
+          "time": "12:51",
+          "store": "자담치킨 전포점",
+          "biz": "7642002416",
+          "handler": "배선유",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "12:30",
+          "store": "이불섬",
+          "biz": "",
+          "handler": "송태양",
+          "cat": "transfer",
           "reasons": [
             "확인 후 미완료"
           ]
         }
       ],
       "done": [
+        {
+          "time": "12:56",
+          "store": "타마르 크레페리",
+          "biz": "5790303862",
+          "cat": "as",
+          "emp": "김동욱"
+        },
+        {
+          "time": "12:49",
+          "store": "스튜디오대한(찰칵포토)",
+          "biz": "6172196008",
+          "cat": "onboarding",
+          "emp": "심성현"
+        },
+        {
+          "time": "12:45",
+          "store": "카페 in cake",
+          "biz": "4786400694",
+          "cat": "as",
+          "emp": "심성현"
+        },
+        {
+          "time": "12:41",
+          "store": "웅이분식",
+          "biz": "5880902817",
+          "cat": "as",
+          "emp": "김규빈"
+        },
         {
           "time": "12:34",
           "store": "맛난제과",
@@ -27670,7 +27708,7 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "12:45",
+      "updatedAt": "13:00",
       "voc": {
         "responses": 2,
         "install": {
