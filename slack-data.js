@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 524,
+  "version": 525,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -2297,7 +2297,7 @@ window.SLACK_DATA = {
             "emp": "",
             "autoStatus": "",
             "autoEmp": "",
-            "autoNote": "",
+            "autoNote": "토스장애이슈 CX일괄처리 토스장애이슈 CX일괄처리",
             "doneDate": ""
           },
           {
@@ -9176,11 +9176,11 @@ window.SLACK_DATA = {
                 "cat": "사용중 오류가 자주 발생함"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
             "autoNote": "1차부재 1차부재",
-            "doneDate": ""
+            "doneDate": "2026-07-15"
           },
           {
             "time": "15:06",
@@ -25478,7 +25478,7 @@ window.SLACK_DATA = {
           "김기범": 5,
           "심성현": 28,
           "김동욱": 23,
-          "김현기": 22,
+          "김현기": 23,
           "배선유": 21,
           "송태양": 7,
           "서상원": 3,
@@ -25504,16 +25504,6 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
-        {
-          "time": "17:38",
-          "store": "울엄니김밥",
-          "biz": "4244001346",
-          "handler": "김현기",
-          "cat": "as",
-          "reasons": [
-            "1차 부재"
-          ]
-        },
         {
           "time": "17:15",
           "store": "롯데시네마 잠실 (팝업)",
@@ -25735,6 +25725,13 @@ window.SLACK_DATA = {
           "biz": "1952300573",
           "cat": "as",
           "emp": "김기범"
+        },
+        {
+          "time": "17:38",
+          "store": "울엄니김밥",
+          "biz": "4244001346",
+          "cat": "as",
+          "emp": "김현기"
         },
         {
           "time": "17:37",
@@ -27223,11 +27220,11 @@ window.SLACK_DATA = {
                 "cat": "단말기 설치나 초기 과정이 어려움"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• • 쿠팡이츠 오류건 -&gt; 자사 처리 불가 쿠팡이츠로 안내 • 모아콜 연동 안되는 건으로 해결 불가능한 원격 건 히스토리 쿠팡이츠 오류건 - 자사 처리 불가 쿠팡이츠로 안내 모아콜 연동 안되는 건으로 해결 불가능한 원격 건 쿠팡이츠 매장 운영중에서 등록중으로 바뀌는 오류 -쿠팡이츠 고객센터 안내 완료 수긍 모아콜과 연동 - 모아콜과 연동 되는 부분은",
+            "doneDate": "2026-07-15"
           }
         ],
         "praises": [
@@ -27249,14 +27246,25 @@ window.SLACK_DATA = {
     "2026-07-15": {
       "counts": {
         "menu": {
+          "배선유": 2,
           "김동욱": 1
         }
       },
       "pending": [
         {
-          "time": "08:14",
-          "store": "힘난다버거 태평점",
-          "biz": "8523001708",
+          "time": "09:12",
+          "store": "카페헐리우드",
+          "biz": "1011135512",
+          "handler": "심성현",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "09:11",
+          "store": "(주)창구유통 강창구찹쌀진순대 광장점",
+          "biz": "4688700056",
           "handler": "배선유",
           "cat": "menu",
           "reasons": [
@@ -27266,6 +27274,20 @@ window.SLACK_DATA = {
       ],
       "done": [
         {
+          "time": "08:59",
+          "store": "몽블랑",
+          "biz": "8331302086",
+          "cat": "menu",
+          "emp": "배선유"
+        },
+        {
+          "time": "08:14",
+          "store": "힘난다버거 태평점",
+          "biz": "8523001708",
+          "cat": "menu",
+          "emp": "배선유"
+        },
+        {
           "time": "00:15",
           "store": "서래전",
           "biz": "5012698083",
@@ -27273,7 +27295,7 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "09:00"
+      "updatedAt": "09:12"
     }
   }
 };
