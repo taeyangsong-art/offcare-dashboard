@@ -106,41 +106,8 @@ function mergePatch_(base, patch) {
 function doGet(e) {
   try {
     var p = (e && e.parameter) || {};
-    if (p.action === 'aiComment') { return aiComment_(p); }   // AI 코멘트 프록시(키는 Script Property)
     if (p.action) { return handleAuth_(p); }
     return json_({ game: readBlob_() });
-  } catch (err) {
-    return json_({ ok: false, error: String(err) });
-  }
-}
-
-// ===== AI 코멘트 프록시 =====
-// Script Properties에 AI_API_KEY(Anthropic) 필요. 선택: AI_MODEL(기본 claude-haiku-4-5-20251001)
-function aiComment_(p) {
-  try {
-    var props = PropertiesService.getScriptProperties();
-    var key = props.getProperty('AI_API_KEY');
-    if (!key) { return json_({ ok: false, error: 'no_ai_key' }); }
-    var model = props.getProperty('AI_MODEL') || 'claude-haiku-4-5-20251001';
-    var kind = p.kind || '항목';
-    var summary = p.summary || '';
-    var prompt = 'VOC 저점(고객 불만) 인입의 ' + kind + '별 통계입니다. 아래는 각 ' + kind
-      + '의 이번 달 건수/비중과 전월 대비 순위·비중 변화입니다.\n\n' + summary
-      + '\n\n이 데이터를 바탕으로 팀 먼슬리 발표에 넣을 한국어 코멘트를 2~3문장으로 작성하세요. '
-      + '1위 항목, 눈에 띄는 증가/감소, 신규 유입을 짚고 간단한 원인 추정과 액션 제안을 담되, '
-      + '주어진 수치 외에 숫자를 지어내지 말고 과장 없이 담백하게 쓰세요.';
-    var payload = { model: model, max_tokens: 400, messages: [{ role: 'user', content: prompt }] };
-    var res = UrlFetchApp.fetch('https://api.anthropic.com/v1/messages', {
-      method: 'post', contentType: 'application/json',
-      headers: { 'x-api-key': key, 'anthropic-version': '2023-06-01' },
-      payload: JSON.stringify(payload), muteHttpExceptions: true
-    });
-    var code = res.getResponseCode();
-    var data = JSON.parse(res.getContentText());
-    if (code >= 300) { return json_({ ok: false, error: 'api_' + code, detail: (data.error && data.error.message) || '' }); }
-    var text = '';
-    if (data.content) { for (var i = 0; i < data.content.length; i++) { if (data.content[i].type === 'text') text += data.content[i].text; } }
-    return json_({ ok: true, text: text });
   } catch (err) {
     return json_({ ok: false, error: String(err) });
   }
