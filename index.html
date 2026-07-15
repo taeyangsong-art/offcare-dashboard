@@ -280,7 +280,11 @@
   .si-req{font-size:10.5px; font-weight:700; border-radius:8px; padding:4px 7px; margin-bottom:8px; line-height:1.3}
   .si-req.locked{background:#f3e8ff; color:#7e22ce}
   .si-req.met{background:var(--success-bg,#dcfce7); color:var(--success-text,#166534)}
-  .it-tip-req{font-size:11.5px; font-weight:700; color:#7e22ce; background:#f3e8ff; border-radius:8px; padding:5px 8px; margin-top:6px}
+  .it-tip-req{font-size:11.5px; font-weight:700; color:#7e22ce; background:#f3e8ff; border-radius:8px; padding:7px 9px; margin-top:6px; line-height:1.5; text-align:left}
+  .it-tip-cond{color:#7e22ce}
+  .it-tip-prog{margin-top:4px; padding-top:4px; border-top:1px dashed #d8b4fe; color:#6b21a8}
+  .it-tip-prog b{font-size:12.5px}
+  .it-tip-free{margin-top:4px; font-weight:600; opacity:.75}
   .r-title{font-size:11px; font-weight:800; margin-right:4px}
   .tr-legendary,.tr-mythic{background-size:200% auto; animation:titleShine 2.6s linear infinite}
   @keyframes titleShine{to{background-position:-200% center}}
@@ -1647,7 +1651,7 @@ function itemTipHTML(cat,id){ const it=itemById(cat,id); if(!it) return ''; cons
     <div class="it-tip-top"><span class="it-tip-rar" style="color:${RARITY[r]}">${RARITY_KO[r]}</span>${it.fishOnly?'<span class="it-tip-fish">🎣 낚시전용</span>':''}</div>
     ${disp}
     <div class="it-tip-name">${CAT_LABEL[cat]||''} · ${escapeHtml(it.name)}</div>
-    ${it.ach?(function(){ const a=gameMe?achStatus(gameMe,it):null; return `<div class="it-tip-req">🎯 ${escapeHtml(a?a.label:achShort(it.ach))}${a&&a.prog&&a.prog!=='미달'?` · 진행 <b>${escapeHtml(a.prog)}</b>`:''}<br><span style="opacity:.8">달성 시 코인 없이 무료 획득</span></div>`; })():''}
+    ${it.ach?(function(){ const a=gameMe?achStatus(gameMe,it):null; return `<div class="it-tip-req"><div class="it-tip-cond">🎯 ${escapeHtml(a?a.label:achShort(it.ach))}</div>${a&&a.prog&&a.prog!=='미달'?`<div class="it-tip-prog">📊 내 진행 <b>${escapeHtml(a.prog)}</b></div>`:''}<div class="it-tip-free">달성 시 코인 없이 무료 획득</div></div>`; })():''}
     <div class="it-tip-foot">${it.ach?(owned?'✓ 보유중':(gameMe&&achStatus(gameMe,it).ok?'🎁 지금 무료 획득 가능!':'🎯 달성 시 무료 획득')):(it.price===0?'기본 제공':(owned?'✓ 보유중':(it.fishOnly?'낚시로만 획득':'🪙 '+it.price+' 코인')))}</div>
   </div>`;
 }
