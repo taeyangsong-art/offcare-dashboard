@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 537,
+  "version": 538,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -27277,7 +27277,7 @@ window.SLACK_DATA = {
           "김규빈": 1
         },
         "menu": {
-          "김규빈": 1,
+          "김규빈": 2,
           "배선유": 5,
           "김동욱": 1
         },
@@ -27287,17 +27287,34 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "12:07",
-          "store": "요고 프로즌요거트 선부점",
-          "biz": "2773301247",
+          "time": "12:29",
+          "store": "면계옥 수내본점",
+          "biz": "3900903198",
           "handler": "김규빈",
-          "cat": "menu",
+          "cat": "as",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "12:26",
+          "store": "올드페리도넛 동탄점",
+          "biz": "1028531451",
+          "handler": "심성현",
+          "cat": "as",
           "reasons": [
             "확인 후 미완료"
           ]
         }
       ],
       "done": [
+        {
+          "time": "12:07",
+          "store": "요고 프로즌요거트 선부점",
+          "biz": "2773301247",
+          "cat": "menu",
+          "emp": "김규빈"
+        },
         {
           "time": "12:06",
           "store": "온당 Korean Tofu Culture",
@@ -27642,7 +27659,7 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "12:07",
+      "updatedAt": "12:30",
       "voc": {
         "responses": 2,
         "install": {
