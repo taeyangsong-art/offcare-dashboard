@@ -1647,7 +1647,7 @@ function itemTipHTML(cat,id){ const it=itemById(cat,id); if(!it) return ''; cons
     <div class="it-tip-top"><span class="it-tip-rar" style="color:${RARITY[r]}">${RARITY_KO[r]}</span>${it.fishOnly?'<span class="it-tip-fish">🎣 낚시전용</span>':''}</div>
     ${disp}
     <div class="it-tip-name">${CAT_LABEL[cat]||''} · ${escapeHtml(it.name)}</div>
-    ${it.ach?(function(){ const a=gameMe?achStatus(gameMe,it):null; return `<div class="it-tip-req">🎯 ${escapeHtml(a?a.label:achShort(it.ach))}${a?` · 진행 <b>${escapeHtml(a.prog)}</b>`:''}<br><span style="opacity:.8">달성 시 코인 없이 무료 획득</span></div>`; })():''}
+    ${it.ach?(function(){ const a=gameMe?achStatus(gameMe,it):null; return `<div class="it-tip-req">🎯 ${escapeHtml(a?a.label:achShort(it.ach))}${a&&a.prog&&a.prog!=='미달'?` · 진행 <b>${escapeHtml(a.prog)}</b>`:''}<br><span style="opacity:.8">달성 시 코인 없이 무료 획득</span></div>`; })():''}
     <div class="it-tip-foot">${it.ach?(owned?'✓ 보유중':(gameMe&&achStatus(gameMe,it).ok?'🎁 지금 무료 획득 가능!':'🎯 달성 시 무료 획득')):(it.price===0?'기본 제공':(owned?'✓ 보유중':(it.fishOnly?'낚시로만 획득':'🪙 '+it.price+' 코인')))}</div>
   </div>`;
 }
@@ -1761,7 +1761,7 @@ function shopCard(cat,it,emp){
     : it.e!==undefined ? (it.e||'✕')
     : (cat==='nametag' ? `<span style="${nametagStyle({nametag:it.id})}">가나</span>`
     : `<span class="tr-${r}" style="${titleStyleOf(it)}">[${escapeHtml(it.name)}]</span>`);
-  const reqBadge = it.ach ? `<div class="si-req ${owned||(a&&a.ok)?'met':'locked'}">🎯 ${escapeHtml(achShort(it.ach))}${owned?' ✓':(a?` <b>${escapeHtml(a.prog)}</b>`:'')}</div>` : '';
+  const reqBadge = it.ach ? `<div class="si-req ${owned||(a&&a.ok)?'met':'locked'}">🎯 ${escapeHtml(achShort(it.ach))}${owned?' ✓':(a&&a.prog!=='미달'?` <b>${escapeHtml(a.prog)}</b>`:'')}</div>` : '';
   const btnLabel = eq?'✓ 착용중':owned?'착용하기':locked?'🔒 조건 미달':a?'🎁 무료 획득':(it.price===0?'착용':'🪙 '+it.price);
   return `<div class="shop-item ${eq?'equipped':''} ${locked?'locked':''}" style="--rar:${RARITY[r]}" onmouseenter="previewEq('${cat}','${it.id}');showItemTip(event,'${cat}','${it.id}')" onmousemove="moveItemTip(event)" onmouseleave="clearPreview();hideItemTip()">
     <div class="si-rar">${RARITY_KO[r]}</div>
