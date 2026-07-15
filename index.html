@@ -2712,7 +2712,7 @@ function renderVocMonthly(){
       <div class="card"><div class="card-head"><h3>✅ 저점 처리 완료율</h3><span class="hint">${doneCount}/${totalIn}건</span></div>
         <div style="font-size:38px;font-weight:800;color:var(--green);margin-bottom:8px">${doneRate}<small style="font-size:16px;color:var(--gray2)">%</small></div>
         ${progressBar(doneRate,'#34c759')}
-        <div class="note" style="font-size:12px;color:var(--gray2);margin-top:8px">저점 인입의 팔로업 처리 비율 (처리완료로 표시된 건)</div></div>
+        <div class="note" style="font-size:12px;color:var(--gray2);margin-top:8px">저점 인입의 팔로업 처리 비율 · <b>처리완료·부재·통화거부·OB필요없음</b> 모두 완료로 집계</div></div>
       <div class="card"><div class="card-head"><h3>😀 긍정 vs 😡 부정</h3><span class="hint">칭찬·고점 ${posCount} · 저점 ${totalIn}</span></div>
         <div style="font-size:38px;font-weight:800;color:var(--green);margin-bottom:8px">긍정 ${posRate}<small style="font-size:16px;color:var(--gray2)">%</small></div>
         <div class="prog" style="height:14px"><div class="prog-fill" style="width:${sentTot?posCount/sentTot*100:0}%;background:#34c759"></div><div class="prog-fill" style="width:${sentTot?totalIn/sentTot*100:0}%;background:#ff3b30"></div></div>
