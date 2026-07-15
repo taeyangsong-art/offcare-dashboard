@@ -2722,10 +2722,10 @@ function renderVocMonthly(){
     </div>
 
     <div class="grid2">
-      <div class="card"><div class="card-head"><h3>📅 사용기간(차수)별 저점율</h3><span class="hint">응답 대비 저점 비율</span></div>
-        ${tenRows.length?tenRows.map(([n,o])=>ratioRow(n,o.low,o.total)).join(''):'<div class="empty-note">데이터 없음</div>'}</div>
-      <div class="card"><div class="card-head"><h3>🏦 VAN사별 저점율</h3><span class="hint">응답 대비 저점 비율</span></div>
-        ${vanRows.length?vanRows.map(([n,o])=>ratioRow(n,o.low,o.total)).join(''):'<div class="empty-note">데이터 없음</div>'}</div>
+      <div class="card"><div class="card-head"><h3>🏭 업종별 인입</h3><span class="hint">업종 클릭 → 가장 많은 이유 + 매장 상세</span></div>
+        ${mIndEntries.length?vocGroupDrill(mIndEntries, mIndDMax, '#0071e3', true):'<div class="empty-note">인입 없음 👍</div>'}</div>
+      <div class="card"><div class="card-head"><h3>😟 인입 이유별</h3><span class="hint">사유 클릭 → 매장명·저점내용·해결내용</span></div>
+        ${mReaEntries.length?vocGroupDrill(mReaEntries, mReaDMax, '#ff3b30', false):'<div class="empty-note">인입 없음 👍</div>'}</div>
     </div>
 
     <div class="grid2">
@@ -2736,10 +2736,10 @@ function renderVocMonthly(){
     </div>
 
     <div class="grid2">
-      <div class="card"><div class="card-head"><h3>🏭 업종별 인입</h3><span class="hint">업종 클릭 → 가장 많은 이유 + 매장 상세</span></div>
-        ${mIndEntries.length?vocGroupDrill(mIndEntries, mIndDMax, '#0071e3', true):'<div class="empty-note">인입 없음 👍</div>'}</div>
-      <div class="card"><div class="card-head"><h3>😟 인입 이유별</h3><span class="hint">사유 클릭 → 매장명·저점내용·해결내용</span></div>
-        ${mReaEntries.length?vocGroupDrill(mReaEntries, mReaDMax, '#ff3b30', false):'<div class="empty-note">인입 없음 👍</div>'}</div>
+      <div class="card"><div class="card-head"><h3>📅 사용기간(차수)별 저점율</h3><span class="hint">응답 대비 저점 비율</span></div>
+        ${tenRows.length?tenRows.map(([n,o])=>ratioRow(n,o.low,o.total)).join(''):'<div class="empty-note">데이터 없음</div>'}</div>
+      <div class="card"><div class="card-head"><h3>🏦 VAN사별 저점율</h3><span class="hint">응답 대비 저점 비율</span></div>
+        ${vanRows.length?vanRows.map(([n,o])=>ratioRow(n,o.low,o.total)).join(''):'<div class="empty-note">데이터 없음</div>'}</div>
     </div>
     <div class="card"><div class="card-head"><h3>일별 인입 추이</h3><span class="hint">${mo+1}월</span></div>${vocDailyTrend(dates)}</div>
     <div class="card">
