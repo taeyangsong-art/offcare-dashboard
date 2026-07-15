@@ -2010,7 +2010,7 @@ function renderOverview(){
   const empRows = EMPLOYEES.map(e=>{
     const cells = WORK_CATS.map(c=>ovCnt(c.key, viewDates, e));
     const vc = vocByEmp[e]||0;
-    return {emp:e, cells, vc, total:cells.reduce((a,b)=>a+b,0)};   // total=업무처리(랭킹·MVP·차트용, VOC 제외)
+    return {emp:e, cells, vc, total:cells.reduce((a,b)=>a+b,0)+vc};   // total=업무처리 + VOC 처리(랭킹·MVP)
   }).sort((a,b)=>b.total-a.total);
   const maxEmp = Math.max(1, ...empRows.map(r=>r.total));
   const maxCell = Math.max(1, ...empRows.flatMap(r=>[...r.cells, r.vc]));
@@ -2111,7 +2111,7 @@ function renderOverview(){
               <td class="emp-name">${medal(i)} ${r.emp}</td>
               ${r.cells.map((n,ci)=>`<td class="num mcell" style="${n>0?`background:${hexA(WORK_CATS[ci].color,0.08+n/maxCell*0.30)}`:''}">${n||'<span class="zero">·</span>'}</td>`).join("")}
               <td class="num mcell" style="${r.vc>0?`background:${hexA('#ff2d55',0.08+r.vc/maxCell*0.30)}`:''}">${r.vc||'<span class="zero">·</span>'}</td>
-              <td class="num tot">${r.total+r.vc}</td>
+              <td class="num tot">${r.total}</td>
             </tr>`).join("")}
           </tbody>
           <tfoot><tr><td>합계</td>${workCatTotals.map(c=>`<td class="num">${c.total}</td>`).join("")}<td class="num">${vocAttr}</td><td class="num tot">${grandProc}</td></tr></tfoot>
@@ -2162,7 +2162,7 @@ function catChip(k){ const c=WORK_CATS.find(w=>w.key===k); const col=k==='voc'?'
 function detailStatusBadge(st){ const col={'처리':'#166534','부재':'#b91c1c','확인필요':'#c2410c'}[st]||'#475569', bg={'처리':'#dcfce7','부재':'#ffe1de','확인필요':'#ffedd5'}[st]||'#eef1f5'; return `<span class="dm-st" style="background:${bg};color:${col}">${st}</span>`; }
 function showDoneDetail(mode, key){
   const dates=ovDates(), set=new Set(dates); let items=[], title='';
-  const pushVocDone=()=>{ allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ if(x.emp&&x.doneDate&&set.has(x.doneDate)) items.push({time:x.time,store:x.store,biz:x.storeId,emp:x.emp,cat:'voc',date:x.doneDate,st:'처리'}); }); }); };
+  const pushVocDone=(empFilter)=>{ allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ if(x.emp&&(!empFilter||x.emp===empFilter)&&x.doneDate&&set.has(x.doneDate)) items.push({time:'',store:x.store,biz:x.storeId,emp:x.emp,cat:'voc',date:x.doneDate,st:'처리',nt:isNightTime(x.time)}); }); }); };
   if(mode==='cat'){
     title = catLabelOf(key)+' 처리 상세';
     if(key==='voc'){ pushVocDone(); }
@@ -2170,18 +2170,19 @@ function showDoneDetail(mode, key){
   } else if(mode==='emp'){
     title = key+' 처리 상세';
     dates.forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp===key) items.push({time:x.time,store:x.store,biz:x.biz,emp:x.emp,cat:x.cat,date:d,st:'처리'}); }));
+    pushVocDone(key);   // 이 직원의 VOC 처리도 포함 (랭킹 수치와 일치)
   } else { // 'all' = 원격 총 건수 (처리 + 부재 + 확인필요)
     title = '원격 총 건수 상세';
     dates.forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>items.push({time:x.time,store:x.store,biz:x.biz,emp:x.emp,cat:x.cat,date:d,st:'처리'})));
     pushVocDone();
     dates.forEach(d=>((slackDay(d)||{}).pending||[]).forEach(x=>{ const ab=(x.reasons||[]).some(r=>/부재/.test(r)); items.push({time:x.time,store:x.store,biz:x.biz,emp:x.handler,cat:x.cat,date:d,st:ab?'부재':'확인필요'}); }));
   }
-  if(ovShift==='night'){ items=items.filter(x=>isNightTime(x.time)); title='🌙 '+title; }
+  if(ovShift==='night'){ items=items.filter(x=> x.cat==='voc' ? x.nt : isNightTime(x.time)); title='🌙 '+title; }
   openDetailModal(title, items);
 }
 function openDetailModal(title, items){
   items.sort((a,b)=>((b.date||'')+(b.time||'')).localeCompare((a.date||'')+(a.time||'')));
-  const rows = items.length? items.map((x,i)=>`<tr class="dm-row" data-k="${((x.store||'')+' '+(x.biz||'')).toLowerCase()}"><td class="dm-num">${i+1}</td><td class="trow-time">${fmtShort(x.date)}<br>${x.time||''}</td><td>${detailStatusBadge(x.st)}</td><td>${catChip(x.cat)}</td><td class="emp-name">${escapeHtml(x.store||'-')}</td><td class="trow-biz">${escapeHtml(x.biz||'-')}</td><td>${escapeHtml(x.emp||'-')}</td></tr>`).join('')
+  const rows = items.length? items.map((x,i)=>`<tr class="dm-row" data-k="${((x.store||'')+' '+(x.biz||'')).toLowerCase()}"><td class="dm-num">${i+1}</td><td class="trow-time">${fmtShort(x.date)}<br>${x.cat==='voc'?'<span style="font-size:10px;color:var(--gray2)">설문</span>':(x.time||'')}</td><td>${detailStatusBadge(x.st)}</td><td>${catChip(x.cat)}</td><td class="emp-name">${escapeHtml(x.store||'-')}</td><td class="trow-biz">${escapeHtml(x.biz||'-')}</td><td>${escapeHtml(x.emp||'-')}</td></tr>`).join('')
     : `<tr><td colspan="7" style="text-align:center;color:var(--gray2);padding:22px">상세 데이터가 없습니다.<br><span style="font-size:12px">과거 일자는 <b>backfill</b> 워크플로 실행 후 표시됩니다.</span></td></tr>`;
   let el=document.getElementById('doneModal'); if(!el){ el=document.createElement('div'); el.id='doneModal'; el.className='detail-overlay'; el.onclick=e=>{ if(e.target===el) el.remove(); }; document.body.appendChild(el); }
   el.innerHTML=`<div class="detail-box"><div class="detail-head"><h3>${escapeHtml(title)} <span class="cnt-badge">${items.length}건</span></h3><button class="detail-x" onclick="document.getElementById('doneModal').remove()">✕</button></div>
