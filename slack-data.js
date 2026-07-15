@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 609,
+  "version": 610,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -29228,7 +29228,67 @@ window.SLACK_DATA = {
       "counts": {},
       "pending": [],
       "done": [],
-      "updatedAt": ""
+      "updatedAt": "05:16",
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 0,
+          "low": 0
+        },
+        "nps": {
+          "count": 1,
+          "low": 1
+        },
+        "high": {
+          "install": 0,
+          "nps": 0
+        },
+        "npsDist": {
+          "4": 1
+        },
+        "installDist": {},
+        "byIndustry": {},
+        "byTenure": {
+          "1개월": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "byVan": {
+          "DAOU": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1
+        },
+        "alerts": [
+          {
+            "time": "05:16",
+            "store": "클로버(clover)",
+            "storeId": "505537",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 4,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 4,
+                "text": "오류가 너무 잦음",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
+        "praises": []
+      }
     }
   }
 };
