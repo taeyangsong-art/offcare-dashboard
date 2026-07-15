@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 567,
+  "version": 568,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -27258,15 +27258,15 @@ window.SLACK_DATA = {
     "2026-07-15": {
       "counts": {
         "as": {
-          "최민석": 15,
+          "서상원": 2,
+          "최민석": 16,
+          "김기범": 12,
           "심성현": 34,
           "송태양": 20,
           "김현기": 21,
           "배선유": 17,
           "김동욱": 17,
-          "김규빈": 10,
-          "김기범": 11,
-          "서상원": 1
+          "김규빈": 10
         },
         "onboarding": {
           "최민석": 2,
@@ -27318,6 +27318,20 @@ window.SLACK_DATA = {
       ],
       "done": [
         {
+          "time": "19:30",
+          "store": "하우유두인(How u doin)",
+          "biz": "2405800685",
+          "cat": "as",
+          "emp": "서상원"
+        },
+        {
+          "time": "19:00",
+          "store": "키나발루 코피티암 (KINABALU KOPITIAM)",
+          "biz": "6870104232",
+          "cat": "as",
+          "emp": "최민석"
+        },
+        {
           "time": "18:56",
           "store": "비스밀라 케밥&amp;비리야니(Bismillah Kab",
           "biz": "3743501654",
@@ -27330,6 +27344,13 @@ window.SLACK_DATA = {
           "biz": "1065431968",
           "cat": "as",
           "emp": "최민석"
+        },
+        {
+          "time": "18:49",
+          "store": "드롭탑 함평나비(무안)휴게소",
+          "biz": "1568501691",
+          "cat": "as",
+          "emp": "김기범"
         },
         {
           "time": "18:48",
@@ -28704,23 +28725,23 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "19:30",
+      "updatedAt": "19:43",
       "voc": {
-        "responses": 19,
+        "responses": 20,
         "install": {
           "count": 5,
           "low": 3
         },
         "nps": {
-          "count": 19,
-          "low": 7
+          "count": 20,
+          "low": 8
         },
         "high": {
           "install": 1,
           "nps": 5
         },
         "npsDist": {
-          "0": 2,
+          "0": 3,
           "2": 3,
           "5": 2,
           "6": 2,
@@ -28740,6 +28761,10 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 3,
+            "low": 2
+          },
           "1개월": {
             "total": 6,
             "low": 2
@@ -28747,10 +28772,6 @@ window.SLACK_DATA = {
           "6개월": {
             "total": 3,
             "low": 3
-          },
-          "12개월": {
-            "total": 2,
-            "low": 1
           },
           "구매설치": {
             "total": 5,
@@ -28762,13 +28783,13 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 5,
+            "low": 3
+          },
           "KIS": {
             "total": 6,
             "low": 1
-          },
-          "KPN": {
-            "total": 4,
-            "low": 2
           },
           "DAOU": {
             "total": 3,
@@ -28788,13 +28809,35 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
-          "사용중 오류가 자주 발생함": 4,
+          "사용중 오류가 자주 발생함": 5,
           "단말기 설치나 초기 과정이 어려움": 2,
           "고객센터 연락이 매우 힘듦": 1,
           "구매,계약과정에서 설명이 부족": 1,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2
         },
         "alerts": [
+          {
+            "time": "19:39",
+            "store": "레트리(RETRI)",
+            "storeId": "210501",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "그때 한번 멈춤이유로 불안성이 보임",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "17:17",
             "store": "디엠디엠디",
