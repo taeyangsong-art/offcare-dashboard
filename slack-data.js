@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 538,
+  "version": 539,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -27258,12 +27258,12 @@ window.SLACK_DATA = {
     "2026-07-15": {
       "counts": {
         "as": {
-          "김현기": 5,
-          "심성현": 11,
+          "김현기": 6,
+          "김규빈": 2,
+          "심성현": 12,
           "김동욱": 3,
           "송태양": 7,
-          "배선유": 5,
-          "김규빈": 1
+          "배선유": 5
         },
         "extern": {
           "서상원": 2,
@@ -27287,27 +27287,38 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "12:29",
-          "store": "면계옥 수내본점",
-          "biz": "3900903198",
-          "handler": "김규빈",
-          "cat": "as",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "12:26",
-          "store": "올드페리도넛 동탄점",
-          "biz": "1028531451",
+          "time": "12:45",
+          "store": "카페 in cake",
+          "biz": "4786400694",
           "handler": "심성현",
-          "cat": "as",
+          "cat": "delivery",
           "reasons": [
             "확인 후 미완료"
           ]
         }
       ],
       "done": [
+        {
+          "time": "12:34",
+          "store": "맛난제과",
+          "biz": "5410204189",
+          "cat": "as",
+          "emp": "김현기"
+        },
+        {
+          "time": "12:29",
+          "store": "면계옥 수내본점",
+          "biz": "3900903198",
+          "cat": "as",
+          "emp": "김규빈"
+        },
+        {
+          "time": "12:26",
+          "store": "올드페리도넛 동탄점",
+          "biz": "1028531451",
+          "cat": "as",
+          "emp": "심성현"
+        },
         {
           "time": "12:07",
           "store": "요고 프로즌요거트 선부점",
@@ -27659,7 +27670,7 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "12:30",
+      "updatedAt": "12:45",
       "voc": {
         "responses": 2,
         "install": {
