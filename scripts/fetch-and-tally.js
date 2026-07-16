@@ -248,8 +248,18 @@ function trackResp(data, msgs) {
         const mid = (W[key].lastSeen + nowSec) / 2;    // 확인은 (lastSeen, now) 사이에 발생 → 중간값 추정
         const respMin = Math.max(0, (mid - postSec) / 60);
         const day = kstDate(m.ts);
-        DD[day] = DD[day] || { cnt: 0, sumMin: 0, over: 0 };
+        DD[day] = DD[day] || { cnt: 0, sumMin: 0, over: 0, items: [] };
+        DD[day].items = DD[day].items || [];
         DD[day].cnt++; DD[day].sumMin += respMin; if (respMin > RESP_DELAY_MIN) DD[day].over++;
+        // 건별 상세(올라온시간·응답분·상호·담당) 저장 — 상세 모달용
+        const text = m.text || '';
+        let store = (((text.match(/상호\s*[:：]?\s*(.+)/) || [])[1]) || ((text.match(/매장명\s*[:：]?\s*(.+)/) || [])[1]) || '').trim().split('/')[0].trim();
+        if (store.length > 30) store = store.slice(0, 30);
+        const biz = ((text.match(/사업자\s*번?호?\s*[:：]?\s*([\d\-]+)/) || [])[1] || '').replace(/-/g, '').trim();
+        let who = '';
+        for (const n of names) { const pm = n.match(/^원격(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)$/); if (pm) { who = personMap[pm[1]]; break; } }
+        if (!who) for (const n of names) { const cm = n.match(/^(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)(_확인.*)?$/); if (cm) { who = personMap[cm[1]]; break; } }
+        DD[day].items.push({ hm: kstHM(m.ts), min: Math.round(respMin * 10) / 10, store, biz, who });
         delete W[key];
       }
       // 처음 볼 때 이미 확인됨 → 언제 찍혔는지 알 수 없어 제외

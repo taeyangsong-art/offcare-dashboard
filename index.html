@@ -2150,9 +2150,9 @@ function renderOverview(){
         <div class="hl-big">${mvp?escapeHtml(mvp.emp):'-'}</div>
         ${mvp?`<div class="mvp-proc" onclick="showDoneDetail('emp','${mvp.emp}')"><b>${mvp.total}</b><small>건 처리</small><span class="mvp-proc-hint">🔎 상세 보기</span></div>`:`<div class="ov-delta flat"><span>데이터 없음</span></div>`}
       </div>
-      <div class="hl-card mint">
+      <div class="hl-card mint${respAgg.cnt?' clickable':''}"${respAgg.cnt?' onclick="showRespDetail()" title="클릭 → 건별 응답시간 상세(정렬)"':''}>
         <div class="hl-ic">⏱️</div>
-        <div class="hl-lab">${periodWord} 평균 응답시간 <span class="hl-drill" title="요청글이 올라온 뒤 담당자 확인 이모지가 찍히기까지 걸린 평균 시간 (10분 폴링 근사)">ⓘ</span></div>
+        <div class="hl-lab">${periodWord} 평균 응답시간 ${respAgg.cnt?'<span class="hl-drill">🔎</span>':'<span class="hl-drill" title="요청글이 올라온 뒤 담당자 확인 이모지가 찍히기까지 걸린 평균 시간 (10분 폴링 근사)">ⓘ</span>'}</div>
         <div class="hl-big">${respAgg.cnt?`${respAgg.avg}<small>분</small>`:`<span style="font-size:17px;color:var(--gray2);font-weight:700">집계 대기중</span>`}</div>
         <div class="ov-delta flat"><span>${respAgg.cnt?`지연율(30분↑) ${respAgg.overRate}% · ${respAgg.cnt}건 기준`:'배포 후 인입 건부터 순차 집계'}</span></div>
       </div>
@@ -2282,6 +2282,27 @@ function openDetailModal(title, items){
     <div class="detail-scroll"><table class="voc-table"><thead><tr><th style="width:34px">#</th><th style="width:52px">시간</th><th style="width:72px">상태</th><th style="width:88px">유형</th><th>상호</th><th style="width:110px">사업자</th><th style="width:62px">담당</th></tr></thead><tbody id="doneModalBody">${rows}</tbody></table></div></div>`;
 }
 function filterDoneModal(q){ q=(q||'').trim().toLowerCase(); document.querySelectorAll('#doneModalBody .dm-row').forEach(tr=>{ tr.style.display=(tr.dataset.k||'').includes(q)?'':'none'; }); }
+// ⏱️ 평균 응답시간 카드 클릭 → 건별 상세(올라온시간·응답분·담당), 응답 빠른순/느린순 정렬
+let respDetailItems=[]; let respSortMode='fast';
+function showRespDetail(){
+  const dates=ovDates();
+  const R=(window.SLACK_DATA&&window.SLACK_DATA.resp&&window.SLACK_DATA.resp.days)||{};
+  respDetailItems=[];
+  for(const d of dates){ const arr=(R[d]&&R[d].items)||[]; for(const it of arr) respDetailItems.push(Object.assign({date:d}, it)); }
+  if(ovShift==='night') respDetailItems=respDetailItems.filter(x=>isNightTime(x.hm));
+  respSortMode='fast'; renderRespModal();
+}
+function respSort(mode){ respSortMode=mode; renderRespModal(); }
+function renderRespModal(){
+  const items=respDetailItems.slice().sort((a,b)=> respSortMode==='fast' ? (a.min-b.min) : (b.min-a.min));
+  const avg=items.length?Math.round(items.reduce((a,x)=>a+(x.min||0),0)/items.length):0;
+  const rows=items.length? items.map((x,i)=>`<tr class="dm-row" data-k="${((x.store||'')+' '+(x.biz||'')).toLowerCase()}"><td class="dm-num">${i+1}</td><td class="trow-time">${fmtShort(x.date)}<br>${escapeHtml(x.hm||'')}</td><td style="font-weight:800;color:${x.min>30?'var(--red)':'var(--green)'}">${x.min}분</td><td class="emp-name">${escapeHtml(x.store||'-')}</td><td>${escapeHtml(x.who||'-')}</td></tr>`).join('')
+    : `<tr><td colspan="5" style="text-align:center;color:var(--gray2);padding:22px">아직 측정된 응답 건이 없습니다.<br><span style="font-size:12px">배포 후 새로 인입·확인된 건부터 순차 집계됩니다.</span></td></tr>`;
+  let el=document.getElementById('respModal'); if(!el){ el=document.createElement('div'); el.id='respModal'; el.className='detail-overlay'; el.onclick=e=>{ if(e.target===el) el.remove(); }; document.body.appendChild(el); }
+  el.innerHTML=`<div class="detail-box"><div class="detail-head"><h3>⏱️ 응답시간 상세 <span class="cnt-badge">${items.length}건 · 평균 ${avg}분</span></h3><button class="detail-x" onclick="document.getElementById('respModal').remove()">✕</button></div>
+    <div class="seg" style="margin-top:10px"><button class="${respSortMode==='fast'?'on':''}" onclick="respSort('fast')">응답 빠른순 ↑</button><button class="${respSortMode==='slow'?'on':''}" onclick="respSort('slow')">응답 느린순 ↓</button></div>
+    <div class="detail-scroll"><table class="voc-table"><thead><tr><th style="width:34px">#</th><th style="width:70px">올라온</th><th style="width:60px">응답</th><th>상호</th><th style="width:70px">담당</th></tr></thead><tbody>${rows}</tbody></table></div></div>`;
+}
 
 // 전체 처리 추이 (기간 내 일별 전 카테고리 합계)
 function overviewTrend(dates){
