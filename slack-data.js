@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 631,
+  "version": 632,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -29235,9 +29235,10 @@ window.SLACK_DATA = {
     "2026-07-16": {
       "counts": {
         "as": {
+          "김동욱": 3,
+          "김규빈": 4,
+          "배선유": 1,
           "김현기": 11,
-          "김규빈": 2,
-          "김동욱": 1,
           "송태양": 1
         },
         "extern": {
@@ -29254,22 +29255,39 @@ window.SLACK_DATA = {
           "김규빈": 4
         },
         "delivery": {
-          "김현기": 1
+          "김현기": 2
         }
       },
-      "pending": [
-        {
-          "time": "09:45",
-          "store": "트레머 커피 커먼스",
-          "biz": "1898802522",
-          "handler": "김현기",
-          "cat": "delivery",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
+        {
+          "time": "10:48",
+          "store": "산도랑",
+          "biz": "3881802373",
+          "cat": "as",
+          "emp": "김동욱"
+        },
+        {
+          "time": "10:47",
+          "store": "투데이휘트니스 헬스&amp;PT",
+          "biz": "2728603659",
+          "cat": "as",
+          "emp": "김규빈"
+        },
+        {
+          "time": "10:46",
+          "store": "브레디온",
+          "biz": "6583101480",
+          "cat": "as",
+          "emp": "배선유"
+        },
+        {
+          "time": "10:45",
+          "store": "한뜻 세무회계",
+          "biz": "7621002274",
+          "cat": "as",
+          "emp": "김규빈"
+        },
         {
           "time": "10:27",
           "store": "할매김밥",
@@ -29341,6 +29359,13 @@ window.SLACK_DATA = {
           "emp": "김현기"
         },
         {
+          "time": "09:57",
+          "store": "(주)프레이져홀딩스 케이가든",
+          "biz": "2888501829",
+          "cat": "as",
+          "emp": "김동욱"
+        },
+        {
           "time": "09:54",
           "store": "드롭탑 강천산(대구)휴게소점",
           "biz": "5858502942",
@@ -29352,6 +29377,13 @@ window.SLACK_DATA = {
           "store": "전복촌",
           "biz": "1313591001",
           "cat": "as",
+          "emp": "김현기"
+        },
+        {
+          "time": "09:45",
+          "store": "트레머 커피 커먼스",
+          "biz": "1898802522",
+          "cat": "delivery",
           "emp": "김현기"
         },
         {
@@ -29439,7 +29471,7 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "10:45",
+      "updatedAt": "11:00",
       "voc": {
         "responses": 2,
         "install": {
