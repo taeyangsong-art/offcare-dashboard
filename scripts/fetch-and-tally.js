@@ -190,6 +190,7 @@ async function tallyInto(msgs, ch, counts, pending, done, opts) {
     let store = (((text.match(/상호\s*[:：]?\s*(.+)/) || [])[1]) || ((text.match(/매장명\s*[:：]?\s*(.+)/) || [])[1]) || '').trim().split('/')[0].trim();
     if (store.length > 30) store = store.slice(0, 30);
     const biz = ((text.match(/사업자\s*번?호?\s*[:：]?\s*([\d\-]+)/) || [])[1] || '').replace(/-/g, '').trim();
+    const req = ((text.match(/내용\s*[:：]?\s*(.+)/) || [])[1] || '').trim().slice(0, 140);   // 요청 '내용' 필드(문제 유형 분류용)
 
     let emp = null;
     for (const n of names) { const pm = n.match(/^원격(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)$/); if (pm) { emp = personMap[pm[1]]; break; } }
@@ -216,13 +217,13 @@ async function tallyInto(msgs, ch, counts, pending, done, opts) {
       const who = doer || '미지정';
       counts.extern = counts.extern || {};
       counts.extern[who] = (counts.extern[who] || 0) + 1; externCount++;
-      done.push({ time, store, biz, cat: 'extern', emp: who, note: await grabNote(m, 'extern', time, store, biz) });
+      done.push({ time, store, biz, cat: 'extern', emp: who, req, note: await grabNote(m, 'extern', time, store, biz) });
     } else if (emojiCat || (emp && !ch.requireCat)) {   // 카테고리 이모지 있음, 또는 AS채널에서 완료담당자만(→defaultCat). requireCat 채널은 이모지 필수
       const catKey = emojiCat || ch.defaultCat;
       const who = emp || confirmPerson || '미지정';
       counts[catKey] = counts[catKey] || {};
       counts[catKey][who] = (counts[catKey][who] || 0) + 1; completed++;
-      done.push({ time, store, biz, cat: catKey, emp: who, note: await grabNote(m, catKey, time, store, biz) });
+      done.push({ time, store, biz, cat: catKey, emp: who, req, note: await grabNote(m, catKey, time, store, biz) });
     } else if (hasAbsent && !invalidPost) {  // 완료·카테고리 이모지 없이 '부재만' (확인+X 잘못올린글 제외)
       // 2차부재(재부재=연락 불가)는 확인필요에서 제외, 1차부재만 — 그것도 1시간 지나야 확인필요로 적재
       if (absTag !== '2차 부재' && ageSec >= CONFIRM_GRACE_SEC) pending.push({ time, store, biz, handler: doer || '미지정', cat: ch.defaultCat, reasons: [absTag] });
