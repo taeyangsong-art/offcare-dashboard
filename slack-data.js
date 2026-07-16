@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 629,
+  "version": 630,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -29234,12 +29234,21 @@ window.SLACK_DATA = {
     },
     "2026-07-16": {
       "counts": {
+        "extern": {
+          "서상원": 1
+        },
         "as": {
-          "김현기": 8,
+          "김규빈": 2,
+          "김현기": 10,
+          "김동욱": 1,
           "송태양": 1
         },
         "onboarding": {
+          "송태양": 1,
           "김동욱": 1
+        },
+        "transfer": {
+          "송태양": 1
         },
         "menu": {
           "김규빈": 4
@@ -29250,6 +29259,27 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:19",
+          "store": "앨리스 도넛&amp;사라다 광주점",
+          "biz": "1407100555",
+          "cat": "extern",
+          "emp": "서상원"
+        },
+        {
+          "time": "10:16",
+          "store": "우리유통",
+          "biz": "4777200527",
+          "cat": "as",
+          "emp": "김규빈"
+        },
+        {
+          "time": "10:11",
+          "store": "미선당",
+          "biz": "6780702362",
+          "cat": "as",
+          "emp": "김규빈"
+        },
         {
           "time": "10:07",
           "store": "(주)창구유통 강창구찹쌀진순대 광장점",
@@ -29272,6 +29302,13 @@ window.SLACK_DATA = {
           "emp": "김규빈"
         },
         {
+          "time": "10:06",
+          "store": "달콤한 꽃케이크",
+          "biz": "1393001963",
+          "cat": "onboarding",
+          "emp": "송태양"
+        },
+        {
           "time": "10:05",
           "store": "케이핀초반",
           "biz": "2660303234",
@@ -29279,9 +29316,30 @@ window.SLACK_DATA = {
           "emp": "김규빈"
         },
         {
+          "time": "10:00",
+          "store": "대진",
+          "biz": "1530903338",
+          "cat": "as",
+          "emp": "김현기"
+        },
+        {
+          "time": "09:54",
+          "store": "드롭탑 강천산(대구)휴게소점",
+          "biz": "5858502942",
+          "cat": "as",
+          "emp": "김동욱"
+        },
+        {
           "time": "09:46",
           "store": "전복촌",
           "biz": "1313591001",
+          "cat": "as",
+          "emp": "김현기"
+        },
+        {
+          "time": "09:44",
+          "store": "샘물김밥",
+          "biz": "1180227599",
           "cat": "as",
           "emp": "김현기"
         },
@@ -29322,6 +29380,13 @@ window.SLACK_DATA = {
         },
         {
           "time": "09:30",
+          "store": "멍멍1길 23",
+          "biz": "5840603619",
+          "cat": "transfer",
+          "emp": "송태양"
+        },
+        {
+          "time": "09:30",
           "store": "이유(leeyoo)",
           "biz": "6981003384",
           "cat": "delivery",
@@ -29356,7 +29421,7 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "10:11",
+      "updatedAt": "10:30",
       "voc": {
         "responses": 1,
         "install": {
