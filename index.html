@@ -2308,7 +2308,7 @@ function runStoreSearch(q){
   const matchWork=(store,biz)=> (store&&store.toLowerCase().includes(ql)) || (bizQ.length>=4 && biz&&String(biz).includes(bizQ));
   const rows=[];
   for(const d of allSlackDates()){ const dd=slackDay(d)||{};
-    (dd.done||[]).forEach(x=>{ if(matchWork(x.store,x.biz)) rows.push({date:d,time:x.time,store:x.store,cat:x.cat,emp:x.emp,st:'처리',note:''}); });
+    (dd.done||[]).forEach(x=>{ if(matchWork(x.store,x.biz)) rows.push({date:d,time:x.time,store:x.store,cat:x.cat,emp:x.emp,st:'처리',note:x.note||''}); });
     (dd.pending||[]).forEach(x=>{ if(matchWork(x.store,x.biz)){ const ab=(x.reasons||[]).some(r=>/부재/.test(r)); rows.push({date:d,time:x.time,store:x.store,cat:x.cat,emp:x.handler,st:ab?'부재':'확인필요',note:(x.reasons||[]).join(', ')}); } });
     const v=dd.voc; if(v)(v.alerts||[]).forEach(x=>{ if((x.store&&x.store.toLowerCase().includes(ql))||(x.storeId&&String(x.storeId).toLowerCase().includes(ql))) rows.push({date:d,time:x.time,store:x.store,cat:'voc',emp:x.emp||x.autoEmp||'',st:vocDone(x.autoStatus||'')?'처리':'저점',note:x.autoNote||((x.reasons||[]).map(r=>r.text).filter(Boolean).join(' / '))}); });
   }

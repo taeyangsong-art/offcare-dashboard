@@ -140,7 +140,7 @@ async function fetchAllRange(channelId, oldestTs, latestTs) {
 
 // 스레드 답글 읽기 (VOC 처리내용 자동 수집용). rate-limit/scope 문제로 실패해도 절대 throw하지 않음.
 let repliesFetched = 0, repliesWarned = false;
-const MAX_REPLY_FETCH = 80;   // 과도한 API 호출/rate-limit 방지 상한
+const MAX_REPLY_FETCH = 150;  // 과도한 API 호출/rate-limit 방지 상한 (업무 처리내역 + VOC 공용)
 async function fetchReplies(channelId, ts) {
   if (repliesFetched >= MAX_REPLY_FETCH) {
     if (!repliesWarned) { console.log(`  (처리내용 자동수집 상한 ${MAX_REPLY_FETCH}건 도달 — 이후 생략)`); repliesWarned = true; }
@@ -170,8 +170,16 @@ function cleanNote(s) {
 }
 
 // 한 채널의 메시지를 공유 counts/pending/done 에 누적
-function tallyInto(msgs, ch, counts, pending, done) {
+async function tallyInto(msgs, ch, counts, pending, done, opts) {
   done = done || [];
+  const priorNotes = (opts && opts.priorNotes) || {};   // 이전 실행에서 이미 수집한 처리내역(재호출 방지)
+  // 스레드 처리내역 수집: 이미 있으면 재사용, 없고 답글 있으면 첫 답글들 텍스트를 정리해 저장
+  async function grabNote(m, catKey, time, store, biz) {
+    const key = time + '|' + store + '|' + biz + '|' + catKey;
+    if (priorNotes[key]) return priorNotes[key];
+    if ((m.reply_count || 0) > 0 && ch.id) { const reps = await fetchReplies(ch.id, m.ts); return cleanNote(reps.map(r => blocksText(r)).join(' / ')); }
+    return '';
+  }
   let completed = 0, externCount = 0, dup = 0, latest = '';
   for (const m of msgs) {
     if (m.subtype && m.subtype !== 'bot_message') continue; // 봇 접수 메시지(메뉴채널)는 집계, 시스템 메시지는 제외
@@ -208,13 +216,13 @@ function tallyInto(msgs, ch, counts, pending, done) {
       const who = doer || '미지정';
       counts.extern = counts.extern || {};
       counts.extern[who] = (counts.extern[who] || 0) + 1; externCount++;
-      done.push({ time, store, biz, cat: 'extern', emp: who });
+      done.push({ time, store, biz, cat: 'extern', emp: who, note: await grabNote(m, 'extern', time, store, biz) });
     } else if (emojiCat || (emp && !ch.requireCat)) {   // 카테고리 이모지 있음, 또는 AS채널에서 완료담당자만(→defaultCat). requireCat 채널은 이모지 필수
       const catKey = emojiCat || ch.defaultCat;
       const who = emp || confirmPerson || '미지정';
       counts[catKey] = counts[catKey] || {};
       counts[catKey][who] = (counts[catKey][who] || 0) + 1; completed++;
-      done.push({ time, store, biz, cat: catKey, emp: who });
+      done.push({ time, store, biz, cat: catKey, emp: who, note: await grabNote(m, catKey, time, store, biz) });
     } else if (hasAbsent && !invalidPost) {  // 완료·카테고리 이모지 없이 '부재만' (확인+X 잘못올린글 제외)
       // 2차부재(재부재=연락 불가)는 확인필요에서 제외, 1차부재만 — 그것도 1시간 지나야 확인필요로 적재
       if (absTag !== '2차 부재' && ageSec >= CONFIRM_GRACE_SEC) pending.push({ time, store, biz, handler: doer || '미지정', cat: ch.defaultCat, reasons: [absTag] });
@@ -396,12 +404,15 @@ async function tallyVoc(msgs, voc, channelId, opts) {
   for (const dstr of workDates) {
     const b = boundsOf(dstr);
     const counts = {}, pending = [], done = [];
+    // 이전 실행에서 수집한 처리내역 보존(재호출 방지) — done 항목 key: time|store|biz|cat
+    const priorNotes = {};
+    for (const it of (((data.days[dstr] || {}).done) || [])) { if (it.note) priorNotes[it.time + '|' + it.store + '|' + it.biz + '|' + it.cat] = it.note; }
     let completed = 0, externCount = 0, dupTotal = 0, latest = '';
     for (const ch of workChs) {
       let msgs;
       try { msgs = await fetchAllRange(ch.id, b.oldest, b.latestBound); }
       catch (e) { console.error(`  ⚠ [${ch.label} ${dstr}] 읽기 실패(${e.message}) — 건너뜀`); continue; }
-      const r = tallyInto(msgs, ch, counts, pending, done);
+      const r = await tallyInto(msgs, ch, counts, pending, done, { priorNotes });
       if (dstr === targetDate) trackResp(data, msgs);   // 오늘 인입 건만 응답시간 폴링 추적
       completed += r.completed; externCount += r.externCount; dupTotal += r.dup; if (r.latest > latest) latest = r.latest;
     }
