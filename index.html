@@ -2118,9 +2118,13 @@ function renderOverview(){
   const alertListHTML = Object.entries(pendByCat).map(([k,n])=>`<div class="alert-item"><span>${catNameOf(k)} 미처리</span><span class="alert-cnt">${n}</span></div>`).join('')+(vocPend?`<div class="alert-item"><span>VOC 저점 미처리</span><span class="alert-cnt">${vocPend}</span></div>`:'');
   const duty = DUTY[todayStr]||{};
   const dutyRowsHTML = [['day','주간'],['aft','오후'],['nit','야간'],['inst','행사']].map(([t,lab])=>`<div class="dt-row"><span class="slot-tag ${t}">${lab}</span><span class="dt-name">${duty[t]?escapeHtml(duty[t]):'—'}</span></div>`).join('');
-  // 응대 지연율 = 미처리(부재+확인필요) ÷ 전체 인입 × 100  (선택 기간 기준)
-  const missCnt = absentCnt + confirmCnt;
-  const delayRate = grandAll>0 ? Math.round(missCnt/grandAll*1000)/10 : 0;
+  // 응답시간(요청→첫 확인) 폴링 집계 — SLACK_DATA.resp.days 에서 선택 기간 합산
+  const respAgg = (function(){
+    const R=(window.SLACK_DATA&&window.SLACK_DATA.resp&&window.SLACK_DATA.resp.days)||{};
+    let cnt=0,sum=0,over=0;
+    for(const d of viewDates){ const x=R[d]; if(x){ cnt+=x.cnt||0; sum+=x.sumMin||0; over+=x.over||0; } }
+    return {cnt, avg: cnt?Math.round(sum/cnt):0, overRate: cnt?Math.round(over/cnt*100):0};
+  })();
 
   document.getElementById("main").innerHTML = `
     <div class="page-head">
@@ -2147,10 +2151,10 @@ function renderOverview(){
         ${mvp?`<div class="mvp-proc" onclick="showDoneDetail('emp','${mvp.emp}')"><b>${mvp.total}</b><small>건 처리</small><span class="mvp-proc-hint">🔎 상세 보기</span></div>`:`<div class="ov-delta flat"><span>데이터 없음</span></div>`}
       </div>
       <div class="hl-card mint">
-        <div class="hl-ic">🐢</div>
-        <div class="hl-lab">${periodWord} 응대 지연율</div>
-        <div class="hl-big">${delayRate}<small>%</small></div>
-        <div class="ov-delta flat"><span>${grandAll>0?`전체 ${grandAll}건 중 미처리 ${missCnt}건${missCnt?` (부재 ${absentCnt} · 확인필요 ${confirmCnt})`:''}`:'인입 없음'}</span></div>
+        <div class="hl-ic">⏱️</div>
+        <div class="hl-lab">${periodWord} 평균 응답시간 <span class="hl-drill" title="요청글이 올라온 뒤 담당자 확인 이모지가 찍히기까지 걸린 평균 시간 (10분 폴링 근사)">ⓘ</span></div>
+        <div class="hl-big">${respAgg.cnt?`${respAgg.avg}<small>분</small>`:`<span style="font-size:17px;color:var(--gray2);font-weight:700">집계 대기중</span>`}</div>
+        <div class="ov-delta flat"><span>${respAgg.cnt?`지연율(30분↑) ${respAgg.overRate}% · ${respAgg.cnt}건 기준`:'배포 후 인입 건부터 순차 집계'}</span></div>
       </div>
     </div>
 

@@ -61,6 +61,7 @@ const VOC_HIGH_NPS = 10;     // 추천의향 10 (만점)
 // '확인 후 미완료' 유예: 확인 이모지 뒤에도 완료/카테고리 이모지가 안 찍힌 채 이 시간이 지나야 미처리로 적재.
 // (슬랙 API가 이모지 시각을 안 주므로 메시지 게시 시각 기준 경과시간으로 근사)
 const CONFIRM_GRACE_SEC = 3600; // 1시간
+const RESP_DELAY_MIN = 30;      // 응대 지연 기준: 첫 확인까지 30분 초과 시 '지연'
 const pad = n => String(n).padStart(2, '0');
 
 // 집계 대상 날짜: TALLY_DATE_OFFSET (0=오늘, -1=어제). 새벽 최종집계는 -1 로 '전날' 마감.
@@ -222,6 +223,43 @@ function tallyInto(msgs, ch, counts, pending, done) {
   return { completed, externCount, dup, latest };
 }
 
+// ── 폴링식 응답시간 추적 ──
+// 슬랙이 이모지(확인) 찍힌 시각을 안 주므로, 10분마다 도는 이 집계가 스냅샷을 비교해 근사:
+//  · 확인 이모지 없는 요청 → watch에 담고 매 실행 lastSeen 갱신
+//  · 이전에 watch에 있던(=확인 없던) 요청에 확인이 붙으면 → 응답시각 ≈ (lastSeen, now) 중간값 → 응답분 확정
+//  · 처음 볼 때 이미 확인됨(측정 불가)·2일 넘게 무응답 → 제외  ⇒ 자연히 '배포 이후' 건만 측정 (해상도 ±폴링간격)
+function trackResp(data, msgs) {
+  data.resp = data.resp || { watch: {}, days: {} };
+  const W = data.resp.watch, DD = data.resp.days;
+  const nowSec = now.getTime() / 1000;
+  for (const m of msgs) {
+    if (m.subtype && m.subtype !== 'bot_message') continue;
+    const key = m.ts, postSec = parseFloat(m.ts || '0');
+    if (!postSec) continue;
+    const names = (m.reactions || []).map(r => r.name);
+    if (names.some(n => /중복/.test(n))) { delete W[key]; continue; }   // 중복 이모지 → 표본 제외
+    const hasCat = names.some(n => catMap[n] && catMap[n] !== 'voc');
+    const hasEmp = names.some(n => /^원격(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)$/.test(n));
+    const hasConfirm = names.some(n => /^(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)(_확인.*)?$/.test(n));
+    const hasExtern = names.includes('원격외주');
+    const responded = hasCat || hasEmp || hasConfirm || hasExtern;   // 담당자가 손댐(확인/완료/카테고리/외주)
+    if (responded) {
+      if (W[key]) {                                    // 직전 실행까지 '확인 없음' → 이번에 확인됨 = 측정 가능
+        const mid = (W[key].lastSeen + nowSec) / 2;    // 확인은 (lastSeen, now) 사이에 발생 → 중간값 추정
+        const respMin = Math.max(0, (mid - postSec) / 60);
+        const day = kstDate(m.ts);
+        DD[day] = DD[day] || { cnt: 0, sumMin: 0, over: 0 };
+        DD[day].cnt++; DD[day].sumMin += respMin; if (respMin > RESP_DELAY_MIN) DD[day].over++;
+        delete W[key];
+      }
+      // 처음 볼 때 이미 확인됨 → 언제 찍혔는지 알 수 없어 제외
+    } else {
+      W[key] = { post: key, lastSeen: nowSec };        // 관찰중(매 실행 lastSeen 갱신)
+    }
+  }
+  for (const k in W) { if (nowSec - parseFloat(W[k].post) > 2 * 86400) delete W[k]; }   // 무응답 2일 경과 정리
+}
+
 // 메시지의 blocks까지 모두 훑어 텍스트 재구성 (봇 리치 메시지 대응)
 function collectText(node, out) {
   if (!node) return;
@@ -352,6 +390,7 @@ async function tallyVoc(msgs, voc, channelId, opts) {
       try { msgs = await fetchAllRange(ch.id, b.oldest, b.latestBound); }
       catch (e) { console.error(`  ⚠ [${ch.label} ${dstr}] 읽기 실패(${e.message}) — 건너뜀`); continue; }
       const r = tallyInto(msgs, ch, counts, pending, done);
+      if (dstr === targetDate) trackResp(data, msgs);   // 오늘 인입 건만 응답시간 폴링 추적
       completed += r.completed; externCount += r.externCount; dupTotal += r.dup; if (r.latest > latest) latest = r.latest;
     }
     pending.sort((a, b) => (b.time || '').localeCompare(a.time || ''));
