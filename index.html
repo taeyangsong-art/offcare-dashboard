@@ -2118,8 +2118,9 @@ function renderOverview(){
   const alertListHTML = Object.entries(pendByCat).map(([k,n])=>`<div class="alert-item"><span>${catNameOf(k)} 미처리</span><span class="alert-cnt">${n}</span></div>`).join('')+(vocPend?`<div class="alert-item"><span>VOC 저점 미처리</span><span class="alert-cnt">${vocPend}</span></div>`:'');
   const duty = DUTY[todayStr]||{};
   const dutyRowsHTML = [['day','주간'],['aft','오후'],['nit','야간'],['inst','행사']].map(([t,lab])=>`<div class="dt-row"><span class="slot-tag ${t}">${lab}</span><span class="dt-name">${duty[t]?escapeHtml(duty[t]):'—'}</span></div>`).join('');
-  const leaveToday=(SHARE[todayStr]||[]).filter(e=>['annual','half','time','vacation'].includes(e.type));
-  const leaveHTML = leaveToday.length?leaveToday.map(e=>`${escapeHtml(e.emp)}(${typeMeta(e.type).label}${e.time?' '+escapeHtml(e.time):''})`).join(', '):'없음';
+  // 응대 지연율 = 미처리(부재+확인필요) ÷ 전체 인입 × 100  (선택 기간 기준)
+  const missCnt = absentCnt + confirmCnt;
+  const delayRate = grandAll>0 ? Math.round(missCnt/grandAll*1000)/10 : 0;
 
   document.getElementById("main").innerHTML = `
     <div class="page-head">
@@ -2146,10 +2147,10 @@ function renderOverview(){
         ${mvp?`<div class="mvp-proc" onclick="showDoneDetail('emp','${mvp.emp}')"><b>${mvp.total}</b><small>건 처리</small><span class="mvp-proc-hint">🔎 상세 보기</span></div>`:`<div class="ov-delta flat"><span>데이터 없음</span></div>`}
       </div>
       <div class="hl-card mint">
-        <div class="hl-ic">🌴</div>
-        <div class="hl-lab">오늘 연차·휴가</div>
-        <div class="hl-big">${leaveToday.length}<small>명</small></div>
-        <div class="ov-delta flat"><span>${leaveToday.length?leaveHTML:'없음'}</span></div>
+        <div class="hl-ic">🐢</div>
+        <div class="hl-lab">${periodWord} 응대 지연율</div>
+        <div class="hl-big">${delayRate}<small>%</small></div>
+        <div class="ov-delta flat"><span>${grandAll>0?`전체 ${grandAll}건 중 미처리 ${missCnt}건${missCnt?` (부재 ${absentCnt} · 확인필요 ${confirmCnt})`:''}`:'인입 없음'}</span></div>
       </div>
     </div>
 
