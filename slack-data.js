@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 628,
+  "version": 629,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -29235,11 +29235,14 @@ window.SLACK_DATA = {
     "2026-07-16": {
       "counts": {
         "as": {
-          "김현기": 6,
+          "김현기": 8,
           "송태양": 1
         },
         "onboarding": {
           "김동욱": 1
+        },
+        "menu": {
+          "김규빈": 4
         },
         "delivery": {
           "김현기": 1
@@ -29247,6 +29250,48 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:07",
+          "store": "(주)창구유통 강창구찹쌀진순대 광장점",
+          "biz": "4688700056",
+          "cat": "menu",
+          "emp": "김규빈"
+        },
+        {
+          "time": "10:07",
+          "store": "강창구찹쌀진순대 토평점",
+          "biz": "4688700056",
+          "cat": "menu",
+          "emp": "김규빈"
+        },
+        {
+          "time": "10:07",
+          "store": "강창구의 찹쌀진순대 수택본점",
+          "biz": "5364700353",
+          "cat": "menu",
+          "emp": "김규빈"
+        },
+        {
+          "time": "10:05",
+          "store": "케이핀초반",
+          "biz": "2660303234",
+          "cat": "menu",
+          "emp": "김규빈"
+        },
+        {
+          "time": "09:46",
+          "store": "전복촌",
+          "biz": "1313591001",
+          "cat": "as",
+          "emp": "김현기"
+        },
+        {
+          "time": "09:42",
+          "store": "냠냠숲 카페(KIS)",
+          "biz": "4500503532",
+          "cat": "as",
+          "emp": "김현기"
+        },
         {
           "time": "09:39",
           "store": "오오티네일",
@@ -29311,7 +29356,7 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "10:00",
+      "updatedAt": "10:11",
       "voc": {
         "responses": 1,
         "install": {
