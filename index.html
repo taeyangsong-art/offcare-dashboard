@@ -2314,7 +2314,7 @@ function overviewHourly(dates){
   const gapUnit=Math.min(58,Math.max(30,720/hrs.length));
   const W=Math.max(520,hrs.length*gapUnit), H=200, pad=26, gap=(W-pad*2)/hrs.length, bw=gap*0.6;
   const bars=hrs.map((h,i)=>{ const v=vals[i], bh=(H-46)*(v/mx), x=pad+i*gap+(gap-bw)/2, y=H-28-bh;
-    return `<rect x="${x}" y="${y.toFixed(1)}" width="${bw}" height="${bh.toFixed(1)}" rx="4" fill="#5ac08a"><title>${h}시~${h+1}시: ${v}건</title></rect>`
+    return `<rect x="${x}" y="${y.toFixed(1)}" width="${bw}" height="${bh.toFixed(1)}" rx="4" fill="#4a90e2"><title>${h}시~${h+1}시: ${v}건</title></rect>`
       +(v>0?`<text x="${x+bw/2}" y="${(y-5).toFixed(1)}" text-anchor="middle" font-size="10.5" font-weight="700" fill="#424245">${v}</text>`:'')
       +`<text x="${x+bw/2}" y="${H-11}" text-anchor="middle" font-size="9.5" fill="#86868b">${h}시</text>`;}).join('');
   return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}"><line x1="${pad}" y1="${H-28}" x2="${W-pad}" y2="${H-28}" stroke="var(--line)"/>${bars}</svg></div>`;
