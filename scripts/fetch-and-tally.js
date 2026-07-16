@@ -194,6 +194,8 @@ function tallyInto(msgs, ch, counts, pending, done) {
     const hasAbsent = names.some(n => /부재/.test(n));                       // 1차/2차 부재
     const absTag = names.some(n => /2차.?부재/.test(n)) ? '2차 부재' : '1차 부재';
     const hasDup = names.some(n => /중복/.test(n));                          // 팀이 '진짜 중복'에만 찍는 표시
+    const hasX = names.includes('x');                                        // ❌ = 잘못 올린 글 표시
+    const invalidPost = hasX && !!confirmPerson;                             // 확인 + X → 잘못 올린 글 → 부재/미처리 제외
     const doer = emp || confirmPerson;
     const ageSec = now.getTime() / 1000 - parseFloat(m.ts || '0');   // 메시지 게시 후 경과(초) — 확인/부재 유예 판정용
 
@@ -213,10 +215,10 @@ function tallyInto(msgs, ch, counts, pending, done) {
       counts[catKey] = counts[catKey] || {};
       counts[catKey][who] = (counts[catKey][who] || 0) + 1; completed++;
       done.push({ time, store, biz, cat: catKey, emp: who });
-    } else if (hasAbsent) {                  // 완료·카테고리 이모지 없이 '부재만'
+    } else if (hasAbsent && !invalidPost) {  // 완료·카테고리 이모지 없이 '부재만' (확인+X 잘못올린글 제외)
       // 2차부재(재부재=연락 불가)는 확인필요에서 제외, 1차부재만 — 그것도 1시간 지나야 확인필요로 적재
       if (absTag !== '2차 부재' && ageSec >= CONFIRM_GRACE_SEC) pending.push({ time, store, biz, handler: doer || '미지정', cat: ch.defaultCat, reasons: [absTag] });
-    } else if (confirmPerson) {              // 확인만 찍힘 → 완료·카테고리 이모지 없이 1시간 지나면 '확인 후 미완료'
+    } else if (confirmPerson && !invalidPost) { // 확인만 찍힘 → 1시간 지나면 '확인 후 미완료' (확인+X 잘못올린글 제외)
       if (ageSec >= CONFIRM_GRACE_SEC) pending.push({ time, store, biz, handler: confirmPerson, cat: ch.defaultCat, reasons: ['확인 후 미완료'] });
     }
   }
@@ -237,7 +239,7 @@ function trackResp(data, msgs) {
     const key = m.ts, postSec = parseFloat(m.ts || '0');
     if (!postSec) continue;
     const names = (m.reactions || []).map(r => r.name);
-    if (names.some(n => /중복/.test(n))) { delete W[key]; continue; }   // 중복 이모지 → 표본 제외
+    if (names.some(n => /중복/.test(n)) || names.includes('x')) { delete W[key]; continue; }   // 중복·X(잘못올린글) → 표본 제외
     const hasCat = names.some(n => catMap[n] && catMap[n] !== 'voc');
     const hasEmp = names.some(n => /^원격(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)$/.test(n));
     const hasConfirm = names.some(n => /^(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)(_확인.*)?$/.test(n));
