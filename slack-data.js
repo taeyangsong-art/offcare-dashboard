@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 638,
+  "version": 639,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -29235,7 +29235,7 @@ window.SLACK_DATA = {
     "2026-07-16": {
       "counts": {
         "as": {
-          "김현기": 15,
+          "김현기": 16,
           "송태양": 4,
           "김규빈": 7,
           "배선유": 6,
@@ -29260,10 +29260,10 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "11:24",
-          "store": "합심",
-          "biz": "7876900517",
-          "handler": "김현기",
+          "time": "11:45",
+          "store": "롯데시네마 건대입구 (카페)",
+          "biz": "3138700979",
+          "handler": "김동욱",
           "cat": "as",
           "reasons": [
             "확인 후 미완료"
@@ -29354,6 +29354,13 @@ window.SLACK_DATA = {
           "biz": "6246200750",
           "cat": "as",
           "emp": "김규빈"
+        },
+        {
+          "time": "11:24",
+          "store": "합심",
+          "biz": "7876900517",
+          "cat": "as",
+          "emp": "김현기"
         },
         {
           "time": "11:24",
@@ -29643,7 +29650,7 @@ window.SLACK_DATA = {
           "emp": "김동욱"
         }
       ],
-      "updatedAt": "12:30",
+      "updatedAt": "12:34",
       "voc": {
         "responses": 2,
         "install": {
@@ -29736,15 +29743,15 @@ window.SLACK_DATA = {
     "watch": {
       "1784172601.212829": {
         "post": "1784172601.212829",
-        "lastSeen": 1784172651.419
+        "lastSeen": 1784173528.454
       },
       "1784172600.268759": {
         "post": "1784172600.268759",
-        "lastSeen": 1784172651.419
+        "lastSeen": 1784173528.454
       },
       "1784172569.564579": {
         "post": "1784172569.564579",
-        "lastSeen": 1784172651.419
+        "lastSeen": 1784173528.454
       }
     },
     "days": {
