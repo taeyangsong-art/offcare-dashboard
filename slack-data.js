@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 761,
+  "version": 762,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -32984,41 +32984,41 @@ window.SLACK_DATA = {
           "note": "전원꺼짐 전원꺼짐 / 01022590507 01022590507 / 7이었군요.. 7이었군요.. / 노트북에 문제 생겨 업무폰으로 재연락 예정 노트북에 문제 생겨 업무폰으로 재연락 예정 / 포프(폰) 온보딩 완료 / 전자영수증, 면세상품등록, 키오스크모드 등 사용방법 안내 포프(폰) 온보딩 완료 / 전자영수증, 면세상품등록, 키오스크모드 등 사용방법 안내 "
         }
       ],
-      "updatedAt": "17:36",
+      "updatedAt": "18:14",
       "voc": {
-        "responses": 11,
+        "responses": 12,
         "install": {
-          "count": 4,
+          "count": 5,
           "low": 1
         },
         "nps": {
-          "count": 11,
+          "count": 12,
           "low": 6
         },
         "high": {
-          "install": 2,
-          "nps": 4
+          "install": 3,
+          "nps": 5
         },
         "npsDist": {
           "0": 1,
           "4": 1,
           "5": 4,
           "8": 1,
-          "10": 4
+          "10": 5
         },
         "installDist": {
           "2": 1,
           "4": 1,
-          "5": 2
+          "5": 3
         },
         "byIndustry": {
+          "서비스[학원]": 2,
           "카페": 1,
-          "서비스[뷰티,헤어]": 2,
-          "서비스[학원]": 1
+          "서비스[뷰티,헤어]": 2
         },
         "byTenure": {
           "구매설치": {
-            "total": 4,
+            "total": 5,
             "low": 1
           },
           "12개월": {
@@ -33039,6 +33039,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 4,
+            "low": 3
+          },
           "SECTA9": {
             "total": 2,
             "low": 1
@@ -33050,10 +33054,6 @@ window.SLACK_DATA = {
           "KSNET": {
             "total": 3,
             "low": 0
-          },
-          "KIS": {
-            "total": 3,
-            "low": 3
           }
         },
         "reasonCounts": {
@@ -33235,11 +33235,11 @@ window.SLACK_DATA = {
       },
       "1784268569.733069": {
         "post": "1784268569.733069",
-        "lastSeen": 1784278845.804
+        "lastSeen": 1784279730.793
       },
       "1784275202.681409": {
         "post": "1784275202.681409",
-        "lastSeen": 1784278845.804
+        "lastSeen": 1784279730.793
       }
     },
     "days": {
