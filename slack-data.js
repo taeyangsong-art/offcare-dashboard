@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 749,
+  "version": 750,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -32401,7 +32401,7 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "미지정": 5,
-          "배선유": 29
+          "배선유": 30
         },
         "onboarding": {
           "미지정": 2,
@@ -32439,6 +32439,15 @@ window.SLACK_DATA = {
           "emp": "미지정",
           "req": "포프+유프(데스크탑) / 신규 온보딩 요청드립니다",
           "note": "20분 대기 안내 완료 20분 대기 안내 완료 / 폰으로 연동 완료 폰으로 연동 완료"
+        },
+        {
+          "time": "14:36",
+          "store": "주식회사 형과아우에프앤지",
+          "biz": "4298104166",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "오케이포스사용 / 대기표 발급 기능 설정 및 포장 테이블 5개 생성 희망하셔서 원격으로 셋팅 부탁드립니다..!",
+          "note": "N50739 N50739 / [578] 대기(페이저)번호 수기등록 : 대기시 [578] 대기(페이저)번호 수기등록 : 대기시"
         },
         {
           "time": "14:30",
@@ -32774,23 +32783,24 @@ window.SLACK_DATA = {
           "note": "전원꺼짐 전원꺼짐 / 01022590507 01022590507 / 7이었군요.. 7이었군요.. / 노트북에 문제 생겨 업무폰으로 재연락 예정 노트북에 문제 생겨 업무폰으로 재연락 예정 / 포프(폰) 온보딩 완료 / 전자영수증, 면세상품등록, 키오스크모드 등 사용방법 안내 포프(폰) 온보딩 완료 / 전자영수증, 면세상품등록, 키오스크모드 등 사용방법 안내 "
         }
       ],
-      "updatedAt": "15:13",
+      "updatedAt": "15:27",
       "voc": {
-        "responses": 4,
+        "responses": 6,
         "install": {
           "count": 2,
           "low": 1
         },
         "nps": {
-          "count": 4,
-          "low": 2
+          "count": 6,
+          "low": 4
         },
         "high": {
           "install": 1,
           "nps": 2
         },
         "npsDist": {
-          "5": 2,
+          "0": 1,
+          "5": 3,
           "10": 2
         },
         "installDist": {
@@ -32802,6 +32812,10 @@ window.SLACK_DATA = {
           "서비스[학원]": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 2,
+            "low": 2
+          },
           "구매설치": {
             "total": 2,
             "low": 1
@@ -32816,13 +32830,13 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 3,
+            "low": 3
+          },
           "KSNET": {
             "total": 2,
             "low": 0
-          },
-          "KIS": {
-            "total": 1,
-            "low": 1
           },
           "SECTA9": {
             "total": 1,
@@ -32830,10 +32844,56 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
+          "사용중 오류가 자주 발생함": 1,
           "단말기 설치나 초기 과정이 어려움": 1,
           "필요한 기능이 없거나 몰라서 불편": 2
         },
         "alerts": [
+          {
+            "time": "15:27",
+            "store": "어스레",
+            "storeId": "503373",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "그저그럼",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:27",
+            "store": "정 헤어",
+            "storeId": "496907",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "오류 날때 짜증나요...",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:13",
             "store": "엠베스트SE회천캠퍼스중고등학원",
@@ -32905,7 +32965,7 @@ window.SLACK_DATA = {
       },
       "1784268569.733069": {
         "post": "1784268569.733069",
-        "lastSeen": 1784268929.386
+        "lastSeen": 1784269842.088
       }
     },
     "days": {
