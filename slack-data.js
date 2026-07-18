@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 887,
+  "version": 888,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -34134,7 +34134,55 @@ window.SLACK_DATA = {
       "counts": {},
       "pending": [],
       "done": [],
-      "updatedAt": ""
+      "updatedAt": "00:07",
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 0,
+          "low": 0
+        },
+        "nps": {
+          "count": 1,
+          "low": 0
+        },
+        "high": {
+          "install": 0,
+          "nps": 0
+        },
+        "npsDist": {
+          "9": 1
+        },
+        "installDist": {},
+        "byIndustry": {},
+        "byTenure": {
+          "1개월": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "KPN": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {},
+        "alerts": [],
+        "praises": [
+          {
+            "time": "00:07",
+            "store": "오드 왁싱",
+            "storeId": "509674",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 9,
+            "text": "토스사장님 휴대폰으로 사용가능한것이 가장 큰 장점이고 단말기도 화면이 한눈에 보이는 단말기라 마음에 들어요 다만 1점을 뺀이유는 토스고객센터 연결이 너무 어렵습니다",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
+      }
     }
   },
   "resp": {
