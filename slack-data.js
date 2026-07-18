@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 830,
+  "version": 831,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -33297,11 +33297,20 @@ window.SLACK_DATA = {
     "2026-07-18": {
       "counts": {
         "as": {
-          "김현기": 2
+          "김현기": 3
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:25",
+          "store": "휴(休)",
+          "biz": "7437200778",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "• 유선프린터기 갑자기 전원이 들어오지 않고 작동 볼가",
+          "note": "여기 원격 비협조적이고 유프cpp3000 블랙 / 어댑터 그냥 퀵으로 보내달라고 요청하고 계셔서, 퀵 출고 가능할까요? 여기 원격 비협조적이고 유프cpp3000 블랙 / 어댑터 그냥 퀵으로 보내달라고 요청하고 계셔서, 퀵 출고 가능할까요? / 넵 ㅠㅠ 3만원 돈 내고 매출꽤있네요 넵 ㅠㅠ 3만원 돈 내고 매출꽤있네요 / 여기 그럼 일단 완료 처리 할게요? "
+        },
         {
           "time": "09:45",
           "store": "막퍼주는 밥집",
@@ -33321,22 +33330,23 @@ window.SLACK_DATA = {
           "note": "모바일 퍼스트포스 asp 연동이 불가함 / 오늘 퍼스트포스가 ;영업하지 않아서 당장은 확인이 어려음 월요일 문의 필요함 님 여기 혹시 이따 마감 즈음에 고객센터 다시 인입되어서, 토요일 오늘 매출금이랑 승인건수 kpn 조회해서 알려달라고 하셨어요. 야간당직자 전달만 부탁드립니다 모바일 퍼스트포스 asp 연동이 불가함 / 오늘 퍼스트포스가 ;영업하지 않아서 "
         }
       ],
-      "updatedAt": "10:30",
+      "updatedAt": "10:45",
       "voc": {
-        "responses": 2,
+        "responses": 4,
         "install": {
           "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 2,
-          "low": 0
+          "count": 4,
+          "low": 2
         },
         "high": {
           "install": 2,
           "nps": 2
         },
         "npsDist": {
+          "5": 2,
           "10": 2
         },
         "installDist": {
@@ -33347,23 +33357,83 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 1,
+            "low": 1
+          },
+          "1개월": {
+            "total": 1,
+            "low": 1
+          },
           "구매설치": {
             "total": 2,
             "low": 0
           }
         },
         "byVan": {
-          "SECTA9": {
+          "DAOU": {
             "total": 1,
-            "low": 0
+            "low": 1
           },
           "KPN": {
+            "total": 2,
+            "low": 1
+          },
+          "SECTA9": {
             "total": 1,
             "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "고객센터 연락이 매우 힘듦": 1,
+          "필요한 기능이 없거나 몰라서 불편": 1
+        },
+        "alerts": [
+          {
+            "time": "10:37",
+            "store": "스카이애비뉴고시텔잠실새내점",
+            "storeId": "333858",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "기계에 대해 물어보려고해도 연락이 안됌",
+                "cat": "고객센터 연락이 매우 힘듦"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "10:33",
+            "store": "뷰티 드 플로르",
+            "storeId": "471370",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "예쁘고, 편리하지만 불편한 부분이 있어요",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
         "praises": [
           {
             "time": "01:16",
@@ -33405,7 +33475,11 @@ window.SLACK_DATA = {
       },
       "1784338200.964559": {
         "post": "1784338200.964559",
-        "lastSeen": 1784338232.023
+        "lastSeen": 1784339126.754
+      },
+      "1784339101.001589": {
+        "post": "1784339101.001589",
+        "lastSeen": 1784339126.754
       }
     },
     "days": {
