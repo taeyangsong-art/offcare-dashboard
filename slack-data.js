@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 860,
+  "version": 861,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -33736,20 +33736,20 @@ window.SLACK_DATA = {
           "note": "모바일 퍼스트포스 asp 연동이 불가함 / 오늘 퍼스트포스가 ;영업하지 않아서 당장은 확인이 어려음 월요일 문의 필요함 님 여기 혹시 이따 마감 즈음에 고객센터 다시 인입되어서, 토요일 오늘 매출금이랑 승인건수 kpn 조회해서 알려달라고 하셨어요. 야간당직자 전달만 부탁드립니다 모바일 퍼스트포스 asp 연동이 불가함 / 오늘 퍼스트포스가 ;영업하지 않아서 "
         }
       ],
-      "updatedAt": "17:35",
+      "updatedAt": "17:58",
       "voc": {
-        "responses": 15,
+        "responses": 16,
         "install": {
-          "count": 5,
+          "count": 6,
           "low": 0
         },
         "nps": {
-          "count": 15,
+          "count": 16,
           "low": 5
         },
         "high": {
           "install": 5,
-          "nps": 7
+          "nps": 8
         },
         "npsDist": {
           "2": 1,
@@ -33758,18 +33758,23 @@ window.SLACK_DATA = {
           "6": 1,
           "7": 1,
           "8": 1,
-          "10": 7
+          "10": 8
         },
         "installDist": {
+          "4": 1,
           "5": 5
         },
         "byIndustry": {
+          "서비스[학원]": 2,
           "서비스[뷰티,헤어]": 2,
           "요식업": 1,
-          "서비스[학원]": 1,
           "카페": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 6,
+            "low": 0
+          },
           "3개월": {
             "total": 2,
             "low": 1
@@ -33777,10 +33782,6 @@ window.SLACK_DATA = {
           "6개월": {
             "total": 5,
             "low": 2
-          },
-          "구매설치": {
-            "total": 5,
-            "low": 0
           },
           "1개월": {
             "total": 2,
@@ -33792,6 +33793,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 3,
+            "low": 1
+          },
           "NICE": {
             "total": 1,
             "low": 1
@@ -33807,10 +33812,6 @@ window.SLACK_DATA = {
           "SECTA9": {
             "total": 2,
             "low": 0
-          },
-          "KIS": {
-            "total": 2,
-            "low": 1
           },
           "KSNET": {
             "total": 2,
@@ -33940,6 +33941,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "17:51",
+            "store": "스윙앤밸런스",
+            "storeId": "520157",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 4,
+            "nps": 10,
+            "text": "간단하긴 했지만 사용하지 않는 선들이 있어서 처음에 조금 헷갈렸어요 간편하고 빠르고 좋아요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "16:21",
             "store": "해봄헤어",
             "storeId": "549691",
@@ -33991,7 +34004,7 @@ window.SLACK_DATA = {
       },
       "1784353582.878579": {
         "post": "1784353582.878579",
-        "lastSeen": 1784364329.636
+        "lastSeen": 1784365324.602
       },
       "1784358035.654419": {
         "post": "1784358035.654419",
@@ -33999,7 +34012,7 @@ window.SLACK_DATA = {
       },
       "1784363759.487189": {
         "post": "1784363759.487189",
-        "lastSeen": 1784364329.636
+        "lastSeen": 1784365324.602
       }
     },
     "days": {
