@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 953,
+  "version": 954,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -34134,22 +34134,23 @@ window.SLACK_DATA = {
       "counts": {},
       "pending": [],
       "done": [],
-      "updatedAt": "16:12",
+      "updatedAt": "16:28",
       "voc": {
-        "responses": 10,
+        "responses": 11,
         "install": {
-          "count": 2,
+          "count": 3,
           "low": 0
         },
         "nps": {
-          "count": 10,
-          "low": 1
+          "count": 11,
+          "low": 2
         },
         "high": {
           "install": 2,
           "nps": 5
         },
         "npsDist": {
+          "3": 1,
           "4": 1,
           "7": 1,
           "8": 1,
@@ -34157,13 +34158,19 @@ window.SLACK_DATA = {
           "10": 5
         },
         "installDist": {
+          "3": 1,
           "5": 2
         },
         "byIndustry": {
+          "카페": 1,
           "요식업": 1,
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 3,
+            "low": 1
+          },
           "1개월": {
             "total": 5,
             "low": 0
@@ -34176,16 +34183,16 @@ window.SLACK_DATA = {
             "total": 1,
             "low": 0
           },
-          "구매설치": {
-            "total": 2,
-            "low": 0
-          },
           "3개월": {
             "total": 1,
             "low": 0
           }
         },
         "byVan": {
+          "SMARTRO": {
+            "total": 1,
+            "low": 1
+          },
           "KIS": {
             "total": 5,
             "low": 1
@@ -34200,9 +34207,32 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "사용중 오류가 자주 발생함": 1
         },
         "alerts": [
+          {
+            "time": "16:28",
+            "store": "파이엔타르트",
+            "storeId": "544083",
+            "industry": "카페/베이커리",
+            "indBucket": "카페",
+            "install": 3,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "보통",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:46",
             "store": "솔래 베이커리",
