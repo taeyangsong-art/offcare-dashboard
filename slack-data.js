@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 962,
+  "version": 963,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -34134,20 +34134,20 @@ window.SLACK_DATA = {
       "counts": {},
       "pending": [],
       "done": [],
-      "updatedAt": "18:13",
+      "updatedAt": "18:17",
       "voc": {
-        "responses": 13,
+        "responses": 14,
         "install": {
           "count": 3,
           "low": 0
         },
         "nps": {
-          "count": 13,
+          "count": 14,
           "low": 3
         },
         "high": {
           "install": 2,
-          "nps": 6
+          "nps": 7
         },
         "npsDist": {
           "0": 1,
@@ -34156,7 +34156,7 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 1,
           "9": 2,
-          "10": 6
+          "10": 7
         },
         "installDist": {
           "3": 1,
@@ -34168,6 +34168,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 2,
+            "low": 1
+          },
           "1개월": {
             "total": 6,
             "low": 1
@@ -34180,16 +34184,16 @@ window.SLACK_DATA = {
             "total": 3,
             "low": 1
           },
-          "6개월": {
-            "total": 1,
-            "low": 1
-          },
           "3개월": {
             "total": 1,
             "low": 0
           }
         },
         "byVan": {
+          "DAOU": {
+            "total": 1,
+            "low": 0
+          },
           "KOVAN": {
             "total": 1,
             "low": 1
@@ -34288,6 +34292,18 @@ window.SLACK_DATA = {
           }
         ],
         "praises": [
+          {
+            "time": "18:17",
+            "store": "컴퓨터가게",
+            "storeId": "305614",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "설치도 간편하고 사용법도 쉬워서",
+            "byReaction": false,
+            "doneDate": ""
+          },
           {
             "time": "15:28",
             "store": "칸스 KANS 장위점",
