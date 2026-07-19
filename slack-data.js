@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 952,
+  "version": 953,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -34134,15 +34134,15 @@ window.SLACK_DATA = {
       "counts": {},
       "pending": [],
       "done": [],
-      "updatedAt": "15:46",
+      "updatedAt": "16:12",
       "voc": {
-        "responses": 9,
+        "responses": 10,
         "install": {
           "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 9,
+          "count": 10,
           "low": 1
         },
         "high": {
@@ -34152,6 +34152,7 @@ window.SLACK_DATA = {
         "npsDist": {
           "4": 1,
           "7": 1,
+          "8": 1,
           "9": 2,
           "10": 5
         },
@@ -34163,13 +34164,13 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 5,
+            "low": 0
+          },
           "6개월": {
             "total": 1,
             "low": 1
-          },
-          "1개월": {
-            "total": 4,
-            "low": 0
           },
           "12개월": {
             "total": 1,
@@ -34186,7 +34187,7 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KIS": {
-            "total": 4,
+            "total": 5,
             "low": 1
           },
           "SECTA9": {
