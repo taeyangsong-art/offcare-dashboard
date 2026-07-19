@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 931,
+  "version": 932,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -34134,39 +34134,43 @@ window.SLACK_DATA = {
       "counts": {},
       "pending": [],
       "done": [],
-      "updatedAt": "01:38",
+      "updatedAt": "10:49",
       "voc": {
-        "responses": 2,
+        "responses": 3,
         "install": {
           "count": 0,
           "low": 0
         },
         "nps": {
-          "count": 2,
+          "count": 3,
           "low": 0
         },
         "high": {
           "install": 0,
-          "nps": 1
+          "nps": 2
         },
         "npsDist": {
           "9": 1,
-          "10": 1
+          "10": 2
         },
         "installDist": {},
         "byIndustry": {},
         "byTenure": {
+          "3개월": {
+            "total": 1,
+            "low": 0
+          },
           "1개월": {
             "total": 2,
             "low": 0
           }
         },
         "byVan": {
-          "KIS": {
-            "total": 1,
+          "KPN": {
+            "total": 2,
             "low": 0
           },
-          "KPN": {
+          "KIS": {
             "total": 1,
             "low": 0
           }
@@ -34174,6 +34178,18 @@ window.SLACK_DATA = {
         "reasonCounts": {},
         "alerts": [],
         "praises": [
+          {
+            "time": "10:49",
+            "store": "진헤어",
+            "storeId": "438501",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "단발기 자세히 내용이나오고 있어보이고 포인트적립.페이스결제 , 결제내용상세.여러서비스.특히나 무상대여.정말좋아요.눈르로보이잖아요.",
+            "byReaction": false,
+            "doneDate": ""
+          },
           {
             "time": "00:07",
             "store": "오드 왁싱",
