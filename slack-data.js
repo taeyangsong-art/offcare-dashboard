@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 961,
+  "version": 962,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -34134,28 +34134,29 @@ window.SLACK_DATA = {
       "counts": {},
       "pending": [],
       "done": [],
-      "updatedAt": "16:28",
+      "updatedAt": "18:13",
       "voc": {
-        "responses": 11,
+        "responses": 13,
         "install": {
           "count": 3,
           "low": 0
         },
         "nps": {
-          "count": 11,
-          "low": 2
+          "count": 13,
+          "low": 3
         },
         "high": {
           "install": 2,
-          "nps": 5
+          "nps": 6
         },
         "npsDist": {
+          "0": 1,
           "3": 1,
           "4": 1,
           "7": 1,
           "8": 1,
           "9": 2,
-          "10": 5
+          "10": 6
         },
         "installDist": {
           "3": 1,
@@ -34167,21 +34168,21 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 6,
+            "low": 1
+          },
+          "12개월": {
+            "total": 2,
+            "low": 0
+          },
           "구매설치": {
             "total": 3,
             "low": 1
           },
-          "1개월": {
-            "total": 5,
-            "low": 0
-          },
           "6개월": {
             "total": 1,
             "low": 1
-          },
-          "12개월": {
-            "total": 1,
-            "low": 0
           },
           "3개월": {
             "total": 1,
@@ -34189,6 +34190,14 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KOVAN": {
+            "total": 1,
+            "low": 1
+          },
+          "KSNET": {
+            "total": 1,
+            "low": 0
+          },
           "SMARTRO": {
             "total": 1,
             "low": 1
@@ -34207,10 +34216,32 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
-          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
           "사용중 오류가 자주 발생함": 1
         },
         "alerts": [
+          {
+            "time": "18:13",
+            "store": "트래페",
+            "storeId": "64227",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "발열이 심하고 결제 단계가 너무 많음",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "16:28",
             "store": "파이엔타르트",
