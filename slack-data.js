@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 949,
+  "version": 950,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -34134,38 +34134,40 @@ window.SLACK_DATA = {
       "counts": {},
       "pending": [],
       "done": [],
-      "updatedAt": "15:12",
+      "updatedAt": "15:28",
       "voc": {
-        "responses": 5,
+        "responses": 6,
         "install": {
-          "count": 1,
+          "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 5,
+          "count": 6,
           "low": 0
         },
         "high": {
-          "install": 1,
+          "install": 2,
           "nps": 4
         },
         "npsDist": {
+          "7": 1,
           "9": 1,
           "10": 4
         },
         "installDist": {
-          "5": 1
+          "5": 2
         },
         "byIndustry": {
+          "요식업": 1,
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
-          "1개월": {
-            "total": 3,
+          "구매설치": {
+            "total": 2,
             "low": 0
           },
-          "구매설치": {
-            "total": 1,
+          "1개월": {
+            "total": 3,
             "low": 0
           },
           "3개월": {
@@ -34175,7 +34177,7 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KIS": {
-            "total": 2,
+            "total": 3,
             "low": 0
           },
           "KPN": {
@@ -34186,6 +34188,18 @@ window.SLACK_DATA = {
         "reasonCounts": {},
         "alerts": [],
         "praises": [
+          {
+            "time": "15:28",
+            "store": "칸스 KANS 장위점",
+            "storeId": "551567",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 5,
+            "nps": 7,
+            "text": "설치간편 상담시 안내가 자세함 전에 결제시스템 오류나서 곤란했어서",
+            "byReaction": false,
+            "doneDate": ""
+          },
           {
             "time": "15:12",
             "store": "일월",
