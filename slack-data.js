@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 950,
+  "version": 951,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -34134,25 +34134,26 @@ window.SLACK_DATA = {
       "counts": {},
       "pending": [],
       "done": [],
-      "updatedAt": "15:28",
+      "updatedAt": "15:46",
       "voc": {
-        "responses": 6,
+        "responses": 9,
         "install": {
           "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 6,
-          "low": 0
+          "count": 9,
+          "low": 1
         },
         "high": {
           "install": 2,
-          "nps": 4
+          "nps": 5
         },
         "npsDist": {
+          "4": 1,
           "7": 1,
-          "9": 1,
-          "10": 4
+          "9": 2,
+          "10": 5
         },
         "installDist": {
           "5": 2
@@ -34162,12 +34163,20 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
-          "구매설치": {
-            "total": 2,
-            "low": 0
+          "6개월": {
+            "total": 1,
+            "low": 1
           },
           "1개월": {
-            "total": 3,
+            "total": 4,
+            "low": 0
+          },
+          "12개월": {
+            "total": 1,
+            "low": 0
+          },
+          "구매설치": {
+            "total": 2,
             "low": 0
           },
           "3개월": {
@@ -34177,16 +34186,45 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KIS": {
-            "total": 3,
+            "total": 4,
+            "low": 1
+          },
+          "SECTA9": {
+            "total": 1,
             "low": 0
           },
           "KPN": {
-            "total": 3,
+            "total": 4,
             "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1
+        },
+        "alerts": [
+          {
+            "time": "15:46",
+            "store": "솔래 베이커리",
+            "storeId": "18162",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 4,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 4,
+                "text": "요근래 결제가 잘 안됨",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
         "praises": [
           {
             "time": "15:28",
