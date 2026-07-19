@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 948,
+  "version": 949,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -34134,24 +34134,24 @@ window.SLACK_DATA = {
       "counts": {},
       "pending": [],
       "done": [],
-      "updatedAt": "14:58",
+      "updatedAt": "15:12",
       "voc": {
-        "responses": 4,
+        "responses": 5,
         "install": {
           "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 4,
+          "count": 5,
           "low": 0
         },
         "high": {
           "install": 1,
-          "nps": 3
+          "nps": 4
         },
         "npsDist": {
           "9": 1,
-          "10": 3
+          "10": 4
         },
         "installDist": {
           "5": 1
@@ -34160,6 +34160,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 3,
+            "low": 0
+          },
           "구매설치": {
             "total": 1,
             "low": 0
@@ -34167,25 +34171,33 @@ window.SLACK_DATA = {
           "3개월": {
             "total": 1,
             "low": 0
-          },
-          "1개월": {
-            "total": 2,
-            "low": 0
           }
         },
         "byVan": {
-          "KPN": {
-            "total": 3,
+          "KIS": {
+            "total": 2,
             "low": 0
           },
-          "KIS": {
-            "total": 1,
+          "KPN": {
+            "total": 3,
             "low": 0
           }
         },
         "reasonCounts": {},
         "alerts": [],
         "praises": [
+          {
+            "time": "15:12",
+            "store": "일월",
+            "storeId": "516187",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "상담직원이 내용을 잘 알고 있고 꼼꼼하다 배민의 어린 상담직원들과 차이가 크다",
+            "byReaction": false,
+            "doneDate": ""
+          },
           {
             "time": "10:49",
             "store": "진헤어",
@@ -34216,10 +34228,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1784268569.733069": {
-        "post": "1784268569.733069",
-        "lastSeen": 1784313800.311
-      },
       "1784275202.681409": {
         "post": "1784275202.681409",
         "lastSeen": 1784313800.311
