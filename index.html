@@ -1108,10 +1108,13 @@ function dutyPersonAt(key, mapVal){ return DUTYOVER[key] || mapVal || ''; }
 const LS_REFRESH = "opcare_refresh_v1";
 let REFRESH = load(LS_REFRESH, {});   // { "0900": "이름" } — 리프레쉬(휴게) 타임
 function saveRefresh(key, val, inp){ val=(val||'').trim(); if(val) REFRESH[key]=val; else delete REFRESH[key]; save(LS_REFRESH, REFRESH); if(inp&&inp.closest('.rt-slot')) inp.closest('.rt-slot').classList.toggle('on', !!val); }
-function refreshSlots(){ const out=[]; for(let h=14; h<18; h++){ for(const mm of ['00','30']){ if(h===17 && mm==='30') continue; const s=(''+h).padStart(2,'0')+':'+mm; const eh=mm==='00'?h:h+1, em=mm==='00'?'30':'00'; out.push({key:(''+h).padStart(2,'0')+mm, label:s+'~'+(''+eh).padStart(2,'0')+':'+em}); } } return out; }
+function refreshSlots(){ const out=[]; const fmt=m=>(''+Math.floor(m/60)).padStart(2,'0')+':'+(''+(m%60)).padStart(2,'0');
+  // 09:30~17:30, 30분 단위. 점심시간(12:00~14:00)은 제외.
+  for(let t=9*60+30; t<17*60+30; t+=30){ if(t>=12*60 && t<14*60) continue; const key=(''+Math.floor(t/60)).padStart(2,'0')+(''+(t%60)).padStart(2,'0'); out.push({key, label:fmt(t)+'~'+fmt(t+30)}); }
+  return out; }
 function refreshTimeCard(){
   return `<div class="card rt-card">
-    <div class="card-head"><h3>☕ 원격팀 리프레쉬 타임</h3><span class="hint">14:00~17:30 · 30분 단위 · 원하는 칸에 이름</span></div>
+    <div class="card-head"><h3>☕ 원격팀 리프레쉬 타임</h3><span class="hint">09:30~17:30 · 30분 단위 · 점심(12:00~14:00) 제외 · 원하는 칸에 이름</span></div>
     <div class="rt-grid">${refreshSlots().map(s=>`<div class="rt-slot${REFRESH[s.key]?' on':''}"><div class="rt-time">${s.label}</div><input class="rt-name" type="text" value="${escapeHtml(REFRESH[s.key]||'')}" placeholder="이름" onchange="saveRefresh('${s.key}',this.value,this)"></div>`).join('')}</div>
   </div>`;
 }
@@ -3539,7 +3542,7 @@ function renderShareRefresh(){
     <div class="page-head">
       <div>
         <h2>☕ 원격팀 리프레쉬 타임</h2>
-        <div class="sub">14:00~17:30, 30분 단위로 원하는 칸에 <b>이름</b>을 적어 리프레쉬(휴게) 시간을 공유하세요. 매주 월요일 자동 초기화됩니다.</div>
+        <div class="sub">09:30~17:30, 30분 단위로 원하는 칸에 <b>이름</b>을 적어 리프레쉬(휴게) 시간을 공유하세요. 점심(12:00~14:00)은 제외이며, 매주 월요일 자동 초기화됩니다.</div>
       </div>
     </div>
     ${refreshTimeCard()}
