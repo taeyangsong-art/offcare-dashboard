@@ -577,6 +577,12 @@
   .praise-sel{font-family:inherit; font-size:12.5px; font-weight:600; padding:7px 10px; border:1px solid var(--line);
     border-radius:9px; background:#fff; color:var(--ink); cursor:pointer}
   .praise-sel:focus{outline:none; border-color:var(--green); box-shadow:0 0 0 3px var(--green-soft)}
+  .praise-assign{display:flex; gap:6px; flex:1 1 100%; margin-top:6px}
+  .praise-assign .praise-sel{flex:1; min-width:0}
+  .praise-toolbar{display:flex; gap:10px; align-items:center; margin-bottom:12px; flex-wrap:wrap}
+  .praise-teamfilter{font-family:inherit; font-size:13px; font-weight:700; padding:8px 12px; border:1px solid var(--line);
+    border-radius:10px; background:#fff; color:var(--ink); cursor:pointer}
+  .praise-teamfilter:focus{outline:none; border-color:var(--green); box-shadow:0 0 0 3px var(--green-soft)}
   .voc-rawind{font-size:11px; color:var(--gray2); margin-top:2px}
   .voc-donedate{font-size:11px; color:#1e40af; font-weight:800; margin-top:2px}
   .praise-emp-row{cursor:pointer; border-radius:8px; padding:3px 6px; margin:0 -6px; transition:.12s}
@@ -2877,22 +2883,39 @@ function vocRepBox(cardsArr){ if(!cardsArr.length) return ''; const shown=cardsA
 function praiseCardsHTML(praises){
   if(!praises||!praises.length) return '<div class="empty-note">이 기간 칭찬·확인 적재 건이 없습니다</div>';
   const vis=praises.filter(praiseVisible), hidden=praises.length-vis.length;
+  const teamOf=empTeamMap();
+  let shown=0;
   const cards=vis.map(p=>{
     const key=vocKey(p), ov=VOCPRAISE[key]||{}, empVal=ov.emp!=null?ov.emp:(p.emp||'');
+    const teamVal=ov.team!=null?ov.team:(teamOf[empVal]||'');
+    if(praiseTeamFilter && teamVal!==praiseTeamFilter) return '';   // 팀 필터: 선택 팀 소속만
+    shown++;
     const sc=`${p.install!=null?`설치 ${p.install}`:''}${p.install!=null&&p.nps!=null?' · ':''}${p.nps!=null?`추천 ${p.nps}`:''}`;
-    const sk=((p.store||'')+' '+(p.storeId||'')+' '+empVal+' '+(p.text||'')).toLowerCase();
+    const sk=((p.store||'')+' '+(p.storeId||'')+' '+empVal+' '+teamVal+' '+(p.text||'')).toLowerCase();
     return `<div class="praise-card" data-pk="${sk}">
       <div class="praise-top"><span class="praise-store">${escapeHtml(p.store||'-')}</span>
         <span class="praise-topr">${sc?`<span class="praise-score">${sc}</span>`:''}<button class="praise-del" title="삭제" onclick="deleteVocPraise('${key}')">×</button></span></div>
       <div class="praise-quote">“${escapeHtml((p.text||'-').slice(0,140))}”</div>
       <div class="praise-foot">
         <span class="praise-mid">${p.date||''} ${p.time||''}${p.storeId?' · ID'+p.storeId:''}</span>
-        <input class="praise-sel" list="empPraiseList" value="${escapeHtml(empVal)}" placeholder="👤 직원명 입력 (타팀도 가능)" onchange="saveVocPraise('${key}',this.value.trim())">
+        <div class="praise-assign">
+          <input class="praise-sel" list="empPraiseList" value="${escapeHtml(empVal)}" placeholder="👤 이름" onchange="saveVocPraise('${key}',this.value.trim())">
+          <input class="praise-sel praise-team" list="teamPraiseList" value="${escapeHtml(teamVal)}" placeholder="🏷️ 팀" onchange="saveVocPraiseTeam('${key}',this.value.trim())">
+        </div>
       </div>
     </div>`;}).join('');
-  return `${praises.length>6?`<input class="search-box" style="margin-bottom:12px" type="text" placeholder="매장·직원·내용 검색…" oninput="filterPraise(this.value)">`:''}
-    <datalist id="empPraiseList">${EMPLOYEES.map(e=>`<option value="${e}"></option>`).join('')}</datalist>
-    <div class="praise-grid" id="praiseGrid">${cards||'<div class="empty-note">표시할 칭찬이 없습니다 (모두 삭제됨)</div>'}</div>
+  const teams=allPraiseTeams(), empOpts=teamMembers(praiseTeamFilter);   // 선택 팀의 멤버만(미선택 시 전체)
+  const emptyMsg=praiseTeamFilter?`'${escapeHtml(praiseTeamFilter)}' 팀으로 지정된 칭찬이 없습니다`:'표시할 칭찬이 없습니다 (모두 삭제됨)';
+  return `<div class="praise-toolbar">
+      <select class="praise-teamfilter" onchange="setPraiseTeam(this.value)" title="팀 선택 → 해당 팀 소속 이름만 후보로 표시">
+        <option value="">🏷️ 전체 팀</option>
+        ${teams.map(t=>`<option value="${escapeHtml(t)}"${t===praiseTeamFilter?' selected':''}>${escapeHtml(t)}</option>`).join('')}
+      </select>
+      ${praises.length>6?`<input class="search-box" style="margin:0;flex:1;min-width:160px" type="text" placeholder="매장·직원·팀·내용 검색…" oninput="filterPraise(this.value)">`:''}
+    </div>
+    <datalist id="empPraiseList">${empOpts.map(e=>`<option value="${escapeHtml(e)}"></option>`).join('')}</datalist>
+    <datalist id="teamPraiseList">${teams.map(t=>`<option value="${escapeHtml(t)}"></option>`).join('')}</datalist>
+    <div class="praise-grid" id="praiseGrid">${shown?cards:`<div class="empty-note">${emptyMsg}</div>`}</div>
     ${hidden?`<div style="text-align:center;margin-top:14px"><button class="btn" onclick="restorePraise()">🗑️ 삭제한 ${hidden}건 복원</button></div>`:''}`;
 }
 function filterPraise(q){ q=(q||'').trim().toLowerCase(); document.querySelectorAll('#praiseGrid .praise-card').forEach(c=>{ c.style.display=(c.dataset.pk||'').includes(q)?'':'none'; }); }
@@ -2912,6 +2935,18 @@ function saveVocPraise(key, emp){
   if(!VOCPRAISE[key].deleted && Object.keys(VOCPRAISE[key]).length===0) delete VOCPRAISE[key];
   save(LS_VOCPRAISE, VOCPRAISE); pushPatch({vocPraise:{[key]:VOCPRAISE[key]||null}}); rerenderVoc();
 }
+function saveVocPraiseTeam(key, team){
+  if(!VOCPRAISE[key]) VOCPRAISE[key]={};
+  if(team==='') delete VOCPRAISE[key].team; else VOCPRAISE[key].team=team;
+  if(!VOCPRAISE[key].deleted && Object.keys(VOCPRAISE[key]).length===0) delete VOCPRAISE[key];
+  save(LS_VOCPRAISE, VOCPRAISE); pushPatch({vocPraise:{[key]:VOCPRAISE[key]||null}}); rerenderVoc();
+}
+// 이름→팀 매핑: 원격팀(기본) + 칭찬 지정에서 입력된 팀으로 보정 → 팀 필터/멤버 목록 자동 구성
+let praiseTeamFilter='';
+function empTeamMap(){ const m={}; EMPLOYEES.forEach(e=>{ m[e]='원격팀'; }); for(const k in VOCPRAISE){ const v=VOCPRAISE[k]; if(v&&v.emp&&v.team) m[v.emp]=v.team; } return m; }
+function allPraiseTeams(){ return [...new Set(Object.values(empTeamMap()))].sort(); }
+function teamMembers(team){ const m=empTeamMap(); return [...new Set(Object.keys(m).filter(n=>!team||m[n]===team))].sort(); }
+function setPraiseTeam(v){ praiseTeamFilter=v; rerenderVoc(); }
 function deleteVocPraise(key){
   if(!confirm('이 칭찬 건을 목록에서 삭제할까요? (나중에 복원 가능)')) return;
   if(!VOCPRAISE[key]) VOCPRAISE[key]={};
@@ -3067,7 +3102,7 @@ function renderVocMonthly(){
     </div>
     <div class="card"><div class="card-head"><h3>일별 인입 추이</h3><span class="hint">${mo+1}월</span></div>${vocDailyTrend(dates)}</div>
     <div class="card">
-      <div class="card-head"><h3>💚 칭찬 상세 · 직원 지정</h3><span class="hint">${vpCount}건 · 직원·응대 칭찬만 · 각 카드에서 담당 직원 선택 · 불필요한 건 × 삭제</span></div>
+      <div class="card-head"><h3>💚 칭찬 상세 · 직원 지정</h3><span class="hint">${vpCount}건 · 각 카드에서 <b>이름·팀</b> 입력 · 상단 <b>팀 선택</b> 시 그 팀 이름만 후보 표시 · 불필요한 건 × 삭제</span></div>
       ${praiseCardsHTML(v.praises.filter(isStaffPraise))}
     </div>
     <div class="card">
