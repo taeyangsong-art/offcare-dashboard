@@ -1297,6 +1297,16 @@ function dailyMvpCounts(){ const cnt={}; monthSlackDates().forEach(d=>{ const by
 function mvpCountOf(emp){ return dailyMvpCounts()[emp]||0; }
 const ACH_SHORT={hand:'하루 35건',phoenix:'12시간 이상 처리',master:'6업무+VOC·미처리0',god:'하루50건+MVP10회',night:'밤8시후 300건',fool:'???',layoff:'???',fast:'???',thunder:'???',beta:'지정 인원 전용'};
 function achShort(k){ return ACH_SHORT[k]||''; }
+// 히든 조건 타이틀: 달성(ok) 또는 보유 전까지 조건·진행을 '???'로 감춤, 활성화되면 실제 조건 공개
+const HIDDEN_ACH = ['fool','layoff','fast','thunder'];
+function achDisplay(emp, it, owned){
+  const a = emp ? achStatus(emp, it) : null;
+  const hidden = HIDDEN_ACH.includes(it.ach);
+  const revealed = !hidden || owned || (a && a.ok);
+  const cond = a ? a.label : achShort(it.ach);
+  const prog = (a && a.prog && a.prog!=='미달' && a.prog!=='-') ? a.prog : '';
+  return { cond: revealed ? cond : '???', prog: revealed ? prog : '', ok: !!(a && a.ok), revealed };
+}
 // 낚시 전용 아이템이 어느 낚시터에서 나오는지 힌트 (지정 드롭 + 등급별)
 function fishSpotHint(it){
   const targeted={ft_wanderer:'초급 낚시터', t_whale:'중급 낚시터', ft_captain:'고급 낚시터'};
@@ -1311,10 +1321,10 @@ function achStatus(emp, it){
   if(it.ach==='master'){ let ok=false; const W=['onboarding','as','transfer','menu','delivery','extern']; monthSlackDates().forEach(d=>{ const day=slackDay(d)||{}; const dn=(day.done||[]).filter(x=>x.emp===emp); const cs=new Set(dn.map(x=>x.cat)); const all6=W.every(c=>cs.has(c)); const voc=day.voc?[...(day.voc.alerts||[]),...(day.voc.praises||[])].some(x=>x.emp===emp&&x.doneDate===d):false; const anyPending=(day.pending||[]).some(p=>p.handler===emp); if(all6&&voc&&!anyPending) ok=true; }); return {ok, label:'하루에 온보딩·AS·명변·메뉴·배달·외주·VOC 각 1건 이상 + 부재·미처리 0건', prog:ok?'달성 ✓':'미달'}; }
   if(it.ach==='god'){ const best=Math.max(0,...Object.values(empWorkByDay(emp))); const mvp=mvpCountOf(emp); return {ok:best>=50&&mvp>=10, label:'하루 50건 이상 처리 + MVP 10회 이상 선정', prog:`하루최고 ${best}/50 · MVP ${mvp}/10`}; }
   if(it.ach==='night'){ const have=nightHandled(emp,'20:00'); return {ok:have>=300, label:'밤 20:00 이후 300건 처리', prog:`${have}/300건`}; }
-  if(it.ach==='fool'){ const miss=(monthlyMissByEmp().cnt[emp]||0); return {ok:miss>=5, label:'???', prog:'미달'}; }   // 히든: 이번 달 누락 5건 이상 (조건·진행 숨김)
-  if(it.ach==='layoff'){ const miss=(monthlyMissByEmp().cnt[emp]||0); return {ok:miss>=30, label:'???', prog:'미달'}; }   // 히든: 이번 달 누락 30건 이상
-  if(it.ach==='fast'){ let c=0; monthSlackDates().forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp===emp && x.urgent) c++; })); return {ok:c>=3, label:'???', prog:'미달'}; }   // 히든: 긴급/사이렌 처리 3건 이상(월)
-  if(it.ach==='thunder'){ let c=0; allSlackDates().forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp===emp && x.urgent) c++; })); return {ok:c>=100, label:'???', prog:'미달'}; }   // 히든: 긴급/사이렌 처리 100건(전체 누적)
+  if(it.ach==='fool'){ const miss=(monthlyMissByEmp().cnt[emp]||0); return {ok:miss>=5, label:'이번 달 누락 5건 이상', prog:`${miss}/5건`}; }   // 히든(달성 시 공개)
+  if(it.ach==='layoff'){ const miss=(monthlyMissByEmp().cnt[emp]||0); return {ok:miss>=30, label:'이번 달 누락 30건 이상', prog:`${miss}/30건`}; }   // 히든
+  if(it.ach==='fast'){ let c=0; monthSlackDates().forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp===emp && x.urgent) c++; })); return {ok:c>=3, label:'이번 달 긴급/사이렌 처리 3건', prog:`${c}/3건`}; }   // 히든
+  if(it.ach==='thunder'){ let c=0; allSlackDates().forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp===emp && x.urgent) c++; })); return {ok:c>=100, label:'긴급/사이렌 처리 100건(누적)', prog:`${c}/100건`}; }   // 히든
   if(it.ach==='beta'){ const ok=(it.onlyFor||[]).includes(emp); return {ok, label:'베타테스터 지정 인원 전용', prog:ok?'달성 ✓':'대상 아님'}; }   // 배선유·김동욱 전용
   return null;
 }
@@ -1874,7 +1884,7 @@ function itemTipHTML(cat,id){ const it=itemById(cat,id); if(!it) return ''; cons
     ${disp}
     <div class="it-tip-name">${CAT_LABEL[cat]||''} · ${escapeHtml(it.name)}</div>
     ${it.desc?`<div class="it-tip-desc">“${escapeHtml(it.desc)}”</div>`:''}
-    ${it.ach?(function(){ const a=gameMe?achStatus(gameMe,it):null; return `<div class="it-tip-req"><div class="it-tip-cond">🎯 달성 조건: ${escapeHtml(a?a.label:achShort(it.ach))}</div>${a&&a.prog&&a.prog!=='미달'?`<div class="it-tip-prog">📊 내 진행 <b>${escapeHtml(a.prog)}</b></div>`:''}${(it.autoGrant||it.onlyFor)?'':'<div class="it-tip-reset">🔄 매월 1일 진행 초기화</div>'}</div>`; })():''}
+    ${it.ach?(function(){ const d=achDisplay(gameMe,it,owned); return `<div class="it-tip-req"><div class="it-tip-cond">🎯 달성 조건: ${escapeHtml(d.cond)}</div>${d.prog?`<div class="it-tip-prog">📊 내 진행 <b>${escapeHtml(d.prog)}</b></div>`:''}${(it.autoGrant||it.onlyFor)?'':'<div class="it-tip-reset">🔄 매월 1일 진행 초기화</div>'}</div>`; })():''}
     ${(!it.ach && it.fishOnly)?`<div class="it-tip-req"><div class="it-tip-cond">🎣 획득: ${escapeHtml(fishSpotHint(it))}에서 낚시로 획득${it.id==='ft_captain'?' · 🌈 0.00001% 극악 확률':''}</div></div>`:''}
     ${it.perk?`<div class="it-tip-perk"><span class="it-tip-perk-h">${cat==='pet'?'🐾 펫 능력':cat==='title'?'👑 타이틀 능력':'✨ 능력'}</span> ${escapeHtml(perkDesc(it.perk))}</div>`:''}
     ${it.freeShop?`<div class="it-tip-perk"><span class="it-tip-perk-h">👑 유일 능력</span> 착용 시 모든 상점 아이템 무료!</div>`:''}
@@ -1991,7 +2001,7 @@ async function buyOrEquip(cat,id){
     if(it.fishOnly){ alert(`🎣 [${it.name}]는 낚시터에서만 획득할 수 있어요!\n낚시터 탭에서 도전해보세요.`); return; }
     const a=achStatus(emp, it);
     if(a){   // 달성형(코인 없이 무료 획득)
-      if(!a.ok){ alert(`🔒 [${it.name}]는 아직 달성 전이에요!\n조건: ${a.label}\n진행: ${a.prog}`); return; }
+      if(!a.ok){ const d=achDisplay(emp,it,false); alert(`🔒 [${it.name}]는 아직 달성 전이에요!\n조건: ${d.cond}${d.prog?`\n진행: ${d.prog}`:''}`); return; }
       g.owned=g.owned||[]; g.owned.push(cat+':'+id);
     } else if(hasFreeShop(emp)){   // 👑 곽호영 능력: 무료 획득 (코인 소모·인증 없음)
       g.owned=g.owned||[]; g.owned.push(cat+':'+id);
@@ -2013,7 +2023,7 @@ function shopCard(cat,it,emp){
     : it.e!==undefined ? (it.e||'✕')
     : (cat==='nametag' ? `<span style="${nametagStyle({nametag:it.id})}">가나</span>`
     : `<span class="tr-${r}" style="${titleStyleOf(it)}">[${escapeHtml(it.name)}]</span>`);
-  const reqBadge = it.ach ? `<div class="si-req ${owned||(a&&a.ok)?'met':'locked'}">🎯 ${escapeHtml(achShort(it.ach))}${owned?' ✓':(a&&a.prog!=='미달'?` <b>${escapeHtml(a.prog)}</b>`:'')}</div>`
+  const reqBadge = it.ach ? (function(){ const d=achDisplay(emp,it,owned); return `<div class="si-req ${owned||d.ok?'met':'locked'}">🎯 ${escapeHtml(d.cond)}${owned?' ✓':(d.prog?` <b>${escapeHtml(d.prog)}</b>`:'')}</div>`; })()
     : (fishLocked ? `<div class="si-req locked">🎣 낚시터에서 획득가능</div>` : '');
   const perkBadge = it.perk ? `<div class="si-perk">🐾 ${escapeHtml(perkDesc(it.perk))}</div>`
     : it.freeShop ? `<div class="si-perk">👑 착용 시 모든 상점 아이템 무료</div>` : '';
