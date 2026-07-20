@@ -1294,7 +1294,7 @@ function empWorkByDay(emp){ const m={}; monthSlackDates().forEach(d=>{ ((slackDa
 // 일별 MVP(그날 업무처리 최다) 선정 횟수 맵 (이번 달)
 function dailyMvpCounts(){ const cnt={}; monthSlackDates().forEach(d=>{ const by={}; ((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp) by[x.emp]=(by[x.emp]||0)+1; }); let top=null,tv=0; for(const e in by){ if(by[e]>tv){ tv=by[e]; top=e; } } if(top) cnt[top]=(cnt[top]||0)+1; }); return cnt; }
 function mvpCountOf(emp){ return dailyMvpCounts()[emp]||0; }
-const ACH_SHORT={hand:'하루 35건',phoenix:'12시간 이상 처리',master:'6업무+VOC·미처리0',god:'하루50건+MVP10회',night:'밤8시후 300건',fool:'???',layoff:'???',fast:'???',thunder:'???'};
+const ACH_SHORT={hand:'하루 35건',phoenix:'12시간 이상 처리',master:'6업무+VOC·미처리0',god:'하루50건+MVP10회',night:'밤8시후 300건',fool:'???',layoff:'???',fast:'???',thunder:'???',beta:'지정 인원 전용'};
 function achShort(k){ return ACH_SHORT[k]||''; }
 // 낚시 전용 아이템이 어느 낚시터에서 나오는지 힌트 (지정 드롭 + 등급별)
 function fishSpotHint(it){
@@ -1314,11 +1314,14 @@ function achStatus(emp, it){
   if(it.ach==='layoff'){ const miss=(monthlyMissByEmp().cnt[emp]||0); return {ok:miss>=30, label:'???', prog:'미달'}; }   // 히든: 이번 달 누락 30건 이상
   if(it.ach==='fast'){ let c=0; monthSlackDates().forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp===emp && x.urgent) c++; })); return {ok:c>=3, label:'???', prog:'미달'}; }   // 히든: 긴급/사이렌 처리 3건 이상(월)
   if(it.ach==='thunder'){ let c=0; allSlackDates().forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp===emp && x.urgent) c++; })); return {ok:c>=100, label:'???', prog:'미달'}; }   // 히든: 긴급/사이렌 처리 100건(전체 누적)
+  if(it.ach==='beta'){ const ok=(it.onlyFor||[]).includes(emp); return {ok, label:'베타테스터 지정 인원 전용', prog:ok?'달성 ✓':'대상 아님'}; }   // 배선유·김동욱 전용
   return null;
 }
 // 자동 획득 타이틀(autoGrant): 조건 충족 시 클릭 없이 owned에 추가 + 미착용이면 착용(최초 1회). 대상=현재 선택된 직원.
 function autoGrantTitles(emp){
   if(!emp) return; const g=gs(emp); let changed=false;
+  // 예전 버그(히든 타이틀 price:0 → 누구나 착용) 잔재 정리: 보유하지 않은 타이틀이 착용돼 있으면 해제
+  if(g.equipped && g.equipped.title && !owns(emp,'title',g.equipped.title)){ delete g.equipped.title; changed=true; }
   for(const it of (GAME_ITEMS.title||[])){
     if(!it.autoGrant || owns(emp,'title',it.id)) continue;
     const a=achStatus(emp,it);
@@ -1555,10 +1558,11 @@ const GAME_ITEMS = {
     {id:'t_phoenix',name:'하드워커',price:200,rarity:'epic',ach:'phoenix'},
     {id:'t_master',name:'원격 마스터',price:320,rarity:'epic',ach:'master'},
     {id:'t_god',name:'원격의 신',price:600,rarity:'legendary',ach:'god',grad:'linear-gradient(90deg,#e8820a,#ff5a8a,#c77dff,#4ea8ff,#e8820a)'},
-    {id:'t_fool',name:'바보',price:0,rarity:'common',ach:'fool'},
-    {id:'t_layoff',name:'권고사직',price:0,rarity:'common',ach:'layoff',grad:'linear-gradient(90deg,#7a0f2e,#c02f5e,#7a0f2e)'},
-    {id:'t_fast',name:'재빠른',price:0,rarity:'rare',ach:'fast'},
-    {id:'t_thunder',name:'⚡',price:0,rarity:'epic',ach:'thunder',autoGrant:true,grad:'linear-gradient(90deg,#ffe14d,#ff9f0a,#ffd60a)'},
+    {id:'t_fool',name:'바보',price:1,rarity:'common',ach:'fool'},
+    {id:'t_layoff',name:'권고사직',price:1,rarity:'common',ach:'layoff',grad:'linear-gradient(90deg,#7a0f2e,#c02f5e,#7a0f2e)'},
+    {id:'t_fast',name:'재빠른',price:1,rarity:'rare',ach:'fast'},
+    {id:'t_thunder',name:'⚡',price:1,rarity:'epic',ach:'thunder',autoGrant:true,grad:'linear-gradient(90deg,#ffe14d,#ff9f0a,#ffd60a)'},
+    {id:'t_beta',name:'베타테스터',price:1,rarity:'legendary',ach:'beta',autoGrant:true,onlyFor:['배선유','김동욱'],grad:'linear-gradient(90deg,#00c7be,#5e5ce6,#e0218a)'},
     {id:'t_kraken',name:'천사',price:1200,rarity:'mythic',fishOnly:true,grad:'linear-gradient(90deg,#00f5d4,#4ea8ff,#8a5cff,#00f5d4)'},
     {id:'t_fishking',name:'아이샵케어',price:1500,rarity:'mythic',fishOnly:true,grad:'linear-gradient(90deg,#ffd34e,#ff5a8a,#00f5d4,#ffd34e)'},
     {id:'ft_novice',name:'초보 낚시꾼',price:60,rarity:'common',fishOnly:true},
@@ -2023,7 +2027,7 @@ function shopCard(cat,it,emp){
 }
 // 성별 전용 아이템(gender:'m'/'f')은 해당 성별로 설정했을 때만 노출. 미설정 시 기본 남자('m').
 function genderOK(emp,it){ if(!it.gender) return true; return it.gender===((gs(emp).gender)||'m'); }
-function shopSection(cat,label,emp){ const canoff=['hat','pet','cape','gloves','beard'].includes(cat); let list=GAME_ITEMS[cat].filter(it=>(cat==='title'||!it.fishOnly||owns(emp,cat,it.id))&&genderOK(emp,it)); if(cat==='title') list=list.slice().sort((a,b)=>(RARITY_ORDER[a.rarity]||0)-(RARITY_ORDER[b.rarity]||0)); return `<div class="card"><div class="card-head"><h3>${label}</h3>${canoff?`<button class="btn" onclick="unequipPart('${cat}')">해제</button>`:''}</div><div class="shop-grid">${list.map(it=>shopCard(cat,it,emp)).join('')}</div></div>`; }
+function shopSection(cat,label,emp){ const canoff=['hat','pet','cape','gloves','beard'].includes(cat); let list=GAME_ITEMS[cat].filter(it=>(cat==='title'||!it.fishOnly||owns(emp,cat,it.id))&&genderOK(emp,it)&&(!it.onlyFor||it.onlyFor.includes(emp))); if(cat==='title') list=list.slice().sort((a,b)=>(RARITY_ORDER[a.rarity]||0)-(RARITY_ORDER[b.rarity]||0)); return `<div class="card"><div class="card-head"><h3>${label}</h3>${canoff?`<button class="btn" onclick="unequipPart('${cat}')">해제</button>`:''}</div><div class="shop-grid">${list.map(it=>shopCard(cat,it,emp)).join('')}</div></div>`; }
 function renderGame(){
   autoGrantTitles(gameMe);   // 자동 획득 타이틀(⚡ 등) 조건 충족 시 지급
   const opts=EMPLOYEES.map(e=>`<option ${e===gameMe?'selected':''}>${e}</option>`).join('');
@@ -2127,7 +2131,7 @@ function rollLootPerk(loot, perk){
   return nones.length?pick(nones):(coins.length?pick(coins):loot[0]);
 }
 function perkDesc(perk){ if(!perk) return ''; const p=[]; const pct=x=>{const v=Math.round(x*1000)/10; return (Number.isInteger(v)?v:v.toFixed(1))+'%';}; if(perk.item)p.push(`아이템 확률 +${pct(perk.item)}`); if(perk.coin)p.push(`코인 +${perk.coin}개 추가 지급`); if(perk.miss)p.push(`꽝 -${pct(perk.miss)}`); if(perk.loss)p.push(perk.loss>=1?'코인손실 방어(0%)':`코인손실 -${pct(perk.loss)}`); return p.join(' · '); }
-function pickItem(rars, fishOnly, emp){ const pool=[]; for(const cat in GAME_ITEMS){ for(const it of GAME_ITEMS[cat]){ if(it.price===0) continue; if(it.targetOnly) continue; if(it.gender && emp && !genderOK(emp,it)) continue; if(!rars.includes(it.rarity)) continue; if(fishOnly && !it.fishOnly) continue; if(!fishOnly && it.fishOnly) continue; if(emp && owns(emp,cat,it.id)) continue; pool.push(Object.assign({cat},it)); } } return pool.length?pool[Math.floor(Math.random()*pool.length)]:null; }
+function pickItem(rars, fishOnly, emp){ const pool=[]; for(const cat in GAME_ITEMS){ for(const it of GAME_ITEMS[cat]){ if(it.price===0) continue; if(it.targetOnly) continue; if(it.ach || it.onlyFor) continue; if(it.gender && emp && !genderOK(emp,it)) continue; if(!rars.includes(it.rarity)) continue; if(fishOnly && !it.fishOnly) continue; if(!fishOnly && it.fishOnly) continue; if(emp && owns(emp,cat,it.id)) continue; pool.push(Object.assign({cat},it)); } } return pool.length?pool[Math.floor(Math.random()*pool.length)]:null; }
 const CAT_KO={title:'타이틀',nametag:'네임택',hat:'모자',pet:'펫',skin:'피부',hair:'헤어',dye:'염색',eyes:'눈',brows:'눈썹',mouth:'입',beard:'수염',top:'상의',pants:'하의',shoes:'신발',gloves:'장갑',cape:'망토'};
 function resolveLoot(emp,out){ const g=gs(emp);
   if(out.t==='none') return {emoji:'🐚',big:'꽝!',sub:'빈 낚싯대... 다음 기회에!',cls:'miss'};
