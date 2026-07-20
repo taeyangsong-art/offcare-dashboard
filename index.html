@@ -43,6 +43,14 @@
     --shadow:0 1px 3px rgba(0,0,0,.5),0 8px 24px rgba(0,0,0,.55);
     color-scheme:dark;
   }
+  /* 🌙 야간모드 플로팅 토글 — 항상 우하단 고정(모바일·사이드바 숨김에도 보임) */
+  .theme-fab{position:fixed; right:20px; bottom:20px; z-index:900; width:52px; height:52px;
+    border-radius:50%; border:1px solid var(--line); background:var(--canvas); color:var(--ink);
+    font-size:23px; line-height:1; cursor:pointer; box-shadow:0 6px 20px rgba(0,0,0,.18);
+    display:flex; align-items:center; justify-content:center; transition:transform .15s, box-shadow .15s}
+  .theme-fab:hover{transform:translateY(-2px); box-shadow:0 10px 26px rgba(0,0,0,.24)}
+  :root[data-theme="dark"] .theme-fab{box-shadow:0 6px 20px rgba(0,0,0,.5)}
+  @media (max-width:900px){ .theme-fab{right:14px; bottom:14px; width:46px; height:46px; font-size:20px} }
   /* 게임/낚시터 흰 버튼은 다크에서도 밝게 유지(가독성) */
   :root[data-theme="dark"] .fs-btn,:root[data-theme="dark"] .fr-cast{background:#eaeaf0;color:#123}
   /* 강조 하이라이트 카드는 다크에서 톤 다운(밝은 파스텔 유지 방지) */
@@ -983,11 +991,10 @@
   </div>
   <div class="nav-label">카테고리</div>
   <nav id="nav"></nav>
-  <div style="margin-top:auto; display:flex; flex-direction:column; gap:6px">
-    <button class="lock-out" id="themeToggle" onclick="toggleTheme()" style="margin-top:0">🌙 야간 모드</button>
-    <button class="lock-out" onclick="relock()" style="margin-top:0">🔒 잠금</button>
-  </div>
+  <button class="lock-out" onclick="relock()">🔒 잠금</button>
 </aside>
+<!-- 어디서든 보이는 야간모드 토글 (모바일/사이드바 숨김 대응) -->
+<button class="theme-fab" id="themeToggle" onclick="toggleTheme()" title="야간 모드">🌙</button>
 
 <!-- Main -->
 <main class="main" id="main"></main>
@@ -1369,7 +1376,7 @@ function sumRange(cat, dates, emp){
 
 /* ================= Render: Nav ================= */
 // 🌙 야간(다크) 모드 토글 — localStorage 저장, <head>에서 조기 적용(깜빡임 방지)
-function applyThemeLabel(){ const b=document.getElementById('themeToggle'); if(!b) return; const dark=document.documentElement.getAttribute('data-theme')==='dark'; b.textContent=dark?'☀️ 주간 모드':'🌙 야간 모드'; }
+function applyThemeLabel(){ const b=document.getElementById('themeToggle'); if(!b) return; const dark=document.documentElement.getAttribute('data-theme')==='dark'; b.textContent=dark?'☀️':'🌙'; b.title=dark?'주간 모드로 전환':'야간 모드로 전환'; }
 function toggleTheme(){ const dark=document.documentElement.getAttribute('data-theme')==='dark';
   if(dark){ document.documentElement.removeAttribute('data-theme'); try{localStorage.setItem('opcare_theme','light');}catch(e){} }
   else { document.documentElement.setAttribute('data-theme','dark'); try{localStorage.setItem('opcare_theme','dark');}catch(e){} }
