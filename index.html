@@ -1294,7 +1294,7 @@ function empWorkByDay(emp){ const m={}; monthSlackDates().forEach(d=>{ ((slackDa
 // 일별 MVP(그날 업무처리 최다) 선정 횟수 맵 (이번 달)
 function dailyMvpCounts(){ const cnt={}; monthSlackDates().forEach(d=>{ const by={}; ((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp) by[x.emp]=(by[x.emp]||0)+1; }); let top=null,tv=0; for(const e in by){ if(by[e]>tv){ tv=by[e]; top=e; } } if(top) cnt[top]=(cnt[top]||0)+1; }); return cnt; }
 function mvpCountOf(emp){ return dailyMvpCounts()[emp]||0; }
-const ACH_SHORT={hand:'하루 35건',phoenix:'12시간 이상 처리',master:'6업무+VOC·미처리0',god:'하루50건+MVP10회',night:'밤8시후 300건',fool:'???',layoff:'???',fast:'???'};
+const ACH_SHORT={hand:'하루 35건',phoenix:'12시간 이상 처리',master:'6업무+VOC·미처리0',god:'하루50건+MVP10회',night:'밤8시후 300건',fool:'???',layoff:'???',fast:'???',thunder:'???'};
 function achShort(k){ return ACH_SHORT[k]||''; }
 // 낚시 전용 아이템이 어느 낚시터에서 나오는지 힌트 (지정 드롭 + 등급별)
 function fishSpotHint(it){
@@ -1312,8 +1312,19 @@ function achStatus(emp, it){
   if(it.ach==='night'){ const have=nightHandled(emp,'20:00'); return {ok:have>=300, label:'밤 20:00 이후 300건 처리', prog:`${have}/300건`}; }
   if(it.ach==='fool'){ const miss=(monthlyMissByEmp().cnt[emp]||0); return {ok:miss>=5, label:'???', prog:'미달'}; }   // 히든: 이번 달 누락 5건 이상 (조건·진행 숨김)
   if(it.ach==='layoff'){ const miss=(monthlyMissByEmp().cnt[emp]||0); return {ok:miss>=30, label:'???', prog:'미달'}; }   // 히든: 이번 달 누락 30건 이상
-  if(it.ach==='fast'){ let c=0; monthSlackDates().forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp===emp && x.urgent) c++; })); return {ok:c>=3, label:'???', prog:'미달'}; }   // 히든: 긴급/사이렌 처리 3건 이상
+  if(it.ach==='fast'){ let c=0; monthSlackDates().forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp===emp && x.urgent) c++; })); return {ok:c>=3, label:'???', prog:'미달'}; }   // 히든: 긴급/사이렌 처리 3건 이상(월)
+  if(it.ach==='thunder'){ let c=0; allSlackDates().forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp===emp && x.urgent) c++; })); return {ok:c>=100, label:'???', prog:'미달'}; }   // 히든: 긴급/사이렌 처리 100건(전체 누적)
   return null;
+}
+// 자동 획득 타이틀(autoGrant): 조건 충족 시 클릭 없이 owned에 추가 + 미착용이면 착용(최초 1회). 대상=현재 선택된 직원.
+function autoGrantTitles(emp){
+  if(!emp) return; const g=gs(emp); let changed=false;
+  for(const it of (GAME_ITEMS.title||[])){
+    if(!it.autoGrant || owns(emp,'title',it.id)) continue;
+    const a=achStatus(emp,it);
+    if(a && a.ok){ g.owned=g.owned||[]; g.owned.push('title:'+it.id); g.equipped=g.equipped||{}; if(!g.equipped.title) g.equipped.title=it.id; changed=true; }
+  }
+  if(changed) saveGame();
 }
 // ── 전체현황 shift 대응 데이터 (전체=COUNTS 기반 / 야간=done 시간필터) ──
 function ovCnt(cat, dates, emp){
@@ -1547,6 +1558,7 @@ const GAME_ITEMS = {
     {id:'t_fool',name:'바보',price:0,rarity:'common',ach:'fool'},
     {id:'t_layoff',name:'권고사직',price:0,rarity:'common',ach:'layoff',grad:'linear-gradient(90deg,#7a0f2e,#c02f5e,#7a0f2e)'},
     {id:'t_fast',name:'재빠른',price:0,rarity:'rare',ach:'fast'},
+    {id:'t_thunder',name:'⚡',price:0,rarity:'epic',ach:'thunder',autoGrant:true,grad:'linear-gradient(90deg,#ffe14d,#ff9f0a,#ffd60a)'},
     {id:'t_kraken',name:'천사',price:1200,rarity:'mythic',fishOnly:true,grad:'linear-gradient(90deg,#00f5d4,#4ea8ff,#8a5cff,#00f5d4)'},
     {id:'t_fishking',name:'아이샵케어',price:1500,rarity:'mythic',fishOnly:true,grad:'linear-gradient(90deg,#ffd34e,#ff5a8a,#00f5d4,#ffd34e)'},
     {id:'ft_novice',name:'초보 낚시꾼',price:60,rarity:'common',fishOnly:true},
@@ -2013,6 +2025,7 @@ function shopCard(cat,it,emp){
 function genderOK(emp,it){ if(!it.gender) return true; return it.gender===((gs(emp).gender)||'m'); }
 function shopSection(cat,label,emp){ const canoff=['hat','pet','cape','gloves','beard'].includes(cat); let list=GAME_ITEMS[cat].filter(it=>(cat==='title'||!it.fishOnly||owns(emp,cat,it.id))&&genderOK(emp,it)); if(cat==='title') list=list.slice().sort((a,b)=>(RARITY_ORDER[a.rarity]||0)-(RARITY_ORDER[b.rarity]||0)); return `<div class="card"><div class="card-head"><h3>${label}</h3>${canoff?`<button class="btn" onclick="unequipPart('${cat}')">해제</button>`:''}</div><div class="shop-grid">${list.map(it=>shopCard(cat,it,emp)).join('')}</div></div>`; }
 function renderGame(){
+  autoGrantTitles(gameMe);   // 자동 획득 타이틀(⚡ 등) 조건 충족 시 지급
   const opts=EMPLOYEES.map(e=>`<option ${e===gameMe?'selected':''}>${e}</option>`).join('');
   let body;
   if(!gameMe){ body=`<div class="card"><div class="empty-note">상단에서 <b>본인 이름</b>을 선택하면 상점이 열려요 🎮</div></div>`; }
@@ -2189,6 +2202,7 @@ function fishPreviewCard(it,emp){ const owned=owns(emp,it.cat,it.id), r=it.rarit
 }
 function renderGameFish(){
   const emp=gameMe;
+  autoGrantTitles(emp);   // 자동 획득 타이틀 조건 체크
   const opts=EMPLOYEES.map(e=>`<option ${e===emp?'selected':''}>${e}</option>`).join('');
   const head=`<div class="page-head"><div><h2>🎣 낚시터</h2><div class="sub">코인으로 낚싯대를 던져 아이템·코인을 낚으세요!${emp?` · 🪙 <b>${empAvail(emp)}</b> 보유`:''}</div></div>
     <div class="controls"><select class="sel" onchange="setGameMe(this.value)"><option value="">👤 본인 선택</option>${opts}</select></div></div>`;
