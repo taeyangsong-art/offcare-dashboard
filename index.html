@@ -2454,8 +2454,8 @@ function overviewTrend(dates){
   const bars=dates.map((d,i)=>{ const v=vals[i], h=(H-46)*(v/mx), x=pad+i*gap+(gap-bw)/2, y=H-28-h, dd=parseYmd(d), isT=d===ymd(today());
     const lbl=many?dd.getDate():`${dd.getMonth()+1}/${dd.getDate()}`;
     return `<rect x="${x}" y="${y.toFixed(1)}" width="${bw}" height="${h.toFixed(1)}" rx="4" fill="${isT?'var(--blue)':'#cfe3fb'}"></rect>`
-      +(v>0?`<text x="${x+bw/2}" y="${(y-5).toFixed(1)}" text-anchor="middle" font-size="10.5" font-weight="700" fill="#424245">${v}</text>`:'')
-      +`<text x="${x+bw/2}" y="${H-11}" text-anchor="middle" font-size="9.5" fill="#86868b">${lbl}</text>`;}).join('');
+      +(v>0?`<text x="${x+bw/2}" y="${(y-5).toFixed(1)}" text-anchor="middle" font-size="10.5" font-weight="700" style="fill:var(--ink-soft)">${v}</text>`:'')
+      +`<text x="${x+bw/2}" y="${H-11}" text-anchor="middle" font-size="9.5" style="fill:var(--gray2)">${lbl}</text>`;}).join('');
   return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}"><line x1="${pad}" y1="${H-28}" x2="${W-pad}" y2="${H-28}" stroke="var(--line)"/>${bars}</svg></div>`;
 }
 // 시간대별 처리 추이 — done(처리완료) 항목을 인입 시각(HH) 시간대로 버킷팅
@@ -2475,8 +2475,8 @@ function overviewHourly(dates){
   const W=Math.max(520,hrs.length*gapUnit), H=200, pad=26, gap=(W-pad*2)/hrs.length, bw=gap*0.6;
   const bars=hrs.map((h,i)=>{ const v=vals[i], bh=(H-46)*(v/mx), x=pad+i*gap+(gap-bw)/2, y=H-28-bh;
     return `<rect x="${x}" y="${y.toFixed(1)}" width="${bw}" height="${bh.toFixed(1)}" rx="4" fill="#4a90e2"><title>${h}시~${h+1}시: ${v}건</title></rect>`
-      +(v>0?`<text x="${x+bw/2}" y="${(y-5).toFixed(1)}" text-anchor="middle" font-size="10.5" font-weight="700" fill="#424245">${v}</text>`:'')
-      +`<text x="${x+bw/2}" y="${H-11}" text-anchor="middle" font-size="9.5" fill="#86868b">${h}시</text>`;}).join('');
+      +(v>0?`<text x="${x+bw/2}" y="${(y-5).toFixed(1)}" text-anchor="middle" font-size="10.5" font-weight="700" style="fill:var(--ink-soft)">${v}</text>`:'')
+      +`<text x="${x+bw/2}" y="${H-11}" text-anchor="middle" font-size="9.5" style="fill:var(--gray2)">${h}시</text>`;}).join('');
   return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}"><line x1="${pad}" y1="${H-28}" x2="${W-pad}" y2="${H-28}" stroke="var(--line)"/>${bars}</svg></div>`;
 }
 // 도넛 차트
@@ -2488,8 +2488,8 @@ function donutChart(entries){
   const legend=entries.map(([label,val,color])=>`<span><span class="swatch" style="background:${color}"></span>${label} ${val} (${Math.round(val/total*100)}%)</span>`).join('');
   return `<div style="display:flex;gap:22px;align-items:center;flex-wrap:wrap">
     <svg viewBox="0 0 144 144" width="144" height="144" style="flex:0 0 auto">${segs}
-      <text x="72" y="70" text-anchor="middle" font-size="26" font-weight="800" fill="#1d1d1f">${total}</text>
-      <text x="72" y="88" text-anchor="middle" font-size="11" fill="#86868b">총 건수</text></svg>
+      <text x="72" y="70" text-anchor="middle" font-size="26" font-weight="800" style="fill:var(--ink)">${total}</text>
+      <text x="72" y="88" text-anchor="middle" font-size="11" style="fill:var(--gray2)">총 건수</text></svg>
     <div class="legend" style="flex-direction:column;gap:7px;align-items:flex-start;margin:0">${legend}</div></div>`;
 }
 // ── AS 유형 분류 — 요청 '내용'(req) + 처리내역(note) 키워드 기반 ──
@@ -2557,18 +2557,18 @@ function columnChart(empRows, maxCell){
     const bars=cats.map((c,ci)=>{
       const v=r.cells[ci];
       const bx=gx+ci*(barW+barGap);
-      if(v<=0) return `<rect x="${bx}" y="${base-2}" width="${barW}" height="2" rx="1" fill="#ececf0"/>`;
+      if(v<=0) return `<rect x="${bx}" y="${base-2}" width="${barW}" height="2" rx="1" style="fill:var(--line-soft)"/>`;
       const h=v/mx*plotH, y=base-h;
       return `<rect x="${bx}" y="${y.toFixed(1)}" width="${barW}" height="${h.toFixed(1)}" rx="2.5" fill="${c.color}"><title>${r.emp} · ${c.name} ${v}건</title></rect>`
-        + `<text x="${bx+barW/2}" y="${(y-4).toFixed(1)}" text-anchor="middle" font-size="10" font-weight="700" fill="#424245">${v}</text>`;
+        + `<text x="${bx+barW/2}" y="${(y-4).toFixed(1)}" text-anchor="middle" font-size="10" font-weight="700" style="fill:var(--ink-soft)">${v}</text>`;
     }).join("");
-    const sep = gi>0 ? `<line x1="${(gx-groupGap/2).toFixed(1)}" y1="${topPad}" x2="${(gx-groupGap/2).toFixed(1)}" y2="${base}" stroke="#f2f2f5"/>` : "";
-    const name = `<text x="${gx+groupW/2}" y="${base+22}" text-anchor="middle" font-size="13" font-weight="700" fill="#1d1d1f">${r.emp}</text>`;
-    const tot = `<text x="${gx+groupW/2}" y="${base+38}" text-anchor="middle" font-size="11" font-weight="600" fill="#86868b">합계 ${r.total}</text>`;
+    const sep = gi>0 ? `<line x1="${(gx-groupGap/2).toFixed(1)}" y1="${topPad}" x2="${(gx-groupGap/2).toFixed(1)}" y2="${base}" stroke="var(--line-soft)"/>` : "";
+    const name = `<text x="${gx+groupW/2}" y="${base+22}" text-anchor="middle" font-size="13" font-weight="700" style="fill:var(--ink)">${r.emp}</text>`;
+    const tot = `<text x="${gx+groupW/2}" y="${base+38}" text-anchor="middle" font-size="11" font-weight="600" style="fill:var(--gray2)">합계 ${r.total}</text>`;
     return sep+bars+name+tot;
   }).join("");
   return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
-    <line x1="${padL-8}" y1="${base}" x2="${W-padR+8}" y2="${base}" stroke="#d2d2d7"/>
+    <line x1="${padL-8}" y1="${base}" x2="${W-padR+8}" y2="${base}" style="stroke:var(--line)"/>
     ${groups}
   </svg></div>`;
 }
@@ -2581,8 +2581,8 @@ function simpleColumn(pairs, color){
   const bars=pairs.map(([nm,v],i)=>{
     const x=padL + i*(colW+gap), h=v/mx*plotH, y=base-h;
     return `<rect x="${x}" y="${y.toFixed(1)}" width="${colW}" height="${h.toFixed(1)}" rx="3" fill="${color}"><title>${nm} ${v}건</title></rect>`
-      + `<text x="${x+colW/2}" y="${(y-6).toFixed(1)}" text-anchor="middle" font-size="13" font-weight="800" fill="#1d1d1f">${v}</text>`
-      + `<text x="${x+colW/2}" y="${base+19}" text-anchor="middle" font-size="12.5" font-weight="600" fill="#424245">${nm}</text>`;
+      + `<text x="${x+colW/2}" y="${(y-6).toFixed(1)}" text-anchor="middle" font-size="13" font-weight="800" style="fill:var(--ink)">${v}</text>`
+      + `<text x="${x+colW/2}" y="${base+19}" text-anchor="middle" font-size="12.5" font-weight="600" style="fill:var(--ink-soft)">${nm}</text>`;
   }).join("");
   return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}"><line x1="${padL-6}" y1="${base}" x2="${W-padR+6}" y2="${base}" stroke="#d2d2d7"/>${bars}</svg></div>`;
 }
@@ -2622,8 +2622,8 @@ function distColumnChart(dist, maxScore, colorFn){
   const W=Math.max(360, padL+padR+n*(bw+gap));
   const bars=scores.map((s,i)=>{const c=counts[i],h=c/mx*plotH,x=padL+i*(bw+gap),y=base-h;
     return `<rect x="${x}" y="${y.toFixed(1)}" width="${bw}" height="${h.toFixed(1)}" rx="3" fill="${colorFn(s)}"></rect>`
-      +(c>0?`<text x="${x+bw/2}" y="${(y-4).toFixed(1)}" text-anchor="middle" font-size="10" font-weight="700" fill="#424245">${c}</text>`:'')
-      +`<text x="${x+bw/2}" y="${base+15}" text-anchor="middle" font-size="10.5" font-weight="600" fill="#86868b">${s}</text>`;}).join('');
+      +(c>0?`<text x="${x+bw/2}" y="${(y-4).toFixed(1)}" text-anchor="middle" font-size="10" font-weight="700" style="fill:var(--ink-soft)">${c}</text>`:'')
+      +`<text x="${x+bw/2}" y="${base+15}" text-anchor="middle" font-size="10.5" font-weight="600" style="fill:var(--gray2)">${s}</text>`;}).join('');
   return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}"><line x1="${padL-4}" y1="${base}" x2="${W-padR+4}" y2="${base}" stroke="#d2d2d7"/>${bars}</svg></div>`;
 }
 // 전월 대비 타일 (higherBad=true면 증가가 나쁨→빨강)
@@ -3025,8 +3025,8 @@ function vocDailyTrend(dates){
   const W=Math.max(560, padL+padR+n*(bw+gap));
   const bars=dates.map((d,i)=>{ const c=counts[i], h=c/mx*plotH, x=padL+i*(bw+gap), y=base-h, day=parseYmd(d).getDate();
     return `<rect x="${x}" y="${y.toFixed(1)}" width="${bw}" height="${h.toFixed(1)}" rx="2" fill="${c>0?'#ff3b30':'#ececf0'}"></rect>`
-      +(c>0?`<text x="${x+bw/2}" y="${(y-4).toFixed(1)}" text-anchor="middle" font-size="9" font-weight="700" fill="#424245">${c}</text>`:'')
-      +`<text x="${x+bw/2}" y="${base+14}" text-anchor="middle" font-size="8.5" fill="#86868b">${day}</text>`;
+      +(c>0?`<text x="${x+bw/2}" y="${(y-4).toFixed(1)}" text-anchor="middle" font-size="9" font-weight="700" style="fill:var(--ink-soft)">${c}</text>`:'')
+      +`<text x="${x+bw/2}" y="${base+14}" text-anchor="middle" font-size="8.5" style="fill:var(--gray2)">${day}</text>`;
   }).join('');
   return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}"><line x1="${padL-4}" y1="${base}" x2="${W-padR+4}" y2="${base}" stroke="#d2d2d7"/>${bars}</svg></div>`;
 }
@@ -3459,8 +3459,8 @@ function trendChart(cat, mode, ref){
     const col = isToday? "var(--blue)" : "#cfe3fb";
     return `<g>
       <rect x="${x}" y="${y}" width="${bw}" height="${h}" rx="4" fill="${col}"></rect>
-      ${v>0?`<text x="${x+bw/2}" y="${y-6}" text-anchor="middle" font-size="11" font-weight="700" fill="#424245">${v}</text>`:''}
-      <text x="${x+bw/2}" y="${H-12}" text-anchor="middle" font-size="10" fill="#86868b">${lbl}</text>
+      ${v>0?`<text x="${x+bw/2}" y="${y-6}" text-anchor="middle" font-size="11" font-weight="700" style="fill:var(--ink-soft)">${v}</text>`:''}
+      <text x="${x+bw/2}" y="${H-12}" text-anchor="middle" font-size="10" style="fill:var(--gray2)">${lbl}</text>
     </g>`;
   }).join("");
   const total = vals.reduce((a,b)=>a+b,0);
