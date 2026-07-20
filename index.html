@@ -1528,6 +1528,7 @@ const GAME_API = "https://script.google.com/macros/s/AKfycbwlPj0fbNjMWTpU1jiGI3g
 const GAME_COIN_PER = 1;             // 원격 1건 = 🪙1코인
 const RARITY = {common:'#8a94a6', rare:'#1a73e8', epic:'#9c36b5', legendary:'#e8820a', mythic:'#e0218a', unique:'#FFB800'};
 const RARITY_KO = {common:'일반', rare:'레어', epic:'에픽', legendary:'전설', mythic:'신화', unique:'유일'};
+const RARITY_ORDER = {common:0, rare:1, epic:2, legendary:3, mythic:4, unique:5};   // 등급 정렬 순서
 const GAME_ITEMS = {
   title: [
     {id:'t_novice',name:'견습 원격러',price:0,rarity:'common'},
@@ -1987,7 +1988,7 @@ function shopCard(cat,it,emp){
 }
 // 성별 전용 아이템(gender:'m'/'f')은 해당 성별로 설정했을 때만 노출. 미설정 시 기본 남자('m').
 function genderOK(emp,it){ if(!it.gender) return true; return it.gender===((gs(emp).gender)||'m'); }
-function shopSection(cat,label,emp){ const canoff=['hat','pet','cape','gloves','beard'].includes(cat); const list=GAME_ITEMS[cat].filter(it=>(cat==='title'||!it.fishOnly||owns(emp,cat,it.id))&&genderOK(emp,it)); return `<div class="card"><div class="card-head"><h3>${label}</h3>${canoff?`<button class="btn" onclick="unequipPart('${cat}')">해제</button>`:''}</div><div class="shop-grid">${list.map(it=>shopCard(cat,it,emp)).join('')}</div></div>`; }
+function shopSection(cat,label,emp){ const canoff=['hat','pet','cape','gloves','beard'].includes(cat); let list=GAME_ITEMS[cat].filter(it=>(cat==='title'||!it.fishOnly||owns(emp,cat,it.id))&&genderOK(emp,it)); if(cat==='title') list=list.slice().sort((a,b)=>(RARITY_ORDER[a.rarity]||0)-(RARITY_ORDER[b.rarity]||0)); return `<div class="card"><div class="card-head"><h3>${label}</h3>${canoff?`<button class="btn" onclick="unequipPart('${cat}')">해제</button>`:''}</div><div class="shop-grid">${list.map(it=>shopCard(cat,it,emp)).join('')}</div></div>`; }
 function renderGame(){
   const opts=EMPLOYEES.map(e=>`<option ${e===gameMe?'selected':''}>${e}</option>`).join('');
   let body;
