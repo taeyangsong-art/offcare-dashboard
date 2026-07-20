@@ -577,11 +577,11 @@
   .praise-sel{font-family:inherit; font-size:12.5px; font-weight:600; padding:7px 10px; border:1px solid var(--line);
     border-radius:9px; background:#fff; color:var(--ink); cursor:pointer}
   .praise-sel:focus{outline:none; border-color:var(--green); box-shadow:0 0 0 3px var(--green-soft)}
-  .praise-assign{display:flex; gap:6px; flex:1 1 100%; margin-top:6px}
-  .praise-assign .praise-sel{flex:1; min-width:0}
+  .praise-assign{display:grid; grid-template-columns:1fr 1fr; gap:6px; flex:1 1 100%; width:100%; margin-top:6px}
+  .praise-assign .praise-sel{min-width:0; width:100%}
   .praise-toolbar{display:flex; gap:10px; align-items:center; margin-bottom:12px; flex-wrap:wrap}
   .praise-teamfilter{font-family:inherit; font-size:13px; font-weight:700; padding:8px 12px; border:1px solid var(--line);
-    border-radius:10px; background:#fff; color:var(--ink); cursor:pointer}
+    border-radius:10px; background:#fff; color:var(--ink); cursor:pointer; max-width:180px}
   .praise-teamfilter:focus{outline:none; border-color:var(--green); box-shadow:0 0 0 3px var(--green-soft)}
   .voc-rawind{font-size:11px; color:var(--gray2); margin-top:2px}
   .voc-donedate{font-size:11px; color:#1e40af; font-weight:800; margin-top:2px}
