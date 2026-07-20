@@ -2294,12 +2294,14 @@ function showDoneDetail(mode, key){
 }
 function openDetailModal(title, items){
   items.sort((a,b)=>((b.date||'')+(b.time||'')).localeCompare((a.date||'')+(a.time||'')));
+  // VOC 행은 biz 칸에 사업자번호가 아닌 매장 ID(storeId)가 들어감 → 전부 VOC면 헤더를 '매장 ID'로 표기
+  const idLabel = items.length && items.every(x=>x.cat==='voc') ? '매장 ID' : '사업자';
   const rows = items.length? items.map((x,i)=>`<tr class="dm-row" data-k="${((x.store||'')+' '+(x.biz||'')).toLowerCase()}"><td class="dm-num">${i+1}</td><td class="trow-time">${fmtShort(x.date)}<br>${x.cat==='voc'?'<span style="font-size:10px;color:var(--gray2)">설문</span>':(x.time||'')}</td><td>${detailStatusBadge(x.st)}</td><td>${catChip(x.cat)}</td><td class="emp-name">${escapeHtml(x.store||'-')}</td><td class="trow-biz">${escapeHtml(x.biz||'-')}</td><td>${escapeHtml(x.emp||'-')}</td></tr>`).join('')
     : `<tr><td colspan="7" style="text-align:center;color:var(--gray2);padding:22px">상세 데이터가 없습니다.<br><span style="font-size:12px">과거 일자는 <b>backfill</b> 워크플로 실행 후 표시됩니다.</span></td></tr>`;
   let el=document.getElementById('doneModal'); if(!el){ el=document.createElement('div'); el.id='doneModal'; el.className='detail-overlay'; el.onclick=e=>{ if(e.target===el) el.remove(); }; document.body.appendChild(el); }
   el.innerHTML=`<div class="detail-box"><div class="detail-head"><h3>${escapeHtml(title)} <span class="cnt-badge">${items.length}건</span></h3><button class="detail-x" onclick="document.getElementById('doneModal').remove()">✕</button></div>
-    <input class="search-box" type="text" placeholder="상호명 또는 사업자번호 검색…" oninput="filterDoneModal(this.value)">
-    <div class="detail-scroll"><table class="voc-table"><thead><tr><th style="width:34px">#</th><th style="width:52px">시간</th><th style="width:72px">상태</th><th style="width:88px">유형</th><th>상호</th><th style="width:110px">사업자</th><th style="width:62px">담당</th></tr></thead><tbody id="doneModalBody">${rows}</tbody></table></div></div>`;
+    <input class="search-box" type="text" placeholder="상호명 또는 ${idLabel} 검색…" oninput="filterDoneModal(this.value)">
+    <div class="detail-scroll"><table class="voc-table"><thead><tr><th style="width:34px">#</th><th style="width:52px">시간</th><th style="width:72px">상태</th><th style="width:88px">유형</th><th>상호</th><th style="width:110px">${idLabel}</th><th style="width:62px">담당</th></tr></thead><tbody id="doneModalBody">${rows}</tbody></table></div></div>`;
 }
 function filterDoneModal(q){ q=(q||'').trim().toLowerCase(); document.querySelectorAll('#doneModalBody .dm-row').forEach(tr=>{ tr.style.display=(tr.dataset.k||'').includes(q)?'':'none'; }); }
 // 🔍 매장 이력 조회 — 상호명/사업자번호로 전체 기간 인입 이력·유형별 횟수·처리내역
