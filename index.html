@@ -1946,6 +1946,7 @@ async function buyOrEquip(cat,id){
   const emp=gameMe; if(!emp){ alert('먼저 상단에서 본인 이름을 선택하세요 🙂'); return; }
   const it=itemById(cat,id); if(!it) return; const g=gs(emp);
   if(!owns(emp,cat,id)){
+    if(it.fishOnly){ alert(`🎣 [${it.name}]는 낚시터에서만 획득할 수 있어요!\n낚시터 탭에서 도전해보세요.`); return; }
     const a=achStatus(emp, it);
     if(a){   // 달성형(코인 없이 무료 획득)
       if(!a.ok){ alert(`🔒 [${it.name}]는 아직 달성 전이에요!\n조건: ${a.label}\n진행: ${a.prog}`); return; }
@@ -1964,16 +1965,18 @@ function unequipPart(cat){ const emp=gameMe; if(!emp) return; const g=gs(emp); i
 function shopCard(cat,it,emp){
   const eq=(gs(emp).equipped||{})[cat]===it.id, owned=owns(emp,cat,it.id), r=it.rarity||'common';
   const a = owned ? null : achStatus(emp,it);
-  const locked = !!(a && !a.ok);
+  const fishLocked = !!(it.fishOnly && !owned);   // 낚시 전용 미보유 → 상점 구매 불가(획득처 안내만)
+  const locked = !!(a && !a.ok) || fishLocked;
   const disp = AVATAR_CATS.includes(cat) ? miniPart(cat,it)
     : it.e!==undefined ? (it.e||'✕')
     : (cat==='nametag' ? `<span style="${nametagStyle({nametag:it.id})}">가나</span>`
     : `<span class="tr-${r}" style="${titleStyleOf(it)}">[${escapeHtml(it.name)}]</span>`);
-  const reqBadge = it.ach ? `<div class="si-req ${owned||(a&&a.ok)?'met':'locked'}">🎯 ${escapeHtml(achShort(it.ach))}${owned?' ✓':(a&&a.prog!=='미달'?` <b>${escapeHtml(a.prog)}</b>`:'')}</div>` : '';
+  const reqBadge = it.ach ? `<div class="si-req ${owned||(a&&a.ok)?'met':'locked'}">🎯 ${escapeHtml(achShort(it.ach))}${owned?' ✓':(a&&a.prog!=='미달'?` <b>${escapeHtml(a.prog)}</b>`:'')}</div>`
+    : (fishLocked ? `<div class="si-req locked">🎣 낚시터에서 획득가능</div>` : '');
   const perkBadge = it.perk ? `<div class="si-perk">🐾 ${escapeHtml(perkDesc(it.perk))}</div>`
     : it.freeShop ? `<div class="si-perk">👑 착용 시 모든 상점 아이템 무료</div>` : '';
-  const freeNow = !owned && !a && it.price>0 && hasFreeShop(emp);
-  const btnLabel = eq?'✓ 착용중':owned?'착용하기':locked?'🔒 조건 미달':a?'🎁 무료 획득':(it.price===0?'착용':(freeNow?'🆓 무료':'🪙 '+it.price));
+  const freeNow = !owned && !a && !fishLocked && it.price>0 && hasFreeShop(emp);
+  const btnLabel = eq?'✓ 착용중':owned?'착용하기':fishLocked?'🎣 낚시터에서':locked?'🔒 조건 미달':a?'🎁 무료 획득':(it.price===0?'착용':(freeNow?'🆓 무료':'🪙 '+it.price));
   return `<div class="shop-item ${eq?'equipped':''} ${locked?'locked':''}" style="--rar:${RARITY[r]}" onmouseenter="previewEq('${cat}','${it.id}');showItemTip(event,'${cat}','${it.id}')" onmousemove="moveItemTip(event)" onmouseleave="clearPreview();hideItemTip()">
     <div class="si-rar">${RARITY_KO[r]}</div>
     <div class="si-disp">${disp}</div>
@@ -1984,7 +1987,7 @@ function shopCard(cat,it,emp){
 }
 // 성별 전용 아이템(gender:'m'/'f')은 해당 성별로 설정했을 때만 노출. 미설정 시 기본 남자('m').
 function genderOK(emp,it){ if(!it.gender) return true; return it.gender===((gs(emp).gender)||'m'); }
-function shopSection(cat,label,emp){ const canoff=['hat','pet','cape','gloves','beard'].includes(cat); const list=GAME_ITEMS[cat].filter(it=>(!it.fishOnly||owns(emp,cat,it.id))&&genderOK(emp,it)); return `<div class="card"><div class="card-head"><h3>${label}</h3>${canoff?`<button class="btn" onclick="unequipPart('${cat}')">해제</button>`:''}</div><div class="shop-grid">${list.map(it=>shopCard(cat,it,emp)).join('')}</div></div>`; }
+function shopSection(cat,label,emp){ const canoff=['hat','pet','cape','gloves','beard'].includes(cat); const list=GAME_ITEMS[cat].filter(it=>(cat==='title'||!it.fishOnly||owns(emp,cat,it.id))&&genderOK(emp,it)); return `<div class="card"><div class="card-head"><h3>${label}</h3>${canoff?`<button class="btn" onclick="unequipPart('${cat}')">해제</button>`:''}</div><div class="shop-grid">${list.map(it=>shopCard(cat,it,emp)).join('')}</div></div>`; }
 function renderGame(){
   const opts=EMPLOYEES.map(e=>`<option ${e===gameMe?'selected':''}>${e}</option>`).join('');
   let body;
