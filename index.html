@@ -250,6 +250,13 @@
   .ab-svg svg{display:block}
   .ab-facex{position:absolute; top:27%; left:0; right:0; text-align:center; font-size:30px; line-height:1;
     filter:drop-shadow(0 1px 1px rgba(0,0,0,.2)); pointer-events:none}
+  /* 랭킹·MVP 미니 아바타 (전신 캐릭터 축소) */
+  .av-mini{position:relative; overflow:hidden; flex:0 0 auto; margin:0 auto}
+  .av-mini-in{position:absolute; top:0; left:0; transform-origin:top left}
+  .av-mini .avatar-big{margin:0}
+  .av-mini .ab-sparkle{display:none}
+  .rank-av{margin:6px auto 3px; display:flex; justify-content:center}
+  .mvp-char{display:flex; justify-content:center; margin:8px 0 4px}
   .pt-sw{display:inline-block; width:30px; height:30px; border-radius:50%; border:2px solid #fff; box-shadow:0 0 0 1px rgba(0,0,0,.15)}
   .pt-sw.sq{border-radius:8px}
   .pt-x{font-size:22px; color:#b8bcc4; font-weight:800}
@@ -1794,7 +1801,9 @@ function showItemTip(e,cat,id){ let t=document.getElementById('itemTip'); if(!t)
 function moveItemTip(e){ const t=document.getElementById('itemTip'); if(!t||t.style.display!=='block') return; const pad=16, w=t.offsetWidth, h=t.offsetHeight; let x=e.clientX+pad, y=e.clientY+pad; if(x+w>window.innerWidth-8) x=e.clientX-w-pad; if(y+h>window.innerHeight-8) y=e.clientY-h-pad; if(x<8)x=8; if(y<8)y=8; t.style.left=x+'px'; t.style.top=y+'px'; }
 function hideItemTip(){ const t=document.getElementById('itemTip'); if(t) t.style.display='none'; }
 // 랭킹 등 이름 표시(타이틀+얼굴+네임택 색)
-function rankNameHTML(emp){ const eq=(GAME[emp]||{}).equipped||{}; const f=partE('face',eq.face), t=itemById('title',eq.title); return `${f?`<span class="r-face">${f}</span>`:''}${t?`<span class="r-title tr-${t.rarity}" style="${titleStyleOf(t)}">[${escapeHtml(t.name)}]</span>`:''}<span style="${nametagStyle(eq)}">${escapeHtml(emp)}</span>`; }
+function rankNameHTML(emp, noFace){ const eq=(GAME[emp]||{}).equipped||{}; const f=noFace?'':partE('face',eq.face), t=itemById('title',eq.title); return `${f?`<span class="r-face">${f}</span>`:''}${t?`<span class="r-title tr-${t.rarity}" style="${titleStyleOf(t)}">[${escapeHtml(t.name)}]</span>`:''}<span style="${nametagStyle(eq)}">${escapeHtml(emp)}</span>`; }
+// 랭킹·MVP용 미니 전신 아바타(캐릭터+꾸미기 전부) — 122x150 원본을 w px로 축소. 게임 미참여 직원도 기본 캐릭터 렌더.
+function avatarMini(emp, w){ const g=GAME[emp]||{}; const eq=g.equipped||{}; const s=w/122; return `<div class="av-mini" style="width:${w}px;height:${Math.round(150*s)}px"><div class="av-mini-in" style="transform:scale(${s.toFixed(3)})">${avatarBig(eq, g.gender)}</div></div>`; }
 // 팀 공유 클라우드 = {players:GAME, vocEdit, vocPraise, vocComment, dutyOver} 통합 블롭 (백엔드는 game 블롭을 그대로 저장/반환)
 function cloudBlob(){ return { _v:2, players:GAME, vocEdit:VOCEDIT, vocPraise:VOCPRAISE, vocComment:VOCCOMMENT, dutyOver:DUTYOVER }; }
 // 변경된 항목만 patch로 전송 → 서버가 잠금+병합(동시편집 안전, 경량)
@@ -2189,7 +2198,8 @@ function renderOverview(){
         <div class="mvp-flash"></div><div class="mvp-confetti" id="mvpConfetti"></div>
         <div class="hl-ic">🏆</div>
         <div class="hl-lab">${periodWord} ${NIGHT?'야간 ':''}MVP</div>
-        <div class="hl-big">${mvp?escapeHtml(mvp.emp):'-'}</div>
+        ${mvp?`<div class="mvp-char">${avatarMini(mvp.emp,78)}</div>`:''}
+        <div class="hl-big">${mvp?rankNameHTML(mvp.emp,true):'-'}</div>
         ${mvp?`<div class="mvp-proc" onclick="showDoneDetail('emp','${mvp.emp}')"><b>${mvp.total}</b><small>건 처리</small><span class="mvp-proc-hint">🔎 상세 보기</span></div>`:`<div class="ov-delta flat"><span>데이터 없음</span></div>`}
       </div>
       <div class="hl-card mint${respAgg.cnt?' clickable':''}"${respAgg.cnt?' onclick="showRespDetail()" title="클릭 → 건별 응답시간 상세(정렬)"':''}>
@@ -2227,10 +2237,10 @@ function renderOverview(){
 
     <div class="grid2">
       <div class="card light-rank"><div class="card-head"><h3>😇 직원 랭킹 <span class="rank-sub">🍭 천국의 명단</span></h3><span class="hint">${viewLabel} 처리량 TOP</span></div>
-        <div class="rank-row">${empRows.slice(0,5).map((r,i)=>`<div class="rank-item light ${i<3?'top':''}"${i<3?` style="animation-delay:${(i*0.4).toFixed(2)}s"`:''}><div class="rank-medal">${['🥇','🥈','🥉','🏅','🏅'][i]||'🏅'}</div><div class="rank-name">${rankNameHTML(r.emp)}</div><div class="rank-val">${r.total}건</div></div>`).join('')}</div>
+        <div class="rank-row">${empRows.slice(0,5).map((r,i)=>`<div class="rank-item light ${i<3?'top':''}"${i<3?` style="animation-delay:${(i*0.4).toFixed(2)}s"`:''}><div class="rank-medal">${['🥇','🥈','🥉','🏅','🏅'][i]||'🏅'}</div><div class="rank-av">${avatarMini(r.emp,52)}</div><div class="rank-name">${rankNameHTML(r.emp,true)}</div><div class="rank-val">${r.total}건</div></div>`).join('')}</div>
       </div>
       <div class="card dark-rank"><div class="card-head"><h3>⚡ 누락 랭킹 <span class="rank-sub">💀 어둠의 명단</span></h3><span class="hint">이번 달 누적 · 클릭 → 상세 · 매월 1일 초기화</span></div>
-        <div class="rank-row">${missRows.length?missRows.map((r,i)=>`<div class="rank-item dark ${i===0?'worst':''}" onclick="showMissDetail('${escapeHtml(r[0])}')" style="cursor:pointer" title="🔎 누락 건 상세 보기"><div class="rank-medal">${['💀','☠️','⚰️','🦇','👻'][i]||'🕸️'}</div><div class="rank-name">${escapeHtml(r[0])}</div><div class="rank-val">${r[1]}건 누락 🔎</div></div>`).join(''):'<div class="empty-note" style="color:#b8a8d8">누락 없음 — 평화롭습니다 🕊️</div>'}</div>
+        <div class="rank-row">${missRows.length?missRows.map((r,i)=>`<div class="rank-item dark ${i===0?'worst':''}" onclick="showMissDetail('${escapeHtml(r[0])}')" style="cursor:pointer" title="🔎 누락 건 상세 보기"><div class="rank-medal">${['💀','☠️','⚰️','🦇','👻'][i]||'🕸️'}</div><div class="rank-av">${avatarMini(r[0],52)}</div><div class="rank-name">${rankNameHTML(r[0],true)}</div><div class="rank-val">${r[1]}건 누락 🔎</div></div>`).join(''):'<div class="empty-note" style="color:#b8a8d8">누락 없음 — 평화롭습니다 🕊️</div>'}</div>
       </div>
     </div>
 
