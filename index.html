@@ -62,11 +62,13 @@
   :root[data-theme="dark"] .hl-card.mint .hl-big{color:#4fe07a}
   /* 다크: 천국(직원) 랭킹은 밝은 카드(반짝임 유지) → 글자를 어둡게 해 가독성 확보 */
   :root[data-theme="dark"] .rank-item.light{background:#ffffff; border-color:#e6eeff}
-  :root[data-theme="dark"] .light-rank .card-head h3,
+  /* 흰 랭킹 항목 위 → 어둡게 */
   :root[data-theme="dark"] .light-rank .rank-name{color:#1d1d1f}
-  :root[data-theme="dark"] .light-rank .hint,
   :root[data-theme="dark"] .light-rank .rank-medal,
   :root[data-theme="dark"] .light-rank .rank-val{color:#5a5a5f}
+  /* 어두운 카드 배경 위 제목·힌트 → 밝게 */
+  :root[data-theme="dark"] .light-rank .card-head h3{color:#f2f2f7}
+  :root[data-theme="dark"] .light-rank .hint{color:#a0a0a6}
   *{box-sizing:border-box;margin:0;padding:0}
   html{-webkit-text-size-adjust:100%}
   body{
