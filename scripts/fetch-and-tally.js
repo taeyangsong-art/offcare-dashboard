@@ -246,7 +246,7 @@ async function tallyInto(msgs, ch, counts, pending, done, opts) {
 //  · 확인 이모지 없는 요청 → watch에 담고 매 실행 lastSeen 갱신
 //  · 이전에 watch에 있던(=확인 없던) 요청에 확인이 붙으면 → 응답시각 ≈ (lastSeen, now) 중간값 → 응답분 확정
 //  · 처음 볼 때 이미 확인됨(측정 불가)·2일 넘게 무응답 → 제외  ⇒ 자연히 '배포 이후' 건만 측정 (해상도 ±폴링간격)
-function trackResp(data, msgs) {
+function trackResp(data, msgs, ch) {
   data.resp = data.resp || { watch: {}, days: {} };
   const W = data.resp.watch, DD = data.resp.days;
   const nowSec = now.getTime() / 1000;
@@ -263,13 +263,18 @@ function trackResp(data, msgs) {
     const responded = hasCat || hasEmp || hasConfirm || hasExtern;   // 담당자가 손댐(확인/완료/카테고리/외주)
     if (responded) {
       if (W[key]) {                                    // 직전 실행까지 '확인 없음' → 이번에 확인됨 = 측정 가능
+        // 카테고리 판정(tallyInto 규칙). 응답시간은 '순수 AS' 적재 → 명변·메뉴등록·배달은 제외.
+        let emojiCat = null;
+        for (const n of names) { if (catMap[n] && catMap[n] !== 'voc') { emojiCat = catMap[n]; break; } }
+        const catKey = names.includes('원격외주') ? 'extern' : (emojiCat || (ch && ch.defaultCat) || 'as');
+        if (catKey === 'transfer' || catKey === 'menu' || catKey === 'delivery') { delete W[key]; continue; }
         const mid = (W[key].lastSeen + nowSec) / 2;    // 확인은 (lastSeen, now) 사이에 발생 → 중간값 추정
         const respMin = Math.max(0, (mid - postSec) / 60);
         const day = kstDate(m.ts);
         DD[day] = DD[day] || { cnt: 0, sumMin: 0, over: 0, items: [] };
         DD[day].items = DD[day].items || [];
         DD[day].cnt++; DD[day].sumMin += respMin; if (respMin > RESP_DELAY_MIN) DD[day].over++;
-        // 건별 상세(올라온시간·응답분·상호·담당) 저장 — 상세 모달용
+        // 건별 상세(올라온시간·응답분·상호·담당·카테고리) 저장 — 상세 모달용
         const text = m.text || '';
         let store = (((text.match(/상호\s*[:：]?\s*(.+)/) || [])[1]) || ((text.match(/매장명\s*[:：]?\s*(.+)/) || [])[1]) || '').trim().split('/')[0].trim();
         if (store.length > 30) store = store.slice(0, 30);
@@ -277,7 +282,7 @@ function trackResp(data, msgs) {
         let who = '';
         for (const n of names) { const pm = n.match(/^원격(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)$/); if (pm) { who = personMap[pm[1]]; break; } }
         if (!who) for (const n of names) { const cm = n.match(/^(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)(_확인.*)?$/); if (cm) { who = personMap[cm[1]]; break; } }
-        DD[day].items.push({ hm: kstHM(m.ts), min: Math.round(respMin * 10) / 10, store, biz, who });
+        DD[day].items.push({ hm: kstHM(m.ts), min: Math.round(respMin * 10) / 10, store, biz, who, cat: catKey });
         delete W[key];
       }
       // 처음 볼 때 이미 확인됨 → 언제 찍혔는지 알 수 없어 제외
@@ -423,7 +428,7 @@ async function tallyVoc(msgs, voc, channelId, opts) {
       try { msgs = await fetchAllRange(ch.id, b.oldest, b.latestBound); }
       catch (e) { console.error(`  ⚠ [${ch.label} ${dstr}] 읽기 실패(${e.message}) — 건너뜀`); continue; }
       const r = await tallyInto(msgs, ch, counts, pending, done, { priorNotes });
-      if (dstr === targetDate) trackResp(data, msgs);   // 오늘 인입 건만 응답시간 폴링 추적
+      if (dstr === targetDate) trackResp(data, msgs, ch);   // 오늘 인입 건만 응답시간 폴링 추적
       completed += r.completed; externCount += r.externCount; dupTotal += r.dup; if (r.latest > latest) latest = r.latest;
     }
     pending.sort((a, b) => (b.time || '').localeCompare(a.time || ''));
