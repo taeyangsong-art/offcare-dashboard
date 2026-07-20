@@ -1337,7 +1337,15 @@ function renderNav(){
     return btn;
   }).join("");
 }
-function selectCat(k){ if(k==='overview'){ resetOverviewPeriod(); celebrateMvp=true; ovShift='all'; } if(k==='voc') resetVocPeriod(); if(k==='game-fish') fishRoom=null; if(k==='teamgoal') teamGoalRef=today(); activeCat=k; renderNav(); renderMain(); window.scrollTo(0,0); }
+const VOC_MONTHLY_PW='3395';   // VOC Monthly 접속 비밀번호
+function selectCat(k){
+  if(k==='voc-monthly' && sessionStorage.getItem('voc_monthly_ok')!=='1'){   // 세션당 1회 비밀번호 확인
+    const pw=prompt('🔒 VOC Monthly 접속 비밀번호를 입력하세요');
+    if(pw===null) return;                                    // 취소 → 이동 안 함
+    if(pw!==VOC_MONTHLY_PW){ alert('비밀번호가 틀렸습니다.'); return; }
+    sessionStorage.setItem('voc_monthly_ok','1');
+  }
+  if(k==='overview'){ resetOverviewPeriod(); celebrateMvp=true; ovShift='all'; } if(k==='voc') resetVocPeriod(); if(k==='game-fish') fishRoom=null; if(k==='teamgoal') teamGoalRef=today(); activeCat=k; renderNav(); renderMain(); window.scrollTo(0,0); }
 
 /* ================= Main dispatch ================= */
 function renderMain(){
