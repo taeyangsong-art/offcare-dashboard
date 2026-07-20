@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1022,
+  "version": 1023,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -34244,7 +34244,7 @@ window.SLACK_DATA = {
             "emp": "",
             "autoStatus": "",
             "autoEmp": "",
-            "autoNote": "",
+            "autoNote": "토스장애이슈 CX일괄처리예정 토스장애이슈 CX일괄처리예정",
             "doneDate": ""
           },
           {
