@@ -1870,7 +1870,7 @@ function hideItemTip(){ const t=document.getElementById('itemTip'); if(t) t.styl
 function rankNameHTML(emp, noFace){ const eq=(GAME[emp]||{}).equipped||{}; const f=noFace?'':partE('face',eq.face), t=itemById('title',eq.title); return `${t?`<div class="r-title tr-${t.rarity}" style="${titleStyleOf(t)}">[${escapeHtml(t.name)}]</div>`:''}<div class="r-nm">${f?`<span class="r-face">${f}</span>`:''}<span style="${nametagStyle(eq)}">${escapeHtml(emp)}</span></div>`; }
 // 랭킹·MVP용 미니 전신 아바타(캐릭터+꾸미기 전부) — 122x150 원본을 w px로 축소. 게임 미참여 직원도 기본 캐릭터 렌더.
 function avatarMini(emp, w){ const g=GAME[emp]||{}; const eq=g.equipped||{}; const s=w/122; return `<div class="av-mini" style="width:${w}px;height:${Math.round(150*s)}px"><div class="av-mini-in" style="transform:scale(${s.toFixed(3)})">${avatarBig(eq, g.gender)}</div></div>`; }
-// 팀 공유 클라우드 = {players:GAME, vocEdit, vocPraise, vocComment, dutyOver} 통합 블롭 (백엔드는 game 블롭을 그대로 저장/반환)
+// 팀 공유 클라우드 = {players:GAME, vocEdit, vocPraise, vocComment, dutyOver, fishWait} 통합 블롭 (백엔드는 game 블롭을 그대로 저장/반환)
 function cloudBlob(){ return { _v:2, players:GAME, vocEdit:VOCEDIT, vocPraise:VOCPRAISE, vocComment:VOCCOMMENT, dutyOver:DUTYOVER }; }
 // 변경된 항목만 patch로 전송 → 서버가 잠금+병합(동시편집 안전, 경량)
 function pushPatch(patch){ if(!GAME_API) return; fetch(GAME_API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({patch})}).catch(()=>{}); }
@@ -1896,6 +1896,7 @@ function loadCloud(cb){
         const mR=mergeCloudDict(VOCPRAISE,b.vocPraise); VOCPRAISE=mR.merged;   if(Object.keys(mR.restore).length) rp.vocPraise=mR.restore;
         const mC=mergeCloudDict(VOCCOMMENT,b.vocComment);VOCCOMMENT=mC.merged; if(Object.keys(mC.restore).length) rp.vocComment=mC.restore;
         const mD=mergeCloudDict(DUTYOVER,b.dutyOver);   DUTYOVER=mD.merged;    if(Object.keys(mD.restore).length) rp.dutyOver=mD.restore;
+        if(b.fishWait!==undefined){ FISHWAIT=b.fishWait||{}; save(LS_FISHWAIT,FISHWAIT); }   // 낚시 대기: 서버 값이 정답(로컬 클리어로 우회 방지)
         if(Object.keys(rp).length) pushPatch(rp);      // 로컬에만 있던 데이터를 클라우드에 복원
       } else { GAME=mergeCloudDict(GAME,b).merged; }   // 구 포맷(게임 데이터만)
       save(LS_GAME,GAME); save(LS_VOCEDIT,VOCEDIT); save(LS_VOCPRAISE,VOCPRAISE); save(LS_VOCCOMMENT,VOCCOMMENT); save(LS_DUTYOVER,DUTYOVER);
@@ -2062,8 +2063,8 @@ let FISHWAIT = load(LS_FISHWAIT, {});   // { "emp|spot": castAtMs }
 let fishTick=null;
 function fishWaitKey(emp,spot){ return emp+'|'+spot; }
 function fishPending(emp,spot){ const t=FISHWAIT[fishWaitKey(emp,spot)]; if(!t) return null; const remain=(FISH_WAIT[spot]||0)-(Date.now()-t); return {castAt:t, remain:Math.max(0,remain), ready:remain<=0}; }
-function setFishCast(emp,spot){ FISHWAIT[fishWaitKey(emp,spot)]=Date.now(); save(LS_FISHWAIT,FISHWAIT); }
-function clearFishCast(emp,spot){ delete FISHWAIT[fishWaitKey(emp,spot)]; save(LS_FISHWAIT,FISHWAIT); }
+function setFishCast(emp,spot){ const k=fishWaitKey(emp,spot); FISHWAIT[k]=Date.now(); save(LS_FISHWAIT,FISHWAIT); pushPatch({fishWait:{[k]:FISHWAIT[k]}}); }   // 팀 공유(서버)
+function clearFishCast(emp,spot){ const k=fishWaitKey(emp,spot); delete FISHWAIT[k]; save(LS_FISHWAIT,FISHWAIT); pushPatch({fishWait:{[k]:null}}); }   // 서버에서도 삭제
 function fmtFishRemain(ms){ const s=Math.ceil(ms/1000), m=Math.floor(s/60), ss=s%60; return (m>0?m+'분 ':'')+String(ss).padStart(2,'0')+'초'; }
 function stopFishTick(){ if(fishTick){ clearInterval(fishTick); fishTick=null; } }
 function startFishTick(){ stopFishTick(); fishTick=setInterval(updateFishTimer,1000); }
