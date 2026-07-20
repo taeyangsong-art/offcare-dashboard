@@ -248,6 +248,9 @@
   .rank-medal{font-size:22px; font-weight:800; color:var(--gray)}
   .rank-name{font-size:15px; font-weight:700; margin-top:4px; color:var(--ink)}
   .rank-val{font-size:13px; color:var(--gray); margin-top:2px; font-weight:600}
+  /* 랭킹·MVP 이름: 타이틀(위) / 이름(아래) 세로 배치 */
+  .rank-name .r-title, .hl-big .r-title{display:block; margin:0 0 2px; line-height:1.25; white-space:normal; word-break:keep-all}
+  .rank-name .r-nm, .hl-big .r-nm{display:block; line-height:1.2; word-break:keep-all}
   /* 랭킹 테마 — 천국(밝음) vs 어둠 */
   .rank-sub{font-size:12px; font-weight:800; margin-left:6px}
   .light-rank{background:linear-gradient(165deg,#eef5ff,#fff5fb); border:1px solid #dbe8ff}
@@ -1860,7 +1863,7 @@ function showItemTip(e,cat,id){ let t=document.getElementById('itemTip'); if(!t)
 function moveItemTip(e){ const t=document.getElementById('itemTip'); if(!t||t.style.display!=='block') return; const pad=16, w=t.offsetWidth, h=t.offsetHeight; let x=e.clientX+pad, y=e.clientY+pad; if(x+w>window.innerWidth-8) x=e.clientX-w-pad; if(y+h>window.innerHeight-8) y=e.clientY-h-pad; if(x<8)x=8; if(y<8)y=8; t.style.left=x+'px'; t.style.top=y+'px'; }
 function hideItemTip(){ const t=document.getElementById('itemTip'); if(t) t.style.display='none'; }
 // 랭킹 등 이름 표시(타이틀+얼굴+네임택 색)
-function rankNameHTML(emp, noFace){ const eq=(GAME[emp]||{}).equipped||{}; const f=noFace?'':partE('face',eq.face), t=itemById('title',eq.title); return `${f?`<span class="r-face">${f}</span>`:''}${t?`<span class="r-title tr-${t.rarity}" style="${titleStyleOf(t)}">[${escapeHtml(t.name)}]</span>`:''}<span style="${nametagStyle(eq)}">${escapeHtml(emp)}</span>`; }
+function rankNameHTML(emp, noFace){ const eq=(GAME[emp]||{}).equipped||{}; const f=noFace?'':partE('face',eq.face), t=itemById('title',eq.title); return `${t?`<div class="r-title tr-${t.rarity}" style="${titleStyleOf(t)}">[${escapeHtml(t.name)}]</div>`:''}<div class="r-nm">${f?`<span class="r-face">${f}</span>`:''}<span style="${nametagStyle(eq)}">${escapeHtml(emp)}</span></div>`; }
 // 랭킹·MVP용 미니 전신 아바타(캐릭터+꾸미기 전부) — 122x150 원본을 w px로 축소. 게임 미참여 직원도 기본 캐릭터 렌더.
 function avatarMini(emp, w){ const g=GAME[emp]||{}; const eq=g.equipped||{}; const s=w/122; return `<div class="av-mini" style="width:${w}px;height:${Math.round(150*s)}px"><div class="av-mini-in" style="transform:scale(${s.toFixed(3)})">${avatarBig(eq, g.gender)}</div></div>`; }
 // 팀 공유 클라우드 = {players:GAME, vocEdit, vocPraise, vocComment, dutyOver} 통합 블롭 (백엔드는 game 블롭을 그대로 저장/반환)
