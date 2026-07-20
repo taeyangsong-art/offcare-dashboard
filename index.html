@@ -2087,7 +2087,8 @@ const FISH = {
 };
 let fishBusy=false;
 // 낚시 대기(쿨다운): 캐스팅 후 초급 3분 / 중급 10분 / 고급 30분 지나야 결과 확인. 브라우저에 저장.
-const FISH_WAIT = {low:3*60*1000, mid:10*60*1000, high:30*60*1000};
+const FISH_WAIT = {low:0, mid:30*1000, high:60*1000};
+function fishWaitLabel(spot){ const ms=FISH_WAIT[spot]||0; if(ms<=0) return '즉시'; const s=Math.round(ms/1000); return s<60?s+'초':Math.round(s/60)+'분'; }
 const LS_FISHWAIT = "opcare_fishwait_v1";
 let FISHWAIT = load(LS_FISHWAIT, {});   // { "emp|spot": castAtMs }
 let fishTick=null;
@@ -2183,7 +2184,14 @@ async function castFish(spot){
   const cg=fishCastGate(emp,f); if(!cg.ok){ alert(cg.msg); return; }
   if(empAvail(emp)<f.cost){ alert('🪙 코인이 부족해요! (캐스트 '+f.cost+'코인)'); return; }
   if(!(await requireAuth(emp))) return;   // 코인 소모 → 본인 인증
-  addSpent(emp, f.cost); setFishCast(emp,spot); saveGame();
+  addSpent(emp, f.cost); saveGame();
+  if((FISH_WAIT[spot]||0)<=0){   // 대기 0(초급) → 던지자마자 바로 결과
+    fishBusy=true; showFishing(f);
+    const res=resolveLoot(emp, rollLootPerk(f.loot, activePerk(emp))); saveGame();
+    setTimeout(()=>{ showFishResult(res); renderMain(); fishBusy=false; }, 1200);
+    return;
+  }
+  setFishCast(emp,spot); saveGame();
   showFishCastDone(spot); renderMain();
 }
 function showFishing(f){
@@ -2192,9 +2200,9 @@ function showFishing(f){
 }
 // 캐스팅 직후 안내(대기시간 후 결과 확인)
 function showFishCastDone(spot){
-  const f=FISH[spot], mins=Math.round(FISH_WAIT[spot]/60000);
+  const f=FISH[spot], wl=fishWaitLabel(spot);
   let el=document.getElementById('fishPop'); if(!el){ el=document.createElement('div'); el.id='fishPop'; el.className='duty-pop-overlay'; document.body.appendChild(el); }
-  el.innerHTML=`<div class="fish-pop reveal"><div class="fp-emoji">🎣</div><div class="fp-big">낚싯대를 던졌어요!</div><div class="fp-sub">${escapeHtml(f.name)} · <b>${mins}분</b> 뒤에 입질이 와요.<br>시간이 지나면 <b>‘결과 확인’</b> 버튼이 열려요 (창을 닫아도 유지)</div><button class="duty-pop-btn" onclick="document.getElementById('fishPop').remove()">확인 🎣</button></div>`;
+  el.innerHTML=`<div class="fish-pop reveal"><div class="fp-emoji">🎣</div><div class="fp-big">낚싯대를 던졌어요!</div><div class="fp-sub">${escapeHtml(f.name)} · <b>${wl}</b> 뒤에 입질이 와요.<br>시간이 지나면 <b>‘결과 확인’</b> 버튼이 열려요 (창을 닫아도 유지)</div><button class="duty-pop-btn" onclick="document.getElementById('fishPop').remove()">확인 🎣</button></div>`;
 }
 function showFishResult(res){
   const el=document.getElementById('fishPop'); if(!el) return; const col=res.rarity?RARITY[res.rarity]:'#8a94a6';
@@ -2244,13 +2252,13 @@ function renderGameFish(){
 function renderFishRoom(spot, emp){
   const f=FISH[spot], od=fishOdds(spot), items=fishItemPreview(spot), cant=empAvail(emp)<f.cost;
   const cg=fishCastGate(emp,f), castLocked=!cg.ok;
-  const pend=fishPending(emp,spot), waitMin=Math.round(FISH_WAIT[spot]/60000);
+  const pend=fishPending(emp,spot), waitLbl=fishWaitLabel(spot);
   let castBtn;
   if(pend && !pend.ready){ castBtn=`<button class="fr-cast" disabled>🎣 입질 대기 중... ${fmtFishRemain(pend.remain)}</button>`; }
   else if(pend && pend.ready){ castBtn=`<button class="fr-cast ready" onclick="castFish('${spot}')">✨ 입질! 결과 확인하기</button>`; }
   else { castBtn=`<button class="fr-cast" ${(cant||castLocked)?'disabled':''} onclick="castFish('${spot}')">${castLocked?('🔒 '+cg.short):(cant?'🪙 코인이 부족해요':`🎣 낚싯대 던지기 (🪙${f.cost})`)}</button>`; }
   document.getElementById("main").innerHTML=`
-    <div class="page-head"><div><h2>${f.emoji} ${f.name}</h2><div class="sub">캐스트 🪙${f.cost} · ⏳ 대기 <b>${waitMin}분</b> · 보유 🪙<b>${empAvail(emp)}</b></div></div>
+    <div class="page-head"><div><h2>${f.emoji} ${f.name}</h2><div class="sub">캐스트 🪙${f.cost} · ⏳ 대기 <b>${waitLbl}</b> · 보유 🪙<b>${empAvail(emp)}</b></div></div>
       <div class="controls"><button class="btn" onclick="leaveFishRoom()">← 낚시터 목록</button></div></div>
     <div class="card fish-room fs-${spot}">
       <div class="fr-scene">
@@ -2262,7 +2270,7 @@ function renderFishRoom(spot, emp){
         <div class="fr-wave w1"></div><div class="fr-wave w2"></div><div class="fr-wave w3"></div>
       </div>
       ${castBtn}
-      <div class="fr-odds">🎁 아이템 <b>${od.item}%</b> · 🪙 코인 유지 <b>${od.coin}%</b> · 💰 코인 2배 획득 <b>${od.dbl}%</b> · 🐚 꽝 ${od.none}% · ⏳ 던진 뒤 <b>${waitMin}분</b> 후 결과</div>
+      <div class="fr-odds">🎁 아이템 <b>${od.item}%</b> · 🪙 코인 유지 <b>${od.coin}%</b> · 💰 코인 2배 획득 <b>${od.dbl}%</b> · 🐚 꽝 ${od.none}% · ⏳ ${(FISH_WAIT[spot]||0)<=0?'<b>즉시 결과</b>':`던진 뒤 <b>${waitLbl}</b> 후 결과`}</div>
     </div>
     <div class="card">
       <div class="card-head"><h3>🎁 이 낚시터에서 낚을 수 있는 것</h3><span class="hint">${items.length}종${spot==='high'?' · 신화 전용!':''}</span></div>
