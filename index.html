@@ -2947,6 +2947,8 @@ function empTeamMap(){ const m={}; EMPLOYEES.forEach(e=>{ m[e]='원격팀'; }); 
 function allPraiseTeams(){ return [...new Set(Object.values(empTeamMap()))].sort(); }
 function teamMembers(team){ const m=empTeamMap(); return [...new Set(Object.keys(m).filter(n=>!team||m[n]===team))].sort(); }
 function setPraiseTeam(v){ praiseTeamFilter=v; rerenderVoc(); }
+let praiseAggTeam='';   // 칭찬·고점 직원별 집계 팀 필터(독립)
+function setPraiseAggTeam(v){ praiseAggTeam=v; rerenderVoc(); }
 function deleteVocPraise(key){
   if(!confirm('이 칭찬 건을 목록에서 삭제할까요? (나중에 복원 가능)')) return;
   if(!VOCPRAISE[key]) VOCPRAISE[key]={};
@@ -2998,7 +3000,9 @@ function renderVocMonthly(){
   const vPraiseList = staffPraises(v.praises);   // 직원칭찬(직원지정 or 응대 키워드)만
   const byPraiseEmp={}; vPraiseList.forEach(p=>{ const ov=VOCPRAISE[vocKey(p)]; const emp=(ov&&ov.emp)||p.emp; if(emp) byPraiseEmp[emp]=(byPraiseEmp[emp]||0)+1; });
   const vpCount=vPraiseList.length;
-  const praiseEmpRows=Object.entries(byPraiseEmp).sort((a,b)=>b[1]-a[1]);
+  const praiseEmpRowsAll=Object.entries(byPraiseEmp).sort((a,b)=>b[1]-a[1]);
+  const teamOfAgg=empTeamMap();
+  const praiseEmpRows=praiseAggTeam?praiseEmpRowsAll.filter(([n])=>teamOfAgg[n]===praiseAggTeam):praiseEmpRowsAll;   // 팀 필터
   const peMax=Math.max(1,...praiseEmpRows.map(r=>r[1]));
   const comment=VOCCOMMENT[mkey]||'';
 
@@ -3106,8 +3110,14 @@ function renderVocMonthly(){
       ${praiseCardsHTML(v.praises.filter(isStaffPraise))}
     </div>
     <div class="card">
-      <div class="card-head"><h3>👏 칭찬 · 고점 (직원별 집계)</h3><span class="hint">고점(설치 5·추천 10 만점) ${v.high.install+v.high.nps}건 · 칭찬/확인 ${vpCount}건</span></div>
-      ${praiseEmpRows.length?`<div class="note" style="margin-bottom:10px;font-size:13px;color:var(--gray)">이름 클릭 → 칭찬받은 매장·내용 · 담당자/칭찬문구/수기지정 기준 (타팀 포함)</div>`+praiseEmpRows.map(([n,c])=>`<div class="bar-row praise-emp-row" data-emp="${escapeHtml(n)}" onclick="showStaffPraises(this.dataset.emp)" title="클릭 → 칭찬받은 매장·내용"><div class="bar-meta"><span class="nm">${escapeHtml(n)} <span class="pe-drill">🔎</span></span><span class="ct">${c}건</span></div><div class="bar-track"><div class="bar-fill" style="width:${c/peMax*100}%;background:#34c759"></div></div></div>`).join(''):'<div class="empty-note">담당 지정된 칭찬이 없습니다 — 위 카드에서 직원을 지정하세요</div>'}
+      <div class="card-head"><h3>👏 칭찬 · 고점 (직원별 집계)</h3>
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <span class="hint">고점(설치 5·추천 10 만점) ${v.high.install+v.high.nps}건 · 칭찬/확인 ${vpCount}건</span>
+          <select class="praise-teamfilter" onchange="setPraiseAggTeam(this.value)" title="팀 선택 → 해당 팀 직원만 표시">
+            <option value="">🏷️ 전체 팀</option>${allPraiseTeams().map(t=>`<option value="${escapeHtml(t)}"${t===praiseAggTeam?' selected':''}>${escapeHtml(t)}</option>`).join('')}
+          </select>
+        </div></div>
+      ${praiseEmpRows.length?`<div class="note" style="margin-bottom:10px;font-size:13px;color:var(--gray)">이름 클릭 → 칭찬받은 매장·내용 · 담당자/칭찬문구/수기지정 기준 (타팀 포함)</div>`+praiseEmpRows.map(([n,c])=>`<div class="bar-row praise-emp-row" data-emp="${escapeHtml(n)}" onclick="showStaffPraises(this.dataset.emp)" title="클릭 → 칭찬받은 매장·내용"><div class="bar-meta"><span class="nm">${escapeHtml(n)} <span class="pe-drill">🔎</span></span><span class="ct">${c}건</span></div><div class="bar-track"><div class="bar-fill" style="width:${c/peMax*100}%;background:#34c759"></div></div></div>`).join(''):`<div class="empty-note">${praiseAggTeam?`'${escapeHtml(praiseAggTeam)}' 팀 소속으로 지정된 칭찬 직원이 없습니다`:'담당 지정된 칭찬이 없습니다 — 위 카드에서 직원을 지정하세요'}</div>`}
     </div>
     <div class="card">
       <div class="card-head"><h3>📝 먼슬리 코멘트</h3>
