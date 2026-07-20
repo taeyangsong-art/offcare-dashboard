@@ -2158,7 +2158,7 @@ function resolveLoot(emp,out){ const g=gs(emp);
     if(out.dbl) return {emoji:'💰',big:'+'+n+' 코인',sub:'🎣 대박! 캐스트 비용 2배 획득!',cls:'coin',rarity:'epic'};
     const jackpot=n>=100, huge=n>=50, big=n>=25;
     return {emoji:jackpot?'💰':huge?'🤑':big?'💵':'🪙', big:'+'+n+' 코인',
-      sub:jackpot?'🎉 잭팟!!! 100코인 대박!!!':huge?'🌟 초대박! 엄청난 월척!':big?'월척! 대량 획득!':'코인 획득!',
+      sub:jackpot?'🎉 잭팟!!! 100코인 대박!!!':huge?'🌟 초대박! 엄청난 월척!':big?'월척! 대량 획득!':'코인 유지',
       cls:'coin', rarity:jackpot?'mythic':huge?'legendary':big?'epic':null}; }
   const it = out.id ? itemByIdAny(out.id) : pickItem(out.rar,out.fish,emp);
   if(!it){ addSpent(emp, -3); return {emoji:'🪙',big:'+3 코인',sub:'낚을 새 아이템이 없어 코인으로!',cls:'coin'}; }
