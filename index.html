@@ -4,6 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<script>
+/* 캐시 무력화: index.html은 URL(쿼리 포함)별로 캐시돼 ?v=240 같은 고정 링크가 옛 화면을 물고 있음.
+   → 탭당 1회, 유일한 cb 토큰을 붙여 최신 HTML을 강제로 새로 받는다(무한루프·반복 리로드 방지). */
+(function(){
+  try{
+    if(sessionStorage.getItem('__cb_done')) return;   // 이 탭에서 이미 갱신함 → 통과
+    sessionStorage.setItem('__cb_done','1');
+    var u=new URL(location.href);
+    u.searchParams.set('cb', Date.now().toString(36)); // 매 접속마다 유일값 → 새 캐시 키
+    location.replace(u.toString());                    // 히스토리 오염 없이 최신본으로 1회 이동
+  }catch(e){}
+})();
+</script>
 <title>원격파트 대시보드 · iShopCare</title>
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
