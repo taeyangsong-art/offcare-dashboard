@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1085,
+  "version": 1086,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -42033,7 +42033,7 @@ window.SLACK_DATA = {
           "req": "• 프론트 단말기가 계속 전원이 꺼져 확인 요청드립니다.",
           "hw": "",
           "urgent": true,
-          "note": ""
+          "note": "프린터 전원 어댑터 불량으로 대체품 접수 완료"
         },
         {
           "time": "22:00",
