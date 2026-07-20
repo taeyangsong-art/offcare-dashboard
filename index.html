@@ -2078,11 +2078,11 @@ function renderGame(){
 }
 /* ===== 🎣 낚시터 (가챠) ===== */
 const FISH = {
-  low:  {emoji:'🏞️', name:'초급 낚시터', cost:1,  entry:0,  desc:'누구나 · 아이템 10%(에픽 전문가 타이틀 포함!), 코인 15%, 꽝 60%, 코인손실 15%(-1코인=캐스트비용)',
+  low:  {emoji:'🏞️', name:'초급 낚시터', cost:1,  entry:0,  desc:'누구나 · 아이템 10%(에픽 전문가 타이틀 포함!), 코인 15%, 꽝 60%, 손실 15%(캐스트 비용만 소모)',
     loot:[ {w:600,t:'none'}, {w:150,t:'coin',big:true}, {w:150,t:'coin',min:-1,max:-1}, {w:50,t:'item',rar:['common'],fish:true}, {w:30,t:'item',rar:['rare'],fish:true}, {w:20,t:'item',id:'ft_wanderer'} ]},
-  mid:  {emoji:'⛵', name:'중급 낚시터', cost:3,  entry:0, reqLowItem:true, desc:'전문가 타이틀 획득 시 캐스팅 가능 · 아이템 3%(고래 타이틀 포함!), 코인 15%, 꽝 67%, 코인손실 15%(-3코인=캐스트비용)',
+  mid:  {emoji:'⛵', name:'중급 낚시터', cost:3,  entry:0, reqLowItem:true, desc:'전문가 타이틀 획득 시 캐스팅 가능 · 아이템 3%(고래 타이틀 포함!), 코인 15%, 꽝 67%, 손실 15%(캐스트 비용만 소모)',
     loot:[ {w:670,t:'none'}, {w:150,t:'coin',big:true}, {w:150,t:'coin',min:-3,max:-3}, {w:15,t:'item',rar:['rare'],fish:true}, {w:9,t:'item',rar:['epic'],fish:true}, {w:6,t:'item',id:'t_whale'} ]},
-  high: {emoji:'🌊', name:'고급 낚시터', cost:10, entry:0, reqItems:['pet:p_unicorn','pet:fp_shark'], desc:'중급에서 유니콘·상어 펫 획득 시 캐스팅 가능 · 신화 전용! 아이템 1%, 코인손실 15%(-10코인=캐스트비용) · 🌈 0.00001% 극악 확률로 [곽호영] 유일 타이틀!',
+  high: {emoji:'🌊', name:'고급 낚시터', cost:10, entry:0, reqItems:['pet:p_unicorn','pet:fp_shark'], desc:'중급에서 유니콘·상어 펫 획득 시 캐스팅 가능 · 신화 전용! 아이템 1%, 손실 15%(캐스트 비용만 소모) · 🌈 0.00001% 극악 확률로 [곽호영] 유일 타이틀!',
     loot:[ {w:690,t:'none'}, {w:150,t:'coin',big:true}, {w:150,t:'coin',min:-10,max:-10}, {w:6,t:'item',rar:['epic'],fish:true}, {w:3,t:'item',rar:['legendary'],fish:true}, {w:1,t:'item',rar:['mythic'],fish:true}, {w:0.0001,t:'item',id:'ft_captain'} ]},
 };
 let fishBusy=false;
@@ -2150,10 +2150,11 @@ const CAT_KO={title:'타이틀',nametag:'네임택',hat:'모자',pet:'펫',skin:
 function resolveLoot(emp,out){ const g=gs(emp);
   if(out.t==='none') return {emoji:'🐚',big:'꽝!',sub:'빈 낚싯대... 다음 기회에!',cls:'miss'};
   if(out.t==='coin'){ const perk=activePerk(emp); let n = out.big ? pickCoinAmount() : randInt(out.min,out.max);
-    if(n>=0) n=n+(perk.coin||0); else n=Math.round(n*(1-(perk.loss||0)));   // 펫: 코인 고정 추가 지급 / 손실↓
+    if(n<0){   // 손실 결과: 추가 차감 없음 — 던질 때 낸 캐스트 비용만 소모됨
+      return {emoji:'🎣',big:'꽝!',sub:'입질 실패... 캐스트 비용만 소모됐어요',cls:'bad'};
+    }
+    n=n+(perk.coin||0);   // 펫: 코인 고정 추가 지급
     addSpent(emp, -n);
-    if(n<0) return {emoji:'💸',big:n+' 코인',sub:'앗! 코인이 빠져나갔다...',cls:'bad'};
-    if(n===0) return {emoji:'🛡️',big:'손실 방어!',sub:'펫이 코인 손실을 막아줬어요!',cls:'miss'};
     const jackpot=n>=100, huge=n>=50, big=n>=25;
     return {emoji:jackpot?'💰':huge?'🤑':big?'💵':'🪙', big:'+'+n+' 코인',
       sub:jackpot?'🎉 잭팟!!! 100코인 대박!!!':huge?'🌟 초대박! 엄청난 월척!':big?'월척! 대량 획득!':'코인 획득!',
