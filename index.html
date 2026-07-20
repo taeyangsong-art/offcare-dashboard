@@ -1948,6 +1948,16 @@ async function adminResetPin(){
   if(r&&r.ok){ delete GAMEAUTH[emp.trim()]; save(LS_GAMEAUTH,GAMEAUTH); alert(`✅ ${emp} 님 PIN이 초기화됐어요.\n그 직원이 다음에 코인 쓸 때 새로 설정하면 됩니다.`); }
   else alert('초기화 실패: '+(r&&r.error==='bad_key'?'관리자 키가 틀렸어요':(r&&r.error)||''));
 }
+// 관리자: 전 직원 낚시 코인 롤백 — spentM(낚시 적립·사용 기록) 초기화 → 코인이 '이번 달 업무 기준'으로 재계산. 아이템/타이틀은 유지.
+function adminResetCoins(){
+  if(!confirm('⚠️ 전 직원의 코인을 롤백합니다.\n낚시로 적립된 코인이 사라지고, 코인은 이번 달 업무 처리 건수 기준으로 재계산됩니다.\n(획득한 아이템·타이틀은 그대로 유지)\n\n계속할까요?')) return;
+  const conf=prompt('되돌릴 수 없습니다. 초기화하려면 "코인초기화" 를 입력하세요.');
+  if(conf!=='코인초기화'){ alert('취소되었습니다.'); return; }
+  const patch={players:{}}; let n=0;
+  EMPLOYEES.forEach(e=>{ const g=GAME[e]; if(!g) return; g.spentM={}; g.spent=0; patch.players[e]=g; n++; });
+  save(LS_GAME,GAME); pushPatch(patch); renderGame();
+  alert(`✅ ${n}명 코인 롤백 완료. 이제 코인은 이번 달 업무 기준으로만 표시됩니다.`);
+}
 // 👑 유일 타이틀 [곽호영] 착용 시 능력: 모든 상점(코인) 아이템 무료
 function hasFreeShop(emp){ const t=itemById('title',(gs(emp).equipped||{}).title); return !!(t&&t.freeShop); }
 async function buyOrEquip(cat,id){
@@ -2026,7 +2036,7 @@ function renderGame(){
   }
   document.getElementById("main").innerHTML=`
     <div class="page-head"><div><h2>🎮 원격 상점</h2><div class="sub">원격 <b>1건 = 🪙1코인</b> · 코인으로 타이틀·네임택·아바타를 획득! · <b>매월 1일 코인 0 초기화</b>${GAME_API?'':' · <b style="color:var(--red)">(현재 이 브라우저에만 저장 — 팀 공유 세팅 필요)</b>'}</div></div>
-      <div class="controls"><select class="sel" onchange="setGameMe(this.value)"><option value="">👤 본인 선택</option>${opts}</select><button class="btn" onclick="adminResetPin()" title="관리자: 직원 PIN 초기화">🔧 PIN 초기화</button></div>
+      <div class="controls"><select class="sel" onchange="setGameMe(this.value)"><option value="">👤 본인 선택</option>${opts}</select><button class="btn" onclick="adminResetPin()" title="관리자: 직원 PIN 초기화">🔧 PIN 초기화</button><button class="btn" onclick="adminResetCoins()" title="관리자: 전 직원 낚시 코인 롤백">🪙 코인 롤백</button></div>
     </div>
     ${body}`;
   if(gameMe && GAME[gameMe] && !GAME[gameMe].gender && !genderDismissed){ const o=document.getElementById('genderPop'); if(o)o.remove(); document.body.insertAdjacentHTML('beforeend', genderModal()); }
@@ -2051,7 +2061,8 @@ function fishCastGate(emp, f){
 }
 function randInt(a,b){ return a+Math.floor(Math.random()*(b-a+1)); }
 // 코인 획득량: 1~1000, 큰 금액일수록 극희박 (1000코인 ≈ 0.001%)
-function pickCoinAmount(){ const T=[{w:50000,a:1,b:5},{w:25000,a:6,b:20},{w:15000,a:21,b:80},{w:7000,a:81,b:200},{w:2500,a:201,b:500},{w:490,a:501,b:999},{w:1,a:1000,b:1000}]; const tot=T.reduce((s,t)=>s+t.w,0); let r=Math.random()*tot; for(const t of T){ if((r-=t.w)<0) return randInt(t.a,t.b); } return 1; }
+// 코인 가챠: 최대 100코인, 100코인 확률 = 1/1,000,000 = 0.0001% (총 가중치 100만). 전반적으로 소액 위주.
+function pickCoinAmount(){ const T=[{w:600000,a:1,b:3},{w:280000,a:4,b:10},{w:90000,a:11,b:25},{w:25000,a:26,b:50},{w:4999,a:51,b:99},{w:1,a:100,b:100}]; const tot=T.reduce((s,t)=>s+t.w,0); let r=Math.random()*tot; for(const t of T){ if((r-=t.w)<0) return randInt(t.a,t.b); } return 1; }
 function rollLoot(loot){ const tot=loot.reduce((a,x)=>a+x.w,0); let r=Math.random()*tot; for(const x of loot){ if((r-=x.w)<0) return x; } return loot[loot.length-1]; }
 // ── 펫 능력치(perk): 낚시 결과에 반영 ──
 function petPerk(emp){ const it=itemById('pet',(gs(emp).equipped||{}).pet); return (it&&it.perk)||{}; }
@@ -2087,9 +2098,9 @@ function resolveLoot(emp,out){ const g=gs(emp);
     addSpent(emp, -n);
     if(n<0) return {emoji:'💸',big:n+' 코인',sub:'앗! 코인이 빠져나갔다...',cls:'bad'};
     if(n===0) return {emoji:'🛡️',big:'손실 방어!',sub:'펫이 코인 손실을 막아줬어요!',cls:'miss'};
-    const jackpot=n>=1000, huge=n>=500, big=n>=100;
+    const jackpot=n>=100, huge=n>=50, big=n>=25;
     return {emoji:jackpot?'💰':huge?'🤑':big?'💵':'🪙', big:'+'+n+' 코인',
-      sub:jackpot?'🎉 잭팟!!! 1000코인 대박!!!':huge?'🌟 초대박! 엄청난 월척!':big?'월척! 대량 획득!':'코인 획득!',
+      sub:jackpot?'🎉 잭팟!!! 100코인 대박!!!':huge?'🌟 초대박! 엄청난 월척!':big?'월척! 대량 획득!':'코인 획득!',
       cls:'coin', rarity:jackpot?'mythic':huge?'legendary':big?'epic':null}; }
   const it = out.id ? itemByIdAny(out.id) : pickItem(out.rar,out.fish,emp);
   if(!it){ addSpent(emp, -3); return {emoji:'🪙',big:'+3 코인',sub:'낚을 새 아이템이 없어 코인으로!',cls:'coin'}; }
