@@ -62,6 +62,9 @@
   :root[data-theme="dark"] .hl-card.blue .hl-big{color:#5aa9ff}
   :root[data-theme="dark"] .hl-card.gold .hl-big{color:#ffb340}
   :root[data-theme="dark"] .hl-card.mint .hl-big{color:#4fe07a}
+  /* 다크: 리프레쉬 타임 채워진 칸이 밝은 크림 배경 → 흰 글씨 안보임. 배경 어둡게 + 시간 강조색 조정 */
+  :root[data-theme="dark"] .rt-slot.on{background:linear-gradient(160deg,#332a12,#241f13);border-color:#5c4a1f;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+  :root[data-theme="dark"] .rt-slot.on .rt-time{color:#ffb340}
   /* 다크: 천국(직원) 랭킹은 밝은 카드(반짝임 유지) → 글자를 어둡게 해 가독성 확보 */
   :root[data-theme="dark"] .rank-item.light{background:#ffffff; border-color:#e6eeff}
   /* 흰 랭킹 항목 위 → 어둡게 */
