@@ -2810,7 +2810,11 @@ const AS_ISSUE_RULES = [
 ];
 const AS_ISSUE_ETC='기타';
 const AS_ISSUE_COLOR={'프론트/터미널':'#0071e3','포스/키오스크':'#34c759','프린터':'#5e5ce6','CAT/무선단말기':'#ff9500','네트워크/연동':'#00c7be','기타':'#8e8e93'};
-function classifyAsIssue(text){ const t=(text||'').toLowerCase(); for(const r of AS_ISSUE_RULES){ if(r.kw.some(k=>t.includes(k.toLowerCase()))) return r.label; } return AS_ISSUE_ETC; }
+// 프린터 모델명(ts100·ts400·cpp-3000·8385 등)은 다른 기기 단어(pos·연동 등)보다 우선 → 프린터로 분류
+const PRINTER_MODEL_RE = /\bts-?\s?\d{3,4}\b|\bcpp-?\s?\d{3,4}\b|(?:^|[^0-9])8385(?:[^0-9]|$)/i;
+function classifyAsIssue(text){ const t=(text||'').toLowerCase();
+  if(PRINTER_MODEL_RE.test(t)) return '프린터';
+  for(const r of AS_ISSUE_RULES){ if(r.kw.some(k=>t.includes(k.toLowerCase()))) return r.label; } return AS_ISSUE_ETC; }
 // 하드웨어 필드가 기기 유형을 명시하면 그걸 우선(글 수정 시 반영), 없으면 내용+처리내역으로 분류
 function asIssueOf(x){ const hwIssue = x.hw ? classifyAsIssue(x.hw) : AS_ISSUE_ETC; return hwIssue!==AS_ISSUE_ETC ? hwIssue : classifyAsIssue((x.req||'')+' '+(x.note||'')); }
 function asIssueRows(dates){ const rows=[]; for(const d of dates){ const dd=slackDay(d)||{}; (dd.done||[]).forEach(x=>{ if(x.cat!=='as')return; rows.push({date:d,time:x.time,store:x.store,emp:x.emp,req:x.req||'',hw:x.hw||'',note:x.note||'',issue:asIssueOf(x)}); }); } return rows; }
