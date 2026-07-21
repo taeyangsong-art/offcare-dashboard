@@ -487,6 +487,27 @@
   .notice-del{margin-left:auto; border:none; background:transparent; color:var(--gray2); font-size:18px; cursor:pointer; line-height:1; padding:0 7px; border-radius:6px}
   .notice-del:hover{color:var(--red); background:var(--red-soft)}
   .notice-body{font-size:14px; line-height:1.6; color:var(--ink); word-break:break-word}
+  .notice-foot2{display:flex; align-items:center; gap:10px; margin-top:10px; flex-wrap:wrap}
+  .nr-chips{display:flex; gap:6px; flex-wrap:wrap}
+  .nr-chip{font-size:12.5px; font-weight:700; background:var(--surface); border:1px solid var(--line-soft); border-radius:20px; padding:3px 9px; color:var(--ink-soft)}
+  .notice-cmt-btn{margin-left:auto; border:1px solid var(--line); background:var(--canvas); color:var(--ink-soft); font-size:12.5px; font-weight:700; padding:5px 12px; border-radius:20px; cursor:pointer; font-family:inherit; transition:.15s}
+  .notice-cmt-btn:hover{border-color:var(--blue); color:var(--blue)}
+  .nr-row{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:16px}
+  .nr-btn{border:1px solid var(--line); background:var(--canvas); border-radius:20px; padding:6px 12px; font-size:16px; cursor:pointer; transition:.12s; line-height:1}
+  .nr-btn b{font-size:13px; font-weight:800; color:var(--gray); margin-left:2px}
+  .nr-btn:hover{border-color:var(--blue); transform:translateY(-1px)}
+  .nr-btn.on{background:var(--blue-soft); border-color:var(--blue)} .nr-btn.on b{color:var(--blue-deep)}
+  .ncmt-head{font-size:14px; font-weight:800; color:var(--ink); margin:6px 0 10px}
+  .ncmt-list{display:flex; flex-direction:column; gap:10px; margin-bottom:14px}
+  .ncmt{background:var(--surface2); border-radius:12px; padding:9px 12px}
+  .ncmt-top{display:flex; align-items:center; gap:8px; margin-bottom:3px}
+  .ncmt-au{font-size:12.5px; font-weight:800; color:var(--ink)}
+  .ncmt-tm{font-size:11px; color:var(--gray2)}
+  .ncmt-del{margin-left:auto; border:none; background:transparent; color:var(--gray2); font-size:15px; cursor:pointer; line-height:1; padding:0 4px; border-radius:5px}
+  .ncmt-del:hover{color:var(--red); background:var(--red-soft)}
+  .ncmt-body{font-size:13.5px; line-height:1.5; color:var(--ink); word-break:break-word}
+  .ncmt-form{display:flex; gap:8px; align-items:center; flex-wrap:wrap}
+  .ncmt-form .notice-text{flex:1; min-width:140px}
   .cl-card{border-left-color:var(--purple)!important}
   .notice-badge.clb-add{background:var(--green-soft); color:#166534}
   .notice-badge.clb-fix{background:var(--blue-soft); color:var(--blue-deep)}
@@ -1206,6 +1227,39 @@ const LS_NOTICES = "opcare_notices_v1";
 let NOTICES = load(LS_NOTICES, {});   // { id: {text, author, ts, type:'공지'|'공유', deleted} }
 const LS_NOTICE_AUTHOR = "opcare_noticeauthor_v1";
 let noticeAuthor = load(LS_NOTICE_AUTHOR, "");
+// 게시글 댓글·이모지 반응 (각각 고유키로 저장 → 동시편집 충돌 방지, 팀 공유)
+const LS_NCOMMENTS = "opcare_ncomments_v1";
+let NCOMMENTS = load(LS_NCOMMENTS, {});   // { cid: {nid, author, text, ts, deleted} }
+const LS_NREACTS = "opcare_nreacts_v1";
+let NREACTS = load(LS_NREACTS, {});       // { "nid|emoji|author": {nid, emoji, author, deleted} }
+const NOTICE_EMOJIS = ['👍','❤️','😂','🎉','👀','🙏'];
+function noticeActor(){ const ai=document.getElementById('ncmtAuthor'); let a=ai?(ai.value||'').trim():''; if(!a) a=(noticeAuthor||'').trim(); if(!a){ a=(prompt('이름을 입력하세요 (댓글·이모지에 표시)')||'').trim(); } if(a){ noticeAuthor=a; save(LS_NOTICE_AUTHOR,noticeAuthor); } return a; }
+function commentsFor(nid){ return Object.entries(NCOMMENTS).filter(([cid,c])=>c&&!c.deleted&&c.nid===nid).sort((a,b)=>(a[1].ts||0)-(b[1].ts||0)); }
+function reactsFor(nid){ const g={}; for(const rk in NREACTS){ const r=NREACTS[rk]; if(r&&!r.deleted&&r.nid===nid){ (g[r.emoji]=g[r.emoji]||[]).push(r.author); } } return g; }
+function toggleReact(nid, emoji){ const author=noticeActor(); if(!author) return; const rk=nid+'|'+emoji+'|'+author; const cur=NREACTS[rk]; const active=cur&&!cur.deleted; NREACTS[rk]={nid,emoji,author,deleted:active}; save(LS_NREACTS,NREACTS); pushPatch({nReacts:{[rk]:NREACTS[rk]}}); showNoticeDetail(nid); if(activeCat==='share-notice') renderShareNotice(); }
+function addComment(nid){ const text=(document.getElementById('ncmtText').value||'').trim(); if(!text){ alert('댓글을 입력하세요.'); return; } const author=noticeActor(); if(!author){ alert('이름을 입력하세요.'); return; } const cid='c_'+Date.now()+'_'+Math.floor(Math.random()*1000); NCOMMENTS[cid]={nid,author,text,ts:Date.now()}; save(LS_NCOMMENTS,NCOMMENTS); pushPatch({nComments:{[cid]:NCOMMENTS[cid]}}); showNoticeDetail(nid); if(activeCat==='share-notice') renderShareNotice(); }
+function deleteComment(cid){ if(!NCOMMENTS[cid]) return; if(!confirm('댓글을 삭제할까요?')) return; const nid=NCOMMENTS[cid].nid; NCOMMENTS[cid].deleted=true; save(LS_NCOMMENTS,NCOMMENTS); pushPatch({nComments:{[cid]:NCOMMENTS[cid]}}); showNoticeDetail(nid); if(activeCat==='share-notice') renderShareNotice(); }
+function showNoticeDetail(nid){
+  const n=NOTICES[nid]; const em=document.getElementById('noticeModal');
+  if(!n||n.deleted){ if(em) em.remove(); return; }
+  const reacts=reactsFor(nid), comments=commentsFor(nid), me=(noticeAuthor||'').trim();
+  const emojiRow=NOTICE_EMOJIS.map(e=>{ const us=reacts[e]||[]; const on=me&&us.includes(me); return `<button class="nr-btn ${on?'on':''}" title="${us.map(escapeHtml).join(', ')}" onclick="toggleReact('${nid}','${e}')">${e}${us.length?` <b>${us.length}</b>`:''}</button>`; }).join('');
+  const cmtRows=comments.length?comments.map(([cid,c])=>`<div class="ncmt"><div class="ncmt-top"><span class="ncmt-au">${escapeHtml(c.author)}</span><span class="ncmt-tm">${fmtNoticeTime(c.ts)}</span><button class="ncmt-del" title="삭제" onclick="deleteComment('${cid}')">×</button></div><div class="ncmt-body">${escapeHtml(c.text).replace(/\n/g,'<br>')}</div></div>`).join(''):'<div class="empty-note">첫 댓글을 남겨보세요 💬</div>';
+  let el=em; if(!el){ el=document.createElement('div'); el.id='noticeModal'; el.className='detail-overlay'; el.onclick=ev=>{ if(ev.target===el) el.remove(); }; document.body.appendChild(el); }
+  el.innerHTML=`<div class="detail-box"><div class="detail-head"><h3>${n.type==='공지'?'📢 공지':'💬 공유'} · ${escapeHtml(n.author||'익명')}</h3><button class="detail-x" onclick="document.getElementById('noticeModal').remove()">✕</button></div>
+    <div class="detail-scroll">
+      <div class="notice-body" style="margin-bottom:6px">${escapeHtml(n.text).replace(/\n/g,'<br>')}</div>
+      <div class="notice-meta" style="margin-bottom:12px">${fmtNoticeTime(n.ts)}</div>
+      <div class="nr-row">${emojiRow}</div>
+      <div class="ncmt-head">💬 댓글 <b>${comments.length}</b></div>
+      <div class="ncmt-list">${cmtRows}</div>
+      <div class="ncmt-form">
+        <input id="ncmtAuthor" class="search-box" style="max-width:130px" type="text" placeholder="이름" value="${escapeHtml(noticeAuthor)}">
+        <input id="ncmtText" class="notice-text" type="text" placeholder="댓글 입력 후 Enter" onkeydown="if(event.key==='Enter'){event.preventDefault();addComment('${nid}');}">
+        <button class="btn" style="background:var(--blue);color:#fff;border-color:var(--blue)" onclick="addComment('${nid}')">등록</button>
+      </div>
+    </div></div>`;
+}
 function noticeList(){ return Object.entries(NOTICES).filter(([id,n])=>n&&!n.deleted).sort((a,b)=>(b[1].ts||0)-(a[1].ts||0)); }
 function fmtNoticeTime(ts){ if(!ts) return ''; const d=new Date(ts), p=n=>String(n).padStart(2,'0'); return `${d.getFullYear()}.${p(d.getMonth()+1)}.${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`; }
 function postNotice(){
@@ -1236,15 +1290,21 @@ const CHANGELOG=(typeof window!=='undefined' && Array.isArray(window.CHANGELOG) 
 function changelogCards(){ return CHANGELOG.map(e=>`<div class="notice-card cl-card cl-${e.k}"><div class="notice-top"><span class="notice-badge clb-${e.k}">${CL_LABEL[e.k]||''}</span><span class="notice-meta">🤖 대시보드 · ${e.d}</span></div><div class="notice-body">${escapeHtml(e.t)}</div></div>`).join(''); }
 function renderShareNotice(){
   const list=noticeList();
-  const rows = list.length ? list.map(([id,n])=>`
-    <div class="notice-card ${n.type==='공지'?'nt-notice':'nt-share'}">
+  const rows = list.length ? list.map(([id,n])=>{
+    const rc=reactsFor(id), cn=commentsFor(id).length;
+    const rchips=Object.entries(rc).map(([e,us])=>`<span class="nr-chip">${e} ${us.length}</span>`).join('');
+    return `<div class="notice-card ${n.type==='공지'?'nt-notice':'nt-share'}">
       <div class="notice-top">
         <span class="notice-badge ${n.type==='공지'?'b-notice':'b-share'}">${n.type==='공지'?'📢 공지':'💬 공유'}</span>
         <span class="notice-meta">${escapeHtml(n.author||'익명')} · ${fmtNoticeTime(n.ts)}</span>
         <button class="notice-del" title="삭제" onclick="deleteNotice('${id}')">×</button>
       </div>
       <div class="notice-body">${escapeHtml(n.text).replace(/\n/g,'<br>')}</div>
-    </div>`).join('') : '<div class="empty-note">아직 게시글이 없습니다. 첫 소식을 올려보세요! 📢</div>';
+      <div class="notice-foot2">
+        <div class="nr-chips">${rchips}</div>
+        <button class="notice-cmt-btn" onclick="showNoticeDetail('${id}')">💬 댓글${cn?' '+cn:''} · 😊 반응</button>
+      </div>
+    </div>`; }).join('') : '<div class="empty-note">아직 게시글이 없습니다. 첫 소식을 올려보세요! 📢</div>';
   document.getElementById("main").innerHTML=`
     <div class="page-head"><div><h2>📢 공지사항 · 공유 게시판</h2><div class="sub">팀 공유 내용을 자유롭게 올려주세요 · 팀 전체에 공유됩니다 · 대시보드 변경사항은 하위 <b>업데이트 내역</b> 탭에서 확인</div></div></div>
     <div class="card">
@@ -2041,17 +2101,19 @@ function loadCloud(cb){
         const mC=mergeCloudDict(VOCCOMMENT,b.vocComment);VOCCOMMENT=mC.merged; if(Object.keys(mC.restore).length) rp.vocComment=mC.restore;
         const mD=mergeCloudDict(DUTYOVER,b.dutyOver);   DUTYOVER=mD.merged;    if(Object.keys(mD.restore).length) rp.dutyOver=mD.restore;
         const mNo=mergeCloudDict(NOTICES,b.notices);   NOTICES=mNo.merged;    if(Object.keys(mNo.restore).length) rp.notices=mNo.restore;
+        const mNc=mergeCloudDict(NCOMMENTS,b.nComments);NCOMMENTS=mNc.merged; if(Object.keys(mNc.restore).length) rp.nComments=mNc.restore;
+        const mNr=mergeCloudDict(NREACTS,b.nReacts);   NREACTS=mNr.merged;    if(Object.keys(mNr.restore).length) rp.nReacts=mNr.restore;
         if(b.fishWait!==undefined){ FISHWAIT=b.fishWait||{}; save(LS_FISHWAIT,FISHWAIT); }   // 낚시 대기: 서버 값이 정답(로컬 클리어로 우회 방지)
         if(Object.keys(rp).length) pushPatch(rp);      // 로컬에만 있던 데이터를 클라우드에 복원
       } else { GAME=mergeCloudDict(GAME,b).merged; }   // 구 포맷(게임 데이터만)
-      save(LS_GAME,GAME); save(LS_VOCEDIT,VOCEDIT); save(LS_VOCPRAISE,VOCPRAISE); save(LS_VOCCOMMENT,VOCCOMMENT); save(LS_DUTYOVER,DUTYOVER); save(LS_NOTICES,NOTICES);
+      save(LS_GAME,GAME); save(LS_VOCEDIT,VOCEDIT); save(LS_VOCPRAISE,VOCPRAISE); save(LS_VOCCOMMENT,VOCCOMMENT); save(LS_DUTYOVER,DUTYOVER); save(LS_NOTICES,NOTICES); save(LS_NCOMMENTS,NCOMMENTS); save(LS_NREACTS,NREACTS);
     }
     if(cb)cb();
   }).catch(()=>{ if(cb)cb(); });
 }
 function loadGameCloud(cb){ loadCloud(cb); }   // 하위호환
 // 팀 공유 클라우드 데이터 스냅샷 — 주기 동기화 시 '변경됐을 때만' 재렌더 판정용
-function cloudSnapshot(){ try{ return JSON.stringify([GAME,FISHWAIT,VOCEDIT,VOCPRAISE,VOCCOMMENT,DUTYOVER,NOTICES]); }catch(e){ return ''; } }
+function cloudSnapshot(){ try{ return JSON.stringify([GAME,FISHWAIT,VOCEDIT,VOCPRAISE,VOCCOMMENT,DUTYOVER,NOTICES,NCOMMENTS,NREACTS]); }catch(e){ return ''; } }
 async function setGameMe(v){
   gameMe=v; save("opcare_gameme_v1",gameMe); renderGame();
   if(v && GAME_API && !isGameAuthed(v)){
