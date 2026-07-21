@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1180,
+  "version": 1181,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -44408,7 +44408,7 @@ window.SLACK_DATA = {
           "emp": "최민석",
           "req": "보유중인 SRP-E300 프린터기 온보딩 지원 요청드립니다. (AB케이블 구매 완)",
           "hw": "",
-          "note": ""
+          "note": "cpp3000 유프 온보딩 완료"
         },
         {
           "time": "21:30",
@@ -47169,7 +47169,7 @@ window.SLACK_DATA = {
       },
       "1784605301.891209": {
         "post": "1784605301.891209",
-        "lastSeen": 1784642442.063
+        "lastSeen": 1784643324.485
       },
       "1784611801.660229": {
         "post": "1784611801.660229",
