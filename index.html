@@ -2227,7 +2227,7 @@ function shopCard(cat,it,emp){
 }
 // 성별 전용 아이템(gender:'m'/'f')은 해당 성별로 설정했을 때만 노출. 미설정 시 기본 남자('m').
 function genderOK(emp,it){ if(!it.gender) return true; return it.gender===((gs(emp).gender)||'m'); }
-function shopSection(cat,label,emp){ const canoff=['hat','pet','cape','gloves','beard'].includes(cat); let list=GAME_ITEMS[cat].filter(it=>(cat==='title'||!it.fishOnly||owns(emp,cat,it.id))&&genderOK(emp,it)&&(!it.onlyFor||it.onlyFor.includes(emp))); if(cat==='title') list=list.slice().sort((a,b)=>(RARITY_ORDER[a.rarity]||0)-(RARITY_ORDER[b.rarity]||0)); return `<div class="card"><div class="card-head"><h3>${label}</h3>${canoff?`<button class="btn" onclick="unequipPart('${cat}')">해제</button>`:''}</div><div class="shop-grid">${list.map(it=>shopCard(cat,it,emp)).join('')}</div></div>`; }
+function shopSection(cat,label,emp){ const canoff=['hat','pet','cape','gloves','beard','title'].includes(cat); let list=GAME_ITEMS[cat].filter(it=>(cat==='title'||!it.fishOnly||owns(emp,cat,it.id))&&genderOK(emp,it)&&(!it.onlyFor||it.onlyFor.includes(emp))); if(cat==='title') list=list.slice().sort((a,b)=>(RARITY_ORDER[a.rarity]||0)-(RARITY_ORDER[b.rarity]||0)); return `<div class="card"><div class="card-head"><h3>${label}</h3>${canoff?`<button class="btn" onclick="unequipPart('${cat}')">해제</button>`:''}</div><div class="shop-grid">${list.map(it=>shopCard(cat,it,emp)).join('')}</div></div>`; }
 function renderGame(){
   autoGrantTitles(gameMe);   // 자동 획득 타이틀(⚡ 등) 조건 충족 시 지급
   const opts=EMPLOYEES.map(e=>`<option ${e===gameMe?'selected':''}>${e}</option>`).join('');
