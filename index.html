@@ -1488,7 +1488,7 @@ function achDisplay(emp, it, owned){
 function fishSpotHint(it){
   const targeted={ft_wanderer:'초급 낚시터', t_whale:'중급 낚시터', ft_captain:'고급 낚시터'};
   if(targeted[it.id]) return targeted[it.id];
-  return ({common:'초급 낚시터', rare:'초급·중급 낚시터', epic:'중급·고급 낚시터', legendary:'고급 낚시터', mythic:'고급 낚시터'})[it.rarity] || '낚시터';
+  return ({common:'초급 낚시터', rare:'초급·중급 낚시터', epic:'중급 낚시터', legendary:'고급 낚시터', mythic:'고급 낚시터'})[it.rarity] || '낚시터';
 }
 // 달성 상태 { ok, label, prog } — 조건(it.ach) 없으면 null (=일반 코인 아이템)
 function achStatus(emp, it){
@@ -2271,7 +2271,7 @@ const FISH = {
   mid:  {emoji:'⛵', name:'중급 낚시터', cost:3,  entry:0, reqLowItem:true, desc:'전문가 타이틀 획득 시 캐스팅 가능 · 아이템 3%(고래 타이틀 포함!), 코인 유지 20%, 코인 2배 획득(+6코인) 10%, 꽝 67%',
     loot:[ {w:670,t:'none'}, {w:200,t:'coin',min:3,max:3}, {w:100,t:'coin',min:6,max:6,dbl:true}, {w:15,t:'item',rar:['rare'],fish:true}, {w:9,t:'item',rar:['epic'],fish:true}, {w:6,t:'item',id:'t_whale'} ]},
   high: {emoji:'🌊', name:'고급 낚시터', cost:10, entry:0, reqItems:['pet:p_unicorn','pet:fp_shark'], desc:'중급에서 유니콘·상어 펫 획득 시 캐스팅 가능 · 신화 전용! 아이템 1%, 코인 유지 20%, 코인 2배 획득(+20코인) 10% · 🌈 0.00001% 극악 확률로 [곽호영] 유일 타이틀!',
-    loot:[ {w:690,t:'none'}, {w:200,t:'coin',min:10,max:10}, {w:100,t:'coin',min:20,max:20,dbl:true}, {w:6,t:'item',rar:['epic'],fish:true}, {w:3,t:'item',rar:['legendary'],fish:true}, {w:1,t:'item',rar:['mythic'],fish:true}, {w:0.0001,t:'item',id:'ft_captain'} ]},
+    loot:[ {w:690,t:'none'}, {w:200,t:'coin',min:10,max:10}, {w:100,t:'coin',min:20,max:20,dbl:true}, {w:9,t:'item',rar:['legendary'],fish:true}, {w:1,t:'item',rar:['mythic'],fish:true}, {w:0.0001,t:'item',id:'ft_captain'} ]},
 };
 let fishBusy=false;
 // 낚시 대기(쿨다운): 캐스팅 후 초급 3분 / 중급 10분 / 고급 30분 지나야 결과 확인. 브라우저에 저장.
