@@ -9,6 +9,7 @@ on:
       - 'changelog.js'
       - 'slack-data.js'
       - 'calendar-data.js'
+  workflow_dispatch: {}
 
 permissions:
   contents: write
