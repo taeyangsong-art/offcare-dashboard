@@ -1226,6 +1226,7 @@ let COUNTS = load(LS_COUNT, {});   // { cat: { "YYYY-MM-DD": { emp: n } } }
 let DUTY   = load(LS_DUTY, {});    // { "YYYY-MM-DD": { day, aft, nit } }
 let SHARE  = load(LS_SHARE, {});   // { "YYYY-MM-DD": [ {id, emp, type, title, time} ] } — 팀 공유(클라우드)
 function pushShareDates(dates){ const p={}; (dates||[]).forEach(ds=>{ if(ds) p[ds]=SHARE[ds]||null; }); if(Object.keys(p).length) pushPatch({share:p}); }
+function pushDutyDates(dates){ const p={}; (dates||[]).forEach(ds=>{ if(ds) p[ds]=DUTY[ds]||null; }); if(Object.keys(p).length) pushPatch({duty:p}); }
 const LS_DUTYOVER = "opcare_dutyover_v1";
 let DUTYOVER = load(LS_DUTYOVER, {});   // { "date|time|title": "직원명" } — 회의 원격당번 수동 지정
 // 📢 공지사항 · 공유 게시판 (팀 공유 클라우드)
@@ -2081,7 +2082,7 @@ function rankNameHTML(emp, noFace){ const eq=(GAME[emp]||{}).equipped||{}; const
 // 랭킹·MVP용 미니 전신 아바타(캐릭터+꾸미기 전부) — 122x150 원본을 w px로 축소. 게임 미참여 직원도 기본 캐릭터 렌더.
 function avatarMini(emp, w){ const g=GAME[emp]||{}; const eq=g.equipped||{}; const s=w/122; return `<div class="av-mini" style="width:${w}px;height:${Math.round(150*s)}px"><div class="av-mini-in" style="transform:scale(${s.toFixed(3)})">${avatarBig(eq, g.gender)}</div></div>`; }
 // 팀 공유 클라우드 = {players:GAME, vocEdit, vocPraise, vocComment, dutyOver, fishWait} 통합 블롭 (백엔드는 game 블롭을 그대로 저장/반환)
-function cloudBlob(){ return { _v:2, players:GAME, vocEdit:VOCEDIT, vocPraise:VOCPRAISE, vocComment:VOCCOMMENT, dutyOver:DUTYOVER, share:SHARE }; }
+function cloudBlob(){ return { _v:2, players:GAME, vocEdit:VOCEDIT, vocPraise:VOCPRAISE, vocComment:VOCCOMMENT, dutyOver:DUTYOVER, share:SHARE, duty:DUTY }; }
 // 변경된 항목만 patch로 전송 → 서버가 잠금+병합(동시편집 안전, 경량)
 function pushPatch(patch){ if(!GAME_API) return; fetch(GAME_API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({patch})}).catch(()=>{}); }
 function saveGame(){ save(LS_GAME,GAME); if(gameMe&&GAME[gameMe]) pushPatch({players:{[gameMe]:GAME[gameMe]}}); }
@@ -2110,17 +2111,18 @@ function loadCloud(cb){
         const mNc=mergeCloudDict(NCOMMENTS,b.nComments);NCOMMENTS=mNc.merged; if(Object.keys(mNc.restore).length) rp.nComments=mNc.restore;
         const mNr=mergeCloudDict(NREACTS,b.nReacts);   NREACTS=mNr.merged;    if(Object.keys(mNr.restore).length) rp.nReacts=mNr.restore;
         const mSh=mergeCloudDict(SHARE,b.share);       SHARE=mSh.merged;      if(Object.keys(mSh.restore).length) rp.share=mSh.restore;
+        const mDt=mergeCloudDict(DUTY,b.duty);         DUTY=mDt.merged;       if(Object.keys(mDt.restore).length) rp.duty=mDt.restore;
         if(b.fishWait!==undefined){ FISHWAIT=b.fishWait||{}; save(LS_FISHWAIT,FISHWAIT); }   // 낚시 대기: 서버 값이 정답(로컬 클리어로 우회 방지)
         if(Object.keys(rp).length) pushPatch(rp);      // 로컬에만 있던 데이터를 클라우드에 복원
       } else { GAME=mergeCloudDict(GAME,b).merged; }   // 구 포맷(게임 데이터만)
-      save(LS_GAME,GAME); save(LS_VOCEDIT,VOCEDIT); save(LS_VOCPRAISE,VOCPRAISE); save(LS_VOCCOMMENT,VOCCOMMENT); save(LS_DUTYOVER,DUTYOVER); save(LS_NOTICES,NOTICES); save(LS_NCOMMENTS,NCOMMENTS); save(LS_NREACTS,NREACTS); save(LS_SHARE,SHARE);
+      save(LS_GAME,GAME); save(LS_VOCEDIT,VOCEDIT); save(LS_VOCPRAISE,VOCPRAISE); save(LS_VOCCOMMENT,VOCCOMMENT); save(LS_DUTYOVER,DUTYOVER); save(LS_NOTICES,NOTICES); save(LS_NCOMMENTS,NCOMMENTS); save(LS_NREACTS,NREACTS); save(LS_SHARE,SHARE); save(LS_DUTY,DUTY);
     }
     if(cb)cb();
   }).catch(()=>{ if(cb)cb(); });
 }
 function loadGameCloud(cb){ loadCloud(cb); }   // 하위호환
 // 팀 공유 클라우드 데이터 스냅샷 — 주기 동기화 시 '변경됐을 때만' 재렌더 판정용
-function cloudSnapshot(){ try{ return JSON.stringify([GAME,FISHWAIT,VOCEDIT,VOCPRAISE,VOCCOMMENT,DUTYOVER,NOTICES,NCOMMENTS,NREACTS,SHARE]); }catch(e){ return ''; } }
+function cloudSnapshot(){ try{ return JSON.stringify([GAME,FISHWAIT,VOCEDIT,VOCPRAISE,VOCCOMMENT,DUTYOVER,NOTICES,NCOMMENTS,NREACTS,SHARE,DUTY]); }catch(e){ return ''; } }
 async function setGameMe(v){
   gameMe=v; save("opcare_gameme_v1",gameMe); renderGame();
   if(v && GAME_API && !isGameAuthed(v)){
@@ -3857,8 +3859,8 @@ function saveDuty(ds,type,text){
   const v=text.trim();
   if(!DUTY[ds]) DUTY[ds]={};
   if(v) DUTY[ds][type]=v; else delete DUTY[ds][type];
-  if(Object.keys(DUTY[ds]).length===0) delete DUTY[ds];
-  save(LS_DUTY, DUTY);
+  if(DUTY[ds] && Object.keys(DUTY[ds]).length===0) delete DUTY[ds];
+  save(LS_DUTY, DUTY); pushDutyDates([ds]);
 }
 function dutyNav(n){ dutyMonth=new Date(dutyMonth.getFullYear(), dutyMonth.getMonth()+n, 1); renderDuty(); }
 function dutyToday(){ dutyMonth=new Date(today().getFullYear(), today().getMonth(), 1); renderDuty(); }
