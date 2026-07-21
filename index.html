@@ -1243,11 +1243,7 @@ function renderShareNotice(){
       <div class="notice-body">${escapeHtml(n.text).replace(/\n/g,'<br>')}</div>
     </div>`).join('') : '<div class="empty-note">아직 게시글이 없습니다. 첫 소식을 올려보세요! 📢</div>';
   document.getElementById("main").innerHTML=`
-    <div class="page-head"><div><h2>📢 공지사항 · 공유 게시판</h2><div class="sub">대시보드 업데이트·수정사항이나 팀 공유 내용을 자유롭게 올려주세요 · 팀 전체에 공유됩니다</div></div></div>
-    <div class="card">
-      <div class="card-head"><h3>🤖 대시보드 업데이트 내역</h3><span class="hint">자동 기록 · 최신순</span></div>
-      <div class="notice-list">${changelogCards()}</div>
-    </div>
+    <div class="page-head"><div><h2>📢 공지사항 · 공유 게시판</h2><div class="sub">팀 공유 내용을 자유롭게 올려주세요 · 팀 전체에 공유됩니다 · 대시보드 변경사항은 하위 <b>업데이트 내역</b> 탭에서 확인</div></div></div>
     <div class="card">
       <div class="card-head"><h3>✍️ 새 글 작성</h3></div>
       <div class="notice-form">
@@ -1262,6 +1258,15 @@ function renderShareNotice(){
     <div class="card">
       <div class="card-head"><h3>📋 게시글 <span class="cnt-badge">${list.length}</span></h3></div>
       <div class="notice-list">${rows}</div>
+    </div>`;
+}
+// 🤖 대시보드 업데이트 내역 (별도 하위탭) — 커밋 자동 반영
+function renderShareChangelog(){
+  document.getElementById("main").innerHTML=`
+    <div class="page-head"><div><h2>🤖 대시보드 업데이트 내역</h2><div class="sub">대시보드에 추가·수정·개선된 내용이 자동으로 기록됩니다 · 최신순</div></div></div>
+    <div class="card">
+      <div class="card-head"><h3>📝 변경 이력 <span class="cnt-badge">${CHANGELOG.length}</span></h3><span class="hint">자동 기록</span></div>
+      <div class="notice-list">${CHANGELOG.length?changelogCards():'<div class="empty-note">기록된 변경사항이 없습니다.</div>'}</div>
     </div>`;
 }
 function saveDutyOverride(key, name){ if(name) DUTYOVER[key]=name; else delete DUTYOVER[key]; save(LS_DUTYOVER, DUTYOVER); pushPatch({dutyOver:{[key]:DUTYOVER[key]||null}}); renderShare(); }
@@ -1292,6 +1297,7 @@ function checkRefreshWeek(){
     if(activeCat==='share') renderShare();
     else if(activeCat==='share-refresh') renderShareRefresh();
     else if(activeCat==='share-notice') renderShareNotice();
+    else if(activeCat==='share-changelog') renderShareChangelog();
     showRefreshResetAlert();
   }
 }
@@ -1518,18 +1524,20 @@ function renderNav(){
       <span class="ic">📊</span>전체 현황</button>
     <div class="nav-div"></div>`;
   document.getElementById("nav").innerHTML = ov + CATEGORIES.map(c=>{
-    const active = (c.key===activeCat) || (c.key==='voc' && activeCat==='voc-monthly') || (c.key==='game' && activeCat==='game-fish') || (c.key==='share' && (activeCat==='share-refresh'||activeCat==='share-notice'));
+    const active = (c.key===activeCat) || (c.key==='voc' && activeCat==='voc-monthly') || (c.key==='game' && activeCat==='game-fish') || (c.key==='share' && (activeCat==='share-refresh'||activeCat==='share-notice'||activeCat==='share-changelog'));
     let btn = `<button class="navbtn ${active?'active':''}" onclick="selectCat('${c.key}')">
       <span class="ic">${c.icon}</span>${c.name}</button>`;
     if(c.key==='voc' && (activeCat==='voc'||activeCat==='voc-monthly')){
       btn += `<button class="navbtn sub ${activeCat==='voc-monthly'?'active':''}" onclick="selectCat('voc-monthly')">
         <span class="ic">└</span>Monthly</button>`;
     }
-    if(c.key==='share' && (activeCat==='share'||activeCat==='share-refresh'||activeCat==='share-notice')){
+    if(c.key==='share' && (activeCat==='share'||activeCat==='share-refresh'||activeCat==='share-notice'||activeCat==='share-changelog')){
       btn += `<button class="navbtn sub ${activeCat==='share-refresh'?'active':''}" onclick="selectCat('share-refresh')">
         <span class="ic">└</span>☕ 리프레쉬 타임</button>`;
       btn += `<button class="navbtn sub ${activeCat==='share-notice'?'active':''}" onclick="selectCat('share-notice')">
         <span class="ic">└</span>📢 공지사항</button>`;
+      btn += `<button class="navbtn sub ${activeCat==='share-changelog'?'active':''}" onclick="selectCat('share-changelog')">
+        <span class="ic">└</span>🤖 업데이트 내역</button>`;
     }
     if(c.key==='game' && (activeCat==='game'||activeCat==='game-fish')){
       btn += `<button class="navbtn sub ${activeCat==='game-fish'?'active':''}" onclick="selectCat('game-fish')">
@@ -1555,6 +1563,7 @@ function renderMain(){
   else if(activeCat==="share") renderShare();
   else if(activeCat==="share-refresh") renderShareRefresh();
   else if(activeCat==="share-notice") renderShareNotice();
+  else if(activeCat==="share-changelog") renderShareChangelog();
   else if(activeCat==="voc") renderVoc();
   else if(activeCat==="voc-monthly") renderVocMonthly();
   else if(activeCat==="game") renderGame();
