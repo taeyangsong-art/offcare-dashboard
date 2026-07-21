@@ -18,6 +18,8 @@
 })();
 </script>
 <script>try{if(localStorage.getItem('opcare_theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
+<script src="changelog.js"></script>   <!-- 커밋 메시지 자동 생성 업데이트 내역(window.CHANGELOG) -->
+
 <title>원격파트 대시보드 · iShopCare</title>
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
@@ -1215,7 +1217,8 @@ function postNotice(){
 function deleteNotice(id){ if(!NOTICES[id]) return; if(!confirm('이 글을 삭제할까요?')) return; NOTICES[id].deleted=true; save(LS_NOTICES,NOTICES); pushPatch({notices:{[id]:NOTICES[id]}}); renderShareNotice(); }
 // 대시보드 업데이트 내역(자동 표시) — 수정/추가할 때마다 맨 위에 항목 추가
 const CL_LABEL={add:'✨ 추가',fix:'🔧 수정',imp:'⚡ 개선'};
-const CHANGELOG=[
+// 커밋 메시지 자동 반영: changelog.js(window.CHANGELOG)가 있으면 사용, 없으면 아래 폴백
+const CHANGELOG=(typeof window!=='undefined' && Array.isArray(window.CHANGELOG) && window.CHANGELOG.length)?window.CHANGELOG:[
   {d:'2026-07-21',k:'add',t:'공유탭에 공지사항·공유 게시판 추가 (팀 실시간 공유) + 업데이트 내역 자동 표시'},
   {d:'2026-07-21',k:'fix',t:'낚시터 대기시간 변경 — 초급 즉시 · 중급 30초 · 고급 1분'},
   {d:'2026-07-20',k:'imp',t:'낚시 결과 개편 — 코인손실 삭제, 코인 유지 20% / 코인 2배 획득 10%'},
