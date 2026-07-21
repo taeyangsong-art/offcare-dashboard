@@ -4088,17 +4088,20 @@ function removeShare(ds, id){
   if(!SHARE[ds]) return;
   const ev=SHARE[ds].find(e=>e.id===id); if(!ev) return;
   const t=typeMeta(ev.type);
+  const dirty=[];
   if(ev.grp){
-    // 휴가(여러 날) → 그룹 전체 삭제
-    let days=0; Object.values(SHARE).forEach(arr=>arr.forEach(e=>{ if(e.grp===ev.grp) days++; }));
+    // 휴가(여러 날) → 그룹 전체 삭제 (영향받는 모든 날짜를 클라우드에 반영)
+    const affected=Object.keys(SHARE).filter(d=>SHARE[d].some(e=>e.grp===ev.grp));
+    const days=affected.reduce((n,d)=>n+SHARE[d].filter(e=>e.grp===ev.grp).length,0);
     if(!confirm(`${ev.emp}님의 ${t.label}(${days}일) 전체를 삭제할까요?`)) return;
-    Object.keys(SHARE).forEach(d=>{ SHARE[d]=SHARE[d].filter(e=>e.grp!==ev.grp); if(SHARE[d].length===0) delete SHARE[d]; });
+    affected.forEach(d=>{ SHARE[d]=SHARE[d].filter(e=>e.grp!==ev.grp); if(SHARE[d].length===0) delete SHARE[d]; dirty.push(d); });
   } else {
     if(!confirm(`${ev.emp}님의 ${t.label}${ev.title?' ('+ev.title+')':''} 일정을 삭제할까요?`)) return;
     SHARE[ds]=SHARE[ds].filter(e=>e.id!==id);
     if(SHARE[ds].length===0) delete SHARE[ds];
+    dirty.push(ds);
   }
-  save(LS_SHARE, SHARE); pushShareDates([ds]);
+  save(LS_SHARE, SHARE); pushShareDates(dirty);
   renderShare();
 }
 
