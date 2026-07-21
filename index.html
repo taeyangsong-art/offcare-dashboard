@@ -1238,7 +1238,7 @@ let NCOMMENTS = load(LS_NCOMMENTS, {});   // { cid: {nid, author, text, ts, dele
 const LS_NREACTS = "opcare_nreacts_v1";
 let NREACTS = load(LS_NREACTS, {});       // { "nid|emoji|author": {nid, emoji, author, deleted} }
 const NOTICE_EMOJIS = ['👍','❤️','😂','🎉','👀','🙏'];
-function noticeActor(){ const ai=document.getElementById('ncmtAuthor'); let a=ai?(ai.value||'').trim():''; if(!a) a=(noticeAuthor||'').trim(); if(!a){ a=(prompt('이름을 입력하세요 (댓글·이모지에 표시)')||'').trim(); } if(a){ noticeAuthor=a; save(LS_NOTICE_AUTHOR,noticeAuthor); } return a; }
+function noticeActor(){ const ai=document.getElementById('ncmtAuthor'); let a=ai?(ai.value||'').trim():''; if(!a) a=(gameMe||'').trim(); if(!a) a=(noticeAuthor||'').trim(); if(!a){ a=(prompt('이름을 입력하세요 (댓글·이모지에 표시)')||'').trim(); } if(a){ noticeAuthor=a; save(LS_NOTICE_AUTHOR,noticeAuthor); } return a; }
 function commentsFor(nid){ return Object.entries(NCOMMENTS).filter(([cid,c])=>c&&!c.deleted&&c.nid===nid).sort((a,b)=>(a[1].ts||0)-(b[1].ts||0)); }
 function reactsFor(nid){ const g={}; for(const rk in NREACTS){ const r=NREACTS[rk]; if(r&&!r.deleted&&r.nid===nid){ (g[r.emoji]=g[r.emoji]||[]).push(r.author); } } return g; }
 function toggleReact(nid, emoji){ const author=noticeActor(); if(!author) return; const rk=nid+'|'+emoji+'|'+author; const cur=NREACTS[rk]; const active=cur&&!cur.deleted; NREACTS[rk]={nid,emoji,author,deleted:active}; save(LS_NREACTS,NREACTS); pushPatch({nReacts:{[rk]:NREACTS[rk]}}); showNoticeDetail(nid); if(activeCat==='share-notice') renderShareNotice(); }
@@ -1259,7 +1259,7 @@ function showNoticeDetail(nid){
       <div class="ncmt-head">💬 댓글 <b>${comments.length}</b></div>
       <div class="ncmt-list">${cmtRows}</div>
       <div class="ncmt-form">
-        <input id="ncmtAuthor" class="search-box" style="max-width:130px" type="text" placeholder="이름" value="${escapeHtml(noticeAuthor)}">
+        <input id="ncmtAuthor" class="search-box" style="max-width:130px" type="text" placeholder="이름" value="${escapeHtml(gameMe||noticeAuthor||'')}">
         <input id="ncmtText" class="notice-text" type="text" placeholder="댓글 입력 후 Enter" onkeydown="if(event.key==='Enter'){event.preventDefault();addComment('${nid}');}">
         <button class="btn" style="background:var(--blue);color:#fff;border-color:var(--blue)" onclick="addComment('${nid}')">등록</button>
       </div>
@@ -1316,7 +1316,7 @@ function renderShareNotice(){
       <div class="card-head"><h3>✍️ 새 글 작성</h3></div>
       <div class="notice-form">
         <div class="notice-form-row">
-          <input id="noticeAuthor" class="search-box" style="max-width:180px" type="text" placeholder="작성자 이름" value="${escapeHtml(noticeAuthor)}">
+          <input id="noticeAuthor" class="search-box" style="max-width:180px" type="text" placeholder="작성자 이름" value="${escapeHtml(gameMe||noticeAuthor||'')}" title="원격상점에서 선택한 본인 이름이 자동 입력됩니다">
           <select id="noticeType" class="praise-teamfilter"><option value="공유">💬 공유</option><option value="공지">📢 공지</option></select>
         </div>
         <textarea id="noticeText" class="notice-text" rows="3" placeholder="내용을 입력하세요 (여러 줄 가능)"></textarea>
