@@ -1119,12 +1119,16 @@ function meetingDutyList(){
   list.sort((a,b)=>(a.date+"|"+a.time).localeCompare(b.date+"|"+b.time));
   return list;
 }
+// 당번 배정 = 회의 날짜만의 순수 함수(주 단위 회전). 캘린더 로드 상태·목록과 무관 → 모두 동일하게 보임.
+// 앵커: 2026-07-10 주 = 김현기(DUTY_ORDER idx 3). 매주 다음 사람으로 회전.
+function dutyPersonByDate(dateStr){
+  const anchor=parseYmd(DUTY_ANCHOR_DATE), d=parseYmd(dateStr);
+  const weeks=Math.round((d-anchor)/(7*86400000));
+  return DUTY_ORDER[(((weeks+DUTY_ANCHOR_IDX)%7)+7)%7];
+}
 function dutyMap(){
-  const list=meetingDutyList();
-  let a=list.findIndex(m=>m.date===DUTY_ANCHOR_DATE);
-  if(a<0){ a=list.findIndex(m=>m.date>=DUTY_ANCHOR_DATE); if(a<0) a=Math.max(0,list.length-1); }
   const map={};
-  list.forEach((m,i)=>{ map[m.date+"|"+m.time+"|"+m.title]=DUTY_ORDER[(((i-a+DUTY_ANCHOR_IDX)%7)+7)%7]; });
+  meetingDutyList().forEach(m=>{ map[m.date+"|"+m.time+"|"+m.title]=dutyPersonByDate(m.date); });
   return map;
 }
 function meetingStart(m){
