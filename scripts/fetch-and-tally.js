@@ -200,9 +200,9 @@ async function tallyInto(msgs, ch, counts, pending, done, opts) {
     const biz = ((text.match(/사업자\s*번?호?\s*[:：]?\s*([\d\-]+)/) || [])[1] || '').replace(/-/g, '').trim();
     const req = ((text.match(/내용\s*[:：]?\s*(.+)/) || [])[1] || '').trim().slice(0, 140);   // 요청 '내용' 필드(문제 유형 분류용)
     const hw = ((text.match(/(?:하드웨어|장비|기종|hw)\s*[:：]?\s*(.+)/i) || [])[1] || '').trim().slice(0, 60);   // 하드웨어 필드 → AS 유형 분류 우선 반영(글 수정 시 반영됨)
-    // 인입유형(온라인/오프라인) — '인입유형:' 또는 '오프/온라인:' 라벨 파싱. 미기재는 unknown.
+    // 인입유형(온라인/오프라인) — '인입유형:' 또는 '오프/온라인:' 라벨 파싱. 미기재(미상)는 온라인으로 적재(팀 정책).
     const intakeRaw = ((text.match(/(?:인입\s*유형|오프\s*\/?\s*온라인)\s*[:：]?\s*([^\n\/]*)/) || [])[1] || '');
-    const intake = /온라인/.test(intakeRaw) ? 'online' : /오프라인/.test(intakeRaw) ? 'offline' : 'unknown';
+    const intake = /오프라인/.test(intakeRaw) ? 'offline' : 'online';
 
     let emp = null;
     for (const n of names) { const pm = n.match(/^원격(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)$/); if (pm) { emp = personMap[pm[1]]; break; } }
