@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1269,
+  "version": 1270,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -53549,20 +53549,20 @@ window.SLACK_DATA = {
           "note": "프론트 재온보딩 명변 완료"
         }
       ],
-      "updatedAt": "20:00",
+      "updatedAt": "20:27",
       "intake": {
         "online": 209,
         "offline": 41,
         "unknown": 0
       },
       "voc": {
-        "responses": 13,
+        "responses": 14,
         "install": {
           "count": 4,
           "low": 2
         },
         "nps": {
-          "count": 13,
+          "count": 14,
           "low": 7
         },
         "high": {
@@ -53577,7 +53577,7 @@ window.SLACK_DATA = {
           "5": 2,
           "6": 1,
           "7": 1,
-          "8": 1,
+          "8": 2,
           "10": 3
         },
         "installDist": {
@@ -53592,7 +53592,7 @@ window.SLACK_DATA = {
         },
         "byTenure": {
           "3개월": {
-            "total": 3,
+            "total": 4,
             "low": 1
           },
           "1개월": {
@@ -53609,6 +53609,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 5,
+            "low": 2
+          },
           "KPN": {
             "total": 2,
             "low": 1
@@ -53620,10 +53624,6 @@ window.SLACK_DATA = {
           "KOCES": {
             "total": 1,
             "low": 1
-          },
-          "KIS": {
-            "total": 4,
-            "low": 2
           },
           "KSNET": {
             "total": 1,
@@ -53813,6 +53813,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "20:15",
+            "store": "봄날(BOMNAL)",
+            "storeId": "433711",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 8,
+            "text": "만족하나 전화승인시 결제 업무가 안되서 좀 불편하다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "15:51",
             "store": "세류스마트해법영어교습소",
             "storeId": "554008",
@@ -53840,11 +53852,11 @@ window.SLACK_DATA = {
       },
       "1784684674.172249": {
         "post": "1784684674.172249",
-        "lastSeen": 1784718924.023
+        "lastSeen": 1784719830.808
       },
       "1784693061.091859": {
         "post": "1784693061.091859",
-        "lastSeen": 1784718924.023
+        "lastSeen": 1784719830.808
       },
       "1784705400.803909": {
         "post": "1784705400.803909",
@@ -53852,19 +53864,23 @@ window.SLACK_DATA = {
       },
       "1784707033.690699": {
         "post": "1784707033.690699",
-        "lastSeen": 1784718924.023
+        "lastSeen": 1784719830.808
       },
       "1784710940.096429": {
         "post": "1784710940.096429",
-        "lastSeen": 1784718924.023
+        "lastSeen": 1784719830.808
       },
       "1784711911.498519": {
         "post": "1784711911.498519",
-        "lastSeen": 1784718924.023
+        "lastSeen": 1784719830.808
       },
       "1784718002.726809": {
         "post": "1784718002.726809",
-        "lastSeen": 1784718924.023
+        "lastSeen": 1784719830.808
+      },
+      "1784719671.756989": {
+        "post": "1784719671.756989",
+        "lastSeen": 1784719830.808
       }
     },
     "days": {
