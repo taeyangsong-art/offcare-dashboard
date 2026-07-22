@@ -2517,6 +2517,9 @@ function renderOverview(){
   const confirmCnt = pendCntOf(viewDates) - absentCnt;   // 확인필요(부재 아닌 미처리)
   const grandAll = grandProc + pendCntOf(viewDates);      // 원격 총 건수 = 처리 + 부재 + 확인필요(전체 미처리)
   const grandAllPrev = grandProcPrev + pendCntOf(prevDates);
+  // 인입유형(온라인/오프라인/미상) — 전체 원격 건 기준, 일자별 intake 합산
+  const intakeAgg = viewDates.reduce((a,d)=>{ const ik=(slackDay(d)||{}).intake||{}; a.online+=ik.online||0; a.offline+=ik.offline||0; a.unknown+=ik.unknown||0; return a; }, {online:0,offline:0,unknown:0});
+  const intakeTot = intakeAgg.online + intakeAgg.offline + intakeAgg.unknown;
   const ovPend = ovPendingList();                     // 부재·확인필요 모두 다음날 오전 10시까지 이월
   const pendCarry = ovPend.length;
   // 누락 랭킹 — 이번 달 누적(부재/확인필요) 담당자별 카운트 (매월 1일 초기화)
@@ -2575,6 +2578,7 @@ function renderOverview(){
         <div class="hl-big">${grandAll}<small>건</small></div>
         ${deltaHTML(grandAll, grandAllPrev)}
         ${(absentCnt||confirmCnt)?`<div class="ov-delta flat" style="margin-top:2px"><span>처리 ${grandProc}${absentCnt?` + 부재 ${absentCnt}`:''}${confirmCnt?` + 확인필요 ${confirmCnt}`:''}</span></div>`:''}
+        ${(!NIGHT&&intakeTot)?`<div class="ov-delta flat" style="margin-top:2px"><span>🌐 온라인 <b>${intakeAgg.online}</b> · 🏪 오프라인 <b>${intakeAgg.offline}</b>${intakeAgg.unknown?` · 미상 ${intakeAgg.unknown}`:''}</span></div>`:''}
       </div>
       <div class="hl-card gold" id="mvpCard">
         <div class="mvp-flash"></div><div class="mvp-confetti" id="mvpConfetti"></div>

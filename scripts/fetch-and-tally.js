@@ -200,6 +200,9 @@ async function tallyInto(msgs, ch, counts, pending, done, opts) {
     const biz = ((text.match(/사업자\s*번?호?\s*[:：]?\s*([\d\-]+)/) || [])[1] || '').replace(/-/g, '').trim();
     const req = ((text.match(/내용\s*[:：]?\s*(.+)/) || [])[1] || '').trim().slice(0, 140);   // 요청 '내용' 필드(문제 유형 분류용)
     const hw = ((text.match(/(?:하드웨어|장비|기종|hw)\s*[:：]?\s*(.+)/i) || [])[1] || '').trim().slice(0, 60);   // 하드웨어 필드 → AS 유형 분류 우선 반영(글 수정 시 반영됨)
+    // 인입유형(온라인/오프라인) — '인입유형:' 또는 '오프/온라인:' 라벨 파싱. 미기재는 unknown.
+    const intakeRaw = ((text.match(/(?:인입\s*유형|오프\s*\/?\s*온라인)\s*[:：]?\s*([^\n\/]*)/) || [])[1] || '');
+    const intake = /온라인/.test(intakeRaw) ? 'online' : /오프라인/.test(intakeRaw) ? 'offline' : 'unknown';
 
     let emp = null;
     for (const n of names) { const pm = n.match(/^원격(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)$/); if (pm) { emp = personMap[pm[1]]; break; } }
@@ -226,18 +229,18 @@ async function tallyInto(msgs, ch, counts, pending, done, opts) {
       const who = doer || '미지정';
       counts.extern = counts.extern || {};
       counts.extern[who] = (counts.extern[who] || 0) + 1; externCount++;
-      done.push({ time, store, biz, cat: 'extern', emp: who, req, hw, urgent, note: await grabNote(m, 'extern', time, store, biz) });
+      done.push({ time, store, biz, cat: 'extern', emp: who, req, hw, urgent, intake, note: await grabNote(m, 'extern', time, store, biz) });
     } else if (emojiCat || (emp && !ch.requireCat)) {   // 카테고리 이모지 있음, 또는 AS채널에서 완료담당자만(→defaultCat). requireCat 채널은 이모지 필수
       const catKey = emojiCat || ch.defaultCat;
       const who = emp || confirmPerson || '미지정';
       counts[catKey] = counts[catKey] || {};
       counts[catKey][who] = (counts[catKey][who] || 0) + 1; completed++;
-      done.push({ time, store, biz, cat: catKey, emp: who, req, hw, urgent, note: await grabNote(m, catKey, time, store, biz) });
+      done.push({ time, store, biz, cat: catKey, emp: who, req, hw, urgent, intake, note: await grabNote(m, catKey, time, store, biz) });
     } else if (hasAbsent && !invalidPost) {  // 완료·카테고리 이모지 없이 '부재만' (확인+X 잘못올린글 제외)
       // 2차부재(재부재=연락 불가)는 확인필요에서 제외, 1차부재만 — 그것도 1시간 지나야 확인필요로 적재
-      if (absTag !== '2차 부재' && ageSec >= CONFIRM_GRACE_SEC) pending.push({ time, store, biz, handler: doer || '미지정', cat: ch.defaultCat, reasons: [absTag] });
+      if (absTag !== '2차 부재' && ageSec >= CONFIRM_GRACE_SEC) pending.push({ time, store, biz, handler: doer || '미지정', cat: ch.defaultCat, intake, reasons: [absTag] });
     } else if (confirmPerson && !invalidPost) { // 확인만 찍힘 → 1시간 지나면 '확인 후 미완료' (확인+X 잘못올린글 제외)
-      if (ageSec >= CONFIRM_GRACE_SEC) pending.push({ time, store, biz, handler: confirmPerson, cat: ch.defaultCat, reasons: ['확인 후 미완료'] });
+      if (ageSec >= CONFIRM_GRACE_SEC) pending.push({ time, store, biz, handler: confirmPerson, cat: ch.defaultCat, intake, reasons: ['확인 후 미완료'] });
     }
   }
   return { completed, externCount, dup, latest };
@@ -436,7 +439,11 @@ async function tallyVoc(msgs, voc, channelId, opts) {
     pending.sort((a, b) => (b.time || '').localeCompare(a.time || ''));
     done.sort((a, b) => (b.time || '').localeCompare(a.time || ''));
     const de = data.days[dstr] || {};
-    de.counts = counts; de.pending = pending; de.done = done;
+    // 인입유형 집계 — 전체 원격 건(완료 done + 미처리 pending) 기준 온라인/오프라인/미상
+    const intakeAgg = { online: 0, offline: 0, unknown: 0 };
+    for (const it of done) intakeAgg[it.intake || 'unknown']++;
+    for (const it of pending) intakeAgg[it.intake || 'unknown']++;
+    de.counts = counts; de.pending = pending; de.done = done; de.intake = intakeAgg;
     if (latest && latest > (de.updatedAt || '')) de.updatedAt = latest;
     if (!de.updatedAt) de.updatedAt = latest || '';
     data.days[dstr] = de;
