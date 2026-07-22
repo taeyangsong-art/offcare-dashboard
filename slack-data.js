@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1248,
+  "version": 1249,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -45126,7 +45126,7 @@ window.SLACK_DATA = {
           "emp": "최민석",
           "req": "• 금일 긴급으로 사용 필요하여 다운로드 요청 드립니다. (프론트/메뉴 복사O)",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "포프 명변완료 <!subteam^S09URUP2Y4W"
         },
         {
@@ -45137,7 +45137,7 @@ window.SLACK_DATA = {
           "emp": "최민석",
           "req": "영수증 출력 시 용지가 절단되어 출력되어 확인 요청드립니다.",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "1차 거절 / 대구 중구 태평로41 102동 3403호 -회수주소 / nc8000 용지센서 고장으로 대체품 접수 완료"
         },
         {
@@ -45215,7 +45215,7 @@ window.SLACK_DATA = {
           "emp": "최민석",
           "req": "포스기 스피커가 들리지 않아 교체하였으며, 온보딩 요청드립니다.",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "현재 영업중으로 오전 9시30분 재연락 요청"
         },
         {
@@ -45336,7 +45336,7 @@ window.SLACK_DATA = {
           "emp": "최민석",
           "req": "• 메뉴 등록 요청 드립니다.",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 8191702185 / 본점 7351502466 / 화명점 - 화명점 &gt; 본점 메뉴로 전부 똑같이 변경 요청 - 화명점 본점 메뉴로 전부 똑같이 변경 요청 / 메뉴등록 완료 / 점주님 소통 완료"
         },
         {
@@ -45424,7 +45424,7 @@ window.SLACK_DATA = {
           "emp": "최민석",
           "req": "7월 20일 지금 바로 / 메뉴 복사 O / 프론트",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "포프유프 명변 완료 접수날짜로 인하여 익일 가결제 예정 <!subteam^S09URUP2Y4W"
         },
         {
@@ -45490,7 +45490,7 @@ window.SLACK_DATA = {
           "emp": "김규빈",
           "req": "",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         },
         {
@@ -45512,7 +45512,7 @@ window.SLACK_DATA = {
           "emp": "김동욱",
           "req": "8388701142 -&gt; 7078104085 변경. OFF PG 온보딩 이후 다중TID 전환예정 / 안지현 <tel:010-9002-0473|010-9002-0473> / <@U08BA4PDNLT>",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": ""
         },
         {
@@ -45556,7 +45556,7 @@ window.SLACK_DATA = {
           "emp": "심성현",
           "req": "토스페이먼츠건 키오스크 세팅건-&gt; 키오스크 전에 인터넷이 설치가안되어서 대형키오스크 설치는 완료했으나 프로그램 설치가 안되어 있습니다. 세팅부탁드립니다!",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "/ 결제 및 취소 테스트 완료"
         },
         {
@@ -45589,7 +45589,7 @@ window.SLACK_DATA = {
           "emp": "배선유",
           "req": "영수증 출력 내용 변경 요청",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "ㅖ? / offpg! 프론트 3개 터미널 1개 사용중 재온보딩 해달래여 / 8484로 전화해서 1137로 바꿔주기! / 아 이미 변경은 되어있군요 / 불러오기에서 막혔어요 ㅠ offpg는 탭이 2개더라구요 / offpg는 탭이 2개에요???나도볼래 / 아뇨 TID별로 다 뜨는거라 OFFPG랑은 별개입니다 / / 이거 cateca에는 변경되어있는데 재온보딩해"
         },
         {
@@ -45600,7 +45600,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "7월 22일 오후 5시 이후 가능 / 메뉴 복사 X / 터프",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "<!subteam^S09URUP2Y4W 명변 완료입니다 명변 완료입니다"
         },
         {
@@ -45644,7 +45644,7 @@ window.SLACK_DATA = {
           "emp": "김규빈",
           "req": "",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         },
         {
@@ -45722,7 +45722,7 @@ window.SLACK_DATA = {
           "req": "포프(갤럭시) / 신규 온보딩 부탁드립니다",
           "hw": "",
           "urgent": true,
-          "intake": "unknown",
+          "intake": "online",
           "note": "금액입력모드 활성화 완료"
         },
         {
@@ -45778,7 +45778,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "*OFF PG / 명의변경*으로 재온보딩 요청",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "01057294047 / 수요일 오후 2시 15분 예약 완료"
         },
         {
@@ -45789,7 +45789,7 @@ window.SLACK_DATA = {
           "emp": "김규빈",
           "req": "",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         },
         {
@@ -45822,7 +45822,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "포프+유프(태블릿) / 방문설치로 태블릿 온보딩 했으나 결제에 실패한다고 제보주셔서 확인 부탁드립니다",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "통화실패 / • 태블릿 내 구글 계정설정 도움 드림 태블릿 내 구글 계정설정 도움 드림"
         },
         {
@@ -45911,7 +45911,7 @@ window.SLACK_DATA = {
           "req": "설치 기사 인입/주방 프린터기 연결이 되지 않아 확인 요청 드립니다. (기사 방문 상태)",
           "hw": "",
           "urgent": true,
-          "intake": "unknown",
+          "intake": "online",
           "note": "ts100e 모델 영수증프린터 사용하지 않으신 다고 합니다. 주방에서 시리얼로 잡아야 하지만 이더넷 모델이여서 시리얼 연결이 안되어 cpp3000 화이트모델로 재발송 및 ts100 모델 회수 접수 완료"
         },
         {
@@ -45978,7 +45978,7 @@ window.SLACK_DATA = {
           "req": "식권대장 결제오류 확인 부탁드립니다",
           "hw": "",
           "urgent": true,
-          "intake": "unknown",
+          "intake": "online",
           "note": "님혹시 어떤 오류인지... 들으신 거 없으시겠...죠?! 님혹시 어떤 오류인지... 들으신 거 없으시겠...죠?! / 식권대장 결제시 결제 오류로 아래 코드가 뜨는데, 이 오류는 식권대장 측에 문의 해봐야하는걸까요..?! 식권대장에는 매장 코드까지 다 전달한 상황입니다 ! 식권대장 결제시 결제 오류로 아래 코드가 뜨는데, 이 오류는 식권대장 측에 문의 해봐"
         },
         {
@@ -46055,7 +46055,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "7월 20일 오후 4시 / 메뉴복사 O / 프론트, 유프, 키오스크set",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "10분뒤 재통화 요청 / <!subteam^S09URUP2Y4W 명변 완료입니다 명변 완료입니다"
         },
         {
@@ -46132,7 +46132,7 @@ window.SLACK_DATA = {
           "emp": "최민석",
           "req": "영수증 출력했더니 글씨가 다 쪼그라들어서(?) 출력이 된다 하셨습니다. 프린터 설정 확인 부탁드립니다!",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "1차 거절 / 님 안녕하세요 해당 매장 점주님 통화중이실까요? 님 안녕하세요 해당 매장 점주님 통화중이실까요? / 엇 아니요 끊고 업로드 하였습니다..! 엇 아니요 끊고 업로드 하였습니다..!"
         },
         {
@@ -46143,7 +46143,7 @@ window.SLACK_DATA = {
           "emp": "최민석",
           "req": "(토스포스) 명의변경해서 사용중이신데 기존매장에서 사용중이던 옵션을 전부 다 삭제하고 싶다 하셨습니다.",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "없어용 / 직접 삭제하시다가 일괄로 삭제 요청하셨는데 전화드려 한번 더 확인해 보겠습니다..! :개굴-죄송: 직접 삭제하시다가 일괄로 삭제 요청하셨는데 전화드려 한번 더 확인해 보겠습니다..! / 제가 전화할게염 / 지금 원격 요청하신건도 있어서요! 프린터 설정 때문에 통화중이실수도 있으셔요,,! / 전화번호는 01080008417여기로 부탁드립니다! / "
         },
         {
@@ -46231,7 +46231,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "포프캣(노트북) / 영수증 재출력하고 싶으나 포스 로그인 실패 제보 주셨는데 확인 부탁드립니다.",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "• 기존 캣프에서 영수증 재출력위해 캣포프 연동 해드렸으나 위 방식대로는 매우 불편하시다며 무상반품요청으로 OB요청 완료입니다 기존 캣프에서 영수증 재출력위해 캣포프 연동 해드렸으나 위 방식대로는 매우 불편하시다며 무상반품요청으로 OB요청 완료입니다 / • 이전 이력 온도감 매우매우 높음 이전 이력 온도감 매우매우 높음"
         },
         {
@@ -46253,7 +46253,7 @@ window.SLACK_DATA = {
           "emp": "김동욱",
           "req": "8388701142 -> 7078104085 변경. OFF PG 온보딩 이후 다중TID 전환예정 / 김강산 01096187807 / <@U08BA4PDNLT>",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "사업자변경 완료"
         },
         {
@@ -46297,7 +46297,7 @@ window.SLACK_DATA = {
           "emp": "김동욱",
           "req": "8388701142 -&gt; 7078104085 변경. OFF PG 온보딩 이후 다중TID 전환예정 / 방지안 01066056628 / <@U08BA4PDNLT>",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "사업자변경 완료"
         },
         {
@@ -46330,7 +46330,7 @@ window.SLACK_DATA = {
           "emp": "심성현",
           "req": "7월 20일 오후 2시 30분 ~ 오후 5시 30분 사이 가능  / 메뉴 복사 X / 프론트",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "명변 완료"
         },
         {
@@ -46374,7 +46374,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "7월 20일 지금 바로 / 메뉴 복사 O / 프론트, 포스, 유프, 금전함",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "<!subteam^S09URUP2Y4W 명변 완료입니다 명변 완료입니다"
         },
         {
@@ -46396,7 +46396,7 @@ window.SLACK_DATA = {
           "emp": "김현기",
           "req": "컵넛 어반브릭스점 제로페이 설치하셨다고 하는데 결제는 되고, 포스상에 매출이 안잡힌다고 합니다",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "손님이 가게 바코드를 찍는 것은 토스포스에 안들어옴 / 손님의 바코드를 토스 프론트에 찍는 결제만 올라오는게 맞음 전반적인 설명 완료"
         },
         {
@@ -46407,7 +46407,7 @@ window.SLACK_DATA = {
           "emp": "심성현",
           "req": "포스기+유프 / AS 사유로 유프 수령하여 재온보딩 부탁드립니다.",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "15분 뒤 통화 요청"
         },
         {
@@ -46473,7 +46473,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "오후 2시 통화 요청 / 프론트 2개 / 메뉴 복사 O",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "통화중 / 계속 통화중 / <!subteam^S09URUP2Y4W 명변 완료입니다 명변 완료입니다 / • 2대중 1대 완료 • 1대는 추후 직접 하시겠다고함. 단말기 초기화 꼭 하셔야함 안내 2대중 1대 완료 1대는 추후 직접 하시겠다고함. 단말기 초기화 꼭 하셔야함 안내"
         },
         {
@@ -46495,7 +46495,7 @@ window.SLACK_DATA = {
           "emp": "김현기",
           "req": "오케이포스 사용 분할결제 했는데, 54000원 나머지 금액 남아 있는 상태 / 남아있는 금액 따로 결제 해서 삭제 방법 문의",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "중간에 결제 금액 남으면 계속 남는게 맞음, 어쩔 수 없지만 현금으로 임시 결제 처리하여 떨궈야 함 아낸 완료"
         },
         {
@@ -46539,7 +46539,7 @@ window.SLACK_DATA = {
           "emp": "배선유",
           "req": "",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         },
         {
@@ -46639,7 +46639,7 @@ window.SLACK_DATA = {
           "emp": "김동욱",
           "req": "7월 20일 오후 1시 30분 / 메뉴 복사 X / 프론트, 포스, 유프, 금전함",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "<!subteam^S09URUP2Y4W 포프유프(1560) 명의변경 완료 포프유프(1560) 명의변경 완료"
         },
         {
@@ -46650,7 +46650,7 @@ window.SLACK_DATA = {
           "emp": "배선유",
           "req": "방문 설치 완료 매장 / 금전함이 안열리는 증상 확인 부탁드립니다",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "돈통 열기 활성화"
         },
         {
@@ -46728,7 +46728,7 @@ window.SLACK_DATA = {
           "emp": "김동욱",
           "req": "외주'",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": ""
         },
         {
@@ -46739,7 +46739,7 @@ window.SLACK_DATA = {
           "emp": "김규빈",
           "req": "영수증에 타지점 주소/전화번호로 출력되어",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "<tel:010-5883-6819|010-5883-6819 010-5883-6819 / 금일 휴무 위번호로 명일 14시 에약 / 넵, 감사합니다! 혜인님, 내일 진행하기로 했습니다 넵, 감사합니다! 혜인님, 내일 진행하기로 했습니다"
         },
         {
@@ -46750,7 +46750,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "• 주방(고기)으로 영수증 출력 안됨",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "교체안내 및 이카접수 완료"
         },
         {
@@ -46816,7 +46816,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "7월 20일 오후 12시 ~ 17시 / 메뉴복사X / 터프",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "통화거부 / <!subteam^S09URUP2Y4W 명변 완료입니다 명변 완료입니다"
         },
         {
@@ -46827,7 +46827,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "7월 16일 오후 5시30분 / 메뉴 복사 X / 터프",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "이거 바로 전화드리면 되는거죠 선님?! / <!subteam^S09URUP2Y4W 명변 완료입니다 명변 완료입니다"
         },
         {
@@ -46838,7 +46838,7 @@ window.SLACK_DATA = {
           "emp": "김동욱",
           "req": "금전함 열람이후 닫히지 않는다고 하셔서 확인 한번 부탁드립니다.",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "<!subteam^S085BCLCLTX 님들 안녕하세요. 해당 매장 아정당 가맹점으로 확인되는데 금전함 고장으로 교체가 필요합니다. 확인부탁드리겠습니다! 님들 안녕하세요. / 님 안녕하세요 아정당은 위탁대리점(AS, 운영은 아이샵케어에서 진행)이어서 AS진행을 아이샵케어 기준으로 진행 부탁드립니다! 님 안녕하세요 아정당은 위탁대리점(AS, 운영은 아이샵케어"
         },
         {
@@ -46860,7 +46860,7 @@ window.SLACK_DATA = {
           "emp": "김규빈",
           "req": "컵넛 어반브릭스점 제로페이 설치하셨다고 하는데 결제는 되고, 포스상에 매출이 안잡힌다고 합니다",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "1차 부재 / 오후 14시 재요청 남겨주셨습니다 / 님 전산에서 계속 승인결제 거부를 하는거같아서 CO팀으로 이관 부탁드립니다. 제로페이 결제하셨다는게 프론트로 한게 아니라 템플릿을 QR로 찍고 하셨을지 않을까 싶네요 님 전산에서 계속 승인결제 거부를 하는거같아서 CO팀으로 이관 부탁드립니다. / 14시로 예약메시지 남겨주시고 CO팀한테도 한번 문의 해주세"
         },
         {
@@ -46871,7 +46871,7 @@ window.SLACK_DATA = {
           "emp": "김규빈",
           "req": "포프유 사용 중( 포스기 ) / 유선프린터기에서 영수증 출력이 안된다고 하셔서 확인 요청 드립니다!",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "어댑터 빠져있엇음 재연결 후 정상 확인"
         },
         {
@@ -46893,7 +46893,7 @@ window.SLACK_DATA = {
           "emp": "김동욱",
           "req": "외주",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": ""
         },
         {
@@ -46904,7 +46904,7 @@ window.SLACK_DATA = {
           "emp": "김규빈",
           "req": "",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         },
         {
@@ -46949,7 +46949,7 @@ window.SLACK_DATA = {
           "emp": "배선유",
           "req": "노트북에 토스포스 설치하는데 설치가 자꾸 안된다 하셔서 확인 부탁드립니다 :woman-bowing:",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "원격들어가니 실행됨 / 노트북 사양이 토스포스 최소 사양이라 사용에 어려움 있을 수 있음 / 보안프로그램 정리 / 포프(폰) 으로 변경해 사용 권장"
         },
         {
@@ -46971,7 +46971,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "7월 20일 지금 바로 / 프론트+유프 / 타사 이동식 포스기 보유중",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "통화거부 / 11시 40분 재통화 예정 / <!subteam^S09URUP2Y4W 명변 완료입니다 명변 완료입니다"
         },
         {
@@ -46982,7 +46982,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "7월 20일 지금 바로 / 메뉴 복사 O / 프론트, 태블릿, 유프",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "<!subteam^S09URUP2Y4W 명변 완료입니다 명변 완료입니다"
         },
         {
@@ -47026,7 +47026,7 @@ window.SLACK_DATA = {
           "emp": "김동욱",
           "req": "매출리포트 비밀번호",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "비밀번호 변경 방법 안내완료"
         },
         {
@@ -47048,7 +47048,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "• 주방(고기)으로 영수증 출력 안됨",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "매장 출근 전 12시 재예약 완료"
         },
         {
@@ -47092,7 +47092,7 @@ window.SLACK_DATA = {
           "emp": "심성현",
           "req": "기존 방문 설치 매장 / 키오스크 설치 요청으로 설치 도움 요청",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": ""
         },
         {
@@ -47136,7 +47136,7 @@ window.SLACK_DATA = {
           "emp": "김현기",
           "req": "쿠팡이츠가 포스기 내에서 연동이 느리고 '수락'이 잘 안된다고 합니다. 확인 부탁드립니다",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "1부(전화거절) / 엇 죄송해요 번호 다른걸로 드릴게요! / 님 • 10:55에 <tel:010-9379-8965|010-9379-8965 이 번호로 연락 부탁드리겠습니다!! 님 10:55에 010-9379-8965 이 번호로 연락 부탁드리겠습니다!! / 다른 매장 작업하는게 있어서 혹시 조금 늦어져도 괜찬흥ㄹ까요? / 네넵! / 현기님 혹시 전화 되셨을까"
         },
         {
@@ -47158,7 +47158,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "7월 20일 지금 바로 / 메뉴 복사 X / 터프",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "<!subteam^S09URUP2Y4W 명변 완료입니다 명변 완료입니다"
         },
         {
@@ -47235,7 +47235,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "7월 20일 오전 10시 / 메뉴복사O / 포프,유프2ea,금전함",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "<!subteam^S09URUP2Y4W 명변 완료입니다 명변 완료입니다"
         },
         {
@@ -47356,7 +47356,7 @@ window.SLACK_DATA = {
           "emp": "김동욱",
           "req": "*7/20(월) 오전 9:30 다중TID 재온보딩* 부탁드립니다.",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "다중 TID 재온보딩 완료. 결제테스트 완료. / / 승인은 pg가 거절되어 van으로 retry하여 결제. 취소를 터미널에서 하다보니 취소거절발생. 포스를 통해 취소완료"
         },
         {
@@ -47368,7 +47368,7 @@ window.SLACK_DATA = {
           "req": "프론트 어답터 고장으로 결제 불가 상태, 점검 후 결제할 수 있는 다른 방법 문의주시어 원격 부탁드립니다!",
           "hw": "",
           "urgent": true,
-          "intake": "unknown",
+          "intake": "online",
           "note": "• 프론트 어뎁터 끊어짐으로 결제 불가상태 • 점주과실로 인한 프론트+어뎁터 세트 착불 퀵 발송 안내 • 생각해보신 뒤 5분뒤 법인폰 재인입 예정 프론트 어뎁터 끊어짐으로 결제 불가상태 점주과실로 인한 프론트+어뎁터 세트 착불 퀵 발송 안내 생각해보신 뒤 5분뒤 법인폰 재인입 예정 / <!subteam^S0ANLUVK3PG 안녕하세요 상기매장 프론트 어댑터"
         },
         {
@@ -47413,7 +47413,7 @@ window.SLACK_DATA = {
           "req": "프론트 전원 안 들어옴 / AS 전 단말기 점검 / 다음 일정이 있다고 하셔서 최대한 빠른 연락 요망",
           "hw": "",
           "urgent": true,
-          "intake": "unknown",
+          "intake": "online",
           "note": "전원 다시켜짐. 결제 테스트 후 안되면 다시 연락주기로 하심"
         },
         {
@@ -47447,7 +47447,7 @@ window.SLACK_DATA = {
           "req": "프론트 결제시 정상 작동이 되지 않음. 카드를 지속 적으로 꽂아야한다는 문구가 보여지며 꺼지는 증상도 있음 / 확인 한 번 부탁드립니다! :꾸벅5:",
           "hw": "",
           "urgent": true,
-          "intake": "unknown",
+          "intake": "online",
           "note": "<!subteam^S085BCLCLTX 안녕하세요 상기매장 프론트 IC단자쪽 액체(커피)인입으로 프론트 재부팅 후 결제는 정상적으로 되지만 동일증상 발현 가능성 매우 높아 선조치 필요한 매장입니다. 자대리점(현은시스템)매장으로 확인되어 태그드리니 금일 매장으로 프론트 발송요청 드립니다. 안녕하세요 상기매장 프론트 IC단자쪽 액체(커피)인입으로 프론트 재부팅"
         },
         {
@@ -47672,9 +47672,9 @@ window.SLACK_DATA = {
         ]
       },
       "intake": {
-        "online": 116,
+        "online": 171,
         "offline": 49,
-        "unknown": 55
+        "unknown": 0
       }
     },
     "2026-07-21": {
@@ -47923,7 +47923,7 @@ window.SLACK_DATA = {
           "emp": "최민석",
           "req": "• 메뉴 삭제 부탁드립니다.",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / [가격 변경] 탕수육 짜장1 짬뽕1 28000 탕수육 짬뽕2개 30000 탕수육 쟁반짜장 32000 [메뉴 삭제] • 냉짬뽕 • 돼지고기 가지볶음 • 깐풍가지 • 어향가지새우 [가격 변경] [메뉴 삭제] 냉짬뽕 돼지고기 가지볶음 깐풍가지 어향가지새우 / 유플 깐풍가지는 포스에서 삭제 되어있어 해당 메뉴 제"
         },
         {
@@ -48033,7 +48033,7 @@ window.SLACK_DATA = {
           "emp": "최민석",
           "req": "7월 21일 오후 6시 30분 / 메뉴 복사 O / 프론트",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "포프 명변완료 <!subteam^S09URUP2Y4W"
         },
         {
@@ -48077,7 +48077,7 @@ window.SLACK_DATA = {
           "emp": "최민석",
           "req": "포프(포스기) 사용 중, 포스 내 금액입력 설정한 메뉴를 클릭해도 아무 반응이 없다고 하여 점검 요청드립니다.",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "상품등록 하는방법 안내 완료"
         },
         {
@@ -48287,7 +48287,7 @@ window.SLACK_DATA = {
           "emp": "배선유",
           "req": "",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         },
         {
@@ -48364,7 +48364,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "영수증 출력 설정",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": ""
         },
         {
@@ -48408,7 +48408,7 @@ window.SLACK_DATA = {
           "emp": "배선유",
           "req": "",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         },
         {
@@ -48431,7 +48431,7 @@ window.SLACK_DATA = {
           "emp": "심성현",
           "req": "포스기에 토스포스 안열림 / 시작 클릭 안내 했으나 클릭 안된다고 하심 빠른 상담 요청",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "윈도우 사용자 계정 추가 생성하셨습니다. 부팅 시 기존 걸로 로그온하는 방법 안내했습니다."
         },
         {
@@ -48574,7 +48574,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "7월 21일 오후 5시 / 메뉴 복사 X / 프론트",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "점주 퇴근으로 익일 오후 4시 재예약"
         },
         {
@@ -48608,7 +48608,7 @@ window.SLACK_DATA = {
           "emp": "김기범",
           "req": "포스기에 토스포스 안열림 / 시작 클릭 안내 했으나 클릭 안된다고 하심 빠른 상담 요청",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "지금 전기가 나가서 다시 연락드린다고함"
         },
         {
@@ -48641,7 +48641,7 @@ window.SLACK_DATA = {
           "emp": "심성현",
           "req": "7월 21일 오후 4시 30분 / 메뉴 복사 O / 프론트",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "매장 가는 중 10분 뒤 통화 요청 / 명의 변경 완료 결제, 출력 테스트 완료"
         },
         {
@@ -48687,7 +48687,7 @@ window.SLACK_DATA = {
           "req": "프론트 + 캣(KIS-2420) 사용 매장으로 이전 결제 취소 안내 드렸으나, 카드 승인 번호 불일치라고 뜬다고 합니다. 해당 부분에 대해 정확한 확인이 불가하여 취소 방법 안내 한번 부탁드리겠습니다.",
           "hw": "",
           "urgent": true,
-          "intake": "unknown",
+          "intake": "online",
           "note": "• 결제했던 카드 착각하심 • 전산에는 5421 카드이나 6471 카드로 착각 • 죄송합니다 하고 끊으심 결제했던 카드 착각하심 전산에는 5421 카드이나 6471 카드로 착각 죄송합니다 하고 끊으심 / 감사합니다 태양님 :눈물ㅠ: 죄송해요 :개굴-죄송: 감사합니다 태양님 죄송해요"
         },
         {
@@ -48786,7 +48786,7 @@ window.SLACK_DATA = {
           "emp": "김동욱",
           "req": "프론트 단말기에서 잠시 문제가 생겼어요, 재부팅해주세요 라는 문구 발생하여 확인 요청드립니다.",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "기기 초기화해도 동일. 대체품 출고"
         },
         {
@@ -48830,7 +48830,7 @@ window.SLACK_DATA = {
           "emp": "김규빈",
           "req": "",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         },
         {
@@ -48852,7 +48852,7 @@ window.SLACK_DATA = {
           "emp": "배선유",
           "req": "유프2대 사용 매장으로, 출력 시 소리나오기를 희망하시어 영상으로 도움 부탁드리겠습니다!",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "1차부재 / 멜로디 설정 완료"
         },
         {
@@ -48885,7 +48885,7 @@ window.SLACK_DATA = {
           "emp": "김현기",
           "req": "노트북 + 프론트 온보딩 요청 드립니다 :woman-bowing::skin-tone-4:",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "5분만 / 노트북 프론트 온보딩 완료"
         },
         {
@@ -48896,7 +48896,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "7월 21일 오후 6시 이전 아무때나 가능 / 메뉴 복사 O / 프론트",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "<!subteam^S09URUP2Y4W 명변 완료입니다 명변 완료입니다"
         },
         {
@@ -49050,7 +49050,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "7월 21일 오후 3시 30분 / 메뉴 복사 X / 프론트",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "바쁘신관계로 금일 오후 5시 예약 완료입니다"
         },
         {
@@ -49127,7 +49127,7 @@ window.SLACK_DATA = {
           "emp": "김동욱",
           "req": "외주",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": ""
         },
         {
@@ -49160,7 +49160,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "7월 21일 오후 3시 / 메뉴 복사 O / 프론트",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "금일 오후 4시 30분 예약 요청으로 예약 완료입니다"
         },
         {
@@ -49237,7 +49237,7 @@ window.SLACK_DATA = {
           "emp": "서상원",
           "req": "기존 사용 하던 단말기 명의변경 다운로드 ( 재온보딩 ) 진행 이후 금전함이 열리지 않아 연결 확인 요청 드립니다.",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "돈통설정 / 가결제"
         },
         {
@@ -49281,7 +49281,7 @@ window.SLACK_DATA = {
           "emp": "김규빈",
           "req": "메뉴명 수정",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         },
         {
@@ -49292,7 +49292,7 @@ window.SLACK_DATA = {
           "emp": "김동욱",
           "req": "영수증에 타지점 주소/전화번호로 출력되어",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "자체해결하셨다고 하심."
         },
         {
@@ -49303,7 +49303,7 @@ window.SLACK_DATA = {
           "emp": "김동욱",
           "req": "유프2대 사용 매장으로, 출력 시 소리나오기를 희망하시어 영상으로 도움 부탁드리겠습니다!",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "아직 매장 도착전으로 3시 30분 통화요청. 예약메시지 진행"
         },
         {
@@ -49358,7 +49358,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "7월 21일 오후 2시 / 메뉴 복사 O / 프론트",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "5분뒤 재통화요청 / <!subteam^S09URUP2Y4W 명변 완료입니다 명변 완료입니다 / 토페반려로 가결제 불가. 서류제출 후 재통화예정"
         },
         {
@@ -49369,7 +49369,7 @@ window.SLACK_DATA = {
           "emp": "심성현",
           "req": "포프(노트북) 사용 매장으로, 배민 연동 및 출력이 됐다가 금일 갑자기 되지 않으신다고 하여 점검 요청드립니다:man-bowing:",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "배민 재연동 및 출력 테스트 완료"
         },
         {
@@ -49435,7 +49435,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "7월 21일 오후 2시 / 메뉴 복사 O / 프론트",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "통화중 / 6시 30분 예약 요청으로 예약 완료입니다"
         },
         {
@@ -49446,7 +49446,7 @@ window.SLACK_DATA = {
           "emp": "김동욱",
           "req": "7월 21일 오후 1시 30분 이후 가능 / 메뉴 복사 X / 프론트 / 아이샵케어 기가맹점(현재 터프 사용중)으로 프론트 1대 명변 추가 설치",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "<!subteam^S09URUP2Y4W 포프(휴대폰) 명의변경 완료 포프(휴대폰) 명의변경 완료"
         },
         {
@@ -49501,7 +49501,7 @@ window.SLACK_DATA = {
           "emp": "서상원",
           "req": "토스포스 메시지 발송 설정이 안되며 종료됨/ 유선 안내 했으나 확인 불가로 지원 부탁드립니다! :감사합니다꾸벅:",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "마수동 기준에 대해 토플문의중 답변후 연락예정"
         },
         {
@@ -49601,7 +49601,7 @@ window.SLACK_DATA = {
           "emp": "김동욱",
           "req": "프론트 터미널 온보딩부탁드립니다 (페이먼츠건)",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "터프 재온보딩 완료."
         },
         {
@@ -49634,7 +49634,7 @@ window.SLACK_DATA = {
           "emp": "김동욱",
           "req": "포프(태블릿) 사용 매장으로, 온보딩 도움 요청주시어 확인 부탁드리겠습니다!",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "포프(태블릿) 온보딩완료."
         },
         {
@@ -49744,7 +49744,7 @@ window.SLACK_DATA = {
           "emp": "심성현",
           "req": "유선프린터기 영수증 출력 시, 줄이 그어지는 현상 제보주셨는데 확인 부탁드립니다",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "프린터 내부 용지 잔여물 제거 후 정상 출력 확인 완료"
         },
         {
@@ -49854,7 +49854,7 @@ window.SLACK_DATA = {
           "emp": "김규빈",
           "req": "*  대용량 첨부파일 *1개*(58.05MB) 다운로드기간: 2026.7.21~2026.8.4  ★★ 2026_국회 기가차_키오스크_ 상품명 이미지 20260721.pptx  &lt;<https://bigmail2.nate.com/download/si",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         },
         {
@@ -49865,7 +49865,7 @@ window.SLACK_DATA = {
           "emp": "김규빈",
           "req": "",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         },
         {
@@ -49887,7 +49887,7 @@ window.SLACK_DATA = {
           "emp": "김규빈",
           "req": "",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         },
         {
@@ -49898,7 +49898,7 @@ window.SLACK_DATA = {
           "emp": "심성현",
           "req": "태블릿+프 / 매장 연락처 수정했으나 최신정보 불러오기 , 재실행 미반영 / 재온보딩 요청드립니다.",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "/ 재로그인 후 정상 반영 / 완료"
         },
         {
@@ -49909,7 +49909,7 @@ window.SLACK_DATA = {
           "emp": "김규빈",
           "req": "",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 새 메일 도착! 보낸 사람: choidefi &lt;choidefi@nate.com&gt; 제목: 국회 기가차 메뉴사진의 건 내용: 대용량 첨부파일 1개(58.05MB) 다운로드기간: 2026.7.212026.8.4 ★★ 2026국회 기가차키오스크 상품명 이미지 20260721.pptx &lt; [메일 열"
         },
         {
@@ -49931,7 +49931,7 @@ window.SLACK_DATA = {
           "emp": "김규빈",
           "req": "",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         },
         {
@@ -49997,7 +49997,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "7월 21일 오후 12시 / 메뉴복사X / 프론트",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "익일 정오 예약 요청으로 예약 완료입니다"
         },
         {
@@ -50063,7 +50063,7 @@ window.SLACK_DATA = {
           "emp": "심성현",
           "req": "포프(포스기) 온보딩 요청 드립니다!",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "First POS 프론트 연동 완료"
         },
         {
@@ -50085,7 +50085,7 @@ window.SLACK_DATA = {
           "emp": "심성현",
           "req": "대형 키오스크 2대 사용 / 매장 정전 이후 키오스크 전원 안들어와 확인 요청",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "잔류 전력 제거 후 정상 부팅 완료"
         },
         {
@@ -50129,7 +50129,7 @@ window.SLACK_DATA = {
           "emp": "배선유",
           "req": "주방에 유프가 거꾸로 달려있다고 하셔서 정방향으로 달 수 있는지 영통으로 확인 요청 드립니다!",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "거꾸로 달고 고정하셔도 되고 아래 내려놓고 사용하셔도 됨, 출력물 방향 변경은 불가 안내"
         },
         {
@@ -50371,7 +50371,7 @@ window.SLACK_DATA = {
           "emp": "김동욱",
           "req": "포스기 스피커가 들리지 않아 교체하였으며, 온보딩 요청드립니다.",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "재설치 완료. 배민 lite 쿠팡 매출연동 프린터는 쿠팡 프로그램 요기요 매출연동 프린터는 요기요 프로그램 땡겨요 먹깨비 설치완료. CPP-3000 / TS-400W(USB드라이버로 변환하여 잡아드림)"
         },
         {
@@ -50382,7 +50382,7 @@ window.SLACK_DATA = {
           "emp": "배선유",
           "req": "키오스크 멀티패드가 부착이 떨어져 운영이 불가하다고 제보주셨는데 점검 요청 드립니다",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "6월 24일 기사님 방문한 당일 멀티패드 부착 떨어져 사용x / / 일정등록"
         },
         {
@@ -50737,34 +50737,37 @@ window.SLACK_DATA = {
         ]
       },
       "intake": {
-        "online": 175,
+        "online": 218,
         "offline": 33,
-        "unknown": 43
+        "unknown": 0
       }
     },
     "2026-07-22": {
       "counts": {
+        "extern": {
+          "서상원": 1
+        },
         "as": {
-          "김동욱": 18,
-          "김현기": 13,
-          "심성현": 14,
-          "서상원": 5,
+          "김현기": 14,
+          "심성현": 15,
+          "김동욱": 20,
+          "최민석": 2,
           "배선유": 11,
-          "최민석": 1,
           "송태양": 9,
+          "서상원": 4,
           "김규빈": 5
         },
         "onboarding": {
+          "김동욱": 5,
+          "서상원": 3,
           "배선유": 1,
           "송태양": 3,
-          "김동욱": 4,
-          "서상원": 2,
           "김현기": 2,
           "심성현": 6,
           "김규빈": 2
         },
         "transfer": {
-          "송태양": 4,
+          "송태양": 6,
           "김동욱": 3,
           "심성현": 1
         },
@@ -50777,6 +50780,17 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
+        {
+          "time": "14:30",
+          "store": "멜로클래스",
+          "biz": "2514601094",
+          "handler": "송태양",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "1차 부재"
+          ]
+        },
         {
           "time": "13:23",
           "store": "희희낙락",
@@ -50813,6 +50827,95 @@ window.SLACK_DATA = {
       ],
       "done": [
         {
+          "time": "15:28",
+          "store": "체이스컬트 왜관점",
+          "biz": "5131089849",
+          "cat": "extern",
+          "emp": "서상원",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "15:16",
+          "store": "도깨비감자탕",
+          "biz": "",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "7월 22일 지금 바로 / 메뉴 복사 X / 프론트, 포스, 유프, 금전함",
+          "hw": "",
+          "intake": "online",
+          "note": "com5-9600 / 명변 완료입니다"
+        },
+        {
+          "time": "15:14",
+          "store": "롯데제이티비주식회사",
+          "biz": "01080301625",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "휴대 단말기 관련",
+          "hw": "",
+          "intake": "offline",
+          "note": "수리 불가 / 구매할지 관련 ob적재"
+        },
+        {
+          "time": "15:13",
+          "store": "무비헤어",
+          "biz": "7731402404",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "• 토스포스 프로그램 실행 시 페이지를 찾을 수 없음 문구 발생드립니다.",
+          "hw": "",
+          "urgent": true,
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "15:08",
+          "store": "주식회사 루아타로",
+          "biz": "7578602302",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "PC/포프 재온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "데스크탑 인터넷안되어 확인 후 다시 연락주기로 하심"
+        },
+        {
+          "time": "15:04",
+          "store": "참치정육센타",
+          "biz": "5720900565",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "CAT+유선프린터기(주방) / 구형 기기로 아래 증상이 있다고 제보주셨습니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "2030분 대기 양해 안내 / 바쁘시다고 4시 통화요청. 예약메시지 진행"
+        },
+        {
+          "time": "15:00",
+          "store": "엠엠에이(MMA)story 동해지부",
+          "biz": "3642801834",
+          "cat": "onboarding",
+          "emp": "김동욱",
+          "req": "포프(태블릿) + 유프 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포프유프(태블릿) 온보딩 완료"
+        },
+        {
+          "time": "15:00",
+          "store": "소미",
+          "biz": "6494100429",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "포스기 + 프론트 + 프린터 온보딩",
+          "hw": "",
+          "intake": "online",
+          "note": "인터넷 현재 안되며 공유기 점검 안내 완료 / 점검 후 고객센터 통하여 재인입 하신다고 합니다."
+        },
+        {
           "time": "15:00",
           "store": "제이앤케이실용음악학원",
           "biz": "1379168256",
@@ -50821,7 +50924,7 @@ window.SLACK_DATA = {
           "req": "포프 온보딩 요청드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "자체온보딩하심"
         },
         {
           "time": "14:59",
@@ -50831,8 +50934,8 @@ window.SLACK_DATA = {
           "emp": "배선유",
           "req": "",
           "hw": "",
-          "intake": "unknown",
-          "note": ""
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         },
         {
           "time": "14:54",
@@ -50854,18 +50957,18 @@ window.SLACK_DATA = {
           "req": "터미널에 [포스가 응답하지 않음] 오류 메세지 뜬다고 하셔서 확인 요청 드립니다!",
           "hw": "",
           "intake": "offline",
-          "note": ""
+          "note": "터프 매장 기기 업데이트 오류 재부팅 후 정상 동작 확인 완료"
         },
         {
           "time": "14:47",
           "store": "이제(IJE)",
           "biz": "2710903505",
-          "cat": "as",
+          "cat": "onboarding",
           "emp": "서상원",
           "req": "노트북에 토스포스 설치 예정이고 프론트 연결 온보딩 요청 드립니다!",
           "hw": "",
           "intake": "online",
-          "note": "5분후"
+          "note": "5분후 / 추후 태블릿으로 교체하신다고함"
         },
         {
           "time": "14:47",
@@ -50935,14 +51038,25 @@ window.SLACK_DATA = {
         },
         {
           "time": "14:30",
+          "store": "대단한찜닭 신당점",
+          "biz": "",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "7월 22일 오후 3시 / 메뉴 복사 O / 프론트, 포스, 유프, 금전함",
+          "hw": "",
+          "intake": "online",
+          "note": "명변 완료입니다"
+        },
+        {
+          "time": "14:30",
           "store": "영천얼큰돼지국밥",
           "biz": "",
           "cat": "transfer",
           "emp": "송태양",
           "req": "7월 22일 오후 3시 / 메뉴 복사 O / 프론트, 유프",
           "hw": "",
-          "intake": "unknown",
-          "note": ""
+          "intake": "online",
+          "note": "명변 완료입니다"
         },
         {
           "time": "14:30",
@@ -50953,7 +51067,7 @@ window.SLACK_DATA = {
           "req": "쿠팡이츠 주문접수 프로그램 설치 후 로그인한 사진 1장, 스티커 부착 사진 1장 없을 경우 매장 외관 사진 1장",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "프로그램 설치 및 사진수취 완료"
         },
         {
           "time": "14:28",
@@ -51062,8 +51176,8 @@ window.SLACK_DATA = {
           "emp": "김동욱",
           "req": "*OFF PG / 명의변경*으로 재온보딩 요청",
           "hw": "",
-          "intake": "unknown",
-          "note": ""
+          "intake": "online",
+          "note": "2시 40분 통화요청 / • 법무법인 노바(서울2) 1006호 ◦ 포프(태블릿) • 법무법인 노바(서울1) 404호 ◦ 포프(노트북) 두 곳 모두 명의변경 완료. 법무법인 노바(서울2) 1006호 포프(태블릿) 법무법인 노바(서울1) 404호 포프(노트북) / 카드가없어 결제테스트 불가"
         },
         {
           "time": "13:59",
@@ -51084,7 +51198,7 @@ window.SLACK_DATA = {
           "emp": "배선유",
           "req": "포프(포스기) 연결이 지속적으로 끊긴다며 원격 점검 요청하셨습니다.",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "네트워크 속도도 매우 느리고 연결도 불안정하고 포스기 사양도 딱 최소 사양에 cpu 100% 1. 포스기 교체 고려 2. 네트워크 속도 개선을 위해 공유기를 바꾸거나 요금제를 알아보기 3. 프론트에 유선 lan 연결 위 세가지 중 하나라도 바꿔보자고 안내드렸으나 토스포스 껏켰 했을 때 다시 잘 연결되니 일단 그냥 사용하겠다고 함 포스기 교체 고려 네트워크 "
         },
         {
@@ -51106,7 +51220,7 @@ window.SLACK_DATA = {
           "emp": "배선유",
           "req": "•  포스 화면에 파란색 배경으로 기존 상호명 \"장터족발집\" 표기되는 증상이 있어 확인 부탁드립니다.",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "듀얼모니터 비활성화"
         },
         {
@@ -51183,7 +51297,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "7월 22일 오후 2시 / 메뉴 복사 O / 터프",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "명변 완료입니다"
         },
         {
@@ -51194,7 +51308,7 @@ window.SLACK_DATA = {
           "emp": "배선유",
           "req": "고령 점주 /시재 관리 안내 드렸으나, 이해하지 못하시는 상태입니다. 원격으로 시재관리 방법 안내 부탁드리겠습니다. :핑크_굽신:",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "안내완료"
         },
         {
@@ -51250,7 +51364,7 @@ window.SLACK_DATA = {
           "emp": "김동욱",
           "req": "캣단말기에서 영수증이 안나옴",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "<tel:010-8461-6624|010-8461-6624 010-8461-6624 / van BRD 케이블이 살짝 빠져있었음."
         },
         {
@@ -51394,7 +51508,7 @@ window.SLACK_DATA = {
           "emp": "김동욱",
           "req": "7월22일 13시  / 메뉴복사 불필요  /  포프(휴대폰)유프   - 학원으로 시가상품 등록 방법 안내 함께 부탁드립니다 :꾸벅:",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "포프유프(휴대폰) 명의변경 완료"
         },
         {
@@ -51494,7 +51608,7 @@ window.SLACK_DATA = {
           "emp": "심성현",
           "req": "휴대폰 -&gt; 노트북 / 포프+유프 재온보딩 요청주시어 도움 부탁드리겠습니다!",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "노트북 온보딩 완료 프린터 설정 완료"
         },
         {
@@ -51505,7 +51619,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "포프유프(태블릿)금전함 사용 매장  &gt; 포스기(EDGE1560) 추가로  포스기에 재온보딩 도움 부탁드립니다.",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "1차부재 / • 포프+유프 온보딩 완료 • 매트? 라는 프로그램 사용한다하셔서 유프 AB케이블 사용하여 온보딩 (com7/9600) • 프론트와 연동이 되는지는 알 수 없음 안내 포프+유프 온보딩 완료 매트? 라는 프로그램 사용한다하셔서 유프 AB케이블 사용하여 온보딩 (com7/9600) 프론트와 연동이 되는지는 알 수 없음 안내"
         },
         {
@@ -51527,7 +51641,7 @@ window.SLACK_DATA = {
           "emp": "김동욱",
           "req": "7월 22일 오후 12시 / 메뉴복사X / 프론트",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "포프(데스크탑) 명의변경 완료"
         },
         {
@@ -51582,7 +51696,7 @@ window.SLACK_DATA = {
           "emp": "배선유",
           "req": "",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 완료 완료"
         },
         {
@@ -51593,7 +51707,7 @@ window.SLACK_DATA = {
           "emp": "김규빈",
           "req": "",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         },
         {
@@ -51725,7 +51839,7 @@ window.SLACK_DATA = {
           "emp": "김규빈",
           "req": "",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         },
         {
@@ -51769,7 +51883,7 @@ window.SLACK_DATA = {
           "emp": "배선유",
           "req": "",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 오지마 차? 오미자 차? 일단 메뉴판 그대로"
         },
         {
@@ -51780,7 +51894,7 @@ window.SLACK_DATA = {
           "emp": "심성현",
           "req": "포프+유프(휴대폰/갤럭시) / 신규 온보딩 요청드립니다.",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "온보딩 완료 사용 방법 안내 완료 / 출력 테스트 완료"
         },
         {
@@ -51791,7 +51905,7 @@ window.SLACK_DATA = {
           "emp": "김동욱",
           "req": "주방 프린터 ts100e &gt;&gt; 시리얼 연결 불가로 cpp3000 <https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1784531739291049?thread_ts=17845298",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "통화중 1차 부재 / cpp-3000 연결완료"
         },
         {
@@ -51802,7 +51916,7 @@ window.SLACK_DATA = {
           "emp": "김규빈",
           "req": "",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         },
         {
@@ -51835,7 +51949,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "7월 22일 오전 11시 / 메뉴 복사 X / 프론트, 유프",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "명변 완료입니다"
         },
         {
@@ -51913,7 +52027,7 @@ window.SLACK_DATA = {
           "emp": "배선유",
           "req": "",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         },
         {
@@ -51946,7 +52060,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "포스기 에서 띠리링 소리 지속 발생으로 기술부서 통한 확인 요청하여 전달드립니다! :꾸벅5:",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "• 포스기와 연결된 마우스, 키보드 스피커 등 USB 인식될 때 나오는 소리 • 현재는 해당 소리 안나옴, 추후 동일 증상시 USB포트 옮겨 보시고 그래도 동일 하다면 포스 교체 등 점검 진행 해드리겠음 안내 포스기와 연결된 마우스, 키보드 스피커 등 USB 인식될 때 나오는 소리 현재는 해당 소리 안나옴, 추후 동일 증상시 USB포트 옮겨 보시고 그래도 "
         },
         {
@@ -52001,7 +52115,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "가결제",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": ""
         },
         {
@@ -52067,7 +52181,7 @@ window.SLACK_DATA = {
           "emp": "김동욱",
           "req": "포터프(태블릿)  온보딩 도움 부탁드립니다",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "알에이더블유에서 사용하던 메뉴 동일하게 요청하셔서 토플파 복제로 새로 생성하여 온보딩해드림 고유번호 : 2430365703"
         },
         {
@@ -52078,7 +52192,7 @@ window.SLACK_DATA = {
           "emp": "송태양",
           "req": "7월 22일 오전 10시 / 메뉴 복사 O / 프론트",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "<!subteam^S09URUP2Y4W 명변 완료입니다 명변 완료입니다"
         },
         {
@@ -52111,38 +52225,49 @@ window.SLACK_DATA = {
           "emp": "심성현",
           "req": "7월 22일 오전 9시 / 메뉴 복사 O / 프론트",
           "hw": "",
-          "intake": "unknown",
+          "intake": "online",
           "note": "프론트 재온보딩 명변 완료"
         }
       ],
-      "updatedAt": "15:15",
+      "updatedAt": "15:30",
       "intake": {
-        "online": 73,
-        "offline": 22,
-        "unknown": 26
+        "online": 107,
+        "offline": 24,
+        "unknown": 0
       },
       "voc": {
-        "responses": 3,
+        "responses": 5,
         "install": {
-          "count": 0,
-          "low": 0
+          "count": 2,
+          "low": 1
         },
         "nps": {
-          "count": 3,
-          "low": 2
+          "count": 5,
+          "low": 3
         },
         "high": {
           "install": 0,
-          "nps": 0
+          "nps": 1
         },
         "npsDist": {
-          "0": 1,
+          "0": 2,
           "5": 1,
-          "8": 1
+          "8": 1,
+          "10": 1
         },
-        "installDist": {},
-        "byIndustry": {},
+        "installDist": {
+          "1": 1,
+          "4": 1
+        },
+        "byIndustry": {
+          "서비스[학원]": 1,
+          "요식업": 1
+        },
         "byTenure": {
+          "구매설치": {
+            "total": 2,
+            "low": 1
+          },
           "3개월": {
             "total": 2,
             "low": 1
@@ -52153,6 +52278,14 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SMARTRO": {
+            "total": 1,
+            "low": 0
+          },
+          "KIS": {
+            "total": 1,
+            "low": 1
+          },
           "SECTA9": {
             "total": 2,
             "low": 1
@@ -52163,10 +52296,38 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
-          "필요한 기능이 없거나 몰라서 불편": 1,
-          "단말기 설치나 초기 과정이 어려움": 1
+          "단말기 설치나 초기 과정이 어려움": 3,
+          "필요한 기능이 없거나 몰라서 불편": 1
         },
         "alerts": [
+          {
+            "time": "15:20",
+            "store": "한끼.곁",
+            "storeId": "553899",
+            "industry": "음식점/주점",
+            "indBucket": "요식업",
+            "install": 1,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "설치도 어렵고  전화통화도 안되고 힘들어요",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              },
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "토스 설치한곳에 가서 같이 해도 센터 연락도 안되고 문의를 남기고 전화도 준다면서 안줘요",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:14",
             "store": "시네라마",
@@ -52232,35 +52393,63 @@ window.SLACK_DATA = {
       },
       "1784684674.172249": {
         "post": "1784684674.172249",
-        "lastSeen": 1784700922.422
+        "lastSeen": 1784701827.004
       },
       "1784693061.091859": {
         "post": "1784693061.091859",
-        "lastSeen": 1784700922.422
-      },
-      "1784700007.176689": {
-        "post": "1784700007.176689",
-        "lastSeen": 1784700922.422
-      },
-      "1784700003.718299": {
-        "post": "1784700003.718299",
-        "lastSeen": 1784700922.422
-      },
-      "1784700255.363129": {
-        "post": "1784700255.363129",
-        "lastSeen": 1784700922.422
+        "lastSeen": 1784701827.004
       },
       "1784700723.681399": {
         "post": "1784700723.681399",
-        "lastSeen": 1784700922.422
-      },
-      "1784700502.916199": {
-        "post": "1784700502.916199",
-        "lastSeen": 1784700922.422
+        "lastSeen": 1784701827.004
       },
       "1784700900.734049": {
         "post": "1784700900.734049",
-        "lastSeen": 1784700922.422
+        "lastSeen": 1784701827.004
+      },
+      "1784701801.056159": {
+        "post": "1784701801.056159",
+        "lastSeen": 1784701827.004
+      },
+      "1784701800.259749": {
+        "post": "1784701800.259749",
+        "lastSeen": 1784701827.004
+      },
+      "1784701793.232799": {
+        "post": "1784701793.232799",
+        "lastSeen": 1784701827.004
+      },
+      "1784701659.505019": {
+        "post": "1784701659.505019",
+        "lastSeen": 1784701827.004
+      },
+      "1784701500.913739": {
+        "post": "1784701500.913739",
+        "lastSeen": 1784701827.004
+      },
+      "1784701444.383859": {
+        "post": "1784701444.383859",
+        "lastSeen": 1784701827.004
+      },
+      "1784701429.378389": {
+        "post": "1784701429.378389",
+        "lastSeen": 1784701827.004
+      },
+      "1784701373.863549": {
+        "post": "1784701373.863549",
+        "lastSeen": 1784701827.004
+      },
+      "1784701186.522629": {
+        "post": "1784701186.522629",
+        "lastSeen": 1784701827.004
+      },
+      "1784701088.590599": {
+        "post": "1784701088.590599",
+        "lastSeen": 1784701827.004
+      },
+      "1784701132.092259": {
+        "post": "1784701132.092259",
+        "lastSeen": 1784701827.004
       }
     },
     "days": {
@@ -55122,8 +55311,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-07-22": {
-        "cnt": 57,
-        "sumMin": 1189.9924176335333,
+        "cnt": 61,
+        "sumMin": 1268.8203790267307,
         "over": 6,
         "items": [
           {
@@ -55580,6 +55769,38 @@ window.SLACK_DATA = {
             "store": "더엠브릿지영어학원",
             "biz": "8949202373",
             "who": "김현기",
+            "cat": "as"
+          },
+          {
+            "hm": "15:08",
+            "min": 14.5,
+            "store": "주식회사 루아타로",
+            "biz": "7578602302",
+            "who": "김동욱",
+            "cat": "as"
+          },
+          {
+            "hm": "15:04",
+            "min": 18.7,
+            "store": "참치정육센타",
+            "biz": "5720900565",
+            "who": "김동욱",
+            "cat": "as"
+          },
+          {
+            "hm": "15:00",
+            "min": 22.8,
+            "store": "나무수학학원",
+            "biz": "1839202287",
+            "who": "김현기",
+            "cat": "as"
+          },
+          {
+            "hm": "15:00",
+            "min": 22.8,
+            "store": "소미",
+            "biz": "6494100429",
+            "who": "최민석",
             "cat": "as"
           }
         ]
