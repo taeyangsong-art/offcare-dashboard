@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1279,
+  "version": 1280,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -50745,7 +50745,7 @@ window.SLACK_DATA = {
     "2026-07-22": {
       "counts": {
         "as": {
-          "최민석": 27,
+          "최민석": 28,
           "김기범": 10,
           "배선유": 20,
           "김현기": 29,
@@ -50797,6 +50797,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "22:49",
+          "store": "요기전.포차",
+          "biz": "7640801088",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "프론트 백색 화면 먹통 증상이 있다고 하여 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "22:18",
           "store": "비어럽",
@@ -53650,25 +53661,25 @@ window.SLACK_DATA = {
           "note": "프론트 재온보딩 명변 완료"
         }
       ],
-      "updatedAt": "22:41",
+      "updatedAt": "22:53",
       "intake": {
-        "online": 218,
+        "online": 219,
         "offline": 41,
         "unknown": 0
       },
       "voc": {
-        "responses": 18,
+        "responses": 19,
         "install": {
-          "count": 6,
+          "count": 7,
           "low": 3
         },
         "nps": {
-          "count": 18,
+          "count": 19,
           "low": 10
         },
         "high": {
-          "install": 2,
-          "nps": 4
+          "install": 3,
+          "nps": 5
         },
         "npsDist": {
           "0": 2,
@@ -53679,27 +53690,27 @@ window.SLACK_DATA = {
           "6": 1,
           "7": 1,
           "8": 2,
-          "10": 4
+          "10": 5
         },
         "installDist": {
           "1": 3,
           "4": 1,
-          "5": 2
+          "5": 3
         },
         "byIndustry": {
+          "서비스[학원]": 3,
           "서비스[뷰티,헤어]": 2,
           "기타": 1,
-          "서비스[학원]": 2,
           "요식업": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 7,
+            "low": 3
+          },
           "6개월": {
             "total": 1,
             "low": 1
-          },
-          "구매설치": {
-            "total": 6,
-            "low": 3
           },
           "3개월": {
             "total": 5,
@@ -53715,12 +53726,12 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
-          "KPN": {
-            "total": 5,
+          "KIS": {
+            "total": 7,
             "low": 3
           },
-          "KIS": {
-            "total": 6,
+          "KPN": {
+            "total": 5,
             "low": 3
           },
           "SMARTRO": {
@@ -53991,6 +54002,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "22:53",
+            "store": "진민지 탁구클럽",
+            "storeId": "552775",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "친절히 궁금한상황 성실히 답변해줌 편리함 ㅡ디자인만족",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "20:15",
             "store": "봄날(BOMNAL)",
             "storeId": "433711",
@@ -54030,11 +54053,11 @@ window.SLACK_DATA = {
       },
       "1784684674.172249": {
         "post": "1784684674.172249",
-        "lastSeen": 1784727926.218
+        "lastSeen": 1784728839.647
       },
       "1784693061.091859": {
         "post": "1784693061.091859",
-        "lastSeen": 1784727926.218
+        "lastSeen": 1784728839.647
       },
       "1784705400.803909": {
         "post": "1784705400.803909",
@@ -54042,7 +54065,7 @@ window.SLACK_DATA = {
       },
       "1784707033.690699": {
         "post": "1784707033.690699",
-        "lastSeen": 1784727926.218
+        "lastSeen": 1784728839.647
       }
     },
     "days": {
