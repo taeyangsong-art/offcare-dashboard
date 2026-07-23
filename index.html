@@ -1859,7 +1859,8 @@ function renderMenuReg(){
       <div style="display:flex;gap:8px;flex-wrap:wrap;margin:8px 0">
         <a class="btn" href="${sel.link}" target="_blank">💬 슬랙 원문</a>
         ${(sel.drive||[]).map((d,i2)=>`<a class="btn" href="${d}" target="_blank">🖼 이미지${(sel.drive.length>1?' '+(i2+1):'')}</a>`).join('')}
-        ${sel.files?`<span class="hint" style="align-self:center">📎 슬랙 첨부 ${sel.files}장 (슬랙 원문에서 확인)</span>`:''}
+        ${(sel.att||[]).map((a,ai)=>`<a class="btn" href="${a.path}" target="_blank" download title="${escapeHtml(a.name)}">📎 ${escapeHtml((a.name||('첨부'+(ai+1))).length>18?(a.name.slice(0,16)+'…'):(a.name||('첨부'+(ai+1))))}</a>`).join('')}
+        ${sel.files&&!(sel.att||[]).length?`<span class="hint" style="align-self:center">📎 슬랙 첨부 ${sel.files}장 — 슬랙 원문에서 확인${sel.date&&((Date.now()-new Date(sel.date).getTime())>7*86400000)?' (7일 지나 직접 다운로드 만료)':''}</span>`:''}
       </div>
       <div style="display:flex;gap:8px;align-items:stretch;margin:8px 0">
         <textarea id="mrMemo" rows="2" placeholder="📝 매장 메모 (팀 공유) — 사용 프로그램, ASP 계정, 특이사항 등" style="flex:1;border:1px solid #e6d9a0;background:#fffbe8;border-radius:10px;padding:8px 11px;font-size:13px">${escapeHtml(memoVal)}</textarea>

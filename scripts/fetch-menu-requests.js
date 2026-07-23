@@ -59,6 +59,37 @@ const cleanReply = (t) => String(t || '')
   .replace(/<@[A-Z0-9]+(\|[^>]*)?>/g, '').replace(/<(https?:[^>|]+)(\|[^>]*)?>/g, '$1')
   .replace(/&gt;/g, '>').replace(/&lt;/g, '<').replace(/&amp;/g, '&').trim().slice(0, 600);
 
+// 슬랙 첨부파일 다운로드 — 대시보드에서 직접 받게 저장소(menu-files/)에 실어둠. 최근 FILE_DAYS만 유지(롤링).
+const FILE_DIR = 'menu-files';
+const FILE_DAYS = 7;                          // 파일 보관 기간(용량 관리) — 지나면 자동 삭제, 슬랙 원문 링크로 폴백
+const FILE_MAX = 10 * 1024 * 1024;            // 10MB 초과 파일 제외
+const FILE_PER_MSG = 6;
+let fileDownloaded = 0;
+const FILE_DL_CAP = 40;                       // 실행당 다운로드 상한(rate 보호) — 나머지는 다음 실행에서
+async function downloadSlackFile(url, dest) {
+  if (fileDownloaded >= FILE_DL_CAP) return false;
+  try {
+    const res = await fetch(url, { headers: { Authorization: 'Bearer ' + TOKEN } });
+    if (!res.ok) return false;
+    const buf = Buffer.from(await res.arrayBuffer());
+    if (!buf.length || buf.length > FILE_MAX) return false;
+    // 토큰 없이 접근 시 슬랙이 로그인 HTML을 주는 경우 방지
+    if (buf.slice(0, 15).toString().toLowerCase().includes('<!doctype')) return false;
+    fs.writeFileSync(dest, buf);
+    fileDownloaded++;
+    return true;
+  } catch (e) { return false; }
+}
+function cleanupOldFiles(nowSec) {
+  if (!fs.existsSync(FILE_DIR)) return 0;
+  let removed = 0;
+  for (const f of fs.readdirSync(FILE_DIR)) {
+    const ts = parseFloat(String(f).split('-')[0].replace('_', '.'));
+    if (ts && nowSec - ts > FILE_DAYS * 86400) { try { fs.unlinkSync(`${FILE_DIR}/${f}`); removed++; } catch (e) {} }
+  }
+  return removed;
+}
+
 // 텍스트에서 POS 종류 추정
 function detectPos(text) {
   const t = (text || '').toLowerCase();
@@ -75,6 +106,9 @@ function detectPos(text) {
   const oldest = nowSec - DAYS * 86400;
   const msgs = await fetchAllRange(CHANNEL, oldest, nowSec);
   console.log(`메뉴요청 채널 메시지 ${msgs.length}건 (최근 ${DAYS}일)`);
+  fs.mkdirSync(FILE_DIR, { recursive: true });
+  const removedFiles = cleanupOldFiles(nowSec);
+  if (removedFiles) console.log(`오래된 첨부 ${removedFiles}개 정리 (보관 ${FILE_DAYS}일)`);
 
   // 이전 적재분 캐시 (댓글 재호출 방지: reply_count·latest_reply 동일하면 재사용)
   const prevMap = {};
@@ -107,6 +141,19 @@ function detectPos(text) {
     const isDup = names.some((n) => /^중복/.test(n));
     const status = handler ? 'done' : isDup ? 'dup' : confirmer ? 'confirm' : 'wait';
 
+    // 첨부파일 — 최근 FILE_DAYS 이내 건만 저장소에 다운로드해 대시보드 직접 다운로드 지원
+    const att = [];
+    if ((m.files || []).length && nowSec - parseFloat(m.ts) <= FILE_DAYS * 86400) {
+      let fi = 0;
+      for (const f of m.files.slice(0, FILE_PER_MSG)) {
+        const ext = (String(f.name || '').match(/\.[A-Za-z0-9]{1,6}$/) || ['.' + (f.filetype || 'bin')])[0];
+        const dest = `${FILE_DIR}/${String(m.ts).replace('.', '_')}-${fi}${ext.toLowerCase()}`;
+        fi++;
+        const ok = fs.existsSync(dest) || ((f.size || 0) <= FILE_MAX && f.url_private_download && await downloadSlackFile(f.url_private_download, dest));
+        if (ok) att.push({ name: String(f.name || '첨부').slice(0, 40), path: dest });
+      }
+    }
+
     // 스레드 댓글 — 요청사항이 댓글에 달리는 케이스. 원글 작성자 댓글 위주(봇 접수글은 사람 댓글 전부).
     const rc = m.reply_count || 0, lr = m.latest_reply || '';
     let replies = [];
@@ -126,7 +173,7 @@ function detectPos(text) {
     items.push({
       ts: m.ts, date: kstDate(m.ts), time: kstHM(m.ts),
       store, biz, phone, pos, content, special,
-      drive: driveLinks, files: fileCnt, replies, rc, lr,
+      drive: driveLinks, files: fileCnt, att, replies, rc, lr,
       status, handler: handler || confirmer || null,
       link: `https://${WORKSPACE}/archives/${CHANNEL}/p${String(m.ts).replace('.', '')}`,
     });
