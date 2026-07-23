@@ -3,10 +3,32 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 6,
- "updatedAt": "2026-07-23 13:00",
+ "version": 7,
+ "updatedAt": "2026-07-23 14:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1784783042.737359",
+   "date": "2026-07-23",
+   "time": "14:04",
+   "store": "카페CCD창원중앙역점",
+   "biz": "5033631452",
+   "phone": "01084956385",
+   "pos": "",
+   "content": "메뉴등록 요청 드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "CCD 세트메뉴 카테고리 생성 및 메뉴 등록 요청 주셔서 전달 드립니다."
+   ],
+   "rc": 2,
+   "lr": "1784783072.878609",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784783042737359"
+  },
   {
    "ts": "1784774806.251629",
    "date": "2026-07-23",
