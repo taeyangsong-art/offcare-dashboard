@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 32,
- "updatedAt": "2026-07-23 23:00",
+ "version": 33,
+ "updatedAt": "2026-07-23 23:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1784816602.774619",
+   "date": "2026-07-23",
+   "time": "23:23",
+   "store": "토이즈나",
+   "biz": "2641902297",
+   "phone": "01039338472\n-",
+   "pos": "기타",
+   "content": "호세쿠엘보 에스페샬 레포사도 750ml -> 700ml 로 숫자(용량)만 수정해주세요",
+   "special": "바로해주세요",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1784816610.797239",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784816602774619"
+  },
   {
    "ts": "1784811543.374539",
    "date": "2026-07-23",
