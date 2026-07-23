@@ -40,6 +40,25 @@ async function fetchAllRange(channelId, oldestTs, latestTs) {
   return msgs;
 }
 
+// 스레드 댓글 읽기 (요청사항이 댓글에 달리는 경우 대응). rate-limit 보호: 실행당 상한 + 변경 스레드만 호출.
+const REPLY_FETCH_CAP = 80;
+let replyFetched = 0;
+async function fetchReplies(channelId, ts) {
+  if (replyFetched >= REPLY_FETCH_CAP) return null;   // null = 상한 도달(캐시 유지)
+  replyFetched++;
+  const url = new URL('https://slack.com/api/conversations.replies');
+  url.searchParams.set('channel', channelId);
+  url.searchParams.set('ts', ts);
+  url.searchParams.set('limit', '30');
+  const res = await fetch(url, { headers: { Authorization: 'Bearer ' + TOKEN } });
+  const j = await res.json();
+  if (!j.ok) return [];
+  return (j.messages || []).slice(1);   // [0]은 원글
+}
+const cleanReply = (t) => String(t || '')
+  .replace(/<@[A-Z0-9]+(\|[^>]*)?>/g, '').replace(/<(https?:[^>|]+)(\|[^>]*)?>/g, '$1')
+  .replace(/&gt;/g, '>').replace(/&lt;/g, '<').replace(/&amp;/g, '&').trim().slice(0, 600);
+
 // 텍스트에서 POS 종류 추정
 function detectPos(text) {
   const t = (text || '').toLowerCase();
@@ -56,6 +75,10 @@ function detectPos(text) {
   const oldest = nowSec - DAYS * 86400;
   const msgs = await fetchAllRange(CHANNEL, oldest, nowSec);
   console.log(`메뉴요청 채널 메시지 ${msgs.length}건 (최근 ${DAYS}일)`);
+
+  // 이전 적재분 캐시 (댓글 재호출 방지: reply_count·latest_reply 동일하면 재사용)
+  const prevMap = {};
+  if (fs.existsSync(OUT)) { const w = {}; try { new Function('window', fs.readFileSync(OUT, 'utf8'))(w); for (const it of ((w.MENU_REQUESTS || {}).items || [])) prevMap[it.ts] = it; } catch (e) {} }
 
   const items = [];
   for (const m of msgs) {
@@ -84,10 +107,26 @@ function detectPos(text) {
     const isDup = names.some((n) => /^중복/.test(n));
     const status = handler ? 'done' : isDup ? 'dup' : confirmer ? 'confirm' : 'wait';
 
+    // 스레드 댓글 — 요청사항이 댓글에 달리는 케이스. 원글 작성자 댓글 위주(봇 접수글은 사람 댓글 전부).
+    const rc = m.reply_count || 0, lr = m.latest_reply || '';
+    let replies = [];
+    if (rc > 0) {
+      const prev = prevMap[m.ts];
+      if (prev && prev.rc === rc && prev.lr === lr) replies = prev.replies || [];   // 변경 없음 → 캐시
+      else {
+        const raw = await fetchReplies(CHANNEL, m.ts);
+        if (raw === null) replies = (prev && prev.replies) || [];                   // 상한 도달 → 기존 유지
+        else replies = raw
+          .filter((r) => !r.bot_id && r.subtype !== 'bot_message' && (r.text || '').trim())
+          .filter((r) => (m.user ? r.user === m.user : true))                       // 원글 작성자 댓글만(봇 원글은 전부)
+          .map((r) => cleanReply(r.text)).filter(Boolean).slice(0, 8);
+      }
+    }
+
     items.push({
       ts: m.ts, date: kstDate(m.ts), time: kstHM(m.ts),
       store, biz, phone, pos, content, special,
-      drive: driveLinks, files: fileCnt,
+      drive: driveLinks, files: fileCnt, replies, rc, lr,
       status, handler: handler || confirmer || null,
       link: `https://${WORKSPACE}/archives/${CHANNEL}/p${String(m.ts).replace('.', '')}`,
     });

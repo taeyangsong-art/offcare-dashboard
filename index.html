@@ -1757,10 +1757,11 @@ function renderMenuReg(){
       <b style="flex:0 0 auto;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${escapeHtml(i.store||'(상호미상)')}</b>
       <span style="font-size:12px;color:#666">${escapeHtml(i.pos||'POS?')}</span>
       <span style="font-size:12px;color:#999;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${escapeHtml((i.content||'').slice(0,40))}</span>
+      ${(i.replies||[]).length?`<span style="font-size:12px;color:var(--blue,#5e5ce6);white-space:nowrap">💬${i.replies.length}</span>`:''}
       <span style="font-size:12px;font-weight:700;color:${st[1]};white-space:nowrap">${st[0]}</span>
       ${i.handler?`<span style="font-size:12px;color:#666;white-space:nowrap">${escapeHtml(i.handler)}</span>`:''}
     </div>`;}).join(''):'<div class="empty-note">해당 상태의 요청이 없습니다.</div>';
-  const grid=sel?(menuregGridCache[sel.ts]!==undefined?menuregGridCache[sel.ts]:menuregDraft(sel.content)):'';
+  const grid=sel?(menuregGridCache[sel.ts]!==undefined?menuregGridCache[sel.ts]:menuregDraft(sel.content+'\n'+((sel.replies||[]).join('\n')))):'';
   const detail=sel?`
     <div class="card">
       <div class="card-head"><h3>🧾 ${escapeHtml(sel.store||'(상호미상)')} <span class="hint">${sel.date} ${sel.time}</span></h3>
@@ -1771,6 +1772,10 @@ function renderMenuReg(){
         ${sel.files?`<span class="hint" style="align-self:center">📎 슬랙 첨부 ${sel.files}장 (슬랙 원문에서 확인)</span>`:''}
       </div>
       <div style="background:var(--surface,#f7f7f8);border-radius:10px;padding:10px 12px;font-size:13px;white-space:pre-wrap;max-height:180px;overflow:auto">${escapeHtml(sel.content||'(요청내용 없음)')}${sel.special?'\n\n[특이사항] '+escapeHtml(sel.special):''}</div>
+      ${(sel.replies||[]).length?`<div style="margin-top:8px">
+        <div style="font-size:13px;font-weight:700;margin-bottom:4px">💬 요청자 댓글 <span class="cnt-badge">${sel.replies.length}</span> <span class="hint">(댓글 내용도 아래 그리드 초안에 자동 반영됨)</span></div>
+        ${sel.replies.map(r=>`<div style="background:rgba(94,92,230,.06);border-left:3px solid var(--blue,#5e5ce6);border-radius:8px;padding:8px 11px;font-size:13px;white-space:pre-wrap;margin-bottom:6px;max-height:120px;overflow:auto">${escapeHtml(r)}</div>`).join('')}
+      </div>`:''}
       <div style="margin-top:12px">
         <div style="font-size:13px;font-weight:700;margin-bottom:4px">📝 메뉴 항목 <span class="hint">(한 줄 = 카테고리 | 메뉴명 | 가격 · 요청문에서 자동 초안 추출 · 신규등록 기준)</span></div>
         <textarea id="mrGrid" rows="7" style="width:100%;font-family:ui-monospace,Consolas,monospace;font-size:13px;border:1px solid var(--line,#ddd);border-radius:10px;padding:10px" oninput="menuregCacheGrid()" placeholder="식사 | 김치볶음밥 | 7000&#10;음료 | 콜라 | 2000">${escapeHtml(grid)}</textarea>
