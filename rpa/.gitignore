@@ -1,0 +1,7 @@
+# 로그인 세션(민감) · 스크린샷 · 의존성 — 커밋 금지
+.auth/
+shots/
+node_modules/
+package-lock.json
+package.json
+codegen-recorded.js
