@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 10,
- "updatedAt": "2026-07-23 15:00",
+ "version": 11,
+ "updatedAt": "2026-07-23 15:15",
  "days": 30,
  "items": [
   {
@@ -20,10 +20,12 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784784927.117819",
-   "status": "confirm",
+   "replies": [
+    "키오스크상품전시관리에서 삭제 완료"
+   ],
+   "rc": 2,
+   "lr": "1784786533.166909",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784784922938479"
   },
@@ -384,10 +386,14 @@ window.MENU_REQUESTS = {
     "옵션 어지럽네..",
     "토플파도없음 ㅅㄱ",
     "토플파 생성되는거 지켜봐야될듯요... 일단 저장해놓기",
-    "규빈님 안녕하세요 !\n여기 금일 토플파 생성되어 메뉴 등록 요청부탁드려도 될까요? :감사합니다꾸벅:"
+    "규빈님 안녕하세요 !\n여기 금일 토플파 생성되어 메뉴 등록 요청부탁드려도 될까요? :감사합니다꾸벅:",
+    "선유님 요기좀",
+    "아 여기 어제 슬쩍 열어봣죠",
+    "어질",
+    ":눈물햄스터:"
    ],
-   "rc": 5,
-   "lr": "1784786216.644439",
+   "rc": 10,
+   "lr": "1784787283.853779",
    "status": "confirm",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784702216873929"
@@ -10574,26 +10580,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782196625742819"
-  },
-  {
-   "ts": "1782195225.254849",
-   "date": "2026-06-23",
-   "time": "15:13",
-   "store": "오밀",
-   "biz": "4300603286",
-   "phone": "",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782195250.554149",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782195225254849"
   }
  ]
 };
