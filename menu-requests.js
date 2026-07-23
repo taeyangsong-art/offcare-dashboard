@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 11,
- "updatedAt": "2026-07-23 15:15",
+ "version": 12,
+ "updatedAt": "2026-07-23 15:46",
  "days": 30,
  "items": [
+  {
+   "ts": "1784788744.924859",
+   "date": "2026-07-23",
+   "time": "15:39",
+   "store": "보사노바 베이커리랩 신정점",
+   "biz": "5988502216",
+   "phone": "",
+   "pos": "",
+   "content": "보사노바 커피로스터스 잠실점 (<tel:5178501144|5178501144>) 복제 부탁드립니다!",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 0,
+   "lr": "",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784788744924859"
+  },
   {
    "ts": "1784784922.938479",
    "date": "2026-07-23",
@@ -10560,26 +10580,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782198687213829"
-  },
-  {
-   "ts": "1782196625.742819",
-   "date": "2026-06-23",
-   "time": "15:37",
-   "store": "카페CCD창원중앙역점",
-   "biz": "5033631452",
-   "phone": "01090262589\n-",
-   "pos": "토스포스",
-   "content": "메뉴 사진 넣고싶어요 전화주세오!",
-   "special": "메뉴 사진 넣고싶어요 전화주세오!",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 6,
-   "lr": "1782198109.527299",
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782196625742819"
   }
  ]
 };
