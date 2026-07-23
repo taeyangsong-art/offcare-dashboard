@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 17,
- "updatedAt": "2026-07-23 17:00",
+ "version": 18,
+ "updatedAt": "2026-07-23 17:15",
  "days": 30,
  "items": [
   {
@@ -24,8 +24,8 @@ window.MENU_REQUESTS = {
     "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784624019849009\n\n이전 스레드\n\n파일대로 메뉴 및 옵션이 등록되어있지 않다고 말씀주시어, 혹시 원격으로 진행 부탁드려도 될까요..!?\n\n5시부터 주문 받으시는데 급하다고 하시어 요청드립니다:ㅠㅠ:",
     "감사합니다!!!"
    ],
-   "rc": 4,
-   "lr": "1784793511.484109",
+   "rc": 5,
+   "lr": "1784794206.521569",
    "status": "confirm",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784793427010489"
@@ -576,10 +576,11 @@ window.MENU_REQUESTS = {
    "replies": [
     "담배빼고, 터치키 NO 되어잇는거 빼고만 등록",
     "바코드 그대로 등록했는디...",
-    "OKPOS에서 터치키 NO되어잇는건 빼고 올라와잇는것만 등록햇어요"
+    "OKPOS에서 터치키 NO되어잇는건 빼고 올라와잇는것만 등록햇어요",
+    "통화로 처리완료"
    ],
-   "rc": 6,
-   "lr": "1784793251.470759",
+   "rc": 7,
+   "lr": "1784794311.044659",
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784704133329699"
@@ -765,8 +766,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "맞습니다.\n근데 인입 당시 메일 수신 확인 안돼서 메뉴등록 요청 링크로 재접수 하시도록 안내드렸는데 메일 확인이 되는군요 ㅠㅠ"
    ],
-   "rc": 13,
-   "lr": "1784793135.852989",
+   "rc": 14,
+   "lr": "1784794480.120589",
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784694526574119"
