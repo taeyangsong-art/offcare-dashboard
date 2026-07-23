@@ -1497,7 +1497,7 @@ function empWorkByDay(emp){ const m={}; monthSlackDates().forEach(d=>{ ((slackDa
 // 일별 MVP(그날 업무처리 최다) 선정 횟수 맵 (이번 달)
 function dailyMvpCounts(){ const cnt={}; monthSlackDates().forEach(d=>{ const by={}; ((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp) by[x.emp]=(by[x.emp]||0)+1; }); let top=null,tv=0; for(const e in by){ if(by[e]>tv){ tv=by[e]; top=e; } } if(top) cnt[top]=(cnt[top]||0)+1; }); return cnt; }
 function mvpCountOf(emp){ return dailyMvpCounts()[emp]||0; }
-const ACH_SHORT={hand:'하루 35건',phoenix:'12시간 이상 처리',master:'6업무+VOC·미처리0',god:'하루50건+MVP10회',night:'밤8시후 300건',fool:'???',layoff:'???',fast:'???',thunder:'???',beta:'지정 인원 전용',workaholic:'평일 90일 연속 9~18시 처리',first:'???',bomb:'???',bling:'치장 아이템 50개 수집',star:'타이틀 20개 수집'};
+const ACH_SHORT={hand:'하루 35건',phoenix:'12시간 이상 처리',master:'6업무+VOC·미처리0',god:'하루50건+MVP10회',night:'밤8시후 300건',fool:'???',layoff:'???',fast:'???',thunder:'???',beta:'지정 인원 전용',workaholic:'평일 90일 연속 9~18시 처리',first:'???',bomb:'???',bling:'치장 아이템 50개 수집',star:'타이틀 20개 수집',angler:'낚시터 캐스팅 10,000회'};
 function achShort(k){ return ACH_SHORT[k]||''; }
 // 히든 조건 타이틀: 달성(ok) 또는 보유 전까지 조건·진행을 '???'로 감춤, 활성화되면 실제 조건 공개
 const HIDDEN_ACH = ['fool','layoff','fast','thunder','first','bomb'];
@@ -1531,6 +1531,7 @@ function achStatus(emp, it){
   if(it.ach==='bomb'){ const c=gs(emp).fishMiss||0; return {ok:c>=5000, label:'낚시터 꽝 5,000회 달성', prog:`${c.toLocaleString()}/5,000회`}; }   // 히든: 꽝 누적(카운터 도입 시점부터)
   if(it.ach==='bling'){ const COS=['nametag','hat','pet','skin','hair','dye','eyes','brows','mouth','beard','top','pants','shoes','gloves','cape']; const c=(gs(emp).owned||[]).filter(o=>COS.includes(String(o).split(':')[0])).length; return {ok:c>=50, label:'꾸미기 치장 아이템 50개 수집 (타이틀 제외)', prog:`${c}/50개`}; }
   if(it.ach==='star'){ const c=(gs(emp).owned||[]).filter(o=>String(o).split(':')[0]==='title').length; return {ok:c>=20, label:'타이틀 20개 이상 보유', prog:`${c}/20개`}; }
+  if(it.ach==='angler'){ const c=gs(emp).fishCasts||0; return {ok:c>=10000, label:'낚시터 캐스팅 10,000회 달성', prog:`${c.toLocaleString()}/10,000회`}; }
   if(it.ach==='first'){   // 히든: 그날의 첫 원격 처리 건이 본인 111회 (누적 · 월간 초기화 없음)
     let c=0;
     allSlackDates().forEach(d=>{
@@ -2065,6 +2066,7 @@ const GAME_ITEMS = {
     {id:'t_bomb',name:'💣',price:1,rarity:'legendary',ach:'bomb',autoGrant:true,desc:'심지는 이미 타들어가고 있다. 터질 때까지, 던지고 또 던질 뿐',grad:'linear-gradient(90deg,#1c1c1e,#ff453a,#ff9f0a,#1c1c1e)'},
     {id:'t_bling',name:'여기서부터 저기까지 다주세요',price:1,rarity:'epic',ach:'bling',autoGrant:true,desc:'머리부터 발끝까지, 빛나지 않는 곳이 없다',grad:'linear-gradient(90deg,#ffd60a,#ff9ff3,#4ea8ff,#ffd60a)'},
     {id:'t_star',name:'⭐',price:1,rarity:'mythic',ach:'star',autoGrant:true,desc:'모든 칭호 위에 떠오른, 단 하나의 별',grad:'linear-gradient(90deg,#0a1a4a,#4ea8ff,#fffbe6,#ffd60a,#0a1a4a)'},
+    {id:'t_angler',name:'세월을 낚은',price:1,rarity:'mythic',ach:'angler',autoGrant:true,desc:'찌 끝에 걸린 것은 물고기가 아니라, 흘러간 시간이었다',grad:'linear-gradient(90deg,#0a3d62,#00c7be,#4ea8ff,#0a3d62)'},
     {id:'t_kraken',name:'천사',price:1200,rarity:'mythic',fishOnly:true,desc:'1,200코인을 쓰는 순간, 등 뒤에서 날개가 돋아났다',grad:'linear-gradient(90deg,#00f5d4,#4ea8ff,#8a5cff,#00f5d4)'},
     {id:'t_fishking',name:'아이샵케어',price:1500,rarity:'mythic',fishOnly:true,desc:'회사의 이름을 어깨에 얹은 자. 그 무게, 무려 1,500코인',grad:'linear-gradient(90deg,#ffd34e,#ff5a8a,#00f5d4,#ffd34e)'},
     {id:'ft_novice',name:'초보 낚시꾼',price:60,rarity:'common',fishOnly:true,desc:'물고기보다 장화를 더 많이 낚았지만 괜찮다. 이것도 경력이다'},
@@ -2687,7 +2689,7 @@ async function castFish(spot){
   const cg=fishCastGate(emp,f); if(!cg.ok){ alert(cg.msg); return; }
   if(empAvail(emp)<f.cost){ alert('🪙 코인이 부족해요! (캐스트 '+f.cost+'코인)'); return; }
   if(!(await requireAuth(emp))) return;   // 코인 소모 → 본인 인증
-  addSpent(emp, f.cost); saveGame();
+  addSpent(emp, f.cost); gs(emp).fishCasts=(gs(emp).fishCasts||0)+1; saveGame();   // 캐스팅 누적(세월을 낚은 타이틀용)
   if((FISH_WAIT[spot]||0)<=0){   // 대기 0(초급) → 던지자마자 바로 결과
     fishBusy=true; showFishing(f);
     const res=resolveLoot(emp, rollLootPerk(f.loot, activePerk(emp))); saveGame();
