@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 34,
- "updatedAt": "2026-07-23 23:45",
+ "version": 35,
+ "updatedAt": "2026-07-24 01:15",
  "days": 30,
  "items": [
   {
@@ -10749,26 +10749,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782259544068439"
-  },
-  {
-   "ts": "1782230970.516679",
-   "date": "2026-06-24",
-   "time": "01:09",
-   "store": "살롱드비키",
-   "biz": "2092792875",
-   "phone": "01028749732\n-",
-   "pos": "기타",
-   "content": "추가/피자항목,하와이안모르타델라 22000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1782230987.959459",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782230970516679"
   }
  ]
 };
