@@ -2610,7 +2610,7 @@ function rollLootPerk(loot, perk){
   acc+=pLoss; if(r<acc && losses.length) return pick(losses);
   return nones.length?pick(nones):(coins.length?pick(coins):loot[0]);
 }
-function perkDesc(perk){ if(!perk) return ''; const p=[]; const pct=x=>{const v=Math.round(x*1000)/10; return (Number.isInteger(v)?v:v.toFixed(1))+'%';}; if(perk.item)p.push(`아이템 확률 +${pct(perk.item)}`); if(perk.coin)p.push(`코인 +${perk.coin}개 추가 지급`); if(perk.miss)p.push(`꽝 -${pct(perk.miss)}`); if(perk.loss)p.push(perk.loss>=1?'코인손실 방어(0%)':`코인손실 -${pct(perk.loss)}`); return p.join(' · '); }
+function perkDesc(perk){ if(!perk) return ''; const p=[]; const pct=x=>{const v=Math.round(x*1000)/10; return (Number.isInteger(v)?v:v.toFixed(1))+'%';}; if(perk.item)p.push(`아이템 확률 +${pct(perk.item)}`); if(perk.coin)p.push(`코인 유지 시 +${perk.coin}개 추가 지급`); if(perk.miss)p.push(`꽝 -${pct(perk.miss)}`); if(perk.loss)p.push(perk.loss>=1?'코인손실 방어(0%)':`코인손실 -${pct(perk.loss)}`); return p.join(' · '); }
 function pickItem(rars, fishOnly, emp){ const pool=[]; for(const cat in GAME_ITEMS){ for(const it of GAME_ITEMS[cat]){ if(it.price===0) continue; if(it.targetOnly) continue; if(it.ach || it.onlyFor) continue; if(it.gender && emp && !genderOK(emp,it)) continue; if(!rars.includes(it.rarity)) continue; if(fishOnly && !it.fishOnly) continue; if(!fishOnly && it.fishOnly) continue; if(emp && owns(emp,cat,it.id)) continue; pool.push(Object.assign({cat},it)); } } return pool.length?pool[Math.floor(Math.random()*pool.length)]:null; }
 const CAT_KO={title:'타이틀',nametag:'네임택',hat:'모자',pet:'펫',skin:'피부',hair:'헤어',dye:'염색',eyes:'눈',brows:'눈썹',mouth:'입',beard:'수염',top:'상의',pants:'하의',shoes:'신발',gloves:'장갑',cape:'망토'};
 function resolveLoot(emp,out){ const g=gs(emp);
@@ -2619,7 +2619,7 @@ function resolveLoot(emp,out){ const g=gs(emp);
     if(n<0){   // 손실 결과: 추가 차감 없음 — 던질 때 낸 캐스트 비용만 소모됨
       return {emoji:'🎣',big:'꽝!',sub:'입질 실패... 캐스트 비용만 소모됐어요',cls:'bad'};
     }
-    n=n+(perk.coin||0);   // 펫: 코인 고정 추가 지급
+    if(!out.dbl) n=n+(perk.coin||0);   // 펫 코인 보너스는 일반(코인 유지) 결과에만 — '코인 2배 획득'은 표기 금액 그대로 지급
     addSpent(emp, -n);
     if(out.dbl) return {emoji:'💰',big:'+'+n+' 코인',sub:'🎣 대박! 코인 2배 획득!',cls:'coin',rarity:'epic'};
     const jackpot=n>=100, huge=n>=50, big=n>=25;
