@@ -1497,10 +1497,10 @@ function empWorkByDay(emp){ const m={}; monthSlackDates().forEach(d=>{ ((slackDa
 // 일별 MVP(그날 업무처리 최다) 선정 횟수 맵 (이번 달)
 function dailyMvpCounts(){ const cnt={}; monthSlackDates().forEach(d=>{ const by={}; ((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp) by[x.emp]=(by[x.emp]||0)+1; }); let top=null,tv=0; for(const e in by){ if(by[e]>tv){ tv=by[e]; top=e; } } if(top) cnt[top]=(cnt[top]||0)+1; }); return cnt; }
 function mvpCountOf(emp){ return dailyMvpCounts()[emp]||0; }
-const ACH_SHORT={hand:'하루 35건',phoenix:'12시간 이상 처리',master:'6업무+VOC·미처리0',god:'하루50건+MVP10회',night:'밤8시후 300건',fool:'???',layoff:'???',fast:'???',thunder:'???',beta:'지정 인원 전용',workaholic:'평일 90일 연속 9~18시 처리'};
+const ACH_SHORT={hand:'하루 35건',phoenix:'12시간 이상 처리',master:'6업무+VOC·미처리0',god:'하루50건+MVP10회',night:'밤8시후 300건',fool:'???',layoff:'???',fast:'???',thunder:'???',beta:'지정 인원 전용',workaholic:'평일 90일 연속 9~18시 처리',first:'???'};
 function achShort(k){ return ACH_SHORT[k]||''; }
 // 히든 조건 타이틀: 달성(ok) 또는 보유 전까지 조건·진행을 '???'로 감춤, 활성화되면 실제 조건 공개
-const HIDDEN_ACH = ['fool','layoff','fast','thunder'];
+const HIDDEN_ACH = ['fool','layoff','fast','thunder','first'];
 function achDisplay(emp, it, owned){
   const a = emp ? achStatus(emp, it) : null;
   const hidden = HIDDEN_ACH.includes(it.ach);
@@ -1528,6 +1528,16 @@ function achStatus(emp, it){
   if(it.ach==='fast'){ let c=0; monthSlackDates().forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp===emp && x.urgent) c++; })); return {ok:c>=3, label:'이번 달 긴급/사이렌 처리 3건', prog:`${c}/3건`}; }   // 히든
   if(it.ach==='thunder'){ let c=0; allSlackDates().forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp===emp && x.urgent) c++; })); return {ok:c>=100, label:'긴급/사이렌 처리 100건(누적)', prog:`${c}/100건`}; }   // 히든
   if(it.ach==='beta'){ const ok=(it.onlyFor||[]).includes(emp); return {ok, label:'베타테스터 지정 인원 전용', prog:ok?'달성 ✓':'대상 아님'}; }   // 배선유·김동욱 전용
+  if(it.ach==='first'){   // 히든: 그날의 첫 원격 처리 건이 본인 111회 (누적 · 월간 초기화 없음)
+    let c=0;
+    allSlackDates().forEach(d=>{
+      const dn=((slackDay(d)||{}).done||[]).filter(x=>x.time&&x.emp);
+      if(!dn.length) return;
+      const min=dn.reduce((a,x)=>x.time<a?x.time:a, dn[0].time);
+      if(dn.some(x=>x.time===min&&x.emp===emp)) c++;
+    });
+    return {ok:c>=111, label:'그날 아침 첫 원격 건 처리 111회 (누적)', prog:`${c}/111회`};
+  }
   if(it.ach==='workaholic'){
     // 평일 90일 연속: 각 평일 09:00~18:00 사이 본인 처리 이력 1건 이상.
     // 주말은 건너뜀 · 전사 이력이 아예 없는 평일(공휴일·휴무 추정)도 스트릭을 끊지 않고 건너뜀. (누적 데이터 기준)
@@ -2048,6 +2058,7 @@ const GAME_ITEMS = {
     {id:'t_thunder',name:'⚡',price:1,rarity:'epic',ach:'thunder',autoGrant:true,grad:'linear-gradient(90deg,#ffe14d,#ff9f0a,#ffd60a)'},
     {id:'t_beta',name:'베타테스터',price:1,rarity:'legendary',ach:'beta',autoGrant:true,onlyFor:['배선유','김동욱'],desc:'대시보드 베타테스터의 노고를 기념하기 위한 타이틀',perk:{miss:0.01},grad:'linear-gradient(90deg,#00c7be,#5e5ce6,#e0218a)'},
     {id:'t_workaholic',name:'워커홀릭',price:1,rarity:'legendary',ach:'workaholic',autoGrant:true,desc:'평일 90일 연속, 하루도 쉬지 않고 9시~18시 원격 이력을 남긴 진정한 일벌레',perk:{miss:0.03},grad:'linear-gradient(90deg,#ff9f0a,#ff375f,#bf5af2)'},
+    {id:'t_first',name:'1st',price:1,rarity:'mythic',ach:'first',autoGrant:true,desc:'매일 아침 가장 먼저 원격을 처리한 자에게만 허락된 칭호',grad:'linear-gradient(90deg,#ffd60a,#fffbe6,#ffd60a,#ff9f0a)'},
     {id:'t_kraken',name:'천사',price:1200,rarity:'mythic',fishOnly:true,grad:'linear-gradient(90deg,#00f5d4,#4ea8ff,#8a5cff,#00f5d4)'},
     {id:'t_fishking',name:'아이샵케어',price:1500,rarity:'mythic',fishOnly:true,grad:'linear-gradient(90deg,#ffd34e,#ff5a8a,#00f5d4,#ffd34e)'},
     {id:'ft_novice',name:'초보 낚시꾼',price:60,rarity:'common',fishOnly:true},
