@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 5,
- "updatedAt": "2026-07-23 12:30",
+ "version": 6,
+ "updatedAt": "2026-07-23 13:00",
  "days": 30,
  "items": [
   {
@@ -10546,46 +10546,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782191854920619"
-  },
-  {
-   "ts": "1782187044.607579",
-   "date": "2026-06-23",
-   "time": "12:57",
-   "store": "올드페리도넛 맵달서울 성수",
-   "biz": "3948503267",
-   "phone": "",
-   "pos": "",
-   "content": "올드페리도넛 독산점 (<tel:2728503517|2728503517>) 메뉴 동일하게 넣어주시길 부탁드립니다. (메뉴 복제 하게 되면, 대시 보드 연결까지 부탁드립니다)",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 9,
-   "lr": "1782190788.819929",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782187044607579"
-  },
-  {
-   "ts": "1782186612.740369",
-   "date": "2026-06-23",
-   "time": "12:50",
-   "store": "러블리맘카페",
-   "biz": "8813701229",
-   "phone": "01027405371\n-",
-   "pos": "기타",
-   "content": "카테고리 - 빵\n페스츄리핫도그 미니 ->2개임\n1개는 그대로 두고 1개는 수정 바람\n페스츄리핫도그 미니 2800원  -> 페스츄리 핫도그 4800원 으로 ㅅ 정 바람",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1782186617.069779",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782186612740369"
   }
  ]
 };
