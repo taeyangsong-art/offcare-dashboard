@@ -1177,6 +1177,7 @@ function enableDutyNotif(){
   Notification.requestPermission().then(p=>alert(p==="granted"?"브라우저 알림이 켜졌어요! 🔔 (탭이 열려 있을 때 30분 전 알려드려요)":"알림이 꺼져 있어요. 주소창 왼쪽 자물쇠 아이콘 → 알림 허용으로 켤 수 있어요."));
 }
 const CATEGORIES = [
+  {key:"menureg",    name:"메뉴등록", icon:"🍱"},
   {key:"voc",        name:"VOC",    icon:"💬"},
   {key:"share",      name:"공유",    icon:"📢"},
   {key:"duty",       name:"당직근무", icon:"📅"},
@@ -1659,11 +1660,125 @@ function selectCat(k){
     if(pw!==VOC_MONTHLY_PW){ alert('비밀번호가 틀렸습니다.'); return; }
     sessionStorage.setItem('voc_monthly_ok','1');
   }
-  if(k==='overview'){ resetOverviewPeriod(); celebrateMvp=true; ovShift='all'; } if(k==='voc') resetVocPeriod(); if(k==='game-fish') fishRoom=null; if(k==='teamgoal') teamGoalRef=today(); activeCat=k; renderNav(); renderMain(); window.scrollTo(0,0); }
+  if(k==='overview'){ resetOverviewPeriod(); celebrateMvp=true; ovShift='all'; } if(k==='voc') resetVocPeriod(); if(k==='game-fish') fishRoom=null; if(k==='teamgoal') teamGoalRef=today(); if(k==='menureg') loadData("menu-requests.js", function(){ if(activeCat==='menureg') renderMain(); }); activeCat=k; renderNav(); renderMain(); window.scrollTo(0,0); }
 
 /* ================= Main dispatch ================= */
+/* ================= 🍱 메뉴등록 — 슬랙 요청 적재 + 4개 POS 양식 생성 ================= */
+// 4개 POS 상품등록 양식 매핑 (scripts/menu-transcribe.js 의 브라우저 포팅 · 신규(add) 등록 기준)
+const MENUREG_POS = [
+ {key:'토스플레이스', label:'토스포스', header:true,
+  cols:['상품 ID','상품이름','카테고리','가격 타입 (고정가격 or 시가)','기본가격 (원)','세금','재고관리','현재수량 (개)','바코드','키오스크/테이블∙픽업오더 노출','키오스크/테이블∙픽업오더 상품이름','키오스크/테이블∙픽업오더 상품설명','제조사','상품코드'],
+  row:r=>({'상품이름':r.name,'카테고리':r.cat,'기본가격 (원)':r.price})},
+ {key:'퍼스트포스', label:'퍼스트포스', header:true,
+  cols:['상품코드','상품명','상품명(영문)','판매가관리구분','바코드','대분류','거래처','원가','판매상품여부','판매가','과세여부','ERP매핑코드','주문상품구분','주문단위','입수','재고단위','재고관리여부','안전재고','초기재고','원산지','마일리지적립여부','KIOSK상품여부','상품상태','상품설명표기여부','상품설명','상품설명(영문)','터치키표기여부','비고'],
+  defaults:{'주문단위':'낱개','재고관리여부':'Yes','KIOSK상품여부':'No'},
+  row:r=>({'상품명':r.name,'대분류':r.cat,'판매가':r.price})},
+ {key:'오케이포스', label:'오케이포스', header:true,
+  cols:['상품명','대분류','거래처','주문상품구분','판매상품여부','가격관리구분','판매단가','원산지','주문단위구분','최소주문수량','매핑상품코드','바코드','과세여부','재고관리','원가','안전재고','초기재고','모바일주문구분','키오스크주문구분','품목','비고','주방프린터01 (주방)'],
+  defaults:{'주문상품구분':'사입상품','판매상품여부':'Yes','가격관리구분':'정가상품','원산지':'원산지명','원가':'0','주문단위구분':'낱개','최소주문수량':'1','과세여부':'Yes','재고관리':'Yes','안전재고':'0','초기재고':'0','모바일주문구분':'일반/POS','키오스크주문구분':'먹고가기/포장','주방프린터01 (주방)':'Yes'},
+  row:r=>({'상품명':r.name,'대분류':r.cat,'판매단가':r.price})},
+ {key:'스파로스포스', label:'스파로스', header:false, note:'스파로스는 공식 양식의 4번째 행부터 데이터로 인식합니다. 생성된 행을 공식 양식 4행부터 붙여넣으세요(1~3행 보존).',
+  cols:['설명','상품바코드','대분류','중분류','소분류','상품명','영수증명','판매단가','경감세율판매단가','상품타입','과세구분','사용여부','원가','경감세율여부','공급가','상품유형','할인여부','싯가여부','ERP상품코드','위해 상품','옵션','옵션그룹','봉사료','봉사료율','속성그룹','재고관리','규격(재고단위)','중량단위','상품중량','원산지','입수단위','입수수량','적정재고','초기재고','상품추가정보','한글상품표시명','영문상품표시명','일문상품표시명','중문_간체상품표시명','중문_번체상품표시명'],
+  defaults:{'상품타입':'일반상품','과세구분':'과세','사용여부':'정상','상품유형':'일반매출','할인여부':'Y','싯가여부':'N','위해 상품':'N','봉사료':'N','봉사료율':'0','재고관리':'사용','규격(재고단위)':'EA','원산지':'국내','입수단위':'EA','입수수량':'1','적정재고':'0','초기재고':'0'},
+  row:r=>{ const p=String(r.cat||'').split(/[>\/]/).map(s=>s.trim()).filter(Boolean); const dj=p.length>=3?p:(p.length===2?['',p[0],p[1]]:['','',p[0]||'']); return {'대분류':dj[0],'중분류':dj[1],'소분류':dj[2],'상품명':r.name,'영수증명':r.name,'판매단가':r.price}; }},
+];
+let menuregSel=null, menuregFilter='all';
+const MENUREG_ST={done:['✅ 완료','#34c759'],confirm:['🔎 확인중','#ff9500'],wait:['⏳ 대기','#ff3b30'],dup:['🔁 중복','#8e8e93']};
+const menuregGridCache={};   // ts → 편집 중인 그리드 내용 보존
+function menuregItems(){ return (window.MENU_REQUESTS&&window.MENU_REQUESTS.items)||[]; }
+// 요청 원문에서 '메뉴명 가격' 초안 추출 (룰 기반 — 복잡한 요청은 /메뉴판독 스킬로 정밀 판독)
+function menuregDraft(txt){
+  const rows=[];
+  for(const line of String(txt||'').split('\n')){
+    const m=line.trim().match(/^[-•*\d.)\s]*(.+?)\s+([\d,]{3,})\s*원?\s*$/);
+    if(m){ const price=parseInt(m[2].replace(/,/g,''),10); if(price>=100&&price<10000000&&m[1].length<=40) rows.push('메뉴 | '+m[1].replace(/\|/g,'/').trim()+' | '+price); }
+  }
+  return rows.join('\n');
+}
+function menuregParseGrid(){
+  const ta=document.getElementById('mrGrid'); if(!ta) return [];
+  const rows=[];
+  for(const line of ta.value.split('\n')){
+    const t=line.trim(); if(!t) continue;
+    const parts=t.split('|').map(s=>s.trim());
+    let cat,name,price;
+    if(parts.length>=3){ cat=parts[0]; name=parts[1]; price=parts[2]; }
+    else if(parts.length===2){ cat='메뉴'; name=parts[0]; price=parts[1]; }
+    else continue;
+    price=parseInt(String(price).replace(/[^\d]/g,''),10);
+    if(!name||!price) continue;
+    rows.push({cat:cat||'메뉴',name,price});
+  }
+  return rows;
+}
+function menuregCsvCell(v){ v=(v==null?'':String(v)); return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v; }
+function menuregGen(pi){
+  const P=MENUREG_POS[pi]; const rows=menuregParseGrid();
+  if(!rows.length){ alert('메뉴 항목이 없습니다.\n그리드에 한 줄당 "카테고리 | 메뉴명 | 가격" (또는 "메뉴명 | 가격") 형식으로 입력하세요.'); return; }
+  const item=menuregItems().find(i=>i.ts===menuregSel)||{};
+  const lines=[]; if(P.header) lines.push(P.cols.map(menuregCsvCell).join(','));
+  for(const r of rows){ const o=Object.assign({},P.defaults||{},P.row(r)); lines.push(P.cols.map(h=>menuregCsvCell(o[h]!==undefined?o[h]:'')).join(',')); }
+  const csv='﻿'+lines.join('\n')+'\n';
+  const safe=(item.store||'매장').replace(/[\\/:*?"<>|]/g,'_');
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));
+  a.download=P.key+'_업로드_'+safe+'.csv'; a.click(); URL.revokeObjectURL(a.href);
+  if(P.note) alert('⚠️ '+P.note);
+}
+function menuregSelect(ts){ menuregSel=(menuregSel===ts?null:ts); renderMenuReg(); }
+function menuregSetFilter(f){ menuregFilter=f; renderMenuReg(); }
+function menuregCacheGrid(){ const ta=document.getElementById('mrGrid'); if(ta&&menuregSel) menuregGridCache[menuregSel]=ta.value; }
+function renderMenuReg(){
+  const all=menuregItems();
+  const items=menuregFilter==='all'?all:all.filter(i=>i.status===menuregFilter);
+  const upd=(window.MENU_REQUESTS&&window.MENU_REQUESTS.updatedAt)||'';
+  const cnt=s=>all.filter(i=>i.status===s).length;
+  const chips=[['all','전체 '+all.length],['wait','⏳ 대기 '+cnt('wait')],['confirm','🔎 확인중 '+cnt('confirm')],['done','✅ 완료 '+cnt('done')],['dup','🔁 중복 '+cnt('dup')]]
+    .map(([k,l])=>`<button class="btn" style="${menuregFilter===k?'background:var(--blue);color:#fff;border-color:var(--blue)':''}" onclick="menuregSetFilter('${k}')">${l}</button>`).join(' ');
+  const sel=all.find(i=>i.ts===menuregSel);
+  const rows=items.length?items.map(i=>{
+    const st=MENUREG_ST[i.status]||MENUREG_ST.wait;
+    return `<div onclick="menuregSelect('${i.ts}')" style="display:flex;gap:10px;align-items:center;padding:10px 12px;border-bottom:1px solid var(--line,#eee);cursor:pointer;${i.ts===menuregSel?'background:rgba(94,92,230,.08);':''}">
+      <span style="font-size:12px;color:#888;white-space:nowrap">${i.date.slice(5)} ${i.time}</span>
+      <b style="flex:0 0 auto;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${escapeHtml(i.store||'(상호미상)')}</b>
+      <span style="font-size:12px;color:#666">${escapeHtml(i.pos||'POS?')}</span>
+      <span style="font-size:12px;color:#999;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${escapeHtml((i.content||'').slice(0,40))}</span>
+      <span style="font-size:12px;font-weight:700;color:${st[1]};white-space:nowrap">${st[0]}</span>
+      ${i.handler?`<span style="font-size:12px;color:#666;white-space:nowrap">${escapeHtml(i.handler)}</span>`:''}
+    </div>`;}).join(''):'<div class="empty-note">해당 상태의 요청이 없습니다.</div>';
+  const grid=sel?(menuregGridCache[sel.ts]!==undefined?menuregGridCache[sel.ts]:menuregDraft(sel.content)):'';
+  const detail=sel?`
+    <div class="card">
+      <div class="card-head"><h3>🧾 ${escapeHtml(sel.store||'(상호미상)')} <span class="hint">${sel.date} ${sel.time}</span></h3>
+        <span class="hint">${escapeHtml(sel.pos||'POS 미상')} · 사업자 ${escapeHtml(sel.biz||'-')}${sel.phone?' · '+escapeHtml(sel.phone):''}</span></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin:8px 0">
+        <a class="btn" href="${sel.link}" target="_blank">💬 슬랙 원문</a>
+        ${(sel.drive||[]).map((d,i2)=>`<a class="btn" href="${d}" target="_blank">🖼 이미지${(sel.drive.length>1?' '+(i2+1):'')}</a>`).join('')}
+        ${sel.files?`<span class="hint" style="align-self:center">📎 슬랙 첨부 ${sel.files}장 (슬랙 원문에서 확인)</span>`:''}
+      </div>
+      <div style="background:var(--surface,#f7f7f8);border-radius:10px;padding:10px 12px;font-size:13px;white-space:pre-wrap;max-height:180px;overflow:auto">${escapeHtml(sel.content||'(요청내용 없음)')}${sel.special?'\n\n[특이사항] '+escapeHtml(sel.special):''}</div>
+      <div style="margin-top:12px">
+        <div style="font-size:13px;font-weight:700;margin-bottom:4px">📝 메뉴 항목 <span class="hint">(한 줄 = 카테고리 | 메뉴명 | 가격 · 요청문에서 자동 초안 추출 · 신규등록 기준)</span></div>
+        <textarea id="mrGrid" rows="7" style="width:100%;font-family:ui-monospace,Consolas,monospace;font-size:13px;border:1px solid var(--line,#ddd);border-radius:10px;padding:10px" oninput="menuregCacheGrid()" placeholder="식사 | 김치볶음밥 | 7000&#10;음료 | 콜라 | 2000">${escapeHtml(grid)}</textarea>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+        ${MENUREG_POS.map((p,i3)=>`<button class="btn" style="background:var(--blue);color:#fff;border-color:var(--blue)" onclick="menuregGen(${i3})">⬇ ${p.label} 양식</button>`).join('')}
+      </div>
+      <div class="hint" style="margin-top:8px">⚠️ 이름변경·가격수정·삭제(기존 상품)는 상품ID 매칭이 필요합니다 → Claude Code에서 <b>/메뉴판독</b> 으로 처리하세요. 복잡한 요청(옵션·세트)도 /메뉴판독 권장.</div>
+    </div>`:'';
+  document.getElementById("main").innerHTML=`
+    <div class="page-head"><div><h2>🍱 메뉴등록</h2><div class="sub">슬랙 #oc팀_메뉴요청 자동 적재 (최근 ${(window.MENU_REQUESTS&&window.MENU_REQUESTS.days)||7}일) · 요청 선택 → 메뉴 확인 → POS 양식 다운로드${upd?' · 최신 적재 '+upd:''}</div></div></div>
+    <div class="card">
+      <div class="card-head"><h3>📋 요청 목록 <span class="cnt-badge">${items.length}</span></h3><div style="display:flex;gap:6px;flex-wrap:wrap">${chips}</div></div>
+      <div style="max-height:380px;overflow:auto">${rows}</div>
+    </div>
+    ${detail}
+    ${!all.length?'<div class="empty-note">아직 적재된 요청이 없습니다. 자동 적재(10분 주기)가 곧 채웁니다.</div>':''}`;
+}
+
 function renderMain(){
   if(activeCat==="overview") renderOverview();
+  else if(activeCat==="menureg") renderMenuReg();
   else if(activeCat==="duty") renderDuty();
   else if(activeCat==="share") renderShare();
   else if(activeCat==="share-refresh") renderShareRefresh();

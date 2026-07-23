@@ -26,14 +26,20 @@ jobs:
           TALLY_DATE_OFFSET: '0'
         run: node scripts/fetch-and-tally.js
 
+      - name: 메뉴요청 적재 (대시보드 메뉴등록 카테고리)
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        run: node scripts/fetch-menu-requests.js || echo "메뉴요청 적재 실패 — 집계는 계속"
+
       - name: 변경 시 커밋 & 푸시
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet slack-data.js; then
+          if [ -z "$(git status --porcelain slack-data.js menu-requests.js)" ]; then
             echo "변경 없음 — 커밋 생략"
           else
             git add slack-data.js
+            [ -f menu-requests.js ] && git add menu-requests.js
             git commit -m "chore: 원격 AS 집계 자동 갱신 ($(TZ=Asia/Seoul date +%Y-%m-%d))"
             for i in 1 2 3 4 5 6 7 8; do
               git pull --rebase --autostash origin main && git push && { echo "푸시 성공"; exit 0; }
