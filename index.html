@@ -1738,8 +1738,8 @@ function menuregDraft(txt){
   }
   return rows.join('\n');
 }
-function menuregParseGrid(){
-  const ta=document.getElementById('mrGrid'); if(!ta) return [];
+function menuregParseGrid(gridId){
+  const ta=document.getElementById(gridId||'mrGrid'); if(!ta) return [];
   const rows=[];
   for(const line of ta.value.split('\n')){
     const t=line.trim(); if(!t) continue;
@@ -1755,32 +1755,89 @@ function menuregParseGrid(){
   return rows;
 }
 function menuregCsvCell(v){ v=(v==null?'':String(v)); return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v; }
-function menuregGen(pi){
-  const P=MENUREG_POS[pi]; const rows=menuregParseGrid();
+function menuregGen(pi,gridId){
+  const P=MENUREG_POS[pi]; const rows=menuregParseGrid(gridId);
   if(!rows.length){ alert('메뉴 항목이 없습니다.\n그리드에 한 줄당 "카테고리 | 메뉴명 | 가격" (또는 "메뉴명 | 가격") 형식으로 입력하세요.'); return; }
-  const item=menuregItems().find(i=>i.ts===menuregSel)||{};
+  const base=gridId==='mrXlGrid'?(menuregXlName||'엑셀변환'):((menuregItems().find(i=>i.ts===menuregSel)||{}).store||'매장');
   const lines=[]; if(P.header) lines.push(P.cols.map(menuregCsvCell).join(','));
   for(const r of rows){ const o=Object.assign({},P.defaults||{},P.row(r)); lines.push(P.cols.map(h=>menuregCsvCell(o[h]!==undefined?o[h]:'')).join(',')); }
   const csv='﻿'+lines.join('\n')+'\n';
-  const safe=(item.store||'매장').replace(/[\\/:*?"<>|]/g,'_');
+  const safe=base.replace(/[\\/:*?"<>|]/g,'_');
   const a=document.createElement('a');
   a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));
   a.download=P.key+'_업로드_'+safe+'.csv'; a.click(); URL.revokeObjectURL(a.href);
   if(P.note) alert('⚠️ '+P.note);
 }
 // 붙여넣기용 TSV(탭 구분) — 엑셀 양식의 데이터 첫 행 첫 칸에 Ctrl+V 하면 컬럼에 맞게 들어감
-function menuregTsv(pi){
-  const P=MENUREG_POS[pi]; const rows=menuregParseGrid();
+function menuregTsv(pi,gridId){
+  const P=MENUREG_POS[pi]; const rows=menuregParseGrid(gridId);
   if(!rows.length) return null;
   return rows.map(r=>{ const o=Object.assign({},P.defaults||{},P.row(r)); return P.cols.map(h=>String(o[h]!==undefined?o[h]:'').replace(/[\t\n]/g,' ')).join('\t'); }).join('\n');
 }
-function menuregCopy(pi){
-  const t=menuregTsv(pi);
+function menuregCopy(pi,gridId){
+  const t=menuregTsv(pi,gridId);
   if(!t){ alert('메뉴 항목이 없습니다.\n그리드에 "카테고리 | 메뉴명 | 가격" 형식으로 입력하세요.'); return; }
   const P=MENUREG_POS[pi];
   const done=()=>alert('📋 '+P.label+' 양식용 텍스트 복사 완료!\n\n엑셀 양식을 열고 데이터 시작 행'+(P.key==='스파로스포스'?'(스파로스는 4행)':'(헤더 아래 첫 행)')+'의 첫 칸 클릭 → 붙여넣기(Ctrl+V) 하면 컬럼에 맞게 들어갑니다.'+(P.note?'\n\n⚠️ '+P.note:''));
   if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(done,()=>prompt('자동 복사 실패 — 아래를 전체선택(Ctrl+A)·복사(Ctrl+C) 하세요:',t));
   else prompt('아래를 전체선택(Ctrl+A)·복사(Ctrl+C) 하세요:',t);
+}
+// ── 📂 매장 엑셀 업로드 → 메뉴 추출 → POS 양식 변환 ──────────────────────
+let menuregXlName='', menuregXlCache='', xlsxLibP=null;
+function loadXlsxLib(){   // SheetJS 지연 로드 (업로드 시에만)
+  if(window.XLSX) return Promise.resolve();
+  if(xlsxLibP) return xlsxLibP;
+  xlsxLibP=new Promise((res,rej)=>{ const s=document.createElement('script');
+    s.src='https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js';
+    s.onload=res; s.onerror=()=>{ xlsxLibP=null; rej(new Error('변환 라이브러리 로드 실패 — 네트워크 확인')); };
+    document.head.appendChild(s); });
+  return xlsxLibP;
+}
+function menuregXlExtract(rows){
+  // 1) 헤더 행 탐지: 메뉴명/가격(/분류) 컬럼 키워드
+  let nameCol=-1, priceCol=-1, catCol=-1, headerRow=-1;
+  for(let r=0;r<Math.min(rows.length,12);r++){
+    const cells=(rows[r]||[]).map(c=>String(c));
+    const ni=cells.findIndex(c=>/메뉴\s*(이름|명)?$|상품\s*(이름|명)|품명|^이름$/.test(c.trim()));
+    const pi2=cells.findIndex(c=>/가격|판매가|판매단가|단가|금액/.test(c));
+    if(ni>-1&&pi2>-1){ nameCol=ni; priceCol=pi2; catCol=cells.findIndex(c=>/분류|카테고리/.test(c)); headerRow=r; break; }
+  }
+  const out=[]; let curCat='메뉴';
+  for(let r=(headerRow>-1?headerRow+1:0); r<rows.length; r++){
+    const row=rows[r]||[]; if(!row.length) continue;
+    let name='', price=0, cat='';
+    if(nameCol>-1){                                     // 컬럼 매핑 방식
+      name=String(row[nameCol]||'').trim();
+      price=parseInt(String(row[priceCol]||'').replace(/[^0-9]/g,''),10)||0;
+      if(catCol>-1){ cat=String(row[catCol]||'').trim(); if(cat) curCat=cat; }
+    }else{                                              // 휴리스틱: 첫 텍스트=이름, 첫 금액(100~)=가격
+      const texts=[], nums=[];
+      for(const c of row){ const s=String(c).trim(); if(!s) continue;
+        if(/^[\d,\.\s원₩]+$/.test(s)){ const n=parseInt(s.replace(/[^0-9]/g,''),10); if(n>=100&&n<10000000) nums.push(n); }
+        else if(/[가-힣a-zA-Z]/.test(s)) texts.push(s);
+      }
+      name=texts[0]||''; price=nums[0]||0;
+      if(name&&!price&&texts.length===1&&name.length<=20){ curCat=name.replace(/[\[\]<>【】]/g,''); continue; }  // 가격 없는 단독 텍스트 행 = 카테고리 구분
+    }
+    if(name&&price&&name.length<=50) out.push((curCat||'메뉴')+' | '+name.replace(/\|/g,'/')+' | '+price);
+  }
+  return out;
+}
+async function menuregXlUpload(input){
+  const f=input.files&&input.files[0]; if(!f) return;
+  const info=document.getElementById('mrXlInfo'); if(info) info.textContent='⏳ 변환 중...';
+  try{
+    await loadXlsxLib();
+    const wb=XLSX.read(await f.arrayBuffer(),{type:'array'});
+    const lines=[];
+    for(const sn of wb.SheetNames) lines.push(...menuregXlExtract(XLSX.utils.sheet_to_json(wb.Sheets[sn],{header:1,defval:''})));
+    if(!lines.length){ if(info) info.textContent='❌ 메뉴 항목을 찾지 못했습니다 — 파일에 메뉴명·가격이 있는지 확인해주세요.'; return; }
+    menuregXlName=f.name.replace(/\.(xlsx?|csv)$/i,'');
+    menuregXlCache=lines.join('\n');
+    const ta=document.getElementById('mrXlGrid'); if(ta) ta.value=menuregXlCache;
+    if(info) info.textContent='✅ '+f.name+' → '+lines.length+'개 항목 추출 — 검수 후 복사/다운로드하세요';
+  }catch(e){ if(info) info.textContent='❌ 변환 실패: '+e.message; }
+  input.value='';
 }
 function menuregSelect(ts){ menuregSel=(menuregSel===ts?null:ts); renderMenuReg(); }
 function menuregSetFilter(f){ menuregFilter=f; renderMenuReg(); }
@@ -1838,6 +1895,20 @@ function renderMenuReg(){
       <div style="max-height:380px;overflow:auto" id="mrList">${rows}</div>
     </div>
     ${detail}
+    <div class="card">
+      <div class="card-head"><h3>📂 매장 엑셀 → POS 양식 변환</h3><span class="hint">매장이 보내준 메뉴 엑셀(xlsx·xls·csv) 업로드 → 자동 추출 → 검수 → 4개 POS 양식</span></div>
+      <input type="file" accept=".xlsx,.xls,.csv" onchange="menuregXlUpload(this)" style="font-size:13px">
+      <div id="mrXlInfo" class="hint" style="margin-top:6px">${menuregXlName?'📄 '+escapeHtml(menuregXlName)+' (이전 변환 유지)':''}</div>
+      <textarea id="mrXlGrid" rows="8" style="width:100%;font-family:ui-monospace,Consolas,monospace;font-size:13px;border:1px solid var(--line,#ddd);border-radius:10px;padding:10px;margin-top:8px" oninput="menuregXlCache=this.value" placeholder="업로드하면 여기에 '카테고리 | 메뉴명 | 가격' 형식으로 추출됩니다 (직접 입력·수정도 가능)">${escapeHtml(menuregXlCache)}</textarea>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;align-items:center">
+        <span style="font-size:12px;font-weight:700;color:#666">📋 복사→양식에 붙여넣기:</span>
+        ${MENUREG_POS.map((p,i4)=>`<button class="btn" style="background:var(--blue);color:#fff;border-color:var(--blue)" onclick="menuregCopy(${i4},'mrXlGrid')">📋 ${p.label}</button>`).join('')}
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;align-items:center">
+        <span style="font-size:12px;font-weight:700;color:#666">⬇ 파일로 받기:</span>
+        ${MENUREG_POS.map((p,i4)=>`<button class="btn" onclick="menuregGen(${i4},'mrXlGrid')">⬇ ${p.label}</button>`).join('')}
+      </div>
+    </div>
     ${!all.length?'<div class="empty-note">아직 적재된 요청이 없습니다. 자동 적재(10분 주기)가 곧 채웁니다.</div>':''}`;
 }
 
