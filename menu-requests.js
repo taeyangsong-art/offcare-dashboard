@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 21,
- "updatedAt": "2026-07-23 18:00",
+ "version": 22,
+ "updatedAt": "2026-07-23 18:14",
  "days": 30,
  "items": [
   {
@@ -25,8 +25,8 @@ window.MENU_REQUESTS = {
     "감사합니다!!!",
     "감사합니다!!!,,,:pleading_face:"
    ],
-   "rc": 8,
-   "lr": "1784795852.615689",
+   "rc": 9,
+   "lr": "1784797614.540809",
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784793427010489"
@@ -10698,26 +10698,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782208838369749"
-  },
-  {
-   "ts": "1782206037.319839",
-   "date": "2026-06-23",
-   "time": "18:13",
-   "store": "강창구 찹쌀 진순대(양벌점)",
-   "biz": "5613300139",
-   "phone": "",
-   "pos": "",
-   "content": "메뉴수정",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782206049.896519",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782206037319839"
   }
  ]
 };
