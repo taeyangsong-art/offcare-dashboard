@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 9,
- "updatedAt": "2026-07-23 14:45",
+ "version": 10,
+ "updatedAt": "2026-07-23 15:00",
  "days": 30,
  "items": [
   {
@@ -23,8 +23,8 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784784927.117819",
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784784922938479"
   },
   {
@@ -44,9 +44,9 @@ window.MENU_REQUESTS = {
     "[피자]\n• 치킨타코피자 15,900원\n• 비프타코피자 15,900원\n[크러스트]\n• 치킨타코+크러스트 18,900원\n• 비프타코+크러스트 18,900원\n[음료]\n• 할라피뇨 500원\n    ◦ (아래쪽에 피클/소스 등 모아져있는 항목)",
     "완료 이후 문자 한통만 부탁드리겠습니다!"
    ],
-   "rc": 3,
-   "lr": "1784784986.329389",
-   "status": "confirm",
+   "rc": 6,
+   "lr": "1784786395.573629",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784784870408119"
   },
@@ -383,10 +383,11 @@ window.MENU_REQUESTS = {
    "replies": [
     "옵션 어지럽네..",
     "토플파도없음 ㅅㄱ",
-    "토플파 생성되는거 지켜봐야될듯요... 일단 저장해놓기"
+    "토플파 생성되는거 지켜봐야될듯요... 일단 저장해놓기",
+    "규빈님 안녕하세요 !\n여기 금일 토플파 생성되어 메뉴 등록 요청부탁드려도 될까요? :감사합니다꾸벅:"
    ],
-   "rc": 4,
-   "lr": "1784702695.706669",
+   "rc": 5,
+   "lr": "1784786216.644439",
    "status": "confirm",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784702216873929"
@@ -10593,26 +10594,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782195225254849"
-  },
-  {
-   "ts": "1782194107.842329",
-   "date": "2026-06-23",
-   "time": "14:55",
-   "store": "이엠커피 창원상남점",
-   "biz": "7306300746",
-   "phone": "01033700372",
-   "pos": "",
-   "content": "메뉴 이미지 등록 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1782195929.935049",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782194107842329"
   }
  ]
 };
