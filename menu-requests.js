@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 19,
- "updatedAt": "2026-07-23 17:30",
+ "version": 20,
+ "updatedAt": "2026-07-23 17:45",
  "days": 30,
  "items": [
   {
@@ -22,11 +22,12 @@ window.MENU_REQUESTS = {
    "att": [],
    "replies": [
     "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784624019849009\n\n이전 스레드\n\n파일대로 메뉴 및 옵션이 등록되어있지 않다고 말씀주시어, 혹시 원격으로 진행 부탁드려도 될까요..!?\n\n5시부터 주문 받으시는데 급하다고 하시어 요청드립니다:ㅠㅠ:",
-    "감사합니다!!!"
+    "감사합니다!!!",
+    "감사합니다!!!,,,:pleading_face:"
    ],
-   "rc": 6,
-   "lr": "1784794900.115969",
-   "status": "confirm",
+   "rc": 8,
+   "lr": "1784795852.615689",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784793427010489"
   },
