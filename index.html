@@ -1725,6 +1725,20 @@ function menuregGen(pi){
   a.download=P.key+'_업로드_'+safe+'.csv'; a.click(); URL.revokeObjectURL(a.href);
   if(P.note) alert('⚠️ '+P.note);
 }
+// 붙여넣기용 TSV(탭 구분) — 엑셀 양식의 데이터 첫 행 첫 칸에 Ctrl+V 하면 컬럼에 맞게 들어감
+function menuregTsv(pi){
+  const P=MENUREG_POS[pi]; const rows=menuregParseGrid();
+  if(!rows.length) return null;
+  return rows.map(r=>{ const o=Object.assign({},P.defaults||{},P.row(r)); return P.cols.map(h=>String(o[h]!==undefined?o[h]:'').replace(/[\t\n]/g,' ')).join('\t'); }).join('\n');
+}
+function menuregCopy(pi){
+  const t=menuregTsv(pi);
+  if(!t){ alert('메뉴 항목이 없습니다.\n그리드에 "카테고리 | 메뉴명 | 가격" 형식으로 입력하세요.'); return; }
+  const P=MENUREG_POS[pi];
+  const done=()=>alert('📋 '+P.label+' 양식용 텍스트 복사 완료!\n\n엑셀 양식을 열고 데이터 시작 행'+(P.key==='스파로스포스'?'(스파로스는 4행)':'(헤더 아래 첫 행)')+'의 첫 칸 클릭 → 붙여넣기(Ctrl+V) 하면 컬럼에 맞게 들어갑니다.'+(P.note?'\n\n⚠️ '+P.note:''));
+  if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(done,()=>prompt('자동 복사 실패 — 아래를 전체선택(Ctrl+A)·복사(Ctrl+C) 하세요:',t));
+  else prompt('아래를 전체선택(Ctrl+A)·복사(Ctrl+C) 하세요:',t);
+}
 function menuregSelect(ts){ menuregSel=(menuregSel===ts?null:ts); renderMenuReg(); }
 function menuregSetFilter(f){ menuregFilter=f; renderMenuReg(); }
 function menuregCacheGrid(){ const ta=document.getElementById('mrGrid'); if(ta&&menuregSel) menuregGridCache[menuregSel]=ta.value; }
@@ -1761,10 +1775,15 @@ function renderMenuReg(){
         <div style="font-size:13px;font-weight:700;margin-bottom:4px">📝 메뉴 항목 <span class="hint">(한 줄 = 카테고리 | 메뉴명 | 가격 · 요청문에서 자동 초안 추출 · 신규등록 기준)</span></div>
         <textarea id="mrGrid" rows="7" style="width:100%;font-family:ui-monospace,Consolas,monospace;font-size:13px;border:1px solid var(--line,#ddd);border-radius:10px;padding:10px" oninput="menuregCacheGrid()" placeholder="식사 | 김치볶음밥 | 7000&#10;음료 | 콜라 | 2000">${escapeHtml(grid)}</textarea>
       </div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
-        ${MENUREG_POS.map((p,i3)=>`<button class="btn" style="background:var(--blue);color:#fff;border-color:var(--blue)" onclick="menuregGen(${i3})">⬇ ${p.label} 양식</button>`).join('')}
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;align-items:center">
+        <span style="font-size:12px;font-weight:700;color:#666">📋 복사→양식에 붙여넣기:</span>
+        ${MENUREG_POS.map((p,i3)=>`<button class="btn" style="background:var(--blue);color:#fff;border-color:var(--blue)" onclick="menuregCopy(${i3})">📋 ${p.label}</button>`).join('')}
       </div>
-      <div class="hint" style="margin-top:8px">⚠️ 이름변경·가격수정·삭제(기존 상품)는 상품ID 매칭이 필요합니다 → Claude Code에서 <b>/메뉴판독</b> 으로 처리하세요. 복잡한 요청(옵션·세트)도 /메뉴판독 권장.</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;align-items:center">
+        <span style="font-size:12px;font-weight:700;color:#666">⬇ 파일로 받기:</span>
+        ${MENUREG_POS.map((p,i3)=>`<button class="btn" onclick="menuregGen(${i3})">⬇ ${p.label}</button>`).join('')}
+      </div>
+      <div class="hint" style="margin-top:8px">📋 복사 후 각 POS <b>엑셀 양식의 데이터 첫 행</b>에 붙여넣으면(Ctrl+V) 컬럼에 맞게 들어갑니다. ⚠️ <b>이미지 요청·복잡한 요청(변경·옵션·세트)</b>은 Claude Code에서 <b>/메뉴판독</b> → 판독 텍스트를 이 그리드에 붙여넣으세요.</div>
     </div>`:'';
   document.getElementById("main").innerHTML=`
     <div class="page-head"><div><h2>🍱 메뉴등록</h2><div class="sub">슬랙 #oc팀_메뉴요청 자동 적재 (최근 ${(window.MENU_REQUESTS&&window.MENU_REQUESTS.days)||7}일) · 요청 선택 → 메뉴 확인 → POS 양식 다운로드${upd?' · 최신 적재 '+upd:''}</div></div></div>
