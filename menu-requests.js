@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 15,
- "updatedAt": "2026-07-23 16:30",
+ "version": 16,
+ "updatedAt": "2026-07-23 16:45",
  "days": 30,
  "items": [
   {
@@ -21,10 +21,10 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1784791433.735309",
-   "status": "wait",
-   "handler": null,
+   "rc": 2,
+   "lr": "1784792078.985599",
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784791428618789"
   },
   {
@@ -43,12 +43,13 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [
-    "엑셀파일 안열림"
+    "엑셀파일 안열림",
+    "이메일 전달"
    ],
-   "rc": 2,
-   "lr": "1784791819.585029",
-   "status": "wait",
-   "handler": null,
+   "rc": 3,
+   "lr": "1784791844.199189",
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784790693724379"
   },
   {
@@ -107,10 +108,10 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1784789569.383829",
-   "status": "confirm",
-   "handler": "배선유",
+   "rc": 5,
+   "lr": "1784792287.704519",
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784789564812569"
   },
   {
@@ -511,8 +512,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "담배빼고, 터치키 NO 되어잇는거 빼고만 등록"
    ],
-   "rc": 2,
-   "lr": "1784704361.715039",
+   "rc": 4,
+   "lr": "1784792559.680189",
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784704133329699"
@@ -10670,46 +10671,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782203227204019"
-  },
-  {
-   "ts": "1782200057.997479",
-   "date": "2026-06-23",
-   "time": "16:34",
-   "store": "화양연가",
-   "biz": "1773301476",
-   "phone": "01064227315",
-   "pos": "",
-   "content": "메뉴등록 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782200150.023059",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782200057997479"
-  },
-  {
-   "ts": "1782200045.870179",
-   "date": "2026-06-23",
-   "time": "16:34",
-   "store": "(주)태원제이엠푸드",
-   "biz": "4838603749",
-   "phone": "01083846219",
-   "pos": "토스포스",
-   "content": "토스포스 /  메뉴 복사 부탁드립니다.\n• (주)태원제이엠푸드  -> (주)태원제이엠푸드2 매장에 동일하게 복사해주시면 됩니다.\n• 이미지는 복사 불가하여 직접 진행 안내",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1782200320.558119",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782200045870179"
   }
  ]
 };
