@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 25,
- "updatedAt": "2026-07-23 19:15",
+ "version": 26,
+ "updatedAt": "2026-07-23 19:30",
  "days": 30,
  "items": [
   {
@@ -89,10 +89,10 @@ window.MENU_REQUESTS = {
    "replies": [
     "파일로 요청은 드려놓은 상황인데 받는대로 공유드리겠습니다"
    ],
-   "rc": 3,
-   "lr": "1784796712.700169",
-   "status": "wait",
-   "handler": null,
+   "rc": 4,
+   "lr": "1784802556.448289",
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784792863517579"
   },
   {
@@ -791,8 +791,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "맞습니다.\n근데 인입 당시 메일 수신 확인 안돼서 메뉴등록 요청 링크로 재접수 하시도록 안내드렸는데 메일 확인이 되는군요 ㅠㅠ"
    ],
-   "rc": 19,
-   "lr": "1784801585.054209",
+   "rc": 20,
+   "lr": "1784802221.986859",
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784694526574119"
