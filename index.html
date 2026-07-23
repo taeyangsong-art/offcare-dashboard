@@ -2341,7 +2341,9 @@ function genderModal(){ return `<div id="genderPop" class="duty-pop-overlay"><di
   </div></div>`; }
 function showGenderModal(){ if(!gameMe) return; genderDismissed=false; const o=document.getElementById('genderPop'); if(o) o.remove(); document.body.insertAdjacentHTML('beforeend', genderModal()); }
 // 타이틀 등급별 폰트색·후광
-function titleStyleOf(t){ if(!t) return ''; if(t.grad) return `background:${t.grad};-webkit-background-clip:text;background-clip:text;color:transparent`; const map={common:'color:#6b7280',rare:'color:#1a73e8;text-shadow:0 0 6px rgba(26,115,232,.55)',epic:'color:#9c36b5;text-shadow:0 0 8px rgba(156,54,181,.6)',legendary:'color:#e8820a;text-shadow:0 0 10px rgba(232,130,10,.8)'}; return map[t.rarity]||map.common; }
+function titleStyleOf(t){ if(!t) return ''; if(t.grad){ // 이모지 전용 타이틀은 background-clip:text가 검정 실루엣으로 깨짐 → 네이티브 이모지 + 발광
+    if(/^[\p{Extended_Pictographic}\u{FE0F}\u{200D}\u{20E3}\s]+$/u.test(t.name||'')){ const glow={mythic:'#ffd60a',legendary:'#ff453a',epic:'#ffe14d'}[t.rarity]||'#ffd60a'; return `filter:drop-shadow(0 0 4px ${glow}) drop-shadow(0 0 10px ${glow})`; }
+    return `background:${t.grad};-webkit-background-clip:text;background-clip:text;color:transparent`; } const map={common:'color:#6b7280',rare:'color:#1a73e8;text-shadow:0 0 6px rgba(26,115,232,.55)',epic:'color:#9c36b5;text-shadow:0 0 8px rgba(156,54,181,.6)',legendary:'color:#e8820a;text-shadow:0 0 10px rgba(232,130,10,.8)'}; return map[t.rarity]||map.common; }
 function titleStyle(eq){ return titleStyleOf(itemById('title',(eq||{}).title)); }
 // 내 캐릭터 카드 내부(미리보기 시 이 부분만 교체)
 function gameMeInner(emp, eq){ const t=itemById('title',(eq||{}).title);
