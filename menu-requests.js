@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 23,
- "updatedAt": "2026-07-23 18:45",
+ "version": 24,
+ "updatedAt": "2026-07-23 19:00",
  "days": 30,
  "items": [
   {
@@ -655,10 +655,10 @@ window.MENU_REQUESTS = {
     "어질",
     ":눈물햄스터:"
    ],
-   "rc": 10,
-   "lr": "1784787283.853779",
-   "status": "confirm",
-   "handler": "김규빈",
+   "rc": 11,
+   "lr": "1784800347.048219",
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784702216873929"
   },
   {
@@ -791,8 +791,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "맞습니다.\n근데 인입 당시 메일 수신 확인 안돼서 메뉴등록 요청 링크로 재접수 하시도록 안내드렸는데 메일 확인이 되는군요 ㅠㅠ"
    ],
-   "rc": 14,
-   "lr": "1784794480.120589",
+   "rc": 15,
+   "lr": "1784800837.944049",
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784694526574119"
@@ -10700,26 +10700,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782230970516679"
-  },
-  {
-   "ts": "1782208838.369749",
-   "date": "2026-06-23",
-   "time": "19:00",
-   "store": "형과아우 황칠누룽지 삼계탕",
-   "biz": "7643801386",
-   "phone": "01039466987",
-   "pos": "오케이포스",
-   "content": "메뉴 추가 등록 요청드립니다.\n• 프로그램 : KISOKPOS\n• 흑마늘 삼계탕 19000\n• 공기밥 1000",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1782226528.424559",
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782208838369749"
   }
  ]
 };
