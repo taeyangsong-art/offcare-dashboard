@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 53,
- "updatedAt": "2026-07-24 15:15",
+ "version": 54,
+ "updatedAt": "2026-07-24 15:30",
  "days": 30,
  "items": [
   {
@@ -109,8 +109,8 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [],
-   "rc": 4,
-   "lr": "1784867949.516189",
+   "rc": 5,
+   "lr": "1784873860.640099",
    "status": "confirm",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784863620666499"
@@ -10679,49 +10679,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782284329307819"
-  },
-  {
-   "ts": "1782282167.861149",
-   "date": "2026-06-24",
-   "time": "15:22",
-   "store": "퍼리엔",
-   "biz": "1764201290",
-   "phone": "01055297446\n-",
-   "pos": "기타",
-   "content": "키오스크 메뉴에서 사이드에 천연 사탕수수 착즙주스 바로뒤에 세번째에 딸기주스 6000원. 네번째에 파인애플 주스 7000원 을 새로 추가 부탁드립니다.",
-   "special": "빠르면 좋아요",
-   "drive": [
-    "https://drive.google.com/open?id=1E8-9ePQY2ZRClEvfJP1xyT2z5k9yXGs6",
-    "https://drive.google.com/open?id=1BnwLvtXUBtNSZWrXvjSA87FvcCpABGfV"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782287683.893159",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782282167861149"
-  },
-  {
-   "ts": "1782281735.919629",
-   "date": "2026-06-24",
-   "time": "15:15",
-   "store": "카페911커피(Cafe911 COFFEE)",
-   "biz": "8791201918",
-   "phone": "01075357258",
-   "pos": "퍼스트포스",
-   "content": "KPN First POS (퍼스트포스) 사용중 / 키오스크내 메뉴 옵션 등록 요청 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 14,
-   "lr": "1782282640.118889",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782281735919629"
   }
  ]
 };
