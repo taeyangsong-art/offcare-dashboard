@@ -3,10 +3,32 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 70,
- "updatedAt": "2026-07-24 23:00",
+ "version": 71,
+ "updatedAt": "2026-07-25 08:02",
  "days": 30,
  "items": [
+  {
+   "ts": "1784933161.408349",
+   "date": "2026-07-25",
+   "time": "07:46",
+   "store": "카페 아일랜드",
+   "biz": "1610702748",
+   "phone": "01095906162\n-",
+   "pos": "토스포스",
+   "content": "식혜 빼주세요",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1WrV3t0W86-c0nIu0nCYVQ5RAZenLN2SW/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1784933167.252149",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784933161408349"
+  },
   {
    "ts": "1784887700.227999",
    "date": "2026-07-24",
@@ -10585,28 +10607,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782346982070609"
-  },
-  {
-   "ts": "1782341950.528169",
-   "date": "2026-06-25",
-   "time": "07:59",
-   "store": "착한파스타 동판교점",
-   "biz": "5294301069",
-   "phone": "01062724319\n-",
-   "pos": "기타",
-   "content": "배민에 신규 입점한 매장의 메뉴 등록 요청",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/open?id=1he6Kf_mumOBSt5n30sYHjONVvxzo3bO1"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782345829.127659",
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782341950528169"
   }
  ]
 };
