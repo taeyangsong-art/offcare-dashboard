@@ -3,10 +3,32 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 47,
- "updatedAt": "2026-07-24 13:45",
+ "version": 48,
+ "updatedAt": "2026-07-24 14:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1784868332.769939",
+   "date": "2026-07-24",
+   "time": "13:45",
+   "store": "일마지오 킨텍스점",
+   "biz": "7528502275",
+   "phone": "01039942860\n-",
+   "pos": "퍼스트포스",
+   "content": "음료 항목에 [생맥주] ₩6,000원 추가 부탁드립니다\n이미지 넣어주세요",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/open?id=1cvzS_bxiCuLsv2yeWqn9xYdcNiaouwtB"
+   ],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1784868336.800179",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784868332769939"
+  },
   {
    "ts": "1784867995.076749",
    "date": "2026-07-24",
