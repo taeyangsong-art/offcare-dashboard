@@ -3,10 +3,53 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 48,
- "updatedAt": "2026-07-24 14:00",
+ "version": 49,
+ "updatedAt": "2026-07-24 14:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1784869502.774709",
+   "date": "2026-07-24",
+   "time": "14:05",
+   "store": "일마지오 킨텍스점",
+   "biz": "7528502275",
+   "phone": "01039942860\n-",
+   "pos": "퍼스트포스",
+   "content": "키오스크 커피 메뉴에 브루잉 커피 핫,아이스를 아메리카노 옆으로 옮겨주세요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1784869507.450539",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784869502774709"
+  },
+  {
+   "ts": "1784869313.292949",
+   "date": "2026-07-24",
+   "time": "14:01",
+   "store": "미증유",
+   "biz": "2563400160",
+   "phone": "",
+   "pos": "",
+   "content": "메뉴",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "https://w1659946222-hxm266180.slack.com/archives/C0ADC9759KQ/p1784868888348889?thread_ts=1784797780.805749&cid=C0ADC9759KQ",
+    "https://w1659946222-hxm266180.slack.com/archives/C0ADC9759KQ/p1784868896585869?thread_ts=1784797780.805749&cid=C0ADC9759KQ"
+   ],
+   "rc": 3,
+   "lr": "1784869335.781389",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784869313292949"
+  },
   {
    "ts": "1784868332.769939",
    "date": "2026-07-24",
@@ -45,8 +88,8 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 0,
    "lr": "",
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784867995076749"
   },
   {
@@ -10819,26 +10862,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782278498846859"
-  },
-  {
-   "ts": "1782277238.747169",
-   "date": "2026-06-24",
-   "time": "14:00",
-   "store": "희조",
-   "biz": "",
-   "phone": "",
-   "pos": "토스포스",
-   "content": "",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 5,
-   "lr": "1782279329.537749",
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782277238747169"
   }
  ]
 };
