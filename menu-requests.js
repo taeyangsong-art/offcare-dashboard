@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 49,
- "updatedAt": "2026-07-24 14:15",
+ "version": 50,
+ "updatedAt": "2026-07-24 14:30",
  "days": 30,
  "items": [
   {
@@ -10842,26 +10842,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782279074349669"
-  },
-  {
-   "ts": "1782278498.846859",
-   "date": "2026-06-24",
-   "time": "14:21",
-   "store": "착한파스타",
-   "biz": "5294301069",
-   "phone": "01062724319\n-",
-   "pos": "기타",
-   "content": "배민에 신규 등록한 매장 메뉴에 대항 등록 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1782278502.568389",
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782278498846859"
   }
  ]
 };
