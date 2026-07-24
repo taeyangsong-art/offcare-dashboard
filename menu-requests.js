@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 52,
- "updatedAt": "2026-07-24 15:00",
+ "version": 53,
+ "updatedAt": "2026-07-24 15:15",
  "days": 30,
  "items": [
   {
@@ -20,11 +20,14 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784869507.450539",
-   "status": "wait",
-   "handler": null,
+   "replies": [
+    "님 안녕하세요!\n해당 건 빠른 요청주시어 확인 가능하실까요?",
+    "넹"
+   ],
+   "rc": 3,
+   "lr": "1784873372.456659",
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784869502774709"
   },
   {
@@ -68,7 +71,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784868336.800179",
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784868332769939"
   },
@@ -10719,69 +10722,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782281735919629"
-  },
-  {
-   "ts": "1782281396.468499",
-   "date": "2026-06-24",
-   "time": "15:09",
-   "store": "주식회사 프리츠(원서점)",
-   "biz": "1058801127",
-   "phone": "",
-   "pos": "",
-   "content": "메뉴등록 부탁드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 7,
-   "lr": "1782288052.330479",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782281396468499"
-  },
-  {
-   "ts": "1782281261.877549",
-   "date": "2026-06-24",
-   "time": "15:07",
-   "store": "피코",
-   "biz": "4887100710",
-   "phone": "01089265871\n-",
-   "pos": "기타",
-   "content": "기존음료종류메뉴는 그대로두시고 안주류와 식사류 (점심메뉴  로 변경)",
-   "special": "시간이걸리는거면 일요일 오전9~11시전으로부탁해요",
-   "drive": [
-    "https://drive.google.com/open?id=1g9d9ani17tvlHNjUs7bUUgM0nkhwS6-0",
-    "https://drive.google.com/open?id=1XO6vyoQPr-EcFo5XAA9fL3CULjcNpsZO"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782286603.458689",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782281261877549"
-  },
-  {
-   "ts": "1782281048.745539",
-   "date": "2026-06-24",
-   "time": "15:04",
-   "store": "(주)참치공방(종각본점)",
-   "biz": "2338800379",
-   "phone": "01053629369",
-   "pos": "오케이포스",
-   "content": "OKPOS 사용매장 / 메뉴 가격 수정요청\n• 회덮밥 12000원\n• 알탕 12000원\n• 알밥 10000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782284339.112289",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782281048745539"
   }
  ]
 };
