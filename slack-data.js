@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1421,
+  "version": 1422,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -57203,7 +57203,7 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "08:45"
+      "updatedAt": "09:00"
     }
   },
   "resp": {
@@ -57236,9 +57236,9 @@ window.SLACK_DATA = {
         "post": "1784797494.045879",
         "lastSeen": 1784836889.967
       },
-      "1784850300.582209": {
-        "post": "1784850300.582209",
-        "lastSeen": 1784850320.428
+      "1784851207.098869": {
+        "post": "1784851207.098869",
+        "lastSeen": 1784851235.463
       }
     },
     "days": {
@@ -62573,6 +62573,21 @@ window.SLACK_DATA = {
             "store": "돈찌본점",
             "biz": "6660303531",
             "who": "최민석",
+            "cat": "as"
+          }
+        ]
+      },
+      "2026-07-24": {
+        "cnt": 1,
+        "sumMin": 7.95605484644572,
+        "over": 0,
+        "items": [
+          {
+            "hm": "08:45",
+            "min": 8,
+            "store": "남대궐식당",
+            "biz": "7642101321",
+            "who": "배선유",
             "cat": "as"
           }
         ]
