@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1566,
+  "version": 1567,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -61588,15 +61588,15 @@ window.SLACK_DATA = {
         "offline": 10,
         "unknown": 0
       },
-      "updatedAt": "20:00",
+      "updatedAt": "20:45",
       "voc": {
-        "responses": 23,
+        "responses": 24,
         "install": {
-          "count": 15,
+          "count": 16,
           "low": 1
         },
         "nps": {
-          "count": 23,
+          "count": 24,
           "low": 7
         },
         "high": {
@@ -61609,24 +61609,29 @@ window.SLACK_DATA = {
           "4": 1,
           "5": 4,
           "6": 1,
+          "8": 1,
           "9": 3,
           "10": 12
         },
         "installDist": {
           "2": 1,
-          "3": 3,
+          "3": 4,
           "4": 5,
           "5": 6
         },
         "byIndustry": {
+          "서비스[뷰티,헤어]": 4,
           "도소매": 2,
           "기타": 3,
           "서비스[학원]": 5,
           "카페": 1,
-          "서비스[뷰티,헤어]": 3,
           "요식업": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 16,
+            "low": 5
+          },
           "1개월": {
             "total": 4,
             "low": 0
@@ -61635,16 +61640,16 @@ window.SLACK_DATA = {
             "total": 3,
             "low": 2
           },
-          "구매설치": {
-            "total": 15,
-            "low": 5
-          },
           "6개월": {
             "total": 1,
             "low": 0
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 7,
+            "low": 1
+          },
           "KPN": {
             "total": 7,
             "low": 3
@@ -61652,10 +61657,6 @@ window.SLACK_DATA = {
           "SMARTRO": {
             "total": 4,
             "low": 2
-          },
-          "KIS": {
-            "total": 6,
-            "low": 1
           },
           "DAOU": {
             "total": 1,
@@ -61914,19 +61915,19 @@ window.SLACK_DATA = {
       },
       "1784943025.018809": {
         "post": "1784943025.018809",
-        "lastSeen": 1784979024.147
+        "lastSeen": 1784979996.95
       },
       "1784969509.059039": {
         "post": "1784969509.059039",
-        "lastSeen": 1784979024.147
+        "lastSeen": 1784979996.95
       },
       "1784969347.849429": {
         "post": "1784969347.849429",
-        "lastSeen": 1784979024.147
+        "lastSeen": 1784979996.95
       },
       "1784969347.825369": {
         "post": "1784969347.825369",
-        "lastSeen": 1784979024.147
+        "lastSeen": 1784979996.95
       }
     },
     "days": {
