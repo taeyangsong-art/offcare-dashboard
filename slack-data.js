@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1548,
+  "version": 1549,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -60749,15 +60749,15 @@ window.SLACK_DATA = {
     },
     "2026-07-25": {
       "counts": {
+        "as": {
+          "심성현": 7,
+          "김규빈": 25,
+          "김기범": 2
+        },
         "onboarding": {
           "김기범": 1,
           "김규빈": 7,
           "심성현": 1
-        },
-        "as": {
-          "김규빈": 24,
-          "심성현": 6,
-          "김기범": 2
         },
         "menu": {
           "김규빈": 4
@@ -60768,6 +60768,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:06",
+          "store": "카페 이음",
+          "biz": "6810203663",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포프유프(노트북) 유프 연결 및 출력 설정 안내요청",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트 노트북 프린터 설정 완료 출력 테스트 완료"
+        },
+        {
+          "time": "16:05",
+          "store": "화:化에스테틱",
+          "biz": "1432402316",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "포프(휴대폰) 사용 중, 유프 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "<tel:01025886254|010-2588-6254 010-2588-6254 / 유프 연결 및 소리 OFF 완료"
+        },
         {
           "time": "16:00",
           "store": "소년공방 미술학원",
@@ -61276,26 +61298,27 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 42,
+        "online": 44,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "16:14",
+      "updatedAt": "16:27",
       "voc": {
-        "responses": 16,
+        "responses": 17,
         "install": {
           "count": 12,
           "low": 1
         },
         "nps": {
-          "count": 16,
-          "low": 4
+          "count": 17,
+          "low": 5
         },
         "high": {
           "install": 4,
           "nps": 8
         },
         "npsDist": {
+          "1": 1,
           "4": 1,
           "5": 3,
           "6": 1,
@@ -61317,6 +61340,10 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 2,
+            "low": 1
+          },
           "구매설치": {
             "total": 12,
             "low": 4
@@ -61328,13 +61355,13 @@ window.SLACK_DATA = {
           "1개월": {
             "total": 2,
             "low": 0
-          },
-          "12개월": {
-            "total": 1,
-            "low": 0
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 3,
+            "low": 2
+          },
           "KIS": {
             "total": 6,
             "low": 1
@@ -61344,10 +61371,6 @@ window.SLACK_DATA = {
             "low": 0
           },
           "SMARTRO": {
-            "total": 2,
-            "low": 1
-          },
-          "KPN": {
             "total": 2,
             "low": 1
           },
@@ -61365,10 +61388,33 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "단말기 설치나 초기 과정이 어려움": 4
         },
         "alerts": [
+          {
+            "time": "16:23",
+            "store": "미로이스튜디오 천안",
+            "storeId": "218211",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "느리고 토스페이결제 정산도 느려서",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:44",
             "store": "관동동미용실",
@@ -61533,7 +61579,7 @@ window.SLACK_DATA = {
       },
       "1784943025.018809": {
         "post": "1784943025.018809",
-        "lastSeen": 1784963720.824
+        "lastSeen": 1784964626.567
       }
     },
     "days": {
