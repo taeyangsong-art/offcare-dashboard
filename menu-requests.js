@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 84,
- "updatedAt": "2026-07-25 14:02",
+ "version": 85,
+ "updatedAt": "2026-07-25 14:17",
  "days": 30,
  "items": [
   {
@@ -10277,46 +10277,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782365987906689"
-  },
-  {
-   "ts": "1782364420.589739",
-   "date": "2026-06-25",
-   "time": "14:13",
-   "store": "화덕피자 피움",
-   "biz": "2591702705",
-   "phone": "01043860279",
-   "pos": "",
-   "content": "",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782368689.830819",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782364420589739"
-  },
-  {
-   "ts": "1782363744.218659",
-   "date": "2026-06-25",
-   "time": "14:02",
-   "store": "집밥",
-   "biz": "1304800813",
-   "phone": "01084607310",
-   "pos": "퍼스트포스",
-   "content": "유플 메뉴 수정 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1782364204.887429",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782363744218659"
   }
  ]
 };

@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1539,
+  "version": 1540,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -60750,7 +60750,7 @@ window.SLACK_DATA = {
     "2026-07-25": {
       "counts": {
         "as": {
-          "김규빈": 21,
+          "김규빈": 22,
           "심성현": 2
         },
         "onboarding": {
@@ -60760,8 +60760,31 @@ window.SLACK_DATA = {
           "김규빈": 4
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "13:11",
+          "store": "카페모호",
+          "biz": "2214800521",
+          "handler": "심성현",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "done": [
+        {
+          "time": "13:59",
+          "store": "윤서네 칼국수",
+          "biz": "5982400949",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "영수증 출력상태 점검부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트에 통신속도 변경 후 정상 확인"
+        },
         {
           "time": "13:47",
           "store": "일마지오 킨텍스점",
@@ -61105,11 +61128,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 27,
+        "online": 29,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "14:00",
+      "updatedAt": "14:11",
       "voc": {
         "responses": 3,
         "install": {
@@ -61208,11 +61231,11 @@ window.SLACK_DATA = {
       },
       "1784943025.018809": {
         "post": "1784943025.018809",
-        "lastSeen": 1784955719.609
+        "lastSeen": 1784956631.013
       },
-      "1784955601.133319": {
-        "post": "1784955601.133319",
-        "lastSeen": 1784955719.609
+      "1784956274.493859": {
+        "post": "1784956274.493859",
+        "lastSeen": 1784956631.013
       }
     },
     "days": {
@@ -68047,8 +68070,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-07-25": {
-        "cnt": 14,
-        "sumMin": 214.35177257061002,
+        "cnt": 15,
+        "sumMin": 223.921400586764,
         "over": 0,
         "items": [
           {
@@ -68161,6 +68184,14 @@ window.SLACK_DATA = {
             "store": "연종캠핑장",
             "biz": "8781602741",
             "who": "심성현",
+            "cat": "as"
+          },
+          {
+            "hm": "14:00",
+            "min": 9.6,
+            "store": "해오름달, 여드레",
+            "biz": "2021781378",
+            "who": "김규빈",
             "cat": "as"
           }
         ]
