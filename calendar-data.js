@@ -2,16 +2,9 @@
  * 회사 구글 캘린더(iCal) 동기화 데이터 — gcal-sync 워크플로가 자동 생성/갱신합니다.
  */
 window.GCAL_DATA = {
-  "version": 56,
-  "updatedAt": "2026-07-25 07:41",
+  "version": 57,
+  "updatedAt": "2026-07-25 16:28",
   "days": {
-    "2026-06-25": [
-      {
-        "title": "OCTeam 정기회의",
-        "time": "09:30~10:30",
-        "allDay": false
-      }
-    ],
     "2026-07-02": [
       {
         "title": "OCTeam 정기회의",
