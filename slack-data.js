@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1546,
+  "version": 1547,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -60750,9 +60750,9 @@ window.SLACK_DATA = {
     "2026-07-25": {
       "counts": {
         "as": {
+          "김규빈": 24,
           "심성현": 6,
-          "김기범": 2,
-          "김규빈": 23
+          "김기범": 2
         },
         "onboarding": {
           "김규빈": 7,
@@ -60764,6 +60764,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:55",
+          "store": "아미뷰티샵",
+          "biz": "1873700943",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "프유프(아이패드) 사용매장 /  영수증 커스텀 사용하시다가   9600으로  다시 변경  &gt;  테스트 출력 정상",
+          "hw": "",
+          "intake": "online",
+          "note": "영수증 설정에 로고들어가 있음 삭제 후 정상"
+        },
         {
           "time": "15:30",
           "store": "카사블랑카",
@@ -61239,31 +61250,31 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 39,
+        "online": 40,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "15:45",
+      "updatedAt": "16:00",
       "voc": {
-        "responses": 13,
+        "responses": 14,
         "install": {
           "count": 11,
           "low": 1
         },
         "nps": {
-          "count": 13,
+          "count": 14,
           "low": 4
         },
         "high": {
           "install": 4,
-          "nps": 6
+          "nps": 7
         },
         "npsDist": {
           "4": 1,
           "5": 3,
           "6": 1,
           "9": 2,
-          "10": 6
+          "10": 7
         },
         "installDist": {
           "2": 1,
@@ -61279,13 +61290,13 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 2,
+            "low": 0
+          },
           "구매설치": {
             "total": 11,
             "low": 4
-          },
-          "1개월": {
-            "total": 1,
-            "low": 0
           },
           "12개월": {
             "total": 1,
@@ -61293,6 +61304,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SMARTRO": {
+            "total": 2,
+            "low": 1
+          },
           "KPN": {
             "total": 2,
             "low": 1
@@ -61308,10 +61323,6 @@ window.SLACK_DATA = {
           "SECTA9": {
             "total": 1,
             "low": 0
-          },
-          "SMARTRO": {
-            "total": 1,
-            "low": 1
           },
           "KSNET": {
             "total": 1,
@@ -61463,11 +61474,11 @@ window.SLACK_DATA = {
       },
       "1784943025.018809": {
         "post": "1784943025.018809",
-        "lastSeen": 1784961922.921
+        "lastSeen": 1784962832.979
       },
-      "1784961900.660409": {
-        "post": "1784961900.660409",
-        "lastSeen": 1784961922.921
+      "1784962804.119589": {
+        "post": "1784962804.119589",
+        "lastSeen": 1784962832.979
       }
     },
     "days": {
