@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1522,
+  "version": 1523,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -60749,15 +60749,40 @@ window.SLACK_DATA = {
     },
     "2026-07-25": {
       "counts": {
+        "onboarding": {
+          "김규빈": 1
+        },
         "as": {
           "김규빈": 2
         },
         "menu": {
-          "김규빈": 2
+          "김규빈": 3
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:56",
+          "store": "육선가",
+          "biz": "1064451757",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "퍼스트 포스 사용중  / 메뉴 추가 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 식사메뉴 • 물냉면곱빼기 10000 • 비빔냉면꼽빼기 10000 식사메뉴 물냉면곱빼기 10000 비빔냉면꼽빼기 10000 / 완료입니다"
+        },
+        {
+          "time": "09:30",
+          "store": "더오름수학교습소",
+          "biz": "6319302366",
+          "cat": "onboarding",
+          "emp": "김규빈",
+          "req": "포프(휴대폰) 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "1015분뒤 전화 / 온보딩 완료"
+        },
         {
           "time": "09:22",
           "store": "온찬",
@@ -60804,11 +60829,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 4,
+        "online": 6,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:30",
+      "updatedAt": "10:00",
       "voc": {
         "responses": 3,
         "install": {

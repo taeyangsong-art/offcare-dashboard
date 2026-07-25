@@ -3,10 +3,32 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 73,
- "updatedAt": "2026-07-25 09:30",
+ "version": 74,
+ "updatedAt": "2026-07-25 10:02",
  "days": 30,
  "items": [
+  {
+   "ts": "1784940990.837199",
+   "date": "2026-07-25",
+   "time": "09:56",
+   "store": "육선가",
+   "biz": "1064451757",
+   "phone": "01026648003",
+   "pos": "퍼스트포스",
+   "content": "퍼스트 포스 사용중  / 메뉴 추가 요청 드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "```식사메뉴 ```\n• 물냉면곱빼기 10000 \n• 비빔냉면꼽빼기 10000"
+   ],
+   "rc": 3,
+   "lr": "1784941126.326219",
+   "status": "done",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784940990837199"
+  },
   {
    "ts": "1784938937.915649",
    "date": "2026-07-25",
