@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1550,
+  "version": 1551,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -60750,9 +60750,9 @@ window.SLACK_DATA = {
     "2026-07-25": {
       "counts": {
         "as": {
-          "심성현": 7,
-          "김규빈": 25,
-          "김기범": 2
+          "김규빈": 26,
+          "김기범": 3,
+          "심성현": 8
         },
         "onboarding": {
           "김기범": 1,
@@ -60768,6 +60768,39 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:27",
+          "store": "카공족올데이 화정역점",
+          "biz": "7610203805",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "기존 노트북 -&gt; 폰으로 재온보딩중, 프린터 연결이 안된다하여 도움부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "전화거부 1차부재 / 재온보딩 및 유프 설정 완료"
+        },
+        {
+          "time": "16:23",
+          "store": "리리커피",
+          "biz": "6535101130",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "포(포스기)터프 사용 중, 포스기 연결 끊김으로 재온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "토스포스 사용중 터 프 모두 전원 나가서 전원버튼 알려드림 완료"
+        },
+        {
+          "time": "16:21",
+          "store": "레일리헤어",
+          "biz": "3013098869",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포프유프 PC / 유프 연결 어려움으로 영상통화 요청",
+          "hw": "",
+          "intake": "online",
+          "note": "Face Time 활성화 방법 찾고 다시 연락 예정"
+        },
         {
           "time": "16:06",
           "store": "카페 이음",
@@ -61298,55 +61331,55 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 44,
+        "online": 47,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "16:30",
+      "updatedAt": "16:44",
       "voc": {
-        "responses": 17,
+        "responses": 20,
         "install": {
-          "count": 12,
+          "count": 15,
           "low": 1
         },
         "nps": {
-          "count": 17,
-          "low": 5
+          "count": 20,
+          "low": 6
         },
         "high": {
-          "install": 4,
-          "nps": 8
+          "install": 6,
+          "nps": 10
         },
         "npsDist": {
           "1": 1,
           "4": 1,
-          "5": 3,
+          "5": 4,
           "6": 1,
           "9": 3,
-          "10": 8
+          "10": 10
         },
         "installDist": {
           "2": 1,
-          "3": 2,
+          "3": 3,
           "4": 5,
-          "5": 4
+          "5": 6
         },
         "byIndustry": {
+          "도소매": 2,
+          "기타": 3,
+          "서비스[학원]": 5,
           "카페": 1,
           "서비스[뷰티,헤어]": 3,
-          "기타": 2,
-          "요식업": 1,
-          "서비스[학원]": 4,
-          "도소매": 1
+          "요식업": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 15,
+            "low": 5
+          },
           "12개월": {
             "total": 2,
             "low": 1
-          },
-          "구매설치": {
-            "total": 12,
-            "low": 4
           },
           "6개월": {
             "total": 1,
@@ -61358,8 +61391,12 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SMARTRO": {
+            "total": 4,
+            "low": 2
+          },
           "KPN": {
-            "total": 3,
+            "total": 4,
             "low": 2
           },
           "KIS": {
@@ -61369,10 +61406,6 @@ window.SLACK_DATA = {
           "DAOU": {
             "total": 1,
             "low": 0
-          },
-          "SMARTRO": {
-            "total": 2,
-            "low": 1
           },
           "KOCES": {
             "total": 3,
@@ -61388,11 +61421,33 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
           "사용중 오류가 자주 발생함": 1,
-          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "단말기 설치나 초기 과정이 어려움": 4
         },
         "alerts": [
+          {
+            "time": "16:44",
+            "store": "드럼뮤직컴퍼니학원(DMC Books)",
+            "storeId": "517019",
+            "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
+            "install": 3,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": ".",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "16:23",
             "store": "미로이스튜디오 천안",
@@ -61512,6 +61567,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "16:44",
+            "store": "월운마켓",
+            "storeId": "491920",
+            "indBucket": "기타",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "친절한 상담, 안내 친절한 안내, 상담, 유지비 없음, 기타",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "16:14",
             "store": "카페 아뜨랑떼",
             "storeId": "549777",
@@ -61579,7 +61646,7 @@ window.SLACK_DATA = {
       },
       "1784943025.018809": {
         "post": "1784943025.018809",
-        "lastSeen": 1784964821.347
+        "lastSeen": 1784965649.217
       }
     },
     "days": {
