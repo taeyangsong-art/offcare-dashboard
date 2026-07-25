@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 77,
- "updatedAt": "2026-07-25 11:30",
+ "version": 78,
+ "updatedAt": "2026-07-25 11:45",
  "days": 30,
  "items": [
   {
@@ -10445,26 +10445,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782356265051429"
-  },
-  {
-   "ts": "1782354679.767109",
-   "date": "2026-06-25",
-   "time": "11:31",
-   "store": "압구정찌개마을",
-   "biz": "2151634457",
-   "phone": "01047899680",
-   "pos": "퍼스트포스",
-   "content": "오케이포스 / 메뉴 가격 수정 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 16,
-   "lr": "1782356013.174199",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782354679767109"
   }
  ]
 };
