@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1544,
+  "version": 1545,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -60750,8 +60750,8 @@ window.SLACK_DATA = {
     "2026-07-25": {
       "counts": {
         "as": {
+          "심성현": 5,
           "김기범": 2,
-          "심성현": 4,
           "김규빈": 23
         },
         "onboarding": {
@@ -60764,6 +60764,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:09",
+          "store": "교촌치킨 옥룡점",
+          "biz": "1463301259",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포프유프(포스기) / 메이트 사용 / 유프 항상 출력 설정 안내요청",
+          "hw": "",
+          "intake": "online",
+          "note": "메이트 포스 쪽에서 토스 대리점으로 이관 / 메이트 포스 설정 상 출력물 설정 영수 출력 OFF 상태 ON 변경 후 자동 출력 완료"
+        },
         {
           "time": "15:04",
           "store": "그래빗과학학원",
@@ -61217,11 +61228,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 37,
+        "online": 38,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "15:14",
+      "updatedAt": "15:30",
       "voc": {
         "responses": 11,
         "install": {
@@ -61418,7 +61429,7 @@ window.SLACK_DATA = {
       },
       "1784943025.018809": {
         "post": "1784943025.018809",
-        "lastSeen": 1784960123.106
+        "lastSeen": 1784961351.963
       }
     },
     "days": {
