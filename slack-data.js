@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1543,
+  "version": 1544,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -60749,13 +60749,14 @@ window.SLACK_DATA = {
     },
     "2026-07-25": {
       "counts": {
+        "as": {
+          "김기범": 2,
+          "심성현": 4,
+          "김규빈": 23
+        },
         "onboarding": {
           "김규빈": 7,
           "심성현": 1
-        },
-        "as": {
-          "김규빈": 23,
-          "심성현": 3
         },
         "menu": {
           "김규빈": 4
@@ -60763,6 +60764,39 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:04",
+          "store": "그래빗과학학원",
+          "biz": "3109881038",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "영수증 출력시 아래와같이 이상한 내용만 나온다하시어 확인부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "프린터기 뒤에 선을 모두 다 결합하셧음 RJ45 결합후 정상"
+        },
+        {
+          "time": "15:00",
+          "store": "소년공방 미술학원",
+          "biz": "6189409780",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "노트북 + 프론트 + 프린터 온보딩",
+          "hw": "",
+          "intake": "online",
+          "note": "지금 학원이 아니라 4시쯤 다시 전화 요청"
+        },
+        {
+          "time": "14:55",
+          "store": "슬로우잽(Slowjab)",
+          "biz": "3166600764",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포프유프(태블릿) / <https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1784794095766719?thread_ts=1784792226.422399&amp;cid=C09HRUSG4TX|",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트 온보딩 프린터 설정 완료"
+        },
         {
           "time": "14:42",
           "store": "설온영어교습소",
@@ -61183,38 +61217,49 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 34,
+        "online": 37,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "15:00",
+      "updatedAt": "15:14",
       "voc": {
-        "responses": 3,
+        "responses": 11,
         "install": {
-          "count": 1,
-          "low": 0
+          "count": 9,
+          "low": 1
         },
         "nps": {
-          "count": 3,
-          "low": 0
+          "count": 11,
+          "low": 3
         },
         "high": {
-          "install": 1,
-          "nps": 3
+          "install": 3,
+          "nps": 5
         },
         "npsDist": {
-          "10": 3
+          "4": 1,
+          "5": 2,
+          "6": 1,
+          "9": 2,
+          "10": 5
         },
         "installDist": {
-          "5": 1
+          "2": 1,
+          "3": 1,
+          "4": 4,
+          "5": 3
         },
         "byIndustry": {
+          "요식업": 1,
+          "서비스[학원]": 4,
+          "서비스[뷰티,헤어]": 2,
+          "도소매": 1,
           "기타": 1
         },
         "byTenure": {
           "구매설치": {
-            "total": 1,
-            "low": 0
+            "total": 9,
+            "low": 3
           },
           "1개월": {
             "total": 1,
@@ -61227,16 +61272,107 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KIS": {
-            "total": 2,
+            "total": 5,
+            "low": 1
+          },
+          "KPN": {
+            "total": 1,
             "low": 0
+          },
+          "KOCES": {
+            "total": 2,
+            "low": 1
+          },
+          "SECTA9": {
+            "total": 1,
+            "low": 0
+          },
+          "SMARTRO": {
+            "total": 1,
+            "low": 1
           },
           "KSNET": {
             "total": 1,
             "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 4
+        },
+        "alerts": [
+          {
+            "time": "15:14",
+            "store": "문화공간 조나단",
+            "storeId": "557902",
+            "industry": "음식점/주점",
+            "indBucket": "요식업",
+            "install": 3,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "설치가 정말 어려움...기사가 와도 이 정도인데 자가설치는 엄두도 못냄",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:13",
+            "store": "윤슬발레스튜디오학원",
+            "storeId": "559571",
+            "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
+            "install": 2,
+            "nps": 4,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 2,
+                "text": "기계치가 아닌데도 설치해서 실제 사용하는데 매우 어려웠음  어르신들은 이용하기가 어려우실것 같습니다",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              },
+              {
+                "q": "추천의향",
+                "score": 4,
+                "text": "디자인은 예쁘고 비용도 없어서 좋지만 앞서 말한것처럼 설치가 너무어려웠음",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:13",
+            "store": "비엔디 코스메틱스(B&D Cosmetics)",
+            "storeId": "556271",
+            "industry": "도소매",
+            "indBucket": "도소매",
+            "install": 5,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "상담연결이 원활하지 않음",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
         "praises": [
           {
             "time": "09:12",
@@ -61282,7 +61418,7 @@ window.SLACK_DATA = {
       },
       "1784943025.018809": {
         "post": "1784943025.018809",
-        "lastSeen": 1784959346.111
+        "lastSeen": 1784960123.106
       }
     },
     "days": {
