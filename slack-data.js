@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1536,
+  "version": 1537,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -60754,7 +60754,7 @@ window.SLACK_DATA = {
           "김규빈": 19
         },
         "onboarding": {
-          "김규빈": 3
+          "김규빈": 4
         },
         "menu": {
           "김규빈": 3
@@ -60772,6 +60772,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "금일 기기가 없어 자체 연결 후 어려움이 있을 시 다시 연락한다고 합니다."
+        },
+        {
+          "time": "13:00",
+          "store": "네일프레스(Nail Press)",
+          "biz": "7165500629",
+          "cat": "onboarding",
+          "emp": "김규빈",
+          "req": "포프(태블릿) + 유프 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 및 유프 소리 OFF 완료"
         },
         {
           "time": "13:00",
@@ -61061,11 +61072,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 23,
+        "online": 24,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "13:11",
+      "updatedAt": "13:30",
       "voc": {
         "responses": 3,
         "install": {
@@ -61164,7 +61175,7 @@ window.SLACK_DATA = {
       },
       "1784943025.018809": {
         "post": "1784943025.018809",
-        "lastSeen": 1784952922.319
+        "lastSeen": 1784953826.912
       }
     },
     "days": {
