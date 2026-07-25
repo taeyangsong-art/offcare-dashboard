@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 78,
- "updatedAt": "2026-07-25 11:45",
+ "version": 79,
+ "updatedAt": "2026-07-25 12:00",
  "days": 30,
  "items": [
   {
@@ -10423,28 +10423,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782357267436119"
-  },
-  {
-   "ts": "1782356265.051429",
-   "date": "2026-06-25",
-   "time": "11:57",
-   "store": "은성한정식",
-   "biz": "5298703678",
-   "phone": "01025147226\n-",
-   "pos": "퍼스트포스",
-   "content": "사진 첨부(1호실 화면에 파란테두리는 뭔가요?)",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/open?id=1xuDpi8WHTEVcseABxFohUkcWy904ViqI"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782356371.864109",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782356265051429"
   }
  ]
 };

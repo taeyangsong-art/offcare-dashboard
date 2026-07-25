@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1530,
+  "version": 1531,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -60750,7 +60750,7 @@ window.SLACK_DATA = {
     "2026-07-25": {
       "counts": {
         "as": {
-          "김규빈": 15
+          "김규빈": 17
         },
         "onboarding": {
           "김규빈": 3
@@ -60760,6 +60760,17 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
+        {
+          "time": "11:00",
+          "store": "동악골아리랑",
+          "biz": "1621702492",
+          "handler": "김규빈",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "1차 부재"
+          ]
+        },
         {
           "time": "10:31",
           "store": "카페모호",
@@ -60773,6 +60784,28 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "11:53",
+          "store": "소피의 커피",
+          "biz": "8172602202",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "포프유프(태블릿) / 페이지찾을 수 없음 오류 (삭제 및 재설치 방법 영상통화 요청 - 부부 두분이서 헤매고 계심)",
+          "hw": "",
+          "intake": "online",
+          "note": "재온보딩 완료"
+        },
+        {
+          "time": "11:35",
+          "store": "감자꽃",
+          "biz": "3285800796",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "포프유프(태블릿) 페이지 찾을 수 없음 오류 / 삭제 후 재설치 어려움으로 영상통화 요청",
+          "hw": "",
+          "intake": "online",
+          "note": "자체해결"
+        },
         {
           "time": "11:24",
           "store": "월정리 유메이우동",
@@ -61006,11 +61039,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 19,
+        "online": 22,
         "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "11:35",
+      "updatedAt": "11:53",
       "voc": {
         "responses": 3,
         "install": {
@@ -61109,11 +61142,7 @@ window.SLACK_DATA = {
       },
       "1784943025.018809": {
         "post": "1784943025.018809",
-        "lastSeen": 1784947522.348
-      },
-      "1784946918.695789": {
-        "post": "1784946918.695789",
-        "lastSeen": 1784947522.348
+        "lastSeen": 1784948432.613
       }
     },
     "days": {
@@ -67948,8 +67977,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-07-25": {
-        "cnt": 12,
-        "sumMin": 187.9191535393397,
+        "cnt": 13,
+        "sumMin": 205.56556538740793,
         "over": 0,
         "items": [
           {
@@ -68045,6 +68074,14 @@ window.SLACK_DATA = {
             "min": 17,
             "store": "고돼지목동점",
             "biz": "5457400542",
+            "who": "김규빈",
+            "cat": "as"
+          },
+          {
+            "hm": "11:35",
+            "min": 17.6,
+            "store": "감자꽃",
+            "biz": "3285800796",
             "who": "김규빈",
             "cat": "as"
           }
