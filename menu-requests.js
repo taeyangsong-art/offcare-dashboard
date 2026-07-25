@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 80,
- "updatedAt": "2026-07-25 12:17",
+ "version": 81,
+ "updatedAt": "2026-07-25 13:02",
  "days": 30,
  "items": [
   {
@@ -10359,50 +10359,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김기범",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782360593539289"
-  },
-  {
-   "ts": "1782360100.465579",
-   "date": "2026-06-25",
-   "time": "13:01",
-   "store": "네일그리고",
-   "biz": "3920200994",
-   "phone": "01052656957\n-",
-   "pos": "토스포스",
-   "content": "",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/open?id=10lVnlbSxIqjin5fencEb40ztU5M8cngD",
-    "https://drive.google.com/open?id=14HpRUnP-XsUfwcvyOkgJzuMoAQuvWtoC",
-    "https://drive.google.com/open?id=1dyn7yWC6Mn8vC1aedpzalVLV2P5dAQt0"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782362290.618139",
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782360100465579"
-  },
-  {
-   "ts": "1782359709.121969",
-   "date": "2026-06-25",
-   "time": "12:55",
-   "store": "네일 그리고",
-   "biz": "3920200994",
-   "phone": "01052656957",
-   "pos": "",
-   "content": "메뉴 추가 요청 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1782359713.096729",
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782359709121969"
   }
  ]
 };

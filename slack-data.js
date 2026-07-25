@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1534,
+  "version": 1535,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -60750,7 +60750,7 @@ window.SLACK_DATA = {
     "2026-07-25": {
       "counts": {
         "as": {
-          "김규빈": 18
+          "김규빈": 19
         },
         "onboarding": {
           "김규빈": 3
@@ -60761,6 +60761,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "13:00",
+          "store": "스마트해법수학판교원마을11단지점수학교습소",
+          "biz": "7049901537",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "포프(휴대폰) 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "수업중이라 가능하실때 고객센터 인입"
+        },
         {
           "time": "11:53",
           "store": "소피의 커피",
@@ -61027,11 +61038,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 21,
+        "online": 22,
         "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "11:53",
+      "updatedAt": "13:00",
       "voc": {
         "responses": 3,
         "install": {
@@ -61130,7 +61141,11 @@ window.SLACK_DATA = {
       },
       "1784943025.018809": {
         "post": "1784943025.018809",
-        "lastSeen": 1784951194.587
+        "lastSeen": 1784952133.923
+      },
+      "1784952000.948569": {
+        "post": "1784952000.948569",
+        "lastSeen": 1784952133.923
       }
     },
     "days": {
