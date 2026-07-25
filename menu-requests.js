@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 83,
- "updatedAt": "2026-07-25 13:30",
+ "version": 84,
+ "updatedAt": "2026-07-25 14:02",
  "days": 30,
  "items": [
+  {
+   "ts": "1784954846.434899",
+   "date": "2026-07-25",
+   "time": "13:47",
+   "store": "일마지오 킨텍스점",
+   "biz": "7528502275",
+   "phone": "01039942860\n-",
+   "pos": "퍼스트포스",
+   "content": "포스에만 음료 항목에 소주 샷추가 ₩800원 만들어 주세요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1784954851.576649",
+   "status": "done",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784954846434899"
+  },
   {
    "ts": "1784940990.837199",
    "date": "2026-07-25",
@@ -10297,28 +10317,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782363744218659"
-  },
-  {
-   "ts": "1782362812.681069",
-   "date": "2026-06-25",
-   "time": "13:46",
-   "store": "퍼리엔",
-   "biz": "1764201290",
-   "phone": "01055297446\n-",
-   "pos": "기타",
-   "content": "키오스크 첫번째 품절된 new 닭다리 쌀국수 메뉴 삭제해주시고 그자리에 양지 물냉면 11,000원 추가 부탁드리며 반미와 반미 피자 메뉴에 옵션으로 컷팅을 추가 부탁드립니다",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/open?id=1L2o2HIvtGX7pW5jJIx-cehKslmM5-_L7"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1782362816.962239",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782362812681069"
   }
  ]
 };

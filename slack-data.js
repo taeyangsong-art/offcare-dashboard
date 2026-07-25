@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1538,
+  "version": 1539,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -60750,18 +60750,40 @@ window.SLACK_DATA = {
     "2026-07-25": {
       "counts": {
         "as": {
-          "김규빈": 20,
+          "김규빈": 21,
           "심성현": 2
         },
         "onboarding": {
           "김규빈": 4
         },
         "menu": {
-          "김규빈": 3
+          "김규빈": 4
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "13:47",
+          "store": "일마지오 킨텍스점",
+          "biz": "7528502275",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
+        },
+        {
+          "time": "13:46",
+          "store": "회 제작소",
+          "biz": "5890802486",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "카드 인식이 안되는경우 잦다하시어 점검부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "온도감 좀 있으셔서 택배로 중고 장비 발송 / 이카운트 등록"
+        },
         {
           "time": "13:30",
           "store": "강탁구클럽",
@@ -61083,11 +61105,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 25,
+        "online": 27,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "13:46",
+      "updatedAt": "14:00",
       "voc": {
         "responses": 3,
         "install": {
@@ -61186,7 +61208,11 @@ window.SLACK_DATA = {
       },
       "1784943025.018809": {
         "post": "1784943025.018809",
-        "lastSeen": 1784954800.046
+        "lastSeen": 1784955719.609
+      },
+      "1784955601.133319": {
+        "post": "1784955601.133319",
+        "lastSeen": 1784955719.609
       }
     },
     "days": {
