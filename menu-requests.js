@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 75,
- "updatedAt": "2026-07-25 10:30",
+ "version": 76,
+ "updatedAt": "2026-07-25 11:15",
  "days": 30,
  "items": [
   {
@@ -10585,26 +10585,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782353820928899"
-  },
-  {
-   "ts": "1782353580.429489",
-   "date": "2026-06-25",
-   "time": "11:13",
-   "store": "피코",
-   "biz": "4887100710",
-   "phone": "01089265871\n-",
-   "pos": "기타",
-   "content": "추가;  안주류~메인50,000  메인60,000 메인70,000  토종닭능이백숙120,000",
-   "special": "시간상관없음",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1782353605.802499",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782353580429489"
   }
  ]
 };
