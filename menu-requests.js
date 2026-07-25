@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 81,
- "updatedAt": "2026-07-25 13:02",
+ "version": 82,
+ "updatedAt": "2026-07-25 13:15",
  "days": 30,
  "items": [
   {
@@ -10339,26 +10339,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782361633282919"
-  },
-  {
-   "ts": "1782360593.539289",
-   "date": "2026-06-25",
-   "time": "13:09",
-   "store": "주식회사 프리츠(원서점)",
-   "biz": "1058801127",
-   "phone": "",
-   "pos": "",
-   "content": "MD 제품에 옵션 수량이 안올라감니다용",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1782361523.501059",
-   "status": "done",
-   "handler": "김기범",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782360593539289"
   }
  ]
 };

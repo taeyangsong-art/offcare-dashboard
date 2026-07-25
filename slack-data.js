@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1535,
+  "version": 1536,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -60750,6 +60750,7 @@ window.SLACK_DATA = {
     "2026-07-25": {
       "counts": {
         "as": {
+          "심성현": 2,
           "김규빈": 19
         },
         "onboarding": {
@@ -60763,6 +60764,17 @@ window.SLACK_DATA = {
       "done": [
         {
           "time": "13:00",
+          "store": "연종캠핑장",
+          "biz": "8781602741",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포프(PC) + 유프 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "금일 기기가 없어 자체 연결 후 어려움이 있을 시 다시 연락한다고 합니다."
+        },
+        {
+          "time": "13:00",
           "store": "스마트해법수학판교원마을11단지점수학교습소",
           "biz": "7049901537",
           "cat": "as",
@@ -60771,6 +60783,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "수업중이라 가능하실때 고객센터 인입"
+        },
+        {
+          "time": "12:55",
+          "store": "여인천하",
+          "biz": "204287569",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "서명기가 작동이 왔다갔다 한다고 합니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "매장 17시 방문 예정 1715 통화 예약 요청"
         },
         {
           "time": "11:53",
@@ -61038,11 +61061,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 22,
-        "offline": 3,
+        "online": 23,
+        "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "13:00",
+      "updatedAt": "13:11",
       "voc": {
         "responses": 3,
         "install": {
@@ -61141,11 +61164,7 @@ window.SLACK_DATA = {
       },
       "1784943025.018809": {
         "post": "1784943025.018809",
-        "lastSeen": 1784952133.923
-      },
-      "1784952000.948569": {
-        "post": "1784952000.948569",
-        "lastSeen": 1784952133.923
+        "lastSeen": 1784952922.319
       }
     },
     "days": {
@@ -67980,8 +67999,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-07-25": {
-        "cnt": 13,
-        "sumMin": 205.56556538740793,
+        "cnt": 14,
+        "sumMin": 214.35177257061002,
         "over": 0,
         "items": [
           {
@@ -68086,6 +68105,14 @@ window.SLACK_DATA = {
             "store": "감자꽃",
             "biz": "3285800796",
             "who": "김규빈",
+            "cat": "as"
+          },
+          {
+            "hm": "13:00",
+            "min": 8.8,
+            "store": "연종캠핑장",
+            "biz": "8781602741",
+            "who": "심성현",
             "cat": "as"
           }
         ]
