@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1531,
+  "version": 1532,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -60750,7 +60750,7 @@ window.SLACK_DATA = {
     "2026-07-25": {
       "counts": {
         "as": {
-          "김규빈": 17
+          "김규빈": 18
         },
         "onboarding": {
           "김규빈": 3
@@ -60759,30 +60759,7 @@ window.SLACK_DATA = {
           "김규빈": 3
         }
       },
-      "pending": [
-        {
-          "time": "11:00",
-          "store": "동악골아리랑",
-          "biz": "1621702492",
-          "handler": "김규빈",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "1차 부재"
-          ]
-        },
-        {
-          "time": "10:31",
-          "store": "카페모호",
-          "biz": "2214800521",
-          "handler": "김규빈",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
         {
           "time": "11:53",
@@ -60882,6 +60859,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "단자 CU 안쪽 건물 / IP도 제대로 정보를 못가져오는 경우가 있다고하여 / DK9300 택배로 보내고 고객센터로 인입하서 설정"
+        },
+        {
+          "time": "10:31",
+          "store": "카페모호",
+          "biz": "2214800521",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "터프 추가 구매 /  포터프(아이패드) 온보딩 도움 부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "여기 KPN이라서 새로 출고된 터미널 프론트 TID 필요함 / TID 생성 부탁드려요!!! / 뭐지 TID 1개로 지금 온보딩 점주님이 해서 결제가 되고 있따네요.. / 아 맞다 맞아요 규빈님 연결을 하셨데요 어케 하셨을가요 ㅠㅠ / 영지님 저 kpn 가시리얼 생성하는 법 시간되실때 한번만 알려주시면 감사드릴께요 ㅠ ! 영지님 저 kpn 가시리얼 생성하는 "
         },
         {
           "time": "10:30",
@@ -61039,7 +61027,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 22,
+        "online": 21,
         "offline": 3,
         "unknown": 0
       },
@@ -61142,7 +61130,7 @@ window.SLACK_DATA = {
       },
       "1784943025.018809": {
         "post": "1784943025.018809",
-        "lastSeen": 1784948432.613
+        "lastSeen": 1784949429.238
       }
     },
     "days": {
