@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1553,
+  "version": 1554,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -60750,8 +60750,8 @@ window.SLACK_DATA = {
     "2026-07-25": {
       "counts": {
         "as": {
-          "심성현": 10,
-          "김규빈": 27,
+          "김규빈": 28,
+          "심성현": 11,
           "김기범": 3
         },
         "onboarding": {
@@ -60768,6 +60768,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "17:15",
+          "store": "드롭탑 오창(하남)휴게소 2호점",
+          "biz": "7468501500",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "프론트 연결끊김으로 <https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1784679477847889|대체품 수령>하셨으나 , 카드결제시 '미장애오류' 노출되어 결제 불가",
+          "hw": "",
+          "intake": "offline",
+          "note": "교체 프론트로 온보딩 및 회수 접수"
+        },
+        {
+          "time": "17:15",
+          "store": "여인천하",
+          "biz": "204287569",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "서명기가 작동이 왔다갔다 한다고 합니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "DK935 불량 제고 없음 07/27 발송 요청하셨습니다. 재고 확인 중:로딩: 재고 확인 중"
+        },
         {
           "time": "17:03",
           "store": "이루다영어학원",
@@ -61387,25 +61409,26 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 52,
-        "offline": 4,
+        "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "17:15",
+      "updatedAt": "17:28",
       "voc": {
-        "responses": 20,
+        "responses": 21,
         "install": {
           "count": 15,
           "low": 1
         },
         "nps": {
-          "count": 20,
-          "low": 6
+          "count": 21,
+          "low": 7
         },
         "high": {
           "install": 6,
           "nps": 10
         },
         "npsDist": {
+          "0": 1,
           "1": 1,
           "4": 1,
           "5": 4,
@@ -61428,13 +61451,13 @@ window.SLACK_DATA = {
           "요식업": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 3,
+            "low": 2
+          },
           "구매설치": {
             "total": 15,
             "low": 5
-          },
-          "12개월": {
-            "total": 2,
-            "low": 1
           },
           "6개월": {
             "total": 1,
@@ -61446,11 +61469,11 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
-          "SMARTRO": {
-            "total": 4,
-            "low": 2
-          },
           "KPN": {
+            "total": 5,
+            "low": 3
+          },
+          "SMARTRO": {
             "total": 4,
             "low": 2
           },
@@ -61476,11 +61499,33 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
-          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 3,
           "사용중 오류가 자주 발생함": 1,
           "단말기 설치나 초기 과정이 어려움": 4
         },
         "alerts": [
+          {
+            "time": "17:23",
+            "store": "사계절피부공간",
+            "storeId": "214242",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "로딩이 오래걸립니다",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "16:44",
             "store": "드럼뮤직컴퍼니학원(DMC Books)",
@@ -61697,11 +61742,19 @@ window.SLACK_DATA = {
       },
       "1784943025.018809": {
         "post": "1784943025.018809",
-        "lastSeen": 1784967321.214
+        "lastSeen": 1784968317.286
       },
-      "1784967300.928759": {
-        "post": "1784967300.928759",
-        "lastSeen": 1784967321.214
+      "1784968085.306029": {
+        "post": "1784968085.306029",
+        "lastSeen": 1784968317.286
+      },
+      "1784967793.693289": {
+        "post": "1784967793.693289",
+        "lastSeen": 1784968317.286
+      },
+      "1784967947.718089": {
+        "post": "1784967947.718089",
+        "lastSeen": 1784968317.286
       }
     },
     "days": {
@@ -68536,8 +68589,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-07-25": {
-        "cnt": 20,
-        "sumMin": 276.26623383363085,
+        "cnt": 21,
+        "sumMin": 284.90492118199666,
         "over": 0,
         "items": [
           {
@@ -68699,6 +68752,14 @@ window.SLACK_DATA = {
             "biz": "6034908265",
             "who": "김규빈",
             "cat": "onboarding"
+          },
+          {
+            "hm": "17:15",
+            "min": 8.6,
+            "store": "여인천하",
+            "biz": "204287569",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }

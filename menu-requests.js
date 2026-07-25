@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 89,
- "updatedAt": "2026-07-25 16:30",
+ "version": 90,
+ "updatedAt": "2026-07-25 17:32",
  "days": 30,
  "items": [
+  {
+   "ts": "1784967947.718089",
+   "date": "2026-07-25",
+   "time": "17:25",
+   "store": "합계",
+   "biz": "3561402704",
+   "phone": "01024658895",
+   "pos": "퍼스트포스",
+   "content": "제로콜라,사이다,콜라 금액 2,000원으로 수정\n하이볼 전체금액6,900원으로 수정 부탁드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1784967954.076939",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784967947718089"
+  },
   {
    "ts": "1784954846.434899",
    "date": "2026-07-25",
