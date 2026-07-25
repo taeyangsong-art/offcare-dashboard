@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1547,
+  "version": 1548,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -60749,21 +60749,36 @@ window.SLACK_DATA = {
     },
     "2026-07-25": {
       "counts": {
+        "onboarding": {
+          "김기범": 1,
+          "김규빈": 7,
+          "심성현": 1
+        },
         "as": {
           "김규빈": 24,
           "심성현": 6,
           "김기범": 2
         },
-        "onboarding": {
-          "김규빈": 7,
-          "심성현": 1
-        },
         "menu": {
           "김규빈": 4
+        },
+        "delivery": {
+          "심성현": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:00",
+          "store": "소년공방 미술학원",
+          "biz": "6189409780",
+          "cat": "onboarding",
+          "emp": "김기범",
+          "req": "노트북 + 프론트 + 프린터 온보딩",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료 및 교육완료"
+        },
         {
           "time": "15:55",
           "store": "아미뷰티샵",
@@ -60774,6 +60789,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "영수증 설정에 로고들어가 있음 삭제 후 정상"
+        },
+        {
+          "time": "15:45",
+          "store": "순대로만 633 서남시장점",
+          "biz": "2043019786",
+          "cat": "delivery",
+          "emp": "심성현",
+          "req": "쿠팡이츠 주문접수 프로그램 설치 후 로그인한 사진 1장, 스티커 부착 사진 1장 없을 경우 매장 외관 사진 1장",
+          "hw": "",
+          "intake": "online",
+          "note": "사진 전달 완료"
         },
         {
           "time": "15:30",
@@ -61250,39 +61276,40 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 40,
+        "online": 42,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "16:00",
+      "updatedAt": "16:14",
       "voc": {
-        "responses": 14,
+        "responses": 16,
         "install": {
-          "count": 11,
+          "count": 12,
           "low": 1
         },
         "nps": {
-          "count": 14,
+          "count": 16,
           "low": 4
         },
         "high": {
           "install": 4,
-          "nps": 7
+          "nps": 8
         },
         "npsDist": {
           "4": 1,
           "5": 3,
           "6": 1,
-          "9": 2,
-          "10": 7
+          "9": 3,
+          "10": 8
         },
         "installDist": {
           "2": 1,
           "3": 2,
-          "4": 4,
+          "4": 5,
           "5": 4
         },
         "byIndustry": {
+          "카페": 1,
           "서비스[뷰티,헤어]": 3,
           "기타": 2,
           "요식업": 1,
@@ -61290,13 +61317,17 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 12,
+            "low": 4
+          },
+          "6개월": {
+            "total": 1,
+            "low": 0
+          },
           "1개월": {
             "total": 2,
             "low": 0
-          },
-          "구매설치": {
-            "total": 11,
-            "low": 4
           },
           "12개월": {
             "total": 1,
@@ -61304,6 +61335,14 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 6,
+            "low": 1
+          },
+          "DAOU": {
+            "total": 1,
+            "low": 0
+          },
           "SMARTRO": {
             "total": 2,
             "low": 1
@@ -61314,10 +61353,6 @@ window.SLACK_DATA = {
           },
           "KOCES": {
             "total": 3,
-            "low": 1
-          },
-          "KIS": {
-            "total": 5,
             "low": 1
           },
           "SECTA9": {
@@ -61431,6 +61466,30 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "16:14",
+            "store": "카페 아뜨랑떼",
+            "storeId": "549777",
+            "indBucket": "카페",
+            "emp": "",
+            "install": 4,
+            "nps": 9,
+            "text": "설치중에 잘안되서연락드렸고 친절하고 빠르게 해결해주셨어요 토스프론트를 사용하면서 결제가 훨씬 편해졌어요 다양한 결제프로그램을 사용할수있다는것도 좋습니다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "16:02",
+            "store": "제이오(J.O)",
+            "storeId": "331132",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "결제 오류 있었을때 대처도 빠르고 사소해서 물어보기 민망한거도 다 친절하게 대답해주시고 서류 필요한거도 잘 몰라도 도와주시려 함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "09:12",
             "store": "별길타로",
             "storeId": "520371",
@@ -61474,11 +61533,7 @@ window.SLACK_DATA = {
       },
       "1784943025.018809": {
         "post": "1784943025.018809",
-        "lastSeen": 1784962832.979
-      },
-      "1784962804.119589": {
-        "post": "1784962804.119589",
-        "lastSeen": 1784962832.979
+        "lastSeen": 1784963720.824
       }
     },
     "days": {
@@ -68313,8 +68368,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-07-25": {
-        "cnt": 18,
-        "sumMin": 260.4502531369527,
+        "cnt": 19,
+        "sumMin": 268.32995165189107,
         "over": 0,
         "items": [
           {
@@ -68460,6 +68515,14 @@ window.SLACK_DATA = {
             "biz": "6429002502",
             "who": "김규빈",
             "cat": "onboarding"
+          },
+          {
+            "hm": "16:00",
+            "min": 7.9,
+            "store": "쁘띠 플라워(Petite Flour Bakery)",
+            "biz": "4730803332",
+            "who": "김규빈",
+            "cat": "as"
           }
         ]
       }

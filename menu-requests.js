@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 87,
- "updatedAt": "2026-07-25 15:15",
+ "version": 88,
+ "updatedAt": "2026-07-25 16:15",
  "days": 30,
  "items": [
   {
@@ -10173,66 +10173,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김현기",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782372390729649"
-  },
-  {
-   "ts": "1782371420.927899",
-   "date": "2026-06-25",
-   "time": "16:10",
-   "store": "카펠라",
-   "biz": "2620401610",
-   "phone": "",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782375237.806239",
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782371420927899"
-  },
-  {
-   "ts": "1782371091.325139",
-   "date": "2026-06-25",
-   "time": "16:04",
-   "store": "참치나라",
-   "biz": "2593100299",
-   "phone": "01033374130",
-   "pos": "토스포스",
-   "content": "토스포스  :중요: 메뉴 등록 완료 후 꼭 유선 안내 원하십니다., <01033374130>",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782372595.193719",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782371091325139"
-  },
-  {
-   "ts": "1782370868.668399",
-   "date": "2026-06-25",
-   "time": "16:01",
-   "store": "케이핀초반",
-   "biz": "2660303234",
-   "phone": "01052459815\n-",
-   "pos": "기타",
-   "content": "안주류 카테고리에 해물꽃게탕 25000원 추가해주세요",
-   "special": "지금 바로 부탁드립니다",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1782370945.785459",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782370868668399"
   }
  ]
 };
