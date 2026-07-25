@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1518,
+  "version": 1519,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -60748,15 +60748,31 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-25": {
-      "counts": {},
+      "counts": {
+        "menu": {
+          "김규빈": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "07:46",
+          "store": "카페 아일랜드",
+          "biz": "1610702748",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "07:55",
+      "updatedAt": "09:00",
       "voc": {
         "responses": 2,
         "install": {
@@ -60831,10 +60847,6 @@ window.SLACK_DATA = {
       "1784883564.600099": {
         "post": "1784883564.600099",
         "lastSeen": 1784923513.25
-      },
-      "1784933161.408349": {
-        "post": "1784933161.408349",
-        "lastSeen": 1784936720.73
       }
     },
     "days": {
