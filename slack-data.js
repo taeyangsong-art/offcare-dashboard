@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1519,
+  "version": 1520,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -60749,12 +60749,37 @@ window.SLACK_DATA = {
     },
     "2026-07-25": {
       "counts": {
+        "as": {
+          "김규빈": 2
+        },
         "menu": {
           "김규빈": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:06",
+          "store": "하루",
+          "biz": "2103272742",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "태블릿 사용 매장 /  페이지를 찾을 수 없습니다 오류",
+          "hw": "",
+          "intake": "online",
+          "note": "재온보딩 완료"
+        },
+        {
+          "time": "09:00",
+          "store": "올곳필라테스",
+          "biz": "2572200200",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "포프 + 유프 온보딩 요청드립니다. / 휴대폰, PC, 태블릿 연동 원하심",
+          "hw": "",
+          "intake": "online",
+          "note": "13시로 에약 <tel:010-9917-6524|010-9917-6524(아) 010-9917-6524(아)"
+        },
         {
           "time": "07:46",
           "store": "카페 아일랜드",
@@ -60768,31 +60793,39 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
+        "online": 3,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:00",
+      "updatedAt": "09:12",
       "voc": {
-        "responses": 2,
+        "responses": 3,
         "install": {
-          "count": 0,
+          "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 2,
+          "count": 3,
           "low": 0
         },
         "high": {
-          "install": 0,
-          "nps": 2
+          "install": 1,
+          "nps": 3
         },
         "npsDist": {
-          "10": 2
+          "10": 3
         },
-        "installDist": {},
-        "byIndustry": {},
+        "installDist": {
+          "5": 1
+        },
+        "byIndustry": {
+          "기타": 1
+        },
         "byTenure": {
+          "구매설치": {
+            "total": 1,
+            "low": 0
+          },
           "1개월": {
             "total": 1,
             "low": 0
@@ -60804,7 +60837,7 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KIS": {
-            "total": 1,
+            "total": 2,
             "low": 0
           },
           "KSNET": {
@@ -60814,7 +60847,20 @@ window.SLACK_DATA = {
         },
         "reasonCounts": {},
         "alerts": [],
-        "praises": []
+        "praises": [
+          {
+            "time": "09:12",
+            "store": "별길타로",
+            "storeId": "520371",
+            "indBucket": "기타",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "처음은 다 햇갈리기도 하고 부족한 면이 많은데 기계받았을때 혼자 어떻게하지 답답한 부분도 있었긴 하지만 대응을 너무 차분하게 설명해주시고 놓칠법한 부분도 대처해 주셔서 감사했어요 깔끔한 디자인에 저처럼 1인 사업장에 인테리어 효과도 있다고 봅니다",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
       }
     }
   },
