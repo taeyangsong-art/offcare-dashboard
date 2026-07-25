@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1537,
+  "version": 1538,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -60750,8 +60750,8 @@ window.SLACK_DATA = {
     "2026-07-25": {
       "counts": {
         "as": {
-          "심성현": 2,
-          "김규빈": 19
+          "김규빈": 20,
+          "심성현": 2
         },
         "onboarding": {
           "김규빈": 4
@@ -60762,6 +60762,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "13:30",
+          "store": "강탁구클럽",
+          "biz": "3646300189",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "프린터 지속적인 연결 불가로 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "2년전에 구매한 TS200 초기불량으로 프린터 교체했음 그래도 문제가 계속 발생 했는데 2년동안 방치함 구매 장비라 수리한다고하면 비용 나올 수 있고, 장비 교체는 어려움 안내드림 고객센터로 문의 주시면 정책에 맞게 도움 주시면 될것같습니다."
+        },
         {
           "time": "13:00",
           "store": "연종캠핑장",
@@ -61072,11 +61083,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 24,
+        "online": 25,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "13:30",
+      "updatedAt": "13:46",
       "voc": {
         "responses": 3,
         "install": {
@@ -61175,7 +61186,7 @@ window.SLACK_DATA = {
       },
       "1784943025.018809": {
         "post": "1784943025.018809",
-        "lastSeen": 1784953826.912
+        "lastSeen": 1784954800.046
       }
     },
     "days": {
