@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 90,
- "updatedAt": "2026-07-25 17:32",
+ "version": 91,
+ "updatedAt": "2026-07-25 17:45",
  "days": 30,
  "items": [
   {
@@ -10153,26 +10153,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782377623280609"
-  },
-  {
-   "ts": "1782377101.029659",
-   "date": "2026-06-25",
-   "time": "17:45",
-   "store": "돈바치 가락점",
-   "biz": "8821602416",
-   "phone": "01064064219",
-   "pos": "",
-   "content": "*1120597860 돈바치 강동구청점* 메뉴를 *8821602416 돈바치 가락점*과 동일하게 메뉴 복사 요청드립니다.\n점주님 요청사항으로 *가락점 메뉴 기준으로 전체 메뉴 복사 및 적용* 부탁드리며, *6/26(금) 오전 9시까지 반영 요청주셨습니다.* :face_holding_back_tears:\n작업 완료 후 점주님께 완료 안내 문자 발송도 함께 부탁드리겠습니다.:감사합니다꾸벅:",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 5,
-   "lr": "1782432403.188879",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782377101029659"
   }
  ]
 };
