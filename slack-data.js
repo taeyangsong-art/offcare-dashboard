@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1551,
+  "version": 1552,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -60750,12 +60750,12 @@ window.SLACK_DATA = {
     "2026-07-25": {
       "counts": {
         "as": {
-          "김규빈": 26,
+          "김규빈": 27,
           "김기범": 3,
           "심성현": 8
         },
         "onboarding": {
-          "김기범": 1,
+          "김기범": 2,
           "김규빈": 7,
           "심성현": 1
         },
@@ -60768,6 +60768,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:53",
+          "store": "히도네일",
+          "biz": "6943201412",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "항상출력으로 설정되어있으나 결제시 영수증 출력이 되지 않는다하여 점검부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "아이패드에 어플 항상 켜져있어야함 로고 넣으셔서 프린터 속도 115200 변경 완료"
+        },
+        {
+          "time": "16:41",
+          "store": "주식회사 엘앤",
+          "biz": "6198804069",
+          "cat": "onboarding",
+          "emp": "김기범",
+          "req": "포프(휴대폰) 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료"
+        },
         {
           "time": "16:27",
           "store": "카공족올데이 화정역점",
@@ -61331,11 +61353,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 47,
+        "online": 49,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "16:44",
+      "updatedAt": "17:00",
       "voc": {
         "responses": 20,
         "install": {
@@ -61646,7 +61668,11 @@ window.SLACK_DATA = {
       },
       "1784943025.018809": {
         "post": "1784943025.018809",
-        "lastSeen": 1784965649.217
+        "lastSeen": 1784966432.635
+      },
+      "1784966400.747569": {
+        "post": "1784966400.747569",
+        "lastSeen": 1784966432.635
       }
     },
     "days": {
