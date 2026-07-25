@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 72,
- "updatedAt": "2026-07-25 09:02",
+ "version": 73,
+ "updatedAt": "2026-07-25 09:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1784938937.915649",
+   "date": "2026-07-25",
+   "time": "09:22",
+   "store": "온찬",
+   "biz": "2951902699",
+   "phone": "01089422621",
+   "pos": "토스포스",
+   "content": "토스포스 사용중\n•   화요일/수요일/목요일/금요일  카테고리만 유지 \n•   나머지 카테고리에 있는 모든 상품   [전체] 카테고리 생성하여  통합요청주셔서 부탁드립니다 !",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "넵 감사합니다 ㅠㅠ !",
+    "아직 매장 출근전이셔서 삭제 후 재등록 예정 안내 완료입니다!"
+   ],
+   "rc": 4,
+   "lr": "1784939390.167459",
+   "status": "done",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784938937915649"
+  },
   {
    "ts": "1784933161.408349",
    "date": "2026-07-25",
@@ -10580,33 +10603,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782350137596509"
-  },
-  {
-   "ts": "1782346982.070609",
-   "date": "2026-06-25",
-   "time": "09:23",
-   "store": "착한파스타 동판교점",
-   "biz": "5294301069",
-   "phone": "01062724319\n-",
-   "pos": "기타",
-   "content": "메뉴 추가 등록 요청",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/open?id=1gt6B3f_19-54Rk_luPaex65fRutJeiz4",
-    "https://drive.google.com/open?id=1mgrirWW8m4OMP8pdTQOuKzfPhqsvSvCe",
-    "https://drive.google.com/open?id=11v_hNexJZdZiKJPui0bv9r44xvjAJeuI",
-    "https://drive.google.com/open?id=1dSRO6rD8Vw4jm7Hyk07XZ3Ur5w1tFwmC",
-    "https://drive.google.com/open?id=119iY7NGT2LawdSAogwtotl8xsxdUBDbh",
-    "https://drive.google.com/open?id=1VvLiwAu4dbRKO-F-H83jOtYkv_Z_6H4C"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1782346987.237799",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782346982070609"
   }
  ]
 };

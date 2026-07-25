@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1520,
+  "version": 1521,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -60753,11 +60753,22 @@ window.SLACK_DATA = {
           "김규빈": 2
         },
         "menu": {
-          "김규빈": 1
+          "김규빈": 2
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:22",
+          "store": "온찬",
+          "biz": "2951902699",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "토스포스 사용중",
+          "hw": "",
+          "intake": "online",
+          "note": "님 여기 반찬가게라 메뉴가 600개 정도라.. 일일이 손으로 옮긴순 없을거같고 삭제 했다가 다시 넣을게요 님 여기 반찬가게라 메뉴가 600개 정도라.. 일일이 손으로 옮긴순 없을거같고 / 넵 감사합니다 ㅠㅠ ! / 아직 매장 출근전이셔서 삭제 후 재등록 예정 안내 완료입니다! / 완료입니다"
+        },
         {
           "time": "09:06",
           "store": "하루",
@@ -60793,11 +60804,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 3,
+        "online": 4,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:12",
+      "updatedAt": "09:30",
       "voc": {
         "responses": 3,
         "install": {
