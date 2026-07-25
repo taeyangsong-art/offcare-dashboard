@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 93,
- "updatedAt": "2026-07-25 18:46",
+ "version": 94,
+ "updatedAt": "2026-07-25 19:02",
  "days": 30,
  "items": [
   {
@@ -10106,26 +10106,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782429013955519"
-  },
-  {
-   "ts": "1782381745.738319",
-   "date": "2026-06-25",
-   "time": "19:02",
-   "store": "은성한정식",
-   "biz": "5298703678",
-   "phone": "01025147226\n-",
-   "pos": "퍼스트포스",
-   "content": "메인화면 2층 7호-1, 2층 11호-1 등등을 => 2층 7-1호, 2층 7-2호, 2층 11-1호, 2층 12-1호, 2층 12-2호, 2층 14-1호 로 바꿔주세요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1782395001.950069",
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782381745738319"
   }
  ]
 };
