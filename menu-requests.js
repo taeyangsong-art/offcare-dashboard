@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 92,
- "updatedAt": "2026-07-25 18:03",
+ "version": 93,
+ "updatedAt": "2026-07-25 18:46",
  "days": 30,
  "items": [
   {
@@ -10126,26 +10126,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782381745738319"
-  },
-  {
-   "ts": "1782380010.725509",
-   "date": "2026-06-25",
-   "time": "18:33",
-   "store": "형과아우 누룽지삼계탕 대구 칠곡점",
-   "biz": "7983401362",
-   "phone": "01071973301",
-   "pos": "오케이포스",
-   "content": "오케이포스 사용중 / 하기메뉴 2가지  숨김요청 주셔서 도움 부탁드립니다 !\n• 황칠갈비탕 / 황칠전복갈비탕",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782380680.713459",
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782380010725509"
   }
  ]
 };
