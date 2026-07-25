@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1545,
+  "version": 1546,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -60750,7 +60750,7 @@ window.SLACK_DATA = {
     "2026-07-25": {
       "counts": {
         "as": {
-          "심성현": 5,
+          "심성현": 6,
           "김기범": 2,
           "김규빈": 23
         },
@@ -60764,6 +60764,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:30",
+          "store": "카사블랑카",
+          "biz": "4804501128",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "구성품에 들어있던 충전기로 충전이 안된다 하시어 확인 부탁드립니다 :woman-bowing:",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트2 일체형 아답터 불량 다른 C타입 장비 충전 불가 다른 매장 토스 아답터로 정상 / 월요일 출고 안내 완료 / 07/27 출고 접수 완료"
+        },
         {
           "time": "15:09",
           "store": "교촌치킨 옥룡점",
@@ -61228,49 +61239,49 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 38,
+        "online": 39,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "15:30",
+      "updatedAt": "15:45",
       "voc": {
-        "responses": 11,
+        "responses": 13,
         "install": {
-          "count": 9,
+          "count": 11,
           "low": 1
         },
         "nps": {
-          "count": 11,
-          "low": 3
+          "count": 13,
+          "low": 4
         },
         "high": {
-          "install": 3,
-          "nps": 5
+          "install": 4,
+          "nps": 6
         },
         "npsDist": {
           "4": 1,
-          "5": 2,
+          "5": 3,
           "6": 1,
           "9": 2,
-          "10": 5
+          "10": 6
         },
         "installDist": {
           "2": 1,
-          "3": 1,
+          "3": 2,
           "4": 4,
-          "5": 3
+          "5": 4
         },
         "byIndustry": {
+          "서비스[뷰티,헤어]": 3,
+          "기타": 2,
           "요식업": 1,
           "서비스[학원]": 4,
-          "서비스[뷰티,헤어]": 2,
-          "도소매": 1,
-          "기타": 1
+          "도소매": 1
         },
         "byTenure": {
           "구매설치": {
-            "total": 9,
-            "low": 3
+            "total": 11,
+            "low": 4
           },
           "1개월": {
             "total": 1,
@@ -61282,16 +61293,16 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
-          "KIS": {
-            "total": 5,
+          "KPN": {
+            "total": 2,
             "low": 1
           },
-          "KPN": {
-            "total": 1,
-            "low": 0
-          },
           "KOCES": {
-            "total": 2,
+            "total": 3,
+            "low": 1
+          },
+          "KIS": {
+            "total": 5,
             "low": 1
           },
           "SECTA9": {
@@ -61308,9 +61319,32 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "단말기 설치나 초기 과정이 어려움": 4
         },
         "alerts": [
+          {
+            "time": "15:44",
+            "store": "관동동미용실",
+            "storeId": "555166",
+            "industry": "뷰티",
+            "indBucket": "서비스[뷰티,헤어]",
+            "install": 3,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "사용하기가 조금 번거로워요",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:14",
             "store": "문화공간 조나단",
@@ -61429,7 +61463,11 @@ window.SLACK_DATA = {
       },
       "1784943025.018809": {
         "post": "1784943025.018809",
-        "lastSeen": 1784961351.963
+        "lastSeen": 1784961922.921
+      },
+      "1784961900.660409": {
+        "post": "1784961900.660409",
+        "lastSeen": 1784961922.921
       }
     },
     "days": {
