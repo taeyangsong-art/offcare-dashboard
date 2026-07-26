@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1652,
+  "version": 1653,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -61925,20 +61925,20 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "17:10",
+      "updatedAt": "17:22",
       "voc": {
-        "responses": 14,
+        "responses": 15,
         "install": {
-          "count": 6,
+          "count": 7,
           "low": 3
         },
         "nps": {
-          "count": 14,
+          "count": 15,
           "low": 6
         },
         "high": {
-          "install": 2,
-          "nps": 4
+          "install": 3,
+          "nps": 5
         },
         "npsDist": {
           "0": 1,
@@ -61947,27 +61947,27 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 1,
           "9": 2,
-          "10": 4
+          "10": 5
         },
         "installDist": {
           "1": 1,
           "2": 2,
           "4": 1,
-          "5": 2
+          "5": 3
         },
         "byIndustry": {
-          "서비스[학원]": 4,
+          "서비스[학원]": 5,
           "서비스[뷰티,헤어]": 1,
           "요식업": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 7,
+            "low": 3
+          },
           "6개월": {
             "total": 1,
             "low": 0
-          },
-          "구매설치": {
-            "total": 6,
-            "low": 3
           },
           "3개월": {
             "total": 6,
@@ -61979,6 +61979,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 4,
+            "low": 1
+          },
           "NICE": {
             "total": 1,
             "low": 0
@@ -61990,10 +61994,6 @@ window.SLACK_DATA = {
           "KPN": {
             "total": 3,
             "low": 0
-          },
-          "KIS": {
-            "total": 3,
-            "low": 1
           },
           "KOCES": {
             "total": 2,
@@ -62203,10 +62203,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1784881800.585279": {
-        "post": "1784881800.585279",
-        "lastSeen": 1784881826.484
-      },
       "1784883564.600099": {
         "post": "1784883564.600099",
         "lastSeen": 1784923513.25
@@ -62229,7 +62225,7 @@ window.SLACK_DATA = {
       },
       "1784995009.802039": {
         "post": "1784995009.802039",
-        "lastSeen": 1785053720.383
+        "lastSeen": 1785054625.036
       },
       "1784990910.231639": {
         "post": "1784990910.231639",
