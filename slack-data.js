@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1649,
+  "version": 1650,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -61925,16 +61925,16 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "16:14",
+      "updatedAt": "16:51",
       "voc": {
-        "responses": 12,
+        "responses": 13,
         "install": {
-          "count": 5,
-          "low": 2
+          "count": 6,
+          "low": 3
         },
         "nps": {
-          "count": 12,
-          "low": 5
+          "count": 13,
+          "low": 6
         },
         "high": {
           "install": 2,
@@ -61943,7 +61943,7 @@ window.SLACK_DATA = {
         "npsDist": {
           "0": 1,
           "2": 2,
-          "5": 2,
+          "5": 3,
           "7": 1,
           "8": 1,
           "9": 2,
@@ -61951,23 +61951,23 @@ window.SLACK_DATA = {
         },
         "installDist": {
           "1": 1,
-          "2": 1,
+          "2": 2,
           "4": 1,
           "5": 2
         },
         "byIndustry": {
-          "서비스[학원]": 3,
+          "서비스[학원]": 4,
           "서비스[뷰티,헤어]": 1,
           "요식업": 1
         },
         "byTenure": {
-          "3개월": {
+          "구매설치": {
             "total": 6,
             "low": 3
           },
-          "구매설치": {
-            "total": 5,
-            "low": 2
+          "3개월": {
+            "total": 6,
+            "low": 3
           },
           "1개월": {
             "total": 1,
@@ -61975,6 +61975,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SMARTRO": {
+            "total": 1,
+            "low": 1
+          },
           "KPN": {
             "total": 3,
             "low": 0
@@ -61993,9 +61997,38 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 2,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 7
         },
         "alerts": [
+          {
+            "time": "16:51",
+            "store": "가온스포츠",
+            "storeId": "566003",
+            "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
+            "install": 2,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 2,
+                "text": "프린트 연결 포트가 맞지 않아 연결불가",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              },
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "기기 설치는 간편하나 프린트 포트 부품이 PC가 맞지 않아 미설치 함",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:44",
             "store": "별밤포차",
@@ -62188,7 +62221,7 @@ window.SLACK_DATA = {
       },
       "1784995009.802039": {
         "post": "1784995009.802039",
-        "lastSeen": 1785051922.846
+        "lastSeen": 1785052754.046
       },
       "1784990910.231639": {
         "post": "1784990910.231639",
