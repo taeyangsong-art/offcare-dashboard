@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1673,
+  "version": 1674,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -61925,20 +61925,20 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "21:23",
+      "updatedAt": "22:23",
       "voc": {
-        "responses": 18,
+        "responses": 19,
         "install": {
-          "count": 8,
+          "count": 9,
           "low": 3
         },
         "nps": {
-          "count": 18,
+          "count": 19,
           "low": 7
         },
         "high": {
           "install": 3,
-          "nps": 6
+          "nps": 7
         },
         "npsDist": {
           "0": 1,
@@ -61948,23 +61948,23 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 1,
           "9": 2,
-          "10": 6
+          "10": 7
         },
         "installDist": {
           "1": 1,
           "2": 2,
           "3": 1,
-          "4": 1,
+          "4": 2,
           "5": 3
         },
         "byIndustry": {
+          "요식업": 2,
           "서비스[뷰티,헤어]": 2,
-          "서비스[학원]": 5,
-          "요식업": 1
+          "서비스[학원]": 5
         },
         "byTenure": {
           "구매설치": {
-            "total": 8,
+            "total": 9,
             "low": 4
           },
           "6개월": {
@@ -61985,6 +61985,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 3,
+            "low": 1
+          },
           "KIS": {
             "total": 5,
             "low": 2
@@ -62000,10 +62004,6 @@ window.SLACK_DATA = {
           "NICE": {
             "total": 1,
             "low": 0
-          },
-          "KOCES": {
-            "total": 2,
-            "low": 1
           },
           "SECTA9": {
             "total": 4,
@@ -62190,6 +62190,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "22:23",
+            "store": "면사무소",
+            "storeId": "554456",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 4,
+            "nps": 10,
+            "text": "특정 케이블 선 설치방법링크가 뜨지않아서 인터넷을 찾아봐도 보이지않았다 친절한 안내와 무료대여서비스",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "18:10",
             "store": "스케치 사진관",
             "storeId": "317395",
@@ -62261,7 +62273,7 @@ window.SLACK_DATA = {
       },
       "1784995009.802039": {
         "post": "1784995009.802039",
-        "lastSeen": 1785071723.174
+        "lastSeen": 1785072623.545
       },
       "1784990910.231639": {
         "post": "1784990910.231639",
@@ -62269,7 +62281,7 @@ window.SLACK_DATA = {
       },
       "1785054797.138289": {
         "post": "1785054797.138289",
-        "lastSeen": 1785071723.174
+        "lastSeen": 1785072623.545
       }
     },
     "days": {
