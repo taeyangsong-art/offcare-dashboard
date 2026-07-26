@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 96,
- "updatedAt": "2026-07-26 08:15",
+ "version": 97,
+ "updatedAt": "2026-07-26 09:15",
  "days": 30,
  "items": [
   {
@@ -10086,26 +10086,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782433878706969"
-  },
-  {
-   "ts": "1782432677.379279",
-   "date": "2026-06-26",
-   "time": "09:11",
-   "store": "이엠커피 창원상남점",
-   "biz": "7306300746",
-   "phone": "",
-   "pos": "",
-   "content": "메뉴 사진 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782432691.627999",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782432677379279"
   }
  ]
 };
