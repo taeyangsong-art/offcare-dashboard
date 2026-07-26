@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 97,
- "updatedAt": "2026-07-26 09:15",
+ "version": 98,
+ "updatedAt": "2026-07-26 09:32",
  "days": 30,
  "items": [
   {
@@ -10066,26 +10066,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782434054692319"
-  },
-  {
-   "ts": "1782433878.706969",
-   "date": "2026-06-26",
-   "time": "09:31",
-   "store": "돈바치 가락점",
-   "biz": "8821602416",
-   "phone": "01064064219",
-   "pos": "",
-   "content": "메뉴 이미지 등록 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1782439655.118279",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782433878706969"
   }
  ]
 };
