@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1626,
+  "version": 1627,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -61925,15 +61925,15 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "10:19",
+      "updatedAt": "11:04",
       "voc": {
-        "responses": 1,
+        "responses": 2,
         "install": {
           "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 1,
+          "count": 2,
           "low": 0
         },
         "high": {
@@ -61941,6 +61941,7 @@ window.SLACK_DATA = {
           "nps": 1
         },
         "npsDist": {
+          "8": 1,
           "10": 1
         },
         "installDist": {
@@ -61950,12 +61951,20 @@ window.SLACK_DATA = {
           "요식업": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 1,
+            "low": 0
+          },
           "구매설치": {
             "total": 1,
             "low": 0
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 1,
+            "low": 0
+          },
           "KOCES": {
             "total": 1,
             "low": 0
@@ -61964,6 +61973,18 @@ window.SLACK_DATA = {
         "reasonCounts": {},
         "alerts": [],
         "praises": [
+          {
+            "time": "11:04",
+            "store": "파이카솔루션강릉점",
+            "storeId": "521671",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 8,
+            "text": "제품 배송과 사용료 없음. 설치과정은 대체로 만족했습니다만, 결제 후 프린터기 자동 출력을 해놓아도 프린터 출력이 되지 않아요. 고객센터 전화 연결도 쉽지 않구요. 그래서 이런 부분이 아쉬워서 8점 체크 했습니다. 결제 프린터 출력 시 매번 스마트폰 토스 사장님 어플로 접속해서 출력해야하는 번거로움이 있습니다.",
+            "byReaction": false,
+            "doneDate": ""
+          },
           {
             "time": "10:19",
             "store": "오름생고기",
@@ -62016,7 +62037,7 @@ window.SLACK_DATA = {
       },
       "1784995009.802039": {
         "post": "1784995009.802039",
-        "lastSeen": 1785031229.465
+        "lastSeen": 1785032122.926
       },
       "1784990910.231639": {
         "post": "1784990910.231639",
