@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 104,
- "updatedAt": "2026-07-26 16:45",
+ "version": 105,
+ "updatedAt": "2026-07-26 22:15",
  "days": 30,
  "items": [
   {
@@ -9844,28 +9844,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782545613374069"
-  },
-  {
-   "ts": "1782478895.175959",
-   "date": "2026-06-26",
-   "time": "22:01",
-   "store": "퍼리엔",
-   "biz": "1764201290",
-   "phone": "01055297446\n-",
-   "pos": "기타",
-   "content": "사이드 메뉴에서 리얼 파인애플 주스 추가. 수박주스도 리얼 수박주스,  파인애플 주스도 리얼 파인애플 주스로 변경. 모든 반미메뉴에 컷팅 옵션 추가.",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/open?id=1R_fNO6kc0YiLLA7snlcj8NhyHdyXHhtA"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782486851.599159",
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782478895175959"
   }
  ]
 };
