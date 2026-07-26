@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1643,
+  "version": 1644,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -61925,35 +61925,46 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "15:14",
+      "updatedAt": "15:21",
       "voc": {
-        "responses": 6,
+        "responses": 10,
         "install": {
-          "count": 1,
-          "low": 0
-        },
-        "nps": {
-          "count": 6,
+          "count": 5,
           "low": 2
         },
+        "nps": {
+          "count": 10,
+          "low": 4
+        },
         "high": {
-          "install": 1,
-          "nps": 2
+          "install": 2,
+          "nps": 3
         },
         "npsDist": {
           "0": 1,
-          "5": 1,
+          "2": 1,
+          "5": 2,
           "7": 1,
           "8": 1,
-          "10": 2
+          "9": 1,
+          "10": 3
         },
         "installDist": {
-          "5": 1
+          "1": 1,
+          "2": 1,
+          "4": 1,
+          "5": 2
         },
         "byIndustry": {
+          "서비스[학원]": 3,
+          "서비스[뷰티,헤어]": 1,
           "요식업": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 5,
+            "low": 2
+          },
           "3개월": {
             "total": 4,
             "low": 2
@@ -61961,34 +61972,86 @@ window.SLACK_DATA = {
           "1개월": {
             "total": 1,
             "low": 0
-          },
-          "구매설치": {
-            "total": 1,
-            "low": 0
           }
         },
         "byVan": {
-          "SECTA9": {
+          "KOCES": {
             "total": 2,
-            "low": 2
+            "low": 1
+          },
+          "KIS": {
+            "total": 2,
+            "low": 0
+          },
+          "SECTA9": {
+            "total": 4,
+            "low": 3
           },
           "KPN": {
             "total": 2,
             "low": 0
-          },
-          "KIS": {
-            "total": 1,
-            "low": 0
-          },
-          "KOCES": {
-            "total": 1,
-            "low": 0
           }
         },
         "reasonCounts": {
-          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 6
         },
         "alerts": [
+          {
+            "time": "15:21",
+            "store": "루아흐언어발달센터",
+            "storeId": "566642",
+            "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
+            "install": 1,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "어려워요",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              },
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "젊은 분들은 잘할거 같아요 아용료도 저렴하고",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:21",
+            "store": "소년공방 미술학원",
+            "storeId": "565981",
+            "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
+            "install": 2,
+            "nps": 2,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 2,
+                "text": "알아서해야함",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              },
+              {
+                "q": "추천의향",
+                "score": 2,
+                "text": "알아서해야함",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:14",
             "store": "스터프드(stuffed)",
@@ -62035,6 +62098,18 @@ window.SLACK_DATA = {
           }
         ],
         "praises": [
+          {
+            "time": "15:21",
+            "store": "올가드림뷰티 의정부점",
+            "storeId": "519032",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 4,
+            "nps": 9,
+            "text": "상세설명 책자가 부족해서 어려웠어요 많이쓰니까",
+            "byReaction": false,
+            "doneDate": ""
+          },
           {
             "time": "11:04",
             "store": "파이카솔루션강릉점",
@@ -62095,7 +62170,7 @@ window.SLACK_DATA = {
       },
       "1784995009.802039": {
         "post": "1784995009.802039",
-        "lastSeen": 1785046607.359
+        "lastSeen": 1785047426.367
       },
       "1784990910.231639": {
         "post": "1784990910.231639",
