@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 99,
- "updatedAt": "2026-07-26 09:46",
+ "version": 100,
+ "updatedAt": "2026-07-26 10:15",
  "days": 30,
  "items": [
   {
@@ -10006,46 +10006,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782441419170379"
-  },
-  {
-   "ts": "1782435715.964789",
-   "date": "2026-06-26",
-   "time": "10:01",
-   "store": "카펠라",
-   "biz": "2620401610",
-   "phone": "",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782435909.727379",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782435715964789"
-  },
-  {
-   "ts": "1782435656.395789",
-   "date": "2026-06-26",
-   "time": "10:00",
-   "store": "카페 오늘",
-   "biz": "5091230324",
-   "phone": "01051497739",
-   "pos": "토스포스",
-   "content": "토스포스 메뉴등록 요청드립니다 !",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782435707.362519",
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782435656395789"
   }
  ]
 };
