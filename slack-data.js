@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1653,
+  "version": 1654,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -61925,20 +61925,20 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "17:22",
+      "updatedAt": "17:33",
       "voc": {
-        "responses": 15,
+        "responses": 16,
         "install": {
           "count": 7,
           "low": 3
         },
         "nps": {
-          "count": 15,
+          "count": 16,
           "low": 6
         },
         "high": {
           "install": 3,
-          "nps": 5
+          "nps": 6
         },
         "npsDist": {
           "0": 1,
@@ -61947,7 +61947,7 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 1,
           "9": 2,
-          "10": 5
+          "10": 6
         },
         "installDist": {
           "1": 1,
@@ -61961,6 +61961,10 @@ window.SLACK_DATA = {
           "요식업": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 1,
+            "low": 0
+          },
           "구매설치": {
             "total": 7,
             "low": 3
@@ -61979,6 +61983,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 4,
+            "low": 0
+          },
           "KIS": {
             "total": 4,
             "low": 1
@@ -61990,10 +61998,6 @@ window.SLACK_DATA = {
           "SMARTRO": {
             "total": 1,
             "low": 1
-          },
-          "KPN": {
-            "total": 3,
-            "low": 0
           },
           "KOCES": {
             "total": 2,
@@ -62225,11 +62229,15 @@ window.SLACK_DATA = {
       },
       "1784995009.802039": {
         "post": "1784995009.802039",
-        "lastSeen": 1785054625.036
+        "lastSeen": 1785055523.129
       },
       "1784990910.231639": {
         "post": "1784990910.231639",
         "lastSeen": 1785003191.299
+      },
+      "1785054797.138289": {
+        "post": "1785054797.138289",
+        "lastSeen": 1785055523.129
       }
     },
     "days": {
