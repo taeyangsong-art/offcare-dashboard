@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 102,
- "updatedAt": "2026-07-26 15:00",
+ "version": 103,
+ "updatedAt": "2026-07-26 15:16",
  "days": 30,
  "items": [
   {
@@ -9886,66 +9886,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782459628436829"
-  },
-  {
-   "ts": "1782454374.010559",
-   "date": "2026-06-26",
-   "time": "15:12",
-   "store": "카페메일빈디저트",
-   "biz": "5872302353",
-   "phone": "01087049279",
-   "pos": "퍼스트포스",
-   "content": "삼성키오스크 + KPN프로그램 사용매장 / 메뉴 사진 추가 및 수정요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782454468.816129",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782454374010559"
-  },
-  {
-   "ts": "1782454052.368079",
-   "date": "2026-06-26",
-   "time": "15:07",
-   "store": "라온포레",
-   "biz": "2450601303",
-   "phone": "",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1782454539.075739",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782454052368079"
-  },
-  {
-   "ts": "1782453814.183089",
-   "date": "2026-06-26",
-   "time": "15:03",
-   "store": "초우정",
-   "biz": "5652000091",
-   "phone": "01022277022",
-   "pos": "",
-   "content": "메뉴 추가 및 수정 요청 드립니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 5,
-   "lr": "1782454532.497909",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782453814183089"
   }
  ]
 };

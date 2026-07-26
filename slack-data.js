@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1642,
+  "version": 1643,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -61925,24 +61925,27 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "11:04",
+      "updatedAt": "15:14",
       "voc": {
-        "responses": 2,
+        "responses": 6,
         "install": {
           "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 2,
-          "low": 0
+          "count": 6,
+          "low": 2
         },
         "high": {
           "install": 1,
-          "nps": 1
+          "nps": 2
         },
         "npsDist": {
+          "0": 1,
+          "5": 1,
+          "7": 1,
           "8": 1,
-          "10": 1
+          "10": 2
         },
         "installDist": {
           "5": 1
@@ -61951,6 +61954,10 @@ window.SLACK_DATA = {
           "요식업": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 4,
+            "low": 2
+          },
           "1개월": {
             "total": 1,
             "low": 0
@@ -61961,6 +61968,14 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SECTA9": {
+            "total": 2,
+            "low": 2
+          },
+          "KPN": {
+            "total": 2,
+            "low": 0
+          },
           "KIS": {
             "total": 1,
             "low": 0
@@ -61970,8 +61985,55 @@ window.SLACK_DATA = {
             "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2
+        },
+        "alerts": [
+          {
+            "time": "15:14",
+            "store": "스터프드(stuffed)",
+            "storeId": "444573",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "나쁘지않게쓰고있는데 저번에 서버터진거도 그렇고 아직 완전추천하긴 어려운것같아서요",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:14",
+            "store": "하마상점",
+            "storeId": "442461",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "키오스크 대체가 불가능",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
         "praises": [
           {
             "time": "11:04",
@@ -62033,7 +62095,7 @@ window.SLACK_DATA = {
       },
       "1784995009.802039": {
         "post": "1784995009.802039",
-        "lastSeen": 1785045632.001
+        "lastSeen": 1785046607.359
       },
       "1784990910.231639": {
         "post": "1784990910.231639",
