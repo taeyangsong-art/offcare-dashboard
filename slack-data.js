@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1669,
+  "version": 1670,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -61925,16 +61925,16 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "18:10",
+      "updatedAt": "21:23",
       "voc": {
-        "responses": 17,
+        "responses": 18,
         "install": {
-          "count": 7,
+          "count": 8,
           "low": 3
         },
         "nps": {
-          "count": 17,
-          "low": 6
+          "count": 18,
+          "low": 7
         },
         "high": {
           "install": 3,
@@ -61943,7 +61943,7 @@ window.SLACK_DATA = {
         "npsDist": {
           "0": 1,
           "2": 2,
-          "5": 3,
+          "5": 4,
           "6": 1,
           "7": 1,
           "8": 1,
@@ -61953,15 +61953,20 @@ window.SLACK_DATA = {
         "installDist": {
           "1": 1,
           "2": 2,
+          "3": 1,
           "4": 1,
           "5": 3
         },
         "byIndustry": {
+          "서비스[뷰티,헤어]": 2,
           "서비스[학원]": 5,
-          "서비스[뷰티,헤어]": 1,
           "요식업": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 8,
+            "low": 4
+          },
           "6개월": {
             "total": 2,
             "low": 0
@@ -61969,10 +61974,6 @@ window.SLACK_DATA = {
           "12개월": {
             "total": 1,
             "low": 0
-          },
-          "구매설치": {
-            "total": 7,
-            "low": 3
           },
           "3개월": {
             "total": 6,
@@ -61984,6 +61985,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 5,
+            "low": 2
+          },
           "SMARTRO": {
             "total": 2,
             "low": 1
@@ -61991,10 +61996,6 @@ window.SLACK_DATA = {
           "KPN": {
             "total": 4,
             "low": 0
-          },
-          "KIS": {
-            "total": 4,
-            "low": 1
           },
           "NICE": {
             "total": 1,
@@ -62010,10 +62011,32 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
-          "단말기 설치나 초기 과정이 어려움": 2,
-          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 7
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 8,
+          "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "21:23",
+            "store": "예쁜오늘, 윤한복",
+            "storeId": "535388",
+            "industry": "뷰티",
+            "indBucket": "서비스[뷰티,헤어]",
+            "install": 3,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "앞서 말한 답변과 같은이유",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "16:51",
             "store": "가온스포츠",
@@ -62238,7 +62261,7 @@ window.SLACK_DATA = {
       },
       "1784995009.802039": {
         "post": "1784995009.802039",
-        "lastSeen": 1785068120.182
+        "lastSeen": 1785069024.768
       },
       "1784990910.231639": {
         "post": "1784990910.231639",
@@ -62246,7 +62269,7 @@ window.SLACK_DATA = {
       },
       "1785054797.138289": {
         "post": "1785054797.138289",
-        "lastSeen": 1785068120.182
+        "lastSeen": 1785069024.768
       }
     },
     "days": {
