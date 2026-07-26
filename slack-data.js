@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1655,
+  "version": 1656,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -61925,15 +61925,15 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "17:33",
+      "updatedAt": "18:10",
       "voc": {
-        "responses": 16,
+        "responses": 17,
         "install": {
           "count": 7,
           "low": 3
         },
         "nps": {
-          "count": 16,
+          "count": 17,
           "low": 6
         },
         "high": {
@@ -61944,6 +61944,7 @@ window.SLACK_DATA = {
           "0": 1,
           "2": 2,
           "5": 3,
+          "6": 1,
           "7": 1,
           "8": 1,
           "9": 2,
@@ -61961,6 +61962,10 @@ window.SLACK_DATA = {
           "요식업": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 2,
+            "low": 0
+          },
           "12개월": {
             "total": 1,
             "low": 0
@@ -61968,10 +61973,6 @@ window.SLACK_DATA = {
           "구매설치": {
             "total": 7,
             "low": 3
-          },
-          "6개월": {
-            "total": 1,
-            "low": 0
           },
           "3개월": {
             "total": 6,
@@ -61983,6 +61984,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SMARTRO": {
+            "total": 2,
+            "low": 1
+          },
           "KPN": {
             "total": 4,
             "low": 0
@@ -61994,10 +61999,6 @@ window.SLACK_DATA = {
           "NICE": {
             "total": 1,
             "low": 0
-          },
-          "SMARTRO": {
-            "total": 1,
-            "low": 1
           },
           "KOCES": {
             "total": 2,
@@ -62166,6 +62167,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "18:10",
+            "store": "스케치 사진관",
+            "storeId": "317395",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 6,
+            "text": "프린터기가. 따로 구매 처음 구매시. 이런 자세한 이야기 설명 없음. 지금도 손님들 한테 불편함 있던 다른기계 사용할지 고민중",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "15:21",
             "store": "올가드림뷰티 의정부점",
             "storeId": "519032",
@@ -62225,7 +62238,7 @@ window.SLACK_DATA = {
       },
       "1784995009.802039": {
         "post": "1784995009.802039",
-        "lastSeen": 1785056482.344
+        "lastSeen": 1785057321.935
       },
       "1784990910.231639": {
         "post": "1784990910.231639",
@@ -62233,7 +62246,7 @@ window.SLACK_DATA = {
       },
       "1785054797.138289": {
         "post": "1785054797.138289",
-        "lastSeen": 1785056482.344
+        "lastSeen": 1785057321.935
       }
     },
     "days": {
