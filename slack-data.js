@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1644,
+  "version": 1645,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -61925,16 +61925,16 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "15:21",
+      "updatedAt": "15:44",
       "voc": {
-        "responses": 10,
+        "responses": 11,
         "install": {
           "count": 5,
           "low": 2
         },
         "nps": {
-          "count": 10,
-          "low": 4
+          "count": 11,
+          "low": 5
         },
         "high": {
           "install": 2,
@@ -61942,7 +61942,7 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "0": 1,
-          "2": 1,
+          "2": 2,
           "5": 2,
           "7": 1,
           "8": 1,
@@ -61961,12 +61961,12 @@ window.SLACK_DATA = {
           "요식업": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 5,
+            "low": 3
+          },
           "구매설치": {
             "total": 5,
-            "low": 2
-          },
-          "3개월": {
-            "total": 4,
             "low": 2
           },
           "1개월": {
@@ -61975,13 +61975,13 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 3,
+            "low": 1
+          },
           "KOCES": {
             "total": 2,
             "low": 1
-          },
-          "KIS": {
-            "total": 2,
-            "low": 0
           },
           "SECTA9": {
             "total": 4,
@@ -61993,9 +61993,31 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
-          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 6
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 7
         },
         "alerts": [
+          {
+            "time": "15:44",
+            "store": "별밤포차",
+            "storeId": "445061",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 2,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 2,
+                "text": "모든게 비대면 시스템",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:21",
             "store": "루아흐언어발달센터",
@@ -62170,7 +62192,7 @@ window.SLACK_DATA = {
       },
       "1784995009.802039": {
         "post": "1784995009.802039",
-        "lastSeen": 1785047426.367
+        "lastSeen": 1785048321.468
       },
       "1784990910.231639": {
         "post": "1784990910.231639",
