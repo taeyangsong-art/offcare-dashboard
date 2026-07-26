@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 101,
- "updatedAt": "2026-07-26 11:45",
+ "version": 102,
+ "updatedAt": "2026-07-26 15:00",
  "days": 30,
  "items": [
   {
@@ -9946,46 +9946,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782453814183089"
-  },
-  {
-   "ts": "1782453333.908579",
-   "date": "2026-06-26",
-   "time": "14:55",
-   "store": "강창구진순대미사센텀비즈점",
-   "biz": "8677800154",
-   "phone": "",
-   "pos": "퍼스트포스",
-   "content": "본사에서 터치키 정보 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1782453357.286839",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782453333908579"
-  },
-  {
-   "ts": "1782453303.326629",
-   "date": "2026-06-26",
-   "time": "14:55",
-   "store": "강창구의 찹쌀진순대 수택본점",
-   "biz": "5364700353",
-   "phone": "",
-   "pos": "",
-   "content": "메뉴수정",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1782453308.869019",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782453303326629"
   }
  ]
 };
