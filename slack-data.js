@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1717,
+  "version": 1718,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -60760,6 +60760,8 @@ window.SLACK_DATA = {
           "심성현": 13
         },
         "menu": {
+          "김동욱": 1,
+          "배선유": 1,
           "김규빈": 5
         },
         "delivery": {
@@ -60769,8 +60771,8 @@ window.SLACK_DATA = {
       "pending": [
         {
           "time": "17:49",
-          "store": "꺼거2",
-          "biz": "1238549680",
+          "store": "",
+          "biz": "",
           "handler": "배선유",
           "cat": "menu",
           "intake": "online",
@@ -60780,6 +60782,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "23:48",
+          "store": "꾸움집",
+          "biz": "7974501249",
+          "cat": "menu",
+          "emp": "김동욱",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
+        },
         {
           "time": "21:14",
           "store": "로어베이스볼 아카데미",
@@ -60889,6 +60902,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "유프 온보딩 완료"
+        },
+        {
+          "time": "17:49",
+          "store": "꺼거2",
+          "biz": "1238549680",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         },
         {
           "time": "17:43",
@@ -61618,7 +61642,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 67,
+        "online": 69,
         "offline": 10,
         "unknown": 0
       },
@@ -61930,10 +61954,22 @@ window.SLACK_DATA = {
     },
     "2026-07-26": {
       "counts": {},
-      "pending": [],
+      "pending": [
+        {
+          "time": "00:56",
+          "store": "",
+          "biz": "",
+          "handler": "김동욱",
+          "cat": "menu",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "done": [],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
@@ -62265,15 +62301,31 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-27": {
-      "counts": {},
+      "counts": {
+        "menu": {
+          "김동욱": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "08:46",
+          "store": "어썸웰스파라운지 안양평촌점",
+          "biz": "4762402235",
+          "cat": "menu",
+          "emp": "김동욱",
+          "req": "어썸웰스파라운지 안양명학점 (<tel:5203102001|5203102001>) 기준으로 메뉴 복제 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 토플파 복제완료"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "00:08",
+      "updatedAt": "09:00",
       "voc": {
         "responses": 1,
         "install": {
