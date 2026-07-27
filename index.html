@@ -742,6 +742,16 @@
   .voc-drill-sum:hover{background:var(--canvas,#fff); border-color:var(--blue,#1F4FFA); box-shadow:0 2px 10px rgba(31,79,250,.12); transform:translateY(-1px)}
   .voc-drill-sum .vd-open{flex:0 0 auto; opacity:.45; font-size:13px}
   .voc-drill-sum:hover .vd-open{opacity:1}
+  /* 순위 배지 (업종별·이유별 인입) */
+  .vd-rank{flex:0 0 auto; min-width:36px; padding:5px 7px; border-radius:8px; text-align:center;
+    font-size:12px; font-weight:800; letter-spacing:-.02em; background:var(--line-soft); color:var(--gray)}
+  .vd-rank.r1{background:linear-gradient(135deg,#ffdf6e,#f0a500); color:#5a3d00; box-shadow:0 1px 5px rgba(240,165,0,.45)}
+  .vd-rank.r2{background:linear-gradient(135deg,#e6ebf0,#b6c0cc); color:#39434f}
+  .vd-rank.r3{background:linear-gradient(135deg,#f2cda4,#d99a5f); color:#5a3416}
+  .voc-drill-sum.top1{border-color:#f0a500; background:linear-gradient(90deg,rgba(240,165,0,.12),var(--surface2) 55%)}
+  .voc-drill-sum.top2{border-color:#b6c0cc; background:linear-gradient(90deg,rgba(150,163,178,.14),var(--surface2) 55%)}
+  .voc-drill-sum.top3{border-color:#d99a5f; background:linear-gradient(90deg,rgba(217,154,95,.13),var(--surface2) 55%)}
+  .voc-drill-sum.top1 .vd-name{font-size:15px}
   /* 큰 상세 모달 — 글씨 크게 */
   .vd-modal{max-width:min(920px,94vw); width:920px}
   .vd-modal-body{font-size:16px}
@@ -3472,8 +3482,9 @@ function momBadge(c){
 }
 function vocGroupDrill(entries, max, color, topReason, cmp){
   const total=entries.reduce((a,e)=>a+e[1].length,0)||1;   // 전체 모수(인입 합계)
-  return entries.map(([name, items])=>{
+  return entries.map(([name, items], idx)=>{
     const cnt=items.length, pct=Math.round(cnt/total*100);
+    const rank=idx+1, rankCls=rank<=3?'r'+rank:'', rowCls=rank<=3?' top'+rank:'';
     let topLine='';
     if(topReason){
       const rc={}; items.forEach(x=>rc[x.rea]=(rc[x.rea]||0)+1);
@@ -3490,8 +3501,8 @@ function vocGroupDrill(entries, max, color, topReason, cmp){
       ? `${topLine}<details class="vd-stores"><summary>🏪 매장별 상세 보기 (${cnt}곳)</summary>${storeDetailList(items)}</details>`
       : storeDetailList(items);
     VOCDRILL[id]={title:nm, cnt, pct, icon:topReason?'🏭':'😟', html:bodyHtml};
-    return `<div class="voc-drill-sum" onclick="showVocDrill('${id}')" title="클릭 → 크게 보기">
-      <span class="vd-name">${escapeHtml(nm)}</span><span class="vd-bar"><span class="vd-fill" style="width:${cnt/max*100}%;background:${color}"></span></span><span class="vd-cnt">${cnt}건 <span class="vd-pct">${pct}%</span></span>${cmp?momBadge(cmp[name]):''}<span class="vd-open">🔍</span>
+    return `<div class="voc-drill-sum${rowCls}" onclick="showVocDrill('${id}')" title="클릭 → 크게 보기">
+      <span class="vd-rank ${rankCls}">${rank}위</span><span class="vd-name">${escapeHtml(nm)}</span><span class="vd-bar"><span class="vd-fill" style="width:${cnt/max*100}%;background:${color}"></span></span><span class="vd-cnt">${cnt}건 <span class="vd-pct">${pct}%</span></span>${cmp?momBadge(cmp[name]):''}<span class="vd-open">🔍</span>
     </div>`;
   }).join('');
 }
