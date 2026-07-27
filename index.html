@@ -683,6 +683,7 @@
     border-radius:10px; background:var(--canvas); color:var(--ink); cursor:pointer; max-width:180px}
   .praise-teamfilter:focus{outline:none; border-color:var(--green); box-shadow:0 0 0 3px var(--green-soft)}
   .voc-rawind{font-size:11px; color:var(--gray2); margin-top:2px}
+  .voc-storeid{font-size:11px; font-weight:700; color:var(--gray2); margin-left:5px; font-variant-numeric:tabular-nums; white-space:nowrap}
   .voc-donedate{font-size:11px; color:#1e40af; font-weight:800; margin-top:2px}
   .praise-emp-row{cursor:pointer; border-radius:8px; padding:3px 6px; margin:0 -6px; transition:.12s}
   .praise-emp-row:hover{background:var(--green-soft,#dcfce7)}
@@ -3390,7 +3391,7 @@ function vocAlertRow(a){
     orig:(a.reasons||[]).map(r=>r.text||'').filter(Boolean), note:note, doneDate:a.doneDate||'', status:statVal, emp:a.autoEmp||a.emp||'' };
   return `<tr class="voc-alert-row" data-key="${searchKey}">
     <td class="trow-time">${a.time||''}${a.date?`<div class="voc-rawind">${fmtShort(a.date)}</div>`:''}</td>
-    <td class="emp-name">${escapeHtml(a.store||'-')}${(vocDone(statVal)&&a.doneDate)?`<div class="voc-donedate">✓ ${fmtShort(a.doneDate)} 완료${a.autoEmp?' · '+escapeHtml(a.autoEmp):''}</div>`:''}${a.industry?`<div class="voc-rawind">원본: ${escapeHtml(a.industry)}</div>`:''}</td>
+    <td class="emp-name">${escapeHtml(a.store||'-')}${a.storeId?`<span class="voc-storeid">${escapeHtml(String(a.storeId))}</span>`:''}${(vocDone(statVal)&&a.doneDate)?`<div class="voc-donedate">✓ ${fmtShort(a.doneDate)} 완료${a.autoEmp?' · '+escapeHtml(a.autoEmp):''}</div>`:''}${a.industry?`<div class="voc-rawind">원본: ${escapeHtml(a.industry)}</div>`:''}</td>
     <td>${indSel}</td>
     <td class="num" style="color:var(--red);font-weight:800;white-space:nowrap">${score||'-'}</td>
     <td>${reaSel}</td>
