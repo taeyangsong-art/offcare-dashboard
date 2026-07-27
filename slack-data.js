@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1718,
+  "version": 1719,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -61953,21 +61953,25 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-26": {
-      "counts": {},
-      "pending": [
+      "counts": {
+        "menu": {
+          "김동욱": 1
+        }
+      },
+      "pending": [],
+      "done": [
         {
           "time": "00:56",
           "store": "",
           "biz": "",
-          "handler": "김동욱",
           "cat": "menu",
+          "emp": "김동욱",
+          "req": "* 담당자님 안녕하세요, 르말뒤페이 강동점 박만진입니다.",
+          "hw": "",
           "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         }
       ],
-      "done": [],
       "intake": {
         "online": 1,
         "offline": 0,
@@ -62302,12 +62306,27 @@ window.SLACK_DATA = {
     },
     "2026-07-27": {
       "counts": {
+        "as": {
+          "김동욱": 1
+        },
         "menu": {
           "김동욱": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:04",
+          "store": "아빠한끼",
+          "biz": "3604101199",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "태블릿 연결 불가로 확인 요청 드립니다. ( 빠른 연락 요청 주셨습니다.)",
+          "hw": "",
+          "urgent": true,
+          "intake": "online",
+          "note": "캐삭/데삭 후 정상 확인"
+        },
         {
           "time": "08:46",
           "store": "어썸웰스파라운지 안양평촌점",
@@ -62321,11 +62340,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
+        "online": 2,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:00",
+      "updatedAt": "09:12",
       "voc": {
         "responses": 1,
         "install": {
@@ -62417,6 +62436,22 @@ window.SLACK_DATA = {
       "1785054797.138289": {
         "post": "1785054797.138289",
         "lastSeen": 1785091569.39
+      },
+      "1785111136.814129": {
+        "post": "1785111136.814129",
+        "lastSeen": 1785111322.901
+      },
+      "1785111057.722399": {
+        "post": "1785111057.722399",
+        "lastSeen": 1785111322.901
+      },
+      "1785111026.840469": {
+        "post": "1785111026.840469",
+        "lastSeen": 1785111322.901
+      },
+      "1785110770.104339": {
+        "post": "1785110770.104339",
+        "lastSeen": 1785111322.901
       }
     },
     "days": {
