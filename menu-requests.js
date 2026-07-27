@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 111,
- "updatedAt": "2026-07-27 10:47",
+ "version": 112,
+ "updatedAt": "2026-07-27 11:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1785117071.060779",
+   "date": "2026-07-27",
+   "time": "10:51",
+   "store": "카페맑음",
+   "biz": "4114003862",
+   "phone": "01098304580\n-",
+   "pos": "오케이포스",
+   "content": "삭제/석류차\n추가/포장&매장/천도복숭아 주스/카테고리-주스에이드/4000원/옵션 사이즈업 1000\n추가/매장/1인 빙수/카테고리-커피 맨 처음으로/6500\n추가/매장/2인 빙수/카테고리-커피 맨 처음으로/12500",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785117077.561429",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785117071060779"
+  },
   {
    "ts": "1785116051.528929",
    "date": "2026-07-27",
