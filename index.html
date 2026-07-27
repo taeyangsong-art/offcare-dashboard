@@ -2224,13 +2224,13 @@ const GAME_ITEMS = {
     {id:'p_dog',name:'강아지',price:60,e:'🐶',rarity:'common',perk:{item:0.005}},
     {id:'fp_fish',name:'물고기',price:60,e:'🐟',rarity:'common',fishOnly:true,perk:{coin:2}},
     {id:'fp_octopus',name:'문어',price:150,e:'🐙',rarity:'rare',fishOnly:true,perk:{item:0.01,miss:0.02}},
-    {id:'p_unicorn',name:'유니콘',price:300,e:'🦄',rarity:'epic',fishOnly:true,perk:{item:0.02,coin:3}},
-    {id:'fp_shark',name:'상어',price:350,e:'🦈',rarity:'epic',fishOnly:true,perk:{item:0.015,coin:4,miss:0.02}},
+    {id:'p_unicorn',name:'유니콘',price:300,e:'🦄',rarity:'epic',fishOnly:true,dropWeight:0.45,perk:{item:0.02,coin:3}},
+    {id:'fp_shark',name:'상어',price:350,e:'🦈',rarity:'epic',fishOnly:true,dropWeight:0.45,perk:{item:0.015,coin:4,miss:0.02}},
     {id:'fp_turtle',name:'거북이',price:700,e:'🐢',rarity:'legendary',fishOnly:true,perk:{coin:5,miss:0.04,loss:0.07}},
     {id:'p_dragon',name:'드래곤',price:450,e:'🐉',rarity:'legendary',fishOnly:true,perk:{coin:6,loss:0.10,miss:0.05,item:0.02}},
     {id:'p_kraken',name:'크라켄',price:800,e:'🦑',rarity:'mythic',fishOnly:true,perk:{item:0.03,coin:8,miss:0.05,loss:0.08}},
     {id:'p_whale',name:'고래',price:800,e:'🐋',rarity:'mythic',fishOnly:true,perk:{coin:10,item:0.025,loss:0.10}},
-    {id:'fp_otter',name:'수달',price:300,e:'🦦',rarity:'epic',fishOnly:true,perk:{coin:3,item:0.015}},
+    {id:'fp_otter',name:'수달',price:300,e:'🦦',rarity:'epic',fishOnly:true,dropWeight:0.45,perk:{coin:3,item:0.015}},
     {id:'fp_dolphin',name:'돌고래',price:600,e:'🐬',rarity:'legendary',fishOnly:true,perk:{coin:5,miss:0.05,item:0.02}},
     {id:'fp_mermaid',name:'인어',price:850,e:'🧜‍♀️',rarity:'mythic',fishOnly:true,perk:{coin:8,item:0.03,miss:0.06}},
   ],
@@ -2655,7 +2655,7 @@ const FISH = {
 };
 let fishBusy=false;
 // 낚시 대기(쿨다운): 캐스팅 후 초급 3분 / 중급 10분 / 고급 30분 지나야 결과 확인. 브라우저에 저장.
-const FISH_WAIT = {low:0, mid:30*1000, high:60*1000};
+const FISH_WAIT = {low:0, mid:0, high:60*1000};
 function fishWaitLabel(spot){ const ms=FISH_WAIT[spot]||0; if(ms<=0) return '즉시'; const s=Math.round(ms/1000); return s<60?s+'초':Math.round(s/60)+'분'; }
 const LS_FISHWAIT = "opcare_fishwait_v1";
 let FISHWAIT = load(LS_FISHWAIT, {});   // { "emp|spot": castAtMs }
@@ -2714,7 +2714,7 @@ function rollLootPerk(loot, perk){
   return nones.length?pick(nones):(coins.length?pick(coins):loot[0]);
 }
 function perkDesc(perk){ if(!perk) return ''; const p=[]; const pct=x=>{const v=Math.round(x*1000)/10; return (Number.isInteger(v)?v:v.toFixed(1))+'%';}; if(perk.item)p.push(`아이템 확률 +${pct(perk.item)}`); if(perk.coin)p.push(`코인 유지 시 +${perk.coin}개 추가 지급`); if(perk.miss)p.push(`꽝 -${pct(perk.miss)}`); if(perk.loss)p.push(perk.loss>=1?'코인손실 방어(0%)':`코인손실 -${pct(perk.loss)}`); return p.join(' · '); }
-function pickItem(rars, fishOnly, emp){ const pool=[]; for(const cat in GAME_ITEMS){ for(const it of GAME_ITEMS[cat]){ if(it.price===0) continue; if(it.targetOnly) continue; if(it.ach || it.onlyFor) continue; if(it.gender && emp && !genderOK(emp,it)) continue; if(!rars.includes(it.rarity)) continue; if(fishOnly && !it.fishOnly) continue; if(!fishOnly && it.fishOnly) continue; if(emp && owns(emp,cat,it.id)) continue; pool.push(Object.assign({cat},it)); } } return pool.length?pool[Math.floor(Math.random()*pool.length)]:null; }
+function pickItem(rars, fishOnly, emp){ const pool=[]; for(const cat in GAME_ITEMS){ for(const it of GAME_ITEMS[cat]){ if(it.price===0) continue; if(it.targetOnly) continue; if(it.ach || it.onlyFor) continue; if(it.gender && emp && !genderOK(emp,it)) continue; if(!rars.includes(it.rarity)) continue; if(fishOnly && !it.fishOnly) continue; if(!fishOnly && it.fishOnly) continue; if(emp && owns(emp,cat,it.id)) continue; pool.push(Object.assign({cat},it)); } } if(!pool.length) return null; const tot=pool.reduce((a,it)=>a+(it.dropWeight||1),0); let r=Math.random()*tot; for(const it of pool){ if((r-=(it.dropWeight||1))<0) return it; } return pool[pool.length-1]; }
 const CAT_KO={title:'타이틀',nametag:'네임택',hat:'모자',pet:'펫',skin:'피부',hair:'헤어',dye:'염색',eyes:'눈',brows:'눈썹',mouth:'입',beard:'수염',top:'상의',pants:'하의',shoes:'신발',gloves:'장갑',cape:'망토'};
 function resolveLoot(emp,out){ const g=gs(emp);
   if(out.t==='none'){ g.fishMiss=(g.fishMiss||0)+1; return {emoji:'🐚',big:'꽝!',sub:'빈 낚싯대... 다음 기회에!',cls:'miss'}; }   // 꽝 누적 카운트(💣 타이틀용)
