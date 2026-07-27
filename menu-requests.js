@@ -3,10 +3,52 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 122,
- "updatedAt": "2026-07-27 15:30",
+ "version": 123,
+ "updatedAt": "2026-07-27 16:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1785137824.093689",
+   "date": "2026-07-27",
+   "time": "16:37",
+   "store": "고모카세",
+   "biz": "6710902671",
+   "phone": "01083805251",
+   "pos": "스파로스포스",
+   "content": "(유플스파로스) 메뉴 변경",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1785137924.395449",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785137824093689"
+  },
+  {
+   "ts": "1785137810.525779",
+   "date": "2026-07-27",
+   "time": "16:36",
+   "store": "용용선생 구미인동점",
+   "biz": "4556700519",
+   "phone": "01034030536",
+   "pos": "",
+   "content": "메뉴 추가",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "무알콜 맥주(500ml) 6000원\n\n카스(500ml) 1+1 4900원\n카스(300ml) 1+1 3500원\n블랑1 +1 6900원\n\n메뉴생성 부탁드립니다"
+   ],
+   "rc": 2,
+   "lr": "1785137816.823009",
+   "status": "done",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785137810525779"
+  },
   {
    "ts": "1785132871.022149",
    "date": "2026-07-27",
@@ -10049,26 +10091,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782547372876129"
-  },
-  {
-   "ts": "1782545613.374069",
-   "date": "2026-06-27",
-   "time": "16:33",
-   "store": "피코",
-   "biz": "4887100710",
-   "phone": "01089265871\n-",
-   "pos": "기타",
-   "content": "점심메뉴추가~~ 냉모밀 12,000원",
-   "special": "암때나~~",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1782545619.536789",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782545613374069"
   }
  ]
 };
