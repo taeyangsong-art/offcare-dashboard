@@ -3814,7 +3814,7 @@ function renderVocMonthly(){
     </div>
 
     <div class="grid2">
-      <div class="card"><div class="card-head"><h3>✅ 저점 처리 완료율</h3><span class="hint">${doneCount}/${totalIn}건</span></div>
+      <div class="card"><div class="card-head"><h3>✅ 저점 처리 완료율</h3><span style="font-size:20px;font-weight:800;color:var(--ink);letter-spacing:-.02em;font-variant-numeric:tabular-nums">${doneCount}/${totalIn}<span style="font-size:13px;font-weight:600;color:var(--gray)"> 건</span></span></div>
         <div style="font-size:38px;font-weight:800;color:var(--green);margin-bottom:8px">${doneRate}<small style="font-size:16px;color:var(--gray2)">%</small></div>
         ${progressBar(doneRate,'#34c759')}
         <div class="note" style="font-size:12px;color:var(--gray2);margin-top:8px">저점 인입의 팔로업 처리 비율 · <b>처리완료·부재·통화거부·OB필요없음</b> 모두 완료로 집계</div></div>
@@ -3834,13 +3834,15 @@ function renderVocMonthly(){
     </div>
 
     <div class="card">
-      <div class="card-head"><h3>📞 저점 처리 상태별 건수</h3><span class="hint">총 ${totalIn}건 · 처리종결 ${doneCount}건 (${doneRate}%) · 처리완료·부재·통화거부·OB필요없음 = 완료 집계</span></div>
+      <div class="card-head"><h3>📞 저점 처리 상태별 건수</h3><span style="font-size:17px;font-weight:800;color:var(--ink);letter-spacing:-.01em;font-variant-numeric:tabular-nums">총 ${totalIn}건 · 처리종결 ${doneCount} <span style="color:var(--green)">(${doneRate}%)</span></span></div>
       ${totalIn?`
       <div style="display:flex;flex-wrap:wrap;gap:10px">
-        ${VStatOrder.map(s=>{const o=vStatSty[s],c=vStatCnt[s],p=Math.round(c/totalIn*100);return `<div style="flex:1 1 128px;min-width:128px;background:${o.bg};border:1px solid ${o.bd};border-radius:12px;padding:13px 15px"><div style="font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1;color:${o.c};font-variant-numeric:tabular-nums">${c}</div><div style="font-size:13px;font-weight:700;color:${o.c};margin-top:5px">${s}</div><div style="font-size:11.5px;color:var(--gray2);margin-top:2px">${p}%</div></div>`;}).join('')}
+        <div style="flex:1 1 128px;min-width:128px;background:var(--ink);border:1px solid var(--ink);border-radius:12px;padding:13px 15px"><div style="font-size:32px;font-weight:800;letter-spacing:-.02em;line-height:1;color:var(--canvas);font-variant-numeric:tabular-nums">${totalIn}</div><div style="font-size:13px;font-weight:700;color:var(--canvas);margin-top:5px">총 저점</div><div style="font-size:11.5px;color:var(--gray2);margin-top:2px">100%</div></div>
+        ${VStatOrder.map(s=>{const o=vStatSty[s],c=vStatCnt[s],p=Math.round(c/totalIn*100);return `<div style="flex:1 1 128px;min-width:128px;background:${o.bg};border:1px solid ${o.bd};border-radius:12px;padding:13px 15px"><div style="font-size:32px;font-weight:800;letter-spacing:-.02em;line-height:1;color:${o.c};font-variant-numeric:tabular-nums">${c}</div><div style="font-size:13px;font-weight:700;color:${o.c};margin-top:5px">${s}</div><div style="font-size:11.5px;color:var(--gray2);margin-top:2px">${p}%</div></div>`;}).join('')}
       </div>
       <div class="prog" style="height:16px;margin-top:14px">${VStatOrder.map(s=>vStatCnt[s]?`<div class="prog-fill" style="width:${vStatCnt[s]/totalIn*100}%;background:${vStatSty[s].bar}" title="${s} ${vStatCnt[s]}건"></div>`:'').join('')}</div>
       <div class="legend" style="margin-top:8px">${VStatOrder.map(s=>`<span><span class="swatch" style="background:${vStatSty[s].bar}"></span>${s} ${vStatCnt[s]}</span>`).join('')}</div>
+      <div class="note" style="font-size:12px;color:var(--gray2);margin-top:8px">처리완료·부재·통화거부·OB필요없음 = 처리종결로 집계 · 처리중 = 미처리</div>
       `:'<div class="empty-note">저점 인입 없음 👍</div>'}
     </div>
 
