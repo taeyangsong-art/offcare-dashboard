@@ -26,6 +26,9 @@ jobs:
           TALLY_DATE_OFFSET: '0'
         run: node scripts/fetch-and-tally.js
 
+      - name: OCR 엔진 설치 (tesseract.js · 무료 이미지 판독)
+        run: npm install tesseract.js@5 || echo "tesseract 설치 실패 — OCR 없이 진행"
+
       - name: 메뉴요청 적재 (대시보드 메뉴등록 카테고리)
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}

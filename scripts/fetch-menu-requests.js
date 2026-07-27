@@ -8,6 +8,12 @@
  */
 const fs = require('fs');
 
+// OCR(tesseract.js) 워커 오류는 워커 스레드에서 비동기로 튀어 try/catch를 벗어날 수 있음.
+// 네트워크 실패 등으로 OCR이 죽더라도 메뉴 적재 자체는 멈추면 안 되므로, OCR 계열 오류만 조용히 흡수.
+const isOcrErr = (e) => /traineddata|tesseract|worker|FetchError|ERR_/i.test(String((e && (e.message || e.name)) || e || ''));
+process.on('unhandledRejection', (e) => { if (isOcrErr(e)) { console.log('OCR 경고(무시):', String(e && e.message || e).slice(0, 120)); } else { throw e; } });
+process.on('uncaughtException', (e) => { if (isOcrErr(e)) { console.log('OCR 경고(무시):', String(e && e.message || e).slice(0, 120)); } else { console.error(e); process.exit(1); } });
+
 const TOKEN = process.env.SLACK_BOT_TOKEN;
 const OUT = 'menu-requests.js';
 if (!TOKEN) { console.error('SLACK_BOT_TOKEN 환경변수가 필요합니다.'); process.exit(1); }
@@ -90,6 +96,46 @@ function cleanupOldFiles(nowSec) {
   return removed;
 }
 
+// ─── 무료 OCR (Tesseract.js) ───────────────────────────────────────────────
+// 다운로드된 이미지에서 메뉴 텍스트를 추출. 신규 이미지에만 1회 수행하고 결과는 att[].ocr 로 캐시.
+// tesseract.js 미설치 환경(로컬 등)에서는 자동으로 건너뜀. 실패/상한은 비파괴적으로 처리.
+const OCR_EXT = /\.(jpe?g|png|webp|bmp|gif)$/i;
+const OCR_CAP = 12;                          // 실행당 신규 OCR 상한(런타임 보호) — 나머지는 다음 실행에서
+let ocrDone = 0;
+let _tess = null;                            // null=미초기화, 'FAIL'=엔진없음, 그 외=worker
+async function getTess() {
+  if (_tess === 'FAIL') return null;
+  if (_tess) return _tess;
+  try {
+    const { createWorker } = require('tesseract.js');
+    // 60초 내 초기화(traineddata 다운로드) 실패 시 OCR 포기 — 네트워크 지연으로 await가 무한 대기하는 것 방지
+    _tess = await Promise.race([
+      createWorker(['kor', 'eng']),   // 한글 + 숫자/영문(가격)
+      new Promise((_, rej) => setTimeout(() => rej(new Error('OCR init timeout(60s)')), 60000)),
+    ]);
+    return _tess;
+  } catch (e) { console.log('OCR 비활성:', e.message); _tess = 'FAIL'; return null; }
+}
+async function endTess() { if (_tess && _tess !== 'FAIL') { try { await _tess.terminate(); } catch (e) {} _tess = null; } }
+function cleanOcr(t) {
+  return String(t || '')
+    .replace(/[ \t]+/g, ' ')
+    .split('\n').map((l) => l.trim())
+    .filter((l) => l && /[가-힣0-9]/.test(l))   // 한글/숫자 없는 잡음 줄 제거
+    .join('\n').slice(0, 1500);
+}
+// 반환: 문자열(빈 문자열 포함) → 캐시(재시도 안 함) · null → 상한/엔진없음(다음 실행 재시도)
+async function ocrImage(dest) {
+  if (ocrDone >= OCR_CAP) return null;
+  const w = await getTess();
+  if (!w) return null;
+  try {
+    const { data } = await w.recognize(dest);
+    ocrDone++;
+    return cleanOcr(data.text);
+  } catch (e) { ocrDone++; console.log('OCR 실패:', dest, e.message); return ''; }
+}
+
 // 텍스트에서 POS 종류 추정
 function detectPos(text) {
   const t = (text || '').toLowerCase();
@@ -150,7 +196,15 @@ function detectPos(text) {
         const dest = `${FILE_DIR}/${String(m.ts).replace('.', '_')}-${fi}${ext.toLowerCase()}`;
         fi++;
         const ok = fs.existsSync(dest) || ((f.size || 0) <= FILE_MAX && f.url_private_download && await downloadSlackFile(f.url_private_download, dest));
-        if (ok) att.push({ name: String(f.name || '첨부').slice(0, 40), path: dest });
+        if (ok) {
+          const a = { name: String(f.name || '첨부').slice(0, 40), path: dest };
+          if (OCR_EXT.test(dest)) {
+            const prevA = ((prevMap[m.ts] || {}).att || []).find((x) => x.path === dest);
+            if (prevA && 'ocr' in prevA) a.ocr = prevA.ocr;        // 캐시 재사용(빈 문자열도 재사용 → 재시도 폭주 방지)
+            else { const t = await ocrImage(dest); if (t !== null) a.ocr = t; }   // null(상한/엔진없음)은 캐시 안 함 → 다음 실행 재시도
+          }
+          att.push(a);
+        }
       }
     }
 
@@ -184,7 +238,7 @@ function detectPos(text) {
   // 기존 파일과 내용 동일하면 rewrite 생략(불필요한 커밋 방지) · version 승계
   let version = 0, prevItems = null;
   if (fs.existsSync(OUT)) { const w = {}; try { new Function('window', fs.readFileSync(OUT, 'utf8'))(w); if (w.MENU_REQUESTS) { version = w.MENU_REQUESTS.version || 0; prevItems = JSON.stringify(w.MENU_REQUESTS.items || []); } } catch (e) {} }
-  if (prevItems !== null && prevItems === JSON.stringify(capped)) { console.log('변경 없음 — 파일 갱신 생략'); return; }
+  if (prevItems !== null && prevItems === JSON.stringify(capped)) { console.log('변경 없음 — 파일 갱신 생략'); await endTess(); process.exit(0); }
   const kst = new Date(Date.now() + 9 * 3600 * 1000);
   const data = {
     version: version + 1,
@@ -194,5 +248,8 @@ function detectPos(text) {
   const header = '/*\n * 슬랙 #oc팀_메뉴요청 최근 요청 적재 (대시보드 메뉴등록 카테고리용)\n * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.\n */\n';
   fs.writeFileSync(OUT, header + 'window.MENU_REQUESTS = ' + JSON.stringify(data, null, 1) + ';\n', 'utf8');
   const byStatus = capped.reduce((a, i) => { a[i.status] = (a[i.status] || 0) + 1; return a; }, {});
+  if (ocrDone) console.log(`🔎 신규 이미지 OCR ${ocrDone}건 판독`);
+  await endTess();
   console.log(`✅ ${OUT} 갱신: 요청 ${capped.length}건 (완료 ${byStatus.done || 0} · 확인중 ${byStatus.confirm || 0} · 대기 ${byStatus.wait || 0} · 중복 ${byStatus.dup || 0}) v${data.version}`);
+  process.exit(0);   // 좀비 워커가 남아 프로세스가 안 끝나는 것 방지(모든 쓰기는 동기 완료됨)
 })();
