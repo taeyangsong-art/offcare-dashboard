@@ -3755,6 +3755,11 @@ function renderVocMonthly(){
   const insColor=s=>s>=4?'#34c759':s>=3?'#ff9500':'#ff3b30';
   const doneCount=v.alerts.filter(a=>vocDone(vocEffStatus(a))).length;
   const doneRate=totalIn?Math.round(doneCount/totalIn*100):0;
+  // 저점 처리 상태별 건수 (처리완료=OB완료 · 부재 · 통화거부 · OB필요없음 · 처리중=미처리)
+  const VStatOrder=['처리완료','부재','통화거부','OB필요없음','처리중'];
+  const vStatCnt={}; VStatOrder.forEach(s=>vStatCnt[s]=0);
+  v.alerts.forEach(a=>{ const s=vocEffStatus(a); vStatCnt[s]=(vStatCnt[s]||0)+1; });
+  const vStatSty={'처리완료':{c:'#1e40af',bg:'#dbeafe',bd:'#bfdbfe',bar:'#3b82f6'},'부재':{c:'#b91c1c',bg:'#ffe1de',bd:'#fecaca',bar:'#ef4444'},'통화거부':{c:'#c2410c',bg:'#ffedd5',bd:'#fed7aa',bar:'#f97316'},'OB필요없음':{c:'#166534',bg:'#dcfce7',bd:'#bbf7d0',bar:'#22c55e'},'처리중':{c:'#475569',bg:'#eef1f4',bd:'#dde3ea',bar:'#94a3b8'}};
   const posCount=vpCount+(v.high.install+v.high.nps), sentTot=posCount+totalIn;
   const posRate=sentTot?Math.round(posCount/sentTot*100):0;
   const tenRows=Object.entries(v.byTenure).sort((a,b)=>b[1].total-a[1].total);
@@ -3826,6 +3831,17 @@ function renderVocMonthly(){
       <div class="card"><div class="card-head"><h3>😟 인입 이유별</h3><span class="hint">전월 대비 순위·비중 · 항목 클릭 → 상세</span></div>
         ${mReaEntries.length?vocGroupDrill(mReaEntries, mReaDMax, '#ff3b30', false, reaCmp):'<div class="empty-note">인입 없음 👍</div>'}
         ${mReaEntries.length?vocSecCommentBox('rea', mkey, mReaEntries, reaCmp, totalIn, '이유'):''}</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h3>📞 저점 처리 상태별 건수</h3><span class="hint">총 ${totalIn}건 · 처리종결 ${doneCount}건 (${doneRate}%) · 처리완료·부재·통화거부·OB필요없음 = 완료 집계</span></div>
+      ${totalIn?`
+      <div style="display:flex;flex-wrap:wrap;gap:10px">
+        ${VStatOrder.map(s=>{const o=vStatSty[s],c=vStatCnt[s],p=Math.round(c/totalIn*100);return `<div style="flex:1 1 128px;min-width:128px;background:${o.bg};border:1px solid ${o.bd};border-radius:12px;padding:13px 15px"><div style="font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1;color:${o.c};font-variant-numeric:tabular-nums">${c}</div><div style="font-size:13px;font-weight:700;color:${o.c};margin-top:5px">${s}</div><div style="font-size:11.5px;color:var(--gray2);margin-top:2px">${p}%</div></div>`;}).join('')}
+      </div>
+      <div class="prog" style="height:16px;margin-top:14px">${VStatOrder.map(s=>vStatCnt[s]?`<div class="prog-fill" style="width:${vStatCnt[s]/totalIn*100}%;background:${vStatSty[s].bar}" title="${s} ${vStatCnt[s]}건"></div>`:'').join('')}</div>
+      <div class="legend" style="margin-top:8px">${VStatOrder.map(s=>`<span><span class="swatch" style="background:${vStatSty[s].bar}"></span>${s} ${vStatCnt[s]}</span>`).join('')}</div>
+      `:'<div class="empty-note">저점 인입 없음 👍</div>'}
     </div>
 
     <div class="grid2">
