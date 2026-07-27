@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 124,
- "updatedAt": "2026-07-27 17:00",
+ "version": 125,
+ "updatedAt": "2026-07-27 17:15",
  "days": 30,
  "items": [
   {
@@ -24,9 +24,9 @@ window.MENU_REQUESTS = {
     "여기 동일 사업자번호인데 2van 입니다.\nKSnet 토플파에 등록되어있는 메뉴  KPN 쪽으로 복사 부탁 드리겠습니다. :꾸벅:",
     "여기 단말기 양도 받아서 1avn 만드는 작업중에 있습니다..!\n해당 매장은 동일 문의 드릴 일 없도록 깔끔하게 처리 해두겠습니다...!  :햄스터-꾸벅:"
    ],
-   "rc": 4,
-   "lr": "1785139214.134829",
-   "status": "confirm",
+   "rc": 5,
+   "lr": "1785139817.038509",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785138911307079"
   },
@@ -44,9 +44,9 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1785137924.395449",
-   "status": "confirm",
+   "rc": 3,
+   "lr": "1785139613.775629",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785137824093689"
   },
@@ -10070,50 +10070,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782630260707759"
-  },
-  {
-   "ts": "1782547581.602449",
-   "date": "2026-06-27",
-   "time": "17:06",
-   "store": "온담",
-   "biz": "3800903492",
-   "phone": "01080710499\n-",
-   "pos": "토스포스",
-   "content": "신규",
-   "special": "6월28일 일요일 09:00~12:00",
-   "drive": [
-    "https://drive.google.com/open?id=1TWMgfHlJdMVtYXMX-IIXN-UGEZW1HTTA",
-    "https://drive.google.com/open?id=1WFtVRJJmWHEponrI77adEXa3xOITYGU_",
-    "https://drive.google.com/open?id=18ts7ppVoasKJ127PxAtMnVxJCXPae7lB"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782552567.501339",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782547581602449"
-  },
-  {
-   "ts": "1782547372.876129",
-   "date": "2026-06-27",
-   "time": "17:02",
-   "store": "카페88수제버거베이커리",
-   "biz": "3900203582",
-   "phone": "",
-   "pos": "퍼스트포스",
-   "content": "메뉴 작업",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782547781.668449",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782547372876129"
   }
  ]
 };
