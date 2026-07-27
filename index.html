@@ -1767,6 +1767,29 @@ function menuregDraft(txt){
   }
   return rows.join('\n');
 }
+// OCR 원문(POS 스크린샷 등)에서 잡음 제거 + 메뉴명|가격만 추출 (룰 기반)
+const OCR_JUNK = /magic|pos|봉사료?|회원|히원|써스|승인|매출|합계|잔액|미수|거스름|카드|현금|신용|캐시|포인트|소계|인원|전달사항|부가기능|매장정보|영수증|배달|주문서|출력물|상품키|카테고리|순서편집|설정|할인|보이는|반영|테이블|결제|주문|점장|사업자|대표|전화|주소|과세|면세|소비자|포스|화면|메뉴판|추가메뉴|주류|식사류|^\s*사리\s*$|^\s*식사\s*$/i;
+function ocrExtractMenu(text, store){
+  const dig=t=>t.replace(/[^\d]/g,'');
+  const isPrice=t=>/^\d{1,3}([.,]\d{3})+$|^\d{3,6}$/.test(t)&&+dig(t)>=300&&+dig(t)<=900000;
+  const isName=t=>/[가-힣]/.test(t)&&t.replace(/[^가-힣]/g,'').length>=2&&!OCR_JUNK.test(t);
+  const norm=t=>t.replace(/[|_~\-—ㅣ]/g,' ').replace(/\s+/g,' ').trim();
+  const storeK=(store||'').replace(/[^가-힣]/g,'');
+  const lines=String(text||'').split('\n').map(norm).filter(Boolean).filter(l=>!OCR_JUNK.test(l));
+  const out=[], seen=new Set();
+  const push=(n,p)=>{ n=n.replace(/[^가-힣0-9()]/g,'').trim();
+    if(n.length<2||!/[가-힣]/.test(n))return;
+    if(storeK&&(storeK.includes(n)||n.includes(storeK)))return;
+    if(seen.has(n))return; seen.add(n); out.push(n+' | '+(p?(+dig(p)).toLocaleString('en-US'):'')); };
+  for(let i=0;i<lines.length;i++){
+    const toks=lines[i].split(' ').filter(Boolean);
+    const names=toks.filter(isName), prices=toks.filter(isPrice);
+    if(names.length&&prices.length&&names.length<=prices.length+1){ names.forEach((n,j)=>push(n,prices[j]||prices[prices.length-1])); continue; }
+    if(names.length>=2&&prices.length===0&&i+1<lines.length){ const pt=lines[i+1].split(' ').filter(isPrice); if(pt.length>=2){ names.forEach((n,j)=>push(n,pt[j])); i++; continue; } }
+    if(names.length&&prices.length===0){ names.forEach(n=>push(n,'')); }
+  }
+  return out.join('\n');
+}
 function menuregParseGrid(gridId){
   const ta=document.getElementById(gridId||'mrGrid'); if(!ta) return [];
   const rows=[];
@@ -1896,8 +1919,8 @@ function renderMenuReg(){
       </div>
       <div style="background:var(--surface,#f7f7f8);border-radius:10px;padding:10px 12px;font-size:13px;white-space:pre-wrap;max-height:180px;overflow:auto">${escapeHtml(sel.content||'(요청내용 없음)')}${sel.special?'\n\n[특이사항] '+escapeHtml(sel.special):''}</div>
       ${(sel.att||[]).some(a=>a.ocr)?`<div style="margin-top:8px">
-        <div style="font-size:13px;font-weight:700;margin-bottom:4px">🔎 이미지 자동판독 <span class="cnt-badge">${(sel.att||[]).filter(a=>a.ocr).length}</span> <span class="hint">(무료 OCR · 오탈자 가능 · 반드시 원본과 대조 · 아래 엑셀 양식 작성 시 참고)</span></div>
-        ${(sel.att||[]).filter(a=>a.ocr).map(a=>`<div style="background:#eef6ff;border-left:3px solid #2f6fc0;border-radius:8px;padding:8px 11px;font-size:12.5px;white-space:pre-wrap;margin-bottom:6px;max-height:150px;overflow:auto"><b>📄 ${escapeHtml(a.name)}</b>\n${escapeHtml(a.ocr)}</div>`).join('')}
+        <div style="font-size:13px;font-weight:700;margin-bottom:4px">🔎 이미지 자동판독 <span class="cnt-badge">${(sel.att||[]).filter(a=>a.ocr).length}</span> <span class="hint">(무료 OCR · 메뉴명·가격만 추출 · 오탈자 가능 → 반드시 원본과 대조)</span></div>
+        ${(sel.att||[]).filter(a=>a.ocr).map(a=>{const menu=ocrExtractMenu(a.ocr,sel.store);return `<div style="background:#eef6ff;border-left:3px solid #2f6fc0;border-radius:8px;padding:8px 11px;font-size:12.5px;white-space:pre-wrap;margin-bottom:6px;max-height:200px;overflow:auto"><b>📄 ${escapeHtml(a.name)}</b>\n${escapeHtml(menu||'(메뉴 인식 실패 — 원문 확인)')}\n<details style="margin-top:6px"><summary style="cursor:pointer;color:#2f6fc0;font-size:11.5px">📄 OCR 원문 보기</summary><div style="color:#667;font-size:11.5px;margin-top:4px">${escapeHtml(a.ocr)}</div></details></div>`}).join('')}
       </div>`:''}
       ${(sel.replies||[]).length?`<div style="margin-top:8px">
         <div style="font-size:13px;font-weight:700;margin-bottom:4px">💬 요청자 댓글 <span class="cnt-badge">${sel.replies.length}</span> <span class="hint">(요청사항 참고)</span></div>
