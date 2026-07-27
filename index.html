@@ -752,6 +752,9 @@
   .voc-drill-sum.top2{border-color:#b6c0cc; background:linear-gradient(90deg,rgba(150,163,178,.14),var(--surface2) 55%)}
   .voc-drill-sum.top3{border-color:#d99a5f; background:linear-gradient(90deg,rgba(217,154,95,.13),var(--surface2) 55%)}
   .voc-drill-sum.top1 .vd-name{font-size:15px}
+  .vd-prev{flex:0 0 auto; font-size:11px; font-weight:600; color:var(--gray2); background:var(--line-soft); border-radius:6px; padding:3px 7px; white-space:nowrap}
+  .vd-prev.new{color:#c2410c; background:#ffedd5}
+  .vd-prev b{color:var(--ink)}
   /* 큰 상세 모달 — 글씨 크게 */
   .vd-modal{max-width:min(920px,94vw); width:920px}
   .vd-modal-body{font-size:16px}
@@ -3466,10 +3469,10 @@ function storeDetailList(items){
 let VOCDRILL={}, vdSeq=0;   // 업종/이유 클릭 → 큰 모달로 보여줄 상세 저장
 // 전월 대비 비교 맵: {name:{isNew}|{rankDelta,pctDelta}}  (저점이라 ↑=악화(빨강), ↓=개선(파랑))
 function buildMoMCmp(cur, prev, total, prevTotal){
-  const pr={}, pp={}; prev.forEach(([n,it],i)=>{ pr[n]=i+1; pp[n]=Math.round(it.length/(prevTotal||1)*100); });
+  const pr={}, pp={}, pc={}; prev.forEach(([n,it],i)=>{ pr[n]=i+1; pp[n]=Math.round(it.length/(prevTotal||1)*100); pc[n]=it.length; });
   const m={};
   cur.forEach(([n,it],i)=>{ const cr=i+1, cp=Math.round(it.length/(total||1)*100);
-    m[n] = (pr[n]==null) ? {isNew:true, pctDelta:cp} : {rankDelta:pr[n]-cr, pctDelta:cp-pp[n], prevRank:pr[n]}; });
+    m[n] = (pr[n]==null) ? {isNew:true, pctDelta:cp} : {rankDelta:pr[n]-cr, pctDelta:cp-pp[n], prevRank:pr[n], prevCnt:pc[n]}; });
   return m;
 }
 function momBadge(c){
@@ -3501,8 +3504,10 @@ function vocGroupDrill(entries, max, color, topReason, cmp){
       ? `${topLine}<details class="vd-stores"><summary>🏪 매장별 상세 보기 (${cnt}곳)</summary>${storeDetailList(items)}</details>`
       : storeDetailList(items);
     VOCDRILL[id]={title:nm, cnt, pct, icon:topReason?'🏭':'😟', html:bodyHtml};
+    const cc=cmp?cmp[name]:null;
+    const prevInfo=cc?(cc.isNew?'<span class="vd-prev new" title="전월 미인입">전월 없음</span>':`<span class="vd-prev" title="전월 순위·건수">전월 <b>${cc.prevRank}위</b>·${cc.prevCnt}건</span>`):'';
     return `<div class="voc-drill-sum${rowCls}" onclick="showVocDrill('${id}')" title="클릭 → 크게 보기">
-      <span class="vd-rank ${rankCls}">${rank}위</span><span class="vd-name">${escapeHtml(nm)}</span><span class="vd-bar"><span class="vd-fill" style="width:${cnt/max*100}%;background:${color}"></span></span><span class="vd-cnt">${cnt}건 <span class="vd-pct">${pct}%</span></span>${cmp?momBadge(cmp[name]):''}<span class="vd-open">🔍</span>
+      <span class="vd-rank ${rankCls}">${rank}위</span><span class="vd-name">${escapeHtml(nm)}</span><span class="vd-bar"><span class="vd-fill" style="width:${cnt/max*100}%;background:${color}"></span></span><span class="vd-cnt">${cnt}건 <span class="vd-pct">${pct}%</span></span>${cmp?momBadge(cmp[name]):''}${prevInfo}<span class="vd-open">🔍</span>
     </div>`;
   }).join('');
 }
@@ -3835,14 +3840,12 @@ function renderVocMonthly(){
         <div class="legend" style="margin-top:8px"><span><span class="swatch" style="background:#34c759"></span>칭찬·고점 ${posCount}</span><span><span class="swatch" style="background:#ff3b30"></span>저점 ${totalIn}</span></div></div>
     </div>
 
-    <div class="grid2">
-      <div class="card"><div class="card-head"><h3>🏭 업종별 인입</h3><span class="hint">전월 대비 순위·비중 · 항목 클릭 → 상세</span></div>
-        ${mIndEntries.length?vocGroupDrill(mIndEntries, mIndDMax, '#0071e3', true, indCmp):'<div class="empty-note">인입 없음 👍</div>'}
-        ${mIndEntries.length?vocSecCommentBox('ind', mkey, mIndEntries, indCmp, totalIn, '업종'):''}</div>
-      <div class="card"><div class="card-head"><h3>😟 인입 이유별</h3><span class="hint">전월 대비 순위·비중 · 항목 클릭 → 상세</span></div>
-        ${mReaEntries.length?vocGroupDrill(mReaEntries, mReaDMax, '#ff3b30', false, reaCmp):'<div class="empty-note">인입 없음 👍</div>'}
-        ${mReaEntries.length?vocSecCommentBox('rea', mkey, mReaEntries, reaCmp, totalIn, '이유'):''}</div>
-    </div>
+    <div class="card"><div class="card-head"><h3>🏭 업종별 인입</h3><span class="hint">이번달 <b style="color:var(--ink)">${totalIn}건</b> · 전월 ${pvIn}건 · 각 항목 <b style="color:var(--ink)">순위·전월 비교</b> 표시 · 클릭 → 상세</span></div>
+      ${mIndEntries.length?vocGroupDrill(mIndEntries, mIndDMax, '#0071e3', true, indCmp):'<div class="empty-note">인입 없음 👍</div>'}
+      ${mIndEntries.length?vocSecCommentBox('ind', mkey, mIndEntries, indCmp, totalIn, '업종'):''}</div>
+    <div class="card"><div class="card-head"><h3>😟 인입 이유별</h3><span class="hint">이번달 <b style="color:var(--ink)">${totalIn}건</b> · 전월 ${pvIn}건 · 각 항목 <b style="color:var(--ink)">순위·전월 비교</b> 표시 · 클릭 → 상세</span></div>
+      ${mReaEntries.length?vocGroupDrill(mReaEntries, mReaDMax, '#ff3b30', false, reaCmp):'<div class="empty-note">인입 없음 👍</div>'}
+      ${mReaEntries.length?vocSecCommentBox('rea', mkey, mReaEntries, reaCmp, totalIn, '이유'):''}</div>
 
     <div class="card">
       <div class="card-head"><h3>📞 저점 처리 상태별 건수</h3><span style="font-size:17px;font-weight:800;color:var(--ink);letter-spacing:-.01em;font-variant-numeric:tabular-nums">총 ${totalIn}건 · 처리종결 ${doneCount} <span style="color:var(--green)">(${doneRate}%)</span></span></div>
