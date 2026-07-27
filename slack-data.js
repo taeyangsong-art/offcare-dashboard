@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1760,
+  "version": 1761,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -62306,7 +62306,7 @@ window.SLACK_DATA = {
     "2026-07-27": {
       "counts": {
         "as": {
-          "최민석": 15,
+          "최민석": 16,
           "김현기": 33,
           "서상원": 8,
           "배선유": 31,
@@ -62347,6 +62347,17 @@ window.SLACK_DATA = {
       "pending": [],
       "done": [
         {
+          "time": "19:30",
+          "store": "아지트",
+          "biz": "3962502052",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "TS 100 연결 온보딩 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "<!subteam^S08M24MPQMS 안녕하세요! 크로스젠더 누락 주장으로 인하여 CCTV 요청 드립니다. 안녕하세요! 크로스젠더 누락 주장으로 인하여 CCTV 요청 드립니다. / CCTV확인 후 안내 예정 / 정상출고로 보여집니다 전달드려요! cctvlive.pluscl.com/clupload/video/…"
+        },
+        {
           "time": "19:15",
           "store": "터미널서울",
           "biz": "8670603265",
@@ -62366,7 +62377,7 @@ window.SLACK_DATA = {
           "req": "QR주문 시 용지 출력이 되지 않아 확인 요청드립니다.",
           "hw": "",
           "intake": "offline",
-          "note": ""
+          "note": "프로그램 껏켯 후 정상작동 완료"
         },
         {
           "time": "19:07",
@@ -65055,11 +65066,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 198,
+        "online": 199,
         "offline": 47,
         "unknown": 0
       },
-      "updatedAt": "19:30",
+      "updatedAt": "19:39",
       "voc": {
         "responses": 9,
         "install": {
@@ -65215,7 +65226,7 @@ window.SLACK_DATA = {
       },
       "1785116051.528929": {
         "post": "1785116051.528929",
-        "lastSeen": 1785148229.495
+        "lastSeen": 1785149120.286
       },
       "1785148201.764179": {
         "post": "1785148201.764179",
@@ -65223,15 +65234,11 @@ window.SLACK_DATA = {
       },
       "1785148200.538809": {
         "post": "1785148200.538809",
-        "lastSeen": 1785148229.495
-      },
-      "1785148200.420009": {
-        "post": "1785148200.420009",
-        "lastSeen": 1785148229.495
+        "lastSeen": 1785149120.286
       },
       "1785148200.331569": {
         "post": "1785148200.331569",
-        "lastSeen": 1785148229.495
+        "lastSeen": 1785149120.286
       }
     },
     "days": {
@@ -72321,8 +72328,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-07-27": {
-        "cnt": 113,
-        "sumMin": 1624.2002376834553,
+        "cnt": 114,
+        "sumMin": 1632.10807920297,
         "over": 6,
         "items": [
           {
@@ -73226,6 +73233,14 @@ window.SLACK_DATA = {
             "min": 15.6,
             "store": "연미정",
             "biz": "1558703079",
+            "who": "최민석",
+            "cat": "as"
+          },
+          {
+            "hm": "19:30",
+            "min": 7.9,
+            "store": "아지트",
+            "biz": "3962502052",
             "who": "최민석",
             "cat": "as"
           }
