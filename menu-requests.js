@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 125,
- "updatedAt": "2026-07-27 17:15",
+ "version": 126,
+ "updatedAt": "2026-07-27 17:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1785140275.706329",
+   "date": "2026-07-27",
+   "time": "17:17",
+   "store": "케이핀초반",
+   "biz": "2660303234",
+   "phone": "01052459815\n-",
+   "pos": "기타",
+   "content": "안주류 카테고리에 매운돈까스 16000원 -> 17000원으로 수정 부탁드립니다",
+   "special": "지금 바로 부탁드립니다",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785140279.612389",
+   "status": "done",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785140275706329"
+  },
   {
    "ts": "1785138911.307079",
    "date": "2026-07-27",
