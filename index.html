@@ -1880,8 +1880,6 @@ function renderMenuReg(){
   const sel=all.find(i=>i.ts===menuregSel);
   const memoVal=sel?(MENUMEMO[menuregMemoKey(sel)]||''):'';
   const rows=menuregRowsHtml(items);
-  const ocrTxt=sel?((sel.att||[]).map(a=>a.ocr).filter(Boolean).join('\n')):'';
-  const grid=sel?(menuregGridCache[sel.ts]!==undefined?menuregGridCache[sel.ts]:menuregDraft(sel.content+'\n'+((sel.replies||[]).join('\n'))+(ocrTxt?'\n'+ocrTxt:''))):'';
   const detail=sel?`
     <div class="card">
       <div class="card-head"><h3>🧾 ${escapeHtml(sel.store||'(상호미상)')} <span class="hint">${sel.date} ${sel.time}</span></h3>
@@ -1898,26 +1896,14 @@ function renderMenuReg(){
       </div>
       <div style="background:var(--surface,#f7f7f8);border-radius:10px;padding:10px 12px;font-size:13px;white-space:pre-wrap;max-height:180px;overflow:auto">${escapeHtml(sel.content||'(요청내용 없음)')}${sel.special?'\n\n[특이사항] '+escapeHtml(sel.special):''}</div>
       ${(sel.att||[]).some(a=>a.ocr)?`<div style="margin-top:8px">
-        <div style="font-size:13px;font-weight:700;margin-bottom:4px">🔎 이미지 자동판독 <span class="cnt-badge">${(sel.att||[]).filter(a=>a.ocr).length}</span> <span class="hint">(무료 OCR · 오탈자 가능 → 아래 그리드 초안에 자동 반영 · 반드시 원본과 대조)</span></div>
+        <div style="font-size:13px;font-weight:700;margin-bottom:4px">🔎 이미지 자동판독 <span class="cnt-badge">${(sel.att||[]).filter(a=>a.ocr).length}</span> <span class="hint">(무료 OCR · 오탈자 가능 · 반드시 원본과 대조 · 아래 엑셀 양식 작성 시 참고)</span></div>
         ${(sel.att||[]).filter(a=>a.ocr).map(a=>`<div style="background:#eef6ff;border-left:3px solid #2f6fc0;border-radius:8px;padding:8px 11px;font-size:12.5px;white-space:pre-wrap;margin-bottom:6px;max-height:150px;overflow:auto"><b>📄 ${escapeHtml(a.name)}</b>\n${escapeHtml(a.ocr)}</div>`).join('')}
       </div>`:''}
       ${(sel.replies||[]).length?`<div style="margin-top:8px">
-        <div style="font-size:13px;font-weight:700;margin-bottom:4px">💬 요청자 댓글 <span class="cnt-badge">${sel.replies.length}</span> <span class="hint">(댓글 내용도 아래 그리드 초안에 자동 반영됨)</span></div>
+        <div style="font-size:13px;font-weight:700;margin-bottom:4px">💬 요청자 댓글 <span class="cnt-badge">${sel.replies.length}</span> <span class="hint">(요청사항 참고)</span></div>
         ${sel.replies.map(r=>`<div style="background:rgba(94,92,230,.06);border-left:3px solid var(--blue,#5e5ce6);border-radius:8px;padding:8px 11px;font-size:13px;white-space:pre-wrap;margin-bottom:6px;max-height:120px;overflow:auto">${escapeHtml(r)}</div>`).join('')}
       </div>`:''}
-      <div style="margin-top:12px">
-        <div style="font-size:13px;font-weight:700;margin-bottom:4px">📝 메뉴 항목 <span class="hint">(한 줄 = 카테고리 | 메뉴명 | 가격 · 요청문에서 자동 초안 추출 · 신규등록 기준)</span></div>
-        <textarea id="mrGrid" rows="7" style="width:100%;font-family:ui-monospace,Consolas,monospace;font-size:13px;border:1px solid var(--line,#ddd);border-radius:10px;padding:10px" oninput="menuregCacheGrid()" placeholder="식사 | 김치볶음밥 | 7000&#10;음료 | 콜라 | 2000">${escapeHtml(grid)}</textarea>
-      </div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;align-items:center">
-        <span style="font-size:12px;font-weight:700;color:#666">📋 복사→양식에 붙여넣기:</span>
-        ${MENUREG_POS.map((p,i3)=>`<button class="btn" style="background:var(--blue);color:#fff;border-color:var(--blue)" onclick="menuregCopy(${i3})">📋 ${p.label}</button>`).join('')}
-      </div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;align-items:center">
-        <span style="font-size:12px;font-weight:700;color:#666">⬇ 파일로 받기:</span>
-        ${MENUREG_POS.map((p,i3)=>`<button class="btn" onclick="menuregGen(${i3})">⬇ ${p.label}</button>`).join('')}
-      </div>
-      <div class="hint" style="margin-top:8px">📋 복사 후 각 POS <b>엑셀 양식의 데이터 첫 행</b>에 붙여넣으면(Ctrl+V) 컬럼에 맞게 들어갑니다. ⚠️ <b>이미지 요청·복잡한 요청(변경·옵션·세트)</b>은 Claude Code에서 <b>/메뉴판독</b> → 판독 텍스트를 이 그리드에 붙여넣으세요.</div>
+      <div class="hint" style="margin-top:10px">💡 위 요청내용·댓글·이미지 판독을 참고해 <b>아래 「📂 매장 엑셀 → POS 양식 변환」</b>에서 4개 POS 양식을 만드세요.</div>
     </div>`:'';
   document.getElementById("main").innerHTML=`
     <div class="page-head"><div><h2>🍱 메뉴등록</h2><div class="sub">슬랙 #oc팀_메뉴요청 자동 적재 (최근 ${(window.MENU_REQUESTS&&window.MENU_REQUESTS.days)||7}일) · 요청 선택 → 메뉴 확인 → POS 양식 다운로드${upd?' · 최신 적재 '+upd:''}</div></div></div>
