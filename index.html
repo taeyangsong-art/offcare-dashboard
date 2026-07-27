@@ -2226,10 +2226,10 @@ const GAME_ITEMS = {
     {id:'fp_octopus',name:'문어',price:150,e:'🐙',rarity:'rare',fishOnly:true,perk:{item:0.01,miss:0.02}},
     {id:'p_unicorn',name:'유니콘',price:300,e:'🦄',rarity:'epic',fishOnly:true,dropWeight:0.45,perk:{item:0.02,coin:2}},
     {id:'fp_shark',name:'상어',price:350,e:'🦈',rarity:'epic',fishOnly:true,dropWeight:0.45,perk:{item:0.015,coin:2,miss:0.02}},
-    {id:'fp_turtle',name:'거북이',price:700,e:'🐢',rarity:'legendary',fishOnly:true,perk:{coin:3,miss:0.04,loss:0.07}},
-    {id:'p_dragon',name:'드래곤',price:450,e:'🐉',rarity:'legendary',fishOnly:true,perk:{coin:3,loss:0.10,miss:0.05,item:0.02}},
-    {id:'p_kraken',name:'크라켄',price:800,e:'🦑',rarity:'mythic',fishOnly:true,perk:{item:0.03,coin:4,miss:0.05,loss:0.08}},
-    {id:'p_whale',name:'고래',price:800,e:'🐋',rarity:'mythic',fishOnly:true,perk:{coin:5,item:0.025,loss:0.10}},
+    {id:'fp_turtle',name:'거북이',price:700,e:'🐢',rarity:'legendary',fishOnly:true,perk:{coin:3,miss:0.04,keep:0.07}},
+    {id:'p_dragon',name:'드래곤',price:450,e:'🐉',rarity:'legendary',fishOnly:true,perk:{coin:3,keep:0.10,miss:0.05,item:0.02}},
+    {id:'p_kraken',name:'크라켄',price:800,e:'🦑',rarity:'mythic',fishOnly:true,perk:{item:0.03,coin:4,miss:0.05,keep:0.08}},
+    {id:'p_whale',name:'고래',price:800,e:'🐋',rarity:'mythic',fishOnly:true,perk:{coin:5,item:0.025,keep:0.10}},
     {id:'fp_otter',name:'수달',price:300,e:'🦦',rarity:'epic',fishOnly:true,dropWeight:0.45,perk:{coin:2,item:0.015}},
     {id:'fp_dolphin',name:'돌고래',price:600,e:'🐬',rarity:'legendary',fishOnly:true,perk:{coin:3,miss:0.05,item:0.02}},
     {id:'fp_mermaid',name:'인어',price:850,e:'🧜‍♀️',rarity:'mythic',fishOnly:true,perk:{coin:4,item:0.03,miss:0.06}},
@@ -2698,22 +2698,19 @@ function rollLootPerk(loot, perk){
   const tot=loot.reduce((a,x)=>a+x.w,0)||1;
   const items=loot.filter(x=>x.t==='item');
   const nones=loot.filter(x=>x.t==='none');
-  const losses=loot.filter(x=>x.t==='coin'&&x.min!=null&&x.min<0);
-  const coins=loot.filter(x=>x.t==='coin'&&!(x.min!=null&&x.min<0));
+  const coins=loot.filter(x=>x.t==='coin');
   const pOf=arr=>arr.reduce((a,x)=>a+x.w,0)/tot;
   const pItem=pOf(items)*(1+(perk.item||0));
-  const pNone=pOf(nones)*(1-(perk.miss||0));
-  const pLoss=pOf(losses)*(1-(perk.loss||0));
-  const pCoin=Math.max(0, 1-pItem-pNone-pLoss);   // 줄어든 꽝·손실만큼 코인 획득이 흡수
-  const sum=pItem+pCoin+pLoss+pNone;
+  const pNone=pOf(nones)*Math.max(0, 1-(perk.miss||0)-(perk.keep||0));   // miss·keep 만큼 꽝 감소
+  const pCoin=Math.max(0, 1-pItem-pNone);   // 줄어든 꽝만큼 '코인 유지'가 흡수 = 코인유지 확률 증가
+  const sum=pItem+pCoin+pNone;
   const pick=arr=>{ const t2=arr.reduce((a,x)=>a+x.w,0)||1; let rr=Math.random()*t2; for(const x of arr){ if((rr-=x.w)<0) return x; } return arr[arr.length-1]; };
   const r=Math.random()*sum; let acc=pItem;
   if(r<acc && items.length) return pick(items);
   acc+=pCoin; if(r<acc && coins.length) return pick(coins);
-  acc+=pLoss; if(r<acc && losses.length) return pick(losses);
   return nones.length?pick(nones):(coins.length?pick(coins):loot[0]);
 }
-function perkDesc(perk){ if(!perk) return ''; const p=[]; const pct=x=>{const v=Math.round(x*1000)/10; return (Number.isInteger(v)?v:v.toFixed(1))+'%';}; if(perk.item)p.push(`아이템 확률 +${pct(perk.item)}`); if(perk.coin)p.push(`코인 유지 시 +${perk.coin}개 추가 지급`); if(perk.miss)p.push(`꽝 -${pct(perk.miss)}`); if(perk.loss)p.push(perk.loss>=1?'코인손실 방어(0%)':`코인손실 -${pct(perk.loss)}`); return p.join(' · '); }
+function perkDesc(perk){ if(!perk) return ''; const p=[]; const pct=x=>{const v=Math.round(x*1000)/10; return (Number.isInteger(v)?v:v.toFixed(1))+'%';}; if(perk.item)p.push(`아이템 확률 +${pct(perk.item)}`); if(perk.coin)p.push(`코인 유지 시 +${perk.coin}개 추가 지급`); if(perk.miss)p.push(`꽝 -${pct(perk.miss)}`); if(perk.keep)p.push(`코인 유지 확률 +${pct(perk.keep)}`); return p.join(' · '); }
 function pickItem(rars, fishOnly, emp){ const pool=[]; for(const cat in GAME_ITEMS){ for(const it of GAME_ITEMS[cat]){ if(it.price===0) continue; if(it.targetOnly) continue; if(it.ach || it.onlyFor) continue; if(it.gender && emp && !genderOK(emp,it)) continue; if(!rars.includes(it.rarity)) continue; if(fishOnly && !it.fishOnly) continue; if(!fishOnly && it.fishOnly) continue; if(emp && owns(emp,cat,it.id)) continue; pool.push(Object.assign({cat},it)); } } if(!pool.length) return null; const tot=pool.reduce((a,it)=>a+(it.dropWeight||1),0); let r=Math.random()*tot; for(const it of pool){ if((r-=(it.dropWeight||1))<0) return it; } return pool[pool.length-1]; }
 const CAT_KO={title:'타이틀',nametag:'네임택',hat:'모자',pet:'펫',skin:'피부',hair:'헤어',dye:'염색',eyes:'눈',brows:'눈썹',mouth:'입',beard:'수염',top:'상의',pants:'하의',shoes:'신발',gloves:'장갑',cape:'망토'};
 function resolveLoot(emp,out){ const g=gs(emp);
