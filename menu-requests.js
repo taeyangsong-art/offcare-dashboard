@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 110,
- "updatedAt": "2026-07-27 10:30",
+ "version": 111,
+ "updatedAt": "2026-07-27 10:47",
  "days": 30,
  "items": [
+  {
+   "ts": "1785116051.528929",
+   "date": "2026-07-27",
+   "time": "10:34",
+   "store": "스무치 창원명서점",
+   "biz": "1625900586",
+   "phone": "01075704364\n-",
+   "pos": "토스포스",
+   "content": "덮밥메뉴 옵션 수정부탁드립니다",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1JhyVQPAm-BHpCRDIAHe01JupBFyznoMo/view?usp=drivesdk",
+    "https://drive.google.com/file/d/13CFX_z7MJJxnfVXVc2Yz62_dp4s6go7G/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785116056.275769",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785116051528929"
+  },
   {
    "ts": "1785115566.097119",
    "date": "2026-07-27",
