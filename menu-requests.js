@@ -3,10 +3,46 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 108,
- "updatedAt": "2026-07-27 10:00",
+ "version": 109,
+ "updatedAt": "2026-07-27 10:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1785114303.416349",
+   "date": "2026-07-27",
+   "time": "10:05",
+   "store": "지은김치찌개test(KPN)",
+   "biz": "1078709701",
+   "phone": "01081784223\n-",
+   "pos": "기타",
+   "content": "test",
+   "special": "test",
+   "drive": [],
+   "files": 3,
+   "att": [
+    {
+     "name": "5.png",
+     "path": "menu-files/1785114303_416349-0.png",
+     "ocr": "SER 2060723 EE 1 ili MIE fi\nMAGIC POS E53 257 35 한 식사류 | omy | == | ses\n2d ve b= {\n콜카콜라 BAH 힐성사미다 환타파인 초정탄산수\n한 2,000 2,000 2,000 2,000 2,000\n1 <. | 0\n소 on ol\n봉사료: 0\n- BER 76001 | 써스 ㅣ 히원카드\nHABE: 0 매미 이기 할인취소 전달사항 [그의 부가기능"
+    },
+    {
+     "name": "3.png",
+     "path": "menu-files/1785114303_416349-1.png",
+     "ocr": "masicros i 8 I | 0 | 해] 해 |\n인원 10 ve i {\nI 삐추가 시례기추가 계장볶음밥 당면추가 라면사리\n| an 18,000 3,000 3,000 2,000 2,000\n공기밥\n1000\n4\n소 on ol\n봉사료: 0\n- | 1| — 76001 ㅣ 써스 ㅣ 히원카드\nHABE: 0 | 0 [cir] om | 할인취소 전달사항 [그의 부가기능"
+    },
+    {
+     "name": "4.png",
+     "path": "menu-files/1785114303_416349-2.png",
+     "ocr": "TERT !20280723 EE [= 3\nMAGIC POS 2857 207s 55 5 ER 식사류 | 추가메뉴 | 주류 |\n인원 10 ve pe = J if 1\n05003: :: 26600\n| moe | FUERA | 진후미즈백 새로 처름처럼\n| an 5,000 5,000 5,000 5,000 5,000\n5.000\n58 카스 테라 켈리 국순담막걸리\n5.000 5.000 5.000 5.000\n소계 99\nZe 2 [7 [eo] = i\n봉사료: 0\n: | 1| — 6001 ㅣ 세스 ㅣ 회원카드"
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785114312.782549",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785114303416349"
+  },
   {
    "ts": "1785113236.485139",
    "date": "2026-07-27",
@@ -1802,7 +1838,13 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 1,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "path": "menu-files/1784617367_166589-0.png",
+     "ocr": "중화호반닭갈비막국수신내점\n매장정보 EAE Eu\n출력물 설정 ~ 상품키 설정 a\n영수증\n계와서 © 포스벌로화면에 보이는 줄수가 다를 4 012. SAE 동일하게 반영돼요. 자티 x\nFER 식사 사리 주류 MEA MEE 카테고리 순서편집\n배달 주문서 —\nFe sun RN ERIE sim) 얼콘막국수 막국수 물만두 볶음밤\n상품키\n~ 5000 3 0 900 50 00\nwie aE 주먹밥 공기밤 미나리닭갈비"
+    }
+   ],
    "replies": [
     "막국수와 얼큰막국수를 물/비빔 나누는 요청입니다"
    ],
