@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 132,
- "updatedAt": "2026-07-28 12:30",
+ "version": 133,
+ "updatedAt": "2026-07-28 12:45",
  "days": 30,
  "items": [
   {
@@ -25,11 +25,13 @@ window.MENU_REQUESTS = {
      "path": "menu-files/1785208884_876419-0.exs"
     }
    ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1785208889.583829",
-   "status": "wait",
-   "handler": null,
+   "replies": [
+    "채널톡 올려주시어 요청드렸는데 위에 내용 확인을 미처못했습니다.\n동일 매장 맞습니다"
+   ],
+   "rc": 8,
+   "lr": "1785209982.674729",
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785208884876419"
   },
   {
@@ -46,12 +48,13 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [
-    "안녕하세요, 바쁘시겠지만 해당 대표님 온도감이 많이 높으셔서 빠른 등록 가능할까요ㅜㅜ"
+    "안녕하세요, 바쁘시겠지만 해당 대표님 온도감이 많이 높으셔서 빠른 등록 가능할까요ㅜㅜ",
+    "님 여기 토스포스맞죠?"
    ],
-   "rc": 2,
-   "lr": "1785209340.647109",
-   "status": "wait",
-   "handler": null,
+   "rc": 3,
+   "lr": "1785209635.409119",
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785208313805559"
   },
   {
@@ -79,7 +82,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1785205652.494519",
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785205209095829"
   },
