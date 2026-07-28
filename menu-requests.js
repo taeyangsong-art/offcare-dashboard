@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 147,
- "updatedAt": "2026-07-28 16:45",
+ "version": 148,
+ "updatedAt": "2026-07-28 17:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1785224863.968259",
+   "date": "2026-07-28",
+   "time": "16:47",
+   "store": "THENCE ARCHIVE",
+   "biz": "1140323564",
+   "phone": "01046464373",
+   "pos": "토스포스",
+   "content": "토스포스에 등록되어 있는 메뉴를 엑셀파일 발송 부탁드립니다. <mailto:master@thence.co.kr|master@thence.co.kr>\n이메일:",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 3,
+   "lr": "1785225229.863439",
+   "status": "done",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785224863968259"
+  },
   {
    "ts": "1785224262.125679",
    "date": "2026-07-28",
@@ -21,8 +41,8 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1785224265.665399",
+   "rc": 2,
+   "lr": "1785225626.636829",
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785224262125679"
