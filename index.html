@@ -417,6 +417,17 @@
   .fp-emoji{font-size:60px; line-height:1}
   .fp-big{margin-top:8px; font-size:24px; font-weight:800; letter-spacing:-.02em; color:var(--ink)}
   .fp-sub{margin-top:6px; font-size:14px; color:var(--gray)}
+  /* 여러 번 캐스팅(세월을 낚은 타이틀) 결과 목록 */
+  .fish-pop.multi{max-width:380px}
+  .fish-pop .fp-multi{position:relative; z-index:1; margin-top:14px; display:flex; flex-direction:column; gap:8px}
+  .fp-row{display:flex; align-items:center; gap:10px; text-align:left; background:var(--surface2,#f5f5f7);
+    border:1px solid var(--rc2); border-radius:14px; padding:10px 12px}
+  .fp-row-n{flex:0 0 20px; height:20px; border-radius:50%; background:var(--ink); color:var(--canvas,#fff);
+    font-size:11px; font-weight:800; display:flex; align-items:center; justify-content:center}
+  .fp-row-e{font-size:26px; line-height:1}
+  .fp-row-t{display:flex; flex-direction:column; min-width:0}
+  .fp-row-t b{font-size:15px; font-weight:800; color:var(--ink); letter-spacing:-.01em}
+  .fp-row-t small{font-size:11.5px; color:var(--gray); margin-top:2px}
   .fish-room{color:#fff; text-align:center}
   .fish-room.fs-low{background:linear-gradient(160deg,#4aa3c7,#2d7d9a)}
   .fish-room.fs-mid{background:linear-gradient(160deg,#5a67d8,#3f2b96)}
@@ -2104,7 +2115,7 @@ const GAME_ITEMS = {
     {id:'t_bomb',name:'💣',price:1,rarity:'legendary',ach:'bomb',autoGrant:true,desc:'심지는 이미 타들어가고 있다. 터질 때까지, 던지고 또 던질 뿐',perk:{item:0.002,miss:0.006},grad:'linear-gradient(90deg,#1c1c1e,#ff453a,#ff9f0a,#1c1c1e)'},
     {id:'t_bling',name:'여기서부터 저기까지 다주세요',price:1,rarity:'epic',ach:'bling',autoGrant:true,desc:'머리부터 발끝까지, 빛나지 않는 곳이 없다',perk:{item:0.0015,keep:0.005},grad:'linear-gradient(90deg,#ffd60a,#ff9ff3,#4ea8ff,#ffd60a)'},
     {id:'t_star',name:'⭐',price:1,rarity:'mythic',ach:'star',autoGrant:true,desc:'모든 칭호 위에 떠오른, 단 하나의 별',perk:{item:0.0025,miss:0.004,keep:0.004},grad:'linear-gradient(90deg,#0a1a4a,#4ea8ff,#fffbe6,#ffd60a,#0a1a4a)'},
-    {id:'t_angler',name:'세월을 낚은',price:1,rarity:'mythic',ach:'angler',autoGrant:true,desc:'찌 끝에 걸린 것은 물고기가 아니라, 흘러간 시간이었다',perk:{item:0.0025,miss:0.008},grad:'linear-gradient(90deg,#0a3d62,#00c7be,#4ea8ff,#0a3d62)'},
+    {id:'t_angler',name:'세월을 낚은',price:1,rarity:'mythic',ach:'angler',autoGrant:true,desc:'찌 끝에 걸린 것은 물고기가 아니라, 흘러간 시간이었다',perk:{item:0.0025,casts:2},grad:'linear-gradient(90deg,#0a3d62,#00c7be,#4ea8ff,#0a3d62)'},
     {id:'t_kraken',name:'천사',price:1200,rarity:'mythic',fishOnly:true,desc:'1,200코인을 쓰는 순간, 등 뒤에서 날개가 돋아났다',perk:{item:0.0025,save:0.30},grad:'linear-gradient(90deg,#00f5d4,#4ea8ff,#8a5cff,#00f5d4)'},
     {id:'t_fishking',name:'아이샵케어',price:1500,rarity:'mythic',fishOnly:true,desc:'회사의 이름을 어깨에 얹은 자. 그 무게, 무려 1,500코인',perk:{item:0.0025,miss:0.008},grad:'linear-gradient(90deg,#ffd34e,#ff5a8a,#00f5d4,#ffd34e)'},
     {id:'ft_novice',name:'초보 낚시꾼',price:60,rarity:'common',fishOnly:true,desc:'물고기보다 장화를 더 많이 낚았지만 괜찮다. 이것도 경력이다',perk:{item:0.0005,miss:0.002}},
@@ -2721,10 +2732,12 @@ function fmtPct(x){ return (Math.round(x*10000)/100).toFixed(2).replace(/\.?0+$/
 function petPerk(emp){ const it=itemById('pet',(gs(emp).equipped||{}).pet); return (it&&it.perk)||{}; }
 // ── 👑 타이틀 보유 효과: 착용 여부와 무관하게 '보유한 모든 타이틀'의 perk 합산 ──
 // 상한 — 아이템 확률 +5%, (꽝 감소 + 코인 유지) 합계 +20%. 타이틀이 계속 늘어도 이 선을 절대 넘지 않음.
-const TITLE_PERK_CAP={item:0.05, sway:0.20, dbl:0.30, save:0.50};
+const TITLE_PERK_CAP={item:0.05, sway:0.20, dbl:0.30, save:0.50, casts:3};
+// casts(동시 캐스팅 횟수)는 합산이 아니라 '가장 높은 값' 적용 — 타이틀이 늘어도 횟수가 눈덩이처럼 불어나지 않게
 function ownedTitlePerk(emp){
   const out={};
-  (GAME_ITEMS.title||[]).forEach(it=>{ if(!it.perk||!owns(emp,'title',it.id)) return; for(const k in it.perk) out[k]=(out[k]||0)+it.perk[k]; });
+  (GAME_ITEMS.title||[]).forEach(it=>{ if(!it.perk||!owns(emp,'title',it.id)) return; for(const k in it.perk){ if(k==='casts') out.casts=Math.max(out.casts||1, it.perk.casts); else out[k]=(out[k]||0)+it.perk[k]; } });
+  if(out.casts) out.casts=Math.min(out.casts, TITLE_PERK_CAP.casts);
   if(out.item) out.item=Math.min(out.item, TITLE_PERK_CAP.item);
   if(out.dbl) out.dbl=Math.min(out.dbl, TITLE_PERK_CAP.dbl);
   if(out.save) out.save=Math.min(out.save, TITLE_PERK_CAP.save);
@@ -2755,7 +2768,9 @@ function rollLootPerk(loot, perk){
   acc+=pCoin; if(r<acc && coins.length) return pick(coins);
   return nones.length?nonePick():(coins.length?pick(coins):loot[0]);
 }
-function perkDesc(perk){ if(!perk) return ''; const p=[]; const pct=x=>fmtPct(x); if(perk.item)p.push(`아이템 확률 +${pct(perk.item)}`); if(perk.coin)p.push(`코인 유지 시 +${perk.coin}개 추가 지급`); if(perk.miss)p.push(`꽝 -${pct(perk.miss)}`); if(perk.keep)p.push(`코인 유지 확률 +${pct(perk.keep)}`); if(perk.dbl)p.push(`코인 유지 당첨 시 ${pct(perk.dbl)} 확률로 코인 2배 획득`); if(perk.save)p.push(`꽝 당첨 시 ${pct(perk.save)} 확률로 코인 유지`); return p.join(' · '); }
+function perkDesc(perk){ if(!perk) return ''; const p=[]; const pct=x=>fmtPct(x); if(perk.item)p.push(`아이템 확률 +${pct(perk.item)}`); if(perk.coin)p.push(`코인 유지 시 +${perk.coin}개 추가 지급`); if(perk.miss)p.push(`꽝 -${pct(perk.miss)}`); if(perk.keep)p.push(`코인 유지 확률 +${pct(perk.keep)}`); if(perk.dbl)p.push(`코인 유지 당첨 시 ${pct(perk.dbl)} 확률로 코인 2배 획득`); if(perk.save)p.push(`꽝 당첨 시 ${pct(perk.save)} 확률로 코인 유지`); if(perk.casts>1)p.push(`모든 낚시터에서 한 번에 ${perk.casts}번 캐스팅 (비용도 ${perk.casts}배)`); return p.join(' · '); }
+// 한 번의 '낚싯대 던지기'로 진행되는 캐스팅 횟수 ([세월을 낚은] 타이틀 보유 시 2회)
+function castCount(emp){ return Math.max(1, ownedTitlePerk(emp).casts||1); }
 function pickItem(rars, fishOnly, emp){ const pool=[]; for(const cat in GAME_ITEMS){ for(const it of GAME_ITEMS[cat]){ if(it.price===0) continue; if(it.targetOnly) continue; if(it.ach || it.onlyFor) continue; if(it.gender && emp && !genderOK(emp,it)) continue; if(!rars.includes(it.rarity)) continue; if(fishOnly && !it.fishOnly) continue; if(!fishOnly && it.fishOnly) continue; if(emp && owns(emp,cat,it.id)) continue; pool.push(Object.assign({cat},it)); } } if(!pool.length) return null; const tot=pool.reduce((a,it)=>a+(it.dropWeight||1),0); let r=Math.random()*tot; for(const it of pool){ if((r-=(it.dropWeight||1))<0) return it; } return pool[pool.length-1]; }
 const CAT_KO={title:'타이틀',nametag:'네임택',hat:'모자',pet:'펫',skin:'피부',hair:'헤어',dye:'염색',eyes:'눈',brows:'눈썹',mouth:'입',beard:'수염',top:'상의',pants:'하의',shoes:'신발',gloves:'장갑',cape:'망토'};
 function resolveLoot(emp,out){ const g=gs(emp);
@@ -2783,42 +2798,68 @@ function resolveLoot(emp,out){ const g=gs(emp);
   g.owned=g.owned||[]; g.owned.push(it.cat+':'+it.id);
   return {emoji:it.e||'🎁',big:'['+it.name+']',sub:RARITY_KO[it.rarity]+' '+(CAT_KO[it.cat]||'')+' 획득!',cls:'item',rarity:it.rarity};
 }
+// 캐스팅 n회분을 한 번에 추첨 → 결과 배열
+function rollCasts(emp, f, n){ const out=[]; for(let i=0;i<n;i++) out.push(resolveLoot(emp, rollLootPerk(f.loot, activePerk(emp)))); return out; }
 async function castFish(spot){
   const emp=gameMe; if(!emp){ alert('먼저 본인을 선택하세요 🙂'); return; }
   const f=FISH[spot]; if(fishBusy) return;
   const pend=fishPending(emp,spot);
   if(pend){
     if(!pend.ready) return;   // 아직 대기 중 (버튼은 비활성)
-    // 대기 완료 → 결과 확인(추첨·지급)
-    fishBusy=true; stopFishTick(); clearFishCast(emp,spot); showFishing(f);
-    const res=resolveLoot(emp, rollLootPerk(f.loot, activePerk(emp))); saveGame();
-    setTimeout(()=>{ showFishResult(res); renderMain(); fishBusy=false; }, 1200);
+    // 대기 완료 → 결과 확인(추첨·지급) — 던질 때 결제한 횟수만큼
+    const n=(gs(emp).pendN&&gs(emp).pendN[spot])||castCount(emp);
+    fishBusy=true; stopFishTick(); clearFishCast(emp,spot); showFishing(f,n);
+    const res=rollCasts(emp,f,n); if(gs(emp).pendN) delete gs(emp).pendN[spot]; saveGame();
+    setTimeout(()=>{ showFishResults(res); renderMain(); fishBusy=false; }, 1200);
     return;
   }
   // 새 캐스팅 → 대기 시작(결과는 대기 후 확인)
   const gate=fishGate(emp,f); if(!gate.ok){ alert(gate.msg); return; }
   const cg=fishCastGate(emp,f); if(!cg.ok){ alert(cg.msg); return; }
-  if(empAvail(emp)<f.cost){ alert('🪙 코인이 부족해요! (캐스트 '+f.cost+'코인)'); return; }
+  const n=castCount(emp), cost=f.cost*n;   // [세월을 낚은] 보유 시 2회 동시 캐스팅 (비용도 2회분)
+  if(empAvail(emp)<cost){ alert('🪙 코인이 부족해요! (캐스트 '+cost+'코인'+(n>1?` · ${n}회분`:'')+')'); return; }
   if(!(await requireAuth(emp))) return;   // 코인 소모 → 본인 인증
-  addSpent(emp, f.cost); gs(emp).fishCasts=(gs(emp).fishCasts||0)+1; saveGame();   // 캐스팅 누적(세월을 낚은 타이틀용)
+  addSpent(emp, cost); gs(emp).fishCasts=(gs(emp).fishCasts||0)+n; saveGame();   // 캐스팅 누적(세월을 낚은 타이틀용)
   if((FISH_WAIT[spot]||0)<=0){   // 대기 0(초급) → 던지자마자 바로 결과
-    fishBusy=true; showFishing(f);
-    const res=resolveLoot(emp, rollLootPerk(f.loot, activePerk(emp))); saveGame();
-    setTimeout(()=>{ showFishResult(res); renderMain(); fishBusy=false; }, 1200);
+    fishBusy=true; showFishing(f,n);
+    const res=rollCasts(emp,f,n); saveGame();
+    setTimeout(()=>{ showFishResults(res); renderMain(); fishBusy=false; }, 1200);
     return;
   }
+  const g=gs(emp); g.pendN=g.pendN||{}; g.pendN[spot]=n;   // 결제한 횟수 기억(대기 중 타이틀 변동과 무관하게 정산)
   setFishCast(emp,spot); saveGame();
-  showFishCastDone(spot); renderMain();
+  showFishCastDone(spot,n); renderMain();
 }
-function showFishing(f){
+function showFishing(f,n){
   let el=document.getElementById('fishPop'); if(!el){ el=document.createElement('div'); el.id='fishPop'; el.className='duty-pop-overlay'; document.body.appendChild(el); }
-  el.innerHTML=`<div class="fish-pop casting"><div class="fp-cast-scene"><div class="fp-ripple"></div><div class="fp-ripple d2"></div><div class="fp-ripple d3"></div><div class="fp-rod">🎣</div><div class="fp-bob">🔴</div></div><div class="fp-wait">${escapeHtml(f.name)}<br>🎣 찌를 던졌다! 입질을 기다리는 중...</div></div>`;
+  el.innerHTML=`<div class="fish-pop casting"><div class="fp-cast-scene"><div class="fp-ripple"></div><div class="fp-ripple d2"></div><div class="fp-ripple d3"></div><div class="fp-rod">🎣</div><div class="fp-bob">🔴</div></div><div class="fp-wait">${escapeHtml(f.name)}${n>1?` · <b>${n}회 동시 캐스팅</b>`:''}<br>🎣 찌를 던졌다! 입질을 기다리는 중...</div></div>`;
 }
 // 캐스팅 직후 안내(대기시간 후 결과 확인)
-function showFishCastDone(spot){
+function showFishCastDone(spot,n){
   const f=FISH[spot], wl=fishWaitLabel(spot);
   let el=document.getElementById('fishPop'); if(!el){ el=document.createElement('div'); el.id='fishPop'; el.className='duty-pop-overlay'; document.body.appendChild(el); }
-  el.innerHTML=`<div class="fish-pop reveal"><div class="fp-emoji">🎣</div><div class="fp-big">낚싯대를 던졌어요!</div><div class="fp-sub">${escapeHtml(f.name)} · <b>${wl}</b> 뒤에 입질이 와요.<br>시간이 지나면 <b>‘결과 확인’</b> 버튼이 열려요 (창을 닫아도 유지)</div><button class="duty-pop-btn" onclick="document.getElementById('fishPop').remove()">확인 🎣</button></div>`;
+  el.innerHTML=`<div class="fish-pop reveal"><div class="fp-emoji">🎣</div><div class="fp-big">낚싯대를 던졌어요!${n>1?` <span style="font-size:15px">(${n}회분)</span>`:''}</div><div class="fp-sub">${escapeHtml(f.name)} · <b>${wl}</b> 뒤에 입질이 와요.${n>1?`<br>⏳ 대기는 <b>한 번</b>, 결과는 <b>${n}개</b>가 한꺼번에!`:''}<br>시간이 지나면 <b>‘결과 확인’</b> 버튼이 열려요 (창을 닫아도 유지)</div><button class="duty-pop-btn" onclick="document.getElementById('fishPop').remove()">확인 🎣</button></div>`;
+}
+// 여러 번 캐스팅한 결과를 한 팝업에 (1개면 기존 단일 연출)
+const RAR_RANK={common:1, rare:2, epic:3, legendary:4, mythic:5, unique:6};
+function showFishResults(list){
+  if(!list||!list.length) return;
+  if(list.length===1) return showFishResult(list[0]);
+  const best=list.reduce((a,b)=>((RAR_RANK[b.rarity]||0)>(RAR_RANK[a.rarity]||0)?b:a));
+  const col=best.rarity?RARITY[best.rarity]:'#8a94a6';
+  const win=!!best.rarity, epicUp=['epic','legendary','mythic','unique'].includes(best.rarity);
+  const el=document.getElementById('fishPop'); if(!el) return;
+  const rows=list.map((r,i)=>`<div class="fp-row" style="--rc2:${r.rarity?RARITY[r.rarity]:'transparent'}">
+      <span class="fp-row-n">${i+1}</span><span class="fp-row-e">${r.emoji}</span>
+      <span class="fp-row-t"><b ${r.rarity?`style="color:${RARITY[r.rarity]}"`:''}>${escapeHtml(r.big)}</b><small>${escapeHtml(r.sub)}</small></span>
+    </div>`).join('');
+  el.innerHTML=`<div class="fish-pop reveal multi ${win?'win':''} ${epicUp?'epic-up':''}" style="--rc:${col}">
+    ${win?'<div class="fp-rays"></div>':''}
+    <div class="fp-big">🎣 ${list.length}회 캐스팅 결과</div>
+    <div class="fp-multi">${rows}</div>
+    <button class="duty-pop-btn" onclick="document.getElementById('fishPop').remove()">확인 🎣</button>
+  </div>`;
+  if(epicUp && typeof fireMvpConfetti==='function'){ try{ fireMvpConfetti(); }catch(e){} }
 }
 function showFishResult(res){
   const el=document.getElementById('fishPop'); if(!el) return; const col=res.rarity?RARITY[res.rarity]:'#8a94a6';
@@ -2866,20 +2907,22 @@ function renderGameFish(){
     return `<div class="fish-spot fs-${k}">
       <div class="fs-emoji">${f.emoji}</div><div class="fs-name">${f.name}</div>
       <div class="fs-desc">${f.desc}</div>
-      <div class="fs-cost">캐스트 <b>🪙${f.cost}</b>${f.entry?` · 입장 ${f.entry}코인↑`:''}${!cg.ok?` · <b style="color:#e0218a">${cg.short}</b>`:''}</div>
+      <div class="fs-cost">캐스트 <b>🪙${f.cost}</b>${castCount(emp)>1?` <span style="font-weight:800">×${castCount(emp)}회 = 🪙${f.cost*castCount(emp)}</span>`:''}${f.entry?` · 입장 ${f.entry}코인↑`:''}${!cg.ok?` · <b style="color:#e0218a">${cg.short}</b>`:''}</div>
       <button class="fs-btn" ${locked?'disabled':''} onclick="enterFishRoom('${k}')">${locked?`🔒 ${f.entry}코인 필요`:'⛵ 입장하기'}</button>
     </div>`; }).join('')}</div>`;
 }
 function renderFishRoom(spot, emp){
-  const f=FISH[spot], od=fishOdds(spot), items=fishItemPreview(spot), cant=empAvail(emp)<f.cost;
+  const f=FISH[spot], od=fishOdds(spot), items=fishItemPreview(spot);
+  const nCast=castCount(emp), costN=f.cost*nCast, cant=empAvail(emp)<costN;   // [세월을 낚은] 보유 시 2회 동시
   const cg=fishCastGate(emp,f), castLocked=!cg.ok;
   const pend=fishPending(emp,spot), waitLbl=fishWaitLabel(spot);
+  const pendN=(gs(emp).pendN&&gs(emp).pendN[spot])||nCast;
   let castBtn;
   if(pend && !pend.ready){ castBtn=`<button class="fr-cast" disabled>🎣 입질 대기 중... ${fmtFishRemain(pend.remain)}</button>`; }
-  else if(pend && pend.ready){ castBtn=`<button class="fr-cast ready" onclick="castFish('${spot}')">✨ 입질! 결과 확인하기</button>`; }
-  else { castBtn=`<button class="fr-cast" ${(cant||castLocked)?'disabled':''} onclick="castFish('${spot}')">${castLocked?('🔒 '+cg.short):(cant?'🪙 코인이 부족해요':`🎣 낚싯대 던지기 (🪙${f.cost})`)}</button>`; }
+  else if(pend && pend.ready){ castBtn=`<button class="fr-cast ready" onclick="castFish('${spot}')">✨ 입질! 결과 확인하기${pendN>1?` (${pendN}회분)`:''}</button>`; }
+  else { castBtn=`<button class="fr-cast" ${(cant||castLocked)?'disabled':''} onclick="castFish('${spot}')">${castLocked?('🔒 '+cg.short):(cant?'🪙 코인이 부족해요':`🎣 낚싯대 던지기 (🪙${costN})${nCast>1?` · ${nCast}회 동시`:''}`)}</button>`; }
   document.getElementById("main").innerHTML=`
-    <div class="page-head"><div><h2>${f.emoji} ${f.name}</h2><div class="sub">캐스트 🪙${f.cost} · ⏳ 대기 <b>${waitLbl}</b> · 보유 🪙<b>${empAvail(emp)}</b></div></div>
+    <div class="page-head"><div><h2>${f.emoji} ${f.name}</h2><div class="sub">캐스트 🪙${f.cost}${nCast>1?` × ${nCast}회 = 🪙${costN}`:''} · ⏳ 대기 <b>${waitLbl}</b> · 보유 🪙<b>${empAvail(emp)}</b></div></div>
       <div class="controls"><button class="btn" onclick="leaveFishRoom()">← 낚시터 목록</button></div></div>
     <div class="card fish-room fs-${spot}">
       <div class="fr-scene">
