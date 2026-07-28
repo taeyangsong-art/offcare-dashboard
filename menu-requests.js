@@ -3,10 +3,32 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 136,
- "updatedAt": "2026-07-28 13:30",
+ "version": 137,
+ "updatedAt": "2026-07-28 13:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1785213812.401259",
+   "date": "2026-07-28",
+   "time": "13:43",
+   "store": "올레시장흑돼지 흑돈바라기",
+   "biz": "1470503484",
+   "phone": "01088887425",
+   "pos": "토스포스",
+   "content": "토스포스 메뉴등록 부탁드립니다! (금일 4시 오픈으로 긴급)",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "메뉴사진입니다!"
+   ],
+   "rc": 2,
+   "lr": "1785213848.950919",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785213812401259"
+  },
   {
    "ts": "1785212790.887709",
    "date": "2026-07-28",
@@ -20,10 +42,13 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1785212795.350729",
-   "status": "confirm",
+   "replies": [
+    "아이고.. 이미지를 이렇게 주시면 등록 불가",
+    "통화로 이미지 재첨부 안내 / 메뉴 먼저 등록"
+   ],
+   "rc": 4,
+   "lr": "1785213835.316749",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785212790887709"
   },
@@ -43,10 +68,10 @@ window.MENU_REQUESTS = {
    "replies": [
     "메뉴 수정부탁드립니다!\n• 버섯갈비전골 60,000원(대), 35,000원(중)"
    ],
-   "rc": 2,
-   "lr": "1785212345.282619",
-   "status": "wait",
-   "handler": null,
+   "rc": 3,
+   "lr": "1785213891.843679",
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785212260557039"
   },
   {
