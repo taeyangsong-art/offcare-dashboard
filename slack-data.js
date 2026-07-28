@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1862,
+  "version": 1863,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -65399,7 +65399,7 @@ window.SLACK_DATA = {
     "2026-07-28": {
       "counts": {
         "as": {
-          "최민석": 17,
+          "최민석": 19,
           "김현기": 26,
           "심성현": 26,
           "김동욱": 23,
@@ -65438,6 +65438,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "20:07",
+          "store": "신도림 껍데기",
+          "biz": "8833800688",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "프론트 연결 끊김으로 점검 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
+        {
+          "time": "20:04",
+          "store": "아지트",
+          "biz": "3962502052",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "TS 100 연결 온보딩 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "19:40",
           "store": "치유 뷰티 센터",
@@ -67978,11 +68000,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 178,
-        "offline": 52,
+        "online": 179,
+        "offline": 53,
         "unknown": 0
       },
-      "updatedAt": "19:40",
+      "updatedAt": "20:07",
       "voc": {
         "responses": 17,
         "install": {
@@ -68229,15 +68251,19 @@ window.SLACK_DATA = {
       },
       "1785215782.499039": {
         "post": "1785215782.499039",
-        "lastSeen": 1785236436.68
+        "lastSeen": 1785237321.211
       },
       "1785223049.463309": {
         "post": "1785223049.463309",
-        "lastSeen": 1785236436.68
+        "lastSeen": 1785237321.211
       },
       "1785227808.476239": {
         "post": "1785227808.476239",
-        "lastSeen": 1785236436.68
+        "lastSeen": 1785237321.211
+      },
+      "1785236620.267649": {
+        "post": "1785236620.267649",
+        "lastSeen": 1785237321.211
       }
     },
     "days": {

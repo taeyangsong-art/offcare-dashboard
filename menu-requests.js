@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 156,
- "updatedAt": "2026-07-28 19:30",
+ "version": 157,
+ "updatedAt": "2026-07-28 20:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1785236620.267649",
+   "date": "2026-07-28",
+   "time": "20:03",
+   "store": "은성한정식",
+   "biz": "5298703678",
+   "phone": "01025147226\n-",
+   "pos": "퍼스트포스",
+   "content": "손님이 계산하실때 영수증이 2장(내역 없는것, 내역 있는것) 나오는데\n내역 없는것 1장만 출력되게 해주세요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785236628.957159",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785236620267649"
+  },
   {
    "ts": "1785227808.476239",
    "date": "2026-07-28",
