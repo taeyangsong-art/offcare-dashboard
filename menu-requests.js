@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 144,
- "updatedAt": "2026-07-28 15:45",
+ "version": 145,
+ "updatedAt": "2026-07-28 16:00",
  "days": 30,
  "items": [
   {
@@ -23,8 +23,8 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1785219932.744929",
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785219894246719"
   },
   {
@@ -62,10 +62,12 @@ window.MENU_REQUESTS = {
    "att": [],
    "replies": [
     "https://asp.upsolution.co.kr/BasicSetting/index/100006#2\n메뉴 관리 > 메뉴판 관리",
-    "오늘의 음료 sold out 되어잇음"
+    "오늘의 음료 sold out 되어잇음",
+    ":memo: 검색용 / 아임유포스 아임유키오스크 /\n왼쪽 위 더블클릭 9999 > 매장옵션 > 품절 관리 > 여기에서 저장 필요 / 만약 안되면 버전이 낮아서 그러니 업데이트 필요해 up cloud 쪽으로 원격 요청 필요",
+    "품절 해제 완료"
    ],
-   "rc": 3,
-   "lr": "1785220565.684789",
+   "rc": 5,
+   "lr": "1785221750.306559",
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785219626712639"
@@ -84,11 +86,13 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [
-    "https://w1659946222-hxm266180.slack.com/archives/C07CL4BV9QT/p1785218226842739?thread_ts=1785216799.442079&cid=C07CL4BV9QT"
+    "https://w1659946222-hxm266180.slack.com/archives/C07CL4BV9QT/p1785218226842739?thread_ts=1785216799.442079&cid=C07CL4BV9QT",
+    "제미나이 사춘기 이슈",
+    "등록 완료"
    ],
-   "rc": 2,
-   "lr": "1785218278.303689",
-   "status": "confirm",
+   "rc": 4,
+   "lr": "1785221874.727969",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785217062848139"
   },
