@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 143,
- "updatedAt": "2026-07-28 15:30",
+ "version": 144,
+ "updatedAt": "2026-07-28 15:45",
  "days": 30,
  "items": [
   {
@@ -41,10 +41,10 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1785219795.029609",
-   "status": "wait",
-   "handler": null,
+   "rc": 2,
+   "lr": "1785220395.131739",
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785219789856639"
   },
   {
@@ -60,10 +60,13 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1785219632.977699",
-   "status": "confirm",
+   "replies": [
+    "https://asp.upsolution.co.kr/BasicSetting/index/100006#2\n메뉴 관리 > 메뉴판 관리",
+    "오늘의 음료 sold out 되어잇음"
+   ],
+   "rc": 3,
+   "lr": "1785220565.684789",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785219626712639"
   },
