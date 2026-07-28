@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 137,
- "updatedAt": "2026-07-28 13:45",
+ "version": 138,
+ "updatedAt": "2026-07-28 14:00",
  "days": 30,
  "items": [
   {
@@ -23,10 +23,10 @@ window.MENU_REQUESTS = {
    "replies": [
     "메뉴사진입니다!"
    ],
-   "rc": 2,
-   "lr": "1785213848.950919",
-   "status": "wait",
-   "handler": null,
+   "rc": 3,
+   "lr": "1785214223.428859",
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785213812401259"
   },
   {
@@ -68,9 +68,9 @@ window.MENU_REQUESTS = {
    "replies": [
     "메뉴 수정부탁드립니다!\n• 버섯갈비전골 60,000원(대), 35,000원(중)"
    ],
-   "rc": 3,
-   "lr": "1785213891.843679",
-   "status": "confirm",
+   "rc": 4,
+   "lr": "1785214704.893299",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785212260557039"
   },
