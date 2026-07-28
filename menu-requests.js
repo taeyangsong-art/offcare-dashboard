@@ -3,10 +3,52 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 135,
- "updatedAt": "2026-07-28 13:15",
+ "version": 136,
+ "updatedAt": "2026-07-28 13:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1785212790.887709",
+   "date": "2026-07-28",
+   "time": "13:26",
+   "store": "러프로스터스",
+   "biz": "6201155265",
+   "phone": "",
+   "pos": "",
+   "content": "메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785212795.350729",
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785212790887709"
+  },
+  {
+   "ts": "1785212260.557039",
+   "date": "2026-07-28",
+   "time": "13:17",
+   "store": "초우정",
+   "biz": "5652000091",
+   "phone": "01022277022",
+   "pos": "토스포스",
+   "content": "토스포스 메뉴수정",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "메뉴 수정부탁드립니다!\n• 버섯갈비전골 60,000원(대), 35,000원(중)"
+   ],
+   "rc": 2,
+   "lr": "1785212345.282619",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785212260557039"
+  },
   {
    "ts": "1785210953.429509",
    "date": "2026-07-28",
