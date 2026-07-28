@@ -3,10 +3,35 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 131,
- "updatedAt": "2026-07-28 12:15",
+ "version": 132,
+ "updatedAt": "2026-07-28 12:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1785208884.876419",
+   "date": "2026-07-28",
+   "time": "12:21",
+   "store": "주식회사 에이티식스컴퍼니",
+   "biz": "5328701749",
+   "phone": "01051527478",
+   "pos": "",
+   "content": "메뉴 등록 부탁드립니다",
+   "special": "",
+   "drive": [],
+   "files": 1,
+   "att": [
+    {
+     "name": "f_36587ced4ce1.xlsx.exs",
+     "path": "menu-files/1785208884_876419-0.exs"
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785208889.583829",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785208884876419"
+  },
   {
    "ts": "1785208313.805559",
    "date": "2026-07-28",
@@ -20,9 +45,11 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1785208318.814649",
+   "replies": [
+    "안녕하세요, 바쁘시겠지만 해당 대표님 온도감이 많이 높으셔서 빠른 등록 가능할까요ㅜㅜ"
+   ],
+   "rc": 2,
+   "lr": "1785209340.647109",
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785208313805559"
