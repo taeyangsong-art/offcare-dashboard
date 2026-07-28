@@ -2094,7 +2094,7 @@ const RARITY_KO = {common:'일반', rare:'레어', epic:'에픽', legendary:'전
 const RARITY_ORDER = {common:0, rare:1, epic:2, legendary:3, mythic:4, unique:5};   // 등급 정렬 순서
 // 👑 타이틀 보유 효과(perk) — 착용과 무관하게 '보유한 모든 타이틀'이 합산 적용(ownedTitlePerk).
 // 등급별 배분: 일반 아이템+0.05%/기타 0.2% · 레어 0.1%/0.3% · 에픽 0.15%/0.5% · 전설 0.2%/0.6% · 신화 0.25%/0.8% · 유일 0.4%/1.5%
-// 전 타이틀 보유 시 합계 = 아이템 +4.05% (상한 5%) · 꽝감소+코인유지 +14.9% (상한 20%). 타이틀당 단일 효과는 3% 미만.
+// 전 타이틀 보유 시 합계 = 아이템 +3.87% (상한 5%) · 꽝감소+코인유지 +12.4% (상한 20%). 타이틀당 단일 효과는 3% 미만.
 // 예외: [고래]는 확률형 특수 효과(dbl) — 코인 유지 당첨 시 10% 확률로 코인 2배 (상한 30%).
 //       [천사]는 확률형 특수 효과(save) — 꽝 당첨 시 30% 확률로 코인 유지로 구제 (상한 50%).
 const GAME_ITEMS = {
@@ -2109,7 +2109,7 @@ const GAME_ITEMS = {
     {id:'t_layoff',name:'권고사직',price:1,rarity:'common',ach:'layoff',desc:'잠시 면담 좀 할까요? 커피는 제가 살게요',perk:{item:0.0005,keep:0.002},grad:'linear-gradient(90deg,#7a0f2e,#c02f5e,#7a0f2e)'},
     {id:'t_fast',name:'재빠른',price:1,rarity:'rare',ach:'fast',desc:'소방차보다 빨리 도착한다는 소문이 있다',perk:{item:0.001,miss:0.003}},
     {id:'t_thunder',name:'⚡',price:1,rarity:'mythic',ach:'thunder',autoGrant:true,desc:'번쩍! 하늘도 인정한 스피드',perk:{item:0.0025,miss:0.008},grad:'linear-gradient(90deg,#ffe14d,#ff9f0a,#ffd60a)'},
-    {id:'t_beta',name:'베타테스터',price:1,rarity:'legendary',ach:'beta',autoGrant:true,onlyFor:['배선유','김동욱'],desc:'대시보드 베타테스터의 노고를 기념하기 위한 타이틀',perk:{item:0.002,miss:0.01},grad:'linear-gradient(90deg,#00c7be,#5e5ce6,#e0218a)'},
+    {id:'t_beta',name:'베타테스터',price:1,rarity:'legendary',ach:'beta',autoGrant:true,onlyFor:['배선유','김동욱'],desc:'대시보드 베타테스터의 노고를 기념하기 위한 타이틀',perk:{item:0.0002,miss:0.001},grad:'linear-gradient(90deg,#00c7be,#5e5ce6,#e0218a)'},
     {id:'t_workaholic',name:'워커홀릭',price:1,rarity:'legendary',ach:'workaholic',autoGrant:true,desc:'평일 90일 연속, 하루도 쉬지 않고 9시~18시 원격 이력을 남긴 진정한 일벌레',perk:{item:0.002,miss:0.025},grad:'linear-gradient(90deg,#ff9f0a,#ff375f,#bf5af2)'},
     {id:'t_first',name:'1st',price:1,rarity:'mythic',ach:'first',autoGrant:true,desc:'일찍 일어나는 새가...',perk:{item:0.0025,keep:0.008},grad:'linear-gradient(90deg,#ffd60a,#fffbe6,#ffd60a,#ff9f0a)'},
     {id:'t_bomb',name:'💣',price:1,rarity:'legendary',ach:'bomb',autoGrant:true,desc:'심지는 이미 타들어가고 있다. 터질 때까지, 던지고 또 던질 뿐',perk:{item:0.002,miss:0.006},grad:'linear-gradient(90deg,#1c1c1e,#ff453a,#ff9f0a,#1c1c1e)'},
