@@ -362,6 +362,8 @@
   .shop-item.locked .si-disp{filter:grayscale(.5) opacity(.85)}
   .si-req{font-size:10.5px; font-weight:700; border-radius:8px; padding:4px 7px; margin-bottom:8px; line-height:1.3}
   .si-req.locked{background:#f3e8ff; color:#7e22ce}
+  /* 히든(???) 타이틀: 조건 아래 줄에 달성 수치만 표시 */
+  .si-req-sub{margin-top:3px; padding-top:3px; border-top:1px dashed rgba(126,34,206,.35); font-size:10px; font-weight:800; letter-spacing:-.01em}
   .si-req.met{background:var(--success-bg,#dcfce7); color:var(--success-text,#166534)}
   .si-perk{font-size:10px; font-weight:700; color:#0f766e; background:#ccfbf1; border-radius:8px; padding:4px 7px; margin-bottom:8px; line-height:1.35}
   .it-tip-desc{font-size:11.5px; color:var(--ink-soft); font-style:italic; line-height:1.5; margin-top:5px; text-align:center; padding:0 4px}
@@ -1527,13 +1529,20 @@ const ACH_SHORT={hand:'하루 35건',phoenix:'12시간 이상 처리',master:'6�
 function achShort(k){ return ACH_SHORT[k]||''; }
 // 히든 조건 타이틀: 달성(ok) 또는 보유 전까지 조건·진행을 '???'로 감춤, 활성화되면 실제 조건 공개
 const HIDDEN_ACH = ['fool','layoff','fast','thunder','first','bomb'];
+// 히든 타이틀 진행도 마스킹: '2/5건' → '요건 5건 중 2건 달성' (무엇을 세는지는 숨기고 수치만 공개)
+function maskProg(prog){
+  const m=String(prog||'').match(/^\s*([\d,]+)\s*\/\s*([\d,]+)\s*(\D*)$/);
+  if(!m) return '';
+  const unit=(m[3]||'').trim();
+  return `요건 ${m[2]}${unit} 중 ${m[1]}${unit} 달성`;
+}
 function achDisplay(emp, it, owned){
   const a = emp ? achStatus(emp, it) : null;
   const hidden = HIDDEN_ACH.includes(it.ach);
   const revealed = !hidden || owned || (a && a.ok);
   const cond = a ? a.label : achShort(it.ach);
   const prog = (a && a.prog && a.prog!=='미달' && a.prog!=='-') ? a.prog : '';
-  return { cond: revealed ? cond : '???', prog: revealed ? prog : '', ok: !!(a && a.ok), revealed };
+  return { cond: revealed ? cond : '???', prog: revealed ? prog : maskProg(prog), ok: !!(a && a.ok), revealed };
 }
 // 낚시 전용 아이템이 어느 낚시터에서 나오는지 힌트 (지정 드롭 + 등급별)
 function fishSpotHint(it){
@@ -2622,7 +2631,11 @@ function shopCard(cat,it,emp){
     : it.e!==undefined ? (it.e||'✕')
     : (cat==='nametag' ? `<span style="${nametagStyle({nametag:it.id})}">가나</span>`
     : `<span class="tr-${r}" style="${titleStyleOf(it)}">[${escapeHtml(it.name)}]</span>`);
-  const reqBadge = it.ach ? (function(){ const d=achDisplay(emp,it,owned); return `<div class="si-req ${owned||d.ok?'met':'locked'}">🎯 ${escapeHtml(d.cond)}${owned?' ✓':(d.prog?` <b>${escapeHtml(d.prog)}</b>`:'')}</div>`; })()
+  // 히든(???) 타이틀은 조건은 감추고, 아래 줄에 달성 수치만 공개
+  const reqBadge = it.ach ? (function(){ const d=achDisplay(emp,it,owned);
+      const sub = (!d.revealed && d.prog) ? `<div class="si-req-sub">📊 ${escapeHtml(d.prog)}</div>` : '';
+      const inline = (d.revealed && !owned && d.prog) ? ` <b>${escapeHtml(d.prog)}</b>` : '';
+      return `<div class="si-req ${owned||d.ok?'met':'locked'}">🎯 ${escapeHtml(d.cond)}${owned?' ✓':inline}${sub}</div>`; })()
     : (fishLocked ? `<div class="si-req locked">🎣 낚시터에서 획득가능</div>` : '');
   // 타이틀 보유 효과는 카드에 항상 띄우면 목록이 난잡해짐 → 카드를 클릭(또는 마우스오버)했을 때 툴팁에서만 표시
   const perkBadge = (it.perk && cat!=='title') ? `<div class="si-perk">🐾 ${escapeHtml(perkDesc(it.perk))}</div>`
