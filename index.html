@@ -2608,7 +2608,7 @@ async function setupPinFlow(emp){
 async function resetPinFlow(emp){ alert('🔑 PIN을 잊으셨나요?\n관리자에게 "PIN 초기화"를 요청하세요.'); return false; }
 // 관리자: 특정 직원 PIN 초기화 (관리자 키 필요)
 async function adminResetPin(){
-  const key=prompt('🔧 관리자 키를 입력하세요'); if(!key) return;
+  const key=(prompt('🔧 관리자 키를 입력하세요')||'').trim(); if(!key) return;   // 붙여넣기 시 앞뒤 공백·줄바꿈이 섞여 'bad_key'가 뜨던 문제 방지
   const emp=prompt('초기화할 직원 이름을 정확히 입력하세요 (예: 송태양)'); if(!emp) return;
   const r=await authGet({action:'clearPin', emp:emp.trim(), key});
   if(r&&r.ok){ delete GAMEAUTH[emp.trim()]; save(LS_GAMEAUTH,GAMEAUTH); alert(`✅ ${emp} 님 PIN이 초기화됐어요.\n그 직원이 다음에 코인 쓸 때 새로 설정하면 됩니다.`); }
