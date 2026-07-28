@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 145,
- "updatedAt": "2026-07-28 16:00",
+ "version": 146,
+ "updatedAt": "2026-07-28 16:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1785222164.987869",
+   "date": "2026-07-28",
+   "time": "16:02",
+   "store": "THENCE",
+   "biz": "5888800207",
+   "phone": "01086626926",
+   "pos": "토스포스",
+   "content": "안녕하세요, 현재 토스포스에 등록되어 있는 메뉴를 엑셀파일로 받을 수 있을까요? 현재 메뉴 엑셀파일에서 수정 후 메뉴등록 요청하신다 하셨습니다. 대표님께서 포스에서 직접 엑셀받기가 가능하면 제가 안내드리도록 하겠습니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "이메일: <mailto:master@thence.co.kr|master@thence.co.kr>",
+    "님 감사합니다! 대표님께서 다른 사업장도 동일하게 엑셀 파일 받기 원하시는데 새로 업로드할까요 아님 여기에 남겨드리면 될까요?"
+   ],
+   "rc": 5,
+   "lr": "1785222632.632869",
+   "status": "done",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785222164987869"
+  },
   {
    "ts": "1785219894.246719",
    "date": "2026-07-28",
@@ -21,9 +44,9 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1785219932.744929",
-   "status": "confirm",
+   "rc": 3,
+   "lr": "1785222163.810409",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785219894246719"
   },
@@ -2408,13 +2431,7 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 1,
-   "att": [
-    {
-     "name": "image.png",
-     "path": "menu-files/1784617367_166589-0.png",
-     "ocr": "중화호반닭갈비막국수신내점\n매장정보 EAE Eu\n출력물 설정 ~ 상품키 설정 a\n영수증\n계와서 © 포스벌로화면에 보이는 줄수가 다를 4 012. SAE 동일하게 반영돼요. 자티 x\nFER 식사 사리 주류 MEA MEE 카테고리 순서편집\n배달 주문서 —\nFe sun RN ERIE sim) 얼콘막국수 막국수 물만두 볶음밤\n상품키\n~ 5000 3 0 900 50 00\nwie aE 주먹밥 공기밤 미나리닭갈비"
-    }
-   ],
+   "att": [],
    "replies": [
     "막국수와 얼큰막국수를 물/비빔 나누는 요청입니다"
    ],
@@ -10414,28 +10431,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782691233887919"
-  },
-  {
-   "ts": "1782630260.707759",
-   "date": "2026-06-28",
-   "time": "16:04",
-   "store": "퍼리엔",
-   "biz": "1764201290",
-   "phone": "01055297446\n-",
-   "pos": "기타",
-   "content": "사이드메뉴 에 리얼 파인애플주스 바로 뒤에 리얼 망고주스 7000원 추가",
-   "special": "빠를수록 좋아요",
-   "drive": [
-    "https://drive.google.com/open?id=11W58ZBlo5V0S0FQUygtiOcbkJCNEOXKy"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782691536.169409",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782630260707759"
   }
  ]
 };
