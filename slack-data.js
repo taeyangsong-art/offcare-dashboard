@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1817,
+  "version": 1818,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -65397,15 +65397,95 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-28": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "송태양": 1,
+          "김동욱": 1,
+          "심성현": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:08",
+          "store": "된장예술과 술",
+          "biz": "2364300377",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "2층 포스기 찍으면 아래층 포스기에 안찍히고 주방 주문서 출력이 안되어 확인 요청 드립니다.",
+          "hw": "",
+          "urgent": true,
+          "intake": "offline",
+          "note": "재온보딩 완료입니다"
+        },
+        {
+          "time": "09:07",
+          "store": "찰스네 커피하우스(찰스네 COFFEE HOUSE)",
+          "biz": "3312600393",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "포프캣 / 오케이포스기에 토스포스 설치 후 이용중,",
+          "hw": "",
+          "intake": "offline",
+          "note": "토스POS가 켜져있으나 보이질않음. art+shift+space bar로 위치이동"
+        },
+        {
+          "time": "09:04",
+          "store": "웅칼 성수점",
+          "biz": "2758103008",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "태블릿 비밀번호 걸려있음 / 카운터 프린터기 속도가 너무 느려서 속도 조절 원격 요청 하셨습니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "PIN 번호 분실 확인 후 다시 연락 예정 / / 출력 속도 정상 이미지 때문에 1초 정도 지연 발생 안내 완료"
+        }
+      ],
       "intake": {
-        "online": 0,
-        "offline": 0,
+        "online": 1,
+        "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:00"
+      "updatedAt": "09:15",
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 1,
+          "low": 0
+        },
+        "nps": {
+          "count": 1,
+          "low": 0
+        },
+        "high": {
+          "install": 0,
+          "nps": 0
+        },
+        "npsDist": {
+          "6": 1
+        },
+        "installDist": {
+          "3": 1
+        },
+        "byIndustry": {
+          "카페": 1
+        },
+        "byTenure": {
+          "구매설치": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "KOCES": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {},
+        "alerts": [],
+        "praises": []
+      }
     }
   },
   "resp": {
@@ -65424,7 +65504,11 @@ window.SLACK_DATA = {
       },
       "1785170700.498449": {
         "post": "1785170700.498449",
-        "lastSeen": 1785196835.358
+        "lastSeen": 1785197721.566
+      },
+      "1785197706.048469": {
+        "post": "1785197706.048469",
+        "lastSeen": 1785197721.566
       }
     },
     "days": {
