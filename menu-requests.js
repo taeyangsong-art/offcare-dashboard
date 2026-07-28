@@ -3,10 +3,32 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 150,
- "updatedAt": "2026-07-28 17:30",
+ "version": 151,
+ "updatedAt": "2026-07-28 17:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1785227808.476239",
+   "date": "2026-07-28",
+   "time": "17:36",
+   "store": "마담하오 (Madam Hao)",
+   "biz": "4258704297",
+   "phone": "010-4192-2793",
+   "pos": "",
+   "content": "배민원 연동하였는데 쿠팡이츠랑 동일하게 매뉴등록 부탁드립니다!",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "최근에 쿠팡이츠 등록하셨다고 파일은 따로 주시지 않으셨는데 받아올까요..!!"
+   ],
+   "rc": 3,
+   "lr": "1785228049.513769",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785227808476239"
+  },
   {
    "ts": "1785226397.724099",
    "date": "2026-07-28",
