@@ -3,10 +3,52 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 138,
- "updatedAt": "2026-07-28 14:00",
+ "version": 139,
+ "updatedAt": "2026-07-28 14:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1785215953.396469",
+   "date": "2026-07-28",
+   "time": "14:19",
+   "store": "장수원",
+   "biz": "2170685889",
+   "phone": "01062087628",
+   "pos": "",
+   "content": "메뉴 수정 부탁드립니다!",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "• 소고기 \n 생갈비 29,000원, 소왕갈비 26,000원, 안창살 17,000원, 갈비살 17,000원_포장가격도 동일하게 변경\n• 식사\n갈비탕 13,000원_포장가격도 동일하게 변경"
+   ],
+   "rc": 2,
+   "lr": "1785216017.432229",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785215953396469"
+  },
+  {
+   "ts": "1785215790.133799",
+   "date": "2026-07-28",
+   "time": "14:16",
+   "store": "밤부길",
+   "biz": "1111635469",
+   "phone": "",
+   "pos": "토스포스",
+   "content": "토스포스 / 메뉴 추가 요청드립니다!",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 3,
+   "lr": "1785216489.268669",
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785215790133799"
+  },
   {
    "ts": "1785213812.401259",
    "date": "2026-07-28",
