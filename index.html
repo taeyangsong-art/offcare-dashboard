@@ -2725,8 +2725,8 @@ const FISH = {
     loot:[ {w:670,t:'none'}, {w:300,t:'coin',min:10,max:10}, {w:27,t:'item',rar:['legendary'],fish:true}, {w:3,t:'item',rar:['mythic'],fish:true}, {w:0.0001,t:'item',id:'ft_captain'} ]},
 };
 let fishBusy=false;
-// 낚시 대기(쿨다운): 캐스팅 후 초급 3분 / 중급 10분 / 고급 30분 지나야 결과 확인. 브라우저에 저장.
-const FISH_WAIT = {low:0, mid:0, high:60*1000};
+// 낚시 대기(쿨다운): 캐스팅 후 이 시간이 지나야 결과 확인. 초급·중급 즉시 / 고급 30초. 서버(FISHWAIT)에 저장.
+const FISH_WAIT = {low:0, mid:0, high:30*1000};
 function fishWaitLabel(spot){ const ms=FISH_WAIT[spot]||0; if(ms<=0) return '즉시'; const s=Math.round(ms/1000); return s<60?s+'초':Math.round(s/60)+'분'; }
 const LS_FISHWAIT = "opcare_fishwait_v1";
 let FISHWAIT = load(LS_FISHWAIT, {});   // { "emp|spot": castAtMs }
