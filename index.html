@@ -2442,9 +2442,16 @@ function itemTipHTML(cat,id){ const it=itemById(cat,id); if(!it) return ''; cons
     <div class="it-tip-foot">${it.ach?(owned?'✓ 보유중':(gameMe&&achStatus(gameMe,it).ok?'🎁 지금 무료 획득 가능!':'🎯 달성 시 무료 획득')):(it.price===0?'기본 제공':(owned?'✓ 보유중':(it.fishOnly?'낚시로만 획득':((gameMe&&hasFreeShop(gameMe))?'🆓 무료 (곽호영 능력)':'🪙 '+it.price+' 코인'))))}</div>
   </div>`;
 }
-function showItemTip(e,cat,id){ let t=document.getElementById('itemTip'); if(!t){ t=document.createElement('div'); t.id='itemTip'; t.className='item-tip'; document.body.appendChild(t); } const html=itemTipHTML(cat,id); if(!html){ hideItemTip(); return; } t.innerHTML=html; t.style.display='block'; moveItemTip(e); }
-function moveItemTip(e){ const t=document.getElementById('itemTip'); if(!t||t.style.display!=='block') return; const pad=16, w=t.offsetWidth, h=t.offsetHeight; let x=e.clientX+pad, y=e.clientY+pad; if(x+w>window.innerWidth-8) x=e.clientX-w-pad; if(y+h>window.innerHeight-8) y=e.clientY-h-pad; if(x<8)x=8; if(y<8)y=8; t.style.left=x+'px'; t.style.top=y+'px'; }
-function hideItemTip(){ const t=document.getElementById('itemTip'); if(t) t.style.display='none'; }
+// 아이템 상세(능력·설명) 툴팁 — 마우스 오버로 표시, 클릭하면 고정(모바일·터치 대응). 고정 중에는 다른 아이템 호버로 바뀌지 않음.
+let tipPinned=null;
+function showItemTip(e,cat,id){ if(tipPinned && tipPinned!==cat+':'+id) return; let t=document.getElementById('itemTip'); if(!t){ t=document.createElement('div'); t.id='itemTip'; t.className='item-tip'; document.body.appendChild(t); } const html=itemTipHTML(cat,id); if(!html){ hideItemTip(true); return; } t.innerHTML=html; t.style.display='block'; moveItemTip(e); }
+// 카드 클릭 → 툴팁 고정/해제 (같은 카드 다시 클릭하면 닫힘)
+function pinItemTip(e,cat,id){ e.stopPropagation(); const k=cat+':'+id; if(tipPinned===k){ closeItemTip(); return; } tipPinned=null; showItemTip(e,cat,id); tipPinned=k; }
+function closeItemTip(){ tipPinned=null; hideItemTip(true); }
+window.addEventListener('click',()=>{ if(tipPinned) closeItemTip(); });
+function moveItemTip(e){ if(tipPinned) return;   // 고정된 툴팁은 마우스를 따라다니지 않음
+  const t=document.getElementById('itemTip'); if(!t||t.style.display!=='block') return; const pad=16, w=t.offsetWidth, h=t.offsetHeight; let x=e.clientX+pad, y=e.clientY+pad; if(x+w>window.innerWidth-8) x=e.clientX-w-pad; if(y+h>window.innerHeight-8) y=e.clientY-h-pad; if(x<8)x=8; if(y<8)y=8; t.style.left=x+'px'; t.style.top=y+'px'; }
+function hideItemTip(force){ if(tipPinned&&!force) return; const t=document.getElementById('itemTip'); if(t) t.style.display='none'; }
 // 랭킹 등 이름 표시(타이틀+얼굴+네임택 색)
 function rankNameHTML(emp, noFace){ const eq=(GAME[emp]||{}).equipped||{}; const f=noFace?'':partE('face',eq.face), t=itemById('title',eq.title); return `${t?`<div class="r-title tr-${t.rarity}" style="${titleStyleOf(t)}">[${escapeHtml(t.name)}]</div>`:''}<div class="r-nm">${f?`<span class="r-face">${f}</span>`:''}<span style="${nametagStyle(eq)}">${escapeHtml(emp)}</span></div>`; }
 // 랭킹·MVP용 미니 전신 아바타(캐릭터+꾸미기 전부) — 122x150 원본을 w px로 축소. 게임 미참여 직원도 기본 캐릭터 렌더.
@@ -2598,16 +2605,17 @@ function shopCard(cat,it,emp){
     : `<span class="tr-${r}" style="${titleStyleOf(it)}">[${escapeHtml(it.name)}]</span>`);
   const reqBadge = it.ach ? (function(){ const d=achDisplay(emp,it,owned); return `<div class="si-req ${owned||d.ok?'met':'locked'}">🎯 ${escapeHtml(d.cond)}${owned?' ✓':(d.prog?` <b>${escapeHtml(d.prog)}</b>`:'')}</div>`; })()
     : (fishLocked ? `<div class="si-req locked">🎣 낚시터에서 획득가능</div>` : '');
-  const perkBadge = it.perk ? `<div class="si-perk">${cat==='title'?'👑 보유 효과':'🐾'} ${escapeHtml(perkDesc(it.perk))}</div>`
+  // 타이틀 보유 효과는 카드에 항상 띄우면 목록이 난잡해짐 → 카드를 클릭(또는 마우스오버)했을 때 툴팁에서만 표시
+  const perkBadge = (it.perk && cat!=='title') ? `<div class="si-perk">🐾 ${escapeHtml(perkDesc(it.perk))}</div>`
     : it.freeShop ? `<div class="si-perk">👑 착용 시 모든 상점 아이템 무료</div>` : '';
   const freeNow = !owned && !a && !fishLocked && it.price>0 && hasFreeShop(emp);
   const btnLabel = eq?'✓ 착용중':owned?'착용하기':fishLocked?'🎣 낚시터에서':locked?'🔒 조건 미달':a?'🎁 무료 획득':(it.price===0?'착용':(freeNow?'🆓 무료':'🪙 '+it.price));
-  return `<div class="shop-item ${eq?'equipped':''} ${locked?'locked':''}" style="--rar:${RARITY[r]}" onmouseenter="previewEq('${cat}','${it.id}');showItemTip(event,'${cat}','${it.id}')" onmousemove="moveItemTip(event)" onmouseleave="clearPreview();hideItemTip()">
+  return `<div class="shop-item ${eq?'equipped':''} ${locked?'locked':''}" style="--rar:${RARITY[r]}" onclick="pinItemTip(event,'${cat}','${it.id}')" onmouseenter="previewEq('${cat}','${it.id}');showItemTip(event,'${cat}','${it.id}')" onmousemove="moveItemTip(event)" onmouseleave="clearPreview();hideItemTip()">
     <div class="si-rar">${RARITY_KO[r]}</div>
     <div class="si-disp">${disp}</div>
     <div class="si-name">${escapeHtml(it.name)}</div>
     ${reqBadge}${perkBadge}
-    <button class="si-buy ${eq?'on':owned?'own':''} ${locked?'locked':''}" onclick="buyOrEquip('${cat}','${it.id}')">${btnLabel}</button>
+    <button class="si-buy ${eq?'on':owned?'own':''} ${locked?'locked':''}" onclick="event.stopPropagation();closeItemTip();buyOrEquip('${cat}','${it.id}')">${btnLabel}</button>
   </div>`;
 }
 // 성별 전용 아이템(gender:'m'/'f')은 해당 성별로 설정했을 때만 노출. 미설정 시 기본 남자('m').
@@ -2624,7 +2632,7 @@ function renderGame(){
     <div class="card game-me" id="gmBox">${gameMeInner(emp, eq)}</div>
     <div class="preview-hint">💡 아이템에 마우스를 올리면 위 캐릭터에 <b>미리 입어보기</b> 돼요 · 코인은 왼쪽 <b>🎣 낚시터</b>에서도 획득!</div>
     ${shopSection('title','👑 타이틀',emp)}
-    <div class="ach-reset-note">👑 타이틀은 <b>보유만 해도</b> 낚시 능력치가 붙어요 (등급↑일수록 강력 · 중복 합산) · 현재 합계 ${escapeHtml(perkDesc(ownedTitlePerk(emp))||'없음')}</div>
+    <div class="ach-reset-note">👑 타이틀은 <b>보유만 해도</b> 낚시 능력치가 붙어요 (등급↑일수록 강력 · 중복 합산) · <b>카드를 클릭</b>하면 효과가 보여요 · 내 합계는 🎣 낚시터에서 확인</div>
     <div class="ach-reset-note">🔄 모든 타이틀 획득 조건 진행도는 <b>매월 1일 초기화</b>됩니다 · 이미 획득한 타이틀은 계속 보유돼요</div>
     ${shopSection('nametag','🏷️ 네임택',emp)}
     <div class="avatar-secthead"><span>🧙 아바타 꾸미기</span><button class="btn" onclick="showGenderModal()">${(g.gender==='f'?'👧 여자':'👦 남자')} · 성별 바꾸기</button></div>
@@ -2811,7 +2819,7 @@ function fishItemPreview(spot){ const seen={}, items=[]; FISH[spot].loot.filter(
   }); const ord={mythic:0,legendary:1,epic:2,rare:3,common:4}; return items.sort((a,b)=>(ord[a.rarity]-ord[b.rarity])); }
 function fishPreviewCard(it,emp){ const owned=owns(emp,it.cat,it.id), r=it.rarity;
   const disp = it.e!==undefined ? (it.e||'✕') : (it.cat==='nametag'?`<span style="${nametagStyle({nametag:it.id})}">가나</span>`:`<span class="tr-${r}" style="${titleStyleOf(it)}">[${escapeHtml(it.name)}]</span>`);
-  return `<div class="shop-item" style="--rar:${RARITY[r]}" onmouseenter="showItemTip(event,'${it.cat}','${it.id}')" onmousemove="moveItemTip(event)" onmouseleave="hideItemTip()"><div class="si-rar">${RARITY_KO[r]}</div><div class="si-disp">${disp}</div><div class="si-name">${escapeHtml(it.name)}</div><div class="fp-own ${owned?'yes':''}">${owned?'✓ 보유':'미보유'}</div></div>`;
+  return `<div class="shop-item" style="--rar:${RARITY[r]}" onclick="pinItemTip(event,'${it.cat}','${it.id}')" onmouseenter="showItemTip(event,'${it.cat}','${it.id}')" onmousemove="moveItemTip(event)" onmouseleave="hideItemTip()"><div class="si-rar">${RARITY_KO[r]}</div><div class="si-disp">${disp}</div><div class="si-name">${escapeHtml(it.name)}</div><div class="fp-own ${owned?'yes':''}">${owned?'✓ 보유':'미보유'}</div></div>`;
 }
 function renderGameFish(){
   const emp=gameMe;
