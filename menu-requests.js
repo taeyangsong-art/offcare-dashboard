@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 149,
- "updatedAt": "2026-07-28 17:15",
+ "version": 150,
+ "updatedAt": "2026-07-28 17:30",
  "days": 30,
  "items": [
   {
@@ -20,10 +20,12 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1785226402.530849",
-   "status": "confirm",
+   "replies": [
+    "완료"
+   ],
+   "rc": 2,
+   "lr": "1785226675.863069",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785226397724099"
   },
@@ -43,8 +45,8 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1785225859.584619",
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785225848944519"
   },
   {
@@ -83,8 +85,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "퇴근하고.."
    ],
-   "rc": 3,
-   "lr": "1785226032.746039",
+   "rc": 4,
+   "lr": "1785226806.780079",
    "status": "confirm",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785224262125679"
