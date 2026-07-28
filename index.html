@@ -2273,21 +2273,23 @@ const GAME_ITEMS = {
   ],
   // 🐾 펫 능력(perk)은 '착용 중인 1마리'만 적용. 아이템 확률은 등급별로 일반 0.15% ~ 신화 0.6%,
   //    펫 전체(10마리) 합계도 +4.2%로 5% 미만 — 타이틀 보유 합계(최대 5%)와 겹쳐도 과하지 않게.
+  //    ⚠️ 코인 추가 지급(coin) 퍽은 폐지 — 지급 상한(=캐스트 비용) 때문에 무의미해져서 '코인 유지 확률(keep)'로 전환.
+  //       등급별 전환값: +1코인→+4% · +2→+6% · +3→+8% · +4→+10% · +5→+12%
   pet: [
     {id:'p_none',name:'없음',price:0,e:'',rarity:'common'},
-    {id:'p_cat',name:'고양이',price:60,e:'🐱',rarity:'common',perk:{coin:1}},
+    {id:'p_cat',name:'고양이',price:60,e:'🐱',rarity:'common',perk:{keep:0.04}},
     {id:'p_dog',name:'강아지',price:60,e:'🐶',rarity:'common',perk:{item:0.0015}},
-    {id:'fp_fish',name:'물고기',price:60,e:'🐟',rarity:'common',fishOnly:true,perk:{coin:1}},
+    {id:'fp_fish',name:'물고기',price:60,e:'🐟',rarity:'common',fishOnly:true,perk:{keep:0.04}},
     {id:'fp_octopus',name:'문어',price:150,e:'🐙',rarity:'rare',fishOnly:true,perk:{item:0.002,miss:0.02}},
-    {id:'p_unicorn',name:'유니콘',price:300,e:'🦄',rarity:'epic',fishOnly:true,dropWeight:0.45,perk:{item:0.0035,coin:2}},
-    {id:'fp_shark',name:'상어',price:350,e:'🦈',rarity:'epic',fishOnly:true,dropWeight:0.45,perk:{item:0.0035,coin:2,miss:0.02}},
-    {id:'fp_turtle',name:'거북이',price:700,e:'🐢',rarity:'legendary',fishOnly:true,perk:{coin:3,miss:0.04,keep:0.07}},
-    {id:'p_dragon',name:'드래곤',price:450,e:'🐉',rarity:'legendary',fishOnly:true,perk:{coin:3,keep:0.10,miss:0.05,item:0.005}},
-    {id:'p_kraken',name:'크라켄',price:800,e:'🦑',rarity:'mythic',fishOnly:true,perk:{item:0.006,coin:4,miss:0.05,keep:0.08}},
-    {id:'p_whale',name:'고래',price:800,e:'🐋',rarity:'mythic',fishOnly:true,perk:{coin:5,item:0.006,keep:0.10}},
-    {id:'fp_otter',name:'수달',price:300,e:'🦦',rarity:'epic',fishOnly:true,dropWeight:0.45,perk:{coin:2,item:0.0035}},
-    {id:'fp_dolphin',name:'돌고래',price:600,e:'🐬',rarity:'legendary',fishOnly:true,perk:{coin:3,miss:0.05,item:0.005}},
-    {id:'fp_mermaid',name:'인어',price:850,e:'🧜‍♀️',rarity:'mythic',fishOnly:true,perk:{coin:4,item:0.006,miss:0.06}},
+    {id:'p_unicorn',name:'유니콘',price:300,e:'🦄',rarity:'epic',fishOnly:true,dropWeight:0.45,perk:{item:0.0035,keep:0.06}},
+    {id:'fp_shark',name:'상어',price:350,e:'🦈',rarity:'epic',fishOnly:true,dropWeight:0.45,perk:{item:0.0035,keep:0.06,miss:0.02}},
+    {id:'fp_turtle',name:'거북이',price:700,e:'🐢',rarity:'legendary',fishOnly:true,perk:{keep:0.15,miss:0.04}},
+    {id:'p_dragon',name:'드래곤',price:450,e:'🐉',rarity:'legendary',fishOnly:true,perk:{keep:0.18,miss:0.05,item:0.005}},
+    {id:'p_kraken',name:'크라켄',price:800,e:'🦑',rarity:'mythic',fishOnly:true,perk:{item:0.006,keep:0.18,miss:0.05}},
+    {id:'p_whale',name:'고래',price:800,e:'🐋',rarity:'mythic',fishOnly:true,perk:{item:0.006,keep:0.22}},
+    {id:'fp_otter',name:'수달',price:300,e:'🦦',rarity:'epic',fishOnly:true,dropWeight:0.45,perk:{keep:0.06,item:0.0035}},
+    {id:'fp_dolphin',name:'돌고래',price:600,e:'🐬',rarity:'legendary',fishOnly:true,perk:{keep:0.08,miss:0.05,item:0.005}},
+    {id:'fp_mermaid',name:'인어',price:850,e:'🧜‍♀️',rarity:'mythic',fishOnly:true,perk:{keep:0.10,item:0.006,miss:0.06}},
   ],
 };
 const LS_GAME = "opcare_game_v1";
@@ -2804,7 +2806,7 @@ function rollLootPerk(loot, perk){
   acc+=pCoin; if(r<acc && coins.length) return pick(coins);
   return nones.length?nonePick():(coins.length?pick(coins):loot[0]);
 }
-function perkDesc(perk){ if(!perk) return ''; const p=[]; const pct=x=>fmtPct(x); if(perk.item)p.push(`아이템 확률 +${pct(perk.item)}`); if(perk.coin)p.push(`코인 유지 시 +${perk.coin}개 추가 지급 (지급 상한 = 캐스트 비용)`); if(perk.miss)p.push(`꽝 -${pct(perk.miss)}`); if(perk.keep)p.push(`코인 유지 확률 +${pct(perk.keep)}`); if(perk.dbl)p.push(`코인 유지 당첨 시 ${pct(perk.dbl)} 확률로 코인 2배 획득 (지급 상한 = 캐스트 비용)`); if(perk.save)p.push(`꽝 당첨 시 ${pct(perk.save)} 확률로 코인 유지`); if(perk.casts>1)p.push(`모든 낚시터에서 한 번에 ${perk.casts}번 캐스팅 (비용도 ${perk.casts}배)`); return p.join(' · '); }
+function perkDesc(perk){ if(!perk) return ''; const p=[]; const pct=x=>fmtPct(x); if(perk.item)p.push(`아이템 확률 +${pct(perk.item)}`); if(perk.coin)p.push(`코인 유지 시 +${perk.coin}개 추가 지급 (지급 상한 = 캐스트 비용)`); if(perk.miss)p.push(`꽝 -${pct(perk.miss)}`); if(perk.keep)p.push(`코인 유지 확률 +${pct(perk.keep)}`); if(perk.dbl)p.push(`코인 유지 당첨 시 ${pct(perk.dbl)} 확률로 코인 2배 획득`); if(perk.save)p.push(`꽝 당첨 시 ${pct(perk.save)} 확률로 코인 유지`); if(perk.casts>1)p.push(`모든 낚시터에서 한 번에 ${perk.casts}번 캐스팅 (비용도 ${perk.casts}배)`); return p.join(' · '); }
 // 한 번의 '낚싯대 던지기'로 진행되는 캐스팅 횟수 ([세월을 낚은] 타이틀 보유 시 2회)
 function castCount(emp){ return Math.max(1, ownedTitlePerk(emp).casts||1); }
 function pickItem(rars, fishOnly, emp){ const pool=[]; for(const cat in GAME_ITEMS){ for(const it of GAME_ITEMS[cat]){ if(it.price===0) continue; if(it.targetOnly) continue; if(it.ach || it.onlyFor) continue; if(it.gender && emp && !genderOK(emp,it)) continue; if(!rars.includes(it.rarity)) continue; if(fishOnly && !it.fishOnly) continue; if(!fishOnly && it.fishOnly) continue; if(emp && owns(emp,cat,it.id)) continue; pool.push(Object.assign({cat},it)); } } if(!pool.length) return null; const tot=pool.reduce((a,it)=>a+(it.dropWeight||1),0); let r=Math.random()*tot; for(const it of pool){ if((r-=(it.dropWeight||1))<0) return it; } return pool[pool.length-1]; }
@@ -2823,7 +2825,8 @@ function resolveLoot(emp,out,cost){ const g=gs(emp);
     // 🐋 [고래] 타이틀 보유 효과: 코인 유지 당첨 시 확률(perk.dbl)로 획득 코인 2배
     let whaled=false;
     if(!out.dbl && perk.dbl && Math.random()<perk.dbl){ n*=2; whaled=true; }
-    if(!out.dbl){ const capped=coinCap(n,cost); if(capped<n){ n=capped; whaled=false; } }   // 상한 적용(2배가 깎였으면 2배 연출도 해제)
+    // 상한: 기본은 캐스트 비용까지. 단 [고래] 2배가 터진 회차만 2배까지 허용(발동률 10%라 기대값은 여전히 마이너스)
+    if(!out.dbl) n=coinCap(n, cost*(whaled?2:1));
     addSpent(emp, -n);
     if(out.dbl) return {emoji:'💰',big:'+'+n+' 코인',sub:'🎣 대박! 코인 2배 획득!',cls:'coin',rarity:'epic'};
     if(out.saved) return {emoji:'🕊️',big:'+'+n+' 코인',sub:whaled?'[천사] 구원 + [고래] 2배! 꽝이 코인으로!':'[천사] 구원! 꽝이 코인 유지로 바뀌었어요',cls:'coin',rarity:'epic'};
