@@ -3,10 +3,39 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 129,
- "updatedAt": "2026-07-28 11:00",
+ "version": 130,
+ "updatedAt": "2026-07-28 11:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1785205209.095829",
+   "date": "2026-07-28",
+   "time": "11:20",
+   "store": "(주)이디피에스",
+   "biz": "3938600833",
+   "phone": "01062607429\n-",
+   "pos": "토스포스",
+   "content": "신규메뉴 등록 신청입니다",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/14wFUoepvBTFcp5iFbyLFVQqTJaO9EEGJ/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1fAxHL9snSWBSEvezmW-IrGPswQJbqrHM/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1BtmEynQYOCLGEpcqQPW_v_A3WLruy1u6/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1-owD6sKmgKlFHRvMm9yD4fzMc2ukEJGp/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1HTLiXf9NB8Zm-kSt3k-89Ge1w13uc2vc/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1s1YAI-OGMOvS-w1D0ZTo2Uew3NisxNaJ/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "영문명 :loading5:"
+   ],
+   "rc": 2,
+   "lr": "1785205652.494519",
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785205209095829"
+  },
   {
    "ts": "1785203333.643849",
    "date": "2026-07-28",
