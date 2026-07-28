@@ -1558,8 +1558,8 @@ function achStatus(emp, it){
   if(it.ach==='master'){ let ok=false; const W=['onboarding','as','transfer','menu','delivery','extern']; monthSlackDates().forEach(d=>{ const day=slackDay(d)||{}; const dn=(day.done||[]).filter(x=>x.emp===emp); const cs=new Set(dn.map(x=>x.cat)); const all6=W.every(c=>cs.has(c)); const voc=day.voc?[...(day.voc.alerts||[]),...(day.voc.praises||[])].some(x=>x.emp===emp&&x.doneDate===d):false; const anyPending=(day.pending||[]).some(p=>p.handler===emp); if(all6&&voc&&!anyPending) ok=true; }); return {ok, label:'하루에 온보딩·AS·명변·메뉴·배달·외주·VOC 각 1건 이상 + 부재·미처리 0건', prog:ok?'달성 ✓':'미달'}; }
   if(it.ach==='god'){ const best=Math.max(0,...Object.values(empWorkByDay(emp))); const mvp=mvpCountOf(emp); return {ok:best>=50&&mvp>=10, label:'하루 50건 이상 처리 + MVP 10회 이상 선정', prog:`하루최고 ${best}/50 · MVP ${mvp}/10`}; }
   if(it.ach==='night'){ const have=nightHandled(emp,'20:00'); return {ok:have>=300, label:'밤 20:00 이후 300건 처리', prog:`${have}/300건`}; }
-  if(it.ach==='fool'){ const miss=(monthlyMissByEmp().cnt[emp]||0); return {ok:miss>=5, label:'이번 달 누락 5건 이상', prog:`${miss}/5건`}; }   // 히든(달성 시 공개)
-  if(it.ach==='layoff'){ const miss=(monthlyMissByEmp().cnt[emp]||0); return {ok:miss>=30, label:'이번 달 누락 30건 이상', prog:`${miss}/30건`}; }   // 히든
+  if(it.ach==='fool'){ const miss=missCumCount(emp); return {ok:miss>=5, label:'이번 달 누락 이력 5건 이상 (해결해도 누적)', prog:`${miss}/5건`}; }   // 히든(달성 시 공개)
+  if(it.ach==='layoff'){ const miss=missCumCount(emp); return {ok:miss>=30, label:'이번 달 누락 이력 30건 이상 (해결해도 누적)', prog:`${miss}/30건`}; }   // 히든
   if(it.ach==='fast'){ let c=0; monthSlackDates().forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp===emp && x.urgent) c++; })); return {ok:c>=3, label:'이번 달 긴급/사이렌 처리 3건', prog:`${c}/3건`}; }   // 히든
   if(it.ach==='thunder'){ let c=0; allSlackDates().forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp===emp && x.urgent) c++; })); return {ok:c>=100, label:'긴급/사이렌 처리 100건(누적)', prog:`${c}/100건`}; }   // 히든
   if(it.ach==='beta'){ const ok=(it.onlyFor||[]).includes(emp); return {ok, label:'베타테스터 지정 인원 전용', prog:ok?'달성 ✓':'대상 아님'}; }   // 배선유·김동욱 전용
@@ -1594,9 +1594,31 @@ function achStatus(emp, it){
   }
   return null;
 }
+// ── 누락 이력 '누적' 집계 (바보·권고사직 타이틀용) ──
+// 슬랙 원본은 최근 3일을 다시 훑기 때문에, 누락을 확인·처리하면 그 건이 pending에서 사라짐.
+// → 한 번 뜬 누락 건은 키(날짜|시간|상호|유형)로 기록해두고, 나중에 해결돼도 그 달 누적에는 남김. 매월 1일 초기화.
+function missKey(d,p){ return d+'|'+(p.time||'')+'|'+(p.store||'')+'|'+(p.cat||''); }
+function recordMissLog(emp){
+  if(!emp || !cloudReady) return;   // 클라우드 로드 전에는 기록하지 않음(서버 데이터 덮어쓰기 방지)
+  const mk=curMonthKey(), g=gs(emp);
+  const log=g.missLog=g.missLog||{}; const cur=log[mk]=log[mk]||{}; let changed=false;
+  for(const k in log) if(k!==mk) { delete log[k]; changed=true; }   // 지난 달 기록은 정리(초기화)
+  allSlackDates().filter(d=>d.slice(0,7)===mk).forEach(d=>{
+    ((slackDay(d)||{}).pending||[]).forEach(p=>{ if(p.handler!==emp) return; const k=missKey(d,p); if(!cur[k]){ cur[k]=1; changed=true; } });
+  });
+  if(changed) saveGame();
+}
+// 이번 달 누락 누적 건수 = 기록해둔 이력 ∪ 지금 보이는 미처리 건
+function missCumCount(emp){
+  const mk=curMonthKey(); const set=new Set(Object.keys(((gs(emp).missLog||{})[mk])||{}));
+  allSlackDates().filter(d=>d.slice(0,7)===mk).forEach(d=>{
+    ((slackDay(d)||{}).pending||[]).forEach(p=>{ if(p.handler===emp) set.add(missKey(d,p)); });
+  });
+  return set.size;
+}
 // 자동 획득 타이틀(autoGrant): 조건 충족 시 클릭 없이 owned에 추가 + 미착용이면 착용(최초 1회). 대상=현재 선택된 직원.
 function autoGrantTitles(emp){
-  if(!emp) return; const g=gs(emp); let changed=false;
+  if(!emp) return; recordMissLog(emp); const g=gs(emp); let changed=false;
   // 예전 버그(히든 타이틀 price:0 → 누구나 착용) 잔재 정리: 보유하지 않은 타이틀이 착용돼 있으면 해제
   if(g.equipped && g.equipped.title && !owns(emp,'title',g.equipped.title)){ delete g.equipped.title; changed=true; }
   for(const it of (GAME_ITEMS.title||[])){
@@ -2513,8 +2535,9 @@ function mergeCloudDict(localObj, cloudObj){
   if(localObj) for(const k in localObj) if(!cloudObj || !(k in cloudObj)) restore[k]=localObj[k];
   return {merged, restore};
 }
+let cloudReady=false;   // 클라우드 1회 로드 완료 여부 — 로드 전 로컬 기록을 서버로 밀어 덮어쓰는 사고 방지
 function loadCloud(cb){
-  if(!GAME_API){ if(cb)cb(); return; }
+  if(!GAME_API){ cloudReady=true; if(cb)cb(); return; }
   fetch(GAME_API+'?t='+Date.now()).then(r=>r.json()).then(d=>{
     const b=d&&d.game;
     if(b){
@@ -2537,8 +2560,8 @@ function loadCloud(cb){
       } else { GAME=mergeCloudDict(GAME,b).merged; }   // 구 포맷(게임 데이터만)
       save(LS_GAME,GAME); save(LS_VOCEDIT,VOCEDIT); save(LS_VOCPRAISE,VOCPRAISE); save(LS_VOCCOMMENT,VOCCOMMENT); save(LS_DUTYOVER,DUTYOVER); save(LS_NOTICES,NOTICES); save(LS_NCOMMENTS,NCOMMENTS); save(LS_NREACTS,NREACTS); save(LS_SHAREEV,SHAREEV); save(LS_DUTY,DUTY); save(LS_MENUMEMO,MENUMEMO);
     }
-    if(cb)cb();
-  }).catch(()=>{ if(cb)cb(); });
+    cloudReady=true; if(cb)cb();
+  }).catch(()=>{ cloudReady=true; if(cb)cb(); });
 }
 function loadGameCloud(cb){ loadCloud(cb); }   // 하위호환
 // 팀 공유 클라우드 데이터 스냅샷 — 주기 동기화 시 '변경됐을 때만' 재렌더 판정용
@@ -4711,7 +4734,7 @@ function boot(){
   applySlackData();
   checkRefreshWeek();                                     // 새 주면 리프레쉬 타임 초기화
   renderNav(); renderMain(); checkAuth(); applyThemeLabel();
-  loadCloud(function(){ renderMain(); });   // 팀 공유 클라우드 로드(게임 코인 + VOC 편집·직원지정·먼슬리코멘트·당번) → 활성 탭 재렌더
+  loadCloud(function(){ if(gameMe) recordMissLog(gameMe); renderMain(); });   // 팀 공유 클라우드 로드(게임 코인 + VOC 편집·직원지정·먼슬리코멘트·당번) → 활성 탭 재렌더
   startAutoRefresh();
   checkDutyAlert(); setInterval(checkDutyAlert, 60000);   // 회의 30분 전 당번 알림
   setInterval(checkRefreshWeek, 300000);                 // 탭 오래 켜둬도 월요일 넘어가면 초기화
@@ -4769,6 +4792,7 @@ function applySlackData(){
     }
   }
   save(LS_COUNT, COUNTS);
+  if(typeof gameMe!=='undefined' && gameMe) recordMissLog(gameMe);   // 누락 이력 누적 기록(해결돼도 남도록 데이터 갱신 때마다)
 }
 // 선택한 날짜의 슬랙 집계 항목 (없으면 null)
 function slackDay(date){ return (window.SLACK_DATA&&window.SLACK_DATA.days&&window.SLACK_DATA.days[date])||null; }
