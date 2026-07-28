@@ -2303,7 +2303,7 @@ function empHandledMonth(emp){ let t=0; const mk=curMonthKey(); for(const cat in
 function empSpent(emp){ const g=gs(emp); return (g.spentM&&g.spentM[curMonthKey()])||0; }   // 이번 달 사용 코인
 function addSpent(emp, delta){ const g=gs(emp); g.spentM=g.spentM||{}; const k=curMonthKey(); g.spentM[k]=(g.spentM[k]||0)+delta; }
 function empCoins(emp){ return Math.floor(empHandledMonth(emp)/GAME_COIN_PER); }   // 이번 달 획득 코인
-function empAvail(emp){ return empCoins(emp)-empSpent(emp); }                       // 이번 달 보유 코인
+function empAvail(emp){ return Math.max(0, empCoins(emp)-empSpent(emp)); }          // 이번 달 보유 코인 (음수 방지 — 슬랙 재집계로 획득분이 줄어도 0 하한)
 function owns(emp,cat,id){ const it=itemById(cat,id); if(it&&it.price===0) return true; return (gs(emp).owned||[]).includes(cat+':'+id); }
 function partE(cat,id){ const it=itemById(cat,id); return it?(it.e||''):''; }
 function titleName(eq){ const t=itemById('title',(eq||{}).title); return t?t.name:''; }
@@ -2804,12 +2804,15 @@ function rollLootPerk(loot, perk){
   acc+=pCoin; if(r<acc && coins.length) return pick(coins);
   return nones.length?nonePick():(coins.length?pick(coins):loot[0]);
 }
-function perkDesc(perk){ if(!perk) return ''; const p=[]; const pct=x=>fmtPct(x); if(perk.item)p.push(`아이템 확률 +${pct(perk.item)}`); if(perk.coin)p.push(`코인 유지 시 +${perk.coin}개 추가 지급`); if(perk.miss)p.push(`꽝 -${pct(perk.miss)}`); if(perk.keep)p.push(`코인 유지 확률 +${pct(perk.keep)}`); if(perk.dbl)p.push(`코인 유지 당첨 시 ${pct(perk.dbl)} 확률로 코인 2배 획득`); if(perk.save)p.push(`꽝 당첨 시 ${pct(perk.save)} 확률로 코인 유지`); if(perk.casts>1)p.push(`모든 낚시터에서 한 번에 ${perk.casts}번 캐스팅 (비용도 ${perk.casts}배)`); return p.join(' · '); }
+function perkDesc(perk){ if(!perk) return ''; const p=[]; const pct=x=>fmtPct(x); if(perk.item)p.push(`아이템 확률 +${pct(perk.item)}`); if(perk.coin)p.push(`코인 유지 시 +${perk.coin}개 추가 지급 (지급 상한 = 캐스트 비용)`); if(perk.miss)p.push(`꽝 -${pct(perk.miss)}`); if(perk.keep)p.push(`코인 유지 확률 +${pct(perk.keep)}`); if(perk.dbl)p.push(`코인 유지 당첨 시 ${pct(perk.dbl)} 확률로 코인 2배 획득 (지급 상한 = 캐스트 비용)`); if(perk.save)p.push(`꽝 당첨 시 ${pct(perk.save)} 확률로 코인 유지`); if(perk.casts>1)p.push(`모든 낚시터에서 한 번에 ${perk.casts}번 캐스팅 (비용도 ${perk.casts}배)`); return p.join(' · '); }
 // 한 번의 '낚싯대 던지기'로 진행되는 캐스팅 횟수 ([세월을 낚은] 타이틀 보유 시 2회)
 function castCount(emp){ return Math.max(1, ownedTitlePerk(emp).casts||1); }
 function pickItem(rars, fishOnly, emp){ const pool=[]; for(const cat in GAME_ITEMS){ for(const it of GAME_ITEMS[cat]){ if(it.price===0) continue; if(it.targetOnly) continue; if(it.ach || it.onlyFor) continue; if(it.gender && emp && !genderOK(emp,it)) continue; if(!rars.includes(it.rarity)) continue; if(fishOnly && !it.fishOnly) continue; if(!fishOnly && it.fishOnly) continue; if(emp && owns(emp,cat,it.id)) continue; pool.push(Object.assign({cat},it)); } } if(!pool.length) return null; const tot=pool.reduce((a,it)=>a+(it.dropWeight||1),0); let r=Math.random()*tot; for(const it of pool){ if((r-=(it.dropWeight||1))<0) return it; } return pool[pool.length-1]; }
 const CAT_KO={title:'타이틀',nametag:'네임택',hat:'모자',pet:'펫',skin:'피부',hair:'헤어',dye:'염색',eyes:'눈',brows:'눈썹',mouth:'입',beard:'수염',top:'상의',pants:'하의',shoes:'신발',gloves:'장갑',cape:'망토'};
-function resolveLoot(emp,out){ const g=gs(emp);
+// 💧 낚시 1회로 받는 코인은 절대 '캐스트 비용'을 넘지 않는다 — 던질수록 코인이 불어나는 무한 증식 차단.
+//    (코인 유지 + 펫 보너스 + 고래 2배 · 아이템 풀 소진 보상 · 중복 환급 모두 동일 규칙)
+function coinCap(v, cost){ return cost ? Math.min(v, cost) : v; }
+function resolveLoot(emp,out,cost){ const g=gs(emp);
   if(out.t==='none'){ g.fishMiss=(g.fishMiss||0)+1; return {emoji:'🐚',big:'꽝!',sub:'빈 낚싯대... 다음 기회에!',cls:'miss'}; }   // 꽝 누적 카운트(💣 타이틀용)
   if(out.t==='coin'){ const perk=activePerk(emp); let n = randInt(out.min,out.max);
     if(n<0){   // 손실 결과: 추가 차감 없음 — 던질 때 낸 캐스트 비용만 소모됨
@@ -2820,6 +2823,7 @@ function resolveLoot(emp,out){ const g=gs(emp);
     // 🐋 [고래] 타이틀 보유 효과: 코인 유지 당첨 시 확률(perk.dbl)로 획득 코인 2배
     let whaled=false;
     if(!out.dbl && perk.dbl && Math.random()<perk.dbl){ n*=2; whaled=true; }
+    if(!out.dbl){ const capped=coinCap(n,cost); if(capped<n){ n=capped; whaled=false; } }   // 상한 적용(2배가 깎였으면 2배 연출도 해제)
     addSpent(emp, -n);
     if(out.dbl) return {emoji:'💰',big:'+'+n+' 코인',sub:'🎣 대박! 코인 2배 획득!',cls:'coin',rarity:'epic'};
     if(out.saved) return {emoji:'🕊️',big:'+'+n+' 코인',sub:whaled?'[천사] 구원 + [고래] 2배! 꽝이 코인으로!':'[천사] 구원! 꽝이 코인 유지로 바뀌었어요',cls:'coin',rarity:'epic'};
@@ -2829,13 +2833,13 @@ function resolveLoot(emp,out){ const g=gs(emp);
       sub:jackpot?'🎉 잭팟!!! 100코인 대박!!!':huge?'🌟 초대박! 엄청난 월척!':big?'월척! 대량 획득!':'코인 유지',
       cls:'coin', rarity:jackpot?'mythic':huge?'legendary':big?'epic':null}; }
   const it = out.id ? itemByIdAny(out.id) : pickItem(out.rar,out.fish,emp);
-  if(!it){ addSpent(emp, -3); return {emoji:'🪙',big:'+3 코인',sub:'낚을 새 아이템이 없어 코인으로!',cls:'coin'}; }
-  if(owns(emp,it.cat,it.id)){ const ref=Math.max(3,Math.ceil(it.price*0.25)); addSpent(emp, -ref); return {emoji:'♻️',big:'중복 → +'+ref+'코인',sub:'['+it.name+'] 이미 보유! 코인 환급',cls:'coin'}; }
+  if(!it){ const n=coinCap(3,cost); addSpent(emp, -n); return {emoji:'🪙',big:'+'+n+' 코인',sub:'낚을 새 아이템이 없어 코인으로!',cls:'coin'}; }
+  if(owns(emp,it.cat,it.id)){ const ref=coinCap(Math.max(3,Math.ceil(it.price*0.25)), cost); addSpent(emp, -ref); return {emoji:'♻️',big:'중복 → +'+ref+'코인',sub:'['+it.name+'] 이미 보유! 코인 환급',cls:'coin'}; }
   g.owned=g.owned||[]; g.owned.push(it.cat+':'+it.id);
   return {emoji:it.e||'🎁',big:'['+it.name+']',sub:RARITY_KO[it.rarity]+' '+(CAT_KO[it.cat]||'')+' 획득!',cls:'item',rarity:it.rarity};
 }
 // 캐스팅 n회분을 한 번에 추첨 → 결과 배열
-function rollCasts(emp, f, n){ const out=[]; for(let i=0;i<n;i++) out.push(resolveLoot(emp, rollLootPerk(f.loot, activePerk(emp)))); return out; }
+function rollCasts(emp, f, n){ const out=[]; for(let i=0;i<n;i++) out.push(resolveLoot(emp, rollLootPerk(f.loot, activePerk(emp)), f.cost)); return out; }
 async function castFish(spot){
   const emp=gameMe; if(!emp){ alert('먼저 본인을 선택하세요 🙂'); return; }
   const f=FISH[spot]; if(fishBusy) return;
