@@ -3,10 +3,50 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 148,
- "updatedAt": "2026-07-28 17:00",
+ "version": 149,
+ "updatedAt": "2026-07-28 17:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1785226397.724099",
+   "date": "2026-07-28",
+   "time": "17:13",
+   "store": "(주)창구유통강창구찹쌀진순대광장점",
+   "biz": "8508503184",
+   "phone": "",
+   "pos": "",
+   "content": "메뉴 삭제",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785226402.530849",
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785226397724099"
+  },
+  {
+   "ts": "1785225848.944519",
+   "date": "2026-07-28",
+   "time": "17:04",
+   "store": "삼맛카페(Sammat Cafe)",
+   "biz": "1092706588",
+   "phone": "",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1785225859.584619",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785225848944519"
+  },
   {
    "ts": "1785224863.968259",
    "date": "2026-07-28",
@@ -40,11 +80,13 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1785225626.636829",
-   "status": "wait",
-   "handler": null,
+   "replies": [
+    "퇴근하고.."
+   ],
+   "rc": 3,
+   "lr": "1785226032.746039",
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785224262125679"
   },
   {
