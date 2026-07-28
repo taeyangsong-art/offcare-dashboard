@@ -2077,31 +2077,34 @@ const GAME_COIN_PER = 1;             // 원격 1건 = 🪙1코인
 const RARITY = {common:'#8a94a6', rare:'#1a73e8', epic:'#9c36b5', legendary:'#e8820a', mythic:'#e0218a', unique:'#FFB800'};
 const RARITY_KO = {common:'일반', rare:'레어', epic:'에픽', legendary:'전설', mythic:'신화', unique:'유일'};
 const RARITY_ORDER = {common:0, rare:1, epic:2, legendary:3, mythic:4, unique:5};   // 등급 정렬 순서
+// 👑 타이틀 보유 효과(perk) — 착용과 무관하게 '보유한 모든 타이틀'이 합산 적용(ownedTitlePerk).
+// 등급별 배분: 일반 아이템+0.05%/기타 0.2% · 레어 0.1%/0.3% · 에픽 0.15%/0.5% · 전설 0.2%/0.6% · 신화 0.25%/0.8% · 유일 0.4%/1.5%
+// 전 타이틀 보유 시 합계 = 아이템 +4.05% (상한 5%) · 꽝감소+코인유지 +15.5% (상한 20%). 타이틀당 단일 효과는 3% 미만.
 const GAME_ITEMS = {
   title: [
-    {id:'t_novice',name:'견습 원격러',price:0,rarity:'common',desc:'누구에게나 처음은 있다. 원격의 세계에 온 것을 환영합니다'},
-    {id:'t_hand',name:'번개손',price:80,rarity:'rare',ach:'hand',desc:'따라올 수 없는 클릭 속도. 하루 35건을 쳐낸 전설의 손'},
-    {id:'t_night',name:'심야의 수호자',price:120,rarity:'epic',ach:'night',desc:'모두가 퇴근한 밤, 매장의 불빛을 지키는 그림자'},
-    {id:'t_phoenix',name:'하드워커',price:200,rarity:'epic',ach:'phoenix',desc:'아침의 첫 건부터 밤의 마지막 건까지, 하루를 통째로 불태운 자'},
-    {id:'t_master',name:'원격 마스터',price:320,rarity:'epic',ach:'master',desc:'온보딩부터 VOC까지, 못 하는 게 없는 육각형 원격러'},
-    {id:'t_god',name:'원격의 신',price:600,rarity:'legendary',ach:'god',desc:'인간의 영역을 초월한 처리량. 신은 있다, 원격파트에',grad:'linear-gradient(90deg,#e8820a,#ff5a8a,#c77dff,#4ea8ff,#e8820a)'},
-    {id:'t_fool',name:'바보',price:1,rarity:'common',ach:'fool',desc:'왜 받았는지는... 본인이 가장 잘 알고 있다'},
-    {id:'t_layoff',name:'권고사직',price:1,rarity:'common',ach:'layoff',desc:'잠시 면담 좀 할까요? 커피는 제가 살게요',grad:'linear-gradient(90deg,#7a0f2e,#c02f5e,#7a0f2e)'},
-    {id:'t_fast',name:'재빠른',price:1,rarity:'rare',ach:'fast',desc:'소방차보다 빨리 도착한다는 소문이 있다'},
-    {id:'t_thunder',name:'⚡',price:1,rarity:'mythic',ach:'thunder',autoGrant:true,desc:'번쩍! 하늘도 인정한 스피드',grad:'linear-gradient(90deg,#ffe14d,#ff9f0a,#ffd60a)'},
-    {id:'t_beta',name:'베타테스터',price:1,rarity:'legendary',ach:'beta',autoGrant:true,onlyFor:['배선유','김동욱'],desc:'대시보드 베타테스터의 노고를 기념하기 위한 타이틀',perk:{miss:0.01},grad:'linear-gradient(90deg,#00c7be,#5e5ce6,#e0218a)'},
-    {id:'t_workaholic',name:'워커홀릭',price:1,rarity:'legendary',ach:'workaholic',autoGrant:true,desc:'평일 90일 연속, 하루도 쉬지 않고 9시~18시 원격 이력을 남긴 진정한 일벌레',perk:{miss:0.03},grad:'linear-gradient(90deg,#ff9f0a,#ff375f,#bf5af2)'},
-    {id:'t_first',name:'1st',price:1,rarity:'mythic',ach:'first',autoGrant:true,desc:'일찍 일어나는 새가...',grad:'linear-gradient(90deg,#ffd60a,#fffbe6,#ffd60a,#ff9f0a)'},
-    {id:'t_bomb',name:'💣',price:1,rarity:'legendary',ach:'bomb',autoGrant:true,desc:'심지는 이미 타들어가고 있다. 터질 때까지, 던지고 또 던질 뿐',grad:'linear-gradient(90deg,#1c1c1e,#ff453a,#ff9f0a,#1c1c1e)'},
-    {id:'t_bling',name:'여기서부터 저기까지 다주세요',price:1,rarity:'epic',ach:'bling',autoGrant:true,desc:'머리부터 발끝까지, 빛나지 않는 곳이 없다',grad:'linear-gradient(90deg,#ffd60a,#ff9ff3,#4ea8ff,#ffd60a)'},
-    {id:'t_star',name:'⭐',price:1,rarity:'mythic',ach:'star',autoGrant:true,desc:'모든 칭호 위에 떠오른, 단 하나의 별',grad:'linear-gradient(90deg,#0a1a4a,#4ea8ff,#fffbe6,#ffd60a,#0a1a4a)'},
-    {id:'t_angler',name:'세월을 낚은',price:1,rarity:'mythic',ach:'angler',autoGrant:true,desc:'찌 끝에 걸린 것은 물고기가 아니라, 흘러간 시간이었다',grad:'linear-gradient(90deg,#0a3d62,#00c7be,#4ea8ff,#0a3d62)'},
-    {id:'t_kraken',name:'천사',price:1200,rarity:'mythic',fishOnly:true,desc:'1,200코인을 쓰는 순간, 등 뒤에서 날개가 돋아났다',grad:'linear-gradient(90deg,#00f5d4,#4ea8ff,#8a5cff,#00f5d4)'},
-    {id:'t_fishking',name:'아이샵케어',price:1500,rarity:'mythic',fishOnly:true,desc:'회사의 이름을 어깨에 얹은 자. 그 무게, 무려 1,500코인',grad:'linear-gradient(90deg,#ffd34e,#ff5a8a,#00f5d4,#ffd34e)'},
-    {id:'ft_novice',name:'초보 낚시꾼',price:60,rarity:'common',fishOnly:true,desc:'물고기보다 장화를 더 많이 낚았지만 괜찮다. 이것도 경력이다'},
-    {id:'ft_wanderer',name:'전문가',price:350,rarity:'epic',fishOnly:true,targetOnly:true,desc:'초급 낚시터를 정복한 낚시인. 이제 더 깊은 바다가 부른다',color:'#2d3fa0',glow:'#3f5fff'},
-    {id:'t_whale',name:'고래',price:800,rarity:'legendary',fishOnly:true,targetOnly:true,desc:'3코인짜리 미끼로 낚아 올린 거대한 행운',grad:'linear-gradient(90deg,#4ea8ff,#00f5d4,#8a5cff,#4ea8ff)'},
-    {id:'ft_captain',name:'곽호영',price:9999,rarity:'unique',fishOnly:true,targetOnly:true,freeShop:true,desc:'0.00001%의 기적. 낚시터에 강림하신 그분',grad:'linear-gradient(90deg,#ff2d55,#ff9500,#ffd60a,#34c759,#00c7be,#5e5ce6,#bf5af2,#ff2d55)'},
+    {id:'t_novice',name:'견습 원격러',price:0,rarity:'common',desc:'누구에게나 처음은 있다. 원격의 세계에 온 것을 환영합니다',perk:{item:0.0005,keep:0.002}},
+    {id:'t_hand',name:'번개손',price:80,rarity:'rare',ach:'hand',desc:'따라올 수 없는 클릭 속도. 하루 35건을 쳐낸 전설의 손',perk:{item:0.001,miss:0.003}},
+    {id:'t_night',name:'심야의 수호자',price:120,rarity:'epic',ach:'night',desc:'모두가 퇴근한 밤, 매장의 불빛을 지키는 그림자',perk:{item:0.0015,keep:0.005}},
+    {id:'t_phoenix',name:'하드워커',price:200,rarity:'epic',ach:'phoenix',desc:'아침의 첫 건부터 밤의 마지막 건까지, 하루를 통째로 불태운 자',perk:{item:0.0015,miss:0.005}},
+    {id:'t_master',name:'원격 마스터',price:320,rarity:'epic',ach:'master',desc:'온보딩부터 VOC까지, 못 하는 게 없는 육각형 원격러',perk:{item:0.0015,miss:0.0025,keep:0.0025}},
+    {id:'t_god',name:'원격의 신',price:600,rarity:'legendary',ach:'god',desc:'인간의 영역을 초월한 처리량. 신은 있다, 원격파트에',perk:{item:0.002,miss:0.003,keep:0.003},grad:'linear-gradient(90deg,#e8820a,#ff5a8a,#c77dff,#4ea8ff,#e8820a)'},
+    {id:'t_fool',name:'바보',price:1,rarity:'common',ach:'fool',desc:'왜 받았는지는... 본인이 가장 잘 알고 있다',perk:{item:0.0005,miss:0.002}},
+    {id:'t_layoff',name:'권고사직',price:1,rarity:'common',ach:'layoff',desc:'잠시 면담 좀 할까요? 커피는 제가 살게요',perk:{item:0.0005,keep:0.002},grad:'linear-gradient(90deg,#7a0f2e,#c02f5e,#7a0f2e)'},
+    {id:'t_fast',name:'재빠른',price:1,rarity:'rare',ach:'fast',desc:'소방차보다 빨리 도착한다는 소문이 있다',perk:{item:0.001,miss:0.003}},
+    {id:'t_thunder',name:'⚡',price:1,rarity:'mythic',ach:'thunder',autoGrant:true,desc:'번쩍! 하늘도 인정한 스피드',perk:{item:0.0025,miss:0.008},grad:'linear-gradient(90deg,#ffe14d,#ff9f0a,#ffd60a)'},
+    {id:'t_beta',name:'베타테스터',price:1,rarity:'legendary',ach:'beta',autoGrant:true,onlyFor:['배선유','김동욱'],desc:'대시보드 베타테스터의 노고를 기념하기 위한 타이틀',perk:{item:0.002,miss:0.01},grad:'linear-gradient(90deg,#00c7be,#5e5ce6,#e0218a)'},
+    {id:'t_workaholic',name:'워커홀릭',price:1,rarity:'legendary',ach:'workaholic',autoGrant:true,desc:'평일 90일 연속, 하루도 쉬지 않고 9시~18시 원격 이력을 남긴 진정한 일벌레',perk:{item:0.002,miss:0.025},grad:'linear-gradient(90deg,#ff9f0a,#ff375f,#bf5af2)'},
+    {id:'t_first',name:'1st',price:1,rarity:'mythic',ach:'first',autoGrant:true,desc:'일찍 일어나는 새가...',perk:{item:0.0025,keep:0.008},grad:'linear-gradient(90deg,#ffd60a,#fffbe6,#ffd60a,#ff9f0a)'},
+    {id:'t_bomb',name:'💣',price:1,rarity:'legendary',ach:'bomb',autoGrant:true,desc:'심지는 이미 타들어가고 있다. 터질 때까지, 던지고 또 던질 뿐',perk:{item:0.002,miss:0.006},grad:'linear-gradient(90deg,#1c1c1e,#ff453a,#ff9f0a,#1c1c1e)'},
+    {id:'t_bling',name:'여기서부터 저기까지 다주세요',price:1,rarity:'epic',ach:'bling',autoGrant:true,desc:'머리부터 발끝까지, 빛나지 않는 곳이 없다',perk:{item:0.0015,keep:0.005},grad:'linear-gradient(90deg,#ffd60a,#ff9ff3,#4ea8ff,#ffd60a)'},
+    {id:'t_star',name:'⭐',price:1,rarity:'mythic',ach:'star',autoGrant:true,desc:'모든 칭호 위에 떠오른, 단 하나의 별',perk:{item:0.0025,miss:0.004,keep:0.004},grad:'linear-gradient(90deg,#0a1a4a,#4ea8ff,#fffbe6,#ffd60a,#0a1a4a)'},
+    {id:'t_angler',name:'세월을 낚은',price:1,rarity:'mythic',ach:'angler',autoGrant:true,desc:'찌 끝에 걸린 것은 물고기가 아니라, 흘러간 시간이었다',perk:{item:0.0025,miss:0.008},grad:'linear-gradient(90deg,#0a3d62,#00c7be,#4ea8ff,#0a3d62)'},
+    {id:'t_kraken',name:'천사',price:1200,rarity:'mythic',fishOnly:true,desc:'1,200코인을 쓰는 순간, 등 뒤에서 날개가 돋아났다',perk:{item:0.0025,keep:0.008},grad:'linear-gradient(90deg,#00f5d4,#4ea8ff,#8a5cff,#00f5d4)'},
+    {id:'t_fishking',name:'아이샵케어',price:1500,rarity:'mythic',fishOnly:true,desc:'회사의 이름을 어깨에 얹은 자. 그 무게, 무려 1,500코인',perk:{item:0.0025,miss:0.008},grad:'linear-gradient(90deg,#ffd34e,#ff5a8a,#00f5d4,#ffd34e)'},
+    {id:'ft_novice',name:'초보 낚시꾼',price:60,rarity:'common',fishOnly:true,desc:'물고기보다 장화를 더 많이 낚았지만 괜찮다. 이것도 경력이다',perk:{item:0.0005,miss:0.002}},
+    {id:'ft_wanderer',name:'전문가',price:350,rarity:'epic',fishOnly:true,targetOnly:true,desc:'초급 낚시터를 정복한 낚시인. 이제 더 깊은 바다가 부른다',perk:{item:0.0015,miss:0.005},color:'#2d3fa0',glow:'#3f5fff'},
+    {id:'t_whale',name:'고래',price:800,rarity:'legendary',fishOnly:true,targetOnly:true,desc:'3코인짜리 미끼로 낚아 올린 거대한 행운',perk:{item:0.002,keep:0.006},grad:'linear-gradient(90deg,#4ea8ff,#00f5d4,#8a5cff,#4ea8ff)'},
+    {id:'ft_captain',name:'곽호영',price:9999,rarity:'unique',fishOnly:true,targetOnly:true,freeShop:true,desc:'0.00001%의 기적. 낚시터에 강림하신 그분',perk:{item:0.004,miss:0.0075,keep:0.0075},grad:'linear-gradient(90deg,#ff2d55,#ff9500,#ffd60a,#34c759,#00c7be,#5e5ce6,#bf5af2,#ff2d55)'},
   ],
   nametag: [
     {id:'n_none',name:'기본',price:0,rarity:'common'},
@@ -2434,7 +2437,7 @@ function itemTipHTML(cat,id){ const it=itemById(cat,id); if(!it) return ''; cons
     ${it.desc?`<div class="it-tip-desc">“${escapeHtml(it.desc)}”</div>`:''}
     ${it.ach?(function(){ const d=achDisplay(gameMe,it,owned); return `<div class="it-tip-req"><div class="it-tip-cond">🎯 달성 조건: ${escapeHtml(d.cond)}</div>${d.prog?`<div class="it-tip-prog">📊 내 진행 <b>${escapeHtml(d.prog)}</b></div>`:''}${(it.autoGrant||it.onlyFor)?'':'<div class="it-tip-reset">🔄 매월 1일 진행 초기화</div>'}</div>`; })():''}
     ${(!it.ach && it.fishOnly)?`<div class="it-tip-req"><div class="it-tip-cond">🎣 획득: ${escapeHtml(fishSpotHint(it))}에서 낚시로 획득${it.id==='ft_captain'?' · 🌈 0.00001% 극악 확률':''}</div></div>`:''}
-    ${it.perk?`<div class="it-tip-perk"><span class="it-tip-perk-h">${cat==='pet'?'🐾 펫 능력':cat==='title'?'👑 타이틀 능력':'✨ 능력'}</span> ${escapeHtml(perkDesc(it.perk))}</div>`:''}
+    ${it.perk?`<div class="it-tip-perk"><span class="it-tip-perk-h">${cat==='pet'?'🐾 펫 능력 (착용 시)':cat==='title'?'👑 타이틀 보유 효과 (착용 안 해도 적용)':'✨ 능력'}</span> ${escapeHtml(perkDesc(it.perk))}</div>`:''}
     ${it.freeShop?`<div class="it-tip-perk"><span class="it-tip-perk-h">👑 유일 능력</span> 착용 시 모든 상점 아이템 무료!</div>`:''}
     <div class="it-tip-foot">${it.ach?(owned?'✓ 보유중':(gameMe&&achStatus(gameMe,it).ok?'🎁 지금 무료 획득 가능!':'🎯 달성 시 무료 획득')):(it.price===0?'기본 제공':(owned?'✓ 보유중':(it.fishOnly?'낚시로만 획득':((gameMe&&hasFreeShop(gameMe))?'🆓 무료 (곽호영 능력)':'🪙 '+it.price+' 코인'))))}</div>
   </div>`;
@@ -2595,7 +2598,7 @@ function shopCard(cat,it,emp){
     : `<span class="tr-${r}" style="${titleStyleOf(it)}">[${escapeHtml(it.name)}]</span>`);
   const reqBadge = it.ach ? (function(){ const d=achDisplay(emp,it,owned); return `<div class="si-req ${owned||d.ok?'met':'locked'}">🎯 ${escapeHtml(d.cond)}${owned?' ✓':(d.prog?` <b>${escapeHtml(d.prog)}</b>`:'')}</div>`; })()
     : (fishLocked ? `<div class="si-req locked">🎣 낚시터에서 획득가능</div>` : '');
-  const perkBadge = it.perk ? `<div class="si-perk">🐾 ${escapeHtml(perkDesc(it.perk))}</div>`
+  const perkBadge = it.perk ? `<div class="si-perk">${cat==='title'?'👑 보유 효과':'🐾'} ${escapeHtml(perkDesc(it.perk))}</div>`
     : it.freeShop ? `<div class="si-perk">👑 착용 시 모든 상점 아이템 무료</div>` : '';
   const freeNow = !owned && !a && !fishLocked && it.price>0 && hasFreeShop(emp);
   const btnLabel = eq?'✓ 착용중':owned?'착용하기':fishLocked?'🎣 낚시터에서':locked?'🔒 조건 미달':a?'🎁 무료 획득':(it.price===0?'착용':(freeNow?'🆓 무료':'🪙 '+it.price));
@@ -2621,6 +2624,7 @@ function renderGame(){
     <div class="card game-me" id="gmBox">${gameMeInner(emp, eq)}</div>
     <div class="preview-hint">💡 아이템에 마우스를 올리면 위 캐릭터에 <b>미리 입어보기</b> 돼요 · 코인은 왼쪽 <b>🎣 낚시터</b>에서도 획득!</div>
     ${shopSection('title','👑 타이틀',emp)}
+    <div class="ach-reset-note">👑 타이틀은 <b>보유만 해도</b> 낚시 능력치가 붙어요 (등급↑일수록 강력 · 중복 합산) · 현재 합계 ${escapeHtml(perkDesc(ownedTitlePerk(emp))||'없음')}</div>
     <div class="ach-reset-note">🔄 모든 타이틀 획득 조건 진행도는 <b>매월 1일 초기화</b>됩니다 · 이미 획득한 타이틀은 계속 보유돼요</div>
     ${shopSection('nametag','🏷️ 네임택',emp)}
     <div class="avatar-secthead"><span>🧙 아바타 꾸미기</span><button class="btn" onclick="showGenderModal()">${(g.gender==='f'?'👧 여자':'👦 남자')} · 성별 바꾸기</button></div>
@@ -2689,10 +2693,23 @@ function randInt(a,b){ return a+Math.floor(Math.random()*(b-a+1)); }
 // 코인 가챠: 최대 100코인, 100코인 확률 = 1/1,000,000 = 0.0001% (총 가중치 100만). 전반적으로 소액 위주.
 function pickCoinAmount(){ const T=[{w:600000,a:1,b:3},{w:280000,a:4,b:10},{w:90000,a:11,b:25},{w:25000,a:26,b:50},{w:4999,a:51,b:99},{w:1,a:100,b:100}]; const tot=T.reduce((s,t)=>s+t.w,0); let r=Math.random()*tot; for(const t of T){ if((r-=t.w)<0) return randInt(t.a,t.b); } return 1; }
 function rollLoot(loot){ const tot=loot.reduce((a,x)=>a+x.w,0); let r=Math.random()*tot; for(const x of loot){ if((r-=x.w)<0) return x; } return loot[loot.length-1]; }
+// 0.0005 → '0.05%', 0.025 → '2.5%', 0.01 → '1%' (소수 뒤 0 제거)
+function fmtPct(x){ return (Math.round(x*10000)/100).toFixed(2).replace(/\.?0+$/,'')+'%'; }
 // ── 펫 능력치(perk): 낚시 결과에 반영 ──
 function petPerk(emp){ const it=itemById('pet',(gs(emp).equipped||{}).pet); return (it&&it.perk)||{}; }
-// 낚시 능력치: 착용한 펫 + 타이틀의 perk 합산 (예: 베타테스터 타이틀 꽝 -1%)
-function activePerk(emp){ const eq=(gs(emp).equipped||{}); const out={}; [itemById('pet',eq.pet), itemById('title',eq.title)].forEach(it=>{ if(it&&it.perk){ for(const k in it.perk) out[k]=(out[k]||0)+it.perk[k]; } }); return out; }
+// ── 👑 타이틀 보유 효과: 착용 여부와 무관하게 '보유한 모든 타이틀'의 perk 합산 ──
+// 상한 — 아이템 확률 +5%, (꽝 감소 + 코인 유지) 합계 +20%. 타이틀이 계속 늘어도 이 선을 절대 넘지 않음.
+const TITLE_PERK_CAP={item:0.05, sway:0.20};
+function ownedTitlePerk(emp){
+  const out={};
+  (GAME_ITEMS.title||[]).forEach(it=>{ if(!it.perk||!owns(emp,'title',it.id)) return; for(const k in it.perk) out[k]=(out[k]||0)+it.perk[k]; });
+  if(out.item) out.item=Math.min(out.item, TITLE_PERK_CAP.item);
+  const sway=(out.miss||0)+(out.keep||0);
+  if(sway>TITLE_PERK_CAP.sway){ const r=TITLE_PERK_CAP.sway/sway; if(out.miss) out.miss*=r; if(out.keep) out.keep*=r; }
+  return out;
+}
+// 낚시 능력치: 보유 타이틀 전체 + 착용한 펫의 perk 합산 (타이틀은 보유만 해도 적용, 펫은 착용해야 적용)
+function activePerk(emp){ const out=ownedTitlePerk(emp); const pet=itemById('pet',(gs(emp).equipped||{}).pet); if(pet&&pet.perk){ for(const k in pet.perk) out[k]=(out[k]||0)+pet.perk[k]; } return out; }
 // 능력치는 '각 결과의 자기 확률'에 곱연산 → 아이템 1% + 아이템+10%펫 = 정확히 1.1%.
 // 아이템↑(item)·꽝↓(miss)·손실↓(loss)을 각 확률에 곱하고, 남는 확률은 코인획득이 흡수.
 function rollLootPerk(loot, perk){
@@ -2712,7 +2729,7 @@ function rollLootPerk(loot, perk){
   acc+=pCoin; if(r<acc && coins.length) return pick(coins);
   return nones.length?pick(nones):(coins.length?pick(coins):loot[0]);
 }
-function perkDesc(perk){ if(!perk) return ''; const p=[]; const pct=x=>{const v=Math.round(x*1000)/10; return (Number.isInteger(v)?v:v.toFixed(1))+'%';}; if(perk.item)p.push(`아이템 확률 +${pct(perk.item)}`); if(perk.coin)p.push(`코인 유지 시 +${perk.coin}개 추가 지급`); if(perk.miss)p.push(`꽝 -${pct(perk.miss)}`); if(perk.keep)p.push(`코인 유지 확률 +${pct(perk.keep)}`); return p.join(' · '); }
+function perkDesc(perk){ if(!perk) return ''; const p=[]; const pct=x=>fmtPct(x); if(perk.item)p.push(`아이템 확률 +${pct(perk.item)}`); if(perk.coin)p.push(`코인 유지 시 +${perk.coin}개 추가 지급`); if(perk.miss)p.push(`꽝 -${pct(perk.miss)}`); if(perk.keep)p.push(`코인 유지 확률 +${pct(perk.keep)}`); return p.join(' · '); }
 function pickItem(rars, fishOnly, emp){ const pool=[]; for(const cat in GAME_ITEMS){ for(const it of GAME_ITEMS[cat]){ if(it.price===0) continue; if(it.targetOnly) continue; if(it.ach || it.onlyFor) continue; if(it.gender && emp && !genderOK(emp,it)) continue; if(!rars.includes(it.rarity)) continue; if(fishOnly && !it.fishOnly) continue; if(!fishOnly && it.fishOnly) continue; if(emp && owns(emp,cat,it.id)) continue; pool.push(Object.assign({cat},it)); } } if(!pool.length) return null; const tot=pool.reduce((a,it)=>a+(it.dropWeight||1),0); let r=Math.random()*tot; for(const it of pool){ if((r-=(it.dropWeight||1))<0) return it; } return pool[pool.length-1]; }
 const CAT_KO={title:'타이틀',nametag:'네임택',hat:'모자',pet:'펫',skin:'피부',hair:'헤어',dye:'염색',eyes:'눈',brows:'눈썹',mouth:'입',beard:'수염',top:'상의',pants:'하의',shoes:'신발',gloves:'장갑',cape:'망토'};
 function resolveLoot(emp,out){ const g=gs(emp);
@@ -2809,7 +2826,12 @@ function renderGameFish(){
   const petbar = (mp&&mp.perk)
     ? `<div class="fish-petbar"><span class="fpb-emoji">${mp.e||'🐾'}</span><span>착용 펫 <b>${escapeHtml(mp.name)}</b> · ${escapeHtml(perkDesc(mp.perk))}</span></div>`
     : `<div class="fish-petbar" style="background:#f1f5f9;color:#64748b"><span class="fpb-emoji">🐾</span><span>펫을 착용하면 낚시 능력치 보너스! (에픽↑ 펫은 낚시터에서 획득)</span></div>`;
-  document.getElementById("main").innerHTML=head+petbar+`<div class="fish-grid">${['low','mid','high'].map(k=>{ const f=FISH[k]; const locked=!fishGate(emp,f).ok; const cg=fishCastGate(emp,f);
+  // 👑 보유 타이틀 합산 효과 (착용과 무관 · 상한 아이템 +5% / 꽝감소·코인유지 합계 +20%)
+  const tp=ownedTitlePerk(emp), tn=(GAME_ITEMS.title||[]).filter(it=>it.perk&&owns(emp,'title',it.id)).length;
+  const titlebar = Object.keys(tp).length
+    ? `<div class="fish-petbar" style="background:#fff4d6;color:#8a5a08"><span class="fpb-emoji">👑</span><span>보유 타이틀 <b>${tn}개</b> 효과 · ${escapeHtml(perkDesc(tp))}</span></div>`
+    : `<div class="fish-petbar" style="background:#f1f5f9;color:#64748b"><span class="fpb-emoji">👑</span><span>타이틀은 <b>보유만 해도</b> 낚시 능력치가 붙어요! (등급이 높을수록 강력)</span></div>`;
+  document.getElementById("main").innerHTML=head+petbar+titlebar+`<div class="fish-grid">${['low','mid','high'].map(k=>{ const f=FISH[k]; const locked=!fishGate(emp,f).ok; const cg=fishCastGate(emp,f);
     return `<div class="fish-spot fs-${k}">
       <div class="fs-emoji">${f.emoji}</div><div class="fs-name">${f.name}</div>
       <div class="fs-desc">${f.desc}</div>
