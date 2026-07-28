@@ -2083,7 +2083,8 @@ const RARITY_KO = {common:'일반', rare:'레어', epic:'에픽', legendary:'전
 const RARITY_ORDER = {common:0, rare:1, epic:2, legendary:3, mythic:4, unique:5};   // 등급 정렬 순서
 // 👑 타이틀 보유 효과(perk) — 착용과 무관하게 '보유한 모든 타이틀'이 합산 적용(ownedTitlePerk).
 // 등급별 배분: 일반 아이템+0.05%/기타 0.2% · 레어 0.1%/0.3% · 에픽 0.15%/0.5% · 전설 0.2%/0.6% · 신화 0.25%/0.8% · 유일 0.4%/1.5%
-// 전 타이틀 보유 시 합계 = 아이템 +4.05% (상한 5%) · 꽝감소+코인유지 +15.5% (상한 20%). 타이틀당 단일 효과는 3% 미만.
+// 전 타이틀 보유 시 합계 = 아이템 +4.05% (상한 5%) · 꽝감소+코인유지 +14.9% (상한 20%). 타이틀당 단일 효과는 3% 미만.
+// 예외: [고래]는 확률형 특수 효과(dbl) — 코인 유지 당첨 시 10% 확률로 코인 2배 (상한 30%).
 const GAME_ITEMS = {
   title: [
     {id:'t_novice',name:'견습 원격러',price:0,rarity:'common',desc:'누구에게나 처음은 있다. 원격의 세계에 온 것을 환영합니다',perk:{item:0.0005,keep:0.002}},
@@ -2107,7 +2108,7 @@ const GAME_ITEMS = {
     {id:'t_fishking',name:'아이샵케어',price:1500,rarity:'mythic',fishOnly:true,desc:'회사의 이름을 어깨에 얹은 자. 그 무게, 무려 1,500코인',perk:{item:0.0025,miss:0.008},grad:'linear-gradient(90deg,#ffd34e,#ff5a8a,#00f5d4,#ffd34e)'},
     {id:'ft_novice',name:'초보 낚시꾼',price:60,rarity:'common',fishOnly:true,desc:'물고기보다 장화를 더 많이 낚았지만 괜찮다. 이것도 경력이다',perk:{item:0.0005,miss:0.002}},
     {id:'ft_wanderer',name:'전문가',price:350,rarity:'epic',fishOnly:true,targetOnly:true,desc:'초급 낚시터를 정복한 낚시인. 이제 더 깊은 바다가 부른다',perk:{item:0.0015,miss:0.005},color:'#2d3fa0',glow:'#3f5fff'},
-    {id:'t_whale',name:'고래',price:800,rarity:'legendary',fishOnly:true,targetOnly:true,desc:'3코인짜리 미끼로 낚아 올린 거대한 행운',perk:{item:0.002,keep:0.006},grad:'linear-gradient(90deg,#4ea8ff,#00f5d4,#8a5cff,#4ea8ff)'},
+    {id:'t_whale',name:'고래',price:800,rarity:'legendary',fishOnly:true,targetOnly:true,desc:'3코인짜리 미끼로 낚아 올린 거대한 행운',perk:{item:0.002,dbl:0.10},grad:'linear-gradient(90deg,#4ea8ff,#00f5d4,#8a5cff,#4ea8ff)'},
     {id:'ft_captain',name:'곽호영',price:9999,rarity:'unique',fishOnly:true,targetOnly:true,freeShop:true,desc:'0.00001%의 기적. 낚시터에 강림하신 그분',perk:{item:0.004,miss:0.0075,keep:0.0075},grad:'linear-gradient(90deg,#ff2d55,#ff9500,#ffd60a,#34c759,#00c7be,#5e5ce6,#bf5af2,#ff2d55)'},
   ],
   nametag: [
@@ -2711,11 +2712,12 @@ function fmtPct(x){ return (Math.round(x*10000)/100).toFixed(2).replace(/\.?0+$/
 function petPerk(emp){ const it=itemById('pet',(gs(emp).equipped||{}).pet); return (it&&it.perk)||{}; }
 // ── 👑 타이틀 보유 효과: 착용 여부와 무관하게 '보유한 모든 타이틀'의 perk 합산 ──
 // 상한 — 아이템 확률 +5%, (꽝 감소 + 코인 유지) 합계 +20%. 타이틀이 계속 늘어도 이 선을 절대 넘지 않음.
-const TITLE_PERK_CAP={item:0.05, sway:0.20};
+const TITLE_PERK_CAP={item:0.05, sway:0.20, dbl:0.30};
 function ownedTitlePerk(emp){
   const out={};
   (GAME_ITEMS.title||[]).forEach(it=>{ if(!it.perk||!owns(emp,'title',it.id)) return; for(const k in it.perk) out[k]=(out[k]||0)+it.perk[k]; });
   if(out.item) out.item=Math.min(out.item, TITLE_PERK_CAP.item);
+  if(out.dbl) out.dbl=Math.min(out.dbl, TITLE_PERK_CAP.dbl);
   const sway=(out.miss||0)+(out.keep||0);
   if(sway>TITLE_PERK_CAP.sway){ const r=TITLE_PERK_CAP.sway/sway; if(out.miss) out.miss*=r; if(out.keep) out.keep*=r; }
   return out;
@@ -2741,7 +2743,7 @@ function rollLootPerk(loot, perk){
   acc+=pCoin; if(r<acc && coins.length) return pick(coins);
   return nones.length?pick(nones):(coins.length?pick(coins):loot[0]);
 }
-function perkDesc(perk){ if(!perk) return ''; const p=[]; const pct=x=>fmtPct(x); if(perk.item)p.push(`아이템 확률 +${pct(perk.item)}`); if(perk.coin)p.push(`코인 유지 시 +${perk.coin}개 추가 지급`); if(perk.miss)p.push(`꽝 -${pct(perk.miss)}`); if(perk.keep)p.push(`코인 유지 확률 +${pct(perk.keep)}`); return p.join(' · '); }
+function perkDesc(perk){ if(!perk) return ''; const p=[]; const pct=x=>fmtPct(x); if(perk.item)p.push(`아이템 확률 +${pct(perk.item)}`); if(perk.coin)p.push(`코인 유지 시 +${perk.coin}개 추가 지급`); if(perk.miss)p.push(`꽝 -${pct(perk.miss)}`); if(perk.keep)p.push(`코인 유지 확률 +${pct(perk.keep)}`); if(perk.dbl)p.push(`코인 유지 당첨 시 ${pct(perk.dbl)} 확률로 코인 2배 획득`); return p.join(' · '); }
 function pickItem(rars, fishOnly, emp){ const pool=[]; for(const cat in GAME_ITEMS){ for(const it of GAME_ITEMS[cat]){ if(it.price===0) continue; if(it.targetOnly) continue; if(it.ach || it.onlyFor) continue; if(it.gender && emp && !genderOK(emp,it)) continue; if(!rars.includes(it.rarity)) continue; if(fishOnly && !it.fishOnly) continue; if(!fishOnly && it.fishOnly) continue; if(emp && owns(emp,cat,it.id)) continue; pool.push(Object.assign({cat},it)); } } if(!pool.length) return null; const tot=pool.reduce((a,it)=>a+(it.dropWeight||1),0); let r=Math.random()*tot; for(const it of pool){ if((r-=(it.dropWeight||1))<0) return it; } return pool[pool.length-1]; }
 const CAT_KO={title:'타이틀',nametag:'네임택',hat:'모자',pet:'펫',skin:'피부',hair:'헤어',dye:'염색',eyes:'눈',brows:'눈썹',mouth:'입',beard:'수염',top:'상의',pants:'하의',shoes:'신발',gloves:'장갑',cape:'망토'};
 function resolveLoot(emp,out){ const g=gs(emp);
@@ -2752,8 +2754,12 @@ function resolveLoot(emp,out){ const g=gs(emp);
       return {emoji:'🎣',big:'꽝!',sub:'입질 실패... 캐스트 비용만 소모됐어요',cls:'bad'};
     }
     if(!out.dbl) n=n+(perk.coin||0);   // 펫 코인 보너스는 일반(코인 유지) 결과에만 — '코인 2배 획득'은 표기 금액 그대로 지급
+    // 🐋 [고래] 타이틀 보유 효과: 코인 유지 당첨 시 확률(perk.dbl)로 획득 코인 2배
+    let whaled=false;
+    if(!out.dbl && perk.dbl && Math.random()<perk.dbl){ n*=2; whaled=true; }
     addSpent(emp, -n);
     if(out.dbl) return {emoji:'💰',big:'+'+n+' 코인',sub:'🎣 대박! 코인 2배 획득!',cls:'coin',rarity:'epic'};
+    if(whaled) return {emoji:'🐋',big:'+'+n+' 코인',sub:'[고래] 발동! 코인 2배 획득!',cls:'coin',rarity:'epic'};
     const jackpot=n>=100, huge=n>=50, big=n>=25;
     return {emoji:jackpot?'💰':huge?'🤑':big?'💵':'🪙', big:'+'+n+' 코인',
       sub:jackpot?'🎉 잭팟!!! 100코인 대박!!!':huge?'🌟 초대박! 엄청난 월척!':big?'월척! 대량 획득!':'코인 유지',
