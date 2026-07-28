@@ -2671,7 +2671,7 @@ const FISH = {
     loot:[ {w:600,t:'none'}, {w:300,t:'coin',min:1,max:1}, {w:50,t:'item',rar:['common'],fish:true}, {w:30,t:'item',rar:['rare'],fish:true}, {w:20,t:'item',id:'ft_wanderer'} ]},
   mid:  {emoji:'⛵', name:'중급 낚시터', cost:3,  entry:0, reqLowItem:true, desc:'전문가 타이틀 획득 시 캐스팅 가능 · 아이템 5%(고래 타이틀 포함!), 코인 유지 30%, 꽝 65%',
     loot:[ {w:650,t:'none'}, {w:300,t:'coin',min:3,max:3}, {w:25,t:'item',rar:['rare'],fish:true}, {w:15,t:'item',rar:['epic'],fish:true}, {w:10,t:'item',id:'t_whale'} ]},
-  high: {emoji:'🌊', name:'고급 낚시터', cost:10, entry:0, reqItems:['pet:p_unicorn','pet:fp_shark'], desc:'중급에서 유니콘·상어 펫 획득 시 캐스팅 가능 · 신화 전용! 아이템 3%, 코인 유지 30% · 🌈 0.00001% 극악 확률로 [곽호영] 유일 타이틀!',
+  high: {emoji:'🌊', name:'고급 낚시터', cost:10, entry:0, reqItems:['pet:p_unicorn','pet:fp_shark','pet:fp_otter'], desc:'중급에서 유니콘·상어·수달 펫 획득 시 캐스팅 가능 · 신화 전용! 아이템 3%, 코인 유지 30% · 🌈 0.00001% 극악 확률로 [곽호영] 유일 타이틀!',
     loot:[ {w:670,t:'none'}, {w:300,t:'coin',min:10,max:10}, {w:27,t:'item',rar:['legendary'],fish:true}, {w:3,t:'item',rar:['mythic'],fish:true}, {w:0.0001,t:'item',id:'ft_captain'} ]},
 };
 let fishBusy=false;
@@ -2700,7 +2700,13 @@ function fishGate(emp, f){ if(f.entry && empAvail(emp)<f.entry) return {ok:false
 // 캐스팅 조건(전제조건: 초급 아이템 1개 이상 획득)
 function fishCastGate(emp, f){
   if(f.reqLowItem && !owns(emp,'title','ft_wanderer')) return {ok:false, short:'전문가 타이틀 필요', msg:'🔒 초급 낚시터에서 [전문가] 타이틀을 먼저 획득해야 여기서 낚싯대를 던질 수 있어요!'};
-  if(f.reqItems){ const miss=f.reqItems.filter(k=>{ const p=k.split(':'); return !owns(emp,p[0],p[1]); }); if(miss.length) return {ok:false, short:'유니콘·상어 펫 필요', msg:'🔒 중급 낚시터에서 [유니콘]🦄·[상어]🦈 펫을 모두 획득해야 여기서 낚싯대를 던질 수 있어요!'}; }
+  // 필요 아이템 목록(reqItems)은 정의에서 이름·이모지를 그대로 뽑아 안내 — 조건이 늘어나도 문구가 자동으로 맞음
+  if(f.reqItems){
+    const nameOf=k=>{ const p=k.split(':'), it=itemById(p[0],p[1]); return it?`[${it.name}]${it.e||''}`:p[1]; };
+    const miss=f.reqItems.filter(k=>{ const p=k.split(':'); return !owns(emp,p[0],p[1]); });
+    if(miss.length) return {ok:false, short:miss.map(k=>{ const p=k.split(':'), it=itemById(p[0],p[1]); return it?it.name:p[1]; }).join('·')+' 펫 필요',
+      msg:'🔒 중급 낚시터에서 '+f.reqItems.map(nameOf).join('·')+' 펫을 모두 획득해야 여기서 낚싯대를 던질 수 있어요!\n(남은 펫: '+miss.map(nameOf).join('·')+')'};
+  }
   return {ok:true};
 }
 function randInt(a,b){ return a+Math.floor(Math.random()*(b-a+1)); }
