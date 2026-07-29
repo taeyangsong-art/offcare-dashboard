@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 168,
- "updatedAt": "2026-07-29 13:00",
+ "version": 169,
+ "updatedAt": "2026-07-29 13:30",
  "days": 30,
  "items": [
   {
@@ -21,8 +21,8 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1785297475.525439",
+   "rc": 2,
+   "lr": "1785299084.227769",
    "status": "confirm",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785297470238059"
@@ -897,10 +897,11 @@ window.MENU_REQUESTS = {
     "네 채팅중이라 제가 말씀드릴게요",
     "감삼다",
     "상품설명 노출되는지도 확인 요청 부탁드려요. 엑셀로 일괄적용했는데 대시보드 보니까 들어갔나 확실하지가 않아서 없으면 식사시간 이후 다시 작업할게욤",
-    "넵!"
+    "넵!",
+    "아직 기기 설치전으로 확인이 어려우시다고 합니다.\n이상있는 경우 재문의부탁드렸습니다."
    ],
-   "rc": 8,
-   "lr": "1785293914.540659",
+   "rc": 9,
+   "lr": "1785299104.864159",
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784969347825369"
