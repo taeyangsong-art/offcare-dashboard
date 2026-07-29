@@ -739,6 +739,27 @@
   .vd-fill{display:block; height:100%; border-radius:5px}
   .vd-cnt{flex:0 0 auto; font-size:13px; font-weight:800; color:var(--gray)}
   .vd-pct{display:inline-block; font-size:11.5px; font-weight:800; color:#1F4FFA; background:#eef2ff; border-radius:20px; padding:1px 7px; margin-left:3px}
+  /* 📊 이번달 vs 전월 비교 모달 */
+  .vc-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+  .vc-box{border:1px solid var(--line); border-radius:16px; padding:16px 18px; background:var(--surface2)}
+  .vc-box.cur{border-color:#0071e3; background:#f2f7ff}
+  .vc-box.prev{opacity:.92}
+  .vc-title{font-size:13px; font-weight:800; color:var(--gray); margin-bottom:10px; letter-spacing:-.01em}
+  .vc-box.cur .vc-title{color:#0071e3}
+  .vc-big{font-size:40px; font-weight:800; letter-spacing:-.03em; line-height:1.05}
+  .vc-big small{font-size:17px; color:var(--gray2)}
+  .vc-sub{font-size:12.5px; color:var(--gray); margin-top:4px}
+  .vc-rank{display:flex; flex-direction:column; gap:6px}
+  .vc-rrow{display:flex; align-items:center; gap:8px; font-size:13px; padding:6px 8px; border-radius:9px; background:var(--canvas,#fff); border:1px solid var(--line-soft)}
+  .vc-rk{flex:0 0 20px; height:20px; border-radius:50%; background:var(--surface); color:var(--gray); font-size:11px; font-weight:800; display:flex; align-items:center; justify-content:center}
+  .vc-rk.top{background:var(--ink); color:var(--canvas,#fff)}
+  .vc-rname{flex:1; font-weight:700; color:var(--ink); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .vc-rcnt{flex:0 0 auto; font-weight:800; color:var(--ink); font-variant-numeric:tabular-nums}
+  /* 클릭해서 비교 가능한 카드 */
+  .cmp-able{cursor:pointer; transition:.14s}
+  .cmp-able:hover{border-color:#0071e3; box-shadow:0 4px 16px rgba(0,113,227,.14)}
+  .cmp-tag{font-size:11px; font-weight:800; color:#0071e3; background:#e7f0ff; border-radius:20px; padding:3px 9px; white-space:nowrap}
+  @media (max-width:680px){ .vc-grid{grid-template-columns:1fr} }
   .mom-wrap{flex:0 0 auto; display:inline-flex; gap:4px; align-items:center; margin-left:2px}
   .mom{font-size:10.5px; font-weight:800; border-radius:6px; padding:1px 5px; white-space:nowrap}
   .mom.up{color:#c2410c; background:#ffedd5}     /* 저점 증가/상승 = 악화 */
@@ -3669,6 +3690,70 @@ function storeDetailList(items){
 // 업종/사유 드릴다운(클릭 시 매장 상세 펼침). topReason=true면 '가장 많은 이유' 요약 표시
 let VOCDRILL={}, vdSeq=0;   // 업종/이유 클릭 → 큰 모달로 보여줄 상세 저장
 // 전월 대비 비교 맵: {name:{isNew}|{rankDelta,pctDelta}}  (저점이라 ↑=악화(빨강), ↓=개선(파랑))
+/* ===== 📊 이번달 vs 전월 나란히 비교 모달 (카드 클릭) ===== */
+let VOCCMP=null;   // renderVocMonthly에서 이번달·전월 스냅샷을 채움
+function vocCmpBox(title, tone, inner){
+  return `<div class="vc-box ${tone||''}"><div class="vc-title">${escapeHtml(title)}</div>${inner}</div>`;
+}
+function vocNpsPanel(st){
+  const t=st.total||0, p=n=>t?Math.round(n/t*100):0;
+  return `<div class="vc-big" style="color:${st.nps>=0?'var(--green)':'var(--red)'}">${st.nps}</div>
+    <div class="vc-sub">응답 ${t}건 · 평균 ${st.avg.toFixed(1)}점</div>
+    <div class="prog" style="height:14px;margin-top:10px">
+      <div class="prog-fill" style="width:${p(st.det)}%;background:#ff3b30"></div>
+      <div class="prog-fill" style="width:${p(st.pass)}%;background:#ff9500"></div>
+      <div class="prog-fill" style="width:${p(st.prom)}%;background:#34c759"></div></div>
+    <div class="legend" style="margin-top:8px;font-size:12px"><span><span class="swatch" style="background:#34c759"></span>추천 ${st.prom} (${p(st.prom)}%)</span><span><span class="swatch" style="background:#ff9500"></span>중립 ${st.pass} (${p(st.pass)}%)</span><span><span class="swatch" style="background:#ff3b30"></span>비추천 ${st.det} (${p(st.det)}%)</span></div>`;
+}
+function vocSentPanel(s){
+  const tot=s.pos+s.neg;
+  return `<div class="vc-big" style="color:var(--green)">긍정 ${s.rate}<small>%</small></div>
+    <div class="vc-sub">칭찬·고점 ${s.pos}건 · 저점 ${s.neg}건 (총 ${tot}건)</div>
+    <div class="prog" style="height:14px;margin-top:10px"><div class="prog-fill" style="width:${tot?s.pos/tot*100:0}%;background:#34c759"></div><div class="prog-fill" style="width:${tot?s.neg/tot*100:0}%;background:#ff3b30"></div></div>`;
+}
+function vocDonePanel(d){
+  return `<div class="vc-big" style="color:var(--green)">${d.rate}<small>%</small></div>
+    <div class="vc-sub">완료 ${d.n}건 / 저점 ${d.t}건</div>
+    ${progressBar(d.rate,'#34c759')}`;
+}
+// 순위표 — 1위부터 쭉 (건수·비중, 상대 월 대비 순위 변동)
+function vocRankPanel(entries, otherEntries){
+  const total=entries.reduce((a,e)=>a+e[1].length,0)||1;
+  const orank={}; otherEntries.forEach(([n],i)=>{ orank[n]=i+1; });
+  if(!entries.length) return '<div class="empty-note">인입 없음</div>';
+  return `<div class="vc-rank">`+entries.map(([name,items],i)=>{
+    const n=items.length, pct=Math.round(n/total*100), pr=orank[name];
+    const chg = pr==null ? '<span class="mom new">NEW</span>'
+      : pr-(i+1)>0 ? `<span class="mom down" title="상대 월 대비 ${pr-(i+1)}단계 상승">▲${pr-(i+1)}</span>`
+      : pr-(i+1)<0 ? `<span class="mom up" title="상대 월 대비 ${(i+1)-pr}단계 하락">▼${(i+1)-pr}</span>`
+      : '<span class="mom same">=</span>';
+    return `<div class="vc-rrow"><span class="vc-rk ${i<3?'top':''}">${i+1}</span><span class="vc-rname">${escapeHtml(name)}</span><span class="vc-rcnt">${n}건 <span style="color:var(--gray2);font-weight:600">${pct}%</span></span>${chg}</div>`;
+  }).join('')+`</div>`;
+}
+function openVocCompare(kind){
+  if(!VOCCMP) return;
+  const C=VOCCMP, L=C.label;
+  const npsColor=s=>s>=9?'#34c759':s>=7?'#ff9500':'#ff3b30';
+  let title='', body='';
+  if(kind==='nps'){ title='🎯 NPS 지표 — 전월 비교';
+    body=vocCmpBox(L.cur+' (이번달)','cur',vocNpsPanel(C.nps.cur))+vocCmpBox(L.prev+' (전월)','prev',vocNpsPanel(C.nps.prev)); }
+  else if(kind==='dist'){ title='📊 추천의향 점수 분포 — 전월 비교';
+    const panel=(d,st)=>`${Object.keys(d).length?distColumnChart(d,10,npsColor):'<div class="empty-note">데이터 없음</div>'}<div class="vc-sub" style="margin-top:6px">응답 ${st.total}건 · 평균 ${st.avg.toFixed(1)}점 · NPS ${st.nps}</div>`;
+    body=vocCmpBox(L.cur+' (이번달)','cur',panel(C.dist.cur,C.nps.cur))+vocCmpBox(L.prev+' (전월)','prev',panel(C.dist.prev,C.nps.prev)); }
+  else if(kind==='sent'){ title='😀 긍정 vs 😡 부정 — 전월 비교';
+    body=vocCmpBox(L.cur+' (이번달)','cur',vocSentPanel(C.sent.cur))+vocCmpBox(L.prev+' (전월)','prev',vocSentPanel(C.sent.prev)); }
+  else if(kind==='done'){ title='✅ 저점 처리 완료율 — 전월 비교';
+    body=vocCmpBox(L.cur+' (이번달)','cur',vocDonePanel(C.done.cur))+vocCmpBox(L.prev+' (전월)','prev',vocDonePanel(C.done.prev)); }
+  else if(kind==='ind'||kind==='rea'){ const g=C[kind];
+    title=(kind==='ind'?'🏭 업종별 인입':'😟 인입 이유별')+' — 전월 순위 비교';
+    body=vocCmpBox(L.cur+' (이번달)','cur',vocRankPanel(g.cur,g.prev))+vocCmpBox(L.prev+' (전월)','prev',vocRankPanel(g.prev,g.cur)); }
+  else return;
+  let el=document.getElementById('vocCmpModal');
+  if(!el){ el=document.createElement('div'); el.id='vocCmpModal'; el.className='detail-overlay'; el.onclick=e=>{ if(e.target===el) el.remove(); }; document.body.appendChild(el); }
+  el.innerHTML=`<div class="detail-box" style="max-width:860px">
+    <div class="detail-head"><h3>${title}</h3><button class="detail-x" onclick="document.getElementById('vocCmpModal').remove()">✕</button></div>
+    <div class="detail-scroll"><div class="vc-grid">${body}</div></div></div>`;
+}
 function buildMoMCmp(cur, prev, total, prevTotal){
   const pr={}, pp={}, pc={}; prev.forEach(([n,it],i)=>{ pr[n]=i+1; pp[n]=Math.round(it.length/(prevTotal||1)*100); pc[n]=it.length; });
   const m={};
@@ -3989,6 +4074,17 @@ function renderVocMonthly(){
   const pPosCount=staffPraises(pv.praises).length+(pv.high.install+pv.high.nps), pSentTot=pPosCount+pvIn;
   const pPosRate=pSentTot?Math.round(pPosCount/pSentTot*100):0;
   const pctOf=(n,t)=>t?Math.round(n/t*100):0;
+  // 카드 클릭 시 '이번달 vs 전월' 나란히 비교 모달에 쓸 스냅샷
+  const pmo=new Date(y, mo-1, 1);
+  VOCCMP={
+    label:{cur:`${y}년 ${mo+1}월`, prev:`${pmo.getFullYear()}년 ${pmo.getMonth()+1}월`},
+    nps:{cur:ns, prev:pns},
+    dist:{cur:v.npsDist, prev:pv.npsDist},
+    sent:{cur:{pos:posCount,neg:totalIn,rate:posRate}, prev:{pos:pPosCount,neg:pvIn,rate:pPosRate}},
+    done:{cur:{n:doneCount,t:totalIn,rate:doneRate}, prev:{n:pDoneCount,t:pvIn,rate:pDoneRate}},
+    ind:{cur:mIndEntries, prev:pIndEntries},
+    rea:{cur:mReaEntries, prev:pReaEntries},
+  };
   const tenRows=Object.entries(v.byTenure).sort((a,b)=>b[1].total-a[1].total);
   const vanRows=Object.entries(v.byVan).sort((a,b)=>b[1].total-a[1].total);
   const tenMax=Math.max(1,...tenRows.map(r=>r[1].total)), vanMax=Math.max(1,...vanRows.map(r=>r[1].total));
@@ -4019,8 +4115,8 @@ function renderVocMonthly(){
     </div>
 
     <div class="grid2">
-      <div class="card">
-        <div class="card-head"><h3>🎯 NPS 지표</h3><span class="hint">추천의향 ${ns.total}건 기준 · 전월 ${pns.total}건</span></div>
+      <div class="card cmp-able" onclick="openVocCompare('nps')" title="클릭 → 이번달·전월 나란히 비교">
+        <div class="card-head"><h3>🎯 NPS 지표</h3><span class="cmp-tag">📊 클릭 → 전월 비교</span></div>
         <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:6px;flex-wrap:wrap">
           <div style="font-size:44px;font-weight:800;letter-spacing:-.03em;color:${ns.nps>=0?'var(--green)':'var(--red)'}">${ns.nps}</div>
           ${momChip(ns.nps, pns.nps, {})}
@@ -4037,7 +4133,7 @@ function renderVocMonthly(){
           <span><span class="swatch" style="background:#ff3b30"></span>비추천 ${ns.det} <span style="color:var(--gray2)">(${pctOf(ns.det,ns.total)}%)</span> ${momChip(pctOf(ns.det,ns.total), pctOf(pns.det,pns.total), {unit:'%p', higherBad:true})}</span>
         </div>
       </div>
-      <div class="card"><div class="card-head"><h3>추천의향 점수 분포</h3><span class="hint">0~10점 · 평균 ${ns.avg.toFixed(1)} ${momChip(ns.avg, pns.avg, {digits:1, unit:'점'})}</span></div>
+      <div class="card cmp-able" onclick="openVocCompare('dist')" title="클릭 → 이번달·전월 막대그래프 비교"><div class="card-head"><h3>추천의향 점수 분포</h3><span class="cmp-tag">📊 클릭 → 전월 비교</span></div>
         ${ns.total?distColumnChart(v.npsDist,10,npsColor):'<div class="empty-note">데이터 없음</div>'}
         <div class="legend" style="margin-top:8px;gap:10px;flex-wrap:wrap;font-size:12px">
           <span>9~10점 ${pctOf(ns.prom,ns.total)}% ${momChip(pctOf(ns.prom,ns.total), pctOf(pns.prom,pns.total), {unit:'%p'})}</span>
@@ -4047,7 +4143,7 @@ function renderVocMonthly(){
     </div>
 
     <div class="grid2">
-      <div class="card"><div class="card-head"><h3>✅ 저점 처리 완료율</h3><span style="font-size:20px;font-weight:800;color:var(--ink);letter-spacing:-.02em;font-variant-numeric:tabular-nums">${doneCount}/${totalIn}<span style="font-size:13px;font-weight:600;color:var(--gray)"> 건</span></span></div>
+      <div class="card cmp-able" onclick="openVocCompare('done')" title="클릭 → 이번달·전월 나란히 비교"><div class="card-head"><h3>✅ 저점 처리 완료율</h3><span class="cmp-tag">📊 클릭 → 전월 비교</span></div>
         <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:8px;flex-wrap:wrap">
           <span style="font-size:38px;font-weight:800;color:var(--green)">${doneRate}<small style="font-size:16px;color:var(--gray2)">%</small></span>
           ${momChip(doneRate, pDoneRate, {unit:'%p'})}
@@ -4055,7 +4151,7 @@ function renderVocMonthly(){
         </div>
         ${progressBar(doneRate,'#34c759')}
         <div class="note" style="font-size:12px;color:var(--gray2);margin-top:8px">저점 인입의 팔로업 처리 비율 · <b>처리완료·부재·통화거부·OB필요없음</b> 모두 완료로 집계</div></div>
-      <div class="card"><div class="card-head"><h3>😀 긍정 vs 😡 부정</h3><span class="hint">칭찬·고점 ${posCount} · 저점 ${totalIn}</span></div>
+      <div class="card cmp-able" onclick="openVocCompare('sent')" title="클릭 → 이번달·전월 나란히 비교"><div class="card-head"><h3>😀 긍정 vs 😡 부정</h3><span class="cmp-tag">📊 클릭 → 전월 비교</span></div>
         <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:8px;flex-wrap:wrap">
           <span style="font-size:38px;font-weight:800;color:var(--green)">긍정 ${posRate}<small style="font-size:16px;color:var(--gray2)">%</small></span>
           ${momChip(posRate, pPosRate, {unit:'%p'})}
@@ -4065,10 +4161,10 @@ function renderVocMonthly(){
         <div class="legend" style="margin-top:8px"><span><span class="swatch" style="background:#34c759"></span>칭찬·고점 ${posCount}</span><span><span class="swatch" style="background:#ff3b30"></span>저점 ${totalIn}</span></div></div>
     </div>
 
-    <div class="card"><div class="card-head"><h3>🏭 업종별 인입</h3><span class="hint">이번달 <b style="color:var(--ink)">${totalIn}건</b> · 전월 ${pvIn}건 · 각 항목 <b style="color:var(--ink)">순위·전월 비교</b> 표시 · 클릭 → 상세</span></div>
+    <div class="card"><div class="card-head cmp-able" style="border-radius:10px;padding:2px 4px;margin:-2px -4px 0" onclick="openVocCompare('ind')" title="클릭 → 이번달·전월 순위 나란히 비교"><h3>🏭 업종별 인입</h3><span class="cmp-tag">📊 제목 클릭 → 전월 순위 비교</span><span class="hint" style="margin-left:auto">이번달 <b style="color:var(--ink)">${totalIn}건</b> · 전월 ${pvIn}건 · 항목 클릭 → 매장 상세</span></div>
       ${mIndEntries.length?vocGroupDrill(mIndEntries, mIndDMax, '#0071e3', true, indCmp):'<div class="empty-note">인입 없음 👍</div>'}
       ${mIndEntries.length?vocSecCommentBox('ind', mkey, mIndEntries, indCmp, totalIn, '업종'):''}</div>
-    <div class="card"><div class="card-head"><h3>😟 인입 이유별</h3><span class="hint">이번달 <b style="color:var(--ink)">${totalIn}건</b> · 전월 ${pvIn}건 · 각 항목 <b style="color:var(--ink)">순위·전월 비교</b> 표시 · 클릭 → 상세</span></div>
+    <div class="card"><div class="card-head cmp-able" style="border-radius:10px;padding:2px 4px;margin:-2px -4px 0" onclick="openVocCompare('rea')" title="클릭 → 이번달·전월 순위 나란히 비교"><h3>😟 인입 이유별</h3><span class="cmp-tag">📊 제목 클릭 → 전월 순위 비교</span><span class="hint" style="margin-left:auto">이번달 <b style="color:var(--ink)">${totalIn}건</b> · 전월 ${pvIn}건 · 항목 클릭 → 매장 상세</span></div>
       ${mReaEntries.length?vocGroupDrill(mReaEntries, mReaDMax, '#ff3b30', false, reaCmp):'<div class="empty-note">인입 없음 👍</div>'}
       ${mReaEntries.length?vocSecCommentBox('rea', mkey, mReaEntries, reaCmp, totalIn, '이유'):''}</div>
 
