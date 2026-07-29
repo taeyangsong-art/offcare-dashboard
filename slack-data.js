@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1976,
+  "version": 1977,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -68330,19 +68330,9 @@ window.SLACK_DATA = {
     },
     "2026-07-29": {
       "counts": {
-        "onboarding": {
-          "최민석": 8,
-          "김현기": 10,
-          "배선유": 8,
-          "서상원": 9,
-          "심성현": 11,
-          "송태양": 2,
-          "김기범": 1,
-          "김규빈": 2
-        },
         "as": {
-          "서상원": 28,
           "최민석": 27,
+          "서상원": 28,
           "김기범": 13,
           "배선유": 31,
           "김현기": 20,
@@ -68350,6 +68340,16 @@ window.SLACK_DATA = {
           "김규빈": 10,
           "송태양": 23,
           "미지정": 1
+        },
+        "onboarding": {
+          "최민석": 9,
+          "김현기": 10,
+          "배선유": 8,
+          "서상원": 9,
+          "심성현": 11,
+          "송태양": 2,
+          "김기범": 1,
+          "김규빈": 2
         },
         "extern": {
           "서상원": 5,
@@ -68373,6 +68373,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "23:46",
+          "store": "오늘도 한끼하세요",
+          "biz": "8244201327",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "토스포스 설치 + 프론트 + 유프 온보딩 도움 요청과",
+          "hw": "",
+          "intake": "online",
+          "note": "익일 오후5시 재연락 요청"
+        },
         {
           "time": "22:00",
           "store": "큐사랑염색두피탈모 센트레빌2차점",
@@ -68399,12 +68410,12 @@ window.SLACK_DATA = {
           "time": "21:45",
           "store": "마젤",
           "biz": "6090549372",
-          "cat": "as",
+          "cat": "onboarding",
           "emp": "최민석",
           "req": "컴퓨터 + 프론트 온보딩",
           "hw": "",
           "intake": "online",
-          "note": "1차 부재"
+          "note": "1차 부재 / pc이상으로 휴대폰 온보딩 완료 포프 온보딩 완료"
         },
         {
           "time": "21:39",
@@ -71384,11 +71395,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 222,
+        "online": 223,
         "offline": 50,
         "unknown": 0
       },
-      "updatedAt": "22:00",
+      "updatedAt": "23:46",
       "voc": {
         "responses": 19,
         "install": {
@@ -71608,6 +71619,17 @@ window.SLACK_DATA = {
           }
         ]
       }
+    },
+    "2026-07-30": {
+      "counts": {},
+      "pending": [],
+      "done": [],
+      "intake": {
+        "online": 0,
+        "offline": 0,
+        "unknown": 0
+      },
+      "updatedAt": ""
     }
   },
   "resp": {
