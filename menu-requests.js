@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 180,
- "updatedAt": "2026-07-29 16:30",
+ "version": 181,
+ "updatedAt": "2026-07-29 16:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1785310986.252279",
+   "date": "2026-07-29",
+   "time": "16:43",
+   "store": "피자스쿨(구로전화국점)",
+   "biz": "1191789592",
+   "phone": "01027538863\n-",
+   "pos": "오케이포스",
+   "content": "소스 ㅡ 할라피뇨 500원\n추가 해주세요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785310990.246239",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785310986252279"
+  },
   {
    "ts": "1785307000.000229",
    "date": "2026-07-29",
@@ -10214,26 +10234,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782722130881849"
-  },
-  {
-   "ts": "1782718471.177749",
-   "date": "2026-06-29",
-   "time": "16:34",
-   "store": "소피의 책방",
-   "biz": "3271302897",
-   "phone": "01066274080",
-   "pos": "",
-   "content": "• 메일로 바코드와 파일 보내 주셨다고 함 ( 2분전에..)\n• 빠르게 진행 요청 주셔서 등록 부탁 드립니다!\n• 5_rm 메일에 소피의 책방 검색 시 어제 보내 주신 메일 바로 확인됩니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782718857.982149",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782718471177749"
   }
  ]
 };
