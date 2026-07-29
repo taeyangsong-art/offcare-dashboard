@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1916,
+  "version": 1917,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -68329,15 +68329,31 @@ window.SLACK_DATA = {
       }
     },
     "2026-07-29": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "배선유": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:00",
+          "store": "촌놈감성 관식이네",
+          "biz": "4139901679",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "매장 이전으로 프+캣 재온보딩 필요하여 도움부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "매장 인터넷 설치x / 익일 9시 재예약"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:00"
+      "updatedAt": "09:03"
     }
   },
   "resp": {
@@ -68368,11 +68384,11 @@ window.SLACK_DATA = {
       },
       "1785283213.321989": {
         "post": "1785283213.321989",
-        "lastSeen": 1785283232.504
+        "lastSeen": 1785284122.907
       },
       "1785283200.251999": {
         "post": "1785283200.251999",
-        "lastSeen": 1785283232.504
+        "lastSeen": 1785284122.907
       }
     },
     "days": {
