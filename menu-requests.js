@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 173,
- "updatedAt": "2026-07-29 14:45",
+ "version": 174,
+ "updatedAt": "2026-07-29 15:00",
  "days": 30,
  "items": [
   {
@@ -10312,46 +10312,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782713691529239"
-  },
-  {
-   "ts": "1782712292.928729",
-   "date": "2026-06-29",
-   "time": "14:51",
-   "store": "(주)형아우의꿈",
-   "biz": "7338802197",
-   "phone": "01065112585",
-   "pos": "",
-   "content": "",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782712627.670999",
-   "status": "confirm",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782712292928729"
-  },
-  {
-   "ts": "1782712291.892529",
-   "date": "2026-06-29",
-   "time": "14:51",
-   "store": "(주)형과아우",
-   "biz": "1398802492",
-   "phone": "01065112585",
-   "pos": "",
-   "content": "",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 26,
-   "lr": "1782724749.206229",
-   "status": "confirm",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782712291892529"
   }
  ]
 };
