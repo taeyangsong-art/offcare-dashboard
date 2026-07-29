@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 183,
- "updatedAt": "2026-07-29 17:45",
+ "version": 184,
+ "updatedAt": "2026-07-29 18:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1785315016.248479",
+   "date": "2026-07-29",
+   "time": "17:50",
+   "store": "탑골가든",
+   "biz": "8603001131",
+   "phone": "",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "해상도 매우작음 메일 요청",
+    "메일 보내주시기로함 보류"
+   ],
+   "rc": 4,
+   "lr": "1785315388.511009",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785315016248479"
+  },
   {
    "ts": "1785313848.978369",
    "date": "2026-07-29",
@@ -10213,26 +10236,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782723742207129"
-  },
-  {
-   "ts": "1782723173.669459",
-   "date": "2026-06-29",
-   "time": "17:52",
-   "store": "카페CCD창원중앙역점",
-   "biz": "5033631452",
-   "phone": "01084956385",
-   "pos": "",
-   "content": "메뉴 이미지 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782723248.495719",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782723173669459"
   }
  ]
 };
