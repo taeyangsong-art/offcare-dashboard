@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 178,
- "updatedAt": "2026-07-29 16:00",
+ "version": 179,
+ "updatedAt": "2026-07-29 16:15",
  "days": 30,
  "items": [
   {
@@ -10234,46 +10234,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782718471177749"
-  },
-  {
-   "ts": "1782717169.762919",
-   "date": "2026-06-29",
-   "time": "16:12",
-   "store": "원조감자탕 일미집 판교점",
-   "biz": "1063491328",
-   "phone": "010-3387-4945",
-   "pos": "토스포스",
-   "content": "토스포스 메뉴",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1782717192.082489",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782717169762919"
-  },
-  {
-   "ts": "1782716624.611879",
-   "date": "2026-06-29",
-   "time": "16:03",
-   "store": "원조감자탕 일미집 판교점",
-   "biz": "",
-   "phone": "",
-   "pos": "토스포스",
-   "content": "",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1782717962.228839",
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782716624611879"
   }
  ]
 };
