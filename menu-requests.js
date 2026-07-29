@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 162,
- "updatedAt": "2026-07-29 10:30",
+ "version": 163,
+ "updatedAt": "2026-07-29 10:45",
  "days": 30,
  "items": [
   {
@@ -21,8 +21,8 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1785286886.927319",
+   "rc": 3,
+   "lr": "1785289170.157619",
    "status": "confirm",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785286840172609"
@@ -10467,26 +10467,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782697801868819"
-  },
-  {
-   "ts": "1782696872.064189",
-   "date": "2026-06-29",
-   "time": "10:34",
-   "store": "퍼리엔",
-   "biz": "1764201290",
-   "phone": "01055297446\n-",
-   "pos": "기타",
-   "content": "메인메뉴에 팟타이 뒤에 파인애플 볶음밥. 해물 볶음밥 순서로 해주시고. 그 뒤에 반미로 순서 수정 부탁드립니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782697364.427059",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782696872064189"
   }
  ]
 };
