@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 171,
- "updatedAt": "2026-07-29 14:15",
+ "version": 172,
+ "updatedAt": "2026-07-29 14:30",
  "days": 30,
  "items": [
   {
@@ -10375,26 +10375,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782711223828139"
-  },
-  {
-   "ts": "1782710372.744349",
-   "date": "2026-06-29",
-   "time": "14:19",
-   "store": "유가네",
-   "biz": "4693200312",
-   "phone": "01082866996",
-   "pos": "퍼스트포스",
-   "content": "FD-140 오더포스 / 메뉴 금액 수정 요청 드립니다.\n\n• 회덮밥 11,000원 → 12,000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782711613.239199",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782710372744349"
   }
  ]
 };
