@@ -1690,7 +1690,7 @@ function maskProg(prog){
   const m=String(prog||'').match(/^\s*([\d,]+)\s*\/\s*([\d,]+)\s*(\D*)$/);
   if(!m) return '';
   const unit=(m[3]||'').trim();
-  return `요건 ${m[2]}${unit} 중 ${m[1]}${unit} 달성`;
+  return `${m[2]}${unit} 중 ${m[1]}${unit} 달성`;
 }
 function achDisplay(emp, it, owned){
   const a = emp ? achStatus(emp, it) : null;
