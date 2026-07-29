@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 161,
- "updatedAt": "2026-07-29 10:15",
+ "version": 162,
+ "updatedAt": "2026-07-29 10:30",
  "days": 30,
  "items": [
   {
@@ -23,8 +23,8 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1785286886.927319",
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785286840172609"
   },
   {
@@ -10487,46 +10487,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782696872064189"
-  },
-  {
-   "ts": "1782696528.886359",
-   "date": "2026-06-29",
-   "time": "10:28",
-   "store": "형과아우누룽지삼계탕왕갈비탕",
-   "biz": "3932901130",
-   "phone": "01088055656",
-   "pos": "오케이포스",
-   "content": "오케이포스 / 누룽지, 볶음밥 메뉴 2가지 전표 나오도록 조치 요청주셨습니다 (기존에 안나오도록 설정)",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 6,
-   "lr": "1782698126.701889",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782696528886359"
-  },
-  {
-   "ts": "1782696202.534429",
-   "date": "2026-06-29",
-   "time": "10:23",
-   "store": "다고미고",
-   "biz": "8433001344",
-   "phone": "",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782696211.011659",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782696202534429"
   }
  ]
 };
