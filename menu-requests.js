@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 179,
- "updatedAt": "2026-07-29 16:15",
+ "version": 180,
+ "updatedAt": "2026-07-29 16:30",
  "days": 30,
  "items": [
   {
@@ -21,10 +21,10 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1785307006.915579",
-   "status": "wait",
-   "handler": null,
+   "rc": 3,
+   "lr": "1785310182.909419",
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785307000000229"
   },
   {
@@ -43,10 +43,10 @@ window.MENU_REQUESTS = {
    "replies": [
     "피자 카테고리\n비프타코피자 15,900원\n치킨타코피자 15,900원\n\n기존 메뉴 중간에 가격 오름차순으로 정렬 부탁드리겠습니다."
    ],
-   "rc": 2,
-   "lr": "1785306534.644539",
-   "status": "wait",
-   "handler": null,
+   "rc": 4,
+   "lr": "1785309788.522129",
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785306504576739"
   },
   {
@@ -65,7 +65,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1785299084.227769",
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785297470238059"
   },
