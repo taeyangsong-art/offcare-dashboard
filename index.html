@@ -4015,17 +4015,20 @@ function vocMonthAgg(){
     byInd[ind]=(byInd[ind]||0)+1; byReason[rea]=(byReason[rea]||0)+1; });
   return {dates, v, byInd, byReason, totalIn:v.alerts.length};
 }
+// 일별 인입 추이 — 막대 폭을 날짜 수에 맞춰 계산해 카드 가로폭을 꽉 채움(빈 공간 없음)
 function vocDailyTrend(dates){
   const counts=dates.map(d=>{ const vv=(slackDay(d)||{}).voc; return vv?(vv.alerts||[]).length:0; });
   const mx=Math.max(1,...counts);
-  const n=dates.length, bw=16, gap=8, padL=12, padR=12, H=170, base=H-30, plotH=H-46;
-  const W=Math.max(560, padL+padR+n*(bw+gap));
-  const bars=dates.map((d,i)=>{ const c=counts[i], h=c/mx*plotH, x=padL+i*(bw+gap), y=base-h, day=parseYmd(d).getDate();
-    return `<rect x="${x}" y="${y.toFixed(1)}" width="${bw}" height="${h.toFixed(1)}" rx="2" fill="${c>0?'#ff3b30':'#ececf0'}"></rect>`
-      +(c>0?`<text x="${x+bw/2}" y="${(y-4).toFixed(1)}" text-anchor="middle" font-size="9" font-weight="700" style="fill:var(--ink-soft)">${c}</text>`:'')
-      +`<text x="${x+bw/2}" y="${base+14}" text-anchor="middle" font-size="8.5" style="fill:var(--gray2)">${day}</text>`;
+  const n=Math.max(1,dates.length), padL=14, padR=14, H=190, base=H-30, plotH=H-48;
+  const W=880;                                   // 기준 폭(가로 100%로 늘어남) — 슬롯을 균등 분할해 막대를 두껍게
+  const slot=(W-padL-padR)/n, bw=Math.max(6, slot*0.82), gap=slot-bw;
+  const fs=Math.max(8, Math.min(13, slot*0.46));   // 날짜·건수 글자도 막대 폭에 맞춰 조정
+  const bars=dates.map((d,i)=>{ const c=counts[i], h=c/mx*plotH, x=padL+i*slot+gap/2, y=base-h, day=parseYmd(d).getDate();
+    return `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${bw.toFixed(1)}" height="${h.toFixed(1)}" rx="3" fill="${c>0?'#ff3b30':'#ececf0'}"><title>${fmtShort(d)} · ${c}건</title></rect>`
+      +(c>0?`<text x="${(x+bw/2).toFixed(1)}" y="${(y-5).toFixed(1)}" text-anchor="middle" font-size="${fs.toFixed(1)}" font-weight="800" style="fill:var(--ink-soft)">${c}</text>`:'')
+      +`<text x="${(x+bw/2).toFixed(1)}" y="${base+16}" text-anchor="middle" font-size="${(fs*0.92).toFixed(1)}" font-weight="600" style="fill:var(--gray2)">${day}</text>`;
   }).join('');
-  return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}"><line x1="${padL-4}" y1="${base}" x2="${W-padR+4}" y2="${base}" stroke="#d2d2d7"/>${bars}</svg></div>`;
+  return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="display:block"><line x1="${padL-4}" y1="${base}" x2="${W-padR+4}" y2="${base}" stroke="#d2d2d7"/>${bars}</svg></div>`;
 }
 function renderVocMonthly(){
   VOCQUOTE=[];
