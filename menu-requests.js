@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 172,
- "updatedAt": "2026-07-29 14:30",
+ "version": 173,
+ "updatedAt": "2026-07-29 14:45",
  "days": 30,
  "items": [
   {
@@ -10352,29 +10352,6 @@ window.MENU_REQUESTS = {
    "status": "confirm",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782712291892529"
-  },
-  {
-   "ts": "1782711223.828139",
-   "date": "2026-06-29",
-   "time": "14:33",
-   "store": "산촌신쭈꾸미 부천도당점",
-   "biz": "4671502020",
-   "phone": "01022299005\n-",
-   "pos": "오케이포스",
-   "content": "금액변경및 메뉴삭제부탁드립니다",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/open?id=1aDV7SAow2cmMur71pDI4WoNq4O7LcGUV",
-    "https://drive.google.com/open?id=17_J98T_25o6QbC2OnMXynjIOHee43XFT"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782712375.687769",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782711223828139"
   }
  ]
 };
