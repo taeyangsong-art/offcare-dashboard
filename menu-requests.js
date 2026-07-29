@@ -3,10 +3,32 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 182,
- "updatedAt": "2026-07-29 17:00",
+ "version": 183,
+ "updatedAt": "2026-07-29 17:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1785313848.978369",
+   "date": "2026-07-29",
+   "time": "17:30",
+   "store": "피자스쿨일원점",
+   "biz": "1200925308",
+   "phone": "01040978526",
+   "pos": "",
+   "content": "메뉴 추가 요청 드립니다!",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "• 피자 : 비프타코 15900원 /치킨타코 15900원 \n• 크러스트 : 비프타코크러스트 18900원 / 치킨타코크러스트 18900원\n• 추가목록에 피클과 갈릭소스 옆 또는 아래(비어있는 자리에) 할라피뇨 500원 추가 요청 주셨습니다."
+   ],
+   "rc": 3,
+   "lr": "1785314578.396469",
+   "status": "done",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785313848978369"
+  },
   {
    "ts": "1785310986.252279",
    "date": "2026-07-29",
@@ -10211,29 +10233,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782723173669459"
-  },
-  {
-   "ts": "1782722130.881849",
-   "date": "2026-06-29",
-   "time": "17:35",
-   "store": "삼꾹포차",
-   "biz": "5951702483",
-   "phone": "01089740408\n-",
-   "pos": "토스포스",
-   "content": "",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/open?id=1bUa82rH7jB-fC98LgpET8Hjt5FA9227V",
-    "https://drive.google.com/open?id=15ExbIlMLjTO10HAs5a5PeZimWeJu4PbS"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782722629.301339",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782722130881849"
   }
  ]
 };
