@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 163,
- "updatedAt": "2026-07-29 10:45",
+ "version": 164,
+ "updatedAt": "2026-07-29 11:01",
  "days": 30,
  "items": [
   {
@@ -10445,28 +10445,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782705355490619"
-  },
-  {
-   "ts": "1782697801.868819",
-   "date": "2026-06-29",
-   "time": "10:50",
-   "store": "무인도 닭발",
-   "biz": "2750403900",
-   "phone": "01067897867\n-",
-   "pos": "토스포스",
-   "content": "",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/open?id=1LW_DhcwCfSFjP8RP9Yb9iJeOYB-lGDx-"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1782697806.571379",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782697801868819"
   }
  ]
 };
