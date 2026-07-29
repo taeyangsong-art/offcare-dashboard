@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 185,
- "updatedAt": "2026-07-29 18:15",
+ "version": 186,
+ "updatedAt": "2026-07-29 18:30",
  "days": 30,
  "items": [
   {
@@ -8212,8 +8212,8 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1783077255.612019",
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김기범",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783070753915239"
   },
   {
@@ -10176,46 +10176,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782728330069779"
-  },
-  {
-   "ts": "1782724786.721929",
-   "date": "2026-06-29",
-   "time": "18:19",
-   "store": "해운대(주)형아우의꿈",
-   "biz": "7338802197",
-   "phone": "",
-   "pos": "퍼스트포스",
-   "content": "테이블 작업",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1782724792.809519",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782724786721929"
-  },
-  {
-   "ts": "1782724752.485459",
-   "date": "2026-06-29",
-   "time": "18:19",
-   "store": "(봉명동)(주) 형과아우",
-   "biz": "1398802492",
-   "phone": "",
-   "pos": "",
-   "content": "테이블 작업",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1782724757.506299",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782724752485459"
   }
  ]
 };
