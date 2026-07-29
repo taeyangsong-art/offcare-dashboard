@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 184,
- "updatedAt": "2026-07-29 18:00",
+ "version": 185,
+ "updatedAt": "2026-07-29 18:15",
  "days": 30,
  "items": [
   {
@@ -24,10 +24,10 @@ window.MENU_REQUESTS = {
     "해상도 매우작음 메일 요청",
     "메일 보내주시기로함 보류"
    ],
-   "rc": 4,
-   "lr": "1785315388.511009",
-   "status": "wait",
-   "handler": null,
+   "rc": 5,
+   "lr": "1785315705.634509",
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785315016248479"
   },
   {
@@ -1007,8 +1007,8 @@ window.MENU_REQUESTS = {
     "넵!",
     "아직 기기 설치전으로 확인이 어려우시다고 합니다.\n이상있는 경우 재문의부탁드렸습니다."
    ],
-   "rc": 9,
-   "lr": "1785299104.864159",
+   "rc": 11,
+   "lr": "1785316362.636689",
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784969347825369"
@@ -10216,26 +10216,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782724752485459"
-  },
-  {
-   "ts": "1782723742.207129",
-   "date": "2026-06-29",
-   "time": "18:02",
-   "store": "주식회사 언스페셜티(한남)",
-   "biz": "5788802440",
-   "phone": "01031183364",
-   "pos": "",
-   "content": "같은 사업자인 '주식회사 언스페셜티(행사)' 매장 메뉴를 복사 요청 주시어 부탁 드리겠습니다.\n가능한 배열까지 맞춰달라고 하셨으나 어려울 수 있는점 양해 드려 두었습니다. :햄스터-꾸벅:",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 11,
-   "lr": "1782724897.959039",
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782723742207129"
   }
  ]
 };
