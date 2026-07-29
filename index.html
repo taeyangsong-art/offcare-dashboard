@@ -1234,6 +1234,33 @@ function showDutyPopup(m, person, mins){
   document.body.appendChild(el);
   try{ if(window.Notification && Notification.permission==="granted") new Notification(`🏠 ${m.title} ${mins}분 전`, {body:`원격 근무 당번: ${person}`}); }catch(e){}
 }
+// 🕙 금요일 알림 — 다음주 월요일 10시 출근자 (주 1회, 그 주 금요일에 한 번만)
+const LS_TENALERT = "opcare_tenalert_v1";
+function nextMondayFrom(d){ const x=new Date(d.getFullYear(),d.getMonth(),d.getDate()); const add=(8-x.getDay())%7||7; return ymd(addDays(x, add)); }
+function checkTenAlert(){
+  const now=today(); if(now.getDay()!==5) return;           // 금요일에만
+  const mon=nextMondayFrom(now), who=tenPersonAt(mon); if(!who) return;
+  const seen=load(LS_TENALERT,{});
+  if(seen[mon]===who) return;                               // 같은 담당자로 이미 알림 → 재알림 안 함(교체되면 다시 알림)
+  seen[mon]=who; save(LS_TENALERT, seen);
+  Object.keys(seen).forEach(k=>{ if(k<ymd(now)) delete seen[k]; }); save(LS_TENALERT, seen);
+  showTenPopup(mon, who);
+}
+function showTenPopup(mon, who){
+  const ex=document.getElementById("tenPop"); if(ex) ex.remove();
+  const el=document.createElement("div"); el.id="tenPop"; el.className="duty-pop-overlay";
+  el.innerHTML=`<div class="duty-pop">
+    <div class="duty-pop-ic">🕙</div>
+    <div class="duty-pop-sub">다음주 월요일 (${fmtShort(mon)})</div>
+    <div class="duty-pop-title">10시 출근 로테이션</div>
+    <div class="duty-pop-badge">다음주 10시 출근자</div>
+    <div class="duty-pop-person">${escapeHtml(who)}</div>
+    <div class="duty-pop-time">🕒 10:00 출근 · 한 주(월~금)</div>
+    <button class="duty-pop-btn" onclick="document.getElementById('tenPop').remove()">확인했어요 👍</button>
+  </div>`;
+  document.body.appendChild(el);
+  try{ if(window.Notification && Notification.permission==="granted") new Notification('🕙 다음주 10시 출근', {body:`${fmtShort(mon)} · ${who}`}); }catch(e){}
+}
 function enableDutyNotif(){
   if(!window.Notification){ alert("이 브라우저는 알림을 지원하지 않아요."); return; }
   Notification.requestPermission().then(p=>alert(p==="granted"?"브라우저 알림이 켜졌어요! 🔔 (탭이 열려 있을 때 30분 전 알려드려요)":"알림이 꺼져 있어요. 주소창 왼쪽 자물쇠 아이콘 → 알림 허용으로 켤 수 있어요."));
@@ -4986,9 +5013,10 @@ function boot(){
   applySlackData();
   checkRefreshWeek();                                     // 새 주면 리프레쉬 타임 초기화
   renderNav(); renderMain(); checkAuth(); applyThemeLabel();
-  loadCloud(function(){ if(gameMe) recordMissLog(gameMe); renderMain(); });   // 팀 공유 클라우드 로드(게임 코인 + VOC 편집·직원지정·먼슬리코멘트·당번) → 활성 탭 재렌더
+  loadCloud(function(){ if(gameMe) recordMissLog(gameMe); renderMain(); checkTenAlert(); });   // 팀 공유 클라우드 로드(교체 내역 반영 후 10출 알림)(게임 코인 + VOC 편집·직원지정·먼슬리코멘트·당번) → 활성 탭 재렌더
   startAutoRefresh();
   checkDutyAlert(); setInterval(checkDutyAlert, 60000);   // 회의 30분 전 당번 알림
+  setInterval(checkTenAlert, 300000);                     // 금요일 → 다음주 월요일 10시 출근자 알림 (최초 1회는 클라우드 로드 후)
   setInterval(checkRefreshWeek, 300000);                 // 탭 오래 켜둬도 월요일 넘어가면 초기화
 }
 // 데이터 파일을 GitHub 원본(raw)에서 직접 fetch → Pages 배포를 안 기다리고 반영(지연 최대 ~5분).
