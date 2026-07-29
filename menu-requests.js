@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 187,
- "updatedAt": "2026-07-29 18:45",
+ "version": 188,
+ "updatedAt": "2026-07-29 19:00",
  "days": 30,
  "items": [
   {
@@ -23,8 +23,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "카테고리: 커피\n메뉴명: 고구마토핑 감자토핑\n가격: 1,000 ~ 1,500원으로 변경 요청"
    ],
-   "rc": 4,
-   "lr": "1785318269.634539",
+   "rc": 5,
+   "lr": "1785318364.735429",
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785317742709279"
