@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 170,
- "updatedAt": "2026-07-29 13:45",
+ "version": 171,
+ "updatedAt": "2026-07-29 14:15",
  "days": 30,
  "items": [
   {
@@ -10395,26 +10395,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782710372744349"
-  },
-  {
-   "ts": "1782709800.042029",
-   "date": "2026-06-29",
-   "time": "14:10",
-   "store": "행복한집",
-   "biz": "3931301196",
-   "phone": "",
-   "pos": "퍼스트포스",
-   "content": "메뉴 금액 추가 요청\n\n01056531786\n변경 완료 후 문자 안내 요청\n\n금액 변경\n제육볶음 10,000원\n\n상품 추가\n주류  > 콜키지 /  10,000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782709920.664939",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782709800042029"
   }
  ]
 };
