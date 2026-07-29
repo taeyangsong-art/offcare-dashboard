@@ -19,8 +19,13 @@ const CHANNELS = [
   { id: 'C07B5E78J23', label: 'VOC',         type: 'voc' },                                   // 설문 응답(점수/업종/사유) 별도 파싱
 ];
 
-const personMap = { '규빈':'김규빈','선유':'배선유','성현':'심성현','동욱':'김동욱','현기':'김현기','태양':'송태양','기범':'김기범','상원':'서상원','민석':'최민석' };
+const personMap = { '규빈':'김규빈','선유':'배선유','성현':'심성현','동욱':'김동욱','현기':'김현기','태양':'송태양','기범':'김기범','상원':'서상원','민석':'최민석','경림':'고경림' };
 const catMap = { '원격온보딩':'onboarding', '원격as':'as', '원격명의변경':'transfer', '원격메뉴등록':'menu', '원격voc':'voc', '원격배달':'delivery' };
+// 이모지 이름 목록은 personMap에서 자동 생성 — 입·퇴사 시 personMap만 고치면 됨
+const NAMES = Object.keys(personMap).join('|');
+const RE_EMP      = new RegExp('^원격(' + NAMES + ')$');          // 원격OOO (완료 담당자)
+const RE_CONFIRM  = new RegExp('^(' + NAMES + ')(_확인.*)?$');     // OOO / OOO_확인
+const RE_CONFIRM2 = new RegExp('^(' + NAMES + ')_?확인_?$');       // OOO_확인_
 
 // VOC 저점 사유 자동분류 규칙 (label = 표시 카테고리, kw = 포함되면 그 카테고리로 분류). 순서대로 첫 매칭 우선.
 const VOC_REASON_RULES = [
@@ -205,13 +210,13 @@ async function tallyInto(msgs, ch, counts, pending, done, opts) {
     const intake = /오프라인/.test(intakeRaw) ? 'offline' : 'online';
 
     let emp = null;
-    for (const n of names) { const pm = n.match(/^원격(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)$/); if (pm) { emp = personMap[pm[1]]; break; } }
+    for (const n of names) { const pm = n.match(RE_EMP); if (pm) { emp = personMap[pm[1]]; break; } }
     let emojiCat = null;
     for (const n of names) { if (catMap[n] && catMap[n] !== 'voc') { emojiCat = catMap[n]; break; } }  // 원격voc는 업무 카테고리로 안 씀(설문 VOC로 별도 집계)
     const hasVocTag = names.includes('원격voc');
     const hasExtern = names.includes('원격외주');
     let confirmPerson = null;
-    for (const n of names) { const cm = n.match(/^(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)(_확인.*)?$/); if (cm) { confirmPerson = personMap[cm[1]]; break; } }
+    for (const n of names) { const cm = n.match(RE_CONFIRM); if (cm) { confirmPerson = personMap[cm[1]]; break; } }
     const hasAbsent = names.some(n => /부재/.test(n));                       // 1차/2차 부재
     const absTag = names.some(n => /2차.?부재/.test(n)) ? '2차 부재' : '1차 부재';
     const hasDup = names.some(n => /중복/.test(n));                          // 팀이 '진짜 중복'에만 찍는 표시
@@ -262,8 +267,8 @@ function trackResp(data, msgs, ch) {
     const names = (m.reactions || []).map(r => r.name);
     if (names.some(n => /중복/.test(n)) || names.includes('x')) { delete W[key]; continue; }   // 중복·X(잘못올린글) → 표본 제외
     const hasCat = names.some(n => catMap[n] && catMap[n] !== 'voc');
-    const hasEmp = names.some(n => /^원격(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)$/.test(n));
-    const hasConfirm = names.some(n => /^(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)(_확인.*)?$/.test(n));
+    const hasEmp = names.some(n => RE_EMP.test(n));
+    const hasConfirm = names.some(n => RE_CONFIRM.test(n));
     const hasExtern = names.includes('원격외주');
     const responded = hasCat || hasEmp || hasConfirm || hasExtern;   // 담당자가 손댐(확인/완료/카테고리/외주)
     if (responded) {
@@ -285,8 +290,8 @@ function trackResp(data, msgs, ch) {
         if (store.length > 30) store = store.slice(0, 30);
         const biz = ((text.match(/사업자\s*번?호?\s*[:：]?\s*([\d\-]+)/) || [])[1] || '').replace(/-/g, '').trim();
         let who = '';
-        for (const n of names) { const pm = n.match(/^원격(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)$/); if (pm) { who = personMap[pm[1]]; break; } }
-        if (!who) for (const n of names) { const cm = n.match(/^(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)(_확인.*)?$/); if (cm) { who = personMap[cm[1]]; break; } }
+        for (const n of names) { const pm = n.match(RE_EMP); if (pm) { who = personMap[pm[1]]; break; } }
+        if (!who) for (const n of names) { const cm = n.match(RE_CONFIRM); if (cm) { who = personMap[cm[1]]; break; } }
         DD[day].items.push({ hm: kstHM(m.ts), min: Math.round(respMin * 10) / 10, store, biz, who, cat: catKey });
         delete W[key];
       }
@@ -354,8 +359,8 @@ async function tallyVoc(msgs, voc, channelId, opts) {
     let confirmP = null, remoteP = null;
     for (const nm of names) {
       let mm;
-      if (!confirmP && (mm = nm.match(/^(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)_?확인_?$/))) confirmP = personMap[mm[1]];
-      if (!remoteP  && (mm = nm.match(/^원격(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)$/)))     remoteP = personMap[mm[1]];
+      if (!confirmP && (mm = nm.match(RE_CONFIRM2))) confirmP = personMap[mm[1]];
+      if (!remoteP  && (mm = nm.match(RE_EMP)))     remoteP = personMap[mm[1]];
     }
     const autoDone = !!confirmP && hasIshop;                     // 확인 + 아이샵케어 VOC체크(ishopcare)
     const handler = confirmP || remoteP || '';

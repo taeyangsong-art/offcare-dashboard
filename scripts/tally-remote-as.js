@@ -16,8 +16,13 @@ let t = fs.readFileSync(file, 'utf8');
 t = t.replace(/\\u([0-9a-fA-F]{4})/g, (m, g) => String.fromCharCode(parseInt(g, 16))); // \uXXXX 디코드
 t = t.replace(/\\\//g, '/'); // \/ 언이스케이프
 
-const personMap = { '규빈':'김규빈','선유':'배선유','성현':'심성현','동욱':'김동욱','현기':'김현기','태양':'송태양','기범':'김기범','상원':'서상원','민석':'최민석' };
+const personMap = { '규빈':'김규빈','선유':'배선유','성현':'심성현','동욱':'김동욱','현기':'김현기','태양':'송태양','기범':'김기범','상원':'서상원','민석':'최민석','경림':'고경림' };
 const catMap = { '원격온보딩':'onboarding', '원격as':'as', '원격명의변경':'transfer', '원격메뉴등록':'menu', '원격voc':'voc', '원격배달':'delivery' };
+// 이모지 이름 목록은 personMap에서 자동 생성 — 입·퇴사 시 personMap만 고치면 됨
+const NAMES = Object.keys(personMap).join('|');
+const RE_EMP      = new RegExp('^원격(' + NAMES + ')$');          // 원격OOO (완료 담당자)
+const RE_CONFIRM  = new RegExp('^(' + NAMES + ')(_확인.*)?$');     // OOO / OOO_확인
+const RE_CONFIRM2 = new RegExp('^(' + NAMES + ')_?확인_?$');       // OOO_확인_
 
 const counts = {};
 const pending = [];
@@ -38,7 +43,7 @@ for (const b of t.split('=== Message from').slice(1)) {
 
   // 완료 담당자 (원격OOO)
   let emp = null;
-  for (const n of names) { const pm = n.match(/^원격(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)$/); if (pm) { emp = personMap[pm[1]]; break; } }
+  for (const n of names) { const pm = n.match(RE_EMP); if (pm) { emp = personMap[pm[1]]; break; } }
   // 카테고리 이모지
   let catKey = null;
   for (const n of names) { if (catMap[n]) { catKey = catMap[n]; break; } }
@@ -46,7 +51,7 @@ for (const b of t.split('=== Message from').slice(1)) {
   if (!catKey && !hasExtern && emp) catKey = 'as';
   // 확인 담당자 (OOO_확인) — 예: 태양_확인 → 송태양
   let confirmPerson = null;
-  for (const n of names) { const cm = n.match(/^(규빈|선유|성현|동욱|현기|태양|기범|상원|민석)(_확인.*)?$/); if (cm) { confirmPerson = personMap[cm[1]]; break; } }
+  for (const n of names) { const cm = n.match(RE_CONFIRM); if (cm) { confirmPerson = personMap[cm[1]]; break; } }
   const has2ndAbsent = names.some(n => /2차.?부재/.test(n)); // 2차부재는 확인필요에서 제외
   const doer = emp || confirmPerson;   // 처리자(원격OOO 우선, 없으면 확인자)
 

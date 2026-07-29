@@ -19,7 +19,8 @@ var EMP_EMAIL = {
   '김현기': '',  // gim hyeon-gi
   '배선유': '',  // bae seon-yu
   '최민석': '',  // choe min-seok
-  '심성현': ''   // sim seong-hyeon
+  '심성현': '',  // sim seong-hyeon
+  '고경림': ''   // go gyeong-rim
 };
 function norm_(s) { try { return ('' + s).normalize('NFC'); } catch (x) { return '' + s; } }
 function emailOf_(emp) {
