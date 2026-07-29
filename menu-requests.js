@@ -3,10 +3,32 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 175,
- "updatedAt": "2026-07-29 15:15",
+ "version": 176,
+ "updatedAt": "2026-07-29 15:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1785306504.576739",
+   "date": "2026-07-29",
+   "time": "15:28",
+   "store": "피자스쿨(구로전화국점)",
+   "biz": "1191789592",
+   "phone": "01027538863",
+   "pos": "오케이포스",
+   "content": "오케이포스) 메뉴 추가 요청드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "피자 카테고리\n비프타코피자 15,900원\n치킨타코피자 15,900원\n\n기존 메뉴 중간에 가격 오름차순으로 정렬 부탁드리겠습니다."
+   ],
+   "rc": 2,
+   "lr": "1785306534.644539",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785306504576739"
+  },
   {
    "ts": "1785297470.238059",
    "date": "2026-07-29",
@@ -10272,26 +10294,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782714969780439"
-  },
-  {
-   "ts": "1782714546.152969",
-   "date": "2026-06-29",
-   "time": "15:29",
-   "store": "강창구진순대미사센텀비즈점",
-   "biz": "8677800154",
-   "phone": "",
-   "pos": "퍼스트포스",
-   "content": "터치키 갈아엎기",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782782409.831199",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782714546152969"
   }
  ]
 };
