@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 169,
- "updatedAt": "2026-07-29 13:30",
+ "version": 170,
+ "updatedAt": "2026-07-29 13:45",
  "days": 30,
  "items": [
   {
@@ -10415,46 +10415,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782709800042029"
-  },
-  {
-   "ts": "1782708305.613929",
-   "date": "2026-06-29",
-   "time": "13:45",
-   "store": "커피에반하다",
-   "biz": "8332800840",
-   "phone": "",
-   "pos": "",
-   "content": "메뉴 생성 요청드립니다!\n이미 생성되어있는 메뉴 제외 메뉴판 내 이미지 추가 요청드립니다:man-bowing:",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1782722153.238209",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782708305613929"
-  },
-  {
-   "ts": "1782708028.536729",
-   "date": "2026-06-29",
-   "time": "13:40",
-   "store": "육일횟집",
-   "biz": "8961002811",
-   "phone": "01047169572",
-   "pos": "스파로스포스",
-   "content": "스파로스  포스 사용 가맹점 메뉴 가격 변경 요청 드립니다,.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782710995.483509",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782708028536729"
   }
  ]
 };
