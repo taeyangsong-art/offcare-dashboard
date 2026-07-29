@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 160,
- "updatedAt": "2026-07-29 09:15",
+ "version": 161,
+ "updatedAt": "2026-07-29 10:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1785286840.172609",
+   "date": "2026-07-29",
+   "time": "10:00",
+   "store": "커넥츠커피 마곡점",
+   "biz": "5450403702",
+   "phone": "",
+   "pos": "",
+   "content": "내일 설치 매장으로 메뉴 등록 부탁드립니다. 엑셀파일 첨부드립니다",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1785286886.927319",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785286840172609"
+  },
   {
    "ts": "1785236620.267649",
    "date": "2026-07-28",
@@ -10507,26 +10527,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782696202534429"
-  },
-  {
-   "ts": "1782695187.250299",
-   "date": "2026-06-29",
-   "time": "10:06",
-   "store": "신설식당",
-   "biz": "1023894904",
-   "phone": "01031105145",
-   "pos": "",
-   "content": "명변 / 메뉴복사요청 드립니다.\n2582602193 > 1023894904",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782695218.875529",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782695187250299"
   }
  ]
 };
