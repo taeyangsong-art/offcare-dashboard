@@ -942,19 +942,9 @@
   .dp-note{margin-top:12px; font-size:12px; color:var(--gray2); line-height:1.5}
   .dp-auto{width:100%; margin-top:10px; border:1px dashed var(--line); background:var(--surface2); color:var(--gray);
     border-radius:10px; padding:9px; font-family:inherit; font-size:12.5px; font-weight:700; cursor:pointer}
-  /* 원격 근무 당번 카드 */
-  .duty-remote-card .card-head{align-items:center}
-  .dr-list{display:flex; flex-direction:column; gap:7px}
-  .dr-row{display:flex; align-items:center; gap:10px; padding:9px 12px; border:1px solid var(--line-soft); border-radius:10px; background:var(--surface2)}
-  .dr-row.next{border-color:#ffd8a8; background:#fff8ef}
-  .dr-when{flex:0 0 auto; font-size:13px; font-weight:700; color:var(--gray); min-width:80px}
-  .dr-title{flex:1; font-size:14px; font-weight:600; color:var(--ink); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
-  .dr-person{flex:0 0 auto; display:inline-flex; align-items:center; gap:4px; font-size:13.5px; font-weight:800; color:#b45309; background:#fff3d6; padding:2px 6px 2px 10px; border-radius:20px}
-  .dr-sel{border:none; background:transparent; font-family:inherit; font-size:13.5px; font-weight:800; color:#b45309; cursor:pointer; padding:1px 2px; border-radius:6px}
-  .dr-sel:hover{background:rgba(180,83,9,.12)}
-  .dr-sel:focus{outline:none}
-  .dr-reset{border:none; background:transparent; color:#b45309; cursor:pointer; font-size:13px; font-weight:800; padding:0 3px; opacity:.7}
-  .dr-reset:hover{opacity:1}
+  /* 달력 하단 — 회의 중 원격 근무당번 순서 (안내 문구만, 변경은 달력의 당번 이름 클릭) */
+  .duty-order{margin-top:10px; padding-top:10px; border-top:1px solid var(--line-soft);
+    font-size:12.5px; font-weight:700; color:#b45309; line-height:1.6}
   /* 30분 전 당번 팝업 */
   .duty-pop-overlay{position:fixed; inset:0; background:rgba(15,15,15,.55); backdrop-filter:blur(3px); display:flex; align-items:center; justify-content:center; z-index:9999; animation:dutyfade .2s ease}
   @keyframes dutyfade{from{opacity:0}to{opacity:1}}
@@ -1445,8 +1435,6 @@ function swapDutyOverride(key, newPerson){
   renderShare();
   if(mate) alert(`🔁 맞교환 완료\n· ${fmtShort(key.split('|')[0])} → ${newPerson}\n· ${fmtShort(mate.date)} → ${cur}`);
 }
-// 다가오는 회의에서 같은 사람이 두 번 이상 당번인지 (있으면 경고 표시)
-function dutyDupSet(list){ const seen={}, dup={}; list.forEach(x=>{ if(seen[x.person]) dup[x.person]=1; seen[x.person]=1; }); return dup; }
 // 회의 키(날짜|시간|제목)에 따옴표가 섞여도 안전하게 onclick으로 넘기기 위한 인덱스 테이블
 let DUTYKEYS=[];
 function dutyKeyIdx(k){ const i=DUTYKEYS.indexOf(k); return i>=0?i:(DUTYKEYS.push(k)-1); }
@@ -4506,7 +4494,6 @@ function renderShare(){
   const dows=["일","월","화","수","목","금","토"];
   const todayStr=ymd(today());
   const dmap=dutyMap();   // 회의별 원격 당번(순번 자동)
-  const dutyUpcoming=meetingDutyList().filter(mm=>mm.date>=todayStr).slice(0,4).map(mm=>{ const k=mm.date+"|"+mm.time+"|"+mm.title; return {...mm, key:k, person:dutyPersonAt(k, dmap[k])}; });
 
   const dayCells = cells.map(d=>{
     if(d===null) return `<div class="daycell share empty"></div>`;
@@ -4569,14 +4556,8 @@ function renderShare(){
         ${EMPLOYEES.map(n=>`<span><span class="swatch" style="background:${empColor(n)}"></span>${n}</span>`).join("")}
         <span style="margin-left:6px"><span class="swatch" style="background:#e8f0fe;border:1px solid #c6dafc"></span>회의(구글)</span>
       </div>
+      <div class="duty-order">🏠 회의 중 원격 근무당번 순서 · ${DUTY_ORDER.join(' → ')}</div>
     </div>
-
-    ${dutyUpcoming.length?`<div class="card duty-remote-card">
-      <div class="card-head"><h3>🏠 회의 중 원격 근무 당번</h3><span class="hint">정기회의·타운홀 순번</span>
-        <button class="btn" style="margin-left:auto" onclick="enableDutyNotif()">🔔 알림 켜기</button></div>
-      <div class="dr-list">${(function(){ const dup=dutyDupSet(dutyUpcoming); return dutyUpcoming.map((mm,i)=>{ const ki=dutyKeyIdx(mm.key); return `<div class="dr-row ${i===0?'next':''}"><span class="dr-when">${fmtShort(mm.date)}${mm.time?' '+escapeHtml(mm.time.split('~')[0]):''}</span><span class="dr-title">${escapeHtml(mm.title)}</span><span class="dr-person">${dup[mm.person]?'<span title="같은 사람이 두 번 당번이에요" style="color:var(--red)">⚠️</span>':'🏠'} <select class="dr-sel" onchange="swapDutyByIdx(${ki}, this.value)">${EMPLOYEES.map(e=>`<option ${e===mm.person?'selected':''}>${e}</option>`).join('')}</select> 근무당번${DUTYOVER[mm.key]?`<button class="dr-reset" title="순번 자동으로 되돌리기" onclick="pickDuty(${ki},'')">↺</button>`:''}</span></div>`; }).join(''); })()}</div>
-      <div class="note" style="font-size:12px;color:var(--gray2);margin-top:10px">순번: ${DUTY_ORDER.join(' → ')} · 이름을 바꾸면 그 사람이 맡던 회의와 <b>맞교환</b>되고 <b>달력에도 반영</b> · ↺ = 순번 자동 · 회의 <b>30분 전 팝업</b> 알림(탭 열려 있을 때)</div>
-    </div>`:''}
   `;
 }
 
