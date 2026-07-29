@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 167,
- "updatedAt": "2026-07-29 12:00",
+ "version": 168,
+ "updatedAt": "2026-07-29 13:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1785297470.238059",
+   "date": "2026-07-29",
+   "time": "12:57",
+   "store": "러프로스터스",
+   "biz": "6201155265",
+   "phone": "",
+   "pos": "",
+   "content": "메뉴 이미지등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785297475.525439",
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785297470238059"
+  },
   {
    "ts": "1785286840.172609",
    "date": "2026-07-29",
@@ -354,10 +374,11 @@ window.MENU_REQUESTS = {
    "att": [],
    "replies": [
     "아이고.. 이미지를 이렇게 주시면 등록 불가",
-    "통화로 이미지 재첨부 안내 / 메뉴 먼저 등록"
+    "통화로 이미지 재첨부 안내 / 메뉴 먼저 등록",
+    "감사합니당"
    ],
-   "rc": 4,
-   "lr": "1785213835.316749",
+   "rc": 6,
+   "lr": "1785297461.581749",
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785212790887709"
@@ -10433,26 +10454,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782708028536729"
-  },
-  {
-   "ts": "1782705355.490619",
-   "date": "2026-06-29",
-   "time": "12:55",
-   "store": "용용선생 부산서면점",
-   "biz": "7262701210",
-   "phone": "01041724316",
-   "pos": "",
-   "content": "소스 옵션 변경요청\n1. 얼얼함 : 1단계/2단계 단계를 없애고 얼얼함 추가로 통일\n            가격도 500원 -> 무료로 변경\n2. 지마장 추가 -> 무료로 변경",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1782708868.061009",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782705355490619"
   }
  ]
 };
