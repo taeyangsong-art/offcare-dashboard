@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 1958,
+  "version": 1959,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -68331,7 +68331,7 @@ window.SLACK_DATA = {
     "2026-07-29": {
       "counts": {
         "as": {
-          "최민석": 13,
+          "최민석": 14,
           "김현기": 20,
           "김기범": 10,
           "서상원": 27,
@@ -68372,6 +68372,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "19:07",
+          "store": "경성양꼬치",
+          "biz": "5631500276",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "옵션 수량 선택 시 메뉴 수량대로 선택되는 오류가 있다고 하여 점검 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
         {
           "time": "19:04",
           "store": "튜베어",
@@ -71129,30 +71140,30 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 207,
-        "offline": 42,
+        "offline": 43,
         "unknown": 0
       },
-      "updatedAt": "19:14",
+      "updatedAt": "19:29",
       "voc": {
-        "responses": 18,
+        "responses": 19,
         "install": {
           "count": 5,
           "low": 1
         },
         "nps": {
-          "count": 18,
+          "count": 19,
           "low": 4
         },
         "high": {
           "install": 4,
-          "nps": 10
+          "nps": 11
         },
         "npsDist": {
           "4": 2,
           "5": 2,
           "6": 1,
           "9": 3,
-          "10": 10
+          "10": 11
         },
         "installDist": {
           "1": 1,
@@ -71164,6 +71175,10 @@ window.SLACK_DATA = {
           "기타": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 3,
+            "low": 0
+          },
           "3개월": {
             "total": 5,
             "low": 2
@@ -71179,20 +71194,16 @@ window.SLACK_DATA = {
           "6개월": {
             "total": 2,
             "low": 0
-          },
-          "1개월": {
-            "total": 2,
-            "low": 0
           }
         },
         "byVan": {
+          "KSNET": {
+            "total": 3,
+            "low": 1
+          },
           "KPN": {
             "total": 6,
             "low": 2
-          },
-          "KSNET": {
-            "total": 2,
-            "low": 1
           },
           "KOCES": {
             "total": 4,
@@ -71356,10 +71367,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1785148201.764179": {
-        "post": "1785148201.764179",
-        "lastSeen": 1785148229.495
-      },
       "1785215782.499039": {
         "post": "1785215782.499039",
         "lastSeen": 1785269388.371
@@ -71378,23 +71385,19 @@ window.SLACK_DATA = {
       },
       "1785299083.390319": {
         "post": "1785299083.390319",
-        "lastSeen": 1785320131.483
+        "lastSeen": 1785321050.422
       },
       "1785319202.801109": {
         "post": "1785319202.801109",
-        "lastSeen": 1785320131.483
+        "lastSeen": 1785321050.422
       },
       "1785318635.801279": {
         "post": "1785318635.801279",
-        "lastSeen": 1785320131.483
-      },
-      "1785319653.024839": {
-        "post": "1785319653.024839",
-        "lastSeen": 1785320131.483
+        "lastSeen": 1785321050.422
       },
       "1785320043.130619": {
         "post": "1785320043.130619",
-        "lastSeen": 1785320131.483
+        "lastSeen": 1785321050.422
       }
     },
     "days": {
@@ -80458,8 +80461,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-07-29": {
-        "cnt": 152,
-        "sumMin": 2610.4642076770465,
+        "cnt": 153,
+        "sumMin": 2626.0963353594143,
         "over": 16,
         "items": [
           {
@@ -81675,6 +81678,14 @@ window.SLACK_DATA = {
             "min": 11.3,
             "store": "만야수산",
             "biz": "3534101570",
+            "who": "최민석",
+            "cat": "as"
+          },
+          {
+            "hm": "19:07",
+            "min": 15.6,
+            "store": "경성양꼬치",
+            "biz": "5631500276",
             "who": "최민석",
             "cat": "as"
           }
