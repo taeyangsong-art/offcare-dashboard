@@ -3529,6 +3529,17 @@ function momTile(label,cur,prev,higherBad,suffix,tone){
     <div class="delta ${cls}">${arrow} ${pct} <span style="color:var(--gray2);font-weight:500">전월 ${prev}</span></div></div>`;
 }
 function progressBar(pct,color){ return `<div class="prog"><div class="prog-fill" style="width:${Math.min(100,pct)}%;background:${color}"></div></div>`; }
+// 전월 대비 인라인 칩 — o.unit('%p'/'점'/'건'), o.digits(소수 자리), o.higherBad(증가가 나쁨)
+// .mom.up = 빨강(악화), .mom.down = 초록(개선) 규칙이라 '좋아졌으면 down' 클래스를 준다.
+function momChip(cur, prev, o){
+  o=o||{}; const d=(cur||0)-(prev||0), dg=o.digits||0;
+  const f=n=>Number(n||0).toFixed(dg);
+  if(prev==null || (!prev && !cur)) return '';
+  const cls = d===0 ? 'same' : ((o.higherBad ? d<0 : d>0) ? 'down' : 'up');
+  const arrow = d>0?'▲':d<0?'▼':'–';
+  const bu = o.unit==='%p' ? '%' : (o.unit||'');   // 증감은 %p, 전월 값 자체는 %
+  return `<span class="mom ${cls}" title="전월 ${f(prev)}${bu}">${arrow} ${f(Math.abs(d))}${o.unit||''} <span style="font-weight:600;opacity:.75">전월 ${f(prev)}${bu}</span></span>`;
+}
 let VOCQUOTE = [];   // 대표 저점/칭찬 카드 클릭 상세용 (renderVocMonthly 렌더 시 채워짐)
 function quoteCard(text, meta, tone, full){
   const t=(text||'-'), short=t.length>72?t.slice(0,72)+'…':t;
@@ -3968,6 +3979,13 @@ function renderVocMonthly(){
   const vStatSty={'처리완료':{c:'#1e40af',bg:'#dbeafe',bd:'#bfdbfe',bar:'#3b82f6'},'부재':{c:'#b91c1c',bg:'#ffe1de',bd:'#fecaca',bar:'#ef4444'},'통화거부':{c:'#c2410c',bg:'#ffedd5',bd:'#fed7aa',bar:'#f97316'},'OB필요없음':{c:'#166534',bg:'#dcfce7',bd:'#bbf7d0',bar:'#22c55e'},'처리중':{c:'#475569',bg:'#eef1f4',bd:'#dde3ea',bar:'#94a3b8'}};
   const posCount=vpCount+(v.high.install+v.high.nps), sentTot=posCount+totalIn;
   const posRate=sentTot?Math.round(posCount/sentTot*100):0;
+  // ── 전월 대비 지표(NPS·점수분포·처리완료율·긍정비율) ──
+  const pns=vocNpsStats(pv.npsDist), pAvgInstall=avgScore(pv.installDist);
+  const pDoneCount=pv.alerts.filter(a=>vocDone(vocEffStatus(a))).length;
+  const pDoneRate=pvIn?Math.round(pDoneCount/pvIn*100):0;
+  const pPosCount=staffPraises(pv.praises).length+(pv.high.install+pv.high.nps), pSentTot=pPosCount+pvIn;
+  const pPosRate=pSentTot?Math.round(pPosCount/pSentTot*100):0;
+  const pctOf=(n,t)=>t?Math.round(n/t*100):0;
   const tenRows=Object.entries(v.byTenure).sort((a,b)=>b[1].total-a[1].total);
   const vanRows=Object.entries(v.byVan).sort((a,b)=>b[1].total-a[1].total);
   const tenMax=Math.max(1,...tenRows.map(r=>r[1].total)), vanMax=Math.max(1,...vanRows.map(r=>r[1].total));
@@ -3999,33 +4017,47 @@ function renderVocMonthly(){
 
     <div class="grid2">
       <div class="card">
-        <div class="card-head"><h3>🎯 NPS 지표</h3><span class="hint">추천의향 ${ns.total}건 기준</span></div>
-        <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:6px">
+        <div class="card-head"><h3>🎯 NPS 지표</h3><span class="hint">추천의향 ${ns.total}건 기준 · 전월 ${pns.total}건</span></div>
+        <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:6px;flex-wrap:wrap">
           <div style="font-size:44px;font-weight:800;letter-spacing:-.03em;color:${ns.nps>=0?'var(--green)':'var(--red)'}">${ns.nps}</div>
-          <div style="font-size:13px;color:var(--gray)">평균 추천 ${ns.avg.toFixed(1)} · 구매설치 만족 ${avgInstall.toFixed(1)}/5</div>
+          ${momChip(ns.nps, pns.nps, {})}
+          <div style="font-size:13px;color:var(--gray)">평균 추천 ${ns.avg.toFixed(1)} ${momChip(ns.avg, pns.avg, {digits:1, unit:'점'})} · 구매설치 만족 ${avgInstall.toFixed(1)}/5 ${momChip(avgInstall, pAvgInstall, {digits:1, unit:'점'})}</div>
         </div>
         <div class="prog" style="height:14px">
           <div class="prog-fill" style="width:${ns.total?ns.det/ns.total*100:0}%;background:#ff3b30" title="비추천(0-6) ${ns.det}"></div>
           <div class="prog-fill" style="width:${ns.total?ns.pass/ns.total*100:0}%;background:#ff9500" title="중립(7-8) ${ns.pass}"></div>
           <div class="prog-fill" style="width:${ns.total?ns.prom/ns.total*100:0}%;background:#34c759" title="추천(9-10) ${ns.prom}"></div>
         </div>
-        <div class="legend" style="margin-top:8px">
-          <span><span class="swatch" style="background:#34c759"></span>추천 ${ns.prom}</span>
-          <span><span class="swatch" style="background:#ff9500"></span>중립 ${ns.pass}</span>
-          <span><span class="swatch" style="background:#ff3b30"></span>비추천 ${ns.det}</span>
+        <div class="legend" style="margin-top:8px;gap:10px;flex-wrap:wrap">
+          <span><span class="swatch" style="background:#34c759"></span>추천 ${ns.prom} <span style="color:var(--gray2)">(${pctOf(ns.prom,ns.total)}%)</span> ${momChip(pctOf(ns.prom,ns.total), pctOf(pns.prom,pns.total), {unit:'%p'})}</span>
+          <span><span class="swatch" style="background:#ff9500"></span>중립 ${ns.pass} <span style="color:var(--gray2)">(${pctOf(ns.pass,ns.total)}%)</span> ${momChip(pctOf(ns.pass,ns.total), pctOf(pns.pass,pns.total), {unit:'%p'})}</span>
+          <span><span class="swatch" style="background:#ff3b30"></span>비추천 ${ns.det} <span style="color:var(--gray2)">(${pctOf(ns.det,ns.total)}%)</span> ${momChip(pctOf(ns.det,ns.total), pctOf(pns.det,pns.total), {unit:'%p', higherBad:true})}</span>
         </div>
       </div>
-      <div class="card"><div class="card-head"><h3>추천의향 점수 분포</h3><span class="hint">0~10점</span></div>
-        ${ns.total?distColumnChart(v.npsDist,10,npsColor):'<div class="empty-note">데이터 없음</div>'}</div>
+      <div class="card"><div class="card-head"><h3>추천의향 점수 분포</h3><span class="hint">0~10점 · 평균 ${ns.avg.toFixed(1)} ${momChip(ns.avg, pns.avg, {digits:1, unit:'점'})}</span></div>
+        ${ns.total?distColumnChart(v.npsDist,10,npsColor):'<div class="empty-note">데이터 없음</div>'}
+        <div class="legend" style="margin-top:8px;gap:10px;flex-wrap:wrap;font-size:12px">
+          <span>9~10점 ${pctOf(ns.prom,ns.total)}% ${momChip(pctOf(ns.prom,ns.total), pctOf(pns.prom,pns.total), {unit:'%p'})}</span>
+          <span>7~8점 ${pctOf(ns.pass,ns.total)}% ${momChip(pctOf(ns.pass,ns.total), pctOf(pns.pass,pns.total), {unit:'%p'})}</span>
+          <span>0~6점 ${pctOf(ns.det,ns.total)}% ${momChip(pctOf(ns.det,ns.total), pctOf(pns.det,pns.total), {unit:'%p', higherBad:true})}</span>
+        </div></div>
     </div>
 
     <div class="grid2">
       <div class="card"><div class="card-head"><h3>✅ 저점 처리 완료율</h3><span style="font-size:20px;font-weight:800;color:var(--ink);letter-spacing:-.02em;font-variant-numeric:tabular-nums">${doneCount}/${totalIn}<span style="font-size:13px;font-weight:600;color:var(--gray)"> 건</span></span></div>
-        <div style="font-size:38px;font-weight:800;color:var(--green);margin-bottom:8px">${doneRate}<small style="font-size:16px;color:var(--gray2)">%</small></div>
+        <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:38px;font-weight:800;color:var(--green)">${doneRate}<small style="font-size:16px;color:var(--gray2)">%</small></span>
+          ${momChip(doneRate, pDoneRate, {unit:'%p'})}
+          <span style="font-size:12px;color:var(--gray2)">전월 ${pDoneCount}/${pvIn}건</span>
+        </div>
         ${progressBar(doneRate,'#34c759')}
         <div class="note" style="font-size:12px;color:var(--gray2);margin-top:8px">저점 인입의 팔로업 처리 비율 · <b>처리완료·부재·통화거부·OB필요없음</b> 모두 완료로 집계</div></div>
       <div class="card"><div class="card-head"><h3>😀 긍정 vs 😡 부정</h3><span class="hint">칭찬·고점 ${posCount} · 저점 ${totalIn}</span></div>
-        <div style="font-size:38px;font-weight:800;color:var(--green);margin-bottom:8px">긍정 ${posRate}<small style="font-size:16px;color:var(--gray2)">%</small></div>
+        <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:38px;font-weight:800;color:var(--green)">긍정 ${posRate}<small style="font-size:16px;color:var(--gray2)">%</small></span>
+          ${momChip(posRate, pPosRate, {unit:'%p'})}
+          <span style="font-size:12px;color:var(--gray2)">전월 긍정 ${pPosCount} · 저점 ${pvIn}</span>
+        </div>
         <div class="prog" style="height:14px"><div class="prog-fill" style="width:${sentTot?posCount/sentTot*100:0}%;background:#34c759"></div><div class="prog-fill" style="width:${sentTot?totalIn/sentTot*100:0}%;background:#ff3b30"></div></div>
         <div class="legend" style="margin-top:8px"><span><span class="swatch" style="background:#34c759"></span>칭찬·고점 ${posCount}</span><span><span class="swatch" style="background:#ff3b30"></span>저점 ${totalIn}</span></div></div>
     </div>
