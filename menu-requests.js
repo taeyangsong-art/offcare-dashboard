@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 176,
- "updatedAt": "2026-07-29 15:30",
+ "version": 177,
+ "updatedAt": "2026-07-29 15:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1785307000.000229",
+   "date": "2026-07-29",
+   "time": "15:36",
+   "store": "1키로탕수육",
+   "biz": "4171698514",
+   "phone": "01046647541",
+   "pos": "",
+   "content": "메뉴 등록 요청 드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1785307006.915579",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785307000000229"
+  },
   {
    "ts": "1785306504.576739",
    "date": "2026-07-29",
@@ -10274,26 +10294,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782715992776649"
-  },
-  {
-   "ts": "1782714969.780439",
-   "date": "2026-06-29",
-   "time": "15:36",
-   "store": "쭈쌤컷",
-   "biz": "2532302504",
-   "phone": "",
-   "pos": "퍼스트포스",
-   "content": "기존 등록 메뉴 삭제 및 신규 메뉴 등록 요청드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 5,
-   "lr": "1782716115.288999",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782714969780439"
   }
  ]
 };
