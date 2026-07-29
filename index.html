@@ -966,6 +966,12 @@
   /* 달력 하단 — 회의 중 원격 근무당번 순서 (안내 문구만, 변경은 달력의 당번 이름 클릭) */
   .duty-order{margin-top:10px; padding-top:10px; border-top:1px solid var(--line-soft);
     font-size:12.5px; font-weight:700; color:#b45309; line-height:1.6}
+  .duty-order.ten-order{color:#155e75; margin-top:6px; padding-top:6px; border-top:1px dashed var(--line-soft)}
+  /* 🕙 10시 출근 로테이션 칩 (매주 월요일) */
+  .ten-chip{background:#e0f2fe; color:#075985; border:1px solid #bae6fd; box-shadow:none; cursor:pointer}
+  .ten-chip:hover{background:#bae6fd; border-color:#7dd3fc}
+  .ten-chip .ev-head{color:#075985; font-weight:800}
+  .ten-lab{font-size:10px; font-weight:800; background:#075985; color:#fff; border-radius:5px; padding:1px 4px; margin-left:2px}
   /* 30분 전 당번 팝업 */
   .duty-pop-overlay{position:fixed; inset:0; background:rgba(15,15,15,.55); backdrop-filter:blur(3px); display:flex; align-items:center; justify-content:center; z-index:9999; animation:dutyfade .2s ease}
   @keyframes dutyfade{from{opacity:0}to{opacity:1}}
@@ -1175,6 +1181,9 @@ const DUTY_ANCHOR_DATE = "2026-07-10";   // 이 날 회의 = 김현기(순번 id
 const DUTY_ANCHOR_IDX = 3;
 const LS_DUTYALERT = "opcare_dutyalert_v1";
 function isDutyMeeting(t){ return /정기회의|타운홀|town\s*hall/i.test(t||""); }
+// 🕙 10시 출근 로테이션 — 매주(월요일 시작) 1명씩, 순서대로 회전. 2026-07-27(월) = 김현기부터.
+const TEN_ORDER = ["김현기","심성현","배선유","송태양","김규빈"];
+const TEN_ANCHOR_DATE = "2026-07-27";
 function meetingDutyList(){
   const days=(window.GCAL_DATA&&window.GCAL_DATA.days)||{}; const list=[];
   Object.keys(days).forEach(d=>(days[d]||[]).forEach(e=>{ if(isDutyMeeting(e.title)) list.push({date:d, time:e.time||"", title:e.title}); }));
@@ -1307,6 +1316,8 @@ function foldLegacyShare(dateMap){ if(!dateMap) return; for(const ds in dateMap)
 function pushDutyDates(dates){ const p={}; (dates||[]).forEach(ds=>{ if(ds) p[ds]=DUTY[ds]||{}; }); if(Object.keys(p).length) pushPatch({duty:p}); }
 const LS_DUTYOVER = "opcare_dutyover_v1";
 let DUTYOVER = load(LS_DUTYOVER, {});   // { "date|time|title": "직원명" } — 회의 원격당번 수동 지정
+const LS_TENOVER = "opcare_tenover_v1";
+let TENOVER = load(LS_TENOVER, {});     // { "YYYY-MM-DD"(월요일): "직원명" } — 10시 출근 로테이션 맞교환 지정
 // 📢 공지사항 · 공유 게시판 (팀 공유 클라우드)
 const LS_NOTICES = "opcare_notices_v1";
 let NOTICES = load(LS_NOTICES, {});   // { id: {text, author, ts, type:'공지'|'공유', deleted} }
@@ -1455,6 +1466,52 @@ function swapDutyOverride(key, newPerson){
   pushPatch({dutyOver:patch});
   renderShare();
   if(mate) alert(`🔁 맞교환 완료\n· ${fmtShort(key.split('|')[0])} → ${newPerson}\n· ${fmtShort(mate.date)} → ${cur}`);
+}
+/* ===== 🕙 10시 출근 로테이션 (주 단위 · 월요일 표시) ===== */
+// 배정은 '그 주 월요일 날짜'만의 순수 함수 → 누가 보든 동일. 수동 교체는 TENOVER로 덮어씀.
+function tenPersonByDate(ds){
+  const d=parseYmd(ds); if(d.getDay()!==1) return '';                 // 월요일만
+  const w=Math.round((d-parseYmd(TEN_ANCHOR_DATE))/(7*86400000));
+  if(w<0) return '';                                                  // 시작 주(2026-07-27) 이전은 표시 안 함
+  return TEN_ORDER[((w%TEN_ORDER.length)+TEN_ORDER.length)%TEN_ORDER.length];
+}
+function tenPersonAt(ds){ return TENOVER[ds] || tenPersonByDate(ds); }
+function setTenOne(ds, name){ if(name && name!==tenPersonByDate(ds)) TENOVER[ds]=name; else delete TENOVER[ds]; }   // 자동 순번과 같아지면 override 제거
+// 맞교환: 이 주를 P로 바꾸면, 원래 P가 맡던 다음 주는 이 주의 원래 담당자가 이어받음
+function swapTenOver(ds, np){
+  const cur=tenPersonAt(ds);
+  if(!np || np===cur){ renderShare(); return; }
+  const todayS=ymd(today()); let mate=null;
+  for(let i=0;i<104;i++){                                             // 오늘 이후 2년치 월요일에서 상대 탐색
+    const k=ymd(addDays(parseYmd(TEN_ANCHOR_DATE), i*7));
+    if(k<todayS || k===ds) continue;
+    if(tenPersonAt(k)===np){ mate=k; break; }
+  }
+  setTenOne(ds, np);
+  if(mate) setTenOne(mate, cur);
+  save(LS_TENOVER, TENOVER);
+  const patch={[ds]:TENOVER[ds]||''}; if(mate) patch[mate]=TENOVER[mate]||'';
+  pushPatch({tenOver:patch});
+  renderShare();
+  if(mate) alert(`🔁 10출 맞교환 완료\n· ${fmtShort(ds)} → ${np}\n· ${fmtShort(mate)} → ${cur}`);
+}
+// 🕙 달력의 10출 칩 클릭 → 직원 목록 팝업
+function openTenPicker(ds){
+  const cur=tenPersonAt(ds);
+  let el=document.getElementById('tenPickModal');
+  if(!el){ el=document.createElement('div'); el.id='tenPickModal'; el.className='detail-overlay'; el.onclick=e=>{ if(e.target===el) el.remove(); }; document.body.appendChild(el); }
+  el.innerHTML=`<div class="detail-box" style="max-width:380px">
+    <div class="detail-head"><h3>🕙 10시 출근 지정</h3><button class="detail-x" onclick="document.getElementById('tenPickModal').remove()">✕</button></div>
+    <div class="dp-meta">${fmtShort(ds)} 주 (월~일)${cur?` · 현재 <b>${escapeHtml(cur)}</b>`:''}</div>
+    <div class="dp-list">${TEN_ORDER.map(e=>`<button class="dp-item ${e===cur?'on':''}" onclick="pickTen('${ds}','${escapeHtml(e)}')">${escapeHtml(e)}${e===cur?' ✓':''}</button>`).join('')}</div>
+    <div class="dp-note">선택하면 그 사람이 맡던 다음 주와 <b>맞교환</b>됩니다 (같은 사람이 두 번 되지 않게)</div>
+    ${TENOVER[ds]?`<button class="dp-auto" onclick="pickTen('${ds}','')">↺ 순번 자동으로 되돌리기</button>`:''}
+  </div>`;
+}
+function pickTen(ds, name){
+  const el=document.getElementById('tenPickModal'); if(el) el.remove();
+  if(name) swapTenOver(ds, name);
+  else { delete TENOVER[ds]; save(LS_TENOVER,TENOVER); pushPatch({tenOver:{[ds]:''}}); renderShare(); }
 }
 // 회의 키(날짜|시간|제목)에 따옴표가 섞여도 안전하게 onclick으로 넘기기 위한 인덱스 테이블
 let DUTYKEYS=[];
@@ -2582,7 +2639,7 @@ function rankNameHTML(emp, noFace){ const eq=(GAME[emp]||{}).equipped||{}; const
 // 랭킹·MVP용 미니 전신 아바타(캐릭터+꾸미기 전부) — 122x150 원본을 w px로 축소. 게임 미참여 직원도 기본 캐릭터 렌더.
 function avatarMini(emp, w){ const g=GAME[emp]||{}; const eq=g.equipped||{}; const s=w/122; return `<div class="av-mini" style="width:${w}px;height:${Math.round(150*s)}px"><div class="av-mini-in" style="transform:scale(${s.toFixed(3)})">${avatarBig(eq, g.gender)}</div></div>`; }
 // 팀 공유 클라우드 = {players:GAME, vocEdit, vocPraise, vocComment, dutyOver, fishWait} 통합 블롭 (백엔드는 game 블롭을 그대로 저장/반환)
-function cloudBlob(){ return { _v:2, players:GAME, vocEdit:VOCEDIT, vocPraise:VOCPRAISE, vocComment:VOCCOMMENT, dutyOver:DUTYOVER, shareEv:SHAREEV, duty:DUTY, menuMemo:MENUMEMO }; }
+function cloudBlob(){ return { _v:2, players:GAME, vocEdit:VOCEDIT, vocPraise:VOCPRAISE, vocComment:VOCCOMMENT, dutyOver:DUTYOVER, tenOver:TENOVER, shareEv:SHAREEV, duty:DUTY, menuMemo:MENUMEMO }; }
 // 변경된 항목만 patch로 전송 → 서버가 잠금+병합(동시편집 안전, 경량)
 function pushPatch(patch){ if(!GAME_API) return; fetch(GAME_API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({patch})}).catch(()=>{}); }
 function saveGame(){ if(gameMe&&GAME[gameMe]) GAME[gameMe]._t=Date.now(); save(LS_GAME,GAME); if(gameMe&&GAME[gameMe]) pushPatch({players:{[gameMe]:GAME[gameMe]}}); }
@@ -2623,6 +2680,7 @@ function loadCloud(cb){
         const mR=mergeCloudDict(VOCPRAISE,b.vocPraise); VOCPRAISE=mR.merged;   if(Object.keys(mR.restore).length) rp.vocPraise=mR.restore;
         const mC=mergeCloudDict(VOCCOMMENT,b.vocComment);VOCCOMMENT=mC.merged; if(Object.keys(mC.restore).length) rp.vocComment=mC.restore;
         const mD=mergeCloudDict(DUTYOVER,b.dutyOver);   DUTYOVER=mD.merged;    if(Object.keys(mD.restore).length) rp.dutyOver=mD.restore;
+        const mT=mergeCloudDict(TENOVER,b.tenOver);     TENOVER=mT.merged;     if(Object.keys(mT.restore).length) rp.tenOver=mT.restore;
         const mNo=mergeCloudDict(NOTICES,b.notices);   NOTICES=mNo.merged;    if(Object.keys(mNo.restore).length) rp.notices=mNo.restore;
         const mNc=mergeCloudDict(NCOMMENTS,b.nComments);NCOMMENTS=mNc.merged; if(Object.keys(mNc.restore).length) rp.nComments=mNc.restore;
         const mNr=mergeCloudDict(NREACTS,b.nReacts);   NREACTS=mNr.merged;    if(Object.keys(mNr.restore).length) rp.nReacts=mNr.restore;
@@ -2633,14 +2691,14 @@ function loadCloud(cb){
         if(b.fishWait!==undefined){ FISHWAIT=b.fishWait||{}; save(LS_FISHWAIT,FISHWAIT); }   // 낚시 대기: 서버 값이 정답(로컬 클리어로 우회 방지)
         if(Object.keys(rp).length) pushPatch(rp);      // 로컬에만 있던 데이터를 클라우드에 복원
       } else { GAME=mergeCloudDict(GAME,b).merged; }   // 구 포맷(게임 데이터만)
-      save(LS_GAME,GAME); save(LS_VOCEDIT,VOCEDIT); save(LS_VOCPRAISE,VOCPRAISE); save(LS_VOCCOMMENT,VOCCOMMENT); save(LS_DUTYOVER,DUTYOVER); save(LS_NOTICES,NOTICES); save(LS_NCOMMENTS,NCOMMENTS); save(LS_NREACTS,NREACTS); save(LS_SHAREEV,SHAREEV); save(LS_DUTY,DUTY); save(LS_MENUMEMO,MENUMEMO);
+      save(LS_GAME,GAME); save(LS_VOCEDIT,VOCEDIT); save(LS_VOCPRAISE,VOCPRAISE); save(LS_VOCCOMMENT,VOCCOMMENT); save(LS_DUTYOVER,DUTYOVER); save(LS_TENOVER,TENOVER); save(LS_NOTICES,NOTICES); save(LS_NCOMMENTS,NCOMMENTS); save(LS_NREACTS,NREACTS); save(LS_SHAREEV,SHAREEV); save(LS_DUTY,DUTY); save(LS_MENUMEMO,MENUMEMO);
     }
     cloudReady=true; if(cb)cb();
   }).catch(()=>{ cloudReady=true; if(cb)cb(); });
 }
 function loadGameCloud(cb){ loadCloud(cb); }   // 하위호환
 // 팀 공유 클라우드 데이터 스냅샷 — 주기 동기화 시 '변경됐을 때만' 재렌더 판정용
-function cloudSnapshot(){ try{ return JSON.stringify([GAME,FISHWAIT,VOCEDIT,VOCPRAISE,VOCCOMMENT,DUTYOVER,NOTICES,NCOMMENTS,NREACTS,SHAREEV,DUTY,MENUMEMO]); }catch(e){ return ''; } }
+function cloudSnapshot(){ try{ return JSON.stringify([GAME,FISHWAIT,VOCEDIT,VOCPRAISE,VOCCOMMENT,DUTYOVER,TENOVER,NOTICES,NCOMMENTS,NREACTS,SHAREEV,DUTY,MENUMEMO]); }catch(e){ return ''; } }
 async function setGameMe(v){
   gameMe=v; save("opcare_gameme_v1",gameMe); renderGame();
   if(v && GAME_API && !isGameAuthed(v)){
@@ -4655,11 +4713,15 @@ function renderShare(){
         <span class="ev-gtag">G</span>
         <span class="ev-txt"><span class="ev-head">${escapeHtml(g.title)}</span><span class="ev-sub">${g.time?'🕒 '+escapeHtml(g.time):'종일'}</span>${who?`<span class="ev-duty pick" title="클릭 → 근무당번 변경" onclick="event.stopPropagation();openDutyPicker(${gi})">🏠 ${escapeHtml(who)}<span class="duty-lab">근무당번</span></span>`:''}</span></div>`;
     }).join("");
+    // 🕙 10시 출근 로테이션 — 매주 월요일에 담당자 칩 표시(클릭 → 교체)
+    const tenWho=tenPersonAt(ds);
+    const tenChip = tenWho ? `<div class="ev-chip ten-chip" title="이번 주 10시 출근 · 클릭 → 교체" onclick="openTenPicker('${ds}')">
+        <span class="ev-txt"><span class="ev-head">🕙 ${escapeHtml(tenWho)} <span class="ten-lab">10출</span></span></span></div>` : '';
     return `<div class="daycell share ${ds===todayStr?'today':''} ${holi?'holi':''}"
       ondragover="shareDragOver(event,this)" ondragleave="shareDragLeave(this)" ondrop="shareDrop(event,'${ds}',this)">
       <div class="dnum ${numCls}">${d}${holi?`<span class="holi-tag">${holi}</span>`:''}
         <button class="add-ev" title="일정 추가" onclick="openShareForm('${ds}')">+</button></div>
-      <div class="ev-list">${chips}${gchips}</div>
+      <div class="ev-list">${tenChip}${chips}${gchips}</div>
     </div>`;
   }).join("");
 
@@ -4694,6 +4756,7 @@ function renderShare(){
         <span style="margin-left:6px"><span class="swatch" style="background:#e8f0fe;border:1px solid #c6dafc"></span>회의(구글)</span>
       </div>
       <div class="duty-order">🏠 회의 중 원격 근무당번 순서 · ${DUTY_ORDER.join(' → ')}</div>
+      <div class="duty-order ten-order">🕙 10시 출근 로테이션(주 단위 · 월요일 시작) · ${TEN_ORDER.join(' → ')} <span style="font-weight:600;color:var(--gray2)">· 달력의 <b>10출</b> 칩 클릭 → 맞교환</span></div>
     </div>
   `;
 }
