@@ -4073,7 +4073,9 @@ function saveVocPraiseTeam(key, team){
 // 이름→팀 매핑: 원격팀(기본) + 칭찬 지정에서 입력된 팀으로 보정 → 팀 필터/멤버 목록 자동 구성
 let praiseTeamFilter='';
 function empTeamMap(){ const m={}; EMPLOYEES.forEach(e=>{ m[e]='원격팀'; }); for(const k in VOCPRAISE){ const v=VOCPRAISE[k]; if(v&&v.emp&&v.team) splitNames(v.emp).forEach(n=>{ m[n]=v.team; }); } return m; }   // 여러 명 지정 시 전원 같은 팀으로 매핑
-function allPraiseTeams(){ return [...new Set(Object.values(empTeamMap()))].sort(); }
+// 팀 목록 — '원격팀'은 기본값(우리 팀)이라 필터 후보에서 제외, 실제로 지정된 타팀만 노출
+const DEFAULT_TEAM='원격팀';
+function allPraiseTeams(){ return [...new Set(Object.values(empTeamMap()))].filter(t=>t&&t!==DEFAULT_TEAM).sort(); }
 function teamMembers(team){ const m=empTeamMap(); return [...new Set(Object.keys(m).filter(n=>!team||m[n]===team))].sort(); }
 function setPraiseTeam(v){ praiseTeamFilter=v; rerenderVoc(); }
 let praiseAggTeam='';   // 칭찬·고점 직원별 집계 팀 필터(독립)
