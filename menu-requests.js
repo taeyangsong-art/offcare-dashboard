@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 193,
- "updatedAt": "2026-07-30 09:30",
+ "version": 194,
+ "updatedAt": "2026-07-30 09:45",
  "days": 30,
  "items": [
   {
@@ -10098,26 +10098,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782781683142579"
-  },
-  {
-   "ts": "1782779598.972499",
-   "date": "2026-06-30",
-   "time": "09:33",
-   "store": "김밥천국",
-   "biz": "1080327134",
-   "phone": "01089577091",
-   "pos": "",
-   "content": "OK포스 메뉴 등록 요청 / 완료 후 문자 부탁드려요\n\n김밥류\n김치김밥 밑에 밑에 등록 요청\n\n*꼬마김밥 3500원*",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 9,
-   "lr": "1782784182.826629",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782779598972499"
   }
  ]
 };
