@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 210,
- "updatedAt": "2026-07-30 15:15",
+ "version": 211,
+ "updatedAt": "2026-07-30 15:30",
  "days": 30,
  "items": [
   {
@@ -25,7 +25,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 4,
    "lr": "1785391234.829149",
-   "status": "confirm",
+   "status": "done",
    "handler": "김현기",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785390164526449"
   },
@@ -9966,26 +9966,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782803129225459"
-  },
-  {
-   "ts": "1782800753.725589",
-   "date": "2026-06-30",
-   "time": "15:25",
-   "store": "쿠타팜테라스",
-   "biz": "7413600207",
-   "phone": "01072299642\n-",
-   "pos": "오케이포스",
-   "content": "화식 (Homemade Fresh Food For Dog)\n\n닭 화식\n30g · 3,000원\n60g · 5,500원\n\n돼지 화식\n30g · 3,500원\n60g · 6,500원\n\n오리 화식\n30g · 3,500원\n60g · 6,500원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782803985.499349",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782800753725589"
   }
  ]
 };
