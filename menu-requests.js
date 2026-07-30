@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 198,
- "updatedAt": "2026-07-30 10:45",
+ "version": 199,
+ "updatedAt": "2026-07-30 11:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1785377671.478869",
+   "date": "2026-07-30",
+   "time": "11:14",
+   "store": "다모아호프",
+   "biz": "2912700262",
+   "phone": "",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1785377685.281369",
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785377671478869"
+  },
   {
    "ts": "1785372759.078959",
    "date": "2026-07-30",
@@ -10021,26 +10041,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782787264643179"
-  },
-  {
-   "ts": "1782785125.020289",
-   "date": "2026-06-30",
-   "time": "11:05",
-   "store": "탕수육",
-   "biz": "2720702465",
-   "phone": "",
-   "pos": "퍼스트포스",
-   "content": "메뉴",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782785359.339979",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782785125020289"
   }
  ]
 };
