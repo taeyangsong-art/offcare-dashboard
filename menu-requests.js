@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 214,
- "updatedAt": "2026-07-30 16:15",
+ "version": 215,
+ "updatedAt": "2026-07-30 16:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1785397246.451689",
+   "date": "2026-07-30",
+   "time": "16:40",
+   "store": "우리끼리 키즈카페 동화마을 대전관평점",
+   "biz": "8230501810",
+   "phone": "01073745272",
+   "pos": "",
+   "content": "명의변경 메뉴 복사 요청 드립니다.\n5592701304 > 8230501810",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785397251.841519",
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785397246451689"
+  },
   {
    "ts": "1785393799.391159",
    "date": "2026-07-30",
@@ -9948,26 +9968,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782806225041969"
-  },
-  {
-   "ts": "1782804871.411719",
-   "date": "2026-06-30",
-   "time": "16:34",
-   "store": "도시곳간 다산지금점",
-   "biz": "6014308438",
-   "phone": "01050368735",
-   "pos": "토스포스",
-   "content": "도시곳간 (TEST) (<tel:5968502603|5968502603>) 메뉴 복제 및 아래의 내용으로 셋팅 부탁드립니다.\n\n```<도시곳간 토스포시 도입 시> - 세팅 필요!\n적용 포인트 설정 -> 1% / 최소 사용사용 50원```",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782805189.960269",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782804871411719"
   }
  ]
 };
