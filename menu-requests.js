@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 195,
- "updatedAt": "2026-07-30 10:00",
+ "version": 196,
+ "updatedAt": "2026-07-30 10:15",
  "days": 30,
  "items": [
   {
@@ -10081,46 +10081,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782782921001409"
-  },
-  {
-   "ts": "1782782102.551639",
-   "date": "2026-06-30",
-   "time": "10:15",
-   "store": "노가리990",
-   "biz": "8975400751",
-   "phone": "01096545547",
-   "pos": "",
-   "content": "메뉴 추가 요청 드립니다. ( 유플러스 포스 + 대형키오스크)",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1782782241.448649",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782782102551639"
-  },
-  {
-   "ts": "1782781683.142579",
-   "date": "2026-06-30",
-   "time": "10:08",
-   "store": "다올 무브먼트(DAOL MOVEMENT)",
-   "biz": "4451203163",
-   "phone": "01034574920",
-   "pos": "",
-   "content": "상품 등록 요청 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 15,
-   "lr": "1782799012.929539",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782781683142579"
   }
  ]
 };
