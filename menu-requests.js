@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 213,
- "updatedAt": "2026-07-30 16:00",
+ "version": 214,
+ "updatedAt": "2026-07-30 16:15",
  "days": 30,
  "items": [
   {
@@ -21,9 +21,9 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1785393932.401549",
-   "status": "confirm",
+   "rc": 4,
+   "lr": "1785395258.915069",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785393799391159"
   },
@@ -9968,26 +9968,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782804871411719"
-  },
-  {
-   "ts": "1782803129.225459",
-   "date": "2026-06-30",
-   "time": "16:05",
-   "store": "크로바완구",
-   "biz": "4683601636",
-   "phone": "01050118787",
-   "pos": "퍼스트포스",
-   "content": "매뉴 등록 요청 드립니다. ( 스파로스)",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782803514.341599",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782803129225459"
   }
  ]
 };
