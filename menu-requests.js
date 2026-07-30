@@ -3,10 +3,58 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 216,
- "updatedAt": "2026-07-30 16:59",
+ "version": 217,
+ "updatedAt": "2026-07-30 17:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1785398588.439489",
+   "date": "2026-07-30",
+   "time": "17:03",
+   "store": "멕시카나 망포점",
+   "biz": "3302901497",
+   "phone": "0312051989\n-",
+   "pos": "오케이포스",
+   "content": "한맥 생맥주1000cc 는 빼주세요",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1V1E1brRlH2FASMNbWqkcwbgZNjdW7b8o/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "맥시카나 메이트포스",
+    "보류",
+    "통화완료"
+   ],
+   "rc": 4,
+   "lr": "1785399193.271849",
+   "status": "done",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785398588439489"
+  },
+  {
+   "ts": "1785398539.293099",
+   "date": "2026-07-30",
+   "time": "17:02",
+   "store": "로르솝",
+   "biz": "3790503266",
+   "phone": "01089817117",
+   "pos": "",
+   "content": "신규 설치로 전체 메뉴 등록 요청 주셨습니다. 기본 설정 온보딩도 요청 하시는데 같이 가능한가요...?",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "오 그렇군요 감사합니다"
+   ],
+   "rc": 3,
+   "lr": "1785398634.267529",
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785398539293099"
+  },
   {
    "ts": "1785397547.232769",
    "date": "2026-07-30",
@@ -9926,46 +9974,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782807517797149"
-  },
-  {
-   "ts": "1782807245.233309",
-   "date": "2026-06-30",
-   "time": "17:14",
-   "store": "웃쿠",
-   "biz": "4423300541",
-   "phone": "",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782807370.410249",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782807245233309"
-  },
-  {
-   "ts": "1782806972.584829",
-   "date": "2026-06-30",
-   "time": "17:09",
-   "store": "크로바완구",
-   "biz": "4683601636",
-   "phone": "01050118787",
-   "pos": "퍼스트포스",
-   "content": "매뉴 등록 요청 드립니다. ( 스파로스)",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782807091.834909",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782806972584829"
   }
  ]
 };
