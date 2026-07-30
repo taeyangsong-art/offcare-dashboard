@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 204,
- "updatedAt": "2026-07-30 13:15",
+ "version": 205,
+ "updatedAt": "2026-07-30 13:30",
  "days": 30,
  "items": [
   {
@@ -10006,26 +10006,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782794836045339"
-  },
-  {
-   "ts": "1782793418.681669",
-   "date": "2026-06-30",
-   "time": "13:23",
-   "store": "화덕피자 피움",
-   "biz": "2591702705",
-   "phone": "01043860279",
-   "pos": "토스포스",
-   "content": "KT 하이오더 연동 / 토스포스 / 기본(메인홀) 테이블 20개, 선불형 테이블 20개 각각 추가 부탁드리겠습니다.\n\nKT 담당자 연락처 : 01028250096",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782794248.073859",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782793418681669"
   }
  ]
 };
