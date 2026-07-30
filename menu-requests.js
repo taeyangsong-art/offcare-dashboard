@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 215,
- "updatedAt": "2026-07-30 16:45",
+ "version": 216,
+ "updatedAt": "2026-07-30 16:59",
  "days": 30,
  "items": [
+  {
+   "ts": "1785397547.232769",
+   "date": "2026-07-30",
+   "time": "16:45",
+   "store": "대청마루",
+   "biz": "2260399542",
+   "phone": "",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1785397566.440669",
+   "status": "done",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785397547232769"
+  },
   {
    "ts": "1785397246.451689",
    "date": "2026-07-30",
@@ -21,9 +41,9 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1785397251.841519",
-   "status": "confirm",
+   "rc": 2,
+   "lr": "1785397786.063809",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785397246451689"
   },
@@ -9946,28 +9966,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782806972584829"
-  },
-  {
-   "ts": "1782806225.041969",
-   "date": "2026-06-30",
-   "time": "16:57",
-   "store": "씨엔비C&B",
-   "biz": "6623501736",
-   "phone": "01053668444\n-",
-   "pos": "토스포스",
-   "content": "",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/open?id=1vPUvbM2wutMRHe2UXQraKggkqbw6QbSn"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1782806228.946599",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782806225041969"
   }
  ]
 };
