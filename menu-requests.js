@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 212,
- "updatedAt": "2026-07-30 15:45",
+ "version": 213,
+ "updatedAt": "2026-07-30 16:00",
  "days": 30,
  "items": [
   {
@@ -21,10 +21,10 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1785393804.604369",
-   "status": "wait",
-   "handler": null,
+   "rc": 2,
+   "lr": "1785393932.401549",
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785393799391159"
   },
   {
@@ -62,11 +62,13 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1785388309.452939",
-   "status": "wait",
-   "handler": null,
+   "replies": [
+    "담당자 번호로 :telephone_receiver: 아직 장사 안한다고 하셔서 토플파 복사, 재온보딩으로 진행하기로 함"
+   ],
+   "rc": 2,
+   "lr": "1785394089.459579",
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785388304065309"
   },
   {
