@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2075,
+  "version": 2076,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -71657,6 +71657,7 @@ window.SLACK_DATA = {
           "김동욱": 1
         },
         "menu": {
+          "최민석": 1,
           "김현기": 2,
           "배선유": 5,
           "김규빈": 6
@@ -71921,6 +71922,17 @@ window.SLACK_DATA = {
           "hw": "안드로이드",
           "intake": "online",
           "note": "퇴근으로 인하여 익일 오후 12시 30분 재통화 요청"
+        },
+        {
+          "time": "18:01",
+          "store": "",
+          "biz": "",
+          "cat": "menu",
+          "emp": "최민석",
+          "req": "* 안녕하세요 메뉴판 내용 캡쳐하여 전달드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 메뉴등록 완료 솔라피 발송완료 / 01032085111"
         },
         {
           "time": "18:00",
@@ -74579,7 +74591,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 212,
+        "online": 213,
         "offline": 51,
         "unknown": 0
       },
@@ -74836,6 +74848,17 @@ window.SLACK_DATA = {
           }
         ]
       }
+    },
+    "2026-07-31": {
+      "counts": {},
+      "pending": [],
+      "done": [],
+      "intake": {
+        "online": 0,
+        "offline": 0,
+        "unknown": 0
+      },
+      "updatedAt": ""
     }
   },
   "resp": {
