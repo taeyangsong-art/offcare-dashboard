@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 218,
- "updatedAt": "2026-07-30 17:30",
+ "version": 219,
+ "updatedAt": "2026-07-30 17:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1785400612.677689",
+   "date": "2026-07-30",
+   "time": "17:36",
+   "store": "로르솝",
+   "biz": "3790503266",
+   "phone": "01089817117\n-",
+   "pos": "토스포스",
+   "content": "최초등록임\n카테고리별로 분리해주세요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785400617.550329",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785400612677689"
+  },
   {
    "ts": "1785398588.439489",
    "date": "2026-07-30",
@@ -9894,46 +9914,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782809293495329"
-  },
-  {
-   "ts": "1782808502.637039",
-   "date": "2026-06-30",
-   "time": "17:35",
-   "store": "라홍방마라탕동탄산척점",
-   "biz": "6883001086",
-   "phone": "01030018548",
-   "pos": "퍼스트포스",
-   "content": "마라탕 메뉴",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782810148.573029",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782808502637039"
-  },
-  {
-   "ts": "1782808397.628599",
-   "date": "2026-06-30",
-   "time": "17:33",
-   "store": "쿠타팜 테라스",
-   "biz": "7413600207",
-   "phone": "01072299642",
-   "pos": "오케이포스",
-   "content": "오케이포스 가맹점 메뉴 가격 수정 요청 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782808613.662619",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782808397628599"
   }
  ]
 };
