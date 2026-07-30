@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 221,
- "updatedAt": "2026-07-30 18:30",
+ "version": 222,
+ "updatedAt": "2026-07-30 18:45",
  "days": 30,
  "items": [
   {
@@ -9873,26 +9873,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김기범",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782817261600979"
-  },
-  {
-   "ts": "1782812716.867409",
-   "date": "2026-06-30",
-   "time": "18:45",
-   "store": "봉할매 김치찌개 불백전문점",
-   "biz": "6382802035",
-   "phone": "01082444453",
-   "pos": "퍼스트포스",
-   "content": "유플러스 이관 매장 / 메뉴 가격 수정 요청 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782815333.466789",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782812716867409"
   }
  ]
 };
