@@ -3,10 +3,32 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 220,
- "updatedAt": "2026-07-30 18:00",
+ "version": 221,
+ "updatedAt": "2026-07-30 18:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1785403694.015489",
+   "date": "2026-07-30",
+   "time": "18:28",
+   "store": "멕시카나 망포점",
+   "biz": "3302901497",
+   "phone": "01047066380\n-",
+   "pos": "토스포스",
+   "content": "키오스크 메인 토스포스 메뉴 등록해주세요 치킨 부위변경 키도등록 가능하면 해주시고 포장 별도 할인 키 생성 가능하면 해주세요",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1Lp6kHNIncQq2q1A8HJcatcac3XU-8vCO/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785403699.459429",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785403694015489"
+  },
   {
    "ts": "1785401829.324979",
    "date": "2026-07-30",
