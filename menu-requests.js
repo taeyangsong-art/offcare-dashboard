@@ -3,10 +3,53 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 201,
- "updatedAt": "2026-07-30 11:45",
+ "version": 202,
+ "updatedAt": "2026-07-30 12:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1785381214.720969",
+   "date": "2026-07-30",
+   "time": "12:13",
+   "store": "등촌샤브칼국수 안양호계점",
+   "biz": "2386600824",
+   "phone": "01050618180",
+   "pos": "",
+   "content": "선,후불 테이블 14개 생성 요청 드립니다. :감사합니다꾸벅:",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785381262.185819",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785381214720969"
+  },
+  {
+   "ts": "1785380960.097139",
+   "date": "2026-07-30",
+   "time": "12:09",
+   "store": "미트하이",
+   "biz": "4941003249",
+   "phone": "01084829751\n-",
+   "pos": "토스포스",
+   "content": "이미지로 첨부",
+   "special": "바로 가능한 시간",
+   "drive": [
+    "https://drive.google.com/open?id=128_HI4jmOEOWnXdSz82AHSI6Rsj-2l76",
+    "https://drive.google.com/open?id=1JahkjmjWqG3Z2Tsar-T5PDxFYMTEfKZm"
+   ],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785380964.286629",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785380960097139"
+  },
   {
    "ts": "1785377671.478869",
    "date": "2026-07-30",
