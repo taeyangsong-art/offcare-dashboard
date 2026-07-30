@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 219,
- "updatedAt": "2026-07-30 17:45",
+ "version": 220,
+ "updatedAt": "2026-07-30 18:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1785401829.324979",
+   "date": "2026-07-30",
+   "time": "17:57",
+   "store": "숯불돼지",
+   "biz": "6704001162",
+   "phone": "010-9234-5755",
+   "pos": "",
+   "content": "메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785401844.261039",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785401829324979"
+  },
   {
    "ts": "1785400612.677689",
    "date": "2026-07-30",
@@ -23,8 +43,8 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1785400617.550329",
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785400612677689"
   },
   {
@@ -9851,69 +9871,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782812716867409"
-  },
-  {
-   "ts": "1782809558.667999",
-   "date": "2026-06-30",
-   "time": "17:52",
-   "store": "궁동포차",
-   "biz": "6241302653",
-   "phone": "",
-   "pos": "",
-   "content": "하이오더 선불 테이블 7개 등록 부탁드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1782809563.477059",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782809558667999"
-  },
-  {
-   "ts": "1782809488.708129",
-   "date": "2026-06-30",
-   "time": "17:51",
-   "store": "궁동포차",
-   "biz": "6241302653",
-   "phone": "01082636606",
-   "pos": "",
-   "content": "",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1782809648.866509",
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782809488708129"
-  },
-  {
-   "ts": "1782809293.495329",
-   "date": "2026-06-30",
-   "time": "17:48",
-   "store": "유니포차",
-   "biz": "6541602733",
-   "phone": "01097961979\n-",
-   "pos": "토스포스",
-   "content": "",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/open?id=1AohAEbQRdVZhhY7yp2jgsShGVJjJoJJ8",
-    "https://drive.google.com/open?id=124Tgx4bLTyvdHROB89HzA3MfdCyXCgKW"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1782809297.460789",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782809293495329"
   }
  ]
 };
