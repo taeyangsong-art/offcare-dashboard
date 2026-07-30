@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 217,
- "updatedAt": "2026-07-30 17:15",
+ "version": 218,
+ "updatedAt": "2026-07-30 17:30",
  "days": 30,
  "items": [
   {
@@ -49,9 +49,9 @@ window.MENU_REQUESTS = {
    "replies": [
     "오 그렇군요 감사합니다"
    ],
-   "rc": 3,
-   "lr": "1785398634.267529",
-   "status": "confirm",
+   "rc": 4,
+   "lr": "1785400087.529459",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785398539293099"
   },
@@ -9934,46 +9934,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782808397628599"
-  },
-  {
-   "ts": "1782808083.398469",
-   "date": "2026-06-30",
-   "time": "17:28",
-   "store": "엄마잔치국수",
-   "biz": "8544001663",
-   "phone": "01058334316",
-   "pos": "토스포스",
-   "content": "토스포스 메뉴 + 사진 등록 요청 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1782808570.935379",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782808083398469"
-  },
-  {
-   "ts": "1782807517.797149",
-   "date": "2026-06-30",
-   "time": "17:18",
-   "store": "봉할매 김치찌개 불백전문점",
-   "biz": "6382802035",
-   "phone": "01082444453",
-   "pos": "퍼스트포스",
-   "content": "유플러스 이관 매장 / 메뉴 가격 수정 요청 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1782807880.054839",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782807517797149"
   }
  ]
 };
