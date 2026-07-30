@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2013,
+  "version": 2014,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -71629,33 +71629,41 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "00:13",
+      "updatedAt": "09:00",
       "voc": {
-        "responses": 1,
+        "responses": 2,
         "install": {
           "count": 0,
           "low": 0
         },
         "nps": {
-          "count": 1,
+          "count": 2,
           "low": 0
         },
         "high": {
           "install": 0,
-          "nps": 1
+          "nps": 2
         },
         "npsDist": {
-          "10": 1
+          "10": 2
         },
         "installDist": {},
         "byIndustry": {},
         "byTenure": {
+          "12개월": {
+            "total": 1,
+            "low": 0
+          },
           "3개월": {
             "total": 1,
             "low": 0
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 1,
+            "low": 0
+          },
           "SECTA9": {
             "total": 1,
             "low": 0
@@ -71663,7 +71671,20 @@ window.SLACK_DATA = {
         },
         "reasonCounts": {},
         "alerts": [],
-        "praises": []
+        "praises": [
+          {
+            "time": "08:59",
+            "store": "미쁘롱",
+            "storeId": "221590",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "간편하고 언제어디서나 매장매출확인가능",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
       }
     }
   },
@@ -71688,6 +71709,10 @@ window.SLACK_DATA = {
       "1785299083.390319": {
         "post": "1785299083.390319",
         "lastSeen": 1785350571.243
+      },
+      "1785369609.778849": {
+        "post": "1785369609.778849",
+        "lastSeen": 1785369632.585
       }
     },
     "days": {
