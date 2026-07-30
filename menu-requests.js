@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 202,
- "updatedAt": "2026-07-30 12:15",
+ "version": 203,
+ "updatedAt": "2026-07-30 12:30",
  "days": 30,
  "items": [
   {
@@ -21,10 +21,10 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1785381262.185819",
-   "status": "wait",
-   "handler": null,
+   "rc": 2,
+   "lr": "1785381470.662199",
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785381214720969"
   },
   {
@@ -43,11 +43,13 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1785380964.286629",
-   "status": "wait",
-   "handler": null,
+   "replies": [
+    "기존에 몇개 추가되어있음 제외하고 완료"
+   ],
+   "rc": 2,
+   "lr": "1785381419.903889",
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785380960097139"
   },
   {
@@ -10044,26 +10046,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782792829931169"
-  },
-  {
-   "ts": "1782789960.243569",
-   "date": "2026-06-30",
-   "time": "12:26",
-   "store": "은하수 국밥(Galaxy Gukbap)",
-   "biz": "7680403509",
-   "phone": "",
-   "pos": "",
-   "content": "메뉴등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782789969.547589",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782789960243569"
   }
  ]
 };
