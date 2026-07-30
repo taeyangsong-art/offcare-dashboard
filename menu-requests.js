@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 208,
- "updatedAt": "2026-07-30 14:45",
+ "version": 209,
+ "updatedAt": "2026-07-30 15:00",
  "days": 30,
  "items": [
   {
@@ -20,11 +20,13 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1785390178.582879",
-   "status": "wait",
-   "handler": null,
+   "replies": [
+    "제가햇어요"
+   ],
+   "rc": 4,
+   "lr": "1785391234.829149",
+   "status": "confirm",
+   "handler": "김현기",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785390164526449"
   },
   {
@@ -10004,46 +10006,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782799664214509"
-  },
-  {
-   "ts": "1782798998.868509",
-   "date": "2026-06-30",
-   "time": "14:56",
-   "store": "페르마타(FERMATA)",
-   "biz": "3036621254",
-   "phone": "",
-   "pos": "",
-   "content": "현재 설치중 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782799315.004219",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782798998868509"
-  },
-  {
-   "ts": "1782798635.283499",
-   "date": "2026-06-30",
-   "time": "14:50",
-   "store": "행운밥상",
-   "biz": "1873001638",
-   "phone": "01082260486\n-",
-   "pos": "토스포스",
-   "content": "배달의민족 메뉴 그대로 등록해주세요",
-   "special": "오후 3-5시 브레이크타임 빼고 가능",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1782799317.704279",
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782798635283499"
   }
  ]
 };
