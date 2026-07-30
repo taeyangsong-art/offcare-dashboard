@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 205,
- "updatedAt": "2026-07-30 13:30",
+ "version": 206,
+ "updatedAt": "2026-07-30 14:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1785387543.387099",
+   "date": "2026-07-30",
+   "time": "13:59",
+   "store": "미앤미힐링티",
+   "biz": "8910800173",
+   "phone": "",
+   "pos": "",
+   "content": "코세스 > 키스 변경 메뉴복사",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785387552.261159",
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785387543387099"
+  },
   {
    "ts": "1785381214.720969",
    "date": "2026-07-30",
@@ -9984,28 +10004,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782798635283499"
-  },
-  {
-   "ts": "1782794836.045339",
-   "date": "2026-06-30",
-   "time": "13:47",
-   "store": "지은테스트",
-   "biz": "6516516516",
-   "phone": "01000000000\n-",
-   "pos": "오케이포스",
-   "content": "지은테스트",
-   "special": "지은테스트",
-   "drive": [
-    "https://drive.google.com/file/d/135oJjaz5ex-lB2O_kXQh1KLfGeQRgYLG/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 8,
-   "lr": "1782795398.970269",
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782794836045339"
   }
  ]
 };
