@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 231,
- "updatedAt": "2026-07-31 10:15",
+ "version": 232,
+ "updatedAt": "2026-07-31 11:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1785463143.448559",
+   "date": "2026-07-31",
+   "time": "10:59",
+   "store": "웰빙앤푸드(전888분식)",
+   "biz": "1245328464",
+   "phone": "01044199915\n-",
+   "pos": "기타",
+   "content": "나랑드사이다. 금액 2천5백원 추가",
+   "special": "카테고리 음료메뉴란에 나랑드사이다 추가로 넣어주세요.",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785463159.589959",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785463143448559"
+  },
   {
    "ts": "1785459286.868369",
    "date": "2026-07-31",
@@ -9734,26 +9754,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782872213044479"
-  },
-  {
-   "ts": "1782870643.790779",
-   "date": "2026-07-01",
-   "time": "10:50",
-   "store": "꼬마카롱",
-   "biz": "1041307299",
-   "phone": "01056444137",
-   "pos": "토스포스",
-   "content": "키오스크 모드 이용 중 / 커피 메뉴 \"디카페인\" 옵션 설정하셨으나 원하는 대로 적용이 안되는데 도움 부탁드립니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 5,
-   "lr": "1782870911.616819",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782870643790779"
   }
  ]
 };
