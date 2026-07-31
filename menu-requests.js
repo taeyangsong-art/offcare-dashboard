@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 236,
- "updatedAt": "2026-07-31 12:00",
+ "version": 237,
+ "updatedAt": "2026-07-31 12:15",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1785466215.389449",
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785466182624599"
   },
@@ -9731,28 +9731,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782880315561169"
-  },
-  {
-   "ts": "1782875398.006129",
-   "date": "2026-07-01",
-   "time": "12:09",
-   "store": "고봉민김밥인",
-   "biz": "7170202250",
-   "phone": "01025295074\n-",
-   "pos": "토스포스",
-   "content": "메뉴 가격수정 요청드립니다",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/open?id=10S4XDBNerpV8MvIZQwxHtyXVH1Ete2-s"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782878332.823099",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782875398006129"
   }
  ]
 };
