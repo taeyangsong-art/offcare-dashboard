@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 245,
- "updatedAt": "2026-07-31 14:45",
+ "version": 246,
+ "updatedAt": "2026-07-31 15:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1785477438.202089",
+   "date": "2026-07-31",
+   "time": "14:57",
+   "store": "089. 우리끼리 키즈카페 천안불당",
+   "biz": "8998700696",
+   "phone": "01073745272",
+   "pos": "",
+   "content": "사업자번호는 동일 / 토플파 변경되어 메뉴 복사 요청 드립니다.\n*089. 우리끼리 키즈카페 천안불당(미사용_X) → 089. 우리끼리 키즈카페 천안불당*",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785477442.830299",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785477438202089"
+  },
   {
    "ts": "1785476351.336569",
    "date": "2026-07-31",
@@ -21,9 +41,9 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1785476356.275169",
-   "status": "confirm",
+   "rc": 2,
+   "lr": "1785476856.450859",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785476351336569"
   },
@@ -9761,26 +9781,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782887758404869"
-  },
-  {
-   "ts": "1782885120.585739",
-   "date": "2026-07-01",
-   "time": "14:52",
-   "store": "돈데이 내방점",
-   "biz": "1141576706",
-   "phone": "01052106819",
-   "pos": "",
-   "content": "메뉴 삭제 요청\n소주 3천원 / 맥주 4천원\n삭제 부탁드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782886504.103219",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782885120585739"
   }
  ]
 };
