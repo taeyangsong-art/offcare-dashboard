@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 228,
- "updatedAt": "2026-07-31 09:30",
+ "version": 229,
+ "updatedAt": "2026-07-31 09:45",
  "days": 30,
  "items": [
   {
@@ -23,9 +23,9 @@ window.MENU_REQUESTS = {
    "replies": [
     "토스포스 오전 10시까지 가능할까요?"
    ],
-   "rc": 2,
-   "lr": "1785457734.470009",
-   "status": "confirm",
+   "rc": 3,
+   "lr": "1785458065.171749",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785457718417879"
   },
@@ -9775,48 +9775,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782866908223709"
-  },
-  {
-   "ts": "1782866041.204449",
-   "date": "2026-07-01",
-   "time": "09:34",
-   "store": "비씨오피(B.C.O.P)",
-   "biz": "2751402609",
-   "phone": "01000000000\n-",
-   "pos": "오케이포스",
-   "content": "지은테스트",
-   "special": "지은테스트",
-   "drive": [
-    "https://drive.google.com/file/d/1Tk_MG2nc_jA1ofMlbK3TRTXhJqqsw8au/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1782866046.046449",
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782866041204449"
-  },
-  {
-   "ts": "1782865875.456719",
-   "date": "2026-07-01",
-   "time": "09:31",
-   "store": "중식타워다미(多味)",
-   "biz": "1810203940",
-   "phone": "",
-   "pos": "토스포스",
-   "content": "토스포스 _ 메뉴 및 옵션 등록 요청드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782866920.023859",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782865875456719"
   }
  ]
 };
