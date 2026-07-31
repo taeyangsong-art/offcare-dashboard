@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 250,
- "updatedAt": "2026-07-31 16:45",
+ "version": 251,
+ "updatedAt": "2026-07-31 17:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1785484872.698789",
+   "date": "2026-07-31",
+   "time": "17:01",
+   "store": "더(THE)바다&THE바다까페",
+   "biz": "6376700450",
+   "phone": "",
+   "pos": "",
+   "content": "메뉴등록 요청드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1785484907.908019",
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785484872698789"
+  },
   {
    "ts": "1785483420.852629",
    "date": "2026-07-31",
@@ -9697,32 +9717,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782902005265109"
-  },
-  {
-   "ts": "1782893401.677429",
-   "date": "2026-07-01",
-   "time": "17:10",
-   "store": "창조마켓 협동조합",
-   "biz": "6038213407",
-   "phone": "01067146339\n-",
-   "pos": "토스포스",
-   "content": "",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/open?id=1cZRsBJHogDF8EEbxyO87l6ETbYN29rB7",
-    "https://drive.google.com/open?id=1cx-HbVOEVDpMw67Bb64BnxkfyTVK3Huk",
-    "https://drive.google.com/open?id=1j9zJlQl8cUZSjhHrbjAhKstoLBsz48Q2",
-    "https://drive.google.com/open?id=12jrCMgi7PLnSw6qM3z38dzwSJ1T5-iXa",
-    "https://drive.google.com/open?id=1InYQswR8OQa1QtzIZQraMchGfYcbZ84U"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782894843.030349",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782893401677429"
   }
  ]
 };
