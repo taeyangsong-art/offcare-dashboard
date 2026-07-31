@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 229,
- "updatedAt": "2026-07-31 09:45",
+ "version": 230,
+ "updatedAt": "2026-07-31 10:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1785459286.868369",
+   "date": "2026-07-31",
+   "time": "09:54",
+   "store": "평강면옥",
+   "biz": "1831702596",
+   "phone": "01032331868",
+   "pos": "",
+   "content": "메뉴 수정 요청드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "물냉면 13,000원\n비빔냉면 13,000원\n물냉 곱배기 17,000원\n비냉곱배기 17,000원",
+    "감사합니당 :감사합니다꾸벅:"
+   ],
+   "rc": 4,
+   "lr": "1785459390.421019",
+   "status": "done",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785459286868369"
+  },
   {
    "ts": "1785457718.417879",
    "date": "2026-07-31",
@@ -9753,28 +9776,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782867744213669"
-  },
-  {
-   "ts": "1782866908.223709",
-   "date": "2026-07-01",
-   "time": "09:48",
-   "store": "지은김치찌개test(KPN)",
-   "biz": "1078709701",
-   "phone": "01081784223\n-",
-   "pos": "기타",
-   "content": "test",
-   "special": "test",
-   "drive": [
-    "https://drive.google.com/file/d/1hvsTI7WrgKfGPnATk8vMVYUfT0NJtYmP/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782866943.626759",
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782866908223709"
   }
  ]
 };
