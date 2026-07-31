@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 240,
- "updatedAt": "2026-07-31 13:00",
+ "version": 241,
+ "updatedAt": "2026-07-31 13:45",
  "days": 30,
  "items": [
   {
@@ -9734,26 +9734,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782881395022319"
-  },
-  {
-   "ts": "1782880315.561169",
-   "date": "2026-07-01",
-   "time": "13:31",
-   "store": "더맑음",
-   "biz": "4383001496",
-   "phone": "01080812424",
-   "pos": "퍼스트포스",
-   "content": "스파로스 사용 가맹점 키오스크 카테고리 수정 요청 드립니다:man-bowing:",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 5,
-   "lr": "1782880983.931249",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782880315561169"
   }
  ]
 };
