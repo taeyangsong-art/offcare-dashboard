@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2119,
+  "version": 2120,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -74862,16 +74862,19 @@ window.SLACK_DATA = {
     },
     "2026-07-31": {
       "counts": {
+        "extern": {
+          "배선유": 1,
+          "심성현": 1,
+          "김동욱": 1
+        },
         "as": {
           "배선유": 3,
-          "김현기": 1,
+          "김현기": 2,
           "김동욱": 4,
           "심성현": 3
         },
-        "extern": {
-          "김동욱": 1
-        },
         "onboarding": {
+          "김동욱": 1,
           "배선유": 1
         },
         "transfer": {
@@ -74888,6 +74891,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:21",
+          "store": "라포(Rapport)",
+          "biz": "2613801567",
+          "cat": "extern",
+          "emp": "배선유",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": "cat 전산등록x / 그 외 설치 완료 / 진짜진짜 완료"
+        },
+        {
+          "time": "10:13",
+          "store": "무브 온(Move on)",
+          "biz": "3043202099",
+          "cat": "extern",
+          "emp": "심성현",
+          "req": "01051078017외주업체 원격요청",
+          "hw": "",
+          "intake": "online",
+          "note": "아이폰 온보딩 완료"
+        },
         {
           "time": "10:05",
           "store": "모데이(Moday waxing)왁싱",
@@ -74912,6 +74937,17 @@ window.SLACK_DATA = {
         },
         {
           "time": "10:00",
+          "store": "루나 라운지(Luna Lounge)",
+          "biz": "5461902753",
+          "cat": "onboarding",
+          "emp": "김동욱",
+          "req": "태블릿 + 프론트 + 프린터 온보딩",
+          "hw": "",
+          "intake": "online",
+          "note": "포프유프(태블릿) 온보딩 완료"
+        },
+        {
+          "time": "10:00",
           "store": "부용식당",
           "biz": "1180380631",
           "cat": "as",
@@ -74920,6 +74956,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "출근 전 / 금일 11:00 예약"
+        },
+        {
+          "time": "10:00",
+          "store": "O works bagel",
+          "biz": "4280503587",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "땡겨요 주문접수 프로그램 설치, 영수증 출력물 사진 1장",
+          "hw": "",
+          "intake": "online",
+          "note": "오후 한 두시"
         },
         {
           "time": "09:59",
@@ -75110,11 +75157,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 20,
+        "online": 24,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "10:13"
+      "updatedAt": "10:30"
     }
   },
   "resp": {
@@ -75143,9 +75190,13 @@ window.SLACK_DATA = {
         "post": "1785405483.340149",
         "lastSeen": 1785405634.063
       },
-      "1785459605.133059": {
-        "post": "1785459605.133059",
-        "lastSeen": 1785460522.945
+      "1785461401.292929": {
+        "post": "1785461401.292929",
+        "lastSeen": 1785461425.999
+      },
+      "1785460138.151629": {
+        "post": "1785460138.151629",
+        "lastSeen": 1785461425.999
       }
     },
     "days": {
