@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 226,
- "updatedAt": "2026-07-31 09:00",
+ "version": 227,
+ "updatedAt": "2026-07-31 09:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1785456352.764919",
+   "date": "2026-07-31",
+   "time": "09:05",
+   "store": "오늘은빵먹는날",
+   "biz": "8644400728",
+   "phone": "01089119361\n-",
+   "pos": "오케이포스",
+   "content": "식빵~~샌드위치식빵5500\n빵~~찰깨빵 5000 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785456357.377909",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785456352764919"
+  },
   {
    "ts": "1785456003.002879",
    "date": "2026-07-31",
@@ -23,8 +43,8 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1785456028.733289",
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785456003002879"
   },
   {
@@ -45,7 +65,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1785403699.459429",
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785403694015489"
   },
@@ -9795,26 +9815,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782865465902209"
-  },
-  {
-   "ts": "1782864600.628859",
-   "date": "2026-07-01",
-   "time": "09:10",
-   "store": "행복한집",
-   "biz": "3931301196",
-   "phone": "01056531786",
-   "pos": "퍼스트포스",
-   "content": "포스기 메뉴 선택 화면 한화면에 나오도록 수정 요청\n\n식사메뉴\n숯불양념구이정식 다른 화면에 뜬다고 주장",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1782864780.949839",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782864600628859"
   }
  ]
 };
