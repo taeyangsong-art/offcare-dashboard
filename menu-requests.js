@@ -3,10 +3,32 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 249,
- "updatedAt": "2026-07-31 16:30",
+ "version": 250,
+ "updatedAt": "2026-07-31 16:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1785483420.852629",
+   "date": "2026-07-31",
+   "time": "16:37",
+   "store": "구어랑 생선구이",
+   "biz": "5226301014",
+   "phone": "",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "메뉴1인에 냉삼 12000원, 물냉면 10000원 비빔냉면 10000원 콩국수 12000원 된장찌개 5000원 올려주세요\n현미과자 5000원 누룽지 7000원"
+   ],
+   "rc": 3,
+   "lr": "1785483605.429489",
+   "status": "done",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785483420852629"
+  },
   {
    "ts": "1785482896.853249",
    "date": "2026-07-31",
@@ -21,9 +43,9 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1785482931.639319",
-   "status": "confirm",
+   "rc": 3,
+   "lr": "1785483185.811699",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785482896853249"
   },
