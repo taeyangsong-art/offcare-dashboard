@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 248,
- "updatedAt": "2026-07-31 16:00",
+ "version": 249,
+ "updatedAt": "2026-07-31 16:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1785482896.853249",
+   "date": "2026-07-31",
+   "time": "16:28",
+   "store": "버들피리 플라워까페",
+   "biz": "5613000462",
+   "phone": "",
+   "pos": "",
+   "content": "메뉴",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1785482931.639319",
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785482896853249"
+  },
   {
    "ts": "1785480481.151449",
    "date": "2026-07-31",
@@ -21,10 +41,10 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1785480491.633989",
-   "status": "wait",
-   "handler": null,
+   "rc": 3,
+   "lr": "1785482516.934249",
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785480481151449"
   },
   {
@@ -9681,26 +9701,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782893401677429"
-  },
-  {
-   "ts": "1782890968.100569",
-   "date": "2026-07-01",
-   "time": "16:29",
-   "store": "명성왕족발",
-   "biz": "5671900432",
-   "phone": "01045004989",
-   "pos": "퍼스트포스",
-   "content": "메뉴 추가 요청 드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1782891739.321489",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782890968100569"
   }
  ]
 };
