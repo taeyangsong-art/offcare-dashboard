@@ -3533,14 +3533,18 @@ const AS_ISSUE_RULES = [
   {label:'프론트/터미널',   color:'#0071e3', kw:['프론트','터미널','terminal','front','본체','터프','포프','포터프']},
   {label:'포스/키오스크',   color:'#34c759', kw:['포스','pos','키오스크','kiosk','키오','태블릿','테이블오더','테이블 오더']},
   {label:'프린터',          color:'#5e5ce6', kw:['프린터','프린트','유선프린터','무선프린터','유프','무프','영수증','출력','용지','인쇄','라벨']},
-  {label:'CAT/무선단말기',  color:'#ff9500', kw:['cat','무선단말기','무선단말','무선기','단말기','카드','결제','승인','정산','환불','매출전표','van','밴','조회기','카드기']},
+  {label:'CAT/무선단말기',  color:'#ff9500', kw:['cat','캣프','프캣','무선단말기','무선단말','무선기','단말기','카드','결제','승인','정산','환불','매출전표','van','밴','조회기','카드기']},
   {label:'네트워크/연동',   color:'#00c7be', kw:['네트워크','랜','lan','인터넷','와이파이','wifi','연동','배달','통신','공유기','ap']},
 ];
 const AS_ISSUE_ETC='기타';
 const AS_ISSUE_COLOR={'프론트/터미널':'#0071e3','포스/키오스크':'#34c759','프린터':'#5e5ce6','CAT/무선단말기':'#ff9500','네트워크/연동':'#00c7be','기타':'#8e8e93'};
+// 캣프·프캣(CAT 프린터 일체형)은 '프린터'·프린터 모델명과 같이 적혀도 CAT/무선단말기로 분류
+// — 규칙 배열은 첫 매칭이 이기고 '프린터'가 CAT보다 앞이라, 키워드 추가만으로는 프린터로 새어나감
+const CAT_COMBO_RE = /캣프|프캣/;
 // 프린터 모델명(ts100·ts400·cpp-3000·8385 등)은 다른 기기 단어(pos·연동 등)보다 우선 → 프린터로 분류
 const PRINTER_MODEL_RE = /\bts-?\s?\d{3,4}\b|\bcpp-?\s?\d{3,4}\b|(?:^|[^0-9])8385(?:[^0-9]|$)/i;
 function classifyAsIssue(text){ const t=(text||'').toLowerCase();
+  if(CAT_COMBO_RE.test(t)) return 'CAT/무선단말기';
   if(PRINTER_MODEL_RE.test(t)) return '프린터';
   for(const r of AS_ISSUE_RULES){ if(r.kw.some(k=>t.includes(k.toLowerCase()))) return r.label; } return AS_ISSUE_ETC; }
 // 하드웨어 필드가 기기 유형을 명시하면 그걸 우선(글 수정 시 반영), 없으면 내용+처리내역으로 분류
