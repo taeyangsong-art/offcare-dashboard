@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 237,
- "updatedAt": "2026-07-31 12:15",
+ "version": 238,
+ "updatedAt": "2026-07-31 12:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1785468249.030539",
+   "date": "2026-07-31",
+   "time": "12:24",
+   "store": "멕시카나 망포점",
+   "biz": "3302901497",
+   "phone": "01047066380\n-",
+   "pos": "기타",
+   "content": "키오스크 내점 금액은 그대로지만 포장은  치킨한마리기준2천원할인적용될까요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785468254.363369",
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785468249030539"
+  },
   {
    "ts": "1785466182.624599",
    "date": "2026-07-31",
