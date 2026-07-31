@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 244,
- "updatedAt": "2026-07-31 14:30",
+ "version": 245,
+ "updatedAt": "2026-07-31 14:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1785476351.336569",
+   "date": "2026-07-31",
+   "time": "14:39",
+   "store": "올데이크레페(ALL DAY CREPE) 다대점",
+   "biz": "2861502950",
+   "phone": "01093803872",
+   "pos": "",
+   "content": "메뉴 복사 요청 드립니다.\n\n2058143850 / \t\n올데이크레페(ALL DAY CREPE) 운정점  < 해당 가맹점 메뉴 동일 복사 요청 드립니다. :woman-bowing::skin-tone-4:",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785476356.275169",
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785476351336569"
+  },
   {
    "ts": "1785475011.813639",
    "date": "2026-07-31",
@@ -22,10 +42,12 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1785475016.552029",
-   "status": "confirm",
+   "replies": [
+    "완료"
+   ],
+   "rc": 2,
+   "lr": "1785476088.608199",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785475011813639"
   },
