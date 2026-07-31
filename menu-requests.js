@@ -3,10 +3,32 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 234,
- "updatedAt": "2026-07-31 11:30",
+ "version": 235,
+ "updatedAt": "2026-07-31 11:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1785465763.285789",
+   "date": "2026-07-31",
+   "time": "11:42",
+   "store": "피자스쿨일원점",
+   "biz": "1200925308",
+   "phone": "01040978526",
+   "pos": "",
+   "content": "안녕하세요! 메뉴 수정 부탁드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "• 피자, 크러스트 안에 있는 마라 치킨항목 삭제요청\n• 어제 상품등록 후 페이지 수 1장이 넘어가는데 한눈에 볼수있게 한칸에 두개의 메뉴등록이 가능한지 문의(어제 추가한 할라피뇨가 갈릭소스탭이랑 같이 붙어있는 것처럼)"
+   ],
+   "rc": 2,
+   "lr": "1785465855.343139",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785465763285789"
+  },
   {
    "ts": "1785463143.448559",
    "date": "2026-07-31",
