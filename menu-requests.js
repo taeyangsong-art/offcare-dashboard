@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 255,
- "updatedAt": "2026-07-31 19:15",
+ "version": 256,
+ "updatedAt": "2026-07-31 19:45",
  "days": 30,
  "items": [
   {
@@ -9747,46 +9747,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782913480620479"
-  },
-  {
-   "ts": "1782902164.978589",
-   "date": "2026-07-01",
-   "time": "19:36",
-   "store": "쿠타팜 테라스",
-   "biz": "7413600207",
-   "phone": "01072299642",
-   "pos": "",
-   "content": "• 메뉴 가격 수정 요청드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782908658.470949",
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782902164978589"
-  },
-  {
-   "ts": "1782902005.265109",
-   "date": "2026-07-01",
-   "time": "19:33",
-   "store": "가든갤러리",
-   "biz": "1322074826",
-   "phone": "01037349436",
-   "pos": "퍼스트포스",
-   "content": "• 메뉴 추가 요청 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782907993.918029",
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782902005265109"
   }
  ]
 };
