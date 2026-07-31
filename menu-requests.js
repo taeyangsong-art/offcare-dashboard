@@ -3,10 +3,57 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 254,
- "updatedAt": "2026-07-31 19:00",
+ "version": 255,
+ "updatedAt": "2026-07-31 19:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1785492477.124909",
+   "date": "2026-07-31",
+   "time": "19:07",
+   "store": "멕시카나 망포점",
+   "biz": "3302901497",
+   "phone": "01047066380\n-",
+   "pos": "기타",
+   "content": "키오스크 메뉴추가",
+   "special": "반반치킨 맛변경메뉴 거기에 치킨 무미제공소스미제공키 생성해주세요",
+   "drive": [
+    "https://drive.google.com/file/d/1JnB_MJliv1V2McaAMyhCO2bBQ1iPHnlM/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1gJes6nPvUUKUsHaW4thbtjymoD6EA2fe/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1zhiP-6aLWdo_7rzfi76bZLClOfaR_3C2/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1R-vH3U_4vY2qafcMsB8-fbuz8-mS1iO3/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785492481.519249",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785492477124909"
+  },
+  {
+   "ts": "1785492348.856819",
+   "date": "2026-07-31",
+   "time": "19:05",
+   "store": "고모카세",
+   "biz": "6710902671",
+   "phone": "01082564744",
+   "pos": "",
+   "content": "• 메뉴 가격 수정 부탁드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "카테고리: 이건어때\n메뉴명: 육회, 육사시미\n가격: 27,000원"
+   ],
+   "rc": 3,
+   "lr": "1785492631.453559",
+   "status": "done",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785492348856819"
+  },
   {
    "ts": "1785490657.776149",
    "date": "2026-07-31",
