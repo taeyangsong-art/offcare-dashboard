@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 253,
- "updatedAt": "2026-07-31 18:45",
+ "version": 254,
+ "updatedAt": "2026-07-31 19:00",
  "days": 30,
  "items": [
   {
@@ -20,9 +20,12 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1785491108.995319",
+   "replies": [
+    "• 고수무침 \n• 소고기 마라샹궈\n• 홍콩 뭐라했는데 .. \n• 망고화채 \n• 깐풍먹태\n• 고구마튀김 \n• 꿔바로우 \n• 덕 냉채 \n• 파인애플 \n• 어향갈비  \n이거 등록해주기로 ..? 했다는데 등록이 안되었다고해서여 ... 안보인데여 ... 확인 한번 부탁드려두 댈까염 ....",
+    "아하 .. 오캐이 .."
+   ],
+   "rc": 6,
+   "lr": "1785491182.591299",
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785490657776149"
