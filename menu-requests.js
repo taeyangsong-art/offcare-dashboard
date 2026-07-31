@@ -3,10 +3,32 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 241,
- "updatedAt": "2026-07-31 13:45",
+ "version": 242,
+ "updatedAt": "2026-07-31 14:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1785473761.708389",
+   "date": "2026-07-31",
+   "time": "13:56",
+   "store": "문래밤아",
+   "biz": "5043501070",
+   "phone": "",
+   "pos": "",
+   "content": "메뉴 테이블",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "https://w1659946222-hxm266180.slack.com/archives/C0ADC9759KQ/p1785472474154069?thread_ts=1785401307.315209&cid=C0ADC9759KQ"
+   ],
+   "rc": 2,
+   "lr": "1785473772.242409",
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785473761708389"
+  },
   {
    "ts": "1785468249.030539",
    "date": "2026-07-31",
@@ -9714,26 +9736,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782885120585739"
-  },
-  {
-   "ts": "1782881395.022319",
-   "date": "2026-07-01",
-   "time": "13:49",
-   "store": "카페051 (가야센트레빌정)",
-   "biz": "3720601658",
-   "phone": "01048566664",
-   "pos": "퍼스트포스",
-   "content": "메뉴",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 7,
-   "lr": "1782882419.698159",
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782881395022319"
   }
  ]
 };
