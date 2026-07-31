@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 256,
- "updatedAt": "2026-07-31 19:45",
+ "version": 257,
+ "updatedAt": "2026-07-31 22:45",
  "days": 30,
  "items": [
   {
@@ -9727,26 +9727,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김동욱",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782953298067149"
-  },
-  {
-   "ts": "1782913480.620479",
-   "date": "2026-07-01",
-   "time": "22:44",
-   "store": "꾸움집",
-   "biz": "7974501249",
-   "phone": "01067485013\n-",
-   "pos": "오케이포스",
-   "content": "디저트 카테고리\n[수정] 후르츠산도 7,000\n[삭제] 루비레드키위, 카라향산도",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782918026.092949",
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782913480620479"
   }
  ]
 };
