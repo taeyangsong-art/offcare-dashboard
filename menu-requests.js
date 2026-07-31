@@ -3,10 +3,32 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 243,
- "updatedAt": "2026-07-31 14:15",
+ "version": 244,
+ "updatedAt": "2026-07-31 14:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1785475011.813639",
+   "date": "2026-07-31",
+   "time": "14:16",
+   "store": "타렛카페",
+   "biz": "1370288490",
+   "phone": "01053551706\n-",
+   "pos": "토스포스",
+   "content": "메뉴 포스입력",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1ASb09A7uFRe4cfcmas4XOnz6kCEVdwBw/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785475016.552029",
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785475011813639"
+  },
   {
    "ts": "1785473761.708389",
    "date": "2026-07-31",
