@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 225,
- "updatedAt": "2026-07-30 21:00",
+ "version": 226,
+ "updatedAt": "2026-07-31 09:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1785456003.002879",
+   "date": "2026-07-31",
+   "time": "09:00",
+   "store": "꿈의제과점(Patisserie De Reves)",
+   "biz": "1070348077",
+   "phone": "",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1785456028.733289",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785456003002879"
+  },
   {
    "ts": "1785403694.015489",
    "date": "2026-07-30",
@@ -25,8 +45,8 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1785403699.459429",
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785403694015489"
   },
   {
@@ -9795,46 +9815,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782864600628859"
-  },
-  {
-   "ts": "1782863915.842849",
-   "date": "2026-07-01",
-   "time": "08:58",
-   "store": "강창구진순대미사센텀비즈점",
-   "biz": "8677800154",
-   "phone": "",
-   "pos": "퍼스트포스",
-   "content": "기존 메뉴 삭제",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1782863924.424819",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782863915842849"
-  },
-  {
-   "ts": "1782863899.370639",
-   "date": "2026-07-01",
-   "time": "08:58",
-   "store": "강창구찹쌀진순대 용인하이닉스점",
-   "biz": "8624800768",
-   "phone": "",
-   "pos": "",
-   "content": "기존 메뉴 삭제",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1782863904.999019",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782863899370639"
   }
  ]
 };

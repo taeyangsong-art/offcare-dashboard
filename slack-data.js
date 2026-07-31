@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2113,
+  "version": 2114,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -71668,6 +71668,17 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "18:28",
+          "store": "멕시카나 망포점",
+          "biz": "3302901497",
+          "handler": "김규빈",
+          "cat": "menu",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
           "time": "12:42",
           "store": "타쿠",
           "biz": "4175400948",
@@ -74591,7 +74602,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 213,
+        "online": 214,
         "offline": 51,
         "unknown": 0
       },
@@ -74858,7 +74869,7 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": ""
+      "updatedAt": "09:00"
     }
   },
   "resp": {
@@ -74886,6 +74897,26 @@ window.SLACK_DATA = {
       "1785405483.340149": {
         "post": "1785405483.340149",
         "lastSeen": 1785405634.063
+      },
+      "1785456006.330999": {
+        "post": "1785456006.330999",
+        "lastSeen": 1785456033.531
+      },
+      "1785456003.679539": {
+        "post": "1785456003.679539",
+        "lastSeen": 1785456033.531
+      },
+      "1785456012.513039": {
+        "post": "1785456012.513039",
+        "lastSeen": 1785456033.531
+      },
+      "1785456003.002879": {
+        "post": "1785456003.002879",
+        "lastSeen": 1785456033.531
+      },
+      "1785456005.712769": {
+        "post": "1785456005.712769",
+        "lastSeen": 1785456033.531
       }
     },
     "days": {
