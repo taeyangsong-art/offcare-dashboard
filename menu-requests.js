@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 235,
- "updatedAt": "2026-07-31 11:45",
+ "version": 236,
+ "updatedAt": "2026-07-31 12:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1785466182.624599",
+   "date": "2026-07-31",
+   "time": "11:49",
+   "store": "맥쓰(MEXX)세계치킨제기역점",
+   "biz": "3464601387",
+   "phone": "",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1785466215.389449",
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785466182624599"
+  },
   {
    "ts": "1785465763.285789",
    "date": "2026-07-31",
@@ -23,10 +43,10 @@ window.MENU_REQUESTS = {
    "replies": [
     "• 피자, 크러스트 안에 있는 마라 치킨항목 삭제요청\n• 어제 상품등록 후 페이지 수 1장이 넘어가는데 한눈에 볼수있게 한칸에 두개의 메뉴등록이 가능한지 문의(어제 추가한 할라피뇨가 갈릭소스탭이랑 같이 붙어있는 것처럼)"
    ],
-   "rc": 2,
-   "lr": "1785465855.343139",
-   "status": "wait",
-   "handler": null,
+   "rc": 3,
+   "lr": "1785466429.263809",
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785465763285789"
   },
   {
@@ -9733,29 +9753,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782875398006129"
-  },
-  {
-   "ts": "1782874797.093109",
-   "date": "2026-07-01",
-   "time": "11:59",
-   "store": "엄마손반찬",
-   "biz": "5301602403",
-   "phone": "01065557554\n-",
-   "pos": "스파로스포스",
-   "content": "종목변경으로 인한 메뉴 전체변경",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/1He60knsbA2XUYrhAN6jKEYjp4sOxGHb8/view?usp=drivesdk",
-    "https://drive.google.com/file/d/1xAGVA53dXqfkyTE1w6qV_kNA88DOHAFd/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 10,
-   "lr": "1782881510.780499",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782874797093109"
   }
  ]
 };
