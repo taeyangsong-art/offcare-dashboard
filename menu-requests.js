@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 233,
- "updatedAt": "2026-07-31 11:15",
+ "version": 234,
+ "updatedAt": "2026-07-31 11:30",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1785463159.589959",
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785463143448559"
   },
@@ -9734,26 +9734,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782874797093109"
-  },
-  {
-   "ts": "1782872213.044479",
-   "date": "2026-07-01",
-   "time": "11:16",
-   "store": "장수메밀제면",
-   "biz": "1071232413",
-   "phone": "01096451923",
-   "pos": "토스포스",
-   "content": "토스포스 /  메뉴 추가,삭제, 가격수정 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782872525.906019",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782872213044479"
   }
  ]
 };
