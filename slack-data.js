@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2248,
+  "version": 2249,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -77781,7 +77781,7 @@ window.SLACK_DATA = {
     "2026-08-01": {
       "counts": {
         "as": {
-          "미지정": 16,
+          "미지정": 17,
           "송태양": 21,
           "최민석": 3
         },
@@ -77810,6 +77810,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "정상 결제 확인"
+        },
+        {
+          "time": "17:30",
+          "store": "류화(방이본점)",
+          "biz": "6148504613",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "금일 무프 온보딩 받으신 매장인데, 멜로디 무음 설정 도움 요청하셨습니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
         },
         {
           "time": "17:26",
@@ -78451,11 +78462,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 50,
+        "online": 51,
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "17:33",
+      "updatedAt": "18:00",
       "voc": {
         "responses": 18,
         "install": {
@@ -78676,9 +78687,13 @@ window.SLACK_DATA = {
         "post": "1785502701.838699",
         "lastSeen": 1785502834.369
       },
-      "1785573006.344639": {
-        "post": "1785573006.344639",
-        "lastSeen": 1785573921.376
+      "1785574801.260509": {
+        "post": "1785574801.260509",
+        "lastSeen": 1785574834.789
+      },
+      "1785574555.339609": {
+        "post": "1785574555.339609",
+        "lastSeen": 1785574834.789
       }
     },
     "days": {
@@ -91419,8 +91434,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-01": {
-        "cnt": 30,
-        "sumMin": 486.04753964344656,
+        "cnt": 31,
+        "sumMin": 508.90983732541395,
         "over": 3,
         "items": [
           {
@@ -91662,6 +91677,14 @@ window.SLACK_DATA = {
             "biz": "7943501727",
             "who": "송태양",
             "cat": "onboarding"
+          },
+          {
+            "hm": "17:30",
+            "min": 22.9,
+            "store": "류화(방이본점)",
+            "biz": "6148504613",
+            "who": "",
+            "cat": "as"
           }
         ]
       }

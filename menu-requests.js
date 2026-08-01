@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 278,
- "updatedAt": "2026-08-01 17:00",
+ "version": 279,
+ "updatedAt": "2026-08-01 18:00",
  "days": 30,
  "items": [
   {
@@ -9377,26 +9377,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782988098289769"
-  },
-  {
-   "ts": "1782982373.582769",
-   "date": "2026-07-02",
-   "time": "17:52",
-   "store": "자연임실치즈피자",
-   "biz": "1864301159",
-   "phone": "01094221529",
-   "pos": "",
-   "content": "메뉴 이미지 제거 요청드립니다 >>",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1782984283.435739",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782982373582769"
   }
  ]
 };
