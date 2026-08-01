@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2254,
+  "version": 2255,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -77780,15 +77780,15 @@ window.SLACK_DATA = {
     },
     "2026-08-01": {
       "counts": {
+        "onboarding": {
+          "최민석": 3,
+          "송태양": 9,
+          "미지정": 2
+        },
         "as": {
           "최민석": 6,
           "미지정": 18,
           "송태양": 21
-        },
-        "onboarding": {
-          "송태양": 9,
-          "최민석": 2,
-          "미지정": 2
         },
         "transfer": {
           "송태양": 3
@@ -77800,6 +77800,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "19:00",
+          "store": "종점집",
+          "biz": "1322159012",
+          "cat": "onboarding",
+          "emp": "최민석",
+          "req": "포스기 세트 + 무선프린터기 와이파이 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포프유프무프 온보딩 완료"
+        },
         {
           "time": "18:26",
           "store": "온마주",
@@ -78517,7 +78528,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 54,
+        "online": 55,
         "offline": 11,
         "unknown": 0
       },
@@ -78808,11 +78819,7 @@ window.SLACK_DATA = {
       },
       "1785576878.491639": {
         "post": "1785576878.491639",
-        "lastSeen": 1785579323.921
-      },
-      "1785578455.342339": {
-        "post": "1785578455.342339",
-        "lastSeen": 1785579323.921
+        "lastSeen": 1785580225.945
       }
     },
     "days": {
@@ -91553,8 +91560,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-01": {
-        "cnt": 35,
-        "sumMin": 564.9901132265726,
+        "cnt": 36,
+        "sumMin": 586.9832909107207,
         "over": 3,
         "items": [
           {
@@ -91836,6 +91843,14 @@ window.SLACK_DATA = {
             "biz": "6075589354",
             "who": "최민석",
             "cat": "as"
+          },
+          {
+            "hm": "19:00",
+            "min": 22,
+            "store": "종점집",
+            "biz": "1322159012",
+            "who": "최민석",
+            "cat": "onboarding"
           }
         ]
       }

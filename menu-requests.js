@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 281,
- "updatedAt": "2026-08-01 19:03",
+ "version": 282,
+ "updatedAt": "2026-08-01 19:30",
  "days": 30,
  "items": [
   {
@@ -9379,26 +9379,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783004905851639"
-  },
-  {
-   "ts": "1782988098.289769",
-   "date": "2026-07-02",
-   "time": "19:28",
-   "store": "카페헐리우드",
-   "biz": "1011135512",
-   "phone": "01052496269",
-   "pos": "토스포스",
-   "content": "• OK포스 프로그램 > 토스포스 프로그램으로 전환  예정 매장 (7/8 방문설치)\n• ok포스에 반영된 메뉴 >   토플파 KIS에 반영 부탁드립니다!\n<https://w1659946222-hxm266180.slack.com/archives/C0B2XSJ08UA/p1782899828609789?thread_ts=1782895334.292359&cid=C0B2XSJ08UA|( 참고스레드 )>  cc. <@U03TE3DR7ND>",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 13,
-   "lr": "1783413395.647669",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782988098289769"
   }
  ]
 };
