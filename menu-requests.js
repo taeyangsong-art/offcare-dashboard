@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 271,
- "updatedAt": "2026-08-01 15:00",
+ "version": 272,
+ "updatedAt": "2026-08-01 15:16",
  "days": 30,
  "items": [
   {
@@ -20,9 +20,11 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1785560096.929889",
+   "replies": [
+    "2차부재 솔라피"
+   ],
+   "rc": 2,
+   "lr": "1785564777.872669",
    "status": "confirm",
    "handler": "송태양",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785560092025329"
@@ -9558,46 +9560,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782973996428449"
-  },
-  {
-   "ts": "1782972903.754329",
-   "date": "2026-07-02",
-   "time": "15:15",
-   "store": "튀김꼬치공간",
-   "biz": "1591302649",
-   "phone": "01044099666",
-   "pos": "퍼스트포스",
-   "content": "스파로스 포스 메뉴 변경 요청 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782973445.699219",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782972903754329"
-  },
-  {
-   "ts": "1782972066.496219",
-   "date": "2026-07-02",
-   "time": "15:01",
-   "store": "땡기네 김밥",
-   "biz": "2113517705",
-   "phone": "01048576245",
-   "pos": "",
-   "content": "유플러스 이관 매장 메뉴 추가 및 금액 수정 요청 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782973298.149889",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782972066496219"
   }
  ]
 };
