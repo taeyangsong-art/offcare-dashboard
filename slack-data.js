@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2249,
+  "version": 2250,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -77781,9 +77781,9 @@ window.SLACK_DATA = {
     "2026-08-01": {
       "counts": {
         "as": {
+          "최민석": 4,
           "미지정": 17,
-          "송태양": 21,
-          "최민석": 3
+          "송태양": 21
         },
         "onboarding": {
           "송태양": 8,
@@ -77800,6 +77800,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "18:00",
+          "store": "뵈르뵈르 대학로점",
+          "biz": "2383801188",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "키오스크 먹통으로 문의 / 확인 부탁드립니다!",
+          "hw": "",
+          "intake": "offline",
+          "note": "자체해결 완료"
+        },
         {
           "time": "17:33",
           "store": "피씨씨엠 수유역점",
@@ -78463,19 +78474,19 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 51,
-        "offline": 9,
+        "offline": 10,
         "unknown": 0
       },
-      "updatedAt": "18:00",
+      "updatedAt": "18:14",
       "voc": {
-        "responses": 18,
+        "responses": 19,
         "install": {
-          "count": 8,
+          "count": 9,
           "low": 1
         },
         "nps": {
-          "count": 18,
-          "low": 2
+          "count": 19,
+          "low": 3
         },
         "high": {
           "install": 4,
@@ -78483,6 +78494,7 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "0": 1,
+          "4": 1,
           "5": 1,
           "7": 1,
           "8": 2,
@@ -78491,20 +78503,20 @@ window.SLACK_DATA = {
         },
         "installDist": {
           "2": 1,
-          "3": 1,
+          "3": 2,
           "4": 2,
           "5": 4
         },
         "byIndustry": {
+          "서비스[학원]": 4,
           "서비스[뷰티,헤어]": 2,
           "도소매": 1,
-          "카페": 2,
-          "서비스[학원]": 3
+          "카페": 2
         },
         "byTenure": {
           "구매설치": {
-            "total": 8,
-            "low": 2
+            "total": 9,
+            "low": 3
           },
           "1개월": {
             "total": 3,
@@ -78524,6 +78536,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "NICE": {
+            "total": 2,
+            "low": 2
+          },
           "KPN": {
             "total": 5,
             "low": 0
@@ -78543,16 +78559,34 @@ window.SLACK_DATA = {
           "KOCES": {
             "total": 3,
             "low": 2
-          },
-          "NICE": {
-            "total": 1,
-            "low": 1
           }
         },
         "reasonCounts": {
-          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 3
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 4
         },
         "alerts": [
+          {
+            "time": "18:10",
+            "store": "J.Focus English",
+            "storeId": "343401",
+            "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
+            "install": 3,
+            "nps": 4,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 4,
+                "text": "별로 안쓰게되니 추천할 생각도 안든다??",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:39",
             "store": "보니아뜰리에미술교습소",
@@ -78687,13 +78721,13 @@ window.SLACK_DATA = {
         "post": "1785502701.838699",
         "lastSeen": 1785502834.369
       },
-      "1785574801.260509": {
-        "post": "1785574801.260509",
-        "lastSeen": 1785574834.789
-      },
       "1785574555.339609": {
         "post": "1785574555.339609",
-        "lastSeen": 1785574834.789
+        "lastSeen": 1785575721.416
+      },
+      "1785575665.285919": {
+        "post": "1785575665.285919",
+        "lastSeen": 1785575721.416
       }
     },
     "days": {
@@ -91434,8 +91468,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-01": {
-        "cnt": 31,
-        "sumMin": 508.90983732541395,
+        "cnt": 32,
+        "sumMin": 516.8572038412093,
         "over": 3,
         "items": [
           {
@@ -91684,6 +91718,14 @@ window.SLACK_DATA = {
             "store": "류화(방이본점)",
             "biz": "6148504613",
             "who": "",
+            "cat": "as"
+          },
+          {
+            "hm": "18:00",
+            "min": 7.9,
+            "store": "뵈르뵈르 대학로점",
+            "biz": "2383801188",
+            "who": "최민석",
             "cat": "as"
           }
         ]
