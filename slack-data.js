@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2220,
+  "version": 2221,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -77781,17 +77781,31 @@ window.SLACK_DATA = {
     "2026-08-01": {
       "counts": {
         "as": {
-          "송태양": 8
+          "송태양": 9
         },
         "onboarding": {
           "송태양": 2
         },
         "transfer": {
           "송태양": 3
+        },
+        "menu": {
+          "미지정": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:03",
+          "store": "벨로씨(BELLOCI)",
+          "biz": "1580603098",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "유프 사용 / 로고 삽입 통신속도 조절 이후 영수증 출력 안됨",
+          "hw": "",
+          "intake": "online",
+          "note": "• 프론트 내 115200 설정 후 정상출력 프론트 내 115200 설정 후 정상출력"
+        },
         {
           "time": "11:00",
           "store": "따뜻한 밥상 마천점",
@@ -77835,6 +77849,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "해당 문제 재발생으로 토글 꺼드림 해당 문제 재발생으로 토글 꺼드림 추가 오류 결제 상품 클릭 시 프론트 내 주문 상품 표시 없이 결제 유형 선택 화면으로 바로 넘어가는 현상"
+        },
+        {
+          "time": "10:19",
+          "store": "",
+          "biz": "",
+          "cat": "menu",
+          "emp": "미지정",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! /"
         },
         {
           "time": "10:00",
@@ -77937,37 +77962,54 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 11,
+        "online": 13,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "11:00",
+      "updatedAt": "11:15",
       "voc": {
-        "responses": 1,
+        "responses": 3,
         "install": {
-          "count": 0,
-          "low": 0
-        },
-        "nps": {
           "count": 1,
           "low": 0
         },
+        "nps": {
+          "count": 3,
+          "low": 0
+        },
         "high": {
-          "install": 0,
-          "nps": 1
+          "install": 1,
+          "nps": 2
         },
         "npsDist": {
-          "10": 1
+          "9": 1,
+          "10": 2
         },
-        "installDist": {},
-        "byIndustry": {},
+        "installDist": {
+          "5": 1
+        },
+        "byIndustry": {
+          "서비스[뷰티,헤어]": 1
+        },
         "byTenure": {
+          "12개월": {
+            "total": 1,
+            "low": 0
+          },
+          "구매설치": {
+            "total": 1,
+            "low": 0
+          },
           "1개월": {
             "total": 1,
             "low": 0
           }
         },
         "byVan": {
+          "KSNET": {
+            "total": 2,
+            "low": 0
+          },
           "KPN": {
             "total": 1,
             "low": 0
@@ -78029,13 +78071,21 @@ window.SLACK_DATA = {
         "post": "1785502701.838699",
         "lastSeen": 1785502834.369
       },
-      "1785547180.224389": {
-        "post": "1785547180.224389",
-        "lastSeen": 1785549754.9
+      "1785550501.060699": {
+        "post": "1785550501.060699",
+        "lastSeen": 1785550527.928
       },
-      "1785549601.524999": {
-        "post": "1785549601.524999",
-        "lastSeen": 1785549754.9
+      "1785550464.204059": {
+        "post": "1785550464.204059",
+        "lastSeen": 1785550527.928
+      },
+      "1785550222.008529": {
+        "post": "1785550222.008529",
+        "lastSeen": 1785550527.928
+      },
+      "1785550099.676289": {
+        "post": "1785550099.676289",
+        "lastSeen": 1785550527.928
       }
     },
     "days": {
@@ -90776,8 +90826,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-01": {
-        "cnt": 5,
-        "sumMin": 106.45424307982128,
+        "cnt": 6,
+        "sumMin": 115.45239309867225,
         "over": 2,
         "items": [
           {
@@ -90819,6 +90869,14 @@ window.SLACK_DATA = {
             "biz": "1180380631",
             "who": "송태양",
             "cat": "onboarding"
+          },
+          {
+            "hm": "11:00",
+            "min": 9,
+            "store": "제우스당구클럽",
+            "biz": "7733900020",
+            "who": "송태양",
+            "cat": "as"
           }
         ]
       }
