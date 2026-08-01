@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 269,
- "updatedAt": "2026-08-01 14:32",
+ "version": 270,
+ "updatedAt": "2026-08-01 14:45",
  "days": 30,
  "items": [
   {
@@ -9618,46 +9618,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782971203638609"
-  },
-  {
-   "ts": "1782970842.524199",
-   "date": "2026-07-02",
-   "time": "14:40",
-   "store": "쌀어묵공방 방이역점",
-   "biz": "6360403819",
-   "phone": "",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782970866.452279",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782970842524199"
-  },
-  {
-   "ts": "1782970621.303909",
-   "date": "2026-07-02",
-   "time": "14:37",
-   "store": "술25",
-   "biz": "3720802383",
-   "phone": "01089660870",
-   "pos": "토스포스",
-   "content": "유니온포스 -> 토스포스 메뉴 등록 부탁드립니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 6,
-   "lr": "1782973440.419969",
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782970621303909"
   }
  ]
 };
