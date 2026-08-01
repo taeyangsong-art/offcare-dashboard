@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2243,
+  "version": 2244,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -78356,27 +78356,28 @@ window.SLACK_DATA = {
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "16:39",
+      "updatedAt": "16:52",
       "voc": {
-        "responses": 14,
+        "responses": 17,
         "install": {
           "count": 7,
           "low": 1
         },
         "nps": {
-          "count": 14,
+          "count": 17,
           "low": 2
         },
         "high": {
           "install": 3,
-          "nps": 8
+          "nps": 10
         },
         "npsDist": {
           "0": 1,
           "5": 1,
+          "7": 1,
           "8": 2,
           "9": 2,
-          "10": 8
+          "10": 10
         },
         "installDist": {
           "2": 1,
@@ -78391,6 +78392,14 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 3,
+            "low": 0
+          },
+          "12개월": {
+            "total": 5,
+            "low": 0
+          },
           "구매설치": {
             "total": 7,
             "low": 2
@@ -78402,17 +78411,21 @@ window.SLACK_DATA = {
           "6개월": {
             "total": 1,
             "low": 0
-          },
-          "12개월": {
-            "total": 3,
-            "low": 0
-          },
-          "1개월": {
-            "total": 2,
-            "low": 0
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 2,
+            "low": 0
+          },
+          "KPN": {
+            "total": 4,
+            "low": 0
+          },
+          "KSNET": {
+            "total": 3,
+            "low": 0
+          },
           "SECTA9": {
             "total": 4,
             "low": 0
@@ -78424,18 +78437,6 @@ window.SLACK_DATA = {
           "NICE": {
             "total": 1,
             "low": 1
-          },
-          "KPN": {
-            "total": 3,
-            "low": 0
-          },
-          "KIS": {
-            "total": 1,
-            "low": 0
-          },
-          "KSNET": {
-            "total": 2,
-            "low": 0
           }
         },
         "reasonCounts": {
@@ -78586,7 +78587,7 @@ window.SLACK_DATA = {
       },
       "1785569990.877699": {
         "post": "1785569990.877699",
-        "lastSeen": 1785570321.166
+        "lastSeen": 1785570788.255
       }
     },
     "days": {
