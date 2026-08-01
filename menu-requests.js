@@ -3,10 +3,35 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 261,
- "updatedAt": "2026-08-01 11:48",
+ "version": 262,
+ "updatedAt": "2026-08-01 12:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1785552823.909339",
+   "date": "2026-08-01",
+   "time": "11:53",
+   "store": "(주)이디피에스",
+   "biz": "3938600833",
+   "phone": "01062607429",
+   "pos": "",
+   "content": "테이블 생성 요청  / 테이블 비우기 사전 안내",
+   "special": "",
+   "drive": [],
+   "files": 1,
+   "att": [
+    {
+     "name": "f_d7134b6359fe.pdf",
+     "path": "menu-files/1785552823_909339-0.pdf"
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785552829.716639",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785552823909339"
+  },
   {
    "ts": "1785552221.033219",
    "date": "2026-08-01",
@@ -24,9 +49,9 @@ window.MENU_REQUESTS = {
     "요리류에 있는 미니탕수육\n\n15,000원 으로 수정 요청하셨습니다.",
     "태양님. 제가 OK 포스 메뉴 수정 방법을 몰라서 부득이하게 요청드립니다. :눈물햄스터:\n\n가능하실 때 수정 한 번만 부탁드립니다. :감사합니다꾸벅:"
    ],
-   "rc": 3,
-   "lr": "1785552315.437309",
-   "status": "confirm",
+   "rc": 4,
+   "lr": "1785552550.353889",
+   "status": "done",
    "handler": "송태양",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785552221033219"
   },
