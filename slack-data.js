@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2216,
+  "version": 2217,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -77784,11 +77784,22 @@ window.SLACK_DATA = {
           "송태양": 4
         },
         "transfer": {
-          "송태양": 1
+          "송태양": 2
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:00",
+          "store": "수이커피",
+          "biz": "5763201754",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "8월 1일 (토) 오전10시/프론트+유프",
+          "hw": "",
+          "intake": "online",
+          "note": "3분뒤 / 완료"
+        },
         {
           "time": "09:38",
           "store": "포도원건강센타",
@@ -77846,7 +77857,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 4,
+        "online": 5,
         "offline": 1,
         "unknown": 0
       },
@@ -77938,17 +77949,13 @@ window.SLACK_DATA = {
         "post": "1785502701.838699",
         "lastSeen": 1785502834.369
       },
-      "1785544200.768719": {
-        "post": "1785544200.768719",
-        "lastSeen": 1785546175.284
-      },
       "1785545220.725279": {
         "post": "1785545220.725279",
-        "lastSeen": 1785546175.284
+        "lastSeen": 1785547080.157
       },
       "1785546002.053619": {
         "post": "1785546002.053619",
-        "lastSeen": 1785546175.284
+        "lastSeen": 1785547080.157
       }
     },
     "days": {
