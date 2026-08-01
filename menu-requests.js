@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 283,
- "updatedAt": "2026-08-01 20:30",
+ "version": 284,
+ "updatedAt": "2026-08-02 00:15",
  "days": 30,
  "items": [
   {
@@ -9357,28 +9357,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783005935878739"
-  },
-  {
-   "ts": "1783004905.851639",
-   "date": "2026-07-03",
-   "time": "00:08",
-   "store": "더엘음악학원",
-   "biz": "2589301518",
-   "phone": "01022242036\n-",
-   "pos": "토스포스",
-   "content": "주2회는 주3회에서 1만원씩 차감\n주1회 2회에서 1만원씩 차감\n교재비 5000원 6000원 7000원 8000원 9000원 10000원\n12000원 15000원",
-   "special": "면세로 입력부탁드립니다",
-   "drive": [
-    "https://drive.google.com/file/d/1Sj9XYxA2lCO0m285048t45fXIcjA35Bg/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783004909.780819",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783004905851639"
   }
  ]
 };
