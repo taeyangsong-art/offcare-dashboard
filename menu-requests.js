@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 270,
- "updatedAt": "2026-08-01 14:45",
+ "version": 271,
+ "updatedAt": "2026-08-01 15:00",
  "days": 30,
  "items": [
   {
@@ -9598,26 +9598,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782972066496219"
-  },
-  {
-   "ts": "1782971203.638609",
-   "date": "2026-07-02",
-   "time": "14:46",
-   "store": "크로바완구",
-   "biz": "4683601636",
-   "phone": "01050118787",
-   "pos": "퍼스트포스",
-   "content": "유플러스 포스 메뉴 변경 요청 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782972866.665189",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782971203638609"
   }
  ]
 };
