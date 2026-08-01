@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2260,
+  "version": 2261,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -77781,7 +77781,7 @@ window.SLACK_DATA = {
     "2026-08-01": {
       "counts": {
         "as": {
-          "최민석": 8,
+          "최민석": 9,
           "미지정": 18,
           "송태양": 21
         },
@@ -77801,6 +77801,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "20:40",
+          "store": "오리곁에샤브작",
+          "biz": "2241521793",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "포스기 연결 시 연결 끊김 문제로 점검 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "공유기 2대 보유 iptime/kt iptime 공유기 문제 확인 후 kt공유기 포트 변경 후 정상작동 완료"
+        },
         {
           "time": "19:45",
           "store": "바미바미",
@@ -78563,19 +78574,19 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 58,
-        "offline": 11,
+        "offline": 12,
         "unknown": 0
       },
-      "updatedAt": "20:40",
+      "updatedAt": "21:00",
       "voc": {
-        "responses": 22,
+        "responses": 23,
         "install": {
           "count": 11,
           "low": 1
         },
         "nps": {
-          "count": 22,
-          "low": 4
+          "count": 23,
+          "low": 5
         },
         "high": {
           "install": 5,
@@ -78585,7 +78596,7 @@ window.SLACK_DATA = {
           "0": 1,
           "1": 1,
           "4": 1,
-          "5": 1,
+          "5": 2,
           "7": 1,
           "8": 2,
           "9": 2,
@@ -78606,13 +78617,13 @@ window.SLACK_DATA = {
           "카페": 2
         },
         "byTenure": {
+          "6개월": {
+            "total": 3,
+            "low": 2
+          },
           "구매설치": {
             "total": 11,
             "low": 3
-          },
-          "6개월": {
-            "total": 2,
-            "low": 1
           },
           "1개월": {
             "total": 3,
@@ -78628,6 +78639,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "DAOU": {
+            "total": 1,
+            "low": 1
+          },
           "KOCES": {
             "total": 5,
             "low": 2
@@ -78654,9 +78669,32 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "필요한 기능이 없거나 몰라서 불편": 1,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 5
         },
         "alerts": [
+          {
+            "time": "20:56",
+            "store": "피스아웃",
+            "storeId": "337776",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "몇몇 기능 불만족",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "18:55",
             "store": "아이엘IL영어학원",
@@ -78851,9 +78889,9 @@ window.SLACK_DATA = {
         "post": "1785502701.838699",
         "lastSeen": 1785502834.369
       },
-      "1785584454.642839": {
-        "post": "1785584454.642839",
-        "lastSeen": 1785584840.13
+      "1785585601.662259": {
+        "post": "1785585601.662259",
+        "lastSeen": 1785585636.349
       }
     },
     "days": {
@@ -91594,8 +91632,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-01": {
-        "cnt": 38,
-        "sumMin": 631.8322322765985,
+        "cnt": 39,
+        "sumMin": 644.8921766281127,
         "over": 3,
         "items": [
           {
@@ -91899,6 +91937,14 @@ window.SLACK_DATA = {
             "min": 22,
             "store": "바미바미",
             "biz": "2200968489",
+            "who": "최민석",
+            "cat": "as"
+          },
+          {
+            "hm": "20:40",
+            "min": 13.1,
+            "store": "오리곁에샤브작",
+            "biz": "2241521793",
             "who": "최민석",
             "cat": "as"
           }
