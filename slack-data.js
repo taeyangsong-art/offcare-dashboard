@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2252,
+  "version": 2253,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -78521,16 +78521,16 @@ window.SLACK_DATA = {
         "offline": 11,
         "unknown": 0
       },
-      "updatedAt": "18:40",
+      "updatedAt": "19:00",
       "voc": {
-        "responses": 20,
+        "responses": 21,
         "install": {
           "count": 10,
           "low": 1
         },
         "nps": {
-          "count": 20,
-          "low": 3
+          "count": 21,
+          "low": 4
         },
         "high": {
           "install": 4,
@@ -78538,6 +78538,7 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "0": 1,
+          "1": 1,
           "4": 1,
           "5": 1,
           "7": 1,
@@ -78559,6 +78560,10 @@ window.SLACK_DATA = {
           "카페": 2
         },
         "byTenure": {
+          "6개월": {
+            "total": 2,
+            "low": 1
+          },
           "구매설치": {
             "total": 10,
             "low": 3
@@ -78574,13 +78579,13 @@ window.SLACK_DATA = {
           "3개월": {
             "total": 1,
             "low": 1
-          },
-          "6개월": {
-            "total": 1,
-            "low": 0
           }
         },
         "byVan": {
+          "KSNET": {
+            "total": 4,
+            "low": 1
+          },
           "KOCES": {
             "total": 4,
             "low": 2
@@ -78597,19 +78602,37 @@ window.SLACK_DATA = {
             "total": 2,
             "low": 0
           },
-          "KSNET": {
-            "total": 3,
-            "low": 0
-          },
           "SECTA9": {
             "total": 4,
             "low": 0
           }
         },
         "reasonCounts": {
-          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 4
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 5
         },
         "alerts": [
+          {
+            "time": "18:55",
+            "store": "아이엘IL영어학원",
+            "storeId": "345788",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "카드수수료율이 너무셈",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "18:10",
             "store": "J.Focus English",
@@ -78742,10 +78765,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1785405483.340149": {
-        "post": "1785405483.340149",
-        "lastSeen": 1785405634.063
-      },
       "1785460138.151629": {
         "post": "1785460138.151629",
         "lastSeen": 1785530566.844
@@ -78776,7 +78795,11 @@ window.SLACK_DATA = {
       },
       "1785576878.491639": {
         "post": "1785576878.491639",
-        "lastSeen": 1785577632.301
+        "lastSeen": 1785578590.937
+      },
+      "1785578455.342339": {
+        "post": "1785578455.342339",
+        "lastSeen": 1785578590.937
       }
     },
     "days": {
