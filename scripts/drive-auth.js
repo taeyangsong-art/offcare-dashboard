@@ -20,6 +20,7 @@ const { exec } = require('child_process');
 const CLIENT_ID = process.env.GDRIVE_CLIENT_ID;
 const CLIENT_SECRET = process.env.GDRIVE_CLIENT_SECRET;
 const SCOPE = 'https://www.googleapis.com/auth/drive.readonly';   // 읽기 전용 — 쓰기 권한은 요청하지 않는다
+const SAVE = process.argv.includes('--save');   // 화면 출력 없이 setx 로 바로 저장
 
 if (!CLIENT_ID || !CLIENT_SECRET) {
   console.error('✗ GDRIVE_CLIENT_ID / GDRIVE_CLIENT_SECRET 환경변수가 필요합니다.');
@@ -63,12 +64,36 @@ const server = http.createServer(async (req, res) => {
     server.close(); process.exit(1);
   }
 
+  // --save : 화면에 찍지 않고 Windows 사용자 환경변수로 바로 저장 (복사·붙여넣기 불필요)
+  if (SAVE) {
+    if (process.platform !== 'win32') {
+      console.error('✗ --save 는 Windows 전용입니다. 옵션 없이 실행해 값을 직접 복사하세요.');
+      server.close(); process.exit(1);
+    }
+    exec(`setx GDRIVE_REFRESH_TOKEN "${j.refresh_token}"`, (err) => {
+      console.log('\n' + '='.repeat(70));
+      if (err) {
+        console.log('  ✗ 저장 실패:', err.message);
+        console.log('  아래 값을 직접 setx 로 등록하세요:\n\n  ' + j.refresh_token);
+      } else {
+        console.log('  ✅ GDRIVE_REFRESH_TOKEN 저장 완료 (Windows 사용자 환경변수)');
+        console.log('     길이 ' + j.refresh_token.length + '자 · 값은 화면에 출력하지 않았습니다');
+        console.log('\n  ⚠️ 새로 여는 PowerShell 창부터 적용됩니다. 지금 창에서 바로 쓰려면:');
+        console.log('     $env:GDRIVE_REFRESH_TOKEN = [Environment]::GetEnvironmentVariable("GDRIVE_REFRESH_TOKEN","User")');
+      }
+      console.log('='.repeat(70));
+      server.close(); process.exit(err ? 1 : 0);
+    });
+    return;
+  }
+
   console.log('\n' + '='.repeat(70));
   console.log('  GDRIVE_REFRESH_TOKEN 을 GitHub Secrets 에 등록하세요');
   console.log('='.repeat(70));
   console.log('\n' + j.refresh_token + '\n');
   console.log('='.repeat(70));
   console.log('  주의: 이 값은 비밀번호와 같습니다. 채팅·이슈·커밋에 붙여넣지 마세요.');
+  console.log('  팁: --save 옵션을 주면 화면에 찍지 않고 환경변수로 바로 저장합니다.');
   console.log('='.repeat(70));
   server.close(); process.exit(0);
 });
