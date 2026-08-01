@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2272,
+  "version": 2273,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -78612,18 +78612,18 @@ window.SLACK_DATA = {
       },
       "updatedAt": "23:26",
       "voc": {
-        "responses": 23,
+        "responses": 24,
         "install": {
           "count": 11,
           "low": 1
         },
         "nps": {
-          "count": 23,
+          "count": 24,
           "low": 5
         },
         "high": {
           "install": 5,
-          "nps": 13
+          "nps": 14
         },
         "npsDist": {
           "0": 1,
@@ -78633,7 +78633,7 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 2,
           "9": 2,
-          "10": 13
+          "10": 14
         },
         "installDist": {
           "2": 1,
@@ -78650,6 +78650,10 @@ window.SLACK_DATA = {
           "카페": 2
         },
         "byTenure": {
+          "12개월": {
+            "total": 6,
+            "low": 0
+          },
           "6개월": {
             "total": 3,
             "low": 2
@@ -78662,16 +78666,16 @@ window.SLACK_DATA = {
             "total": 3,
             "low": 0
           },
-          "12개월": {
-            "total": 5,
-            "low": 0
-          },
           "3개월": {
             "total": 1,
             "low": 1
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 6,
+            "low": 0
+          },
           "DAOU": {
             "total": 1,
             "low": 1
@@ -78687,10 +78691,6 @@ window.SLACK_DATA = {
           "NICE": {
             "total": 2,
             "low": 2
-          },
-          "KPN": {
-            "total": 5,
-            "low": 0
           },
           "KIS": {
             "total": 2,
@@ -78890,6 +78890,17 @@ window.SLACK_DATA = {
           }
         ]
       }
+    },
+    "2026-08-02": {
+      "counts": {},
+      "pending": [],
+      "done": [],
+      "intake": {
+        "online": 0,
+        "offline": 0,
+        "unknown": 0
+      },
+      "updatedAt": ""
     }
   },
   "resp": {
