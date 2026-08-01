@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2239,
+  "version": 2240,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -77781,12 +77781,13 @@ window.SLACK_DATA = {
     "2026-08-01": {
       "counts": {
         "as": {
+          "최민석": 2,
           "송태양": 18,
-          "미지정": 12,
-          "최민석": 1
+          "미지정": 12
         },
         "onboarding": {
           "송태양": 6,
+          "최민석": 1,
           "미지정": 2
         },
         "transfer": {
@@ -77799,6 +77800,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:51",
+          "store": "화숲",
+          "biz": "5184401348",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "테이블 QR 연동 원격 도움 요청하셨습니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "qr오더 테이블 설정방법 안내 완료"
+        },
         {
           "time": "15:35",
           "store": "골뱅이닷컴",
@@ -77831,6 +77843,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "• 자체 해결하셨다고 합니다 자체 해결하셨다고 합니다"
+        },
+        {
+          "time": "15:29",
+          "store": "강릉데이미",
+          "biz": "7980603334",
+          "cat": "onboarding",
+          "emp": "최민석",
+          "req": "포프(노트북) + 유프 온보딩 지원 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포프 온보딩 완료"
         },
         {
           "time": "15:07",
@@ -78307,11 +78330,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 39,
+        "online": 41,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "15:40",
+      "updatedAt": "15:51",
       "voc": {
         "responses": 13,
         "install": {
@@ -78537,10 +78560,6 @@ window.SLACK_DATA = {
       "1785502701.838699": {
         "post": "1785502701.838699",
         "lastSeen": 1785502834.369
-      },
-      "1785565775.285199": {
-        "post": "1785565775.285199",
-        "lastSeen": 1785566842.594
       }
     },
     "days": {
@@ -91281,8 +91300,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-01": {
-        "cnt": 23,
-        "sumMin": 395.325558022658,
+        "cnt": 24,
+        "sumMin": 419.71455470720923,
         "over": 3,
         "items": [
           {
@@ -91468,6 +91487,14 @@ window.SLACK_DATA = {
             "biz": "6148504613",
             "who": "최민석",
             "cat": "as"
+          },
+          {
+            "hm": "15:29",
+            "min": 24.4,
+            "store": "강릉데이미",
+            "biz": "7980603334",
+            "who": "최민석",
+            "cat": "onboarding"
           }
         ]
       }
