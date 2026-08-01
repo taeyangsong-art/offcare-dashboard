@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2251,
+  "version": 2252,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -77781,7 +77781,7 @@ window.SLACK_DATA = {
     "2026-08-01": {
       "counts": {
         "as": {
-          "최민석": 5,
+          "최민석": 6,
           "미지정": 18,
           "송태양": 21
         },
@@ -77800,6 +77800,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "18:26",
+          "store": "온마주",
+          "biz": "6075589354",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "포스기 세트 (포프 유프 금전함) 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "현재 공유기 위치 혹은 설치되어있는지 모르시며 확인 후 법인폰 통하여 재인입 하신다고 합니다."
+        },
         {
           "time": "18:14",
           "store": "주식회사 루미나",
@@ -78506,24 +78517,24 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 53,
+        "online": 54,
         "offline": 11,
         "unknown": 0
       },
-      "updatedAt": "18:26",
+      "updatedAt": "18:40",
       "voc": {
-        "responses": 19,
+        "responses": 20,
         "install": {
-          "count": 9,
+          "count": 10,
           "low": 1
         },
         "nps": {
-          "count": 19,
+          "count": 20,
           "low": 3
         },
         "high": {
           "install": 4,
-          "nps": 11
+          "nps": 12
         },
         "npsDist": {
           "0": 1,
@@ -78532,15 +78543,16 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 2,
           "9": 2,
-          "10": 11
+          "10": 12
         },
         "installDist": {
           "2": 1,
           "3": 2,
-          "4": 2,
+          "4": 3,
           "5": 4
         },
         "byIndustry": {
+          "요식업": 1,
           "서비스[학원]": 4,
           "서비스[뷰티,헤어]": 2,
           "도소매": 1,
@@ -78548,7 +78560,7 @@ window.SLACK_DATA = {
         },
         "byTenure": {
           "구매설치": {
-            "total": 9,
+            "total": 10,
             "low": 3
           },
           "1개월": {
@@ -78569,6 +78581,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 4,
+            "low": 2
+          },
           "NICE": {
             "total": 2,
             "low": 2
@@ -78588,10 +78604,6 @@ window.SLACK_DATA = {
           "SECTA9": {
             "total": 4,
             "low": 0
-          },
-          "KOCES": {
-            "total": 3,
-            "low": 2
           }
         },
         "reasonCounts": {
@@ -78689,6 +78701,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "18:40",
+            "store": "더식",
+            "storeId": "566023",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 4,
+            "nps": 10,
+            "text": "5점을 주고 싶지만 프린터 연결이 철지난 방식 기능들이 꼼꼼함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "15:40",
             "store": "삼맛카페(Sammat Cafe)",
             "storeId": "571037",
@@ -78750,9 +78774,9 @@ window.SLACK_DATA = {
         "post": "1785502701.838699",
         "lastSeen": 1785502834.369
       },
-      "1785576368.845409": {
-        "post": "1785576368.845409",
-        "lastSeen": 1785576626.586
+      "1785576878.491639": {
+        "post": "1785576878.491639",
+        "lastSeen": 1785577632.301
       }
     },
     "days": {
@@ -91493,8 +91517,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-01": {
-        "cnt": 34,
-        "sumMin": 552.3134783744811,
+        "cnt": 35,
+        "sumMin": 564.9901132265726,
         "over": 3,
         "items": [
           {
@@ -91767,6 +91791,14 @@ window.SLACK_DATA = {
             "store": "전인복타이어",
             "biz": "8552701838",
             "who": "",
+            "cat": "as"
+          },
+          {
+            "hm": "18:26",
+            "min": 12.7,
+            "store": "온마주",
+            "biz": "6075589354",
+            "who": "최민석",
             "cat": "as"
           }
         ]
