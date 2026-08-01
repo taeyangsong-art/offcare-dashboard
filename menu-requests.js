@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 275,
- "updatedAt": "2026-08-01 16:00",
+ "version": 276,
+ "updatedAt": "2026-08-01 16:15",
  "days": 30,
  "items": [
   {
@@ -9437,68 +9437,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782978325002379"
-  },
-  {
-   "ts": "1782976462.286179",
-   "date": "2026-07-02",
-   "time": "16:14",
-   "store": "샐러드타임",
-   "biz": "8854001099",
-   "phone": "01077649981\n-",
-   "pos": "기타",
-   "content": "가격변경\n샌드위치탭; 치킨탠더 8,000-8,300\n스프탭; 양송이 5,400 - 4,900\n프레시쥬스 탭; 아보카도바나나쥬스 6,500-6,900\n키위쥬스; 6,000-6,500\n\n메뉴추가\n샌드위치탭: 치아바타불고기 11,900\n치아바타우삼겹 11,500\n\n메뉴삭제\n커피탭: 연유라떼(ICE)삭제\n\n위 요청사항은 포스, 키오스크 동일합니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782978027.252119",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782976462286179"
-  },
-  {
-   "ts": "1782976158.524519",
-   "date": "2026-07-02",
-   "time": "16:09",
-   "store": "꼬마한입",
-   "biz": "2292103199",
-   "phone": "01099183590\n-",
-   "pos": "기타",
-   "content": "메뉴등록",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/open?id=1paBQthJqM99ocQWrVmUER3qXSRjTnWF_"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782977775.032799",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782976158524519"
-  },
-  {
-   "ts": "1782976094.791749",
-   "date": "2026-07-02",
-   "time": "16:08",
-   "store": "자매황소곱창",
-   "biz": "1341112353",
-   "phone": "01028626653",
-   "pos": "퍼스트포스",
-   "content": "퍼스트 포스 메뉴 금액 변경\n\n대패삼겹살 14000원\n막걸리 5,000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1782977239.898629",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782976094791749"
   }
  ]
 };

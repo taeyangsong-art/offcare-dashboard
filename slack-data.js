@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2240,
+  "version": 2241,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -78334,42 +78334,43 @@ window.SLACK_DATA = {
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "15:51",
+      "updatedAt": "16:15",
       "voc": {
-        "responses": 13,
+        "responses": 14,
         "install": {
-          "count": 6,
+          "count": 7,
           "low": 1
         },
         "nps": {
-          "count": 13,
+          "count": 14,
           "low": 2
         },
         "high": {
           "install": 3,
-          "nps": 7
+          "nps": 8
         },
         "npsDist": {
           "0": 1,
           "5": 1,
           "8": 2,
           "9": 2,
-          "10": 7
+          "10": 8
         },
         "installDist": {
           "2": 1,
           "3": 1,
-          "4": 1,
+          "4": 2,
           "5": 3
         },
         "byIndustry": {
+          "도소매": 1,
           "카페": 2,
           "서비스[학원]": 3,
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
           "구매설치": {
-            "total": 6,
+            "total": 7,
             "low": 2
           },
           "3개월": {
@@ -78391,7 +78392,7 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "SECTA9": {
-            "total": 3,
+            "total": 4,
             "low": 0
           },
           "KOCES": {
@@ -78560,6 +78561,14 @@ window.SLACK_DATA = {
       "1785502701.838699": {
         "post": "1785502701.838699",
         "lastSeen": 1785502834.369
+      },
+      "1785568500.863339": {
+        "post": "1785568500.863339",
+        "lastSeen": 1785568519.998
+      },
+      "1785568431.192339": {
+        "post": "1785568431.192339",
+        "lastSeen": 1785568519.998
       }
     },
     "days": {
