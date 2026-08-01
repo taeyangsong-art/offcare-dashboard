@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 264,
- "updatedAt": "2026-08-01 12:32",
+ "version": 265,
+ "updatedAt": "2026-08-01 13:02",
  "days": 30,
  "items": [
   {
@@ -9657,46 +9657,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782967344678319"
-  },
-  {
-   "ts": "1782964896.080469",
-   "date": "2026-07-02",
-   "time": "13:01",
-   "store": "빵글빵글",
-   "biz": "7644400700",
-   "phone": "01023050163",
-   "pos": "",
-   "content": "메뉴 추가 수정\n\n오키나와 / 단호박 2500원씩 상품 2개인데, 1개로 변경\n단호박 자리에 메뉴 추가\n밤식빵 5500원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782965078.521819",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782964896080469"
-  },
-  {
-   "ts": "1782964803.049459",
-   "date": "2026-07-02",
-   "time": "13:00",
-   "store": "꼴목만수점",
-   "biz": "1721601080",
-   "phone": "01083238373",
-   "pos": "오케이포스",
-   "content": "오케이포스 사용매장\n• 메뉴판기준으로  추가 생성 +  가격수정 요청 주셔서 확인 부탁드립니다!\n• 7/2 18시 매장 오픈으로   7/1  13시 예약",
-   "special": "",
-   "drive": [],
-   "files": 1,
-   "att": [],
-   "replies": [],
-   "rc": 8,
-   "lr": "1782968278.603939",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782964803049459"
   }
  ]
 };
