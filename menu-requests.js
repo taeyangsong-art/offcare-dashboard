@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 260,
- "updatedAt": "2026-08-01 11:02",
+ "version": 261,
+ "updatedAt": "2026-08-01 11:48",
  "days": 30,
  "items": [
+  {
+   "ts": "1785552221.033219",
+   "date": "2026-08-01",
+   "time": "11:43",
+   "store": "청풍돌짜장",
+   "biz": "4530401287",
+   "phone": "01096683138",
+   "pos": "",
+   "content": "OK 포스 메뉴 수정 요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "요리류에 있는 미니탕수육\n\n15,000원 으로 수정 요청하셨습니다.",
+    "태양님. 제가 OK 포스 메뉴 수정 방법을 몰라서 부득이하게 요청드립니다. :눈물햄스터:\n\n가능하실 때 수정 한 번만 부탁드립니다. :감사합니다꾸벅:"
+   ],
+   "rc": 3,
+   "lr": "1785552315.437309",
+   "status": "confirm",
+   "handler": "송태양",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785552221033219"
+  },
   {
    "ts": "1785492477.124909",
    "date": "2026-07-31",
@@ -9669,26 +9692,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782962334556999"
-  },
-  {
-   "ts": "1782960449.241289",
-   "date": "2026-07-02",
-   "time": "11:47",
-   "store": "화덕피자 피움",
-   "biz": "2591702705",
-   "phone": "01043860279",
-   "pos": "",
-   "content": "하이오더 선불형 테이블 20개 생성 요청 드립니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1782961309.591669",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782960449241289"
   }
  ]
 };
