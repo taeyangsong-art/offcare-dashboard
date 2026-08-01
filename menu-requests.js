@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 273,
- "updatedAt": "2026-08-01 15:30",
+ "version": 274,
+ "updatedAt": "2026-08-01 15:47",
  "days": 30,
  "items": [
   {
@@ -9519,48 +9519,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782975132826149"
-  },
-  {
-   "ts": "1782974300.613309",
-   "date": "2026-07-02",
-   "time": "15:38",
-   "store": "속편한유산균피자",
-   "biz": "6677600526",
-   "phone": "01046549675\n-",
-   "pos": "토스포스",
-   "content": "",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/open?id=1dygEAg8Q3rm3bZrNBXVoATaMk3ceRDRk"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782975523.249229",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782974300613309"
-  },
-  {
-   "ts": "1782973996.428449",
-   "date": "2026-07-02",
-   "time": "15:33",
-   "store": "샐러드타임",
-   "biz": "8854001099",
-   "phone": "01077649981",
-   "pos": "퍼스트포스",
-   "content": "메뉴 수정 요청 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 5,
-   "lr": "1782974668.912809",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782973996428449"
   }
  ]
 };

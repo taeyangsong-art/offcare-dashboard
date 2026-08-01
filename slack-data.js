@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2238,
+  "version": 2239,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -77781,12 +77781,12 @@ window.SLACK_DATA = {
     "2026-08-01": {
       "counts": {
         "as": {
+          "송태양": 18,
           "미지정": 12,
-          "최민석": 1,
-          "송태양": 16
+          "최민석": 1
         },
         "onboarding": {
-          "송태양": 5,
+          "송태양": 6,
           "미지정": 2
         },
         "transfer": {
@@ -77799,6 +77799,39 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:35",
+          "store": "골뱅이닷컴",
+          "biz": "6900302777",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "포스 프로그램 오류가 있다고 하여 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "• 게스트계정 로그아웃 완료 게스트계정 로그아웃 완료"
+        },
+        {
+          "time": "15:33",
+          "store": "이모네빈티지",
+          "biz": "5632502424",
+          "cat": "onboarding",
+          "emp": "송태양",
+          "req": "폰 + 프론트 온보딩 ( 고령 ) 토스사장님 어플 다운까지 응대",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료"
+        },
+        {
+          "time": "15:32",
+          "store": "페이보릿 커피라운지",
+          "biz": "1510103904",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "주문서 출력 불가, 금일 영수증 로고 설정하신 상황이라 통신속도 설정이 필요할것 같아 원격 도움 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "• 자체 해결하셨다고 합니다 자체 해결하셨다고 합니다"
+        },
         {
           "time": "15:07",
           "store": "속눈썹 프린 부평점",
@@ -78274,40 +78307,52 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 36,
+        "online": 39,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "15:29",
+      "updatedAt": "15:40",
       "voc": {
-        "responses": 9,
+        "responses": 13,
         "install": {
-          "count": 3,
-          "low": 0
-        },
-        "nps": {
-          "count": 9,
+          "count": 6,
           "low": 1
         },
+        "nps": {
+          "count": 13,
+          "low": 2
+        },
         "high": {
-          "install": 2,
-          "nps": 5
+          "install": 3,
+          "nps": 7
         },
         "npsDist": {
+          "0": 1,
           "5": 1,
-          "8": 1,
+          "8": 2,
           "9": 2,
-          "10": 5
+          "10": 7
         },
         "installDist": {
+          "2": 1,
           "3": 1,
-          "5": 2
+          "4": 1,
+          "5": 3
         },
         "byIndustry": {
-          "서비스[학원]": 2,
+          "카페": 2,
+          "서비스[학원]": 3,
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 6,
+            "low": 2
+          },
+          "3개월": {
+            "total": 1,
+            "low": 1
+          },
           "6개월": {
             "total": 1,
             "low": 0
@@ -78316,10 +78361,6 @@ window.SLACK_DATA = {
             "total": 3,
             "low": 0
           },
-          "구매설치": {
-            "total": 3,
-            "low": 1
-          },
           "1개월": {
             "total": 2,
             "low": 0
@@ -78327,16 +78368,20 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "SECTA9": {
-            "total": 2,
-            "low": 0
-          },
-          "KPN": {
             "total": 3,
             "low": 0
           },
           "KOCES": {
+            "total": 3,
+            "low": 2
+          },
+          "NICE": {
             "total": 1,
             "low": 1
+          },
+          "KPN": {
+            "total": 3,
+            "low": 0
           },
           "KIS": {
             "total": 1,
@@ -78348,9 +78393,53 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
-          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 3
         },
         "alerts": [
+          {
+            "time": "15:39",
+            "store": "보니아뜰리에미술교습소",
+            "storeId": "575441",
+            "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
+            "install": 2,
+            "nps": 8,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 2,
+                "text": "어려움",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:33",
+            "store": "룡룡마라도원 강남역점",
+            "storeId": "451564",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "아시겠지만 억울한 부분들이 너무 많아서 무책임하다고 느껴짐",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:09",
             "store": "새싹학원",
@@ -78375,6 +78464,18 @@ window.SLACK_DATA = {
           }
         ],
         "praises": [
+          {
+            "time": "15:40",
+            "store": "삼맛카페(Sammat Cafe)",
+            "storeId": "571037",
+            "indBucket": "카페",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "친절했음 그리고 굼굼한거 다 알려주심 편안하고 쉽게 접근성때문에",
+            "byReaction": false,
+            "doneDate": ""
+          },
           {
             "time": "15:16",
             "store": "착한 양갈비",
@@ -78439,7 +78540,7 @@ window.SLACK_DATA = {
       },
       "1785565775.285199": {
         "post": "1785565775.285199",
-        "lastSeen": 1785565826.342
+        "lastSeen": 1785566842.594
       }
     },
     "days": {
