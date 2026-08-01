@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2253,
+  "version": 2254,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -78521,20 +78521,20 @@ window.SLACK_DATA = {
         "offline": 11,
         "unknown": 0
       },
-      "updatedAt": "19:00",
+      "updatedAt": "19:11",
       "voc": {
-        "responses": 21,
+        "responses": 22,
         "install": {
-          "count": 10,
+          "count": 11,
           "low": 1
         },
         "nps": {
-          "count": 21,
+          "count": 22,
           "low": 4
         },
         "high": {
-          "install": 4,
-          "nps": 12
+          "install": 5,
+          "nps": 13
         },
         "npsDist": {
           "0": 1,
@@ -78544,15 +78544,16 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 2,
           "9": 2,
-          "10": 12
+          "10": 13
         },
         "installDist": {
           "2": 1,
           "3": 2,
           "4": 3,
-          "5": 4
+          "5": 5
         },
         "byIndustry": {
+          "기타": 1,
           "요식업": 1,
           "서비스[학원]": 4,
           "서비스[뷰티,헤어]": 2,
@@ -78560,13 +78561,13 @@ window.SLACK_DATA = {
           "카페": 2
         },
         "byTenure": {
+          "구매설치": {
+            "total": 11,
+            "low": 3
+          },
           "6개월": {
             "total": 2,
             "low": 1
-          },
-          "구매설치": {
-            "total": 10,
-            "low": 3
           },
           "1개월": {
             "total": 3,
@@ -78582,13 +78583,13 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 5,
+            "low": 2
+          },
           "KSNET": {
             "total": 4,
             "low": 1
-          },
-          "KOCES": {
-            "total": 4,
-            "low": 2
           },
           "NICE": {
             "total": 2,
@@ -78724,6 +78725,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "19:11",
+            "store": "포도원건강센타",
+            "storeId": "574833",
+            "indBucket": "기타",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "너무  친절하시고 잘알려주셔서 감동받았습니다 카톡으로제가 아는분들. 모두연락했어요 너무 친절하시고 카드단말기 대만족입니다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "18:40",
             "store": "더식",
             "storeId": "566023",
@@ -78795,11 +78808,11 @@ window.SLACK_DATA = {
       },
       "1785576878.491639": {
         "post": "1785576878.491639",
-        "lastSeen": 1785578590.937
+        "lastSeen": 1785579323.921
       },
       "1785578455.342339": {
         "post": "1785578455.342339",
-        "lastSeen": 1785578590.937
+        "lastSeen": 1785579323.921
       }
     },
     "days": {
