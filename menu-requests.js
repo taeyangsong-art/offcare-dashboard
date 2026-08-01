@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 266,
- "updatedAt": "2026-08-01 13:18",
+ "version": 267,
+ "updatedAt": "2026-08-01 13:46",
  "days": 30,
  "items": [
   {
@@ -29,10 +29,10 @@ window.MENU_REQUESTS = {
     "오늘 이내 테이블 등록 안내 / 제가 하려고 했는데 어려워 전달드립니다. 부탁드립니다 ㅠㅠ !",
     "태양님 여기 시간되실때 한번 부탁드립니다..! 테이블 비우기 안내 했으나, 기존 테이블 삭제 안됨 이슈...."
    ],
-   "rc": 3,
-   "lr": "1785557866.671379",
-   "status": "wait",
-   "handler": null,
+   "rc": 4,
+   "lr": "1785559292.816189",
+   "status": "done",
+   "handler": "송태양",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785552823909339"
   },
   {
@@ -9638,26 +9638,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782970621303909"
-  },
-  {
-   "ts": "1782967344.678319",
-   "date": "2026-07-02",
-   "time": "13:42",
-   "store": "대가",
-   "biz": "6973700265",
-   "phone": "01037814813",
-   "pos": "오케이포스",
-   "content": "오케이포스/ 메뉴 금액 수정 요청드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1782968492.556809",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782967344678319"
   }
  ]
 };
