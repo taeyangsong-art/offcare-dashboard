@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2245,
+  "version": 2246,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -77781,13 +77781,13 @@ window.SLACK_DATA = {
     "2026-08-01": {
       "counts": {
         "as": {
-          "미지정": 14,
+          "미지정": 15,
           "최민석": 3,
           "송태양": 18
         },
         "onboarding": {
+          "최민석": 2,
           "송태양": 6,
-          "최민석": 1,
           "미지정": 2
         },
         "transfer": {
@@ -77800,6 +77800,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "17:04",
+          "store": "갤러리 플라워즈",
+          "biz": "3331401959",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "오케이포스 사용 / 싸인패드 전원 안들어와서 점검 요청",
+          "hw": "",
+          "intake": "offline",
+          "note": "토스프론트 버튼으로 전원 사용"
+        },
+        {
+          "time": "16:54",
+          "store": "고고헤어",
+          "biz": "4721800608",
+          "cat": "onboarding",
+          "emp": "최민석",
+          "req": "핸드폰 + 프론트 온보딩",
+          "hw": "",
+          "intake": "online",
+          "note": "포프유프 온보딩 완료"
+        },
         {
           "time": "16:39",
           "store": "리엘르네일",
@@ -78363,24 +78385,24 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 43,
-        "offline": 8,
+        "online": 44,
+        "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "17:00",
+      "updatedAt": "17:12",
       "voc": {
-        "responses": 17,
+        "responses": 18,
         "install": {
-          "count": 7,
+          "count": 8,
           "low": 1
         },
         "nps": {
-          "count": 17,
+          "count": 18,
           "low": 2
         },
         "high": {
-          "install": 3,
-          "nps": 10
+          "install": 4,
+          "nps": 11
         },
         "npsDist": {
           "0": 1,
@@ -78388,21 +78410,25 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 2,
           "9": 2,
-          "10": 10
+          "10": 11
         },
         "installDist": {
           "2": 1,
           "3": 1,
           "4": 2,
-          "5": 3
+          "5": 4
         },
         "byIndustry": {
+          "서비스[뷰티,헤어]": 2,
           "도소매": 1,
           "카페": 2,
-          "서비스[학원]": 3,
-          "서비스[뷰티,헤어]": 1
+          "서비스[학원]": 3
         },
         "byTenure": {
+          "구매설치": {
+            "total": 8,
+            "low": 2
+          },
           "1개월": {
             "total": 3,
             "low": 0
@@ -78410,10 +78436,6 @@ window.SLACK_DATA = {
           "12개월": {
             "total": 5,
             "low": 0
-          },
-          "구매설치": {
-            "total": 7,
-            "low": 2
           },
           "3개월": {
             "total": 1,
@@ -78425,12 +78447,12 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
-          "KIS": {
-            "total": 2,
+          "KPN": {
+            "total": 5,
             "low": 0
           },
-          "KPN": {
-            "total": 4,
+          "KIS": {
+            "total": 2,
             "low": 0
           },
           "KSNET": {
@@ -78595,14 +78617,6 @@ window.SLACK_DATA = {
       "1785502701.838699": {
         "post": "1785502701.838699",
         "lastSeen": 1785502834.369
-      },
-      "1785571200.575439": {
-        "post": "1785571200.575439",
-        "lastSeen": 1785571231.271
-      },
-      "1785570876.609539": {
-        "post": "1785570876.609539",
-        "lastSeen": 1785571231.271
       }
     },
     "days": {
@@ -91343,8 +91357,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-01": {
-        "cnt": 27,
-        "sumMin": 453.6035817623138,
+        "cnt": 29,
+        "sumMin": 474.879782128334,
         "over": 3,
         "items": [
           {
@@ -91562,6 +91576,22 @@ window.SLACK_DATA = {
             "biz": "5053102069",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "17:00",
+            "min": 7.9,
+            "store": "짜장천국",
+            "biz": "1930403670",
+            "who": "송태양",
+            "cat": "as"
+          },
+          {
+            "hm": "16:54",
+            "min": 13.3,
+            "store": "고고헤어",
+            "biz": "4721800608",
+            "who": "최민석",
+            "cat": "onboarding"
           }
         ]
       }
