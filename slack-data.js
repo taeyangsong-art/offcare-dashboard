@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2212,
+  "version": 2213,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -74886,6 +74886,7 @@ window.SLACK_DATA = {
           "심성현": 1
         },
         "menu": {
+          "송태양": 1,
           "배선유": 10,
           "최민석": 1,
           "김규빈": 8
@@ -75142,6 +75143,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "미래통신"
+        },
+        {
+          "time": "19:07",
+          "store": "멕시카나 망포점",
+          "biz": "3302901497",
+          "cat": "menu",
+          "emp": "송태양",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 옵션 등록 완료"
         },
         {
           "time": "19:05",
@@ -77481,7 +77493,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 213,
+        "online": 214,
         "offline": 20,
         "unknown": 0
       },
@@ -77767,15 +77779,31 @@ window.SLACK_DATA = {
       }
     },
     "2026-08-01": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "송태양": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:00",
+          "store": "수이커피",
+          "biz": "5763201754",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "8월 1일 (토) 오전9시/프론트+유프",
+          "hw": "",
+          "intake": "online",
+          "note": "10시 재예약 요청으로 예약 완료"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:00",
+      "updatedAt": "09:15",
       "voc": {
         "responses": 1,
         "install": {
@@ -77865,7 +77893,11 @@ window.SLACK_DATA = {
       },
       "1785542401.237749": {
         "post": "1785542401.237749",
-        "lastSeen": 1785542432.032
+        "lastSeen": 1785543322.009
+      },
+      "1785543313.532379": {
+        "post": "1785543313.532379",
+        "lastSeen": 1785543322.009
       }
     },
     "days": {
