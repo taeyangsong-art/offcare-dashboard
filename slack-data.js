@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2213,
+  "version": 2214,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -77781,11 +77781,22 @@ window.SLACK_DATA = {
     "2026-08-01": {
       "counts": {
         "as": {
-          "송태양": 1
+          "송태양": 2
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:07",
+          "store": "주식회사 벗이(Versi)(미술관)",
+          "biz": "1428143054",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "포스기 전원은 켜지는데 화면이 안들어온다고 하십니다. 재부팅 해도 동일하다고 하셔서 원격 점검 부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "방전 작업 후 정상 부팅 입니다"
+        },
         {
           "time": "09:00",
           "store": "수이커피",
@@ -77800,10 +77811,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 1,
-        "offline": 0,
+        "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:15",
+      "updatedAt": "09:30",
       "voc": {
         "responses": 1,
         "install": {
@@ -77893,11 +77904,11 @@ window.SLACK_DATA = {
       },
       "1785542401.237749": {
         "post": "1785542401.237749",
-        "lastSeen": 1785543322.009
+        "lastSeen": 1785544318.47
       },
-      "1785543313.532379": {
-        "post": "1785543313.532379",
-        "lastSeen": 1785543322.009
+      "1785544200.768719": {
+        "post": "1785544200.768719",
+        "lastSeen": 1785544318.47
       }
     },
     "days": {
@@ -90633,6 +90644,21 @@ window.SLACK_DATA = {
             "store": "호연",
             "biz": "6024463765",
             "who": "최민석",
+            "cat": "as"
+          }
+        ]
+      },
+      "2026-08-01": {
+        "cnt": 1,
+        "sumMin": 8.445118685563406,
+        "over": 0,
+        "items": [
+          {
+            "hm": "09:15",
+            "min": 8.4,
+            "store": "윤프로스팀세차 창원점",
+            "biz": "4031974931",
+            "who": "송태양",
             "cat": "as"
           }
         ]
