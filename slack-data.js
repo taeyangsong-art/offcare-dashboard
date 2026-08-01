@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2258,
+  "version": 2259,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -77794,6 +77794,7 @@ window.SLACK_DATA = {
           "송태양": 3
         },
         "menu": {
+          "최민석": 1,
           "송태양": 3,
           "미지정": 1
         }
@@ -77832,6 +77833,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "포프유프무프 온보딩 완료"
+        },
+        {
+          "time": "18:34",
+          "store": "(주)이디피에스",
+          "biz": "3938600833",
+          "cat": "menu",
+          "emp": "최민석",
+          "req": "메뉴 등록 요청드립니다 &gt;&gt;",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 메뉴 상세 설명 등록 및 외국어 메뉴 동시 등록 요청 / 메뉴등록 완료 및 통화안료 중국어,일본어 메뉴의 경우 대시보드 사용매장 가능 안내 온료 관련하여 차주 월요일 고객센터 인입하신다고 합니다. 참고 부탁드립니다 참고 부탁드립니다 / <!subteam^S08UH2MQ4JW <!subteam^S085BCL"
         },
         {
           "time": "18:26",
@@ -78550,7 +78562,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 57,
+        "online": 58,
         "offline": 11,
         "unknown": 0
       },
@@ -78838,10 +78850,6 @@ window.SLACK_DATA = {
       "1785502701.838699": {
         "post": "1785502701.838699",
         "lastSeen": 1785502834.369
-      },
-      "1785576878.491639": {
-        "post": "1785576878.491639",
-        "lastSeen": 1785582924.825
       }
     },
     "days": {
