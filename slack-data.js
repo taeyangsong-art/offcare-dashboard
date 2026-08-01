@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2271,
+  "version": 2272,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -77781,7 +77781,7 @@ window.SLACK_DATA = {
     "2026-08-01": {
       "counts": {
         "as": {
-          "최민석": 10,
+          "최민석": 11,
           "미지정": 18,
           "송태양": 21
         },
@@ -77801,6 +77801,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "23:26",
+          "store": "에이치(H)모텔",
+          "biz": "5773800589",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "프론트 전원 미작동 된다고 하여 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "대체품 받으신 선 연결 후 정상작동"
+        },
         {
           "time": "21:04",
           "store": "용용선생 포항영일대점",
@@ -78595,7 +78606,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 59,
+        "online": 60,
         "offline": 13,
         "unknown": 0
       },
@@ -78910,10 +78921,6 @@ window.SLACK_DATA = {
       "1785502701.838699": {
         "post": "1785502701.838699",
         "lastSeen": 1785502834.369
-      },
-      "1785594397.061699": {
-        "post": "1785594397.061699",
-        "lastSeen": 1785594632.394
       }
     },
     "days": {
@@ -91654,8 +91661,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-01": {
-        "cnt": 40,
-        "sumMin": 653.045972307523,
+        "cnt": 41,
+        "sumMin": 665.1480273246765,
         "over": 3,
         "items": [
           {
@@ -91975,6 +91982,14 @@ window.SLACK_DATA = {
             "min": 8.2,
             "store": "네일의 너",
             "biz": "6214501239",
+            "who": "최민석",
+            "cat": "as"
+          },
+          {
+            "hm": "23:26",
+            "min": 12.1,
+            "store": "에이치(H)모텔",
+            "biz": "5773800589",
             "who": "최민석",
             "cat": "as"
           }
