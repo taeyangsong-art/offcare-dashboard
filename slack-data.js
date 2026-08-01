@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2219,
+  "version": 2220,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -77781,10 +77781,10 @@ window.SLACK_DATA = {
     "2026-08-01": {
       "counts": {
         "as": {
-          "송태양": 7
+          "송태양": 8
         },
         "onboarding": {
-          "송태양": 1
+          "송태양": 2
         },
         "transfer": {
           "송태양": 3
@@ -77792,6 +77792,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:00",
+          "store": "따뜻한 밥상 마천점",
+          "biz": "1053599718",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "토스포스 결제 관련 오류로 지원 부탁드립니다! :감사합니다꾸벅:",
+          "hw": "",
+          "intake": "online",
+          "note": "• 현재는 정상 결제중 • 태블릿으로 재온보딩 요청으로 태블릿 지참 후 재인입 해주시면 도움드리겠음 안내 현재는 정상 결제중 태블릿으로 재온보딩 요청으로 태블릿 지참 후 재인입 해주시면 도움드리겠음 안내"
+        },
+        {
+          "time": "10:45",
+          "store": "그랜드코나코리아",
+          "biz": "5142595464",
+          "cat": "onboarding",
+          "emp": "송태양",
+          "req": "아이패드 + 프론트 온보딩",
+          "hw": "",
+          "intake": "online",
+          "note": "• 온보딩 완료 • 유프 기추상담 OB 요청 완료 온보딩 완료 유프 기추상담 OB 요청 완료"
+        },
         {
           "time": "10:30",
           "store": "리엘르네일",
@@ -77915,11 +77937,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 9,
+        "online": 11,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "10:45",
+      "updatedAt": "11:00",
       "voc": {
         "responses": 1,
         "install": {
@@ -78009,7 +78031,11 @@ window.SLACK_DATA = {
       },
       "1785547180.224389": {
         "post": "1785547180.224389",
-        "lastSeen": 1785548851.669
+        "lastSeen": 1785549754.9
+      },
+      "1785549601.524999": {
+        "post": "1785549601.524999",
+        "lastSeen": 1785549754.9
       }
     },
     "days": {

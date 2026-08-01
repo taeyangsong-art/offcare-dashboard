@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 259,
- "updatedAt": "2026-08-01 10:03",
+ "version": 260,
+ "updatedAt": "2026-08-01 11:02",
  "days": 30,
  "items": [
   {
@@ -9689,26 +9689,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782960449241289"
-  },
-  {
-   "ts": "1782957702.066239",
-   "date": "2026-07-02",
-   "time": "11:01",
-   "store": "태복",
-   "biz": "3294201268",
-   "phone": "01025829794",
-   "pos": "퍼스트포스",
-   "content": "스파로스 포스 사용 중 메뉴 등록 요청 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782957813.855379",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782957702066239"
   }
  ]
 };
