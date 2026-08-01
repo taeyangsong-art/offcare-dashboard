@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2215,
+  "version": 2216,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -77782,6 +77782,9 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "송태양": 4
+        },
+        "transfer": {
+          "송태양": 1
         }
       },
       "pending": [],
@@ -77829,14 +77832,25 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "10시 재예약 요청으로 예약 완료"
+        },
+        {
+          "time": "09:00",
+          "store": "좋은습관 PT STUDIO 영등포",
+          "biz": "",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "8월 1일 오전 9시 30분 / 메뉴 복사 O / 프론트",
+          "hw": "",
+          "intake": "online",
+          "note": "태양님 안녕하세요 / 여기 혹시 지금 바로 통화 원하시는데 연락 해주실 수 있으실까요? :눈물햄스터: 여기 혹시 지금 바로 통화 원하시는데 연락 해주실 수 있으실까요? / 넵! / 명변 완료입니다"
         }
       ],
       "intake": {
-        "online": 3,
+        "online": 4,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:47",
+      "updatedAt": "10:00",
       "voc": {
         "responses": 1,
         "install": {
@@ -77924,17 +77938,17 @@ window.SLACK_DATA = {
         "post": "1785502701.838699",
         "lastSeen": 1785502834.369
       },
-      "1785542401.237749": {
-        "post": "1785542401.237749",
-        "lastSeen": 1785545220.676
-      },
       "1785544200.768719": {
         "post": "1785544200.768719",
-        "lastSeen": 1785545220.676
+        "lastSeen": 1785546175.284
       },
       "1785545220.725279": {
         "post": "1785545220.725279",
-        "lastSeen": 1785545220.676
+        "lastSeen": 1785546175.284
+      },
+      "1785546002.053619": {
+        "post": "1785546002.053619",
+        "lastSeen": 1785546175.284
       }
     },
     "days": {

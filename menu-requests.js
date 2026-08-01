@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 258,
- "updatedAt": "2026-08-01 09:15",
+ "version": 259,
+ "updatedAt": "2026-08-01 10:03",
  "days": 30,
  "items": [
   {
@@ -9709,26 +9709,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782957702066239"
-  },
-  {
-   "ts": "1782953298.067149",
-   "date": "2026-07-02",
-   "time": "09:48",
-   "store": "오늘도봄봄",
-   "biz": "6650302112",
-   "phone": "01031280928",
-   "pos": "",
-   "content": "포프(휴대폰) / 과세, 면세 메뉴 각각 금액 입력 결제모드 메뉴 2개 생성 부탁 드립니다.\n업종 : 도소매",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1782953914.066169",
-   "status": "done",
-   "handler": "김동욱",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1782953298067149"
   }
  ]
 };
