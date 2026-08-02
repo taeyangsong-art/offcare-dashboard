@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2366,
+  "version": 2367,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -78900,16 +78900,16 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "22:34",
+      "updatedAt": "22:49",
       "voc": {
-        "responses": 24,
+        "responses": 25,
         "install": {
-          "count": 6,
-          "low": 1
+          "count": 7,
+          "low": 2
         },
         "nps": {
-          "count": 24,
-          "low": 5
+          "count": 25,
+          "low": 6
         },
         "high": {
           "install": 5,
@@ -78917,7 +78917,7 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "0": 1,
-          "1": 1,
+          "1": 2,
           "2": 1,
           "5": 2,
           "7": 1,
@@ -78926,16 +78926,21 @@ window.SLACK_DATA = {
           "10": 12
         },
         "installDist": {
-          "1": 1,
+          "1": 2,
           "5": 5
         },
         "byIndustry": {
+          "도소매": 1,
           "요식업": 2,
           "서비스[뷰티,헤어]": 1,
           "서비스[학원]": 2,
           "카페": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 7,
+            "low": 2
+          },
           "6개월": {
             "total": 6,
             "low": 3
@@ -78947,20 +78952,16 @@ window.SLACK_DATA = {
           "1개월": {
             "total": 7,
             "low": 0
-          },
-          "구매설치": {
-            "total": 6,
-            "low": 1
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 6,
+            "low": 1
+          },
           "DAOU": {
             "total": 1,
             "low": 1
-          },
-          "KIS": {
-            "total": 5,
-            "low": 0
           },
           "KPN": {
             "total": 6,
@@ -78984,12 +78985,40 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 3,
           "필요한 기능이 없거나 몰라서 불편": 3,
           "사용중 오류가 자주 발생함": 1,
-          "단말기 설치나 초기 과정이 어려움": 1,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
         },
         "alerts": [
+          {
+            "time": "22:49",
+            "store": "감천문화마을 휴게소",
+            "storeId": "567097",
+            "industry": "도소매",
+            "indBucket": "도소매",
+            "install": 1,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "매장방문설치하신분 대충설명 그리고 모르면 무조건콜센타 전화하라고 함 ㅊ",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              },
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "현장직원 명함도없이 자기혼자설명하고감 물어볼려도 콜센타 전화번호 밖에몰라요 콜센타 연결힘들어요",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "22:34",
             "store": "퍼니바이크(FUNNY BIKE)",
@@ -79152,7 +79181,7 @@ window.SLACK_DATA = {
     "watch": {
       "1785646366.118379": {
         "post": "1785646366.118379",
-        "lastSeen": 1785678322.23
+        "lastSeen": 1785679230.686
       }
     },
     "days": {
