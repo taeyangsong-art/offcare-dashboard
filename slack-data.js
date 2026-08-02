@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2370,
+  "version": 2371,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -78902,18 +78902,18 @@ window.SLACK_DATA = {
       },
       "updatedAt": "22:49",
       "voc": {
-        "responses": 25,
+        "responses": 26,
         "install": {
-          "count": 7,
+          "count": 8,
           "low": 2
         },
         "nps": {
-          "count": 25,
+          "count": 26,
           "low": 6
         },
         "high": {
-          "install": 5,
-          "nps": 12
+          "install": 6,
+          "nps": 13
         },
         "npsDist": {
           "0": 1,
@@ -78923,22 +78923,22 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 3,
           "9": 3,
-          "10": 12
+          "10": 13
         },
         "installDist": {
           "1": 2,
-          "5": 5
+          "5": 6
         },
         "byIndustry": {
+          "서비스[뷰티,헤어]": 2,
           "도소매": 1,
           "요식업": 2,
-          "서비스[뷰티,헤어]": 1,
           "서비스[학원]": 2,
           "카페": 1
         },
         "byTenure": {
           "구매설치": {
-            "total": 7,
+            "total": 8,
             "low": 2
           },
           "6개월": {
@@ -78955,16 +78955,16 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 7,
+            "low": 1
+          },
           "KIS": {
             "total": 6,
             "low": 1
           },
           "DAOU": {
             "total": 1,
-            "low": 1
-          },
-          "KPN": {
-            "total": 6,
             "low": 1
           },
           "SECTA9": {
@@ -79175,6 +79175,17 @@ window.SLACK_DATA = {
           }
         ]
       }
+    },
+    "2026-08-03": {
+      "counts": {},
+      "pending": [],
+      "done": [],
+      "intake": {
+        "online": 0,
+        "offline": 0,
+        "unknown": 0
+      },
+      "updatedAt": ""
     }
   },
   "resp": {
