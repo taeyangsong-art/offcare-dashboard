@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2339,
+  "version": 2340,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -78900,20 +78900,20 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "15:41",
+      "updatedAt": "16:29",
       "voc": {
-        "responses": 17,
+        "responses": 20,
         "install": {
-          "count": 4,
+          "count": 5,
           "low": 1
         },
         "nps": {
-          "count": 17,
+          "count": 20,
           "low": 4
         },
         "high": {
-          "install": 3,
-          "nps": 7
+          "install": 4,
+          "nps": 9
         },
         "npsDist": {
           "0": 1,
@@ -78922,19 +78922,28 @@ window.SLACK_DATA = {
           "5": 1,
           "7": 1,
           "8": 3,
-          "9": 2,
-          "10": 7
+          "9": 3,
+          "10": 9
         },
         "installDist": {
           "1": 1,
-          "5": 3
+          "5": 4
         },
         "byIndustry": {
+          "서비스[뷰티,헤어]": 1,
           "요식업": 1,
           "서비스[학원]": 2,
           "카페": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 6,
+            "low": 0
+          },
+          "구매설치": {
+            "total": 5,
+            "low": 1
+          },
           "3개월": {
             "total": 4,
             "low": 1
@@ -78942,32 +78951,24 @@ window.SLACK_DATA = {
           "6개월": {
             "total": 5,
             "low": 2
-          },
-          "1개월": {
-            "total": 4,
-            "low": 0
-          },
-          "구매설치": {
-            "total": 4,
-            "low": 1
           }
         },
         "byVan": {
-          "KPN": {
+          "KIS": {
             "total": 4,
+            "low": 0
+          },
+          "SECTA9": {
+            "total": 5,
+            "low": 1
+          },
+          "KPN": {
+            "total": 5,
             "low": 1
           },
           "NICE": {
             "total": 2,
             "low": 1
-          },
-          "SECTA9": {
-            "total": 4,
-            "low": 1
-          },
-          "KIS": {
-            "total": 3,
-            "low": 0
           },
           "KOCES": {
             "total": 3,
@@ -79082,6 +79083,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "16:17",
+            "store": "더와이샵",
+            "storeId": "568347",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "친절하시고 자세히 설명해주셔서 쉽게 설치했어요 좋아서요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "15:17",
             "store": "프롬커피로스터스",
             "storeId": "574325",
@@ -79113,7 +79126,7 @@ window.SLACK_DATA = {
       },
       "1785646366.118379": {
         "post": "1785646366.118379",
-        "lastSeen": 1785654922.223
+        "lastSeen": 1785655827.587
       }
     },
     "days": {
