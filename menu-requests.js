@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 287,
- "updatedAt": "2026-08-02 09:47",
+ "version": 288,
+ "updatedAt": "2026-08-02 11:00",
  "days": 30,
  "items": [
   {
@@ -9271,28 +9271,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783057471172769"
-  },
-  {
-   "ts": "1783043705.871589",
-   "date": "2026-07-03",
-   "time": "10:55",
-   "store": "길상돈가스",
-   "biz": "8640602874",
-   "phone": "01099664316\n-",
-   "pos": "스파로스포스",
-   "content": "음료메뉴의 웰치스제로에 사진이 없어서 추가요청합니다",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/18DB8hnW8r81GegBznolpNUbl00MgGvZP/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783043712.344399",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783043705871589"
   }
  ]
 };
