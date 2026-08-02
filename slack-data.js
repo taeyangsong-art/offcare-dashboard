@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2329,
+  "version": 2330,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -76416,7 +76416,7 @@ window.SLACK_DATA = {
           "req": "프론트 인터넷 연결 확인 안됨 / 지원 부탁드립니다! :꾸벅5:",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "포프(pc) 온보딩 완료"
         },
         {
           "time": "13:48",
@@ -76428,7 +76428,7 @@ window.SLACK_DATA = {
           "hw": "",
           "urgent": true,
           "intake": "online",
-          "note": ""
+          "note": "영상통화 확인 시 정상 부팅"
         },
         {
           "time": "13:46",
@@ -76517,7 +76517,7 @@ window.SLACK_DATA = {
           "hw": "",
           "urgent": true,
           "intake": "online",
-          "note": ""
+          "note": "외출 2시반"
         },
         {
           "time": "13:32",
@@ -76528,7 +76528,7 @@ window.SLACK_DATA = {
           "req": "프론트 2 + 터미널 2 연결 안내드렸으나 자가 설치 어려워하셔서 온보딩 요청드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "1차부재 / 금일 18:00 예약"
         },
         {
           "time": "13:30",
@@ -76749,7 +76749,7 @@ window.SLACK_DATA = {
           "req": "설치 원격요청(프론트)",
           "hw": "안드로이드",
           "intake": "online",
-          "note": ""
+          "note": "온보딩 완료입니다"
         },
         {
           "time": "12:24",
@@ -76993,7 +76993,7 @@ window.SLACK_DATA = {
           "req": "",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         },
         {
           "time": "11:28",
@@ -77214,7 +77214,7 @@ window.SLACK_DATA = {
           "req": "포프유프(태블릿) 사용중  / 오랜만에 부팅하니  결제진행중 로딩화면에서 멈추고 결제 안된다고 하시어 점검부탁드립니다",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "재온보딩 완료"
         },
         {
           "time": "10:21",
@@ -77379,7 +77379,7 @@ window.SLACK_DATA = {
           "req": "오케이포스 사용 매장으로 확인되며, 금일부터 결제 누르면 포인트를 적립하라고 먼저 뜬다고 하시어 포스 설정 확인 한번만 부탁드리겠습니다!",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "프론트 경로: 프론트 화면 터치 → [설정] → 관리자 암호 7055 입력 → 토스 지원 · 할인 이벤트 → 토스 포인트 적립 → 토글 OFF 프론트 경로: 프론트 화면 터치 → [설정] → 관리자 암호 7055 입력 → 토스 지원 · 할인 이벤트 → 토스 포인트 적립 → 토글 OFF / 해제완료 / 오케이포스도 동일한거였군요..! 감사합니다!!"
         },
         {
           "time": "09:30",
@@ -78900,7 +78900,7 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:57",
+      "updatedAt": "13:52",
       "voc": {
         "responses": 2,
         "install": {
@@ -78964,6 +78964,10 @@ window.SLACK_DATA = {
       "1785502701.838699": {
         "post": "1785502701.838699",
         "lastSeen": 1785502834.369
+      },
+      "1785646366.118379": {
+        "post": "1785646366.118379",
+        "lastSeen": 1785647089.502
       }
     },
     "days": {

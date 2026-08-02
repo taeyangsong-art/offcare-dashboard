@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 288,
- "updatedAt": "2026-08-02 11:00",
+ "version": 289,
+ "updatedAt": "2026-08-02 14:04",
  "days": 30,
  "items": [
+  {
+   "ts": "1785646366.118379",
+   "date": "2026-08-02",
+   "time": "13:52",
+   "store": "꾸움집",
+   "biz": "7974501249",
+   "phone": "01067485013\n-",
+   "pos": "오케이포스",
+   "content": "추가\n[디저트] 고구마맛탕 휘낭시에 3.500",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785646371.908329",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785646366118379"
+  },
   {
    "ts": "1785576878.491639",
    "date": "2026-08-01",
