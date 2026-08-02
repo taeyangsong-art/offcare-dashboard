@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 299,
- "updatedAt": "2026-08-02 18:30",
+ "version": 300,
+ "updatedAt": "2026-08-02 19:00",
  "days": 30,
  "items": [
   {
@@ -9008,46 +9008,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김기범",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783073031082479"
-  },
-  {
-   "ts": "1783072301.905969",
-   "date": "2026-07-03",
-   "time": "18:51",
-   "store": "은성한정식",
-   "biz": "5298703678",
-   "phone": "01025147226\n-",
-   "pos": "퍼스트포스",
-   "content": "<추가메뉴1> 해물누룽지탕 메뉴 4칸 모두 (해물)글자는 삭제해주세요. 누룽지탕(1인)추가/누룽지탕(2인)추가/누룽지탕(3인)추가/누룽지탕(4인)추가",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783072307.456869",
-   "status": "done",
-   "handler": "김기범",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783072301905969"
-  },
-  {
-   "ts": "1783071967.238209",
-   "date": "2026-07-03",
-   "time": "18:46",
-   "store": "은성한정식",
-   "biz": "5298703678",
-   "phone": "01025147226\n-",
-   "pos": "퍼스트포스",
-   "content": "<포장> 육회 포장이 2개나 있네요. 딋 페이지는 삭제해주세요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783071972.107949",
-   "status": "done",
-   "handler": "김기범",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783071967238209"
   }
  ]
 };
