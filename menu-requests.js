@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 297,
- "updatedAt": "2026-08-02 17:45",
+ "version": 298,
+ "updatedAt": "2026-08-02 18:00",
  "days": 30,
  "items": [
   {
@@ -9068,46 +9068,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김기범",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783070753915239"
-  },
-  {
-   "ts": "1783069011.690459",
-   "date": "2026-07-03",
-   "time": "17:56",
-   "store": "노군꼬치 동탄호수공원점",
-   "biz": "5090236289",
-   "phone": "",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783069016.158469",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783069011690459"
-  },
-  {
-   "ts": "1783068369.091589",
-   "date": "2026-07-03",
-   "time": "17:46",
-   "store": "커피에반하다",
-   "biz": "5274400488",
-   "phone": "",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1783068384.619989",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783068369091589"
   }
  ]
 };

@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2346,
+  "version": 2347,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -78900,20 +78900,20 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "16:29",
+      "updatedAt": "17:48",
       "voc": {
-        "responses": 20,
+        "responses": 21,
         "install": {
-          "count": 5,
+          "count": 6,
           "low": 1
         },
         "nps": {
-          "count": 20,
+          "count": 21,
           "low": 4
         },
         "high": {
-          "install": 4,
-          "nps": 9
+          "install": 5,
+          "nps": 10
         },
         "npsDist": {
           "0": 1,
@@ -78923,26 +78923,26 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 3,
           "9": 3,
-          "10": 9
+          "10": 10
         },
         "installDist": {
           "1": 1,
-          "5": 4
+          "5": 5
         },
         "byIndustry": {
+          "요식업": 2,
           "서비스[뷰티,헤어]": 1,
-          "요식업": 1,
           "서비스[학원]": 2,
           "카페": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 6,
+            "low": 1
+          },
           "1개월": {
             "total": 6,
             "low": 0
-          },
-          "구매설치": {
-            "total": 5,
-            "low": 1
           },
           "3개월": {
             "total": 4,
@@ -78954,13 +78954,13 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SECTA9": {
+            "total": 6,
+            "low": 1
+          },
           "KIS": {
             "total": 4,
             "low": 0
-          },
-          "SECTA9": {
-            "total": 5,
-            "low": 1
           },
           "KPN": {
             "total": 5,
@@ -79083,6 +79083,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "17:48",
+            "store": "수기소담",
+            "storeId": "569919",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "기사님이 친절하셨음 사용하기 편해서",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "16:17",
             "store": "더와이샵",
             "storeId": "568347",
@@ -79122,7 +79134,7 @@ window.SLACK_DATA = {
       },
       "1785646366.118379": {
         "post": "1785646366.118379",
-        "lastSeen": 1785660328.008
+        "lastSeen": 1785661227.925
       }
     },
     "days": {
