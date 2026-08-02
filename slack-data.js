@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2351,
+  "version": 2352,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -78900,20 +78900,20 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "17:48",
+      "updatedAt": "19:00",
       "voc": {
-        "responses": 21,
+        "responses": 22,
         "install": {
           "count": 6,
           "low": 1
         },
         "nps": {
-          "count": 21,
+          "count": 22,
           "low": 4
         },
         "high": {
           "install": 5,
-          "nps": 10
+          "nps": 11
         },
         "npsDist": {
           "0": 1,
@@ -78923,7 +78923,7 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 3,
           "9": 3,
-          "10": 10
+          "10": 11
         },
         "installDist": {
           "1": 1,
@@ -78936,13 +78936,13 @@ window.SLACK_DATA = {
           "카페": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 7,
+            "low": 0
+          },
           "구매설치": {
             "total": 6,
             "low": 1
-          },
-          "1개월": {
-            "total": 6,
-            "low": 0
           },
           "3개월": {
             "total": 4,
@@ -78954,6 +78954,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 6,
+            "low": 1
+          },
           "SECTA9": {
             "total": 6,
             "low": 1
@@ -78961,10 +78965,6 @@ window.SLACK_DATA = {
           "KIS": {
             "total": 4,
             "low": 0
-          },
-          "KPN": {
-            "total": 5,
-            "low": 1
           },
           "NICE": {
             "total": 2,
@@ -79124,17 +79124,13 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1785492477.124909": {
-        "post": "1785492477.124909",
-        "lastSeen": 1785530566.844
-      },
       "1785502701.838699": {
         "post": "1785502701.838699",
         "lastSeen": 1785502834.369
       },
       "1785646366.118379": {
         "post": "1785646366.118379",
-        "lastSeen": 1785664834.431
+        "lastSeen": 1785665721.437
       }
     },
     "days": {

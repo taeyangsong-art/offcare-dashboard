@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 300,
- "updatedAt": "2026-08-02 19:00",
+ "version": 301,
+ "updatedAt": "2026-08-02 19:15",
  "days": 30,
  "items": [
   {
@@ -8948,66 +8948,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783076774832969"
-  },
-  {
-   "ts": "1783073539.737529",
-   "date": "2026-07-03",
-   "time": "19:12",
-   "store": "은성한정식",
-   "biz": "5298703678",
-   "phone": "01025147226\n-",
-   "pos": "퍼스트포스",
-   "content": "메인화면 1층 5호-1삭제해주세요. 1층 5호실 사이즈 키워주시고,  2호, 6호 사이즈도 조금씩 키워주셔요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1783080751.521049",
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783073539737529"
-  },
-  {
-   "ts": "1783073315.773729",
-   "date": "2026-07-03",
-   "time": "19:08",
-   "store": "은성한정식",
-   "biz": "5298703678",
-   "phone": "01025147226\n-",
-   "pos": "퍼스트포스",
-   "content": "<추가메뉴 2> 된장찌개, 해물누룽지탕,얖요리세트를 한줄 윗칸으로 이동해주셔요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783073320.063539",
-   "status": "done",
-   "handler": "김기범",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783073315773729"
-  },
-  {
-   "ts": "1783073031.082479",
-   "date": "2026-07-03",
-   "time": "19:03",
-   "store": "은성한정식",
-   "biz": "5298703678",
-   "phone": "01025147226\n-",
-   "pos": "퍼스트포스",
-   "content": "<서비스> 궁중떡볶이 -> 크림새우(4인) 옆으로 이동 : 회색바탕 흰색들씨/ 가오리찜 -> 갈비찜(4인) 옆으로 이동 : 회색바탕 흰색들씨",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783073037.792449",
-   "status": "done",
-   "handler": "김기범",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783073031082479"
   }
  ]
 };
