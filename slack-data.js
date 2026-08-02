@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2336,
+  "version": 2337,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -78900,20 +78900,20 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "15:32",
+      "updatedAt": "15:41",
       "voc": {
-        "responses": 16,
+        "responses": 17,
         "install": {
           "count": 4,
           "low": 1
         },
         "nps": {
-          "count": 16,
+          "count": 17,
           "low": 4
         },
         "high": {
           "install": 3,
-          "nps": 6
+          "nps": 7
         },
         "npsDist": {
           "0": 1,
@@ -78923,7 +78923,7 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 3,
           "9": 2,
-          "10": 6
+          "10": 7
         },
         "installDist": {
           "1": 1,
@@ -78935,6 +78935,10 @@ window.SLACK_DATA = {
           "카페": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 4,
+            "low": 1
+          },
           "6개월": {
             "total": 5,
             "low": 2
@@ -78946,23 +78950,19 @@ window.SLACK_DATA = {
           "구매설치": {
             "total": 4,
             "low": 1
-          },
-          "3개월": {
-            "total": 3,
-            "low": 1
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 4,
+            "low": 1
+          },
           "NICE": {
             "total": 2,
             "low": 1
           },
           "SECTA9": {
             "total": 4,
-            "low": 1
-          },
-          "KPN": {
-            "total": 3,
             "low": 1
           },
           "KIS": {
@@ -79117,7 +79117,7 @@ window.SLACK_DATA = {
       },
       "1785646366.118379": {
         "post": "1785646366.118379",
-        "lastSeen": 1785652392.347
+        "lastSeen": 1785653206.722
       }
     },
     "days": {
