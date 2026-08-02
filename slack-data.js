@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2334,
+  "version": 2335,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -78900,46 +78900,145 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "13:52",
+      "updatedAt": "15:17",
       "voc": {
-        "responses": 2,
+        "responses": 9,
         "install": {
-          "count": 0,
-          "low": 0
+          "count": 4,
+          "low": 1
         },
         "nps": {
-          "count": 2,
-          "low": 0
+          "count": 9,
+          "low": 2
         },
         "high": {
-          "install": 0,
-          "nps": 1
+          "install": 3,
+          "nps": 4
         },
         "npsDist": {
+          "1": 1,
+          "5": 1,
+          "7": 1,
+          "8": 1,
           "9": 1,
-          "10": 1
+          "10": 4
         },
-        "installDist": {},
-        "byIndustry": {},
+        "installDist": {
+          "1": 1,
+          "5": 3
+        },
+        "byIndustry": {
+          "요식업": 1,
+          "서비스[학원]": 2,
+          "카페": 1
+        },
         "byTenure": {
+          "구매설치": {
+            "total": 4,
+            "low": 1
+          },
+          "3개월": {
+            "total": 3,
+            "low": 1
+          },
           "1개월": {
             "total": 2,
             "low": 0
           }
         },
         "byVan": {
-          "SECTA9": {
+          "KOCES": {
+            "total": 3,
+            "low": 1
+          },
+          "KIS": {
+            "total": 2,
+            "low": 0
+          },
+          "SMARTRO": {
             "total": 1,
             "low": 0
           },
-          "KIS": {
+          "KPN": {
             "total": 1,
+            "low": 1
+          },
+          "SECTA9": {
+            "total": 2,
             "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
-        "praises": []
+        "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 1,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
+          "필요한 기능이 없거나 몰라서 불편": 1
+        },
+        "alerts": [
+          {
+            "time": "15:17",
+            "store": "집애김밥 가산퍼블릭점",
+            "storeId": "573626",
+            "industry": "음식점/주점",
+            "indBucket": "요식업",
+            "install": 1,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "기존에 있던 키오스크에 카드리더기를 설치해야했는데 카드리더기 설치하는 부분이랑 안맞는걸 주셨어요 그래소 설치를 못합니다",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              },
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "소통이 정확하게 안됩니다",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:11",
+            "store": "필라테스에이치(H)",
+            "storeId": "448869",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "사용이 불편한점이 많음",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
+        "praises": [
+          {
+            "time": "15:17",
+            "store": "프롬커피로스터스",
+            "storeId": "574325",
+            "indBucket": "카페",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "설명서가 잘되어있음 쓰기 간편하고 인테리어에 좋음",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
       }
     }
   },
@@ -78963,7 +79062,7 @@ window.SLACK_DATA = {
       },
       "1785646366.118379": {
         "post": "1785646366.118379",
-        "lastSeen": 1785650868.405
+        "lastSeen": 1785651587.452
       }
     },
     "days": {

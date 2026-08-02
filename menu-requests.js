@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 291,
- "updatedAt": "2026-08-02 15:07",
+ "version": 292,
+ "updatedAt": "2026-08-02 15:19",
  "days": 30,
  "items": [
   {
@@ -9208,49 +9208,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김동욱",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783062845357999"
-  },
-  {
-   "ts": "1783059497.043059",
-   "date": "2026-07-03",
-   "time": "15:18",
-   "store": "엄마손반찬",
-   "biz": "5301602403",
-   "phone": "01065557554\n-",
-   "pos": "스파로스포스",
-   "content": "주류랑 음료 가 빠져서. 추가 요청드립니다",
-   "special": "주류 및 음료가 빠져 있구요 전에 요청한 메뉴가 빠져 있어 추가 요청합니다",
-   "drive": [
-    "https://drive.google.com/file/d/1A69BK1hqkCD-1TJzyQLDrgXGB9SnfRoq/view?usp=drivesdk",
-    "https://drive.google.com/file/d/1ZvbPyr4HfV3gwrWLL6MMxsFX23klSCkB/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783059501.097039",
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783059497043059"
-  },
-  {
-   "ts": "1783059430.125009",
-   "date": "2026-07-03",
-   "time": "15:17",
-   "store": "(주)형아우의꿈",
-   "biz": "7338802197",
-   "phone": "",
-   "pos": "오케이포스",
-   "content": "OKPOS",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1783060299.389209",
-   "status": "done",
-   "handler": "서상원",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783059430125009"
   }
  ]
 };
