@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2363,
+  "version": 2364,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -78900,20 +78900,20 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "19:00",
+      "updatedAt": "22:13",
       "voc": {
-        "responses": 22,
+        "responses": 23,
         "install": {
           "count": 6,
           "low": 1
         },
         "nps": {
-          "count": 22,
+          "count": 23,
           "low": 4
         },
         "high": {
           "install": 5,
-          "nps": 11
+          "nps": 12
         },
         "npsDist": {
           "0": 1,
@@ -78923,7 +78923,7 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 3,
           "9": 3,
-          "10": 11
+          "10": 12
         },
         "installDist": {
           "1": 1,
@@ -78936,6 +78936,10 @@ window.SLACK_DATA = {
           "카페": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 5,
+            "low": 1
+          },
           "1개월": {
             "total": 7,
             "low": 0
@@ -78944,16 +78948,16 @@ window.SLACK_DATA = {
             "total": 6,
             "low": 1
           },
-          "3개월": {
-            "total": 4,
-            "low": 1
-          },
           "6개월": {
             "total": 5,
             "low": 2
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 5,
+            "low": 0
+          },
           "KPN": {
             "total": 6,
             "low": 1
@@ -78961,10 +78965,6 @@ window.SLACK_DATA = {
           "SECTA9": {
             "total": 6,
             "low": 1
-          },
-          "KIS": {
-            "total": 4,
-            "low": 0
           },
           "NICE": {
             "total": 2,
@@ -79126,7 +79126,7 @@ window.SLACK_DATA = {
     "watch": {
       "1785646366.118379": {
         "post": "1785646366.118379",
-        "lastSeen": 1785675630.283
+        "lastSeen": 1785676521.281
       }
     },
     "days": {

@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 302,
- "updatedAt": "2026-08-02 20:15",
+ "version": 303,
+ "updatedAt": "2026-08-02 22:15",
  "days": 30,
  "items": [
   {
@@ -8908,26 +8908,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김동욱",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783133896963529"
-  },
-  {
-   "ts": "1783083985.693579",
-   "date": "2026-07-03",
-   "time": "22:06",
-   "store": "사단법인 제주출판인연대",
-   "biz": "5018249287",
-   "phone": "01074142619",
-   "pos": "",
-   "content": "바코드 메뉴 등록 요청드립니다 >>",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1783084589.841029",
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783083985693579"
   }
  ]
 };
