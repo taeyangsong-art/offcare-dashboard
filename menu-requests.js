@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 298,
- "updatedAt": "2026-08-02 18:00",
+ "version": 299,
+ "updatedAt": "2026-08-02 18:30",
  "days": 30,
  "items": [
   {
@@ -9048,26 +9048,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김기범",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783071967238209"
-  },
-  {
-   "ts": "1783070753.915239",
-   "date": "2026-07-03",
-   "time": "18:25",
-   "store": "월리",
-   "biz": "3902800697",
-   "phone": "01046302469\n-",
-   "pos": "토스포스",
-   "content": "할인메뉴를 추가하려고 하는데 가격에 마이너스 표기가 안되네요.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1783077255.612019",
-   "status": "done",
-   "handler": "김기범",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783070753915239"
   }
  ]
 };
