@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 294,
- "updatedAt": "2026-08-02 16:30",
+ "version": 295,
+ "updatedAt": "2026-08-02 16:45",
  "days": 30,
  "items": [
   {
@@ -9148,26 +9148,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783067351635919"
-  },
-  {
-   "ts": "1783064435.043689",
-   "date": "2026-07-03",
-   "time": "16:40",
-   "store": "은성한정식",
-   "biz": "5298703678",
-   "phone": "01025147226\n-",
-   "pos": "퍼스트포스",
-   "content": "<포장>금액수정 -> 보리굴비 도시락 28,000/불고기 도시락 28,000/ 간장게장 도시락 38,000/ 갈비찜 도시락 38,000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783064439.818109",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783064435043689"
   }
  ]
 };
