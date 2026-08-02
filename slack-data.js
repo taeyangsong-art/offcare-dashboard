@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2335,
+  "version": 2336,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -78900,28 +78900,30 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "15:17",
+      "updatedAt": "15:32",
       "voc": {
-        "responses": 9,
+        "responses": 16,
         "install": {
           "count": 4,
           "low": 1
         },
         "nps": {
-          "count": 9,
-          "low": 2
+          "count": 16,
+          "low": 4
         },
         "high": {
           "install": 3,
-          "nps": 4
+          "nps": 6
         },
         "npsDist": {
+          "0": 1,
           "1": 1,
+          "2": 1,
           "5": 1,
           "7": 1,
-          "8": 1,
-          "9": 1,
-          "10": 4
+          "8": 3,
+          "9": 2,
+          "10": 6
         },
         "installDist": {
           "1": 1,
@@ -78933,6 +78935,14 @@ window.SLACK_DATA = {
           "카페": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 5,
+            "low": 2
+          },
+          "1개월": {
+            "total": 4,
+            "low": 0
+          },
           "구매설치": {
             "total": 4,
             "low": 1
@@ -78940,40 +78950,85 @@ window.SLACK_DATA = {
           "3개월": {
             "total": 3,
             "low": 1
-          },
-          "1개월": {
-            "total": 2,
-            "low": 0
           }
         },
         "byVan": {
-          "KOCES": {
+          "NICE": {
+            "total": 2,
+            "low": 1
+          },
+          "SECTA9": {
+            "total": 4,
+            "low": 1
+          },
+          "KPN": {
             "total": 3,
             "low": 1
           },
           "KIS": {
-            "total": 2,
+            "total": 3,
             "low": 0
+          },
+          "KOCES": {
+            "total": 3,
+            "low": 1
           },
           "SMARTRO": {
             "total": 1,
             "low": 0
-          },
-          "KPN": {
-            "total": 1,
-            "low": 1
-          },
-          "SECTA9": {
-            "total": 2,
-            "low": 0
           }
         },
         "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1,
+          "필요한 기능이 없거나 몰라서 불편": 2,
           "단말기 설치나 초기 과정이 어려움": 1,
-          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
-          "필요한 기능이 없거나 몰라서 불편": 1
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
         },
         "alerts": [
+          {
+            "time": "15:32",
+            "store": "짬뽕클라스",
+            "storeId": "347188",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "개발해준다는 번호표 애기도 없고 배달 용지 시킬때 홀 위주로만 몇개씩 두고 택배비 착불로 주면서 프로그램 오류에도 대응도 참 아쉽고 사용료는 비싸고",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:32",
+            "store": "맨즈왁싱(Man's Waxing)",
+            "storeId": "345354",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 2,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 2,
+                "text": "종이영수증 추가시 추가부담금+불편함",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:17",
             "store": "집애김밥 가산퍼블릭점",
@@ -79062,7 +79117,7 @@ window.SLACK_DATA = {
       },
       "1785646366.118379": {
         "post": "1785646366.118379",
-        "lastSeen": 1785651587.452
+        "lastSeen": 1785652392.347
       }
     },
     "days": {
