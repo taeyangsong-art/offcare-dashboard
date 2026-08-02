@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2365,
+  "version": 2366,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -78900,16 +78900,16 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "22:13",
+      "updatedAt": "22:34",
       "voc": {
-        "responses": 23,
+        "responses": 24,
         "install": {
           "count": 6,
           "low": 1
         },
         "nps": {
-          "count": 23,
-          "low": 4
+          "count": 24,
+          "low": 5
         },
         "high": {
           "install": 5,
@@ -78919,7 +78919,7 @@ window.SLACK_DATA = {
           "0": 1,
           "1": 1,
           "2": 1,
-          "5": 1,
+          "5": 2,
           "7": 1,
           "8": 3,
           "9": 3,
@@ -78936,6 +78936,10 @@ window.SLACK_DATA = {
           "카페": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 6,
+            "low": 3
+          },
           "3개월": {
             "total": 5,
             "low": 1
@@ -78947,13 +78951,13 @@ window.SLACK_DATA = {
           "구매설치": {
             "total": 6,
             "low": 1
-          },
-          "6개월": {
-            "total": 5,
-            "low": 2
           }
         },
         "byVan": {
+          "DAOU": {
+            "total": 1,
+            "low": 1
+          },
           "KIS": {
             "total": 5,
             "low": 0
@@ -78980,12 +78984,34 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "필요한 기능이 없거나 몰라서 불편": 3,
           "사용중 오류가 자주 발생함": 1,
-          "필요한 기능이 없거나 몰라서 불편": 2,
           "단말기 설치나 초기 과정이 어려움": 1,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
         },
         "alerts": [
+          {
+            "time": "22:34",
+            "store": "퍼니바이크(FUNNY BIKE)",
+            "storeId": "332080",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "사용하기가 불편해요",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:32",
             "store": "짬뽕클라스",
@@ -79126,7 +79152,7 @@ window.SLACK_DATA = {
     "watch": {
       "1785646366.118379": {
         "post": "1785646366.118379",
-        "lastSeen": 1785677432.267
+        "lastSeen": 1785678322.23
       }
     },
     "days": {
