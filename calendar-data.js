@@ -2,8 +2,8 @@
  * 회사 구글 캘린더(iCal) 동기화 데이터 — gcal-sync 워크플로가 자동 생성/갱신합니다.
  */
 window.GCAL_DATA = {
-  "version": 83,
-  "updatedAt": "2026-08-02 05:16",
+  "version": 84,
+  "updatedAt": "2026-08-02 15:47",
   "days": {
     "2026-07-09": [
       {
@@ -26,35 +26,7 @@ window.GCAL_DATA = {
         "allDay": false
       }
     ],
-    "2026-08-14": [
-      {
-        "title": "iShopCARE Town Hall Meeting",
-        "time": "09:30~11:00",
-        "allDay": false
-      }
-    ],
-    "2026-09-11": [
-      {
-        "title": "iShopCARE Town Hall Meeting",
-        "time": "09:30~11:00",
-        "allDay": false
-      }
-    ],
-    "2026-10-09": [
-      {
-        "title": "iShopCARE Town Hall Meeting",
-        "time": "09:30~11:00",
-        "allDay": false
-      }
-    ],
-    "2026-11-13": [
-      {
-        "title": "iShopCARE Town Hall Meeting",
-        "time": "09:30~11:00",
-        "allDay": false
-      }
-    ],
-    "2026-12-11": [
+    "2026-07-10": [
       {
         "title": "iShopCARE Town Hall Meeting",
         "time": "09:30~11:00",
@@ -220,7 +192,35 @@ window.GCAL_DATA = {
         "allDay": false
       }
     ],
-    "2026-07-10": [
+    "2026-08-14": [
+      {
+        "title": "iShopCARE Town Hall Meeting",
+        "time": "09:30~11:00",
+        "allDay": false
+      }
+    ],
+    "2026-09-11": [
+      {
+        "title": "iShopCARE Town Hall Meeting",
+        "time": "09:30~11:00",
+        "allDay": false
+      }
+    ],
+    "2026-10-09": [
+      {
+        "title": "iShopCARE Town Hall Meeting",
+        "time": "09:30~11:00",
+        "allDay": false
+      }
+    ],
+    "2026-11-13": [
+      {
+        "title": "iShopCARE Town Hall Meeting",
+        "time": "09:30~11:00",
+        "allDay": false
+      }
+    ],
+    "2026-12-11": [
       {
         "title": "iShopCARE Town Hall Meeting",
         "time": "09:30~11:00",
