@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 315,
- "updatedAt": "2026-08-03 14:30",
+ "version": 316,
+ "updatedAt": "2026-08-03 14:47",
  "days": 30,
  "items": [
   {
@@ -23,8 +23,8 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1785734772.327929",
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "심성현",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785733689417239"
   },
   {
@@ -9000,26 +9000,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김동욱",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783151390256949"
-  },
-  {
-   "ts": "1783143566.111129",
-   "date": "2026-07-04",
-   "time": "14:39",
-   "store": "퍼센트 아라비카 여의도63빌딩점",
-   "biz": "8848701922",
-   "phone": "",
-   "pos": "",
-   "content": "해당 매장(여의도63빌딩점)의 옵션을 포함한 메뉴 및 카테고리를 다른 매장으로 동일하게 복사 요청드립니다:man-bowing:\n\n• 퍼센트 아라비카 코엑스점\n• 퍼센트 아라비카 신세계 강남점\n• 퍼센트 아라비카 인천공항점",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 9,
-   "lr": "1783153150.872429",
-   "status": "done",
-   "handler": "김동욱",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783143566111129"
   }
  ]
 };
