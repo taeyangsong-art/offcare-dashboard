@@ -3286,7 +3286,10 @@ function renderOverview(){
         <div class="hl-big">${grandAll}<small>건</small></div>
         ${deltaHTML(grandAll, grandAllPrev)}
         ${(absentCnt||confirmCnt)?`<div class="ov-delta flat" style="margin-top:2px"><span>처리 ${grandProc}${absentCnt?` + 부재 ${absentCnt}`:''}${confirmCnt?` + 확인필요 ${confirmCnt}`:''}</span></div>`:''}
-        ${(!NIGHT&&intakeTot)?`<div class="ov-delta flat" style="margin-top:2px"><span>🌐 온라인 <b>${intakeAgg.online}</b> · 🏪 오프라인 <b>${intakeAgg.offline}</b></span></div>`:''}
+        ${(!NIGHT&&intakeTot)?`<div class="hl-trend">
+          <div class="hl-trend-row"><span class="tl">🌐 온라인</span><span class="tv">${intakeAgg.online}<small>건</small></span></div>
+          <div class="hl-trend-row"><span class="tl">🏪 오프라인</span><span class="tv">${intakeAgg.offline}<small>건</small></span></div>
+        </div>`:''}
       </div>
       <div class="hl-card gold" id="mvpCard">
         <div class="mvp-flash"></div><div class="mvp-confetti" id="mvpConfetti"></div>
