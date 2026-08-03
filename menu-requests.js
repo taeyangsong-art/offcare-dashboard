@@ -3,10 +3,32 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 305,
- "updatedAt": "2026-08-03 10:15",
+ "version": 306,
+ "updatedAt": "2026-08-03 11:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1785723476.000549",
+   "date": "2026-08-03",
+   "time": "11:17",
+   "store": "형과아우 삼계탕 안락점",
+   "biz": "4136200733",
+   "phone": "01053190398",
+   "pos": "오케이포스",
+   "content": "오케이포스) 테이블 수정 요청드립니다 >>",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "*<요청사항>* \n\n3-2를 3-1로 수정\n1층 14번 삽입"
+   ],
+   "rc": 2,
+   "lr": "1785723487.779819",
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785723476000549"
+  },
   {
    "ts": "1785646366.118379",
    "date": "2026-08-02",
