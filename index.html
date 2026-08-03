@@ -1328,7 +1328,11 @@ const WORK_CATS = [
   {key:"menu",       name:"메뉴등록", icon:"🍱", color:"#5e5ce6"},
   {key:"delivery",   name:"배달",     icon:"🛵", color:"#00c7be"},
   {key:"extern",     name:"외주",     icon:"🧩", color:"#8e8e93"},
-];  // VOC는 직원별 처리가 아니라 고객 설문이라 전용 페이지로 별도 표시
+];  // VOC는 고객 설문이라 별도 페이지가 있지만, 확인 담당자 기준 처리량은 직원별 집계에 포함된다
+// 직원별 처리량 차트/범례용 = 업무 카테고리 + VOC.
+// 표(직원별·카테고리별)엔 VOC 열이 있고 합계(r.total)에도 VOC가 들어가므로, 차트에만 빠지면 막대 합과 합계가 어긋난다
+const VOC_CAT = {key:"voc", name:"VOC", icon:"💬", color:"#ff2d55"};
+const CHART_CATS = [...WORK_CATS, VOC_CAT];
 const RESP_EXCL_CATS = ['transfer','menu','delivery'];   // 응답시간은 '순수 AS' 적재 — 명의변경·메뉴등록·배달 제외
 // 응답시간(요청→첫 확인) 폴링 집계. 날짜 배열만 받으므로 선택 기간·최근 7일·최근 30일에 그대로 재사용한다
 function respStats(dates){
@@ -3379,11 +3383,11 @@ function renderOverview(){
     <div class="card">
       <div class="card-head">
         <h3>직원별 처리량 (카테고리 구성)</h3>
-        <span class="hint">${viewLabel} · 직원별로 카테고리 막대를 분리 표시</span>
+        <span class="hint">${viewLabel} · 직원별로 카테고리 막대를 분리 표시 · VOC는 확인 담당자 기준</span>
       </div>
       ${columnChart(empRows, maxCell)}
       <div class="legend">
-        ${WORK_CATS.map(c=>`<span><span class="swatch" style="background:${c.color}"></span>${c.name}</span>`).join("")}
+        ${CHART_CATS.map(c=>`<span><span class="swatch" style="background:${c.color}"></span>${c.name}</span>`).join("")}
       </div>
     </div>
   `;
@@ -3621,7 +3625,7 @@ function deltaHTML(cur,prev){
 
 // 직원별 그룹(묶음) 세로 막대차트 — 직원마다 카테고리별 막대를 분리 표시
 function columnChart(empRows, maxCell){
-  const cats=WORK_CATS, nc=cats.length, ng=empRows.length;
+  const cats=CHART_CATS, nc=cats.length, ng=empRows.length;
   const barW=12, barGap=3, groupGap=32, padL=20, padR=20, topPad=22, botPad=46;
   const groupW=nc*barW+(nc-1)*barGap;
   const W=Math.max(560, padL+padR + ng*groupW + (ng-1)*groupGap);
@@ -3629,8 +3633,9 @@ function columnChart(empRows, maxCell){
   const mx=Math.max(1, maxCell);
   const groups=empRows.map((r,gi)=>{
     const gx=padL + gi*(groupW+groupGap);
+    const vals=[...r.cells, r.vc||0];   // cells 는 업무 카테고리만 — VOC 는 별도 필드
     const bars=cats.map((c,ci)=>{
-      const v=r.cells[ci];
+      const v=vals[ci];
       const bx=gx+ci*(barW+barGap);
       if(v<=0) return `<rect x="${bx}" y="${base-2}" width="${barW}" height="2" rx="1" style="fill:var(--line-soft)"/>`;
       const h=v/mx*plotH, y=base-h;
