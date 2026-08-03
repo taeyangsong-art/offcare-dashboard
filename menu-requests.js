@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 325,
- "updatedAt": "2026-08-03 18:01",
+ "version": 326,
+ "updatedAt": "2026-08-03 18:45",
  "days": 30,
  "items": [
   {
@@ -9077,26 +9077,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김기범",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783172481102749"
-  },
-  {
-   "ts": "1783158110.217479",
-   "date": "2026-07-04",
-   "time": "18:41",
-   "store": "미친피자 하남점",
-   "biz": "5036225357",
-   "phone": "01056645297",
-   "pos": "",
-   "content": "메뉴 복사 요청드립니다 >>",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 17,
-   "lr": "1783315857.323739",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783158110217479"
   }
  ]
 };
