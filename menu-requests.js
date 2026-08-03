@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 304,
- "updatedAt": "2026-08-03 08:30",
+ "version": 305,
+ "updatedAt": "2026-08-03 10:15",
  "days": 30,
  "items": [
   {
@@ -1749,23 +1749,7 @@ window.MENU_REQUESTS = {
    "special": "test",
    "drive": [],
    "files": 3,
-   "att": [
-    {
-     "name": "5.png",
-     "path": "menu-files/1785114303_416349-0.png",
-     "ocr": "SER 2060723 EE 1 ili MIE fi\nMAGIC POS E53 257 35 한 식사류 | omy | == | ses\n2d ve b= {\n콜카콜라 BAH 힐성사미다 환타파인 초정탄산수\n한 2,000 2,000 2,000 2,000 2,000\n1 <. | 0\n소 on ol\n봉사료: 0\n- BER 76001 | 써스 ㅣ 히원카드\nHABE: 0 매미 이기 할인취소 전달사항 [그의 부가기능"
-    },
-    {
-     "name": "3.png",
-     "path": "menu-files/1785114303_416349-1.png",
-     "ocr": "masicros i 8 I | 0 | 해] 해 |\n인원 10 ve i {\nI 삐추가 시례기추가 계장볶음밥 당면추가 라면사리\n| an 18,000 3,000 3,000 2,000 2,000\n공기밥\n1000\n4\n소 on ol\n봉사료: 0\n- | 1| — 76001 ㅣ 써스 ㅣ 히원카드\nHABE: 0 | 0 [cir] om | 할인취소 전달사항 [그의 부가기능"
-    },
-    {
-     "name": "4.png",
-     "path": "menu-files/1785114303_416349-2.png",
-     "ocr": "TERT !20280723 EE [= 3\nMAGIC POS 2857 207s 55 5 ER 식사류 | 추가메뉴 | 주류 |\n인원 10 ve pe = J if 1\n05003: :: 26600\n| moe | FUERA | 진후미즈백 새로 처름처럼\n| an 5,000 5,000 5,000 5,000 5,000\n5.000\n58 카스 테라 켈리 국순담막걸리\n5.000 5.000 5.000 5.000\n소계 99\nZe 2 [7 [eo] = i\n봉사료: 0\n: | 1| — 6001 ㅣ 세스 ㅣ 회원카드"
-    }
-   ],
+   "att": [],
    "replies": [],
    "rc": 1,
    "lr": "1785114312.782549",
