@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 326,
- "updatedAt": "2026-08-03 18:45",
+ "version": 327,
+ "updatedAt": "2026-08-03 22:45",
  "days": 30,
  "items": [
   {
@@ -9057,26 +9057,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783236939145499"
-  },
-  {
-   "ts": "1783172481.102749",
-   "date": "2026-07-04",
-   "time": "22:41",
-   "store": "은성한정식",
-   "biz": "5298703678",
-   "phone": "01025147226\n-",
-   "pos": "퍼스트포스",
-   "content": "<추가메뉴 1> 누룽지탕(1인)추가: (1인)추가를 아랫줄에 배열해주셔요. (2인)(3인)(4인)동일하게 변경",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1783174593.870459",
-   "status": "done",
-   "handler": "김기범",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783172481102749"
   }
  ]
 };
