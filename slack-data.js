@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2469,
+  "version": 2470,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -79195,14 +79195,14 @@ window.SLACK_DATA = {
     "2026-08-03": {
       "counts": {
         "as": {
+          "서상원": 7,
           "최민석": 18,
           "김기범": 9,
           "심성현": 40,
           "김동욱": 38,
           "송태양": 17,
           "배선유": 38,
-          "김규빈": 12,
-          "서상원": 6
+          "김규빈": 12
         },
         "onboarding": {
           "최민석": 10,
@@ -79256,6 +79256,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "23:47",
+          "store": "용용선생 이수점",
+          "biz": "3813701001",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "프론트 설정",
+          "hw": "",
+          "intake": "offline",
+          "note": "결제방식 변경안내"
+        },
         {
           "time": "22:55",
           "store": "형과아우 삼계탕 안락점",
@@ -81998,10 +82009,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 216,
-        "offline": 33,
+        "offline": 34,
         "unknown": 0
       },
-      "updatedAt": "22:55",
+      "updatedAt": "23:47",
       "voc": {
         "responses": 8,
         "install": {
@@ -82078,6 +82089,17 @@ window.SLACK_DATA = {
           }
         ]
       }
+    },
+    "2026-08-04": {
+      "counts": {},
+      "pending": [],
+      "done": [],
+      "intake": {
+        "online": 0,
+        "offline": 0,
+        "unknown": 0
+      },
+      "updatedAt": ""
     }
   },
   "resp": {
