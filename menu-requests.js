@@ -3,10 +3,54 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 319,
- "updatedAt": "2026-08-03 16:00",
+ "version": 320,
+ "updatedAt": "2026-08-03 16:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1785742715.629349",
+   "date": "2026-08-03",
+   "time": "16:38",
+   "store": "멕시카나 망포점",
+   "biz": "3302901497",
+   "phone": "01047066380\n-",
+   "pos": "기타",
+   "content": "메인포스 키오스크에 반반치킨추가해주세요",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1fbowqlh_NIZ3aPwwP40x4IxC7PofGC_C/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1QPGhdW9glL9lkno_HChImhKlnu08A3lo/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1nQTNZmXHxzQzMmhPuKPiBw8aUUAYcz22/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785742720.625699",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785742715629349"
+  },
+  {
+   "ts": "1785742665.413989",
+   "date": "2026-08-03",
+   "time": "16:37",
+   "store": "멕시카나 망포점",
+   "biz": "3302901497",
+   "phone": "01047066380\n-",
+   "pos": "기타",
+   "content": "반반치킨 추가해주세요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785742670.279159",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785742665413989"
+  },
   {
    "ts": "1785739972.879339",
    "date": "2026-08-03",
