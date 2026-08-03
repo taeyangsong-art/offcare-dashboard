@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 313,
- "updatedAt": "2026-08-03 14:00",
+ "version": 314,
+ "updatedAt": "2026-08-03 14:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1785733689.417239",
+   "date": "2026-08-03",
+   "time": "14:08",
+   "store": "일미옥",
+   "biz": "2455400926",
+   "phone": "",
+   "pos": "토스포스",
+   "content": "해당 매장 스파로스->토스포스로 메뉴이관 부탁드립니다.\n상호/ 주소 제신고 매장으로 이전 상호명 별미집 미륵사지점 입니다!",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785733693.689429",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785733689417239"
+  },
   {
    "ts": "1785733152.711089",
    "date": "2026-08-03",
