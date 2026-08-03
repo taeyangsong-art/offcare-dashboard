@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2410,
+  "version": 2411,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -71523,11 +71523,11 @@ window.SLACK_DATA = {
                 "cat": "사용중 오류가 자주 발생함"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
             "autoNote": "1차부재 1차부재",
-            "doneDate": ""
+            "doneDate": "2026-08-03"
           },
           {
             "time": "15:17",
@@ -77633,11 +77633,11 @@ window.SLACK_DATA = {
                 "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
             "autoNote": "1차부재 1차부재",
-            "doneDate": ""
+            "doneDate": "2026-08-03"
           },
           {
             "time": "17:02",
@@ -78744,11 +78744,11 @@ window.SLACK_DATA = {
                 "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 고객센터 인입 건으로 신규 사업자는 수수료 2% 초반대 이며 자사가 설정하는 것이 아닌 카드사에서 설정하는 것 설명 고객센터 인입 건으로 신규 사업자는 수수료 2% 초반대 이며 자사가 설정하는 것이 아닌 카드사에서 설정하는 것 설명",
+            "doneDate": "2026-08-03"
           },
           {
             "time": "18:10",
@@ -78769,7 +78769,7 @@ window.SLACK_DATA = {
             "emp": "",
             "autoStatus": "",
             "autoEmp": "",
-            "autoNote": "",
+            "autoNote": "1차부재 1차부재",
             "doneDate": ""
           },
           {
@@ -79195,12 +79195,35 @@ window.SLACK_DATA = {
     "2026-08-03": {
       "counts": {
         "as": {
-          "배선유": 3,
+          "배선유": 4,
+          "김동욱": 1,
           "송태양": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:18",
+          "store": "주식회사 에이치이이",
+          "biz": "3068140059",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "결제 후 출력 시 유프에서 영수증 출력이 되지 않는다고 합니다. 확인 한번 부탁드리겠습니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "젠더 빠져있어 재연결"
+        },
+        {
+          "time": "09:16",
+          "store": "앰프레소 서초점",
+          "biz": "7878802194",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "유선프린터 고장난것같다고함 ( 갑자기 출력 안됨 ) 확인 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "칼날 위치조정 후 정상 출력 확인"
+        },
         {
           "time": "09:04",
           "store": "오늘은즉떡",
@@ -79247,11 +79270,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 4,
+        "online": 6,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:15",
+      "updatedAt": "09:30",
       "voc": {
         "responses": 2,
         "install": {
