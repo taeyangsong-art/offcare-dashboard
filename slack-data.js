@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2506,
+  "version": 2507,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -79199,7 +79199,7 @@ window.SLACK_DATA = {
           "최민석": 18,
           "김기범": 9,
           "심성현": 40,
-          "김동욱": 38,
+          "김동욱": 39,
           "송태양": 17,
           "배선유": 38,
           "김규빈": 12
@@ -79232,17 +79232,6 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
-        {
-          "time": "16:20",
-          "store": "레이디캐슬",
-          "biz": "2235500317",
-          "handler": "김동욱",
-          "cat": "as",
-          "intake": "offline",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
         {
           "time": "14:49",
           "store": "청와살롱",
@@ -80111,6 +80100,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "5시 15분 예약 요청으로 예약 완료입니다"
+        },
+        {
+          "time": "16:20",
+          "store": "레이디캐슬",
+          "biz": "2235500317",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "캣단말기 사용 예상 / 단말기 결제되지 않아 확인요청드립니다!",
+          "hw": "",
+          "intake": "offline",
+          "note": "라우터 매장. 전화선 이용 / 라우터 해지 전화선 사용 전화선,전원 뺏꼇 후 정상결제"
         },
         {
           "time": "16:18",
