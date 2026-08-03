@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 314,
- "updatedAt": "2026-08-03 14:15",
+ "version": 315,
+ "updatedAt": "2026-08-03 14:30",
  "days": 30,
  "items": [
   {
@@ -21,8 +21,8 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1785733693.689429",
+   "rc": 2,
+   "lr": "1785734772.327929",
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785733689417239"
@@ -63,10 +63,10 @@ window.MENU_REQUESTS = {
    "replies": [
     "• 마늘갈비살, 매콤 갈비살, 생갈비살 19000원 > 20000원으로 변경"
    ],
-   "rc": 2,
-   "lr": "1785733163.641689",
-   "status": "wait",
-   "handler": null,
+   "rc": 3,
+   "lr": "1785734224.464349",
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785733144528599"
   },
   {
