@@ -306,6 +306,9 @@
   .av-mini .ab-sparkle{display:none}
   .rank-av{margin:6px auto 3px; display:flex; justify-content:center}
   .mvp-char{display:flex; justify-content:center; margin:8px 0 4px}
+  /* 전체현황 MVP 카드 — 타이틀·캐릭터는 랭킹 목록(11px/작은아바타)보다 크게. 한눈에 보이는 게 목적 */
+  #mvpCard .mvp-char{margin:12px 0 8px}
+  #mvpCard .r-title{font-size:17px; line-height:1.3; margin-bottom:5px; letter-spacing:-.01em}
   .pt-sw{display:inline-block; width:30px; height:30px; border-radius:50%; border:2px solid #fff; box-shadow:0 0 0 1px rgba(0,0,0,.15)}
   .pt-sw.sq{border-radius:8px}
   .pt-x{font-size:22px; color:#b8bcc4; font-weight:800}
@@ -3274,7 +3277,7 @@ function renderOverview(){
         <div class="mvp-flash"></div><div class="mvp-confetti" id="mvpConfetti"></div>
         <div class="hl-ic">🏆</div>
         <div class="hl-lab">${periodWord} ${NIGHT?'야간 ':''}MVP</div>
-        ${mvp?`<div class="mvp-char">${avatarMini(mvp.emp,78)}</div>`:''}
+        ${mvp?`<div class="mvp-char">${avatarMini(mvp.emp,115)}</div>`:''}
         <div class="hl-big">${mvp?rankNameHTML(mvp.emp,true):'-'}</div>
         ${mvp?`<div class="mvp-proc" onclick="showDoneDetail('emp','${mvp.emp}')"><b>${mvp.total}</b><small>건 처리</small><span class="mvp-proc-hint">🔎 상세 보기</span></div>`:`<div class="ov-delta flat"><span>데이터 없음</span></div>`}
       </div>
