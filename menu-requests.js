@@ -3,10 +3,74 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 312,
- "updatedAt": "2026-08-03 13:45",
+ "version": 313,
+ "updatedAt": "2026-08-03 14:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1785733152.711089",
+   "date": "2026-08-03",
+   "time": "13:59",
+   "store": "가배차 명륜점",
+   "biz": "7341701978",
+   "phone": "01053661715\n-",
+   "pos": "토스포스",
+   "content": "메뉴 전체 등록 부탁드립니다",
+   "special": "키오스크랑 포스 둘다 등롣 부탁드립니다",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785733157.397769",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785733152711089"
+  },
+  {
+   "ts": "1785733144.528599",
+   "date": "2026-08-03",
+   "time": "13:59",
+   "store": "갈풍집",
+   "biz": "3014014266",
+   "phone": "01077011301",
+   "pos": "오케이포스",
+   "content": "오케이포스 / 메뉴 가격 수정부탁드립니다!",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "• 마늘갈비살, 매콤 갈비살, 생갈비살 19000원 > 20000원으로 변경"
+   ],
+   "rc": 2,
+   "lr": "1785733163.641689",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785733144528599"
+  },
+  {
+   "ts": "1785732563.914419",
+   "date": "2026-08-03",
+   "time": "13:49",
+   "store": "찬미당",
+   "biz": "6634900979",
+   "phone": "",
+   "pos": "",
+   "content": "메뉴등록요청드립니다 .",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "반찬가게 인지라 금액으로 메뉴 생성해서 사용하고 있다함 .\n500원 / 1000원 이후 천원단위로 25000원 까지 생성요청  /"
+   ],
+   "rc": 3,
+   "lr": "1785732950.002589",
+   "status": "done",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785732563914419"
+  },
   {
    "ts": "1785731413.655779",
    "date": "2026-08-03",
@@ -20,10 +84,12 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1785731419.680569",
-   "status": "confirm",
+   "replies": [
+    "완료"
+   ],
+   "rc": 3,
+   "lr": "1785732779.545529",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785731413655779"
   },
