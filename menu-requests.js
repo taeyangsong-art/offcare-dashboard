@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 332,
- "updatedAt": "2026-08-04 11:45",
+ "version": 333,
+ "updatedAt": "2026-08-04 12:30",
  "days": 30,
  "items": [
   {
@@ -1748,12 +1748,7 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 1,
-   "att": [
-    {
-     "name": "f_36587ced4ce1.xlsx.exs",
-     "path": "menu-files/1785208884_876419-0.exs"
-    }
-   ],
+   "att": [],
    "replies": [
     "채널톡 올려주시어 요청드렸는데 위에 내용 확인을 미처못했습니다.\n동일 매장 맞습니다"
    ],
