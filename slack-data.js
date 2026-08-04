@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2548,
+  "version": 2549,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -82091,8 +82091,8 @@ window.SLACK_DATA = {
     "2026-08-04": {
       "counts": {
         "as": {
+          "심성현": 37,
           "최민석": 8,
-          "심성현": 36,
           "김동욱": 38,
           "송태양": 19,
           "김규빈": 6,
@@ -82100,11 +82100,11 @@ window.SLACK_DATA = {
           "김기범": 3
         },
         "onboarding": {
+          "심성현": 3,
           "송태양": 7,
           "최민석": 2,
           "배선유": 8,
           "김동욱": 5,
-          "심성현": 2,
           "김기범": 1,
           "김규빈": 1
         },
@@ -82133,6 +82133,17 @@ window.SLACK_DATA = {
       "pending": [],
       "done": [
         {
+          "time": "19:00",
+          "store": "지디에프시(GDFC)",
+          "biz": "5862402207",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "터미널+프론트 재온보딩 도움부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "터프 온보딩 완료"
+        },
+        {
           "time": "18:45",
           "store": "골프존파크 어연스마트",
           "biz": "7824201324",
@@ -82142,6 +82153,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "타대리점 골프존 전용 프로그램 연동 불가 안내 완료 환불접수 고객센터 통하여 재접수 하신다고 합니다."
+        },
+        {
+          "time": "18:45",
+          "store": "라인오브발레비메스",
+          "biz": "1332609524",
+          "cat": "onboarding",
+          "emp": "심성현",
+          "req": "포프(PC) + 유프 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 사용 방법 안내 완료"
         },
         {
           "time": "18:34",
@@ -84252,24 +84274,24 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 166,
+        "online": 168,
         "offline": 26,
         "unknown": 0
       },
-      "updatedAt": "19:00",
+      "updatedAt": "19:11",
       "voc": {
-        "responses": 18,
+        "responses": 19,
         "install": {
           "count": 7,
           "low": 1
         },
         "nps": {
-          "count": 18,
+          "count": 19,
           "low": 6
         },
         "high": {
           "install": 2,
-          "nps": 10
+          "nps": 11
         },
         "npsDist": {
           "0": 1,
@@ -84278,7 +84300,7 @@ window.SLACK_DATA = {
           "5": 1,
           "7": 1,
           "9": 1,
-          "10": 10
+          "10": 11
         },
         "installDist": {
           "1": 1,
@@ -84293,7 +84315,7 @@ window.SLACK_DATA = {
         },
         "byTenure": {
           "12개월": {
-            "total": 4,
+            "total": 5,
             "low": 0
           },
           "3개월": {
@@ -84314,6 +84336,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KSNET": {
+            "total": 2,
+            "low": 0
+          },
           "KPN": {
             "total": 4,
             "low": 0
@@ -84335,10 +84361,6 @@ window.SLACK_DATA = {
             "low": 1
           },
           "NICE": {
-            "total": 1,
-            "low": 0
-          },
-          "KSNET": {
             "total": 1,
             "low": 0
           }
@@ -84576,15 +84598,19 @@ window.SLACK_DATA = {
       },
       "1785836703.707209": {
         "post": "1785836703.707209",
-        "lastSeen": 1785837632.595
+        "lastSeen": 1785838453.493
       },
       "1785836057.973549": {
         "post": "1785836057.973549",
-        "lastSeen": 1785837632.595
+        "lastSeen": 1785838453.493
       },
-      "1785837605.036119": {
-        "post": "1785837605.036119",
-        "lastSeen": 1785837632.595
+      "1785838300.870569": {
+        "post": "1785838300.870569",
+        "lastSeen": 1785838453.493
+      },
+      "1785838081.087929": {
+        "post": "1785838081.087929",
+        "lastSeen": 1785838453.493
       }
     },
     "days": {
@@ -98939,8 +98965,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-04": {
-        "cnt": 85,
-        "sumMin": 1128.5396042585378,
+        "cnt": 86,
+        "sumMin": 1135.8397356112803,
         "over": 2,
         "items": [
           {
@@ -99620,6 +99646,14 @@ window.SLACK_DATA = {
             "min": 8,
             "store": "라인오브발레비메스",
             "biz": "1332609524",
+            "who": "심성현",
+            "cat": "as"
+          },
+          {
+            "hm": "19:00",
+            "min": 7.3,
+            "store": "지디에프시(GDFC)",
+            "biz": "5862402207",
             "who": "심성현",
             "cat": "as"
           }
