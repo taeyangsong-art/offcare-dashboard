@@ -1,0 +1,46 @@
+name: admin-sheet-sync
+
+# 원격 시트의 Monthly 집계를 admin-data.js 로 동기화 (🔐 관리 탭의 월별 3종이 사용)
+# 필요한 Secrets: GDRIVE_CLIENT_ID / GDRIVE_CLIENT_SECRET / GDRIVE_REFRESH_TOKEN
+# (선택) Variables: ADMIN_SHEET_ID — 시트가 바뀌면 코드 수정 없이 여기서 교체
+on:
+  schedule:
+    - cron: '20 22 * * *'   # 매일 22:20 UTC = 한국 07:20 — 출근 전 최신화
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 시트 → admin-data.js
+        env:
+          GDRIVE_CLIENT_ID: ${{ secrets.GDRIVE_CLIENT_ID }}
+          GDRIVE_CLIENT_SECRET: ${{ secrets.GDRIVE_CLIENT_SECRET }}
+          GDRIVE_REFRESH_TOKEN: ${{ secrets.GDRIVE_REFRESH_TOKEN }}
+          ADMIN_SHEET_ID: ${{ vars.ADMIN_SHEET_ID }}
+        run: node scripts/fetch-admin-sheet.js
+
+      - name: 변경 시 커밋 & 푸시
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet admin-data.js; then
+            echo "변경 없음 — 커밋 생략"
+          else
+            git add admin-data.js
+            git commit -m "chore: 관리 시트 집계 동기화 ($(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M'))"
+            for i in 1 2 3 4 5; do
+              git pull --rebase --autostash origin main && git push && { echo "푸시 성공"; exit 0; }
+              echo "푸시 경합 — 재시도 $i..."; sleep 4
+            done
+            echo "푸시 5회 실패"; exit 1
+          fi
