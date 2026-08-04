@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 354,
- "updatedAt": "2026-08-04 22:30",
+ "version": 355,
+ "updatedAt": "2026-08-05 03:30",
  "days": 30,
  "items": [
   {
@@ -9329,29 +9329,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783296163761789"
-  },
-  {
-   "ts": "1783275936.711679",
-   "date": "2026-07-06",
-   "time": "03:25",
-   "store": "엘올리바(L'oliva)",
-   "biz": "7055800751",
-   "phone": "0315040188\n-",
-   "pos": "토스포스",
-   "content": "전체",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/1RS5kx2ZGpu1a1wcfiYx6RkbOnikC96kp/view?usp=drivesdk",
-    "https://drive.google.com/file/d/1ceHlsqtJfWCDtexwFtWsD0M-q-TxwwS6/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783275943.459699",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783275936711679"
   }
  ]
 };
