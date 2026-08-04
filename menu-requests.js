@@ -3,10 +3,32 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 336,
- "updatedAt": "2026-08-04 13:45",
+ "version": 337,
+ "updatedAt": "2026-08-04 14:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1785818803.350689",
+   "date": "2026-08-04",
+   "time": "13:46",
+   "store": "맥쓰(MEXX)세계치킨제기역점",
+   "biz": "3464601387",
+   "phone": "01025693743",
+   "pos": "",
+   "content": "메뉴 수정 및 이미지 적용",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "이벤트 맥주,생맥주,소주 만들기"
+   ],
+   "rc": 4,
+   "lr": "1785818856.066169",
+   "status": "done",
+   "handler": "김동욱",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785818803350689"
+  },
   {
    "ts": "1785818359.745789",
    "date": "2026-08-04",
@@ -23,10 +45,10 @@ window.MENU_REQUESTS = {
    "replies": [
     "• 한치 15,000원\n• 야채곱창 15,000원\n• 알곱창 16,000원\n• 소곱창 전골 29,000원"
    ],
-   "rc": 2,
-   "lr": "1785818379.907019",
-   "status": "wait",
-   "handler": null,
+   "rc": 12,
+   "lr": "1785819589.840759",
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785818359745789"
   },
   {
