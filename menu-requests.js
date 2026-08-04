@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 353,
- "updatedAt": "2026-08-04 21:00",
+ "version": 354,
+ "updatedAt": "2026-08-04 22:30",
  "days": 30,
  "items": [
   {
@@ -9352,66 +9352,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783275936711679"
-  },
-  {
-   "ts": "1783257943.949429",
-   "date": "2026-07-05",
-   "time": "22:25",
-   "store": "은성한정식",
-   "biz": "5298703678",
-   "phone": "01025147226\n-",
-   "pos": "퍼스트포스",
-   "content": "<추가메뉴> 맨 아랫줄 누룽지탕 모두 된장찌개 아래줄로 이동해주세요 / 김치, 반찬 1벌 등은 아래로 한칸씩 이동 / 누룽지탕 (1인)추가 -> (1인)추가를 아랫쪽 줄로 정렬 안될까요~??",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783257949.124429",
-   "status": "done",
-   "handler": "김동욱",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783257943949429"
-  },
-  {
-   "ts": "1783257750.955389",
-   "date": "2026-07-05",
-   "time": "22:22",
-   "store": "은성한정식",
-   "biz": "5298703678",
-   "phone": "01025147226\n-",
-   "pos": "퍼스트포스",
-   "content": "<서비스> 곶감말이(서비스) -> 오른쪽 맨 윗칸으로 이동 / (누룽지탕)은 전체적으로 아래로 한칸씩 내리기",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783257781.647419",
-   "status": "done",
-   "handler": "김동욱",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783257750955389"
-  },
-  {
-   "ts": "1783257580.514529",
-   "date": "2026-07-05",
-   "time": "22:19",
-   "store": "은성한정식",
-   "biz": "5298703678",
-   "phone": "01025147226\n-",
-   "pos": "퍼스트포스",
-   "content": "<정식> 채식정식 금액수정 40,000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783257587.816309",
-   "status": "done",
-   "handler": "김동욱",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783257580514529"
   }
  ]
 };
