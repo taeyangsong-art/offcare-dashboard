@@ -1999,19 +1999,16 @@ function renderNav(){
   }).join("");
 }
 const VOC_MONTHLY_PW='3395';   // VOC Monthly 접속 비밀번호
+// 들어올 때마다 확인한다(세션 기억 없음). 자리를 비운 사이 탭만 눌러 들어오는 걸 막기 위함
+function askPw(label, pw){
+  const v=prompt(`🔒 ${label} 접속 비밀번호를 입력하세요`);
+  if(v===null) return false;                                 // 취소 → 이동 안 함
+  if(v!==pw){ alert('비밀번호가 틀렸습니다.'); return false; }
+  return true;
+}
 function selectCat(k){
-  if(k==='voc-monthly' && sessionStorage.getItem('voc_monthly_ok')!=='1'){   // 세션당 1회 비밀번호 확인
-    const pw=prompt('🔒 VOC Monthly 접속 비밀번호를 입력하세요');
-    if(pw===null) return;                                    // 취소 → 이동 안 함
-    if(pw!==VOC_MONTHLY_PW){ alert('비밀번호가 틀렸습니다.'); return; }
-    sessionStorage.setItem('voc_monthly_ok','1');
-  }
-  if(k==='admin' && sessionStorage.getItem('admin_ok')!=='1'){        // 세션당 1회 — 파트리더 전용
-    const pw=prompt('🔒 관리(파트리더) 접속 비밀번호를 입력하세요');
-    if(pw===null) return;
-    if(pw!==ADMIN_PW){ alert('비밀번호가 틀렸습니다.'); return; }
-    sessionStorage.setItem('admin_ok','1');
-  }
+  if(k==='voc-monthly' && !askPw('VOC Monthly', VOC_MONTHLY_PW)) return;
+  if(k==='admin'       && !askPw('관리(파트리더)', ADMIN_PW)) return;
   if(k==='overview'){ resetOverviewPeriod(); celebrateMvp=true; ovShift='all'; } if(k==='voc') resetVocPeriod(); if(k==='game-fish') fishRoom=null; if(k==='teamgoal') teamGoalRef=today(); if(k==='menureg') loadData("menu-requests.js", function(){ if(activeCat==='menureg') renderMain(); }); activeCat=k; renderNav(); renderMain(); window.scrollTo(0,0); }
 
 /* ================= Main dispatch ================= */
@@ -2302,7 +2299,7 @@ function renderMain(){
  * 오염이 잦아 쓰지 않기로 했다. 상세(done·시각)는 2026-07-01 부터 쌓이므로 월별 이력은
  * 그 달부터 시작하고 달이 지날수록 자동으로 늘어난다.
  */
-const ADMIN_PW = '9111';
+const ADMIN_PW = '0831';
 let adminTab = 'hourly';
 let adminRange = '30';          // '7' | '30' | 'all' — 라이브 탭의 조회 기간
 let adminMonth = '';            // 전월 비교에서 보는 '이번 달' (YYYY-MM), 빈값이면 최신
