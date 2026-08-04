@@ -3,10 +3,32 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 335,
- "updatedAt": "2026-08-04 13:15",
+ "version": 336,
+ "updatedAt": "2026-08-04 13:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1785818359.745789",
+   "date": "2026-08-04",
+   "time": "13:39",
+   "store": "더우개곱창(덕풍점)",
+   "biz": "2050338984",
+   "phone": "",
+   "pos": "",
+   "content": "메뉴 수정요청드립니다",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "• 한치 15,000원\n• 야채곱창 15,000원\n• 알곱창 16,000원\n• 소곱창 전골 29,000원"
+   ],
+   "rc": 2,
+   "lr": "1785818379.907019",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785818359745789"
+  },
   {
    "ts": "1785815880.024909",
    "date": "2026-08-04",
