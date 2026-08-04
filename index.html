@@ -2033,7 +2033,13 @@ function askPw(label, pw){
     document.getElementById('pwErr').textContent='';
     const el=document.getElementById('pwInput'); el.value='';
     document.getElementById('pwOverlay').classList.add('show');
-    setTimeout(()=>el.focus(), 60);            // 트랜지션 중 focus 는 먹지 않는다
+    // 여는 버튼이 포커스를 물고 있고 오버레이는 .25s 페이드 중이라 focus() 가 한 번에 안 먹을 때가 있다.
+    // 실제로 들어갈 때까지 몇 프레임 재시도한다(사람이 첫 글자를 치기 전에 끝난다).
+    if(document.activeElement && document.activeElement!==el) document.activeElement.blur();
+    (function grab(n){
+      el.focus();
+      if(document.activeElement!==el && n>0) requestAnimationFrame(()=>grab(n-1));
+    })(30);
   });
 }
 function pwClose(ok){
