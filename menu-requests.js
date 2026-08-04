@@ -3,10 +3,50 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 329,
- "updatedAt": "2026-08-03 23:15",
+ "version": 330,
+ "updatedAt": "2026-08-04 11:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1785808114.589989",
+   "date": "2026-08-04",
+   "time": "10:48",
+   "store": "미소육화감자탕.돌판생삼겹살",
+   "biz": "3281900351",
+   "phone": "01040251204",
+   "pos": "퍼스트포스",
+   "content": "메뉴 추가 요청 드립니다\n• 메뉴 하단측에 포장용기 1,000원,  포장용기 500원 메뉴등록 요청드립니다",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 6,
+   "lr": "1785808462.251309",
+   "status": "done",
+   "handler": "심성현",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785808114589989"
+  },
+  {
+   "ts": "1785807944.693239",
+   "date": "2026-08-04",
+   "time": "10:45",
+   "store": "도우를 아십니까 의정부역점",
+   "biz": "4770403597",
+   "phone": "01031614610\n-",
+   "pos": "토스포스",
+   "content": "추가/ 메뉴추가가 있어요\n추가변경\n토핑추가\n써비스 스파게티 0원\n써비스음료500m 0원\n써비스음료1.25 0원",
+   "special": "주무시 같이 주문할 수 있도록 만들어주세요.",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785807950.061809",
+   "status": "done",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785807944693239"
+  },
   {
    "ts": "1785765346.504249",
    "date": "2026-08-03",
