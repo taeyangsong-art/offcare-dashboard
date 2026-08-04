@@ -4613,7 +4613,7 @@ function praiseCardsHTML(praises){
         <span class="praise-topr">${sc?`<span class="praise-score">${sc}</span>`:''}<button class="praise-del" title="삭제" onclick="deleteVocPraise('${key}')">×</button></span></div>
       <div class="praise-quote">“${escapeHtml((p.text||'-').slice(0,140))}”</div>
       <div class="praise-foot">
-        <span class="praise-mid">${p.date||''} ${p.time||''}${p.storeId?' · ID'+p.storeId:''}</span>
+        <span class="praise-mid">${p.date||''} ${p.time||''}${p.storeId?' · ID '+p.storeId:''}</span>
         <div class="praise-assign">
           <input class="praise-sel" list="empPraiseList" value="${escapeHtml(empVal)}" placeholder="👤 이름 (여러 명은 쉼표)" title="여러 직원을 칭찬한 건이면 쉼표로 구분 — 예: 박진호,최치원 (각각 1건씩 집계)" onchange="saveVocPraise('${key}',this.value.trim())">
           <input class="praise-sel praise-team" list="teamPraiseList" value="${escapeHtml(teamVal)}" placeholder="🏷️ 팀" onchange="saveVocPraiseTeam('${key}',this.value.trim())">
@@ -4651,8 +4651,21 @@ function saveVocPraise(key, emp){
   if(!VOCPRAISE[key].deleted && Object.keys(VOCPRAISE[key]).length===0) delete VOCPRAISE[key];
   save(LS_VOCPRAISE, VOCPRAISE); pushPatch({vocPraise:{[key]:VOCPRAISE[key]||null}}); rerenderVoc();
 }
+// 이미 쓰이는 팀명과 대소문자만 다르면 기존 표기로 맞춘다.
+// (oc 를 따로 입력해 OC 와 별개 항목으로 목록에 뜨던 문제)
+function canonTeam(team){
+  const t=(team||'').trim(); if(!t) return '';
+  const hit=allTeamNames().find(x=>x.toLowerCase()===t.toLowerCase());
+  return hit||t;
+}
+function allTeamNames(){
+  const s=new Set();
+  for(const k in VOCPRAISE){ const v=VOCPRAISE[k]; if(v&&v.team) s.add(v.team); }
+  return [...s];
+}
 function saveVocPraiseTeam(key, team){
   if(!VOCPRAISE[key]) VOCPRAISE[key]={};
+  team=canonTeam(team);
   if(team==='') delete VOCPRAISE[key].team; else VOCPRAISE[key].team=team;
   if(!VOCPRAISE[key].deleted && Object.keys(VOCPRAISE[key]).length===0) delete VOCPRAISE[key];
   save(LS_VOCPRAISE, VOCPRAISE); pushPatch({vocPraise:{[key]:VOCPRAISE[key]||null}}); rerenderVoc();
