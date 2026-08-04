@@ -2320,7 +2320,25 @@ function setAdminMonth(v){ adminMonth=v; renderAdmin(); }
  * 중첩 객체로 두면 타 브라우저 값과 합쳐질 때 통째로 덮인다. 해제는 ''(묘비). */
 const LS_DRI = "opcare_dri_v1";
 let DRI = load(LS_DRI, {});
-function driGet(cat, role){ const v=DRI[cat+'|'+role]; return (typeof v==='string'?v:'').trim(); }
+// 온보딩·AS 는 전담 DRI 가 없어 제외하고, VOC 를 넣는다
+const DRI_CATS = [
+  ...WORK_CATS.filter(c=>c.key!=='onboarding' && c.key!=='as'),
+  {key:'voc', name:'VOC', icon:'💬', color:'#ff2d55'},
+];
+const DRI_ROLES = [{k:'main', n:'정'}, {k:'sub1', n:'부1'}, {k:'sub2', n:'부2'}];
+function driGet(cat, role){
+  let v=DRI[cat+'|'+role];
+  if((v===undefined||v==='') && role==='sub1') v=DRI[cat+'|sub'];   // 부가 1명이던 시절의 키 호환
+  return (typeof v==='string'?v:'').trim();
+}
+// 카테고리별 담당자 처리 건수. VOC 는 done[] 에 없고 완료일 기준으로 따로 집계된다
+function driCounts(catKey, dates){
+  if(catKey==='voc') return vocDoneInRange(dates).byEmp || {};
+  const by={};
+  for(const d of dates) for(const x of ((slackDay(d)||{}).done||[]))
+    if(x.cat===catKey && x.emp) by[x.emp]=(by[x.emp]||0)+1;
+  return by;
+}
 function driSet(cat, role, name){
   DRI[cat+'|'+role] = name||'';
   save(LS_DRI, DRI);
@@ -2450,38 +2468,45 @@ function hourStackChart(items){
 
 /* ── 탭 2. DRI별 정·부 개인별 처리추이 ── */
 function admDri(){
-  const dates=adminDates(), items=adminItems(dates);
-  const editor=`<div class="dri-grid">${WORK_CATS.map(c=>{
+  const dates=adminDates();
+  const editor=`<div class="dri-grid">${DRI_CATS.map(c=>{
     const opt=(sel)=>`<option value="">—</option>`+EMPLOYEES.map(e=>`<option value="${e}"${e===sel?' selected':''}>${e}</option>`).join('');
     return `<div class="dri-cell"><div class="dc-h">${c.icon} ${c.name}</div>
-      <label>정 <select onchange="driSet('${c.key}','main',this.value)">${opt(driGet(c.key,'main'))}</select></label>
-      <label>부 <select onchange="driSet('${c.key}','sub',this.value)">${opt(driGet(c.key,'sub'))}</select></label></div>`;
+      ${DRI_ROLES.map(r=>`<label>${r.n} <select onchange="driSet('${c.key}','${r.k}',this.value)">${opt(driGet(c.key,r.k))}</select></label>`).join('')}</div>`;
   }).join('')}</div>`;
 
-  const mapped=WORK_CATS.filter(c=>driGet(c.key,'main')||driGet(c.key,'sub'));
+  const mapped=DRI_CATS.filter(c=>DRI_ROLES.some(r=>driGet(c.key,r.k)));
   if(!mapped.length){
-    return `<div class="adm-note">업무 카테고리별 <b>정담당·부담당</b>을 지정하면 아래에 정·부 처리량 비교가 그려집니다.
-      지정 내용은 <b>팀 전체에 공유</b>되고 담당이 바뀌면 여기서 바로 바꾸면 됩니다.</div>${editor}
+    return `<div class="adm-note">카테고리별 <b>정담당 1명 · 부담당 2명</b>을 지정하면 아래에 처리량 비교가 그려집니다.
+      지정 내용은 <b>팀 전체에 공유</b>되고 담당이 바뀌면 여기서 바로 바꾸면 됩니다.
+      <b>온보딩·AS</b>는 전담 DRI 가 없어 제외했습니다.</div>${editor}
       <div class="empty-note">아직 지정된 DRI 가 없습니다. 위에서 카테고리별 정·부를 선택해 주세요.</div>`;
   }
   const rows=mapped.map(c=>{
-    const mn=driGet(c.key,'main'), sb=driGet(c.key,'sub');
-    let m=0,s=0,o=0;
-    for(const x of items){ if(x.cat!==c.key) continue; if(mn&&x.emp===mn) m++; else if(sb&&x.emp===sb) s++; else o++; }
-    return {c, mn, sb, m, s, o, t:m+s+o};
+    const by=driCounts(c.key, dates);
+    const total=Object.values(by).reduce((a,b)=>a+b,0);
+    // 같은 사람이 정·부에 중복 지정돼도 한 번만 센다 (정 > 부1 > 부2 우선)
+    const used=new Set();
+    const take=n=>{ if(!n||used.has(n)) return 0; used.add(n); return by[n]||0; };
+    const names=DRI_ROLES.map(r=>driGet(c.key,r.k));
+    const v=names.map(take);
+    return {c, names, v, o:Math.max(0,total-v.reduce((a,b)=>a+b,0)), t:total};
   });
+  const nameCell=n=>n?escapeHtml(n):'<span class="zero">미지정</span>';
   const table=`<div style="overflow-x:auto"><table class="matrix">
-    <thead><tr><th>카테고리</th><th>정담당</th><th class="num">정 처리</th><th>부담당</th><th class="num">부 처리</th><th class="num">그 외</th><th class="num">합계</th><th class="num">정+부 비중</th></tr></thead>
+    <thead><tr><th>카테고리</th>
+      ${DRI_ROLES.map(r=>`<th>${r.n}담당</th><th class="num">${r.n} 처리</th>`).join('')}
+      <th class="num">그 외</th><th class="num">합계</th><th class="num">정+부 비중</th></tr></thead>
     <tbody>${rows.map(r=>`<tr>
       <td>${r.c.icon} ${r.c.name}</td>
-      <td>${r.mn?escapeHtml(r.mn):'<span class="zero">미지정</span>'}</td><td class="num">${r.m}</td>
-      <td>${r.sb?escapeHtml(r.sb):'<span class="zero">미지정</span>'}</td><td class="num">${r.s}</td>
+      ${r.names.map((n,i)=>`<td>${nameCell(n)}</td><td class="num">${r.v[i]}</td>`).join('')}
       <td class="num">${r.o}</td><td class="num tot">${r.t}</td>
-      <td class="num" style="font-weight:700">${r.t?Math.round((r.m+r.s)/r.t*100):0}%</td></tr>`).join('')}</tbody>
+      <td class="num" style="font-weight:700">${r.t?Math.round(r.v.reduce((a,b)=>a+b,0)/r.t*100):0}%</td></tr>`).join('')}</tbody>
   </table></div>`;
-  // 정·부·그 외 3계열 묶음 막대
+  // 정·부1·부2·그 외 4계열 묶음 막대
   const chart=(function(){
-    const g=[{n:'정담당',c:'#0071e3',f:r=>r.m},{n:'부담당',c:'#34c759',f:r=>r.s},{n:'그 외',c:'#c7c7cc',f:r=>r.o}];
+    const g=[{n:'정담당',c:'#0071e3',f:r=>r.v[0]},{n:'부담당1',c:'#34c759',f:r=>r.v[1]},
+             {n:'부담당2',c:'#5e5ce6',f:r=>r.v[2]},{n:'그 외',c:'#c7c7cc',f:r=>r.o}];
     const barW=16, barGap=4, groupGap=30, padL=24, padR=18, topPad=22, botPad=42;
     const groupW=g.length*barW+(g.length-1)*barGap;
     const W=Math.max(420, padL+padR+rows.length*groupW+(rows.length-1)*groupGap), H=250, base=H-botPad, plotH=H-topPad-botPad;
@@ -2502,7 +2527,8 @@ function admDri(){
       <div class="legend">${g.map(x=>`<span><span class="swatch" style="background:${x.c}"></span>${x.n}</span>`).join('')}</div>`;
   })();
   return `<div class="adm-note">기간 <b>${dates[0]} ~ ${dates[dates.length-1]}</b> · 지정 내용은 팀 전체에 공유됩니다.
-    <b>그 외</b>는 정·부가 아닌 담당자가 처리한 건으로, 이 값이 크면 DRI 가 실제와 다르다는 뜻입니다.</div>
+    <b>그 외</b>는 정·부가 아닌 담당자가 처리한 건으로, 이 값이 크면 DRI 가 실제와 다르다는 뜻입니다.
+    <b>온보딩·AS</b>는 전담 DRI 가 없어 제외했고, <b>VOC</b>는 확인 담당자·완료일 기준으로 셉니다.</div>
     ${editor}
     <div class="card"><div class="card-head"><h3>카테고리별 정·부 처리량</h3><span class="hint">${adminRange==='all'?'전체 기간':'최근 '+adminRange+'일'}</span></div>${table}</div>
     <div class="card"><div class="card-head"><h3>정 · 부 · 그 외 비교</h3></div>${chart}</div>`;
