@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 351,
- "updatedAt": "2026-08-04 18:45",
+ "version": 352,
+ "updatedAt": "2026-08-04 20:45",
  "days": 30,
  "items": [
   {
@@ -44,8 +44,8 @@ window.MENU_REQUESTS = {
     "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785834256497659\n------\n상품 터치 시, 옵션에서\n\n1. 블렌드 선택 _ RR1 / RR2 / 디카페인\n2. 온도 _ ICE / HOT",
     "+\n아포가토는 별도로 옵션\n1. 맛 _ 바닐라 OR 녹차\n2. 원두선택 _ RR1 OR RR2 OR 디카페인\n3. 온도 _ only ice\n---\n아래 이미지는 상품별 블렌드/온도 옵션입니다"
    ],
-   "rc": 3,
-   "lr": "1785836252.765199",
+   "rc": 4,
+   "lr": "1785843616.390439",
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785836057973549"
