@@ -2334,6 +2334,11 @@ function driSet(cat, role, name){
 function admMonths(){
   return [...new Set(allSlackDates().filter(d=>((slackDay(d)||{}).done||[]).length>0).map(d=>d.slice(0,7)))].sort();
 }
+// 평일(토·일 아니고 공휴일도 아닌 날) 여부 — 근무일 수·1일 평균의 기준
+function admIsBizDay(ds){
+  const dt=parseYmd(ds), w=dt.getDay();
+  return w!==0 && w!==6 && !HOLIDAYS[ds];
+}
 // 그 달에 '평일이면서 공휴일이 아닌' 날 수. 진행 중인 달은 마지막 데이터 날짜까지만 센다(경과 평일)
 function admBizDays(m, upto){
   const [y,mo]=m.split('-').map(Number), last=new Date(y,mo,0).getDate();
@@ -2351,20 +2356,26 @@ function admMonthly(){
   const all=allSlackDates().filter(d=>((slackDay(d)||{}).done||[]).length>0);
   return admMonths().map(m=>{
     const ds=all.filter(d=>d.startsWith(m));
+    const bizDs=ds.filter(admIsBizDay);
     const by={}; let total=0;
     for(const c of WORK_CATS){ const n=sumRange(c.key, ds); by[c.key]=n; total+=n; }
+    // 평일에 처리된 건수 — 총 건수와의 차이가 곧 주말·공휴일(당직) 처리분
+    const bizCnt=WORK_CATS.reduce((a,c)=>a+sumRange(c.key, bizDs), 0);
     // 인입유형 미상은 온라인으로 합산 — 전체현황과 같은 팀 정책
     const ik=ds.reduce((a,d)=>{ const k=(slackDay(d)||{}).intake||{}; a.online+=(k.online||0)+(k.unknown||0); a.offline+=k.offline||0; return a; },{online:0,offline:0});
     const emps=new Set();
     ds.forEach(d=>{ for(const o of Object.values((slackDay(d)||{}).counts||{})) Object.keys(o).forEach(e=>emps.add(e)); });
-    return {m, days:ds.length, biz:admBizDays(m, ds[ds.length-1]), by, total, online:ik.online, offline:ik.offline, emps:emps.size};
+    return {m, days:ds.length, biz:admBizDays(m, ds[ds.length-1]), bizCnt, by, total, online:ik.online, offline:ik.offline, emps:emps.size};
   });
 }
+// 1일 평균의 분모는 '평일 수'(토·일·공휴일 제외)로 통일한다 — 팀 기준.
+// 주말 당직 처리분도 분자에는 그대로 들어간다(총 건수 ÷ 평일 수).
+function admPerDay(n, r){ return +((n||0)/(r.biz||1)).toFixed(1); }
 function admMonthNote(rows){
   const first=rows[0], last=rows[rows.length-1];
   return `<div class="adm-note">출처: <b>대시보드 집계 데이터</b>(전체현황과 동일한 소스) · 이력 <b>${first.m.replace('-','.')} ~ ${last.m.replace('-','.')}</b>
     · 상세 데이터가 <b>2026-07-01</b>부터 쌓여서 그 이전 달은 없습니다. 달이 지날수록 자동으로 늘어납니다.
-    ${last.days<20?`<br>⚠️ <b>${last.m.replace('-','.')}</b> 는 진행 중(${last.days}일)이라 총 건수는 아직 작습니다 — <b>1일 평균</b>으로 보세요.`:''}</div>`;
+    ${last.days<20?`<br>⚠️ <b>${last.m.replace('-','.')}</b> 는 진행 중(평일 ${last.biz}일 경과)이라 총 건수는 아직 작습니다 — <b>1일 평균</b>으로 보세요.`:''}</div>`;
 }
 
 /* ── 탭 1. 담당자 개인별 시간대별 처리추이 ── */
@@ -2519,7 +2530,9 @@ function admPrevMonth(){
   };
   const block = (night) => {
     const a=agg(cur,night), b=agg(prev,night);
-    const ad=a.days||1, bd=(b&&b.days)||1;
+    // 분모는 관리 페이지 공통 기준인 '평일 수'(토·일·공휴일 제외, 진행 중인 달은 경과분)
+    const lastOf=mm=>{ const l=withData.filter(d=>d.startsWith(mm)); return l[l.length-1]; };
+    const ad=admBizDays(cur, lastOf(cur))||1, bd=(prev?admBizDays(prev, lastOf(prev)):0)||1;
     // 진행 중인 달은 날짜 수가 달라 '건수' 증감이 무의미하다(8월 4일치 vs 7월 30일치 → 전부 ▼94%).
     // 증감은 반드시 1일 평균끼리 비교한다.
     const dl=(x,y)=>{ if(b===null) return '<span class="zero">—</span>';
@@ -2534,7 +2547,7 @@ function admPrevMonth(){
     const rowsH=CHART_CATS.map(c=>line(`${c.icon} ${c.name}`, a.by[c.key]||0, b?(b.by[c.key]||0):0)).join('');
     return `<div class="card"><div class="card-head">
         <h3>${night?'🌙 야간':'☀️ 주간'} — ${cur.replace('-','.')} vs ${prev?prev.replace('-','.'):'전월 없음'}</h3>
-        <span class="hint">${night?NIGHT_FROM+' 이후':NIGHT_FROM+' 이전'} 처리 건 · 이번달 ${a.days}일 / 전월 ${b?b.days+'일':'—'}</span></div>
+        <span class="hint">${night?NIGHT_FROM+' 이후':NIGHT_FROM+' 이전'} 처리 건 · 평일 ${ad}일 / 전월 평일 ${prev?bd+'일':'—'}</span></div>
       <div style="overflow-x:auto"><table class="matrix">
         <thead><tr><th>유형</th>
           <th class="num">${cur.replace('-','.')}<br><span style="font-weight:600;color:var(--muted)">건수</span></th>
@@ -2552,7 +2565,8 @@ function admPrevMonth(){
     ? `<div class="adm-note">⚠️ <b>${cur.replace('-','.')}</b> 앞에 비교할 달이 없습니다.
        대시보드 처리 상세는 <b>7/1부터</b> 쌓여서 그 이전 달은 주/야 구분이 불가능합니다. 월별 총량은 시트 기반 탭을 보세요.</div>`
     : (isPartial ? `<div class="adm-note">⚠️ <b>${cur.replace('-','.')}</b> 은 아직 <b>${curDays}일</b>치입니다.
-       건수를 그대로 비교하면 날짜 수 차이 때문에 전부 급감으로 보이므로, 증감은 <b>1일 평균끼리</b> 계산했습니다.</div>` : '');
+       건수를 그대로 비교하면 날짜 수 차이 때문에 전부 급감으로 보이므로, 증감은 <b>1일 평균끼리</b> 계산했습니다.
+       분모는 <b>평일 수</b>(토·일·공휴일 제외)입니다.</div>` : '');
   return `<div class="adm-note">기준 시각 <b>${NIGHT_FROM}</b> — 그 이후 처리 건을 야간으로 봅니다. 조회할 달을 고르세요.</div>
     ${pick}${warn}${block(false)}${block(true)}`;
 }
@@ -2597,16 +2611,16 @@ function monthTable(labels, series, rows){
 }
 function admOnbAs(){
   const R=admMonthly(); if(!R.length) return `<div class="empty-note">집계 데이터가 없습니다.</div>`;
-  const L=R.map(r=>r.m.replace('-','.')), per=(k,r)=>(r.by[k]/(r.days||1)).toFixed(1);
+  const L=R.map(r=>r.m.replace('-','.'));
   const s=[{n:'온보딩',c:'#0071e3',v:R.map(r=>r.by.onboarding||0)},{n:'A/S',c:'#34c759',v:R.map(r=>r.by.as||0)}];
   return admMonthNote(R)
     + `<div class="card"><div class="card-head"><h3>온보딩 · A/S 월 건수</h3><span class="hint">막대 위 숫자 = 월 총 건수</span></div>${monthBarChart(L,s)}</div>`
-    + `<div class="card"><div class="card-head"><h3>1일 평균 비교</h3><span class="hint">월 건수 ÷ 그 달 처리일 수 — 진행 중인 달도 공정하게 비교됩니다</span></div>
-        ${monthBarChart(L,[{n:'온보딩',c:'#0071e3',v:R.map(r=>+per('onboarding',r))},{n:'A/S',c:'#34c759',v:R.map(r=>+per('as',r))}], v=>Number(v).toFixed(1))}</div>`
+    + `<div class="card"><div class="card-head"><h3>1일 평균 비교</h3><span class="hint">월 건수 ÷ 평일 수(토·일·공휴일 제외) — 진행 중인 달도 공정하게 비교됩니다</span></div>
+        ${monthBarChart(L,[{n:'온보딩',c:'#0071e3',v:R.map(r=>admPerDay(r.by.onboarding,r))},{n:'A/S',c:'#34c759',v:R.map(r=>admPerDay(r.by.as,r))}], v=>Number(v).toFixed(1))}</div>`
     + `<div class="card"><div class="card-head"><h3>월별 수치</h3></div>
-        ${monthTable(L, s, [{n:'처리일 수', v:R.map(r=>r.days), tot:R.reduce((a,r)=>a+r.days,0)},
-                            {n:'온보딩 1일 평균', v:R.map(r=>per('onboarding',r))},
-                            {n:'A/S 1일 평균',   v:R.map(r=>per('as',r))}])}</div>`;
+        ${monthTable(L, s, [{n:'평일 수', v:R.map(r=>r.biz), tot:R.reduce((a,r)=>a+r.biz,0)},
+                            {n:'온보딩 1일 평균', v:R.map(r=>admPerDay(r.by.onboarding,r))},
+                            {n:'A/S 1일 평균',   v:R.map(r=>admPerDay(r.by.as,r))}])}</div>`;
 }
 function admChannel(){
   const R=admMonthly(); if(!R.length) return `<div class="empty-note">집계 데이터가 없습니다.</div>`;
@@ -2616,37 +2630,41 @@ function admChannel(){
   return admMonthNote(R)
     + `<div class="adm-note">인입유형이 <b>미기재</b>인 건은 온라인으로 합산합니다 — 전체현황과 같은 팀 정책입니다.</div>`
     + `<div class="card"><div class="card-head"><h3>온라인 · 오프라인 월 건수</h3></div>${monthBarChart(L,s)}</div>`
-    + `<div class="card"><div class="card-head"><h3>1일 평균 비교</h3><span class="hint">월 건수 ÷ 그 달 처리일 수</span></div>
-        ${monthBarChart(L,[{n:'온라인',c:'#0071e3',v:R.map(r=>+(r.online/(r.days||1)).toFixed(1))},
-                           {n:'오프라인',c:'#ff9500',v:R.map(r=>+(r.offline/(r.days||1)).toFixed(1))}], v=>Number(v).toFixed(1))}</div>`
+    + `<div class="card"><div class="card-head"><h3>1일 평균 비교</h3><span class="hint">월 건수 ÷ 평일 수(토·일·공휴일 제외)</span></div>
+        ${monthBarChart(L,[{n:'온라인',c:'#0071e3',v:R.map(r=>admPerDay(r.online,r))},
+                           {n:'오프라인',c:'#ff9500',v:R.map(r=>admPerDay(r.offline,r))}], v=>Number(v).toFixed(1))}</div>`
     + `<div class="card"><div class="card-head"><h3>월별 수치</h3></div>
-        ${monthTable(L, s, [{n:'처리일 수', v:R.map(r=>r.days), tot:R.reduce((a,r)=>a+r.days,0)},
+        ${monthTable(L, s, [{n:'평일 수', v:R.map(r=>r.biz), tot:R.reduce((a,r)=>a+r.biz,0)},
                             {n:'온라인 비중', v:share.map(p=>p+'%')}])}</div>`;
 }
 function admWorkday(){
   const R=admMonthly(); if(!R.length) return `<div class="empty-note">집계 데이터가 없습니다.</div>`;
   const L=R.map(r=>r.m.replace('-','.'));
-  const perDay=R.map(r=>+(r.total/(r.days||1)).toFixed(1));
-  const perPer=R.map(r=>+(r.total/(r.days||1)/(r.emps||1)).toFixed(1));
+  const perDay=R.map(r=>admPerDay(r.total,r));
+  const perPer=R.map(r=>+(r.total/(r.biz||1)/(r.emps||1)).toFixed(1));
+  const weekend=R.map(r=>r.total-r.bizCnt);   // 주말·공휴일에 처리한 건 (분자에는 포함, 분모에는 미포함)
   const table=`<div style="overflow-x:auto"><table class="matrix">
-    <thead><tr><th>월</th><th class="num">처리일 수</th><th class="num">평일 수</th><th class="num">총 건수</th><th class="num">1일 평균</th><th class="num">담당자</th><th class="num tot">1인 1일 평균</th></tr></thead>
+    <thead><tr><th>월</th><th class="num">근무일 수<br><span style="font-weight:600;color:var(--muted)">평일</span></th>
+      <th class="num">총 건수</th><th class="num">1일 평균</th><th class="num">담당자</th><th class="num tot">1인 1일 평균</th>
+      <th class="num">주말·공휴일<br><span style="font-weight:600;color:var(--muted)">처리분</span></th></tr></thead>
     <tbody>${R.map((r,i)=>`<tr><td>${r.m.replace('-','.')}</td>
-      <td class="num">${r.days}</td><td class="num" style="color:var(--gray2)">${r.biz}</td>
+      <td class="num" style="font-weight:800">${r.biz}</td>
       <td class="num">${r.total.toLocaleString()}</td><td class="num" style="font-weight:800">${perDay[i]}</td>
-      <td class="num" style="color:var(--gray2)">${r.emps}</td><td class="num tot">${perPer[i]}</td></tr>`).join('')}</tbody>
+      <td class="num" style="color:var(--gray2)">${r.emps}</td><td class="num tot">${perPer[i]}</td>
+      <td class="num" style="color:var(--gray2)">${weekend[i].toLocaleString()}</td></tr>`).join('')}</tbody>
   </table></div>`;
-  // 막대 = 처리일 수, 선 = 1일 평균 (참고 이미지의 '근무일 수, 1일 평균' 형태)
+  // 막대 = 근무일 수(평일), 선 = 1일 평균 — 참고 이미지의 '근무일 수, 1일 평균' 형태
   const chart=(function(){
     const colW=64, gap=54, padL=40, padR=26, topPad=30, botPad=38;
     const W=Math.max(420, padL+padR+R.length*colW+(R.length-1)*gap), H=260, base=H-botPad, plotH=H-topPad-botPad;
-    const mxD=Math.max(1,...R.map(r=>r.days)), mxP=Math.max(1,...perDay);
+    const mxD=Math.max(1,...R.map(r=>r.biz)), mxP=Math.max(1,...perDay);
     const cx=i=>padL+i*(colW+gap)+colW/2;
     const bars=R.map((r,i)=>{
-      const x=padL+i*(colW+gap), h=r.days/mxD*plotH*0.6, y=base-h;
+      const x=padL+i*(colW+gap), h=r.biz/mxD*plotH*0.6, y=base-h;
       // 막대가 짧으면 안쪽 흰 글씨가 축 밖으로 삐져나간다 — 그럴 땐 막대 위에 파란 글씨로
       const inside=h>=26;
-      return `<rect x="${x}" y="${y.toFixed(1)}" width="${colW}" height="${h.toFixed(1)}" rx="3" fill="#0071e3"><title>${r.m} 처리일 ${r.days}일</title></rect>
-        <text x="${x+colW/2}" y="${(inside?y+18:y-7).toFixed(1)}" text-anchor="middle" font-size="12" font-weight="800" fill="${inside?'#fff':'#0071e3'}">${r.days}</text>
+      return `<rect x="${x}" y="${y.toFixed(1)}" width="${colW}" height="${h.toFixed(1)}" rx="3" fill="#0071e3"><title>${r.m} 근무일(평일) ${r.biz}일</title></rect>
+        <text x="${x+colW/2}" y="${(inside?y+18:y-7).toFixed(1)}" text-anchor="middle" font-size="12" font-weight="800" fill="${inside?'#fff':'#0071e3'}">${r.biz}</text>
         <text x="${x+colW/2}" y="${base+20}" text-anchor="middle" font-size="12.5" font-weight="700" style="fill:var(--ink)">${r.m.replace('-','.')}</text>`;
     }).join('');
     const Y=v=>base-v/mxP*plotH;
@@ -2656,13 +2674,13 @@ function admWorkday(){
     return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
         <line x1="${padL-10}" y1="${base}" x2="${W-padR}" y2="${base}" style="stroke:var(--line)"/>${bars}
         ${R.length>1?`<polyline points="${pts}" fill="none" stroke="#ff3b30" stroke-width="2.5"/>`:''}${dots}</svg></div>
-      <div class="legend"><span><span class="swatch" style="background:#0071e3"></span>처리일 수</span><span><span class="swatch" style="background:#ff3b30"></span>1일 평균 처리</span></div>`;
+      <div class="legend"><span><span class="swatch" style="background:#0071e3"></span>근무일 수(평일)</span><span><span class="swatch" style="background:#ff3b30"></span>1일 평균 처리</span></div>`;
   })();
   return admMonthNote(R)
-    + `<div class="adm-note"><b>처리일 수</b> = 실제로 처리 건이 있었던 날(당직·주말 포함) · <b>평일 수</b> = 주말·공휴일 제외한 날(진행 중인 달은 경과분까지).
-       1일 평균은 <b>처리일 수</b>로 나눕니다 — 주말 당직까지 일한 날을 빼면 실제보다 부풀려집니다.</div>`
-    + `<div class="card"><div class="card-head"><h3>처리일 수 · 1일 평균</h3><span class="hint">막대 = 처리일 수 · 선 = 1일 평균 처리 건수</span></div>${chart}</div>`
-    + `<div class="card"><div class="card-head"><h3>월별 수치</h3><span class="hint">1인 1일 평균 = 총 건수 ÷ 처리일 수 ÷ 그 달 활동 담당자 수</span></div>${table}</div>`;
+    + `<div class="adm-note"><b>근무일 수 = 평일</b>(토·일·공휴일 제외, 공휴일은 대체공휴일 포함). 진행 중인 달은 <b>오늘까지 경과한 평일</b>만 셉니다.
+       <b>1일 평균 = 총 건수 ÷ 평일 수</b> — 주말·당직에 처리한 건도 분자에는 들어갑니다(맨 오른쪽 열에 따로 표기).</div>`
+    + `<div class="card"><div class="card-head"><h3>근무일 수 · 1일 평균</h3><span class="hint">막대 = 평일 수 · 선 = 1일 평균 처리 건수</span></div>${chart}</div>`
+    + `<div class="card"><div class="card-head"><h3>월별 수치</h3><span class="hint">1인 1일 평균 = 총 건수 ÷ 평일 수 ÷ 그 달 활동 담당자 수</span></div>${table}</div>`;
 }
 
 function renderAdmin(){
