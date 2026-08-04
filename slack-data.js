@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2552,
+  "version": 2553,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -82091,7 +82091,7 @@ window.SLACK_DATA = {
     "2026-08-04": {
       "counts": {
         "as": {
-          "최민석": 12,
+          "최민석": 13,
           "심성현": 37,
           "김동욱": 38,
           "송태양": 19,
@@ -82132,6 +82132,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "19:53",
+          "store": "모노스톤",
+          "biz": "5456000735",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "• 용지 출력 시 글자가 나오지 않아 확인 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "19:37",
           "store": "(주)이디피에스",
@@ -84318,11 +84329,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 172,
+        "online": 173,
         "offline": 26,
         "unknown": 0
       },
-      "updatedAt": "19:37",
+      "updatedAt": "20:00",
       "voc": {
         "responses": 21,
         "install": {
@@ -84677,11 +84688,19 @@ window.SLACK_DATA = {
       },
       "1785836703.707209": {
         "post": "1785836703.707209",
-        "lastSeen": 1785840328.308
+        "lastSeen": 1785841230.632
       },
       "1785836057.973549": {
         "post": "1785836057.973549",
-        "lastSeen": 1785840328.308
+        "lastSeen": 1785841230.632
+      },
+      "1785841201.763659": {
+        "post": "1785841201.763659",
+        "lastSeen": 1785841230.632
+      },
+      "1785841154.618589": {
+        "post": "1785841154.618589",
+        "lastSeen": 1785841230.632
       }
     },
     "days": {
