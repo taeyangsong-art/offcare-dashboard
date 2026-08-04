@@ -26,6 +26,10 @@ const NAMES = Object.keys(personMap).join('|');
 const RE_EMP      = new RegExp('^원격(' + NAMES + ')$');          // 원격OOO (완료 담당자)
 const RE_CONFIRM  = new RegExp('^(' + NAMES + ')(_확인.*)?$');     // OOO / OOO_확인
 const RE_CONFIRM2 = new RegExp('^(' + NAMES + ')_?확인_?$');       // OOO_확인_
+// 설치 OB(설치 후 해피콜) 표시 이모지. 업무 카테고리와 배타적이지 않은 '부가 표시'라
+// catMap 이 아니라 별도로 판정해 days[d].ob 로 적재한다. 슬랙에서 쓰는 이모지 이름이
+// 확정되면 여기만 고치면 된다.
+const OB_EMOJI_RE = /설치_?ob|원격_?ob|installob|해피콜/i;
 
 // VOC 저점 사유 자동분류 규칙 (label = 표시 카테고리, kw = 포함되면 그 카테고리로 분류). 순서대로 첫 매칭 우선.
 const VOC_REASON_RULES = [
@@ -180,6 +184,7 @@ function cleanNote(s) {
 async function tallyInto(msgs, ch, counts, pending, done, opts) {
   done = done || [];
   const priorNotes = (opts && opts.priorNotes) || {};   // 이전 실행에서 이미 수집한 처리내역(재호출 방지)
+  const obOut = (opts && opts.obItems) || [];           // 설치 OB 적재용 (업무 집계와 별도·중복 허용)
   // 스레드 처리내역 수집: 이미 있으면 재사용, 없고 답글 있으면 첫 답글들 텍스트를 정리해 저장
   async function grabNote(m, catKey, time, store, biz) {
     const key = time + '|' + store + '|' + biz + '|' + catKey;
@@ -226,6 +231,13 @@ async function tallyInto(msgs, ch, counts, pending, done, opts) {
     const ageSec = now.getTime() / 1000 - parseFloat(m.ts || '0');   // 메시지 게시 후 경과(초) — 확인/부재 유예 판정용
 
     if (hasDup) { dup++; continue; }         // 중복 이모지 → 집계 제외 (재처리는 중복 표시 없으니 별개 건으로 정상 집계됨)
+
+    // 설치 OB 는 카테고리가 아니라 '부가 표시'다 — 아래 카테고리 분기와 무관하게 별도 적재한다.
+    // (같은 글이 온보딩 처리로도 세어지고 설치 OB 로도 세어지는 것이 정상)
+    if (names.some(n => OB_EMOJI_RE.test(n)) && !invalidPost) {
+      obOut.push({ time, store, biz, handler: doer || '미지정', intake });
+    }
+
     if (hasVocTag && !emojiCat) { continue; }   // 원격voc만 찍힌 순수 VOC 참조 → 업무 집계 제외(설문 VOC로만 관리)
 
     // requireCat 채널(명의변경/메뉴등록/배달)은 카테고리 이모지가 찍힌 것만 집계 → 카테고리는 항상 emojiCat이 결정.
@@ -428,7 +440,7 @@ async function tallyVoc(msgs, voc, channelId, opts) {
   // 사람들이 가장 많이 보는 '오늘' 건의 note가 상한 소진 전에 먼저 채워지도록 한다.
   for (const dstr of [...workDates].reverse()) {
     const b = boundsOf(dstr);
-    const counts = {}, pending = [], done = [];
+    const counts = {}, pending = [], done = [], obItems = [];
     // 이전 실행에서 수집한 처리내역 보존(재호출 방지) — done 항목 key: time|store|biz|cat
     const priorNotes = {};
     for (const it of (((data.days[dstr] || {}).done) || [])) { if (it.note) priorNotes[it.time + '|' + it.store + '|' + it.biz + '|' + it.cat] = it.note; }
@@ -437,7 +449,7 @@ async function tallyVoc(msgs, voc, channelId, opts) {
       let msgs;
       try { msgs = await fetchAllRange(ch.id, b.oldest, b.latestBound); }
       catch (e) { console.error(`  ⚠ [${ch.label} ${dstr}] 읽기 실패(${e.message}) — 건너뜀`); continue; }
-      const r = await tallyInto(msgs, ch, counts, pending, done, { priorNotes });
+      const r = await tallyInto(msgs, ch, counts, pending, done, { priorNotes, obItems });
       if (dstr === targetDate) trackResp(data, msgs, ch);   // 오늘 인입 건만 응답시간 폴링 추적
       completed += r.completed; externCount += r.externCount; dupTotal += r.dup; if (r.latest > latest) latest = r.latest;
     }
@@ -448,11 +460,16 @@ async function tallyVoc(msgs, voc, channelId, opts) {
     const intakeAgg = { online: 0, offline: 0, unknown: 0 };
     for (const it of done) intakeAgg[it.intake || 'unknown']++;
     for (const it of pending) intakeAgg[it.intake || 'unknown']++;
+    // 설치 OB — 담당자별 카운트 + 건별 목록 (대시보드 '설치 OB' 타일)
+    obItems.sort((a, b) => (b.time || '').localeCompare(a.time || ''));
+    const obByEmp = {};
+    for (const it of obItems) obByEmp[it.handler] = (obByEmp[it.handler] || 0) + 1;
     de.counts = counts; de.pending = pending; de.done = done; de.intake = intakeAgg;
+    de.ob = { count: obItems.length, byEmp: obByEmp, items: obItems };
     if (latest && latest > (de.updatedAt || '')) de.updatedAt = latest;
     if (!de.updatedAt) de.updatedAt = latest || '';
     data.days[dstr] = de;
-    console.log(`  [업무 ${dstr}] 완료 ${completed} · 확인필요 ${pending.length} · 외주 ${externCount} · 중복제외 ${dupTotal}`);
+    console.log(`  [업무 ${dstr}] 완료 ${completed} · 확인필요 ${pending.length} · 외주 ${externCount} · 설치OB ${obItems.length} · 중복제외 ${dupTotal}`);
   }
 
   // ===== VOC 롤링 재집계 (minDate~오늘) — 과거 설문도 오늘 '확인+완료' 찍히면 오늘 완료로 반영 =====

@@ -324,6 +324,10 @@
   .hl-trend-row .tv small{font-size:13px; font-weight:600; color:var(--gray2); margin-left:2px}
   .hl-trend-row .tc{font-size:12px; font-weight:600; color:var(--gray2); margin-left:6px}
   .hl-trend-row .tv-none{font-size:14px; font-weight:700; color:var(--gray2)}
+  .hl-trend-row .tv.pend{color:#e8590c}   /* 부재·미처리 행 강조 (원격 총 건수 카드 안) */
+  /* 부재·미처리 행 클릭 → 아래 미처리 카드로 이동했을 때 잠깐 테두리 강조 */
+  .flash-focus{animation:flashFocus 1.6s ease-out}
+  @keyframes flashFocus{0%,100%{box-shadow:var(--shadow)}18%,55%{box-shadow:0 0 0 3px rgba(255,149,0,.55),0 8px 24px rgba(0,0,0,.10)}}
   .pt-sw{display:inline-block; width:30px; height:30px; border-radius:50%; border:2px solid #fff; box-shadow:0 0 0 1px rgba(0,0,0,.15)}
   .pt-sw.sq{border-radius:8px}
   .pt-x{font-size:22px; color:#b8bcc4; font-weight:800}
@@ -580,10 +584,10 @@
   .ov-tile.grand .ov-val{color:#fff}
   .ov-tile.grand .ov-val small{color:rgba(255,255,255,.85)}
   .ov-tile.grand .ov-delta,.ov-tile.grand .ov-delta span{color:rgba(255,255,255,.92)}
-  .ov-tile.pend{background:linear-gradient(135deg,#fff0df,#fff8f1); border-left-color:#ff9500}
-  .ov-tile.pend .ov-name{color:#b45309}
-  .ov-tile.pend .ov-val{color:#e8590c}
-  .ov-tile.pend .ov-delta,.ov-tile.pend .ov-delta span{color:#c2703a}
+  .ov-tile.ob{background:linear-gradient(135deg,#eeecff,#f8f7ff); border-left-color:#5856d6}
+  .ov-tile.ob .ov-name{color:#4338ca}
+  .ov-tile.ob .ov-val{color:#4c1d95}
+  .ov-tile.ob .ov-delta,.ov-tile.ob .ov-delta span{color:#6d64c0}
 
   table.matrix{width:100%; border-collapse:collapse; font-size:14px; min-width:640px}
   table.matrix th{background:var(--surface); color:var(--steel,#6b7280); font-weight:700; font-size:12px;
@@ -1923,6 +1927,23 @@ function ovVocDone(dates){
 }
 function ovVocAlerts(dates){ const a=aggVoc(dates).alerts; return ovShift==='night'? a.filter(x=>isNightTime(x.time)) : a; }
 function ovPendingRaw(dates){ const out=[]; dates.forEach(d=>((slackDay(d)||{}).pending||[]).forEach(p=>{ if(ovShift!=='night'||isNightTime(p.time)) out.push(p); })); return out; }
+/* 설치 OB — 설치(온보딩) 후 해피콜/OB. slack-data.js days[d].ob = {count, byEmp:{}, items:[{time,store,biz,handler,intake}]}
+ * fetch-and-tally.js 가 OB_EMOJI_RE 에 걸리는 이모지가 찍힌 글을 적재한다. 데이터가 쌓이기 전엔 0(집계 대기중)으로 표시된다. */
+function obItems(dates){
+  const out=[];
+  dates.forEach(d=>{ const ob=(slackDay(d)||{}).ob; if(!ob) return;
+    (ob.items||[]).forEach(it=>{ if(ovShift!=='night'||isNightTime(it.time)) out.push({...it,_date:d}); }); });
+  return out;
+}
+// items 가 없는 초기 집계분(count만 있는 날)은 주간 기준에서만 count 로 폴백한다(야간 필터엔 시각이 필요)
+function obCnt(dates){
+  let n=0;
+  dates.forEach(d=>{ const ob=(slackDay(d)||{}).ob; if(!ob) return;
+    const its=ob.items||[];
+    if(its.length) n += (ovShift==='night' ? its.filter(x=>isNightTime(x.time)).length : its.length);
+    else if(ovShift!=='night') n += ob.count||0; });
+  return n;
+}
 let ovStart = ymd(addDays(today(),-6));
 let ovEnd = ymd(today());
 
@@ -3795,6 +3816,7 @@ function renderOverview(){
   const intakeTot = intakeAgg.online + intakeAgg.offline;
   const ovPend = ovPendingList();                     // 부재·확인필요 모두 다음날 오전 10시까지 이월
   const pendCarry = ovPend.length;
+  const obCur = obCnt(viewDates), obPrev = obCnt(prevDates);   // 설치 OB (설치 후 해피콜)
   // 누락 랭킹 — 이번 달 누적(부재/확인필요) 담당자별 카운트 (매월 1일 초기화)
   const missRows=Object.entries(monthlyMissByEmp().cnt).sort((a,b)=>b[1]-a[1]).slice(0,5);
 
@@ -3847,10 +3869,17 @@ function renderOverview(){
         <div class="hl-big">${grandAll}<small>건</small></div>
         ${deltaHTML(grandAll, grandAllPrev)}
         ${(absentCnt||confirmCnt)?`<div class="ov-delta flat" style="margin-top:2px"><span>처리 ${grandProc}${absentCnt?` + 부재 ${absentCnt}`:''}${confirmCnt?` + 확인필요 ${confirmCnt}`:''}</span></div>`:''}
-        ${(!NIGHT&&intakeTot)?`<div class="hl-trend">
+        <div class="hl-trend">
+          ${(!NIGHT&&intakeTot)?`
           <div class="hl-trend-row"><span class="tl">🌐 온라인</span><span class="tv">${intakeAgg.online}<small>건</small></span></div>
-          <div class="hl-trend-row"><span class="tl">🏪 오프라인</span><span class="tv">${intakeAgg.offline}<small>건</small></span></div>
-        </div>`:''}
+          <div class="hl-trend-row"><span class="tl">🏪 오프라인</span><span class="tv">${intakeAgg.offline}<small>건</small></span></div>`:''}
+          <div class="hl-trend-row${pendCarry?' clickable':''}"${pendCarry?' title="클릭 → 아래 미처리·확인필요 목록으로 이동" onclick="event.stopPropagation();goOvPending()"':''}>
+            <span class="tl">🔎 부재·미처리</span>
+            ${pendCarry
+              ? `<span class="tv pend">${pendCarry}<small>건</small><span class="tc">다음날 10시까지 이월</span></span>`
+              : `<span class="tv-none">없음 ✅</span>`}
+          </div>
+        </div>
       </div>
       <div class="hl-card gold" id="mvpCard">
         <div class="mvp-flash"></div><div class="mvp-confetti" id="mvpConfetti"></div>
@@ -3885,10 +3914,10 @@ function renderOverview(){
             : `<div class="ov-val">${c.total}<small>건</small></div>`}
           ${deltaHTML(c.total, c.prev)}
         </div>`).join("")}
-      <div class="ov-tile pend" style="--c:#ff9500">
-        <div class="ov-name"><span class="ov-ic">🔎</span>부재·미처리</div>
-        <div class="ov-val">${pendCarry}<small>건</small></div>
-        <div class="ov-delta flat"><span>부재·확인필요 다음날 10시까지</span></div>
+      <div class="ov-tile ob${obCur?' clickable':''}" style="--c:#5856d6"${obCur?' onclick="showObDetail()" title="클릭 → 설치 OB 상세 보기"':''}>
+        <div class="ov-name"><span class="ov-ic">📞</span>설치 OB${obCur?'<span class="ov-drill-ic">🔎</span>':''}</div>
+        <div class="ov-val">${obCur}<small>건</small></div>
+        ${obCur ? deltaHTML(obCur, obPrev) : `<div class="ov-delta flat"><span>집계 대기중</span></div>`}
       </div>
     </div>
 
@@ -3974,10 +4003,15 @@ function fireMvpConfetti(){
 // hex + alpha → rgba
 function hexA(hex,a){ const n=parseInt(hex.slice(1),16); return `rgba(${n>>16&255},${n>>8&255},${n&255},${a})`; }
 // 카테고리 라벨/칩
-function catLabelOf(k){ if(k==='voc')return 'VOC'; const c=WORK_CATS.find(w=>w.key===k); return c?c.name:k; }
-function catChip(k){ const c=WORK_CATS.find(w=>w.key===k); const col=k==='voc'?'#ff2d55':(c?c.color:'#8e8e93'); return `<span class="cat-chip" style="background:${hexA(col,.14)};color:${col}">${catLabelOf(k)}</span>`; }
+function catLabelOf(k){ if(k==='voc')return 'VOC'; if(k==='ob')return '설치 OB'; const c=WORK_CATS.find(w=>w.key===k); return c?c.name:k; }
+function catChip(k){ const c=WORK_CATS.find(w=>w.key===k); const col=k==='voc'?'#ff2d55':(k==='ob'?'#5856d6':(c?c.color:'#8e8e93')); return `<span class="cat-chip" style="background:${hexA(col,.14)};color:${col}">${catLabelOf(k)}</span>`; }
 // 처리 상세 모달: mode='cat'(카테고리별) 또는 'emp'(직원별) — 상호/사업자/유형/담당 조회
-function detailStatusBadge(st){ const col={'처리':'#166534','부재':'#b91c1c','확인필요':'#c2410c'}[st]||'#475569', bg={'처리':'#dcfce7','부재':'#ffe1de','확인필요':'#ffedd5'}[st]||'#eef1f5'; return `<span class="dm-st" style="background:${bg};color:${col}">${st}</span>`; }
+function detailStatusBadge(st){ const col={'처리':'#166534','부재':'#b91c1c','확인필요':'#c2410c','OB':'#4338ca'}[st]||'#475569', bg={'처리':'#dcfce7','부재':'#ffe1de','확인필요':'#ffedd5','OB':'#e0e7ff'}[st]||'#eef1f5'; return `<span class="dm-st" style="background:${bg};color:${col}">${st}</span>`; }
+// 📞 설치 OB 상세 — 설치 후 해피콜/OB 로 표시된 건 목록
+function showObDetail(){
+  const items = obItems(ovDates()).map(x=>({time:x.time, store:x.store, biz:x.biz, emp:x.handler, cat:'ob', date:x._date, st:'OB'}));
+  openDetailModal((ovShift==='night'?'🌙 ':'')+'설치 OB 상세', items);
+}
 function showDoneDetail(mode, key){
   const dates=ovDates(), set=new Set(dates); let items=[], title='';
   const pushVocDone=(empFilter)=>{ allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ if(x.emp&&(!empFilter||x.emp===empFilter)&&x.doneDate&&set.has(x.doneDate)) items.push({time:'',store:x.store,biz:x.storeId,emp:x.emp,cat:'voc',date:x.doneDate,st:'처리',nt:isNightTime(x.time)}); }); }); };
@@ -5124,6 +5158,13 @@ function filterPending(q){
 
 // 전체현황용 — 오늘 전 카테고리 미처리·확인필요 통합 (유형 컬럼 + 검색)
 // 전체현황 미처리 목록 — 부재·확인필요 모두 다음날 오전 10시까지 이월 후 소멸
+// 원격 총 건수 카드의 '부재·미처리' 행 클릭 → 아래 미처리·확인필요 카드로 스크롤 + 잠깐 강조
+function goOvPending(){
+  const el=document.getElementById('ovPendCard'); if(!el) return;
+  el.scrollIntoView({behavior:'smooth', block:'center'});
+  el.classList.remove('flash-focus'); void el.offsetWidth; el.classList.add('flash-focus');
+  setTimeout(()=>el.classList.remove('flash-focus'), 1600);
+}
 function ovPendingList(){
   const t=ymd(today()), yd=ymd(addDays(today(),-1));
   const nf = p => ovShift!=='night' || isNightTime(p.time);
@@ -5154,7 +5195,7 @@ function overviewPendingCard(){
   const list=ovPendingList();
   const upd=(slackDay(t)||{}).updatedAt;
   const head=`<div class="card-head"><h3>🔎 미처리 · 확인필요 <span class="cnt-badge">${list.length}</span></h3><span class="hint">부재·확인필요 다음날 오전 10시까지 이월${upd?` (${upd} 갱신)`:''} · 상호/사업자 검색</span></div>`;
-  if(!list.length) return `<div class="card">${head}<div class="empty-note">지금 챙길 미처리·확인필요 건이 없습니다 ✅</div></div>`;
+  if(!list.length) return `<div class="card" id="ovPendCard">${head}<div class="empty-note">지금 챙길 미처리·확인필요 건이 없습니다 ✅</div></div>`;
   const rows=list.slice().sort((a,b)=>((b._date||'')+(b.time||'')).localeCompare((a._date||'')+(a.time||''))).map(p=>{
     const c=WORK_CATS.find(w=>w.key===(p.cat||'as'))||{name:p.cat||'AS',color:'#8e8e93'};
     const tags=p.reasons.map(r=>`<span class="status-tag ${/부재/.test(r)?'absent':'unassigned'}">${escapeHtml(r)}</span>`).join(" ");
@@ -5170,7 +5211,7 @@ function overviewPendingCard(){
       <td class="dm-emp">${p.handler||'<span style="color:var(--gray2)">-</span>'}</td>
     </tr>`;
   }).join("");
-  return `<div class="card">${head}
+  return `<div class="card" id="ovPendCard">${head}
     <p class="note" style="margin:-6px 0 14px;font-size:13px;color:var(--gray)">
       <b>완료(원격OOO)</b>가 안 됐거나 <b>1차 부재</b>가 찍힌 건(확인·부재 후 1시간 경과)입니다. <b>부재·확인필요 모두 다음날 오전 10시까지 이월</b>된 뒤 사라집니다. (2차부재 제외)</p>
     <input class="search-box" type="text" placeholder="상호명 또는 사업자번호 검색…" oninput="filterOvPending(this.value)">
