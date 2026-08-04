@@ -3,10 +3,32 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 330,
- "updatedAt": "2026-08-04 11:00",
+ "version": 331,
+ "updatedAt": "2026-08-04 11:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1785810350.195149",
+   "date": "2026-08-04",
+   "time": "11:25",
+   "store": "양데이양꼬치마라탕",
+   "biz": "1021652353",
+   "phone": "01026002344\n-",
+   "pos": "토스포스",
+   "content": "수정 추가요~\n셋트메뉴중 양세트 45000. \n        데이세트 50000\n요리류. 마라탕 소 12000\n           대 17000\n      마라샹궈 소 20000\n            대 25000\n      \n식사류추가 김치말이국수 8000\n        고수추가 3000\n        차돌추가 3000\n        옥수수국수추가 2000\n        푸주추가 2000\n        넙적당면추가 2000\n        고기채추가 5000\n        숙주추가 2000\n        청경채추가 2000\n        건두부추가 2000\n        두유피추가 2000 \n        피쉬볼추가 2000\n경장육술아니고 경장육슬\n어향육술 아니고어향육슬입니다",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1BhGbg7Ehqxq-WXpfplC-7zDp7izp2YAn/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785810354.711739",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785810350195149"
+  },
   {
    "ts": "1785808114.589989",
    "date": "2026-08-04",
