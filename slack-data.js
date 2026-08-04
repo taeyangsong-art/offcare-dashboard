@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2551,
+  "version": 2552,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -82091,7 +82091,7 @@ window.SLACK_DATA = {
     "2026-08-04": {
       "counts": {
         "as": {
-          "최민석": 9,
+          "최민석": 12,
           "심성현": 37,
           "김동욱": 38,
           "송태양": 19,
@@ -82132,6 +82132,39 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "19:37",
+          "store": "(주)이디피에스",
+          "biz": "3938600833",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "2층 프린터기 출력 불가 확인되어 재 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "주방주문서.계산서 설정 꺼져있어 활성화 후 정상출력 완료"
+        },
+        {
+          "time": "19:32",
+          "store": "영덕족발",
+          "biz": "8351002607",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "CAT단말기(타사 단말기) / 먹깨비라는 프로그램으로 배달 주문 들어왓을 때  용지 출력이 되지 않아 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "점주님 자체해결 완료"
+        },
+        {
+          "time": "19:11",
+          "store": "사이마루",
+          "biz": "4594301436",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "테이블QR 주문 결제 이후 주방 주문서 출력이 되지 않는다고 하여 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포스 프로그램 껏켯 후 정상작동 완료"
+        },
         {
           "time": "19:08",
           "store": "비비큐(bbq)무주태권도원점",
@@ -84285,46 +84318,51 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 169,
+        "online": 172,
         "offline": 26,
         "unknown": 0
       },
-      "updatedAt": "19:11",
+      "updatedAt": "19:37",
       "voc": {
-        "responses": 19,
+        "responses": 21,
         "install": {
-          "count": 7,
+          "count": 9,
           "low": 1
         },
         "nps": {
-          "count": 19,
-          "low": 6
+          "count": 21,
+          "low": 7
         },
         "high": {
-          "install": 2,
+          "install": 3,
           "nps": 11
         },
         "npsDist": {
           "0": 1,
           "1": 1,
           "3": 3,
-          "5": 1,
-          "7": 1,
+          "5": 2,
+          "7": 2,
           "9": 1,
           "10": 11
         },
         "installDist": {
           "1": 1,
           "3": 2,
-          "4": 2,
-          "5": 2
+          "4": 3,
+          "5": 3
         },
         "byIndustry": {
+          "요식업": 2,
           "서비스[학원]": 4,
           "도소매": 2,
           "카페": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 9,
+            "low": 5
+          },
           "12개월": {
             "total": 5,
             "low": 0
@@ -84332,10 +84370,6 @@ window.SLACK_DATA = {
           "3개월": {
             "total": 2,
             "low": 1
-          },
-          "구매설치": {
-            "total": 7,
-            "low": 4
           },
           "6개월": {
             "total": 2,
@@ -84347,12 +84381,16 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
-          "KSNET": {
+          "KOCES": {
             "total": 2,
-            "low": 0
+            "low": 2
           },
           "KPN": {
-            "total": 4,
+            "total": 5,
+            "low": 0
+          },
+          "KSNET": {
+            "total": 2,
             "low": 0
           },
           "KIS": {
@@ -84361,10 +84399,6 @@ window.SLACK_DATA = {
           },
           "SECTA9": {
             "total": 4,
-            "low": 1
-          },
-          "KOCES": {
-            "total": 1,
             "low": 1
           },
           "SMARTRO": {
@@ -84377,13 +84411,35 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
-          "필요한 기능이 없거나 몰라서 불편": 1,
+          "필요한 기능이 없거나 몰라서 불편": 2,
           "단말기 설치나 초기 과정이 어려움": 1,
           "사용중 오류가 자주 발생함": 1,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 3,
           "고객센터 연락이 매우 힘듦": 1
         },
         "alerts": [
+          {
+            "time": "19:33",
+            "store": "둥지포차",
+            "storeId": "575507",
+            "industry": "음식점/주점",
+            "indBucket": "요식업",
+            "install": 5,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "아직편한지모르겟음",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "16:56",
             "store": "미작",
@@ -84541,6 +84597,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "19:33",
+            "store": "진소담식당",
+            "storeId": "576804",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 4,
+            "nps": 7,
+            "text": "설치가 알고나니까 간편하긴 하지만 초보자들이 qr코드 내역보고 설치하긴 쉽진 않았습니다 늦은시간에 전화도움 받아 설치했는데 친절히 설명해주셔서 만족하는편 입니다 그럭저럭 괜찮습니다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "18:40",
             "store": "이보크헤어(evoque hair) 붙임머리",
             "storeId": "211328",
@@ -84609,15 +84677,11 @@ window.SLACK_DATA = {
       },
       "1785836703.707209": {
         "post": "1785836703.707209",
-        "lastSeen": 1785839428.415
+        "lastSeen": 1785840328.308
       },
       "1785836057.973549": {
         "post": "1785836057.973549",
-        "lastSeen": 1785839428.415
-      },
-      "1785838300.870569": {
-        "post": "1785838300.870569",
-        "lastSeen": 1785839428.415
+        "lastSeen": 1785840328.308
       }
     },
     "days": {
@@ -98972,8 +99036,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-04": {
-        "cnt": 87,
-        "sumMin": 1150.7421867966657,
+        "cnt": 88,
+        "sumMin": 1177.0337023139004,
         "over": 2,
         "items": [
           {
@@ -99669,6 +99733,14 @@ window.SLACK_DATA = {
             "min": 14.9,
             "store": "비비큐(bbq)무주태권도원점",
             "biz": "5644000761",
+            "who": "최민석",
+            "cat": "as"
+          },
+          {
+            "hm": "19:11",
+            "min": 26.3,
+            "store": "사이마루",
+            "biz": "4594301436",
             "who": "최민석",
             "cat": "as"
           }
