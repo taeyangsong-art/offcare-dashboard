@@ -31,6 +31,9 @@
     --red:#ff3b30; --red-soft:#ffecec; --green:#34c759; --green-soft:#e7f8ec;
     --orange:#ff9500; --purple:#5e5ce6;
     --sat:#0a84ff; --sun:#ff3b30;
+    /* --muted 가 다크 블록에만 있어서 라이트 모드에선 var(--muted) 가 통째로 무시됐다
+       (matrix 표의 '·' 자리표시, 미지정 배지 등이 안 보이던 원인) */
+    --muted:#aeaeb4;
     --shadow:0 1px 3px rgba(0,0,0,.06),0 6px 20px rgba(0,0,0,.05);
     --radius:18px;
   }
@@ -614,6 +617,24 @@
   .dri-cell label{display:flex; align-items:center; gap:7px; font-size:12px; font-weight:700; color:var(--gray2); margin-top:7px}
   .dri-cell select{flex:1; font-family:inherit; font-size:13px; padding:5px 7px; border-radius:7px;
     border:1px solid var(--line); background:var(--card); color:var(--ink)}
+  /* DRI 처리량 — 담당자 한 명 = 한 줄. 표로 늘어놓으면 이름과 숫자가 멀어져 안 읽힌다 */
+  .dri-res{display:grid; grid-template-columns:repeat(auto-fill,minmax(370px,1fr)); gap:14px}
+  .dri-card{border:1px solid var(--line); border-radius:16px; padding:16px 18px; background:var(--card)}
+  .dri-card .dr-h{display:flex; align-items:baseline; justify-content:space-between; gap:10px;
+    padding-bottom:12px; margin-bottom:13px; border-bottom:1px solid var(--line-soft)}
+  .dri-card .dr-t{font-size:16.5px; font-weight:800; color:var(--ink)}
+  .dri-card .dr-s{font-size:12.5px; font-weight:700; color:var(--gray2); white-space:nowrap}
+  .dr-row{display:grid; grid-template-columns:40px 1fr auto; gap:10px; align-items:center; margin-bottom:11px}
+  .dr-row:last-child{margin-bottom:0}
+  .dr-badge{font-size:11px; font-weight:800; color:#fff; text-align:center; border-radius:6px; padding:3px 0; letter-spacing:-.02em}
+  .dr-nm{font-size:15px; font-weight:800; color:var(--ink); letter-spacing:-.01em}
+  .dr-nm.none{font-weight:600; color:var(--muted)}
+  .dr-bar{height:7px; border-radius:4px; background:var(--surface); overflow:hidden; margin-top:6px}
+  .dr-bar i{display:block; height:100%; border-radius:4px; min-width:2px}
+  .dr-v{text-align:right; white-space:nowrap; min-width:64px}
+  .dr-v b{font-size:20px; font-weight:800; letter-spacing:-.02em; font-variant-numeric:tabular-nums}
+  .dr-v small{font-size:11.5px; font-weight:700; color:var(--gray2); display:block; margin-top:1px}
+  .dr-etc{border-top:1px dashed var(--line); padding-top:12px; margin-top:12px}
 
   .stack-row{display:flex; align-items:center; gap:12px; margin-bottom:9px}
   .stack-name{flex:0 0 64px; font-size:14px; font-weight:600; color:var(--ink-soft)}
@@ -2492,17 +2513,26 @@ function admDri(){
     const v=names.map(take);
     return {c, names, v, o:Math.max(0,total-v.reduce((a,b)=>a+b,0)), t:total};
   });
-  const nameCell=n=>n?escapeHtml(n):'<span class="zero">미지정</span>';
-  const table=`<div style="overflow-x:auto"><table class="matrix">
-    <thead><tr><th>카테고리</th>
-      ${DRI_ROLES.map(r=>`<th>${r.n}담당</th><th class="num">${r.n} 처리</th>`).join('')}
-      <th class="num">그 외</th><th class="num">합계</th><th class="num">정+부 비중</th></tr></thead>
-    <tbody>${rows.map(r=>`<tr>
-      <td>${r.c.icon} ${r.c.name}</td>
-      ${r.names.map((n,i)=>`<td>${nameCell(n)}</td><td class="num">${r.v[i]}</td>`).join('')}
-      <td class="num">${r.o}</td><td class="num tot">${r.t}</td>
-      <td class="num" style="font-weight:700">${r.t?Math.round(r.v.reduce((a,b)=>a+b,0)/r.t*100):0}%</td></tr>`).join('')}</tbody>
-  </table></div>`;
+  // 카테고리 카드 안에 담당자별로 한 줄씩 — 이름·건수·비중 막대를 한 눈에 붙여 놓는다
+  const ROLE_C=['#0071e3','#34c759','#5e5ce6'];
+  const cards=`<div class="dri-res">${rows.map(r=>{
+    const pct=n=>r.t?Math.round(n/r.t*100):0;
+    const line=(badge,color,name,val)=>`<div class="dr-row">
+      <span class="dr-badge" style="background:${name?color:'var(--muted)'}">${badge}</span>
+      <div>
+        <div class="dr-nm${name?'':' none'}">${name?escapeHtml(name):'미지정'}</div>
+        <div class="dr-bar">${(name&&val>0)?`<i style="width:${pct(val)}%;background:${color}"></i>`:''}</div>
+      </div>
+      <div class="dr-v">${name?`<b style="color:${color}">${val.toLocaleString()}</b><small>${pct(val)}%</small>`
+                             :'<b style="color:var(--muted)">—</b>'}</div></div>`;
+    const share=r.t?Math.round(r.v.reduce((a,b)=>a+b,0)/r.t*100):0;
+    return `<div class="dri-card">
+      <div class="dr-h"><span class="dr-t">${r.c.icon} ${r.c.name}</span>
+        <span class="dr-s">총 ${r.t.toLocaleString()}건 · 정+부 <b style="color:${share>=70?'var(--green)':share>=40?'var(--ink)':'var(--red)'}">${share}%</b></span></div>
+      ${DRI_ROLES.map((role,i)=>line(role.n, ROLE_C[i], r.names[i], r.v[i])).join('')}
+      <div class="dr-etc">${line('기타','#c7c7cc','그 외 담당자',r.o)}</div>
+    </div>`;
+  }).join('')}</div>`;
   // 정·부1·부2·그 외 4계열 묶음 막대
   const chart=(function(){
     const g=[{n:'정담당',c:'#0071e3',f:r=>r.v[0]},{n:'부담당1',c:'#34c759',f:r=>r.v[1]},
@@ -2530,7 +2560,7 @@ function admDri(){
     <b>그 외</b>는 정·부가 아닌 담당자가 처리한 건으로, 이 값이 크면 DRI 가 실제와 다르다는 뜻입니다.
     <b>온보딩·AS</b>는 전담 DRI 가 없어 제외했고, <b>VOC</b>는 확인 담당자·완료일 기준으로 셉니다.</div>
     ${editor}
-    <div class="card"><div class="card-head"><h3>카테고리별 정·부 처리량</h3><span class="hint">${adminRange==='all'?'전체 기간':'최근 '+adminRange+'일'}</span></div>${table}</div>
+    <div class="card"><div class="card-head"><h3>카테고리별 정·부 처리량</h3><span class="hint">${adminRange==='all'?'전체 기간':'최근 '+adminRange+'일'} · 막대는 그 카테고리 안에서의 비중</span></div>${cards}</div>
     <div class="card"><div class="card-head"><h3>정 · 부 · 그 외 비교</h3></div>${chart}</div>`;
 }
 
