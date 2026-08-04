@@ -3,10 +3,53 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 350,
- "updatedAt": "2026-08-04 18:30",
+ "version": 351,
+ "updatedAt": "2026-08-04 18:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1785836703.707209",
+   "date": "2026-08-04",
+   "time": "18:45",
+   "store": "살롱드비키",
+   "biz": "2092792875",
+   "phone": "01028749732\n-",
+   "pos": "기타",
+   "content": "추가/세트/커플세트(고르곤,노가리) 33000원,빠네세트(빠네,노가리) 33000원  피자세트(페페로니,노가리) 33000원   친구세트(페퍼,고르곤) 56000원\n노가리(단품),10000원",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785836709.103529",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785836703707209"
+  },
+  {
+   "ts": "1785836057.973549",
+   "date": "2026-08-04",
+   "time": "18:34",
+   "store": "러프로스터스",
+   "biz": "6201155265",
+   "phone": "",
+   "pos": "토스포스",
+   "content": "토스포스) 메뉴 수정 요청드립니다! (스레드 내 추가 전달주신 내용 바로 남기겠습니다)",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785834256497659\n------\n상품 터치 시, 옵션에서\n\n1. 블렌드 선택 _ RR1 / RR2 / 디카페인\n2. 온도 _ ICE / HOT",
+    "+\n아포가토는 별도로 옵션\n1. 맛 _ 바닐라 OR 녹차\n2. 원두선택 _ RR1 OR RR2 OR 디카페인\n3. 온도 _ only ice\n---\n아래 이미지는 상품별 블렌드/온도 옵션입니다"
+   ],
+   "rc": 3,
+   "lr": "1785836252.765199",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785836057973549"
+  },
   {
    "ts": "1785834910.433159",
    "date": "2026-08-04",
