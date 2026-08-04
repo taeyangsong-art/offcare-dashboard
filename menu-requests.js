@@ -3,10 +3,32 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 347,
- "updatedAt": "2026-08-04 17:30",
+ "version": 348,
+ "updatedAt": "2026-08-04 18:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1785833950.993479",
+   "date": "2026-08-04",
+   "time": "17:59",
+   "store": "호반의쉼터",
+   "biz": "3860603392",
+   "phone": "",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "캔음료 2.000원\n얼음컵1.000원\n아메리카노2.000원"
+   ],
+   "rc": 2,
+   "lr": "1785833962.369939",
+   "status": "done",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785833950993479"
+  },
   {
    "ts": "1785828109.181089",
    "date": "2026-08-04",
