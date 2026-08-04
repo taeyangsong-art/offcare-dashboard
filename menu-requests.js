@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 337,
- "updatedAt": "2026-08-04 14:00",
+ "version": 338,
+ "updatedAt": "2026-08-04 14:15",
  "days": 30,
  "items": [
   {
@@ -43,11 +43,12 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [
-    "• 한치 15,000원\n• 야채곱창 15,000원\n• 알곱창 16,000원\n• 소곱창 전골 29,000원"
+    "• 한치 15,000원\n• 야채곱창 15,000원\n• 알곱창 16,000원\n• 소곱창 전골 29,000원",
+    "헉 번호를 안보내드렸네요. 제가 발송드리겠습니당 감사합니다!!!!"
    ],
-   "rc": 12,
-   "lr": "1785819589.840759",
-   "status": "confirm",
+   "rc": 15,
+   "lr": "1785819912.994499",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785818359745789"
   },
