@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 344,
- "updatedAt": "2026-08-04 16:30",
+ "version": 345,
+ "updatedAt": "2026-08-04 16:45",
  "days": 30,
  "items": [
   {
@@ -43,8 +43,8 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1785828082.259639",
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785828072808589"
   },
   {
@@ -61,9 +61,9 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1785825244.663749",
-   "status": "confirm",
+   "rc": 2,
+   "lr": "1785828700.295919",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785825240036459"
   },
@@ -9294,26 +9294,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김동욱",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783257580514529"
-  },
-  {
-   "ts": "1783236939.145499",
-   "date": "2026-07-05",
-   "time": "16:35",
-   "store": "계경순대국 구월2호점",
-   "biz": "6512800156",
-   "phone": "01076801008\n-",
-   "pos": "오케이포스",
-   "content": "물냉면 9,000원 물냉면곱배기 10,000원 비빔냉면 10,000원 비빔곱배기 11,000원  ( 특추가는 2,000으로 수정해주세요 맨뒷장에 있어요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783236945.186259",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783236939145499"
   }
  ]
 };
