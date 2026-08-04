@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2508,
+  "version": 2509,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -82091,15 +82091,31 @@ window.SLACK_DATA = {
       }
     },
     "2026-08-04": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "배선유": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:00",
+          "store": "원픽짐",
+          "biz": "2012305927",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "• 복수가맹 매장",
+          "hw": "",
+          "intake": "online",
+          "note": "매장x 11시 예약"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:00"
+      "updatedAt": "09:11"
     }
   },
   "resp": {
@@ -82123,10 +82139,6 @@ window.SLACK_DATA = {
       "1785741097.122979": {
         "post": "1785741097.122979",
         "lastSeen": 1785789582.282
-      },
-      "1785801601.792539": {
-        "post": "1785801601.792539",
-        "lastSeen": 1785801631.027
       }
     },
     "days": {
@@ -96476,6 +96488,21 @@ window.SLACK_DATA = {
             "store": "만통치킨 인천논현점",
             "biz": "4550104130",
             "who": "최민석",
+            "cat": "as"
+          }
+        ]
+      },
+      "2026-08-04": {
+        "cnt": 1,
+        "sumMin": 7.900574354330699,
+        "over": 0,
+        "items": [
+          {
+            "hm": "09:00",
+            "min": 7.9,
+            "store": "원픽짐",
+            "biz": "2012305927",
+            "who": "배선유",
             "cat": "as"
           }
         ]
