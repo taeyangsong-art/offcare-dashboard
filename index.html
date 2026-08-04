@@ -2729,7 +2729,6 @@ function admChannel(){
   const s=[{n:'온라인',c:'#0071e3',v:R.map(r=>r.online)},{n:'오프라인',c:'#ff9500',v:R.map(r=>r.offline)}];
   const share=R.map(r=>{ const t=r.online+r.offline; return t?Math.round(r.online/t*100):0; });
   return admMonthNote(R)
-    + `<div class="adm-note">인입유형이 <b>미기재</b>인 건은 온라인으로 합산합니다 — 전체현황과 같은 팀 정책입니다.</div>`
     + `<div class="card"><div class="card-head"><h3>온라인 · 오프라인 월 건수</h3></div>${monthBarChart(L,s)}</div>`
     + `<div class="card"><div class="card-head"><h3>1일 평균 비교</h3><span class="hint">월 건수 ÷ 평일 수(토·일·공휴일 제외)</span></div>
         ${monthBarChart(L,[{n:'온라인',c:'#0071e3',v:R.map(r=>admPerDay(r.online,r))},
