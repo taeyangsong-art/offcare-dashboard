@@ -604,12 +604,6 @@
   .adm-note{background:var(--surface-soft); border:1px solid var(--line-soft); border-radius:12px;
     padding:13px 16px; font-size:13.5px; color:var(--ink-soft); line-height:1.6; margin-bottom:16px}
   .adm-note b{color:var(--ink)}
-  .adm-wait{text-align:center; padding:44px 22px; color:var(--gray2)}
-  .adm-wait .aw-ic{font-size:38px; margin-bottom:12px}
-  .adm-wait h4{font-size:17px; font-weight:800; color:var(--ink); margin-bottom:8px}
-  .adm-wait p{font-size:14px; line-height:1.7; max-width:560px; margin:0 auto}
-  .adm-wait code{background:var(--surface); border:1px solid var(--line-soft); border-radius:5px;
-    padding:2px 6px; font-size:12.5px; font-family:ui-monospace,Menlo,Consolas,monospace; color:var(--blue-deep)}
   table.matrix.hm{font-size:12.5px; min-width:860px}
   table.matrix.hm th{padding:7px 4px; font-size:11px}
   table.matrix.hm td{padding:6px 4px}
@@ -1997,8 +1991,6 @@ function selectCat(k){
     if(pw!==ADMIN_PW){ alert('비밀번호가 틀렸습니다.'); return; }
     sessionStorage.setItem('admin_ok','1');
   }
-  // 시트 기반 월별 집계는 관리 탭에서만 필요 — 들어올 때 한 번만 받는다
-  if(k==='admin' && !window.ADMIN_DATA) loadData("admin-data.js", function(){ if(activeCat==='admin') renderAdmin(); });
   if(k==='overview'){ resetOverviewPeriod(); celebrateMvp=true; ovShift='all'; } if(k==='voc') resetVocPeriod(); if(k==='game-fish') fishRoom=null; if(k==='teamgoal') teamGoalRef=today(); if(k==='menureg') loadData("menu-requests.js", function(){ if(activeCat==='menureg') renderMain(); }); activeCat=k; renderNav(); renderMain(); window.scrollTo(0,0); }
 
 /* ================= Main dispatch ================= */
@@ -2285,9 +2277,9 @@ function renderMain(){
 /* ================= 🔐 관리 — 파트리더 전용 리포트 =================
  * 주의: 이 대시보드는 공개 저장소로 배포된다. 아래 비밀번호는 소스보기로 보이므로
  * '실수로 들어가는 것'만 막는 가림막이다(기존 VOC Monthly 와 동일 수준).
- * 데이터 출처가 둘이다:
- *   · 라이브(slack-data.js) — 시각 단위가 필요한 시간대별·DRI·주야 비교. 상세(done)는 7/1부터 존재
- *   · 시트(admin-data.js)   — 1~12월 월별 집계. scripts/fetch-admin-sheet.js 가 갱신
+ * 데이터는 전부 대시보드 자체 집계(slack-data.js)로만 만든다. 원격 시트는 사람이 편집해
+ * 오염이 잦아 쓰지 않기로 했다. 상세(done·시각)는 2026-07-01 부터 쌓이므로 월별 이력은
+ * 그 달부터 시작하고 달이 지날수록 자동으로 늘어난다.
  */
 const ADMIN_PW = '9111';
 let adminTab = 'hourly';
@@ -2336,15 +2328,43 @@ function driSet(cat, role, name){
   renderAdmin();
 }
 
-/* ── 시트 데이터 ── */
-function adminSheet(){ return window.ADMIN_DATA && window.ADMIN_DATA.monthly ? window.ADMIN_DATA : null; }
-function adminWait(what){
-  return `<div class="adm-wait"><div class="aw-ic">🔌</div>
-    <h4>${what} — 시트 동기화 대기중</h4>
-    <p>이 표는 원격 시트의 <b>1~12월 월별 집계</b>가 있어야 그려집니다. 대시보드 자체 데이터는
-       상세가 <b>7/1부터</b>라 월별 비교를 만들 수 없습니다.<br><br>
-       <code>node scripts/fetch-admin-sheet.js</code> 를 돌리면 <code>admin-data.js</code> 가 생성되고
-       이 화면이 채워집니다. 이후에는 GitHub Actions 가 매일 자동 갱신합니다.</p></div>`;
+/* ── 월별 집계 (대시보드 자체 데이터) ──
+ * 시트는 사람이 편집해 오염이 잦아 쓰지 않는다. 전체현황과 같은 소스(COUNTS/sumRange)로 계산해
+ * 관리 화면 숫자가 공개 화면과 어긋나지 않게 한다. 이력은 데이터가 쌓인 달부터 자동으로 늘어난다. */
+function admMonths(){
+  return [...new Set(allSlackDates().filter(d=>((slackDay(d)||{}).done||[]).length>0).map(d=>d.slice(0,7)))].sort();
+}
+// 그 달에 '평일이면서 공휴일이 아닌' 날 수. 진행 중인 달은 마지막 데이터 날짜까지만 센다(경과 평일)
+function admBizDays(m, upto){
+  const [y,mo]=m.split('-').map(Number), last=new Date(y,mo,0).getDate();
+  const end = upto ? Number(upto.slice(8,10)) : last;
+  let n=0;
+  for(let d=1; d<=Math.min(last,end); d++){
+    const dt=new Date(y,mo-1,d), w=dt.getDay();
+    if(w===0||w===6) continue;
+    if(HOLIDAYS[ymd(dt)]) continue;
+    n++;
+  }
+  return n;
+}
+function admMonthly(){
+  const all=allSlackDates().filter(d=>((slackDay(d)||{}).done||[]).length>0);
+  return admMonths().map(m=>{
+    const ds=all.filter(d=>d.startsWith(m));
+    const by={}; let total=0;
+    for(const c of WORK_CATS){ const n=sumRange(c.key, ds); by[c.key]=n; total+=n; }
+    // 인입유형 미상은 온라인으로 합산 — 전체현황과 같은 팀 정책
+    const ik=ds.reduce((a,d)=>{ const k=(slackDay(d)||{}).intake||{}; a.online+=(k.online||0)+(k.unknown||0); a.offline+=k.offline||0; return a; },{online:0,offline:0});
+    const emps=new Set();
+    ds.forEach(d=>{ for(const o of Object.values((slackDay(d)||{}).counts||{})) Object.keys(o).forEach(e=>emps.add(e)); });
+    return {m, days:ds.length, biz:admBizDays(m, ds[ds.length-1]), by, total, online:ik.online, offline:ik.offline, emps:emps.size};
+  });
+}
+function admMonthNote(rows){
+  const first=rows[0], last=rows[rows.length-1];
+  return `<div class="adm-note">출처: <b>대시보드 집계 데이터</b>(전체현황과 동일한 소스) · 이력 <b>${first.m.replace('-','.')} ~ ${last.m.replace('-','.')}</b>
+    · 상세 데이터가 <b>2026-07-01</b>부터 쌓여서 그 이전 달은 없습니다. 달이 지날수록 자동으로 늘어납니다.
+    ${last.days<20?`<br>⚠️ <b>${last.m.replace('-','.')}</b> 는 진행 중(${last.days}일)이라 총 건수는 아직 작습니다 — <b>1일 평균</b>으로 보세요.`:''}</div>`;
 }
 
 /* ── 탭 1. 담당자 개인별 시간대별 처리추이 ── */
@@ -2537,74 +2557,112 @@ function admPrevMonth(){
     ${pick}${warn}${block(false)}${block(true)}`;
 }
 
-/* ── 탭 4~6. 시트 기반 월별 리포트 ── */
-// 월별 라인차트 (여러 계열) — 1~12월 고정 축
-function monthLineChart(series, opt){
-  const M=12, padL=52, padR=18, topPad=24, botPad=34;
-  const W=760, H=(opt&&opt.h)||280, base=H-botPad, plotH=H-topPad-botPad, stepX=(W-padL-padR)/(M-1);
-  const mx=Math.max(1,...series.flatMap(s=>s.v.filter(x=>x!==null&&x!==undefined)));
-  const X=i=>padL+i*stepX, Y=v=>base-(v/mx)*plotH;
-  const grid=[0,.25,.5,.75,1].map(f=>{ const y=base-f*plotH, v=Math.round(mx*f);
-    return `<line x1="${padL}" y1="${y}" x2="${W-padR}" y2="${y}" style="stroke:var(--line-soft)"/>`
-      + `<text x="${padL-8}" y="${y+4}" text-anchor="end" font-size="10.5" style="fill:var(--gray2)">${v.toLocaleString()}</text>`; }).join('');
-  const xs=Array.from({length:M},(_,i)=>`<text x="${X(i)}" y="${base+18}" text-anchor="middle" font-size="11" style="fill:var(--gray2)">${i+1}월</text>`).join('');
-  const lines=series.map(s=>{
-    const pts=s.v.map((v,i)=>(v===null||v===undefined)?null:`${X(i)},${Y(v)}`).filter(Boolean).join(' ');
-    const dots=s.v.map((v,i)=>(v===null||v===undefined)?'':`<circle cx="${X(i)}" cy="${Y(v)}" r="3.5" fill="${s.c}"><title>${s.n} ${i+1}월 ${Number(v).toLocaleString()}</title></circle>`
-      + (v>0?`<text x="${X(i)}" y="${Y(v)-9}" text-anchor="middle" font-size="10" font-weight="700" style="fill:${s.c}">${Number(v).toLocaleString()}</text>`:'')).join('');
-    return `<polyline points="${pts}" fill="none" stroke="${s.c}" stroke-width="2" stroke-linejoin="round"/>${dots}`;
+/* ── 탭 4~6. 월별 리포트 (대시보드 자체 데이터) ── */
+// 월 묶음 막대. 달 수가 적어도(현재 2개) 읽히도록 라인 대신 막대를 쓴다
+function monthBarChart(labels, series, fmt){
+  const f = fmt || (v=>Number(v).toLocaleString());
+  const barW=52, barGap=8, groupGap=46, padL=26, padR=20, topPad=28, botPad=40;
+  const groupW=series.length*barW+(series.length-1)*barGap;
+  const W=Math.max(420, padL+padR+labels.length*groupW+(labels.length-1)*groupGap);
+  const H=280, base=H-botPad, plotH=H-topPad-botPad;
+  const mx=Math.max(1,...series.flatMap(s=>s.v.map(Number)));
+  const groups=labels.map((lab,gi)=>{
+    const gx=padL+gi*(groupW+groupGap);
+    const bars=series.map((s,bi)=>{
+      const v=Number(s.v[gi])||0, bx=gx+bi*(barW+barGap);
+      if(v<=0) return `<rect x="${bx}" y="${base-2}" width="${barW}" height="2" rx="1" style="fill:var(--line-soft)"/>`;
+      const h=v/mx*plotH, y=base-h;
+      return `<rect x="${bx}" y="${y.toFixed(1)}" width="${barW}" height="${h.toFixed(1)}" rx="3" fill="${s.c}"><title>${lab} · ${s.n} ${f(v)}</title></rect>`
+        + `<text x="${bx+barW/2}" y="${(y-6).toFixed(1)}" text-anchor="middle" font-size="12" font-weight="800" style="fill:${s.c}">${f(v)}</text>`;
+    }).join('');
+    return bars+`<text x="${gx+groupW/2}" y="${base+20}" text-anchor="middle" font-size="12.5" font-weight="700" style="fill:var(--ink)">${lab}</text>`;
   }).join('');
   return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
-      ${grid}<line x1="${padL}" y1="${base}" x2="${W-padR}" y2="${base}" style="stroke:var(--line)"/>${lines}${xs}</svg></div>
+      <line x1="${padL-8}" y1="${base}" x2="${W-padR}" y2="${base}" style="stroke:var(--line)"/>${groups}</svg></div>
     <div class="legend">${series.map(s=>`<span><span class="swatch" style="background:${s.c}"></span>${s.n}</span>`).join('')}</div>`;
 }
-function monthTable(series){
+// 월별 수치표 — 각 계열의 1일 평균을 같이 보여준다(진행 중인 달과 끝난 달을 나란히 비교하려면 필수)
+function monthTable(labels, series, rows){
   return `<div style="overflow-x:auto"><table class="matrix">
-    <thead><tr><th>구분</th>${Array.from({length:12},(_,i)=>`<th class="num">${i+1}월</th>`).join('')}<th class="num tot">합계</th></tr></thead>
-    <tbody>${series.map(s=>`<tr><td><span class="swatch" style="background:${s.c};display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px"></span>${s.n}</td>
-      ${s.v.map(v=>`<td class="num">${v?Number(v).toLocaleString():'<span class="zero">·</span>'}</td>`).join('')}
-      <td class="num tot">${s.v.reduce((a,b)=>a+(Number(b)||0),0).toLocaleString()}</td></tr>`).join('')}</tbody>
-  </table></div>`;
+    <thead><tr><th>구분</th>${labels.map(l=>`<th class="num">${l}</th>`).join('')}<th class="num tot">합계</th></tr></thead>
+    <tbody>${series.map(s=>`<tr>
+      <td><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${s.c};margin-right:7px"></span>${s.n}</td>
+      ${s.v.map(v=>`<td class="num">${Number(v)?Number(v).toLocaleString():'<span class="zero">·</span>'}</td>`).join('')}
+      <td class="num tot">${s.v.reduce((a,b)=>a+(Number(b)||0),0).toLocaleString()}</td></tr>`).join('')}
+      ${(rows||[]).map(r=>`<tr>
+      <td style="color:var(--gray2)">${r.n}</td>
+      ${r.v.map(v=>`<td class="num" style="color:var(--gray2);font-weight:700">${v}</td>`).join('')}
+      <td class="num" style="color:var(--gray2)">${r.tot!==undefined?r.tot:'—'}</td></tr>`).join('')}
+    </tbody></table></div>`;
 }
 function admOnbAs(){
-  const S=adminSheet(); if(!S) return adminWait('온보딩 · A/S 월 건수');
-  const s=[{n:'온보딩',c:'#0071e3',v:S.monthly.onboarding||[]},{n:'A/S',c:'#ff3b30',v:S.monthly.as||[]}];
-  return `<div class="adm-note">출처: 원격 시트 · 갱신 <b>${escapeHtml(S.updatedAt||'-')}</b></div>
-    <div class="card"><div class="card-head"><h3>온보딩 · A/S 월 건수</h3></div>${monthLineChart(s)}</div>
-    <div class="card"><div class="card-head"><h3>월별 수치</h3></div>${monthTable(s)}</div>`;
+  const R=admMonthly(); if(!R.length) return `<div class="empty-note">집계 데이터가 없습니다.</div>`;
+  const L=R.map(r=>r.m.replace('-','.')), per=(k,r)=>(r.by[k]/(r.days||1)).toFixed(1);
+  const s=[{n:'온보딩',c:'#0071e3',v:R.map(r=>r.by.onboarding||0)},{n:'A/S',c:'#34c759',v:R.map(r=>r.by.as||0)}];
+  return admMonthNote(R)
+    + `<div class="card"><div class="card-head"><h3>온보딩 · A/S 월 건수</h3><span class="hint">막대 위 숫자 = 월 총 건수</span></div>${monthBarChart(L,s)}</div>`
+    + `<div class="card"><div class="card-head"><h3>1일 평균 비교</h3><span class="hint">월 건수 ÷ 그 달 처리일 수 — 진행 중인 달도 공정하게 비교됩니다</span></div>
+        ${monthBarChart(L,[{n:'온보딩',c:'#0071e3',v:R.map(r=>+per('onboarding',r))},{n:'A/S',c:'#34c759',v:R.map(r=>+per('as',r))}], v=>Number(v).toFixed(1))}</div>`
+    + `<div class="card"><div class="card-head"><h3>월별 수치</h3></div>
+        ${monthTable(L, s, [{n:'처리일 수', v:R.map(r=>r.days), tot:R.reduce((a,r)=>a+r.days,0)},
+                            {n:'온보딩 1일 평균', v:R.map(r=>per('onboarding',r))},
+                            {n:'A/S 1일 평균',   v:R.map(r=>per('as',r))}])}</div>`;
 }
 function admChannel(){
-  const S=adminSheet(); if(!S) return adminWait('온라인 · 오프라인 월 건수');
-  const s=[{n:'온라인',c:'#0071e3',v:S.monthly.online||[]},{n:'오프라인',c:'#ff3b30',v:S.monthly.offline||[]}];
-  return `<div class="adm-note">출처: 원격 시트 · 갱신 <b>${escapeHtml(S.updatedAt||'-')}</b></div>
-    <div class="card"><div class="card-head"><h3>온라인 · 오프라인 월 건수</h3></div>${monthLineChart(s)}</div>
-    <div class="card"><div class="card-head"><h3>월별 수치</h3></div>${monthTable(s)}</div>`;
+  const R=admMonthly(); if(!R.length) return `<div class="empty-note">집계 데이터가 없습니다.</div>`;
+  const L=R.map(r=>r.m.replace('-','.'));
+  const s=[{n:'온라인',c:'#0071e3',v:R.map(r=>r.online)},{n:'오프라인',c:'#ff9500',v:R.map(r=>r.offline)}];
+  const share=R.map(r=>{ const t=r.online+r.offline; return t?Math.round(r.online/t*100):0; });
+  return admMonthNote(R)
+    + `<div class="adm-note">인입유형이 <b>미기재</b>인 건은 온라인으로 합산합니다 — 전체현황과 같은 팀 정책입니다.</div>`
+    + `<div class="card"><div class="card-head"><h3>온라인 · 오프라인 월 건수</h3></div>${monthBarChart(L,s)}</div>`
+    + `<div class="card"><div class="card-head"><h3>1일 평균 비교</h3><span class="hint">월 건수 ÷ 그 달 처리일 수</span></div>
+        ${monthBarChart(L,[{n:'온라인',c:'#0071e3',v:R.map(r=>+(r.online/(r.days||1)).toFixed(1))},
+                           {n:'오프라인',c:'#ff9500',v:R.map(r=>+(r.offline/(r.days||1)).toFixed(1))}], v=>Number(v).toFixed(1))}</div>`
+    + `<div class="card"><div class="card-head"><h3>월별 수치</h3></div>
+        ${monthTable(L, s, [{n:'처리일 수', v:R.map(r=>r.days), tot:R.reduce((a,r)=>a+r.days,0)},
+                            {n:'온라인 비중', v:share.map(p=>p+'%')}])}</div>`;
 }
 function admWorkday(){
-  const S=adminSheet(); if(!S) return adminWait('근무일 수 · 1일 평균');
-  const wd=S.monthly.workdays||[], pd=S.monthly.perDay||[];
-  const bars=(function(){
-    const colW=40, gap=18, padL=44, padR=18, topPad=24, botPad=36;
-    const W=padL+padR+12*colW+11*gap, H=250, base=H-botPad, plotH=H-topPad-botPad;
-    const mxW=Math.max(1,...wd.map(Number)), mxP=Math.max(1,...pd.map(Number));
-    const b=Array.from({length:12},(_,i)=>{
-      const x=padL+i*(colW+gap), v=Number(wd[i])||0, h=v/mxW*plotH*0.55, y=base-h;
-      return (v?`<rect x="${x}" y="${y.toFixed(1)}" width="${colW}" height="${h.toFixed(1)}" rx="3" fill="#0071e3"><title>${i+1}월 근무 ${v}일</title></rect>
-        <text x="${x+colW/2}" y="${(y+16).toFixed(1)}" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">${v}</text>`:'')
-        + `<text x="${x+colW/2}" y="${base+18}" text-anchor="middle" font-size="11" style="fill:var(--gray2)">${i+1}월</text>`;
+  const R=admMonthly(); if(!R.length) return `<div class="empty-note">집계 데이터가 없습니다.</div>`;
+  const L=R.map(r=>r.m.replace('-','.'));
+  const perDay=R.map(r=>+(r.total/(r.days||1)).toFixed(1));
+  const perPer=R.map(r=>+(r.total/(r.days||1)/(r.emps||1)).toFixed(1));
+  const table=`<div style="overflow-x:auto"><table class="matrix">
+    <thead><tr><th>월</th><th class="num">처리일 수</th><th class="num">평일 수</th><th class="num">총 건수</th><th class="num">1일 평균</th><th class="num">담당자</th><th class="num tot">1인 1일 평균</th></tr></thead>
+    <tbody>${R.map((r,i)=>`<tr><td>${r.m.replace('-','.')}</td>
+      <td class="num">${r.days}</td><td class="num" style="color:var(--gray2)">${r.biz}</td>
+      <td class="num">${r.total.toLocaleString()}</td><td class="num" style="font-weight:800">${perDay[i]}</td>
+      <td class="num" style="color:var(--gray2)">${r.emps}</td><td class="num tot">${perPer[i]}</td></tr>`).join('')}</tbody>
+  </table></div>`;
+  // 막대 = 처리일 수, 선 = 1일 평균 (참고 이미지의 '근무일 수, 1일 평균' 형태)
+  const chart=(function(){
+    const colW=64, gap=54, padL=40, padR=26, topPad=30, botPad=38;
+    const W=Math.max(420, padL+padR+R.length*colW+(R.length-1)*gap), H=260, base=H-botPad, plotH=H-topPad-botPad;
+    const mxD=Math.max(1,...R.map(r=>r.days)), mxP=Math.max(1,...perDay);
+    const cx=i=>padL+i*(colW+gap)+colW/2;
+    const bars=R.map((r,i)=>{
+      const x=padL+i*(colW+gap), h=r.days/mxD*plotH*0.6, y=base-h;
+      // 막대가 짧으면 안쪽 흰 글씨가 축 밖으로 삐져나간다 — 그럴 땐 막대 위에 파란 글씨로
+      const inside=h>=26;
+      return `<rect x="${x}" y="${y.toFixed(1)}" width="${colW}" height="${h.toFixed(1)}" rx="3" fill="#0071e3"><title>${r.m} 처리일 ${r.days}일</title></rect>
+        <text x="${x+colW/2}" y="${(inside?y+18:y-7).toFixed(1)}" text-anchor="middle" font-size="12" font-weight="800" fill="${inside?'#fff':'#0071e3'}">${r.days}</text>
+        <text x="${x+colW/2}" y="${base+20}" text-anchor="middle" font-size="12.5" font-weight="700" style="fill:var(--ink)">${r.m.replace('-','.')}</text>`;
     }).join('');
-    const pts=pd.map((v,i)=>Number(v)?`${padL+i*(colW+gap)+colW/2},${(base-Number(v)/mxP*plotH).toFixed(1)}`:null).filter(Boolean).join(' ');
-    const dots=pd.map((v,i)=>Number(v)?`<circle cx="${padL+i*(colW+gap)+colW/2}" cy="${(base-Number(v)/mxP*plotH).toFixed(1)}" r="3.5" fill="#ff3b30"><title>${i+1}월 1일 평균 ${v}건</title></circle>
-      <text x="${padL+i*(colW+gap)+colW/2}" y="${(base-Number(v)/mxP*plotH-9).toFixed(1)}" text-anchor="middle" font-size="10" font-weight="700" fill="#ff3b30">${v}</text>`:'').join('');
+    const Y=v=>base-v/mxP*plotH;
+    const pts=perDay.map((v,i)=>`${cx(i)},${Y(v).toFixed(1)}`).join(' ');
+    const dots=perDay.map((v,i)=>`<circle cx="${cx(i)}" cy="${Y(v).toFixed(1)}" r="4" fill="#ff3b30"><title>${R[i].m} 1일 평균 ${v}건</title></circle>
+      <text x="${cx(i)}" y="${(Y(v)-10).toFixed(1)}" text-anchor="middle" font-size="12" font-weight="800" fill="#ff3b30">${v}</text>`).join('');
     return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
-      <line x1="${padL-8}" y1="${base}" x2="${W-padR}" y2="${base}" style="stroke:var(--line)"/>${b}
-      <polyline points="${pts}" fill="none" stroke="#ff3b30" stroke-width="2"/>${dots}</svg></div>
-      <div class="legend"><span><span class="swatch" style="background:#0071e3"></span>근무일 수</span><span><span class="swatch" style="background:#ff3b30"></span>1일 평균</span></div>`;
+        <line x1="${padL-10}" y1="${base}" x2="${W-padR}" y2="${base}" style="stroke:var(--line)"/>${bars}
+        ${R.length>1?`<polyline points="${pts}" fill="none" stroke="#ff3b30" stroke-width="2.5"/>`:''}${dots}</svg></div>
+      <div class="legend"><span><span class="swatch" style="background:#0071e3"></span>처리일 수</span><span><span class="swatch" style="background:#ff3b30"></span>1일 평균 처리</span></div>`;
   })();
-  const s=[{n:'근무일 수',c:'#0071e3',v:wd},{n:'1일 평균',c:'#ff3b30',v:pd}];
-  return `<div class="adm-note">출처: 원격 시트 · 갱신 <b>${escapeHtml(S.updatedAt||'-')}</b>${S.perPerson?` · <b>${escapeHtml(S.perPerson)}</b>`:''}</div>
-    <div class="card"><div class="card-head"><h3>근무일 수 · 1일 평균</h3><span class="hint">막대 = 근무일 수 · 선 = 1일 평균 처리</span></div>${bars}</div>
-    <div class="card"><div class="card-head"><h3>월별 수치</h3></div>${monthTable(s)}</div>`;
+  return admMonthNote(R)
+    + `<div class="adm-note"><b>처리일 수</b> = 실제로 처리 건이 있었던 날(당직·주말 포함) · <b>평일 수</b> = 주말·공휴일 제외한 날(진행 중인 달은 경과분까지).
+       1일 평균은 <b>처리일 수</b>로 나눕니다 — 주말 당직까지 일한 날을 빼면 실제보다 부풀려집니다.</div>`
+    + `<div class="card"><div class="card-head"><h3>처리일 수 · 1일 평균</h3><span class="hint">막대 = 처리일 수 · 선 = 1일 평균 처리 건수</span></div>${chart}</div>`
+    + `<div class="card"><div class="card-head"><h3>월별 수치</h3><span class="hint">1인 1일 평균 = 총 건수 ÷ 처리일 수 ÷ 그 달 활동 담당자 수</span></div>${table}</div>`;
 }
 
 function renderAdmin(){
