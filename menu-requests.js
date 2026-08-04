@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 349,
- "updatedAt": "2026-08-04 18:15",
+ "version": 350,
+ "updatedAt": "2026-08-04 18:30",
  "days": 30,
  "items": [
   {
@@ -21,12 +21,13 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "replies": [
-    "(유플)\n• 술\n    ◦ 하이볼 종류 7,000원으로 가격 인하"
+    "(유플)\n• 술\n    ◦ 하이볼 종류 7,000원으로 가격 인하",
+    "규빈님, 따로 변경된 사항은 없는데 제가 관련 내용 인지하지 못했던 것 같습니다.\n추후 자체처리 진행하겠습니다 감사합니다!!"
    ],
-   "rc": 2,
-   "lr": "1785834924.094359",
-   "status": "wait",
-   "handler": null,
+   "rc": 6,
+   "lr": "1785835230.646929",
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785834910433159"
   },
   {
