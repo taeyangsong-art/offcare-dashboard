@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 338,
- "updatedAt": "2026-08-04 14:15",
+ "version": 339,
+ "updatedAt": "2026-08-04 14:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1785822231.001159",
+   "date": "2026-08-04",
+   "time": "14:43",
+   "store": "강창구의 찹쌀진순대 수택본점",
+   "biz": "5364700353",
+   "phone": "",
+   "pos": "",
+   "content": "배달 카테고리 생성및 메뉴 추가",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1785822259.789919",
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785822231001159"
+  },
   {
    "ts": "1785818803.350689",
    "date": "2026-08-04",
