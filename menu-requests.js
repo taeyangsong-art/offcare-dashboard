@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 377,
- "updatedAt": "2026-08-05 16:30",
+ "version": 378,
+ "updatedAt": "2026-08-05 16:45",
  "days": 30,
  "items": [
   {
@@ -8961,26 +8961,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783324175931239"
-  },
-  {
-   "ts": "1783323553.035249",
-   "date": "2026-07-06",
-   "time": "16:39",
-   "store": "가쯔레쯔",
-   "biz": "1283788805",
-   "pos": "퍼스트포스",
-   "content": "(고령) 포스 프로그램 잘 모르시겠다고함 / 슬랙 확인시 FDK 사용중으로 추정됨 / 메뉴 등록 요청 드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 7,
-   "lr": "1783323943.336329",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783323553035249"
   }
  ]
 };
