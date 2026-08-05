@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 371,
- "updatedAt": "2026-08-05 15:03",
+ "version": 372,
+ "updatedAt": "2026-08-05 15:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1785910437.213399",
+   "date": "2026-08-05",
+   "time": "15:13",
+   "store": "리사르커피 문정점",
+   "biz": "3753201433",
+   "pos": "토스포스",
+   "content": "리사르커피 구의점 메뉴 데이터를 문정점으로 복사 요청드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785910442.914899",
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785910437213399"
+  },
   {
    "ts": "1785907002.570789",
    "date": "2026-08-05",
@@ -23,7 +43,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1785907048.308739",
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785907002570789"
   },
@@ -8991,26 +9011,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783319743699239"
-  },
-  {
-   "ts": "1783318087.227759",
-   "date": "2026-07-06",
-   "time": "15:08",
-   "store": "스시앤도시락",
-   "biz": "2410201604",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1783318109.793719",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783318087227759"
   }
  ]
 };
