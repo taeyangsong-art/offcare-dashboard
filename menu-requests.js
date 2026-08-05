@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 357,
- "updatedAt": "2026-08-05 09:45",
+ "version": 358,
+ "updatedAt": "2026-08-05 10:00",
  "days": 30,
  "items": [
   {
@@ -23,10 +23,10 @@ window.MENU_REQUESTS = {
    "replies": [
     "동일한 구성으로 선불 테이블 생성 부탁드립니다. :감사합니다꾸벅:"
    ],
-   "rc": 2,
-   "lr": "1785890478.911719",
-   "status": "wait",
-   "handler": null,
+   "rc": 3,
+   "lr": "1785891131.117659",
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785890438367339"
   },
   {
