@@ -107,6 +107,10 @@ function kstHM(ts) {
   const d = new Date(parseFloat(ts) * 1000 + 9 * 3600 * 1000);
   return `${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())}`;
 }
+function nowKstStamp() {
+  const d = new Date(Date.now() + 9 * 3600 * 1000);
+  return `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())}`;
+}
 function kstDate(ts) {
   const d = new Date(parseFloat(ts) * 1000 + 9 * 3600 * 1000);
   return `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())}`;
@@ -263,12 +267,16 @@ async function tallyInto(msgs, ch, counts, pending, done, opts) {
 
 // 설치 OB 수집 — '설치일정 확인해주세요' 워크플로 글 중 '<이름>확인' 이모지가 찍힌 것만.
 // 워크플로 글은 봇이 올리고 본문이 blocks 에만 있는 경우가 있어 blocksText 로 읽는다.
-function tallyInstallOb(msgs) {
+function tallyInstallOb(msgs, stats) {
+  const st = stats || {};
+  st.msgs = msgs.length; st.posts = 0; st.reacted = 0;
   const out = [];
   for (const m of msgs) {
     if (m.subtype && m.subtype !== 'bot_message') continue;
     const text = blocksText(m).replace(/&gt;/g, '>').replace(/&lt;/g, '<').replace(/&amp;/g, '&');
     if (!OB_TRIGGER.test(text)) continue;                 // 워크플로 글이 아닌 잡담 제외
+    st.posts++;
+    if ((m.reactions || []).length) st.reacted++;
     const names = (m.reactions || []).map(r => r.name);
     if (names.some(n => /중복/.test(n)) || names.includes('x')) continue;   // 중복·잘못올린글 제외
     let who = null;
@@ -534,16 +542,28 @@ async function tallyVoc(msgs, voc, channelId, opts) {
       if (it.ts && parseFloat(it.ts) < obOldest) (keep[d] = keep[d] || []).push(it);
     }
 
-    let obMsgs = null;
+    let obMsgs = null, obErr = '';
     try { obMsgs = await fetchAllRange(OB_CHANNEL, obOldest, latestBound); }
-    catch (e) { console.error(`  ⚠ [설치OB] 채널 읽기 실패(${e.message}) — 이번 실행 OB 집계 생략(기존 값 유지)`); }
+    catch (e) { obErr = e.message; console.error(`  ⚠ [설치OB] 채널 읽기 실패(${obErr}) — 이번 실행 OB 집계 생략(기존 값 유지)`); }
 
+    // 진단 흔적을 데이터에 남긴다 — Actions 로그를 못 볼 때 '못 읽음' 과 '이모지 없음' 을 구분하려면 필요하다.
+    // (0건일 때 원인이 채널 권한인지, 워크플로 글이 안 잡힌 건지, 이모지만 안 찍힌 건지)
+    const scan = { at: nowKstStamp(), channel: OB_CHANNEL, ok: !!obMsgs, error: obErr, msgs: 0, posts: 0, reacted: 0, done: 0 };
     if (obMsgs) {
-      const r = applyObResults(data, tallyInstallOb(obMsgs), { priorDone, keep, hadAnyOb, obMinDate, todayKstDate });
-      console.log(`[설치OB] ${obMinDate}~${targetDate} 재집계: 완료 ${r.total}건 / ${r.days}일${hadAnyOb ? '' : ' (첫 집계 — 글 게시일 기준으로 분산)'}`);
+      const st = {};
+      const found = tallyInstallOb(obMsgs, st);
+      Object.assign(scan, { msgs: st.msgs, posts: st.posts, reacted: st.reacted, done: found.length });
+      const r = applyObResults(data, found, { priorDone, keep, hadAnyOb, obMinDate, todayKstDate });
+      console.log(`[설치OB] ${obMinDate}~${targetDate} 재집계: 완료 ${r.total}건 / ${r.days}일` +
+                  ` (채널 메시지 ${st.msgs} · 워크플로 글 ${st.posts} · 이모지 달린 글 ${st.reacted} · 완료판정 ${found.length})` +
+                  `${hadAnyOb ? '' : ' (첫 집계 — 글 게시일 기준으로 분산)'}`);
+      if (st.posts === 0) console.log("  ⚠ '설치일정 확인' 문구가 잡힌 글이 0건 — OB_TRIGGER 가 워크플로 문구와 안 맞을 수 있음");
+      else if (found.length === 0) console.log(`  ⚠ 워크플로 글 ${st.posts}건은 보이지만 완료 이모지(<이름>확인)가 하나도 없음`);
     }
+    data.obScan = scan;
   } else {
     console.log('[설치OB] 미집계 — OB_CHANNEL 미설정(#ishopcare_new_주문관리 채널 ID 필요)');
+    data.obScan = { at: nowKstStamp(), channel: '', ok: false, error: 'OB_CHANNEL 미설정', msgs: 0, posts: 0, reacted: 0, done: 0 };
   }
 
   // ===== VOC 롤링 재집계 (minDate~오늘) — 과거 설문도 오늘 '확인+완료' 찍히면 오늘 완료로 반영 =====
