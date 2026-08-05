@@ -3,10 +3,35 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 383,
- "updatedAt": "2026-08-05 18:15",
+ "version": 384,
+ "updatedAt": "2026-08-05 18:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1785921386.421619",
+   "date": "2026-08-05",
+   "time": "18:16",
+   "store": "주식회사 찬란한아구직영사업본부",
+   "biz": "8158702018",
+   "pos": "토스포스",
+   "content": "토스pos 메뉴등록 부탁드립니다.\n옵션의 경우 시트에 옵션 시트 참고 부탁드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 1,
+   "att": [
+    {
+     "name": "토스플레이스_상품등록_찬란한아구.xlsx",
+     "path": "menu-files/1785921386_421619-0.xlsx"
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785921391.848219",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785921386421619"
+  },
   {
    "ts": "1785921324.217409",
    "date": "2026-08-05",
@@ -21,8 +46,8 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [],
-   "rc": 0,
-   "lr": "",
+   "rc": 3,
+   "lr": "1785921451.592869",
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785921324217409"
