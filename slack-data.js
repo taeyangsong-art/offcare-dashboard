@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2606,
+  "version": 2607,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -79145,11 +79145,11 @@ window.SLACK_DATA = {
                 "cat": "필요한 기능이 없거나 몰라서 불편"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 토스장애이슈 토스장애이슈",
+            "doneDate": "2026-08-05"
           }
         ],
         "praises": [
@@ -84753,11 +84753,27 @@ window.SLACK_DATA = {
       }
     },
     "2026-08-05": {
-      "counts": {},
+      "counts": {
+        "menu": {
+          "김규빈": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:04",
+          "store": "호반의쉼터",
+          "biz": "3860603392",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "메뉴 이미지 등록 요청",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
@@ -84766,7 +84782,7 @@ window.SLACK_DATA = {
         "byEmp": {},
         "items": []
       },
-      "updatedAt": "00:35",
+      "updatedAt": "09:04",
       "voc": {
         "responses": 1,
         "install": {
