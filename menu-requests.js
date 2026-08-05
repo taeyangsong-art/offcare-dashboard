@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 358,
- "updatedAt": "2026-08-05 10:00",
+ "version": 359,
+ "updatedAt": "2026-08-05 10:15",
  "days": 30,
  "items": [
   {
@@ -9251,46 +9251,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783301358917419"
-  },
-  {
-   "ts": "1783300379.012149",
-   "date": "2026-07-06",
-   "time": "10:12",
-   "store": "하루커피",
-   "biz": "2384901210",
-   "phone": "",
-   "pos": "스파로스포스",
-   "content": "스파로스 / 메뉴 추가 및 삭제 요청드립니다 :man-bowing:",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1783300706.132319",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783300379012149"
-  },
-  {
-   "ts": "1783299758.463829",
-   "date": "2026-07-06",
-   "time": "10:02",
-   "store": "퍼센트 아라비카 인천공항점",
-   "biz": "8848701922",
-   "phone": "010-2784-7258",
-   "pos": "",
-   "content": "여의도63빌딩점과 동일하게 메뉴 복사",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783299766.383439",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783299758463829"
   }
  ]
 };
