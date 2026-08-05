@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 368,
- "updatedAt": "2026-08-05 14:15",
+ "version": 369,
+ "updatedAt": "2026-08-05 14:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1785907002.570789",
+   "date": "2026-08-05",
+   "time": "14:16",
+   "store": "목포낙지아구찜탕",
+   "biz": "1221423519",
+   "pos": "토스포스",
+   "content": "토스POS 메뉴등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1785907048.308739",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785907002570789"
+  },
   {
    "ts": "1785906862.147539",
    "date": "2026-08-05",
@@ -20,9 +40,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1785906867.241299",
+   "replies": [
+    "• 사진과 동일하게 등록 요청 / 옵션x"
+   ],
+   "rc": 2,
+   "lr": "1785906979.624879",
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785906862147539"
@@ -43,10 +65,10 @@ window.MENU_REQUESTS = {
    "replies": [
     "행사소주 1900 > 2500\n행사맥주 1900 > 2500"
    ],
-   "rc": 2,
-   "lr": "1785906154.138919",
-   "status": "wait",
-   "handler": null,
+   "rc": 3,
+   "lr": "1785907735.303269",
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785906125711779"
   },
   {
@@ -8989,110 +9011,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783318087227759"
-  },
-  {
-   "ts": "1783315715.398289",
-   "date": "2026-07-06",
-   "time": "14:28",
-   "store": "대패삼국지 창원중앙역점",
-   "biz": "2191102874",
-   "pos": "기타",
-   "content": "별빛청하 가격 6,000원",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/1SPiAmYOIFmAflqOeaNk00tkYBfVj-mWW/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 6,
-   "lr": "1783320776.260829",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783315715398289"
-  },
-  {
-   "ts": "1783315542.790259",
-   "date": "2026-07-06",
-   "time": "14:25",
-   "store": "츠하오",
-   "biz": "1561402744",
-   "pos": "토스포스",
-   "content": "없음",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/1Ix3aMoD4ggrWP5ZxtS9ApVx6_B_XstOV/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783315548.082799",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783315542790259"
-  },
-  {
-   "ts": "1783315426.743699",
-   "date": "2026-07-06",
-   "time": "14:23",
-   "store": "대패삼국지 창원중앙역점",
-   "biz": "2191102874",
-   "pos": "기타",
-   "content": "별빛청하 가격 6,000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783315430.406219",
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783315426743699"
-  },
-  {
-   "ts": "1783315368.912519",
-   "date": "2026-07-06",
-   "time": "14:22",
-   "store": "뚜레쥬르 킨텍스1전시장",
-   "biz": "1283674814",
-   "pos": "퍼스트포스",
-   "content": "메뉴 작업",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783315373.576309",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783315368912519"
-  },
-  {
-   "ts": "1783315215.198779",
-   "date": "2026-07-06",
-   "time": "14:20",
-   "store": "대패삼국지 창원중앙역점",
-   "biz": "2191102874",
-   "pos": "기타",
-   "content": "별빛청하",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1783315545.231449",
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783315215198779"
   }
  ]
 };
