@@ -3,10 +3,52 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 374,
- "updatedAt": "2026-08-05 15:45",
+ "version": 375,
+ "updatedAt": "2026-08-05 16:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1785912768.004399",
+   "date": "2026-08-05",
+   "time": "15:52",
+   "store": "국밥집",
+   "biz": "1434101522",
+   "pos": "토스포스",
+   "content": "토스POS 메뉴등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1785912830.259729",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785912768004399"
+  },
+  {
+   "ts": "1785912753.618769",
+   "date": "2026-08-05",
+   "time": "15:52",
+   "store": "멕시카나 망포점",
+   "biz": "3302901497",
+   "pos": "기타",
+   "content": "키오스크 메뉴 등록",
+   "special": "생맥주 판매",
+   "drive": [
+    "https://drive.google.com/file/d/1Rq-SlVTo2U9f6QADeBUku9W10dma1Bfn/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785912758.357089",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785912753618769"
+  },
   {
    "ts": "1785912244.475559",
    "date": "2026-08-05",
@@ -22,11 +64,13 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1785912251.562529",
-   "status": "wait",
-   "handler": null,
+   "replies": [
+    "닭가슴살샌드위치\n베이컨샌드위치\n에그마요샌드위치\n햄샌드위치\n\n네개 메뉴에 옵션 3개 추가"
+   ],
+   "rc": 2,
+   "lr": "1785913096.429199",
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785912244475559"
   },
   {
@@ -8997,26 +9041,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783321311162449"
-  },
-  {
-   "ts": "1783320919.801729",
-   "date": "2026-07-06",
-   "time": "15:55",
-   "store": "밋짜(MIZZA)",
-   "biz": "6330103857",
-   "pos": "",
-   "content": "하이오더용 선불테이블 4대 생성 부탁드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1783321091.012829",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783320919801729"
   }
  ]
 };
