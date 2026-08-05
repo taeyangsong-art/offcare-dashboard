@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 381,
- "updatedAt": "2026-08-05 17:45",
+ "version": 382,
+ "updatedAt": "2026-08-05 18:00",
  "days": 30,
  "items": [
   {
@@ -23,8 +23,8 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1785912830.259729",
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785912768004399"
   },
   {
@@ -42,10 +42,12 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1785912758.357089",
-   "status": "confirm",
+   "replies": [
+    ":telephone_receiver: 전화 완료"
+   ],
+   "rc": 2,
+   "lr": "1785919778.579179",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785912753618769"
   },
@@ -8881,26 +8883,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783382409161179"
-  },
-  {
-   "ts": "1783328059.158559",
-   "date": "2026-07-06",
-   "time": "17:54",
-   "store": "녹돈집 청주테크노폴리스점",
-   "biz": "7360603525",
-   "pos": "",
-   "content": "천안직영점 복사해주세요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1783329205.190629",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783328059158559"
   }
  ]
 };
