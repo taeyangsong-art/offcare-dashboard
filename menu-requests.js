@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 375,
- "updatedAt": "2026-08-05 16:00",
+ "version": 376,
+ "updatedAt": "2026-08-05 16:15",
  "days": 30,
  "items": [
   {
@@ -9001,46 +9001,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783322650692259"
-  },
-  {
-   "ts": "1783321668.767299",
-   "date": "2026-07-06",
-   "time": "16:07",
-   "store": "꼬마한입",
-   "biz": "2292103199",
-   "pos": "",
-   "content": "메뉴 이미지 추가 및 옵션 수정 요청드립니다:man-bowing:",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1783322901.883859",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783321668767299"
-  },
-  {
-   "ts": "1783321311.162449",
-   "date": "2026-07-06",
-   "time": "16:01",
-   "store": "에스티와이 주식회사",
-   "biz": "1238621919",
-   "pos": "",
-   "content": "메뉴",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1783322286.939379",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783321311162449"
   }
  ]
 };
