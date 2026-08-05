@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 365,
- "updatedAt": "2026-08-05 13:15",
+ "version": 366,
+ "updatedAt": "2026-08-05 13:31",
  "days": 30,
  "items": [
   {
@@ -9071,46 +9071,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783313636994019"
-  },
-  {
-   "ts": "1783312218.139329",
-   "date": "2026-07-06",
-   "time": "13:30",
-   "store": "쭈닭한상",
-   "biz": "7822301997",
-   "pos": "퍼스트포스",
-   "content": "(유플) 수정 요청 사항이 많아 불가피 요청 드리게되었습니다. :꾸벅:",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 7,
-   "lr": "1783314876.938479",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783312218139329"
-  },
-  {
-   "ts": "1783311664.247869",
-   "date": "2026-07-06",
-   "time": "13:21",
-   "store": "압구정찌개마을",
-   "biz": "3671401059",
-   "pos": "퍼스트포스",
-   "content": "퍼스트 포스 사용중, 메뉴 삭제 요청하셨습니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1783314477.160539",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783311664247869"
   }
  ]
 };
