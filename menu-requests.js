@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 359,
- "updatedAt": "2026-08-05 10:15",
+ "version": 360,
+ "updatedAt": "2026-08-05 10:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1785893003.184369",
+   "date": "2026-08-05",
+   "time": "10:23",
+   "store": "강창구의 찹쌀진순대 수택본점",
+   "biz": "5364700353",
+   "phone": "",
+   "pos": "",
+   "content": "메뉴 수정",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785893015.468569",
+   "status": "done",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785893003184369"
+  },
   {
    "ts": "1785890438.367339",
    "date": "2026-08-05",
@@ -9231,26 +9251,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783302091996719"
-  },
-  {
-   "ts": "1783301358.917419",
-   "date": "2026-07-06",
-   "time": "10:29",
-   "store": "오카에시",
-   "biz": "7620403383",
-   "phone": "01035649677",
-   "pos": "토스포스",
-   "content": "ksnet 토플파에 등록 된 메뉴 >> kis okpos 에  복사 부탁드립니다. (티오더 연동 예정 매장)\n• N54081\n• TID - 13053192 (01/5319\n• 테이블 6개 + 마스터 테이블 1개",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1783306642.731049",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783301358917419"
   }
  ]
 };
