@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2666,
+  "version": 2667,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -87680,7 +87680,67 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "00:00"
+      "updatedAt": "00:06",
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 0,
+          "low": 0
+        },
+        "nps": {
+          "count": 1,
+          "low": 1
+        },
+        "high": {
+          "install": 0,
+          "nps": 0
+        },
+        "npsDist": {
+          "1": 1
+        },
+        "installDist": {},
+        "byIndustry": {},
+        "byTenure": {
+          "3개월": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "byVan": {
+          "KPN": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 1
+        },
+        "alerts": [
+          {
+            "time": "00:06",
+            "store": "안녕,멍멍",
+            "storeId": "452769",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "중간에 시스템점검인지 뭔지해서 결제도안되고 토스간말기계가 계속 연결 끊기고해서 연락했더니 인터넷문제라고만하고 인터넷에선 아무문제없다고하고 일단 제대로 쓰고있지않음",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
+        "praises": []
+      }
     }
   },
   "resp": {
@@ -103958,7 +104018,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-06 00:01",
+    "at": "2026-08-06 00:15",
     "channel": "C0AL2V3MM7U",
     "ok": true,
     "error": "",
