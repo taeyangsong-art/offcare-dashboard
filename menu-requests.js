@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 378,
- "updatedAt": "2026-08-05 16:45",
+ "version": 379,
+ "updatedAt": "2026-08-05 17:00",
  "days": 30,
  "items": [
   {
@@ -8941,26 +8941,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783326098665309"
-  },
-  {
-   "ts": "1783324175.931239",
-   "date": "2026-07-06",
-   "time": "16:49",
-   "store": "명성정육식당",
-   "biz": "6110658769",
-   "pos": "",
-   "content": "식사류에 한우소머리국밥 12000원 추가 부탁드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 0,
-   "lr": "",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783324175931239"
   }
  ]
 };
