@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 363,
- "updatedAt": "2026-08-05 11:30",
+ "version": 364,
+ "updatedAt": "2026-08-05 12:17",
  "days": 30,
  "items": [
   {
@@ -19,6 +19,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1785893015.468569",
@@ -38,6 +39,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "동일한 구성으로 선불 테이블 생성 부탁드립니다. :감사합니다꾸벅:"
    ],
@@ -59,6 +61,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1785888303.139599",
@@ -78,6 +81,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "메뉴등록 완료"
    ],
@@ -99,6 +103,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785834256497659\n------\n상품 터치 시, 옵션에서\n\n1. 블렌드 선택 _ RR1 / RR2 / 디카페인\n2. 온도 _ ICE / HOT",
     "+\n아포가토는 별도로 옵션\n1. 맛 _ 바닐라 OR 녹차\n2. 원두선택 _ RR1 OR RR2 OR 디카페인\n3. 온도 _ only ice\n---\n아래 이미지는 상품별 블렌드/온도 옵션입니다"
@@ -121,6 +126,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "(유플)\n• 술\n    ◦ 하이볼 종류 7,000원으로 가격 인하",
     "규빈님, 따로 변경된 사항은 없는데 제가 관련 내용 인지하지 못했던 것 같습니다.\n추후 자체처리 진행하겠습니다 감사합니다!!"
@@ -143,6 +149,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "블렌드 종류 : RR1 / RR2 / 디카페인\n\n현재는 블렌드별로 카테고리가 따로 빠져있는데,\n위 블렌드 + 온도(ICE OR HOT) 을 옵션으로 따로 빼기를 희망하십니다..!\n\n----\n에스프레소 / 카푸치노 ONLY HOT\n쉐이크 / 샤케라또 / 아포다토 / 기네스 크림 라떼 ONLY ICE",
     "카테고리는 에스프레소 라는 카테고리에 메뉴를 담고,\n\n그 카테고리안에 리필아메리카노 까지 메뉴를 넣기를 희망하십니다..!\n(옵션에는 블렌드/온도)",
@@ -168,6 +175,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "캔음료 2.000원\n얼음컵1.000원\n아메리카노2.000원"
    ],
@@ -189,6 +197,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "찐만두(고기)\n찐만두(김치)\n\n수정 완료"
    ],
@@ -210,6 +219,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1785828082.259639",
@@ -229,6 +239,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1785828700.295919",
@@ -248,6 +259,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1785822259.789919",
@@ -267,6 +279,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "이벤트 맥주,생맥주,소주 만들기"
    ],
@@ -288,6 +301,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "• 한치 15,000원\n• 야채곱창 15,000원\n• 알곱창 16,000원\n• 소곱창 전골 29,000원",
     "헉 번호를 안보내드렸네요. 제가 발송드리겠습니당 감사합니다!!!!"
@@ -310,6 +324,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "발명가의 커피 메뉴입니다\n\n커피\n에스프레소 4000\n아메리카노 4000 / 4500\n카페라떼    5000 / 5500\n바닐라라떼 5500 / 6000\n카푸치노    5000 / 5500\n\n라떼\n말차라떼   5000 / 6000\n밀크티      5500 / 6000\n아샷추 아이스 5500\n(아이스티+에스프레소샷추가)\n\n에이드\n레몬에이드  6000\n자몽에이드  6000\n유자에이드  6000\n청귤에이드  6000\n\n스무디\n딸기스무디  6500\n망고스무디  6500\n블루베리스무디 6500\n\n생과일쥬스\n토마토쥬스  7000\n키위쥬스     7000\n파인애플쥬스  7000\n블루베리쥬스  7000\n\n스페셜커피\n에스프레소꼰빠냐  5500\n아인슈페너   6000 / 6500\n\n티\n얼그레이티   5000\n캐모마일티   5000\n페퍼민트티   5000"
    ],
@@ -331,6 +346,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "완료"
    ],
@@ -354,6 +370,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "선유님, 규빈님..!! 해당매장 오후 4시 영업시작이라 메뉴변경 급하다고 요청주셔서 바쁘시겠지만 확인부탁드리겠습니다!:pray:",
     "다 하신거같운데욥",
@@ -380,6 +397,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 6,
    "lr": "1785808462.251309",
@@ -399,6 +417,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1785807950.061809",
@@ -418,6 +437,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "1과 1-1로 나누어 달라 요청주셨습니다."
    ],
@@ -439,6 +459,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "200개 넘어가는데",
     "6칸에서 5칸으로 일렬로 정리해달라고하넴",
@@ -471,6 +492,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1785742720.625699",
@@ -490,6 +512,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1785742670.279159",
@@ -509,6 +532,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "메일 없어 연락했으나 부재",
     "님 안녕하세요!\n아래와 같이 메일 수신 확인되어 전달드립니다. 혹시 등록 진행 후 완료 시 문자 발송 가능하실까요~?",
@@ -532,6 +556,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "넹.."
    ],
@@ -553,6 +578,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 4,
    "lr": "1785736212.781379",
@@ -572,6 +598,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1785733157.397769",
@@ -591,6 +618,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "• 마늘갈비살, 매콤 갈비살, 생갈비살 19000원 > 20000원으로 변경"
    ],
@@ -612,6 +640,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "반찬가게 인지라 금액으로 메뉴 생성해서 사용하고 있다함 .\n500원 / 1000원 이후 천원단위로 25000원 까지 생성요청  /"
    ],
@@ -633,6 +662,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "완료"
    ],
@@ -654,6 +684,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1785727774.875499",
@@ -673,6 +704,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "*<요청사항>* \n\n3-2를 3-1로 수정\n1층 14번 삽입"
    ],
@@ -694,6 +726,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1785646371.908329",
@@ -713,6 +746,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "메뉴 상세 설명 등록 및 외국어 메뉴 동시 등록 요청"
    ],
@@ -734,6 +768,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "2차부재 솔라피",
     "완료"
@@ -761,6 +796,7 @@ window.MENU_REQUESTS = {
      "path": "menu-files/1785552823_909339-0.pdf"
     }
    ],
+   "datt": [],
    "replies": [
     "오늘 이내 테이블 등록 안내 / 제가 하려고 했는데 어려워 전달드립니다. 부탁드립니다 ㅠㅠ !",
     "태양님 여기 시간되실때 한번 부탁드립니다..! 테이블 비우기 안내 했으나, 기존 테이블 삭제 안됨 이슈...."
@@ -783,6 +819,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "요리류에 있는 미니탕수육\n\n15,000원 으로 수정 요청하셨습니다.",
     "태양님. 제가 OK 포스 메뉴 수정 방법을 몰라서 부득이하게 요청드립니다. :눈물햄스터:\n\n가능하실 때 수정 한 번만 부탁드립니다. :감사합니다꾸벅:"
@@ -810,6 +847,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "옵션 등록 완료"
    ],
@@ -831,6 +869,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "카테고리: 이건어때\n메뉴명: 육회, 육사시미\n가격: 27,000원"
    ],
@@ -852,6 +891,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "• 고수무침 \n• 소고기 마라샹궈\n• 홍콩 뭐라했는데 .. \n• 망고화채 \n• 깐풍먹태\n• 고구마튀김 \n• 꿔바로우 \n• 덕 냉채 \n• 파인애플 \n• 어향갈비  \n이거 등록해주기로 ..? 했다는데 등록이 안되었다고해서여 ... 안보인데여 ... 확인 한번 부탁드려두 댈까염 ....",
     "아하 .. 오캐이 .."
@@ -874,6 +914,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1785484907.908019",
@@ -893,6 +934,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "메뉴1인에 냉삼 12000원, 물냉면 10000원 비빔냉면 10000원 콩국수 12000원 된장찌개 5000원 올려주세요\n현미과자 5000원 누룽지 7000원"
    ],
@@ -914,6 +956,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1785483185.811699",
@@ -933,6 +976,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1785482516.934249",
@@ -952,6 +996,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1785476856.450859",
@@ -973,6 +1018,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "완료"
    ],
@@ -994,6 +1040,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "https://w1659946222-hxm266180.slack.com/archives/C0ADC9759KQ/p1785472474154069?thread_ts=···.315209&cid=C0ADC9759KQ",
     "클로드쓰자"
@@ -1016,6 +1063,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "완료",
     "메뉴 할인 사용 방법 교육"
@@ -1038,6 +1086,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1785466215.389449",
@@ -1057,6 +1106,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "• 피자, 크러스트 안에 있는 마라 치킨항목 삭제요청\n• 어제 상품등록 후 페이지 수 1장이 넘어가는데 한눈에 볼수있게 한칸에 두개의 메뉴등록이 가능한지 문의(어제 추가한 할라피뇨가 갈릭소스탭이랑 같이 붙어있는 것처럼)"
    ],
@@ -1078,6 +1128,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1785463159.589959",
@@ -1097,6 +1148,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "물냉면 13,000원\n비빔냉면 13,000원\n물냉 곱배기 17,000원\n비냉곱배기 17,000원",
     "감사합니당 :감사합니다꾸벅:"
@@ -1119,6 +1171,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "토스포스 오전 10시까지 가능할까요?"
    ],
@@ -1140,6 +1193,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1785456357.377909",
@@ -1159,6 +1213,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1785456028.733289",
@@ -1180,6 +1235,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1785403699.459429",
@@ -1199,6 +1255,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1785470378.142389",
@@ -1218,6 +1275,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "등록 완료 / 이미지 등록 방법 솔라피 발송"
    ],
@@ -1241,6 +1299,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "맥시카나 메이트포스",
     "보류",
@@ -1264,6 +1323,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "오 그렇군요 감사합니다"
    ],
@@ -1285,6 +1345,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1785397566.440669",
@@ -1304,6 +1365,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1785397786.063809",
@@ -1323,6 +1385,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 4,
    "lr": "1785395258.915069",
@@ -1342,6 +1405,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "제가햇어요"
    ],
@@ -1363,6 +1427,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "담당자 번호로 :telephone_receiver: 아직 장사 안한다고 하셔서 토플파 복사, 재온보딩으로 진행하기로 함"
    ],
@@ -1384,6 +1449,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1785387784.067749",
@@ -1403,6 +1469,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1785381470.662199",
@@ -1425,6 +1492,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "기존에 몇개 추가되어있음 제외하고 완료"
    ],
@@ -1446,6 +1514,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1785377685.281369",
@@ -1465,6 +1534,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "여기 기장점입니다!",
     "네네 감사합니닷!"
@@ -1487,6 +1557,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "카테고리: 커피\n메뉴명: 고구마토핑 감자토핑\n가격: 1,000 ~ 1,500원으로 변경 요청"
    ],
@@ -1508,6 +1579,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "해상도 매우작음 메일 요청",
     "메일 보내주시기로함 보류"
@@ -1530,6 +1602,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "• 피자 : 비프타코 15900원 /치킨타코 15900원 \n• 크러스트 : 비프타코크러스트 18900원 / 치킨타코크러스트 18900원\n• 추가목록에 피클과 갈릭소스 옆 또는 아래(비어있는 자리에) 할라피뇨 500원 추가 요청 주셨습니다."
    ],
@@ -1551,6 +1624,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1785310990.246239",
@@ -1570,6 +1644,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 11,
    "lr": "1785370304.816339",
@@ -1589,6 +1664,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "피자 카테고리\n비프타코피자 15,900원\n치킨타코피자 15,900원\n\n기존 메뉴 중간에 가격 오름차순으로 정렬 부탁드리겠습니다."
    ],
@@ -1610,6 +1686,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1785299084.227769",
@@ -1629,6 +1706,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 4,
    "lr": "1785291130.947199",
@@ -1648,6 +1726,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "익일 오후 3시 재연락 요청 예약메세지 작성 완료\nas이관"
    ],
@@ -1669,6 +1748,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "최근에 쿠팡이츠 등록하셨다고 파일은 따로 주시지 않으셨는데 받아올까요..!!",
     "요청했습니다!!!! 들어오면 전달드릴게요!!!!"
@@ -1691,6 +1771,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "완료"
    ],
@@ -1712,6 +1793,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1785225859.584619",
@@ -1731,6 +1813,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1785225229.863439",
@@ -1750,6 +1833,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "퇴근하고..",
     "쌀국수공방 / 미스터국수왕 / 쭈꾸미클라스",
@@ -1778,6 +1862,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "이메일: <mailto:···|···>",
     "님 감사합니다! 대표님께서 다른 사업장도 동일하게 엑셀 파일 받기 원하시는데 새로 업로드할까요 아님 여기에 남겨드리면 될까요?"
@@ -1800,6 +1885,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1785222163.810409",
@@ -1819,6 +1905,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1785220395.131739",
@@ -1838,6 +1925,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "https://asp.upsolution.co.kr/BasicSetting/index/100006#2\n메뉴 관리 > 메뉴판 관리",
     "오늘의 음료 sold out 되어잇음",
@@ -1862,6 +1950,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "https://w1659946222-hxm266180.slack.com/archives/C07CL4BV9QT/p1785218226842739?thread_ts=···.442079&cid=C07CL4BV9QT",
     "제미나이 사춘기 이슈",
@@ -1885,6 +1974,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "• 소고기 \n 생갈비 29,000원, 소왕갈비 26,000원, 안창살 17,000원, 갈비살 17,000원_포장가격도 동일하게 변경\n• 식사\n갈비탕 13,000원_포장가격도 동일하게 변경"
    ],
@@ -1906,6 +1996,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1785216489.268669",
@@ -1925,6 +2016,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "메뉴사진입니다!"
    ],
@@ -1946,6 +2038,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "아이고.. 이미지를 이렇게 주시면 등록 불가",
     "통화로 이미지 재첨부 안내 / 메뉴 먼저 등록",
@@ -1969,6 +2062,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "메뉴 수정부탁드립니다!\n• 버섯갈비전골 60,000원(대), 35,000원(중)"
    ],
@@ -1990,6 +2084,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "요기서 진행할게ㅣ욥"
    ],
@@ -2011,6 +2106,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 1,
    "att": [],
+   "datt": [],
    "replies": [
     "채널톡 올려주시어 요청드렸는데 위에 내용 확인을 미처못했습니다.\n동일 매장 맞습니다"
    ],
@@ -2032,6 +2128,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "안녕하세요, 바쁘시겠지만 해당 대표님 온도감이 많이 높으셔서 빠른 등록 가능할까요ㅜㅜ",
     "님 여기 토스포스맞죠?"
@@ -2061,6 +2158,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "영문명 :loading5:"
    ],
@@ -2082,6 +2180,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1785203358.722429",
@@ -2101,6 +2200,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "완룝"
    ],
@@ -2122,6 +2222,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1785140279.612389",
@@ -2141,6 +2242,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "여기 동일 사업자번호인데 2van 입니다.\nKSnet 토플파에 등록되어있는 메뉴  KPN 쪽으로 복사 부탁 드리겠습니다. :꾸벅:",
     "여기 단말기 양도 받아서 1avn 만드는 작업중에 있습니다..!\n해당 매장은 동일 문의 드릴 일 없도록 깔끔하게 처리 해두겠습니다...!  :햄스터-꾸벅:"
@@ -2163,6 +2265,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "육회, 육사시미 29,000원 인상 부탁드려요 대표님 뒷북",
     "24017",
@@ -2187,6 +2290,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "무알콜 맥주(500ml) 6000원\n\n카스(500ml) 1+1 4900원\n카스(300ml) 1+1 3500원\n블랑1 +1 6900원\n\n메뉴생성 부탁드립니다"
    ],
@@ -2208,6 +2312,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "[가격수정]\n카테고리 : 사이드\n메뉴명 : 어린이용 생선\n금액 : 5,000 > 6,000\n\n카테고리 : 사이드\n메뉴명 : 계란찜\n가격 : 5,000 > 6,000\n\n[메뉴추가]\n카테고리 : 사이드\n메뉴명 : 양념특양한판(500g)\n가격 : 63,000원",
     "님, 혹시 제가 올린 원격이 문제이신가요.... :동공지진:",
@@ -2232,6 +2337,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "백업, 전화부재"
    ],
@@ -2253,6 +2359,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "상품명, 상품가격(정가), 수량 등록 부탁드립니다 :woman-bowing:",
     "헉 다음에는 제가 먼저 엑셀로 요청하겠습니다, 불편 드려 죄송해요!ㅜㅜ"
@@ -2275,6 +2382,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "수정은 했는데 전화를 안받으심.. 업솔루션이라 꼭꼭 확인필요"
    ],
@@ -2299,6 +2407,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "요청사항을 모르겠어서 문자"
    ],
@@ -2320,6 +2429,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "완료"
    ],
@@ -2341,6 +2451,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 3,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1785114312.782549",
@@ -2360,6 +2471,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "keicc237005",
     "감자핫도그 2500원 > 3000원\n감자모짜 3000원 > 3500원\n고구마핫도그 2500원 > 3000원\n고구마모짜 3000원 > 3500원\n식혜 400ml를 삭제\n식혜 1.5L를 삭제\n식혜1.5빈자리에 닭고기모짜 3000원 추가",
@@ -2383,6 +2495,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1785110172.650829",
@@ -2402,6 +2515,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784990915.899519",
@@ -2421,6 +2535,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "님 안녕하세요.\n메뉴 작업 완료되었는지 문의 차 연락주셔서요.\n솔라피 내역도 확인되지않아 완료여부 체크한 번 부탁드립니다.",
     "넹 토플파나 대시보드 보시면 아시겠지만 다 완료했어욤",
@@ -2449,6 +2564,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1784969210.339079",
@@ -2468,6 +2584,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784954851.576649",
@@ -2487,6 +2604,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "```식사메뉴 ```\n• 물냉면곱빼기 10000 \n• 비빔냉면꼽빼기 10000"
    ],
@@ -2508,6 +2626,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "넵 감사합니다 ㅠㅠ !",
     "아직 매장 출근전이셔서 삭제 후 재등록 예정 안내 완료입니다!"
@@ -2532,6 +2651,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784933167.252149",
@@ -2551,6 +2671,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784887728.374809",
@@ -2570,6 +2691,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "호래기1마리 3000원 -> 호래기 5마리 15000원"
    ],
@@ -2591,6 +2713,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "[Thali] 라는 메뉴에 옵션을 하나 추가해서 적용 부탁 드립니다.\n\n• 추가할 옵션 이름 => 난 선택(런치용)\n    ◦ 현재 `난 선택(셋트용)`이 있는데 이거랑 똑같이 만들어서 이름만 런치용으로 바꾼 후 [Thali] 메뉴 선택 시 필수 옵션으로 넣어달라고 요청주셨습니다.\n    ◦ [Thali] 메뉴 옵션에 `난 선택(셋트용)` 은 삭제 해 주시고 난 선택(런치용)을 넣어주시면 됩니다. 감사합니다. :꾸벅:",
     "수정 후 솔라피 발송 부탁 드립니다!"
@@ -2613,6 +2736,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784883038.805889",
@@ -2635,6 +2759,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784882385.149719",
@@ -2654,6 +2779,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "완"
    ],
@@ -2675,6 +2801,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "님 안녕하세요!\n해당 건 빠른 요청주시어 확인 가능하실까요?",
     "넹"
@@ -2697,6 +2824,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "https://w1659946222-hxm266180.slack.com/archives/C0ADC9759KQ/p1784868888348889?thread_ts=···.805749&cid=C0ADC9759KQ",
     "https://w1659946222-hxm266180.slack.com/archives/C0ADC9759KQ/p1784868896585869?thread_ts=···.805749&cid=C0ADC9759KQ"
@@ -2721,6 +2849,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784868336.800179",
@@ -2740,6 +2869,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784871955.611119",
@@ -2759,6 +2889,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 10,
    "lr": "1784895422.760559",
@@ -2780,6 +2911,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "커피 1L 보틀 옵션으로",
     "아메리카노  3500 인상\n카페라떼 4800\n바닐라라떼 5800\n헤이즐넛 4000\n헤이즐넛 라떼 5300\n\n옵션 추가"
@@ -2802,6 +2934,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784863128.599279",
@@ -2821,6 +2954,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784860637.699629",
@@ -2840,6 +2974,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "엑셀 편집자 권한 요청",
     "이메일로 받기로"
@@ -2862,6 +2997,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784855848.207069",
@@ -2881,6 +3017,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "상품이름 수정완료 솔라피 발송 완료"
    ],
@@ -2902,6 +3039,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "메뉴등록 완료 점주님 소통완료"
    ],
@@ -2923,6 +3061,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "메뉴삭제 완료 솔라피 발송 완료",
     "키오스크 전시관리에서만 삭제"
@@ -2945,6 +3084,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "··· > ···\n• 메뉴 그대로 복사하여 등록 요청 드립니다."
    ],
@@ -2966,6 +3106,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784624019849009\n\n이전 스레드\n\n파일대로 메뉴 및 옵션이 등록되어있지 않다고 말씀주시어, 혹시 원격으로 진행 부탁드려도 될까요..!?\n\n5시부터 주문 받으시는데 급하다고 하시어 요청드립니다:ㅠㅠ:",
     "감사합니다!!!",
@@ -2989,6 +3130,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "kpn pos 완료"
    ],
@@ -3010,6 +3152,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "파일로 요청은 드려놓은 상황인데 받는대로 공유드리겠습니다"
    ],
@@ -3031,6 +3174,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784792078.985599",
@@ -3052,6 +3196,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "엑셀파일 안열림",
     "이메일 전달",
@@ -3075,6 +3220,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "파스타면 카테고리에 오븐치즈스파게티 18,900원 추가 요청 드립니다!"
    ],
@@ -3096,6 +3242,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784791524.691649",
@@ -3115,6 +3262,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 5,
    "lr": "1784792287.704519",
@@ -3134,6 +3282,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784789370.805269",
@@ -3153,6 +3302,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "*카테고리: 반찬*\n\n메뉴명: 도시락\n금액: 13,000원\n\n메뉴명: 음료\n금액: 1,500\n\n카테고리: 반찬\n메뉴명: 생수\n금액: 500"
    ],
@@ -3174,6 +3324,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784789742.080779",
@@ -3193,6 +3344,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "키오스크상품전시관리에서 삭제 완료"
    ],
@@ -3214,6 +3366,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "[피자]\n• 치킨타코피자 15,900원\n• 비프타코피자 15,900원\n[크러스트]\n• 치킨타코+크러스트 18,900원\n• 비프타코+크러스트 18,900원\n[음료]\n• 할라피뇨 500원\n    ◦ (아래쪽에 피클/소스 등 모아져있는 항목)",
     "완료 이후 문자 한통만 부탁드리겠습니다!"
@@ -3236,6 +3389,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "밥, 샐러드, 샌드위치 까지는 적용"
    ],
@@ -3257,6 +3411,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "끝"
    ],
@@ -3278,6 +3433,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "CCD 세트메뉴 카테고리 생성 및 메뉴 등록 요청 주셔서 전달 드립니다."
    ],
@@ -3299,6 +3455,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784774811.112399",
@@ -3329,6 +3486,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "필수선택 설정 완료"
    ],
@@ -3350,6 +3508,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "여기다 이미지만 올려줘염"
    ],
@@ -3371,6 +3530,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "넘 잘되어있음",
     "원격으로 확인 시 진짜 변경 안되어있어 처리",
@@ -3395,6 +3555,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "• ···(도호커피 본점) 메뉴 등록 요청 건\n··· 사업장에 있는 메뉴에  옵션 동일하게 추가 요청(도호 커피에 있는 기존 메뉴는 그대로 유지)\n\n  - 토스트, 떡볶이, 볶음밥, 버거, 치킨박스, 사이드메뉴\n  - 음료 제외\n  - 옵션도 동일하게 적용"
    ],
@@ -3416,6 +3577,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "메뉴등록 완료 솔라피 발송완료"
    ],
@@ -3437,6 +3599,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784715050.288339",
@@ -3456,6 +3619,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "님 부탁좀 할게용\n\n이메일로 온건데 요거 부탁좀!",
     "배민에서 캡쳐뜬 사진임.."
@@ -3478,6 +3642,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "요거트아이스크림\n• 초코쉘 세트 4800\n• 꼬맹이세트 7000\n빙수\n• 새하얀 눈꽃 빙수 5600\n• 자몽 대가족 12000\n• 딸기 치즈 대가족 10400\n• 마멀레이드 사과 빙수 9600\n수제 과일청, 시럽, 잼 추가선택\n• 블루베리 청 800\n• 망고청 800\n토핑 추가 선택\n• 오레오 샌드 3ea 800\n• 다크콘푸로스트 500\n• 다크초코칩 800\n변경 부탁드리며 없는 항목들은 추가 부탁드리겠습니다 !"
    ],
@@ -3499,6 +3664,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "담배빼고, 터치키 NO 되어잇는거 빼고만 등록",
     "바코드 그대로 등록했는디...",
@@ -3523,6 +3689,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "이 3개의 화면을 한 화면으로 묶어주세요\n\n피자가격만 3만원으로 변경해주세요\n쿠키가격을 5000원으로 수정해주세요"
    ],
@@ -3544,6 +3711,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "옵션 어지럽네..",
     "토플파도없음 ㅅㄱ",
@@ -3572,6 +3740,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "3000원으로 되어있음",
     "오잉 중복인가,,,? 다 해놧는뎅",
@@ -3600,6 +3769,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "토스포스에서 지속 실패하시어 이관 드립니다. :꾸벅:"
    ],
@@ -3621,6 +3791,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784699971.261449",
@@ -3640,6 +3811,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "• 육류\n    ◦ 생토시살(150g) 25,000원\n    ◦ 토시살주물럭(150g) 25,000원",
     "등록 이후 문자 한통만 부탁드립니다!"
@@ -3662,6 +3834,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784698185.484389",
@@ -3681,6 +3854,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "맞습니다.\n근데 인입 당시 메일 수신 확인 안돼서 메뉴등록 요청 링크로 재접수 하시도록 안내드렸는데 메일 확인이 되는군요 ㅠㅠ"
    ],
@@ -3702,6 +3876,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     ":telephone_receiver: 완료"
    ],
@@ -3725,6 +3900,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784687797.614229",
@@ -3744,6 +3920,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1784686297.366029",
@@ -3763,6 +3940,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784685310.692339",
@@ -3782,6 +3960,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "유플러스 입니다."
    ],
@@ -3806,6 +3985,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784684518.559449",
@@ -3828,6 +4008,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "오지마 차? 오미자 차? 일단 메뉴판 그대로"
    ],
@@ -3853,6 +4034,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "님, 안녕하세요.\n대표님 재인입되어 맥주세트, 브루잉커피만 추가 되어있고 다른 옵션 등 추가가 이루어지지 않았다고 하시어 확인 한버만 부탁 드리겠습니다. :꾸벅:\n재부팅 이후에도 포스/키오스크 모두 동일하다고 하십니다.",
     "키오스크인가요 포스기인가요",
@@ -3881,6 +4063,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784682868.985729",
@@ -3900,6 +4083,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "*[가격 변경]*\n탕수육 짜장1 짬뽕1\n28000\n\n탕수육 짬뽕2개\n30000\n\n탕수육 쟁반짜장\n32000\n\n*[메뉴 삭제]*\n• 냉짬뽕\n• 돼지고기 가지볶음\n• 깐풍가지\n• 어향가지새우"
    ],
@@ -3921,6 +4105,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "KSNET -> KIS 메뉴 복사 요청 드립니다!"
    ],
@@ -3942,6 +4127,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "메뉴 등록 이후 <tel:···|···> 해당 번호로 문자 발송 요청 드립니다 :woman-bowing::skin-tone-4:"
    ],
@@ -3963,6 +4149,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "-엑셀 파일 업로드가 안돼서 해결 후 올리겠습니다 :루피눈물:",
     "네ㅜㅜ 계속 암호화걸리는데 혹시 엑셀파일 전달 방법이 있을까요..?ㅜㅜ",
@@ -3986,6 +4173,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "메뉴 사진 별도로 추후 전송 예정입니다!"
    ],
@@ -4007,6 +4195,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784622965.116869",
@@ -4028,6 +4217,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "해당 매장, 테이블 오더 사용 매장이라\n전시관리 등록이 필요합니다. 진행 부탁드리겠습니다 :slightly_smiling_face:",
     "여기 아까 완료해썽요",
@@ -4053,6 +4243,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784621122.438439",
@@ -4072,6 +4263,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 1,
    "att": [],
+   "datt": [],
    "replies": [
     "막국수와 얼큰막국수를 물/비빔 나누는 요청입니다"
    ],
@@ -4095,6 +4287,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784615778.463049",
@@ -4114,6 +4307,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "탕찌개 카테고리 > 순살떡도리탕 *삭제*\n탕찌개 카테고리 > 김치수제비순살닭도리탕 27,900원 *추가*",
     "혹시 수정 후 솔라피 밝송 부탁 드려도 될까요? :감사합니다꾸벅:"
@@ -4136,6 +4330,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784614706.337049",
@@ -4155,6 +4350,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784614638.782219",
@@ -4174,6 +4370,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "머!",
     "문자발송"
@@ -4196,6 +4393,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "오케이포스\n\n*[메뉴 삭제]*\n카테고리: 피자\n메뉴명: 체험피자\n\n*[메뉴 추가]*\n카테고리: 피자\n메뉴명: 비프/치킨타코\n가격: 15,900원\n\n카테고리: 크러스트\n메뉴명: 비프/치킨타코크러스트\n가격: 18,900원\n\n카테고리: 사이드,토핑추카\n메뉴명: 할라피뇨\n가격: 500원"
    ],
@@ -4217,6 +4415,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784610930.883219",
@@ -4236,6 +4435,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784610193.883789",
@@ -4255,6 +4455,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "장어 ( 1kg 는 잘 등록 되어있다고합니다! )\n500g -> 17,500원\n100g -> 3,500원\n10g -> 350원"
    ],
@@ -4276,6 +4477,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1784607596.946089",
@@ -4295,6 +4497,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "메뉴 요청 문자 발송"
    ],
@@ -4316,6 +4519,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "문자로 받았는데 해상도 다깨져서 확인 안됨 이메일 요청"
    ],
@@ -4337,6 +4541,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784603123.558149",
@@ -4356,6 +4561,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1784603552.957879",
@@ -4375,6 +4581,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784602728.184089",
@@ -4394,6 +4601,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784602908319559"
    ],
@@ -4415,6 +4623,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "오케이포스!\n\n\n• 카테고리 : [식사]\n얼큰 숙주순대국 : 13,000원\n\n(얼큰순대국 옆에 위치 요청)"
    ],
@@ -4438,6 +4647,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784602140.301419",
@@ -4457,6 +4667,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "*메뉴 삭제*\n카테고리: [식사]\n• 행사 한우 불고기 \n*메뉴 추가*\n카테고리: [고기류]\n버섯갈비전골  60,000원"
    ],
@@ -4478,6 +4689,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "··· / 본점\n··· / 화명점\n- 화명점 > 본점 메뉴로 전부 똑같이 변경 요청"
    ],
@@ -4499,6 +4711,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "순대국(포장)\n맥주 프린터 해제"
    ],
@@ -4520,6 +4733,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784536495.442669",
@@ -4539,6 +4753,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784534091.553409",
@@ -4558,6 +4773,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784531367.926809",
@@ -4577,6 +4793,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784531058.205069",
@@ -4596,6 +4813,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "메뉴 이미지와 메뉴 별 금액 압축하여 첨부드립니다"
    ],
@@ -4617,6 +4835,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784528995.608939",
@@ -4636,6 +4855,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "직접 삭제하시다가 일괄로 삭제 요청하셨는데 전화드려 한번 더 확인해 보겠습니다..! :개굴-죄송:",
     "지금 원격 요청하신건도 있어서요!\n프린터 설정 때문에 통화중이실수도 있으셔요,,!",
@@ -4659,6 +4879,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "왜~ 되어있징"
    ],
@@ -4680,6 +4901,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "• 카테고리 : 주류\n*오디주 18,000원*"
    ],
@@ -4701,6 +4923,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "전골 카테고리\n(신라면불닭핵불닭)\n매운맛단계 꼭 넣어주세요\n오곱새 18.000\n오삼새 17.000\n돌판볶음카테고리\n(신라면불닭핵불닭)\n매운맛단계 꼭 넣어주세요\n오대 18.000\n오새 17.000\n오삼 16.000\n오징어 15.000\n별미카테고리\n통오징어+알 숙회 25.000\n오징어프라이드 25.000\n누룽지치즈지슬전 25.000\n백합조개탕 15.000\n사이드카테고리\n오징어까스2p 5.000\n반숙후라이4p 5.000\n불꽃치즈볶음밥 5.000\n김가루대접밥3.000\n당면사리 3.000\n우동사리 3.000\n미나리사리3.000\n공깃밥1.000\n주류카테고리\n소주,맥주 5.000\n제주막걸리4.000\n음료 2.000",
     "기존 메뉴 모두 삭제 후 재구성 요청드립니다!(LG 포스기)"
@@ -4723,6 +4946,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784522004.910059",
@@ -4742,6 +4966,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "토스포스 대시보드상에는 아무 메뉴가 없는데 대표자분께서 노트북에는 등록한 내역이 있다고 하십니다",
     "감사합니다 규빈님",
@@ -4765,6 +4990,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784514754.929919",
@@ -4784,6 +5010,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "님 , 스파로스 사용 그대로 프론트 도입했던 이력이 있습니다..!\n https://w1659946222-hxm266180.slack.com/archives/C07AY99U3F1/p1764659176737349",
     "kis 입니다"
@@ -4806,6 +5033,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784508797.975689",
@@ -4825,6 +5053,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "원격방으로 접수된듯"
    ],
@@ -4846,6 +5075,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784505858.448099",
@@ -4865,6 +5095,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "001396"
    ],
@@ -4886,6 +5117,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "*김치찌개* - *20,000원*으로 수정 부탁드립니다. :감사합니다꾸벅:",
     "오..여기 퍼스트 아니고 토스포스네요 감사합니당 광두님 :감사콩:"
@@ -4908,6 +5140,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "생체 항칠 생오리 양념 불고기\n항칠 생오리 구이\n항칠 오리 능이 백숙\n\n메뉴 재노출 부탁드립니다"
    ],
@@ -4929,6 +5162,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "님 혹시 상기 건 차주 월요일 적용 가능으로 안내 드려야 할까요?",
     "급하다고는 하셨는데 안되면 시간 양해를 구하겠습니다",
@@ -4953,6 +5187,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "케이핀"
    ],
@@ -4974,6 +5209,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1784207765.911269",
@@ -4993,6 +5229,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "포스화면에\n테이블번호 2-1\n3-2 추가\n\n테이블번호 13번 뒤에 포장 추가"
    ],
@@ -5014,6 +5251,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784205629.892179",
@@ -5033,6 +5271,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784190753.800599",
@@ -5061,6 +5300,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1784191261.263049",
@@ -5080,6 +5320,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 20,
    "lr": "1784191106.916049",
@@ -5110,6 +5351,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784190517.827539",
@@ -5129,6 +5371,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 6,
    "lr": "1784191336.996359",
@@ -5148,6 +5391,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784188377.317119",
@@ -5167,6 +5411,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784187969.211399",
@@ -5186,6 +5431,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784187391.394239",
@@ -5205,6 +5451,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784183152.206769",
@@ -5224,6 +5471,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784181110.191279",
@@ -5243,6 +5491,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784180405.903959",
@@ -5262,6 +5511,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 5,
    "lr": "1784179056.473749",
@@ -5281,6 +5531,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784164066.208189",
@@ -5300,6 +5551,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784164058.921079",
@@ -5319,6 +5571,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784164049.668999",
@@ -5338,6 +5591,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1784163958.500339",
@@ -5357,6 +5611,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "메뉴등록 완료 및 점주님 소통 완료"
    ],
@@ -5378,6 +5633,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "님 해당 건 정말 바쁘시겠지만 긴급 처리 가능할까요? 오늘까지 처리가 필요하다고 해요.."
    ],
@@ -5399,6 +5655,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "장칼국수: 4500 원\n향라우육향라면: 4500원\n홍소우육향라면: 4500원"
    ],
@@ -5420,6 +5677,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784103880450239?thread_ts=···.965029&cid=C08740SFT1S",
     "• 샤인머스캣\n• -\n필수 선택으로 설정되어있는 것\n해제 요청드립니다.",
@@ -5444,6 +5702,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "14개 등록 완료"
    ],
@@ -5465,6 +5724,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 1,
    "att": [],
+   "datt": [],
    "replies": [
     "헉 제가 잘못 전달해드렸네요 죄송합니다..  :개굴-죄송:",
     "제송함다 ..!",
@@ -5493,6 +5753,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "완료"
    ],
@@ -5514,6 +5775,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784082661.663399",
@@ -5533,6 +5795,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "나이스okpos"
    ],
@@ -5554,6 +5817,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "불가, 개별 이미지 필요 / 문자발송"
    ],
@@ -5575,6 +5839,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 4,
    "lr": "1784081276.006699",
@@ -5594,6 +5859,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784074619.863289",
@@ -5613,6 +5879,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 8,
    "lr": "1784180472.452899",
@@ -5632,6 +5899,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 1,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784073899.886779",
@@ -5651,6 +5919,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "솔라피발송"
    ],
@@ -5672,6 +5941,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1784029241.547199",
@@ -5691,6 +5961,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "• 카테고리: 메뉴\n• 메뉴명: \n생체 항칠 생오리 양념 불고기\n항칠 생오리 구이\n항칠 오리 능이 백숙\n\n숨김 처리 요청 주셔서 전달 드립니다."
    ],
@@ -5721,6 +5992,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "완료"
    ],
@@ -5742,6 +6014,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784021823.200119",
@@ -5761,6 +6034,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1784021587.181149",
@@ -5780,6 +6054,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784019764.197619",
@@ -5799,6 +6074,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "• 테이블 매장/포장은 한 화면에서 생성 요청주셨습니다:man-bowing:\n완료 이후 문자 한통 부탁드리겠습니다!"
    ],
@@ -5820,6 +6096,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "세트메뉴 카테고리에 추가 완료"
    ],
@@ -5841,6 +6118,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784014066.437369",
@@ -5860,6 +6138,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "스팸메일함",
     "수박은 시즌 메뉴라 일단 0원으로 등록"
@@ -5882,6 +6161,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1784010617.452739",
@@ -5901,6 +6181,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "• 키오스크 모드  사용 중\n• \"포장해요\" 버튼 클릭 시 카테고리항목에 있는  \"딱! 빙수만!\", \"스폐셜 빙수\"에 있는 메뉴들을 포장 진행 시 1,000원 추가 될 수 있도록 설정 부탁드립니다.\n조건: 1개가 아닌 2~3개 주문시에도 포장비는 1,000원으로만 설정"
    ],
@@ -5924,6 +6205,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "전화인입\n• 237오므카레 서초 지파이브점  / 237오므카레 본점   \n    ◦ 두매장  [1인세트 메뉴] 에 적용 된    [사이드메뉴 선택]  빼고 >  첨부된 사진으로 옵션 반영 요청 \n    ◦ 기존 옵션 순서  동일하게 요청 \n• 매장 운영중 금일 바로 진행 후 전화요청\n• 반영 후 OB 완료  ···"
    ],
@@ -5945,6 +6227,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "https://w1659946222-hxm266180.slack.com/archives/C0ADC9759KQ/p1784007548439419?thread_ts=···.018899&cid=C0ADC9759KQ"
    ],
@@ -5966,6 +6249,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "빵에 치즈블랑 지워주시고 그자리에 강낭콩 완두베기 빵 5500원 부탁드려요"
    ],
@@ -5987,6 +6271,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "감사합니다 :핑크_굽신:  직접 변경 못해 죄송해요 :개굴-죄송:",
     "감삼다 !! :face_holding_back_tears:"
@@ -6009,6 +6294,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "신규 오픈 매장"
    ],
@@ -6030,6 +6316,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 6,
    "lr": "1784011470.771949",
@@ -6049,6 +6336,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "보기전용 :아오:"
    ],
@@ -6070,6 +6358,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 4,
    "lr": "1783994175.376339",
@@ -6089,6 +6378,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1783993785.510519",
@@ -6110,6 +6400,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "대전광역시 대덕구 대청로 20 (신탄진동) / N45639"
    ],
@@ -6131,6 +6422,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "*돈가스김밥* \n• 현재 가격 : 5,000원\n• 변경할 가격 : 5,500원\n상기 메뉴 가격 변경 요청드립니다! :꾸벅5:"
    ],
@@ -6154,6 +6446,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "님, 안녕하세요!\n금일 오전 11시 이전 처리되셔야 한다고 하셔서 확인 부탁드립니다!\n완료 시 안내 문자 발송 부탁드립니다!",
     "솔라피발송",
@@ -6179,6 +6472,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "메뉴등록 및 통화완료."
    ],
@@ -6211,6 +6505,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "메뉴가 없는디",
     "일단 0원에 메뉴 이름, 카테고리 기본으로 생성만 해놓음"
@@ -6233,6 +6528,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "완"
    ],
@@ -6254,6 +6550,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "카테고리: 주류\n메뉴명: 테라 제로 0.00\n가격: 5,000원\n\n유플",
     "이분! 테이블 오더 사용 매장인 듯한데,\n혹시 키오스크 전시관리 및 터치키 관리에 추가 되었나욤??"
@@ -6276,6 +6573,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783937908.175839",
@@ -6295,6 +6593,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783937901.493729",
@@ -6314,6 +6613,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "앗 넵넵! 감사합니다!"
    ],
@@ -6335,6 +6635,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 5,
    "lr": "1783932117.934459",
@@ -6354,6 +6655,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1783930004.990829",
@@ -6373,6 +6675,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783929016.697939",
@@ -6394,6 +6697,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "완료"
    ],
@@ -6415,6 +6719,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "• 진로골드 삭제\n• 청하, 별빛청하, 새로 오미자 6,000원 메뉴등록"
    ],
@@ -6438,6 +6743,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "토스포스겠지..",
     "현재는 이지포스 사ㅇ용중, 프론트 설치하며 토스포스 사용 예정",
@@ -6461,6 +6767,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "고객용 채널 노출 사용 설정도 부탁드립니다!"
    ],
@@ -6482,6 +6789,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "맥주 > 제주엘 옆에 버드와이저 8000원 추가\n소주 음료 >  탄산수 2000원 추가\n\n감사합니다!"
    ],
@@ -6505,6 +6813,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783923690.336589",
@@ -6524,6 +6833,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "• 포장 카테고리에 추가 요청\n• *모든 메뉴 이름 앞에 (포장) 붙혀달라고 요청* \n• 가격은 아래 내용 참고 부탁 드립니다!\n    ◦ (포장) 군만두 5,500원 / (포장) 찐만두 5,500원 \n    ◦ 아래 zip 파일에 기재 되어 있는 가격에 1,000원씩 더해서 등록 부탁 드립니다.\n    ◦ 아래 사진은 (포장) 군만두,찐만두 메뉴에 등록 해 주시면 됩니다. :감사합니다꾸벅:",
     "규빈님 혹시 이 파일로 진행 가능할까요?"
@@ -6546,6 +6856,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "https://w1659946222-hxm266180.slack.com/archives/C0A7CLLANP7/p1783922921171479?thread_ts=···.589779&cid=C0A7CLLANP7",
     "현장설치마무리됨 빠르게확인졈"
@@ -6571,6 +6882,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "아직 토플파가 없음",
     "cc",
@@ -6599,6 +6911,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "*만주&와플* 카테고리와 메뉴는 등록만 해주시고 금액은 100원으로 지정해주시면 대표자분이 직접 변경하실 예정입니다",
     "가오픈 상황이라 가급적 긴급하게 요청드립니다"
@@ -6621,6 +6934,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "기다려^^",
     "피자집각오했겠지",
@@ -6644,6 +6958,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "메뉴등록 다해드렸어요",
     "메인포스 확인해보세요"
@@ -6666,6 +6981,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "*변경*\n리얼브라우니 3,300원 > 3,600원\n리얼치즈브라우니 3,500 > 3,800원\n피치워터 3,000원 > 4,000원\n호두카라멜스콘 > 무화과스콘\n*삭제*\n소금식빵\n오트밀 모닝롤\n고단백 하루견과\n순꿀호떡\n옥수수범벅\n후랑크패스트리\n*추가*\n[일반빵]\n쑥단팥빵 3,000원\n[조리빵]\n마늘퐁당 바게트 6,000원",
     "상기 내용으로 메뉴 수정 부탁드립니다! :감사합니다꾸벅:"
@@ -6688,6 +7004,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783910110.676339",
@@ -6707,6 +7024,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "*어썸웰스파라운지 수원점(금곡) 사업자번호가* ···이건뎅  오류인가용??"
    ],
@@ -6728,6 +7046,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "ㅇㅋ"
    ],
@@ -6749,6 +7068,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 4,
    "lr": "1783907514.369219",
@@ -6768,6 +7088,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1783905882.053499",
@@ -6787,6 +7108,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "사업자번호: ···\n전화번호:···\n포스프로그램: 토스포스\n[수정메뉴와 메뉴전체]\n추천메뉴\n카오카무(족발덮밥)12000원\n추가\n국수메뉴 추가\n족발 남똑국수12000원\n[특이사항]\n\n7/11일 오픈입니다.\n외국분이시라 소통이 어려울수 있습니다.\n테이블 6개, 포장5개\n토스포스 에 [현황]꼭 보이게부탁드립니다."
    ],
@@ -6808,6 +7130,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "스팸함에 있는 메일 확인 / 등록 완료"
    ],
@@ -6829,6 +7152,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783901691.657089",
@@ -6848,6 +7172,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "네네!!",
     "https://w1659946222-hxm266180.slack.com/archives/C0B2XSJ08UA/p1783657916732669"
@@ -6872,6 +7197,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "이미 메뉴가 들어가있음 :개굴-hmm:",
     "옵션 작업 위해 판별 가능하도록 메뉴별 옵션 적어서 재접수 안내",
@@ -6898,6 +7224,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783871153.018959",
@@ -6919,6 +7246,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783868598.774379",
@@ -6938,6 +7266,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [
     "• 엑셀에 첨부된 이미지로는 메뉴 사진 등록x\n• 카테고리 정보가 없어 '상품' 카테고리로 일괄등록\n• 도시락과 캡모자에 가격정보 없어 0원으로 등록\n위 사항에 대해 문자 안내",
     "혹시 모르니 백업"
@@ -6960,6 +7289,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783765929.067999",
@@ -6979,6 +7309,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1783748449.545889",
@@ -6998,6 +7329,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 2,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1783748461.569209",
@@ -7017,6 +7349,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1783733574.927539",
@@ -7036,6 +7369,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783673599.945499",
@@ -7055,6 +7389,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783673362.727939",
@@ -7074,6 +7409,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1783689770.463519",
@@ -7095,6 +7431,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783672175.916429",
@@ -7116,6 +7453,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783668893.372659",
@@ -7135,6 +7473,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 5,
    "lr": "1783669916.831919",
@@ -7154,6 +7493,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1783669034.068779",
@@ -7173,6 +7513,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 4,
    "lr": "1783669243.994249",
@@ -7192,6 +7533,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783665876.542109",
@@ -7211,6 +7553,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 12,
    "lr": "1783670343.987609",
@@ -7230,6 +7573,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1783663568.768859",
@@ -7249,6 +7593,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1783663468.216709",
@@ -7268,6 +7613,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 4,
    "lr": "1783663064.461699",
@@ -7287,6 +7633,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783658455.890909",
@@ -7306,6 +7653,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783658445.455919",
@@ -7325,6 +7673,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783658433.515119",
@@ -7344,6 +7693,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 4,
    "lr": "1783659021.789579",
@@ -7363,6 +7713,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1783654067.045439",
@@ -7382,6 +7733,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1783653914.753609",
@@ -7401,6 +7753,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1783606171.762059",
@@ -7420,6 +7773,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 20,
    "lr": "1783606891.853529",
@@ -7441,6 +7795,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783588891.029729",
@@ -7460,6 +7815,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783584131.690849",
@@ -7481,6 +7837,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783577577.905069",
@@ -7502,6 +7859,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783577171.639169",
@@ -7523,6 +7881,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783575125.315929",
@@ -7542,6 +7901,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1783573799.548119",
@@ -7561,6 +7921,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783570890.893349",
@@ -7580,6 +7941,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 6,
    "lr": "1783586754.676939",
@@ -7599,6 +7961,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783567413.252019",
@@ -7618,6 +7981,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 5,
    "lr": "1783568162.460719",
@@ -7637,6 +8001,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 4,
    "lr": "1783566328.381129",
@@ -7656,6 +8021,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783561207.097649",
@@ -7675,6 +8041,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1783561783.457419",
@@ -7694,6 +8061,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1783560997.803569",
@@ -7713,6 +8081,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1783521840.463919",
@@ -7732,6 +8101,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783500069.245969",
@@ -7751,6 +8121,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1783499823.424929",
@@ -7770,6 +8141,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 5,
    "lr": "1783497845.397819",
@@ -7789,6 +8161,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 5,
    "lr": "1783496424.822869",
@@ -7810,6 +8183,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783490907.129769",
@@ -7829,6 +8203,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 5,
    "lr": "1783491653.004389",
@@ -7848,6 +8223,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 5,
    "lr": "1783490759.408199",
@@ -7867,6 +8243,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 7,
    "lr": "1783489435.940219",
@@ -7895,6 +8272,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783485109.202129",
@@ -7914,6 +8292,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1783483172.179479",
@@ -7935,6 +8314,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783480178.441369",
@@ -7954,6 +8334,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1783481281.234999",
@@ -7973,6 +8354,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 4,
    "lr": "1783474184.065439",
@@ -7992,6 +8374,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 8,
    "lr": "1783474992.228029",
@@ -8011,6 +8394,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783412699.487639",
@@ -8030,6 +8414,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 1,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1783414954.809079",
@@ -8049,6 +8434,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1783412829.785399",
@@ -8070,6 +8456,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 6,
    "lr": "1783416654.109869",
@@ -8089,6 +8476,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1783410603.182729",
@@ -8108,6 +8496,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783409860.351919",
@@ -8127,6 +8516,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1783405933.357599",
@@ -8148,6 +8538,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783403540.729589",
@@ -8167,6 +8558,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1783405017.389979",
@@ -8188,6 +8580,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1783404858.956529",
@@ -8207,6 +8600,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1783395837.778669",
@@ -8226,6 +8620,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 4,
    "lr": "1783392832.341329",
@@ -8245,6 +8640,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1783386394.786099",
@@ -8264,6 +8660,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 4,
    "lr": "1783474667.451529",
@@ -8283,6 +8680,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 7,
    "lr": "1783386356.677179",
@@ -8302,6 +8700,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1783384370.975369",
@@ -8321,6 +8720,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 9,
    "lr": "1783385774.388679",
@@ -8340,6 +8740,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1783329205.190629",
@@ -8359,6 +8760,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1783327143.532059",
@@ -8378,6 +8780,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1783326710.279549",
@@ -8397,6 +8800,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 0,
    "lr": "",
@@ -8416,6 +8820,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 7,
    "lr": "1783323943.336329",
@@ -8435,6 +8840,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783322703.242969",
@@ -8454,6 +8860,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1783322901.883859",
@@ -8473,6 +8880,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1783322286.939379",
@@ -8492,6 +8900,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1783321091.012829",
@@ -8511,6 +8920,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1783320996.584969",
@@ -8530,6 +8940,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1783318109.793719",
@@ -8551,6 +8962,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 6,
    "lr": "1783320776.260829",
@@ -8572,6 +8984,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783315548.082799",
@@ -8591,6 +9004,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783315430.406219",
@@ -8610,6 +9024,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 1,
    "lr": "1783315373.576309",
@@ -8629,6 +9044,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1783315545.231449",
@@ -8648,6 +9064,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1783315459.935799",
@@ -8667,6 +9084,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 7,
    "lr": "1783314876.938479",
@@ -8686,6 +9104,7 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 3,
    "lr": "1783314477.160539",
@@ -8705,69 +9124,13 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 0,
    "att": [],
+   "datt": [],
    "replies": [],
    "rc": 5,
    "lr": "1783315304.827929",
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783311199812219"
-  },
-  {
-   "ts": "1783307807.845879",
-   "date": "2026-07-06",
-   "time": "12:16",
-   "store": "안반미 ANBANHMI",
-   "biz": "3361103071",
-   "pos": "토스포스",
-   "content": "토스포스/메뉴 가격 변경 요청드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1783308060.690119",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783307807845879"
-  },
-  {
-   "ts": "1783306862.061199",
-   "date": "2026-07-06",
-   "time": "12:01",
-   "store": "가든갤러리",
-   "biz": "1322074826",
-   "pos": "퍼스트포스",
-   "content": "메뉴 금액 전체 수정 요청 드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 5,
-   "lr": "1783312138.768899",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783306862061199"
-  },
-  {
-   "ts": "1783306834.789119",
-   "date": "2026-07-06",
-   "time": "12:00",
-   "store": "주식회사 도조커피종로",
-   "biz": "2628603628",
-   "pos": "",
-   "content": "도조커피 돈의문점 메뉴 복제 부탁드립니다. 완료 후, 대시보드 연결 부탁드려요!  (방금 설치완료되었다고하는데, 재온보딩 해야되는건 아닐런지...ㅠㅠ??)",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 11,
-   "lr": "1783309746.605759",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783306834789119"
   }
  ]
 };
