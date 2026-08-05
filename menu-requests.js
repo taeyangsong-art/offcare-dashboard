@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 384,
- "updatedAt": "2026-08-05 18:30",
+ "version": 385,
+ "updatedAt": "2026-08-05 19:04",
  "days": 30,
  "items": [
   {
@@ -68,10 +68,10 @@ window.MENU_REQUESTS = {
    "replies": [
     "포스의 브런치 카테고리에\n소 화식\n4000원으로 신규메뉴 등록"
    ],
-   "rc": 2,
-   "lr": "1785921134.416619",
-   "status": "wait",
-   "handler": null,
+   "rc": 4,
+   "lr": "1785924196.497769",
+   "status": "done",
+   "handler": "심성현",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785921126096119"
   },
   {
