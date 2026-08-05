@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 366,
- "updatedAt": "2026-08-05 13:31",
+ "version": 367,
+ "updatedAt": "2026-08-05 14:00",
  "days": 30,
  "items": [
   {
@@ -9051,26 +9051,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783315215198779"
-  },
-  {
-   "ts": "1783313636.994019",
-   "date": "2026-07-06",
-   "time": "13:53",
-   "store": "삼성복집",
-   "biz": "4132801460",
-   "pos": "오케이포스",
-   "content": "오케이포스 / 가격 수정 및 상품 추가 요청드립니다\n\n신규\n• 갑오징어 볶음 60,000원\n• 갑오징어 무침 60,000원\n변경\n• 전복치 100,000원 → 직접금액입력 (싯가)\n• 복 참숯구이 60,000원 → 80,000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1783315459.935799",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783313636994019"
   }
  ]
 };
