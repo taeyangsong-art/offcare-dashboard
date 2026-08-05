@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2613,
+  "version": 2614,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -84755,9 +84755,9 @@ window.SLACK_DATA = {
     "2026-08-05": {
       "counts": {
         "as": {
+          "배선유": 5,
           "미지정": 1,
           "김현기": 4,
-          "배선유": 4,
           "심성현": 3,
           "송태양": 3,
           "김동욱": 5
@@ -84766,6 +84766,9 @@ window.SLACK_DATA = {
           "김동욱": 2,
           "김현기": 1
         },
+        "transfer": {
+          "송태양": 1
+        },
         "menu": {
           "배선유": 2,
           "김규빈": 1
@@ -84773,6 +84776,18 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:38",
+          "store": "울산 종합철강 주식회사",
+          "biz": "6108160202",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "프론트 연동시 다른 매장에 연결되어있다는 문구 팝업되며 연결불가, 온보딩 요청드립니다",
+          "hw": "",
+          "urgent": true,
+          "intake": "online",
+          "note": "토스포스를 koces 계정으로 로그인 해놓음 / kpn계정으로 변경"
+        },
         {
           "time": "10:33",
           "store": "모아타",
@@ -84794,6 +84809,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "매장 공사가 안끝남"
+        },
+        {
+          "time": "10:30",
+          "store": "주식회사 내나라관광",
+          "biz": "",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "8월 5일 오전 11시 / DKB950 (무선단말기)",
+          "hw": "",
+          "intake": "online",
+          "note": "명변 완료입니다"
         },
         {
           "time": "10:23",
@@ -85062,7 +85088,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 21,
+        "online": 23,
         "offline": 5,
         "unknown": 0
       },
@@ -85071,7 +85097,7 @@ window.SLACK_DATA = {
         "byEmp": {},
         "items": []
       },
-      "updatedAt": "10:38",
+      "updatedAt": "11:00",
       "voc": {
         "responses": 2,
         "install": {
@@ -85169,13 +85195,17 @@ window.SLACK_DATA = {
         "post": "1785824102.868729",
         "lastSeen": 1785824120.285
       },
-      "1785893401.527469": {
-        "post": "1785893401.527469",
-        "lastSeen": 1785894325.948
-      },
       "1785893401.199669": {
         "post": "1785893401.199669",
-        "lastSeen": 1785894325.948
+        "lastSeen": 1785895230.65
+      },
+      "1785895203.264179": {
+        "post": "1785895203.264179",
+        "lastSeen": 1785895230.65
+      },
+      "1785894959.913419": {
+        "post": "1785894959.913419",
+        "lastSeen": 1785895230.65
       }
     },
     "days": {
