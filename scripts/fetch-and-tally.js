@@ -28,11 +28,13 @@ const RE_CONFIRM  = new RegExp('^(' + NAMES + ')(_확인.*)?$');     // OOO / OO
 const RE_CONFIRM2 = new RegExp('^(' + NAMES + ')_?확인_?$');       // OOO_확인_
 /* ── 설치 OB ──────────────────────────────────────────────────────────────
  * 원본: #ishopcare_new_주문관리 채널의 '설치일정 확인해주세요' 워크플로 글.
- * 그 글에 '<이름>완료' 이모지가 찍히면 설치 OB 1건 완료로 적재한다.
+ * 그 글에 '<이름>확인' 이모지(예: 태양확인·규빈확인)가 찍히면 설치 OB 1건 완료로 적재한다.
  * 업무 채널(AS·명의변경 등)과 완전히 별개 소스라 tallyInto 를 거치지 않고 따로 수집한다. */
 const OB_CHANNEL = process.env.OB_CHANNEL_ID || 'C0AL2V3MM7U';   // #ishopcare_new_주문관리
 const OB_TRIGGER = /설치\s*일정\s*(확인|체크)/;                    // 워크플로 글 판별(제목/본문)
-const RE_OB_DONE = new RegExp('^(' + NAMES + ')완료$');            // 완료 이모지 = 이름+완료
+// 완료 표시 = 이름+확인 (태양확인·규빈확인·현기확인). 언더바 변형(태양_확인)도 같이 받는다.
+// 업무 채널의 RE_CONFIRM('태양'·'태양_확인')과 달리 이름만 찍힌 건 여기선 완료로 안 본다.
+const RE_OB_DONE = new RegExp('^(' + NAMES + ')_?확인_?$');
 
 // VOC 저점 사유 자동분류 규칙 (label = 표시 카테고리, kw = 포함되면 그 카테고리로 분류). 순서대로 첫 매칭 우선.
 const VOC_REASON_RULES = [
@@ -259,7 +261,7 @@ async function tallyInto(msgs, ch, counts, pending, done, opts) {
   return { completed, externCount, dup, latest };
 }
 
-// 설치 OB 수집 — '설치일정 확인해주세요' 워크플로 글 중 '<이름>완료' 이모지가 찍힌 것만.
+// 설치 OB 수집 — '설치일정 확인해주세요' 워크플로 글 중 '<이름>확인' 이모지가 찍힌 것만.
 // 워크플로 글은 봇이 올리고 본문이 blocks 에만 있는 경우가 있어 blocksText 로 읽는다.
 function tallyInstallOb(msgs) {
   const out = [];

@@ -3920,7 +3920,7 @@ function renderOverview(){
             : `<div class="ov-val">${c.total}<small>건</small></div>`}
           ${deltaHTML(c.total, c.prev)}
         </div>`).join("")}
-      <div class="ov-tile ob${obCur?' clickable':''}" style="--c:#5856d6"${obCur?' onclick="showObDetail()"':''} title="#ishopcare_new_주문관리 의 '설치일정 확인해주세요' 글에 담당자 완료 이모지(예: 규빈완료)가 찍히면 1건 · 완료를 처음 감지한 날 기준${obCur?' — 클릭하면 건별 상세':''}">
+      <div class="ov-tile ob${obCur?' clickable':''}" style="--c:#5856d6"${obCur?' onclick="showObDetail()"':''} title="#ishopcare_new_주문관리 의 '설치일정 확인해주세요' 글에 담당자 확인 이모지(예: 태양확인·규빈확인)가 찍히면 1건 · 완료를 처음 감지한 날 기준${obCur?' — 클릭하면 건별 상세':''}">
         <div class="ov-name"><span class="ov-ic">📞</span>설치 OB${obCur?'<span class="ov-drill-ic">🔎</span>':''}</div>
         <div class="ov-val">${obCur}<small>건</small></div>
         ${obCur ? deltaHTML(obCur, obPrev) : `<div class="ov-delta flat"><span>집계 대기중</span></div>`}
