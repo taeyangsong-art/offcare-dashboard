@@ -32,6 +32,10 @@ jobs:
       - name: 메뉴요청 적재 (대시보드 메뉴등록 카테고리)
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          # Drive 링크 이미지 수집용 — 시크릿이 없으면 Drive만 건너뛰고 적재는 그대로 진행된다
+          GDRIVE_CLIENT_ID: ${{ secrets.GDRIVE_CLIENT_ID }}
+          GDRIVE_CLIENT_SECRET: ${{ secrets.GDRIVE_CLIENT_SECRET }}
+          GDRIVE_REFRESH_TOKEN: ${{ secrets.GDRIVE_REFRESH_TOKEN }}
         run: node scripts/fetch-menu-requests.js || echo "메뉴요청 적재 실패 — 집계는 계속"
 
       - name: 변경 시 커밋 & 푸시

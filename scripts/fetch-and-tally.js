@@ -26,10 +26,13 @@ const NAMES = Object.keys(personMap).join('|');
 const RE_EMP      = new RegExp('^원격(' + NAMES + ')$');          // 원격OOO (완료 담당자)
 const RE_CONFIRM  = new RegExp('^(' + NAMES + ')(_확인.*)?$');     // OOO / OOO_확인
 const RE_CONFIRM2 = new RegExp('^(' + NAMES + ')_?확인_?$');       // OOO_확인_
-// 설치 OB(설치 후 해피콜) 표시 이모지. 업무 카테고리와 배타적이지 않은 '부가 표시'라
-// catMap 이 아니라 별도로 판정해 days[d].ob 로 적재한다. 슬랙에서 쓰는 이모지 이름이
-// 확정되면 여기만 고치면 된다.
-const OB_EMOJI_RE = /설치_?ob|원격_?ob|installob|해피콜/i;
+/* ── 설치 OB ──────────────────────────────────────────────────────────────
+ * 원본: #ishopcare_new_주문관리 채널의 '설치일정 확인해주세요' 워크플로 글.
+ * 그 글에 '<이름>완료' 이모지가 찍히면 설치 OB 1건 완료로 적재한다.
+ * 업무 채널(AS·명의변경 등)과 완전히 별개 소스라 tallyInto 를 거치지 않고 따로 수집한다. */
+const OB_CHANNEL = process.env.OB_CHANNEL_ID || 'C0AL2V3MM7U';   // #ishopcare_new_주문관리
+const OB_TRIGGER = /설치\s*일정\s*(확인|체크)/;                    // 워크플로 글 판별(제목/본문)
+const RE_OB_DONE = new RegExp('^(' + NAMES + ')완료$');            // 완료 이모지 = 이름+완료
 
 // VOC 저점 사유 자동분류 규칙 (label = 표시 카테고리, kw = 포함되면 그 카테고리로 분류). 순서대로 첫 매칭 우선.
 const VOC_REASON_RULES = [
@@ -184,7 +187,6 @@ function cleanNote(s) {
 async function tallyInto(msgs, ch, counts, pending, done, opts) {
   done = done || [];
   const priorNotes = (opts && opts.priorNotes) || {};   // 이전 실행에서 이미 수집한 처리내역(재호출 방지)
-  const obOut = (opts && opts.obItems) || [];           // 설치 OB 적재용 (업무 집계와 별도·중복 허용)
   // 스레드 처리내역 수집: 이미 있으면 재사용, 없고 답글 있으면 첫 답글들 텍스트를 정리해 저장
   async function grabNote(m, catKey, time, store, biz) {
     const key = time + '|' + store + '|' + biz + '|' + catKey;
@@ -232,12 +234,6 @@ async function tallyInto(msgs, ch, counts, pending, done, opts) {
 
     if (hasDup) { dup++; continue; }         // 중복 이모지 → 집계 제외 (재처리는 중복 표시 없으니 별개 건으로 정상 집계됨)
 
-    // 설치 OB 는 카테고리가 아니라 '부가 표시'다 — 아래 카테고리 분기와 무관하게 별도 적재한다.
-    // (같은 글이 온보딩 처리로도 세어지고 설치 OB 로도 세어지는 것이 정상)
-    if (names.some(n => OB_EMOJI_RE.test(n)) && !invalidPost) {
-      obOut.push({ time, store, biz, handler: doer || '미지정', intake });
-    }
-
     if (hasVocTag && !emojiCat) { continue; }   // 원격voc만 찍힌 순수 VOC 참조 → 업무 집계 제외(설문 VOC로만 관리)
 
     // requireCat 채널(명의변경/메뉴등록/배달)은 카테고리 이모지가 찍힌 것만 집계 → 카테고리는 항상 emojiCat이 결정.
@@ -261,6 +257,53 @@ async function tallyInto(msgs, ch, counts, pending, done, opts) {
     }
   }
   return { completed, externCount, dup, latest };
+}
+
+// 설치 OB 수집 — '설치일정 확인해주세요' 워크플로 글 중 '<이름>완료' 이모지가 찍힌 것만.
+// 워크플로 글은 봇이 올리고 본문이 blocks 에만 있는 경우가 있어 blocksText 로 읽는다.
+function tallyInstallOb(msgs) {
+  const out = [];
+  for (const m of msgs) {
+    if (m.subtype && m.subtype !== 'bot_message') continue;
+    const text = blocksText(m).replace(/&gt;/g, '>').replace(/&lt;/g, '<').replace(/&amp;/g, '&');
+    if (!OB_TRIGGER.test(text)) continue;                 // 워크플로 글이 아닌 잡담 제외
+    const names = (m.reactions || []).map(r => r.name);
+    if (names.some(n => /중복/.test(n)) || names.includes('x')) continue;   // 중복·잘못올린글 제외
+    let who = null;
+    for (const n of names) { const mm = n.match(RE_OB_DONE); if (mm) { who = personMap[mm[1]]; break; } }
+    if (!who) continue;                                   // 완료 이모지 없으면 아직 미완료
+    const ts = m.ts;                                      // 완료일 고정용 키(글 하나 = 설치 건 하나)
+    let store = (((text.match(/상호\s*[:：]?\s*(.+)/) || [])[1]) || ((text.match(/(?:매장명|가맹점명?)\s*[:：]?\s*(.+)/) || [])[1]) || '').trim().split('/')[0].trim();
+    if (store.length > 30) store = store.slice(0, 30);
+    const biz = ((text.match(/사업자\s*번?호?\s*[:：]?\s*([\d\-]+)/) || [])[1] || '').replace(/-/g, '').trim();
+    out.push({ ts, postDate: kstDate(ts), time: kstHM(ts), store, biz, handler: who });
+  }
+  return out;
+}
+
+// 찾은 완료 건들을 '완료일' 버킷에 넣어 data.days[*].ob 로 기록.
+// priorDone: ts→이미 정해진 완료일 · keep: 재조회 창 밖이라 보존해야 할 기존 항목(날짜별)
+function applyObResults(data, found, o) {
+  const byDay = {};
+  for (const it of found) {
+    // 첫 집계(기존 OB 데이터가 전혀 없음)면 글 게시일로 흩뿌린다 — 안 그러면 과거분이 전부 오늘로 몰린다
+    const dd = o.priorDone[it.ts] || (o.hadAnyOb ? o.todayKstDate : it.postDate);
+    (byDay[dd] = byDay[dd] || []).push(it);
+  }
+  // 창 안의 날짜는 다시 계산한 값으로 덮고(이모지 취소 반영), 창 밖 항목은 합쳐 보존
+  const touch = new Set([...Object.keys(byDay), ...Object.keys(data.days).filter(d => data.days[d].ob && d >= o.obMinDate)]);
+  let total = 0;
+  for (const d of touch) {
+    const items = [...((o.keep || {})[d] || []), ...(byDay[d] || [])];
+    items.sort((a, b) => (b.time || '').localeCompare(a.time || ''));
+    const byEmp = {};
+    for (const it of items) byEmp[it.handler] = (byEmp[it.handler] || 0) + 1;
+    const de = data.days[d] || { updatedAt: '', counts: {}, pending: [] };
+    de.ob = { count: items.length, byEmp, items };
+    data.days[d] = de;
+    total += items.length;
+  }
+  return { total, days: touch.size };
 }
 
 // ── 폴링식 응답시간 추적 ──
@@ -440,7 +483,7 @@ async function tallyVoc(msgs, voc, channelId, opts) {
   // 사람들이 가장 많이 보는 '오늘' 건의 note가 상한 소진 전에 먼저 채워지도록 한다.
   for (const dstr of [...workDates].reverse()) {
     const b = boundsOf(dstr);
-    const counts = {}, pending = [], done = [], obItems = [];
+    const counts = {}, pending = [], done = [];
     // 이전 실행에서 수집한 처리내역 보존(재호출 방지) — done 항목 key: time|store|biz|cat
     const priorNotes = {};
     for (const it of (((data.days[dstr] || {}).done) || [])) { if (it.note) priorNotes[it.time + '|' + it.store + '|' + it.biz + '|' + it.cat] = it.note; }
@@ -449,7 +492,7 @@ async function tallyVoc(msgs, voc, channelId, opts) {
       let msgs;
       try { msgs = await fetchAllRange(ch.id, b.oldest, b.latestBound); }
       catch (e) { console.error(`  ⚠ [${ch.label} ${dstr}] 읽기 실패(${e.message}) — 건너뜀`); continue; }
-      const r = await tallyInto(msgs, ch, counts, pending, done, { priorNotes, obItems });
+      const r = await tallyInto(msgs, ch, counts, pending, done, { priorNotes });
       if (dstr === targetDate) trackResp(data, msgs, ch);   // 오늘 인입 건만 응답시간 폴링 추적
       completed += r.completed; externCount += r.externCount; dupTotal += r.dup; if (r.latest > latest) latest = r.latest;
     }
@@ -460,16 +503,45 @@ async function tallyVoc(msgs, voc, channelId, opts) {
     const intakeAgg = { online: 0, offline: 0, unknown: 0 };
     for (const it of done) intakeAgg[it.intake || 'unknown']++;
     for (const it of pending) intakeAgg[it.intake || 'unknown']++;
-    // 설치 OB — 담당자별 카운트 + 건별 목록 (대시보드 '설치 OB' 타일)
-    obItems.sort((a, b) => (b.time || '').localeCompare(a.time || ''));
-    const obByEmp = {};
-    for (const it of obItems) obByEmp[it.handler] = (obByEmp[it.handler] || 0) + 1;
     de.counts = counts; de.pending = pending; de.done = done; de.intake = intakeAgg;
-    de.ob = { count: obItems.length, byEmp: obByEmp, items: obItems };
     if (latest && latest > (de.updatedAt || '')) de.updatedAt = latest;
     if (!de.updatedAt) de.updatedAt = latest || '';
     data.days[dstr] = de;
-    console.log(`  [업무 ${dstr}] 완료 ${completed} · 확인필요 ${pending.length} · 외주 ${externCount} · 설치OB ${obItems.length} · 중복제외 ${dupTotal}`);
+    console.log(`  [업무 ${dstr}] 완료 ${completed} · 확인필요 ${pending.length} · 외주 ${externCount} · 중복제외 ${dupTotal}`);
+  }
+
+  // ===== 설치 OB 롤링 재집계 =====
+  // 기준일 = '완료를 처음 감지한 날'(VOC 와 동일 규칙). 슬랙이 이모지 시각을 안 주므로
+  // 한 번 기록된 완료일은 이후 실행에서도 그대로 유지한다.
+  // 며칠 전 올라온 글이 오늘 완료되는 경우가 있어 최근 OB_LOOKBACK 일을 매번 다시 훑는다.
+  const OB_LOOKBACK = 30;
+  if (OB_CHANNEL) {
+    const obMinObj = new Date(Date.UTC(Y, M, D - OB_LOOKBACK));
+    const obMinDate = `${obMinObj.getUTCFullYear()}-${pad(obMinObj.getUTCMonth() + 1)}-${pad(obMinObj.getUTCDate())}`;
+    const obOldest = boundsOf(obMinDate).oldest;
+
+    // 이전 실행에서 정해진 완료일(ts → 날짜)을 보존한다
+    const priorDone = {};
+    let hadAnyOb = false;
+    for (const d in data.days) for (const it of (((data.days[d].ob) || {}).items) || []) {
+      hadAnyOb = true; if (it.ts) priorDone[it.ts] = d;
+    }
+    // 재조회 창 밖(ts 가 너무 오래됨)이라 이번에 다시 볼 수 없는 항목은 그대로 살린다
+    const keep = {};
+    for (const d in data.days) for (const it of (((data.days[d].ob) || {}).items) || []) {
+      if (it.ts && parseFloat(it.ts) < obOldest) (keep[d] = keep[d] || []).push(it);
+    }
+
+    let obMsgs = null;
+    try { obMsgs = await fetchAllRange(OB_CHANNEL, obOldest, latestBound); }
+    catch (e) { console.error(`  ⚠ [설치OB] 채널 읽기 실패(${e.message}) — 이번 실행 OB 집계 생략(기존 값 유지)`); }
+
+    if (obMsgs) {
+      const r = applyObResults(data, tallyInstallOb(obMsgs), { priorDone, keep, hadAnyOb, obMinDate, todayKstDate });
+      console.log(`[설치OB] ${obMinDate}~${targetDate} 재집계: 완료 ${r.total}건 / ${r.days}일${hadAnyOb ? '' : ' (첫 집계 — 글 게시일 기준으로 분산)'}`);
+    }
+  } else {
+    console.log('[설치OB] 미집계 — OB_CHANNEL 미설정(#ishopcare_new_주문관리 채널 ID 필요)');
   }
 
   // ===== VOC 롤링 재집계 (minDate~오늘) — 과거 설문도 오늘 '확인+완료' 찍히면 오늘 완료로 반영 =====

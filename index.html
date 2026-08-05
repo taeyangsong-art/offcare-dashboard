@@ -2294,7 +2294,7 @@ function renderMenuReg(){
   const detail=sel?`
     <div class="card">
       <div class="card-head"><h3>🧾 ${escapeHtml(sel.store||'(상호미상)')} <span class="hint">${sel.date} ${sel.time}</span></h3>
-        <span class="hint">${escapeHtml(sel.pos||'POS 미상')} · 사업자 ${escapeHtml(sel.biz||'-')}${sel.phone?' · '+escapeHtml(sel.phone):''}</span></div>
+        <span class="hint">${escapeHtml(sel.pos||'POS 미상')} · 사업자 ${escapeHtml(sel.biz||'-')} · <span title="공개 저장소라 연락처는 적재하지 않습니다">📞 연락처는 슬랙 원문에서</span></span></div>
       <div style="display:flex;gap:8px;flex-wrap:wrap;margin:8px 0">
         <a class="btn" href="${sel.link}" target="_blank">💬 슬랙 원문</a>
         ${(sel.drive||[]).map((d,i2)=>`<a class="btn" href="${d}" target="_blank">🖼 이미지${(sel.drive.length>1?' '+(i2+1):'')}</a>`).join('')}
@@ -2306,10 +2306,16 @@ function renderMenuReg(){
         <button class="btn" style="align-self:center" onclick="menuregMemoSave()">💾 메모 저장</button>
       </div>
       <div style="background:var(--surface,#f7f7f8);border-radius:10px;padding:10px 12px;font-size:13px;white-space:pre-wrap;max-height:180px;overflow:auto">${escapeHtml(sel.content||'(요청내용 없음)')}${sel.special?'\n\n[특이사항] '+escapeHtml(sel.special):''}</div>
-      ${(sel.att||[]).some(a=>a.ocr)?`<div style="margin-top:8px">
-        <div style="font-size:13px;font-weight:700;margin-bottom:4px">🔎 이미지 자동판독 <span class="cnt-badge">${(sel.att||[]).filter(a=>a.ocr).length}</span> <span class="hint">(무료 OCR · 메뉴명·가격만 추출 · 오탈자 가능 → 반드시 원본과 대조)</span></div>
-        ${(sel.att||[]).filter(a=>a.ocr).map(a=>{const menu=ocrExtractMenu(a.ocr,sel.store);return `<div style="background:#eef6ff;border-left:3px solid #2f6fc0;border-radius:8px;padding:8px 11px;font-size:12.5px;white-space:pre-wrap;margin-bottom:6px;max-height:200px;overflow:auto"><b>📄 ${escapeHtml(a.name)}</b>\n${escapeHtml(menu||'(메뉴 인식 실패 — 원문 확인)')}\n<details style="margin-top:6px"><summary style="cursor:pointer;color:#2f6fc0;font-size:11.5px">📄 OCR 원문 보기</summary><div style="color:#667;font-size:11.5px;margin-top:4px">${escapeHtml(a.ocr)}</div></details></div>`}).join('')}
-      </div>`:''}
+      ${(function(){
+        // 슬랙 직접 첨부(att) + Drive 링크 이미지(datt) 를 같은 판독 목록으로 묶는다
+        const imgs=[...(sel.att||[]).map(a=>({...a,src:'슬랙'})), ...(sel.datt||[]).map(a=>({...a,src:'Drive'}))];
+        const read=imgs.filter(a=>a.ocr), blocked=imgs.filter(a=>a.blocked).length;
+        if(!read.length&&!blocked) return '';
+        return `<div style="margin-top:8px">
+        <div style="font-size:13px;font-weight:700;margin-bottom:4px">🔎 이미지 자동판독 <span class="cnt-badge">${read.length}</span> <span class="hint">(무료 OCR · 메뉴명·가격만 추출 · 오탈자 가능 → 반드시 원본과 대조)</span></div>
+        ${blocked?`<div class="hint" style="color:#c2410c;margin-bottom:6px">🔒 Drive 이미지 ${blocked}장은 소유자가 다운로드를 막아 판독하지 못했습니다 — 위 <b>🖼 이미지</b> 링크로 직접 확인하세요.</div>`:''}
+        ${read.map(a=>{const menu=ocrExtractMenu(a.ocr,sel.store);return `<div style="background:#eef6ff;border-left:3px solid #2f6fc0;border-radius:8px;padding:8px 11px;font-size:12.5px;white-space:pre-wrap;margin-bottom:6px;max-height:200px;overflow:auto"><b>📄 ${escapeHtml(a.name||'이미지')}</b> <span class="hint">${a.src}</span>\n${escapeHtml(menu||'(메뉴 인식 실패 — 원문 확인)')}\n<details style="margin-top:6px"><summary style="cursor:pointer;color:#2f6fc0;font-size:11.5px">📄 OCR 원문 보기</summary><div style="color:#667;font-size:11.5px;margin-top:4px">${escapeHtml(a.ocr)}</div></details></div>`}).join('')}
+      </div>`;})()}
       ${(sel.replies||[]).length?`<div style="margin-top:8px">
         <div style="font-size:13px;font-weight:700;margin-bottom:4px">💬 요청자 댓글 <span class="cnt-badge">${sel.replies.length}</span> <span class="hint">(요청사항 참고)</span></div>
         ${sel.replies.map(r=>`<div style="background:rgba(94,92,230,.06);border-left:3px solid var(--blue,#5e5ce6);border-radius:8px;padding:8px 11px;font-size:13px;white-space:pre-wrap;margin-bottom:6px;max-height:120px;overflow:auto">${escapeHtml(r)}</div>`).join('')}
@@ -3914,7 +3920,7 @@ function renderOverview(){
             : `<div class="ov-val">${c.total}<small>건</small></div>`}
           ${deltaHTML(c.total, c.prev)}
         </div>`).join("")}
-      <div class="ov-tile ob${obCur?' clickable':''}" style="--c:#5856d6"${obCur?' onclick="showObDetail()" title="클릭 → 설치 OB 상세 보기"':''}>
+      <div class="ov-tile ob${obCur?' clickable':''}" style="--c:#5856d6"${obCur?' onclick="showObDetail()"':''} title="#ishopcare_new_주문관리 의 '설치일정 확인해주세요' 글에 담당자 완료 이모지(예: 규빈완료)가 찍히면 1건 · 완료를 처음 감지한 날 기준${obCur?' — 클릭하면 건별 상세':''}">
         <div class="ov-name"><span class="ov-ic">📞</span>설치 OB${obCur?'<span class="ov-drill-ic">🔎</span>':''}</div>
         <div class="ov-val">${obCur}<small>건</small></div>
         ${obCur ? deltaHTML(obCur, obPrev) : `<div class="ov-delta flat"><span>집계 대기중</span></div>`}
