@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 372,
- "updatedAt": "2026-08-05 15:15",
+ "version": 373,
+ "updatedAt": "2026-08-05 15:30",
  "days": 30,
  "items": [
   {
@@ -20,10 +20,14 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1785910442.914899",
-   "status": "confirm",
+   "replies": [
+    "구의점 없는데",
+    "리사르커피 이스트폴점\n토플파 복사로 진행 / 매출정보 없어지고 재온보딩 필요함 안내 완료",
+    "재온보딩완료"
+   ],
+   "rc": 4,
+   "lr": "1785911100.253969",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785910437213399"
   },
