@@ -3,10 +3,52 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 367,
- "updatedAt": "2026-08-05 14:00",
+ "version": 368,
+ "updatedAt": "2026-08-05 14:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1785906862.147539",
+   "date": "2026-08-05",
+   "time": "14:14",
+   "store": "반달커피",
+   "biz": "3022363308",
+   "pos": "",
+   "content": "메뉴 등록 요청 드립니다. (rm메일로 보내주셨다고합니다.)",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785906867.241299",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785906862147539"
+  },
+  {
+   "ts": "1785906125.711779",
+   "date": "2026-08-05",
+   "time": "14:02",
+   "store": "전주종가콩나물국밥전문점 미아",
+   "biz": "8882500548",
+   "pos": "",
+   "content": "OK포스 메뉴 수정",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "행사소주 1900 > 2500\n행사맥주 1900 > 2500"
+   ],
+   "rc": 2,
+   "lr": "1785906154.138919",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785906125711779"
+  },
   {
    "ts": "1785893003.184369",
    "date": "2026-08-05",
