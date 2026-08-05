@@ -3,10 +3,32 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 356,
- "updatedAt": "2026-08-05 09:15",
+ "version": 357,
+ "updatedAt": "2026-08-05 09:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1785890438.367339",
+   "date": "2026-08-05",
+   "time": "09:40",
+   "store": "은하수 국밥(Galaxy Gukbap)",
+   "biz": "7680403509",
+   "phone": "01037567521",
+   "pos": "",
+   "content": "하이오더 선불형 연동 위해 선불 테이블 생성 부탁드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "replies": [
+    "동일한 구성으로 선불 테이블 생성 부탁드립니다. :감사합니다꾸벅:"
+   ],
+   "rc": 2,
+   "lr": "1785890478.911719",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785890438367339"
+  },
   {
    "ts": "1785888297.483889",
    "date": "2026-08-05",
@@ -9269,26 +9291,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783299758463829"
-  },
-  {
-   "ts": "1783298342.133599",
-   "date": "2026-07-06",
-   "time": "09:39",
-   "store": "퍼센트 아라비카 신세계 강남점",
-   "biz": "8848701922",
-   "phone": "",
-   "pos": "",
-   "content": "여의도63빌딩점과 동일하게 메뉴 복사",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783298348.457429",
-   "status": "done",
-   "handler": "김동욱",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783298342133599"
   }
  ]
 };

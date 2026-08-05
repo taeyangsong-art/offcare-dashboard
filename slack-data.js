@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2608,
+  "version": 2609,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -84603,7 +84603,7 @@ window.SLACK_DATA = {
             "emp": "",
             "autoStatus": "",
             "autoEmp": "",
-            "autoNote": "",
+            "autoNote": "1차부재 1차부재",
             "doneDate": ""
           },
           {
@@ -84647,7 +84647,7 @@ window.SLACK_DATA = {
             "emp": "",
             "autoStatus": "",
             "autoEmp": "",
-            "autoNote": "",
+            "autoNote": "1차부재 1차부재",
             "doneDate": ""
           },
           {
@@ -84754,12 +84754,38 @@ window.SLACK_DATA = {
     },
     "2026-08-05": {
       "counts": {
+        "as": {
+          "송태양": 1,
+          "김현기": 1
+        },
         "menu": {
           "김규빈": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:36",
+          "store": "(주)청송오에이솔루션",
+          "biz": "1068682022",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "단말기에 연결할 수 없습니다 라고 뜬다 하시어 확인 부탁드립니다,",
+          "hw": "",
+          "intake": "offline",
+          "note": "제가 프론트 단말기에 뜨는 부분인지 확인드렸는데 대표님께서 프론트 단말기인지 잘 인지를 못하시고 계약서도 8년전 계약서라 어떤 단말기인지 정확히 파악이 안됐습니다 죄송해요ㅜㅜ / • 무선단말기 불량으로 새로 구매안내 및 자사 무선단말기 구매링크 발송 완료입니다 무선단말기 불량으로 새로 구매안내 및 자사 무선단말기 구매링크 발송 완료입니다"
+        },
+        {
+          "time": "09:30",
+          "store": "백근두루치기",
+          "biz": "3725500958",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "• 유프 연결이 잘 되지 않아 원격 요청 주셨습니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "SKF4842.4G CCS43@6356 / 유프X 무프 / 400w 대체품 온보딩 / 192.168.45.160 변경"
+        },
         {
           "time": "09:04",
           "store": "호반의쉼터",
@@ -84773,8 +84799,8 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
-        "offline": 0,
+        "online": 2,
+        "offline": 1,
         "unknown": 0
       },
       "ob": {
@@ -84782,7 +84808,7 @@ window.SLACK_DATA = {
         "byEmp": {},
         "items": []
       },
-      "updatedAt": "09:30",
+      "updatedAt": "09:45",
       "voc": {
         "responses": 2,
         "install": {
@@ -84879,6 +84905,14 @@ window.SLACK_DATA = {
       "1785824102.868729": {
         "post": "1785824102.868729",
         "lastSeen": 1785824120.285
+      },
+      "1785890438.367339": {
+        "post": "1785890438.367339",
+        "lastSeen": 1785890723.192
+      },
+      "1785890700.366669": {
+        "post": "1785890700.366669",
+        "lastSeen": 1785890723.192
       }
     },
     "days": {
