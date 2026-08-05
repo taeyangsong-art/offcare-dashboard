@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2607,
+  "version": 2608,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -84556,11 +84556,11 @@ window.SLACK_DATA = {
                 "cat": "필요한 기능이 없거나 몰라서 불편"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 기술적으로 불가능한 내용은 아니나, 결제오류발생 가능성 등으로 배포 불가능함 안내 • 예를들어 포스에서 주문넣고 있는 동시에 키오스크에서 결제를 진행할 수 있다보니 이 과정에서 결제오류가 발생할 수 있음 설명 기술적으로 불가능한 내용은 아니나, 결제오류발생 가능성 등으로 배포 불가능함 안내 예를들어 포스에서 주문넣고 있는 동시에 키오스크에서 결제를 진행",
+            "doneDate": "2026-08-05"
           },
           {
             "time": "16:02",
@@ -84581,7 +84581,7 @@ window.SLACK_DATA = {
             "emp": "",
             "autoStatus": "",
             "autoEmp": "",
-            "autoNote": "",
+            "autoNote": "1차부재 1차부재",
             "doneDate": ""
           },
           {
@@ -84782,22 +84782,23 @@ window.SLACK_DATA = {
         "byEmp": {},
         "items": []
       },
-      "updatedAt": "09:04",
+      "updatedAt": "09:30",
       "voc": {
-        "responses": 1,
+        "responses": 2,
         "install": {
           "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 1,
-          "low": 0
+          "count": 2,
+          "low": 1
         },
         "high": {
           "install": 1,
           "nps": 1
         },
         "npsDist": {
+          "0": 1,
           "10": 1
         },
         "installDist": {
@@ -84807,19 +84808,52 @@ window.SLACK_DATA = {
           "서비스[학원]": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 1,
+            "low": 1
+          },
           "구매설치": {
             "total": 1,
             "low": 0
           }
         },
         "byVan": {
+          "NICE": {
+            "total": 1,
+            "low": 1
+          },
           "KOCES": {
             "total": 1,
             "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1
+        },
+        "alerts": [
+          {
+            "time": "09:23",
+            "store": "요로코롬네일",
+            "storeId": "354636",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "자꾸꺼져서 결제안됨",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
         "praises": []
       }
     }
