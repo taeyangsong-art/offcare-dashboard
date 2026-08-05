@@ -3,10 +3,52 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 382,
- "updatedAt": "2026-08-05 18:00",
+ "version": 383,
+ "updatedAt": "2026-08-05 18:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1785921324.217409",
+   "date": "2026-08-05",
+   "time": "18:15",
+   "store": "커피에 반하다",
+   "biz": "6910203210",
+   "pos": "토스포스",
+   "content": "토스pos 메뉴등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 0,
+   "lr": "",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785921324217409"
+  },
+  {
+   "ts": "1785921126.096119",
+   "date": "2026-08-05",
+   "time": "18:12",
+   "store": "쿠타팜 테라스",
+   "biz": "7413600207",
+   "pos": "오케이포스",
+   "content": "오케이포스) 메뉴 추가 요청드립니다 >>",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "포스의 브런치 카테고리에\n소 화식\n4000원으로 신규메뉴 등록"
+   ],
+   "rc": 2,
+   "lr": "1785921134.416619",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785921126096119"
+  },
   {
    "ts": "1785912768.004399",
    "date": "2026-08-05",
