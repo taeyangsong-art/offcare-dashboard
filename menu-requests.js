@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 380,
- "updatedAt": "2026-08-05 17:30",
+ "version": 381,
+ "updatedAt": "2026-08-05 17:45",
  "days": 30,
  "items": [
   {
@@ -45,8 +45,8 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1785912758.357089",
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785912753618769"
   },
   {
@@ -8901,26 +8901,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783328059158559"
-  },
-  {
-   "ts": "1783327012.080509",
-   "date": "2026-07-06",
-   "time": "17:36",
-   "store": "달콤한설렘",
-   "biz": "6031477514",
-   "pos": "토스포스",
-   "content": "OKPOS - > 토스 전환",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1783327143.532059",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783327012080509"
   }
  ]
 };
