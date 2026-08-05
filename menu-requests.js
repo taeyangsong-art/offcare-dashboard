@@ -3,10 +3,32 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 373,
- "updatedAt": "2026-08-05 15:30",
+ "version": 374,
+ "updatedAt": "2026-08-05 15:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1785912244.475559",
+   "date": "2026-08-05",
+   "time": "15:44",
+   "store": "반달커피",
+   "biz": "3022363308",
+   "pos": "토스포스",
+   "content": "샌드위치 옵션 추가",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1y_NSXjB_3jVobZG3D4tWqJKLY_Z6kkbJ/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785912251.562529",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785912244475559"
+  },
   {
    "ts": "1785910437.213399",
    "date": "2026-08-05",
@@ -8995,26 +9017,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783320919801729"
-  },
-  {
-   "ts": "1783319743.699239",
-   "date": "2026-07-06",
-   "time": "15:35",
-   "store": "삼성복집",
-   "biz": "4132801460",
-   "pos": "오케이포스",
-   "content": "오케이포스 사용 중 메뉴 등록 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1783320996.584969",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783319743699239"
   }
  ]
 };
