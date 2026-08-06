@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 393,
- "updatedAt": "2026-08-06 11:30",
+ "version": 394,
+ "updatedAt": "2026-08-06 12:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1785985041.453539",
+   "date": "2026-08-06",
+   "time": "11:57",
+   "store": "강창구찹쌀진순대 오남점",
+   "biz": "8580303805",
+   "pos": "",
+   "content": "터치키 메뉴 사진 전달 요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785985045.881029",
+   "status": "done",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785985041453539"
+  },
   {
    "ts": "1785983432.440119",
    "date": "2026-08-06",
@@ -22,11 +42,14 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1785983439.305869",
-   "status": "wait",
-   "handler": null,
+   "replies": [
+    "파일 다 깨짐 전화",
+    "엑셀이나 워드로 작업 후 재 전달"
+   ],
+   "rc": 3,
+   "lr": "1785984658.483659",
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785983432440119"
   },
   {
@@ -8894,26 +8917,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783393399146709"
-  },
-  {
-   "ts": "1783392529.525289",
-   "date": "2026-07-07",
-   "time": "11:48",
-   "store": "나야 한식당",
-   "biz": "5070634449",
-   "pos": "퍼스트포스",
-   "content": "메뉴추가 요청드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1783392832.341329",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783392529525289"
   }
  ]
 };
