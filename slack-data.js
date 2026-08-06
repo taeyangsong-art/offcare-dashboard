@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2719,
+  "version": 2720,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -84795,17 +84795,6 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "17:12",
-          "store": "뼈빠지계닭강정",
-          "biz": "2051356996",
-          "handler": "김현기",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "1차 부재"
-          ]
-        },
-        {
           "time": "16:50",
           "store": "(주)캐치볼 야구아카데미",
           "biz": "2978803540",
@@ -84822,17 +84811,6 @@ window.SLACK_DATA = {
           "biz": "4631402318",
           "handler": "미지정",
           "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "1차 부재"
-          ]
-        },
-        {
-          "time": "12:00",
-          "store": "카츠모",
-          "biz": "5750702501",
-          "handler": "김현기",
-          "cat": "delivery",
           "intake": "online",
           "reasons": [
             "1차 부재"
@@ -87452,7 +87430,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 207,
+        "online": 205,
         "offline": 33,
         "unknown": 0
       },
@@ -87696,7 +87674,7 @@ window.SLACK_DATA = {
     "2026-08-06": {
       "counts": {
         "as": {
-          "김규빈": 10,
+          "김규빈": 11,
           "김현기": 8,
           "송태양": 9,
           "서상원": 11,
@@ -87723,8 +87701,31 @@ window.SLACK_DATA = {
           "김현기": 2
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "12:00",
+          "store": "비굿비러브",
+          "biz": "3744201045",
+          "handler": "송태양",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "1차 부재"
+          ]
+        }
+      ],
       "done": [
+        {
+          "time": "12:32",
+          "store": "카페 비",
+          "biz": "4682700649",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "포스기 전원이 지속 꺼짐 점검 요청 드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "N250 / 방전작업중 / 방전성공 사용하기로"
+        },
         {
           "time": "12:12",
           "store": "진성테크",
@@ -88416,11 +88417,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 48,
-        "offline": 14,
+        "online": 49,
+        "offline": 15,
         "unknown": 0
       },
-      "updatedAt": "12:45",
+      "updatedAt": "13:00",
       "voc": {
         "responses": 3,
         "install": {
@@ -88574,11 +88575,19 @@ window.SLACK_DATA = {
       },
       "1785974415.484249": {
         "post": "1785974415.484249",
-        "lastSeen": 1785987921.972
+        "lastSeen": 1785988828.516
       },
       "1785982987.480109": {
         "post": "1785982987.480109",
-        "lastSeen": 1785987921.972
+        "lastSeen": 1785988828.516
+      },
+      "1785988803.423799": {
+        "post": "1785988803.423799",
+        "lastSeen": 1785988828.516
+      },
+      "1785988802.990969": {
+        "post": "1785988802.990969",
+        "lastSeen": 1785988828.516
       }
     },
     "days": {
@@ -105004,14 +105013,16 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-06 12:45",
+    "at": "2026-08-06 13:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
+    "start": "2026-08-01",
     "ok": false,
     "error": "GDRIVE_* 환경변수 없음",
     "rows": 0,
     "named": 0,
     "unknownName": 0,
+    "beforeStart": 0,
     "done": 0,
     "byStatus": {}
   }
