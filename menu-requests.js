@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 402,
- "updatedAt": "2026-08-06 15:00",
+ "version": 403,
+ "updatedAt": "2026-08-06 15:30",
  "days": 30,
  "items": [
   {
@@ -8838,26 +8838,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783409854808799"
-  },
-  {
-   "ts": "1783405795.845219",
-   "date": "2026-07-07",
-   "time": "15:29",
-   "store": "마이데이커피(MY DAY COFFEE)",
-   "biz": "1023167941",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1783405933.357599",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783405795845219"
   }
  ]
 };
