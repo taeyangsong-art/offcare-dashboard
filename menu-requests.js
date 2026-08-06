@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 401,
- "updatedAt": "2026-08-06 14:30",
+ "version": 402,
+ "updatedAt": "2026-08-06 15:00",
  "days": 30,
  "items": [
   {
@@ -8858,48 +8858,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783405795845219"
-  },
-  {
-   "ts": "1783403536.257979",
-   "date": "2026-07-07",
-   "time": "14:52",
-   "store": "나나라운지",
-   "biz": "4701401883",
-   "pos": "토스포스",
-   "content": "전체 입력해주새요",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/16Gi9XVJ4miLg5I6o1SH6ja5fgQfRcYy6/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783403540.729589",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783403536257979"
-  },
-  {
-   "ts": "1783403345.506599",
-   "date": "2026-07-07",
-   "time": "14:49",
-   "store": "설맥주식당",
-   "biz": "2870902253",
-   "pos": "토스포스",
-   "content": "신규등록",
-   "special": "메일로파일보냈습니다",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1783405017.389979",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783403345506599"
   }
  ]
 };
