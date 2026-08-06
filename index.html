@@ -1927,21 +1927,21 @@ function ovVocDone(dates){
 }
 function ovVocAlerts(dates){ const a=aggVoc(dates).alerts; return ovShift==='night'? a.filter(x=>isNightTime(x.time)) : a; }
 function ovPendingRaw(dates){ const out=[]; dates.forEach(d=>((slackDay(d)||{}).pending||[]).forEach(p=>{ if(ovShift!=='night'||isNightTime(p.time)) out.push(p); })); return out; }
-/* 설치 OB — 설치(온보딩) 후 해피콜/OB. slack-data.js days[d].ob = {count, byEmp:{}, items:[{time,store,biz,handler,intake}]}
- * fetch-and-tally.js 가 OB_EMOJI_RE 에 걸리는 이모지가 찍힌 글을 적재한다. 데이터가 쌓이기 전엔 0(집계 대기중)으로 표시된다. */
+/* 설치 OB — 구글시트 '⚒️설치일정 확인해주세요' 의 D열(확인여부)에 담당자 이름이 적힌 행.
+ * slack-data.js days[d].ob = {count, byEmp:{}, items:[{key,handler,status,recvDate,planDate,link}]}
+ * 기준일은 '담당자 이름을 처음 본 날'. 시트에 시각 컬럼이 없어 주간/야간 구분은 불가하다. */
 function obItems(dates){
   const out=[];
   dates.forEach(d=>{ const ob=(slackDay(d)||{}).ob; if(!ob) return;
-    (ob.items||[]).forEach(it=>{ if(ovShift!=='night'||isNightTime(it.time)) out.push({...it,_date:d}); }); });
+    (ob.items||[]).forEach(it=>out.push({...it,_date:d})); });
   return out;
 }
-// items 가 없는 초기 집계분(count만 있는 날)은 주간 기준에서만 count 로 폴백한다(야간 필터엔 시각이 필요)
+// 야간 탭에서는 null — 시트에 시각이 없어 야간 건만 골라낼 방법이 없다(0으로 찍으면 '없다'로 오해된다)
 function obCnt(dates){
+  if(ovShift==='night') return null;
   let n=0;
   dates.forEach(d=>{ const ob=(slackDay(d)||{}).ob; if(!ob) return;
-    const its=ob.items||[];
-    if(its.length) n += (ovShift==='night' ? its.filter(x=>isNightTime(x.time)).length : its.length);
-    else if(ovShift!=='night') n += ob.count||0; });
+    n += (ob.items||[]).length || ob.count || 0; });
   return n;
 }
 let ovStart = ymd(addDays(today(),-6));
@@ -3920,10 +3920,12 @@ function renderOverview(){
             : `<div class="ov-val">${c.total}<small>건</small></div>`}
           ${deltaHTML(c.total, c.prev)}
         </div>`).join("")}
-      <div class="ov-tile ob${obCur?' clickable':''}" style="--c:#5856d6"${obCur?' onclick="showObDetail()"':''} title="#ishopcare_new_주문관리 의 '설치일정 확인해주세요' 글에 담당자 확인 이모지(예: 태양확인·규빈확인)가 찍히면 1건 · 완료를 처음 감지한 날 기준${obCur?' — 클릭하면 건별 상세':''}">
+      <div class="ov-tile ob${obCur?' clickable':''}" style="--c:#5856d6"${obCur?' onclick="showObDetail()"':''} title="구글시트 '⚒️설치일정 확인해주세요' 의 D열(확인여부)에 담당자 이름이 적히면 1건 · 이름을 처음 본 날 기준${obCur?' — 클릭하면 건별 상세':''}">
         <div class="ov-name"><span class="ov-ic">📞</span>설치 OB${obCur?'<span class="ov-drill-ic">🔎</span>':''}</div>
-        <div class="ov-val">${obCur}<small>건</small></div>
-        ${obCur ? deltaHTML(obCur, obPrev) : `<div class="ov-delta flat"><span>집계 대기중</span></div>`}
+        ${obCur===null
+          ? `<div class="ov-val" style="font-size:26px">—</div><div class="ov-delta flat"><span>시트에 시각이 없어 야간 구분 불가</span></div>`
+          : `<div class="ov-val">${obCur}<small>건</small></div>
+             ${obCur ? deltaHTML(obCur, obPrev) : `<div class="ov-delta flat"><span>집계 대기중</span></div>`}`}
       </div>
     </div>
 
@@ -4013,10 +4015,29 @@ function catLabelOf(k){ if(k==='voc')return 'VOC'; if(k==='ob')return '설치 OB
 function catChip(k){ const c=WORK_CATS.find(w=>w.key===k); const col=k==='voc'?'#ff2d55':(k==='ob'?'#5856d6':(c?c.color:'#8e8e93')); return `<span class="cat-chip" style="background:${hexA(col,.14)};color:${col}">${catLabelOf(k)}</span>`; }
 // 처리 상세 모달: mode='cat'(카테고리별) 또는 'emp'(직원별) — 상호/사업자/유형/담당 조회
 function detailStatusBadge(st){ const col={'처리':'#166534','부재':'#b91c1c','확인필요':'#c2410c','OB':'#4338ca'}[st]||'#475569', bg={'처리':'#dcfce7','부재':'#ffe1de','확인필요':'#ffedd5','OB':'#e0e7ff'}[st]||'#eef1f5'; return `<span class="dm-st" style="background:${bg};color:${col}">${st}</span>`; }
-// 📞 설치 OB 상세 — 설치 후 해피콜/OB 로 표시된 건 목록
+// 📞 설치 OB 상세 — 시트 기반이라 상호·사업자 컬럼이 없다. 상태·설치예정일·원문링크로 보여준다.
 function showObDetail(){
-  const items = obItems(ovDates()).map(x=>({time:x.time, store:x.store, biz:x.biz, emp:x.handler, cat:'ob', date:x._date, st:'OB'}));
-  openDetailModal((ovShift==='night'?'🌙 ':'')+'설치 OB 상세', items);
+  const items = obItems(ovDates()).sort((a,b)=>((b._date||'')+(b.key||'')).localeCompare((a._date||'')+(a.key||'')));
+  const byEmp={}; items.forEach(x=>byEmp[x.handler]=(byEmp[x.handler]||0)+1);
+  const chips=Object.entries(byEmp).sort((a,b)=>b[1]-a[1])
+    .map(([e,n])=>`<span class="ss-chip">${escapeHtml(e)} <b>${n}</b></span>`).join('');
+  const stColor=s=>/부재/.test(s)?'#b91c1c':/완료/.test(s)?'#166534':/불가|보류/.test(s)?'#c2410c':'#475569';
+  const stBg=s=>/부재/.test(s)?'#ffe1de':/완료/.test(s)?'#dcfce7':/불가|보류/.test(s)?'#ffedd5':'#eef1f5';
+  const rows = items.length ? items.map((x,i)=>`<tr class="dm-row" data-k="${escapeHtml((x.handler||'')+' '+(x.status||'')).toLowerCase()}">
+      <td class="dm-num">${i+1}</td>
+      <td class="trow-time">${fmtShort(x._date)}</td>
+      <td><span class="dm-st" style="background:${stBg(x.status||'')};color:${stColor(x.status||'')}">${escapeHtml(x.status||'(미기재)')}</span></td>
+      <td class="trow-time">${x.planDate?fmtShort(x.planDate):'<span style="color:var(--gray2)">—</span>'}</td>
+      <td class="dm-emp">${escapeHtml(x.handler||'-')}</td>
+      <td>${x.link?`<a href="${escapeHtml(x.link)}" target="_blank" style="color:var(--blue,#2f6fc0)">💬 원문</a>`:'<span style="color:var(--gray2)">—</span>'}</td>
+    </tr>`).join('')
+    : `<tr><td colspan="6" style="text-align:center;color:var(--gray2);padding:22px">이 기간 설치 OB 건이 없습니다.<br><span style="font-size:12px">시트 D열(확인여부)에 담당자 이름이 적히면 집계됩니다.</span></td></tr>`;
+  let el=document.getElementById('doneModal'); if(!el){ el=document.createElement('div'); el.id='doneModal'; el.className='detail-overlay'; el.onclick=e=>{ if(e.target===el) el.remove(); }; document.body.appendChild(el); }
+  el.innerHTML=`<div class="detail-box"><div class="detail-head"><h3>📞 설치 OB 상세 <span class="cnt-badge">${items.length}건</span></h3><button class="detail-x" onclick="document.getElementById('doneModal').remove()">✕</button></div>
+    ${chips?`<div class="ss-chips" style="margin:8px 0">${chips}</div>`:''}
+    <p class="note" style="margin:2px 0 10px;font-size:12.5px;color:var(--gray)">구글시트 <b>⚒️설치일정 확인해주세요</b> D열(확인여부)에 담당자 이름이 적힌 건 · 날짜는 <b>이름을 처음 본 날</b> 기준 · 상태가 부재·점주직접접수여도 OB 수행으로 집계</p>
+    <input class="search-box" type="text" placeholder="담당자 또는 상태 검색…" oninput="filterDoneModal(this.value)">
+    <div class="detail-scroll"><table class="voc-table"><thead><tr><th style="width:34px">#</th><th style="width:62px">집계일</th><th style="width:104px">상태</th><th style="width:78px">설치예정</th><th style="width:86px">담당</th><th style="width:70px">원문</th></tr></thead><tbody id="doneModalBody">${rows}</tbody></table></div></div>`;
 }
 function showDoneDetail(mode, key){
   const dates=ovDates(), set=new Set(dates); let items=[], title='';

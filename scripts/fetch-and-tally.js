@@ -27,17 +27,17 @@ const RE_EMP      = new RegExp('^원격(' + NAMES + ')$');          // 원격OOO
 const RE_CONFIRM  = new RegExp('^(' + NAMES + ')(_확인.*)?$');     // OOO / OOO_확인
 const RE_CONFIRM2 = new RegExp('^(' + NAMES + ')_?확인_?$');       // OOO_확인_
 /* ── 설치 OB ──────────────────────────────────────────────────────────────
- * 원본: #ishopcare_new_주문관리 채널의 '설치일정 확인해주세요' 워크플로 글.
- * 그 글에 '<이름>확인' 이모지(예: 태양확인·규빈확인)가 찍히면 설치 OB 1건 완료로 적재한다.
- * 업무 채널(AS·명의변경 등)과 완전히 별개 소스라 tallyInto 를 거치지 않고 따로 수집한다. */
-const OB_CHANNEL = process.env.OB_CHANNEL_ID || 'C0AL2V3MM7U';   // #ishopcare_new_주문관리
-// 워크플로 글 판별. 조사·띄어쓰기 변형을 견디도록 '설치…일정' 만 보고, '확인' 은 요구하지 않는다
-// (예: "설치일정 확인해주세요" · "설치 일정을 확인해 주세요" · "신규 설치 일정 안내")
-const OB_TRIGGER = /설치\s*\S{0,4}\s*일정/;
-// 완료 표시 = 이름+확인 (태양확인·규빈확인·현기확인). 언더바 변형(태양_확인)도 같이 받는다.
-// 업무 채널의 RE_CONFIRM('태양'·'태양_확인')과 달리 이름만 찍힌 건 여기선 완료로 안 본다.
-const RE_OB_DONE = new RegExp('^(' + NAMES + ')_?확인_?$');
-const OB_PAGE_CAP = 40;   // fetchAllRange 의 guard 와 동일 — 200건×40 = 8,000건에서 잘린다(상한 도달 여부 표시용)
+ * 원본: 구글시트 '⚒️설치일정 확인해주세요'.
+ *   A=접수시각 · B=연락처(읽지 않음) · C=슬랙링크 · D=확인여부 · E=상태 · F=요청자 · G=설치예정일
+ * D열(확인여부)은 평소 TRUE/FALSE 체크박스인데, 여기에 담당자 이름(예: 김규빈)이 적히면
+ * 그 사람이 설치 OB 1건을 수행한 것으로 본다. 상태(E)가 부재·점주직접접수여도 OB 자체는 수행된 것.
+ *
+ * 슬랙 채널 스크래핑에서 이걸로 갈아탄 이유: 문구·이모지 이름·스레드 구조 세 가지에 전부
+ * 의존해 깨지기 쉬웠고, 실측상 채널 14일치 4,025건에 <이름>확인 이모지가 0건이었다.
+ * 시트는 구조화돼 있어 파싱이 필요 없고 API 호출도 1회로 끝난다. */
+const OB_SHEET_ID = process.env.OB_SHEET_ID || '1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c';
+const OB_COL = { at: 0, link: 2, who: 3, status: 4, planDate: 6 };   // B(연락처)는 의도적으로 안 읽는다
+const OB_NAMES = Object.values(personMap);                            // D열에서 담당자로 인정할 이름
 
 // VOC 저점 사유 자동분류 규칙 (label = 표시 카테고리, kw = 포함되면 그 카테고리로 분류). 순서대로 첫 매칭 우선.
 const VOC_REASON_RULES = [
@@ -268,34 +268,73 @@ async function tallyInto(msgs, ch, counts, pending, done, opts) {
   return { completed, externCount, dup, latest };
 }
 
-// 설치 OB 수집 — '설치일정 확인해주세요' 워크플로 글 중 '<이름>확인' 이모지가 찍힌 것만.
-// 워크플로 글은 봇이 올리고 본문이 blocks 에만 있는 경우가 있어 blocksText 로 읽는다.
-function tallyInstallOb(msgs, stats) {
-  const st = stats || {};
-  st.msgs = msgs.length; st.posts = 0; st.reacted = 0;
-  st.emojiAny = 0;    // 문구와 무관하게 '<이름>확인' 이모지가 달린 글 수 — 문구 문제인지 이모지 문제인지 가른다
-  st.hasSeolchi = 0;  // '설치' 가 들어간 글 수 — 채널 자체를 잘못 봤는지 가른다
-  const out = [];
-  for (const m of msgs) {
-    if (m.subtype && m.subtype !== 'bot_message') continue;
-    const text = blocksText(m).replace(/&gt;/g, '>').replace(/&lt;/g, '<').replace(/&amp;/g, '&');
-    const rnames = (m.reactions || []).map(r => r.name);
-    if (/설치/.test(text)) st.hasSeolchi++;
-    if (rnames.some(n => RE_OB_DONE.test(n))) st.emojiAny++;
-    if (!OB_TRIGGER.test(text)) continue;                 // 워크플로 글이 아닌 잡담 제외
-    st.posts++;
-    if (rnames.length) st.reacted++;
-    if (rnames.some(n => /중복/.test(n)) || rnames.includes('x')) continue;   // 중복·잘못올린글 제외
-    let who = null;
-    for (const n of rnames) { const mm = n.match(RE_OB_DONE); if (mm) { who = personMap[mm[1]]; break; } }
-    if (!who) continue;                                   // 완료 이모지 없으면 아직 미완료
-    const ts = m.ts;                                      // 완료일 고정용 키(글 하나 = 설치 건 하나)
-    let store = (((text.match(/상호\s*[:：]?\s*(.+)/) || [])[1]) || ((text.match(/(?:매장명|가맹점명?)\s*[:：]?\s*(.+)/) || [])[1]) || '').trim().split('/')[0].trim();
-    if (store.length > 30) store = store.slice(0, 30);
-    const biz = ((text.match(/사업자\s*번?호?\s*[:：]?\s*([\d\-]+)/) || [])[1] || '').replace(/-/g, '').trim();
-    out.push({ ts, postDate: kstDate(ts), time: kstHM(ts), store, biz, handler: who });
+// 따옴표·개행이 든 셀까지 처리하는 최소 CSV 파서
+function parseCsv(t) {
+  const rows = []; let row = [], cur = '', q = false;
+  for (let i = 0; i < t.length; i++) {
+    const c = t[i];
+    if (q) { if (c === '"') { if (t[i + 1] === '"') { cur += '"'; i++; } else q = false; } else cur += c; }
+    else if (c === '"') q = true;
+    else if (c === ',') { row.push(cur); cur = ''; }
+    else if (c === '\n') { row.push(cur); rows.push(row); row = []; cur = ''; }
+    else if (c !== '\r') cur += c;
   }
+  if (cur !== '' || row.length) { row.push(cur); rows.push(row); }
+  return rows;
+}
+// "2026년 8월 3일 오전 7:48:50" / "2026.8.4" / "2026-08-04" → "2026-08-04" (실패 시 '')
+function obParseDate(s) {
+  const t = String(s || '').trim();
+  let m = t.match(/(\d{4})\s*년\s*(\d{1,2})\s*월\s*(\d{1,2})\s*일/);
+  if (!m) m = t.match(/^(\d{4})[.\-/]\s*(\d{1,2})[.\-/]\s*(\d{1,2})/);
+  if (!m) return '';
+  return `${m[1]}-${pad(+m[2])}-${pad(+m[3])}`;
+}
+// 시트 CSV → 설치 OB 수행 건 목록. D열에 직원 이름이 적힌 행만.
+function parseObSheet(csv, stats) {
+  const st = stats || {};
+  const rows = parseCsv(csv);
+  const data = rows.slice(2).filter(rw => (rw || []).some(c => String(c || '').trim()));   // 1행 헤더 · 2행 예시
+  st.rows = data.length; st.named = 0; st.unknownName = 0;
+  const seen = {}, out = [];
+  const byStatus = {};
+  for (const rw of data) {
+    const who = String(rw[OB_COL.who] || '').trim();
+    if (!who || who === 'TRUE' || who === 'FALSE') continue;      // 체크박스 값은 담당자 아님
+    if (!OB_NAMES.includes(who)) { st.unknownName++; continue; }  // 오타·타팀 이름은 세지 않는다
+    st.named++;
+    const at = String(rw[OB_COL.at] || '').trim();
+    const link = String(rw[OB_COL.link] || '').trim();
+    // 같은 (접수시각|링크) 가 겹치는 옛 행이 있어 발생순번을 붙여 키를 유일하게 만든다
+    const base = at + '|' + link;
+    seen[base] = (seen[base] || 0) + 1;
+    const key = base + '#' + seen[base];
+    const status = String(rw[OB_COL.status] || '').trim();
+    byStatus[status || '(빈칸)'] = (byStatus[status || '(빈칸)'] || 0) + 1;
+    out.push({
+      key, handler: who, status,
+      recvDate: obParseDate(at),                       // 접수일 — 첫 집계 분산용
+      planDate: obParseDate(rw[OB_COL.planDate]),      // 설치예정일 (없을 수 있음)
+      link,
+    });
+  }
+  st.byStatus = byStatus;
   return out;
+}
+// 시트를 CSV 로 내려받는다. drive.readonly 스코프로 되므로 Sheets API 권한 추가가 필요 없다.
+async function fetchObSheet() {
+  const { GDRIVE_CLIENT_ID: id, GDRIVE_CLIENT_SECRET: sec, GDRIVE_REFRESH_TOKEN: rt } = process.env;
+  if (!id || !sec || !rt) throw new Error('GDRIVE_* 환경변수 없음');
+  const tr = await fetch('https://oauth2.googleapis.com/token', {
+    method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams({ client_id: id, client_secret: sec, refresh_token: rt, grant_type: 'refresh_token' }),
+  });
+  const tj = await tr.json();
+  if (!tj.access_token) throw new Error('토큰 갱신 실패: ' + (tj.error_description || tj.error || '?'));
+  const r = await fetch(`https://www.googleapis.com/drive/v3/files/${OB_SHEET_ID}/export?mimeType=text%2Fcsv`,
+    { headers: { Authorization: 'Bearer ' + tj.access_token } });
+  if (!r.ok) throw new Error('시트 export 실패 HTTP ' + r.status);
+  return await r.text();
 }
 
 // 찾은 완료 건들을 '완료일' 버킷에 넣어 data.days[*].ob 로 기록.
@@ -303,16 +342,16 @@ function tallyInstallOb(msgs, stats) {
 function applyObResults(data, found, o) {
   const byDay = {};
   for (const it of found) {
-    // 첫 집계(기존 OB 데이터가 전혀 없음)면 글 게시일로 흩뿌린다 — 안 그러면 과거분이 전부 오늘로 몰린다
-    const dd = o.priorDone[it.ts] || (o.hadAnyOb ? o.todayKstDate : it.postDate);
+    // 첫 집계(기존 OB 데이터가 전혀 없음)면 접수일로 흩뿌린다 — 안 그러면 과거분이 전부 오늘로 몰린다
+    const dd = o.priorDone[it.key] || (o.hadAnyOb ? o.todayKstDate : (it.recvDate || o.todayKstDate));
     (byDay[dd] = byDay[dd] || []).push(it);
   }
-  // 창 안의 날짜는 다시 계산한 값으로 덮고(이모지 취소 반영), 창 밖 항목은 합쳐 보존
+  // 기존 날짜도 다시 계산한 값으로 덮는다 — 시트에서 이름을 지우거나 행을 삭제하면 반영된다
   const touch = new Set([...Object.keys(byDay), ...Object.keys(data.days).filter(d => data.days[d].ob && d >= o.obMinDate)]);
   let total = 0;
   for (const d of touch) {
     const items = [...((o.keep || {})[d] || []), ...(byDay[d] || [])];
-    items.sort((a, b) => (b.time || '').localeCompare(a.time || ''));
+    items.sort((a, b) => String(b.key || '').localeCompare(String(a.key || '')));
     const byEmp = {};
     for (const it of items) byEmp[it.handler] = (byEmp[it.handler] || 0) + 1;
     const de = data.days[d] || { updatedAt: '', counts: {}, pending: [] };
@@ -527,56 +566,39 @@ async function tallyVoc(msgs, voc, channelId, opts) {
     console.log(`  [업무 ${dstr}] 완료 ${completed} · 확인필요 ${pending.length} · 외주 ${externCount} · 중복제외 ${dupTotal}`);
   }
 
-  // ===== 설치 OB 롤링 재집계 =====
-  // 기준일 = '완료를 처음 감지한 날'(VOC 와 동일 규칙). 슬랙이 이모지 시각을 안 주므로
-  // 한 번 기록된 완료일은 이후 실행에서도 그대로 유지한다.
-  // 며칠 전 올라온 글이 오늘 완료되는 경우가 있어 최근 OB_LOOKBACK 일을 매번 다시 훑는다.
-  // 이 채널은 트래픽이 많다(30일에 8,000건 = fetchAllRange 페이지 상한). 10분마다 도는 집계라
-  // 창을 좁혀 API 호출을 줄인다. 이미 완료로 기록된 건은 priorDone/keep 으로 보존되므로
-  // 창 밖으로 밀려도 사라지지 않는다. 창 안에서 뒤늦게 찍히는 완료만 잡으면 된다.
-  const OB_LOOKBACK = Number(process.env.OB_LOOKBACK || 14);
-  if (OB_CHANNEL) {
-    const obMinObj = new Date(Date.UTC(Y, M, D - OB_LOOKBACK));
-    const obMinDate = `${obMinObj.getUTCFullYear()}-${pad(obMinObj.getUTCMonth() + 1)}-${pad(obMinObj.getUTCDate())}`;
-    const obOldest = boundsOf(obMinDate).oldest;
+  // ===== 설치 OB 재집계 (구글시트) =====
+  // 기준일 = '담당자 이름을 처음 본 날'. 시트에 OB 수행 시각 컬럼이 없어서, 10분마다 도는
+  // 이 집계가 새로 등장한 행을 발견한 날을 수행일로 본다(±10분 해상도). 한 번 정해지면 고정.
+  // 첫 집계만 예외로 접수일(A열)로 흩뿌린다 — 안 그러면 기존 분이 전부 오늘 하루에 몰린다.
+  {
+    let csv = null, obErr = '';
+    try { csv = await fetchObSheet(); }
+    catch (e) { obErr = e.message; console.error(`  ⚠ [설치OB] 시트 읽기 실패(${obErr}) — 이번 실행 생략(기존 값 유지)`); }
 
-    // 이전 실행에서 정해진 완료일(ts → 날짜)을 보존한다
-    const priorDone = {};
-    let hadAnyOb = false;
-    for (const d in data.days) for (const it of (((data.days[d].ob) || {}).items) || []) {
-      hadAnyOb = true; if (it.ts) priorDone[it.ts] = d;
-    }
-    // 재조회 창 밖(ts 가 너무 오래됨)이라 이번에 다시 볼 수 없는 항목은 그대로 살린다
-    const keep = {};
-    for (const d in data.days) for (const it of (((data.days[d].ob) || {}).items) || []) {
-      if (it.ts && parseFloat(it.ts) < obOldest) (keep[d] = keep[d] || []).push(it);
-    }
-
-    let obMsgs = null, obErr = '';
-    try { obMsgs = await fetchAllRange(OB_CHANNEL, obOldest, latestBound); }
-    catch (e) { obErr = e.message; console.error(`  ⚠ [설치OB] 채널 읽기 실패(${obErr}) — 이번 실행 OB 집계 생략(기존 값 유지)`); }
-
-    // 진단 흔적을 데이터에 남긴다 — Actions 로그를 못 볼 때 '못 읽음' 과 '이모지 없음' 을 구분하려면 필요하다.
-    // (0건일 때 원인이 채널 권한인지, 워크플로 글이 안 잡힌 건지, 이모지만 안 찍힌 건지)
-    const scan = { at: nowKstStamp(), channel: OB_CHANNEL, ok: !!obMsgs, error: obErr, msgs: 0, capped: false, hasSeolchi: 0, posts: 0, reacted: 0, emojiAny: 0, done: 0 };
-    if (obMsgs) {
+    const scan = { at: nowKstStamp(), source: 'sheet', sheet: OB_SHEET_ID, ok: !!csv, error: obErr,
+                   rows: 0, named: 0, unknownName: 0, done: 0, byStatus: {} };
+    if (csv) {
       const st = {};
-      const found = tallyInstallOb(obMsgs, st);
-      Object.assign(scan, { msgs: st.msgs, capped: st.msgs >= OB_PAGE_CAP * 200,
-        hasSeolchi: st.hasSeolchi, posts: st.posts, reacted: st.reacted, emojiAny: st.emojiAny, done: found.length });
-      const r = applyObResults(data, found, { priorDone, keep, hadAnyOb, obMinDate, todayKstDate });
-      console.log(`[설치OB] ${obMinDate}~${targetDate} 재집계: 완료 ${r.total}건 / ${r.days}일` +
-                  ` (메시지 ${st.msgs}${scan.capped ? '(상한도달)' : ''} · '설치' 포함 ${st.hasSeolchi}` +
-                  ` · 워크플로 글 ${st.posts} · <이름>확인 달린 글 ${st.emojiAny} · 완료판정 ${found.length})` +
-                  `${hadAnyOb ? '' : ' (첫 집계 — 글 게시일 기준으로 분산)'}`);
-      if (st.posts === 0) console.log(`  ⚠ OB_TRIGGER 로 잡힌 글 0건 ('설치' 포함 글은 ${st.hasSeolchi}건) — 문구 패턴 재확인 필요`);
-      else if (st.emojiAny === 0) console.log(`  ⚠ 워크플로 글 ${st.posts}건은 보이지만 <이름>확인 이모지가 하나도 없음`);
-      else if (found.length === 0) console.log(`  ⚠ 이모지 달린 글 ${st.emojiAny}건이 있는데 완료판정 0 — 중복·❌ 로 걸러졌거나 이름 매핑 불일치`);
+      const found = parseObSheet(csv, st);
+
+      // 이전 실행에서 정해진 수행일(key → 날짜) 보존
+      const priorDone = {};
+      let hadAnyOb = false;
+      for (const d in data.days) for (const it of (((data.days[d].ob) || {}).items) || []) {
+        hadAnyOb = true; if (it.key) priorDone[it.key] = d;
+      }
+      // 시트는 매번 전량을 읽으므로 '창 밖 보존(keep)' 이 필요 없다.
+      // obMinDate 를 최소값으로 둬서 기존 ob 날짜를 전부 재계산 대상에 넣는다(행 삭제·이름 지움 반영).
+      const r = applyObResults(data, found, { priorDone, keep: {}, hadAnyOb, obMinDate: '0000-00-00', todayKstDate });
+      Object.assign(scan, { rows: st.rows, named: st.named, unknownName: st.unknownName, done: found.length, byStatus: st.byStatus });
+      console.log(`[설치OB] 시트 재집계: ${r.total}건 / ${r.days}일 ` +
+                  `(시트 ${st.rows}행 · D열 담당자 ${st.named}행` +
+                  `${st.unknownName ? ` · 미등록이름 ${st.unknownName}행` : ''})` +
+                  `${hadAnyOb ? '' : ' (첫 집계 — 접수일 기준으로 분산)'}`);
+      if (st.named === 0) console.log('  ⚠ D열에 담당자 이름이 적힌 행이 0건 — 아직 아무도 안 적었거나 이름 표기가 다름');
+      if (st.unknownName) console.log(`  ⚠ D열에 직원 명단에 없는 이름 ${st.unknownName}행 — 오타이거나 personMap 에 추가 필요`);
     }
     data.obScan = scan;
-  } else {
-    console.log('[설치OB] 미집계 — OB_CHANNEL 미설정(#ishopcare_new_주문관리 채널 ID 필요)');
-    data.obScan = { at: nowKstStamp(), channel: '', ok: false, error: 'OB_CHANNEL 미설정', msgs: 0, posts: 0, reacted: 0, done: 0 };
   }
 
   // ===== VOC 롤링 재집계 (minDate~오늘) — 과거 설문도 오늘 '확인+완료' 찍히면 오늘 완료로 반영 =====
