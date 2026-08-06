@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 403,
- "updatedAt": "2026-08-06 15:30",
+ "version": 404,
+ "updatedAt": "2026-08-06 16:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1785999173.086529",
+   "date": "2026-08-06",
+   "time": "15:52",
+   "store": "오늘애",
+   "biz": "2351502404",
+   "pos": "스파로스포스",
+   "content": "제가 상품관리에서 가격수정을 한 메뉴들이 가격입력창이 떠서 가격을 입렵해야 해서 너무 불편해요\n왜그런건가요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785999178.381489",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785999173086529"
+  },
   {
    "ts": "1785991187.742999",
    "date": "2026-08-06",
