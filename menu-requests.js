@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 386,
- "updatedAt": "2026-08-06 09:00",
+ "version": 387,
+ "updatedAt": "2026-08-06 09:15",
  "days": 30,
  "items": [
   {
@@ -46,8 +46,8 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [],
-   "rc": 3,
-   "lr": "1785921451.592869",
+   "rc": 5,
+   "lr": "1785974657.340509",
    "status": "confirm",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785921324217409"
