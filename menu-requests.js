@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 391,
- "updatedAt": "2026-08-06 10:30",
+ "version": 392,
+ "updatedAt": "2026-08-06 10:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1785979928.500899",
+   "date": "2026-08-06",
+   "time": "10:32",
+   "store": "찬란한아구 공덕직영점",
+   "biz": "1638502247",
+   "pos": "",
+   "content": "해당 매장 주식회사 찬란한아구직영사업본부(<tel:···|···>) 의 메뉴 및 옵션 복사 부탁드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 3,
+   "lr": "1785980274.167059",
+   "status": "done",
+   "handler": "심성현",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785979928500899"
+  },
   {
    "ts": "1785978780.448379",
    "date": "2026-08-06",
