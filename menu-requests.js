@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 388,
- "updatedAt": "2026-08-06 09:30",
+ "version": 389,
+ "updatedAt": "2026-08-06 09:45",
  "days": 30,
  "items": [
   {
@@ -26,9 +26,9 @@ window.MENU_REQUESTS = {
    ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1785921391.848219",
-   "status": "confirm",
+   "rc": 2,
+   "lr": "1785976544.009089",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785921386421619"
   },
@@ -8890,46 +8890,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783386247058229"
-  },
-  {
-   "ts": "1783385037.913439",
-   "date": "2026-07-07",
-   "time": "09:43",
-   "store": "뚜레쥬르 킨텍스2전시장",
-   "biz": "1283678896",
-   "pos": "퍼스트포스",
-   "content": "메뉴 수정 필요하여 확인부탁드립니다.\nHOT 페퍼민트 : 4300원\nHOT 캐모마일 : 4300원\nHOT 블랙퍼스트 : 4300원\nHOT 카푸치노 : 4800원\n\n• 추가로 아직 답변전이시어 ICE 음료에 사이즈(Large)변경 1,000원으로 되어있는지 함께 확인부탁드릴 수 있을까요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 7,
-   "lr": "1783386356.677179",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783385037913439"
-  },
-  {
-   "ts": "1783384323.974069",
-   "date": "2026-07-07",
-   "time": "09:32",
-   "store": "바른식작소",
-   "biz": "4312402362",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1783384370.975369",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783384323974069"
   }
  ]
 };
