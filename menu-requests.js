@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 406,
- "updatedAt": "2026-08-06 16:45",
+ "version": 407,
+ "updatedAt": "2026-08-06 17:00",
  "days": 30,
  "items": [
   {
@@ -8836,48 +8836,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783411403885629"
-  },
-  {
-   "ts": "1783410930.912929",
-   "date": "2026-07-07",
-   "time": "16:55",
-   "store": "네일,빛나",
-   "biz": "2992202013",
-   "pos": "토스포스",
-   "content": "전부 메뉴 등록을 해야해요..",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/1zyzXCS4e2WjbULNbcYmbFqpct1UyGmR0/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 6,
-   "lr": "1783416654.109869",
-   "status": "done",
-   "handler": "김기범",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783410930912929"
-  },
-  {
-   "ts": "1783410576.538479",
-   "date": "2026-07-07",
-   "time": "16:49",
-   "store": "파르크커피",
-   "biz": "1450104140",
-   "pos": "",
-   "content": "옵션 이것저것 수정",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1783410603.182729",
-   "status": "done",
-   "handler": "김현기",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783410576538479"
   }
  ]
 };
