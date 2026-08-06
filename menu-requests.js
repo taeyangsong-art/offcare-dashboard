@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 400,
- "updatedAt": "2026-08-06 14:15",
+ "version": 401,
+ "updatedAt": "2026-08-06 14:30",
  "days": 30,
  "items": [
   {
@@ -2673,10 +2673,11 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [
-    "백업, 전화부재"
+    "백업, 전화부재",
+    "님 안녕하세요!\n요기 메일 보냈으나, 아직 등록이 안되어 문의주셨습니다.\n\n+ 가격은 변동 있을 수 있다고 합니다.\n\n연락 한 번 부탁드릴 수 있을까요?\n(다른 경로로 요청드려야 한다면 말씀 부탁드립니다!)\nㄴ"
    ],
-   "rc": 2,
-   "lr": "1785131421.119219",
+   "rc": 3,
+   "lr": "1785993859.101499",
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785127539373469"
@@ -8899,28 +8900,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783403345506599"
-  },
-  {
-   "ts": "1783401645.893129",
-   "date": "2026-07-07",
-   "time": "14:20",
-   "store": "퓨처스페이스",
-   "biz": "5308701200",
-   "pos": "토스포스",
-   "content": "신규 상품등록",
-   "special": "바로 부탁드립니다.",
-   "drive": [
-    "https://drive.google.com/open?id=1U31yiOZbrRDoUoYSuJIwxW2DKplaV3lq"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1783404858.956529",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783401645893129"
   }
  ]
 };
