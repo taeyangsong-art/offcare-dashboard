@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 389,
- "updatedAt": "2026-08-06 09:45",
+ "version": 390,
+ "updatedAt": "2026-08-06 10:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1785978780.448379",
+   "date": "2026-08-06",
+   "time": "10:13",
+   "store": "또바기",
+   "biz": "4951702183",
+   "pos": "기타",
+   "content": "추가 - 오삼불고기 15,000원",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1785978785.452279",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785978780448379"
+  },
   {
    "ts": "1785921386.421619",
    "date": "2026-08-05",
@@ -8850,46 +8870,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783392529525289"
-  },
-  {
-   "ts": "1783386350.717239",
-   "date": "2026-07-07",
-   "time": "10:05",
-   "store": "뚜레쥬르 킨텍스1전시장",
-   "biz": "1283674814",
-   "pos": "퍼스트포스",
-   "content": "메뉴 수정",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1783386394.786099",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783386350717239"
-  },
-  {
-   "ts": "1783386247.058229",
-   "date": "2026-07-07",
-   "time": "10:04",
-   "store": "237오므카레 본점",
-   "biz": "1815301060",
-   "pos": "토스포스",
-   "content": "신규 메뉴등록\n 237오므카레 서초 지파이브점(···) \n메뉴와 동일하게 셋팅 부탁드립니다",
-   "special": "신규 메뉴등록",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1783474667.451529",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783386247058229"
   }
  ]
 };
