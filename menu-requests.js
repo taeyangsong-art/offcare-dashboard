@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 407,
- "updatedAt": "2026-08-06 17:00",
+ "version": 408,
+ "updatedAt": "2026-08-06 17:15",
  "days": 30,
  "items": [
   {
@@ -8796,46 +8796,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783412694675489"
-  },
-  {
-   "ts": "1783411921.258419",
-   "date": "2026-07-07",
-   "time": "17:12",
-   "store": "(주)주디마리 킷사주디",
-   "biz": "1638503101",
-   "pos": "",
-   "content": "메뉴 등록 요청드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 1,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1783414954.809079",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783411921258419"
-  },
-  {
-   "ts": "1783411403.885629",
-   "date": "2026-07-07",
-   "time": "17:03",
-   "store": "소담",
-   "biz": "2840503594",
-   "pos": "퍼스트포스",
-   "content": "메뉴 등록 요청드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1783412829.785399",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783411403885629"
   }
  ]
 };
