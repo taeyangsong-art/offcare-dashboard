@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 411,
- "updatedAt": "2026-08-06 18:30",
+ "version": 412,
+ "updatedAt": "2026-08-06 18:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1786009501.789079",
+   "date": "2026-08-06",
+   "time": "18:45",
+   "store": "강창구찹쌀진순대 과천펜타원점",
+   "biz": "6103262196",
+   "pos": "",
+   "content": "메뉴 테이블 변경",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786009505.972719",
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786009501789079"
+  },
   {
    "ts": "1786007203.049959",
    "date": "2026-08-06",
@@ -26,8 +46,8 @@ window.MENU_REQUESTS = {
    ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1786007209.584069",
+   "rc": 2,
+   "lr": "1786008842.064879",
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786007203049959"
@@ -68,7 +88,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 3,
    "lr": "1786000941.973379",
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786000769579559"
   },
