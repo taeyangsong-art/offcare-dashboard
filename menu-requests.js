@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 405,
- "updatedAt": "2026-08-06 16:30",
+ "version": 406,
+ "updatedAt": "2026-08-06 16:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1786001947.449539",
+   "date": "2026-08-06",
+   "time": "16:39",
+   "store": "생생어물시장",
+   "biz": "6867300579",
+   "pos": "",
+   "content": "바코드가 있는메뉴만 등록 요청 실제 바코드 사용예정이라고 합니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1786001974.938319",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786001947449539"
+  },
   {
    "ts": "1786000769.579559",
    "date": "2026-08-06",
@@ -8858,26 +8878,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김현기",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783410576538479"
-  },
-  {
-   "ts": "1783409854.808799",
-   "date": "2026-07-07",
-   "time": "16:37",
-   "store": "유니포차",
-   "biz": "6541602733",
-   "pos": "토스포스",
-   "content": "골뱅이소면 25,000원 -> 20,000원\n길거리 토스트 2,000원 -> 3,000원\n주류 - 새로 3,000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783409860.351919",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783409854808799"
   }
  ]
 };
