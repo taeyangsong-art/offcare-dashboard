@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 412,
- "updatedAt": "2026-08-06 18:45",
+ "version": 413,
+ "updatedAt": "2026-08-06 19:00",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1786009505.972719",
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786009501789079"
   },
@@ -48,8 +48,8 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1786008842.064879",
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786007203049959"
   },
   {
@@ -66,10 +66,10 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1786001974.938319",
-   "status": "wait",
-   "handler": null,
+   "rc": 3,
+   "lr": "1786009957.073789",
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786001947449539"
   },
   {
@@ -326,7 +326,12 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1Rq-SlVTo2U9f6QADeBUku9W10dma1Bfn",
+     "blocked": true
+    }
+   ],
    "replies": [
     ":telephone_receiver: 전화 완료"
    ],
@@ -350,7 +355,12 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1y_NSXjB_3jVobZG3D4tWqJKLY_Z6kkbJ",
+     "blocked": true
+    }
+   ],
    "replies": [
     "닭가슴살샌드위치\n베이컨샌드위치\n에그마요샌드위치\n햄샌드위치\n\n네개 메뉴에 옵션 3개 추가"
    ],
@@ -811,7 +821,12 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1BhGbg7Ehqxq-WXpfplC-7zDp7izp2YAn",
+     "blocked": true
+    }
+   ],
    "replies": [
     "선유님, 규빈님..!! 해당매장 오후 4시 영업시작이라 메뉴변경 급하다고 요청주셔서 바쁘시겠지만 확인부탁드리겠습니다!:pray:",
     "다 하신거같운데욥",
@@ -933,7 +948,20 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1fbowqlh_NIZ3aPwwP40x4IxC7PofGC_C",
+     "blocked": true
+    },
+    {
+     "id": "1QPGhdW9glL9lkno_HChImhKlnu08A3lo",
+     "blocked": true
+    },
+    {
+     "id": "1nQTNZmXHxzQzMmhPuKPiBw8aUUAYcz22",
+     "blocked": true
+    }
+   ],
    "replies": [],
    "rc": 1,
    "lr": "1785742720.625699",
@@ -1288,7 +1316,24 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1JnB_MJliv1V2McaAMyhCO2bBQ1iPHnlM",
+     "blocked": true
+    },
+    {
+     "id": "1gJes6nPvUUKUsHaW4thbtjymoD6EA2fe",
+     "blocked": true
+    },
+    {
+     "id": "1zhiP-6aLWdo_7rzfi76bZLClOfaR_3C2",
+     "blocked": true
+    },
+    {
+     "id": "1R-vH3U_4vY2qafcMsB8-fbuz8-mS1iO3",
+     "blocked": true
+    }
+   ],
    "replies": [
     "옵션 등록 완료"
    ],
@@ -1459,7 +1504,12 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1ASb09A7uFRe4cfcmas4XOnz6kCEVdwBw",
+     "blocked": true
+    }
+   ],
    "replies": [
     "완료"
    ],

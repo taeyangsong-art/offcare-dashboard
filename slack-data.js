@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2743,
+  "version": 2744,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -82083,9 +82083,196 @@ window.SLACK_DATA = {
         ]
       },
       "ob": {
-        "count": 0,
-        "byEmp": {},
-        "items": []
+        "count": 23,
+        "byEmp": {
+          "김규빈": 23
+        },
+        "items": [
+          {
+            "key": "2026년 8월 3일 오후 4:31:35|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784176688823059#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-03",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784176688823059"
+          },
+          {
+            "key": "2026년 8월 3일 오후 3:48:26|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784168974433279#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-03",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784168974433279"
+          },
+          {
+            "key": "2026년 8월 3일 오후 3:34:39|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784781547458009#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-03",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784781547458009"
+          },
+          {
+            "key": "2026년 8월 3일 오후 2:45:36|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1782882944394799#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-03",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1782882944394799"
+          },
+          {
+            "key": "2026년 8월 3일 오후 2:21:17|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784683378054959#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-03",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784683378054959"
+          },
+          {
+            "key": "2026년 8월 3일 오후 2:01:36|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785120802618909#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-03",
+            "planDate": "2026-08-05",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785120802618909"
+          },
+          {
+            "key": "2026년 8월 3일 오후 1:57:36|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785400017667369#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-03",
+            "planDate": "2026-08-06",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785400017667369"
+          },
+          {
+            "key": "2026년 8월 3일 오후 1:46:58|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785388813977449#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-03",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785388813977449"
+          },
+          {
+            "key": "2026년 8월 3일 오후 1:42:18|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785718386520199#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-03",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785718386520199"
+          },
+          {
+            "key": "2026년 8월 3일 오후 1:41:34|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785489057604449#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-03",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785489057604449"
+          },
+          {
+            "key": "2026년 8월 3일 오후 1:41:12|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785482651312439#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-03",
+            "planDate": "2026-08-07",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785482651312439"
+          },
+          {
+            "key": "2026년 8월 3일 오후 1:34:43|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1783495734233129#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-03",
+            "planDate": "2026-08-06",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1783495734233129"
+          },
+          {
+            "key": "2026년 8월 3일 오후 1:33:48|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785391489457599#1",
+            "handler": "김규빈",
+            "status": "점주직접접수",
+            "recvDate": "2026-08-03",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785391489457599"
+          },
+          {
+            "key": "2026년 8월 3일 오후 1:32:20|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1782454875871719#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-03",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1782454875871719"
+          },
+          {
+            "key": "2026년 8월 3일 오후 1:31:51|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785464513720549#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-03",
+            "planDate": "2026-08-11",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785464513720549"
+          },
+          {
+            "key": "2026년 8월 3일 오후 1:31:27|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785487809896149#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-03",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785487809896149"
+          },
+          {
+            "key": "2026년 8월 3일 오후 1:30:26|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785475450364859#1",
+            "handler": "김규빈",
+            "status": "점주직접접수",
+            "recvDate": "2026-08-03",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785475450364859"
+          },
+          {
+            "key": "2026년 8월 3일 오후 1:26:56|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1782799591323079#1",
+            "handler": "김규빈",
+            "status": "점주직접접수",
+            "recvDate": "2026-08-03",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1782799591323079"
+          },
+          {
+            "key": "2026년 8월 3일 오전 8:10:53|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784179080668919#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-03",
+            "planDate": "2026-08-06",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784179080668919"
+          },
+          {
+            "key": "2026년 8월 3일 오전 8:07:53|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785461799164919#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-03",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785461799164919"
+          },
+          {
+            "key": "2026년 8월 3일 오전 8:07:33|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785390395484749#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-03",
+            "planDate": "2026-08-05",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785390395484749"
+          },
+          {
+            "key": "2026년 8월 3일 오전 8:00:16|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785215966778629#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-03",
+            "planDate": "2026-08-06",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785215966778629"
+          },
+          {
+            "key": "2026년 8월 3일 오전 7:48:50|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784450529231059#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-03",
+            "planDate": "2026-08-04",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784450529231059"
+          }
+        ]
       }
     },
     "2026-08-04": {
@@ -84747,9 +84934,156 @@ window.SLACK_DATA = {
         ]
       },
       "ob": {
-        "count": 0,
-        "byEmp": {},
-        "items": []
+        "count": 18,
+        "byEmp": {
+          "김규빈": 18
+        },
+        "items": [
+          {
+            "key": "2026년 8월 4일 오후 4:20:11|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1783932436990999#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-04",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1783932436990999"
+          },
+          {
+            "key": "2026년 8월 4일 오후 3:57:16|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785130955775609#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-04",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785130955775609"
+          },
+          {
+            "key": "2026년 8월 4일 오후 3:03:06|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1782292405578929#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-04",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1782292405578929"
+          },
+          {
+            "key": "2026년 8월 4일 오후 2:55:09|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1781924051767259#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-04",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1781924051767259"
+          },
+          {
+            "key": "2026년 8월 4일 오후 2:25:03|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784688028189789#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-04",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784688028189789"
+          },
+          {
+            "key": "2026년 8월 4일 오후 1:12:43|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784175549988549#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-04",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784175549988549"
+          },
+          {
+            "key": "2026년 8월 4일 오후 1:11:04|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785720794046859#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-04",
+            "planDate": "2026-08-07",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785720794046859"
+          },
+          {
+            "key": "2026년 8월 4일 오후 1:06:38|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1783495974003019#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-04",
+            "planDate": "2026-08-07",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1783495974003019"
+          },
+          {
+            "key": "2026년 8월 4일 오후 1:02:43|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1783906551989839#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-04",
+            "planDate": "2026-08-07",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1783906551989839"
+          },
+          {
+            "key": "2026년 8월 4일 오전 8:37:18|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785307640280549#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-04",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785307640280549"
+          },
+          {
+            "key": "2026년 8월 4일 오전 8:36:05|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784859546754519#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-04",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784859546754519"
+          },
+          {
+            "key": "2026년 8월 4일 오전 8:27:42|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1782869461164759#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-04",
+            "planDate": "2026-08-07",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1782869461164759"
+          },
+          {
+            "key": "2026년 8월 4일 오전 8:14:40|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785472866328129#1",
+            "handler": "김규빈",
+            "status": "설치불가",
+            "recvDate": "2026-08-04",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785472866328129"
+          },
+          {
+            "key": "2026년 8월 4일 오전 8:13:53|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785140613763579#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-04",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785140613763579"
+          },
+          {
+            "key": "2026년 8월 4일 오전 8:12:30|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785223000309029#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-04",
+            "planDate": "2026-08-06",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785223000309029"
+          },
+          {
+            "key": "2026년 8월 4일 오전 8:07:49|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785220193928159#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-04",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785220193928159"
+          },
+          {
+            "key": "2026년 8월 4일 오전 8:06:17|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785726097823319#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-04",
+            "planDate": "2026-08-06",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785726097823319"
+          },
+          {
+            "key": "2026년 8월 4일 오전 10:31:24|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784599422792349#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-04",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784599422792349"
+          }
+        ]
       }
     },
     "2026-08-05": {
@@ -87435,9 +87769,180 @@ window.SLACK_DATA = {
         "unknown": 0
       },
       "ob": {
-        "count": 0,
-        "byEmp": {},
-        "items": []
+        "count": 21,
+        "byEmp": {
+          "김규빈": 21
+        },
+        "items": [
+          {
+            "key": "2026년 8월 5일 오후 1:26:35|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785827329963189#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-05",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785827329963189"
+          },
+          {
+            "key": "2026년 8월 5일 오후 1:23:21|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785818466259489#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-05",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785818466259489"
+          },
+          {
+            "key": "2026년 8월 5일 오후 1:23:04|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784622123210879#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-05",
+            "planDate": "2026-08-07",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784622123210879"
+          },
+          {
+            "key": "2026년 8월 5일 오전 8:40:48|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785818652526519#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-05",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785818652526519"
+          },
+          {
+            "key": "2026년 8월 5일 오전 8:39:52|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785818408455159#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-05",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785818408455159"
+          },
+          {
+            "key": "2026년 8월 5일 오전 8:36:31|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1783929280207279#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-05",
+            "planDate": "2026-08-12",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1783929280207279"
+          },
+          {
+            "key": "2026년 8월 5일 오전 8:34:10|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785387066191719#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-05",
+            "planDate": "2026-08-07",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785387066191719"
+          },
+          {
+            "key": "2026년 8월 5일 오전 8:33:54|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785818541494819#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-05",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785818541494819"
+          },
+          {
+            "key": "2026년 8월 5일 오전 8:33:28|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784793556853629#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-05",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784793556853629"
+          },
+          {
+            "key": "2026년 8월 5일 오전 8:30:26|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785388262485029#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-05",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785388262485029"
+          },
+          {
+            "key": "2026년 8월 5일 오전 8:30:00|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785486488495199#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-05",
+            "planDate": "2026-08-07",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785486488495199"
+          },
+          {
+            "key": "2026년 8월 5일 오전 8:29:28|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785738216846299#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-05",
+            "planDate": "2026-08-11",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785738216846299"
+          },
+          {
+            "key": "2026년 8월 5일 오전 8:28:38|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785562861782329#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-05",
+            "planDate": "2026-08-10",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785562861782329"
+          },
+          {
+            "key": "2026년 8월 5일 오전 8:27:57|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784169448010539#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-05",
+            "planDate": "2026-08-10",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784169448010539"
+          },
+          {
+            "key": "2026년 8월 5일 오전 8:26:27|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785378228604919#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-05",
+            "planDate": "2026-08-10",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785378228604919"
+          },
+          {
+            "key": "2026년 8월 5일 오전 8:24:02|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785731501105059#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-05",
+            "planDate": "2026-08-10",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785731501105059"
+          },
+          {
+            "key": "2026년 8월 5일 오전 8:22:29|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785722032311469#1",
+            "handler": "김규빈",
+            "status": "자가설치",
+            "recvDate": "2026-08-05",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785722032311469"
+          },
+          {
+            "key": "2026년 8월 5일 오전 8:19:30|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785738176612119#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-05",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785738176612119"
+          },
+          {
+            "key": "2026년 8월 5일 오전 8:19:12|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785566137997509#1",
+            "handler": "김규빈",
+            "status": "점주직접접수",
+            "recvDate": "2026-08-05",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785566137997509"
+          },
+          {
+            "key": "2026년 8월 5일 오전 8:18:51|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785809320634089#1",
+            "handler": "김규빈",
+            "status": "",
+            "recvDate": "2026-08-05",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785809320634089"
+          },
+          {
+            "key": "2026년 8월 5일 오전 8:17:24|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785819821711499#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-05",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785819821711499"
+          }
+        ]
       },
       "updatedAt": "23:06",
       "voc": {
@@ -87674,11 +88179,11 @@ window.SLACK_DATA = {
     "2026-08-06": {
       "counts": {
         "as": {
+          "심성현": 35,
           "최민석": 11,
           "송태양": 31,
           "미지정": 10,
           "김현기": 26,
-          "심성현": 34,
           "서상원": 19,
           "김규빈": 21
         },
@@ -87700,7 +88205,7 @@ window.SLACK_DATA = {
           "김현기": 1
         },
         "menu": {
-          "김규빈": 4,
+          "김규빈": 6,
           "심성현": 3
         },
         "delivery": {
@@ -87732,17 +88237,6 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "16:46",
-          "store": "리치팝",
-          "biz": "6441501287",
-          "handler": "심성현",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
           "time": "13:49",
           "store": "비에뜨반미 광명동점",
           "biz": "6890502766",
@@ -87766,6 +88260,28 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "18:51",
+          "store": "다다다 마포본점",
+          "biz": "4234801320",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "카운터/주방 용지 출력이 되지 않아 확인 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "메인 포스, 대형 키오스크 재시작 후 정상"
+        },
+        {
+          "time": "18:45",
+          "store": "강창구찹쌀진순대 과천펜타원점",
+          "biz": "6103262196",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "메뉴 테이블 변경",
+          "hw": "",
+          "intake": "offline",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
+        },
         {
           "time": "18:34",
           "store": "은하수국밥(Galaxy Gukbap)",
@@ -88224,6 +88740,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "상호명 변경 완료입니다"
+        },
+        {
+          "time": "16:39",
+          "store": "생생어물시장",
+          "biz": "6867300579",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "바코드가 있는메뉴만 등록 요청 실제 바코드 사용예정이라고 합니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / / 바코드 상품만 면세 비과세 구분해서 등록완료"
         },
         {
           "time": "16:34",
@@ -89919,23 +90446,23 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 170,
-        "offline": 29,
+        "online": 171,
+        "offline": 30,
         "unknown": 0
       },
-      "updatedAt": "18:45",
+      "updatedAt": "19:00",
       "voc": {
-        "responses": 17,
+        "responses": 18,
         "install": {
-          "count": 6,
+          "count": 7,
           "low": 2
         },
         "nps": {
-          "count": 17,
+          "count": 18,
           "low": 6
         },
         "high": {
-          "install": 2,
+          "install": 3,
           "nps": 5
         },
         "npsDist": {
@@ -89945,7 +90472,7 @@ window.SLACK_DATA = {
           "4": 1,
           "5": 2,
           "6": 1,
-          "7": 1,
+          "7": 2,
           "8": 3,
           "9": 1,
           "10": 5
@@ -89954,9 +90481,10 @@ window.SLACK_DATA = {
           "2": 2,
           "3": 1,
           "4": 1,
-          "5": 2
+          "5": 3
         },
         "byIndustry": {
+          "서비스[학원]": 1,
           "도소매": 2,
           "카페": 2,
           "요식업": 1,
@@ -89964,7 +90492,7 @@ window.SLACK_DATA = {
         },
         "byTenure": {
           "구매설치": {
-            "total": 6,
+            "total": 7,
             "low": 2
           },
           "12개월": {
@@ -89985,6 +90513,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 3,
+            "low": 1
+          },
           "KIS": {
             "total": 4,
             "low": 0
@@ -89992,10 +90524,6 @@ window.SLACK_DATA = {
           "KSNET": {
             "total": 1,
             "low": 0
-          },
-          "KOCES": {
-            "total": 2,
-            "low": 1
           },
           "SECTA9": {
             "total": 4,
@@ -90166,6 +90694,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "18:48",
+            "store": "용인대 더원 태권도장",
+            "storeId": "566799",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 5,
+            "nps": 7,
+            "text": "설명과 직접실행으로 아직익숙하지 않아서",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "18:18",
             "store": "숨 뜰",
             "storeId": "576865",
@@ -90188,6 +90728,198 @@ window.SLACK_DATA = {
             "text": "매우 친절하시고 기계도 예뻐요 편하고 좋아요",
             "byReaction": false,
             "doneDate": ""
+          }
+        ]
+      },
+      "ob": {
+        "count": 23,
+        "byEmp": {
+          "김규빈": 23
+        },
+        "items": [
+          {
+            "key": "2026년 8월 6일 오후 1:52:28|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785570055503429#1",
+            "handler": "김규빈",
+            "status": "자가설치",
+            "recvDate": "2026-08-06",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785570055503429"
+          },
+          {
+            "key": "2026년 8월 6일 오후 1:42:40|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785819547086909#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-06",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785819547086909"
+          },
+          {
+            "key": "2026년 8월 6일 오후 1:30:10|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784853357113159#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-06",
+            "planDate": "2026-08-11",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784853357113159"
+          },
+          {
+            "key": "2026년 8월 6일 오후 1:23:17|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785910752932669#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-06",
+            "planDate": "2026-08-10",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785910752932669"
+          },
+          {
+            "key": "2026년 8월 6일 오후 1:19:35|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785135046396549#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-06",
+            "planDate": "2026-08-10",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785135046396549"
+          },
+          {
+            "key": "2026년 8월 6일 오후 1:17:10|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785828217421089#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-06",
+            "planDate": "2026-08-10",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785828217421089"
+          },
+          {
+            "key": "2026년 8월 6일 오후 1:13:52|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785833571087739#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-06",
+            "planDate": "2026-08-10",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785833571087739"
+          },
+          {
+            "key": "2026년 8월 6일 오전 9:05:31|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785903890938579#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-06",
+            "planDate": "2026-08-10",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785903890938579"
+          },
+          {
+            "key": "2026년 8월 6일 오전 9:03:05|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785912425333269#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-06",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785912425333269"
+          },
+          {
+            "key": "2026년 8월 6일 오전 9:01:24|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785834685635709#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-06",
+            "planDate": "2026-08-10",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785834685635709"
+          },
+          {
+            "key": "2026년 8월 6일 오전 8:59:17|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785397616994579#1",
+            "handler": "김규빈",
+            "status": "점주직접접수",
+            "recvDate": "2026-08-06",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785397616994579"
+          },
+          {
+            "key": "2026년 8월 6일 오전 8:59:06|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785817649470619#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-06",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785817649470619"
+          },
+          {
+            "key": "2026년 8월 6일 오전 8:52:06|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785817015564489#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-06",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785817015564489"
+          },
+          {
+            "key": "2026년 8월 6일 오전 8:47:41|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784795564635469#1",
+            "handler": "김규빈",
+            "status": "설치불가",
+            "recvDate": "2026-08-06",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784795564635469"
+          },
+          {
+            "key": "2026년 8월 6일 오전 8:46:53|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785749322564209#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-06",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785749322564209"
+          },
+          {
+            "key": "2026년 8월 6일 오전 8:46:07|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785217459798629#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-06",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785217459798629"
+          },
+          {
+            "key": "2026년 8월 6일 오전 8:43:47|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785817181214289#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-06",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785817181214289"
+          },
+          {
+            "key": "2026년 8월 6일 오전 8:41:25|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784601625487549#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-06",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784601625487549"
+          },
+          {
+            "key": "2026년 8월 6일 오전 8:39:26|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785747244164429#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-06",
+            "planDate": "2026-08-11",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785747244164429"
+          },
+          {
+            "key": "2026년 8월 6일 오전 8:33:58|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785822880071869#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-06",
+            "planDate": "2026-08-10",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785822880071869"
+          },
+          {
+            "key": "2026년 8월 6일 오전 8:23:55|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784526384245249#1",
+            "handler": "김규빈",
+            "status": "점주직접접수",
+            "recvDate": "2026-08-06",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784526384245249"
+          },
+          {
+            "key": "2026년 8월 6일 오전 8:23:13|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784535930212899#1",
+            "handler": "김규빈",
+            "status": "",
+            "recvDate": "2026-08-06",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784535930212899"
+          },
+          {
+            "key": "2026년 8월 6일 오전 11:43:33|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784702976953639#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-06",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784702976953639"
           }
         ]
       }
@@ -90233,47 +90965,43 @@ window.SLACK_DATA = {
       },
       "1785974415.484249": {
         "post": "1785974415.484249",
-        "lastSeen": 1786009523.434
+        "lastSeen": 1786010437.346
       },
       "1785982987.480109": {
         "post": "1785982987.480109",
-        "lastSeen": 1786009523.434
+        "lastSeen": 1786010437.346
       },
       "1785988802.990969": {
         "post": "1785988802.990969",
-        "lastSeen": 1786009523.434
+        "lastSeen": 1786010437.346
       },
       "1785990650.987569": {
         "post": "1785990650.987569",
-        "lastSeen": 1786009523.434
+        "lastSeen": 1786010437.346
       },
       "1785995512.836689": {
         "post": "1785995512.836689",
-        "lastSeen": 1786009523.434
+        "lastSeen": 1786010437.346
       },
       "1785998329.943989": {
         "post": "1785998329.943989",
-        "lastSeen": 1786009523.434
-      },
-      "1786001947.449539": {
-        "post": "1786001947.449539",
-        "lastSeen": 1786009523.434
+        "lastSeen": 1786010437.346
       },
       "1786005002.028519": {
         "post": "1786005002.028519",
-        "lastSeen": 1786009523.434
+        "lastSeen": 1786010437.346
       },
       "1786006788.994159": {
         "post": "1786006788.994159",
-        "lastSeen": 1786009523.434
+        "lastSeen": 1786010437.346
       },
       "1786006734.952269": {
         "post": "1786006734.952269",
-        "lastSeen": 1786009523.434
+        "lastSeen": 1786010437.346
       },
       "1786006725.117969": {
         "post": "1786006725.117969",
-        "lastSeen": 1786009523.434
+        "lastSeen": 1786010437.346
       },
       "1786006589.642549": {
         "post": "1786006589.642549",
@@ -90281,11 +91009,23 @@ window.SLACK_DATA = {
       },
       "1786006837.907319": {
         "post": "1786006837.907319",
-        "lastSeen": 1786009523.434
+        "lastSeen": 1786010437.346
       },
-      "1786007203.049959": {
-        "post": "1786007203.049959",
-        "lastSeen": 1786009523.434
+      "1786010402.776389": {
+        "post": "1786010402.776389",
+        "lastSeen": 1786010437.346
+      },
+      "1786010402.321139": {
+        "post": "1786010402.321139",
+        "lastSeen": 1786010437.346
+      },
+      "1786010128.025659": {
+        "post": "1786010128.025659",
+        "lastSeen": 1786010437.346
+      },
+      "1786010265.856309": {
+        "post": "1786010265.856309",
+        "lastSeen": 1786010437.346
       }
     },
     "days": {
@@ -107471,17 +108211,24 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-06 18:45",
+    "at": "2026-08-06 19:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
-    "ok": false,
-    "error": "토큰 갱신 실패: The OAuth client was not found.",
-    "rows": 0,
-    "named": 0,
+    "ok": true,
+    "error": "",
+    "rows": 3382,
+    "named": 85,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 0,
-    "byStatus": {}
+    "done": 85,
+    "byStatus": {
+      "일정등록완료": 49,
+      "1차부재": 24,
+      "점주직접접수": 6,
+      "설치불가": 2,
+      "(빈칸)": 2,
+      "자가설치": 2
+    }
   }
 };
