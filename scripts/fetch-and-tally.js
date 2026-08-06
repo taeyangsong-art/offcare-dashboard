@@ -36,6 +36,9 @@ const RE_CONFIRM2 = new RegExp('^(' + NAMES + ')_?확인_?$');       // OOO_확�
  * 의존해 깨지기 쉬웠고, 실측상 채널 14일치 4,025건에 <이름>확인 이모지가 0건이었다.
  * 시트는 구조화돼 있어 파싱이 필요 없고 API 호출도 1회로 끝난다. */
 const OB_SHEET_ID = process.env.OB_SHEET_ID || '1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c';
+// 집계 시작일 — 이 날 이전 접수 건은 세지 않는다(시트에 1년치가 쌓여 있어 과거분은 제외).
+// '이번 달'을 매번 다시 계산하지 않고 고정값으로 둔다. 안 그러면 달이 바뀔 때 지난달 집계가 통째로 사라진다.
+const OB_START = process.env.OB_START || '2026-08-01';
 const OB_COL = { at: 0, link: 2, who: 3, status: 4, planDate: 6 };   // B(연락처)는 의도적으로 안 읽는다
 const OB_NAMES = Object.values(personMap);                            // D열에서 담당자로 인정할 이름
 
@@ -295,7 +298,7 @@ function parseObSheet(csv, stats) {
   const st = stats || {};
   const rows = parseCsv(csv);
   const data = rows.slice(2).filter(rw => (rw || []).some(c => String(c || '').trim()));   // 1행 헤더 · 2행 예시
-  st.rows = data.length; st.named = 0; st.unknownName = 0;
+  st.rows = data.length; st.named = 0; st.unknownName = 0; st.beforeStart = 0;
   const seen = {}, out = [];
   const byStatus = {};
   for (const rw of data) {
@@ -304,6 +307,8 @@ function parseObSheet(csv, stats) {
     if (!OB_NAMES.includes(who)) { st.unknownName++; continue; }  // 오타·타팀 이름은 세지 않는다
     st.named++;
     const at = String(rw[OB_COL.at] || '').trim();
+    const recv = obParseDate(at);
+    if (recv && recv < OB_START) { st.beforeStart++; continue; }  // 집계 시작일 이전 접수 건은 제외
     const link = String(rw[OB_COL.link] || '').trim();
     // 같은 (접수시각|링크) 가 겹치는 옛 행이 있어 발생순번을 붙여 키를 유일하게 만든다
     const base = at + '|' + link;
@@ -313,7 +318,7 @@ function parseObSheet(csv, stats) {
     byStatus[status || '(빈칸)'] = (byStatus[status || '(빈칸)'] || 0) + 1;
     out.push({
       key, handler: who, status,
-      recvDate: obParseDate(at),                       // 접수일 — 첫 집계 분산용
+      recvDate: recv,                                  // 접수일 — 첫 집계 분산용
       planDate: obParseDate(rw[OB_COL.planDate]),      // 설치예정일 (없을 수 있음)
       link,
     });
@@ -575,8 +580,8 @@ async function tallyVoc(msgs, voc, channelId, opts) {
     try { csv = await fetchObSheet(); }
     catch (e) { obErr = e.message; console.error(`  ⚠ [설치OB] 시트 읽기 실패(${obErr}) — 이번 실행 생략(기존 값 유지)`); }
 
-    const scan = { at: nowKstStamp(), source: 'sheet', sheet: OB_SHEET_ID, ok: !!csv, error: obErr,
-                   rows: 0, named: 0, unknownName: 0, done: 0, byStatus: {} };
+    const scan = { at: nowKstStamp(), source: 'sheet', sheet: OB_SHEET_ID, start: OB_START, ok: !!csv, error: obErr,
+                   rows: 0, named: 0, unknownName: 0, beforeStart: 0, done: 0, byStatus: {} };
     if (csv) {
       const st = {};
       const found = parseObSheet(csv, st);
@@ -590,9 +595,11 @@ async function tallyVoc(msgs, voc, channelId, opts) {
       // 시트는 매번 전량을 읽으므로 '창 밖 보존(keep)' 이 필요 없다.
       // obMinDate 를 최소값으로 둬서 기존 ob 날짜를 전부 재계산 대상에 넣는다(행 삭제·이름 지움 반영).
       const r = applyObResults(data, found, { priorDone, keep: {}, hadAnyOb, obMinDate: '0000-00-00', todayKstDate });
-      Object.assign(scan, { rows: st.rows, named: st.named, unknownName: st.unknownName, done: found.length, byStatus: st.byStatus });
-      console.log(`[설치OB] 시트 재집계: ${r.total}건 / ${r.days}일 ` +
+      Object.assign(scan, { rows: st.rows, named: st.named, unknownName: st.unknownName,
+                            beforeStart: st.beforeStart, done: found.length, byStatus: st.byStatus });
+      console.log(`[설치OB] 시트 재집계(${OB_START}~): ${r.total}건 / ${r.days}일 ` +
                   `(시트 ${st.rows}행 · D열 담당자 ${st.named}행` +
+                  `${st.beforeStart ? ` · 시작일 이전 제외 ${st.beforeStart}행` : ''}` +
                   `${st.unknownName ? ` · 미등록이름 ${st.unknownName}행` : ''})` +
                   `${hadAnyOb ? '' : ' (첫 집계 — 접수일 기준으로 분산)'}`);
       if (st.named === 0) console.log('  ⚠ D열에 담당자 이름이 적힌 행이 0건 — 아직 아무도 안 적었거나 이름 표기가 다름');
