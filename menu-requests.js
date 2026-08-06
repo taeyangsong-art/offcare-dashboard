@@ -3,10 +3,32 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 397,
- "updatedAt": "2026-08-06 12:45",
+ "version": 398,
+ "updatedAt": "2026-08-06 13:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1785991187.742999",
+   "date": "2026-08-06",
+   "time": "13:39",
+   "store": "추어탕과토종닭",
+   "biz": "8473601504",
+   "pos": "",
+   "content": "메뉴 추가 요청드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "메뉴 추가 1건  >> 삼계탕 15,000원"
+   ],
+   "rc": 2,
+   "lr": "1785991204.309259",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785991187742999"
+  },
   {
    "ts": "1785985041.453539",
    "date": "2026-08-06",
