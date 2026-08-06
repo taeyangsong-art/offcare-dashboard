@@ -5740,7 +5740,9 @@ function boot(){
   document.getElementById("sfType").innerHTML = Object.entries(SHARE_TYPES).map(([k,t])=>`<option value="${k}">${t.label}</option>`).join("");
   document.getElementById("sfStart").innerHTML = timeOptions();
   document.getElementById("sfEnd").innerHTML = timeOptions();
-  if(!localStorage.getItem(LS_COUNT)) seedDemo();
+  // (구) seedDemo() 제거 — localStorage 가 빈 브라우저에서 가짜 당직자·가짜 처리건수를 심었고,
+  // 그 중 당직은 loadCloud 의 restore 경로를 타고 팀 공유 클라우드까지 올라갔다. 실제 데이터는
+  // applySlackData() 가 slack-data.js 에서 채우므로 시드는 필요 없다.
   // 데모 시드 제거 — 당직 일정은 팀 공유 클라우드에서 로드(seedShare 미사용)
   applySlackData();
   checkRefreshWeek();                                     // 새 주면 리프레쉬 타임 초기화
@@ -5828,28 +5830,6 @@ function seedShare(){
   save(LS_SHARE, SHARE);
 }
 
-function seedDemo(){
-  const cats=CATEGORIES.filter(c=>c.key!=="duty"&&c.key!=="share").map(c=>c.key);
-  const base=today();
-  for(let i=0;i<28;i++){
-    const ds=ymd(addDays(base,-i));
-    const dow=parseYmd(ds).getDay();
-    if(dow===0) continue;
-    cats.forEach(cat=>{
-      EMPLOYEES.forEach((e,idx)=>{
-        const n=Math.max(0, Math.round((Math.sin((i+idx)*1.3)+1)*3.5 + (idx%4)));
-        if(n>0){ if(!COUNTS[cat])COUNTS[cat]={}; if(!COUNTS[cat][ds])COUNTS[cat][ds]={}; COUNTS[cat][ds][e]=n; }
-      });
-    });
-  }
-  save(LS_COUNT, COUNTS);
-  // 당직근무 샘플: 내일/모레 당직자 지정 (알림 확인용)
-  const tmr=ymd(addDays(base,1));
-  DUTY[tmr]={day:"김기범",aft:"서상원",nit:"김규빈"};
-  DUTY[ymd(addDays(base,2))]={day:"김동욱",aft:"송태양",nit:"김현기"};
-  DUTY[ymd(base)]={day:"배선유",aft:"최민석",nit:"심성현"};
-  save(LS_DUTY, DUTY);
-}
 </script>
 </body>
 </html>
