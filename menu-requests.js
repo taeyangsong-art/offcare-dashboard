@@ -3,10 +3,35 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 409,
- "updatedAt": "2026-08-06 17:30",
+ "version": 410,
+ "updatedAt": "2026-08-06 18:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1786007203.049959",
+   "date": "2026-08-06",
+   "time": "18:06",
+   "store": "닥스메디 스토어",
+   "biz": "4048600297",
+   "pos": "",
+   "content": "기존 메뉴에서 상품명 변경 요청 / 옵션은 그대로 진행하고자 함\n유선 안내 필요할 수 있는 점 사전 안내",
+   "special": "",
+   "drive": [],
+   "files": 1,
+   "att": [
+    {
+     "name": "닥스메디 스토어.xlsx",
+     "path": "menu-files/1786007203_049959-0.xlsx"
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786007209.584069",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786007203049959"
+  },
   {
    "ts": "1786001947.449539",
    "date": "2026-08-06",
@@ -63,8 +88,8 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1785999178.381489",
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785999173086529"
   },
   {
