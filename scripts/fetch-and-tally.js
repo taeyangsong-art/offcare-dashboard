@@ -31,10 +31,13 @@ const RE_CONFIRM2 = new RegExp('^(' + NAMES + ')_?확인_?$');       // OOO_확�
  * 그 글에 '<이름>확인' 이모지(예: 태양확인·규빈확인)가 찍히면 설치 OB 1건 완료로 적재한다.
  * 업무 채널(AS·명의변경 등)과 완전히 별개 소스라 tallyInto 를 거치지 않고 따로 수집한다. */
 const OB_CHANNEL = process.env.OB_CHANNEL_ID || 'C0AL2V3MM7U';   // #ishopcare_new_주문관리
-const OB_TRIGGER = /설치\s*일정\s*(확인|체크)/;                    // 워크플로 글 판별(제목/본문)
+// 워크플로 글 판별. 조사·띄어쓰기 변형을 견디도록 '설치…일정' 만 보고, '확인' 은 요구하지 않는다
+// (예: "설치일정 확인해주세요" · "설치 일정을 확인해 주세요" · "신규 설치 일정 안내")
+const OB_TRIGGER = /설치\s*\S{0,4}\s*일정/;
 // 완료 표시 = 이름+확인 (태양확인·규빈확인·현기확인). 언더바 변형(태양_확인)도 같이 받는다.
 // 업무 채널의 RE_CONFIRM('태양'·'태양_확인')과 달리 이름만 찍힌 건 여기선 완료로 안 본다.
 const RE_OB_DONE = new RegExp('^(' + NAMES + ')_?확인_?$');
+const OB_PAGE_CAP = 40;   // fetchAllRange 의 guard 와 동일 — 200건×40 = 8,000건에서 잘린다(상한 도달 여부 표시용)
 
 // VOC 저점 사유 자동분류 규칙 (label = 표시 카테고리, kw = 포함되면 그 카테고리로 분류). 순서대로 첫 매칭 우선.
 const VOC_REASON_RULES = [
@@ -270,17 +273,21 @@ async function tallyInto(msgs, ch, counts, pending, done, opts) {
 function tallyInstallOb(msgs, stats) {
   const st = stats || {};
   st.msgs = msgs.length; st.posts = 0; st.reacted = 0;
+  st.emojiAny = 0;    // 문구와 무관하게 '<이름>확인' 이모지가 달린 글 수 — 문구 문제인지 이모지 문제인지 가른다
+  st.hasSeolchi = 0;  // '설치' 가 들어간 글 수 — 채널 자체를 잘못 봤는지 가른다
   const out = [];
   for (const m of msgs) {
     if (m.subtype && m.subtype !== 'bot_message') continue;
     const text = blocksText(m).replace(/&gt;/g, '>').replace(/&lt;/g, '<').replace(/&amp;/g, '&');
+    const rnames = (m.reactions || []).map(r => r.name);
+    if (/설치/.test(text)) st.hasSeolchi++;
+    if (rnames.some(n => RE_OB_DONE.test(n))) st.emojiAny++;
     if (!OB_TRIGGER.test(text)) continue;                 // 워크플로 글이 아닌 잡담 제외
     st.posts++;
-    if ((m.reactions || []).length) st.reacted++;
-    const names = (m.reactions || []).map(r => r.name);
-    if (names.some(n => /중복/.test(n)) || names.includes('x')) continue;   // 중복·잘못올린글 제외
+    if (rnames.length) st.reacted++;
+    if (rnames.some(n => /중복/.test(n)) || rnames.includes('x')) continue;   // 중복·잘못올린글 제외
     let who = null;
-    for (const n of names) { const mm = n.match(RE_OB_DONE); if (mm) { who = personMap[mm[1]]; break; } }
+    for (const n of rnames) { const mm = n.match(RE_OB_DONE); if (mm) { who = personMap[mm[1]]; break; } }
     if (!who) continue;                                   // 완료 이모지 없으면 아직 미완료
     const ts = m.ts;                                      // 완료일 고정용 키(글 하나 = 설치 건 하나)
     let store = (((text.match(/상호\s*[:：]?\s*(.+)/) || [])[1]) || ((text.match(/(?:매장명|가맹점명?)\s*[:：]?\s*(.+)/) || [])[1]) || '').trim().split('/')[0].trim();
@@ -524,7 +531,10 @@ async function tallyVoc(msgs, voc, channelId, opts) {
   // 기준일 = '완료를 처음 감지한 날'(VOC 와 동일 규칙). 슬랙이 이모지 시각을 안 주므로
   // 한 번 기록된 완료일은 이후 실행에서도 그대로 유지한다.
   // 며칠 전 올라온 글이 오늘 완료되는 경우가 있어 최근 OB_LOOKBACK 일을 매번 다시 훑는다.
-  const OB_LOOKBACK = 30;
+  // 이 채널은 트래픽이 많다(30일에 8,000건 = fetchAllRange 페이지 상한). 10분마다 도는 집계라
+  // 창을 좁혀 API 호출을 줄인다. 이미 완료로 기록된 건은 priorDone/keep 으로 보존되므로
+  // 창 밖으로 밀려도 사라지지 않는다. 창 안에서 뒤늦게 찍히는 완료만 잡으면 된다.
+  const OB_LOOKBACK = Number(process.env.OB_LOOKBACK || 14);
   if (OB_CHANNEL) {
     const obMinObj = new Date(Date.UTC(Y, M, D - OB_LOOKBACK));
     const obMinDate = `${obMinObj.getUTCFullYear()}-${pad(obMinObj.getUTCMonth() + 1)}-${pad(obMinObj.getUTCDate())}`;
@@ -548,17 +558,20 @@ async function tallyVoc(msgs, voc, channelId, opts) {
 
     // 진단 흔적을 데이터에 남긴다 — Actions 로그를 못 볼 때 '못 읽음' 과 '이모지 없음' 을 구분하려면 필요하다.
     // (0건일 때 원인이 채널 권한인지, 워크플로 글이 안 잡힌 건지, 이모지만 안 찍힌 건지)
-    const scan = { at: nowKstStamp(), channel: OB_CHANNEL, ok: !!obMsgs, error: obErr, msgs: 0, posts: 0, reacted: 0, done: 0 };
+    const scan = { at: nowKstStamp(), channel: OB_CHANNEL, ok: !!obMsgs, error: obErr, msgs: 0, capped: false, hasSeolchi: 0, posts: 0, reacted: 0, emojiAny: 0, done: 0 };
     if (obMsgs) {
       const st = {};
       const found = tallyInstallOb(obMsgs, st);
-      Object.assign(scan, { msgs: st.msgs, posts: st.posts, reacted: st.reacted, done: found.length });
+      Object.assign(scan, { msgs: st.msgs, capped: st.msgs >= OB_PAGE_CAP * 200,
+        hasSeolchi: st.hasSeolchi, posts: st.posts, reacted: st.reacted, emojiAny: st.emojiAny, done: found.length });
       const r = applyObResults(data, found, { priorDone, keep, hadAnyOb, obMinDate, todayKstDate });
       console.log(`[설치OB] ${obMinDate}~${targetDate} 재집계: 완료 ${r.total}건 / ${r.days}일` +
-                  ` (채널 메시지 ${st.msgs} · 워크플로 글 ${st.posts} · 이모지 달린 글 ${st.reacted} · 완료판정 ${found.length})` +
+                  ` (메시지 ${st.msgs}${scan.capped ? '(상한도달)' : ''} · '설치' 포함 ${st.hasSeolchi}` +
+                  ` · 워크플로 글 ${st.posts} · <이름>확인 달린 글 ${st.emojiAny} · 완료판정 ${found.length})` +
                   `${hadAnyOb ? '' : ' (첫 집계 — 글 게시일 기준으로 분산)'}`);
-      if (st.posts === 0) console.log("  ⚠ '설치일정 확인' 문구가 잡힌 글이 0건 — OB_TRIGGER 가 워크플로 문구와 안 맞을 수 있음");
-      else if (found.length === 0) console.log(`  ⚠ 워크플로 글 ${st.posts}건은 보이지만 완료 이모지(<이름>확인)가 하나도 없음`);
+      if (st.posts === 0) console.log(`  ⚠ OB_TRIGGER 로 잡힌 글 0건 ('설치' 포함 글은 ${st.hasSeolchi}건) — 문구 패턴 재확인 필요`);
+      else if (st.emojiAny === 0) console.log(`  ⚠ 워크플로 글 ${st.posts}건은 보이지만 <이름>확인 이모지가 하나도 없음`);
+      else if (found.length === 0) console.log(`  ⚠ 이모지 달린 글 ${st.emojiAny}건이 있는데 완료판정 0 — 중복·❌ 로 걸러졌거나 이름 매핑 불일치`);
     }
     data.obScan = scan;
   } else {
