@@ -576,12 +576,29 @@ async function tallyVoc(msgs, voc, channelId, opts) {
   // 이 집계가 새로 등장한 행을 발견한 날을 수행일로 본다(±10분 해상도). 한 번 정해지면 고정.
   // 첫 집계만 예외로 접수일(A열)로 흩뿌린다 — 안 그러면 기존 분이 전부 오늘 하루에 몰린다.
   {
-    let csv = null, obErr = '';
+    let csv = null, obErr = '', obCred = null;
     try { csv = await fetchObSheet(); }
-    catch (e) { obErr = e.message; console.error(`  ⚠ [설치OB] 시트 읽기 실패(${obErr}) — 이번 실행 생략(기존 값 유지)`); }
+    catch (e) {
+      obErr = e.message;
+      console.error(`  ⚠ [설치OB] 시트 읽기 실패(${obErr}) — 이번 실행 생략(기존 값 유지)`);
+      // 인증이 깨졌을 때만, 시크릿 '값' 대신 '모양'만 남긴다 — GitHub 시크릿은 되읽을 수 없어
+      // 어느 칸에 잘못 붙여넣었는지 알 방법이 이것뿐이다. 길이와 공개 접두/접미 일치 여부만 본다.
+      const shape = (v, test) => {
+        if (!v) return 'missing';
+        const t = v.trim();
+        return `len=${v.length}${v !== t ? '(공백/줄바꿈 포함!)' : ''} ${test(t) ? 'form=OK' : 'form=WRONG'}`;
+      };
+      obCred = {
+        clientId: shape(process.env.GDRIVE_CLIENT_ID, s => /\.apps\.googleusercontent\.com$/.test(s)),
+        clientSecret: shape(process.env.GDRIVE_CLIENT_SECRET, s => /^GOCSPX-/.test(s)),
+        refreshToken: shape(process.env.GDRIVE_REFRESH_TOKEN, s => /^1\/\//.test(s)),
+      };
+      console.error(`  ⚠ 시크릿 모양: CLIENT_ID ${obCred.clientId} · CLIENT_SECRET ${obCred.clientSecret} · REFRESH_TOKEN ${obCred.refreshToken}`);
+    }
 
     const scan = { at: nowKstStamp(), source: 'sheet', sheet: OB_SHEET_ID, start: OB_START, ok: !!csv, error: obErr,
                    rows: 0, named: 0, unknownName: 0, beforeStart: 0, done: 0, byStatus: {} };
+    if (obCred) scan.cred = obCred;   // 인증 실패시에만 — 값이 아니라 길이·형식 일치 여부만
     if (csv) {
       const st = {};
       const found = parseObSheet(csv, st);
