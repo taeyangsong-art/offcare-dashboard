@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 385,
- "updatedAt": "2026-08-05 19:04",
+ "version": 386,
+ "updatedAt": "2026-08-06 09:00",
  "days": 30,
  "items": [
   {
@@ -48,8 +48,8 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 3,
    "lr": "1785921451.592869",
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785921324217409"
   },
   {
@@ -8930,26 +8930,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783384323974069"
-  },
-  {
-   "ts": "1783382409.161179",
-   "date": "2026-07-07",
-   "time": "09:00",
-   "store": "화통한 소한마리",
-   "biz": "1304635943",
-   "pos": "오케이포스",
-   "content": "(고령) 오케이 포스 이용중 메뉴 금액 수정 요청드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 9,
-   "lr": "1783385774.388679",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783382409161179"
   }
  ]
 };

@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2703,
+  "version": 2704,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -84795,6 +84795,17 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "18:15",
+          "store": "커피에 반하다",
+          "biz": "6910203210",
+          "handler": "김규빈",
+          "cat": "menu",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
           "time": "17:12",
           "store": "뼈빠지계닭강정",
           "biz": "2051356996",
@@ -87430,7 +87441,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 206,
+        "online": 207,
         "offline": 32,
         "unknown": 0
       },
@@ -87680,7 +87691,7 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "08:45",
+      "updatedAt": "09:00",
       "voc": {
         "responses": 1,
         "install": {
@@ -87787,7 +87798,11 @@ window.SLACK_DATA = {
       },
       "1785973501.383979": {
         "post": "1785973501.383979",
-        "lastSeen": 1785973524.117
+        "lastSeen": 1785974433.913
+      },
+      "1785974415.484249": {
+        "post": "1785974415.484249",
+        "lastSeen": 1785974433.913
       }
     },
     "days": {
@@ -104022,7 +104037,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-06 08:45",
+    "at": "2026-08-06 09:00",
     "channel": "C0AL2V3MM7U",
     "ok": true,
     "error": "",
