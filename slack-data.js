@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2860,
+  "version": 2861,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -91226,7 +91226,7 @@ window.SLACK_DATA = {
     "2026-08-07": {
       "counts": {
         "as": {
-          "서상원": 29,
+          "서상원": 30,
           "심성현": 39,
           "미지정": 24,
           "김현기": 30,
@@ -91307,6 +91307,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "23:47",
+          "store": "용용선생 인천주안점",
+          "biz": "2271833912",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "민원처리",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
         {
           "time": "23:12",
           "store": "바틀스테이션 샵(Bottle Station shop)",
@@ -94280,10 +94291,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 238,
-        "offline": 35,
+        "offline": 36,
         "unknown": 0
       },
-      "updatedAt": "23:12",
+      "updatedAt": "23:47",
       "ob": {
         "count": 16,
         "byEmp": {
@@ -94736,14 +94747,21 @@ window.SLACK_DATA = {
           }
         ]
       }
+    },
+    "2026-08-08": {
+      "counts": {},
+      "pending": [],
+      "done": [],
+      "intake": {
+        "online": 0,
+        "offline": 0,
+        "unknown": 0
+      },
+      "updatedAt": ""
     }
   },
   "resp": {
     "watch": {
-      "1785942030.822319": {
-        "post": "1785942030.822319",
-        "lastSeen": 1785942040.849
-      },
       "1785974415.484249": {
         "post": "1785974415.484249",
         "lastSeen": 1786066968.447
@@ -113527,7 +113545,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-07 23:45",
+    "at": "2026-08-08 00:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
