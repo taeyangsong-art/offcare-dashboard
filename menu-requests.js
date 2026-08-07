@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 424,
- "updatedAt": "2026-08-07 11:45",
+ "version": 425,
+ "updatedAt": "2026-08-07 12:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1786071542.263139",
+   "date": "2026-08-07",
+   "time": "11:59",
+   "store": "금복주류 운서역점",
+   "biz": "7437700491",
+   "pos": "",
+   "content": "테이블 및 메뉴등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 4,
+   "lr": "1786071630.451639",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786071542263139"
+  },
   {
    "ts": "1786070178.859179",
    "date": "2026-08-07",
@@ -8912,26 +8932,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783480174658009"
-  },
-  {
-   "ts": "1783479404.735679",
-   "date": "2026-07-08",
-   "time": "11:56",
-   "store": "담담",
-   "biz": "5631702526",
-   "pos": "토스포스",
-   "content": "메뉴추가",
-   "special": "메뉴추가",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1783481281.234999",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783479404735679"
   }
  ]
 };
