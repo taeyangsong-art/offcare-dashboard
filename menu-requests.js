@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 430,
- "updatedAt": "2026-08-07 13:15",
+ "version": 431,
+ "updatedAt": "2026-08-07 13:45",
  "days": 30,
  "items": [
   {
@@ -8887,35 +8887,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783488305263649"
-  },
-  {
-   "ts": "1783485104.342939",
-   "date": "2026-07-08",
-   "time": "13:31",
-   "store": "LUO",
-   "biz": "6863301761",
-   "pos": "토스포스",
-   "content": "",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/open?id=1M_y3X00ubLw2C0GEUkBLYRhkAAXxUIYq",
-    "https://drive.google.com/open?id=1xAaFL2ceQSPSgynlyfs-3YXIk-ki54oT",
-    "https://drive.google.com/open?id=1ftLaUP8XrE825sdhGod3xyNEAy04M406",
-    "https://drive.google.com/open?id=1PmpgPowvpgiiOlAJkgo52UuaKc7d61T0",
-    "https://drive.google.com/open?id=1GebXmnGXxEaCqzb6ltRcUxA0_9PuSdWt",
-    "https://drive.google.com/open?id=1eFbtI2SnVkkGyk5W40NEnzQAC4teeTp6",
-    "https://drive.google.com/open?id=1l3r7CMTolWpoBYr9SLfKiIUbNb4QqtiW",
-    "https://drive.google.com/open?id=1mi5IHg7nG70G6uyriqYBAe4Pl_t1fnr3"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783485109.202129",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783485104342939"
   }
  ]
 };
