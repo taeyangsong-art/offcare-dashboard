@@ -3,10 +3,37 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 447,
- "updatedAt": "2026-08-07 19:45",
+ "version": 448,
+ "updatedAt": "2026-08-07 20:08",
  "days": 30,
  "items": [
+  {
+   "ts": "1786100500.543919",
+   "date": "2026-08-07",
+   "time": "20:01",
+   "store": "윤진헤어",
+   "biz": "3874500591",
+   "pos": "토스포스",
+   "content": "가격사진보냅니다",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1attFifiaIEiSfWhiauv3y0ymLwOgE9Ng/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1attFifiaIEiSfWhiauv3y0ymLwOgE9Ng",
+     "blocked": true
+    }
+   ],
+   "replies": [],
+   "rc": 2,
+   "lr": "1786100723.476479",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786100500543919"
+  },
   {
    "ts": "1786098326.394879",
    "date": "2026-08-07",
