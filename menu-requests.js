@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 425,
- "updatedAt": "2026-08-07 12:00",
+ "version": 426,
+ "updatedAt": "2026-08-07 12:15",
  "days": 30,
  "items": [
   {
@@ -20,11 +20,17 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1786071630.451639",
-   "status": "wait",
-   "handler": null,
+   "replies": [
+    "아유 그럼요\\",
+    "천천히 해주셔도되요",
+    "급한거 아니에요",
+    "어차피 기존 kcp 오케이쓰는 매장이고 티오더쓰는매장이라",
+    "작업 후 솔라피 발송해주세요! 그 이후 티오더에 전화해서 프로그램 변경되었다 연락하라했어요"
+   ],
+   "rc": 11,
+   "lr": "1786071844.090539",
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786071542263139"
   },
   {
@@ -8890,48 +8896,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783485104342939"
-  },
-  {
-   "ts": "1783480306.509579",
-   "date": "2026-07-08",
-   "time": "12:11",
-   "store": "마라탕전문점 샹츠마라 왕십리점",
-   "biz": "5161403227",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1783483172.179479",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783480306509579"
-  },
-  {
-   "ts": "1783480174.658009",
-   "date": "2026-07-08",
-   "time": "12:09",
-   "store": "피코",
-   "biz": "4887100710",
-   "pos": "기타",
-   "content": "안주류: 피코한상99,000~수정\n피코 스페셜한상 129,000~수정\n해주시고 주류 메뉴사진첨부보시고 수정부탁합니다",
-   "special": "언제든가능",
-   "drive": [
-    "https://drive.google.com/open?id=1dxQsxaGAjQ1X6mrX_C-jPWysXWgHCEEU"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783480178.441369",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783480174658009"
   }
  ]
 };
