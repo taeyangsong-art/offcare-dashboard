@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 426,
- "updatedAt": "2026-08-07 12:15",
+ "version": 427,
+ "updatedAt": "2026-08-07 12:30",
  "days": 30,
  "items": [
   {
@@ -27,9 +27,9 @@ window.MENU_REQUESTS = {
     "어차피 기존 kcp 오케이쓰는 매장이고 티오더쓰는매장이라",
     "작업 후 솔라피 발송해주세요! 그 이후 티오더에 전화해서 프로그램 변경되었다 연락하라했어요"
    ],
-   "rc": 11,
-   "lr": "1786071844.090539",
-   "status": "confirm",
+   "rc": 12,
+   "lr": "1786073224.925129",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786071542263139"
   },
