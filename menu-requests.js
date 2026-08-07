@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 432,
- "updatedAt": "2026-08-07 14:30",
+ "version": 433,
+ "updatedAt": "2026-08-07 14:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1786081477.967259",
+   "date": "2026-08-07",
+   "time": "14:44",
+   "store": "북경",
+   "biz": "3995700485",
+   "pos": "",
+   "content": "메뉴등록요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1786081521.696849",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786081477967259"
+  },
   {
    "ts": "1786073605.561829",
    "date": "2026-08-07",
@@ -8842,26 +8862,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783490757555789"
-  },
-  {
-   "ts": "1783488862.845829",
-   "date": "2026-07-08",
-   "time": "14:34",
-   "store": "가든갤러리",
-   "biz": "1322074826",
-   "pos": "토스포스",
-   "content": "메뉴변경 요청드립니다\n\n1. 카프레제 샐러드 19500\n2. 만조샐러드  23000\n3. 가든샐러드 5천\n4. 음료 카페라떼 7천원 추가",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 5,
-   "lr": "1783490759.408199",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783488862845829"
   }
  ]
 };
