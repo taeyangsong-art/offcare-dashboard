@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 441,
- "updatedAt": "2026-08-07 17:15",
+ "version": 442,
+ "updatedAt": "2026-08-07 17:30",
  "days": 30,
  "items": [
   {
@@ -8860,26 +8860,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783500064574329"
-  },
-  {
-   "ts": "1783498791.243759",
-   "date": "2026-07-08",
-   "time": "17:19",
-   "store": "강창구찹쌀진순대청송점",
-   "biz": "5510202344",
-   "pos": "오케이포스",
-   "content": "편육(소)",
-   "special": "편육과 이미지 동일",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1783499823.424929",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783498791243759"
   }
  ]
 };
