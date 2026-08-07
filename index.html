@@ -602,6 +602,10 @@
   table.matrix tfoot td:first-child{color:var(--slate,#454b54); background:var(--surface)}
   table.matrix tfoot td.tot{font-size:19px; color:#fff; background:var(--blue)}
   table.matrix tbody tr:hover td{background:var(--surface-soft)}
+  /* 📞 설치 OB — 합계 오른쪽에 따로 붙는 열(합계에 포함되지 않음)이라 경계선으로 구분 */
+  table.matrix .ob-col{border-left:2px solid var(--line); color:#4338ca}
+  table.matrix thead th.ob-col{color:#4338ca}
+  table.matrix tfoot td.ob-col{color:#4338ca; background:#eeecff; border-top:2px solid #5856d6}
   /* 🔐 관리(파트리더) — 탭 바 · 좁은 히트맵 표 · 시트 대기 안내 */
   .adm-tabs{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:18px}
   .adm-tabs button{border:1.5px solid var(--line); background:var(--card); color:var(--ink-soft); font-weight:700;
@@ -1943,6 +1947,15 @@ function obCnt(dates){
   dates.forEach(d=>{ const ob=(slackDay(d)||{}).ob; if(!ob) return;
     n += (ob.items||[]).length || ob.count || 0; });
   return n;
+}
+// 담당자별 설치 OB — 직원별 표의 별도 열용
+function obByEmp(dates){
+  const out={};
+  if(ovShift==='night') return out;
+  dates.forEach(d=>{ const ob=(slackDay(d)||{}).ob; if(!ob) return;
+    if(ob.byEmp) for(const e in ob.byEmp) out[e]=(out[e]||0)+ob.byEmp[e];
+    else (ob.items||[]).forEach(it=>{ if(it.handler) out[it.handler]=(out[it.handler]||0)+1; }); });
+  return out;
 }
 let ovStart = ymd(addDays(today(),-6));
 let ovEnd = ymd(today());
@@ -3822,7 +3835,10 @@ function renderOverview(){
   const intakeTot = intakeAgg.online + intakeAgg.offline;
   const ovPend = ovPendingList();                     // 부재·확인필요 모두 다음날 오전 10시까지 이월
   const pendCarry = ovPend.length;
-  const obCur = obCnt(viewDates), obPrev = obCnt(prevDates);   // 설치 OB (설치 후 해피콜)
+  const obCur = obCnt(viewDates), obPrev = obCnt(prevDates);   // 설치 OB (설치일정 시트 D열)
+  const obEmp = obByEmp(viewDates);                            // 담당자별 — 직원별 표의 별도 열
+  const obEtc = Math.max(0, Object.entries(obEmp).reduce((a,[e,n])=>a+(EMPLOYEES.includes(e)?0:n),0));
+  const obMax = Math.max(1, ...Object.values(obEmp));
   // 누락 랭킹 — 이번 달 누적(부재/확인필요) 담당자별 카운트 (매월 1일 초기화)
   const missRows=Object.entries(monthlyMissByEmp().cnt).sort((a,b)=>b[1]-a[1]).slice(0,5);
 
@@ -3950,26 +3966,28 @@ function renderOverview(){
     <div class="card">
       <div class="card-head">
         <h3>직원별 · 카테고리별 처리건수</h3>
-        <span class="hint">${viewLabel} · 🔎 <b>직원 이름 클릭 → 처리 내역 상세</b> · 미등록 담당(타파트 지원 등)은 <b>🧩 기타</b> 행 · VOC는 확인 담당자 기준</span>
+        <span class="hint">${viewLabel} · 🔎 <b>직원 이름 클릭 → 처리 내역 상세</b> · 미등록 담당(타파트 지원 등)은 <b>🧩 기타</b> 행 · VOC는 확인 담당자 기준 · <b>📞 설치 OB</b>는 시트 기준이라 <b>합계·랭킹에 포함하지 않고</b> 합계 오른쪽에 따로 표시</span>
       </div>
       <div style="overflow-x:auto">
         <table class="matrix">
-          <thead><tr><th>직원</th>${WORK_CATS.map(c=>`<th class="num">${c.icon}<br>${c.name}</th>`).join("")}<th class="num">💬<br>VOC</th><th class="num tot">합계</th></tr></thead>
+          <thead><tr><th style="width:84px">직원</th>${WORK_CATS.map(c=>`<th class="num">${c.icon}<br>${c.name}</th>`).join("")}<th class="num">💬<br>VOC</th><th class="num tot">합계</th><th class="num ob-col">📞<br>설치 OB</th></tr></thead>
           <tbody>
-            ${empRows.map((r,i)=>`<tr>
-              <td class="emp-name emp-click" onclick="showDoneDetail('emp','${r.emp}')" title="🔎 ${escapeHtml(r.emp)}님 처리 내역 보기">${medal(i)} ${r.emp} <span style="font-size:11px;color:var(--gray2)">🔎</span></td>
+            ${empRows.map((r,i)=>{ const ob=obEmp[r.emp]||0; return `<tr>
+              <td class="emp-name emp-click" onclick="showDoneDetail('emp','${r.emp}')" title="🔎 ${escapeHtml(r.emp)}님 처리 내역 보기">${medal(i)} ${r.emp}</td>
               ${r.cells.map((n,ci)=>`<td class="num mcell" style="${n>0?`background:${hexA(WORK_CATS[ci].color,0.08+n/maxCell*0.30)}`:''}">${n||'<span class="zero">·</span>'}</td>`).join("")}
               <td class="num mcell" style="${r.vc>0?`background:${hexA('#ff2d55',0.08+r.vc/maxCell*0.30)}`:''}">${r.vc||'<span class="zero">·</span>'}</td>
               <td class="num tot">${r.total}</td>
-            </tr>`).join("")}
-            ${etcTotal>0?`<tr class="etc-row" onclick="showDoneDetail('etc','')" style="cursor:pointer" title="🔎 미지정·타파트 지원 처리 내역 보기">
-              <td class="emp-name" style="color:var(--gray2)">🧩 기타 <span style="font-size:11px">(미지정·타파트)</span> <span style="font-size:11px">🔎</span></td>
+              <td class="num mcell ob-col"${ob>0?` onclick="showObDetail()" style="cursor:pointer;background:${hexA('#5856d6',0.08+ob/obMax*0.30)}" title="🔎 설치 OB 상세"`:''}>${ob||'<span class="zero">·</span>'}</td>
+            </tr>`; }).join("")}
+            ${(etcTotal>0||obEtc>0)?`<tr class="etc-row" onclick="showDoneDetail('etc','')" style="cursor:pointer" title="🔎 미지정·타파트 지원 처리 내역 보기">
+              <td class="emp-name" style="color:var(--gray2)">🧩 기타 <span style="font-size:11px">(미지정·타파트)</span></td>
               ${etcCells.map((n,ci)=>`<td class="num mcell" style="${n>0?`background:${hexA(WORK_CATS[ci].color,0.06+n/maxCell*0.24)}`:''}">${n||'<span class="zero">·</span>'}</td>`).join("")}
               <td class="num mcell" style="${etcVc>0?`background:${hexA('#ff2d55',0.06+etcVc/maxCell*0.24)}`:''}">${etcVc||'<span class="zero">·</span>'}</td>
               <td class="num tot">${etcTotal}</td>
+              <td class="num mcell ob-col">${obEtc||'<span class="zero">·</span>'}</td>
             </tr>`:''}
           </tbody>
-          <tfoot><tr><td>합계</td>${workCatTotals.map(c=>`<td class="num">${c.total}</td>`).join("")}<td class="num">${vocAttr}</td><td class="num tot">${grandProc}</td></tr></tfoot>
+          <tfoot><tr><td>합계</td>${workCatTotals.map(c=>`<td class="num">${c.total}</td>`).join("")}<td class="num">${vocAttr}</td><td class="num tot">${grandProc}</td><td class="num ob-col">${obCur===null?'—':obCur}</td></tr></tfoot>
         </table>
       </div>
     </div>
