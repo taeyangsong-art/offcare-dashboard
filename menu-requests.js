@@ -3,10 +3,37 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 423,
- "updatedAt": "2026-08-07 11:30",
+ "version": 424,
+ "updatedAt": "2026-08-07 11:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1786070178.859179",
+   "date": "2026-08-07",
+   "time": "11:36",
+   "store": "카페예이",
+   "biz": "3721302766",
+   "pos": "토스포스",
+   "content": "메뉴 추가 부탁드려요 디저트로요 \n\n그리고 디저트중에 휘낭시에 3.0짜리도 하나 도 부탁드려요",
+   "special": "크로플은 가격별 순서로 부탁드려요",
+   "drive": [
+    "https://drive.google.com/file/d/1N2iMdNKTGUjw5nnFK9QzD4_8AfKJlt5y/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1N2iMdNKTGUjw5nnFK9QzD4_8AfKJlt5y",
+     "blocked": true
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786070183.442999",
+   "status": "done",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786070178859179"
+  },
   {
    "ts": "1786069399.974749",
    "date": "2026-08-07",
@@ -30,8 +57,8 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1786069404.817789",
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786069399974749"
   },
   {
