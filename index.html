@@ -602,10 +602,9 @@
   table.matrix tfoot td:first-child{color:var(--slate,#454b54); background:var(--surface)}
   table.matrix tfoot td.tot{font-size:19px; color:#fff; background:var(--blue)}
   table.matrix tbody tr:hover td{background:var(--surface-soft)}
-  /* 📞 설치 OB — 합계 오른쪽에 따로 붙는 열(합계에 포함되지 않음)이라 경계선으로 구분 */
-  table.matrix .ob-col{border-left:2px solid var(--line); color:#4338ca}
+  /* 📞 설치 OB — 다른 카테고리와 소스가 달라(설치일정 시트) 글자색으로만 구분 */
+  table.matrix .ob-col{color:#4338ca}
   table.matrix thead th.ob-col{color:#4338ca}
-  table.matrix tfoot td.ob-col{color:#4338ca; background:#eeecff; border-top:2px solid #5856d6}
   /* 🔐 관리(파트리더) — 탭 바 · 좁은 히트맵 표 · 시트 대기 안내 */
   .adm-tabs{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:18px}
   .adm-tabs button{border:1.5px solid var(--line); background:var(--card); color:var(--ink-soft); font-weight:700;
@@ -1405,6 +1404,9 @@ const WORK_CATS = [
 // 표(직원별·카테고리별)엔 VOC 열이 있고 합계(r.total)에도 VOC가 들어가므로, 차트에만 빠지면 막대 합과 합계가 어긋난다
 const VOC_CAT = {key:"voc", name:"VOC", icon:"💬", color:"#ff2d55"};
 const CHART_CATS = [...WORK_CATS, VOC_CAT];
+// 전체현황 직원별 차트 전용 — 설치 OB 포함. (시간대별 차트/관리 탭은 시각 정보가 없는 OB를 못 쓰므로 CHART_CATS 유지)
+const OB_CAT = {key:'ob', name:'설치 OB', icon:'📞', color:'#5856d6'};
+const OV_CHART_CATS = [...WORK_CATS, VOC_CAT, OB_CAT];
 const RESP_EXCL_CATS = ['transfer','menu','delivery'];   // 응답시간은 '순수 AS' 적재 — 명의변경·메뉴등록·배달 제외
 // 응답시간(요청→첫 확인) 폴링 집계. 날짜 배열만 받으므로 선택 기간·최근 7일·최근 30일에 그대로 재사용한다
 function respStats(dates){
@@ -3821,8 +3823,14 @@ function renderOverview(){
   const vocDoneCur = ovVocDone(viewDates), vocDonePrv = ovVocDone(prevDates);
   const vocAttr = vocDoneCur.cnt, vocAttrPrev = vocDonePrv.cnt;
   const catTotals = [...workCatTotals, {key:'voc', name:'VOC', icon:'💬', color:'#ff2d55', total:vocTot, prev:vocPrevN, proc:vocAttr}];
-  const grandProc = workGrand + vocAttr;              // 처리 = 업무 처리 + VOC 처리(담당자 지정)
-  const grandProcPrev = workGrandPrev + vocAttrPrev;
+  // 설치 OB — 시트(설치일정 확인해주세요) D열 기준. 처리량에 포함되므로 합계·랭킹·MVP·원격 총 건수에 모두 반영된다.
+  // 야간 탭에서는 시트에 시각이 없어 obCnt 가 null → 0으로 취급해 다른 집계를 흔들지 않는다.
+  const obCur = obCnt(viewDates), obPrev = obCnt(prevDates);
+  const obSum = obCur || 0, obSumPrev = obPrev || 0;
+  const obEmp = obByEmp(viewDates);                             // 담당자별
+  const obEtc = Math.max(0, Object.entries(obEmp).reduce((a,[e,n])=>a+(EMPLOYEES.includes(e)?0:n),0));
+  const grandProc = workGrand + vocAttr + obSum;      // 처리 = 업무 처리 + VOC 처리 + 설치 OB
+  const grandProcPrev = workGrandPrev + vocAttrPrev + obSumPrev;
   // 부재 미처리(1차부재)도 '원격 총 건수'에 포함 — 해당 기간 각 날짜의 부재 pending 합
   const pendCntOf = ds => ovPendingRaw(ds).length;
   const absCntOf = ds => ovPendingRaw(ds).filter(p=>(p.reasons||[]).some(r=>/부재/.test(r))).length;
@@ -3835,10 +3843,6 @@ function renderOverview(){
   const intakeTot = intakeAgg.online + intakeAgg.offline;
   const ovPend = ovPendingList();                     // 부재·확인필요 모두 다음날 오전 10시까지 이월
   const pendCarry = ovPend.length;
-  const obCur = obCnt(viewDates), obPrev = obCnt(prevDates);   // 설치 OB (설치일정 시트 D열)
-  const obEmp = obByEmp(viewDates);                            // 담당자별 — 직원별 표의 별도 열
-  const obEtc = Math.max(0, Object.entries(obEmp).reduce((a,[e,n])=>a+(EMPLOYEES.includes(e)?0:n),0));
-  const obMax = Math.max(1, ...Object.values(obEmp));
   // 누락 랭킹 — 이번 달 누적(부재/확인필요) 담당자별 카운트 (매월 1일 초기화)
   const missRows=Object.entries(monthlyMissByEmp().cnt).sort((a,b)=>b[1]-a[1]).slice(0,5);
 
@@ -3847,14 +3851,15 @@ function renderOverview(){
   const empRows = EMPLOYEES.map(e=>{
     const cells = WORK_CATS.map(c=>ovCnt(c.key, viewDates, e));
     const vc = vocByEmp[e]||0;
-    return {emp:e, cells, vc, total:cells.reduce((a,b)=>a+b,0)+vc};   // total=업무처리 + VOC 처리(랭킹·MVP)
+    const ob = obEmp[e]||0;
+    return {emp:e, cells, vc, ob, total:cells.reduce((a,b)=>a+b,0)+vc+ob};   // total=업무처리 + VOC + 설치 OB (랭킹·MVP)
   }).sort((a,b)=>b.total-a.total);
   // 기타(미등록 담당자 = 미지정·타파트 지원 등) — 랭킹/MVP·차트엔 미포함, 표에서 숫자만 일치시키는 집계 행
   const etcCells = WORK_CATS.map((c,ci)=> Math.max(0, workCatTotals[ci].total - empRows.reduce((a,r)=>a+r.cells[ci],0)));
   const etcVc = Math.max(0, vocAttr - empRows.reduce((a,r)=>a+r.vc,0));
-  const etcTotal = etcCells.reduce((a,b)=>a+b,0)+etcVc;
+  const etcTotal = etcCells.reduce((a,b)=>a+b,0)+etcVc+obEtc;
   const maxEmp = Math.max(1, ...empRows.map(r=>r.total));
-  const maxCell = Math.max(1, ...empRows.flatMap(r=>[...r.cells, r.vc]), ...etcCells, etcVc);
+  const maxCell = Math.max(1, ...empRows.flatMap(r=>[...r.cells, r.vc, r.ob]), ...etcCells, etcVc, obEtc);
 
   // ── 헤드라인/알림/근무 계산 ──
   const periodWord = ovLabel();
@@ -3966,28 +3971,28 @@ function renderOverview(){
     <div class="card">
       <div class="card-head">
         <h3>직원별 · 카테고리별 처리건수</h3>
-        <span class="hint">${viewLabel} · 🔎 <b>직원 이름 클릭 → 처리 내역 상세</b> · 미등록 담당(타파트 지원 등)은 <b>🧩 기타</b> 행 · VOC는 확인 담당자 기준 · <b>📞 설치 OB</b>는 시트 기준이라 <b>합계·랭킹에 포함하지 않고</b> 합계 오른쪽에 따로 표시</span>
+        <span class="hint">${viewLabel} · 🔎 <b>직원 이름 클릭 → 처리 내역 상세</b> · 미등록 담당(타파트 지원 등)은 <b>🧩 기타</b> 행 · VOC는 확인 담당자 기준 · <b>📞 설치 OB</b>는 설치일정 시트 D열 기준${NIGHT?' (야간은 시각 정보가 없어 집계 제외)':''}</span>
       </div>
       <div style="overflow-x:auto">
         <table class="matrix">
-          <thead><tr><th style="width:84px">직원</th>${WORK_CATS.map(c=>`<th class="num">${c.icon}<br>${c.name}</th>`).join("")}<th class="num">💬<br>VOC</th><th class="num tot">합계</th><th class="num ob-col">📞<br>설치 OB</th></tr></thead>
+          <thead><tr><th style="width:84px">직원</th>${WORK_CATS.map(c=>`<th class="num">${c.icon}<br>${c.name}</th>`).join("")}<th class="num">💬<br>VOC</th><th class="num ob-col">📞<br>설치 OB</th><th class="num tot">합계</th></tr></thead>
           <tbody>
-            ${empRows.map((r,i)=>{ const ob=obEmp[r.emp]||0; return `<tr>
+            ${empRows.map((r,i)=>`<tr>
               <td class="emp-name emp-click" onclick="showDoneDetail('emp','${r.emp}')" title="🔎 ${escapeHtml(r.emp)}님 처리 내역 보기">${medal(i)} ${r.emp}</td>
               ${r.cells.map((n,ci)=>`<td class="num mcell" style="${n>0?`background:${hexA(WORK_CATS[ci].color,0.08+n/maxCell*0.30)}`:''}">${n||'<span class="zero">·</span>'}</td>`).join("")}
               <td class="num mcell" style="${r.vc>0?`background:${hexA('#ff2d55',0.08+r.vc/maxCell*0.30)}`:''}">${r.vc||'<span class="zero">·</span>'}</td>
+              <td class="num mcell ob-col"${r.ob>0?` onclick="event.stopPropagation();showObDetail()" style="cursor:pointer;background:${hexA('#5856d6',0.08+r.ob/maxCell*0.30)}" title="🔎 설치 OB 상세"`:''}>${r.ob||'<span class="zero">·</span>'}</td>
               <td class="num tot">${r.total}</td>
-              <td class="num mcell ob-col"${ob>0?` onclick="showObDetail()" style="cursor:pointer;background:${hexA('#5856d6',0.08+ob/obMax*0.30)}" title="🔎 설치 OB 상세"`:''}>${ob||'<span class="zero">·</span>'}</td>
-            </tr>`; }).join("")}
-            ${(etcTotal>0||obEtc>0)?`<tr class="etc-row" onclick="showDoneDetail('etc','')" style="cursor:pointer" title="🔎 미지정·타파트 지원 처리 내역 보기">
+            </tr>`).join("")}
+            ${etcTotal>0?`<tr class="etc-row" onclick="showDoneDetail('etc','')" style="cursor:pointer" title="🔎 미지정·타파트 지원 처리 내역 보기">
               <td class="emp-name" style="color:var(--gray2)">🧩 기타 <span style="font-size:11px">(미지정·타파트)</span></td>
               ${etcCells.map((n,ci)=>`<td class="num mcell" style="${n>0?`background:${hexA(WORK_CATS[ci].color,0.06+n/maxCell*0.24)}`:''}">${n||'<span class="zero">·</span>'}</td>`).join("")}
               <td class="num mcell" style="${etcVc>0?`background:${hexA('#ff2d55',0.06+etcVc/maxCell*0.24)}`:''}">${etcVc||'<span class="zero">·</span>'}</td>
-              <td class="num tot">${etcTotal}</td>
               <td class="num mcell ob-col">${obEtc||'<span class="zero">·</span>'}</td>
+              <td class="num tot">${etcTotal}</td>
             </tr>`:''}
           </tbody>
-          <tfoot><tr><td>합계</td>${workCatTotals.map(c=>`<td class="num">${c.total}</td>`).join("")}<td class="num">${vocAttr}</td><td class="num tot">${grandProc}</td><td class="num ob-col">${obCur===null?'—':obCur}</td></tr></tfoot>
+          <tfoot><tr><td>합계</td>${workCatTotals.map(c=>`<td class="num">${c.total}</td>`).join("")}<td class="num">${vocAttr}</td><td class="num ob-col">${obSum}</td><td class="num tot">${grandProc}</td></tr></tfoot>
         </table>
       </div>
     </div>
@@ -3999,7 +4004,7 @@ function renderOverview(){
       </div>
       ${columnChart(empRows, maxCell)}
       <div class="legend">
-        ${CHART_CATS.map(c=>`<span><span class="swatch" style="background:${c.color}"></span>${c.name}</span>`).join("")}
+        ${OV_CHART_CATS.map(c=>`<span><span class="swatch" style="background:${c.color}"></span>${c.name}</span>`).join("")}
       </div>
     </div>
   `;
@@ -4060,22 +4065,29 @@ function showObDetail(){
 function showDoneDetail(mode, key){
   const dates=ovDates(), set=new Set(dates); let items=[], title='';
   const pushVocDone=(empFilter)=>{ allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ if(x.emp&&(!empFilter||x.emp===empFilter)&&x.doneDate&&set.has(x.doneDate)) items.push({time:'',store:x.store,biz:x.storeId,emp:x.emp,cat:'voc',date:x.doneDate,st:'처리',nt:isNightTime(x.time)}); }); }); };
+  // 설치 OB — 시트 기준이라 상호·사업자·시각이 없다. 상태를 상호 칸에 넣어 무엇인지 알아보게 한다.
+  // 야간 탭에서는 obItems 가 시각 정보를 못 주므로 아예 넣지 않는다(집계에서도 빠져 있어 숫자가 맞는다).
+  const pushOb=(filter)=>{ if(ovShift==='night') return; obItems(dates).forEach(x=>{ if(filter&&!filter(x)) return; items.push({time:'',store:x.status||'(상태 미기재)',biz:'',emp:x.handler,cat:'ob',date:x._date,st:'처리',nt:false}); }); };
   if(mode==='cat'){
     title = catLabelOf(key)+' 처리 상세';
     if(key==='voc'){ pushVocDone(); }
+    else if(key==='ob'){ pushOb(); }
     else { dates.forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.cat===key) items.push({time:x.time,store:x.store,biz:x.biz,emp:x.emp,cat:x.cat,date:d,st:'처리'}); })); }
   } else if(mode==='emp'){
     title = key+' 처리 상세';
     dates.forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp===key) items.push({time:x.time,store:x.store,biz:x.biz,emp:x.emp,cat:x.cat,date:d,st:'처리'}); }));
-    pushVocDone(key);   // 이 직원의 VOC 처리도 포함 (랭킹 수치와 일치)
+    pushVocDone(key);                     // 이 직원의 VOC 처리도 포함 (랭킹 수치와 일치)
+    pushOb(x=>x.handler===key);           // 설치 OB 도 포함 — 합계에 들어가므로 상세도 맞춰야 한다
   } else if(mode==='etc'){   // 미등록 담당자(미지정·타파트 지원 등) 전체
     title = '기타(미지정·타파트) 처리 상세';
     dates.forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(!EMPLOYEES.includes((x.emp||'').trim())) items.push({time:x.time,store:x.store,biz:x.biz,emp:x.emp||'미지정',cat:x.cat,date:d,st:'처리'}); }));
     allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ if(x.doneDate&&set.has(x.doneDate)&&!EMPLOYEES.includes((x.emp||'').trim())) items.push({time:'',store:x.store,biz:x.storeId,emp:x.emp||'미지정',cat:'voc',date:x.doneDate,st:'처리',nt:isNightTime(x.time)}); }); });
-  } else { // 'all' = 원격 총 건수 (처리 + 부재 + 확인필요)
+    pushOb(x=>!EMPLOYEES.includes((x.handler||'').trim()));
+  } else { // 'all' = 원격 총 건수 (처리 + 설치 OB + 부재 + 확인필요)
     title = '원격 총 건수 상세';
     dates.forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>items.push({time:x.time,store:x.store,biz:x.biz,emp:x.emp,cat:x.cat,date:d,st:'처리'})));
     pushVocDone();
+    pushOb();
     dates.forEach(d=>((slackDay(d)||{}).pending||[]).forEach(x=>{ const ab=(x.reasons||[]).some(r=>/부재/.test(r)); items.push({time:x.time,store:x.store,biz:x.biz,emp:x.handler,cat:x.cat,date:d,st:ab?'부재':'확인필요'}); }));
   }
   if(ovShift==='night'){ items=items.filter(x=> x.cat==='voc' ? x.nt : isNightTime(x.time)); title='🌙 '+title; }
@@ -4151,7 +4163,7 @@ function renderRespModal(){
 // 전체 처리 추이 (기간 내 일별 전 카테고리 합계)
 function overviewTrend(dates){
   const NIGHT=ovShift==='night', vocDB=NIGHT?null:vocDoneByDay();
-  const vals=dates.map(d=>{ if(NIGHT) return nightItems([d]).length; const vp=vocDB[d]||0; const ab=((slackDay(d)||{}).pending||[]).filter(p=>(p.reasons||[]).some(r=>/부재/.test(r))).length; return WORK_CATS.reduce((a,c)=>a+sumRange(c.key,[d]),0)+vp+ab; });   // 업무 + VOC 처리(완료일 기준) + 부재 미처리 = 원격 총 건수와 동일 기준 (야간이면 야간 항목 수)
+  const vals=dates.map(d=>{ if(NIGHT) return nightItems([d]).length; const vp=vocDB[d]||0; const ab=((slackDay(d)||{}).pending||[]).filter(p=>(p.reasons||[]).some(r=>/부재/.test(r))).length; const ob=obCnt([d])||0; return WORK_CATS.reduce((a,c)=>a+sumRange(c.key,[d]),0)+vp+ob+ab; });   // 업무 + VOC 처리(완료일 기준) + 설치 OB + 부재 미처리 = 원격 총 건수와 동일 기준 (야간이면 야간 항목 수)
   const mx=Math.max(1,...vals);
   // 카드 가로폭을 꽉 채우도록 viewBox 고정 + width 100% (빈 여백 없이 막대를 두껍게)
   const W=760, H=230, pad=26, gap=(W-pad*2)/dates.length, bw=Math.min(76, gap*0.72);
@@ -4261,7 +4273,7 @@ function deltaHTML(cur,prev){
 
 // 직원별 그룹(묶음) 세로 막대차트 — 직원마다 카테고리별 막대를 분리 표시
 function columnChart(empRows, maxCell){
-  const cats=CHART_CATS, nc=cats.length, ng=empRows.length;
+  const cats=OV_CHART_CATS, nc=cats.length, ng=empRows.length;
   const barW=12, barGap=3, groupGap=32, padL=20, padR=20, topPad=22, botPad=46;
   const groupW=nc*barW+(nc-1)*barGap;
   const W=Math.max(560, padL+padR + ng*groupW + (ng-1)*groupGap);
@@ -4269,7 +4281,7 @@ function columnChart(empRows, maxCell){
   const mx=Math.max(1, maxCell);
   const groups=empRows.map((r,gi)=>{
     const gx=padL + gi*(groupW+groupGap);
-    const vals=[...r.cells, r.vc||0];   // cells 는 업무 카테고리만 — VOC 는 별도 필드
+    const vals=[...r.cells, r.vc||0, r.ob||0];   // cells 는 업무 카테고리만 — VOC·설치 OB 는 별도 필드
     const bars=cats.map((c,ci)=>{
       const v=vals[ci];
       const bx=gx+ci*(barW+barGap);
