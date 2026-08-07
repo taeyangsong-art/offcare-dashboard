@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 435,
- "updatedAt": "2026-08-07 15:45",
+ "version": 436,
+ "updatedAt": "2026-08-07 16:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1786085688.975329",
+   "date": "2026-08-07",
+   "time": "15:54",
+   "store": "피코",
+   "biz": "4887100710",
+   "pos": "기타",
+   "content": "안주류;무침회 30,000원으로 수정해주세요\n점심식사류; 문어들기름막국수한상 13,000원 으로 수정",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786085693.176009",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786085688975329"
+  },
   {
    "ts": "1786084741.879149",
    "date": "2026-08-07",
@@ -21,8 +41,8 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [],
-   "rc": 3,
-   "lr": "1786085086.376729",
+   "rc": 4,
+   "lr": "1786085672.547419",
    "status": "confirm",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786084741879149"
@@ -8820,26 +8840,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783497380962349"
-  },
-  {
-   "ts": "1783493463.375369",
-   "date": "2026-07-08",
-   "time": "15:51",
-   "store": "바다향기",
-   "biz": "3840403301",
-   "pos": "",
-   "content": "메뉴등록 요청드립니다. >>",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 5,
-   "lr": "1783496424.822869",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783493463375369"
   }
  ]
 };
