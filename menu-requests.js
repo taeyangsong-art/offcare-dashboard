@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 433,
- "updatedAt": "2026-08-07 14:45",
+ "version": 434,
+ "updatedAt": "2026-08-07 15:15",
  "days": 30,
  "items": [
   {
@@ -8820,48 +8820,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783493463375369"
-  },
-  {
-   "ts": "1783490901.254779",
-   "date": "2026-07-08",
-   "time": "15:08",
-   "store": "포인트 고등수학",
-   "biz": "4999202159",
-   "pos": "토스포스",
-   "content": "메뉴등록이 안 되요",
-   "special": "공통수학1. 중3. 500000",
-   "drive": [
-    "https://drive.google.com/file/d/1zg_DZbNk-loRw70Y8Bzlz_Eo0IOrM3_E/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783490907.129769",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783490901254779"
-  },
-  {
-   "ts": "1783490757.555789",
-   "date": "2026-07-08",
-   "time": "15:05",
-   "store": "소피의 책방",
-   "biz": "3271302897",
-   "pos": "",
-   "content": "메뉴 등록 요청드립니다 >>",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 5,
-   "lr": "1783491653.004389",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783490757555789"
   }
  ]
 };
