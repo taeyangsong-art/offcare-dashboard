@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 431,
- "updatedAt": "2026-08-07 13:45",
+ "version": 432,
+ "updatedAt": "2026-08-07 14:30",
  "days": 30,
  "items": [
   {
@@ -1647,12 +1647,7 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [
-    {
-     "id": "1ASb09A7uFRe4cfcmas4XOnz6kCEVdwBw",
-     "blocked": true
-    }
-   ],
+   "datt": [],
    "replies": [
     "완료"
    ],
@@ -8867,26 +8862,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783488862845829"
-  },
-  {
-   "ts": "1783488305.263649",
-   "date": "2026-07-08",
-   "time": "14:25",
-   "store": "주디마리 홍대점(JUDYMARY)",
-   "biz": "4858502579",
-   "pos": "토스포스",
-   "content": "프로그램 토스포스에 메뉴 등록 요청드립니다.\n(주)주디마리 킷사주디(<tel:···|···>)의 메뉴와 동일하게 복사 부탁드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 7,
-   "lr": "1783489435.940219",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783488305263649"
   }
  ]
 };
