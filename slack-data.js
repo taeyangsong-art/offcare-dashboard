@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2818,
+  "version": 2819,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -91225,13 +91225,18 @@ window.SLACK_DATA = {
     },
     "2026-08-07": {
       "counts": {
+        "extern": {
+          "서상원": 3,
+          "김동욱": 1,
+          "김규빈": 1
+        },
         "as": {
+          "미지정": 13,
           "김동욱": 21,
           "김현기": 20,
           "심성현": 22,
           "송태양": 17,
           "서상원": 8,
-          "미지정": 12,
           "김규빈": 7
         },
         "onboarding": {
@@ -91241,13 +91246,8 @@ window.SLACK_DATA = {
           "심성현": 1,
           "김동욱": 2
         },
-        "extern": {
-          "서상원": 2,
-          "김동욱": 1,
-          "김규빈": 1
-        },
         "transfer": {
-          "송태양": 9,
+          "송태양": 11,
           "김동욱": 4
         },
         "menu": {
@@ -91305,6 +91305,39 @@ window.SLACK_DATA = {
       ],
       "done": [
         {
+          "time": "15:24",
+          "store": "북경",
+          "biz": "3995700485",
+          "cat": "extern",
+          "emp": "서상원",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "15:18",
+          "store": "다다익선 병천순대국 중랑점",
+          "biz": "",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "8월 7일 오후 3시 20분 / 메뉴 복사 O / 포프캣, 금전함",
+          "hw": "",
+          "intake": "online",
+          "note": "com1/9600 / 명변 완료입니다"
+        },
+        {
+          "time": "15:00",
+          "store": "미사피부랩",
+          "biz": "1536600464",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "프린터 기기 작동되지 않는다고 하십니다. 확인 부탁드립니다. / <https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1785303469184129|이전 원격 진행 완료하여 포프+유프 온보딩은",
+          "hw": "",
+          "intake": "online",
+          "note": "10분후 / 토요일 11시30분 예약 / 젠더만 끼우면 될거 같은데 바쁘신가봐요"
+        },
+        {
           "time": "15:00",
           "store": "공원카페",
           "biz": "5325800605",
@@ -91336,6 +91369,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "15시30분 예약"
+        },
+        {
+          "time": "15:00",
+          "store": "프리미엄족발 신의한발",
+          "biz": "",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "8월 7일 오후 3시 30분 / 메뉴 복사 O / 프론트, 유프",
+          "hw": "",
+          "intake": "online",
+          "note": "명변 완료입니다"
         },
         {
           "time": "14:45",
@@ -92931,17 +92975,33 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 129,
+        "online": 133,
         "offline": 22,
         "unknown": 0
       },
-      "updatedAt": "15:08",
+      "updatedAt": "15:30",
       "ob": {
-        "count": 12,
+        "count": 15,
         "byEmp": {
-          "김규빈": 12
+          "김규빈": 15
         },
         "items": [
+          {
+            "key": "2026년 8월 7일 오후 3:15:49|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785391489457599#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-07",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785391489457599"
+          },
+          {
+            "key": "2026년 8월 7일 오후 1:57:18|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785832297720229#1",
+            "handler": "김규빈",
+            "status": "점주직접접수",
+            "recvDate": "2026-08-07",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785832297720229"
+          },
           {
             "key": "2026년 8월 7일 오후 1:55:36|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1779168952853529#1",
             "handler": "김규빈",
@@ -92949,6 +93009,14 @@ window.SLACK_DATA = {
             "recvDate": "2026-08-07",
             "planDate": "",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1779168952853529"
+          },
+          {
+            "key": "2026년 8월 7일 오후 1:34:44|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1783422138596699#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-07",
+            "planDate": "2026-08-11",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1783422138596699"
           },
           {
             "key": "2026년 8월 7일 오후 1:33:23|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786006372546019#1",
@@ -93041,25 +93109,45 @@ window.SLACK_DATA = {
         ]
       },
       "voc": {
-        "responses": 3,
+        "responses": 11,
         "install": {
-          "count": 0,
+          "count": 6,
           "low": 0
         },
         "nps": {
-          "count": 3,
-          "low": 0
+          "count": 11,
+          "low": 3
         },
         "high": {
-          "install": 0,
-          "nps": 3
+          "install": 4,
+          "nps": 6
         },
         "npsDist": {
-          "10": 3
+          "1": 1,
+          "5": 2,
+          "7": 1,
+          "8": 1,
+          "10": 6
         },
-        "installDist": {},
-        "byIndustry": {},
+        "installDist": {
+          "3": 2,
+          "5": 4
+        },
+        "byIndustry": {
+          "서비스[뷰티,헤어]": 1,
+          "도소매": 2,
+          "요식업": 1,
+          "서비스[학원]": 2
+        },
         "byTenure": {
+          "구매설치": {
+            "total": 6,
+            "low": 2
+          },
+          "3개월": {
+            "total": 2,
+            "low": 1
+          },
           "6개월": {
             "total": 1,
             "low": 0
@@ -93071,21 +93159,128 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KPN": {
+            "total": 2,
+            "low": 0
+          },
+          "KOCES": {
+            "total": 2,
+            "low": 0
+          },
+          "KIS": {
             "total": 1,
+            "low": 1
+          },
+          "KSNET": {
+            "total": 2,
+            "low": 2
+          },
+          "NICE": {
+            "total": 2,
             "low": 0
           },
           "SMARTRO": {
-            "total": 1,
-            "low": 0
-          },
-          "NICE": {
-            "total": 1,
+            "total": 2,
             "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
-        "praises": []
+        "reasonCounts": {
+          "사용중 오류가 자주 발생함": 2,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
+        },
+        "alerts": [
+          {
+            "time": "15:23",
+            "store": "은하수 국밥(Galaxy Gukbap)",
+            "storeId": "581282",
+            "industry": "음식점/주점",
+            "indBucket": "요식업",
+            "install": 3,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "자잘한 결제오류, 하이오더와 완벽한 호환이 아직은....",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:23",
+            "store": "블루밍뽀",
+            "storeId": "355289",
+            "industry": "이벤트 풍선판매",
+            "indBucket": "도소매",
+            "install": 5,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "동종업계는 대부분 홈공방이라서",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:17",
+            "store": "피치마켓(성황점)",
+            "storeId": "454350",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "너무 느리고 오류 잘 남",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
+        "praises": [
+          {
+            "time": "15:23",
+            "store": "소통수학교습소",
+            "storeId": "572813",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "친절히 안내받음. 카톡으로 설명  잘받음 괄리가편해서",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:23",
+            "store": "도봉지엠에스수학학원",
+            "storeId": "558049",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "친절하게 사용법을 알려주었습니다 편리성",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
       }
     }
   },
@@ -93165,27 +93360,35 @@ window.SLACK_DATA = {
       },
       "1786079701.090059": {
         "post": "1786079701.090059",
-        "lastSeen": 1786083322.292
+        "lastSeen": 1786084225.941
       },
       "1786079700.517919": {
         "post": "1786079700.517919",
-        "lastSeen": 1786083322.292
+        "lastSeen": 1786084225.941
       },
       "1786081477.967259": {
         "post": "1786081477.967259",
-        "lastSeen": 1786083322.292
-      },
-      "1786082406.556749": {
-        "post": "1786082406.556749",
-        "lastSeen": 1786083322.292
+        "lastSeen": 1786084225.941
       },
       "1786082400.153529": {
         "post": "1786082400.153529",
-        "lastSeen": 1786083322.292
+        "lastSeen": 1786084225.941
       },
-      "1786082405.648649": {
-        "post": "1786082405.648649",
-        "lastSeen": 1786083322.292
+      "1786084202.309049": {
+        "post": "1786084202.309049",
+        "lastSeen": 1786084225.941
+      },
+      "1786084202.170439": {
+        "post": "1786084202.170439",
+        "lastSeen": 1786084225.941
+      },
+      "1786084200.724699": {
+        "post": "1786084200.724699",
+        "lastSeen": 1786084225.941
+      },
+      "1786084106.944249": {
+        "post": "1786084106.944249",
+        "lastSeen": 1786084225.941
       }
     },
     "days": {
@@ -110569,8 +110772,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-07": {
-        "cnt": 84,
-        "sumMin": 1458.4210057457287,
+        "cnt": 85,
+        "sumMin": 1481.2136682589849,
         "over": 7,
         "items": [
           {
@@ -111244,27 +111447,35 @@ window.SLACK_DATA = {
             "biz": "1204001615",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "15:00",
+            "min": 22.8,
+            "store": "미사피부랩",
+            "biz": "1536600464",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-07 15:15",
+    "at": "2026-08-07 15:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3390,
-    "named": 97,
+    "rows": 3391,
+    "named": 100,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 97,
+    "done": 100,
     "byStatus": {
-      "일정등록완료": 56,
+      "일정등록완료": 58,
       "1차부재": 26,
-      "점주직접접수": 6,
+      "점주직접접수": 7,
       "설치불가": 3,
       "(빈칸)": 3,
       "자가설치": 2,
