@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 415,
- "updatedAt": "2026-08-07 09:30",
+ "version": 416,
+ "updatedAt": "2026-08-07 09:45",
  "days": 30,
  "items": [
   {
@@ -8854,26 +8854,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783473517216189"
-  },
-  {
-   "ts": "1783471131.583579",
-   "date": "2026-07-08",
-   "time": "09:38",
-   "store": "에프에이카페봉선 주식회사",
-   "biz": "7428603764",
-   "pos": "",
-   "content": "메뉴 신규 등록 요청 드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 8,
-   "lr": "1783474992.228029",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783471131583579"
   }
  ]
 };
