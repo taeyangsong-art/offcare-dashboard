@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 438,
- "updatedAt": "2026-08-07 16:30",
+ "version": 439,
+ "updatedAt": "2026-08-07 16:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1786087862.731989",
+   "date": "2026-08-07",
+   "time": "16:31",
+   "store": "레이지 알피엠(Rage RPM)",
+   "biz": "5276400773",
+   "pos": "",
+   "content": "키오스크 도입으로 van 변경 메뉴 복사필요!",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786087868.467249",
+   "status": "done",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786087862731989"
+  },
   {
    "ts": "1786086623.743639",
    "date": "2026-08-07",
