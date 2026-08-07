@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 434,
- "updatedAt": "2026-08-07 15:15",
+ "version": 435,
+ "updatedAt": "2026-08-07 15:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1786084741.879149",
+   "date": "2026-08-07",
+   "time": "15:39",
+   "store": "계두식",
+   "biz": "6074471144",
+   "pos": "오케이포스",
+   "content": "토스포스에서 오케이포스 전환 예정 매장입니다.\n• 상품 및 테이블 동일하게 셋팅 해주시면 감사하겠습니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 3,
+   "lr": "1786085086.376729",
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786084741879149"
+  },
   {
    "ts": "1786081477.967259",
    "date": "2026-08-07",
@@ -21,10 +41,10 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1786081521.696849",
-   "status": "wait",
-   "handler": null,
+   "rc": 3,
+   "lr": "1786084523.571849",
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786081477967259"
   },
   {
