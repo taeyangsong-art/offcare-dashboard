@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2965,
+  "version": 2966,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94773,6 +94773,17 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "21:30",
+          "store": "그레인마켓 스테이",
+          "biz": "3142904468",
+          "handler": "서상원",
+          "cat": "transfer",
+          "intake": "online",
+          "reasons": [
+            "1차 부재"
+          ]
+        },
+        {
           "time": "17:22",
           "store": "카페아이니",
           "biz": "5602901540",
@@ -95482,7 +95493,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 57,
+        "online": 58,
         "offline": 7,
         "unknown": 0
       },
@@ -95874,19 +95885,19 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786194926.396
+        "lastSeen": 1786195825.485
       },
       "1786173452.415139": {
         "post": "1786173452.415139",
-        "lastSeen": 1786194926.396
+        "lastSeen": 1786195825.485
       },
       "1786177360.051569": {
         "post": "1786177360.051569",
-        "lastSeen": 1786194926.396
+        "lastSeen": 1786195825.485
       },
       "1786192608.447149": {
         "post": "1786192608.447149",
-        "lastSeen": 1786194926.396
+        "lastSeen": 1786195825.485
       }
     },
     "days": {
@@ -114862,7 +114873,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-08 22:15",
+    "at": "2026-08-08 22:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
