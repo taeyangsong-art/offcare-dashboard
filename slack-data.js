@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2918,
+  "version": 2919,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94762,6 +94762,9 @@ window.SLACK_DATA = {
         },
         "menu": {
           "김현기": 1
+        },
+        "delivery": {
+          "김현기": 1
         }
       },
       "pending": [],
@@ -94820,6 +94823,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "또 외부임. 본인이 재접수 하겠음"
+        },
+        {
+          "time": "12:45",
+          "store": "빱스 분식",
+          "biz": "6627900522",
+          "cat": "delivery",
+          "emp": "김현기",
+          "req": "쿠팡이츠 주문접수 프로그램 설치 후 로그인한 사진 1장",
+          "hw": "",
+          "intake": "online",
+          "note": "설치는 했는데 사장님이 바쁘신지 전화를 안받음."
         },
         {
           "time": "12:01",
@@ -95023,11 +95037,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 23,
+        "online": 24,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "13:27",
+      "updatedAt": "13:42",
       "voc": {
         "responses": 2,
         "install": {
@@ -95092,10 +95106,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1785990650.987569": {
-        "post": "1785990650.987569",
-        "lastSeen": 1786066968.447
-      },
       "1785995512.836689": {
         "post": "1785995512.836689",
         "lastSeen": 1786066968.447
@@ -95162,11 +95172,11 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786163426.745
+        "lastSeen": 1786164320.606
       },
       "1786162572.408129": {
         "post": "1786162572.408129",
-        "lastSeen": 1786163426.745
+        "lastSeen": 1786164320.606
       }
     },
     "days": {
@@ -113998,7 +114008,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-08 13:30",
+    "at": "2026-08-08 13:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
