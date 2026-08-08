@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2950,
+  "version": 2951,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94751,7 +94751,7 @@ window.SLACK_DATA = {
     "2026-08-08": {
       "counts": {
         "as": {
-          "서상원": 7,
+          "서상원": 8,
           "김현기": 30,
           "미지정": 11
         },
@@ -94785,6 +94785,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "19:41",
+          "store": "하단정",
+          "biz": "2976700515",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "포프(포스기) 사용 중, 유프 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "19:00",
           "store": "인필름 스튜디오 셀프사진관 셀프스튜디오",
@@ -95438,11 +95449,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 53,
+        "online": 54,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "19:29",
+      "updatedAt": "19:41",
       "voc": {
         "responses": 18,
         "install": {
@@ -95796,15 +95807,15 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786185024.48
+        "lastSeen": 1786185917.319
       },
       "1786173452.415139": {
         "post": "1786173452.415139",
-        "lastSeen": 1786185024.48
+        "lastSeen": 1786185917.319
       },
       "1786177360.051569": {
         "post": "1786177360.051569",
-        "lastSeen": 1786185024.48
+        "lastSeen": 1786185917.319
       }
     },
     "days": {
@@ -114780,7 +114791,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-08 19:30",
+    "at": "2026-08-08 19:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
