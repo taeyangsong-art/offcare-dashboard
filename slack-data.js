@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2925,
+  "version": 2926,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94751,8 +94751,8 @@ window.SLACK_DATA = {
     "2026-08-08": {
       "counts": {
         "as": {
-          "미지정": 5,
-          "김현기": 20
+          "김현기": 22,
+          "미지정": 6
         },
         "onboarding": {
           "미지정": 1,
@@ -94770,6 +94770,39 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "14:45",
+          "store": "공유오피스 이담",
+          "biz": "7113701482",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "아이패드 + 프론트 온보딩",
+          "hw": "",
+          "intake": "online",
+          "note": "셀프로 완료"
+        },
+        {
+          "time": "14:41",
+          "store": "카페 이음",
+          "biz": "6810203663",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "포프유프(노트북) / 프론트 연결끊김으로 재온보딩 부탁드립니다..!",
+          "hw": "",
+          "intake": "online",
+          "note": "연결 안끊킨것 같음 일단 유프만 다시 설정 함"
+        },
+        {
+          "time": "14:32",
+          "store": "시놉시스 (synopsis)",
+          "biz": "3420503172",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "포프(pc) 유프 / 노트북 업데이트 하면서 출력되지않아 확인부탁드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "노트북 usb, com4 연결중 프린터 속도 재설정 및 usb 다른 단자 재연결후 정상"
+        },
         {
           "time": "14:26",
           "store": "메인헤어",
@@ -95115,26 +95148,27 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 29,
+        "online": 32,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "14:45",
+      "updatedAt": "15:00",
       "voc": {
-        "responses": 2,
+        "responses": 3,
         "install": {
           "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 2,
-          "low": 0
+          "count": 3,
+          "low": 1
         },
         "high": {
           "install": 1,
           "nps": 2
         },
         "npsDist": {
+          "5": 1,
           "10": 2
         },
         "installDist": {
@@ -95144,6 +95178,10 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 1,
+            "low": 1
+          },
           "1개월": {
             "total": 1,
             "low": 0
@@ -95154,6 +95192,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SECTA9": {
+            "total": 1,
+            "low": 1
+          },
           "KPN": {
             "total": 1,
             "low": 0
@@ -95163,8 +95205,33 @@ window.SLACK_DATA = {
             "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
+        },
+        "alerts": [
+          {
+            "time": "14:57",
+            "store": "포커스사격아카데미",
+            "storeId": "419209",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "기기 발열이 너무 심하다",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
         "praises": [
           {
             "time": "03:36",
@@ -95184,10 +95251,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1785995512.836689": {
-        "post": "1785995512.836689",
-        "lastSeen": 1786066968.447
-      },
       "1785998329.943989": {
         "post": "1785998329.943989",
         "lastSeen": 1786066968.447
@@ -95250,15 +95313,19 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786167920.365
+        "lastSeen": 1786168836.583
       },
-      "1786167175.786709": {
-        "post": "1786167175.786709",
-        "lastSeen": 1786167920.365
+      "1786168800.201789": {
+        "post": "1786168800.201789",
+        "lastSeen": 1786168836.583
       },
-      "1786167901.280529": {
-        "post": "1786167901.280529",
-        "lastSeen": 1786167920.365
+      "1786168800.194849": {
+        "post": "1786168800.194849",
+        "lastSeen": 1786168836.583
+      },
+      "1786168724.971299": {
+        "post": "1786168724.971299",
+        "lastSeen": 1786168836.583
       }
     },
     "days": {
@@ -113961,8 +114028,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-08": {
-        "cnt": 19,
-        "sumMin": 430.66535448233276,
+        "cnt": 21,
+        "sumMin": 458.66336718002947,
         "over": 6,
         "items": [
           {
@@ -114116,13 +114183,29 @@ window.SLACK_DATA = {
             "biz": "3884500181",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "14:45",
+            "min": 8,
+            "store": "공유오피스 이담",
+            "biz": "7113701482",
+            "who": "김현기",
+            "cat": "as"
+          },
+          {
+            "hm": "14:32",
+            "min": 20,
+            "store": "시놉시스 (synopsis)",
+            "biz": "3420503172",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-08 14:45",
+    "at": "2026-08-08 15:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
