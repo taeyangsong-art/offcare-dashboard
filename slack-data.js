@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2911,
+  "version": 2912,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94751,7 +94751,7 @@ window.SLACK_DATA = {
     "2026-08-08": {
       "counts": {
         "as": {
-          "김현기": 13
+          "김현기": 14
         },
         "onboarding": {
           "김현기": 2
@@ -94770,6 +94770,17 @@ window.SLACK_DATA = {
           "urgent": true,
           "intake": "online",
           "note": "1차부재전화거절 / 핫스팟 지속 끊킴. 설령 다시 붙는다고 하여도 카드사에서 핫스팟 결제시 거절 내는 경우도 있음 &lt;&lt; 이 경우엔 해결 불가 / 궁극적으론 매장 내 인터넷 개통을 해야함 안내 완료 핫스팟 지속 끊킴. 설령 다시 붙는다고 하여도 카드사에서 핫스팟 결제시 거절 내는 경우도 있음 << 이 경우엔 해결 불가 / 궁극적으론 매장 내 인터넷"
+        },
+        {
+          "time": "11:36",
+          "store": "바퀴달린그림책(강동)",
+          "biz": "4351501500",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "유프 문자깨져서 출력  /  영수증 커스텀 사용매장  - 점검 요청 드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "속도변경완료"
         },
         {
           "time": "11:30",
@@ -94928,11 +94939,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 15,
+        "online": 16,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "11:47",
+      "updatedAt": "12:01",
       "voc": {
         "responses": 1,
         "install": {
@@ -95063,11 +95074,15 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786158038.119
+        "lastSeen": 1786158921.715
       },
       "1786156200.571399": {
         "post": "1786156200.571399",
-        "lastSeen": 1786158038.119
+        "lastSeen": 1786158921.715
+      },
+      "1786158099.437499": {
+        "post": "1786158099.437499",
+        "lastSeen": 1786158921.715
       }
     },
     "days": {
@@ -113859,7 +113874,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-08 12:00",
+    "at": "2026-08-08 12:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
