@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2902,
+  "version": 2903,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94751,7 +94751,7 @@ window.SLACK_DATA = {
     "2026-08-08": {
       "counts": {
         "as": {
-          "김현기": 1
+          "김현기": 2
         },
         "onboarding": {
           "김현기": 2
@@ -94759,6 +94759,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:53",
+          "store": "노른자 제과점",
+          "biz": "3090148835",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "포스프로그램에서 배민라이트 주문 알림 설정법 도움요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "안내완료"
+        },
         {
           "time": "09:23",
           "store": "굿델리",
@@ -94794,11 +94805,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 3,
+        "online": 4,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:23",
+      "updatedAt": "09:53",
       "voc": {
         "responses": 1,
         "install": {
@@ -94933,7 +94944,7 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786150163.158
+        "lastSeen": 1786150836.102
       }
     },
     "days": {
@@ -113638,7 +113649,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-08 09:49",
+    "at": "2026-08-08 10:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
