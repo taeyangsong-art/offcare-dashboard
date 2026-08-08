@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 452,
- "updatedAt": "2026-08-08 10:30",
+ "version": 453,
+ "updatedAt": "2026-08-08 10:45",
  "days": 30,
  "items": [
   {
@@ -8865,46 +8865,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783565639372589"
-  },
-  {
-   "ts": "1783561202.975609",
-   "date": "2026-07-09",
-   "time": "10:40",
-   "store": "강창구찹쌀진순대 진접점",
-   "biz": "1698502508",
-   "pos": "",
-   "content": "메뉴등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783561207.097649",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783561202975609"
-  },
-  {
-   "ts": "1783560703.890239",
-   "date": "2026-07-09",
-   "time": "10:31",
-   "store": "양 꽂히다",
-   "biz": "3077600487",
-   "pos": "토스포스",
-   "content": "양갈비 25000 -> 27000\n통갈매기살 중 25000 -> 27000\n통갈매기살 대 37000 -> 39000",
-   "special": "메뉴 반영 완료 시 문자 발송 부탁드립니다.",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1783561783.457419",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783560703890239"
   }
  ]
 };
