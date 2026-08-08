@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 456,
- "updatedAt": "2026-08-08 13:15",
+ "version": 457,
+ "updatedAt": "2026-08-08 13:30",
  "days": 30,
  "items": [
   {
@@ -23,8 +23,8 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1786162160.242309",
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김현기",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786162155773839"
   },
   {
@@ -8780,26 +8780,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783571794841719"
-  },
-  {
-   "ts": "1783570885.121319",
-   "date": "2026-07-09",
-   "time": "13:21",
-   "store": "궁동포차",
-   "biz": "6241302653",
-   "pos": "",
-   "content": "van 변경 이후 메뉴 없어짐 / 메뉴 이관",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783570890.893349",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783570885121319"
   }
  ]
 };
