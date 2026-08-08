@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2928,
+  "version": 2929,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -95219,27 +95219,28 @@ window.SLACK_DATA = {
         "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "15:10",
+      "updatedAt": "15:30",
       "voc": {
-        "responses": 6,
+        "responses": 9,
         "install": {
           "count": 4,
           "low": 1
         },
         "nps": {
-          "count": 6,
-          "low": 3
+          "count": 9,
+          "low": 4
         },
         "high": {
           "install": 2,
-          "nps": 2
+          "nps": 3
         },
         "npsDist": {
           "0": 1,
-          "2": 1,
+          "2": 2,
           "5": 1,
+          "8": 1,
           "9": 1,
-          "10": 2
+          "10": 3
         },
         "installDist": {
           "1": 1,
@@ -95252,46 +95253,72 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 2,
+            "low": 0
+          },
+          "3개월": {
+            "total": 2,
+            "low": 2
+          },
+          "12개월": {
+            "total": 1,
+            "low": 0
+          },
           "구매설치": {
             "total": 4,
             "low": 2
-          },
-          "3개월": {
-            "total": 1,
-            "low": 1
-          },
-          "1개월": {
-            "total": 1,
-            "low": 0
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 2,
+            "low": 0
+          },
+          "SMARTRO": {
+            "total": 2,
+            "low": 2
+          },
+          "KPN": {
+            "total": 2,
+            "low": 0
+          },
           "KOCES": {
             "total": 2,
             "low": 1
           },
-          "SMARTRO": {
-            "total": 1,
-            "low": 1
-          },
-          "KIS": {
-            "total": 1,
-            "low": 0
-          },
           "SECTA9": {
             "total": 1,
             "low": 1
-          },
-          "KPN": {
-            "total": 1,
-            "low": 0
           }
         },
         "reasonCounts": {
-          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
-          "사용중 오류가 자주 발생함": 2
+          "사용중 오류가 자주 발생함": 3,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2
         },
         "alerts": [
+          {
+            "time": "15:27",
+            "store": "이신유통(채소선생)",
+            "storeId": "459925",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 2,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 2,
+                "text": "포스오류가 자주나고, 오류나서 연락하면 항상 통화가안됩니다. 몇일전에도 저녁6시쯤 오류났는데, 통화도안되고해서 저녁에 오시는고객님들 다놓쳤습니다",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:10",
             "store": "포도관리형학습센터",
@@ -95458,7 +95485,11 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786170145.994
+        "lastSeen": 1786170626.137
+      },
+      "1786170614.126829": {
+        "post": "1786170614.126829",
+        "lastSeen": 1786170626.137
       }
     },
     "days": {
@@ -114362,7 +114393,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-08 15:22",
+    "at": "2026-08-08 15:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
