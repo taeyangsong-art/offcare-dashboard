@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2942,
+  "version": 2943,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94750,15 +94750,15 @@ window.SLACK_DATA = {
     },
     "2026-08-08": {
       "counts": {
+        "onboarding": {
+          "서상원": 2,
+          "미지정": 2,
+          "김현기": 2
+        },
         "as": {
           "김현기": 30,
           "미지정": 11,
           "서상원": 5
-        },
-        "onboarding": {
-          "미지정": 2,
-          "서상원": 1,
-          "김현기": 2
         },
         "transfer": {
           "김현기": 1
@@ -94773,6 +94773,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "18:04",
+          "store": "온앤온코인+노래연습장",
+          "biz": "7130503618",
+          "cat": "onboarding",
+          "emp": "서상원",
+          "req": "포프(노트북) 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "금액입력결제모드 활성"
+        },
         {
           "time": "17:52",
           "store": "처갓집양념치킨 에코델타시티점",
@@ -95382,11 +95393,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 48,
+        "online": 49,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "17:52",
+      "updatedAt": "18:04",
       "voc": {
         "responses": 16,
         "install": {
@@ -95698,10 +95709,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1786006837.907319": {
-        "post": "1786006837.907319",
-        "lastSeen": 1786066968.447
-      },
       "1786015585.308869": {
         "post": "1786015585.308869",
         "lastSeen": 1786016726.83
@@ -95744,15 +95751,15 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786179630.187
+        "lastSeen": 1786180520.113
       },
       "1786173452.415139": {
         "post": "1786173452.415139",
-        "lastSeen": 1786179630.187
+        "lastSeen": 1786180520.113
       },
       "1786177360.051569": {
         "post": "1786177360.051569",
-        "lastSeen": 1786179630.187
+        "lastSeen": 1786180520.113
       }
     },
     "days": {
@@ -114720,7 +114727,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-08 18:00",
+    "at": "2026-08-08 18:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
