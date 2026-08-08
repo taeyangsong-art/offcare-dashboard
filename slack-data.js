@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2927,
+  "version": 2928,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94752,8 +94752,8 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "서상원": 4,
-          "김현기": 23,
-          "미지정": 6
+          "미지정": 7,
+          "김현기": 23
         },
         "onboarding": {
           "미지정": 1,
@@ -94780,7 +94780,7 @@ window.SLACK_DATA = {
           "req": "프린터기 출력이 갑자기 되지 않는다고 하여 점검 요청드립니다. (가상포트 설정 중)",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "추후 재연락"
         },
         {
           "time": "15:02",
@@ -94814,6 +94814,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "방문받기로하셨다고함"
+        },
+        {
+          "time": "14:58",
+          "store": "왕산식당 수완점",
+          "biz": "8058503224",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "주방프린터에서 용지나오면 이상한 문구로 나온다고 해서 설정확인 부탁드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "주방 프린터 속도 변경후 정상출력"
         },
         {
           "time": "14:50",
@@ -95204,7 +95215,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 36,
+        "online": 37,
         "offline": 3,
         "unknown": 0
       },
@@ -95447,11 +95458,7 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786169720.04
-      },
-      "1786168724.971299": {
-        "post": "1786168724.971299",
-        "lastSeen": 1786169720.04
+        "lastSeen": 1786170145.994
       }
     },
     "days": {
@@ -114154,8 +114161,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-08": {
-        "cnt": 23,
-        "sumMin": 474.60047321716934,
+        "cnt": 24,
+        "sumMin": 494.7345682342846,
         "over": 6,
         "items": [
           {
@@ -114341,13 +114348,21 @@ window.SLACK_DATA = {
             "biz": "3714100069",
             "who": "서상원",
             "cat": "as"
+          },
+          {
+            "hm": "14:58",
+            "min": 20.1,
+            "store": "왕산식당 수완점",
+            "biz": "8058503224",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-08 15:15",
+    "at": "2026-08-08 15:22",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
