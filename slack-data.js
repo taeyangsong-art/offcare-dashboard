@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2932,
+  "version": 2933,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94751,7 +94751,7 @@ window.SLACK_DATA = {
     "2026-08-08": {
       "counts": {
         "as": {
-          "서상원": 5,
+          "서상원": 6,
           "김현기": 25,
           "미지정": 8
         },
@@ -94772,6 +94772,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:20",
+          "store": "바버박스",
+          "biz": "8341802712",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "포프(휴대폰) 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "16:11",
           "store": "텍사스파파 크레페 면목점",
@@ -95271,11 +95282,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 40,
+        "online": 41,
         "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "16:11",
+      "updatedAt": "16:20",
       "voc": {
         "responses": 14,
         "install": {
@@ -95600,7 +95611,15 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786173322.094
+        "lastSeen": 1786173995.86
+      },
+      "1786173452.415139": {
+        "post": "1786173452.415139",
+        "lastSeen": 1786173995.86
+      },
+      "1786173332.040089": {
+        "post": "1786173332.040089",
+        "lastSeen": 1786173995.86
       }
     },
     "days": {
@@ -114520,7 +114539,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-08 16:15",
+    "at": "2026-08-08 16:26",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
