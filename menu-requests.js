@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 455,
- "updatedAt": "2026-08-08 12:30",
+ "version": 456,
+ "updatedAt": "2026-08-08 13:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1786162155.773839",
+   "date": "2026-08-08",
+   "time": "13:09",
+   "store": "바이트 앤 레스트 더블유 피에스 스타벅스 킨텍스점",
+   "biz": "5438503030",
+   "pos": "퍼스트포스",
+   "content": "레몬,자몽,청포도,망고에이드 5,300 가격수정\n얼그레이, 히비스커스,캐모마일,페퍼민트 5,100원으로 가격수정 해주세요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786162160.242309",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786162155773839"
+  },
   {
    "ts": "1786102266.867209",
    "date": "2026-08-07",
@@ -8780,26 +8800,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783570885121319"
-  },
-  {
-   "ts": "1783569992.258359",
-   "date": "2026-07-09",
-   "time": "13:06",
-   "store": "피자스쿨가양점",
-   "biz": "2741100081",
-   "pos": "",
-   "content": "메뉴등록 부탁 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 6,
-   "lr": "1783586754.676939",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783569992258359"
   }
  ]
 };
