@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2920,
+  "version": 2921,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94750,13 +94750,13 @@ window.SLACK_DATA = {
     },
     "2026-08-08": {
       "counts": {
+        "as": {
+          "김현기": 17,
+          "미지정": 3
+        },
         "onboarding": {
           "미지정": 1,
           "김현기": 2
-        },
-        "as": {
-          "김현기": 16,
-          "미지정": 3
         },
         "transfer": {
           "김현기": 1
@@ -94770,6 +94770,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "13:42",
+          "store": "토종삼계탕",
+          "biz": "24627000374",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "터프 / 프론트 전원 불량 사류 대체품 수령했습니다. 재온보딩 부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "여기 우리 가맹점 맞아요?? 토플파에 안나오는디... 여기 우리 가맹점 맞아요?? 토플파에 안나오는디... / 2462700374 / 갑자기 나옴;; / 프론트 문제가 아님, 터미널에서 전원을 못 쏴주는거 같아서 프론트 어댑터 따로 보내서 분리하기로 함"
+        },
         {
           "time": "13:16",
           "store": "상종푸드",
@@ -95050,7 +95061,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 25,
-        "offline": 0,
+        "offline": 1,
         "unknown": 0
       },
       "updatedAt": "13:47",
@@ -95184,11 +95195,11 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786164814.112
+        "lastSeen": 1786165230.989
       },
       "1786164428.277889": {
         "post": "1786164428.277889",
-        "lastSeen": 1786164814.112
+        "lastSeen": 1786165230.989
       }
     },
     "days": {
@@ -114028,7 +114039,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-08 13:53",
+    "at": "2026-08-08 14:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
