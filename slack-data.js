@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2919,
+  "version": 2920,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94750,12 +94750,13 @@ window.SLACK_DATA = {
     },
     "2026-08-08": {
       "counts": {
+        "onboarding": {
+          "미지정": 1,
+          "김현기": 2
+        },
         "as": {
           "김현기": 16,
           "미지정": 3
-        },
-        "onboarding": {
-          "김현기": 2
         },
         "transfer": {
           "김현기": 1
@@ -94769,6 +94770,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "13:16",
+          "store": "상종푸드",
+          "biz": "2317300345",
+          "cat": "onboarding",
+          "emp": "미지정",
+          "req": "포프(휴대폰) / 키교환필요 문구가 나와서 키다운로드 경로 안내했으나, 결제정보에 해당 버튼이 없다고 하셔서 확인 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "재온보딩 및 프린터설정, 토스포스 사용법안내"
+        },
         {
           "time": "13:15",
           "store": "도호커피 본점",
@@ -95037,11 +95049,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 24,
+        "online": 25,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "13:42",
+      "updatedAt": "13:47",
       "voc": {
         "responses": 2,
         "install": {
@@ -95172,11 +95184,11 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786164320.606
+        "lastSeen": 1786164814.112
       },
-      "1786162572.408129": {
-        "post": "1786162572.408129",
-        "lastSeen": 1786164320.606
+      "1786164428.277889": {
+        "post": "1786164428.277889",
+        "lastSeen": 1786164814.112
       }
     },
     "days": {
@@ -113879,9 +113891,9 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-08": {
-        "cnt": 15,
-        "sumMin": 355.98327608505883,
-        "over": 5,
+        "cnt": 16,
+        "sumMin": 389.232457268238,
+        "over": 6,
         "items": [
           {
             "hm": "10:11",
@@ -114002,13 +114014,21 @@ window.SLACK_DATA = {
             "biz": "3088603884",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "13:16",
+            "min": 33.2,
+            "store": "상종푸드",
+            "biz": "2317300345",
+            "who": "",
+            "cat": "onboarding"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-08 13:45",
+    "at": "2026-08-08 13:53",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
