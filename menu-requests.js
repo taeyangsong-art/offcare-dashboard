@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 459,
- "updatedAt": "2026-08-08 14:34",
+ "version": 460,
+ "updatedAt": "2026-08-08 15:15",
  "days": 30,
  "items": [
   {
@@ -8694,50 +8694,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783584121724989"
-  },
-  {
-   "ts": "1783577573.224749",
-   "date": "2026-07-09",
-   "time": "15:12",
-   "store": "토이즈나",
-   "biz": "2641902297",
-   "pos": "기타",
-   "content": "메뉴반영이 안되었습니다\n주류및음료에 켈리 5000원 넣어주세요",
-   "special": "메뉴 반영이 안되었어요",
-   "drive": [
-    "https://drive.google.com/open?id=1LAJ_qFWFcFejM1c8SZuH9A3HSp97whgQ"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783577577.905069",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783577573224749"
-  },
-  {
-   "ts": "1783577162.638059",
-   "date": "2026-07-09",
-   "time": "15:06",
-   "store": "토이즈나",
-   "biz": "2641902297",
-   "pos": "기타",
-   "content": "주류 및 음료 카테고리에 클라우드 넣어주시고 가격은 5000원입니다",
-   "special": "빨리 해주세요 급해요",
-   "drive": [
-    "https://drive.google.com/open?id=1ILfkxfplSQ70Kw28SVx-ExyV5mDjElfQ"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783577171.639169",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783577162638059"
   }
  ]
 };
