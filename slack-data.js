@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2959,
+  "version": 2960,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -95464,20 +95464,20 @@ window.SLACK_DATA = {
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "19:59",
+      "updatedAt": "21:11",
       "voc": {
-        "responses": 19,
+        "responses": 20,
         "install": {
-          "count": 6,
+          "count": 7,
           "low": 2
         },
         "nps": {
-          "count": 19,
+          "count": 20,
           "low": 8
         },
         "high": {
-          "install": 2,
-          "nps": 4
+          "install": 3,
+          "nps": 5
         },
         "npsDist": {
           "0": 2,
@@ -95485,21 +95485,25 @@ window.SLACK_DATA = {
           "5": 3,
           "8": 6,
           "9": 1,
-          "10": 4
+          "10": 5
         },
         "installDist": {
           "1": 1,
           "2": 1,
           "3": 2,
-          "5": 2
+          "5": 3
         },
         "byIndustry": {
+          "도소매": 2,
           "요식업": 1,
           "서비스[뷰티,헤어]": 2,
-          "서비스[학원]": 2,
-          "도소매": 1
+          "서비스[학원]": 2
         },
         "byTenure": {
+          "구매설치": {
+            "total": 7,
+            "low": 3
+          },
           "1개월": {
             "total": 5,
             "low": 2
@@ -95512,10 +95516,6 @@ window.SLACK_DATA = {
             "total": 4,
             "low": 2
           },
-          "구매설치": {
-            "total": 6,
-            "low": 3
-          },
           "12개월": {
             "total": 1,
             "low": 0
@@ -95523,7 +95523,7 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KSNET": {
-            "total": 1,
+            "total": 2,
             "low": 1
           },
           "KOCES": {
@@ -95761,6 +95761,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "21:11",
+            "store": "리비스타#2",
+            "storeId": "566971",
+            "indBucket": "도소매",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "빠른응답 친절한 상담 설치가 쉽고 시인성도 좋고",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "15:37",
             "store": "더블랙커피",
             "storeId": "352321",
@@ -95840,15 +95852,15 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786190437.732
+        "lastSeen": 1786191321.642
       },
       "1786173452.415139": {
         "post": "1786173452.415139",
-        "lastSeen": 1786190437.732
+        "lastSeen": 1786191321.642
       },
       "1786177360.051569": {
         "post": "1786177360.051569",
-        "lastSeen": 1786190437.732
+        "lastSeen": 1786191321.642
       }
     },
     "days": {
@@ -114824,7 +114836,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-08 21:00",
+    "at": "2026-08-08 21:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
