@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2966,
+  "version": 2967,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94761,6 +94761,7 @@ window.SLACK_DATA = {
           "김현기": 2
         },
         "transfer": {
+          "서상원": 1,
           "김현기": 1
         },
         "menu": {
@@ -94772,17 +94773,6 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
-        {
-          "time": "21:30",
-          "store": "그레인마켓 스테이",
-          "biz": "3142904468",
-          "handler": "서상원",
-          "cat": "transfer",
-          "intake": "online",
-          "reasons": [
-            "1차 부재"
-          ]
-        },
         {
           "time": "17:22",
           "store": "카페아이니",
@@ -94806,6 +94796,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "월요일 재연락예정 / 예약진행"
+        },
+        {
+          "time": "21:30",
+          "store": "그레인마켓 스테이",
+          "biz": "3142904468",
+          "cat": "transfer",
+          "emp": "서상원",
+          "req": "8월 7일 오후 9시 / 메뉴복사X / 터프    <@U07N21TM0QJ>",
+          "hw": "",
+          "intake": "online",
+          "note": "명변완료 포터프로 전환"
         },
         {
           "time": "21:24",
@@ -95885,19 +95886,19 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786195825.485
+        "lastSeen": 1786196031.46
       },
       "1786173452.415139": {
         "post": "1786173452.415139",
-        "lastSeen": 1786195825.485
+        "lastSeen": 1786196031.46
       },
       "1786177360.051569": {
         "post": "1786177360.051569",
-        "lastSeen": 1786195825.485
+        "lastSeen": 1786196031.46
       },
       "1786192608.447149": {
         "post": "1786192608.447149",
-        "lastSeen": 1786195825.485
+        "lastSeen": 1786196031.46
       }
     },
     "days": {
@@ -114873,7 +114874,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-08 22:30",
+    "at": "2026-08-08 22:33",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
