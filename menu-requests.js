@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 453,
- "updatedAt": "2026-08-08 10:45",
+ "version": 454,
+ "updatedAt": "2026-08-08 12:00",
  "days": 30,
  "items": [
   {
@@ -1644,12 +1644,7 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 1,
-   "att": [
-    {
-     "name": "f_d7134b6359fe.pdf",
-     "path": "menu-files/1785552823_909339-0.pdf"
-    }
-   ],
+   "att": [],
    "datt": [],
    "replies": [
     "오늘 이내 테이블 등록 안내 / 제가 하려고 했는데 어려워 전달드립니다. 부탁드립니다 ㅠㅠ !",
@@ -8825,46 +8820,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783567407695369"
-  },
-  {
-   "ts": "1783565978.476099",
-   "date": "2026-07-09",
-   "time": "11:59",
-   "store": "만통치킨 인천논현점",
-   "biz": "4550104130",
-   "pos": "",
-   "content": "하이오더 테이블 4,5번이 없다 하셔서 생성 부탁드립니다. 그리고 7,8번은 삭제 부탁하셨습니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 5,
-   "lr": "1783568162.460719",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783565978476099"
-  },
-  {
-   "ts": "1783565639.372589",
-   "date": "2026-07-09",
-   "time": "11:53",
-   "store": "카페 달콩설화",
-   "biz": "2132372171",
-   "pos": "",
-   "content": "키오스크 메뉴 등록위해 메일 보내셨는데 반영이 안되어있다 하시는데 등록 완료 되었을까요? 김영미(<mailto:···|···>)로 보내셨다 하십니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1783566328.381129",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783565639372589"
   }
  ]
 };
