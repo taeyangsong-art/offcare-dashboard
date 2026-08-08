@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2960,
+  "version": 2961,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94751,7 +94751,7 @@ window.SLACK_DATA = {
     "2026-08-08": {
       "counts": {
         "as": {
-          "서상원": 8,
+          "서상원": 9,
           "김현기": 30,
           "미지정": 11
         },
@@ -94785,6 +94785,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "21:24",
+          "store": "얌얌스킨앤슈가링(YAM YAM)",
+          "biz": "7680403533",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "현금결제 및 현금영수증 사용 방법에 대해 영상통화 등 지원을 요청하시어 전달드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "19:47",
           "store": "당나귀과일",
@@ -95460,11 +95471,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 55,
+        "online": 56,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "21:11",
+      "updatedAt": "21:30",
       "voc": {
         "responses": 20,
         "install": {
@@ -95852,15 +95863,19 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786191321.642
+        "lastSeen": 1786192226.331
       },
       "1786173452.415139": {
         "post": "1786173452.415139",
-        "lastSeen": 1786191321.642
+        "lastSeen": 1786192226.331
       },
       "1786177360.051569": {
         "post": "1786177360.051569",
-        "lastSeen": 1786191321.642
+        "lastSeen": 1786192226.331
+      },
+      "1786192201.062019": {
+        "post": "1786192201.062019",
+        "lastSeen": 1786192226.331
       }
     },
     "days": {
@@ -114836,7 +114851,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-08 21:15",
+    "at": "2026-08-08 21:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
