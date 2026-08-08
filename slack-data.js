@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2931,
+  "version": 2932,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94751,9 +94751,9 @@ window.SLACK_DATA = {
     "2026-08-08": {
       "counts": {
         "as": {
-          "미지정": 8,
-          "김현기": 24,
-          "서상원": 4
+          "서상원": 5,
+          "김현기": 25,
+          "미지정": 8
         },
         "onboarding": {
           "미지정": 1,
@@ -94772,6 +94772,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:11",
+          "store": "텍사스파파 크레페 면목점",
+          "biz": "4037002326",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "프론트 2대 사용 매장, 1대 키오스크 모드 해제되어 재온보딩 시도했으나 해결되지 않아 재온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "재온보딩"
+        },
+        {
+          "time": "16:10",
+          "store": "디어네일",
+          "biz": "8807900606",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "유프 테스트출력  잘려나옴 으로 점검 요청  // 영수증 뽑아보셨을 때도 동일한지 확인 요청드렸으나 확인 어렵다고하셔서   도움 부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "POS8385는 저렇게 나옵니다 실제 출력은 잘 나와요 POS8385는 저렇게 나옵니다 실제 출력은 잘 나와요 / 확인받고 싶으신데 영수증주문서 들어가서 테스트 출력해보시라고했더니 못하시겠데요.... / 전달완료!"
+        },
         {
           "time": "15:41",
           "store": "웨이브디아나",
@@ -95249,19 +95271,19 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 38,
+        "online": 40,
         "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "15:41",
+      "updatedAt": "16:11",
       "voc": {
-        "responses": 13,
+        "responses": 14,
         "install": {
           "count": 6,
           "low": 2
         },
         "nps": {
-          "count": 13,
+          "count": 14,
           "low": 5
         },
         "high": {
@@ -95272,7 +95294,7 @@ window.SLACK_DATA = {
           "0": 1,
           "2": 2,
           "5": 2,
-          "8": 4,
+          "8": 5,
           "9": 1,
           "10": 3
         },
@@ -95289,13 +95311,13 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 3,
+            "low": 1
+          },
           "구매설치": {
             "total": 6,
             "low": 3
-          },
-          "6개월": {
-            "total": 2,
-            "low": 1
           },
           "1개월": {
             "total": 2,
@@ -95311,6 +95333,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 3,
+            "low": 0
+          },
           "KOCES": {
             "total": 4,
             "low": 2
@@ -95318,10 +95344,6 @@ window.SLACK_DATA = {
           "SECTA9": {
             "total": 3,
             "low": 2
-          },
-          "KIS": {
-            "total": 2,
-            "low": 0
           },
           "SMARTRO": {
             "total": 2,
@@ -95578,7 +95600,7 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786172431.097
+        "lastSeen": 1786173322.094
       }
     },
     "days": {
@@ -114498,7 +114520,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-08 16:00",
+    "at": "2026-08-08 16:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
