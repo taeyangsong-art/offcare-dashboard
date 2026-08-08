@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2933,
+  "version": 2934,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -95286,16 +95286,16 @@ window.SLACK_DATA = {
         "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "16:20",
+      "updatedAt": "16:28",
       "voc": {
-        "responses": 14,
+        "responses": 15,
         "install": {
           "count": 6,
           "low": 2
         },
         "nps": {
-          "count": 14,
-          "low": 5
+          "count": 15,
+          "low": 6
         },
         "high": {
           "install": 2,
@@ -95304,7 +95304,7 @@ window.SLACK_DATA = {
         "npsDist": {
           "0": 1,
           "2": 2,
-          "5": 2,
+          "5": 3,
           "8": 5,
           "9": 1,
           "10": 3
@@ -95322,6 +95322,10 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 3,
+            "low": 1
+          },
           "6개월": {
             "total": 3,
             "low": 1
@@ -95329,10 +95333,6 @@ window.SLACK_DATA = {
           "구매설치": {
             "total": 6,
             "low": 3
-          },
-          "1개월": {
-            "total": 2,
-            "low": 0
           },
           "3개월": {
             "total": 2,
@@ -95344,6 +95344,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 3,
+            "low": 1
+          },
           "KIS": {
             "total": 3,
             "low": 0
@@ -95359,18 +95363,37 @@ window.SLACK_DATA = {
           "SMARTRO": {
             "total": 2,
             "low": 2
-          },
-          "KPN": {
-            "total": 2,
-            "low": 0
           }
         },
         "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 1,
           "필요한 기능이 없거나 몰라서 불편": 2,
           "사용중 오류가 자주 발생함": 3,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2
         },
         "alerts": [
+          {
+            "time": "16:28",
+            "store": "피부숲 에스테틱",
+            "storeId": "499298",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "생각보다 셋팅이 복잡하고   어려웠습니다.영수증이 나오는 프론트도 별도 구매하여야 하고 구매해놓고 설치도 아직 못하고 있습니다.어렵네요,,,",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:40",
             "store": "목포낙지아구찜탕",
@@ -95611,15 +95634,15 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786173995.86
+        "lastSeen": 1786174226.493
       },
       "1786173452.415139": {
         "post": "1786173452.415139",
-        "lastSeen": 1786173995.86
+        "lastSeen": 1786174226.493
       },
       "1786173332.040089": {
         "post": "1786173332.040089",
-        "lastSeen": 1786173995.86
+        "lastSeen": 1786174226.493
       }
     },
     "days": {
@@ -114539,7 +114562,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-08 16:26",
+    "at": "2026-08-08 16:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
