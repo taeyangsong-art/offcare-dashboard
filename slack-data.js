@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2900,
+  "version": 2901,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94754,7 +94754,7 @@ window.SLACK_DATA = {
           "김현기": 1
         },
         "onboarding": {
-          "김현기": 1
+          "김현기": 2
         }
       },
       "pending": [],
@@ -94780,10 +94780,21 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "개인폰 유프 온보딩 완료"
+        },
+        {
+          "time": "09:00",
+          "store": "울산숲심리상담코칭센터",
+          "biz": "6209117448",
+          "cat": "onboarding",
+          "emp": "김현기",
+          "req": "컴퓨터 + 프론트 온보딩 .",
+          "hw": "",
+          "intake": "online",
+          "note": "1차부 전화안받음 / 온보딩 완료 / 반품 가능성 있음 / 토스포스 사용 필요 몰랐음"
         }
       ],
       "intake": {
-        "online": 2,
+        "online": 3,
         "offline": 0,
         "unknown": 0
       },
@@ -94922,7 +94933,7 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786149025.651
+        "lastSeen": 1786149928.119
       }
     },
     "days": {
@@ -113627,7 +113638,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-08 09:30",
+    "at": "2026-08-08 09:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
