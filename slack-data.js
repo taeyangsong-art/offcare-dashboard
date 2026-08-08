@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2946,
+  "version": 2947,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94750,15 +94750,15 @@ window.SLACK_DATA = {
     },
     "2026-08-08": {
       "counts": {
+        "onboarding": {
+          "서상원": 3,
+          "미지정": 2,
+          "김현기": 2
+        },
         "as": {
           "서상원": 6,
           "김현기": 30,
           "미지정": 11
-        },
-        "onboarding": {
-          "서상원": 2,
-          "미지정": 2,
-          "김현기": 2
         },
         "transfer": {
           "김현기": 1
@@ -94785,6 +94785,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "18:51",
+          "store": "여수힐링요트(Healing Yacht)",
+          "biz": "2450102888",
+          "cat": "onboarding",
+          "emp": "서상원",
+          "req": "포프(휴대폰) 온보딩 및 결제 방식에 대한 안내까지 지원 요청드립니다. (고령)",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "18:31",
           "store": "떡배네나주곰탕(본점)",
@@ -95416,11 +95427,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 51,
+        "online": 52,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "18:31",
+      "updatedAt": "19:00",
       "voc": {
         "responses": 16,
         "install": {
@@ -95774,15 +95785,19 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786182322.174
+        "lastSeen": 1786183235.241
       },
       "1786173452.415139": {
         "post": "1786173452.415139",
-        "lastSeen": 1786182322.174
+        "lastSeen": 1786183235.241
       },
       "1786177360.051569": {
         "post": "1786177360.051569",
-        "lastSeen": 1786182322.174
+        "lastSeen": 1786183235.241
+      },
+      "1786183201.036699": {
+        "post": "1786183201.036699",
+        "lastSeen": 1786183235.241
       }
     },
     "days": {
@@ -114750,7 +114765,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-08 18:45",
+    "at": "2026-08-08 19:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
