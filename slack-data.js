@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2938,
+  "version": 2939,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94751,8 +94751,8 @@ window.SLACK_DATA = {
     "2026-08-08": {
       "counts": {
         "onboarding": {
+          "미지정": 2,
           "서상원": 1,
-          "미지정": 1,
           "김현기": 2
         },
         "as": {
@@ -94773,6 +94773,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "17:03",
+          "store": "제이스파 (J SPA)",
+          "biz": "1101869897",
+          "cat": "onboarding",
+          "emp": "미지정",
+          "req": "포프(PC) 온보딩 부탁드립니다. 프론트 설정은 마무리했으나, 다운로드과정에서 파일열기에 실패한다고 하셔서 확인 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 및 사용법설명"
+        },
         {
           "time": "16:20",
           "store": "바버박스",
@@ -95305,11 +95316,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 41,
+        "online": 42,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "17:03",
+      "updatedAt": "17:23",
       "voc": {
         "responses": 16,
         "install": {
@@ -95621,10 +95632,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1786005002.028519": {
-        "post": "1786005002.028519",
-        "lastSeen": 1786066968.447
-      },
       "1786006788.994159": {
         "post": "1786006788.994159",
         "lastSeen": 1786066968.447
@@ -95679,15 +95686,19 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786176928.585
+        "lastSeen": 1786177826.004
       },
       "1786173452.415139": {
         "post": "1786173452.415139",
-        "lastSeen": 1786176928.585
+        "lastSeen": 1786177826.004
       },
-      "1786176234.002749": {
-        "post": "1786176234.002749",
-        "lastSeen": 1786176928.585
+      "1786177384.375669": {
+        "post": "1786177384.375669",
+        "lastSeen": 1786177826.004
+      },
+      "1786177360.051569": {
+        "post": "1786177360.051569",
+        "lastSeen": 1786177826.004
       }
     },
     "days": {
@@ -114390,8 +114401,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-08": {
-        "cnt": 27,
-        "sumMin": 536.5513729572294,
+        "cnt": 28,
+        "sumMin": 555.606235472361,
         "over": 6,
         "items": [
           {
@@ -114609,13 +114620,21 @@ window.SLACK_DATA = {
             "biz": "4400303278",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "17:03",
+            "min": 19.1,
+            "store": "제이스파 (J SPA)",
+            "biz": "1101869897",
+            "who": "",
+            "cat": "onboarding"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-08 17:15",
+    "at": "2026-08-08 17:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
