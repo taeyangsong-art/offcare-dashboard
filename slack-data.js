@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2948,
+  "version": 2949,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94794,7 +94794,7 @@ window.SLACK_DATA = {
           "req": "포프(노트북) / <https://w1659946222-hxm266180.slack.com/archives/C07CL4BV9QT/p1785916807991129|해당 사유>로 기기를 교체했고, 금일 수령하셨습니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "daou tid 새로 생성 초기화 후 온보딩"
         },
         {
           "time": "18:51",
@@ -95796,15 +95796,15 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786183325.147
+        "lastSeen": 1786184125.555
       },
       "1786173452.415139": {
         "post": "1786173452.415139",
-        "lastSeen": 1786183325.147
+        "lastSeen": 1786184125.555
       },
       "1786177360.051569": {
         "post": "1786177360.051569",
-        "lastSeen": 1786183325.147
+        "lastSeen": 1786184125.555
       }
     },
     "days": {
@@ -114780,7 +114780,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-08 19:02",
+    "at": "2026-08-08 19:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
