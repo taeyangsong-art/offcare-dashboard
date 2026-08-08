@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2899,
+  "version": 2900,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94749,15 +94749,45 @@ window.SLACK_DATA = {
       }
     },
     "2026-08-08": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "김현기": 1
+        },
+        "onboarding": {
+          "김현기": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:23",
+          "store": "굿델리",
+          "biz": "4730103726",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "포프(노트북) / 다른기기 사용하지 않는데 재온보딩 진행시 다른기기 연결 팝업이 지속 노출 되고 있어서 확인 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "셀프로 해결함 / 기기는 1:1 연결만 가능함 문의 안내 완료"
+        },
+        {
+          "time": "09:07",
+          "store": "사랑헤어",
+          "biz": "2131824767",
+          "cat": "onboarding",
+          "emp": "김현기",
+          "req": "포프+유프(휴대폰) 온보딩 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "개인폰 유프 온보딩 완료"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 2,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:07",
+      "updatedAt": "09:23",
       "voc": {
         "responses": 1,
         "install": {
@@ -94889,6 +94919,10 @@ window.SLACK_DATA = {
       "1786099500.498159": {
         "post": "1786099500.498159",
         "lastSeen": 1786119202.954
+      },
+      "1786148508.544859": {
+        "post": "1786148508.544859",
+        "lastSeen": 1786149025.651
       }
     },
     "days": {
@@ -113593,7 +113627,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-08 09:15",
+    "at": "2026-08-08 09:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
