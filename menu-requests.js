@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 464,
- "updatedAt": "2026-08-08 18:27",
+ "version": 465,
+ "updatedAt": "2026-08-08 19:30",
  "days": 30,
  "items": [
   {
@@ -8657,26 +8657,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783605916879709"
-  },
-  {
-   "ts": "1783592949.499809",
-   "date": "2026-07-09",
-   "time": "19:29",
-   "store": "피자스쿨가양점",
-   "biz": "2741100081",
-   "pos": "",
-   "content": "메뉴 추가 요청드립니다 >>",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 20,
-   "lr": "1783606891.853529",
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783592949499809"
   }
  ]
 };
