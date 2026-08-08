@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2945,
+  "version": 2946,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94750,15 +94750,15 @@ window.SLACK_DATA = {
     },
     "2026-08-08": {
       "counts": {
+        "as": {
+          "서상원": 6,
+          "김현기": 30,
+          "미지정": 11
+        },
         "onboarding": {
           "서상원": 2,
           "미지정": 2,
           "김현기": 2
-        },
-        "as": {
-          "김현기": 30,
-          "미지정": 11,
-          "서상원": 5
         },
         "transfer": {
           "김현기": 1
@@ -94785,6 +94785,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "18:31",
+          "store": "떡배네나주곰탕(본점)",
+          "biz": "8422700702",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "매장 인터넷 정상이나 ,  카운터 주방 포스 둘다  인터넷 연결 끊겼어요 노출 되어 점검 요청 드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "가끔 멈춘다고함 리커버리권유 평일중 연락안내"
+        },
         {
           "time": "18:04",
           "store": "온앤온코인+노래연습장",
@@ -95405,11 +95416,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 50,
+        "online": 51,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "18:04",
+      "updatedAt": "18:31",
       "voc": {
         "responses": 16,
         "install": {
@@ -95763,15 +95774,15 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786181426.634
+        "lastSeen": 1786182322.174
       },
       "1786173452.415139": {
         "post": "1786173452.415139",
-        "lastSeen": 1786181426.634
+        "lastSeen": 1786182322.174
       },
       "1786177360.051569": {
         "post": "1786177360.051569",
-        "lastSeen": 1786181426.634
+        "lastSeen": 1786182322.174
       }
     },
     "days": {
@@ -114739,7 +114750,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-08 18:30",
+    "at": "2026-08-08 18:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
