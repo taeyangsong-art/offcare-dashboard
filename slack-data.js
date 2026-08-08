@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2951,
+  "version": 2952,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94756,7 +94756,7 @@ window.SLACK_DATA = {
           "미지정": 11
         },
         "onboarding": {
-          "서상원": 3,
+          "서상원": 4,
           "미지정": 2,
           "김현기": 2
         },
@@ -94786,10 +94786,21 @@ window.SLACK_DATA = {
       ],
       "done": [
         {
+          "time": "19:47",
+          "store": "당나귀과일",
+          "biz": "4389001826",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "포프(포스기) 사용 중, 연결끊김으로 연결이 되지 않아 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "와이파이 연결끊김 재연결"
+        },
+        {
           "time": "19:41",
           "store": "하단정",
           "biz": "2976700515",
-          "cat": "as",
+          "cat": "onboarding",
           "emp": "서상원",
           "req": "포프(포스기) 사용 중, 유프 온보딩 지원 요청드립니다.",
           "hw": "",
@@ -95449,20 +95460,20 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 54,
+        "online": 55,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "19:41",
+      "updatedAt": "19:59",
       "voc": {
-        "responses": 18,
+        "responses": 19,
         "install": {
           "count": 6,
           "low": 2
         },
         "nps": {
-          "count": 18,
-          "low": 7
+          "count": 19,
+          "low": 8
         },
         "high": {
           "install": 2,
@@ -95470,7 +95481,7 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "0": 2,
-          "2": 2,
+          "2": 3,
           "5": 3,
           "8": 6,
           "9": 1,
@@ -95490,8 +95501,8 @@ window.SLACK_DATA = {
         },
         "byTenure": {
           "1개월": {
-            "total": 4,
-            "low": 1
+            "total": 5,
+            "low": 2
           },
           "3개월": {
             "total": 3,
@@ -95511,6 +95522,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KSNET": {
+            "total": 1,
+            "low": 1
+          },
           "KOCES": {
             "total": 5,
             "low": 2
@@ -95533,12 +95548,34 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "필요한 기능이 없거나 몰라서 불편": 3,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 3,
           "단말기 설치나 초기 과정이 어려움": 1,
-          "필요한 기능이 없거나 몰라서 불편": 2,
           "사용중 오류가 자주 발생함": 3
         },
         "alerts": [
+          {
+            "time": "19:59",
+            "store": "동탄2 새싹바둑교습소",
+            "storeId": "538982",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 2,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 2,
+                "text": "한 아이가 여러건의 결제가 있을 경우 일일이 하나씩 카드를 넣었다 뺐다 하면서 결제를 해야하는 불편함이 있습니다. 클릭을 통해서 여러건을 한번에 묶여서 결제하는 방식이 어려운 코딩은 아닐텐데.. 매우 아쉽슺니다",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "16:37",
             "store": "베들레헴",
@@ -95807,15 +95844,15 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786185917.319
+        "lastSeen": 1786186828.48
       },
       "1786173452.415139": {
         "post": "1786173452.415139",
-        "lastSeen": 1786185917.319
+        "lastSeen": 1786186828.48
       },
       "1786177360.051569": {
         "post": "1786177360.051569",
-        "lastSeen": 1786185917.319
+        "lastSeen": 1786186828.48
       }
     },
     "days": {
@@ -114791,7 +114828,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-08 19:45",
+    "at": "2026-08-08 20:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
