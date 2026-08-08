@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2904,
+  "version": 2905,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94751,7 +94751,7 @@ window.SLACK_DATA = {
     "2026-08-08": {
       "counts": {
         "as": {
-          "김현기": 2
+          "김현기": 3
         },
         "onboarding": {
           "김현기": 2
@@ -94759,6 +94759,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:11",
+          "store": "광주본원C&amp;C(씨앤씨)미술학원",
+          "biz": "4079395054",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "포스(pc) 프로그램 실행 시 메모리 부족이라는 문구 확인되어 도움 요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "09:53",
           "store": "노른자 제과점",
@@ -94805,11 +94816,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 4,
+        "online": 5,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "10:11",
+      "updatedAt": "10:25",
       "voc": {
         "responses": 1,
         "install": {
@@ -94944,11 +94955,19 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786151721.513
+        "lastSeen": 1786152627.961
       },
-      "1786151491.031859": {
-        "post": "1786151491.031859",
-        "lastSeen": 1786151721.513
+      "1786152354.877649": {
+        "post": "1786152354.877649",
+        "lastSeen": 1786152627.961
+      },
+      "1786151957.300149": {
+        "post": "1786151957.300149",
+        "lastSeen": 1786152627.961
+      },
+      "1786151929.713829": {
+        "post": "1786151929.713829",
+        "lastSeen": 1786152627.961
       }
     },
     "days": {
@@ -113649,11 +113668,26 @@ window.SLACK_DATA = {
             "cat": "as"
           }
         ]
+      },
+      "2026-08-08": {
+        "cnt": 1,
+        "sumMin": 11.395085684458415,
+        "over": 0,
+        "items": [
+          {
+            "hm": "10:11",
+            "min": 11.4,
+            "store": "광주본원C&amp;C(씨앤씨)미술학원",
+            "biz": "4079395054",
+            "who": "김현기",
+            "cat": "as"
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-08 10:15",
+    "at": "2026-08-08 10:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
