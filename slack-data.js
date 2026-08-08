@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2914,
+  "version": 2915,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94757,7 +94757,19 @@ window.SLACK_DATA = {
           "김현기": 2
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "11:30",
+          "store": "시그마0.3 서면점(SIGMA0.3)",
+          "biz": "",
+          "handler": "김현기",
+          "cat": "transfer",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "done": [
         {
           "time": "11:47",
@@ -94939,7 +94951,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 16,
+        "online": 17,
         "offline": 0,
         "unknown": 0
       },
@@ -95074,23 +95086,19 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786160719.546
-      },
-      "1786156200.571399": {
-        "post": "1786156200.571399",
-        "lastSeen": 1786160719.546
+        "lastSeen": 1786161492.592
       },
       "1786158099.437499": {
         "post": "1786158099.437499",
-        "lastSeen": 1786160719.546
+        "lastSeen": 1786161492.592
       },
       "1786160700.975539": {
         "post": "1786160700.975539",
-        "lastSeen": 1786160719.546
+        "lastSeen": 1786161492.592
       },
       "1786160700.339689": {
         "post": "1786160700.339689",
-        "lastSeen": 1786160719.546
+        "lastSeen": 1786161492.592
       }
     },
     "days": {
@@ -113882,7 +113890,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-08 12:45",
+    "at": "2026-08-08 12:58",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
