@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2929,
+  "version": 2930,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94751,9 +94751,9 @@ window.SLACK_DATA = {
     "2026-08-08": {
       "counts": {
         "as": {
+          "김현기": 24,
           "서상원": 4,
-          "미지정": 7,
-          "김현기": 23
+          "미지정": 7
         },
         "onboarding": {
           "미지정": 1,
@@ -94763,6 +94763,7 @@ window.SLACK_DATA = {
           "김현기": 1
         },
         "menu": {
+          "서상원": 1,
           "김현기": 1
         },
         "delivery": {
@@ -94771,6 +94772,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:31",
+          "store": "다율김밥",
+          "biz": "4462302557",
+          "cat": "menu",
+          "emp": "서상원",
+          "req": "메뉴 추가 요청드립니다!",
+          "hw": "",
+          "intake": "offline",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 카테고리에 강정 추가 - 후라이드 빠삭 강정(400g) 12,900원 - 달콤 닭강정(400g) 13,900원 - 매콤 닭강정(400g) 13,900원 배달앱에는 1000원씩 올려서 메뉴추가 부탁드립니다! / 혹시! 배달앱은 대표님이 직접 하셔야하는걸까요!? / 네 배달앱은 사장님광장에서 직접!"
+        },
+        {
+          "time": "15:30",
+          "store": "주식회사 어노커 (ANOKER INC.)",
+          "biz": "4208602619",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "토스페이먼츠건 다중tid온보딩후 알리페이 위쳇페이가 안되서 확인부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "님 여기 그냥 알리위챗 가맹이 안되어있는거 같아요 님 여기 그냥 알리위챗 가맹이 안되어있는거 같아요 / 전화1차부재 / MPM방식은 프론트에서 결제 등 불가함 / 주영님 통화 완료"
+        },
         {
           "time": "15:07",
           "store": "오빠네 과일가게 성산점",
@@ -95215,20 +95238,20 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 37,
-        "offline": 3,
+        "online": 38,
+        "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "15:30",
+      "updatedAt": "15:41",
       "voc": {
-        "responses": 9,
+        "responses": 13,
         "install": {
-          "count": 4,
-          "low": 1
+          "count": 6,
+          "low": 2
         },
         "nps": {
-          "count": 9,
-          "low": 4
+          "count": 13,
+          "low": 5
         },
         "high": {
           "install": 2,
@@ -95237,22 +95260,32 @@ window.SLACK_DATA = {
         "npsDist": {
           "0": 1,
           "2": 2,
-          "5": 1,
-          "8": 1,
+          "5": 2,
+          "8": 4,
           "9": 1,
           "10": 3
         },
         "installDist": {
           "1": 1,
-          "3": 1,
+          "2": 1,
+          "3": 2,
           "5": 2
         },
         "byIndustry": {
+          "요식업": 1,
+          "서비스[뷰티,헤어]": 2,
           "서비스[학원]": 2,
-          "서비스[뷰티,헤어]": 1,
           "도소매": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 6,
+            "low": 3
+          },
+          "6개월": {
+            "total": 2,
+            "low": 1
+          },
           "1개월": {
             "total": 2,
             "low": 0
@@ -95264,13 +95297,17 @@ window.SLACK_DATA = {
           "12개월": {
             "total": 1,
             "low": 0
-          },
-          "구매설치": {
-            "total": 4,
-            "low": 2
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 4,
+            "low": 2
+          },
+          "SECTA9": {
+            "total": 3,
+            "low": 2
+          },
           "KIS": {
             "total": 2,
             "low": 0
@@ -95282,21 +95319,58 @@ window.SLACK_DATA = {
           "KPN": {
             "total": 2,
             "low": 0
-          },
-          "KOCES": {
-            "total": 2,
-            "low": 1
-          },
-          "SECTA9": {
-            "total": 1,
-            "low": 1
           }
         },
         "reasonCounts": {
+          "필요한 기능이 없거나 몰라서 불편": 2,
           "사용중 오류가 자주 발생함": 3,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2
         },
         "alerts": [
+          {
+            "time": "15:40",
+            "store": "목포낙지아구찜탕",
+            "storeId": "578977",
+            "industry": "음식점/주점",
+            "indBucket": "요식업",
+            "install": 2,
+            "nps": 8,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 2,
+                "text": "생각보다  어렵지  않아 요",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:37",
+            "store": "날으는점핑&체온다이어트클럽",
+            "storeId": "343456",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "사용하기 불편",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:27",
             "store": "이신유통(채소선생)",
@@ -95394,6 +95468,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "15:37",
+            "store": "더블랙커피",
+            "storeId": "352321",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 8,
+            "text": "1. 이쁜게 깡패입니다 2. 다양한 기능이 있습니다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "15:10",
             "store": "아다미 네일",
             "storeId": "578513",
@@ -95423,10 +95509,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1785998329.943989": {
-        "post": "1785998329.943989",
-        "lastSeen": 1786066968.447
-      },
       "1786005002.028519": {
         "post": "1786005002.028519",
         "lastSeen": 1786066968.447
@@ -95485,11 +95567,11 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786170626.137
+        "lastSeen": 1786171521.677
       },
-      "1786170614.126829": {
-        "post": "1786170614.126829",
-        "lastSeen": 1786170626.137
+      "1786171269.384299": {
+        "post": "1786171269.384299",
+        "lastSeen": 1786171521.677
       }
     },
     "days": {
@@ -114192,8 +114274,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-08": {
-        "cnt": 24,
-        "sumMin": 494.7345682342846,
+        "cnt": 25,
+        "sumMin": 502.39757108688343,
         "over": 6,
         "items": [
           {
@@ -114387,13 +114469,21 @@ window.SLACK_DATA = {
             "biz": "8058503224",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "15:30",
+            "min": 7.7,
+            "store": "주식회사 어노커 (ANOKER INC.)",
+            "biz": "4208602619",
+            "who": "김현기",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-08 15:30",
+    "at": "2026-08-08 15:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

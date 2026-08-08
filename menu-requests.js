@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 461,
- "updatedAt": "2026-08-08 15:22",
+ "version": 462,
+ "updatedAt": "2026-08-08 15:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1786170680.217389",
+   "date": "2026-08-08",
+   "time": "15:31",
+   "store": "다율김밥",
+   "biz": "4462302557",
+   "pos": "",
+   "content": "메뉴 추가 요청드립니다!",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "카테고리에 강정 추가\n - 후라이드 빠삭 강정(400g) 12,900원\n - 달콤 닭강정(400g) 13,900원\n - 매콤 닭강정(400g) 13,900원\n\n배달앱에는 1000원씩 올려서 메뉴추가 부탁드립니다!",
+    "혹시! 배달앱은 대표님이 직접 하셔야하는걸까요!?"
+   ],
+   "rc": 4,
+   "lr": "1786170946.977479",
+   "status": "done",
+   "handler": "서상원",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786170680217389"
+  },
   {
    "ts": "1786162155.773839",
    "date": "2026-08-08",
