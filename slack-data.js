@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 2934,
+  "version": 2935,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -94750,14 +94750,15 @@ window.SLACK_DATA = {
     },
     "2026-08-08": {
       "counts": {
-        "as": {
-          "서상원": 6,
-          "김현기": 25,
-          "미지정": 8
-        },
         "onboarding": {
+          "서상원": 1,
           "미지정": 1,
           "김현기": 2
+        },
+        "as": {
+          "김현기": 26,
+          "미지정": 9,
+          "서상원": 5
         },
         "transfer": {
           "김현기": 1
@@ -94776,12 +94777,34 @@ window.SLACK_DATA = {
           "time": "16:20",
           "store": "바버박스",
           "biz": "8341802712",
-          "cat": "as",
+          "cat": "onboarding",
           "emp": "서상원",
           "req": "포프(휴대폰) 온보딩 지원 요청드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "키오스크 모드로 온보딩"
+        },
+        {
+          "time": "16:19",
+          "store": "보로플라워마켓 2호점",
+          "biz": "2200975184",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "포스불가",
+          "hw": "",
+          "intake": "offline",
+          "note": "5분만 뒤에 통화 / 주진님 차 안가져왔어요? / 나가야혀??? / 어댑터 뺏꼿후 정상 / 휴 / 물바다 매장; / 옿옿 굿"
+        },
+        {
+          "time": "16:15",
+          "store": "위드유(With you dessert)",
+          "biz": "4400303278",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "포프캣 / 현재 주문서 및 영수증등 모든 출력이 안된다고 하셔서 점검 부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "kovan 7403S 단말기 포스와 연결해서 영수증 출력 사용중이나 갑자기 출력이 안됨, 포스com2 에 연결 잘되어 있으나, 꼇켯 및 brd 재 연결후에도 출력 x, 단말기와 brd 케이블 현장출고하여 방문 필요 11일(화) 방문요청 등록완료"
         },
         {
           "time": "16:11",
@@ -95283,26 +95306,26 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 41,
-        "offline": 5,
+        "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "16:28",
+      "updatedAt": "16:37",
       "voc": {
-        "responses": 15,
+        "responses": 16,
         "install": {
           "count": 6,
           "low": 2
         },
         "nps": {
-          "count": 15,
-          "low": 6
+          "count": 16,
+          "low": 7
         },
         "high": {
           "install": 2,
           "nps": 3
         },
         "npsDist": {
-          "0": 1,
+          "0": 2,
           "2": 2,
           "5": 3,
           "8": 5,
@@ -95322,11 +95345,11 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
-          "1개월": {
-            "total": 3,
-            "low": 1
-          },
           "6개월": {
+            "total": 4,
+            "low": 2
+          },
+          "1개월": {
             "total": 3,
             "low": 1
           },
@@ -95344,13 +95367,13 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 4,
+            "low": 1
+          },
           "KPN": {
             "total": 3,
             "low": 1
-          },
-          "KIS": {
-            "total": 3,
-            "low": 0
           },
           "KOCES": {
             "total": 4,
@@ -95366,12 +95389,34 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 3,
           "단말기 설치나 초기 과정이 어려움": 1,
           "필요한 기능이 없거나 몰라서 불편": 2,
-          "사용중 오류가 자주 발생함": 3,
-          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2
+          "사용중 오류가 자주 발생함": 3
         },
         "alerts": [
+          {
+            "time": "16:37",
+            "store": "베들레헴",
+            "storeId": "267759",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "기기가 너무 느려짐",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "16:28",
             "store": "피부숲 에스테틱",
@@ -95634,15 +95679,11 @@ window.SLACK_DATA = {
       },
       "1786148508.544859": {
         "post": "1786148508.544859",
-        "lastSeen": 1786174226.493
+        "lastSeen": 1786175122.038
       },
       "1786173452.415139": {
         "post": "1786173452.415139",
-        "lastSeen": 1786174226.493
-      },
-      "1786173332.040089": {
-        "post": "1786173332.040089",
-        "lastSeen": 1786174226.493
+        "lastSeen": 1786175122.038
       }
     },
     "days": {
@@ -114345,8 +114386,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-08": {
-        "cnt": 26,
-        "sumMin": 514.1809494376181,
+        "cnt": 27,
+        "sumMin": 536.5513729572294,
         "over": 6,
         "items": [
           {
@@ -114556,13 +114597,21 @@ window.SLACK_DATA = {
             "biz": "5231300070",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "16:15",
+            "min": 22.4,
+            "store": "위드유(With you dessert)",
+            "biz": "4400303278",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-08 16:30",
+    "at": "2026-08-08 16:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
