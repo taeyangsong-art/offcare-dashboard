@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 472,
- "updatedAt": "2026-08-09 14:30",
+ "version": 473,
+ "updatedAt": "2026-08-09 14:45",
  "days": 30,
  "items": [
   {
@@ -8457,66 +8457,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783665870552699"
-  },
-  {
-   "ts": "1783662128.553929",
-   "date": "2026-07-10",
-   "time": "14:42",
-   "store": "미카도",
-   "biz": "6783001736",
-   "pos": "토스포스",
-   "content": "메뉴판 단가 수정건",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 12,
-   "lr": "1783670343.987609",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783662128553929"
-  },
-  {
-   "ts": "1783661721.539989",
-   "date": "2026-07-10",
-   "time": "14:35",
-   "store": "두현24시불가마사우나",
-   "biz": "1238626817",
-   "pos": "기타",
-   "content": "이발 15000\n염색 15000\n이발+염색 25000  \n콜라  2500  추가해주세요",
-   "special": "남탕메뉴 포스에 넣을거라서요",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1783663568.768859",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783661721539989"
-  },
-  {
-   "ts": "1783661500.407279",
-   "date": "2026-07-10",
-   "time": "14:31",
-   "store": "주식회사 59에프앤비",
-   "biz": "5138604132",
-   "pos": "토스포스",
-   "content": "전메뉴 이미지 업로드",
-   "special": "Ai 파일로 메일 송부예정입니다",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1783663468.216709",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783661500407279"
   }
  ]
 };
