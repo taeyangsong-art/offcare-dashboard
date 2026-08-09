@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 478,
- "updatedAt": "2026-08-09 17:41",
+ "version": 479,
+ "updatedAt": "2026-08-09 18:00",
  "days": 30,
  "items": [
   {
@@ -8273,46 +8273,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김동욱",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783733139358159"
-  },
-  {
-   "ts": "1783673595.862369",
-   "date": "2026-07-10",
-   "time": "17:53",
-   "store": "살롱드비키",
-   "biz": "2092792875",
-   "pos": "기타",
-   "content": "추가/ 세트메뉴/ 생맥주 ,  500cc 5000원  300cc 3700원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783673599.945499",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783673595862369"
-  },
-  {
-   "ts": "1783673356.770999",
-   "date": "2026-07-10",
-   "time": "17:49",
-   "store": "밀도",
-   "biz": "8731902432",
-   "pos": "",
-   "content": "메뉴 작업",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783673362.727939",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783673356770999"
   }
  ]
 };
