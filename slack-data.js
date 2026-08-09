@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3043,
+  "version": 3044,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -95855,36 +95855,39 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "15:16",
+      "updatedAt": "15:46",
       "voc": {
-        "responses": 3,
+        "responses": 4,
         "install": {
-          "count": 1,
-          "low": 0
+          "count": 2,
+          "low": 1
         },
         "nps": {
-          "count": 3,
+          "count": 4,
           "low": 2
         },
         "high": {
           "install": 0,
-          "nps": 0
+          "nps": 1
         },
         "npsDist": {
           "0": 1,
           "1": 1,
-          "8": 1
+          "8": 1,
+          "10": 1
         },
         "installDist": {
+          "1": 1,
           "3": 1
         },
         "byIndustry": {
+          "요식업": 1,
           "도소매": 1
         },
         "byTenure": {
           "구매설치": {
-            "total": 1,
-            "low": 0
+            "total": 2,
+            "low": 1
           },
           "6개월": {
             "total": 1,
@@ -95896,6 +95899,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KSNET": {
+            "total": 1,
+            "low": 1
+          },
           "KOCES": {
             "total": 1,
             "low": 0
@@ -95910,10 +95917,33 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "구매,계약과정에서 설명이 부족": 1,
           "사용중 오류가 자주 발생함": 1,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
         },
         "alerts": [
+          {
+            "time": "15:46",
+            "store": "수정이네맛있는집",
+            "storeId": "580583",
+            "industry": "음식점/주점",
+            "indBucket": "요식업",
+            "install": 1,
+            "nps": 10,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "친절하고 잘설명해주셨어요",
+                "cat": "구매,계약과정에서 설명이 부족"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:13",
             "store": "라라와케이 다이닝",
@@ -96011,7 +96041,7 @@ window.SLACK_DATA = {
       },
       "1786251697.263709": {
         "post": "1786251697.263709",
-        "lastSeen": 1786257922.043
+        "lastSeen": 1786258827.679
       }
     },
     "days": {
@@ -114987,7 +115017,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-09 15:45",
+    "at": "2026-08-09 16:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
