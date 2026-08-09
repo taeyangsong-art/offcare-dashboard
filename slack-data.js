@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3121,
+  "version": 3122,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -95847,11 +95847,27 @@ window.SLACK_DATA = {
       }
     },
     "2026-08-09": {
-      "counts": {},
+      "counts": {
+        "menu": {
+          "김동욱": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "14:01",
+          "store": "바이트 앤 레스트 더블유 피에스 스타벅스 킨텍스점",
+          "biz": "5438503030",
+          "cat": "menu",
+          "emp": "김동욱",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 주방출력물 설정완료"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
@@ -96114,7 +96130,7 @@ window.SLACK_DATA = {
       },
       "1786318200.337309": {
         "post": "1786318200.337309",
-        "lastSeen": 1786318225.317
+        "lastSeen": 1786319122.61
       }
     },
     "days": {
@@ -115090,13 +115106,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-10 08:30",
+    "at": "2026-08-10 08:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3392,
+    "rows": 3397,
     "named": 101,
     "unknownName": 0,
     "beforeStart": 0,
