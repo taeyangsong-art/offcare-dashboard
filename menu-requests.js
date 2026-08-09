@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 468,
- "updatedAt": "2026-08-09 12:30",
+ "version": 469,
+ "updatedAt": "2026-08-09 13:30",
  "days": 30,
  "items": [
   {
@@ -8577,26 +8577,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783658428081689"
-  },
-  {
-   "ts": "1783656934.617379",
-   "date": "2026-07-10",
-   "time": "13:15",
-   "store": "콩심전주콩나물국밥명태찜",
-   "biz": "2064662771",
-   "pos": "오케이포스",
-   "content": "메뉴 추가요청 드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1783659021.789579",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783656934617379"
   }
  ]
 };
