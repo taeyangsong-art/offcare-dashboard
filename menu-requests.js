@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 473,
- "updatedAt": "2026-08-09 14:45",
+ "version": 474,
+ "updatedAt": "2026-08-09 15:45",
  "days": 30,
  "items": [
   {
@@ -8437,26 +8437,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783667867431299"
-  },
-  {
-   "ts": "1783665870.552699",
-   "date": "2026-07-10",
-   "time": "15:44",
-   "store": "뮌헨",
-   "biz": "5660702429",
-   "pos": "기타",
-   "content": "국산을지로골뱅이에서\n국산이란 문구를 삭제 부탁드립니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783665876.542109",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783665870552699"
   }
  ]
 };
