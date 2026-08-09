@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 477,
- "updatedAt": "2026-08-09 17:30",
+ "version": 478,
+ "updatedAt": "2026-08-09 17:41",
  "days": 30,
  "items": [
   {
@@ -8313,26 +8313,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783673356770999"
-  },
-  {
-   "ts": "1783672643.325599",
-   "date": "2026-07-10",
-   "time": "17:37",
-   "store": "마포갈비92",
-   "biz": "1332662233",
-   "pos": "기타",
-   "content": "안녕하세요! 메뉴 등록 요청 주셨군요. :blush:\n\n정보 확인했습니다.\n• 사업자번호: ···\n• 매장명: 마포갈비\n• 점주명: 박운희\n\n메뉴 등록 요청 내용:\n- 카테고리: 식사 > 점심특선 (신규 생성)\n- 모듬쌈밥정식(숯불갈비) 150g: 15,000원\n- 모듬쌈밥정식(삼겹살) 150g: 15,000원\n- 모듬쌈밥정식(불고기) 150g: 15,000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1783689770.463519",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783672643325599"
   }
  ]
 };
