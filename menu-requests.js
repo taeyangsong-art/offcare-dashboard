@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 469,
- "updatedAt": "2026-08-09 13:30",
+ "version": 470,
+ "updatedAt": "2026-08-09 13:45",
  "days": 30,
  "items": [
   {
@@ -8517,66 +8517,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783661075671519"
-  },
-  {
-   "ts": "1783658450.862129",
-   "date": "2026-07-10",
-   "time": "13:40",
-   "store": "강창구찹쌀진순대 토평점",
-   "biz": "4688700056",
-   "pos": "",
-   "content": "메뉴 수정",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783658455.890909",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783658450862129"
-  },
-  {
-   "ts": "1783658440.519279",
-   "date": "2026-07-10",
-   "time": "13:40",
-   "store": "강창구의 찹쌀진순대 수택본점",
-   "biz": "5364700353",
-   "pos": "",
-   "content": "메뉴 수정",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783658445.455919",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783658440519279"
-  },
-  {
-   "ts": "1783658428.081689",
-   "date": "2026-07-10",
-   "time": "13:40",
-   "store": "(주)창구유통 강창구찹쌀진순대 광장점",
-   "biz": "4688700056",
-   "pos": "",
-   "content": "메뉴 수정",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783658433.515119",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783658428081689"
   }
  ]
 };
