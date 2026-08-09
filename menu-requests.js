@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 471,
- "updatedAt": "2026-08-09 14:15",
+ "version": 472,
+ "updatedAt": "2026-08-09 14:30",
  "days": 30,
  "items": [
   {
@@ -8517,26 +8517,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783661500407279"
-  },
-  {
-   "ts": "1783661075.671519",
-   "date": "2026-07-10",
-   "time": "14:24",
-   "store": "골뱅이닷컴",
-   "biz": "6900302777",
-   "pos": "토스포스",
-   "content": "유플러스 건입니다. 스파로스 -> 토스 포스 메뉴 이관 부탁드립니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1783663064.461699",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783661075671519"
   }
  ]
 };
