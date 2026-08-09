@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 474,
- "updatedAt": "2026-08-09 15:45",
+ "version": 475,
+ "updatedAt": "2026-08-09 16:30",
  "days": 30,
  "items": [
   {
@@ -8377,66 +8377,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783668888878989"
-  },
-  {
-   "ts": "1783668554.013669",
-   "date": "2026-07-10",
-   "time": "16:29",
-   "store": "준스(JOONS)",
-   "biz": "1052185328",
-   "pos": "",
-   "content": "메뉴",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 5,
-   "lr": "1783669916.831919",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783668554013669"
-  },
-  {
-   "ts": "1783668277.389899",
-   "date": "2026-07-10",
-   "time": "16:24",
-   "store": "용용선생 청주지웰복대점",
-   "biz": "6531002169",
-   "pos": "",
-   "content": "테라제로 5,000원 메뉴 추가 부탁드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1783669034.068779",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783668277389899"
-  },
-  {
-   "ts": "1783667867.431299",
-   "date": "2026-07-10",
-   "time": "16:17",
-   "store": "츠하오",
-   "biz": "1561402744",
-   "pos": "퍼스트포스",
-   "content": "메뉴수정 요청드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1783669243.994249",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783667867431299"
   }
  ]
 };
