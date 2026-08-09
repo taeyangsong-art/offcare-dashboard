@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 476,
- "updatedAt": "2026-08-09 16:45",
+ "version": 477,
+ "updatedAt": "2026-08-09 17:30",
  "days": 30,
  "items": [
   {
@@ -8333,28 +8333,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783672643325599"
-  },
-  {
-   "ts": "1783672171.815069",
-   "date": "2026-07-10",
-   "time": "17:29",
-   "store": "수아스킨앤바디",
-   "biz": "4495400019",
-   "pos": "토스포스",
-   "content": "앰플 2만원\n추가해주세요",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/14T2bS_S-dGmogc0LMsgTH-k9dPcVmjhQ/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783672175.916429",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783672171815069"
   }
  ]
 };
