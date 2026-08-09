@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3048,
+  "version": 3049,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -95855,20 +95855,20 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "16:34",
+      "updatedAt": "16:46",
       "voc": {
-        "responses": 8,
+        "responses": 9,
         "install": {
-          "count": 3,
-          "low": 1
+          "count": 4,
+          "low": 2
         },
         "nps": {
-          "count": 8,
+          "count": 9,
           "low": 2
         },
         "high": {
           "install": 1,
-          "nps": 2
+          "nps": 3
         },
         "npsDist": {
           "0": 1,
@@ -95876,18 +95876,23 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 1,
           "9": 2,
-          "10": 2
+          "10": 3
         },
         "installDist": {
           "1": 1,
+          "2": 1,
           "3": 1,
           "5": 1
         },
         "byIndustry": {
-          "도소매": 2,
+          "도소매": 3,
           "요식업": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 4,
+            "low": 2
+          },
           "1개월": {
             "total": 2,
             "low": 0
@@ -95895,10 +95900,6 @@ window.SLACK_DATA = {
           "12개월": {
             "total": 1,
             "low": 0
-          },
-          "구매설치": {
-            "total": 3,
-            "low": 1
           },
           "6개월": {
             "total": 1,
@@ -95911,8 +95912,8 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KIS": {
-            "total": 1,
-            "low": 0
+            "total": 2,
+            "low": 1
           },
           "SECTA9": {
             "total": 1,
@@ -95936,11 +95937,33 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
-          "구매,계약과정에서 설명이 부족": 1,
+          "구매,계약과정에서 설명이 부족": 2,
           "사용중 오류가 자주 발생함": 1,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
         },
         "alerts": [
+          {
+            "time": "16:46",
+            "store": "엄마의 취미생활",
+            "storeId": "579340",
+            "industry": "도소매",
+            "indBucket": "도소매",
+            "install": 2,
+            "nps": 10,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 2,
+                "text": "설명이 충분하지 않음",
+                "cat": "구매,계약과정에서 설명이 부족"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:46",
             "store": "수정이네맛있는집",
@@ -96052,7 +96075,7 @@ window.SLACK_DATA = {
       },
       "1786251697.263709": {
         "post": "1786251697.263709",
-        "lastSeen": 1786261524.122
+        "lastSeen": 1786262325.335
       }
     },
     "days": {
@@ -115028,7 +115051,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-09 16:45",
+    "at": "2026-08-09 16:58",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
