@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 467,
- "updatedAt": "2026-08-09 11:56",
+ "version": 468,
+ "updatedAt": "2026-08-09 12:30",
  "days": 30,
  "items": [
   {
@@ -8597,26 +8597,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783656934617379"
-  },
-  {
-   "ts": "1783653784.629929",
-   "date": "2026-07-10",
-   "time": "12:23",
-   "store": "카페 우유니(cafe uyuni)",
-   "biz": "4221801015",
-   "pos": "토스포스",
-   "content": "메뉴판 메뉴 등록 후 세트메뉴 안에 런치세트와 우유니세트와 커플세트 카테고리 안에 0원 메뉴를 추가해야해요.\n메뉴판사진과 포스기 사진 공유해드릴게요. 도움 부탁드립니다.",
-   "special": "사진등록이",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1783654067.045439",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783653784629929"
   }
  ]
 };
