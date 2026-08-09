@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3063,
+  "version": 3064,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -95855,16 +95855,16 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "16:46",
+      "updatedAt": "19:34",
       "voc": {
-        "responses": 9,
+        "responses": 10,
         "install": {
           "count": 4,
           "low": 2
         },
         "nps": {
-          "count": 9,
-          "low": 2
+          "count": 10,
+          "low": 3
         },
         "high": {
           "install": 1,
@@ -95872,7 +95872,7 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "0": 1,
-          "1": 1,
+          "1": 2,
           "7": 1,
           "8": 1,
           "9": 2,
@@ -95889,16 +95889,16 @@ window.SLACK_DATA = {
           "요식업": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 2,
+            "low": 1
+          },
           "구매설치": {
             "total": 4,
             "low": 2
           },
           "1개월": {
             "total": 2,
-            "low": 0
-          },
-          "12개월": {
-            "total": 1,
             "low": 0
           },
           "6개월": {
@@ -95911,6 +95911,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "NICE": {
+            "total": 1,
+            "low": 1
+          },
           "KIS": {
             "total": 2,
             "low": 1
@@ -95937,11 +95941,33 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
           "구매,계약과정에서 설명이 부족": 2,
-          "사용중 오류가 자주 발생함": 1,
-          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
+          "사용중 오류가 자주 발생함": 1
         },
         "alerts": [
+          {
+            "time": "19:34",
+            "store": "1987바디케어",
+            "storeId": "231653",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "삼성페이가 잘안먹힙니다",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "16:46",
             "store": "엄마의 취미생활",
@@ -96037,10 +96063,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1786099500.498159": {
-        "post": "1786099500.498159",
-        "lastSeen": 1786119202.954
-      },
       "1786148508.544859": {
         "post": "1786148508.544859",
         "lastSeen": 1786204351.874
@@ -96063,7 +96085,7 @@ window.SLACK_DATA = {
       },
       "1786251697.263709": {
         "post": "1786251697.263709",
-        "lastSeen": 1786271424.484
+        "lastSeen": 1786272320.936
       }
     },
     "days": {
@@ -115039,7 +115061,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-09 19:30",
+    "at": "2026-08-09 19:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
