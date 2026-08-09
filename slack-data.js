@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3069,
+  "version": 3070,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -95855,15 +95855,15 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "19:34",
+      "updatedAt": "20:35",
       "voc": {
-        "responses": 10,
+        "responses": 11,
         "install": {
           "count": 4,
           "low": 2
         },
         "nps": {
-          "count": 10,
+          "count": 11,
           "low": 3
         },
         "high": {
@@ -95874,7 +95874,7 @@ window.SLACK_DATA = {
           "0": 1,
           "1": 2,
           "7": 1,
-          "8": 1,
+          "8": 2,
           "9": 2,
           "10": 3
         },
@@ -95889,6 +95889,10 @@ window.SLACK_DATA = {
           "요식업": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 3,
+            "low": 0
+          },
           "12개월": {
             "total": 2,
             "low": 1
@@ -95896,10 +95900,6 @@ window.SLACK_DATA = {
           "구매설치": {
             "total": 4,
             "low": 2
-          },
-          "1개월": {
-            "total": 2,
-            "low": 0
           },
           "6개월": {
             "total": 1,
@@ -95911,12 +95911,12 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
-          "NICE": {
-            "total": 1,
+          "KIS": {
+            "total": 3,
             "low": 1
           },
-          "KIS": {
-            "total": 2,
+          "NICE": {
+            "total": 1,
             "low": 1
           },
           "SECTA9": {
@@ -96085,7 +96085,7 @@ window.SLACK_DATA = {
       },
       "1786251697.263709": {
         "post": "1786251697.263709",
-        "lastSeen": 1786275026.67
+        "lastSeen": 1786275920.634
       }
     },
     "days": {
@@ -115061,7 +115061,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-09 20:30",
+    "at": "2026-08-09 20:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
