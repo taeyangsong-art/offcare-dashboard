@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 475,
- "updatedAt": "2026-08-09 16:30",
+ "version": 476,
+ "updatedAt": "2026-08-09 16:45",
  "days": 30,
  "items": [
   {
@@ -8355,28 +8355,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783672171815069"
-  },
-  {
-   "ts": "1783668888.878989",
-   "date": "2026-07-10",
-   "time": "16:34",
-   "store": "옹드 커피",
-   "biz": "1573801517",
-   "pos": "토스포스",
-   "content": "",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/open?id=1vACBkDrmrWAnoa0pPPExVSPmKM-naps1"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783668893.372659",
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783668888878989"
   }
  ]
 };
