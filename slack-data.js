@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3078,
+  "version": 3079,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -95855,20 +95855,20 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "20:35",
+      "updatedAt": "22:18",
       "voc": {
-        "responses": 11,
+        "responses": 12,
         "install": {
-          "count": 4,
+          "count": 5,
           "low": 2
         },
         "nps": {
-          "count": 11,
+          "count": 12,
           "low": 3
         },
         "high": {
-          "install": 1,
-          "nps": 3
+          "install": 2,
+          "nps": 4
         },
         "npsDist": {
           "0": 1,
@@ -95876,19 +95876,24 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 2,
           "9": 2,
-          "10": 3
+          "10": 4
         },
         "installDist": {
           "1": 1,
           "2": 1,
           "3": 1,
-          "5": 1
+          "5": 2
         },
         "byIndustry": {
+          "서비스[뷰티,헤어]": 1,
           "도소매": 3,
           "요식업": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 5,
+            "low": 2
+          },
           "1개월": {
             "total": 3,
             "low": 0
@@ -95896,10 +95901,6 @@ window.SLACK_DATA = {
           "12개월": {
             "total": 2,
             "low": 1
-          },
-          "구매설치": {
-            "total": 4,
-            "low": 2
           },
           "6개월": {
             "total": 1,
@@ -95911,6 +95912,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 3,
+            "low": 0
+          },
           "KIS": {
             "total": 3,
             "low": 1
@@ -95926,10 +95931,6 @@ window.SLACK_DATA = {
           "KSNET": {
             "total": 2,
             "low": 1
-          },
-          "KOCES": {
-            "total": 2,
-            "low": 0
           },
           "SMARTRO": {
             "total": 1,
@@ -96057,7 +96058,20 @@ window.SLACK_DATA = {
             "doneDate": ""
           }
         ],
-        "praises": []
+        "praises": [
+          {
+            "time": "22:18",
+            "store": "온댕",
+            "storeId": "580822",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "설명서가 잘되어있어 좋았다 단말기,프린터도 가게에 배치했을때 깔끔하고 시스템도 만족스럽다",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
       }
     }
   },
@@ -96085,7 +96099,7 @@ window.SLACK_DATA = {
       },
       "1786251697.263709": {
         "post": "1786251697.263709",
-        "lastSeen": 1786281321.151
+        "lastSeen": 1786282227.215
       }
     },
     "days": {
@@ -115061,7 +115075,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-09 22:15",
+    "at": "2026-08-09 22:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
