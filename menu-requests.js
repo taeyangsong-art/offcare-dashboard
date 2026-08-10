@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 492,
- "updatedAt": "2026-08-10 14:00",
+ "version": 493,
+ "updatedAt": "2026-08-10 14:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1786338436.723709",
+   "date": "2026-08-10",
+   "time": "14:07",
+   "store": "둔산동1833",
+   "biz": "7344900591",
+   "pos": "토스포스",
+   "content": "푸짐한김장날보쌈한상",
+   "special": "푸짐한 보쌈한상 옵션에 필수옵션으로",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786338441.179629",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786338436723709"
+  },
   {
    "ts": "1786332020.509409",
    "date": "2026-08-10",
@@ -48,8 +68,8 @@ window.MENU_REQUESTS = {
    ],
    "rc": 5,
    "lr": "1786338017.188039",
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786330145688629"
   },
   {
