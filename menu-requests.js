@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 508,
- "updatedAt": "2026-08-10 18:15",
+ "version": 509,
+ "updatedAt": "2026-08-10 18:45",
  "days": 30,
  "items": [
   {
@@ -24,10 +24,10 @@ window.MENU_REQUESTS = {
     "*https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786073605561829*",
     "[설명] 란의 이름이 '고객용 채널 노출 상품명' 으로 등록되어 전반적인 수정 요청드립니다."
    ],
-   "rc": 5,
-   "lr": "1786353256.378089",
-   "status": "wait",
-   "handler": null,
+   "rc": 6,
+   "lr": "1786354675.559399",
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786352622985349"
   },
   {
