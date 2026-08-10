@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3183,
+  "version": 3184,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -96092,6 +96092,17 @@ window.SLACK_DATA = {
     },
     "2026-08-10": {
       "counts": {
+        "as": {
+          "최민석": 14,
+          "배선유": 36,
+          "심성현": 28,
+          "김동욱": 21,
+          "김현기": 24,
+          "서상원": 9,
+          "김규빈": 5,
+          "송태양": 3,
+          "김기범": 1
+        },
         "onboarding": {
           "최민석": 12,
           "심성현": 10,
@@ -96101,17 +96112,6 @@ window.SLACK_DATA = {
           "배선유": 3,
           "송태양": 3,
           "김규빈": 1
-        },
-        "as": {
-          "최민석": 13,
-          "배선유": 36,
-          "심성현": 28,
-          "김동욱": 21,
-          "김현기": 24,
-          "서상원": 9,
-          "김규빈": 5,
-          "송태양": 3,
-          "김기범": 1
         },
         "extern": {
           "김동욱": 6,
@@ -96179,6 +96179,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "21:52",
+          "store": "모노아뷰티",
+          "biz": "5032752682",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "• CPP-3000 / 온보딩 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "21:00",
           "store": "주식회사 암브로즈",
@@ -98600,11 +98611,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 189,
+        "online": 190,
         "offline": 34,
         "unknown": 0
       },
-      "updatedAt": "21:00",
+      "updatedAt": "21:52",
       "voc": {
         "responses": 13,
         "install": {
@@ -119198,7 +119209,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-10 21:45",
+    "at": "2026-08-10 22:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
