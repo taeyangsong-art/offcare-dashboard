@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 512,
- "updatedAt": "2026-08-10 22:45",
+ "version": 513,
+ "updatedAt": "2026-08-10 23:01",
  "days": 30,
  "items": [
   {
@@ -23,10 +23,10 @@ window.MENU_REQUESTS = {
    "replies": [
     "숙성회 항목에서 / 숙성회 3인 가격 75,000원으로 변경\n\n숙성회 항목에 / 성게알(우니) 37,000원 추가\n\n튀김 항목에 / 크리스피 치킨 17,000원 추가\n\n주류2 항목에 / 하쿠슈 샷잔 18,000원 , 야마자키 샷잔 18,000원 , 히비키하모니 샷잔 17,000원 추가\n\n그리고 추가된 우니랑, 크리스피 치킨 주문서가 주방 프린터에 출력되도록 설정 요청"
    ],
-   "rc": 2,
-   "lr": "1786369406.969299",
-   "status": "wait",
-   "handler": null,
+   "rc": 3,
+   "lr": "1786370054.883229",
+   "status": "done",
+   "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786369363056939"
   },
   {
