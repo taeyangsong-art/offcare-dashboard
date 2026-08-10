@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 504,
- "updatedAt": "2026-08-10 17:15",
+ "version": 505,
+ "updatedAt": "2026-08-10 17:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1786350205.009889",
+   "date": "2026-08-10",
+   "time": "17:23",
+   "store": "무토",
+   "biz": "2871702879",
+   "pos": "토스포스",
+   "content": "제가 메뉴넣은것들은 삭제해주세요ㅜㅜ",
+   "special": "ㅜㅜ",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786350208.667409",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786350205009889"
+  },
   {
    "ts": "1786349221.626119",
    "date": "2026-08-10",
@@ -23,11 +43,13 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1786349225.383789",
-   "status": "wait",
-   "handler": null,
+   "replies": [
+    "기록용) 메뉴 수정 긴급 요청 / 금일 이내 등록 예정\n테이블, 이후 메뉴 수정 직접 가능한 점 안내"
+   ],
+   "rc": 2,
+   "lr": "1786349802.199109",
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786349221626119"
   },
   {
