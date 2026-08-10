@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3177,
+  "version": 3178,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -96092,6 +96092,17 @@ window.SLACK_DATA = {
     },
     "2026-08-10": {
       "counts": {
+        "as": {
+          "최민석": 13,
+          "배선유": 36,
+          "심성현": 28,
+          "김동욱": 21,
+          "김현기": 24,
+          "서상원": 9,
+          "김규빈": 5,
+          "송태양": 3,
+          "김기범": 1
+        },
         "onboarding": {
           "최민석": 10,
           "심성현": 10,
@@ -96101,17 +96112,6 @@ window.SLACK_DATA = {
           "배선유": 3,
           "송태양": 3,
           "김규빈": 1
-        },
-        "as": {
-          "최민석": 12,
-          "배선유": 36,
-          "심성현": 28,
-          "김동욱": 21,
-          "김현기": 24,
-          "서상원": 9,
-          "김규빈": 5,
-          "송태양": 3,
-          "김기범": 1
         },
         "extern": {
           "김동욱": 6,
@@ -96179,6 +96179,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "20:33",
+          "store": "마이요거트립 인천만수점",
+          "biz": "5654501356",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "프린터기에서 주문서 출력이 끊김없이 계속 나와 확인 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "19:49",
           "store": "선인체육관",
@@ -98567,11 +98578,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 186,
+        "online": 187,
         "offline": 34,
         "unknown": 0
       },
-      "updatedAt": "20:30",
+      "updatedAt": "20:33",
       "voc": {
         "responses": 13,
         "install": {
@@ -99070,7 +99081,7 @@ window.SLACK_DATA = {
       },
       "1786361401.733559": {
         "post": "1786361401.733559",
-        "lastSeen": 1786361534.052
+        "lastSeen": 1786362323.658
       }
     },
     "days": {
@@ -119157,7 +119168,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-10 20:32",
+    "at": "2026-08-10 20:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
