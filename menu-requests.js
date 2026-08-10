@@ -3,10 +3,32 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 506,
- "updatedAt": "2026-08-10 17:45",
+ "version": 507,
+ "updatedAt": "2026-08-10 18:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1786352210.462109",
+   "date": "2026-08-10",
+   "time": "17:56",
+   "store": "쭈닭한상",
+   "biz": "7822301997",
+   "pos": "퍼스트포스",
+   "content": "• 메뉴 수정 요청 드립니다. :핑크_굽신:",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "키오스크에 있는 [비빔밥] 카테고리\n• 마늘쫑비빔밥(우겹살) 메뉴 삭제요청 드립니다."
+   ],
+   "rc": 3,
+   "lr": "1786352426.057909",
+   "status": "done",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786352210462109"
+  },
   {
    "ts": "1786350829.420859",
    "date": "2026-08-10",
