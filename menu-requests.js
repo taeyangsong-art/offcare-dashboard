@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 493,
- "updatedAt": "2026-08-10 14:15",
+ "version": 494,
+ "updatedAt": "2026-08-10 14:30",
  "days": 30,
  "items": [
   {
@@ -8334,46 +8334,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783765923002179"
-  },
-  {
-   "ts": "1783747354.031129",
-   "date": "2026-07-11",
-   "time": "14:22",
-   "store": "황금상황버섯삼계탕,오리",
-   "biz": "5081492433",
-   "pos": "",
-   "content": "메뉴등록 외주'",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1783748449.545889",
-   "status": "done",
-   "handler": "김동욱",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783747354031129"
-  },
-  {
-   "ts": "1783747166.108259",
-   "date": "2026-07-11",
-   "time": "14:19",
-   "store": "요거트가족",
-   "biz": "1891602210",
-   "pos": "퍼스트포스",
-   "content": "메뉴 추가 요청드립니다. (유플이관매장)\n\n• 딸기 요거트 스무디 / 5,500원 (카테고리: 아이스크림컵/음료)\n• 오렌지 주스 / 7,900원 (카테고리: 아이스크림컵/음료)",
-   "special": "",
-   "drive": [],
-   "files": 2,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1783748461.569209",
-   "status": "done",
-   "handler": "김동욱",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783747166108259"
   }
  ]
 };
