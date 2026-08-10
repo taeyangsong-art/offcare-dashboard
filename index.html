@@ -2324,12 +2324,19 @@ function renderMenuReg(){
       ${(function(){
         // 슬랙 직접 첨부(att) + Drive 링크 이미지(datt) 를 같은 판독 목록으로 묶는다
         const imgs=[...(sel.att||[]).map(a=>({...a,src:'슬랙'})), ...(sel.datt||[]).map(a=>({...a,src:'Drive'}))];
-        const read=imgs.filter(a=>a.ocr), blocked=imgs.filter(a=>a.blocked).length;
-        if(!read.length&&!blocked) return '';
+        const KIND={menu_board:'메뉴판',pos_screen:'POS 화면',product_photo:'상품사진',other:'기타'};
+        const withMenu=imgs.filter(a=>(a.menu||[]).length);
+        const skipped=imgs.filter(a=>'kind' in a && !(a.menu||[]).length);   // 상품사진 등 — 추출할 메뉴가 없는 이미지
+        const legacy=imgs.filter(a=>!('kind' in a) && a.ocr);                // 구 tesseract 캐시(문자열)
+        const blocked=imgs.filter(a=>a.blocked).length;
+        if(!withMenu.length&&!skipped.length&&!legacy.length&&!blocked) return '';
+        const rows=a=>(a.menu||[]).map(m=>`${m.category?escapeHtml(m.category)+' | ':''}${escapeHtml(m.name)} | ${m.price?m.price.toLocaleString():'가격미상'}`).join('\n');
         return `<div style="margin-top:8px">
-        <div style="font-size:13px;font-weight:700;margin-bottom:4px">🔎 이미지 자동판독 <span class="cnt-badge">${read.length}</span> <span class="hint">(무료 OCR · 메뉴명·가격만 추출 · 오탈자 가능 → 반드시 원본과 대조)</span></div>
+        <div style="font-size:13px;font-weight:700;margin-bottom:4px">🔎 이미지 자동판독 <span class="cnt-badge">${withMenu.reduce((n,a)=>n+a.menu.length,0)}</span> <span class="hint">(Claude 비전 · 메뉴명·가격만 추출 · 등록 전 원본과 대조 권장)</span></div>
         ${blocked?`<div class="hint" style="color:#c2410c;margin-bottom:6px">🔒 Drive 이미지 ${blocked}장은 소유자가 다운로드를 막아 판독하지 못했습니다 — 위 <b>🖼 이미지</b> 링크로 직접 확인하세요.</div>`:''}
-        ${read.map(a=>{const menu=ocrExtractMenu(a.ocr,sel.store);return `<div style="background:#eef6ff;border-left:3px solid #2f6fc0;border-radius:8px;padding:8px 11px;font-size:12.5px;white-space:pre-wrap;margin-bottom:6px;max-height:200px;overflow:auto"><b>📄 ${escapeHtml(a.name||'이미지')}</b> <span class="hint">${a.src}</span>\n${escapeHtml(menu||'(메뉴 인식 실패 — 원문 확인)')}\n<details style="margin-top:6px"><summary style="cursor:pointer;color:#2f6fc0;font-size:11.5px">📄 OCR 원문 보기</summary><div style="color:#667;font-size:11.5px;margin-top:4px">${escapeHtml(a.ocr)}</div></details></div>`}).join('')}
+        ${withMenu.map(a=>`<div style="background:#eef6ff;border-left:3px solid #2f6fc0;border-radius:8px;padding:8px 11px;font-size:12.5px;white-space:pre-wrap;margin-bottom:6px;max-height:220px;overflow:auto"><b>📄 ${escapeHtml(a.name||'이미지')}</b> <span class="hint">${a.src} · ${KIND[a.kind]||a.kind} · ${a.menu.length}개</span>\n${rows(a)}</div>`).join('')}
+        ${legacy.map(a=>{const menu=ocrExtractMenu(a.ocr,sel.store);return `<div style="background:#f6f6f8;border-left:3px solid #9aa0a6;border-radius:8px;padding:8px 11px;font-size:12.5px;white-space:pre-wrap;margin-bottom:6px;max-height:200px;overflow:auto"><b>📄 ${escapeHtml(a.name||'이미지')}</b> <span class="hint">${a.src} · 구 무료 OCR(정확도 낮음)</span>\n${escapeHtml(menu||'(메뉴 인식 실패 — 원문 확인)')}</div>`}).join('')}
+        ${skipped.length?`<div class="hint">ℹ️ ${skipped.length}장은 메뉴 목록이 아니라 판독 대상이 아닙니다 (${[...new Set(skipped.map(a=>KIND[a.kind]||a.kind))].join(', ')}).</div>`:''}
       </div>`;})()}
       ${(sel.replies||[]).length?`<div style="margin-top:8px">
         <div style="font-size:13px;font-weight:700;margin-bottom:4px">💬 요청자 댓글 <span class="cnt-badge">${sel.replies.length}</span> <span class="hint">(요청사항 참고)</span></div>

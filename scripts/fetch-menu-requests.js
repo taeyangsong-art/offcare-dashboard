@@ -7,12 +7,12 @@
  * 메뉴 항목의 세부 해석(가격표 초안)은 대시보드(브라우저)와 /메뉴판독 스킬에서 수행.
  */
 const fs = require('fs');
+const path = require('path');
 
-// OCR(tesseract.js) 워커 오류는 워커 스레드에서 비동기로 튀어 try/catch를 벗어날 수 있음.
-// 네트워크 실패 등으로 OCR이 죽더라도 메뉴 적재 자체는 멈추면 안 되므로, OCR 계열 오류만 조용히 흡수.
-const isOcrErr = (e) => /traineddata|tesseract|worker|FetchError|ERR_/i.test(String((e && (e.message || e.name)) || e || ''));
-process.on('unhandledRejection', (e) => { if (isOcrErr(e)) { console.log('OCR 경고(무시):', String(e && e.message || e).slice(0, 120)); } else { throw e; } });
-process.on('uncaughtException', (e) => { if (isOcrErr(e)) { console.log('OCR 경고(무시):', String(e && e.message || e).slice(0, 120)); } else { console.error(e); process.exit(1); } });
+// 판독(API 호출) 오류로 메뉴 적재 자체가 멈추면 안 된다 — 판독 계열 오류만 조용히 흡수.
+const isOcrErr = (e) => /anthropic|api|fetch|ECONN|ETIMEDOUT|ERR_|rate.?limit|overloaded/i.test(String((e && (e.message || e.name)) || e || ''));
+process.on('unhandledRejection', (e) => { if (isOcrErr(e)) { console.log('판독 경고(무시):', String(e && e.message || e).slice(0, 120)); } else { throw e; } });
+process.on('uncaughtException', (e) => { if (isOcrErr(e)) { console.log('판독 경고(무시):', String(e && e.message || e).slice(0, 120)); } else { console.error(e); process.exit(1); } });
 
 const TOKEN = process.env.SLACK_BOT_TOKEN;
 const OUT = 'menu-requests.js';
@@ -96,27 +96,73 @@ function cleanupOldFiles(nowSec) {
   return removed;
 }
 
-// ─── 무료 OCR (Tesseract.js) ───────────────────────────────────────────────
-// 다운로드된 이미지에서 메뉴 텍스트를 추출. 신규 이미지에만 1회 수행하고 결과는 att[].ocr 로 캐시.
-// tesseract.js 미설치 환경(로컬 등)에서는 자동으로 건너뜀. 실패/상한은 비파괴적으로 처리.
+// ─── 메뉴 이미지 판독 (Claude 비전) ────────────────────────────────────────
+// 무료 Tesseract 는 실측 정확도 47.6% 로 손글씨·POS 캡처에서 쓸 수 없는 수준이었다
+// (ocr-eval/README.md 비교표). Opus 5 는 95.2%.
+// 실측 비용(2.3MB 메뉴판 사진 기준): 입력 6,035tok + 출력 802tok = 장당 약 ₩69.
+// README 의 ₩16 추산은 작은 POS 캡처 기준이라 실제 사진은 그보다 비싸다.
+// OCR_MODEL 환경변수로 claude-sonnet-5(장당 약 ₩27, 추출 일치율 28/31)로 낮출 수 있다.
+// 한 번의 호출로 '이미지 종류 판별 + 메뉴 추출' 을 같이 시킨다 — 상품사진(전체의 약 70%)은
+// 빈 배열로 돌아오고 kind 가 캐시되므로 다시 호출하지 않는다.
+// 결과는 att[].menu / datt[].menu 에 구조화된 배열로 캐시. 신규 이미지에만 1회 호출.
 const OCR_EXT = /\.(jpe?g|png|webp|bmp|gif)$/i;
-const OCR_CAP = 12;                          // 실행당 신규 OCR 상한(런타임 보호) — 나머지는 다음 실행에서
-let ocrDone = 0;
-let _tess = null;                            // null=미초기화, 'FAIL'=엔진없음, 그 외=worker
-async function getTess() {
-  if (_tess === 'FAIL') return null;
-  if (_tess) return _tess;
+const OCR_CAP = Number(process.env.OCR_CAP || 12);   // 실행당 신규 판독 상한(비용·런타임 보호)
+const OCR_MODEL = process.env.OCR_MODEL || 'claude-opus-5';
+const OCR_PRICE = { in: 5, out: 25 };                // $/1M tok — 로그의 비용 추정용
+const KRW_PER_USD = Number(process.env.KRW_PER_USD || 1380);
+let ocrDone = 0, ocrUsd = 0;
+const OCR_MEDIA = { '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.gif': 'image/gif', '.bmp': 'image/bmp' };
+// 자유 텍스트 필드를 두지 않는다 — 이미지에 연락처가 찍혀 있어도 결과로 새어나올 구멍이 없다.
+// (이 저장소는 public 이라 판독 결과가 그대로 공개된다)
+const OCR_SCHEMA = {
+  type: 'object',
+  properties: {
+    kind: { type: 'string', enum: ['menu_board', 'pos_screen', 'product_photo', 'other'],
+            description: '이미지 종류. 메뉴판 사진=menu_board, POS 관리자 화면 캡처=pos_screen, 배달앱용 음식/상품 사진=product_photo, 그 외=other' },
+    items: {
+      type: 'array',
+      items: {
+        type: 'object',
+        properties: {
+          category: { type: 'string', description: '메뉴가 속한 분류. 이미지에 분류 표기가 없으면 빈 문자열.' },
+          name: { type: 'string', description: '메뉴명. 이미지 표기 그대로. 맞춤법 교정 금지.' },
+          price: { type: 'integer', description: '가격. 콤마 없는 정수. 가격이 안 보이면 0.' },
+        },
+        required: ['category', 'name', 'price'],
+        additionalProperties: false,
+      },
+    },
+  },
+  required: ['kind', 'items'],
+  additionalProperties: false,
+};
+const OCR_PROMPT = `이 이미지에서 등록 대상 메뉴(상품명과 가격)를 추출하세요.
+
+먼저 이미지 종류를 판별하세요:
+- menu_board : 매장 메뉴판(인쇄물·손글씨·POS 출력물 등) 사진
+- pos_screen : POS 프로그램 관리자 화면 캡처
+- product_photo : 배달앱 등록용 음식/상품 사진 (메뉴명·가격 목록이 아님)
+- other : 그 외
+
+추출 규칙:
+- product_photo 와 other 는 items 를 빈 배열로 두세요.
+- 메뉴명은 보이는 표기 그대로 적습니다. 맞춤법을 고치지 마세요.
+- 가격은 콤마를 빼고 정수로 적습니다. 가격이 안 보이면 0 으로 둡니다.
+- 분류(주류/식사류 등) 표기가 있으면 category 에 넣고, 없으면 빈 문자열로 둡니다.
+- 글자가 흐릿해 확신이 없으면 그 항목은 넣지 마세요. 추측해서 채우지 마세요.
+- 매장 전화번호·주소·사업자번호 같은 연락처 정보는 절대 넣지 마세요.`;
+
+let _anthropic = null;   // null=미초기화, 'FAIL'=사용불가, 그 외=client
+function getAnthropic() {
+  if (_anthropic === 'FAIL') return null;
+  if (_anthropic) return _anthropic;
+  if (!process.env.ANTHROPIC_API_KEY) { console.log('판독 비활성: ANTHROPIC_API_KEY 없음'); _anthropic = 'FAIL'; return null; }
   try {
-    const { createWorker } = require('tesseract.js');
-    // 60초 내 초기화(traineddata 다운로드) 실패 시 OCR 포기 — 네트워크 지연으로 await가 무한 대기하는 것 방지
-    _tess = await Promise.race([
-      createWorker(['kor', 'eng']),   // 한글 + 숫자/영문(가격)
-      new Promise((_, rej) => setTimeout(() => rej(new Error('OCR init timeout(60s)')), 60000)),
-    ]);
-    return _tess;
-  } catch (e) { console.log('OCR 비활성:', e.message); _tess = 'FAIL'; return null; }
+    const Anthropic = require('@anthropic-ai/sdk');
+    _anthropic = new Anthropic();
+    return _anthropic;
+  } catch (e) { console.log('판독 비활성:', e.message); _anthropic = 'FAIL'; return null; }
 }
-async function endTess() { if (_tess && _tess !== 'FAIL') { try { await _tess.terminate(); } catch (e) {} _tess = null; } }
 // 판독 텍스트는 공개 저장소에 커밋된다 → 메뉴·가격이 아닌 개인 식별 번호는 지우고 저장한다.
 // 가격(3~6자리, 콤마 포함)은 건드리지 않는 패턴만 사용.
 function scrubPII(t) {
@@ -128,26 +174,48 @@ function scrubPII(t) {
     .replace(/\b\d{10,11}\b/g, '···')                          // 하이픈 없는 10~11자리
     .replace(/[\w.+-]+@[\w-]+\.[\w.]+/g, '···');
 }
-function cleanOcr(t) {
-  return String(t || '')
-    .replace(/[ \t]+/g, ' ')
-    .split('\n').map((l) => l.trim())
-    .filter((l) => l && /[가-힣0-9]/.test(l))   // 한글/숫자 없는 잡음 줄 제거
-    .join('\n').slice(0, 1500);
-}
-function cleanOcrSafe(t) {   // 저장용 — 개인정보 제거까지
-  return scrubPII(cleanOcr(t));
-}
-// 반환: 문자열(빈 문자열 포함) → 캐시(재시도 안 함) · null → 상한/엔진없음(다음 실행 재시도)
-async function ocrImage(dest) {
+// 반환: {kind, menu:[{category,name,price}]} → 캐시(재호출 안 함) · null → 상한/키없음/일시오류(다음 실행 재시도)
+async function readMenuImage(dest) {
   if (ocrDone >= OCR_CAP) return null;
-  const w = await getTess();
-  if (!w) return null;
+  const client = getAnthropic();
+  if (!client) return null;
+  const media = OCR_MEDIA[path.extname(dest).toLowerCase()];
+  if (!media) return null;
+  let buf;
+  try { buf = fs.readFileSync(dest); } catch (e) { return null; }
+  if (!buf.length || buf.length > FILE_MAX) return null;
   try {
-    const { data } = await w.recognize(dest);
+    const res = await client.messages.create({
+      model: OCR_MODEL,
+      max_tokens: 4096,
+      // thinking 은 붙이지 않는다. 같은 이미지로 실측했을 때 출력 토큰(802)·추출 결과(31/31)가
+      // 완전히 동일한데 지연만 13.4s → 100.6s 로 늘었다. 10분 주기 크론이라 실행이 겹칠 위험이 크다.
+      // (effort:'low' 는 유지 — 인식 작업에 필요 이상의 추론을 막는다)
+      output_config: { format: { type: 'json_schema', schema: OCR_SCHEMA }, effort: 'low' },
+      messages: [{ role: 'user', content: [
+        { type: 'image', source: { type: 'base64', media_type: media, data: buf.toString('base64') } },
+        { type: 'text', text: OCR_PROMPT },
+      ] }],
+    });
     ocrDone++;
-    return cleanOcrSafe(data.text);
-  } catch (e) { ocrDone++; console.log('OCR 실패:', dest, e.message); return ''; }
+    const u = res.usage || {};
+    const inTok = (u.input_tokens || 0) + (u.cache_read_input_tokens || 0) + (u.cache_creation_input_tokens || 0);
+    ocrUsd += inTok / 1e6 * OCR_PRICE.in + (u.output_tokens || 0) / 1e6 * OCR_PRICE.out;
+    if (res.stop_reason === 'refusal') { console.log('판독 거부:', dest); return { kind: 'other', menu: [] }; }
+    const text = (res.content.find((b) => b.type === 'text') || {}).text || '{}';
+    let parsed; try { parsed = JSON.parse(text); } catch (e) { console.log('판독 JSON 파싱 실패:', dest); return null; }
+    const menu = (parsed.items || [])
+      .map((x) => ({ category: scrubPII(String(x.category || '')).slice(0, 30),
+                     name: scrubPII(String(x.name || '')).slice(0, 60),
+                     price: Number(x.price) || 0 }))
+      .filter((x) => x.name)
+      .slice(0, 200);
+    return { kind: parsed.kind || 'other', menu };
+  } catch (e) {
+    ocrDone++;   // 실패도 상한에 넣는다 — 한 실행이 오류로 무한 재시도하지 않도록
+    console.log('판독 실패:', dest, String(e.message || e).slice(0, 100));
+    return null;
+  }
 }
 
 // ─── Google Drive 링크 이미지 수집 ─────────────────────────────────────────
@@ -275,8 +343,8 @@ function detectPos(text) {
           const a = { name: String(f.name || '첨부').slice(0, 40), path: dest };
           if (OCR_EXT.test(dest)) {
             const prevA = ((prevMap[m.ts] || {}).att || []).find((x) => x.path === dest);
-            if (prevA && 'ocr' in prevA) a.ocr = prevA.ocr;        // 캐시 재사용(빈 문자열도 재사용 → 재시도 폭주 방지)
-            else { const t = await ocrImage(dest); if (t !== null) a.ocr = t; }   // null(상한/엔진없음)은 캐시 안 함 → 다음 실행 재시도
+            if (prevA && 'kind' in prevA) { a.kind = prevA.kind; a.menu = prevA.menu || []; }   // 캐시 재사용(빈 결과도 재사용 → 재호출 방지)
+            else { const r = await readMenuImage(dest); if (r) { a.kind = r.kind; a.menu = r.menu; } }   // null(상한/키없음)은 캐시 안 함 → 다음 실행 재시도
           }
           att.push(a);
         }
@@ -293,7 +361,7 @@ function detectPos(text) {
         let di = 0;
         for (const id of driveIdsOf(driveLinks).slice(0, DRIVE_PER_MSG)) {
           const p = prevD.find((x) => x.id === id) || {};
-          if ('ocr' in p) { datt.push({ id, ocr: p.ocr }); continue; }     // 판독 완료분은 영구 재사용
+          if ('kind' in p) { datt.push({ id, kind: p.kind, menu: p.menu || [] }); continue; }   // 판독 완료분은 영구 재사용
           di++;
 
           const meta = await driveMeta(id, tok);
@@ -308,8 +376,8 @@ function detectPos(text) {
           if (got === 'blocked') { datt.push({ id, blocked: true }); driveBlocked++; continue; }
           if (!got) continue;
           try {
-            const t = await ocrImage(tmp);
-            if (t !== null) datt.push({ id, ocr: t });                     // null(상한/엔진없음)은 다음 실행 재시도
+            const r = await readMenuImage(tmp);
+            if (r) datt.push({ id, kind: r.kind, menu: r.menu });          // null(상한/키없음)은 다음 실행 재시도
           } finally { try { fs.unlinkSync(tmp); } catch (e) {} }
         }
       }
@@ -347,7 +415,6 @@ function detectPos(text) {
   if (fs.existsSync(OUT)) { const w = {}; try { new Function('window', fs.readFileSync(OUT, 'utf8'))(w); if (w.MENU_REQUESTS) { version = w.MENU_REQUESTS.version || 0; prevItems = JSON.stringify(w.MENU_REQUESTS.items || []); } } catch (e) {} }
   if (prevItems !== null && prevItems === JSON.stringify(capped)) {
     console.log('변경 없음 — 파일 갱신 생략');
-    await endTess();
     try { fs.rmSync(DRIVE_TMP, { recursive: true, force: true }); } catch (e) {}
     process.exit(0);
   }
@@ -360,10 +427,9 @@ function detectPos(text) {
   const header = '/*\n * 슬랙 #oc팀_메뉴요청 최근 요청 적재 (대시보드 메뉴등록 카테고리용)\n * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.\n */\n';
   fs.writeFileSync(OUT, header + 'window.MENU_REQUESTS = ' + JSON.stringify(data, null, 1) + ';\n', 'utf8');
   const byStatus = capped.reduce((a, i) => { a[i.status] = (a[i.status] || 0) + 1; return a; }, {});
-  if (ocrDone) console.log(`🔎 신규 이미지 OCR ${ocrDone}건 판독`);
+  if (ocrDone) console.log(`🔎 신규 이미지 판독 ${ocrDone}건 (${OCR_MODEL}) · 이번 실행 비용 약 $${ocrUsd.toFixed(3)} (₩${Math.round(ocrUsd * KRW_PER_USD).toLocaleString()})${ocrDone >= OCR_CAP ? ` · 상한 ${OCR_CAP}건 도달 — 나머지는 다음 실행에서` : ''}`);
   if (driveDownloaded || driveBlocked) console.log(`🖼 Drive 이미지 ${driveDownloaded}건 판독${driveBlocked ? ` · 권한차단 ${driveBlocked}건(권한 풀리면 자동 복구)` : ''} — 이미지 파일은 저장소에 남기지 않음`);
   try { fs.rmSync(DRIVE_TMP, { recursive: true, force: true }); } catch (e) {}
-  await endTess();
   console.log(`✅ ${OUT} 갱신: 요청 ${capped.length}건 (완료 ${byStatus.done || 0} · 확인중 ${byStatus.confirm || 0} · 대기 ${byStatus.wait || 0} · 중복 ${byStatus.dup || 0}) v${data.version}`);
   process.exit(0);   // 좀비 워커가 남아 프로세스가 안 끝나는 것 방지(모든 쓰기는 동기 완료됨)
 })();
