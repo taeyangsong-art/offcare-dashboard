@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3126,
+  "version": 3127,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -96093,17 +96093,17 @@ window.SLACK_DATA = {
     "2026-08-10": {
       "counts": {
         "as": {
+          "김동욱": 2,
           "심성현": 2,
           "김현기": 3,
           "김기범": 1,
-          "송태양": 2,
-          "김동욱": 1
+          "송태양": 2
         },
         "extern": {
           "김동욱": 1
         },
         "transfer": {
-          "송태양": 2
+          "송태양": 3
         },
         "menu": {
           "김규빈": 1,
@@ -96112,6 +96112,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:39",
+          "store": "법무법인 로어스",
+          "biz": "2161775972",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": ":",
+          "hw": "*  프론트, 터미널",
+          "intake": "online",
+          "note": "명변 완료입니다"
+        },
         {
           "time": "09:35",
           "store": "아지트",
@@ -96122,6 +96133,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
+        },
+        {
+          "time": "09:33",
+          "store": "코랄리에(양재)",
+          "biz": "8468600225",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "프론트 매장명 수정안됨",
+          "hw": "",
+          "intake": "online",
+          "note": "토플 토플 문의 프론트 매장명 수정 불가 &gt;&gt; 프론트 매장명 수정 불가"
         },
         {
           "time": "09:30",
@@ -96268,11 +96290,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 8,
+        "online": 10,
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "09:39",
+      "updatedAt": "09:50",
       "voc": {
         "responses": 1,
         "install": {
@@ -96332,13 +96354,21 @@ window.SLACK_DATA = {
         "post": "1786251697.263709",
         "lastSeen": 1786290865.84
       },
-      "1786321800.569089": {
-        "post": "1786321800.569089",
-        "lastSeen": 1786322719.967
-      },
       "1786321800.514819": {
         "post": "1786321800.514819",
-        "lastSeen": 1786322719.967
+        "lastSeen": 1786323269.858
+      },
+      "1786323024.767349": {
+        "post": "1786323024.767349",
+        "lastSeen": 1786323269.858
+      },
+      "1786322985.979119": {
+        "post": "1786322985.979119",
+        "lastSeen": 1786323269.858
+      },
+      "1786323000.382699": {
+        "post": "1786323000.382699",
+        "lastSeen": 1786323269.858
       }
     },
     "days": {
@@ -115353,7 +115383,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-10 09:45",
+    "at": "2026-08-10 09:54",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
