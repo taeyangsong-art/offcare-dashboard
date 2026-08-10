@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3136,
+  "version": 3137,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -96887,13 +96887,9 @@ window.SLACK_DATA = {
         "post": "1786251697.263709",
         "lastSeen": 1786290865.84
       },
-      "1786330802.169649": {
-        "post": "1786330802.169649",
-        "lastSeen": 1786330832.827
-      },
       "1786330145.688629": {
         "post": "1786330145.688629",
-        "lastSeen": 1786330832.827
+        "lastSeen": 1786331172.232
       }
     },
     "days": {
@@ -115867,8 +115863,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-10": {
-        "cnt": 21,
-        "sumMin": 202.16404168605806,
+        "cnt": 22,
+        "sumMin": 205.50337253808976,
         "over": 0,
         "items": [
           {
@@ -116038,13 +116034,21 @@ window.SLACK_DATA = {
             "biz": "1950703395",
             "who": "배선유",
             "cat": "as"
+          },
+          {
+            "hm": "12:00",
+            "min": 3.3,
+            "store": "스튜디오미(studio me)",
+            "biz": "5541003181",
+            "who": "김규빈",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-10 12:00",
+    "at": "2026-08-10 12:06",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
