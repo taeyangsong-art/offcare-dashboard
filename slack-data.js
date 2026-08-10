@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3170,
+  "version": 3171,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -96093,8 +96093,8 @@ window.SLACK_DATA = {
     "2026-08-10": {
       "counts": {
         "as": {
+          "최민석": 11,
           "배선유": 36,
-          "최민석": 10,
           "심성현": 28,
           "김동욱": 21,
           "김현기": 24,
@@ -96179,6 +96179,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "19:15",
+          "store": "지씨오(GCO)안경 수색점",
+          "biz": "3300803001",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "노트북 + 프론트 + 프린터 온보딩요청 .",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "18:54",
           "store": "멕시카나 망포점",
@@ -98512,11 +98523,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 182,
+        "online": 183,
         "offline": 33,
         "unknown": 0
       },
-      "updatedAt": "19:15",
+      "updatedAt": "19:30",
       "voc": {
         "responses": 13,
         "install": {
@@ -99013,9 +99024,13 @@ window.SLACK_DATA = {
         "post": "1786251697.263709",
         "lastSeen": 1786290865.84
       },
-      "1786356900.488639": {
-        "post": "1786356900.488639",
-        "lastSeen": 1786356931.107
+      "1786357800.964939": {
+        "post": "1786357800.964939",
+        "lastSeen": 1786357825.698
+      },
+      "1786357800.681329": {
+        "post": "1786357800.681329",
+        "lastSeen": 1786357825.698
       }
     },
     "days": {
@@ -117989,8 +118004,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-10": {
-        "cnt": 133,
-        "sumMin": 2669.8426144003865,
+        "cnt": 134,
+        "sumMin": 2677.8078454176584,
         "over": 20,
         "items": [
           {
@@ -119056,13 +119071,21 @@ window.SLACK_DATA = {
             "biz": "3553201837",
             "who": "최민석",
             "cat": "onboarding"
+          },
+          {
+            "hm": "19:15",
+            "min": 8,
+            "store": "지씨오(GCO)안경 수색점",
+            "biz": "3300803001",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-10 19:15",
+    "at": "2026-08-10 19:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
