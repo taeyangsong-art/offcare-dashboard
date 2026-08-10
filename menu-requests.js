@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 483,
- "updatedAt": "2026-08-10 10:15",
+ "version": 484,
+ "updatedAt": "2026-08-10 10:30",
  "days": 30,
  "items": [
   {
@@ -217,8 +217,8 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1786098742.921889",
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "서상원",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786098326394879"
   },
   {
@@ -8322,26 +8322,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김동욱",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783747166108259"
-  },
-  {
-   "ts": "1783733139.358159",
-   "date": "2026-07-11",
-   "time": "10:25",
-   "store": "전주종가콩나물국밥콩심",
-   "biz": "3033110212",
-   "pos": "오케이포스",
-   "content": "오케이포스 사용\n\n메뉴 추가 요청\n\n주류 (카테고리)\n행사 소주 1900원\n행사 맥주 1900원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1783733574.927539",
-   "status": "done",
-   "handler": "김동욱",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783733139358159"
   }
  ]
 };
