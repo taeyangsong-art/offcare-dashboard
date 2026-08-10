@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 503,
- "updatedAt": "2026-08-10 16:59",
+ "version": 504,
+ "updatedAt": "2026-08-10 17:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1786349221.626119",
+   "date": "2026-08-10",
+   "time": "17:07",
+   "store": "무토",
+   "biz": "2871702879",
+   "pos": "토스포스",
+   "content": "전체메뉴등록이고 내일 오픈이라서 많이 급합니다.",
+   "special": "제가 내부에서 가격변경, 메뉴변경되게 해주세요. 카테고리 이벤트부터 보이게 해주세요. 그리고 꼬치  구이  안주 파스타 튀김 국물순입니다.",
+   "drive": [
+    "https://drive.google.com/file/d/1ICDxPpBKCM3aow1umYQD_4ueoTc2BSTT/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1FFVl7XVi3jy4wu8P4eG46Uwed_O7ANCy/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786349225.383789",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786349221626119"
+  },
   {
    "ts": "1786347716.291909",
    "date": "2026-08-10",
@@ -23,7 +46,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 3,
    "lr": "1786348454.237269",
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786347716291909"
   },
