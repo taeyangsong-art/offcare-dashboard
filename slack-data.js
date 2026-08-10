@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3175,
+  "version": 3176,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -96103,7 +96103,7 @@ window.SLACK_DATA = {
           "김규빈": 1
         },
         "as": {
-          "최민석": 11,
+          "최민석": 12,
           "배선유": 36,
           "심성현": 28,
           "김동욱": 21,
@@ -96189,6 +96189,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "tid 정보 잘 못등록되어있음 / tid수정 및 모뎀에서 공유기로 랜선 변경 후 정상온보딩 완료"
+        },
+        {
+          "time": "19:42",
+          "store": "바다회해물탕",
+          "biz": "1190640609",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "오케이 포스 프로그램 접속이 되지 않아 확인 요청 드립니다. (고연령)",
+          "hw": "",
+          "intake": "offline",
+          "note": "오케이포스 재설치 후 정상작동 완료"
         },
         {
           "time": "19:30",
@@ -98557,10 +98568,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 186,
-        "offline": 33,
+        "offline": 34,
         "unknown": 0
       },
-      "updatedAt": "19:49",
+      "updatedAt": "20:30",
       "voc": {
         "responses": 13,
         "install": {
@@ -99057,9 +99068,9 @@ window.SLACK_DATA = {
         "post": "1786251697.263709",
         "lastSeen": 1786290865.84
       },
-      "1786358562.996599": {
-        "post": "1786358562.996599",
-        "lastSeen": 1786360528.016
+      "1786361401.733559": {
+        "post": "1786361401.733559",
+        "lastSeen": 1786361425.625
       }
     },
     "days": {
@@ -118033,9 +118044,9 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-10": {
-        "cnt": 137,
-        "sumMin": 2741.973541967074,
-        "over": 20,
+        "cnt": 138,
+        "sumMin": 2782.2039403160416,
+        "over": 21,
         "items": [
           {
             "hm": "09:00",
@@ -119132,13 +119143,21 @@ window.SLACK_DATA = {
             "biz": "6109122885",
             "who": "최민석",
             "cat": "onboarding"
+          },
+          {
+            "hm": "19:42",
+            "min": 40.2,
+            "store": "바다회해물탕",
+            "biz": "1190640609",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-10 20:15",
+    "at": "2026-08-10 20:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
