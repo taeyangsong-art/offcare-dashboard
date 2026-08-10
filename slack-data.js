@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3189,
+  "version": 3190,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -96092,6 +96092,17 @@ window.SLACK_DATA = {
     },
     "2026-08-10": {
       "counts": {
+        "as": {
+          "최민석": 14,
+          "배선유": 36,
+          "심성현": 28,
+          "김동욱": 21,
+          "김현기": 24,
+          "서상원": 9,
+          "김규빈": 5,
+          "송태양": 3,
+          "김기범": 1
+        },
         "onboarding": {
           "최민석": 13,
           "심성현": 10,
@@ -96101,17 +96112,6 @@ window.SLACK_DATA = {
           "배선유": 3,
           "송태양": 3,
           "김규빈": 1
-        },
-        "as": {
-          "최민석": 13,
-          "배선유": 36,
-          "심성현": 28,
-          "김동욱": 21,
-          "김현기": 24,
-          "서상원": 9,
-          "김규빈": 5,
-          "송태양": 3,
-          "김기범": 1
         },
         "extern": {
           "김동욱": 6,
@@ -96180,6 +96180,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "23:02",
+          "store": "고그린미술학원",
+          "biz": "1739801814",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "• 상호명 제신고 및 전산 반영하였으나, 용지 출력시 반영 안되어 확인 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "1차 부재 / 익일 오전9시30분 재통화 요청"
+        },
         {
           "time": "22:42",
           "store": "도마",
@@ -98623,11 +98634,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 190,
+        "online": 191,
         "offline": 35,
         "unknown": 0
       },
-      "updatedAt": "22:42",
+      "updatedAt": "23:02",
       "voc": {
         "responses": 13,
         "install": {
@@ -119217,7 +119228,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-10 23:00",
+    "at": "2026-08-10 23:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
