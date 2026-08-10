@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3139,
+  "version": 3140,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -96095,9 +96095,9 @@ window.SLACK_DATA = {
         "as": {
           "김규빈": 5,
           "심성현": 10,
+          "김현기": 8,
           "배선유": 8,
           "김동욱": 7,
-          "김현기": 7,
           "송태양": 3,
           "김기범": 1
         },
@@ -96167,6 +96167,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "카운터 유프 usb방식 설정 / 주방 100E 설정"
+        },
+        {
+          "time": "12:09",
+          "store": "셀비데이",
+          "biz": "1822201899",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "NM-2000 블루투스 연동이 안되어 온보딩 요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "3431073000 / 010361 / 코드값 확인 후 정상 / NM2000 설정 완료"
         },
         {
           "time": "12:07",
@@ -96842,11 +96853,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 48,
+        "online": 49,
         "offline": 17,
         "unknown": 0
       },
-      "updatedAt": "12:30",
+      "updatedAt": "12:43",
       "voc": {
         "responses": 3,
         "install": {
@@ -96978,15 +96989,11 @@ window.SLACK_DATA = {
       },
       "1786330145.688629": {
         "post": "1786330145.688629",
-        "lastSeen": 1786332627.847
-      },
-      "1786332603.868319": {
-        "post": "1786332603.868319",
-        "lastSeen": 1786332627.847
+        "lastSeen": 1786333522.77
       },
       "1786332600.657199": {
         "post": "1786332600.657199",
-        "lastSeen": 1786332627.847
+        "lastSeen": 1786333522.77
       }
     },
     "days": {
@@ -115960,8 +115967,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-10": {
-        "cnt": 25,
-        "sumMin": 234.2333817521731,
+        "cnt": 26,
+        "sumMin": 242.0907180984815,
         "over": 0,
         "items": [
           {
@@ -116163,13 +116170,21 @@ window.SLACK_DATA = {
             "biz": "1822201899",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "12:30",
+            "min": 7.9,
+            "store": "비굿비러브",
+            "biz": "3744201045",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-10 12:30",
+    "at": "2026-08-10 12:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
