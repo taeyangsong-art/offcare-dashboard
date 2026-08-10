@@ -3,10 +3,32 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 494,
- "updatedAt": "2026-08-10 14:30",
+ "version": 495,
+ "updatedAt": "2026-08-10 15:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1786341476.762079",
+   "date": "2026-08-10",
+   "time": "14:57",
+   "store": "호퍼스키친",
+   "biz": "1358564855",
+   "pos": "토스포스",
+   "content": "기타 매뉴추가 (금액수정가능하게 부탁드립니다)\n대관 0원\n콜키지 0원\n토핑추가 0원\n외부음식 0원",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1wBGaHAJBYz1PVM4t_d07QeTi_RUZHFpI/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786341482.783349",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786341476762079"
+  },
   {
    "ts": "1786338436.723709",
    "date": "2026-08-10",
