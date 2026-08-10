@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3182,
+  "version": 3183,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -96093,7 +96093,7 @@ window.SLACK_DATA = {
     "2026-08-10": {
       "counts": {
         "onboarding": {
-          "최민석": 11,
+          "최민석": 12,
           "심성현": 10,
           "서상원": 5,
           "김현기": 2,
@@ -96103,7 +96103,7 @@ window.SLACK_DATA = {
           "김규빈": 1
         },
         "as": {
-          "최민석": 14,
+          "최민석": 13,
           "배선유": 36,
           "심성현": 28,
           "김동욱": 21,
@@ -96205,12 +96205,12 @@ window.SLACK_DATA = {
           "time": "20:30",
           "store": "농업회사법인 술오름 주식회사",
           "biz": "4348703176",
-          "cat": "as",
+          "cat": "onboarding",
           "emp": "최민석",
           "req": "노트북 + 프론트 + 프린터 온보딩요청",
           "hw": "",
           "intake": "online",
-          "note": "10분뒤 재연락 요청"
+          "note": "10분뒤 재연락 요청 / 포프유프 온보딩 완료"
         },
         {
           "time": "19:49",
@@ -99089,10 +99089,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1786192608.447149": {
-        "post": "1786192608.447149",
-        "lastSeen": 1786204351.874
-      },
       "1786197600.938179": {
         "post": "1786197600.938179",
         "lastSeen": 1786204351.874
@@ -119202,7 +119198,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-10 21:30",
+    "at": "2026-08-10 21:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
