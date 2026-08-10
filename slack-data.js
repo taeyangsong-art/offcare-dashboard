@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3184,
+  "version": 3185,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -96092,8 +96092,18 @@ window.SLACK_DATA = {
     },
     "2026-08-10": {
       "counts": {
+        "onboarding": {
+          "최민석": 13,
+          "심성현": 10,
+          "서상원": 5,
+          "김현기": 2,
+          "김동욱": 4,
+          "배선유": 3,
+          "송태양": 3,
+          "김규빈": 1
+        },
         "as": {
-          "최민석": 14,
+          "최민석": 13,
           "배선유": 36,
           "심성현": 28,
           "김동욱": 21,
@@ -96102,16 +96112,6 @@ window.SLACK_DATA = {
           "김규빈": 5,
           "송태양": 3,
           "김기범": 1
-        },
-        "onboarding": {
-          "최민석": 12,
-          "심성현": 10,
-          "서상원": 5,
-          "김현기": 2,
-          "김동욱": 4,
-          "배선유": 3,
-          "송태양": 3,
-          "김규빈": 1
         },
         "extern": {
           "김동욱": 6,
@@ -96183,12 +96183,12 @@ window.SLACK_DATA = {
           "time": "21:52",
           "store": "모노아뷰티",
           "biz": "5032752682",
-          "cat": "as",
+          "cat": "onboarding",
           "emp": "최민석",
           "req": "• CPP-3000 / 온보딩 요청 드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "포프유프 온보딩 완료"
         },
         {
           "time": "21:00",
@@ -119209,7 +119209,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-10 22:00",
+    "at": "2026-08-10 22:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
