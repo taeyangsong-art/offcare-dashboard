@@ -3,10 +3,37 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 481,
- "updatedAt": "2026-08-10 09:00",
+ "version": 482,
+ "updatedAt": "2026-08-10 09:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1786322156.866409",
+   "date": "2026-08-10",
+   "time": "09:35",
+   "store": "아지트",
+   "biz": "3184401224",
+   "pos": "토스포스",
+   "content": "",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/open?id=1ajinds42CKFxA3XqZMC2DlZdibBZdP-W"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1ajinds42CKFxA3XqZMC2DlZdibBZdP-W",
+     "ocr": "위스키 \\\nWe) Ig Ps amge py cUIRE 브카\n280, coo NE | 50, Ll)\n맥주 /소구 /굴요 _\n주 (o.eco 정하 1050 5) 946 co Qual 26,00\nSluis fp.cso HEP feo HEeRHBee TE] 6.869\nSth Leo Belg [000\n2421%) 3600 22 (wo AFl. eo\nHops 36 0 4244 FER Ico BFE Wwo\n0.24 WW. eo ZADN hi= 60 [인수 2X00\nPee | 0 =O\ntz Lo Ro 556"
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786322160.139019",
+   "status": "done",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786322156866409"
+  },
   {
    "ts": "1786319163.028879",
    "date": "2026-08-10",
