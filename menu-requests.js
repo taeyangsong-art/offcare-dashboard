@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 507,
- "updatedAt": "2026-08-10 18:00",
+ "version": 508,
+ "updatedAt": "2026-08-10 18:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1786352622.985349",
+   "date": "2026-08-10",
+   "time": "18:03",
+   "store": "드랍인(DROP. IN)",
+   "biz": "1104823812",
+   "pos": "",
+   "content": "메뉴 수정 요청드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "*https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786073605561829*",
+    "[설명] 란의 이름이 '고객용 채널 노출 상품명' 으로 등록되어 전반적인 수정 요청드립니다."
+   ],
+   "rc": 5,
+   "lr": "1786353256.378089",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786352622985349"
+  },
   {
    "ts": "1786352210.462109",
    "date": "2026-08-10",
@@ -21,10 +44,11 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [
-    "키오스크에 있는 [비빔밥] 카테고리\n• 마늘쫑비빔밥(우겹살) 메뉴 삭제요청 드립니다."
+    "키오스크에 있는 [비빔밥] 카테고리\n• 마늘쫑비빔밥(우겹살) 메뉴 삭제요청 드립니다.",
+    "유플꺼 저희가 한다고했는데 제가 올려버렸네요 ,, 죄송해요 !! ㅠㅠ"
    ],
-   "rc": 3,
-   "lr": "1786352426.057909",
+   "rc": 4,
+   "lr": "1786352759.500739",
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786352210462109"
