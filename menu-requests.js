@@ -3,10 +3,52 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 499,
- "updatedAt": "2026-08-10 16:00",
+ "version": 500,
+ "updatedAt": "2026-08-10 16:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1786346071.016949",
+   "date": "2026-08-10",
+   "time": "16:14",
+   "store": "김밥조",
+   "biz": "7275900554",
+   "pos": "오케이포스",
+   "content": "KISOKPOS 메뉴",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "ASP 생성 전.."
+   ],
+   "rc": 3,
+   "lr": "1786346090.226949",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786346071016949"
+  },
+  {
+   "ts": "1786345988.442839",
+   "date": "2026-08-10",
+   "time": "16:13",
+   "store": "황금보리",
+   "biz": "2925600493",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1786346002.469119",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786345988442839"
+  },
   {
    "ts": "1786345134.763339",
    "date": "2026-08-10",
