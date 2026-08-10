@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3123,
+  "version": 3124,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -96092,12 +96092,55 @@ window.SLACK_DATA = {
     },
     "2026-08-10": {
       "counts": {
+        "extern": {
+          "김동욱": 1
+        },
+        "as": {
+          "송태양": 1,
+          "김현기": 1
+        },
+        "transfer": {
+          "송태양": 1
+        },
         "menu": {
           "김동욱": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:06",
+          "store": "또래오래 파파빈",
+          "biz": "1244375046",
+          "cat": "extern",
+          "emp": "김동욱",
+          "req": "외주",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
+        {
+          "time": "09:02",
+          "store": "카페그리고",
+          "biz": "6624301352",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "프론트 전원이 들어오지않는다고하여 점검부탁드립니다",
+          "hw": "",
+          "intake": "offline",
+          "note": "방전작업후 정상부팅입니다"
+        },
+        {
+          "time": "09:00",
+          "store": "투셰프(TWO CHEF)",
+          "biz": "4910402236",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "포프(PC) 매장인데 인근 인터넷 대공사로 인해 다음주 매장 인터넷 사용이 어려워 임시로 핫스팟으로 재온보딩(폰) 요청하셔서 도움요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "금액입력모드 설명 / 지금 당장은 인터넷이 되기 때문에 일단은 지금으로 쓰고, 나중에 실제 공사 시작하면 핫스팟 켜서 금액입력모드로 쓰기로 함 / 다만 카드사에서 핫스팟,공공와이파이등은 결제 거절(차단) 하는 케이스가 있을 수 있음 안내 완료"
+        },
         {
           "time": "08:46",
           "store": "맥쓰(MEXX)세계치킨제기역점",
@@ -96108,14 +96151,60 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / /"
+        },
+        {
+          "time": "08:30",
+          "store": "차오름 김밥&amp;누들",
+          "biz": "",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "8월 10일 오전 9시 / 메뉴 복사 O / 프론트, 포스, 유프, 금전함",
+          "hw": "",
+          "intake": "online",
+          "note": "/ 명변 완료입니다"
         }
       ],
       "intake": {
-        "online": 1,
-        "offline": 0,
+        "online": 3,
+        "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:00"
+      "updatedAt": "09:15",
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 0,
+          "low": 0
+        },
+        "nps": {
+          "count": 1,
+          "low": 0
+        },
+        "high": {
+          "install": 0,
+          "nps": 1
+        },
+        "npsDist": {
+          "10": 1
+        },
+        "installDist": {},
+        "byIndustry": {},
+        "byTenure": {
+          "1개월": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "SMARTRO": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {},
+        "alerts": [],
+        "praises": []
+      }
     }
   },
   "resp": {
@@ -96144,9 +96233,13 @@ window.SLACK_DATA = {
         "post": "1786251697.263709",
         "lastSeen": 1786290865.84
       },
-      "1786320013.436319": {
-        "post": "1786320013.436319",
-        "lastSeen": 1786320031.148
+      "1786320901.056819": {
+        "post": "1786320901.056819",
+        "lastSeen": 1786320920.708
+      },
+      "1786320812.948379": {
+        "post": "1786320812.948379",
+        "lastSeen": 1786320920.708
       }
     },
     "days": {
@@ -115118,17 +115211,32 @@ window.SLACK_DATA = {
             "cat": "as"
           }
         ]
+      },
+      "2026-08-10": {
+        "cnt": 1,
+        "sumMin": 7.708194681008657,
+        "over": 0,
+        "items": [
+          {
+            "hm": "09:00",
+            "min": 7.7,
+            "store": "투셰프(TWO CHEF)",
+            "biz": "4910402236",
+            "who": "김현기",
+            "cat": "as"
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-10 09:00",
+    "at": "2026-08-10 09:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3402,
+    "rows": 3406,
     "named": 101,
     "unknownName": 0,
     "beforeStart": 0,
