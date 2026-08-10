@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3130,
+  "version": 3131,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -96092,14 +96092,9 @@ window.SLACK_DATA = {
     },
     "2026-08-10": {
       "counts": {
-        "onboarding": {
-          "송태양": 1,
-          "김동욱": 1,
-          "김현기": 1
-        },
         "as": {
+          "심성현": 5,
           "송태양": 3,
-          "심성현": 4,
           "배선유": 3,
           "김규빈": 1,
           "김동욱": 3,
@@ -96107,7 +96102,12 @@ window.SLACK_DATA = {
           "김기범": 1
         },
         "extern": {
-          "김동욱": 1
+          "김동욱": 2
+        },
+        "onboarding": {
+          "송태양": 1,
+          "김동욱": 1,
+          "김현기": 1
         },
         "transfer": {
           "송태양": 5
@@ -96119,6 +96119,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:27",
+          "store": "명 : 성북동돼지갈비집휴게소",
+          "biz": "4454500373",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "프론트 보안IC요청 메시지발생 / OKPOS사용중입니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "오케이 포스 버전 업데이트로 노출 문구 변경 / 안내 완료"
+        },
+        {
+          "time": "10:21",
+          "store": "청춘감성 쌀 핫도그 부산 동삼점",
+          "biz": "1025400463",
+          "cat": "extern",
+          "emp": "김동욱",
+          "req": "01051078017  외주업체 원격요청",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "10:19",
           "store": "로컬페어링",
@@ -96451,11 +96473,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 21,
-        "offline": 9,
+        "online": 22,
+        "offline": 10,
         "unknown": 0
       },
-      "updatedAt": "10:27",
+      "updatedAt": "10:45",
       "voc": {
         "responses": 1,
         "install": {
@@ -115584,7 +115606,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-10 10:30",
+    "at": "2026-08-10 10:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

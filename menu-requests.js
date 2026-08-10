@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 484,
- "updatedAt": "2026-08-10 10:30",
+ "version": 485,
+ "updatedAt": "2026-08-10 10:46",
  "days": 30,
  "items": [
+  {
+   "ts": "1786325839.038889",
+   "date": "2026-08-10",
+   "time": "10:37",
+   "store": "담락참치일잔(용원점)",
+   "biz": "2022309912",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1786325903.774879",
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786325839038889"
+  },
   {
    "ts": "1786324009.713429",
    "date": "2026-08-10",
@@ -158,7 +178,7 @@ window.MENU_REQUESTS = {
    "datt": [
     {
      "id": "1Ts6nzwcEXLXILz7aTBwxzBsY-ULiyJ3n",
-     "blocked": true
+     "ocr": "po Loh 2, 2 0 ? 7 2.\nsrquw 은 S oO 220 Oo 02 oO oy\nx oll 누[ 도 안해 홈\n왜 의 $d © 07 To\n= _@ Og 반고 싸 Le Fo\nKe NE 8 FE RY 을 * For kL\n고 호류 호 본 2 ow = spd\nny 3 ~ 0 fa oan\n내 mh ke 주 7 on o 9 = 11 11\nA hin 0 2 F ' . ,\nCRED Bod § 2 00 의 ol Go = ol {poh\nCHEE [bag 대 ㅎ00 Q bu =n Lb ㅣ\n5 Bic mis of mA goog 110 — 1: 1 1\nEME gE 을 =F 5 gm AE a\nEE MEBs OSC Brac a mow 2a KF pom | |\n=> Ee £ m 가 00 OL 2 2 Zr wo 2 110 Koo 60 yoo |\n[al 거고 ERD “EZ ad _—c | |\n= 오해 r ENE mn Yo 해 of 으 슬로 oe <9 ~ ㅣ % |\n70 = % = Te WE =< ous 대 = = TK 50 0 = El | > 0-0-0 ㅣ\nXV = 대 Ie 대 ㅎㅎ oa 10 ar io 빠 ha ~0 =I 머 ~ -r 1 ” / {\noO. 5 ofa =r xs HE 3 lr | JS ow £0 2, 너그 *\n53 대 808 0 =! 7 800ㅎ ale 법레 ROB ob = = mol Ty Ar 27 Ko0n rt ㅣ\n로 an = = KO 80 ol 조교, =o Von, WE — oO = + ㅁ 04 Hm || —_ ml a |\n858 드 TE x r= ;=t Tl od 80 6! MUA 5 AERC 아 on oO ww\nAd -」 핸드 & mar 모모 Of To <0 uw ©\nols & IN os TT TE 270 ~o wl BEA Cl i\n% % of of 고 “1 J F< 2 |\n연 2 - S = Te) 2 |\nDN ow 은 SR |\n5 fo SS ) |\noN == SN 00 ON A |\n= 3 oO oO |\n의 2 를 |\n= w~ 태 K i 2 |\nig] S = oO 다 ㅣ\n2 <F T= ™ SS Ee\n= ; 회 으\n여 20 기 IH =r PL\n5 = Bor +. fe\n내 oO iH 으 더: 배 으 wr J 들\n우 = pe ny [개 으 = {\n=) 2 ET 한 19] 분 (1. . oy =r 개 ar 나 o\nBleakdsE Xls = : 52g iE\nWer EE el 2 | 6 이 다 op RIN 수 2B & oe\nKE 브 (7 rn SY 0806 £ m = o a0 [&) —\nReseed ef) > &0 oi = oon 1 (S) = Jr 2 0 S =\n네 = > Se By LE HE ZnS gk —\nFRE Ys 다 SZ ogy Bae Ew —lm® = 1\n——— ~ WT 0 NN o Ng Ww = — jo] wd\nRr — ¥ 노 =< Un 터 as <0 00)\n—— oF 4%) 네마 ml KO 1 60004\n— % x — 펜드 ㅣ oo m\na 시 ※ ~— =]! Ti\nTT 9 es ES Zod { i — wl ord :\n” — 665 "
     }
    ],
    "replies": [
@@ -187,7 +207,7 @@ window.MENU_REQUESTS = {
    "datt": [
     {
      "id": "1attFifiaIEiSfWhiauv3y0ymLwOgE9Ng",
-     "blocked": true
+     "ocr": "po Loh 2, 2 0 ? 7 2.\nsrquw 은 S oO 220 Oo 02 oO oy\nx oll 누[ 도 안해 홈\n왜 의 $d © 07 To\n= _@ Og 반고 싸 Le Fo\nKe NE 8 FE RY 을 * For kL\n고 호류 호 본 2 ow = spd\nny 3 ~ 0 fa oan\n내 mh ke 주 7 on o 9 = 11 11\nA hin 0 2 F ' . ,\nCRED Bod § 2 00 의 ol Go = ol {poh\nCHEE [bag 대 ㅎ00 Q bu =n Lb ㅣ\n5 Bic mis of mA goog 110 — 1: 1 1\nEME gE 을 =F 5 gm AE a\nEE MEBs OSC Brac a mow 2a KF pom | |\n=> Ee £ m 가 00 OL 2 2 Zr wo 2 110 Koo 60 yoo |\n[al 거고 ERD “EZ ad _—c | |\n= 오해 r ENE mn Yo 해 of 으 슬로 oe <9 ~ ㅣ % |\n70 = % = Te WE =< ous 대 = = TK 50 0 = El | > 0-0-0 ㅣ\nXV = 대 Ie 대 ㅎㅎ oa 10 ar io 빠 ha ~0 =I 머 ~ -r 1 ” / {\noO. 5 ofa =r xs HE 3 lr | JS ow £0 2, 너그 *\n53 대 808 0 =! 7 800ㅎ ale 법레 ROB ob = = mol Ty Ar 27 Ko0n rt ㅣ\n로 an = = KO 80 ol 조교, =o Von, WE — oO = + ㅁ 04 Hm || —_ ml a |\n858 드 TE x r= ;=t Tl od 80 6! MUA 5 AERC 아 on oO ww\nAd -」 핸드 & mar 모모 Of To <0 uw ©\nols & IN os TT TE 270 ~o wl BEA Cl i\n% % of of 고 “1 J F< 2 |\n연 2 - S = Te) 2 |\nDN ow 은 SR |\n5 fo SS ) |\noN == SN 00 ON A |\n= 3 oO oO |\n의 2 를 |\n= w~ 태 K i 2 |\nig] S = oO 다 ㅣ\n2 <F T= ™ SS Ee\n= ; 회 으\n여 20 기 IH =r PL\n5 = Bor +. fe\n내 oO iH 으 더: 배 으 wr J 들\n우 = pe ny [개 으 = {\n=) 2 ET 한 19] 분 (1. . oy =r 개 ar 나 o\nBleakdsE Xls = : 52g iE\nWer EE el 2 | 6 이 다 op RIN 수 2B & oe\nKE 브 (7 rn SY 0806 £ m = o a0 [&) —\nReseed ef) > &0 oi = oon 1 (S) = Jr 2 0 S =\n네 = > Se By LE HE ZnS gk —\nFRE Ys 다 SZ ogy Bae Ew —lm® = 1\n——— ~ WT 0 NN o Ng Ww = — jo] wd\nRr — ¥ 노 =< Un 터 as <0 00)\n—— oF 4%) 네마 ml KO 1 60004\n— % x — 펜드 ㅣ oo m\na 시 ※ ~— =]! Ti\nTT 9 es ES Zod { i — wl ord :\n” — 665 "
     }
    ],
    "replies": [
@@ -446,7 +466,7 @@ window.MENU_REQUESTS = {
    "datt": [
     {
      "id": "1N2iMdNKTGUjw5nnFK9QzD4_8AfKJlt5y",
-     "blocked": true
+     "ocr": "1 sy 개 는 7 묵 rn oo\nBe 해 2 xl ; Cm : Po.\ne <4 Es gE ol J»\n3 896 oy . Fr\nE TE | 기 pa Sediasere 3\ney + 0. 2 5 조깅 |\n가 1\n4 은 ' _ 2. 5 (의\n1 a : 자\" posssspeemam sg 이 _ \\ _\n@ oo “VELL \\) - 3 )\ni | 2 ' HE ee\n! 이아. . essere\n[4\nf 7\n| 그 i 그\nㅣ ! | SEA Oa Be °: 이이 나이저 pabns Sa 2\n; di ER 이미. BESTE wm 0. 0. :\n1 1 6 i 6000 No WHS, TR\npe 298 Gr dn Ei\nid 3 Zoe 6 3 > 시해 :\né Bors essassarees a | 。 해 a\n| | : > 개 기개 i im\n이 ,0064000100016010메이뻐 5 : 3 g )\n| 2 276 ge ES\n2 도 roo?\n“6 ( { / | & Bs a—\nVv 3 pi Be vasa sn IY avai gvan seas\n’ . seanpeetebEiRERpRRS SORT ARIOIPAS) 4 4 개 |\npe er. Eo : pe 0 .\n분) ra i a 3 BE 0 dA\nCr, 설 ~ 7 1”, B25 개 a\ni 3 dl “EO x “day\nef ~ 3 re 이. % ts U5 1 ‘ tr Sr mE oo Gi\n2 ——— samme ~ 563 : yt Dy\nEr Rr 107 x ㆍ > RR hn\nEF i. SAYRE < 자 APNE\n~. =ㅋ을 CR = oh 9이\na 0. 개 가맹 uid ㆍ 3 8 we\n` 36 「 Be al pe i de 4\n= p fed - 9 ㅣ Tas"
     }
    ],
    "replies": [],
@@ -473,7 +493,7 @@ window.MENU_REQUESTS = {
    "datt": [
     {
      "id": "1oygFFVE--c3fpbWS8b-c3XbiZ5euZ450",
-     "blocked": true
+     "ocr": "개 : 들\n9\n(기 . .\n= 줄수 7\n77 TD cc 02"
     }
    ],
    "replies": [],
@@ -848,7 +868,7 @@ window.MENU_REQUESTS = {
    "datt": [
     {
      "id": "1Rq-SlVTo2U9f6QADeBUku9W10dma1Bfn",
-     "blocked": true
+     "ocr": "MEXI€7 Cpicken TEmame\n064 치치콜/!트\n주문만 가능 치필링 치토스 치즈볼. BLE\n& 양념치킨 = pepe\n< PE 24 245ml 1 1개\n@ 42 EIA 291 변령가능 지치콜세트\n| 할이!\n40002821} 8 000%\n® 소스미제공 총 iy - ㅣ\n소스는 제공되지 않습니다.\nSem | vl 음료 제외 시\n(SEL 우\nill 7000월\nLEER *내점 이용 불가능합니다\n031)205-1989 |&L CC 도\n고 | 031)205-1989 |—d\n키오스크\n키오스크"
     }
    ],
    "replies": [
@@ -877,7 +897,7 @@ window.MENU_REQUESTS = {
    "datt": [
     {
      "id": "1y_NSXjB_3jVobZG3D4tWqJKLY_Z6kkbJ",
-     "blocked": true
+     "ocr": "— = —— .ㆍ^ 재 SER HE Te mena = 3 :: 3 =a\n. 3996 객 7 =| - =\n~ — = 니니 - i — 개 — = EA 개 글 소요 00000.\nEN = \\ x _ 2 BEE ee ~——\nBR - Fok oT A rl 3 3 개 9) >» \"= ue\n` : 세 . : | Ay 올 > 2됩 :\nPA wd | — ~ ' [ 고여 5\n- 해 a § - \"영제 ~ — . 《 ㅇ = 를 — - Tema Tel TO Ex\nAR Ae oN 7 ol \"TR 메 = - =\n[ Eras! 이 oy - ~ 4 - % : Se —————- -\nENA: ^ 조 : 는 . a < - r= £ — 6 pr\nNE [나 te py EE, 3 : a /\nLOR Ry i 뿌 ㆍ 할애 ~ ~ il \" pa (5 -. yp,\n0 3 A ` _ 기 x 3 f |\nEe my 를 /\nPx. 1 1 4 »\nTEEN 이미 oF = ㅠ ps 개 :\nTe EUR BE hl = 를 EE pra\nBe 차 = = 으 그 | Le -—\n고기 ; = 으 으 LN .- 6 드 밸\nBs — Ee\" CEE ul 탤\nTR 녁 제 + + + So | 74 |\n2 6 6090 DOO Oa | 개 E\na 29001 oci «OL 개 |\na 3 ol SETTLE 6 we\n> > = : Zon — | A 에\n4 ODDDPODDDDDOD 과\n주 — | 세 [ oe\n2053 [=] | 3\n능 <I p]| 그\n— —— = <| 다기\nuo 이 c may n= op. 고 SEE S\n해 2) 522 - = = of ~ 자 ol a 5 = 레 풍\n3 “= mo 모브 gic jo Koo =m | ml Kl mem UMS of =\n5 # OH = of ® mm od 의 즈 기 ox om Edn |S RL\n1 LHESSREE TTT Ani LR Ra BS ee De 이 은 HO © ITE | 회 궁 의 물 BE 누\nad EE OR A HI* 이 89082 ~ 중 0 HW = << 때 기 가 © ATE\n! r=} oF =o a0 4 oy of B® ww MH Fl 536 (회 A 0). oO) EEN\n= I ~ %0 0 o ol BEEN\not <u = PT 계92~ㄷ-------ㅡ~,\n세 Se — : TEE .., Sd SD\n” [ / : , /<? 에너 ) FG a ail 、 B \\\nEB 7 228 339\n> // [ = = = = 1\n7 a 4 7 개 awe, 호노 | AN > |\np27 ge ㅣ // 770 i | & } 14 BR 주 45) “ X 기 4 .\nvie 3배 ; YY '/지 . PR LF 더 &s : Da ;\nYr a 07 TA od 고 3 See —2 LR TIN ORES\nEE a a ~새 ' ,\n< ra _ ’ LY) 개 ㅜ - = \""
     }
    ],
    "replies": [
@@ -1343,7 +1363,7 @@ window.MENU_REQUESTS = {
    "datt": [
     {
      "id": "1BhGbg7Ehqxq-WXpfplC-7zDp7izp2YAn",
-     "blocked": true
+     "ocr": "양데이\n양데이 __-_------\nof + 양갈비살꼬치(5개)\nLIK son) + 양갈비살(5) yr Mp 꿔보러우\n양고급갈비 _ 3009 30.0 + 양고급갈비(3009) \" + 칭따오 640ml 1병\n+ 칭따오 640ml 1병 S\nEa ~ 수온면 ㅣ 연태고량 _\n|. 마라룸샤꼬리 경장육슬 | 옥수수온면 : @\n오리지널양꼬치 150 ㅣ S gry on -\nRok 치 150 ㅣ 마라새우 어향육슬 | 계란볶음밥 { 설원 *\n2 ' 1 ! =\nSea [TPT] 토마토계란볶음 ㅣ 가지볶음밤 ㅣ ”\n데리야끼양꼬치 3) 150 | 마라탕 토마토계란탕 볶음 ! omex i\n인분 10가 {| ~ | ' GES\n마라양꼬치 16.0 ㅣ sayy 건두부볶음 40 | 새우볶음밥 | Be xem\nerin BE ， 99399 건두부무침 ㅣ _물만두(15개) ㅣ 카스/테라\n(1212 87H) 꿔보러우 ! ; 소주\nrene 10 reese 오이탕탕이 mma) Horas\n버섯꼬치 (8꼬치) 5.0 : 오돌뼈볶음 마파두부 { ] Chis ich\n소세지꼬치(268) 3.0 = el 숙주볶음 | _ 꽃빵튀김(5개) ! _ 음뮤(사이다/콜라/환\n마늘꼬치 30 : 지삼선 Lis\n= 8"
     }
    ],
    "replies": [
@@ -1470,15 +1490,15 @@ window.MENU_REQUESTS = {
    "datt": [
     {
      "id": "1fbowqlh_NIZ3aPwwP40x4IxC7PofGC_C",
-     "blocked": true
+     "ocr": "반반 맛선택(2)(필수)\nCETTE) 반반양념선택 반반치토스선 ㆍ 반반마늘간장 secon\n선택 택 선택 요선택\n+0 +1,000 +3,000 +2,000 +3,000\n반반눈꽃치즈 wma 받반파닭 | 반반허니벌꿀 반반강정선택\n선택 선택\n+2,000 +3,000 +3,000 +2,000 +2,000"
     },
     {
      "id": "1QPGhdW9glL9lkno_HChImhKlnu08A3lo",
-     "blocked": true
+     "ocr": "미제공 (전체 선택 가능)\n치킨무미제공 _ 소스미제공 음료미제공\n+0 +0 +0"
     },
     {
      "id": "1nQTNZmXHxzQzMmhPuKPiBw8aUUAYcz22",
-     "blocked": true
+     "ocr": "반반 \\25,000\n294\nLa 삐 순살\n반반 맛선택 +0 +2,000\nㄴ반반후라이드선택\n반반 맛선택(1)(필수:\nI 반반 맛선택(1)(필수)\n(CITE 반반양념선택 반반치토스선 | 반반마늘간장 ㆍ 반반모두의마\n미제공 선택 택 선택 요선택\n+0 +1,000 +3,000 +2,000 +3,000\n반반눈꽃치즈 wma 반반파닭 반반허니벌꿀 、 반반강정선택\n선택 선택\n+2,000 +3,000 +3,000 +2,000 +2,000"
     }
    ],
    "replies": [],
