@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3174,
+  "version": 3175,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -96093,7 +96093,7 @@ window.SLACK_DATA = {
     "2026-08-10": {
       "counts": {
         "onboarding": {
-          "최민석": 9,
+          "최민석": 10,
           "심성현": 10,
           "서상원": 5,
           "김현기": 2,
@@ -96179,6 +96179,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "19:49",
+          "store": "선인체육관",
+          "biz": "6109122885",
+          "cat": "onboarding",
+          "emp": "최민석",
+          "req": "포프 온보딩 진행도중  초기화에 실패했어요,문구 발생하여 확인 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "tid 정보 잘 못등록되어있음 / tid수정 및 모뎀에서 공유기로 랜선 변경 후 정상온보딩 완료"
+        },
         {
           "time": "19:30",
           "store": "와이수학교습소",
@@ -98545,7 +98556,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 185,
+        "online": 186,
         "offline": 33,
         "unknown": 0
       },
@@ -99048,11 +99059,7 @@ window.SLACK_DATA = {
       },
       "1786358562.996599": {
         "post": "1786358562.996599",
-        "lastSeen": 1786359632.586
-      },
-      "1786358982.700939": {
-        "post": "1786358982.700939",
-        "lastSeen": 1786359632.586
+        "lastSeen": 1786360528.016
       }
     },
     "days": {
@@ -118026,8 +118033,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-10": {
-        "cnt": 136,
-        "sumMin": 2723.680207614104,
+        "cnt": 137,
+        "sumMin": 2741.973541967074,
         "over": 20,
         "items": [
           {
@@ -119117,13 +119124,21 @@ window.SLACK_DATA = {
             "biz": "3019222033",
             "who": "최민석",
             "cat": "as"
+          },
+          {
+            "hm": "19:49",
+            "min": 18.3,
+            "store": "선인체육관",
+            "biz": "6109122885",
+            "who": "최민석",
+            "cat": "onboarding"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-10 20:00",
+    "at": "2026-08-10 20:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
