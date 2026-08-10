@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 500,
- "updatedAt": "2026-08-10 16:15",
+ "version": 501,
+ "updatedAt": "2026-08-10 16:30",
  "days": 30,
  "items": [
   {
@@ -21,10 +21,11 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [
-    "ASP 생성 전.."
+    "ASP 생성 전..",
+    "CO에서 생성중.."
    ],
-   "rc": 3,
-   "lr": "1786346090.226949",
+   "rc": 5,
+   "lr": "1786346610.539749",
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786346071016949"
@@ -45,8 +46,8 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1786346002.469119",
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786345988442839"
   },
   {
@@ -62,11 +63,13 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1786345139.410409",
-   "status": "wait",
-   "handler": null,
+   "replies": [
+    "메일안옴 다시보내주시기로"
+   ],
+   "rc": 2,
+   "lr": "1786346285.151989",
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786345134763339"
   },
   {
