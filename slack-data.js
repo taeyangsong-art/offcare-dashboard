@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3137,
+  "version": 3138,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -96093,11 +96093,11 @@ window.SLACK_DATA = {
     "2026-08-10": {
       "counts": {
         "as": {
+          "김규빈": 4,
           "배선유": 8,
           "심성현": 9,
           "김동욱": 7,
           "김현기": 7,
-          "김규빈": 3,
           "송태양": 3,
           "김기범": 1
         },
@@ -96122,6 +96122,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "12:07",
+          "store": "정현이네",
+          "biz": "2851802171",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "땡겨요 주문서 출력 불가로 인입되어 탐색 시 땡겨요에 COM1 (포스 상 주방 프린터) 정상 연결 되어있으나 땡겨요 상에서 테스트 출력을 눌러봐도 출력 불가, 토스 포스에서 테스트 출력 눌러봐도 출력 불가한 상황입니다. 케이블 재연결 등 조치가 필요할",
+          "hw": "",
+          "intake": "online",
+          "note": "COM1 일시적으로 인식 안되서 재설정 완료"
+        },
         {
           "time": "11:38",
           "store": "개구댕이",
@@ -96785,26 +96796,27 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 44,
+        "online": 45,
         "offline": 16,
         "unknown": 0
       },
-      "updatedAt": "12:00",
+      "updatedAt": "12:15",
       "voc": {
-        "responses": 2,
+        "responses": 3,
         "install": {
           "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 2,
-          "low": 1
+          "count": 3,
+          "low": 2
         },
         "high": {
           "install": 0,
           "nps": 1
         },
         "npsDist": {
+          "1": 1,
           "5": 1,
           "10": 1
         },
@@ -96815,6 +96827,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 1,
+            "low": 1
+          },
           "구매설치": {
             "total": 1,
             "low": 1
@@ -96825,6 +96841,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 1,
+            "low": 1
+          },
           "KPN": {
             "total": 1,
             "low": 1
@@ -96835,9 +96855,32 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
         },
         "alerts": [
+          {
+            "time": "12:09",
+            "store": "일과x잇프레쉬(Eat Fresh)",
+            "storeId": "228741",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "오류가 너무 잦음",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "11:22",
             "store": "줄리아 살롱",
@@ -96889,7 +96932,19 @@ window.SLACK_DATA = {
       },
       "1786330145.688629": {
         "post": "1786330145.688629",
-        "lastSeen": 1786331172.232
+        "lastSeen": 1786331729.241
+      },
+      "1786331727.339639": {
+        "post": "1786331727.339639",
+        "lastSeen": 1786331729.241
+      },
+      "1786331711.146049": {
+        "post": "1786331711.146049",
+        "lastSeen": 1786331729.241
+      },
+      "1786331373.345759": {
+        "post": "1786331373.345759",
+        "lastSeen": 1786331729.241
       }
     },
     "days": {
@@ -116048,7 +116103,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-10 12:06",
+    "at": "2026-08-10 12:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
