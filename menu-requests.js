@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 501,
- "updatedAt": "2026-08-10 16:30",
+ "version": 502,
+ "updatedAt": "2026-08-10 16:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1786347716.291909",
+   "date": "2026-08-10",
+   "time": "16:41",
+   "store": "고집파닭",
+   "biz": "6020745632",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1786347783.000859",
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786347716291909"
+  },
   {
    "ts": "1786346071.016949",
    "date": "2026-08-10",
@@ -22,12 +42,13 @@ window.MENU_REQUESTS = {
    "datt": [],
    "replies": [
     "ASP 생성 전..",
-    "CO에서 생성중.."
+    "CO에서 생성중..",
+    "규빈님 ㄱㄱ"
    ],
-   "rc": 5,
-   "lr": "1786346610.539749",
-   "status": "wait",
-   "handler": null,
+   "rc": 8,
+   "lr": "1786347538.856329",
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786346071016949"
   },
   {
@@ -68,7 +89,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1786346285.151989",
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786345134763339"
   },
