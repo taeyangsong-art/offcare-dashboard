@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3329,
+  "version": 3330,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -102145,7 +102145,71 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": ""
+      "updatedAt": "07:02",
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 1,
+          "low": 1
+        },
+        "nps": {
+          "count": 1,
+          "low": 0
+        },
+        "high": {
+          "install": 0,
+          "nps": 1
+        },
+        "npsDist": {
+          "10": 1
+        },
+        "installDist": {
+          "1": 1
+        },
+        "byIndustry": {
+          "서비스[뷰티,헤어]": 1
+        },
+        "byTenure": {
+          "구매설치": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "byVan": {
+          "KIS": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 1
+        },
+        "alerts": [
+          {
+            "time": "07:02",
+            "store": "머리하는풍경",
+            "storeId": "573292",
+            "industry": "뷰티",
+            "indBucket": "서비스[뷰티,헤어]",
+            "install": 1,
+            "nps": 10,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "혼자설치가 어려웠는데 상담원을 통해 안내받으며 설치가 가능했습니다. 친절한 설명으로 설치완료하여 위의 점수를 드립니다.",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
+        "praises": []
+      }
     }
   },
   "resp": {
@@ -123410,7 +123474,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-12 07:00",
+    "at": "2026-08-12 07:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
