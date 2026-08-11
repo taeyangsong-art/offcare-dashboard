@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3296,
+  "version": 3297,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -101582,7 +101582,7 @@ window.SLACK_DATA = {
         "offline": 51,
         "unknown": 0
       },
-      "updatedAt": "22:45",
+      "updatedAt": "23:30",
       "ob": {
         "count": 34,
         "byEmp": {
@@ -101864,18 +101864,18 @@ window.SLACK_DATA = {
         ]
       },
       "voc": {
-        "responses": 20,
+        "responses": 21,
         "install": {
-          "count": 8,
+          "count": 9,
           "low": 1
         },
         "nps": {
-          "count": 20,
+          "count": 21,
           "low": 5
         },
         "high": {
-          "install": 3,
-          "nps": 9
+          "install": 4,
+          "nps": 10
         },
         "npsDist": {
           "0": 1,
@@ -101885,22 +101885,26 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 3,
           "9": 1,
-          "10": 9
+          "10": 10
         },
         "installDist": {
           "1": 1,
           "3": 3,
           "4": 1,
-          "5": 3
+          "5": 4
         },
         "byIndustry": {
+          "서비스[학원]": 3,
           "서비스[뷰티,헤어]": 3,
-          "서비스[학원]": 2,
           "도소매": 1,
           "기타": 1,
           "요식업": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 9,
+            "low": 3
+          },
           "1개월": {
             "total": 4,
             "low": 1
@@ -101908,10 +101912,6 @@ window.SLACK_DATA = {
           "6개월": {
             "total": 5,
             "low": 0
-          },
-          "구매설치": {
-            "total": 8,
-            "low": 3
           },
           "3개월": {
             "total": 2,
@@ -101923,6 +101923,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 4,
+            "low": 1
+          },
           "SECTA9": {
             "total": 4,
             "low": 0
@@ -101936,10 +101940,6 @@ window.SLACK_DATA = {
             "low": 1
           },
           "KOCES": {
-            "total": 3,
-            "low": 1
-          },
-          "KIS": {
             "total": 3,
             "low": 1
           }
@@ -102086,6 +102086,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "23:30",
+            "store": "리폼옷수선",
+            "storeId": "547422",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "전화로친절하게알려주셨어잘흐고있습니다 필요한걸잘알려주셨어요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "15:28",
             "store": "틴팅크루",
             "storeId": "584752",
@@ -102129,7 +102141,7 @@ window.SLACK_DATA = {
     "watch": {
       "1786407894.219959": {
         "post": "1786407894.219959",
-        "lastSeen": 1786457730.125
+        "lastSeen": 1786458629.059
       },
       "1786410001.316629": {
         "post": "1786410001.316629",
@@ -102137,19 +102149,19 @@ window.SLACK_DATA = {
       },
       "1786411204.399189": {
         "post": "1786411204.399189",
-        "lastSeen": 1786457730.125
+        "lastSeen": 1786458629.059
       },
       "1786417483.270129": {
         "post": "1786417483.270129",
-        "lastSeen": 1786457730.125
+        "lastSeen": 1786458629.059
       },
       "1786424539.441059": {
         "post": "1786424539.441059",
-        "lastSeen": 1786457730.125
+        "lastSeen": 1786458629.059
       },
       "1786432513.837149": {
         "post": "1786432513.837149",
-        "lastSeen": 1786457730.125
+        "lastSeen": 1786458629.059
       },
       "1786433400.606969": {
         "post": "1786433400.606969",
@@ -102157,7 +102169,7 @@ window.SLACK_DATA = {
       },
       "1786455907.660869": {
         "post": "1786455907.660869",
-        "lastSeen": 1786457730.125
+        "lastSeen": 1786458629.059
       }
     },
     "days": {
@@ -123387,7 +123399,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-11 23:15",
+    "at": "2026-08-11 23:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
