@@ -989,6 +989,9 @@
     border-radius:7px; background:var(--surface); cursor:text; color:var(--ink); font-family:inherit;
     min-height:27px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
   .slot-field:hover{background:var(--surface2); border-color:var(--line-soft)}
+  /* 당직시트에서 온 값 — 편집 불가(고쳐도 다음 갱신에 덮인다) */
+  .slot-field.locked{cursor:default; background:transparent}
+  .slot-field.locked:hover{background:transparent; border-color:transparent}
   .slot-field:empty::before{content:"이름 입력"; color:var(--gray2)}
   .slot-field:focus{outline:none; border-color:var(--blue); background:var(--canvas); box-shadow:0 0 0 3px var(--blue-soft);
     white-space:normal}
@@ -1468,6 +1471,12 @@ const LS_SHAREEV = "opcare_shareev_v1";   // 공유 일정 — 이벤트 단위(
 const LS_VOCEDIT = "opcare_vocedit_v1";
 let COUNTS = load(LS_COUNT, {});   // { cat: { "YYYY-MM-DD": { emp: n } } }
 let DUTY   = load(LS_DUTY, {});    // { "YYYY-MM-DD": { day, aft, nit } }
+/* 당직은 구글 당직시트가 원본이다(scripts/fetch-duty.js → duty-data.js).
+ * 시트에 있는 날짜는 시트 값이 항상 이기고, 달력에서 직접 못 고치게 막는다.
+ * 시트에 없는 날짜만 기존 수기 입력(DUTY)을 그대로 쓴다. */
+function dutySheet(){ return (window.DUTY_DATA && window.DUTY_DATA.days) || {}; }
+function dutyOf(ds){ return dutySheet()[ds] || DUTY[ds] || {}; }
+function dutyFromSheet(ds){ return !!dutySheet()[ds]; }
 // 공유 일정: 이벤트(id) 단위로 저장·동기화 → 같은 날 여러 명이 동시에 등록/삭제해도 안 밀림(팀 전체 동일 화면).
 // SHAREEV = { id: {id, ds, emp, type, time, title, grp?, deleted?, ts} } (정본) · SHARE = 렌더용 날짜별 파생.
 let SHAREEV = load(LS_SHAREEV, null);
@@ -5427,16 +5436,16 @@ function renderDuty(){
     if(d===null) return `<div class="daycell empty"></div>`;
     const dateObj=new Date(y,m,d), ds=ymd(dateObj), dow=dateObj.getDay();
     const holi=HOLIDAYS[ds]; const isSun=dow===0||!!holi; const isSat=dow===6;
-    const rec=DUTY[ds]||{};
+    const rec=dutyOf(ds), fromSheet=dutyFromSheet(ds);
     const numCls = isSun?"s-sun":isSat?"s-sat":"";
     const memo=dutyMemoText(ds);
     return `<div class="daycell ${ds===todayStr?'today':''} ${holi?'holi':''}">
       <div class="dnum memo-open ${numCls}" title="클릭 → 이 날짜 메모" onclick="openDutyMemo('${ds}')">${d}${holi?`<span class="holi-tag">${holi}</span>`:''}
         <button class="memo-btn ${memo?'on':''}" title="${memo?'메모 보기·수정':'메모 추가'}" onclick="event.stopPropagation();openDutyMemo('${ds}')">📝</button></div>
-      ${slot("day","주간",ds,rec.day)}
-      ${slot("aft","오후",ds,rec.aft)}
-      ${slot("nit","야간",ds,rec.nit)}
-      ${slot("inst","행사",ds,rec.inst)}
+      ${slot("day","주간",ds,rec.day,fromSheet)}
+      ${slot("aft","오후",ds,rec.aft,fromSheet)}
+      ${slot("nit","야간",ds,rec.nit,fromSheet)}
+      ${slot("inst","행사",ds,rec.inst,fromSheet)}
       ${memo?`<div class="memo-chip" title="클릭 → 메모 수정" onclick="openDutyMemo('${ds}')">${escapeHtml(memo)}</div>`:''}
     </div>`;
   }).join("");
@@ -5445,7 +5454,11 @@ function renderDuty(){
     <div class="page-head">
       <div>
         <h2>📅 당직근무</h2>
-        <div class="sub">날짜별 주간 · 오후 · 야간 · 행사 담당자를 지정하세요. 항목을 클릭하면 바로 수정됩니다. 날짜(또는 📝)를 클릭하면 그 날짜에 메모를 남길 수 있습니다.</div>
+        <div class="sub">${(function(){
+          const D=window.DUTY_DATA;
+          if(D&&Object.keys(D.days||{}).length) return `<b>원격 당직시트</b>가 원본입니다 — 수정은 <a href="${D.url}" target="_blank" rel="noopener">시트에서</a> 하시고, 여기엔 자동 반영됩니다 (${D.updatedAt} 기준 ${Object.keys(D.days).length}일). 날짜(또는 📝)를 클릭하면 메모를 남길 수 있습니다.`;
+          return '날짜별 주간 · 오후 · 야간 · 행사 담당자를 지정하세요. 항목을 클릭하면 바로 수정됩니다. 날짜(또는 📝)를 클릭하면 그 날짜에 메모를 남길 수 있습니다.';
+        })()}</div>
       </div>
       <div class="controls">
         <button class="btn" onclick="dutyToday()">이번 달</button>
@@ -5473,13 +5486,13 @@ function renderDuty(){
     </div>
   `;
 }
-function slot(type,label,ds,val){
+function slot(type,label,ds,val,locked){
   const cls = type==="day"?"day":type==="aft"?"aft":type==="nit"?"nit":"inst";
-  return `<div class="duty-slot">
-    <span class="slot-tag ${cls}">${label}</span>
-    <div class="slot-field" contenteditable="true" spellcheck="false"
-      onblur="saveDuty('${ds}','${type}',this.innerText)">${val?escapeHtml(val):''}</div>
-  </div>`;
+  // 시트에서 온 날짜는 편집을 막는다 — 고쳐도 다음 갱신에 덮여 헛수고가 되기 때문
+  const field = locked
+    ? `<div class="slot-field locked" title="당직시트가 원본입니다 — 수정은 시트에서 하세요">${val?escapeHtml(val):''}</div>`
+    : `<div class="slot-field" contenteditable="true" spellcheck="false" onblur="saveDuty('${ds}','${type}',this.innerText)">${val?escapeHtml(val):''}</div>`;
+  return `<div class="duty-slot"><span class="slot-tag ${cls}">${label}</span>${field}</div>`;
 }
 function escapeHtml(s){ return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 function saveDuty(ds,type,text){
@@ -5777,7 +5790,7 @@ function shareDrop(ev, targetDs, cell){
 /* ================= Duty alert (하루 전) ================= */
 function checkDutyAlert(){
   const tomorrow=addDays(today(),1); const ds=ymd(tomorrow);
-  const rec=DUTY[ds]; if(!rec) return;
+  const rec=dutyOf(ds); if(!rec||!Object.keys(rec).length) return;
   const names=[];
   if(rec.day) names.push(`${rec.day}님(주간)`);
   if(rec.aft) names.push(`${rec.aft}님(오후)`);
@@ -5862,7 +5875,7 @@ function loadData(file, cb){
   })(0);
 }
 // 최초 로드(둘 다) → 부팅. 데이터 실패해도 앱은 뜸.
-loadData("slack-data.js", function(){ loadData("calendar-data.js", function(){ boot(); }); });
+loadData("slack-data.js", function(){ loadData("calendar-data.js", function(){ loadData("duty-data.js", function(){ boot(); }); }); });
 // 선택 날짜의 구글 캘린더 일정 배열 (없으면 [])
 function gcalDay(date){ return (window.GCAL_DATA&&window.GCAL_DATA.days&&window.GCAL_DATA.days[date])||[]; }
 function reloadSlackData(cb){ loadData("slack-data.js", cb); }
