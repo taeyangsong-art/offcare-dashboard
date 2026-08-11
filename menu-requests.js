@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 542,
- "updatedAt": "2026-08-11 17:15",
+ "version": 543,
+ "updatedAt": "2026-08-11 17:30",
  "days": 30,
  "items": [
   {
@@ -20330,30 +20330,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783868592872849"
-  },
-  {
-   "ts": "1783844257.488629",
-   "date": "2026-07-12",
-   "time": "17:17",
-   "store": "오브젝트 플랩",
-   "biz": "7130803356",
-   "pos": "토스포스",
-   "content": "메뉴 일괄등록하고싶어요\n···계정으로 메뉴목록 엑셀파일 송부드렸어요,",
-   "special": "메뉴 일괄등록하고싶어요",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "• 엑셀에 첨부된 이미지로는 메뉴 사진 등록x\n• 카테고리 정보가 없어 '상품' 카테고리로 일괄등록\n• 도시락과 캡모자에 가격정보 없어 0원으로 등록\n위 사항에 대해 문자 안내",
-    "혹시 모르니 백업"
-   ],
-   "rc": 3,
-   "lr": "1783902514.469489",
-   "rfx": 2,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783844257488629"
   }
  ],
  "ocr": {
