@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 541,
- "updatedAt": "2026-08-11 17:00",
+ "version": 542,
+ "updatedAt": "2026-08-11 17:15",
  "days": 30,
  "items": [
   {
@@ -20,9 +20,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1786435201.823849",
+   "replies": [
+    "*[금액 변경]*\n\n• 카테고리 : 시그니처\n    ◦ *트리플화이타*  29,500 >>  *30,900원*\n• 카테고리: 브런치\n    ◦ *아사다 프라이즈*  19,000 >> *20,000원*"
+   ],
+   "rc": 2,
+   "lr": "1786435270.991389",
    "rfx": 2,
    "status": "wait",
    "handler": null,
