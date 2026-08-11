@@ -2283,6 +2283,112 @@ function loadXlsxLib(){   // SheetJS 지연 로드 (업로드 시에만)
     document.head.appendChild(s); });
   return xlsxLibP;
 }
+/* ── 워드류 문서에서 표/문단을 뽑아 엑셀과 같은 rows 형태로 만든다 ──────────────
+ * docx·hwpx·odt 는 전부 ZIP + XML 이라 브라우저 기본 기능만으로 열 수 있다(외부 라이브러리 불필요).
+ * hwp(한글 바이너리 5.0)는 OLE 복합문서 + raw deflate 라, xlsx 용으로 이미 불러온 SheetJS 의
+ * CFB 파서를 재사용해 BodyText 스트림을 꺼낸 뒤 문단 텍스트 레코드만 읽는다. */
+async function inflateRaw(u8){
+  if(typeof DecompressionStream==='undefined') throw new Error('이 브라우저는 압축 해제를 지원하지 않습니다');
+  const ds=new DecompressionStream('deflate-raw');
+  const buf=await new Response(new Blob([u8]).stream().pipeThrough(ds)).arrayBuffer();
+  return new Uint8Array(buf);
+}
+// ZIP 중앙 디렉터리를 읽어 {파일명: 바이트} 로 — 필요한 항목만 푼다
+async function unzip(ab, wanted){
+  const dv=new DataView(ab), u8=new Uint8Array(ab);
+  let eo=-1;
+  for(let i=u8.length-22;i>=0 && i>u8.length-66000;i--) if(dv.getUint32(i,true)===0x06054b50){ eo=i; break; }
+  if(eo<0) throw new Error('ZIP 구조를 읽지 못했습니다');
+  const n=dv.getUint16(eo+10,true); let p=dv.getUint32(eo+16,true);
+  const out={};
+  for(let i=0;i<n;i++){
+    if(dv.getUint32(p,true)!==0x02014b50) break;
+    const method=dv.getUint16(p+10,true), csize=dv.getUint32(p+20,true);
+    const nlen=dv.getUint16(p+28,true), elen=dv.getUint16(p+30,true), clen=dv.getUint16(p+32,true);
+    const lho=dv.getUint32(p+42,true);
+    const name=new TextDecoder().decode(u8.subarray(p+46,p+46+nlen));
+    p+=46+nlen+elen+clen;
+    if(!wanted(name)) continue;
+    const lnlen=dv.getUint16(lho+26,true), lelen=dv.getUint16(lho+28,true);
+    const start=lho+30+lnlen+lelen, raw=u8.subarray(start,start+csize);
+    out[name]= method===0 ? raw : await inflateRaw(raw);
+  }
+  return out;
+}
+// "아메리카노 4,500" 처럼 한 줄에 이름+가격이 붙은 문단을 두 칸으로 쪼갠다
+function splitNamePrice(s){
+  const m=String(s||'').trim().match(/^(.+?)[\s.·:]+([\d][\d,\.]{2,})\s*원?$/);
+  return m ? [m[1].trim(), m[2]] : [String(s||'').trim()];
+}
+// XML 문자열 → {tables, paras}. 표와 표 밖 문단을 섞지 않는다 —
+// 섞으면 표 헤더로 잡은 컬럼 위치에 문단 행이 끼어들어 문단 쪽이 통째로 버려진다.
+function xmlToRows(xml, tag){
+  const doc=new DOMParser().parseFromString(xml,'application/xml');
+  const tables=[], paras=[], seen=new Set();
+  const txt=(el)=>Array.from(el.getElementsByTagName('*'))
+    .filter(n=>n.localName===tag.text).map(n=>n.textContent).join('').replace(/\s+/g,' ').trim();
+  for(const tr of Array.from(doc.getElementsByTagName('*')).filter(n=>n.localName===tag.row)){
+    const cells=Array.from(tr.getElementsByTagName('*')).filter(n=>n.localName===tag.cell).map(txt);
+    if(cells.some(Boolean)){ tables.push(cells); cells.forEach(c=>seen.add(c)); }
+  }
+  for(const p of Array.from(doc.getElementsByTagName('*')).filter(n=>n.localName===tag.para)){
+    const t=txt(p); if(t && !seen.has(t)) paras.push(splitNamePrice(t));
+  }
+  return {tables, paras};
+}
+// 한글 바이너리(.hwp) — 본문 스트림의 문단 텍스트 레코드(HWPTAG_PARA_TEXT=67)만 읽는다
+async function hwpToRows(ab){
+  if(!window.XLSX || !XLSX.CFB) throw new Error('한글 파일 해석기를 불러오지 못했습니다');
+  const cfb=XLSX.CFB.read(new Uint8Array(ab),{type:'array'});
+  const head=cfb.FileIndex.find(f=>/FileHeader/i.test(f.name));
+  const compressed = head ? !!(head.content[36] & 1) : true;      // FileHeader 플래그: 압축 여부
+  const lines=[];
+  for(const f of cfb.FileIndex){
+    if(!/Section\d+/i.test(f.name||'')) continue;
+    let data=new Uint8Array(f.content);
+    if(compressed){ try{ data=await inflateRaw(data); }catch(e){ continue; } }
+    const dv=new DataView(data.buffer,data.byteOffset,data.byteLength);
+    let o=0;
+    while(o+4<=data.length){
+      const h=dv.getUint32(o,true), tag=h&0x3ff; let size=(h>>20)&0xfff; o+=4;
+      if(size===0xfff){ size=dv.getUint32(o,true); o+=4; }
+      if(o+size>data.length) break;
+      if(tag===67){                                               // 문단 텍스트(UTF-16LE)
+        let s='';
+        for(let i=0;i+1<size;i+=2){ const c=dv.getUint16(o+i,true);
+          if(c===13||c===10){ s+='\n'; } else if(c>=32) s+=String.fromCharCode(c); }
+        s.split('\n').map(x=>x.trim()).filter(Boolean).forEach(x=>lines.push(x));
+      }
+      o+=size;
+    }
+  }
+  if(!lines.length) throw new Error('본문 텍스트를 찾지 못했습니다 (구버전 .hwp 이거나 암호가 걸린 파일일 수 있습니다)');
+  return {tables:[], paras:lines.map(splitNamePrice)};
+}
+async function docToRows(file){
+  const ext=(file.name.match(/\.[A-Za-z0-9]+$/)||[''])[0].toLowerCase();
+  const ab=await file.arrayBuffer();
+  if(ext==='.docx'){
+    const z=await unzip(ab,n=>n==='word/document.xml');
+    if(!z['word/document.xml']) throw new Error('word/document.xml 이 없습니다');
+    return xmlToRows(new TextDecoder().decode(z['word/document.xml']), {row:'tr',cell:'tc',para:'p',text:'t'});
+  }
+  if(ext==='.hwpx'){
+    const z=await unzip(ab,n=>/^Contents\/section\d+\.xml$/i.test(n));
+    const names=Object.keys(z); if(!names.length) throw new Error('Contents/section0.xml 이 없습니다');
+    const all={tables:[],paras:[]};
+    names.sort().forEach(n=>{ const r=xmlToRows(new TextDecoder().decode(z[n]), {row:'tr',cell:'tc',para:'p',text:'t'});
+      all.tables.push(...r.tables); all.paras.push(...r.paras); });
+    return all;
+  }
+  if(ext==='.odt'){
+    const z=await unzip(ab,n=>n==='content.xml');
+    if(!z['content.xml']) throw new Error('content.xml 이 없습니다');
+    return xmlToRows(new TextDecoder().decode(z['content.xml']), {row:'table-row',cell:'table-cell',para:'p',text:'span'});
+  }
+  if(ext==='.hwp') return await hwpToRows(ab);
+  return null;   // 엑셀 계열 → 기존 경로
+}
 function menuregXlExtract(rows){
   // 1) 헤더 행 탐지: 메뉴명/가격(/분류) 컬럼 키워드
   let nameCol=-1, priceCol=-1, catCol=-1, headerRow=-1;
@@ -2317,12 +2423,24 @@ async function menuregXlUpload(input){
   const f=input.files&&input.files[0]; if(!f) return;
   const info=document.getElementById('mrXlInfo'); if(info) info.textContent='⏳ 변환 중...';
   try{
-    await loadXlsxLib();
-    const wb=XLSX.read(await f.arrayBuffer(),{type:'array'});
-    const lines=[];
-    for(const sn of wb.SheetNames) lines.push(...menuregXlExtract(XLSX.utils.sheet_to_json(wb.Sheets[sn],{header:1,defval:''})));
+    const ext=(f.name.match(/\.[A-Za-z0-9]+$/)||[''])[0].toLowerCase();
+    let lines=[];
+    if(ext==='.hwp') await loadXlsxLib();          // 한글 바이너리는 SheetJS 의 CFB 파서를 쓴다
+    const docRows=await docToRows(f);             // 워드류(docx·hwpx·odt·hwp)
+    if(docRows){
+      // 표와 문단을 따로 뽑아 합친다(표 헤더 매핑이 문단 행을 삼키지 않도록). 같은 항목은 한 번만.
+      const seen=new Set();
+      for(const part of [docRows.tables, docRows.paras]){
+        if(!part.length) continue;
+        for(const l of menuregXlExtract(part)) if(!seen.has(l)){ seen.add(l); lines.push(l); }
+      }
+    }else{                                        // 엑셀 계열(xlsx·xls·csv)
+      await loadXlsxLib();
+      const wb=XLSX.read(await f.arrayBuffer(),{type:'array'});
+      for(const sn of wb.SheetNames) lines.push(...menuregXlExtract(XLSX.utils.sheet_to_json(wb.Sheets[sn],{header:1,defval:''})));
+    }
     if(!lines.length){ if(info) info.textContent='❌ 메뉴 항목을 찾지 못했습니다 — 파일에 메뉴명·가격이 있는지 확인해주세요.'; return; }
-    menuregXlName=f.name.replace(/\.(xlsx?|csv)$/i,'');
+    menuregXlName=f.name.replace(/\.(xlsx?|csv|docx|hwpx?|odt)$/i,'');
     menuregXlCache=lines.join('\n');
     const ta=document.getElementById('mrXlGrid'); if(ta) ta.value=menuregXlCache;
     if(info) info.textContent='✅ '+f.name+' → '+lines.length+'개 항목 추출 — 검수 후 복사/다운로드하세요';
@@ -2406,8 +2524,8 @@ function renderMenuReg(){
     </div>
     ${detail}
     <div class="card">
-      <div class="card-head"><h3>📂 매장 엑셀 → POS 양식 변환</h3><span class="hint">매장이 보내준 메뉴 엑셀(xlsx·xls·csv) 업로드 → 자동 추출 → 검수 → 4개 POS 양식</span></div>
-      <input type="file" accept=".xlsx,.xls,.csv" onchange="menuregXlUpload(this)" style="font-size:13px">
+      <div class="card-head"><h3>📂 매장 메뉴 파일 → POS 양식 변환</h3><span class="hint">매장이 보내준 메뉴 파일(엑셀 xlsx·xls·csv / 워드 docx / 한글 hwp·hwpx / odt) 업로드 → 자동 추출 → 검수 → 4개 POS 양식</span></div>
+      <input type="file" accept=".xlsx,.xls,.csv,.docx,.hwp,.hwpx,.odt" onchange="menuregXlUpload(this)" style="font-size:13px">
       <div id="mrXlInfo" class="hint" style="margin-top:6px">${menuregXlName?'📄 '+escapeHtml(menuregXlName)+' (이전 변환 유지)':''}</div>
       <textarea id="mrXlGrid" rows="8" style="width:100%;font-family:ui-monospace,Consolas,monospace;font-size:13px;border:1px solid var(--line,#ddd);border-radius:10px;padding:10px;margin-top:8px" oninput="menuregXlCache=this.value" placeholder="업로드하면 여기에 '카테고리 | 메뉴명 | 가격' 형식으로 추출됩니다 (직접 입력·수정도 가능)">${escapeHtml(menuregXlCache)}</textarea>
       <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;align-items:center">
