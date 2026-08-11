@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 523,
- "updatedAt": "2026-08-11 11:32",
+ "version": 524,
+ "updatedAt": "2026-08-11 11:47",
  "days": 30,
  "items": [
   {
@@ -10839,7 +10839,105 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1JhyVQPAm-BHpCRDIAHe01JupBFyznoMo",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "밥 재료 선택",
+       "name": "백미밥",
+       "price": 0
+      },
+      {
+       "category": "밥 재료 선택",
+       "name": "곤약밥",
+       "price": 0
+      },
+      {
+       "category": "맵기 선택",
+       "name": "순한맛",
+       "price": 0
+      },
+      {
+       "category": "맵기 선택",
+       "name": "보통맛",
+       "price": 0
+      },
+      {
+       "category": "맵기 선택",
+       "name": "매운맛",
+       "price": 0
+      },
+      {
+       "category": "국물 선택",
+       "name": "기본 된장찌개",
+       "price": 0
+      },
+      {
+       "category": "국물 선택",
+       "name": "우유 계란찜",
+       "price": 500
+      },
+      {
+       "category": "국물 선택",
+       "name": "우삼겹 된장찌개",
+       "price": 1000
+      }
+     ]
+    },
+    {
+     "id": "13CFX_z7MJJxnfVXVc2Yz62_dp4s6go7G",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "우삼겹 된장찌개",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "국물 빼고 주세요",
+       "price": 0
+      },
+      {
+       "category": "고기 추가",
+       "name": "(명품 한돈) 막고기 100g",
+       "price": 4000
+      },
+      {
+       "category": "고기 추가",
+       "name": "(명품 한돈) 불고기 100g",
+       "price": 4500
+      },
+      {
+       "category": "고기 추가",
+       "name": "(명품 한돈) 삼겹살 100g",
+       "price": 6000
+      },
+      {
+       "category": "고기 추가",
+       "name": "(명품 한돈) 숙성목살 100g",
+       "price": 6000
+      },
+      {
+       "category": "고기 추가",
+       "name": "(명품 한돈) 항정살 100g",
+       "price": 8000
+      },
+      {
+       "category": "고기 추가",
+       "name": "(국내산 냉장) 닭다리살 100g",
+       "price": 4000
+      },
+      {
+       "category": "고기 추가",
+       "name": "우삼겹 100g",
+       "price": 4000
+      }
+     ]
+    }
+   ],
    "replies": [
     "요청사항을 모르겠어서 문자"
    ],
@@ -10884,7 +10982,137 @@ window.MENU_REQUESTS = {
    "special": "test",
    "drive": [],
    "files": 3,
-   "att": [],
+   "att": [
+    {
+     "name": "5.png",
+     "fid": "F0BLS0SRHJL",
+     "from": "원글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "음료수",
+       "name": "콜카콜라",
+       "price": 2000
+      },
+      {
+       "category": "음료수",
+       "name": "펩시제로",
+       "price": 2000
+      },
+      {
+       "category": "음료수",
+       "name": "칠성사이다",
+       "price": 2000
+      },
+      {
+       "category": "음료수",
+       "name": "환타파인",
+       "price": 2000
+      },
+      {
+       "category": "음료수",
+       "name": "초정탄산수",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "name": "3.png",
+     "fid": "F0BKRDC09NX",
+     "from": "원글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "추가메뉴",
+       "name": "뼈추가",
+       "price": 18000
+      },
+      {
+       "category": "추가메뉴",
+       "name": "시레기추가",
+       "price": 3000
+      },
+      {
+       "category": "추가메뉴",
+       "name": "계장볶음밥",
+       "price": 3000
+      },
+      {
+       "category": "추가메뉴",
+       "name": "당면추가",
+       "price": 2000
+      },
+      {
+       "category": "추가메뉴",
+       "name": "라면사리",
+       "price": 2000
+      },
+      {
+       "category": "추가메뉴",
+       "name": "공기밥",
+       "price": 1000
+      }
+     ]
+    },
+    {
+     "name": "4.png",
+     "fid": "F0BKRDBQMH9",
+     "from": "원글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류",
+       "name": "참이슬",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "참이슬오리지널",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "진로이즈백",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "새로",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "처음처럼",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "시원",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "카스",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "테라",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "켈리",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "국순당막걸리",
+       "price": 5000
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [],
    "rc": 1,
@@ -11094,7 +11322,119 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1WrV3t0W86-c0nIu0nCYVQ5RAZenLN2SW",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "COFFEE",
+       "name": "아메리카노",
+       "price": 4000
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페라떼",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "바닐라라떼",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "카라멜마키아또",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "젤라또 아포가토",
+       "price": 6000
+      },
+      {
+       "category": "COFFEE",
+       "name": "달달구리",
+       "price": 3000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "녹차라떼",
+       "price": 5000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "초코라떼",
+       "price": 5000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "아이스티",
+       "price": 5000
+      },
+      {
+       "category": "ADE",
+       "name": "레몬",
+       "price": 5000
+      },
+      {
+       "category": "ADE",
+       "name": "자몽",
+       "price": 5000
+      },
+      {
+       "category": "ADE",
+       "name": "망고",
+       "price": 5000
+      },
+      {
+       "category": "ADE",
+       "name": "청포도",
+       "price": 5000
+      },
+      {
+       "category": "ADE",
+       "name": "깔라만시",
+       "price": 5000
+      },
+      {
+       "category": "TEA",
+       "name": "허브차",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "생강차",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "유자차",
+       "price": 4000
+      },
+      {
+       "category": "SPECIAL",
+       "name": "미숫가루",
+       "price": 5000
+      },
+      {
+       "category": "SPECIAL",
+       "name": "식혜",
+       "price": 6000
+      },
+      {
+       "category": "SPECIAL",
+       "name": "수박주스",
+       "price": 6000
+      },
+      {
+       "category": "SPECIAL",
+       "name": "컵빙수",
+       "price": 6000
+      }
+     ]
+    }
+   ],
    "replies": [],
    "rc": 1,
    "lr": "1784933167.252149",
@@ -11207,7 +11547,160 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1EDMiyXneieaUCQ_dKdN4IfCHVYwnfZdr",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "Stoli",
+       "price": 100000
+      },
+      {
+       "category": "",
+       "name": "Jameson",
+       "price": 110000
+      },
+      {
+       "category": "",
+       "name": "Jim Beam",
+       "price": 110000
+      }
+     ]
+    },
+    {
+     "id": "1ZkfzE4mlJ0Lk14RCtv0TraVDEsmT9B8v",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "Cocktails",
+       "name": "Rum coke",
+       "price": 8000
+      },
+      {
+       "category": "Cocktails",
+       "name": "Gin tonic",
+       "price": 8000
+      },
+      {
+       "category": "Cocktails",
+       "name": "Vodka Mix",
+       "price": 8000
+      },
+      {
+       "category": "Cocktails",
+       "name": "Malibu Mix",
+       "price": 8000
+      },
+      {
+       "category": "Cocktails",
+       "name": "Jack Coke",
+       "price": 10000
+      },
+      {
+       "category": "Cocktails",
+       "name": "Kahlua milk",
+       "price": 10000
+      },
+      {
+       "category": "Cocktails",
+       "name": "Black Russian",
+       "price": 10000
+      },
+      {
+       "category": "Cocktails",
+       "name": "Got fathe/mother",
+       "price": 10000
+      },
+      {
+       "category": "Cocktails",
+       "name": "Agwa Bomb (Redbull)",
+       "price": 10000
+      },
+      {
+       "category": "Cocktails",
+       "name": "Jager Bomb (Redbull)",
+       "price": 10000
+      },
+      {
+       "category": "Cocktails",
+       "name": "Peach Crush",
+       "price": 12000
+      },
+      {
+       "category": "Cocktails",
+       "name": "Midori Sour",
+       "price": 12000
+      },
+      {
+       "category": "Cocktails",
+       "name": "June Bug",
+       "price": 12000
+      },
+      {
+       "category": "Cocktails",
+       "name": "Blue Hawaii",
+       "price": 12000
+      },
+      {
+       "category": "Cocktails",
+       "name": "Orgasm",
+       "price": 15000
+      },
+      {
+       "category": "Cocktails",
+       "name": "B-52",
+       "price": 10000
+      },
+      {
+       "category": "Cocktails",
+       "name": "Long Island Iced Tea",
+       "price": 15000
+      },
+      {
+       "category": "Cocktails",
+       "name": "Jim Beam Mix",
+       "price": 9000
+      },
+      {
+       "category": "Cocktails",
+       "name": "Jameson Mix",
+       "price": 10000
+      },
+      {
+       "category": "Cocktails",
+       "name": "Hennessy Coke",
+       "price": 15000
+      },
+      {
+       "category": "Cocktails",
+       "name": "Whisky Soda",
+       "price": 15000
+      },
+      {
+       "category": "Cocktails",
+       "name": "Pina Colada",
+       "price": 15000
+      },
+      {
+       "category": "Cocktails",
+       "name": "Mojito",
+       "price": 15000
+      },
+      {
+       "category": "Cocktails",
+       "name": "Pina Colada (non alcohol)",
+       "price": 12000
+      },
+      {
+       "category": "Cocktails",
+       "name": "Mojito (non alcohol)",
+       "price": 12000
+      }
+     ]
+    }
+   ],
    "replies": [],
    "rc": 1,
    "lr": "1784882385.149719",
@@ -11301,7 +11794,13 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1cvzS_bxiCuLsv2yeWqn9xYdcNiaouwtB",
+     "kind": "product_photo",
+     "menu": []
+    }
+   ],
    "replies": [],
    "rc": 1,
    "lr": "1784868336.800179",
@@ -11366,7 +11865,13 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "10whYsgykr151rP7h-0YzdyNPLckHXxlP",
+     "kind": "other",
+     "menu": []
+    }
+   ],
    "replies": [
     "커피 1L 보틀 옵션으로",
     "아메리카노  3500 인상\n카페라떼 4800\n바닐라라떼 5800\n헤이즐넛 4000\n헤이즐넛 라떼 5300\n\n옵션 추가"
@@ -11967,7 +12472,18 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1bKfYFfVxxKhTI7w_MBDN7J68ORZtDW4C",
+     "kind": "other",
+     "menu": []
+    },
+    {
+     "id": "1EvXYPWn7j1gsyihBThd1iw5raFhGnkYu",
+     "kind": "other",
+     "menu": []
+    }
+   ],
    "replies": [
     "필수선택 설정 완료"
    ],
@@ -12424,7 +12940,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 3,
    "lr": "1784686297.366029",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784686273885019"
@@ -12445,7 +12961,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784685310.692339",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784685305722849"
@@ -12468,7 +12984,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 22,
    "lr": "1784688201.529729",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784684753124959"
@@ -12492,7 +13008,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784684518.559449",
-   "rfx": 0,
+   "rfx": 2,
    "status": "dup",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784684513733729"
@@ -12518,7 +13034,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1784684941.994169",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784684378495469"
@@ -12552,7 +13068,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 11,
    "lr": "1784688235.423049",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784684009650729"
@@ -12573,7 +13089,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784682868.985729",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784682863328969"
@@ -12596,7 +13112,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1784641010.894409",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784628801009349"
@@ -12619,7 +13135,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1784631597.797149",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784626521680269"
@@ -12642,7 +13158,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 4,
    "lr": "1784631096.467479",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784625612247609"
@@ -12667,7 +13183,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 9,
    "lr": "1784628817.059039",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784624260253589"
@@ -12690,7 +13206,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1784624077.417929",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784624019849009"
@@ -12711,7 +13227,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784622965.116869",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784622960842869"
@@ -12740,7 +13256,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 6,
    "lr": "1784633798.003209",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784622898374529"
@@ -12761,7 +13277,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784621122.438439",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784621116645489"
@@ -12784,7 +13300,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1784617652.948459",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784617367166589"
@@ -12807,7 +13323,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784615778.463049",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784615773869209"
@@ -12831,7 +13347,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 4,
    "lr": "1784615897.461339",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784615511438259"
@@ -12852,7 +13368,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1784614706.337049",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784614669127979"
@@ -12873,7 +13389,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1784614638.782219",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784614544290459"
@@ -12897,7 +13413,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1784614230.677969",
-   "rfx": 0,
+   "rfx": 2,
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784612705347739"
@@ -12920,7 +13436,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1784610981.862629",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784610945917399"
@@ -12941,7 +13457,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1784610930.883219",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784610917170279"
@@ -12962,7 +13478,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784610193.883789",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784610189016449"
@@ -12985,7 +13501,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 6,
    "lr": "1784610258.977879",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784609903683779"
@@ -13006,7 +13522,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 3,
    "lr": "1784607596.946089",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784607539264439"
@@ -13029,7 +13545,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1784608596.305079",
-   "rfx": 0,
+   "rfx": 2,
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784607313602819"
@@ -13052,7 +13568,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1784605361.712079",
-   "rfx": 0,
+   "rfx": 2,
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784605301891209"
@@ -13073,7 +13589,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784603123.558149",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784603119669479"
@@ -13094,7 +13610,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 3,
    "lr": "1784603552.957879",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784603079845949"
@@ -13115,7 +13631,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784602728.184089",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784602723983739"
@@ -13138,7 +13654,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1784603125.905309",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784602517541959"
@@ -13161,7 +13677,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 4,
    "lr": "1784602939.481629",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784602295871719"
@@ -13184,7 +13700,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784602140.301419",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784602134653989"
@@ -13207,7 +13723,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1784600361.774749",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784599959387169"
@@ -13230,7 +13746,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 4,
    "lr": "1784558451.509699",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784539029405799"
@@ -13253,7 +13769,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1784538371.655639",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784538364150319"
@@ -13274,7 +13790,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784536495.442669",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784536488876279"
@@ -13295,7 +13811,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784534091.553409",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784534087324769"
@@ -13316,7 +13832,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1784531367.926809",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784531331664349"
@@ -13337,7 +13853,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784531058.205069",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784531051794269"
@@ -13360,7 +13876,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1784532491.048589",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784529797935699"
@@ -13381,7 +13897,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1784528995.608939",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784528904852669"
@@ -13406,7 +13922,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 8,
    "lr": "1784529817.993849",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784528467858269"
@@ -13429,7 +13945,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1784527567.768179",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784527418695909"
@@ -13452,7 +13968,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1784525091.607409",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784525073955009"
@@ -13476,7 +13992,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 5,
    "lr": "1784523084.778619",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784522465049319"
@@ -13497,7 +14013,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784522004.910059",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784522000232929"
@@ -13522,7 +14038,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 9,
    "lr": "1784519548.083829",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784517728533079"
@@ -13543,7 +14059,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784514754.929919",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784514720972089"
@@ -13567,7 +14083,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 9,
    "lr": "1784513125.664989",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784510571745689"
@@ -13588,7 +14104,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1784508797.975689",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784508699571049"
@@ -13611,7 +14127,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1784507979.069559",
-   "rfx": 0,
+   "rfx": 2,
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784507881569669"
@@ -13632,7 +14148,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1784505858.448099",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784505739652639"
@@ -13655,7 +14171,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1784506791.151899",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784468911100679"
@@ -13679,7 +14195,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 4,
    "lr": "1784358858.684709",
-   "rfx": 0,
+   "rfx": 2,
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784353582878579"
@@ -13702,7 +14218,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1784280936.734119",
-   "rfx": 0,
+   "rfx": 2,
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784280103551129"
@@ -13728,7 +14244,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 9,
    "lr": "1784277517.378239",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784272576238579"
@@ -13751,7 +14267,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1784248690.778339",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784248562338659"
@@ -13772,7 +14288,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 3,
    "lr": "1784207765.911269",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784206215398309"
@@ -13795,7 +14311,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 4,
    "lr": "1784205355.253429",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784198459670669"
@@ -13813,10 +14329,12 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
+   "replies": [
+    "점주님 연락드렸으나 부재 상품채널은 고객용채널 노출되어있으며 옵션이 미노출로 노출표기 완료\n솔라피 발송완료"
+   ],
    "rc": 2,
    "lr": "1784205629.892179",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784197195305059"
@@ -13837,7 +14355,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784190753.800599",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784190726200599"
@@ -13864,10 +14382,13 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
+   "replies": [
+    "이미지에 사진 이름 없음",
+    "차례대로 아메리카노 루오라떼 바닐라라떼 돌체라떼 아포가토 코코넛커피스무디 버터크림라떼 쑥크림라떼 생레몬에이드 생자몽에이드 히비스커스유자에이드 아이스티 초코라떼 말차라떼 밀크티 유자 생자몽차 생레몬차 입니다\n\n여기 순서라고함"
+   ],
    "rc": 3,
    "lr": "1784191261.263049",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784190632504709"
@@ -13885,10 +14406,15 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
+   "replies": [
+    "대표님도 뭔지 모르고 그냥 들으신 그대로 전달 주셨던거라... ㅠㅠ",
+    "그럼 껐켰하면 되는것이죠?!",
+    "제가 문자 보내겠습니다!",
+    "아하 네넵 알겠습니다!"
+   ],
    "rc": 20,
    "lr": "1784191106.916049",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784190608597369"
@@ -13920,7 +14446,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784190517.827539",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784190512892049"
@@ -13938,10 +14464,12 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
+   "replies": [
+    "• 콩국수 11,000원 추가_위치: 코다리 메뉴옆자리에 설정요청"
+   ],
    "rc": 6,
    "lr": "1784191336.996359",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784189509933229"
@@ -13959,10 +14487,12 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
+   "replies": [
+    "카테고리 2줄 > 1줄로 변경함 한눈에 안보임"
+   ],
    "rc": 2,
    "lr": "1784188377.317119",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784188054601629"
@@ -13983,7 +14513,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784187969.211399",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784187963519469"
@@ -14004,7 +14534,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1784187391.394239",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784187376070729"
@@ -14025,7 +14555,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784183152.206769",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784183146785519"
@@ -14046,7 +14576,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1784181110.191279",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784181090393389"
@@ -14067,7 +14597,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784180405.903959",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784180400125019"
@@ -14085,10 +14615,13 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
+   "replies": [
+    "요거 토플파 복제가 나을것 같다고 하시는데 참고 부탁드립니다!",
+    "님 ,넵 이전 사업자번호 공유드립니다.:꾸벅:*(양도) 사업자번호···*"
+   ],
    "rc": 5,
    "lr": "1784179056.473749",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784177531153359"
@@ -14109,7 +14642,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784164066.208189",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784164061906459"
@@ -14130,7 +14663,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784164058.921079",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784164053386929"
@@ -14151,7 +14684,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784164049.668999",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784164044638839"
@@ -14172,7 +14705,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784163958.500339",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784163952625969"
@@ -14195,7 +14728,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1784123701.524949",
-   "rfx": 0,
+   "rfx": 2,
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784122853741309"
@@ -14218,7 +14751,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1784123189.809259",
-   "rfx": 0,
+   "rfx": 2,
    "status": "dup",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784121276079219"
