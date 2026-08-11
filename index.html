@@ -2523,6 +2523,48 @@ async function menuregXlUpload(input){
 function menuregSelect(ts){ menuregSel=(menuregSel===ts?null:ts); renderMenuReg(); }
 function menuregSetFilter(f){ menuregFilter=f; renderMenuReg(); }
 function menuregCacheGrid(){ const ta=document.getElementById('mrGrid'); if(ta&&menuregSel) menuregGridCache[menuregSel]=ta.value; }
+/* 판독 결과 전부를 아래 '양식 변환' 그리드로 옮긴다.
+ * 사진을 10장 넘게 나눠 올리는 매장(또래오래 파파빈 등)은 카드마다 복사하기가 번거롭다.
+ * 사진 사이에 같은 항목이 겹치는 일이 많아 완전히 같은 줄은 한 번만 넣는다.
+ * 기존 그리드 내용이 있으면 덮지 않고 뒤에 이어붙인다. */
+function menuregFillFromOcr(ts){
+  const it=menuregItems().find(x=>x.ts===ts); if(!it) return;
+  const imgs=[...(it.att||[]), ...(it.datt||[])];
+  const lines=[], seen=new Set();
+  let noPrice=0;
+  for(const a of imgs){
+    if((a.menu||[]).length){
+      for(const m of a.menu){
+        const name=String(m.name||'').replace(/\|/g,'/').trim(); if(!name) continue;
+        const cat=String(m.category||'').replace(/\|/g,'/').trim()||'메뉴';
+        const price=Number(m.price)||0;
+        const key=cat+' '+name+' '+price;
+        if(seen.has(key)) continue; seen.add(key);
+        if(!price) noPrice++;
+        lines.push(cat+' | '+name+' | '+(price||''));
+      }
+    }else if(a.ocr){                                  // 구 tesseract 캐시(문자열)
+      for(const l of String(ocrExtractMenu(a.ocr,it.store)||'').split('\n')){
+        const t=l.trim(); if(!t) continue;
+        if(seen.has('L '+t)) continue; seen.add('L '+t);
+        lines.push('메뉴 | '+t);
+      }
+    }
+  }
+  if(!lines.length){ alert('옮길 판독 결과가 없습니다.\n이미지가 아직 판독되지 않았거나 메뉴 목록이 아닌 사진일 수 있습니다.'); return; }
+  const ta=document.getElementById('mrXlGrid');
+  if(!ta){ alert('양식 변환란을 찾지 못했습니다.'); return; }
+  const cur=(ta.value||'').trim();
+  ta.value = cur ? cur+'\n'+lines.join('\n') : lines.join('\n');
+  menuregXlCache=ta.value;
+  if(!menuregXlName) menuregXlName=(it.store||'매장');   // 다운로드 파일명에 매장명이 들어가게
+  const info=document.getElementById('mrXlInfo');
+  if(info) info.textContent='✅ '+(it.store||'')+' 판독 결과 '+lines.length+'개를 옮겼습니다'
+    +(cur?' (기존 내용 뒤에 추가)':'')+(noPrice?' · 가격 미판독 '+noPrice+'개는 가격을 채워야 변환됩니다':'')
+    +' — 검수 후 아래 버튼으로 양식을 만드세요';
+  ta.scrollIntoView({behavior:'smooth',block:'center'});
+  ta.focus();
+}
 function renderMenuReg(){
   const {all,items}=menuregFiltered();
   const upd=(window.MENU_REQUESTS&&window.MENU_REQUESTS.updatedAt)||'';
@@ -2558,7 +2600,11 @@ function renderMenuReg(){
         if(!withMenu.length&&!skipped.length&&!legacy.length&&!blocked) return '';
         const rows=a=>(a.menu||[]).map(m=>`${m.category?escapeHtml(m.category)+' | ':''}${escapeHtml(m.name)} | ${m.price?m.price.toLocaleString():'가격미상'}`).join('\n');
         return `<div style="margin-top:8px">
-        <div style="font-size:13px;font-weight:700;margin-bottom:4px">🔎 이미지 자동판독 <span class="cnt-badge">${withMenu.reduce((n,a)=>n+a.menu.length,0)}</span> <span class="hint">(Claude 비전 · 메뉴명·가격만 추출 · 등록 전 원본과 대조 권장)</span></div>
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:6px">
+          <div style="font-size:13px;font-weight:700">🔎 이미지 자동판독 <span class="cnt-badge">${withMenu.reduce((n,a)=>n+a.menu.length,0)}</span></div>
+          ${(withMenu.length||legacy.length)?`<button class="btn" style="background:var(--blue);color:#fff;border-color:var(--blue)" onclick="menuregFillFromOcr('${sel.ts}')" title="사진 ${withMenu.length+legacy.length}장의 판독 결과를 아래 양식 변환란에 한 번에 넣습니다">📥 전체 ${withMenu.reduce((n,a)=>n+a.menu.length,0)}개 → 양식 변환란에 넣기</button>`:''}
+          <span class="hint">Claude 비전 · 메뉴명·가격만 추출 · 등록 전 원본과 대조 권장</span>
+        </div>
         ${blocked?`<div class="hint" style="color:#c2410c;margin-bottom:6px">🔒 Drive 이미지 ${blocked}장은 소유자가 다운로드를 막아 판독하지 못했습니다 — 위 <b>🖼 이미지</b> 링크로 직접 확인하세요.</div>`:''}
         ${withMenu.map(a=>{
           // Drive 이미지는 저장소에 없다 → 구글 썸네일을 직접 부른다. 권한 없으면 onerror 로 링크 대체.
@@ -2583,7 +2629,7 @@ function renderMenuReg(){
         <div style="font-size:13px;font-weight:700;margin-bottom:4px">💬 요청자 댓글 <span class="cnt-badge">${sel.replies.length}</span> <span class="hint">(요청사항 참고)</span></div>
         ${sel.replies.map(r=>`<div style="background:rgba(94,92,230,.06);border-left:3px solid var(--blue,#5e5ce6);border-radius:8px;padding:8px 11px;font-size:13px;white-space:pre-wrap;margin-bottom:6px;max-height:120px;overflow:auto">${escapeHtml(r)}</div>`).join('')}
       </div>`:''}
-      <div class="hint" style="margin-top:10px">💡 위 요청내용·댓글·이미지 판독을 참고해 <b>아래 「📂 매장 엑셀 → POS 양식 변환」</b>에서 4개 POS 양식을 만드세요.</div>
+      <div class="hint" style="margin-top:10px">💡 판독 결과는 <b>📥 양식 변환란에 넣기</b> 로 한 번에 옮길 수 있습니다. 옮긴 뒤 아래 <b>「📂 매장 메뉴 파일 → POS 양식 변환」</b>에서 검수하고 4개 POS 양식을 만드세요.</div>
     </div>`:'';
   document.getElementById("main").innerHTML=`
     <div class="page-head"><div><h2>🍱 메뉴등록</h2><div class="sub">슬랙 #oc팀_메뉴요청 자동 적재 (최근 ${(window.MENU_REQUESTS&&window.MENU_REQUESTS.days)||7}일) · 요청 선택 → 메뉴 확인 → POS 양식 다운로드${upd?' · 최신 적재 '+upd:''}</div></div></div>
