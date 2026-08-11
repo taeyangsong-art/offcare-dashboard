@@ -2290,19 +2290,58 @@ function menuregDedupMsg(){
   return '\n\n🔁 '+p.join(' · ')+' (원본 그리드는 그대로입니다)';
 }
 function menuregCsvCell(v){ v=(v==null?'':String(v)); return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v; }
-function menuregGen(pi,gridId){
+/* 바코드·각종 코드는 반드시 '텍스트' 로 내보낸다.
+ * CSV 로 13자리 숫자를 쓰면 엑셀이 무조건 수치로 읽어 8.80106E+12 로 표시하고,
+ * 그 상태로 저장하면 값 자체가 반올림돼 바코드가 깨진다. 셀 서식으로 고쳐도 매번 손이 간다.
+ * → 기본 다운로드를 xlsx 로 바꾸고 해당 칸을 문자열로 넣어 처음부터 전체 자릿수가 보이게 한다. */
+const MENUREG_TEXTCOL=/바코드|코드|상품\s*ID/i;
+function menuregCellVal(header,v){
+  if(v===undefined||v===null||v==='') return '';
+  const s=String(v);
+  if(MENUREG_TEXTCOL.test(header)) return s;                                  // 바코드·상품코드·ERP코드 등
+  if(/^\d+$/.test(s)&&s.length<=9&&!/^0\d/.test(s)) return Number(s);          // 가격·수량은 수치로(앞자리 0 보존은 텍스트)
+  return s;
+}
+function menuregAoa(P,rows){
+  const aoa=[]; if(P.header) aoa.push(P.cols.slice());
+  for(const r of rows){ const o=Object.assign({},P.defaults||{},P.row(r));
+    aoa.push(P.cols.map(h=>menuregCellVal(h,o[h]))); }
+  return aoa;
+}
+function menuregDl(name,blob){
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob); a.download=name; a.click(); URL.revokeObjectURL(a.href);
+}
+async function menuregGen(pi,gridId){
   const P=MENUREG_POS[pi]; const rows=menuregParseGrid(gridId);
   if(!rows.length){ alert('메뉴 항목이 없습니다.\n한 줄당 "'+FMT_HINT+'" 형식입니다.\n뒤쪽 4칸은 없으면 생략해도 됩니다 (최소 "상품명 | 가격").'); return; }
   const base=gridId==='mrXlGrid'?(menuregXlName||'엑셀변환'):((menuregItems().find(i=>i.ts===menuregSel)||{}).store||'매장');
-  const lines=[]; if(P.header) lines.push(P.cols.map(menuregCsvCell).join(','));
-  for(const r of rows){ const o=Object.assign({},P.defaults||{},P.row(r)); lines.push(P.cols.map(h=>menuregCsvCell(o[h]!==undefined?o[h]:'')).join(',')); }
-  const csv='﻿'+lines.join('\n')+'\n';
   const safe=base.replace(/[\\/:*?"<>|]/g,'_');
-  const a=document.createElement('a');
-  a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));
-  a.download=P.key+'_업로드_'+safe+'.csv'; a.click(); URL.revokeObjectURL(a.href);
+  const wantCsv=!!(document.getElementById('mrXlCsv')||{}).checked;
+  const aoa=menuregAoa(P,rows);
+  let fell=false;
+  if(!wantCsv){
+    try{
+      await loadXlsxLib();
+      const ws=XLSX.utils.aoa_to_sheet(aoa);                  // 문자열로 넣은 칸은 그대로 텍스트 셀이 된다
+      for(let c=0;c<P.cols.length;c++){                        // 열 서식도 텍스트로 지정(붙여넣기·재편집 대비)
+        if(!MENUREG_TEXTCOL.test(P.cols[c])) continue;
+        for(let r=(P.header?1:0); r<aoa.length; r++){
+          const ref=XLSX.utils.encode_cell({r,c}); if(ws[ref]) ws[ref].z='@';
+        }
+      }
+      const wb=XLSX.utils.book_new(); XLSX.utils.book_append_sheet(wb,ws,'상품등록');
+      const out=XLSX.write(wb,{bookType:'xlsx',type:'array'});
+      menuregDl(P.key+'_업로드_'+safe+'.xlsx', new Blob([out],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'}));
+    }catch(e){ fell=true; }                                    // CDN 차단 등 → CSV 로 내려준다
+  }
+  if(wantCsv||fell){
+    const lines=aoa.map(row=>row.map(menuregCsvCell).join(','));
+    menuregDl(P.key+'_업로드_'+safe+'.csv', new Blob(['﻿'+lines.join('\n')+'\n'],{type:'text/csv;charset=utf-8'}));
+  }
   const dm=menuregDedupMsg();
-  if(P.note||dm) alert((P.note?'⚠️ '+P.note:'✅ '+P.label+' 양식 '+rows.length+'행 내려받았습니다.')+dm);
+  const warn=(wantCsv||fell)?'\n\n⚠️ CSV 는 엑셀에서 바코드가 8.80106E+12 로 보입니다. 해당 열을 텍스트 서식으로 바꿔 확인하세요'+(fell?' (변환 라이브러리를 못 불러와 CSV 로 내려받았습니다)':'')+'.':'';
+  alert((P.note?'⚠️ '+P.note:'✅ '+P.label+' 양식 '+rows.length+'행 내려받았습니다.')+dm+warn);
 }
 // 붙여넣기용 TSV(탭 구분) — 엑셀 양식의 데이터 첫 행 첫 칸에 Ctrl+V 하면 컬럼에 맞게 들어감
 function menuregTsv(pi,gridId){
@@ -2654,7 +2693,11 @@ function renderMenuReg(){
       <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;align-items:center">
         <span style="font-size:12px;font-weight:700;color:#666">⬇ 파일로 받기:</span>
         ${MENUREG_POS.map((p,i4)=>`<button class="btn" onclick="menuregGen(${i4},'mrXlGrid')">⬇ ${p.label}</button>`).join('')}
+        <label class="hint" style="display:flex;align-items:center;gap:4px;cursor:pointer" title="엑셀(xlsx)로 받으면 바코드가 전체 자릿수로 보입니다. CSV 는 엑셀이 지수(8.80106E+12)로 표시합니다.">
+          <input type="checkbox" id="mrXlCsv"> CSV로 받기
+        </label>
       </div>
+      <div class="hint" style="margin-top:6px">💡 기본은 <b>엑셀(xlsx)</b> 입니다 — 바코드·상품코드를 텍스트로 저장해 <b>8.80106E+12</b> 로 깨지지 않고 전체 자릿수가 그대로 보입니다.</div>
     </div>
     ${!all.length?'<div class="empty-note">아직 적재된 요청이 없습니다. 자동 적재(10분 주기)가 곧 채웁니다.</div>':''}`;
 }
