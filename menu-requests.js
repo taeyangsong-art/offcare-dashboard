@@ -3,10 +3,40 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 547,
- "updatedAt": "2026-08-11 18:30",
+ "version": 548,
+ "updatedAt": "2026-08-11 18:38",
  "days": 30,
  "items": [
+  {
+   "ts": "1786440649.412099",
+   "date": "2026-08-11",
+   "time": "18:30",
+   "store": "반달커피",
+   "biz": "3022363308",
+   "pos": "",
+   "content": "메뉴 금액 수정 요청드립니다 >>",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BPASQ6XEZ",
+     "from": "댓글",
+     "path": "menu-files/1786440649_412099-0.png"
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "토스포스\n사진 상 이미지와 같이 금액 수정 요청드립니다"
+   ],
+   "rc": 2,
+   "lr": "1786440664.731259",
+   "rfx": 2,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786440649412099"
+  },
   {
    "ts": "1786440258.710499",
    "date": "2026-08-11",
@@ -26,8 +56,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1786440262.747449",
    "rfx": 2,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786440258710499"
   },
   {
