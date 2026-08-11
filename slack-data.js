@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3231,
+  "version": 3232,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -95627,11 +95627,11 @@ window.SLACK_DATA = {
                 "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 자사 프론트 1대 렌탈해주신 매장 • 프론트가 느려진 것이 아닌 자체 보유중이신 포스기가 노후화로 인해 느려진 상황으로 포스기 외에도 태블릿/PC/노트북 등 다른 디바이스로도 사용가능 함 안내 자사 프론트 1대 렌탈해주신 매장 프론트가 느려진 것이 아닌 자체 보유중이신 포스기가 노후화로 인해 느려진 상황으로 포스기 외에도 태블릿/PC/노트북 등 다른 디",
+            "doneDate": "2026-08-11"
           },
           {
             "time": "16:28",
@@ -95649,11 +95649,11 @@ window.SLACK_DATA = {
                 "cat": "단말기 설치나 초기 과정이 어려움"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 금일 오전 10시 원격 온보딩 진행 예정 금일 오전 10시 원격 온보딩 진행 예정",
+            "doneDate": "2026-08-11"
           },
           {
             "time": "15:40",
@@ -95718,7 +95718,7 @@ window.SLACK_DATA = {
             "emp": "",
             "autoStatus": "",
             "autoEmp": "",
-            "autoNote": "",
+            "autoNote": "• 토스장애이슈 토스장애이슈",
             "doneDate": ""
           },
           {
@@ -99110,15 +99110,31 @@ window.SLACK_DATA = {
       }
     },
     "2026-08-11": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "김현기": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:10",
+          "store": "에어카 주식회사",
+          "biz": "2948803522",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "nc8000 셋팅중이신데 어렵다 하셔서 설치 방법 안내 부탁드립니다. :꾸벅곰:",
+          "hw": "",
+          "intake": "online",
+          "note": "님 여기 명변 매장 같은데 저 사업자번호가 맞나요? 님 여기 명변 매장 같은데 저 사업자번호가 맞나요? / 님 대표님께서 인입당시 에어카라고 하셨고 nc8000 판매 계약서 확인되어 해당 사업자번호 맞는거 같아서요..! 님 대표님께서 인입당시 에어카라고 하셨고 nc8000 판매 계약서 확인되어 해당 사업자번호 맞는거 같아서요..! / 작년 10월에 명변 하"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:10",
+      "updatedAt": "09:30",
       "ob": {
         "count": 1,
         "byEmp": {
@@ -99136,31 +99152,36 @@ window.SLACK_DATA = {
         ]
       },
       "voc": {
-        "responses": 1,
+        "responses": 2,
         "install": {
           "count": 0,
           "low": 0
         },
         "nps": {
-          "count": 1,
+          "count": 2,
           "low": 1
         },
         "high": {
           "install": 0,
-          "nps": 0
+          "nps": 1
         },
         "npsDist": {
-          "5": 1
+          "5": 1,
+          "10": 1
         },
         "installDist": {},
         "byIndustry": {},
         "byTenure": {
           "1개월": {
-            "total": 1,
+            "total": 2,
             "low": 1
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 1,
+            "low": 0
+          },
           "KIS": {
             "total": 1,
             "low": 1
@@ -99203,13 +99224,17 @@ window.SLACK_DATA = {
         "post": "1786251697.263709",
         "lastSeen": 1786290865.84
       },
-      "1786407005.758279": {
-        "post": "1786407005.758279",
-        "lastSeen": 1786407325.686
+      "1786408201.440839": {
+        "post": "1786408201.440839",
+        "lastSeen": 1786408225.238
       },
-      "1786406678.954229": {
-        "post": "1786406678.954229",
-        "lastSeen": 1786407325.686
+      "1786407999.620859": {
+        "post": "1786407999.620859",
+        "lastSeen": 1786408225.238
+      },
+      "1786407894.219959": {
+        "post": "1786407894.219959",
+        "lastSeen": 1786408225.238
       }
     },
     "days": {
@@ -119308,11 +119333,26 @@ window.SLACK_DATA = {
             "cat": "as"
           }
         ]
+      },
+      "2026-08-11": {
+        "cnt": 1,
+        "sumMin": 12.828395346800486,
+        "over": 0,
+        "items": [
+          {
+            "hm": "09:10",
+            "min": 12.8,
+            "store": "에어카 주식회사",
+            "biz": "2948803522",
+            "who": "김현기",
+            "cat": "as"
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-11 09:15",
+    "at": "2026-08-11 09:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
