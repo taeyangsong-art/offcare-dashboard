@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 530,
- "updatedAt": "2026-08-11 13:17",
+ "version": 531,
+ "updatedAt": "2026-08-11 13:31",
  "days": 30,
  "items": [
   {
@@ -87,15 +87,413 @@ window.MENU_REQUESTS = {
      "fid": "F0BQ69G2P88",
      "from": "댓글",
      "path": "menu-files/1786408886_898809-0.hwp"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BQ739LM40",
+     "from": "댓글",
+     "path": "menu-files/1786408886_898809-1.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "에스프레소",
+       "name": "아메리카노",
+       "price": 1900
+      },
+      {
+       "category": "에스프레소",
+       "name": "디카페인 아메리카노",
+       "price": 2400
+      },
+      {
+       "category": "에스프레소",
+       "name": "카페라떼",
+       "price": 3000
+      },
+      {
+       "category": "에스프레소",
+       "name": "카푸치노",
+       "price": 3500
+      },
+      {
+       "category": "에스프레소",
+       "name": "돌체라떼",
+       "price": 3500
+      },
+      {
+       "category": "에스프레소",
+       "name": "바닐라라떼",
+       "price": 3500
+      },
+      {
+       "category": "에스프레소",
+       "name": "카페모카",
+       "price": 3500
+      },
+      {
+       "category": "에스프레소",
+       "name": "카라멜모카",
+       "price": 4000
+      },
+      {
+       "category": "에스프레소",
+       "name": "카라멜마끼아또",
+       "price": 4000
+      },
+      {
+       "category": "밀크베이스",
+       "name": "초코라떼",
+       "price": 3500
+      },
+      {
+       "category": "밀크베이스",
+       "name": "녹차라떼",
+       "price": 4000
+      },
+      {
+       "category": "밀크베이스",
+       "name": "검은콩라떼",
+       "price": 4000
+      },
+      {
+       "category": "밀크베이스",
+       "name": "고구마라떼",
+       "price": 4000
+      },
+      {
+       "category": "밀크베이스",
+       "name": "밤라떼",
+       "price": 4500
+      },
+      {
+       "category": "밀크베이스",
+       "name": "민트초코라떼",
+       "price": 4500
+      },
+      {
+       "category": "밀크베이스",
+       "name": "헤이즐넛자바칩라떼",
+       "price": 4500
+      },
+      {
+       "category": "밀크베이스",
+       "name": "밀크버블티(타로)",
+       "price": 4500
+      },
+      {
+       "category": "밀크베이스",
+       "name": "밀크버블티(블랙)",
+       "price": 4500
+      },
+      {
+       "category": "밀크베이스",
+       "name": "미숫가루",
+       "price": 3500
+      },
+      {
+       "category": "스무디",
+       "name": "요거트 스무디(플레인)",
+       "price": 4500
+      },
+      {
+       "category": "스무디",
+       "name": "요거트 스무디(딸기)",
+       "price": 4500
+      },
+      {
+       "category": "스무디",
+       "name": "요거트 스무디(블루베리)",
+       "price": 4500
+      },
+      {
+       "category": "프라페",
+       "name": "에스프레소 프라페(모카)",
+       "price": 4500
+      },
+      {
+       "category": "프라페",
+       "name": "에스프레소 프라페(카라멜)",
+       "price": 4500
+      },
+      {
+       "category": "프라페",
+       "name": "그린티프라페",
+       "price": 4500
+      },
+      {
+       "category": "프라페",
+       "name": "자바칩프라페",
+       "price": 4500
+      },
+      {
+       "category": "프라페",
+       "name": "민트초코프라페",
+       "price": 4500
+      },
+      {
+       "category": "프라페",
+       "name": "쿠키앤크림프라페",
+       "price": 4500
+      },
+      {
+       "category": "에이드&아이스티",
+       "name": "레몬 에이드",
+       "price": 4000
+      },
+      {
+       "category": "에이드&아이스티",
+       "name": "청포도 에이드",
+       "price": 4000
+      },
+      {
+       "category": "에이드&아이스티",
+       "name": "자몽 에이드",
+       "price": 4000
+      },
+      {
+       "category": "에이드&아이스티",
+       "name": "복숭아 에이드",
+       "price": 4000
+      },
+      {
+       "category": "에이드&아이스티",
+       "name": "복숭아 아이스티",
+       "price": 3000
+      },
+      {
+       "category": "Special Menu",
+       "name": "스트로베리라떼",
+       "price": 4000
+      },
+      {
+       "category": "Special Menu",
+       "name": "스트로베리 크림스무디",
+       "price": 4500
+      },
+      {
+       "category": "Special Menu",
+       "name": "스트로베리 아이스크림",
+       "price": 4500
+      },
+      {
+       "category": "Special Menu",
+       "name": "스트로베리 요거트",
+       "price": 4500
+      },
+      {
+       "category": "Special Menu",
+       "name": "흑당버블라떼",
+       "price": 4500
+      },
+      {
+       "category": "Special Menu",
+       "name": "흑당버블스무디",
+       "price": 5000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BPELP6TKK",
+     "from": "댓글",
+     "path": "menu-files/1786408886_898809-2.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "Tea 꿀과실차",
+       "name": "얼그레이 hot",
+       "price": 4000
+      },
+      {
+       "category": "Tea 꿀과실차",
+       "name": "캐모마일 hot",
+       "price": 4000
+      },
+      {
+       "category": "Tea 꿀과실차",
+       "name": "페퍼민트 ice",
+       "price": 4500
+      },
+      {
+       "category": "Tea 꿀과실차",
+       "name": "오렌지루이보스 ice",
+       "price": 4500
+      },
+      {
+       "category": "Tea 꿀과실차",
+       "name": "유자차 hot",
+       "price": 4000
+      },
+      {
+       "category": "Tea 꿀과실차",
+       "name": "생강차 ice",
+       "price": 4500
+      },
+      {
+       "category": "Tea 꿀과실차",
+       "name": "레몬차 ice",
+       "price": 4500
+      },
+      {
+       "category": "Tea 꿀과실차",
+       "name": "자몽차 ice",
+       "price": 4500
+      },
+      {
+       "category": "Tea 꿀과실차",
+       "name": "쌍화차 hot",
+       "price": 4300
+      },
+      {
+       "category": "Tea 꿀과실차",
+       "name": "쌍화차 ice",
+       "price": 4800
+      },
+      {
+       "category": "Tea 꿀과실차",
+       "name": "쌍화라떼 hot",
+       "price": 4800
+      },
+      {
+       "category": "Tea 꿀과실차",
+       "name": "생강라떼 ice",
+       "price": 5300
+      },
+      {
+       "category": "건강주스",
+       "name": "딸바(딸기바나나)",
+       "price": 4900
+      },
+      {
+       "category": "건강주스",
+       "name": "오레몽",
+       "price": 4900
+      },
+      {
+       "category": "건강주스",
+       "name": "토마토주스",
+       "price": 4900
+      },
+      {
+       "category": "건강주스",
+       "name": "수박주스(계절음료)",
+       "price": 4900
+      },
+      {
+       "category": "건강주스",
+       "name": "마삼주스",
+       "price": 5500
+      },
+      {
+       "category": "건강주스",
+       "name": "더덕주스",
+       "price": 5500
+      },
+      {
+       "category": "베이커리류",
+       "name": "허니버터브레드",
+       "price": 0
+      },
+      {
+       "category": "베이커리류",
+       "name": "뚱카롱(딸기)",
+       "price": 3000
+      },
+      {
+       "category": "베이커리류",
+       "name": "뚱카롱(초코)",
+       "price": 3000
+      },
+      {
+       "category": "베이커리류",
+       "name": "뚱카롱(꿀꿀바)",
+       "price": 3000
+      },
+      {
+       "category": "베이커리류",
+       "name": "뚱카롱(순우유)",
+       "price": 3000
+      },
+      {
+       "category": "베이커리류",
+       "name": "다쿠아즈(더블초코)",
+       "price": 3900
+      },
+      {
+       "category": "베이커리류",
+       "name": "다쿠아즈(레몬)",
+       "price": 3900
+      },
+      {
+       "category": "베이커리류",
+       "name": "군고구마(1개)",
+       "price": 2500
+      },
+      {
+       "category": "베이커리류",
+       "name": "군고구마(3개)",
+       "price": 7000
+      },
+      {
+       "category": "베이커리류",
+       "name": "구운계란",
+       "price": 900
+      },
+      {
+       "category": "베이커리류",
+       "name": "도넛(초코링)",
+       "price": 2500
+      },
+      {
+       "category": "베이커리류",
+       "name": "도넛(글레이즈)",
+       "price": 2500
+      },
+      {
+       "category": "베이커리류",
+       "name": "피자(비프불고기)",
+       "price": 3900
+      },
+      {
+       "category": "베이커리류",
+       "name": "피자(콰트로치즈)",
+       "price": 3900
+      },
+      {
+       "category": "베이커리류",
+       "name": "피자(마르게리타포카치아)",
+       "price": 3900
+      },
+      {
+       "category": "베이커리류",
+       "name": "두바이쫀득볼",
+       "price": 5000
+      },
+      {
+       "category": "베이커리류",
+       "name": "소금빵(우유크림)",
+       "price": 4000
+      },
+      {
+       "category": "베이커리류",
+       "name": "소금빵",
+       "price": 3500
+      },
+      {
+       "category": "세트",
+       "name": "할인",
+       "price": -400
+      }
+     ]
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1786409760.763169",
+   "rc": 3,
+   "lr": "1786422234.978859",
    "rfx": 2,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786408886898809"
   },
   {
