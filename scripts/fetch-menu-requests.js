@@ -112,6 +112,9 @@ const OCR_PRICE = { in: 5, out: 25 };                // $/1M tok — 로그의 �
 const KRW_PER_USD = Number(process.env.KRW_PER_USD || 1380);
 let ocrDone = 0, ocrUsd = 0;
 const OCR_MEDIA = { '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.gif': 'image/gif', '.bmp': 'image/bmp' };
+// PDF 는 이미지가 아니라 document 블록으로 보낸다(모델이 페이지를 직접 읽는다).
+// HEIF(아이폰 원본)는 API 가 받지 않아 제외 — 요청자가 jpg 로 다시 올려야 한다.
+const OCR_PDF = '.pdf';
 // 자유 텍스트 필드를 두지 않는다 — 이미지에 연락처가 찍혀 있어도 결과로 새어나올 구멍이 없다.
 // (이 저장소는 public 이라 판독 결과가 그대로 공개된다)
 const OCR_SCHEMA = {
@@ -179,11 +182,16 @@ async function readMenuImage(dest) {
   if (ocrDone >= OCR_CAP) return null;
   const client = getAnthropic();
   if (!client) return null;
-  const media = OCR_MEDIA[path.extname(dest).toLowerCase()];
-  if (!media) return null;
+  const ext = path.extname(dest).toLowerCase();
+  const media = OCR_MEDIA[ext];
+  const isPdf = ext === OCR_PDF;
+  if (!media && !isPdf) return null;
   let buf;
   try { buf = fs.readFileSync(dest); } catch (e) { return null; }
   if (!buf.length || buf.length > FILE_MAX) return null;
+  const block = isPdf
+    ? { type: 'document', source: { type: 'base64', media_type: 'application/pdf', data: buf.toString('base64') } }
+    : { type: 'image', source: { type: 'base64', media_type: media, data: buf.toString('base64') } };
   try {
     const res = await client.messages.create({
       model: OCR_MODEL,
@@ -192,10 +200,7 @@ async function readMenuImage(dest) {
       // 완전히 동일한데 지연만 13.4s → 100.6s 로 늘었다. 10분 주기 크론이라 실행이 겹칠 위험이 크다.
       // (effort:'low' 는 유지 — 인식 작업에 필요 이상의 추론을 막는다)
       output_config: { format: { type: 'json_schema', schema: OCR_SCHEMA }, effort: 'low' },
-      messages: [{ role: 'user', content: [
-        { type: 'image', source: { type: 'base64', media_type: media, data: buf.toString('base64') } },
-        { type: 'text', text: OCR_PROMPT },
-      ] }],
+      messages: [{ role: 'user', content: [block, { type: 'text', text: OCR_PROMPT }] }],
     });
     ocrDone++;
     const u = res.usage || {};
@@ -231,8 +236,10 @@ const os = require('os');
 const DRIVE_TMP = fs.mkdtempSync(require('path').join(os.tmpdir(), 'menu-drive-'));
 const DRIVE_DL_CAP = 20;                      // 실행당 신규 다운로드 상한
 const DRIVE_PER_MSG = 6;
-const DRIVE_IMG = /^image\/(jpe?g|png|webp|bmp|gif)$/i;
-let driveDownloaded = 0, driveBlocked = 0;
+// 판독 가능한 형식. PDF 는 document 블록으로 모델이 직접 읽는다.
+// HEIF(아이폰 원본)·hwp·xlsx 는 API 가 못 받으므로 제외하고, 몇 건 걸렀는지만 로그에 남긴다.
+const DRIVE_READABLE = /^(image\/(jpe?g|png|webp|bmp|gif)|application\/pdf)$/i;
+let driveDownloaded = 0, driveBlocked = 0, driveSkipped = 0;
 let _dtok = null;                             // null=미시도, 'FAIL'=사용불가, 문자열=access token
 async function driveToken() {
   if (_dtok === 'FAIL') return null;
@@ -351,13 +358,12 @@ function detectPos(text) {
       }
     }
 
-    // Drive 링크 이미지 — 접근 가능한 것만 내려받아 슬랙 첨부와 동일하게 OCR.
-    // 판독 결과(ocr)는 파일이 롤링 삭제돼도 계속 재사용하고, 차단분은 매 실행 재시도한다.
-    // 창(FILE_DAYS) 밖 요청은 이미지를 다시 받지 않지만, 이미 판독한 결과는 파일이 아니라
-    // 텍스트라 버릴 이유가 없다. 그대로 승계한다.
-    // (승계하지 않으면 장당 ₩69 짜리 판독 결과가 7일 뒤 통째로 사라진다)
+    // Drive 링크 이미지 — 접근 가능한 것을 임시로 받아 판독하고 즉시 지운다(저장소에 안 남김).
+    // 슬랙 첨부(att)와 달리 FILE_DAYS 창을 두지 않는다: 파일을 보관하지 않으므로 용량 이유가 없고,
+    // 창을 두면 7일 지나 들어온 요청(적재 30일 중 대부분)이 영영 판독되지 않는다.
+    // 판독 완료분은 캐시로 재사용되므로 매 실행 다시 호출하지도 않는다.
     let datt = ((prevMap[m.ts] || {}).datt) || [];
-    if (driveLinks.length && nowSec - parseFloat(m.ts) <= FILE_DAYS * 86400) {
+    if (driveLinks.length) {
       const tok = await driveToken();
       if (tok) {
         const prevD = datt;
@@ -372,7 +378,7 @@ function detectPos(text) {
 
           const meta = await driveMeta(id, tok);
           if (!meta) continue;
-          if (!DRIVE_IMG.test(String(meta.mimeType || ''))) continue;      // 이미지 아닌 링크(PDF·엑셀)는 대상 아님
+          if (!DRIVE_READABLE.test(String(meta.mimeType || ''))) { driveSkipped++; continue; }   // heif·hwp·xlsx 등
           if (Number(meta.size || 0) > FILE_MAX) continue;
 
           // 임시 파일로만 받는다 — 저장소에는 이미지도 파일명도 남기지 않는다
@@ -437,7 +443,7 @@ function detectPos(text) {
   fs.writeFileSync(OUT, header + 'window.MENU_REQUESTS = ' + JSON.stringify(data, null, 1) + ';\n', 'utf8');
   const byStatus = capped.reduce((a, i) => { a[i.status] = (a[i.status] || 0) + 1; return a; }, {});
   if (ocrDone) console.log(`🔎 신규 이미지 판독 ${ocrDone}건 (${OCR_MODEL}) · 이번 실행 비용 약 $${ocrUsd.toFixed(3)} (₩${Math.round(ocrUsd * KRW_PER_USD).toLocaleString()})${ocrDone >= OCR_CAP ? ` · 상한 ${OCR_CAP}건 도달 — 나머지는 다음 실행에서` : ''}`);
-  if (driveDownloaded || driveBlocked) console.log(`🖼 Drive 이미지 ${driveDownloaded}건 판독${driveBlocked ? ` · 권한차단 ${driveBlocked}건(권한 풀리면 자동 복구)` : ''} — 이미지 파일은 저장소에 남기지 않음`);
+  if (driveDownloaded || driveBlocked || driveSkipped) console.log(`🖼 Drive 파일 ${driveDownloaded}건 수집${driveBlocked ? ` · 권한차단 ${driveBlocked}건(권한 풀리면 자동 복구)` : ''}${driveSkipped ? ` · 미지원형식 ${driveSkipped}건(heif·hwp·xlsx 등)` : ''} — 파일은 저장소에 남기지 않음`);
   try { fs.rmSync(DRIVE_TMP, { recursive: true, force: true }); } catch (e) {}
   console.log(`✅ ${OUT} 갱신: 요청 ${capped.length}건 (완료 ${byStatus.done || 0} · 확인중 ${byStatus.confirm || 0} · 대기 ${byStatus.wait || 0} · 중복 ${byStatus.dup || 0}) v${data.version}`);
   process.exit(0);   // 좀비 워커가 남아 프로세스가 안 끝나는 것 방지(모든 쓰기는 동기 완료됨)
