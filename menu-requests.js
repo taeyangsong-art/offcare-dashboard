@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 520,
- "updatedAt": "2026-08-11 10:48",
+ "version": 521,
+ "updatedAt": "2026-08-11 11:03",
  "days": 30,
  "items": [
+  {
+   "ts": "1786413326.233759",
+   "date": "2026-08-11",
+   "time": "10:55",
+   "store": "미라클 밥상(여주터미널점)",
+   "biz": "6023808645",
+   "pos": "토스포스",
+   "content": ":diamonds:울엄마표김치볶음밥 9500\n맵기조절\n1단계 :기본\n2단계:화끈한:fire::fire:1500\n3단계:불뿜는:fire::fire::fire::comet:2000\n토핑\nㆍ족발토핑 8900원\nㆍ보쌈토핑 6900원\n\n:diamonds:고래랑 싸워서 이긴 왕새우볶음밥 10900원\n토핑\n새우추가 (3마리)2000\n비엔나소세지추가 1500\n단무지따불1000\n\n:diamonds:불항가득제육볶음밥 13800원\n토핑\n고기추가 (100g)6500원\n단무지필요없어요:0\n단무지 따불 1000원\n야채추가(파,양배추,양파) 1500원\n계란후라이 추가 1500\n계란후라이 동그라미 하뚜 추가 3000\n\n:diamonds:울엄마표 얼큰 떡볶이  8900\n단무지필요없어요:0\n단무지따불 1000\n오뎅오뎅추가 \n\n:diamonds:오뎅오뎅우동 10000원\nㆍ단무지 필요없어요:0\nㆍ단무지따불 1000원 \nㆍ오뎅추가 1500원\nㆍ쑥갓추가 1500원\nㅡ매운맛\n1단계(100% 땡초) :1000원\n2단계(100%땡초):1500원\n\n:diamonds:시베리아냉소바 11900원\n(당일 우려낸 건강욱수 사용)\nㆍ소바면+고명+육수 추가:3000원\nㆍ단무지 필요없어요:0\nㆍ단무지 따불:1000원\n:diamonds:음료\n콜라,스프라이트,환타 2000\n콜라1,25 3500원\n:diamonds:주류\n참이슬,이즈백,새로,처음처럼,카스,테라 5000원",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786413330.709679",
+   "rfx": 2,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786413326233759"
+  },
   {
    "ts": "1786410221.683539",
    "date": "2026-08-11",
@@ -23,9 +44,9 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1786410227.141859",
-   "rfx": 1,
-   "status": "wait",
-   "handler": null,
+   "rfx": 2,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786410221683539"
   },
   {
@@ -51,7 +72,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1786409760.763169",
-   "rfx": 1,
+   "rfx": 2,
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786408886898809"
@@ -72,7 +93,6 @@ window.MENU_REQUESTS = {
      "name": "Resized_20260811_080726.jpeg[1].jpg",
      "fid": "F0BP87C9D2R",
      "from": "댓글",
-     "path": "menu-files/1786406678_954229-0.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -175,13 +195,13 @@ window.MENU_REQUESTS = {
        "name": "스틱양념치킨",
        "price": 22000
       }
-     ]
+     ],
+     "path": "menu-files/1786406678_954229-0.jpg"
     },
     {
      "name": "Resized_20260811_080703.jpeg[1].jpg",
      "fid": "F0BP87DAZN1",
      "from": "댓글",
-     "path": "menu-files/1786406678_954229-1.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -284,13 +304,13 @@ window.MENU_REQUESTS = {
        "name": "바베큐",
        "price": 21000
       }
-     ]
+     ],
+     "path": "menu-files/1786406678_954229-1.jpg"
     },
     {
      "name": "Resized_20260811_080736.jpeg[1].jpg",
      "fid": "F0BP5FM41SP",
      "from": "댓글",
-     "path": "menu-files/1786406678_954229-2.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -368,13 +388,13 @@ window.MENU_REQUESTS = {
        "name": "스틱맛감정",
        "price": 22000
       }
-     ]
+     ],
+     "path": "menu-files/1786406678_954229-2.jpg"
     },
     {
      "name": "Resized_20260811_080746.jpeg[1].jpg",
      "fid": "F0BPDLW64F3",
      "from": "댓글",
-     "path": "menu-files/1786406678_954229-3.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -462,13 +482,13 @@ window.MENU_REQUESTS = {
        "name": "닭가슴살 양+갈",
        "price": 24000
       }
-     ]
+     ],
+     "path": "menu-files/1786406678_954229-3.jpg"
     },
     {
      "name": "Resized_20260811_080755.jpeg[1].jpg",
      "fid": "F0BP9PMDR9U",
      "from": "댓글",
-     "path": "menu-files/1786406678_954229-4.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -571,13 +591,13 @@ window.MENU_REQUESTS = {
        "name": "스틱스모키양념",
        "price": 23000
       }
-     ]
+     ],
+     "path": "menu-files/1786406678_954229-4.jpg"
     },
     {
      "name": "Resized_20260811_080804.jpeg[1].jpg",
      "fid": "F0BP87FGGUD",
      "from": "댓글",
-     "path": "menu-files/1786406678_954229-5.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -670,6 +690,923 @@ window.MENU_REQUESTS = {
        "name": "닭날개 치킨",
        "price": 20000
       }
+     ],
+     "path": "menu-files/1786406678_954229-5.jpg"
+    },
+    {
+     "name": "Resized_20260811_080841.jpeg[1].jpg",
+     "fid": "F0BPDLYE85P",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "파파세트",
+       "name": "제네럴피자R후라이드1콜",
+       "price": 34000
+      },
+      {
+       "category": "파파세트",
+       "name": "스페셜R후라이드1콜라1",
+       "price": 37000
+      },
+      {
+       "category": "파파세트",
+       "name": "웰빙R후라이드1콜라1",
+       "price": 39000
+      },
+      {
+       "category": "파파세트",
+       "name": "바베큐+R불고기피자.콜",
+       "price": 36000
+      },
+      {
+       "category": "파파세트",
+       "name": "제네럴피자L후라이드1콜",
+       "price": 38000
+      },
+      {
+       "category": "파파세트",
+       "name": "스페셜L후라이드1콜라1",
+       "price": 41000
+      },
+      {
+       "category": "파파세트",
+       "name": "웰빙L후라이드1콜라1",
+       "price": 43000
+      },
+      {
+       "category": "파파세트",
+       "name": "바베큐+L불고기피자+",
+       "price": 40000
+      },
+      {
+       "category": "파파세트",
+       "name": "R치즈크러스트 OR토핑추",
+       "price": 2000
+      },
+      {
+       "category": "파파세트",
+       "name": "L치즈크러스트OR토핑추가",
+       "price": 4000
+      },
+      {
+       "category": "파파세트",
+       "name": "갈릭소스추가",
+       "price": 500
+      },
+      {
+       "category": "파파세트",
+       "name": "캔콜라",
+       "price": 700
+      },
+      {
+       "category": "파파세트",
+       "name": "핫핫소스추가",
+       "price": 200
+      },
+      {
+       "category": "파파세트",
+       "name": "치즈가루",
+       "price": 200
+      },
+      {
+       "category": "파파세트",
+       "name": "피클추가",
+       "price": 300
+      },
+      {
+       "category": "파파세트",
+       "name": "치킨무추가",
+       "price": 500
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260811_080849.jpeg[1].jpg",
+     "fid": "F0BP87GF7BP",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "파파세트",
+       "name": "셋1)순후1제네럴R콜라1",
+       "price": 31500
+      },
+      {
+       "category": "파파세트",
+       "name": "셋2)순후1제네럴R감자1",
+       "price": 33500
+      },
+      {
+       "category": "파파세트",
+       "name": "셋3)제네럴R+순살후+감",
+       "price": 40500
+      },
+      {
+       "category": "파파세트",
+       "name": "셋1)순후1제네럴L콜라1",
+       "price": 34500
+      },
+      {
+       "category": "파파세트",
+       "name": "셋2)순후1제네럴L감자1",
+       "price": 36500
+      },
+      {
+       "category": "파파세트",
+       "name": "셋3)제널L+순후+파스타",
+       "price": 43500
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260811_080904.jpeg[1].jpg",
+     "fid": "F0BP87GQ54M",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "피자류",
+       "name": "럭셔리고구마골드R",
+       "price": 22000
+      },
+      {
+       "category": "피자류",
+       "name": "치즈포테이토골드R",
+       "price": 22000
+      },
+      {
+       "category": "피자류",
+       "name": "치즈바이트R",
+       "price": 22000
+      },
+      {
+       "category": "피자류",
+       "name": "포테이토리치골드R",
+       "price": 22000
+      },
+      {
+       "category": "피자류",
+       "name": "핫불갈비골드피자R",
+       "price": 22000
+      },
+      {
+       "category": "피자류",
+       "name": "럭셔리고구마골드L",
+       "price": 25000
+      },
+      {
+       "category": "피자류",
+       "name": "치즈포테이토골드L",
+       "price": 25000
+      },
+      {
+       "category": "피자류",
+       "name": "치즈바이트L",
+       "price": 25000
+      },
+      {
+       "category": "피자류",
+       "name": "포테이토리치골드L",
+       "price": 25000
+      },
+      {
+       "category": "피자류",
+       "name": "핫불갈비골드피자L",
+       "price": 25000
+      },
+      {
+       "category": "피자류",
+       "name": "럭셔리고구마골드F",
+       "price": 33000
+      },
+      {
+       "category": "피자류",
+       "name": "치즈포테이토골드F",
+       "price": 33000
+      },
+      {
+       "category": "피자류",
+       "name": "치즈바이트F",
+       "price": 33000
+      },
+      {
+       "category": "피자류",
+       "name": "포테이토리치골드F",
+       "price": 34000
+      },
+      {
+       "category": "피자류",
+       "name": "핫불갈비골드피자F",
+       "price": 33000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260811_080914.jpeg[1].jpg",
+     "fid": "F0BP5FR86G3",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "피자류",
+       "name": "골드슈프림새우R",
+       "price": 22000
+      },
+      {
+       "category": "피자류",
+       "name": "핫치킨골드피자R",
+       "price": 22000
+      },
+      {
+       "category": "피자류",
+       "name": "치크불갈비피자R",
+       "price": 20000
+      },
+      {
+       "category": "피자류",
+       "name": "고구마리치골드피자R",
+       "price": 20000
+      },
+      {
+       "category": "피자류",
+       "name": "슈퍼슈프림골드피자 R",
+       "price": 22000
+      },
+      {
+       "category": "피자류",
+       "name": "골드슈프림새우L",
+       "price": 25000
+      },
+      {
+       "category": "피자류",
+       "name": "핫치킨골드피자L",
+       "price": 25000
+      },
+      {
+       "category": "피자류",
+       "name": "치크핫불갈비피자L",
+       "price": 23000
+      },
+      {
+       "category": "피자류",
+       "name": "고구마리치골드피자L",
+       "price": 23000
+      },
+      {
+       "category": "피자류",
+       "name": "슈퍼슈프림골드피자 L",
+       "price": 25000
+      },
+      {
+       "category": "피자류",
+       "name": "골드슈프림새우F",
+       "price": 34000
+      },
+      {
+       "category": "피자류",
+       "name": "핫치킨골드피자F",
+       "price": 33000
+      },
+      {
+       "category": "피자류",
+       "name": "치크핫불갈비피자F",
+       "price": 32000
+      },
+      {
+       "category": "피자류",
+       "name": "고구마리치골드피자F",
+       "price": 32000
+      },
+      {
+       "category": "피자류",
+       "name": "슈퍼슈프림골드피자 F",
+       "price": 33000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260811_080914.jpeg[1].jpg",
+     "fid": "F0BQ63MA056",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "피자류",
+       "name": "골드슈프림새우R",
+       "price": 22000
+      },
+      {
+       "category": "피자류",
+       "name": "핫치킨골드피자R",
+       "price": 22000
+      },
+      {
+       "category": "피자류",
+       "name": "치크불갈비피자R",
+       "price": 20000
+      },
+      {
+       "category": "피자류",
+       "name": "고구마리치골드피자R",
+       "price": 20000
+      },
+      {
+       "category": "피자류",
+       "name": "슈퍼슈프림골드피자 R",
+       "price": 22000
+      },
+      {
+       "category": "피자류",
+       "name": "골드슈프림새우L",
+       "price": 25000
+      },
+      {
+       "category": "피자류",
+       "name": "핫치킨골드피자L",
+       "price": 25000
+      },
+      {
+       "category": "피자류",
+       "name": "치크핫불갈비피자L",
+       "price": 23000
+      },
+      {
+       "category": "피자류",
+       "name": "고구마리치골드피자L",
+       "price": 23000
+      },
+      {
+       "category": "피자류",
+       "name": "슈퍼슈프림골드피자 L",
+       "price": 25000
+      },
+      {
+       "category": "피자류",
+       "name": "골드슈프림새우F",
+       "price": 34000
+      },
+      {
+       "category": "피자류",
+       "name": "핫치킨골드피자F",
+       "price": 33000
+      },
+      {
+       "category": "피자류",
+       "name": "치크핫불갈비피자F",
+       "price": 32000
+      },
+      {
+       "category": "피자류",
+       "name": "고구마리치골드피자F",
+       "price": 32000
+      },
+      {
+       "category": "피자류",
+       "name": "슈퍼슈프림골드피자 F",
+       "price": 33000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260811_080934.jpeg[1].jpg",
+     "fid": "F0BP5FR102F",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "피자류",
+       "name": "고구마베이컨피자R",
+       "price": 19000
+      },
+      {
+       "category": "피자류",
+       "name": "페파로니R",
+       "price": 15000
+      },
+      {
+       "category": "피자류",
+       "name": "불고기피자R",
+       "price": 15000
+      },
+      {
+       "category": "피자류",
+       "name": "베지터블야채피자R",
+       "price": 15000
+      },
+      {
+       "category": "피자류",
+       "name": "고구마베이컨피자L",
+       "price": 22000
+      },
+      {
+       "category": "피자류",
+       "name": "페파로니피자L",
+       "price": 18000
+      },
+      {
+       "category": "피자류",
+       "name": "불고기피자L",
+       "price": 18000
+      },
+      {
+       "category": "피자류",
+       "name": "베지터블야채피자L",
+       "price": 18000
+      },
+      {
+       "category": "피자류",
+       "name": "고구마베이컨피자F",
+       "price": 31000
+      },
+      {
+       "category": "피자류",
+       "name": "페파로니 F",
+       "price": 26000
+      },
+      {
+       "category": "피자류",
+       "name": "불고기피자F",
+       "price": 26000
+      },
+      {
+       "category": "피자류",
+       "name": "베지터블야채피자F",
+       "price": 26000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260811_080944.jpeg[1].jpg",
+     "fid": "F0BPDM1Q8CR",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "피자류",
+       "name": "베이컨치즈피자R",
+       "price": 15000
+      },
+      {
+       "category": "피자류",
+       "name": "슈퍼슈프림(콤비)R",
+       "price": 15000
+      },
+      {
+       "category": "피자류",
+       "name": "프레인치즈피자R",
+       "price": 15000
+      },
+      {
+       "category": "피자류",
+       "name": "베이컨치즈피자L",
+       "price": 18000
+      },
+      {
+       "category": "피자류",
+       "name": "슈퍼슈프림(콤비)L",
+       "price": 18000
+      },
+      {
+       "category": "피자류",
+       "name": "프레인치즈피자L",
+       "price": 18000
+      },
+      {
+       "category": "피자류",
+       "name": "베이컨치즈피자F",
+       "price": 26000
+      },
+      {
+       "category": "피자류",
+       "name": "슈퍼슈프림(콤비)F",
+       "price": 26000
+      },
+      {
+       "category": "피자류",
+       "name": "프레인치즈피자F",
+       "price": 26000
+      },
+      {
+       "category": "피자류",
+       "name": "고르곤졸라",
+       "price": 18000
+      },
+      {
+       "category": "피자류",
+       "name": "씬피자",
+       "price": 18000
+      },
+      {
+       "category": "피자류",
+       "name": "치즈크러스트추가.or토핑 추가",
+       "price": 2000
+      },
+      {
+       "category": "피자류",
+       "name": "치즈크러스트추가or토핑추가",
+       "price": 4000
+      },
+      {
+       "category": "피자류",
+       "name": "치즈크러스트추가or토핑추가",
+       "price": 5000
+      },
+      {
+       "category": "피자류",
+       "name": "치즈오븐스파게티",
+       "price": 8000
+      },
+      {
+       "category": "피자류",
+       "name": "갈릭소스",
+       "price": 500
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260811_080952.jpeg[1].jpg",
+     "fid": "F0BNWBQU7PH",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "순살(가슴살)후라이+갈릭",
+       "price": 21000
+      },
+      {
+       "category": "",
+       "name": "순살(가슴살)후라이+양념",
+       "price": 21000
+      },
+      {
+       "category": "",
+       "name": "순살(가슴살)후라이+핫양념",
+       "price": 21000
+      },
+      {
+       "category": "",
+       "name": "순살(가슴살)갈릭+핫양념",
+       "price": 22000
+      },
+      {
+       "category": "",
+       "name": "순살(가슴살)양념+핫양념",
+       "price": 22000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260811_081007.jpeg[1].jpg",
+     "fid": "F0BP87KSJ7P",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "사이드류",
+       "name": "또래오래치킨무",
+       "price": 500
+      },
+      {
+       "category": "사이드류",
+       "name": "한말이치킨2말이에 콜라",
+       "price": 1500
+      },
+      {
+       "category": "사이드류",
+       "name": "콜라1.25",
+       "price": 2500
+      },
+      {
+       "category": "사이드류",
+       "name": "콜라500",
+       "price": 1500
+      },
+      {
+       "category": "사이드류",
+       "name": "코카콜라500mm",
+       "price": 2000
+      },
+      {
+       "category": "사이드류",
+       "name": "배달비",
+       "price": 1000
+      },
+      {
+       "category": "사이드류",
+       "name": "배달비",
+       "price": 2000
+      },
+      {
+       "category": "사이드류",
+       "name": "배달비",
+       "price": 3000
+      },
+      {
+       "category": "사이드류",
+       "name": "코카캔콜라",
+       "price": 1000
+      },
+      {
+       "category": "사이드류",
+       "name": "코카콜라 1.25",
+       "price": 3000
+      },
+      {
+       "category": "사이드류",
+       "name": "양념소스",
+       "price": 500
+      },
+      {
+       "category": "사이드류",
+       "name": "핫양념소스",
+       "price": 1000
+      },
+      {
+       "category": "사이드류",
+       "name": "코카콜라 1.25",
+       "price": 2800
+      },
+      {
+       "category": "사이드류",
+       "name": "생맥주",
+       "price": 8000
+      },
+      {
+       "category": "사이드류",
+       "name": "소주",
+       "price": 3000
+      },
+      {
+       "category": "사이드류",
+       "name": "근위튀김",
+       "price": 7000
+      },
+      {
+       "category": "사이드류",
+       "name": "모듬감자",
+       "price": 8000
+      },
+      {
+       "category": "사이드류",
+       "name": "허니머스터드",
+       "price": 300
+      },
+      {
+       "category": "사이드류",
+       "name": "파닭소스추가",
+       "price": 2000
+      },
+      {
+       "category": "사이드류",
+       "name": "콘듀소스",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260811_081014.jpeg[1].jpg",
+     "fid": "F0BQ63PNS6L",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "사이드류",
+       "name": "순살로 변경시",
+       "price": 2000
+      },
+      {
+       "category": "사이드류",
+       "name": "치즈가루",
+       "price": 300
+      },
+      {
+       "category": "사이드류",
+       "name": "어포",
+       "price": 4000
+      },
+      {
+       "category": "사이드류",
+       "name": "맵부심 만렙소스",
+       "price": 2000
+      },
+      {
+       "category": "사이드류",
+       "name": "병맥주",
+       "price": 5000
+      },
+      {
+       "category": "사이드류",
+       "name": "핫소스",
+       "price": 200
+      },
+      {
+       "category": "사이드류",
+       "name": "피클",
+       "price": 300
+      },
+      {
+       "category": "사이드류",
+       "name": "갈릭딥핑소스",
+       "price": 500
+      },
+      {
+       "category": "사이드류",
+       "name": "카사비칩",
+       "price": 2000
+      },
+      {
+       "category": "사이드류",
+       "name": "엔젤소스추가",
+       "price": 2000
+      },
+      {
+       "category": "사이드류",
+       "name": "리얼치즈볼6개",
+       "price": 5500
+      },
+      {
+       "category": "사이드류",
+       "name": "콘치즈볼6개",
+       "price": 6000
+      },
+      {
+       "category": "사이드류",
+       "name": "핫치즈볼6개",
+       "price": 6000
+      },
+      {
+       "category": "사이드류",
+       "name": "양념치즈볼6개",
+       "price": 6000
+      },
+      {
+       "category": "사이드류",
+       "name": "단짠떡볶이",
+       "price": 4000
+      },
+      {
+       "category": "사이드류",
+       "name": "치즈스틱(6개)",
+       "price": 7000
+      },
+      {
+       "category": "사이드류",
+       "name": "김말이 10개",
+       "price": 5000
+      },
+      {
+       "category": "사이드류",
+       "name": "해쉬브라운8개",
+       "price": 4000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260811_081024.jpeg[1].jpg",
+     "fid": "F0BPFDT883W",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "사이드류",
+       "name": "찹쌀고구마치즈볼6개",
+       "price": 5000
+      },
+      {
+       "category": "사이드류",
+       "name": "엔젤소스",
+       "price": 2000
+      },
+      {
+       "category": "사이드류",
+       "name": "치즈스틱",
+       "price": 1500
+      },
+      {
+       "category": "사이드류",
+       "name": "청양불 족발",
+       "price": 13500
+      },
+      {
+       "category": "사이드류",
+       "name": "치즈크러스트 추가 R",
+       "price": 2000
+      },
+      {
+       "category": "사이드류",
+       "name": "치즈크러스트 추가 L",
+       "price": 4000
+      },
+      {
+       "category": "사이드류",
+       "name": "치즈크러스트 추가 F",
+       "price": 5000
+      },
+      {
+       "category": "사이드류",
+       "name": "콘듀소스추가",
+       "price": 2000
+      },
+      {
+       "category": "사이드류",
+       "name": "머스터소스 3개",
+       "price": 1000
+      },
+      {
+       "category": "사이드류",
+       "name": "토핑추가 R",
+       "price": 2000
+      },
+      {
+       "category": "사이드류",
+       "name": "토핑추가 L",
+       "price": 4000
+      },
+      {
+       "category": "사이드류",
+       "name": "토핑추가 F",
+       "price": 6000
+      },
+      {
+       "category": "사이드류",
+       "name": "엔젤소스+양파채",
+       "price": 3000
+      },
+      {
+       "category": "사이드류",
+       "name": "스모키양념소스",
+       "price": 1000
+      },
+      {
+       "category": "사이드류",
+       "name": "파채소스",
+       "price": 2000
+      },
+      {
+       "category": "사이드류",
+       "name": "파채추가",
+       "price": 3500
+      },
+      {
+       "category": "사이드류",
+       "name": "파채만추가",
+       "price": 1000
+      },
+      {
+       "category": "사이드류",
+       "name": "파채소스추가",
+       "price": 3000
+      },
+      {
+       "category": "사이드류",
+       "name": "코카콜라 1.25업",
+       "price": 1500
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260811_081031.jpeg[1].jpg",
+     "fid": "F0BPBNKDTAN",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "사이드류",
+       "name": "단팥볼 6개",
+       "price": 6000
+      },
+      {
+       "category": "사이드류",
+       "name": "삼색볼6개",
+       "price": 6500
+      },
+      {
+       "category": "사이드류",
+       "name": "피자볼6개",
+       "price": 6000
+      },
+      {
+       "category": "사이드류",
+       "name": "호떡볼6개",
+       "price": 6000
+      },
+      {
+       "category": "사이드류",
+       "name": "고구마크러스트R",
+       "price": 2000
+      },
+      {
+       "category": "사이드류",
+       "name": "고구마크러스트L",
+       "price": 4000
+      },
+      {
+       "category": "사이드류",
+       "name": "고구마크러스트F",
+       "price": 5000
+      }
      ]
     }
    ],
@@ -677,7 +1614,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 5,
    "lr": "1786409287.120599",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786406678954229"
@@ -700,7 +1637,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1786370054.883229",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786369363056939"
@@ -721,7 +1658,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BP3BEGDE2",
      "from": "댓글",
-     "path": "menu-files/1786352622_985349-0.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -859,13 +1795,13 @@ window.MENU_REQUESTS = {
        "name": "바로닭 실은 닭가슴살",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1786352622_985349-0.png"
     },
     {
      "name": "image.png",
      "fid": "F0BPZLZMD40",
      "from": "댓글",
-     "path": "menu-files/1786352622_985349-1.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -893,7 +1829,8 @@ window.MENU_REQUESTS = {
        "name": "SUGAR FREE",
        "price": 5500
       }
-     ]
+     ],
+     "path": "menu-files/1786352622_985349-1.png"
     }
    ],
    "datt": [],
@@ -903,7 +1840,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 8,
    "lr": "1786355391.783299",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786352622985349"
@@ -927,7 +1864,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 4,
    "lr": "1786352759.500739",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786352210462109"
@@ -948,7 +1885,6 @@ window.MENU_REQUESTS = {
      "name": "Resized_20260810_172612.jpg.jpeg",
      "fid": "F0BPZESE8GY",
      "from": "댓글",
-     "path": "menu-files/1786350829_420859-0.jpeg",
      "kind": "menu_board",
      "menu": [
       {
@@ -1136,13 +2072,13 @@ window.MENU_REQUESTS = {
        "name": "음료",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1786350829_420859-0.jpeg"
     },
     {
      "name": "Resized_20260810_172605.jpg.jpeg",
      "fid": "F0BP546L4N6",
      "from": "댓글",
-     "path": "menu-files/1786350829_420859-1.jpeg",
      "kind": "menu_board",
      "menu": [
       {
@@ -1220,14 +2156,15 @@ window.MENU_REQUESTS = {
        "name": "사시미3P/왕문어/새우슬라이스/멍스지",
        "price": 5000
       }
-     ]
+     ],
+     "path": "menu-files/1786350829_420859-1.jpeg"
     }
    ],
    "datt": [],
    "replies": [],
    "rc": 2,
    "lr": "1786350858.095199",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786350829420859"
@@ -1250,7 +2187,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1786350782.941489",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786350205009889"
@@ -1940,7 +2877,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1786350788.729029",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786349221626119"
@@ -1961,7 +2898,6 @@ window.MENU_REQUESTS = {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDgxMF8xNjAyMT",
      "fid": "F0BPZ4J3C9E",
      "from": "댓글",
-     "path": "menu-files/1786347716_291909-0.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -2074,13 +3010,13 @@ window.MENU_REQUESTS = {
        "name": "배달비",
        "price": 1500
       }
-     ]
+     ],
+     "path": "menu-files/1786347716_291909-0.jpeg"
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDgxMF8xNjAyMz",
      "fid": "F0BP6MTLC7K",
      "from": "댓글",
-     "path": "menu-files/1786347716_291909-1.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -2203,7 +3139,8 @@ window.MENU_REQUESTS = {
        "name": "배달비",
        "price": 5800
       }
-     ]
+     ],
+     "path": "menu-files/1786347716_291909-1.jpeg"
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDgxMF8xNjAyND",
@@ -2234,7 +3171,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 3,
    "lr": "1786348454.237269",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786347716291909"
@@ -2267,7 +3204,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 9,
    "lr": "1786348116.481219",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786346071016949"
@@ -2295,7 +3232,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1786346002.469119",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786345988442839"
@@ -2318,7 +3255,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1786346285.151989",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786345134763339"
@@ -2339,7 +3276,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 3,
    "lr": "1786342912.340409",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786341850263819"
@@ -2721,7 +3658,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1786343085.218639",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786341476762079"
@@ -2745,7 +3682,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1786343854.316729",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786338436723709"
@@ -2766,7 +3703,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1786332025.616339",
-   "rfx": 1,
+   "rfx": 2,
    "status": "dup",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786332020509409"
@@ -2792,7 +3729,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 5,
    "lr": "1786338017.188039",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786330145688629"
@@ -2820,7 +3757,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 3,
    "lr": "1786328324.765659",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786327946209649"
@@ -2878,7 +3815,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1786325903.774879",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786325839038889"
@@ -2899,7 +3836,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 4,
    "lr": "1786324303.901269",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786324009713429"
@@ -3054,7 +3991,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1786322160.139019",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786322156866409"
@@ -3112,7 +4049,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 3,
    "lr": "1786319239.161079",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김동욱",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786319163028879"
@@ -3135,7 +4072,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1786318810.452689",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김동욱",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786251697263709"
@@ -3159,7 +4096,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 4,
    "lr": "1786170946.977479",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "서상원",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786170680217389"
@@ -3182,7 +4119,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1786169996.456639",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김현기",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786162155773839"
@@ -3349,7 +4286,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1786103050.414639",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "서상원",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786102266867209"
@@ -3523,7 +4460,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1786101132.069309",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "서상원",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786100500543919"
@@ -3546,7 +4483,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1786098742.921889",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "서상원",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786098326394879"
@@ -3567,7 +4504,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1786092497.969089",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786092493740719"
@@ -3595,7 +4532,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 3,
    "lr": "1786092789.414139",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786092492241839"
@@ -3616,7 +4553,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1786090107.962279",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786090103641189"
@@ -3637,7 +4574,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1786087868.467249",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786087862731989"
@@ -3695,7 +4632,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1786086662.070119",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김동욱",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786086623743639"
@@ -3716,7 +4653,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1786085693.176009",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786085688975329"
@@ -3732,14 +4669,33 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BNMFVEVD4",
+     "from": "댓글",
+     "path": "menu-files/1786084741_879149-0.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BPHRCCB2L",
+     "from": "댓글",
+     "path": "menu-files/1786084741_879149-1.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BNL180Y0M",
+     "from": "댓글",
+     "path": "menu-files/1786084741_879149-2.png"
+    }
+   ],
    "datt": [],
    "replies": [
     "감사합니다..! 원래도 사진이 없었다는 말씀이신거죠?!"
    ],
    "rc": 9,
    "lr": "1786093061.908409",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786084741879149"
@@ -3760,7 +4716,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 3,
    "lr": "1786084523.571849",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786081477967259"
@@ -3781,7 +4737,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1786073610.281789",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786073605561829"
@@ -3797,7 +4753,44 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BN6UH7WVD",
+     "from": "댓글",
+     "path": "menu-files/1786071542_263139-0.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BNJRP3Z1B",
+     "from": "댓글",
+     "path": "menu-files/1786071542_263139-1.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BNN9QQJTU",
+     "from": "댓글",
+     "path": "menu-files/1786071542_263139-2.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BNG32C45R",
+     "from": "댓글",
+     "path": "menu-files/1786071542_263139-3.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BPGLC0R0Q",
+     "from": "댓글",
+     "path": "menu-files/1786071542_263139-4.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BNS11PCKW",
+     "from": "댓글",
+     "path": "menu-files/1786071542_263139-5.png"
+    }
+   ],
    "datt": [],
    "replies": [
     "아유 그럼요\\",
@@ -3808,7 +4801,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 12,
    "lr": "1786073224.925129",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786071542263139"
@@ -3898,7 +4891,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1786070183.442999",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786070178859179"
@@ -3927,7 +4920,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1786069404.817789",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786069399974749"
@@ -3951,7 +4944,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 5,
    "lr": "1786068617.647189",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786068178023619"
@@ -3972,7 +4965,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 3,
    "lr": "1786068478.898949",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786067644040609"
@@ -3993,7 +4986,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1786009505.972719",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786009501789079"
@@ -4021,7 +5014,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 3,
    "lr": "1786010480.790349",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786007203049959"
@@ -4042,7 +5035,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 4,
    "lr": "1786066674.216819",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786001947449539"
@@ -4063,7 +5056,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 3,
    "lr": "1786000941.973379",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786000769579559"
@@ -4086,7 +5079,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1786007760.322889",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785999173086529"
@@ -4109,7 +5102,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 5,
    "lr": "1785992609.799109",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "심성현",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785991187742999"
@@ -4130,7 +5123,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1785985045.881029",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785985041453539"
@@ -4156,7 +5149,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1785984658.483659",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785983432440119"
@@ -4177,7 +5170,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 3,
    "lr": "1785980274.167059",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "심성현",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785979928500899"
@@ -4200,7 +5193,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1785979490.430659",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "심성현",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785978780448379"
@@ -4228,7 +5221,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1785976544.009089",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785921386421619"
@@ -4251,7 +5244,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 9,
    "lr": "1785987143.505459",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785921324217409"
@@ -4274,7 +5267,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 4,
    "lr": "1785924196.497769",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "심성현",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785921126096119"
@@ -4295,7 +5288,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1785912830.259729",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785912768004399"
@@ -4337,7 +5330,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1785919778.579179",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785912753618769"
@@ -4479,7 +5472,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1785913096.429199",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785912244475559"
@@ -4504,7 +5497,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 4,
    "lr": "1785911100.253969",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785910437213399"
@@ -4525,7 +5518,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1785907048.308739",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785907002570789"
@@ -4548,7 +5541,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1785908628.656829",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785906862147539"
@@ -4571,7 +5564,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1785907735.303269",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785906125711779"
@@ -4592,7 +5585,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1785893015.468569",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785893003184369"
@@ -4615,7 +5608,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1785891131.117659",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785890438367339"
@@ -4636,7 +5629,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1785888303.139599",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785888297483889"
@@ -4659,7 +5652,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1785844728.489179",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785836703707209"
@@ -4683,7 +5676,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 5,
    "lr": "1785844134.678029",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785836057973549"
@@ -4707,7 +5700,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 6,
    "lr": "1785835230.646929",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785834910433159"
@@ -4734,7 +5727,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 15,
    "lr": "1785834845.867299",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785834256497659"
@@ -4757,7 +5750,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1785833962.369939",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785833950993479"
@@ -4780,7 +5773,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1785831958.513189",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "심성현",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785828109181089"
@@ -4801,7 +5794,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1785828082.259639",
-   "rfx": 1,
+   "rfx": 2,
    "status": "dup",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785828072808589"
@@ -4822,7 +5815,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1785828700.295919",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785825240036459"
@@ -4843,7 +5836,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1785822259.789919",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785822231001159"
@@ -4866,7 +5859,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 4,
    "lr": "1785818856.066169",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "김동욱",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785818803350689"
@@ -4890,7 +5883,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 15,
    "lr": "1785819912.994499",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785818359745789"
@@ -4913,7 +5906,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1785815892.290919",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785815880024909"
@@ -4936,7 +5929,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1785815774.109919",
-   "rfx": 1,
+   "rfx": 2,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785815516804399"
