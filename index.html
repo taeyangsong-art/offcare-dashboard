@@ -2133,22 +2133,30 @@ async function selectCat(k){
 /* ================= Main dispatch ================= */
 /* ================= 🍱 메뉴등록 — 슬랙 요청 적재 + 4개 POS 양식 생성 ================= */
 // 4개 POS 상품등록 양식 매핑 (scripts/menu-transcribe.js 의 브라우저 포팅 · 신규(add) 등록 기준)
+const FMT_HINT = '분류 | 상품명 | 가격 | 바코드 | 제조사 | 상품코드 | 재고';
 const MENUREG_POS = [
  {key:'토스플레이스', label:'토스포스', header:true,
   cols:['상품 ID','상품이름','카테고리','가격 타입 (고정가격 or 시가)','기본가격 (원)','세금','재고관리','현재수량 (개)','바코드','키오스크/테이블∙픽업오더 노출','키오스크/테이블∙픽업오더 상품이름','키오스크/테이블∙픽업오더 상품설명','제조사','상품코드'],
-  row:r=>({'상품이름':r.name,'카테고리':r.cat,'기본가격 (원)':r.price})},
+  // 바코드·제조사·상품코드는 원본에 있으면 같은 뜻의 칸에 그대로 넣는다.
+  // 재고가 오면 재고관리를 켜고 현재수량에 채운다(재고 없이 재고관리만 켜면 POS 에서 0으로 잡힌다).
+  row:r=>Object.assign({'상품이름':r.name,'카테고리':r.cat,'기본가격 (원)':r.price},
+    r.bar?{'바코드':r.bar}:{}, r.maker?{'제조사':r.maker}:{}, r.code?{'상품코드':r.code}:{},
+    r.stock?{'재고관리':'Y','현재수량 (개)':r.stock}:{})},
  {key:'퍼스트포스', label:'퍼스트포스', header:true,
   cols:['상품코드','상품명','상품명(영문)','판매가관리구분','바코드','대분류','거래처','원가','판매상품여부','판매가','과세여부','ERP매핑코드','주문상품구분','주문단위','입수','재고단위','재고관리여부','안전재고','초기재고','원산지','마일리지적립여부','KIOSK상품여부','상품상태','상품설명표기여부','상품설명','상품설명(영문)','터치키표기여부','비고'],
   defaults:{'주문단위':'낱개','재고관리여부':'Yes','KIOSK상품여부':'No'},
-  row:r=>({'상품명':r.name,'대분류':r.cat,'판매가':r.price})},
+  row:r=>Object.assign({'상품명':r.name,'대분류':r.cat,'판매가':r.price},
+    r.bar?{'바코드':r.bar}:{}, r.code?{'상품코드':r.code}:{}, r.stock?{'초기재고':r.stock}:{})},
  {key:'오케이포스', label:'오케이포스', header:true,
   cols:['상품명','대분류','거래처','주문상품구분','판매상품여부','가격관리구분','판매단가','원산지','주문단위구분','최소주문수량','매핑상품코드','바코드','과세여부','재고관리','원가','안전재고','초기재고','모바일주문구분','키오스크주문구분','품목','비고','주방프린터01 (주방)'],
   defaults:{'주문상품구분':'사입상품','판매상품여부':'Yes','가격관리구분':'정가상품','원산지':'원산지명','원가':'0','주문단위구분':'낱개','최소주문수량':'1','과세여부':'Yes','재고관리':'Yes','안전재고':'0','초기재고':'0','모바일주문구분':'일반/POS','키오스크주문구분':'먹고가기/포장','주방프린터01 (주방)':'Yes'},
-  row:r=>({'상품명':r.name,'대분류':r.cat,'판매단가':r.price})},
+  row:r=>Object.assign({'상품명':r.name,'대분류':r.cat,'판매단가':r.price},
+    r.bar?{'바코드':r.bar}:{}, r.code?{'매핑상품코드':r.code}:{}, r.stock?{'초기재고':r.stock}:{})},
  {key:'스파로스포스', label:'스파로스', header:false, note:'스파로스는 공식 양식의 4번째 행부터 데이터로 인식합니다. 생성된 행을 공식 양식 4행부터 붙여넣으세요(1~3행 보존).',
   cols:['설명','상품바코드','대분류','중분류','소분류','상품명','영수증명','판매단가','경감세율판매단가','상품타입','과세구분','사용여부','원가','경감세율여부','공급가','상품유형','할인여부','싯가여부','ERP상품코드','위해 상품','옵션','옵션그룹','봉사료','봉사료율','속성그룹','재고관리','규격(재고단위)','중량단위','상품중량','원산지','입수단위','입수수량','적정재고','초기재고','상품추가정보','한글상품표시명','영문상품표시명','일문상품표시명','중문_간체상품표시명','중문_번체상품표시명'],
   defaults:{'상품타입':'일반상품','과세구분':'과세','사용여부':'정상','상품유형':'일반매출','할인여부':'Y','싯가여부':'N','위해 상품':'N','봉사료':'N','봉사료율':'0','재고관리':'사용','규격(재고단위)':'EA','원산지':'국내','입수단위':'EA','입수수량':'1','적정재고':'0','초기재고':'0'},
-  row:r=>{ const p=String(r.cat||'').split(/[>\/]/).map(s=>s.trim()).filter(Boolean); const dj=p.length>=3?p:(p.length===2?['',p[0],p[1]]:['','',p[0]||'']); return {'대분류':dj[0],'중분류':dj[1],'소분류':dj[2],'상품명':r.name,'영수증명':r.name,'판매단가':r.price}; }},
+  row:r=>{ const p=String(r.cat||'').split(/[>\/]/).map(s=>s.trim()).filter(Boolean); const dj=p.length>=3?p:(p.length===2?['',p[0],p[1]]:['','',p[0]||'']); return Object.assign({'대분류':dj[0],'중분류':dj[1],'소분류':dj[2],'상품명':r.name,'영수증명':r.name,'판매단가':r.price},
+     r.bar?{'상품바코드':r.bar}:{}, r.code?{'ERP상품코드':r.code}:{}, r.stock?{'초기재고':r.stock}:{}); }},
 ];
 let menuregSel=null, menuregFilter='all';
 const MENUREG_ST={done:['✅ 완료','#34c759'],confirm:['🔎 확인중','#ff9500'],wait:['⏳ 대기','#ff3b30'],dup:['🔁 중복','#8e8e93']};
@@ -2234,20 +2242,22 @@ function menuregParseGrid(gridId){
   for(const line of ta.value.split('\n')){
     const t=line.trim(); if(!t) continue;
     const parts=t.split('|').map(s=>s.trim());
+    // 분류 | 상품명 | 가격 | 바코드 | 제조사 | 상품코드 | 재고  (4번째부터는 있으면 쓴다)
     let cat,name,price;
     if(parts.length>=3){ cat=parts[0]; name=parts[1]; price=parts[2]; }
     else if(parts.length===2){ cat='메뉴'; name=parts[0]; price=parts[1]; }
     else continue;
     price=parseInt(String(price).replace(/[^\d]/g,''),10);
     if(!name||!price) continue;
-    rows.push({cat:cat||'메뉴',name,price});
+    rows.push({cat:cat||'메뉴', name, price,
+      bar:parts[3]||'', maker:parts[4]||'', code:parts[5]||'', stock:parts[6]||''});
   }
   return rows;
 }
 function menuregCsvCell(v){ v=(v==null?'':String(v)); return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v; }
 function menuregGen(pi,gridId){
   const P=MENUREG_POS[pi]; const rows=menuregParseGrid(gridId);
-  if(!rows.length){ alert('메뉴 항목이 없습니다.\n그리드에 한 줄당 "카테고리 | 메뉴명 | 가격" (또는 "메뉴명 | 가격") 형식으로 입력하세요.'); return; }
+  if(!rows.length){ alert('메뉴 항목이 없습니다.\n한 줄당 "'+FMT_HINT+'" 형식입니다.\n뒤쪽 4칸은 없으면 생략해도 됩니다 (최소 "상품명 | 가격").'); return; }
   const base=gridId==='mrXlGrid'?(menuregXlName||'엑셀변환'):((menuregItems().find(i=>i.ts===menuregSel)||{}).store||'매장');
   const lines=[]; if(P.header) lines.push(P.cols.map(menuregCsvCell).join(','));
   for(const r of rows){ const o=Object.assign({},P.defaults||{},P.row(r)); lines.push(P.cols.map(h=>menuregCsvCell(o[h]!==undefined?o[h]:'')).join(',')); }
@@ -2266,7 +2276,7 @@ function menuregTsv(pi,gridId){
 }
 function menuregCopy(pi,gridId){
   const t=menuregTsv(pi,gridId);
-  if(!t){ alert('메뉴 항목이 없습니다.\n그리드에 "카테고리 | 메뉴명 | 가격" 형식으로 입력하세요.'); return; }
+  if(!t){ alert('메뉴 항목이 없습니다.\n한 줄당 "'+FMT_HINT+'" 형식입니다.'); return; }
   const P=MENUREG_POS[pi];
   const done=()=>alert('📋 '+P.label+' 양식용 텍스트 복사 완료!\n\n엑셀 양식을 열고 데이터 시작 행'+(P.key==='스파로스포스'?'(스파로스는 4행)':'(헤더 아래 첫 행)')+'의 첫 칸 클릭 → 붙여넣기(Ctrl+V) 하면 컬럼에 맞게 들어갑니다.'+(P.note?'\n\n⚠️ '+P.note:''));
   if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(done,()=>prompt('자동 복사 실패 — 아래를 전체선택(Ctrl+A)·복사(Ctrl+C) 하세요:',t));
@@ -2389,33 +2399,60 @@ async function docToRows(file){
   if(ext==='.hwp') return await hwpToRows(ab);
   return null;   // 엑셀 계열 → 기존 경로
 }
+/* 매장이 보내는 파일에는 이름·가격 말고도 바코드·제조사·상품코드·재고가 함께 오는 경우가 많다.
+ * 그리드 한 줄 형식을 확장해 그대로 나른다(뒤쪽은 없으면 생략 — 기존 3칸 형식도 그대로 동작):
+ *   분류 | 상품명 | 가격 | 바코드 | 제조사 | 상품코드 | 재고 */
+const MENUREG_HEAD = {
+  name:  /메뉴\s*(이름|명)?$|상품\s*(이름|명)|제품\s*(이름|명)|품명|^이름$/,
+  price: /가격|판매가|판매단가|단가|금액|소비자가|소비자|출고가|공급가|정가|매가/,
+  cat:   /분류|카테고리|category/i,
+  bar:   /바코드|barcode|bar\s*code/i,
+  maker: /제조사|제조업체|메이커|브랜드|공급사|거래처|maker/i,
+  code:  /상품코드|제품코드|품목코드|자체코드|sku/i,
+  stock: /재고|현재수량|초기재고|수량$/,
+};
 function menuregXlExtract(rows){
-  // 1) 헤더 행 탐지: 메뉴명/가격(/분류) 컬럼 키워드
-  let nameCol=-1, priceCol=-1, catCol=-1, headerRow=-1;
-  for(let r=0;r<Math.min(rows.length,12);r++){
-    const cells=(rows[r]||[]).map(c=>String(c));
-    const ni=cells.findIndex(c=>/메뉴\s*(이름|명)?$|상품\s*(이름|명)|품명|^이름$/.test(c.trim()));
-    const pi2=cells.findIndex(c=>/가격|판매가|판매단가|단가|금액/.test(c));
-    if(ni>-1&&pi2>-1){ nameCol=ni; priceCol=pi2; catCol=cells.findIndex(c=>/분류|카테고리/.test(c)); headerRow=r; break; }
+  const norm=(c)=>String(c==null?'':c).replace(/\s+/g,' ').trim();   // 헤더 셀에 줄바꿈이 흔하다('소비자가\n(EA)')
+  // 1) 헤더 행 탐지 — 이름 + 가격이 같은 행에 있으면 그 행을 헤더로 본다
+  let col={}, headerRow=-1;
+  for(let r=0;r<Math.min(rows.length,15);r++){
+    const cells=(rows[r]||[]).map(norm);
+    const ni=cells.findIndex(c=>MENUREG_HEAD.name.test(c));
+    const pi2=cells.findIndex(c=>MENUREG_HEAD.price.test(c));
+    if(ni>-1&&pi2>-1){
+      col={name:ni, price:pi2};
+      for(const k of ['cat','bar','maker','code','stock']){ const i=cells.findIndex(c=>MENUREG_HEAD[k].test(c)); if(i>-1&&i!==ni&&i!==pi2) col[k]=i; }
+      headerRow=r; break;
+    }
   }
   const out=[]; let curCat='메뉴';
+  const pick=(row,i)=>i===undefined?'':norm(row[i]);
+  const digits=(v)=>parseInt(String(v).replace(/[^0-9]/g,''),10)||0;
   for(let r=(headerRow>-1?headerRow+1:0); r<rows.length; r++){
     const row=rows[r]||[]; if(!row.length) continue;
-    let name='', price=0, cat='';
-    if(nameCol>-1){                                     // 컬럼 매핑 방식
-      name=String(row[nameCol]||'').trim();
-      price=parseInt(String(row[priceCol]||'').replace(/[^0-9]/g,''),10)||0;
-      if(catCol>-1){ cat=String(row[catCol]||'').trim(); if(cat) curCat=cat; }
+    let name='', price=0, cat='', bar='', maker='', code='', stock='';
+    if(headerRow>-1){                                   // 컬럼 매핑 방식
+      name=pick(row,col.name);
+      price=digits(pick(row,col.price));
+      const c=pick(row,col.cat); if(c) curCat=c;
+      bar=pick(row,col.bar).replace(/[^0-9A-Za-z\-]/g,'');
+      maker=pick(row,col.maker); code=pick(row,col.code);
+      const st=pick(row,col.stock); stock = st && /^\d+$/.test(st.replace(/[^0-9]/g,'')) ? String(digits(st)) : '';
     }else{                                              // 휴리스틱: 첫 텍스트=이름, 첫 금액(100~)=가격
       const texts=[], nums=[];
-      for(const c of row){ const s=String(c).trim(); if(!s) continue;
-        if(/^[\d,\.\s원₩]+$/.test(s)){ const n=parseInt(s.replace(/[^0-9]/g,''),10); if(n>=100&&n<10000000) nums.push(n); }
+      for(const cv of row){ const s=norm(cv); if(!s) continue;
+        if(/^[\d,\.\s원₩]+$/.test(s)){ const n=digits(s); if(n>=100&&n<10000000) nums.push(n); }
         else if(/[가-힣a-zA-Z]/.test(s)) texts.push(s);
       }
       name=texts[0]||''; price=nums[0]||0;
-      if(name&&!price&&texts.length===1&&name.length<=20){ curCat=name.replace(/[\[\]<>【】]/g,''); continue; }  // 가격 없는 단독 텍스트 행 = 카테고리 구분
+      // 가격 없는 단독 텍스트 행 = 카테고리 구분. 단 '제조사: 전체(사용)' 같은 라벨 문구는 제외 —
+      // 표 위쪽 제목/설명이 카테고리로 잡혀 전 품목에 붙는 사고가 있었다.
+      if(name&&!price&&texts.length===1&&name.length<=20&&!/[:：]/.test(name)){ curCat=name.replace(/[\[\]<>【】]/g,''); continue; }
     }
-    if(name&&price&&name.length<=50) out.push((curCat||'메뉴')+' | '+name.replace(/\|/g,'/')+' | '+price);
+    if(!name||!price||name.length>50) continue;
+    const cells=[(curCat||'메뉴'), name.replace(/\|/g,'/'), String(price), bar, maker.replace(/\|/g,'/'), code, stock];
+    while(cells.length>3 && !cells[cells.length-1]) cells.pop();     // 뒤쪽 빈 칸은 떼고 저장
+    out.push(cells.join(' | '));
   }
   return out;
 }
@@ -2527,7 +2564,7 @@ function renderMenuReg(){
       <div class="card-head"><h3>📂 매장 메뉴 파일 → POS 양식 변환</h3><span class="hint">매장이 보내준 메뉴 파일(엑셀 xlsx·xls·csv / 워드 docx / 한글 hwp·hwpx / odt) 업로드 → 자동 추출 → 검수 → 4개 POS 양식</span></div>
       <input type="file" accept=".xlsx,.xls,.csv,.docx,.hwp,.hwpx,.odt" onchange="menuregXlUpload(this)" style="font-size:13px">
       <div id="mrXlInfo" class="hint" style="margin-top:6px">${menuregXlName?'📄 '+escapeHtml(menuregXlName)+' (이전 변환 유지)':''}</div>
-      <textarea id="mrXlGrid" rows="8" style="width:100%;font-family:ui-monospace,Consolas,monospace;font-size:13px;border:1px solid var(--line,#ddd);border-radius:10px;padding:10px;margin-top:8px" oninput="menuregXlCache=this.value" placeholder="업로드하면 여기에 '카테고리 | 메뉴명 | 가격' 형식으로 추출됩니다 (직접 입력·수정도 가능)">${escapeHtml(menuregXlCache)}</textarea>
+      <textarea id="mrXlGrid" rows="8" style="width:100%;font-family:ui-monospace,Consolas,monospace;font-size:13px;border:1px solid var(--line,#ddd);border-radius:10px;padding:10px;margin-top:8px" oninput="menuregXlCache=this.value" placeholder="업로드하면 여기에 '분류 | 상품명 | 가격 | 바코드 | 제조사 | 상품코드 | 재고' 형식으로 추출됩니다. 원본에 없는 칸은 비어 있고, 직접 입력·수정도 가능합니다.">${escapeHtml(menuregXlCache)}</textarea>
       <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;align-items:center">
         <span style="font-size:12px;font-weight:700;color:#666">📋 복사→양식에 붙여넣기:</span>
         ${MENUREG_POS.map((p,i4)=>`<button class="btn" style="background:var(--blue);color:#fff;border-color:var(--blue)" onclick="menuregCopy(${i4},'mrXlGrid')">📋 ${p.label}</button>`).join('')}
