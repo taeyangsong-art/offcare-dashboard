@@ -2137,9 +2137,12 @@ const FMT_HINT = '분류 | 상품명 | 가격 | 바코드 | 제조사 | 상품�
 const MENUREG_POS = [
  {key:'토스플레이스', label:'토스포스', header:true,
   cols:['상품 ID','상품이름','카테고리','가격 타입 (고정가격 or 시가)','기본가격 (원)','세금','재고관리','현재수량 (개)','바코드','키오스크/테이블∙픽업오더 노출','키오스크/테이블∙픽업오더 상품이름','키오스크/테이블∙픽업오더 상품설명','제조사','상품코드'],
+  // 키오스크 노출은 전 상품 '노출' 로 고정한다(사용자 결정 — 안 쓰는 매장은 POS 에서 끄면 된다).
+  defaults:{'키오스크/테이블∙픽업오더 노출':'노출','가격 타입 (고정가격 or 시가)':'고정가격'},
   // 바코드·제조사·상품코드는 원본에 있으면 같은 뜻의 칸에 그대로 넣는다.
   // 재고가 오면 재고관리를 켜고 현재수량에 채운다(재고 없이 재고관리만 켜면 POS 에서 0으로 잡힌다).
   row:r=>Object.assign({'상품이름':r.name,'카테고리':r.cat,'기본가격 (원)':r.price},
+    r.sigg?{'가격 타입 (고정가격 or 시가)':'시가','기본가격 (원)':0}:{},
     r.bar?{'바코드':r.bar}:{}, r.maker?{'제조사':r.maker}:{}, r.code?{'상품코드':r.code}:{},
     r.stock?{'재고관리':'Y','현재수량 (개)':r.stock}:{})},
  {key:'퍼스트포스', label:'퍼스트포스', header:true,
@@ -2157,7 +2160,8 @@ const MENUREG_POS = [
   defaults:{'상품타입':'일반상품','과세구분':'과세','사용여부':'정상','상품유형':'일반매출','할인여부':'Y','싯가여부':'N','위해 상품':'N','봉사료':'N','봉사료율':'0','재고관리':'사용','규격(재고단위)':'EA','원산지':'국내','입수단위':'EA','입수수량':'1','적정재고':'0','초기재고':'0'},
   row:r=>{ const p=String(r.cat||'').split(/[>\/]/).map(s=>s.trim()).filter(Boolean); const dj=p.length>=3?p:(p.length===2?['',p[0],p[1]]:['','',p[0]||'']); return Object.assign({'대분류':dj[0],'중분류':dj[1],'소분류':dj[2],'상품명':r.name,'영수증명':r.name,'판매단가':r.price},
      r.bar?{'상품바코드':r.bar}:{}, r.code?{'ERP상품코드':r.code}:{},
-     r.stock?{'초기재고':r.stock,'입수수량':r.stock}:{}); }},
+     r.sigg?{'싯가여부':'Y','판매단가':0}:{},
+     r.stock?{'초기재고':r.stock}:{}); }},
 ];
 let menuregSel=null, menuregFilter='all';
 const MENUREG_ST={done:['✅ 완료','#34c759'],confirm:['🔎 확인중','#ff9500'],wait:['⏳ 대기','#ff3b30'],dup:['🔁 중복','#8e8e93']};
@@ -2219,7 +2223,8 @@ const OCR_JUNK = /magic|pos|봉사료?|회원|히원|써스|승인|매출|합계
 function ocrExtractMenu(text, store){
   const dig=t=>t.replace(/[^\d]/g,'');
   const isPrice=t=>/^\d{1,3}([.,]\d{3})+$|^\d{3,6}$/.test(t)&&+dig(t)>=300&&+dig(t)<=900000;
-  const isName=t=>/[가-힣]/.test(t)&&t.replace(/[^가-힣]/g,'').length>=2&&!OCR_JUNK.test(t);
+  const isSigg=t=>/^[(\[]?\s*(시가|싯가|시세)\s*[)\]]?$/.test(t);   // 가격 자리의 '시가' 는 상품명이 아니라 가격표기다
+  const isName=t=>/[가-힣]/.test(t)&&t.replace(/[^가-힣]/g,'').length>=2&&!OCR_JUNK.test(t)&&!isSigg(t);
   const norm=t=>t.replace(/[|_~\-—ㅣ]/g,' ').replace(/\s+/g,' ').trim();
   const storeK=(store||'').replace(/[^가-힣]/g,'');
   const lines=String(text||'').split('\n').map(norm).filter(Boolean).filter(l=>!OCR_JUNK.test(l));
@@ -2227,13 +2232,14 @@ function ocrExtractMenu(text, store){
   const push=(n,p)=>{ n=n.replace(/[^가-힣0-9()]/g,'').trim();
     if(n.length<2||!/[가-힣]/.test(n))return;
     if(storeK&&(storeK.includes(n)||n.includes(storeK)))return;
-    if(seen.has(n))return; seen.add(n); out.push(n+' | '+(p?(+dig(p)).toLocaleString('en-US'):'')); };
+    if(seen.has(n))return; seen.add(n);
+    out.push(n+' | '+(p==='시가'?'시가':(p?(+dig(p)).toLocaleString('en-US'):''))); };
   for(let i=0;i<lines.length;i++){
     const toks=lines[i].split(' ').filter(Boolean);
     const names=toks.filter(isName), prices=toks.filter(isPrice);
     if(names.length&&prices.length&&names.length<=prices.length+1){ names.forEach((n,j)=>push(n,prices[j]||prices[prices.length-1])); continue; }
     if(names.length>=2&&prices.length===0&&i+1<lines.length){ const pt=lines[i+1].split(' ').filter(isPrice); if(pt.length>=2){ names.forEach((n,j)=>push(n,pt[j])); i++; continue; } }
-    if(names.length&&prices.length===0){ names.forEach(n=>push(n,'')); }
+    if(names.length&&prices.length===0){ const sg=toks.some(isSigg)?'시가':''; names.forEach(n=>push(n,sg)); }
   }
   return out.join('\n');
 }
@@ -2248,9 +2254,11 @@ function menuregParseGrid(gridId){
     if(parts.length>=3){ cat=parts[0]; name=parts[1]; price=parts[2]; }
     else if(parts.length===2){ cat='메뉴'; name=parts[0]; price=parts[1]; }
     else continue;
-    price=parseInt(String(price).replace(/[^\d]/g,''),10);
-    if(!name||!price) continue;
-    rows.push({cat:cat||'메뉴', name, price,
+    // 가격 칸에 '시가' 라고 적히면 시가상품(가격 미정). 0원이라 그냥 두면 버려지므로 따로 표시해 통과시킨다.
+    const sigg=MENUREG_HEAD.sigg.test(String(price));
+    price=sigg?0:parseInt(String(price).replace(/[^\d]/g,''),10);
+    if(!name||(!price&&!sigg)) continue;
+    rows.push({cat:cat||'메뉴', name, price, sigg,
       bar:parts[3]||'', maker:parts[4]||'', code:parts[5]||'', stock:parts[6]||''});
   }
   // 복사·다운로드가 모두 이 함수를 지나므로 여기서 한 번만 정리하면 양쪽에 같이 적용된다.
@@ -2314,7 +2322,15 @@ function menuregDl(name,blob){
 }
 async function menuregGen(pi,gridId){
   const P=MENUREG_POS[pi]; const rows=menuregParseGrid(gridId);
-  if(!rows.length){ alert('메뉴 항목이 없습니다.\n한 줄당 "'+FMT_HINT+'" 형식입니다.\n뒤쪽 4칸은 없으면 생략해도 됩니다 (최소 "상품명 | 가격").'); return; }
+  if(!rows.length){ alert('메뉴 항목이 없습니다.\n한 줄당 "'+FMT_HINT+'" 형식입니다.\n뒤쪽 4칸은 없으면 생략해도 됩니다 (최소 "상품명 | 가격").\n가격이 정해지지 않은 상품은 가격 칸에 "시가" 라고 적으면 시가상품으로 넣습니다.'); return; }
+  // 시가상품은 토스포스(가격 타입)·스파로스(싯가여부)에만 넣을 칸이 있다. 나머지 두 양식은
+  // 어떤 값이 시가인지 확인되지 않아 임의로 채우지 않고, 0원으로 올린 뒤 손으로 바꾸도록 알린다.
+  const sigg=rows.filter(r=>r.sigg);
+  if(sigg.length && !P.cols.some(c=>MENUREG_HEAD.sigg.test(c))){
+    alert('⚠ '+P.label+' 양식에는 시가 표시 칸이 없습니다.\n\n'
+      + '아래 '+sigg.length+'개는 0원으로 내려갑니다 — POS 에 올린 뒤 시가상품으로 바꿔주세요.\n\n'
+      + sigg.slice(0,15).map(r=>'· '+r.name).join('\n') + (sigg.length>15?'\n· … 외 '+(sigg.length-15)+'개':''));
+  }
   const base=gridId==='mrXlGrid'?(menuregXlName||'엑셀변환'):((menuregItems().find(i=>i.ts===menuregSel)||{}).store||'매장');
   const safe=base.replace(/[\\/:*?"<>|]/g,'_');
   const aoa=menuregAoa(P,rows);
@@ -2480,8 +2496,10 @@ const MENUREG_HEAD = {
   bar:   /바코드|barcode|bar\s*code/i,
   maker: /제조사|제조업체|메이커|브랜드|공급사|거래처|maker/i,
   code:  /상품코드|제품코드|품목코드|자체코드|sku/i,
-  // '입수'(박스당 개수)도 재고로 받는다 — 매장 파일이 재고를 그 이름으로 적어 보내는 경우가 있다(사용자 확인)
-  stock: /재고|현재수량|초기재고|수량$|입수/,
+  // '입수' 는 박스당 개수라 재고가 아니다(사용자 확인) — 넣으면 전 품목이 같은 수량으로 잡힌다
+  stock: /재고|현재수량|초기재고|수량$/,
+  // 시가(가격 미정) 상품 표시 — 점주 파일에 '시가/싯가' 로 적혀 온다
+  sigg:  /시가|싯가|시세/,
 };
 function menuregXlExtract(rows){
   const norm=(c)=>String(c==null?'':c).replace(/\s+/g,' ').trim();   // 헤더 셀에 줄바꿈이 흔하다('소비자가\n(EA)')
@@ -2502,10 +2520,12 @@ function menuregXlExtract(rows){
   const digits=(v)=>parseInt(String(v).replace(/[^0-9]/g,''),10)||0;
   for(let r=(headerRow>-1?headerRow+1:0); r<rows.length; r++){
     const row=rows[r]||[]; if(!row.length) continue;
-    let name='', price=0, cat='', bar='', maker='', code='', stock='';
+    let name='', price=0, cat='', bar='', maker='', code='', stock='', sigg=false;
     if(headerRow>-1){                                   // 컬럼 매핑 방식
       name=pick(row,col.name);
-      price=digits(pick(row,col.price));
+      const rawP=pick(row,col.price);
+      sigg=MENUREG_HEAD.sigg.test(rawP);                // 가격 칸에 '시가' 라고 적어 보내는 경우
+      price=digits(rawP);
       const c=pick(row,col.cat); if(c) curCat=c;
       bar=pick(row,col.bar).replace(/[^0-9A-Za-z\-]/g,'');
       maker=pick(row,col.maker); code=pick(row,col.code);
@@ -2521,8 +2541,10 @@ function menuregXlExtract(rows){
       // 표 위쪽 제목/설명이 카테고리로 잡혀 전 품목에 붙는 사고가 있었다.
       if(name&&!price&&texts.length===1&&name.length<=20&&!/[:：]/.test(name)){ curCat=name.replace(/[\[\]<>【】]/g,''); continue; }
     }
-    if(!name||!price||name.length>50) continue;
-    const cells=[(curCat||'메뉴'), name.replace(/\|/g,'/'), String(price), bar, maker.replace(/\|/g,'/'), code, stock];
+    // 가격 대신 '시가/싯가' 만 적힌 칸이 따로 있는 경우도 시가상품으로 본다(상품명 칸은 제외 — 이름이 '시가' 인 상품도 있다)
+    if(!sigg && !price) sigg=row.some((cv)=>norm(cv)!==name&&/^[(\[]?\s*(시가|싯가|시세)\s*[)\]]?$/.test(norm(cv)));
+    if(!name||(!price&&!sigg)||name.length>50) continue;
+    const cells=[(curCat||'메뉴'), name.replace(/\|/g,'/'), sigg?'시가':String(price), bar, maker.replace(/\|/g,'/'), code, stock];
     while(cells.length>3 && !cells[cells.length-1]) cells.pop();     // 뒤쪽 빈 칸은 떼고 저장
     out.push(cells.join(' | '));
   }
