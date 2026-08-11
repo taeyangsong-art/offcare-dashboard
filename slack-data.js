@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3230,
+  "version": 3231,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -95605,11 +95605,11 @@ window.SLACK_DATA = {
                 "cat": "필요한 기능이 없거나 몰라서 불편"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 에듀OK 플러그인 연동하여 사용중인 매장으로, 자사 하드웨어와 에듀OK프로그램이 결합되어있는 점 설명 • 자사 토스포스 프로그램에서는 충분히 가능한 기능이나 에듀OK에서 구현이 안되어있는 점 양해 • 자사 또한 에듀OK 관련 담당자에게 해당 내용을 전달 드리겠으나, 사용자 입장에서 직접 에듀OK측에 사용경험 관련 피드백을 전달해주시는 것이 효과적이니 에",
+            "doneDate": "2026-08-11"
           },
           {
             "time": "16:37",
@@ -99118,7 +99118,7 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:00",
+      "updatedAt": "09:10",
       "ob": {
         "count": 1,
         "byEmp": {
@@ -99202,6 +99202,14 @@ window.SLACK_DATA = {
       "1786251697.263709": {
         "post": "1786251697.263709",
         "lastSeen": 1786290865.84
+      },
+      "1786407005.758279": {
+        "post": "1786407005.758279",
+        "lastSeen": 1786407325.686
+      },
+      "1786406678.954229": {
+        "post": "1786406678.954229",
+        "lastSeen": 1786407325.686
       }
     },
     "days": {
@@ -119304,13 +119312,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-11 09:00",
+    "at": "2026-08-11 09:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3435,
+    "rows": 3440,
     "named": 131,
     "unknownName": 0,
     "beforeStart": 0,

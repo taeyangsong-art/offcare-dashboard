@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 513,
- "updatedAt": "2026-08-10 23:01",
+ "version": 514,
+ "updatedAt": "2026-08-11 09:18",
  "days": 30,
  "items": [
+  {
+   "ts": "1786406678.954229",
+   "date": "2026-08-11",
+   "time": "09:04",
+   "store": "또래오래 파파빈",
+   "biz": "1244375046",
+   "pos": "",
+   "content": "메뉴등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 4,
+   "lr": "1786406863.473179",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786406678954229"
+  },
   {
    "ts": "1786369363.056939",
    "date": "2026-08-10",
@@ -132,7 +152,670 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1ICDxPpBKCM3aow1umYQD_4ueoTc2BSTT",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "꼬치",
+       "name": "대파닭꼬치",
+       "price": 4200
+      },
+      {
+       "category": "꼬치",
+       "name": "닭안심꼬치",
+       "price": 4000
+      },
+      {
+       "category": "꼬치",
+       "name": "닭껍질꼬치",
+       "price": 4000
+      },
+      {
+       "category": "꼬치",
+       "name": "닭날개꼬치",
+       "price": 4000
+      },
+      {
+       "category": "꼬치",
+       "name": "염통꼬치 (2피스)",
+       "price": 4000
+      },
+      {
+       "category": "꼬치",
+       "name": "토마토 삼겹꼬치",
+       "price": 4000
+      },
+      {
+       "category": "꼬치",
+       "name": "아스파라삼겹꼬치",
+       "price": 4200
+      },
+      {
+       "category": "꼬치",
+       "name": "양송이꼬치",
+       "price": 3500
+      },
+      {
+       "category": "꼬치",
+       "name": "새우삼겹꼬치",
+       "price": 4200
+      },
+      {
+       "category": "꼬치",
+       "name": "모찌베이컨말이꼬치",
+       "price": 4200
+      },
+      {
+       "category": "숯불구이",
+       "name": "오리가슴살 숯불스테이크",
+       "price": 27000
+      },
+      {
+       "category": "숯불구이",
+       "name": "닭목살 숯불구이",
+       "price": 23000
+      },
+      {
+       "category": "숯불구이",
+       "name": "통 갑오징어 버터구이",
+       "price": 23000
+      },
+      {
+       "category": "숯불구이",
+       "name": "명란치즈감자",
+       "price": 9000
+      },
+      {
+       "category": "숯불구이",
+       "name": "항정조림",
+       "price": 24000
+      },
+      {
+       "category": "숯불구이",
+       "name": "항정구이",
+       "price": 23000
+      },
+      {
+       "category": "숯불구이",
+       "name": "항정 벚꽃 숯불구이",
+       "price": 20000
+      },
+      {
+       "category": "튀김",
+       "name": "무토 닭튀김",
+       "price": 20000
+      },
+      {
+       "category": "튀김",
+       "name": "닭껍질 교자만두",
+       "price": 19000
+      },
+      {
+       "category": "튀김",
+       "name": "깐쇼새우",
+       "price": 24000
+      },
+      {
+       "category": "튀김",
+       "name": "문어 가라아게",
+       "price": 21000
+      },
+      {
+       "category": "파스타",
+       "name": "바질페스토 파스타",
+       "price": 22000
+      },
+      {
+       "category": "파스타",
+       "name": "로제 파스타",
+       "price": 23000
+      },
+      {
+       "category": "국물류",
+       "name": "주문진 백짬뽕탕",
+       "price": 18000
+      },
+      {
+       "category": "국물류",
+       "name": "차돌짬뽕탕",
+       "price": 18000
+      },
+      {
+       "category": "국물류",
+       "name": "어묵 전골",
+       "price": 18000
+      },
+      {
+       "category": "국물류",
+       "name": "백합술찜",
+       "price": 20000
+      },
+      {
+       "category": "안주류",
+       "name": "해물크림떡볶이",
+       "price": 18000
+      },
+      {
+       "category": "안주류",
+       "name": "매콤해물떡볶이",
+       "price": 18000
+      },
+      {
+       "category": "안주류",
+       "name": "항정살 된장조림",
+       "price": 18000
+      },
+      {
+       "category": "디저트&사이드",
+       "name": "모찌리도후",
+       "price": 7000
+      },
+      {
+       "category": "디저트&사이드",
+       "name": "하동 트러플 크래커",
+       "price": 15000
+      },
+      {
+       "category": "디저트&사이드",
+       "name": "파인애플 샤베트",
+       "price": 6000
+      },
+      {
+       "category": "디저트&사이드",
+       "name": "아이스망고",
+       "price": 6000
+      },
+      {
+       "category": "이벤트 메뉴",
+       "name": "꼬치 5종 세트 + 테라 생맥 2잔",
+       "price": 27000
+      },
+      {
+       "category": "이벤트 메뉴",
+       "name": "오리가슴살 숯불구이 + 테라 생맥 2잔",
+       "price": 33000
+      },
+      {
+       "category": "소주류",
+       "name": "참이슬",
+       "price": 5000
+      },
+      {
+       "category": "소주류",
+       "name": "처음처럼",
+       "price": 5000
+      },
+      {
+       "category": "소주류",
+       "name": "새로",
+       "price": 5000
+      },
+      {
+       "category": "소주류",
+       "name": "진로",
+       "price": 5000
+      },
+      {
+       "category": "소주류",
+       "name": "일품진로",
+       "price": 25000
+      },
+      {
+       "category": "소주류",
+       "name": "화요",
+       "price": 25000
+      },
+      {
+       "category": "맥주류",
+       "name": "테라",
+       "price": 5000
+      },
+      {
+       "category": "맥주류",
+       "name": "카스",
+       "price": 5000
+      },
+      {
+       "category": "맥주류",
+       "name": "테라 생맥주 (500ml)",
+       "price": 5000
+      },
+      {
+       "category": "맥주류",
+       "name": "아사히 생맥주",
+       "price": 9000
+      },
+      {
+       "category": "사케",
+       "name": "닷사이45",
+       "price": 120000
+      },
+      {
+       "category": "사케",
+       "name": "쿠보타 만주",
+       "price": 260000
+      },
+      {
+       "category": "사케",
+       "name": "하쿠시카 준마이",
+       "price": 31000
+      },
+      {
+       "category": "하이볼",
+       "name": "무토 하이볼",
+       "price": 8000
+      },
+      {
+       "category": "하이볼",
+       "name": "유자 하이볼",
+       "price": 8000
+      },
+      {
+       "category": "하이볼",
+       "name": "자몽 하이볼",
+       "price": 8000
+      },
+      {
+       "category": "하이볼",
+       "name": "얼그레이 하이볼",
+       "price": 6000
+      },
+      {
+       "category": "전통주",
+       "name": "붉은 원숭이",
+       "price": 13000
+      },
+      {
+       "category": "전통주",
+       "name": "한산소곡주",
+       "price": 17000
+      },
+      {
+       "category": "전통주",
+       "name": "새로 오미자",
+       "price": 5000
+      },
+      {
+       "category": "세트 메뉴",
+       "name": "일품진로 세트",
+       "price": 25000
+      },
+      {
+       "category": "세트 메뉴",
+       "name": "화요 세트",
+       "price": 25000
+      },
+      {
+       "category": "음료",
+       "name": "토닉워터",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "콜라",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "제로콜라",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "사이다",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "제로사이다",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "환타 (파인애플)",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "레몬 추가",
+       "price": 1000
+      }
+     ]
+    },
+    {
+     "id": "1FFVl7XVi3jy4wu8P4eG46Uwed_O7ANCy",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "꼬치",
+       "name": "대파닭꼬치",
+       "price": 4200
+      },
+      {
+       "category": "꼬치",
+       "name": "닭안심꼬치",
+       "price": 4000
+      },
+      {
+       "category": "꼬치",
+       "name": "닭껍질꼬치",
+       "price": 4000
+      },
+      {
+       "category": "꼬치",
+       "name": "닭날개꼬치",
+       "price": 4000
+      },
+      {
+       "category": "꼬치",
+       "name": "염통꼬치 (2피스)",
+       "price": 4000
+      },
+      {
+       "category": "꼬치",
+       "name": "토마토 삼겹꼬치",
+       "price": 4000
+      },
+      {
+       "category": "꼬치",
+       "name": "아스파라삼겹꼬치",
+       "price": 4200
+      },
+      {
+       "category": "꼬치",
+       "name": "양송이꼬치",
+       "price": 3500
+      },
+      {
+       "category": "꼬치",
+       "name": "새우삼겹꼬치",
+       "price": 4200
+      },
+      {
+       "category": "꼬치",
+       "name": "모찌베이컨말이꼬치",
+       "price": 4200
+      },
+      {
+       "category": "숯불구이",
+       "name": "오리가슴살 숯불스테이크",
+       "price": 27000
+      },
+      {
+       "category": "숯불구이",
+       "name": "닭목살 숯불구이",
+       "price": 23000
+      },
+      {
+       "category": "숯불구이",
+       "name": "통 갑오징어 버터구이",
+       "price": 23000
+      },
+      {
+       "category": "숯불구이",
+       "name": "명란치즈감자",
+       "price": 9000
+      },
+      {
+       "category": "숯불구이",
+       "name": "항정조림",
+       "price": 24000
+      },
+      {
+       "category": "숯불구이",
+       "name": "항정구이",
+       "price": 23000
+      },
+      {
+       "category": "숯불구이",
+       "name": "항정 벚꽃 숯불구이",
+       "price": 20000
+      },
+      {
+       "category": "튀김",
+       "name": "무토 닭튀김",
+       "price": 20000
+      },
+      {
+       "category": "튀김",
+       "name": "닭껍질 교자만두",
+       "price": 19000
+      },
+      {
+       "category": "튀김",
+       "name": "깐쇼새우",
+       "price": 24000
+      },
+      {
+       "category": "튀김",
+       "name": "문어 가라아게",
+       "price": 21000
+      },
+      {
+       "category": "파스타",
+       "name": "바질페스토 파스타",
+       "price": 22000
+      },
+      {
+       "category": "파스타",
+       "name": "로제 파스타",
+       "price": 23000
+      },
+      {
+       "category": "국물류",
+       "name": "주문진 백짬뽕탕",
+       "price": 18000
+      },
+      {
+       "category": "국물류",
+       "name": "차돌짬뽕탕",
+       "price": 18000
+      },
+      {
+       "category": "국물류",
+       "name": "어묵 전골",
+       "price": 18000
+      },
+      {
+       "category": "국물류",
+       "name": "백합술찜",
+       "price": 20000
+      },
+      {
+       "category": "안주류",
+       "name": "해물크림떡볶이",
+       "price": 18000
+      },
+      {
+       "category": "안주류",
+       "name": "매콤해물떡볶이",
+       "price": 18000
+      },
+      {
+       "category": "안주류",
+       "name": "항정살 된장조림",
+       "price": 18000
+      },
+      {
+       "category": "디저트&사이드",
+       "name": "모찌리도후",
+       "price": 7000
+      },
+      {
+       "category": "디저트&사이드",
+       "name": "하동 트러플 크래커",
+       "price": 15000
+      },
+      {
+       "category": "디저트&사이드",
+       "name": "파인애플 샤베트",
+       "price": 6000
+      },
+      {
+       "category": "디저트&사이드",
+       "name": "아이스망고",
+       "price": 6000
+      },
+      {
+       "category": "이벤트 메뉴",
+       "name": "꼬치 5종 세트 + 테라 생맥 2잔",
+       "price": 27000
+      },
+      {
+       "category": "이벤트 메뉴",
+       "name": "오리가슴살 숯불구이 + 테라 생맥 2잔",
+       "price": 33000
+      },
+      {
+       "category": "소주류",
+       "name": "참이슬",
+       "price": 5000
+      },
+      {
+       "category": "소주류",
+       "name": "처음처럼",
+       "price": 5000
+      },
+      {
+       "category": "소주류",
+       "name": "새로",
+       "price": 5000
+      },
+      {
+       "category": "소주류",
+       "name": "진로",
+       "price": 5000
+      },
+      {
+       "category": "소주류",
+       "name": "일품진로",
+       "price": 25000
+      },
+      {
+       "category": "소주류",
+       "name": "화요",
+       "price": 25000
+      },
+      {
+       "category": "맥주류",
+       "name": "테라",
+       "price": 5000
+      },
+      {
+       "category": "맥주류",
+       "name": "카스",
+       "price": 5000
+      },
+      {
+       "category": "맥주류",
+       "name": "테라 생맥주 (500ml)",
+       "price": 5000
+      },
+      {
+       "category": "맥주류",
+       "name": "아사히 생맥주",
+       "price": 9000
+      },
+      {
+       "category": "사케",
+       "name": "닷사이45",
+       "price": 120000
+      },
+      {
+       "category": "사케",
+       "name": "쿠보타 만주",
+       "price": 260000
+      },
+      {
+       "category": "사케",
+       "name": "하쿠시카 준마이",
+       "price": 31000
+      },
+      {
+       "category": "하이볼",
+       "name": "무토 하이볼",
+       "price": 8000
+      },
+      {
+       "category": "하이볼",
+       "name": "유자 하이볼",
+       "price": 8000
+      },
+      {
+       "category": "하이볼",
+       "name": "자몽 하이볼",
+       "price": 8000
+      },
+      {
+       "category": "하이볼",
+       "name": "얼그레이 하이볼",
+       "price": 6000
+      },
+      {
+       "category": "전통주",
+       "name": "붉은 원숭이",
+       "price": 13000
+      },
+      {
+       "category": "전통주",
+       "name": "한산소곡주",
+       "price": 17000
+      },
+      {
+       "category": "전통주",
+       "name": "새로 오미자",
+       "price": 5000
+      },
+      {
+       "category": "세트 메뉴",
+       "name": "일품진로 세트",
+       "price": 25000
+      },
+      {
+       "category": "세트 메뉴",
+       "name": "화요 세트",
+       "price": 25000
+      },
+      {
+       "category": "음료",
+       "name": "토닉워터",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "콜라",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "제로콜라",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "사이다",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "제로사이다",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "환타 (파인애플)",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "레몬 추가",
+       "price": 1000
+      }
+     ]
+    }
+   ],
    "replies": [
     "기록용) 메뉴 수정 긴급 요청 / 금일 이내 등록 예정\n테이블, 이후 메뉴 수정 직접 가능한 점 안내",
     "완료"
@@ -264,7 +947,364 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1wBGaHAJBYz1PVM4t_d07QeTi_RUZHFpI",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "PIZZA",
+       "name": "그랜드 콤비네이션 (R)",
+       "price": 25900
+      },
+      {
+       "category": "PIZZA",
+       "name": "그랜드 콤비네이션 (L)",
+       "price": 29900
+      },
+      {
+       "category": "PIZZA",
+       "name": "카우보이 불고기 (R)",
+       "price": 25900
+      },
+      {
+       "category": "PIZZA",
+       "name": "카우보이 불고기 (L)",
+       "price": 29900
+      },
+      {
+       "category": "PIZZA",
+       "name": "데스밸리 쏘 핫 (R)",
+       "price": 25900
+      },
+      {
+       "category": "PIZZA",
+       "name": "데스밸리 쏘 핫 (L)",
+       "price": 29900
+      },
+      {
+       "category": "PIZZA",
+       "name": "블랙 골드 트러플 불고기 (R)",
+       "price": 29900
+      },
+      {
+       "category": "PIZZA",
+       "name": "블랙 골드 트러플 불고기 (L)",
+       "price": 33900
+      },
+      {
+       "category": "PIZZA",
+       "name": "클래식 페퍼로니 (R)",
+       "price": 25900
+      },
+      {
+       "category": "PIZZA",
+       "name": "클래식 페퍼로니 (L)",
+       "price": 29900
+      },
+      {
+       "category": "PIZZA",
+       "name": "골드러시 스위트 포테이토 (R)",
+       "price": 25900
+      },
+      {
+       "category": "PIZZA",
+       "name": "골드러시 스위트 포테이토 (L)",
+       "price": 29800
+      },
+      {
+       "category": "PIZZA",
+       "name": "서부 무법자 치즈 (R)",
+       "price": 25900
+      },
+      {
+       "category": "PIZZA",
+       "name": "서부 무법자 치즈 (L)",
+       "price": 29900
+      },
+      {
+       "category": "PIZZA",
+       "name": "갈릭 쉬림프 (R)",
+       "price": 26900
+      },
+      {
+       "category": "PIZZA",
+       "name": "갈릭 쉬림프 (L)",
+       "price": 30900
+      },
+      {
+       "category": "PIZZA",
+       "name": "스모키베이컨포테이토 (R)",
+       "price": 26900
+      },
+      {
+       "category": "PIZZA",
+       "name": "스모키베이컨포테이토 (L)",
+       "price": 30900
+      },
+      {
+       "category": "PIZZA",
+       "name": "선셋 하와이안 (R)",
+       "price": 26900
+      },
+      {
+       "category": "PIZZA",
+       "name": "선셋 하와이안 (L)",
+       "price": 30900
+      },
+      {
+       "category": "PIZZA",
+       "name": "오아시스 루꼴라 (R)",
+       "price": 26900
+      },
+      {
+       "category": "PIZZA",
+       "name": "오아시스 루꼴라 (L)",
+       "price": 30900
+      },
+      {
+       "category": "PIZZA",
+       "name": "스파이시할라피뇨베이컨 (R)",
+       "price": 26900
+      },
+      {
+       "category": "PIZZA",
+       "name": "스파이시할라피뇨베이컨 (L)",
+       "price": 30900
+      },
+      {
+       "category": "PANUOZZO SANDWICH",
+       "name": "호퍼스 시그니쳐 샌드",
+       "price": 12900
+      },
+      {
+       "category": "PANUOZZO SANDWICH",
+       "name": "카우보이 갈릭 불고기",
+       "price": 11900
+      },
+      {
+       "category": "PANUOZZO SANDWICH",
+       "name": "갈릭쉬림프 샌드",
+       "price": 11900
+      },
+      {
+       "category": "PANUOZZO SANDWICH",
+       "name": "스파이시 튜나 샌드",
+       "price": 10800
+      },
+      {
+       "category": "PANUOZZO SANDWICH",
+       "name": "리치에그마요 샌드",
+       "price": 9900
+      },
+      {
+       "category": "PANUOZZO SANDWICH",
+       "name": "BLT 샌드",
+       "price": 9200
+      },
+      {
+       "category": "PANUOZZO SANDWICH",
+       "name": "텍사스 풀드포크",
+       "price": 11900
+      },
+      {
+       "category": "PANUOZZO SANDWICH",
+       "name": "루스터 그릴드 치킨 샌드",
+       "price": 11900
+      },
+      {
+       "category": "PANUOZZO SANDWICH",
+       "name": "스모키베이컨포테이토 샌드",
+       "price": 12900
+      },
+      {
+       "category": "PANUOZZO SANDWICH",
+       "name": "갈릭버터머쉬룸 샌드",
+       "price": 9900
+      },
+      {
+       "category": "PANUOZZO SANDWICH",
+       "name": "블랙 골드 트러플 머쉬룸 샌드",
+       "price": 14900
+      },
+      {
+       "category": "STROMBOLI",
+       "name": "페페롤리",
+       "price": 11900
+      },
+      {
+       "category": "STROMBOLI",
+       "name": "하와이안 파인애플 롤리",
+       "price": 11900
+      },
+      {
+       "category": "STROMBOLI",
+       "name": "스모키 불고기 롤리",
+       "price": 12900
+      },
+      {
+       "category": "STROMBOLI",
+       "name": "치폴레 치킨 롤리",
+       "price": 12900
+      },
+      {
+       "category": "STROMBOLI",
+       "name": "갈릭 쉬림프 롤리",
+       "price": 12900
+      },
+      {
+       "category": "STROMBOLI",
+       "name": "텍사스 풀드포크 롤리",
+       "price": 12900
+      },
+      {
+       "category": "STROMBOLI",
+       "name": "그랜드하우스콤비 롤리",
+       "price": 13900
+      },
+      {
+       "category": "SALAD",
+       "name": "훈제연어 아보카도",
+       "price": 12500
+      },
+      {
+       "category": "SALAD",
+       "name": "쉬림프 아보카도",
+       "price": 13500
+      },
+      {
+       "category": "SALAD",
+       "name": "쉬림프 샐러드",
+       "price": 12500
+      },
+      {
+       "category": "SALAD",
+       "name": "고구마 에그",
+       "price": 11500
+      },
+      {
+       "category": "SALAD",
+       "name": "훈제오리",
+       "price": 12500
+      },
+      {
+       "category": "SALAD",
+       "name": "닭가슴살",
+       "price": 11500
+      },
+      {
+       "category": "SALAD",
+       "name": "에그마요",
+       "price": 10500
+      },
+      {
+       "category": "SALAD",
+       "name": "버섯 불고기",
+       "price": 12500
+      },
+      {
+       "category": "SALAD",
+       "name": "치킨마요",
+       "price": 12500
+      },
+      {
+       "category": "SIDE",
+       "name": "크리스피 감자튀김",
+       "price": 4900
+      },
+      {
+       "category": "SIDE",
+       "name": "오븐 치즈스파게티",
+       "price": 6900
+      },
+      {
+       "category": "SIDE",
+       "name": "매콤 윔뽕 3P",
+       "price": 5700
+      },
+      {
+       "category": "SIDE",
+       "name": "매콤 윔뽕 6P",
+       "price": 9600
+      },
+      {
+       "category": "SIDE",
+       "name": "바삭 치킨텐더 4P",
+       "price": 4900
+      },
+      {
+       "category": "SIDE",
+       "name": "바삭 치킨텐더 8P",
+       "price": 8900
+      },
+      {
+       "category": "SIDE",
+       "name": "모짜렐라 치즈스틱 2P",
+       "price": 3900
+      },
+      {
+       "category": "SIDE",
+       "name": "스위트콘치즈",
+       "price": 5900
+      },
+      {
+       "category": "SIDE",
+       "name": "그릴드 정보닭다리 1P",
+       "price": 2900
+      },
+      {
+       "category": "SIDE",
+       "name": "그릴드 정보닭다리 2P",
+       "price": 5700
+      },
+      {
+       "category": "SIDE",
+       "name": "그릴드 정보닭다리 3P",
+       "price": 7500
+      },
+      {
+       "category": "DRINK",
+       "name": "콜라 500ml",
+       "price": 2000
+      },
+      {
+       "category": "DRINK",
+       "name": "콜라 1.25L",
+       "price": 3000
+      },
+      {
+       "category": "DRINK",
+       "name": "제로 콜라 500ml",
+       "price": 2000
+      },
+      {
+       "category": "DRINK",
+       "name": "제로 콜라 1.25L",
+       "price": 3000
+      },
+      {
+       "category": "DRINK",
+       "name": "스프라이트 500ml",
+       "price": 2000
+      },
+      {
+       "category": "DRINK",
+       "name": "스프라이트 1.25L",
+       "price": 3000
+      },
+      {
+       "category": "DRINK",
+       "name": "아이스티",
+       "price": 3000
+      },
+      {
+       "category": "DRINK",
+       "name": "아메리카노",
+       "price": 3000
+      }
+     ]
+    }
+   ],
    "replies": [
     "4개 다 시가로 등록"
    ],
@@ -416,7 +1456,139 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1ajinds42CKFxA3XqZMC2DlZdibBZdP-W",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "위스키",
+       "name": "발렌타인 17년",
+       "price": 280000
+      },
+      {
+       "category": "위스키",
+       "name": "골든블루 다이아몬드 17년",
+       "price": 200000
+      },
+      {
+       "category": "위스키",
+       "name": "앱솔루트 보드카",
+       "price": 150000
+      },
+      {
+       "category": "맥주/소주/음료",
+       "name": "소주",
+       "price": 10000
+      },
+      {
+       "category": "맥주/소주/음료",
+       "name": "청하",
+       "price": 10000
+      },
+      {
+       "category": "맥주/소주/음료",
+       "name": "화요",
+       "price": 35000
+      },
+      {
+       "category": "맥주/소주/음료",
+       "name": "복분자",
+       "price": 30000
+      },
+      {
+       "category": "맥주/소주/음료",
+       "name": "기네스",
+       "price": 10000
+      },
+      {
+       "category": "맥주/소주/음료",
+       "name": "하이네켄",
+       "price": 8000
+      },
+      {
+       "category": "맥주/소주/음료",
+       "name": "버드와이저",
+       "price": 8000
+      },
+      {
+       "category": "맥주/소주/음료",
+       "name": "카프리",
+       "price": 8000
+      },
+      {
+       "category": "맥주/소주/음료",
+       "name": "카스",
+       "price": 6000
+      },
+      {
+       "category": "맥주/소주/음료",
+       "name": "하이볼",
+       "price": 100000
+      },
+      {
+       "category": "맥주/소주/음료",
+       "name": "토닉워터",
+       "price": 3000
+      },
+      {
+       "category": "맥주/소주/음료",
+       "name": "음료",
+       "price": 1000
+      },
+      {
+       "category": "맥주/소주/음료",
+       "name": "생수",
+       "price": 1000
+      },
+      {
+       "category": "안주",
+       "name": "계절과일",
+       "price": 35000
+      },
+      {
+       "category": "안주",
+       "name": "생과일주스",
+       "price": 35000
+      },
+      {
+       "category": "안주",
+       "name": "모듬포",
+       "price": 35000
+      },
+      {
+       "category": "안주",
+       "name": "먹태",
+       "price": 35000
+      },
+      {
+       "category": "안주",
+       "name": "돈가스,샐러드",
+       "price": 35000
+      },
+      {
+       "category": "안주",
+       "name": "1인안주",
+       "price": 25000
+      },
+      {
+       "category": "안주",
+       "name": "배달안주",
+       "price": 10000
+      },
+      {
+       "category": "안주",
+       "name": "배달안주",
+       "price": 30000
+      },
+      {
+       "category": "안주",
+       "name": "배달안주",
+       "price": 50000
+      }
+     ]
+    }
+   ],
    "replies": [],
    "rc": 1,
    "lr": "1786322160.139019",
@@ -525,7 +1697,149 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1Ts6nzwcEXLXILz7aTBwxzBsY-ULiyJ3n",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "CUT",
+       "name": "여성 (샴푸 별도 3.)",
+       "price": 23
+      },
+      {
+       "category": "CUT",
+       "name": "남성 (+사이드다운펌 25.)",
+       "price": 18
+      },
+      {
+       "category": "CUT",
+       "name": "학생컷",
+       "price": 15
+      },
+      {
+       "category": "CUT",
+       "name": "여학생컷",
+       "price": 21
+      },
+      {
+       "category": "CUT",
+       "name": "쥬니어컷",
+       "price": 18
+      },
+      {
+       "category": "DRY",
+       "name": "드라이 (샴푸 별도 10.)",
+       "price": 20
+      },
+      {
+       "category": "COLOR",
+       "name": "[여성] 뿌리 (2cm 이하)",
+       "price": 80
+      },
+      {
+       "category": "COLOR",
+       "name": "[여성] 전체염색",
+       "price": 180
+      },
+      {
+       "category": "COLOR",
+       "name": "[여성] 전체탈색",
+       "price": 190
+      },
+      {
+       "category": "COLOR",
+       "name": "[남성] 뿌리 (2cm 이하)",
+       "price": 70
+      },
+      {
+       "category": "COLOR",
+       "name": "[남성] 전체염색",
+       "price": 80
+      },
+      {
+       "category": "COLOR",
+       "name": "[남성] 전체탈색",
+       "price": 90
+      },
+      {
+       "category": "CLINIC",
+       "name": "리프레쉬 크리닉",
+       "price": 30
+      },
+      {
+       "category": "CLINIC",
+       "name": "복원 크리닉",
+       "price": 100
+      },
+      {
+       "category": "PERM",
+       "name": "[여성] 일반펌",
+       "price": 100
+      },
+      {
+       "category": "PERM",
+       "name": "[여성] 열펌 매직, 셋팅",
+       "price": 170
+      },
+      {
+       "category": "PERM",
+       "name": "[여성] 열펌 볼륨매직",
+       "price": 220
+      },
+      {
+       "category": "PERM",
+       "name": "[여성] 열펌 매직+셋팅",
+       "price": 250
+      },
+      {
+       "category": "PERM",
+       "name": "염색모(손상모) 열펌",
+       "price": 300
+      },
+      {
+       "category": "PERM",
+       "name": "복원펌",
+       "price": 400
+      },
+      {
+       "category": "PERM",
+       "name": "[남성] 일반펌",
+       "price": 80
+      },
+      {
+       "category": "PERM",
+       "name": "[남성] 매직 (건강모, 염색X)",
+       "price": 150
+      },
+      {
+       "category": "PERM",
+       "name": "[남성] 볼륨매직,아이롱,특수모",
+       "price": 200
+      },
+      {
+       "category": "PERM",
+       "name": "앞머리펌",
+       "price": 30
+      },
+      {
+       "category": "PERM",
+       "name": "앞머리열펌",
+       "price": 80
+      },
+      {
+       "category": "PERM",
+       "name": "다운펌",
+       "price": 35
+      },
+      {
+       "category": "PERM",
+       "name": "남성라인염색",
+       "price": 30
+      }
+     ]
+    }
+   ],
    "replies": [
     "이중접수건 통화 퇴근하셔서 익일 확인 해보겠다고하심"
    ],
@@ -549,7 +1863,149 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1attFifiaIEiSfWhiauv3y0ymLwOgE9Ng",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "CUT",
+       "name": "여성 (샴푸 별도 3.)",
+       "price": 23
+      },
+      {
+       "category": "CUT",
+       "name": "남성 (+사이드다운펌 25.)",
+       "price": 18
+      },
+      {
+       "category": "CUT",
+       "name": "학생컷",
+       "price": 15
+      },
+      {
+       "category": "CUT",
+       "name": "여학생컷",
+       "price": 21
+      },
+      {
+       "category": "CUT",
+       "name": "쥬니어컷",
+       "price": 18
+      },
+      {
+       "category": "DRY",
+       "name": "드라이 (샴푸 별도 10.)",
+       "price": 20
+      },
+      {
+       "category": "COLOR",
+       "name": "[여성] 뿌리 (2cm 이하)",
+       "price": 80
+      },
+      {
+       "category": "COLOR",
+       "name": "[여성] 전체염색",
+       "price": 180
+      },
+      {
+       "category": "COLOR",
+       "name": "[여성] 전체탈색",
+       "price": 190
+      },
+      {
+       "category": "COLOR",
+       "name": "[남성] 뿌리 (2cm 이하)",
+       "price": 70
+      },
+      {
+       "category": "COLOR",
+       "name": "[남성] 전체염색",
+       "price": 80
+      },
+      {
+       "category": "COLOR",
+       "name": "[남성] 전체탈색",
+       "price": 90
+      },
+      {
+       "category": "PERM",
+       "name": "[여성] 일반펌",
+       "price": 100
+      },
+      {
+       "category": "PERM",
+       "name": "[여성] 열펌 매직, 셋팅",
+       "price": 170
+      },
+      {
+       "category": "PERM",
+       "name": "[여성] 열펌 볼륨매직",
+       "price": 220
+      },
+      {
+       "category": "PERM",
+       "name": "[여성] 열펌 매직+셋팅",
+       "price": 250
+      },
+      {
+       "category": "PERM",
+       "name": "염색모(손상모) 열펌",
+       "price": 300
+      },
+      {
+       "category": "PERM",
+       "name": "복원펌",
+       "price": 400
+      },
+      {
+       "category": "PERM",
+       "name": "[남성] 일반펌",
+       "price": 80
+      },
+      {
+       "category": "PERM",
+       "name": "[남성] 매직 (건강모, 염색X)",
+       "price": 150
+      },
+      {
+       "category": "PERM",
+       "name": "[남성] 볼륨매직,아이롱,특수모",
+       "price": 200
+      },
+      {
+       "category": "PERM",
+       "name": "앞머리펌",
+       "price": 30
+      },
+      {
+       "category": "PERM",
+       "name": "앞머리열펌",
+       "price": 80
+      },
+      {
+       "category": "PERM",
+       "name": "다운펌",
+       "price": 35
+      },
+      {
+       "category": "PERM",
+       "name": "남성라인염색",
+       "price": 30
+      },
+      {
+       "category": "CLINIC",
+       "name": "리프레쉬 크리닉",
+       "price": 30
+      },
+      {
+       "category": "CLINIC",
+       "name": "복원 크리닉",
+       "price": 100
+      }
+     ]
+    }
+   ],
    "replies": [
     "<tel:···|···>"
    ],
@@ -803,7 +2259,74 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1N2iMdNKTGUjw5nnFK9QzD4_8AfKJlt5y",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "눈꽃 칼방수 (인절미)",
+       "price": 6500
+      },
+      {
+       "category": "",
+       "name": "눈꽃 칼방수 (망고)",
+       "price": 7500
+      },
+      {
+       "category": "",
+       "name": "눈꽃 칼방수 (인절미) 2-3인",
+       "price": 11900
+      },
+      {
+       "category": "",
+       "name": "눈꽃 칼방수 (망고) 2-3인",
+       "price": 13900
+      },
+      {
+       "category": "크로플",
+       "name": "플레인",
+       "price": 4000
+      },
+      {
+       "category": "크로플",
+       "name": "인절미",
+       "price": 5500
+      },
+      {
+       "category": "크로플",
+       "name": "누텔라",
+       "price": 5000
+      },
+      {
+       "category": "크로플",
+       "name": "크루아상",
+       "price": 5500
+      },
+      {
+       "category": "크로플",
+       "name": "애플시나몬",
+       "price": 4500
+      },
+      {
+       "category": "크로플",
+       "name": "모짜렐 치즈크로플",
+       "price": 6500
+      },
+      {
+       "category": "크로플",
+       "name": "바나나 크로플",
+       "price": 6000
+      },
+      {
+       "category": "옵션",
+       "name": "아이스크림",
+       "price": 1000
+      }
+     ]
+    }
+   ],
    "replies": [],
    "rc": 1,
    "lr": "1786070183.442999",
@@ -825,7 +2348,13 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1oygFFVE--c3fpbWS8b-c3XbiZ5euZ450",
+     "kind": "product_photo",
+     "menu": []
+    }
+   ],
    "replies": [],
    "rc": 1,
    "lr": "1786069404.817789",
@@ -1195,7 +2724,24 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1Rq-SlVTo2U9f6QADeBUku9W10dma1Bfn",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "치치콜 세트",
+       "name": "치치콜 세트",
+       "price": 8000
+      },
+      {
+       "category": "치치콜 세트",
+       "name": "치치콜 세트 (음료 제외 시)",
+       "price": 7000
+      }
+     ]
+    }
+   ],
    "replies": [
     ":telephone_receiver: 전화 완료"
    ],
@@ -1219,7 +2765,124 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1y_NSXjB_3jVobZG3D4tWqJKLY_Z6kkbJ",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "슬라이스 햄 샌드",
+       "price": 7500
+      },
+      {
+       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
+       "name": "양상추제외",
+       "price": 0
+      },
+      {
+       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
+       "name": "양파제외",
+       "price": 0
+      },
+      {
+       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
+       "name": "올리브제외",
+       "price": 0
+      },
+      {
+       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
+       "name": "파프리카제외",
+       "price": 0
+      },
+      {
+       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
+       "name": "오이제외",
+       "price": 0
+      },
+      {
+       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
+       "name": "피클제외",
+       "price": 0
+      },
+      {
+       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
+       "name": "할라피뇨제외",
+       "price": 0
+      },
+      {
+       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
+       "name": "토마토제외",
+       "price": 0
+      },
+      {
+       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
+       "name": "햄 추가",
+       "price": 1000
+      },
+      {
+       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
+       "name": "베이컨 추가",
+       "price": 1000
+      },
+      {
+       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
+       "name": "에그마요 추가",
+       "price": 1000
+      },
+      {
+       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
+       "name": "닭가슴살 추가",
+       "price": 1500
+      },
+      {
+       "category": "치즈토핑 (필수)",
+       "name": "체다치즈",
+       "price": 0
+      },
+      {
+       "category": "치즈토핑 (필수)",
+       "name": "슈레드치즈",
+       "price": 0
+      },
+      {
+       "category": "치즈토핑 (필수)",
+       "name": "모짜렐라치즈",
+       "price": 0
+      },
+      {
+       "category": "치즈토핑 (필수)",
+       "name": "치즈 X",
+       "price": 0
+      },
+      {
+       "category": "소스선택 (필수)",
+       "name": "어니언랜치소스",
+       "price": 0
+      },
+      {
+       "category": "소스선택 (필수)",
+       "name": "스위트칠리소스",
+       "price": 0
+      },
+      {
+       "category": "소스선택 (필수)",
+       "name": "데리야끼소스",
+       "price": 0
+      },
+      {
+       "category": "소스선택 (필수)",
+       "name": "불닭소스",
+       "price": 0
+      },
+      {
+       "category": "소스선택 (필수)",
+       "name": "반달pick (어니언+칠리)",
+       "price": 0
+      }
+     ]
+    }
+   ],
    "replies": [
     "닭가슴살샌드위치\n베이컨샌드위치\n에그마요샌드위치\n햄샌드위치\n\n네개 메뉴에 옵션 3개 추가"
    ],
@@ -1680,7 +3343,269 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1BhGbg7Ehqxq-WXpfplC-7zDp7izp2YAn",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "구이류",
+       "name": "양고급갈비 300g",
+       "price": 30000
+      },
+      {
+       "category": "세트",
+       "name": "양세트",
+       "price": 52000
+      },
+      {
+       "category": "세트",
+       "name": "데이세트",
+       "price": 56000
+      },
+      {
+       "category": "꼬치류",
+       "name": "오리지널양꼬치(생)",
+       "price": 15000
+      },
+      {
+       "category": "꼬치류",
+       "name": "숙성양꼬치(양념)",
+       "price": 15000
+      },
+      {
+       "category": "꼬치류",
+       "name": "데리야끼양꼬치(양념)",
+       "price": 15000
+      },
+      {
+       "category": "꼬치류",
+       "name": "마라양꼬치(매운양념맛)",
+       "price": 16000
+      },
+      {
+       "category": "꼬치류",
+       "name": "양갈비살꼬치",
+       "price": 16000
+      },
+      {
+       "category": "꼬치류",
+       "name": "새우꼬치(8마리)",
+       "price": 14000
+      },
+      {
+       "category": "꼬치류",
+       "name": "버섯꼬치 (8꼬치)",
+       "price": 5000
+      },
+      {
+       "category": "꼬치류",
+       "name": "소세지꼬치(2ea)",
+       "price": 3000
+      },
+      {
+       "category": "꼬치류",
+       "name": "마늘꼬치(추가시)",
+       "price": 3000
+      },
+      {
+       "category": "요리류",
+       "name": "마라룽샤꼬리",
+       "price": 30000
+      },
+      {
+       "category": "요리류",
+       "name": "마라새우",
+       "price": 30000
+      },
+      {
+       "category": "요리류",
+       "name": "마라샹궈",
+       "price": 20000
+      },
+      {
+       "category": "요리류",
+       "name": "마라탕",
+       "price": 12000
+      },
+      {
+       "category": "요리류",
+       "name": "향라대하",
+       "price": 22000
+      },
+      {
+       "category": "요리류",
+       "name": "향라오징어",
+       "price": 22000
+      },
+      {
+       "category": "요리류",
+       "name": "꿔보러우",
+       "price": 18000
+      },
+      {
+       "category": "요리류",
+       "name": "바지락볶음",
+       "price": 18000
+      },
+      {
+       "category": "요리류",
+       "name": "오돌뼈볶음",
+       "price": 18000
+      },
+      {
+       "category": "요리류",
+       "name": "지삼선",
+       "price": 18000
+      },
+      {
+       "category": "요리류",
+       "name": "경장육슬",
+       "price": 20000
+      },
+      {
+       "category": "요리류",
+       "name": "어향육슬",
+       "price": 20000
+      },
+      {
+       "category": "요리류",
+       "name": "토마토계란볶음",
+       "price": 16000
+      },
+      {
+       "category": "요리류",
+       "name": "토마토계란탕",
+       "price": 14000
+      },
+      {
+       "category": "요리류",
+       "name": "건두부볶음",
+       "price": 14000
+      },
+      {
+       "category": "요리류",
+       "name": "건두부무침",
+       "price": 14000
+      },
+      {
+       "category": "요리류",
+       "name": "오이탕탕이",
+       "price": 12000
+      },
+      {
+       "category": "요리류",
+       "name": "마파두부",
+       "price": 14000
+      },
+      {
+       "category": "요리류",
+       "name": "숙주볶음",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "옥수수온면",
+       "price": 8000
+      },
+      {
+       "category": "식사류",
+       "name": "계란볶음밥",
+       "price": 8000
+      },
+      {
+       "category": "식사류",
+       "name": "가지볶음밥",
+       "price": 8000
+      },
+      {
+       "category": "식사류",
+       "name": "새우볶음밥",
+       "price": 8000
+      },
+      {
+       "category": "식사류",
+       "name": "물만두(15개)",
+       "price": 9000
+      },
+      {
+       "category": "식사류",
+       "name": "찐꽃빵(6개)",
+       "price": 6000
+      },
+      {
+       "category": "식사류",
+       "name": "꽃빵튀김(5개)",
+       "price": 8000
+      },
+      {
+       "category": "주류",
+       "name": "연태고량 (大)",
+       "price": 38000
+      },
+      {
+       "category": "주류",
+       "name": "연태고량 (中)",
+       "price": 25000
+      },
+      {
+       "category": "주류",
+       "name": "연태고량 (小)",
+       "price": 14000
+      },
+      {
+       "category": "주류",
+       "name": "설원 (大)",
+       "price": 23000
+      },
+      {
+       "category": "주류",
+       "name": "설원 (中)",
+       "price": 15000
+      },
+      {
+       "category": "주류",
+       "name": "이과두주 (小)",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "칭따오 大 640ml",
+       "price": 7000
+      },
+      {
+       "category": "주류",
+       "name": "하얼빈",
+       "price": 7000
+      },
+      {
+       "category": "주류",
+       "name": "카스/테라",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "소주",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "청하",
+       "price": 6000
+      },
+      {
+       "category": "주류",
+       "name": "칭따오 논알콜릭",
+       "price": 3000
+      },
+      {
+       "category": "주류",
+       "name": "음료(사이다/콜라/환타)",
+       "price": 2000
+      }
+     ]
+    }
+   ],
    "replies": [
     "선유님, 규빈님..!! 해당매장 오후 4시 영업시작이라 메뉴변경 급하다고 요청주셔서 바쁘시겠지만 확인부탁드리겠습니다!:pray:",
     "다 하신거같운데욥",
