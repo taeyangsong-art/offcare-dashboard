@@ -69,7 +69,12 @@ const cleanReply = (t) => scrubPII(String(t || '')
 const FILE_DIR = 'menu-files';
 const FILE_DAYS = 7;                          // 파일 보관 기간(용량 관리) — 지나면 자동 삭제, 슬랙 원문 링크로 폴백
 const FILE_MAX = 10 * 1024 * 1024;            // 10MB 초과 파일 제외
-const FILE_PER_MSG = 6;
+const FILE_PER_MSG = 6;                       // 저장소에 남길 첨부 수(대시보드 썸네일용) — 용량 때문에 제한
+// 판독은 저장과 분리한다. 메뉴판을 여러 장 나눠 올리는 요청(POS 화면 10장 이상)이 흔한데
+// 저장 상한에 묶여 6장에서 잘리고 있었다. 판독 결과는 텍스트라 용량 부담이 없다.
+const JUDGE_PER_MSG = Number(process.env.JUDGE_PER_MSG || 30);
+const RFX_VER = 2;                            // 댓글 첨부 수집 규칙 버전 (올리면 기존 요청 재스캔)
+let truncated = 0;                            // 상한에 걸려 못 본 첨부 수(조용히 사라지지 않게 로그로)
 let fileDownloaded = 0;
 const FILE_DL_CAP = 40;                       // 실행당 다운로드 상한(rate 보호) — 나머지는 다음 실행에서
 async function downloadSlackFile(url, dest) {
@@ -235,7 +240,7 @@ async function readMenuImage(dest) {
 const os = require('os');
 const DRIVE_TMP = fs.mkdtempSync(require('path').join(os.tmpdir(), 'menu-drive-'));
 const DRIVE_DL_CAP = 20;                      // 실행당 신규 다운로드 상한
-const DRIVE_PER_MSG = 6;
+// 판독 상한은 슬랙 첨부와 동일 기준(JUDGE_PER_MSG) — Drive 링크도 여러 장 나눠 올린다
 // 판독 가능한 형식. PDF 는 document 블록으로 모델이 직접 읽는다.
 // HEIF(아이폰 원본)·hwp·xlsx 는 API 가 못 받으므로 제외하고, 몇 건 걸렀는지만 로그에 남긴다.
 const DRIVE_READABLE = /^(image\/(jpe?g|png|webp|bmp|gif)|application\/pdf)$/i;
@@ -350,7 +355,9 @@ function detectPos(text) {
         const prevD = datt;
         datt = [];   // 토큰이 있을 때만 새로 계산 — 자격증명이 없다고 기존 결과를 날리면 안 된다
         let di = 0;
-        for (const id of driveIdsOf(driveLinks).slice(0, DRIVE_PER_MSG)) {
+        const allIds = driveIdsOf(driveLinks);
+        if (allIds.length > JUDGE_PER_MSG) truncated += allIds.length - JUDGE_PER_MSG;
+        for (const id of allIds.slice(0, JUDGE_PER_MSG)) {
           const p = prevD.find((x) => x.id === id) || {};
           // 판독 완료분은 영구 재사용. 구 tesseract 캐시(ocr 문자열)도 그대로 살려 재판독 비용을 아낀다.
           if ('kind' in p) { datt.push({ id, kind: p.kind, menu: p.menu || [] }); continue; }
@@ -381,9 +388,10 @@ function detectPos(text) {
     let replies = [], rawReplies = null, repliesCached = false;
     if (rc > 0) {
       const prev = prevMap[m.ts];
-      // rfx = '이 스레드의 댓글 첨부까지 훑었음' 표시. 없으면 댓글이 그대로여도 한 번은 다시 읽는다.
-      // (댓글 이미지 수집을 나중에 붙였기 때문에, 기존 요청들은 이 1회 스캔이 있어야 잡힌다)
-      if (prev && prev.rc === rc && prev.lr === lr && prev.rfx) { replies = prev.replies || []; repliesCached = true; }   // 변경 없음 → 캐시
+      // rfx = '이 스레드의 댓글 첨부를 어느 규칙으로 훑었는지' 버전. 낮으면 댓글이 그대로여도 다시 읽는다.
+      // 수집 규칙이 바뀔 때 RFX_VER 을 올리면 기존 요청들이 한 번씩 다시 스캔된다.
+      //   1 = 댓글 첨부 수집 도입   2 = 요청당 상한을 6 → JUDGE_PER_MSG 로 올림(7장째부터 누락되던 것 복구)
+      if (prev && prev.rc === rc && prev.lr === lr && (prev.rfx || 0) >= RFX_VER) { replies = prev.replies || []; repliesCached = true; }   // 변경 없음 → 캐시
       else {
         rawReplies = await fetchReplies(CHANNEL, m.ts);
         if (rawReplies === null) { replies = (prev && prev.replies) || []; repliesCached = true; }            // 상한 도달 → 기존 유지
@@ -401,20 +409,23 @@ function detectPos(text) {
     const inWindow = nowSec - parseFloat(m.ts) <= FILE_DAYS * 86400;
     const att = [];
     if (repliesCached) prevAtt.filter((x) => x.from === '댓글').forEach((x) => att.push(x));   // 댓글을 다시 안 읽었으면 승계
-    const slackFiles = [
-      ...(m.files || []).slice(0, FILE_PER_MSG).map((f) => ({ f, from: '원글' })),
-      ...(rawReplies || []).flatMap((r) => (r.files || []).map((f) => ({ f, from: '댓글' }))).slice(0, FILE_PER_MSG),
+    const allSlackFiles = [
+      ...(m.files || []).map((f) => ({ f, from: '원글' })),
+      ...(rawReplies || []).flatMap((r) => (r.files || []).map((f) => ({ f, from: '댓글' }))),
     ];
+    if (allSlackFiles.length > JUDGE_PER_MSG) truncated += allSlackFiles.length - JUDGE_PER_MSG;
+    const slackFiles = allSlackFiles.slice(0, JUDGE_PER_MSG);
     let fi = 0;
     for (const { f, from } of slackFiles) {
       const ext = (String(f.name || '').match(/\.[A-Za-z0-9]{1,6}$/) || ['.' + (f.filetype || 'bin')])[0].toLowerCase();
-      const dest = `${FILE_DIR}/${String(m.ts).replace('.', '_')}-${fi++}${ext}`;
+      const idx = fi++;
+      const dest = `${FILE_DIR}/${String(m.ts).replace('.', '_')}-${idx}${ext}`;
       const prevA = prevAtt.find((x) => x.fid && x.fid === f.id) || {};
       const a = { name: String(f.name || '첨부').slice(0, 40), fid: f.id, from };
       if ('kind' in prevA) { a.kind = prevA.kind; a.menu = prevA.menu || []; }   // 판독 완료분 재사용(빈 결과도 재사용)
       const small = (f.size || 0) <= FILE_MAX && !!f.url_private_download;
       let stored = false;
-      if (inWindow && small) {
+      if (inWindow && small && idx < FILE_PER_MSG) {   // 저장은 앞 몇 장만 — 판독은 아래에서 전량
         stored = fs.existsSync(dest) || await downloadSlackFile(f.url_private_download, dest);
         if (stored) a.path = dest;
       }
@@ -437,7 +448,7 @@ function detectPos(text) {
       store, biz, pos, content, special,
       drive: driveLinks, files: fileCnt, att, datt, replies, rc, lr,
       // 댓글 첨부까지 훑었는지 — 스레드를 실제로 읽었거나, 애초에 댓글이 없으면 훑을 게 없으므로 완료로 본다
-      rfx: (rawReplies !== null || rc === 0) ? 1 : ((prevMap[m.ts] || {}).rfx || 0),
+      rfx: (rawReplies !== null || rc === 0) ? RFX_VER : ((prevMap[m.ts] || {}).rfx || 0),
       status, handler: handler || confirmer || null,
       link: `https://${WORKSPACE}/archives/${CHANNEL}/p${String(m.ts).replace('.', '')}`,
     });
@@ -467,6 +478,7 @@ function detectPos(text) {
   const byStatus = capped.reduce((a, i) => { a[i.status] = (a[i.status] || 0) + 1; return a; }, {});
   if (ocrDone) console.log(`🔎 신규 이미지 판독 ${ocrDone}건 (${OCR_MODEL}) · 이번 실행 비용 약 $${ocrUsd.toFixed(3)} (₩${Math.round(ocrUsd * KRW_PER_USD).toLocaleString()})${ocrDone >= OCR_CAP ? ` · 상한 ${OCR_CAP}건 도달 — 나머지는 다음 실행에서` : ''}`);
   if (driveDownloaded || driveBlocked || driveSkipped) console.log(`🖼 Drive 파일 ${driveDownloaded}건 수집${driveBlocked ? ` · 권한차단 ${driveBlocked}건(권한 풀리면 자동 복구)` : ''}${driveSkipped ? ` · 미지원형식 ${driveSkipped}건(heif·hwp·xlsx 등)` : ''} — 파일은 저장소에 남기지 않음`);
+  if (truncated) console.log(`⚠ 요청당 상한(JUDGE_PER_MSG=${JUDGE_PER_MSG})에 걸려 ${truncated}건을 판독하지 못했습니다 — 상한을 올리세요`);
   try { fs.rmSync(DRIVE_TMP, { recursive: true, force: true }); } catch (e) {}
   console.log(`✅ ${OUT} 갱신: 요청 ${capped.length}건 (완료 ${byStatus.done || 0} · 확인중 ${byStatus.confirm || 0} · 대기 ${byStatus.wait || 0} · 중복 ${byStatus.dup || 0}) v${data.version}`);
   process.exit(0);   // 좀비 워커가 남아 프로세스가 안 끝나는 것 방지(모든 쓰기는 동기 완료됨)
