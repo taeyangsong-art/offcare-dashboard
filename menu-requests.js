@@ -3,10 +3,40 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 532,
- "updatedAt": "2026-08-11 13:45",
+ "version": 533,
+ "updatedAt": "2026-08-11 14:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1786423674.596459",
+   "date": "2026-08-11",
+   "time": "13:47",
+   "store": "반달커피",
+   "biz": "3022363308",
+   "pos": "토스포스",
+   "content": "토스포스/ 메뉴 일부 등록 누락되어 등록 요청드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BPCR9SHUJ",
+     "from": "댓글",
+     "path": "menu-files/1786423674_596459-1.png"
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "• 카테고리 : 붕어+분식+치킨"
+   ],
+   "rc": 2,
+   "lr": "1786423925.636929",
+   "rfx": 2,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786423674596459"
+  },
   {
    "ts": "1786422980.960799",
    "date": "2026-08-11",
