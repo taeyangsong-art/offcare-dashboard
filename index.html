@@ -2252,7 +2252,42 @@ function menuregParseGrid(gridId){
     rows.push({cat:cat||'메뉴', name, price,
       bar:parts[3]||'', maker:parts[4]||'', code:parts[5]||'', stock:parts[6]||''});
   }
+  // 복사·다운로드가 모두 이 함수를 지나므로 여기서 한 번만 정리하면 양쪽에 같이 적용된다.
+  // 그리드를 직접 고쳐 중복을 만들어도 내보낼 때 잡힌다.
+  return menuregDedupe(rows);
+}
+/* 중복 정리 — POS 는 같은 상품명을 거부하거나 덮어쓰고, 바코드는 유일해야 등록된다.
+ * 원본에 중복이 있으면 그대로 올려서 실패하지 않게 내보내는 시점에 정리한다.
+ *   상품명 중복 → 두 번째부터 뒤에 '.' 을 붙여 구분 (누크바 / 누크바. / 누크바..)
+ *   바코드 중복 → 두 번째부터 비운다 (첫 건만 바코드를 갖는다)
+ * 그리드(원본)는 건드리지 않는다 — 매장이 보낸 값 그대로 보이는 게 검수에 낫다. */
+let menuregDedupLast={name:0,bar:0};
+function menuregDedupe(rows){
+  const usedName=new Set(), usedBar=new Set();
+  let nameFix=0, barClear=0;
+  for(const r of rows){
+    let nm=r.name;
+    if(usedName.has(nm)){
+      let k=1;
+      do{ nm=r.name+'.'.repeat(k); k++; }while(usedName.has(nm));
+      nameFix++;
+    }
+    usedName.add(nm); r.name=nm;
+    if(r.bar){
+      if(usedBar.has(r.bar)){ r.bar=''; barClear++; }
+      else usedBar.add(r.bar);
+    }
+  }
+  menuregDedupLast={name:nameFix, bar:barClear};
   return rows;
+}
+function menuregDedupMsg(){
+  const d=menuregDedupLast;
+  if(!d.name&&!d.bar) return '';
+  const p=[];
+  if(d.name) p.push('중복 상품명 '+d.name+'개 뒤에 마침표(.) 붙임');
+  if(d.bar) p.push('중복 바코드 '+d.bar+'개 비움');
+  return '\n\n🔁 '+p.join(' · ')+' (원본 그리드는 그대로입니다)';
 }
 function menuregCsvCell(v){ v=(v==null?'':String(v)); return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v; }
 function menuregGen(pi,gridId){
@@ -2266,7 +2301,8 @@ function menuregGen(pi,gridId){
   const a=document.createElement('a');
   a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));
   a.download=P.key+'_업로드_'+safe+'.csv'; a.click(); URL.revokeObjectURL(a.href);
-  if(P.note) alert('⚠️ '+P.note);
+  const dm=menuregDedupMsg();
+  if(P.note||dm) alert((P.note?'⚠️ '+P.note:'✅ '+P.label+' 양식 '+rows.length+'행 내려받았습니다.')+dm);
 }
 // 붙여넣기용 TSV(탭 구분) — 엑셀 양식의 데이터 첫 행 첫 칸에 Ctrl+V 하면 컬럼에 맞게 들어감
 function menuregTsv(pi,gridId){
@@ -2278,7 +2314,7 @@ function menuregCopy(pi,gridId){
   const t=menuregTsv(pi,gridId);
   if(!t){ alert('메뉴 항목이 없습니다.\n한 줄당 "'+FMT_HINT+'" 형식입니다.'); return; }
   const P=MENUREG_POS[pi];
-  const done=()=>alert('📋 '+P.label+' 양식용 텍스트 복사 완료!\n\n엑셀 양식을 열고 데이터 시작 행'+(P.key==='스파로스포스'?'(스파로스는 4행)':'(헤더 아래 첫 행)')+'의 첫 칸 클릭 → 붙여넣기(Ctrl+V) 하면 컬럼에 맞게 들어갑니다.'+(P.note?'\n\n⚠️ '+P.note:''));
+  const done=()=>alert('📋 '+P.label+' 양식용 텍스트 복사 완료!\n\n엑셀 양식을 열고 데이터 시작 행'+(P.key==='스파로스포스'?'(스파로스는 4행)':'(헤더 아래 첫 행)')+'의 첫 칸 클릭 → 붙여넣기(Ctrl+V) 하면 컬럼에 맞게 들어갑니다.'+(P.note?'\n\n⚠️ '+P.note:'')+menuregDedupMsg());
   if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(done,()=>prompt('자동 복사 실패 — 아래를 전체선택(Ctrl+A)·복사(Ctrl+C) 하세요:',t));
   else prompt('아래를 전체선택(Ctrl+A)·복사(Ctrl+C) 하세요:',t);
 }
