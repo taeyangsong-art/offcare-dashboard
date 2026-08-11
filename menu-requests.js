@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 526,
- "updatedAt": "2026-08-11 12:17",
+ "version": 527,
+ "updatedAt": "2026-08-11 12:31",
  "days": 30,
  "items": [
   {
@@ -15795,6 +15795,26 @@ window.MENU_REQUESTS = {
      "id": "1RPXHHEZwukNNWsUONadCi5hjtUozeJmE",
      "kind": "product_photo",
      "menu": []
+    },
+    {
+     "id": "1igKi3X7GnmGNvkGe5cPG7wL_NwCLw2y_",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "id": "1wWZE4dkH1axqTY-rvGC7ZFSjl-vxy2RL",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "id": "1rej9T4RbdrvVcL1C_SS4dWsMuwz2LEPk",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "id": "1biyLuAscle4YF9Zxi77wCmjp44fywaSe",
+     "kind": "product_photo",
+     "menu": []
     }
    ],
    "replies": [
@@ -15857,7 +15877,48 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "15t0fOMW2icTgSYLt0TnsnqJiQ-njnEQj",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "id": "1ZF9R3KQubKzW8xhZiETGoXWQsTx4J9eZ",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "id": "1Sh46I6skReLZnNg4RbcjPk6Q9f67AdJ9",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "id": "1J-qu_hw2j95mlibQrgN3iqP9zIxdy2PO",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "id": "1Vp2j2QHNPTteBdGjINuRXshYLih6B-yB",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "id": "1yPO-Hw9xNLgaXfzxKmh324k6eI28pAQU",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "id": "1gQSf9WUg1eNLI2H6EoYR-jUgUQTDY0PT",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "id": "194XeJaOz67sA_1I1OJqWWXZI6DiBsMpk",
+     "kind": "product_photo",
+     "menu": []
+    }
+   ],
    "replies": [],
    "rc": 1,
    "lr": "1784190517.827539",
