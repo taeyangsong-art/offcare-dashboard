@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 533,
- "updatedAt": "2026-08-11 14:00",
+ "version": 534,
+ "updatedAt": "2026-08-11 14:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1786424668.670299",
+   "date": "2026-08-11",
+   "time": "14:04",
+   "store": "커피창작마을",
+   "biz": "4031498452",
+   "pos": "",
+   "content": "메뉴 이미지 및 추가",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786424672.314999",
+   "rfx": 2,
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786424668670299"
+  },
   {
    "ts": "1786423674.596459",
    "date": "2026-08-11",
@@ -24,17 +45,61 @@ window.MENU_REQUESTS = {
      "fid": "F0BPCR9SHUJ",
      "from": "댓글",
      "path": "menu-files/1786423674_596459-1.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BPGJW9R28",
+     "from": "댓글",
+     "path": "menu-files/1786423674_596459-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "붕어+분식+치킨",
+       "name": "닭다리3+김밥300g",
+       "price": 23800
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "후라이드순살+김투250g",
+       "price": 22000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "매콤달콤국물떡볶이",
+       "price": 10000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "국물꾸덕로제떡볶이",
+       "price": 10000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "매콤닭다리1조각",
+       "price": 6600
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "순살후라이드6조각",
+       "price": 6600
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "감자통핫스틱2개",
+       "price": 4600
+      }
+     ]
     }
    ],
    "datt": [],
    "replies": [
     "• 카테고리 : 붕어+분식+치킨"
    ],
-   "rc": 2,
-   "lr": "1786423925.636929",
+   "rc": 4,
+   "lr": "1786425011.423909",
    "rfx": 2,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786423674596459"
   },
   {
@@ -54,8 +119,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1786422985.320609",
    "rfx": 2,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786422980960799"
   },
   {
@@ -72,11 +137,11 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [],
-   "rc": 0,
-   "lr": "",
+   "rc": 2,
+   "lr": "1786424584.960339",
    "rfx": 2,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786421717744599"
   },
   {
