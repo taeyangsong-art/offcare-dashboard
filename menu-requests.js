@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 539,
- "updatedAt": "2026-08-11 16:30",
+ "version": 540,
+ "updatedAt": "2026-08-11 16:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1786433704.425749",
+   "date": "2026-08-11",
+   "time": "16:35",
+   "store": "가든갤러리",
+   "biz": "1322074826",
+   "pos": "퍼스트포스",
+   "content": "퍼스트포스) 메뉴 수정 요청드립니다 >>",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "세트메뉴 카테고리 내 메뉴 클릭 시 사이드 메뉴 2개 이상 선택할 수 있도록 변경\n세트메뉴에서 반반피자 선택 시 각 피자 맛을 각각 선택할 수 있도록 변경 (피자 5가지)\n원 주문에서 추가 메뉴 선택 시 해당 추가 메뉴만 주문서 올라올 수 있도록 요청"
+   ],
+   "rc": 2,
+   "lr": "1786433711.106149",
+   "rfx": 2,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786433704425749"
+  },
   {
    "ts": "1786429920.680229",
    "date": "2026-08-11",
