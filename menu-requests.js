@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 528,
- "updatedAt": "2026-08-11 12:48",
+ "version": 529,
+ "updatedAt": "2026-08-11 13:02",
  "days": 30,
  "items": [
   {
@@ -17312,6 +17312,32 @@ window.MENU_REQUESTS = {
        "price": 120
       }
      ]
+    },
+    {
+     "id": "1Y_dGwDmkLBcD2c-VJUZL14Edq7wFUZPu",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "Beer & Cocktail",
+       "name": "Menabrea Pale Lager (메나브레아 페일)",
+       "price": 9900
+      },
+      {
+       "category": "Beer & Cocktail",
+       "name": "Lilet Highbal, 릴렛 하이볼",
+       "price": 9000
+      },
+      {
+       "category": "Beer & Cocktail",
+       "name": "Aperol Spritz, 아페롤 스프리츠",
+       "price": 8500
+      },
+      {
+       "category": "Cognac",
+       "name": "Daniel Bouju VSOP 다니엘 부쥬",
+       "price": 11000
+      }
+     ]
     }
    ],
    "replies": [
@@ -17536,7 +17562,69 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "19iyWz51vau6M6Gva1eUJ9muA2QwoyMg1",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "1인 세트메뉴 사이드",
+       "name": "한입군만두 5ps",
+       "price": 0
+      },
+      {
+       "category": "1인 세트메뉴 사이드",
+       "name": "어니언링 3ps",
+       "price": 0
+      },
+      {
+       "category": "1인 세트메뉴 사이드",
+       "name": "겉빠속촉 해쉬브라운 1ps",
+       "price": 0
+      },
+      {
+       "category": "1인 세트메뉴 사이드",
+       "name": "모짜렐라 치즈스틱 2ps",
+       "price": 0
+      },
+      {
+       "category": "1인 세트메뉴 사이드",
+       "name": "겉바속촉 감자고로케 1ps",
+       "price": 0
+      },
+      {
+       "category": "1인 세트메뉴 사이드",
+       "name": "겉바속촉 감자고로케 2ps",
+       "price": 2000
+      },
+      {
+       "category": "1인 세트메뉴 사이드",
+       "name": "잔슨빌소시지 1ps",
+       "price": 3000
+      },
+      {
+       "category": "1인 세트메뉴 사이드",
+       "name": "왕새우튀김 2ps",
+       "price": 3000
+      },
+      {
+       "category": "1인 세트메뉴 사이드",
+       "name": "가라아게 4ps",
+       "price": 3000
+      },
+      {
+       "category": "1인 세트메뉴 사이드",
+       "name": "돈까스",
+       "price": 5000
+      },
+      {
+       "category": "1인 세트메뉴 사이드",
+       "name": "빠삭촉촉 가지튀김 5ps",
+       "price": 1500
+      }
+     ]
+    }
+   ],
    "replies": [
     "전화인입\n• 237오므카레 서초 지파이브점  / 237오므카레 본점   \n    ◦ 두매장  [1인세트 메뉴] 에 적용 된    [사이드메뉴 선택]  빼고 >  첨부된 사진으로 옵션 반영 요청 \n    ◦ 기존 옵션 순서  동일하게 요청 \n• 매장 운영중 금일 바로 진행 후 전화요청\n• 반영 후 OB 완료  ···"
    ],
@@ -17740,7 +17828,74 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1nzFLlX2f7QX2d-c3DGBHMcM0-w--pYJk",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "주류",
+       "name": "소주",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "맥주",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "청하",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "황칠막걸리",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "백세주",
+       "price": 10000
+      },
+      {
+       "category": "주류",
+       "name": "산사춘",
+       "price": 10000
+      },
+      {
+       "category": "주류",
+       "name": "복분자",
+       "price": 15000
+      },
+      {
+       "category": "주류",
+       "name": "음료",
+       "price": 2000
+      },
+      {
+       "category": "주류",
+       "name": "인삼주 소(小)",
+       "price": 30000
+      },
+      {
+       "category": "주류",
+       "name": "인삼주 중(中)",
+       "price": 60000
+      },
+      {
+       "category": "주류",
+       "name": "인삼주 대(大)",
+       "price": 90000
+      },
+      {
+       "category": "주류",
+       "name": "담금인삼주 (독구리/도자기 작은술병)",
+       "price": 5000
+      }
+     ]
+    }
+   ],
    "replies": [
     "대전광역시 대덕구 대청로 20 (신탄진동) / N45639"
    ],
@@ -17788,7 +17943,84 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1IQ4gtqZ47wZdY9sqOfAZ7m5X_EFrQPTV",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "고기 메뉴",
+       "name": "돼지불고기",
+       "price": 10000
+      },
+      {
+       "category": "고기 메뉴",
+       "name": "우삼겹로스",
+       "price": 12000
+      },
+      {
+       "category": "고기 메뉴",
+       "name": "오리주물럭",
+       "price": 12000
+      },
+      {
+       "category": "식사 메뉴",
+       "name": "물막국수",
+       "price": 10000
+      },
+      {
+       "category": "식사 메뉴",
+       "name": "비빔막국수",
+       "price": 10000
+      },
+      {
+       "category": "식사 메뉴",
+       "name": "김치찌개(돼지)",
+       "price": 10000
+      },
+      {
+       "category": "세트 메뉴",
+       "name": "돼지불고기 + 막국수",
+       "price": 12000
+      },
+      {
+       "category": "추가 메뉴",
+       "name": "돼지불고기(100g)",
+       "price": 2000
+      },
+      {
+       "category": "추가 메뉴",
+       "name": "면추가",
+       "price": 2000
+      },
+      {
+       "category": "주류·음료",
+       "name": "소주",
+       "price": 5000
+      },
+      {
+       "category": "주류·음료",
+       "name": "맥주",
+       "price": 5000
+      },
+      {
+       "category": "주류·음료",
+       "name": "막걸리",
+       "price": 4000
+      },
+      {
+       "category": "주류·음료",
+       "name": "음료수",
+       "price": 2000
+      },
+      {
+       "category": "주류·음료",
+       "name": "생수",
+       "price": 700
+      }
+     ]
+    }
+   ],
    "replies": [
     "님, 안녕하세요!\n금일 오전 11시 이전 처리되셔야 한다고 하셔서 확인 부탁드립니다!\n완료 시 안내 문자 발송 부탁드립니다!",
     "솔라피발송",
@@ -17815,7 +18047,94 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1egQTY-1-syXj0bh-upmczmsThBnEiYVl",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "황칠 삼계탕",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "황칠 누룽지 삼계탕",
+       "price": 17000
+      },
+      {
+       "category": "",
+       "name": "황칠 녹두 삼계탕",
+       "price": 17000
+      },
+      {
+       "category": "",
+       "name": "황칠 녹두 누룽지 삼계탕",
+       "price": 19000
+      },
+      {
+       "category": "",
+       "name": "황칠 전복 삼계탕",
+       "price": 20000
+      },
+      {
+       "category": "",
+       "name": "황칠 전복 누룽지삼계탕",
+       "price": 22000
+      },
+      {
+       "category": "",
+       "name": "황칠 왕 갈비탕",
+       "price": 17000
+      },
+      {
+       "category": "",
+       "name": "황칠 전복 왕갈비탕",
+       "price": 21000
+      },
+      {
+       "category": "",
+       "name": "황칠 흑염소탕120g",
+       "price": 16000
+      },
+      {
+       "category": "",
+       "name": "황칠 흑염소탕(특대)170g",
+       "price": 20000
+      },
+      {
+       "category": "",
+       "name": "황칠 흑염소 미나리초무침",
+       "price": 30000
+      },
+      {
+       "category": "",
+       "name": "황칠 흑염소 전골 中",
+       "price": 58000
+      },
+      {
+       "category": "",
+       "name": "황칠 흑염소 전골 大",
+       "price": 78000
+      },
+      {
+       "category": "",
+       "name": "황칠 약선 흑염소 수육 中",
+       "price": 68000
+      },
+      {
+       "category": "추가",
+       "name": "야채 추가 (부추+깻잎+숙주)",
+       "price": 3000
+      },
+      {
+       "category": "추가",
+       "name": "염소고기 추가",
+       "price": 30000
+      }
+     ]
+    }
+   ],
    "replies": [
     "메뉴등록 및 통화완료."
    ],
@@ -17849,7 +18168,43 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1oE21ggYJOemXrjbVjHowclI7tTL9Pj6j",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "id": "1wAS6GwyCBArQ2XQ_xLDd4Xf9Lnezs22s",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "id": "1buy47xIj5aQG9ian3F1y88oOhLJTNjvr",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "id": "1kAHQ_a3tocDzFR7MImRKOpex6ivpYYYJ",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "id": "1tt24V1mQH0a_y0MbRdMKUPrq9Ju5m6F4",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "id": "1EEqwR68BpIbrKkzn36tNEMaZI_yAZJYk",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "id": "1EHxMyL3BZ1iaNBo6Ucd3ceTGw112ghs_",
+     "kind": "product_photo",
+     "menu": []
+    }
+   ],
    "replies": [
     "메뉴가 없는디",
     "일단 0원에 메뉴 이름, 카테고리 기본으로 생성만 해놓음"
