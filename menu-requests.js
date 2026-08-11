@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 525,
- "updatedAt": "2026-08-11 12:01",
+ "version": 526,
+ "updatedAt": "2026-08-11 12:17",
  "days": 30,
  "items": [
   {
@@ -13899,6 +13899,22 @@ window.MENU_REQUESTS = {
        "price": 6000
       }
      ]
+    },
+    {
+     "id": "1QvpA8ruhnUVljcEr6LrpF0BkSIb1TzDn",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "마들렌",
+       "price": 2800
+      },
+      {
+       "category": "",
+       "name": "휘낭시에",
+       "price": 3000
+      }
+     ]
     }
    ],
    "replies": [
@@ -13927,7 +13943,54 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1d49p6MJgoFzsE9ZcGpPEoY5__BaNxeRC",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "2인 피맥세트",
+       "name": "피자",
+       "price": 19000
+      },
+      {
+       "category": "2인 피맥세트",
+       "name": "맥주 2잔",
+       "price": 12000
+      },
+      {
+       "category": "2인 피맥세트",
+       "name": "2인 피맥세트 할인판매가",
+       "price": 28000
+      },
+      {
+       "category": "2인 일맥세트",
+       "name": "파스타",
+       "price": 15500
+      },
+      {
+       "category": "2인 일맥세트",
+       "name": "맥주 2잔",
+       "price": 12000
+      },
+      {
+       "category": "2인 일맥세트",
+       "name": "2인 일맥세트 할인판매가",
+       "price": 24500
+      }
+     ]
+    },
+    {
+     "id": "1EY0O96OHtoLJGt1p0VaXCFEvJH5njjLG",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "id": "1L0kSmgdsdkp8Gg2yLtqH0zzM7LOSYcXf",
+     "kind": "product_photo",
+     "menu": []
+    }
+   ],
    "replies": [
     "님, 안녕하세요.\n대표님 재인입되어 맥주세트, 브루잉커피만 추가 되어있고 다른 옵션 등 추가가 이루어지지 않았다고 하시어 확인 한버만 부탁 드리겠습니다. :꾸벅:\n재부팅 이후에도 포스/키오스크 모두 동일하다고 하십니다.",
     "키오스크인가요 포스기인가요",
@@ -14118,7 +14181,13 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "12S4RJ7lvH59eqLRMsE2MVDS--nQ6ThpH",
+     "kind": "other",
+     "menu": []
+    }
+   ],
    "replies": [
     "해당 매장, 테이블 오더 사용 매장이라\n전시관리 등록이 필요합니다. 진행 부탁드리겠습니다 :slightly_smiling_face:",
     "여기 아까 완료해썽요",
@@ -14165,7 +14234,61 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 1,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BJH4TB3BM",
+     "from": "원글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "식사",
+       "name": "눈꽃치즈닭갈비",
+       "price": 16000
+      },
+      {
+       "category": "식사",
+       "name": "닭갈비",
+       "price": 14000
+      },
+      {
+       "category": "식사",
+       "name": "얼큰막국수",
+       "price": 9000
+      },
+      {
+       "category": "식사",
+       "name": "막국수",
+       "price": 9000
+      },
+      {
+       "category": "식사",
+       "name": "물만두",
+       "price": 5000
+      },
+      {
+       "category": "식사",
+       "name": "볶음밥",
+       "price": 3000
+      },
+      {
+       "category": "식사",
+       "name": "주먹밥",
+       "price": 2000
+      },
+      {
+       "category": "식사",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "식사",
+       "name": "미나리닭갈비",
+       "price": 16000
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [
     "막국수와 얼큰막국수를 물/비빔 나누는 요청입니다"
@@ -14191,7 +14314,234 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1ZCGXAr_tvDpD60cUivs4ZgsrzHYhSUEZ",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "식사",
+       "name": "짜장",
+       "price": 8000
+      },
+      {
+       "category": "식사",
+       "name": "매운짜장",
+       "price": 9000
+      },
+      {
+       "category": "식사",
+       "name": "볶음짜장",
+       "price": 11000
+      },
+      {
+       "category": "식사",
+       "name": "해물짬뽕",
+       "price": 13000
+      },
+      {
+       "category": "식사",
+       "name": "차돌짬뽕",
+       "price": 13000
+      },
+      {
+       "category": "식사",
+       "name": "능이짬뽕",
+       "price": 13000
+      },
+      {
+       "category": "식사",
+       "name": "비프라이스",
+       "price": 13000
+      },
+      {
+       "category": "식사",
+       "name": "잡채밥",
+       "price": 13000
+      },
+      {
+       "category": "식사",
+       "name": "마파두부밥",
+       "price": 11000
+      },
+      {
+       "category": "식사",
+       "name": "새우볶음밥",
+       "price": 11000
+      },
+      {
+       "category": "식사",
+       "name": "XO게살볶음밥",
+       "price": 13000
+      },
+      {
+       "category": "여름 한정 메뉴",
+       "name": "냉탄탄면",
+       "price": 13000
+      },
+      {
+       "category": "여름 한정 메뉴",
+       "name": "콩국수",
+       "price": 11000
+      },
+      {
+       "category": "요리·디너",
+       "name": "전가복",
+       "price": 53000
+      },
+      {
+       "category": "요리·디너",
+       "name": "동파육",
+       "price": 38000
+      },
+      {
+       "category": "요리·디너",
+       "name": "어향가지",
+       "price": 38000
+      },
+      {
+       "category": "요리·디너",
+       "name": "어향동고",
+       "price": 38000
+      },
+      {
+       "category": "요리·디너",
+       "name": "계살유산슬",
+       "price": 32000
+      },
+      {
+       "category": "요리·디너",
+       "name": "팔보채",
+       "price": 32000
+      },
+      {
+       "category": "요리·디너",
+       "name": "오향장육",
+       "price": 32000
+      },
+      {
+       "category": "요리·디너",
+       "name": "양장피",
+       "price": 32000
+      },
+      {
+       "category": "요리·디너",
+       "name": "고추잡채 + 꽃빵(4pcs)",
+       "price": 32000
+      },
+      {
+       "category": "요리·디너",
+       "name": "해물누룽지탕",
+       "price": 32000
+      },
+      {
+       "category": "요리·디너",
+       "name": "칠롱탕",
+       "price": 28000
+      },
+      {
+       "category": "요리·디너",
+       "name": "마파두부",
+       "price": 24000
+      },
+      {
+       "category": "튀김요리",
+       "name": "유린기",
+       "price": 26000
+      },
+      {
+       "category": "튀김요리",
+       "name": "깐풍기",
+       "price": 26000
+      },
+      {
+       "category": "튀김요리",
+       "name": "칠리새우 6pcs",
+       "price": 19000
+      },
+      {
+       "category": "튀김요리",
+       "name": "칠리새우 10pcs",
+       "price": 24000
+      },
+      {
+       "category": "튀김요리",
+       "name": "크림새우 6pcs",
+       "price": 19000
+      },
+      {
+       "category": "튀김요리",
+       "name": "크림새우 10pcs",
+       "price": 24000
+      },
+      {
+       "category": "튀김요리",
+       "name": "깐풍새우 6pcs",
+       "price": 19000
+      },
+      {
+       "category": "튀김요리",
+       "name": "깐풍새우 10pcs",
+       "price": 24000
+      },
+      {
+       "category": "튀김요리",
+       "name": "탕수육(중)",
+       "price": 24000
+      },
+      {
+       "category": "튀김요리",
+       "name": "탕수육(소)",
+       "price": 15000
+      },
+      {
+       "category": "고량주",
+       "name": "연태고량주 (소)",
+       "price": 15000
+      },
+      {
+       "category": "고량주",
+       "name": "연태고량주 (중)",
+       "price": 25000
+      },
+      {
+       "category": "고량주",
+       "name": "공부가주 (소)",
+       "price": 15000
+      },
+      {
+       "category": "고량주",
+       "name": "공부가주 (중)",
+       "price": 25000
+      },
+      {
+       "category": "칭따오",
+       "name": "칭따오",
+       "price": 9000
+      },
+      {
+       "category": "소주",
+       "name": "소주",
+       "price": 5000
+      },
+      {
+       "category": "맥주",
+       "name": "맥주",
+       "price": 5000
+      },
+      {
+       "category": "음료",
+       "name": "콜라",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "사이다",
+       "price": 2000
+      }
+     ]
+    }
+   ],
    "replies": [],
    "rc": 1,
    "lr": "1784615778.463049",
@@ -14568,7 +14918,179 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1cVSNaLDrGrAK-_n1UqQtAShEzJiEhXYf",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "식사류",
+       "name": "제육덮밥",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "오징어덮밥",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "꼬막 비빔밥",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "낙지 비빔밥",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "고등어구이 정식",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "김치찌개(뚝배기)",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "순두부찌개(뚝배기)",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "우렁된장찌개(뚝배기)",
+       "price": 9000
+      },
+      {
+       "category": "탕류",
+       "name": "묵은지 닭도리탕",
+       "price": 35000
+      },
+      {
+       "category": "탕류",
+       "name": "닭도리탕",
+       "price": 30000
+      },
+      {
+       "category": "볶음류",
+       "name": "직화낙삼볶음 (중)",
+       "price": 30000
+      },
+      {
+       "category": "볶음류",
+       "name": "직화낙삼볶음 (대)",
+       "price": 35000
+      },
+      {
+       "category": "볶음류",
+       "name": "오삼볶음 (중)",
+       "price": 25000
+      },
+      {
+       "category": "볶음류",
+       "name": "오삼볶음 (대)",
+       "price": 30000
+      },
+      {
+       "category": "볶음류",
+       "name": "오징어볶음",
+       "price": 20000
+      },
+      {
+       "category": "조림류",
+       "name": "갈치조림",
+       "price": 30000
+      },
+      {
+       "category": "조림류",
+       "name": "고등어조림",
+       "price": 25000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "얼큰 바지락칼국수",
+       "price": 10000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "닭발",
+       "price": 15000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "골뱅이 소면",
+       "price": 25000
+      },
+      {
+       "category": "찌개류",
+       "name": "부대곱창전골 (중)",
+       "price": 30000
+      },
+      {
+       "category": "찌개류",
+       "name": "부대곱창전골 (대)",
+       "price": 35000
+      },
+      {
+       "category": "찌개류",
+       "name": "부대낙지전골 (중)",
+       "price": 30000
+      },
+      {
+       "category": "찌개류",
+       "name": "부대낙지전골 (대)",
+       "price": 35000
+      },
+      {
+       "category": "찌개류",
+       "name": "부대찌개 (소)",
+       "price": 20000
+      },
+      {
+       "category": "찌개류",
+       "name": "부대찌개 (중)",
+       "price": 25000
+      },
+      {
+       "category": "찌개류",
+       "name": "부대찌개 (대)",
+       "price": 30000
+      },
+      {
+       "category": "찌개류",
+       "name": "생고기 김치전골 (소)",
+       "price": 20000
+      },
+      {
+       "category": "찌개류",
+       "name": "생고기 김치전골 (중)",
+       "price": 25000
+      },
+      {
+       "category": "찌개류",
+       "name": "생고기 김치전골 (대)",
+       "price": 30000
+      },
+      {
+       "category": "찌개류",
+       "name": "동태찌개 (소)",
+       "price": 20000
+      },
+      {
+       "category": "찌개류",
+       "name": "동태찌개 (중)",
+       "price": 25000
+      },
+      {
+       "category": "찌개류",
+       "name": "동태찌개 (대)",
+       "price": 30000
+      }
+     ]
+    }
+   ],
    "replies": [],
    "rc": 1,
    "lr": "1784602140.301419",
@@ -15253,7 +15775,28 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1TYewLGZk__GGbi2H8_GSxvqUpQDY3ngt",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "id": "1_wCwyjxK2nxJtQ9PQ6CnKofinFqwsNw2",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "id": "1feOXq8aB-tR6JP0EdzdXafC38YMwzdTV",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "id": "1RPXHHEZwukNNWsUONadCi5hjtUozeJmE",
+     "kind": "product_photo",
+     "menu": []
+    }
+   ],
    "replies": [
     "이미지에 사진 이름 없음",
     "차례대로 아메리카노 루오라떼 바닐라라떼 돌체라떼 아포가토 코코넛커피스무디 버터크림라떼 쑥크림라떼 생레몬에이드 생자몽에이드 히비스커스유자에이드 아이스티 초코라떼 말차라떼 밀크티 유자 생자몽차 생레몬차 입니다\n\n여기 순서라고함"
