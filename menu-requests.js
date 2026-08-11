@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 549,
- "updatedAt": "2026-08-11 18:45",
+ "version": 550,
+ "updatedAt": "2026-08-11 19:15",
  "days": 30,
  "items": [
   {
@@ -364,7 +364,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BQ739LM40",
      "from": "댓글",
-     "path": "menu-files/1786408886_898809-1.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -562,13 +561,13 @@ window.MENU_REQUESTS = {
        "name": "흑당버블스무디",
        "price": 5000
       }
-     ]
+     ],
+     "path": "menu-files/1786408886_898809-1.png"
     },
     {
      "name": "image.png",
      "fid": "F0BPELP6TKK",
      "from": "댓글",
-     "path": "menu-files/1786408886_898809-2.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -756,13 +755,16 @@ window.MENU_REQUESTS = {
        "name": "할인",
        "price": -400
       }
-     ]
+     ],
+     "path": "menu-files/1786408886_898809-2.png"
     }
    ],
    "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1786422234.978859",
+   "replies": [
+    "등록한 메뉴가 마음에 안든다고 하셔서 재등록 예정 내일의 내가"
+   ],
+   "rc": 4,
+   "lr": "1786442802.389519",
    "rfx": 2,
    "status": "done",
    "handler": "배선유",
