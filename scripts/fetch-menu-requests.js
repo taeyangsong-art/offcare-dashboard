@@ -337,26 +337,7 @@ function detectPos(text) {
     const isDup = names.some((n) => /^중복/.test(n));
     const status = handler ? 'done' : isDup ? 'dup' : confirmer ? 'confirm' : 'wait';
 
-    // 첨부파일 — 최근 FILE_DAYS 이내 건만 저장소에 다운로드해 대시보드 직접 다운로드 지원
-    const att = [];
-    if ((m.files || []).length && nowSec - parseFloat(m.ts) <= FILE_DAYS * 86400) {
-      let fi = 0;
-      for (const f of m.files.slice(0, FILE_PER_MSG)) {
-        const ext = (String(f.name || '').match(/\.[A-Za-z0-9]{1,6}$/) || ['.' + (f.filetype || 'bin')])[0];
-        const dest = `${FILE_DIR}/${String(m.ts).replace('.', '_')}-${fi}${ext.toLowerCase()}`;
-        fi++;
-        const ok = fs.existsSync(dest) || ((f.size || 0) <= FILE_MAX && f.url_private_download && await downloadSlackFile(f.url_private_download, dest));
-        if (ok) {
-          const a = { name: String(f.name || '첨부').slice(0, 40), path: dest };
-          if (OCR_EXT.test(dest)) {
-            const prevA = ((prevMap[m.ts] || {}).att || []).find((x) => x.path === dest);
-            if (prevA && 'kind' in prevA) { a.kind = prevA.kind; a.menu = prevA.menu || []; }   // 캐시 재사용(빈 결과도 재사용 → 재호출 방지)
-            else { const r = await readMenuImage(dest); if (r) { a.kind = r.kind; a.menu = r.menu; } }   // null(상한/키없음)은 캐시 안 함 → 다음 실행 재시도
-          }
-          att.push(a);
-        }
-      }
-    }
+    // (첨부 처리는 아래 '스레드 댓글' 이후 — 댓글에 달린 이미지까지 같이 모아야 한다)
 
     // Drive 링크 이미지 — 접근 가능한 것을 임시로 받아 판독하고 즉시 지운다(저장소에 안 남김).
     // 슬랙 첨부(att)와 달리 FILE_DAYS 창을 두지 않는다: 파일을 보관하지 않으므로 용량 이유가 없고,
@@ -397,24 +378,66 @@ function detectPos(text) {
 
     // 스레드 댓글 — 요청사항이 댓글에 달리는 케이스. 원글 작성자 댓글 위주(봇 접수글은 사람 댓글 전부).
     const rc = m.reply_count || 0, lr = m.latest_reply || '';
-    let replies = [];
+    let replies = [], rawReplies = null, repliesCached = false;
     if (rc > 0) {
       const prev = prevMap[m.ts];
-      if (prev && prev.rc === rc && prev.lr === lr) replies = prev.replies || [];   // 변경 없음 → 캐시
+      // rfx = '이 스레드의 댓글 첨부까지 훑었음' 표시. 없으면 댓글이 그대로여도 한 번은 다시 읽는다.
+      // (댓글 이미지 수집을 나중에 붙였기 때문에, 기존 요청들은 이 1회 스캔이 있어야 잡힌다)
+      if (prev && prev.rc === rc && prev.lr === lr && prev.rfx) { replies = prev.replies || []; repliesCached = true; }   // 변경 없음 → 캐시
       else {
-        const raw = await fetchReplies(CHANNEL, m.ts);
-        if (raw === null) replies = (prev && prev.replies) || [];                   // 상한 도달 → 기존 유지
-        else replies = raw
+        rawReplies = await fetchReplies(CHANNEL, m.ts);
+        if (rawReplies === null) { replies = (prev && prev.replies) || []; repliesCached = true; }            // 상한 도달 → 기존 유지
+        else replies = rawReplies
           .filter((r) => !r.bot_id && r.subtype !== 'bot_message' && (r.text || '').trim())
           .filter((r) => (m.user ? r.user === m.user : true))                       // 원글 작성자 댓글만(봇 원글은 전부)
           .map((r) => cleanReply(r.text)).filter(Boolean).slice(0, 8);
       }
     }
 
+    // 첨부 이미지 — 원글 + 스레드 댓글. 직원이 원글이 아니라 댓글로 사진을 올리는 경우가 많다
+    // (또래오래·파파빈 등). 텍스트 없는 사진만 있는 댓글도 잡아야 하므로 위 텍스트 필터와 별개로 모은다.
+    // 저장은 FILE_DAYS 창 안에서만(대시보드 썸네일용). 창 밖이라도 판독은 한다 — 임시로 받아 판독 후 삭제.
+    const prevAtt = ((prevMap[m.ts] || {}).att) || [];
+    const inWindow = nowSec - parseFloat(m.ts) <= FILE_DAYS * 86400;
+    const att = [];
+    if (repliesCached) prevAtt.filter((x) => x.from === '댓글').forEach((x) => att.push(x));   // 댓글을 다시 안 읽었으면 승계
+    const slackFiles = [
+      ...(m.files || []).slice(0, FILE_PER_MSG).map((f) => ({ f, from: '원글' })),
+      ...(rawReplies || []).flatMap((r) => (r.files || []).map((f) => ({ f, from: '댓글' }))).slice(0, FILE_PER_MSG),
+    ];
+    let fi = 0;
+    for (const { f, from } of slackFiles) {
+      const ext = (String(f.name || '').match(/\.[A-Za-z0-9]{1,6}$/) || ['.' + (f.filetype || 'bin')])[0].toLowerCase();
+      const dest = `${FILE_DIR}/${String(m.ts).replace('.', '_')}-${fi++}${ext}`;
+      const prevA = prevAtt.find((x) => x.fid && x.fid === f.id) || {};
+      const a = { name: String(f.name || '첨부').slice(0, 40), fid: f.id, from };
+      if ('kind' in prevA) { a.kind = prevA.kind; a.menu = prevA.menu || []; }   // 판독 완료분 재사용(빈 결과도 재사용)
+      const small = (f.size || 0) <= FILE_MAX && !!f.url_private_download;
+      let stored = false;
+      if (inWindow && small) {
+        stored = fs.existsSync(dest) || await downloadSlackFile(f.url_private_download, dest);
+        if (stored) a.path = dest;
+      }
+      if (!('kind' in a) && OCR_EXT.test(ext) && small) {
+        let judgePath = stored ? dest : null;
+        if (!judgePath) {   // 창 밖이라 저장은 안 하지만 판독은 한다
+          judgePath = `${DRIVE_TMP}/s-${f.id}${ext}`;
+          if (!await downloadSlackFile(f.url_private_download, judgePath)) judgePath = null;
+        }
+        if (judgePath) {
+          try { const r = await readMenuImage(judgePath); if (r) { a.kind = r.kind; a.menu = r.menu; } }
+          finally { if (!stored) { try { fs.unlinkSync(judgePath); } catch (e) {} } }
+        }
+      }
+      if (a.path || 'kind' in a) att.push(a);
+    }
+
     items.push({
       ts: m.ts, date: kstDate(m.ts), time: kstHM(m.ts),
       store, biz, pos, content, special,
       drive: driveLinks, files: fileCnt, att, datt, replies, rc, lr,
+      // 댓글 첨부까지 훑었는지 — 스레드를 실제로 읽었거나, 애초에 댓글이 없으면 훑을 게 없으므로 완료로 본다
+      rfx: (rawReplies !== null || rc === 0) ? 1 : ((prevMap[m.ts] || {}).rfx || 0),
       status, handler: handler || confirmer || null,
       link: `https://${WORKSPACE}/archives/${CHANNEL}/p${String(m.ts).replace('.', '')}`,
     });

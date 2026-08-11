@@ -2327,7 +2327,7 @@ function renderMenuReg(){
       <div style="display:flex;gap:8px;flex-wrap:wrap;margin:8px 0">
         <a class="btn" href="${sel.link}" target="_blank">💬 슬랙 원문</a>
         ${(sel.drive||[]).map((d,i2)=>`<a class="btn" href="${d}" target="_blank">🖼 이미지${(sel.drive.length>1?' '+(i2+1):'')}</a>`).join('')}
-        ${(sel.att||[]).map((a,ai)=>`<a class="btn" href="${a.path}" target="_blank" download title="${escapeHtml(a.name)}">📎 ${escapeHtml((a.name||('첨부'+(ai+1))).length>18?(a.name.slice(0,16)+'…'):(a.name||('첨부'+(ai+1))))}</a>`).join('')}
+        ${(sel.att||[]).filter(a=>a.path).map((a,ai)=>`<a class="btn" href="${a.path}" target="_blank" download title="${escapeHtml(a.name)}${a.from?' ('+a.from+')':''}">📎 ${escapeHtml((a.name||('첨부'+(ai+1))).length>18?(a.name.slice(0,16)+'…'):(a.name||('첨부'+(ai+1))))}</a>`).join('')}
         ${sel.files&&!(sel.att||[]).length?`<span class="hint" style="align-self:center">📎 슬랙 첨부 ${sel.files}장 — 슬랙 원문에서 확인${sel.date&&((Date.now()-new Date(sel.date).getTime())>7*86400000)?' (7일 지나 직접 다운로드 만료)':''}</span>`:''}
       </div>
       <div style="display:flex;gap:8px;align-items:stretch;margin:8px 0">
@@ -2337,7 +2337,7 @@ function renderMenuReg(){
       <div style="background:var(--surface,#f7f7f8);border-radius:10px;padding:10px 12px;font-size:13px;white-space:pre-wrap;max-height:180px;overflow:auto">${escapeHtml(sel.content||'(요청내용 없음)')}${sel.special?'\n\n[특이사항] '+escapeHtml(sel.special):''}</div>
       ${(function(){
         // 슬랙 직접 첨부(att) + Drive 링크 이미지(datt) 를 같은 판독 목록으로 묶는다
-        const imgs=[...(sel.att||[]).map(a=>({...a,src:'슬랙'})), ...(sel.datt||[]).map(a=>({...a,src:'Drive'}))];
+        const imgs=[...(sel.att||[]).map(a=>({...a,src:'슬랙 '+(a.from||'원글')})), ...(sel.datt||[]).map(a=>({...a,src:'Drive'}))];
         const KIND={menu_board:'메뉴판',pos_screen:'POS 화면',product_photo:'상품사진',other:'기타'};
         const withMenu=imgs.filter(a=>(a.menu||[]).length);
         const skipped=imgs.filter(a=>'kind' in a && !(a.menu||[]).length);   // 상품사진 등 — 추출할 메뉴가 없는 이미지
@@ -2350,7 +2350,8 @@ function renderMenuReg(){
         ${blocked?`<div class="hint" style="color:#c2410c;margin-bottom:6px">🔒 Drive 이미지 ${blocked}장은 소유자가 다운로드를 막아 판독하지 못했습니다 — 위 <b>🖼 이미지</b> 링크로 직접 확인하세요.</div>`:''}
         ${withMenu.map(a=>{
           // Drive 이미지는 저장소에 없다 → 구글 썸네일을 직접 부른다. 권한 없으면 onerror 로 링크 대체.
-          const full = a.id ? `https://drive.google.com/file/d/${a.id}/view` : (a.path||'');
+          // 슬랙 이미지는 7일 지나면 저장소에서 지워져 path 가 없다(판독 결과만 남음) → 슬랙 원문으로 보낸다.
+          const full = a.id ? `https://drive.google.com/file/d/${a.id}/view` : (a.path||sel.link||'');
           const thumb = a.id ? `https://drive.google.com/thumbnail?id=${a.id}&sz=w600` : (a.path||'');
           return `<div class="ocr-card">
             <div class="ocr-thumb">
