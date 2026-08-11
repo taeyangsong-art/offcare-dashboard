@@ -429,6 +429,9 @@ function detectPos(text) {
     version: version + 1,
     updatedAt: `${kst.getUTCFullYear()}-${pad(kst.getUTCMonth() + 1)}-${pad(kst.getUTCDate())} ${pad(kst.getUTCHours())}:${pad(kst.getUTCMinutes())}`,
     days: DAYS, items: capped,
+    // 판독 설정 상태. 시각·건수 같은 매번 변하는 값은 넣지 않는다 — 넣으면 10분마다 무의미한
+    // 커밋이 생긴다. 상태가 바뀔 때만 파일이 바뀌므로, 판독이 0건일 때 원인(키 유무)을 가릴 수 있다.
+    ocr: { model: OCR_MODEL, enabled: !!process.env.ANTHROPIC_API_KEY, drive: !!process.env.GDRIVE_REFRESH_TOKEN },
   };
   const header = '/*\n * 슬랙 #oc팀_메뉴요청 최근 요청 적재 (대시보드 메뉴등록 카테고리용)\n * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.\n */\n';
   fs.writeFileSync(OUT, header + 'window.MENU_REQUESTS = ' + JSON.stringify(data, null, 1) + ';\n', 'utf8');
