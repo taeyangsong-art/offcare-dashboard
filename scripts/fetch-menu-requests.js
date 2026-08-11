@@ -353,15 +353,21 @@ function detectPos(text) {
 
     // Drive 링크 이미지 — 접근 가능한 것만 내려받아 슬랙 첨부와 동일하게 OCR.
     // 판독 결과(ocr)는 파일이 롤링 삭제돼도 계속 재사용하고, 차단분은 매 실행 재시도한다.
-    const datt = [];
+    // 창(FILE_DAYS) 밖 요청은 이미지를 다시 받지 않지만, 이미 판독한 결과는 파일이 아니라
+    // 텍스트라 버릴 이유가 없다. 그대로 승계한다.
+    // (승계하지 않으면 장당 ₩69 짜리 판독 결과가 7일 뒤 통째로 사라진다)
+    let datt = ((prevMap[m.ts] || {}).datt) || [];
     if (driveLinks.length && nowSec - parseFloat(m.ts) <= FILE_DAYS * 86400) {
       const tok = await driveToken();
       if (tok) {
-        const prevD = ((prevMap[m.ts] || {}).datt) || [];
+        const prevD = datt;
+        datt = [];   // 토큰이 있을 때만 새로 계산 — 자격증명이 없다고 기존 결과를 날리면 안 된다
         let di = 0;
         for (const id of driveIdsOf(driveLinks).slice(0, DRIVE_PER_MSG)) {
           const p = prevD.find((x) => x.id === id) || {};
-          if ('kind' in p) { datt.push({ id, kind: p.kind, menu: p.menu || [] }); continue; }   // 판독 완료분은 영구 재사용
+          // 판독 완료분은 영구 재사용. 구 tesseract 캐시(ocr 문자열)도 그대로 살려 재판독 비용을 아낀다.
+          if ('kind' in p) { datt.push({ id, kind: p.kind, menu: p.menu || [] }); continue; }
+          if ('ocr' in p) { datt.push({ id, ocr: p.ocr }); continue; }
           di++;
 
           const meta = await driveMeta(id, tok);
