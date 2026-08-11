@@ -80,7 +80,7 @@ function tabRange(title) {
   console.log(`읽을 탭: ${need.join(', ') || '(없음)'}`);
 
   const days = {};
-  let cells = 0, unknown = 0;
+  let cells = 0, unknown = 0, dropped = 0;
   for (const title of need) {
     const vr = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${encodeURIComponent(`'${title}'`)}?majorDimension=ROWS`, { headers: H });
     if (!vr.ok) { console.error(`  ⚠ [${title}] 값 조회 실패 HTTP ${vr.status} — 건너뜀`); continue; }
@@ -101,8 +101,11 @@ function tabRange(title) {
         const etc = [];
         for (const line of raw.split('\n').map((x) => x.trim()).filter(Boolean)) {
           const p = parseLine(line);
-          if (p) { if (!rec[p.slot]) rec[p.slot] = p.name; }
-          else { etc.push(line); unknown++; }                       // 행사·메모성 텍스트
+          if (p) { if (!rec[p.slot]) rec[p.slot] = p.name; continue; }
+          // 한 글자 축약('서','공' 등)은 담당자인지 확정할 수 없어 아예 넣지 않는다(사용자 결정).
+          // 잘못 표시하면 실제로 연락이 안 가는 문제라, 비워두는 쪽이 낫다.
+          if (line.length <= 1) { dropped++; continue; }
+          etc.push(line); unknown++;                                 // 행사·메모성 텍스트(컴포즈 설치 등)
         }
         if (etc.length) rec.inst = etc.join(' / ').slice(0, 60);
         if (Object.keys(rec).length) { days[ds] = rec; hit++; cells++; }
@@ -125,5 +128,6 @@ function tabRange(title) {
   data.version = ((prev && prev.version) || 0) + 1;
   const header = '/*\n * 원격 당직시트 → 당직근무 달력 데이터\n * scripts/fetch-duty.js 가 GitHub Actions 에서 주기 갱신합니다. 원본은 구글시트입니다.\n */\n';
   fs.writeFileSync(OUT, header + 'window.DUTY_DATA = ' + JSON.stringify(data, null, 1) + ';\n', 'utf8');
-  console.log(`✅ ${OUT} 갱신: ${Object.keys(days).length}일 적재 (v${data.version})${unknown ? ` · 구분 못한 줄 ${unknown}개는 행사/메모로 적재` : ''}`);
+  console.log(`✅ ${OUT} 갱신: ${Object.keys(days).length}일 적재 (v${data.version})` +
+              `${unknown ? ` · 행사/메모 ${unknown}줄` : ''}${dropped ? ` · 한글자 축약 ${dropped}줄 제외` : ''}`);
 })().catch((e) => { console.error('✗', e.message); process.exit(1); });
