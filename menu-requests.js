@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 537,
- "updatedAt": "2026-08-11 15:30",
+ "version": 538,
+ "updatedAt": "2026-08-11 15:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1786429920.680229",
+   "date": "2026-08-11",
+   "time": "15:32",
+   "store": "칠암장수국수",
+   "biz": "6874301365",
+   "pos": "",
+   "content": "하이오더용 선불테이블 6대 생성 부탁드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786429925.446819",
+   "rfx": 2,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786429920680229"
+  },
   {
    "ts": "1786429374.571959",
    "date": "2026-08-11",
