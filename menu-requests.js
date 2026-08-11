@@ -3,10 +3,30 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 518,
- "updatedAt": "2026-08-11 10:00",
+ "version": 519,
+ "updatedAt": "2026-08-11 10:17",
  "days": 30,
  "items": [
+  {
+   "ts": "1786410221.683539",
+   "date": "2026-08-11",
+   "time": "10:03",
+   "store": "브릭스 랩(BRIX LAB)",
+   "biz": "5693400751",
+   "pos": "토스포스",
+   "content": "전체",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786410227.141859",
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786410221683539"
+  },
   {
    "ts": "1786408886.898809",
    "date": "2026-08-11",
@@ -3747,7 +3767,156 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1fbowqlh_NIZ3aPwwP40x4IxC7PofGC_C",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "반반 맛선택(2)",
+       "name": "반반후라이드선택",
+       "price": 0
+      },
+      {
+       "category": "반반 맛선택(2)",
+       "name": "반반양념선택",
+       "price": 1000
+      },
+      {
+       "category": "반반 맛선택(2)",
+       "name": "반반치토스선택",
+       "price": 3000
+      },
+      {
+       "category": "반반 맛선택(2)",
+       "name": "반반마늘간장선택",
+       "price": 2000
+      },
+      {
+       "category": "반반 맛선택(2)",
+       "name": "반반모두의마요선택",
+       "price": 3000
+      },
+      {
+       "category": "반반 맛선택(2)",
+       "name": "반반눈꽃치즈선택",
+       "price": 2000
+      },
+      {
+       "category": "반반 맛선택(2)",
+       "name": "반반땡초",
+       "price": 3000
+      },
+      {
+       "category": "반반 맛선택(2)",
+       "name": "반반파닭",
+       "price": 3000
+      },
+      {
+       "category": "반반 맛선택(2)",
+       "name": "반반허니벌꿀선택",
+       "price": 2000
+      },
+      {
+       "category": "반반 맛선택(2)",
+       "name": "반반강정선택",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "id": "1QPGhdW9glL9lkno_HChImhKlnu08A3lo",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "미제공 (전체 선택 가능)",
+       "name": "치킨무 미제공",
+       "price": 0
+      },
+      {
+       "category": "미제공 (전체 선택 가능)",
+       "name": "소스 미제공",
+       "price": 0
+      },
+      {
+       "category": "미제공 (전체 선택 가능)",
+       "name": "음료 미제공",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "id": "1nQTNZmXHxzQzMmhPuKPiBw8aUUAYcz22",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "반반",
+       "price": 25000
+      },
+      {
+       "category": "반반",
+       "name": "뼈",
+       "price": 0
+      },
+      {
+       "category": "반반",
+       "name": "순살",
+       "price": 2000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반후라이드선택",
+       "price": 0
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반양념선택",
+       "price": 1000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반치토스선택",
+       "price": 3000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반마늘간장선택",
+       "price": 2000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반모두의마요선택",
+       "price": 3000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반눈꽃치즈선택",
+       "price": 2000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반땡초",
+       "price": 3000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반파닭",
+       "price": 3000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반허니벌꿀선택",
+       "price": 2000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반강정선택",
+       "price": 2000
+      }
+     ]
+    }
+   ],
    "replies": [],
    "rc": 1,
    "lr": "1785742720.625699",
@@ -4097,7 +4266,227 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1JnB_MJliv1V2McaAMyhCO2bBQ1iPHnlM",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "반반",
+       "price": 25000
+      },
+      {
+       "category": "반반",
+       "name": "뼈",
+       "price": 0
+      },
+      {
+       "category": "반반",
+       "name": "순살",
+       "price": 2000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반후라이드선택",
+       "price": 0
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반양념선택",
+       "price": 1000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반치토스선택",
+       "price": 3000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반마늘간장선택",
+       "price": 2000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반모두의마요선택",
+       "price": 3000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반눈꽃치즈선택",
+       "price": 2000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반땡초",
+       "price": 3000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반파닭",
+       "price": 3000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반허니벌꿀선택",
+       "price": 2000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반강정선택",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "id": "1gJes6nPvUUKUsHaW4thbtjymoD6EA2fe",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "반반 맛선택(2)",
+       "name": "반반후라이드선택",
+       "price": 0
+      },
+      {
+       "category": "반반 맛선택(2)",
+       "name": "반반양념선택",
+       "price": 1000
+      },
+      {
+       "category": "반반 맛선택(2)",
+       "name": "반반치토스선택",
+       "price": 3000
+      },
+      {
+       "category": "반반 맛선택(2)",
+       "name": "반반마늘간장선택",
+       "price": 2000
+      },
+      {
+       "category": "반반 맛선택(2)",
+       "name": "반반모두의마요선택",
+       "price": 3000
+      },
+      {
+       "category": "반반 맛선택(2)",
+       "name": "반반눈꽃치즈선택",
+       "price": 2000
+      },
+      {
+       "category": "반반 맛선택(2)",
+       "name": "반반땡초",
+       "price": 3000
+      },
+      {
+       "category": "반반 맛선택(2)",
+       "name": "반반파닭",
+       "price": 3000
+      },
+      {
+       "category": "반반 맛선택(2)",
+       "name": "반반허니벌꿀선택",
+       "price": 2000
+      },
+      {
+       "category": "반반 맛선택(2)",
+       "name": "반반강정선택",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "id": "1zhiP-6aLWdo_7rzfi76bZLClOfaR_3C2",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "반반",
+       "price": 25000
+      },
+      {
+       "category": "반반",
+       "name": "뼈",
+       "price": 0
+      },
+      {
+       "category": "반반",
+       "name": "순살",
+       "price": 2000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반후라이드선택",
+       "price": 0
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반양념선택",
+       "price": 1000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반치토스선택",
+       "price": 3000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반마늘간장선택",
+       "price": 2000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반모두의마요선택",
+       "price": 3000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반눈꽃치즈선택",
+       "price": 2000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반땡초",
+       "price": 3000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반파닭",
+       "price": 3000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반허니벌꿀선택",
+       "price": 2000
+      },
+      {
+       "category": "반반 맛선택",
+       "name": "반반강정선택",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "id": "1R-vH3U_4vY2qafcMsB8-fbuz8-mS1iO3",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "미제공 (전체 선택 가능)",
+       "name": "치킨무 미제공",
+       "price": 0
+      },
+      {
+       "category": "미제공 (전체 선택 가능)",
+       "name": "소스 미제공",
+       "price": 0
+      },
+      {
+       "category": "미제공 (전체 선택 가능)",
+       "name": "음료 미제공",
+       "price": 0
+      }
+     ]
+    }
+   ],
    "replies": [
     "옵션 등록 완료"
    ],
@@ -4268,7 +4657,99 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1ASb09A7uFRe4cfcmas4XOnz6kCEVdwBw",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "아메리카노",
+       "price": 3500
+      },
+      {
+       "category": "",
+       "name": "아이스아메리카노",
+       "price": 3900
+      },
+      {
+       "category": "",
+       "name": "카페 라떼",
+       "price": 3900
+      },
+      {
+       "category": "",
+       "name": "레몬 에이드",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "청포도 에이드",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "파인에플 에이드",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "라즈베리 에이드",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "캐모마일",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "루이보스",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "레몬그라스/레몬밤",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "유자차",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "망고 타래빙수",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "블루베리 타래빙수",
+       "price": 9500
+      },
+      {
+       "category": "",
+       "name": "블루베리 + 망고 타래빙수",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "견과류 타랫 용수염",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "초코 타랫 용수염",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "말차 타랫 용수염",
+       "price": 0
+      }
+     ]
+    }
+   ],
    "replies": [
     "완료"
    ],
@@ -4485,7 +4966,244 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1Lp6kHNIncQq2q1A8HJcatcac3XU-8vCO",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "고추화식",
+       "price": 25
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "치필링",
+       "price": 26
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "치필링HOT",
+       "price": 27
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "치필링반반",
+       "price": 27
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "치치반반",
+       "price": 27
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "치치HOT반반",
+       "price": 28
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "1989오리진후라이드",
+       "price": 21
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "홍라이드",
+       "price": 22
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "양념치킨",
+       "price": 24
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "반반치킨(후+양)",
+       "price": 24
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "와사칸",
+       "price": 25
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "허니벌꿀치킨",
+       "price": 24
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "강정치킨",
+       "price": 24
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "치돈스치킨",
+       "price": 25
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "눈꽃치즈치킨",
+       "price": 25
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "마늘간장치킨",
+       "price": 25
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "땡초치킨",
+       "price": 25
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "파닭",
+       "price": 25
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "고매치킨",
+       "price": 25
+      },
+      {
+       "category": "부위별 치킨 메뉴",
+       "name": "순살변경",
+       "price": 2
+      },
+      {
+       "category": "부위별 치킨 메뉴",
+       "name": "닭다리변경 (선선다리 10개)",
+       "price": 3
+      },
+      {
+       "category": "부위별 치킨 메뉴",
+       "name": "날개변경 (윙10조각 & 봉10조각)",
+       "price": 3
+      },
+      {
+       "category": "부위별 치킨 메뉴",
+       "name": "콤보변경 (선선다리 5조각/윙&봉 5조각씩)",
+       "price": 3
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "소떡소떡 (기본)",
+       "price": 3
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "소떡소떡 (땡초)",
+       "price": 4
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "치즈스틱 (3개)",
+       "price": 3
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "멕시칸칩 (200g)",
+       "price": 4
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "고추튀김 (7개)",
+       "price": 4
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "단짠감자치즈볼 (3개)",
+       "price": 4
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "더블치즈볼 (5개)",
+       "price": 5
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "멘보사 (5개)",
+       "price": 5
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "어묵퐁당",
+       "price": 6
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "모래집후라이드",
+       "price": 13
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "닭치고닭발",
+       "price": 17
+      },
+      {
+       "category": "음료",
+       "name": "펩시 245ml / 사이다 245ml",
+       "price": 1
+      },
+      {
+       "category": "음료",
+       "name": "콜라 500ml / 사이다 500ml",
+       "price": 2
+      },
+      {
+       "category": "음료",
+       "name": "제로펩시 500ml",
+       "price": 3
+      },
+      {
+       "category": "음료",
+       "name": "콜라 1.25L / 사이다 1.25L",
+       "price": 3
+      },
+      {
+       "category": "음료",
+       "name": "제로펩시 1.25L",
+       "price": 4
+      },
+      {
+       "category": "주류",
+       "name": "후레쉬",
+       "price": 5
+      },
+      {
+       "category": "주류",
+       "name": "진로",
+       "price": 5
+      },
+      {
+       "category": "주류",
+       "name": "카스",
+       "price": 5
+      },
+      {
+       "category": "주류",
+       "name": "한맥 500cc",
+       "price": 5
+      },
+      {
+       "category": "주류",
+       "name": "한맥 1700cc",
+       "price": 16
+      },
+      {
+       "category": "주류",
+       "name": "한맥 2700cc",
+       "price": 25
+      },
+      {
+       "category": "주류",
+       "name": "한맥 1000cc (포장/배달)",
+       "price": 9
+      }
+     ]
+    }
+   ],
    "replies": [],
    "rc": 1,
    "lr": "1785403699.459429",
@@ -4549,7 +5267,244 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1V1E1brRlH2FASMNbWqkcwbgZNjdW7b8o",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "고추화식",
+       "price": 25000
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "치필링",
+       "price": 26000
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "치필링HOT",
+       "price": 27000
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "치필링반반",
+       "price": 27000
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "치치반반",
+       "price": 27000
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "치치HOT반반",
+       "price": 28000
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "1989오리진후라이드",
+       "price": 21000
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "홍라이드",
+       "price": 22000
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "양념치킨",
+       "price": 24000
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "반반치킨(후+양)",
+       "price": 24000
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "와삭칸",
+       "price": 25000
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "허니불닭치킨",
+       "price": 24000
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "강정치킨",
+       "price": 24000
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "치토스치킨",
+       "price": 25000
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "눈꽃치즈치킨",
+       "price": 25000
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "마늘간장치킨",
+       "price": 25000
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "땡초치킨",
+       "price": 25000
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "파닭",
+       "price": 25000
+      },
+      {
+       "category": "한마리 치킨 메뉴",
+       "name": "고매치킨",
+       "price": 25000
+      },
+      {
+       "category": "부위별 치킨 메뉴",
+       "name": "순살변경",
+       "price": 2000
+      },
+      {
+       "category": "부위별 치킨 메뉴",
+       "name": "닭다리변경 (선선다리 10개)",
+       "price": 3000
+      },
+      {
+       "category": "부위별 치킨 메뉴",
+       "name": "날개변경 (윙10조각 & 봉10조각)",
+       "price": 3000
+      },
+      {
+       "category": "부위별 치킨 메뉴",
+       "name": "콤보변경 (선선다리 5조각/윙&봉 5조각씩)",
+       "price": 3000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "소떡소떡 (기본)",
+       "price": 3500
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "소떡소떡 (땡초)",
+       "price": 4000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "치즈스틱 (3개)",
+       "price": 3000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "멕시칸빵 (200g)",
+       "price": 4000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "고추튀김 (7개)",
+       "price": 4000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "단짠감자치즈볼 (3개)",
+       "price": 4000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "더블치즈볼 (5개)",
+       "price": 5000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "멘보사 (5개)",
+       "price": 5500
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "어묵퐁당",
+       "price": 6500
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "모래집후라이드",
+       "price": 13000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "닭치고닭발",
+       "price": 17000
+      },
+      {
+       "category": "음료",
+       "name": "펩시 245ml / 사이다 245ml",
+       "price": 1500
+      },
+      {
+       "category": "음료",
+       "name": "콜라 500ml / 사이다 500ml",
+       "price": 2500
+      },
+      {
+       "category": "음료",
+       "name": "제로펩시 500ml",
+       "price": 3000
+      },
+      {
+       "category": "음료",
+       "name": "콜라 1.25L / 사이다 1.25L",
+       "price": 3500
+      },
+      {
+       "category": "음료",
+       "name": "제로펩시 1.25L",
+       "price": 4000
+      },
+      {
+       "category": "주류",
+       "name": "후레쉬",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "진로",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "카스",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "한맥 500cc",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "한맥 1700cc",
+       "price": 16000
+      },
+      {
+       "category": "주류",
+       "name": "한맥 2700cc",
+       "price": 25000
+      },
+      {
+       "category": "주류",
+       "name": "한맥 1000cc (포장/배달)",
+       "price": 9000
+      }
+     ]
+    }
+   ],
    "replies": [
     "맥시카나 메이트포스",
     "보류",
@@ -4742,7 +5697,70 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "128_HI4jmOEOWnXdSz82AHSI6Rsj-2l76",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "coffee",
+       "name": "아메리카노",
+       "price": 3800
+      },
+      {
+       "category": "Season",
+       "name": "부안 수박쥬스",
+       "price": 6800
+      },
+      {
+       "category": "Ours",
+       "name": "체리 콕",
+       "price": 4500
+      },
+      {
+       "category": "Ours",
+       "name": "오로라 퍼플 에이드",
+       "price": 5800
+      },
+      {
+       "category": "Ours",
+       "name": "제주 숲 쑥말차 라떼",
+       "price": 5500
+      }
+     ]
+    },
+    {
+     "id": "1JahkjmjWqG3Z2Tsar-T5PDxFYMTEfKZm",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "SIGNATURE COCKTAIL",
+       "name": "화요하이볼",
+       "price": 8500
+      },
+      {
+       "category": "SIGNATURE COCKTAIL",
+       "name": "블루사파이어",
+       "price": 7800
+      },
+      {
+       "category": "SIGNATURE COCKTAIL",
+       "name": "블랙러시안",
+       "price": 10500
+      },
+      {
+       "category": "SIGNATURE COCKTAIL",
+       "name": "화이트러시안",
+       "price": 11500
+      },
+      {
+       "category": "SIGNATURE COCKTAIL",
+       "name": "산토리 하이볼",
+       "price": 9000
+      }
+     ]
+    }
+   ],
    "replies": [
     "기존에 몇개 추가되어있음 제외하고 완료"
    ],
