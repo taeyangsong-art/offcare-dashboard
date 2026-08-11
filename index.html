@@ -602,6 +602,20 @@
   table.matrix tfoot td:first-child{color:var(--slate,#454b54); background:var(--surface)}
   table.matrix tfoot td.tot{font-size:19px; color:#fff; background:var(--blue)}
   table.matrix tbody tr:hover td{background:var(--surface-soft)}
+  /* 메뉴등록 판독 카드 — 원본 이미지(좌) + 추출 텍스트(우).
+     Drive 이미지는 저장소에 복사하지 않고 구글 썸네일을 직접 불러온다(로그인·권한 있는 사람만 보임) */
+  .ocr-card{display:flex; gap:12px; align-items:flex-start; background:#eef6ff;
+    border-left:3px solid #2f6fc0; border-radius:8px; padding:10px 12px; margin-bottom:8px}
+  .ocr-thumb{flex:0 0 200px}
+  .ocr-thumb img{width:100%; display:block; border-radius:6px; border:1px solid var(--line,#dde3ea); background:#fff}
+  .ocr-thumb .fb{display:none; font-size:12px; color:#2f6fc0; padding:14px 10px; text-align:center;
+    border:1px dashed var(--line,#dde3ea); border-radius:6px; background:#fff}
+  .ocr-thumb.noimg .fb{display:block}
+  .ocr-text{flex:1; min-width:0}
+  .ocr-head{font-size:12.5px; font-weight:700; margin-bottom:5px}
+  .ocr-rows{font-size:12.5px; white-space:pre-wrap; max-height:280px; overflow:auto;
+    margin:0; font-family:inherit; line-height:1.6}
+  @media(max-width:680px){ .ocr-card{flex-direction:column} .ocr-thumb{flex:none; width:100%; max-width:340px} }
   /* 📞 설치 OB — 다른 카테고리와 소스가 달라(설치일정 시트) 글자색으로만 구분 */
   table.matrix .ob-col{color:#4338ca}
   table.matrix thead th.ob-col{color:#4338ca}
@@ -2334,7 +2348,21 @@ function renderMenuReg(){
         return `<div style="margin-top:8px">
         <div style="font-size:13px;font-weight:700;margin-bottom:4px">🔎 이미지 자동판독 <span class="cnt-badge">${withMenu.reduce((n,a)=>n+a.menu.length,0)}</span> <span class="hint">(Claude 비전 · 메뉴명·가격만 추출 · 등록 전 원본과 대조 권장)</span></div>
         ${blocked?`<div class="hint" style="color:#c2410c;margin-bottom:6px">🔒 Drive 이미지 ${blocked}장은 소유자가 다운로드를 막아 판독하지 못했습니다 — 위 <b>🖼 이미지</b> 링크로 직접 확인하세요.</div>`:''}
-        ${withMenu.map(a=>`<div style="background:#eef6ff;border-left:3px solid #2f6fc0;border-radius:8px;padding:8px 11px;font-size:12.5px;white-space:pre-wrap;margin-bottom:6px;max-height:220px;overflow:auto"><b>📄 ${escapeHtml(a.name||'이미지')}</b> <span class="hint">${a.src} · ${KIND[a.kind]||a.kind} · ${a.menu.length}개</span>\n${rows(a)}</div>`).join('')}
+        ${withMenu.map(a=>{
+          // Drive 이미지는 저장소에 없다 → 구글 썸네일을 직접 부른다. 권한 없으면 onerror 로 링크 대체.
+          const full = a.id ? `https://drive.google.com/file/d/${a.id}/view` : (a.path||'');
+          const thumb = a.id ? `https://drive.google.com/thumbnail?id=${a.id}&sz=w600` : (a.path||'');
+          return `<div class="ocr-card">
+            <div class="ocr-thumb">
+              ${thumb?`<a href="${escapeHtml(full)}" target="_blank" rel="noopener" title="원본 크게 보기"><img src="${escapeHtml(thumb)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none';this.closest('.ocr-thumb').classList.add('noimg')"></a>`:''}
+              <a class="fb" href="${escapeHtml(full)}" target="_blank" rel="noopener">🖼 원본 열기<br><span style="color:var(--gray2);font-size:11px">미리보기는 구글 로그인·권한 필요</span></a>
+            </div>
+            <div class="ocr-text">
+              <div class="ocr-head">📄 ${escapeHtml(a.name||'이미지')} <span class="hint">${a.src} · ${KIND[a.kind]||a.kind} · ${a.menu.length}개</span></div>
+              <pre class="ocr-rows">${rows(a)}</pre>
+            </div>
+          </div>`;
+        }).join('')}
         ${legacy.map(a=>{const menu=ocrExtractMenu(a.ocr,sel.store);return `<div style="background:#f6f6f8;border-left:3px solid #9aa0a6;border-radius:8px;padding:8px 11px;font-size:12.5px;white-space:pre-wrap;margin-bottom:6px;max-height:200px;overflow:auto"><b>📄 ${escapeHtml(a.name||'이미지')}</b> <span class="hint">${a.src} · 구 무료 OCR(정확도 낮음)</span>\n${escapeHtml(menu||'(메뉴 인식 실패 — 원문 확인)')}</div>`}).join('')}
         ${skipped.length?`<div class="hint">ℹ️ ${skipped.length}장은 메뉴 목록이 아니라 판독 대상이 아닙니다 (${[...new Set(skipped.map(a=>KIND[a.kind]||a.kind))].join(', ')}).</div>`:''}
       </div>`;})()}
