@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 540,
- "updatedAt": "2026-08-11 16:45",
+ "version": 541,
+ "updatedAt": "2026-08-11 17:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1786435193.226069",
+   "date": "2026-08-11",
+   "time": "16:59",
+   "store": "쿠타팜 테라스",
+   "biz": "7413600207",
+   "pos": "오케이포스",
+   "content": "오케이포스/ 메뉴 수정 요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786435201.823849",
+   "rfx": 2,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786435193226069"
+  },
   {
    "ts": "1786433704.425749",
    "date": "2026-08-11",
