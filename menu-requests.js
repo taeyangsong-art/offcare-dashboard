@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 534,
- "updatedAt": "2026-08-11 14:15",
+ "version": 535,
+ "updatedAt": "2026-08-11 14:30",
  "days": 30,
  "items": [
   {
@@ -24,7 +24,7 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1786424672.314999",
    "rfx": 2,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786424668670299"
   },
@@ -50,7 +50,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BPGJW9R28",
      "from": "댓글",
-     "path": "menu-files/1786423674_596459-2.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -88,15 +87,18 @@ window.MENU_REQUESTS = {
        "name": "감자통핫스틱2개",
        "price": 4600
       }
-     ]
+     ],
+     "path": "menu-files/1786423674_596459-2.png"
     }
    ],
    "datt": [],
    "replies": [
-    "• 카테고리 : 붕어+분식+치킨"
+    "• 카테고리 : 붕어+분식+치킨",
+    "아아앗",
+    "감사합니다! 붕어는 제가 수정하겠습니다."
    ],
-   "rc": 4,
-   "lr": "1786425011.423909",
+   "rc": 7,
+   "lr": "1786425580.448789",
    "rfx": 2,
    "status": "done",
    "handler": "김규빈",
