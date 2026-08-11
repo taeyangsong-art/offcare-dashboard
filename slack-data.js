@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3244,
+  "version": 3245,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -99112,7 +99112,7 @@ window.SLACK_DATA = {
     "2026-08-11": {
       "counts": {
         "as": {
-          "김현기": 11,
+          "김현기": 12,
           "김규빈": 2,
           "김동욱": 11,
           "송태양": 10,
@@ -99139,6 +99139,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "12:37",
+          "store": "드롭탑(세정아울렛점)",
+          "biz": "1580202669",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "주방 프린터 출력 안됨 / 인터넷 환경 끊겼다 다시 연결 됐었다고 하심",
+          "hw": "",
+          "intake": "offline",
+          "note": "껏켯 후 정상 / 이넡넷 계소 ㄱ끊키면 유플러스 전화해서 점검 받아야 함 안내 완료"
+        },
         {
           "time": "12:16",
           "store": "에스테틱 처음",
@@ -99740,14 +99751,14 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 41,
-        "offline": 13,
+        "offline": 14,
         "unknown": 0
       },
-      "updatedAt": "12:16",
+      "updatedAt": "12:45",
       "ob": {
-        "count": 1,
+        "count": 3,
         "byEmp": {
-          "김규빈": 1
+          "김규빈": 3
         },
         "items": [
           {
@@ -99757,6 +99768,22 @@ window.SLACK_DATA = {
             "recvDate": "2026-08-11",
             "planDate": "",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785910233675369"
+          },
+          {
+            "key": "2026년 8월 10일 오후 4:57:09|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785817181214289#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-10",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785817181214289"
+          },
+          {
+            "key": "2026년 8월 10일 오후 4:47:52|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785042758483949#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-10",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785042758483949"
           }
         ]
       },
@@ -99835,11 +99862,11 @@ window.SLACK_DATA = {
       },
       "1786407894.219959": {
         "post": "1786407894.219959",
-        "lastSeen": 1786419026.532
+        "lastSeen": 1786419927.159
       },
       "1786408886.898809": {
         "post": "1786408886.898809",
-        "lastSeen": 1786419026.532
+        "lastSeen": 1786419927.159
       },
       "1786410001.316629": {
         "post": "1786410001.316629",
@@ -99847,19 +99874,23 @@ window.SLACK_DATA = {
       },
       "1786411204.399189": {
         "post": "1786411204.399189",
-        "lastSeen": 1786419026.532
+        "lastSeen": 1786419927.159
       },
       "1786416963.518809": {
         "post": "1786416963.518809",
-        "lastSeen": 1786419026.532
+        "lastSeen": 1786419927.159
       },
       "1786417483.270129": {
         "post": "1786417483.270129",
-        "lastSeen": 1786419026.532
+        "lastSeen": 1786419927.159
       },
       "1786417401.552839": {
         "post": "1786417401.552839",
-        "lastSeen": 1786419026.532
+        "lastSeen": 1786419927.159
+      },
+      "1786419900.332119": {
+        "post": "1786419900.332119",
+        "lastSeen": 1786419927.159
       }
     },
     "days": {
@@ -120273,19 +120304,19 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-11 12:30",
+    "at": "2026-08-11 12:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3443,
-    "named": 131,
+    "named": 133,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 131,
+    "done": 133,
     "byStatus": {
-      "일정등록완료": 73,
+      "일정등록완료": 75,
       "1차부재": 35,
       "점주직접접수": 14,
       "설치불가": 3,

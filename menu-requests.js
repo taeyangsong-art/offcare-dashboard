@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 527,
- "updatedAt": "2026-08-11 12:31",
+ "version": 528,
+ "updatedAt": "2026-08-11 12:48",
  "days": 30,
  "items": [
   {
@@ -15917,6 +15917,16 @@ window.MENU_REQUESTS = {
      "id": "194XeJaOz67sA_1I1OJqWWXZI6DiBsMpk",
      "kind": "product_photo",
      "menu": []
+    },
+    {
+     "id": "1Wz85TbQjNtwCf91ZaN4DxqrWU7414r8Z",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "id": "1nGzCtKvXMZGrUrIrwO-abClcnyVolLe1",
+     "kind": "product_photo",
+     "menu": []
     }
    ],
    "replies": [],
@@ -16346,7 +16356,371 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1yRJv5DEGJm-AuUKSrFDjwthVFnd8gBZJ",
+     "kind": "other",
+     "menu": [
+      {
+       "category": "스페셜 1인 빙수",
+       "name": "클래식 팥 듬뿍 빙수",
+       "price": 8900
+      },
+      {
+       "category": "스페셜 1인 빙수",
+       "name": "돼지바닐라 오레오 쿠키 빙수",
+       "price": 12000
+      },
+      {
+       "category": "스페셜 1인 빙수",
+       "name": "더블그린 빙수",
+       "price": 12000
+      },
+      {
+       "category": "스페셜 1인 빙수",
+       "name": "꿀망고 빙수",
+       "price": 10900
+      },
+      {
+       "category": "스페셜 1인 빙수",
+       "name": "바닐라 치즈케익 디럭스 빙수",
+       "price": 13900
+      },
+      {
+       "category": "스페셜 1인 빙수",
+       "name": "건강식 블루베리 굿 빙수",
+       "price": 12000
+      },
+      {
+       "category": "스페셜 1인 빙수",
+       "name": "피치 그릭 요거트 빙수",
+       "price": 15500
+      },
+      {
+       "category": "스페셜 1인 빙수",
+       "name": "인절미에 진심 빙수",
+       "price": 13900
+      },
+      {
+       "category": "스페셜 1인 빙수",
+       "name": "쫀떡궁합 인절미 흑임자 떡빙수",
+       "price": 13900
+      },
+      {
+       "category": "스페셜 1인 빙수",
+       "name": "달달구리 달고나 커피빙수",
+       "price": 12000
+      },
+      {
+       "category": "스페셜 1인 빙수",
+       "name": "자망코 빙수",
+       "price": 16500
+      },
+      {
+       "category": "스페셜 1인 빙수",
+       "name": "망고치즈 빙수",
+       "price": 15500
+      },
+      {
+       "category": "스페셜 1인 빙수",
+       "name": "리얼수박 빙수",
+       "price": 13900
+      },
+      {
+       "category": "[1+1]",
+       "name": "클래식 팥 듬뿍 빙수",
+       "price": 16500
+      },
+      {
+       "category": "[1+1]",
+       "name": "돼지바닐라 오레오 쿠키 빙수",
+       "price": 17300
+      },
+      {
+       "category": "[1+1]",
+       "name": "더블그린 빙수",
+       "price": 18500
+      },
+      {
+       "category": "[1+1]",
+       "name": "꿀망고 빙수",
+       "price": 15500
+      },
+      {
+       "category": "[1+1]",
+       "name": "바닐라 치즈케익 디럭스 빙수",
+       "price": 18500
+      },
+      {
+       "category": "[1+1]",
+       "name": "건강식 블루베리 굿 빙수",
+       "price": 16500
+      },
+      {
+       "category": "[1+1]",
+       "name": "피치 그릭 요거트 빙수",
+       "price": 19500
+      },
+      {
+       "category": "[1+1]",
+       "name": "인절미에 진심 빙수",
+       "price": 16900
+      },
+      {
+       "category": "[1+1]",
+       "name": "쫀떡궁합 인절미 흑임자 떡빙수",
+       "price": 18300
+      },
+      {
+       "category": "[1+1]",
+       "name": "달달구리 달고나 커피빙수",
+       "price": 17300
+      },
+      {
+       "category": "[1+1]",
+       "name": "자망코 빙수",
+       "price": 19500
+      },
+      {
+       "category": "[1+1]",
+       "name": "망고치즈 빙수",
+       "price": 19500
+      },
+      {
+       "category": "[1+1]",
+       "name": "리얼수박 빙수",
+       "price": 18900
+      },
+      {
+       "category": "[풍성한 2~3인]",
+       "name": "클래식 팥 듬뿍 빙수",
+       "price": 17200
+      },
+      {
+       "category": "[풍성한 2~3인]",
+       "name": "돼지바닐라 오레오 쿠키 빙수",
+       "price": 17200
+      },
+      {
+       "category": "[풍성한 2~3인]",
+       "name": "더블그린 빙수",
+       "price": 18200
+      },
+      {
+       "category": "[풍성한 2~3인]",
+       "name": "꿀망고 빙수",
+       "price": 16300
+      },
+      {
+       "category": "[풍성한 2~3인]",
+       "name": "바닐라 치즈케익 디럭스 빙수",
+       "price": 19200
+      },
+      {
+       "category": "[풍성한 2~3인]",
+       "name": "건강식 블루베리 굿 빙수",
+       "price": 17200
+      },
+      {
+       "category": "[풍성한 2~3인]",
+       "name": "피치 그릭 요거트 빙수",
+       "price": 19200
+      },
+      {
+       "category": "[풍성한 2~3인]",
+       "name": "인절미에 진심 빙수",
+       "price": 17200
+      },
+      {
+       "category": "[풍성한 2~3인]",
+       "name": "쫀떡궁합 인절미 흑임자 떡빙수",
+       "price": 18200
+      },
+      {
+       "category": "[풍성한 2~3인]",
+       "name": "달달구리 달고나 커피빙수",
+       "price": 17200
+      },
+      {
+       "category": "[풍성한 2~3인]",
+       "name": "자망코 빙수",
+       "price": 22500
+      },
+      {
+       "category": "[풍성한 2~3인]",
+       "name": "망고치즈 빙수",
+       "price": 19800
+      },
+      {
+       "category": "[풍성한 2~3인]",
+       "name": "리얼수박 빙수",
+       "price": 18200
+      }
+     ]
+    },
+    {
+     "id": "1waFTqCV4IcazSCxjsDgn7AcyTB6g8VUu",
+     "kind": "other",
+     "menu": [
+      {
+       "category": "토핑 추가선택",
+       "name": "팥 추가",
+       "price": 1000
+      },
+      {
+       "category": "토핑 추가선택",
+       "name": "콩고물 추가",
+       "price": 1000
+      },
+      {
+       "category": "토핑 추가선택",
+       "name": "콘푸로스트 추가",
+       "price": 1000
+      },
+      {
+       "category": "토핑 추가선택",
+       "name": "아몬드 슬라이스 추가",
+       "price": 1000
+      },
+      {
+       "category": "토핑 추가선택",
+       "name": "믹스견과류 추가",
+       "price": 1000
+      },
+      {
+       "category": "토핑 추가선택",
+       "name": "오트밀 추가",
+       "price": 1000
+      },
+      {
+       "category": "토핑 추가선택",
+       "name": "달고나 추가",
+       "price": 1000
+      },
+      {
+       "category": "토핑 추가선택",
+       "name": "찹쌀떡 1개 추가",
+       "price": 1500
+      },
+      {
+       "category": "토핑 추가선택",
+       "name": "찹쌀떡 2개 추가",
+       "price": 2500
+      },
+      {
+       "category": "토핑 추가선택",
+       "name": "흑임자떡 2개 추가",
+       "price": 1500
+      },
+      {
+       "category": "토핑 추가선택",
+       "name": "흑임자떡 4개 추가",
+       "price": 2500
+      },
+      {
+       "category": "토핑 추가선택",
+       "name": "쿠키크럼블 추가",
+       "price": 1500
+      },
+      {
+       "category": "토핑 추가선택",
+       "name": "빙수 인절미 추가",
+       "price": 1500
+      },
+      {
+       "category": "토핑 추가선택",
+       "name": "오레오과자 3개 추가",
+       "price": 1500
+      },
+      {
+       "category": "토핑 추가선택",
+       "name": "말차가루 추가",
+       "price": 1500
+      },
+      {
+       "category": "토핑 추가선택",
+       "name": "흑임자가루 추가",
+       "price": 1500
+      },
+      {
+       "category": "토핑 추가선택",
+       "name": "그릭요거트 추가",
+       "price": 2000
+      },
+      {
+       "category": "토핑 추가선택",
+       "name": "치즈케익 큐브 추가",
+       "price": 2500
+      },
+      {
+       "category": "토핑 추가선택",
+       "name": "코코넛 젤리 추가",
+       "price": 3500
+      },
+      {
+       "category": "소스 추가선택",
+       "name": "연유 추가 (따로담아드려요)",
+       "price": 1000
+      },
+      {
+       "category": "소스 추가선택",
+       "name": "꿀 추가 (따로담아드려요)",
+       "price": 1000
+      },
+      {
+       "category": "소스 추가선택",
+       "name": "딸기잼 소스 추가",
+       "price": 1000
+      },
+      {
+       "category": "소스 추가선택",
+       "name": "블루베리잼 소스 추가",
+       "price": 1500
+      },
+      {
+       "category": "소스 추가선택",
+       "name": "망고청 추가",
+       "price": 1500
+      },
+      {
+       "category": "아이스크림 추가선택",
+       "name": "바닐라아이스크림 추가",
+       "price": 1500
+      },
+      {
+       "category": "아이스크림 추가선택",
+       "name": "녹차아이스크림 추가",
+       "price": 1500
+      }
+     ]
+    },
+    {
+     "id": "1isa914S2-_N1DwRs4r5tIVCCSH3J8eYx",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "과일토핑 추가선택",
+       "name": "블루베리(냉동) 추가",
+       "price": 1500
+      },
+      {
+       "category": "과일토핑 추가선택",
+       "name": "수박 추가",
+       "price": 1500
+      },
+      {
+       "category": "과일토핑 추가선택",
+       "name": "망고 추가(냉동)",
+       "price": 1500
+      },
+      {
+       "category": "과일토핑 추가선택",
+       "name": "복숭아 추가(냉동)",
+       "price": 1500
+      }
+     ]
+    }
+   ],
    "replies": [
     "완료"
    ],
@@ -16596,7 +16970,350 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "11r6O0eLmB0-Hkq3LwIrHBUX7VnxIF3JQ",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "Wine Set",
+       "name": "혼술 셋트",
+       "price": 12900
+      },
+      {
+       "category": "Wine Set",
+       "name": "스파클링 글래스 와인 셋트(1인기준)",
+       "price": 15900
+      }
+     ]
+    },
+    {
+     "id": "1R1jxbm9DUNMGBNTE7N9pXbu6Bgrwu_OM",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "Food menu",
+       "name": "오이페타치즈 Cucumber & Feta cheese",
+       "price": 10
+      },
+      {
+       "category": "Food menu",
+       "name": "올리브 믹스 Mixed Olives",
+       "price": 10
+      },
+      {
+       "category": "Food menu",
+       "name": "포테이토 팝스 Tater Tots",
+       "price": 11
+      },
+      {
+       "category": "Food menu",
+       "name": "골드키위 & 프로슈토 Gold Kiwi & Prosciutto",
+       "price": 15
+      },
+      {
+       "category": "Food menu",
+       "name": "크로와상 & 프로슈토 Croissant & Prosciutto",
+       "price": 14
+      },
+      {
+       "category": "Food menu",
+       "name": "트리플 치즈 플레이트 Triple Cheese Plate",
+       "price": 19
+      },
+      {
+       "category": "Food menu",
+       "name": "부라타 치즈 Burrata Cheese",
+       "price": 20
+      },
+      {
+       "category": "Food menu",
+       "name": "해쉬브라운 라자냐 Hash Brown Lasagna",
+       "price": 17
+      },
+      {
+       "category": "Food menu",
+       "name": "소시지 & 크림 매쉬포테이토 Salsiccia Sausage & Mashed Potato",
+       "price": 22
+      },
+      {
+       "category": "Food menu",
+       "name": "파프리카 로제크림 뇨끼 Creamy Rose sauce Gnocchi",
+       "price": 19
+      },
+      {
+       "category": "Food menu",
+       "name": "바닐라 아이스크림 & 올리브 오일 Vanilla Icecream & Olive Oil",
+       "price": 10
+      },
+      {
+       "category": "Food menu",
+       "name": "포도술 바바오럼 Baba au Rhum",
+       "price": 11
+      }
+     ]
+    },
+    {
+     "id": "1VWK02y3FZeLcwWDugmettw556O4baRgm",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "Sparkling",
+       "name": "Les Allies Sparkling brut (레잘리에 스파클링 브릿)",
+       "price": 39
+      },
+      {
+       "category": "Sparkling",
+       "name": "Hans Baer Riesling Sekt (한스베어, 리슬링 젝트)",
+       "price": 44
+      },
+      {
+       "category": "Sparkling",
+       "name": "Abbazia Prosecco D.O.C Extra Dry (아바찌아 프로세코 디오씨 엑스트라 드라이)",
+       "price": 45
+      },
+      {
+       "category": "Sparkling",
+       "name": "Cremant Brut , AOC Alsace (크레망 브릿)",
+       "price": 62
+      },
+      {
+       "category": "Sparkling",
+       "name": "AVINYO CAVA Brut Reserva (아빈요 까바 브륏 리제르바)",
+       "price": 65
+      },
+      {
+       "category": "Sparkling",
+       "name": "Soul Drop, Non-Alcohol Sauvignon Blanc (소울드롭 논알콜 소비뇽 블랑)",
+       "price": 45
+      },
+      {
+       "category": "Sparkling",
+       "name": "Champagne Veuve cliquot yellow label brut NV (뵈브 클리코 옐로우 라벨 ",
+       "price": 150
+      },
+      {
+       "category": "Rose",
+       "name": "Radacini Vero di, Moscato Rose (라다치니 베로 디, 모스카토 로제)",
+       "price": 49
+      },
+      {
+       "category": "Rose",
+       "name": "Villebois Pinot noir Rose (빌부아 피노 누아 로제)",
+       "price": 49
+      }
+     ]
+    },
+    {
+     "id": "11RL-f-Gj3nJML3NYQoh6oCBVXh8XY8g2",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "White",
+       "name": "No es Pituko, Orange Sauvignon Blanc (노에스피투코, 오렌지 쇼비뇽블랑 )",
+       "price": 45
+      },
+      {
+       "category": "White",
+       "name": "ALZ White (알즈, 화이트 )",
+       "price": 50
+      },
+      {
+       "category": "White",
+       "name": "Lazy Winemaker , Cabernet Sauvignon (레이지와인메이커, 까베르네 소비뇽)",
+       "price": 50
+      },
+      {
+       "category": "White",
+       "name": "Pet nat whild Chardonnay (펫 낫 와일드샤도네이)",
+       "price": 59
+      },
+      {
+       "category": "White",
+       "name": "Pet Natural (펫 나투렐)",
+       "price": 99
+      },
+      {
+       "category": "Porto",
+       "name": "Kopke Fine Ruby, Porto (콥케 파인 루비, 포트)",
+       "price": 45
+      },
+      {
+       "category": "Porto",
+       "name": "Kopke 10years Old Tawny, Porto (콥케 10년산타우니, 포트)",
+       "price": 90
+      },
+      {
+       "category": "Porto",
+       "name": "Kopke White, Porto (콥케 화이트, 포트)",
+       "price": 45
+      }
+     ]
+    },
+    {
+     "id": "1MBRGRlCwLURDh55sP7Qckt3uMbpf9P91",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "White",
+       "name": "Animuis Vinho Verde( 아니무스 비뉴베르데) Bottle",
+       "price": 36
+      },
+      {
+       "category": "White",
+       "name": "Hans bear, Riesling (한스 베어, 리슬링) Glass",
+       "price": 7
+      },
+      {
+       "category": "White",
+       "name": "Hans bear, Riesling (한스 베어, 리슬링) Bottle",
+       "price": 38
+      },
+      {
+       "category": "White",
+       "name": "Pete's pure Moscato (피츠퓨어, 모스카토) Bottle",
+       "price": 42
+      },
+      {
+       "category": "White",
+       "name": "Dutch Hope Chenin Blanc (더치 홉 슈냉 블랑) Bottle",
+       "price": 40
+      },
+      {
+       "category": "White",
+       "name": "La Mas de Aresan (라 마르 데 아레산 베르데호) Bottle",
+       "price": 42
+      },
+      {
+       "category": "White",
+       "name": "Fetzer , Chardonnay (펫져,샤르도네) Bottle",
+       "price": 45
+      },
+      {
+       "category": "White",
+       "name": "Les Bourgarels Chardonnay (레 부흐가엘, 샤도네이) Bottle",
+       "price": 44
+      },
+      {
+       "category": "White",
+       "name": "Domain Saint Andre Terroir Maritim Blanc (도멘 생앙드레 떼루아 마리띰 블랑",
+       "price": 47
+      },
+      {
+       "category": "White",
+       "name": "Pannonhalma Tricollis white (파논할마 수도원, 트리콜리스 화이트) Bottle",
+       "price": 45
+      },
+      {
+       "category": "White",
+       "name": "Reef Ridge, Malborough Sauvignon Blanc ( 리프릿지 ,말보로 쇼비뇽 블랑) B",
+       "price": 40
+      },
+      {
+       "category": "White",
+       "name": "Bibbo Zibibbo ( 비보, 지비보) Bottle",
+       "price": 50
+      },
+      {
+       "category": "White",
+       "name": "Pulenta estate Chardonnay (풀렌타 에스테이트 샤르도네) Bottle",
+       "price": 60
+      },
+      {
+       "category": "White",
+       "name": "Manavi (마나비) Bottle",
+       "price": 69
+      }
+     ]
+    },
+    {
+     "id": "1qyCJMekwqnUJlY9XOKYzd7mCDubtJuVd",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "Red",
+       "name": "Big Beltie Cabernet Sauvignon (빅 벨티, 까베르네소비뇽)",
+       "price": 45
+      },
+      {
+       "category": "Red",
+       "name": "Drop Zone Shiraz (드랍존, 쉬라즈)",
+       "price": 46
+      },
+      {
+       "category": "Red",
+       "name": "Les Bourgarels Pinot Noir (레 부흐가엘, 피노 누아)",
+       "price": 45
+      },
+      {
+       "category": "Red",
+       "name": "Mar Y Luna Tinto (마르 앤 루나 틴토)",
+       "price": 43
+      },
+      {
+       "category": "Red",
+       "name": "Herisson Hedgehog Merlot (헤리슨 헤지호그 메를로)",
+       "price": 48
+      },
+      {
+       "category": "Red",
+       "name": "Deande Medoza Malbec (디안데 멘도사 말벡)",
+       "price": 44
+      },
+      {
+       "category": "Red",
+       "name": "Cecchi Chianti Governo (체끼 끼안티 고베르노)",
+       "price": 50
+      },
+      {
+       "category": "Red",
+       "name": "Octopoda Lodi Zinfandel (옥토포다 로디, 진판델)",
+       "price": 53
+      },
+      {
+       "category": "Red",
+       "name": "Elettra Primitivo - Negroamaro (엘렉트라 프리미티보-네그로아마로)",
+       "price": 60
+      },
+      {
+       "category": "Red",
+       "name": "Court Rollan genus Cabernet Syrah (코트롤란 제누스 까베르네 쉬라)",
+       "price": 65
+      }
+     ]
+    },
+    {
+     "id": "1upcsSDk-9Tj25_2zjSXlLEFzMzd7j_Go",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "Red",
+       "name": "La FLOR Blend (라 플로르 블랜드)",
+       "price": 60
+      },
+      {
+       "category": "Red",
+       "name": "Drago Rosso, Merlot (드라고 로쏘, 멜롯)",
+       "price": 62
+      },
+      {
+       "category": "Red",
+       "name": "MR.Burger GSM (미스터 스무스 앤 스모키)",
+       "price": 68
+      },
+      {
+       "category": "Red",
+       "name": "Big Smooth Cabernet Sauvignon (빅스무스 까베르네 쇼비뇽)",
+       "price": 96
+      },
+      {
+       "category": "Red",
+       "name": "Fantini Edizione (판티니 에디찌오네)",
+       "price": 120
+      }
+     ]
+    }
+   ],
    "replies": [
     "완료"
    ],
