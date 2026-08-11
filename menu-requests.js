@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 529,
- "updatedAt": "2026-08-11 13:02",
+ "version": 530,
+ "updatedAt": "2026-08-11 13:17",
  "days": 30,
  "items": [
+  {
+   "ts": "1786421717.744599",
+   "date": "2026-08-11",
+   "time": "13:15",
+   "store": "컵넛 강릉점",
+   "biz": "4480803485",
+   "pos": "",
+   "content": "컵넛 마산해양공원점(사업자 번호: <tel:···|···>)과 옵션까지 똑같이 부탁드립니다! (복제하면 옵션도 따라가지요??ㅎㅎ)\n복제로 진행할 경우, 대시보드 연결 부탁드립니다! (컵넛(CUPNUPT)입니다)",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 0,
+   "lr": "",
+   "rfx": 2,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786421717744599"
+  },
   {
    "ts": "1786413326.233759",
    "date": "2026-08-11",
@@ -18203,6 +18224,21 @@ window.MENU_REQUESTS = {
      "id": "1EHxMyL3BZ1iaNBo6Ucd3ceTGw112ghs_",
      "kind": "product_photo",
      "menu": []
+    },
+    {
+     "id": "1VxD7AsLGpJf9Wh6TZO7fHZHeEBiXFhlj",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "id": "1V44n4CPKgf8-WMRBAuVRq_OHOSBwYbl3",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "id": "108rzW89HWJefhVp_GbTCdT3BKM2f5fxT",
+     "kind": "product_photo",
+     "menu": []
     }
    ],
    "replies": [
@@ -18405,7 +18441,114 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1n1qTC6SWvL8D-0Nwe-EXde0ZR8fW5N37",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "뭉티기 150g",
+       "price": 17900
+      },
+      {
+       "category": "",
+       "name": "육회 150g",
+       "price": 12900
+      },
+      {
+       "category": "",
+       "name": "매운 야끼우동",
+       "price": 9800
+      },
+      {
+       "category": "",
+       "name": "토마토계란볶음면",
+       "price": 8900
+      },
+      {
+       "category": "",
+       "name": "베이컨건두부춘장볶음",
+       "price": 7900
+      },
+      {
+       "category": "",
+       "name": "베트남 숙주라면",
+       "price": 5900
+      },
+      {
+       "category": "",
+       "name": "새우 튀김",
+       "price": 3900
+      },
+      {
+       "category": "",
+       "name": "야채고로케",
+       "price": 3900
+      },
+      {
+       "category": "복분자",
+       "name": "백년장수 360ml",
+       "price": 6000
+      },
+      {
+       "category": "복분자",
+       "name": "보해 375ml",
+       "price": 11000
+      },
+      {
+       "category": "소주",
+       "name": "참이슬",
+       "price": 5000
+      },
+      {
+       "category": "소주",
+       "name": "한라산21",
+       "price": 5000
+      },
+      {
+       "category": "맥주",
+       "name": "카스 500ml",
+       "price": 5000
+      },
+      {
+       "category": "맥주",
+       "name": "칭타오 640ml",
+       "price": 5000
+      },
+      {
+       "category": "연태스페셜",
+       "name": "소 125ml",
+       "price": 6000
+      },
+      {
+       "category": "연태스페셜",
+       "name": "중 250ml",
+       "price": 11000
+      },
+      {
+       "category": "와인(알파카 화이트)",
+       "name": "잔 100ml",
+       "price": 2900
+      },
+      {
+       "category": "와인(알파카 화이트)",
+       "name": "병 750ml",
+       "price": 20000
+      },
+      {
+       "category": "음료",
+       "name": "코카콜라제로 190ml",
+       "price": 1000
+      },
+      {
+       "category": "음료",
+       "name": "칠성사이다 210ml",
+       "price": 1000
+      }
+     ]
+    }
+   ],
    "replies": [
     "완료"
    ],
@@ -18453,7 +18596,79 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1KuDULr5WUe2hCb2m8Nd59B9QEk8pnxKE",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "SIGNATURE",
+       "name": "노아라떼",
+       "price": 6500
+      },
+      {
+       "category": "COFFEE",
+       "name": "아메리카노",
+       "price": 4500
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페라떼",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "바닐라라떼",
+       "price": 5500
+      },
+      {
+       "category": "COFFEE",
+       "name": "얼그레이라떼",
+       "price": 5500
+      },
+      {
+       "category": "CREAM LATTE",
+       "name": "말차라떼",
+       "price": 6000
+      },
+      {
+       "category": "CREAM LATTE",
+       "name": "딸기라떼",
+       "price": 6000
+      },
+      {
+       "category": "CREAM LATTE",
+       "name": "초코라떼",
+       "price": 6000
+      },
+      {
+       "category": "TEA",
+       "name": "아이스티",
+       "price": 5000
+      },
+      {
+       "category": "TEA",
+       "name": "밀크티",
+       "price": 5000
+      },
+      {
+       "category": "TEA",
+       "name": "얼그레이 / 히비스커스 / 캐모마일",
+       "price": 5000
+      },
+      {
+       "category": "ADE",
+       "name": "오렌지 에이드",
+       "price": 5000
+      },
+      {
+       "category": "ADE",
+       "name": "자몽 에이드",
+       "price": 5000
+      }
+     ]
+    }
+   ],
    "replies": [
     "토스포스겠지..",
     "현재는 이지포스 사ㅇ용중, 프론트 설치하며 토스포스 사용 예정",
@@ -18526,7 +18741,54 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1iWRHoh4_SAbP8eyuzf3Z9HWTiNVy5V02",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "갈비살 150g(수입산)",
+       "price": 19000
+      },
+      {
+       "category": "",
+       "name": "삼겹살 180g(제주산)",
+       "price": 19000
+      },
+      {
+       "category": "",
+       "name": "목살 180g(제주산&국내산)",
+       "price": 17000
+      },
+      {
+       "category": "",
+       "name": "가브리살150g(제주산&국내산)",
+       "price": 18000
+      },
+      {
+       "category": "",
+       "name": "항정살 150g(제주산&국내산)",
+       "price": 18000
+      },
+      {
+       "category": "",
+       "name": "냉삼겹 150g(수입산)",
+       "price": 12000
+      },
+      {
+       "category": "",
+       "name": "돼지갈비 300g(수입산)",
+       "price": 19000
+      },
+      {
+       "category": "",
+       "name": "장어 250g(국내산)",
+       "price": 33000
+      }
+     ]
+    }
+   ],
    "replies": [],
    "rc": 1,
    "lr": "1783923690.336589",
@@ -18598,7 +18860,104 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1TkuLfMPdIdy53B5jXaizup5z_fG_gqnj",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "Espresso",
+       "name": "에스프레소",
+       "price": 4500
+      },
+      {
+       "category": "Espresso",
+       "name": "아메리카노",
+       "price": 4500
+      },
+      {
+       "category": "Espresso",
+       "name": "카페라떼",
+       "price": 5000
+      },
+      {
+       "category": "Espresso",
+       "name": "카푸치노",
+       "price": 5000
+      },
+      {
+       "category": "Espresso",
+       "name": "바닐라라떼",
+       "price": 5400
+      },
+      {
+       "category": "Espresso",
+       "name": "스페니쉬라떼",
+       "price": 5400
+      },
+      {
+       "category": "Cold Brew",
+       "name": "콜드브루",
+       "price": 5000
+      },
+      {
+       "category": "Cold Brew",
+       "name": "콜드브루라떼",
+       "price": 5500
+      },
+      {
+       "category": "Signature",
+       "name": "피넛버터라떼",
+       "price": 5800
+      },
+      {
+       "category": "Signature",
+       "name": "큐브밀크티",
+       "price": 5500
+      },
+      {
+       "category": "Non Coffee",
+       "name": "얼그레이밀크티",
+       "price": 5200
+      },
+      {
+       "category": "Non Coffee",
+       "name": "밀크코코아",
+       "price": 5500
+      },
+      {
+       "category": "Non Coffee",
+       "name": "청귤티",
+       "price": 5500
+      },
+      {
+       "category": "Non Coffee",
+       "name": "딸기라떼",
+       "price": 6500
+      },
+      {
+       "category": "Non Coffee",
+       "name": "자몽피치아이스티",
+       "price": 5500
+      },
+      {
+       "category": "Non Coffee",
+       "name": "청귤에이드",
+       "price": 6500
+      },
+      {
+       "category": "Tea",
+       "name": "로네펠트티 (얼그레이/ 우롱피치/ 캐모마일/페퍼민트)",
+       "price": 5500
+      },
+      {
+       "category": "Tea",
+       "name": "보사노바 티 로즈베리",
+       "price": 5500
+      }
+     ]
+    }
+   ],
    "replies": [
     "아직 토플파가 없음",
     "cc",
@@ -18927,7 +19286,134 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1-n8wI698v2x_0BEkRWOC26jm8LjdyrLI",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "COFFEE",
+       "name": "아메리카노",
+       "price": 2800
+      },
+      {
+       "category": "COFFEE",
+       "name": "빅아메리카노",
+       "price": 3300
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페라떼",
+       "price": 3500
+      },
+      {
+       "category": "COFFEE",
+       "name": "바닐라빈라떼",
+       "price": 4500
+      },
+      {
+       "category": "COFFEE",
+       "name": "연유라떼",
+       "price": 4500
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페모카",
+       "price": 4500
+      },
+      {
+       "category": "SIGNATURE",
+       "name": "옹드라떼",
+       "price": 4800
+      },
+      {
+       "category": "DESSERT",
+       "name": "에그타르트",
+       "price": 3300
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "복숭아 아이스티",
+       "price": 4000
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "초코라떼",
+       "price": 4500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "말차라떼",
+       "price": 4500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "밀크티",
+       "price": 4800
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "미숫가루",
+       "price": 4800
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "착즙 오렌지주스",
+       "price": 5000
+      },
+      {
+       "category": "ADE / SMOOTHIE",
+       "name": "유자에이드",
+       "price": 4500
+      },
+      {
+       "category": "ADE / SMOOTHIE",
+       "name": "레몬에이드",
+       "price": 4500
+      },
+      {
+       "category": "ADE / SMOOTHIE",
+       "name": "자몽에이드",
+       "price": 4500
+      },
+      {
+       "category": "ADE / SMOOTHIE",
+       "name": "플레인요거트스무디",
+       "price": 5000
+      },
+      {
+       "category": "ADE / SMOOTHIE",
+       "name": "아보카도바나나스무디",
+       "price": 6000
+      },
+      {
+       "category": "TEA",
+       "name": "얼그레이",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "페퍼민트",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "캐모마일",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "루이보스 / 카라멜루이보스",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "유자 / 레몬 / 자몽티",
+       "price": 4200
+      }
+     ]
+    }
+   ],
    "replies": [
     "이미 메뉴가 들어가있음 :개굴-hmm:",
     "옵션 작업 위해 판별 가능하도록 메뉴별 옵션 적어서 재접수 안내",
@@ -18955,7 +19441,134 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1W0X1rsPtouLCzllrjkQMUDGIb3Z4OJiv",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "COFFEE",
+       "name": "아메리카노",
+       "price": 2800
+      },
+      {
+       "category": "COFFEE",
+       "name": "빅아메리카노",
+       "price": 3300
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페라떼",
+       "price": 3500
+      },
+      {
+       "category": "COFFEE",
+       "name": "바닐라빈라떼",
+       "price": 4500
+      },
+      {
+       "category": "COFFEE",
+       "name": "연유라떼",
+       "price": 4500
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페모카",
+       "price": 4500
+      },
+      {
+       "category": "ADE / SMOOTHIE",
+       "name": "유자에이드",
+       "price": 4500
+      },
+      {
+       "category": "ADE / SMOOTHIE",
+       "name": "레몬에이드",
+       "price": 4500
+      },
+      {
+       "category": "ADE / SMOOTHIE",
+       "name": "자몽에이드",
+       "price": 4500
+      },
+      {
+       "category": "ADE / SMOOTHIE",
+       "name": "플레인요거트스무디",
+       "price": 5000
+      },
+      {
+       "category": "ADE / SMOOTHIE",
+       "name": "아보카도바나나스무디",
+       "price": 5500
+      },
+      {
+       "category": "SIGNATURE",
+       "name": "옹드라떼",
+       "price": 4800
+      },
+      {
+       "category": "DESSERT",
+       "name": "에그타르트",
+       "price": 3300
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "복숭아 아이스티",
+       "price": 4000
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "초코라떼",
+       "price": 4500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "말차라떼",
+       "price": 4500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "밀크티",
+       "price": 4800
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "미숫가루",
+       "price": 4800
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "착즙 오렌지주스",
+       "price": 5000
+      },
+      {
+       "category": "TEA",
+       "name": "얼그레이",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "페퍼민트",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "캐모마일",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "루이보스 / 카라멜루이보스",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "유자 / 레몬 / 자몽티",
+       "price": 4200
+      }
+     ]
+    }
+   ],
    "replies": [],
    "rc": 1,
    "lr": "1783871153.018959",
@@ -18978,7 +19591,134 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1LgEKZLzSf2r6WFlNz90fCjSEFXIddTMl",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "COFFEE",
+       "name": "아메리카노",
+       "price": 2800
+      },
+      {
+       "category": "COFFEE",
+       "name": "빅아메리카노",
+       "price": 3300
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페라떼",
+       "price": 3500
+      },
+      {
+       "category": "COFFEE",
+       "name": "바닐라빈라떼",
+       "price": 4500
+      },
+      {
+       "category": "COFFEE",
+       "name": "연유라떼",
+       "price": 4500
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페모카",
+       "price": 4500
+      },
+      {
+       "category": "ADE / SMOOTHIE",
+       "name": "유자에이드",
+       "price": 4500
+      },
+      {
+       "category": "ADE / SMOOTHIE",
+       "name": "레몬에이드",
+       "price": 4500
+      },
+      {
+       "category": "ADE / SMOOTHIE",
+       "name": "자몽에이드",
+       "price": 4500
+      },
+      {
+       "category": "ADE / SMOOTHIE",
+       "name": "플레인요거트스무디",
+       "price": 5000
+      },
+      {
+       "category": "ADE / SMOOTHIE",
+       "name": "아보카도바나나스무디",
+       "price": 5500
+      },
+      {
+       "category": "SIGNATURE",
+       "name": "옹드라떼",
+       "price": 4800
+      },
+      {
+       "category": "DESSERT",
+       "name": "에그타르트",
+       "price": 3300
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "복숭아 아이스티",
+       "price": 4000
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "초코라떼",
+       "price": 4500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "말차라떼",
+       "price": 4500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "밀크티",
+       "price": 4800
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "미숫가루",
+       "price": 4800
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "오렌지주스",
+       "price": 5000
+      },
+      {
+       "category": "TEA",
+       "name": "얼그레이",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "페퍼민트",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "캐모마일",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "루이보스 / 카라멜루이보스",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "유자 / 레몬 / 자몽티",
+       "price": 4200
+      }
+     ]
+    }
+   ],
    "replies": [],
    "rc": 1,
    "lr": "1783868598.774379",
