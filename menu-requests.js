@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 544,
- "updatedAt": "2026-08-11 17:45",
+ "version": 545,
+ "updatedAt": "2026-08-11 18:00",
  "days": 30,
  "items": [
   {
@@ -46,8 +46,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "세트메뉴 카테고리 내 메뉴 클릭 시 사이드 메뉴 2개 이상 선택할 수 있도록 변경\n세트메뉴에서 반반피자 선택 시 각 피자 맛을 각각 선택할 수 있도록 변경 (피자 5가지)\n원 주문에서 추가 메뉴 선택 시 해당 추가 메뉴만 주문서 올라올 수 있도록 요청"
    ],
-   "rc": 2,
-   "lr": "1786433711.106149",
+   "rc": 3,
+   "lr": "1786437943.006149",
    "rfx": 2,
    "status": "confirm",
    "handler": "심성현",
