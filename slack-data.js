@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3229,
+  "version": 3230,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -96096,7 +96096,7 @@ window.SLACK_DATA = {
           "최민석": 14,
           "배선유": 36,
           "심성현": 28,
-          "김동욱": 21,
+          "김동욱": 22,
           "김현기": 24,
           "서상원": 9,
           "김규빈": 5,
@@ -96154,28 +96154,6 @@ window.SLACK_DATA = {
           "intake": "online",
           "reasons": [
             "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "15:58",
-          "store": "선뮤지엄",
-          "biz": "5731701596",
-          "handler": "김동욱",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "13:23",
-          "store": "(주)일원현대자동차",
-          "biz": "2158708435",
-          "handler": "김동욱",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "1차 부재"
           ]
         }
       ],
@@ -96943,6 +96921,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "프린터 설정 완료"
+        },
+        {
+          "time": "15:58",
+          "store": "선뮤지엄",
+          "biz": "5731701596",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "용지 출력 시 끊어지지 않고 지속 같이 출력되신다고하여 확인 한번 부탁드리겠습니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "<tel:010-9312-0500|010-9312-0500 010-9312-0500 / <tel:010-5636-6755|010-5636-6755 010-5636-6755 / cpp-3000 출하지시서 작성"
         },
         {
           "time": "15:58",
@@ -98634,7 +98623,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 191,
+        "online": 190,
         "offline": 35,
         "unknown": 0
       },
@@ -99129,7 +99118,83 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": ""
+      "updatedAt": "09:00",
+      "ob": {
+        "count": 1,
+        "byEmp": {
+          "김규빈": 1
+        },
+        "items": [
+          {
+            "key": "2026년 8월 11일 오전 8:39:30|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785910233675369#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-11",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785910233675369"
+          }
+        ]
+      },
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 0,
+          "low": 0
+        },
+        "nps": {
+          "count": 1,
+          "low": 1
+        },
+        "high": {
+          "install": 0,
+          "nps": 0
+        },
+        "npsDist": {
+          "5": 1
+        },
+        "installDist": {},
+        "byIndustry": {},
+        "byTenure": {
+          "1개월": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "byVan": {
+          "KIS": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 1
+        },
+        "alerts": [
+          {
+            "time": "08:46",
+            "store": "국제꽃예술학원",
+            "storeId": "418273",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "프린터가없어서불편",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
+        "praises": []
+      }
     }
   },
   "resp": {
@@ -119239,19 +119304,19 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-11 08:45",
+    "at": "2026-08-11 09:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3432,
-    "named": 130,
+    "rows": 3435,
+    "named": 131,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 130,
+    "done": 131,
     "byStatus": {
-      "일정등록완료": 72,
+      "일정등록완료": 73,
       "1차부재": 35,
       "점주직접접수": 14,
       "설치불가": 3,
