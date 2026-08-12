@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 569,
- "updatedAt": "2026-08-12 13:16",
+ "version": 570,
+ "updatedAt": "2026-08-12 13:32",
  "days": 30,
  "items": [
   {
@@ -20,13 +20,261 @@ window.MENU_REQUESTS = {
     "https://drive.google.com/open?id=1jB20utPxCiub0EwrBlss1ZFChKIkn_Y5"
    ],
    "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1786507661.182039",
+   "att": [
+    {
+     "name": "11.xlsx",
+     "fid": "F0BQG96ATQ8",
+     "from": "댓글",
+     "path": "menu-files/1786507657_670369-0.xlsx",
+     "nj": 1
+    }
+   ],
+   "datt": [
+    {
+     "id": "1jB20utPxCiub0EwrBlss1ZFChKIkn_Y5",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "닭꼬치 한판(8개)",
+       "name": "청춘 매콤닭꼬치 한판",
+       "price": 14900
+      },
+      {
+       "category": "닭꼬치 한판(8개)",
+       "name": "청춘 매콤닭꼬치 한판",
+       "price": 14900
+      },
+      {
+       "category": "닭꼬치 한판(8개)",
+       "name": "청춘 간장닭꼬치 한판",
+       "price": 14900
+      },
+      {
+       "category": "닭꼬치 한판(8개)",
+       "name": "청춘 더블치즈닭꼬치 한판",
+       "price": 15900
+      },
+      {
+       "category": "닭꼬치 한판(8개)",
+       "name": "청춘 불닭마요닭꼬치 한판",
+       "price": 15900
+      },
+      {
+       "category": "닭꼬치 한판(8개)",
+       "name": "청춘 청양마요닭꼬치 한판",
+       "price": 15900
+      },
+      {
+       "category": "닭꼬치 한판(8개)",
+       "name": "청춘 고추폭탄닭꼬치 한판",
+       "price": 15900
+      },
+      {
+       "category": "닭꼬치 한판(8개)",
+       "name": "청춘 매콤갈릭닭꼬치 한판",
+       "price": 15900
+      },
+      {
+       "category": "염통꼬치 한판(12개)",
+       "name": "청춘 매콤염통꼬치 한판",
+       "price": 11900
+      },
+      {
+       "category": "염통꼬치 한판(12개)",
+       "name": "청춘 간장염통꼬치 한판",
+       "price": 11900
+      },
+      {
+       "category": "염통꼬치 한판(12개)",
+       "name": "청춘 고추폭탄염통꼬치 한판",
+       "price": 12900
+      },
+      {
+       "category": "추가꼬치",
+       "name": "청춘 매콤닭꼬치(2개)",
+       "price": 3900
+      },
+      {
+       "category": "추가꼬치",
+       "name": "청춘 간장닭꼬치(2개)",
+       "price": 3900
+      },
+      {
+       "category": "추가꼬치",
+       "name": "청춘 고추폭탄닭꼬치(2개)",
+       "price": 4200
+      },
+      {
+       "category": "추가꼬치",
+       "name": "청춘 매콤염통꼬치(4개)",
+       "price": 4000
+      },
+      {
+       "category": "추가꼬치",
+       "name": "청춘 간장염통꼬치(4개)",
+       "price": 4000
+      },
+      {
+       "category": "추가꼬치",
+       "name": "청춘 고추폭탄염통꼬치(4개)",
+       "price": 4300
+      },
+      {
+       "category": "추가꼬치",
+       "name": "닭똥집꼬치(2개)",
+       "price": 3700
+      },
+      {
+       "category": "추가꼬치",
+       "name": "은행꼬치(4개)",
+       "price": 3500
+      },
+      {
+       "category": "추가꼬치",
+       "name": "마늘꼬치(4개)",
+       "price": 3500
+      },
+      {
+       "category": "콤보&세트",
+       "name": "청춘 닭꼬치 김튀콤보",
+       "price": 10900
+      },
+      {
+       "category": "콤보&세트",
+       "name": "청춘 닭꼬치 한판 세트",
+       "price": 19900
+      },
+      {
+       "category": "콤보&세트",
+       "name": "청춘 염통꼬치 한판 세트",
+       "price": 16900
+      },
+      {
+       "category": "콤보&세트",
+       "name": "청춘 혼술세트",
+       "price": 15900
+      },
+      {
+       "category": "콤보&세트",
+       "name": "청춘 커플세트",
+       "price": 30900
+      },
+      {
+       "category": "콤보&세트",
+       "name": "청춘 염통떡방세트",
+       "price": 48900
+      },
+      {
+       "category": "덮밥&주먹밥",
+       "name": "청춘 매콤꼬치덮밥",
+       "price": 7900
+      },
+      {
+       "category": "덮밥&주먹밥",
+       "name": "청춘 간장꼬치덮밥",
+       "price": 7900
+      },
+      {
+       "category": "덮밥&주먹밥",
+       "name": "청춘 불닭마요덮밥",
+       "price": 7900
+      },
+      {
+       "category": "덮밥&주먹밥",
+       "name": "셀프주먹밥",
+       "price": 2900
+      },
+      {
+       "category": "덮밥&주먹밥",
+       "name": "매콤마요주먹밥",
+       "price": 3900
+      },
+      {
+       "category": "타코야끼&오코노미야끼",
+       "name": "데리타코야끼",
+       "price": 5900
+      },
+      {
+       "category": "타코야끼&오코노미야끼",
+       "name": "매콤타코야끼",
+       "price": 5900
+      },
+      {
+       "category": "타코야끼&오코노미야끼",
+       "name": "매콤치즈타코야끼",
+       "price": 6900
+      },
+      {
+       "category": "타코야끼&오코노미야끼",
+       "name": "청양마요타코야끼",
+       "price": 6900
+      },
+      {
+       "category": "타코야끼&오코노미야끼",
+       "name": "매콤데리타코야끼",
+       "price": 6900
+      },
+      {
+       "category": "타코야끼&오코노미야끼",
+       "name": "오코노미야끼",
+       "price": 8900
+      },
+      {
+       "category": "타코야끼&오코노미야끼",
+       "name": "매콤치즈 오코노미야끼",
+       "price": 9900
+      },
+      {
+       "category": "튀김류",
+       "name": "청춘 매콤스틱소떡",
+       "price": 2500
+      },
+      {
+       "category": "튀김류",
+       "name": "청춘 데리소떡소떡",
+       "price": 2500
+      },
+      {
+       "category": "튀김류",
+       "name": "청춘 매콤치즈스틱",
+       "price": 2900
+      },
+      {
+       "category": "튀김류",
+       "name": "청춘 불닭마요스틱",
+       "price": 2900
+      },
+      {
+       "category": "튀김류",
+       "name": "청춘 매콤치즈프라이",
+       "price": 3900
+      },
+      {
+       "category": "튀김류",
+       "name": "청춘 갈릭마요프라이",
+       "price": 3900
+      },
+      {
+       "category": "튀김류",
+       "name": "청춘 불닭마요프라이",
+       "price": 3900
+      },
+      {
+       "category": "튀김류",
+       "name": "케이준 양념감자튀김",
+       "price": 5900
+      }
+     ]
+    }
+   ],
+   "replies": [
+    "토플파 없음... 화질구지 일단 보이는 것들만 메뉴작업,세트메뉴 관련 확인 필요",
+    "일단 메뉴만 백업"
+   ],
+   "rc": 3,
+   "lr": "1786508590.534349",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786507657670369"
   },
@@ -46,37 +294,255 @@ window.MENU_REQUESTS = {
      "name": "i_7113ff3893d9.jpeg",
      "fid": "F0BPJ7DMNPP",
      "from": "댓글",
-     "path": "menu-files/1786506587_398659-0.jpeg"
+     "path": "menu-files/1786506587_398659-0.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "cake",
+       "name": "헤이즐넛 초코",
+       "price": 7000
+      },
+      {
+       "category": "cake",
+       "name": "쇼콜라 타르트",
+       "price": 7000
+      },
+      {
+       "category": "cake",
+       "name": "생크림 고구마",
+       "price": 7000
+      },
+      {
+       "category": "cake",
+       "name": "시그니처 치즈",
+       "price": 7000
+      },
+      {
+       "category": "cake",
+       "name": "오레오 케이크",
+       "price": 7000
+      },
+      {
+       "category": "cake",
+       "name": "초코 브라우니",
+       "price": 6800
+      }
+     ]
     },
     {
      "name": "i_bd2ec8c4281d.jpeg",
      "fid": "F0BPKR0BALW",
      "from": "댓글",
-     "path": "menu-files/1786506587_398659-1.jpeg"
+     "path": "menu-files/1786506587_398659-1.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "croffle.",
+       "name": "브라운 치즈 크로플",
+       "price": 8500
+      },
+      {
+       "category": "croffle.",
+       "name": "곡물 크로플",
+       "price": 8500
+      }
+     ]
     },
     {
      "name": "i_6ab9d318cb4c.jpeg",
      "fid": "F0BPFGZ0J1Z",
      "from": "댓글",
-     "path": "menu-files/1786506587_398659-2.jpeg"
+     "path": "menu-files/1786506587_398659-2.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "open sandwich",
+       "name": "어니언 살몬 샌드위치",
+       "price": 12000
+      },
+      {
+       "category": "open sandwich",
+       "name": "레몬 토마토 샌드위치",
+       "price": 9500
+      },
+      {
+       "category": "open sandwich",
+       "name": "더블 프로슈토 햄 샌드위치",
+       "price": 11000
+      }
+     ]
     },
     {
      "name": "i_ed410ca52962.jpeg",
      "fid": "F0BPFH3CS59",
      "from": "댓글",
-     "path": "menu-files/1786506587_398659-3.jpeg"
+     "path": "menu-files/1786506587_398659-3.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "SANDWICH",
+       "name": "클래식",
+       "price": 7900
+      },
+      {
+       "category": "SANDWICH",
+       "name": "햄치즈",
+       "price": 7900
+      },
+      {
+       "category": "SANDWICH",
+       "name": "치킨치킨",
+       "price": 7900
+      },
+      {
+       "category": "SANDWICH",
+       "name": "베이컨 치즈 할라피뇨",
+       "price": 8400
+      },
+      {
+       "category": "SANDWICH",
+       "name": "바삭! 통살 치킨",
+       "price": 8400
+      }
+     ]
     },
     {
      "name": "i_13779eaa8a76.jpeg",
      "fid": "F0BQG4ZMVL0",
      "from": "댓글",
-     "path": "menu-files/1786506587_398659-4.jpeg"
+     "path": "menu-files/1786506587_398659-4.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "Tea & Others",
+       "name": "이른 봄 쑥차",
+       "price": 7000
+      },
+      {
+       "category": "Tea & Others",
+       "name": "하동 호박 차",
+       "price": 7000
+      },
+      {
+       "category": "Tea & Others",
+       "name": "자몽허니블랙티 Grapefruit Honey Black Tea",
+       "price": 6500
+      },
+      {
+       "category": "Tea & Others",
+       "name": "유자민트티 Yuzu Mint Tea",
+       "price": 6500
+      },
+      {
+       "category": "Tea & Others",
+       "name": "과일차(레몬, 자몽, 유자, 매실) Fruit tea",
+       "price": 6000
+      },
+      {
+       "category": "Tea & Others",
+       "name": "복숭아 아이스티 Peach Iced Tea",
+       "price": 5500
+      },
+      {
+       "category": "Tea & Others",
+       "name": "초코라떼 Chocolate Latte",
+       "price": 6500
+      },
+      {
+       "category": "Tea & Others",
+       "name": "말차라떼 Matcha Latte",
+       "price": 7000
+      },
+      {
+       "category": "Tea & Others",
+       "name": "딸기라떼 Strawberry Latte",
+       "price": 7500
+      },
+      {
+       "category": "Tea & Others",
+       "name": "곡물라떼 Grain / 고구마라떼 Sweet potato",
+       "price": 6500
+      },
+      {
+       "category": "Tea & Others",
+       "name": "착즙 오렌지 주스 100%",
+       "price": 7000
+      },
+      {
+       "category": "Tea & Others",
+       "name": "토마토 주스 100%",
+       "price": 7500
+      },
+      {
+       "category": "Tea & Others",
+       "name": "에이드(레몬, 자몽, 유자, 매실) Ade",
+       "price": 6500
+      }
+     ]
     },
     {
      "name": "i_01681d231900.jpeg",
      "fid": "F0BP6D4F2GP",
      "from": "댓글",
-     "path": "menu-files/1786506587_398659-5.jpeg"
+     "path": "menu-files/1786506587_398659-5.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "COFFEE",
+       "name": "A 하이하우스 (고소한 다크)",
+       "price": 4000
+      },
+      {
+       "category": "COFFEE",
+       "name": "B 봉쥬르하우스 (부드러운 산미)",
+       "price": 4000
+      },
+      {
+       "category": "COFFEE",
+       "name": "C 소프트이브닝 (디카페인)",
+       "price": 4800
+      },
+      {
+       "category": "COFFEE",
+       "name": "Espresso 에스프레소",
+       "price": 4000
+      },
+      {
+       "category": "COFFEE",
+       "name": "Latte 카페라떼",
+       "price": 5500
+      },
+      {
+       "category": "COFFEE",
+       "name": "Vanilla Latte 바닐라라떼",
+       "price": 6500
+      },
+      {
+       "category": "COFFEE",
+       "name": "Caramel Latte 카라멜 라떼",
+       "price": 6500
+      },
+      {
+       "category": "COFFEE",
+       "name": "Dolce Latte 돌체 라떼",
+       "price": 6500
+      },
+      {
+       "category": "COFFEE",
+       "name": "Affogato 아포카토",
+       "price": 6800
+      },
+      {
+       "category": "COFFEE",
+       "name": "Signature 치즈폼라떼 *Only Iced",
+       "price": 6500
+      },
+      {
+       "category": "COFFEE",
+       "name": "Signature 겟인슈페너 *Only Iced",
+       "price": 6800
+      }
+     ]
     }
    ],
    "datt": [],
@@ -104,7 +570,13 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "16aH049KHvASvJjUoZULxHX0j7eqncT6m",
+     "kind": "other",
+     "menu": []
+    }
+   ],
    "replies": [],
    "rc": 1,
    "lr": "1786506176.556379",
@@ -173,25 +645,146 @@ window.MENU_REQUESTS = {
      "name": "61141.jpg",
      "fid": "F0BPP8LG2GZ",
      "from": "댓글",
-     "path": "menu-files/1786499983_486809-0.jpg"
+     "path": "menu-files/1786499983_486809-0.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "원산지",
+       "name": "원산지",
+       "price": 0
+      }
+     ]
     },
     {
      "name": "61132 (1).jpg",
      "fid": "F0BQFLKPUAC",
      "from": "댓글",
-     "path": "menu-files/1786499983_486809-1.jpg"
+     "path": "menu-files/1786499983_486809-1.jpg",
+     "kind": "pos_screen",
+     "menu": []
     },
     {
      "name": "61133 (1).jpg",
      "fid": "F0BP5UP34SK",
      "from": "댓글",
-     "path": "menu-files/1786499983_486809-2.jpg"
+     "path": "menu-files/1786499983_486809-2.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "우삼겹아구찜",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "아구찜",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "해물찜",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "알곤이찜",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "순살아구찜",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "낙지찜",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "순살아구불고기",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "명란백탕",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "얼큰해물알곤이전골",
+       "price": 54000
+      },
+      {
+       "category": "",
+       "name": "아구지리탕",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "알탕",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "동태탕",
+       "price": 0
+      }
+     ]
     },
     {
      "name": "61134.jpg",
      "fid": "F0BPHP3KNKF",
      "from": "댓글",
-     "path": "menu-files/1786499983_486809-3.jpg"
+     "path": "menu-files/1786499983_486809-3.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "동태탕",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "알탕",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "알곤이장칼국수",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "순살아구덮밥",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "오징어덮밥",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "낙지덮밥",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "우삼겹덮밥",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "명란백탕",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "아구지리탕",
+       "price": 10000
+      }
+     ]
     },
     {
      "name": "61137.jpg",
@@ -20031,10 +20624,6 @@ window.MENU_REQUESTS = {
  "ocr": {
   "model": "claude-opus-5",
   "enabled": true,
-  "drive": true,
-  "halt": {
-   "status": 400,
-   "message": "Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."
-  }
+  "drive": true
  }
 };
