@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 595,
- "updatedAt": "2026-08-12 19:29",
+ "version": 596,
+ "updatedAt": "2026-08-12 19:45",
  "days": 30,
  "items": [
   {
@@ -26147,30 +26147,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783957405345389"
-  },
-  {
-   "ts": "1783939093.500549",
-   "date": "2026-07-13",
-   "time": "19:38",
-   "store": "바다향기",
-   "biz": "3840403301",
-   "pos": "",
-   "content": "• 메뉴 추가 등록 부탁드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "카테고리: 주류\n메뉴명: 테라 제로 0.00\n가격: 5,000원\n\n유플",
-    "이분! 테이블 오더 사용 매장인 듯한데,\n혹시 키오스크 전시관리 및 터치키 관리에 추가 되었나욤??"
-   ],
-   "rc": 5,
-   "lr": "1783951532.431199",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783939093500549"
   }
  ],
  "ocr": {
