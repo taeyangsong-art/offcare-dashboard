@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3442,
+  "version": 3443,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -105546,42 +105546,70 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "01:25",
+      "updatedAt": "08:27",
       "voc": {
-        "responses": 1,
+        "responses": 2,
         "install": {
           "count": 0,
           "low": 0
         },
         "nps": {
-          "count": 1,
-          "low": 1
+          "count": 2,
+          "low": 2
         },
         "high": {
           "install": 0,
           "nps": 0
         },
         "npsDist": {
+          "1": 1,
           "5": 1
         },
         "installDist": {},
         "byIndustry": {},
         "byTenure": {
           "3개월": {
-            "total": 1,
-            "low": 1
+            "total": 2,
+            "low": 2
           }
         },
         "byVan": {
+          "KOVAN": {
+            "total": 1,
+            "low": 1
+          },
           "SECTA9": {
             "total": 1,
             "low": 1
           }
         },
         "reasonCounts": {
+          "필요한 기능이 없거나 몰라서 불편": 1,
           "단말기 설치나 초기 과정이 어려움": 1
         },
         "alerts": [
+          {
+            "time": "08:27",
+            "store": "에스엔피이(SNPE)바른자세척추운동광교상현역점",
+            "storeId": "462494",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "입금이 늦어지는 결제건들이 있어서 불편함",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "01:25",
             "store": "위드팜 컴퍼니",
@@ -127826,13 +127854,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-13 08:15",
+    "at": "2026-08-13 08:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3485,
+    "rows": 3486,
     "named": 193,
     "unknownName": 0,
     "beforeStart": 0,
