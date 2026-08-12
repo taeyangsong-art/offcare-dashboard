@@ -2796,7 +2796,9 @@ function adminItems(dates){
 }
 // 관리탭에서 쓰는 유형 목록 — 설치 OB 포함
 const ADM_CATS = [...WORK_CATS, VOC_CAT, OB_CAT];
-function admCatKey(x){ return x.cat==='voc' ? 'voc' : (ADM_CATS.some(c=>c.key===x.cat) ? x.cat : 'extern'); }
+// 모르는 유형은 'etc'. 예전에는 'extern' 으로 떨궜는데 그건 외주의 키라 외주 건수에 조용히 섞였다.
+const ETC_CAT = {key:'etc', name:'기타', icon:'▫️', color:'#c7c7cc'};
+function admCatKey(x){ return x.cat==='voc' ? 'voc' : (ADM_CATS.some(c=>c.key===x.cat) ? x.cat : ETC_CAT.key); }
 const ADM_H0=8, ADM_H1=23;                                   // 표에 세울 시간대. 밖은 '기타' 로 모은다
 const ADM_HOURS = Array.from({length:ADM_H1-ADM_H0+1},(_,i)=>ADM_H0+i);
 function hourOf(t){ const m=/^(\d{1,2}):/.exec(t||''); return m?Number(m[1]):null; }
@@ -2953,36 +2955,115 @@ function admHourly(){
     · 셀 색이 진할수록 그 시간대 처리량이 많습니다 · <b>기타</b>는 ${ADM_H0}시 이전·${ADM_H1}시 이후 건입니다.
     ${obN?`<br>📞 <b>설치 OB ${obN}건</b> 포함 — 시트에 확인 시각이 없어 <b>접수 시각</b> 자리에 넣었습니다(건수는 정확, 시간대만 접수 기준).`:''}</div>
     <div class="card"><div class="card-head"><h3>담당자 × 시간대 처리량</h3><span class="hint">1일 평균 = 합계 ÷ ${nd}일</span></div>${table}</div>
-    <div class="card"><div class="card-head"><h3>시간대별 유형 구성</h3><span class="hint">전 담당자 합산 · 유형별 누적</span></div>
-      ${hourStackChart(items)}
-      <div class="legend">${ADM_CATS.map(c=>`<span><span class="swatch" style="background:${c.color}"></span>${c.name}</span>`).join('')}</div></div>`;
+    <div class="card"><div class="card-head"><h3>시간대별 유형 구성</h3>
+      <span class="hint">전 담당자 합산 · 배달·설치 OB 처럼 건수가 적은 유형은 <b>유형별 따로</b>로 보세요</span></div>
+      ${hourStackChart(items)}</div>`;
 }
-// 시간대(가로) × 유형(누적) 막대 — 4번 캡처의 누적 그래프와 같은 형태
+/* 시간대(가로) × 유형(누적) 막대.
+ * 고정 780px 라 카드 안에서 작게 눌려 유형 구분이 안 보였다. viewBox + width:100% 로 카드 폭을
+ * 꽉 채우고 세로도 키웠다. 눈금선·구분 간격·조각 안 숫자를 넣어 어떤 유형이 얼마인지 바로 읽히게 한다.
+ * '비율' 모드는 시간대마다 100% 로 맞춰, 건수가 적은 시간대의 구성비도 볼 수 있게 한다. */
+let admStackMode = 'cnt';        // 'cnt' 누적 건수 | 'pct' 시간대별 100% 비율 | 'each' 유형별 따로
+function setAdmStack(m){ admStackMode=m; renderAdmin(); }
+/* 유형별 따로 보기 — 누적 막대에서는 AS 가 3분의 2를 차지해 배달·설치 OB 같은 소수 유형이
+ * 실오라기처럼 깔려 안 보인다. 유형마다 자기 최대값에 맞춰 따로 그리면 전부 읽힌다.
+ * 대신 유형끼리 높이를 비교하면 안 되므로 각 칸에 자기 최대 건수를 적어 둔다. */
+function hourEachChart(byHour, cats, tot, grand){
+  const W=380, H=150, padL=8, padR=8, topPad=16, botPad=26;
+  const base=H-botPad, plotH=H-topPad-botPad, step=(W-padL-padR)/ADM_HOURS.length;
+  const barW=Math.min(18, step*0.72);
+  const cell=cats.map(c=>{
+    const vals=ADM_HOURS.map(h=>(byHour[h]||{})[c.key]||0);
+    const mx=Math.max(1,...vals);
+    const pi=vals.indexOf(mx), peak=ADM_HOURS[pi];   // 같은 최댓값이 여러 시간대면 첫 번째만 표시한다
+    const bars=ADM_HOURS.map((h,i)=>{
+      const v=vals[i], x=padL+i*step+(step-barW)/2;
+      if(!v) return `<rect x="${x.toFixed(1)}" y="${base-2}" width="${barW.toFixed(1)}" height="2" rx="1" style="fill:var(--line-soft)"/>`;
+      const bh=Math.max(3,(v/mx)*plotH), y=base-bh;
+      return `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${barW.toFixed(1)}" height="${bh.toFixed(1)}" rx="2.5" fill="${c.color}"${i===pi?' opacity="1"':' opacity="0.82"'}>`
+        + `<title>${h}시 · ${c.name} ${v}건</title></rect>`
+        + (i===pi?`<text x="${(x+barW/2).toFixed(1)}" y="${(y-4).toFixed(1)}" text-anchor="middle" font-size="11" font-weight="800" style="fill:var(--ink)">${v}</text>`:'');
+    }).join('');
+    const xlab=ADM_HOURS.map((h,i)=> h%3===0
+      ? `<text x="${(padL+i*step+step/2).toFixed(1)}" y="${base+15}" text-anchor="middle" font-size="10.5" font-weight="600" style="fill:var(--muted)">${h}</text>` : '').join('');
+    return `<div style="border:1px solid var(--line-soft);border-radius:12px;padding:12px 12px 6px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:2px">
+        <span style="font-size:13.5px;font-weight:800;color:var(--ink)">
+          <span style="display:inline-block;width:9px;height:9px;border-radius:3px;background:${c.color};margin-right:6px"></span>${c.name}</span>
+        <span style="font-size:12px;color:var(--gray2)">${(tot[c.key]||0).toLocaleString()}건 · ${Math.round((tot[c.key]||0)/grand*100)}%</span></div>
+      <div style="font-size:11.5px;color:var(--muted);margin-bottom:2px">최다 <b style="color:var(--ink-soft)">${peak}시 ${mx}건</b></div>
+      <svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto" preserveAspectRatio="xMidYMid meet">
+        <line x1="${padL}" y1="${base}" x2="${W-padR}" y2="${base}" style="stroke:var(--line)"/>${bars}${xlab}</svg></div>`;
+  }).join('');
+  return `<div class="adm-note" style="margin-bottom:14px">유형마다 <b>자기 최대값에 맞춰</b> 따로 그렸습니다 — 한 칸 안에서 시간대끼리는 비교되지만,
+      <b>칸끼리 막대 높이를 비교하면 안 됩니다</b>(총 건수는 각 칸 오른쪽 위에 적어 뒀습니다).</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px">${cell}</div>`;
+}
 function hourStackChart(items){
-  const cats=ADM_CATS, byHour={};
+  const byHour={}, tot={};
   for(const x of items){
     const h=hourOf(x.time); if(h===null||h<ADM_H0||h>ADM_H1) continue;
-    byHour[h]=byHour[h]||{};
-    byHour[h][admCatKey(x)]=(byHour[h][admCatKey(x)]||0)+1;
+    const k=admCatKey(x);
+    byHour[h]=byHour[h]||{}; byHour[h][k]=(byHour[h][k]||0)+1;
+    tot[k]=(tot[k]||0)+1;
   }
-  const totals=ADM_HOURS.map(h=>Object.values(byHour[h]||{}).reduce((a,b)=>a+b,0));
-  const mx=Math.max(1,...totals);
-  const colW=34, gap=12, padL=40, padR=16, topPad=22, botPad=34;
-  const W=padL+padR+ADM_HOURS.length*colW+(ADM_HOURS.length-1)*gap, H=280, base=H-botPad, plotH=H-topPad-botPad;
+  const cats=[...ADM_CATS, ETC_CAT].filter(c=>tot[c.key]>0);        // 건수 있는 유형만 그린다
+  const colTot=ADM_HOURS.map(h=>Object.values(byHour[h]||{}).reduce((a,b)=>a+b,0));
+  const grand=colTot.reduce((a,b)=>a+b,0);
+  if(!grand) return `<div class="empty-note">${ADM_H0}~${ADM_H1}시 사이에 그릴 데이터가 없습니다.</div>`;
+  const pct = admStackMode==='pct';
+  const toggle=`<div class="seg" style="margin-bottom:14px">
+    <button class="${admStackMode==='cnt'?'on':''}" onclick="setAdmStack('cnt')">누적 건수</button>
+    <button class="${admStackMode==='pct'?'on':''}" onclick="setAdmStack('pct')">비율 100%</button>
+    <button class="${admStackMode==='each'?'on':''}" onclick="setAdmStack('each')">유형별 따로</button></div>`;
+  if(admStackMode==='each') return toggle+hourEachChart(byHour, cats, tot, grand);
+
+  const W=1180, H=480, padL=64, padR=28, topPad=40, botPad=58;
+  const base=H-botPad, plotH=H-topPad-botPad, plotW=W-padL-padR;
+  const step=plotW/ADM_HOURS.length, barW=Math.min(62, step*0.70), off=(step-barW)/2;
+
+  // Y축 — 눈금이 어중간한 숫자로 끊기지 않게 올림한다
+  const niceMax=(v)=>{ const p=Math.pow(10,Math.floor(Math.log10(v)||0)); for(const k of [1,1.5,2,2.5,3,4,5,6,8,10]) if(v<=k*p) return k*p; return 10*p; };
+  const yMax = pct ? 100 : niceMax(Math.max(1,...colTot));
+  const TICKS=5;
+  const grid=Array.from({length:TICKS+1},(_,i)=>{
+    const v=yMax*i/TICKS, y=base-(v/yMax)*plotH;
+    return `<line x1="${padL-10}" y1="${y.toFixed(1)}" x2="${W-padR}" y2="${y.toFixed(1)}" style="stroke:var(--line-soft)"${i?' stroke-dasharray="3 5"':''}/>`
+      + `<text x="${padL-18}" y="${(y+5).toFixed(1)}" text-anchor="end" font-size="14" style="fill:var(--muted)">${pct?v+'%':Math.round(v).toLocaleString()}</text>`;
+  }).join('');
+
   const bars=ADM_HOURS.map((h,i)=>{
-    const x=padL+i*(colW+gap); let y=base; const segs=[];
+    const x=padL+i*step+off, t=colTot[i];
+    const hourLabel=`<text x="${(x+barW/2).toFixed(1)}" y="${base+24}" text-anchor="middle" font-size="15" font-weight="700" style="fill:var(--gray2)">${h}</text>`;
+    if(!t) return `<rect x="${x.toFixed(1)}" y="${base-3}" width="${barW.toFixed(1)}" height="3" rx="1.5" style="fill:var(--line-soft)"/>`+hourLabel;
+    const denom = pct ? t : yMax;
+    let y=base; const segs=[];
     for(const c of cats){
       const v=(byHour[h]||{})[c.key]||0; if(!v) continue;
-      const sh=v/mx*plotH; y-=sh;
-      segs.push(`<rect x="${x}" y="${y.toFixed(1)}" width="${colW}" height="${Math.max(0,sh-1).toFixed(1)}" rx="1.5" fill="${c.color}"><title>${h}시 · ${c.name} ${v}건</title></rect>`);
+      const sh=(v/denom)*plotH; y-=sh;
+      const p=Math.round(v/t*100);
+      // 조각 사이를 2px 비워 색이 붙어 보이지 않게 한다
+      segs.push(`<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${barW.toFixed(1)}" height="${Math.max(1.5,sh-2).toFixed(1)}" rx="3" fill="${c.color}">`
+        + `<title>${h}시 · ${c.name} ${v}건 (${p}%)</title></rect>`);
+      if(sh>=24) segs.push(`<text x="${(x+barW/2).toFixed(1)}" y="${(y+sh/2+5).toFixed(1)}" text-anchor="middle" font-size="14" font-weight="800" fill="#fff" style="pointer-events:none">${pct?p+'%':v}</text>`);
     }
-    const t=totals[i];
     return segs.join('')
-      + (t?`<text x="${x+colW/2}" y="${(y-5).toFixed(1)}" text-anchor="middle" font-size="10.5" font-weight="700" style="fill:var(--ink-soft)">${t}</text>`:'')
-      + `<text x="${x+colW/2}" y="${base+18}" text-anchor="middle" font-size="11.5" font-weight="600" style="fill:var(--gray2)">${h}</text>`;
+      + `<text x="${(x+barW/2).toFixed(1)}" y="${(y-9).toFixed(1)}" text-anchor="middle" font-size="14.5" font-weight="800" style="fill:var(--ink)">${pct?t:t.toLocaleString()}</text>`
+      + hourLabel;
   }).join('');
-  return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
-    <line x1="${padL-10}" y1="${base}" x2="${W-padR}" y2="${base}" style="stroke:var(--line)"/>${bars}</svg></div>`;
+
+  // 범례에 유형별 총 건수·비중을 같이 적어, 색만 보고 되짚지 않아도 되게 한다
+  const legend=`<div class="legend">${cats.map(c=>`<span><span class="swatch" style="background:${c.color}"></span>${c.name}
+    <b style="color:var(--ink);font-weight:800">${(tot[c.key]||0).toLocaleString()}</b>
+    <small style="color:var(--muted)">${Math.round((tot[c.key]||0)/grand*100)}%</small></span>`).join('')}</div>`;
+
+  return toggle
+    + `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;min-height:300px" preserveAspectRatio="xMidYMid meet">
+        ${grid}<line x1="${padL-10}" y1="${base}" x2="${W-padR}" y2="${base}" style="stroke:var(--line)" stroke-width="1.5"/>${bars}
+        <text x="${padL-18}" y="${topPad-14}" text-anchor="end" font-size="13" font-weight="700" style="fill:var(--muted)">${pct?'비중':'건'}</text>
+        <text x="${W-padR}" y="${base+46}" text-anchor="end" font-size="13" style="fill:var(--muted)">시(時)</text>
+      </svg></div>`
+    + legend;
 }
 
 /* ── 탭 2. DRI별 정·부 개인별 처리추이 ── */
@@ -3098,7 +3179,9 @@ function admPrevMonth(){
       <td class="num">${ax}</td><td class="num" style="font-weight:800">${per(ax,ad)}</td>
       <td class="num" style="color:var(--gray2)">${b?bx:'—'}</td><td class="num" style="color:var(--gray2);font-weight:800">${b?per(bx,bd):'—'}</td>
       <td class="num">${dl(ax/ad, b?bx/bd:0)}</td></tr>`;
-    const rowsH=ADM_CATS.map(c=>line(`${c.icon} ${c.name}`, a.by[c.key]||0, b?(b.by[c.key]||0):0)).join('');
+    // 미상 유형이 있는 달에만 기타 행을 붙인다 — 없으면 빈 행이 늘 남는다
+    const rowCats=[...ADM_CATS, ...((a.by.etc||(b&&b.by.etc))?[ETC_CAT]:[])];
+    const rowsH=rowCats.map(c=>line(`${c.icon} ${c.name}`, a.by[c.key]||0, b?(b.by[c.key]||0):0)).join('');
     return `<div class="card"><div class="card-head">
         <h3>${night?'🌙 야간':'☀️ 주간'} — ${cur.replace('-','.')} vs ${prev?prev.replace('-','.'):'전월 없음'}</h3>
         <span class="hint">${night?NIGHT_FROM+' 이후':NIGHT_FROM+' 이전'} 처리 건 · 평일 ${ad}일 / 전월 평일 ${prev?bd+'일':'—'}</span></div>
