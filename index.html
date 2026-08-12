@@ -2704,8 +2704,20 @@ function renderMenuReg(){
       </div>`:''}
       <div class="hint" style="margin-top:10px">💡 판독 결과는 <b>📥 양식 변환란에 넣기</b> 로 한 번에 옮길 수 있습니다. 옮긴 뒤 아래 <b>「📂 매장 메뉴 파일 → POS 양식 변환」</b>에서 검수하고 4개 POS 양식을 만드세요.</div>
     </div>`:'';
+  // 판독이 통째로 막혀 있으면(크레딧 소진 등) 그 사실을 먼저 알린다 —
+  // 안 그러면 '이미지는 붙어 있는데 텍스트만 비어 있는' 상태의 원인을 알 수가 없다.
+  const ocrSt=(window.MENU_REQUESTS&&window.MENU_REQUESTS.ocr)||{};
+  const ocrWarn = ocrSt.halt
+    ? `<div class="callout-warn" style="margin-bottom:14px;padding:12px 14px;border-radius:12px;background:#fff4e5;border:1px solid #ffd9a8;color:#8a4b00;font-size:13.5px">
+        ⛔ <b>이미지 자동 판독이 멈춰 있습니다</b> (HTTP ${ocrSt.halt.status})<br>
+        <span style="opacity:.85">${escapeHtml(String(ocrSt.halt.message||'').slice(0,160))}</span><br>
+        <span style="opacity:.85">해결되면 대기 중인 이미지는 자동으로 이어서 판독됩니다. 그때까지는 이미지를 열어 직접 입력해 주세요.</span></div>`
+    : (ocrSt.enabled===false
+      ? `<div class="callout-warn" style="margin-bottom:14px;padding:12px 14px;border-radius:12px;background:#fff4e5;border:1px solid #ffd9a8;color:#8a4b00;font-size:13.5px">
+          ⛔ <b>이미지 자동 판독이 꺼져 있습니다</b> — ANTHROPIC_API_KEY 시크릿이 없습니다.</div>` : '');
   document.getElementById("main").innerHTML=`
     <div class="page-head"><div><h2>🍱 메뉴등록</h2><div class="sub">슬랙 #oc팀_메뉴요청 자동 적재 (최근 ${(window.MENU_REQUESTS&&window.MENU_REQUESTS.days)||7}일) · 요청 선택 → 메뉴 확인 → POS 양식 다운로드${upd?' · 최신 적재 '+upd:''}</div></div></div>
+    ${ocrWarn}
     <div class="card">
       <div class="card-head"><h3>📋 요청 목록 <span class="cnt-badge" id="mrCnt">${items.length}</span></h3>
         <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">

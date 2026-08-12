@@ -112,6 +112,9 @@ function cleanupOldFiles(nowSec) {
 // 결과는 att[].menu / datt[].menu 에 구조화된 배열로 캐시. 신규 이미지에만 1회 호출.
 const OCR_EXT = /\.(jpe?g|png|webp|bmp|gif)$/i;
 const OCR_CAP = Number(process.env.OCR_CAP || 12);   // 실행당 신규 판독 상한(비용·런타임 보호)
+// API 가 받는 이미지 상한은 base64 기준 5MB. 여유를 두고 4.5MB 를 넘으면 축소본을 쓴다.
+const OCR_MAX_BYTES = 4.5 * 1024 * 1024;
+let thumbUsed = 0;
 const OCR_MODEL = process.env.OCR_MODEL || 'claude-opus-5';
 const OCR_PRICE = { in: 5, out: 25 };                // $/1M tok — 로그의 비용 추정용
 const KRW_PER_USD = Number(process.env.KRW_PER_USD || 1380);
@@ -183,7 +186,13 @@ function scrubPII(t) {
     .replace(/[\w.+-]+@[\w-]+\.[\w.]+/g, '···');
 }
 // 반환: {kind, menu:[{category,name,price}]} → 캐시(재호출 안 함) · null → 상한/키없음/일시오류(다음 실행 재시도)
+/* 판독을 더 해봐야 소용없는 상태(크레딧 소진·키 오류 등)면 이번 실행은 즉시 중단한다.
+ * 2026-08-11 에 크레딧이 떨어졌는데, 400 이 그냥 '판독 실패'로 처리되는 바람에 10분마다
+ * 12번씩 같은 400 을 맞으면서 하루 넘게 0건 판독이 이어졌다. 원인도 데이터에 안 남았다. */
+let ocrHalt = null;                    // {status, message} — 설정되면 이번 실행의 남은 판독을 건너뛴다
+const OCR_FATAL = new Set([400, 401, 403, 404]);   // 잔액·키·모델명 문제 — 재시도해도 같은 결과
 async function readMenuImage(dest) {
+  if (ocrHalt) return null;
   if (ocrDone >= OCR_CAP) return null;
   const client = getAnthropic();
   if (!client) return null;
@@ -193,7 +202,11 @@ async function readMenuImage(dest) {
   if (!media && !isPdf) return null;
   let buf;
   try { buf = fs.readFileSync(dest); } catch (e) { return null; }
-  if (!buf.length || buf.length > FILE_MAX) return null;
+  if (!buf.length) return null;
+  if (buf.length > OCR_MAX_BYTES) {   // 상한 초과 — 보내봐야 400 이다. 호출하지 않고 건너뛴다
+    console.log(`판독 건너뜀(용량 ${(buf.length / 1048576).toFixed(1)}MB > ${(OCR_MAX_BYTES / 1048576).toFixed(1)}MB):`, dest);
+    return null;
+  }
   const block = isPdf
     ? { type: 'document', source: { type: 'base64', media_type: 'application/pdf', data: buf.toString('base64') } }
     : { type: 'image', source: { type: 'base64', media_type: media, data: buf.toString('base64') } };
@@ -222,8 +235,15 @@ async function readMenuImage(dest) {
       .slice(0, 200);
     return { kind: parsed.kind || 'other', menu };
   } catch (e) {
-    ocrDone++;   // 실패도 상한에 넣는다 — 한 실행이 오류로 무한 재시도하지 않도록
-    console.log('판독 실패:', dest, String(e.message || e).slice(0, 100));
+    const st = e.status || 0;
+    const msg = String((e.error && e.error.error && e.error.error.message) || e.message || e).slice(0, 200);
+    if (OCR_FATAL.has(st)) {          // 잔액 부족·키 오류 등 — 이번 실행은 여기서 판독을 접는다
+      ocrHalt = { status: st, message: msg };
+      console.log(`⛔ 판독 중단(HTTP ${st}): ${msg}`);
+      return null;
+    }
+    ocrDone++;   // 일시적 실패만 상한에 넣는다 — 한 실행이 오류로 무한 재시도하지 않도록
+    console.log('판독 실패:', dest, msg.slice(0, 100));
     return null;
   }
 }
@@ -435,19 +455,27 @@ function detectPos(text) {
         stored = fs.existsSync(dest) || await downloadSlackFile(f.url_private_download, dest);
         if (stored) a.path = dest;
       }
-      // 판독 대상이 아닌 첨부(hwp·xlsx 같은 비이미지, 10MB 초과, 다운로드 URL 없음)는 nj 로 표시한다.
+      // 판독 대상이 아닌 첨부(hwp·xlsx 같은 비이미지, 다운로드 URL 없음)는 nj 로 표시한다.
       // 표시해 두지 않으면 위 pendingReply 가 매 실행 참이 되어 스레드를 계속 다시 읽는다.
-      const judgeable = OCR_EXT.test(ext) && small;
+      // 원본이 API 상한(5MB)을 넘으면 슬랙이 만들어 둔 축소본을 쓴다 — 폰으로 찍은 4000x3000
+      // 사진이 흔하고(반달커피 10.0MB), 원본 그대로 보내면 매번 400 으로 떨어진다.
+      const bigOriginal = (f.size || 0) > OCR_MAX_BYTES;
+      const thumb = bigOriginal ? (f.thumb_1024 || f.thumb_960 || f.thumb_800 || f.thumb_720 || null) : null;
+      const judgeable = OCR_EXT.test(ext) && !!f.url_private_download && (!bigOriginal || !!thumb);
       if (!('kind' in a) && !judgeable) a.nj = 1;
       if (!('kind' in a) && judgeable) {
-        let judgePath = stored ? dest : null;
-        if (!judgePath) {   // 창 밖이라 저장은 안 하지만 판독은 한다
-          judgePath = `${DRIVE_TMP}/s-${f.id}${ext}`;
-          if (!await downloadSlackFile(f.url_private_download, judgePath)) judgePath = null;
+        let judgePath = (stored && !bigOriginal) ? dest : null;
+        if (!judgePath) {   // 창 밖이라 저장을 안 했거나, 원본이 커서 축소본을 받아야 하는 경우
+          const src = thumb || f.url_private_download;
+          const tExt = thumb ? ((String(thumb).match(/\.(jpe?g|png)(\?|$)/i) || [])[0] || '.png').replace(/\?.*$/, '') : ext;
+          judgePath = `${DRIVE_TMP}/s-${f.id}${tExt}`;
+          if (!await downloadSlackFile(src, judgePath)) judgePath = null;
+          else if (thumb) thumbUsed++;
         }
         if (judgePath) {
+          const isTemp = judgePath.startsWith(DRIVE_TMP);   // 축소본·창밖 임시본은 판독 후 지운다
           try { const r = await readMenuImage(judgePath); if (r) { a.kind = r.kind; a.menu = r.menu; } }
-          finally { if (!stored) { try { fs.unlinkSync(judgePath); } catch (e) {} } }
+          finally { if (isTemp) { try { fs.unlinkSync(judgePath); } catch (e) {} } }
         }
       }
       if (a.path || 'kind' in a) att.push(a);
@@ -481,7 +509,9 @@ function detectPos(text) {
     days: DAYS, items: capped,
     // 판독 설정 상태. 시각·건수 같은 매번 변하는 값은 넣지 않는다 — 넣으면 10분마다 무의미한
     // 커밋이 생긴다. 상태가 바뀔 때만 파일이 바뀌므로, 판독이 0건일 때 원인(키 유무)을 가릴 수 있다.
-    ocr: { model: OCR_MODEL, enabled: !!process.env.ANTHROPIC_API_KEY, drive: !!process.env.GDRIVE_REFRESH_TOKEN },
+    // halt 는 판독이 통째로 막힌 사유(크레딧 소진 등). 이게 없으면 '왜 텍스트가 비었는지' 알 길이 없다.
+    ocr: { model: OCR_MODEL, enabled: !!process.env.ANTHROPIC_API_KEY, drive: !!process.env.GDRIVE_REFRESH_TOKEN,
+           ...(ocrHalt ? { halt: ocrHalt } : {}) },
   };
   const header = '/*\n * 슬랙 #oc팀_메뉴요청 최근 요청 적재 (대시보드 메뉴등록 카테고리용)\n * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.\n */\n';
   fs.writeFileSync(OUT, header + 'window.MENU_REQUESTS = ' + JSON.stringify(data, null, 1) + ';\n', 'utf8');
@@ -498,7 +528,10 @@ function detectPos(text) {
     }
     const pend = (c.원글[1] - c.원글[0]) + (c.댓글[1] - c.댓글[0]);
     console.log(`🖼 첨부 판독 현황 — 원글 ${c.원글[0]}/${c.원글[1]} · 댓글 ${c.댓글[0]}/${c.댓글[1]}`
-      + (pend ? ` · 대기 ${pend}장(판독 불가 제외, 다음 실행에서 계속)` : ' · 대기 없음'));
+      + (pend ? ` · 대기 ${pend}장(판독 불가 제외, 다음 실행에서 계속)` : ' · 대기 없음')
+      + (thumbUsed ? ` · 큰 사진 ${thumbUsed}장은 슬랙 축소본으로 판독` : ''));
+    if (ocrHalt) console.log(`⛔ 이번 실행 판독 중단 — HTTP ${ocrHalt.status}: ${ocrHalt.message}\n`
+      + `   해결 전까지 대기 ${pend}장은 그대로 남습니다(데이터는 보존되고, 풀리면 자동으로 이어서 판독합니다).`);
   }
   try { fs.rmSync(DRIVE_TMP, { recursive: true, force: true }); } catch (e) {}
   console.log(`✅ ${OUT} 갱신: 요청 ${capped.length}건 (완료 ${byStatus.done || 0} · 확인중 ${byStatus.confirm || 0} · 대기 ${byStatus.wait || 0} · 중복 ${byStatus.dup || 0}) v${data.version}`);
