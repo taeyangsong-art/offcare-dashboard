@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 570,
- "updatedAt": "2026-08-12 13:32",
+ "version": 571,
+ "updatedAt": "2026-08-12 13:47",
  "days": 30,
  "items": [
   {
@@ -645,7 +645,6 @@ window.MENU_REQUESTS = {
      "name": "61141.jpg",
      "fid": "F0BPP8LG2GZ",
      "from": "댓글",
-     "path": "menu-files/1786499983_486809-0.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -653,21 +652,21 @@ window.MENU_REQUESTS = {
        "name": "원산지",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1786499983_486809-0.jpg"
     },
     {
      "name": "61132 (1).jpg",
      "fid": "F0BQFLKPUAC",
      "from": "댓글",
-     "path": "menu-files/1786499983_486809-1.jpg",
      "kind": "pos_screen",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1786499983_486809-1.jpg"
     },
     {
      "name": "61133 (1).jpg",
      "fid": "F0BP5UP34SK",
      "from": "댓글",
-     "path": "menu-files/1786499983_486809-2.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -730,13 +729,13 @@ window.MENU_REQUESTS = {
        "name": "동태탕",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1786499983_486809-2.jpg"
     },
     {
      "name": "61134.jpg",
      "fid": "F0BPHP3KNKF",
      "from": "댓글",
-     "path": "menu-files/1786499983_486809-3.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -784,19 +783,333 @@ window.MENU_REQUESTS = {
        "name": "아구지리탕",
        "price": 10000
       }
-     ]
+     ],
+     "path": "menu-files/1786499983_486809-3.jpg"
     },
     {
      "name": "61137.jpg",
      "fid": "F0BQFLM7BKJ",
      "from": "댓글",
-     "path": "menu-files/1786499983_486809-4.jpg"
+     "path": "menu-files/1786499983_486809-4.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "찬란한 한상",
+       "name": "찬란한 2인 한상",
+       "price": 62000
+      },
+      {
+       "category": "찬란한 한상",
+       "name": "찬란한 3인 한상",
+       "price": 85000
+      },
+      {
+       "category": "찬란한 한상",
+       "name": "찬란한 4인 한상",
+       "price": 109000
+      },
+      {
+       "category": "찬란한 한상",
+       "name": "볶음밥 1인",
+       "price": 0
+      },
+      {
+       "category": "찬란한 한상",
+       "name": "볶음밥2인",
+       "price": 0
+      },
+      {
+       "category": "찬란한 한상",
+       "name": "볶음밥3인",
+       "price": 0
+      },
+      {
+       "category": "찬란한 한상",
+       "name": "2인한상할인",
+       "price": -6000
+      },
+      {
+       "category": "찬란한 한상",
+       "name": "3인한상할인",
+       "price": -8000
+      },
+      {
+       "category": "찬란한 한상",
+       "name": "4인한상할인",
+       "price": -10000
+      }
+     ]
     },
     {
      "name": "61135.jpg",
      "fid": "F0BPKB9Q7ML",
      "from": "댓글",
-     "path": "menu-files/1786499983_486809-5.jpg"
+     "path": "menu-files/1786499983_486809-5.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "튀김",
+       "name": "새우튀김(4p)",
+       "price": 5000
+      },
+      {
+       "category": "튀김",
+       "name": "크랩튀김(4p)",
+       "price": 6000
+      },
+      {
+       "category": "튀김",
+       "name": "오징어튀김(4p)",
+       "price": 6000
+      },
+      {
+       "category": "튀김",
+       "name": "왕만두튀김(4p)",
+       "price": 7000
+      },
+      {
+       "category": "튀김",
+       "name": "(미니)수제 아구 순살튀김",
+       "price": 12000
+      },
+      {
+       "category": "튀김",
+       "name": "수제 아구 순살튀김",
+       "price": 21000
+      },
+      {
+       "category": "튀김",
+       "name": "리뷰 순살튀김 6P",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "61136.jpg",
+     "fid": "F0BP5UR103Z",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "추가메뉴",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "추가메뉴",
+       "name": "볶음밥",
+       "price": 3000
+      },
+      {
+       "category": "추가메뉴",
+       "name": "계란찜",
+       "price": 4000
+      },
+      {
+       "category": "추가메뉴",
+       "name": "서비스계란찜",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "61138.jpg",
+     "fid": "F0BQFLQ05LG",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "찬란한 생아구찜",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "초신선 생아구수육",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "61139.jpg",
+     "fid": "F0BPR10C7N0",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "음료/주류",
+       "name": "코카콜라",
+       "price": 2000
+      },
+      {
+       "category": "음료/주류",
+       "name": "스프라이트",
+       "price": 2000
+      },
+      {
+       "category": "음료/주류",
+       "name": "제로코카콜라",
+       "price": 2000
+      },
+      {
+       "category": "음료/주류",
+       "name": "막걸리",
+       "price": 6000
+      },
+      {
+       "category": "음료/주류",
+       "name": "처음처럼",
+       "price": 6000
+      },
+      {
+       "category": "음료/주류",
+       "name": "진로이즈백",
+       "price": 6000
+      },
+      {
+       "category": "음료/주류",
+       "name": "처음처럼 새로",
+       "price": 6000
+      },
+      {
+       "category": "음료/주류",
+       "name": "참이슬 후레시",
+       "price": 6000
+      },
+      {
+       "category": "음료/주류",
+       "name": "청하",
+       "price": 6000
+      },
+      {
+       "category": "음료/주류",
+       "name": "테라",
+       "price": 6000
+      },
+      {
+       "category": "음료/주류",
+       "name": "카스",
+       "price": 6000
+      },
+      {
+       "category": "음료/주류",
+       "name": "켈리",
+       "price": 6000
+      },
+      {
+       "category": "음료/주류",
+       "name": "복분자주",
+       "price": 20000
+      },
+      {
+       "category": "음료/주류",
+       "name": "레몬",
+       "price": 3000
+      },
+      {
+       "category": "음료/주류",
+       "name": "참이슬 오리지널",
+       "price": 6000
+      },
+      {
+       "category": "음료/주류",
+       "name": "진로골드",
+       "price": 4000
+      },
+      {
+       "category": "음료/주류",
+       "name": "리뷰 주류 할인",
+       "price": -3000
+      }
+     ]
+    },
+    {
+     "name": "61140.jpg",
+     "fid": "F0BP5UTJ1RD",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "직원호출",
+       "name": "직원호출",
+       "price": 0
+      },
+      {
+       "category": "직원호출",
+       "name": "물",
+       "price": 0
+      },
+      {
+       "category": "직원호출",
+       "name": "앞치마",
+       "price": 0
+      },
+      {
+       "category": "직원호출",
+       "name": "맥주잔",
+       "price": 0
+      },
+      {
+       "category": "직원호출",
+       "name": "소주잔",
+       "price": 0
+      },
+      {
+       "category": "직원호출",
+       "name": "김",
+       "price": 0
+      },
+      {
+       "category": "직원호출",
+       "name": "김치",
+       "price": 0
+      },
+      {
+       "category": "직원호출",
+       "name": "냉콩나물국",
+       "price": 0
+      },
+      {
+       "category": "직원호출",
+       "name": "어묵볶음",
+       "price": 0
+      },
+      {
+       "category": "직원호출",
+       "name": "연두부",
+       "price": 0
+      },
+      {
+       "category": "직원호출",
+       "name": "와사비",
+       "price": 0
+      },
+      {
+       "category": "직원호출",
+       "name": "가위",
+       "price": 0
+      },
+      {
+       "category": "직원호출",
+       "name": "집게",
+       "price": 0
+      },
+      {
+       "category": "직원호출",
+       "name": "국자",
+       "price": 0
+      },
+      {
+       "category": "직원호출",
+       "name": "물잔",
+       "price": 0
+      },
+      {
+       "category": "직원호출",
+       "name": "물티슈",
+       "price": 0
+      }
+     ]
     }
    ],
    "datt": [],
@@ -847,7 +1160,115 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BPASQ6XEZ",
      "from": "댓글",
-     "path": "menu-files/1786440649_412099-0.png"
+     "path": "menu-files/1786440649_412099-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "붕어+분식+치킨",
+       "name": "닭다리3+감튀300g",
+       "price": 23800
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "후라이드순살+감튀250g",
+       "price": 22000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "매콤달콤국물떡볶이",
+       "price": 10000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "국물꾸덕로제떡볶이",
+       "price": 10000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "매콤닭다리1조각",
+       "price": 6600
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "순살후라이드6조각",
+       "price": 6600
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "감자통모짜스틱2개",
+       "price": 4600
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "감자튀김",
+       "price": 5000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "팥붕",
+       "price": 1500
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "슈붕",
+       "price": 1500
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "아붕",
+       "price": 2000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "초붕",
+       "price": 2000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "애붕",
+       "price": 2000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "피붕",
+       "price": 2000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "호떡붕",
+       "price": 2000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "고붕",
+       "price": 2000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "호팥붕",
+       "price": 2000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "고피붕",
+       "price": 2000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "옥치붕",
+       "price": 2000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "모치붕",
+       "price": 2000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "크치붕",
+       "price": 2000
+      }
+     ]
     }
    ],
    "datt": [],
@@ -875,7 +1296,44 @@ window.MENU_REQUESTS = {
    ],
    "files": 0,
    "att": [],
-   "datt": [],
+   "datt": [
+    {
+     "id": "1Gk5Wl6CgObWAVb0zraCzqo4qZbmk_N4-",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "BEER",
+       "name": "Budweisr",
+       "price": 9000
+      },
+      {
+       "category": "BEER",
+       "name": "Corona",
+       "price": 10000
+      },
+      {
+       "category": "BEER",
+       "name": "Heineken",
+       "price": 10000
+      },
+      {
+       "category": "BEER",
+       "name": "Hoegaarden",
+       "price": 10000
+      },
+      {
+       "category": "BEER",
+       "name": "cass zero",
+       "price": 8000
+      },
+      {
+       "category": "BEER",
+       "name": "cass zero lemon",
+       "price": 8000
+      }
+     ]
+    }
+   ],
    "replies": [],
    "rc": 1,
    "lr": "1786440262.747449",
@@ -923,13 +1381,69 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BPG6DLUCR",
      "from": "댓글",
-     "path": "menu-files/1786433704_425749-0.png"
+     "path": "menu-files/1786433704_425749-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "반반 고르곤졸라",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "반반 루꼴라",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "반반 마르게리따",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "반반 프로슈토",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "반반 피칸테",
+       "price": 0
+      }
+     ]
     },
     {
      "name": "image.png",
      "fid": "F0BPHURS1B6",
      "from": "댓글",
-     "path": "menu-files/1786433704_425749-1.png"
+     "path": "menu-files/1786433704_425749-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "옵션",
+       "name": "반반 고르곤졸라",
+       "price": 0
+      },
+      {
+       "category": "옵션",
+       "name": "반반 루꼴라",
+       "price": 0
+      },
+      {
+       "category": "옵션",
+       "name": "반반 마르게리따",
+       "price": 0
+      },
+      {
+       "category": "옵션",
+       "name": "반반 프로슈토",
+       "price": 0
+      },
+      {
+       "category": "옵션",
+       "name": "반반 피칸테",
+       "price": 0
+      }
+     ]
     }
    ],
    "datt": [],
@@ -1022,7 +1536,50 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BPCR9SHUJ",
      "from": "댓글",
-     "path": "menu-files/1786423674_596459-1.png"
+     "path": "menu-files/1786423674_596459-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "붕어+분식+치킨",
+       "name": "닭다리3+감튀300g",
+       "price": 23800
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "후라이드순살+감튀250g",
+       "price": 22000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "매콤달콤국물떡볶이",
+       "price": 10000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "국물꾸덕로제떡볶이",
+       "price": 10000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "매콤닭다리1조각",
+       "price": 6600
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "순살후라이드6조각",
+       "price": 6600
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "감자통모짜스틱2개",
+       "price": 4600
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "감자튀김",
+       "price": 5000
+      }
+     ]
     },
     {
      "name": "image.png",
@@ -1067,6 +1624,119 @@ window.MENU_REQUESTS = {
       }
      ],
      "path": "menu-files/1786423674_596459-2.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BQ79JLREC",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "붕어+분식+치킨",
+       "name": "닭다리3+감튀300g",
+       "price": 23800
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "후라이드순살+감튀250g",
+       "price": 22000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "매콤달콤국물떡볶이",
+       "price": 10000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "국물꾸덕로제떡볶이",
+       "price": 10000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "매콤닭다리1조각",
+       "price": 6600
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "순살후라이드6조각",
+       "price": 6600
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "감자통모짜스틱2개",
+       "price": 4600
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "감자튀김",
+       "price": 5000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "팥붕",
+       "price": 1500
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "슈붕",
+       "price": 1500
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "아붕",
+       "price": 2000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "초붕",
+       "price": 2000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "애붕",
+       "price": 2000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "피붕",
+       "price": 2000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "호떡붕",
+       "price": 2000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "고붕",
+       "price": 2000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "호팥붕",
+       "price": 2000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "고피붕",
+       "price": 2000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "옥치붕",
+       "price": 2000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "모치붕",
+       "price": 2000
+      },
+      {
+       "category": "붕어+분식+치킨",
+       "name": "크치붕",
+       "price": 2000
+      }
+     ]
     }
    ],
    "datt": [],
@@ -20594,31 +21264,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783919917728259"
-  },
-  {
-   "ts": "1783917772.421649",
-   "date": "2026-07-13",
-   "time": "13:42",
-   "store": "피자마루 양산중앙점",
-   "biz": "6971201126",
-   "pos": "",
-   "content": "메뉴",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "기다려^^",
-    "피자집각오했겠지",
-    "ㅇㅇ 야근하자"
-   ],
-   "rc": 20,
-   "lr": "1783937482.814749",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783917772421649"
   }
  ],
  "ocr": {
