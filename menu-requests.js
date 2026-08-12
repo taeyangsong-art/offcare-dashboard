@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 564,
- "updatedAt": "2026-08-12 11:30",
+ "version": 565,
+ "updatedAt": "2026-08-12 11:45",
  "days": 30,
  "items": [
   {
@@ -24,7 +24,7 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1786501797.813919",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786501794815639"
   },
@@ -101,9 +101,11 @@ window.MENU_REQUESTS = {
     }
    ],
    "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1786501025.336869",
+   "replies": [
+    "테이블만 해주면 될듯!"
+   ],
+   "rc": 5,
+   "lr": "1786502417.075289",
    "rfx": 3,
    "status": "done",
    "handler": "김규빈",
@@ -19472,7 +19474,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 4,
    "lr": "1783929037.951399",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "서상원",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783927076129839"
@@ -19571,7 +19573,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 4,
    "lr": "1783929868.537669",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783927072174089"
@@ -19594,7 +19596,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 4,
    "lr": "1783929083.770769",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783925128229169"
@@ -19617,7 +19619,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1783928989.838869",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783924382476139"
@@ -19687,7 +19689,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1783923690.336589",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783923678158979"
@@ -19711,7 +19713,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 10,
    "lr": "1783930155.634439",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783923543485599"
@@ -19735,7 +19737,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 6,
    "lr": "1783928257.547179",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783923045644699"
@@ -19865,7 +19867,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 9,
    "lr": "1783929888.256659",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783920018875769"
@@ -19889,7 +19891,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 4,
    "lr": "1783919995.966939",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783919917728259"
@@ -19914,7 +19916,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 20,
    "lr": "1783937482.814749",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783917772421649"
@@ -19938,7 +19940,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 7,
    "lr": "1783919849.569009",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "서상원",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783914729914069"
@@ -19962,54 +19964,10 @@ window.MENU_REQUESTS = {
    ],
    "rc": 4,
    "lr": "1783917406.846569",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783911602140189"
-  },
-  {
-   "ts": "1783910101.600879",
-   "date": "2026-07-13",
-   "time": "11:35",
-   "store": "옹드 커피",
-   "biz": "1573801517",
-   "pos": "",
-   "content": "메뉴 옵션 추가 작업",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783910110.676339",
-   "rfx": 2,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783910101600879"
-  },
-  {
-   "ts": "1783910075.980539",
-   "date": "2026-07-13",
-   "time": "11:34",
-   "store": "어썸웰스파라운지 수원점(금곡)",
-   "biz": "3743900779",
-   "pos": "",
-   "content": "어썸웰스파라운지 안양명학점 ··· 과 동일하게 메뉴 복제 부탁드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "*어썸웰스파라운지 수원점(금곡) 사업자번호가* ···이건뎅  오류인가용??"
-   ],
-   "rc": 11,
-   "lr": "1783910552.942109",
-   "rfx": 2,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783910075980539"
   }
  ],
  "ocr": {
