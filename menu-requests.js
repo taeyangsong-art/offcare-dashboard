@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 574,
- "updatedAt": "2026-08-12 14:16",
+ "version": 575,
+ "updatedAt": "2026-08-12 14:32",
  "days": 30,
  "items": [
   {
@@ -8816,39 +8816,930 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BN6UH7WVD",
      "from": "댓글",
-     "path": "menu-files/1786071542_263139-0.png",
      "kind": "pos_screen",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1786071542_263139-0.png"
     },
     {
      "name": "image.png",
      "fid": "F0BNJRP3Z1B",
      "from": "댓글",
-     "path": "menu-files/1786071542_263139-1.png"
+     "path": "menu-files/1786071542_263139-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "전류",
+       "name": "골목해물파전",
+       "price": 18000
+      },
+      {
+       "category": "전류",
+       "name": "소고기김치전",
+       "price": 18000
+      },
+      {
+       "category": "전류",
+       "name": "눈꽃치즈감자전",
+       "price": 17000
+      },
+      {
+       "category": "전류",
+       "name": "해물부추전",
+       "price": 17000
+      },
+      {
+       "category": "전류",
+       "name": "불고기미나리전",
+       "price": 19000
+      },
+      {
+       "category": "전류",
+       "name": "별미 육전",
+       "price": 22000
+      },
+      {
+       "category": "전류",
+       "name": "반반전새우전&육전",
+       "price": 24000
+      },
+      {
+       "category": "전류",
+       "name": "달콤옥수수전",
+       "price": 16000
+      },
+      {
+       "category": "전류",
+       "name": "리뷰이벤트",
+       "price": 0
+      }
+     ]
     },
     {
      "name": "image.png",
      "fid": "F0BNN9QQJTU",
      "from": "댓글",
-     "path": "menu-files/1786071542_263139-2.png"
+     "path": "menu-files/1786071542_263139-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "별미",
+       "name": "고추장육회",
+       "price": 19000
+      },
+      {
+       "category": "별미",
+       "name": "삼겹살두부김치",
+       "price": 19000
+      },
+      {
+       "category": "별미",
+       "name": "오미자과일화채",
+       "price": 20000
+      },
+      {
+       "category": "별미",
+       "name": "할매팥빙수",
+       "price": 12000
+      },
+      {
+       "category": "별미",
+       "name": "보들이먹태",
+       "price": 17000
+      },
+      {
+       "category": "별미",
+       "name": "새우크림치즈퐁듀",
+       "price": 18000
+      },
+      {
+       "category": "별미",
+       "name": "금복닭강정",
+       "price": 22000
+      },
+      {
+       "category": "별미",
+       "name": "짜리고추누룽지닭강정",
+       "price": 22000
+      },
+      {
+       "category": "별미",
+       "name": "콘소메치킨",
+       "price": 22000
+      },
+      {
+       "category": "별미",
+       "name": "꼬막비빔밥육회",
+       "price": 18000
+      },
+      {
+       "category": "별미",
+       "name": "리뷰이벤트",
+       "price": 0
+      }
+     ]
     },
     {
      "name": "image.png",
      "fid": "F0BNG32C45R",
      "from": "댓글",
-     "path": "menu-files/1786071542_263139-3.png"
+     "path": "menu-files/1786071542_263139-3.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "보쌈&탕류",
+       "name": "[시그니처] 순살곱도리탕",
+       "price": 28000
+      },
+      {
+       "category": "보쌈&탕류",
+       "name": "곱복술국",
+       "price": 19000
+      },
+      {
+       "category": "보쌈&탕류",
+       "name": "차돌김치칼제비",
+       "price": 21000
+      },
+      {
+       "category": "보쌈&탕류",
+       "name": "곱복알탕",
+       "price": 22000
+      },
+      {
+       "category": "보쌈&탕류",
+       "name": "뚝배기어묵탕",
+       "price": 19000
+      },
+      {
+       "category": "보쌈&탕류",
+       "name": "삼겹호박고추장찌개",
+       "price": 19000
+      },
+      {
+       "category": "보쌈&탕류",
+       "name": "의정부 부대찌개",
+       "price": 18000
+      },
+      {
+       "category": "보쌈&탕류",
+       "name": "차돌순두부짬뽕탕",
+       "price": 22000
+      },
+      {
+       "category": "보쌈&탕류",
+       "name": "해장백짬뽕",
+       "price": 19000
+      },
+      {
+       "category": "보쌈&탕류",
+       "name": "t->마라스지무침",
+       "price": 8000
+      }
+     ]
     },
     {
      "name": "image.png",
      "fid": "F0BPGLC0R0Q",
      "from": "댓글",
-     "path": "menu-files/1786071542_263139-4.png"
+     "path": "menu-files/1786071542_263139-4.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "일품",
+       "name": "삼겹숙주볶음",
+       "price": 18000
+      },
+      {
+       "category": "일품",
+       "name": "골뱅이무침n칼빔면",
+       "price": 20000
+      },
+      {
+       "category": "일품",
+       "name": "명성돼지구이",
+       "price": 20000
+      },
+      {
+       "category": "일품",
+       "name": "육회물회",
+       "price": 18000
+      },
+      {
+       "category": "일품",
+       "name": "모짜렐라계란말이",
+       "price": 19000
+      },
+      {
+       "category": "일품",
+       "name": "오돌뼈주먹밥",
+       "price": 19000
+      },
+      {
+       "category": "일품",
+       "name": "오돌뼈주먹밥세트",
+       "price": 21000
+      },
+      {
+       "category": "일품",
+       "name": "무뼈닭발&주먹밥",
+       "price": 22000
+      },
+      {
+       "category": "일품",
+       "name": "철판치즈보쌈",
+       "price": 22000
+      },
+      {
+       "category": "일품",
+       "name": "돌판제육볶음",
+       "price": 18000
+      }
+     ]
     },
     {
      "name": "image.png",
      "fid": "F0BNS11PCKW",
      "from": "댓글",
-     "path": "menu-files/1786071542_263139-5.png"
+     "path": "menu-files/1786071542_263139-5.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "차돌된장짜글이밥",
+       "price": 8000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "순두부해장라면",
+       "price": 8000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "스팸계란밥",
+       "price": 6000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "계란찜",
+       "price": 5000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "마라스지무침",
+       "price": 8000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "라면사리",
+       "price": 2000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "칼국수사리",
+       "price": 2000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "우동사리",
+       "price": 2000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "수제비사리",
+       "price": 2000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "중화면사리",
+       "price": 2000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "메밀면사리",
+       "price": 2000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "야채추가",
+       "price": 2000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "불짜계치",
+       "price": 8000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "쥐포",
+       "price": 8000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "요구르트샤베트",
+       "price": 9000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "파인애플샤베트",
+       "price": 9000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "매콤홍집갈정",
+       "price": 12000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "오다리튀김",
+       "price": 10000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "아이스홍시",
+       "price": 6000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "깍두기빔수",
+       "price": 8000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "추억의미니돈까스",
+       "price": 8000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "어니언&감자튀김",
+       "price": 9000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "인절미구이",
+       "price": 8000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "반건오징어",
+       "price": 15000
+      },
+      {
+       "category": "간단메뉴/식사메뉴",
+       "name": "김치말이국수",
+       "price": 9000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BNLAYFKK8",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "전통주",
+       "name": "매실원주",
+       "price": 8000
+      },
+      {
+       "category": "전통주",
+       "name": "예천주럼 PHAT",
+       "price": 10000
+      },
+      {
+       "category": "전통주",
+       "name": "이강주",
+       "price": 12000
+      },
+      {
+       "category": "전통주",
+       "name": "서울의 밤",
+       "price": 14000
+      },
+      {
+       "category": "전통주",
+       "name": "만월예천주",
+       "price": 21000
+      },
+      {
+       "category": "전통주",
+       "name": "호감",
+       "price": 7000
+      },
+      {
+       "category": "전통주",
+       "name": "사랑할때",
+       "price": 8000
+      },
+      {
+       "category": "전통주",
+       "name": "지리산강쇠",
+       "price": 7000
+      },
+      {
+       "category": "전통주",
+       "name": "제주니모메",
+       "price": 16000
+      },
+      {
+       "category": "전통주",
+       "name": "고흥유자주 8도",
+       "price": 19000
+      },
+      {
+       "category": "전통주",
+       "name": "도원결의 15도",
+       "price": 12000
+      },
+      {
+       "category": "전통주",
+       "name": "신애유자",
+       "price": 10000
+      },
+      {
+       "category": "전통주",
+       "name": "도래하",
+       "price": 13000
+      },
+      {
+       "category": "전통주",
+       "name": "애피소드 상그리아",
+       "price": 8000
+      },
+      {
+       "category": "전통주",
+       "name": "애피소드 애플",
+       "price": 8000
+      },
+      {
+       "category": "전통주",
+       "name": "전통주 샘플러",
+       "price": 9900
+      },
+      {
+       "category": "전통주",
+       "name": "장수오미자주",
+       "price": 12000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BNJRS4KAR",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류",
+       "name": "참이슬",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "처음처럼",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "새로",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "진로이즈백",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "금복주",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "생맥주500cc",
+       "price": 4500
+      },
+      {
+       "category": "주류",
+       "name": "테라",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "카스",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "하이트",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "켈리",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "일품진로",
+       "price": 32000
+      },
+      {
+       "category": "주류",
+       "name": "일품진로세트",
+       "price": 35000
+      },
+      {
+       "category": "주류",
+       "name": "레몬슬라이스",
+       "price": 2000
+      },
+      {
+       "category": "주류",
+       "name": "진로골드",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "텍사스셀렉트",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "미숫가루소주500ml",
+       "price": 6000
+      },
+      {
+       "category": "주류",
+       "name": "미숫가루소주1L",
+       "price": 10000
+      },
+      {
+       "category": "주류",
+       "name": "별빛청하",
+       "price": 6000
+      },
+      {
+       "category": "주류",
+       "name": "청하",
+       "price": 6000
+      },
+      {
+       "category": "주류",
+       "name": "로제별빛청하",
+       "price": 6000
+      },
+      {
+       "category": "주류",
+       "name": "라벨5클래식블랙",
+       "price": 50000
+      },
+      {
+       "category": "주류",
+       "name": "새로 살구",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "테라라이트",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "매화수",
+       "price": 6000
+      },
+      {
+       "category": "주류",
+       "name": "백세주",
+       "price": 8000
+      },
+      {
+       "category": "주류",
+       "name": "사이다",
+       "price": 2000
+      },
+      {
+       "category": "주류",
+       "name": "콜라",
+       "price": 2000
+      },
+      {
+       "category": "주류",
+       "name": "토닉워터",
+       "price": 2000
+      },
+      {
+       "category": "주류",
+       "name": "펩시제로",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BNLAZ7GS2",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류",
+       "name": "새로다래",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "새로 오미자",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "클라우드",
+       "price": 5000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BNLB07BU6",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "막걸리",
+       "name": "한라봉슬러시막걸리1L",
+       "price": 12000
+      },
+      {
+       "category": "막걸리",
+       "name": "잔막걸리",
+       "price": 1500
+      },
+      {
+       "category": "막걸리",
+       "name": "크림막걸리 500ml",
+       "price": 7000
+      },
+      {
+       "category": "막걸리",
+       "name": "크림막걸리 1L",
+       "price": 11000
+      },
+      {
+       "category": "막걸리",
+       "name": "딸바쉑쉑막걸리500ml",
+       "price": 9000
+      },
+      {
+       "category": "막걸리",
+       "name": "알밤쉑쉑막걸리 500ml",
+       "price": 9000
+      },
+      {
+       "category": "막걸리",
+       "name": "생막걸리1L",
+       "price": 7000
+      },
+      {
+       "category": "막걸리",
+       "name": "미숫가루막걸리500ml",
+       "price": 7000
+      },
+      {
+       "category": "막걸리",
+       "name": "미숫가루막걸리1L",
+       "price": 11000
+      },
+      {
+       "category": "막걸리",
+       "name": "딸기슬러시막걸리 1L",
+       "price": 12000
+      },
+      {
+       "category": "막걸리",
+       "name": "벌꿀막걸리 1L",
+       "price": 11000
+      },
+      {
+       "category": "막걸리",
+       "name": "망고슬러시막걸리 1L",
+       "price": 12000
+      },
+      {
+       "category": "막걸리",
+       "name": "복분자슬러시막걸리 500ml",
+       "price": 8000
+      },
+      {
+       "category": "막걸리",
+       "name": "복분자슬러시막걸리 1L",
+       "price": 12000
+      },
+      {
+       "category": "막걸리",
+       "name": "꿀배막걸리",
+       "price": 6000
+      },
+      {
+       "category": "막걸리",
+       "name": "말차쉑쉑막걸리 500ml",
+       "price": 9000
+      },
+      {
+       "category": "막걸리",
+       "name": "국순당생막걸리",
+       "price": 4500
+      },
+      {
+       "category": "막걸리",
+       "name": "우도땅콩막걸리",
+       "price": 6000
+      },
+      {
+       "category": "막걸리",
+       "name": "서울 장수막걸리",
+       "price": 4500
+      },
+      {
+       "category": "막걸리",
+       "name": "지평생막걸리",
+       "price": 5000
+      },
+      {
+       "category": "막걸리",
+       "name": "호랑이생막걸리",
+       "price": 6000
+      },
+      {
+       "category": "막걸리",
+       "name": "바나나쉑쉑막걸리 500ml",
+       "price": 9000
+      },
+      {
+       "category": "막걸리",
+       "name": "오레오쉑쉑막걸리 500ml",
+       "price": 9000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BNJRUFMNH",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "막걸리",
+       "name": "한라봉슬러시막걸리",
+       "price": 8000
+      },
+      {
+       "category": "막걸리",
+       "name": "딸기슬러시막걸리 50",
+       "price": 8000
+      },
+      {
+       "category": "막걸리",
+       "name": "망고슬러시막걸리 50",
+       "price": 8000
+      },
+      {
+       "category": "막걸리",
+       "name": "복분자슬러시막걸리",
+       "price": 8000
+      },
+      {
+       "category": "막걸리",
+       "name": "바나나쉑쉑막걸리 50",
+       "price": 9000
+      },
+      {
+       "category": "막걸리",
+       "name": "오레오쉑쉑막걸리 50",
+       "price": 9000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BNLB0QUKY",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "하이볼",
+       "name": "얼그레이하이볼",
+       "price": 7500
+      },
+      {
+       "category": "하이볼",
+       "name": "블루레몬하이볼",
+       "price": 7500
+      },
+      {
+       "category": "하이볼",
+       "name": "복분자하이볼",
+       "price": 7500
+      },
+      {
+       "category": "하이볼",
+       "name": "한라봉하이볼",
+       "price": 7500
+      },
+      {
+       "category": "하이볼",
+       "name": "복소사",
+       "price": 7500
+      },
+      {
+       "category": "하이볼",
+       "name": "일품하이볼",
+       "price": 8500
+      },
+      {
+       "category": "하이볼",
+       "name": "담금주 하이볼(복분자)",
+       "price": 10000
+      },
+      {
+       "category": "하이볼",
+       "name": "담금주 하이볼(한라봉)",
+       "price": 10000
+      },
+      {
+       "category": "하이볼",
+       "name": "얼그레이하이볼논알콜",
+       "price": 7500
+      },
+      {
+       "category": "하이볼",
+       "name": "블루레몬하이볼논알콜",
+       "price": 7500
+      },
+      {
+       "category": "하이볼",
+       "name": "복분자하이볼논알콜",
+       "price": 7500
+      },
+      {
+       "category": "하이볼",
+       "name": "한라봉하이볼논알콜",
+       "price": 7500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BNLB1LFFY",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "한라봉슬러시막걸리",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "딸기슬러시막걸리",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "망고슬러시막걸리",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "복분자슬러시막걸리",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "바나나쉑쉑막걸리",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "오레오쉑쉑막걸리",
+       "price": 9000
+      },
+      {
+       "category": "세트메뉴",
+       "name": "차돌순두부짬뽕탕+삼겹두부김치",
+       "price": 31000
+      },
+      {
+       "category": "세트메뉴",
+       "name": "보들이먹태+매콤똥집강정",
+       "price": 22000
+      }
+     ]
     }
    ],
    "datt": [],
@@ -22982,160 +23873,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783923045644699"
-  },
-  {
-   "ts": "1783920018.875769",
-   "date": "2026-07-13",
-   "time": "14:20",
-   "store": "보사노바커피 잠실점",
-   "biz": "5178501144",
-   "pos": "토스포스",
-   "content": "메뉴판의 tea카테고리의 로네펠트티- 얼그레이/우롱피치/캐모마일/페퍼민트 개별 메뉴로 생성 요청",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/open?id=1996mPUeGOq1H_ypTu2Eg9zfAL3dR6g71",
-    "https://drive.google.com/open?id=1TkuLfMPdIdy53B5jXaizup5z_fG_gqnj"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "1TkuLfMPdIdy53B5jXaizup5z_fG_gqnj",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "Espresso",
-       "name": "에스프레소",
-       "price": 4500
-      },
-      {
-       "category": "Espresso",
-       "name": "아메리카노",
-       "price": 4500
-      },
-      {
-       "category": "Espresso",
-       "name": "카페라떼",
-       "price": 5000
-      },
-      {
-       "category": "Espresso",
-       "name": "카푸치노",
-       "price": 5000
-      },
-      {
-       "category": "Espresso",
-       "name": "바닐라라떼",
-       "price": 5400
-      },
-      {
-       "category": "Espresso",
-       "name": "스페니쉬라떼",
-       "price": 5400
-      },
-      {
-       "category": "Cold Brew",
-       "name": "콜드브루",
-       "price": 5000
-      },
-      {
-       "category": "Cold Brew",
-       "name": "콜드브루라떼",
-       "price": 5500
-      },
-      {
-       "category": "Signature",
-       "name": "피넛버터라떼",
-       "price": 5800
-      },
-      {
-       "category": "Signature",
-       "name": "큐브밀크티",
-       "price": 5500
-      },
-      {
-       "category": "Non Coffee",
-       "name": "얼그레이밀크티",
-       "price": 5200
-      },
-      {
-       "category": "Non Coffee",
-       "name": "밀크코코아",
-       "price": 5500
-      },
-      {
-       "category": "Non Coffee",
-       "name": "청귤티",
-       "price": 5500
-      },
-      {
-       "category": "Non Coffee",
-       "name": "딸기라떼",
-       "price": 6500
-      },
-      {
-       "category": "Non Coffee",
-       "name": "자몽피치아이스티",
-       "price": 5500
-      },
-      {
-       "category": "Non Coffee",
-       "name": "청귤에이드",
-       "price": 6500
-      },
-      {
-       "category": "Tea",
-       "name": "로네펠트티 (얼그레이/ 우롱피치/ 캐모마일/페퍼민트)",
-       "price": 5500
-      },
-      {
-       "category": "Tea",
-       "name": "보사노바 티 로즈베리",
-       "price": 5500
-      }
-     ]
-    }
-   ],
-   "replies": [
-    "아직 토플파가 없음",
-    "cc",
-    "님 시간 괜찮으실 때 해당매장 토플파 생성 부탁드리겠습니다~ :감사합니다꾸벅:",
-    "https://partners.tossplace.com/merchants/548451?shouldRegisterVanCode=false&isFirstEntry=true 생성 완료했습니다!",
-    "첫번째 파일은 안열림 두번째 메뉴판만 작업 완료",
-    "보사노바 커피로스터스 양정모 과장 (티피와이)\n<tel:···|···>\n위의 번호로 소통 부탁드립니다",
-    "통화완료",
-    "티메뉴 4개 이미지 없음 제외 완료"
-   ],
-   "rc": 9,
-   "lr": "1783929888.256659",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783920018875769"
-  },
-  {
-   "ts": "1783919917.728259",
-   "date": "2026-07-13",
-   "time": "14:18",
-   "store": "카페케이(Cafe K)1997",
-   "biz": "4661002963",
-   "pos": "토스포스",
-   "content": "메뉴등록 요청드립니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "*만주&와플* 카테고리와 메뉴는 등록만 해주시고 금액은 100원으로 지정해주시면 대표자분이 직접 변경하실 예정입니다",
-    "가오픈 상황이라 가급적 긴급하게 요청드립니다"
-   ],
-   "rc": 4,
-   "lr": "1783919995.966939",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783919917728259"
   }
  ],
  "ocr": {

@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3362,
+  "version": 3363,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -102158,12 +102158,12 @@ window.SLACK_DATA = {
     "2026-08-12": {
       "counts": {
         "as": {
-          "송태양": 7,
+          "심성현": 16,
+          "송태양": 8,
+          "김동욱": 10,
           "배선유": 7,
-          "심성현": 15,
           "고경림": 10,
           "김현기": 13,
-          "김동욱": 9,
           "김규빈": 4
         },
         "onboarding": {
@@ -102184,7 +102184,7 @@ window.SLACK_DATA = {
           "심성현": 1
         },
         "menu": {
-          "배선유": 2,
+          "배선유": 3,
           "김규빈": 3
         },
         "delivery": {
@@ -102217,6 +102217,50 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "14:17",
+          "store": "딱풀리는수학 장락수학교습소",
+          "biz": "5779102296",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "휴대푠/포프 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료 키오스크 모드 사용 방법 안내 완료"
+        },
+        {
+          "time": "14:15",
+          "store": "샌드위치히어로 성수점",
+          "biz": "6438603550",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "프론트 간헐적 끊김으로 재온보딩 필요",
+          "hw": "",
+          "intake": "offline",
+          "note": "• 로그아웃 후 재온보딩 완료 • 추후 동일증상 시 프론트 교체 안내 및 교체 후에도 동일증상일 시 통신점검 받아보셔야 함 안내 로그아웃 후 재온보딩 완료 추후 동일증상 시 프론트 교체 안내 및 교체 후에도 동일증상일 시 통신점검 받아보셔야 함 안내"
+        },
+        {
+          "time": "14:11",
+          "store": "",
+          "biz": "",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "*  대용량 첨부 1개 4MB  IMG_1818.jpeg 4314046 ~ 2026/09/11 기한이 있는 파일은 30일 보관 / 100회 다운로드 가능",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / / 7157700462"
+        },
+        {
+          "time": "14:04",
+          "store": "우마이크레페 망미점",
+          "biz": "1213393444",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "• 유튜브 소리가 들리지않음, 선이 빠진듯하나 어떤 선인지 확인불가",
+          "hw": "",
+          "intake": "online",
+          "note": "앰프가 USB로 변경되어있었음. 배달알림음 5회로 변경완료"
+        },
         {
           "time": "14:00",
           "store": "네일,모해",
@@ -103358,11 +103402,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 87,
-        "offline": 18,
+        "online": 90,
+        "offline": 19,
         "unknown": 0
       },
-      "updatedAt": "14:15",
+      "updatedAt": "14:30",
       "voc": {
         "responses": 1,
         "install": {
@@ -103428,17 +103472,49 @@ window.SLACK_DATA = {
         "praises": []
       },
       "ob": {
-        "count": 5,
+        "count": 9,
         "byEmp": {
-          "김규빈": 5
+          "김규빈": 9
         },
         "items": [
+          {
+            "key": "2026년 8월 12일 오전 8:51:33|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785824643957139#1",
+            "handler": "김규빈",
+            "status": "점주직접접수",
+            "recvDate": "2026-08-12",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785824643957139"
+          },
+          {
+            "key": "2026년 8월 12일 오전 8:42:19|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785827145112989#1",
+            "handler": "김규빈",
+            "status": "점주직접접수",
+            "recvDate": "2026-08-12",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785827145112989"
+          },
+          {
+            "key": "2026년 8월 12일 오전 8:35:25|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786155559726339#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-12",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786155559726339"
+          },
+          {
+            "key": "2026년 8월 12일 오전 8:25:34|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786346570964469#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-12",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786346570964469"
+          },
           {
             "key": "2026년 8월 12일 오전 8:25:10|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786422837898519#1",
             "handler": "김규빈",
             "status": "일정등록완료",
             "recvDate": "2026-08-12",
-            "planDate": "",
+            "planDate": "2026-08-19",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786422837898519"
           },
           {
@@ -103515,9 +103591,13 @@ window.SLACK_DATA = {
         "post": "1786507202.997419",
         "lastSeen": 1786507231.643
       },
-      "1786511700.924789": {
-        "post": "1786511700.924789",
-        "lastSeen": 1786511724.099
+      "1786512600.320499": {
+        "post": "1786512600.320499",
+        "lastSeen": 1786512628.443
+      },
+      "1786512516.256949": {
+        "post": "1786512516.256949",
+        "lastSeen": 1786512628.443
       }
     },
     "days": {
@@ -124745,8 +124825,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-12": {
-        "cnt": 34,
-        "sumMin": 317.12965507904687,
+        "cnt": 35,
+        "sumMin": 325.0520919283231,
         "over": 1,
         "items": [
           {
@@ -125020,27 +125100,35 @@ window.SLACK_DATA = {
             "biz": "8790503602",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "14:15",
+            "min": 7.9,
+            "store": "샌드위치히어로 성수점",
+            "biz": "6438603550",
+            "who": "송태양",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-12 14:15",
+    "at": "2026-08-12 14:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3480,
-    "named": 169,
+    "named": 173,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 169,
+    "done": 173,
     "byStatus": {
       "일정등록완료": 100,
-      "1차부재": 41,
-      "점주직접접수": 16,
+      "1차부재": 43,
+      "점주직접접수": 18,
       "설치불가": 5,
       "(빈칸)": 2,
       "자가설치": 4,
