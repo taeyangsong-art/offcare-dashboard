@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 598,
- "updatedAt": "2026-08-12 20:30",
+ "version": 599,
+ "updatedAt": "2026-08-13 00:47",
  "days": 30,
  "items": [
   {
@@ -26124,29 +26124,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783964912839089"
-  },
-  {
-   "ts": "1783957405.345389",
-   "date": "2026-07-14",
-   "time": "00:43",
-   "store": "이자카야 문",
-   "biz": "6450303081",
-   "pos": "기타",
-   "content": "메뉴 4개 추가 요청\n- (무침&초회) 민어회 마끼 16,000원 추가\n- (사이드메뉴) 맥반석 오징어&스낵 9,000원 추가\n                      망고 샤베트 5,000원 추가\n                      레몬 샤베트 5,000원 추가",
-   "special": "17시 영업 전 까지 부탁 드립니다.",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "완"
-   ],
-   "rc": 2,
-   "lr": "1783985866.345839",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783957405345389"
   }
  ],
  "ocr": {
