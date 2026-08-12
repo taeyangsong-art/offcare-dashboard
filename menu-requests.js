@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 571,
- "updatedAt": "2026-08-12 13:47",
+ "version": 572,
+ "updatedAt": "2026-08-12 14:02",
  "days": 30,
  "items": [
   {
@@ -5334,25 +5334,618 @@ window.MENU_REQUESTS = {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDgxMF8xNjAyND",
      "fid": "F0BP19M73L5",
      "from": "댓글",
-     "path": "menu-files/1786347716_291909-2.jpeg"
+     "path": "menu-files/1786347716_291909-2.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류.음료(매장용)",
+       "name": "생맥주500",
+       "price": 4500
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "생맥주1500",
+       "price": 13000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "생맥주2800",
+       "price": 21000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "생맥주1000cc",
+       "price": 9000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "카스제로",
+       "price": 5000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "카스",
+       "price": 5000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "테라",
+       "price": 5000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "카프리",
+       "price": 5000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "버드와이즈",
+       "price": 5000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "한맥",
+       "price": 5000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "대선",
+       "price": 5000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "좋은데이",
+       "price": 5000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "진로(이즈백)",
+       "price": 5000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "시원",
+       "price": 5000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "참이슬",
+       "price": 5000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "콜라(병)",
+       "price": 2000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "사이다",
+       "price": 2000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "환타(파인애플)",
+       "price": 2000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "스타우드",
+       "price": 5000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "진로와인",
+       "price": 8000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "콜라500ml",
+       "price": 2000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "콜라1.25L",
+       "price": 3000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "환타(오렌지)",
+       "price": 2000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "스프라이트500ml",
+       "price": 2000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "스프라이트1.5L",
+       "price": 3000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "제로콜라500ml",
+       "price": 2000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "제로콜라1.25L",
+       "price": 3500
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "오렌지주스(350ml)",
+       "price": 4000
+      },
+      {
+       "category": "주류.음료(매장용)",
+       "name": "포도주스(350ml)",
+       "price": 4000
+      }
+     ]
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDgxMF8xNjAyNT",
      "fid": "F0BP19MV4E9",
      "from": "댓글",
-     "path": "menu-files/1786347716_291909-3.jpeg"
+     "path": "menu-files/1786347716_291909-3.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "컵라면",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "컵라면",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "컵라면",
+       "price": 1500
+      },
+      {
+       "category": "",
+       "name": "파샐러드 추가",
+       "price": 2500
+      },
+      {
+       "category": "",
+       "name": "뼈없는닭발",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "뼈없는닭발",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "파샐러드추가",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "감자튀김",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "감자튀김",
+       "price": 7000
+      },
+      {
+       "category": "",
+       "name": "치즈스틱6게",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "달콤치즈볼5개",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "똥집 후라이드",
+       "price": 10000
+      }
+     ]
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDgxMF8xNjAzND",
      "fid": "F0BP6MV6JD7",
      "from": "댓글",
-     "path": "menu-files/1786347716_291909-4.jpeg"
+     "path": "menu-files/1786347716_291909-4.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "순살파닭 한마리반(2가지맛)",
+       "price": 37000
+      },
+      {
+       "category": "",
+       "name": "순살파닭 한마리반(3가지맛)",
+       "price": 38000
+      },
+      {
+       "category": "",
+       "name": "순살후라이드파닭(한마리반)",
+       "price": 36000
+      },
+      {
+       "category": "",
+       "name": "1인용후라이드파닭",
+       "price": 14000
+      },
+      {
+       "category": "",
+       "name": "1인용(간장or양념)파닭한마리",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "순살치킨 한마리반",
+       "price": 35000
+      },
+      {
+       "category": "",
+       "name": "순살치킨 한마리반(3가지맛)",
+       "price": 36000
+      },
+      {
+       "category": "",
+       "name": "1인용(후라이드)",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "1인용(양념or간장)치킨",
+       "price": 14000
+      },
+      {
+       "category": "",
+       "name": "추가요금",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "추가요금",
+       "price": 2000
+      }
+     ]
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDgxMF8xNjAzND",
      "fid": "F0BNYGQG4LB",
      "from": "댓글",
-     "path": "menu-files/1786347716_291909-5.jpeg"
+     "path": "menu-files/1786347716_291909-5.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "생맥주 500cc",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "생맥주 1000cc",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "소주류",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "맥주류",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "코카콜라 500ml",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "코카콜라 1.25ml",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "배달비",
+       "price": 3200
+      },
+      {
+       "category": "",
+       "name": "배달비",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "배달비",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "배달비",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "오비라거",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "배달비",
+       "price": 3300
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDgxMF8xNjA0MD",
+     "fid": "F0BP2QJK75L",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "똥집후라이드(중)",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "똥집후라이드(대)",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "감자튀김",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "치즈스틱5개",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "달콤치즈볼4개",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "양념추가",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "무우추가",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "머스타드추가",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "파샐러드추가",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "추가",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "추가",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "김치사발면",
+       "price": 1500
+      },
+      {
+       "category": "",
+       "name": "육개장컵라면",
+       "price": 1500
+      },
+      {
+       "category": "",
+       "name": "콜라 500ml",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "콜라 1.25L",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "스프라이트1.5L",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "콜라1.25L변경시",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "스프라이트1.5L변경",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "쌩맥주 500cc",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "쌩맥주 1.000cc",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "배달비",
+       "price": 2900
+      },
+      {
+       "category": "",
+       "name": "배달비",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "배달비",
+       "price": 3300
+      },
+      {
+       "category": "",
+       "name": "배달비",
+       "price": 3400
+      },
+      {
+       "category": "",
+       "name": "배달비",
+       "price": 3500
+      },
+      {
+       "category": "",
+       "name": "배달비",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "배달비",
+       "price": 4500
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDgxMF8xNjA0MT",
+     "fid": "F0BPZ6LK40Y",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "1인메뉴(간장)",
+       "price": 17000
+      },
+      {
+       "category": "",
+       "name": "1인메뉴(매장)",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "1인메뉴(매장)",
+       "price": 14000
+      },
+      {
+       "category": "",
+       "name": "1인메뉴(매장)",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "파샐러드추가",
+       "price": 2500
+      },
+      {
+       "category": "",
+       "name": "1인셋트메뉴(후라이드)",
+       "price": 14000
+      },
+      {
+       "category": "",
+       "name": "1인셋트메뉴(간장)",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "1인셋트메뉴(양념)",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "1인메뉴(후라이드)",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "1인메뉴(양념)",
+       "price": 14000
+      },
+      {
+       "category": "",
+       "name": "배달비",
+       "price": 1500
+      },
+      {
+       "category": "",
+       "name": "배달비",
+       "price": 3400
+      },
+      {
+       "category": "",
+       "name": "배달비",
+       "price": 2500
+      },
+      {
+       "category": "",
+       "name": "배달비",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "배달비",
+       "price": 3500
+      },
+      {
+       "category": "",
+       "name": "배달비",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "배달비",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "배달비",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "할증요금",
+       "price": 300
+      },
+      {
+       "category": "",
+       "name": "할증료",
+       "price": 500
+      }
+     ]
     }
    ],
    "datt": [],
@@ -5380,7 +5973,180 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BNYBHAY9H",
      "from": "댓글",
-     "path": "menu-files/1786346071_016949-0.png"
+     "path": "menu-files/1786346071_016949-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "김밥조",
+       "name": "깐깐한 김밥조",
+       "price": 5500
+      },
+      {
+       "category": "김밥조",
+       "name": "돈까스 김밥",
+       "price": 5000
+      },
+      {
+       "category": "김밥조",
+       "name": "소불고기 김밥",
+       "price": 5000
+      },
+      {
+       "category": "김밥조",
+       "name": "참치샐러드 김밥",
+       "price": 5000
+      },
+      {
+       "category": "김밥조",
+       "name": "참치치즈 김밥",
+       "price": 5000
+      },
+      {
+       "category": "김밥조",
+       "name": "진미김밥",
+       "price": 5000
+      },
+      {
+       "category": "김밥조",
+       "name": "매운멸치김밥",
+       "price": 4500
+      },
+      {
+       "category": "김밥조",
+       "name": "땡초김밥",
+       "price": 4000
+      },
+      {
+       "category": "김밥조",
+       "name": "치즈김밥",
+       "price": 4300
+      },
+      {
+       "category": "김밥조",
+       "name": "야채김밥",
+       "price": 3500
+      },
+      {
+       "category": "김밥조",
+       "name": "김밥+사이드+음료",
+       "price": 14000
+      },
+      {
+       "category": "김밥조",
+       "name": "수제등심왕돈까스",
+       "price": 12000
+      },
+      {
+       "category": "김밥조",
+       "name": "수제안심돈까스",
+       "price": 12000
+      },
+      {
+       "category": "김밥조",
+       "name": "수제치즈등심돈까스",
+       "price": 12000
+      },
+      {
+       "category": "김밥조",
+       "name": "참치땡초김밥",
+       "price": 4700
+      },
+      {
+       "category": "김밥조",
+       "name": "쫄면",
+       "price": 7000
+      },
+      {
+       "category": "김밥조",
+       "name": "우동",
+       "price": 7000
+      },
+      {
+       "category": "김밥조",
+       "name": "떡볶이",
+       "price": 6000
+      },
+      {
+       "category": "김밥조",
+       "name": "오뎅탕",
+       "price": 6000
+      },
+      {
+       "category": "김밥조",
+       "name": "비빔 납작만두",
+       "price": 8000
+      },
+      {
+       "category": "김밥조",
+       "name": "치킨마요덮밥",
+       "price": 11000
+      },
+      {
+       "category": "김밥조",
+       "name": "오징어덮밥",
+       "price": 11000
+      },
+      {
+       "category": "김밥조",
+       "name": "쭈꾸미덮밥",
+       "price": 12000
+      },
+      {
+       "category": "김밥조",
+       "name": "제육덮밥",
+       "price": 11000
+      },
+      {
+       "category": "김밥조",
+       "name": "단무지",
+       "price": 500
+      },
+      {
+       "category": "김밥조",
+       "name": "콜라",
+       "price": 2000
+      },
+      {
+       "category": "김밥조",
+       "name": "사이다",
+       "price": 2000
+      },
+      {
+       "category": "김밥조",
+       "name": "밀키스",
+       "price": 2000
+      },
+      {
+       "category": "김밥조",
+       "name": "펩시 제로라임",
+       "price": 2000
+      },
+      {
+       "category": "김밥조",
+       "name": "단체할인",
+       "price": 3000
+      },
+      {
+       "category": "김밥조",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "김밥조",
+       "name": "추가",
+       "price": 500
+      },
+      {
+       "category": "김밥조",
+       "name": "추가",
+       "price": 1000
+      },
+      {
+       "category": "김밥조",
+       "name": "꼬마우동",
+       "price": 3500
+      }
+     ]
     }
    ],
    "datt": [],
@@ -5413,7 +6179,80 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BP897DLA0",
      "from": "댓글",
-     "path": "menu-files/1786345988_442839-0.png"
+     "path": "menu-files/1786345988_442839-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "찰보리빵 쇼핑백30개",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "먹빼비",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "찰보리빵 선물3(",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "찰보리빵 쇼핑백50개",
+       "price": 21000
+      },
+      {
+       "category": "",
+       "name": "찰보리빵 선물박스40개",
+       "price": 18000
+      },
+      {
+       "category": "",
+       "name": "찰보리빵60개",
+       "price": 26000
+      },
+      {
+       "category": "",
+       "name": "찰보리빵40개",
+       "price": 17000
+      },
+      {
+       "category": "",
+       "name": "찰보리빵20개",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "할인제품",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "사과즙",
+       "price": 25000
+      },
+      {
+       "category": "",
+       "name": "찰보리빵",
+       "price": 20000
+      },
+      {
+       "category": "",
+       "name": "먹빼비",
+       "price": 2500
+      },
+      {
+       "category": "",
+       "name": "찰보리빵100개",
+       "price": 40000
+      },
+      {
+       "category": "",
+       "name": "황금찰보리빵",
+       "price": 10000
+      }
+     ]
     }
    ],
    "datt": [],
@@ -5938,7 +6777,9 @@ window.MENU_REQUESTS = {
      "name": "i_68fb1c26eddd.jpg",
      "fid": "F0BP19C1ZPG",
      "from": "댓글",
-     "path": "menu-files/1786327946_209649-0.jpg"
+     "path": "menu-files/1786327946_209649-0.jpg",
+     "kind": "other",
+     "menu": []
     }
    ],
    "datt": [],
@@ -5966,19 +6807,172 @@ window.MENU_REQUESTS = {
      "name": "807782979.jpg.jpeg",
      "fid": "F0BP3495Y4A",
      "from": "댓글",
-     "path": "menu-files/1786325839_038889-0.jpeg"
+     "path": "menu-files/1786325839_038889-0.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "메뉴",
+       "name": "생연어사시미(소)",
+       "price": 28000
+      },
+      {
+       "category": "메뉴",
+       "name": "생연어사시미(중)",
+       "price": 38000
+      },
+      {
+       "category": "메뉴",
+       "name": "생연어사시미(대)",
+       "price": 48000
+      },
+      {
+       "category": "메뉴",
+       "name": "참다랑어뱃살",
+       "price": 38000
+      },
+      {
+       "category": "메뉴",
+       "name": "참다랑어볼살",
+       "price": 38000
+      },
+      {
+       "category": "메뉴",
+       "name": "참다랑어안창살",
+       "price": 38000
+      },
+      {
+       "category": "메뉴",
+       "name": "참다랑어몸통",
+       "price": 38000
+      },
+      {
+       "category": "메뉴",
+       "name": "참다랑어속살",
+       "price": 22000
+      },
+      {
+       "category": "메뉴",
+       "name": "황새치대뱃살",
+       "price": 10000
+      },
+      {
+       "category": "메뉴",
+       "name": "눈다랑어속살",
+       "price": 12000
+      },
+      {
+       "category": "메뉴",
+       "name": "생연어사시미",
+       "price": 15000
+      },
+      {
+       "category": "메뉴",
+       "name": "황새치뱃살(메카도로)",
+       "price": 20000
+      },
+      {
+       "category": "메뉴",
+       "name": "눈다랑어뱃살",
+       "price": 15000
+      }
+     ]
     },
     {
      "name": "807782961.jpg.jpeg",
      "fid": "F0BNMNYNTN3",
      "from": "댓글",
-     "path": "menu-files/1786325839_038889-1.jpeg"
+     "path": "menu-files/1786325839_038889-1.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "메뉴",
+       "name": "살속모듬세트(소)",
+       "price": 33000
+      },
+      {
+       "category": "메뉴",
+       "name": "살속모듬세트(중)",
+       "price": 43000
+      },
+      {
+       "category": "메뉴",
+       "name": "살속모듬세트(대)",
+       "price": 53000
+      },
+      {
+       "category": "메뉴",
+       "name": "스페셜세트(소)",
+       "price": 50000
+      },
+      {
+       "category": "메뉴",
+       "name": "스페셜세트(중)",
+       "price": 70000
+      },
+      {
+       "category": "메뉴",
+       "name": "스페셜세트(대)",
+       "price": 90000
+      },
+      {
+       "category": "메뉴",
+       "name": "뱃살매니아(소)",
+       "price": 60000
+      },
+      {
+       "category": "메뉴",
+       "name": "뱃살매니아(중)",
+       "price": 90000
+      },
+      {
+       "category": "메뉴",
+       "name": "뱃살매니아(대)",
+       "price": 110000
+      },
+      {
+       "category": "메뉴",
+       "name": "참다랑어 스페셜(소)",
+       "price": 85000
+      },
+      {
+       "category": "메뉴",
+       "name": "참다랑어 스페셜(중)",
+       "price": 120000
+      },
+      {
+       "category": "메뉴",
+       "name": "참다랑어 스페셜(대)",
+       "price": 150000
+      },
+      {
+       "category": "메뉴",
+       "name": "참치+연어세트(소)",
+       "price": 38000
+      },
+      {
+       "category": "메뉴",
+       "name": "참치+연어세트(중)",
+       "price": 46000
+      },
+      {
+       "category": "메뉴",
+       "name": "참치+연어세트(대)",
+       "price": 58000
+      },
+      {
+       "category": "메뉴",
+       "name": "혼술세트",
+       "price": 23000
+      }
+     ]
     },
     {
      "name": "807783096.jpg.jpeg",
      "fid": "F0BNZKXAD9T",
      "from": "댓글",
-     "path": "menu-files/1786325839_038889-2.jpeg"
+     "path": "menu-files/1786325839_038889-2.jpeg",
+     "kind": "pos_screen",
+     "menu": []
     },
     {
      "name": "807783065.jpg.jpeg",
