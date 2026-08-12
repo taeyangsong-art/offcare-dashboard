@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 562,
- "updatedAt": "2026-08-12 11:07",
+ "version": 563,
+ "updatedAt": "2026-08-12 11:16",
  "days": 30,
  "items": [
   {
@@ -14990,7 +14990,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 9,
    "lr": "1784628817.059039",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784624260253589"
@@ -15013,7 +15013,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1784624077.417929",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784624019849009"
@@ -15034,7 +15034,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784622965.116869",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784622960842869"
@@ -15069,7 +15069,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 6,
    "lr": "1784633798.003209",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784622898374529"
@@ -15090,7 +15090,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784621122.438439",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784621116645489"
@@ -15167,7 +15167,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1784617652.948459",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784617367166589"
@@ -15417,7 +15417,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784615778.463049",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784615773869209"
@@ -15441,7 +15441,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 4,
    "lr": "1784615897.461339",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784615511438259"
@@ -15462,7 +15462,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1784614706.337049",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784614669127979"
@@ -15483,7 +15483,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1784614638.782219",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784614544290459"
@@ -15507,7 +15507,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1784614230.677969",
-   "rfx": 2,
+   "rfx": 3,
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784612705347739"
@@ -15530,7 +15530,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1784610981.862629",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784610945917399"
@@ -15551,7 +15551,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1784610930.883219",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784610917170279"
@@ -15572,7 +15572,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784610193.883789",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784610189016449"
@@ -15595,7 +15595,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 6,
    "lr": "1784610258.977879",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784609903683779"
@@ -15616,7 +15616,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 3,
    "lr": "1784607596.946089",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784607539264439"
@@ -15639,7 +15639,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1784608596.305079",
-   "rfx": 2,
+   "rfx": 3,
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784607313602819"
@@ -15662,7 +15662,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1784605361.712079",
-   "rfx": 2,
+   "rfx": 3,
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784605301891209"
@@ -15683,7 +15683,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784603123.558149",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784603119669479"
@@ -15704,7 +15704,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 3,
    "lr": "1784603552.957879",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784603079845949"
@@ -15725,7 +15725,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784602728.184089",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784602723983739"
@@ -15748,7 +15748,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1784603125.905309",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784602517541959"
@@ -15771,7 +15771,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 4,
    "lr": "1784602939.481629",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784602295871719"
@@ -15966,7 +15966,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784602140.301419",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784602134653989"
@@ -15989,7 +15989,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1784600361.774749",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784599959387169"
@@ -16012,7 +16012,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 4,
    "lr": "1784558451.509699",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784539029405799"
@@ -16035,7 +16035,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1784538371.655639",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784538364150319"
@@ -16056,7 +16056,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784536495.442669",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784536488876279"
@@ -16077,7 +16077,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784534091.553409",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784534087324769"
@@ -16098,7 +16098,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1784531367.926809",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784531331664349"
@@ -16119,7 +16119,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784531058.205069",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784531051794269"
@@ -16142,7 +16142,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1784532491.048589",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784529797935699"
@@ -16163,7 +16163,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1784528995.608939",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784528904852669"
@@ -16188,7 +16188,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 8,
    "lr": "1784529817.993849",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784528467858269"
@@ -16211,7 +16211,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1784527567.768179",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784527418695909"
@@ -16234,7 +16234,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1784525091.607409",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784525073955009"
@@ -16258,7 +16258,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 5,
    "lr": "1784523084.778619",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784522465049319"
@@ -16279,7 +16279,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784522004.910059",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784522000232929"
@@ -16304,7 +16304,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 9,
    "lr": "1784519548.083829",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784517728533079"
@@ -16325,7 +16325,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784514754.929919",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784514720972089"
@@ -16349,7 +16349,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 9,
    "lr": "1784513125.664989",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784510571745689"
@@ -16370,7 +16370,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1784508797.975689",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784508699571049"
@@ -16393,7 +16393,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1784507979.069559",
-   "rfx": 2,
+   "rfx": 3,
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784507881569669"
@@ -16414,7 +16414,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1784505858.448099",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784505739652639"
@@ -16437,7 +16437,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1784506791.151899",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784468911100679"
@@ -16461,7 +16461,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 4,
    "lr": "1784358858.684709",
-   "rfx": 2,
+   "rfx": 3,
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784353582878579"
@@ -16484,7 +16484,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1784280936.734119",
-   "rfx": 2,
+   "rfx": 3,
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784280103551129"
@@ -16510,7 +16510,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 9,
    "lr": "1784277517.378239",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784272576238579"
@@ -16533,7 +16533,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1784248690.778339",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784248562338659"
@@ -16554,7 +16554,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 3,
    "lr": "1784207765.911269",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784206215398309"
@@ -16577,7 +16577,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 4,
    "lr": "1784205355.253429",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784198459670669"
@@ -16600,7 +16600,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1784205629.892179",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784197195305059"
@@ -16621,7 +16621,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784190753.800599",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784190726200599"
@@ -16695,7 +16695,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 3,
    "lr": "1784191261.263049",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784190632504709"
@@ -16721,7 +16721,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 20,
    "lr": "1784191106.916049",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784190608597369"
@@ -16804,7 +16804,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784190517.827539",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784190512892049"
@@ -16827,7 +16827,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 6,
    "lr": "1784191336.996359",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784189509933229"
@@ -16850,7 +16850,7 @@ window.MENU_REQUESTS = {
    ],
    "rc": 2,
    "lr": "1784188377.317119",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784188054601629"
@@ -16871,7 +16871,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 1,
    "lr": "1784187969.211399",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784187963519469"
@@ -16892,7 +16892,7 @@ window.MENU_REQUESTS = {
    "replies": [],
    "rc": 2,
    "lr": "1784187391.394239",
-   "rfx": 2,
+   "rfx": 3,
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784187376070729"
@@ -19971,6 +19971,10 @@ window.MENU_REQUESTS = {
  "ocr": {
   "model": "claude-opus-5",
   "enabled": true,
-  "drive": true
+  "drive": true,
+  "halt": {
+   "status": 400,
+   "message": "Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."
+  }
  }
 };
