@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3414,
+  "version": 3415,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -105546,7 +105546,67 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": ""
+      "updatedAt": "01:25",
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 0,
+          "low": 0
+        },
+        "nps": {
+          "count": 1,
+          "low": 1
+        },
+        "high": {
+          "install": 0,
+          "nps": 0
+        },
+        "npsDist": {
+          "5": 1
+        },
+        "installDist": {},
+        "byIndustry": {},
+        "byTenure": {
+          "3개월": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "byVan": {
+          "SECTA9": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 1
+        },
+        "alerts": [
+          {
+            "time": "01:25",
+            "store": "위드팜 컴퍼니",
+            "storeId": "432607",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "부가세 적용,미적용여부를 단말기 설정에서 변경가능 좋겠음.",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
+        "praises": []
+      }
     }
   },
   "resp": {
@@ -127766,17 +127826,25 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-13 01:15",
+    "at": "2026-08-13 01:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
-    "ok": false,
-    "error": "GDRIVE_* 환경변수 없음",
-    "rows": 0,
-    "named": 0,
+    "ok": true,
+    "error": "",
+    "rows": 3485,
+    "named": 193,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 0,
-    "byStatus": {}
+    "done": 193,
+    "byStatus": {
+      "일정등록완료": 112,
+      "1차부재": 48,
+      "점주직접접수": 20,
+      "설치불가": 5,
+      "(빈칸)": 2,
+      "자가설치": 5,
+      "설치보류요청": 1
+    }
   }
 };
