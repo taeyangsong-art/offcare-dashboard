@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3396,
+  "version": 3397,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -102158,7 +102158,7 @@ window.SLACK_DATA = {
     "2026-08-12": {
       "counts": {
         "as": {
-          "최민석": 13,
+          "최민석": 14,
           "서상원": 7,
           "배선유": 19,
           "김기범": 3,
@@ -102258,6 +102258,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "21:10",
+          "store": "원가마켓 별내점",
+          "biz": "3102302355",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "점주님께서 별도의 상세 내용은 말씀해 주시지 않았으나, 원격 요청 주셔서 원격 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "익일 오후2시 재연락 요청"
+        },
         {
           "time": "20:54",
           "store": "피자스쿨공릉점",
@@ -104980,7 +104991,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 203,
+        "online": 204,
         "offline": 48,
         "unknown": 0
       },
@@ -105531,10 +105542,6 @@ window.SLACK_DATA = {
       "1786507202.997419": {
         "post": "1786507202.997419",
         "lastSeen": 1786507231.643
-      },
-      "1786536600.282629": {
-        "post": "1786536600.282629",
-        "lastSeen": 1786536924.695
       }
     },
     "days": {
@@ -126762,8 +126769,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-12": {
-        "cnt": 115,
-        "sumMin": 1945.8511190374693,
+        "cnt": 116,
+        "sumMin": 1958.8238335529963,
         "over": 12,
         "items": [
           {
@@ -127685,13 +127692,21 @@ window.SLACK_DATA = {
             "biz": "2170550063",
             "who": "최민석",
             "cat": "as"
+          },
+          {
+            "hm": "21:10",
+            "min": 13,
+            "store": "원가마켓 별내점",
+            "biz": "3102302355",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-12 21:15",
+    "at": "2026-08-12 21:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
