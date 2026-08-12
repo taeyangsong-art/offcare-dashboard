@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 586,
- "updatedAt": "2026-08-12 17:15",
+ "version": 587,
+ "updatedAt": "2026-08-12 17:30",
  "days": 30,
  "items": [
   {
@@ -26,8 +26,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1786522037.809119",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786522033806389"
   },
   {
@@ -25950,27 +25950,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783933436739429"
-  },
-  {
-   "ts": "1783931270.731839",
-   "date": "2026-07-13",
-   "time": "17:27",
-   "store": "장수민과자점",
-   "biz": "1887600469",
-   "pos": "토스포스",
-   "content": "스파로스 ->토스포스 메뉴 이관 부탁드립니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 5,
-   "lr": "1783932117.934459",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783931270731839"
   }
  ],
  "ocr": {
