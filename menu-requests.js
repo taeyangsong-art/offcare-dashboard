@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 557,
- "updatedAt": "2026-08-12 10:00",
+ "version": 558,
+ "updatedAt": "2026-08-12 10:15",
  "days": 30,
  "items": [
   {
@@ -19852,50 +19852,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783905697012439"
-  },
-  {
-   "ts": "1783904731.800069",
-   "date": "2026-07-13",
-   "time": "10:05",
-   "store": "요거트가족",
-   "biz": "1891602210",
-   "pos": "퍼스트포스",
-   "content": "메뉴 등록 요청\n• <mailto:···|···> 메일로 수신한 메뉴 확인 후 등록 요청드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1783905882.053499",
-   "rfx": 2,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783904731800069"
-  },
-  {
-   "ts": "1783904631.561839",
-   "date": "2026-07-13",
-   "time": "10:03",
-   "store": "태국 팟타이",
-   "biz": "1160672325",
-   "pos": "",
-   "content": "메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "사업자번호: ···\n전화번호:···\n포스프로그램: 토스포스\n[수정메뉴와 메뉴전체]\n추천메뉴\n카오카무(족발덮밥)12000원\n추가\n국수메뉴 추가\n족발 남똑국수12000원\n[특이사항]\n\n7/11일 오픈입니다.\n외국분이시라 소통이 어려울수 있습니다.\n테이블 6개, 포장5개\n토스포스 에 [현황]꼭 보이게부탁드립니다."
-   ],
-   "rc": 3,
-   "lr": "1783905248.885679",
-   "rfx": 2,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783904631561839"
   }
  ],
  "ocr": {
