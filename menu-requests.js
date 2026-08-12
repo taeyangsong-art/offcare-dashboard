@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 555,
- "updatedAt": "2026-08-12 08:30",
+ "version": 556,
+ "updatedAt": "2026-08-12 09:15",
  "days": 30,
  "items": [
   {
@@ -24,8 +24,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1786455928.181259",
    "rfx": 2,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786455907660869"
   },
   {
@@ -19919,51 +19919,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783904259665809"
-  },
-  {
-   "ts": "1783901686.127419",
-   "date": "2026-07-13",
-   "time": "09:14",
-   "store": "강창구찹쌀진순대 토평점",
-   "biz": "4688700056",
-   "pos": "",
-   "content": "메뉴수정",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783901691.657089",
-   "rfx": 2,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783901686127419"
-  },
-  {
-   "ts": "1783901385.003599",
-   "date": "2026-07-13",
-   "time": "09:09",
-   "store": "빵굼터",
-   "biz": "1130993259",
-   "pos": "",
-   "content": "메뉴 등록 요청드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "네네!!",
-    "https://w1659946222-hxm266180.slack.com/archives/C0B2XSJ08UA/p1783657916732669"
-   ],
-   "rc": 7,
-   "lr": "1783916286.757939",
-   "rfx": 2,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783901385003599"
   }
  ],
  "ocr": {

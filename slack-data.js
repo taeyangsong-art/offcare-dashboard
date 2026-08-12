@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3338,
+  "version": 3339,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -99152,9 +99152,9 @@ window.SLACK_DATA = {
           "송태양": 2
         },
         "menu": {
+          "김규빈": 11,
           "최민석": 3,
           "심성현": 1,
-          "김규빈": 10,
           "배선유": 1
         },
         "delivery": {
@@ -99177,6 +99177,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "22:45",
+          "store": "미라클 밥상(여주터미널점)",
+          "biz": "6023808645",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
+        },
         {
           "time": "21:25",
           "store": "슈크레",
@@ -101586,7 +101597,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 168,
+        "online": 169,
         "offline": 51,
         "unknown": 0
       },
@@ -102145,15 +102156,43 @@ window.SLACK_DATA = {
       }
     },
     "2026-08-12": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "심성현": 1,
+          "송태양": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:07",
+          "store": "시월1988",
+          "biz": "8130303836",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "유선프린터 전원 들어왔다가 꺼졌다가 반복되어 확인 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "아답터 재연동 후 정상"
+        },
+        {
+          "time": "09:00",
+          "store": "부대담 논산점",
+          "biz": "6820303998",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "• 포스기 세트/온보딩 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "금일 오전 10시 30분 설치일정 잡혀있음"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 2,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:00",
+      "updatedAt": "09:15",
       "voc": {
         "responses": 1,
         "install": {
@@ -102254,21 +102293,21 @@ window.SLACK_DATA = {
         "post": "1786455907.660869",
         "lastSeen": 1786464872.189
       },
-      "1786492809.301279": {
-        "post": "1786492809.301279",
-        "lastSeen": 1786492833.276
-      },
       "1786492810.943419": {
         "post": "1786492810.943419",
-        "lastSeen": 1786492833.276
+        "lastSeen": 1786493723.145
       },
       "1786492809.382099": {
         "post": "1786492809.382099",
-        "lastSeen": 1786492833.276
+        "lastSeen": 1786493723.145
       },
       "1786492805.169899": {
         "post": "1786492805.169899",
-        "lastSeen": 1786492833.276
+        "lastSeen": 1786493723.145
+      },
+      "1786493718.460589": {
+        "post": "1786493718.460589",
+        "lastSeen": 1786493723.145
       }
     },
     "days": {
@@ -123494,17 +123533,32 @@ window.SLACK_DATA = {
             "cat": "as"
           }
         ]
+      },
+      "2026-08-12": {
+        "cnt": 1,
+        "sumMin": 7.815153682231903,
+        "over": 0,
+        "items": [
+          {
+            "hm": "09:00",
+            "min": 7.8,
+            "store": "부대담 논산점",
+            "biz": "6820303998",
+            "who": "송태양",
+            "cat": "as"
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-12 09:00",
+    "at": "2026-08-12 09:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3467,
+    "rows": 3470,
     "named": 164,
     "unknownName": 0,
     "beforeStart": 0,
