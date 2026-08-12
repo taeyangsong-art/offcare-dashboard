@@ -3,10 +3,70 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 567,
- "updatedAt": "2026-08-12 12:45",
+ "version": 568,
+ "updatedAt": "2026-08-12 13:01",
  "days": 30,
  "items": [
+  {
+   "ts": "1786506587.398659",
+   "date": "2026-08-12",
+   "time": "12:49",
+   "store": "겟인커피 양산범어",
+   "biz": "1742601940",
+   "pos": "토스포스",
+   "content": "토스포스) 메뉴 등록 요청드립니다:man-bowing:",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "i_7113ff3893d9.jpeg",
+     "fid": "F0BPJ7DMNPP",
+     "from": "댓글",
+     "path": "menu-files/1786506587_398659-0.jpeg"
+    },
+    {
+     "name": "i_bd2ec8c4281d.jpeg",
+     "fid": "F0BPKR0BALW",
+     "from": "댓글",
+     "path": "menu-files/1786506587_398659-1.jpeg"
+    },
+    {
+     "name": "i_6ab9d318cb4c.jpeg",
+     "fid": "F0BPFGZ0J1Z",
+     "from": "댓글",
+     "path": "menu-files/1786506587_398659-2.jpeg"
+    },
+    {
+     "name": "i_ed410ca52962.jpeg",
+     "fid": "F0BPFH3CS59",
+     "from": "댓글",
+     "path": "menu-files/1786506587_398659-3.jpeg"
+    },
+    {
+     "name": "i_13779eaa8a76.jpeg",
+     "fid": "F0BQG4ZMVL0",
+     "from": "댓글",
+     "path": "menu-files/1786506587_398659-4.jpeg"
+    },
+    {
+     "name": "i_01681d231900.jpeg",
+     "fid": "F0BP6D4F2GP",
+     "from": "댓글",
+     "path": "menu-files/1786506587_398659-5.jpeg"
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "일단 이미지 상 메뉴 등록 요청주셨으며, 잘못등록된 부분이 있으면 수정은 자체적으로 진행하신다고 하셨습니다!"
+   ],
+   "rc": 6,
+   "lr": "1786506871.495479",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786506587398659"
+  },
   {
    "ts": "1786506172.023379",
    "date": "2026-08-12",
@@ -19943,30 +20003,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783917772421649"
-  },
-  {
-   "ts": "1783914729.914069",
-   "date": "2026-07-13",
-   "time": "12:52",
-   "store": "군산꽃삼겹수송점",
-   "biz": "8214001305",
-   "pos": "",
-   "content": "메뉴",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "메뉴등록 다해드렸어요",
-    "메인포스 확인해보세요"
-   ],
-   "rc": 7,
-   "lr": "1783919849.569009",
-   "rfx": 3,
-   "status": "done",
-   "handler": "서상원",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783914729914069"
   }
  ],
  "ocr": {
