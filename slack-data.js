@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3352,
+  "version": 3353,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -102176,7 +102176,7 @@ window.SLACK_DATA = {
           "김동욱": 1
         },
         "transfer": {
-          "송태양": 5,
+          "송태양": 6,
           "김동욱": 2,
           "심성현": 1
         },
@@ -102188,8 +102188,31 @@ window.SLACK_DATA = {
           "김동욱": 1
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "11:19",
+          "store": "월정리 유메이우동",
+          "biz": "2822301366",
+          "handler": "김현기",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "done": [
+        {
+          "time": "12:00",
+          "store": "몸선 필라테스&amp;발레핏",
+          "biz": "",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "8월 12일 오후 12시 / 메뉴 복사 O / 프론트",
+          "hw": "",
+          "intake": "online",
+          "note": "명변완료입니다"
+        },
         {
           "time": "11:59",
           "store": "영월 시골밥상",
@@ -102890,11 +102913,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 48,
+        "online": 50,
         "offline": 15,
         "unknown": 0
       },
-      "updatedAt": "12:15",
+      "updatedAt": "12:25",
       "voc": {
         "responses": 1,
         "install": {
@@ -102995,13 +103018,13 @@ window.SLACK_DATA = {
         "post": "1786455907.660869",
         "lastSeen": 1786464872.189
       },
-      "1786504500.777509": {
-        "post": "1786504500.777509",
-        "lastSeen": 1786504525.112
+      "1786505146.072969": {
+        "post": "1786505146.072969",
+        "lastSeen": 1786505232.847
       },
-      "1786504318.364219": {
-        "post": "1786504318.364219",
-        "lastSeen": 1786504525.112
+      "1786504967.037389": {
+        "post": "1786504967.037389",
+        "lastSeen": 1786505232.847
       }
     },
     "days": {
@@ -124229,8 +124252,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-12": {
-        "cnt": 17,
-        "sumMin": 187.2739911317825,
+        "cnt": 18,
+        "sumMin": 193.5773576458295,
         "over": 1,
         "items": [
           {
@@ -124368,13 +124391,21 @@ window.SLACK_DATA = {
             "biz": "1040427269",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "12:15",
+            "min": 6.3,
+            "store": "수완이지수학학원",
+            "biz": "2549500559",
+            "who": "김규빈",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-12 12:15",
+    "at": "2026-08-12 12:27",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
