@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 568,
- "updatedAt": "2026-08-12 13:01",
+ "version": 569,
+ "updatedAt": "2026-08-12 13:16",
  "days": 30,
  "items": [
+  {
+   "ts": "1786507657.670369",
+   "date": "2026-08-12",
+   "time": "13:07",
+   "store": "청춘 닭꼬치 대구감삼점",
+   "biz": "3015500994",
+   "pos": "토스포스",
+   "content": "",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/open?id=1jB20utPxCiub0EwrBlss1ZFChKIkn_Y5"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786507661.182039",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786507657670369"
+  },
   {
    "ts": "1786506587.398659",
    "date": "2026-08-12",
@@ -60,10 +83,10 @@ window.MENU_REQUESTS = {
    "replies": [
     "일단 이미지 상 메뉴 등록 요청주셨으며, 잘못등록된 부분이 있으면 수정은 자체적으로 진행하신다고 하셨습니다!"
    ],
-   "rc": 6,
-   "lr": "1786506871.495479",
+   "rc": 7,
+   "lr": "1786507977.699139",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786506587398659"
   },
