@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 565,
- "updatedAt": "2026-08-12 11:45",
+ "version": 566,
+ "updatedAt": "2026-08-12 12:01",
  "days": 30,
  "items": [
   {
@@ -19944,30 +19944,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "서상원",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783914729914069"
-  },
-  {
-   "ts": "1783911602.140189",
-   "date": "2026-07-13",
-   "time": "12:00",
-   "store": "뚜레쥬르 킨텍스1전시장",
-   "biz": "1283674814",
-   "pos": "퍼스트포스",
-   "content": "··· + ··· / 두 매장 메뉴 동일하게 수정 부탁드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "*변경*\n리얼브라우니 3,300원 > 3,600원\n리얼치즈브라우니 3,500 > 3,800원\n피치워터 3,000원 > 4,000원\n호두카라멜스콘 > 무화과스콘\n*삭제*\n소금식빵\n오트밀 모닝롤\n고단백 하루견과\n순꿀호떡\n옥수수범벅\n후랑크패스트리\n*추가*\n[일반빵]\n쑥단팥빵 3,000원\n[조리빵]\n마늘퐁당 바게트 6,000원",
-    "상기 내용으로 메뉴 수정 부탁드립니다! :감사합니다꾸벅:"
-   ],
-   "rc": 4,
-   "lr": "1783917406.846569",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783911602140189"
   }
  ],
  "ocr": {
