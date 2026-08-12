@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 578,
- "updatedAt": "2026-08-12 15:15",
+ "version": 579,
+ "updatedAt": "2026-08-12 15:30",
  "days": 30,
  "items": [
   {
@@ -26180,100 +26180,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783924382476139"
-  },
-  {
-   "ts": "1783923678.158979",
-   "date": "2026-07-13",
-   "time": "15:21",
-   "store": "천왕숯불화로구이",
-   "biz": "1035900699",
-   "pos": "기타",
-   "content": "이미지",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/1iWRHoh4_SAbP8eyuzf3Z9HWTiNVy5V02/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "1iWRHoh4_SAbP8eyuzf3Z9HWTiNVy5V02",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "",
-       "name": "갈비살 150g(수입산)",
-       "price": 19000
-      },
-      {
-       "category": "",
-       "name": "삼겹살 180g(제주산)",
-       "price": 19000
-      },
-      {
-       "category": "",
-       "name": "목살 180g(제주산&국내산)",
-       "price": 17000
-      },
-      {
-       "category": "",
-       "name": "가브리살150g(제주산&국내산)",
-       "price": 18000
-      },
-      {
-       "category": "",
-       "name": "항정살 150g(제주산&국내산)",
-       "price": 18000
-      },
-      {
-       "category": "",
-       "name": "냉삼겹 150g(수입산)",
-       "price": 12000
-      },
-      {
-       "category": "",
-       "name": "돼지갈비 300g(수입산)",
-       "price": 19000
-      },
-      {
-       "category": "",
-       "name": "장어 250g(국내산)",
-       "price": 33000
-      }
-     ]
-    }
-   ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783923690.336589",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783923678158979"
-  },
-  {
-   "ts": "1783923543.485599",
-   "date": "2026-07-13",
-   "time": "15:19",
-   "store": "엄마잔치국수",
-   "biz": "8544001663",
-   "pos": "토스포스",
-   "content": "토스포스,키오스크 메뉴+사진 등록 요청 드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "• 포장 카테고리에 추가 요청\n• *모든 메뉴 이름 앞에 (포장) 붙혀달라고 요청* \n• 가격은 아래 내용 참고 부탁 드립니다!\n    ◦ (포장) 군만두 5,500원 / (포장) 찐만두 5,500원 \n    ◦ 아래 zip 파일에 기재 되어 있는 가격에 1,000원씩 더해서 등록 부탁 드립니다.\n    ◦ 아래 사진은 (포장) 군만두,찐만두 메뉴에 등록 해 주시면 됩니다. :감사합니다꾸벅:",
-    "규빈님 혹시 이 파일로 진행 가능할까요?"
-   ],
-   "rc": 10,
-   "lr": "1783930155.634439",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783923543485599"
   }
  ],
  "ocr": {
