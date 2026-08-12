@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 599,
- "updatedAt": "2026-08-13 00:47",
+ "version": 600,
+ "updatedAt": "2026-08-13 03:02",
  "days": 30,
  "items": [
   {
@@ -26038,92 +26038,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김동욱",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783988157885309"
-  },
-  {
-   "ts": "1783964912.839089",
-   "date": "2026-07-14",
-   "time": "02:48",
-   "store": "힘난다버거 태평점",
-   "biz": "8523001708",
-   "pos": "토스포스",
-   "content": "가격은 제가 바꿀테니 메뉴 이름이랑 사진만 맞게 해주세요",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/open?id=1oE21ggYJOemXrjbVjHowclI7tTL9Pj6j",
-    "https://drive.google.com/open?id=1wAS6GwyCBArQ2XQ_xLDd4Xf9Lnezs22s",
-    "https://drive.google.com/open?id=1buy47xIj5aQG9ian3F1y88oOhLJTNjvr",
-    "https://drive.google.com/open?id=1kAHQ_a3tocDzFR7MImRKOpex6ivpYYYJ",
-    "https://drive.google.com/open?id=1tt24V1mQH0a_y0MbRdMKUPrq9Ju5m6F4",
-    "https://drive.google.com/open?id=1EEqwR68BpIbrKkzn36tNEMaZI_yAZJYk",
-    "https://drive.google.com/open?id=1EHxMyL3BZ1iaNBo6Ucd3ceTGw112ghs_",
-    "https://drive.google.com/open?id=1VxD7AsLGpJf9Wh6TZO7fHZHeEBiXFhlj",
-    "https://drive.google.com/open?id=1V44n4CPKgf8-WMRBAuVRq_OHOSBwYbl3",
-    "https://drive.google.com/open?id=108rzW89HWJefhVp_GbTCdT3BKM2f5fxT"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "1oE21ggYJOemXrjbVjHowclI7tTL9Pj6j",
-     "kind": "product_photo",
-     "menu": []
-    },
-    {
-     "id": "1wAS6GwyCBArQ2XQ_xLDd4Xf9Lnezs22s",
-     "kind": "product_photo",
-     "menu": []
-    },
-    {
-     "id": "1buy47xIj5aQG9ian3F1y88oOhLJTNjvr",
-     "kind": "product_photo",
-     "menu": []
-    },
-    {
-     "id": "1kAHQ_a3tocDzFR7MImRKOpex6ivpYYYJ",
-     "kind": "product_photo",
-     "menu": []
-    },
-    {
-     "id": "1tt24V1mQH0a_y0MbRdMKUPrq9Ju5m6F4",
-     "kind": "product_photo",
-     "menu": []
-    },
-    {
-     "id": "1EEqwR68BpIbrKkzn36tNEMaZI_yAZJYk",
-     "kind": "product_photo",
-     "menu": []
-    },
-    {
-     "id": "1EHxMyL3BZ1iaNBo6Ucd3ceTGw112ghs_",
-     "kind": "product_photo",
-     "menu": []
-    },
-    {
-     "id": "1VxD7AsLGpJf9Wh6TZO7fHZHeEBiXFhlj",
-     "kind": "product_photo",
-     "menu": []
-    },
-    {
-     "id": "1V44n4CPKgf8-WMRBAuVRq_OHOSBwYbl3",
-     "kind": "product_photo",
-     "menu": []
-    },
-    {
-     "id": "108rzW89HWJefhVp_GbTCdT3BKM2f5fxT",
-     "kind": "product_photo",
-     "menu": []
-    }
-   ],
-   "replies": [
-    "메뉴가 없는디",
-    "일단 0원에 메뉴 이름, 카테고리 기본으로 생성만 해놓음"
-   ],
-   "rc": 3,
-   "lr": "1783986458.224569",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783964912839089"
   }
  ],
  "ocr": {
