@@ -3,10 +3,54 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 577,
- "updatedAt": "2026-08-12 15:02",
+ "version": 578,
+ "updatedAt": "2026-08-12 15:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1786514898.286559",
+   "date": "2026-08-12",
+   "time": "15:08",
+   "store": "쏘주 맥쭈",
+   "biz": "1921702310",
+   "pos": "오케이포스",
+   "content": "오케이포스) 메뉴 추가 요청 >>",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "디저트 카테고리\n딸기모찌와 참치크래커 16,900원\n\n위 메뉴 등록 부탁드립니다!"
+   ],
+   "rc": 3,
+   "lr": "1786515194.855419",
+   "rfx": 3,
+   "status": "done",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786514898286559"
+  },
+  {
+   "ts": "1786514835.411919",
+   "date": "2026-08-12",
+   "time": "15:07",
+   "store": "동양집 문래",
+   "biz": "7157700462",
+   "pos": "토스포스",
+   "content": "전부다",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786514838.922529",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786514835411919"
+  },
   {
    "ts": "1786507657.670369",
    "date": "2026-08-12",
@@ -23687,7 +23731,76 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 1,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BHG9KL41X",
+     "from": "원글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "아이스크림컵/음료",
+       "name": "수박주스",
+       "price": 5500
+      },
+      {
+       "category": "아이스크림컵/음료",
+       "name": "우베 말차 라떼[Event 할인]",
+       "price": 5500
+      },
+      {
+       "category": "아이스크림컵/음료",
+       "name": "말차 라떼[Event 할인]",
+       "price": 5500
+      },
+      {
+       "category": "아이스크림컵/음료",
+       "name": "우베 라떼[EVENT 할인]",
+       "price": 4500
+      },
+      {
+       "category": "아이스크림컵/음료",
+       "name": "두바이 초코쉘 컵",
+       "price": 5500
+      },
+      {
+       "category": "아이스크림컵/음료",
+       "name": "아이스크림컵",
+       "price": 2500
+      },
+      {
+       "category": "아이스크림컵/음료",
+       "name": "초코쉘 컵",
+       "price": 3500
+      },
+      {
+       "category": "아이스크림컵/음료",
+       "name": "두바이 아사이 컵",
+       "price": 5500
+      },
+      {
+       "category": "아이스크림컵/음료",
+       "name": "아사이 컵",
+       "price": 3500
+      },
+      {
+       "category": "아이스크림컵/음료",
+       "name": "아메리카노",
+       "price": 3000
+      },
+      {
+       "category": "아이스크림컵/음료",
+       "name": "연유라떼",
+       "price": 4500
+      },
+      {
+       "category": "아이스크림컵/음료",
+       "name": "카페라떼",
+       "price": 4000
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [
     "헉 제가 잘못 전달해드렸네요 죄송합니다..  :개굴-죄송:",
@@ -26161,30 +26274,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783923543485599"
-  },
-  {
-   "ts": "1783923045.644699",
-   "date": "2026-07-13",
-   "time": "15:10",
-   "store": "취하리",
-   "biz": "5292301135",
-   "pos": "퍼스트포스",
-   "content": "메뉴",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "https://w1659946222-hxm266180.slack.com/archives/C0A7CLLANP7/p1783922921171479?thread_ts=···.589779&cid=C0A7CLLANP7",
-    "현장설치마무리됨 빠르게확인졈"
-   ],
-   "rc": 6,
-   "lr": "1783928257.547179",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783923045644699"
   }
  ],
  "ocr": {
