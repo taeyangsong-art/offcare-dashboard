@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3403,
+  "version": 3404,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -102170,7 +102170,7 @@ window.SLACK_DATA = {
           "김현기": 30
         },
         "onboarding": {
-          "최민석": 7,
+          "최민석": 8,
           "서상원": 2,
           "김규빈": 4,
           "고경림": 5,
@@ -102259,15 +102259,26 @@ window.SLACK_DATA = {
       ],
       "done": [
         {
+          "time": "22:57",
+          "store": "마이핏 필라테스",
+          "biz": "4113901460",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "포프(휴대폰) 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
           "time": "22:15",
           "store": "영어 중심 틔움 푸르넷",
           "biz": "3069116863",
-          "cat": "as",
+          "cat": "onboarding",
           "emp": "최민석",
           "req": "테블릿 + 프론트 온보딩",
           "hw": "",
           "intake": "online",
-          "note": "1차 부재"
+          "note": "1차 부재 / 점주님 자체온보딩 완료 및 사용방법 안내 완료"
         },
         {
           "time": "21:59",
@@ -105013,11 +105024,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 206,
+        "online": 207,
         "offline": 48,
         "unknown": 0
       },
-      "updatedAt": "22:15",
+      "updatedAt": "22:57",
       "voc": {
         "responses": 20,
         "install": {
@@ -127744,7 +127755,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-12 22:45",
+    "at": "2026-08-12 23:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
