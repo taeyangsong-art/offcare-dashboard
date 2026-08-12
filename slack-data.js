@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3361,
+  "version": 3362,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -103362,7 +103362,7 @@ window.SLACK_DATA = {
         "offline": 18,
         "unknown": 0
       },
-      "updatedAt": "14:11",
+      "updatedAt": "14:15",
       "voc": {
         "responses": 1,
         "install": {
@@ -103428,11 +103428,19 @@ window.SLACK_DATA = {
         "praises": []
       },
       "ob": {
-        "count": 4,
+        "count": 5,
         "byEmp": {
-          "김규빈": 4
+          "김규빈": 5
         },
         "items": [
+          {
+            "key": "2026년 8월 12일 오전 8:25:10|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786422837898519#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-12",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786422837898519"
+          },
           {
             "key": "2026년 8월 12일 오전 8:23:44|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786086367013699#1",
             "handler": "김규빈",
@@ -103507,9 +103515,9 @@ window.SLACK_DATA = {
         "post": "1786507202.997419",
         "lastSeen": 1786507231.643
       },
-      "1786511508.456329": {
-        "post": "1786511508.456329",
-        "lastSeen": 1786511546.008
+      "1786511700.924789": {
+        "post": "1786511700.924789",
+        "lastSeen": 1786511724.099
       }
     },
     "days": {
@@ -125018,19 +125026,19 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-12 14:12",
+    "at": "2026-08-12 14:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3480,
-    "named": 168,
+    "named": 169,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 168,
+    "done": 169,
     "byStatus": {
-      "일정등록완료": 99,
+      "일정등록완료": 100,
       "1차부재": 41,
       "점주직접접수": 16,
       "설치불가": 5,

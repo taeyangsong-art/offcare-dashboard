@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 573,
- "updatedAt": "2026-08-12 14:13",
+ "version": 574,
+ "updatedAt": "2026-08-12 14:16",
  "days": 30,
  "items": [
   {
@@ -7910,7 +7910,145 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BNMK680QM",
      "from": "댓글",
-     "path": "menu-files/1786100500_543919-0.png"
+     "path": "menu-files/1786100500_543919-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "CUT",
+       "name": "여성",
+       "price": 23
+      },
+      {
+       "category": "CUT",
+       "name": "남성",
+       "price": 18
+      },
+      {
+       "category": "CUT",
+       "name": "학생컷",
+       "price": 15
+      },
+      {
+       "category": "CUT",
+       "name": "여학생컷",
+       "price": 21
+      },
+      {
+       "category": "CUT",
+       "name": "쥬니어컷",
+       "price": 18
+      },
+      {
+       "category": "DRY",
+       "name": "드라이",
+       "price": 20
+      },
+      {
+       "category": "COLOR [여성]",
+       "name": "뿌리",
+       "price": 80
+      },
+      {
+       "category": "COLOR [여성]",
+       "name": "전체염색",
+       "price": 100
+      },
+      {
+       "category": "COLOR [여성]",
+       "name": "전체탈색",
+       "price": 100
+      },
+      {
+       "category": "COLOR [남성]",
+       "name": "뿌리",
+       "price": 70
+      },
+      {
+       "category": "COLOR [남성]",
+       "name": "전체염색",
+       "price": 80
+      },
+      {
+       "category": "COLOR [남성]",
+       "name": "전체탈색",
+       "price": 90
+      },
+      {
+       "category": "CLINIC",
+       "name": "리프레쉬 크리닉",
+       "price": 30
+      },
+      {
+       "category": "CLINIC",
+       "name": "복원 크리닉",
+       "price": 100
+      },
+      {
+       "category": "PERM [여성]",
+       "name": "일반펌",
+       "price": 100
+      },
+      {
+       "category": "PERM [여성]",
+       "name": "열펌",
+       "price": 170
+      },
+      {
+       "category": "PERM [여성]",
+       "name": "볼륨매직",
+       "price": 220
+      },
+      {
+       "category": "PERM [여성]",
+       "name": "매직+셋팅",
+       "price": 250
+      },
+      {
+       "category": "PERM [여성]",
+       "name": "염색약(손상모) 열펌",
+       "price": 300
+      },
+      {
+       "category": "PERM [여성]",
+       "name": "복원펌",
+       "price": 400
+      },
+      {
+       "category": "PERM [남성]",
+       "name": "일반펌",
+       "price": 80
+      },
+      {
+       "category": "PERM [남성]",
+       "name": "매직",
+       "price": 150
+      },
+      {
+       "category": "PERM [남성]",
+       "name": "볼륨매직,아이롱,특수모",
+       "price": 200
+      },
+      {
+       "category": "PERM [남성]",
+       "name": "앞머리펌",
+       "price": 30
+      },
+      {
+       "category": "PERM [남성]",
+       "name": "앞머리열펌",
+       "price": 80
+      },
+      {
+       "category": "PERM [남성]",
+       "name": "다운펌",
+       "price": 35
+      },
+      {
+       "category": "PERM [남성]",
+       "name": "남성라인염색",
+       "price": 30
+      }
+     ]
     }
    ],
    "datt": [
@@ -8126,7 +8264,9 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BNLPLTY3X",
      "from": "댓글",
-     "path": "menu-files/1786092492_241839-0.png"
+     "path": "menu-files/1786092492_241839-0.png",
+     "kind": "pos_screen",
+     "menu": []
     }
    ],
    "datt": [],
@@ -8196,37 +8336,235 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BN87D30HM",
      "from": "댓글",
-     "path": "menu-files/1786086623_743639-0.png"
+     "path": "menu-files/1786086623_743639-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "김밥",
+       "name": "맛도리김밥",
+       "price": 4000
+      },
+      {
+       "category": "김밥",
+       "name": "참치김밥",
+       "price": 4200
+      },
+      {
+       "category": "김밥",
+       "name": "불닭참치김밥",
+       "price": 4500
+      },
+      {
+       "category": "김밥",
+       "name": "불닭어묵김밥",
+       "price": 4500
+      },
+      {
+       "category": "김밥",
+       "name": "매운멸치김밥",
+       "price": 4800
+      },
+      {
+       "category": "김밥",
+       "name": "당근라페김밥",
+       "price": 6000
+      },
+      {
+       "category": "김밥",
+       "name": "돈까스김밥",
+       "price": 5500
+      },
+      {
+       "category": "김밥",
+       "name": "꼬마김밥",
+       "price": 3000
+      },
+      {
+       "category": "김밥",
+       "name": "멸치꼬마김밥",
+       "price": 3500
+      },
+      {
+       "category": "김밥",
+       "name": "스팸무스비",
+       "price": 6000
+      },
+      {
+       "category": "김밥",
+       "name": "스팸무스비(소)",
+       "price": 3500
+      },
+      {
+       "category": "김밥",
+       "name": "충무김밥",
+       "price": 7000
+      },
+      {
+       "category": "김밥",
+       "name": "반반김밥",
+       "price": 5000
+      }
+     ]
     },
     {
      "name": "image.png",
      "fid": "F0BN87DG5L7",
      "from": "댓글",
-     "path": "menu-files/1786086623_743639-1.png"
+     "path": "menu-files/1786086623_743639-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "라면",
+       "name": "신라면",
+       "price": 3000
+      },
+      {
+       "category": "라면",
+       "name": "진라면",
+       "price": 3000
+      },
+      {
+       "category": "라면",
+       "name": "틈새라면",
+       "price": 3000
+      },
+      {
+       "category": "라면",
+       "name": "극한틈새라면",
+       "price": 3500
+      },
+      {
+       "category": "라면",
+       "name": "짜파게티",
+       "price": 3500
+      },
+      {
+       "category": "라면",
+       "name": "불닭볶음면",
+       "price": 3500
+      },
+      {
+       "category": "라면",
+       "name": "너구리",
+       "price": 3500
+      }
+     ]
     },
     {
      "name": "image.png",
      "fid": "F0BNHBBLZQB",
      "from": "댓글",
-     "path": "menu-files/1786086623_743639-2.png"
+     "path": "menu-files/1786086623_743639-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "컵라면",
+       "name": "육개장",
+       "price": 1500
+      },
+      {
+       "category": "컵라면",
+       "name": "진라면 순한맛(소)",
+       "price": 1500
+      },
+      {
+       "category": "컵라면",
+       "name": "진라면 매운맛(소)",
+       "price": 1500
+      },
+      {
+       "category": "컵라면",
+       "name": "신라면(소)",
+       "price": 1500
+      },
+      {
+       "category": "컵라면",
+       "name": "불닭볶음면(소)",
+       "price": 2000
+      },
+      {
+       "category": "컵라면",
+       "name": "신라면",
+       "price": 2000
+      }
+     ]
     },
     {
      "name": "image.png",
      "fid": "F0BNHBD8SFM",
      "from": "댓글",
-     "path": "menu-files/1786086623_743639-3.png"
+     "path": "menu-files/1786086623_743639-3.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "기타",
+       "name": "계란",
+       "price": 500
+      },
+      {
+       "category": "기타",
+       "name": "오징어 무침",
+       "price": 3000
+      }
+     ]
     },
     {
      "name": "image.png",
      "fid": "F0BNT9BFR3N",
      "from": "댓글",
-     "path": "menu-files/1786086623_743639-4.png"
+     "path": "menu-files/1786086623_743639-4.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "음료수",
+       "name": "코카콜라",
+       "price": 2000
+      },
+      {
+       "category": "음료수",
+       "name": "사이다",
+       "price": 2000
+      }
+     ]
     },
     {
      "name": "image.png",
      "fid": "F0BNHBCV81H",
      "from": "댓글",
-     "path": "menu-files/1786086623_743639-5.png"
+     "path": "menu-files/1786086623_743639-5.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "선결제",
+       "name": "100원",
+       "price": 100
+      },
+      {
+       "category": "선결제",
+       "name": "500원",
+       "price": 500
+      },
+      {
+       "category": "선결제",
+       "name": "1000원",
+       "price": 1000
+      },
+      {
+       "category": "선결제",
+       "name": "5000원",
+       "price": 5000
+      },
+      {
+       "category": "선결제",
+       "name": "10000원",
+       "price": 10000
+      },
+      {
+       "category": "선결제",
+       "name": "50000원",
+       "price": 50000
+      }
+     ]
     }
    ],
    "datt": [],
@@ -8275,19 +8613,138 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BNMFVEVD4",
      "from": "댓글",
-     "path": "menu-files/1786084741_879149-0.png"
+     "path": "menu-files/1786084741_879149-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "세트",
+       "name": "두식+사이드",
+       "price": 28000
+      },
+      {
+       "category": "세트",
+       "name": "묵은지+사이드",
+       "price": 31000
+      },
+      {
+       "category": "세트",
+       "name": "닭한마리+사이드",
+       "price": 31000
+      },
+      {
+       "category": "세트",
+       "name": "국물찜닭+사이드",
+       "price": 31000
+      },
+      {
+       "category": "세트",
+       "name": "카레+사이드",
+       "price": 31000
+      },
+      {
+       "category": "세트",
+       "name": "마라+사이드",
+       "price": 31000
+      }
+     ]
     },
     {
      "name": "image.png",
      "fid": "F0BPHRCCB2L",
      "from": "댓글",
-     "path": "menu-files/1786084741_879149-1.png"
+     "path": "menu-files/1786084741_879149-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "메인",
+       "name": "묵은지",
+       "price": 31000
+      },
+      {
+       "category": "메인",
+       "name": "국물찜닭",
+       "price": 31000
+      },
+      {
+       "category": "메인",
+       "name": "닭한마리",
+       "price": 31000
+      },
+      {
+       "category": "메인",
+       "name": "카레",
+       "price": 31000
+      },
+      {
+       "category": "메인",
+       "name": "마라",
+       "price": 31000
+      },
+      {
+       "category": "메인",
+       "name": "소고기육전",
+       "price": 10000
+      },
+      {
+       "category": "메인",
+       "name": "파김치(포장)200g",
+       "price": 5000
+      },
+      {
+       "category": "메인",
+       "name": "묵은지 추가",
+       "price": 7000
+      },
+      {
+       "category": "메인",
+       "name": "닭 반마리(뼈) 추가",
+       "price": 10000
+      },
+      {
+       "category": "메인",
+       "name": "닭 300g(순살) 추가",
+       "price": 13000
+      }
+     ]
     },
     {
      "name": "image.png",
      "fid": "F0BNL180Y0M",
      "from": "댓글",
-     "path": "menu-files/1786084741_879149-2.png"
+     "path": "menu-files/1786084741_879149-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "세트",
+       "name": "리뷰 쿠폰",
+       "price": 0
+      },
+      {
+       "category": "포장",
+       "name": "(반찬X)",
+       "price": 0
+      },
+      {
+       "category": "사리",
+       "name": "한우대창 200g",
+       "price": 13000
+      },
+      {
+       "category": "사리",
+       "name": "완도산전복 5마리",
+       "price": 15000
+      },
+      {
+       "category": "사리",
+       "name": "꽃게추가",
+       "price": 10000
+      },
+      {
+       "category": "사리",
+       "name": "차돌박이 200g",
+       "price": 15000
+      }
+     ]
     }
    ],
    "datt": [],
@@ -8359,7 +8816,9 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BN6UH7WVD",
      "from": "댓글",
-     "path": "menu-files/1786071542_263139-0.png"
+     "path": "menu-files/1786071542_263139-0.png",
+     "kind": "pos_screen",
+     "menu": []
     },
     {
      "name": "image.png",
