@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 583,
- "updatedAt": "2026-08-12 16:30",
+ "version": 584,
+ "updatedAt": "2026-08-12 16:45",
  "days": 30,
  "items": [
   {
@@ -25990,138 +25990,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783929012310339"
-  },
-  {
-   "ts": "1783928237.616249",
-   "date": "2026-07-13",
-   "time": "16:37",
-   "store": "소룡",
-   "biz": "7421302679",
-   "pos": "토스포스",
-   "content": "이대로 해주시면 됩니다",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/1n1qTC6SWvL8D-0Nwe-EXde0ZR8fW5N37/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "1n1qTC6SWvL8D-0Nwe-EXde0ZR8fW5N37",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "",
-       "name": "뭉티기 150g",
-       "price": 17900
-      },
-      {
-       "category": "",
-       "name": "육회 150g",
-       "price": 12900
-      },
-      {
-       "category": "",
-       "name": "매운 야끼우동",
-       "price": 9800
-      },
-      {
-       "category": "",
-       "name": "토마토계란볶음면",
-       "price": 8900
-      },
-      {
-       "category": "",
-       "name": "베이컨건두부춘장볶음",
-       "price": 7900
-      },
-      {
-       "category": "",
-       "name": "베트남 숙주라면",
-       "price": 5900
-      },
-      {
-       "category": "",
-       "name": "새우 튀김",
-       "price": 3900
-      },
-      {
-       "category": "",
-       "name": "야채고로케",
-       "price": 3900
-      },
-      {
-       "category": "복분자",
-       "name": "백년장수 360ml",
-       "price": 6000
-      },
-      {
-       "category": "복분자",
-       "name": "보해 375ml",
-       "price": 11000
-      },
-      {
-       "category": "소주",
-       "name": "참이슬",
-       "price": 5000
-      },
-      {
-       "category": "소주",
-       "name": "한라산21",
-       "price": 5000
-      },
-      {
-       "category": "맥주",
-       "name": "카스 500ml",
-       "price": 5000
-      },
-      {
-       "category": "맥주",
-       "name": "칭타오 640ml",
-       "price": 5000
-      },
-      {
-       "category": "연태스페셜",
-       "name": "소 125ml",
-       "price": 6000
-      },
-      {
-       "category": "연태스페셜",
-       "name": "중 250ml",
-       "price": 11000
-      },
-      {
-       "category": "와인(알파카 화이트)",
-       "name": "잔 100ml",
-       "price": 2900
-      },
-      {
-       "category": "와인(알파카 화이트)",
-       "name": "병 750ml",
-       "price": 20000
-      },
-      {
-       "category": "음료",
-       "name": "코카콜라제로 190ml",
-       "price": 1000
-      },
-      {
-       "category": "음료",
-       "name": "칠성사이다 210ml",
-       "price": 1000
-      }
-     ]
-    }
-   ],
-   "replies": [
-    "완료"
-   ],
-   "rc": 2,
-   "lr": "1783929259.387859",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783928237616249"
   }
  ],
  "ocr": {
