@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3353,
+  "version": 3354,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -102157,6 +102157,13 @@ window.SLACK_DATA = {
     },
     "2026-08-12": {
       "counts": {
+        "onboarding": {
+          "김규빈": 1,
+          "배선유": 1,
+          "김동욱": 2,
+          "송태양": 3,
+          "심성현": 2
+        },
         "as": {
           "김규빈": 1,
           "송태양": 3,
@@ -102165,12 +102172,6 @@ window.SLACK_DATA = {
           "김현기": 8,
           "배선유": 5,
           "심성현": 10
-        },
-        "onboarding": {
-          "배선유": 1,
-          "김동욱": 2,
-          "송태양": 3,
-          "심성현": 2
         },
         "extern": {
           "김동욱": 1
@@ -102202,6 +102203,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "12:15",
+          "store": "수완이지수학학원",
+          "biz": "2549500559",
+          "cat": "onboarding",
+          "emp": "김규빈",
+          "req": "갤럭시 + 프론트 온보딩 .",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 및 사용방법 안내 완료"
+        },
         {
           "time": "12:00",
           "store": "몸선 필라테스&amp;발레핏",
@@ -102913,11 +102925,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 50,
+        "online": 51,
         "offline": 15,
         "unknown": 0
       },
-      "updatedAt": "12:25",
+      "updatedAt": "12:30",
       "voc": {
         "responses": 1,
         "install": {
@@ -103020,11 +103032,11 @@ window.SLACK_DATA = {
       },
       "1786505146.072969": {
         "post": "1786505146.072969",
-        "lastSeen": 1786505232.847
+        "lastSeen": 1786505427.239
       },
-      "1786504967.037389": {
-        "post": "1786504967.037389",
-        "lastSeen": 1786505232.847
+      "1786505403.367759": {
+        "post": "1786505403.367759",
+        "lastSeen": 1786505427.239
       }
     },
     "days": {
@@ -124252,8 +124264,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-12": {
-        "cnt": 18,
-        "sumMin": 193.5773576458295,
+        "cnt": 19,
+        "sumMin": 199.6274511615435,
         "over": 1,
         "items": [
           {
@@ -124399,13 +124411,21 @@ window.SLACK_DATA = {
             "biz": "2549500559",
             "who": "김규빈",
             "cat": "as"
+          },
+          {
+            "hm": "12:22",
+            "min": 6.1,
+            "store": "소코드레스",
+            "biz": "8312200857",
+            "who": "김규빈",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-12 12:27",
+    "at": "2026-08-12 12:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
