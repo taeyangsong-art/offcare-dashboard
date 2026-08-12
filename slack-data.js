@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3400,
+  "version": 3401,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -102158,7 +102158,7 @@ window.SLACK_DATA = {
     "2026-08-12": {
       "counts": {
         "as": {
-          "최민석": 14,
+          "최민석": 15,
           "서상원": 7,
           "배선유": 19,
           "김기범": 3,
@@ -102258,6 +102258,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "22:15",
+          "store": "영어 중심 틔움 푸르넷",
+          "biz": "3069116863",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "테블릿 + 프론트 온보딩",
+          "hw": "",
+          "intake": "online",
+          "note": "1차 부재"
+        },
         {
           "time": "21:10",
           "store": "원가마켓 별내점",
@@ -104991,7 +105002,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 204,
+        "online": 205,
         "offline": 48,
         "unknown": 0
       },
@@ -105545,11 +105556,7 @@ window.SLACK_DATA = {
       },
       "1786539566.998359": {
         "post": "1786539566.998359",
-        "lastSeen": 1786540533.314
-      },
-      "1786540500.176199": {
-        "post": "1786540500.176199",
-        "lastSeen": 1786540533.314
+        "lastSeen": 1786541434.326
       }
     },
     "days": {
@@ -126777,8 +126784,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-12": {
-        "cnt": 116,
-        "sumMin": 1958.8238335529963,
+        "cnt": 117,
+        "sumMin": 1966.8845635692278,
         "over": 12,
         "items": [
           {
@@ -127708,13 +127715,21 @@ window.SLACK_DATA = {
             "biz": "3102302355",
             "who": "최민석",
             "cat": "as"
+          },
+          {
+            "hm": "22:15",
+            "min": 8.1,
+            "store": "영어 중심 틔움 푸르넷",
+            "biz": "3069116863",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-12 22:15",
+    "at": "2026-08-12 22:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
