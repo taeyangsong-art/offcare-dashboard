@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 576,
- "updatedAt": "2026-08-12 14:47",
+ "version": 577,
+ "updatedAt": "2026-08-12 15:02",
  "days": 30,
  "items": [
   {
@@ -11189,7 +11189,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BN39Y43EJ",
      "from": "댓글",
-     "path": "menu-files/1785921324_217409-0.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -11302,13 +11301,13 @@ window.MENU_REQUESTS = {
        "name": "[V]디카페인콜드브루라떼(HOT)",
        "price": 6000
       }
-     ]
+     ],
+     "path": "menu-files/1785921324_217409-0.png"
     },
     {
      "name": "image.png",
      "fid": "F0BMPTZ45JT",
      "from": "댓글",
-     "path": "menu-files/1785921324_217409-1.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -11341,13 +11340,13 @@ window.MENU_REQUESTS = {
        "name": "[V]그샷추",
        "price": 5000
       }
-     ]
+     ],
+     "path": "menu-files/1785921324_217409-1.png"
     },
     {
      "name": "image.png",
      "fid": "F0BMZ2B1L59",
      "from": "댓글",
-     "path": "menu-files/1785921324_217409-2.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -11460,13 +11459,13 @@ window.MENU_REQUESTS = {
        "name": "[V]쌍화라떼",
        "price": 6300
       }
-     ]
+     ],
+     "path": "menu-files/1785921324_217409-2.png"
     },
     {
      "name": "image.png",
      "fid": "F0BN90K2736",
      "from": "댓글",
-     "path": "menu-files/1785921324_217409-3.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -11519,19 +11518,1086 @@ window.MENU_REQUESTS = {
        "name": "[V]에이드(한라봉)",
        "price": 5500
       }
-     ]
+     ],
+     "path": "menu-files/1785921324_217409-3.png"
     },
     {
      "name": "image.png",
      "fid": "F0BN1T3BE7P",
      "from": "댓글",
-     "path": "menu-files/1785921324_217409-4.png"
+     "path": "menu-files/1785921324_217409-4.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]캐모마일블렌딩",
+       "price": 4500
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]페퍼민트",
+       "price": 4500
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]얼그레이",
+       "price": 4500
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]녹차",
+       "price": 4500
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]오렌지루이보스",
+       "price": 4500
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]쌍화차",
+       "price": 4800
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]아이스 캐모마일 블렌딩",
+       "price": 5000
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]아이스 페퍼민트",
+       "price": 5000
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]아이스 얼그레이",
+       "price": 5000
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]아이스 녹차",
+       "price": 5500
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]아이스 오렌지루이보스",
+       "price": 5000
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]아이스 쌍화차",
+       "price": 5800
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]꿀과실차(생강)",
+       "price": 4500
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]꿀과실차(자몽)",
+       "price": 4500
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]꿀과실차(레몬)",
+       "price": 4500
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]꿀과실차(유자)",
+       "price": 4500
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]꿀과실차(대추)",
+       "price": 4500
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]꿀과실차(모과)",
+       "price": 4500
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]아이스 꿀과실차(생강)",
+       "price": 5000
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]아이스 꿀과실차(자몽)",
+       "price": 5000
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]아이스 꿀과실차(레몬)",
+       "price": 5000
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]아이스 꿀과실차(유자)",
+       "price": 5000
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]아이스 꿀과실차(대추)",
+       "price": 5000
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]아이스 꿀과실차(모과)",
+       "price": 5000
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]스위트후르츠",
+       "price": 4000
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]아이스 스위트후르츠",
+       "price": 4500
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[V]쌍화차",
+       "price": 5800
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[V]아이스 쌍화차",
+       "price": 6800
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[V]스위트후르츠",
+       "price": 5000
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[V]아이스 스위트후르츠",
+       "price": 5500
+      }
+     ]
     },
     {
      "name": "image.png",
      "fid": "F0BN598QUBC",
      "from": "댓글",
-     "path": "menu-files/1785921324_217409-5.png"
+     "path": "menu-files/1785921324_217409-5.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "허브티후르츠티",
+       "name": "[T]아이스티(레몬)",
+       "price": 3000
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[T]아이스티(복숭아)",
+       "price": 3000
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[T]아샷추",
+       "price": 3000
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]아이스티(레몬)",
+       "price": 3500
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]아이스티(복숭아)",
+       "price": 3500
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]아샷추",
+       "price": 4000
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[V]아이스티(레몬)",
+       "price": 4500
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[V]아이스티(복숭아)",
+       "price": 4500
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[V]아샷추",
+       "price": 5000
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]놀라운망고",
+       "price": 2800
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]놀라운패션후르츠",
+       "price": 2800
+      },
+      {
+       "category": "허브티후르츠티",
+       "name": "[G]놀라운청포도",
+       "price": 2800
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BMZ2DMQ2X",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "스페셜",
+       "name": "[G]커피에바나나",
+       "price": 4500
+      },
+      {
+       "category": "스페셜",
+       "name": "[G]크림에바나나",
+       "price": 4500
+      },
+      {
+       "category": "스페셜",
+       "name": "[V]커피에바나나",
+       "price": 5500
+      },
+      {
+       "category": "스페셜",
+       "name": "[V]크림에바나나",
+       "price": 5500
+      },
+      {
+       "category": "스페셜",
+       "name": "[G]아이스 커피에바나나",
+       "price": 5000
+      },
+      {
+       "category": "스페셜",
+       "name": "[G]아이스 크림에바나나",
+       "price": 5000
+      },
+      {
+       "category": "스페셜",
+       "name": "[V]아이스 커피에바나나",
+       "price": 6000
+      },
+      {
+       "category": "스페셜",
+       "name": "[V]아이스 크림에바나나",
+       "price": 6000
+      },
+      {
+       "category": "스페셜",
+       "name": "빙수(옛날팥)",
+       "price": 9000
+      },
+      {
+       "category": "스페셜",
+       "name": "빙수(망고코코넛)",
+       "price": 8000
+      },
+      {
+       "category": "스페셜",
+       "name": "컵빙수(옛날팥)",
+       "price": 4000
+      },
+      {
+       "category": "스페셜",
+       "name": "콜드브루 포장(대)",
+       "price": 1300
+      },
+      {
+       "category": "스페셜",
+       "name": "콜드브루 포장(소)",
+       "price": 1100
+      },
+      {
+       "category": "스페셜",
+       "name": "디카페인 콜드브루 500ml",
+       "price": 10500
+      },
+      {
+       "category": "스페셜",
+       "name": "콜드브루 1L",
+       "price": 19000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BMZ2DRLBD",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "베이커리",
+       "name": "머핀(초코칩)",
+       "price": 2500
+      },
+      {
+       "category": "베이커리",
+       "name": "머핀(치즈)",
+       "price": 2500
+      },
+      {
+       "category": "베이커리",
+       "name": "머핀(블루베리)",
+       "price": 2500
+      },
+      {
+       "category": "베이커리",
+       "name": "케익(수플레치즈)",
+       "price": 4800
+      },
+      {
+       "category": "베이커리",
+       "name": "케익(초코티라미수)",
+       "price": 5000
+      },
+      {
+       "category": "베이커리",
+       "name": "스위트고구마케익",
+       "price": 5000
+      },
+      {
+       "category": "베이커리",
+       "name": "떠먹는티라미수",
+       "price": 3800
+      },
+      {
+       "category": "베이커리",
+       "name": "허니버터브레드",
+       "price": 5000
+      },
+      {
+       "category": "베이커리",
+       "name": "갈릭브레드",
+       "price": 5200
+      },
+      {
+       "category": "베이커리",
+       "name": "크로크무슈",
+       "price": 4000
+      },
+      {
+       "category": "베이커리",
+       "name": "벨지움와플",
+       "price": 4000
+      },
+      {
+       "category": "베이커리",
+       "name": "크로플(플레인)",
+       "price": 2800
+      },
+      {
+       "category": "베이커리",
+       "name": "크로와상(플레인)",
+       "price": 3500
+      },
+      {
+       "category": "베이커리",
+       "name": "소금빵",
+       "price": 2700
+      },
+      {
+       "category": "베이커리",
+       "name": "모카번",
+       "price": 2700
+      },
+      {
+       "category": "베이커리",
+       "name": "대만샌드위치(에그듬뿍)",
+       "price": 2700
+      },
+      {
+       "category": "베이커리",
+       "name": "대만샌드위치(햄치즈)",
+       "price": 2700
+      },
+      {
+       "category": "베이커리",
+       "name": "대만샌드위치(초코크림)",
+       "price": 2700
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BMZ2FAEG3",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "커피(아이스)",
+       "name": "[G]아이스 아메리카노",
+       "price": 3000
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[G]아이스 카페라테",
+       "price": 4500
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[G]아이스 바닐라라떼",
+       "price": 5000
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[G]아이스 카라멜라떼",
+       "price": 5000
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[G]아이스 카페모카",
+       "price": 5000
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[G]아이스 카라멜마끼아또",
+       "price": 5000
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[G]연유바닐라불",
+       "price": 5000
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[G]아샷추",
+       "price": 4000
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[1L]아이스 아메리카노",
+       "price": 6000
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[V]아이스 아메리카노",
+       "price": 4000
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[V]아이스 카페라테",
+       "price": 5500
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[V]아이스 바닐라라떼",
+       "price": 6000
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[V]아이스 카라멜라떼",
+       "price": 6000
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[V]아이스 카페모카",
+       "price": 6000
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[V]연유바닐라불",
+       "price": 6000
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[V]아이스 카라멜마끼아또",
+       "price": 6000
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[V]아샷추",
+       "price": 5000
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[G]콜드브루(ICE)",
+       "price": 4500
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[G]콜드브루라떼(ICE)",
+       "price": 5500
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[G]디카페인콜드브루(ICE)",
+       "price": 4500
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[G]디카페인콜드브루라떼(ICE)",
+       "price": 5500
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[V]콜드브루(ICE)",
+       "price": 5500
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[V]콜드브루라떼(ICE)",
+       "price": 6500
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[V]디카페인콜드브루(ICE)",
+       "price": 5500
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[V]디카페인콜드브루라떼(ICE)",
+       "price": 6500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BMPU3GJR5",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "커피(아이스)",
+       "name": "[T]연유바닐라볼",
+       "price": 4800
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[T]카라멜바닐라볼",
+       "price": 4300
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[T]모카바닐라볼",
+       "price": 4300
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[T]아이스 버터크림라떼",
+       "price": 3500
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[T]아이스 그샷추",
+       "price": 3500
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[G]연유바닐라볼",
+       "price": 5000
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[G]카라멜바닐라볼",
+       "price": 4800
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[G]모카바닐라볼",
+       "price": 4800
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[G]아이스 버터크림라떼",
+       "price": 4000
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[G]아이스 그샷추",
+       "price": 4000
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[V]연유바닐라볼",
+       "price": 6000
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[V]카라멜바닐라볼",
+       "price": 5800
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[V]모카바닐라볼",
+       "price": 5800
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[V]아이스 버터크림라떼",
+       "price": 5000
+      },
+      {
+       "category": "커피(아이스)",
+       "name": "[V]아이스 그샷추",
+       "price": 5000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BN1TB7G2Z",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "COUPON",
+       "name": "[쿠폰]아메리카노",
+       "price": 2000
+      },
+      {
+       "category": "COUPON",
+       "name": "[쿠폰]아이스 아메리카노",
+       "price": 2500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BN90T8CCC",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "스무디프라페",
+       "name": "[G]요거트스무디(플레인)",
+       "price": 5000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[G]요거트스무디(딸기)",
+       "price": 5000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[G]요거트스무디(블루베리)",
+       "price": 5000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[G]과일스무디(망고)",
+       "price": 5000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[G]과일스무디(딸기바나나)",
+       "price": 5000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[G]프라페(그린티)",
+       "price": 5000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[G]프라페(쿠앤크)",
+       "price": 5000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[G]프라페(민트초코)",
+       "price": 5000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[G]프라페(자바칩)",
+       "price": 5000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[G]프라페(초코바나나)",
+       "price": 5000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[V]딸기돼지색",
+       "price": 5500
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[V]초코돼지색",
+       "price": 5500
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[G]스무디(스트로베리크림)",
+       "price": 5000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[G]흑당버블라떼",
+       "price": 5000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[G]흑당버블스무디",
+       "price": 5000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[V]요거트스무디(플레인)",
+       "price": 6000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[V]요거트스무디(딸기)",
+       "price": 6000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[V]요거트스무디(블루베리)",
+       "price": 6000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[V]과일스무디(망고)",
+       "price": 6000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[V]과일스무디(딸기바나나)",
+       "price": 6000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[V]프라페(그린티)",
+       "price": 6000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[V]프라페(쿠앤크)",
+       "price": 6000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[V]프라페(민트초코)",
+       "price": 6000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[V]프라페(자바칩)",
+       "price": 6000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[V]프라페(초코바나나)",
+       "price": 6000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[V]스무디(스트로베리크림)",
+       "price": 6000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[V]흑당버블라떼",
+       "price": 6000
+      },
+      {
+       "category": "스무디프라페",
+       "name": "[V]흑당버블스무디",
+       "price": 6000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BN1TCQPTP",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주스",
+       "name": "[G]비타민주스(골드키위)",
+       "price": 4500
+      },
+      {
+       "category": "주스",
+       "name": "[G]딸기주스",
+       "price": 4800
+      },
+      {
+       "category": "주스",
+       "name": "[V]딸기주스",
+       "price": 5800
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BN3A9V5JS",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "추가",
+       "name": "연하게",
+       "price": 0
+      },
+      {
+       "category": "추가",
+       "name": "진하게",
+       "price": 0
+      },
+      {
+       "category": "추가",
+       "name": "덜달게",
+       "price": 0
+      },
+      {
+       "category": "추가",
+       "name": "달게",
+       "price": 0
+      },
+      {
+       "category": "추가",
+       "name": "덜뜨겁게",
+       "price": 0
+      },
+      {
+       "category": "추가",
+       "name": "뜨겁게",
+       "price": 0
+      },
+      {
+       "category": "추가",
+       "name": "얼음조금",
+       "price": 0
+      },
+      {
+       "category": "추가",
+       "name": "얼음많이",
+       "price": 0
+      },
+      {
+       "category": "추가",
+       "name": "얼음빼고",
+       "price": 0
+      },
+      {
+       "category": "추가",
+       "name": "[IN]",
+       "price": 0
+      },
+      {
+       "category": "추가",
+       "name": "[OUT]",
+       "price": 0
+      },
+      {
+       "category": "추가",
+       "name": "우유조금",
+       "price": 0
+      },
+      {
+       "category": "추가",
+       "name": "우유많이",
+       "price": 0
+      },
+      {
+       "category": "추가",
+       "name": "휘핑빼고",
+       "price": 0
+      },
+      {
+       "category": "추가",
+       "name": "휘핑있음",
+       "price": 0
+      },
+      {
+       "category": "추가",
+       "name": "휘핑많이",
+       "price": 0
+      },
+      {
+       "category": "추가",
+       "name": "T사이즈",
+       "price": 0
+      },
+      {
+       "category": "추가",
+       "name": "G사이즈",
+       "price": 500
+      },
+      {
+       "category": "추가",
+       "name": "V사이즈",
+       "price": 1000
+      },
+      {
+       "category": "추가",
+       "name": "V사이즈",
+       "price": 1500
+      },
+      {
+       "category": "추가",
+       "name": "아이스크림추가",
+       "price": 500
+      },
+      {
+       "category": "추가",
+       "name": "1샷추가",
+       "price": 500
+      },
+      {
+       "category": "추가",
+       "name": "휘핑추가",
+       "price": 500
+      },
+      {
+       "category": "추가",
+       "name": "우유추가",
+       "price": 500
+      },
+      {
+       "category": "추가",
+       "name": "버블추가",
+       "price": 1000
+      },
+      {
+       "category": "추가",
+       "name": "달고나토핑추가",
+       "price": 1000
+      },
+      {
+       "category": "추가",
+       "name": "아이스변경",
+       "price": 500
+      },
+      {
+       "category": "추가",
+       "name": "시럽추가",
+       "price": 500
+      },
+      {
+       "category": "추가",
+       "name": "바닐라시럽추가",
+       "price": 500
+      },
+      {
+       "category": "추가",
+       "name": "카라멜시럽추가",
+       "price": 500
+      },
+      {
+       "category": "추가",
+       "name": "헤이즐넛시럽추가",
+       "price": 500
+      },
+      {
+       "category": "추가",
+       "name": "흑당시럽추가",
+       "price": 1000
+      },
+      {
+       "category": "추가",
+       "name": "두유변경",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BMPU99WGP",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "디저트",
+       "name": "마카롱(딸기)",
+       "price": 1500
+      },
+      {
+       "category": "디저트",
+       "name": "마카롱(바닐라)",
+       "price": 1500
+      },
+      {
+       "category": "디저트",
+       "name": "마카롱(블루베리)",
+       "price": 1500
+      },
+      {
+       "category": "디저트",
+       "name": "마카롱(초콜릿)",
+       "price": 1500
+      },
+      {
+       "category": "디저트",
+       "name": "마카롱(쿠앤크)",
+       "price": 1500
+      },
+      {
+       "category": "디저트",
+       "name": "마카롱(민트)",
+       "price": 1500
+      },
+      {
+       "category": "디저트",
+       "name": "마카롱(요거트)",
+       "price": 1500
+      },
+      {
+       "category": "디저트",
+       "name": "쿠키(초콜릿청크)",
+       "price": 2000
+      },
+      {
+       "category": "디저트",
+       "name": "미니핫치즈쿠키",
+       "price": 3000
+      },
+      {
+       "category": "디저트",
+       "name": "커피콩빵",
+       "price": 3000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BMZ2NMUUB",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "콜드브루",
+       "name": "콜드브루 1L",
+       "price": 19000
+      },
+      {
+       "category": "콜드브루",
+       "name": "콜드브루 포장(대)",
+       "price": 1300
+      },
+      {
+       "category": "콜드브루",
+       "name": "콜드브루 500ml",
+       "price": 10000
+      },
+      {
+       "category": "콜드브루",
+       "name": "디카페인 콜드브루 500ml",
+       "price": 10500
+      },
+      {
+       "category": "콜드브루",
+       "name": "콜드브루 포장(소)",
+       "price": 1100
+      }
+     ]
     }
    ],
    "datt": [],
