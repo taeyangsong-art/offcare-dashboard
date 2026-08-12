@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3368,
+  "version": 3369,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -102159,11 +102159,11 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "서상원": 2,
+          "심성현": 20,
           "김현기": 21,
           "배선유": 11,
           "김동욱": 14,
           "고경림": 12,
-          "심성현": 19,
           "송태양": 9,
           "김규빈": 4
         },
@@ -102241,6 +102241,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "5분후"
+        },
+        {
+          "time": "15:29",
+          "store": "등촌샤브칼국수 강남역점",
+          "biz": "2942202100",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "와이파이 무프가 오늘 갑자기 빈종이로 영수증 무한 출력되어",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
         },
         {
           "time": "15:28",
@@ -103803,10 +103814,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 117,
-        "offline": 28,
+        "offline": 29,
         "unknown": 0
       },
-      "updatedAt": "15:41",
+      "updatedAt": "15:45",
       "voc": {
         "responses": 12,
         "install": {
@@ -104273,15 +104284,27 @@ window.SLACK_DATA = {
       },
       "1786514503.428579": {
         "post": "1786514503.428579",
-        "lastSeen": 1786516985.698
+        "lastSeen": 1786517125.246
       },
       "1786516910.617449": {
         "post": "1786516910.617449",
-        "lastSeen": 1786516985.698
+        "lastSeen": 1786517125.246
       },
       "1786516345.421959": {
         "post": "1786516345.421959",
-        "lastSeen": 1786516985.698
+        "lastSeen": 1786517125.246
+      },
+      "1786517103.988949": {
+        "post": "1786517103.988949",
+        "lastSeen": 1786517125.246
+      },
+      "1786517022.299379": {
+        "post": "1786517022.299379",
+        "lastSeen": 1786517125.246
+      },
+      "1786517100.537449": {
+        "post": "1786517100.537449",
+        "lastSeen": 1786517125.246
       }
     },
     "days": {
@@ -125870,13 +125893,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-12 15:43",
+    "at": "2026-08-12 15:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3482,
+    "rows": 3483,
     "named": 189,
     "unknownName": 0,
     "beforeStart": 0,

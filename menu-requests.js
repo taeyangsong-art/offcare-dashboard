@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 580,
- "updatedAt": "2026-08-12 15:43",
+ "version": 581,
+ "updatedAt": "2026-08-12 15:45",
  "days": 30,
  "items": [
   {
@@ -26244,29 +26244,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783927072174089"
-  },
-  {
-   "ts": "1783925128.229169",
-   "date": "2026-07-13",
-   "time": "15:45",
-   "store": "정상카츠",
-   "biz": "1898102289",
-   "pos": "",
-   "content": "메뉴 등록 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "고객용 채널 노출 사용 설정도 부탁드립니다!"
-   ],
-   "rc": 4,
-   "lr": "1783929083.770769",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783925128229169"
   }
  ],
  "ocr": {
