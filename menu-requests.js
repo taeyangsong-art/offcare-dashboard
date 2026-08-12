@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 579,
- "updatedAt": "2026-08-12 15:30",
+ "version": 580,
+ "updatedAt": "2026-08-12 15:43",
  "days": 30,
  "items": [
   {
@@ -41,14 +41,124 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "IMG_1818.jpeg",
+     "fid": "F0BPNJ9DZLJ",
+     "from": "댓글",
+     "path": "menu-files/1786514835_411919-0.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "사시미",
+       "name": "동양집 제철 숙성 사시미",
+       "price": 39000
+      },
+      {
+       "category": "사시미",
+       "name": "우니 단새우 한판 (한정수량)",
+       "price": 28000
+      },
+      {
+       "category": "사시미",
+       "name": "우니추가",
+       "price": 14000
+      },
+      {
+       "category": "국물 요리",
+       "name": "동해안 통골뱅이 어묵탕",
+       "price": 28000
+      },
+      {
+       "category": "국물 요리",
+       "name": "마라 낙지 우삼겹 나베",
+       "price": 28000
+      },
+      {
+       "category": "국물 요리",
+       "name": "면사리 추가",
+       "price": 3000
+      },
+      {
+       "category": "국물 요리",
+       "name": "야채 추가",
+       "price": 3000
+      },
+      {
+       "category": "국물 요리",
+       "name": "얼큰한 차돌 된장 술밥",
+       "price": 12000
+      },
+      {
+       "category": "요리",
+       "name": "항정수육과 미나리 무침",
+       "price": 28000
+      },
+      {
+       "category": "요리",
+       "name": "완도 전복 내장 크림파스타",
+       "price": 22000
+      },
+      {
+       "category": "요리",
+       "name": "닭목살 구이",
+       "price": 21000
+      },
+      {
+       "category": "전 , 튀김,구이",
+       "name": "통새우 미나리전",
+       "price": 19800
+      },
+      {
+       "category": "전 , 튀김,구이",
+       "name": "명란 치즈 감자전",
+       "price": 18900
+      },
+      {
+       "category": "전 , 튀김,구이",
+       "name": "참나물 김치전",
+       "price": 18900
+      },
+      {
+       "category": "전 , 튀김,구이",
+       "name": "간장 마늘 숙성 치킨 난반",
+       "price": 17800
+      },
+      {
+       "category": "전 , 튀김,구이",
+       "name": "고소한 대삼치 구이",
+       "price": 14000
+      },
+      {
+       "category": "곁들임",
+       "name": "낙지 감태 주먹밥",
+       "price": 9000
+      },
+      {
+       "category": "곁들임",
+       "name": "바닐라 라즈베리 아이스크림",
+       "price": 9000
+      },
+      {
+       "category": "곁들임",
+       "name": "미나리 회무침 (한정수량)",
+       "price": 13000
+      },
+      {
+       "category": "곁들임",
+       "name": "닭껍질 교자",
+       "price": 9000
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1786514838.922529",
+   "rc": 2,
+   "lr": "1786516799.561299",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786514835411919"
   },
   {
@@ -26157,29 +26267,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783925128229169"
-  },
-  {
-   "ts": "1783924382.476139",
-   "date": "2026-07-13",
-   "time": "15:33",
-   "store": "골목길",
-   "biz": "2940603676",
-   "pos": "토스포스",
-   "content": "토스포스 메뉴 추가 등록 요청드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "맥주 > 제주엘 옆에 버드와이저 8000원 추가\n소주 음료 >  탄산수 2000원 추가\n\n감사합니다!"
-   ],
-   "rc": 3,
-   "lr": "1783928989.838869",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783924382476139"
   }
  ],
  "ocr": {
