@@ -1977,18 +1977,33 @@ function obItems(dates){
     (ob.items||[]).forEach(it=>out.push({...it,_date:d})); });
   return out;
 }
-// 야간 탭에서는 null — 시트에 시각이 없어 야간 건만 골라낼 방법이 없다(0으로 찍으면 '없다'로 오해된다)
-function obCnt(dates){
-  if(ovShift==='night') return null;
+// 야간/주간과 무관한 순수 건수. 관리탭은 전체현황의 야간 토글을 따르면 안 되므로 이쪽을 쓴다.
+function obCntRaw(dates){
   let n=0;
   dates.forEach(d=>{ const ob=(slackDay(d)||{}).ob; if(!ob) return;
     n += (ob.items||[]).length || ob.count || 0; });
   return n;
 }
+// 야간 탭에서는 null — 시트에 확인 시각이 없어 야간 건만 골라낼 방법이 없다(0으로 찍으면 '없다'로 오해된다)
+function obCnt(dates){ return ovShift==='night' ? null : obCntRaw(dates); }
+/* 설치 OB 를 슬랙 done 항목과 같은 모양으로 바꾼다.
+ * 관리탭의 표·차트가 전부 이 모양을 쓰므로, 여기 한 곳만 맞추면 시간대별·DRI·전월비교가 같이 따라온다.
+ * 시각은 시트 A열(접수 시각)이다 — 확인 시각은 시트에 없다. 날짜 기준도 대시보드 전체와 같은 접수일이라
+ * 시간대 그래프에서만 '접수 시각'이라는 점을 표에 밝혀 둔다. */
+function obTimeOf(key){
+  const m=/(오전|오후)\s*(\d{1,2}):(\d{2})/.exec(String(key||''));
+  if(!m) return '';
+  let h=Number(m[2])%12; if(m[1]==='오후') h+=12;
+  return String(h).padStart(2,'0')+':'+m[3];
+}
+function obAsDone(dates){
+  return obItems(dates).map(x=>({date:x._date, time:obTimeOf(x.key), store:x.status||'(상태 미기재)',
+    biz:'', cat:'ob', emp:x.handler, req:'', hw:'', intake:'', note:x.status||'', link:x.link, _ob:true}));
+}
 // 담당자별 설치 OB — 직원별 표의 별도 열용
-function obByEmp(dates){
+function obByEmp(dates){ return ovShift==='night' ? {} : obByEmpRaw(dates); }
+function obByEmpRaw(dates){
   const out={};
-  if(ovShift==='night') return out;
   dates.forEach(d=>{ const ob=(slackDay(d)||{}).ob; if(!ob) return;
     if(ob.byEmp) for(const e in ob.byEmp) out[e]=(out[e]||0)+ob.byEmp[e];
     else (ob.items||[]).forEach(it=>{ if(it.handler) out[it.handler]=(out[it.handler]||0)+1; }); });
@@ -2758,7 +2773,11 @@ const ADMIN_TABS = [
 
 /* ── 라이브 데이터 헬퍼 ── */
 // 처리 상세(done)가 실제로 있는 날짜만. 6월은 날짜 키만 있고 내용이 비어 있어 자동 제외된다
-function adminLiveDates(){ return allSlackDates().filter(d => ((slackDay(d)||{}).done||[]).length>0); }
+// 처리 상세(done)나 설치 OB 가 실제로 있는 날만. 6월은 날짜 키만 있고 내용이 비어 있어 자동 제외된다
+function adminLiveDates(){
+  return allSlackDates().filter(d => { const y=slackDay(d)||{};
+    return (y.done||[]).length>0 || obCntRaw([d])>0; });
+}
 function adminDates(){
   const all = adminLiveDates();
   if(adminRange==='all') return all;
@@ -2769,11 +2788,15 @@ function adminDates(){
   }
   return all.slice(-Number(adminRange));   // 최근 N '일' 은 데이터가 있는 날 기준(빈 날은 애초에 빠져 있다)
 }
+// 관리탭 전 화면의 공통 항목 목록 = 슬랙 처리 상세 + 설치 OB
 function adminItems(dates){
   const out=[];
   for(const d of dates) for(const x of ((slackDay(d)||{}).done||[])) out.push({date:d, ...x});
-  return out;
+  return out.concat(obAsDone(dates));
 }
+// 관리탭에서 쓰는 유형 목록 — 설치 OB 포함
+const ADM_CATS = [...WORK_CATS, VOC_CAT, OB_CAT];
+function admCatKey(x){ return x.cat==='voc' ? 'voc' : (ADM_CATS.some(c=>c.key===x.cat) ? x.cat : 'extern'); }
 const ADM_H0=8, ADM_H1=23;                                   // 표에 세울 시간대. 밖은 '기타' 로 모은다
 const ADM_HOURS = Array.from({length:ADM_H1-ADM_H0+1},(_,i)=>ADM_H0+i);
 function hourOf(t){ const m=/^(\d{1,2}):/.exec(t||''); return m?Number(m[1]):null; }
@@ -2815,6 +2838,7 @@ let DRI = load(LS_DRI, {});
 const DRI_CATS = [
   ...WORK_CATS.filter(c=>c.key!=='onboarding' && c.key!=='as'),
   {key:'voc', name:'VOC', icon:'💬', color:'#ff2d55'},
+  OB_CAT,                                   // 설치 OB 도 정·부를 지정해 처리량을 본다
 ];
 const DRI_ROLES = [{k:'main', n:'정'}, {k:'sub1', n:'부1'}, {k:'sub2', n:'부2'}];
 function driGet(cat, role){
@@ -2825,6 +2849,7 @@ function driGet(cat, role){
 // 카테고리별 담당자 처리 건수. VOC 는 done[] 에 없고 완료일 기준으로 따로 집계된다
 function driCounts(catKey, dates){
   if(catKey==='voc') return vocDoneInRange(dates).byEmp || {};
+  if(catKey==='ob')  return obByEmpRaw(dates);          // 시트의 확인 담당자 기준
   const by={};
   for(const d of dates) for(const x of ((slackDay(d)||{}).done||[]))
     if(x.cat===catKey && x.emp) by[x.emp]=(by[x.emp]||0)+1;
@@ -2862,18 +2887,20 @@ function admBizDays(m, upto){
   return n;
 }
 function admMonthly(){
-  const all=allSlackDates().filter(d=>((slackDay(d)||{}).done||[]).length>0);
+  const all=adminLiveDates();
   return admMonths().map(m=>{
     const ds=all.filter(d=>d.startsWith(m));
     const bizDs=ds.filter(admIsBizDay);
     const by={}; let total=0;
     for(const c of WORK_CATS){ const n=sumRange(c.key, ds); by[c.key]=n; total+=n; }
+    by.ob=obCntRaw(ds); total+=by.ob;                        // 설치 OB 도 총 건수에 넣는다
     // 평일에 처리된 건수 — 총 건수와의 차이가 곧 주말·공휴일(당직) 처리분
-    const bizCnt=WORK_CATS.reduce((a,c)=>a+sumRange(c.key, bizDs), 0);
+    const bizCnt=WORK_CATS.reduce((a,c)=>a+sumRange(c.key, bizDs), 0)+obCntRaw(bizDs);
     // 인입유형 미상은 온라인으로 합산 — 전체현황과 같은 팀 정책
     const ik=ds.reduce((a,d)=>{ const k=(slackDay(d)||{}).intake||{}; a.online+=(k.online||0)+(k.unknown||0); a.offline+=k.offline||0; return a; },{online:0,offline:0});
     const emps=new Set();
     ds.forEach(d=>{ for(const o of Object.values((slackDay(d)||{}).counts||{})) Object.keys(o).forEach(e=>emps.add(e)); });
+    Object.keys(obByEmpRaw(ds)).forEach(e=>emps.add(e));      // 설치 OB 만 한 담당자도 활동 인원에 넣는다
     return {m, days:ds.length, biz:admBizDays(m, ds[ds.length-1]), bizCnt, by, total, online:ik.online, offline:ik.offline, emps:emps.size};
   });
 }
@@ -2921,21 +2948,22 @@ function admHourly(){
     <tfoot><tr><td>합계</td>${colTot.map(n=>`<td class="num">${n}</td>`).join('')}<td class="num">${etcTot}</td><td class="num tot">${grand}</td><td class="num">${(grand/nd).toFixed(1)}</td></tr></tfoot>
   </table></div>`;
 
+  const obN=items.filter(x=>x._ob).length;
   return `<div class="adm-note">기간 <b>${dates[0]} ~ ${dates[dates.length-1]}</b> · 실데이터 <b>${nd}일</b> · 총 <b>${grand}건</b>
-    · 셀 색이 진할수록 그 시간대 처리량이 많습니다 · <b>기타</b>는 ${ADM_H0}시 이전·${ADM_H1}시 이후 건입니다.</div>
+    · 셀 색이 진할수록 그 시간대 처리량이 많습니다 · <b>기타</b>는 ${ADM_H0}시 이전·${ADM_H1}시 이후 건입니다.
+    ${obN?`<br>📞 <b>설치 OB ${obN}건</b> 포함 — 시트에 확인 시각이 없어 <b>접수 시각</b> 자리에 넣었습니다(건수는 정확, 시간대만 접수 기준).`:''}</div>
     <div class="card"><div class="card-head"><h3>담당자 × 시간대 처리량</h3><span class="hint">1일 평균 = 합계 ÷ ${nd}일</span></div>${table}</div>
     <div class="card"><div class="card-head"><h3>시간대별 유형 구성</h3><span class="hint">전 담당자 합산 · 유형별 누적</span></div>
       ${hourStackChart(items)}
-      <div class="legend">${CHART_CATS.map(c=>`<span><span class="swatch" style="background:${c.color}"></span>${c.name}</span>`).join('')}</div></div>`;
+      <div class="legend">${ADM_CATS.map(c=>`<span><span class="swatch" style="background:${c.color}"></span>${c.name}</span>`).join('')}</div></div>`;
 }
 // 시간대(가로) × 유형(누적) 막대 — 4번 캡처의 누적 그래프와 같은 형태
 function hourStackChart(items){
-  const cats=CHART_CATS, byHour={};
+  const cats=ADM_CATS, byHour={};
   for(const x of items){
     const h=hourOf(x.time); if(h===null||h<ADM_H0||h>ADM_H1) continue;
     byHour[h]=byHour[h]||{};
-    const k=(x.cat==='voc')?'voc':(WORK_CATS.some(c=>c.key===x.cat)?x.cat:'extern');
-    byHour[h][k]=(byHour[h][k]||0)+1;
+    byHour[h][admCatKey(x)]=(byHour[h][admCatKey(x)]||0)+1;
   }
   const totals=ADM_HOURS.map(h=>Object.values(byHour[h]||{}).reduce((a,b)=>a+b,0));
   const mx=Math.max(1,...totals);
@@ -3028,7 +3056,8 @@ function admDri(){
   })();
   return `<div class="adm-note">기간 <b>${dates[0]} ~ ${dates[dates.length-1]}</b> · 지정 내용은 팀 전체에 공유됩니다.
     <b>그 외</b>는 정·부가 아닌 담당자가 처리한 건으로, 이 값이 크면 DRI 가 실제와 다르다는 뜻입니다.
-    <b>온보딩·AS</b>는 전담 DRI 가 없어 제외했고, <b>VOC</b>는 확인 담당자·완료일 기준으로 셉니다.</div>
+    <b>온보딩·AS</b>는 전담 DRI 가 없어 제외했고, <b>VOC</b>는 확인 담당자·완료일 기준,
+    <b>설치 OB</b>는 시트 확인 담당자·접수일 기준으로 셉니다.</div>
     ${editor}
     <div class="card"><div class="card-head"><h3>카테고리별 정·부 처리량</h3><span class="hint">${adminRangeLabel()} · 막대는 그 카테고리 안에서의 비중</span></div>${cards}</div>
     <div class="card"><div class="card-head"><h3>정 · 부 · 그 외 비교</h3></div>${chart}</div>`;
@@ -3036,7 +3065,7 @@ function admDri(){
 
 /* ── 탭 3. 전월 업무 비교표 (주간/야간 따로) ── */
 function admPrevMonth(){
-  const withData=allSlackDates().filter(d=>((slackDay(d)||{}).done||[]).length>0);
+  const withData=adminLiveDates();
   const months=[...new Set(withData.map(d=>d.slice(0,7)))].sort();
   if(months.length<1) return `<div class="empty-note">처리 상세 데이터가 없습니다.</div>`;
   const cur = adminMonth && months.includes(adminMonth) ? adminMonth : months[months.length-1];
@@ -3046,12 +3075,11 @@ function admPrevMonth(){
   const agg = (mm, night) => {
     if(!mm) return null;
     const o={}; let n=0, days=new Set();
-    for(const d of withData){ if(!d.startsWith(mm)) continue;
-      for(const x of ((slackDay(d)||{}).done||[])){
-        if(isNightTime(x.time)!==night) continue;
-        const k=(x.cat==='voc')?'voc':(WORK_CATS.some(c=>c.key===x.cat)?x.cat:'extern');
-        o[k]=(o[k]||0)+1; n++; days.add(d);
-      }}
+    // 설치 OB 포함(adminItems). OB 는 확인 시각이 없어 접수 시각으로 주/야를 가른다.
+    for(const x of adminItems(withData.filter(d=>d.startsWith(mm)))){
+      if(isNightTime(x.time)!==night) continue;
+      o[admCatKey(x)]=(o[admCatKey(x)]||0)+1; n++; days.add(x.date);
+    }
     return {by:o, total:n, days:days.size};
   };
   const block = (night) => {
@@ -3070,7 +3098,7 @@ function admPrevMonth(){
       <td class="num">${ax}</td><td class="num" style="font-weight:800">${per(ax,ad)}</td>
       <td class="num" style="color:var(--gray2)">${b?bx:'—'}</td><td class="num" style="color:var(--gray2);font-weight:800">${b?per(bx,bd):'—'}</td>
       <td class="num">${dl(ax/ad, b?bx/bd:0)}</td></tr>`;
-    const rowsH=CHART_CATS.map(c=>line(`${c.icon} ${c.name}`, a.by[c.key]||0, b?(b.by[c.key]||0):0)).join('');
+    const rowsH=ADM_CATS.map(c=>line(`${c.icon} ${c.name}`, a.by[c.key]||0, b?(b.by[c.key]||0):0)).join('');
     return `<div class="card"><div class="card-head">
         <h3>${night?'🌙 야간':'☀️ 주간'} — ${cur.replace('-','.')} vs ${prev?prev.replace('-','.'):'전월 없음'}</h3>
         <span class="hint">${night?NIGHT_FROM+' 이후':NIGHT_FROM+' 이전'} 처리 건 · 평일 ${ad}일 / 전월 평일 ${prev?bd+'일':'—'}</span></div>
