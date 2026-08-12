@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 584,
- "updatedAt": "2026-08-12 16:45",
+ "version": 585,
+ "updatedAt": "2026-08-12 17:00",
  "days": 30,
  "items": [
   {
@@ -25948,48 +25948,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783931270731839"
-  },
-  {
-   "ts": "1783929600.628579",
-   "date": "2026-07-13",
-   "time": "17:00",
-   "store": "가장맛있는 후라이드 안동점",
-   "biz": "1535400985",
-   "pos": "",
-   "content": "땡겨요 주문접수 프로그램 설치 + 영수증 출력사진\nID: 메뉴등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1783930004.990829",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783929600628579"
-  },
-  {
-   "ts": "1783929012.310339",
-   "date": "2026-07-13",
-   "time": "16:50",
-   "store": "강창구찹쌀진순대(수유역점)",
-   "biz": "4646800562",
-   "pos": "",
-   "content": "메뉴 수정, 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783929016.697939",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783929012310339"
   }
  ],
  "ocr": {
