@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 582,
- "updatedAt": "2026-08-12 16:00",
+ "version": 583,
+ "updatedAt": "2026-08-12 16:30",
  "days": 30,
  "items": [
   {
@@ -26122,128 +26122,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783928237616249"
-  },
-  {
-   "ts": "1783927076.129839",
-   "date": "2026-07-13",
-   "time": "16:17",
-   "store": "용용선생 논현점",
-   "biz": "7522901120",
-   "pos": "",
-   "content": "메뉴 삭제 및 추가 요청드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "• 진로골드 삭제\n• 청하, 별빛청하, 새로 오미자 6,000원 메뉴등록"
-   ],
-   "rc": 4,
-   "lr": "1783929037.951399",
-   "rfx": 3,
-   "status": "done",
-   "handler": "서상원",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783927076129839"
-  },
-  {
-   "ts": "1783927072.174089",
-   "date": "2026-07-13",
-   "time": "16:17",
-   "store": "카페노아",
-   "biz": "6721402678",
-   "pos": "기타",
-   "content": "테이크아웃 할인 -1700원",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/1KuDULr5WUe2hCb2m8Nd59B9QEk8pnxKE/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "1KuDULr5WUe2hCb2m8Nd59B9QEk8pnxKE",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "SIGNATURE",
-       "name": "노아라떼",
-       "price": 6500
-      },
-      {
-       "category": "COFFEE",
-       "name": "아메리카노",
-       "price": 4500
-      },
-      {
-       "category": "COFFEE",
-       "name": "카페라떼",
-       "price": 5000
-      },
-      {
-       "category": "COFFEE",
-       "name": "바닐라라떼",
-       "price": 5500
-      },
-      {
-       "category": "COFFEE",
-       "name": "얼그레이라떼",
-       "price": 5500
-      },
-      {
-       "category": "CREAM LATTE",
-       "name": "말차라떼",
-       "price": 6000
-      },
-      {
-       "category": "CREAM LATTE",
-       "name": "딸기라떼",
-       "price": 6000
-      },
-      {
-       "category": "CREAM LATTE",
-       "name": "초코라떼",
-       "price": 6000
-      },
-      {
-       "category": "TEA",
-       "name": "아이스티",
-       "price": 5000
-      },
-      {
-       "category": "TEA",
-       "name": "밀크티",
-       "price": 5000
-      },
-      {
-       "category": "TEA",
-       "name": "얼그레이 / 히비스커스 / 캐모마일",
-       "price": 5000
-      },
-      {
-       "category": "ADE",
-       "name": "오렌지 에이드",
-       "price": 5000
-      },
-      {
-       "category": "ADE",
-       "name": "자몽 에이드",
-       "price": 5000
-      }
-     ]
-    }
-   ],
-   "replies": [
-    "토스포스겠지..",
-    "현재는 이지포스 사ㅇ용중, 프론트 설치하며 토스포스 사용 예정",
-    "포장할인 -1700원은 메뉴 등록 불가, 별도의 할인 항목으로 등록 필요 안내"
-   ],
-   "rc": 4,
-   "lr": "1783929868.537669",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783927072174089"
   }
  ],
  "ocr": {
