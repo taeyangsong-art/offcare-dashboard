@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3393,
+  "version": 3394,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -102157,6 +102157,16 @@ window.SLACK_DATA = {
     },
     "2026-08-12": {
       "counts": {
+        "onboarding": {
+          "최민석": 7,
+          "서상원": 2,
+          "김규빈": 4,
+          "고경림": 5,
+          "심성현": 6,
+          "배선유": 7,
+          "김동욱": 3,
+          "송태양": 3
+        },
         "as": {
           "최민석": 12,
           "서상원": 7,
@@ -102168,16 +102178,6 @@ window.SLACK_DATA = {
           "김동욱": 19,
           "김규빈": 8,
           "김현기": 30
-        },
-        "onboarding": {
-          "최민석": 6,
-          "서상원": 2,
-          "김규빈": 4,
-          "고경림": 5,
-          "심성현": 6,
-          "배선유": 7,
-          "김동욱": 3,
-          "송태양": 3
         },
         "extern": {
           "서상원": 1,
@@ -102258,6 +102258,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "20:30",
+          "store": "유니티 댄스학원",
+          "biz": "4409901517",
+          "cat": "onboarding",
+          "emp": "최민석",
+          "req": "포프(휴대폰) 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포프 온보딩 완료"
+        },
         {
           "time": "20:03",
           "store": "또또아",
@@ -104957,11 +104968,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 202,
+        "online": 203,
         "offline": 47,
         "unknown": 0
       },
-      "updatedAt": "20:30",
+      "updatedAt": "20:54",
       "voc": {
         "responses": 20,
         "install": {
@@ -105509,9 +105520,9 @@ window.SLACK_DATA = {
         "post": "1786507202.997419",
         "lastSeen": 1786507231.643
       },
-      "1786534200.749819": {
-        "post": "1786534200.749819",
-        "lastSeen": 1786535124.206
+      "1786535666.364529": {
+        "post": "1786535666.364529",
+        "lastSeen": 1786536037.093
       }
     },
     "days": {
@@ -126739,8 +126750,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-12": {
-        "cnt": 113,
-        "sumMin": 1914.14715817372,
+        "cnt": 114,
+        "sumMin": 1937.145486187935,
         "over": 12,
         "items": [
           {
@@ -127646,13 +127657,21 @@ window.SLACK_DATA = {
             "biz": "2534401266",
             "who": "최민석",
             "cat": "as"
+          },
+          {
+            "hm": "20:30",
+            "min": 23,
+            "store": "유니티 댄스학원",
+            "biz": "4409901517",
+            "who": "최민석",
+            "cat": "onboarding"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-12 20:45",
+    "at": "2026-08-12 21:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
