@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 594,
- "updatedAt": "2026-08-12 19:00",
+ "version": 595,
+ "updatedAt": "2026-08-12 19:29",
  "days": 30,
  "items": [
   {
@@ -26171,48 +26171,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783939093500549"
-  },
-  {
-   "ts": "1783937904.048019",
-   "date": "2026-07-13",
-   "time": "19:18",
-   "store": "강창구찹쌀진순대 여의도2호점",
-   "biz": "5348600910",
-   "pos": "퍼스트포스",
-   "content": "터치키 수정",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783937908.175839",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783937904048019"
-  },
-  {
-   "ts": "1783937897.242129",
-   "date": "2026-07-13",
-   "time": "19:18",
-   "store": "강창구찹쌀진순대여의도1호점",
-   "biz": "1060144017",
-   "pos": "",
-   "content": "메뉴 수정",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1783937901.493729",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783937897242129"
   }
  ],
  "ocr": {
