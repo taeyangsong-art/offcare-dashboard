@@ -73,7 +73,7 @@ const FILE_PER_MSG = 6;                       // 저장소에 남길 첨부 수(
 // 판독은 저장과 분리한다. 메뉴판을 여러 장 나눠 올리는 요청(POS 화면 10장 이상)이 흔한데
 // 저장 상한에 묶여 6장에서 잘리고 있었다. 판독 결과는 텍스트라 용량 부담이 없다.
 const JUDGE_PER_MSG = Number(process.env.JUDGE_PER_MSG || 30);
-const RFX_VER = 2;                            // 댓글 첨부 수집 규칙 버전 (올리면 기존 요청 재스캔)
+const RFX_VER = 3;                            // 댓글 첨부 수집 규칙 버전 (올리면 기존 요청 재스캔)
 let truncated = 0;                            // 상한에 걸려 못 본 첨부 수(조용히 사라지지 않게 로그로)
 let fileDownloaded = 0;
 const FILE_DL_CAP = 40;                       // 실행당 다운로드 상한(rate 보호) — 나머지는 다음 실행에서
@@ -391,7 +391,13 @@ function detectPos(text) {
       // rfx = '이 스레드의 댓글 첨부를 어느 규칙으로 훑었는지' 버전. 낮으면 댓글이 그대로여도 다시 읽는다.
       // 수집 규칙이 바뀔 때 RFX_VER 을 올리면 기존 요청들이 한 번씩 다시 스캔된다.
       //   1 = 댓글 첨부 수집 도입   2 = 요청당 상한을 6 → JUDGE_PER_MSG 로 올림(7장째부터 누락되던 것 복구)
-      if (prev && prev.rc === rc && prev.lr === lr && (prev.rfx || 0) >= RFX_VER) { replies = prev.replies || []; repliesCached = true; }   // 변경 없음 → 캐시
+      //   3 = 판독 못 끝낸 댓글 이미지가 남아 있으면 스레드를 다시 읽는다(아래 pendingReply)
+      // 댓글이 그대로여도 아직 판독 안 된 이미지가 남아 있으면 다시 읽어야 한다.
+      // 첨부 바이트는 슬랙 API 의 url_private_download 로만 받을 수 있는데, 캐시 분기로 빠지면
+      // rawReplies 가 null 이라 그 URL 이 없어 영영 판독되지 않는다(43장이 이 상태로 묶여 있었다).
+      const pendingReply = ((prevMap[m.ts] || {}).att || [])
+        .some((x) => x.from === '댓글' && !('kind' in x) && !x.nj);
+      if (!pendingReply && prev && prev.rc === rc && prev.lr === lr && (prev.rfx || 0) >= RFX_VER) { replies = prev.replies || []; repliesCached = true; }   // 변경 없음 → 캐시
       else {
         rawReplies = await fetchReplies(CHANNEL, m.ts);
         if (rawReplies === null) { replies = (prev && prev.replies) || []; repliesCached = true; }            // 상한 도달 → 기존 유지
@@ -429,7 +435,11 @@ function detectPos(text) {
         stored = fs.existsSync(dest) || await downloadSlackFile(f.url_private_download, dest);
         if (stored) a.path = dest;
       }
-      if (!('kind' in a) && OCR_EXT.test(ext) && small) {
+      // 판독 대상이 아닌 첨부(hwp·xlsx 같은 비이미지, 10MB 초과, 다운로드 URL 없음)는 nj 로 표시한다.
+      // 표시해 두지 않으면 위 pendingReply 가 매 실행 참이 되어 스레드를 계속 다시 읽는다.
+      const judgeable = OCR_EXT.test(ext) && small;
+      if (!('kind' in a) && !judgeable) a.nj = 1;
+      if (!('kind' in a) && judgeable) {
         let judgePath = stored ? dest : null;
         if (!judgePath) {   // 창 밖이라 저장은 안 하지만 판독은 한다
           judgePath = `${DRIVE_TMP}/s-${f.id}${ext}`;
@@ -479,6 +489,17 @@ function detectPos(text) {
   if (ocrDone) console.log(`🔎 신규 이미지 판독 ${ocrDone}건 (${OCR_MODEL}) · 이번 실행 비용 약 $${ocrUsd.toFixed(3)} (₩${Math.round(ocrUsd * KRW_PER_USD).toLocaleString()})${ocrDone >= OCR_CAP ? ` · 상한 ${OCR_CAP}건 도달 — 나머지는 다음 실행에서` : ''}`);
   if (driveDownloaded || driveBlocked || driveSkipped) console.log(`🖼 Drive 파일 ${driveDownloaded}건 수집${driveBlocked ? ` · 권한차단 ${driveBlocked}건(권한 풀리면 자동 복구)` : ''}${driveSkipped ? ` · 미지원형식 ${driveSkipped}건(heif·hwp·xlsx 등)` : ''} — 파일은 저장소에 남기지 않음`);
   if (truncated) console.log(`⚠ 요청당 상한(JUDGE_PER_MSG=${JUDGE_PER_MSG})에 걸려 ${truncated}건을 판독하지 못했습니다 — 상한을 올리세요`);
+  // 남은 판독 대기량. 이 값이 실행을 거듭해도 안 줄면 어딘가 막힌 것이다(예전엔 캐시 분기에 묶여 43장이 고정돼 있었다).
+  {
+    const c = { 원글: [0, 0], 댓글: [0, 0] };
+    for (const it of capped) for (const x of (it.att || [])) {
+      const s = c[x.from === '댓글' ? '댓글' : '원글'];
+      s[1]++; if ('kind' in x) s[0]++;
+    }
+    const pend = (c.원글[1] - c.원글[0]) + (c.댓글[1] - c.댓글[0]);
+    console.log(`🖼 첨부 판독 현황 — 원글 ${c.원글[0]}/${c.원글[1]} · 댓글 ${c.댓글[0]}/${c.댓글[1]}`
+      + (pend ? ` · 대기 ${pend}장(판독 불가 제외, 다음 실행에서 계속)` : ' · 대기 없음'));
+  }
   try { fs.rmSync(DRIVE_TMP, { recursive: true, force: true }); } catch (e) {}
   console.log(`✅ ${OUT} 갱신: 요청 ${capped.length}건 (완료 ${byStatus.done || 0} · 확인중 ${byStatus.confirm || 0} · 대기 ${byStatus.wait || 0} · 중복 ${byStatus.dup || 0}) v${data.version}`);
   process.exit(0);   // 좀비 워커가 남아 프로세스가 안 끝나는 것 방지(모든 쓰기는 동기 완료됨)
