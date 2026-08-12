@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 575,
- "updatedAt": "2026-08-12 14:32",
+ "version": 576,
+ "updatedAt": "2026-08-12 14:47",
  "days": 30,
  "items": [
   {
@@ -10016,25 +10016,517 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BNG36DHMX",
      "from": "댓글",
-     "path": "menu-files/1786000769_579559-0.png"
+     "path": "menu-files/1786000769_579559-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "포장(조리)",
+       "name": "진순대국 편백정식(조리)",
+       "price": 15000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "얼큰순대국 편백정식(조리)",
+       "price": 16000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "인삼순대국 편백정식(조리)",
+       "price": 17000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "마라순대국 편백정식(조리)",
+       "price": 17000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "토마토순대국 편백정식(조리)",
+       "price": 17000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "진순대국 솔밥편백정식(조리)",
+       "price": 16000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "얼큰순대국 솔밥편백정식(조리)",
+       "price": 17000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "인삼순대국 솔밥편백정식(조리)",
+       "price": 18000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "마라순대국 솔밥편백정식(조리)",
+       "price": 18000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "토마토순대국 솔밥편백정식(조리)",
+       "price": 18000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "진순대국(조리)",
+       "price": 10000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "얼큰순대국(조리)",
+       "price": 11000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "인삼순대국(조리)",
+       "price": 12000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "마라순대국(조리)",
+       "price": 12000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "토마토순대국(조리)",
+       "price": 12000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "진순대국+솔밥(조리)",
+       "price": 11000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "얼큰순대국+솔밥(조리)",
+       "price": 12000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "인삼순대국+솔밥(조리)",
+       "price": 13000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "마라순대국+솔밥(조리)",
+       "price": 13000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "토마토순대국+솔밥(조리)",
+       "price": 13000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "뼈해장국(조리)",
+       "price": 11000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "황태해장국(조리)",
+       "price": 11000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "내장국밥(조리)",
+       "price": 11000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "추어탕(조리)",
+       "price": 11000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "얼큰순대라면(조리)",
+       "price": 11000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "뼈해장국+솔밥(조리)",
+       "price": 12000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "황태해장국+솔밥(조리)",
+       "price": 12000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "내장국밥+솔밥(조리)",
+       "price": 12000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "추어탕+솔밥(조리)",
+       "price": 12000
+      },
+      {
+       "category": "포장(조리)",
+       "name": "얼큰순대라면+솔밥(조리)",
+       "price": 12000
+      }
+     ]
     },
     {
      "name": "image.png",
      "fid": "F0BNAMTM6TX",
      "from": "댓글",
-     "path": "menu-files/1786000769_579559-1.png"
+     "path": "menu-files/1786000769_579559-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "등심돈까스(조리)",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "치즈돈까스(조리)",
+       "price": 11000
+      },
+      {
+       "category": "",
+       "name": "고구마치즈돈까스(조리)",
+       "price": 11000
+      },
+      {
+       "category": "",
+       "name": "편백정식 맛보기 추가(조리)",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "3색수제순대(조리)",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "편육(조리)",
+       "price": 17000
+      },
+      {
+       "category": "",
+       "name": "술국(조리)",
+       "price": 18000
+      },
+      {
+       "category": "",
+       "name": "편백수육(중) (조리)",
+       "price": 27000
+      },
+      {
+       "category": "",
+       "name": "편백순대수육(중) (조리)",
+       "price": 27000
+      },
+      {
+       "category": "",
+       "name": "순대곱창전골(조리)",
+       "price": 32000
+      },
+      {
+       "category": "",
+       "name": "야채철판볶음(조리)",
+       "price": 32000
+      },
+      {
+       "category": "",
+       "name": "사골감자탕(조리)",
+       "price": 37000
+      },
+      {
+       "category": "",
+       "name": "물냉면(조리)",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "비빔냉면(조리)",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "삼계탕(조리)",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "왕갈비탕(조리)",
+       "price": 17000
+      },
+      {
+       "category": "",
+       "name": "솥밥(포장)",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "공기밥(포장)",
+       "price": 1000
+      }
+     ]
     },
     {
      "name": "image.png",
      "fid": "F0BMYQ6MHL7",
      "from": "댓글",
-     "path": "menu-files/1786000769_579559-2.png"
+     "path": "menu-files/1786000769_579559-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "포장(비조리)",
+       "name": "진순대국 편백정식(비조리)",
+       "price": 15000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "얼큰순대국 편백정식(비조리)",
+       "price": 16000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "인삼순대국 편백정식(비조리)",
+       "price": 17000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "마라순대국 편백정식(비조리)",
+       "price": 17000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "토마토순대국 편백정식(비조리)",
+       "price": 17000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "진순대국 솔밥편백정식(비조리)",
+       "price": 16000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "얼큰순대국 솔밥편백정식(비조리)",
+       "price": 17000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "인삼순대국 솔밥편백정식(비조리)",
+       "price": 18000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "마라순대국 솔밥편백정식(비조리)",
+       "price": 18000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "토마토순대국 솔밥편백정식(비조리)",
+       "price": 18000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "진순대국(비조리)",
+       "price": 10000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "얼큰순대국(비조리)",
+       "price": 11000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "인삼순대국(비조리)",
+       "price": 12000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "마라순대국(비조리)",
+       "price": 12000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "토마토순대국(비조리)",
+       "price": 12000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "진순대국+솔밥(비조리)",
+       "price": 11000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "얼큰순대국+솔밥(비조리)",
+       "price": 12000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "인삼순대국+솔밥(비조리)",
+       "price": 13000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "마라순대국+솔밥(비조리)",
+       "price": 13000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "토마토순대국+솔밥(비조리)",
+       "price": 13000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "뼈해장국(비조리)",
+       "price": 11000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "황태해장국(비조리)",
+       "price": 11000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "내장국밥(비조리)",
+       "price": 11000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "추어탕(비조리)",
+       "price": 11000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "얼큰순대라면(비조리)",
+       "price": 11000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "뼈해장국+솔밥(비조리)",
+       "price": 12000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "황태해장국+솔밥(비조리)",
+       "price": 12000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "내장국밥+솔밥(비조리)",
+       "price": 12000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "추어탕+솔밥(비조리)",
+       "price": 12000
+      },
+      {
+       "category": "포장(비조리)",
+       "name": "얼큰순대라면+솔밥(비조리)",
+       "price": 12000
+      }
+     ]
     },
     {
      "name": "image.png",
      "fid": "F0BMYQ6DE3H",
      "from": "댓글",
-     "path": "menu-files/1786000769_579559-3.png"
+     "path": "menu-files/1786000769_579559-3.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "등심돈까스(비조리)",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "치즈돈까스(비조리)",
+       "price": 11000
+      },
+      {
+       "category": "",
+       "name": "고구마치즈돈까스(비조리)",
+       "price": 11000
+      },
+      {
+       "category": "",
+       "name": "편백정식 맛보기 추가(비조리)",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "3색수제순대(비조리)",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "편육(비조리)",
+       "price": 17000
+      },
+      {
+       "category": "",
+       "name": "술국(비조리)",
+       "price": 18000
+      },
+      {
+       "category": "",
+       "name": "편백수육(중) (비조리)",
+       "price": 27000
+      },
+      {
+       "category": "",
+       "name": "편백순대수육(중) (조리)",
+       "price": 27000
+      },
+      {
+       "category": "",
+       "name": "순대곱창전골(비조리)",
+       "price": 32000
+      },
+      {
+       "category": "",
+       "name": "야채철판볶음(비조리)",
+       "price": 32000
+      },
+      {
+       "category": "",
+       "name": "사골감자탕(비조리)",
+       "price": 37000
+      },
+      {
+       "category": "",
+       "name": "물냉면(비조리)",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "비빔냉면(비조리)",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "삼계탕(비조리)",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "왕갈비탕(비조리)",
+       "price": 17000
+      },
+      {
+       "category": "",
+       "name": "솔밥(포장)",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "공기밥(포장)",
+       "price": 1000
+      }
+     ]
     }
    ],
    "datt": [],
@@ -10085,7 +10577,120 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BNBBT2HEJ",
      "from": "댓글",
-     "path": "menu-files/1785991187_742999-0.png"
+     "path": "menu-files/1785991187_742999-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "식사",
+       "name": "추어탕",
+       "price": 9000
+      },
+      {
+       "category": "식사",
+       "name": "닭곰탕",
+       "price": 10000
+      },
+      {
+       "category": "식사",
+       "name": "우렁추어탕",
+       "price": 12000
+      },
+      {
+       "category": "식사",
+       "name": "전복추어탕",
+       "price": 15000
+      },
+      {
+       "category": "식사",
+       "name": "김치찌개",
+       "price": 7000
+      },
+      {
+       "category": "식사",
+       "name": "된장찌개",
+       "price": 7000
+      },
+      {
+       "category": "식사",
+       "name": "민물새우탕",
+       "price": 35000
+      },
+      {
+       "category": "식사",
+       "name": "토종닭볶음탕",
+       "price": 60000
+      },
+      {
+       "category": "식사",
+       "name": "토종닭백숙",
+       "price": 60000
+      },
+      {
+       "category": "식사",
+       "name": "능이백숙",
+       "price": 70000
+      },
+      {
+       "category": "식사",
+       "name": "닭볶음탕반마리",
+       "price": 30000
+      },
+      {
+       "category": "식사",
+       "name": "오늘의백반",
+       "price": 6000
+      },
+      {
+       "category": "식사",
+       "name": "왕갈비탕",
+       "price": 13000
+      },
+      {
+       "category": "식사",
+       "name": "도가니탕",
+       "price": 13000
+      },
+      {
+       "category": "식사",
+       "name": "제육볶음",
+       "price": 10000
+      },
+      {
+       "category": "식사",
+       "name": "냉면",
+       "price": 10000
+      },
+      {
+       "category": "식사",
+       "name": "냉면 곱빼기",
+       "price": 12000
+      },
+      {
+       "category": "식사",
+       "name": "두부김치",
+       "price": 12000
+      },
+      {
+       "category": "식사",
+       "name": "삼계탕",
+       "price": 15000
+      },
+      {
+       "category": "식사",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "식사",
+       "name": "삼겹살",
+       "price": 15000
+      },
+      {
+       "category": "식사",
+       "name": "팥빙수",
+       "price": 6000
+      }
+     ]
     }
    ],
    "datt": [],
@@ -10162,13 +10767,259 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BNCBXPGUS",
      "from": "댓글",
-     "path": "menu-files/1785979928_500899-0.png"
+     "path": "menu-files/1785979928_500899-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "찬란한 한상",
+       "name": "찬란한 2인 한상",
+       "price": 62000
+      },
+      {
+       "category": "찬란한 한상",
+       "name": "찬란한 3인 한상",
+       "price": 85000
+      },
+      {
+       "category": "찬란한 한상",
+       "name": "찬란한 4인 한상",
+       "price": 109000
+      },
+      {
+       "category": "한정판매 '생'아구",
+       "name": "찬란한 '생'아구찜",
+       "price": 69000
+      },
+      {
+       "category": "한정판매 '생'아구",
+       "name": "초신선 '생'아구수육",
+       "price": 69000
+      },
+      {
+       "category": "세트메뉴",
+       "name": "수제세트 A",
+       "price": 23900
+      },
+      {
+       "category": "세트메뉴",
+       "name": "수제세트 B",
+       "price": 36900
+      },
+      {
+       "category": "메인 찜요리",
+       "name": "우삼겹 아구찜",
+       "price": 46000
+      },
+      {
+       "category": "메인 찜요리",
+       "name": "아구찜",
+       "price": 39000
+      },
+      {
+       "category": "메인 찜요리",
+       "name": "순살아구찜",
+       "price": 45000
+      },
+      {
+       "category": "메인 찜요리",
+       "name": "알곤이찜",
+       "price": 43000
+      },
+      {
+       "category": "메인 찜요리",
+       "name": "해물찜",
+       "price": 58000
+      },
+      {
+       "category": "메인 찜요리",
+       "name": "낙지찜",
+       "price": 43000
+      },
+      {
+       "category": "메인 찜요리",
+       "name": "아구순살불고기",
+       "price": 40000
+      },
+      {
+       "category": "특선 전골요리",
+       "name": "얼큰해물알곤이전골",
+       "price": 54000
+      },
+      {
+       "category": "특선 전골요리",
+       "name": "아구지리탕",
+       "price": 35000
+      },
+      {
+       "category": "특선 전골요리",
+       "name": "동태탕",
+       "price": 24000
+      },
+      {
+       "category": "특선 전골요리",
+       "name": "알탕",
+       "price": 25000
+      },
+      {
+       "category": "점심특선",
+       "name": "알곤이장칼국수",
+       "price": 10000
+      },
+      {
+       "category": "점심특선",
+       "name": "1인 동태탕",
+       "price": 10000
+      },
+      {
+       "category": "점심특선",
+       "name": "1인 알탕",
+       "price": 10000
+      },
+      {
+       "category": "점심특선",
+       "name": "오징어덮밥",
+       "price": 10000
+      },
+      {
+       "category": "점심특선",
+       "name": "낙지덮밥",
+       "price": 10000
+      },
+      {
+       "category": "튀김메뉴",
+       "name": "수제순살아구튀김",
+       "price": 21000
+      },
+      {
+       "category": "튀김메뉴",
+       "name": "수제순살아구튀김(미니)",
+       "price": 12000
+      }
+     ]
     },
     {
      "name": "image.png",
      "fid": "F0BP6NDMDAL",
      "from": "댓글",
-     "path": "menu-files/1785979928_500899-1.png"
+     "path": "menu-files/1785979928_500899-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "추가요청사항(1인)",
+       "name": "선택안함",
+       "price": 0
+      },
+      {
+       "category": "추가요청사항(1인)",
+       "name": "곤이 빼주세요",
+       "price": 0
+      },
+      {
+       "category": "추가요청사항(1인)",
+       "name": "쑥갓 빼주세요",
+       "price": 0
+      },
+      {
+       "category": "추가요청사항",
+       "name": "선택안함",
+       "price": 0
+      },
+      {
+       "category": "추가요청사항",
+       "name": "곤이 빼주세요",
+       "price": 0
+      },
+      {
+       "category": "추가요청사항",
+       "name": "미나리 빼주세요",
+       "price": 0
+      },
+      {
+       "category": "사리추가(해물찜)",
+       "name": "우삼겹추가 (250g)",
+       "price": 8000
+      },
+      {
+       "category": "사리추가(해물찜)",
+       "name": "우삼겹추가 (500g)",
+       "price": 1500
+      },
+      {
+       "category": "사리추가(해물찜)",
+       "name": "아구순살 추가 (순살7)",
+       "price": 1300
+      },
+      {
+       "category": "사리추가(해물찜)",
+       "name": "낙지 추가 (1마리)",
+       "price": 9000
+      },
+      {
+       "category": "사리추가(해물찜)",
+       "name": "통오징어 추가 (1마리)",
+       "price": 7000
+      },
+      {
+       "category": "사리추가(해물찜)",
+       "name": "꽃게 추가 (3조각)",
+       "price": 5000
+      },
+      {
+       "category": "사리추가(해물찜)",
+       "name": "꽃게 추가 (6조각)",
+       "price": 10000
+      },
+      {
+       "category": "사리추가(해물찜)",
+       "name": "알 추가 (200g)",
+       "price": 8000
+      },
+      {
+       "category": "사리추가(해물찜)",
+       "name": "곤이 추가 (250g)",
+       "price": 7000
+      },
+      {
+       "category": "사리추가(해물찜)",
+       "name": "오만둥이 추가 (150g)",
+       "price": 8000
+      },
+      {
+       "category": "사리추가(해물찜)",
+       "name": "새우 추가(5마리)",
+       "price": 6000
+      },
+      {
+       "category": "사리추가(해물찜)",
+       "name": "콩나물 추가 (200g)",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "우삼겹추가 (250g)",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "우삼겹추가 (500g)",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "아구순살 추가 (순살7)",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "아구사리 추가(살3,뼈3,꼬리1)",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "아가미살 추가 (껍데기+뼈4)",
+       "price": 6000
+      }
+     ]
     }
    ],
    "datt": [],
@@ -10196,7 +11047,90 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BNCA1BX8S",
      "from": "댓글",
-     "path": "menu-files/1785978780_448379-0.png"
+     "path": "menu-files/1785978780_448379-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "식사메뉴",
+       "name": "제육볶음",
+       "price": 11000
+      },
+      {
+       "category": "식사메뉴",
+       "name": "오삼불고기",
+       "price": 15000
+      },
+      {
+       "category": "식사메뉴",
+       "name": "차돌 된장찌개",
+       "price": 11000
+      },
+      {
+       "category": "식사메뉴",
+       "name": "청국장",
+       "price": 10000
+      },
+      {
+       "category": "식사메뉴",
+       "name": "뚝배기 부대찌개",
+       "price": 11000
+      },
+      {
+       "category": "식사메뉴",
+       "name": "꼬막비빔밥",
+       "price": 12000
+      },
+      {
+       "category": "식사메뉴",
+       "name": "바지락 순두부",
+       "price": 10000
+      },
+      {
+       "category": "식사메뉴",
+       "name": "수육국밥",
+       "price": 10000
+      },
+      {
+       "category": "식사메뉴",
+       "name": "검은콩국수",
+       "price": 10000
+      },
+      {
+       "category": "식사메뉴",
+       "name": "열무국수",
+       "price": 10000
+      },
+      {
+       "category": "식사메뉴",
+       "name": "미역국(포장)",
+       "price": 9000
+      },
+      {
+       "category": "식사메뉴",
+       "name": "라면사리",
+       "price": 1000
+      },
+      {
+       "category": "식사메뉴",
+       "name": "계란후라이1",
+       "price": 1000
+      },
+      {
+       "category": "식사메뉴",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "식사메뉴",
+       "name": "식대",
+       "price": 10000
+      },
+      {
+       "category": "식사메뉴",
+       "name": "식대",
+       "price": 100000
+      }
+     ]
     }
    ],
    "datt": [],
@@ -10255,25 +11189,337 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BN39Y43EJ",
      "from": "댓글",
-     "path": "menu-files/1785921324_217409-0.png"
+     "path": "menu-files/1785921324_217409-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "커피(핫)",
+       "name": "[G]아메리카노",
+       "price": 2500
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[G]카페라떼",
+       "price": 4000
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[G]카푸치노",
+       "price": 4000
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[G]바닐라라떼",
+       "price": 4500
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[G]카라멜라떼",
+       "price": 4500
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[G]카페모카",
+       "price": 4500
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[G]카라멜마끼아또",
+       "price": 4500
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[V]아메리카노",
+       "price": 3500
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[V]카페라떼",
+       "price": 5000
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[V]바닐라라떼",
+       "price": 5500
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[V]카라멜라떼",
+       "price": 5500
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[V]카페모카",
+       "price": 5500
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[V]카라멜모카",
+       "price": 5500
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[V]카라멜마끼아또",
+       "price": 5500
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[G]콜드브루(HOT)",
+       "price": 4000
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[G]콜드브루라떼(HOT)",
+       "price": 5000
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[G]디카페인콜드브루(HOT)",
+       "price": 4000
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[G]디카페인콜드브루라떼(HOT)",
+       "price": 5000
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[V]콜드브루(HOT)",
+       "price": 5000
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[V]콜드브루라떼(HOT)",
+       "price": 6000
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[V]디카페인콜드브루(HOT)",
+       "price": 5000
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[V]디카페인콜드브루라떼(HOT)",
+       "price": 6000
+      }
+     ]
     },
     {
      "name": "image.png",
      "fid": "F0BMPTZ45JT",
      "from": "댓글",
-     "path": "menu-files/1785921324_217409-1.png"
+     "path": "menu-files/1785921324_217409-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "커피(핫)",
+       "name": "[T]버터크림라떼",
+       "price": 3500
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[T]그샷추",
+       "price": 3500
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[G]버터크림라떼",
+       "price": 4000
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[G]그샷추",
+       "price": 4000
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[V]버터크림라떼",
+       "price": 5000
+      },
+      {
+       "category": "커피(핫)",
+       "name": "[V]그샷추",
+       "price": 5000
+      }
+     ]
     },
     {
      "name": "image.png",
      "fid": "F0BMZ2B1L59",
      "from": "댓글",
-     "path": "menu-files/1785921324_217409-2.png"
+     "path": "menu-files/1785921324_217409-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "라떼(핫)",
+       "name": "[G]초코라떼",
+       "price": 4000
+      },
+      {
+       "category": "라떼(핫)",
+       "name": "[G]녹차라떼",
+       "price": 4000
+      },
+      {
+       "category": "라떼(핫)",
+       "name": "[G]검은콩라떼",
+       "price": 4000
+      },
+      {
+       "category": "라떼(핫)",
+       "name": "[G]고구마라떼",
+       "price": 4500
+      },
+      {
+       "category": "라떼(핫)",
+       "name": "[G]밤라떼",
+       "price": 4500
+      },
+      {
+       "category": "라떼(핫)",
+       "name": "[G]단호박라떼",
+       "price": 4500
+      },
+      {
+       "category": "라떼(핫)",
+       "name": "[G]초당옥수수라떼",
+       "price": 4500
+      },
+      {
+       "category": "라떼(핫)",
+       "name": "[G]아몬드코코넛라떼",
+       "price": 4500
+      },
+      {
+       "category": "라떼(핫)",
+       "name": "[G]민트초코라떼",
+       "price": 4500
+      },
+      {
+       "category": "라떼(핫)",
+       "name": "[G]초코바나나라떼",
+       "price": 4500
+      },
+      {
+       "category": "라떼(핫)",
+       "name": "[G]쌍화라떼",
+       "price": 5000
+      },
+      {
+       "category": "라떼(핫)",
+       "name": "[V]초코라떼",
+       "price": 5000
+      },
+      {
+       "category": "라떼(핫)",
+       "name": "[V]녹차라떼",
+       "price": 5000
+      },
+      {
+       "category": "라떼(핫)",
+       "name": "[V]검은콩라떼",
+       "price": 5000
+      },
+      {
+       "category": "라떼(핫)",
+       "name": "[V]고구마라떼",
+       "price": 5500
+      },
+      {
+       "category": "라떼(핫)",
+       "name": "[V]밤라떼",
+       "price": 5500
+      },
+      {
+       "category": "라떼(핫)",
+       "name": "[V]단호박라떼",
+       "price": 5500
+      },
+      {
+       "category": "라떼(핫)",
+       "name": "[V]초당옥수수라떼",
+       "price": 5500
+      },
+      {
+       "category": "라떼(핫)",
+       "name": "[V]아몬드코코넛라떼",
+       "price": 5500
+      },
+      {
+       "category": "라떼(핫)",
+       "name": "[V]민트초코라떼",
+       "price": 5500
+      },
+      {
+       "category": "라떼(핫)",
+       "name": "[V]초코바나나라떼",
+       "price": 5500
+      },
+      {
+       "category": "라떼(핫)",
+       "name": "[V]쌍화라떼",
+       "price": 6300
+      }
+     ]
     },
     {
      "name": "image.png",
      "fid": "F0BN90K2736",
      "from": "댓글",
-     "path": "menu-files/1785921324_217409-3.png"
+     "path": "menu-files/1785921324_217409-3.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "에이드/아이스티",
+       "name": "[G]아이스티(복숭아)",
+       "price": 3500
+      },
+      {
+       "category": "에이드/아이스티",
+       "name": "[G]리얼에이드(레몬)",
+       "price": 4500
+      },
+      {
+       "category": "에이드/아이스티",
+       "name": "[G]리얼에이드(자몽)",
+       "price": 4500
+      },
+      {
+       "category": "에이드/아이스티",
+       "name": "[G]리얼에이드(청포도)",
+       "price": 4500
+      },
+      {
+       "category": "에이드/아이스티",
+       "name": "[G]에이드(한라봉)",
+       "price": 4500
+      },
+      {
+       "category": "에이드/아이스티",
+       "name": "[V]아이스티(복숭아)",
+       "price": 4500
+      },
+      {
+       "category": "에이드/아이스티",
+       "name": "[V]리얼에이드(레몬)",
+       "price": 5500
+      },
+      {
+       "category": "에이드/아이스티",
+       "name": "[V]리얼에이드(자몽)",
+       "price": 5500
+      },
+      {
+       "category": "에이드/아이스티",
+       "name": "[V]리얼에이드(청포도)",
+       "price": 5500
+      },
+      {
+       "category": "에이드/아이스티",
+       "name": "[V]에이드(한라봉)",
+       "price": 5500
+      }
+     ]
     },
     {
      "name": "image.png",
