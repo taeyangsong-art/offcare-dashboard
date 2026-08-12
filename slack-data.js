@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3391,
+  "version": 3392,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -102190,7 +102190,7 @@ window.SLACK_DATA = {
           "심성현": 1
         },
         "menu": {
-          "배선유": 8,
+          "배선유": 9,
           "송태양": 1,
           "김규빈": 4
         },
@@ -102208,17 +102208,6 @@ window.SLACK_DATA = {
           "handler": "김기범",
           "cat": "as",
           "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "17:37",
-          "store": "김마리 야탑점",
-          "biz": "4155900952",
-          "handler": "배선유",
-          "cat": "menu",
-          "intake": "offline",
           "reasons": [
             "확인 후 미완료"
           ]
@@ -102655,6 +102644,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "익일 방문매장아닌가요? 익일 방문매장아닌가요? / 넵 맞습니답 / 요긩 방문 설치 요청 - 청석골 방문 설치 요청 ID: 13060 설치구분: A/S 요청자: 요청일시: 2026-08-12 10:24 수도권/지방 구분: 수도권 판매경로: 온라인 배달4사 계약여부: 없음 상호명: 청석골 사업자번호: 8208503223 주소지: 경기도 고양시 일산동구 VAN:"
+        },
+        {
+          "time": "17:37",
+          "store": "김마리 야탑점",
+          "biz": "4155900952",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "안녕하세요, 대표님께서 8/7 날짜로 메뉴 등록 요청 rm 메일로 보내셨다 하셨는데 아직 등록이 안됐다 하셔서요! 김마리 야탑점, 서현점, 태전점 키오스크 메뉴 사진 등재 부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 메일 제목 : 김마리 야탑점 메뉴사진 총 6개 등록부탁드려요 혹시 사진 첨부 필요하면 제가 하겠습니다..! / 스스로 척척척 / / 야탑점은 완룡"
         },
         {
           "time": "17:33",
@@ -104950,20 +104950,20 @@ window.SLACK_DATA = {
         "offline": 47,
         "unknown": 0
       },
-      "updatedAt": "20:03",
+      "updatedAt": "20:30",
       "voc": {
-        "responses": 19,
+        "responses": 20,
         "install": {
           "count": 10,
           "low": 1
         },
         "nps": {
-          "count": 19,
+          "count": 20,
           "low": 5
         },
         "high": {
           "install": 4,
-          "nps": 12
+          "nps": 13
         },
         "npsDist": {
           "0": 1,
@@ -104972,7 +104972,7 @@ window.SLACK_DATA = {
           "5": 2,
           "8": 1,
           "9": 1,
-          "10": 12
+          "10": 13
         },
         "installDist": {
           "1": 1,
@@ -104989,6 +104989,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 3
         },
         "byTenure": {
+          "3개월": {
+            "total": 6,
+            "low": 1
+          },
           "구매설치": {
             "total": 10,
             "low": 3
@@ -105000,15 +105004,11 @@ window.SLACK_DATA = {
           "6개월": {
             "total": 1,
             "low": 0
-          },
-          "3개월": {
-            "total": 5,
-            "low": 1
           }
         },
         "byVan": {
           "SMARTRO": {
-            "total": 1,
+            "total": 2,
             "low": 0
           },
           "KSNET": {
@@ -105500,7 +105500,15 @@ window.SLACK_DATA = {
       },
       "1786532617.050779": {
         "post": "1786532617.050779",
-        "lastSeen": 1786533767.381
+        "lastSeen": 1786534233.509
+      },
+      "1786534200.749819": {
+        "post": "1786534200.749819",
+        "lastSeen": 1786534233.509
+      },
+      "1786534200.187879": {
+        "post": "1786534200.187879",
+        "lastSeen": 1786534233.509
       }
     },
     "days": {
@@ -127633,7 +127641,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-12 20:22",
+    "at": "2026-08-12 20:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
