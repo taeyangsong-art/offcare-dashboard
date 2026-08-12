@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 572,
- "updatedAt": "2026-08-12 14:02",
+ "version": 573,
+ "updatedAt": "2026-08-12 14:13",
  "days": 30,
  "items": [
   {
@@ -6807,7 +6807,6 @@ window.MENU_REQUESTS = {
      "name": "807782979.jpg.jpeg",
      "fid": "F0BP3495Y4A",
      "from": "댓글",
-     "path": "menu-files/1786325839_038889-0.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -6875,13 +6874,13 @@ window.MENU_REQUESTS = {
        "name": "눈다랑어뱃살",
        "price": 15000
       }
-     ]
+     ],
+     "path": "menu-files/1786325839_038889-0.jpeg"
     },
     {
      "name": "807782961.jpg.jpeg",
      "fid": "F0BNMNYNTN3",
      "from": "댓글",
-     "path": "menu-files/1786325839_038889-1.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -6964,33 +6963,434 @@ window.MENU_REQUESTS = {
        "name": "혼술세트",
        "price": 23000
       }
-     ]
+     ],
+     "path": "menu-files/1786325839_038889-1.jpeg"
     },
     {
      "name": "807783096.jpg.jpeg",
      "fid": "F0BNZKXAD9T",
      "from": "댓글",
-     "path": "menu-files/1786325839_038889-2.jpeg",
      "kind": "pos_screen",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1786325839_038889-2.jpeg"
     },
     {
      "name": "807783065.jpg.jpeg",
      "fid": "F0BNMNYU5EK",
      "from": "댓글",
-     "path": "menu-files/1786325839_038889-3.jpeg"
+     "path": "menu-files/1786325839_038889-3.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류",
+       "name": "코카콜라",
+       "price": 2000
+      },
+      {
+       "category": "주류",
+       "name": "사이다",
+       "price": 2000
+      },
+      {
+       "category": "주류",
+       "name": "환타",
+       "price": 2000
+      },
+      {
+       "category": "주류",
+       "name": "코카콜라제로",
+       "price": 2000
+      },
+      {
+       "category": "주류",
+       "name": "가격",
+       "price": 0
+      },
+      {
+       "category": "주류",
+       "name": "배달(막소주)",
+       "price": 4000
+      }
+     ]
     },
     {
      "name": "807783051.jpg.jpeg",
      "fid": "F0BP52R0J0H",
      "from": "댓글",
-     "path": "menu-files/1786325839_038889-4.jpeg"
+     "path": "menu-files/1786325839_038889-4.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류",
+       "name": "좋은데이",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "대선",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "새로",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "시원",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "오아소주",
+       "price": 7000
+      },
+      {
+       "category": "주류",
+       "name": "참이슬",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "진로",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "진로골드",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "백세주375ml",
+       "price": 9000
+      },
+      {
+       "category": "주류",
+       "name": "홍초소주",
+       "price": 7000
+      },
+      {
+       "category": "주류",
+       "name": "카스",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "테라",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "켈리",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "청하",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "흔21도(375ml)",
+       "price": 17000
+      },
+      {
+       "category": "주류",
+       "name": "화요25(375ml)",
+       "price": 25000
+      },
+      {
+       "category": "주류",
+       "name": "화요41(375ml)",
+       "price": 40000
+      },
+      {
+       "category": "주류",
+       "name": "일품진로25",
+       "price": 25000
+      },
+      {
+       "category": "주류",
+       "name": "카스곂호",
+       "price": 20000
+      },
+      {
+       "category": "주류",
+       "name": "보해복분자주(375ml)",
+       "price": 13000
+      },
+      {
+       "category": "주류",
+       "name": "화요25 세트",
+       "price": 27000
+      },
+      {
+       "category": "주류",
+       "name": "화요41 세트",
+       "price": 42000
+      },
+      {
+       "category": "주류",
+       "name": "일품진로25 세트",
+       "price": 27000
+      },
+      {
+       "category": "주류",
+       "name": "토닉워터",
+       "price": 2000
+      }
+     ]
     },
     {
      "name": "807783035.jpg.jpeg",
      "fid": "F0BP52R1LKB",
      "from": "댓글",
-     "path": "menu-files/1786325839_038889-5.jpeg"
+     "path": "menu-files/1786325839_038889-5.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "시계",
+       "name": "시보리대녀살 버럭",
+       "price": 35000
+      },
+      {
+       "category": "시계",
+       "name": "쫄키지",
+       "price": 15000
+      }
+     ]
+    },
+    {
+     "name": "807783020.jpg.jpeg",
+     "fid": "F0BNZKXSDHB",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "사케",
+       "name": "센300",
+       "price": 8000
+      },
+      {
+       "category": "사케",
+       "name": "오니레이슈",
+       "price": 10000
+      },
+      {
+       "category": "사케",
+       "name": "하쿠리720",
+       "price": 30000
+      },
+      {
+       "category": "사케",
+       "name": "준마이750",
+       "price": 40000
+      },
+      {
+       "category": "사케",
+       "name": "오우콘코우시(금사계)",
+       "price": 40000
+      },
+      {
+       "category": "사케",
+       "name": "하나기쿠라 준마이긴죠",
+       "price": 45000
+      },
+      {
+       "category": "사케",
+       "name": "준마이다이긴죠",
+       "price": 80000
+      },
+      {
+       "category": "사케",
+       "name": "구보타준마이다이긴죠720",
+       "price": 90000
+      },
+      {
+       "category": "사케",
+       "name": "닷사이45",
+       "price": 120000
+      },
+      {
+       "category": "사케",
+       "name": "닷사이39",
+       "price": 160000
+      },
+      {
+       "category": "사케",
+       "name": "스모500",
+       "price": 17000
+      },
+      {
+       "category": "사케",
+       "name": "스모900",
+       "price": 30000
+      },
+      {
+       "category": "사케",
+       "name": "오니900",
+       "price": 27000
+      },
+      {
+       "category": "사케",
+       "name": "하쿠쓰루마루",
+       "price": 35000
+      },
+      {
+       "category": "사케",
+       "name": "요하쿠로1.8L",
+       "price": 60000
+      },
+      {
+       "category": "사케",
+       "name": "간바리오토상",
+       "price": 35000
+      },
+      {
+       "category": "사케",
+       "name": "가격",
+       "price": 0
+      },
+      {
+       "category": "사케",
+       "name": "간술",
+       "price": 6000
+      },
+      {
+       "category": "사케",
+       "name": "도쿠리병",
+       "price": 10000
+      },
+      {
+       "category": "사케",
+       "name": "산토리하이볼",
+       "price": 8000
+      },
+      {
+       "category": "사케",
+       "name": "센300(배달)",
+       "price": 7000
+      },
+      {
+       "category": "사케",
+       "name": "스모500(배달)",
+       "price": 12000
+      },
+      {
+       "category": "사케",
+       "name": "스모900(배달)",
+       "price": 15000
+      },
+      {
+       "category": "사케",
+       "name": "준마이750(배달)",
+       "price": 45000
+      }
+     ]
+    },
+    {
+     "name": "807783002.jpg.jpeg",
+     "fid": "F0BP52Q7VRP",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "사이드",
+       "name": "모듬초밥(10pc",
+       "price": 12000
+      },
+      {
+       "category": "사이드",
+       "name": "연어초밥",
+       "price": 15000
+      },
+      {
+       "category": "사이드",
+       "name": "청다랑어초밥8",
+       "price": 38000
+      },
+      {
+       "category": "사이드",
+       "name": "초새우초밥10p",
+       "price": 14000
+      },
+      {
+       "category": "사이드",
+       "name": "초밥알(10P)",
+       "price": 2000
+      },
+      {
+       "category": "사이드",
+       "name": "해장라면",
+       "price": 7000
+      },
+      {
+       "category": "사이드",
+       "name": "튀김우동",
+       "price": 7000
+      },
+      {
+       "category": "사이드",
+       "name": "냉우동",
+       "price": 7000
+      },
+      {
+       "category": "사이드",
+       "name": "오뎅나베",
+       "price": 18000
+      },
+      {
+       "category": "사이드",
+       "name": "통오징어찜통탕",
+       "price": 25000
+      },
+      {
+       "category": "사이드",
+       "name": "왕새우튀김",
+       "price": 13000
+      },
+      {
+       "category": "사이드",
+       "name": "명란구이",
+       "price": 15000
+      },
+      {
+       "category": "사이드",
+       "name": "연어가라아게",
+       "price": 15000
+      },
+      {
+       "category": "사이드",
+       "name": "멘보샤",
+       "price": 12000
+      },
+      {
+       "category": "사이드",
+       "name": "구이(추가)",
+       "price": 6000
+      },
+      {
+       "category": "사이드",
+       "name": "오이(추가)",
+       "price": 2000
+      },
+      {
+       "category": "사이드",
+       "name": "라면사리",
+       "price": 2000
+      },
+      {
+       "category": "사이드",
+       "name": "(추가) 고노와다",
+       "price": 5000
+      },
+      {
+       "category": "사이드",
+       "name": "레몬슬라이스",
+       "price": 2000
+      }
+     ]
     }
    ],
    "datt": [],
@@ -7194,37 +7594,56 @@ window.MENU_REQUESTS = {
      "name": "1786115574520.png",
      "fid": "F0BP6D3B45S",
      "from": "댓글",
-     "path": "menu-files/1786319163_028879-0.png"
+     "path": "menu-files/1786319163_028879-0.png",
+     "kind": "product_photo",
+     "menu": []
     },
     {
      "name": "Screenshot_20260808_003312_KakaoTalk.jpg",
      "fid": "F0BP2MU3EBC",
      "from": "댓글",
-     "path": "menu-files/1786319163_028879-1.jpg"
+     "path": "menu-files/1786319163_028879-1.jpg",
+     "kind": "product_photo",
+     "menu": []
     },
     {
      "name": "Screenshot_20260808_024737_KakaoTalk.jpg",
      "fid": "F0BNMB3J4A3",
      "from": "댓글",
-     "path": "menu-files/1786319163_028879-2.jpg"
+     "path": "menu-files/1786319163_028879-2.jpg",
+     "kind": "product_photo",
+     "menu": []
     },
     {
      "name": "1786116103339.png",
      "fid": "F0BNMB32AG7",
      "from": "댓글",
-     "path": "menu-files/1786319163_028879-3.png"
+     "path": "menu-files/1786319163_028879-3.png",
+     "kind": "product_photo",
+     "menu": []
     },
     {
      "name": "1786115663684.png",
      "fid": "F0BNMB3HLH5",
      "from": "댓글",
-     "path": "menu-files/1786319163_028879-4.png"
+     "path": "menu-files/1786319163_028879-4.png",
+     "kind": "product_photo",
+     "menu": []
     },
     {
      "name": "Screenshot_20260807_231043_KakaoTalk(1).",
      "fid": "F0BNZ83AVL5",
      "from": "댓글",
-     "path": "menu-files/1786319163_028879-5.jpg"
+     "path": "menu-files/1786319163_028879-5.jpg",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "name": "Screenshot_20260807_231707_KakaoTalk.jpg",
+     "fid": "F0BP2MVEW4S",
+     "from": "댓글",
+     "kind": "product_photo",
+     "menu": []
     }
    ],
    "datt": [],
