@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 587,
- "updatedAt": "2026-08-12 17:30",
+ "version": 588,
+ "updatedAt": "2026-08-12 17:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1786523837.015949",
+   "date": "2026-08-12",
+   "time": "17:37",
+   "store": "김마리 야탑점",
+   "biz": "4155900952",
+   "pos": "퍼스트포스",
+   "content": "안녕하세요, 대표님께서 8/7 날짜로 메뉴 등록 요청 rm 메일로 보내셨다 하셨는데 아직 등록이 안됐다 하셔서요! 김마리 야탑점, 서현점, 태전점 키오스크 메뉴 사진 등재 부탁드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "메일 제목 : 김마리 야탑점 메뉴사진 총 6개 등록부탁드려요\n혹시 사진 첨부 필요하면 제가 하겠습니다..!"
+   ],
+   "rc": 2,
+   "lr": "1786523853.080569",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786523837015949"
+  },
   {
    "ts": "1786522033.806389",
    "date": "2026-08-12",
