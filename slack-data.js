@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3495,
+  "version": 3496,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -108408,20 +108408,20 @@ window.SLACK_DATA = {
         "offline": 42,
         "unknown": 0
       },
-      "updatedAt": "19:38",
+      "updatedAt": "20:00",
       "voc": {
-        "responses": 18,
+        "responses": 19,
         "install": {
           "count": 5,
           "low": 0
         },
         "nps": {
-          "count": 18,
+          "count": 19,
           "low": 4
         },
         "high": {
           "install": 3,
-          "nps": 8
+          "nps": 9
         },
         "npsDist": {
           "0": 2,
@@ -108430,7 +108430,7 @@ window.SLACK_DATA = {
           "6": 2,
           "8": 3,
           "9": 1,
-          "10": 8
+          "10": 9
         },
         "installDist": {
           "4": 2,
@@ -108443,6 +108443,10 @@ window.SLACK_DATA = {
           "요식업": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 4,
+            "low": 1
+          },
           "구매설치": {
             "total": 5,
             "low": 0
@@ -108455,16 +108459,16 @@ window.SLACK_DATA = {
             "total": 7,
             "low": 2
           },
-          "12개월": {
-            "total": 3,
-            "low": 1
-          },
           "6개월": {
             "total": 1,
             "low": 0
           }
         },
         "byVan": {
+          "KSNET": {
+            "total": 2,
+            "low": 0
+          },
           "KOCES": {
             "total": 2,
             "low": 0
@@ -108480,10 +108484,6 @@ window.SLACK_DATA = {
           "KIS": {
             "total": 3,
             "low": 1
-          },
-          "KSNET": {
-            "total": 1,
-            "low": 0
           },
           "SECTA9": {
             "total": 3,
@@ -108590,6 +108590,18 @@ window.SLACK_DATA = {
           }
         ],
         "praises": [
+          {
+            "time": "20:00",
+            "store": "애장품",
+            "storeId": "199024",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "진짜 편리하다. 예전 포스들 써본 사장들만 알 수 있을 것이다. 세상 참 좋아졌다",
+            "byReaction": false,
+            "doneDate": ""
+          },
           {
             "time": "19:12",
             "store": "코어 앤 밸런스 필라테스",
@@ -108878,23 +108890,31 @@ window.SLACK_DATA = {
       },
       "1786590627.630839": {
         "post": "1786590627.630839",
-        "lastSeen": 1786617927.692
+        "lastSeen": 1786618839.599
       },
       "1786591178.680969": {
         "post": "1786591178.680969",
-        "lastSeen": 1786617927.692
+        "lastSeen": 1786618839.599
       },
       "1786594081.722509": {
         "post": "1786594081.722509",
-        "lastSeen": 1786617927.692
+        "lastSeen": 1786618839.599
       },
       "1786605904.194739": {
         "post": "1786605904.194739",
-        "lastSeen": 1786617927.692
+        "lastSeen": 1786618839.599
       },
       "1786617490.524269": {
         "post": "1786617490.524269",
-        "lastSeen": 1786617927.692
+        "lastSeen": 1786618839.599
+      },
+      "1786618802.889259": {
+        "post": "1786618802.889259",
+        "lastSeen": 1786618839.599
+      },
+      "1786618221.741349": {
+        "post": "1786618221.741349",
+        "lastSeen": 1786618839.599
       }
     },
     "days": {
@@ -132402,7 +132422,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-13 19:45",
+    "at": "2026-08-13 20:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
