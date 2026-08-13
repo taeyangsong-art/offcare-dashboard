@@ -4383,14 +4383,19 @@ function renderOverview(){
   const vocDoneCur = ovVocDone(viewDates), vocDonePrv = ovVocDone(prevDates);
   const vocAttr = vocDoneCur.cnt, vocAttrPrev = vocDonePrv.cnt;
   const catTotals = [...workCatTotals, {key:'voc', name:'VOC', icon:'💬', color:'#ff2d55', total:vocTot, prev:vocPrevN, proc:vocAttr}];
-  // 설치 OB — 시트(설치일정 확인해주세요) D열 기준. 처리량에 포함되므로 합계·랭킹·MVP·원격 총 건수에 모두 반영된다.
-  // 야간 탭에서는 시트에 시각이 없어 obCnt 가 null → 0으로 취급해 다른 집계를 흔들지 않는다.
+  /* 설치 OB — 시트(설치일정 확인해주세요) D열 기준.
+   * '원격 총 건수' 에는 넣지 않고, 직원별 처리건수·랭킹·MVP 에만 넣는다(사용자 결정).
+   * 원격 인입으로 들어온 건이 아니라서 총 건수에 섞으면 인입량이 부풀지만, 담당자가 실제로
+   * 처리한 일이라 개인 실적에는 반영해야 한다. 그래서 합계를 두 개로 나눠 쓴다.
+   * 야간 탭에서는 시트에 시각이 없어 obCnt 가 null → 0으로 취급해 다른 집계를 흔들지 않는다. */
   const obCur = obCnt(viewDates), obPrev = obCnt(prevDates);
   const obSum = obCur || 0, obSumPrev = obPrev || 0;
   const obEmp = obByEmp(viewDates);                             // 담당자별
   const obEtc = Math.max(0, Object.entries(obEmp).reduce((a,[e,n])=>a+(EMPLOYEES.includes(e)?0:n),0));
-  const grandProc = workGrand + vocAttr + obSum;      // 처리 = 업무 처리 + VOC 처리 + 설치 OB
-  const grandProcPrev = workGrandPrev + vocAttrPrev + obSumPrev;
+  const grandProc = workGrand + vocAttr;              // 원격 총 건수용 처리 = 업무 처리 + VOC 처리 (설치 OB 제외)
+  const grandProcPrev = workGrandPrev + vocAttrPrev;
+  const grandEmp = grandProc + obSum;                 // 직원별 표 합계·랭킹용 = 위 + 설치 OB
+  const grandEmpPrev = grandProcPrev + obSumPrev;
   // 부재 미처리(1차부재)도 '원격 총 건수'에 포함 — 해당 기간 각 날짜의 부재 pending 합
   const pendCntOf = ds => ovPendingRaw(ds).length;
   const absCntOf = ds => ovPendingRaw(ds).filter(p=>(p.reasons||[]).some(r=>/부재/.test(r))).length;
@@ -4423,7 +4428,7 @@ function renderOverview(){
 
   // ── 헤드라인/알림/근무 계산 ──
   const periodWord = ovLabel();
-  const mvp = grandProc>0 ? empRows[0] : null;
+  const mvp = grandEmp>0 ? empRows[0] : null;      // 설치 OB 만 있는 날도 MVP 가 나와야 한다
   const todayStr = ymd(today());
   const tday = slackDay(todayStr);
   const catNameOf = k => (CATEGORIES.find(c=>c.key===k)||{}).name || k;
@@ -4552,7 +4557,7 @@ function renderOverview(){
               <td class="num tot">${etcTotal}</td>
             </tr>`:''}
           </tbody>
-          <tfoot><tr><td>합계</td>${workCatTotals.map(c=>`<td class="num">${c.total}</td>`).join("")}<td class="num">${vocAttr}</td><td class="num ob-col">${obSum}</td><td class="num tot">${grandProc}</td></tr></tfoot>
+          <tfoot><tr><td>합계</td>${workCatTotals.map(c=>`<td class="num">${c.total}</td>`).join("")}<td class="num">${vocAttr}</td><td class="num ob-col">${obSum}</td><td class="num tot">${grandEmp}</td></tr></tfoot>
         </table>
       </div>
     </div>
