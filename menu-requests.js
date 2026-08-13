@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 628,
- "updatedAt": "2026-08-13 17:31",
+ "version": 629,
+ "updatedAt": "2026-08-13 17:45",
  "days": 30,
  "items": [
   {
@@ -1069,8 +1069,8 @@ window.MENU_REQUESTS = {
    "rc": 4,
    "lr": "1786607798.070919",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786607743302069"
   },
   {
@@ -1092,8 +1092,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1786607423.167859",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786607405831629"
   },
   {
@@ -1112,7 +1112,6 @@ window.MENU_REQUESTS = {
      "name": "Resized_20260813_144336.jpg.jpeg",
      "fid": "F0BQ1P2F77W",
      "from": "댓글",
-     "path": "menu-files/1786604365_851779-0.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -1225,13 +1224,13 @@ window.MENU_REQUESTS = {
        "name": "밀크티(ice)",
        "price": 4000
       }
-     ]
+     ],
+     "path": "menu-files/1786604365_851779-0.jpeg"
     },
     {
      "name": "Resized_20260813_144316.jpg.jpeg",
      "fid": "F0BQ01K46Q1",
      "from": "댓글",
-     "path": "menu-files/1786604365_851779-1.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -1349,13 +1348,13 @@ window.MENU_REQUESTS = {
        "name": "오트밀라떼(ice)",
        "price": 5000
       }
-     ]
+     ],
+     "path": "menu-files/1786604365_851779-1.jpeg"
     },
     {
      "name": "Resized_36793_396655483744194.jpg.jpeg",
      "fid": "F0BPGMNQYTZ",
      "from": "댓글",
-     "path": "menu-files/1786604365_851779-2.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -1463,13 +1462,13 @@ window.MENU_REQUESTS = {
        "name": "메리골드차",
        "price": 4500
       }
-     ]
+     ],
+     "path": "menu-files/1786604365_851779-2.jpeg"
     },
     {
      "name": "Resized_20260813_144449.jpg.jpeg",
      "fid": "F0BPRRNMFTM",
      "from": "댓글",
-     "path": "menu-files/1786604365_851779-3.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -1567,13 +1566,13 @@ window.MENU_REQUESTS = {
        "name": "팥추가",
        "price": 3000
       }
-     ]
+     ],
+     "path": "menu-files/1786604365_851779-3.jpeg"
     },
     {
      "name": "Resized_20260813_144453.jpg.jpeg",
      "fid": "F0BQ01L4GL9",
      "from": "댓글",
-     "path": "menu-files/1786604365_851779-4.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -1696,16 +1695,21 @@ window.MENU_REQUESTS = {
        "name": "아메리카노 40잔",
        "price": 100000
       }
-     ]
+     ],
+     "path": "menu-files/1786604365_851779-4.jpeg"
     }
    ],
    "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1786604427.757639",
+   "replies": [
+    "내가",
+    "하는중",
+    "비켜욘"
+   ],
+   "rc": 6,
+   "lr": "1786609999.850309",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786604365851779"
   },
   {
@@ -29013,27 +29017,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784019751379799"
-  },
-  {
-   "ts": "1784018115.759219",
-   "date": "2026-07-14",
-   "time": "17:35",
-   "store": "용용선생 죽전보정점",
-   "biz": "6923601205",
-   "pos": "",
-   "content": "메뉴 추가 요청\n주류\n클라우드 / 5500원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1784019764.197619",
-   "rfx": 3,
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784018115759219"
   }
  ],
  "ocr": {
