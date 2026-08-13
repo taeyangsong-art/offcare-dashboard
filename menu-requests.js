@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 604,
- "updatedAt": "2026-08-13 09:45",
+ "version": 605,
+ "updatedAt": "2026-08-13 10:00",
  "days": 30,
  "items": [
   {
@@ -524,10 +524,12 @@ window.MENU_REQUESTS = {
    ],
    "datt": [],
    "replies": [
-    "옵션."
+    "옵션.",
+    "포인트 사옹중인데 이관관련 진행여부 부탁드립니다.",
+    "접주님 말로는 고객정보 이관조건으로 교체받는시는거라고 하시는데 고객정보가 안보여서요"
    ],
-   "rc": 7,
-   "lr": "1786580657.244339",
+   "rc": 10,
+   "lr": "1786582770.405849",
    "rfx": 3,
    "status": "done",
    "handler": "김규빈",
