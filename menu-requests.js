@@ -3,10 +3,142 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 611,
- "updatedAt": "2026-08-13 11:31",
+ "version": 612,
+ "updatedAt": "2026-08-13 11:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1786588701.278589",
+   "date": "2026-08-13",
+   "time": "11:38",
+   "store": "황가네",
+   "biz": "3860502931",
+   "pos": "기타",
+   "content": "포장메뉴 글씨 크기와 굵기를\n만두추가와 같게 부탁드려요~",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "머쓲타드 완료"
+   ],
+   "rc": 2,
+   "lr": "1786588741.142319",
+   "rfx": 3,
+   "status": "dup",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786588701278589"
+  },
+  {
+   "ts": "1786588368.035779",
+   "date": "2026-08-13",
+   "time": "11:32",
+   "store": "황가네",
+   "biz": "3860502931",
+   "pos": "기타",
+   "content": "만두메뉴 위에 빨간색배경으로\n이름 포장\n금액은 500원으로 추가해주세요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BPFEM028P",
+     "from": "댓글",
+     "path": "menu-files/1786588368_035779-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "잔치국수",
+       "price": 6500
+      },
+      {
+       "category": "",
+       "name": "비빔국수",
+       "price": 7500
+      },
+      {
+       "category": "",
+       "name": "콩국수",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "김치말이국수",
+       "price": 8500
+      },
+      {
+       "category": "",
+       "name": "칼국수",
+       "price": 7500
+      },
+      {
+       "category": "",
+       "name": "수제비",
+       "price": 8500
+      },
+      {
+       "category": "",
+       "name": "떡만두국",
+       "price": 8500
+      },
+      {
+       "category": "",
+       "name": "포장",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "만두",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "제육 비빔밥",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "후라이추가",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "만두추가",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "김밥",
+       "price": 3800
+      },
+      {
+       "category": "",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "곱빼기",
+       "price": 1000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "슾하슾하 스파로스",
+    ":telephone_receiver: 만두추가 위로 변경"
+   ],
+   "rc": 4,
+   "lr": "1786588629.773279",
+   "rfx": 3,
+   "status": "done",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786588368035779"
+  },
   {
    "ts": "1786587749.019279",
    "date": "2026-08-13",
@@ -23,7 +155,6 @@ window.MENU_REQUESTS = {
      "name": "Resized_20260813_101937.jpg.jpeg",
      "fid": "F0BQR4SJB3J",
      "from": "댓글",
-     "path": "menu-files/1786587749_019279-0.jpeg",
      "kind": "menu_board",
      "menu": [
       {
@@ -41,13 +172,13 @@ window.MENU_REQUESTS = {
        "name": "콘듀치킨",
        "price": 22000
       }
-     ]
+     ],
+     "path": "menu-files/1786587749_019279-0.jpeg"
     },
     {
      "name": "Resized_20260813_101942.jpg.jpeg",
      "fid": "F0BQR4RQTK2",
      "from": "댓글",
-     "path": "menu-files/1786587749_019279-1.jpeg",
      "kind": "menu_board",
      "menu": [
       {
@@ -60,13 +191,13 @@ window.MENU_REQUESTS = {
        "name": "페페로니피자",
        "price": 15000
       }
-     ]
+     ],
+     "path": "menu-files/1786587749_019279-1.jpeg"
     },
     {
      "name": "Resized_20260813_101947.jpg.jpeg",
      "fid": "F0BQ0ECGW3E",
      "from": "댓글",
-     "path": "menu-files/1786587749_019279-2.jpeg",
      "kind": "menu_board",
      "menu": [
       {
@@ -89,13 +220,13 @@ window.MENU_REQUESTS = {
        "name": "오곡파닭치킨",
        "price": 21000
       }
-     ]
+     ],
+     "path": "menu-files/1786587749_019279-2.jpeg"
     },
     {
      "name": "Resized_20260813_101950.jpg.jpeg",
      "fid": "F0BPT63CXPF",
      "from": "댓글",
-     "path": "menu-files/1786587749_019279-3.jpeg",
      "kind": "menu_board",
      "menu": [
       {
@@ -113,13 +244,13 @@ window.MENU_REQUESTS = {
        "name": "맵부심양념치킨",
        "price": 21000
       }
-     ]
+     ],
+     "path": "menu-files/1786587749_019279-3.jpeg"
     },
     {
      "name": "Resized_20260813_101957(1).jpg (1).jpeg",
      "fid": "F0BPUQYUJQN",
      "from": "댓글",
-     "path": "menu-files/1786587749_019279-4.jpeg",
      "kind": "menu_board",
      "menu": [
       {
@@ -132,13 +263,13 @@ window.MENU_REQUESTS = {
        "name": "고추단반윙봉",
        "price": 22000
       }
-     ]
+     ],
+     "path": "menu-files/1786587749_019279-4.jpeg"
     },
     {
      "name": "Resized_20260813_102001.jpg.jpeg",
      "fid": "F0BQR4SJ1CY",
      "from": "댓글",
-     "path": "menu-files/1786587749_019279-5.jpeg",
      "kind": "menu_board",
      "menu": [
       {
@@ -156,7 +287,8 @@ window.MENU_REQUESTS = {
        "name": "스모키양념치킨",
        "price": 22000
       }
-     ]
+     ],
+     "path": "menu-files/1786587749_019279-5.jpeg"
     },
     {
      "name": "Resized_20260813_102005.jpg.jpeg",
@@ -489,18 +621,27 @@ window.MENU_REQUESTS = {
        "price": 2000
       }
      ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BPQJMQGRH",
+     "from": "댓글",
+     "kind": "menu_board",
+     "menu": []
     }
    ],
    "datt": [],
    "replies": [
     "모든 가격 1000원씩 인상된 가격으로 등록 요청드립니다!",
     "• 모든메뉴가 아니라 치킨메뉴만 1000원씩 인상이래요!!!!",
-    "• 고르곤졸라 15000원!"
+    "• 고르곤졸라 15000원!",
+    "지금 OCR토큰충전 요청 드리긴했는데 언제해주실라나",
+    "기안서 결재는 완"
    ],
-   "rc": 6,
-   "lr": "1786588229.625229",
+   "rc": 11,
+   "lr": "1786588808.502819",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786587749019279"
   },
@@ -26782,29 +26923,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784002971020829"
-  },
-  {
-   "ts": "1783996868.762279",
-   "date": "2026-07-14",
-   "time": "11:41",
-   "store": "맘스플래닛 평촌센터",
-   "biz": "5579101916",
-   "pos": "토스포스",
-   "content": "상품 전체등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "보기전용 :아오:"
-   ],
-   "rc": 2,
-   "lr": "1783997183.648549",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783996868762279"
   }
  ],
  "ocr": {
