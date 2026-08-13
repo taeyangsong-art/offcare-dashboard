@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 616,
- "updatedAt": "2026-08-13 13:30",
+ "version": 617,
+ "updatedAt": "2026-08-13 13:45",
  "days": 30,
  "items": [
   {
@@ -27186,53 +27186,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784005218533569"
-  },
-  {
-   "ts": "1784003764.191419",
-   "date": "2026-07-14",
-   "time": "13:36",
-   "store": "땡기네 김밥",
-   "biz": "2113517705",
-   "pos": "",
-   "content": "메뉴 가격 수정 요청드립니다. :woman-bowing::skin-tone-2:\n• 돈까스 김밥 5,000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "감사합니다 :핑크_굽신:  직접 변경 못해 죄송해요 :개굴-죄송:",
-    "감삼다 !! :face_holding_back_tears:"
-   ],
-   "rc": 6,
-   "lr": "1784004701.191429",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784003764191419"
-  },
-  {
-   "ts": "1784003610.134709",
-   "date": "2026-07-14",
-   "time": "13:33",
-   "store": "정가네떡볶이",
-   "biz": "4880603456",
-   "pos": "토스포스",
-   "content": "떡볶이 4,500원\n김밥 3,500원\n튀김(김말이, 오징어, 만두, 고구마) 3,500원\n순대 5,500원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "신규 오픈 매장"
-   ],
-   "rc": 2,
-   "lr": "1784004259.237039",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784003610134709"
   }
  ],
  "ocr": {
