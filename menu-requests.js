@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 623,
- "updatedAt": "2026-08-13 16:01",
+ "version": 624,
+ "updatedAt": "2026-08-13 16:15",
  "days": 30,
  "items": [
   {
@@ -27914,27 +27914,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784015579369849"
-  },
-  {
-   "ts": "1784013316.563889",
-   "date": "2026-07-14",
-   "time": "16:15",
-   "store": "도시곳간 목포점",
-   "biz": "6068703752",
-   "pos": "토스포스",
-   "content": "도시곳간 (TEST) (<tel:···|···>) 메뉴 복제 및 아래의 내용으로 셋팅 부탁드립니다.\n         메뉴등록 완료 후, 대시보드(도시곳간) 연결 부탁드립니다 :감사합니다꾸벅:\n\n```<도시곳간 토스포시 도입 시> - 세팅 필요!\n적용 포인트 설정 -> 1% / 최소 사용사용 50원```",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1784014066.437369",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784013316563889"
   }
  ],
  "ocr": {
