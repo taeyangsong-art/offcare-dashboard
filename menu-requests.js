@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 609,
- "updatedAt": "2026-08-13 11:00",
+ "version": 610,
+ "updatedAt": "2026-08-13 11:15",
  "days": 30,
  "items": [
   {
@@ -18,16 +18,26 @@ window.MENU_REQUESTS = {
    "special": "저희 메뉴가격 처리 되었을까요?",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BPYLCB09F",
+     "from": "댓글",
+     "path": "menu-files/1786586364_654609-0.png",
+     "kind": "other",
+     "menu": []
+    }
+   ],
    "datt": [],
    "replies": [
-    "여기도 메일 안옴;"
+    "여기도 메일 안옴;",
+    "이거인듯 중복임"
    ],
-   "rc": 2,
-   "lr": "1786586398.271099",
+   "rc": 4,
+   "lr": "1786586864.391059",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786586364654609"
   },
   {
@@ -834,8 +844,8 @@ window.MENU_REQUESTS = {
     "요기 혹시 등록하고 문자 남겨주실 수 있으실까요..! :냥냥단_눈물:\n··· :핑크_굽신::핑크_굽신::핑크_굽신::핑크_굽신: 바쁘실텐데 정말정말 감사드립니다,,",
     "정말 감사드립니다! :퍼디즈-감동:"
    ],
-   "rc": 15,
-   "lr": "1786586364.204099",
+   "rc": 16,
+   "lr": "1786587121.757689",
    "rfx": 3,
    "status": "done",
    "handler": "송태양",
