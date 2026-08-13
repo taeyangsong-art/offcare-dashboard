@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3445,
+  "version": 3446,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -102177,7 +102177,7 @@ window.SLACK_DATA = {
           "송태양": 17,
           "김동욱": 19,
           "김규빈": 8,
-          "김현기": 30
+          "김현기": 32
         },
         "extern": {
           "서상원": 1,
@@ -102224,32 +102224,10 @@ window.SLACK_DATA = {
           ]
         },
         {
-          "time": "13:49",
-          "store": "레이지 알피엠(Rage RPM)",
-          "biz": "5276400773",
-          "handler": "김현기",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
           "time": "11:48",
           "store": "올데이파티",
           "biz": "4097400625",
           "handler": "배선유",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "11:19",
-          "store": "월정리 유메이우동",
-          "biz": "2822301366",
-          "handler": "김현기",
           "cat": "as",
           "intake": "online",
           "reasons": [
@@ -103939,6 +103917,17 @@ window.SLACK_DATA = {
           "note": "01085465236 / 키오스크 모드 프린터 설정 완료"
         },
         {
+          "time": "13:49",
+          "store": "레이지 알피엠(Rage RPM)",
+          "biz": "5276400773",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "키오스크 세트 + 프론트 + 유프 이용중 / 영수증 출력되지 않아 <https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1786503229153669|다시 도움> 부탁드리겠습니다 :woman-",
+          "hw": "",
+          "intake": "online",
+          "note": "태블릿에서 유프 관련 설정이 빠져있었음 재설정 후 정상 작동"
+        },
+        {
           "time": "13:47",
           "store": "아씨보쌈",
           "biz": "2161317445",
@@ -104456,6 +104445,18 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": ""
+        },
+        {
+          "time": "11:19",
+          "store": "월정리 유메이우동",
+          "biz": "2822301366",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "프린터 연결 끊겨 문의, 재연결 필요하다 보여져 빠른 연락 요청주셨습니다:bow:",
+          "hw": "",
+          "urgent": true,
+          "intake": "online",
+          "note": "당장 고객이 있어 어려움 태양님 통하여 오후에 해결 완료"
         },
         {
           "time": "11:16",
@@ -105538,15 +105539,31 @@ window.SLACK_DATA = {
       }
     },
     "2026-08-13": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "김동욱": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:00",
+          "store": "더 멀리",
+          "biz": "3976300914",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "유선프린터기 출력 오류 / 도움 부탁드립니다! :꾸벅_옐로:",
+          "hw": "",
+          "intake": "online",
+          "note": "1차 부재 / 프린터 무음설정"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:00",
+      "updatedAt": "09:09",
       "voc": {
         "responses": 2,
         "install": {
@@ -127854,13 +127871,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-13 09:00",
+    "at": "2026-08-13 09:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3497,
+    "rows": 3501,
     "named": 193,
     "unknownName": 0,
     "beforeStart": 0,

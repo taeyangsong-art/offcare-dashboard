@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 601,
- "updatedAt": "2026-08-13 09:01",
+ "version": 602,
+ "updatedAt": "2026-08-13 09:16",
  "days": 30,
  "items": [
   {
@@ -26431,118 +26431,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김동욱",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783988529001429"
-  },
-  {
-   "ts": "1783988157.885309",
-   "date": "2026-07-14",
-   "time": "09:15",
-   "store": "형과아우누룽지삼계탕왕갈비탕",
-   "biz": "3932901130",
-   "pos": "오케이포스",
-   "content": "황칠삼계탕15000\n황칠누룽지삼계탕17000\n황칠녹두삼계탕17000\n황칠녹두누룽지삼계탕19000\n황칠전복삼계탕20000\n황칠전복누룽지삼계탕22000\n황칠왕갈비탕17000\n황칠전복왕갈비탕21000",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/1egQTY-1-syXj0bh-upmczmsThBnEiYVl/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "1egQTY-1-syXj0bh-upmczmsThBnEiYVl",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "",
-       "name": "황칠 삼계탕",
-       "price": 15000
-      },
-      {
-       "category": "",
-       "name": "황칠 누룽지 삼계탕",
-       "price": 17000
-      },
-      {
-       "category": "",
-       "name": "황칠 녹두 삼계탕",
-       "price": 17000
-      },
-      {
-       "category": "",
-       "name": "황칠 녹두 누룽지 삼계탕",
-       "price": 19000
-      },
-      {
-       "category": "",
-       "name": "황칠 전복 삼계탕",
-       "price": 20000
-      },
-      {
-       "category": "",
-       "name": "황칠 전복 누룽지삼계탕",
-       "price": 22000
-      },
-      {
-       "category": "",
-       "name": "황칠 왕 갈비탕",
-       "price": 17000
-      },
-      {
-       "category": "",
-       "name": "황칠 전복 왕갈비탕",
-       "price": 21000
-      },
-      {
-       "category": "",
-       "name": "황칠 흑염소탕120g",
-       "price": 16000
-      },
-      {
-       "category": "",
-       "name": "황칠 흑염소탕(특대)170g",
-       "price": 20000
-      },
-      {
-       "category": "",
-       "name": "황칠 흑염소 미나리초무침",
-       "price": 30000
-      },
-      {
-       "category": "",
-       "name": "황칠 흑염소 전골 中",
-       "price": 58000
-      },
-      {
-       "category": "",
-       "name": "황칠 흑염소 전골 大",
-       "price": 78000
-      },
-      {
-       "category": "",
-       "name": "황칠 약선 흑염소 수육 中",
-       "price": 68000
-      },
-      {
-       "category": "추가",
-       "name": "야채 추가 (부추+깻잎+숙주)",
-       "price": 3000
-      },
-      {
-       "category": "추가",
-       "name": "염소고기 추가",
-       "price": 30000
-      }
-     ]
-    }
-   ],
-   "replies": [
-    "메뉴등록 및 통화완료."
-   ],
-   "rc": 2,
-   "lr": "1783990703.925679",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김동욱",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783988157885309"
   }
  ],
  "ocr": {
