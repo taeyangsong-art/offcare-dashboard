@@ -3,10 +3,507 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 610,
- "updatedAt": "2026-08-13 11:15",
+ "version": 611,
+ "updatedAt": "2026-08-13 11:31",
  "days": 30,
  "items": [
+  {
+   "ts": "1786587749.019279",
+   "date": "2026-08-13",
+   "time": "11:22",
+   "store": "또래오래 수택점",
+   "biz": "5531500599",
+   "pos": "",
+   "content": "메뉴등록요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "Resized_20260813_101937.jpg.jpeg",
+     "fid": "F0BQR4SJB3J",
+     "from": "댓글",
+     "path": "menu-files/1786587749_019279-0.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "BEST 메뉴",
+       "name": "갈릭반양념반",
+       "price": 21000
+      },
+      {
+       "category": "BEST 메뉴",
+       "name": "단짠윙봉",
+       "price": 21000
+      },
+      {
+       "category": "BEST 메뉴",
+       "name": "콘듀치킨",
+       "price": 22000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260813_101942.jpg.jpeg",
+     "fid": "F0BQR4RQTK2",
+     "from": "댓글",
+     "path": "menu-files/1786587749_019279-1.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "Pizza Menu",
+       "name": "로제불고기피자",
+       "price": 16000
+      },
+      {
+       "category": "Pizza Menu",
+       "name": "페페로니피자",
+       "price": 15000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260813_101947.jpg.jpeg",
+     "fid": "F0BQ0ECGW3E",
+     "from": "댓글",
+     "path": "menu-files/1786587749_019279-2.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "오곡시리즈",
+       "name": "오곡후라이드",
+       "price": 19000
+      },
+      {
+       "category": "오곡시리즈",
+       "name": "맵부심후라이드",
+       "price": 20000
+      },
+      {
+       "category": "오곡시리즈",
+       "name": "오곡갈릭플러스",
+       "price": 20000
+      },
+      {
+       "category": "오곡시리즈",
+       "name": "오곡파닭치킨",
+       "price": 21000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260813_101950.jpg.jpeg",
+     "fid": "F0BPT63CXPF",
+     "from": "댓글",
+     "path": "menu-files/1786587749_019279-3.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "오곡시리즈",
+       "name": "오곡양념치킨",
+       "price": 21000
+      },
+      {
+       "category": "오곡시리즈",
+       "name": "오곡핫양념치킨",
+       "price": 21000
+      },
+      {
+       "category": "오곡시리즈",
+       "name": "맵부심양념치킨",
+       "price": 21000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260813_101957(1).jpg (1).jpeg",
+     "fid": "F0BPUQYUJQN",
+     "from": "댓글",
+     "path": "menu-files/1786587749_019279-4.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "시그니처 메뉴",
+       "name": "단반윙봉",
+       "price": 21000
+      },
+      {
+       "category": "시그니처 메뉴",
+       "name": "고추단반윙봉",
+       "price": 22000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260813_102001.jpg.jpeg",
+     "fid": "F0BQR4SJ1CY",
+     "from": "댓글",
+     "path": "menu-files/1786587749_019279-5.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "시그니처 메뉴",
+       "name": "폰듀치킨",
+       "price": 22000
+      },
+      {
+       "category": "시그니처 메뉴",
+       "name": "마왕치킨",
+       "price": 22000
+      },
+      {
+       "category": "시그니처 메뉴",
+       "name": "스모키양념치킨",
+       "price": 22000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260813_102005.jpg.jpeg",
+     "fid": "F0BPQGXJ17D",
+     "from": "댓글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "스페셜 메뉴",
+       "name": "치즈뿌레이크",
+       "price": 22000
+      },
+      {
+       "category": "스페셜 메뉴",
+       "name": "치즈뿌레이크 (한마리)",
+       "price": 22000
+      },
+      {
+       "category": "스페셜 메뉴",
+       "name": "치즈뿌레이크 (윙봉/스틱)",
+       "price": 23000
+      },
+      {
+       "category": "스페셜 메뉴",
+       "name": "치즈뿌레이크 (콤보)",
+       "price": 23000
+      },
+      {
+       "category": "스페셜 메뉴",
+       "name": "치즈뿌레이크 (순살)",
+       "price": 24000
+      },
+      {
+       "category": "스페셜 메뉴",
+       "name": "핫뿌레이크",
+       "price": 22000
+      },
+      {
+       "category": "스페셜 메뉴",
+       "name": "핫뿌레이크 (윙봉/스틱)",
+       "price": 23000
+      },
+      {
+       "category": "스페셜 메뉴",
+       "name": "핫뿌레이크 (콤보)",
+       "price": 23000
+      },
+      {
+       "category": "스페셜 메뉴",
+       "name": "핫뿌레이크 (순살)",
+       "price": 24000
+      },
+      {
+       "category": "스페셜 메뉴",
+       "name": "내맘다강정(순살)",
+       "price": 24000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260813_101957(1).jpg.jpeg",
+     "fid": "F0BQR4T57RN",
+     "from": "댓글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "시그니처 메뉴",
+       "name": "단짠윙봉",
+       "price": 21000
+      },
+      {
+       "category": "시그니처 메뉴",
+       "name": "고추단짠윙봉",
+       "price": 22000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260813_102021(1).jpg.jpeg",
+     "fid": "F0BPFCZAKLP",
+     "from": "댓글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "마른안주류",
+       "name": "먹태",
+       "price": 20000
+      },
+      {
+       "category": "마른안주류",
+       "name": "노가리",
+       "price": 20000
+      },
+      {
+       "category": "마른안주류",
+       "name": "쥐포",
+       "price": 20000
+      },
+      {
+       "category": "마른안주류",
+       "name": "박대",
+       "price": 20000
+      },
+      {
+       "category": "마른안주류",
+       "name": "반건조오징어",
+       "price": 20000
+      },
+      {
+       "category": "탕류",
+       "name": "어묵탕",
+       "price": 15000
+      },
+      {
+       "category": "탕류",
+       "name": "쐬살어묵탕",
+       "price": 18000
+      },
+      {
+       "category": "탕류",
+       "name": "골뱅이탕",
+       "price": 18000
+      },
+      {
+       "category": "탕류",
+       "name": "나가사끼짬뽕탕",
+       "price": 18000
+      },
+      {
+       "category": "탕류",
+       "name": "김치찌개",
+       "price": 20000
+      },
+      {
+       "category": "탕류",
+       "name": "소곱창전골",
+       "price": 35000
+      },
+      {
+       "category": "탕류",
+       "name": "닭도리탕 (中)",
+       "price": 38000
+      },
+      {
+       "category": "탕류",
+       "name": "(大)",
+       "price": 45000
+      },
+      {
+       "category": "튀김류",
+       "name": "군위튀김",
+       "price": 14000
+      },
+      {
+       "category": "튀김류",
+       "name": "황새우튀김",
+       "price": 15000
+      },
+      {
+       "category": "튀김류",
+       "name": "모듬감자튀김",
+       "price": 20000
+      },
+      {
+       "category": "튀김류",
+       "name": "통오징어튀김 (2마리)",
+       "price": 35000
+      },
+      {
+       "category": "발류",
+       "name": "국물닭발",
+       "price": 15000
+      },
+      {
+       "category": "발류",
+       "name": "양념콘치즘닭발",
+       "price": 15000
+      },
+      {
+       "category": "안주류",
+       "name": "닭모듬",
+       "price": 17000
+      },
+      {
+       "category": "안주류",
+       "name": "닭발",
+       "price": 17000
+      },
+      {
+       "category": "안주류",
+       "name": "부쳐닭발",
+       "price": 18000
+      },
+      {
+       "category": "안주류",
+       "name": "제육볶음",
+       "price": 25000
+      },
+      {
+       "category": "안주류",
+       "name": "오징어볶음",
+       "price": 28000
+      },
+      {
+       "category": "안주류",
+       "name": "쐬살어무침",
+       "price": 18000
+      },
+      {
+       "category": "안주류",
+       "name": "통오징어숙회 (2마리)",
+       "price": 35000
+      },
+      {
+       "category": "간단안주류",
+       "name": "에그롤",
+       "price": 5000
+      },
+      {
+       "category": "간단안주류",
+       "name": "치즈스틱",
+       "price": 5000
+      },
+      {
+       "category": "간단안주류",
+       "name": "김말이",
+       "price": 5000
+      },
+      {
+       "category": "간단안주류",
+       "name": "해시브라운",
+       "price": 5000
+      },
+      {
+       "category": "간단안주류",
+       "name": "구슬감자",
+       "price": 5000
+      },
+      {
+       "category": "간단안주류",
+       "name": "양념감자",
+       "price": 5000
+      },
+      {
+       "category": "간단안주류",
+       "name": "미니핫도그",
+       "price": 5000
+      },
+      {
+       "category": "간단안주류",
+       "name": "고구마치즈롤",
+       "price": 6000
+      },
+      {
+       "category": "간단안주류",
+       "name": "리얼치즈롤",
+       "price": 6000
+      },
+      {
+       "category": "간단안주류",
+       "name": "멘보샤",
+       "price": 6000
+      },
+      {
+       "category": "과일안주류",
+       "name": "아이스홍도",
+       "price": 18000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260813_102025(1).jpg.jpeg",
+     "fid": "F0BPWPA1D9Q",
+     "from": "댓글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "주류 및 음료류",
+       "name": "생맥주 500cc",
+       "price": 5000
+      },
+      {
+       "category": "주류 및 음료류",
+       "name": "생맥주 1,000cc",
+       "price": 10000
+      },
+      {
+       "category": "주류 및 음료류",
+       "name": "기관총 2,000cc",
+       "price": 17000
+      },
+      {
+       "category": "주류 및 음료류",
+       "name": "대포 3,000cc",
+       "price": 25000
+      },
+      {
+       "category": "주류 및 음료류",
+       "name": "소주",
+       "price": 5000
+      },
+      {
+       "category": "주류 및 음료류",
+       "name": "청하",
+       "price": 6000
+      },
+      {
+       "category": "주류 및 음료류",
+       "name": "막걸리",
+       "price": 4000
+      },
+      {
+       "category": "주류 및 음료류",
+       "name": "뽕맥주",
+       "price": 5000
+      },
+      {
+       "category": "주류 및 음료류",
+       "name": "백세주",
+       "price": 12000
+      },
+      {
+       "category": "주류 및 음료류",
+       "name": "복분자",
+       "price": 15000
+      },
+      {
+       "category": "주류 및 음료류",
+       "name": "음료수",
+       "price": 2000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "모든 가격 1000원씩 인상된 가격으로 등록 요청드립니다!",
+    "• 모든메뉴가 아니라 치킨메뉴만 1000원씩 인상이래요!!!!",
+    "• 고르곤졸라 15000원!"
+   ],
+   "rc": 6,
+   "lr": "1786588229.625229",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786587749019279"
+  },
   {
    "ts": "1786586364.654609",
    "date": "2026-08-13",
