@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 637,
- "updatedAt": "2026-08-14 00:15",
+ "version": 638,
+ "updatedAt": "2026-08-14 08:15",
  "days": 30,
  "items": [
   {
@@ -28561,27 +28561,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784073589509339"
-  },
-  {
-   "ts": "1784070863.122159",
-   "date": "2026-07-15",
-   "time": "08:14",
-   "store": "힘난다버거 태평점",
-   "biz": "8523001708",
-   "pos": "",
-   "content": ":",
-   "special": "",
-   "drive": [],
-   "files": 1,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1784073899.886779",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784070863122159"
   }
  ],
  "ocr": {
