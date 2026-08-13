@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 608,
- "updatedAt": "2026-08-13 10:45",
+ "version": 609,
+ "updatedAt": "2026-08-13 11:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1786586364.654609",
+   "date": "2026-08-13",
+   "time": "10:59",
+   "store": "(주) 크리미",
+   "biz": "2908503169",
+   "pos": "토스포스",
+   "content": "영수증이 안나옵니다 확인부탁드려요",
+   "special": "저희 메뉴가격 처리 되었을까요?",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "여기도 메일 안옴;"
+   ],
+   "rc": 2,
+   "lr": "1786586398.271099",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786586364654609"
+  },
   {
    "ts": "1786584386.236289",
    "date": "2026-08-13",
@@ -32,12 +55,13 @@ window.MENU_REQUESTS = {
     "구글시트 편집자 권한없음 전화 필요",
     "메일로 재전달 주시기로함",
     "뭐여 엑셀 1000개 넘어가면 나눠야되네",
-    "맞아요,,따릅"
+    "맞아요,,따릅",
+    "완료"
    ],
-   "rc": 6,
-   "lr": "1786585021.353039",
+   "rc": 7,
+   "lr": "1786585636.004129",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786584386236289"
   },
@@ -810,8 +834,8 @@ window.MENU_REQUESTS = {
     "요기 혹시 등록하고 문자 남겨주실 수 있으실까요..! :냥냥단_눈물:\n··· :핑크_굽신::핑크_굽신::핑크_굽신::핑크_굽신: 바쁘실텐데 정말정말 감사드립니다,,",
     "정말 감사드립니다! :퍼디즈-감동:"
    ],
-   "rc": 14,
-   "lr": "1786528246.131539",
+   "rc": 15,
+   "lr": "1786586364.204099",
    "rfx": 3,
    "status": "done",
    "handler": "송태양",
@@ -26274,27 +26298,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783996868762279"
-  },
-  {
-   "ts": "1783993586.232769",
-   "date": "2026-07-14",
-   "time": "10:46",
-   "store": "소피의 책방",
-   "biz": "3271302897",
-   "pos": "토스포스",
-   "content": "토스포스 / 메뉴 등록 요청드립니다:man-bowing:",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1783994175.376339",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783993586232769"
   }
  ],
  "ocr": {
