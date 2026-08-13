@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 615,
- "updatedAt": "2026-08-13 13:15",
+ "version": 616,
+ "updatedAt": "2026-08-13 13:30",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BPQV2F999",
      "from": "원글",
-     "path": "menu-files/1786593707_181269-0.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -301,7 +300,8 @@ window.MENU_REQUESTS = {
        "name": "수제자몽청블랙퍼스트티",
        "price": 4500
       }
-     ]
+     ],
+     "path": "menu-files/1786593707_181269-0.png"
     }
    ],
    "datt": [],
@@ -327,12 +327,14 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [
-    "이미 기존에 운영중인 매장이며, 16시쯤 매장에 가신다고 하십니다!"
+    "이미 기존에 운영중인 매장이며, 16시쯤 매장에 가신다고 하십니다!",
+    "선유님! 해당 매장 용지출력 이상이 있어 16시에 <#C09HRUSG4TX> 채널에 예약해놓기는했는데 그냥 거기에다가 재온보딩 요청도 남겨놓을까요!",
+    "넵! 위 전달주신 내용으로 추가로 남겨놓겠습니다! 감사합니다:man-bowing:"
    ],
-   "rc": 4,
-   "lr": "1786593906.091259",
+   "rc": 8,
+   "lr": "1786595016.702459",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786592758316319"
   },
@@ -27231,27 +27233,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784003610134709"
-  },
-  {
-   "ts": "1784002971.020829",
-   "date": "2026-07-14",
-   "time": "13:22",
-   "store": "장군갈비",
-   "biz": "2061380015",
-   "pos": "퍼스트포스",
-   "content": "삼계탕 19000원 -> 21000원으로 금액 수정 부탁드립니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 6,
-   "lr": "1784011470.771949",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784002971020829"
   }
  ],
  "ocr": {
