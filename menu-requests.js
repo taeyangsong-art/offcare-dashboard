@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 626,
- "updatedAt": "2026-08-13 17:02",
+ "version": 627,
+ "updatedAt": "2026-08-13 17:11",
  "days": 30,
  "items": [
   {
@@ -1619,7 +1619,75 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BQSQ911UY",
      "from": "댓글",
-     "path": "menu-files/1786600177_281789-0.png"
+     "path": "menu-files/1786600177_281789-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "포장",
+       "name": "황칠삼계탕(포장)",
+       "price": 16000
+      },
+      {
+       "category": "포장",
+       "name": "황칠누룽지삼계탕(포장)",
+       "price": 18000
+      },
+      {
+       "category": "포장",
+       "name": "황칠녹두삼계탕(포장)",
+       "price": 18000
+      },
+      {
+       "category": "포장",
+       "name": "황칠 전복삼계탕(포장)",
+       "price": 20000
+      },
+      {
+       "category": "포장",
+       "name": "황칠 전복누룽지삼계탕(포장)",
+       "price": 0
+      },
+      {
+       "category": "포장",
+       "name": "황칠능이흑마늘삼계탕(포장)",
+       "price": 0
+      },
+      {
+       "category": "포장",
+       "name": "황칠왕갈비탕(포장)",
+       "price": 17000
+      },
+      {
+       "category": "포장",
+       "name": "황칠 전복왕갈비탕(포장)",
+       "price": 20000
+      },
+      {
+       "category": "포장",
+       "name": "황칠생오리구이(600g)(포장)",
+       "price": 0
+      },
+      {
+       "category": "포장",
+       "name": "황칠생오리양념불고기(600g)(포장)",
+       "price": 0
+      },
+      {
+       "category": "포장",
+       "name": "황칠오리능이백숙(포장)",
+       "price": 74000
+      },
+      {
+       "category": "포장",
+       "name": "공기밥(포장)",
+       "price": 1000
+      },
+      {
+       "category": "포장",
+       "name": "포장용기",
+       "price": 1000
+      }
+     ]
     }
    ],
    "datt": [],
