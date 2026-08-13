@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 633,
- "updatedAt": "2026-08-13 19:00",
+ "version": 634,
+ "updatedAt": "2026-08-13 19:30",
  "days": 30,
  "items": [
   {
@@ -4533,10 +4533,11 @@ window.MENU_REQUESTS = {
    ],
    "replies": [
     "토플파 없음... 화질구지 일단 보이는 것들만 메뉴작업,세트메뉴 관련 확인 필요",
-    "일단 메뉴만 백업"
+    "일단 메뉴만 백업",
+    "완료유"
    ],
-   "rc": 3,
-   "lr": "1786508590.534349",
+   "rc": 4,
+   "lr": "1786616508.076629",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
@@ -28583,27 +28584,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김동욱",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784042130663879"
-  },
-  {
-   "ts": "1784024645.048309",
-   "date": "2026-07-14",
-   "time": "19:24",
-   "store": "정성가득",
-   "biz": "8041003505",
-   "pos": "",
-   "content": "메뉴 등록 요청 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1784029241.547199",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784024645048309"
   }
  ],
  "ocr": {
