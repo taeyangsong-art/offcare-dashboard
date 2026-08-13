@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 607,
- "updatedAt": "2026-08-13 10:30",
+ "version": 608,
+ "updatedAt": "2026-08-13 10:45",
  "days": 30,
  "items": [
   {
@@ -18,17 +18,27 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "상품등록정보 POS.xlsx",
+     "fid": "F0BPQAC6MEF",
+     "from": "댓글",
+     "path": "menu-files/1786584386_236289-0.xlsx",
+     "nj": 1
+    }
+   ],
    "datt": [],
    "replies": [
     "구글시트 편집자 권한없음 전화 필요",
-    "메일로 재전달 주시기로함"
+    "메일로 재전달 주시기로함",
+    "뭐여 엑셀 1000개 넘어가면 나눠야되네",
+    "맞아요,,따릅"
    ],
-   "rc": 3,
-   "lr": "1786584598.107319",
+   "rc": 6,
+   "lr": "1786585021.353039",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786584386236289"
   },
   {
@@ -42,17 +52,39 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BQ07M93NY",
+     "from": "댓글",
+     "path": "menu-files/1786584337_830119-0.png",
+     "kind": "other",
+     "menu": []
+    },
+    {
+     "name": "아이스크림 크로플.png",
+     "fid": "F0BPWGF6Q0J",
+     "from": "댓글",
+     "path": "menu-files/1786584337_830119-1.png",
+     "kind": "product_photo",
+     "menu": []
+    }
+   ],
    "datt": [],
    "replies": [
     "이메일 확인 필요",
-    "이전에 보내주신내용임 이미 등록된거같음"
+    "이전에 보내주신내용임 이미 등록된거같음",
+    "일단 까볼게영",
+    "들어가잇을거유? 어제내가 넣엇눈디",
+    "호잉 그래요",
+    "그럼 안까징",
+    "확인해보라고 문자 날림"
    ],
-   "rc": 3,
-   "lr": "1786584636.643889",
+   "rc": 9,
+   "lr": "1786584734.320719",
    "rfx": 3,
-   "status": "confirm",
-   "handler": "배선유",
+   "status": "dup",
+   "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786584337830119"
   },
   {
@@ -26263,27 +26295,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783993586232769"
-  },
-  {
-   "ts": "1783993195.239199",
-   "date": "2026-07-14",
-   "time": "10:39",
-   "store": "(주)주디마리 광주유스퀘어2호점",
-   "biz": "3688503104",
-   "pos": "토스포스",
-   "content": "프로그램 : 토스포스 / *(주)주디마리 킷사주디(*···) 메뉴 동일하게 복사 부탁드리겠습니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1783993785.510519",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783993195239199"
   }
  ],
  "ocr": {
