@@ -3,10 +3,994 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 625,
- "updatedAt": "2026-08-13 16:45",
+ "version": 626,
+ "updatedAt": "2026-08-13 17:02",
  "days": 30,
  "items": [
+  {
+   "ts": "1786607743.302069",
+   "date": "2026-08-13",
+   "time": "16:55",
+   "store": "소확행피자",
+   "biz": "3130862233",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "Resized_1786607175425.jpg.jpeg",
+     "fid": "F0BQ0C4ML3B",
+     "from": "댓글",
+     "path": "menu-files/1786607743_302069-0.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "치즈오븐스파게티",
+       "price": 6500
+      },
+      {
+       "category": "",
+       "name": "베이컨까르보스파게티",
+       "price": 7000
+      },
+      {
+       "category": "",
+       "name": "불고기크림스파게티",
+       "price": 7500
+      },
+      {
+       "category": "",
+       "name": "까르보불닭스파게티",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "훈제치킨",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "안심치킨텐더(6EA)",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "버팔로핫윙(5EA)",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "버팔로봉(5EA)",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "새우링(6EA)",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "모짜렐라치즈스틱(6EA)",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "쫀득떡볶이(6EA)",
+       "price": 5000
+      }
+     ]
+    },
+    {
+     "name": "Resized_1786607177189.jpg.jpeg",
+     "fid": "F0BPH2UHK0X",
+     "from": "댓글",
+     "path": "menu-files/1786607743_302069-1.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "바질마스카포네M",
+       "price": 24000
+      },
+      {
+       "category": "",
+       "name": "바베큐더블피자M",
+       "price": 24000
+      },
+      {
+       "category": "",
+       "name": "곱밥고구마밥M",
+       "price": 24000
+      },
+      {
+       "category": "",
+       "name": "5ive치즈피자M",
+       "price": 25000
+      },
+      {
+       "category": "",
+       "name": "JMT버거운피자M",
+       "price": 25000
+      },
+      {
+       "category": "",
+       "name": "에그미요피자M",
+       "price": 25000
+      },
+      {
+       "category": "",
+       "name": "바질마스카포네L",
+       "price": 28000
+      },
+      {
+       "category": "",
+       "name": "비베큐더블피자L",
+       "price": 28000
+      },
+      {
+       "category": "",
+       "name": "곱밥고구마밥L",
+       "price": 28000
+      },
+      {
+       "category": "",
+       "name": "5ive치즈피자L",
+       "price": 29000
+      },
+      {
+       "category": "",
+       "name": "JMT버거운피자L",
+       "price": 29000
+      },
+      {
+       "category": "",
+       "name": "에그미요피자L",
+       "price": 29000
+      },
+      {
+       "category": "",
+       "name": "허니갈릭슈림프M",
+       "price": 25000
+      },
+      {
+       "category": "",
+       "name": "블랙앵거스스테이크피자M",
+       "price": 26000
+      },
+      {
+       "category": "",
+       "name": "JMT슈비버거운피자M",
+       "price": 26000
+      },
+      {
+       "category": "",
+       "name": "허니갈릭슈림프L",
+       "price": 29000
+      },
+      {
+       "category": "",
+       "name": "블랙앵거스스테이크피자L",
+       "price": 30000
+      },
+      {
+       "category": "",
+       "name": "JMT슈비버거운피자L",
+       "price": 30000
+      }
+     ]
+    },
+    {
+     "name": "Resized_1786607179747.jpg.jpeg",
+     "fid": "F0BQ24981AQ",
+     "from": "댓글",
+     "path": "menu-files/1786607743_302069-2.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "소확행 프리미엄",
+       "name": "매콤치킨쉬림프피자M",
+       "price": 23000
+      },
+      {
+       "category": "소확행 프리미엄",
+       "name": "매콤불고기피자M",
+       "price": 23000
+      },
+      {
+       "category": "소확행 프리미엄",
+       "name": "베이컨쉬림프피자M",
+       "price": 23000
+      },
+      {
+       "category": "소확행 프리미엄",
+       "name": "매콤치킨쉬림프피자L",
+       "price": 27000
+      },
+      {
+       "category": "소확행 프리미엄",
+       "name": "매콤불고기피자L",
+       "price": 27000
+      },
+      {
+       "category": "소확행 프리미엄",
+       "name": "베이컨쉬림프피자L",
+       "price": 27000
+      }
+     ]
+    },
+    {
+     "name": "Resized_1786607181663.jpg.jpeg",
+     "fid": "F0BQSQ351GQ",
+     "from": "댓글",
+     "path": "menu-files/1786607743_302069-3.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "소확행 베스트",
+       "name": "마늘통닭피자M",
+       "price": 22000
+      },
+      {
+       "category": "소확행 베스트",
+       "name": "쉬림프피자M",
+       "price": 22000
+      },
+      {
+       "category": "소확행 베스트",
+       "name": "베이컨치즈후라이피자M",
+       "price": 22000
+      },
+      {
+       "category": "소확행 베스트",
+       "name": "매콤치킨피자M",
+       "price": 22000
+      },
+      {
+       "category": "소확행 베스트",
+       "name": "마늘통닭피자L",
+       "price": 26000
+      },
+      {
+       "category": "소확행 베스트",
+       "name": "쉬림프피자L",
+       "price": 26000
+      },
+      {
+       "category": "소확행 베스트",
+       "name": "베이컨치즈후라이피자L",
+       "price": 26000
+      },
+      {
+       "category": "소확행 베스트",
+       "name": "매콤치킨피자L",
+       "price": 26000
+      }
+     ]
+    },
+    {
+     "name": "Resized_1786607183464.jpg.jpeg",
+     "fid": "F0BQ0C59K8R",
+     "from": "댓글",
+     "path": "menu-files/1786607743_302069-4.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "소확행 클래식",
+       "name": "불고기피자M",
+       "price": 20000
+      },
+      {
+       "category": "소확행 클래식",
+       "name": "바베큐치킨피자M",
+       "price": 20000
+      },
+      {
+       "category": "소확행 클래식",
+       "name": "고구마무스피자M",
+       "price": 20000
+      },
+      {
+       "category": "소확행 클래식",
+       "name": "포테이토피자M",
+       "price": 20000
+      },
+      {
+       "category": "소확행 클래식",
+       "name": "하와이안피자M",
+       "price": 20000
+      },
+      {
+       "category": "소확행 클래식",
+       "name": "불고기피자L",
+       "price": 24000
+      },
+      {
+       "category": "소확행 클래식",
+       "name": "바베큐치킨피자L",
+       "price": 24000
+      },
+      {
+       "category": "소확행 클래식",
+       "name": "고구마무스피자L",
+       "price": 24000
+      },
+      {
+       "category": "소확행 클래식",
+       "name": "포테이토피자L",
+       "price": 24000
+      },
+      {
+       "category": "소확행 클래식",
+       "name": "하와이안피자L",
+       "price": 24000
+      }
+     ]
+    },
+    {
+     "name": "Resized_1786607185548.jpg.jpeg",
+     "fid": "F0BQSQ353LG",
+     "from": "댓글",
+     "path": "menu-files/1786607743_302069-5.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "고르곤졸라피자M",
+       "price": 17000
+      },
+      {
+       "category": "",
+       "name": "콤비네이션피자M",
+       "price": 17000
+      },
+      {
+       "category": "",
+       "name": "치즈피자M",
+       "price": 17000
+      },
+      {
+       "category": "",
+       "name": "페퍼로니피자M",
+       "price": 18000
+      },
+      {
+       "category": "",
+       "name": "베이컨체다치즈피자M",
+       "price": 18000
+      },
+      {
+       "category": "",
+       "name": "고르곤졸라피자L",
+       "price": 21000
+      },
+      {
+       "category": "",
+       "name": "콤비네이션피자L",
+       "price": 21000
+      },
+      {
+       "category": "",
+       "name": "치즈피자L",
+       "price": 21000
+      },
+      {
+       "category": "",
+       "name": "페퍼로니피자L",
+       "price": 22000
+      },
+      {
+       "category": "",
+       "name": "베이컨체다치즈피자L",
+       "price": 22000
+      }
+     ]
+    },
+    {
+     "name": "Resized_1786607187887.jpg.jpeg",
+     "fid": "F0BPH2VNWMD",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "반반피자",
+       "name": "반반피자 M",
+       "price": 19000
+      },
+      {
+       "category": "반반피자",
+       "name": "반반피자 L",
+       "price": 23000
+      },
+      {
+       "category": "반반피자",
+       "name": "고르곤졸라피자",
+       "price": 0
+      },
+      {
+       "category": "반반피자",
+       "name": "콤비네이션피자",
+       "price": 0
+      },
+      {
+       "category": "반반피자",
+       "name": "치즈피자",
+       "price": 0
+      },
+      {
+       "category": "반반피자",
+       "name": "페퍼로니피자",
+       "price": 500
+      },
+      {
+       "category": "반반피자",
+       "name": "베이컨체다치즈",
+       "price": 500
+      },
+      {
+       "category": "반반피자",
+       "name": "하와이안피자",
+       "price": 1500
+      },
+      {
+       "category": "반반피자",
+       "name": "불고기피자",
+       "price": 1500
+      },
+      {
+       "category": "반반피자",
+       "name": "바베큐치킨피자",
+       "price": 1500
+      },
+      {
+       "category": "반반피자",
+       "name": "고구마무스피자",
+       "price": 1500
+      },
+      {
+       "category": "반반피자",
+       "name": "포테이토피자",
+       "price": 1500
+      },
+      {
+       "category": "반반피자",
+       "name": "마늘등닭",
+       "price": 2500
+      },
+      {
+       "category": "반반피자",
+       "name": "베이컨치즈후라이",
+       "price": 2500
+      },
+      {
+       "category": "반반피자",
+       "name": "쉬림프",
+       "price": 2500
+      },
+      {
+       "category": "반반피자",
+       "name": "매콤치킨",
+       "price": 2500
+      },
+      {
+       "category": "반반피자",
+       "name": "매콤불고기",
+       "price": 3000
+      },
+      {
+       "category": "반반피자",
+       "name": "매콤치킨쉬림프",
+       "price": 3000
+      },
+      {
+       "category": "반반피자",
+       "name": "베이컨쉬림프",
+       "price": 3000
+      },
+      {
+       "category": "반반피자",
+       "name": "바베큐더블",
+       "price": 3500
+      },
+      {
+       "category": "반반피자",
+       "name": "바질미스파포네",
+       "price": 3500
+      },
+      {
+       "category": "반반피자",
+       "name": "꿀맛고구마범벅",
+       "price": 3500
+      },
+      {
+       "category": "반반피자",
+       "name": "5ive치즈",
+       "price": 4000
+      },
+      {
+       "category": "반반피자",
+       "name": "허니갈릭통위엄프",
+       "price": 4000
+      },
+      {
+       "category": "반반피자",
+       "name": "JMT버거운",
+       "price": 4000
+      },
+      {
+       "category": "반반피자",
+       "name": "에그마요",
+       "price": 4000
+      },
+      {
+       "category": "반반피자",
+       "name": "스테이크",
+       "price": 4500
+      },
+      {
+       "category": "반반피자",
+       "name": "JMT슈퍼버거운",
+       "price": 4500
+      }
+     ]
+    },
+    {
+     "name": "Resized_1786607159564.jpg.jpeg",
+     "fid": "F0BPS6V8NRZ",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "반반피자",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "소확행 오리지날",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "소확행 클래식",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "소확행 베스트",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "소확행 프리미엄",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "소확행 플렉스",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "사이드메뉴",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "엣지/치즈추가",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "세트메뉴",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "옵션추가",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "음료/주류",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "콜라500ml",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "콜라1.25L",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "사이다500ml",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "사이다1.25L",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "테라(병)",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "참이슬",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "카스(병)",
+       "price": 4000
+      }
+     ]
+    },
+    {
+     "name": "Resized_1786607167658.jpg.jpeg",
+     "fid": "F0BPYD75WLA",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "스파게티set(소)",
+       "price": 24500
+      },
+      {
+       "category": "",
+       "name": "스파게티set(대)",
+       "price": 29000
+      },
+      {
+       "category": "",
+       "name": "스모크윙set(소)",
+       "price": 31000
+      },
+      {
+       "category": "",
+       "name": "스모크윙set(대)",
+       "price": 35500
+      },
+      {
+       "category": "",
+       "name": "피자set(소)",
+       "price": 33000
+      },
+      {
+       "category": "",
+       "name": "피자set(대)",
+       "price": 40000
+      },
+      {
+       "category": "",
+       "name": "치즈피자",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "콤비네이션피자",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "고르곤졸라피자",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "페퍼로니피자",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "바이컨체다치즈피자",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "하와이안피자",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "포테이토피자",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "고구마무스피자",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "바베큐치킨피자",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "불고기피자",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "베이컨체다치즈피자",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "매콤치킨피자",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "쉬림프피자",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "마늘동심피자",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "매콤불고기피자",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "매콤치킨쉬림프피자",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "베이컨치즈프리자",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "블랙앙거스스테이크피자",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "바베큐더블피자",
+       "price": 7000
+      },
+      {
+       "category": "",
+       "name": "에그마요피자",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "JMT버거운",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "5ive치즈피자",
+       "price": 7000
+      }
+     ]
+    },
+    {
+     "name": "Resized_1786607172956.jpg.jpeg",
+     "fid": "F0BPH2W4UQP",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "치즈(100g)",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "체다치즈(100g)",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "치즈그리스팀",
+       "price": 2500
+      },
+      {
+       "category": "",
+       "name": "메쉬 고구마카스M",
+       "price": 2500
+      },
+      {
+       "category": "",
+       "name": "크림치즈무스M",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "리치콘트M",
+       "price": 3500
+      },
+      {
+       "category": "",
+       "name": "치즈크러스티",
+       "price": 3500
+      },
+      {
+       "category": "",
+       "name": "에찌 고구마무스",
+       "price": 3500
+      },
+      {
+       "category": "",
+       "name": "크림치즈스틱",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "리치콘드",
+       "price": 4500
+      }
+     ]
+    },
+    {
+     "name": "Resized_1786607167731.jpg.jpeg",
+     "fid": "F0BPURG77AR",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "세트메뉴",
+       "name": "허니갈릭통 쉬림프",
+       "price": 8000
+      },
+      {
+       "category": "세트메뉴",
+       "name": "꿀밥 고구마 멸벽",
+       "price": 7000
+      },
+      {
+       "category": "세트메뉴",
+       "name": "JMT 슈비버거운",
+       "price": 9000
+      }
+     ]
+    },
+    {
+     "name": "Resized_1786607653686.jpg.jpeg",
+     "fid": "F0BQ2484SLU",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "반반피자",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "소확행 오리지널",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "소확행 클래식",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "소확행 베스트",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "소확행 프리미엄",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "소확행 플렉스",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "사이드메뉴",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "엣지/치즈추가",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "세트메뉴",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "옵션추가",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "음료/주류",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "피클",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "핫소스5봉",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "요거트소스",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "파마산치즈",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "머스타드2봉",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "허니콤(60g",
+       "price": 500
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "배달팁은\n500\n1000\n2000\n3500\n4000\n4500\n5000"
+   ],
+   "rc": 4,
+   "lr": "1786607798.070919",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786607743302069"
+  },
+  {
+   "ts": "1786607405.831629",
+   "date": "2026-08-13",
+   "time": "16:50",
+   "store": "동명태",
+   "biz": "2140998197",
+   "pos": "퍼스트포스",
+   "content": "메뉴 금액 수정 부탁 드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "카테고리 : 전\n동태전\n15,000 > 16,000\n굴전\n15,000 > 16,000\n\n카테고리 : 회\n오징어숙회 1마리\n15,000 > 16,000\n오징어숙회\n28,000 > 31,000"
+   ],
+   "rc": 2,
+   "lr": "1786607423.167859",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786607405831629"
+  },
   {
    "ts": "1786604365.851779",
    "date": "2026-08-13",
@@ -630,14 +1614,21 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BQSQ911UY",
+     "from": "댓글",
+     "path": "menu-files/1786600177_281789-0.png"
+    }
+   ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1786600223.703439",
+   "rc": 2,
+   "lr": "1786607822.818489",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786600177281789"
   },
   {
@@ -949,12 +1940,14 @@ window.MENU_REQUESTS = {
      ]
     }
    ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1786599834.222549",
+   "replies": [
+    "토플파 등록안됨"
+   ],
+   "rc": 2,
+   "lr": "1786607644.543949",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786599830853979"
   },
   {
@@ -1259,7 +2252,7 @@ window.MENU_REQUESTS = {
    "rc": 0,
    "lr": "",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786593707181269"
   },
@@ -27868,52 +28861,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784018115759219"
-  },
-  {
-   "ts": "1784015738.118879",
-   "date": "2026-07-14",
-   "time": "16:55",
-   "store": "신조선족발",
-   "biz": "4456400302",
-   "pos": "토스포스",
-   "content": "토스포스 / 테이블 생성 및 메뉴 등록 요청드립니다:man-bowing:",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "• 테이블 매장/포장은 한 화면에서 생성 요청주셨습니다:man-bowing:\n완료 이후 문자 한통 부탁드리겠습니다!"
-   ],
-   "rc": 4,
-   "lr": "1784019620.480509",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784015738118879"
-  },
-  {
-   "ts": "1784015579.369849",
-   "date": "2026-07-14",
-   "time": "16:52",
-   "store": "살롱드비키",
-   "biz": "2092792875",
-   "pos": "기타",
-   "content": "추가/세트/노가리 10000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "세트메뉴 카테고리에 추가 완료"
-   ],
-   "rc": 2,
-   "lr": "1784018852.501389",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784015579369849"
   }
  ],
  "ocr": {
