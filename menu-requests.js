@@ -3,10 +3,622 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 622,
- "updatedAt": "2026-08-13 15:51",
+ "version": 623,
+ "updatedAt": "2026-08-13 16:01",
  "days": 30,
  "items": [
+  {
+   "ts": "1786604365.851779",
+   "date": "2026-08-13",
+   "time": "15:59",
+   "store": "139커피(COFFEE)",
+   "biz": "6141501613",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "Resized_20260813_144336.jpg.jpeg",
+     "fid": "F0BQ1P2F77W",
+     "from": "댓글",
+     "path": "menu-files/1786604365_851779-0.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "음료",
+       "name": "딸기라떼",
+       "price": 4500
+      },
+      {
+       "category": "음료",
+       "name": "초코라떼(hot)",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "초코라떼(ice)",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "오곡라떼(ice)",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "오곡라떼(hot)",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "녹차라떼 (hot)",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "녹차라떼 (ice)",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "고구마라떼 (hot)",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "고구마라떼 (ice)",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "오레오 쉐이크",
+       "price": 0
+      },
+      {
+       "category": "음료",
+       "name": "플레인스무디",
+       "price": 3800
+      },
+      {
+       "category": "음료",
+       "name": "딸기요겨트",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "블루베리 요거트",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "키위 요거트스무디",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "망고요거트스무디",
+       "price": 5000
+      },
+      {
+       "category": "음료",
+       "name": "자몽에이드",
+       "price": 4500
+      },
+      {
+       "category": "음료",
+       "name": "레몬에이드",
+       "price": 4500
+      },
+      {
+       "category": "음료",
+       "name": "유자 에이드",
+       "price": 4500
+      },
+      {
+       "category": "음료",
+       "name": "청귤에이드",
+       "price": 5000
+      },
+      {
+       "category": "음료",
+       "name": "코코넛스무디커피",
+       "price": 4500
+      },
+      {
+       "category": "음료",
+       "name": "밀크티(hot)",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "밀크티(ice)",
+       "price": 4000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260813_144316.jpg.jpeg",
+     "fid": "F0BQ01K46Q1",
+     "from": "댓글",
+     "path": "menu-files/1786604365_851779-1.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "커피",
+       "name": "아메리카노(Hot)",
+       "price": 3000
+      },
+      {
+       "category": "커피",
+       "name": "아메리카노(ice)",
+       "price": 3000
+      },
+      {
+       "category": "커피",
+       "name": "대왕 아메리카노(정보)",
+       "price": 4500
+      },
+      {
+       "category": "커피",
+       "name": "샷추가",
+       "price": 500
+      },
+      {
+       "category": "커피",
+       "name": "샷추가",
+       "price": 1000
+      },
+      {
+       "category": "커피",
+       "name": "카페라떼(hot)",
+       "price": 3800
+      },
+      {
+       "category": "커피",
+       "name": "카페라떼(ice)",
+       "price": 3800
+      },
+      {
+       "category": "커피",
+       "name": "바닐라라떼(hot)",
+       "price": 4000
+      },
+      {
+       "category": "커피",
+       "name": "바닐라라떼(ice)",
+       "price": 4000
+      },
+      {
+       "category": "커피",
+       "name": "헤이즐넛커피",
+       "price": 3500
+      },
+      {
+       "category": "커피",
+       "name": "카라멜마끼아또(hot)",
+       "price": 4500
+      },
+      {
+       "category": "커피",
+       "name": "카라멜마끼아또(ice)",
+       "price": 4500
+      },
+      {
+       "category": "커피",
+       "name": "카페모카(hot)",
+       "price": 4000
+      },
+      {
+       "category": "커피",
+       "name": "카페모카(ice)",
+       "price": 4000
+      },
+      {
+       "category": "커피",
+       "name": "카푸치노",
+       "price": 4000
+      },
+      {
+       "category": "커피",
+       "name": "디카페인(hot)",
+       "price": 4000
+      },
+      {
+       "category": "커피",
+       "name": "디카페인(ice)",
+       "price": 4000
+      },
+      {
+       "category": "커피",
+       "name": "디카페인 라떼(hot)",
+       "price": 5000
+      },
+      {
+       "category": "커피",
+       "name": "디카페인 라떼(ice)",
+       "price": 5000
+      },
+      {
+       "category": "커피",
+       "name": "디카페인 헤이즐넛커피",
+       "price": 4500
+      },
+      {
+       "category": "커피",
+       "name": "코코넛스무디커피",
+       "price": 4500
+      },
+      {
+       "category": "커피",
+       "name": "오트밀라떼(hot)",
+       "price": 5000
+      },
+      {
+       "category": "커피",
+       "name": "오트밀라떼(ice)",
+       "price": 5000
+      }
+     ]
+    },
+    {
+     "name": "Resized_36793_396655483744194.jpg.jpeg",
+     "fid": "F0BPGMNQYTZ",
+     "from": "댓글",
+     "path": "menu-files/1786604365_851779-2.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "차",
+       "name": "캐모마일(hot)",
+       "price": 4000
+      },
+      {
+       "category": "차",
+       "name": "캐모마일(ice)",
+       "price": 4000
+      },
+      {
+       "category": "차",
+       "name": "복숭아아이스티(ice)",
+       "price": 3500
+      },
+      {
+       "category": "차",
+       "name": "마샷추",
+       "price": 4000
+      },
+      {
+       "category": "차",
+       "name": "황차",
+       "price": 4000
+      },
+      {
+       "category": "차",
+       "name": "페퍼민트(hot)",
+       "price": 4000
+      },
+      {
+       "category": "차",
+       "name": "페퍼민트(ice)",
+       "price": 4000
+      },
+      {
+       "category": "차",
+       "name": "유자차(ice)",
+       "price": 4000
+      },
+      {
+       "category": "차",
+       "name": "유자차(hot)",
+       "price": 4000
+      },
+      {
+       "category": "차",
+       "name": "생강차",
+       "price": 4000
+      },
+      {
+       "category": "차",
+       "name": "얼그레이(hot)",
+       "price": 4000
+      },
+      {
+       "category": "차",
+       "name": "얼그레이(ice)",
+       "price": 4000
+      },
+      {
+       "category": "차",
+       "name": "청귤차(hot)",
+       "price": 4500
+      },
+      {
+       "category": "차",
+       "name": "청귤차(ice)",
+       "price": 4500
+      },
+      {
+       "category": "차",
+       "name": "일본말차티",
+       "price": 4000
+      },
+      {
+       "category": "차",
+       "name": "생자몽차 (hot)",
+       "price": 4000
+      },
+      {
+       "category": "차",
+       "name": "생자몽차 (ice)",
+       "price": 4000
+      },
+      {
+       "category": "차",
+       "name": "레몬차 (hot)",
+       "price": 4000
+      },
+      {
+       "category": "차",
+       "name": "레몬차 (ice)",
+       "price": 4000
+      },
+      {
+       "category": "차",
+       "name": "유기농 루이보스티",
+       "price": 4000
+      },
+      {
+       "category": "차",
+       "name": "메리골드차",
+       "price": 4500
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260813_144449.jpg.jpeg",
+     "fid": "F0BPRRNMFTM",
+     "from": "댓글",
+     "path": "menu-files/1786604365_851779-3.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "디저트",
+       "name": "플레인 스콘",
+       "price": 3500
+      },
+      {
+       "category": "디저트",
+       "name": "초코스콘",
+       "price": 3500
+      },
+      {
+       "category": "디저트",
+       "name": "과자",
+       "price": 2000
+      },
+      {
+       "category": "디저트",
+       "name": "크로플",
+       "price": 7000
+      },
+      {
+       "category": "디저트",
+       "name": "쿠키",
+       "price": 10000
+      },
+      {
+       "category": "디저트",
+       "name": "사과쥬스 음료수",
+       "price": 4800
+      },
+      {
+       "category": "디저트",
+       "name": "포도쥬스 음료수",
+       "price": 4800
+      },
+      {
+       "category": "디저트",
+       "name": "딸기쥬스",
+       "price": 4500
+      },
+      {
+       "category": "디저트",
+       "name": "음료수",
+       "price": 2000
+      },
+      {
+       "category": "디저트",
+       "name": "음료수",
+       "price": 2500
+      },
+      {
+       "category": "디저트",
+       "name": "오레오 한병자",
+       "price": 2000
+      },
+      {
+       "category": "디저트",
+       "name": "추가_300",
+       "price": 300
+      },
+      {
+       "category": "디저트",
+       "name": "추가_800",
+       "price": 800
+      },
+      {
+       "category": "디저트",
+       "name": "샷추가 2",
+       "price": 1000
+      },
+      {
+       "category": "디저트",
+       "name": "추가",
+       "price": 1500
+      },
+      {
+       "category": "디저트",
+       "name": "팥빙수",
+       "price": 12000
+      },
+      {
+       "category": "디저트",
+       "name": "과일빙수",
+       "price": 12000
+      },
+      {
+       "category": "디저트",
+       "name": "과일팥빙수",
+       "price": 15000
+      },
+      {
+       "category": "디저트",
+       "name": "팥추가",
+       "price": 3000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260813_144453.jpg.jpeg",
+     "fid": "F0BQ01L4GL9",
+     "from": "댓글",
+     "path": "menu-files/1786604365_851779-4.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "과일음료",
+       "name": "망고요거트스무디",
+       "price": 5000
+      },
+      {
+       "category": "과일음료",
+       "name": "오레오 쉐이크",
+       "price": 4000
+      },
+      {
+       "category": "과일음료",
+       "name": "고구마라떼 (hot)",
+       "price": 4000
+      },
+      {
+       "category": "과일음료",
+       "name": "고구마라떼 (ice)",
+       "price": 4000
+      },
+      {
+       "category": "과일음료",
+       "name": "대왕 아메리카노(점보)",
+       "price": 4500
+      },
+      {
+       "category": "과일음료",
+       "name": "리얼 키위 주스",
+       "price": 4500
+      },
+      {
+       "category": "과일음료",
+       "name": "레몬에이드",
+       "price": 4500
+      },
+      {
+       "category": "과일음료",
+       "name": "녹차라떼 (hot)",
+       "price": 4000
+      },
+      {
+       "category": "과일음료",
+       "name": "녹차라떼 (ice)",
+       "price": 4000
+      },
+      {
+       "category": "과일음료",
+       "name": "생자몽차(ice)",
+       "price": 4000
+      },
+      {
+       "category": "과일음료",
+       "name": "수박쥬스",
+       "price": 5000
+      },
+      {
+       "category": "과일음료",
+       "name": "자몽에이드",
+       "price": 4500
+      },
+      {
+       "category": "과일음료",
+       "name": "딸기라떼",
+       "price": 4500
+      },
+      {
+       "category": "과일음료",
+       "name": "샷추가",
+       "price": 500
+      },
+      {
+       "category": "과일음료",
+       "name": "헤이즐넛커피",
+       "price": 3500
+      },
+      {
+       "category": "과일음료",
+       "name": "토마토쥬스",
+       "price": 4500
+      },
+      {
+       "category": "과일음료",
+       "name": "청귤에이드",
+       "price": 5000
+      },
+      {
+       "category": "과일음료",
+       "name": "유자 에이드",
+       "price": 4500
+      },
+      {
+       "category": "과일음료",
+       "name": "샷추가",
+       "price": 1000
+      },
+      {
+       "category": "과일음료",
+       "name": "헤이즐럿 라떼",
+       "price": 4000
+      },
+      {
+       "category": "과일음료",
+       "name": "딸기주스",
+       "price": 4500
+      },
+      {
+       "category": "과일음료",
+       "name": "딸바주스",
+       "price": 5000
+      },
+      {
+       "category": "과일음료",
+       "name": "아메리카노 20잔",
+       "price": 50000
+      },
+      {
+       "category": "과일음료",
+       "name": "아메리카노 40잔",
+       "price": 100000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1786604427.757639",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786604365851779"
+  },
   {
    "ts": "1786600177.281789",
    "date": "2026-08-13",
