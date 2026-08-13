@@ -3,10 +3,316 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 614,
- "updatedAt": "2026-08-13 13:00",
+ "version": 615,
+ "updatedAt": "2026-08-13 13:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1786593707.181269",
+   "date": "2026-08-13",
+   "time": "13:01",
+   "store": "씨씨디(CCD)마산경남대점",
+   "biz": "5062794207",
+   "pos": "",
+   "content": ":",
+   "special": "",
+   "drive": [],
+   "files": 1,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BPQV2F999",
+     "from": "원글",
+     "path": "menu-files/1786593707_181269-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "COFFEE",
+       "name": "HOT 아메리카노",
+       "price": 1500
+      },
+      {
+       "category": "COFFEE",
+       "name": "ICE 아메리카노",
+       "price": 1800
+      },
+      {
+       "category": "COFFEE",
+       "name": "디카페인 아메리카노",
+       "price": 3000
+      },
+      {
+       "category": "COFFEE",
+       "name": "콜드브루",
+       "price": 3000
+      },
+      {
+       "category": "COFFEE",
+       "name": "디카페인콜드브루",
+       "price": 3500
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페라떼",
+       "price": 3000
+      },
+      {
+       "category": "COFFEE",
+       "name": "돌체라떼",
+       "price": 3800
+      },
+      {
+       "category": "COFFEE",
+       "name": "마라떼",
+       "price": 3800
+      },
+      {
+       "category": "COFFEE",
+       "name": "돌체말차라떼",
+       "price": 4000
+      },
+      {
+       "category": "COFFEE",
+       "name": "토피넛크림라떼",
+       "price": 4500
+      },
+      {
+       "category": "COFFEE",
+       "name": "피스타치오크림라떼",
+       "price": 4500
+      },
+      {
+       "category": "COFFEE",
+       "name": "CCD바닐라라떼",
+       "price": 3800
+      },
+      {
+       "category": "COFFEE",
+       "name": "CCD라떼",
+       "price": 3500
+      },
+      {
+       "category": "COFFEE",
+       "name": "CCD마슈페너",
+       "price": 3500
+      },
+      {
+       "category": "COFFEE",
+       "name": "아인슈페너",
+       "price": 4500
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페모카",
+       "price": 4300
+      },
+      {
+       "category": "COFFEE",
+       "name": "카푸치노",
+       "price": 3500
+      },
+      {
+       "category": "COFFEE",
+       "name": "믹스커피",
+       "price": 2800
+      },
+      {
+       "category": "COFFEE",
+       "name": "카라멜마끼아또",
+       "price": 4300
+      },
+      {
+       "category": "FRUIT JUICE",
+       "name": "수박주스",
+       "price": 4500
+      },
+      {
+       "category": "FRUIT JUICE",
+       "name": "체리주스",
+       "price": 4500
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "CCD마차",
+       "price": 3500
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "딸기라떼",
+       "price": 3900
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "말차라떼",
+       "price": 3500
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "초콜릿라떼",
+       "price": 3500
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "토피넛라떼",
+       "price": 3800
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "흑임자라떼",
+       "price": 3800
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "미숫가루",
+       "price": 4000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "무안고구마라떼",
+       "price": 3800
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "피스타치오딸기라떼",
+       "price": 4300
+      },
+      {
+       "category": "BEVERAGE",
+       "name": "과일스무디",
+       "price": 4200
+      },
+      {
+       "category": "BEVERAGE",
+       "name": "요거트스무디",
+       "price": 3900
+      },
+      {
+       "category": "BEVERAGE",
+       "name": "쉐이크",
+       "price": 4300
+      },
+      {
+       "category": "ADE",
+       "name": "체리콕/레몬콕",
+       "price": 3500
+      },
+      {
+       "category": "ADE",
+       "name": "딸기에이드",
+       "price": 3900
+      },
+      {
+       "category": "ADE",
+       "name": "청포도에이드",
+       "price": 4000
+      },
+      {
+       "category": "ADE",
+       "name": "제주청귤에이드",
+       "price": 4000
+      },
+      {
+       "category": "ADE",
+       "name": "석류베리에이드",
+       "price": 4000
+      },
+      {
+       "category": "ADE",
+       "name": "애플베리에이드",
+       "price": 4000
+      },
+      {
+       "category": "ADE",
+       "name": "문경오미자에이드",
+       "price": 4000
+      },
+      {
+       "category": "ADE",
+       "name": "하동매실에이드",
+       "price": 4000
+      },
+      {
+       "category": "ADE",
+       "name": "수제자몽에이드",
+       "price": 4500
+      },
+      {
+       "category": "ADE",
+       "name": "블루레몬에이드",
+       "price": 4500
+      },
+      {
+       "category": "TEA",
+       "name": "허브티",
+       "price": 3000
+      },
+      {
+       "category": "TEA",
+       "name": "배차",
+       "price": 3800
+      },
+      {
+       "category": "TEA",
+       "name": "고흥유자차",
+       "price": 3500
+      },
+      {
+       "category": "TEA",
+       "name": "석류베리티",
+       "price": 3800
+      },
+      {
+       "category": "TEA",
+       "name": "애플베리티",
+       "price": 3800
+      },
+      {
+       "category": "TEA",
+       "name": "애플유자티",
+       "price": 3500
+      },
+      {
+       "category": "TEA",
+       "name": "유자민트티",
+       "price": 3800
+      },
+      {
+       "category": "TEA",
+       "name": "제주청귤티",
+       "price": 3500
+      },
+      {
+       "category": "TEA",
+       "name": "하동매실티",
+       "price": 3500
+      },
+      {
+       "category": "TEA",
+       "name": "문경오미자티",
+       "price": 3500
+      },
+      {
+       "category": "TEA",
+       "name": "복숭아아이스티",
+       "price": 3500
+      },
+      {
+       "category": "TEA",
+       "name": "수제자몽청블랙퍼스트티",
+       "price": 4500
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 0,
+   "lr": "",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786593707181269"
+  },
   {
    "ts": "1786592758.316319",
    "date": "2026-08-13",
@@ -23,8 +329,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "이미 기존에 운영중인 매장이며, 16시쯤 매장에 가신다고 하십니다!"
    ],
-   "rc": 3,
-   "lr": "1786593472.046129",
+   "rc": 4,
+   "lr": "1786593906.091259",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
