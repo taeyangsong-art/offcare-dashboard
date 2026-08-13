@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 619,
- "updatedAt": "2026-08-13 14:46",
+ "version": 620,
+ "updatedAt": "2026-08-13 15:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1786600177.281789",
+   "date": "2026-08-13",
+   "time": "14:49",
+   "store": "형과아우 누룽지삼계탕 대구 칠곡점",
+   "biz": "7983401362",
+   "pos": "오케이포스",
+   "content": "메뉴 등록 요청드립니다. (오케이포스)\n\n포장 카테고리 하위에 공기밥 옆에 아래 포장 용기 메뉴 추가 부탁드립니다.\n• 포장 용기 : 1,000원",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786600223.703439",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786600177281789"
+  },
   {
    "ts": "1786599830.853979",
    "date": "2026-08-13",
@@ -27370,93 +27391,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784010183065919"
-  },
-  {
-   "ts": "1784008500.152929",
-   "date": "2026-07-14",
-   "time": "14:55",
-   "store": "237오므카레 본점",
-   "biz": "1815301060",
-   "pos": "토스포스",
-   "content": "1인세트메뉴 옵션",
-   "special": "1인세트 사이드메뉴 넣어주세요",
-   "drive": [
-    "https://drive.google.com/file/d/19iyWz51vau6M6Gva1eUJ9muA2QwoyMg1/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "19iyWz51vau6M6Gva1eUJ9muA2QwoyMg1",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "1인 세트메뉴 사이드",
-       "name": "한입군만두 5ps",
-       "price": 0
-      },
-      {
-       "category": "1인 세트메뉴 사이드",
-       "name": "어니언링 3ps",
-       "price": 0
-      },
-      {
-       "category": "1인 세트메뉴 사이드",
-       "name": "겉빠속촉 해쉬브라운 1ps",
-       "price": 0
-      },
-      {
-       "category": "1인 세트메뉴 사이드",
-       "name": "모짜렐라 치즈스틱 2ps",
-       "price": 0
-      },
-      {
-       "category": "1인 세트메뉴 사이드",
-       "name": "겉바속촉 감자고로케 1ps",
-       "price": 0
-      },
-      {
-       "category": "1인 세트메뉴 사이드",
-       "name": "겉바속촉 감자고로케 2ps",
-       "price": 2000
-      },
-      {
-       "category": "1인 세트메뉴 사이드",
-       "name": "잔슨빌소시지 1ps",
-       "price": 3000
-      },
-      {
-       "category": "1인 세트메뉴 사이드",
-       "name": "왕새우튀김 2ps",
-       "price": 3000
-      },
-      {
-       "category": "1인 세트메뉴 사이드",
-       "name": "가라아게 4ps",
-       "price": 3000
-      },
-      {
-       "category": "1인 세트메뉴 사이드",
-       "name": "돈까스",
-       "price": 5000
-      },
-      {
-       "category": "1인 세트메뉴 사이드",
-       "name": "빠삭촉촉 가지튀김 5ps",
-       "price": 1500
-      }
-     ]
-    }
-   ],
-   "replies": [
-    "전화인입\n• 237오므카레 서초 지파이브점  / 237오므카레 본점   \n    ◦ 두매장  [1인세트 메뉴] 에 적용 된    [사이드메뉴 선택]  빼고 >  첨부된 사진으로 옵션 반영 요청 \n    ◦ 기존 옵션 순서  동일하게 요청 \n• 매장 운영중 금일 바로 진행 후 전화요청\n• 반영 후 OB 완료  ···"
-   ],
-   "rc": 2,
-   "lr": "1784023664.509919",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784008500152929"
   }
  ],
  "ocr": {
