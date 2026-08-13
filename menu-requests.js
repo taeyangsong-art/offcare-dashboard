@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 602,
- "updatedAt": "2026-08-13 09:16",
+ "version": 603,
+ "updatedAt": "2026-08-13 09:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1786580778.230189",
+   "date": "2026-08-13",
+   "time": "09:26",
+   "store": "강창구 찹쌀진순대 광장점",
+   "biz": "2198509446",
+   "pos": "",
+   "content": "포장 메뉴 추가",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786580781.951039",
+   "rfx": 3,
+   "status": "done",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786580778230189"
+  },
   {
    "ts": "1786578988.940389",
    "date": "2026-08-13",
@@ -23,15 +44,14 @@ window.MENU_REQUESTS = {
      "name": "1000011127.jpg",
      "fid": "F0BPPSN6BC3",
      "from": "댓글",
-     "path": "menu-files/1786578988_940389-0.jpg",
      "kind": "pos_screen",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1786578988_940389-0.jpg"
     },
     {
      "name": "1000011118.jpg",
      "fid": "F0BQQEGUQNL",
      "from": "댓글",
-     "path": "menu-files/1786578988_940389-1.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -114,13 +134,13 @@ window.MENU_REQUESTS = {
        "name": "깍두기(포장)",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1786578988_940389-1.jpg"
     },
     {
      "name": "1000011119.jpg",
      "fid": "F0BPPSN4BK5",
      "from": "댓글",
-     "path": "menu-files/1786578988_940389-2.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -128,13 +148,13 @@ window.MENU_REQUESTS = {
        "name": "정식 추가",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1786578988_940389-2.jpg"
     },
     {
      "name": "1000011120.jpg",
      "fid": "F0BQQEFGYCQ",
      "from": "댓글",
-     "path": "menu-files/1786578988_940389-3.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -242,13 +262,13 @@ window.MENU_REQUESTS = {
        "name": "구먹순",
        "price": 17000
       }
-     ]
+     ],
+     "path": "menu-files/1786578988_940389-3.jpg"
     },
     {
      "name": "1000011121.jpg",
      "fid": "F0BQQEFPR5E",
      "from": "댓글",
-     "path": "menu-files/1786578988_940389-4.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -346,13 +366,13 @@ window.MENU_REQUESTS = {
        "name": "일품진로",
        "price": 25000
       }
-     ]
+     ],
+     "path": "menu-files/1786578988_940389-4.jpg"
     },
     {
      "name": "1000011130.jpg",
      "fid": "F0BPW3QCXPC",
      "from": "댓글",
-     "path": "menu-files/1786578988_940389-5.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -365,7 +385,8 @@ window.MENU_REQUESTS = {
        "name": "비조리",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1786578988_940389-5.jpg"
     },
     {
      "name": "1000011129.jpg",
@@ -505,10 +526,10 @@ window.MENU_REQUESTS = {
    "replies": [
     "옵션."
    ],
-   "rc": 6,
-   "lr": "1786579140.763369",
+   "rc": 7,
+   "lr": "1786580657.244339",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786578988940389"
   },
@@ -26304,133 +26325,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783989712141209"
-  },
-  {
-   "ts": "1783988722.426219",
-   "date": "2026-07-14",
-   "time": "09:25",
-   "store": "땡기네 김밥",
-   "biz": "2113517705",
-   "pos": "",
-   "content": "메뉴 수정 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "*돈가스김밥* \n• 현재 가격 : 5,000원\n• 변경할 가격 : 5,500원\n상기 메뉴 가격 변경 요청드립니다! :꾸벅5:"
-   ],
-   "rc": 3,
-   "lr": "1783990114.293259",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김동욱",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783988722426219"
-  },
-  {
-   "ts": "1783988529.001429",
-   "date": "2026-07-14",
-   "time": "09:22",
-   "store": "숯불구이백반",
-   "biz": "2266000305",
-   "pos": "오케이포스",
-   "content": "아래 사진참조",
-   "special": "아래 사진참조",
-   "drive": [
-    "https://drive.google.com/file/d/1IQ4gtqZ47wZdY9sqOfAZ7m5X_EFrQPTV/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "1IQ4gtqZ47wZdY9sqOfAZ7m5X_EFrQPTV",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "고기 메뉴",
-       "name": "돼지불고기",
-       "price": 10000
-      },
-      {
-       "category": "고기 메뉴",
-       "name": "우삼겹로스",
-       "price": 12000
-      },
-      {
-       "category": "고기 메뉴",
-       "name": "오리주물럭",
-       "price": 12000
-      },
-      {
-       "category": "식사 메뉴",
-       "name": "물막국수",
-       "price": 10000
-      },
-      {
-       "category": "식사 메뉴",
-       "name": "비빔막국수",
-       "price": 10000
-      },
-      {
-       "category": "식사 메뉴",
-       "name": "김치찌개(돼지)",
-       "price": 10000
-      },
-      {
-       "category": "세트 메뉴",
-       "name": "돼지불고기 + 막국수",
-       "price": 12000
-      },
-      {
-       "category": "추가 메뉴",
-       "name": "돼지불고기(100g)",
-       "price": 2000
-      },
-      {
-       "category": "추가 메뉴",
-       "name": "면추가",
-       "price": 2000
-      },
-      {
-       "category": "주류·음료",
-       "name": "소주",
-       "price": 5000
-      },
-      {
-       "category": "주류·음료",
-       "name": "맥주",
-       "price": 5000
-      },
-      {
-       "category": "주류·음료",
-       "name": "막걸리",
-       "price": 4000
-      },
-      {
-       "category": "주류·음료",
-       "name": "음료수",
-       "price": 2000
-      },
-      {
-       "category": "주류·음료",
-       "name": "생수",
-       "price": 700
-      }
-     ]
-    }
-   ],
-   "replies": [
-    "님, 안녕하세요!\n금일 오전 11시 이전 처리되셔야 한다고 하셔서 확인 부탁드립니다!\n완료 시 안내 문자 발송 부탁드립니다!",
-    "솔라피발송",
-    "님,\n하기 메뉴 추가되어 있지 않다고 하시어 확인 부탁드립니다. 완료 시 문자 발송 가능하실까요~?\n• 추가메뉴 부분 -> 면추가 2,000원"
-   ],
-   "rc": 5,
-   "lr": "1783990886.375799",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김동욱",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783988529001429"
   }
  ],
  "ocr": {
