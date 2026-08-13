@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 613,
- "updatedAt": "2026-08-13 12:00",
+ "version": 614,
+ "updatedAt": "2026-08-13 13:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1786592758.316319",
+   "date": "2026-08-13",
+   "time": "12:45",
+   "store": "서울혼술바 제주아홉 홍대점",
+   "biz": "8482501985",
+   "pos": "",
+   "content": "*··· >> ···*\n• 제주아홉 혼술바 서울 신촌점 매장의 메뉴를 서울혼술바 제주아홉 홍대점으로 복사 요청주셨습니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "이미 기존에 운영중인 매장이며, 16시쯤 매장에 가신다고 하십니다!"
+   ],
+   "rc": 3,
+   "lr": "1786593472.046129",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786592758316319"
+  },
   {
    "ts": "1786588701.278589",
    "date": "2026-08-13",
