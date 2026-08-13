@@ -2258,6 +2258,46 @@ function ocrExtractMenu(text, store){
   }
   return out.join('\n');
 }
+/* 브랜드 + 맛 나열을 개별 메뉴로 펼친다 — POS 는 맛별로 따로 등록해야 한다(사용자 결정).
+ *   'SNAPPLE 애플 / 망고'                     → SNAPPLE 애플 · SNAPPLE 망고
+ *   'JARRITOS 자몽 / 구아바 / 망고 / 파인애플'  → JARRITOS 자몽 · JARRITOS 구아바 · …
+ *   '코카콜라 / 코카콜라 제로 / 펩시'           → 각각 그대로 (공통 브랜드가 없다)
+ *   'SAN PELLEGRINO 산펠레그리노'              → 그대로 (나열이 아니다)
+ * 브랜드는 첫 조각이 두 토막 이상일 때만 뽑고, 뒤 조각이 전부 한 토막일 때만 붙인다.
+ * '불고기 덮밥 / 제육 덮밥' 처럼 뒤가 여러 토막이면 각각 완성된 이름이라 브랜드를 안 붙인다. */
+const MR_OPEN='([{（［｛【〔', MR_CLOSE=')]}）］｝】〕';
+function menuregSplitVariants(name){
+  const raw=String(name==null?'':name).trim();
+  if(!/[\/／]/.test(raw)) return raw?[raw]:[];
+  // 괄호 안의 '/' 는 나열이 아니다 — '아메리카노(핫/아이스)' 를 쪼개면 이름이 깨진다
+  const parts=[]; let buf='', depth=0;
+  for(let i=0;i<raw.length;i++){
+    const ch=raw[i];
+    if(MR_OPEN.includes(ch)) depth++;
+    else if(MR_CLOSE.includes(ch)) depth=Math.max(0,depth-1);
+    // 숫자 사이의 '/' 는 분수다 — '후라이드 1/2 마리' 를 쪼개면 안 된다
+    const frac = /\d/.test(raw[i-1]||'') && /\d/.test(raw[i+1]||'');
+    if((ch==='/'||ch==='／') && depth===0 && !frac){ parts.push(buf); buf=''; continue; }
+    buf+=ch;
+  }
+  parts.push(buf);
+  const seg=parts.map(s=>s.trim()).filter(Boolean);
+  if(seg.length<2) return raw?[raw]:[];
+  // '1/2 마리' 같은 분수·기호는 나열이 아니다 — 조각마다 글자가 2자 이상 있어야 나열로 본다
+  const letters=s=>s.replace(/[^가-힣A-Za-z0-9]/g,'').length;
+  if(!seg.every(s=>/[가-힣A-Za-z]/.test(s) && letters(s)>=2)) return [raw];
+  // 반반 메뉴('순대반/수육반', '갈릭반/양념반')는 두 맛이 한 접시라 나누면 없는 메뉴가 생긴다.
+  // 조각이 '반' 으로 끝나거나 이름에 '반반' 이 있으면 통째로 둔다.
+  if(/반반/.test(raw) || seg.some(s=>/반$/.test(s))) return [raw];
+  const head=seg[0].split(/\s+/), rest=seg.slice(1);
+  const brand=head.slice(0,-1).join(' ');
+  const brandCaps=/^[A-Z0-9&.'\- ]+$/.test(brand);       // 전부 대문자 라틴 = 브랜드 표기(SNAPPLE·JARRITOS)
+  // 브랜드 전파는 뒤 조각이 '맛 이름'처럼 짧을 때만. 라틴 조각은 브랜드가 대문자일 때만 붙인다 —
+  // 'Cheoeum Cheoreom / Saero' 를 'Cheoeum Saero' 로 만들면 없는 상품이 된다(처음처럼·새로는 다른 제품).
+  const flavorLike=s=>!/\s/.test(s) && letters(s)<=5 && (/[가-힣]/.test(s) || brandCaps);
+  if(head.length>=2 && rest.every(flavorLike)) return [seg[0], ...rest.map(v=>brand+' '+v)];
+  return seg;
+}
 function menuregParseGrid(gridId){
   const ta=document.getElementById(gridId||'mrGrid'); if(!ta) return [];
   const rows=[];
@@ -2273,8 +2313,11 @@ function menuregParseGrid(gridId){
     const sigg=MENUREG_HEAD.sigg.test(String(price));
     price=sigg?0:parseInt(String(price).replace(/[^\d]/g,''),10);
     if(!name||(!price&&!sigg)) continue;
-    rows.push({cat:cat||'메뉴', name, price, sigg,
-      bar:parts[3]||'', maker:parts[4]||'', code:parts[5]||'', stock:parts[6]||''});
+    // 안전망 — 손으로 'SNAPPLE 애플 / 망고' 라고 적어도 내보낼 때 맛별로 나뉜다.
+    // 추출 단계에서 이미 펼쳐진 이름은 여기서 그대로 통과한다(같은 규칙이라 두 번 돌아도 안전).
+    for(const nm of menuregSplitVariants(name))
+      rows.push({cat:cat||'메뉴', name:nm, price, sigg,
+        bar:parts[3]||'', maker:parts[4]||'', code:parts[5]||'', stock:parts[6]||''});
   }
   // 복사·다운로드가 모두 이 함수를 지나므로 여기서 한 번만 정리하면 양쪽에 같이 적용된다.
   // 그리드를 직접 고쳐 중복을 만들어도 내보낼 때 잡힌다.
@@ -2561,9 +2604,13 @@ function menuregXlExtract(rows){
     // 가격 대신 '시가/싯가' 만 적힌 칸이 따로 있는 경우도 시가상품으로 본다(상품명 칸은 제외 — 이름이 '시가' 인 상품도 있다)
     if(!sigg && !price) sigg=row.some((cv)=>norm(cv)!==name&&/^[(\[]?\s*(시가|싯가|시세)\s*[)\]]?$/.test(norm(cv)));
     if(!name||(!price&&!sigg)||name.length>50) continue;
-    const cells=[(curCat||'메뉴'), name.replace(/\|/g,'/'), sigg?'시가':String(price), bar, maker.replace(/\|/g,'/'), code, stock];
-    while(cells.length>3 && !cells[cells.length-1]) cells.pop();     // 뒤쪽 빈 칸은 떼고 저장
-    out.push(cells.join(' | '));
+    // 'SNAPPLE 애플 / 망고' 같은 나열은 여기서 맛별로 펼친다 — 그리드에 펼쳐진 채로 보여야 검수가 된다.
+    // 이름 안의 '|' 는 칸 구분자라 뺀다. '/' 가 아니라 '·' 로 바꾼다(바꿔놓고 다시 나열로 읽으면 안 된다).
+    for(const nm of menuregSplitVariants(name)){
+      const cells=[(curCat||'메뉴'), nm.replace(/\|/g,'·'), sigg?'시가':String(price), bar, maker.replace(/\|/g,'·'), code, stock];
+      while(cells.length>3 && !cells[cells.length-1]) cells.pop();   // 뒤쪽 빈 칸은 떼고 저장
+      out.push(cells.join(' | '));
+    }
   }
   return out;
 }
@@ -2609,7 +2656,10 @@ function menuregFillFromOcr(ts){
   let noPrice=0;
   for(const a of imgs){
     if((a.menu||[]).length){
-      for(const m of a.menu){
+      // 판독 결과도 맛별로 펼친다 — 'JARRITOS 자몽 / 구아바 / 망고' 가 한 줄로 오는 경우가 많다.
+      // 이름 안의 '|' 는 칸 구분자라 '·' 로 바꾼다('/' 로 바꾸면 다시 나열로 읽힌다).
+      for(const m0 of a.menu) for(const vName of menuregSplitVariants(String(m0.name||'').replace(/\|/g,'·'))){
+        const m=Object.assign({}, m0, {name:vName});
         const name=String(m.name||'').replace(/\|/g,'/').trim(); if(!name) continue;
         const cat=String(m.category||'').replace(/\|/g,'/').trim()||'메뉴';
         const price=Number(m.price)||0;
@@ -2673,7 +2723,9 @@ function renderMenuReg(){
         const legacy=imgs.filter(a=>!('kind' in a) && a.ocr);                // 구 tesseract 캐시(문자열)
         const blocked=imgs.filter(a=>a.blocked).length;
         if(!withMenu.length&&!skipped.length&&!legacy.length&&!blocked) return '';
-        const rows=a=>(a.menu||[]).map(m=>`${m.category?escapeHtml(m.category)+' | ':''}${escapeHtml(m.name)} | ${m.price?m.price.toLocaleString():'가격미상'}`).join('\n');
+        // 여기 보이는 줄과 「양식변환으로 보내기」 결과가 달라지면 안 되므로, 표시도 맛별로 펼친다
+        const rows=a=>(a.menu||[]).flatMap(m=>menuregSplitVariants(String(m.name||'').replace(/\|/g,'·'))
+          .map(nm=>`${m.category?escapeHtml(m.category)+' | ':''}${escapeHtml(nm)} | ${m.price?m.price.toLocaleString():'가격미상'}`)).join('\n');
         return `<div style="margin-top:8px">
         <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:6px">
           <div style="font-size:13px;font-weight:700">🔎 이미지 자동판독 <span class="cnt-badge">${withMenu.reduce((n,a)=>n+a.menu.length,0)}</span></div>
