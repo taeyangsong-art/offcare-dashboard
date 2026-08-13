@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 632,
- "updatedAt": "2026-08-13 18:30",
+ "version": 633,
+ "updatedAt": "2026-08-13 19:00",
  "days": 30,
  "items": [
   {
@@ -28604,29 +28604,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784024645048309"
-  },
-  {
-   "ts": "1784022435.310159",
-   "date": "2026-07-14",
-   "time": "18:47",
-   "store": "형과아우 누룽지삼계탕 대구 칠곡점",
-   "biz": "7983401362",
-   "pos": "",
-   "content": "메뉴 수정 등록 요청 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "• 카테고리: 메뉴\n• 메뉴명: \n생체 항칠 생오리 양념 불고기\n항칠 생오리 구이\n항칠 오리 능이 백숙\n\n숨김 처리 요청 주셔서 전달 드립니다."
-   ],
-   "rc": 3,
-   "lr": "1784036151.036029",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784022435310159"
   }
  ],
  "ocr": {
