@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 603,
- "updatedAt": "2026-08-13 09:30",
+ "version": 604,
+ "updatedAt": "2026-08-13 09:45",
  "days": 30,
  "items": [
   {
@@ -26233,98 +26233,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783993195239199"
-  },
-  {
-   "ts": "1783989712.141209",
-   "date": "2026-07-14",
-   "time": "09:41",
-   "store": "형과아우누룽지삼계탕왕갈비탕",
-   "biz": "3932901130",
-   "pos": "오케이포스",
-   "content": "인삼주  소  30000\n       중 60000\n       대  90000",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/1nzFLlX2f7QX2d-c3DGBHMcM0-w--pYJk/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "1nzFLlX2f7QX2d-c3DGBHMcM0-w--pYJk",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "주류",
-       "name": "소주",
-       "price": 5000
-      },
-      {
-       "category": "주류",
-       "name": "맥주",
-       "price": 5000
-      },
-      {
-       "category": "주류",
-       "name": "청하",
-       "price": 5000
-      },
-      {
-       "category": "주류",
-       "name": "황칠막걸리",
-       "price": 5000
-      },
-      {
-       "category": "주류",
-       "name": "백세주",
-       "price": 10000
-      },
-      {
-       "category": "주류",
-       "name": "산사춘",
-       "price": 10000
-      },
-      {
-       "category": "주류",
-       "name": "복분자",
-       "price": 15000
-      },
-      {
-       "category": "주류",
-       "name": "음료",
-       "price": 2000
-      },
-      {
-       "category": "주류",
-       "name": "인삼주 소(小)",
-       "price": 30000
-      },
-      {
-       "category": "주류",
-       "name": "인삼주 중(中)",
-       "price": 60000
-      },
-      {
-       "category": "주류",
-       "name": "인삼주 대(大)",
-       "price": 90000
-      },
-      {
-       "category": "주류",
-       "name": "담금인삼주 (독구리/도자기 작은술병)",
-       "price": 5000
-      }
-     ]
-    }
-   ],
-   "replies": [
-    "대전광역시 대덕구 대청로 20 (신탄진동) / N45639"
-   ],
-   "rc": 2,
-   "lr": "1783990355.496149",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1783989712141209"
   }
  ],
  "ocr": {
