@@ -3,10 +3,58 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 606,
- "updatedAt": "2026-08-13 10:15",
+ "version": 607,
+ "updatedAt": "2026-08-13 10:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1786584386.236289",
+   "date": "2026-08-13",
+   "time": "10:26",
+   "store": "코모스유통 (주)",
+   "biz": "1068628203",
+   "pos": "토스포스",
+   "content": "상품등록 요청합니다",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "구글시트 편집자 권한없음 전화 필요",
+    "메일로 재전달 주시기로함"
+   ],
+   "rc": 3,
+   "lr": "1786584598.107319",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786584386236289"
+  },
+  {
+   "ts": "1786584337.830119",
+   "date": "2026-08-13",
+   "time": "10:25",
+   "store": "커피창작마을",
+   "biz": "4031498452",
+   "pos": "토스포스",
+   "content": "이메일로 자료 첨부 발송 함",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "이메일 확인 필요",
+    "이전에 보내주신내용임 이미 등록된거같음"
+   ],
+   "rc": 3,
+   "lr": "1786584636.643889",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786584337830119"
+  },
   {
    "ts": "1786580778.230189",
    "date": "2026-08-13",
