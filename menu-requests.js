@@ -3,10 +3,515 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 600,
- "updatedAt": "2026-08-13 03:02",
+ "version": 601,
+ "updatedAt": "2026-08-13 09:01",
  "days": 30,
  "items": [
+  {
+   "ts": "1786578988.940389",
+   "date": "2026-08-13",
+   "time": "08:56",
+   "store": "두루올",
+   "biz": "5943700855",
+   "pos": "토스포스",
+   "content": "타사토스포스장비 교체진행중입니다.\n테이블과 메뉴등록요청드립니다.\n오전10시오픈",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "1000011127.jpg",
+     "fid": "F0BPPSN6BC3",
+     "from": "댓글",
+     "path": "menu-files/1786578988_940389-0.jpg",
+     "kind": "pos_screen",
+     "menu": []
+    },
+    {
+     "name": "1000011118.jpg",
+     "fid": "F0BQQEGUQNL",
+     "from": "댓글",
+     "path": "menu-files/1786578988_940389-1.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "식사2",
+       "name": "수육국밥",
+       "price": 10000
+      },
+      {
+       "category": "식사2",
+       "name": "얼큰수육국밥",
+       "price": 11000
+      },
+      {
+       "category": "식사2",
+       "name": "시래기수육국밥",
+       "price": 11000
+      },
+      {
+       "category": "식사2",
+       "name": "얼큰시래기수육국밥",
+       "price": 12000
+      },
+      {
+       "category": "식사2",
+       "name": "내장국밥",
+       "price": 11000
+      },
+      {
+       "category": "식사2",
+       "name": "얼큰내장국밥",
+       "price": 12000
+      },
+      {
+       "category": "식사2",
+       "name": "수육국밥(특)",
+       "price": 12000
+      },
+      {
+       "category": "식사2",
+       "name": "얼큰수육국밥(특)",
+       "price": 13000
+      },
+      {
+       "category": "식사2",
+       "name": "시래기수육국밥(특)",
+       "price": 13000
+      },
+      {
+       "category": "식사2",
+       "name": "얼큰시래기수육국밥(특)",
+       "price": 14000
+      },
+      {
+       "category": "식사2",
+       "name": "내장국밥(특)",
+       "price": 13000
+      },
+      {
+       "category": "식사2",
+       "name": "얼큰내장국밥(특)",
+       "price": 14000
+      },
+      {
+       "category": "식사2",
+       "name": "순대추가",
+       "price": 2000
+      },
+      {
+       "category": "식사2",
+       "name": "정식-추가",
+       "price": 5000
+      },
+      {
+       "category": "식사2",
+       "name": "김치(포장)",
+       "price": 2000
+      },
+      {
+       "category": "식사2",
+       "name": "깍두기(포장)",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "name": "1000011119.jpg",
+     "fid": "F0BPPSN4BK5",
+     "from": "댓글",
+     "path": "menu-files/1786578988_940389-2.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "식사2",
+       "name": "정식 추가",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "1000011120.jpg",
+     "fid": "F0BQQEFGYCQ",
+     "from": "댓글",
+     "path": "menu-files/1786578988_940389-3.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "요리",
+       "name": "순대곱창볶음",
+       "price": 32000
+      },
+      {
+       "category": "요리",
+       "name": "술국",
+       "price": 20000
+      },
+      {
+       "category": "요리",
+       "name": "치즈볶음밥",
+       "price": 5000
+      },
+      {
+       "category": "요리",
+       "name": "떡사리",
+       "price": 2000
+      },
+      {
+       "category": "요리",
+       "name": "스페셜치즈추가",
+       "price": 4000
+      },
+      {
+       "category": "요리",
+       "name": "두루올스페셜",
+       "price": 48000
+      },
+      {
+       "category": "요리",
+       "name": "순대반/수육반",
+       "price": 32000
+      },
+      {
+       "category": "요리",
+       "name": "편육",
+       "price": 12000
+      },
+      {
+       "category": "요리",
+       "name": "볶음밥",
+       "price": 3000
+      },
+      {
+       "category": "요리",
+       "name": "야채사리",
+       "price": 3000
+      },
+      {
+       "category": "요리",
+       "name": "두루올전통순대(소)",
+       "price": 10000
+      },
+      {
+       "category": "요리",
+       "name": "머리수육",
+       "price": 32000
+      },
+      {
+       "category": "요리",
+       "name": "곱창추가",
+       "price": 10000
+      },
+      {
+       "category": "요리",
+       "name": "당면사리",
+       "price": 2000
+      },
+      {
+       "category": "요리",
+       "name": "오징어순대",
+       "price": 19000
+      },
+      {
+       "category": "요리",
+       "name": "두루올전통순대(중)",
+       "price": 16000
+      },
+      {
+       "category": "요리",
+       "name": "순대모둠전골",
+       "price": 32000
+      },
+      {
+       "category": "요리",
+       "name": "국물추가",
+       "price": 0
+      },
+      {
+       "category": "요리",
+       "name": "순대 추가",
+       "price": 10000
+      },
+      {
+       "category": "요리",
+       "name": "구먹순 치즈추가",
+       "price": 4000
+      },
+      {
+       "category": "요리",
+       "name": "구먹순",
+       "price": 17000
+      }
+     ]
+    },
+    {
+     "name": "1000011121.jpg",
+     "fid": "F0BQQEFPR5E",
+     "from": "댓글",
+     "path": "menu-files/1786578988_940389-4.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류",
+       "name": "참이슬",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "처음처럼",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "카스",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "장수생막걸리",
+       "price": 4000
+      },
+      {
+       "category": "주류",
+       "name": "청하",
+       "price": 6000
+      },
+      {
+       "category": "주류",
+       "name": "참이슬(클래식)",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "새로",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "테라",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "지평막걸리",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "별빛청하",
+       "price": 6000
+      },
+      {
+       "category": "주류",
+       "name": "참이슬(이즈백)",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "켈리",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "코카콜라",
+       "price": 2000
+      },
+      {
+       "category": "주류",
+       "name": "스프라이트",
+       "price": 2000
+      },
+      {
+       "category": "주류",
+       "name": "환타",
+       "price": 2000
+      },
+      {
+       "category": "주류",
+       "name": "진로골드",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "코카콜라(제로)",
+       "price": 2000
+      },
+      {
+       "category": "주류",
+       "name": "스프라이트(제로)",
+       "price": 2000
+      },
+      {
+       "category": "주류",
+       "name": "일품진로",
+       "price": 25000
+      }
+     ]
+    },
+    {
+     "name": "1000011130.jpg",
+     "fid": "F0BPW3QCXPC",
+     "from": "댓글",
+     "path": "menu-files/1786578988_940389-5.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "조리/비조리",
+       "name": "조리",
+       "price": 0
+      },
+      {
+       "category": "조리/비조리",
+       "name": "비조리",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "1000011129.jpg",
+     "fid": "F0BPPSTA9AP",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "사이즈",
+       "name": "특",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "name": "1000011128.jpg",
+     "fid": "F0BPW3Q6G1Y",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": []
+    },
+    {
+     "name": "1000011131.jpg",
+     "fid": "F0BPSG0FZJR",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "식사",
+       "name": "전통순댓국",
+       "price": 10000
+      },
+      {
+       "category": "식사",
+       "name": "얼큰순댓국",
+       "price": 11000
+      },
+      {
+       "category": "식사",
+       "name": "얼큰곱창순댓국",
+       "price": 11000
+      },
+      {
+       "category": "식사",
+       "name": "시래기순댓국",
+       "price": 11000
+      },
+      {
+       "category": "식사",
+       "name": "오소리순댓국",
+       "price": 11000
+      },
+      {
+       "category": "식사",
+       "name": "새싹비빔국수",
+       "price": 8000
+      },
+      {
+       "category": "식사",
+       "name": "전통순댓국(순대만)",
+       "price": 10000
+      },
+      {
+       "category": "식사",
+       "name": "얼큰순댓국(순대만)",
+       "price": 11000
+      },
+      {
+       "category": "식사",
+       "name": "얼큰곱창순댓국(순대만)",
+       "price": 11000
+      },
+      {
+       "category": "식사",
+       "name": "시래기순댓국(순대만)",
+       "price": 11000
+      },
+      {
+       "category": "식사",
+       "name": "얼큰오소리국밥",
+       "price": 11000
+      },
+      {
+       "category": "식사",
+       "name": "새싹비빔국수세트",
+       "price": 11000
+      },
+      {
+       "category": "식사",
+       "name": "전통순댓국(고기만)",
+       "price": 10000
+      },
+      {
+       "category": "식사",
+       "name": "얼큰순댓국(고기만)",
+       "price": 11000
+      },
+      {
+       "category": "식사",
+       "name": "얼큰곱창순댓국(곱창만)",
+       "price": 11000
+      },
+      {
+       "category": "식사",
+       "name": "시래기순댓국(고기만)",
+       "price": 11000
+      },
+      {
+       "category": "식사",
+       "name": "오소리순댓국(오소리만)",
+       "price": 11000
+      },
+      {
+       "category": "식사",
+       "name": "정식4·4(서비스)",
+       "price": 0
+      },
+      {
+       "category": "식사",
+       "name": "정식6·6(서비스)",
+       "price": 0
+      },
+      {
+       "category": "식사",
+       "name": "정식추가",
+       "price": 5000
+      },
+      {
+       "category": "식사",
+       "name": "공기밥",
+       "price": 1000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "옵션."
+   ],
+   "rc": 6,
+   "lr": "1786579140.763369",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786578988940389"
+  },
   {
    "ts": "1786526770.111489",
    "date": "2026-08-12",
