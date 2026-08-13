@@ -3,10 +3,115 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 627,
- "updatedAt": "2026-08-13 17:11",
+ "version": 628,
+ "updatedAt": "2026-08-13 17:31",
  "days": 30,
  "items": [
+  {
+   "ts": "1786609161.844549",
+   "date": "2026-08-13",
+   "time": "17:19",
+   "store": "원북원커피",
+   "biz": "7300503802",
+   "pos": "토스포스",
+   "content": "",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/open?id=1Lreq6Eqfhw6phzrc7HW8nhVqxZ-8xKre"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1Lreq6Eqfhw6phzrc7HW8nhVqxZ-8xKre",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "ESPRESSO",
+       "name": "아메리카노",
+       "price": 4500
+      },
+      {
+       "category": "ESPRESSO",
+       "name": "카페 라떼",
+       "price": 5000
+      },
+      {
+       "category": "ESPRESSO",
+       "name": "플랫 화이트",
+       "price": 5000
+      },
+      {
+       "category": "ESPRESSO",
+       "name": "바닐라 라떼",
+       "price": 5500
+      },
+      {
+       "category": "ESPRESSO",
+       "name": "시그니처 크림라떼",
+       "price": 6000
+      },
+      {
+       "category": "FILTER",
+       "name": "콜롬비아 수프리모 후일라",
+       "price": 6500
+      },
+      {
+       "category": "FILTER",
+       "name": "과테말라 SHB 안티구아",
+       "price": 6500
+      },
+      {
+       "category": "FILTER",
+       "name": "인도네시아 G1 수마트라",
+       "price": 6500
+      },
+      {
+       "category": "FILTER",
+       "name": "케냐 AA FAQ",
+       "price": 6500
+      },
+      {
+       "category": "DESSERT",
+       "name": "시나몬 롤",
+       "price": 4000
+      },
+      {
+       "category": "DESSERT",
+       "name": "나나이모 바",
+       "price": 3000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "제주 청귤 에이드",
+       "price": 5500
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "허니 자몽 블랙티",
+       "price": 5500
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "카모마일 유자티",
+       "price": 5000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "리얼 초코 라떼",
+       "price": 5000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786609166.328039",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786609161844549"
+  },
   {
    "ts": "1786607743.302069",
    "date": "2026-08-13",
