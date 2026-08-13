@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 612,
- "updatedAt": "2026-08-13 11:45",
+ "version": 613,
+ "updatedAt": "2026-08-13 12:00",
  "days": 30,
  "items": [
   {
@@ -10576,7 +10576,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BNJRP3Z1B",
      "from": "댓글",
-     "path": "menu-files/1786071542_263139-1.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -10624,13 +10623,13 @@ window.MENU_REQUESTS = {
        "name": "리뷰이벤트",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1786071542_263139-1.png"
     },
     {
      "name": "image.png",
      "fid": "F0BNN9QQJTU",
      "from": "댓글",
-     "path": "menu-files/1786071542_263139-2.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -10688,13 +10687,13 @@ window.MENU_REQUESTS = {
        "name": "리뷰이벤트",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1786071542_263139-2.png"
     },
     {
      "name": "image.png",
      "fid": "F0BNG32C45R",
      "from": "댓글",
-     "path": "menu-files/1786071542_263139-3.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -10747,13 +10746,13 @@ window.MENU_REQUESTS = {
        "name": "t->마라스지무침",
        "price": 8000
       }
-     ]
+     ],
+     "path": "menu-files/1786071542_263139-3.png"
     },
     {
      "name": "image.png",
      "fid": "F0BPGLC0R0Q",
      "from": "댓글",
-     "path": "menu-files/1786071542_263139-4.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -10806,13 +10805,13 @@ window.MENU_REQUESTS = {
        "name": "돌판제육볶음",
        "price": 18000
       }
-     ]
+     ],
+     "path": "menu-files/1786071542_263139-4.png"
     },
     {
      "name": "image.png",
      "fid": "F0BNS11PCKW",
      "from": "댓글",
-     "path": "menu-files/1786071542_263139-5.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -10945,7 +10944,8 @@ window.MENU_REQUESTS = {
        "name": "김치말이국수",
        "price": 9000
       }
-     ]
+     ],
+     "path": "menu-files/1786071542_263139-5.png"
     },
     {
      "name": "image.png",
@@ -11502,8 +11502,8 @@ window.MENU_REQUESTS = {
     "어차피 기존 kcp 오케이쓰는 매장이고 티오더쓰는매장이라",
     "작업 후 솔라피 발송해주세요! 그 이후 티오더에 전화해서 프로그램 변경되었다 연락하라했어요"
    ],
-   "rc": 12,
-   "lr": "1786073224.925129",
+   "rc": 13,
+   "lr": "1786589890.440629",
    "rfx": 3,
    "status": "done",
    "handler": "김규빈",
