@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 630,
- "updatedAt": "2026-08-13 18:00",
+ "version": 631,
+ "updatedAt": "2026-08-13 18:15",
  "days": 30,
  "items": [
   {
@@ -20,7 +20,59 @@ window.MENU_REQUESTS = {
     "https://drive.google.com/open?id=1Lreq6Eqfhw6phzrc7HW8nhVqxZ-8xKre"
    ],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "토스플레이스_업로드_원북원커피.xlsx",
+     "fid": "F0BPWUE8L3Y",
+     "from": "댓글",
+     "path": "menu-files/1786609161_844549-0.xlsx",
+     "nj": 1
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BPYT59MGA",
+     "from": "댓글",
+     "path": "menu-files/1786609161_844549-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "ESPRESSO",
+       "name": "아메리카노",
+       "price": 4500
+      },
+      {
+       "category": "ESPRESSO",
+       "name": "카페 라떼",
+       "price": 5000
+      },
+      {
+       "category": "ESPRESSO",
+       "name": "플랫 화이트",
+       "price": 5000
+      },
+      {
+       "category": "ESPRESSO",
+       "name": "바닐라 라떼",
+       "price": 5500
+      },
+      {
+       "category": "ESPRESSO",
+       "name": "시그니처 크림라떼",
+       "price": 6000
+      },
+      {
+       "category": "FILTER",
+       "name": "콜롬비아 수프리모 후일",
+       "price": 6500
+      },
+      {
+       "category": "FILTER",
+       "name": "과테말라 SHB 안티구아",
+       "price": 6500
+      }
+     ]
+    }
+   ],
    "datt": [
     {
      "id": "1Lreq6Eqfhw6phzrc7HW8nhVqxZ-8xKre",
@@ -104,11 +156,20 @@ window.MENU_REQUESTS = {
      ]
     }
    ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1786609166.328039",
+   "replies": [
+    "잘된다..!",
+    "아니ㅏㄷ",
+    "오",
+    "확인",
+    "고정가격을 그냥 공란으로",
+    "비우면되겠네요",
+    "넹 시가일때만 들어가면 좋을것같아염",
+    "컨쉽알!"
+   ],
+   "rc": 10,
+   "lr": "1786612418.763139",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786609161844549"
   },
@@ -1069,7 +1130,7 @@ window.MENU_REQUESTS = {
    "rc": 4,
    "lr": "1786607798.070919",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786607743302069"
   },
@@ -14156,15 +14217,7 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 1,
-   "att": [
-    {
-     "name": "닥스메디 스토어.xlsx",
-     "fid": "F0BNJH1091A",
-     "from": "원글",
-     "path": "menu-files/1786007203_049959-0.xlsx",
-     "nj": 1
-    }
-   ],
+   "att": [],
    "datt": [],
    "replies": [],
    "rc": 3,
@@ -28996,27 +29049,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784020668832059"
-  },
-  {
-   "ts": "1784019751.379799",
-   "date": "2026-07-14",
-   "time": "18:02",
-   "store": "최주부백개장",
-   "biz": "1102244200",
-   "pos": "토스포스",
-   "content": "해당 매장 유플러스 건입니다.스파로스 ->토스포스 메뉴 이관 부탁드립니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1784021587.181149",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784019751379799"
   }
  ],
  "ocr": {
