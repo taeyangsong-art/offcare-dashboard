@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 620,
- "updatedAt": "2026-08-13 15:00",
+ "version": 621,
+ "updatedAt": "2026-08-13 15:30",
  "days": 30,
  "items": [
   {
@@ -27347,50 +27347,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784011720598469"
-  },
-  {
-   "ts": "1784010598.684839",
-   "date": "2026-07-14",
-   "time": "15:29",
-   "store": "백석리 연탄집",
-   "biz": "3031568714",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1784010617.452739",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784010598684839"
-  },
-  {
-   "ts": "1784010183.065919",
-   "date": "2026-07-14",
-   "time": "15:23",
-   "store": "소다팥",
-   "biz": "8763801466",
-   "pos": "",
-   "content": "• 메뉴 옵션 등록 부탁드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "• 키오스크 모드  사용 중\n• \"포장해요\" 버튼 클릭 시 카테고리항목에 있는  \"딱! 빙수만!\", \"스폐셜 빙수\"에 있는 메뉴들을 포장 진행 시 1,000원 추가 될 수 있도록 설정 부탁드립니다.\n조건: 1개가 아닌 2~3개 주문시에도 포장비는 1,000원으로만 설정"
-   ],
-   "rc": 19,
-   "lr": "1784011842.776379",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784010183065919"
   }
  ],
  "ocr": {
