@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 617,
- "updatedAt": "2026-08-13 13:45",
+ "version": 618,
+ "updatedAt": "2026-08-13 14:00",
  "days": 30,
  "items": [
   {
@@ -27163,29 +27163,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784007591310089"
-  },
-  {
-   "ts": "1784005218.533569",
-   "date": "2026-07-14",
-   "time": "14:00",
-   "store": "오늘은빵먹는날",
-   "biz": "8644400728",
-   "pos": "",
-   "content": "메뉴 추가 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "빵에 치즈블랑 지워주시고 그자리에 강낭콩 완두베기 빵 5500원 부탁드려요"
-   ],
-   "rc": 3,
-   "lr": "1784005430.166179",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784005218533569"
   }
  ],
  "ocr": {
