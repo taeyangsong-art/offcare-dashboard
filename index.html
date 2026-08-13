@@ -2790,8 +2790,12 @@ function renderMenuReg(){
         <span style="font-size:12px;font-weight:700;color:#666">⬇ 엑셀(xlsx)로 받기:</span>
         ${MENUREG_POS.map((p,i4)=>`<button class="btn" style="background:var(--blue);color:#fff;border-color:var(--blue)" onclick="menuregGen(${i4},'mrXlGrid')">⬇ ${p.label}</button>`).join('')}
       </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;align-items:center">
+        <span style="font-size:12px;font-weight:700;color:#666">📋 매장 메뉴파일을 양식으로 전환하기:</span>
+        ${MENUREG_POS.map((p,i4)=>`<button class="btn" onclick="menuregCopy(${i4},'mrXlGrid')">📋 ${p.label}</button>`).join('')}
+      </div>
       <div class="hint" style="margin-top:6px">💡 POS 업로드는 <b>xlsx 만</b> 받으므로 항상 엑셀로 내려받습니다. 바코드·상품코드는 텍스트로 저장해 <b>8.80106E+12</b> 로 깨지지 않고 전체 자릿수가 그대로 보입니다.
-        <br>⚠️ <b>스파로스</b>만 예외 — 받은 파일은 헤더 없이 데이터만 들어 있습니다. 파일을 열어 전체 복사한 뒤 <b>공식 양식 4행부터</b> 붙여넣으세요(1~3행 보존).</div>
+        <br>⚠️ <b>스파로스</b>만 예외 — 받은 파일은 헤더 없이 데이터만 들어 있습니다. <b>공식 양식 4행부터</b> 붙여넣으세요(1~3행 보존). 📋 전환하기로 복사하면 바로 붙여넣을 수 있습니다.</div>
     </div>
     ${!all.length?'<div class="empty-note">아직 적재된 요청이 없습니다. 자동 적재(10분 주기)가 곧 채웁니다.</div>':''}`;
 }
