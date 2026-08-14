@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 640,
- "updatedAt": "2026-08-14 09:15",
+ "version": 641,
+ "updatedAt": "2026-08-14 09:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1786667270.375149",
+   "date": "2026-08-14",
+   "time": "09:27",
+   "store": "두현24시불가마사우나",
+   "biz": "1238626817",
+   "pos": "",
+   "content": "메뉴 금액 변경 요청\n스낵코너\n맥반석계란 2500\n훈제계란 3000",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "FD 포스"
+   ],
+   "rc": 3,
+   "lr": "1786667405.387519",
+   "rfx": 3,
+   "status": "done",
+   "handler": "서상원",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786667270375149"
+  },
   {
    "ts": "1786665568.099959",
    "date": "2026-08-14",

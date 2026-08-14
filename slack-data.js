@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3554,
+  "version": 3555,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -109035,14 +109035,38 @@ window.SLACK_DATA = {
     "2026-08-14": {
       "counts": {
         "as": {
+          "서상원": 1,
           "김동욱": 1
         },
         "menu": {
+          "서상원": 1,
           "김규빈": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:27",
+          "store": "(린)RIN Body Studio",
+          "biz": "8233601551",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "방문설치 받았으나 업그레이드하여 재온보딩(PC) 필요, 원격 요청",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "09:27",
+          "store": "두현24시불가마사우나",
+          "biz": "1238626817",
+          "cat": "menu",
+          "emp": "서상원",
+          "req": "메뉴 금액 변경 요청",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / FD 포스 / 완료"
+        },
         {
           "time": "09:00",
           "store": "온리원담마컴퍼니",
@@ -109067,11 +109091,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 2,
+        "online": 4,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:15",
+      "updatedAt": "09:27",
       "voc": {
         "responses": 1,
         "install": {
@@ -132721,13 +132745,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-14 09:15",
+    "at": "2026-08-14 09:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3524,
+    "rows": 3529,
     "named": 223,
     "unknownName": 0,
     "beforeStart": 0,
