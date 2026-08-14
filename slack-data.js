@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3618,
+  "version": 3619,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -109034,6 +109034,16 @@ window.SLACK_DATA = {
     },
     "2026-08-14": {
       "counts": {
+        "onboarding": {
+          "서상원": 4,
+          "최민석": 8,
+          "김동욱": 4,
+          "배선유": 5,
+          "심성현": 2,
+          "고경림": 6,
+          "김규빈": 2,
+          "송태양": 1
+        },
         "as": {
           "최민석": 16,
           "서상원": 21,
@@ -109044,16 +109054,6 @@ window.SLACK_DATA = {
           "김기범": 3,
           "김규빈": 5,
           "송태양": 6
-        },
-        "onboarding": {
-          "최민석": 8,
-          "김동욱": 4,
-          "배선유": 5,
-          "심성현": 2,
-          "서상원": 3,
-          "고경림": 6,
-          "김규빈": 2,
-          "송태양": 1
         },
         "extern": {
           "서상원": 9
@@ -109075,6 +109075,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "22:40",
+          "store": "필로시코스 포레앙쥬",
+          "biz": "4595101125",
+          "cat": "onboarding",
+          "emp": "서상원",
+          "req": "온보딩",
+          "hw": "",
+          "intake": "online",
+          "note": "완료 프린터 추후 설치"
+        },
         {
           "time": "22:29",
           "store": "본투비클래식 반석점",
@@ -111401,11 +111412,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 172,
+        "online": 173,
         "offline": 38,
         "unknown": 0
       },
-      "updatedAt": "22:40",
+      "updatedAt": "23:00",
       "voc": {
         "responses": 20,
         "install": {
@@ -111926,11 +111937,15 @@ window.SLACK_DATA = {
       },
       "1786692108.822169": {
         "post": "1786692108.822169",
-        "lastSeen": 1786715133.315
+        "lastSeen": 1786716038.048
       },
       "1786703962.693599": {
         "post": "1786703962.693599",
-        "lastSeen": 1786715133.315
+        "lastSeen": 1786716038.048
+      },
+      "1786716000.582879": {
+        "post": "1786716000.582879",
+        "lastSeen": 1786716038.048
       }
     },
     "days": {
@@ -136349,7 +136364,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-14 22:45",
+    "at": "2026-08-14 23:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
