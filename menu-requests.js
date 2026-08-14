@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 663,
- "updatedAt": "2026-08-14 18:45",
+ "version": 664,
+ "updatedAt": "2026-08-14 19:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1786703962.693599",
+   "date": "2026-08-14",
+   "time": "19:39",
+   "store": "알비온",
+   "biz": "7680100928",
+   "pos": "토스포스",
+   "content": "첨푸파일에 있는 코드를 다 심어 주시고 카테고리 별로 분리 부탁드립니다. 혹시 저희매장이 평일 가격하고 주말 가격이 다른데 설정을 하는 방법을 알려주시면 감사하겠습니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786703966.374809",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786703962693599"
+  },
   {
    "ts": "1786699559.812189",
    "date": "2026-08-14",
@@ -29288,29 +29309,6 @@ window.MENU_REQUESTS = {
    "status": "dup",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784121276079219"
-  },
-  {
-   "ts": "1784112193.152579",
-   "date": "2026-07-15",
-   "time": "19:43",
-   "store": "카페메일빈디저트",
-   "biz": "5872302353",
-   "pos": "퍼스트포스",
-   "content": "• 라면 카테고리에 메뉴 등록 부탁드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "장칼국수: 4500 원\n향라우육향라면: 4500원\n홍소우육향라면: 4500원"
-   ],
-   "rc": 4,
-   "lr": "1784125559.096499",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784112193152579"
   }
  ],
  "ocr": {

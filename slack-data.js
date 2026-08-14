@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3602,
+  "version": 3603,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -109035,8 +109035,8 @@ window.SLACK_DATA = {
     "2026-08-14": {
       "counts": {
         "as": {
+          "서상원": 21,
           "배선유": 28,
-          "서상원": 20,
           "최민석": 7,
           "김동욱": 19,
           "심성현": 27,
@@ -109046,7 +109046,7 @@ window.SLACK_DATA = {
           "송태양": 6
         },
         "onboarding": {
-          "최민석": 6,
+          "최민석": 7,
           "김동욱": 4,
           "배선유": 5,
           "심성현": 2,
@@ -109075,6 +109075,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "19:37",
+          "store": "용용선생 천호점",
+          "biz": "2690303169",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "민원",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
+        {
+          "time": "19:07",
+          "store": "라온피아노음악학원",
+          "biz": "8889402014",
+          "cat": "onboarding",
+          "emp": "최민석",
+          "req": "노트북 포프 온보딩 부탁 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포프유프 온보딩 완료"
+        },
         {
           "time": "19:03",
           "store": "주식회사 천외천통합과학연구소",
@@ -111269,11 +111291,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 163,
-        "offline": 35,
+        "online": 164,
+        "offline": 36,
         "unknown": 0
       },
-      "updatedAt": "19:16",
+      "updatedAt": "19:39",
       "voc": {
         "responses": 20,
         "install": {
@@ -111794,15 +111816,15 @@ window.SLACK_DATA = {
       },
       "1786692108.822169": {
         "post": "1786692108.822169",
-        "lastSeen": 1786703430.089
+        "lastSeen": 1786704330.995
       },
       "1786702500.567419": {
         "post": "1786702500.567419",
-        "lastSeen": 1786703430.089
+        "lastSeen": 1786704330.995
       },
-      "1786702074.604929": {
-        "post": "1786702074.604929",
-        "lastSeen": 1786703430.089
+      "1786703962.693599": {
+        "post": "1786703962.693599",
+        "lastSeen": 1786704330.995
       }
     },
     "days": {
@@ -135388,9 +135410,9 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-14": {
-        "cnt": 92,
-        "sumMin": 1274.4586907108626,
-        "over": 2,
+        "cnt": 93,
+        "sumMin": 1304.5576418916385,
+        "over": 3,
         "items": [
           {
             "hm": "10:00",
@@ -136127,13 +136149,21 @@ window.SLACK_DATA = {
             "biz": "7471802548",
             "who": "최민석",
             "cat": "onboarding"
+          },
+          {
+            "hm": "19:07",
+            "min": 30.1,
+            "store": "라온피아노음악학원",
+            "biz": "8889402014",
+            "who": "최민석",
+            "cat": "onboarding"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-14 19:30",
+    "at": "2026-08-14 19:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
