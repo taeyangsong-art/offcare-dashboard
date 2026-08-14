@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 659,
- "updatedAt": "2026-08-14 17:01",
+ "version": 660,
+ "updatedAt": "2026-08-14 18:00",
  "days": 30,
  "items": [
   {
@@ -59,16 +59,24 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "attachments (10).zip",
+     "fid": "F0BQ1K15F0B",
+     "from": "댓글",
+     "path": "menu-files/1786690128_144769-0.zip",
+     "nj": 1
+    }
+   ],
    "datt": [],
    "replies": [
     "김마리 서현점에\n꼬마돈가스김밥\n쉬림프 로제우동\n퐁당치즈떢볶이 중간맛\n치킨 가라아게\n이렇게\n야탑점과 같이 부탁드려요~~\n\n이미지 달라고 말씀드리고 대기중 :loading_win:"
    ],
-   "rc": 2,
-   "lr": "1786690149.574819",
+   "rc": 3,
+   "lr": "1786697245.152529",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786690128144769"
   },
   {
