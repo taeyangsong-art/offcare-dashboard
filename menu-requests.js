@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 645,
- "updatedAt": "2026-08-14 11:15",
+ "version": 646,
+ "updatedAt": "2026-08-14 11:30",
  "days": 30,
  "items": [
   {
@@ -23,10 +23,10 @@ window.MENU_REQUESTS = {
    "replies": [
     "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786327946209649\n포장메뉴 카테고리에\n\n곤이써비스\n콩나물써비스\n\n위 두가지 항목이 주방에서 출력 안된다고 하시어 확인 부탁 드립니다. :꾸벅:"
    ],
-   "rc": 3,
-   "lr": "1786673703.824479",
+   "rc": 4,
+   "lr": "1786674035.990639",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786673241374369"
   },
@@ -193,7 +193,7 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1786672252.665049",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786671854560119"
   },
@@ -389,12 +389,13 @@ window.MENU_REQUESTS = {
     "가격도 부가세 별도로 되어있네요",
     "선불권으로 사용 해야되고 횟수건으로\n부가세는 카드로 별도로 빼야함\n\n시간 오래걸린다고 안내드림",
     "님 안녕하세요,\n점주님들게서 메뉴를 요청 해주시는 경우에 자세하게 어떤식으로 등록을 해드려야 하는지 사전에 확인을 해주시면 감사드리겠습니다.",
-    "님, 제가 해당 점주님과 통화중인 상황이어서 다른 문의와 함께 주시어 상세 전달드리지 못했네요!\n확인 감사합니다."
+    "님, 제가 해당 점주님과 통화중인 상황이어서 다른 문의와 함께 주시어 상세 전달드리지 못했네요!\n확인 감사합니다.",
+    "192.168.219.42"
    ],
-   "rc": 7,
-   "lr": "1786672829.406859",
+   "rc": 8,
+   "lr": "1786674569.203749",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786671788650149"
   },
@@ -29200,27 +29201,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784084867622859"
-  },
-  {
-   "ts": "1784082177.899369",
-   "date": "2026-07-15",
-   "time": "11:22",
-   "store": "면의계절밤일마을본점",
-   "biz": "4075001127",
-   "pos": "토스포스",
-   "content": "토스포스 / 하이오더 선불 테이블 12개 등록 부탁드리겠습니다!:man-bowing:",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1784082661.663399",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784082177899369"
   }
  ],
  "ocr": {
