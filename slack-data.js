@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3585,
+  "version": 3586,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -109034,29 +109034,29 @@ window.SLACK_DATA = {
     },
     "2026-08-14": {
       "counts": {
+        "extern": {
+          "서상원": 7
+        },
         "as": {
+          "서상원": 15,
+          "최민석": 4,
+          "김동욱": 17,
           "배선유": 18,
-          "최민석": 2,
           "김기범": 3,
-          "김동욱": 16,
-          "서상원": 13,
-          "고경림": 13,
+          "고경림": 14,
           "심성현": 22,
           "김규빈": 5,
           "송태양": 6
         },
         "onboarding": {
+          "배선유": 4,
           "최민석": 4,
           "심성현": 2,
           "서상원": 3,
-          "배선유": 3,
           "김동욱": 3,
           "고경림": 6,
           "김규빈": 2,
           "송태양": 1
-        },
-        "extern": {
-          "서상원": 5
         },
         "transfer": {
           "김동욱": 3
@@ -109073,17 +109073,6 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "14:55",
-          "store": "청석골",
-          "biz": "8208503223",
-          "handler": "고경림",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "1차 부재"
-          ]
-        },
-        {
           "time": "13:00",
           "store": "엔무드네일(N.MOOD nail)",
           "biz": "5611502899",
@@ -109096,6 +109085,94 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "16:10",
+          "store": "샐리스",
+          "biz": "6162796744",
+          "cat": "extern",
+          "emp": "서상원",
+          "req": "외주설치요청드려요(<tel:010-8357-4091|010-8357-4091>)",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "16:01",
+          "store": "냉삼회관 이천중리점",
+          "biz": "2052270438",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "포스기 세트 오늘 날짜로 설치 / 요기요 설치 요청 / 프린터 소리 문의로 문자 영상 가이드 안내",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "16:01",
+          "store": "소담낙찌",
+          "biz": "7545001192",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "가결제",
+          "hw": "",
+          "intake": "online",
+          "note": "<tel:010-2323-6181|010-2323-6181 010-2323-6181"
+        },
+        {
+          "time": "16:00",
+          "store": "로커스헤어",
+          "biz": "5831100398",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "SMT-t250 사용 매장으로 조회되며, 단말기 봉사료 설정 문의주시어 확인 부탁드리겠습니다! (고령)",
+          "hw": "",
+          "intake": "online",
+          "note": "10분 뒤 재연락 요청"
+        },
+        {
+          "time": "16:00",
+          "store": "빽보이피자 속초조양점",
+          "biz": "3685801037",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "포프 + 유프 온보딩 요청드립니다. / 기존에 사용하시던 타사 포스기 연결 원하십니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "5시 재연락 요청"
+        },
+        {
+          "time": "15:56",
+          "store": "주디마리 홍대점(JUDYMARY)",
+          "biz": "4858502579",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "기존 타사 포스에 토스포스 설치 후 사용 중 메모리 부족 지속 노출 되어 확인 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "가상메모리 설정 / Antimalware Service Executable RAM 점유율 낮춰드림"
+        },
+        {
+          "time": "15:56",
+          "store": "주베하샵",
+          "biz": "7165500804",
+          "cat": "onboarding",
+          "emp": "배선유",
+          "req": "핸드폰 포프 유프 온보딩 부탁 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "3분후 / 온보딩 완료"
+        },
+        {
+          "time": "15:56",
+          "store": "목짬",
+          "biz": "5591403243",
+          "cat": "extern",
+          "emp": "서상원",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": "무선랜카드 x"
+        },
         {
           "time": "15:56",
           "store": "제뉴인학원",
@@ -109304,6 +109381,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "와이파이 공유기 변경으로인해 무선프린터 아이피 재설정 후 정상출력환인했습니다."
+        },
+        {
+          "time": "14:55",
+          "store": "청석골",
+          "biz": "8208503223",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "영수증 출력 시 장수 2장 출력 및 메인 메뉴와 주류 상품 등 주문서 설정 원격 요청 주셔서 설정 부탁드리겠습니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "1차부재 / 통화 완료 주방주문서 2장 출력 설정 , 계산서 설정후 재출력 버튼으로만 출력 설정완료 추후 추가 프린터 도착시 해당프린터는 \"주류\" 주문서 전용프린터로 설정필요"
         },
         {
           "time": "14:48",
@@ -110725,27 +110813,28 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 128,
+        "online": 136,
         "offline": 21,
         "unknown": 0
       },
-      "updatedAt": "16:00",
+      "updatedAt": "16:10",
       "voc": {
-        "responses": 12,
+        "responses": 14,
         "install": {
           "count": 4,
           "low": 0
         },
         "nps": {
-          "count": 12,
-          "low": 2
+          "count": 14,
+          "low": 4
         },
         "high": {
           "install": 2,
           "nps": 4
         },
         "npsDist": {
-          "5": 2,
+          "0": 1,
+          "5": 3,
           "6": 1,
           "8": 4,
           "9": 1,
@@ -110762,6 +110851,10 @@ window.SLACK_DATA = {
           "서비스[학원]": 2
         },
         "byTenure": {
+          "1개월": {
+            "total": 4,
+            "low": 3
+          },
           "구매설치": {
             "total": 4,
             "low": 0
@@ -110769,10 +110862,6 @@ window.SLACK_DATA = {
           "6개월": {
             "total": 1,
             "low": 0
-          },
-          "1개월": {
-            "total": 2,
-            "low": 1
           },
           "12개월": {
             "total": 1,
@@ -110784,12 +110873,16 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
-          "SECTA9": {
-            "total": 3,
-            "low": 0
+          "SMARTRO": {
+            "total": 2,
+            "low": 1
           },
           "KIS": {
-            "total": 1,
+            "total": 2,
+            "low": 1
+          },
+          "SECTA9": {
+            "total": 3,
             "low": 0
           },
           "KPN": {
@@ -110800,19 +110893,61 @@ window.SLACK_DATA = {
             "total": 3,
             "low": 0
           },
-          "SMARTRO": {
-            "total": 1,
-            "low": 0
-          },
           "DAOU": {
             "total": 1,
             "low": 1
           }
         },
         "reasonCounts": {
+          "고객센터 연락이 매우 힘듦": 1,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "사용중 오류가 자주 발생함": 2
         },
         "alerts": [
+          {
+            "time": "16:06",
+            "store": "벡터수학과학학원",
+            "storeId": "540568",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "토스 고객센터 소통 불가로 문제 해결이 불가능함",
+                "cat": "고객센터 연락이 매우 힘듦"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "16:06",
+            "store": "리움1619(Rium1619)",
+            "storeId": "538527",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "어려워서요 물론 젊은 친구들은 쉽겠지만ㅇᆢ",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:34",
             "store": "유난희예쁘다",
@@ -110922,11 +111057,27 @@ window.SLACK_DATA = {
         ]
       },
       "ob": {
-        "count": 28,
+        "count": 30,
         "byEmp": {
-          "김규빈": 28
+          "김규빈": 30
         },
         "items": [
+          {
+            "key": "2026년 8월 14일 오후 3:53:27|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785912425333269#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-14",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785912425333269"
+          },
+          {
+            "key": "2026년 8월 14일 오후 3:51:08|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785662522312849#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-14",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785662522312849"
+          },
           {
             "key": "2026년 8월 14일 오후 1:44:02|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786610972737599#1",
             "handler": "김규빈",
@@ -111173,21 +111324,13 @@ window.SLACK_DATA = {
         "post": "1786605904.194739",
         "lastSeen": 1786637670.867
       },
-      "1786690809.407929": {
-        "post": "1786690809.407929",
-        "lastSeen": 1786690839.653
-      },
-      "1786690801.859189": {
-        "post": "1786690801.859189",
-        "lastSeen": 1786690839.653
-      },
       "1786690814.523319": {
         "post": "1786690814.523319",
-        "lastSeen": 1786690839.653
+        "lastSeen": 1786691728.341
       },
       "1786690128.144769": {
         "post": "1786690128.144769",
-        "lastSeen": 1786690839.653
+        "lastSeen": 1786691728.341
       }
     },
     "days": {
@@ -134773,8 +134916,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-14": {
-        "cnt": 79,
-        "sumMin": 1108.7780497988067,
+        "cnt": 81,
+        "sumMin": 1124.723497839769,
         "over": 2,
         "items": [
           {
@@ -135408,25 +135551,41 @@ window.SLACK_DATA = {
             "biz": "5864401434",
             "who": "최민석",
             "cat": "onboarding"
+          },
+          {
+            "hm": "16:00",
+            "min": 7.9,
+            "store": "로커스헤어",
+            "biz": "5831100398",
+            "who": "최민석",
+            "cat": "as"
+          },
+          {
+            "hm": "16:00",
+            "min": 8,
+            "store": "빽보이피자 속초조양점",
+            "biz": "3685801037",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-14 16:00",
+    "at": "2026-08-14 16:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3545,
-    "named": 251,
+    "named": 253,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 251,
+    "done": 253,
     "byStatus": {
-      "일정등록완료": 153,
+      "일정등록완료": 155,
       "1차부재": 57,
       "점주직접접수": 23,
       "설치불가": 6,
