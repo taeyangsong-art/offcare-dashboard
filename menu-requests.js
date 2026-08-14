@@ -3,10 +3,51 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 658,
- "updatedAt": "2026-08-14 16:00",
+ "version": 659,
+ "updatedAt": "2026-08-14 17:01",
  "days": 30,
  "items": [
+  {
+   "ts": "1786693769.098779",
+   "date": "2026-08-14",
+   "time": "16:49",
+   "store": "칠암장수국수",
+   "biz": "6874301365",
+   "pos": "",
+   "content": "①포스 유형 후불→선불로 변경 필요 ②후불테이블 6대 생성 필요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BPS4WE0SK",
+     "from": "댓글",
+     "path": "menu-files/1786693769_098779-0.png",
+     "kind": "pos_screen",
+     "menu": []
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BQ3S8Q353",
+     "from": "댓글",
+     "path": "menu-files/1786693769_098779-1.png",
+     "kind": "pos_screen",
+     "menu": []
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "하이오더 기사님 내방 중인 곳으로 빠르게 적용 필요하여 구두로 먼저 요청드리고 스레드 올립니다.\n\ncc.",
+    "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786693457405189?thread_ts=···.266599&cid=C0AL2V3MM7U"
+   ],
+   "rc": 7,
+   "lr": "1786693885.449839",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786693769098779"
+  },
   {
    "ts": "1786690128.144769",
    "date": "2026-08-14",
