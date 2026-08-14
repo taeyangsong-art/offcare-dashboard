@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3600,
+  "version": 3601,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111262,15 +111262,15 @@ window.SLACK_DATA = {
         "offline": 35,
         "unknown": 0
       },
-      "updatedAt": "19:15",
+      "updatedAt": "19:16",
       "voc": {
-        "responses": 19,
+        "responses": 20,
         "install": {
           "count": 4,
           "low": 0
         },
         "nps": {
-          "count": 19,
+          "count": 20,
           "low": 4
         },
         "high": {
@@ -111281,7 +111281,7 @@ window.SLACK_DATA = {
           "0": 1,
           "5": 3,
           "6": 1,
-          "8": 4,
+          "8": 5,
           "9": 2,
           "10": 8
         },
@@ -111296,15 +111296,15 @@ window.SLACK_DATA = {
           "서비스[학원]": 2
         },
         "byTenure": {
+          "6개월": {
+            "total": 3,
+            "low": 0
+          },
           "3개월": {
             "total": 7,
             "low": 1
           },
           "12개월": {
-            "total": 2,
-            "low": 0
-          },
-          "6개월": {
             "total": 2,
             "low": 0
           },
@@ -111318,13 +111318,13 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SECTA9": {
+            "total": 6,
+            "low": 0
+          },
           "KPN": {
             "total": 4,
             "low": 1
-          },
-          "SECTA9": {
-            "total": 5,
-            "low": 0
           },
           "KSNET": {
             "total": 1,
@@ -111783,19 +111783,19 @@ window.SLACK_DATA = {
       },
       "1786692108.822169": {
         "post": "1786692108.822169",
-        "lastSeen": 1786702527.295
+        "lastSeen": 1786702679.891
       },
       "1786701602.960149": {
         "post": "1786701602.960149",
-        "lastSeen": 1786702527.295
+        "lastSeen": 1786702679.891
       },
       "1786702500.567419": {
         "post": "1786702500.567419",
-        "lastSeen": 1786702527.295
+        "lastSeen": 1786702679.891
       },
       "1786702074.604929": {
         "post": "1786702074.604929",
-        "lastSeen": 1786702527.295
+        "lastSeen": 1786702679.891
       }
     },
     "days": {
@@ -136118,7 +136118,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-14 19:15",
+    "at": "2026-08-14 19:18",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
