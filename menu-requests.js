@@ -3,10 +3,191 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 650,
- "updatedAt": "2026-08-14 13:15",
+ "version": 651,
+ "updatedAt": "2026-08-14 13:31",
  "days": 30,
  "items": [
+  {
+   "ts": "1786681097.246779",
+   "date": "2026-08-14",
+   "time": "13:18",
+   "store": "엄청난오뎅",
+   "biz": "3270500521",
+   "pos": "",
+   "content": "메뉴등록요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "Resized_20260813_181048.jpeg",
+     "fid": "F0BQ6E1CBAN",
+     "from": "댓글",
+     "path": "menu-files/1786681097_246779-0.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "A코스",
+       "price": 21500
+      },
+      {
+       "category": "",
+       "name": "B코스",
+       "price": 17500
+      },
+      {
+       "category": "",
+       "name": "C코스",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "F코스",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "떡볶이",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "순대",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "튀김",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "라면",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "어묵국수 (1인)",
+       "price": 7000
+      },
+      {
+       "category": "",
+       "name": "꼬마김밥 (5개)",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "어묵 (3꼬치)",
+       "price": 3000
+      },
+      {
+       "category": "엄청난 스페셜안주",
+       "name": "엄청난 명품 오뎅탕",
+       "price": 15000
+      },
+      {
+       "category": "엄청난 스페셜안주",
+       "name": "엄청난 명품 치즈계란말이",
+       "price": 15000
+      },
+      {
+       "category": "엄청난 스페셜안주",
+       "name": "엄청난 명품 모둠튀김",
+       "price": 15000
+      },
+      {
+       "category": "엄청난 스페셜안주",
+       "name": "먹태",
+       "price": 17000
+      },
+      {
+       "category": "엄청난 스페셜안주",
+       "name": "대왕새우튀김",
+       "price": 10000
+      },
+      {
+       "category": "엄청난 스페셜안주",
+       "name": "부대찌개",
+       "price": 17000
+      },
+      {
+       "category": "엄청난 스페셜안주",
+       "name": "햄&애그",
+       "price": 12000
+      },
+      {
+       "category": "엄청난 스페셜안주",
+       "name": "황도",
+       "price": 10000
+      },
+      {
+       "category": "엄청난 안주",
+       "name": "한치",
+       "price": 17000
+      },
+      {
+       "category": "엄청난 안주",
+       "name": "번데기탕",
+       "price": 10000
+      },
+      {
+       "category": "엄청난 안주",
+       "name": "돼지껍데기",
+       "price": 12000
+      },
+      {
+       "category": "엄청난 안주",
+       "name": "화끈불닭발",
+       "price": 15000
+      },
+      {
+       "category": "엄청난 안주",
+       "name": "왕!닭꼬치 (후라이드)",
+       "price": 4000
+      },
+      {
+       "category": "엄청난 안주",
+       "name": "쥐포튀김",
+       "price": 5000
+      },
+      {
+       "category": "엄청난 안주",
+       "name": "치즈스틱 (5개)",
+       "price": 5000
+      },
+      {
+       "category": "엄청난 안주",
+       "name": "매콤칼칼 순두부전골",
+       "price": 15000
+      },
+      {
+       "category": "엄청난 안주",
+       "name": "후라이드 치킨 (반마리)",
+       "price": 10000
+      },
+      {
+       "category": "엄청난 안주",
+       "name": "돼지두루치기",
+       "price": 17000
+      },
+      {
+       "category": "엄청난 안주",
+       "name": "냉김치말이국수 (계절)",
+       "price": 8000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 3,
+   "lr": "1786681515.828419",
+   "rfx": 3,
+   "status": "done",
+   "handler": "김동욱",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786681097246779"
+  },
   {
    "ts": "1786680555.807739",
    "date": "2026-08-14",
@@ -108,8 +289,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1786680561.927899",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786680555807739"
   },
   {
