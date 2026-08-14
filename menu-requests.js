@@ -3,10 +3,321 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 638,
- "updatedAt": "2026-08-14 08:15",
+ "version": 639,
+ "updatedAt": "2026-08-14 09:01",
  "days": 30,
  "items": [
+  {
+   "ts": "1786665568.099959",
+   "date": "2026-08-14",
+   "time": "08:59",
+   "store": "샐리스",
+   "biz": "6162796744",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "샐리스 메뉴 및 가격 이미지 파일.jpg",
+     "fid": "F0BQ3D5SENS",
+     "from": "댓글",
+     "path": "menu-files/1786665568_099959-0.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "Salad",
+       "name": "수비드 닭가슴살 샐러드",
+       "price": 9800
+      },
+      {
+       "category": "Salad",
+       "name": "연어 아보카도 샐러드",
+       "price": 13900
+      },
+      {
+       "category": "Salad",
+       "name": "구운 야채 샐러드",
+       "price": 10900
+      },
+      {
+       "category": "Salad",
+       "name": "쉬림프 샐러드",
+       "price": 9800
+      },
+      {
+       "category": "Salad",
+       "name": "멕시칸 샐러드",
+       "price": 12900
+      },
+      {
+       "category": "Salad",
+       "name": "바질 파스타 샐러드",
+       "price": 9300
+      },
+      {
+       "category": "Poke",
+       "name": "수비드 닭가슴살 포케",
+       "price": 10500
+      },
+      {
+       "category": "Poke",
+       "name": "연어 포케",
+       "price": 12900
+      },
+      {
+       "category": "Poke",
+       "name": "우삼겹 포케",
+       "price": 11900
+      },
+      {
+       "category": "Poke",
+       "name": "쉬림프 포케",
+       "price": 10500
+      },
+      {
+       "category": "Poke",
+       "name": "훈제오리 포케",
+       "price": 11900
+      },
+      {
+       "category": "Sandwich",
+       "name": "에그 베이컨 샌드위치",
+       "price": 8900
+      },
+      {
+       "category": "Sandwich",
+       "name": "에그마요 샌드위치",
+       "price": 8500
+      },
+      {
+       "category": "Sandwich",
+       "name": "햄치즈 샌드위치",
+       "price": 8000
+      },
+      {
+       "category": "Sandwich",
+       "name": "크랜베리 치킨 샌드위치",
+       "price": 8500
+      },
+      {
+       "category": "Sandwich",
+       "name": "멕시칸 치킨 샌드위치",
+       "price": 8500
+      },
+      {
+       "category": "Greek yogurt",
+       "name": "그릭요거트 (플레인)",
+       "price": 3300
+      },
+      {
+       "category": "Greek yogurt",
+       "name": "그릭요거트 (그레놀라 + 꿀)",
+       "price": 4300
+      },
+      {
+       "category": "Beverage",
+       "name": "아이스 아메리카노",
+       "price": 3500
+      },
+      {
+       "category": "Beverage",
+       "name": "핫 아메리카노",
+       "price": 3000
+      },
+      {
+       "category": "Beverage",
+       "name": "제로콜라",
+       "price": 2000
+      },
+      {
+       "category": "Beverage",
+       "name": "제로 사이다",
+       "price": 2000
+      },
+      {
+       "category": "Dressing",
+       "name": "오리엔탈 드레싱",
+       "price": 1000
+      },
+      {
+       "category": "Dressing",
+       "name": "발사믹 올리브 드레싱",
+       "price": 1000
+      },
+      {
+       "category": "Dressing",
+       "name": "어니언크림 드레싱",
+       "price": 1000
+      },
+      {
+       "category": "Dressing",
+       "name": "스리라차마요 드레싱",
+       "price": 1000
+      },
+      {
+       "category": "Dressing",
+       "name": "레몬갈릭 드레싱",
+       "price": 1000
+      },
+      {
+       "category": "Keto",
+       "name": "샐리스 키토김밥",
+       "price": 7500
+      },
+      {
+       "category": "Keto",
+       "name": "참치마요 키토김밥",
+       "price": 7800
+      },
+      {
+       "category": "Keto",
+       "name": "두부버섯 키토김밥",
+       "price": 7300
+      },
+      {
+       "category": "Keto",
+       "name": "수비드 닭가슴살 키토김밥",
+       "price": 7800
+      },
+      {
+       "category": "Keto",
+       "name": "우삼겹 키토김밥",
+       "price": 8300
+      },
+      {
+       "category": "추가",
+       "name": "연어(40g)",
+       "price": 4500
+      },
+      {
+       "category": "추가",
+       "name": "우삼겹(100g)",
+       "price": 4500
+      },
+      {
+       "category": "추가",
+       "name": "닭가슴살(100g)",
+       "price": 3000
+      },
+      {
+       "category": "추가",
+       "name": "새우(5미)",
+       "price": 4000
+      },
+      {
+       "category": "추가",
+       "name": "훈제오리(100g)",
+       "price": 5000
+      },
+      {
+       "category": "추가",
+       "name": "고구마(60g)",
+       "price": 3000
+      },
+      {
+       "category": "추가",
+       "name": "기본야채(100g)",
+       "price": 3000
+      },
+      {
+       "category": "추가",
+       "name": "현미밥(1스쿱)",
+       "price": 2000
+      },
+      {
+       "category": "추가",
+       "name": "메시드 포테이토(1스쿱)",
+       "price": 2000
+      },
+      {
+       "category": "추가",
+       "name": "방울토마토(2개)",
+       "price": 1000
+      },
+      {
+       "category": "추가",
+       "name": "아보카도(반쪽)",
+       "price": 2500
+      },
+      {
+       "category": "추가",
+       "name": "구운버섯(75g)",
+       "price": 2000
+      },
+      {
+       "category": "추가",
+       "name": "구운야채(100g)",
+       "price": 3500
+      },
+      {
+       "category": "추가",
+       "name": "두부(6조각)",
+       "price": 2000
+      },
+      {
+       "category": "추가",
+       "name": "당근라페(30g)",
+       "price": 1000
+      },
+      {
+       "category": "추가",
+       "name": "적채피클(20g)",
+       "price": 1000
+      },
+      {
+       "category": "추가",
+       "name": "적양파(10g)",
+       "price": 1000
+      },
+      {
+       "category": "추가",
+       "name": "병아리콩(30g)",
+       "price": 500
+      },
+      {
+       "category": "추가",
+       "name": "계란(반쪽)",
+       "price": 500
+      },
+      {
+       "category": "추가",
+       "name": "올리브(30g)",
+       "price": 1000
+      },
+      {
+       "category": "추가",
+       "name": "옥수수콘(30g)",
+       "price": 500
+      },
+      {
+       "category": "추가",
+       "name": "할라피뇨(20g)",
+       "price": 500
+      },
+      {
+       "category": "추가",
+       "name": "호두(20g)",
+       "price": 1000
+      },
+      {
+       "category": "추가",
+       "name": "엔젤헤어치즈(20g)",
+       "price": 2000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1786665602.225459",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786665568099959"
+  },
   {
    "ts": "1786627299.682069",
    "date": "2026-08-13",
@@ -28540,27 +28851,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784074285215869"
-  },
-  {
-   "ts": "1784073589.509339",
-   "date": "2026-07-15",
-   "time": "08:59",
-   "store": "몽블랑",
-   "biz": "8331302086",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 8,
-   "lr": "1784180472.452899",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784073589509339"
   }
  ],
  "ocr": {
