@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 646,
- "updatedAt": "2026-08-14 11:30",
+ "version": 647,
+ "updatedAt": "2026-08-14 11:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1786675510.468859",
+   "date": "2026-08-14",
+   "time": "11:45",
+   "store": "갈풍집",
+   "biz": "3014014266",
+   "pos": "오케이포스",
+   "content": "오케이포스 / 메뉴 추가 요청드립니다!\n\n• 육류 카테고리 (최하단)\n    ◦ 돼지 주물럭 반판(300g) 34,000원\n    ◦ 돼지 주물럭 한판(600g) 65,000원",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786675514.622879",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786675510468859"
+  },
   {
    "ts": "1786673241.374369",
    "date": "2026-08-14",
