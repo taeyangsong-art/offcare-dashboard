@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 657,
- "updatedAt": "2026-08-14 15:43",
+ "version": 658,
+ "updatedAt": "2026-08-14 16:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1786690128.144769",
+   "date": "2026-08-14",
+   "time": "15:48",
+   "store": "김마리 서현점",
+   "biz": "4171992898",
+   "pos": "",
+   "content": "메뉴 이미지 등록 요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "김마리 서현점에\n꼬마돈가스김밥\n쉬림프 로제우동\n퐁당치즈떢볶이 중간맛\n치킨 가라아게\n이렇게\n야탑점과 같이 부탁드려요~~\n\n이미지 달라고 말씀드리고 대기중 :loading_win:"
+   ],
+   "rc": 2,
+   "lr": "1786690149.574819",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786690128144769"
+  },
   {
    "ts": "1786688688.565349",
    "date": "2026-08-14",
