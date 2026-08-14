@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 660,
- "updatedAt": "2026-08-14 18:00",
+ "version": 661,
+ "updatedAt": "2026-08-14 18:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1786698827.005639",
+   "date": "2026-08-14",
+   "time": "18:13",
+   "store": "용용선생 청주지웰복대점",
+   "biz": "6531002169",
+   "pos": "",
+   "content": "메뉴 추가 요청드립니다 >>",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "소주/맥주 카테고리 내 새로 오미자 5,000원 추가"
+   ],
+   "rc": 2,
+   "lr": "1786698832.135229",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786698827005639"
+  },
   {
    "ts": "1786693769.098779",
    "date": "2026-08-14",
