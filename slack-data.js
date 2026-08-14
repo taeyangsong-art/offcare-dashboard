@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3569,
+  "version": 3570,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -109035,12 +109035,12 @@ window.SLACK_DATA = {
     "2026-08-14": {
       "counts": {
         "as": {
-          "김규빈": 2,
+          "김규빈": 5,
+          "심성현": 13,
           "송태양": 6,
-          "심성현": 10,
           "고경림": 5,
-          "배선유": 6,
           "김동욱": 8,
+          "배선유": 5,
           "김기범": 1,
           "서상원": 4
         },
@@ -109050,6 +109050,7 @@ window.SLACK_DATA = {
         "onboarding": {
           "김규빈": 2,
           "고경림": 4,
+          "배선유": 1,
           "김동욱": 1,
           "심성현": 1,
           "송태양": 1,
@@ -109067,6 +109068,62 @@ window.SLACK_DATA = {
       "pending": [],
       "done": [
         {
+          "time": "12:35",
+          "store": "미니  편의점",
+          "biz": "1074018772",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "포스(임대_태블릿) 사용 중인데 인터넷 연결이 불안정 문구 뜨고 안된다고 합니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "테블릿 재연결 이후 정상확인"
+        },
+        {
+          "time": "12:31",
+          "store": "문그로우",
+          "biz": "5671502636",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "키오스크 내 화면이 간혈적으로 터치가 되지 않는다고 하셔서 확인 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "T6 터치 보정 및 테스트 완료"
+        },
+        {
+          "time": "12:30",
+          "store": "회사랑회",
+          "biz": "4633201647",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포스기+프론트+유프+금전함 / 신규 온보딩 부탁드립니다. (인터넷 설비 완료)",
+          "hw": "",
+          "intake": "online",
+          "note": "기기 전원 및 케이블 연결 후 통화 예약 요청 / 13시 통화 예약"
+        },
+        {
+          "time": "12:30",
+          "store": "빠삐용",
+          "biz": "1293830512",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "단말기 승인 오류 / 도움 부탁드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "인터넷 속도가 매우 느려서 사용 불가 사장님 본인 매장에 공유기가 없고 옆집꺼를 쓰거나 공유와이파이 사용으로 인해 어려움 LAN 으로 연결해서 사용하거나 반품"
+        },
+        {
+          "time": "12:20",
+          "store": "김가네삼겹살",
+          "biz": "5765500899",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포스기 세트 사용 중 / 포스기 안 움직이고 결제 안된다고 빠른 처리 요청",
+          "hw": "",
+          "urgent": true,
+          "intake": "online",
+          "note": "매장 인터넷 장비 모두 비정상 / 통신사 통화 예정"
+        },
+        {
           "time": "12:19",
           "store": "다정제말",
           "biz": "2350703752",
@@ -109076,6 +109133,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "기본 브라우저 크롬으로 설정 후 정상 마우스 오른쪽 클릭 안되서 이카운트 등록"
+        },
+        {
+          "time": "12:14",
+          "store": "덕이네",
+          "biz": "7850503215",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "프론트 자가 연결 진행 했으나 연결 어려워하셔서 재온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "전화거부 1차 부재 / 재온보딩 완료"
         },
         {
           "time": "12:06",
@@ -109225,12 +109293,12 @@ window.SLACK_DATA = {
           "time": "11:35",
           "store": "울산예문사",
           "biz": "2761402878",
-          "cat": "as",
+          "cat": "onboarding",
           "emp": "배선유",
           "req": "터프 온보딩 도움 요청드립니다. (고령)",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "터프 온보딩 완료"
         },
         {
           "time": "11:29",
@@ -109799,26 +109867,27 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 57,
-        "offline": 9,
+        "online": 62,
+        "offline": 10,
         "unknown": 0
       },
-      "updatedAt": "12:30",
+      "updatedAt": "12:41",
       "voc": {
-        "responses": 3,
+        "responses": 4,
         "install": {
           "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 3,
-          "low": 0
+          "count": 4,
+          "low": 1
         },
         "high": {
           "install": 1,
           "nps": 2
         },
         "npsDist": {
+          "5": 1,
           "8": 1,
           "10": 2
         },
@@ -109829,6 +109898,10 @@ window.SLACK_DATA = {
           "서비스[학원]": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 1,
+            "low": 1
+          },
           "3개월": {
             "total": 2,
             "low": 0
@@ -109839,6 +109912,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "DAOU": {
+            "total": 1,
+            "low": 1
+          },
           "SECTA9": {
             "total": 1,
             "low": 0
@@ -109852,8 +109929,33 @@ window.SLACK_DATA = {
             "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1
+        },
+        "alerts": [
+          {
+            "time": "12:36",
+            "store": "플라도르(Fladore)",
+            "storeId": "509258",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "오류가 자주 발생합니다",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
         "praises": [
           {
             "time": "11:33",
@@ -109895,11 +109997,7 @@ window.SLACK_DATA = {
       },
       "1786672200.308879": {
         "post": "1786672200.308879",
-        "lastSeen": 1786678232.925
-      },
-      "1786678200.843329": {
-        "post": "1786678200.843329",
-        "lastSeen": 1786678232.925
+        "lastSeen": 1786679128.013
       }
     },
     "days": {
@@ -133485,8 +133583,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-14": {
-        "cnt": 38,
-        "sumMin": 596.4805913209916,
+        "cnt": 39,
+        "sumMin": 604.474352502823,
         "over": 1,
         "items": [
           {
@@ -133792,13 +133890,21 @@ window.SLACK_DATA = {
             "biz": "6024463765",
             "who": "김규빈",
             "cat": "as"
+          },
+          {
+            "hm": "12:30",
+            "min": 8,
+            "store": "빠삐용",
+            "biz": "1293830512",
+            "who": "김규빈",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-14 12:30",
+    "at": "2026-08-14 12:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
