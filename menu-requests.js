@@ -3,10 +3,164 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 654,
- "updatedAt": "2026-08-14 14:14",
+ "version": 655,
+ "updatedAt": "2026-08-14 15:16",
  "days": 30,
  "items": [
+  {
+   "ts": "1786687760.398909",
+   "date": "2026-08-14",
+   "time": "15:09",
+   "store": "대포항 뼈마루 감자탕",
+   "biz": "5312602308",
+   "pos": "",
+   "content": "메뉴 등록 요청 드립니다!",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "i_2a1d2f4da3b3.jpg",
+     "fid": "F0BQ0N4P4JF",
+     "from": "댓글",
+     "path": "menu-files/1786687760_398909-0.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "메인메뉴",
+       "name": "감자탕 大",
+       "price": 55000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "감자탕 中",
+       "price": 45000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "감자탕 小",
+       "price": 35000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "우거지 뼈 해장국",
+       "price": 12000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "콩나물 뼈 해장국",
+       "price": 12000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "콩나물뼈찜",
+       "price": 45000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "뼈추가",
+       "price": 11000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "막국수",
+       "price": 12000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "수육(반접시)",
+       "price": 10000
+      }
+     ]
+    },
+    {
+     "name": "i_3d15388f8304.jpg",
+     "fid": "F0BR1A096JU",
+     "from": "댓글",
+     "path": "menu-files/1786687760_398909-1.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "주류",
+       "name": "소주",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "맥주",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "막걸리",
+       "price": 4000
+      },
+      {
+       "category": "주류",
+       "name": "음료수",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "name": "i_b1f4294d3100.jpg",
+     "fid": "F0BR1A194CQ",
+     "from": "댓글",
+     "path": "menu-files/1786687760_398909-2.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "사이드메뉴",
+       "name": "감자채전",
+       "price": 15000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "라면사리",
+       "price": 2000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "수제비사리",
+       "price": 3000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "우동사리",
+       "price": 2000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "쫄면사리",
+       "price": 3000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "볶음밥",
+       "price": 3000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "볶음밥위 눈꽃치즈",
+       "price": 3000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "공기밥",
+       "price": 1000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1786687823.945239",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786687760398909"
+  },
   {
    "ts": "1786682388.985699",
    "date": "2026-08-14",
