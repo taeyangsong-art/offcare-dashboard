@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3620,
+  "version": 3621,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -109035,8 +109035,8 @@ window.SLACK_DATA = {
     "2026-08-14": {
       "counts": {
         "onboarding": {
+          "최민석": 9,
           "서상원": 4,
-          "최민석": 8,
           "김동욱": 4,
           "배선유": 5,
           "심성현": 2,
@@ -109075,6 +109075,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "23:00",
+          "store": "다락 혼술바",
+          "biz": "5451403074",
+          "cat": "onboarding",
+          "emp": "최민석",
+          "req": "아이폰 + 프론트 + 프린터 온보딩",
+          "hw": "",
+          "intake": "online",
+          "note": "1차 통화중 / 2차 통화중"
+        },
         {
           "time": "22:40",
           "store": "필로시코스 포레앙쥬",
@@ -111412,7 +111423,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 173,
+        "online": 174,
         "offline": 38,
         "unknown": 0
       },
@@ -111937,15 +111948,11 @@ window.SLACK_DATA = {
       },
       "1786692108.822169": {
         "post": "1786692108.822169",
-        "lastSeen": 1786716927.262
+        "lastSeen": 1786717834.217
       },
       "1786703962.693599": {
         "post": "1786703962.693599",
-        "lastSeen": 1786716927.262
-      },
-      "1786716000.582879": {
-        "post": "1786716000.582879",
-        "lastSeen": 1786716927.262
+        "lastSeen": 1786717834.217
       }
     },
     "days": {
@@ -135531,8 +135538,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-14": {
-        "cnt": 103,
-        "sumMin": 1600.4806113998095,
+        "cnt": 104,
+        "sumMin": 1623.4832217494647,
         "over": 8,
         "items": [
           {
@@ -136358,13 +136365,21 @@ window.SLACK_DATA = {
             "biz": "2793101652",
             "who": "최민석",
             "cat": "as"
+          },
+          {
+            "hm": "23:00",
+            "min": 23,
+            "store": "다락 혼술바",
+            "biz": "5451403074",
+            "who": "최민석",
+            "cat": "onboarding"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-14 23:15",
+    "at": "2026-08-14 23:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
