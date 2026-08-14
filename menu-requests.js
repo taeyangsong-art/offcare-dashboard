@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 653,
- "updatedAt": "2026-08-14 14:00",
+ "version": 654,
+ "updatedAt": "2026-08-14 14:14",
  "days": 30,
  "items": [
   {
@@ -29067,101 +29067,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784097023221439"
-  },
-  {
-   "ts": "1784092110.965029",
-   "date": "2026-07-15",
-   "time": "14:08",
-   "store": "요거트가족",
-   "biz": "1891602210",
-   "pos": "퍼스트포스",
-   "content": "메뉴 수정 요청드립니다.\n• 카테고리 [아이스크림 컵/ 음료] 항목에 있는 상품 모두 삭제 요청주셨습니다. \n• 추가로 [요거트아이스크림] 카테고리에 있는 우베라떼 삭제 요청드립니다. :woman-bowing::skin-tone-2:",
-   "special": "",
-   "drive": [],
-   "files": 1,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BHG9KL41X",
-     "from": "원글",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "아이스크림컵/음료",
-       "name": "수박주스",
-       "price": 5500
-      },
-      {
-       "category": "아이스크림컵/음료",
-       "name": "우베 말차 라떼[Event 할인]",
-       "price": 5500
-      },
-      {
-       "category": "아이스크림컵/음료",
-       "name": "말차 라떼[Event 할인]",
-       "price": 5500
-      },
-      {
-       "category": "아이스크림컵/음료",
-       "name": "우베 라떼[EVENT 할인]",
-       "price": 4500
-      },
-      {
-       "category": "아이스크림컵/음료",
-       "name": "두바이 초코쉘 컵",
-       "price": 5500
-      },
-      {
-       "category": "아이스크림컵/음료",
-       "name": "아이스크림컵",
-       "price": 2500
-      },
-      {
-       "category": "아이스크림컵/음료",
-       "name": "초코쉘 컵",
-       "price": 3500
-      },
-      {
-       "category": "아이스크림컵/음료",
-       "name": "두바이 아사이 컵",
-       "price": 5500
-      },
-      {
-       "category": "아이스크림컵/음료",
-       "name": "아사이 컵",
-       "price": 3500
-      },
-      {
-       "category": "아이스크림컵/음료",
-       "name": "아메리카노",
-       "price": 3000
-      },
-      {
-       "category": "아이스크림컵/음료",
-       "name": "연유라떼",
-       "price": 4500
-      },
-      {
-       "category": "아이스크림컵/음료",
-       "name": "카페라떼",
-       "price": 4000
-      }
-     ]
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "헉 제가 잘못 전달해드렸네요 죄송합니다..  :개굴-죄송:",
-    "제송함다 ..!",
-    ":ㅠㅠㅠㅠ: 너무 죄송해요",
-    "선배님 감사합니다 . :woman-bowing::skin-tone-2: :곽철이-충성:"
-   ],
-   "rc": 24,
-   "lr": "1784107956.525969",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784092110965029"
   }
  ],
  "ocr": {
