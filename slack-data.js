@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3617,
+  "version": 3618,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -109035,7 +109035,7 @@ window.SLACK_DATA = {
     "2026-08-14": {
       "counts": {
         "as": {
-          "최민석": 15,
+          "최민석": 16,
           "서상원": 21,
           "배선유": 28,
           "김동욱": 19,
@@ -109075,6 +109075,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "22:29",
+          "store": "본투비클래식 반석점",
+          "biz": "2793101652",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "프론트 2대 사용 중, 외부 행사용으로 각각 휴대폰/태블릿 세팅 필요한 상황으로 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "12070055 tid 생성 후 온보딩 완료"
+        },
         {
           "time": "22:00",
           "store": "일행떡볶이&amp;닭강정(쌍문점)",
@@ -111390,11 +111401,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 171,
+        "online": 172,
         "offline": 38,
         "unknown": 0
       },
-      "updatedAt": "22:29",
+      "updatedAt": "22:40",
       "voc": {
         "responses": 20,
         "install": {
@@ -111915,15 +111926,11 @@ window.SLACK_DATA = {
       },
       "1786692108.822169": {
         "post": "1786692108.822169",
-        "lastSeen": 1786714232.805
+        "lastSeen": 1786715133.315
       },
       "1786703962.693599": {
         "post": "1786703962.693599",
-        "lastSeen": 1786714232.805
-      },
-      "1786714164.443339": {
-        "post": "1786714164.443339",
-        "lastSeen": 1786714232.805
+        "lastSeen": 1786715133.315
       }
     },
     "days": {
@@ -135509,8 +135516,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-14": {
-        "cnt": 102,
-        "sumMin": 1591.8370003859202,
+        "cnt": 103,
+        "sumMin": 1600.4806113998095,
         "over": 8,
         "items": [
           {
@@ -136328,13 +136335,21 @@ window.SLACK_DATA = {
             "biz": "5773800589",
             "who": "최민석",
             "cat": "as"
+          },
+          {
+            "hm": "22:29",
+            "min": 8.6,
+            "store": "본투비클래식 반석점",
+            "biz": "2793101652",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-14 22:30",
+    "at": "2026-08-14 22:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
