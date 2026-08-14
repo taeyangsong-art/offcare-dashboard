@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3582,
+  "version": 3583,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -109034,19 +109034,8 @@ window.SLACK_DATA = {
     },
     "2026-08-14": {
       "counts": {
-        "as": {
-          "서상원": 12,
-          "배선유": 16,
-          "심성현": 22,
-          "최민석": 2,
-          "고경림": 12,
-          "김동욱": 15,
-          "김기범": 2,
-          "김규빈": 5,
-          "송태양": 6
-        },
         "onboarding": {
-          "최민석": 1,
+          "최민석": 3,
           "서상원": 3,
           "배선유": 3,
           "김동욱": 3,
@@ -109055,6 +109044,17 @@ window.SLACK_DATA = {
           "심성현": 1,
           "송태양": 1
         },
+        "as": {
+          "심성현": 23,
+          "배선유": 17,
+          "서상원": 12,
+          "고경림": 13,
+          "최민석": 1,
+          "김동욱": 15,
+          "김기범": 2,
+          "김규빈": 5,
+          "송태양": 6
+        },
         "extern": {
           "서상원": 5
         },
@@ -109062,7 +109062,7 @@ window.SLACK_DATA = {
           "김동욱": 3
         },
         "menu": {
-          "배선유": 3,
+          "배선유": 5,
           "김동욱": 1,
           "김규빈": 7,
           "서상원": 1
@@ -109086,6 +109086,50 @@ window.SLACK_DATA = {
       ],
       "done": [
         {
+          "time": "15:30",
+          "store": "위럽위드",
+          "biz": "5352502415",
+          "cat": "onboarding",
+          "emp": "최민석",
+          "req": "프린터기 온보딩 요청 드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "15:26",
+          "store": "로열부부태권도 앤 스포츠 아카데미",
+          "biz": "3749302347",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포프(데스크탑) 사용 매장으로, 온보딩 도움 요청주시어 확인 부탁드리겠습니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "토스 포스 설치 중 토스 포스 설치 중"
+        },
+        {
+          "time": "15:24",
+          "store": "쏘주 맥쭈",
+          "biz": "1921702310",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "오케이포스 영수증, 메뉴 추가 요청",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
+        },
+        {
+          "time": "15:17",
+          "store": "시드 에스테틱",
+          "biz": "6631602722",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "토스포스(노트북)-프론트-유프로 이용하려 하셨으나 유프대신 캣단말기로 변경 원하셔서 유프 연결 해제하고 캣단말기로 연결 필요하여 안내 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
           "time": "15:15",
           "store": "사월일일(April 1)",
           "biz": "1870603553",
@@ -109106,6 +109150,28 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "22시 예약"
+        },
+        {
+          "time": "15:09",
+          "store": "대포항 뼈마루 감자탕",
+          "biz": "5312602308",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "메뉴 등록 요청 드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! /"
+        },
+        {
+          "time": "15:07",
+          "store": "클레_마티스",
+          "biz": "4589602059",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "포프(아이패드) 온보딩 도움 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트 연결끊긴후 재연결 안됨증상 로그아웃 후 재연결 정상 작동 확인했습니다 ."
         },
         {
           "time": "15:05",
@@ -109133,12 +109199,12 @@ window.SLACK_DATA = {
           "time": "15:00",
           "store": "레드펭귄진주미술학원",
           "biz": "7699300737",
-          "cat": "as",
+          "cat": "onboarding",
           "emp": "최민석",
           "req": "핸드폰 + 프론트 + 프린터 (온보딩)",
           "hw": "",
           "intake": "online",
-          "note": "1차 부재"
+          "note": "1차 부재 / 포프유프 온보딩 완료"
         },
         {
           "time": "15:00",
@@ -110571,29 +110637,30 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 115,
+        "online": 121,
         "offline": 20,
         "unknown": 0
       },
-      "updatedAt": "15:30",
+      "updatedAt": "15:42",
       "voc": {
-        "responses": 7,
+        "responses": 10,
         "install": {
           "count": 3,
           "low": 0
         },
         "nps": {
-          "count": 7,
-          "low": 1
+          "count": 10,
+          "low": 2
         },
         "high": {
           "install": 2,
-          "nps": 3
+          "nps": 4
         },
         "npsDist": {
-          "5": 1,
+          "5": 2,
           "8": 3,
-          "10": 3
+          "9": 1,
+          "10": 4
         },
         "installDist": {
           "4": 1,
@@ -110604,20 +110671,32 @@ window.SLACK_DATA = {
           "서비스[학원]": 2
         },
         "byTenure": {
-          "구매설치": {
-            "total": 3,
+          "1개월": {
+            "total": 2,
+            "low": 1
+          },
+          "12개월": {
+            "total": 1,
             "low": 0
           },
           "3개월": {
+            "total": 4,
+            "low": 1
+          },
+          "구매설치": {
             "total": 3,
             "low": 0
-          },
-          "1개월": {
-            "total": 1,
-            "low": 1
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 1,
+            "low": 0
+          },
+          "KPN": {
+            "total": 3,
+            "low": 1
+          },
           "KOCES": {
             "total": 3,
             "low": 0
@@ -110633,16 +110712,34 @@ window.SLACK_DATA = {
           "SECTA9": {
             "total": 1,
             "low": 0
-          },
-          "KPN": {
-            "total": 1,
-            "low": 0
           }
         },
         "reasonCounts": {
-          "사용중 오류가 자주 발생함": 1
+          "사용중 오류가 자주 발생함": 2
         },
         "alerts": [
+          {
+            "time": "15:34",
+            "store": "유난희예쁘다",
+            "storeId": "454753",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "고객정보 전화번호수정 안됨",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "12:36",
             "store": "플라도르(Fladore)",
@@ -110718,9 +110815,9 @@ window.SLACK_DATA = {
         ]
       },
       "ob": {
-        "count": 21,
+        "count": 23,
         "byEmp": {
-          "김규빈": 21
+          "김규빈": 23
         },
         "items": [
           {
@@ -110738,6 +110835,22 @@ window.SLACK_DATA = {
             "recvDate": "2026-08-14",
             "planDate": "",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785214700170489"
+          },
+          {
+            "key": "2026년 8월 14일 오후 1:22:03|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785559942286919#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-14",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785559942286919"
+          },
+          {
+            "key": "2026년 8월 14일 오후 1:20:36|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784525645892669#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-14",
+            "planDate": "2026-08-20",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784525645892669"
           },
           {
             "key": "2026년 8월 14일 오후 1:20:11|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785999852712759#1",
@@ -110915,19 +111028,11 @@ window.SLACK_DATA = {
       },
       "1786686300.289099": {
         "post": "1786686300.289099",
-        "lastSeen": 1786689030.823
+        "lastSeen": 1786689780.747
       },
-      "1786689016.634069": {
-        "post": "1786689016.634069",
-        "lastSeen": 1786689030.823
-      },
-      "1786689000.445519": {
-        "post": "1786689000.445519",
-        "lastSeen": 1786689030.823
-      },
-      "1786688688.565349": {
-        "post": "1786688688.565349",
-        "lastSeen": 1786689030.823
+      "1786689722.622529": {
+        "post": "1786689722.622529",
+        "lastSeen": 1786689780.747
       }
     },
     "days": {
@@ -134513,8 +134618,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-14": {
-        "cnt": 73,
-        "sumMin": 999.5516513705254,
+        "cnt": 75,
+        "sumMin": 1012.7931582331659,
         "over": 1,
         "items": [
           {
@@ -135100,26 +135205,42 @@ window.SLACK_DATA = {
             "biz": "7699300737",
             "who": "최민석",
             "cat": "as"
+          },
+          {
+            "hm": "15:30",
+            "min": 6.5,
+            "store": "위럽위드",
+            "biz": "5352502415",
+            "who": "최민석",
+            "cat": "onboarding"
+          },
+          {
+            "hm": "15:30",
+            "min": 6.8,
+            "store": "온당 Korean Tofu Culture",
+            "biz": "7028802325",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-14 15:30",
+    "at": "2026-08-14 15:43",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3543,
-    "named": 244,
+    "named": 246,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 244,
+    "done": 246,
     "byStatus": {
-      "일정등록완료": 148,
-      "1차부재": 55,
+      "일정등록완료": 149,
+      "1차부재": 56,
       "점주직접접수": 23,
       "설치불가": 6,
       "(빈칸)": 2,
