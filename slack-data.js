@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3556,
+  "version": 3557,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -105421,7 +105421,7 @@ window.SLACK_DATA = {
             "handler": "김규빈",
             "status": "일정등록완료",
             "recvDate": "2026-08-12",
-            "planDate": "2026-08-19",
+            "planDate": "2026-08-14",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784598593488119"
           },
           {
@@ -109034,8 +109034,11 @@ window.SLACK_DATA = {
     },
     "2026-08-14": {
       "counts": {
+        "extern": {
+          "서상원": 1
+        },
         "as": {
-          "서상원": 2,
+          "서상원": 3,
           "고경림": 1,
           "김동욱": 1
         },
@@ -109046,6 +109049,29 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:49",
+          "store": "아이하다",
+          "biz": "2303001738",
+          "cat": "extern",
+          "emp": "서상원",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "09:46",
+          "store": "만수옥",
+          "biz": "6972102035",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "포스기 오류 / 도움 부탁드립니다!",
+          "hw": "",
+          "urgent": true,
+          "intake": "online",
+          "note": "페이지를 찾을 수 없음 / 껏켰 동일 / 토스포스오류 재설치"
+        },
         {
           "time": "09:38",
           "store": "모델헤어",
@@ -109125,11 +109151,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 6,
+        "online": 8,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:39",
+      "updatedAt": "10:00",
       "voc": {
         "responses": 1,
         "install": {
@@ -109195,11 +109221,35 @@ window.SLACK_DATA = {
       },
       "1786667965.099869": {
         "post": "1786667965.099869",
-        "lastSeen": 1786668328.534
+        "lastSeen": 1786669233.523
       },
       "1786667934.221979": {
         "post": "1786667934.221979",
-        "lastSeen": 1786668328.534
+        "lastSeen": 1786669233.523
+      },
+      "1786669210.371599": {
+        "post": "1786669210.371599",
+        "lastSeen": 1786669233.523
+      },
+      "1786669208.943119": {
+        "post": "1786669208.943119",
+        "lastSeen": 1786669233.523
+      },
+      "1786669206.179549": {
+        "post": "1786669206.179549",
+        "lastSeen": 1786669233.523
+      },
+      "1786669204.851439": {
+        "post": "1786669204.851439",
+        "lastSeen": 1786669233.523
+      },
+      "1786668987.454939": {
+        "post": "1786668987.454939",
+        "lastSeen": 1786669233.523
+      },
+      "1786668628.750879": {
+        "post": "1786668628.750879",
+        "lastSeen": 1786669233.523
       }
     },
     "days": {
@@ -132787,7 +132837,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-14 09:45",
+    "at": "2026-08-14 10:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
