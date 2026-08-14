@@ -3,10 +3,390 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 642,
- "updatedAt": "2026-08-14 09:45",
+ "version": 643,
+ "updatedAt": "2026-08-14 10:46",
  "days": 30,
  "items": [
+  {
+   "ts": "1786671854.560119",
+   "date": "2026-08-14",
+   "time": "10:44",
+   "store": "더채움 스킨앤바디",
+   "biz": "2971802887",
+   "pos": "토스포스",
+   "content": "추가",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1LMBk6gANredZyAGwusr9b32ZerB_G8wu/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1LMBk6gANredZyAGwusr9b32ZerB_G8wu",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "FACE 관리",
+       "name": "트러블 베이직 60분 1회",
+       "price": 60000
+      },
+      {
+       "category": "FACE 관리",
+       "name": "트러블 베이직 60분 10회",
+       "price": 500000
+      },
+      {
+       "category": "FACE 관리",
+       "name": "꿀광 테라피 60분 1회",
+       "price": 70000
+      },
+      {
+       "category": "FACE 관리",
+       "name": "꿀광 테라피 60분 10회",
+       "price": 500000
+      },
+      {
+       "category": "FACE 관리",
+       "name": "아쿠아필 트러블 프리미엄 70분 1회",
+       "price": 80000
+      },
+      {
+       "category": "FACE 관리",
+       "name": "아쿠아필 트러블 프리미엄 70분 10회",
+       "price": 700000
+      },
+      {
+       "category": "FACE 관리",
+       "name": "업모드 리프팅 관리 70분 1회",
+       "price": 80000
+      },
+      {
+       "category": "FACE 관리",
+       "name": "업모드 리프팅 관리 70분 10회",
+       "price": 700000
+      },
+      {
+       "category": "FACE 관리",
+       "name": "특수 수기관리 70분 1회",
+       "price": 90000
+      },
+      {
+       "category": "FACE 관리",
+       "name": "특수 수기관리 70분 10회",
+       "price": 800000
+      },
+      {
+       "category": "FACE 관리",
+       "name": "골드 리프팅 관리 80분 1회",
+       "price": 120000
+      },
+      {
+       "category": "FACE 관리",
+       "name": "골드 리프팅 관리 80분 10회",
+       "price": 1000000
+      },
+      {
+       "category": "FACE 관리 추가 옵션",
+       "name": "아쿠아 / 물방울 / 하이푸 추가",
+       "price": 40000
+      },
+      {
+       "category": "BODY 관리",
+       "name": "상체 70분 1회",
+       "price": 100000
+      },
+      {
+       "category": "BODY 관리",
+       "name": "상체 70분 10회",
+       "price": 900000
+      },
+      {
+       "category": "BODY 관리",
+       "name": "하체 60분 1회",
+       "price": 90000
+      },
+      {
+       "category": "BODY 관리",
+       "name": "하체 60분 10회",
+       "price": 800000
+      },
+      {
+       "category": "BODY 관리",
+       "name": "등 60분 1회",
+       "price": 80000
+      },
+      {
+       "category": "BODY 관리",
+       "name": "등 60분 10회",
+       "price": 700000
+      },
+      {
+       "category": "BODY 관리",
+       "name": "복부 50분 1회",
+       "price": 60000
+      },
+      {
+       "category": "BODY 관리",
+       "name": "복부 50분 10회",
+       "price": 500000
+      },
+      {
+       "category": "BODY 관리 추가 옵션",
+       "name": "바디 기계 추가 (현금가)",
+       "price": 30000
+      },
+      {
+       "category": "BODY 관리 추가 옵션",
+       "name": "팔 관리 추가 (현금가)",
+       "price": 20000
+      },
+      {
+       "category": "더채움 SPECIAL",
+       "name": "전신 + 페이스 관리 90분 1회",
+       "price": 150000
+      },
+      {
+       "category": "더채움 SPECIAL",
+       "name": "전신 + 페이스 관리 90분 10회",
+       "price": 1200000
+      },
+      {
+       "category": "더채움 SPECIAL",
+       "name": "전신 슬리밍 120분 1회",
+       "price": 200000
+      },
+      {
+       "category": "더채움 SPECIAL",
+       "name": "전신 슬리밍 120분 10회",
+       "price": 1500000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786671857.478079",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786671854560119"
+  },
+  {
+   "ts": "1786671788.650149",
+   "date": "2026-08-14",
+   "time": "10:43",
+   "store": "더채움 스킨앤바디",
+   "biz": "2971802887",
+   "pos": "토스포스",
+   "content": "추가메뉴",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/13mPc8sFSbADlWAUKITMf6yOn8gD2LWVf/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1Tw4t9PCXI9J749_8n0268IiQZJfl4fi8/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1Wd6p8GFM4q0Zu0ymtUQSECascmYoXK7K/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "13mPc8sFSbADlWAUKITMf6yOn8gD2LWVf",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "전신 + 페이스 관리",
+       "name": "전신 + 페이스 관리 1회",
+       "price": 150000
+      },
+      {
+       "category": "전신 + 페이스 관리",
+       "name": "전신 + 페이스 관리 10회",
+       "price": 1200000
+      },
+      {
+       "category": "전신 + 페이스 관리",
+       "name": "전신 + 페이스 관리 20회",
+       "price": 2000000
+      },
+      {
+       "category": "전신 슬리밍",
+       "name": "전신 슬리밍 1회",
+       "price": 200000
+      },
+      {
+       "category": "전신 슬리밍",
+       "name": "전신 슬리밍 10회",
+       "price": 1500000
+      },
+      {
+       "category": "전신 슬리밍",
+       "name": "전신 슬리밍 20회",
+       "price": 2400000
+      }
+     ]
+    },
+    {
+     "id": "1Tw4t9PCXI9J749_8n0268IiQZJfl4fi8",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "1회",
+       "name": "상체 70분",
+       "price": 100000
+      },
+      {
+       "category": "1회",
+       "name": "하체 60분",
+       "price": 90000
+      },
+      {
+       "category": "1회",
+       "name": "등 60분",
+       "price": 80000
+      },
+      {
+       "category": "1회",
+       "name": "복부 50분",
+       "price": 60000
+      },
+      {
+       "category": "10회",
+       "name": "상체 70분",
+       "price": 900000
+      },
+      {
+       "category": "10회",
+       "name": "하체 60분",
+       "price": 800000
+      },
+      {
+       "category": "10회",
+       "name": "등 60분",
+       "price": 700000
+      },
+      {
+       "category": "10회",
+       "name": "복부 50분",
+       "price": 500000
+      },
+      {
+       "category": "",
+       "name": "바디 기계 관리 추가 (15분)",
+       "price": 30000
+      },
+      {
+       "category": "",
+       "name": "팔 관리 추가 (10분)",
+       "price": 20000
+      }
+     ]
+    },
+    {
+     "id": "1Wd6p8GFM4q0Zu0ymtUQSECascmYoXK7K",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "스킨 & 바디 관리",
+       "name": "트러블 베이직 (1회)",
+       "price": 60000
+      },
+      {
+       "category": "스킨 & 바디 관리",
+       "name": "트러블 베이직 (10회)",
+       "price": 500000
+      },
+      {
+       "category": "스킨 & 바디 관리",
+       "name": "꿀광 테라피 (1회)",
+       "price": 70000
+      },
+      {
+       "category": "스킨 & 바디 관리",
+       "name": "꿀광 테라피 (10회)",
+       "price": 500000
+      },
+      {
+       "category": "스킨 & 바디 관리",
+       "name": "아쿠아필 트러블 프리미엄 (1회)",
+       "price": 80000
+      },
+      {
+       "category": "스킨 & 바디 관리",
+       "name": "아쿠아필 트러블 프리미엄 (10회)",
+       "price": 700000
+      },
+      {
+       "category": "스킨 & 바디 관리",
+       "name": "업모드 리프팅 관리 (1회)",
+       "price": 80000
+      },
+      {
+       "category": "스킨 & 바디 관리",
+       "name": "업모드 리프팅 관리 (10회)",
+       "price": 700000
+      },
+      {
+       "category": "스킨 & 바디 관리",
+       "name": "특수 수기관리 (1회)",
+       "price": 90000
+      },
+      {
+       "category": "스킨 & 바디 관리",
+       "name": "특수 수기관리 (10회)",
+       "price": 800000
+      },
+      {
+       "category": "스킨 & 바디 관리",
+       "name": "골드 리프팅 관리 (물방울 + 하이푸) (1회)",
+       "price": 120000
+      },
+      {
+       "category": "스킨 & 바디 관리",
+       "name": "골드 리프팅 관리 (물방울 + 하이푸) (10회)",
+       "price": 1000000
+      },
+      {
+       "category": "추가 옵션",
+       "name": "아쿠아필 / 물방울 / 하이푸 추가 시",
+       "price": 40000
+      },
+      {
+       "category": "추가 옵션",
+       "name": "앰플 추가 시",
+       "price": 10000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786671791.455979",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786671788650149"
+  },
+  {
+   "ts": "1786671739.351299",
+   "date": "2026-08-14",
+   "time": "10:42",
+   "store": "유가네",
+   "biz": "4693200312",
+   "pos": "퍼스트포스",
+   "content": "FD-140 오더포스 / 메뉴 금액 추가 요청 드립니다.\n\n• 자연산 멍게 25,000원 (해산물 멍게 20,000원 메뉴 옆에 놓아주세요)",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786671743.161919",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786671739351299"
+  },
   {
    "ts": "1786667440.450549",
    "date": "2026-08-14",
