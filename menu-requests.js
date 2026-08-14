@@ -3,10 +3,115 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 649,
- "updatedAt": "2026-08-14 12:15",
+ "version": 650,
+ "updatedAt": "2026-08-14 13:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1786680555.807739",
+   "date": "2026-08-14",
+   "time": "13:09",
+   "store": "장독식당",
+   "biz": "7080503576",
+   "pos": "토스포스",
+   "content": "신규등록",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1tu5Pq4dTPbnCR_G9ALDcbLMCd6iQi9BS/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1tu5Pq4dTPbnCR_G9ALDcbLMCd6iQi9BS",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "식사류",
+       "name": "동태탕",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "섞어탕(고니,알)",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "김치찌개",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "애호박찌개",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "얼큰청국장",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "감자수제비 만두국",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "새우볶음밥(어린이메뉴)",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "모듬찐만두",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "안주류",
+       "name": "돼지주물럭",
+       "price": 40000
+      },
+      {
+       "category": "안주류",
+       "name": "닭볶음탕",
+       "price": 40000
+      },
+      {
+       "category": "안주류",
+       "name": "오리훈제 야채볶음",
+       "price": 40000
+      },
+      {
+       "category": "주류",
+       "name": "소주",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "맥주",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "음료수",
+       "price": 2000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786680561.927899",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786680555807739"
+  },
   {
    "ts": "1786675921.907789",
    "date": "2026-08-14",
