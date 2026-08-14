@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 644,
- "updatedAt": "2026-08-14 11:00",
+ "version": 645,
+ "updatedAt": "2026-08-14 11:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1786673241.374369",
+   "date": "2026-08-14",
+   "time": "11:07",
+   "store": "요리비아구찜",
+   "biz": "4020339245",
+   "pos": "",
+   "content": "기존 추가된 메뉴 주방에서 출력 설정 요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786327946209649\n포장메뉴 카테고리에\n\n곤이써비스\n콩나물써비스\n\n위 두가지 항목이 주방에서 출력 안된다고 하시어 확인 부탁 드립니다. :꾸벅:"
+   ],
+   "rc": 3,
+   "lr": "1786673703.824479",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786673241374369"
+  },
   {
    "ts": "1786671854.560119",
    "date": "2026-08-14",
@@ -170,8 +193,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1786672252.665049",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786671854560119"
   },
   {
@@ -371,8 +394,8 @@ window.MENU_REQUESTS = {
    "rc": 7,
    "lr": "1786672829.406859",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786671788650149"
   },
   {
@@ -29198,73 +29221,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784082177899369"
-  },
-  {
-   "ts": "1784081648.272859",
-   "date": "2026-07-15",
-   "time": "11:14",
-   "store": "위너스식당",
-   "biz": "1233090990",
-   "pos": "토스포스",
-   "content": "삼계탕 16000 으로 수정",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "나이스okpos"
-   ],
-   "rc": 2,
-   "lr": "1784081759.044189",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784081648272859"
-  },
-  {
-   "ts": "1784081334.088599",
-   "date": "2026-07-15",
-   "time": "11:08",
-   "store": "쉬게",
-   "biz": "1142129859",
-   "pos": "토스포스",
-   "content": "이미지도 같이 넣어주세요\n내일오픈인데",
-   "special": "메일확인부탁드려요",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "불가, 개별 이미지 필요 / 문자발송"
-   ],
-   "rc": 2,
-   "lr": "1784081399.223389",
-   "rfx": 3,
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784081334088599"
-  },
-  {
-   "ts": "1784081051.426229",
-   "date": "2026-07-15",
-   "time": "11:04",
-   "store": "와인에비뉴(WINE AVENUE) 성신여대점",
-   "biz": "4380603747",
-   "pos": "",
-   "content": "와인마켓(<tel:···|···>)의 메뉴 전부를(100개가 넘는다 하셨습니다..!) 와인에비뉴(<tel:···|···>)로 그대로 복사 부탁드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1784081276.006699",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784081051426229"
   }
  ],
  "ocr": {
