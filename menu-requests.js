@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 651,
- "updatedAt": "2026-08-14 13:31",
+ "version": 652,
+ "updatedAt": "2026-08-14 13:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1786682388.985699",
+   "date": "2026-08-14",
+   "time": "13:39",
+   "store": "김마리 야탑점",
+   "biz": "4155900952",
+   "pos": "퍼스트포스",
+   "content": "김마리 야탑점, 태전점, 서현점 키오스크 메뉴등록 확인했는데 바질크림우동, 크림떡볶이가 누락되었다고 문의주셔서 추가부탁드립니다!\n\n<https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786523837015949|https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786523837015949>",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786682392.785049",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786682388985699"
+  },
   {
    "ts": "1786681097.246779",
    "date": "2026-08-14",
