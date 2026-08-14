@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 661,
- "updatedAt": "2026-08-14 18:15",
+ "version": 662,
+ "updatedAt": "2026-08-14 18:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1786699559.812189",
+   "date": "2026-08-14",
+   "time": "18:25",
+   "store": "토이즈나(TOISNA)",
+   "biz": "2641902297",
+   "pos": "기타",
+   "content": "와이파이 카테고리 생성 후 와이파이 메뉴 만들어주세요",
+   "special": "금액은 0원입니다",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786699563.358939",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786699559812189"
+  },
   {
    "ts": "1786698827.005639",
    "date": "2026-08-14",
@@ -26,8 +47,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1786698832.135229",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786698827005639"
   },
   {
@@ -98,7 +119,7 @@ window.MENU_REQUESTS = {
    "rc": 3,
    "lr": "1786697245.152529",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786690128144769"
   },
