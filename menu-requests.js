@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 662,
- "updatedAt": "2026-08-14 18:30",
+ "version": 663,
+ "updatedAt": "2026-08-14 18:45",
  "days": 30,
  "items": [
   {
@@ -20,12 +20,14 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1786699563.358939",
+   "replies": [
+    "메뉴등록 완료 및 솔라피발송완료\n키오스크 전시관리 완료"
+   ],
+   "rc": 2,
+   "lr": "1786699900.688699",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786699559812189"
   },
   {
@@ -29309,32 +29311,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784112193152579"
-  },
-  {
-   "ts": "1784108005.963719",
-   "date": "2026-07-15",
-   "time": "18:33",
-   "store": "요거트가족",
-   "biz": "1891602210",
-   "pos": "퍼스트포스",
-   "content": "메뉴 수정건 옵션 수정 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784103880450239?thread_ts=···.965029&cid=C08740SFT1S",
-    "• 샤인머스캣\n• -\n필수 선택으로 설정되어있는 것\n해제 요청드립니다.",
-    "부탁드려요~~~~~~~",
-    "감사합니다!!!!!!!!"
-   ],
-   "rc": 11,
-   "lr": "1784110835.015019",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김기범",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784108005963719"
   }
  ],
  "ocr": {
