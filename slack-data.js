@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3587,
+  "version": 3588,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -109035,13 +109035,13 @@ window.SLACK_DATA = {
     "2026-08-14": {
       "counts": {
         "as": {
+          "서상원": 16,
+          "최민석": 5,
           "배선유": 20,
           "김동욱": 18,
-          "서상원": 15,
-          "최민석": 4,
           "김기범": 3,
-          "고경림": 15,
-          "심성현": 22,
+          "고경림": 16,
+          "심성현": 23,
           "김규빈": 5,
           "송태양": 6
         },
@@ -109059,7 +109059,7 @@ window.SLACK_DATA = {
           "송태양": 1
         },
         "transfer": {
-          "김동욱": 3
+          "김동욱": 4
         },
         "menu": {
           "배선유": 5,
@@ -109071,31 +109071,30 @@ window.SLACK_DATA = {
           "김동욱": 3
         }
       },
-      "pending": [
+      "pending": [],
+      "done": [
         {
-          "time": "15:30",
-          "store": "온당 Korean Tofu Culture",
-          "biz": "7028802325",
-          "handler": "심성현",
+          "time": "16:35",
+          "store": "김가네 삼겹살",
+          "biz": "5765500899",
           "cat": "as",
+          "emp": "서상원",
+          "req": "재온보딩",
+          "hw": "",
           "intake": "offline",
-          "reasons": [
-            "확인 후 미완료"
-          ]
+          "note": ""
         },
         {
-          "time": "13:00",
-          "store": "엔무드네일(N.MOOD nail)",
-          "biz": "5611502899",
-          "handler": "고경림",
+          "time": "16:34",
+          "store": "에스디에이삼육잉글랩양학영어교습소",
+          "biz": "7829302266",
           "cat": "as",
+          "emp": "최민석",
+          "req": "프린터 온보딩 후 용지 지속 출력되는 문제로 점검 요청드립니다.",
+          "hw": "",
           "intake": "online",
-          "reasons": [
-            "1차 부재"
-          ]
-        }
-      ],
-      "done": [
+          "note": "재온보딩 후 정상출력 완료 및 무음설정 완료"
+        },
         {
           "time": "16:18",
           "store": "금밥집",
@@ -109184,6 +109183,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "5시 재연락 요청"
+        },
+        {
+          "time": "16:00",
+          "store": "토끼전",
+          "biz": "",
+          "cat": "transfer",
+          "emp": "김동욱",
+          "req": "8월 14일 오후 4시 30분 / 메뉴 복사 O / 프론트, 유프",
+          "hw": "",
+          "intake": "online",
+          "note": "포프유프(태블릿) 명의변경 완료"
         },
         {
           "time": "15:56",
@@ -109294,6 +109304,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": ""
+        },
+        {
+          "time": "15:30",
+          "store": "온당 Korean Tofu Culture",
+          "biz": "7028802325",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "전체 적인 매장 세팅 관련 재통화 예정",
+          "hw": "",
+          "intake": "offline",
+          "note": "매장 점검 완료"
         },
         {
           "time": "15:26",
@@ -110002,6 +110023,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "이전 문의 이력 상호: 손맛고을 마두점 / KIS 사업자번호: 4811100957 핸드폰 번호: 01027274545 / 갤 주소: 경기도 고양시 일산동구 중앙로 1182 (마두동) (마두동, 올림칙스포츠센터 801호 1층 인입유형: 오프라인 공급유형: 임대 배달제휴: 자대리점: N 내용: 포스기 화면이 멈춘다하여 점검 요청드립니다. / 메모리설정 페이징 "
+        },
+        {
+          "time": "13:00",
+          "store": "엔무드네일(N.MOOD nail)",
+          "biz": "5611502899",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "아이폰 + 프론트 + 프린터",
+          "hw": "",
+          "intake": "online",
+          "note": "1차부재 / 통화 완료 매장 인터넷 설치완료 직접 온보딩 해보신후 정상연결 안될시 재인입 안내완료"
         },
         {
           "time": "13:00",
@@ -110869,32 +110901,32 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 139,
-        "offline": 23,
+        "online": 141,
+        "offline": 24,
         "unknown": 0
       },
-      "updatedAt": "16:30",
+      "updatedAt": "16:43",
       "voc": {
-        "responses": 15,
+        "responses": 19,
         "install": {
           "count": 4,
           "low": 0
         },
         "nps": {
-          "count": 15,
+          "count": 19,
           "low": 4
         },
         "high": {
           "install": 2,
-          "nps": 5
+          "nps": 8
         },
         "npsDist": {
           "0": 1,
           "5": 3,
           "6": 1,
           "8": 4,
-          "9": 1,
-          "10": 5
+          "9": 2,
+          "10": 8
         },
         "installDist": {
           "3": 1,
@@ -110907,6 +110939,14 @@ window.SLACK_DATA = {
           "서비스[학원]": 2
         },
         "byTenure": {
+          "3개월": {
+            "total": 7,
+            "low": 1
+          },
+          "12개월": {
+            "total": 2,
+            "low": 0
+          },
           "6개월": {
             "total": 2,
             "low": 0
@@ -110918,31 +110958,27 @@ window.SLACK_DATA = {
           "구매설치": {
             "total": 4,
             "low": 0
-          },
-          "12개월": {
-            "total": 1,
-            "low": 0
-          },
-          "3개월": {
-            "total": 4,
-            "low": 1
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 4,
+            "low": 1
+          },
+          "SECTA9": {
+            "total": 5,
+            "low": 0
+          },
+          "KSNET": {
+            "total": 1,
+            "low": 0
+          },
           "KIS": {
             "total": 3,
             "low": 1
           },
           "SMARTRO": {
             "total": 2,
-            "low": 1
-          },
-          "SECTA9": {
-            "total": 3,
-            "low": 0
-          },
-          "KPN": {
-            "total": 3,
             "low": 1
           },
           "KOCES": {
@@ -111388,21 +111424,13 @@ window.SLACK_DATA = {
         "post": "1786605904.194739",
         "lastSeen": 1786637670.867
       },
-      "1786690814.523319": {
-        "post": "1786690814.523319",
-        "lastSeen": 1786692633.222
-      },
       "1786690128.144769": {
         "post": "1786690128.144769",
-        "lastSeen": 1786692633.222
-      },
-      "1786692600.553099": {
-        "post": "1786692600.553099",
-        "lastSeen": 1786692633.222
+        "lastSeen": 1786693527.272
       },
       "1786692108.822169": {
         "post": "1786692108.822169",
-        "lastSeen": 1786692633.222
+        "lastSeen": 1786693527.272
       }
     },
     "days": {
@@ -134988,8 +135016,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-14": {
-        "cnt": 81,
-        "sumMin": 1124.723497839769,
+        "cnt": 82,
+        "sumMin": 1132.7183961908024,
         "over": 2,
         "items": [
           {
@@ -135639,13 +135667,21 @@ window.SLACK_DATA = {
             "biz": "3685801037",
             "who": "최민석",
             "cat": "as"
+          },
+          {
+            "hm": "16:30",
+            "min": 8,
+            "store": "멍 존",
+            "biz": "8170203656",
+            "who": "배선유",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-14 16:30",
+    "at": "2026-08-14 16:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
