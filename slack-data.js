@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3555,
+  "version": 3556,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -109035,16 +109035,39 @@ window.SLACK_DATA = {
     "2026-08-14": {
       "counts": {
         "as": {
-          "서상원": 1,
+          "서상원": 2,
+          "고경림": 1,
           "김동욱": 1
         },
         "menu": {
-          "서상원": 1,
-          "김규빈": 1
+          "김규빈": 2,
+          "서상원": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:38",
+          "store": "모델헤어",
+          "biz": "5110669739",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "프+유프/ 고령/ 선 연결부터 헤매시는 중이라 영상 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "09:30",
+          "store": "강창구 찹쌀진순대 광장점",
+          "biz": "2198509446",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "주류 메뉴 원복",
+          "hw": "",
+          "intake": "offline",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 17일 저녁 9시 30분에 할인된 메뉴로 재 요청해서 예약 메시지 등록"
+        },
         {
           "time": "09:27",
           "store": "(린)RIN Body Studio",
@@ -109054,7 +109077,7 @@ window.SLACK_DATA = {
           "req": "방문설치 받았으나 업그레이드하여 재온보딩(PC) 필요, 원격 요청",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "wotjfcl"
         },
         {
           "time": "09:27",
@@ -109066,6 +109089,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / FD 포스 / 완료"
+        },
+        {
+          "time": "09:13",
+          "store": "로니브",
+          "biz": "2862902020",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "포프(포스기) 사용 매장으로, 앱 실행 시 '이 앱을 실행할 수 없습니다' 라는 문구뜨면서 포스 앱 실행이 되지",
+          "hw": "",
+          "intake": "online",
+          "note": ""
         },
         {
           "time": "09:00",
@@ -109091,11 +109125,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 4,
-        "offline": 0,
+        "online": 6,
+        "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:27",
+      "updatedAt": "09:39",
       "voc": {
         "responses": 1,
         "install": {
@@ -109158,6 +109192,14 @@ window.SLACK_DATA = {
       "1786605904.194739": {
         "post": "1786605904.194739",
         "lastSeen": 1786637670.867
+      },
+      "1786667965.099869": {
+        "post": "1786667965.099869",
+        "lastSeen": 1786668328.534
+      },
+      "1786667934.221979": {
+        "post": "1786667934.221979",
+        "lastSeen": 1786668328.534
       }
     },
     "days": {
@@ -132745,7 +132787,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-14 09:30",
+    "at": "2026-08-14 09:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
