@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3586,
+  "version": 3587,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -109034,19 +109034,19 @@ window.SLACK_DATA = {
     },
     "2026-08-14": {
       "counts": {
-        "extern": {
-          "서상원": 7
-        },
         "as": {
+          "배선유": 20,
+          "김동욱": 18,
           "서상원": 15,
           "최민석": 4,
-          "김동욱": 17,
-          "배선유": 18,
           "김기범": 3,
-          "고경림": 14,
+          "고경림": 15,
           "심성현": 22,
           "김규빈": 5,
           "송태양": 6
+        },
+        "extern": {
+          "서상원": 7
         },
         "onboarding": {
           "배선유": 4,
@@ -109073,6 +109073,17 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "15:30",
+          "store": "온당 Korean Tofu Culture",
+          "biz": "7028802325",
+          "handler": "심성현",
+          "cat": "as",
+          "intake": "offline",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
           "time": "13:00",
           "store": "엔무드네일(N.MOOD nail)",
           "biz": "5611502899",
@@ -109086,6 +109097,17 @@ window.SLACK_DATA = {
       ],
       "done": [
         {
+          "time": "16:18",
+          "store": "금밥집",
+          "biz": "7823201868",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "핸드폰+프론트// 연결 안되는 중으로 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "자체해결"
+        },
+        {
           "time": "16:10",
           "store": "샐리스",
           "biz": "6162796744",
@@ -109097,6 +109119,18 @@ window.SLACK_DATA = {
           "note": ""
         },
         {
+          "time": "16:04",
+          "store": "알터에고(ALTER EGO)",
+          "biz": "1390973686",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "컴퓨터 + 프론트 사용 중 갑자기 프론트 연결 끊김 문구가 지속 노출 되며 재연결 불가하여 확인 요청 드립니다.",
+          "hw": "",
+          "urgent": true,
+          "intake": "offline",
+          "note": "프론트 재온보딩 완료. FD-160 사용 중 포스기 새기기 교체문의로 CX OB 이관"
+        },
+        {
           "time": "16:01",
           "store": "냉삼회관 이천중리점",
           "biz": "2052270438",
@@ -109105,7 +109139,18 @@ window.SLACK_DATA = {
           "req": "포스기 세트 오늘 날짜로 설치 / 요기요 설치 요청 / 프린터 소리 문의로 문자 영상 가이드 안내",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "ygy 설치"
+        },
+        {
+          "time": "16:01",
+          "store": "시드 에스테틱",
+          "biz": "6631602722",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "토스포스(노트북)-프론트-캣 원격 안내 받으셨는데, 영수증에 물음표가 찍히면서 이상하게 출력 된다고 함 + 속도느림 / 확인 부탁 드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "로고 넣으셔서 삭제 안내"
         },
         {
           "time": "16:01",
@@ -109227,6 +109272,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "윈7 연결불가안내 핸드폰에 설치해보고 안되면 법인폰 연락주시기로함"
+        },
+        {
+          "time": "15:31",
+          "store": "(주)반장창고",
+          "biz": "7908100330",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "현재 키오스크가 안된다고 해서 확인부탁드립니다. 토스포스자동으로 켜지고 터치음은 있으나 화면이 안보임",
+          "hw": "",
+          "intake": "online",
+          "note": "키오스크화면 한쪽이 게속터치가 되어있던 증상 키오스크 전원 off 후 잔류전력 제거 - 전원 on 정상작동 확인했습니다 ."
         },
         {
           "time": "15:30",
@@ -110813,24 +110869,24 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 136,
-        "offline": 21,
+        "online": 139,
+        "offline": 23,
         "unknown": 0
       },
-      "updatedAt": "16:10",
+      "updatedAt": "16:30",
       "voc": {
-        "responses": 14,
+        "responses": 15,
         "install": {
           "count": 4,
           "low": 0
         },
         "nps": {
-          "count": 14,
+          "count": 15,
           "low": 4
         },
         "high": {
           "install": 2,
-          "nps": 4
+          "nps": 5
         },
         "npsDist": {
           "0": 1,
@@ -110838,7 +110894,7 @@ window.SLACK_DATA = {
           "6": 1,
           "8": 4,
           "9": 1,
-          "10": 4
+          "10": 5
         },
         "installDist": {
           "3": 1,
@@ -110851,16 +110907,16 @@ window.SLACK_DATA = {
           "서비스[학원]": 2
         },
         "byTenure": {
+          "6개월": {
+            "total": 2,
+            "low": 0
+          },
           "1개월": {
             "total": 4,
             "low": 3
           },
           "구매설치": {
             "total": 4,
-            "low": 0
-          },
-          "6개월": {
-            "total": 1,
             "low": 0
           },
           "12개월": {
@@ -110873,11 +110929,11 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
-          "SMARTRO": {
-            "total": 2,
+          "KIS": {
+            "total": 3,
             "low": 1
           },
-          "KIS": {
+          "SMARTRO": {
             "total": 2,
             "low": 1
           },
@@ -111057,9 +111113,9 @@ window.SLACK_DATA = {
         ]
       },
       "ob": {
-        "count": 30,
+        "count": 31,
         "byEmp": {
-          "김규빈": 30
+          "김규빈": 31
         },
         "items": [
           {
@@ -111077,6 +111133,14 @@ window.SLACK_DATA = {
             "recvDate": "2026-08-14",
             "planDate": "",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785662522312849"
+          },
+          {
+            "key": "2026년 8월 14일 오후 3:07:38|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785824643957139#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-14",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785824643957139"
           },
           {
             "key": "2026년 8월 14일 오후 1:44:02|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786610972737599#1",
@@ -111326,11 +111390,19 @@ window.SLACK_DATA = {
       },
       "1786690814.523319": {
         "post": "1786690814.523319",
-        "lastSeen": 1786691728.341
+        "lastSeen": 1786692633.222
       },
       "1786690128.144769": {
         "post": "1786690128.144769",
-        "lastSeen": 1786691728.341
+        "lastSeen": 1786692633.222
+      },
+      "1786692600.553099": {
+        "post": "1786692600.553099",
+        "lastSeen": 1786692633.222
+      },
+      "1786692108.822169": {
+        "post": "1786692108.822169",
+        "lastSeen": 1786692633.222
       }
     },
     "days": {
@@ -135573,19 +135645,19 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-14 16:15",
+    "at": "2026-08-14 16:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3545,
-    "named": 253,
+    "named": 254,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 253,
+    "done": 254,
     "byStatus": {
-      "일정등록완료": 155,
+      "일정등록완료": 156,
       "1차부재": 57,
       "점주직접접수": 23,
       "설치불가": 6,
