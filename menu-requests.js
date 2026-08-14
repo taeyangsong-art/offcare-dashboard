@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 655,
- "updatedAt": "2026-08-14 15:16",
+ "version": 656,
+ "updatedAt": "2026-08-14 15:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1786688688.565349",
+   "date": "2026-08-14",
+   "time": "15:24",
+   "store": "쏘주 맥쭈",
+   "biz": "1921702310",
+   "pos": "오케이포스",
+   "content": "오케이포스 영수증, 메뉴 추가 요청\n\n프린터 설정 : 디저트 카테고리\n딸기모찌와참치크래커 홀에서만 주문서 출력\n\n메뉴 추가 : 간단안주 카테고리\n갈릭디핑크래미와어니언링 16900원\n주방 홀 출력",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786688691.978959",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786688688565349"
+  },
   {
    "ts": "1786687760.398909",
    "date": "2026-08-14",
@@ -157,8 +178,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1786687823.945239",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786687760398909"
   },
   {
@@ -29198,29 +29219,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김기범",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784108005963719"
-  },
-  {
-   "ts": "1784097023.221439",
-   "date": "2026-07-15",
-   "time": "15:30",
-   "store": "쉬게",
-   "biz": "1142129859",
-   "pos": "",
-   "content": "메뉴 이미지 등록 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "14개 등록 완료"
-   ],
-   "rc": 3,
-   "lr": "1784097886.091769",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784097023221439"
   }
  ],
  "ocr": {
