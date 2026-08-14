@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3553,
+  "version": 3554,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -109033,15 +109033,45 @@ window.SLACK_DATA = {
       }
     },
     "2026-08-14": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "김동욱": 1
+        },
+        "menu": {
+          "김규빈": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:00",
+          "store": "온리원담마컴퍼니",
+          "biz": "2116801268",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "유프 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "매장 가는 중 5분 뒤 통화요청 / 프린터 구매 안하셨다고하심.. 다른곳에서 구매 후 고객센터로 연락주기로 ㅎ사ㅣㅁ"
+        },
+        {
+          "time": "08:59",
+          "store": "샐리스",
+          "biz": "6162796744",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "신규 설치 예정 메뉴 등록",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! /"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 2,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:00",
+      "updatedAt": "09:15",
       "voc": {
         "responses": 1,
         "install": {
@@ -109104,10 +109134,6 @@ window.SLACK_DATA = {
       "1786605904.194739": {
         "post": "1786605904.194739",
         "lastSeen": 1786637670.867
-      },
-      "1786665568.099959": {
-        "post": "1786665568.099959",
-        "lastSeen": 1786665636.553
       }
     },
     "days": {
@@ -132695,13 +132721,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-14 09:00",
+    "at": "2026-08-14 09:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3520,
+    "rows": 3524,
     "named": 223,
     "unknownName": 0,
     "beforeStart": 0,
