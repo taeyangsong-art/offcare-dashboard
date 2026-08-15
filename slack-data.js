@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3729,
+  "version": 3730,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111941,7 +111941,7 @@ window.SLACK_DATA = {
     "2026-08-15": {
       "counts": {
         "as": {
-          "김기범": 14,
+          "김기범": 15,
           "미지정": 9,
           "배선유": 38
         },
@@ -111958,6 +111958,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "20:30",
+          "store": "(주)한길상회 서막 하남미사 본점",
+          "biz": "2208548357",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "결제속도 느림, 포스는 이상없음 프론트 재온보딩 해봐야할듯함",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트 와이파이가 느려서 그랬다고 함"
+        },
         {
           "time": "19:44",
           "store": "요코초 신당본점",
@@ -112755,7 +112766,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 61,
+        "online": 62,
         "offline": 11,
         "unknown": 0
       },
@@ -112946,19 +112957,19 @@ window.SLACK_DATA = {
       },
       "1786784499.340429": {
         "post": "1786784499.340429",
-        "lastSeen": 1786793674.032
+        "lastSeen": 1786794326.33
       },
       "1786786400.024389": {
         "post": "1786786400.024389",
-        "lastSeen": 1786793674.032
+        "lastSeen": 1786794326.33
       },
       "1786788900.584569": {
         "post": "1786788900.584569",
-        "lastSeen": 1786793674.032
+        "lastSeen": 1786794326.33
       },
       "1786791600.693299": {
         "post": "1786791600.693299",
-        "lastSeen": 1786793674.032
+        "lastSeen": 1786794326.33
       }
     },
     "days": {
@@ -137688,7 +137699,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-15 20:34",
+    "at": "2026-08-15 20:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
