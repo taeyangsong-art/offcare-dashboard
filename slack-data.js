@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3669,
+  "version": 3670,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111941,7 +111941,7 @@ window.SLACK_DATA = {
     "2026-08-15": {
       "counts": {
         "as": {
-          "배선유": 7
+          "배선유": 8
         },
         "menu": {
           "배선유": 1
@@ -111949,6 +111949,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:53",
+          "store": "문앤코",
+          "biz": "8641802445",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "프린터기 사용안하시다 오늘 사용, 연동되어있으나 테스트 출력도 안되는 상황으로 도움부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "rh45 케이블 반대로 꽂으셔서 재연결"
+        },
         {
           "time": "10:47",
           "store": "만두이섬 춘천중앙점",
@@ -112039,7 +112050,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 7,
+        "online": 8,
         "offline": 1,
         "unknown": 0
       },
@@ -112150,11 +112161,11 @@ window.SLACK_DATA = {
       },
       "1786758300.863269": {
         "post": "1786758300.863269",
-        "lastSeen": 1786759235.894
+        "lastSeen": 1786759294.002
       },
       "1786759201.971899": {
         "post": "1786759201.971899",
-        "lastSeen": 1786759235.894
+        "lastSeen": 1786759294.002
       }
     },
     "days": {
@@ -136604,7 +136615,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-15 11:00",
+    "at": "2026-08-15 11:01",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
