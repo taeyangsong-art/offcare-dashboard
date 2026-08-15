@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3662,
+  "version": 3663,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111941,11 +111941,22 @@ window.SLACK_DATA = {
     "2026-08-15": {
       "counts": {
         "as": {
-          "배선유": 1
+          "배선유": 2
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:24",
+          "store": "월아칼국수",
+          "biz": "8152901737",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "포스기 교체로 포프 재온보딩 요청 / 프로그램 설치도 원격으로 도움 요청",
+          "hw": "",
+          "intake": "online",
+          "note": "/ 2층에 있던 포스기를 1층으로 가져 내려오신 상황입니다 / 주방 프린터 ts100 / com3,9600 해당 포스 주문건만 출력되도록 설정"
+        },
         {
           "time": "09:10",
           "store": "케렌시아",
@@ -111959,7 +111970,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
+        "online": 2,
         "offline": 0,
         "unknown": 0
       },
@@ -112062,10 +112073,6 @@ window.SLACK_DATA = {
       "1786703962.693599": {
         "post": "1786703962.693599",
         "lastSeen": 1786723859.566
-      },
-      "1786753680.776119": {
-        "post": "1786753680.776119",
-        "lastSeen": 1786753847.397
       }
     },
     "days": {
@@ -136492,7 +136499,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-15 09:30",
+    "at": "2026-08-15 09:36",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
