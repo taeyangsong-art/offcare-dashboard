@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3684,
+  "version": 3685,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111940,14 +111940,14 @@ window.SLACK_DATA = {
     },
     "2026-08-15": {
       "counts": {
+        "as": {
+          "배선유": 24,
+          "미지정": 1,
+          "김기범": 2
+        },
         "onboarding": {
           "미지정": 2,
           "배선유": 1
-        },
-        "as": {
-          "배선유": 23,
-          "미지정": 1,
-          "김기범": 2
         },
         "menu": {
           "배선유": 1
@@ -111967,6 +111967,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "13:42",
+          "store": "떰즈-업",
+          "biz": "7222100895",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "유플러스 포스기 고장으로 휴대폰 임시 설치 가맹점인데, 프린터기 주문서 출력이 안된다고 제보주셨는데 다시 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "13:30",
           "store": "엘뷰티",
@@ -112301,7 +112312,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 26,
+        "online": 27,
         "offline": 5,
         "unknown": 0
       },
@@ -112400,11 +112411,11 @@ window.SLACK_DATA = {
       },
       "1786758300.863269": {
         "post": "1786758300.863269",
-        "lastSeen": 1786769125.54
+        "lastSeen": 1786769274.592
       },
       "1786762774.639819": {
         "post": "1786762774.639819",
-        "lastSeen": 1786769125.54
+        "lastSeen": 1786769274.592
       }
     },
     "days": {
@@ -136966,7 +136977,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-15 13:45",
+    "at": "2026-08-15 13:47",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
