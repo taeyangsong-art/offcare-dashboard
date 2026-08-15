@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3727,
+  "version": 3728,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111941,7 +111941,7 @@ window.SLACK_DATA = {
     "2026-08-15": {
       "counts": {
         "as": {
-          "김기범": 13,
+          "김기범": 14,
           "미지정": 9,
           "배선유": 38
         },
@@ -111958,6 +111958,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "19:44",
+          "store": "요코초 신당본점",
+          "biz": "8813101853",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "유선프린터기 지속적인 붉은빛 점멸 및 비프음 발생으로 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "19:35",
           "store": "브릭스 랩(BRIX LAB)",
@@ -112744,11 +112755,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 60,
+        "online": 61,
         "offline": 11,
         "unknown": 0
       },
-      "updatedAt": "20:00",
+      "updatedAt": "20:30",
       "voc": {
         "responses": 13,
         "install": {
@@ -112935,19 +112946,23 @@ window.SLACK_DATA = {
       },
       "1786784499.340429": {
         "post": "1786784499.340429",
-        "lastSeen": 1786792528.397
+        "lastSeen": 1786793431.048
       },
       "1786786400.024389": {
         "post": "1786786400.024389",
-        "lastSeen": 1786792528.397
+        "lastSeen": 1786793431.048
       },
       "1786788900.584569": {
         "post": "1786788900.584569",
-        "lastSeen": 1786792528.397
+        "lastSeen": 1786793431.048
       },
       "1786791600.693299": {
         "post": "1786791600.693299",
-        "lastSeen": 1786792528.397
+        "lastSeen": 1786793431.048
+      },
+      "1786793401.107379": {
+        "post": "1786793401.107379",
+        "lastSeen": 1786793431.048
       }
     },
     "days": {
@@ -137669,7 +137684,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-15 20:15",
+    "at": "2026-08-15 20:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
