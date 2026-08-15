@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3710,
+  "version": 3711,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111941,9 +111941,9 @@ window.SLACK_DATA = {
     "2026-08-15": {
       "counts": {
         "as": {
+          "미지정": 8,
           "배선유": 38,
-          "김기범": 5,
-          "미지정": 7
+          "김기범": 5
         },
         "onboarding": {
           "미지정": 6,
@@ -111958,6 +111958,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "17:46",
+          "store": "(주)한길상회 서막 하남미사 본점",
+          "biz": "2208548357",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "• 결제 속도가 느리다고 하시어 확인 부탁드립니다. :woman-bowing::skin-tone-2:",
+          "hw": "",
+          "intake": "online",
+          "note": "포스는 이상없음 프론트가 버벅거리는데 지금 바쁜시간이라 프론트 재온보딩 불가 8:30 예약"
+        },
         {
           "time": "17:41",
           "store": "에이치에이에스 스페이스 (HAS Space)",
@@ -112634,11 +112645,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 51,
+        "online": 52,
         "offline": 10,
         "unknown": 0
       },
-      "updatedAt": "17:46",
+      "updatedAt": "17:53",
       "voc": {
         "responses": 12,
         "install": {
@@ -112810,9 +112821,9 @@ window.SLACK_DATA = {
         "post": "1786703962.693599",
         "lastSeen": 1786723859.566
       },
-      "1786783568.993449": {
-        "post": "1786783568.993449",
-        "lastSeen": 1786783627.439
+      "1786784031.177219": {
+        "post": "1786784031.177219",
+        "lastSeen": 1786784434.865
       }
     },
     "days": {
@@ -137237,8 +137248,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-15": {
-        "cnt": 29,
-        "sumMin": 647.6385116537413,
+        "cnt": 30,
+        "sumMin": 655.3411541700364,
         "over": 9,
         "items": [
           {
@@ -137472,13 +137483,21 @@ window.SLACK_DATA = {
             "biz": "3097900432",
             "who": "",
             "cat": "onboarding"
+          },
+          {
+            "hm": "17:46",
+            "min": 7.7,
+            "store": "(주)한길상회 서막 하남미사 본점",
+            "biz": "2208548357",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-15 17:47",
+    "at": "2026-08-15 18:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
