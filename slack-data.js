@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3661,
+  "version": 3662,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111939,15 +111939,102 @@ window.SLACK_DATA = {
       }
     },
     "2026-08-15": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "배선유": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:10",
+          "store": "케렌시아",
+          "biz": "7212401908",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "매출리포트 파일다운시 오류 발생된다하여 점검부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "1차부재"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:10"
+      "updatedAt": "09:28",
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 1,
+          "low": 1
+        },
+        "nps": {
+          "count": 1,
+          "low": 1
+        },
+        "high": {
+          "install": 0,
+          "nps": 0
+        },
+        "npsDist": {
+          "3": 1
+        },
+        "installDist": {
+          "1": 1
+        },
+        "byIndustry": {
+          "서비스[학원]": 1
+        },
+        "byTenure": {
+          "구매설치": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "byVan": {
+          "KPN": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 1,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
+        },
+        "alerts": [
+          {
+            "time": "09:20",
+            "store": "푸른학원",
+            "storeId": "586764",
+            "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
+            "install": 1,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "상담원연결느림 판매자책임감없음",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              },
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "기분상함",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
+        "praises": []
+      }
     }
   },
   "resp": {
@@ -111975,6 +112062,10 @@ window.SLACK_DATA = {
       "1786703962.693599": {
         "post": "1786703962.693599",
         "lastSeen": 1786723859.566
+      },
+      "1786753680.776119": {
+        "post": "1786753680.776119",
+        "lastSeen": 1786753847.397
       }
     },
     "days": {
@@ -136401,7 +136492,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-15 09:15",
+    "at": "2026-08-15 09:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

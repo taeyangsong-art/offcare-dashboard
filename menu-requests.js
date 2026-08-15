@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 668,
- "updatedAt": "2026-08-15 09:15",
+ "version": 669,
+ "updatedAt": "2026-08-15 09:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1786753680.776119",
+   "date": "2026-08-15",
+   "time": "09:28",
+   "store": "뚜레쥬르 킨텍스2전시장",
+   "biz": "1283678896",
+   "pos": "토스포스",
+   "content": "추가\n(매입음료)\n사과쥬스 3000원\n오렌지쥬스 3000원\n(아이스음료)\n우유쉐이크 6500원",
+   "special": "···",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786753684.233519",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786753680776119"
+  },
   {
    "ts": "1786703962.693599",
    "date": "2026-08-14",
