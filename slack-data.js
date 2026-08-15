@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3713,
+  "version": 3714,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111941,7 +111941,7 @@ window.SLACK_DATA = {
     "2026-08-15": {
       "counts": {
         "as": {
-          "김기범": 6,
+          "김기범": 9,
           "미지정": 9,
           "배선유": 38
         },
@@ -111958,6 +111958,39 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "18:20",
+          "store": "부에나",
+          "biz": "8703901688",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "프린터 무음 설정 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "cpp3000 소리설정 완료"
+        },
+        {
+          "time": "18:09",
+          "store": "머뭄",
+          "biz": "3663801260",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "프론트 전원 미작동으로 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "c타입 아답터가 당사 제품이 아닌 다른걸로 하고있어서 찾아보고 연락 주신다고함"
+        },
+        {
+          "time": "18:06",
+          "store": "시드 에스테틱",
+          "biz": "6631602722",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "프론트 전원 미작동으로 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트 멈춘현상 전원 뺏다가 다시 온 정상 완료"
+        },
         {
           "time": "18:03",
           "store": "부에나",
@@ -112667,11 +112700,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 54,
+        "online": 57,
         "offline": 10,
         "unknown": 0
       },
-      "updatedAt": "18:09",
+      "updatedAt": "18:20",
       "voc": {
         "responses": 12,
         "install": {
@@ -112845,11 +112878,7 @@ window.SLACK_DATA = {
       },
       "1786784499.340429": {
         "post": "1786784499.340429",
-        "lastSeen": 1786785321.902
-      },
-      "1786784974.885929": {
-        "post": "1786784974.885929",
-        "lastSeen": 1786785321.902
+        "lastSeen": 1786786227.626
       }
     },
     "days": {
@@ -137274,8 +137303,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-15": {
-        "cnt": 32,
-        "sumMin": 677.2863178650539,
+        "cnt": 33,
+        "sumMin": 690.6176190455756,
         "over": 9,
         "items": [
           {
@@ -137533,13 +137562,21 @@ window.SLACK_DATA = {
             "biz": "2081552353",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "18:09",
+            "min": 13.3,
+            "store": "머뭄",
+            "biz": "3663801260",
+            "who": "김기범",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-15 18:15",
+    "at": "2026-08-15 18:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
