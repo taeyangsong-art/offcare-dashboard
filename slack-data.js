@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3700,
+  "version": 3701,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111940,14 +111940,14 @@ window.SLACK_DATA = {
     },
     "2026-08-15": {
       "counts": {
+        "as": {
+          "미지정": 7,
+          "배선유": 34,
+          "김기범": 4
+        },
         "onboarding": {
           "배선유": 2,
           "미지정": 4
-        },
-        "as": {
-          "미지정": 6,
-          "배선유": 34,
-          "김기범": 4
         },
         "menu": {
           "배선유": 2
@@ -111958,6 +111958,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:22",
+          "store": "안씨네 고깃간",
+          "biz": "4853901234",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "프린터기 개폐가 되지 않는 문제가 있다고 하여 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "전원 껏켯으로 지금은 열리지만 자주 증상이 나타난다고 하심 대체품 발송처리"
+        },
         {
           "time": "16:06",
           "store": "제로썬필름 주식회사",
@@ -112546,19 +112557,19 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 46,
+        "online": 47,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "16:11",
+      "updatedAt": "16:28",
       "voc": {
-        "responses": 8,
+        "responses": 9,
         "install": {
-          "count": 1,
+          "count": 2,
           "low": 1
         },
         "nps": {
-          "count": 8,
+          "count": 9,
           "low": 2
         },
         "high": {
@@ -112570,15 +112581,22 @@ window.SLACK_DATA = {
           "5": 1,
           "7": 1,
           "8": 3,
+          "9": 1,
           "10": 2
         },
         "installDist": {
-          "1": 1
+          "1": 1,
+          "4": 1
         },
         "byIndustry": {
+          "기타": 1,
           "서비스[학원]": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 2,
+            "low": 1
+          },
           "1개월": {
             "total": 4,
             "low": 0
@@ -112590,13 +112608,13 @@ window.SLACK_DATA = {
           "12개월": {
             "total": 2,
             "low": 1
-          },
-          "구매설치": {
-            "total": 1,
-            "low": 1
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 1,
+            "low": 0
+          },
           "SECTA9": {
             "total": 1,
             "low": 0
@@ -112698,10 +112716,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1786605904.194739": {
-        "post": "1786605904.194739",
-        "lastSeen": 1786637670.867
-      },
       "1786692108.822169": {
         "post": "1786692108.822169",
         "lastSeen": 1786723859.566
@@ -137358,7 +137372,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-15 16:15",
+    "at": "2026-08-15 16:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
