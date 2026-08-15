@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3696,
+  "version": 3697,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111941,9 +111941,9 @@ window.SLACK_DATA = {
     "2026-08-15": {
       "counts": {
         "as": {
-          "배선유": 32,
-          "김기범": 3,
-          "미지정": 3
+          "배선유": 33,
+          "미지정": 4,
+          "김기범": 3
         },
         "onboarding": {
           "미지정": 4,
@@ -111958,6 +111958,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:36",
+          "store": "미플",
+          "biz": "6010176218",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "영수증 로고 출력 설정 했으나, 출력이 너무 느린데 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "1020분 시간 양해 / 출력속도 변경"
+        },
+        {
+          "time": "15:35",
+          "store": "주식회사 삼학도수산",
+          "biz": "3018619615",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "연결이 끊어진 후 연동계속안된다하여 도움부탁드립니다. PC+프론트",
+          "hw": "",
+          "intake": "online",
+          "note": "재연결 완료"
+        },
         {
           "time": "15:06",
           "store": "자담치킨 외동입실점",
@@ -112468,29 +112490,31 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 39,
+        "online": 41,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "15:30",
+      "updatedAt": "15:41",
       "voc": {
-        "responses": 4,
+        "responses": 7,
         "install": {
           "count": 1,
           "low": 1
         },
         "nps": {
-          "count": 4,
-          "low": 1
+          "count": 7,
+          "low": 2
         },
         "high": {
           "install": 0,
-          "nps": 0
+          "nps": 2
         },
         "npsDist": {
           "3": 1,
+          "5": 1,
           "7": 1,
-          "8": 2
+          "8": 2,
+          "10": 2
         },
         "installDist": {
           "1": 1
@@ -112500,12 +112524,16 @@ window.SLACK_DATA = {
         },
         "byTenure": {
           "1개월": {
-            "total": 2,
+            "total": 3,
+            "low": 0
+          },
+          "3개월": {
+            "total": 1,
             "low": 0
           },
           "12개월": {
-            "total": 1,
-            "low": 0
+            "total": 2,
+            "low": 1
           },
           "구매설치": {
             "total": 1,
@@ -112514,19 +112542,42 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KIS": {
-            "total": 1,
+            "total": 2,
             "low": 0
           },
           "KPN": {
-            "total": 3,
-            "low": 1
+            "total": 5,
+            "low": 2
           }
         },
         "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1,
           "단말기 설치나 초기 과정이 어려움": 1,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
         },
         "alerts": [
+          {
+            "time": "15:39",
+            "store": "토마루해물칼국수",
+            "storeId": "226754",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "괜찮지만 오류나서 고객센터 전화하면 15분걸리거나 다음에 전화하라하고 끊김 오류나서 1분1초가 급한데 약올림?",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "09:20",
             "store": "푸른학원",
@@ -112557,6 +112608,18 @@ window.SLACK_DATA = {
           }
         ],
         "praises": [
+          {
+            "time": "15:41",
+            "store": "피우",
+            "storeId": "536867",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "짱편하고 짱좋아요",
+            "byReaction": false,
+            "doneDate": ""
+          },
           {
             "time": "15:10",
             "store": "일기장",
@@ -112589,15 +112652,7 @@ window.SLACK_DATA = {
       },
       "1786774764.594819": {
         "post": "1786774764.594819",
-        "lastSeen": 1786775429.373
-      },
-      "1786775401.143379": {
-        "post": "1786775401.143379",
-        "lastSeen": 1786775429.373
-      },
-      "1786775311.332399": {
-        "post": "1786775311.332399",
-        "lastSeen": 1786775429.373
+        "lastSeen": 1786776322.463
       }
     },
     "days": {
@@ -137022,8 +137077,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-15": {
-        "cnt": 23,
-        "sumMin": 532.8409075617791,
+        "cnt": 25,
+        "sumMin": 550.1635779301326,
         "over": 8,
         "items": [
           {
@@ -137209,13 +137264,29 @@ window.SLACK_DATA = {
             "biz": "5111602310",
             "who": "김기범",
             "cat": "as"
+          },
+          {
+            "hm": "15:30",
+            "min": 7.9,
+            "store": "팔레트 젤라또",
+            "biz": "8732302012",
+            "who": "배선유",
+            "cat": "as"
+          },
+          {
+            "hm": "15:28",
+            "min": 9.4,
+            "store": "돈찌본점",
+            "biz": "6660303531",
+            "who": "김기범",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-15 15:30",
+    "at": "2026-08-15 15:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
