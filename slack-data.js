@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3703,
+  "version": 3704,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111940,14 +111940,14 @@ window.SLACK_DATA = {
     },
     "2026-08-15": {
       "counts": {
+        "onboarding": {
+          "미지정": 5,
+          "배선유": 2
+        },
         "as": {
           "배선유": 35,
           "미지정": 7,
           "김기범": 4
-        },
-        "onboarding": {
-          "배선유": 2,
-          "미지정": 4
         },
         "menu": {
           "배선유": 2
@@ -111958,6 +111958,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:41",
+          "store": "호암 태권도&amp;줄넘기 샘머리관",
+          "biz": "8809901791",
+          "cat": "onboarding",
+          "emp": "미지정",
+          "req": "PC + 프론트 +유프 온보딩중, 연결이 끊어졌다고 지속 뜬다하여 도움부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "PC + 프론트 +유프 온보딩 완료"
+        },
         {
           "time": "16:28",
           "store": "굿델리",
@@ -112568,44 +112579,49 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 48,
+        "online": 49,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "16:41",
+      "updatedAt": "16:51",
       "voc": {
-        "responses": 9,
+        "responses": 11,
         "install": {
-          "count": 2,
+          "count": 3,
           "low": 1
         },
         "nps": {
-          "count": 9,
+          "count": 11,
           "low": 2
         },
         "high": {
-          "install": 0,
-          "nps": 2
+          "install": 1,
+          "nps": 3
         },
         "npsDist": {
           "3": 1,
           "5": 1,
-          "7": 1,
+          "7": 2,
           "8": 3,
           "9": 1,
-          "10": 2
+          "10": 3
         },
         "installDist": {
           "1": 1,
-          "4": 1
+          "4": 1,
+          "5": 1
         },
         "byIndustry": {
-          "기타": 1,
-          "서비스[학원]": 1
+          "서비스[학원]": 2,
+          "기타": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 1,
+            "low": 0
+          },
           "구매설치": {
-            "total": 2,
+            "total": 3,
             "low": 1
           },
           "1개월": {
@@ -112622,11 +112638,15 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
-          "KOCES": {
+          "SECTA9": {
+            "total": 2,
+            "low": 0
+          },
+          "NICE": {
             "total": 1,
             "low": 0
           },
-          "SECTA9": {
+          "KOCES": {
             "total": 1,
             "low": 0
           },
@@ -112734,10 +112754,6 @@ window.SLACK_DATA = {
       "1786703962.693599": {
         "post": "1786703962.693599",
         "lastSeen": 1786723859.566
-      },
-      "1786779680.196699": {
-        "post": "1786779680.196699",
-        "lastSeen": 1786779923.751
       }
     },
     "days": {
@@ -137162,8 +137178,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-15": {
-        "cnt": 27,
-        "sumMin": 619.2141407926878,
+        "cnt": 28,
+        "sumMin": 628.6458791414897,
         "over": 9,
         "items": [
           {
@@ -137381,13 +137397,21 @@ window.SLACK_DATA = {
             "biz": "7010103714",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "16:41",
+            "min": 9.4,
+            "store": "호암 태권도&amp;줄넘기 샘머리관",
+            "biz": "8809901791",
+            "who": "",
+            "cat": "onboarding"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-15 16:45",
+    "at": "2026-08-15 16:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

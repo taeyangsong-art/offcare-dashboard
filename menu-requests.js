@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 681,
- "updatedAt": "2026-08-15 16:38",
+ "version": 682,
+ "updatedAt": "2026-08-15 16:56",
  "days": 30,
  "items": [
   {
@@ -29103,50 +29103,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784189509933229"
-  },
-  {
-   "ts": "1784188054.601629",
-   "date": "2026-07-16",
-   "time": "16:47",
-   "store": "피자스쿨 외대앞역점",
-   "biz": "2042044914",
-   "pos": "토스포스",
-   "content": "신메뉴 치킨타코피자 15900원\n치킨타코피자크러스트18900원\n비프타코피자 15900원\n비프타코피자크러스트18900원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "카테고리 2줄 > 1줄로 변경함 한눈에 안보임"
-   ],
-   "rc": 2,
-   "lr": "1784188377.317119",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784188054601629"
-  },
-  {
-   "ts": "1784187963.519469",
-   "date": "2026-07-16",
-   "time": "16:46",
-   "store": "강창구찹쌀진순대(수유역점)",
-   "biz": "4646800562",
-   "pos": "",
-   "content": "메뉴등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784187969.211399",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784187963519469"
   }
  ],
  "ocr": {
