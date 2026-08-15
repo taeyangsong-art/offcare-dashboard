@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3739,
+  "version": 3740,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111940,14 +111940,15 @@ window.SLACK_DATA = {
     },
     "2026-08-15": {
       "counts": {
+        "onboarding": {
+          "김기범": 1,
+          "미지정": 6,
+          "배선유": 2
+        },
         "as": {
           "김기범": 17,
           "미지정": 9,
           "배선유": 38
-        },
-        "onboarding": {
-          "미지정": 6,
-          "배선유": 2
         },
         "menu": {
           "김기범": 1,
@@ -111959,6 +111960,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "22:15",
+          "store": "미래소비자협회",
+          "biz": "4945800109",
+          "cat": "onboarding",
+          "emp": "김기범",
+          "req": "포프(휴대폰) 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료"
+        },
         {
           "time": "21:13",
           "store": "월화제과",
@@ -112811,7 +112823,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 65,
+        "online": 66,
         "offline": 12,
         "unknown": 0
       },
@@ -113002,7 +113014,7 @@ window.SLACK_DATA = {
       },
       "1786786400.024389": {
         "post": "1786786400.024389",
-        "lastSeen": 1786800627.911
+        "lastSeen": 1786800752.245
       }
     },
     "days": {
@@ -137756,7 +137768,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-15 22:30",
+    "at": "2026-08-15 22:32",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
