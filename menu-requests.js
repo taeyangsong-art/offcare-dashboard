@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 677,
- "updatedAt": "2026-08-15 14:15",
+ "version": 678,
+ "updatedAt": "2026-08-15 14:45",
  "days": 30,
  "items": [
   {
@@ -29210,27 +29210,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784181090393389"
-  },
-  {
-   "ts": "1784180400.125019",
-   "date": "2026-07-16",
-   "time": "14:40",
-   "store": "토이즈나",
-   "biz": "2641902297",
-   "pos": "기타",
-   "content": "K-메뉴 해물짬뽕탕삭제시켜주세요\n그리고 해물짬뽕탕 있던 위치에 \n메뉴명 : 돼지김치찌개(고기듬뿍)\n금액 : 19900원\n옵션추가해서 우동사리 +2000원 넣어주세요",
-   "special": "바로 해주세요",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784180405.903959",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784180400125019"
   }
  ],
  "ocr": {

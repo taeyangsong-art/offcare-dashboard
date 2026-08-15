@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3690,
+  "version": 3691,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111941,7 +111941,7 @@ window.SLACK_DATA = {
     "2026-08-15": {
       "counts": {
         "as": {
-          "배선유": 26,
+          "배선유": 28,
           "미지정": 2,
           "김기범": 2
         },
@@ -111955,6 +111955,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "14:38",
+          "store": "호산나악기",
+          "biz": "6090277917",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "결제시 용지출력안된다 문의주셨는데 재출력시에도 살짝 나오고있습니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트 내부 프린터 설정 출력 속도 변경"
+        },
+        {
+          "time": "14:30",
+          "store": "솔브폴루티",
+          "biz": "5910801549",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "프론트 IC칩 인식이 되지않음, 마그네틱 결제도 동일(터미널은 결제되심, 직원분 카드로 진행중)",
+          "hw": "",
+          "intake": "online",
+          "note": "다른 카드로 결제 시 문제없음"
+        },
         {
           "time": "14:00",
           "store": "쉬끄헤어",
@@ -112344,11 +112366,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 28,
+        "online": 30,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "14:30",
+      "updatedAt": "14:44",
       "voc": {
         "responses": 2,
         "install": {
@@ -112443,11 +112465,19 @@ window.SLACK_DATA = {
       },
       "1786758300.863269": {
         "post": "1786758300.863269",
-        "lastSeen": 1786772105.828
+        "lastSeen": 1786772722.572
       },
       "1786770747.762499": {
         "post": "1786770747.762499",
-        "lastSeen": 1786772105.828
+        "lastSeen": 1786772722.572
+      },
+      "1786772674.142909": {
+        "post": "1786772674.142909",
+        "lastSeen": 1786772722.572
+      },
+      "1786772554.704879": {
+        "post": "1786772554.704879",
+        "lastSeen": 1786772722.572
       }
     },
     "days": {
@@ -137025,7 +137055,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-15 14:35",
+    "at": "2026-08-15 14:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
