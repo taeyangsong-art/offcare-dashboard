@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 679,
- "updatedAt": "2026-08-15 14:55",
+ "version": 680,
+ "updatedAt": "2026-08-15 15:30",
  "days": 30,
  "items": [
   {
@@ -29168,27 +29168,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784187376070729"
-  },
-  {
-   "ts": "1784183146.785519",
-   "date": "2026-07-16",
-   "time": "15:25",
-   "store": "토이즈나",
-   "biz": "2641902297",
-   "pos": "기타",
-   "content": "돼지김치찌개(고기듬뿍) 이거 판매가격이 19900원이고, 순두부수제비전골이 19900원에서 20900원으로 변경부탁드립니다",
-   "special": "지금 바로 해주세요",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784183152.206769",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784183146785519"
   }
  ],
  "ocr": {
