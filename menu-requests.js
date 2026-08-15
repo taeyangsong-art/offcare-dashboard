@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 687,
- "updatedAt": "2026-08-15 18:34",
+ "version": 688,
+ "updatedAt": "2026-08-15 19:30",
  "days": 30,
  "items": [
   {
@@ -28901,29 +28901,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784198459670669"
-  },
-  {
-   "ts": "1784197195.305059",
-   "date": "2026-07-16",
-   "time": "19:19",
-   "store": "쉬게",
-   "biz": "1142129859",
-   "pos": "토스포스",
-   "content": "메뉴 키오스크 동기화시켜주세요",
-   "special": "동기화가 안되요",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "점주님 연락드렸으나 부재 상품채널은 고객용채널 노출되어있으며 옵션이 미노출로 노출표기 완료\n솔라피 발송완료"
-   ],
-   "rc": 2,
-   "lr": "1784205629.892179",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784197195305059"
   }
  ],
  "ocr": {

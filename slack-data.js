@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3720,
+  "version": 3721,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111941,7 +111941,7 @@ window.SLACK_DATA = {
     "2026-08-15": {
       "counts": {
         "as": {
-          "김기범": 10,
+          "김기범": 11,
           "미지정": 9,
           "배선유": 38
         },
@@ -111958,6 +111958,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "18:54",
+          "store": "키키헤어",
+          "biz": "1801303017",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "캣프 핸드SOS 온보딩 지원 요청 드립니다. (케이블 구비 완)",
+          "hw": "",
+          "intake": "online",
+          "note": "핸드 sos 고객센터 쉬는 날로 일단 토스포스와 연결하여 사용 단말기 다운로드 완료"
+        },
         {
           "time": "18:52",
           "store": "장군뭉티기",
@@ -112711,11 +112722,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 58,
+        "online": 59,
         "offline": 10,
         "unknown": 0
       },
-      "updatedAt": "19:15",
+      "updatedAt": "19:30",
       "voc": {
         "responses": 12,
         "install": {
@@ -112889,15 +112900,15 @@ window.SLACK_DATA = {
       },
       "1786784499.340429": {
         "post": "1786784499.340429",
-        "lastSeen": 1786788922.207
+        "lastSeen": 1786789827.536
       },
       "1786786400.024389": {
         "post": "1786786400.024389",
-        "lastSeen": 1786788922.207
+        "lastSeen": 1786789827.536
       },
       "1786788900.584569": {
         "post": "1786788900.584569",
-        "lastSeen": 1786788922.207
+        "lastSeen": 1786789827.536
       }
     },
     "days": {
@@ -137611,7 +137622,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-15 19:15",
+    "at": "2026-08-15 19:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
