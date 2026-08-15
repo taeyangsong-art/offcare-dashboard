@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 682,
- "updatedAt": "2026-08-15 16:56",
+ "version": 683,
+ "updatedAt": "2026-08-15 17:15",
  "days": 30,
  "items": [
   {
@@ -29080,29 +29080,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784190512892049"
-  },
-  {
-   "ts": "1784189509.933229",
-   "date": "2026-07-16",
-   "time": "17:11",
-   "store": "송담추어탕",
-   "biz": "4540501574",
-   "pos": "",
-   "content": "메뉴 추가 요청드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "• 콩국수 11,000원 추가_위치: 코다리 메뉴옆자리에 설정요청"
-   ],
-   "rc": 6,
-   "lr": "1784191336.996359",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784189509933229"
   }
  ],
  "ocr": {

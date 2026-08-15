@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3705,
+  "version": 3706,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111940,14 +111940,14 @@ window.SLACK_DATA = {
     },
     "2026-08-15": {
       "counts": {
+        "as": {
+          "배선유": 36,
+          "김기범": 5,
+          "미지정": 7
+        },
         "onboarding": {
           "미지정": 5,
           "배선유": 2
-        },
-        "as": {
-          "배선유": 35,
-          "미지정": 7,
-          "김기범": 4
         },
         "menu": {
           "배선유": 2
@@ -111958,6 +111958,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "17:03",
+          "store": "에이치에이에스 스페이스 (HAS Space)",
+          "biz": "8025600816",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "태블릿 충전단자가 파손된듯하여 교체 문의로 확인부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "UTABPT11 / cms 납입중인 렌탈매장으로 확인 / pt11 / 포프(폰)+유프로 변경 / 이카운트 접수"
+        },
+        {
+          "time": "16:51",
+          "store": "핫덕이",
+          "biz": "2350903682",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "사업자번호 하나에 매장 3개, 프론트 2대 추가하여 받은 기기 온보딩중이나 이미 연결된 단말기라 뜨며 연동이안된다하여 도움부탁드리빈다.",
+          "hw": "",
+          "intake": "online",
+          "note": "한 사업자로 3개 푸드트럭 운영중 해당 프론트가 푸럭으로 온보딩이 되어있어서 초기화후 핫덕이로 온보딩 완료"
+        },
         {
           "time": "16:41",
           "store": "호암 태권도&amp;줄넘기 샘머리관",
@@ -112579,11 +112601,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 49,
-        "offline": 7,
+        "online": 50,
+        "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "16:51",
+      "updatedAt": "17:03",
       "voc": {
         "responses": 11,
         "install": {
@@ -137411,7 +137433,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-15 17:00",
+    "at": "2026-08-15 17:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
