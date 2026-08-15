@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 686,
- "updatedAt": "2026-08-15 18:04",
+ "version": 687,
+ "updatedAt": "2026-08-15 18:34",
  "days": 30,
  "items": [
+  {
+   "ts": "1786786400.024389",
+   "date": "2026-08-15",
+   "time": "18:33",
+   "store": "퓨처스페이스",
+   "biz": "5308701200",
+   "pos": "토스포스",
+   "content": "기존정보 업데이트 (도소매 카테고리 입니다.)",
+   "special": "asps",
+   "drive": [
+    "https://drive.google.com/open?id=1qC5CRP-HZY5qynQ5eqHxHDQ4hFZ3eSqM"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786786403.343679",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786786400024389"
+  },
   {
    "ts": "1786784499.340429",
    "date": "2026-08-15",
