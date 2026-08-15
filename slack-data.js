@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3670,
+  "version": 3671,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -112054,7 +112054,7 @@ window.SLACK_DATA = {
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "11:00",
+      "updatedAt": "11:14",
       "voc": {
         "responses": 2,
         "install": {
@@ -112161,11 +112161,19 @@ window.SLACK_DATA = {
       },
       "1786758300.863269": {
         "post": "1786758300.863269",
-        "lastSeen": 1786759294.002
+        "lastSeen": 1786760134.478
       },
-      "1786759201.971899": {
-        "post": "1786759201.971899",
-        "lastSeen": 1786759294.002
+      "1786760092.587169": {
+        "post": "1786760092.587169",
+        "lastSeen": 1786760134.478
+      },
+      "1786760000.610449": {
+        "post": "1786760000.610449",
+        "lastSeen": 1786760134.478
+      },
+      "1786759451.041339": {
+        "post": "1786759451.041339",
+        "lastSeen": 1786760134.478
       }
     },
     "days": {
@@ -136590,8 +136598,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-15": {
-        "cnt": 2,
-        "sumMin": 18.787482368946073,
+        "cnt": 3,
+        "sumMin": 27.32528405189514,
         "over": 0,
         "items": [
           {
@@ -136609,13 +136617,21 @@ window.SLACK_DATA = {
             "biz": "1171587745",
             "who": "배선유",
             "cat": "as"
+          },
+          {
+            "hm": "11:00",
+            "min": 8.5,
+            "store": "카페노아",
+            "biz": "6721402678",
+            "who": "배선유",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-15 11:01",
+    "at": "2026-08-15 11:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
