@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3732,
+  "version": 3733,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111941,7 +111941,7 @@ window.SLACK_DATA = {
     "2026-08-15": {
       "counts": {
         "as": {
-          "김기범": 15,
+          "김기범": 16,
           "미지정": 9,
           "배선유": 38
         },
@@ -111957,7 +111957,19 @@ window.SLACK_DATA = {
           "김기범": 1
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "20:00",
+          "store": "만수관샤브칼국수",
+          "biz": "2582901972",
+          "handler": "김기범",
+          "cat": "delivery",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "done": [
         {
           "time": "20:30",
@@ -112002,6 +112014,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "콘센트에 전원이 빠져서 전원이 안켜지는 상황 안내 완료"
+        },
+        {
+          "time": "19:15",
+          "store": "마리네달콤부엌",
+          "biz": "2011899436",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "쿠팡이츠 주문접수 프로그램 설치 후 로그인한 사진 1장, 스티커 부착 사진 1장 없을 경우 매장 외관 사진 1장",
+          "hw": "",
+          "intake": "offline",
+          "note": "원격방으로 이관 시간 늦어서 점주님 ㅠㅠ 월요일 9시반 오전"
         },
         {
           "time": "18:54",
@@ -112778,11 +112801,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 63,
-        "offline": 11,
+        "online": 64,
+        "offline": 12,
         "unknown": 0
       },
-      "updatedAt": "20:30",
+      "updatedAt": "21:13",
       "voc": {
         "responses": 13,
         "install": {
@@ -112969,15 +112992,11 @@ window.SLACK_DATA = {
       },
       "1786786400.024389": {
         "post": "1786786400.024389",
-        "lastSeen": 1786795230.935
+        "lastSeen": 1786796128.456
       },
-      "1786788900.584569": {
-        "post": "1786788900.584569",
-        "lastSeen": 1786795230.935
-      },
-      "1786791600.693299": {
-        "post": "1786791600.693299",
-        "lastSeen": 1786795230.935
+      "1786796035.305869": {
+        "post": "1786796035.305869",
+        "lastSeen": 1786796128.456
       }
     },
     "days": {
@@ -137402,9 +137421,9 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-15": {
-        "cnt": 37,
-        "sumMin": 731.6826109409334,
-        "over": 9,
+        "cnt": 38,
+        "sumMin": 844.6677931229275,
+        "over": 10,
         "items": [
           {
             "hm": "09:43",
@@ -137701,13 +137720,21 @@ window.SLACK_DATA = {
             "biz": "2208548357",
             "who": "김기범",
             "cat": "as"
+          },
+          {
+            "hm": "19:15",
+            "min": 113,
+            "store": "마리네달콤부엌",
+            "biz": "2011899436",
+            "who": "김기범",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-15 21:00",
+    "at": "2026-08-15 21:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
