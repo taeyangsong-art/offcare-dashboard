@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3708,
+  "version": 3709,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111941,12 +111941,12 @@ window.SLACK_DATA = {
     "2026-08-15": {
       "counts": {
         "as": {
-          "배선유": 36,
+          "배선유": 38,
           "김기범": 5,
           "미지정": 7
         },
         "onboarding": {
-          "미지정": 5,
+          "미지정": 6,
           "배선유": 2
         },
         "menu": {
@@ -111958,6 +111958,39 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "17:41",
+          "store": "에이치에이에스 스페이스 (HAS Space)",
+          "biz": "8025600816",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "폰 &gt; 노트북 재온보딩 요청",
+          "hw": "",
+          "intake": "offline",
+          "note": "설정 방법 구두 안내"
+        },
+        {
+          "time": "17:30",
+          "store": "혼술바 제주보름 분당야탑점",
+          "biz": "6611003096",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "수령하신 태블릿 지연 증상이 심하다고 하여 점검 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "화면 그래픽 버벅거리고 터치 인식 잘 안됨 / 신품 교체 이카운드"
+        },
+        {
+          "time": "17:18",
+          "store": "밀루아(Milua)",
+          "biz": "3097900432",
+          "cat": "onboarding",
+          "emp": "미지정",
+          "req": "• 프-유프 온보딩 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "PC+프론트+프린터 온보딩 완료"
+        },
         {
           "time": "17:03",
           "store": "에이치에이에스 스페이스 (HAS Space)",
@@ -112601,24 +112634,24 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 50,
-        "offline": 8,
+        "online": 51,
+        "offline": 10,
         "unknown": 0
       },
-      "updatedAt": "17:30",
+      "updatedAt": "17:41",
       "voc": {
-        "responses": 11,
+        "responses": 12,
         "install": {
           "count": 3,
           "low": 1
         },
         "nps": {
-          "count": 11,
+          "count": 12,
           "low": 2
         },
         "high": {
           "install": 1,
-          "nps": 3
+          "nps": 4
         },
         "npsDist": {
           "3": 1,
@@ -112626,7 +112659,7 @@ window.SLACK_DATA = {
           "7": 2,
           "8": 3,
           "9": 1,
-          "10": 3
+          "10": 4
         },
         "installDist": {
           "1": 1,
@@ -112638,6 +112671,10 @@ window.SLACK_DATA = {
           "기타": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 2,
+            "low": 0
+          },
           "6개월": {
             "total": 1,
             "low": 0
@@ -112650,10 +112687,6 @@ window.SLACK_DATA = {
             "total": 4,
             "low": 0
           },
-          "3개월": {
-            "total": 1,
-            "low": 0
-          },
           "12개월": {
             "total": 2,
             "low": 1
@@ -112661,7 +112694,7 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "SECTA9": {
-            "total": 2,
+            "total": 3,
             "low": 0
           },
           "NICE": {
@@ -112776,10 +112809,6 @@ window.SLACK_DATA = {
       "1786703962.693599": {
         "post": "1786703962.693599",
         "lastSeen": 1786723859.566
-      },
-      "1786781936.869549": {
-        "post": "1786781936.869549",
-        "lastSeen": 1786782628.12
       }
     },
     "days": {
@@ -137204,8 +137233,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-15": {
-        "cnt": 28,
-        "sumMin": 628.6458791414897,
+        "cnt": 29,
+        "sumMin": 647.6385116537413,
         "over": 9,
         "items": [
           {
@@ -137431,13 +137460,21 @@ window.SLACK_DATA = {
             "biz": "8809901791",
             "who": "",
             "cat": "onboarding"
+          },
+          {
+            "hm": "17:18",
+            "min": 19,
+            "store": "밀루아(Milua)",
+            "biz": "3097900432",
+            "who": "",
+            "cat": "onboarding"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-15 17:30",
+    "at": "2026-08-15 17:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
