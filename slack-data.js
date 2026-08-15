@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3734,
+  "version": 3735,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111954,22 +111954,10 @@ window.SLACK_DATA = {
           "배선유": 2
         },
         "delivery": {
-          "김기범": 1
+          "김기범": 2
         }
       },
-      "pending": [
-        {
-          "time": "20:00",
-          "store": "만수관샤브칼국수",
-          "biz": "2582901972",
-          "handler": "김기범",
-          "cat": "delivery",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
         {
           "time": "20:30",
@@ -111981,6 +111969,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "프론트 와이파이가 느려서 그랬다고 함"
+        },
+        {
+          "time": "20:00",
+          "store": "만수관샤브칼국수",
+          "biz": "2582901972",
+          "cat": "delivery",
+          "emp": "김기범",
+          "req": "쿠팡이츠 주문접수 프로그램 설치 후 로그인한 사진 1장",
+          "hw": "",
+          "intake": "online",
+          "note": ""
         },
         {
           "time": "19:44",
@@ -112992,11 +112991,7 @@ window.SLACK_DATA = {
       },
       "1786786400.024389": {
         "post": "1786786400.024389",
-        "lastSeen": 1786796176.695
-      },
-      "1786796035.305869": {
-        "post": "1786796035.305869",
-        "lastSeen": 1786796176.695
+        "lastSeen": 1786797029.068
       }
     },
     "days": {
@@ -137421,8 +137416,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-15": {
-        "cnt": 38,
-        "sumMin": 844.6677931229275,
+        "cnt": 39,
+        "sumMin": 854.1273869713149,
         "over": 10,
         "items": [
           {
@@ -137728,13 +137723,21 @@ window.SLACK_DATA = {
             "biz": "2011899436",
             "who": "김기범",
             "cat": "as"
+          },
+          {
+            "hm": "21:13",
+            "min": 9.5,
+            "store": "월화제과",
+            "biz": "7493101700",
+            "who": "김기범",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-15 21:16",
+    "at": "2026-08-15 21:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
