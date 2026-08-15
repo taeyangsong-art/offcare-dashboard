@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 675,
- "updatedAt": "2026-08-15 12:40",
+ "version": 676,
+ "updatedAt": "2026-08-15 14:00",
  "days": 30,
  "items": [
   {
@@ -29229,30 +29229,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784180400125019"
-  },
-  {
-   "ts": "1784177531.153359",
-   "date": "2026-07-16",
-   "time": "13:52",
-   "store": "미술냉삼",
-   "biz": "8882102586",
-   "pos": "토스포스",
-   "content": "해당 매장 메뉴 이관 필요합니다. 스파로스 ->토스포스 변경매장이며 명의변경 매장입니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "요거 토플파 복제가 나을것 같다고 하시는데 참고 부탁드립니다!",
-    "님 ,넵 이전 사업자번호 공유드립니다.:꾸벅:*(양도) 사업자번호···*"
-   ],
-   "rc": 5,
-   "lr": "1784179056.473749",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784177531153359"
   }
  ],
  "ocr": {

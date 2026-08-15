@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3685,
+  "version": 3686,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111976,7 +111976,7 @@ window.SLACK_DATA = {
           "req": "유플러스 포스기 고장으로 휴대폰 임시 설치 가맹점인데, 프린터기 주문서 출력이 안된다고 제보주셨는데 다시 점검 요청드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "/ 아까도 설명드렸지만 재설명 / 포프(포스기)+cat(출력용) 사용 매장 /포스기 고장으로 포프(폰) 재온보딩 해놨고, cat-프론트 연결 케이블이 없어 출력 불가 안내"
         },
         {
           "time": "13:30",
@@ -112316,7 +112316,7 @@ window.SLACK_DATA = {
         "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "13:42",
+      "updatedAt": "14:00",
       "voc": {
         "responses": 2,
         "install": {
@@ -112411,11 +112411,19 @@ window.SLACK_DATA = {
       },
       "1786758300.863269": {
         "post": "1786758300.863269",
-        "lastSeen": 1786769274.592
+        "lastSeen": 1786770035.323
       },
       "1786762774.639819": {
         "post": "1786762774.639819",
-        "lastSeen": 1786769274.592
+        "lastSeen": 1786770035.323
+      },
+      "1786770001.164209": {
+        "post": "1786770001.164209",
+        "lastSeen": 1786770035.323
+      },
+      "1786769693.348399": {
+        "post": "1786769693.348399",
+        "lastSeen": 1786770035.323
       }
     },
     "days": {
@@ -136977,7 +136985,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-15 13:47",
+    "at": "2026-08-15 14:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
