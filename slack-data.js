@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3694,
+  "version": 3695,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111951,6 +111951,9 @@ window.SLACK_DATA = {
         },
         "menu": {
           "배선유": 2
+        },
+        "delivery": {
+          "김기범": 1
         }
       },
       "pending": [
@@ -111999,6 +112002,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "휴가중 18일 재예약"
+        },
+        {
+          "time": "15:00",
+          "store": "staycoffee",
+          "biz": "7700601755",
+          "cat": "delivery",
+          "emp": "김기범",
+          "req": "쿠팡이츠 주문접수 프로그램 설치 후 로그인한 사진 1장, 매장 외관 스티커 부착 사진 1장",
+          "hw": "",
+          "intake": "online",
+          "note": ""
         },
         {
           "time": "14:56",
@@ -112466,11 +112480,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 39,
+        "online": 40,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "15:11",
+      "updatedAt": "15:19",
       "voc": {
         "responses": 4,
         "install": {
@@ -112584,6 +112598,10 @@ window.SLACK_DATA = {
       "1786703962.693599": {
         "post": "1786703962.693599",
         "lastSeen": 1786723859.566
+      },
+      "1786774764.594819": {
+        "post": "1786774764.594819",
+        "lastSeen": 1786774767.455
       }
     },
     "days": {
@@ -137201,7 +137219,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-15 15:15",
+    "at": "2026-08-15 15:19",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
