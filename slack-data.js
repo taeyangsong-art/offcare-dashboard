@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3721,
+  "version": 3722,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111941,7 +111941,7 @@ window.SLACK_DATA = {
     "2026-08-15": {
       "counts": {
         "as": {
-          "김기범": 11,
+          "김기범": 12,
           "미지정": 9,
           "배선유": 38
         },
@@ -111958,6 +111958,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "19:30",
+          "store": "마르떼헤어",
+          "biz": "2201200382",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "터프 사용 중, 두 기기 모두 전원이 들어오지 않는다고 하여 점검 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "콘센트에 전원이 빠져서 전원이 안켜지는 상황 안내 완료"
+        },
         {
           "time": "18:54",
           "store": "키키헤어",
@@ -112723,10 +112734,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 59,
-        "offline": 10,
+        "offline": 11,
         "unknown": 0
       },
-      "updatedAt": "19:30",
+      "updatedAt": "19:35",
       "voc": {
         "responses": 12,
         "install": {
@@ -112900,15 +112911,15 @@ window.SLACK_DATA = {
       },
       "1786784499.340429": {
         "post": "1786784499.340429",
-        "lastSeen": 1786789827.536
+        "lastSeen": 1786790407.29
       },
       "1786786400.024389": {
         "post": "1786786400.024389",
-        "lastSeen": 1786789827.536
+        "lastSeen": 1786790407.29
       },
       "1786788900.584569": {
         "post": "1786788900.584569",
-        "lastSeen": 1786789827.536
+        "lastSeen": 1786790407.29
       }
     },
     "days": {
@@ -137622,7 +137633,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-15 19:30",
+    "at": "2026-08-15 19:40",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
