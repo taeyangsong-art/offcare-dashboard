@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3664,
+  "version": 3665,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111941,11 +111941,22 @@ window.SLACK_DATA = {
     "2026-08-15": {
       "counts": {
         "as": {
-          "배선유": 2
+          "배선유": 3
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:43",
+          "store": "미앤미힐링티",
+          "biz": "8910800173",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "카카오페이 결제시 띠띠 소리만나고 결제가 안 되어 확인부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "키오스크 자체 설치하셔서 케이블 연결 문제있었음 / 케이블 재연결 및 vcat 설정 후 테스트 완료"
+        },
         {
           "time": "09:24",
           "store": "월아칼국수",
@@ -111970,7 +111981,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 2,
+        "online": 3,
         "offline": 0,
         "unknown": 0
       },
@@ -112078,10 +112089,6 @@ window.SLACK_DATA = {
       "1786703962.693599": {
         "post": "1786703962.693599",
         "lastSeen": 1786723859.566
-      },
-      "1786754584.666099": {
-        "post": "1786754584.666099",
-        "lastSeen": 1786754729.305
       }
     },
     "days": {
@@ -136504,11 +136511,26 @@ window.SLACK_DATA = {
             "cat": "onboarding"
           }
         ]
+      },
+      "2026-08-15": {
+        "cnt": 1,
+        "sumMin": 9.95787334839503,
+        "over": 0,
+        "items": [
+          {
+            "hm": "09:43",
+            "min": 10,
+            "store": "미앤미힐링티",
+            "biz": "8910800173",
+            "who": "배선유",
+            "cat": "as"
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-15 09:45",
+    "at": "2026-08-15 10:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
