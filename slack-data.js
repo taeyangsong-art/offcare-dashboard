@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3660,
+  "version": 3661,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -109062,8 +109062,8 @@ window.SLACK_DATA = {
           "김동욱": 4
         },
         "menu": {
+          "배선유": 8,
           "최민석": 1,
-          "배선유": 7,
           "미지정": 1,
           "김동욱": 1,
           "김규빈": 7,
@@ -109073,19 +109073,7 @@ window.SLACK_DATA = {
           "김동욱": 3
         }
       },
-      "pending": [
-        {
-          "time": "19:39",
-          "store": "알비온",
-          "biz": "7680100928",
-          "handler": "배선유",
-          "cat": "menu",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
         {
           "time": "23:00",
@@ -109207,6 +109195,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "유프 속도값115200 변경되어있어 변경 후 정상출력완료 스피커 소리가 나지않아 출력설정 및 스피커 설정 시 소리가 안나 확인 후 법인폰통하여 재인입 예정"
+        },
+        {
+          "time": "19:39",
+          "store": "알비온",
+          "biz": "7680100928",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 3시 이후 연락 예정"
         },
         {
           "time": "19:37",
@@ -111948,7 +111947,7 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": ""
+      "updatedAt": "09:10"
     }
   },
   "resp": {
@@ -136402,7 +136401,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-15 09:00",
+    "at": "2026-08-15 09:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
