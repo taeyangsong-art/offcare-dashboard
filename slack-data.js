@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3717,
+  "version": 3718,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -112704,7 +112704,7 @@ window.SLACK_DATA = {
         "offline": 10,
         "unknown": 0
       },
-      "updatedAt": "18:52",
+      "updatedAt": "18:54",
       "voc": {
         "responses": 12,
         "install": {
@@ -112878,15 +112878,15 @@ window.SLACK_DATA = {
       },
       "1786784499.340429": {
         "post": "1786784499.340429",
-        "lastSeen": 1786787598.247
+        "lastSeen": 1786788033.521
       },
       "1786786400.024389": {
         "post": "1786786400.024389",
-        "lastSeen": 1786787598.247
+        "lastSeen": 1786788033.521
       },
-      "1786787562.114779": {
-        "post": "1786787562.114779",
-        "lastSeen": 1786787598.247
+      "1786787658.986839": {
+        "post": "1786787658.986839",
+        "lastSeen": 1786788033.521
       }
     },
     "days": {
@@ -137311,8 +137311,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-15": {
-        "cnt": 33,
-        "sumMin": 690.6176190455756,
+        "cnt": 34,
+        "sumMin": 694.8471060593924,
         "over": 9,
         "items": [
           {
@@ -137578,13 +137578,21 @@ window.SLACK_DATA = {
             "biz": "3663801260",
             "who": "김기범",
             "cat": "as"
+          },
+          {
+            "hm": "18:52",
+            "min": 4.2,
+            "store": "장군뭉티기",
+            "biz": "4460503343",
+            "who": "김기범",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-15 18:53",
+    "at": "2026-08-15 19:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
