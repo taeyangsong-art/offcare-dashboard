@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3738,
+  "version": 3739,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113002,11 +113002,7 @@ window.SLACK_DATA = {
       },
       "1786786400.024389": {
         "post": "1786786400.024389",
-        "lastSeen": 1786799728.357
-      },
-      "1786799701.055839": {
-        "post": "1786799701.055839",
-        "lastSeen": 1786799728.357
+        "lastSeen": 1786800627.911
       }
     },
     "days": {
@@ -137431,8 +137427,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-15": {
-        "cnt": 39,
-        "sumMin": 854.1273869713149,
+        "cnt": 40,
+        "sumMin": 862.0786896546683,
         "over": 10,
         "items": [
           {
@@ -137746,13 +137742,21 @@ window.SLACK_DATA = {
             "biz": "7493101700",
             "who": "김기범",
             "cat": "as"
+          },
+          {
+            "hm": "22:15",
+            "min": 8,
+            "store": "미래소비자협회",
+            "biz": "4945800109",
+            "who": "김기범",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-15 22:15",
+    "at": "2026-08-15 22:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
