@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3758,
+  "version": 3759,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113010,15 +113010,15 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "00:53",
+      "updatedAt": "02:43",
       "voc": {
-        "responses": 1,
+        "responses": 2,
         "install": {
           "count": 1,
           "low": 1
         },
         "nps": {
-          "count": 1,
+          "count": 2,
           "low": 0
         },
         "high": {
@@ -113026,7 +113026,7 @@ window.SLACK_DATA = {
           "nps": 0
         },
         "npsDist": {
-          "7": 1
+          "7": 2
         },
         "installDist": {
           "1": 1
@@ -113035,12 +113035,20 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 1,
+            "low": 0
+          },
           "구매설치": {
             "total": 1,
             "low": 1
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 1,
+            "low": 0
+          },
           "DAOU": {
             "total": 1,
             "low": 1
@@ -113073,7 +113081,20 @@ window.SLACK_DATA = {
             "doneDate": ""
           }
         ],
-        "praises": []
+        "praises": [
+          {
+            "time": "02:43",
+            "store": "스타일by유강HAIR",
+            "storeId": "544391",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 7,
+            "text": "메뉴얼이 식당용 같습니다.  미용은 서비스 종료 후 결제하는데 \"주문번호로 알려드릴게요\"라는 멘트가 나옵니다. 메뉴의 추가요금 부분도 일일히 입력한다고 해도 식당 선결재 서비스 셋팅은 아닌것같습니다.  나중에 환불할때는 어떻게하는지 아직 찾아 보지는 않았습니다. 토스프론트단발기와 함께 온 안내 메뉴에는 없습니다. 영수증은 받고 싶은 사람만 전화번호 입력란이 있으면 좋겠습니다. 문자발송으로 보낼 수 있게.. 현금영수증 발급기능이 있음 좋겠습니다.",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
       }
     }
   },
@@ -137843,7 +137864,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-16 02:30",
+    "at": "2026-08-16 02:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
