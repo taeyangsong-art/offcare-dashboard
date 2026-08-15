@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3701,
+  "version": 3702,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111941,8 +111941,8 @@ window.SLACK_DATA = {
     "2026-08-15": {
       "counts": {
         "as": {
+          "배선유": 35,
           "미지정": 7,
-          "배선유": 34,
           "김기범": 4
         },
         "onboarding": {
@@ -111958,6 +111958,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:28",
+          "store": "굿델리",
+          "biz": "4730103726",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "연락처 수정하여 최신정보 불러오기는 01034590231으로 변경되었으나, 전자영수증은 010-9637-3479으로 뜬다고하여 도움부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "시간 지나니 잘 나온대여 시간 지나니 잘 나온대여"
+        },
         {
           "time": "16:22",
           "store": "안씨네 고깃간",
@@ -112557,7 +112568,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 47,
+        "online": 48,
         "offline": 7,
         "unknown": 0
       },
@@ -137372,7 +137383,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-15 16:30",
+    "at": "2026-08-15 16:37",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
