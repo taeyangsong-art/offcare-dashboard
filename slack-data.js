@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3668,
+  "version": 3669,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111941,7 +111941,7 @@ window.SLACK_DATA = {
     "2026-08-15": {
       "counts": {
         "as": {
-          "배선유": 6
+          "배선유": 7
         },
         "menu": {
           "배선유": 1
@@ -111949,6 +111949,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:47",
+          "store": "만두이섬 춘천중앙점",
+          "biz": "2098526278",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "PC + 프론트 연결이 끊어진 후 재연결이 안된다하여 도움부탁드립니다",
+          "hw": "",
+          "intake": "offline",
+          "note": "재온보딩 완료"
+        },
         {
           "time": "10:13",
           "store": "자담치킨  외동입실점",
@@ -112029,10 +112040,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 7,
-        "offline": 0,
+        "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "10:45",
+      "updatedAt": "11:00",
       "voc": {
         "responses": 2,
         "install": {
@@ -112137,13 +112148,13 @@ window.SLACK_DATA = {
         "post": "1786703962.693599",
         "lastSeen": 1786723859.566
       },
-      "1786758251.510459": {
-        "post": "1786758251.510459",
-        "lastSeen": 1786758326.68
-      },
       "1786758300.863269": {
         "post": "1786758300.863269",
-        "lastSeen": 1786758326.68
+        "lastSeen": 1786759235.894
+      },
+      "1786759201.971899": {
+        "post": "1786759201.971899",
+        "lastSeen": 1786759235.894
       }
     },
     "days": {
@@ -136568,8 +136579,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-15": {
-        "cnt": 1,
-        "sumMin": 9.95787334839503,
+        "cnt": 2,
+        "sumMin": 18.787482368946073,
         "over": 0,
         "items": [
           {
@@ -136579,13 +136590,21 @@ window.SLACK_DATA = {
             "biz": "8910800173",
             "who": "배선유",
             "cat": "as"
+          },
+          {
+            "hm": "10:44",
+            "min": 8.8,
+            "store": "생명의숲(숨)",
+            "biz": "1171587745",
+            "who": "배선유",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-15 10:45",
+    "at": "2026-08-15 11:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
