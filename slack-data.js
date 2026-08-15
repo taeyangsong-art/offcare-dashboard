@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3735,
+  "version": 3736,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111941,7 +111941,7 @@ window.SLACK_DATA = {
     "2026-08-15": {
       "counts": {
         "as": {
-          "김기범": 16,
+          "김기범": 17,
           "미지정": 9,
           "배선유": 38
         },
@@ -111959,6 +111959,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "21:13",
+          "store": "월화제과",
+          "biz": "7493101700",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "포프(노트북) 사용 중, 프론트 연결끊김 후 연결불가 증상으로 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트가 다른 와이파이를 잡고있엇음 확인 완료"
+        },
         {
           "time": "20:30",
           "store": "(주)한길상회 서막 하남미사 본점",
@@ -112800,7 +112811,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 64,
+        "online": 65,
         "offline": 12,
         "unknown": 0
       },
@@ -112991,7 +113002,7 @@ window.SLACK_DATA = {
       },
       "1786786400.024389": {
         "post": "1786786400.024389",
-        "lastSeen": 1786797029.068
+        "lastSeen": 1786797923.427
       }
     },
     "days": {
@@ -137737,7 +137748,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-15 21:30",
+    "at": "2026-08-15 21:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
