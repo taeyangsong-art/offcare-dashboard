@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3665,
+  "version": 3666,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111941,11 +111941,22 @@ window.SLACK_DATA = {
     "2026-08-15": {
       "counts": {
         "as": {
-          "배선유": 3
+          "배선유": 5
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:05",
+          "store": "소소하당",
+          "biz": "3335400830",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "• 프린터*<https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1786673247845759| 어제 상담받고 괜찮다가>* 재발하여 문의",
+          "hw": "",
+          "intake": "online",
+          "note": "교체 이카운트"
+        },
         {
           "time": "09:43",
           "store": "미앤미힐링티",
@@ -111956,6 +111967,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "키오스크 자체 설치하셔서 케이블 연결 문제있었음 / 케이블 재연결 및 vcat 설정 후 테스트 완료"
+        },
+        {
+          "time": "09:38",
+          "store": "떰즈-업",
+          "biz": "7222100895",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "유플러스 포스기 전원 공급이 안되는 증상 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "금일부터 갑자기 전원이 안들어왔는데 껏켰해도 반응이 없는 상황이라고 합니다 / 방전작업중 방전작업중 / 방전작업, 멀티탭 교체해도 동일 / 토스포스 사용 매장이라 포프(폰) 온보딩해 사용하도록 세팅 / 포스 교체 필요 / 포스 자사설치로 진행 예정 / 포스기 AS 비용 발생 가능성 안내"
         },
         {
           "time": "09:24",
@@ -111981,11 +112003,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 3,
+        "online": 5,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:43",
+      "updatedAt": "10:13",
       "voc": {
         "responses": 2,
         "install": {
@@ -136530,7 +136552,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-15 10:00",
+    "at": "2026-08-15 10:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
