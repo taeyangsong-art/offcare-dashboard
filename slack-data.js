@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3666,
+  "version": 3667,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -111941,11 +111941,25 @@ window.SLACK_DATA = {
     "2026-08-15": {
       "counts": {
         "as": {
-          "배선유": 5
+          "배선유": 6
+        },
+        "menu": {
+          "배선유": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:13",
+          "store": "자담치킨  외동입실점",
+          "biz": "3322002505",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "메이트포스+프론트 / 9999 장치 연결 실패 제보주셨는데 확인 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "케이블 재연결, 어제도 발생했던 증상이라 usb 전원절약 설정 off 재부팅 후 확인 시엔 문제없음"
+        },
         {
           "time": "10:05",
           "store": "소소하당",
@@ -111980,6 +111994,17 @@ window.SLACK_DATA = {
           "note": "금일부터 갑자기 전원이 안들어왔는데 껏켰해도 반응이 없는 상황이라고 합니다 / 방전작업중 방전작업중 / 방전작업, 멀티탭 교체해도 동일 / 토스포스 사용 매장이라 포프(폰) 온보딩해 사용하도록 세팅 / 포스 교체 필요 / 포스 자사설치로 진행 예정 / 포스기 AS 비용 발생 가능성 안내"
         },
         {
+          "time": "09:28",
+          "store": "뚜레쥬르 킨텍스2전시장",
+          "biz": "1283678896",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
+        },
+        {
           "time": "09:24",
           "store": "월아칼국수",
           "biz": "8152901737",
@@ -112003,7 +112028,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 5,
+        "online": 7,
         "offline": 0,
         "unknown": 0
       },
@@ -136552,7 +136577,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-15 10:15",
+    "at": "2026-08-15 10:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
