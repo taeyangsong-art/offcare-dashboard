@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3723,
+  "version": 3724,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -112737,25 +112737,25 @@ window.SLACK_DATA = {
         "offline": 11,
         "unknown": 0
       },
-      "updatedAt": "19:44",
+      "updatedAt": "19:52",
       "voc": {
-        "responses": 12,
+        "responses": 13,
         "install": {
-          "count": 3,
+          "count": 4,
           "low": 1
         },
         "nps": {
-          "count": 12,
+          "count": 13,
           "low": 2
         },
         "high": {
-          "install": 1,
+          "install": 2,
           "nps": 4
         },
         "npsDist": {
           "3": 1,
           "5": 1,
-          "7": 2,
+          "7": 3,
           "8": 3,
           "9": 1,
           "10": 4
@@ -112763,13 +112763,18 @@ window.SLACK_DATA = {
         "installDist": {
           "1": 1,
           "4": 1,
-          "5": 1
+          "5": 2
         },
         "byIndustry": {
+          "도소매": 1,
           "서비스[학원]": 2,
           "기타": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 4,
+            "low": 1
+          },
           "3개월": {
             "total": 2,
             "low": 0
@@ -112777,10 +112782,6 @@ window.SLACK_DATA = {
           "6개월": {
             "total": 1,
             "low": 0
-          },
-          "구매설치": {
-            "total": 3,
-            "low": 1
           },
           "1개월": {
             "total": 4,
@@ -112792,15 +112793,15 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 2,
+            "low": 0
+          },
           "SECTA9": {
             "total": 3,
             "low": 0
           },
           "NICE": {
-            "total": 1,
-            "low": 0
-          },
-          "KOCES": {
             "total": 1,
             "low": 0
           },
@@ -112872,6 +112873,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "19:52",
+            "store": "가온이네",
+            "storeId": "577502",
+            "indBucket": "도소매",
+            "emp": "",
+            "install": 5,
+            "nps": 7,
+            "text": "설치하고 설명도 잘해주셨어요 아직 제대로 써보질 못해서요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "15:41",
             "store": "피우",
             "storeId": "536867",
@@ -112911,19 +112924,19 @@ window.SLACK_DATA = {
       },
       "1786784499.340429": {
         "post": "1786784499.340429",
-        "lastSeen": 1786790722.984
+        "lastSeen": 1786791376.733
       },
       "1786786400.024389": {
         "post": "1786786400.024389",
-        "lastSeen": 1786790722.984
+        "lastSeen": 1786791376.733
       },
       "1786788900.584569": {
         "post": "1786788900.584569",
-        "lastSeen": 1786790722.984
+        "lastSeen": 1786791376.733
       },
       "1786790641.428489": {
         "post": "1786790641.428489",
-        "lastSeen": 1786790722.984
+        "lastSeen": 1786791376.733
       }
     },
     "days": {
@@ -137637,7 +137650,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-15 19:45",
+    "at": "2026-08-15 19:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
