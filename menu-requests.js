@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 688,
- "updatedAt": "2026-08-15 19:30",
+ "version": 689,
+ "updatedAt": "2026-08-15 19:45",
  "days": 30,
  "items": [
   {
@@ -28878,29 +28878,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784206215398309"
-  },
-  {
-   "ts": "1784198459.670669",
-   "date": "2026-07-16",
-   "time": "19:40",
-   "store": "형과아우 삼계탕 안락점",
-   "biz": "4136200733",
-   "pos": "오케이포스",
-   "content": "오케이포스) 테이블 수정 요청드립니다 >>",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "포스화면에\n테이블번호 2-1\n3-2 추가\n\n테이블번호 13번 뒤에 포장 추가"
-   ],
-   "rc": 4,
-   "lr": "1784205355.253429",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784198459670669"
   }
  ],
  "ocr": {
