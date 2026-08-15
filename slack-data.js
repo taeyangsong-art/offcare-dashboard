@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3751,
+  "version": 3752,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113010,7 +113010,71 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": ""
+      "updatedAt": "00:53",
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 1,
+          "low": 1
+        },
+        "nps": {
+          "count": 1,
+          "low": 0
+        },
+        "high": {
+          "install": 0,
+          "nps": 0
+        },
+        "npsDist": {
+          "7": 1
+        },
+        "installDist": {
+          "1": 1
+        },
+        "byIndustry": {
+          "서비스[뷰티,헤어]": 1
+        },
+        "byTenure": {
+          "구매설치": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "byVan": {
+          "DAOU": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 1
+        },
+        "alerts": [
+          {
+            "time": "00:53",
+            "store": "며니살롱",
+            "storeId": "592371",
+            "industry": "뷰티",
+            "indBucket": "서비스[뷰티,헤어]",
+            "install": 1,
+            "nps": 7,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "설치너무어렵고  기사방문원해요",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
+        "praises": []
+      }
     }
   },
   "resp": {
@@ -137779,7 +137843,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-16 00:45",
+    "at": "2026-08-16 01:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
