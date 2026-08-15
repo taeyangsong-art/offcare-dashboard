@@ -3,10 +3,35 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 685,
- "updatedAt": "2026-08-15 17:45",
+ "version": 686,
+ "updatedAt": "2026-08-15 18:04",
  "days": 30,
  "items": [
+  {
+   "ts": "1786784499.340429",
+   "date": "2026-08-15",
+   "time": "18:01",
+   "store": "카페러브레터",
+   "biz": "7010103714",
+   "pos": "토스포스",
+   "content": "메뉴등록요청 [토스포스사용]",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "토플파 \t\nCafe Love Letter 에서 복사요청\n\n• 메뉴는 복사완료 \n• 이미지만 복사 부탁드립니당 :woman-bowing::skin-tone-2:",
+    "완료 후 문자메시지 부탁드립니다.",
+    "오늘 오후로 시간 양해 완료 !"
+   ],
+   "rc": 4,
+   "lr": "1786784641.969629",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786784499340429"
+  },
   {
    "ts": "1786762774.639819",
    "date": "2026-08-15",
