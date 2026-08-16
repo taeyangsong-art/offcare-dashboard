@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 691,
- "updatedAt": "2026-08-15 22:00",
+ "version": 692,
+ "updatedAt": "2026-08-16 09:38",
  "days": 30,
  "items": [
   {
@@ -28834,29 +28834,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784272576238579"
-  },
-  {
-   "ts": "1784248562.338659",
-   "date": "2026-07-17",
-   "time": "09:36",
-   "store": "커이핀초반",
-   "biz": "2660303234",
-   "pos": "기타",
-   "content": "안주류 카테고리에 치킨가라아게 16000원 추가 부탁드립니다",
-   "special": "16시 전까지 부탁드립니다",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "케이핀"
-   ],
-   "rc": 2,
-   "lr": "1784248690.778339",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784248562338659"
   }
  ],
  "ocr": {
