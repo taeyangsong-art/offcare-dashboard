@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3822,
+  "version": 3823,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113010,16 +113010,16 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "15:46",
+      "updatedAt": "16:13",
       "voc": {
-        "responses": 15,
+        "responses": 16,
         "install": {
           "count": 4,
           "low": 1
         },
         "nps": {
-          "count": 15,
-          "low": 3
+          "count": 16,
+          "low": 4
         },
         "high": {
           "install": 2,
@@ -113028,7 +113028,7 @@ window.SLACK_DATA = {
         "npsDist": {
           "2": 1,
           "3": 1,
-          "5": 1,
+          "5": 2,
           "7": 2,
           "8": 2,
           "10": 8
@@ -113045,13 +113045,13 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 2,
+            "low": 1
+          },
           "1개월": {
             "total": 6,
             "low": 1
-          },
-          "3개월": {
-            "total": 1,
-            "low": 0
           },
           "12개월": {
             "total": 2,
@@ -113068,8 +113068,8 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KIS": {
-            "total": 6,
-            "low": 1
+            "total": 7,
+            "low": 2
           },
           "KSNET": {
             "total": 3,
@@ -113093,11 +113093,33 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
-          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
           "사용중 오류가 자주 발생함": 1,
           "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "16:13",
+            "store": "텐퍼센트 울산보람병원점",
+            "storeId": "470547",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "깔끔해서 보기좋고 지원되는 결제수단 측면은 장점 반면 삼성페이 인식률이 현저히 떨어짐 거의 모든 손님들이 폰을 이리 댔다 저리 댔다 해야하고 폰 케이스를 벗겨야 하는 경우도 발생 손님도 직원도 엄청난 스트레스",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:46",
             "store": "마녀의 상점",
@@ -113232,7 +113254,7 @@ window.SLACK_DATA = {
       },
       "1786816908.657859": {
         "post": "1786816908.657859",
-        "lastSeen": 1786864017.573
+        "lastSeen": 1786864527.664
       }
     },
     "days": {
@@ -137986,7 +138008,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-16 16:07",
+    "at": "2026-08-16 16:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
