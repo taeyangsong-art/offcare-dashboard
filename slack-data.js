@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3814,
+  "version": 3815,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113010,25 +113010,25 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "13:25",
+      "updatedAt": "14:46",
       "voc": {
-        "responses": 5,
+        "responses": 6,
         "install": {
           "count": 2,
           "low": 1
         },
         "nps": {
-          "count": 5,
+          "count": 6,
           "low": 1
         },
         "high": {
           "install": 1,
-          "nps": 2
+          "nps": 3
         },
         "npsDist": {
           "5": 1,
           "7": 2,
-          "10": 2
+          "10": 3
         },
         "installDist": {
           "1": 1,
@@ -113039,6 +113039,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 2,
+            "low": 0
+          },
           "6개월": {
             "total": 1,
             "low": 1
@@ -113050,13 +113054,13 @@ window.SLACK_DATA = {
           "12개월": {
             "total": 1,
             "low": 0
-          },
-          "1개월": {
-            "total": 1,
-            "low": 0
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 2,
+            "low": 0
+          },
           "SECTA9": {
             "total": 1,
             "low": 1
@@ -113066,10 +113070,6 @@ window.SLACK_DATA = {
             "low": 0
           },
           "KSNET": {
-            "total": 1,
-            "low": 0
-          },
-          "KIS": {
             "total": 1,
             "low": 0
           },
@@ -113160,7 +113160,7 @@ window.SLACK_DATA = {
       },
       "1786816908.657859": {
         "post": "1786816908.657859",
-        "lastSeen": 1786859124
+        "lastSeen": 1786859655.697
       }
     },
     "days": {
@@ -137914,7 +137914,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-16 14:45",
+    "at": "2026-08-16 14:54",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
