@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3805,
+  "version": 3806,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113010,22 +113010,23 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "12:25",
+      "updatedAt": "13:25",
       "voc": {
-        "responses": 4,
+        "responses": 5,
         "install": {
           "count": 2,
           "low": 1
         },
         "nps": {
-          "count": 4,
-          "low": 0
+          "count": 5,
+          "low": 1
         },
         "high": {
           "install": 1,
           "nps": 2
         },
         "npsDist": {
+          "5": 1,
           "7": 2,
           "10": 2
         },
@@ -113038,6 +113039,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 1,
+            "low": 1
+          },
           "구매설치": {
             "total": 2,
             "low": 1
@@ -113052,6 +113057,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SECTA9": {
+            "total": 1,
+            "low": 1
+          },
           "NICE": {
             "total": 1,
             "low": 0
@@ -113070,9 +113079,31 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
-          "단말기 설치나 초기 과정이 어려움": 1
+          "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "13:25",
+            "store": "신화코퍼레이션",
+            "storeId": "342557",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "아직초기라서그런지 결제청구날짜등이 불편합니다",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "00:53",
             "store": "며니살롱",
@@ -113129,7 +113160,7 @@ window.SLACK_DATA = {
       },
       "1786816908.657859": {
         "post": "1786816908.657859",
-        "lastSeen": 1786853723.81
+        "lastSeen": 1786854498.406
       }
     },
     "days": {
@@ -137883,7 +137914,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-16 13:15",
+    "at": "2026-08-16 13:28",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
