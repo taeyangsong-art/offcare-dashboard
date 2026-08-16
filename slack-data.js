@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3825,
+  "version": 3826,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113010,15 +113010,15 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "16:16",
+      "updatedAt": "16:43",
       "voc": {
-        "responses": 17,
+        "responses": 18,
         "install": {
           "count": 4,
           "low": 1
         },
         "nps": {
-          "count": 17,
+          "count": 18,
           "low": 4
         },
         "high": {
@@ -113029,7 +113029,7 @@ window.SLACK_DATA = {
           "2": 1,
           "3": 1,
           "5": 2,
-          "7": 2,
+          "7": 3,
           "8": 2,
           "10": 9
         },
@@ -113045,15 +113045,15 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 3,
+            "low": 1
+          },
           "1개월": {
             "total": 7,
             "low": 1
           },
           "3개월": {
-            "total": 2,
-            "low": 1
-          },
-          "12개월": {
             "total": 2,
             "low": 1
           },
@@ -113068,7 +113068,7 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KPN": {
-            "total": 1,
+            "total": 2,
             "low": 0
           },
           "KIS": {
@@ -113266,7 +113266,7 @@ window.SLACK_DATA = {
       },
       "1786816908.657859": {
         "post": "1786816908.657859",
-        "lastSeen": 1786865985.454
+        "lastSeen": 1786866321.937
       }
     },
     "days": {
@@ -138020,7 +138020,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-16 16:39",
+    "at": "2026-08-16 16:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
