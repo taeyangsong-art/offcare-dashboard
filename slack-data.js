@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3800,
+  "version": 3801,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113010,32 +113010,38 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "08:12",
+      "updatedAt": "12:25",
       "voc": {
-        "responses": 3,
+        "responses": 4,
         "install": {
-          "count": 1,
+          "count": 2,
           "low": 1
         },
         "nps": {
-          "count": 3,
+          "count": 4,
           "low": 0
         },
         "high": {
-          "install": 0,
-          "nps": 1
+          "install": 1,
+          "nps": 2
         },
         "npsDist": {
           "7": 2,
-          "10": 1
+          "10": 2
         },
         "installDist": {
-          "1": 1
+          "1": 1,
+          "5": 1
         },
         "byIndustry": {
+          "서비스[학원]": 1,
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 2,
+            "low": 1
+          },
           "12개월": {
             "total": 1,
             "low": 0
@@ -113043,13 +113049,13 @@ window.SLACK_DATA = {
           "1개월": {
             "total": 1,
             "low": 0
-          },
-          "구매설치": {
-            "total": 1,
-            "low": 1
           }
         },
         "byVan": {
+          "NICE": {
+            "total": 1,
+            "low": 0
+          },
           "KSNET": {
             "total": 1,
             "low": 0
@@ -113123,7 +113129,7 @@ window.SLACK_DATA = {
       },
       "1786816908.657859": {
         "post": "1786816908.657859",
-        "lastSeen": 1786850126.749
+        "lastSeen": 1786851031.111
       }
     },
     "days": {
@@ -137877,7 +137883,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-16 12:15",
+    "at": "2026-08-16 12:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
