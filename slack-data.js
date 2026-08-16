@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3819,
+  "version": 3820,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113010,26 +113010,27 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "15:25",
+      "updatedAt": "15:43",
       "voc": {
-        "responses": 11,
+        "responses": 13,
         "install": {
           "count": 4,
           "low": 1
         },
         "nps": {
-          "count": 11,
-          "low": 1
+          "count": 13,
+          "low": 2
         },
         "high": {
           "install": 2,
-          "nps": 6
+          "nps": 7
         },
         "npsDist": {
+          "2": 1,
           "5": 1,
           "7": 2,
           "8": 2,
-          "10": 6
+          "10": 7
         },
         "installDist": {
           "1": 1,
@@ -113043,6 +113044,14 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 1,
+            "low": 0
+          },
+          "12개월": {
+            "total": 2,
+            "low": 1
+          },
           "6개월": {
             "total": 2,
             "low": 1
@@ -113054,23 +113063,23 @@ window.SLACK_DATA = {
           "1개월": {
             "total": 4,
             "low": 0
-          },
-          "12개월": {
-            "total": 1,
-            "low": 0
           }
         },
         "byVan": {
+          "KSNET": {
+            "total": 3,
+            "low": 0
+          },
+          "DAOU": {
+            "total": 2,
+            "low": 2
+          },
           "SECTA9": {
             "total": 2,
             "low": 1
           },
           "KIS": {
             "total": 4,
-            "low": 0
-          },
-          "KSNET": {
-            "total": 2,
             "low": 0
           },
           "SMARTRO": {
@@ -113080,16 +113089,35 @@ window.SLACK_DATA = {
           "NICE": {
             "total": 1,
             "low": 0
-          },
-          "DAOU": {
-            "total": 1,
-            "low": 1
           }
         },
         "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1,
           "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "15:43",
+            "store": "룩스뮤직드럼학원",
+            "storeId": "221525",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 2,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 2,
+                "text": "오류로 인한 불신",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "13:25",
             "store": "신화코퍼레이션",
@@ -113180,7 +113208,7 @@ window.SLACK_DATA = {
       },
       "1786816908.657859": {
         "post": "1786816908.657859",
-        "lastSeen": 1786861829.608
+        "lastSeen": 1786862725.861
       }
     },
     "days": {
@@ -137934,7 +137962,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-16 15:30",
+    "at": "2026-08-16 15:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
