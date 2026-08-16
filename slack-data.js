@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3858,
+  "version": 3859,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113010,16 +113010,16 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "18:13",
+      "updatedAt": "22:17",
       "voc": {
-        "responses": 23,
+        "responses": 24,
         "install": {
           "count": 5,
           "low": 1
         },
         "nps": {
-          "count": 23,
-          "low": 6
+          "count": 24,
+          "low": 7
         },
         "high": {
           "install": 3,
@@ -113028,7 +113028,7 @@ window.SLACK_DATA = {
         "npsDist": {
           "2": 1,
           "3": 1,
-          "5": 4,
+          "5": 5,
           "7": 3,
           "8": 3,
           "10": 11
@@ -113045,6 +113045,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 9,
+            "low": 3
+          },
           "12개월": {
             "total": 6,
             "low": 2
@@ -113052,10 +113056,6 @@ window.SLACK_DATA = {
           "구매설치": {
             "total": 5,
             "low": 1
-          },
-          "1개월": {
-            "total": 8,
-            "low": 2
           },
           "3개월": {
             "total": 2,
@@ -113067,6 +113067,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 9,
+            "low": 4
+          },
           "KSNET": {
             "total": 4,
             "low": 0
@@ -113083,10 +113087,6 @@ window.SLACK_DATA = {
             "total": 2,
             "low": 0
           },
-          "KIS": {
-            "total": 8,
-            "low": 3
-          },
           "DAOU": {
             "total": 2,
             "low": 2
@@ -113101,12 +113101,34 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 3,
           "필요한 기능이 없거나 몰라서 불편": 1,
           "사용중 오류가 자주 발생함": 2,
-          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
           "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "22:17",
+            "store": "빡공수학과문경희영어학원",
+            "storeId": "543487",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "카드정산이 늦어요",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "17:13",
             "store": "지지베베_H",
@@ -113311,7 +113333,7 @@ window.SLACK_DATA = {
       },
       "1786816908.657859": {
         "post": "1786816908.657859",
-        "lastSeen": 1786886124.551
+        "lastSeen": 1786887026.757
       }
     },
     "days": {
@@ -138065,7 +138087,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-16 22:15",
+    "at": "2026-08-16 22:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
