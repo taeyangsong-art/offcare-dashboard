@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 693,
- "updatedAt": "2026-08-16 16:30",
+ "version": 694,
+ "updatedAt": "2026-08-16 18:30",
  "days": 30,
  "items": [
   {
@@ -28785,29 +28785,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784353582878579"
-  },
-  {
-   "ts": "1784280103.551129",
-   "date": "2026-07-17",
-   "time": "18:21",
-   "store": "형과아우 누룽지삼계탕 대구 칠곡점",
-   "biz": "7983401362",
-   "pos": "오케이포스",
-   "content": "오케이포스) 메뉴 숨김 처리 건 재노출 요청드립니다. >>",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "생체 항칠 생오리 양념 불고기\n항칠 생오리 구이\n항칠 오리 능이 백숙\n\n메뉴 재노출 부탁드립니다"
-   ],
-   "rc": 3,
-   "lr": "1784280936.734119",
-   "rfx": 3,
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784280103551129"
   }
  ],
  "ocr": {
