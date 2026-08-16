@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3833,
+  "version": 3834,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113010,20 +113010,20 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "17:13",
+      "updatedAt": "17:55",
       "voc": {
-        "responses": 21,
+        "responses": 22,
         "install": {
-          "count": 4,
+          "count": 5,
           "low": 1
         },
         "nps": {
-          "count": 21,
+          "count": 22,
           "low": 6
         },
         "high": {
-          "install": 2,
-          "nps": 9
+          "install": 3,
+          "nps": 10
         },
         "npsDist": {
           "2": 1,
@@ -113031,20 +113031,24 @@ window.SLACK_DATA = {
           "5": 4,
           "7": 3,
           "8": 3,
-          "10": 9
+          "10": 10
         },
         "installDist": {
           "1": 1,
           "3": 1,
-          "5": 2
+          "5": 3
         },
         "byIndustry": {
+          "도소매": 2,
           "기타": 1,
-          "도소매": 1,
           "서비스[학원]": 1,
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 5,
+            "low": 1
+          },
           "12개월": {
             "total": 5,
             "low": 2
@@ -113060,13 +113064,13 @@ window.SLACK_DATA = {
           "6개월": {
             "total": 2,
             "low": 1
-          },
-          "구매설치": {
-            "total": 4,
-            "low": 1
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 1,
+            "low": 0
+          },
           "KPN": {
             "total": 3,
             "low": 1
@@ -113311,7 +113315,7 @@ window.SLACK_DATA = {
       },
       "1786816908.657859": {
         "post": "1786816908.657859",
-        "lastSeen": 1786870383.468
+        "lastSeen": 1786870832.459
       }
     },
     "days": {
@@ -138065,7 +138069,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-16 17:53",
+    "at": "2026-08-16 18:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
