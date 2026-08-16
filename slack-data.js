@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3826,
+  "version": 3827,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113010,16 +113010,16 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "16:43",
+      "updatedAt": "16:46",
       "voc": {
-        "responses": 18,
+        "responses": 19,
         "install": {
           "count": 4,
           "low": 1
         },
         "nps": {
-          "count": 18,
-          "low": 4
+          "count": 19,
+          "low": 5
         },
         "high": {
           "install": 2,
@@ -113028,7 +113028,7 @@ window.SLACK_DATA = {
         "npsDist": {
           "2": 1,
           "3": 1,
-          "5": 2,
+          "5": 3,
           "7": 3,
           "8": 2,
           "10": 9
@@ -113045,12 +113045,12 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 8,
+            "low": 2
+          },
           "12개월": {
             "total": 3,
-            "low": 1
-          },
-          "1개월": {
-            "total": 7,
             "low": 1
           },
           "3개월": {
@@ -113067,13 +113067,13 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 8,
+            "low": 3
+          },
           "KPN": {
             "total": 2,
             "low": 0
-          },
-          "KIS": {
-            "total": 7,
-            "low": 2
           },
           "KSNET": {
             "total": 3,
@@ -113097,11 +113097,33 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "사용중 오류가 자주 발생함": 2,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
-          "사용중 오류가 자주 발생함": 1,
           "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "16:46",
+            "store": "망원주막",
+            "storeId": "549837",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "주문 알림 소리로 인한 매장 음악소리가 줄어드는게 개선이 안됨.",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "16:13",
             "store": "텐퍼센트 울산보람병원점",
@@ -113266,7 +113288,7 @@ window.SLACK_DATA = {
       },
       "1786816908.657859": {
         "post": "1786816908.657859",
-        "lastSeen": 1786866321.937
+        "lastSeen": 1786867062.772
       }
     },
     "days": {
@@ -138020,7 +138042,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-16 16:45",
+    "at": "2026-08-16 16:57",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
