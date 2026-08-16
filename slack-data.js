@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3828,
+  "version": 3829,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113010,16 +113010,16 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "16:46",
+      "updatedAt": "17:13",
       "voc": {
-        "responses": 19,
+        "responses": 21,
         "install": {
           "count": 4,
           "low": 1
         },
         "nps": {
-          "count": 19,
-          "low": 5
+          "count": 21,
+          "low": 6
         },
         "high": {
           "install": 2,
@@ -113028,9 +113028,9 @@ window.SLACK_DATA = {
         "npsDist": {
           "2": 1,
           "3": 1,
-          "5": 3,
+          "5": 4,
           "7": 3,
-          "8": 2,
+          "8": 3,
           "10": 9
         },
         "installDist": {
@@ -113045,13 +113045,13 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 5,
+            "low": 2
+          },
           "1개월": {
             "total": 8,
             "low": 2
-          },
-          "12개월": {
-            "total": 3,
-            "low": 1
           },
           "3개월": {
             "total": 2,
@@ -113067,13 +113067,17 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 3,
+            "low": 1
+          },
+          "NICE": {
+            "total": 2,
+            "low": 0
+          },
           "KIS": {
             "total": 8,
             "low": 3
-          },
-          "KPN": {
-            "total": 2,
-            "low": 0
           },
           "KSNET": {
             "total": 3,
@@ -113090,18 +113094,37 @@ window.SLACK_DATA = {
           "SMARTRO": {
             "total": 1,
             "low": 0
-          },
-          "NICE": {
-            "total": 1,
-            "low": 0
           }
         },
         "reasonCounts": {
+          "필요한 기능이 없거나 몰라서 불편": 1,
           "사용중 오류가 자주 발생함": 2,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
           "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "17:13",
+            "store": "지지베베_H",
+            "storeId": "224214",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "외부 프리마켓에서 사용할때 전기가 없으면 사용할 수가 없고 영수증출력이 어려워서",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "16:46",
             "store": "망원주막",
@@ -113288,7 +113311,7 @@ window.SLACK_DATA = {
       },
       "1786816908.657859": {
         "post": "1786816908.657859",
-        "lastSeen": 1786867229.068
+        "lastSeen": 1786868124.84
       }
     },
     "days": {
@@ -138042,7 +138065,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-16 17:00",
+    "at": "2026-08-16 17:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
