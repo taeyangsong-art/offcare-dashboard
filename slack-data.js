@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3818,
+  "version": 3819,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113010,46 +113010,50 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "15:16",
+      "updatedAt": "15:25",
       "voc": {
-        "responses": 8,
+        "responses": 11,
         "install": {
-          "count": 2,
+          "count": 4,
           "low": 1
         },
         "nps": {
-          "count": 8,
+          "count": 11,
           "low": 1
         },
         "high": {
-          "install": 1,
-          "nps": 5
+          "install": 2,
+          "nps": 6
         },
         "npsDist": {
           "5": 1,
           "7": 2,
-          "10": 5
+          "8": 2,
+          "10": 6
         },
         "installDist": {
           "1": 1,
-          "5": 1
+          "3": 1,
+          "5": 2
         },
         "byIndustry": {
+          "기타": 1,
+          "도소매": 1,
           "서비스[학원]": 1,
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
-          "1개월": {
-            "total": 4,
-            "low": 0
-          },
           "6개월": {
-            "total": 1,
+            "total": 2,
             "low": 1
           },
           "구매설치": {
-            "total": 2,
+            "total": 4,
             "low": 1
+          },
+          "1개월": {
+            "total": 4,
+            "low": 0
           },
           "12개월": {
             "total": 1,
@@ -113057,23 +113061,23 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SECTA9": {
+            "total": 2,
+            "low": 1
+          },
           "KIS": {
-            "total": 3,
+            "total": 4,
+            "low": 0
+          },
+          "KSNET": {
+            "total": 2,
             "low": 0
           },
           "SMARTRO": {
             "total": 1,
             "low": 0
           },
-          "SECTA9": {
-            "total": 1,
-            "low": 1
-          },
           "NICE": {
-            "total": 1,
-            "low": 0
-          },
-          "KSNET": {
             "total": 1,
             "low": 0
           },
@@ -113133,6 +113137,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "15:25",
+            "store": "온반마켓 신월화곡점",
+            "storeId": "590091",
+            "indBucket": "도소매",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "친절하게 잘해주셨습니다 포스관리및 사용 편리함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "02:43",
             "store": "스타일by유강HAIR",
             "storeId": "544391",
@@ -113164,7 +113180,7 @@ window.SLACK_DATA = {
       },
       "1786816908.657859": {
         "post": "1786816908.657859",
-        "lastSeen": 1786861273.498
+        "lastSeen": 1786861829.608
       }
     },
     "days": {
@@ -137918,7 +137934,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-16 15:21",
+    "at": "2026-08-16 15:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
