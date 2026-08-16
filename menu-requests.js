@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 692,
- "updatedAt": "2026-08-16 09:38",
+ "version": 693,
+ "updatedAt": "2026-08-16 16:30",
  "days": 30,
  "items": [
   {
@@ -28808,32 +28808,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784280103551129"
-  },
-  {
-   "ts": "1784272576.238579",
-   "date": "2026-07-17",
-   "time": "16:16",
-   "store": "사송로또",
-   "biz": "3230403534",
-   "pos": "토스포스",
-   "content": "아래 10개 카테고리를 아이스크림 하나에 모든 상품 통합 요청 주셨습니다\n• 바\n• 펜슬\n• 지펜슬\n• 컵\n• 샌드\n• 치어팩\n• 콘\n• 파르페\n• 홈\n• 박스         → 아이스크림",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "님 혹시 상기 건 차주 월요일 적용 가능으로 안내 드려야 할까요?",
-    "급하다고는 하셨는데 안되면 시간 양해를 구하겠습니다",
-    "감사합니다 !!",
-    "선유님 너무 고생많으십니다"
-   ],
-   "rc": 9,
-   "lr": "1784277517.378239",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784272576238579"
   }
  ],
  "ocr": {

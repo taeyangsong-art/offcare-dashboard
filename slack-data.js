@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3823,
+  "version": 3824,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113010,20 +113010,20 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "16:13",
+      "updatedAt": "16:16",
       "voc": {
-        "responses": 16,
+        "responses": 17,
         "install": {
           "count": 4,
           "low": 1
         },
         "nps": {
-          "count": 16,
+          "count": 17,
           "low": 4
         },
         "high": {
           "install": 2,
-          "nps": 8
+          "nps": 9
         },
         "npsDist": {
           "2": 1,
@@ -113031,7 +113031,7 @@ window.SLACK_DATA = {
           "5": 2,
           "7": 2,
           "8": 2,
-          "10": 8
+          "10": 9
         },
         "installDist": {
           "1": 1,
@@ -113045,12 +113045,12 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
-          "3개월": {
-            "total": 2,
+          "1개월": {
+            "total": 7,
             "low": 1
           },
-          "1개월": {
-            "total": 6,
+          "3개월": {
+            "total": 2,
             "low": 1
           },
           "12개월": {
@@ -113067,6 +113067,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 1,
+            "low": 0
+          },
           "KIS": {
             "total": 7,
             "low": 2
@@ -113211,6 +113215,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "16:16",
+            "store": "하민에스테틱",
+            "storeId": "552542",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "안되던부문도 친절히상담해줫어요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "15:25",
             "store": "온반마켓 신월화곡점",
             "storeId": "590091",
@@ -113240,10 +113256,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1786692108.822169": {
-        "post": "1786692108.822169",
-        "lastSeen": 1786723859.566
-      },
       "1786703962.693599": {
         "post": "1786703962.693599",
         "lastSeen": 1786723859.566
@@ -113254,7 +113266,7 @@ window.SLACK_DATA = {
       },
       "1786816908.657859": {
         "post": "1786816908.657859",
-        "lastSeen": 1786864527.664
+        "lastSeen": 1786865426.2
       }
     },
     "days": {
@@ -138008,7 +138020,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-16 16:15",
+    "at": "2026-08-16 16:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
