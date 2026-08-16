@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3820,
+  "version": 3821,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113010,27 +113010,28 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "15:43",
+      "updatedAt": "15:46",
       "voc": {
-        "responses": 13,
+        "responses": 15,
         "install": {
           "count": 4,
           "low": 1
         },
         "nps": {
-          "count": 13,
-          "low": 2
+          "count": 15,
+          "low": 3
         },
         "high": {
           "install": 2,
-          "nps": 7
+          "nps": 8
         },
         "npsDist": {
           "2": 1,
+          "3": 1,
           "5": 1,
           "7": 2,
           "8": 2,
-          "10": 7
+          "10": 8
         },
         "installDist": {
           "1": 1,
@@ -113044,6 +113045,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 6,
+            "low": 1
+          },
           "3개월": {
             "total": 1,
             "low": 0
@@ -113059,13 +113064,13 @@ window.SLACK_DATA = {
           "구매설치": {
             "total": 4,
             "low": 1
-          },
-          "1개월": {
-            "total": 4,
-            "low": 0
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 6,
+            "low": 1
+          },
           "KSNET": {
             "total": 3,
             "low": 0
@@ -113078,10 +113083,6 @@ window.SLACK_DATA = {
             "total": 2,
             "low": 1
           },
-          "KIS": {
-            "total": 4,
-            "low": 0
-          },
           "SMARTRO": {
             "total": 1,
             "low": 0
@@ -113092,10 +113093,33 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "사용중 오류가 자주 발생함": 1,
           "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "15:46",
+            "store": "마녀의 상점",
+            "storeId": "551541",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "수수료가 너무 비쌉니다.",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:43",
             "store": "룩스뮤직드럼학원",
@@ -113208,7 +113232,7 @@ window.SLACK_DATA = {
       },
       "1786816908.657859": {
         "post": "1786816908.657859",
-        "lastSeen": 1786862725.861
+        "lastSeen": 1786863631.776
       }
     },
     "days": {
@@ -137962,7 +137986,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-16 15:45",
+    "at": "2026-08-16 16:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
