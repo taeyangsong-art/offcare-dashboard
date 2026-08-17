@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3908,
+  "version": 3909,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113326,12 +113326,26 @@ window.SLACK_DATA = {
     },
     "2026-08-17": {
       "counts": {
+        "onboarding": {
+          "김동욱": 1
+        },
         "as": {
           "김동욱": 2
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:58",
+          "store": "코리아피지컬플레이",
+          "biz": "8129101701",
+          "cat": "onboarding",
+          "emp": "김동욱",
+          "req": "개인 pc / 자가 설치 중 설치 어려워하셔서 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포프유프(데스크탑) 온보딩 완료"
+        },
         {
           "time": "09:10",
           "store": "드롭탑 오창(하남) 휴게소점",
@@ -113356,11 +113370,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
+        "online": 2,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "10:00"
+      "updatedAt": "10:05"
     }
   },
   "resp": {
@@ -113373,9 +113387,9 @@ window.SLACK_DATA = {
         "post": "1786816908.657859",
         "lastSeen": 1786894937.29
       },
-      "1786928404.925829": {
-        "post": "1786928404.925829",
-        "lastSeen": 1786928428.918
+      "1786928718.595109": {
+        "post": "1786928718.595109",
+        "lastSeen": 1786929322.166
       }
     },
     "days": {
@@ -138125,11 +138139,26 @@ window.SLACK_DATA = {
             "cat": "as"
           }
         ]
+      },
+      "2026-08-17": {
+        "cnt": 1,
+        "sumMin": 7.843602848052979,
+        "over": 0,
+        "items": [
+          {
+            "hm": "10:00",
+            "min": 7.8,
+            "store": "온리원담마컴퍼니",
+            "biz": "2116801268",
+            "who": "김동욱",
+            "cat": "as"
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-17 10:00",
+    "at": "2026-08-17 10:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
