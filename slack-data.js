@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3967,
+  "version": 3968,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113327,7 +113327,7 @@ window.SLACK_DATA = {
     "2026-08-17": {
       "counts": {
         "as": {
-          "미지정": 20,
+          "미지정": 21,
           "김동욱": 34
         },
         "onboarding": {
@@ -113340,6 +113340,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "21:00",
+          "store": "진원",
+          "biz": "7760303686",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "유선 프린터기 사용 매장으로, 영수증 출력되지 않으신다고 하여 점검 요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "토스포스 프린터 설정 후 정상출력 확인"
+        },
         {
           "time": "20:50",
           "store": "정담",
@@ -114033,26 +114044,27 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 51,
+        "online": 52,
         "offline": 11,
         "unknown": 0
       },
       "updatedAt": "21:00",
       "voc": {
-        "responses": 9,
+        "responses": 10,
         "install": {
           "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 9,
-          "low": 0
+          "count": 10,
+          "low": 1
         },
         "high": {
           "install": 0,
           "nps": 3
         },
         "npsDist": {
+          "3": 1,
           "7": 2,
           "8": 2,
           "9": 2,
@@ -114066,6 +114078,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 1,
+            "low": 1
+          },
           "3개월": {
             "total": 5,
             "low": 0
@@ -114080,6 +114096,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SECTA9": {
+            "total": 3,
+            "low": 1
+          },
           "NICE": {
             "total": 2,
             "low": 0
@@ -114091,14 +114111,35 @@ window.SLACK_DATA = {
           "KPN": {
             "total": 3,
             "low": 0
-          },
-          "SECTA9": {
-            "total": 2,
-            "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
+        },
+        "alerts": [
+          {
+            "time": "21:00",
+            "store": "모렌",
+            "storeId": "340805",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "그저 기기가 이뻐서",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
         "praises": [
           {
             "time": "15:16",
@@ -114124,11 +114165,7 @@ window.SLACK_DATA = {
       },
       "1786953578.085519": {
         "post": "1786953578.085519",
-        "lastSeen": 1786968036.614
-      },
-      "1786968016.388149": {
-        "post": "1786968016.388149",
-        "lastSeen": 1786968036.614
+        "lastSeen": 1786968922.849
       }
     },
     "days": {
@@ -138880,8 +138917,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-17": {
-        "cnt": 43,
-        "sumMin": 980.3837655266125,
+        "cnt": 44,
+        "sumMin": 988.1061547120411,
         "over": 12,
         "items": [
           {
@@ -139227,13 +139264,21 @@ window.SLACK_DATA = {
             "biz": "7162201009",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "21:00",
+            "min": 7.7,
+            "store": "진원",
+            "biz": "7760303686",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-17 21:00",
+    "at": "2026-08-17 21:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
