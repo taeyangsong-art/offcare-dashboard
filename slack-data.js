@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3919,
+  "version": 3920,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113333,19 +113333,7 @@ window.SLACK_DATA = {
           "김동욱": 1
         }
       },
-      "pending": [
-        {
-          "time": "10:30",
-          "store": "유림농수산",
-          "biz": "3901602751",
-          "handler": "김동욱",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "1차 부재"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
         {
           "time": "11:53",
@@ -113551,7 +113539,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 15,
+        "online": 14,
         "offline": 4,
         "unknown": 0
       },
@@ -113570,11 +113558,7 @@ window.SLACK_DATA = {
       },
       "1786931064.234819": {
         "post": "1786931064.234819",
-        "lastSeen": 1786936523.11
-      },
-      "1786934757.588749": {
-        "post": "1786934757.588749",
-        "lastSeen": 1786936523.11
+        "lastSeen": 1786937434.766
       }
     },
     "days": {
@@ -138326,9 +138310,9 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-17": {
-        "cnt": 14,
-        "sumMin": 281.53449722528455,
-        "over": 3,
+        "cnt": 15,
+        "sumMin": 318.5569847424825,
+        "over": 4,
         "items": [
           {
             "hm": "10:00",
@@ -138441,13 +138425,21 @@ window.SLACK_DATA = {
             "biz": "2033508603",
             "who": "김동욱",
             "cat": "as"
+          },
+          {
+            "hm": "11:45",
+            "min": 37,
+            "store": "너를, 봄",
+            "biz": "8110502723",
+            "who": "김동욱",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-17 12:15",
+    "at": "2026-08-17 12:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
