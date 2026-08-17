@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3946,
+  "version": 3947,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113328,7 +113328,7 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김동욱": 33,
-          "미지정": 10
+          "미지정": 11
         },
         "onboarding": {
           "미지정": 4,
@@ -113343,17 +113343,6 @@ window.SLACK_DATA = {
           "time": "16:10",
           "store": "주식회사 웨이브프롬(WAVEFROM)",
           "biz": "8818103860",
-          "handler": "미지정",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "1차 부재"
-          ]
-        },
-        {
-          "time": "16:10",
-          "store": "오리에(oriet.oriet.oriet)",
-          "biz": "4142100859",
           "handler": "미지정",
           "cat": "as",
           "intake": "online",
@@ -113406,6 +113395,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "아펙사포스구형사용중인데 프린터를 USB로 사용중이어서 프린터선 찾아 COM1에 꼽아 설정하라고안내드렸습니다,(선 찾아보고 해보신다고합니다)"
+        },
+        {
+          "time": "16:10",
+          "store": "오리에(oriet.oriet.oriet)",
+          "biz": "4142100859",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "본인 소유 포스기로 결제 시 느림 현상이 있다고 하셔서 단말기 점검 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "부재중이다가 통화중이다가 전화거절함 / 매장에 안계셔서 내일 다시 고객센터로 연락주시기로 하였습니다"
         },
         {
           "time": "16:06",
@@ -113937,7 +113937,7 @@ window.SLACK_DATA = {
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "16:59",
+      "updatedAt": "17:30",
       "voc": {
         "responses": 7,
         "install": {
@@ -114028,15 +114028,15 @@ window.SLACK_DATA = {
       },
       "1786950615.445529": {
         "post": "1786950615.445529",
-        "lastSeen": 1786954526.343
-      },
-      "1786950600.755519": {
-        "post": "1786950600.755519",
-        "lastSeen": 1786954526.343
+        "lastSeen": 1786955429.187
       },
       "1786953578.085519": {
         "post": "1786953578.085519",
-        "lastSeen": 1786954526.343
+        "lastSeen": 1786955429.187
+      },
+      "1786955401.710549": {
+        "post": "1786955401.710549",
+        "lastSeen": 1786955429.187
       }
     },
     "days": {
@@ -138788,9 +138788,9 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-17": {
-        "cnt": 34,
-        "sumMin": 695.5846293767293,
-        "over": 8,
+        "cnt": 35,
+        "sumMin": 768.5347873926162,
+        "over": 9,
         "items": [
           {
             "hm": "10:00",
@@ -139063,13 +139063,21 @@ window.SLACK_DATA = {
             "biz": "4014001703",
             "who": "",
             "cat": "onboarding"
+          },
+          {
+            "hm": "16:10",
+            "min": 73,
+            "store": "오리에(oriet.oriet.oriet)",
+            "biz": "4142100859",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-17 17:15",
+    "at": "2026-08-17 17:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
