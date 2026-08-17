@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3942,
+  "version": 3943,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113326,20 +113326,43 @@ window.SLACK_DATA = {
     },
     "2026-08-17": {
       "counts": {
+        "onboarding": {
+          "미지정": 4,
+          "김동욱": 1
+        },
         "as": {
           "미지정": 10,
           "김동욱": 32
-        },
-        "onboarding": {
-          "미지정": 3,
-          "김동욱": 1
         },
         "menu": {
           "미지정": 2
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "15:45",
+          "store": "아일랜드빈티지커피코리아 주식회사",
+          "biz": "1598103818",
+          "handler": "김동욱",
+          "cat": "delivery",
+          "intake": "online",
+          "reasons": [
+            "1차 부재"
+          ]
+        }
+      ],
       "done": [
+        {
+          "time": "16:34",
+          "store": "카닥터원",
+          "biz": "4014001703",
+          "cat": "onboarding",
+          "emp": "미지정",
+          "req": "mpos1700 + 프론트 연결 온보딩 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "캣+프론트 온보딩완료입니다"
+        },
         {
           "time": "16:19",
           "store": "당도연구소",
@@ -113877,7 +113900,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 40,
+        "online": 42,
         "offline": 8,
         "unknown": 0
       },
@@ -113972,15 +113995,11 @@ window.SLACK_DATA = {
       },
       "1786950615.445529": {
         "post": "1786950615.445529",
-        "lastSeen": 1786952134.329
+        "lastSeen": 1786952723.237
       },
       "1786950600.755519": {
         "post": "1786950600.755519",
-        "lastSeen": 1786952134.329
-      },
-      "1786952083.986539": {
-        "post": "1786952083.986539",
-        "lastSeen": 1786952134.329
+        "lastSeen": 1786952723.237
       }
     },
     "days": {
@@ -138732,8 +138751,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-17": {
-        "cnt": 33,
-        "sumMin": 689.8380216916402,
+        "cnt": 34,
+        "sumMin": 695.5846293767293,
         "over": 8,
         "items": [
           {
@@ -138999,13 +139018,21 @@ window.SLACK_DATA = {
             "biz": "2470303849",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "16:34",
+            "min": 5.7,
+            "store": "카닥터원",
+            "biz": "4014001703",
+            "who": "",
+            "cat": "onboarding"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-17 16:35",
+    "at": "2026-08-17 16:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
