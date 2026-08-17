@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3935,
+  "version": 3936,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113327,8 +113327,8 @@ window.SLACK_DATA = {
     "2026-08-17": {
       "counts": {
         "as": {
-          "김동욱": 27,
-          "미지정": 4
+          "김동욱": 28,
+          "미지정": 5
         },
         "onboarding": {
           "미지정": 2,
@@ -113340,6 +113340,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:27",
+          "store": "단비공작소",
+          "biz": "3237500667",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "유프 영수증 새거로 교체해서 넣었는데 프린터기 내부에서 드르륵 소리나면서 영수증이 뽑혀 나오지 않는다고 하십니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "새 용지일때는 가운데 롤러 제거 후 넣으시라 안내드림"
+        },
+        {
+          "time": "15:15",
+          "store": "오트라운지",
+          "biz": "3720503872",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "포프 (토스 사장님) + 프론트 설치 방법 안내 드렸으나 자가 설치 어려워하셔서 온보당 요청드립니다. 추가로 키오스크 모드도 함께 안내 해주시면 감사하겠습니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "여기 포터프 사용 매장입니다 ! / 토스포스에서 키오스크 모드 끄고 키는방법 설명드렸습니다"
+        },
         {
           "time": "14:57",
           "store": "삼치구이",
@@ -113734,11 +113756,87 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 29,
+        "online": 31,
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "15:15"
+      "updatedAt": "15:30",
+      "voc": {
+        "responses": 6,
+        "install": {
+          "count": 2,
+          "low": 0
+        },
+        "nps": {
+          "count": 6,
+          "low": 0
+        },
+        "high": {
+          "install": 0,
+          "nps": 1
+        },
+        "npsDist": {
+          "7": 2,
+          "8": 2,
+          "9": 1,
+          "10": 1
+        },
+        "installDist": {
+          "4": 2
+        },
+        "byIndustry": {
+          "서비스[학원]": 1,
+          "서비스[뷰티,헤어]": 1
+        },
+        "byTenure": {
+          "구매설치": {
+            "total": 2,
+            "low": 0
+          },
+          "1개월": {
+            "total": 1,
+            "low": 0
+          },
+          "3개월": {
+            "total": 3,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "NICE": {
+            "total": 1,
+            "low": 0
+          },
+          "KPN": {
+            "total": 2,
+            "low": 0
+          },
+          "KIS": {
+            "total": 1,
+            "low": 0
+          },
+          "SECTA9": {
+            "total": 2,
+            "low": 0
+          }
+        },
+        "reasonCounts": {},
+        "alerts": [],
+        "praises": [
+          {
+            "time": "15:16",
+            "store": "언니네볼",
+            "storeId": "467039",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 8,
+            "text": "가끔 서버에러 발생과 유선상담어려움",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
+      }
     }
   },
   "resp": {
@@ -113753,11 +113851,11 @@ window.SLACK_DATA = {
       },
       "1786942213.465279": {
         "post": "1786942213.465279",
-        "lastSeen": 1786947325.103
+        "lastSeen": 1786948228.677
       },
-      "1786947310.847069": {
-        "post": "1786947310.847069",
-        "lastSeen": 1786947325.103
+      "1786948187.655819": {
+        "post": "1786948187.655819",
+        "lastSeen": 1786948228.677
       }
     },
     "days": {
@@ -138509,8 +138607,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-17": {
-        "cnt": 25,
-        "sumMin": 570.5548940738041,
+        "cnt": 26,
+        "sumMin": 578.3222762544949,
         "over": 7,
         "items": [
           {
@@ -138712,13 +138810,21 @@ window.SLACK_DATA = {
             "biz": "2202102062",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "15:15",
+            "min": 7.8,
+            "store": "오트라운지",
+            "biz": "3720503872",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-17 15:15",
+    "at": "2026-08-17 15:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
