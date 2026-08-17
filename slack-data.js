@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3970,
+  "version": 3971,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113327,7 +113327,7 @@ window.SLACK_DATA = {
     "2026-08-17": {
       "counts": {
         "as": {
-          "미지정": 21,
+          "미지정": 22,
           "김동욱": 34
         },
         "onboarding": {
@@ -113340,6 +113340,18 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "21:31",
+          "store": "한남포차",
+          "biz": "1060565946",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "• 결제 진행 시 통신 장애로 나와 확인 요청 드립니다. (고연령으로 어떤 단말기인지 확인 불가)",
+          "hw": "",
+          "urgent": true,
+          "intake": "offline",
+          "note": "매장 내 인터넷이 불가하여 인터넷 회사로 연락 안내"
+        },
         {
           "time": "21:00",
           "store": "진원",
@@ -114045,39 +114057,45 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 52,
-        "offline": 11,
+        "offline": 12,
         "unknown": 0
       },
-      "updatedAt": "21:30",
+      "updatedAt": "21:39",
       "voc": {
-        "responses": 10,
+        "responses": 11,
         "install": {
-          "count": 2,
+          "count": 3,
           "low": 0
         },
         "nps": {
-          "count": 10,
+          "count": 11,
           "low": 1
         },
         "high": {
-          "install": 0,
-          "nps": 3
+          "install": 1,
+          "nps": 4
         },
         "npsDist": {
           "3": 1,
           "7": 2,
           "8": 2,
           "9": 2,
-          "10": 3
+          "10": 4
         },
         "installDist": {
-          "4": 2
+          "4": 2,
+          "5": 1
         },
         "byIndustry": {
+          "도소매": 1,
           "서비스[학원]": 1,
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 3,
+            "low": 0
+          },
           "6개월": {
             "total": 1,
             "low": 1
@@ -114089,13 +114107,13 @@ window.SLACK_DATA = {
           "1개월": {
             "total": 2,
             "low": 0
-          },
-          "구매설치": {
-            "total": 2,
-            "low": 0
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 1,
+            "low": 0
+          },
           "SECTA9": {
             "total": 3,
             "low": 1
@@ -114142,6 +114160,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "21:31",
+            "store": "도아아틀리에(DOA atelier)",
+            "storeId": "589163",
+            "indBucket": "도소매",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "직원응대가 최고였음 설치 간편함, 모를때 상담사연결 원할함, 디자인이 예쁨",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "15:16",
             "store": "언니네볼",
             "storeId": "467039",
@@ -114165,15 +114195,15 @@ window.SLACK_DATA = {
       },
       "1786953578.085519": {
         "post": "1786953578.085519",
-        "lastSeen": 1786969830.807
-      },
-      "1786969501.188799": {
-        "post": "1786969501.188799",
-        "lastSeen": 1786969830.807
+        "lastSeen": 1786970726.664
       },
       "1786969802.546669": {
         "post": "1786969802.546669",
-        "lastSeen": 1786969830.807
+        "lastSeen": 1786970726.664
+      },
+      "1786970375.266689": {
+        "post": "1786970375.266689",
+        "lastSeen": 1786970726.664
       }
     },
     "days": {
@@ -139286,7 +139316,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-17 21:30",
+    "at": "2026-08-17 21:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
