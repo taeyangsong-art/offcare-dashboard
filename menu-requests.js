@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 694,
- "updatedAt": "2026-08-16 18:30",
+ "version": 695,
+ "updatedAt": "2026-08-17 10:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1786931064.234819",
+   "date": "2026-08-17",
+   "time": "10:44",
+   "store": "신돌판(수원직영점)",
+   "biz": "6760902623",
+   "pos": "오케이포스",
+   "content": "돌판파전\n돌판파전17000원\n돌판미나리전17000원\n\n메뉴창을하나더만들어주세요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786931068.079359",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786931064234819"
+  },
   {
    "ts": "1786786400.024389",
    "date": "2026-08-15",
