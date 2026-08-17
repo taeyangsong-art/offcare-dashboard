@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3951,
+  "version": 3952,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113327,7 +113327,7 @@ window.SLACK_DATA = {
     "2026-08-17": {
       "counts": {
         "as": {
-          "미지정": 13,
+          "미지정": 15,
           "김동욱": 34
         },
         "onboarding": {
@@ -113340,6 +113340,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "18:25",
+          "store": "극단 은산",
+          "biz": "3230103611",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "프로늩 단말기 켜지지 않아 확인 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "멀티탭 전원이 나가서 전원 위치 변경 후 정상작동 확인"
+        },
+        {
+          "time": "18:11",
+          "store": "제돈상회",
+          "biz": "5376100459",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "태블릿/프론트와 태블릿 와이파이가 같으나 연결이 되지 않아 확인 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트 토스포스로 재온보딩 완료"
+        },
         {
           "time": "18:01",
           "store": "국민고기 월곡역점",
@@ -113955,11 +113977,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 46,
+        "online": 48,
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "18:11",
+      "updatedAt": "18:25",
       "voc": {
         "responses": 8,
         "install": {
@@ -114050,11 +114072,7 @@ window.SLACK_DATA = {
       },
       "1786953578.085519": {
         "post": "1786953578.085519",
-        "lastSeen": 1786958124.716
-      },
-      "1786957860.101239": {
-        "post": "1786957860.101239",
-        "lastSeen": 1786958124.716
+        "lastSeen": 1786959028.331
       }
     },
     "days": {
@@ -138806,8 +138824,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-17": {
-        "cnt": 38,
-        "sumMin": 881.1827479402224,
+        "cnt": 39,
+        "sumMin": 893.1231189568837,
         "over": 10,
         "items": [
           {
@@ -139113,13 +139131,21 @@ window.SLACK_DATA = {
             "biz": "3061418856",
             "who": "",
             "cat": "onboarding"
+          },
+          {
+            "hm": "18:11",
+            "min": 11.9,
+            "store": "제돈상회",
+            "biz": "5376100459",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-17 18:15",
+    "at": "2026-08-17 18:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
