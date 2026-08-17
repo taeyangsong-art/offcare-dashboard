@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3944,
+  "version": 3945,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113326,13 +113326,13 @@ window.SLACK_DATA = {
     },
     "2026-08-17": {
       "counts": {
+        "as": {
+          "김동욱": 33,
+          "미지정": 10
+        },
         "onboarding": {
           "미지정": 4,
           "김동욱": 1
-        },
-        "as": {
-          "미지정": 10,
-          "김동욱": 32
         },
         "menu": {
           "미지정": 2
@@ -113352,6 +113352,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "16:50",
+          "store": "꼬숩꼬숩 땅콩빵",
+          "biz": "1586600760",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "폭우 피해로 인해 단말기 연결 케이블 모두 물에 침수 되어, 폐기 진행 필요 케이블 영상통화로 확인 후 안내 요청 드립니다 :woman-bowing::skin-tone-4: / 어떤 케이블을 폐기하시고 어떤 케이블 가지고 계셔야 하는지 확인",
+          "hw": "",
+          "intake": "online",
+          "note": "RJ45 케이블 + 프론트 어댑터 구매링크 전달. 프린ㅌ ㅓ어댑터 중고 이카운트 출고"
+        },
         {
           "time": "16:34",
           "store": "카닥터원",
@@ -113900,7 +113911,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 42,
+        "online": 43,
         "offline": 8,
         "unknown": 0
       },
@@ -113995,15 +114006,15 @@ window.SLACK_DATA = {
       },
       "1786950615.445529": {
         "post": "1786950615.445529",
-        "lastSeen": 1786953631.872
+        "lastSeen": 1786954193.354
       },
       "1786950600.755519": {
         "post": "1786950600.755519",
-        "lastSeen": 1786953631.872
+        "lastSeen": 1786954193.354
       },
       "1786953578.085519": {
         "post": "1786953578.085519",
-        "lastSeen": 1786953631.872
+        "lastSeen": 1786954193.354
       }
     },
     "days": {
@@ -139036,7 +139047,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-17 17:00",
+    "at": "2026-08-17 17:09",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
