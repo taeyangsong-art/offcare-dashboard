@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 696,
- "updatedAt": "2026-08-17 14:00",
+ "version": 697,
+ "updatedAt": "2026-08-17 14:53",
  "days": 30,
  "items": [
   {
@@ -28805,30 +28805,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784468911100679"
-  },
-  {
-   "ts": "1784353582.878579",
-   "date": "2026-07-18",
-   "time": "14:46",
-   "store": "옛날국수",
-   "biz": "1243155687",
-   "pos": "퍼스트포스",
-   "content": "• 메뉴 수정 요청드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "*김치찌개* - *20,000원*으로 수정 부탁드립니다. :감사합니다꾸벅:",
-    "오..여기 퍼스트 아니고 토스포스네요 감사합니당 광두님 :감사콩:"
-   ],
-   "rc": 4,
-   "lr": "1784358858.684709",
-   "rfx": 3,
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784353582878579"
   }
  ],
  "ocr": {
