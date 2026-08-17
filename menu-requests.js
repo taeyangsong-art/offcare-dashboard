@@ -3,10 +3,106 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 702,
- "updatedAt": "2026-08-17 17:15",
+ "version": 703,
+ "updatedAt": "2026-08-17 21:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1786969802.546669",
+   "date": "2026-08-17",
+   "time": "21:30",
+   "store": "강창구 찹쌀진순대 광장점",
+   "biz": "2198509446",
+   "pos": "",
+   "content": "광장점 주류 카테고리 메뉴 수정 요청\n21시 30분에 진행 필요\ncc <@U03TLPUT916>",
+   "special": "",
+   "drive": [],
+   "files": 1,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BPQ58NNTZ",
+     "from": "원글",
+     "path": "menu-files/1786969802_546669-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "광장점 주류",
+       "name": "참이슬후레쉬",
+       "price": 5000
+      },
+      {
+       "category": "광장점 주류",
+       "name": "참이슬오리지날",
+       "price": 5000
+      },
+      {
+       "category": "광장점 주류",
+       "name": "처음처럼",
+       "price": 5000
+      },
+      {
+       "category": "광장점 주류",
+       "name": "진로",
+       "price": 5000
+      },
+      {
+       "category": "광장점 주류",
+       "name": "새로",
+       "price": 5000
+      },
+      {
+       "category": "광장점 주류",
+       "name": "카스",
+       "price": 5000
+      },
+      {
+       "category": "광장점 주류",
+       "name": "테라",
+       "price": 5000
+      },
+      {
+       "category": "광장점 주류",
+       "name": "켈리",
+       "price": 5000
+      },
+      {
+       "category": "광장점 주류",
+       "name": "논알코올맥주",
+       "price": 5000
+      },
+      {
+       "category": "광장점 주류",
+       "name": "장수막걸리",
+       "price": 4000
+      },
+      {
+       "category": "광장점 주류",
+       "name": "콜라",
+       "price": 2000
+      },
+      {
+       "category": "광장점 주류",
+       "name": "사이다",
+       "price": 2000
+      },
+      {
+       "category": "광장점 주류",
+       "name": "제로콜라",
+       "price": 2000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1786969810.024029",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786969802546669"
+  },
   {
    "ts": "1786953578.085519",
    "date": "2026-08-17",
