@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3974,
+  "version": 3975,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113327,7 +113327,7 @@ window.SLACK_DATA = {
     "2026-08-17": {
       "counts": {
         "as": {
-          "미지정": 22,
+          "미지정": 23,
           "김동욱": 34
         },
         "onboarding": {
@@ -113340,6 +113340,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "21:39",
+          "store": "도예가있는미술",
+          "biz": "8969601591",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "• 토스포스 내에 주문서 0으로 설정했으나, 지속 주문서 출력되어 확인 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "01088024455 / 프론트 키오스크모드로 사용중이어서 주문서 출력 정상. 전자영수증 설정 방법 안내 완료"
+        },
         {
           "time": "21:31",
           "store": "한남포차",
@@ -114067,7 +114078,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 52,
+        "online": 53,
         "offline": 13,
         "unknown": 0
       },
@@ -114206,11 +114217,7 @@ window.SLACK_DATA = {
       },
       "1786953578.085519": {
         "post": "1786953578.085519",
-        "lastSeen": 1786972551.011
-      },
-      "1786970375.266689": {
-        "post": "1786970375.266689",
-        "lastSeen": 1786972551.011
+        "lastSeen": 1786973435.465
       }
     },
     "days": {
@@ -138962,9 +138969,9 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-17": {
-        "cnt": 44,
-        "sumMin": 988.1061547120411,
-        "over": 12,
+        "cnt": 45,
+        "sumMin": 1031.7390098929404,
+        "over": 13,
         "items": [
           {
             "hm": "10:00",
@@ -139317,13 +139324,21 @@ window.SLACK_DATA = {
             "biz": "7760303686",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "21:39",
+            "min": 43.6,
+            "store": "도예가있는미술",
+            "biz": "8969601591",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-17 22:15",
+    "at": "2026-08-17 22:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
