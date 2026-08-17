@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3924,
+  "version": 3925,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113327,25 +113327,13 @@ window.SLACK_DATA = {
     "2026-08-17": {
       "counts": {
         "as": {
-          "김동욱": 17
+          "김동욱": 18
         },
         "onboarding": {
           "김동욱": 1
         }
       },
-      "pending": [
-        {
-          "time": "11:45",
-          "store": "너를, 봄",
-          "biz": "8110502723",
-          "handler": "김동욱",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "1차 부재"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
         {
           "time": "11:53",
@@ -113358,6 +113346,17 @@ window.SLACK_DATA = {
           "urgent": true,
           "intake": "online",
           "note": "로고 사이즈 20080 해보시라 안내드림."
+        },
+        {
+          "time": "11:45",
+          "store": "너를, 봄",
+          "biz": "8110502723",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "유프 연결 가이드 안내 드렸으나, 자가 설치 어려워 하셔서 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "1차 부재 / 5분 뒤 통화요청 / 프린터 연결 완료"
         },
         {
           "time": "11:38",
@@ -113555,7 +113554,7 @@ window.SLACK_DATA = {
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "13:00"
+      "updatedAt": "13:29"
     }
   },
   "resp": {
@@ -113570,11 +113569,23 @@ window.SLACK_DATA = {
       },
       "1786931064.234819": {
         "post": "1786931064.234819",
-        "lastSeen": 1786940122.103
+        "lastSeen": 1786941027.315
       },
       "1786939200.866719": {
         "post": "1786939200.866719",
-        "lastSeen": 1786940122.103
+        "lastSeen": 1786941027.315
+      },
+      "1786940966.069429": {
+        "post": "1786940966.069429",
+        "lastSeen": 1786941027.315
+      },
+      "1786940549.873639": {
+        "post": "1786940549.873639",
+        "lastSeen": 1786941027.315
+      },
+      "1786940199.008239": {
+        "post": "1786940199.008239",
+        "lastSeen": 1786941027.315
       }
     },
     "days": {
@@ -138455,7 +138466,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-17 13:15",
+    "at": "2026-08-17 13:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
