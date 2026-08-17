@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3972,
+  "version": 3973,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113335,7 +113335,7 @@ window.SLACK_DATA = {
           "김동욱": 1
         },
         "menu": {
-          "미지정": 2
+          "미지정": 3
         }
       },
       "pending": [],
@@ -113351,6 +113351,17 @@ window.SLACK_DATA = {
           "urgent": true,
           "intake": "offline",
           "note": "매장 내 인터넷이 불가하여 인터넷 회사로 연락 안내"
+        },
+        {
+          "time": "21:30",
+          "store": "강창구 찹쌀진순대 광장점",
+          "biz": "2198509446",
+          "cat": "menu",
+          "emp": "미지정",
+          "req": "광장점 주류 카테고리 메뉴 수정 요청",
+          "hw": "",
+          "intake": "offline",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / / 완"
         },
         {
           "time": "21:00",
@@ -114057,7 +114068,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 52,
-        "offline": 12,
+        "offline": 13,
         "unknown": 0
       },
       "updatedAt": "21:39",
@@ -114195,15 +114206,11 @@ window.SLACK_DATA = {
       },
       "1786953578.085519": {
         "post": "1786953578.085519",
-        "lastSeen": 1786971632.519
-      },
-      "1786969802.546669": {
-        "post": "1786969802.546669",
-        "lastSeen": 1786971632.519
+        "lastSeen": 1786972388.533
       },
       "1786970375.266689": {
         "post": "1786970375.266689",
-        "lastSeen": 1786971632.519
+        "lastSeen": 1786972388.533
       }
     },
     "days": {
@@ -139316,7 +139323,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-17 22:00",
+    "at": "2026-08-17 22:13",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 704,
- "updatedAt": "2026-08-17 21:45",
+ "version": 705,
+ "updatedAt": "2026-08-17 22:13",
  "days": 30,
  "items": [
   {
@@ -92,12 +92,101 @@ window.MENU_REQUESTS = {
       }
      ],
      "path": "menu-files/1786969802_546669-0.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BQS2SAC3B",
+     "from": "댓글",
+     "path": "menu-files/1786969802_546669-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "광장점 주류",
+       "name": "참이슬후레쉬",
+       "price": 3900
+      },
+      {
+       "category": "광장점 주류",
+       "name": "참이슬오리지날",
+       "price": 3900
+      },
+      {
+       "category": "광장점 주류",
+       "name": "처음처럼",
+       "price": 3900
+      },
+      {
+       "category": "광장점 주류",
+       "name": "진로",
+       "price": 3900
+      },
+      {
+       "category": "광장점 주류",
+       "name": "새로",
+       "price": 3900
+      },
+      {
+       "category": "광장점 주류",
+       "name": "카스",
+       "price": 3900
+      },
+      {
+       "category": "광장점 주류",
+       "name": "테라",
+       "price": 3900
+      },
+      {
+       "category": "광장점 주류",
+       "name": "켈리",
+       "price": 3900
+      },
+      {
+       "category": "광장점 주류",
+       "name": "논알콜맥주",
+       "price": 3900
+      },
+      {
+       "category": "광장점 주류",
+       "name": "장수막걸리",
+       "price": 3900
+      },
+      {
+       "category": "광장점 주류",
+       "name": "콜라",
+       "price": 2000
+      },
+      {
+       "category": "광장점 주류",
+       "name": "사이다",
+       "price": 2000
+      },
+      {
+       "category": "광장점 주류",
+       "name": "제로콜라",
+       "price": 2000
+      },
+      {
+       "category": "광장점 주류",
+       "name": "환타오렌지",
+       "price": 2000
+      },
+      {
+       "category": "광장점 주류",
+       "name": "환타파인",
+       "price": 2000
+      },
+      {
+       "category": "광장점 주류",
+       "name": "식혜",
+       "price": 2500
+      }
+     ]
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1786969810.024029",
+   "rc": 3,
+   "lr": "1786972071.509309",
    "rfx": 3,
    "status": "wait",
    "handler": null,
