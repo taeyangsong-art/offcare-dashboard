@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3959,
+  "version": 3960,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113327,7 +113327,7 @@ window.SLACK_DATA = {
     "2026-08-17": {
       "counts": {
         "as": {
-          "미지정": 17,
+          "미지정": 18,
           "김동욱": 34
         },
         "onboarding": {
@@ -113340,6 +113340,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "19:45",
+          "store": "스윗굽굽",
+          "biz": "3302402093",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "• 터미널 결제 시 진행 시 오류 발생 \"암호화 미인증 단말 문구 발생\" 확인 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "현재 집이어서 매장 가서 재연락주신다고 함."
+        },
         {
           "time": "19:04",
           "store": "호주면세점직영할인점 대동백화점",
@@ -114000,11 +114011,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 50,
+        "online": 51,
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "19:16",
+      "updatedAt": "19:45",
       "voc": {
         "responses": 9,
         "install": {
@@ -114091,7 +114102,7 @@ window.SLACK_DATA = {
       },
       "1786953578.085519": {
         "post": "1786953578.085519",
-        "lastSeen": 1786963495.547
+        "lastSeen": 1786964434.424
       }
     },
     "days": {
@@ -139180,7 +139191,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-17 19:45",
+    "at": "2026-08-17 20:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
