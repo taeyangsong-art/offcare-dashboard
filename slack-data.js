@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3931,
+  "version": 3932,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113327,8 +113327,8 @@ window.SLACK_DATA = {
     "2026-08-17": {
       "counts": {
         "as": {
-          "김동욱": 25,
-          "미지정": 2
+          "미지정": 3,
+          "김동욱": 26
         },
         "onboarding": {
           "미지정": 2,
@@ -113337,6 +113337,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "14:30",
+          "store": "클래시크커피 (clachic coffee)",
+          "biz": "4162552894",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "대형키오스크 qr 인식 불가로 확인 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "토스포스내에서 디바이스를 usb로 되어있어 수정처리완료입니다."
+        },
+        {
+          "time": "14:30",
+          "store": "불타는 명태",
+          "biz": "5063212534",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "배달 주문 연동 및 용지 출력이 되지 않는다고 하여 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "쿠팡은 비밀번호 찾았는데 배민 못찾음. 익일 이시간에 다시 연락달라고 하심"
+        },
         {
           "time": "14:16",
           "store": "브레디온",
@@ -113676,7 +113698,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 25,
+        "online": 27,
         "offline": 5,
         "unknown": 0
       },
@@ -113695,15 +113717,11 @@ window.SLACK_DATA = {
       },
       "1786931064.234819": {
         "post": "1786931064.234819",
-        "lastSeen": 1786944626.945
+        "lastSeen": 1786945522.684
       },
       "1786942213.465279": {
         "post": "1786942213.465279",
-        "lastSeen": 1786944626.945
-      },
-      "1786944602.462589": {
-        "post": "1786944602.462589",
-        "lastSeen": 1786944626.945
+        "lastSeen": 1786945522.684
       }
     },
     "days": {
@@ -138656,7 +138674,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-17 14:30",
+    "at": "2026-08-17 14:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
