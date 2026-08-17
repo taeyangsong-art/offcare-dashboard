@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3949,
+  "version": 3950,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113326,13 +113326,13 @@ window.SLACK_DATA = {
     },
     "2026-08-17": {
       "counts": {
+        "onboarding": {
+          "미지정": 5,
+          "김동욱": 1
+        },
         "as": {
           "김동욱": 34,
           "미지정": 12
-        },
-        "onboarding": {
-          "미지정": 4,
-          "김동욱": 1
         },
         "menu": {
           "미지정": 2
@@ -113352,6 +113352,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "17:42",
+          "store": "지지오오엠닷컴",
+          "biz": "3061418856",
+          "cat": "onboarding",
+          "emp": "미지정",
+          "req": "컴퓨터 + 프론트 온보딩 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "노트북+프론트 온보딩완료입니다,"
+        },
         {
           "time": "17:30",
           "store": "우리동네와인슈퍼",
@@ -113944,7 +113955,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 46,
+        "online": 47,
         "offline": 8,
         "unknown": 0
       },
@@ -114039,11 +114050,7 @@ window.SLACK_DATA = {
       },
       "1786953578.085519": {
         "post": "1786953578.085519",
-        "lastSeen": 1786957062.927
-      },
-      "1786956126.731789": {
-        "post": "1786956126.731789",
-        "lastSeen": 1786957062.927
+        "lastSeen": 1786957230.418
       }
     },
     "days": {
@@ -138795,8 +138802,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-17": {
-        "cnt": 37,
-        "sumMin": 864.1837360898653,
+        "cnt": 38,
+        "sumMin": 881.1827479402224,
         "over": 10,
         "items": [
           {
@@ -139094,13 +139101,21 @@ window.SLACK_DATA = {
             "biz": "8818103860",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "17:42",
+            "min": 17,
+            "store": "지지오오엠닷컴",
+            "biz": "3061418856",
+            "who": "",
+            "cat": "onboarding"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-17 17:57",
+    "at": "2026-08-17 18:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
