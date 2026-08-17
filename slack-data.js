@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3945,
+  "version": 3946,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113340,6 +113340,28 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "16:10",
+          "store": "주식회사 웨이브프롬(WAVEFROM)",
+          "biz": "8818103860",
+          "handler": "미지정",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "1차 부재"
+          ]
+        },
+        {
+          "time": "16:10",
+          "store": "오리에(oriet.oriet.oriet)",
+          "biz": "4142100859",
+          "handler": "미지정",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "1차 부재"
+          ]
+        },
+        {
           "time": "15:45",
           "store": "아일랜드빈티지커피코리아 주식회사",
           "biz": "1598103818",
@@ -113911,7 +113933,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 43,
+        "online": 45,
         "offline": 8,
         "unknown": 0
       },
@@ -114006,15 +114028,15 @@ window.SLACK_DATA = {
       },
       "1786950615.445529": {
         "post": "1786950615.445529",
-        "lastSeen": 1786954193.354
+        "lastSeen": 1786954526.343
       },
       "1786950600.755519": {
         "post": "1786950600.755519",
-        "lastSeen": 1786954193.354
+        "lastSeen": 1786954526.343
       },
       "1786953578.085519": {
         "post": "1786953578.085519",
-        "lastSeen": 1786954193.354
+        "lastSeen": 1786954526.343
       }
     },
     "days": {
@@ -139047,7 +139069,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-17 17:09",
+    "at": "2026-08-17 17:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
