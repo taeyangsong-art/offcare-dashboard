@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3904,
+  "version": 3905,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113327,7 +113327,7 @@ window.SLACK_DATA = {
     "2026-08-17": {
       "counts": {
         "as": {
-          "김동욱": 1
+          "김동욱": 2
         }
       },
       "pending": [],
@@ -113342,10 +113342,21 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "재온보딩 완료"
+        },
+        {
+          "time": "09:09",
+          "store": "베르트 블룸(Vert bloom)",
+          "biz": "8281902301",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "유선프린터 전원이 들어오지않아 확인 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "프린터 전원 버튼을 모르셨음."
         }
       ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 1,
         "unknown": 0
       },
@@ -138114,7 +138125,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-17 09:15",
+    "at": "2026-08-17 09:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
