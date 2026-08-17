@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 3950,
+  "version": 3951,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113326,32 +113326,32 @@ window.SLACK_DATA = {
     },
     "2026-08-17": {
       "counts": {
+        "as": {
+          "미지정": 13,
+          "김동욱": 34
+        },
         "onboarding": {
           "미지정": 5,
           "김동욱": 1
-        },
-        "as": {
-          "김동욱": 34,
-          "미지정": 12
         },
         "menu": {
           "미지정": 2
         }
       },
-      "pending": [
-        {
-          "time": "15:45",
-          "store": "아일랜드빈티지커피코리아 주식회사",
-          "biz": "1598103818",
-          "handler": "김동욱",
-          "cat": "delivery",
-          "intake": "online",
-          "reasons": [
-            "1차 부재"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
+        {
+          "time": "18:01",
+          "store": "국민고기 월곡역점",
+          "biz": "8398502572",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "오케이포스 사용 중 매출 전송 불가 안내 및 전산 접속 불가 오류 문구 노출 되어 확인 요청 드립니다. ( 주문 불가 )",
+          "hw": "",
+          "urgent": true,
+          "intake": "offline",
+          "note": "OKPOS 완전 종료 후 재실행하여 정상작동 확인"
+        },
         {
           "time": "17:42",
           "store": "지지오오엠닷컴",
@@ -113955,11 +113955,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 47,
-        "offline": 8,
+        "online": 46,
+        "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "17:49",
+      "updatedAt": "18:11",
       "voc": {
         "responses": 8,
         "install": {
@@ -114050,7 +114050,11 @@ window.SLACK_DATA = {
       },
       "1786953578.085519": {
         "post": "1786953578.085519",
-        "lastSeen": 1786957230.418
+        "lastSeen": 1786958124.716
+      },
+      "1786957860.101239": {
+        "post": "1786957860.101239",
+        "lastSeen": 1786958124.716
       }
     },
     "days": {
@@ -139115,7 +139119,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-17 18:00",
+    "at": "2026-08-17 18:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
