@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4014,
+  "version": 4015,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113338,7 +113338,19 @@ window.SLACK_DATA = {
           "미지정": 3
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "23:56",
+          "store": "꾸움집",
+          "biz": "7974501249",
+          "handler": "김동욱",
+          "cat": "menu",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "done": [
         {
           "time": "21:39",
@@ -114078,7 +114090,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 53,
+        "online": 54,
         "offline": 13,
         "unknown": 0
       },
@@ -114209,15 +114221,31 @@ window.SLACK_DATA = {
       }
     },
     "2026-08-18": {
-      "counts": {},
+      "counts": {
+        "menu": {
+          "김규빈": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "08:56",
+          "store": "진 오겹살",
+          "biz": "8911102171",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "신규 설치 예정 메뉴 등록",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! /"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": ""
+      "updatedAt": "09:00"
     }
   },
   "resp": {
@@ -114229,6 +114257,10 @@ window.SLACK_DATA = {
       "1786978605.118459": {
         "post": "1786978605.118459",
         "lastSeen": 1786981567.745
+      },
+      "1787011215.812929": {
+        "post": "1787011215.812929",
+        "lastSeen": 1787011233.833
       }
     },
     "days": {
@@ -139349,13 +139381,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-18 08:45",
+    "at": "2026-08-18 09:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3553,
+    "rows": 3558,
     "named": 254,
     "unknownName": 0,
     "beforeStart": 0,

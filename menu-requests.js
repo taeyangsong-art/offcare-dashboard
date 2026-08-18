@@ -3,10 +3,155 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 708,
- "updatedAt": "2026-08-18 00:30",
+ "version": 709,
+ "updatedAt": "2026-08-18 09:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1787011013.435189",
+   "date": "2026-08-18",
+   "time": "08:56",
+   "store": "진 오겹살",
+   "biz": "8911102171",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "Resized_20260817_204629.jpg.jpeg",
+     "fid": "F0BQYHVLSPN",
+     "from": "댓글",
+     "path": "menu-files/1787011013_435189-0.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "식사",
+       "name": "오겹살",
+       "price": 11000
+      },
+      {
+       "category": "식사",
+       "name": "목살",
+       "price": 11000
+      },
+      {
+       "category": "식사",
+       "name": "갈매기살",
+       "price": 11000
+      },
+      {
+       "category": "식사",
+       "name": "항정살",
+       "price": 11000
+      },
+      {
+       "category": "식사",
+       "name": "쫀득살",
+       "price": 11000
+      },
+      {
+       "category": "식사",
+       "name": "땡초된장(대)",
+       "price": 5000
+      },
+      {
+       "category": "식사",
+       "name": "땡초된장(중)",
+       "price": 3000
+      },
+      {
+       "category": "식사",
+       "name": "된장(대)",
+       "price": 5000
+      },
+      {
+       "category": "식사",
+       "name": "된장(중)",
+       "price": 3000
+      },
+      {
+       "category": "식사",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "식사",
+       "name": "물냉면",
+       "price": 5000
+      },
+      {
+       "category": "식사",
+       "name": "물갈은비빔냉면",
+       "price": 5000
+      },
+      {
+       "category": "식사",
+       "name": "계란찜",
+       "price": 0
+      },
+      {
+       "category": "식사",
+       "name": "술밥",
+       "price": 7000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260817_204633.jpg.jpeg",
+     "fid": "F0BQNL8A93M",
+     "from": "댓글",
+     "path": "menu-files/1787011013_435189-1.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류",
+       "name": "소주",
+       "price": 4000
+      },
+      {
+       "category": "주류",
+       "name": "맥주",
+       "price": 4000
+      },
+      {
+       "category": "주류",
+       "name": "청하",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "음료",
+       "price": 2000
+      },
+      {
+       "category": "주류",
+       "name": "한라산",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "복분자",
+       "price": 13000
+      },
+      {
+       "category": "주류",
+       "name": "식혜",
+       "price": 4000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1787011049.963909",
+   "rfx": 3,
+   "status": "done",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787011013435189"
+  },
   {
    "ts": "1786978605.118459",
    "date": "2026-08-17",
@@ -26,8 +171,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1786979937.030729",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김동욱",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786978605118459"
   },
   {
