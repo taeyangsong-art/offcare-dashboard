@@ -3,10 +3,488 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 734,
- "updatedAt": "2026-08-18 16:55",
+ "version": 735,
+ "updatedAt": "2026-08-18 17:16",
  "days": 30,
  "items": [
+  {
+   "ts": "1787040215.925799",
+   "date": "2026-08-18",
+   "time": "17:03",
+   "store": "파스타 제작소",
+   "biz": "5085127918",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "IMG_0235.jpg.jpeg",
+     "fid": "F0BQVECJZKQ",
+     "from": "댓글",
+     "path": "menu-files/1787040215_925799-0.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "PASTA MENU",
+       "name": "새우 해장 파스타",
+       "price": 13900
+      },
+      {
+       "category": "PASTA MENU",
+       "name": "우삼겹 해장 파스타",
+       "price": 13900
+      },
+      {
+       "category": "PASTA MENU",
+       "name": "토마토 미트 파스타",
+       "price": 12900
+      },
+      {
+       "category": "PASTA MENU",
+       "name": "페페로니 토마토 파스타",
+       "price": 12900
+      },
+      {
+       "category": "PASTA MENU",
+       "name": "토마토 미트볼 파스타",
+       "price": 12900
+      },
+      {
+       "category": "PASTA MENU",
+       "name": "새우 토마토 파스타",
+       "price": 13900
+      },
+      {
+       "category": "PASTA MENU",
+       "name": "우삼겹 토마토 파스타",
+       "price": 13900
+      },
+      {
+       "category": "PASTA MENU",
+       "name": "한우함박스테이크 토마토 파스타",
+       "price": 14900
+      },
+      {
+       "category": "PILAF MENU",
+       "name": "부채살 필라프",
+       "price": 13900
+      },
+      {
+       "category": "PILAF MENU",
+       "name": "부채살 찹스테이크 덮밥",
+       "price": 14900
+      },
+      {
+       "category": "PILAF MENU",
+       "name": "목살 필라프",
+       "price": 11900
+      },
+      {
+       "category": "PILAF MENU",
+       "name": "페페로니 필라프",
+       "price": 11900
+      },
+      {
+       "category": "PILAF MENU",
+       "name": "버섯 베이컨 필라프",
+       "price": 11900
+      },
+      {
+       "category": "PILAF MENU",
+       "name": "김치 필라프",
+       "price": 11900
+      },
+      {
+       "category": "PILAF MENU",
+       "name": "우삼겹 필라프",
+       "price": 11900
+      },
+      {
+       "category": "PILAF MENU",
+       "name": "새우 필라프",
+       "price": 11900
+      },
+      {
+       "category": "PILAF MENU",
+       "name": "우삼겹 김치 필라프",
+       "price": 12900
+      }
+     ]
+    },
+    {
+     "name": "IMG_0234.jpg.jpeg",
+     "fid": "F0BQVED3SGN",
+     "from": "댓글",
+     "path": "menu-files/1787040215_925799-1.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "파스타",
+       "name": "쉬림프 알리오 파스타",
+       "price": 12900
+      },
+      {
+       "category": "파스타",
+       "name": "우삼겹 알리오 파스타",
+       "price": 12900
+      },
+      {
+       "category": "파스타",
+       "name": "쉬림프 바질오일 파스타",
+       "price": 12900
+      },
+      {
+       "category": "파스타",
+       "name": "쉬림프 명란 핫오일 파스타",
+       "price": 13900
+      },
+      {
+       "category": "파스타",
+       "name": "부채살 스테이크 로제 파스타",
+       "price": 15900
+      },
+      {
+       "category": "파스타",
+       "name": "부채살 스테이크 크림파스타",
+       "price": 14900
+      },
+      {
+       "category": "파스타",
+       "name": "부채살 알리오 파스타",
+       "price": 15900
+      },
+      {
+       "category": "파스타",
+       "name": "베이컨 로제 파스타",
+       "price": 12900
+      },
+      {
+       "category": "파스타",
+       "name": "페페로니 로제 파스타",
+       "price": 12900
+      },
+      {
+       "category": "파스타",
+       "name": "새우 로제 파스타",
+       "price": 13900
+      },
+      {
+       "category": "파스타",
+       "name": "우삼겹 로제 파스타",
+       "price": 13900
+      },
+      {
+       "category": "파스타",
+       "name": "까르보나라",
+       "price": 11900
+      },
+      {
+       "category": "파스타",
+       "name": "청양 베이컨 크림파스타",
+       "price": 12900
+      },
+      {
+       "category": "파스타",
+       "name": "베이컨 카레 파스타",
+       "price": 12900
+      },
+      {
+       "category": "파스타",
+       "name": "소세지 크림 파스타",
+       "price": 12900
+      },
+      {
+       "category": "파스타",
+       "name": "새우 크림 파스타",
+       "price": 12900
+      },
+      {
+       "category": "파스타",
+       "name": "우삼겹 크림 파스타",
+       "price": 12900
+      },
+      {
+       "category": "파스타",
+       "name": "베이컨 크림 치즈뇨끼",
+       "price": 13900
+      },
+      {
+       "category": "파스타",
+       "name": "새우 바질크림 파스타",
+       "price": 12900
+      },
+      {
+       "category": "파스타",
+       "name": "새우 명란 핫크림 파스타",
+       "price": 13900
+      }
+     ]
+    },
+    {
+     "name": "IMG_0237.jpg.jpeg",
+     "fid": "F0BR13VSBEG",
+     "from": "댓글",
+     "path": "menu-files/1787040215_925799-2.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "돈까스",
+       "name": "돈까스",
+       "price": 9500
+      },
+      {
+       "category": "돈까스",
+       "name": "치즈돈까스",
+       "price": 12500
+      },
+      {
+       "category": "돈까스",
+       "name": "고구마 치즈돈까스",
+       "price": 12500
+      },
+      {
+       "category": "돈까스",
+       "name": "한우함박스테이크 정식",
+       "price": 17000
+      },
+      {
+       "category": "샐러드",
+       "name": "콜슬로우 샐러드",
+       "price": 5000
+      },
+      {
+       "category": "샐러드",
+       "name": "미니 돈까스 샐러드",
+       "price": 6500
+      },
+      {
+       "category": "샐러드",
+       "name": "치킨텐더 샐러드",
+       "price": 6500
+      },
+      {
+       "category": "사이드 MENU",
+       "name": "미니떡볶이",
+       "price": 8000
+      },
+      {
+       "category": "사이드 MENU",
+       "name": "순살가라아게",
+       "price": 4500
+      },
+      {
+       "category": "사이드 MENU",
+       "name": "잡채 치즈볼",
+       "price": 4000
+      },
+      {
+       "category": "사이드 MENU",
+       "name": "해쉬브라운",
+       "price": 4000
+      },
+      {
+       "category": "사이드 MENU",
+       "name": "케이준 감자튀김",
+       "price": 4500
+      },
+      {
+       "category": "사이드 MENU",
+       "name": "치즈스틱",
+       "price": 4000
+      },
+      {
+       "category": "사이드 MENU",
+       "name": "고구마 치즈스틱",
+       "price": 4000
+      },
+      {
+       "category": "사이드 MENU",
+       "name": "육즙팡팡 소세지",
+       "price": 2000
+      },
+      {
+       "category": "사이드 MENU",
+       "name": "왕새우튀김",
+       "price": 4000
+      },
+      {
+       "category": "사이드 MENU",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "사이드 MENU",
+       "name": "피클 추가",
+       "price": 500
+      },
+      {
+       "category": "사이드 MENU",
+       "name": "김치 추가",
+       "price": 500
+      },
+      {
+       "category": "에이드 MENU",
+       "name": "청포도에이드",
+       "price": 3500
+      },
+      {
+       "category": "에이드 MENU",
+       "name": "자몽에이드",
+       "price": 3500
+      },
+      {
+       "category": "에이드 MENU",
+       "name": "블루베리에이드",
+       "price": 3500
+      },
+      {
+       "category": "에이드 MENU",
+       "name": "레몬에이드",
+       "price": 3500
+      },
+      {
+       "category": "에이드 MENU",
+       "name": "오렌지에이드",
+       "price": 3500
+      },
+      {
+       "category": "에이드 MENU",
+       "name": "아메리카노",
+       "price": 3500
+      },
+      {
+       "category": "에이드 MENU",
+       "name": "코카콜라(355ml)",
+       "price": 2000
+      },
+      {
+       "category": "에이드 MENU",
+       "name": "사이다(355ml)",
+       "price": 2000
+      },
+      {
+       "category": "에이드 MENU",
+       "name": "웰치스제로 포도(355ml)",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "name": "IMG_0236.jpg.jpeg",
+     "fid": "F0BR13WQK3N",
+     "from": "댓글",
+     "path": "menu-files/1787040215_925799-3.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "RISOTTO MENU",
+       "name": "까르보나라 리조또",
+       "price": 11900
+      },
+      {
+       "category": "RISOTTO MENU",
+       "name": "청양 베이컨 리조또",
+       "price": 12900
+      },
+      {
+       "category": "RISOTTO MENU",
+       "name": "베이컨 카레 리조또",
+       "price": 12900
+      },
+      {
+       "category": "RISOTTO MENU",
+       "name": "쉬림프 크림 리조또",
+       "price": 12900
+      },
+      {
+       "category": "RISOTTO MENU",
+       "name": "우삼겹 크림 리조또",
+       "price": 12900
+      },
+      {
+       "category": "RISOTTO MENU",
+       "name": "페페로니 토마토 리조또",
+       "price": 12900
+      },
+      {
+       "category": "RISOTTO MENU",
+       "name": "토마토 미트 리조또",
+       "price": 12900
+      },
+      {
+       "category": "RISOTTO MENU",
+       "name": "새우 토마토 리조또",
+       "price": 12900
+      },
+      {
+       "category": "RISOTTO MENU",
+       "name": "우삼겹 토마토 리조또",
+       "price": 12900
+      },
+      {
+       "category": "RISOTTO MENU",
+       "name": "페페로니 로제 리조또",
+       "price": 12900
+      },
+      {
+       "category": "RISOTTO MENU",
+       "name": "베이컨 로제 리조또",
+       "price": 12900
+      },
+      {
+       "category": "RISOTTO MENU",
+       "name": "쉬림프 로제 리조또",
+       "price": 12900
+      },
+      {
+       "category": "RISOTTO MENU",
+       "name": "우삼겹 로제 리조또",
+       "price": 13900
+      },
+      {
+       "category": "RISOTTO MENU",
+       "name": "한우함박스테이크 토마토 리조또",
+       "price": 14900
+      },
+      {
+       "category": "RISOTTO MENU",
+       "name": "새우 해장 리조또",
+       "price": 13900
+      },
+      {
+       "category": "RISOTTO MENU",
+       "name": "우삼겹 해장 리조또",
+       "price": 13900
+      },
+      {
+       "category": "스테이크 & 샐러드 SET",
+       "name": "목살스테이크 + 샐러드",
+       "price": 18000
+      },
+      {
+       "category": "스테이크 & 샐러드 SET",
+       "name": "한우함박스테이크 + 샐러드",
+       "price": 18000
+      },
+      {
+       "category": "스테이크 & 샐러드 SET",
+       "name": "새우감바스&모닝빵 + 샐러드",
+       "price": 20000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1787040275.110579",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787040215925799"
+  },
   {
    "ts": "1787039560.532559",
    "date": "2026-08-18",
