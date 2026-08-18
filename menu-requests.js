@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 741,
- "updatedAt": "2026-08-18 19:30",
+ "version": 742,
+ "updatedAt": "2026-08-18 22:53",
  "days": 30,
  "items": [
   {
@@ -31270,29 +31270,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784505739652639"
-  },
-  {
-   "ts": "1784468911.100679",
-   "date": "2026-07-19",
-   "time": "22:48",
-   "store": "강창구찹쌀진순대 양재포이점",
-   "biz": "3351902167",
-   "pos": "오케이포스",
-   "content": "식사메뉴 얼큰내장국밥 12,000 되있는데 11,000 으로 변경부탁드립니다 감사합니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "001396"
-   ],
-   "rc": 2,
-   "lr": "1784506791.151899",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784468911100679"
   }
  ],
  "ocr": {
