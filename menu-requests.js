@@ -3,10 +3,605 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 710,
- "updatedAt": "2026-08-18 09:15",
+ "version": 711,
+ "updatedAt": "2026-08-18 09:31",
  "days": 30,
  "items": [
+  {
+   "ts": "1787012763.079479",
+   "date": "2026-08-18",
+   "time": "09:26",
+   "store": "강창구찹쌀진순대 과천펜타원점",
+   "biz": "6103262196",
+   "pos": "",
+   "content": "메뉴 가격 수정",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "추어탕 가격 ₩11,000 수정"
+   ],
+   "rc": 2,
+   "lr": "1787012769.566369",
+   "rfx": 3,
+   "status": "done",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787012763079479"
+  },
+  {
+   "ts": "1787012560.535879",
+   "date": "2026-08-18",
+   "time": "09:22",
+   "store": "멕시코 김밥 브리또 화도묵현점",
+   "biz": "6974501110",
+   "pos": "토스포스",
+   "content": "토스포스 설치예정입니다. 메뉴판첨부하니 등록요청합니다.(테이블3, 포장5)",
+   "special": "메뉴판첨부하니 등록요청합니다.",
+   "drive": [
+    "https://drive.google.com/open?id=1y6moNHzlinL9ViLkUsGguEHXDZP2eGpx"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787012563.700679",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787012560535879"
+  },
+  {
+   "ts": "1787012478.576339",
+   "date": "2026-08-18",
+   "time": "09:21",
+   "store": "강창구 찹쌀진순대 광장점",
+   "biz": "2198509446",
+   "pos": "",
+   "content": "카테고리 삭제 및 메뉴 수정",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BRPC0AZ5W",
+     "from": "댓글",
+     "path": "menu-files/1787012478_576339-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "식사류",
+       "name": "순대국",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "얼큰순대국",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "인삼순대국",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "토마토 순대국",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "마라 순대국",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "순대국(특)",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "황태해장국",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "뼈해장국",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "얼큰순대라면",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "내장국밥",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "진추어탕",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "식사류",
+       "name": "광장점 싯가상품",
+       "price": 0
+      },
+      {
+       "category": "식사류",
+       "name": "황금 고구마칩",
+       "price": 3900
+      },
+      {
+       "category": "식사류",
+       "name": "찹쌀누룽지",
+       "price": 3900
+      },
+      {
+       "category": "식사류",
+       "name": "21곡 두부과자",
+       "price": 3000
+      },
+      {
+       "category": "식사류",
+       "name": "누룽지스낵",
+       "price": 2000
+      },
+      {
+       "category": "식사류",
+       "name": "현미쌀과자",
+       "price": 1000
+      },
+      {
+       "category": "식사류",
+       "name": "찹쌀꿀약과",
+       "price": 500
+      },
+      {
+       "category": "식사류",
+       "name": "정식(추가)",
+       "price": 5000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BQDKWMAR5",
+     "from": "댓글",
+     "path": "menu-files/1787012478_576339-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "안주류",
+       "name": "3색 수제순대",
+       "price": 9000
+      },
+      {
+       "category": "안주류",
+       "name": "술국",
+       "price": 19000
+      },
+      {
+       "category": "안주류",
+       "name": "편백순대수육",
+       "price": 32000
+      },
+      {
+       "category": "안주류",
+       "name": "편백수육",
+       "price": 32000
+      },
+      {
+       "category": "안주류",
+       "name": "불껍데기",
+       "price": 10000
+      },
+      {
+       "category": "안주류",
+       "name": "편육",
+       "price": 16000
+      },
+      {
+       "category": "안주류",
+       "name": "사골감자탕",
+       "price": 35000
+      },
+      {
+       "category": "안주류",
+       "name": "순대곱창전골",
+       "price": 32000
+      },
+      {
+       "category": "안주류",
+       "name": "야채철판볶음",
+       "price": 32000
+      },
+      {
+       "category": "안주류",
+       "name": "불막창",
+       "price": 14000
+      },
+      {
+       "category": "안주류",
+       "name": "돼지꼬리구이",
+       "price": 18000
+      },
+      {
+       "category": "안주류",
+       "name": "볶음밥",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BQWVB5BRP",
+     "from": "댓글",
+     "path": "menu-files/1787012478_576339-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "식사류",
+       "name": "순대국",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "마라 순대국",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "토마토 순대국",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "인삼순대국",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "얼큰순대국",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "순대만",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "마라 순대만",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "토마토 순대만",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "인삼 순대만",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "얼큰순대국(순대만)",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "고기만",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "마라 고기만",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "토마토 고기만",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "인삼 고기만",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "얼큰순대국(고기만)",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "순대국정식",
+       "price": 16000
+      },
+      {
+       "category": "식사류",
+       "name": "마라순대국정식",
+       "price": 17000
+      },
+      {
+       "category": "식사류",
+       "name": "토마토순대국정식",
+       "price": 17000
+      },
+      {
+       "category": "식사류",
+       "name": "인삼순대국정식",
+       "price": 17000
+      },
+      {
+       "category": "식사류",
+       "name": "뼈해장국정식",
+       "price": 16000
+      },
+      {
+       "category": "식사류",
+       "name": "내장국밥정식",
+       "price": 16000
+      },
+      {
+       "category": "식사류",
+       "name": "뼈해장국",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "내장국밥",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "등심돈까스",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "치즈돈까스",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "고구마치즈돈까스",
+       "price": 11000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BQT2QDBT8",
+     "from": "댓글",
+     "path": "menu-files/1787012478_576339-3.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "식사류",
+       "name": "뼈해장국",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "내장국밥",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "진추어탕",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "황태해장국",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "등심돈까스",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "치즈돈까스",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "고구마치즈돈까스",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "물냉면",
+       "price": 9000
+      },
+      {
+       "category": "식사류",
+       "name": "비빔냉면",
+       "price": 9000
+      },
+      {
+       "category": "식사류",
+       "name": "순대국(특)",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "순대만(특)",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "고기만(특)",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "얼큰순대국정식",
+       "price": 17000
+      },
+      {
+       "category": "식사류",
+       "name": "마라순대국정식",
+       "price": 17000
+      },
+      {
+       "category": "식사류",
+       "name": "토마토순대국정식",
+       "price": 17000
+      },
+      {
+       "category": "식사류",
+       "name": "인삼순대국정식",
+       "price": 17000
+      },
+      {
+       "category": "식사류",
+       "name": "얼큰순대라면정식",
+       "price": 16000
+      },
+      {
+       "category": "식사류",
+       "name": "내장국밥정식",
+       "price": 16000
+      },
+      {
+       "category": "식사류",
+       "name": "순대국정식",
+       "price": 16000
+      },
+      {
+       "category": "식사류",
+       "name": "뼈해장국정식",
+       "price": 16000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BQYMKV25S",
+     "from": "댓글",
+     "path": "menu-files/1787012478_576339-4.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류&음료",
+       "name": "콜라",
+       "price": 2000
+      },
+      {
+       "category": "주류&음료",
+       "name": "사이다",
+       "price": 2000
+      },
+      {
+       "category": "주류&음료",
+       "name": "제로콜라",
+       "price": 2000
+      },
+      {
+       "category": "주류&음료",
+       "name": "환타 파인애플",
+       "price": 2000
+      },
+      {
+       "category": "주류&음료",
+       "name": "참이슬후레쉬",
+       "price": 3900
+      },
+      {
+       "category": "주류&음료",
+       "name": "참이슬오리지날",
+       "price": 3900
+      },
+      {
+       "category": "주류&음료",
+       "name": "처음처럼",
+       "price": 3900
+      },
+      {
+       "category": "주류&음료",
+       "name": "진로제로슈거",
+       "price": 5000
+      },
+      {
+       "category": "주류&음료",
+       "name": "새로",
+       "price": 3900
+      },
+      {
+       "category": "주류&음료",
+       "name": "장수막걸리",
+       "price": 3900
+      },
+      {
+       "category": "주류&음료",
+       "name": "참이슬후레쉬",
+       "price": 3900
+      },
+      {
+       "category": "주류&음료",
+       "name": "카스",
+       "price": 3900
+      },
+      {
+       "category": "주류&음료",
+       "name": "테라",
+       "price": 3900
+      },
+      {
+       "category": "주류&음료",
+       "name": "켈리",
+       "price": 3900
+      },
+      {
+       "category": "주류&음료",
+       "name": "청하",
+       "price": 6000
+      },
+      {
+       "category": "주류&음료",
+       "name": "사이다",
+       "price": 2000
+      },
+      {
+       "category": "주류&음료",
+       "name": "환타오렌지",
+       "price": 2000
+      },
+      {
+       "category": "주류&음료",
+       "name": "펩시",
+       "price": 2000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "back up"
+   ],
+   "rc": 3,
+   "lr": "1787012531.878759",
+   "rfx": 3,
+   "status": "done",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787012478576339"
+  },
   {
    "ts": "1787011343.497909",
    "date": "2026-08-18",
