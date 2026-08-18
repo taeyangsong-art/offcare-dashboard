@@ -3,10 +3,34 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 709,
- "updatedAt": "2026-08-18 09:00",
+ "version": 710,
+ "updatedAt": "2026-08-18 09:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1787011343.497909",
+   "date": "2026-08-18",
+   "time": "09:02",
+   "store": "강창구 찹쌀진순대 광장점",
+   "biz": "2198509446",
+   "pos": "",
+   "content": "과자 카테고리 생성 및 메뉴 추가",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "과자\n황금 고구마칩 ₩ 3,900\n찹쌀누룽지 ₩ 3,900\n21곡두부과자 ₩ 3,000\n누룽지스낵 ₩ 2,000\n현미쌀과자 ₩ 1,000\n꿀약과 ₩ 500",
+    "제가할게유"
+   ],
+   "rc": 4,
+   "lr": "1787011418.865569",
+   "rfx": 3,
+   "status": "done",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787011343497909"
+  },
   {
    "ts": "1787011013.435189",
    "date": "2026-08-18",
@@ -166,12 +190,15 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [
-    "OKPOS 다 찾아봤으나 없음.."
+    "OKPOS 다 찾아봤으나 없음..",
+    "유플매장\n복숭아요거트산도 없음 / 바통 츄러스 휘낭시에 없음",
+    "바통 츄러스 휘낭시에 3000\n복숭아요거트산도 8000",
+    "완료"
    ],
-   "rc": 2,
-   "lr": "1786979937.030729",
+   "rc": 5,
+   "lr": "1787011436.621209",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김동욱",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786978605118459"
   },
