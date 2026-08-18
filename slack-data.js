@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4079,
+  "version": 4080,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -114233,7 +114233,7 @@ window.SLACK_DATA = {
           "김기범": 5
         },
         "onboarding": {
-          "최민석": 6,
+          "최민석": 7,
           "김현기": 1,
           "김규빈": 2,
           "고경림": 7,
@@ -114309,6 +114309,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "점주님 자체해결 완료"
+        },
+        {
+          "time": "20:00",
+          "store": "살랑공방",
+          "biz": "5340303670",
+          "cat": "onboarding",
+          "emp": "최민석",
+          "req": "포프(노트북) 온보딩 도움 요청드립니다. 결제 방법도 안내 부탁드립니다. (20시)",
+          "hw": "",
+          "intake": "online",
+          "note": "5분 뒤 재연락 요청 / 포프유프 온보딩 완료"
         },
         {
           "time": "19:57",
@@ -116631,11 +116642,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 170,
+        "online": 171,
         "offline": 44,
         "unknown": 0
       },
-      "updatedAt": "20:45",
+      "updatedAt": "20:49",
       "ob": {
         "count": 27,
         "byEmp": {
@@ -116861,13 +116872,13 @@ window.SLACK_DATA = {
         ]
       },
       "voc": {
-        "responses": 13,
+        "responses": 14,
         "install": {
           "count": 4,
           "low": 0
         },
         "nps": {
-          "count": 13,
+          "count": 14,
           "low": 1
         },
         "high": {
@@ -116876,7 +116887,7 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "0": 1,
-          "6": 1,
+          "6": 2,
           "8": 2,
           "9": 2,
           "10": 7
@@ -116892,15 +116903,15 @@ window.SLACK_DATA = {
           "요식업": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 5,
+            "low": 0
+          },
           "12개월": {
             "total": 4,
             "low": 1
           },
           "구매설치": {
-            "total": 4,
-            "low": 0
-          },
-          "3개월": {
             "total": 4,
             "low": 0
           },
@@ -116910,6 +116921,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SECTA9": {
+            "total": 2,
+            "low": 0
+          },
           "KSNET": {
             "total": 1,
             "low": 1
@@ -116924,10 +116939,6 @@ window.SLACK_DATA = {
           },
           "KOCES": {
             "total": 3,
-            "low": 0
-          },
-          "SECTA9": {
-            "total": 1,
             "low": 0
           }
         },
@@ -116987,19 +116998,15 @@ window.SLACK_DATA = {
       },
       "1787032646.668179": {
         "post": "1787032646.668179",
-        "lastSeen": 1787053526.423
+        "lastSeen": 1787053754.557
       },
       "1787050824.044229": {
         "post": "1787050824.044229",
         "lastSeen": 1787050835.581
       },
-      "1787050800.119929": {
-        "post": "1787050800.119929",
-        "lastSeen": 1787053526.423
-      },
       "1787053501.222369": {
         "post": "1787053501.222369",
-        "lastSeen": 1787053526.423
+        "lastSeen": 1787053754.557
       }
     },
     "days": {
@@ -142118,9 +142125,9 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-18": {
-        "cnt": 107,
-        "sumMin": 2040.44663340648,
-        "over": 20,
+        "cnt": 108,
+        "sumMin": 2087.786134588718,
+        "over": 21,
         "items": [
           {
             "hm": "09:00",
@@ -142977,13 +142984,21 @@ window.SLACK_DATA = {
             "biz": "1952300573",
             "who": "최민석",
             "cat": "as"
+          },
+          {
+            "hm": "20:00",
+            "min": 47.3,
+            "store": "살랑공방",
+            "biz": "5340303670",
+            "who": "최민석",
+            "cat": "onboarding"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-18 20:45",
+    "at": "2026-08-18 20:49",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
