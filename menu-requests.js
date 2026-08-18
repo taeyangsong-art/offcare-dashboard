@@ -3,10 +3,193 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 733,
- "updatedAt": "2026-08-18 15:46",
+ "version": 734,
+ "updatedAt": "2026-08-18 16:55",
  "days": 30,
  "items": [
+  {
+   "ts": "1787039560.532559",
+   "date": "2026-08-18",
+   "time": "16:52",
+   "store": "프리티케롯(The Pretty Carrot)",
+   "biz": "8493200672",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BQX9U01AN",
+     "from": "댓글",
+     "path": "menu-files/1787039560_532559-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "COFFEE",
+       "name": "핸드드립 블리비아 예가체프",
+       "price": 7000
+      },
+      {
+       "category": "COFFEE",
+       "name": "디카페인 콜드브루",
+       "price": 7000
+      },
+      {
+       "category": "COFFEE",
+       "name": "아메리카노",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페모카",
+       "price": 6000
+      },
+      {
+       "category": "COFFEE",
+       "name": "Latte 카페라떼",
+       "price": 5500
+      },
+      {
+       "category": "COFFEE",
+       "name": "바닐라 라떼",
+       "price": 6000
+      },
+      {
+       "category": "COFFEE",
+       "name": "카라멜 라떼",
+       "price": 6000
+      },
+      {
+       "category": "COFFEE",
+       "name": "카라멜 마끼아또",
+       "price": 6000
+      },
+      {
+       "category": "COFFEE",
+       "name": "카푸치노",
+       "price": 5500
+      },
+      {
+       "category": "COFFEE",
+       "name": "녹차라떼",
+       "price": 6000
+      },
+      {
+       "category": "COFFEE",
+       "name": "아이스 달고나 라떼",
+       "price": 7000
+      },
+      {
+       "category": "COFFEE",
+       "name": "아이스 조리퐁 라떼",
+       "price": 7000
+      },
+      {
+       "category": "COFFEE",
+       "name": "밀크티 라떼",
+       "price": 6500
+      },
+      {
+       "category": "COFFEE",
+       "name": "검은콩 라떼",
+       "price": 6500
+      },
+      {
+       "category": "COFFEE",
+       "name": "핫초코",
+       "price": 6000
+      },
+      {
+       "category": "COFFEE",
+       "name": "아이스초코",
+       "price": 6500
+      },
+      {
+       "category": "TEA & DRINK",
+       "name": "시그니처 착즙 당근쥬스",
+       "price": 7000
+      },
+      {
+       "category": "TEA & DRINK",
+       "name": "딸기 라떼 [ 계절메뉴 ]",
+       "price": 7000
+      },
+      {
+       "category": "TEA & DRINK",
+       "name": "아이스 에이드 [ 청포도 ,레몬 ,자몽 ,매실 ,오렌지,파인 ]",
+       "price": 6500
+      },
+      {
+       "category": "TEA & DRINK",
+       "name": "과일 스무디( 딸기, 망고, 홍시 )",
+       "price": 6500
+      },
+      {
+       "category": "TEA & DRINK",
+       "name": "애플쥬스 [ 병음료 ]",
+       "price": 0
+      },
+      {
+       "category": "TEA & DRINK",
+       "name": "둥글레차 , 녹차 (티백)",
+       "price": 4500
+      },
+      {
+       "category": "TEA & DRINK",
+       "name": "유자차",
+       "price": 6000
+      },
+      {
+       "category": "TEA & DRINK",
+       "name": "수제 매실차",
+       "price": 7000
+      },
+      {
+       "category": "TEA & DRINK",
+       "name": "레몬차",
+       "price": 7000
+      },
+      {
+       "category": "TEA & DRINK",
+       "name": "수제 대추차 [ 동절기 ]",
+       "price": 7500
+      },
+      {
+       "category": "DISH",
+       "name": "프렌치 토스트 & 제철과일",
+       "price": 14000
+      },
+      {
+       "category": "DISH",
+       "name": "눈꽃빙수 [ 하절기 ]",
+       "price": 0
+      },
+      {
+       "category": "DISH",
+       "name": "수제 단호박죽 [ 동절기 ]",
+       "price": 7500
+      },
+      {
+       "category": "DISH",
+       "name": "수제 단팥죽 [ 동절기 ]",
+       "price": 7500
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "온도 옵션 X 따로따로 작업"
+   ],
+   "rc": 2,
+   "lr": "1787039573.645329",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787039560532559"
+  },
   {
    "ts": "1787035273.429669",
    "date": "2026-08-18",
