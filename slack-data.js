@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4031,
+  "version": 4032,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -114223,9 +114223,9 @@ window.SLACK_DATA = {
     "2026-08-18": {
       "counts": {
         "as": {
-          "배선유": 12,
-          "김규빈": 3,
-          "김현기": 6,
+          "김현기": 8,
+          "김규빈": 4,
+          "배선유": 13,
           "김동욱": 11,
           "고경림": 8,
           "서상원": 2
@@ -114264,6 +114264,50 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "12:29",
+          "store": "서프그라운드",
+          "biz": "7834000187",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "*배민연동 관련 설정*",
+          "hw": "",
+          "intake": "online",
+          "note": "노트북에 또 깔게되면 앞으로 주문을 전부 배민으로 밀어야해서 추천하지 않음 / 태블릿에서 2장 나오게 설정해서 쓰기로 함"
+        },
+        {
+          "time": "12:15",
+          "store": "필라테스 앤 자이로토닉",
+          "biz": "1831103384",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "유선프린터 용지갈아끼울때마다 헛도는 증상이 있어 확인부탁드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "가운데 심지 제거 후 사용"
+        },
+        {
+          "time": "12:12",
+          "store": "주식회사 스포닷",
+          "biz": "4618103744",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "*OFF PG → 다중TID 전환건* / 재온보딩 요청",
+          "hw": "",
+          "intake": "online",
+          "note": "완료입니다. / 진행해주셔서 감사합니다 선유님!! : ) 진행해주셔서 감사합니다 선유님!! : )"
+        },
+        {
+          "time": "12:05",
+          "store": "서프그라운드",
+          "biz": "7834000187",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "*아이패드+프론트*/ 오전 중 노트북 + TS400W 연결 세팅 후 프론트 해제되어 지원 요청",
+          "hw": "",
+          "intake": "online",
+          "note": "잠시만 대기 / 아이패드 자체 설정 변경 후 연결 완료"
+        },
         {
           "time": "12:04",
           "store": "홀인원꼬마김밥",
@@ -114905,11 +114949,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 41,
+        "online": 45,
         "offline": 18,
         "unknown": 0
       },
-      "updatedAt": "12:15",
+      "updatedAt": "12:30",
       "ob": {
         "count": 1,
         "byEmp": {
@@ -114925,6 +114969,41 @@ window.SLACK_DATA = {
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785811347364599"
           }
         ]
+      },
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 0,
+          "low": 0
+        },
+        "nps": {
+          "count": 1,
+          "low": 0
+        },
+        "high": {
+          "install": 0,
+          "nps": 0
+        },
+        "npsDist": {
+          "9": 1
+        },
+        "installDist": {},
+        "byIndustry": {},
+        "byTenure": {
+          "3개월": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "SECTA9": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {},
+        "alerts": [],
+        "praises": []
       }
     }
   },
@@ -114938,9 +115017,13 @@ window.SLACK_DATA = {
         "post": "1786978605.118459",
         "lastSeen": 1786981567.745
       },
-      "1787022900.352319": {
-        "post": "1787022900.352319",
-        "lastSeen": 1787022925.451
+      "1787023824.036849": {
+        "post": "1787023824.036849",
+        "lastSeen": 1787023831.66
+      },
+      "1787023802.277889": {
+        "post": "1787023802.277889",
+        "lastSeen": 1787023831.66
       }
     },
     "days": {
@@ -140059,8 +140142,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-18": {
-        "cnt": 13,
-        "sumMin": 103.05049472252527,
+        "cnt": 14,
+        "sumMin": 111.0205477396647,
         "over": 0,
         "items": [
           {
@@ -140166,13 +140249,21 @@ window.SLACK_DATA = {
             "biz": "5443601643",
             "who": "배선유",
             "cat": "as"
+          },
+          {
+            "hm": "12:15",
+            "min": 8,
+            "store": "필라테스 앤 자이로토닉",
+            "biz": "1831103384",
+            "who": "김규빈",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-18 12:15",
+    "at": "2026-08-18 12:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
