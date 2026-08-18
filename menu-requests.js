@@ -3,10 +3,43 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 738,
- "updatedAt": "2026-08-18 18:43",
+ "version": 739,
+ "updatedAt": "2026-08-18 19:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1787046429.276409",
+   "date": "2026-08-18",
+   "time": "18:47",
+   "store": "강창구 찹쌀진순대 광장점",
+   "biz": "2198509446",
+   "pos": "",
+   "content": "메뉴 출력 변경",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BR1S73TPE",
+     "from": "댓글",
+     "path": "menu-files/1787046429_276409-0.png",
+     "kind": "other",
+     "menu": []
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "15분 동안 싸웠는데 제가졌습니다. 엣지....... 후.. 강하다\n 이거 하나만 봐주세여ㅠ 바쁘신데 죄송함다",
+    "광장점\n맛보기부추추가\n홀프린터 출력안되게 부탁드립니다."
+   ],
+   "rc": 3,
+   "lr": "1787047014.343009",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787046429276409"
+  },
   {
    "ts": "1787045159.361179",
    "date": "2026-08-18",
@@ -24,7 +57,7 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1787045163.577269",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김현기",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787045159361179"
   },
