@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 730,
- "updatedAt": "2026-08-18 15:15",
+ "version": 731,
+ "updatedAt": "2026-08-18 15:24",
  "days": 30,
  "items": [
   {
@@ -20,9 +20,13 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1787033688.885729",
+   "replies": [
+    "대표님이랑 말이 안통해요.... :냥냥단_눈물:  프리저브드란 메뉴가 혹시 기존에는 카테고리로 들어가있었나욤..?",
+    "헉 혹시 통화 드린건가요?",
+    "아하, 감사합니당!! 채팅으로 인입됐는데 이전 내역에도 이번에도 계속 헷갈리게 말씀하셔소,,, :루피눈물: 확인 감사드려용!"
+   ],
+   "rc": 8,
+   "lr": "1787034048.308019",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
