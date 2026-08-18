@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4021,
+  "version": 4022,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -114225,10 +114225,13 @@ window.SLACK_DATA = {
         "as": {
           "김동욱": 5,
           "배선유": 4,
-          "고경림": 2
+          "고경림": 3
         },
         "onboarding": {
           "배선유": 1
+        },
+        "transfer": {
+          "김동욱": 1
         },
         "menu": {
           "김규빈": 4,
@@ -114269,6 +114272,28 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "20일 예약"
+        },
+        {
+          "time": "10:00",
+          "store": "댕조아",
+          "biz": "",
+          "cat": "transfer",
+          "emp": "김동욱",
+          "req": "8월 18일 오전 10시 20분 / 메뉴 복사 O / 프론트, 태블릿, 유프",
+          "hw": "",
+          "intake": "online",
+          "note": "포프유프(태블릿) 명의변경 완료"
+        },
+        {
+          "time": "09:50",
+          "store": "시골마루",
+          "biz": "1304668196",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "포스기/ '메인08 포스와 버전이 일치하지 않음' 메시지 발생하여 원격 점검 요청",
+          "hw": "",
+          "intake": "offline",
+          "note": "저장공간 부족 업데이트 안되는증상 저장공간 확보후 업데이트후 정상작동확인"
         },
         {
           "time": "09:40",
@@ -114426,11 +114451,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 10,
-        "offline": 7,
+        "online": 11,
+        "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "10:05"
+      "updatedAt": "10:30"
     }
   },
   "resp": {
@@ -114442,10 +114467,6 @@ window.SLACK_DATA = {
       "1786978605.118459": {
         "post": "1786978605.118459",
         "lastSeen": 1786981567.745
-      },
-      "1787014804.646009": {
-        "post": "1787014804.646009",
-        "lastSeen": 1787015722.246
       }
     },
     "days": {
@@ -139613,7 +139634,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-18 10:15",
+    "at": "2026-08-18 10:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
