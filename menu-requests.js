@@ -3,10 +3,158 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 732,
- "updatedAt": "2026-08-18 15:30",
+ "version": 733,
+ "updatedAt": "2026-08-18 15:46",
  "days": 30,
  "items": [
+  {
+   "ts": "1787035273.429669",
+   "date": "2026-08-18",
+   "time": "15:41",
+   "store": "루엘에스테틱",
+   "biz": "2940203964",
+   "pos": "",
+   "content": "하기 카테고리/메뉴 등록 요청 드립니다.\n\n*[카테고리]*\n• 페이스케어\n• 바디케어\n• 오픈 이벤트\n• 멤버십 프로그램\n*[상품]*\n• 스레드 첨부 이미지 참고",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "i_f4c92fc063ea.png",
+     "fid": "F0BR0GQ7W0L",
+     "from": "댓글",
+     "path": "menu-files/1787035273_429669-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "FACE CARE",
+       "name": "수분 진정 케어",
+       "price": 80000
+      },
+      {
+       "category": "FACE CARE",
+       "name": "브라이트닝 케어",
+       "price": 80000
+      },
+      {
+       "category": "FACE CARE",
+       "name": "붉은기 진정 케어",
+       "price": 80000
+      },
+      {
+       "category": "FACE CARE",
+       "name": "페이스 밸런스 케어",
+       "price": 150000
+      },
+      {
+       "category": "FACE CARE",
+       "name": "윤곽 타이트닝 케어",
+       "price": 120000
+      }
+     ]
+    },
+    {
+     "name": "i_21b9b74128b6.png",
+     "fid": "F0BQFF7U1ST",
+     "from": "댓글",
+     "path": "menu-files/1787035273_429669-1.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "BODY CARE",
+       "name": "프리미엄 바디 디자인",
+       "price": 160000
+      },
+      {
+       "category": "BODY CARE",
+       "name": "힙업 S라인 케어",
+       "price": 90000
+      },
+      {
+       "category": "BODY CARE",
+       "name": "복부 슬림 케어",
+       "price": 90000
+      },
+      {
+       "category": "BODY CARE",
+       "name": "다리 라인 케어",
+       "price": 90000
+      },
+      {
+       "category": "BODY CARE",
+       "name": "등 라인 케어",
+       "price": 80000
+      },
+      {
+       "category": "BODY CARE",
+       "name": "팔 라인 케어",
+       "price": 70000
+      }
+     ]
+    },
+    {
+     "name": "i_2da1a225aa9b.png",
+     "fid": "F0BQUTGBBTQ",
+     "from": "댓글",
+     "path": "menu-files/1787035273_429669-2.png",
+     "kind": "other",
+     "menu": []
+    },
+    {
+     "name": "i_6a91f0d0453d.png",
+     "fid": "F0BQFFE206B",
+     "from": "댓글",
+     "path": "menu-files/1787035273_429669-3.png",
+     "kind": "other",
+     "menu": []
+    },
+    {
+     "name": "i_9da42053e36c.png",
+     "fid": "F0BR0H1TZ9A",
+     "from": "댓글",
+     "path": "menu-files/1787035273_429669-4.png",
+     "kind": "other",
+     "menu": []
+    },
+    {
+     "name": "i_83e519d7cbca.png",
+     "fid": "F0BQQKH6867",
+     "from": "댓글",
+     "path": "menu-files/1787035273_429669-5.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "LUEL MEMBERSHIP",
+       "name": "프리미엄 맴버십",
+       "price": 3000000
+      },
+      {
+       "category": "LUEL MEMBERSHIP",
+       "name": "VIP 맴버십",
+       "price": 2000000
+      },
+      {
+       "category": "LUEL MEMBERSHIP",
+       "name": "베이직 맴버십",
+       "price": 1000000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "페이스케어",
+    "바디케어",
+    "오픈 이벤트",
+    "멤버십 프로그램"
+   ],
+   "rc": 5,
+   "lr": "1787035434.983989",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787035273429669"
+  },
   {
    "ts": "1787033400.407119",
    "date": "2026-08-18",
@@ -25,8 +173,8 @@ window.MENU_REQUESTS = {
     "헉 혹시 통화 드린건가요?",
     "아하, 감사합니당!! 채팅으로 인입됐는데 이전 내역에도 이번에도 계속 헷갈리게 말씀하셔소,,, :루피눈물: 확인 감사드려용!"
    ],
-   "rc": 10,
-   "lr": "1787034377.905389",
+   "rc": 8,
+   "lr": "1787034048.308019",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
