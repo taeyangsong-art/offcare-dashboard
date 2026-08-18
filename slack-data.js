@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4080,
+  "version": 4081,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -114223,7 +114223,7 @@ window.SLACK_DATA = {
     "2026-08-18": {
       "counts": {
         "as": {
-          "최민석": 13,
+          "최민석": 14,
           "서상원": 10,
           "고경림": 28,
           "김현기": 24,
@@ -114288,6 +114288,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "20:45",
+          "store": "부자 필라테스",
+          "biz": "7326600554",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "핸드폰 + 프론트 + 프린터 온보딩 .",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "20:34",
           "store": "다온 생고깃집 내포점",
@@ -116642,11 +116653,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 171,
+        "online": 172,
         "offline": 44,
         "unknown": 0
       },
-      "updatedAt": "20:49",
+      "updatedAt": "20:55",
       "ob": {
         "count": 27,
         "byEmp": {
@@ -116998,15 +117009,15 @@ window.SLACK_DATA = {
       },
       "1787032646.668179": {
         "post": "1787032646.668179",
-        "lastSeen": 1787053754.557
+        "lastSeen": 1787054474.28
       },
       "1787050824.044229": {
         "post": "1787050824.044229",
         "lastSeen": 1787050835.581
       },
-      "1787053501.222369": {
-        "post": "1787053501.222369",
-        "lastSeen": 1787053754.557
+      "1787054125.118069": {
+        "post": "1787054125.118069",
+        "lastSeen": 1787054474.28
       }
     },
     "days": {
@@ -142125,8 +142136,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-18": {
-        "cnt": 108,
-        "sumMin": 2087.786134588718,
+        "cnt": 109,
+        "sumMin": 2098.0060701052344,
         "over": 21,
         "items": [
           {
@@ -142992,13 +143003,21 @@ window.SLACK_DATA = {
             "biz": "5340303670",
             "who": "최민석",
             "cat": "onboarding"
+          },
+          {
+            "hm": "20:45",
+            "min": 10.2,
+            "store": "부자 필라테스",
+            "biz": "7326600554",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-18 20:49",
+    "at": "2026-08-18 21:01",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
