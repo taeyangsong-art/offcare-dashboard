@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4019,
+  "version": 4020,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -114224,8 +114224,8 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김동욱": 3,
-          "고경림": 2,
-          "배선유": 2
+          "배선유": 3,
+          "고경림": 2
         },
         "menu": {
           "김규빈": 4,
@@ -114255,6 +114255,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "금액입력결제모드 사용중. 사용법 재안내 완료"
+        },
+        {
+          "time": "09:30",
+          "store": "카페 딥 (CAFE DEEP)",
+          "biz": "2772102428",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "배달 들어올때만 프린터 출력이 안된다 하셔서 확인 부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "cat 사용매장 / A케이블 연결 해제, brd로 포스기에 연결 / 배민은 토스포스에서 출력 / 요,쿠,땡 com1,9600으로 설정"
         },
         {
           "time": "09:30",
@@ -114369,10 +114380,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 7,
-        "offline": 5,
+        "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "09:40"
+      "updatedAt": "10:00"
     }
   },
   "resp": {
@@ -114384,6 +114395,14 @@ window.SLACK_DATA = {
       "1786978605.118459": {
         "post": "1786978605.118459",
         "lastSeen": 1786981567.745
+      },
+      "1787014806.743159": {
+        "post": "1787014806.743159",
+        "lastSeen": 1787014830.247
+      },
+      "1787014804.646009": {
+        "post": "1787014804.646009",
+        "lastSeen": 1787014830.247
       }
     },
     "days": {
@@ -139543,7 +139562,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-18 09:45",
+    "at": "2026-08-18 10:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
