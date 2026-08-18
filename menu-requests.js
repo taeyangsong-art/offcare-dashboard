@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 727,
- "updatedAt": "2026-08-18 14:15",
+ "version": 728,
+ "updatedAt": "2026-08-18 14:29",
  "days": 30,
  "items": [
   {
@@ -18,16 +18,126 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BQQ59J491",
+     "from": "댓글",
+     "path": "menu-files/1787030114_272119-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "칼칼찜 식사/안주",
+       "name": "순대국",
+       "price": 9900
+      },
+      {
+       "category": "칼칼찜 식사/안주",
+       "name": "뼈해장국",
+       "price": 9900
+      },
+      {
+       "category": "칼칼찜 식사/안주",
+       "name": "황태해장국",
+       "price": 9900
+      },
+      {
+       "category": "칼칼찜 식사/안주",
+       "name": "추어탕",
+       "price": 9900
+      },
+      {
+       "category": "칼칼찜 식사/안주",
+       "name": "육개장",
+       "price": 9900
+      },
+      {
+       "category": "칼칼찜 식사/안주",
+       "name": "소내장탕",
+       "price": 9900
+      },
+      {
+       "category": "칼칼찜 식사/안주",
+       "name": "통심콘치즈",
+       "price": 9900
+      },
+      {
+       "category": "칼칼찜 식사/안주",
+       "name": "부대찌개",
+       "price": 14900
+      },
+      {
+       "category": "칼칼찜 식사/안주",
+       "name": "모듬한판",
+       "price": 14900
+      },
+      {
+       "category": "칼칼찜 식사/안주",
+       "name": "꼬리구이",
+       "price": 14900
+      },
+      {
+       "category": "칼칼찜 식사/안주",
+       "name": "한독",
+       "price": 14900
+      },
+      {
+       "category": "포장",
+       "name": "(포장)순대국",
+       "price": 9900
+      },
+      {
+       "category": "포장",
+       "name": "(포장)뼈해장국",
+       "price": 9900
+      },
+      {
+       "category": "포장",
+       "name": "(포장)황태해장국",
+       "price": 9900
+      },
+      {
+       "category": "포장",
+       "name": "(포장)육개장",
+       "price": 9900
+      },
+      {
+       "category": "포장",
+       "name": "(포장)소내장탕",
+       "price": 9900
+      },
+      {
+       "category": "포장",
+       "name": "(포장)통심콘치즈",
+       "price": 9900
+      },
+      {
+       "category": "포장",
+       "name": "(포장)부대찌개",
+       "price": 14900
+      },
+      {
+       "category": "포장",
+       "name": "(포장)모듬한판",
+       "price": 14900
+      },
+      {
+       "category": "포장",
+       "name": "(포장)꼬리구이",
+       "price": 14900
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [
     "순대국 옵션추가\n일반\n고기만\n순대만\n\n메뉴  생성입니다.\n얼큰순대국\n일반\n고기만\n순대만\n\n(특)순대국\n일반\n고기만\n순대만 부탁드립니다\n\n맛보기접시,공기밥 자리이동도 있습니다."
    ],
-   "rc": 2,
-   "lr": "1787030127.429769",
+   "rc": 3,
+   "lr": "1787030140.021339",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787030114272119"
   },
   {
@@ -41,16 +151,137 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BR0474S9J",
+     "from": "댓글",
+     "path": "menu-files/1787029017_956809-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "술, 음료",
+       "name": "후레쉬",
+       "price": 4000
+      },
+      {
+       "category": "술, 음료",
+       "name": "오리지널",
+       "price": 4000
+      },
+      {
+       "category": "술, 음료",
+       "name": "처음처럼",
+       "price": 4000
+      },
+      {
+       "category": "술, 음료",
+       "name": "진로",
+       "price": 4000
+      },
+      {
+       "category": "술, 음료",
+       "name": "새로",
+       "price": 4000
+      },
+      {
+       "category": "술, 음료",
+       "name": "카스",
+       "price": 4000
+      },
+      {
+       "category": "술, 음료",
+       "name": "테라",
+       "price": 4000
+      },
+      {
+       "category": "술, 음료",
+       "name": "칭따오",
+       "price": 6000
+      },
+      {
+       "category": "술, 음료",
+       "name": "켈리",
+       "price": 4000
+      },
+      {
+       "category": "술, 음료",
+       "name": "청하",
+       "price": 4000
+      },
+      {
+       "category": "술, 음료",
+       "name": "이과두주",
+       "price": 4000
+      },
+      {
+       "category": "술, 음료",
+       "name": "고량주",
+       "price": 6000
+      },
+      {
+       "category": "술, 음료",
+       "name": "막걸리",
+       "price": 3000
+      },
+      {
+       "category": "술, 음료",
+       "name": "연태고량주(소)",
+       "price": 10000
+      },
+      {
+       "category": "술, 음료",
+       "name": "연태고량주(중)",
+       "price": 20000
+      },
+      {
+       "category": "술, 음료",
+       "name": "연태고량주(대)",
+       "price": 40000
+      },
+      {
+       "category": "술, 음료",
+       "name": "콜라",
+       "price": 2000
+      },
+      {
+       "category": "술, 음료",
+       "name": "공보가주(중)",
+       "price": 20000
+      },
+      {
+       "category": "술, 음료",
+       "name": "공보가주(대)",
+       "price": 40000
+      },
+      {
+       "category": "술, 음료",
+       "name": "사이다",
+       "price": 2000
+      },
+      {
+       "category": "술, 음료",
+       "name": "죽엽청주(중)",
+       "price": 20000
+      },
+      {
+       "category": "술, 음료",
+       "name": "죽엽청주(대)",
+       "price": 35000
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [
-    "메뉴 재확인중"
+    "메뉴 재확인중",
+    "새로가 2개로 되어있어 콜라 밑에 새로는 사이다(2,000원)로 변경\n\n메뉴명: 청하\n가격: 5,000원으로 변경\n요청사항: 가격 변경\n\n메뉴명: 공부가주(중)\n가격: 20,000~25,000\n요청사항: 가격 변경\n\n메뉴명: 공부가주(대)\n가격: 40,000~45,000\n요청사항: 가격 변경\n\n메뉴명: 죽엽청주(중)\n가격: 20,000~25,000\n요청사항: 가격 변경\n\n메뉴명: 죽엽청주(대)\n가격: 40,000~45,000\n요청사항: 가격변경"
    ],
-   "rc": 2,
-   "lr": "1787029691.754759",
+   "rc": 6,
+   "lr": "1787030827.276779",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787029017956809"
   },
   {
@@ -265,8 +496,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1787026685.970629",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787026667419899"
   },
   {
