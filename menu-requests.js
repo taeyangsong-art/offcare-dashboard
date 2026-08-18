@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 712,
- "updatedAt": "2026-08-18 09:36",
+ "version": 713,
+ "updatedAt": "2026-08-18 09:45",
  "days": 30,
  "items": [
   {
@@ -46,10 +46,11 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [
-    "테이블 3개 생성, 메뉴등록"
+    "테이블 3개 생성, 메뉴등록",
+    ":telephone_receiver: 옵션 생성만, 나중에서 설치 후 직접 메뉴에 옵션 넣기로 함"
    ],
-   "rc": 2,
-   "lr": "1787013358.073469",
+   "rc": 3,
+   "lr": "1787013465.323629",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
