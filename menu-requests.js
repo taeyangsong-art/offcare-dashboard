@@ -3,10 +3,201 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 723,
- "updatedAt": "2026-08-18 13:00",
+ "version": 724,
+ "updatedAt": "2026-08-18 13:24",
  "days": 30,
  "items": [
+  {
+   "ts": "1787026667.419899",
+   "date": "2026-08-18",
+   "time": "13:17",
+   "store": "더 키친 플렉스",
+   "biz": "7712002277",
+   "pos": "토스포스",
+   "content": "토스포스 메뉴 등록 요청합니다. (이미지 첨부)",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BQENPC5HD",
+     "from": "댓글",
+     "path": "menu-files/1787026667_419899-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "타코",
+       "name": "풀드치킨",
+       "price": 6200
+      },
+      {
+       "category": "타코",
+       "name": "비프",
+       "price": 6500
+      },
+      {
+       "category": "타코",
+       "name": "쉬림프",
+       "price": 6800
+      },
+      {
+       "category": "",
+       "name": "비프칠리 프라이 (감자튀김200g)",
+       "price": 8500
+      },
+      {
+       "category": "토핑 추가",
+       "name": "갈릭후레이크",
+       "price": 500
+      },
+      {
+       "category": "토핑 추가",
+       "name": "어니언후레이크",
+       "price": 500
+      },
+      {
+       "category": "토핑 추가",
+       "name": "멕시칸치즈 듬뿍",
+       "price": 800
+      },
+      {
+       "category": "토핑 추가",
+       "name": "머쉬룸 함함",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "마녀스프 / 300ml",
+       "price": 6500
+      },
+      {
+       "category": "",
+       "name": "비프스튜 / 300ml",
+       "price": 9800
+      },
+      {
+       "category": "추가옵션",
+       "name": "치아바타 2조각(플레인&올리브)",
+       "price": 1500
+      },
+      {
+       "category": "추가옵션",
+       "name": "사워크림 토핑(별도제공X)",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "나초 & 소스2종",
+       "price": 6000
+      },
+      {
+       "category": "추가 소스",
+       "name": "토마토살사",
+       "price": 1000
+      },
+      {
+       "category": "추가 소스",
+       "name": "피코데가요",
+       "price": 1000
+      },
+      {
+       "category": "추가 소스",
+       "name": "체다치즈소스",
+       "price": 1000
+      },
+      {
+       "category": "추가 소스",
+       "name": "(특제) 치플레소스",
+       "price": 1500
+      },
+      {
+       "category": "추가 소스",
+       "name": "사워크림",
+       "price": 1500
+      },
+      {
+       "category": "추가 소스",
+       "name": "과카몰리",
+       "price": 2500
+      },
+      {
+       "category": "추가 소스",
+       "name": "(특제) 코울슬로",
+       "price": 2500
+      },
+      {
+       "category": "추가 소스",
+       "name": "고수 추가",
+       "price": 1000
+      },
+      {
+       "category": "디저트",
+       "name": "말렌카 조각케익(100g)",
+       "price": 6500
+      },
+      {
+       "category": "디저트",
+       "name": "허니월넛",
+       "price": 0
+      },
+      {
+       "category": "디저트",
+       "name": "허니코코아",
+       "price": 0
+      },
+      {
+       "category": "디저트",
+       "name": "허니시나온",
+       "price": 0
+      },
+      {
+       "category": "미니머핀",
+       "name": "브루키(브라우니+쿠키)",
+       "price": 4000
+      },
+      {
+       "category": "미니머핀",
+       "name": "캐롯넛",
+       "price": 4000
+      },
+      {
+       "category": "미니머핀",
+       "name": "초코초코칩",
+       "price": 3500
+      },
+      {
+       "category": "미니머핀",
+       "name": "아몬드",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "콜라/사이다",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "호세쿠엘보(골드)/50ml",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "얼음컵(+레몬 슬라이스)",
+       "price": 1800
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1787026685.970629",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787026667419899"
+  },
   {
    "ts": "1787025612.275619",
    "date": "2026-08-18",
