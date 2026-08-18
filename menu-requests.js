@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 729,
- "updatedAt": "2026-08-18 14:45",
+ "version": 730,
+ "updatedAt": "2026-08-18 15:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1787033400.407119",
+   "date": "2026-08-18",
+   "time": "15:10",
+   "store": "플라워비다",
+   "biz": "2321601932",
+   "pos": "퍼스트포스",
+   "content": "'프리저브드' 메뉴 50,000원, 70,000원 면세로 등록 부탁 드립니다. 이전에 꽃다발에 추가해주신 상품도 면세로 수정 원하십니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 3,
+   "lr": "1787033688.885729",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787033400407119"
+  },
   {
    "ts": "1787030114.272119",
    "date": "2026-08-18",
