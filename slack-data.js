@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4076,
+  "version": 4077,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -114223,7 +114223,7 @@ window.SLACK_DATA = {
     "2026-08-18": {
       "counts": {
         "as": {
-          "최민석": 11,
+          "최민석": 12,
           "서상원": 10,
           "고경림": 28,
           "김현기": 24,
@@ -114288,6 +114288,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "20:17",
+          "store": "금빛치킨",
+          "biz": "1453501487",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "유프 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "점주님 자체해결 완료"
+        },
         {
           "time": "19:57",
           "store": "으뜸힐링안마원",
@@ -116609,11 +116620,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 168,
+        "online": 169,
         "offline": 44,
         "unknown": 0
       },
-      "updatedAt": "20:00",
+      "updatedAt": "20:17",
       "ob": {
         "count": 27,
         "byEmp": {
@@ -116965,7 +116976,7 @@ window.SLACK_DATA = {
       },
       "1787032646.668179": {
         "post": "1787032646.668179",
-        "lastSeen": 1787051727.614
+        "lastSeen": 1787052402.311
       },
       "1787050824.044229": {
         "post": "1787050824.044229",
@@ -116973,7 +116984,7 @@ window.SLACK_DATA = {
       },
       "1787050800.119929": {
         "post": "1787050800.119929",
-        "lastSeen": 1787051727.614
+        "lastSeen": 1787052402.311
       }
     },
     "days": {
@@ -142957,7 +142968,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-18 20:15",
+    "at": "2026-08-18 20:26",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
