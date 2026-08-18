@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4023,
+  "version": 4024,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -114222,15 +114222,15 @@ window.SLACK_DATA = {
     },
     "2026-08-18": {
       "counts": {
-        "extern": {
-          "서상원": 1
-        },
         "as": {
+          "서상원": 2,
+          "김현기": 2,
           "고경림": 4,
-          "서상원": 1,
-          "김현기": 1,
           "김동욱": 5,
           "배선유": 4
+        },
+        "extern": {
+          "서상원": 1
         },
         "onboarding": {
           "배선유": 1
@@ -114243,8 +114243,42 @@ window.SLACK_DATA = {
           "김규빈": 4
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "10:00",
+          "store": "일행떡볶이&amp;닭강정(쌍문점)",
+          "biz": "5111602310",
+          "handler": "김동욱",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "done": [
+        {
+          "time": "10:45",
+          "store": "루가에스테틱",
+          "biz": "7034800381",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "가결제",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "10:45",
+          "store": "젓가락질 잘해야만 밥을먹나요 화정점",
+          "biz": "2270756767",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "포프+유프 / 주방 유선프린터기 영수증 출력 불가 제보주셨는데 점검 요청 드립니다. / 전원 이상무",
+          "hw": "",
+          "intake": "offline",
+          "note": "cpp3000 usb연결 호환성 문제로 지금은 되는데 다른 모델로 변경 / TS100 재출고"
+        },
         {
           "time": "10:36",
           "store": "로칼 용산점",
@@ -114511,11 +114545,27 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 14,
-        "offline": 10,
+        "online": 16,
+        "offline": 11,
         "unknown": 0
       },
-      "updatedAt": "10:45"
+      "updatedAt": "11:00",
+      "ob": {
+        "count": 1,
+        "byEmp": {
+          "김규빈": 1
+        },
+        "items": [
+          {
+            "key": "2026년 8월 18일 오전 10:47:56|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785811347364599#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-18",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785811347364599"
+          }
+        ]
+      }
     }
   },
   "resp": {
@@ -114528,9 +114578,13 @@ window.SLACK_DATA = {
         "post": "1786978605.118459",
         "lastSeen": 1786981567.745
       },
-      "1787017091.025909": {
-        "post": "1787017091.025909",
-        "lastSeen": 1787017523.77
+      "1787018400.552009": {
+        "post": "1787018400.552009",
+        "lastSeen": 1787018431.402
+      },
+      "1787018404.396379": {
+        "post": "1787018404.396379",
+        "lastSeen": 1787018431.402
       }
     },
     "days": {
@@ -139649,8 +139703,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-18": {
-        "cnt": 5,
-        "sumMin": 32.67637891769409,
+        "cnt": 6,
+        "sumMin": 47.45238043467204,
         "over": 0,
         "items": [
           {
@@ -139692,25 +139746,33 @@ window.SLACK_DATA = {
             "biz": "5111602310",
             "who": "김동욱",
             "cat": "as"
+          },
+          {
+            "hm": "10:38",
+            "min": 14.8,
+            "store": "",
+            "biz": "",
+            "who": "김동욱",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-18 10:45",
+    "at": "2026-08-18 11:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3562,
-    "named": 254,
+    "rows": 3563,
+    "named": 255,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 254,
+    "done": 255,
     "byStatus": {
-      "일정등록완료": 156,
+      "일정등록완료": 157,
       "1차부재": 57,
       "점주직접접수": 23,
       "설치불가": 6,
