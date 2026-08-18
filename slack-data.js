@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4070,
+  "version": 4071,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -114222,8 +114222,17 @@ window.SLACK_DATA = {
     },
     "2026-08-18": {
       "counts": {
+        "onboarding": {
+          "최민석": 4,
+          "김현기": 1,
+          "김규빈": 2,
+          "고경림": 7,
+          "김동욱": 2,
+          "배선유": 6,
+          "서상원": 2
+        },
         "as": {
-          "최민석": 10,
+          "최민석": 9,
           "서상원": 10,
           "고경림": 28,
           "김현기": 24,
@@ -114231,15 +114240,6 @@ window.SLACK_DATA = {
           "김동욱": 31,
           "김규빈": 7,
           "김기범": 5
-        },
-        "onboarding": {
-          "김현기": 1,
-          "김규빈": 2,
-          "고경림": 7,
-          "최민석": 3,
-          "김동욱": 2,
-          "배선유": 6,
-          "서상원": 2
         },
         "extern": {
           "김현기": 3,
@@ -114252,8 +114252,8 @@ window.SLACK_DATA = {
           "김현기": 1
         },
         "menu": {
+          "최민석": 3,
           "김현기": 1,
-          "최민석": 2,
           "김규빈": 9,
           "배선유": 7
         },
@@ -114291,12 +114291,12 @@ window.SLACK_DATA = {
           "time": "19:01",
           "store": "어반주짓수 신림",
           "biz": "6523000642",
-          "cat": "as",
+          "cat": "onboarding",
           "emp": "최민석",
           "req": "포프(휴대폰) 온보딩 지원 요청드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "포프 온보딩 완료"
         },
         {
           "time": "18:51",
@@ -114308,6 +114308,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "프론트 포스에 한대만 연결 가능 안내 완료"
+        },
+        {
+          "time": "18:47",
+          "store": "강창구 찹쌀진순대 광장점",
+          "biz": "2198509446",
+          "cat": "menu",
+          "emp": "최민석",
+          "req": "메뉴 출력 변경",
+          "hw": "",
+          "intake": "offline",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 15분 동안 싸웠는데 제가졌습니다. 엣지....... 후.. 강하다 이거 하나만 봐주세여ㅠ 바쁘신데 죄송함다 이거 하나만 봐주세여ㅠ 바쁘신데 죄송함다 / 광장점 맛보기부추추가 홀프린터 출력안되게 부탁드립니다. / 미출력 설정 완료 솔라피 발송 완료"
         },
         {
           "time": "18:45",
@@ -116542,10 +116553,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 163,
-        "offline": 43,
+        "offline": 44,
         "unknown": 0
       },
-      "updatedAt": "19:01",
+      "updatedAt": "19:30",
       "ob": {
         "count": 27,
         "byEmp": {
@@ -116771,20 +116782,21 @@ window.SLACK_DATA = {
         ]
       },
       "voc": {
-        "responses": 12,
+        "responses": 13,
         "install": {
           "count": 4,
           "low": 0
         },
         "nps": {
-          "count": 12,
-          "low": 0
+          "count": 13,
+          "low": 1
         },
         "high": {
           "install": 2,
           "nps": 7
         },
         "npsDist": {
+          "0": 1,
           "6": 1,
           "8": 2,
           "9": 2,
@@ -116801,6 +116813,10 @@ window.SLACK_DATA = {
           "요식업": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 4,
+            "low": 1
+          },
           "구매설치": {
             "total": 4,
             "low": 0
@@ -116812,13 +116828,13 @@ window.SLACK_DATA = {
           "1개월": {
             "total": 1,
             "low": 0
-          },
-          "12개월": {
-            "total": 3,
-            "low": 0
           }
         },
         "byVan": {
+          "KSNET": {
+            "total": 1,
+            "low": 1
+          },
           "KPN": {
             "total": 2,
             "low": 0
@@ -116836,8 +116852,33 @@ window.SLACK_DATA = {
             "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
+        },
+        "alerts": [
+          {
+            "time": "19:18",
+            "store": "브리치부동산공인중개사사무소",
+            "storeId": "197933",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "수수료 과다",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
         "praises": [
           {
             "time": "13:33",
@@ -116867,11 +116908,15 @@ window.SLACK_DATA = {
       },
       "1787032646.668179": {
         "post": "1787032646.668179",
-        "lastSeen": 1787048128.486
+        "lastSeen": 1787049028.48
       },
       "1787045572.337069": {
         "post": "1787045572.337069",
-        "lastSeen": 1787048128.486
+        "lastSeen": 1787049028.48
+      },
+      "1787049000.875329": {
+        "post": "1787049000.875329",
+        "lastSeen": 1787049028.48
       }
     },
     "days": {
@@ -142823,7 +142868,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-18 19:15",
+    "at": "2026-08-18 19:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
