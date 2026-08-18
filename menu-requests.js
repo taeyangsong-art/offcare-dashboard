@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 726,
- "updatedAt": "2026-08-18 13:59",
+ "version": 727,
+ "updatedAt": "2026-08-18 14:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1787030114.272119",
+   "date": "2026-08-18",
+   "time": "14:15",
+   "store": "강창구 찹쌀진순대 광장점",
+   "biz": "2198509446",
+   "pos": "",
+   "content": "메뉴 추가",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "순대국 옵션추가\n일반\n고기만\n순대만\n\n메뉴  생성입니다.\n얼큰순대국\n일반\n고기만\n순대만\n\n(특)순대국\n일반\n고기만\n순대만 부탁드립니다\n\n맛보기접시,공기밥 자리이동도 있습니다."
+   ],
+   "rc": 2,
+   "lr": "1787030127.429769",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787030114272119"
+  },
   {
    "ts": "1787029017.956809",
    "date": "2026-08-18",
@@ -21,10 +44,10 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [
-    "• 세로 2개로 되어있어 1개는 사이다(2,000원)로 변경 요청\n• 청하, 공부가주, 죽엽청주 전부 5,000원으로 가격 변경 요청"
+    "메뉴 재확인중"
    ],
    "rc": 2,
-   "lr": "1787029102.036519",
+   "lr": "1787029691.754759",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -263,7 +286,7 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1787025629.862309",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787025612275619"
   },
