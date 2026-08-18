@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 722,
- "updatedAt": "2026-08-18 12:52",
+ "version": 723,
+ "updatedAt": "2026-08-18 13:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1787025612.275619",
+   "date": "2026-08-18",
+   "time": "13:00",
+   "store": "바이트 앤 레스트 더블유 피에스 스타벅스 킨텍스점",
+   "biz": "5438503030",
+   "pos": "퍼스트포스",
+   "content": "수박주스 5300\n복숭아아이스티5100\n가격수정해주세요\n도넛에  디저트 4500 추가해주세요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787025629.862309",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787025612275619"
+  },
   {
    "ts": "1787020642.866509",
    "date": "2026-08-18",
