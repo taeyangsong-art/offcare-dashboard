@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 739,
- "updatedAt": "2026-08-18 19:00",
+ "version": 740,
+ "updatedAt": "2026-08-18 19:15",
  "days": 30,
  "items": [
   {
@@ -36,8 +36,8 @@ window.MENU_REQUESTS = {
    "rc": 3,
    "lr": "1787047014.343009",
    "rfx": 3,
-   "status": "confirm",
-   "handler": "배선유",
+   "status": "done",
+   "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787046429276409"
   },
   {
@@ -77,7 +77,6 @@ window.MENU_REQUESTS = {
      "name": "IMG_0235.jpg.jpeg",
      "fid": "F0BQVECJZKQ",
      "from": "댓글",
-     "path": "menu-files/1787040215_925799-0.jpeg",
      "kind": "menu_board",
      "menu": [
       {
@@ -165,13 +164,13 @@ window.MENU_REQUESTS = {
        "name": "우삼겹 김치 필라프",
        "price": 12900
       }
-     ]
+     ],
+     "path": "menu-files/1787040215_925799-0.jpeg"
     },
     {
      "name": "IMG_0234.jpg.jpeg",
      "fid": "F0BQVED3SGN",
      "from": "댓글",
-     "path": "menu-files/1787040215_925799-1.jpeg",
      "kind": "menu_board",
      "menu": [
       {
@@ -274,13 +273,13 @@ window.MENU_REQUESTS = {
        "name": "새우 명란 핫크림 파스타",
        "price": 13900
       }
-     ]
+     ],
+     "path": "menu-files/1787040215_925799-1.jpeg"
     },
     {
      "name": "IMG_0237.jpg.jpeg",
      "fid": "F0BR13VSBEG",
      "from": "댓글",
-     "path": "menu-files/1787040215_925799-2.jpeg",
      "kind": "menu_board",
      "menu": [
       {
@@ -423,13 +422,13 @@ window.MENU_REQUESTS = {
        "name": "웰치스제로 포도(355ml)",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1787040215_925799-2.jpeg"
     },
     {
      "name": "IMG_0236.jpg.jpeg",
      "fid": "F0BR13WQK3N",
      "from": "댓글",
-     "path": "menu-files/1787040215_925799-3.jpeg",
      "kind": "menu_board",
      "menu": [
       {
@@ -527,15 +526,16 @@ window.MENU_REQUESTS = {
        "name": "새우감바스&모닝빵 + 샐러드",
        "price": 20000
       }
-     ]
+     ],
+     "path": "menu-files/1787040215_925799-3.jpeg"
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1787040275.110579",
+   "rc": 3,
+   "lr": "1787047970.916839",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787040215925799"
   },
