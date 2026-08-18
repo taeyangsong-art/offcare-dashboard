@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 737,
- "updatedAt": "2026-08-18 18:30",
+ "version": 738,
+ "updatedAt": "2026-08-18 18:43",
  "days": 30,
  "items": [
   {
@@ -502,8 +502,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1787040275.110579",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787040215925799"
   },
   {
@@ -522,7 +522,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BQX9U01AN",
      "from": "댓글",
-     "path": "menu-files/1787039560_532559-0.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -675,18 +674,19 @@ window.MENU_REQUESTS = {
        "name": "수제 단팥죽 [ 동절기 ]",
        "price": 7500
       }
-     ]
+     ],
+     "path": "menu-files/1787039560_532559-0.png"
     }
    ],
    "datt": [],
    "replies": [
     "온도 옵션 X 따로따로 작업"
    ],
-   "rc": 2,
-   "lr": "1787039573.645329",
+   "rc": 3,
+   "lr": "1787045707.980819",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787039560532559"
   },
   {
@@ -833,7 +833,7 @@ window.MENU_REQUESTS = {
    "rc": 5,
    "lr": "1787035434.983989",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787035273429669"
   },

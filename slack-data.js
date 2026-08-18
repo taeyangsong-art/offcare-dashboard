@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4065,
+  "version": 4066,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -114243,7 +114243,7 @@ window.SLACK_DATA = {
           "고경림": 7,
           "최민석": 3,
           "김동욱": 2,
-          "배선유": 5,
+          "배선유": 6,
           "서상원": 2
         },
         "transfer": {
@@ -114251,8 +114251,9 @@ window.SLACK_DATA = {
           "김현기": 1
         },
         "menu": {
+          "최민석": 1,
           "김규빈": 9,
-          "배선유": 6
+          "배선유": 7
         },
         "delivery": {
           "김동욱": 1,
@@ -114280,28 +114281,6 @@ window.SLACK_DATA = {
           "intake": "online",
           "reasons": [
             "1차 부재"
-          ]
-        },
-        {
-          "time": "15:41",
-          "store": "루엘에스테틱",
-          "biz": "2940203964",
-          "handler": "배선유",
-          "cat": "menu",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "15:15",
-          "store": "임사부국밥냉면 용이점",
-          "biz": "3811102960",
-          "handler": "배선유",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
           ]
         }
       ],
@@ -114525,6 +114504,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": ""
+        },
+        {
+          "time": "16:52",
+          "store": "프리티케롯(The Pretty Carrot)",
+          "biz": "8493200672",
+          "cat": "menu",
+          "emp": "최민석",
+          "req": "신규 설치 예정 메뉴 등록",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 온도 옵션 X 따로따로 작업 / 메뉴등록 완료 솔라피 발송 완료"
         },
         {
           "time": "16:46",
@@ -114803,6 +114793,17 @@ window.SLACK_DATA = {
           "note": ""
         },
         {
+          "time": "15:41",
+          "store": "루엘에스테틱",
+          "biz": "2940203964",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "하기 카테고리/메뉴 등록 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 페이스케어 / 바디케어 / 오픈 이벤트 / 멤버십 프로그램"
+        },
+        {
           "time": "15:33",
           "store": "배움수학교습소",
           "biz": "1869802032",
@@ -114912,6 +114913,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": ""
+        },
+        {
+          "time": "15:15",
+          "store": "임사부국밥냉면 용이점",
+          "biz": "3811102960",
+          "cat": "onboarding",
+          "emp": "배선유",
+          "req": "포프(휴대폰) 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "4시에 업무폰으로 연락주신다고 함 / 전화준다며...! / 포프(폰) 온보딩 완료 / 현재 메이트포스와 계약이 끝나지 않아 추 후 포스기에 토스포스 설치해 재온보딩 예정"
         },
         {
           "time": "15:15",
@@ -116450,11 +116462,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 157,
+        "online": 158,
         "offline": 41,
         "unknown": 0
       },
-      "updatedAt": "18:25",
+      "updatedAt": "18:43",
       "ob": {
         "count": 27,
         "byEmp": {
@@ -116776,15 +116788,15 @@ window.SLACK_DATA = {
       },
       "1787032646.668179": {
         "post": "1787032646.668179",
-        "lastSeen": 1787045448.212
-      },
-      "1787039560.532559": {
-        "post": "1787039560.532559",
-        "lastSeen": 1787045448.212
+        "lastSeen": 1787046212.082
       },
       "1787040215.925799": {
         "post": "1787040215.925799",
-        "lastSeen": 1787045448.212
+        "lastSeen": 1787046212.082
+      },
+      "1787045572.337069": {
+        "post": "1787045572.337069",
+        "lastSeen": 1787046212.082
       }
     },
     "days": {
@@ -142712,7 +142724,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-18 18:30",
+    "at": "2026-08-18 18:43",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
