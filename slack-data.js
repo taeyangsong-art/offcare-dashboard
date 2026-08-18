@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4066,
+  "version": 4067,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -114223,9 +114223,9 @@ window.SLACK_DATA = {
     "2026-08-18": {
       "counts": {
         "as": {
+          "서상원": 10,
           "최민석": 7,
           "고경림": 28,
-          "서상원": 9,
           "김현기": 24,
           "배선유": 26,
           "김동욱": 31,
@@ -114285,6 +114285,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "18:43",
+          "store": "로칼 용산점",
+          "biz": "2250895155",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "가결제",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
         {
           "time": "18:15",
           "store": "제이왁싱",
@@ -116463,10 +116474,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 158,
-        "offline": 41,
+        "offline": 42,
         "unknown": 0
       },
-      "updatedAt": "18:43",
+      "updatedAt": "18:45",
       "ob": {
         "count": 27,
         "byEmp": {
@@ -116788,15 +116799,19 @@ window.SLACK_DATA = {
       },
       "1787032646.668179": {
         "post": "1787032646.668179",
-        "lastSeen": 1787046212.082
+        "lastSeen": 1787046324.565
       },
       "1787040215.925799": {
         "post": "1787040215.925799",
-        "lastSeen": 1787046212.082
+        "lastSeen": 1787046324.565
       },
       "1787045572.337069": {
         "post": "1787045572.337069",
-        "lastSeen": 1787046212.082
+        "lastSeen": 1787046324.565
+      },
+      "1787046215.057429": {
+        "post": "1787046215.057429",
+        "lastSeen": 1787046324.565
       }
     },
     "days": {
@@ -142724,7 +142739,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-18 18:43",
+    "at": "2026-08-18 18:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
