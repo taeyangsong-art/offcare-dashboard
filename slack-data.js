@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4136,
+  "version": 4137,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -117043,7 +117043,7 @@ window.SLACK_DATA = {
     "2026-08-19": {
       "counts": {
         "as": {
-          "배선유": 2
+          "배선유": 3
         },
         "onboarding": {
           "김동욱": 1
@@ -117051,6 +117051,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:30",
+          "store": "마리네달콤부엌",
+          "biz": "2011899436",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "쿠팡이츠 주문접수 프로그램 설치",
+          "hw": "",
+          "intake": "offline",
+          "note": "설치 완료"
+        },
         {
           "time": "09:22",
           "store": "국물명가 전주콩나물국밥",
@@ -117087,10 +117098,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 2,
-        "offline": 1,
+        "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:30",
+      "updatedAt": "09:45",
       "voc": {
         "responses": 1,
         "install": {
@@ -117148,7 +117159,27 @@ window.SLACK_DATA = {
       },
       "1787099401.809709": {
         "post": "1787099401.809709",
-        "lastSeen": 1787099775.87
+        "lastSeen": 1787100324.603
+      },
+      "1787100313.827859": {
+        "post": "1787100313.827859",
+        "lastSeen": 1787100324.603
+      },
+      "1787100300.799009": {
+        "post": "1787100300.799009",
+        "lastSeen": 1787100324.603
+      },
+      "1787100300.730419": {
+        "post": "1787100300.730419",
+        "lastSeen": 1787100324.603
+      },
+      "1787100268.693569": {
+        "post": "1787100268.693569",
+        "lastSeen": 1787100324.603
+      },
+      "1787100076.549819": {
+        "post": "1787100076.549819",
+        "lastSeen": 1787100324.603
       }
     },
     "days": {
@@ -143187,7 +143218,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-19 09:36",
+    "at": "2026-08-19 09:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
