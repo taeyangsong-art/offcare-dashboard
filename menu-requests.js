@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 760,
- "updatedAt": "2026-08-19 15:16",
+ "version": 761,
+ "updatedAt": "2026-08-19 15:30",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "20260819_143130.jpg",
      "fid": "F0BR2GKHS8M",
      "from": "댓글",
-     "path": "menu-files/1787119860_605459-0.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -46,13 +45,13 @@ window.MENU_REQUESTS = {
        "name": "왕왕새우튀김",
        "price": 13000
       }
-     ]
+     ],
+     "path": "menu-files/1787119860_605459-0.jpg"
     },
     {
      "name": "20260819_143128.jpg",
      "fid": "F0BS0KPR864",
      "from": "댓글",
-     "path": "menu-files/1787119860_605459-1.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -70,13 +69,13 @@ window.MENU_REQUESTS = {
        "name": "오늘의구이",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1787119860_605459-1.jpg"
     },
     {
      "name": "20260819_143124.jpg",
      "fid": "F0BR6861R8S",
      "from": "댓글",
-     "path": "menu-files/1787119860_605459-2.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -134,13 +133,13 @@ window.MENU_REQUESTS = {
        "name": "우족탕",
        "price": 30000
       }
-     ]
+     ],
+     "path": "menu-files/1787119860_605459-2.jpg"
     },
     {
      "name": "20260819_143121.jpg",
      "fid": "F0BR020UFGB",
      "from": "댓글",
-     "path": "menu-files/1787119860_605459-3.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -213,13 +212,13 @@ window.MENU_REQUESTS = {
        "name": "특선요리",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1787119860_605459-3.jpg"
     },
     {
      "name": "20260819_143114.jpg",
      "fid": "F0BQQTHT4K1",
      "from": "댓글",
-     "path": "menu-files/1787119860_605459-4.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -342,13 +341,13 @@ window.MENU_REQUESTS = {
        "name": "런치정식",
        "price": 10000
       }
-     ]
+     ],
+     "path": "menu-files/1787119860_605459-4.jpg"
     },
     {
      "name": "20260819_143104.jpg",
      "fid": "F0BQQTK4WFR",
      "from": "댓글",
-     "path": "menu-files/1787119860_605459-5.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -401,7 +400,8 @@ window.MENU_REQUESTS = {
        "name": "홍새우",
        "price": 18000
       }
-     ]
+     ],
+     "path": "menu-files/1787119860_605459-5.jpg"
     },
     {
      "name": "20260819_143859.jpg",
@@ -594,10 +594,10 @@ window.MENU_REQUESTS = {
    "replies": [
     "등록 완료 이후 문자 한통만 부탁드리겠습니다..!:man-bowing:\n\n겹치는건 빼달라고 말씀주시긴했는데 어려울 수 있다고 안내드렸으며 그러면 직접 수정하신다고 하셨습니다!"
    ],
-   "rc": 2,
-   "lr": "1787120003.358329",
+   "rc": 3,
+   "lr": "1787120490.194519",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787119860605459"
   },
@@ -620,7 +620,7 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1787120033.725649",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787119032094789"
   },
@@ -32486,52 +32486,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784529797935699"
-  },
-  {
-   "ts": "1784528904.852669",
-   "date": "2026-07-20",
-   "time": "15:28",
-   "store": "마루정원",
-   "biz": "6530303874",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1784528995.608939",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784528904852669"
-  },
-  {
-   "ts": "1784528467.858269",
-   "date": "2026-07-20",
-   "time": "15:21",
-   "store": "면의계절밤일마을본점",
-   "biz": "4075001127",
-   "pos": "토스포스",
-   "content": "(토스포스) 명의변경해서 사용중이신데 기존매장에서 사용중이던 옵션을 전부 다 삭제하고 싶다 하셨습니다.\n옵션 일괄로 삭제 부탁드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "직접 삭제하시다가 일괄로 삭제 요청하셨는데 전화드려 한번 더 확인해 보겠습니다..! :개굴-죄송:",
-    "지금 원격 요청하신건도 있어서요!\n프린터 설정 때문에 통화중이실수도 있으셔요,,!",
-    "전화번호는 ···여기로 부탁드립니다!"
-   ],
-   "rc": 8,
-   "lr": "1784529817.993849",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784528467858269"
   }
  ],
  "ocr": {
