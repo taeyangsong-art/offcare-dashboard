@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 756,
- "updatedAt": "2026-08-19 13:45",
+ "version": 757,
+ "updatedAt": "2026-08-19 14:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1787117003.999509",
+   "date": "2026-08-19",
+   "time": "14:23",
+   "store": "또래오래 파파빈",
+   "biz": "1244375046",
+   "pos": "",
+   "content": "메뉴 가격 수정",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787117008.238209",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787117003999509"
+  },
   {
    "ts": "1787113551.301829",
    "date": "2026-08-19",
@@ -31894,29 +31915,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784527418695909"
-  },
-  {
-   "ts": "1784525073.955009",
-   "date": "2026-07-20",
-   "time": "14:24",
-   "store": "장성(長城)양갈비",
-   "biz": "1091547970",
-   "pos": "오케이포스",
-   "content": "오케이포스 / 메뉴 추가 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "• 카테고리 : 주류\n*오디주 18,000원*"
-   ],
-   "rc": 2,
-   "lr": "1784525091.607409",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784525073955009"
   }
  ],
  "ocr": {
