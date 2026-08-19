@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 752,
- "updatedAt": "2026-08-19 11:45",
+ "version": 753,
+ "updatedAt": "2026-08-19 12:30",
  "days": 30,
  "items": [
   {
@@ -31761,31 +31761,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784522000232929"
-  },
-  {
-   "ts": "1784517728.533079",
-   "date": "2026-07-20",
-   "time": "12:22",
-   "store": "더바인(가자주류)",
-   "biz": "1201082566",
-   "pos": "토스포스",
-   "content": "기존 토스포스에 등록한 메뉴(약 100종) 등록 요청 주셨습니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "토스포스 대시보드상에는 아무 메뉴가 없는데 대표자분께서 노트북에는 등록한 내역이 있다고 하십니다",
-    "감사합니다 규빈님",
-    "감사합니다 고생 많으셨습니다"
-   ],
-   "rc": 9,
-   "lr": "1784519548.083829",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784517728533079"
   }
  ],
  "ocr": {
