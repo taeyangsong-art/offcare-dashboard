@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 763,
- "updatedAt": "2026-08-19 16:00",
+ "version": 764,
+ "updatedAt": "2026-08-19 16:15",
  "days": 30,
  "items": [
   {
@@ -32628,48 +32628,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784534087324769"
-  },
-  {
-   "ts": "1784531331.664349",
-   "date": "2026-07-20",
-   "time": "16:08",
-   "store": "정든그릇",
-   "biz": "8596400383",
-   "pos": "",
-   "content": "신규 설치 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1784531367.926809",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784531331664349"
-  },
-  {
-   "ts": "1784531051.794269",
-   "date": "2026-07-20",
-   "time": "16:04",
-   "store": "뚜레쥬르 킨텍스1전시장",
-   "biz": "1283674814",
-   "pos": "토스포스",
-   "content": "분다버그자몽 5000>6000\n분다버그망고 5000>6000\nHOT제주한라봉차 5800>6000\nICE제주한라봉차5500>6000",
-   "special": "···",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784531058.205069",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784531051794269"
   }
  ],
  "ocr": {
