@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 755,
- "updatedAt": "2026-08-19 13:26",
+ "version": 756,
+ "updatedAt": "2026-08-19 13:45",
  "days": 30,
  "items": [
   {
@@ -183,8 +183,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1787113554.076719",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787113551301829"
   },
   {
@@ -204,8 +204,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1787112798.867219",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787112794856459"
   },
   {
@@ -31917,51 +31917,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784525073955009"
-  },
-  {
-   "ts": "1784522465.049319",
-   "date": "2026-07-20",
-   "time": "13:41",
-   "store": "크로바완구",
-   "biz": "4683601636",
-   "pos": "퍼스트포스",
-   "content": "유플러스 포스 메뉴 변경 요청 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "전골 카테고리\n(신라면불닭핵불닭)\n매운맛단계 꼭 넣어주세요\n오곱새 18.000\n오삼새 17.000\n돌판볶음카테고리\n(신라면불닭핵불닭)\n매운맛단계 꼭 넣어주세요\n오대 18.000\n오새 17.000\n오삼 16.000\n오징어 15.000\n별미카테고리\n통오징어+알 숙회 25.000\n오징어프라이드 25.000\n누룽지치즈지슬전 25.000\n백합조개탕 15.000\n사이드카테고리\n오징어까스2p 5.000\n반숙후라이4p 5.000\n불꽃치즈볶음밥 5.000\n김가루대접밥3.000\n당면사리 3.000\n우동사리 3.000\n미나리사리3.000\n공깃밥1.000\n주류카테고리\n소주,맥주 5.000\n제주막걸리4.000\n음료 2.000",
-    "기존 메뉴 모두 삭제 후 재구성 요청드립니다!(LG 포스기)"
-   ],
-   "rc": 5,
-   "lr": "1784523084.778619",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784522465049319"
-  },
-  {
-   "ts": "1784522000.232929",
-   "date": "2026-07-20",
-   "time": "13:33",
-   "store": "성공스터디카페",
-   "biz": "1482901170",
-   "pos": "토스포스",
-   "content": "홈런볼 1,700\n닭다리 1,700\n프링글스 1,500\n통크 2,000\n고래밥1,000\n초코파이1,000\n젤리2,000\n몬스터2,000\n콜라1,500\n웰치스1,500",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784522004.910059",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784522000232929"
   }
  ],
  "ocr": {
