@@ -3,10 +3,285 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 745,
- "updatedAt": "2026-08-19 10:00",
+ "version": 746,
+ "updatedAt": "2026-08-19 10:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1787101910.181959",
+   "date": "2026-08-19",
+   "time": "10:11",
+   "store": "넛티(NUTTY)",
+   "biz": "8745100612",
+   "pos": "토스포스",
+   "content": "첨부했습니다",
+   "special": "표시된거 빼고 등록해주세요",
+   "drive": [
+    "https://drive.google.com/file/d/1QyQjeOC631RUX44695DytS3Lm5_RxUTp/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1QyQjeOC631RUX44695DytS3Lm5_RxUTp",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "Coffee",
+       "name": "아메리카노",
+       "price": 4000
+      },
+      {
+       "category": "Coffee",
+       "name": "라떼",
+       "price": 4500
+      },
+      {
+       "category": "Coffee",
+       "name": "바닐라 라떼",
+       "price": 4800
+      },
+      {
+       "category": "Coffee",
+       "name": "헤이즐넛 라떼",
+       "price": 4800
+      },
+      {
+       "category": "Coffee",
+       "name": "돌체 라떼",
+       "price": 5000
+      },
+      {
+       "category": "Coffee",
+       "name": "카페모카",
+       "price": 5000
+      },
+      {
+       "category": "Coffee",
+       "name": "카라멜 마끼아또",
+       "price": 5000
+      },
+      {
+       "category": "Coffee",
+       "name": "퐁라떼",
+       "price": 4800
+      },
+      {
+       "category": "ColdBrew",
+       "name": "콜드브루",
+       "price": 4800
+      },
+      {
+       "category": "ColdBrew",
+       "name": "콜드브루 라떼",
+       "price": 5300
+      },
+      {
+       "category": "ColdBrew",
+       "name": "콜드브루 바닐라라떼",
+       "price": 5800
+      },
+      {
+       "category": "ColdBrew",
+       "name": "콘버터 믹스커피",
+       "price": 4800
+      },
+      {
+       "category": "ColdBrew",
+       "name": "콘버터 크림라떼",
+       "price": 5300
+      },
+      {
+       "category": "Milk",
+       "name": "퐁밀크",
+       "price": 4300
+      },
+      {
+       "category": "Milk",
+       "name": "허니 딸기라떼",
+       "price": 4900
+      },
+      {
+       "category": "Milk",
+       "name": "딸기라떼",
+       "price": 5000
+      },
+      {
+       "category": "Milk",
+       "name": "초코밀크",
+       "price": 5300
+      },
+      {
+       "category": "Milk",
+       "name": "밀크티",
+       "price": 5300
+      },
+      {
+       "category": "Milk",
+       "name": "말차밀크",
+       "price": 5300
+      },
+      {
+       "category": "Milk",
+       "name": "콘버터 밀크",
+       "price": 4500
+      },
+      {
+       "category": "Milk",
+       "name": "군고구마 라떼",
+       "price": 4900
+      },
+      {
+       "category": "Milk",
+       "name": "피스타치오 라떼",
+       "price": 4900
+      },
+      {
+       "category": "ADE",
+       "name": "체리콕",
+       "price": 4900
+      },
+      {
+       "category": "ADE",
+       "name": "메론소다",
+       "price": 4900
+      },
+      {
+       "category": "ADE",
+       "name": "패션후르츠",
+       "price": 5500
+      },
+      {
+       "category": "ADE",
+       "name": "청포도 에이드",
+       "price": 5500
+      },
+      {
+       "category": "ADE",
+       "name": "레몬 에이드",
+       "price": 5500
+      },
+      {
+       "category": "ADE",
+       "name": "자몽 에이드",
+       "price": 5500
+      },
+      {
+       "category": "Shake",
+       "name": "냉율무",
+       "price": 5300
+      },
+      {
+       "category": "Shake",
+       "name": "밀크 쉐이크",
+       "price": 5300
+      },
+      {
+       "category": "Shake",
+       "name": "커피 쉐이크",
+       "price": 5300
+      },
+      {
+       "category": "Blended",
+       "name": "리얼딸기주스",
+       "price": 5300
+      },
+      {
+       "category": "Blended",
+       "name": "플레인요거트디 스무디",
+       "price": 5300
+      },
+      {
+       "category": "Blended",
+       "name": "딸기요거트 스무디",
+       "price": 5300
+      },
+      {
+       "category": "Blended",
+       "name": "망고요거트 스무디",
+       "price": 5300
+      },
+      {
+       "category": "Blended",
+       "name": "블루베리요거트 스무디",
+       "price": 5300
+      },
+      {
+       "category": "Blended",
+       "name": "자바칩 프라푸치노",
+       "price": 5500
+      },
+      {
+       "category": "Blended",
+       "name": "민트초코칩 프라푸치노",
+       "price": 5500
+      },
+      {
+       "category": "Tea",
+       "name": "유자티",
+       "price": 4500
+      },
+      {
+       "category": "Tea",
+       "name": "레몬티",
+       "price": 4500
+      },
+      {
+       "category": "Tea",
+       "name": "자몽티",
+       "price": 4500
+      },
+      {
+       "category": "Tea",
+       "name": "얼그레이",
+       "price": 4000
+      },
+      {
+       "category": "Tea",
+       "name": "캐모마일",
+       "price": 4000
+      },
+      {
+       "category": "Tea",
+       "name": "페퍼민트",
+       "price": 4000
+      },
+      {
+       "category": "Tea",
+       "name": "루이보스 바닐라",
+       "price": 5800
+      },
+      {
+       "category": "Tea",
+       "name": "쿨허벌",
+       "price": 5800
+      },
+      {
+       "category": "Tea",
+       "name": "화이트 템플",
+       "price": 5800
+      },
+      {
+       "category": "Ice Tea",
+       "name": "자몽허니 블랙티",
+       "price": 4900
+      },
+      {
+       "category": "Ice Tea",
+       "name": "복숭아 아이스티",
+       "price": 5000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787101914.533089",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787101910181959"
+  },
   {
    "ts": "1787046429.276409",
    "date": "2026-08-18",
