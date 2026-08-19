@@ -3,10 +3,604 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 759,
- "updatedAt": "2026-08-19 15:00",
+ "version": 760,
+ "updatedAt": "2026-08-19 15:16",
  "days": 30,
  "items": [
+  {
+   "ts": "1787119860.605459",
+   "date": "2026-08-19",
+   "time": "15:11",
+   "store": "넘말",
+   "biz": "4671501996",
+   "pos": "토스포스",
+   "content": "토스포스) 메뉴 등록 요청드립니다!",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "20260819_143130.jpg",
+     "fid": "F0BR2GKHS8M",
+     "from": "댓글",
+     "path": "menu-files/1787119860_605459-0.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "닭목살카라아게",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "닭연골카라아게",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "오징어카라아게",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "왕왕새우튀김",
+       "price": 13000
+      }
+     ]
+    },
+    {
+     "name": "20260819_143128.jpg",
+     "fid": "F0BS0KPR864",
+     "from": "댓글",
+     "path": "menu-files/1787119860_605459-1.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "구이",
+       "name": "고등어",
+       "price": 10000
+      },
+      {
+       "category": "구이",
+       "name": "연어머리구이",
+       "price": 10000
+      },
+      {
+       "category": "구이",
+       "name": "오늘의구이",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "20260819_143124.jpg",
+     "fid": "F0BR6861R8S",
+     "from": "댓글",
+     "path": "menu-files/1787119860_605459-2.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "탕",
+       "name": "차돌미소나베",
+       "price": 20000
+      },
+      {
+       "category": "탕",
+       "name": "복어맑은탕",
+       "price": 25000
+      },
+      {
+       "category": "탕",
+       "name": "미즈타끼",
+       "price": 20000
+      },
+      {
+       "category": "탕",
+       "name": "쓰끼야끼",
+       "price": 20000
+      },
+      {
+       "category": "탕",
+       "name": "유부보따리오뎅",
+       "price": 18000
+      },
+      {
+       "category": "탕",
+       "name": "바지락술국",
+       "price": 13000
+      },
+      {
+       "category": "탕",
+       "name": "매운탕",
+       "price": 13000
+      },
+      {
+       "category": "탕",
+       "name": "알탕",
+       "price": 18000
+      },
+      {
+       "category": "탕",
+       "name": "참새우바지락탕",
+       "price": 18000
+      },
+      {
+       "category": "탕",
+       "name": "고기듬뿍김치찌개",
+       "price": 20000
+      },
+      {
+       "category": "탕",
+       "name": "우족탕",
+       "price": 30000
+      }
+     ]
+    },
+    {
+     "name": "20260819_143121.jpg",
+     "fid": "F0BR020UFGB",
+     "from": "댓글",
+     "path": "menu-files/1787119860_605459-3.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "요리",
+       "name": "참치물회",
+       "price": 20000
+      },
+      {
+       "category": "요리",
+       "name": "참치타다끼",
+       "price": 20000
+      },
+      {
+       "category": "요리",
+       "name": "에비마요",
+       "price": 18000
+      },
+      {
+       "category": "요리",
+       "name": "명란버터샐러드",
+       "price": 13000
+      },
+      {
+       "category": "요리",
+       "name": "새우버터구이",
+       "price": 18000
+      },
+      {
+       "category": "요리",
+       "name": "전복마늘구이",
+       "price": 20000
+      },
+      {
+       "category": "요리",
+       "name": "연어샐러드",
+       "price": 13000
+      },
+      {
+       "category": "요리",
+       "name": "새우장",
+       "price": 6000
+      },
+      {
+       "category": "요리",
+       "name": "새우깡",
+       "price": 9000
+      },
+      {
+       "category": "요리",
+       "name": "두부김치",
+       "price": 15000
+      },
+      {
+       "category": "요리",
+       "name": "제육볶음",
+       "price": 15000
+      },
+      {
+       "category": "요리",
+       "name": "회무침",
+       "price": 10000
+      },
+      {
+       "category": "요리",
+       "name": "추가회무침",
+       "price": 5000
+      },
+      {
+       "category": "요리",
+       "name": "특선요리",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "20260819_143114.jpg",
+     "fid": "F0BQQTHT4K1",
+     "from": "댓글",
+     "path": "menu-files/1787119860_605459-4.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "계란초밥",
+       "price": 7000
+      },
+      {
+       "category": "",
+       "name": "광어초밥",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "메까도로초밥",
+       "price": 24000
+      },
+      {
+       "category": "",
+       "name": "새우장초밥",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "연어초밥",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "왕새우초밥",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "유부초밥",
+       "price": 7000
+      },
+      {
+       "category": "",
+       "name": "특선초밥",
+       "price": 18000
+      },
+      {
+       "category": "",
+       "name": "모듬초밥",
+       "price": 12000
+      },
+      {
+       "category": "",
+       "name": "국수",
+       "price": 7000
+      },
+      {
+       "category": "",
+       "name": "알탕",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "회덮밥",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "회덮밥정식",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "오마카세 런치",
+       "price": 30000
+      },
+      {
+       "category": "",
+       "name": "오마카세 디너",
+       "price": 50000
+      },
+      {
+       "category": "",
+       "name": "간장새우밥",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "냉면",
+       "price": 7000
+      },
+      {
+       "category": "",
+       "name": "메밀",
+       "price": 7000
+      },
+      {
+       "category": "",
+       "name": "우동",
+       "price": 7000
+      },
+      {
+       "category": "",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "면사리",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "소면추가",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "생고기김치찌개",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "런치정식",
+       "price": 10000
+      }
+     ]
+    },
+    {
+     "name": "20260819_143104.jpg",
+     "fid": "F0BQQTK4WFR",
+     "from": "댓글",
+     "path": "menu-files/1787119860_605459-5.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "사시미",
+       "name": "광어회",
+       "price": 18000
+      },
+      {
+       "category": "사시미",
+       "name": "메꺄도로",
+       "price": 30000
+      },
+      {
+       "category": "사시미",
+       "name": "연어회",
+       "price": 18000
+      },
+      {
+       "category": "사시미",
+       "name": "참치회",
+       "price": 20000
+      },
+      {
+       "category": "사시미",
+       "name": "석화",
+       "price": 15000
+      },
+      {
+       "category": "사시미",
+       "name": "오도로",
+       "price": 50000
+      },
+      {
+       "category": "사시미",
+       "name": "참치 머리한마리",
+       "price": 45000
+      },
+      {
+       "category": "사시미",
+       "name": "모듬회",
+       "price": 35000
+      },
+      {
+       "category": "사시미",
+       "name": "특선모듬회",
+       "price": 45000
+      },
+      {
+       "category": "사시미",
+       "name": "홍새우",
+       "price": 18000
+      }
+     ]
+    },
+    {
+     "name": "20260819_143859.jpg",
+     "fid": "F0BR689642W",
+     "from": "댓글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "(생)삼겹살 (180g)",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "냉 삼겹살 (180g)",
+       "price": 12000
+      },
+      {
+       "category": "",
+       "name": "대패삼겹살 (180g)",
+       "price": 12000
+      },
+      {
+       "category": "",
+       "name": "소불고기 (소 500g)",
+       "price": 30000
+      },
+      {
+       "category": "",
+       "name": "소불고기 (중 800g)",
+       "price": 45000
+      },
+      {
+       "category": "",
+       "name": "김치찌개",
+       "price": 20000
+      },
+      {
+       "category": "",
+       "name": "부대찌개",
+       "price": 20000
+      },
+      {
+       "category": "",
+       "name": "대패제육복음",
+       "price": 20000
+      },
+      {
+       "category": "",
+       "name": "런치김치찌개 (2인이상)",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "만두 (고기.김치)",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "도토리 묵사발.무침",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "왕새우튀김 2P",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "바지락된장찌개",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "폭탄계란찜",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "소주",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "맥주",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "소성주",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "소성주플러스",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "청하",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "음료",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "어린이돈까스",
+       "price": 10000
+      }
+     ]
+    },
+    {
+     "name": "20260819_143140.jpg",
+     "fid": "F0BS0L09788",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "음료/주류",
+       "name": "맥주",
+       "price": 5000
+      },
+      {
+       "category": "음료/주류",
+       "name": "소주",
+       "price": 4000
+      },
+      {
+       "category": "음료/주류",
+       "name": "청하",
+       "price": 6000
+      },
+      {
+       "category": "음료/주류",
+       "name": "음료",
+       "price": 2000
+      },
+      {
+       "category": "음료/주류",
+       "name": "사케",
+       "price": 0
+      },
+      {
+       "category": "음료/주류",
+       "name": "사케",
+       "price": 30000
+      },
+      {
+       "category": "음료/주류",
+       "name": "사케",
+       "price": 35000
+      },
+      {
+       "category": "음료/주류",
+       "name": "소성주",
+       "price": 4000
+      },
+      {
+       "category": "음료/주류",
+       "name": "하이볼",
+       "price": 7000
+      },
+      {
+       "category": "음료/주류",
+       "name": "송죽매750",
+       "price": 25000
+      },
+      {
+       "category": "음료/주류",
+       "name": "콜키지",
+       "price": 10000
+      },
+      {
+       "category": "음료/주류",
+       "name": "콜키지",
+       "price": 15000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "등록 완료 이후 문자 한통만 부탁드리겠습니다..!:man-bowing:\n\n겹치는건 빼달라고 말씀주시긴했는데 어려울 수 있다고 안내드렸으며 그러면 직접 수정하신다고 하셨습니다!"
+   ],
+   "rc": 2,
+   "lr": "1787120003.358329",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787119860605459"
+  },
   {
    "ts": "1787119032.094789",
    "date": "2026-08-19",
@@ -20,12 +614,14 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787119038.701279",
+   "replies": [
+    "(https://mail.google.com/mail/u/0/#inbox/1a018991734d0942)"
+   ],
+   "rc": 2,
+   "lr": "1787120033.725649",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787119032094789"
   },
   {
@@ -31936,29 +32532,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784528467858269"
-  },
-  {
-   "ts": "1784527418.695909",
-   "date": "2026-07-20",
-   "time": "15:03",
-   "store": "담갈비",
-   "biz": "3082202243",
-   "pos": "",
-   "content": "메뉴등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "왜~ 되어있징"
-   ],
-   "rc": 3,
-   "lr": "1784527567.768179",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784527418695909"
   }
  ],
  "ocr": {
