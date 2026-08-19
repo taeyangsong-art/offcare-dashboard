@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4155,
+  "version": 4156,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -117674,7 +117674,7 @@ window.SLACK_DATA = {
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "13:26",
+      "updatedAt": "13:28",
       "voc": {
         "responses": 3,
         "install": {
@@ -117749,15 +117749,19 @@ window.SLACK_DATA = {
       },
       "1787112794.856459": {
         "post": "1787112794.856459",
-        "lastSeen": 1787113572.605
-      },
-      "1787113560.838909": {
-        "post": "1787113560.838909",
-        "lastSeen": 1787113572.605
+        "lastSeen": 1787113829.439
       },
       "1787113551.301829": {
         "post": "1787113551.301829",
-        "lastSeen": 1787113572.605
+        "lastSeen": 1787113829.439
+      },
+      "1787113730.696559": {
+        "post": "1787113730.696559",
+        "lastSeen": 1787113829.439
+      },
+      "1787113617.991879": {
+        "post": "1787113617.991879",
+        "lastSeen": 1787113829.439
       }
     },
     "days": {
@@ -143779,8 +143783,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-19": {
-        "cnt": 27,
-        "sumMin": 372.9949939370155,
+        "cnt": 28,
+        "sumMin": 375.3313787857691,
         "over": 3,
         "items": [
           {
@@ -143998,19 +144002,27 @@ window.SLACK_DATA = {
             "biz": "5056300494",
             "who": "고경림",
             "cat": "onboarding"
+          },
+          {
+            "hm": "13:26",
+            "min": 2.3,
+            "store": "멜로그음악학원",
+            "biz": "3139202350",
+            "who": "김동욱",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-19 13:26",
+    "at": "2026-08-19 13:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3589,
+    "rows": 3592,
     "named": 281,
     "unknownName": 0,
     "beforeStart": 0,
