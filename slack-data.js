@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4144,
+  "version": 4145,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -117043,21 +117043,21 @@ window.SLACK_DATA = {
     "2026-08-19": {
       "counts": {
         "as": {
+          "심성현": 6,
           "김현기": 1,
-          "심성현": 5,
           "배선유": 6,
           "고경림": 5
         },
         "onboarding": {
-          "배선유": 1,
-          "고경림": 1,
+          "배선유": 2,
+          "고경림": 2,
           "김동욱": 1
         },
         "transfer": {
           "김현기": 2
         },
         "menu": {
-          "배선유": 2
+          "배선유": 3
         },
         "delivery": {
           "김현기": 1
@@ -117065,6 +117065,29 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:14",
+          "store": "돈가촌",
+          "biz": "7843901499",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "토스포스 하기 메뉴 추가 요청 드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! /"
+        },
+        {
+          "time": "11:11",
+          "store": "카리노헤어",
+          "biz": "1161100562",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "프론트에 삼성페이 인식이 전혀 안되어, 여기저기 전체적으로",
+          "hw": "",
+          "urgent": true,
+          "intake": "online",
+          "note": "프론트에 결제 신호 없이 대기 화면에서 결제 시도 중 상태 / 사용 방법 안내 완료"
+        },
         {
           "time": "11:06",
           "store": "냠냠 꼬마김밥",
@@ -117075,6 +117098,28 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "as대체품 발송 / 금요일 회수 접수"
+        },
+        {
+          "time": "11:00",
+          "store": "빈티지채널",
+          "biz": "3152901315",
+          "cat": "onboarding",
+          "emp": "배선유",
+          "req": "캣프 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "완료"
+        },
+        {
+          "time": "11:00",
+          "store": "살롱크림(SALON CREAM)",
+          "biz": "1772302501",
+          "cat": "onboarding",
+          "emp": "고경림",
+          "req": "포프(노트북) 온보딩 도움 요청드립니다. (10시경)",
+          "hw": "",
+          "intake": "online",
+          "note": "포프(노트북) + 영수프린터 온보딩완료"
         },
         {
           "time": "10:58",
@@ -117342,19 +117387,19 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 19,
+        "online": 23,
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "11:14",
+      "updatedAt": "11:30",
       "voc": {
-        "responses": 2,
+        "responses": 3,
         "install": {
           "count": 0,
           "low": 0
         },
         "nps": {
-          "count": 2,
+          "count": 3,
           "low": 0
         },
         "high": {
@@ -117362,11 +117407,16 @@ window.SLACK_DATA = {
           "nps": 2
         },
         "npsDist": {
+          "9": 1,
           "10": 2
         },
         "installDist": {},
         "byIndustry": {},
         "byTenure": {
+          "1개월": {
+            "total": 1,
+            "low": 0
+          },
           "3개월": {
             "total": 1,
             "low": 0
@@ -117377,6 +117427,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 1,
+            "low": 0
+          },
           "SECTA9": {
             "total": 1,
             "low": 0
@@ -117409,6 +117463,10 @@ window.SLACK_DATA = {
       "1787050824.044229": {
         "post": "1787050824.044229",
         "lastSeen": 1787050835.581
+      },
+      "1787106626.820089": {
+        "post": "1787106626.820089",
+        "lastSeen": 1787106627.181
       }
     },
     "days": {
@@ -143519,7 +143577,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-19 11:15",
+    "at": "2026-08-19 11:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
