@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 753,
- "updatedAt": "2026-08-19 12:30",
+ "version": 754,
+ "updatedAt": "2026-08-19 13:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1787112794.856459",
+   "date": "2026-08-19",
+   "time": "13:13",
+   "store": "프리토 카츠",
+   "biz": "8451902456",
+   "pos": "기타",
+   "content": "카츠메뉴- 맵카츠, 갈릭카츠 13,900\n라이스메뉴- 카츠카레라이스 13,900\n카츠(점심할인)메뉴- 맵카츠, 칼릭카츠 12,900\n라이스(점심할인)메뉴- 카츠카레라이스 12,900\n가격 변경 부탁드립니더",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787112798.867219",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787112794856459"
+  },
   {
    "ts": "1787105674.919769",
    "date": "2026-08-19",
