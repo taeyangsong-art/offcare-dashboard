@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4152,
+  "version": 4153,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -117043,7 +117043,7 @@ window.SLACK_DATA = {
     "2026-08-19": {
       "counts": {
         "as": {
-          "심성현": 13,
+          "심성현": 14,
           "배선유": 9,
           "김현기": 3,
           "고경림": 6
@@ -117069,6 +117069,28 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "12:00",
+          "store": "용인대 아이짐 태권도",
+          "biz": "7879200188",
+          "handler": "김현기",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "1차 부재"
+          ]
+        },
+        {
+          "time": "11:56",
+          "store": "모모랑",
+          "biz": "4880903516",
+          "handler": "김동욱",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
           "time": "11:33",
           "store": "래빗바 (rabbit bar)",
           "biz": "5090903695",
@@ -117081,6 +117103,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "12:43",
+          "store": "일등복권",
+          "biz": "8190300079",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "오케이포스 사용 중인데 매출 재고가 맞지 않아 재고 맞출 수 있는 방법 문의 주셨습니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "실사 제고 틀어짐으로 다시 등록 안내 완료"
+        },
         {
           "time": "12:37",
           "store": "주식회사 에스앤제이 에프앤비",
@@ -117580,11 +117613,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 39,
-        "offline": 7,
+        "online": 41,
+        "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "12:48",
+      "updatedAt": "13:00",
       "voc": {
         "responses": 3,
         "install": {
@@ -117657,9 +117690,9 @@ window.SLACK_DATA = {
         "post": "1787050824.044229",
         "lastSeen": 1787050835.581
       },
-      "1787111323.570899": {
-        "post": "1787111323.570899",
-        "lastSeen": 1787111655.407
+      "1787112000.162189": {
+        "post": "1787112000.162189",
+        "lastSeen": 1787112037.08
       }
     },
     "days": {
@@ -143898,7 +143931,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-19 12:54",
+    "at": "2026-08-19 13:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
