@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4171,
+  "version": 4172,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -95748,7 +95748,7 @@ window.SLACK_DATA = {
             "emp": "",
             "autoStatus": "",
             "autoEmp": "",
-            "autoNote": "",
+            "autoNote": "익일 오전 11시 상담요청 익일 오전 11시 상담요청 / 예약완료 예약완료",
             "doneDate": ""
           },
           {
@@ -117068,8 +117068,8 @@ window.SLACK_DATA = {
           "심성현": 1
         },
         "transfer": {
+          "심성현": 3,
           "김동욱": 3,
-          "심성현": 2,
           "최민석": 1,
           "김현기": 2
         },
@@ -117125,7 +117125,7 @@ window.SLACK_DATA = {
           "req": "• 삼성페이 결제 시 인식이 잘 되지 않아 확인 요청드립니다.",
           "hw": "",
           "intake": "offline",
-          "note": ""
+          "note": "프론트 전원을 안끄고 다니시는매장 프론트 재부팅후 정상인식 확인했습니다. 추후 지속적인 문제발생시 재인입 안내완료"
         },
         {
           "time": "16:26",
@@ -117148,6 +117148,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "1020분 소요 양해 / 케이블 반대로 연결 재연결 및 프론트 설정 완료"
+        },
+        {
+          "time": "16:22",
+          "store": ",주소* 변경으로 인한 다운로드 요청",
+          "biz": "5866400807",
+          "cat": "transfer",
+          "emp": "심성현",
+          "req": "포 + 프 + 캣 사용 중 / 상호, 주소 다운로드 요청 드립니다. / 빠른 통화 요청",
+          "hw": "",
+          "intake": "offline",
+          "note": "완료 결제 테스트 영수증 확인"
         },
         {
           "time": "16:20",
@@ -118497,10 +118508,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 111,
-        "offline": 17,
+        "offline": 18,
         "unknown": 0
       },
-      "updatedAt": "16:38",
+      "updatedAt": "16:45",
       "voc": {
         "responses": 18,
         "install": {
@@ -118768,11 +118779,27 @@ window.SLACK_DATA = {
         ]
       },
       "ob": {
-        "count": 20,
+        "count": 22,
         "byEmp": {
-          "김현기": 20
+          "김현기": 22
         },
         "items": [
+          {
+            "key": "2026년 8월 19일 오후 1:40:10|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786930570630479#1",
+            "handler": "김현기",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-19",
+            "planDate": "2026-08-21",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786930570630479"
+          },
+          {
+            "key": "2026년 8월 19일 오후 1:30:50|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784536464902309#1",
+            "handler": "김현기",
+            "status": "1차부재",
+            "recvDate": "2026-08-19",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784536464902309"
+          },
           {
             "key": "2026년 8월 19일 오후 1:28:51|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785393843343639#1",
             "handler": "김현기",
@@ -118957,19 +118984,27 @@ window.SLACK_DATA = {
       },
       "1787119308.962799": {
         "post": "1787119308.962799",
-        "lastSeen": 1787125146.213
+        "lastSeen": 1787125524.562
       },
       "1787123370.888479": {
         "post": "1787123370.888479",
         "lastSeen": 1787123723.745
       },
-      "1787124945.674479": {
-        "post": "1787124945.674479",
-        "lastSeen": 1787125146.213
-      },
       "1787124793.451009": {
         "post": "1787124793.451009",
-        "lastSeen": 1787125146.213
+        "lastSeen": 1787125524.562
+      },
+      "1787125420.134549": {
+        "post": "1787125420.134549",
+        "lastSeen": 1787125524.562
+      },
+      "1787125501.396719": {
+        "post": "1787125501.396719",
+        "lastSeen": 1787125524.562
+      },
+      "1787125491.404499": {
+        "post": "1787125491.404499",
+        "lastSeen": 1787125524.562
       }
     },
     "days": {
@@ -144991,8 +145026,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-19": {
-        "cnt": 72,
-        "sumMin": 1045.8642466545102,
+        "cnt": 73,
+        "sumMin": 1052.3594636718428,
         "over": 6,
         "items": [
           {
@@ -145570,26 +145605,34 @@ window.SLACK_DATA = {
             "biz": "1023607216",
             "who": "배선유",
             "cat": "as"
+          },
+          {
+            "hm": "16:35",
+            "min": 6.5,
+            "store": "오금리 커피",
+            "biz": "4392801628",
+            "who": "고경림",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-19 16:39",
+    "at": "2026-08-19 16:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3597,
-    "named": 301,
+    "named": 303,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 301,
+    "done": 303,
     "byStatus": {
-      "일정등록완료": 189,
-      "1차부재": 66,
+      "일정등록완료": 190,
+      "1차부재": 67,
       "점주직접접수": 26,
       "설치불가": 7,
       "(빈칸)": 2,
