@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 764,
- "updatedAt": "2026-08-19 16:15",
+ "version": 765,
+ "updatedAt": "2026-08-19 17:00",
  "days": 30,
  "items": [
   {
@@ -32607,27 +32607,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784536488876279"
-  },
-  {
-   "ts": "1784534087.324769",
-   "date": "2026-07-20",
-   "time": "16:54",
-   "store": "뮌헨",
-   "biz": "5660702429",
-   "pos": "기타",
-   "content": "먹태가격 15000원->16000원으로 수정부탁드립니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784534091.553409",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784534087324769"
   }
  ],
  "ocr": {
