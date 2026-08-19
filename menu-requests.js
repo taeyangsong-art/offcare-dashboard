@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 751,
- "updatedAt": "2026-08-19 11:30",
+ "version": 752,
+ "updatedAt": "2026-08-19 11:45",
  "days": 30,
  "items": [
   {
@@ -31786,27 +31786,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784517728533079"
-  },
-  {
-   "ts": "1784514720.972089",
-   "date": "2026-07-20",
-   "time": "11:32",
-   "store": "정상카츠",
-   "biz": "1898102289",
-   "pos": "토스포스",
-   "content": "1. 카레 추가 삭제\n2. 안심,등심,통치즈,고구마통치즈,옛날돈가스,생선가스 옵션으로 카레밥 변경 2,000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784514754.929919",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784514720972089"
   }
  ],
  "ocr": {

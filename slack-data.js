@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4145,
+  "version": 4146,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -117043,10 +117043,10 @@ window.SLACK_DATA = {
     "2026-08-19": {
       "counts": {
         "as": {
+          "고경림": 6,
           "심성현": 6,
           "김현기": 1,
-          "배선유": 6,
-          "고경림": 5
+          "배선유": 6
         },
         "onboarding": {
           "배선유": 2,
@@ -117065,6 +117065,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:32",
+          "store": "에스헤어",
+          "biz": "4017900136",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "휴대폰 + 프론트 + 유프 연결 재온보딩 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "휴대폰 변경으로 인해 재온보딩 및 테스트 완료"
+        },
         {
           "time": "11:14",
           "store": "돈가촌",
@@ -117387,11 +117398,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 23,
+        "online": 24,
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "11:30",
+      "updatedAt": "11:45",
       "voc": {
         "responses": 3,
         "install": {
@@ -117464,9 +117475,17 @@ window.SLACK_DATA = {
         "post": "1787050824.044229",
         "lastSeen": 1787050835.581
       },
-      "1787106626.820089": {
-        "post": "1787106626.820089",
-        "lastSeen": 1787106627.181
+      "1787107500.876579": {
+        "post": "1787107500.876579",
+        "lastSeen": 1787107525.394
+      },
+      "1787107489.967789": {
+        "post": "1787107489.967789",
+        "lastSeen": 1787107525.394
+      },
+      "1787107486.978339": {
+        "post": "1787107486.978339",
+        "lastSeen": 1787107525.394
       }
     },
     "days": {
@@ -143488,8 +143507,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-19": {
-        "cnt": 10,
-        "sumMin": 90.77349382638931,
+        "cnt": 11,
+        "sumMin": 98.26461733977,
         "over": 0,
         "items": [
           {
@@ -143571,13 +143590,21 @@ window.SLACK_DATA = {
             "biz": "3152901315",
             "who": "배선유",
             "cat": "as"
+          },
+          {
+            "hm": "11:30",
+            "min": 7.5,
+            "store": "마린 커피 (마린coffee)",
+            "biz": "6248703459",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-19 11:30",
+    "at": "2026-08-19 11:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
