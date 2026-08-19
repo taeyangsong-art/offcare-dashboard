@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4133,
+  "version": 4134,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -117041,11 +117041,27 @@ window.SLACK_DATA = {
       }
     },
     "2026-08-19": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "배선유": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:00",
+          "store": "부용식당",
+          "biz": "1180380631",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "유선프린터 속도가 너무느려 설정확인부탁드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "통신속도 115200으로 변경"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
@@ -117104,10 +117120,6 @@ window.SLACK_DATA = {
       "1787050824.044229": {
         "post": "1787050824.044229",
         "lastSeen": 1787050835.581
-      },
-      "1787097609.022669": {
-        "post": "1787097609.022669",
-        "lastSeen": 1787097636.321
       }
     },
     "days": {
@@ -143127,11 +143139,26 @@ window.SLACK_DATA = {
             "cat": "onboarding"
           }
         ]
+      },
+      "2026-08-19": {
+        "cnt": 1,
+        "sumMin": 7.869513849417369,
+        "over": 0,
+        "items": [
+          {
+            "hm": "09:00",
+            "min": 7.9,
+            "store": "기혈명가(氣血名家)",
+            "biz": "2400203555",
+            "who": "김동욱",
+            "cat": "as"
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-19 09:00",
+    "at": "2026-08-19 09:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
