@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 766,
- "updatedAt": "2026-08-19 17:30",
+ "version": 767,
+ "updatedAt": "2026-08-19 17:45",
  "days": 30,
  "items": [
   {
@@ -23,10 +23,10 @@ window.MENU_REQUESTS = {
    "replies": [
     "익일 변경 가능성 안내 드렸으나, 가급적 금일 변경 요청주셨습니다"
    ],
-   "rc": 2,
-   "lr": "1787128088.832229",
+   "rc": 3,
+   "lr": "1787128303.345499",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787128068467689"
   },
@@ -32609,27 +32609,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784538364150319"
-  },
-  {
-   "ts": "1784536488.876279",
-   "date": "2026-07-20",
-   "time": "17:34",
-   "store": "피자스쿨외대앞역점",
-   "biz": "2042044914",
-   "pos": "토스포스",
-   "content": "할라피뇨 500원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784536495.442669",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784536488876279"
   }
  ],
  "ocr": {
