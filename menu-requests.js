@@ -3,10 +3,190 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 754,
- "updatedAt": "2026-08-19 13:15",
+ "version": 755,
+ "updatedAt": "2026-08-19 13:26",
  "days": 30,
  "items": [
+  {
+   "ts": "1787113551.301829",
+   "date": "2026-08-19",
+   "time": "13:25",
+   "store": "달콤한 꽃케이크",
+   "biz": "1393001963",
+   "pos": "토스포스",
+   "content": "메뉴 등록 부탁드립니다",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/13GiOdk0e2AS9UAXoKKCaiPT9URUp7kjC/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "13GiOdk0e2AS9UAXoKKCaiPT9URUp7kjC",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "이름",
+       "name": "백설기",
+       "price": 0
+      },
+      {
+       "category": "이름",
+       "name": "초코설기",
+       "price": 5000
+      },
+      {
+       "category": "이름",
+       "name": "흑임자설기",
+       "price": 10000
+      },
+      {
+       "category": "이름",
+       "name": "플레인",
+       "price": 0
+      },
+      {
+       "category": "이름",
+       "name": "초코떡",
+       "price": 5000
+      },
+      {
+       "category": "이름",
+       "name": "흑임자떡",
+       "price": 10000
+      },
+      {
+       "category": "이름",
+       "name": "생크림케이크",
+       "price": 0
+      },
+      {
+       "category": "이름",
+       "name": "숫자케이크",
+       "price": 35000
+      },
+      {
+       "category": "이름",
+       "name": "바구니케이크",
+       "price": 127000
+      },
+      {
+       "category": "이름",
+       "name": "보자기케이크",
+       "price": 15000
+      },
+      {
+       "category": "이름",
+       "name": "컵케이크",
+       "price": 8000
+      },
+      {
+       "category": "이름",
+       "name": "한송이케이크",
+       "price": 5000
+      },
+      {
+       "category": "이름",
+       "name": "꽃강정",
+       "price": 4500
+      },
+      {
+       "category": "이름",
+       "name": "꽃과자",
+       "price": 3500
+      },
+      {
+       "category": "이름",
+       "name": "과일양갱",
+       "price": 4500
+      },
+      {
+       "category": "이름",
+       "name": "보석양갱",
+       "price": 2500
+      },
+      {
+       "category": "사이즈",
+       "name": "도시락",
+       "price": 19000
+      },
+      {
+       "category": "사이즈",
+       "name": "미니",
+       "price": 38000
+      },
+      {
+       "category": "사이즈",
+       "name": "1호",
+       "price": 58000
+      },
+      {
+       "category": "사이즈",
+       "name": "2호",
+       "price": 78000
+      },
+      {
+       "category": "사이즈",
+       "name": "3호",
+       "price": 98000
+      },
+      {
+       "category": "시트추가",
+       "name": "미니",
+       "price": 20000
+      },
+      {
+       "category": "시트추가",
+       "name": "1호",
+       "price": 30000
+      },
+      {
+       "category": "시트추가",
+       "name": "2호",
+       "price": 40000
+      },
+      {
+       "category": "시트추가",
+       "name": "3호",
+       "price": 50000
+      },
+      {
+       "category": "",
+       "name": "포장1",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "포장2",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "포장3",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "포장4",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "포장5",
+       "price": 10000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787113554.076719",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787113551301829"
+  },
   {
    "ts": "1787112794.856459",
    "date": "2026-08-19",

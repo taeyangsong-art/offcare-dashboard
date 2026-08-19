@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4154,
+  "version": 4155,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -117043,8 +117043,8 @@ window.SLACK_DATA = {
     "2026-08-19": {
       "counts": {
         "as": {
+          "고경림": 8,
           "김동욱": 2,
-          "고경림": 7,
           "심성현": 14,
           "배선유": 9,
           "김현기": 3
@@ -117094,6 +117094,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "13:13",
+          "store": "바삭천국",
+          "biz": "1052550467",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "포프(태블릿)  사용 중 /  프론트에서 결제 시 로딩 화면이 지속 됨",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트 와이파이 5G-&gt; 2.4G로 변경후 정상적으로 작동확인 프론트 와이파이 5G- 2.4G로 변경후 정상적으로 작동확인"
+        },
         {
           "time": "13:08",
           "store": "리얼텍",
@@ -117659,11 +117670,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 44,
+        "online": 45,
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "13:13",
+      "updatedAt": "13:26",
       "voc": {
         "responses": 3,
         "install": {
@@ -117738,7 +117749,15 @@ window.SLACK_DATA = {
       },
       "1787112794.856459": {
         "post": "1787112794.856459",
-        "lastSeen": 1787112933.584
+        "lastSeen": 1787113572.605
+      },
+      "1787113560.838909": {
+        "post": "1787113560.838909",
+        "lastSeen": 1787113572.605
+      },
+      "1787113551.301829": {
+        "post": "1787113551.301829",
+        "lastSeen": 1787113572.605
       }
     },
     "days": {
@@ -143985,13 +144004,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-19 13:15",
+    "at": "2026-08-19 13:26",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3585,
+    "rows": 3589,
     "named": 281,
     "unknownName": 0,
     "beforeStart": 0,
