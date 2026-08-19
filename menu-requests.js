@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 768,
- "updatedAt": "2026-08-19 18:15",
+ "version": 769,
+ "updatedAt": "2026-08-19 18:22",
  "days": 30,
  "items": [
   {
@@ -32563,29 +32563,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784599959387169"
-  },
-  {
-   "ts": "1784539029.405799",
-   "date": "2026-07-20",
-   "time": "18:17",
-   "store": "더 리얼 숯불바베큐치킨 화명점",
-   "biz": "7351502466",
-   "pos": "",
-   "content": "• 메뉴 등록 요청 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "··· / 본점\n··· / 화명점\n- 화명점 > 본점 메뉴로 전부 똑같이 변경 요청"
-   ],
-   "rc": 4,
-   "lr": "1784558451.509699",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784539029405799"
   }
  ],
  "ocr": {
