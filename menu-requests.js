@@ -3,10 +3,66 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 749,
- "updatedAt": "2026-08-19 11:00",
+ "version": 750,
+ "updatedAt": "2026-08-19 11:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1787105674.919769",
+   "date": "2026-08-19",
+   "time": "11:14",
+   "store": "돈가촌",
+   "biz": "7843901499",
+   "pos": "토스포스",
+   "content": "토스포스 하기 메뉴 추가 요청 드립니다\n\n[주류/음료]\n• 주류 셀프 4,000원",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BR1D2TW8M",
+     "from": "댓글",
+     "path": "menu-files/1787105674_919769-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류/음료",
+       "name": "소주",
+       "price": 5000
+      },
+      {
+       "category": "주류/음료",
+       "name": "맥주",
+       "price": 5000
+      },
+      {
+       "category": "주류/음료",
+       "name": "음료수",
+       "price": 2000
+      },
+      {
+       "category": "주류/음료",
+       "name": "막걸리",
+       "price": 3000
+      },
+      {
+       "category": "주류/음료",
+       "name": "행사 주류",
+       "price": 3000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1787105697.747299",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787105674919769"
+  },
   {
    "ts": "1787104306.780679",
    "date": "2026-08-19",

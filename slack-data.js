@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4143,
+  "version": 4144,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -117043,9 +117043,10 @@ window.SLACK_DATA = {
     "2026-08-19": {
       "counts": {
         "as": {
+          "김현기": 1,
+          "심성현": 5,
           "배선유": 6,
-          "고경림": 5,
-          "심성현": 4
+          "고경림": 5
         },
         "onboarding": {
           "배선유": 1,
@@ -117064,6 +117065,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:06",
+          "store": "냠냠 꼬마김밥",
+          "biz": "8010603455",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "터프 사용 매장으로, 터미널에서 카드 인식이 잘 되지 않으신다고 하여 점검 요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "as대체품 발송 / 금요일 회수 접수"
+        },
+        {
+          "time": "10:58",
+          "store": "삐삐테이블(Pippi Table)",
+          "biz": "6230803126",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "갤럭시 태블릿에서 토스 사장님 앱 실행 안됨 / 백화 현상은 아님 / 아예 앱 실행이 안된다고 합니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "루팅 태블릿 장비 / 교육용 태블릿 사용 불가능 안내 / 폰 온보딩 완료"
+        },
         {
           "time": "10:56",
           "store": "써피써피 부산송정서핑샵",
@@ -117319,11 +117342,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 17,
+        "online": 19,
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "11:00",
+      "updatedAt": "11:14",
       "voc": {
         "responses": 2,
         "install": {
@@ -117386,10 +117409,6 @@ window.SLACK_DATA = {
       "1787050824.044229": {
         "post": "1787050824.044229",
         "lastSeen": 1787050835.581
-      },
-      "1787104803.971229": {
-        "post": "1787104803.971229",
-        "lastSeen": 1787105103.728
       }
     },
     "days": {
@@ -143411,8 +143430,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-19": {
-        "cnt": 9,
-        "sumMin": 80.60099764267603,
+        "cnt": 10,
+        "sumMin": 90.77349382638931,
         "over": 0,
         "items": [
           {
@@ -143486,13 +143505,21 @@ window.SLACK_DATA = {
             "biz": "1772302501",
             "who": "고경림",
             "cat": "as"
+          },
+          {
+            "hm": "11:00",
+            "min": 10.2,
+            "store": "빈티지채널",
+            "biz": "3152901315",
+            "who": "배선유",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-19 11:05",
+    "at": "2026-08-19 11:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
