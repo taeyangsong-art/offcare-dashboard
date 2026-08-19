@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4134,
+  "version": 4135,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -117043,11 +117043,36 @@ window.SLACK_DATA = {
     "2026-08-19": {
       "counts": {
         "as": {
-          "배선유": 1
+          "배선유": 2
+        },
+        "onboarding": {
+          "김동욱": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:22",
+          "store": "국물명가 전주콩나물국밥",
+          "biz": "6022662684",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "오케이포스 사용 매장 / 보안 리더기 상태 오류 메시지가 뜬다 하시어 점검 부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "프로그램 껏켯"
+        },
+        {
+          "time": "09:00",
+          "store": "기혈명가(氣血名家)",
+          "biz": "2400203555",
+          "cat": "onboarding",
+          "emp": "김동욱",
+          "req": "포프(PC) 온보딩 요청들비니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포프(데스크탑) 온보딩 완료. 금액입력결제모드 설정완료."
+        },
         {
           "time": "09:00",
           "store": "부용식당",
@@ -117061,11 +117086,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
-        "offline": 0,
+        "online": 2,
+        "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:00",
+      "updatedAt": "09:30",
       "voc": {
         "responses": 1,
         "install": {
@@ -117120,6 +117145,10 @@ window.SLACK_DATA = {
       "1787050824.044229": {
         "post": "1787050824.044229",
         "lastSeen": 1787050835.581
+      },
+      "1787099401.809709": {
+        "post": "1787099401.809709",
+        "lastSeen": 1787099429.663
       }
     },
     "days": {
@@ -143158,13 +143187,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-19 09:15",
+    "at": "2026-08-19 09:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3584,
+    "rows": 3585,
     "named": 281,
     "unknownName": 0,
     "beforeStart": 0,
