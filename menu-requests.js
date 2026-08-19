@@ -3,10 +3,280 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 746,
- "updatedAt": "2026-08-19 10:15",
+ "version": 747,
+ "updatedAt": "2026-08-19 10:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1787102479.230519",
+   "date": "2026-08-19",
+   "time": "10:21",
+   "store": "넛티(NUTTY)",
+   "biz": "8745100612",
+   "pos": "토스포스",
+   "content": "사진을 잘못 올렸습니다 이걸로 해주세요 ㅠ",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1vokxgdToRJA8g9NfLxKwZq03vLnrinoY/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1vokxgdToRJA8g9NfLxKwZq03vLnrinoY",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "Coffee",
+       "name": "아메리카노",
+       "price": 4000
+      },
+      {
+       "category": "Coffee",
+       "name": "라떼",
+       "price": 4500
+      },
+      {
+       "category": "Coffee",
+       "name": "바닐라 라떼",
+       "price": 5000
+      },
+      {
+       "category": "Coffee",
+       "name": "헤이즐넛 라떼",
+       "price": 5000
+      },
+      {
+       "category": "Coffee",
+       "name": "돌체 라떼",
+       "price": 5000
+      },
+      {
+       "category": "Coffee",
+       "name": "카페모카",
+       "price": 5000
+      },
+      {
+       "category": "Coffee",
+       "name": "카라멜 마끼아또",
+       "price": 5000
+      },
+      {
+       "category": "ColdBrew",
+       "name": "콜드브루",
+       "price": 4800
+      },
+      {
+       "category": "ColdBrew",
+       "name": "콜드브루 라떼",
+       "price": 5300
+      },
+      {
+       "category": "ColdBrew",
+       "name": "콜드브루 바닐라라떼",
+       "price": 5800
+      },
+      {
+       "category": "ColdBrew",
+       "name": "콘버터 믹스커피",
+       "price": 4800
+      },
+      {
+       "category": "Milk",
+       "name": "허니 딸기라떼",
+       "price": 4900
+      },
+      {
+       "category": "Milk",
+       "name": "딸기라떼",
+       "price": 5000
+      },
+      {
+       "category": "Milk",
+       "name": "초코밀크",
+       "price": 5300
+      },
+      {
+       "category": "Milk",
+       "name": "밀크티",
+       "price": 5300
+      },
+      {
+       "category": "Milk",
+       "name": "말차밀크",
+       "price": 5300
+      },
+      {
+       "category": "Milk",
+       "name": "콘버터 밀크",
+       "price": 4500
+      },
+      {
+       "category": "Milk",
+       "name": "고구마라떼",
+       "price": 5000
+      },
+      {
+       "category": "Milk",
+       "name": "오곡라떼",
+       "price": 5000
+      },
+      {
+       "category": "ADE",
+       "name": "메론소다",
+       "price": 4900
+      },
+      {
+       "category": "ADE",
+       "name": "청포도 에이드",
+       "price": 4900
+      },
+      {
+       "category": "ADE",
+       "name": "레몬 에이드",
+       "price": 4900
+      },
+      {
+       "category": "ADE",
+       "name": "자몽 에이드",
+       "price": 4900
+      },
+      {
+       "category": "ADE",
+       "name": "오미차 에이드",
+       "price": 4900
+      },
+      {
+       "category": "Shake",
+       "name": "냉율무",
+       "price": 5300
+      },
+      {
+       "category": "Shake",
+       "name": "냉마",
+       "price": 5300
+      },
+      {
+       "category": "Shake",
+       "name": "밀크 쉐이크",
+       "price": 5300
+      },
+      {
+       "category": "Shake",
+       "name": "커피 쉐이크",
+       "price": 5300
+      },
+      {
+       "category": "Blended",
+       "name": "리얼딸기주스",
+       "price": 5300
+      },
+      {
+       "category": "Blended",
+       "name": "플레인요거트 스무디",
+       "price": 5300
+      },
+      {
+       "category": "Blended",
+       "name": "딸기요거트 스무디",
+       "price": 5300
+      },
+      {
+       "category": "Blended",
+       "name": "복숭아요거트 스무디",
+       "price": 5300
+      },
+      {
+       "category": "Blended",
+       "name": "망고요거트 스무디",
+       "price": 5300
+      },
+      {
+       "category": "Blended",
+       "name": "블루베리요거트 스무디",
+       "price": 5300
+      },
+      {
+       "category": "Blended",
+       "name": "자바칩 프라푸치노",
+       "price": 5500
+      },
+      {
+       "category": "Tea",
+       "name": "레몬티",
+       "price": 4500
+      },
+      {
+       "category": "Tea",
+       "name": "자몽티",
+       "price": 4500
+      },
+      {
+       "category": "Tea",
+       "name": "얼그레이",
+       "price": 4000
+      },
+      {
+       "category": "Tea",
+       "name": "캐모마일",
+       "price": 4000
+      },
+      {
+       "category": "Tea",
+       "name": "페퍼민트",
+       "price": 4000
+      },
+      {
+       "category": "Tea",
+       "name": "루이보스 바닐라",
+       "price": 5800
+      },
+      {
+       "category": "Tea",
+       "name": "쿨허벌",
+       "price": 5800
+      },
+      {
+       "category": "Tea",
+       "name": "화이트 템플",
+       "price": 5800
+      },
+      {
+       "category": "Ice Tea",
+       "name": "자몽허니 블랙티",
+       "price": 4900
+      },
+      {
+       "category": "Ice Tea",
+       "name": "복숭아 아이스티",
+       "price": 5000
+      },
+      {
+       "category": "Ice Tea",
+       "name": "레몬 아이스티",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "시그니쳐 크림라떼",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "뱅쇼",
+       "price": 5800
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787102482.800309",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787102479230519"
+  },
   {
    "ts": "1787101910.181959",
    "date": "2026-08-19",
@@ -31456,30 +31726,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784514720972089"
-  },
-  {
-   "ts": "1784510571.745689",
-   "date": "2026-07-20",
-   "time": "10:22",
-   "store": "샘물김밥",
-   "biz": "1180227599",
-   "pos": "토스포스",
-   "content": "유플러스 건입니다. 스파로스 ->토스포스로 메뉴 이관 부탁드립니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "님 , 스파로스 사용 그대로 프론트 도입했던 이력이 있습니다..!\n https://w1659946222-hxm266180.slack.com/archives/C07AY99U3F1/p1764659176737349",
-    "kis 입니다"
-   ],
-   "rc": 9,
-   "lr": "1784513125.664989",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784510571745689"
   }
  ],
  "ocr": {
