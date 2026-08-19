@@ -3,10 +3,215 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 761,
- "updatedAt": "2026-08-19 15:30",
+ "version": 762,
+ "updatedAt": "2026-08-19 15:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1787121931.759939",
+   "date": "2026-08-19",
+   "time": "15:45",
+   "store": "차차하우스(CHACHA HAUS)",
+   "biz": "7441402842",
+   "pos": "토스포스",
+   "content": "전체메뉴추가",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1JpZ2rA-42b5c8zuvx588bcnBFCe2A9Si/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1JpZ2rA-42b5c8zuvx588bcnBFCe2A9Si",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "COFFEE",
+       "name": "아메리카노",
+       "price": 1800
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페라떼",
+       "price": 2500
+      },
+      {
+       "category": "COFFEE",
+       "name": "바닐라라떼",
+       "price": 2800
+      },
+      {
+       "category": "COFFEE",
+       "name": "헤이즐넛라떼",
+       "price": 2800
+      },
+      {
+       "category": "COFFEE",
+       "name": "카라멜마끼아또",
+       "price": 3000
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페모카",
+       "price": 3000
+      },
+      {
+       "category": "COFFEE",
+       "name": "카라멜 모카",
+       "price": 3000
+      },
+      {
+       "category": "COFFEE",
+       "name": "샷추가",
+       "price": 500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "밀크티",
+       "price": 3500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "리얼딸기라떼 (ONLY ICED)",
+       "price": 3500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "초코라떼",
+       "price": 3500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "미숫가루라떼",
+       "price": 3800
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "제주말차라떼",
+       "price": 4000
+      },
+      {
+       "category": "ADE · ICED ONLY",
+       "name": "수제 레몬에이드",
+       "price": 3500
+      },
+      {
+       "category": "ADE · ICED ONLY",
+       "name": "수제 자몽에이드",
+       "price": 3500
+      },
+      {
+       "category": "ADE · ICED ONLY",
+       "name": "수제 패션후르츠에이드",
+       "price": 3500
+      },
+      {
+       "category": "ADE · ICED ONLY",
+       "name": "수제 오미자에이드",
+       "price": 3500
+      },
+      {
+       "category": "SMOOTHIE · ICED ONLY",
+       "name": "딸기스무디",
+       "price": 3800
+      },
+      {
+       "category": "SMOOTHIE · ICED ONLY",
+       "name": "자몽스무디",
+       "price": 3800
+      },
+      {
+       "category": "SMOOTHIE · ICED ONLY",
+       "name": "망고스무디",
+       "price": 3800
+      },
+      {
+       "category": "SMOOTHIE · ICED ONLY",
+       "name": "블루베리요거트스무디",
+       "price": 4000
+      },
+      {
+       "category": "SMOOTHIE · ICED ONLY",
+       "name": "플레인요거트스무디",
+       "price": 4000
+      },
+      {
+       "category": "SMOOTHIE · ICED ONLY",
+       "name": "제주말차스무디",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "레몬티",
+       "price": 3000
+      },
+      {
+       "category": "TEA",
+       "name": "자몽티",
+       "price": 3000
+      },
+      {
+       "category": "TEA",
+       "name": "오미자차",
+       "price": 3000
+      },
+      {
+       "category": "TEA",
+       "name": "히비스커스",
+       "price": 2500
+      },
+      {
+       "category": "TEA",
+       "name": "캐모마일",
+       "price": 2500
+      },
+      {
+       "category": "TEA",
+       "name": "페퍼민트",
+       "price": 2500
+      },
+      {
+       "category": "TEA",
+       "name": "복숭아아이스티",
+       "price": 3000
+      },
+      {
+       "category": "CROFFLE · ICED ONLY",
+       "name": "플레인 크로플",
+       "price": 3000
+      },
+      {
+       "category": "CROFFLE · ICED ONLY",
+       "name": "시나몬 크로플",
+       "price": 3500
+      },
+      {
+       "category": "CROFFLE · ICED ONLY",
+       "name": "초코 크로플",
+       "price": 3500
+      },
+      {
+       "category": "CROFFLE · ICED ONLY",
+       "name": "아이스크림 크로플",
+       "price": 4000
+      },
+      {
+       "category": "CROFFLE · ICED ONLY",
+       "name": "초코 아이스크림 크로플",
+       "price": 4500
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 0,
+   "lr": "",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787121931759939"
+  },
   {
    "ts": "1787119860.605459",
    "date": "2026-08-19",
@@ -32463,29 +32668,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784531051794269"
-  },
-  {
-   "ts": "1784529797.935699",
-   "date": "2026-07-20",
-   "time": "15:43",
-   "store": "모먼트준",
-   "biz": "4192102513",
-   "pos": "",
-   "content": "메뉴 신규 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "메뉴 이미지와 메뉴 별 금액 압축하여 첨부드립니다"
-   ],
-   "rc": 3,
-   "lr": "1784532491.048589",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784529797935699"
   }
  ],
  "ocr": {
