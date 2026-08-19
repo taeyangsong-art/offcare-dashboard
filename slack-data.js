@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4141,
+  "version": 4142,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -117042,24 +117042,47 @@ window.SLACK_DATA = {
     },
     "2026-08-19": {
       "counts": {
-        "as": {
-          "심성현": 3,
-          "고경림": 4,
-          "배선유": 5
-        },
         "onboarding": {
+          "배선유": 1,
           "고경림": 1,
           "김동욱": 1
+        },
+        "as": {
+          "심성현": 4,
+          "고경림": 4,
+          "배선유": 5
         },
         "transfer": {
           "김현기": 2
         },
         "menu": {
-          "배선유": 1
+          "배선유": 2
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:51",
+          "store": "샐러드타임",
+          "biz": "8854001099",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "유플) 포스 메뉴 금액 수정 요청드립니다! (키오스크 사용중)",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / • 연어 샐러드 13,900원 &gt;&gt; 14,900원 • 연어 포케 14,700원 &gt;&gt; 15,700원 • 샐러드 토핑 추가 ◦ 연어 추가 6,000원 &gt;&gt; 7,000원 완료 이후 문자 한통만 부탁드리겠습니다 연어 샐러드 13,900원 14,900원 연어 포케 14,700원 15"
+        },
+        {
+          "time": "10:45",
+          "store": "더한복",
+          "biz": "3545900680",
+          "cat": "onboarding",
+          "emp": "배선유",
+          "req": "컴퓨터 + 프론트 온보딩",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료"
+        },
         {
           "time": "10:30",
           "store": "수랏간들밥&amp;파크",
@@ -117070,6 +117093,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "프린터 케이블 절단 단선 고객 과실 면책 1회 적용 안내 / 금일 발송 접수 안내 완료"
+        },
+        {
+          "time": "10:30",
+          "store": "바른살롱 충주점",
+          "biz": "1012566609",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포프(노트북) 영수증 출력 용도로 mpos2100 온보딩 부탁드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "15분 뒤 통화 요청"
         },
         {
           "time": "10:21",
@@ -117249,37 +117283,45 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 12,
+        "online": 15,
         "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "10:45",
+      "updatedAt": "11:00",
       "voc": {
-        "responses": 1,
+        "responses": 2,
         "install": {
           "count": 0,
           "low": 0
         },
         "nps": {
-          "count": 1,
+          "count": 2,
           "low": 0
         },
         "high": {
           "install": 0,
-          "nps": 1
+          "nps": 2
         },
         "npsDist": {
-          "10": 1
+          "10": 2
         },
         "installDist": {},
         "byIndustry": {},
         "byTenure": {
+          "3개월": {
+            "total": 1,
+            "low": 0
+          },
           "12개월": {
             "total": 1,
             "low": 0
           }
         },
         "byVan": {
+          "SECTA9": {
+            "total": 1,
+            "low": 0
+          },
           "KIS": {
             "total": 1,
             "low": 0
@@ -117309,9 +117351,13 @@ window.SLACK_DATA = {
         "post": "1787050824.044229",
         "lastSeen": 1787050835.581
       },
-      "1787103900.581039": {
-        "post": "1787103900.581039",
-        "lastSeen": 1787103924.687
+      "1787104803.971229": {
+        "post": "1787104803.971229",
+        "lastSeen": 1787104832.816
+      },
+      "1787104802.623589": {
+        "post": "1787104802.623589",
+        "lastSeen": 1787104832.816
       }
     },
     "days": {
@@ -143406,7 +143452,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-19 10:45",
+    "at": "2026-08-19 11:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

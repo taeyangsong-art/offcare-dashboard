@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 748,
- "updatedAt": "2026-08-19 10:45",
+ "version": 749,
+ "updatedAt": "2026-08-19 11:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1787104306.780679",
+   "date": "2026-08-19",
+   "time": "10:51",
+   "store": "샐러드타임",
+   "biz": "8854001099",
+   "pos": "퍼스트포스",
+   "content": "유플) 포스 메뉴 금액 수정 요청드립니다! (키오스크 사용중)",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "• 연어 샐러드 13,900원 >> *14,900원*\n• 연어 포케 14,700원 >> *15,700원*\n• 샐러드 _ 토핑 추가\n    ◦ 연어 추가 6,000원 >> *7,000원*\n완료 이후 문자 한통만 부탁드리겠습니다:man-bowing:"
+   ],
+   "rc": 2,
+   "lr": "1787104320.818699",
+   "rfx": 3,
+   "status": "done",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787104306780679"
+  },
   {
    "ts": "1787102479.230519",
    "date": "2026-08-19",
