@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 787,
- "updatedAt": "2026-08-20 14:00",
+ "version": 788,
+ "updatedAt": "2026-08-20 14:15",
  "days": 30,
  "items": [
   {
@@ -32807,48 +32807,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784610945917399"
-  },
-  {
-   "ts": "1784610917.170279",
-   "date": "2026-07-21",
-   "time": "14:15",
-   "store": "야사이마키 미캉",
-   "biz": "5792502318",
-   "pos": "",
-   "content": "메뉴 등록 부탁 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1784610930.883219",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784610917170279"
-  },
-  {
-   "ts": "1784610189.016449",
-   "date": "2026-07-21",
-   "time": "14:03",
-   "store": "강창구찹쌀진순대 용인하이닉스점",
-   "biz": "8624800768",
-   "pos": "",
-   "content": "메뉴명 수정",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784610193.883789",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784610189016449"
   }
  ],
  "ocr": {
