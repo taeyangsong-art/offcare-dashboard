@@ -3,10 +3,334 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 789,
- "updatedAt": "2026-08-20 14:30",
+ "version": 790,
+ "updatedAt": "2026-08-20 14:40",
  "days": 30,
  "items": [
+  {
+   "ts": "1787204098.568879",
+   "date": "2026-08-20",
+   "time": "14:34",
+   "store": "버기즈대흥",
+   "biz": "2780703574",
+   "pos": "",
+   "content": "메뉴등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "2026메뉴1.PNG",
+     "fid": "F0BR9F2S491",
+     "from": "댓글",
+     "path": "menu-files/1787204098_568879-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "BURGER",
+       "name": "CHEESE 치즈 SINGLE",
+       "price": 8300
+      },
+      {
+       "category": "BURGER",
+       "name": "CHEESE 치즈 SET",
+       "price": 12800
+      },
+      {
+       "category": "BURGER",
+       "name": "BACON CHEESE 베이컨 치즈 SINGLE",
+       "price": 9300
+      },
+      {
+       "category": "BURGER",
+       "name": "BACON CHEESE 베이컨 치즈 SET",
+       "price": 13800
+      },
+      {
+       "category": "BURGER",
+       "name": "DOUBLE CHEESE 더블 치즈 SINGLE",
+       "price": 11800
+      },
+      {
+       "category": "BURGER",
+       "name": "DOUBLE CHEESE 더블 치즈 SET",
+       "price": 15800
+      },
+      {
+       "category": "BURGER",
+       "name": "DOUBLE BACON 더블 베이컨 SINGLE",
+       "price": 13800
+      },
+      {
+       "category": "BURGER",
+       "name": "DOUBLE BACON 더블 베이컨 SET",
+       "price": 17300
+      },
+      {
+       "category": "BURGER",
+       "name": "HANGOVER 행오버 SINGLE",
+       "price": 10800
+      },
+      {
+       "category": "BURGER",
+       "name": "HANGOVER 행오버 SET",
+       "price": 14800
+      },
+      {
+       "category": "BURGER",
+       "name": "AVOCADO 아보카도 SINGLE",
+       "price": 10800
+      },
+      {
+       "category": "BURGER",
+       "name": "AVOCADO 아보카도 SET",
+       "price": 14800
+      },
+      {
+       "category": "BURGER",
+       "name": "GODFATHER 갓파더 SINGLE",
+       "price": 10300
+      },
+      {
+       "category": "BURGER",
+       "name": "GODFATHER 갓파더 SET",
+       "price": 14300
+      },
+      {
+       "category": "BURGER",
+       "name": "MUSHROOM 머쉬룸 SINGLE",
+       "price": 10300
+      },
+      {
+       "category": "BURGER",
+       "name": "MUSHROOM 머쉬룸 SET",
+       "price": 14300
+      },
+      {
+       "category": "BURGER",
+       "name": "CHICAGO 시카고 SINGLE",
+       "price": 9500
+      },
+      {
+       "category": "BURGER",
+       "name": "CHICAGO 시카고 SET",
+       "price": 14000
+      },
+      {
+       "category": "BURGER",
+       "name": "CHEESE BANG 치즈뱅 SINGLE",
+       "price": 9300
+      },
+      {
+       "category": "BURGER",
+       "name": "CHEESE BANG 치즈뱅 SET",
+       "price": 13800
+      },
+      {
+       "category": "BURGER",
+       "name": "TWIG 트위그 SINGLE",
+       "price": 9200
+      },
+      {
+       "category": "BURGER",
+       "name": "TWIG 트위그 SET",
+       "price": 13700
+      },
+      {
+       "category": "BURGER",
+       "name": "CRISPY CHICKEN 크리스피 치킨 SINGLE",
+       "price": 9200
+      },
+      {
+       "category": "BURGER",
+       "name": "CRISPY CHICKEN 크리스피 치킨 SET",
+       "price": 13700
+      },
+      {
+       "category": "BURGER",
+       "name": "VEGGIE 베지 SINGLE",
+       "price": 8900
+      },
+      {
+       "category": "BURGER",
+       "name": "VEGGIE 베지 SET",
+       "price": 13400
+      },
+      {
+       "category": "EXTRA",
+       "name": "헤이스택",
+       "price": 1000
+      },
+      {
+       "category": "EXTRA",
+       "name": "아보카도",
+       "price": 2500
+      },
+      {
+       "category": "EXTRA",
+       "name": "해쉬브라운",
+       "price": 1500
+      },
+      {
+       "category": "EXTRA",
+       "name": "패티",
+       "price": 3500
+      },
+      {
+       "category": "EXTRA",
+       "name": "베이컨",
+       "price": 1500
+      },
+      {
+       "category": "EXTRA",
+       "name": "치즈",
+       "price": 1000
+      },
+      {
+       "category": "EXTRA",
+       "name": "계란",
+       "price": 1000
+      }
+     ]
+    },
+    {
+     "name": "2026메뉴2.PNG",
+     "fid": "F0BRFMAS5QS",
+     "from": "댓글",
+     "path": "menu-files/1787204098_568879-1.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "FRIES & MORE",
+       "name": "샐러드",
+       "price": 5800
+      },
+      {
+       "category": "FRIES & MORE",
+       "name": "SALAD EXTRA 치킨",
+       "price": 2000
+      },
+      {
+       "category": "FRIES & MORE",
+       "name": "SALAD EXTRA 브로콜리",
+       "price": 1000
+      },
+      {
+       "category": "FRIES & MORE",
+       "name": "치킨 스낵",
+       "price": 5300
+      },
+      {
+       "category": "FRIES & MORE",
+       "name": "고구마 프라이즈",
+       "price": 7300
+      },
+      {
+       "category": "FRIES & MORE",
+       "name": "페퍼로니 치즈 프라이즈",
+       "price": 6800
+      },
+      {
+       "category": "FRIES & MORE",
+       "name": "오리지널 프라이즈",
+       "price": 4000
+      },
+      {
+       "category": "FRIES & MORE",
+       "name": "칠리 프라이즈",
+       "price": 7200
+      },
+      {
+       "category": "FRIES & MORE",
+       "name": "갈릭 버터 프라이즈",
+       "price": 5500
+      },
+      {
+       "category": "FRIES & MORE",
+       "name": "치즈 프라이즈",
+       "price": 5500
+      },
+      {
+       "category": "FRIES & MORE",
+       "name": "버팔로 윙",
+       "price": 6800
+      },
+      {
+       "category": "EXTRAS",
+       "name": "BURGIZ DIP 버기즈 소스",
+       "price": 800
+      },
+      {
+       "category": "EXTRAS",
+       "name": "GARLIC 갈릭 소스",
+       "price": 800
+      },
+      {
+       "category": "EXTRAS",
+       "name": "MIX PEPPER 믹스 페퍼",
+       "price": 900
+      },
+      {
+       "category": "EXTRAS",
+       "name": "CHEESE 치즈 소스",
+       "price": 800
+      },
+      {
+       "category": "BEVERAGE",
+       "name": "MILK SHAKE 밀크 쉐이크",
+       "price": 6500
+      },
+      {
+       "category": "BEVERAGE",
+       "name": "SNAPPLE 애플 / 망고",
+       "price": 4500
+      },
+      {
+       "category": "BEVERAGE",
+       "name": "JARRITOS 자몽 / 구아바 / 망고 / 파인애플",
+       "price": 4500
+      },
+      {
+       "category": "BEVERAGE",
+       "name": "SAN PELLEGRINO 산펠레그리노",
+       "price": 3000
+      },
+      {
+       "category": "BEVERAGE",
+       "name": "코카콜라 / 코카콜라 제로 / 펩시 제로 / 닥터페퍼 / 스프라이트",
+       "price": 2500
+      },
+      {
+       "category": "BEER",
+       "name": "HEINEKEN DRAFT 하이네켄 생맥주",
+       "price": 7000
+      },
+      {
+       "category": "BEER",
+       "name": "SAMUEL ADAMS 사무엘 아담스",
+       "price": 7000
+      },
+      {
+       "category": "BEER",
+       "name": "BUDWEISER 버드와이저",
+       "price": 5000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "2번째 장은 등록되어있어 버거만 추가",
+    "• *+4,500원 차이 (8개 메뉴):* 치즈, 베이컨 치즈, 시카고, 치즈뱅, 트위그, 크리스피 치킨, 베지\n• *+4,000원 차이 (4개 메뉴):* 더블 치즈, 행오버, 아보카도, 갓파더, 머쉬룸\n• *+3,500원 차이 (1개 메뉴):* 더블 베이컨",
+    ":telephone_receiver: 부재 / EXTRA 옵션으로 넣을지 카테고리로 생성할지"
+   ],
+   "rc": 5,
+   "lr": "1787204381.006399",
+   "rfx": 3,
+   "status": "done",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787204098568879"
+  },
   {
    "ts": "1787200286.694409",
    "date": "2026-08-20",
