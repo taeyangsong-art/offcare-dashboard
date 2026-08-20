@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 784,
- "updatedAt": "2026-08-20 13:25",
+ "version": 785,
+ "updatedAt": "2026-08-20 13:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1787200050.271109",
+   "date": "2026-08-20",
+   "time": "13:27",
+   "store": "올드페리도넛 신사점",
+   "biz": "5608801440",
+   "pos": "",
+   "content": "올드페리도넛 독산점 메뉴 복제 부탁드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787200053.345319",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787200050271109"
+  },
   {
    "ts": "1787199911.110049",
    "date": "2026-08-20",
