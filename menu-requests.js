@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 783,
- "updatedAt": "2026-08-20 13:15",
+ "version": 784,
+ "updatedAt": "2026-08-20 13:25",
  "days": 30,
  "items": [
+  {
+   "ts": "1787199911.110049",
+   "date": "2026-08-20",
+   "time": "13:25",
+   "store": "퍼리엔",
+   "biz": "1764201290",
+   "pos": "기타",
+   "content": "닭가슴살 쌀국수에 옵션 두개 추가  면추가 2000원.고수추가 고수는 가격없음",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787199915.001719",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787199911110049"
+  },
   {
    "ts": "1787198523.531769",
    "date": "2026-08-20",
@@ -32809,27 +32830,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784609903683779"
-  },
-  {
-   "ts": "1784607539.264439",
-   "date": "2026-07-21",
-   "time": "13:18",
-   "store": "주식회사 삼학도수산",
-   "biz": "3018619615",
-   "pos": "토스포스",
-   "content": "토스포스 바코드연동 상품(메뉴) 등록요청 (저울업체 등록자료)",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1784607596.946089",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784607539264439"
   }
  ],
  "ocr": {
