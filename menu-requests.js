@@ -3,10 +3,115 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 778,
- "updatedAt": "2026-08-20 12:15",
+ "version": 779,
+ "updatedAt": "2026-08-20 12:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1787196089.826379",
+   "date": "2026-08-20",
+   "time": "12:21",
+   "store": "더푸드",
+   "biz": "4300403429",
+   "pos": "토스포스",
+   "content": "비빔밥 11000\n김치찌개12000\n된장찌개11000\n김치찌개12000\n제육볶음13000\n소불고기15000\n잔치국수10000\n물냉면 10000\n비빔냉면10000",
+   "special": "현재 포스화면에 분식 한식",
+   "drive": [
+    "https://drive.google.com/file/d/1hr2RQnzrcBP6fYjJgM-P9z1dRTJR1Jtx/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1hr2RQnzrcBP6fYjJgM-P9z1dRTJR1Jtx",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "분식",
+       "name": "김밥",
+       "price": 4500
+      },
+      {
+       "category": "분식",
+       "name": "라면",
+       "price": 4500
+      },
+      {
+       "category": "분식",
+       "name": "떡볶이",
+       "price": 4500
+      },
+      {
+       "category": "분식",
+       "name": "순대",
+       "price": 4500
+      },
+      {
+       "category": "분식",
+       "name": "사골떡만두국",
+       "price": 10000
+      },
+      {
+       "category": "분식",
+       "name": "물냉면",
+       "price": 9000
+      },
+      {
+       "category": "분식",
+       "name": "비빔냉면",
+       "price": 9000
+      },
+      {
+       "category": "분식",
+       "name": "쫄면",
+       "price": 9000
+      },
+      {
+       "category": "분식",
+       "name": "칼국수",
+       "price": 9000
+      },
+      {
+       "category": "분식",
+       "name": "잔치국수",
+       "price": 8000
+      },
+      {
+       "category": "분식",
+       "name": "라볶이",
+       "price": 7000
+      },
+      {
+       "category": "분식",
+       "name": "찐계란(3개)",
+       "price": 2400
+      },
+      {
+       "category": "분식",
+       "name": "찐계란",
+       "price": 800
+      },
+      {
+       "category": "분식",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "분식",
+       "name": "팥빙수",
+       "price": 10000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787196093.025909",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787196089826379"
+  },
   {
    "ts": "1787195384.777919",
    "date": "2026-08-20",
@@ -185,13 +290,15 @@ window.MENU_REQUESTS = {
     }
    ],
    "replies": [
-    "옵션상 금액 변경 필요\n현재 옵션에 등록된 금액으로 결제 되면 좋겠다고 하심\n특이사항 발생시 유선 안내 부탁드립니다."
+    "옵션상 금액 변경 필요\n현재 옵션에 등록된 금액으로 결제 되면 좋겠다고 하심\n특이사항 발생시 유선 안내 부탁드립니다.",
+    "메뉴가 들어가있네요 AI로 넣으신거같긴한데",
+    "옵션안쓰고 인분 각자 노출로 진행"
    ],
-   "rc": 2,
-   "lr": "1787195456.465049",
+   "rc": 4,
+   "lr": "1787196627.626309",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787195384777919"
   },
   {
