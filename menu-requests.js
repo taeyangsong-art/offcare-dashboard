@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 806,
- "updatedAt": "2026-08-20 18:45",
+ "version": 807,
+ "updatedAt": "2026-08-20 19:00",
  "days": 30,
  "items": [
   {
@@ -689,10 +689,10 @@ window.MENU_REQUESTS = {
     "아뇽 가능할것같아여 이미지 이름을 상품코드로 해놓으셧더라구요",
     "아하 네! 소통필요하시면 말씀부탁드립니다"
    ],
-   "rc": 12,
-   "lr": "1787214663.783899",
+   "rc": 11,
+   "lr": "1787212391.625349",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787205434388809"
   },
