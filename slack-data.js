@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4251,
+  "version": 4252,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -119787,12 +119787,38 @@ window.SLACK_DATA = {
     },
     "2026-08-20": {
       "counts": {
+        "as": {
+          "김동욱": 1,
+          "배선유": 1
+        },
         "extern": {
           "김동욱": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:17",
+          "store": "수아스포츠",
+          "biz": "6961401807",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "터프 / 키인 결제 진행 중 /   단말기번호와   생산일련번호가   불일치합니다 &lt; 오류 메세지로",
+          "hw": "",
+          "intake": "online",
+          "note": "터미널 초기화 후 재온보딩 완료"
+        },
+        {
+          "time": "09:11",
+          "store": "젓가락질 잘해야만 밥을먹나요 화정점",
+          "biz": "2270756767",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "포프+유프 / 주방 프린터  대체품 수령으로 설치 요청",
+          "hw": "",
+          "intake": "offline",
+          "note": "ts100 ab케이블로 연결 / 드라이버 설치 후 출력 테스트 완료"
+        },
         {
           "time": "08:56",
           "store": "원미당소금빵 천안병천순대거리",
@@ -119806,11 +119832,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
-        "offline": 0,
+        "online": 2,
+        "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:14",
+      "updatedAt": "09:30",
       "voc": {
         "responses": 1,
         "install": {
@@ -119868,11 +119894,15 @@ window.SLACK_DATA = {
       },
       "1787154300.310049": {
         "post": "1787154300.310049",
-        "lastSeen": 1787184923.008
+        "lastSeen": 1787185829.927
       },
       "1787168700.434269": {
         "post": "1787168700.434269",
-        "lastSeen": 1787184923.008
+        "lastSeen": 1787185829.927
+      },
+      "1787185803.933289": {
+        "post": "1787185803.933289",
+        "lastSeen": 1787185829.927
       }
     },
     "days": {
@@ -146855,13 +146885,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-20 09:15",
+    "at": "2026-08-20 09:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3617,
+    "rows": 3622,
     "named": 306,
     "unknownName": 0,
     "beforeStart": 0,
