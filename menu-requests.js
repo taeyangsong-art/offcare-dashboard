@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 769,
- "updatedAt": "2026-08-19 18:22",
+ "version": 770,
+ "updatedAt": "2026-08-20 10:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1787188212.215159",
+   "date": "2026-08-20",
+   "time": "10:10",
+   "store": "에스티엔(STN)루원시티점&윈윈",
+   "biz": "5231400475",
+   "pos": "",
+   "content": "요고 프로즌 요거트 루원시티점( ··· )에 있는 메뉴 전부를 (옵션까지 모두 다 ) 에스티엔 ( ··· ) 에 똑같이 복사 요청 주셨습니다. 완료 후 문자 발송해 주시면 감사하겠습니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787188216.917099",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787188212215159"
+  },
   {
    "ts": "1787128068.467689",
    "date": "2026-08-19",
