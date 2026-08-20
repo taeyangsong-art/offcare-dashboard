@@ -3,10 +3,52 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 791,
- "updatedAt": "2026-08-20 14:46",
+ "version": 792,
+ "updatedAt": "2026-08-20 15:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1787205434.388809",
+   "date": "2026-08-20",
+   "time": "14:57",
+   "store": "라운지엠",
+   "biz": "7791102925",
+   "pos": "토스포스",
+   "content": "신규 등록입니다.",
+   "special": "이미지 파일은 추후 상품코드에 맞춰서 다시 보내 드리겠습니다.",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787205437.421609",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787205434388809"
+  },
+  {
+   "ts": "1787205276.051999",
+   "date": "2026-08-20",
+   "time": "14:54",
+   "store": "선빵",
+   "biz": "4213001940",
+   "pos": "기타",
+   "content": "메뉴 메일첨부",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787205278.927129",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787205276051999"
+  },
   {
    "ts": "1787204585.519829",
    "date": "2026-08-20",
@@ -861,8 +903,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1787199915.001719",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787199911110049"
   },
   {
@@ -878,11 +920,13 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787198575.103949",
+   "replies": [
+    "해당 키워드 들어가는 모든 메뉴 변경"
+   ],
+   "rc": 2,
+   "lr": "1787205026.103169",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787198523531769"
   },
