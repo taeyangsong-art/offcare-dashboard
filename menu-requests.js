@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 802,
- "updatedAt": "2026-08-20 17:30",
+ "version": 803,
+ "updatedAt": "2026-08-20 17:45",
  "days": 30,
  "items": [
   {
@@ -383,8 +383,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1787210295.423819",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787210291700429"
   },
   {
@@ -401,11 +401,11 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1787209825.521909",
+   "rc": 3,
+   "lr": "1787215045.346099",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787209821903749"
   },
   {
@@ -575,7 +575,7 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1787209789.517399",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787209779326639"
   },
@@ -689,8 +689,8 @@ window.MENU_REQUESTS = {
     "아뇽 가능할것같아여 이미지 이름을 상품코드로 해놓으셧더라구요",
     "아하 네! 소통필요하시면 말씀부탁드립니다"
    ],
-   "rc": 11,
-   "lr": "1787212391.625349",
+   "rc": 12,
+   "lr": "1787214663.783899",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
@@ -33799,62 +33799,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784624019849009"
-  },
-  {
-   "ts": "1784622960.842869",
-   "date": "2026-07-21",
-   "time": "17:36",
-   "store": "강창구찹쌀진순대(다산현대테라타워점)",
-   "biz": "5674000571",
-   "pos": "",
-   "content": "메뉴추가",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784622965.116869",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784622960842869"
-  },
-  {
-   "ts": "1784622898.374529",
-   "date": "2026-07-21",
-   "time": "17:34",
-   "store": "토이즈나",
-   "biz": "2641902297",
-   "pos": "기타",
-   "content": "메뉴추가하려고 합니다\n첨부사진 부탁드립니다",
-   "special": "바로해주세요",
-   "drive": [
-    "https://drive.google.com/open?id=12S4RJ7lvH59eqLRMsE2MVDS--nQ6ThpH"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "12S4RJ7lvH59eqLRMsE2MVDS--nQ6ThpH",
-     "kind": "other",
-     "menu": []
-    }
-   ],
-   "replies": [
-    "해당 매장, 테이블 오더 사용 매장이라\n전시관리 등록이 필요합니다. 진행 부탁드리겠습니다 :slightly_smiling_face:",
-    "여기 아까 완료해썽요",
-    "엇! 인입되어서 전시관리 등록 해달라고 요청주셔서...\n흠냐 잠시만용",
-    "어머 그렇네요. 다시 재안내할게욤",
-    "넹~"
-   ],
-   "rc": 6,
-   "lr": "1784633798.003209",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784622898374529"
   }
  ],
  "ocr": {
