@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 800,
- "updatedAt": "2026-08-20 17:00",
+ "version": 801,
+ "updatedAt": "2026-08-20 17:15",
  "days": 30,
  "items": [
   {
@@ -33855,27 +33855,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784622898374529"
-  },
-  {
-   "ts": "1784621116.645489",
-   "date": "2026-07-21",
-   "time": "17:05",
-   "store": "토이즈나",
-   "biz": "2641902297",
-   "pos": "기타",
-   "content": "메뉴명 : 새로오미자\n가격 : 5000원\n위치 : 주류및음료 카테고리에서 새로옆에 새로오미자로 넣어주세요\n그리고 주류및음료 카테고리에서 다음페이지로 넘어가면 클라우드 켈리 2개가 있는데 이거 2개 삭제시켜주세요",
-   "special": "바로 해주세요",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784621122.438439",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784621116645489"
   }
  ],
  "ocr": {
