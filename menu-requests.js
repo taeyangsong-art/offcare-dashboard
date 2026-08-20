@@ -3,10 +3,390 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 797,
- "updatedAt": "2026-08-20 16:15",
+ "version": 798,
+ "updatedAt": "2026-08-20 16:31",
  "days": 30,
  "items": [
+  {
+   "ts": "1787210291.700429",
+   "date": "2026-08-20",
+   "time": "16:18",
+   "store": "호퍼스키친",
+   "biz": "1358546855",
+   "pos": "토스포스",
+   "content": "사진에있는거 포스주문에 넣어주세요",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1hwqCfs5GNUtKbhnfoBDJnaNavdLiXXTH/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1hwqCfs5GNUtKbhnfoBDJnaNavdLiXXTH",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "PIZZA",
+       "name": "그랜드 콤비네이션 (R)",
+       "price": 25900
+      },
+      {
+       "category": "PIZZA",
+       "name": "그랜드 콤비네이션 (L)",
+       "price": 29900
+      },
+      {
+       "category": "PIZZA",
+       "name": "카우보이 불고기 (R)",
+       "price": 25900
+      },
+      {
+       "category": "PIZZA",
+       "name": "카우보이 불고기 (L)",
+       "price": 29900
+      },
+      {
+       "category": "PIZZA",
+       "name": "데스밸리 쏘 핫 (R)",
+       "price": 25900
+      },
+      {
+       "category": "PIZZA",
+       "name": "데스밸리 쏘 핫 (L)",
+       "price": 29900
+      },
+      {
+       "category": "PIZZA",
+       "name": "블랙 골드 트러플 불고기 (R)",
+       "price": 29900
+      },
+      {
+       "category": "PIZZA",
+       "name": "블랙 골드 트러플 불고기 (L)",
+       "price": 33900
+      },
+      {
+       "category": "PIZZA",
+       "name": "클래식 페퍼로니 (R)",
+       "price": 25900
+      },
+      {
+       "category": "PIZZA",
+       "name": "클래식 페퍼로니 (L)",
+       "price": 29900
+      },
+      {
+       "category": "PIZZA",
+       "name": "골드러시 스위트 포테이토 (R)",
+       "price": 25900
+      },
+      {
+       "category": "PIZZA",
+       "name": "골드러시 스위트 포테이토 (L)",
+       "price": 29800
+      },
+      {
+       "category": "PIZZA",
+       "name": "서부 무법자 치즈 (R)",
+       "price": 25900
+      },
+      {
+       "category": "PIZZA",
+       "name": "서부 무법자 치즈 (L)",
+       "price": 29900
+      },
+      {
+       "category": "PIZZA",
+       "name": "갈릭 쉬림프 (R)",
+       "price": 26900
+      },
+      {
+       "category": "PIZZA",
+       "name": "갈릭 쉬림프 (L)",
+       "price": 30900
+      },
+      {
+       "category": "PIZZA",
+       "name": "스모키베이컨포테이토 (R)",
+       "price": 26900
+      },
+      {
+       "category": "PIZZA",
+       "name": "스모키베이컨포테이토 (L)",
+       "price": 30900
+      },
+      {
+       "category": "PIZZA",
+       "name": "선셋 하와이안 (R)",
+       "price": 26900
+      },
+      {
+       "category": "PIZZA",
+       "name": "선셋 하와이안 (L)",
+       "price": 30900
+      },
+      {
+       "category": "PIZZA",
+       "name": "오아시스 루꼴라 (R)",
+       "price": 26900
+      },
+      {
+       "category": "PIZZA",
+       "name": "오아시스 루꼴라 (L)",
+       "price": 30900
+      },
+      {
+       "category": "PIZZA",
+       "name": "스파이시할라피뇨베이컨 (R)",
+       "price": 26900
+      },
+      {
+       "category": "PIZZA",
+       "name": "스파이시할라피뇨베이컨 (L)",
+       "price": 30900
+      },
+      {
+       "category": "PANUOZZO SANDWICH",
+       "name": "호퍼스 시그니쳐 샌드",
+       "price": 12900
+      },
+      {
+       "category": "PANUOZZO SANDWICH",
+       "name": "카우보이 갈릭 불고기",
+       "price": 11900
+      },
+      {
+       "category": "PANUOZZO SANDWICH",
+       "name": "갈릭쉬림프 샌드",
+       "price": 11900
+      },
+      {
+       "category": "PANUOZZO SANDWICH",
+       "name": "스파이시 튜나 샌드",
+       "price": 10800
+      },
+      {
+       "category": "PANUOZZO SANDWICH",
+       "name": "리치에그마요 샌드",
+       "price": 9900
+      },
+      {
+       "category": "PANUOZZO SANDWICH",
+       "name": "BLT 샌드",
+       "price": 9200
+      },
+      {
+       "category": "PANUOZZO SANDWICH",
+       "name": "텍사스 풀드포크",
+       "price": 11900
+      },
+      {
+       "category": "PANUOZZO SANDWICH",
+       "name": "루스터 그릴드 치킨 샌드",
+       "price": 11900
+      },
+      {
+       "category": "PANUOZZO SANDWICH",
+       "name": "스모키베이컨포테이토 샌드",
+       "price": 12900
+      },
+      {
+       "category": "PANUOZZO SANDWICH",
+       "name": "갈릭버터머쉬룸 샌드",
+       "price": 9900
+      },
+      {
+       "category": "PANUOZZO SANDWICH",
+       "name": "블랙 골드 트러플 머쉬룸 샌드",
+       "price": 14900
+      },
+      {
+       "category": "STROMBOLI",
+       "name": "페페롤리",
+       "price": 11900
+      },
+      {
+       "category": "STROMBOLI",
+       "name": "하와이안 파인애플 롤리",
+       "price": 11900
+      },
+      {
+       "category": "STROMBOLI",
+       "name": "스모키 불고기 롤리",
+       "price": 12900
+      },
+      {
+       "category": "STROMBOLI",
+       "name": "치폴레 치킨 롤리",
+       "price": 12900
+      },
+      {
+       "category": "STROMBOLI",
+       "name": "갈릭 쉬림프 롤리",
+       "price": 12900
+      },
+      {
+       "category": "STROMBOLI",
+       "name": "텍사스 풀드포크 롤리",
+       "price": 12900
+      },
+      {
+       "category": "STROMBOLI",
+       "name": "그랜드하우스콤비 롤리",
+       "price": 13900
+      },
+      {
+       "category": "SALAD",
+       "name": "훈제연어 아보카도",
+       "price": 12500
+      },
+      {
+       "category": "SALAD",
+       "name": "쉬림프 아보카도",
+       "price": 13500
+      },
+      {
+       "category": "SALAD",
+       "name": "쉬림프 샐러드",
+       "price": 12500
+      },
+      {
+       "category": "SALAD",
+       "name": "고구마 에그",
+       "price": 11500
+      },
+      {
+       "category": "SALAD",
+       "name": "훈제오리",
+       "price": 12500
+      },
+      {
+       "category": "SALAD",
+       "name": "닭가슴살",
+       "price": 11500
+      },
+      {
+       "category": "SALAD",
+       "name": "에그마요",
+       "price": 10500
+      },
+      {
+       "category": "SALAD",
+       "name": "버섯 불고기",
+       "price": 12500
+      },
+      {
+       "category": "SALAD",
+       "name": "치킨마요",
+       "price": 12500
+      },
+      {
+       "category": "SIDE",
+       "name": "크리스피 감자튀김",
+       "price": 4900
+      },
+      {
+       "category": "SIDE",
+       "name": "오븐 치즈스파게티",
+       "price": 6900
+      },
+      {
+       "category": "SIDE",
+       "name": "매콤 윙봉 3P",
+       "price": 5700
+      },
+      {
+       "category": "SIDE",
+       "name": "매콤 윙봉 6P",
+       "price": 9600
+      },
+      {
+       "category": "SIDE",
+       "name": "바삭 치킨텐더 4P",
+       "price": 4900
+      },
+      {
+       "category": "SIDE",
+       "name": "바삭 치킨텐더 8P",
+       "price": 8900
+      },
+      {
+       "category": "SIDE",
+       "name": "모짜렐라 치즈스틱 2P",
+       "price": 3900
+      },
+      {
+       "category": "SIDE",
+       "name": "스위트콘치즈",
+       "price": 5900
+      },
+      {
+       "category": "SIDE",
+       "name": "그릴드 점보닭다리 1P",
+       "price": 2900
+      },
+      {
+       "category": "SIDE",
+       "name": "그릴드 점보닭다리 2P",
+       "price": 5700
+      },
+      {
+       "category": "SIDE",
+       "name": "그릴드 점보닭다리 3P",
+       "price": 7500
+      },
+      {
+       "category": "DRINK",
+       "name": "콜라 500ml",
+       "price": 2000
+      },
+      {
+       "category": "DRINK",
+       "name": "콜라 1.25L",
+       "price": 3000
+      },
+      {
+       "category": "DRINK",
+       "name": "제로 콜라 500ml",
+       "price": 2000
+      },
+      {
+       "category": "DRINK",
+       "name": "제로 콜라 1.25L",
+       "price": 3000
+      },
+      {
+       "category": "DRINK",
+       "name": "스프라이트 500ml",
+       "price": 2000
+      },
+      {
+       "category": "DRINK",
+       "name": "스프라이트 1.25L",
+       "price": 3000
+      },
+      {
+       "category": "DRINK",
+       "name": "아이스티",
+       "price": 3000
+      },
+      {
+       "category": "DRINK",
+       "name": "아메리카노",
+       "price": 3000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787210295.423819",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787210291700429"
+  },
   {
    "ts": "1787209821.903749",
    "date": "2026-08-20",
