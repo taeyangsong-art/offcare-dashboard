@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 792,
- "updatedAt": "2026-08-20 15:00",
+ "version": 793,
+ "updatedAt": "2026-08-20 15:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1787206021.907799",
+   "date": "2026-08-20",
+   "time": "15:07",
+   "store": "쭈닭한상",
+   "biz": "7822301997",
+   "pos": "토스포스",
+   "content": "고사리 비빔밥(김치삼겹) 9,900\n고사리 비빔밥(쭈삼)   10,900",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787206024.867779",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787206021907799"
+  },
   {
    "ts": "1787205434.388809",
    "date": "2026-08-20",
@@ -20,12 +41,14 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787205437.421609",
+   "replies": [
+    "안녕하세요 대표자분께서 메뉴 사진(200개 이상) 내일 8/21 오전까지 제출해주실 예정입니다. 받는대로 공유드리겠습니다.\n\n픽셀 : 800*600px 사이즈로 파일명은 상품명/상품코드로 매칭하여 제출하실 예정\n\n사진 제출 목적 : QR 테이블 오더 사용"
+   ],
+   "rc": 2,
+   "lr": "1787206380.987709",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787205434388809"
   },
   {
@@ -861,7 +884,7 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1787200293.947679",
    "rfx": 3,
-   "status": "wait",
+   "status": "dup",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787200286694409"
   },
@@ -879,11 +902,11 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1787200053.345319",
+   "rc": 2,
+   "lr": "1787206085.131769",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787200050271109"
   },
   {
