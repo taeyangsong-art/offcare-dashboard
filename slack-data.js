@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4250,
+  "version": 4251,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -114263,19 +114263,7 @@ window.SLACK_DATA = {
           "김현기": 1
         }
       },
-      "pending": [
-        {
-          "time": "16:54",
-          "store": "뮤엠영어별빛영어교습소",
-          "biz": "1109830341",
-          "handler": "김규빈",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "1차 부재"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
         {
           "time": "21:30",
@@ -116697,7 +116685,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 175,
+        "online": 174,
         "offline": 45,
         "unknown": 0
       },
@@ -119798,15 +119786,31 @@ window.SLACK_DATA = {
       }
     },
     "2026-08-20": {
-      "counts": {},
+      "counts": {
+        "extern": {
+          "김동욱": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "08:56",
+          "store": "원미당소금빵 천안병천순대거리",
+          "biz": "4991003360",
+          "cat": "extern",
+          "emp": "김동욱",
+          "req": "01095650345 외주업체 원격요청",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "08:56",
+      "updatedAt": "09:14",
       "voc": {
         "responses": 1,
         "install": {
@@ -119864,11 +119868,11 @@ window.SLACK_DATA = {
       },
       "1787154300.310049": {
         "post": "1787154300.310049",
-        "lastSeen": 1787184032.728
+        "lastSeen": 1787184923.008
       },
       "1787168700.434269": {
         "post": "1787168700.434269",
-        "lastSeen": 1787184032.728
+        "lastSeen": 1787184923.008
       }
     },
     "days": {
@@ -146851,13 +146855,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-20 09:00",
+    "at": "2026-08-20 09:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3613,
+    "rows": 3617,
     "named": 306,
     "unknownName": 0,
     "beforeStart": 0,
