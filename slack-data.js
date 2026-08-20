@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4328,
+  "version": 4329,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -119819,6 +119819,7 @@ window.SLACK_DATA = {
           "심성현": 1
         },
         "menu": {
+          "최민석": 1,
           "배선유": 12,
           "김규빈": 4,
           "김동욱": 1,
@@ -119941,6 +119942,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "님 여기 여의녘 매장이 아니라 해남베이퍼 매장이라고 합니다. 추후 이력 확인시 착오가 생길 수 있어 수정 부탁드립니다. 님 여기 여의녘 매장이 아니라 해남베이퍼 매장이라고 합니다. 추후 이력 확인시 착오가 생길 수 있어 수정 부탁드립니다. / 포프 온보딩 완료"
+        },
+        {
+          "time": "20:05",
+          "store": "은성한정식",
+          "biz": "5298703678",
+          "cat": "menu",
+          "emp": "최민석",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 메뉴등록 완료 솔라피 발송완료"
         },
         {
           "time": "19:56",
@@ -122485,7 +122497,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 207,
+        "online": 208,
         "offline": 33,
         "unknown": 0
       },
@@ -122966,6 +122978,17 @@ window.SLACK_DATA = {
           }
         ]
       }
+    },
+    "2026-08-21": {
+      "counts": {},
+      "pending": [],
+      "done": [],
+      "intake": {
+        "online": 0,
+        "offline": 0,
+        "unknown": 0
+      },
+      "updatedAt": ""
     }
   },
   "resp": {
@@ -151102,7 +151125,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-20 23:45",
+    "at": "2026-08-21 00:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
