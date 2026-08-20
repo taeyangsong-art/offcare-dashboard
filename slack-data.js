@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4283,
+  "version": 4284,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -119788,20 +119788,20 @@ window.SLACK_DATA = {
     "2026-08-20": {
       "counts": {
         "as": {
+          "최민석": 3,
+          "김현기": 14,
           "김동욱": 10,
-          "최민석": 2,
           "서상원": 8,
-          "김현기": 13,
-          "고경림": 5,
           "심성현": 21,
+          "고경림": 5,
           "김기범": 7,
           "배선유": 12,
           "김규빈": 9
         },
         "onboarding": {
           "최민석": 1,
+          "심성현": 6,
           "고경림": 2,
-          "심성현": 5,
           "배선유": 4,
           "서상원": 4,
           "김동욱": 1
@@ -119812,7 +119812,7 @@ window.SLACK_DATA = {
           "김기범": 2
         },
         "transfer": {
-          "김동욱": 5,
+          "김동욱": 6,
           "심성현": 1
         },
         "menu": {
@@ -119828,6 +119828,39 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "14:30",
+          "store": "사운드프레소계산역점",
+          "biz": "",
+          "handler": "김동욱",
+          "cat": "transfer",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
+          "time": "14:27",
+          "store": "프루토리(FRUITORY)",
+          "biz": "6823601528",
+          "handler": "김현기",
+          "cat": "delivery",
+          "intake": "online",
+          "reasons": [
+            "1차 부재"
+          ]
+        },
+        {
+          "time": "14:25",
+          "store": "뉴채움수학교습소",
+          "biz": "7199502151",
+          "handler": "고경림",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "1차 부재"
+          ]
+        },
+        {
           "time": "13:16",
           "store": "영심이키친",
           "biz": "4113151760",
@@ -119840,6 +119873,28 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "15:15",
+          "store": "연리지 스튜디오",
+          "biz": "4081020835",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "유프 출력 오류 / 확인 부탁드립니다:감사합니다꾸벅:",
+          "hw": "",
+          "intake": "online",
+          "note": "프린터 전원접촉 부 고장으로 대체품 발송안내 완료"
+        },
+        {
+          "time": "15:14",
+          "store": "삼성영어셀레나성남북초학원",
+          "biz": "6499702064",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "프론트에 결제창이 안뜬다 하시어 확인 부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
         {
           "time": "15:11",
           "store": "두성유통(주) 강천산휴게소(광주방향)",
@@ -119918,6 +119973,17 @@ window.SLACK_DATA = {
           "note": "무음설정 완료"
         },
         {
+          "time": "14:45",
+          "store": "스시앤도시락",
+          "biz": "2410201604",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "배민 연동 및 대행사(부릉) 전일부터 연동이 되지 않는다고 하셔서 연동 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "배민 팝업 창 중복 노출로 불편 / 배민 라이트 대행 연동 제거"
+        },
+        {
           "time": "14:43",
           "store": "피카프(fikaF)",
           "biz": "8720603312",
@@ -119977,7 +120043,7 @@ window.SLACK_DATA = {
           "time": "14:33",
           "store": "몽블랑헤어살롱",
           "biz": "8041602094",
-          "cat": "as",
+          "cat": "onboarding",
           "emp": "심성현",
           "req": "포프(휴대폰) 온보딩 요청드립니다.",
           "hw": "",
@@ -119994,6 +120060,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "포프(휴대폰) 온보딩완료 상품생성 및 싯가 설정 안내 완료"
+        },
+        {
+          "time": "14:30",
+          "store": "쥬떼필라테스 평생교육원",
+          "biz": "",
+          "cat": "transfer",
+          "emp": "김동욱",
+          "req": "8월 20일 오후 3시 / 메뉴 복사 O / 터프",
+          "hw": "",
+          "intake": "online",
+          "note": "포터프(데스크탑) 명의변경 완료"
         },
         {
           "time": "14:30",
@@ -121324,28 +121401,31 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 115,
-        "offline": 20,
+        "online": 121,
+        "offline": 21,
         "unknown": 0
       },
-      "updatedAt": "15:14",
+      "updatedAt": "15:30",
       "voc": {
-        "responses": 5,
+        "responses": 10,
         "install": {
           "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 5,
-          "low": 0
+          "count": 10,
+          "low": 3
         },
         "high": {
           "install": 0,
           "nps": 1
         },
         "npsDist": {
-          "7": 2,
+          "1": 1,
+          "5": 2,
+          "7": 3,
           "8": 2,
+          "9": 1,
           "10": 1
         },
         "installDist": {
@@ -121357,6 +121437,14 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 2,
+            "low": 1
+          },
+          "3개월": {
+            "total": 5,
+            "low": 2
+          },
           "구매설치": {
             "total": 2,
             "low": 0
@@ -121364,17 +121452,21 @@ window.SLACK_DATA = {
           "6개월": {
             "total": 1,
             "low": 0
-          },
-          "12개월": {
-            "total": 1,
-            "low": 0
-          },
-          "3개월": {
-            "total": 1,
-            "low": 0
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 2,
+            "low": 1
+          },
+          "SMARTRO": {
+            "total": 3,
+            "low": 0
+          },
+          "KPN": {
+            "total": 3,
+            "low": 2
+          },
           "SECTA9": {
             "total": 1,
             "low": 0
@@ -121382,22 +121474,80 @@ window.SLACK_DATA = {
           "NICE": {
             "total": 1,
             "low": 0
-          },
-          "KPN": {
-            "total": 1,
-            "low": 0
-          },
-          "KIS": {
-            "total": 1,
-            "low": 0
-          },
-          "SMARTRO": {
-            "total": 1,
-            "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "사용중 오류가 자주 발생함": 2,
+          "필요한 기능이 없거나 몰라서 불편": 1
+        },
+        "alerts": [
+          {
+            "time": "15:27",
+            "store": "(주)비건33",
+            "storeId": "235762",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "어플 오류가 많이 나고 고객센터 답이 없음",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:27",
+            "store": "강서영건쉬림프",
+            "storeId": "481254",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "토스 터미널 2와 프론트 기기를 사용중임. 프론트만 일반 카드기에 사용한다면 꽤나 괜찬을듯 하오나 터미널은 안드로이드 기반에 터치형식이라 결제금액 입력 반응이 느리고 결제 진행도 서버연결이 불안한지 결제 진행도 더딤 또한 안드로이드 기반이라 2-3년 사용하면 더욱 속도가 더뎌 질테니 약정기간 끝나면 터미널 자체에 개선이 없을 시 갈아 탈 것같음 토스가 이런 피드백에 예민하고 개선의지가 좋은 기업임을 알기에 기대함",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "15:26",
+            "store": "빌리 인 더 베이글",
+            "storeId": "455463",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "처음 써본 결제단말기라 비교군이 없어서",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
         "praises": [
           {
             "time": "15:13",
@@ -121426,9 +121576,9 @@ window.SLACK_DATA = {
         ]
       },
       "ob": {
-        "count": 17,
+        "count": 22,
         "byEmp": {
-          "김규빈": 17
+          "김규빈": 22
         },
         "items": [
           {
@@ -121438,6 +121588,46 @@ window.SLACK_DATA = {
             "recvDate": "2026-08-20",
             "planDate": "",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786683141434969"
+          },
+          {
+            "key": "2026년 8월 20일 오전 9:19:07|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787043200922159#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-20",
+            "planDate": "2026-08-24",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787043200922159"
+          },
+          {
+            "key": "2026년 8월 20일 오전 9:05:19|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786950540176089#1",
+            "handler": "김규빈",
+            "status": "점주직접접수",
+            "recvDate": "2026-08-20",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786950540176089"
+          },
+          {
+            "key": "2026년 8월 20일 오전 9:04:57|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787016529346549#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-20",
+            "planDate": "2026-08-24",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787016529346549"
+          },
+          {
+            "key": "2026년 8월 20일 오전 9:01:28|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786687156297959#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-20",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786687156297959"
+          },
+          {
+            "key": "2026년 8월 20일 오전 9:00:36|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786693963850809#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-20",
+            "planDate": "2026-08-24",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786693963850809"
           },
           {
             "key": "2026년 8월 20일 오전 8:57:53|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786777453711059#1",
@@ -121587,27 +121777,39 @@ window.SLACK_DATA = {
       },
       "1787154300.310049": {
         "post": "1787154300.310049",
-        "lastSeen": 1787206527.818
+        "lastSeen": 1787207431.428
       },
       "1787190106.078849": {
         "post": "1787190106.078849",
         "lastSeen": 1787190323.326
       },
-      "1787203802.240149": {
-        "post": "1787203802.240149",
-        "lastSeen": 1787206527.818
-      },
       "1787205276.051999": {
         "post": "1787205276.051999",
-        "lastSeen": 1787206527.818
-      },
-      "1787206468.675929": {
-        "post": "1787206468.675929",
-        "lastSeen": 1787206527.818
+        "lastSeen": 1787207431.428
       },
       "1787206021.907799": {
         "post": "1787206021.907799",
-        "lastSeen": 1787206527.818
+        "lastSeen": 1787207431.428
+      },
+      "1787207402.945539": {
+        "post": "1787207402.945539",
+        "lastSeen": 1787207431.428
+      },
+      "1787207346.903589": {
+        "post": "1787207346.903589",
+        "lastSeen": 1787207431.428
+      },
+      "1787207167.538189": {
+        "post": "1787207167.538189",
+        "lastSeen": 1787207431.428
+      },
+      "1787207003.840119": {
+        "post": "1787207003.840119",
+        "lastSeen": 1787207431.428
+      },
+      "1787206743.251219": {
+        "post": "1787206743.251219",
+        "lastSeen": 1787207431.428
       }
     },
     "days": {
@@ -148588,8 +148790,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-20": {
-        "cnt": 70,
-        "sumMin": 897.0765734950703,
+        "cnt": 71,
+        "sumMin": 905.5923580129943,
         "over": 1,
         "items": [
           {
@@ -149151,27 +149353,35 @@ window.SLACK_DATA = {
             "biz": "2022105436",
             "who": "최민석",
             "cat": "onboarding"
+          },
+          {
+            "hm": "15:14",
+            "min": 8.5,
+            "store": "삼성영어셀레나성남북초학원",
+            "biz": "6499702064",
+            "who": "김현기",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-20 15:15",
+    "at": "2026-08-20 15:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3631,
-    "named": 323,
+    "named": 328,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 323,
+    "done": 328,
     "byStatus": {
-      "일정등록완료": 202,
-      "1차부재": 69,
-      "점주직접접수": 29,
+      "일정등록완료": 205,
+      "1차부재": 70,
+      "점주직접접수": 30,
       "설치불가": 7,
       "(빈칸)": 4,
       "자가설치": 10,

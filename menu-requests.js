@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 793,
- "updatedAt": "2026-08-20 15:15",
+ "version": 794,
+ "updatedAt": "2026-08-20 15:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1787206743.251219",
+   "date": "2026-08-20",
+   "time": "15:19",
+   "store": "라운지엠",
+   "biz": "7791102925",
+   "pos": "토스포스",
+   "content": "신규등록용 - 재송부",
+   "special": "엑셀 파일 .xlsx 포멧입니다.",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787206746.389849",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787206743251219"
+  },
   {
    "ts": "1787206021.907799",
    "date": "2026-08-20",
@@ -42,10 +63,11 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [
-    "안녕하세요 대표자분께서 메뉴 사진(200개 이상) 내일 8/21 오전까지 제출해주실 예정입니다. 받는대로 공유드리겠습니다.\n\n픽셀 : 800*600px 사이즈로 파일명은 상품명/상품코드로 매칭하여 제출하실 예정\n\n사진 제출 목적 : QR 테이블 오더 사용"
+    "안녕하세요 대표자분께서 메뉴 사진(200개 이상) 내일 8/21 오전까지 제출해주실 예정입니다. 받는대로 공유드리겠습니다.\n\n픽셀 : 800*600px 사이즈로 파일명은 상품명/상품코드로 매칭하여 제출하실 예정\n\n사진 제출 목적 : QR 테이블 오더 사용",
+    "대시보드 양식으로 첨부해주셨으나 구글 스프레드시트 보기 권한으로 보내주셔서 등록 불가, 엑셀로 추출 후 재전송 요청드림"
    ],
-   "rc": 2,
-   "lr": "1787206380.987709",
+   "rc": 3,
+   "lr": "1787207112.427019",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
@@ -64,9 +86,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787205278.927129",
+   "replies": [
+    "아직 메일x"
+   ],
+   "rc": 2,
+   "lr": "1787207231.510019",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -33580,48 +33604,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784615511438259"
-  },
-  {
-   "ts": "1784614669.127979",
-   "date": "2026-07-21",
-   "time": "15:17",
-   "store": "마메종",
-   "biz": "8730401837",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1784614706.337049",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784614669127979"
-  },
-  {
-   "ts": "1784614544.290459",
-   "date": "2026-07-21",
-   "time": "15:15",
-   "store": "미증유",
-   "biz": "2563400160",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1784614638.782219",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784614544290459"
   }
  ],
  "ocr": {
