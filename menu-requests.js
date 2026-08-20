@@ -3,10 +3,190 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 774,
- "updatedAt": "2026-08-20 11:15",
+ "version": 775,
+ "updatedAt": "2026-08-20 11:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1787193875.619399",
+   "date": "2026-08-20",
+   "time": "11:44",
+   "store": "사사#",
+   "biz": "4660401930",
+   "pos": "토스포스",
+   "content": "추가메뉴설정",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1_L9xnIOSYLAkfqoHC5fz36qTMaHB7tWt/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1_L9xnIOSYLAkfqoHC5fz36qTMaHB7tWt",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "Cut",
+       "name": "여자컷",
+       "price": 24
+      },
+      {
+       "category": "Cut",
+       "name": "남자컷",
+       "price": 22
+      },
+      {
+       "category": "Cut",
+       "name": "학생컷 (중,고등)",
+       "price": 16
+      },
+      {
+       "category": "Cut",
+       "name": "주니어컷 (~초등)",
+       "price": 13
+      },
+      {
+       "category": "Etc",
+       "name": "뿌리염색",
+       "price": 45
+      },
+      {
+       "category": "Etc",
+       "name": "뿌리펌",
+       "price": 50
+      },
+      {
+       "category": "Etc",
+       "name": "앞머리펌",
+       "price": 20
+      },
+      {
+       "category": "Etc",
+       "name": "사이드다운펌",
+       "price": 15
+      },
+      {
+       "category": "Etc",
+       "name": "사이드+백다운펌",
+       "price": 25
+      },
+      {
+       "category": "Perm 디지털&셋팅",
+       "name": "숏헤어",
+       "price": 110
+      },
+      {
+       "category": "Perm 디지털&셋팅",
+       "name": "단발헤어",
+       "price": 130
+      },
+      {
+       "category": "Perm 디지털&셋팅",
+       "name": "미디엄헤어",
+       "price": 160
+      },
+      {
+       "category": "Perm 디지털&셋팅",
+       "name": "롱헤어",
+       "price": 190
+      },
+      {
+       "category": "Perm 일반펌",
+       "name": "숏헤어",
+       "price": 60
+      },
+      {
+       "category": "Perm 일반펌",
+       "name": "단발헤어",
+       "price": 80
+      },
+      {
+       "category": "Perm 일반펌",
+       "name": "미디엄헤어",
+       "price": 110
+      },
+      {
+       "category": "Perm 일반펌",
+       "name": "롱헤어",
+       "price": 140
+      },
+      {
+       "category": "믹스펌",
+       "name": "숏헤어",
+       "price": 140
+      },
+      {
+       "category": "믹스펌",
+       "name": "단발헤어",
+       "price": 160
+      },
+      {
+       "category": "믹스펌",
+       "name": "미디엄헤어",
+       "price": 190
+      },
+      {
+       "category": "믹스펌",
+       "name": "롱헤어",
+       "price": 220
+      },
+      {
+       "category": "매직&볼륨매직",
+       "name": "숏헤어",
+       "price": 120
+      },
+      {
+       "category": "매직&볼륨매직",
+       "name": "단발헤어",
+       "price": 140
+      },
+      {
+       "category": "매직&볼륨매직",
+       "name": "미디엄헤어",
+       "price": 170
+      },
+      {
+       "category": "매직&볼륨매직",
+       "name": "롱헤어",
+       "price": 200
+      },
+      {
+       "category": "Color 염색",
+       "name": "숏헤어",
+       "price": 60
+      },
+      {
+       "category": "Color 염색",
+       "name": "단발헤어",
+       "price": 78
+      },
+      {
+       "category": "Color 염색",
+       "name": "미디엄헤어",
+       "price": 110
+      },
+      {
+       "category": "Color 염색",
+       "name": "롱헤어",
+       "price": 130
+      },
+      {
+       "category": "Care",
+       "name": "분야디 크리닉",
+       "price": 60
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787193879.779199",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787193875619399"
+  },
   {
    "ts": "1787188769.483049",
    "date": "2026-08-20",
