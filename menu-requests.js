@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 795,
- "updatedAt": "2026-08-20 15:45",
+ "version": 796,
+ "updatedAt": "2026-08-20 16:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1787208470.551279",
+   "date": "2026-08-20",
+   "time": "15:47",
+   "store": "소래포구",
+   "biz": "8910902616",
+   "pos": "",
+   "content": "유플러스 매장 / 계절 메뉴(카테고리) > 광어+새우 2인 80,000원 추가 요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1787208742.578299",
+   "rfx": 3,
+   "status": "done",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787208470551279"
+  },
   {
    "ts": "1787206743.251219",
    "date": "2026-08-20",
