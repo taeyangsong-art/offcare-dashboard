@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 779,
- "updatedAt": "2026-08-20 12:30",
+ "version": 780,
+ "updatedAt": "2026-08-20 12:45",
  "days": 30,
  "items": [
   {
@@ -20,7 +20,57 @@ window.MENU_REQUESTS = {
     "https://drive.google.com/file/d/1hr2RQnzrcBP6fYjJgM-P9z1dRTJR1Jtx/view?usp=drivesdk"
    ],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BRH4JV8HX",
+     "from": "댓글",
+     "path": "menu-files/1787196089_826379-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "식사",
+       "name": "비빔밥",
+       "price": 11000
+      },
+      {
+       "category": "식사",
+       "name": "김치찌개",
+       "price": 12000
+      },
+      {
+       "category": "식사",
+       "name": "된장찌개",
+       "price": 11000
+      },
+      {
+       "category": "식사",
+       "name": "제육볶음",
+       "price": 13000
+      },
+      {
+       "category": "식사",
+       "name": "소불고기",
+       "price": 15000
+      },
+      {
+       "category": "식사",
+       "name": "잔치국수",
+       "price": 10000
+      },
+      {
+       "category": "식사",
+       "name": "물냉면",
+       "price": 10000
+      },
+      {
+       "category": "식사",
+       "name": "비빔냉면",
+       "price": 10000
+      }
+     ]
+    }
+   ],
    "datt": [
     {
      "id": "1hr2RQnzrcBP6fYjJgM-P9z1dRTJR1Jtx",
@@ -105,11 +155,11 @@ window.MENU_REQUESTS = {
     }
    ],
    "replies": [],
-   "rc": 1,
-   "lr": "1787196093.025909",
+   "rc": 2,
+   "lr": "1787197239.320039",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "심성현",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787196089826379"
   },
   {
@@ -292,12 +342,13 @@ window.MENU_REQUESTS = {
    "replies": [
     "옵션상 금액 변경 필요\n현재 옵션에 등록된 금액으로 결제 되면 좋겠다고 하심\n특이사항 발생시 유선 안내 부탁드립니다.",
     "메뉴가 들어가있네요 AI로 넣으신거같긴한데",
-    "옵션안쓰고 인분 각자 노출로 진행"
+    "옵션안쓰고 인분 각자 노출로 진행",
+    "완료"
    ],
-   "rc": 4,
-   "lr": "1787196627.626309",
+   "rc": 5,
+   "lr": "1787196859.367839",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787195384777919"
   },
@@ -8249,7 +8300,32 @@ window.MENU_REQUESTS = {
     "https://drive.google.com/open?id=1yKhqtuGS-cbZIUDY0R7l7A0Yd5PbTNDP"
    ],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BR8U16XDZ",
+     "from": "댓글",
+     "path": "menu-files/1786599830_853979-0.png",
+     "kind": "other",
+     "menu": []
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BRH3WCSAV",
+     "from": "댓글",
+     "path": "menu-files/1786599830_853979-1.png",
+     "kind": "other",
+     "menu": []
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BRBCT277F",
+     "from": "댓글",
+     "path": "menu-files/1786599830_853979-2.png",
+     "kind": "other",
+     "menu": []
+    }
+   ],
    "datt": [
     {
      "id": "1-s6Hsk2ORrgar2nT77mpkyQBE19ybevy",
@@ -8545,10 +8621,17 @@ window.MENU_REQUESTS = {
     }
    ],
    "replies": [
-    "토플파 등록안됨"
+    "토플파 등록안됨",
+    "님 메뉴 등록 부탁드립니다.",
+    "님 토플파가 아직도 생성이 안되어있습니다..",
+    "\\",
+    "되어있는거 아닌가요??",
+    "사업자번호랑 상호명이 달라서요",
+    "대표자명도 다르시구요",
+    "아 이거 버기즈 본사 대표님이 넣어주셔서 다른거같아요 !\n버기즈 대흥 맞습니다!"
    ],
-   "rc": 2,
-   "lr": "1786607644.543949",
+   "rc": 10,
+   "lr": "1787197505.102339",
    "rfx": 3,
    "status": "done",
    "handler": "김규빈",
@@ -32748,29 +32831,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784607313602819"
-  },
-  {
-   "ts": "1784605301.891209",
-   "date": "2026-07-21",
-   "time": "12:41",
-   "store": "스무치 창원명서점",
-   "biz": "1625900586",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "문자로 받았는데 해상도 다깨져서 확인 안됨 이메일 요청"
-   ],
-   "rc": 2,
-   "lr": "1784605361.712079",
-   "rfx": 3,
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784605301891209"
   }
  ],
  "ocr": {
