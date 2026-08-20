@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 788,
- "updatedAt": "2026-08-20 14:15",
+ "version": 789,
+ "updatedAt": "2026-08-20 14:30",
  "days": 30,
  "items": [
   {
@@ -32784,29 +32784,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784612705347739"
-  },
-  {
-   "ts": "1784610945.917399",
-   "date": "2026-07-21",
-   "time": "14:15",
-   "store": "피자스쿨 마곡역점",
-   "biz": "6373000304",
-   "pos": "",
-   "content": "메뉴 추가 및 수정 부탁드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "오케이포스\n\n*[메뉴 삭제]*\n카테고리: 피자\n메뉴명: 체험피자\n\n*[메뉴 추가]*\n카테고리: 피자\n메뉴명: 비프/치킨타코\n가격: 15,900원\n\n카테고리: 크러스트\n메뉴명: 비프/치킨타코크러스트\n가격: 18,900원\n\n카테고리: 사이드,토핑추카\n메뉴명: 할라피뇨\n가격: 500원"
-   ],
-   "rc": 2,
-   "lr": "1784610981.862629",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784610945917399"
   }
  ],
  "ocr": {
