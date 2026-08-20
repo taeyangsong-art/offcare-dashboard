@@ -3,10 +3,481 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 790,
- "updatedAt": "2026-08-20 14:40",
+ "version": 791,
+ "updatedAt": "2026-08-20 14:46",
  "days": 30,
  "items": [
+  {
+   "ts": "1787204585.519829",
+   "date": "2026-08-20",
+   "time": "14:43",
+   "store": "대원",
+   "biz": "8551600380",
+   "pos": "",
+   "content": "테이블/ 사ㅓㅇ품등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "20260820_133103[1].jpg",
+     "fid": "F0BRBVD3F6H",
+     "from": "댓글",
+     "path": "menu-files/1787204585_519829-0.jpg",
+     "kind": "pos_screen",
+     "menu": []
+    },
+    {
+     "name": "20260820_133110[2].jpg",
+     "fid": "F0BRHMNNW73",
+     "from": "댓글",
+     "path": "menu-files/1787204585_519829-1.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "고기류",
+       "name": "꽃등심",
+       "price": 45000
+      },
+      {
+       "category": "고기류",
+       "name": "안창살",
+       "price": 55000
+      },
+      {
+       "category": "고기류",
+       "name": "살치살",
+       "price": 52000
+      },
+      {
+       "category": "고기류",
+       "name": "갈비살",
+       "price": 43000
+      },
+      {
+       "category": "고기류",
+       "name": "토시살",
+       "price": 52000
+      },
+      {
+       "category": "고기류",
+       "name": "소양념왕갈비",
+       "price": 32000
+      },
+      {
+       "category": "고기류",
+       "name": "생고기",
+       "price": 36000
+      },
+      {
+       "category": "고기류",
+       "name": "육회",
+       "price": 35000
+      },
+      {
+       "category": "고기류",
+       "name": "생고기(소)",
+       "price": 18000
+      },
+      {
+       "category": "고기류",
+       "name": "돼지양념갈비",
+       "price": 17000
+      },
+      {
+       "category": "고기류",
+       "name": "삼겹살",
+       "price": 17000
+      },
+      {
+       "category": "고기류",
+       "name": "항정살",
+       "price": 22000
+      },
+      {
+       "category": "고기류",
+       "name": "돼지생갈비",
+       "price": 22000
+      },
+      {
+       "category": "고기류",
+       "name": "부채살",
+       "price": 36000
+      }
+     ]
+    },
+    {
+     "name": "20260820_133117[1].jpg",
+     "fid": "F0BR9GC7T0B",
+     "from": "댓글",
+     "path": "menu-files/1787204585_519829-2.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "식사류",
+       "name": "불고기스페셜",
+       "price": 22000
+      },
+      {
+       "category": "식사류",
+       "name": "갈비탕",
+       "price": 16000
+      },
+      {
+       "category": "식사류",
+       "name": "쌈밥",
+       "price": 13000
+      },
+      {
+       "category": "식사류",
+       "name": "쌈밥고기 추가",
+       "price": 6000
+      },
+      {
+       "category": "식사류",
+       "name": "전복갈비탕",
+       "price": 20000
+      },
+      {
+       "category": "식사류",
+       "name": "특생고기비빔밥",
+       "price": 16000
+      },
+      {
+       "category": "식사류",
+       "name": "생고기비빔밥",
+       "price": 13000
+      },
+      {
+       "category": "식사류",
+       "name": "익힌고기비빔밥",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "굴솥밥정찬",
+       "price": 18000
+      },
+      {
+       "category": "식사류",
+       "name": "비냉/쌈밥고기셋트",
+       "price": 14000
+      },
+      {
+       "category": "식사류",
+       "name": "물냉/쌈밥고기셋트",
+       "price": 14000
+      },
+      {
+       "category": "식사류",
+       "name": "비빔냉면",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "물냉면",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "냉면사리 추가",
+       "price": 5000
+      },
+      {
+       "category": "식사류",
+       "name": "차돌된장찌개",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "떡국",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "김치찌게",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "전복버터구이",
+       "price": 30000
+      },
+      {
+       "category": "식사류",
+       "name": "공기밥",
+       "price": 2000
+      },
+      {
+       "category": "식사류",
+       "name": "누룽지",
+       "price": 3000
+      },
+      {
+       "category": "식사류",
+       "name": "후식비빔냉면",
+       "price": 5000
+      },
+      {
+       "category": "식사류",
+       "name": "후식물냉면",
+       "price": 5000
+      },
+      {
+       "category": "식사류",
+       "name": "후식떡국",
+       "price": 6000
+      },
+      {
+       "category": "식사류",
+       "name": "솥밥",
+       "price": 8000
+      },
+      {
+       "category": "식사류",
+       "name": "된장찌게",
+       "price": 5000
+      },
+      {
+       "category": "식사류",
+       "name": "계란찜",
+       "price": 4000
+      },
+      {
+       "category": "식사류",
+       "name": "옥수수콘샐러드",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "name": "20260820_133124[1].jpg",
+     "fid": "F0BR9GD5CCT",
+     "from": "댓글",
+     "path": "menu-files/1787204585_519829-3.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류및음료",
+       "name": "잎새주",
+       "price": 5000
+      },
+      {
+       "category": "주류및음료",
+       "name": "참이슬",
+       "price": 5000
+      },
+      {
+       "category": "주류및음료",
+       "name": "진로이즈백",
+       "price": 5000
+      },
+      {
+       "category": "주류및음료",
+       "name": "새로",
+       "price": 5000
+      },
+      {
+       "category": "주류및음료",
+       "name": "보해",
+       "price": 5000
+      },
+      {
+       "category": "주류및음료",
+       "name": "카스맥주",
+       "price": 5000
+      },
+      {
+       "category": "주류및음료",
+       "name": "테라맥주",
+       "price": 5000
+      },
+      {
+       "category": "주류및음료",
+       "name": "켈리맥주",
+       "price": 5000
+      },
+      {
+       "category": "주류및음료",
+       "name": "하이트맥주",
+       "price": 5000
+      },
+      {
+       "category": "주류및음료",
+       "name": "복분자",
+       "price": 15000
+      },
+      {
+       "category": "주류및음료",
+       "name": "백세주",
+       "price": 10000
+      },
+      {
+       "category": "주류및음료",
+       "name": "청하",
+       "price": 6000
+      },
+      {
+       "category": "주류및음료",
+       "name": "막걸리(대)",
+       "price": 5000
+      },
+      {
+       "category": "주류및음료",
+       "name": "음료수",
+       "price": 2000
+      },
+      {
+       "category": "주류및음료",
+       "name": "녹차 캔",
+       "price": 1000
+      },
+      {
+       "category": "주류및음료",
+       "name": "막걸리(소)",
+       "price": 3000
+      },
+      {
+       "category": "주류및음료",
+       "name": "일품진로 OAK 43",
+       "price": 50000
+      },
+      {
+       "category": "주류및음료",
+       "name": "일품진로",
+       "price": 25000
+      }
+     ]
+    },
+    {
+     "name": "20260820_133130[1].jpg",
+     "fid": "F0BRFNJDFPU",
+     "from": "댓글",
+     "path": "menu-files/1787204585_519829-4.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "와인",
+       "name": "기마로(레드)",
+       "price": 75000
+      },
+      {
+       "category": "와인",
+       "name": "킹핀 레드",
+       "price": 49000
+      },
+      {
+       "category": "와인",
+       "name": "랩 아파시멘토 로쏘",
+       "price": 67000
+      },
+      {
+       "category": "와인",
+       "name": "샴부 그랑크뤼저브",
+       "price": 52000
+      },
+      {
+       "category": "와인",
+       "name": "곱케 리제르바 루비/포루",
+       "price": 63000
+      },
+      {
+       "category": "와인",
+       "name": "리포타 프리미티보",
+       "price": 35000
+      },
+      {
+       "category": "와인",
+       "name": "뀌베16.리미티드에디션",
+       "price": 67000
+      },
+      {
+       "category": "와인",
+       "name": "아밤포스티 네비올로",
+       "price": 89000
+      },
+      {
+       "category": "와인",
+       "name": "리틀 자이언트(쉬라즈)",
+       "price": 69000
+      },
+      {
+       "category": "와인",
+       "name": "멜레토 끼안티 클라시코",
+       "price": 105000
+      },
+      {
+       "category": "와인",
+       "name": "샤토말바",
+       "price": 35000
+      },
+      {
+       "category": "와인",
+       "name": "도멘 띠나흐 지브리",
+       "price": 142000
+      },
+      {
+       "category": "와인",
+       "name": "올리비에주앙 오뜨꼬뜨드",
+       "price": 132000
+      },
+      {
+       "category": "와인",
+       "name": "팔리에르 바롤로",
+       "price": 180000
+      },
+      {
+       "category": "와인",
+       "name": "킹핀 화이트",
+       "price": 49000
+      },
+      {
+       "category": "와인",
+       "name": "기마로(화이트)",
+       "price": 75000
+      },
+      {
+       "category": "와인",
+       "name": "러시안잭쇼비뇽블랑",
+       "price": 57000
+      },
+      {
+       "category": "와인",
+       "name": "말로르 쇼비뇽블랑",
+       "price": 63000
+      },
+      {
+       "category": "와인",
+       "name": "페띠에르 리슬링",
+       "price": 109000
+      },
+      {
+       "category": "와인",
+       "name": "리알토 모스카토",
+       "price": 35000
+      },
+      {
+       "category": "와인",
+       "name": "사라코 모스카토 다스티/",
+       "price": 75000
+      },
+      {
+       "category": "와인",
+       "name": "엘꼬또",
+       "price": 35000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1787204656.349139",
+   "rfx": 3,
+   "status": "done",
+   "handler": "김동욱",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787204585519829"
+  },
   {
    "ts": "1787204098.568879",
    "date": "2026-08-20",
@@ -411,8 +882,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1787198575.103949",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787198523531769"
   },
   {
@@ -33084,30 +33555,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784614544290459"
-  },
-  {
-   "ts": "1784612705.347739",
-   "date": "2026-07-21",
-   "time": "14:45",
-   "store": "꺼거2",
-   "biz": "1238549680",
-   "pos": "토스포스",
-   "content": "전체메뉴",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "머!",
-    "문자발송"
-   ],
-   "rc": 3,
-   "lr": "1784614230.677969",
-   "rfx": 3,
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784612705347739"
   }
  ],
  "ocr": {
