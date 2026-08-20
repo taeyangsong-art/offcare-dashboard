@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 780,
- "updatedAt": "2026-08-20 12:45",
+ "version": 781,
+ "updatedAt": "2026-08-20 12:54",
  "days": 30,
  "items": [
   {
@@ -25,7 +25,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BRH4JV8HX",
      "from": "댓글",
-     "path": "menu-files/1787196089_826379-0.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -68,7 +67,8 @@ window.MENU_REQUESTS = {
        "name": "비빔냉면",
        "price": 10000
       }
-     ]
+     ],
+     "path": "menu-files/1787196089_826379-0.png"
     }
    ],
    "datt": [
@@ -154,9 +154,11 @@ window.MENU_REQUESTS = {
      ]
     }
    ],
-   "replies": [],
-   "rc": 2,
-   "lr": "1787197239.320039",
+   "replies": [
+    "솔라피 발송 완료"
+   ],
+   "rc": 3,
+   "lr": "1787197715.798259",
    "rfx": 3,
    "status": "done",
    "handler": "심성현",
@@ -8305,25 +8307,25 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BR8U16XDZ",
      "from": "댓글",
-     "path": "menu-files/1786599830_853979-0.png",
      "kind": "other",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1786599830_853979-0.png"
     },
     {
      "name": "image.png",
      "fid": "F0BRH3WCSAV",
      "from": "댓글",
-     "path": "menu-files/1786599830_853979-1.png",
      "kind": "other",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1786599830_853979-1.png"
     },
     {
      "name": "image.png",
      "fid": "F0BRBCT277F",
      "from": "댓글",
-     "path": "menu-files/1786599830_853979-2.png",
      "kind": "other",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1786599830_853979-2.png"
     }
    ],
    "datt": [
@@ -8630,8 +8632,8 @@ window.MENU_REQUESTS = {
     "대표자명도 다르시구요",
     "아 이거 버기즈 본사 대표님이 넣어주셔서 다른거같아요 !\n버기즈 대흥 맞습니다!"
    ],
-   "rc": 10,
-   "lr": "1787197505.102339",
+   "rc": 17,
+   "lr": "1787197844.281709",
    "rfx": 3,
    "status": "done",
    "handler": "김규빈",
