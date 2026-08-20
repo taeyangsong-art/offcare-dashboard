@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4263,
+  "version": 4264,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -119787,6 +119787,12 @@ window.SLACK_DATA = {
     },
     "2026-08-20": {
       "counts": {
+        "onboarding": {
+          "김동욱": 1,
+          "심성현": 1,
+          "배선유": 1,
+          "서상원": 1
+        },
         "as": {
           "김기범": 2,
           "심성현": 11,
@@ -119802,16 +119808,12 @@ window.SLACK_DATA = {
           "서상원": 3,
           "김기범": 2
         },
-        "onboarding": {
-          "배선유": 1,
-          "서상원": 1
-        },
         "transfer": {
           "김동욱": 1,
           "심성현": 1
         },
         "menu": {
-          "배선유": 2
+          "배선유": 3
         },
         "delivery": {
           "김현기": 1
@@ -119819,6 +119821,39 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:44",
+          "store": "사사#",
+          "biz": "4660401930",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
+        },
+        {
+          "time": "11:30",
+          "store": "미 &amp; 끼",
+          "biz": "6102034469",
+          "cat": "onboarding",
+          "emp": "김동욱",
+          "req": "포프(휴대폰) + 유프 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포프유프(휴대폰) 온보딩 완료."
+        },
+        {
+          "time": "11:29",
+          "store": "에이원스낵",
+          "biz": "1213325873",
+          "cat": "onboarding",
+          "emp": "심성현",
+          "req": "포프+유프(휴대폰/갤럭시) / 온보딩 요청 드립니다 / 프린터 출력 불가",
+          "hw": "",
+          "intake": "online",
+          "note": "에이원 스낵 프린터 연동 완료 / 에이원 당구 클럽 타사 포스 온보딩 상태 로그아웃 후 재온보딩 완료"
+        },
         {
           "time": "11:25",
           "store": "링컨(Lincoln)",
@@ -120397,11 +120432,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 41,
+        "online": 44,
         "offline": 11,
         "unknown": 0
       },
-      "updatedAt": "11:44",
+      "updatedAt": "11:59",
       "voc": {
         "responses": 1,
         "install": {
@@ -120436,6 +120471,22 @@ window.SLACK_DATA = {
         "reasonCounts": {},
         "alerts": [],
         "praises": []
+      },
+      "ob": {
+        "count": 1,
+        "byEmp": {
+          "김규빈": 1
+        },
+        "items": [
+          {
+            "key": "2026년 8월 20일 오전 9:29:18|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786683141434969#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-20",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786683141434969"
+          }
+        ]
       }
     }
   },
@@ -120459,15 +120510,19 @@ window.SLACK_DATA = {
       },
       "1787154300.310049": {
         "post": "1787154300.310049",
-        "lastSeen": 1787193925.11
+        "lastSeen": 1787194834.617
       },
       "1787190106.078849": {
         "post": "1787190106.078849",
         "lastSeen": 1787190323.326
       },
-      "1787193875.619399": {
-        "post": "1787193875.619399",
-        "lastSeen": 1787193925.11
+      "1787194748.472349": {
+        "post": "1787194748.472349",
+        "lastSeen": 1787194834.617
+      },
+      "1787194625.666169": {
+        "post": "1787194625.666169",
+        "lastSeen": 1787194834.617
       }
     },
     "days": {
@@ -147681,19 +147736,19 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-20 11:45",
+    "at": "2026-08-20 12:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3622,
-    "named": 306,
+    "named": 307,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 306,
+    "done": 307,
     "byStatus": {
-      "일정등록완료": 192,
+      "일정등록완료": 193,
       "1차부재": 67,
       "점주직접접수": 26,
       "설치불가": 7,
