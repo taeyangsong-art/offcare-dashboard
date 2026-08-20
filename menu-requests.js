@@ -3,10 +3,160 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 809,
- "updatedAt": "2026-08-20 19:15",
+ "version": 810,
+ "updatedAt": "2026-08-20 20:10",
  "days": 30,
  "items": [
+  {
+   "ts": "1787223927.206369",
+   "date": "2026-08-20",
+   "time": "20:05",
+   "store": "은성한정식",
+   "biz": "5298703678",
+   "pos": "퍼스트포스",
+   "content": "<서비스> 메뉴\n서비스요리(4인) 오른쪽 \n->쭈꾸미서비스(2인) 0원\n\n육회서비스(4인) 오른쪽 \n->쭈꾸미서비스(3인) 0원\n\n더덕서비스(4인) 오른쪽 \n->쭈꾸미서비스(4인) 0원\n\n: 회색 바탕/ 흰색 글씨\n: 주방 프린터 3대 모두 출력되게 해주세요",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1-pRDCgGUxr0kUuGN53mzm_dfCZDVQ_n-/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1-pRDCgGUxr0kUuGN53mzm_dfCZDVQ_n-",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "서비스요리(2인)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "서비스요리(3인)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "서비스요리(4인)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "곶감말이(서비스)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "육회서비스(2인)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "육회서비스(3인)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "육회서비스(4인)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "더덕서비스(2인)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "더덕서비스(3인)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "더덕서비스(4인)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "홍우럭서비스(2인)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "홍우럭서비스(3인)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "홍우럭서비스(4인)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "누룽지탕(2인)서비스",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "크림새우서비스(2인)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "크림새우서비스(3인)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "크림새우서비스(4인)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "궁중떡볶이(서비스)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "누룽지탕(3인)서비스",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "갈비찜서비스(2인)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "갈비찜서비스(3인)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "갈비찜서비스(4인)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "가오리찜(서비스)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "누룽지탕(4인)서비스",
+       "price": 0
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787223931.357539",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787223927206369"
+  },
   {
    "ts": "1787220065.079629",
    "date": "2026-08-20",
