@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 786,
- "updatedAt": "2026-08-20 13:45",
+ "version": 787,
+ "updatedAt": "2026-08-20 14:00",
  "days": 30,
  "items": [
   {
@@ -32849,29 +32849,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784610189016449"
-  },
-  {
-   "ts": "1784609903.683779",
-   "date": "2026-07-21",
-   "time": "13:58",
-   "store": "경동수산",
-   "biz": "6199505009",
-   "pos": "오케이포스",
-   "content": "상품 가격 수정 요청 드립니다. ( 오케이포스 )",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "장어 ( 1kg 는 잘 등록 되어있다고합니다! )\n500g -> 17,500원\n100g -> 3,500원\n10g -> 350원"
-   ],
-   "rc": 6,
-   "lr": "1784610258.977879",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784609903683779"
   }
  ],
  "ocr": {
