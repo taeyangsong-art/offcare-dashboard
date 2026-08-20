@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 773,
- "updatedAt": "2026-08-20 11:00",
+ "version": 774,
+ "updatedAt": "2026-08-20 11:15",
  "days": 30,
  "items": [
   {
@@ -32601,29 +32601,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784602134653989"
-  },
-  {
-   "ts": "1784599959.387169",
-   "date": "2026-07-21",
-   "time": "11:12",
-   "store": "초우정",
-   "biz": "5652000091",
-   "pos": "오케이포스",
-   "content": "오케이포스/ 메뉴 삭제 및 수정 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "*메뉴 삭제*\n카테고리: [식사]\n• 행사 한우 불고기 \n*메뉴 추가*\n카테고리: [고기류]\n버섯갈비전골  60,000원"
-   ],
-   "rc": 3,
-   "lr": "1784600361.774749",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784599959387169"
   }
  ],
  "ocr": {
