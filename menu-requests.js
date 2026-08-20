@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 770,
- "updatedAt": "2026-08-20 10:15",
+ "version": 771,
+ "updatedAt": "2026-08-20 10:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1787188769.483049",
+   "date": "2026-08-20",
+   "time": "10:19",
+   "store": "달콤한 꽃케이크",
+   "biz": "1393001963",
+   "pos": "토스포스",
+   "content": "포장이랑 시트추가 순서 변경 가능할까요?",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787188772.492519",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787188769483049"
+  },
   {
    "ts": "1787188212.215159",
    "date": "2026-08-20",
@@ -21,11 +42,11 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1787188216.917099",
+   "rc": 3,
+   "lr": "1787188968.179749",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787188212215159"
   },
   {
