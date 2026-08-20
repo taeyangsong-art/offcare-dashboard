@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4264,
+  "version": 4265,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -119788,8 +119788,8 @@ window.SLACK_DATA = {
     "2026-08-20": {
       "counts": {
         "onboarding": {
+          "심성현": 2,
           "김동욱": 1,
-          "심성현": 1,
           "배선유": 1,
           "서상원": 1
         },
@@ -119821,6 +119821,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:55",
+          "store": "에듀그릿영어",
+          "biz": "2259823313",
+          "cat": "onboarding",
+          "emp": "심성현",
+          "req": "• 온보딩 부탁드립니다. 포프 (노트북)",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 상세 사용 방법 안내 완료"
+        },
         {
           "time": "11:44",
           "store": "사사#",
@@ -120432,11 +120443,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 44,
+        "online": 45,
         "offline": 11,
         "unknown": 0
       },
-      "updatedAt": "11:59",
+      "updatedAt": "12:03",
       "voc": {
         "responses": 1,
         "install": {
@@ -120510,7 +120521,7 @@ window.SLACK_DATA = {
       },
       "1787154300.310049": {
         "post": "1787154300.310049",
-        "lastSeen": 1787194834.617
+        "lastSeen": 1787195164.941
       },
       "1787190106.078849": {
         "post": "1787190106.078849",
@@ -120518,11 +120529,11 @@ window.SLACK_DATA = {
       },
       "1787194748.472349": {
         "post": "1787194748.472349",
-        "lastSeen": 1787194834.617
+        "lastSeen": 1787195164.941
       },
-      "1787194625.666169": {
-        "post": "1787194625.666169",
-        "lastSeen": 1787194834.617
+      "1787195021.872729": {
+        "post": "1787195021.872729",
+        "lastSeen": 1787195164.941
       }
     },
     "days": {
@@ -147503,8 +147514,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-20": {
-        "cnt": 28,
-        "sumMin": 367.5893226265908,
+        "cnt": 29,
+        "sumMin": 373.8245364785195,
         "over": 0,
         "items": [
           {
@@ -147730,13 +147741,21 @@ window.SLACK_DATA = {
             "biz": "2410201604",
             "who": "심성현",
             "cat": "as"
+          },
+          {
+            "hm": "11:57",
+            "min": 6.2,
+            "store": "(주)온도담 (ONDODAM Co. ,Ltd.)",
+            "biz": "7198602106",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-20 12:00",
+    "at": "2026-08-20 12:06",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 776,
- "updatedAt": "2026-08-20 12:00",
+ "version": 777,
+ "updatedAt": "2026-08-20 12:06",
  "days": 30,
  "items": [
   {
@@ -32477,48 +32477,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784605301891209"
-  },
-  {
-   "ts": "1784603119.669479",
-   "date": "2026-07-21",
-   "time": "12:05",
-   "store": "기가차",
-   "biz": "3276800337",
-   "pos": "",
-   "content": "메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784603123.558149",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784603119669479"
-  },
-  {
-   "ts": "1784603079.845949",
-   "date": "2026-07-21",
-   "time": "12:04",
-   "store": "꽈백최선생 일산주엽점",
-   "biz": "1330744312",
-   "pos": "",
-   "content": "• 양주덕계점 ···   매장 메뉴 >  일산주엽점 ··· 에 복사 요청 드립니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1784603552.957879",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784603079845949"
   }
  ],
  "ocr": {
