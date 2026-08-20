@@ -3,10 +3,195 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 810,
- "updatedAt": "2026-08-20 20:10",
+ "version": 811,
+ "updatedAt": "2026-08-20 23:34",
  "days": 30,
  "items": [
+  {
+   "ts": "1787236109.790659",
+   "date": "2026-08-20",
+   "time": "23:28",
+   "store": "테이블하나 (TABLE HANA)",
+   "biz": "2752700601",
+   "pos": "토스포스",
+   "content": "외국분들이 보실수 있도록 카테고리명과 메뉴명을 영문으로도 등록해주시면 감사하겠습니다. 현재 포스기 키보드가 없어 너무 오래걸려 도움 요청드려요.",
+   "special": "메뉴명은 제가 보내드릴게요.",
+   "drive": [
+    "https://drive.google.com/file/d/1E1XAKhWSpdNQGq6-WcTFspq2UfhMPu0x/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1E1XAKhWSpdNQGq6-WcTFspq2UfhMPu0x",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "APPETIZER",
+       "name": "CARROT RÂPER",
+       "price": 7000
+      },
+      {
+       "category": "APPETIZER",
+       "name": "SICILY GREEN OLIVE",
+       "price": 12000
+      },
+      {
+       "category": "APPETIZER",
+       "name": "BELLGIAN FRIES with TRUFFLE OIL",
+       "price": 17000
+      },
+      {
+       "category": "APPETIZER",
+       "name": "FRENCH ONION SOUP",
+       "price": 21000
+      },
+      {
+       "category": "CHEESE",
+       "name": "CHEESE PLATTER",
+       "price": 32000
+      },
+      {
+       "category": "CHEESE",
+       "name": "TÊTE DE MOINE",
+       "price": 19000
+      },
+      {
+       "category": "SIGNATURE",
+       "name": "OYSTER PLATTER DOZEN",
+       "price": 65000
+      },
+      {
+       "category": "SIGNATURE",
+       "name": "OYSTER PLATTER HALF-DOZEN",
+       "price": 37000
+      },
+      {
+       "category": "SIGNATURE",
+       "name": "JAMON \"JOSELITO\" GRAN RESERVA 80 GRAM",
+       "price": 100000
+      },
+      {
+       "category": "SIGNATURE",
+       "name": "JAMON \"JOSELITO\" GRAN RESERVA 50 GRAM",
+       "price": 65000
+      },
+      {
+       "category": "SIGNATURE",
+       "name": "JAMON \"JOSELITO\" GRAN RESERVA 25 GRAM",
+       "price": 37000
+      },
+      {
+       "category": "MAIN",
+       "name": "ROASTED CAULIFLOWER",
+       "price": 19000
+      },
+      {
+       "category": "MAIN",
+       "name": "SPANISH GAMBAS AL AJILLO",
+       "price": 25000
+      },
+      {
+       "category": "MAIN",
+       "name": "BEEF STEAK",
+       "price": 48000
+      },
+      {
+       "category": "MAIN",
+       "name": "MUSHROOM RISOTTO",
+       "price": 27000
+      },
+      {
+       "category": "MAIN",
+       "name": "CHICKEN CAESAR SCHNITZEL",
+       "price": 27000
+      },
+      {
+       "category": "DESSERT",
+       "name": "GELATO",
+       "price": 8000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787236113.497869",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787236109790659"
+  },
+  {
+   "ts": "1787235916.486239",
+   "date": "2026-08-20",
+   "time": "23:25",
+   "store": "브라운",
+   "biz": "1051988486",
+   "pos": "오케이포스",
+   "content": "사진 속 두칸으로 부탁드립니다",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/13kaN-1YbAW34_bUgAIHtgyREVMlaZx79/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "13kaN-1YbAW34_bUgAIHtgyREVMlaZx79",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "BEER",
+       "name": "Budweisr",
+       "price": 9000
+      },
+      {
+       "category": "BEER",
+       "name": "Corona",
+       "price": 10000
+      },
+      {
+       "category": "BEER",
+       "name": "Heineken",
+       "price": 10000
+      },
+      {
+       "category": "BEER",
+       "name": "Hoegaarden",
+       "price": 10000
+      },
+      {
+       "category": "BEER",
+       "name": "Budweisr Alu & teqila",
+       "price": 15000
+      },
+      {
+       "category": "BEER",
+       "name": "cass zero",
+       "price": 8000
+      },
+      {
+       "category": "BEER",
+       "name": "cass zero lemon",
+       "price": 8000
+      },
+      {
+       "category": "BEER",
+       "name": "budweiser alu bottle",
+       "price": 10000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787235921.171559",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787235916486239"
+  },
   {
    "ts": "1787223927.206369",
    "date": "2026-08-20",
