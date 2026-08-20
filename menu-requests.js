@@ -3,10 +3,202 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 796,
- "updatedAt": "2026-08-20 16:00",
+ "version": 797,
+ "updatedAt": "2026-08-20 16:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1787209821.903749",
+   "date": "2026-08-20",
+   "time": "16:10",
+   "store": "타마시이",
+   "biz": "7263400470",
+   "pos": "오케이포스",
+   "content": "오케이 포스 사용\n\nA, B,C세트 있는데, 기존에 꼬치구이 선택 가능한데, 선택이 안된다고 하심\n메뉴 설정 확인 후 유선 안내 부탁드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787209825.521909",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787209821903749"
+  },
+  {
+   "ts": "1787209779.326639",
+   "date": "2026-08-20",
+   "time": "16:09",
+   "store": "포방터 카페",
+   "biz": "1562600701",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "Resized_20260820_160728.jpg.jpeg",
+     "fid": "F0BRJ7DBZQ9",
+     "from": "댓글",
+     "path": "menu-files/1787209779_326639-0.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "커피",
+       "name": "아메리카노 (핫)",
+       "price": 2800
+      },
+      {
+       "category": "커피",
+       "name": "아메리카노 (아이스)",
+       "price": 3200
+      },
+      {
+       "category": "커피",
+       "name": "카페라떼 (핫)",
+       "price": 3800
+      },
+      {
+       "category": "커피",
+       "name": "카페라떼 (아이스)",
+       "price": 4300
+      },
+      {
+       "category": "커피",
+       "name": "바닐라 라떼 (핫)",
+       "price": 4500
+      },
+      {
+       "category": "커피",
+       "name": "바닐라 라떼 (아이스)",
+       "price": 4800
+      },
+      {
+       "category": "커피",
+       "name": "카페모카 (핫)",
+       "price": 4500
+      },
+      {
+       "category": "커피",
+       "name": "카페모카 (아이스)",
+       "price": 4800
+      },
+      {
+       "category": "커피",
+       "name": "헤이즐넛 라떼 (핫)",
+       "price": 4500
+      },
+      {
+       "category": "커피",
+       "name": "헤이즐넛 라떼 (아이스)",
+       "price": 4800
+      },
+      {
+       "category": "아이스티 & 에이드",
+       "name": "복숭아 아이스티",
+       "price": 3500
+      },
+      {
+       "category": "아이스티 & 에이드",
+       "name": "체리 에이드",
+       "price": 4000
+      },
+      {
+       "category": "아이스티 & 에이드",
+       "name": "청포도 에이드",
+       "price": 4500
+      },
+      {
+       "category": "아이스티 & 에이드",
+       "name": "망고 에이드",
+       "price": 4500
+      },
+      {
+       "category": "아이스티 & 에이드",
+       "name": "레몬 에이드",
+       "price": 4700
+      },
+      {
+       "category": "아이스티 & 에이드",
+       "name": "자몽 에이드",
+       "price": 4700
+      },
+      {
+       "category": "스무디",
+       "name": "레몬 스무디",
+       "price": 4700
+      },
+      {
+       "category": "스무디",
+       "name": "유자 스무디",
+       "price": 4700
+      },
+      {
+       "category": "스무디",
+       "name": "망고 스무디",
+       "price": 5200
+      },
+      {
+       "category": "스무디",
+       "name": "키위 스무디",
+       "price": 5200
+      },
+      {
+       "category": "스무디",
+       "name": "블루베리 스무디",
+       "price": 5500
+      },
+      {
+       "category": "스무디",
+       "name": "플레인 요거트",
+       "price": 5500
+      },
+      {
+       "category": "빙수",
+       "name": "눈꽃 빙수 (소)",
+       "price": 7500
+      },
+      {
+       "category": "빙수",
+       "name": "눈꽃 빙수 (중)",
+       "price": 14500
+      },
+      {
+       "category": "빙수",
+       "name": "눈꽃 빙수 (대)",
+       "price": 19500
+      },
+      {
+       "category": "빙수",
+       "name": "흑임자 빙수 (소)",
+       "price": 8500
+      },
+      {
+       "category": "빙수",
+       "name": "흑임자 빙수 (중)",
+       "price": 16500
+      },
+      {
+       "category": "빙수",
+       "name": "흑임자 빙수 (대)",
+       "price": 22500
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1787209789.517399",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787209779326639"
+  },
   {
    "ts": "1787208470.551279",
    "date": "2026-08-20",
@@ -97,17 +289,27 @@ window.MENU_REQUESTS = {
    "special": "이미지 파일은 추후 상품코드에 맞춰서 다시 보내 드리겠습니다.",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "f_4e482069042e.xlsx",
+     "fid": "F0BRG7RFCH0",
+     "from": "댓글",
+     "path": "menu-files/1787205434_388809-0.xlsx",
+     "nj": 1
+    }
+   ],
    "datt": [],
    "replies": [
     "안녕하세요 대표자분께서 메뉴 사진(200개 이상) 내일 8/21 오전까지 제출해주실 예정입니다. 받는대로 공유드리겠습니다.\n\n픽셀 : 800*600px 사이즈로 파일명은 상품명/상품코드로 매칭하여 제출하실 예정\n\n사진 제출 목적 : QR 테이블 오더 사용",
-    "대시보드 양식으로 첨부해주셨으나 구글 스프레드시트 보기 권한으로 보내주셔서 등록 불가, 엑셀로 추출 후 재전송 요청드림"
+    "대시보드 양식으로 첨부해주셨으나 구글 스프레드시트 보기 권한으로 보내주셔서 등록 불가, 엑셀로 추출 후 재전송 요청드림",
+    "님, 엑셀 확인되실까요?",
+    "메뉴이미지도 첨부드렸습니다"
    ],
-   "rc": 3,
-   "lr": "1787207112.427019",
+   "rc": 7,
+   "lr": "1787209687.824989",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787205434388809"
   },
   {
@@ -33290,83 +33492,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784621116645489"
-  },
-  {
-   "ts": "1784617367.166589",
-   "date": "2026-07-21",
-   "time": "16:02",
-   "store": "중화호반닭갈비막국수신내점",
-   "biz": "3850103958",
-   "pos": "토스포스",
-   "content": "토스포스 메뉴 변경 및 추가 요청드립니다.\n\n1. 변경 : 막국수 9,000 → *물막국수 9,000*\n2. 추가 : *비빔막국수 9,000*\n3. 변경 : 얼큰막국수 9,000 → *얼큰물막국수 9,000*\n4. 추가 : *얼큰비빔막국수 9,000*",
-   "special": "",
-   "drive": [],
-   "files": 1,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BJH4TB3BM",
-     "from": "원글",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "식사",
-       "name": "눈꽃치즈닭갈비",
-       "price": 16000
-      },
-      {
-       "category": "식사",
-       "name": "닭갈비",
-       "price": 14000
-      },
-      {
-       "category": "식사",
-       "name": "얼큰막국수",
-       "price": 9000
-      },
-      {
-       "category": "식사",
-       "name": "막국수",
-       "price": 9000
-      },
-      {
-       "category": "식사",
-       "name": "물만두",
-       "price": 5000
-      },
-      {
-       "category": "식사",
-       "name": "볶음밥",
-       "price": 3000
-      },
-      {
-       "category": "식사",
-       "name": "주먹밥",
-       "price": 2000
-      },
-      {
-       "category": "식사",
-       "name": "공기밥",
-       "price": 1000
-      },
-      {
-       "category": "식사",
-       "name": "미나리닭갈비",
-       "price": 16000
-      }
-     ]
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "막국수와 얼큰막국수를 물/비빔 나누는 요청입니다"
-   ],
-   "rc": 3,
-   "lr": "1784617652.948459",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784617367166589"
   }
  ],
  "ocr": {
