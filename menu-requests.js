@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 782,
- "updatedAt": "2026-08-20 13:00",
+ "version": 783,
+ "updatedAt": "2026-08-20 13:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1787198523.531769",
+   "date": "2026-08-20",
+   "time": "13:02",
+   "store": "움버거앤윙스 킨텍스점",
+   "biz": "1358560825",
+   "pos": "퍼스트포스",
+   "content": "메뉴이름 변경건입니다\n\n핫레드-볼케이노\n핫크리미-크리미마요\n스파이시로제-로제투움바\n버거,버거세트,시그니처세트,메가윙세트에서도 변경해주세요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787198575.103949",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787198523531769"
+  },
   {
    "ts": "1787196089.826379",
    "date": "2026-08-20",
@@ -8932,8 +8953,7 @@ window.MENU_REQUESTS = {
        "name": "수제자몽청블랙퍼스트티",
        "price": 4500
       }
-     ],
-     "path": "menu-files/1786593707_181269-0.png"
+     ]
     }
    ],
    "datt": [],
@@ -32810,29 +32830,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784607539264439"
-  },
-  {
-   "ts": "1784607313.602819",
-   "date": "2026-07-21",
-   "time": "13:15",
-   "store": "야사이마키 미캉",
-   "biz": "5792502318",
-   "pos": "토스포스",
-   "content": "메뉴판 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "메뉴 요청 문자 발송"
-   ],
-   "rc": 2,
-   "lr": "1784608596.305079",
-   "rfx": 3,
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784607313602819"
   }
  ],
  "ocr": {
