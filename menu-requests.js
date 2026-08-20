@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 794,
- "updatedAt": "2026-08-20 15:30",
+ "version": 795,
+ "updatedAt": "2026-08-20 15:45",
  "days": 30,
  "items": [
   {
@@ -18,11 +18,27 @@ window.MENU_REQUESTS = {
    "special": "엑셀 파일 .xlsx 포멧입니다.",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BR9QK1WPM",
+     "from": "댓글",
+     "path": "menu-files/1787206743_251219-0.png",
+     "kind": "other",
+     "menu": []
+    }
+   ],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787206746.389849",
+   "replies": [
+    "수정 불가, 다운로드 불가 / 제발..! 제발 다시 보내거나 권한 좀 달라고 요청",
+    "그냥 메일로 받자요... 권한주는거 모르는사람이 10명중 10명임",
+    "그 메일로 달라고 사정사정 하는중....",
+    "자꾸 있어보래요;;; gpt한테 물어보고온다구ㅠㅠㅠ",
+    "뭘 잇어봐 메뉴나 내놔ㅠ",
+    ":smoking:"
+   ],
+   "rc": 7,
+   "lr": "1787207963.851619",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -45,8 +61,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1787206024.867779",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787206021907799"
   },
   {
@@ -69,8 +85,8 @@ window.MENU_REQUESTS = {
    "rc": 3,
    "lr": "1787207112.427019",
    "rfx": 3,
-   "status": "confirm",
-   "handler": "배선유",
+   "status": "wait",
+   "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787205434388809"
   },
   {
@@ -89,11 +105,11 @@ window.MENU_REQUESTS = {
    "replies": [
     "아직 메일x"
    ],
-   "rc": 2,
-   "lr": "1787207231.510019",
+   "rc": 3,
+   "lr": "1787208161.535289",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787205276051999"
   },
   {
@@ -33330,280 +33346,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784617367166589"
-  },
-  {
-   "ts": "1784615773.869209",
-   "date": "2026-07-21",
-   "time": "15:36",
-   "store": "수정반점",
-   "biz": "8801502863",
-   "pos": "토스포스",
-   "content": "사진으로보내드릴께요",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/1ZCGXAr_tvDpD60cUivs4ZgsrzHYhSUEZ/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "1ZCGXAr_tvDpD60cUivs4ZgsrzHYhSUEZ",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "식사",
-       "name": "짜장",
-       "price": 8000
-      },
-      {
-       "category": "식사",
-       "name": "매운짜장",
-       "price": 9000
-      },
-      {
-       "category": "식사",
-       "name": "볶음짜장",
-       "price": 11000
-      },
-      {
-       "category": "식사",
-       "name": "해물짬뽕",
-       "price": 13000
-      },
-      {
-       "category": "식사",
-       "name": "차돌짬뽕",
-       "price": 13000
-      },
-      {
-       "category": "식사",
-       "name": "능이짬뽕",
-       "price": 13000
-      },
-      {
-       "category": "식사",
-       "name": "비프라이스",
-       "price": 13000
-      },
-      {
-       "category": "식사",
-       "name": "잡채밥",
-       "price": 13000
-      },
-      {
-       "category": "식사",
-       "name": "마파두부밥",
-       "price": 11000
-      },
-      {
-       "category": "식사",
-       "name": "새우볶음밥",
-       "price": 11000
-      },
-      {
-       "category": "식사",
-       "name": "XO게살볶음밥",
-       "price": 13000
-      },
-      {
-       "category": "여름 한정 메뉴",
-       "name": "냉탄탄면",
-       "price": 13000
-      },
-      {
-       "category": "여름 한정 메뉴",
-       "name": "콩국수",
-       "price": 11000
-      },
-      {
-       "category": "요리·디너",
-       "name": "전가복",
-       "price": 53000
-      },
-      {
-       "category": "요리·디너",
-       "name": "동파육",
-       "price": 38000
-      },
-      {
-       "category": "요리·디너",
-       "name": "어향가지",
-       "price": 38000
-      },
-      {
-       "category": "요리·디너",
-       "name": "어향동고",
-       "price": 38000
-      },
-      {
-       "category": "요리·디너",
-       "name": "계살유산슬",
-       "price": 32000
-      },
-      {
-       "category": "요리·디너",
-       "name": "팔보채",
-       "price": 32000
-      },
-      {
-       "category": "요리·디너",
-       "name": "오향장육",
-       "price": 32000
-      },
-      {
-       "category": "요리·디너",
-       "name": "양장피",
-       "price": 32000
-      },
-      {
-       "category": "요리·디너",
-       "name": "고추잡채 + 꽃빵(4pcs)",
-       "price": 32000
-      },
-      {
-       "category": "요리·디너",
-       "name": "해물누룽지탕",
-       "price": 32000
-      },
-      {
-       "category": "요리·디너",
-       "name": "칠롱탕",
-       "price": 28000
-      },
-      {
-       "category": "요리·디너",
-       "name": "마파두부",
-       "price": 24000
-      },
-      {
-       "category": "튀김요리",
-       "name": "유린기",
-       "price": 26000
-      },
-      {
-       "category": "튀김요리",
-       "name": "깐풍기",
-       "price": 26000
-      },
-      {
-       "category": "튀김요리",
-       "name": "칠리새우 6pcs",
-       "price": 19000
-      },
-      {
-       "category": "튀김요리",
-       "name": "칠리새우 10pcs",
-       "price": 24000
-      },
-      {
-       "category": "튀김요리",
-       "name": "크림새우 6pcs",
-       "price": 19000
-      },
-      {
-       "category": "튀김요리",
-       "name": "크림새우 10pcs",
-       "price": 24000
-      },
-      {
-       "category": "튀김요리",
-       "name": "깐풍새우 6pcs",
-       "price": 19000
-      },
-      {
-       "category": "튀김요리",
-       "name": "깐풍새우 10pcs",
-       "price": 24000
-      },
-      {
-       "category": "튀김요리",
-       "name": "탕수육(중)",
-       "price": 24000
-      },
-      {
-       "category": "튀김요리",
-       "name": "탕수육(소)",
-       "price": 15000
-      },
-      {
-       "category": "고량주",
-       "name": "연태고량주 (소)",
-       "price": 15000
-      },
-      {
-       "category": "고량주",
-       "name": "연태고량주 (중)",
-       "price": 25000
-      },
-      {
-       "category": "고량주",
-       "name": "공부가주 (소)",
-       "price": 15000
-      },
-      {
-       "category": "고량주",
-       "name": "공부가주 (중)",
-       "price": 25000
-      },
-      {
-       "category": "칭따오",
-       "name": "칭따오",
-       "price": 9000
-      },
-      {
-       "category": "소주",
-       "name": "소주",
-       "price": 5000
-      },
-      {
-       "category": "맥주",
-       "name": "맥주",
-       "price": 5000
-      },
-      {
-       "category": "음료",
-       "name": "콜라",
-       "price": 2000
-      },
-      {
-       "category": "음료",
-       "name": "사이다",
-       "price": 2000
-      }
-     ]
-    }
-   ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784615778.463049",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784615773869209"
-  },
-  {
-   "ts": "1784615511.438259",
-   "date": "2026-07-21",
-   "time": "15:31",
-   "store": "쏘주 맥쭈",
-   "biz": "1921702310",
-   "pos": "오케이포스",
-   "content": "메뉴 삭제 및 추가 요청 / 오케이포스",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "탕찌개 카테고리 > 순살떡도리탕 *삭제*\n탕찌개 카테고리 > 김치수제비순살닭도리탕 27,900원 *추가*",
-    "혹시 수정 후 솔라피 밝송 부탁 드려도 될까요? :감사합니다꾸벅:"
-   ],
-   "rc": 4,
-   "lr": "1784615897.461339",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784615511438259"
   }
  ],
  "ocr": {
