@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 803,
- "updatedAt": "2026-08-20 17:45",
+ "version": 804,
+ "updatedAt": "2026-08-20 18:00",
  "days": 30,
  "items": [
   {
@@ -33751,54 +33751,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784625612247609"
-  },
-  {
-   "ts": "1784624260.253589",
-   "date": "2026-07-21",
-   "time": "17:57",
-   "store": "사랑빵 관악점",
-   "biz": "6291103070",
-   "pos": "",
-   "content": "바코드 메뉴 등록 요청드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "-엑셀 파일 업로드가 안돼서 해결 후 올리겠습니다 :루피눈물:",
-    "네ㅜㅜ 계속 암호화걸리는데 혹시 엑셀파일 전달 방법이 있을까요..?ㅜㅜ",
-    "파일 1은 가격 있고 파일2는 가격 없는 파일입니다! 두 파일 모두 등록 요청하셨습니다 :woman-bowing:"
-   ],
-   "rc": 9,
-   "lr": "1784628817.059039",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784624260253589"
-  },
-  {
-   "ts": "1784624019.849009",
-   "date": "2026-07-21",
-   "time": "17:53",
-   "store": "인딕슬로우",
-   "biz": "3090831798",
-   "pos": "토스포스",
-   "content": "토스포스 메뉴 등록 요청 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "메뉴 사진 별도로 추후 전송 예정입니다!"
-   ],
-   "rc": 3,
-   "lr": "1784624077.417929",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784624019849009"
   }
  ],
  "ocr": {
