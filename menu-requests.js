@@ -3,39 +3,10 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 772,
- "updatedAt": "2026-08-20 10:45",
+ "version": 773,
+ "updatedAt": "2026-08-20 11:00",
  "days": 30,
  "items": [
-  {
-   "ts": "1787190106.078849",
-   "date": "2026-08-20",
-   "time": "10:41",
-   "store": "그여행 법원점",
-   "biz": "1853901197",
-   "pos": "토스포스",
-   "content": "메뉴 등록 요청 부탁드립니다. / 프로그램 : 토스포스",
-   "special": "",
-   "drive": [],
-   "files": 1,
-   "att": [
-    {
-     "name": "그여행 쌍사점.xlsx",
-     "fid": "F0BREJP2542",
-     "from": "원글",
-     "path": "menu-files/1787190106_078849-0.xlsx",
-     "nj": 1
-    }
-   ],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787190109.588099",
-   "rfx": 3,
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787190106078849"
-  },
   {
    "ts": "1787188769.483049",
    "date": "2026-08-20",
