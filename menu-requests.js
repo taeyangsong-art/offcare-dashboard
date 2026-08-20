@@ -3,10 +3,197 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 777,
- "updatedAt": "2026-08-20 12:06",
+ "version": 778,
+ "updatedAt": "2026-08-20 12:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1787195384.777919",
+   "date": "2026-08-20",
+   "time": "12:09",
+   "store": "뚠뚠이네 매운등갈비집",
+   "biz": "8362702141",
+   "pos": "토스포스",
+   "content": "찜/탕.볶음류",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1DCi6C0ifbIQBoBv5MxEYGamC3d-5q_4p/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1DCi6C0ifbIQBoBv5MxEYGamC3d-5q_4p",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "매운 등갈비찜 1~2인",
+       "price": 18000
+      },
+      {
+       "category": "",
+       "name": "매운 등갈비찜 2~3인",
+       "price": 35000
+      },
+      {
+       "category": "",
+       "name": "매운 등갈비찜 3~4인",
+       "price": 49000
+      },
+      {
+       "category": "",
+       "name": "등갈비 김치찜 1~2인",
+       "price": 19000
+      },
+      {
+       "category": "",
+       "name": "등갈비 김치찜 2~3인",
+       "price": 36000
+      },
+      {
+       "category": "",
+       "name": "등갈비 김치찜 3~4인",
+       "price": 50000
+      },
+      {
+       "category": "",
+       "name": "맑은 우거지등뼈탕 1인분",
+       "price": 11000
+      },
+      {
+       "category": "",
+       "name": "가정식 제육볶음 1인(300g)",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "가정식 제육볶음 2~3인(600g)",
+       "price": 23000
+      },
+      {
+       "category": "",
+       "name": "가정식 제육볶음 3~4인(900g)",
+       "price": 32000
+      },
+      {
+       "category": "",
+       "name": "불맛 제육볶음 1인(300g)",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "불맛 제육볶음 2~3인(600g)",
+       "price": 23000
+      },
+      {
+       "category": "",
+       "name": "불맛 제육볶음 3~4인(900g)",
+       "price": 32000
+      },
+      {
+       "category": "",
+       "name": "오징어 볶음 1인(200g)",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "오징어 볶음 2~3인(400g)",
+       "price": 24000
+      },
+      {
+       "category": "",
+       "name": "오징어 볶음 3~4인(600g)",
+       "price": 33000
+      },
+      {
+       "category": "",
+       "name": "부추 오징어부침개",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "김치 오징어부침개",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "오징어 숙회",
+       "price": 14000
+      },
+      {
+       "category": "사이드 & 주류",
+       "name": "계란찜",
+       "price": 2000
+      },
+      {
+       "category": "사이드 & 주류",
+       "name": "주먹밥",
+       "price": 3000
+      },
+      {
+       "category": "사이드 & 주류",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "사이드 & 주류",
+       "name": "코카콜라",
+       "price": 2000
+      },
+      {
+       "category": "사이드 & 주류",
+       "name": "스프라이트",
+       "price": 2000
+      },
+      {
+       "category": "사이드 & 주류",
+       "name": "환 타",
+       "price": 2000
+      },
+      {
+       "category": "사이드 & 주류",
+       "name": "콜피스",
+       "price": 2000
+      },
+      {
+       "category": "사이드 & 주류",
+       "name": "참이슬",
+       "price": 3500
+      },
+      {
+       "category": "사이드 & 주류",
+       "name": "처음처럼",
+       "price": 3500
+      },
+      {
+       "category": "사이드 & 주류",
+       "name": "새 로",
+       "price": 3500
+      },
+      {
+       "category": "사이드 & 주류",
+       "name": "카스",
+       "price": 4000
+      },
+      {
+       "category": "사이드 & 주류",
+       "name": "테 라",
+       "price": 4000
+      }
+     ]
+    }
+   ],
+   "replies": [
+    "옵션상 금액 변경 필요\n현재 옵션에 등록된 금액으로 결제 되면 좋겠다고 하심\n특이사항 발생시 유선 안내 부탁드립니다."
+   ],
+   "rc": 2,
+   "lr": "1787195456.465049",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787195384777919"
+  },
   {
    "ts": "1787193875.619399",
    "date": "2026-08-20",
