@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 818,
- "updatedAt": "2026-08-21 10:01",
+ "version": 819,
+ "updatedAt": "2026-08-21 10:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1787274137.482859",
+   "date": "2026-08-21",
+   "time": "10:02",
+   "store": "더 멀리",
+   "biz": "3976300914",
+   "pos": "토스포스",
+   "content": "책 추가 부탁드립니다. \n\n절망하는 이들을 위한 민주주의\t23,000\n이지페이지: 사람은 무엇으로 사는가(큰글자책) 17,000\n어휘력 높이고 싶은 어른을 위한 필사책(반양장)\t22,000\n말과 글의 지성을 깨우는 필사 노트\t\t22,000\n하루 한 줄 마음 챙김 필사책\t\t14,800\n제사를 폐함: 삼대 여자들의 종가 혁신 연대기\t15,800\n천로역정\t\t20,000\n안녕, 피터팬\t\t22,000\n남성과 함께하는 페미니즘\t\t17,000\n차별을 훔치는 남자들\t\t19,000\nThe Odyssey: The Complete Screenplay(Paperback)\t\t26,000\n내 생애 첫 번째 철학 수업\t\t18,000\n내 점수는 별 다섯 개\t\t14,000\n하지 않아도 되는 숙제\t\t14,000\n다정한 어른이 된다는 것\t\t17,000\n외톨이 역을 떠나며\t\t30,000\n자몽살구클럽\t12,000\n뉴스, 믿어도 될까?(비행청소년 18)\t\t15,000\n기후로 보는 한국사\t\t19,800\n책임을 묻다\t\t22,000\nDK 지도로 보는 제2차 세계대전(양장본 Hardcover)\t53,000\n기후위기는 어떻게 내 몸을 병들게 하는가\t\t23,000",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "등록 완료"
+   ],
+   "rc": 2,
+   "lr": "1787274769.560329",
+   "rfx": 3,
+   "status": "done",
+   "handler": "심성현",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787274137482859"
+  },
   {
    "ts": "1787273874.394869",
    "date": "2026-08-21",
@@ -20,7 +43,57 @@ window.MENU_REQUESTS = {
     "https://drive.google.com/file/d/157qvyFqY3L2qnHkaPwtLTdQTTMEB-l_l/view?usp=drivesdk"
    ],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BRL5YP953",
+     "from": "댓글",
+     "path": "menu-files/1787273874_394869-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "무침",
+       "name": "야채",
+       "price": 1500
+      },
+      {
+       "category": "무침",
+       "name": "소고기",
+       "price": 3000
+      },
+      {
+       "category": "무침",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "구이",
+       "name": "소세지",
+       "price": 4000
+      },
+      {
+       "category": "주류및음료",
+       "name": "소주",
+       "price": 5000
+      },
+      {
+       "category": "주류및음료",
+       "name": "맥주",
+       "price": 5000
+      },
+      {
+       "category": "주류및음료",
+       "name": "음료수",
+       "price": 2000
+      },
+      {
+       "category": "주류및음료",
+       "name": "중국음료수",
+       "price": 3000
+      }
+     ]
+    }
+   ],
    "datt": [
     {
      "id": "157qvyFqY3L2qnHkaPwtLTdQTTMEB-l_l",
@@ -69,12 +142,14 @@ window.MENU_REQUESTS = {
      ]
     }
    ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787273880.439079",
+   "replies": [
+    "등록 완료"
+   ],
+   "rc": 3,
+   "lr": "1787274399.507639",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "심성현",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787273874394869"
   },
   {
@@ -90,9 +165,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787273803.803189",
+   "replies": [
+    "아메리카노아이스 4000\n아메리카노아이스 3500??  확인 위해 연락했으나 부재중"
+   ],
+   "rc": 2,
+   "lr": "1787274196.194449",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
@@ -34510,27 +34587,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784684009650729"
-  },
-  {
-   "ts": "1784682863.328969",
-   "date": "2026-07-22",
-   "time": "10:14",
-   "store": "케이핀초반",
-   "biz": "2660303234",
-   "pos": "기타",
-   "content": "안주류 카테고리에 깐귤화채 15000원 추가부탁드립니다",
-   "special": "바로 부탁드립니다",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784682868.985729",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784682863328969"
   }
  ],
  "ocr": {
