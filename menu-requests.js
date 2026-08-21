@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 842,
- "updatedAt": "2026-08-21 16:23",
+ "version": 843,
+ "updatedAt": "2026-08-21 17:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1787298677.640629",
+   "date": "2026-08-21",
+   "time": "16:51",
+   "store": "원일국어과학학원",
+   "biz": "5849901966",
+   "pos": "",
+   "content": "메뉴 등록 요청 드립니다!",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "중등국어 240,000원\n고등국어 280,000원\n중등과학 200,000원\n고등과학 240,000원"
+   ],
+   "rc": 3,
+   "lr": "1787299117.690949",
+   "rfx": 3,
+   "status": "done",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787298677640629"
+  },
   {
    "ts": "1787296657.855049",
    "date": "2026-08-21",
@@ -35105,51 +35128,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784710940096429"
-  },
-  {
-   "ts": "1784707102.861099",
-   "date": "2026-07-22",
-   "time": "16:58",
-   "store": "주식회사 물노리베이비",
-   "biz": "5708700965",
-   "pos": "오케이포스",
-   "content": "오케이포스 / 금액 변경 요청\n\n물놀이 채소 장난감 25000 > 29000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1784715050.288339",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784707102861099"
-  },
-  {
-   "ts": "1784706871.054809",
-   "date": "2026-07-22",
-   "time": "16:54",
-   "store": "스무치 창원명서점",
-   "biz": "1625900586",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "님 부탁좀 할게용\n\n이메일로 온건데 요거 부탁좀!",
-    "배민에서 캡쳐뜬 사진임.."
-   ],
-   "rc": 4,
-   "lr": "1784706910.465889",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784706871054809"
   }
  ],
  "ocr": {
