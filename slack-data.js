@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4367,
+  "version": 4368,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -123003,12 +123003,17 @@ window.SLACK_DATA = {
     },
     "2026-08-21": {
       "counts": {
-        "onboarding": {
-          "심성현": 1
+        "extern": {
+          "김동욱": 1
         },
         "as": {
-          "배선유": 1,
+          "심성현": 1,
+          "배선유": 2,
           "김동욱": 1
+        },
+        "onboarding": {
+          "심성현": 1,
+          "배선유": 1
         },
         "menu": {
           "배선유": 1
@@ -123016,6 +123021,39 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:29",
+          "store": "그여행 이동점",
+          "biz": "7110902187",
+          "cat": "extern",
+          "emp": "김동욱",
+          "req": "외주",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
+        {
+          "time": "09:17",
+          "store": "더담",
+          "biz": "5371402870",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포프+유프(포스기) / 토스포스 설치까지 완료했는데, 프린터 출력에 실패하여 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "09:16",
+          "store": "더팬트리(THE PANTRY)",
+          "biz": "4050197594",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "주방,홀에 각각 프린터기 정상적으로 연결 되어있으나, 출력이 되지 않는다고하셔서 확인 및 재온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "09:00",
           "store": "네일은샵",
@@ -123026,6 +123064,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "온보딩 사용 방법 안내 완료"
+        },
+        {
+          "time": "09:00",
+          "store": "토스팃 (toasted)",
+          "biz": "1020695713",
+          "cat": "onboarding",
+          "emp": "배선유",
+          "req": "포프(휴대폰) 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "1차부재 / 자체 온보딩 완료 /"
         },
         {
           "time": "09:00",
@@ -123062,11 +123111,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 4,
-        "offline": 0,
+        "online": 7,
+        "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:00"
+      "updatedAt": "09:30"
     }
   },
   "resp": {
@@ -123102,6 +123151,10 @@ window.SLACK_DATA = {
       "1787236308.540089": {
         "post": "1787236308.540089",
         "lastSeen": 1787241309.016
+      },
+      "1787272200.695709": {
+        "post": "1787272200.695709",
+        "lastSeen": 1787272233.07
       }
     },
     "days": {
@@ -151242,13 +151295,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-21 09:15",
+    "at": "2026-08-21 09:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3651,
+    "rows": 3652,
     "named": 340,
     "unknownName": 0,
     "beforeStart": 0,

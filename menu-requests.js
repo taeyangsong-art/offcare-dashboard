@@ -3,10 +3,346 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 815,
- "updatedAt": "2026-08-21 09:15",
+ "version": 816,
+ "updatedAt": "2026-08-21 09:31",
  "days": 30,
  "items": [
+  {
+   "ts": "1787271840.039809",
+   "date": "2026-08-21",
+   "time": "09:24",
+   "store": "봄이네횟집",
+   "biz": "5713801407",
+   "pos": "",
+   "content": "메뉴등록요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BR8DYRQSK",
+     "from": "댓글",
+     "path": "menu-files/1787271840_039809-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "모둠회",
+       "name": "모둠회 1인",
+       "price": 30000
+      },
+      {
+       "category": "모둠회",
+       "name": "모둠회 소",
+       "price": 40000
+      },
+      {
+       "category": "모둠회",
+       "name": "모둠회 중",
+       "price": 55000
+      },
+      {
+       "category": "모둠회",
+       "name": "모둠회 대",
+       "price": 75000
+      },
+      {
+       "category": "스페셜 모둠회",
+       "name": "스페셜 모둠회 1인",
+       "price": 40000
+      },
+      {
+       "category": "스페셜 모둠회",
+       "name": "스페셜 모둠회 소",
+       "price": 60000
+      },
+      {
+       "category": "스페셜 모둠회",
+       "name": "스페셜 모둠회 중",
+       "price": 80000
+      },
+      {
+       "category": "스페셜 모둠회",
+       "name": "스페셜 모둠회 대",
+       "price": 100000
+      },
+      {
+       "category": "단품회",
+       "name": "광어 소",
+       "price": 40000
+      },
+      {
+       "category": "단품회",
+       "name": "광어 중",
+       "price": 60000
+      },
+      {
+       "category": "단품회",
+       "name": "광어 대",
+       "price": 80000
+      },
+      {
+       "category": "단품회",
+       "name": "연어 소",
+       "price": 40000
+      },
+      {
+       "category": "단품회",
+       "name": "연어 중",
+       "price": 60000
+      },
+      {
+       "category": "단품회",
+       "name": "연어 대",
+       "price": 80000
+      },
+      {
+       "category": "단품회",
+       "name": "밀치 소",
+       "price": 40000
+      },
+      {
+       "category": "단품회",
+       "name": "밀치 중",
+       "price": 60000
+      },
+      {
+       "category": "단품회",
+       "name": "밀치 대",
+       "price": 80000
+      },
+      {
+       "category": "단품회",
+       "name": "전어 소",
+       "price": 40000
+      },
+      {
+       "category": "단품회",
+       "name": "전어 중",
+       "price": 60000
+      },
+      {
+       "category": "단품회",
+       "name": "전어 대",
+       "price": 80000
+      },
+      {
+       "category": "단품회",
+       "name": "우럭 소",
+       "price": 45000
+      },
+      {
+       "category": "단품회",
+       "name": "우럭 중",
+       "price": 65000
+      },
+      {
+       "category": "단품회",
+       "name": "우럭 대",
+       "price": 85000
+      },
+      {
+       "category": "단품회",
+       "name": "도다리 소",
+       "price": 45000
+      },
+      {
+       "category": "단품회",
+       "name": "도다리 중",
+       "price": 65000
+      },
+      {
+       "category": "단품회",
+       "name": "도다리 대",
+       "price": 85000
+      },
+      {
+       "category": "단품회",
+       "name": "참돔 소",
+       "price": 50000
+      },
+      {
+       "category": "단품회",
+       "name": "참돔 중",
+       "price": 70000
+      },
+      {
+       "category": "단품회",
+       "name": "참돔 대",
+       "price": 90000
+      },
+      {
+       "category": "단품회",
+       "name": "농어 소",
+       "price": 50000
+      },
+      {
+       "category": "단품회",
+       "name": "농어 중",
+       "price": 70000
+      },
+      {
+       "category": "단품회",
+       "name": "농어 대",
+       "price": 90000
+      },
+      {
+       "category": "단품회",
+       "name": "돌돔 소",
+       "price": 65000
+      },
+      {
+       "category": "단품회",
+       "name": "돌돔 중",
+       "price": 85000
+      },
+      {
+       "category": "단품회",
+       "name": "돌돔 대",
+       "price": 110000
+      },
+      {
+       "category": "단품회",
+       "name": "시마아지 소",
+       "price": 65000
+      },
+      {
+       "category": "단품회",
+       "name": "시마아지 중",
+       "price": 85000
+      },
+      {
+       "category": "단품회",
+       "name": "시마아지 대",
+       "price": 110000
+      },
+      {
+       "category": "단품회",
+       "name": "벤자리 소",
+       "price": 65000
+      },
+      {
+       "category": "단품회",
+       "name": "벤자리 중",
+       "price": 85000
+      },
+      {
+       "category": "단품회",
+       "name": "벤자리 대",
+       "price": 110000
+      },
+      {
+       "category": "단품회",
+       "name": "대방어 소",
+       "price": 65000
+      },
+      {
+       "category": "단품회",
+       "name": "대방어 중",
+       "price": 90000
+      },
+      {
+       "category": "단품회",
+       "name": "대방어 대",
+       "price": 120000
+      },
+      {
+       "category": "식사 메뉴",
+       "name": "모둠초밥 8개",
+       "price": 15900
+      },
+      {
+       "category": "식사 메뉴",
+       "name": "연어초밥 8개",
+       "price": 15900
+      },
+      {
+       "category": "식사 메뉴",
+       "name": "광어초밥 8개",
+       "price": 15900
+      },
+      {
+       "category": "식사 메뉴",
+       "name": "광연초밥 8개",
+       "price": 15900
+      },
+      {
+       "category": "식사 메뉴",
+       "name": "회덮밥",
+       "price": 13000
+      },
+      {
+       "category": "식사 메뉴",
+       "name": "시그니처 물회 (면X, 밥O)",
+       "price": 15000
+      },
+      {
+       "category": "식사 메뉴",
+       "name": "도다리 물회 (면X, 밥O)",
+       "price": 18000
+      },
+      {
+       "category": "사이드 메뉴 / 추가 메뉴",
+       "name": "뼈매운탕",
+       "price": 5000
+      },
+      {
+       "category": "사이드 메뉴 / 추가 메뉴",
+       "name": "조개미역국",
+       "price": 4000
+      },
+      {
+       "category": "사이드 메뉴 / 추가 메뉴",
+       "name": "새우튀김 5개",
+       "price": 10000
+      },
+      {
+       "category": "사이드 메뉴 / 추가 메뉴",
+       "name": "초밥알 10개",
+       "price": 2000
+      },
+      {
+       "category": "사이드 메뉴 / 추가 메뉴",
+       "name": "생선구이",
+       "price": 3500
+      },
+      {
+       "category": "사이드 메뉴 / 추가 메뉴",
+       "name": "계란찜",
+       "price": 3000
+      },
+      {
+       "category": "사이드 메뉴 / 추가 메뉴",
+       "name": "회무침야채 추가",
+       "price": 3000
+      },
+      {
+       "category": "사이드 메뉴 / 추가 메뉴",
+       "name": "초장 1개",
+       "price": 1000
+      },
+      {
+       "category": "사이드 메뉴 / 추가 메뉴",
+       "name": "간장 1개",
+       "price": 500
+      },
+      {
+       "category": "사이드 메뉴 / 추가 메뉴",
+       "name": "쌈장 1개",
+       "price": 500
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1787271849.753019",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787271840039809"
+  },
   {
    "ts": "1787270289.047959",
    "date": "2026-08-21",
