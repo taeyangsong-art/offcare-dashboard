@@ -3,10 +3,39 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 830,
- "updatedAt": "2026-08-21 13:45",
+ "version": 831,
+ "updatedAt": "2026-08-21 14:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1787287923.405579",
+   "date": "2026-08-21",
+   "time": "13:52",
+   "store": "동래 꿀팥빵",
+   "biz": "1552701970",
+   "pos": "",
+   "content": "메뉴등록요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "1787287908382.heif",
+     "fid": "F0BRJQN07NX",
+     "from": "댓글",
+     "path": "menu-files/1787287923_405579-0.heif",
+     "nj": 1
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 3,
+   "lr": "1787288359.854179",
+   "rfx": 3,
+   "status": "done",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787287923405579"
+  },
   {
    "ts": "1787283661.653639",
    "date": "2026-08-21",
