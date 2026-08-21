@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4368,
+  "version": 4369,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -123004,23 +123004,47 @@ window.SLACK_DATA = {
     "2026-08-21": {
       "counts": {
         "extern": {
-          "김동욱": 1
+          "김동욱": 2
+        },
+        "onboarding": {
+          "배선유": 2,
+          "고경림": 1,
+          "심성현": 1
         },
         "as": {
           "심성현": 1,
           "배선유": 2,
           "김동욱": 1
         },
-        "onboarding": {
-          "심성현": 1,
-          "배선유": 1
-        },
         "menu": {
+          "김규빈": 1,
           "배선유": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:30",
+          "store": "별난맛집",
+          "biz": "1182002461",
+          "cat": "extern",
+          "emp": "김동욱",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "09:30",
+          "store": "진성 요양 센터",
+          "biz": "2879000909",
+          "cat": "onboarding",
+          "emp": "배선유",
+          "req": "포프(휴) 온보딩 도움 요청드립니다. (9시 30분경)",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료"
+        },
         {
           "time": "09:29",
           "store": "그여행 이동점",
@@ -123031,6 +123055,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": ""
+        },
+        {
+          "time": "09:24",
+          "store": "봄이네횟집",
+          "biz": "5713801407",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "메뉴등록요청",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / / 완료"
         },
         {
           "time": "09:17",
@@ -123052,7 +123087,18 @@ window.SLACK_DATA = {
           "req": "주방,홀에 각각 프린터기 정상적으로 연결 되어있으나, 출력이 되지 않는다고하셔서 확인 및 재온보딩 요청드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "홀 프린터는 해결 완료 / 공유기도 침수되어 교체하심 / ts400w 세팅 위해 ab케이블과 노트북 준비 안내 / 케이블 찾아봐야한다고 하셔서 구매링크 발송"
+        },
+        {
+          "time": "09:00",
+          "store": "오리진 능내",
+          "biz": "1890303806",
+          "cat": "onboarding",
+          "emp": "고경림",
+          "req": "노트북 + 프론트 온보딩 .",
+          "hw": "",
+          "intake": "online",
+          "note": "미개봉상태 전원 연결 및 wifi 연결후 연락요청 / 노트북 + 프론트 온보딩 및 사용법 안내완료"
         },
         {
           "time": "09:00",
@@ -123111,7 +123157,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 7,
+        "online": 11,
         "offline": 1,
         "unknown": 0
       },
@@ -123151,10 +123197,6 @@ window.SLACK_DATA = {
       "1787236308.540089": {
         "post": "1787236308.540089",
         "lastSeen": 1787241309.016
-      },
-      "1787272200.695709": {
-        "post": "1787272200.695709",
-        "lastSeen": 1787272233.07
       }
     },
     "days": {
@@ -151246,8 +151288,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-21": {
-        "cnt": 5,
-        "sumMin": 39.52633026043574,
+        "cnt": 6,
+        "sumMin": 44.322735110918686,
         "over": 0,
         "items": [
           {
@@ -151289,13 +151331,21 @@ window.SLACK_DATA = {
             "biz": "5591202783",
             "who": "김동욱",
             "cat": "as"
+          },
+          {
+            "hm": "09:30",
+            "min": 4.8,
+            "store": "진성 요양 센터",
+            "biz": "2879000909",
+            "who": "배선유",
+            "cat": "onboarding"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-21 09:30",
+    "at": "2026-08-21 09:39",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
