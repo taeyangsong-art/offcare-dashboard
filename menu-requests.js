@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 824,
- "updatedAt": "2026-08-21 11:30",
+ "version": 825,
+ "updatedAt": "2026-08-21 11:46",
  "days": 30,
  "items": [
   {
@@ -25,14 +25,254 @@ window.MENU_REQUESTS = {
      "from": "원글",
      "path": "menu-files/1787278980_607179-0.zip",
      "nj": 1
+    },
+    {
+     "name": "Resized_Red Beige Modern Minimalist Food",
+     "fid": "F0BRLJGPXM3",
+     "from": "댓글",
+     "path": "menu-files/1787278980_607179-1.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "BRUNCH MENU",
+       "name": "크로와상 샌드위치",
+       "price": 7000
+      },
+      {
+       "category": "BRUNCH MENU",
+       "name": "치아바타 샌드위치",
+       "price": 7500
+      },
+      {
+       "category": "BRUNCH MENU",
+       "name": "아스파라거스 감자스프",
+       "price": 4000
+      },
+      {
+       "category": "COFFEE",
+       "name": "에스프레소",
+       "price": 4500
+      },
+      {
+       "category": "COFFEE",
+       "name": "아메리카노",
+       "price": 4500
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페 라떼",
+       "price": 5800
+      },
+      {
+       "category": "COFFEE",
+       "name": "바닐라 라떼",
+       "price": 6000
+      },
+      {
+       "category": "COFFEE",
+       "name": "스위트 라떼",
+       "price": 6000
+      },
+      {
+       "category": "COFFEE",
+       "name": "레이지 라떼",
+       "price": 6300
+      },
+      {
+       "category": "COFFEE",
+       "name": "초콜렛 라떼",
+       "price": 6500
+      },
+      {
+       "category": "COFFEE",
+       "name": "샤케라또",
+       "price": 5800
+      },
+      {
+       "category": "COFFEE",
+       "name": "콜드브루",
+       "price": 6500
+      },
+      {
+       "category": "COFFEE",
+       "name": "더치크림커피",
+       "price": 7000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "초코 우유",
+       "price": 6000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "말차우유",
+       "price": 6000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "밀크티",
+       "price": 6000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "자몽차",
+       "price": 6000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "복숭아 아이스티",
+       "price": 6000
+      }
+     ]
+    },
+    {
+     "name": "Resized_Red Beige Modern Minimalist Food",
+     "fid": "F0BRNFQP938",
+     "from": "댓글",
+     "path": "menu-files/1787278980_607179-2.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "FRESH JUICE",
+       "name": "당근주스 500ML",
+       "price": 9500
+      },
+      {
+       "category": "FRESH JUICE",
+       "name": "비트주스 500ML",
+       "price": 9500
+      },
+      {
+       "category": "FRESH JUICE",
+       "name": "사과주스 500ML",
+       "price": 9500
+      },
+      {
+       "category": "ADE & SMOOTHIE",
+       "name": "레몬에이드",
+       "price": 6000
+      },
+      {
+       "category": "ADE & SMOOTHIE",
+       "name": "자몽에이드",
+       "price": 6000
+      },
+      {
+       "category": "ADE & SMOOTHIE",
+       "name": "패션후르츠 에이드",
+       "price": 6000
+      },
+      {
+       "category": "ADE & SMOOTHIE",
+       "name": "히비스커스 에이드",
+       "price": 6000
+      },
+      {
+       "category": "ADE & SMOOTHIE",
+       "name": "열대과일 에이드",
+       "price": 6000
+      },
+      {
+       "category": "ADE & SMOOTHIE",
+       "name": "요거트스무디",
+       "price": 6300
+      },
+      {
+       "category": "ADE & SMOOTHIE",
+       "name": "블루베리 스무디",
+       "price": 6500
+      },
+      {
+       "category": "ADE & SMOOTHIE",
+       "name": "팥밀크쉐이크",
+       "price": 6700
+      },
+      {
+       "category": "TEA",
+       "name": "에로스",
+       "price": 6000
+      },
+      {
+       "category": "TEA",
+       "name": "웨딩임페리얼",
+       "price": 6000
+      },
+      {
+       "category": "TEA",
+       "name": "마르코폴로",
+       "price": 6000
+      },
+      {
+       "category": "TEA",
+       "name": "루이보스밸런스",
+       "price": 6000
+      },
+      {
+       "category": "TEA",
+       "name": "바이탈그레이프프룻",
+       "price": 6000
+      },
+      {
+       "category": "TEA",
+       "name": "카모마일 진저",
+       "price": 6000
+      },
+      {
+       "category": "TEA",
+       "name": "레몬 페퍼민트",
+       "price": 6000
+      },
+      {
+       "category": "WITH BREAD",
+       "name": "카라멜 스프레드",
+       "price": 1000
+      },
+      {
+       "category": "WITH BREAD",
+       "name": "우유 생크림",
+       "price": 1000
+      },
+      {
+       "category": "WITH BREAD",
+       "name": "저당통팥앙금",
+       "price": 1000
+      },
+      {
+       "category": "WITH BREAD",
+       "name": "크림치즈스프레드",
+       "price": 2000
+      },
+      {
+       "category": "WITH BREAD",
+       "name": "블루베리크림치즈",
+       "price": 2500
+      },
+      {
+       "category": "WITH BREAD",
+       "name": "바질크림치즈",
+       "price": 2500
+      },
+      {
+       "category": "WITH BREAD",
+       "name": "쪽파베이컨크림치즈",
+       "price": 2500
+      },
+      {
+       "category": "WITH BREAD",
+       "name": "어린이 우유",
+       "price": 1500
+      }
+     ]
     }
    ],
    "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1787279424.154849",
+   "replies": [
+    "규빈님~ 메뉴판도 보내드립니다!"
+   ],
+   "rc": 4,
+   "lr": "1787280205.531759",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787278980607179"
   },
@@ -33746,324 +33986,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784694526574119"
-  },
-  {
-   "ts": "1784688309.485099",
-   "date": "2026-07-22",
-   "time": "11:45",
-   "store": "형과아우 누룽지삼계탕(다대포점)",
-   "biz": "4140524550",
-   "pos": "오케이포스",
-   "content": "청하 6000원 \n시원 5000원\n인삼주 3000원 변경",
-   "special": "사진은 가지고 계신 파일로 추가 해주세요",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    ":telephone_receiver: 완료"
-   ],
-   "rc": 2,
-   "lr": "1784689476.610269",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784688309485099"
-  },
-  {
-   "ts": "1784687793.155599",
-   "date": "2026-07-22",
-   "time": "11:36",
-   "store": "똑독",
-   "biz": "4603601781",
-   "pos": "토스포스",
-   "content": "무슨말인지모르것어요",
-   "special": "이미지 파일 위아래 검정색 나오나요? 나오면 잘라주세요",
-   "drive": [
-    "https://drive.google.com/file/d/16-b5_-UfPtZNFcvmTy8FQ97ZAgd8Yg9i/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "16-b5_-UfPtZNFcvmTy8FQ97ZAgd8Yg9i",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "소형견(말티즈,시츄,요크셔,토이푸들,치와와 등)",
-       "name": "4kg 미만 목욕+위생",
-       "price": 30000
-      },
-      {
-       "category": "소형견(말티즈,시츄,요크셔,토이푸들,치와와 등)",
-       "name": "4kg 미만 클리핑",
-       "price": 40000
-      },
-      {
-       "category": "소형견(말티즈,시츄,요크셔,토이푸들,치와와 등)",
-       "name": "4kg 미만 스포팅",
-       "price": 70000
-      },
-      {
-       "category": "소형견(말티즈,시츄,요크셔,토이푸들,치와와 등)",
-       "name": "4kg 미만 전체가위컷",
-       "price": 80000
-      },
-      {
-       "category": "소형견(말티즈,시츄,요크셔,토이푸들,치와와 등)",
-       "name": "6kg 미만 목욕+위생",
-       "price": 35000
-      },
-      {
-       "category": "소형견(말티즈,시츄,요크셔,토이푸들,치와와 등)",
-       "name": "6kg 미만 클리핑",
-       "price": 45000
-      },
-      {
-       "category": "소형견(말티즈,시츄,요크셔,토이푸들,치와와 등)",
-       "name": "6kg 미만 스포팅",
-       "price": 75000
-      },
-      {
-       "category": "소형견(말티즈,시츄,요크셔,토이푸들,치와와 등)",
-       "name": "6kg 미만 전체가위컷",
-       "price": 85000
-      },
-      {
-       "category": "소형견(말티즈,시츄,요크셔,토이푸들,치와와 등)",
-       "name": "8kg 미만 목욕+위생",
-       "price": 40000
-      },
-      {
-       "category": "소형견(말티즈,시츄,요크셔,토이푸들,치와와 등)",
-       "name": "8kg 미만 클리핑",
-       "price": 50000
-      },
-      {
-       "category": "소형견(말티즈,시츄,요크셔,토이푸들,치와와 등)",
-       "name": "8kg 미만 스포팅",
-       "price": 80000
-      },
-      {
-       "category": "소형견(말티즈,시츄,요크셔,토이푸들,치와와 등)",
-       "name": "8kg 미만 전체가위컷",
-       "price": 90000
-      },
-      {
-       "category": "중형견&이중모(푸들,말티푸,포메,웰시,스피츠,슈나우저,",
-       "name": "4kg 미만 목욕+위생",
-       "price": 35000
-      },
-      {
-       "category": "중형견&이중모(푸들,말티푸,포메,웰시,스피츠,슈나우저,",
-       "name": "4kg 미만 클리핑",
-       "price": 45000
-      },
-      {
-       "category": "중형견&이중모(푸들,말티푸,포메,웰시,스피츠,슈나우저,",
-       "name": "4kg 미만 스포팅",
-       "price": 75000
-      },
-      {
-       "category": "중형견&이중모(푸들,말티푸,포메,웰시,스피츠,슈나우저,",
-       "name": "4kg 미만 전체가위컷",
-       "price": 85000
-      },
-      {
-       "category": "중형견&이중모(푸들,말티푸,포메,웰시,스피츠,슈나우저,",
-       "name": "6kg 미만 목욕+위생",
-       "price": 40000
-      },
-      {
-       "category": "중형견&이중모(푸들,말티푸,포메,웰시,스피츠,슈나우저,",
-       "name": "6kg 미만 클리핑",
-       "price": 50000
-      },
-      {
-       "category": "중형견&이중모(푸들,말티푸,포메,웰시,스피츠,슈나우저,",
-       "name": "6kg 미만 스포팅",
-       "price": 85000
-      },
-      {
-       "category": "중형견&이중모(푸들,말티푸,포메,웰시,스피츠,슈나우저,",
-       "name": "6kg 미만 전체가위컷",
-       "price": 95000
-      },
-      {
-       "category": "중형견&이중모(푸들,말티푸,포메,웰시,스피츠,슈나우저,",
-       "name": "8kg 미만 목욕+위생",
-       "price": 45000
-      },
-      {
-       "category": "중형견&이중모(푸들,말티푸,포메,웰시,스피츠,슈나우저,",
-       "name": "8kg 미만 클리핑",
-       "price": 55000
-      },
-      {
-       "category": "중형견&이중모(푸들,말티푸,포메,웰시,스피츠,슈나우저,",
-       "name": "8kg 미만 스포팅",
-       "price": 95000
-      },
-      {
-       "category": "중형견&이중모(푸들,말티푸,포메,웰시,스피츠,슈나우저,",
-       "name": "8kg 미만 전체가위컷",
-       "price": 105000
-      },
-      {
-       "category": "중형견&이중모(푸들,말티푸,포메,웰시,스피츠,슈나우저,",
-       "name": "10kg 미만 목욕+위생",
-       "price": 50000
-      },
-      {
-       "category": "중형견&이중모(푸들,말티푸,포메,웰시,스피츠,슈나우저,",
-       "name": "10kg 미만 클리핑",
-       "price": 60000
-      },
-      {
-       "category": "중형견&이중모(푸들,말티푸,포메,웰시,스피츠,슈나우저,",
-       "name": "10kg 미만 스포팅",
-       "price": 105000
-      },
-      {
-       "category": "중형견&이중모(푸들,말티푸,포메,웰시,스피츠,슈나우저,",
-       "name": "10kg 미만 전체가위컷",
-       "price": 115000
-      },
-      {
-       "category": "특수견 (비숑,꼬똥,테리어,스파니엘 등)",
-       "name": "4kg 미만 목욕+위생",
-       "price": 45000
-      },
-      {
-       "category": "특수견 (비숑,꼬똥,테리어,스파니엘 등)",
-       "name": "4kg 미만 클리핑",
-       "price": 55000
-      },
-      {
-       "category": "특수견 (비숑,꼬똥,테리어,스파니엘 등)",
-       "name": "4kg 미만 스포팅",
-       "price": 85000
-      },
-      {
-       "category": "특수견 (비숑,꼬똥,테리어,스파니엘 등)",
-       "name": "4kg 미만 전체가위컷",
-       "price": 95000
-      },
-      {
-       "category": "특수견 (비숑,꼬똥,테리어,스파니엘 등)",
-       "name": "6kg 미만 목욕+위생",
-       "price": 50000
-      },
-      {
-       "category": "특수견 (비숑,꼬똥,테리어,스파니엘 등)",
-       "name": "6kg 미만 클리핑",
-       "price": 60000
-      },
-      {
-       "category": "특수견 (비숑,꼬똥,테리어,스파니엘 등)",
-       "name": "6kg 미만 스포팅",
-       "price": 95000
-      },
-      {
-       "category": "특수견 (비숑,꼬똥,테리어,스파니엘 등)",
-       "name": "6kg 미만 전체가위컷",
-       "price": 105000
-      },
-      {
-       "category": "특수견 (비숑,꼬똥,테리어,스파니엘 등)",
-       "name": "8kg 미만 목욕+위생",
-       "price": 55000
-      },
-      {
-       "category": "특수견 (비숑,꼬똥,테리어,스파니엘 등)",
-       "name": "8kg 미만 클리핑",
-       "price": 65000
-      },
-      {
-       "category": "특수견 (비숑,꼬똥,테리어,스파니엘 등)",
-       "name": "8kg 미만 스포팅",
-       "price": 105000
-      },
-      {
-       "category": "특수견 (비숑,꼬똥,테리어,스파니엘 등)",
-       "name": "8kg 미만 전체가위컷",
-       "price": 115000
-      },
-      {
-       "category": "특수견 (비숑,꼬똥,테리어,스파니엘 등)",
-       "name": "10kg 미만 목욕+위생",
-       "price": 60000
-      },
-      {
-       "category": "특수견 (비숑,꼬똥,테리어,스파니엘 등)",
-       "name": "10kg 미만 클리핑",
-       "price": 70000
-      },
-      {
-       "category": "특수견 (비숑,꼬똥,테리어,스파니엘 등)",
-       "name": "10kg 미만 스포팅",
-       "price": 115000
-      },
-      {
-       "category": "특수견 (비숑,꼬똥,테리어,스파니엘 등)",
-       "name": "10kg 미만 전체가위컷",
-       "price": 125000
-      },
-      {
-       "category": "얼굴컷",
-       "name": "클리핑",
-       "price": 5000
-      },
-      {
-       "category": "얼굴컷",
-       "name": "테디,알머리,곰돌이",
-       "price": 10000
-      },
-      {
-       "category": "얼굴컷",
-       "name": "하이바,양송이,귀툭튀",
-       "price": 15000
-      },
-      {
-       "category": "스파",
-       "name": "프리미엄 스파",
-       "price": 10000
-      },
-      {
-       "category": "스파",
-       "name": "머드팩",
-       "price": 20000
-      },
-      {
-       "category": "기타",
-       "name": "닭발",
-       "price": 5000
-      },
-      {
-       "category": "기타",
-       "name": "날 길이 추가 1cm",
-       "price": 10000
-      },
-      {
-       "category": "기타",
-       "name": "1.5cm",
-       "price": 15000
-      },
-      {
-       "category": "기타",
-       "name": "2cm",
-       "price": 20000
-      }
-     ]
-    }
-   ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784687797.614229",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784687793155599"
   }
  ],
  "ocr": {
