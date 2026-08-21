@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 839,
- "updatedAt": "2026-08-21 15:26",
+ "version": 840,
+ "updatedAt": "2026-08-21 15:45",
  "days": 30,
  "items": [
   {
@@ -525,8 +525,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1787291927.724289",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787291923828629"
   },
   {
@@ -540,17 +540,25 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "토스플레이스_매장_대시보드_상품등록_양식.xlsx",
+     "fid": "F0BRMP8C5PX",
+     "from": "댓글",
+     "path": "menu-files/1787291364_875179-0.xlsx",
+     "nj": 1
+    }
+   ],
    "datt": [],
    "replies": [
     ":루피눈물:  대시보드 상품키 배열 바꿔드리려고 했는데 품목이 너무 많아서  별도 요청드립니다..",
     "시간 오래 소요될 수 있음  사전 안내 완료"
    ],
-   "rc": 6,
-   "lr": "1787292170.299889",
+   "rc": 8,
+   "lr": "1787294542.028009",
    "rfx": 3,
-   "status": "confirm",
-   "handler": "배선유",
+   "status": "wait",
+   "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787291364875179"
   },
   {
@@ -570,8 +578,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1787290844.976969",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787290841977459"
   },
   {
@@ -34855,66 +34863,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784703682304849"
-  },
-  {
-   "ts": "1784702216.873929",
-   "date": "2026-07-22",
-   "time": "15:36",
-   "store": "어반치킨앤버거",
-   "biz": "2678503214",
-   "pos": "기타",
-   "content": "어반치킨앤버거 전 메뉴 등록",
-   "special": "엑셀 파일대로 등록하되 이해가 안되는 항목은(옵션) 배달해주세요 - 어반치킨앤버거에 등록된대로 부탁드립니다",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "옵션 어지럽네..",
-    "토플파도없음 ㅅㄱ",
-    "토플파 생성되는거 지켜봐야될듯요... 일단 저장해놓기",
-    "규빈님 안녕하세요 !\n여기 금일 토플파 생성되어 메뉴 등록 요청부탁드려도 될까요? :감사합니다꾸벅:",
-    "선유님 요기좀",
-    "아 여기 어제 슬쩍 열어봣죠",
-    "어질",
-    ":눈물햄스터:"
-   ],
-   "rc": 11,
-   "lr": "1784800347.048219",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784702216873929"
-  },
-  {
-   "ts": "1784702028.709639",
-   "date": "2026-07-22",
-   "time": "15:33",
-   "store": "뮌헨",
-   "biz": "5660702429",
-   "pos": "기타",
-   "content": "을지로노가리 가격인상 ->3,000원\n황태 노가리 가격인상->3,000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "3000원으로 되어있음",
-    "오잉 중복인가,,,? 다 해놧는뎅",
-    "이모지를 안찍은겨? 뭐징",
-    "위에 똑같은게 잇어염",
-    "문자도 보냇는데 껏켯을 안하셧는가봉가",
-    "전화해볼게여",
-    "껏켯 안하신둣",
-    "문자도 보내써연"
-   ],
-   "rc": 10,
-   "lr": "1784702469.435809",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784702028709639"
   }
  ],
  "ocr": {
