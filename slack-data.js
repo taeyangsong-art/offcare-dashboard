@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4365,
+  "version": 4366,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -119832,6 +119832,17 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "23:28",
+          "store": "테이블하나 (TABLE HANA)",
+          "biz": "2752700601",
+          "handler": "배선유",
+          "cat": "menu",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
           "time": "13:16",
           "store": "영심이키친",
           "biz": "4113151760",
@@ -122508,7 +122519,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 209,
+        "online": 210,
         "offline": 33,
         "unknown": 0
       },
@@ -122999,7 +123010,7 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "04:00"
+      "updatedAt": "09:00"
     }
   },
   "resp": {
@@ -123035,6 +123046,30 @@ window.SLACK_DATA = {
       "1787236308.540089": {
         "post": "1787236308.540089",
         "lastSeen": 1787241309.016
+      },
+      "1787270411.874999": {
+        "post": "1787270411.874999",
+        "lastSeen": 1787270437.08
+      },
+      "1787270410.366839": {
+        "post": "1787270410.366839",
+        "lastSeen": 1787270437.08
+      },
+      "1787270406.689679": {
+        "post": "1787270406.689679",
+        "lastSeen": 1787270437.08
+      },
+      "1787270406.156819": {
+        "post": "1787270406.156819",
+        "lastSeen": 1787270437.08
+      },
+      "1787270289.047959": {
+        "post": "1787270289.047959",
+        "lastSeen": 1787270437.08
+      },
+      "1787270401.959349": {
+        "post": "1787270401.959349",
+        "lastSeen": 1787270437.08
       }
     },
     "days": {
@@ -151128,13 +151163,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-21 08:45",
+    "at": "2026-08-21 09:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3638,
+    "rows": 3651,
     "named": 340,
     "unknownName": 0,
     "beforeStart": 0,
