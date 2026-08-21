@@ -3,10 +3,161 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 831,
- "updatedAt": "2026-08-21 14:00",
+ "version": 832,
+ "updatedAt": "2026-08-21 14:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1787288826.953859",
+   "date": "2026-08-21",
+   "time": "14:07",
+   "store": "강창구찹쌀진순대 덕소점",
+   "biz": "2061953558",
+   "pos": "퍼스트포스",
+   "content": "메뉴 가격 수정 및 추가",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BSKF5N9T2",
+     "from": "댓글",
+     "path": "menu-files/1787288826_953859-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "식사 메뉴",
+       "name": "진 순 대 국",
+       "price": 11000
+      },
+      {
+       "category": "식사 메뉴",
+       "name": "특 순 대 국",
+       "price": 13000
+      },
+      {
+       "category": "식사 메뉴",
+       "name": "진순대정식",
+       "price": 17000
+      },
+      {
+       "category": "식사 메뉴",
+       "name": "내 장 국 밥",
+       "price": 11000
+      },
+      {
+       "category": "식사 메뉴",
+       "name": "뼈 해 장 국",
+       "price": 11000
+      },
+      {
+       "category": "식사 메뉴",
+       "name": "뼈 정 식",
+       "price": 17000
+      },
+      {
+       "category": "식사 메뉴",
+       "name": "인삼순대국",
+       "price": 13000
+      },
+      {
+       "category": "식사 메뉴",
+       "name": "민물새우우거지탕",
+       "price": 11000
+      },
+      {
+       "category": "식사 메뉴",
+       "name": "숙주라면순대국",
+       "price": 13000
+      },
+      {
+       "category": "식사 메뉴",
+       "name": "들깨우거지탕",
+       "price": 12000
+      },
+      {
+       "category": "식사 메뉴",
+       "name": "코 다 리 탕",
+       "price": 12000
+      },
+      {
+       "category": "식사 메뉴",
+       "name": "돈 까 스",
+       "price": 10000
+      },
+      {
+       "category": "안주 메뉴",
+       "name": "진순대전골",
+       "price": 35000
+      },
+      {
+       "category": "안주 메뉴",
+       "name": "수제순대철판",
+       "price": 35000
+      },
+      {
+       "category": "안주 메뉴",
+       "name": "사골감자탕 小",
+       "price": 35000
+      },
+      {
+       "category": "안주 메뉴",
+       "name": "사골감자탕 中",
+       "price": 42000
+      },
+      {
+       "category": "안주 메뉴",
+       "name": "사골감자탕 大",
+       "price": 46000
+      },
+      {
+       "category": "안주 메뉴",
+       "name": "삼 색 순 대 小",
+       "price": 11000
+      },
+      {
+       "category": "안주 메뉴",
+       "name": "삼 색 순 대 中",
+       "price": 22000
+      },
+      {
+       "category": "안주 메뉴",
+       "name": "삼 색 순 대 大",
+       "price": 30000
+      },
+      {
+       "category": "안주 메뉴",
+       "name": "모듬순대수육 中",
+       "price": 28000
+      },
+      {
+       "category": "안주 메뉴",
+       "name": "모듬순대수육 大",
+       "price": 35000
+      },
+      {
+       "category": "안주 메뉴",
+       "name": "술 국",
+       "price": 18000
+      },
+      {
+       "category": "안주 메뉴",
+       "name": "삼 계 탕",
+       "price": 16000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1787288831.390439",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787288826953859"
+  },
   {
    "ts": "1787287923.405579",
    "date": "2026-08-21",
@@ -33970,30 +34121,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784699966509239"
-  },
-  {
-   "ts": "1784696937.562839",
-   "date": "2026-07-22",
-   "time": "14:08",
-   "store": "갈풍집",
-   "biz": "3014014266",
-   "pos": "오케이포스",
-   "content": "오케이포스 / 메뉴 추가 요청드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "• 육류\n    ◦ 생토시살(150g) 25,000원\n    ◦ 토시살주물럭(150g) 25,000원",
-    "등록 이후 문자 한통만 부탁드립니다!"
-   ],
-   "rc": 4,
-   "lr": "1784698360.757669",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784696937562839"
   }
  ],
  "ocr": {
