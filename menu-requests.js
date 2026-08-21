@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 814,
- "updatedAt": "2026-08-21 09:00",
+ "version": 815,
+ "updatedAt": "2026-08-21 09:15",
  "days": 30,
  "items": [
   {
@@ -24,8 +24,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1787270293.238249",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787270289047959"
   },
   {
@@ -41,7 +41,22 @@ window.MENU_REQUESTS = {
     "https://drive.google.com/file/d/1E1XAKhWSpdNQGq6-WcTFspq2UfhMPu0x/view?usp=drivesdk"
    ],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "Winemenu_202607.docx",
+     "fid": "F0BRRL0P9TK",
+     "from": "댓글",
+     "path": "menu-files/1787236109_790659-0.docx",
+     "nj": 1
+    },
+    {
+     "name": "Menu_202607_A4 복사본.docx",
+     "fid": "F0BRRL20JP3",
+     "from": "댓글",
+     "path": "menu-files/1787236109_790659-1.docx",
+     "nj": 1
+    }
+   ],
    "datt": [
     {
      "id": "1E1XAKhWSpdNQGq6-WcTFspq2UfhMPu0x",
@@ -136,10 +151,10 @@ window.MENU_REQUESTS = {
     }
    ],
    "replies": [],
-   "rc": 1,
-   "lr": "1787236113.497869",
+   "rc": 2,
+   "lr": "1787270572.280559",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787236109790659"
   },
