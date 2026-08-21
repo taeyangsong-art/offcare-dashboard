@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 837,
- "updatedAt": "2026-08-21 15:01",
+ "version": 838,
+ "updatedAt": "2026-08-21 15:15",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "IMG_5817.jpg.jpeg",
      "fid": "F0BRA0M5US3",
      "from": "원글",
-     "path": "menu-files/1787291923_828629-0.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -111,13 +110,13 @@ window.MENU_REQUESTS = {
        "name": "콘파냐",
        "price": 3500
       }
-     ]
+     ],
+     "path": "menu-files/1787291923_828629-0.jpeg"
     },
     {
      "name": "IMG_5818.jpg.jpeg",
      "fid": "F0BRMG03U0M",
      "from": "원글",
-     "path": "menu-files/1787291923_828629-1.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -240,13 +239,13 @@ window.MENU_REQUESTS = {
        "name": "아이스티",
        "price": 4000
       }
-     ]
+     ],
+     "path": "menu-files/1787291923_828629-1.jpeg"
     },
     {
      "name": "IMG_5819.jpg.jpeg",
      "fid": "F0BRT9U5HEV",
      "from": "원글",
-     "path": "menu-files/1787291923_828629-2.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -394,13 +393,13 @@ window.MENU_REQUESTS = {
        "name": "아망디오",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1787291923_828629-2.jpeg"
     },
     {
      "name": "IMG_5820.jpg.jpeg",
      "fid": "F0BRRATLR42",
      "from": "원글",
-     "path": "menu-files/1787291923_828629-3.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -463,13 +462,13 @@ window.MENU_REQUESTS = {
        "name": "초",
        "price": 3000
       }
-     ]
+     ],
+     "path": "menu-files/1787291923_828629-3.jpeg"
     },
     {
      "name": "IMG_5821.jpg.jpeg",
      "fid": "F0BRK4NFESX",
      "from": "원글",
-     "path": "menu-files/1787291923_828629-4.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -517,7 +516,8 @@ window.MENU_REQUESTS = {
        "name": "00",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1787291923_828629-4.jpeg"
     }
    ],
    "datt": [],
@@ -546,8 +546,8 @@ window.MENU_REQUESTS = {
     ":루피눈물:  대시보드 상품키 배열 바꿔드리려고 했는데 품목이 너무 많아서  별도 요청드립니다..",
     "시간 오래 소요될 수 있음  사전 안내 완료"
    ],
-   "rc": 5,
-   "lr": "1787291680.035499",
+   "rc": 6,
+   "lr": "1787292170.299889",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
