@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 828,
- "updatedAt": "2026-08-21 13:00",
+ "version": 829,
+ "updatedAt": "2026-08-21 13:30",
  "days": 30,
  "items": [
   {
@@ -33986,29 +33986,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784694954587979"
-  },
-  {
-   "ts": "1784694526.574119",
-   "date": "2026-07-22",
-   "time": "13:28",
-   "store": "데이롱카페(관악kt점)",
-   "biz": "4912101651",
-   "pos": "",
-   "content": "메뉴 등록 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "맞습니다.\n근데 인입 당시 메일 수신 확인 안돼서 메뉴등록 요청 링크로 재접수 하시도록 안내드렸는데 메일 확인이 되는군요 ㅠㅠ"
-   ],
-   "rc": 20,
-   "lr": "1784802221.986859",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784694526574119"
   }
  ],
  "ocr": {
