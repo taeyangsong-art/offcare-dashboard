@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 843,
- "updatedAt": "2026-08-21 17:00",
+ "version": 844,
+ "updatedAt": "2026-08-21 18:02",
  "days": 30,
  "items": [
   {
@@ -3333,13 +3333,712 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BRUCTV74H",
+     "from": "댓글",
+     "path": "menu-files/1787205276_051999-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "식빵",
+       "name": "우유식빵",
+       "price": 3800
+      },
+      {
+       "category": "식빵",
+       "name": "토스트식빵",
+       "price": 3700
+      },
+      {
+       "category": "식빵",
+       "name": "통밀식빵",
+       "price": 3800
+      },
+      {
+       "category": "식빵",
+       "name": "부드럽고 촉촉한식빵",
+       "price": 4900
+      },
+      {
+       "category": "식빵",
+       "name": "밤식빵",
+       "price": 5200
+      },
+      {
+       "category": "식빵",
+       "name": "뜯어먹는 단팥식빵",
+       "price": 4500
+      },
+      {
+       "category": "식빵",
+       "name": "페스츄리식빵",
+       "price": 3500
+      },
+      {
+       "category": "식빵",
+       "name": "콘 옥수수식빵",
+       "price": 4500
+      },
+      {
+       "category": "식빵",
+       "name": "딸기펌",
+       "price": 6200
+      },
+      {
+       "category": "식빵",
+       "name": "크림치즈",
+       "price": 1500
+      },
+      {
+       "category": "식빵",
+       "name": "생크림",
+       "price": 2200
+      },
+      {
+       "category": "식빵",
+       "name": "우리쌀 식빵",
+       "price": 4900
+      },
+      {
+       "category": "식빵",
+       "name": "블루베리식빵",
+       "price": 4500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BRL7NGZD1",
+     "from": "댓글",
+     "path": "menu-files/1787205276_051999-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "페스츄리/소시지빵",
+       "name": "스모크소시지빵",
+       "price": 3300
+      },
+      {
+       "category": "페스츄리/소시지빵",
+       "name": "소시지 피자빵",
+       "price": 3300
+      },
+      {
+       "category": "페스츄리/소시지빵",
+       "name": "갈릭미니크로와상",
+       "price": 4200
+      },
+      {
+       "category": "페스츄리/소시지빵",
+       "name": "에그타르트",
+       "price": 1400
+      },
+      {
+       "category": "페스츄리/소시지빵",
+       "name": "딸기생크림크로와상",
+       "price": 4000
+      },
+      {
+       "category": "페스츄리/소시지빵",
+       "name": "크로와상",
+       "price": 2900
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BRL7QQGG3",
+     "from": "댓글",
+     "path": "menu-files/1787205276_051999-3.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "기타빵",
+       "name": "선 대박빵",
+       "price": 1600
+      },
+      {
+       "category": "기타빵",
+       "name": "소금빵",
+       "price": 2900
+      },
+      {
+       "category": "기타빵",
+       "name": "밀크/치즈 후레쉬빵",
+       "price": 2400
+      },
+      {
+       "category": "기타빵",
+       "name": "초코소라빵",
+       "price": 2200
+      },
+      {
+       "category": "기타빵",
+       "name": "허니컵머핀",
+       "price": 9000
+      },
+      {
+       "category": "기타빵",
+       "name": "할인묶음",
+       "price": 10000
+      },
+      {
+       "category": "기타빵",
+       "name": "숫자초",
+       "price": 700
+      },
+      {
+       "category": "기타빵",
+       "name": "기타",
+       "price": 1000
+      },
+      {
+       "category": "기타빵",
+       "name": "삼각토스트",
+       "price": 1400
+      },
+      {
+       "category": "기타빵",
+       "name": "물/음료",
+       "price": 1200
+      },
+      {
+       "category": "기타빵",
+       "name": "웰치스",
+       "price": 1800
+      },
+      {
+       "category": "기타빵",
+       "name": "봉투",
+       "price": 100
+      },
+      {
+       "category": "기타빵",
+       "name": "러브초",
+       "price": 2000
+      },
+      {
+       "category": "기타빵",
+       "name": "옛날팥빙수",
+       "price": 11900
+      },
+      {
+       "category": "기타빵",
+       "name": "삼페인",
+       "price": 16000
+      },
+      {
+       "category": "기타빵",
+       "name": "생딸기우유",
+       "price": 4800
+      },
+      {
+       "category": "기타빵",
+       "name": "옛날미숫가루",
+       "price": 3500
+      },
+      {
+       "category": "기타빵",
+       "name": "콜라",
+       "price": 1500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BRQGC8886",
+     "from": "댓글",
+     "path": "menu-files/1787205276_051999-4.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "일반빵",
+       "name": "소보루빵",
+       "price": 1700
+      },
+      {
+       "category": "일반빵",
+       "name": "호두단팥빵",
+       "price": 1900
+      },
+      {
+       "category": "일반빵",
+       "name": "선 왼두양금빵",
+       "price": 2200
+      },
+      {
+       "category": "일반빵",
+       "name": "슈크림빵",
+       "price": 2200
+      },
+      {
+       "category": "일반빵",
+       "name": "커피번",
+       "price": 3200
+      },
+      {
+       "category": "일반빵",
+       "name": "쁘띠모카빵",
+       "price": 3500
+      },
+      {
+       "category": "일반빵",
+       "name": "부드러운 모닝빵",
+       "price": 3900
+      },
+      {
+       "category": "일반빵",
+       "name": "크림치즈호두빵",
+       "price": 4500
+      },
+      {
+       "category": "일반빵",
+       "name": "생크림 빵",
+       "price": 2300
+      },
+      {
+       "category": "일반빵",
+       "name": "앙금연유암모스",
+       "price": 5500
+      },
+      {
+       "category": "일반빵",
+       "name": "딸기연유암모스",
+       "price": 5500
+      },
+      {
+       "category": "일반빵",
+       "name": "우유 카스테라크림빵",
+       "price": 4800
+      },
+      {
+       "category": "일반빵",
+       "name": "나닛먹는 크림빵",
+       "price": 4900
+      },
+      {
+       "category": "일반빵",
+       "name": "모카크림빵",
+       "price": 4900
+      },
+      {
+       "category": "일반빵",
+       "name": "브리오쉬 연유크림빵",
+       "price": 5200
+      },
+      {
+       "category": "일반빵",
+       "name": "롤치즈 우유빵",
+       "price": 4000
+      },
+      {
+       "category": "일반빵",
+       "name": "우리쌀 모닝롤",
+       "price": 5500
+      },
+      {
+       "category": "일반빵",
+       "name": "초코생크림빵",
+       "price": 4500
+      },
+      {
+       "category": "일반빵",
+       "name": "딸기연유암모스(1/2)",
+       "price": 2800
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BSLSBBP8Q",
+     "from": "댓글",
+     "path": "menu-files/1787205276_051999-5.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "고로케/도넛",
+       "name": "야채사라다빵",
+       "price": 4000
+      },
+      {
+       "category": "고로케/도넛",
+       "name": "잡채고로케",
+       "price": 3000
+      },
+      {
+       "category": "고로케/도넛",
+       "name": "찹쌀꽈배기",
+       "price": 1700
+      },
+      {
+       "category": "고로케/도넛",
+       "name": "통밀꽈배기",
+       "price": 2000
+      },
+      {
+       "category": "고로케/도넛",
+       "name": "미니찹쌀도너츠",
+       "price": 3600
+      },
+      {
+       "category": "고로케/도넛",
+       "name": "쫀득한찰떡볼",
+       "price": 1700
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BRB4QFSR5",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "샌드위치/햄버거",
+       "name": "감자샐러드샌드위치",
+       "price": 5200
+      },
+      {
+       "category": "샌드위치/햄버거",
+       "name": "참치클럽샌드위치",
+       "price": 5200
+      },
+      {
+       "category": "샌드위치/햄버거",
+       "name": "새우버거",
+       "price": 3900
+      },
+      {
+       "category": "샌드위치/햄버거",
+       "name": "치킨스테이크버거",
+       "price": 3900
+      },
+      {
+       "category": "샌드위치/햄버거",
+       "name": "함박스테이크버거",
+       "price": 3900
+      },
+      {
+       "category": "샌드위치/햄버거",
+       "name": "햄에그샌드위치",
+       "price": 4800
+      },
+      {
+       "category": "샌드위치/햄버거",
+       "name": "샌드위치1/2",
+       "price": 2900
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BRUDV5X4Z",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "간식류",
+       "name": "미니꿀호떡",
+       "price": 8000
+      },
+      {
+       "category": "간식류",
+       "name": "달콤러스크",
+       "price": 2500
+      },
+      {
+       "category": "간식류",
+       "name": "누네띠네",
+       "price": 2500
+      },
+      {
+       "category": "간식류",
+       "name": "미니와플(5입)",
+       "price": 4500
+      },
+      {
+       "category": "간식류",
+       "name": "미니치즈케익",
+       "price": 1600
+      },
+      {
+       "category": "간식류",
+       "name": "미니약과",
+       "price": 4900
+      },
+      {
+       "category": "간식류",
+       "name": "마늘바게트",
+       "price": 4800
+      },
+      {
+       "category": "간식류",
+       "name": "땅콩미니샌드",
+       "price": 2400
+      },
+      {
+       "category": "간식류",
+       "name": "찹쌀떡",
+       "price": 1000
+      },
+      {
+       "category": "간식류",
+       "name": "허니카스테라",
+       "price": 3200
+      },
+      {
+       "category": "간식류",
+       "name": "마늘스틱",
+       "price": 4800
+      },
+      {
+       "category": "간식류",
+       "name": "미니딸기파이",
+       "price": 4200
+      },
+      {
+       "category": "간식류",
+       "name": "미니크림치즈파이",
+       "price": 4200
+      },
+      {
+       "category": "간식류",
+       "name": "모닝바게트",
+       "price": 4500
+      },
+      {
+       "category": "간식류",
+       "name": "버터휘낭시에",
+       "price": 15000
+      },
+      {
+       "category": "간식류",
+       "name": "올리브치아바타",
+       "price": 2500
+      },
+      {
+       "category": "간식류",
+       "name": "통밀깜파뉴",
+       "price": 6500
+      },
+      {
+       "category": "간식류",
+       "name": "호두파이",
+       "price": 2000
+      },
+      {
+       "category": "간식류",
+       "name": "마들렌",
+       "price": 3000
+      },
+      {
+       "category": "간식류",
+       "name": "초코브라우니",
+       "price": 2000
+      },
+      {
+       "category": "간식류",
+       "name": "오븐에구운도넛",
+       "price": 14000
+      },
+      {
+       "category": "간식류",
+       "name": "밤만쥬",
+       "price": 600
+      },
+      {
+       "category": "간식류",
+       "name": "쿠키+음료",
+       "price": 5000
+      },
+      {
+       "category": "간식류",
+       "name": "티슈브레드",
+       "price": 5500
+      },
+      {
+       "category": "간식류",
+       "name": "치즈올리브깜파뉴",
+       "price": 3500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BRW621U3E",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "쉬폰에반하다(초코)",
+       "price": 27000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "쉬폰에반하다(딸기)",
+       "price": 27000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "쉬폰에반하다(화이트)",
+       "price": 25000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "생크림케익 1호",
+       "price": 29000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "생크림케익 2호",
+       "price": 33000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "고구마케익 1호",
+       "price": 29000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "고구마케익 3호",
+       "price": 33000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "실키롤케익",
+       "price": 13000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "블루베리롤케익",
+       "price": 13000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "벌꿀카스테라",
+       "price": 14000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "녹차카스테라",
+       "price": 14000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "조각케익",
+       "price": 4500
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "실키롤(1/2)",
+       "price": 6900
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "블루베리롤(1/2)",
+       "price": 6900
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "생크림케익 3호",
+       "price": 35000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "25/크리스마스케익",
+       "price": 33000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "초코케익1호",
+       "price": 22000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "크리스마스초코케익",
+       "price": 18000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "파네토네",
+       "price": 5500
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "촉촉파운드",
+       "price": 9000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "생과일케익",
+       "price": 7500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BRB4TBGCF",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "베이글",
+       "name": "플레인베이글",
+       "price": 3500
+      },
+      {
+       "category": "베이글",
+       "name": "치즈감자베이글",
+       "price": 3800
+      },
+      {
+       "category": "베이글",
+       "name": "블루베리베이글",
+       "price": 3800
+      },
+      {
+       "category": "베이글",
+       "name": "소금베이글",
+       "price": 3800
+      },
+      {
+       "category": "베이글",
+       "name": "단팥베이글",
+       "price": 3800
+      },
+      {
+       "category": "베이글",
+       "name": "롤치즈베이글",
+       "price": 3800
+      },
+      {
+       "category": "베이글",
+       "name": "크림치즈베이글",
+       "price": 4200
+      },
+      {
+       "category": "베이글",
+       "name": "베이글묶음",
+       "price": 9900
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [
-    "아직 메일x"
+    "아직 메일x",
+    "메뉴가 다 안들어왔데요~~~  카테고리가 9개인데 4개만 들어왓데요",
+    "거짓말........ㅠㅠ 지금 다시할게요!",
+    "나머지 메뉴판 지금 고센에서 수취 중이에요!",
+    "오 감삼다 파일도 함 까볼게여",
+    "메일로 네장만 보내셨네",
+    "쿠키는 안하신다고 합니다"
    ],
-   "rc": 3,
-   "lr": "1787208161.535289",
+   "rc": 14,
+   "lr": "1787302839.531009",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
