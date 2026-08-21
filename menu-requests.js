@@ -3,10 +3,39 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 823,
- "updatedAt": "2026-08-21 11:11",
+ "version": 824,
+ "updatedAt": "2026-08-21 11:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1787278980.607179",
+   "date": "2026-08-21",
+   "time": "11:23",
+   "store": "레이지모닝",
+   "biz": "4213801456",
+   "pos": "토스포스",
+   "content": "토스포스 메뉴 등록 부탁드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 1,
+   "att": [
+    {
+     "name": "레이지모닝.zip",
+     "fid": "F0BRNDTAD1C",
+     "from": "원글",
+     "path": "menu-files/1787278980_607179-0.zip",
+     "nj": 1
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1787279424.154849",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787278980607179"
+  },
   {
    "ts": "1787274137.482859",
    "date": "2026-08-21",
