@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4381,
+  "version": 4382,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -123004,7 +123004,7 @@ window.SLACK_DATA = {
     "2026-08-21": {
       "counts": {
         "as": {
-          "김규빈": 4,
+          "김규빈": 5,
           "심성현": 5,
           "고경림": 4,
           "배선유": 7,
@@ -123058,6 +123058,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "12:09",
+          "store": "주식회사 지니웰니스랩",
+          "biz": "1718503136",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "포프(맥북)에서 프린터기 추가가 안된다고 하셔서 확인 요청 드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "맥북에 프린터 추가 완료"
+        },
         {
           "time": "12:04",
           "store": "사공푸드주식회사",
@@ -123676,11 +123687,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 48,
+        "online": 49,
         "offline": 10,
         "unknown": 0
       },
-      "updatedAt": "12:11",
+      "updatedAt": "12:16",
       "ob": {
         "count": 2,
         "byEmp": {
@@ -123743,11 +123754,19 @@ window.SLACK_DATA = {
       },
       "1787274112.574069": {
         "post": "1787274112.574069",
-        "lastSeen": 1787282123.887
+        "lastSeen": 1787282220.663
       },
       "1787281904.194169": {
         "post": "1787281904.194169",
-        "lastSeen": 1787282123.887
+        "lastSeen": 1787282220.663
+      },
+      "1787282184.365869": {
+        "post": "1787282184.365869",
+        "lastSeen": 1787282220.663
+      },
+      "1787282156.112709": {
+        "post": "1787282156.112709",
+        "lastSeen": 1787282220.663
       }
     },
     "days": {
@@ -151976,7 +151995,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-21 12:15",
+    "at": "2026-08-21 12:17",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
