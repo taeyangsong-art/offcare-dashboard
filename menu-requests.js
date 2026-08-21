@@ -3,10 +3,348 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 841,
- "updatedAt": "2026-08-21 16:15",
+ "version": 842,
+ "updatedAt": "2026-08-21 16:23",
  "days": 30,
  "items": [
+  {
+   "ts": "1787296657.855049",
+   "date": "2026-08-21",
+   "time": "16:17",
+   "store": "베이스캠프 불맛스토리",
+   "biz": "5531600771",
+   "pos": "",
+   "content": "메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "IMG_2321.jpeg",
+     "fid": "F0BRTPH91ED",
+     "from": "댓글",
+     "path": "menu-files/1787296657_855049-0.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "고기메뉴",
+       "name": "캠핑세트A(2~3인분)",
+       "price": 47000
+      },
+      {
+       "category": "고기메뉴",
+       "name": "캠핑세트B(3-4인분)",
+       "price": 68000
+      },
+      {
+       "category": "고기메뉴",
+       "name": "흑돼지삼겹살(200g)",
+       "price": 19000
+      },
+      {
+       "category": "고기메뉴",
+       "name": "흑돼지목살(200g)",
+       "price": 19000
+      },
+      {
+       "category": "고기메뉴",
+       "name": "급냉동삼겹살(200g)",
+       "price": 15000
+      },
+      {
+       "category": "고기메뉴",
+       "name": "삼겹살(200g)",
+       "price": 15000
+      },
+      {
+       "category": "고기메뉴",
+       "name": "급냉동목살(200g)",
+       "price": 14000
+      },
+      {
+       "category": "고기메뉴",
+       "name": "석화반솥(겨울)",
+       "price": 25000
+      },
+      {
+       "category": "고기메뉴",
+       "name": "생굴반접시(겨울)",
+       "price": 16000
+      },
+      {
+       "category": "고기메뉴",
+       "name": "통가리비추가(1kg)",
+       "price": 12000
+      },
+      {
+       "category": "고기메뉴",
+       "name": "블랙타이거새우(4마리)",
+       "price": 12000
+      },
+      {
+       "category": "고기메뉴",
+       "name": "소세지(2개)",
+       "price": 6000
+      },
+      {
+       "category": "고기메뉴",
+       "name": "석화찜(겨울)",
+       "price": 39000
+      },
+      {
+       "category": "고기메뉴",
+       "name": "석화가리비찜(겨울)",
+       "price": 49000
+      },
+      {
+       "category": "고기메뉴",
+       "name": "생굴한접시(겨울)",
+       "price": 28000
+      },
+      {
+       "category": "고기메뉴",
+       "name": "석화가리비반솥(겨울)",
+       "price": 35000
+      },
+      {
+       "category": "고기메뉴",
+       "name": "삼겹살",
+       "price": 16000
+      },
+      {
+       "category": "고기메뉴",
+       "name": "한우갈비살",
+       "price": 34000
+      },
+      {
+       "category": "고기메뉴",
+       "name": "한우등심",
+       "price": 38000
+      },
+      {
+       "category": "고기메뉴",
+       "name": "한우살치살",
+       "price": 45000
+      },
+      {
+       "category": "고기메뉴",
+       "name": "안창살",
+       "price": 45000
+      }
+     ]
+    },
+    {
+     "name": "IMG_2324.jpeg",
+     "fid": "F0BRAEDUFHV",
+     "from": "댓글",
+     "path": "menu-files/1787296657_855049-1.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류",
+       "name": "소주",
+       "price": 4000
+      },
+      {
+       "category": "주류",
+       "name": "맥주",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "음료수",
+       "price": 2000
+      },
+      {
+       "category": "주류",
+       "name": "막걸리",
+       "price": 4000
+      },
+      {
+       "category": "주류",
+       "name": "백세주",
+       "price": 10000
+      },
+      {
+       "category": "주류",
+       "name": "복분자",
+       "price": 15000
+      },
+      {
+       "category": "주류",
+       "name": "막걸리(대)",
+       "price": 6000
+      },
+      {
+       "category": "주류",
+       "name": "청하",
+       "price": 6000
+      }
+     ]
+    },
+    {
+     "name": "IMG_2323.jpeg",
+     "fid": "F0BRVFQ2Z6G",
+     "from": "댓글",
+     "path": "menu-files/1787296657_855049-2.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "후식메뉴",
+       "name": "흑돼지김치찌개",
+       "price": 5000
+      },
+      {
+       "category": "후식메뉴",
+       "name": "한우된장찌개",
+       "price": 5000
+      },
+      {
+       "category": "후식메뉴",
+       "name": "묵사발",
+       "price": 6000
+      },
+      {
+       "category": "후식메뉴",
+       "name": "후식물냉면",
+       "price": 6000
+      },
+      {
+       "category": "후식메뉴",
+       "name": "후식비빔냉면",
+       "price": 6000
+      },
+      {
+       "category": "후식메뉴",
+       "name": "라면",
+       "price": 4000
+      },
+      {
+       "category": "후식메뉴",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "후식메뉴",
+       "name": "볶음밥",
+       "price": 2000
+      },
+      {
+       "category": "후식메뉴",
+       "name": "소면(온)",
+       "price": 5000
+      },
+      {
+       "category": "후식메뉴",
+       "name": "된장찌개(1인용)",
+       "price": 1000
+      },
+      {
+       "category": "후식메뉴",
+       "name": "굴라면(겨울)",
+       "price": 6000
+      },
+      {
+       "category": "후식메뉴",
+       "name": "계란찜",
+       "price": 3000
+      },
+      {
+       "category": "후식메뉴",
+       "name": "장소대여1",
+       "price": 120000
+      },
+      {
+       "category": "후식메뉴",
+       "name": "해신탕",
+       "price": 150000
+      },
+      {
+       "category": "후식메뉴",
+       "name": "곤드래정식",
+       "price": 15000
+      },
+      {
+       "category": "후식메뉴",
+       "name": "사골",
+       "price": 9000
+      }
+     ]
+    },
+    {
+     "name": "IMG_2322.jpeg",
+     "fid": "F0BRVFS9VCL",
+     "from": "댓글",
+     "path": "menu-files/1787296657_855049-3.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "점심메뉴",
+       "name": "장소대여",
+       "price": 150000
+      },
+      {
+       "category": "점심메뉴",
+       "name": "불고기전골",
+       "price": 15000
+      },
+      {
+       "category": "점심메뉴",
+       "name": "육개장",
+       "price": 8000
+      },
+      {
+       "category": "점심메뉴",
+       "name": "점심물냉면",
+       "price": 10000
+      },
+      {
+       "category": "점심메뉴",
+       "name": "점심비빔냉면",
+       "price": 10000
+      },
+      {
+       "category": "점심메뉴",
+       "name": "콩국수(국내산)",
+       "price": 9000
+      },
+      {
+       "category": "점심메뉴",
+       "name": "사리추가",
+       "price": 3000
+      },
+      {
+       "category": "점심메뉴",
+       "name": "콩국수+수육(1인)",
+       "price": 16000
+      },
+      {
+       "category": "점심메뉴",
+       "name": "수육(2~3인)",
+       "price": 25000
+      },
+      {
+       "category": "점심메뉴",
+       "name": "수육(3~4인)",
+       "price": 38000
+      },
+      {
+       "category": "점심메뉴",
+       "name": "콩국물(포장)",
+       "price": 8000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1787296692.888209",
+   "rfx": 3,
+   "status": "done",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787296657855049"
+  },
   {
    "ts": "1787295808.242849",
    "date": "2026-08-21",
