@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 845,
- "updatedAt": "2026-08-21 18:17",
+ "version": 846,
+ "updatedAt": "2026-08-21 18:25",
  "days": 30,
  "items": [
   {
@@ -36730,29 +36730,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784765757686229"
-  },
-  {
-   "ts": "1784711911.498519",
-   "date": "2026-07-22",
-   "time": "18:18",
-   "store": "도호커피 본점",
-   "biz": "5384201479",
-   "pos": "",
-   "content": "• 메뉴 추가 등록 부탁드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "• ···(도호커피 본점) 메뉴 등록 요청 건\n··· 사업장에 있는 메뉴에  옵션 동일하게 추가 요청(도호 커피에 있는 기존 메뉴는 그대로 유지)\n\n  - 토스트, 떡볶이, 볶음밥, 버거, 치킨박스, 사이드메뉴\n  - 음료 제외\n  - 옵션도 동일하게 적용"
-   ],
-   "rc": 3,
-   "lr": "1784727734.152099",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784711911498519"
   }
  ],
  "ocr": {
