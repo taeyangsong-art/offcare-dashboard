@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 821,
- "updatedAt": "2026-08-21 10:45",
+ "version": 822,
+ "updatedAt": "2026-08-21 11:00",
  "days": 30,
  "items": [
   {
@@ -34056,50 +34056,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784686273885019"
-  },
-  {
-   "ts": "1784685305.722849",
-   "date": "2026-07-22",
-   "time": "10:55",
-   "store": "신성집",
-   "biz": "7131502369",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784685310.692339",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784685305722849"
-  },
-  {
-   "ts": "1784684753.124959",
-   "date": "2026-07-22",
-   "time": "10:45",
-   "store": "요거트가족",
-   "biz": "1891602210",
-   "pos": "퍼스트포스",
-   "content": "메뉴 등록 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "유플러스 입니다."
-   ],
-   "rc": 22,
-   "lr": "1784688201.529729",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784684753124959"
   }
  ],
  "ocr": {
