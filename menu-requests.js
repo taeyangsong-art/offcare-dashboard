@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 825,
- "updatedAt": "2026-08-21 11:46",
+ "version": 826,
+ "updatedAt": "2026-08-21 12:00",
  "days": 30,
  "items": [
   {
@@ -19,13 +19,6 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 1,
    "att": [
-    {
-     "name": "레이지모닝.zip",
-     "fid": "F0BRNDTAD1C",
-     "from": "원글",
-     "path": "menu-files/1787278980_607179-0.zip",
-     "nj": 1
-    },
     {
      "name": "Resized_Red Beige Modern Minimalist Food",
      "fid": "F0BRLJGPXM3",
@@ -263,6 +256,13 @@ window.MENU_REQUESTS = {
        "price": 1500
       }
      ]
+    },
+    {
+     "name": "레이지모닝.zip",
+     "fid": "F0BRNDTAD1C",
+     "from": "원글",
+     "path": "menu-files/1787278980_607179-0.zip",
+     "nj": 1
     }
    ],
    "datt": [],
