@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 833,
- "updatedAt": "2026-08-21 14:18",
+ "version": 834,
+ "updatedAt": "2026-08-21 14:30",
  "days": 30,
  "items": [
   {
@@ -147,17 +147,286 @@ window.MENU_REQUESTS = {
       }
      ],
      "path": "menu-files/1787288826_953859-0.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BRMAE4Y4D",
+     "from": "댓글",
+     "path": "menu-files/1787288826_953859-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "식사류",
+       "name": "순대국",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "순대정식",
+       "price": 15000
+      },
+      {
+       "category": "식사류",
+       "name": "인삼순대국",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "인삼정식",
+       "price": 17000
+      },
+      {
+       "category": "식사류",
+       "name": "내장국밥",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "순대만",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "고기만",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "뼈해장국",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "뼈정식",
+       "price": 16000
+      },
+      {
+       "category": "식사류",
+       "name": "추어탕",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "삼계탕",
+       "price": 15000
+      },
+      {
+       "category": "식사류",
+       "name": "(특)",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "정식접시추가",
+       "price": 5000
+      },
+      {
+       "category": "식사류",
+       "name": "돈가스",
+       "price": 9000
+      },
+      {
+       "category": "식사류",
+       "name": "새우튀김",
+       "price": 8000
+      },
+      {
+       "category": "식사류",
+       "name": "순대만(정식)",
+       "price": 15000
+      },
+      {
+       "category": "식사류",
+       "name": "고기만(정식)",
+       "price": 15000
+      },
+      {
+       "category": "식사류",
+       "name": "통만두",
+       "price": 7000
+      },
+      {
+       "category": "식사류",
+       "name": "덮밥",
+       "price": 15000
+      },
+      {
+       "category": "식사류",
+       "name": "코다리탕",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "볶음밥",
+       "price": 3000
+      },
+      {
+       "category": "식사류",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "식사류",
+       "name": "들깨우거지탕",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "민물새우우거지탕",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "숙주라면순대국",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "소주",
+       "price": 5000
+      },
+      {
+       "category": "식사류",
+       "name": "맥주",
+       "price": 5000
+      },
+      {
+       "category": "식사류",
+       "name": "막걸리",
+       "price": 5000
+      },
+      {
+       "category": "식사류",
+       "name": "음료수",
+       "price": 2000
+      },
+      {
+       "category": "식사류",
+       "name": "스탁엿",
+       "price": 1000
+      },
+      {
+       "category": "식사류",
+       "name": "엿",
+       "price": 5000
+      },
+      {
+       "category": "식사류",
+       "name": "과자",
+       "price": 1500
+      },
+      {
+       "category": "식사류",
+       "name": "과자",
+       "price": 3000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BRJUG3SHH",
+     "from": "댓글",
+     "path": "menu-files/1787288826_953859-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "안주류",
+       "name": "술국",
+       "price": 17000
+      },
+      {
+       "category": "안주류",
+       "name": "3색순대(소)",
+       "price": 11000
+      },
+      {
+       "category": "안주류",
+       "name": "3색순대(중)",
+       "price": 22000
+      },
+      {
+       "category": "안주류",
+       "name": "3색순대(대)",
+       "price": 30000
+      },
+      {
+       "category": "안주류",
+       "name": "파전",
+       "price": 20000
+      },
+      {
+       "category": "안주류",
+       "name": "부추파전",
+       "price": 12000
+      },
+      {
+       "category": "안주류",
+       "name": "철판(2인분)",
+       "price": 33000
+      },
+      {
+       "category": "안주류",
+       "name": "모듬순대수육(대)",
+       "price": 32000
+      },
+      {
+       "category": "안주류",
+       "name": "사골감자탕(대)",
+       "price": 44000
+      },
+      {
+       "category": "안주류",
+       "name": "전골(2인분)",
+       "price": 33000
+      },
+      {
+       "category": "안주류",
+       "name": "모듬순대수육(중)",
+       "price": 26000
+      },
+      {
+       "category": "안주류",
+       "name": "사골감자탕(중)",
+       "price": 40000
+      },
+      {
+       "category": "안주류",
+       "name": "사골감자탕(소)",
+       "price": 33000
+      },
+      {
+       "category": "안주류",
+       "name": "소주",
+       "price": 5000
+      },
+      {
+       "category": "안주류",
+       "name": "맥주",
+       "price": 5000
+      },
+      {
+       "category": "안주류",
+       "name": "막걸리",
+       "price": 5000
+      },
+      {
+       "category": "안주류",
+       "name": "음료수",
+       "price": 2000
+      }
+     ]
     }
    ],
    "datt": [],
    "replies": [
-    "카톡으로 전화와서 대뜸 소리질러서 제대로 못들었는데 그런거같아요 일단 백업해놓고"
+    "카톡으로 전화와서 대뜸 소리질러서 제대로 못들었는데 그런거같아요 일단 백업해놓고",
+    "본인 바쁘다고 그냥 전화끊음"
    ],
-   "rc": 4,
-   "lr": "1787289508.099309",
+   "rc": 7,
+   "lr": "1787289780.658419",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787288826953859"
   },
   {
