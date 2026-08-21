@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4392,
+  "version": 4393,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -123041,6 +123041,17 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "13:15",
+          "store": "바우 커피 피어",
+          "biz": "3338503296",
+          "handler": "김현기",
+          "cat": "delivery",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
           "time": "12:27",
           "store": "월화제과",
           "biz": "7493101700",
@@ -124281,15 +124292,15 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 94,
+        "online": 95,
         "offline": 18,
         "unknown": 0
       },
       "updatedAt": "14:15",
       "ob": {
-        "count": 3,
+        "count": 5,
         "byEmp": {
-          "김규빈": 3
+          "김규빈": 5
         },
         "items": [
           {
@@ -124307,6 +124318,22 @@ window.SLACK_DATA = {
             "recvDate": "2026-08-21",
             "planDate": "",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787109593230099"
+          },
+          {
+            "key": "2026년 8월 21일 오전 8:31:23|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785559307803729#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-21",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785559307803729"
+          },
+          {
+            "key": "2026년 8월 21일 오전 8:27:29|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785310489878879#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-21",
+            "planDate": "2026-08-25",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785310489878879"
           },
           {
             "key": "2026년 8월 21일 오전 8:26:53|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787103736596729#1",
@@ -124356,39 +124383,35 @@ window.SLACK_DATA = {
       },
       "1787274112.574069": {
         "post": "1787274112.574069",
-        "lastSeen": 1787289325.426
-      },
-      "1787285700.809239": {
-        "post": "1787285700.809239",
-        "lastSeen": 1787289325.426
+        "lastSeen": 1787289507.947
       },
       "1787288405.016979": {
         "post": "1787288405.016979",
-        "lastSeen": 1787289325.426
+        "lastSeen": 1787289507.947
       },
       "1787288208.977419": {
         "post": "1787288208.977419",
-        "lastSeen": 1787289325.426
+        "lastSeen": 1787289507.947
       },
       "1787288208.602279": {
         "post": "1787288208.602279",
-        "lastSeen": 1787289325.426
+        "lastSeen": 1787289507.947
       },
       "1787289300.760739": {
         "post": "1787289300.760739",
-        "lastSeen": 1787289325.426
+        "lastSeen": 1787289507.947
       },
       "1787289300.297699": {
         "post": "1787289300.297699",
-        "lastSeen": 1787289325.426
+        "lastSeen": 1787289507.947
       },
       "1787289013.363539": {
         "post": "1787289013.363539",
-        "lastSeen": 1787289325.426
+        "lastSeen": 1787289507.947
       },
       "1787288826.953859": {
         "post": "1787288826.953859",
-        "lastSeen": 1787289325.426
+        "lastSeen": 1787289507.947
       }
     },
     "days": {
@@ -152929,19 +152952,19 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-21 14:15",
+    "at": "2026-08-21 14:18",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3654,
-    "named": 343,
+    "named": 345,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 343,
+    "done": 345,
     "byStatus": {
-      "일정등록완료": 216,
+      "일정등록완료": 218,
       "1차부재": 74,
       "점주직접접수": 31,
       "설치불가": 7,
