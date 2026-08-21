@@ -3,10 +3,532 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 836,
- "updatedAt": "2026-08-21 14:51",
+ "version": 837,
+ "updatedAt": "2026-08-21 15:01",
  "days": 30,
  "items": [
+  {
+   "ts": "1787291923.828629",
+   "date": "2026-08-21",
+   "time": "14:58",
+   "store": "카페왓에버(Cafe Whatever)",
+   "biz": "2340502907",
+   "pos": "토스포스",
+   "content": "토스포스 메뉴 등록 부탁드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 5,
+   "att": [
+    {
+     "name": "IMG_5817.jpg.jpeg",
+     "fid": "F0BRA0M5US3",
+     "from": "원글",
+     "path": "menu-files/1787291923_828629-0.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "coffee",
+       "name": "아메리카노 hot",
+       "price": 4000
+      },
+      {
+       "category": "coffee",
+       "name": "아메리카노 ice",
+       "price": 4000
+      },
+      {
+       "category": "coffee",
+       "name": "카페라떼 hot",
+       "price": 4500
+      },
+      {
+       "category": "coffee",
+       "name": "카페라떼 ice",
+       "price": 4500
+      },
+      {
+       "category": "coffee",
+       "name": "카푸치노 hot",
+       "price": 4500
+      },
+      {
+       "category": "coffee",
+       "name": "카푸치노 ice",
+       "price": 4500
+      },
+      {
+       "category": "coffee",
+       "name": "바닐라라떼 hot",
+       "price": 5000
+      },
+      {
+       "category": "coffee",
+       "name": "바닐라라떼 ice",
+       "price": 5000
+      },
+      {
+       "category": "coffee",
+       "name": "카라멜라떼 hot",
+       "price": 5000
+      },
+      {
+       "category": "coffee",
+       "name": "카라멜라떼 ice",
+       "price": 5000
+      },
+      {
+       "category": "coffee",
+       "name": "샷추가",
+       "price": 500
+      },
+      {
+       "category": "coffee",
+       "name": "두유 변경",
+       "price": 0
+      },
+      {
+       "category": "coffee",
+       "name": "아몬드 변경",
+       "price": 500
+      },
+      {
+       "category": "coffee",
+       "name": "오트 변경",
+       "price": 500
+      },
+      {
+       "category": "coffee",
+       "name": "생크림추가",
+       "price": 800
+      },
+      {
+       "category": "coffee",
+       "name": "esso",
+       "price": 3000
+      },
+      {
+       "category": "coffee",
+       "name": "콘파냐",
+       "price": 3500
+      }
+     ]
+    },
+    {
+     "name": "IMG_5818.jpg.jpeg",
+     "fid": "F0BRMG03U0M",
+     "from": "원글",
+     "path": "menu-files/1787291923_828629-1.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "beverage",
+       "name": "사과주스",
+       "price": 5000
+      },
+      {
+       "category": "beverage",
+       "name": "오렌지주스",
+       "price": 4500
+      },
+      {
+       "category": "beverage",
+       "name": "자몽에이드",
+       "price": 5000
+      },
+      {
+       "category": "beverage",
+       "name": "애플티",
+       "price": 5000
+      },
+      {
+       "category": "beverage",
+       "name": "매도우",
+       "price": 5000
+      },
+      {
+       "category": "beverage",
+       "name": "멍갈로우",
+       "price": 5000
+      },
+      {
+       "category": "beverage",
+       "name": "초코라떼 ice",
+       "price": 5500
+      },
+      {
+       "category": "beverage",
+       "name": "초코라떼 hot",
+       "price": 5500
+      },
+      {
+       "category": "beverage",
+       "name": "호지차 ice",
+       "price": 5000
+      },
+      {
+       "category": "beverage",
+       "name": "호지차 hot",
+       "price": 5000
+      },
+      {
+       "category": "beverage",
+       "name": "말차 ice",
+       "price": 5000
+      },
+      {
+       "category": "beverage",
+       "name": "말차 hot",
+       "price": 5000
+      },
+      {
+       "category": "beverage",
+       "name": "유자차 hot",
+       "price": 5000
+      },
+      {
+       "category": "beverage",
+       "name": "유자차 ice",
+       "price": 5000
+      },
+      {
+       "category": "beverage",
+       "name": "우유 ice",
+       "price": 2500
+      },
+      {
+       "category": "beverage",
+       "name": "우유 hot",
+       "price": 2500
+      },
+      {
+       "category": "beverage",
+       "name": "유자차",
+       "price": 5000
+      },
+      {
+       "category": "beverage",
+       "name": "딸기마차",
+       "price": 5000
+      },
+      {
+       "category": "beverage",
+       "name": "녹차",
+       "price": 5000
+      },
+      {
+       "category": "beverage",
+       "name": "baby apple",
+       "price": 3000
+      },
+      {
+       "category": "beverage",
+       "name": "00",
+       "price": 0
+      },
+      {
+       "category": "beverage",
+       "name": "말차",
+       "price": 5000
+      },
+      {
+       "category": "beverage",
+       "name": "00",
+       "price": 0
+      },
+      {
+       "category": "beverage",
+       "name": "아이스티",
+       "price": 4000
+      }
+     ]
+    },
+    {
+     "name": "IMG_5819.jpg.jpeg",
+     "fid": "F0BRT9U5HEV",
+     "from": "원글",
+     "path": "menu-files/1787291923_828629-2.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "bread",
+       "name": "크루아상",
+       "price": 4000
+      },
+      {
+       "category": "bread",
+       "name": "아몬드크루아상",
+       "price": 4500
+      },
+      {
+       "category": "bread",
+       "name": "크림크라상",
+       "price": 4800
+      },
+      {
+       "category": "bread",
+       "name": "초코크루아상",
+       "price": 4500
+      },
+      {
+       "category": "bread",
+       "name": "생크림크라상",
+       "price": 4800
+      },
+      {
+       "category": "bread",
+       "name": "00",
+       "price": 0
+      },
+      {
+       "category": "bread",
+       "name": "소금빵",
+       "price": 2500
+      },
+      {
+       "category": "bread",
+       "name": "완두소금빵",
+       "price": 3500
+      },
+      {
+       "category": "bread",
+       "name": "갈릭소금빵",
+       "price": 3500
+      },
+      {
+       "category": "bread",
+       "name": "생크림소금빵",
+       "price": 3500
+      },
+      {
+       "category": "bread",
+       "name": "휘낭시에",
+       "price": 2500
+      },
+      {
+       "category": "bread",
+       "name": "초코휘낭시에",
+       "price": 2700
+      },
+      {
+       "category": "bread",
+       "name": "차아바타",
+       "price": 3000
+      },
+      {
+       "category": "bread",
+       "name": "치즈치아바타",
+       "price": 3500
+      },
+      {
+       "category": "bread",
+       "name": "올리브치아바타",
+       "price": 3500
+      },
+      {
+       "category": "bread",
+       "name": "프레첼",
+       "price": 4000
+      },
+      {
+       "category": "bread",
+       "name": "알버터",
+       "price": 4500
+      },
+      {
+       "category": "bread",
+       "name": "암모스",
+       "price": 5000
+      },
+      {
+       "category": "bread",
+       "name": "우유식빵",
+       "price": 3500
+      },
+      {
+       "category": "bread",
+       "name": "밤식빵",
+       "price": 5000
+      },
+      {
+       "category": "bread",
+       "name": "삼투과자",
+       "price": 3000
+      },
+      {
+       "category": "bread",
+       "name": "통철빵",
+       "price": 2500
+      },
+      {
+       "category": "bread",
+       "name": "단팥빵",
+       "price": 2500
+      },
+      {
+       "category": "bread",
+       "name": "바타력",
+       "price": 1500
+      },
+      {
+       "category": "bread",
+       "name": "바게트",
+       "price": 3000
+      },
+      {
+       "category": "bread",
+       "name": "갈릭바게트",
+       "price": 5000
+      },
+      {
+       "category": "bread",
+       "name": "쿠키상자",
+       "price": 3000
+      },
+      {
+       "category": "bread",
+       "name": "브라우니",
+       "price": 3000
+      },
+      {
+       "category": "bread",
+       "name": "아망디오",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "IMG_5820.jpg.jpeg",
+     "fid": "F0BRRATLR42",
+     "from": "원글",
+     "path": "menu-files/1787291923_828629-3.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "케익",
+       "name": "cup cake",
+       "price": 5500
+      },
+      {
+       "category": "케익",
+       "name": "미니",
+       "price": 20000
+      },
+      {
+       "category": "케익",
+       "name": "과일 1호",
+       "price": 38000
+      },
+      {
+       "category": "케익",
+       "name": "과일 2호",
+       "price": 50000
+      },
+      {
+       "category": "케익",
+       "name": "조각 매장",
+       "price": 7500
+      },
+      {
+       "category": "케익",
+       "name": "조각 포장",
+       "price": 8000
+      },
+      {
+       "category": "케익",
+       "name": "우유 1호",
+       "price": 28000
+      },
+      {
+       "category": "케익",
+       "name": "우유 2호",
+       "price": 40000
+      },
+      {
+       "category": "케익",
+       "name": "초",
+       "price": 700
+      },
+      {
+       "category": "케익",
+       "name": "초",
+       "price": 1500
+      },
+      {
+       "category": "케익",
+       "name": "초",
+       "price": 2500
+      },
+      {
+       "category": "케익",
+       "name": "초",
+       "price": 3000
+      }
+     ]
+    },
+    {
+     "name": "IMG_5821.jpg.jpeg",
+     "fid": "F0BRK4NFESX",
+     "from": "원글",
+     "path": "menu-files/1787291923_828629-4.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "Meal",
+       "name": "카프레제",
+       "price": 5000
+      },
+      {
+       "category": "Meal",
+       "name": "with 치아버타",
+       "price": 3000
+      },
+      {
+       "category": "Meal",
+       "name": "크루아상 샌드위치",
+       "price": 7000
+      },
+      {
+       "category": "Meal",
+       "name": "치아버타 샌드위치",
+       "price": 7000
+      },
+      {
+       "category": "Meal",
+       "name": "바게트샌드위치",
+       "price": 8000
+      },
+      {
+       "category": "Meal",
+       "name": "검봉소금빵 샌디치",
+       "price": 6500
+      },
+      {
+       "category": "Meal",
+       "name": "big치아바타샌드지",
+       "price": 8000
+      },
+      {
+       "category": "Meal",
+       "name": "00",
+       "price": 0
+      },
+      {
+       "category": "Meal",
+       "name": "00",
+       "price": 0
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787291927.724289",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787291923828629"
+  },
   {
    "ts": "1787291364.875179",
    "date": "2026-08-21",
@@ -21,13 +543,14 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [
-    ":루피눈물:  대시보드 상품키 배열 바꿔드리려고 했는데 품목이 너무 많아서  별도 요청드립니다.."
+    ":루피눈물:  대시보드 상품키 배열 바꿔드리려고 했는데 품목이 너무 많아서  별도 요청드립니다..",
+    "시간 오래 소요될 수 있음  사전 안내 완료"
    ],
-   "rc": 2,
-   "lr": "1787291445.235839",
+   "rc": 5,
+   "lr": "1787291680.035499",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787291364875179"
   },
   {
@@ -469,7 +992,7 @@ window.MENU_REQUESTS = {
    "rc": 7,
    "lr": "1787289780.658419",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787288826953859"
   },
@@ -34415,27 +34938,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784701132092259"
-  },
-  {
-   "ts": "1784699966.509239",
-   "date": "2026-07-22",
-   "time": "14:59",
-   "store": "뮌헨",
-   "biz": "5660702429",
-   "pos": "기타",
-   "content": "을지로 노가리 가격수정2,500원->3.000원\n황태 노가리 가격수정 2,500원->3,000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784699971.261449",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784699966509239"
   }
  ],
  "ocr": {
