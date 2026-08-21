@@ -3,10 +3,958 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 844,
- "updatedAt": "2026-08-21 18:02",
+ "version": 845,
+ "updatedAt": "2026-08-21 18:17",
  "days": 30,
  "items": [
+  {
+   "ts": "1787303558.159039",
+   "date": "2026-08-21",
+   "time": "18:12",
+   "store": "스낵팩멜번 부천점",
+   "biz": "7173801584",
+   "pos": "토스포스",
+   "content": "토스포스 메뉴 복사 부탁드립니다.\n메뉴 복사 매장 : 스낵팩멜번 (<tel:···|···>)",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787303561.314139",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787303558159039"
+  },
+  {
+   "ts": "1787303157.137079",
+   "date": "2026-08-21",
+   "time": "18:05",
+   "store": "김밥산책",
+   "biz": "6555301014",
+   "pos": "토스포스",
+   "content": "메뉴등록 부탁드립니다",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1MZsHmtXnhQl0uJ4zBeKmo1gGzQP9-Ljn/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1MZsHmtXnhQl0uJ4zBeKmo1gGzQP9-Ljn",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "꼬마김밥",
+       "name": "꼬마김밥",
+       "price": 4500
+      },
+      {
+       "category": "꼬마김밥",
+       "name": "치즈꼬마김밥",
+       "price": 5000
+      },
+      {
+       "category": "꼬마김밥",
+       "name": "참치꼬마김밥",
+       "price": 5500
+      },
+      {
+       "category": "꼬마김밥",
+       "name": "땡초꼬마김밥",
+       "price": 5500
+      },
+      {
+       "category": "꼬마김밥",
+       "name": "어묵꼬마김밥",
+       "price": 5500
+      },
+      {
+       "category": "꼬마김밥",
+       "name": "매운어묵꼬마김밥",
+       "price": 5500
+      },
+      {
+       "category": "일반 김밥",
+       "name": "야채김밥",
+       "price": 4000
+      },
+      {
+       "category": "일반 김밥",
+       "name": "치즈김밥",
+       "price": 5000
+      },
+      {
+       "category": "일반 김밥",
+       "name": "참치김밥",
+       "price": 5000
+      },
+      {
+       "category": "일반 김밥",
+       "name": "땡초김밥",
+       "price": 5000
+      },
+      {
+       "category": "일반 김밥",
+       "name": "새우김밥",
+       "price": 6000
+      },
+      {
+       "category": "일반 김밥",
+       "name": "소고기김밥",
+       "price": 5500
+      },
+      {
+       "category": "일반 김밥",
+       "name": "돈가스김밥",
+       "price": 5500
+      },
+      {
+       "category": "일반 김밥",
+       "name": "김치김밥",
+       "price": 5000
+      },
+      {
+       "category": "일반 김밥",
+       "name": "매운어묵김밥",
+       "price": 5500
+      },
+      {
+       "category": "분식류",
+       "name": "닭날개(6개)",
+       "price": 5000
+      },
+      {
+       "category": "분식류",
+       "name": "상하이지류",
+       "price": 6000
+      },
+      {
+       "category": "분식류",
+       "name": "라면",
+       "price": 4000
+      },
+      {
+       "category": "분식류",
+       "name": "떡볶이",
+       "price": 5000
+      },
+      {
+       "category": "분식류",
+       "name": "라볶이",
+       "price": 6000
+      },
+      {
+       "category": "분식류",
+       "name": "갈비만두",
+       "price": 5500
+      },
+      {
+       "category": "분식류",
+       "name": "새우만두",
+       "price": 5500
+      },
+      {
+       "category": "분식류",
+       "name": "튀김만두",
+       "price": 5500
+      },
+      {
+       "category": "분식류",
+       "name": "우동",
+       "price": 6500
+      },
+      {
+       "category": "분식류",
+       "name": "쫄면",
+       "price": 7500
+      },
+      {
+       "category": "분식류",
+       "name": "잔치국수",
+       "price": 7500
+      },
+      {
+       "category": "식사류",
+       "name": "김치볶음밥",
+       "price": 8000
+      },
+      {
+       "category": "식사류",
+       "name": "비빔밥",
+       "price": 8000
+      },
+      {
+       "category": "식사류",
+       "name": "오무라이스",
+       "price": 8000
+      },
+      {
+       "category": "식사류",
+       "name": "제육덮밥",
+       "price": 9000
+      },
+      {
+       "category": "식사류",
+       "name": "돈가스",
+       "price": 8000
+      },
+      {
+       "category": "식사류",
+       "name": "치즈돈가스",
+       "price": 9000
+      },
+      {
+       "category": "식사류",
+       "name": "김치찌개",
+       "price": 7500
+      },
+      {
+       "category": "식사류",
+       "name": "된장찌개",
+       "price": 7500
+      },
+      {
+       "category": "식사류",
+       "name": "순두부찌개",
+       "price": 7500
+      }
+     ]
+    }
+   ],
+   "replies": [
+    "슨배림\n떡/치즈 추가 +1000원 이라고 써져있으면\n떡 1000 / 치즈 1000원 일까요 아님 두개 합쳐서 1000원일까요",
+    "그거슨 사장님 맘인데",
+    "따로따로 지 않을까요",
+    "후후 따로 등록하고 :telephone_receiver: 완료"
+   ],
+   "rc": 5,
+   "lr": "1787303486.289039",
+   "rfx": 3,
+   "status": "done",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787303157137079"
+  },
+  {
+   "ts": "1787302950.499909",
+   "date": "2026-08-21",
+   "time": "18:02",
+   "store": "선빵",
+   "biz": "4213001940",
+   "pos": "",
+   "content": "메뉴 추가 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image (51).png",
+     "fid": "F0BSLSYJSM6",
+     "from": "댓글",
+     "path": "menu-files/1787302950_499909-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "베이글",
+       "name": "플레인베이글",
+       "price": 3500
+      },
+      {
+       "category": "베이글",
+       "name": "치즈감자베이글",
+       "price": 3800
+      },
+      {
+       "category": "베이글",
+       "name": "블루베리베이글",
+       "price": 3800
+      },
+      {
+       "category": "베이글",
+       "name": "소금베이글",
+       "price": 3800
+      },
+      {
+       "category": "베이글",
+       "name": "단팥베이글",
+       "price": 3800
+      },
+      {
+       "category": "베이글",
+       "name": "롤치즈베이글",
+       "price": 3800
+      },
+      {
+       "category": "베이글",
+       "name": "크림치즈베이글",
+       "price": 4200
+      },
+      {
+       "category": "베이글",
+       "name": "베이글묶음",
+       "price": 9900
+      }
+     ]
+    },
+    {
+     "name": "image (50).png",
+     "fid": "F0BRUEGSCCR",
+     "from": "댓글",
+     "path": "menu-files/1787302950_499909-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "쉬폰에반하다(초코)",
+       "price": 27000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "쉬폰에반하다(딸기)",
+       "price": 27000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "쉬폰에반하다(화이트)",
+       "price": 25000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "생크림케익1호",
+       "price": 29000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "생크림케익2호",
+       "price": 33000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "고구마케익1호",
+       "price": 29000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "고구마케익3호",
+       "price": 33000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "실키롤케익",
+       "price": 13000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "블루베리롤케익",
+       "price": 13000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "벌꿀카스테라",
+       "price": 14000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "녹차카스테라",
+       "price": 14000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "조각케익",
+       "price": 4500
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "실키롤(1/2)",
+       "price": 6900
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "블루베리롤(1/2)",
+       "price": 6900
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "생크림케익3호",
+       "price": 35000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "25/크리스마스케익",
+       "price": 33000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "초코케익1호",
+       "price": 22000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "크리스마스초코케익",
+       "price": 18000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "파네토네",
+       "price": 5500
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "촉촉파운드",
+       "price": 9000
+      },
+      {
+       "category": "케익/롤케익/선물류",
+       "name": "생과일케익",
+       "price": 7500
+      }
+     ]
+    },
+    {
+     "name": "image (49).png",
+     "fid": "F0BRNLN85N1",
+     "from": "댓글",
+     "path": "menu-files/1787302950_499909-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "간식류",
+       "name": "미니꿀호떡",
+       "price": 8000
+      },
+      {
+       "category": "간식류",
+       "name": "달콤러스크",
+       "price": 2500
+      },
+      {
+       "category": "간식류",
+       "name": "누네띠네",
+       "price": 2500
+      },
+      {
+       "category": "간식류",
+       "name": "미니와플(5입)",
+       "price": 4500
+      },
+      {
+       "category": "간식류",
+       "name": "미니치즈케익",
+       "price": 1600
+      },
+      {
+       "category": "간식류",
+       "name": "미니약과",
+       "price": 4900
+      },
+      {
+       "category": "간식류",
+       "name": "마늘바게트",
+       "price": 4800
+      },
+      {
+       "category": "간식류",
+       "name": "땅콩미니샌드",
+       "price": 2400
+      },
+      {
+       "category": "간식류",
+       "name": "찹쌀떡",
+       "price": 1000
+      },
+      {
+       "category": "간식류",
+       "name": "허니카스테라",
+       "price": 3200
+      },
+      {
+       "category": "간식류",
+       "name": "마늘스틱",
+       "price": 4800
+      },
+      {
+       "category": "간식류",
+       "name": "미니딸기파이",
+       "price": 4200
+      },
+      {
+       "category": "간식류",
+       "name": "미니크림치즈파이",
+       "price": 4200
+      },
+      {
+       "category": "간식류",
+       "name": "모닝바게트",
+       "price": 4500
+      },
+      {
+       "category": "간식류",
+       "name": "버터휘낭시에",
+       "price": 15000
+      },
+      {
+       "category": "간식류",
+       "name": "올리브치아바타",
+       "price": 2500
+      },
+      {
+       "category": "간식류",
+       "name": "통밀깜파뉴",
+       "price": 6500
+      },
+      {
+       "category": "간식류",
+       "name": "호두파이",
+       "price": 2000
+      },
+      {
+       "category": "간식류",
+       "name": "마들렌",
+       "price": 3000
+      },
+      {
+       "category": "간식류",
+       "name": "초코브라우니",
+       "price": 2000
+      },
+      {
+       "category": "간식류",
+       "name": "오븐에구웟도넛",
+       "price": 14000
+      },
+      {
+       "category": "간식류",
+       "name": "밤만쥬",
+       "price": 600
+      },
+      {
+       "category": "간식류",
+       "name": "쿠키+음료",
+       "price": 5000
+      },
+      {
+       "category": "간식류",
+       "name": "티슈브레드",
+       "price": 5500
+      },
+      {
+       "category": "간식류",
+       "name": "치즈올리브깜파뉴",
+       "price": 3500
+      }
+     ]
+    },
+    {
+     "name": "image (48).png",
+     "fid": "F0BRL9D3X7V",
+     "from": "댓글",
+     "path": "menu-files/1787302950_499909-3.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "샌드위치/햄버거",
+       "name": "감자샐러드샌드위치",
+       "price": 5200
+      },
+      {
+       "category": "샌드위치/햄버거",
+       "name": "참치클럽샌드위치",
+       "price": 5200
+      },
+      {
+       "category": "샌드위치/햄버거",
+       "name": "새우버거",
+       "price": 3900
+      },
+      {
+       "category": "샌드위치/햄버거",
+       "name": "치킨스테이크버거",
+       "price": 3900
+      },
+      {
+       "category": "샌드위치/햄버거",
+       "name": "함박스테이크버거",
+       "price": 3900
+      },
+      {
+       "category": "샌드위치/햄버거",
+       "name": "햄에그샌드위치",
+       "price": 4800
+      },
+      {
+       "category": "샌드위치/햄버거",
+       "name": "샌드위치1/2",
+       "price": 2900
+      }
+     ]
+    },
+    {
+     "name": "image (46).png",
+     "fid": "F0BRUEKN6JD",
+     "from": "댓글",
+     "path": "menu-files/1787302950_499909-4.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "고로케/도넛",
+       "name": "야채사라다빵",
+       "price": 4000
+      },
+      {
+       "category": "고로케/도넛",
+       "name": "잡채고로케",
+       "price": 3000
+      },
+      {
+       "category": "고로케/도넛",
+       "name": "찹쌀꽈배기",
+       "price": 1700
+      },
+      {
+       "category": "고로케/도넛",
+       "name": "통밀꽈배기",
+       "price": 2000
+      },
+      {
+       "category": "고로케/도넛",
+       "name": "미니찹쌀도너츠",
+       "price": 3600
+      },
+      {
+       "category": "고로케/도넛",
+       "name": "쫀득한찰떡볼",
+       "price": 1700
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "광두님 혹시 채팅중이세요?",
+    "아뇽 채팅중이면 완료라고 말해달라고 할라해쪄",
+    "문자보낼게염"
+   ],
+   "rc": 7,
+   "lr": "1787303071.752179",
+   "rfx": 3,
+   "status": "done",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787302950499909"
+  },
+  {
+   "ts": "1787302879.512159",
+   "date": "2026-08-21",
+   "time": "18:01",
+   "store": "장수사과빵",
+   "biz": "6820902012",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDgyMV8xNjM3MT",
+     "fid": "F0BRSF4B6RY",
+     "from": "댓글",
+     "path": "menu-files/1787302879_512159-0.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "장수사과빵",
+       "name": "장수사과빵 1개",
+       "price": 3800
+      },
+      {
+       "category": "장수사과빵",
+       "name": "장수사과빵 4개 세트",
+       "price": 15000
+      },
+      {
+       "category": "장수사과빵",
+       "name": "장수사과빵",
+       "price": 0
+      },
+      {
+       "category": "장수사과빵",
+       "name": "장수사과빵",
+       "price": 3500
+      },
+      {
+       "category": "장수사과빵",
+       "name": "장수사과빵세트",
+       "price": 15000
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDgyMV8xNjM3MT",
+     "fid": "F0BRB54MWEB",
+     "from": "댓글",
+     "path": "menu-files/1787302879_512159-1.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "커피",
+       "name": "아이스 아메리카노",
+       "price": 3500
+      },
+      {
+       "category": "커피",
+       "name": "아메리카노",
+       "price": 3500
+      },
+      {
+       "category": "커피",
+       "name": "카페라떼",
+       "price": 3800
+      },
+      {
+       "category": "커피",
+       "name": "바닐라카페라떼",
+       "price": 3800
+      },
+      {
+       "category": "커피",
+       "name": "아인슈페너",
+       "price": 4000
+      },
+      {
+       "category": "커피",
+       "name": "티라미수",
+       "price": 4000
+      },
+      {
+       "category": "커피",
+       "name": "흑임자카페라떼",
+       "price": 4000
+      },
+      {
+       "category": "커피",
+       "name": "아이스바닐라라떼",
+       "price": 3800
+      },
+      {
+       "category": "커피",
+       "name": "아이스카페라떼",
+       "price": 3800
+      },
+      {
+       "category": "커피",
+       "name": "아이스흑임자카페라떼",
+       "price": 4000
+      },
+      {
+       "category": "커피",
+       "name": "학생할인 아메리카노",
+       "price": 2900
+      },
+      {
+       "category": "커피",
+       "name": "이벤트 아메리카노",
+       "price": 3000
+      },
+      {
+       "category": "커피",
+       "name": "이벤트 아이스 아메리카노",
+       "price": 3000
+      },
+      {
+       "category": "커피",
+       "name": "샷추가",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDgyMV8xNjM3Mj",
+     "fid": "F0BRNLDH6MT",
+     "from": "댓글",
+     "path": "menu-files/1787302879_512159-2.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "딸기라떼",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "아이스말차라떼",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "아이스흑리떼",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "흑리떼",
+       "price": 4000
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDgyMV8xNjM3Mj",
+     "fid": "F0BRW6F7JMA",
+     "from": "댓글",
+     "path": "menu-files/1787302879_512159-3.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "장수사과빵",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "커피",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "논커피",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "과일",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "사과식초",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "사과즙",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "배송비",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "사과티",
+       "price": 3800
+      },
+      {
+       "category": "",
+       "name": "캐모마일",
+       "price": 3800
+      },
+      {
+       "category": "",
+       "name": "페퍼민트",
+       "price": 3800
+      },
+      {
+       "category": "",
+       "name": "아이스티",
+       "price": 3800
+      },
+      {
+       "category": "",
+       "name": "학생할인 아이스티,핫 초코",
+       "price": 2900
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDgyMV8xNjM3Mz",
+     "fid": "F0BRNLDNW4V",
+     "from": "댓글",
+     "path": "menu-files/1787302879_512159-4.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "사과요거트스무디",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "사과오미자에이드",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "이벤트사과오미자에이드",
+       "price": 3500
+      },
+      {
+       "category": "",
+       "name": "장수사과빙수",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "오미자요거트스무디",
+       "price": 4500
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDgyMV8xNjM3Mz",
+     "fid": "F0BRNLDG6S1",
+     "from": "댓글",
+     "path": "menu-files/1787302879_512159-5.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "과일",
+       "name": "장수사과",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "장수사과빵",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "커피",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "논커피",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "사과식초",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "사과즙",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "패션버",
+       "price": 0
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1787302908.141449",
+   "rfx": 3,
+   "status": "done",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787302879512159"
+  },
   {
    "ts": "1787298677.640629",
    "date": "2026-08-21",
@@ -3338,7 +4286,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BRUCTV74H",
      "from": "댓글",
-     "path": "menu-files/1787205276_051999-1.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -3406,13 +4353,13 @@ window.MENU_REQUESTS = {
        "name": "블루베리식빵",
        "price": 4500
       }
-     ]
+     ],
+     "path": "menu-files/1787205276_051999-1.png"
     },
     {
      "name": "image.png",
      "fid": "F0BRL7NGZD1",
      "from": "댓글",
-     "path": "menu-files/1787205276_051999-2.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -3445,13 +4392,13 @@ window.MENU_REQUESTS = {
        "name": "크로와상",
        "price": 2900
       }
-     ]
+     ],
+     "path": "menu-files/1787205276_051999-2.png"
     },
     {
      "name": "image.png",
      "fid": "F0BRL7QQGG3",
      "from": "댓글",
-     "path": "menu-files/1787205276_051999-3.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -3544,13 +4491,13 @@ window.MENU_REQUESTS = {
        "name": "콜라",
        "price": 1500
       }
-     ]
+     ],
+     "path": "menu-files/1787205276_051999-3.png"
     },
     {
      "name": "image.png",
      "fid": "F0BRQGC8886",
      "from": "댓글",
-     "path": "menu-files/1787205276_051999-4.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -3648,13 +4595,13 @@ window.MENU_REQUESTS = {
        "name": "딸기연유암모스(1/2)",
        "price": 2800
       }
-     ]
+     ],
+     "path": "menu-files/1787205276_051999-4.png"
     },
     {
      "name": "image.png",
      "fid": "F0BSLSBBP8Q",
      "from": "댓글",
-     "path": "menu-files/1787205276_051999-5.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -3687,7 +4634,8 @@ window.MENU_REQUESTS = {
        "name": "쫀득한찰떡볼",
        "price": 1700
       }
-     ]
+     ],
+     "path": "menu-files/1787205276_051999-5.png"
     },
     {
      "name": "image.png",
@@ -4035,10 +4983,11 @@ window.MENU_REQUESTS = {
     "나머지 메뉴판 지금 고센에서 수취 중이에요!",
     "오 감삼다 파일도 함 까볼게여",
     "메일로 네장만 보내셨네",
-    "쿠키는 안하신다고 합니다"
+    "쿠키는 안하신다고 합니다",
+    "맞아요 ㅋㅋ.."
    ],
-   "rc": 14,
-   "lr": "1787302839.531009",
+   "rc": 17,
+   "lr": "1787302850.271859",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
@@ -35804,29 +36753,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784711911498519"
-  },
-  {
-   "ts": "1784710940.096429",
-   "date": "2026-07-22",
-   "time": "18:02",
-   "store": "오늘은빵먹는날",
-   "biz": "8644400728",
-   "pos": "오케이포스",
-   "content": "식빵/// 압구정식빵.블루베리식빵.먹물치즈.옥수수식빵.쫄깃한치즈브레드.브리오쉬.에삐베이컨 삭제\n강낭콩 완드베기 5500원 등록이여\n빵/// 먹물크림치즈 삭제. 몽키브레드삭제",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "메뉴등록 완료 솔라피 발송완료"
-   ],
-   "rc": 2,
-   "lr": "1784726900.353889",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784710940096429"
   }
  ],
  "ocr": {
