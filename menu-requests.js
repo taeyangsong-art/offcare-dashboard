@@ -3,10 +3,125 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 817,
- "updatedAt": "2026-08-21 09:39",
+ "version": 818,
+ "updatedAt": "2026-08-21 10:01",
  "days": 30,
  "items": [
+  {
+   "ts": "1787273874.394869",
+   "date": "2026-08-21",
+   "time": "09:57",
+   "store": "현이네 빤라쵄",
+   "biz": "3340203772",
+   "pos": "토스포스",
+   "content": "메뉴판",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/157qvyFqY3L2qnHkaPwtLTdQTTMEB-l_l/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "157qvyFqY3L2qnHkaPwtLTdQTTMEB-l_l",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "무침",
+       "name": "야채",
+       "price": 1500
+      },
+      {
+       "category": "무침",
+       "name": "소고기",
+       "price": 3000
+      },
+      {
+       "category": "무침",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "구이",
+       "name": "소세지",
+       "price": 4000
+      },
+      {
+       "category": "주류및음료",
+       "name": "소주",
+       "price": 5000
+      },
+      {
+       "category": "주류및음료",
+       "name": "맥주",
+       "price": 5000
+      },
+      {
+       "category": "주류및음료",
+       "name": "음료수",
+       "price": 2000
+      },
+      {
+       "category": "주류및음료",
+       "name": "중국음료수",
+       "price": 3000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787273880.439079",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787273874394869"
+  },
+  {
+   "ts": "1787273800.363719",
+   "date": "2026-08-21",
+   "time": "09:56",
+   "store": "더푸드",
+   "biz": "4300403429",
+   "pos": "토스포스",
+   "content": "아메리카노 3000\n아메리카노아이스 4000\n카페라떼 4000\n카페라떼아이스5000\n바닐라라떼 4000\n바닐라라떼 5000\n자몽차 4000\n유자차 4000\n아이스티4000\n레모네이드4000\n오렌지쥬스 3000\n음료수 (콜라@사이다) 2000",
+   "special": "식사란에 커피메뉴 추가해 주실래요 기존커피 인상된건 다시 수정해주세요",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787273803.803189",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787273800363719"
+  },
+  {
+   "ts": "1787273572.123259",
+   "date": "2026-08-21",
+   "time": "09:52",
+   "store": "더 멀리",
+   "biz": "3976300914",
+   "pos": "토스포스",
+   "content": "책 추가 부탁드려요. \n\n오디세이아(마음이음 클래식 4)\t16,800\n오디세이아(세계문학그림책)\t15,000\n탁월한 피해자\t\t19,800\n엄마가 유령이 되었어!\t12,000\n오뒷세이아\t\t25,000",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "오디세이 재밌긴해",
+    "트렌디하네"
+   ],
+   "rc": 3,
+   "lr": "1787273638.568909",
+   "rfx": 3,
+   "status": "done",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787273572123259"
+  },
   {
    "ts": "1787271840.039809",
    "date": "2026-08-21",
