@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4500,
+  "version": 4501,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126431,7 +126431,67 @@ window.SLACK_DATA = {
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "11:48"
+      "updatedAt": "12:32",
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 0,
+          "low": 0
+        },
+        "nps": {
+          "count": 1,
+          "low": 1
+        },
+        "high": {
+          "install": 0,
+          "nps": 0
+        },
+        "npsDist": {
+          "1": 1
+        },
+        "installDist": {},
+        "byIndustry": {},
+        "byTenure": {
+          "3개월": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "byVan": {
+          "SMARTRO": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 1
+        },
+        "alerts": [
+          {
+            "time": "12:32",
+            "store": "한바다횟집",
+            "storeId": "467633",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "네이버 플레이스 연동도 안되고 옵션넣기도 힘들고 가끔 포스 뻑나서 키보드도 안되고 동네에는 A/S도 안되서 A/S신청해서 가게 와도 자기들은 이거 와도 돈도 안된다고 친절하지도 않음 제대로 시스템을 갖추고 A/S도 제대로 될때 추천할거임",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
+        "praises": []
+      }
     }
   },
   "resp": {
@@ -126478,23 +126538,23 @@ window.SLACK_DATA = {
       },
       "1787362200.857709": {
         "post": "1787362200.857709",
-        "lastSeen": 1787369428.647
+        "lastSeen": 1787370327.325
       },
       "1787362892.899109": {
         "post": "1787362892.899109",
-        "lastSeen": 1787369428.647
+        "lastSeen": 1787370327.325
       },
       "1787364002.062639": {
         "post": "1787364002.062639",
-        "lastSeen": 1787369428.647
+        "lastSeen": 1787370327.325
       },
       "1787364900.802249": {
         "post": "1787364900.802249",
-        "lastSeen": 1787369428.647
+        "lastSeen": 1787370327.325
       },
       "1787366933.762739": {
         "post": "1787366933.762739",
-        "lastSeen": 1787369428.647
+        "lastSeen": 1787370327.325
       }
     },
     "days": {
@@ -155770,7 +155830,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-22 12:30",
+    "at": "2026-08-22 12:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
