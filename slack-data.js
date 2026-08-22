@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4518,
+  "version": 4519,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126269,6 +126269,7 @@ window.SLACK_DATA = {
     "2026-08-22": {
       "counts": {
         "as": {
+          "서상원": 1,
           "미지정": 7,
           "심성현": 21,
           "송태양": 1
@@ -126279,7 +126280,7 @@ window.SLACK_DATA = {
           "송태양": 1
         },
         "menu": {
-          "서상원": 2
+          "서상원": 3
         }
       },
       "pending": [
@@ -126296,6 +126297,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "15:29",
+          "store": "오늘도 한끼하세요",
+          "biz": "8244201327",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "메이트포스 연동 요청 주시어 컨택 부탁 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "15:20",
           "store": "워크앤레스트",
@@ -126362,6 +126374,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "프로그램 설치 및 프론트 프린터 확인 배달 프로그램 설치"
+        },
+        {
+          "time": "14:26",
+          "store": "오로라 까페",
+          "biz": "6874001423",
+          "cat": "menu",
+          "emp": "서상원",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 메뉴만등록 담주에 사진넣어주삼"
         },
         {
           "time": "14:24",
@@ -126732,19 +126755,19 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 35,
+        "online": 37,
         "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "15:30",
+      "updatedAt": "15:38",
       "voc": {
-        "responses": 2,
+        "responses": 3,
         "install": {
           "count": 0,
           "low": 0
         },
         "nps": {
-          "count": 2,
+          "count": 3,
           "low": 1
         },
         "high": {
@@ -126753,11 +126776,16 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "1": 1,
+          "9": 1,
           "10": 1
         },
         "installDist": {},
         "byIndustry": {},
         "byTenure": {
+          "1개월": {
+            "total": 1,
+            "low": 0
+          },
           "6개월": {
             "total": 1,
             "low": 0
@@ -126768,6 +126796,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 1,
+            "low": 0
+          },
           "NICE": {
             "total": 1,
             "low": 0
@@ -126852,15 +126884,19 @@ window.SLACK_DATA = {
       },
       "1787364900.802249": {
         "post": "1787364900.802249",
-        "lastSeen": 1787380231.486
+        "lastSeen": 1787381124.755
       },
       "1787376498.964949": {
         "post": "1787376498.964949",
-        "lastSeen": 1787380231.486
+        "lastSeen": 1787381124.755
       },
-      "1787380198.424229": {
-        "post": "1787380198.424229",
-        "lastSeen": 1787380231.486
+      "1787380348.747229": {
+        "post": "1787380348.747229",
+        "lastSeen": 1787381124.755
+      },
+      "1787380279.208529": {
+        "post": "1787380279.208529",
+        "lastSeen": 1787381124.755
       }
     },
     "days": {
@@ -156031,8 +156067,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-22": {
-        "cnt": 28,
-        "sumMin": 954.629431136449,
+        "cnt": 29,
+        "sumMin": 962.6243689894675,
         "over": 6,
         "items": [
           {
@@ -156258,13 +156294,21 @@ window.SLACK_DATA = {
             "biz": "2863400841",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "15:29",
+            "min": 8,
+            "store": "오늘도 한끼하세요",
+            "biz": "8244201327",
+            "who": "서상원",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-22 15:30",
+    "at": "2026-08-22 15:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

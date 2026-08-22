@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 859,
- "updatedAt": "2026-08-22 15:30",
+ "version": 860,
+ "updatedAt": "2026-08-22 15:45",
  "days": 30,
  "items": [
   {
@@ -129,9 +129,11 @@ window.MENU_REQUESTS = {
      ]
     }
    ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787376390.727189",
+   "replies": [
+    "메뉴만등록 담주에 사진넣어주삼"
+   ],
+   "rc": 2,
+   "lr": "1787380249.058919",
    "rfx": 3,
    "status": "done",
    "handler": "서상원",
@@ -36545,27 +36547,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784789294228089"
-  },
-  {
-   "ts": "1784788744.924859",
-   "date": "2026-07-23",
-   "time": "15:39",
-   "store": "보사노바 베이커리랩 신정점",
-   "biz": "5988502216",
-   "pos": "",
-   "content": "보사노바 커피로스터스 잠실점 (<tel:···|···>) 복제 부탁드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784789742.080779",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784788744924859"
   }
  ],
  "ocr": {
