@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4487,
+  "version": 4488,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126257,12 +126257,26 @@ window.SLACK_DATA = {
     },
     "2026-08-22": {
       "counts": {
+        "as": {
+          "심성현": 1
+        },
         "onboarding": {
           "심성현": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:24",
+          "store": "더팬트리(THE PANTRY)",
+          "biz": "4050197594",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "작일 홀 프린터기는 온보딩 완료",
+          "hw": "",
+          "intake": "online",
+          "note": "노트북 네트워크 확인 중 / /"
+        },
         {
           "time": "09:00",
           "store": "오에뜨(OETTE)",
@@ -126276,11 +126290,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
+        "online": 2,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:30"
+      "updatedAt": "09:55"
     }
   },
   "resp": {
@@ -126328,6 +126342,14 @@ window.SLACK_DATA = {
       "1787305159.854719": {
         "post": "1787305159.854719",
         "lastSeen": 1787327779.104
+      },
+      "1787360106.885569": {
+        "post": "1787360106.885569",
+        "lastSeen": 1787360432.518
+      },
+      "1787359953.112289": {
+        "post": "1787359953.112289",
+        "lastSeen": 1787360432.518
       }
     },
     "days": {
@@ -155515,7 +155537,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-22 09:45",
+    "at": "2026-08-22 10:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
