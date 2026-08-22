@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4540,
+  "version": 4541,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126269,7 +126269,7 @@ window.SLACK_DATA = {
     "2026-08-22": {
       "counts": {
         "as": {
-          "서상원": 4,
+          "서상원": 5,
           "심성현": 30,
           "미지정": 12,
           "송태양": 1
@@ -126298,6 +126298,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "19:17",
+          "store": "까까유",
+          "biz": "7170303464",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "포프(아이맥) 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "18:33",
           "store": "토리노츠키",
@@ -126977,43 +126988,43 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 53,
+        "online": 54,
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "18:33",
+      "updatedAt": "19:20",
       "voc": {
-        "responses": 6,
+        "responses": 7,
         "install": {
-          "count": 1,
+          "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 6,
+          "count": 7,
           "low": 1
         },
         "high": {
-          "install": 1,
-          "nps": 4
+          "install": 2,
+          "nps": 5
         },
         "npsDist": {
           "1": 1,
           "9": 1,
-          "10": 4
+          "10": 5
         },
         "installDist": {
-          "5": 1
+          "5": 2
         },
         "byIndustry": {
-          "서비스[뷰티,헤어]": 1
+          "서비스[뷰티,헤어]": 2
         },
         "byTenure": {
-          "12개월": {
+          "구매설치": {
             "total": 2,
             "low": 0
           },
-          "구매설치": {
-            "total": 1,
+          "12개월": {
+            "total": 2,
             "low": 0
           },
           "1개월": {
@@ -127031,7 +127042,7 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KPN": {
-            "total": 3,
+            "total": 4,
             "low": 0
           },
           "KIS": {
@@ -127114,15 +127125,15 @@ window.SLACK_DATA = {
       },
       "1787376498.964949": {
         "post": "1787376498.964949",
-        "lastSeen": 1787393725.021
+        "lastSeen": 1787394626.744
       },
       "1787382017.709389": {
         "post": "1787382017.709389",
-        "lastSeen": 1787393725.021
+        "lastSeen": 1787394626.744
       },
       "1787388392.430669": {
         "post": "1787388392.430669",
-        "lastSeen": 1787393725.021
+        "lastSeen": 1787394626.744
       }
     },
     "days": {
@@ -156622,7 +156633,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-22 19:15",
+    "at": "2026-08-22 19:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
