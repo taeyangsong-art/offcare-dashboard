@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 862,
- "updatedAt": "2026-08-22 16:15",
+ "version": 863,
+ "updatedAt": "2026-08-22 16:30",
  "days": 30,
  "items": [
   {
@@ -36390,27 +36390,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784792863517579"
-  },
-  {
-   "ts": "1784791428.618789",
-   "date": "2026-07-23",
-   "time": "16:23",
-   "store": "청학동하이트마을",
-   "biz": "6392500586",
-   "pos": "퍼스트포스",
-   "content": "메뉴 등록 요청\n\n족발 포장 11,000원 상품 밑에 족발 포장 12,000원 상품 추가 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1784792078.985599",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784791428618789"
   }
  ],
  "ocr": {
