@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4524,
+  "version": 4525,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126269,7 +126269,7 @@ window.SLACK_DATA = {
     "2026-08-22": {
       "counts": {
         "as": {
-          "심성현": 24,
+          "심성현": 25,
           "서상원": 1,
           "미지정": 9,
           "송태양": 1
@@ -126309,6 +126309,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "16:19",
+          "store": "우디브룩 (Woody Brook)",
+          "biz": "6062252180",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포프 아이패드로 사용 중 / 어제까지 잘 사용 하다가 갑자기 오늘 영수증 출력이 안됨 / 다른 기능 작동엔 이상이 없다고 합니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "TS400B TS400W 2대 이용 매장 / 갤럭시에서 애플 기기로 변경 / 불가능한 부분 안내 후 갤럭시로 재온보딩 출력 테스트 완료"
+        },
         {
           "time": "16:00",
           "store": "610피아노스튜디오학원",
@@ -126844,33 +126855,37 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 43,
+        "online": 44,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "16:19",
+      "updatedAt": "16:42",
       "voc": {
-        "responses": 3,
+        "responses": 4,
         "install": {
           "count": 0,
           "low": 0
         },
         "nps": {
-          "count": 3,
+          "count": 4,
           "low": 1
         },
         "high": {
           "install": 0,
-          "nps": 1
+          "nps": 2
         },
         "npsDist": {
           "1": 1,
           "9": 1,
-          "10": 1
+          "10": 2
         },
         "installDist": {},
         "byIndustry": {},
         "byTenure": {
+          "12개월": {
+            "total": 1,
+            "low": 0
+          },
           "1개월": {
             "total": 1,
             "low": 0
@@ -126885,6 +126900,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 1,
+            "low": 0
+          },
           "KPN": {
             "total": 1,
             "low": 0
@@ -126969,11 +126988,15 @@ window.SLACK_DATA = {
       },
       "1787376498.964949": {
         "post": "1787376498.964949",
-        "lastSeen": 1787383838.25
+        "lastSeen": 1787384727.845
       },
       "1787382017.709389": {
         "post": "1787382017.709389",
-        "lastSeen": 1787383838.25
+        "lastSeen": 1787384727.845
+      },
+      "1787384576.859709": {
+        "post": "1787384576.859709",
+        "lastSeen": 1787384727.845
       }
     },
     "days": {
@@ -156425,7 +156448,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-22 16:30",
+    "at": "2026-08-22 16:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
