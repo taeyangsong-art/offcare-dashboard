@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4509,
+  "version": 4510,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126258,12 +126258,12 @@ window.SLACK_DATA = {
     "2026-08-22": {
       "counts": {
         "as": {
-          "심성현": 15,
+          "심성현": 17,
           "송태양": 1,
           "미지정": 3
         },
         "onboarding": {
-          "미지정": 1,
+          "미지정": 2,
           "심성현": 3,
           "송태양": 1
         }
@@ -126282,6 +126282,39 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "14:04",
+          "store": "수원왁싱해봄",
+          "biz": "7770701641",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포프유(pc) 온보딩 요청 드립니다! / 현재는 휴대폰에 온보딩 되어있음",
+          "hw": "",
+          "intake": "online",
+          "note": "윈도우7 노트북 기기 노후화로 설치 불가능 안내 노트북 업그레이드 안내 완료"
+        },
+        {
+          "time": "13:55",
+          "store": "깨순이네",
+          "biz": "3194400489",
+          "cat": "onboarding",
+          "emp": "미지정",
+          "req": "포프 홴드폰 핫스팟 온보딩 부탁 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "13:49",
+          "store": "쉬끄헤어",
+          "biz": "8827700063",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "터미널 고장으로 교체 받음",
+          "hw": "",
+          "intake": "offline",
+          "note": "업데이트 에러 litesoInstaller failed. code:-11107 기기 교체 필요"
+        },
         {
           "time": "13:37",
           "store": "붙임머리 따봄",
@@ -126552,11 +126585,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 22,
-        "offline": 3,
+        "online": 24,
+        "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "13:55",
+      "updatedAt": "14:11",
       "voc": {
         "responses": 1,
         "install": {
@@ -126663,19 +126696,19 @@ window.SLACK_DATA = {
       },
       "1787364900.802249": {
         "post": "1787364900.802249",
-        "lastSeen": 1787374833.582
+        "lastSeen": 1787375725.44
       },
       "1787372648.321179": {
         "post": "1787372648.321179",
-        "lastSeen": 1787374833.582
-      },
-      "1787374536.379179": {
-        "post": "1787374536.379179",
-        "lastSeen": 1787374833.582
+        "lastSeen": 1787375725.44
       },
       "1787374359.448839": {
         "post": "1787374359.448839",
-        "lastSeen": 1787374833.582
+        "lastSeen": 1787375725.44
+      },
+      "1787375460.239639": {
+        "post": "1787375460.239639",
+        "lastSeen": 1787375725.44
       }
     },
     "days": {
@@ -155846,8 +155879,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-22": {
-        "cnt": 19,
-        "sumMin": 818.4341773152352,
+        "cnt": 20,
+        "sumMin": 830.8197076678276,
         "over": 5,
         "items": [
           {
@@ -156001,13 +156034,21 @@ window.SLACK_DATA = {
             "biz": "3511701962",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "13:55",
+            "min": 12.4,
+            "store": "깨순이네",
+            "biz": "3194400489",
+            "who": "",
+            "cat": "onboarding"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-22 14:00",
+    "at": "2026-08-22 14:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
