@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 849,
- "updatedAt": "2026-08-22 09:30",
+ "version": 850,
+ "updatedAt": "2026-08-22 09:45",
  "days": 30,
  "items": [
   {
@@ -36702,29 +36702,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784770829821969"
-  },
-  {
-   "ts": "1784767321.248779",
-   "date": "2026-07-23",
-   "time": "09:42",
-   "store": "백본등뼈찜 오창직영점",
-   "biz": "1121017012",
-   "pos": "",
-   "content": "테이블, 메뉴등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "여기다 이미지만 올려줘염"
-   ],
-   "rc": 3,
-   "lr": "1784767560.625109",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784767321248779"
   }
  ],
  "ocr": {
