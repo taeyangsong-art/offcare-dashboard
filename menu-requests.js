@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 865,
- "updatedAt": "2026-08-22 17:00",
+ "version": 866,
+ "updatedAt": "2026-08-22 17:15",
  "days": 30,
  "items": [
   {
@@ -20,7 +20,147 @@ window.MENU_REQUESTS = {
     "https://drive.google.com/file/d/1r4ytQ9zwBUyK1G36wIpCtWdBfje9MDrn/view?usp=drivesdk"
    ],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BS1J174EM",
+     "from": "댓글",
+     "path": "menu-files/1787385230_956689-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "COFFEE",
+       "name": "아메리카노(HOT)",
+       "price": 4000
+      },
+      {
+       "category": "COFFEE",
+       "name": "아메리카노(ICE)",
+       "price": 4000
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페라떼(HOT)",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페라떼(ICE)",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "바닐라라떼(HOT)",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "바닐라라떼(ICE)",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "카라멜마키아또(HOT)",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "카라멜마키아또(ICE)",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "젤라또 아포카토(ICE)",
+       "price": 6000
+      },
+      {
+       "category": "COFFEE",
+       "name": "달달구리(HOT)",
+       "price": 3000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "녹차라떼(HOT)",
+       "price": 5000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "초코라떼(HOT)",
+       "price": 5000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "초코라떼(ICE)",
+       "price": 5000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "아이스티",
+       "price": 5000
+      },
+      {
+       "category": "ADE",
+       "name": "레몬",
+       "price": 5000
+      },
+      {
+       "category": "ADE",
+       "name": "자몽",
+       "price": 5000
+      },
+      {
+       "category": "ADE",
+       "name": "망고",
+       "price": 5000
+      },
+      {
+       "category": "ADE",
+       "name": "청포도",
+       "price": 5000
+      },
+      {
+       "category": "ADE",
+       "name": "깔라만시",
+       "price": 5000
+      },
+      {
+       "category": "TEA",
+       "name": "허브차",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "생강차",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "유자차",
+       "price": 4000
+      },
+      {
+       "category": "SPECIAL",
+       "name": "미숫가루",
+       "price": 5000
+      },
+      {
+       "category": "SPECIAL",
+       "name": "수박주스(착즙100%)",
+       "price": 6000
+      },
+      {
+       "category": "SPECIAL",
+       "name": "컵빙수",
+       "price": 6000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "녹차라떼(ICE)",
+       "price": 5000
+      }
+     ]
+    }
+   ],
    "datt": [
     {
      "id": "1r4ytQ9zwBUyK1G36wIpCtWdBfje9MDrn",
@@ -135,11 +275,11 @@ window.MENU_REQUESTS = {
     }
    ],
    "replies": [],
-   "rc": 1,
-   "lr": "1787385234.606569",
+   "rc": 2,
+   "lr": "1787385845.351159",
    "rfx": 3,
-   "status": "confirm",
-   "handler": "심성현",
+   "status": "dup",
+   "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787385230956689"
   },
   {

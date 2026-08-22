@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4527,
+  "version": 4528,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126269,8 +126269,8 @@ window.SLACK_DATA = {
     "2026-08-22": {
       "counts": {
         "as": {
+          "심성현": 27,
           "미지정": 10,
-          "심성현": 26,
           "서상원": 1,
           "송태양": 1
         },
@@ -126309,6 +126309,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "17:10",
+          "store": "취한달밤",
+          "biz": "1442302312",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "유프 출력 시 영수증이 너무 말려서 출력되어 확인 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
         {
           "time": "16:42",
           "store": "플레이코어 풋볼아카데미",
@@ -126878,28 +126889,28 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 46,
-        "offline": 7,
+        "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "17:00",
+      "updatedAt": "17:14",
       "voc": {
-        "responses": 5,
+        "responses": 6,
         "install": {
           "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 5,
+          "count": 6,
           "low": 1
         },
         "high": {
           "install": 1,
-          "nps": 3
+          "nps": 4
         },
         "npsDist": {
           "1": 1,
           "9": 1,
-          "10": 3
+          "10": 4
         },
         "installDist": {
           "5": 1
@@ -126908,11 +126919,11 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
-          "구매설치": {
-            "total": 1,
+          "12개월": {
+            "total": 2,
             "low": 0
           },
-          "12개월": {
+          "구매설치": {
             "total": 1,
             "low": 0
           },
@@ -126931,7 +126942,7 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KPN": {
-            "total": 2,
+            "total": 3,
             "low": 0
           },
           "KIS": {
@@ -127018,15 +127029,15 @@ window.SLACK_DATA = {
       },
       "1787376498.964949": {
         "post": "1787376498.964949",
-        "lastSeen": 1787385633.222
+        "lastSeen": 1787386528.766
       },
       "1787382017.709389": {
         "post": "1787382017.709389",
-        "lastSeen": 1787385633.222
+        "lastSeen": 1787386528.766
       },
       "1787385600.926489": {
         "post": "1787385600.926489",
-        "lastSeen": 1787385633.222
+        "lastSeen": 1787386528.766
       }
     },
     "days": {
@@ -156486,7 +156497,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-22 17:00",
+    "at": "2026-08-22 17:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
