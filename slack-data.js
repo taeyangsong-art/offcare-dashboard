@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4506,
+  "version": 4507,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126257,14 +126257,14 @@ window.SLACK_DATA = {
     },
     "2026-08-22": {
       "counts": {
+        "as": {
+          "심성현": 14,
+          "미지정": 2
+        },
         "onboarding": {
           "미지정": 1,
           "심성현": 3,
           "송태양": 1
-        },
-        "as": {
-          "미지정": 2,
-          "심성현": 13
         }
       },
       "pending": [
@@ -126281,6 +126281,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "13:27",
+          "store": "쓰담한의원",
+          "biz": "6931302983",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "pc 포프 유프 사용중",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "13:19",
           "store": "왕새우꾸이",
@@ -126507,11 +126518,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 19,
+        "online": 20,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "13:27",
+      "updatedAt": "13:37",
       "voc": {
         "responses": 1,
         "install": {
@@ -126618,19 +126629,15 @@ window.SLACK_DATA = {
       },
       "1787364900.802249": {
         "post": "1787364900.802249",
-        "lastSeen": 1787373030.907
+        "lastSeen": 1787373929.394
       },
       "1787366933.762739": {
         "post": "1787366933.762739",
-        "lastSeen": 1787373030.907
-      },
-      "1787372821.296969": {
-        "post": "1787372821.296969",
-        "lastSeen": 1787373030.907
+        "lastSeen": 1787373929.394
       },
       "1787372648.321179": {
         "post": "1787372648.321179",
-        "lastSeen": 1787373030.907
+        "lastSeen": 1787373929.394
       }
     },
     "days": {
@@ -155801,8 +155808,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-22": {
-        "cnt": 17,
-        "sumMin": 685.4875974456469,
+        "cnt": 18,
+        "sumMin": 696.4684896310171,
         "over": 4,
         "items": [
           {
@@ -155940,13 +155947,21 @@ window.SLACK_DATA = {
             "biz": "7326600554",
             "who": "심성현",
             "cat": "as"
+          },
+          {
+            "hm": "13:27",
+            "min": 11,
+            "store": "쓰담한의원",
+            "biz": "6931302983",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-22 13:30",
+    "at": "2026-08-22 13:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
