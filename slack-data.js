@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4504,
+  "version": 4505,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126257,27 +126257,17 @@ window.SLACK_DATA = {
     },
     "2026-08-22": {
       "counts": {
+        "onboarding": {
+          "미지정": 1,
+          "심성현": 2,
+          "송태양": 1
+        },
         "as": {
           "미지정": 2,
           "심성현": 13
-        },
-        "onboarding": {
-          "송태양": 1,
-          "심성현": 1
         }
       },
       "pending": [
-        {
-          "time": "11:00",
-          "store": "부자 필라테스",
-          "biz": "7326600554",
-          "handler": "심성현",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "1차 부재"
-          ]
-        },
         {
           "time": "10:54",
           "store": "찌개달인",
@@ -126303,6 +126293,17 @@ window.SLACK_DATA = {
       ],
       "done": [
         {
+          "time": "13:19",
+          "store": "왕새우꾸이",
+          "biz": "3413101734",
+          "cat": "onboarding",
+          "emp": "미지정",
+          "req": "포프유금(태블릿) 온보딩 요청 드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
           "time": "13:09",
           "store": "소소한우",
           "biz": "4431802554",
@@ -126311,7 +126312,18 @@ window.SLACK_DATA = {
           "req": "태블릿 포프 온보딩 상태 점검 요청 드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "프로트 재온보딩 테블릿 연결"
+        },
+        {
+          "time": "13:06",
+          "store": "발로르 종합격투기 PT",
+          "biz": "6421402828",
+          "cat": "onboarding",
+          "emp": "심성현",
+          "req": "데스크탑 포프 유프 온보딩 부탁 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "기존 TID 삭제 1047556055 온보딩 완료"
         },
         {
           "time": "13:00",
@@ -126322,7 +126334,7 @@ window.SLACK_DATA = {
           "req": "포프유프(노트북) / 영수증 연결 및 설정 영상통화 안내요청",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "영수증 속도 115200으로 조정"
         },
         {
           "time": "13:00",
@@ -126495,11 +126507,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 18,
+        "online": 19,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "13:09",
+      "updatedAt": "13:19",
       "voc": {
         "responses": 1,
         "install": {
@@ -126606,11 +126618,11 @@ window.SLACK_DATA = {
       },
       "1787364900.802249": {
         "post": "1787364900.802249",
-        "lastSeen": 1787372124.187
+        "lastSeen": 1787372520.706
       },
       "1787366933.762739": {
         "post": "1787366933.762739",
-        "lastSeen": 1787372124.187
+        "lastSeen": 1787372520.706
       }
     },
     "days": {
@@ -155926,7 +155938,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-22 13:15",
+    "at": "2026-08-22 13:22",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
