@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4547,
+  "version": 4548,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126268,16 +126268,16 @@ window.SLACK_DATA = {
     },
     "2026-08-22": {
       "counts": {
+        "as": {
+          "서상원": 5,
+          "심성현": 30,
+          "미지정": 12,
+          "송태양": 1
+        },
         "onboarding": {
           "서상원": 3,
           "심성현": 4,
           "미지정": 4,
-          "송태양": 1
-        },
-        "as": {
-          "서상원": 4,
-          "심성현": 30,
-          "미지정": 12,
           "송태양": 1
         },
         "menu": {
@@ -126298,6 +126298,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "20:19",
+          "store": "옥탑방그녀들",
+          "biz": "3744800183",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "포프(휴대폰) + 유프 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "19:17",
           "store": "까까유",
@@ -126988,11 +126999,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 54,
+        "online": 55,
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "19:50",
+      "updatedAt": "20:19",
       "voc": {
         "responses": 10,
         "install": {
@@ -127176,15 +127187,15 @@ window.SLACK_DATA = {
       },
       "1787376498.964949": {
         "post": "1787376498.964949",
-        "lastSeen": 1787397322.4
+        "lastSeen": 1787398228.568
       },
       "1787382017.709389": {
         "post": "1787382017.709389",
-        "lastSeen": 1787397322.4
+        "lastSeen": 1787398228.568
       },
       "1787388392.430669": {
         "post": "1787388392.430669",
-        "lastSeen": 1787397322.4
+        "lastSeen": 1787398228.568
       }
     },
     "days": {
@@ -156684,7 +156695,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-22 20:15",
+    "at": "2026-08-22 20:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
