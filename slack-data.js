@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4529,
+  "version": 4530,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126270,7 +126270,7 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "심성현": 27,
-          "미지정": 10,
+          "미지정": 11,
           "서상원": 1,
           "송태양": 1
         },
@@ -126319,6 +126319,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": ""
+        },
+        {
+          "time": "17:00",
+          "store": "610피아노스튜디오학원",
+          "biz": "2500504023",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "포프유(노트북) 온보딩 요청 드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "연결 설정 확인 맥북+프론트+프린터"
         },
         {
           "time": "16:42",
@@ -126888,11 +126899,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 46,
+        "online": 47,
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "17:14",
+      "updatedAt": "17:27",
       "voc": {
         "responses": 6,
         "install": {
@@ -127029,15 +127040,15 @@ window.SLACK_DATA = {
       },
       "1787376498.964949": {
         "post": "1787376498.964949",
-        "lastSeen": 1787386599.983
+        "lastSeen": 1787387431.052
       },
       "1787382017.709389": {
         "post": "1787382017.709389",
-        "lastSeen": 1787386599.983
+        "lastSeen": 1787387431.052
       },
-      "1787385600.926489": {
-        "post": "1787385600.926489",
-        "lastSeen": 1787386599.983
+      "1787387241.650029": {
+        "post": "1787387241.650029",
+        "lastSeen": 1787387431.052
       }
     },
     "days": {
@@ -156208,8 +156219,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-22": {
-        "cnt": 35,
-        "sumMin": 1030.179316767057,
+        "cnt": 36,
+        "sumMin": 1053.7558336138727,
         "over": 6,
         "items": [
           {
@@ -156491,13 +156502,21 @@ window.SLACK_DATA = {
             "biz": "3155000950",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "17:00",
+            "min": 23.6,
+            "store": "610피아노스튜디오학원",
+            "biz": "2500504023",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-22 17:16",
+    "at": "2026-08-22 17:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
