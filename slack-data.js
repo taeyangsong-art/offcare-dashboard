@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4550,
+  "version": 4551,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -127003,39 +127003,39 @@ window.SLACK_DATA = {
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "20:19",
+      "updatedAt": "20:50",
       "voc": {
-        "responses": 10,
+        "responses": 11,
         "install": {
-          "count": 4,
+          "count": 5,
           "low": 1
         },
         "nps": {
-          "count": 10,
+          "count": 11,
           "low": 2
         },
         "high": {
-          "install": 2,
+          "install": 3,
           "nps": 6
         },
         "npsDist": {
           "1": 1,
           "5": 1,
-          "9": 2,
+          "9": 3,
           "10": 6
         },
         "installDist": {
           "2": 1,
           "3": 1,
-          "5": 2
+          "5": 3
         },
         "byIndustry": {
-          "서비스[학원]": 2,
+          "서비스[학원]": 3,
           "서비스[뷰티,헤어]": 2
         },
         "byTenure": {
           "구매설치": {
-            "total": 4,
+            "total": 5,
             "low": 1
           },
           "12개월": {
@@ -127056,6 +127056,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 5,
+            "low": 0
+          },
           "SMARTRO": {
             "total": 2,
             "low": 2
@@ -127066,10 +127070,6 @@ window.SLACK_DATA = {
           },
           "KIS": {
             "total": 2,
-            "low": 0
-          },
-          "KPN": {
-            "total": 4,
             "low": 0
           },
           "NICE": {
@@ -127136,6 +127136,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "20:50",
+            "store": "벨르헤어",
+            "storeId": "599709",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 5,
+            "nps": 9,
+            "text": "꼼꼼히 설명해주심 생각보다 편함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "19:50",
             "store": "몰입의즐거움",
             "storeId": "579544",
@@ -127187,15 +127199,15 @@ window.SLACK_DATA = {
       },
       "1787376498.964949": {
         "post": "1787376498.964949",
-        "lastSeen": 1787399122.229
+        "lastSeen": 1787399528.49
       },
       "1787382017.709389": {
         "post": "1787382017.709389",
-        "lastSeen": 1787399122.229
+        "lastSeen": 1787399528.49
       },
       "1787388392.430669": {
         "post": "1787388392.430669",
-        "lastSeen": 1787399122.229
+        "lastSeen": 1787399528.49
       }
     },
     "days": {
@@ -156695,7 +156707,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-22 20:45",
+    "at": "2026-08-22 20:52",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
