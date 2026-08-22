@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4505,
+  "version": 4506,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126259,7 +126259,7 @@ window.SLACK_DATA = {
       "counts": {
         "onboarding": {
           "미지정": 1,
-          "심성현": 2,
+          "심성현": 3,
           "송태양": 1
         },
         "as": {
@@ -126275,17 +126275,6 @@ window.SLACK_DATA = {
           "handler": "심성현",
           "cat": "as",
           "intake": "offline",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "10:30",
-          "store": "주식회사 슬립디노",
-          "biz": "1678103046",
-          "handler": "심성현",
-          "cat": "as",
-          "intake": "online",
           "reasons": [
             "확인 후 미완료"
           ]
@@ -126439,6 +126428,17 @@ window.SLACK_DATA = {
           "note": "프린터 연결 완료"
         },
         {
+          "time": "10:30",
+          "store": "주식회사 슬립디노",
+          "biz": "1678103046",
+          "cat": "onboarding",
+          "emp": "심성현",
+          "req": "토스페이먼츠건입니다(다중TIDX)",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료"
+        },
+        {
           "time": "10:25",
           "store": "까사 드 까페",
           "biz": "5761103062",
@@ -126511,7 +126511,7 @@ window.SLACK_DATA = {
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "13:19",
+      "updatedAt": "13:27",
       "voc": {
         "responses": 1,
         "install": {
@@ -126618,11 +126618,19 @@ window.SLACK_DATA = {
       },
       "1787364900.802249": {
         "post": "1787364900.802249",
-        "lastSeen": 1787372520.706
+        "lastSeen": 1787373030.907
       },
       "1787366933.762739": {
         "post": "1787366933.762739",
-        "lastSeen": 1787372520.706
+        "lastSeen": 1787373030.907
+      },
+      "1787372821.296969": {
+        "post": "1787372821.296969",
+        "lastSeen": 1787373030.907
+      },
+      "1787372648.321179": {
+        "post": "1787372648.321179",
+        "lastSeen": 1787373030.907
       }
     },
     "days": {
@@ -155938,7 +155946,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-22 13:22",
+    "at": "2026-08-22 13:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
