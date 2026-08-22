@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4551,
+  "version": 4552,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126275,7 +126275,7 @@ window.SLACK_DATA = {
           "송태양": 1
         },
         "onboarding": {
-          "서상원": 3,
+          "서상원": 4,
           "심성현": 4,
           "미지정": 4,
           "송태양": 1
@@ -126299,10 +126299,21 @@ window.SLACK_DATA = {
       ],
       "done": [
         {
+          "time": "21:00",
+          "store": "카페프룻(cafe fruit)",
+          "biz": "5540203696",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "포스기+ 프론트",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
           "time": "20:19",
           "store": "옥탑방그녀들",
           "biz": "3744800183",
-          "cat": "as",
+          "cat": "onboarding",
           "emp": "서상원",
           "req": "포프(휴대폰) + 유프 온보딩 지원 요청드립니다.",
           "hw": "",
@@ -126999,11 +127010,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 55,
+        "online": 56,
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "20:50",
+      "updatedAt": "21:00",
       "voc": {
         "responses": 11,
         "install": {
@@ -127199,15 +127210,15 @@ window.SLACK_DATA = {
       },
       "1787376498.964949": {
         "post": "1787376498.964949",
-        "lastSeen": 1787399528.49
+        "lastSeen": 1787400034.092
       },
       "1787382017.709389": {
         "post": "1787382017.709389",
-        "lastSeen": 1787399528.49
+        "lastSeen": 1787400034.092
       },
       "1787388392.430669": {
         "post": "1787388392.430669",
-        "lastSeen": 1787399528.49
+        "lastSeen": 1787400034.092
       }
     },
     "days": {
@@ -156707,7 +156718,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-22 20:52",
+    "at": "2026-08-22 21:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
