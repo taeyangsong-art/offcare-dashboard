@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4559,
+  "version": 4560,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126269,7 +126269,7 @@ window.SLACK_DATA = {
     "2026-08-22": {
       "counts": {
         "as": {
-          "서상원": 6,
+          "서상원": 7,
           "심성현": 30,
           "미지정": 12,
           "송태양": 1
@@ -126298,6 +126298,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "22:18",
+          "store": "란드리마을 (Landry Village) 경기도북부경찰",
+          "biz": "4990603330",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "캣프 사용 중) 재온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "21:39",
           "store": "무아르헤어",
@@ -127021,11 +127032,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 57,
+        "online": 58,
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "21:39",
+      "updatedAt": "22:18",
       "voc": {
         "responses": 12,
         "install": {
@@ -127222,15 +127233,15 @@ window.SLACK_DATA = {
       },
       "1787376498.964949": {
         "post": "1787376498.964949",
-        "lastSeen": 1787404522.574
+        "lastSeen": 1787405427.339
       },
       "1787382017.709389": {
         "post": "1787382017.709389",
-        "lastSeen": 1787404522.574
+        "lastSeen": 1787405427.339
       },
       "1787388392.430669": {
         "post": "1787388392.430669",
-        "lastSeen": 1787404522.574
+        "lastSeen": 1787405427.339
       }
     },
     "days": {
@@ -156730,7 +156741,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-22 22:15",
+    "at": "2026-08-22 22:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
