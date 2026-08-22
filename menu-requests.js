@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 870,
- "updatedAt": "2026-08-22 22:00",
+ "version": 871,
+ "updatedAt": "2026-08-22 23:30",
  "days": 30,
  "items": [
   {
@@ -36644,29 +36644,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784853952762379"
-  },
-  {
-   "ts": "1784816602.774619",
-   "date": "2026-07-23",
-   "time": "23:23",
-   "store": "토이즈나",
-   "biz": "2641902297",
-   "pos": "기타",
-   "content": "호세쿠엘보 에스페샬 레포사도 750ml -> 700ml 로 숫자(용량)만 수정해주세요",
-   "special": "바로해주세요",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "상품이름 수정완료 솔라피 발송 완료"
-   ],
-   "rc": 2,
-   "lr": "1784817283.119869",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784816602774619"
   }
  ],
  "ocr": {
