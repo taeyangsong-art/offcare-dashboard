@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 858,
- "updatedAt": "2026-08-22 15:15",
+ "version": 859,
+ "updatedAt": "2026-08-22 15:30",
  "days": 30,
  "items": [
   {
@@ -133,8 +133,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1787376390.727189",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "서상원",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787376386988289"
   },
   {
@@ -280,9 +280,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787374362.402299",
+   "replies": [
+    "에스프레소 옵션적용"
+   ],
+   "rc": 2,
+   "lr": "1787379633.176149",
    "rfx": 3,
    "status": "done",
    "handler": "서상원",
@@ -301,9 +303,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787372653.290619",
+   "replies": [
+    "중복 제외 등록완료"
+   ],
+   "rc": 2,
+   "lr": "1787379501.125409",
    "rfx": 3,
    "status": "done",
    "handler": "서상원",
