@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 848,
- "updatedAt": "2026-08-21 23:15",
+ "version": 849,
+ "updatedAt": "2026-08-22 09:30",
  "days": 30,
  "items": [
   {
@@ -36725,32 +36725,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784767321248779"
-  },
-  {
-   "ts": "1784765757.686229",
-   "date": "2026-07-23",
-   "time": "09:15",
-   "store": "오늘은빵먹는날",
-   "biz": "8644400728",
-   "pos": "오케이포스",
-   "content": "식빵//압구정.블루베리.옥수수식빵.먹물치즈.쫄깃한치즈브레드.브리오쉬.에삐베이컨 삭제\n강낭코뫈두베기 5500원 추가\n빵/ 먹물크림치즈. 몽키브레드 삭제",
-   "special": "완료 문자가 왔는데 하나도 수정이 안되어 있습니다",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "넘 잘되어있음",
-    "원격으로 확인 시 진짜 변경 안되어있어 처리",
-    "kcl4223",
-    ":memo: *kis okpos 아님!*"
-   ],
-   "rc": 5,
-   "lr": "1784766837.795689",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784765757686229"
   }
  ],
  "ocr": {

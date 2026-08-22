@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4484,
+  "version": 4485,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126256,15 +126256,31 @@ window.SLACK_DATA = {
       }
     },
     "2026-08-22": {
-      "counts": {},
+      "counts": {
+        "onboarding": {
+          "심성현": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:00",
+          "store": "오에뜨(OETTE)",
+          "biz": "4041294396",
+          "cat": "onboarding",
+          "emp": "심성현",
+          "req": "포프(휴대폰) + 유프 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "온 보 딩 및 사용 방법 안내 완료"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:00"
+      "updatedAt": "09:30"
     }
   },
   "resp": {
@@ -126312,6 +126328,10 @@ window.SLACK_DATA = {
       "1787305159.854719": {
         "post": "1787305159.854719",
         "lastSeen": 1787327779.104
+      },
+      "1787358600.277419": {
+        "post": "1787358600.277419",
+        "lastSeen": 1787358630.191
       }
     },
     "days": {
@@ -155484,7 +155504,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-22 09:15",
+    "at": "2026-08-22 09:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
