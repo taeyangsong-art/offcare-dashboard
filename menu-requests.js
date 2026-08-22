@@ -3,10 +3,270 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 855,
- "updatedAt": "2026-08-22 14:15",
+ "version": 856,
+ "updatedAt": "2026-08-22 14:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1787376386.988289",
+   "date": "2026-08-22",
+   "time": "14:26",
+   "store": "오로라 까페",
+   "biz": "6874001423",
+   "pos": "토스포스",
+   "content": "오로라 까페-> 오로라 카페\n\n\n전체적인메뉴\n\nSIGNATURE\n오로라 솔트크림 커피 6.0\n오로라 나이트 크림라떼 6.5\n코코넛 연유라떼 6.0\n론 자카파 럼배럴 밀크 7.0\n\nCOFFEE\n아메리카노 4.0\n카페라떼 4.5\n바닐라라떼 4.5\n디카페인 변경 +0.5 / 샷추가 +0.5\n\nNON-COFFEE\n자몽블랙티 5.5\n말차라떼 5.5\n밀크티 5.0\n초코라떼 5.0 \n복숭아 아이스티 4.0\n아샷추 4.5\n\nTEA\n쌍화차 6.0\n자몽차 5.0\n유자차 5.0\n캐모마일 4.0\n\nADE\n자몽에이드 5.0\n레몬에이드 5.0\n유자에이드 5.0\n꿀배에이드 6.0\n청포도 모히또 5.5\n\n빵 메뉴\n소금빵 3200   \n미니식빵 4000\n휘낭시에 2800",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1zZPiJnmY_Rsqcngl4ZvL9XWBSkrCYp3X/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1zZPiJnmY_Rsqcngl4ZvL9XWBSkrCYp3X",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "COFFEE",
+       "name": "아메리카노",
+       "price": 4000
+      },
+      {
+       "category": "COFFEE",
+       "name": "럼 배럴 아메리카노",
+       "price": 6000
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페라떼",
+       "price": 4800
+      },
+      {
+       "category": "COFFEE",
+       "name": "바닐라라떼",
+       "price": 5300
+      },
+      {
+       "category": "COFFEE",
+       "name": "연유라떼",
+       "price": 5500
+      },
+      {
+       "category": "SIGNATURE",
+       "name": "소금크림커피",
+       "price": 5800
+      },
+      {
+       "category": "SIGNATURE",
+       "name": "럼 배럴 밀크",
+       "price": 6800
+      },
+      {
+       "category": "SIGNATURE",
+       "name": "코코넛 연유라떼",
+       "price": 6000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "말차라떼",
+       "price": 5800
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "초코라떼",
+       "price": 5500
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "밀크티",
+       "price": 5500
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "복숭아 아이스티",
+       "price": 4300
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "아샷추",
+       "price": 4800
+      },
+      {
+       "category": "TEA",
+       "name": "유자차",
+       "price": 5000
+      },
+      {
+       "category": "TEA",
+       "name": "자몽차",
+       "price": 5000
+      },
+      {
+       "category": "TEA",
+       "name": "캐모마일",
+       "price": 4800
+      },
+      {
+       "category": "TEA",
+       "name": "쌍화차",
+       "price": 6000
+      },
+      {
+       "category": "ADE",
+       "name": "유자에이드",
+       "price": 5300
+      },
+      {
+       "category": "ADE",
+       "name": "레몬에이드",
+       "price": 5300
+      },
+      {
+       "category": "ADE",
+       "name": "자몽에이드",
+       "price": 5500
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787376390.727189",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787376386988289"
+  },
+  {
+   "ts": "1787376333.449479",
+   "date": "2026-08-22",
+   "time": "14:25",
+   "store": "오로라 까페",
+   "biz": "6874001423",
+   "pos": "토스포스",
+   "content": "전체적인 메뉴 \n\nSIGNATURE\n오로라 솔트크림 커피 6.0\n오로라 나이트 크림라떼 6.5\n코코넛 연유라떼 6.0\n론 자카파 럼배럴 밀크 7.0\n\nCOFFEE\n아메리카노 4.0\n카페라떼 4.5\n바닐라라떼 4.5\n디카페인 변경 +0.5 / 샷추가 +0.5\n\nNON-COFFEE\n자몽블랙티 5.5\n말차라떼 5.5\n밀크티 5.0\n초코라떼 5.0 \n복숭아 아이스티 4.0\n아샷추 4.5\n\nTEA\n쌍화차 6.0\n자몽차 5.0\n유자차 5.0\n캐모마일 4.0\n\nADE\n자몽에이드 5.0\n레몬에이드 5.0\n유자에이드 5.0\n꿀배에이드 6.0\n청포도 모히또 5.5\n\n빵 메뉴\n소금빵 3200   \n미니식빵 4000\n휘낭시에 2800",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1kDJcnOoIf_1FCrISnOYrS9JpSnc4rCuN/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1kDJcnOoIf_1FCrISnOYrS9JpSnc4rCuN",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "COFFEE",
+       "name": "아메리카노",
+       "price": 4000
+      },
+      {
+       "category": "COFFEE",
+       "name": "럼 배럴 아메리카노",
+       "price": 6000
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페라떼",
+       "price": 4800
+      },
+      {
+       "category": "COFFEE",
+       "name": "바닐라라떼",
+       "price": 5300
+      },
+      {
+       "category": "COFFEE",
+       "name": "연유라떼",
+       "price": 5500
+      },
+      {
+       "category": "SIGNATURE",
+       "name": "소금크림커피",
+       "price": 5800
+      },
+      {
+       "category": "SIGNATURE",
+       "name": "럼 배럴 밀크",
+       "price": 6800
+      },
+      {
+       "category": "SIGNATURE",
+       "name": "코코넛 연유라떼",
+       "price": 6000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "말차라떼",
+       "price": 5800
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "초코라떼",
+       "price": 5500
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "밀크티",
+       "price": 5500
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "복숭아 아이스티",
+       "price": 4300
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "아샷추",
+       "price": 4800
+      },
+      {
+       "category": "TEA",
+       "name": "유자차",
+       "price": 5000
+      },
+      {
+       "category": "TEA",
+       "name": "자몽차",
+       "price": 5000
+      },
+      {
+       "category": "TEA",
+       "name": "캐모마일",
+       "price": 4800
+      },
+      {
+       "category": "TEA",
+       "name": "쌍화차",
+       "price": 6000
+      },
+      {
+       "category": "ADE",
+       "name": "유자에이드",
+       "price": 5300
+      },
+      {
+       "category": "ADE",
+       "name": "레몬에이드",
+       "price": 5300
+      },
+      {
+       "category": "ADE",
+       "name": "자몽에이드",
+       "price": 5500
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787376337.309489",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787376333449479"
+  },
   {
    "ts": "1787374359.448839",
    "date": "2026-08-22",
@@ -36349,52 +36609,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784784870408119"
-  },
-  {
-   "ts": "1784784615.412139",
-   "date": "2026-07-23",
-   "time": "14:30",
-   "store": "스무치 창원명서점",
-   "biz": "1625900586",
-   "pos": "토스포스",
-   "content": "옵션이 메뉴마다 하나씩 들어가있어요. \n케테고리별로 동일하게 옵션 넣어주세요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "밥, 샐러드, 샌드위치 까지는 적용"
-   ],
-   "rc": 2,
-   "lr": "1784785209.441289",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784784615412139"
-  },
-  {
-   "ts": "1784784227.833159",
-   "date": "2026-07-23",
-   "time": "14:23",
-   "store": "피자스쿨(의정부민락점)",
-   "biz": "1274626512",
-   "pos": "",
-   "content": "메뉴",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "끝"
-   ],
-   "rc": 2,
-   "lr": "1784789477.620669",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784784227833159"
   }
  ],
  "ocr": {
