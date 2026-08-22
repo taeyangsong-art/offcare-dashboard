@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 853,
- "updatedAt": "2026-08-22 13:30",
+ "version": 854,
+ "updatedAt": "2026-08-22 13:56",
  "days": 30,
  "items": [
+  {
+   "ts": "1787374359.448839",
+   "date": "2026-08-22",
+   "time": "13:52",
+   "store": "더 멀리",
+   "biz": "3976300914",
+   "pos": "토스포스",
+   "content": "에스프레소 메뉴에서 샷추가, 오트밀크, 디카페인 음료 누르고 선택할 수 있게 수정 부탁드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787374362.402299",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787374359448839"
+  },
   {
    "ts": "1787372648.321179",
    "date": "2026-08-22",
