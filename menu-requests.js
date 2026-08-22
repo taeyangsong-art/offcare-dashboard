@@ -3,10 +3,150 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 866,
- "updatedAt": "2026-08-22 17:15",
+ "version": 867,
+ "updatedAt": "2026-08-22 17:49",
  "days": 30,
  "items": [
+  {
+   "ts": "1787388392.430669",
+   "date": "2026-08-22",
+   "time": "17:46",
+   "store": "헤어86",
+   "biz": "8750603515",
+   "pos": "토스포스",
+   "content": "컷트빼고 모든시술 기장추가금액 설정 만원 단위 2만원단위 적용\n오픈행사로 20%할인 적용 추가 적용 별도할인추가적용 (1.000원~ 3,000원 ~5,000원~ 10.000~등등)",
+   "special": "가격표는 이미지로 보내겠습니다",
+   "drive": [
+    "https://drive.google.com/file/d/1lWc0tvWwwfcqZNBNHHHDV0jEJP1HBact/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1lWc0tvWwwfcqZNBNHHHDV0jEJP1HBact",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "CUT",
+       "name": "여자컷",
+       "price": 22000
+      },
+      {
+       "category": "CUT",
+       "name": "남자컷",
+       "price": 20000
+      },
+      {
+       "category": "CUT",
+       "name": "학생컷",
+       "price": 15000
+      },
+      {
+       "category": "CUT",
+       "name": "앞머리컷",
+       "price": 3000
+      },
+      {
+       "category": "MAN PERM",
+       "name": "컷 + 다운펌(옆)",
+       "price": 35000
+      },
+      {
+       "category": "MAN PERM",
+       "name": "컷 + 다운펌(옆·뒤)",
+       "price": 40000
+      },
+      {
+       "category": "MAN PERM",
+       "name": "컷 + 전체다운펌",
+       "price": 50000
+      },
+      {
+       "category": "MAN PERM",
+       "name": "일반펌",
+       "price": 50000
+      },
+      {
+       "category": "MAN PERM",
+       "name": "히피펌",
+       "price": 60000
+      },
+      {
+       "category": "STRAIGHT (MAN)",
+       "name": "매직",
+       "price": 100000
+      },
+      {
+       "category": "STRAIGHT (MAN)",
+       "name": "볼륨매직",
+       "price": 110000
+      },
+      {
+       "category": "WOMAN PERM",
+       "name": "일반펌",
+       "price": 60000
+      },
+      {
+       "category": "WOMAN PERM",
+       "name": "디지털펌",
+       "price": 120000
+      },
+      {
+       "category": "WOMAN PERM",
+       "name": "매직",
+       "price": 120000
+      },
+      {
+       "category": "WOMAN PERM",
+       "name": "볼륨매직",
+       "price": 130000
+      },
+      {
+       "category": "WOMAN PERM",
+       "name": "매직셋팅",
+       "price": 150000
+      },
+      {
+       "category": "COLOR 여자",
+       "name": "뿌리염색",
+       "price": 40000
+      },
+      {
+       "category": "COLOR 여자",
+       "name": "전체염색",
+       "price": 60000
+      },
+      {
+       "category": "COLOR 여자",
+       "name": "탈색",
+       "price": 80000
+      },
+      {
+       "category": "COLOR 남자",
+       "name": "전체염색",
+       "price": 50000
+      },
+      {
+       "category": "COLOR 남자",
+       "name": "탈색",
+       "price": 70000
+      },
+      {
+       "category": "CLINIC",
+       "name": "클리닉",
+       "price": 60000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787388395.659489",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787388392430669"
+  },
   {
    "ts": "1787385230.956689",
    "date": "2026-08-22",
@@ -603,11 +743,14 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787305163.206139",
+   "replies": [
+    "- 메뉴 수정 : 모든 메뉴 핫 음료에는 사이즈선택 모두 삭제해주세요(뜨거운음료는 기본 16온즈로 통일이므로)\n\n아이스에는 구조16온즈를 삭제해주시고 2가지 사이즈만 표기해주세요\n긴급24온즈3샷 ₩1,000원 과\nCPR(1리터)4샷 ₩2,000원\n\n\n해당 부분은 처리가 되어 있는 걸로 확인 통화로 상세 확인하려 했으나 통화 불가",
+    "그 외 요청 건 처리 완료"
+   ],
+   "rc": 3,
+   "lr": "1787388514.540989",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "심성현",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787305159854719"
   },
