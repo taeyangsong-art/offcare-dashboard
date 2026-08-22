@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 863,
- "updatedAt": "2026-08-22 16:30",
+ "version": 864,
+ "updatedAt": "2026-08-22 16:52",
  "days": 30,
  "items": [
   {
@@ -36344,52 +36344,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784793427010489"
-  },
-  {
-   "ts": "1784793115.993819",
-   "date": "2026-07-23",
-   "time": "16:51",
-   "store": "청학동하이트마을",
-   "biz": "6392500586",
-   "pos": "토스포스",
-   "content": "족발포장12000",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "kpn pos 완료"
-   ],
-   "rc": 2,
-   "lr": "1784803622.434539",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784793115993819"
-  },
-  {
-   "ts": "1784792863.517579",
-   "date": "2026-07-23",
-   "time": "16:47",
-   "store": "주식회사 에스앤제이에프앤비",
-   "biz": "6468703949",
-   "pos": "오케이포스",
-   "content": "오케이포스 메뉴 등록 요청 드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "파일로 요청은 드려놓은 상황인데 받는대로 공유드리겠습니다"
-   ],
-   "rc": 4,
-   "lr": "1784802556.448289",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784792863517579"
   }
  ],
  "ocr": {

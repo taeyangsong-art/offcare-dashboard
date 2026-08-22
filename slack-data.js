@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4525,
+  "version": 4526,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126269,9 +126269,9 @@ window.SLACK_DATA = {
     "2026-08-22": {
       "counts": {
         "as": {
+          "미지정": 10,
           "심성현": 25,
           "서상원": 1,
-          "미지정": 9,
           "송태양": 1
         },
         "onboarding": {
@@ -126309,6 +126309,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "16:42",
+          "store": "플레이코어 풋볼아카데미",
+          "biz": "3155000950",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "포프(휴대폰) 온보딩 및 금액입력결제 세팅 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "통화중 / 휴대톤과 연결 전달"
+        },
         {
           "time": "16:19",
           "store": "우디브룩 (Woody Brook)",
@@ -126855,33 +126866,41 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 44,
+        "online": 45,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "16:42",
+      "updatedAt": "16:50",
       "voc": {
-        "responses": 4,
+        "responses": 5,
         "install": {
-          "count": 0,
+          "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 4,
+          "count": 5,
           "low": 1
         },
         "high": {
-          "install": 0,
-          "nps": 2
+          "install": 1,
+          "nps": 3
         },
         "npsDist": {
           "1": 1,
           "9": 1,
-          "10": 2
+          "10": 3
         },
-        "installDist": {},
-        "byIndustry": {},
+        "installDist": {
+          "5": 1
+        },
+        "byIndustry": {
+          "서비스[뷰티,헤어]": 1
+        },
         "byTenure": {
+          "구매설치": {
+            "total": 1,
+            "low": 0
+          },
           "12개월": {
             "total": 1,
             "low": 0
@@ -126900,11 +126919,11 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
-          "KIS": {
-            "total": 1,
+          "KPN": {
+            "total": 2,
             "low": 0
           },
-          "KPN": {
+          "KIS": {
             "total": 1,
             "low": 0
           },
@@ -126988,15 +127007,11 @@ window.SLACK_DATA = {
       },
       "1787376498.964949": {
         "post": "1787376498.964949",
-        "lastSeen": 1787384727.845
+        "lastSeen": 1787385118.017
       },
       "1787382017.709389": {
         "post": "1787382017.709389",
-        "lastSeen": 1787384727.845
-      },
-      "1787384576.859709": {
-        "post": "1787384576.859709",
-        "lastSeen": 1787384727.845
+        "lastSeen": 1787385118.017
       }
     },
     "days": {
@@ -156167,8 +156182,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-22": {
-        "cnt": 34,
-        "sumMin": 1024.4114619175593,
+        "cnt": 35,
+        "sumMin": 1030.179316767057,
         "over": 6,
         "items": [
           {
@@ -156442,13 +156457,21 @@ window.SLACK_DATA = {
             "biz": "",
             "who": "서상원",
             "cat": "onboarding"
+          },
+          {
+            "hm": "16:42",
+            "min": 5.8,
+            "store": "플레이코어 풋볼아카데미",
+            "biz": "3155000950",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-22 16:45",
+    "at": "2026-08-22 16:52",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
