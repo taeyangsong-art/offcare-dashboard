@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4567,
+  "version": 4568,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -127038,25 +127038,25 @@ window.SLACK_DATA = {
       },
       "updatedAt": "22:18",
       "voc": {
-        "responses": 12,
+        "responses": 13,
         "install": {
           "count": 5,
           "low": 1
         },
         "nps": {
-          "count": 12,
+          "count": 13,
           "low": 2
         },
         "high": {
           "install": 3,
-          "nps": 6
+          "nps": 7
         },
         "npsDist": {
           "1": 1,
           "5": 1,
           "8": 1,
           "9": 3,
-          "10": 6
+          "10": 7
         },
         "installDist": {
           "2": 1,
@@ -127068,6 +127068,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 2
         },
         "byTenure": {
+          "6개월": {
+            "total": 2,
+            "low": 0
+          },
           "12개월": {
             "total": 4,
             "low": 0
@@ -127080,16 +127084,16 @@ window.SLACK_DATA = {
             "total": 1,
             "low": 0
           },
-          "6개월": {
-            "total": 1,
-            "low": 0
-          },
           "3개월": {
             "total": 1,
             "low": 1
           }
         },
         "byVan": {
+          "DAOU": {
+            "total": 1,
+            "low": 0
+          },
           "KIS": {
             "total": 3,
             "low": 0
@@ -127195,6 +127199,17 @@ window.SLACK_DATA = {
           }
         ]
       }
+    },
+    "2026-08-23": {
+      "counts": {},
+      "pending": [],
+      "done": [],
+      "intake": {
+        "online": 0,
+        "offline": 0,
+        "unknown": 0
+      },
+      "updatedAt": ""
     }
   },
   "resp": {
@@ -156733,25 +156748,17 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-22 23:45",
+    "at": "2026-08-23 00:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
-    "ok": true,
-    "error": "",
-    "rows": 3654,
-    "named": 363,
+    "ok": false,
+    "error": "토큰 갱신 실패: internal_failure",
+    "rows": 0,
+    "named": 0,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 363,
-    "byStatus": {
-      "일정등록완료": 226,
-      "1차부재": 79,
-      "점주직접접수": 33,
-      "설치불가": 7,
-      "(빈칸)": 3,
-      "자가설치": 13,
-      "설치보류요청": 2
-    }
+    "done": 0,
+    "byStatus": {}
   }
 };
