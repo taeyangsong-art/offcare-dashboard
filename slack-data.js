@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4488,
+  "version": 4489,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126294,7 +126294,7 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:55"
+      "updatedAt": "10:14"
     }
   },
   "resp": {
@@ -126345,11 +126345,11 @@ window.SLACK_DATA = {
       },
       "1787360106.885569": {
         "post": "1787360106.885569",
-        "lastSeen": 1787360432.518
+        "lastSeen": 1787361327.944
       },
-      "1787359953.112289": {
-        "post": "1787359953.112289",
-        "lastSeen": 1787360432.518
+      "1787361297.891759": {
+        "post": "1787361297.891759",
+        "lastSeen": 1787361327.944
       }
     },
     "days": {
@@ -155520,8 +155520,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-22": {
-        "cnt": 1,
-        "sumMin": 3.4803180138270062,
+        "cnt": 2,
+        "sumMin": 18.93229653040568,
         "over": 0,
         "items": [
           {
@@ -155531,13 +155531,21 @@ window.SLACK_DATA = {
             "biz": "5591202783",
             "who": "심성현",
             "cat": "as"
+          },
+          {
+            "hm": "09:52",
+            "min": 15.5,
+            "store": "달굽당",
+            "biz": "1485900921",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-22 10:00",
+    "at": "2026-08-22 10:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
