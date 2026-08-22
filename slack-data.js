@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4541,
+  "version": 4542,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126992,15 +126992,15 @@ window.SLACK_DATA = {
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "19:20",
+      "updatedAt": "19:33",
       "voc": {
-        "responses": 7,
+        "responses": 8,
         "install": {
           "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 7,
+          "count": 8,
           "low": 1
         },
         "high": {
@@ -127009,7 +127009,7 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "1": 1,
-          "9": 1,
+          "9": 2,
           "10": 5
         },
         "installDist": {
@@ -127019,11 +127019,11 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 2
         },
         "byTenure": {
-          "구매설치": {
-            "total": 2,
+          "12개월": {
+            "total": 3,
             "low": 0
           },
-          "12개월": {
+          "구매설치": {
             "total": 2,
             "low": 0
           },
@@ -127041,12 +127041,12 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
-          "KPN": {
-            "total": 4,
+          "KIS": {
+            "total": 2,
             "low": 0
           },
-          "KIS": {
-            "total": 1,
+          "KPN": {
+            "total": 4,
             "low": 0
           },
           "NICE": {
@@ -127125,15 +127125,15 @@ window.SLACK_DATA = {
       },
       "1787376498.964949": {
         "post": "1787376498.964949",
-        "lastSeen": 1787394626.744
+        "lastSeen": 1787394830.4
       },
       "1787382017.709389": {
         "post": "1787382017.709389",
-        "lastSeen": 1787394626.744
+        "lastSeen": 1787394830.4
       },
       "1787388392.430669": {
         "post": "1787388392.430669",
-        "lastSeen": 1787394626.744
+        "lastSeen": 1787394830.4
       }
     },
     "days": {
@@ -156633,7 +156633,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-22 19:30",
+    "at": "2026-08-22 19:33",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

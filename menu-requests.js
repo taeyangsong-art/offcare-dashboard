@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 868,
- "updatedAt": "2026-08-22 18:43",
+ "version": 869,
+ "updatedAt": "2026-08-22 19:34",
  "days": 30,
  "items": [
   {
@@ -36690,30 +36690,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784811543374539"
-  },
-  {
-   "ts": "1784802746.464459",
-   "date": "2026-07-23",
-   "time": "19:32",
-   "store": "마음쌀국수",
-   "biz": "8141402947",
-   "pos": "기타",
-   "content": "메인메뉴의 분짜 메뉴 삭제해주세요. 감사합니다~",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "메뉴삭제 완료 솔라피 발송 완료",
-    "키오스크 전시관리에서만 삭제"
-   ],
-   "rc": 3,
-   "lr": "1784808838.242549",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784802746464459"
   }
  ],
  "ocr": {
