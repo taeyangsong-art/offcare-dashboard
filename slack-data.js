@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4503,
+  "version": 4504,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126258,13 +126258,26 @@ window.SLACK_DATA = {
     "2026-08-22": {
       "counts": {
         "as": {
-          "심성현": 12
+          "미지정": 2,
+          "심성현": 13
         },
         "onboarding": {
+          "송태양": 1,
           "심성현": 1
         }
       },
       "pending": [
+        {
+          "time": "11:00",
+          "store": "부자 필라테스",
+          "biz": "7326600554",
+          "handler": "심성현",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "1차 부재"
+          ]
+        },
         {
           "time": "10:54",
           "store": "찌개달인",
@@ -126272,17 +126285,6 @@ window.SLACK_DATA = {
           "handler": "심성현",
           "cat": "as",
           "intake": "offline",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "10:41",
-          "store": "용담 813",
-          "biz": "7245301080",
-          "handler": "심성현",
-          "cat": "as",
-          "intake": "online",
           "reasons": [
             "확인 후 미완료"
           ]
@@ -126300,6 +126302,39 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "13:09",
+          "store": "소소한우",
+          "biz": "4431802554",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "태블릿 포프 온보딩 상태 점검 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "13:00",
+          "store": "딥이치",
+          "biz": "6951202930",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "포프유프(노트북) / 영수증 연결 및 설정 영상통화 안내요청",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "13:00",
+          "store": "버니스네일",
+          "biz": "1330978344",
+          "cat": "onboarding",
+          "emp": "송태양",
+          "req": "포프 온보딩 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩완료입니다"
+        },
         {
           "time": "11:47",
           "store": "루마 커피하우스#2",
@@ -126381,6 +126416,17 @@ window.SLACK_DATA = {
           "note": "토스 사장님 미실행 실행 후 출력 안내 완료"
         },
         {
+          "time": "10:41",
+          "store": "용담 813",
+          "biz": "7245301080",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "유프 온보딩 요청 드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "프린터 연결 완료"
+        },
+        {
           "time": "10:25",
           "store": "까사 드 까페",
           "biz": "5761103062",
@@ -126449,11 +126495,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 14,
+        "online": 18,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "13:00",
+      "updatedAt": "13:09",
       "voc": {
         "responses": 1,
         "install": {
@@ -126558,25 +126604,13 @@ window.SLACK_DATA = {
         "post": "1787305159.854719",
         "lastSeen": 1787327779.104
       },
-      "1787364002.062639": {
-        "post": "1787364002.062639",
-        "lastSeen": 1787371239.32
-      },
       "1787364900.802249": {
         "post": "1787364900.802249",
-        "lastSeen": 1787371239.32
+        "lastSeen": 1787372124.187
       },
       "1787366933.762739": {
         "post": "1787366933.762739",
-        "lastSeen": 1787371239.32
-      },
-      "1787371200.978229": {
-        "post": "1787371200.978229",
-        "lastSeen": 1787371239.32
-      },
-      "1787371200.681189": {
-        "post": "1787371200.681189",
-        "lastSeen": 1787371239.32
+        "lastSeen": 1787372124.187
       }
     },
     "days": {
@@ -155747,9 +155781,9 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-22": {
-        "cnt": 14,
-        "sumMin": 541.4619567314783,
-        "over": 3,
+        "cnt": 17,
+        "sumMin": 685.4875974456469,
+        "over": 4,
         "items": [
           {
             "hm": "09:30",
@@ -155862,13 +155896,37 @@ window.SLACK_DATA = {
             "biz": "1678103046",
             "who": "심성현",
             "cat": "as"
+          },
+          {
+            "hm": "13:00",
+            "min": 8,
+            "store": "딥이치",
+            "biz": "6951202930",
+            "who": "",
+            "cat": "as"
+          },
+          {
+            "hm": "13:00",
+            "min": 8,
+            "store": "버니스네일",
+            "biz": "1330978344",
+            "who": "송태양",
+            "cat": "onboarding"
+          },
+          {
+            "hm": "11:00",
+            "min": 128,
+            "store": "부자 필라테스",
+            "biz": "7326600554",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-22 13:00",
+    "at": "2026-08-22 13:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
