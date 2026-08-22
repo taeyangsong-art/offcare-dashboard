@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4561,
+  "version": 4562,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126307,7 +126307,7 @@ window.SLACK_DATA = {
           "req": "캣프 사용 중) 재온보딩 지원 요청드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "경찰서 고정 IP필요.. 전산실 직원과 확인중"
         },
         {
           "time": "21:39",
@@ -127233,15 +127233,15 @@ window.SLACK_DATA = {
       },
       "1787376498.964949": {
         "post": "1787376498.964949",
-        "lastSeen": 1787405945.697
+        "lastSeen": 1787406324.538
       },
       "1787382017.709389": {
         "post": "1787382017.709389",
-        "lastSeen": 1787405945.697
+        "lastSeen": 1787406324.538
       },
       "1787388392.430669": {
         "post": "1787388392.430669",
-        "lastSeen": 1787405945.697
+        "lastSeen": 1787406324.538
       }
     },
     "days": {
@@ -156741,7 +156741,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-22 22:39",
+    "at": "2026-08-22 22:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
