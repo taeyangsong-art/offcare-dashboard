@@ -3,10 +3,145 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 864,
- "updatedAt": "2026-08-22 16:52",
+ "version": 865,
+ "updatedAt": "2026-08-22 17:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1787385230.956689",
+   "date": "2026-08-22",
+   "time": "16:53",
+   "store": "카페 아일랜드",
+   "biz": "1610702748",
+   "pos": "토스포스",
+   "content": "식혜는 빼주세요",
+   "special": "토스단말기에 메뉴가나올수있게 해주세요",
+   "drive": [
+    "https://drive.google.com/file/d/1r4ytQ9zwBUyK1G36wIpCtWdBfje9MDrn/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1r4ytQ9zwBUyK1G36wIpCtWdBfje9MDrn",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "COFFEE",
+       "name": "아메리카노",
+       "price": 4000
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페라떼",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "바닐라라떼",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "카라멜마키아또",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "젤라또 아포가토",
+       "price": 6000
+      },
+      {
+       "category": "COFFEE",
+       "name": "달달구리",
+       "price": 3000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "녹차라떼",
+       "price": 5000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "초코라떼",
+       "price": 5000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "아이스티",
+       "price": 5000
+      },
+      {
+       "category": "ADE",
+       "name": "레몬",
+       "price": 5000
+      },
+      {
+       "category": "ADE",
+       "name": "자몽",
+       "price": 5000
+      },
+      {
+       "category": "ADE",
+       "name": "망고",
+       "price": 5000
+      },
+      {
+       "category": "ADE",
+       "name": "청포도",
+       "price": 5000
+      },
+      {
+       "category": "ADE",
+       "name": "깔라만시",
+       "price": 5000
+      },
+      {
+       "category": "TEA",
+       "name": "허브차",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "생강차",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "유자차",
+       "price": 4000
+      },
+      {
+       "category": "SPECIAL",
+       "name": "미숫가루",
+       "price": 5000
+      },
+      {
+       "category": "SPECIAL",
+       "name": "식혜",
+       "price": 6000
+      },
+      {
+       "category": "SPECIAL",
+       "name": "수박주스",
+       "price": 6000
+      },
+      {
+       "category": "SPECIAL",
+       "name": "컵빙수",
+       "price": 6000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787385234.606569",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "심성현",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787385230956689"
+  },
   {
    "ts": "1787376386.988289",
    "date": "2026-08-22",
@@ -36319,31 +36454,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784799717430769"
-  },
-  {
-   "ts": "1784793427.010489",
-   "date": "2026-07-23",
-   "time": "16:57",
-   "store": "인딕슬로우",
-   "biz": "3090831798",
-   "pos": "토스포스",
-   "content": "토스포스 메뉴 등록 수정 요청주시어 확인 부탁드리겠습니다..!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784624019849009\n\n이전 스레드\n\n파일대로 메뉴 및 옵션이 등록되어있지 않다고 말씀주시어, 혹시 원격으로 진행 부탁드려도 될까요..!?\n\n5시부터 주문 받으시는데 급하다고 하시어 요청드립니다:ㅠㅠ:",
-    "감사합니다!!!",
-    "감사합니다!!!,,,:pleading_face:"
-   ],
-   "rc": 9,
-   "lr": "1784797614.540809",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784793427010489"
   }
  ],
  "ocr": {

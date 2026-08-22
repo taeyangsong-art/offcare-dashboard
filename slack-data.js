@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4526,
+  "version": 4527,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126270,7 +126270,7 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "미지정": 10,
-          "심성현": 25,
+          "심성현": 26,
           "서상원": 1,
           "송태양": 1
         },
@@ -126319,6 +126319,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "통화중 / 휴대톤과 연결 전달"
+        },
+        {
+          "time": "16:35",
+          "store": "주식회사 롤링다이스",
+          "biz": "1888804003",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "smt cat 단말기 이용 중 정보등록요망이라는 오류 문구 떴다고 하셔서 확인 요청 드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "/ 단말기 등록 및 다운로드 완료"
         },
         {
           "time": "16:19",
@@ -126866,11 +126877,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 45,
+        "online": 46,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "16:50",
+      "updatedAt": "17:00",
       "voc": {
         "responses": 5,
         "install": {
@@ -127007,11 +127018,15 @@ window.SLACK_DATA = {
       },
       "1787376498.964949": {
         "post": "1787376498.964949",
-        "lastSeen": 1787385118.017
+        "lastSeen": 1787385633.222
       },
       "1787382017.709389": {
         "post": "1787382017.709389",
-        "lastSeen": 1787385118.017
+        "lastSeen": 1787385633.222
+      },
+      "1787385600.926489": {
+        "post": "1787385600.926489",
+        "lastSeen": 1787385633.222
       }
     },
     "days": {
@@ -156471,7 +156486,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-22 16:52",
+    "at": "2026-08-22 17:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
