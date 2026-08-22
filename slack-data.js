@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4530,
+  "version": 4531,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126269,7 +126269,7 @@ window.SLACK_DATA = {
     "2026-08-22": {
       "counts": {
         "as": {
-          "심성현": 27,
+          "심성현": 28,
           "미지정": 11,
           "서상원": 1,
           "송태양": 1
@@ -126309,6 +126309,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "17:14",
+          "store": "맨돌슈퍼",
+          "biz": "8550400086",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "고령 대표님",
+          "hw": "",
+          "intake": "offline",
+          "note": "프론트 불량 기기교체 월요일 발송 기기 금액 노출 X 단말기 초기화 프론트 재시작 포스 재시작 진행했으나 모두 동일 공장 초기화 시도했으나 불가능"
+        },
         {
           "time": "17:10",
           "store": "취한달밤",
@@ -126900,10 +126911,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 47,
-        "offline": 8,
+        "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "17:27",
+      "updatedAt": "17:36",
       "voc": {
         "responses": 6,
         "install": {
@@ -127040,15 +127051,15 @@ window.SLACK_DATA = {
       },
       "1787376498.964949": {
         "post": "1787376498.964949",
-        "lastSeen": 1787387431.052
+        "lastSeen": 1787388328.641
       },
       "1787382017.709389": {
         "post": "1787382017.709389",
-        "lastSeen": 1787387431.052
+        "lastSeen": 1787388328.641
       },
       "1787387241.650029": {
         "post": "1787387241.650029",
-        "lastSeen": 1787387431.052
+        "lastSeen": 1787388328.641
       }
     },
     "days": {
@@ -156516,7 +156527,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-22 17:30",
+    "at": "2026-08-22 17:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
