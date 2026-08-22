@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4555,
+  "version": 4556,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126269,7 +126269,7 @@ window.SLACK_DATA = {
     "2026-08-22": {
       "counts": {
         "as": {
-          "서상원": 5,
+          "서상원": 6,
           "심성현": 30,
           "미지정": 12,
           "송태양": 1
@@ -126298,6 +126298,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "21:39",
+          "store": "무아르헤어",
+          "biz": "6625901178",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "프린터기 지속적인 비프음 발생으로 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "월요일교체"
+        },
         {
           "time": "21:00",
           "store": "카페프룻(cafe fruit)",
@@ -127010,19 +127021,19 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 56,
+        "online": 57,
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "21:00",
+      "updatedAt": "21:39",
       "voc": {
-        "responses": 11,
+        "responses": 12,
         "install": {
           "count": 5,
           "low": 1
         },
         "nps": {
-          "count": 11,
+          "count": 12,
           "low": 2
         },
         "high": {
@@ -127032,6 +127043,7 @@ window.SLACK_DATA = {
         "npsDist": {
           "1": 1,
           "5": 1,
+          "8": 1,
           "9": 3,
           "10": 6
         },
@@ -127045,13 +127057,13 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 2
         },
         "byTenure": {
+          "12개월": {
+            "total": 4,
+            "low": 0
+          },
           "구매설치": {
             "total": 5,
             "low": 1
-          },
-          "12개월": {
-            "total": 3,
-            "low": 0
           },
           "1개월": {
             "total": 1,
@@ -127067,6 +127079,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 3,
+            "low": 0
+          },
           "KPN": {
             "total": 5,
             "low": 0
@@ -127077,10 +127093,6 @@ window.SLACK_DATA = {
           },
           "KOCES": {
             "total": 1,
-            "low": 0
-          },
-          "KIS": {
-            "total": 2,
             "low": 0
           },
           "NICE": {
@@ -127210,15 +127222,15 @@ window.SLACK_DATA = {
       },
       "1787376498.964949": {
         "post": "1787376498.964949",
-        "lastSeen": 1787401827.783
+        "lastSeen": 1787402726.116
       },
       "1787382017.709389": {
         "post": "1787382017.709389",
-        "lastSeen": 1787401827.783
+        "lastSeen": 1787402726.116
       },
       "1787388392.430669": {
         "post": "1787388392.430669",
-        "lastSeen": 1787401827.783
+        "lastSeen": 1787402726.116
       }
     },
     "days": {
@@ -156718,7 +156730,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-22 21:30",
+    "at": "2026-08-22 21:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
