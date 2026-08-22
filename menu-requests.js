@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 856,
- "updatedAt": "2026-08-22 14:30",
+ "version": 857,
+ "updatedAt": "2026-08-22 14:45",
  "days": 30,
  "items": [
   {
@@ -326,8 +326,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1787305163.206139",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "심성현",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787305159854719"
   },
   {
@@ -36562,53 +36562,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784788744924859"
-  },
-  {
-   "ts": "1784784922.938479",
-   "date": "2026-07-23",
-   "time": "14:35",
-   "store": "마음쌀국수",
-   "biz": "8141402947",
-   "pos": "기타",
-   "content": "메인메뉴 카테고리의 \n분짜, [포장]새우팟타이, [포장]나시고랭 메뉴를 삭제해주세요. 감사합니다~",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "키오스크상품전시관리에서 삭제 완료"
-   ],
-   "rc": 2,
-   "lr": "1784786533.166909",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784784922938479"
-  },
-  {
-   "ts": "1784784870.408119",
-   "date": "2026-07-23",
-   "time": "14:34",
-   "store": "피자스쿨 미아역점",
-   "biz": "2101719026",
-   "pos": "오케이포스",
-   "content": "메뉴 추가 요청드립니다! (오케이포스)",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "[피자]\n• 치킨타코피자 15,900원\n• 비프타코피자 15,900원\n[크러스트]\n• 치킨타코+크러스트 18,900원\n• 비프타코+크러스트 18,900원\n[음료]\n• 할라피뇨 500원\n    ◦ (아래쪽에 피클/소스 등 모아져있는 항목)",
-    "완료 이후 문자 한통만 부탁드리겠습니다!"
-   ],
-   "rc": 6,
-   "lr": "1784786395.573629",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784784870408119"
   }
  ],
  "ocr": {
