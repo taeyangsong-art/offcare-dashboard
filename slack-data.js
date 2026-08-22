@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4543,
+  "version": 4544,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -126992,39 +126992,43 @@ window.SLACK_DATA = {
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "19:33",
+      "updatedAt": "19:50",
       "voc": {
-        "responses": 8,
+        "responses": 10,
         "install": {
-          "count": 2,
-          "low": 0
+          "count": 4,
+          "low": 1
         },
         "nps": {
-          "count": 8,
-          "low": 1
+          "count": 10,
+          "low": 2
         },
         "high": {
           "install": 2,
-          "nps": 5
+          "nps": 6
         },
         "npsDist": {
           "1": 1,
+          "5": 1,
           "9": 2,
-          "10": 5
+          "10": 6
         },
         "installDist": {
+          "2": 1,
+          "3": 1,
           "5": 2
         },
         "byIndustry": {
+          "서비스[학원]": 2,
           "서비스[뷰티,헤어]": 2
         },
         "byTenure": {
+          "구매설치": {
+            "total": 4,
+            "low": 1
+          },
           "12개월": {
             "total": 3,
-            "low": 0
-          },
-          "구매설치": {
-            "total": 2,
             "low": 0
           },
           "1개월": {
@@ -127041,6 +127045,14 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SMARTRO": {
+            "total": 2,
+            "low": 2
+          },
+          "KOCES": {
+            "total": 1,
+            "low": 0
+          },
           "KIS": {
             "total": 2,
             "low": 0
@@ -127052,16 +127064,42 @@ window.SLACK_DATA = {
           "NICE": {
             "total": 1,
             "low": 0
-          },
-          "SMARTRO": {
-            "total": 1,
-            "low": 1
           }
         },
         "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
+          "필요한 기능이 없거나 몰라서 불편": 1,
           "단말기 설치나 초기 과정이 어려움": 1
         },
         "alerts": [
+          {
+            "time": "19:50",
+            "store": "월계명지학원",
+            "storeId": "585769",
+            "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
+            "install": 2,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 2,
+                "text": "ㅠㅠ직잡와서 햐주시면 편할거같긴해용",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              },
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "학원에서 쓰기에는 뭐가 졸은지 잘 모르겟서용 영수증도 주문전호라고 같이 나오규",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "12:32",
             "store": "한바다횟집",
@@ -127085,7 +127123,20 @@ window.SLACK_DATA = {
             "doneDate": ""
           }
         ],
-        "praises": []
+        "praises": [
+          {
+            "time": "19:50",
+            "store": "몰입의즐거움",
+            "storeId": "579544",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 3,
+            "nps": 10,
+            "text": "혼자 설치 하기가 너무 어려웠어요. 근데 전화 하니까 바로 편하게 알려줬어요. 그냥 처음부터 전화로 같이 설치 하자고 했었으면 이렇게 힘들지 않았을 거 같아요. 편해요 그냥 일반 어플리케이션 쓰는 거랑 똑같애요",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
       }
     }
   },
@@ -127125,15 +127176,15 @@ window.SLACK_DATA = {
       },
       "1787376498.964949": {
         "post": "1787376498.964949",
-        "lastSeen": 1787395521.504
+        "lastSeen": 1787396046.694
       },
       "1787382017.709389": {
         "post": "1787382017.709389",
-        "lastSeen": 1787395521.504
+        "lastSeen": 1787396046.694
       },
       "1787388392.430669": {
         "post": "1787388392.430669",
-        "lastSeen": 1787395521.504
+        "lastSeen": 1787396046.694
       }
     },
     "days": {
@@ -156633,7 +156684,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-22 19:45",
+    "at": "2026-08-22 19:54",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
