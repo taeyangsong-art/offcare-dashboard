@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4641,
+  "version": 4642,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -127209,26 +127209,27 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "15:54",
+      "updatedAt": "16:07",
       "voc": {
-        "responses": 12,
+        "responses": 14,
         "install": {
           "count": 6,
           "low": 1
         },
         "nps": {
-          "count": 12,
+          "count": 14,
           "low": 2
         },
         "high": {
           "install": 4,
-          "nps": 8
+          "nps": 9
         },
         "npsDist": {
           "0": 1,
           "5": 1,
+          "6": 1,
           "9": 2,
-          "10": 8
+          "10": 9
         },
         "installDist": {
           "1": 1,
@@ -127241,6 +127242,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 2,
+            "low": 0
+          },
           "구매설치": {
             "total": 6,
             "low": 2
@@ -127255,6 +127260,14 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 4,
+            "low": 0
+          },
+          "KPN": {
+            "total": 1,
+            "low": 0
+          },
           "KOVAN": {
             "total": 2,
             "low": 2
@@ -127265,10 +127278,6 @@ window.SLACK_DATA = {
           },
           "KOCES": {
             "total": 2,
-            "low": 0
-          },
-          "KIS": {
-            "total": 3,
             "low": 0
           },
           "NICE": {
@@ -127389,7 +127398,7 @@ window.SLACK_DATA = {
       },
       "1787462808.485959": {
         "post": "1787462808.485959",
-        "lastSeen": 1787468429.926
+        "lastSeen": 1787469324.777
       }
     },
     "days": {
@@ -156889,7 +156898,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-23 16:00",
+    "at": "2026-08-23 16:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
