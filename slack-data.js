@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4659,
+  "version": 4660,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -127209,16 +127209,16 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "18:24",
+      "updatedAt": "19:24",
       "voc": {
-        "responses": 19,
+        "responses": 21,
         "install": {
-          "count": 8,
-          "low": 1
+          "count": 10,
+          "low": 2
         },
         "nps": {
-          "count": 19,
-          "low": 3
+          "count": 21,
+          "low": 4
         },
         "high": {
           "install": 5,
@@ -127227,28 +127227,30 @@ window.SLACK_DATA = {
         "npsDist": {
           "0": 1,
           "1": 1,
+          "3": 1,
           "5": 1,
-          "6": 1,
+          "6": 2,
           "8": 1,
           "9": 2,
           "10": 12
         },
         "installDist": {
           "1": 1,
-          "3": 2,
+          "2": 1,
+          "3": 3,
           "5": 5
         },
         "byIndustry": {
+          "카페": 2,
+          "서비스[뷰티,헤어]": 2,
           "서비스[숙박]": 1,
-          "카페": 1,
           "요식업": 3,
-          "기타": 2,
-          "서비스[뷰티,헤어]": 1
+          "기타": 2
         },
         "byTenure": {
           "구매설치": {
-            "total": 8,
-            "low": 2
+            "total": 10,
+            "low": 4
           },
           "1개월": {
             "total": 7,
@@ -127269,7 +127271,11 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KOCES": {
-            "total": 5,
+            "total": 6,
+            "low": 2
+          },
+          "KPN": {
+            "total": 2,
             "low": 1
           },
           "SECTA9": {
@@ -127284,10 +127290,6 @@ window.SLACK_DATA = {
             "total": 4,
             "low": 0
           },
-          "KPN": {
-            "total": 1,
-            "low": 0
-          },
           "KOVAN": {
             "total": 2,
             "low": 2
@@ -127298,11 +127300,56 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
           "사용중 오류가 자주 발생함": 1,
           "필요한 기능이 없거나 몰라서 불편": 1,
           "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "19:24",
+            "store": "티커피 (T'COFFEE)",
+            "storeId": "599699",
+            "industry": "카페/베이커리",
+            "indBucket": "카페",
+            "install": 3,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "중고를 살걸 후회중",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "19:24",
+            "store": "블루클럽시흥은계점",
+            "storeId": "606171",
+            "industry": "뷰티",
+            "indBucket": "서비스[뷰티,헤어]",
+            "install": 2,
+            "nps": 6,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 2,
+                "text": "사업장에서 사용하는건데 일일이 다해야하는 번거로움과부담감이 있음",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "18:13",
             "store": "미증유",
@@ -127457,7 +127504,7 @@ window.SLACK_DATA = {
       },
       "1787462808.485959": {
         "post": "1787462808.485959",
-        "lastSeen": 1787480121.193
+        "lastSeen": 1787481028.414
       }
     },
     "days": {
@@ -156957,7 +157004,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-23 19:15",
+    "at": "2026-08-23 19:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
