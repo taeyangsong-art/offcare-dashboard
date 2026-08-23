@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 877,
- "updatedAt": "2026-08-23 14:14",
+ "version": 878,
+ "updatedAt": "2026-08-23 17:30",
  "days": 30,
  "items": [
   {
@@ -36383,29 +36383,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784882380928199"
-  },
-  {
-   "ts": "1784881626.841289",
-   "date": "2026-07-24",
-   "time": "17:27",
-   "store": "일마지오 킨텍스점",
-   "biz": "7528502275",
-   "pos": "퍼스트포스",
-   "content": "생맥주 가격 5,500원으로 수정 부탁드립니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "완"
-   ],
-   "rc": 2,
-   "lr": "1784881862.170599",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784881626841289"
   }
  ],
  "ocr": {
