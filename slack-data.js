@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4666,
+  "version": 4667,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -127209,52 +127209,54 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "19:55",
+      "updatedAt": "20:25",
       "voc": {
-        "responses": 23,
+        "responses": 25,
         "install": {
-          "count": 11,
-          "low": 2
+          "count": 13,
+          "low": 3
         },
         "nps": {
-          "count": 23,
-          "low": 4
+          "count": 25,
+          "low": 6
         },
         "high": {
           "install": 6,
           "nps": 14
         },
         "npsDist": {
-          "0": 1,
+          "0": 2,
           "1": 1,
           "3": 1,
-          "5": 1,
+          "5": 2,
           "6": 2,
           "8": 1,
           "9": 2,
           "10": 14
         },
         "installDist": {
-          "1": 1,
+          "1": 2,
           "2": 1,
           "3": 3,
+          "4": 1,
           "5": 6
         },
         "byIndustry": {
+          "요식업": 4,
+          "서비스[학원]": 1,
           "서비스[뷰티,헤어]": 3,
           "카페": 2,
           "서비스[숙박]": 1,
-          "요식업": 3,
           "기타": 2
         },
         "byTenure": {
+          "구매설치": {
+            "total": 13,
+            "low": 6
+          },
           "6개월": {
             "total": 2,
             "low": 0
-          },
-          "구매설치": {
-            "total": 11,
-            "low": 4
           },
           "1개월": {
             "total": 7,
@@ -127270,6 +127272,14 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KCP": {
+            "total": 1,
+            "low": 1
+          },
+          "NICE": {
+            "total": 3,
+            "low": 1
+          },
           "KPN": {
             "total": 3,
             "low": 1
@@ -127286,10 +127296,6 @@ window.SLACK_DATA = {
             "total": 3,
             "low": 0
           },
-          "NICE": {
-            "total": 2,
-            "low": 0
-          },
           "KIS": {
             "total": 4,
             "low": 0
@@ -127304,12 +127310,62 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
-          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 5,
           "사용중 오류가 자주 발생함": 1,
           "필요한 기능이 없거나 몰라서 불편": 1,
           "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "20:25",
+            "store": "별난맛집",
+            "storeId": "602676",
+            "industry": "음식점/주점",
+            "indBucket": "요식업",
+            "install": 4,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "ㆍ",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "20:25",
+            "store": "타이니크리에이터 반포",
+            "storeId": "407692",
+            "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
+            "install": 1,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "토스 기계 받아서 쓰려니까 접지가 계속 안좋아서 한 번 수리 받았는데요. 이번것도 그래요. 자꾸 꺼집니다.",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              },
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "불량 기계가 계속(접지나 선 문제일수도) 와서 급할때 계속 꺼져요",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "19:24",
             "store": "티커피 (T'COFFEE)",
@@ -127520,7 +127576,7 @@ window.SLACK_DATA = {
       },
       "1787462808.485959": {
         "post": "1787462808.485959",
-        "lastSeen": 1787483724.446
+        "lastSeen": 1787484628.48
       }
     },
     "days": {
@@ -157020,7 +157076,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-23 20:15",
+    "at": "2026-08-23 20:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
