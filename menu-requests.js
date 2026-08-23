@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 881,
- "updatedAt": "2026-08-23 18:00",
+ "version": 882,
+ "updatedAt": "2026-08-23 18:30",
  "days": 30,
  "items": [
   {
@@ -36138,29 +36138,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784887700227999"
-  },
-  {
-   "ts": "1784885413.871379",
-   "date": "2026-07-24",
-   "time": "18:30",
-   "store": "바다향기",
-   "biz": "3840403301",
-   "pos": "",
-   "content": "• 메뉴 가격 변경 요청 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "호래기1마리 3000원 -> 호래기 5마리 15000원"
-   ],
-   "rc": 3,
-   "lr": "1784885884.000779",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784885413871379"
   }
  ],
  "ocr": {

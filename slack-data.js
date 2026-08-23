@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4655,
+  "version": 4656,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -127209,20 +127209,20 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "18:13",
+      "updatedAt": "18:24",
       "voc": {
-        "responses": 18,
+        "responses": 19,
         "install": {
-          "count": 7,
+          "count": 8,
           "low": 1
         },
         "nps": {
-          "count": 18,
+          "count": 19,
           "low": 3
         },
         "high": {
-          "install": 4,
-          "nps": 11
+          "install": 5,
+          "nps": 12
         },
         "npsDist": {
           "0": 1,
@@ -127231,20 +127231,25 @@ window.SLACK_DATA = {
           "6": 1,
           "8": 1,
           "9": 2,
-          "10": 11
+          "10": 12
         },
         "installDist": {
           "1": 1,
           "3": 2,
-          "5": 4
+          "5": 5
         },
         "byIndustry": {
+          "서비스[숙박]": 1,
           "카페": 1,
           "요식업": 3,
           "기타": 2,
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 8,
+            "low": 2
+          },
           "1개월": {
             "total": 7,
             "low": 1
@@ -127252,10 +127257,6 @@ window.SLACK_DATA = {
           "3개월": {
             "total": 1,
             "low": 0
-          },
-          "구매설치": {
-            "total": 7,
-            "low": 2
           },
           "12개월": {
             "total": 2,
@@ -127268,7 +127269,7 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KOCES": {
-            "total": 4,
+            "total": 5,
             "low": 1
           },
           "SECTA9": {
@@ -127377,6 +127378,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "18:24",
+            "store": "호텔 오아시스 어반 스파",
+            "storeId": "596662",
+            "indBucket": "서비스[숙박]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "설치가 간단하고 이용이 직관적이여서 사용이 편리함 간편합니다.",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "17:07",
             "store": "코드(CODE)",
             "storeId": "473472",
@@ -127448,7 +127461,7 @@ window.SLACK_DATA = {
       },
       "1787462808.485959": {
         "post": "1787462808.485959",
-        "lastSeen": 1787476623.375
+        "lastSeen": 1787477425.377
       }
     },
     "days": {
@@ -156948,7 +156961,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-23 18:17",
+    "at": "2026-08-23 18:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
