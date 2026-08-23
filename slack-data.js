@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4636,
+  "version": 4637,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -127209,23 +127209,23 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "14:26",
+      "updatedAt": "15:13",
       "voc": {
-        "responses": 2,
+        "responses": 4,
         "install": {
           "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 2,
+          "count": 4,
           "low": 0
         },
         "high": {
           "install": 0,
-          "nps": 2
+          "nps": 4
         },
         "npsDist": {
-          "10": 2
+          "10": 4
         },
         "installDist": {
           "3": 1
@@ -127235,7 +127235,7 @@ window.SLACK_DATA = {
         },
         "byTenure": {
           "1개월": {
-            "total": 1,
+            "total": 3,
             "low": 0
           },
           "구매설치": {
@@ -127244,11 +127244,15 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
-          "KIS": {
+          "SMARTRO": {
             "total": 1,
             "low": 0
           },
           "SECTA9": {
+            "total": 2,
+            "low": 0
+          },
+          "KIS": {
             "total": 1,
             "low": 0
           }
@@ -127261,10 +127265,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1787292316.066929": {
-        "post": "1787292316.066929",
-        "lastSeen": 1787327779.104
-      },
       "1787301266.233529": {
         "post": "1787301266.233529",
         "lastSeen": 1787327779.104
@@ -127287,7 +127287,7 @@ window.SLACK_DATA = {
       },
       "1787462808.485959": {
         "post": "1787462808.485959",
-        "lastSeen": 1787464982.561
+        "lastSeen": 1787465723.699
       }
     },
     "days": {
@@ -156787,7 +156787,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-23 15:03",
+    "at": "2026-08-23 15:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
