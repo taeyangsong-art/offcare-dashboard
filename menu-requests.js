@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 880,
- "updatedAt": "2026-08-23 17:50",
+ "version": 881,
+ "updatedAt": "2026-08-23 18:00",
  "days": 30,
  "items": [
   {
@@ -36161,30 +36161,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784885413871379"
-  },
-  {
-   "ts": "1784883107.625199",
-   "date": "2026-07-24",
-   "time": "17:51",
-   "store": "인딕슬로우",
-   "biz": "3090831798",
-   "pos": "",
-   "content": "Thali 메뉴에 옵션 추가 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "[Thali] 라는 메뉴에 옵션을 하나 추가해서 적용 부탁 드립니다.\n\n• 추가할 옵션 이름 => 난 선택(런치용)\n    ◦ 현재 `난 선택(셋트용)`이 있는데 이거랑 똑같이 만들어서 이름만 런치용으로 바꾼 후 [Thali] 메뉴 선택 시 필수 옵션으로 넣어달라고 요청주셨습니다.\n    ◦ [Thali] 메뉴 옵션에 `난 선택(셋트용)` 은 삭제 해 주시고 난 선택(런치용)을 넣어주시면 됩니다. 감사합니다. :꾸벅:",
-    "수정 후 솔라피 발송 부탁 드립니다!"
-   ],
-   "rc": 9,
-   "lr": "1784883955.438489",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784883107625199"
   }
  ],
  "ocr": {
