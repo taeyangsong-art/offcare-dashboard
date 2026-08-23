@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 874,
- "updatedAt": "2026-08-23 12:30",
+ "version": 875,
+ "updatedAt": "2026-08-23 13:45",
  "days": 30,
  "items": [
   {
@@ -36483,27 +36483,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784868332769939"
-  },
-  {
-   "ts": "1784867995.076749",
-   "date": "2026-07-24",
-   "time": "13:39",
-   "store": "선우",
-   "biz": "2300150961",
-   "pos": "토스포스",
-   "content": "기존 kpn 포스 사용으로 ->토스포스로 변경 예정입니다.\n메뉴 이관 부탁드립니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784871955.611119",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784867995076749"
   }
  ],
  "ocr": {
