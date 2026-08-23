@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4637,
+  "version": 4638,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -127209,41 +127209,67 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "15:13",
+      "updatedAt": "15:24",
       "voc": {
-        "responses": 4,
+        "responses": 9,
         "install": {
-          "count": 1,
-          "low": 0
+          "count": 5,
+          "low": 1
         },
         "nps": {
-          "count": 4,
-          "low": 0
+          "count": 9,
+          "low": 1
         },
         "high": {
-          "install": 0,
-          "nps": 4
+          "install": 3,
+          "nps": 7
         },
         "npsDist": {
-          "10": 4
+          "0": 1,
+          "9": 1,
+          "10": 7
         },
         "installDist": {
-          "3": 1
+          "1": 1,
+          "3": 1,
+          "5": 3
         },
         "byIndustry": {
-          "요식업": 1
+          "기타": 2,
+          "서비스[뷰티,헤어]": 1,
+          "요식업": 2
         },
         "byTenure": {
-          "1개월": {
-            "total": 3,
+          "구매설치": {
+            "total": 5,
+            "low": 1
+          },
+          "6개월": {
+            "total": 1,
             "low": 0
           },
-          "구매설치": {
-            "total": 1,
+          "1개월": {
+            "total": 3,
             "low": 0
           }
         },
         "byVan": {
+          "KOVAN": {
+            "total": 1,
+            "low": 1
+          },
+          "KIS": {
+            "total": 3,
+            "low": 0
+          },
+          "KOCES": {
+            "total": 1,
+            "low": 0
+          },
+          "NICE": {
+            "total": 1,
+            "low": 0
+          },
           "SMARTRO": {
             "total": 1,
             "low": 0
@@ -127251,15 +127277,67 @@ window.SLACK_DATA = {
           "SECTA9": {
             "total": 2,
             "low": 0
-          },
-          "KIS": {
-            "total": 1,
-            "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
-        "praises": []
+        "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 2
+        },
+        "alerts": [
+          {
+            "time": "15:24",
+            "store": "법률사무소 원오",
+            "storeId": "590343",
+            "industry": "서비스업",
+            "indBucket": "기타",
+            "install": 1,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "설치가 생소한데, 직접 설치해야되어서 매우 힘들었음",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              },
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "설치도 힘들 뿐더러, 제대로 된 안내도 없었음",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
+        "praises": [
+          {
+            "time": "15:24",
+            "store": "선",
+            "storeId": "557262",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "설명서 보고 하면 누구든 설치할수 있음 편해요~~",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:24",
+            "store": "펫더제인",
+            "storeId": "503371",
+            "indBucket": "기타",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "간편함 이용료도 무료인데 예쁘고 편리하고 응용가능한 서비스들이 많음",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
       }
     }
   },
@@ -127287,7 +127365,7 @@ window.SLACK_DATA = {
       },
       "1787462808.485959": {
         "post": "1787462808.485959",
-        "lastSeen": 1787465723.699
+        "lastSeen": 1787466631.95
       }
     },
     "days": {
@@ -156787,7 +156865,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-23 15:15",
+    "at": "2026-08-23 15:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
