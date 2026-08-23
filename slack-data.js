@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4639,
+  "version": 4640,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -127209,44 +127209,45 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "15:43",
+      "updatedAt": "15:54",
       "voc": {
-        "responses": 11,
+        "responses": 12,
         "install": {
-          "count": 5,
+          "count": 6,
           "low": 1
         },
         "nps": {
-          "count": 11,
-          "low": 1
+          "count": 12,
+          "low": 2
         },
         "high": {
-          "install": 3,
+          "install": 4,
           "nps": 8
         },
         "npsDist": {
           "0": 1,
+          "5": 1,
           "9": 2,
           "10": 8
         },
         "installDist": {
           "1": 1,
           "3": 1,
-          "5": 3
+          "5": 4
         },
         "byIndustry": {
+          "요식업": 3,
           "기타": 2,
-          "서비스[뷰티,헤어]": 1,
-          "요식업": 2
+          "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 6,
+            "low": 2
+          },
           "1개월": {
             "total": 5,
             "low": 0
-          },
-          "구매설치": {
-            "total": 5,
-            "low": 1
           },
           "6개월": {
             "total": 1,
@@ -127254,6 +127255,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KOVAN": {
+            "total": 2,
+            "low": 2
+          },
           "SMARTRO": {
             "total": 2,
             "low": 0
@@ -127261,10 +127266,6 @@ window.SLACK_DATA = {
           "KOCES": {
             "total": 2,
             "low": 0
-          },
-          "KOVAN": {
-            "total": 1,
-            "low": 1
           },
           "KIS": {
             "total": 3,
@@ -127280,9 +127281,32 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "필요한 기능이 없거나 몰라서 불편": 1,
           "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "15:54",
+            "store": "메어이 반미",
+            "storeId": "603008",
+            "industry": "음식점/주점",
+            "indBucket": "요식업",
+            "install": 5,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "아직사용전이라서 잘모르겠네요",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:24",
             "store": "법률사무소 원오",
@@ -127365,7 +127389,7 @@ window.SLACK_DATA = {
       },
       "1787462808.485959": {
         "post": "1787462808.485959",
-        "lastSeen": 1787467521.372
+        "lastSeen": 1787468157.94
       }
     },
     "days": {
@@ -156865,7 +156889,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-23 15:45",
+    "at": "2026-08-23 15:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
