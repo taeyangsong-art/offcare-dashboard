@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4653,
+  "version": 4654,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -127209,16 +127209,16 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "17:07",
+      "updatedAt": "18:13",
       "voc": {
-        "responses": 17,
+        "responses": 18,
         "install": {
           "count": 7,
           "low": 1
         },
         "nps": {
-          "count": 17,
-          "low": 2
+          "count": 18,
+          "low": 3
         },
         "high": {
           "install": 4,
@@ -127226,6 +127226,7 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "0": 1,
+          "1": 1,
           "5": 1,
           "6": 1,
           "8": 1,
@@ -127244,6 +127245,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 7,
+            "low": 1
+          },
           "3개월": {
             "total": 1,
             "low": 0
@@ -127251,10 +127256,6 @@ window.SLACK_DATA = {
           "구매설치": {
             "total": 7,
             "low": 2
-          },
-          "1개월": {
-            "total": 6,
-            "low": 0
           },
           "12개월": {
             "total": 2,
@@ -127266,11 +127267,11 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
-          "SECTA9": {
-            "total": 3,
-            "low": 0
-          },
           "KOCES": {
+            "total": 4,
+            "low": 1
+          },
+          "SECTA9": {
             "total": 3,
             "low": 0
           },
@@ -127296,10 +127297,33 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1,
           "필요한 기능이 없거나 몰라서 불편": 1,
           "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "18:13",
+            "store": "미증유",
+            "storeId": "556527",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "포스기 오류문제로 운영에 차질이 생김",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:54",
             "store": "메어이 반미",
@@ -127424,7 +127448,7 @@ window.SLACK_DATA = {
       },
       "1787462808.485959": {
         "post": "1787462808.485959",
-        "lastSeen": 1787475633.784
+        "lastSeen": 1787476525.679
       }
     },
     "days": {
@@ -156924,7 +156948,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-23 18:00",
+    "at": "2026-08-23 18:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
