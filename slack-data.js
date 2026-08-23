@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4647,
+  "version": 4648,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -127209,20 +127209,20 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "16:54",
+      "updatedAt": "17:07",
       "voc": {
-        "responses": 16,
+        "responses": 17,
         "install": {
           "count": 7,
           "low": 1
         },
         "nps": {
-          "count": 16,
+          "count": 17,
           "low": 2
         },
         "high": {
           "install": 4,
-          "nps": 10
+          "nps": 11
         },
         "npsDist": {
           "0": 1,
@@ -127230,7 +127230,7 @@ window.SLACK_DATA = {
           "6": 1,
           "8": 1,
           "9": 2,
-          "10": 10
+          "10": 11
         },
         "installDist": {
           "1": 1,
@@ -127244,6 +127244,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 1,
+            "low": 0
+          },
           "구매설치": {
             "total": 7,
             "low": 2
@@ -127262,6 +127266,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SECTA9": {
+            "total": 3,
+            "low": 0
+          },
           "KOCES": {
             "total": 3,
             "low": 0
@@ -127283,10 +127291,6 @@ window.SLACK_DATA = {
             "low": 2
           },
           "SMARTRO": {
-            "total": 2,
-            "low": 0
-          },
-          "SECTA9": {
             "total": 2,
             "low": 0
           }
@@ -127348,6 +127352,18 @@ window.SLACK_DATA = {
           }
         ],
         "praises": [
+          {
+            "time": "17:07",
+            "store": "코드(CODE)",
+            "storeId": "473472",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "이용이 편리하고 생각보다 다루기 쉽다",
+            "byReaction": false,
+            "doneDate": ""
+          },
           {
             "time": "16:54",
             "store": "메리 브루 커피(Merry Brew Coffee)",
@@ -127412,7 +127428,7 @@ window.SLACK_DATA = {
       },
       "1787462808.485959": {
         "post": "1787462808.485959",
-        "lastSeen": 1787472030.842
+        "lastSeen": 1787472923.214
       }
     },
     "days": {
@@ -156912,7 +156928,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-23 17:00",
+    "at": "2026-08-23 17:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
