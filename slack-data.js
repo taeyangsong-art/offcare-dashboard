@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4663,
+  "version": 4664,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -127209,20 +127209,20 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "19:24",
+      "updatedAt": "19:55",
       "voc": {
-        "responses": 21,
+        "responses": 23,
         "install": {
-          "count": 10,
+          "count": 11,
           "low": 2
         },
         "nps": {
-          "count": 21,
+          "count": 23,
           "low": 4
         },
         "high": {
-          "install": 5,
-          "nps": 12
+          "install": 6,
+          "nps": 14
         },
         "npsDist": {
           "0": 1,
@@ -127232,24 +127232,28 @@ window.SLACK_DATA = {
           "6": 2,
           "8": 1,
           "9": 2,
-          "10": 12
+          "10": 14
         },
         "installDist": {
           "1": 1,
           "2": 1,
           "3": 3,
-          "5": 5
+          "5": 6
         },
         "byIndustry": {
+          "서비스[뷰티,헤어]": 3,
           "카페": 2,
-          "서비스[뷰티,헤어]": 2,
           "서비스[숙박]": 1,
           "요식업": 3,
           "기타": 2
         },
         "byTenure": {
+          "6개월": {
+            "total": 2,
+            "low": 0
+          },
           "구매설치": {
-            "total": 10,
+            "total": 11,
             "low": 4
           },
           "1개월": {
@@ -127263,20 +127267,20 @@ window.SLACK_DATA = {
           "12개월": {
             "total": 2,
             "low": 0
-          },
-          "6개월": {
-            "total": 1,
-            "low": 0
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 3,
+            "low": 1
+          },
+          "KSNET": {
+            "total": 1,
+            "low": 0
+          },
           "KOCES": {
             "total": 6,
             "low": 2
-          },
-          "KPN": {
-            "total": 2,
-            "low": 1
           },
           "SECTA9": {
             "total": 3,
@@ -127425,6 +127429,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "19:55",
+            "store": "김채원뷰티샵 수성범어점",
+            "storeId": "190343",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "신속 빠름 간편",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "18:24",
             "store": "호텔 오아시스 어반 스파",
             "storeId": "596662",
@@ -127504,7 +127520,7 @@ window.SLACK_DATA = {
       },
       "1787462808.485959": {
         "post": "1787462808.485959",
-        "lastSeen": 1787482427.059
+        "lastSeen": 1787482830.315
       }
     },
     "days": {
@@ -157004,7 +157020,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-23 19:53",
+    "at": "2026-08-23 20:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
