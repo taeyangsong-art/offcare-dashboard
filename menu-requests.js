@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 883,
- "updatedAt": "2026-08-23 19:15",
+ "version": 884,
+ "updatedAt": "2026-08-24 08:00",
  "days": 30,
  "items": [
   {
@@ -35982,141 +35982,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784938937915649"
-  },
-  {
-   "ts": "1784933161.408349",
-   "date": "2026-07-25",
-   "time": "07:46",
-   "store": "카페 아일랜드",
-   "biz": "1610702748",
-   "pos": "토스포스",
-   "content": "식혜 빼주세요",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/1WrV3t0W86-c0nIu0nCYVQ5RAZenLN2SW/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "1WrV3t0W86-c0nIu0nCYVQ5RAZenLN2SW",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "COFFEE",
-       "name": "아메리카노",
-       "price": 4000
-      },
-      {
-       "category": "COFFEE",
-       "name": "카페라떼",
-       "price": 5000
-      },
-      {
-       "category": "COFFEE",
-       "name": "바닐라라떼",
-       "price": 5000
-      },
-      {
-       "category": "COFFEE",
-       "name": "카라멜마키아또",
-       "price": 5000
-      },
-      {
-       "category": "COFFEE",
-       "name": "젤라또 아포가토",
-       "price": 6000
-      },
-      {
-       "category": "COFFEE",
-       "name": "달달구리",
-       "price": 3000
-      },
-      {
-       "category": "NON COFFEE",
-       "name": "녹차라떼",
-       "price": 5000
-      },
-      {
-       "category": "NON COFFEE",
-       "name": "초코라떼",
-       "price": 5000
-      },
-      {
-       "category": "NON COFFEE",
-       "name": "아이스티",
-       "price": 5000
-      },
-      {
-       "category": "ADE",
-       "name": "레몬",
-       "price": 5000
-      },
-      {
-       "category": "ADE",
-       "name": "자몽",
-       "price": 5000
-      },
-      {
-       "category": "ADE",
-       "name": "망고",
-       "price": 5000
-      },
-      {
-       "category": "ADE",
-       "name": "청포도",
-       "price": 5000
-      },
-      {
-       "category": "ADE",
-       "name": "깔라만시",
-       "price": 5000
-      },
-      {
-       "category": "TEA",
-       "name": "허브차",
-       "price": 4000
-      },
-      {
-       "category": "TEA",
-       "name": "생강차",
-       "price": 4000
-      },
-      {
-       "category": "TEA",
-       "name": "유자차",
-       "price": 4000
-      },
-      {
-       "category": "SPECIAL",
-       "name": "미숫가루",
-       "price": 5000
-      },
-      {
-       "category": "SPECIAL",
-       "name": "식혜",
-       "price": 6000
-      },
-      {
-       "category": "SPECIAL",
-       "name": "수박주스",
-       "price": 6000
-      },
-      {
-       "category": "SPECIAL",
-       "name": "컵빙수",
-       "price": 6000
-      }
-     ]
-    }
-   ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784933167.252149",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784933161408349"
   }
  ],
  "ocr": {
