@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4646,
+  "version": 4647,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -127209,15 +127209,15 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "16:43",
+      "updatedAt": "16:54",
       "voc": {
-        "responses": 15,
+        "responses": 16,
         "install": {
-          "count": 6,
+          "count": 7,
           "low": 1
         },
         "nps": {
-          "count": 15,
+          "count": 16,
           "low": 2
         },
         "high": {
@@ -127228,20 +127228,26 @@ window.SLACK_DATA = {
           "0": 1,
           "5": 1,
           "6": 1,
+          "8": 1,
           "9": 2,
           "10": 10
         },
         "installDist": {
           "1": 1,
-          "3": 1,
+          "3": 2,
           "5": 4
         },
         "byIndustry": {
+          "카페": 1,
           "요식업": 3,
           "기타": 2,
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 7,
+            "low": 2
+          },
           "1개월": {
             "total": 6,
             "low": 0
@@ -127250,16 +127256,16 @@ window.SLACK_DATA = {
             "total": 2,
             "low": 0
           },
-          "구매설치": {
-            "total": 6,
-            "low": 2
-          },
           "6개월": {
             "total": 1,
             "low": 0
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 3,
+            "low": 0
+          },
           "NICE": {
             "total": 2,
             "low": 0
@@ -127277,10 +127283,6 @@ window.SLACK_DATA = {
             "low": 2
           },
           "SMARTRO": {
-            "total": 2,
-            "low": 0
-          },
-          "KOCES": {
             "total": 2,
             "low": 0
           },
@@ -127347,6 +127349,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "16:54",
+            "store": "메리 브루 커피(Merry Brew Coffee)",
+            "storeId": "587142",
+            "indBucket": "카페",
+            "emp": "",
+            "install": 3,
+            "nps": 8,
+            "text": "지류프린트기랑 같이 설치를 하는데 종이 속도 조절이 되지 않아 지류프린트기는 사용을 못하고있고 사용 설명이 부족합니다 포스기가 테블릿만으로도 사용이 가능하여 좋습니다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "15:24",
             "store": "선",
             "storeId": "557262",
@@ -127398,7 +127412,7 @@ window.SLACK_DATA = {
       },
       "1787462808.485959": {
         "post": "1787462808.485959",
-        "lastSeen": 1787471653.917
+        "lastSeen": 1787472030.842
       }
     },
     "days": {
@@ -156898,7 +156912,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-23 16:54",
+    "at": "2026-08-23 17:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
