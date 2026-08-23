@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 876,
- "updatedAt": "2026-08-23 13:47",
+ "version": 877,
+ "updatedAt": "2026-08-23 14:14",
  "days": 30,
  "items": [
   {
@@ -36406,54 +36406,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784881626841289"
-  },
-  {
-   "ts": "1784869502.774709",
-   "date": "2026-07-24",
-   "time": "14:05",
-   "store": "일마지오 킨텍스점",
-   "biz": "7528502275",
-   "pos": "퍼스트포스",
-   "content": "키오스크 커피 메뉴에 브루잉 커피 핫,아이스를 아메리카노 옆으로 옮겨주세요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "님 안녕하세요!\n해당 건 빠른 요청주시어 확인 가능하실까요?",
-    "넹"
-   ],
-   "rc": 3,
-   "lr": "1784873372.456659",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784869502774709"
-  },
-  {
-   "ts": "1784869313.292949",
-   "date": "2026-07-24",
-   "time": "14:01",
-   "store": "미증유",
-   "biz": "2563400160",
-   "pos": "",
-   "content": "메뉴",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "https://w1659946222-hxm266180.slack.com/archives/C0ADC9759KQ/p1784868888348889?thread_ts=···.805749&cid=C0ADC9759KQ",
-    "https://w1659946222-hxm266180.slack.com/archives/C0ADC9759KQ/p1784868896585869?thread_ts=···.805749&cid=C0ADC9759KQ"
-   ],
-   "rc": 4,
-   "lr": "1784872430.766269",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784869313292949"
   }
  ],
  "ocr": {
