@@ -235,3 +235,139 @@ function handleAuth_(p) {
 
   return json_({ ok: false, error: 'unknown_action' });
 }
+
+/* =========================================================================
+ * 슬랙 새 글 감지 → GitHub 워크플로 즉시 실행 (1분 시간 트리거)
+ *
+ * 왜 필요한가: 워크플로 cron 은 '*​/10' 인데 GitHub 무료 러너가 예약 실행을
+ * 건너뛰어 실제로는 15분마다만 돈다(커밋 시각이 정확히 :00/:15/:30/:45 격자).
+ * 집계 작업 자체는 ~30초라, 느린 건 처리가 아니라 '시작을 기다리는 시간'이다.
+ * → 1분마다 슬랙만 훑어보고 새 글이 있으면 repository_dispatch 로 즉시 깨운다.
+ *
+ * 설치(편집기에서 1회): installSlackWatchTrigger() 실행
+ * 필요한 스크립트 속성: SLACK_BOT_TOKEN, GITHUB_TOKEN
+ * 동작 확인: testSlackWatch() 실행 후 실행 로그 확인
+ * ========================================================================= */
+
+// 감시 대상 채널. 워크플로는 실행될 때마다 '모든' 채널을 다시 집계하므로,
+// 여기 두 채널만 봐도 나머지(명의변경·배달·VOC)까지 같이 최신화된다.
+// 더 넣고 싶으면 추가하면 되지만, 채널 하나당 1분마다 UrlFetch 가 한 번 더 나간다.
+var WATCH_CHANNELS = [
+  { id: 'C08740SFT1S', name: '메뉴요청' },
+  { id: 'C09HRUSG4TX', name: 'AS요청' }
+];
+var GH_REPO = 'taeyangsong-art/offcare-dashboard';
+var GH_EVENT = 'slack-new-message';      // 워크플로의 repository_dispatch types 와 일치해야 함
+var WATCH_HOURS = { from: 9, to: 23 };   // KST 업무시간 밖에는 트리거 실행시간을 쓰지 않는다
+
+function prop_(k) { return PropertiesService.getScriptProperties().getProperty(k) || ''; }
+
+// 최근 글 + 최근 스레드 댓글까지 반영한 채널 지문.
+// conversations.history 는 스레드 댓글이 달려도 새 항목을 만들지 않으므로,
+// 부모 글의 latest_reply 까지 지문에 넣어야 '댓글로 들어온 요청'도 감지된다.
+function channelSignature_(chId, token) {
+  var url = 'https://slack.com/api/conversations.history?channel=' + chId + '&limit=10';
+  var res = UrlFetchApp.fetch(url, {
+    headers: { Authorization: 'Bearer ' + token },
+    muteHttpExceptions: true
+  });
+  var j = JSON.parse(res.getContentText());
+  if (!j.ok) { throw new Error('slack: ' + j.error); }
+  var msgs = j.messages || [];
+  var parts = [];
+  for (var i = 0; i < msgs.length; i++) {
+    parts.push(msgs[i].ts + ':' + (msgs[i].latest_reply || ''));
+  }
+  return parts.join(',');
+}
+
+function watchSlackAndDispatch() {
+  var props = PropertiesService.getScriptProperties();
+  var hour = parseInt(Utilities.formatDate(new Date(), 'Asia/Seoul', 'H'), 10);
+  if (hour < WATCH_HOURS.from || hour >= WATCH_HOURS.to) { return; }   // 업무시간 밖
+
+  var token = prop_('SLACK_BOT_TOKEN');
+  if (!token) { console.log('SLACK_BOT_TOKEN 스크립트 속성이 없습니다.'); return; }
+
+  var changed = [];
+  for (var i = 0; i < WATCH_CHANNELS.length; i++) {
+    var ch = WATCH_CHANNELS[i];
+    var key = 'WATCH_SIG_' + ch.id;
+    try {
+      var sig = channelSignature_(ch.id, token);
+      var prev = props.getProperty(key);
+      props.setProperty(key, sig);
+      if (prev === null) { continue; }            // 최초 실행 — 기준값만 잡고 넘어감
+      if (prev !== sig) { changed.push(ch.name); }
+    } catch (e) {
+      console.log('채널 확인 실패(' + ch.name + '): ' + e);   // 한 채널이 죽어도 나머지는 계속
+    }
+  }
+  if (!changed.length) { return; }
+
+  // 실행이 겹쳐 몰리는 것 방지. 워크플로 쪽 concurrency 로도 직렬화되지만 여기서 한 번 더 거른다.
+  var last = parseInt(props.getProperty('WATCH_LAST_DISPATCH') || '0', 10);
+  if (Date.now() - last < 55000) { console.log('직전 실행과 너무 가까움 — 건너뜀'); return; }
+
+  if (dispatchGithub_(changed)) {
+    props.setProperty('WATCH_LAST_DISPATCH', String(Date.now()));
+  }
+}
+
+function dispatchGithub_(reasons) {
+  var tok = prop_('GITHUB_TOKEN');
+  if (!tok) { console.log('GITHUB_TOKEN 스크립트 속성이 없습니다.'); return false; }
+  var res = UrlFetchApp.fetch('https://api.github.com/repos/' + GH_REPO + '/dispatches', {
+    method: 'post',
+    contentType: 'application/json',
+    headers: {
+      Authorization: 'Bearer ' + tok,
+      Accept: 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28'
+    },
+    payload: JSON.stringify({ event_type: GH_EVENT, client_payload: { reason: reasons.join(',') } }),
+    muteHttpExceptions: true
+  });
+  var code = res.getResponseCode();
+  if (code === 204) { console.log('워크플로 실행 요청 성공 — ' + reasons.join(',')); return true; }
+  console.log('워크플로 실행 요청 실패 ' + code + ': ' + res.getContentText().slice(0, 200));
+  return false;
+}
+
+// --- 편집기에서 직접 실행하는 도우미들 ---
+
+// 1분 트리거 설치(중복 방지를 위해 기존 것 제거 후 재설치)
+function installSlackWatchTrigger() {
+  var ts = ScriptApp.getProjectTriggers();
+  for (var i = 0; i < ts.length; i++) {
+    if (ts[i].getHandlerFunction() === 'watchSlackAndDispatch') { ScriptApp.deleteTrigger(ts[i]); }
+  }
+  ScriptApp.newTrigger('watchSlackAndDispatch').timeBased().everyMinutes(1).create();
+  console.log('1분 트리거를 설치했습니다.');
+}
+
+function removeSlackWatchTrigger() {
+  var ts = ScriptApp.getProjectTriggers(), n = 0;
+  for (var i = 0; i < ts.length; i++) {
+    if (ts[i].getHandlerFunction() === 'watchSlackAndDispatch') { ScriptApp.deleteTrigger(ts[i]); n++; }
+  }
+  console.log('트리거 ' + n + '개를 제거했습니다.');
+}
+
+// 설정이 맞는지 점검 — 실제 dispatch 는 하지 않고 상태만 찍는다
+function testSlackWatch() {
+  var token = prop_('SLACK_BOT_TOKEN');
+  console.log('SLACK_BOT_TOKEN: ' + (token ? '있음' : '없음 ❌'));
+  console.log('GITHUB_TOKEN: ' + (prop_('GITHUB_TOKEN') ? '있음' : '없음 ❌'));
+  if (!token) { return; }
+  for (var i = 0; i < WATCH_CHANNELS.length; i++) {
+    var ch = WATCH_CHANNELS[i];
+    try {
+      var sig = channelSignature_(ch.id, token);
+      var prev = PropertiesService.getScriptProperties().getProperty('WATCH_SIG_' + ch.id);
+      console.log(ch.name + ': 읽기 성공 · 최근글 ' + sig.split(',').length + '건 · 저장된 기준값 ' + (prev === null ? '없음(다음 실행에서 생성)' : '있음'));
+    } catch (e) {
+      console.log(ch.name + ': 읽기 실패 ❌ ' + e + '  (봇이 채널에 초대돼 있는지 확인)');
+    }
+  }
+}
