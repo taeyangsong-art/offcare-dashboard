@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 896,
- "updatedAt": "2026-08-24 15:00",
+ "version": 897,
+ "updatedAt": "2026-08-24 15:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1787552542.634909",
+   "date": "2026-08-24",
+   "time": "15:22",
+   "store": "오리밥상",
+   "biz": "6171899970",
+   "pos": "토스포스",
+   "content": "고깅메뉴ㅡ\n닭백숙ㅡ57000 원\n닭도리탕 ㅡ40000원\n오리포장 ㅡ37000 원\n식사메뉴\n정식 ㅡ9000원\n죽ㅡ1000원",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787552546.188349",
+   "rfx": 3,
+   "status": "done",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787552542634909"
+  },
   {
    "ts": "1787550533.596749",
    "date": "2026-08-24",
