@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 909,
- "updatedAt": "2026-08-24 16:38",
+ "version": 910,
+ "updatedAt": "2026-08-24 16:41",
  "days": 30,
  "items": [
+  {
+   "ts": "1787557175.359299",
+   "date": "2026-08-24",
+   "time": "16:39",
+   "store": "요선염소탕",
+   "biz": "8143301838",
+   "pos": "토스포스",
+   "content": "요선염소탕 상호를 헬로우푸드로 바꿔 주세요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787557178.092099",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787557175359299"
+  },
   {
    "ts": "1787557080.060139",
    "date": "2026-08-24",
@@ -24,8 +45,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1787557083.181179",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787557080060139"
   },
   {
@@ -47,8 +68,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1787556464.376699",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787556432673429"
   },
   {
