@@ -87,6 +87,13 @@ function sha_(str) {
 }
 function genCode_() { return ('000000' + Math.floor(Math.random() * 1000000)).slice(-6); }
 
+// 필드 단위로 합칠 섹션.
+// VOC 한 건에는 상태·처리내용·업종·저점사유가 같이 붙어 있어서, 두 사람이 같은 건의
+// 다른 필드를 비슷한 시각에 고치는 일이 잦다. 키를 통째로 대입하면 나중 사람이 보낸
+// 객체에 앞사람 필드가 없어서 앞사람 편집이 사라진다 → 여기서만 한 겹 더 들어가 합친다.
+// (players 는 레코드 타임스탬프(_t) 최신 우선이라 통째 대입이 맞다 — 넣지 않는다)
+var DEEP_MERGE = { vocEdit: true, vocPraise: true };
+
 function mergePatch_(base, patch) {
   if (!base) { base = {}; }
   for (var section in patch) {
@@ -94,8 +101,22 @@ function mergePatch_(base, patch) {
     if (pv && typeof pv === 'object' && !(pv instanceof Array)) {
       if (!base[section] || typeof base[section] !== 'object') { base[section] = {}; }
       for (var key in pv) {
-        if (pv[key] === null) { delete base[section][key]; }
-        else { base[section][key] = pv[key]; }
+        var val = pv[key];
+        // null = 키 삭제(구 클라이언트 호환). 신 클라이언트는 ''(묘비)를 보낸다 —
+        // 키를 지우면 그 항목을 아직 들고 있는 다른 브라우저가 '나만 가진 값'으로 보고
+        // 되돌려 올려서 삭제가 부활한다.
+        if (val === null) { delete base[section][key]; continue; }
+        var cur = base[section][key];
+        if (DEEP_MERGE[section] &&
+            val && typeof val === 'object' && !(val instanceof Array) &&
+            cur && typeof cur === 'object' && !(cur instanceof Array)) {
+          for (var f in val) {
+            if (val[f] === null) { delete cur[f]; }   // 그 필드만 지우라는 표시
+            else { cur[f] = val[f]; }
+          }
+        } else {
+          base[section][key] = val;
+        }
       }
     } else {
       base[section] = pv;

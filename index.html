@@ -4915,11 +4915,26 @@ function barRow(name,val,max,color){
     <div class="bar-track"><div class="bar-fill" style="width:${val/max*100}%;background:${color}"></div></div></div>`;
 }
 function vocKey(a){ return (a.date||'')+'|'+(a.storeId||'')+'|'+(a.time||''); }
+// 팀 공유 시 '남의 필드를 지우는' 사고를 막기 위한 패치 본문 생성.
+//
+// 서버는 patch 의 키 값을 통째로 대입한다 → 두 사람이 같은 건의 다른 필드
+// (한 명은 상태, 한 명은 처리내용)를 비슷한 시각에 고치면, 나중 사람이 보낸 객체에
+// 앞사람 필드가 없어서 앞사람 편집이 사라진다. 그래서 지운 필드는 빠뜨리는 대신
+// 명시적으로 null 을 실어 보낸다(백엔드가 필드 단위 병합을 하면 그 필드만 삭제).
+// 백엔드가 아직 구버전이어도 안전하다 — null 이 그대로 저장되고, 읽는 쪽은
+// ed.note!=null / ed.status||... 처럼 전부 null 을 기본값으로 흘려보낸다.
+function fieldPatch(obj, field, val){
+  const p = Object.assign({}, obj||{});
+  if(val==='') p[field]=null;    // 이 필드만 삭제하라는 표시
+  return p;
+}
 function saveVocEdit(key, field, val){
   if(!VOCEDIT[key]) VOCEDIT[key]={};
   if(val==='') delete VOCEDIT[key][field]; else VOCEDIT[key][field]=val;
-  if(Object.keys(VOCEDIT[key]).length===0) delete VOCEDIT[key];
-  save(LS_VOCEDIT, VOCEDIT); pushPatch({vocEdit:{[key]:VOCEDIT[key]||null}});
+  const gone = Object.keys(VOCEDIT[key]).length===0;
+  if(gone) delete VOCEDIT[key];
+  save(LS_VOCEDIT, VOCEDIT);
+  pushPatch({vocEdit:{[key]: gone ? '' : fieldPatch(VOCEDIT[key], field, val)}});
   if(field==='reasonCat'||field==='status') renderVoc();   // 사유차트/상태이동 반영
 }
 // 저점 매장 표의 한 행 (업종·저점이유·처리내용·상태 편집)
@@ -5301,7 +5316,7 @@ function saveVocPraise(key, emp){
   if(!VOCPRAISE[key]) VOCPRAISE[key]={};
   if(emp==='') delete VOCPRAISE[key].emp; else VOCPRAISE[key].emp=emp;
   if(!VOCPRAISE[key].deleted && Object.keys(VOCPRAISE[key]).length===0) delete VOCPRAISE[key];
-  save(LS_VOCPRAISE, VOCPRAISE); pushPatch({vocPraise:{[key]:VOCPRAISE[key]||null}}); rerenderVoc();
+  save(LS_VOCPRAISE, VOCPRAISE); pushPatch({vocPraise:{[key]: VOCPRAISE[key] ? fieldPatch(VOCPRAISE[key],'emp',emp) : ''}}); rerenderVoc();
 }
 // 이미 쓰이는 팀명과 대소문자만 다르면 기존 표기로 맞춘다.
 // (oc 를 따로 입력해 OC 와 별개 항목으로 목록에 뜨던 문제)
@@ -5320,7 +5335,7 @@ function saveVocPraiseTeam(key, team){
   team=canonTeam(team);
   if(team==='') delete VOCPRAISE[key].team; else VOCPRAISE[key].team=team;
   if(!VOCPRAISE[key].deleted && Object.keys(VOCPRAISE[key]).length===0) delete VOCPRAISE[key];
-  save(LS_VOCPRAISE, VOCPRAISE); pushPatch({vocPraise:{[key]:VOCPRAISE[key]||null}}); rerenderVoc();
+  save(LS_VOCPRAISE, VOCPRAISE); pushPatch({vocPraise:{[key]: VOCPRAISE[key] ? fieldPatch(VOCPRAISE[key],'team',team) : ''}}); rerenderVoc();
 }
 // 이름→팀 매핑: 원격팀(기본) + 칭찬 지정에서 입력된 팀으로 보정 → 팀 필터/멤버 목록 자동 구성
 let praiseTeamFilter='';
@@ -5563,7 +5578,7 @@ function renderVocMonthly(){
 }
 function vocMonthNav(n){ const r=parseYmd(selDate); selDate=ymd(new Date(r.getFullYear(), r.getMonth()+n, 1)); renderVocMonthly(); }
 function vocMonthToday(){ selDate=ymd(today()); renderVocMonthly(); }
-function saveVocComment(mkey, text){ if(text&&text.trim()) VOCCOMMENT[mkey]=text; else delete VOCCOMMENT[mkey]; save(LS_VOCCOMMENT, VOCCOMMENT); pushPatch({vocComment:{[mkey]:VOCCOMMENT[mkey]||null}}); }
+function saveVocComment(mkey, text){ if(text&&text.trim()) VOCCOMMENT[mkey]=text; else delete VOCCOMMENT[mkey]; save(LS_VOCCOMMENT, VOCCOMMENT); pushPatch({vocComment:{[mkey]:VOCCOMMENT[mkey]||''}}); }
 function vocGenComment(mkey){
   const {v,byInd,byReason,totalIn}=vocMonthAgg();
   const ti=Object.entries(byInd).sort((a,b)=>b[1]-a[1]).slice(0,3);
