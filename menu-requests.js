@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 893,
- "updatedAt": "2026-08-24 12:14",
+ "version": 894,
+ "updatedAt": "2026-08-24 13:56",
  "days": 30,
  "items": [
   {
@@ -36514,27 +36514,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784967947718089"
-  },
-  {
-   "ts": "1784954846.434899",
-   "date": "2026-07-25",
-   "time": "13:47",
-   "store": "일마지오 킨텍스점",
-   "biz": "7528502275",
-   "pos": "퍼스트포스",
-   "content": "포스에만 음료 항목에 소주 샷추가 ₩800원 만들어 주세요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784954851.576649",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784954846434899"
   }
  ],
  "ocr": {
