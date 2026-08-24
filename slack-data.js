@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4726,
+  "version": 4727,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -127143,11 +127143,11 @@ window.SLACK_DATA = {
                 "cat": "필요한 기능이 없거나 몰라서 불편"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 금일 오후 2시 15분 사용법 교육 및 출력물 설정 예정 금일 오후 2시 15분 사용법 교육 및 출력물 설정 예정",
+            "doneDate": "2026-08-24"
           },
           {
             "time": "12:32",
@@ -127562,12 +127562,47 @@ window.SLACK_DATA = {
     "2026-08-24": {
       "counts": {
         "as": {
-          "배선유": 1,
+          "배선유": 2,
+          "송태양": 1,
+          "고경림": 1,
           "서상원": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:30",
+          "store": "몽블링",
+          "biz": "7290703655",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "포프 태블릿 온보딩 부탁 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "자체설치"
+        },
+        {
+          "time": "09:28",
+          "store": "월계명지학원",
+          "biz": "4109185145",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "voc",
+          "hw": "",
+          "intake": "online",
+          "note": "2시 15분 유프 주문서 출력안되게 설정 예약"
+        },
+        {
+          "time": "09:12",
+          "store": "훈이네 만원족발",
+          "biz": "2751703083",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "프론트 단말기 지속 복호화암호 오류 문구 노출 되며 결제 불가하여 확인 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "9시 30분 재통화요청 / 프론트 초기화후 재온보딩 후 정상작동 확인"
+        },
         {
           "time": "09:02",
           "store": "루미에르",
@@ -127592,11 +127627,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 2,
+        "online": 5,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:30"
+      "updatedAt": "09:36"
     }
   },
   "resp": {
@@ -127619,7 +127654,7 @@ window.SLACK_DATA = {
       },
       "1787531402.959239": {
         "post": "1787531402.959239",
-        "lastSeen": 1787531427.233
+        "lastSeen": 1787531876.556
       }
     },
     "days": {
@@ -157134,7 +157169,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-24 09:30",
+    "at": "2026-08-24 09:37",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
