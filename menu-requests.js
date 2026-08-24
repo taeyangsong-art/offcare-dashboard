@@ -3,10 +3,432 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 890,
- "updatedAt": "2026-08-24 11:30",
+ "version": 891,
+ "updatedAt": "2026-08-24 11:46",
  "days": 30,
  "items": [
+  {
+   "ts": "1787539254.240499",
+   "date": "2026-08-24",
+   "time": "11:40",
+   "store": "카페오넬",
+   "biz": "5491003011",
+   "pos": "토스포스",
+   "content": "없음",
+   "special": "없음",
+   "drive": [
+    "https://drive.google.com/file/d/13pZaWZTyYfRh8vW7Or2bIklTcZO5zETC/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1OgHKXiRd89DGawqEFtaTDrTOCo-PErh6/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "13pZaWZTyYfRh8vW7Or2bIklTcZO5zETC",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "아이스 아메리카노",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "아이스 디카페인",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "카페라떼 아이스",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "바닐라라떼 아이스",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "카페 모카 아이스",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "초코라떼 아이스",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "아이스티 아이스",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "레몬에이드 아이스",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "자몽에이드 아이스",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "캐모마일 아이스",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "루이보스 아이스",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "자스민 아이스",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "얼그레이 아이스",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "바닐라 버번 아이스",
+       "price": 4500
+      }
+     ]
+    },
+    {
+     "id": "1OgHKXiRd89DGawqEFtaTDrTOCo-PErh6",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "아메리카노 (HOT)",
+       "price": 2500
+      },
+      {
+       "category": "",
+       "name": "아메리카노 (ICE)",
+       "price": 3500
+      },
+      {
+       "category": "",
+       "name": "디카페인 (HOT)",
+       "price": 3500
+      },
+      {
+       "category": "",
+       "name": "에스프레소 (HOT)",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "아보카토 (ICE)",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "카페라떼 (HOT)",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "카페라떼 (ICE)",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "바닐라 라떼 (HOT)",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "바닐라 라떼 (ICE)",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "카페 모카 (HOT)",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "카페 모카 (ICE)",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "말차 라떼 (ICE)",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "아인슈페너 라떼 (ICE)",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "초코라떼 (HOT)",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "초코라떼 (ICE)",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "아이스티 (HOT)",
+       "price": 3500
+      },
+      {
+       "category": "",
+       "name": "아이스티 (ICE)",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "레몬에이드 (레몬차) HOT",
+       "price": 4800
+      },
+      {
+       "category": "",
+       "name": "레몬에이드 (레몬차) ICE",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "자몽에이드 (자몽차) HOT",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "자몽에이드 (자몽차) ICE",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "청포도에이드 (ICE)",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "캐모마일 (HOT)",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "캐모마일 (ICE)",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "루이보스 (HOT)",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "루이보스 (ICE)",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "자스민 (HOT)",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "자스민 (ICE)",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "얼그레이 (HOT)",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "얼그레이 (ICE)",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "바닐라버번 (HOT)",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "바닐라버번 (ICE)",
+       "price": 4500
+      },
+      {
+       "category": "수제차",
+       "name": "미숫가루 (ICE)",
+       "price": 5000
+      },
+      {
+       "category": "수제차",
+       "name": "유자차 (HOT)",
+       "price": 5000
+      },
+      {
+       "category": "수제차",
+       "name": "유자차 (ICE)",
+       "price": 5500
+      },
+      {
+       "category": "수제차",
+       "name": "대추차 (HOT)",
+       "price": 5000
+      },
+      {
+       "category": "수제차",
+       "name": "대추차 (ICE)",
+       "price": 5500
+      },
+      {
+       "category": "수제차",
+       "name": "매실차 (HOT)",
+       "price": 5000
+      },
+      {
+       "category": "수제차",
+       "name": "매실차 (ICE)",
+       "price": 5500
+      },
+      {
+       "category": "생과일 주스",
+       "name": "토마토",
+       "price": 5000
+      },
+      {
+       "category": "생과일 주스",
+       "name": "망고",
+       "price": 5500
+      },
+      {
+       "category": "생과일 주스",
+       "name": "오렌지",
+       "price": 5500
+      },
+      {
+       "category": "생과일 주스",
+       "name": "딸기 (계절)",
+       "price": 5500
+      },
+      {
+       "category": "생과일 주스",
+       "name": "키위",
+       "price": 5500
+      },
+      {
+       "category": "스무디",
+       "name": "플레인 스무디",
+       "price": 5000
+      },
+      {
+       "category": "스무디",
+       "name": "딸기 스무디",
+       "price": 5500
+      },
+      {
+       "category": "스무디",
+       "name": "블루베리 스무디",
+       "price": 5500
+      },
+      {
+       "category": "디저트 (빵)",
+       "name": "소금빵",
+       "price": 2800
+      },
+      {
+       "category": "디저트 (빵)",
+       "name": "명란소금빵",
+       "price": 3800
+      },
+      {
+       "category": "디저트 (빵)",
+       "name": "쪽파 크림치즈 소금빵",
+       "price": 4500
+      },
+      {
+       "category": "디저트 (빵)",
+       "name": "베이글",
+       "price": 2800
+      },
+      {
+       "category": "디저트 (빵)",
+       "name": "쪽파 크림치즈 베이글",
+       "price": 5500
+      },
+      {
+       "category": "디저트 (빵)",
+       "name": "휘낭시에",
+       "price": 2000
+      },
+      {
+       "category": "디저트 (빵)",
+       "name": "솔리드 휘낭시에",
+       "price": 2500
+      },
+      {
+       "category": "디저트 (빵)",
+       "name": "두바이 휘낭시에",
+       "price": 2800
+      },
+      {
+       "category": "디저트 (빵)",
+       "name": "두바이 쫀득쿠키",
+       "price": 5800
+      },
+      {
+       "category": "디저트 (빵)",
+       "name": "크림치즈 케익 (1조각)",
+       "price": 6000
+      },
+      {
+       "category": "샌드위치",
+       "name": "에그샌드위치",
+       "price": 4500
+      },
+      {
+       "category": "샌드위치",
+       "name": "감자샐러드 샌드위치",
+       "price": 4500
+      },
+      {
+       "category": "샌드위치",
+       "name": "햄치즈 샌드위치",
+       "price": 6000
+      },
+      {
+       "category": "샌드위치",
+       "name": "클럽 샌드위치",
+       "price": 7500
+      },
+      {
+       "category": "샌드위치",
+       "name": "불고기 샌드위치",
+       "price": 8500
+      },
+      {
+       "category": "",
+       "name": "브런치 세트 메뉴",
+       "price": 15000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787539257.887989",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787539254240499"
+  },
   {
    "ts": "1787538510.071999",
    "date": "2026-08-24",
