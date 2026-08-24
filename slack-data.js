@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4926,
+  "version": 4927,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130883,44 +130883,82 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "01:30",
+      "updatedAt": "08:45",
       "voc": {
-        "responses": 1,
+        "responses": 2,
         "install": {
-          "count": 1,
-          "low": 0
+          "count": 2,
+          "low": 1
         },
         "nps": {
-          "count": 1,
-          "low": 0
+          "count": 2,
+          "low": 1
         },
         "high": {
           "install": 0,
           "nps": 0
         },
         "npsDist": {
+          "1": 1,
           "8": 1
         },
         "installDist": {
+          "1": 1,
           "4": 1
         },
         "byIndustry": {
+          "서비스[학원]": 1,
           "도소매": 1
         },
         "byTenure": {
           "구매설치": {
-            "total": 1,
-            "low": 0
+            "total": 2,
+            "low": 1
           }
         },
         "byVan": {
+          "KCP": {
+            "total": 1,
+            "low": 1
+          },
           "KOCES": {
             "total": 1,
             "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 2
+        },
+        "alerts": [
+          {
+            "time": "08:31",
+            "store": "팀 HJ",
+            "storeId": "603391",
+            "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
+            "install": 1,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "화면설정을 해더 안되요. 그리고 설명서 대로 해도 자꾸 음식점 처럼 더치페이가 나오고 고객이 할부결재를 원햣는데, 할부가 안되요 설정을 제대로 못해소 아직 결재를 못하고잇어요",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              },
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "설치 기사가 와서 설치해줬으면 좋갰습니다. 아직 사용을 못하고잇어요",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
         "praises": [
           {
             "time": "01:00",
@@ -130971,6 +131009,10 @@ window.SLACK_DATA = {
       "1787589002.171429": {
         "post": "1787589002.171429",
         "lastSeen": 1787611524.291
+      },
+      "1787615100.202119": {
+        "post": "1787615100.202119",
+        "lastSeen": 1787615126.63
       }
     },
     "days": {
@@ -161453,13 +161495,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 08:30",
+    "at": "2026-08-25 08:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3676,
+    "rows": 3683,
     "named": 384,
     "unknownName": 0,
     "beforeStart": 0,
