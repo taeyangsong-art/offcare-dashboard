@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4727,
+  "version": 4728,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -127168,7 +127168,7 @@ window.SLACK_DATA = {
             "emp": "",
             "autoStatus": "",
             "autoEmp": "",
-            "autoNote": "",
+            "autoNote": "1차부재 1차부재",
             "doneDate": ""
           }
         ],
@@ -127562,14 +127562,25 @@ window.SLACK_DATA = {
     "2026-08-24": {
       "counts": {
         "as": {
+          "서상원": 2,
           "배선유": 2,
           "송태양": 1,
-          "고경림": 1,
-          "서상원": 1
+          "고경림": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:35",
+          "store": "다움헤어",
+          "biz": "6133802618",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "가결제",
+          "hw": "",
+          "intake": "offline",
+          "note": "휴무 익일"
+        },
         {
           "time": "09:30",
           "store": "몽블링",
@@ -127628,10 +127639,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 5,
-        "offline": 0,
+        "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:36"
+      "updatedAt": "09:45"
     }
   },
   "resp": {
@@ -127654,7 +127665,15 @@ window.SLACK_DATA = {
       },
       "1787531402.959239": {
         "post": "1787531402.959239",
-        "lastSeen": 1787531876.556
+        "lastSeen": 1787532321.748
+      },
+      "1787532300.439849": {
+        "post": "1787532300.439849",
+        "lastSeen": 1787532321.748
+      },
+      "1787532301.082259": {
+        "post": "1787532301.082259",
+        "lastSeen": 1787532321.748
       }
     },
     "days": {
@@ -157169,7 +157188,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-24 09:37",
+    "at": "2026-08-24 09:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
