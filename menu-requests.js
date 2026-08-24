@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 901,
- "updatedAt": "2026-08-24 16:05",
+ "version": 902,
+ "updatedAt": "2026-08-24 16:09",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "Resized_20260824_154435.jpg.jpeg",
      "fid": "F0BT1ECLFEC",
      "from": "댓글",
-     "path": "menu-files/1787554975_240439-0.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -121,7 +120,8 @@ window.MENU_REQUESTS = {
        "name": "시럽추가",
        "price": 500
       }
-     ]
+     ],
+     "path": "menu-files/1787554975_240439-0.jpeg"
     },
     {
      "name": "Resized_20260824_154438.jpg.jpeg",
@@ -133,7 +133,6 @@ window.MENU_REQUESTS = {
      "name": "Resized_20260824_154441.jpg.jpeg",
      "fid": "F0BS37GUUPP",
      "from": "댓글",
-     "path": "menu-files/1787554975_240439-2.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -186,13 +185,13 @@ window.MENU_REQUESTS = {
        "name": "아삿추",
        "price": 5000
       }
-     ]
+     ],
+     "path": "menu-files/1787554975_240439-2.jpeg"
     },
     {
      "name": "Resized_20260824_154443.jpg.jpeg",
      "fid": "F0BS72W1R7U",
      "from": "댓글",
-     "path": "menu-files/1787554975_240439-3.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -200,13 +199,13 @@ window.MENU_REQUESTS = {
        "name": "팥빙수",
        "price": 11000
       }
-     ]
+     ],
+     "path": "menu-files/1787554975_240439-3.jpeg"
     },
     {
      "name": "Resized_20260824_154445.jpg.jpeg",
      "fid": "F0BS91WE909",
      "from": "댓글",
-     "path": "menu-files/1787554975_240439-4.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -224,13 +223,13 @@ window.MENU_REQUESTS = {
        "name": "콘파냐",
        "price": 4500
       }
-     ]
+     ],
+     "path": "menu-files/1787554975_240439-4.jpeg"
     },
     {
      "name": "Resized_20260824_154447.jpg.jpeg",
      "fid": "F0BS37HGN4V",
      "from": "댓글",
-     "path": "menu-files/1787554975_240439-5.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -303,7 +302,8 @@ window.MENU_REQUESTS = {
        "name": "버터빵",
        "price": 3000
       }
-     ]
+     ],
+     "path": "menu-files/1787554975_240439-5.jpeg"
     },
     {
      "name": "Resized_20260824_154449.jpg.jpeg",
@@ -519,11 +519,11 @@ window.MENU_REQUESTS = {
    "replies": [
     "*[가격 수정]*\n<병맥주>\n버드와이저 6000원\n칭따오 8000원\n달빛청하 6000원\n\n<칵테일>\n전부 다 7000원으로 수정\n\n<세트메뉴>\n치킨1 15500원\n세트1~5 16000 (1~5 전부다)\n\n<안주류>\n한치13000\n국물떡볶이 7000\n감자튀김 (사이즈 중) 4500원\n순살치킨 14500\n치즈스틱 5000\n오뎅탕 10000\n계란말이 10000\n\n*[메뉴 삭제]*\n<안주류> 치즈계란말이 삭제\n\n*[메뉴 등록]*\n<안주류>\n제철과일 17000\n골뱅이 22000\n프렌치토스트 5500\n\n등록 후 문자 발송해 주시면 감사하겠습니다 :woman-bowing:"
    ],
-   "rc": 2,
-   "lr": "1787554238.882899",
+   "rc": 3,
+   "lr": "1787555298.225939",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787554081131029"
   },
   {
