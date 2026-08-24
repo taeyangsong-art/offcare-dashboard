@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 911,
- "updatedAt": "2026-08-24 16:44",
+ "version": 912,
+ "updatedAt": "2026-08-24 16:46",
  "days": 30,
  "items": [
+  {
+   "ts": "1787557553.283189",
+   "date": "2026-08-24",
+   "time": "16:45",
+   "store": "아찌라멘 울산점",
+   "biz": "4153300710",
+   "pos": "기타",
+   "content": "카테고리  돈가스류 생선까스단품,11500 생선까스정식 14500 치즈돈가스추가(1p130g) 6500",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787557556.316099",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787557553283189"
+  },
   {
    "ts": "1787557175.359299",
    "date": "2026-08-24",
