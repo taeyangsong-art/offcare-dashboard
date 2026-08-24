@@ -3,10 +3,841 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 897,
- "updatedAt": "2026-08-24 15:30",
+ "version": 898,
+ "updatedAt": "2026-08-24 15:47",
  "days": 30,
  "items": [
+  {
+   "ts": "1787553533.560129",
+   "date": "2026-08-24",
+   "time": "15:38",
+   "store": "룽고(LUNGO)디저트카페",
+   "biz": "1693701264",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF9JTUdfMjAyNjA4MjRfMT",
+     "fid": "F0BSAJURJQL",
+     "from": "댓글",
+     "path": "menu-files/1787553533_560129-0.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "COFFEE",
+       "name": "아메리카노(H)",
+       "price": 3500
+      },
+      {
+       "category": "COFFEE",
+       "name": "아메리카노(I)",
+       "price": 3500
+      },
+      {
+       "category": "COFFEE",
+       "name": "바닐라라떼(H)",
+       "price": 5800
+      },
+      {
+       "category": "COFFEE",
+       "name": "바닐라라떼(I)",
+       "price": 5800
+      },
+      {
+       "category": "COFFEE",
+       "name": "카라멜마끼아또(H)",
+       "price": 5800
+      },
+      {
+       "category": "COFFEE",
+       "name": "카라멜마끼아또(I)",
+       "price": 5800
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페라떼(H)",
+       "price": 5500
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페라떼(I)",
+       "price": 5500
+      },
+      {
+       "category": "COFFEE",
+       "name": "콜드브루디카페인(I)",
+       "price": 5500
+      },
+      {
+       "category": "COFFEE",
+       "name": "샷추가(2샷)",
+       "price": 1000
+      },
+      {
+       "category": "COFFEE",
+       "name": "달고나라떼(H)",
+       "price": 5800
+      },
+      {
+       "category": "COFFEE",
+       "name": "달고나라떼(I)",
+       "price": 5800
+      },
+      {
+       "category": "COFFEE",
+       "name": "콜드브루 디카페인라떼",
+       "price": 5800
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페모카(H)",
+       "price": 5800
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페모카(I)",
+       "price": 5800
+      },
+      {
+       "category": "COFFEE",
+       "name": "마샬추",
+       "price": 4500
+      },
+      {
+       "category": "COFFEE",
+       "name": "오트얼그레이(H)",
+       "price": 6500
+      },
+      {
+       "category": "COFFEE",
+       "name": "오트얼그레이(H)",
+       "price": 6500
+      },
+      {
+       "category": "COFFEE",
+       "name": "아포가토",
+       "price": 5500
+      },
+      {
+       "category": "COFFEE",
+       "name": "마샬추-Big size",
+       "price": 7500
+      },
+      {
+       "category": "COFFEE",
+       "name": "Big size 샷추가 커피(2샷)",
+       "price": 1000
+      },
+      {
+       "category": "COFFEE",
+       "name": "Big size 카페라떼",
+       "price": 8800
+      },
+      {
+       "category": "COFFEE",
+       "name": "헤소크레스",
+       "price": 3500
+      },
+      {
+       "category": "COFFEE",
+       "name": "아메리카노 벅샤(I)스.Big size",
+       "price": 7000
+      },
+      {
+       "category": "COFFEE",
+       "name": "카푸치노",
+       "price": 4500
+      },
+      {
+       "category": "COFFEE",
+       "name": "쫄깃와플",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "Big size 바닐라라떼",
+       "price": 9000
+      },
+      {
+       "category": "COFFEE",
+       "name": "골드브라디카페인(바닐라라떼)",
+       "price": 6000
+      },
+      {
+       "category": "COFFEE",
+       "name": "콜드브루디카페인(오트라떼)",
+       "price": 6500
+      },
+      {
+       "category": "COFFEE",
+       "name": "디카페인 라떼 big size",
+       "price": 9000
+      },
+      {
+       "category": "COFFEE",
+       "name": "콜라 마그작리떼",
+       "price": 5800
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF9JTUdfMjAyNjA4MjRfMT",
+     "fid": "F0BS8SMKS3B",
+     "from": "댓글",
+     "path": "menu-files/1787553533_560129-1.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "LATTE",
+       "name": "딸기라떼(I)",
+       "price": 5800
+      },
+      {
+       "category": "LATTE",
+       "name": "초코라떼(H)",
+       "price": 5300
+      },
+      {
+       "category": "LATTE",
+       "name": "초코라떼(I)",
+       "price": 5300
+      },
+      {
+       "category": "LATTE",
+       "name": "고구마라떼(H)",
+       "price": 6000
+      },
+      {
+       "category": "LATTE",
+       "name": "고구마라떼(I)",
+       "price": 6000
+      },
+      {
+       "category": "LATTE",
+       "name": "말차라떼(H)",
+       "price": 5300
+      },
+      {
+       "category": "LATTE",
+       "name": "말차라떼(I)",
+       "price": 5300
+      },
+      {
+       "category": "LATTE",
+       "name": "핫초코",
+       "price": 5000
+      },
+      {
+       "category": "LATTE",
+       "name": "우유",
+       "price": 4500
+      },
+      {
+       "category": "LATTE",
+       "name": "딸기말차라떼(I)",
+       "price": 5800
+      },
+      {
+       "category": "LATTE",
+       "name": "초코마우스라떼(I)",
+       "price": 6800
+      },
+      {
+       "category": "LATTE",
+       "name": "Big size 딸기라떼",
+       "price": 10000
+      },
+      {
+       "category": "LATTE",
+       "name": "딸기찻라떼(I)",
+       "price": 6000
+      },
+      {
+       "category": "LATTE",
+       "name": "밤라떼(I)",
+       "price": 6000
+      },
+      {
+       "category": "LATTE",
+       "name": "밤라떼(H)",
+       "price": 6500
+      },
+      {
+       "category": "LATTE",
+       "name": "흑임자가루라떼",
+       "price": 5500
+      },
+      {
+       "category": "LATTE",
+       "name": "피스타치오라떼(I)",
+       "price": 6800
+      },
+      {
+       "category": "LATTE",
+       "name": "피스타치오라떼(H)",
+       "price": 7000
+      },
+      {
+       "category": "LATTE",
+       "name": "라떼 벡사이즈 추가",
+       "price": 3500
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF9JTUdfMjAyNjA4MjRfMT",
+     "fid": "F0BS0MDS9D1",
+     "from": "댓글",
+     "path": "menu-files/1787553533_560129-2.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "ADE",
+       "name": "레몬에이드",
+       "price": 5900
+      },
+      {
+       "category": "ADE",
+       "name": "자몽에이드",
+       "price": 5900
+      },
+      {
+       "category": "ADE",
+       "name": "청포도에이드",
+       "price": 5900
+      },
+      {
+       "category": "ADE",
+       "name": "패션후르츠에이드",
+       "price": 5900
+      },
+      {
+       "category": "ADE",
+       "name": "블루베리에이드",
+       "price": 5900
+      },
+      {
+       "category": "ADE",
+       "name": "루비에이드",
+       "price": 5900
+      },
+      {
+       "category": "ADE",
+       "name": "Big size 에이드",
+       "price": 8500
+      },
+      {
+       "category": "ADE",
+       "name": "블루레몬에이드",
+       "price": 5900
+      },
+      {
+       "category": "ADE",
+       "name": "피치에이드",
+       "price": 5900
+      },
+      {
+       "category": "ADE",
+       "name": "수제유자청에이드",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF9JTUdfMjAyNjA4MjRfMT",
+     "fid": "F0BS8SMA9NV",
+     "from": "댓글",
+     "path": "menu-files/1787553533_560129-3.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "TEA",
+       "name": "복숭아아이스티",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "유기농 히비스커스",
+       "price": 4800
+      },
+      {
+       "category": "TEA",
+       "name": "유기농 얼그레이",
+       "price": 4800
+      },
+      {
+       "category": "TEA",
+       "name": "유기농 페퍼민트",
+       "price": 4800
+      },
+      {
+       "category": "TEA",
+       "name": "유기농 카모마일",
+       "price": 4800
+      },
+      {
+       "category": "TEA",
+       "name": "유기농 루이보스팁",
+       "price": 4800
+      },
+      {
+       "category": "TEA",
+       "name": "허니자몽블랙티",
+       "price": 5900
+      },
+      {
+       "category": "TEA",
+       "name": "수제자몽차",
+       "price": 5500
+      },
+      {
+       "category": "TEA",
+       "name": "수제레몬차",
+       "price": 5500
+      },
+      {
+       "category": "TEA",
+       "name": "수제 생강차",
+       "price": 5500
+      },
+      {
+       "category": "TEA",
+       "name": "유기농 캐모그라스",
+       "price": 5000
+      },
+      {
+       "category": "TEA",
+       "name": "수제 유자귤차",
+       "price": 5500
+      },
+      {
+       "category": "TEA",
+       "name": "아이스티 팥",
+       "price": 6900
+      },
+      {
+       "category": "TEA",
+       "name": "카모레몬그라스",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "Big size 유기농팁",
+       "price": 7000
+      },
+      {
+       "category": "TEA",
+       "name": "Big 허니자몽블랙티",
+       "price": 7500
+      },
+      {
+       "category": "TEA",
+       "name": "대만주",
+       "price": 6000
+      },
+      {
+       "category": "TEA",
+       "name": "대추쌍차",
+       "price": 9000
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF9JTUdfMjAyNjA4MjRfMT",
+     "fid": "F0BS8SNFWKB",
+     "from": "댓글",
+     "path": "menu-files/1787553533_560129-4.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "스무디&빙수",
+       "name": "망고스무디",
+       "price": 6500
+      },
+      {
+       "category": "스무디&빙수",
+       "name": "블루베리스무디",
+       "price": 6500
+      },
+      {
+       "category": "스무디&빙수",
+       "name": "딸기스무디",
+       "price": 6500
+      },
+      {
+       "category": "스무디&빙수",
+       "name": "키위스무디",
+       "price": 6500
+      },
+      {
+       "category": "스무디&빙수",
+       "name": "타로버블타라떼",
+       "price": 5800
+      },
+      {
+       "category": "스무디&빙수",
+       "name": "밀크버블타라떼",
+       "price": 5800
+      },
+      {
+       "category": "스무디&빙수",
+       "name": "그린버블타라떼",
+       "price": 5800
+      },
+      {
+       "category": "스무디&빙수",
+       "name": "흑당버블티",
+       "price": 5800
+      },
+      {
+       "category": "스무디&빙수",
+       "name": "밀크쉐이크 초코",
+       "price": 5600
+      },
+      {
+       "category": "스무디&빙수",
+       "name": "플레인요거트스무디",
+       "price": 6500
+      },
+      {
+       "category": "스무디&빙수",
+       "name": "구름스무디",
+       "price": 6500
+      },
+      {
+       "category": "스무디&빙수",
+       "name": "블루쿠 크림소다",
+       "price": 6500
+      },
+      {
+       "category": "스무디&빙수",
+       "name": "수박주스",
+       "price": 6500
+      },
+      {
+       "category": "스무디&빙수",
+       "name": "초코라떼",
+       "price": 6700
+      },
+      {
+       "category": "스무디&빙수",
+       "name": "딸바주스",
+       "price": 6500
+      },
+      {
+       "category": "스무디&빙수",
+       "name": "딸바스무디",
+       "price": 6900
+      },
+      {
+       "category": "스무디&빙수",
+       "name": "요볼스 스무디",
+       "price": 6500
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF9JTUdfMjAyNjA4MjRfMT",
+     "fid": "F0BS6TMSE66",
+     "from": "댓글",
+     "path": "menu-files/1787553533_560129-5.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "휘낭시에",
+       "name": "무화과 휘낭시에",
+       "price": 3800
+      },
+      {
+       "category": "휘낭시에",
+       "name": "흑임자 휘낭시에",
+       "price": 3700
+      },
+      {
+       "category": "휘낭시에",
+       "name": "초코 휘낭시에",
+       "price": 3800
+      },
+      {
+       "category": "휘낭시에",
+       "name": "소보로 휘낭시에",
+       "price": 3900
+      },
+      {
+       "category": "휘낭시에",
+       "name": "카카오닙스 휘낭시에",
+       "price": 3900
+      },
+      {
+       "category": "휘낭시에",
+       "name": "오레오 로투스 휘낭시에",
+       "price": 3800
+      },
+      {
+       "category": "휘낭시에",
+       "name": "휘낭시에(마롱&코코넛)",
+       "price": 3800
+      },
+      {
+       "category": "휘낭시에",
+       "name": "누네띠네 휘낭시에",
+       "price": 3800
+      },
+      {
+       "category": "휘낭시에",
+       "name": "후레이크 휘낭시에",
+       "price": 3800
+      },
+      {
+       "category": "휘낭시에",
+       "name": "플레인 휘낭시에",
+       "price": 3500
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF9JTUdfMjAyNjA4MjRfMT",
+     "fid": "F0BS8SNNZFT",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "디저트2",
+       "name": "소금빵",
+       "price": 3300
+      },
+      {
+       "category": "디저트2",
+       "name": "샌드위치",
+       "price": 8500
+      },
+      {
+       "category": "디저트2",
+       "name": "소세지_핫도그",
+       "price": 6500
+      },
+      {
+       "category": "디저트2",
+       "name": "누텔라빵(대)",
+       "price": 5500
+      },
+      {
+       "category": "디저트2",
+       "name": "스콘 (무화과, 얼그레이)",
+       "price": 3500
+      },
+      {
+       "category": "디저트2",
+       "name": "담쟁이 쿠키세트",
+       "price": 450000
+      },
+      {
+       "category": "디저트2",
+       "name": "오란다",
+       "price": 2200
+      },
+      {
+       "category": "디저트2",
+       "name": "롱고 당근케잌",
+       "price": 2900
+      },
+      {
+       "category": "디저트2",
+       "name": "몽블랑",
+       "price": 7000
+      },
+      {
+       "category": "디저트2",
+       "name": "뉴욕버터롤",
+       "price": 4800
+      },
+      {
+       "category": "디저트2",
+       "name": "크루아상",
+       "price": 5000
+      },
+      {
+       "category": "디저트2",
+       "name": "할인판매",
+       "price": 100
+      },
+      {
+       "category": "디저트2",
+       "name": "할인판매",
+       "price": 3800
+      },
+      {
+       "category": "디저트2",
+       "name": "할인판매",
+       "price": 1000
+      },
+      {
+       "category": "디저트2",
+       "name": "할인판매",
+       "price": 5000
+      },
+      {
+       "category": "디저트2",
+       "name": "할인판매",
+       "price": 10000
+      },
+      {
+       "category": "디저트2",
+       "name": "할인판매",
+       "price": 15000
+      },
+      {
+       "category": "디저트2",
+       "name": "할인판매",
+       "price": 20000
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF9JTUdfMjAyNjA4MjRfMT",
+     "fid": "F0BS8SN9DFT",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "케익",
+       "name": "딸기생크림케잌",
+       "price": 7500
+      },
+      {
+       "category": "케익",
+       "name": "초코딸기케익",
+       "price": 7500
+      },
+      {
+       "category": "케익",
+       "name": "바스크치즈케이크",
+       "price": 8000
+      },
+      {
+       "category": "케익",
+       "name": "얼그레이몽케이크",
+       "price": 6900
+      },
+      {
+       "category": "케익",
+       "name": "딸기크레이프 케익",
+       "price": 7000
+      },
+      {
+       "category": "케익",
+       "name": "블루베리크레이프케익",
+       "price": 7000
+      },
+      {
+       "category": "케익",
+       "name": "치즈케익",
+       "price": 7800
+      },
+      {
+       "category": "케익",
+       "name": "얼그레이가토 케익",
+       "price": 6300
+      },
+      {
+       "category": "케익",
+       "name": "홀케익",
+       "price": 54000
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF9JTUdfMjAyNjA4MjRfMT",
+     "fid": "F0BS32VCS77",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "마카롱",
+       "name": "크렌브륄레 통카롱",
+       "price": 3800
+      },
+      {
+       "category": "마카롱",
+       "name": "딸기요거트 통카롱",
+       "price": 3800
+      },
+      {
+       "category": "마카롱",
+       "name": "초코나무숲 통카롱",
+       "price": 3800
+      },
+      {
+       "category": "마카롱",
+       "name": "바닐라마카롱",
+       "price": 3500
+      },
+      {
+       "category": "마카롱",
+       "name": "초코마카롱",
+       "price": 3500
+      },
+      {
+       "category": "마카롱",
+       "name": "돼지바통카롱",
+       "price": 3800
+      },
+      {
+       "category": "마카롱",
+       "name": "딸기마카롱",
+       "price": 3500
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1787553563.969899",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787553533560129"
+  },
+  {
+   "ts": "1787553403.568349",
+   "date": "2026-08-24",
+   "time": "15:36",
+   "store": "디저트참잘하는집 송탄역점",
+   "biz": "1103893769",
+   "pos": "토스포스",
+   "content": "토스포스 메뉴 및 사진 등록 요청 드립니다. ( 대형키오스크 함께 사용 중 )",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "f_20e1c3551873.xlsx.exs",
+     "fid": "F0BS8SEJ3B3",
+     "from": "댓글",
+     "path": "menu-files/1787553403_568349-1.exs",
+     "nj": 1
+    },
+    {
+     "name": "f_699651fb573a.xlsx.exs",
+     "fid": "F0BSAJNAL92",
+     "from": "댓글",
+     "path": "menu-files/1787553403_568349-2.exs",
+     "nj": 1
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1787553477.423019",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787553403568349"
+  },
   {
    "ts": "1787552542.634909",
    "date": "2026-08-24",
@@ -1553,10 +2384,14 @@ window.MENU_REQUESTS = {
    "datt": [],
    "replies": [
     "- 메뉴 수정 : 모든 메뉴 핫 음료에는 사이즈선택 모두 삭제해주세요(뜨거운음료는 기본 16온즈로 통일이므로)\n\n아이스에는 구조16온즈를 삭제해주시고 2가지 사이즈만 표기해주세요\n긴급24온즈3샷 ₩1,000원 과\nCPR(1리터)4샷 ₩2,000원\n\n\n해당 부분은 처리가 되어 있는 걸로 확인 통화로 상세 확인하려 했으나 통화 불가",
-    "그 외 요청 건 처리 완료"
+    "그 외 요청 건 처리 완료",
+    "님 안녕하세요! 대표님께서 인입되어 메뉴등록 수정 요청 주셨는데 수정사항 여기에 남겨드리면 될까요?\n메뉴요청 채널에 새로 업로드 필요하면 업로드 하겠습니다..!\n\n[수정사항]\n•  HOT 선택시 24온즈 하나 남도록 수정\n• ICE 선택시 24온즈, 1리터 두가지 옵션만 남기되 필수로 선택 안되어있고 둘 중 하나 선택할 수 있도록 \n이렇게 요청 주셨습니다!",
+    "제가 전화하겠습니다!",
+    "현지님 앞으로는 완료된 건에 추가요청이 들어오면 새로 올려주세욥 :햄스터-꾸벅:\n1. 원격 시트에 데이터 적재\n2. 태그는 놓칠 수 있어서 담당자 빠른 확인을 위해",
+    "네! 추후에는 채널에 새로 업로드하겠습니다 :꾸벅곰:"
    ],
-   "rc": 3,
-   "lr": "1787388514.540989",
+   "rc": 6,
+   "lr": "1787553728.386119",
    "rfx": 3,
    "status": "done",
    "handler": "심성현",
