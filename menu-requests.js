@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 907,
- "updatedAt": "2026-08-24 16:27",
+ "version": 908,
+ "updatedAt": "2026-08-24 16:28",
  "days": 30,
  "items": [
   {
@@ -20,9 +20,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787556435.691329",
+   "replies": [
+    "커피 탭에서 (행사 X)\n\n• 아이스아메리카노 3500원 \n• 카페라떼 아이스 4500원 \n• 바닐라라떼 아이스 4500원"
+   ],
+   "rc": 2,
+   "lr": "1787556464.376699",
    "rfx": 3,
    "status": "wait",
    "handler": null,
