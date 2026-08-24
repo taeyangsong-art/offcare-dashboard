@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 930,
- "updatedAt": "2026-08-24 21:30",
+ "version": 931,
+ "updatedAt": "2026-08-25 00:00",
  "days": 30,
  "items": [
   {
@@ -38312,27 +38312,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김동욱",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785109564909899"
-  },
-  {
-   "ts": "1784990910.231639",
-   "date": "2026-07-25",
-   "time": "23:48",
-   "store": "꾸움집",
-   "biz": "7974501249",
-   "pos": "오케이포스",
-   "content": "추가\n디저트\n초코칩 씬쿠키 (3,500)",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1784990915.899519",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김동욱",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784990910231639"
   }
  ],
  "ocr": {
