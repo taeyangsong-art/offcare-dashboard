@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4730,
+  "version": 4731,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -127573,17 +127573,17 @@ window.SLACK_DATA = {
     },
     "2026-08-24": {
       "counts": {
-        "extern": {
-          "서상원": 1
-        },
         "as": {
-          "김동욱": 2,
+          "고경림": 4,
+          "김동욱": 3,
           "김규빈": 1,
           "김현기": 1,
-          "고경림": 3,
           "배선유": 5,
           "서상원": 2,
           "송태양": 1
+        },
+        "extern": {
+          "서상원": 1
         },
         "onboarding": {
           "심성현": 1
@@ -127595,6 +127595,17 @@ window.SLACK_DATA = {
       "pending": [],
       "done": [
         {
+          "time": "10:16",
+          "store": "네일모먼트",
+          "biz": "4611800549",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "터미널 고장으로 기기변경 재온보딩",
+          "hw": "",
+          "intake": "offline",
+          "note": "터미널 고장기기 회수요청 및 재온보딩 후 테스트완료"
+        },
+        {
           "time": "10:12",
           "store": "동래 꿀팥빵",
           "biz": "1552701970",
@@ -127604,6 +127615,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": ""
+        },
+        {
+          "time": "10:07",
+          "store": "이로엔 네일(iroen_nail)",
+          "biz": "1727300629",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "프론트 온보딩 부탁드립니다 :꾸벅_옐로:",
+          "hw": "",
+          "intake": "online",
+          "note": "맥북 와이파이 연결을 못하셔서 오후 2시 15분 통화요청. 예앿메시지 지냏ㅇ"
         },
         {
           "time": "10:00",
@@ -127796,11 +127818,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 15,
-        "offline": 3,
+        "online": 16,
+        "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "10:12"
+      "updatedAt": "10:30"
     }
   },
   "resp": {
@@ -127823,7 +127845,11 @@ window.SLACK_DATA = {
       },
       "1787533706.816809": {
         "post": "1787533706.816809",
-        "lastSeen": 1787534122.355
+        "lastSeen": 1787535029.518
+      },
+      "1787535001.420459": {
+        "post": "1787535001.420459",
+        "lastSeen": 1787535029.518
       }
     },
     "days": {
@@ -157370,7 +157396,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-24 10:15",
+    "at": "2026-08-24 10:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
