@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 900,
- "updatedAt": "2026-08-24 16:03",
+ "version": 901,
+ "updatedAt": "2026-08-24 16:05",
  "days": 30,
  "items": [
   {
@@ -18,11 +18,444 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "Resized_20260824_154435.jpg.jpeg",
+     "fid": "F0BT1ECLFEC",
+     "from": "댓글",
+     "path": "menu-files/1787554975_240439-0.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "COFFEE",
+       "name": "아메리카노(HOT)",
+       "price": 4000
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페라떼(HOT)",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "카푸치노(HOT)",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "바닐라라떼(HOT)",
+       "price": 5500
+      },
+      {
+       "category": "COFFEE",
+       "name": "연유라떼(HOT)",
+       "price": 5500
+      },
+      {
+       "category": "COFFEE",
+       "name": "아메리카노(ICE)",
+       "price": 4000
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페라떼(ICE)",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "카푸치노(ICE)",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "바닐라라떼(ICE)",
+       "price": 5500
+      },
+      {
+       "category": "COFFEE",
+       "name": "연유라떼(ICE)",
+       "price": 5500
+      },
+      {
+       "category": "COFFEE",
+       "name": "아인슈페너",
+       "price": 6000
+      },
+      {
+       "category": "COFFEE",
+       "name": "크림라떼",
+       "price": 6000
+      },
+      {
+       "category": "COFFEE",
+       "name": "아포가토",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "T/O & 오전 할인(hot)",
+       "price": 3000
+      },
+      {
+       "category": "COFFEE",
+       "name": "T/O & 오전 할인(ice)",
+       "price": 3000
+      },
+      {
+       "category": "COFFEE",
+       "name": "디카페인변경",
+       "price": 1000
+      },
+      {
+       "category": "COFFEE",
+       "name": "파크골프 식권",
+       "price": 10000
+      },
+      {
+       "category": "COFFEE",
+       "name": "샷추가",
+       "price": 500
+      },
+      {
+       "category": "COFFEE",
+       "name": "시럽추가",
+       "price": 500
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260824_154438.jpg.jpeg",
+     "fid": "F0BT1ECQ4RE",
+     "from": "댓글",
+     "path": "menu-files/1787554975_240439-1.jpeg"
+    },
+    {
+     "name": "Resized_20260824_154441.jpg.jpeg",
+     "fid": "F0BS37GUUPP",
+     "from": "댓글",
+     "path": "menu-files/1787554975_240439-2.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "TEA",
+       "name": "쌍화차",
+       "price": 7000
+      },
+      {
+       "category": "TEA",
+       "name": "대추차",
+       "price": 6000
+      },
+      {
+       "category": "TEA",
+       "name": "레몬차(HOT)",
+       "price": 5500
+      },
+      {
+       "category": "TEA",
+       "name": "자몽차(HOT)",
+       "price": 5500
+      },
+      {
+       "category": "TEA",
+       "name": "레몬차(ice)",
+       "price": 5500
+      },
+      {
+       "category": "TEA",
+       "name": "자몽차(ice)",
+       "price": 5500
+      },
+      {
+       "category": "TEA",
+       "name": "캐모마일",
+       "price": 4500
+      },
+      {
+       "category": "TEA",
+       "name": "낮의차",
+       "price": 5000
+      },
+      {
+       "category": "TEA",
+       "name": "아이스티",
+       "price": 4500
+      },
+      {
+       "category": "TEA",
+       "name": "아삿추",
+       "price": 5000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260824_154443.jpg.jpeg",
+     "fid": "F0BS72W1R7U",
+     "from": "댓글",
+     "path": "menu-files/1787554975_240439-3.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "빙수",
+       "name": "팥빙수",
+       "price": 11000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260824_154445.jpg.jpeg",
+     "fid": "F0BS91WE909",
+     "from": "댓글",
+     "path": "menu-files/1787554975_240439-4.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "Espresso",
+       "name": "에스프레소",
+       "price": 4000
+      },
+      {
+       "category": "Espresso",
+       "name": "도피오",
+       "price": 4500
+      },
+      {
+       "category": "Espresso",
+       "name": "콘파냐",
+       "price": 4500
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260824_154447.jpg.jpeg",
+     "fid": "F0BS37HGN4V",
+     "from": "댓글",
+     "path": "menu-files/1787554975_240439-5.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "COFFEE",
+       "name": "아몬드휘낭",
+       "price": 4500
+      },
+      {
+       "category": "COFFEE",
+       "name": "바스크 치즈 케이크",
+       "price": 6000
+      },
+      {
+       "category": "COFFEE",
+       "name": "아몬드휘낭시에",
+       "price": 2800
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "사브레쿠키",
+       "price": 5000
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "초코바스크치즈케이크",
+       "price": 6500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "쥬라스휘낭시에",
+       "price": 2800
+      },
+      {
+       "category": "TEA",
+       "name": "휘낭시에버터스크",
+       "price": 5500
+      },
+      {
+       "category": "TEA",
+       "name": "초코휘낭시에",
+       "price": 3200
+      },
+      {
+       "category": "빙수",
+       "name": "쿠키",
+       "price": 2500
+      },
+      {
+       "category": "빙수",
+       "name": "올리브치아바타칩",
+       "price": 3500
+      },
+      {
+       "category": "빙수",
+       "name": "흑임자휘낭시에",
+       "price": 3200
+      },
+      {
+       "category": "Espresso",
+       "name": "샌드위치",
+       "price": 6500
+      },
+      {
+       "category": "Espresso",
+       "name": "코코넛 휘낭시에",
+       "price": 3200
+      },
+      {
+       "category": "",
+       "name": "버터빵",
+       "price": 3000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260824_154449.jpg.jpeg",
+     "fid": "F0BRRN4L6GP",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "화과자&양갱",
+       "name": "화과자1구",
+       "price": 4000
+      },
+      {
+       "category": "화과자&양갱",
+       "name": "화과자 2구",
+       "price": 8000
+      },
+      {
+       "category": "화과자&양갱",
+       "name": "화과자4구",
+       "price": 16000
+      },
+      {
+       "category": "화과자&양갱",
+       "name": "화과자6구",
+       "price": 24000
+      },
+      {
+       "category": "화과자&양갱",
+       "name": "화과자10구",
+       "price": 40000
+      },
+      {
+       "category": "화과자&양갱",
+       "name": "화과자 12구",
+       "price": 48000
+      },
+      {
+       "category": "화과자&양갱",
+       "name": "화과자15구",
+       "price": 60000
+      },
+      {
+       "category": "화과자&양갱",
+       "name": "프리미엄 9구",
+       "price": 45000
+      },
+      {
+       "category": "화과자&양갱",
+       "name": "프리미엄 15구",
+       "price": 73000
+      },
+      {
+       "category": "화과자&양갱",
+       "name": "화과자 꽃다발",
+       "price": 28000
+      },
+      {
+       "category": "화과자&양갱",
+       "name": "보자기 추가",
+       "price": 10000
+      },
+      {
+       "category": "화과자&양갱",
+       "name": "화과자 박스 추가",
+       "price": 500
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260824_154451.jpg.jpeg",
+     "fid": "F0BS91XJU3B",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "맥주",
+       "name": "카스",
+       "price": 5000
+      },
+      {
+       "category": "맥주",
+       "name": "테라",
+       "price": 5000
+      },
+      {
+       "category": "맥주",
+       "name": "카프리",
+       "price": 7000
+      },
+      {
+       "category": "맥주",
+       "name": "카프리",
+       "price": 8000
+      },
+      {
+       "category": "맥주",
+       "name": "코젤",
+       "price": 7000
+      },
+      {
+       "category": "맥주",
+       "name": "아사히",
+       "price": 8000
+      },
+      {
+       "category": "맥주",
+       "name": "호가든",
+       "price": 7000
+      },
+      {
+       "category": "맥주",
+       "name": "칭따오",
+       "price": 7000
+      },
+      {
+       "category": "맥주",
+       "name": "하이네켄",
+       "price": 7000
+      },
+      {
+       "category": "맥주",
+       "name": "소주",
+       "price": 6000
+      },
+      {
+       "category": "맥주",
+       "name": "과일",
+       "price": 15000
+      },
+      {
+       "category": "맥주",
+       "name": "한치",
+       "price": 15000
+      },
+      {
+       "category": "맥주",
+       "name": "먹태",
+       "price": 15000
+      },
+      {
+       "category": "맥주",
+       "name": "모둠",
+       "price": 15000
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1787554979.081169",
+   "rc": 2,
+   "lr": "1787555051.416089",
    "rfx": 3,
    "status": "wait",
    "handler": null,
