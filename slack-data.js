@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4773,
+  "version": 4774,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -129578,7 +129578,7 @@ window.SLACK_DATA = {
         "offline": 24,
         "unknown": 0
       },
-      "updatedAt": "16:27",
+      "updatedAt": "16:30",
       "ob": {
         "count": 21,
         "byEmp": {
@@ -129596,9 +129596,9 @@ window.SLACK_DATA = {
           {
             "key": "2026년 8월 24일 오후 12:52:25|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786955808240499#1",
             "handler": "김규빈",
-            "status": "",
+            "status": "일정등록완료",
             "recvDate": "2026-08-24",
-            "planDate": "",
+            "planDate": "2026-08-28",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786955808240499"
           },
           {
@@ -129756,14 +129756,14 @@ window.SLACK_DATA = {
         ]
       },
       "voc": {
-        "responses": 12,
+        "responses": 14,
         "install": {
-          "count": 1,
+          "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 12,
-          "low": 1
+          "count": 14,
+          "low": 3
         },
         "high": {
           "install": 0,
@@ -129771,35 +129771,46 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "2": 1,
+          "4": 1,
+          "5": 1,
           "8": 3,
           "9": 1,
           "10": 7
         },
         "installDist": {
+          "3": 1,
           "4": 1
         },
         "byIndustry": {
-          "서비스[학원]": 1
+          "서비스[학원]": 2
         },
         "byTenure": {
+          "구매설치": {
+            "total": 2,
+            "low": 1
+          },
+          "6개월": {
+            "total": 5,
+            "low": 1
+          },
           "1개월": {
             "total": 6,
             "low": 1
           },
-          "6개월": {
-            "total": 4,
-            "low": 0
-          },
           "3개월": {
-            "total": 1,
-            "low": 0
-          },
-          "구매설치": {
             "total": 1,
             "low": 0
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 3,
+            "low": 2
+          },
+          "SECTA9": {
+            "total": 2,
+            "low": 1
+          },
           "KIS": {
             "total": 4,
             "low": 0
@@ -129807,10 +129818,6 @@ window.SLACK_DATA = {
           "NICE": {
             "total": 1,
             "low": 0
-          },
-          "KOCES": {
-            "total": 2,
-            "low": 1
           },
           "SMARTRO": {
             "total": 1,
@@ -129820,19 +129827,61 @@ window.SLACK_DATA = {
             "total": 2,
             "low": 0
           },
-          "SECTA9": {
-            "total": 1,
-            "low": 0
-          },
           "KSNET": {
             "total": 1,
             "low": 0
           }
         },
         "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 1,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "사용중 오류가 자주 발생함": 1
         },
         "alerts": [
+          {
+            "time": "16:29",
+            "store": "책나무 남광독서학원",
+            "storeId": "602650",
+            "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
+            "install": 3,
+            "nps": 4,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 4,
+                "text": "설치과정이 쉽지 읺아 기기관리에 능숙하지 못한 사람들에게 추천이 어렵고 아직 사용 시 장점이 뚜렷하지 않음",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
+          {
+            "time": "16:29",
+            "store": "꾸리찌바",
+            "storeId": "367350",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "다른포스기라의차이를크게못느낌",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:48",
             "store": "아지트",
@@ -129872,31 +129921,39 @@ window.SLACK_DATA = {
       },
       "1787533706.816809": {
         "post": "1787533706.816809",
-        "lastSeen": 1787556500.308
+        "lastSeen": 1787556619.644
       },
       "1787536008.835079": {
         "post": "1787536008.835079",
-        "lastSeen": 1787556500.308
+        "lastSeen": 1787556619.644
       },
       "1787540881.150669": {
         "post": "1787540881.150669",
-        "lastSeen": 1787556500.308
+        "lastSeen": 1787556619.644
       },
       "1787546259.308909": {
         "post": "1787546259.308909",
-        "lastSeen": 1787556500.308
+        "lastSeen": 1787556619.644
       },
       "1787554941.797599": {
         "post": "1787554941.797599",
-        "lastSeen": 1787556500.308
+        "lastSeen": 1787556619.644
       },
       "1787556404.141259": {
         "post": "1787556404.141259",
-        "lastSeen": 1787556500.308
+        "lastSeen": 1787556619.644
       },
       "1787556432.673429": {
         "post": "1787556432.673429",
-        "lastSeen": 1787556500.308
+        "lastSeen": 1787556619.644
+      },
+      "1787556603.117709": {
+        "post": "1787556603.117709",
+        "lastSeen": 1787556619.644
+      },
+      "1787556601.020329": {
+        "post": "1787556601.020329",
+        "lastSeen": 1787556619.644
       }
     },
     "days": {
@@ -159947,7 +160004,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-24 16:28",
+    "at": "2026-08-24 16:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
@@ -159959,11 +160016,11 @@ window.SLACK_DATA = {
     "beforeStart": 0,
     "done": 384,
     "byStatus": {
-      "일정등록완료": 237,
+      "일정등록완료": 238,
       "1차부재": 86,
       "점주직접접수": 34,
       "설치불가": 7,
-      "(빈칸)": 5,
+      "(빈칸)": 4,
       "자가설치": 13,
       "설치보류요청": 2
     }
