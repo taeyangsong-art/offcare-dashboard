@@ -104,11 +104,32 @@ function mergePatch_(base, patch) {
   return base;
 }
 
+// 변경 감지용 리비전. 쓰기(doPost)가 일어날 때마다 1씩 증가한다.
+// 시트가 아니라 ScriptProperties 에 두는 이유: 50KB 블롭을 읽고 파싱할 필요 없이
+// 숫자 하나만 돌려줘서, 클라이언트가 짧은 주기로 찔러봐도 부담이 없게 하려고.
+var REV_KEY = 'STORE_REV';
+function readRev_() {
+  var v = PropertiesService.getScriptProperties().getProperty(REV_KEY);
+  var n = parseInt(v, 10);
+  return isNaN(n) ? 0 : n;
+}
+function bumpRev_() {
+  var props = PropertiesService.getScriptProperties();
+  var n = readRev_() + 1;
+  props.setProperty(REV_KEY, String(n));
+  return n;
+}
+
 function doGet(e) {
   try {
     var p = (e && e.parameter) || {};
+    // 경량 변경 확인 — 시트를 건드리지 않고 리비전 숫자만 반환(응답 수십 바이트).
+    if (p.action === 'rev') { return json_({ ok: true, rev: readRev_() }); }
     if (p.action) { return handleAuth_(p); }
-    return json_({ game: readBlob_() });
+    // rev 를 블롭보다 '먼저' 읽는다. 반대 순서면 두 읽기 사이에 들어온 쓰기를
+    // 클라이언트가 이미 받은 것으로 착각해 그 변경을 영영 놓친다.
+    var rev = readRev_();
+    return json_({ game: readBlob_(), rev: rev });
   } catch (err) {
     return json_({ ok: false, error: String(err) });
   }
@@ -125,7 +146,8 @@ function doPost(e) {
     if (body.patch) { cur = mergePatch_(cur, body.patch); }
     else if (body.game) { cur = body.game; }
     store_().getRange('A1').setValue(JSON.stringify(cur));
-    return json_({ ok: true });
+    var rev = bumpRev_();                 // 락 안에서 증가 → 다른 클라이언트가 다음 rev 조회 때 감지
+    return json_({ ok: true, rev: rev });
   } catch (err) {
     return json_({ ok: false, error: String(err) });
   } finally {
