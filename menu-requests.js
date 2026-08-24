@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 903,
- "updatedAt": "2026-08-24 16:13",
+ "version": 904,
+ "updatedAt": "2026-08-24 16:19",
  "days": 30,
  "items": [
   {
@@ -127,7 +127,90 @@ window.MENU_REQUESTS = {
      "name": "Resized_20260824_154438.jpg.jpeg",
      "fid": "F0BT1ECQ4RE",
      "from": "댓글",
-     "path": "menu-files/1787554975_240439-1.jpeg"
+     "path": "menu-files/1787554975_240439-1.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "NON-COFFEE",
+       "name": "고구마라떼(HOT)",
+       "price": 5500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "초코라떼(HOT)",
+       "price": 5500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "곡물라떼(HOT)",
+       "price": 5500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "우유",
+       "price": 4000
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "고구마라떼(ICE)",
+       "price": 5500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "초코라떼(ICE)",
+       "price": 5500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "딸기라떼(ICE)",
+       "price": 5500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "플레인요거트스무디",
+       "price": 5500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "딸기요거트스무디",
+       "price": 5500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "블루베리요거트스무디",
+       "price": 5500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "미숫가루 스무디",
+       "price": 6000
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "레드오렌지티에이드",
+       "price": 6000
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "자몽에이드",
+       "price": 5500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "레몬에이드",
+       "price": 5500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "토마토쥬스",
+       "price": 6000
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "키위쥬스",
+       "price": 6000
+      }
+     ]
     },
     {
      "name": "Resized_20260824_154441.jpg.jpeg",
@@ -457,7 +540,7 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1787555051.416089",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787554975240439"
   },
@@ -1353,7 +1436,7 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1787553477.423019",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787553403568349"
   },
