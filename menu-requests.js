@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 908,
- "updatedAt": "2026-08-24 16:28",
+ "version": 909,
+ "updatedAt": "2026-08-24 16:38",
  "days": 30,
  "items": [
+  {
+   "ts": "1787557080.060139",
+   "date": "2026-08-24",
+   "time": "16:38",
+   "store": "엉터리맥주",
+   "biz": "8363100140",
+   "pos": "오케이포스",
+   "content": "모든칵테일가격₩7000원으로\n품절아닙니다\n안주에 치즈스틱₩5000\n먹태 ₩11000\n한치\n₩13000\n프렌치토스트₩6500\n황태노가리는삭제\n정정해주세요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787557083.181179",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787557080060139"
+  },
   {
    "ts": "1787556432.673429",
    "date": "2026-08-24",
