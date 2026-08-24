@@ -3827,7 +3827,34 @@ function avatarMini(emp, w){ const g=GAME[emp]||{}; const eq=g.equipped||{}; con
 // 팀 공유 클라우드 = {players:GAME, vocEdit, vocPraise, vocComment, dutyOver, fishWait} 통합 블롭 (백엔드는 game 블롭을 그대로 저장/반환)
 function cloudBlob(){ return { _v:2, players:GAME, vocEdit:VOCEDIT, vocPraise:VOCPRAISE, vocComment:VOCCOMMENT, dutyOver:DUTYOVER, tenOver:TENOVER, shareEv:SHAREEV, duty:DUTY, menuMemo:MENUMEMO }; }
 // 변경된 항목만 patch로 전송 → 서버가 잠금+병합(동시편집 안전, 경량)
-function pushPatch(patch){ if(!GAME_API) return; fetch(GAME_API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({patch})}).catch(()=>{}); }
+// 저장 실패를 조용히 삼키면 안 된다. 2026-08-24 에 공유 데이터가 구글 시트 셀 한도(5만자)를
+// 넘겨 '늘어나는 저장'이 전부 실패했는데, 여기서 오류를 버리는 바람에 몇 주 동안 아무도 몰랐다.
+// 각자 편집이 자기 브라우저에만 남아 직원마다 다른 화면을 보고 있었다.
+// Apps Script 는 실패해도 HTTP 200 에 HTML 오류 페이지를 주므로 상태코드로는 판별할 수 없다 →
+// 응답 본문이 {ok:true} 인지까지 확인한다.
+let saveFailShown=false;
+function saveFailBanner(why){
+  if(saveFailShown) return;                     // 매 저장마다 띄우면 업무를 방해한다 — 세션당 1회
+  saveFailShown=true;
+  console.error('팀 공유 저장 실패:', why);
+  const el=document.createElement('div');
+  el.style.cssText='position:fixed;left:50%;transform:translateX(-50%);bottom:24px;z-index:9999;max-width:560px;'
+    +'background:#b91c1c;color:#fff;padding:14px 18px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.35);'
+    +'font-size:14px;line-height:1.5';
+  el.innerHTML='⚠️ <b>변경사항이 팀에 저장되지 않았습니다.</b><br>'
+    +'이 브라우저에만 남아 있어 다른 직원 화면에는 안 보입니다. 담당자에게 알려주세요.'
+    +'<button style="margin-left:12px;background:#fff;color:#b91c1c;border:0;border-radius:8px;padding:5px 12px;font-weight:700;cursor:pointer">닫기</button>';
+  el.querySelector('button').onclick=()=>el.remove();
+  document.body.appendChild(el);
+}
+function pushPatch(patch){
+  if(!GAME_API) return;
+  fetch(GAME_API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({patch})})
+    .then(r=>r.text())
+    .then(t=>{ let d=null; try{ d=JSON.parse(t); }catch(e){}
+      if(!d || d.ok!==true) saveFailBanner((d&&d.error)||t.slice(0,200)); })
+    .catch(e=>saveFailBanner(String(e)));      // 네트워크 단절은 흔하지만, 저장 안 된 건 알려야 한다
+}
 function saveGame(){ if(gameMe&&GAME[gameMe]) GAME[gameMe]._t=Date.now(); save(LS_GAME,GAME); if(gameMe&&GAME[gameMe]) pushPatch({players:{[gameMe]:GAME[gameMe]}}); }
 // 게임 플레이어 기록은 '레코드 타임스탬프(_t)' 기준 최신 우선 병합.
 // → 방금 로컬에서 획득한 아이템(아직 클라우드 미반영)이 오래된 클라우드 값에 덮여 사라지는 문제 방지.

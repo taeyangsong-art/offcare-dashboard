@@ -57,10 +57,55 @@ function store_() {
   return sh;
 }
 
+// 공유 데이터는 시트 한 칸에 다 넣을 수 없다.
+// 구글 시트는 셀 하나에 50,000자 제한이 있는데 2026-08-24 에 데이터가 50,070자가 되어
+// '용량이 늘어나는 저장'이 전부 실패했다. 클라이언트는 pushPatch 오류를 삼키고 있었고
+// Apps Script 는 HTTP 200 에 HTML 오류 페이지를 돌려줘서, 아무도 모르는 채로
+// 각자 편집이 자기 브라우저에만 남아 직원마다 화면이 달라졌다.
+// → 전용 시트에 여러 행으로 나눠 저장한다(행 수는 사실상 무제한).
+var BLOB_SHEET = 'blob';
+var CHUNK = 45000;            // 50,000 한도에 여유를 둔다
+
+function blobSheet_() {
+  var ss = store_().getParent();
+  var sh = ss.getSheetByName(BLOB_SHEET);
+  if (!sh) { sh = ss.insertSheet(BLOB_SHEET); }
+  return sh;
+}
+
 function readBlob_() {
+  var sh = blobSheet_();
+  var last = sh.getLastRow();
+  if (last >= 1) {
+    var vals = sh.getRange(1, 1, last, 1).getValues();
+    var s = '';
+    for (var i = 0; i < vals.length; i++) { s += (vals[i][0] || ''); }
+    if (s) {
+      try { return JSON.parse(s); }
+      catch (e) { /* 손상 시에는 아래 레거시 칸으로 폴백 */ }
+    }
+  }
+  // 레거시: 예전에는 store!A1 한 칸에 전부 넣었다. 첫 쓰기 때 blob 시트로 옮겨진다.
   var v = store_().getRange('A1').getValue();
   if (!v) { return {}; }
   try { return JSON.parse(v); } catch (e) { return {}; }
+}
+
+function writeBlob_(obj) {
+  var s = JSON.stringify(obj);
+  var sh = blobSheet_();
+  var chunks = [];
+  for (var i = 0; i < s.length; i += CHUNK) { chunks.push([s.substring(i, i + CHUNK)]); }
+  if (!chunks.length) { chunks = [['']]; }
+  var last = sh.getLastRow();
+  if (last > chunks.length) {   // 데이터가 줄어든 경우 남은 옛 행을 지운다(안 지우면 뒤에 쓰레기가 붙는다)
+    sh.getRange(chunks.length + 1, 1, last - chunks.length, 1).clearContent();
+  }
+  sh.getRange(1, 1, chunks.length, 1).setValues(chunks);
+  // 이관 완료 후 레거시 칸을 비운다. 남겨두면 blob 파싱이 한 번 실패했을 때
+  // 옛 데이터로 조용히 되돌아가 최신 편집이 통째로 사라진다.
+  var legacy = store_().getRange('A1');
+  if (legacy.getValue()) { legacy.clearContent(); }
 }
 function readSecret_() {
   var v = store_().getRange('A2').getValue();
@@ -166,7 +211,7 @@ function doPost(e) {
     var cur = readBlob_();
     if (body.patch) { cur = mergePatch_(cur, body.patch); }
     else if (body.game) { cur = body.game; }
-    store_().getRange('A1').setValue(JSON.stringify(cur));
+    writeBlob_(cur);
     var rev = bumpRev_();                 // 락 안에서 증가 → 다른 클라이언트가 다음 rev 조회 때 감지
     return json_({ ok: true, rev: rev });
   } catch (err) {
