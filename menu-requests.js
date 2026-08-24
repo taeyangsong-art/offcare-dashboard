@@ -3,10 +3,166 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 895,
- "updatedAt": "2026-08-24 14:45",
+ "version": 896,
+ "updatedAt": "2026-08-24 15:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1787550533.596749",
+   "date": "2026-08-24",
+   "time": "14:48",
+   "store": "청기와",
+   "biz": "6063813612",
+   "pos": "",
+   "content": "메뉴등록 부탁드려요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BS2PZ26G5",
+     "from": "댓글",
+     "path": "menu-files/1787550533_596749-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "생오리주물럭 (한마리)",
+       "price": 46000
+      },
+      {
+       "category": "",
+       "name": "생오리마늘구이 (한마리)",
+       "price": 46000
+      },
+      {
+       "category": "",
+       "name": "생구이 (한마리)",
+       "price": 44000
+      },
+      {
+       "category": "",
+       "name": "오리훈제 (한마리)",
+       "price": 45000
+      },
+      {
+       "category": "",
+       "name": "오리·닭 한방백숙",
+       "price": 60000
+      },
+      {
+       "category": "",
+       "name": "오리·닭 옻백숙",
+       "price": 65000
+      },
+      {
+       "category": "",
+       "name": "닭도리탕 (국내산)(한마리)",
+       "price": 55000
+      },
+      {
+       "category": "",
+       "name": "오리탕 (국내산)(한마리)",
+       "price": 55000
+      },
+      {
+       "category": "해신탕",
+       "name": "해신탕 (국내산)",
+       "price": 0
+      },
+      {
+       "category": "해신탕",
+       "name": "오리전복탕 (국내산)",
+       "price": 18000
+      },
+      {
+       "category": "해신탕",
+       "name": "해신전골",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "양푼찜 등갈비",
+       "price": 0
+      },
+      {
+       "category": "점심특선",
+       "name": "오리된장쌈밥",
+       "price": 14000
+      },
+      {
+       "category": "점심특선",
+       "name": "갈치찌개 (국내산)",
+       "price": 13000
+      },
+      {
+       "category": "점심특선",
+       "name": "갈치구이 (국내산)",
+       "price": 14000
+      },
+      {
+       "category": "점심특선",
+       "name": "소곱창전골 (국내산)",
+       "price": 14000
+      },
+      {
+       "category": "점심특선",
+       "name": "삼겹살 (국내산)(120g)",
+       "price": 13000
+      },
+      {
+       "category": "점심특선",
+       "name": "두루치기(볶음)",
+       "price": 14000
+      },
+      {
+       "category": "후식",
+       "name": "볶음밥",
+       "price": 3000
+      },
+      {
+       "category": "후식",
+       "name": "누룽지",
+       "price": 3000
+      },
+      {
+       "category": "후식",
+       "name": "된장찌개",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "소주",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "맥주",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "막걸리",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "음료수",
+       "price": 2000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 3,
+   "lr": "1787551055.401029",
+   "rfx": 3,
+   "status": "done",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787550533596749"
+  },
   {
    "ts": "1787550023.237509",
    "date": "2026-08-24",
@@ -31,8 +187,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "*일상포차 신촌점 / ···*\n\n등록된 메뉴를 가좌점으로 등록 요청\n\n아래 메뉴만 금액 수정 필요\n※ *소주 =  5,000원*"
    ],
-   "rc": 3,
-   "lr": "1787550111.123339",
+   "rc": 4,
+   "lr": "1787550507.190729",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
