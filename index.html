@@ -6368,9 +6368,36 @@ function checkCloudRev(){
     if(d.rev!==cloudRev) syncCloudNow();                               // 누군가 썼다 → cloudRev 는 loadCloud 가 갱신
   }).catch(()=>{});
 }
+// 메뉴등록 탭은 menu-requests.js(약 0.9MB)를 '탭에 들어올 때' 한 번만 읽는다.
+// 탭을 열어둔 채로 있으면 새 요청이 적재돼도 화면이 그대로여서, 파이프라인을 아무리
+// 빠르게 만들어도 보이지 않는다. 그렇다고 0.9MB 를 12초마다 받을 수는 없으므로
+// HEAD(본문 0바이트)로 파일이 바뀌었는지만 보고, 바뀐 경우에만 다시 받는다.
+//
+// 판별에 ETag 를 쓸 수 없다: raw/Pages 모두 ETag 를 보내지만 CORS 로 노출하지 않아
+// 브라우저 JS 에서 읽으면 null 이다. Content-Length 와 Last-Modified 는 CORS 안전목록이라 읽힌다.
+let menuTag=null;        // 마지막으로 본 지문. null = 아직 기준값 없음
+let menuTagOk=true;      // 헤더를 못 읽는 환경이면 false → 아래 느린 루프 안전망에 맡김
+function menuReqReload(){
+  loadData('menu-requests.js', function(){ if(activeCat==='menureg') renderMain(); });
+}
+function checkMenuReqUpdate(){
+  if(activeCat!=='menureg' || !menuTagOk || document.hidden || syncBlocked()) return;
+  // ?t= 로 CDN 캐시(raw 5분 · Pages 10분)를 우회한다. loadData 도 같은 방식을 쓴다.
+  fetch(DATA_BASE+'menu-requests.js?t='+Date.now(), {method:'HEAD', cache:'no-store'}).then(r=>{
+    if(!r.ok) throw 0;
+    const len=r.headers.get('content-length'), lm=r.headers.get('last-modified');
+    const tag=(len||'')+'|'+(lm||'');
+    if(tag==='|'){ menuTagOk=false; return; }   // 둘 다 못 읽음 → 이 방식 포기
+    if(menuTag===null){ menuTag=tag; return; }  // 최초 기준값
+    if(tag===menuTag) return;
+    menuTag=tag;
+    menuReqReload();
+  }).catch(()=>{ menuTagOk=false; });
+}
 function startAutoRefresh(){
   setInterval(checkCloudRev, SYNC_FAST_MS);
-  document.addEventListener('visibilitychange', function(){ if(!document.hidden) checkCloudRev(); });  // 탭 복귀 즉시 반영
+  setInterval(checkMenuReqUpdate, SYNC_FAST_MS);
+  document.addEventListener('visibilitychange', function(){ if(!document.hidden){ checkCloudRev(); checkMenuReqUpdate(); } });  // 탭 복귀 즉시 반영
   setInterval(function(){
     if(syncBlocked()) return;
     const prev=(window.SLACK_DATA && window.SLACK_DATA.version) || 0;
@@ -6385,6 +6412,9 @@ function startAutoRefresh(){
     });
     // 팀 공유 클라우드 안전망 동기화 (낚시 대기·코인·아이템·VOC편집·당번) — 바뀐 경우에만 재렌더
     syncCloudNow();
+    // 메뉴등록 안전망: HEAD 판별이 막혔거나(menuTagOk=false) 파일 크기가 우연히 같아
+    // 위 빠른 루프가 못 잡은 변경을 여기서 확실히 받는다.
+    if(activeCat==='menureg') menuReqReload();
   }, SYNC_SLOW_MS);
 }
 
