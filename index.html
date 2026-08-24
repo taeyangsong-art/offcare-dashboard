@@ -65,9 +65,6 @@
   :root[data-theme="dark"] .hl-card.blue .hl-big{color:#5aa9ff}
   :root[data-theme="dark"] .hl-card.gold .hl-big{color:#ffb340}
   :root[data-theme="dark"] .hl-card.mint .hl-big{color:#4fe07a}
-  /* 다크: 리프레쉬 타임 채워진 칸이 밝은 크림 배경 → 흰 글씨 안보임. 배경 어둡게 + 시간 강조색 조정 */
-  :root[data-theme="dark"] .rt-slot.on{background:linear-gradient(160deg,#332a12,#241f13);border-color:#5c4a1f;box-shadow:0 4px 14px rgba(0,0,0,.4)}
-  :root[data-theme="dark"] .rt-slot.on .rt-time{color:#ffb340}
   /* 다크: 천국(직원) 랭킹은 밝은 카드(반짝임 유지) → 글자를 어둡게 해 가독성 확보 */
   :root[data-theme="dark"] .rank-item.light{background:#ffffff; border-color:#e6eeff}
   /* 흰 랭킹 항목 위 → 어둡게 */
@@ -551,18 +548,6 @@
   .notice-badge.clb-add{background:var(--green-soft); color:#166534}
   .notice-badge.clb-fix{background:var(--blue-soft); color:var(--blue-deep)}
   .notice-badge.clb-imp{background:#fff3e0; color:#c2410c}
-  /* 리프레쉬 타임 */
-  .rt-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:16px}
-  .rt-slot{border:2px solid var(--line-soft); border-radius:18px; padding:20px 22px; background:var(--surface2); transition:.15s}
-  .rt-slot:hover{border-color:#ffd6a8; transform:translateY(-2px)}
-  .rt-slot.on{border-color:#ffcf99; background:linear-gradient(160deg,#fff3e2,#fffaf4); box-shadow:0 4px 14px rgba(255,149,0,.15)}
-  .rt-time{font-size:16px; font-weight:800; color:var(--gray); margin-bottom:12px; display:flex; align-items:center; gap:6px}
-  .rt-time::before{content:'⏰'; font-size:18px}
-  .rt-slot.on .rt-time{color:#c2410c}
-  .rt-slot.on .rt-time::before{content:'☕'}
-  .rt-name{width:100%; border:none; background:transparent; font-family:inherit; font-size:20px; font-weight:800; color:var(--ink); padding:3px 0}
-  .rt-name:focus{outline:none}
-  .rt-name::placeholder{color:var(--gray2); font-weight:500}
   /* live 갱신 표시 */
   .live-dot{display:inline-block; width:9px; height:9px; border-radius:50%; background:var(--green);
     margin-left:6px; vertical-align:middle; animation:livePulse 1.8s ease-in-out infinite}
@@ -1733,49 +1718,6 @@ function pickDuty(i, name){
   const el=document.getElementById('dutyPickModal'); if(el) el.remove();
   if(name) swapDutyByIdx(i, name); else saveDutyOverride(DUTYKEYS[i], '');
 }
-const LS_REFRESH = "opcare_refresh_v1";
-let REFRESH = load(LS_REFRESH, {});   // { "0900": "이름" } — 리프레쉬(휴게) 타임
-function saveRefresh(key, val, inp){ val=(val||'').trim(); if(val) REFRESH[key]=val; else delete REFRESH[key]; save(LS_REFRESH, REFRESH); if(inp&&inp.closest('.rt-slot')) inp.closest('.rt-slot').classList.toggle('on', !!val); }
-function refreshSlots(){ const out=[]; const fmt=m=>(''+Math.floor(m/60)).padStart(2,'0')+':'+(''+(m%60)).padStart(2,'0');
-  // 09:30~17:30, 30분 단위. 점심시간(12:00~14:00)은 제외.
-  for(let t=9*60+30; t<17*60+30; t+=30){ if(t>=12*60 && t<14*60) continue; const key=(''+Math.floor(t/60)).padStart(2,'0')+(''+(t%60)).padStart(2,'0'); out.push({key, label:fmt(t)+'~'+fmt(t+30)}); }
-  return out; }
-function refreshTimeCard(){
-  return `<div class="card rt-card">
-    <div class="card-head"><h3>☕ 원격팀 리프레쉬 타임</h3><span class="hint">09:30~17:30 · 30분 단위 · 점심(12:00~14:00) 제외 · 원하는 칸에 이름</span></div>
-    <div class="rt-grid">${refreshSlots().map(s=>`<div class="rt-slot${REFRESH[s.key]?' on':''}"><div class="rt-time">${s.label}</div><input class="rt-name" type="text" value="${escapeHtml(REFRESH[s.key]||'')}" placeholder="이름" onchange="saveRefresh('${s.key}',this.value,this)"></div>`).join('')}</div>
-  </div>`;
-}
-// 리프레쉬 타임은 한 주(월~일) 유지 → 새 주(월요일) 시작 시 자동 초기화 + 알림
-const LS_REFRESH_WEEK = "opcare_refreshweek_v1";
-let REFRESH_WEEK = load(LS_REFRESH_WEEK, "");
-function mondayOf(d){ const x=new Date(d); const day=x.getDay(); x.setDate(x.getDate()+(day===0?-6:1-day)); return ymd(x); }
-function checkRefreshWeek(){
-  const thisMon = mondayOf(today());
-  if(!REFRESH_WEEK){ REFRESH_WEEK = thisMon; save(LS_REFRESH_WEEK, REFRESH_WEEK); return; }
-  if(REFRESH_WEEK !== thisMon){          // 새 주 시작 → 초기화
-    REFRESH = {}; save(LS_REFRESH, REFRESH);
-    REFRESH_WEEK = thisMon; save(LS_REFRESH_WEEK, REFRESH_WEEK);
-    if(activeCat==='share') renderShare();
-    else if(activeCat==='share-refresh') renderShareRefresh();
-    else if(activeCat==='share-notice') renderShareNotice();
-    else if(activeCat==='share-changelog') renderShareChangelog();
-    showRefreshResetAlert();
-  }
-}
-function showRefreshResetAlert(){
-  const ex=document.getElementById('rtPop'); if(ex) ex.remove();
-  const el=document.createElement('div'); el.id='rtPop'; el.className='duty-pop-overlay';
-  el.innerHTML=`<div class="duty-pop">
-    <div class="duty-pop-ic">☕</div>
-    <div class="duty-pop-sub">새 주가 시작됐어요!</div>
-    <div class="duty-pop-title">리프레쉬 타임 초기화</div>
-    <div class="duty-pop-badge">지난주 휴게 이름이 모두 지워졌어요</div>
-    <div class="duty-pop-person" style="font-size:19px;line-height:1.35">이번 주 휴게시간을<br>얼른 등록해주세요 🙌</div>
-    <button class="duty-pop-btn" onclick="document.getElementById('rtPop').remove(); selectCat('share');">등록하러 가기</button>
-  </div>`;
-  document.body.appendChild(el);
-}
 let VOCEDIT= load(LS_VOCEDIT, {}); // { "date|storeId|time": { industry, reasonCat, note } } — VOC 수기 보정
 const LS_VOCCOMMENT = "opcare_voccomment_v1";
 let VOCCOMMENT = load(LS_VOCCOMMENT, {}); // { "YYYY-MM": "먼슬리 코멘트" }
@@ -2085,16 +2027,14 @@ function renderNav(){
       <span class="ic">📊</span>전체 현황</button>
     <div class="nav-div"></div>`;
   document.getElementById("nav").innerHTML = ov + CATEGORIES.map(c=>{
-    const active = (c.key===activeCat) || (c.key==='voc' && activeCat==='voc-monthly') || (c.key==='game' && activeCat==='game-fish') || (c.key==='share' && (activeCat==='share-refresh'||activeCat==='share-notice'||activeCat==='share-changelog'));
+    const active = (c.key===activeCat) || (c.key==='voc' && activeCat==='voc-monthly') || (c.key==='game' && activeCat==='game-fish') || (c.key==='share' && (activeCat==='share-notice'||activeCat==='share-changelog'));
     let btn = `<button class="navbtn ${active?'active':''}" onclick="selectCat('${c.key}')">
       <span class="ic">${c.icon}</span>${c.name}${c.key==='share'&&shareHasUnread()?'<span class="nav-dot"></span>':''}</button>`;
     if(c.key==='voc' && (activeCat==='voc'||activeCat==='voc-monthly')){
       btn += `<button class="navbtn sub ${activeCat==='voc-monthly'?'active':''}" onclick="selectCat('voc-monthly')">
         <span class="ic">└</span>Monthly</button>`;
     }
-    if(c.key==='share' && (activeCat==='share'||activeCat==='share-refresh'||activeCat==='share-notice'||activeCat==='share-changelog')){
-      btn += `<button class="navbtn sub ${activeCat==='share-refresh'?'active':''}" onclick="selectCat('share-refresh')">
-        <span class="ic">└</span>☕ 리프레쉬 타임</button>`;
+    if(c.key==='share' && (activeCat==='share'||activeCat==='share-notice'||activeCat==='share-changelog')){
       btn += `<button class="navbtn sub ${activeCat==='share-notice'?'active':''}" onclick="selectCat('share-notice')">
         <span class="ic">└</span>📢 공지사항${noticesUnread()?'<span class="nav-dot"></span>':''}</button>`;
       btn += `<button class="navbtn sub ${activeCat==='share-changelog'?'active':''}" onclick="selectCat('share-changelog')">
@@ -2804,7 +2744,6 @@ function renderMain(){
   else if(activeCat==="menureg") renderMenuReg();
   else if(activeCat==="duty") renderDuty();
   else if(activeCat==="share") renderShare();
-  else if(activeCat==="share-refresh") renderShareRefresh();
   else if(activeCat==="share-notice") renderShareNotice();
   else if(activeCat==="share-changelog") renderShareChangelog();
   else if(activeCat==="voc") renderVoc();
@@ -6155,18 +6094,6 @@ function renderShare(){
     </div>
   `;
 }
-
-function renderShareRefresh(){
-  document.getElementById("main").innerHTML = `
-    <div class="page-head">
-      <div>
-        <h2>☕ 원격팀 리프레쉬 타임</h2>
-        <div class="sub">09:30~17:30, 30분 단위로 원하는 칸에 <b>이름</b>을 적어 리프레쉬(휴게) 시간을 공유하세요. 점심(12:00~14:00)은 제외이며, 매주 월요일 자동 초기화됩니다.</div>
-      </div>
-    </div>
-    ${refreshTimeCard()}
-  `;
-}
 function shareKpi(type, n, labelOverride){
   const t=typeMeta(type);
   return `<div class="kpi">
@@ -6381,13 +6308,11 @@ function boot(){
   // applySlackData() 가 slack-data.js 에서 채우므로 시드는 필요 없다.
   // 데모 시드 제거 — 당직 일정은 팀 공유 클라우드에서 로드(seedShare 미사용)
   applySlackData();
-  checkRefreshWeek();                                     // 새 주면 리프레쉬 타임 초기화
   renderNav(); renderMain(); checkAuth(); applyThemeLabel();
   loadCloud(function(){ if(gameMe) recordMissLog(gameMe); renderMain(); checkTenAlert(); });   // 팀 공유 클라우드 로드(교체 내역 반영 후 10출 알림)(게임 코인 + VOC 편집·직원지정·먼슬리코멘트·당번) → 활성 탭 재렌더
   startAutoRefresh();
   checkDutyAlert(); setInterval(checkDutyAlert, 60000);   // 회의 30분 전 당번 알림
   setInterval(checkTenAlert, 300000);                     // 금요일 → 다음주 월요일 10시 출근자 알림 (최초 1회는 클라우드 로드 후)
-  setInterval(checkRefreshWeek, 300000);                 // 탭 오래 켜둬도 월요일 넘어가면 초기화
 }
 // 데이터 파일을 GitHub 원본(raw)에서 직접 fetch → Pages 배포를 안 기다리고 반영(지연 최대 ~5분).
 // raw 실패 시 로컬(Pages) 파일로 폴백. 파일은 "window.XXX = {...};" 형태라 함수로 실행해 window에 반영.
