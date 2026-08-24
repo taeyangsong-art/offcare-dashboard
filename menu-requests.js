@@ -3,10 +3,90 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 892,
- "updatedAt": "2026-08-24 12:00",
+ "version": 893,
+ "updatedAt": "2026-08-24 12:14",
  "days": 30,
  "items": [
+  {
+   "ts": "1787541035.648889",
+   "date": "2026-08-24",
+   "time": "12:10",
+   "store": "와사",
+   "biz": "3235600050",
+   "pos": "토스포스",
+   "content": "첫메뉴판 등록",
+   "special": "메일 보낼께요",
+   "drive": [
+    "https://drive.google.com/file/d/1o8EFGLhIPyhO6C6Bm8Rfczwci352AX8Y/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1o8EFGLhIPyhO6C6Bm8Rfczwci352AX8Y",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "점심메뉴",
+       "name": "카레라이스",
+       "price": 8000
+      },
+      {
+       "category": "점심메뉴",
+       "name": "돈까스 카레",
+       "price": 10000
+      },
+      {
+       "category": "점심메뉴",
+       "name": "치킨 카레",
+       "price": 11000
+      },
+      {
+       "category": "점심메뉴",
+       "name": "고로케 카레",
+       "price": 11000
+      },
+      {
+       "category": "점심메뉴",
+       "name": "멘치카츠 카레",
+       "price": 11000
+      },
+      {
+       "category": "점심메뉴",
+       "name": "새우튀김 카레",
+       "price": 12000
+      },
+      {
+       "category": "점심메뉴",
+       "name": "치즈돈까스 카레",
+       "price": 14000
+      },
+      {
+       "category": "점심메뉴",
+       "name": "냉우동+돈까스",
+       "price": 12000
+      },
+      {
+       "category": "점심메뉴",
+       "name": "가츠동",
+       "price": 11000
+      },
+      {
+       "category": "점심메뉴",
+       "name": "제육덮밥",
+       "price": 12000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787541039.765609",
+   "rfx": 3,
+   "status": "done",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787541035648889"
+  },
   {
    "ts": "1787539728.301999",
    "date": "2026-08-24",
@@ -26,8 +106,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1787539738.208739",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787539728301999"
   },
   {
@@ -444,12 +524,14 @@ window.MENU_REQUESTS = {
      ]
     }
    ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787539257.887989",
+   "replies": [
+    "메일로 다시 보내신다고함"
+   ],
+   "rc": 2,
+   "lr": "1787540579.339399",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787539254240499"
   },
   {
@@ -465,9 +547,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1787540375.473179",
+   "replies": [
+    "아 그래요 그럼 키오스크도 온보딩필요.\n점주님이 전체온보딩건으로 추후고객센터 연락주실겁니다"
+   ],
+   "rc": 4,
+   "lr": "1787540482.753029",
    "rfx": 3,
    "status": "done",
    "handler": "김규빈",
