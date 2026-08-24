@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 884,
- "updatedAt": "2026-08-24 08:00",
+ "version": 885,
+ "updatedAt": "2026-08-24 09:30",
  "days": 30,
  "items": [
   {
@@ -139,9 +139,11 @@ window.MENU_REQUESTS = {
      ]
     }
    ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787388395.659489",
+   "replies": [
+    "오후 전화 예정"
+   ],
+   "rc": 2,
+   "lr": "1787530581.393789",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -545,10 +547,11 @@ window.MENU_REQUESTS = {
     }
    ],
    "replies": [
-    "메뉴만등록 담주에 사진넣어주삼"
+    "메뉴만등록 담주에 사진넣어주삼",
+    "이미지가 없눈데용 :오잉:"
    ],
-   "rc": 2,
-   "lr": "1787380249.058919",
+   "rc": 3,
+   "lr": "1787530894.491609",
    "rfx": 3,
    "status": "done",
    "handler": "서상원",
@@ -35958,30 +35961,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784940990837199"
-  },
-  {
-   "ts": "1784938937.915649",
-   "date": "2026-07-25",
-   "time": "09:22",
-   "store": "온찬",
-   "biz": "2951902699",
-   "pos": "토스포스",
-   "content": "토스포스 사용중\n•   화요일/수요일/목요일/금요일  카테고리만 유지 \n•   나머지 카테고리에 있는 모든 상품   [전체] 카테고리 생성하여  통합요청주셔서 부탁드립니다 !",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "넵 감사합니다 ㅠㅠ !",
-    "아직 매장 출근전이셔서 삭제 후 재등록 예정 안내 완료입니다!"
-   ],
-   "rc": 4,
-   "lr": "1784939390.167459",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1784938937915649"
   }
  ],
  "ocr": {

@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4725,
+  "version": 4726,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -113189,11 +113189,11 @@ window.SLACK_DATA = {
                 "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 님 안녕하세요, 상기매장 현은시스템 관리매장으로 삼성페이 인식률 관련 VOC 재차 인입되어 다시한번 공유드려요! 현은시스템 측에 한번 더 전달 부탁드리겠습니다. 님 안녕하세요, 상기매장 현은시스템 관리매장으로 삼성페이 인식률 관련 VOC 재차 인입되어 다시한번 공유드려요! 현은시스템 측에 한번 더 전달 부탁드리겠습니다. • 님 안녕하세요, 상기매장 OB",
+            "doneDate": "2026-08-24"
           },
           {
             "time": "15:46",
@@ -126145,11 +126145,11 @@ window.SLACK_DATA = {
                 "cat": "단말기 설치나 초기 과정이 어려움"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 금일 오전10시 원격 교육 예정 금일 오전10시 원격 교육 예정",
+            "doneDate": "2026-08-24"
           },
           {
             "time": "15:47",
@@ -127426,11 +127426,11 @@ window.SLACK_DATA = {
                 "cat": "사용중 오류가 자주 발생함"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 강성 민원 매장으로 CX팀 기처리 건 강성 민원 매장으로 CX팀 기처리 건 접수 일시 2026-08-13 사업자번호/상호명 2563400160 / 미증유 작성자 박진호 인입채널 전화 상담 일시 (통화시간 or 채팅링크) 12:25 리스크 강도 법적 리스크 민원유형 장비 / 기술 이슈 내용 • 인입되자마자 쓰레기같은 포스기 줬다고 불만 • 사용한지 채 한",
+            "doneDate": "2026-08-24"
           },
           {
             "time": "15:54",
@@ -127596,7 +127596,7 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:12"
+      "updatedAt": "09:30"
     }
   },
   "resp": {
@@ -127616,6 +127616,10 @@ window.SLACK_DATA = {
       "1787462808.485959": {
         "post": "1787462808.485959",
         "lastSeen": 1787499790.225
+      },
+      "1787531402.959239": {
+        "post": "1787531402.959239",
+        "lastSeen": 1787531427.233
       }
     },
     "days": {
@@ -157130,7 +157134,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-24 09:15",
+    "at": "2026-08-24 09:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
