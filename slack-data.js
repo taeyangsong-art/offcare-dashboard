@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4724,
+  "version": 4725,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -127562,11 +127562,23 @@ window.SLACK_DATA = {
     "2026-08-24": {
       "counts": {
         "as": {
+          "배선유": 1,
           "서상원": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:02",
+          "store": "루미에르",
+          "biz": "4230903256",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "<https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1786579428099149|https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX",
+          "hw": "",
+          "intake": "online",
+          "note": "리커버리 후에도 동일 / 원격으로 확인 후 터치 유틸리티 디폴트 설정하고 관리자권한으로 설정했으나 불안하다며 기기 변경 요청 / POSN250MAIN 이카운트 접수 / 자가설치"
+        },
         {
           "time": "08:45",
           "store": "무아르헤어",
@@ -127580,11 +127592,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
+        "online": 2,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:00"
+      "updatedAt": "09:12"
     }
   },
   "resp": {
@@ -157118,13 +157130,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-24 09:00",
+    "at": "2026-08-24 09:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3661,
+    "rows": 3668,
     "named": 363,
     "unknownName": 0,
     "beforeStart": 0,
