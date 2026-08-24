@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4723,
+  "version": 4724,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -127560,15 +127560,31 @@ window.SLACK_DATA = {
       }
     },
     "2026-08-24": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "서상원": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "08:45",
+          "store": "무아르헤어",
+          "biz": "6625901178",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "a/s 접수 <@U07N21TM0QJ>",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "08:45"
+      "updatedAt": "09:00"
     }
   },
   "resp": {
@@ -127588,10 +127604,6 @@ window.SLACK_DATA = {
       "1787462808.485959": {
         "post": "1787462808.485959",
         "lastSeen": 1787499790.225
-      },
-      "1787528700.233459": {
-        "post": "1787528700.233459",
-        "lastSeen": 1787528721.264
       }
     },
     "days": {
@@ -157087,17 +157099,32 @@ window.SLACK_DATA = {
             "cat": "as"
           }
         ]
+      },
+      "2026-08-24": {
+        "cnt": 1,
+        "sumMin": 7.934759016831716,
+        "over": 0,
+        "items": [
+          {
+            "hm": "08:45",
+            "min": 7.9,
+            "store": "무아르헤어",
+            "biz": "6625901178",
+            "who": "서상원",
+            "cat": "as"
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-24 08:45",
+    "at": "2026-08-24 09:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3658,
+    "rows": 3661,
     "named": 363,
     "unknownName": 0,
     "beforeStart": 0,
