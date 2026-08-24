@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4896,
+  "version": 4897,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130883,7 +130883,59 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": ""
+      "updatedAt": "01:00",
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 1,
+          "low": 0
+        },
+        "nps": {
+          "count": 1,
+          "low": 0
+        },
+        "high": {
+          "install": 0,
+          "nps": 0
+        },
+        "npsDist": {
+          "8": 1
+        },
+        "installDist": {
+          "4": 1
+        },
+        "byIndustry": {
+          "도소매": 1
+        },
+        "byTenure": {
+          "구매설치": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "KOCES": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {},
+        "alerts": [],
+        "praises": [
+          {
+            "time": "01:00",
+            "store": "꽃뜰리에 루원시티가정점",
+            "storeId": "597011",
+            "indBucket": "도소매",
+            "emp": "",
+            "install": 4,
+            "nps": 8,
+            "text": "자세한 프로그램 설명이 없어서 기능적인 문제로 여러번 통화가필요했음 기능적으로 불편한부분도 있지만 대체적만족",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
+      }
     }
   },
   "resp": {
@@ -161397,17 +161449,25 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 01:01",
+    "at": "2026-08-25 01:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
-    "ok": false,
-    "error": "GDRIVE_* 환경변수 없음",
-    "rows": 0,
-    "named": 0,
+    "ok": true,
+    "error": "",
+    "rows": 3676,
+    "named": 384,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 0,
-    "byStatus": {}
+    "done": 384,
+    "byStatus": {
+      "일정등록완료": 238,
+      "1차부재": 86,
+      "점주직접접수": 34,
+      "설치불가": 8,
+      "(빈칸)": 3,
+      "자가설치": 13,
+      "설치보류요청": 2
+    }
   }
 };
