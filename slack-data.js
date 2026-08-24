@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4885,
+  "version": 4886,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130495,7 +130495,7 @@ window.SLACK_DATA = {
         "offline": 39,
         "unknown": 0
       },
-      "updatedAt": "21:00",
+      "updatedAt": "23:00",
       "ob": {
         "count": 21,
         "byEmp": {
@@ -130673,18 +130673,18 @@ window.SLACK_DATA = {
         ]
       },
       "voc": {
-        "responses": 15,
+        "responses": 16,
         "install": {
-          "count": 2,
+          "count": 3,
           "low": 0
         },
         "nps": {
-          "count": 15,
+          "count": 16,
           "low": 4
         },
         "high": {
-          "install": 0,
-          "nps": 7
+          "install": 1,
+          "nps": 8
         },
         "npsDist": {
           "2": 1,
@@ -130692,23 +130692,25 @@ window.SLACK_DATA = {
           "5": 2,
           "8": 3,
           "9": 1,
-          "10": 7
+          "10": 8
         },
         "installDist": {
           "3": 1,
-          "4": 1
+          "4": 1,
+          "5": 1
         },
         "byIndustry": {
+          "요식업": 1,
           "서비스[학원]": 2
         },
         "byTenure": {
+          "구매설치": {
+            "total": 3,
+            "low": 1
+          },
           "1개월": {
             "total": 7,
             "low": 2
-          },
-          "구매설치": {
-            "total": 2,
-            "low": 1
           },
           "6개월": {
             "total": 5,
@@ -130720,13 +130722,13 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 4,
+            "low": 2
+          },
           "KIS": {
             "total": 5,
             "low": 1
-          },
-          "KOCES": {
-            "total": 3,
-            "low": 2
           },
           "SECTA9": {
             "total": 2,
@@ -130845,7 +130847,20 @@ window.SLACK_DATA = {
             "doneDate": ""
           }
         ],
-        "praises": []
+        "praises": [
+          {
+            "time": "23:00",
+            "store": "현이네 빤라쵄",
+            "storeId": "607143",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "제품도 너무좋고 가격도 착하고 친절히 가르쳐주고 너무 만족합니다 이미 다른사자님 한테 추천해서 설치 진행하고 있어요",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
       }
     }
   },
@@ -130857,19 +130872,19 @@ window.SLACK_DATA = {
       },
       "1787533706.816809": {
         "post": "1787533706.816809",
-        "lastSeen": 1787579128.855
+        "lastSeen": 1787580037.196
       },
       "1787536008.835079": {
         "post": "1787536008.835079",
-        "lastSeen": 1787579128.855
+        "lastSeen": 1787580037.196
       },
       "1787540881.150669": {
         "post": "1787540881.150669",
-        "lastSeen": 1787579128.855
+        "lastSeen": 1787580037.196
       },
       "1787546259.308909": {
         "post": "1787546259.308909",
-        "lastSeen": 1787579128.855
+        "lastSeen": 1787580037.196
       },
       "1787554941.797599": {
         "post": "1787554941.797599",
@@ -161360,7 +161375,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-24 22:45",
+    "at": "2026-08-24 23:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
