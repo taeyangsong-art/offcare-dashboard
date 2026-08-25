@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4978,
+  "version": 4979,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130866,7 +130866,6 @@ window.SLACK_DATA = {
           "고경림": 6,
           "배선유": 5,
           "김현기": 3,
-          "송태양": 1,
           "김규빈": 4,
           "서상원": 1,
           "김동욱": 2,
@@ -130876,6 +130875,7 @@ window.SLACK_DATA = {
           "김동욱": 3
         },
         "onboarding": {
+          "송태양": 1,
           "김현기": 1
         },
         "transfer": {
@@ -130949,12 +130949,12 @@ window.SLACK_DATA = {
           "time": "10:45",
           "store": "바이윤",
           "biz": "3074600476",
-          "cat": "as",
+          "cat": "onboarding",
           "emp": "송태양",
           "req": "컴퓨터 + 프론트+프린터",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "온보딩 완료입니다"
         },
         {
           "time": "10:43",
@@ -131283,7 +131283,7 @@ window.SLACK_DATA = {
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "11:03",
+      "updatedAt": "11:04",
       "voc": {
         "responses": 3,
         "install": {
@@ -131427,11 +131427,11 @@ window.SLACK_DATA = {
       },
       "1787622300.806129": {
         "post": "1787622300.806129",
-        "lastSeen": 1787623462.929
+        "lastSeen": 1787623522.42
       },
-      "1787623229.530369": {
-        "post": "1787623229.530369",
-        "lastSeen": 1787623462.929
+      "1787623486.194599": {
+        "post": "1787623486.194599",
+        "lastSeen": 1787623522.42
       }
     },
     "days": {
@@ -161912,8 +161912,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-25": {
-        "cnt": 19,
-        "sumMin": 103.69540565808613,
+        "cnt": 20,
+        "sumMin": 108.08114117383955,
         "over": 0,
         "items": [
           {
@@ -162067,13 +162067,21 @@ window.SLACK_DATA = {
             "biz": "2172109661",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "11:00",
+            "min": 4.4,
+            "store": "말풍선",
+            "biz": "8580503570",
+            "who": "송태양",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-25 11:04",
+    "at": "2026-08-25 11:05",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
