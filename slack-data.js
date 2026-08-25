@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4937,
+  "version": 4938,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130913,7 +130913,7 @@ window.SLACK_DATA = {
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:25",
+      "updatedAt": "09:30",
       "voc": {
         "responses": 2,
         "install": {
@@ -131040,9 +131040,17 @@ window.SLACK_DATA = {
         "post": "1787589002.171429",
         "lastSeen": 1787611524.291
       },
-      "1787617555.917449": {
-        "post": "1787617555.917449",
-        "lastSeen": 1787617640.126
+      "1787617802.482689": {
+        "post": "1787617802.482689",
+        "lastSeen": 1787617821.2
+      },
+      "1787617801.966999": {
+        "post": "1787617801.966999",
+        "lastSeen": 1787617821.2
+      },
+      "1787617801.032249": {
+        "post": "1787617801.032249",
+        "lastSeen": 1787617821.2
       }
     },
     "days": {
@@ -161523,8 +161531,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-25": {
-        "cnt": 2,
-        "sumMin": 3.2298898696899414,
+        "cnt": 3,
+        "sumMin": 6.1423157215118405,
         "over": 0,
         "items": [
           {
@@ -161542,13 +161550,21 @@ window.SLACK_DATA = {
             "biz": "2863400841",
             "who": "심성현",
             "cat": "as"
+          },
+          {
+            "hm": "09:25",
+            "min": 2.9,
+            "store": "주식회사 안동롯지",
+            "biz": "6788602576",
+            "who": "김동욱",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-25 09:27",
+    "at": "2026-08-25 09:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
