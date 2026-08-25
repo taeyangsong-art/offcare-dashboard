@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4931,
+  "version": 4932,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130875,12 +130875,28 @@ window.SLACK_DATA = {
       }
     },
     "2026-08-25": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "배선유": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:00",
+          "store": "다움헤어",
+          "biz": "6133802618",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "TMS + 원터치",
+          "hw": "",
+          "intake": "offline",
+          "note": "5분 후 / 완료"
+        }
+      ],
       "intake": {
         "online": 0,
-        "offline": 0,
+        "offline": 1,
         "unknown": 0
       },
       "updatedAt": "09:00",
@@ -131012,7 +131028,7 @@ window.SLACK_DATA = {
       },
       "1787615100.202119": {
         "post": "1787615100.202119",
-        "lastSeen": 1787616925.895
+        "lastSeen": 1787617224.452
       }
     },
     "days": {
@@ -161518,7 +161534,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 09:15",
+    "at": "2026-08-25 09:20",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
