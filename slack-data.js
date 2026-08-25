@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5023,
+  "version": 5024,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,9 +130863,9 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
+          "김현기": 8,
+          "김규빈": 8,
           "송태양": 3,
-          "김규빈": 7,
-          "김현기": 7,
           "심성현": 6,
           "배선유": 8,
           "고경림": 9,
@@ -130914,6 +130914,28 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "12:34",
+          "store": "탑(TOP)송산센터학원",
+          "biz": "8359601524",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "외주사",
+          "hw": "",
+          "intake": "online",
+          "note": "TID 누락 / 코밴 등록"
+        },
+        {
+          "time": "12:33",
+          "store": "큰별",
+          "biz": "2262898060",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "노트북 포프 연결 해지 이후 터프 온보딩 부탁 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "터미널 단독으로 사용원하신대요 KOCES TID 1개로 프론트 터미널 등록되어있어서 결제가 안되는거같아서 전산팀에 요청 드릴게요"
+        },
         {
           "time": "12:29",
           "store": "모퉁이피자집",
@@ -131622,7 +131644,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 53,
+        "online": 55,
         "offline": 13,
         "unknown": 0
       },
@@ -131770,11 +131792,11 @@ window.SLACK_DATA = {
       },
       "1787628603.892099": {
         "post": "1787628603.892099",
-        "lastSeen": 1787629100.539
+        "lastSeen": 1787629282.245
       },
       "1787628602.300949": {
         "post": "1787628602.300949",
-        "lastSeen": 1787629100.539
+        "lastSeen": 1787629282.245
       }
     },
     "days": {
@@ -162520,7 +162542,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 12:38",
+    "at": "2026-08-25 12:41",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
