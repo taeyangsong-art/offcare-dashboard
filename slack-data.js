@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4983,
+  "version": 4984,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130869,9 +130869,9 @@ window.SLACK_DATA = {
         "as": {
           "송태양": 1,
           "김규빈": 5,
+          "배선유": 6,
+          "김현기": 4,
           "고경림": 6,
-          "배선유": 5,
-          "김현기": 3,
           "서상원": 1,
           "김동욱": 2,
           "심성현": 2
@@ -130946,6 +130946,28 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "휴대폰 &gt; PC 온보딩 완료 휴대폰 PC 온보딩 완료"
+        },
+        {
+          "time": "11:00",
+          "store": "일우사",
+          "biz": "7935400065",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "KIS-8610 키인결제 기능 영상통화로 설명 부탁드립니다! (고령)",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
+        {
+          "time": "11:00",
+          "store": "드슈피자",
+          "biz": "2172109661",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "저번 원격 받은 이후 포스기에 뜨는 쿠팡 주문서가 잘려서 뜬다고 합니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "쿠팡pos 재설치 / 혹여나 또 똑같은 증상이면 쿠팡이츠 고객센터 통해서 확인 필요함"
         },
         {
           "time": "10:57",
@@ -131325,11 +131347,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 34,
-        "offline": 5,
+        "online": 35,
+        "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "11:09",
+      "updatedAt": "11:12",
       "voc": {
         "responses": 3,
         "install": {
@@ -131473,7 +131495,11 @@ window.SLACK_DATA = {
       },
       "1787622300.806129": {
         "post": "1787622300.806129",
-        "lastSeen": 1787623824.01
+        "lastSeen": 1787623943.005
+      },
+      "1787623926.207319": {
+        "post": "1787623926.207319",
+        "lastSeen": 1787623943.005
       }
     },
     "days": {
@@ -162131,7 +162157,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 11:10",
+    "at": "2026-08-25 11:12",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
