@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4941,
+  "version": 4942,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130877,6 +130877,7 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
+          "김동욱": 1,
           "배선유": 2,
           "고경림": 1
         },
@@ -130889,6 +130890,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:25",
+          "store": "주식회사 안동롯지",
+          "biz": "6788602576",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "프론트+유프 온보딩 요청드립니다:감사합니다꾸벅:",
+          "hw": "",
+          "intake": "online",
+          "note": "포프유프(태블릿) 재온보딩 완료"
+        },
         {
           "time": "09:25",
           "store": "젓가락질 잘해야만 밥을먹나요 화정점",
@@ -130909,7 +130921,7 @@ window.SLACK_DATA = {
           "req": "사용하시다가 키오스크가 멈출떄가 있어, 원격으로 점검 요청 주셨습니다.(매번 멈추는게 아닌, 사용하시다가 갑자기 멈춤 현상 발생한다고합니다.)",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "키오스크 프로그램이 멈출시 재부팅하면 정상작동 한다고함 원격으로 확인시 문제될부분이 없어 , 우선 키오스크 프로그램 재설치 도와드렸습니다. 추후 동일문제 발생시 재인입 요청"
         },
         {
           "time": "09:22",
@@ -130946,7 +130958,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 3,
+        "online": 4,
         "offline": 2,
         "unknown": 0
       },
@@ -131079,7 +131091,7 @@ window.SLACK_DATA = {
       },
       "1787617801.032249": {
         "post": "1787617801.032249",
-        "lastSeen": 1787618236.003
+        "lastSeen": 1787618299.746
       }
     },
     "days": {
@@ -161609,7 +161621,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 09:37",
+    "at": "2026-08-25 09:38",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
