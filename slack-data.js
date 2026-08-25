@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4962,
+  "version": 4963,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130865,9 +130865,9 @@ window.SLACK_DATA = {
         "as": {
           "김규빈": 3,
           "서상원": 1,
+          "김동욱": 2,
           "고경림": 3,
           "김현기": 1,
-          "김동욱": 1,
           "배선유": 3
         },
         "onboarding": {
@@ -130938,6 +130938,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "명현님지원"
+        },
+        {
+          "time": "09:57",
+          "store": "박승광 해물손칼국수 검단신도시직영점",
+          "biz": "5335101097",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "무선프린터기에서 영수증이 계속 나오는 증상으로 원격 확인 부탁 드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "U+NetD49D 693D3D9DM! 홀프린터 : 192.168.219.102 주방 : 192.168.219.101"
         },
         {
           "time": "09:52",
@@ -131085,11 +131096,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 15,
+        "online": 16,
         "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "10:15",
+      "updatedAt": "10:26",
       "voc": {
         "responses": 3,
         "install": {
@@ -131231,9 +131242,9 @@ window.SLACK_DATA = {
         "post": "1787589002.171429",
         "lastSeen": 1787611524.291
       },
-      "1787620526.016289": {
-        "post": "1787620526.016289",
-        "lastSeen": 1787621129.019
+      "1787621170.606029": {
+        "post": "1787621170.606029",
+        "lastSeen": 1787621240.58
       }
     },
     "days": {
@@ -161714,8 +161725,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-25": {
-        "cnt": 14,
-        "sumMin": 84.77572507858275,
+        "cnt": 15,
+        "sumMin": 95.7554452617963,
         "over": 0,
         "items": [
           {
@@ -161829,13 +161840,21 @@ window.SLACK_DATA = {
             "biz": "5395700797",
             "who": "김규빈",
             "cat": "as"
+          },
+          {
+            "hm": "10:15",
+            "min": 11,
+            "store": "제스트 하우스 (zest haus)",
+            "biz": "8675401007",
+            "who": "김규빈",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-25 10:25",
+    "at": "2026-08-25 10:27",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
