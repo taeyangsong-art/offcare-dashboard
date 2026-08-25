@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5130,
+  "version": 5131,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130907,6 +130907,17 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "15:10",
+          "store": "알비온",
+          "biz": "7680100928",
+          "handler": "배선유",
+          "cat": "menu",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
           "time": "15:00",
           "store": "제이팬트리(JeleePantry)",
           "biz": "4829701778",
@@ -132792,20 +132803,20 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 143,
+        "online": 144,
         "offline": 27,
         "unknown": 0
       },
-      "updatedAt": "16:07",
+      "updatedAt": "16:14",
       "voc": {
-        "responses": 8,
+        "responses": 9,
         "install": {
           "count": 4,
           "low": 1
         },
         "nps": {
-          "count": 8,
-          "low": 2
+          "count": 9,
+          "low": 3
         },
         "high": {
           "install": 2,
@@ -132814,6 +132825,7 @@ window.SLACK_DATA = {
         "npsDist": {
           "0": 1,
           "1": 1,
+          "5": 1,
           "8": 2,
           "9": 1,
           "10": 3
@@ -132829,12 +132841,12 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 3,
+            "low": 2
+          },
           "구매설치": {
             "total": 4,
-            "low": 1
-          },
-          "3개월": {
-            "total": 2,
             "low": 1
           },
           "12개월": {
@@ -132843,6 +132855,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SECTA9": {
+            "total": 1,
+            "low": 1
+          },
           "NICE": {
             "total": 1,
             "low": 0
@@ -132865,10 +132881,33 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "16:14",
+            "store": "주식회사 진성푸드빌",
+            "storeId": "476784",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "편리한 부분은 있어서  좋은데 어플 켜서 매출 볼때마다 화면 멈춰서 계속 어플 껏다 켜야하고 중간에 에러나서 현금매출 확인 안되고 이런 부분들 개선이 필요할거 같습니다",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:14",
             "store": "정떡집",
@@ -133205,19 +133244,19 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787641942.761
-      },
-      "1787638250.100349": {
-        "post": "1787638250.100349",
-        "lastSeen": 1787641942.761
+        "lastSeen": 1787642066.561
       },
       "1787640801.679649": {
         "post": "1787640801.679649",
-        "lastSeen": 1787641942.761
+        "lastSeen": 1787642066.561
       },
       "1787641511.970919": {
         "post": "1787641511.970919",
-        "lastSeen": 1787641942.761
+        "lastSeen": 1787642066.561
+      },
+      "1787642012.138999": {
+        "post": "1787642012.138999",
+        "lastSeen": 1787642066.561
       }
     },
     "days": {
@@ -164531,7 +164570,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 16:12",
+    "at": "2026-08-25 16:14",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
