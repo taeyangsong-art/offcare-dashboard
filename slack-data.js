@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4980,
+  "version": 4981,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130867,10 +130867,11 @@ window.SLACK_DATA = {
           "김동욱": 3
         },
         "as": {
+          "송태양": 1,
+          "김규빈": 5,
           "고경림": 6,
           "배선유": 5,
           "김현기": 3,
-          "김규빈": 4,
           "서상원": 1,
           "김동욱": 2,
           "심성현": 2
@@ -130912,6 +130913,28 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": ""
+        },
+        {
+          "time": "11:00",
+          "store": "말풍선",
+          "biz": "8580503570",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "포스기가 먹통이 되었다 하셔서 점검 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "11:00",
+          "store": "에이브수학학원",
+          "biz": "8959601792",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "포프(pc)+유프 재온보딩 요청드립니다. (오전 11시경)",
+          "hw": "",
+          "intake": "online",
+          "note": "휴대폰 &gt; PC 온보딩 완료 휴대폰 PC 온보딩 완료"
         },
         {
           "time": "10:57",
@@ -131291,7 +131314,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 32,
+        "online": 34,
         "offline": 4,
         "unknown": 0
       },
@@ -131439,7 +131462,7 @@ window.SLACK_DATA = {
       },
       "1787622300.806129": {
         "post": "1787622300.806129",
-        "lastSeen": 1787623562.943
+        "lastSeen": 1787623707.927
       }
     },
     "days": {
@@ -162097,7 +162120,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 11:06",
+    "at": "2026-08-25 11:08",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
