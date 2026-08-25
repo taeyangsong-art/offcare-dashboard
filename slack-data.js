@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5121,
+  "version": 5122,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130871,7 +130871,7 @@ window.SLACK_DATA = {
           "심성현": 14,
           "송태양": 6,
           "김동욱": 7,
-          "김기범": 4,
+          "김기범": 5,
           "김규빈": 8
         },
         "onboarding": {
@@ -130905,17 +130905,6 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
-        {
-          "time": "14:11",
-          "store": "미온 (MION)",
-          "biz": "8052501993",
-          "handler": "김기범",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
         {
           "time": "12:00",
           "store": "곱도리탕전문점 연수점",
@@ -131436,6 +131425,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "1515 통화 예약 요청"
+        },
+        {
+          "time": "14:11",
+          "store": "미온 (MION)",
+          "biz": "8052501993",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "갖고계신 진동벨(syscall)이 있는데 연동해서 사용 가능한지 가능하다면 연동 방법 및 포스기로 멜론 음악 프로그램 쓰고 싶은데 스피커 연동이 잘 안된다 하시는데 혹시 이부분도 안내 가능할까요..?",
+          "hw": "",
+          "intake": "online",
+          "note": "진동벨 수동으로 하는방법 안내 및 블루투스 스피커라 동글이 구매해서 포스기에 설치 안내 및 상품 교육 완료"
         },
         {
           "time": "14:08",
@@ -132660,7 +132660,7 @@ window.SLACK_DATA = {
         "offline": 26,
         "unknown": 0
       },
-      "updatedAt": "15:54",
+      "updatedAt": "15:58",
       "voc": {
         "responses": 8,
         "install": {
@@ -132812,9 +132812,9 @@ window.SLACK_DATA = {
         ]
       },
       "ob": {
-        "count": 26,
+        "count": 27,
         "byEmp": {
-          "김규빈": 26
+          "김규빈": 27
         },
         "items": [
           {
@@ -132824,6 +132824,14 @@ window.SLACK_DATA = {
             "recvDate": "2026-08-25",
             "planDate": "2026-08-27",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787288011496989"
+          },
+          {
+            "key": "2026년 8월 25일 오후 1:26:36|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787537738400619#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-25",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787537738400619"
           },
           {
             "key": "2026년 8월 25일 오후 1:26:04|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787106694069469#1",
@@ -133061,23 +133069,31 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787641020.706
+        "lastSeen": 1787641196.772
       },
       "1787638250.100349": {
         "post": "1787638250.100349",
-        "lastSeen": 1787641020.706
+        "lastSeen": 1787641196.772
       },
       "1787640720.232069": {
         "post": "1787640720.232069",
-        "lastSeen": 1787641020.706
+        "lastSeen": 1787641196.772
       },
       "1787640798.323439": {
         "post": "1787640798.323439",
-        "lastSeen": 1787641020.706
+        "lastSeen": 1787641196.772
       },
       "1787640801.679649": {
         "post": "1787640801.679649",
-        "lastSeen": 1787641020.706
+        "lastSeen": 1787641196.772
+      },
+      "1787641112.650199": {
+        "post": "1787641112.650199",
+        "lastSeen": 1787641196.772
+      },
+      "1787641085.386349": {
+        "post": "1787641085.386349",
+        "lastSeen": 1787641196.772
       }
     },
     "days": {
@@ -164343,20 +164359,20 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 15:57",
+    "at": "2026-08-25 16:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3702,
-    "named": 410,
+    "named": 411,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 410,
+    "done": 411,
     "byStatus": {
       "일정등록완료": 255,
-      "1차부재": 89,
+      "1차부재": 90,
       "점주직접접수": 36,
       "설치불가": 9,
       "(빈칸)": 5,
