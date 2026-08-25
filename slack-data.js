@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5094,
+  "version": 5095,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130875,11 +130875,11 @@ window.SLACK_DATA = {
           "김규빈": 8
         },
         "onboarding": {
+          "송태양": 5,
           "심성현": 2,
           "김동욱": 1,
           "서상원": 4,
           "김현기": 2,
-          "송태양": 4,
           "배선유": 3,
           "고경림": 1
         },
@@ -130900,6 +130900,17 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
+        {
+          "time": "14:11",
+          "store": "미온 (MION)",
+          "biz": "8052501993",
+          "handler": "김기범",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
         {
           "time": "14:00",
           "store": "란드리마을 (Landry Village) 경기도북부경찰",
@@ -130978,6 +130989,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "연결 정상적으로 되어있음 영수 출력버튼을 누르지않으셔서 안내완료"
+        },
+        {
+          "time": "14:45",
+          "store": "하이앤 헤어샵",
+          "biz": "8876900608",
+          "cat": "onboarding",
+          "emp": "송태양",
+          "req": "핸드폰+프론트+프린터 온보딩.",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료입니다"
         },
         {
           "time": "14:45",
@@ -132386,7 +132408,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 113,
+        "online": 115,
         "offline": 21,
         "unknown": 0
       },
@@ -132497,11 +132519,19 @@ window.SLACK_DATA = {
         ]
       },
       "ob": {
-        "count": 15,
+        "count": 16,
         "byEmp": {
-          "김규빈": 15
+          "김규빈": 16
         },
         "items": [
+          {
+            "key": "2026년 8월 25일 오후 12:45:24|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787288011496989#1",
+            "handler": "김규빈",
+            "status": "",
+            "recvDate": "2026-08-25",
+            "planDate": "2026-08-27",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787288011496989"
+          },
           {
             "key": "2026년 8월 25일 오전 9:40:44|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786324016328799#1",
             "handler": "김규빈",
@@ -132658,15 +132688,15 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787638284.377
+        "lastSeen": 1787638403.808
       },
       "1787637936.583699": {
         "post": "1787637936.583699",
-        "lastSeen": 1787638284.377
+        "lastSeen": 1787638403.808
       },
       "1787638250.100349": {
         "post": "1787638250.100349",
-        "lastSeen": 1787638284.377
+        "lastSeen": 1787638403.808
       }
     },
     "days": {
@@ -163780,23 +163810,23 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 15:11",
+    "at": "2026-08-25 15:13",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3702,
-    "named": 399,
+    "named": 400,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 399,
+    "done": 400,
     "byStatus": {
       "일정등록완료": 248,
       "1차부재": 89,
       "점주직접접수": 35,
       "설치불가": 8,
-      "(빈칸)": 3,
+      "(빈칸)": 4,
       "자가설치": 14,
       "설치보류요청": 2
     }
