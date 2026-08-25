@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5139,
+  "version": 5140,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,7 +130863,7 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
-          "서상원": 9,
+          "서상원": 8,
           "김현기": 16,
           "최민석": 6,
           "김동욱": 10,
@@ -130941,17 +130941,6 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
-        {
-          "time": "16:25",
-          "store": "나훔마음상담센터",
-          "biz": "5019239319",
-          "cat": "as",
-          "emp": "서상원",
-          "req": "cpp- 3000 무음 설정 도움 부탁드립니다!",
-          "hw": "",
-          "intake": "online",
-          "note": ""
-        },
         {
           "time": "16:19",
           "store": "우리집 식탁 연구소",
@@ -131062,7 +131051,7 @@ window.SLACK_DATA = {
           "req": "포프(휴대폰) 사용 매장으로, 동일한 와이파이 잡았으나 연결되지 않으신다고 하여 확인 부탁드리겠습니다!",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "온보딩 완료 사용 방법 전달 완료"
         },
         {
           "time": "15:58",
@@ -132903,7 +132892,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 151,
+        "online": 150,
         "offline": 29,
         "unknown": 0
       },
@@ -133344,7 +133333,11 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787642841.266
+        "lastSeen": 1787642960.806
+      },
+      "1787642756.799139": {
+        "post": "1787642756.799139",
+        "lastSeen": 1787642960.806
       }
     },
     "days": {
@@ -164706,7 +164699,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 16:27",
+    "at": "2026-08-25 16:29",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
