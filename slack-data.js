@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5015,
+  "version": 5016,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,8 +130863,8 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
+          "김규빈": 7,
           "심성현": 5,
-          "김규빈": 6,
           "송태양": 2,
           "배선유": 8,
           "김현기": 6,
@@ -130914,6 +130914,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "12:21",
+          "store": "큰나무가자라는큰숲수학교습소",
+          "biz": "1689801729",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "포프(pc) + 유프 이용중 영수증 출력 안되어 원격 도움 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "금액입력결제모드 시 사용 프린터 관련 설명 완료"
+        },
         {
           "time": "12:05",
           "store": "에브리도넛(EVERY DONUT)",
@@ -131556,11 +131567,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 48,
+        "online": 49,
         "offline": 12,
         "unknown": 0
       },
-      "updatedAt": "12:21",
+      "updatedAt": "12:24",
       "voc": {
         "responses": 3,
         "install": {
@@ -162438,7 +162449,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 12:22",
+    "at": "2026-08-25 12:25",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
