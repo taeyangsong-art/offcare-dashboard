@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5178,
+  "version": 5179,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130875,14 +130875,14 @@ window.SLACK_DATA = {
           "김기범": 5
         },
         "onboarding": {
+          "김현기": 3,
           "김동욱": 3,
           "고경림": 3,
           "심성현": 8,
           "최민석": 1,
           "서상원": 6,
           "배선유": 4,
-          "송태양": 5,
-          "김현기": 2
+          "송태양": 5
         },
         "extern": {
           "서상원": 4,
@@ -131050,6 +131050,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 완"
+        },
+        {
+          "time": "17:03",
+          "store": "엘리헤어",
+          "biz": "4510602509",
+          "cat": "onboarding",
+          "emp": "김현기",
+          "req": "포프 온보딩 교육 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "개인 노트북 온보딩 오나료"
         },
         {
           "time": "17:00",
@@ -133267,11 +133278,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 181,
+        "online": 182,
         "offline": 32,
         "unknown": 0
       },
-      "updatedAt": "17:47",
+      "updatedAt": "17:49",
       "voc": {
         "responses": 12,
         "install": {
@@ -133731,11 +133742,11 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787647688.343
+        "lastSeen": 1787647859.563
       },
       "1787647500.986649": {
         "post": "1787647500.986649",
-        "lastSeen": 1787647688.343
+        "lastSeen": 1787647859.563
       }
     },
     "days": {
@@ -165265,7 +165276,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 17:48",
+    "at": "2026-08-25 17:51",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
