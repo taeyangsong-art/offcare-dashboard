@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 946,
- "updatedAt": "2026-08-25 11:36",
+ "version": 947,
+ "updatedAt": "2026-08-25 11:39",
  "days": 30,
  "items": [
   {
@@ -23,13 +23,14 @@ window.MENU_REQUESTS = {
    "replies": [
     "오! 찰도그 수내점(<tel:···|···>)에 있는 메뉴 사진을 해당 매장으로 그대로 복사 원하십니다! :감사콩:",
     "사진을 똑같이 등록이 안되는 걸까요./.?",
-    "네! 만약에 불가 하다면 사진 수취 하겠습니다. 감사합니다!"
+    "네! 만약에 불가 하다면 사진 수취 하겠습니다. 감사합니다!",
+    "사진 요청 드렸는데 그냥 본인이 직접 하시겠다고 하십니당!\n하시다가 어려우시면 연락 달라고 안내 했습니다, 감삼다"
    ],
-   "rc": 11,
-   "lr": "1787625230.310299",
+   "rc": 12,
+   "lr": "1787625401.382309",
    "rfx": 3,
-   "status": "confirm",
-   "handler": "배선유",
+   "status": "wait",
+   "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787624241018419"
   },
   {

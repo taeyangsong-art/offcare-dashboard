@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4996,
+  "version": 4997,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,14 +130863,14 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
+          "서상원": 2,
           "김동욱": 3,
           "고경림": 8,
           "심성현": 3,
           "송태양": 1,
           "김규빈": 5,
           "배선유": 6,
-          "김현기": 4,
-          "서상원": 1
+          "김현기": 4
         },
         "extern": {
           "김동욱": 5,
@@ -130903,6 +130903,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "11:36",
+          "store": "칸 프리베 스튜디오 헤어 살롱",
+          "biz": "6383701436",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "11:20",
           "store": "카페왓에버(Cafe Whatever)",
@@ -131424,7 +131435,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 40,
+        "online": 41,
         "offline": 8,
         "unknown": 0
       },
@@ -131569,10 +131580,6 @@ window.SLACK_DATA = {
       "1787589002.171429": {
         "post": "1787589002.171429",
         "lastSeen": 1787611524.291
-      },
-      "1787625363.154529": {
-        "post": "1787625363.154529",
-        "lastSeen": 1787625364.398
       }
     },
     "days": {
@@ -162053,8 +162060,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-25": {
-        "cnt": 28,
-        "sumMin": 121.56397448380787,
+        "cnt": 29,
+        "sumMin": 123.1424073298772,
         "over": 0,
         "items": [
           {
@@ -162280,13 +162287,21 @@ window.SLACK_DATA = {
             "biz": "1628103420",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "11:36",
+            "min": 1.6,
+            "store": "칸 프리베 스튜디오 헤어 살롱",
+            "biz": "6383701436",
+            "who": "서상원",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-25 11:36",
+    "at": "2026-08-25 11:39",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
