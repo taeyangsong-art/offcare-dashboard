@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5113,
+  "version": 5114,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -132590,7 +132590,7 @@ window.SLACK_DATA = {
         "offline": 24,
         "unknown": 0
       },
-      "updatedAt": "15:41",
+      "updatedAt": "15:42",
       "voc": {
         "responses": 8,
         "install": {
@@ -132742,9 +132742,9 @@ window.SLACK_DATA = {
         ]
       },
       "ob": {
-        "count": 21,
+        "count": 22,
         "byEmp": {
-          "김규빈": 21
+          "김규빈": 22
         },
         "items": [
           {
@@ -132754,6 +132754,14 @@ window.SLACK_DATA = {
             "recvDate": "2026-08-25",
             "planDate": "2026-08-27",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787288011496989"
+          },
+          {
+            "key": "2026년 8월 25일 오후 1:14:54|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786323299734609#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-25",
+            "planDate": "2026-08-28",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786323299734609"
           },
           {
             "key": "2026년 8월 25일 오후 1:13:23|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787276532595529#1",
@@ -132951,23 +132959,27 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787640084.322
+        "lastSeen": 1787640198.968
       },
       "1787638250.100349": {
         "post": "1787638250.100349",
-        "lastSeen": 1787640084.322
+        "lastSeen": 1787640198.968
       },
       "1787638893.030289": {
         "post": "1787638893.030289",
-        "lastSeen": 1787640084.322
+        "lastSeen": 1787640198.968
       },
       "1787639777.765639": {
         "post": "1787639777.765639",
-        "lastSeen": 1787640084.322
+        "lastSeen": 1787640198.968
       },
       "1787640064.523999": {
         "post": "1787640064.523999",
-        "lastSeen": 1787640084.322
+        "lastSeen": 1787640198.968
+      },
+      "1787640166.269889": {
+        "post": "1787640166.269889",
+        "lastSeen": 1787640198.968
       }
     },
     "days": {
@@ -164193,19 +164205,19 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 15:41",
+    "at": "2026-08-25 15:43",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3702,
-    "named": 405,
+    "named": 406,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 405,
+    "done": 406,
     "byStatus": {
-      "일정등록완료": 251,
+      "일정등록완료": 252,
       "1차부재": 89,
       "점주직접접수": 36,
       "설치불가": 9,
