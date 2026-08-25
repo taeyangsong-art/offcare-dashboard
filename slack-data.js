@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5140,
+  "version": 5141,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130866,11 +130866,11 @@ window.SLACK_DATA = {
           "서상원": 8,
           "김현기": 16,
           "최민석": 6,
-          "김동욱": 10,
+          "김동욱": 11,
           "심성현": 17,
           "배선유": 14,
+          "송태양": 8,
           "고경림": 25,
-          "송태양": 7,
           "김기범": 5,
           "김규빈": 8
         },
@@ -130897,8 +130897,8 @@ window.SLACK_DATA = {
           "김현기": 1
         },
         "menu": {
+          "배선유": 11,
           "서상원": 1,
-          "배선유": 10,
           "김규빈": 3
         },
         "delivery": {
@@ -130974,6 +130974,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "가결제 완료"
+        },
+        {
+          "time": "16:15",
+          "store": "산들크레",
+          "biz": "2030556700",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "포프(태블릿) + 유프 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "1차 부재 / 태블릿을 못가져와 익일 오전 9시 15분 예약메시지 진행"
         },
         {
           "time": "16:14",
@@ -131100,6 +131111,17 @@ window.SLACK_DATA = {
           "note": "포프 재온보딩 완료"
         },
         {
+          "time": "15:53",
+          "store": "실바",
+          "biz": "4540703412",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
+        },
+        {
           "time": "15:52",
           "store": "정가네",
           "biz": "6720203714",
@@ -131142,6 +131164,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": ""
+        },
+        {
+          "time": "15:45",
+          "store": "보길도 랭이네",
+          "biz": "8911702789",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "가결제 <@U08HHP6TV39>",
+          "hw": "",
+          "intake": "online",
+          "note": "완료"
         },
         {
           "time": "15:42",
@@ -132892,11 +132925,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 150,
+        "online": 153,
         "offline": 29,
         "unknown": 0
       },
-      "updatedAt": "16:25",
+      "updatedAt": "16:30",
       "voc": {
         "responses": 9,
         "install": {
@@ -133333,11 +133366,15 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787642960.806
+        "lastSeen": 1787643026.652
       },
       "1787642756.799139": {
         "post": "1787642756.799139",
-        "lastSeen": 1787642960.806
+        "lastSeen": 1787643026.652
+      },
+      "1787643002.437919": {
+        "post": "1787643002.437919",
+        "lastSeen": 1787643026.652
       }
     },
     "days": {
@@ -164699,7 +164736,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 16:29",
+    "at": "2026-08-25 16:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
