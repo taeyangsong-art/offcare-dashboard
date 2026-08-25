@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5087,
+  "version": 5088,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,11 +130863,11 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
+          "고경림": 20,
           "김현기": 11,
           "송태양": 6,
           "김동욱": 6,
           "심성현": 12,
-          "고경림": 19,
           "김기범": 4,
           "서상원": 4,
           "배선유": 11,
@@ -130922,6 +130922,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "14:45",
+          "store": "전 학암상회",
+          "biz": "1160331319",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "유선프린터 케이블도 헷갈려 하시고 연결 어려워 하셔서 연결 방법 안내 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "14:45",
           "store": "필레아 커피 로스터스",
@@ -132306,11 +132317,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 108,
+        "online": 109,
         "offline": 19,
         "unknown": 0
       },
-      "updatedAt": "14:58",
+      "updatedAt": "15:00",
       "voc": {
         "responses": 3,
         "install": {
@@ -132562,11 +132573,19 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787637562.989
+        "lastSeen": 1787637620.352
       },
       "1787636447.744369": {
         "post": "1787636447.744369",
-        "lastSeen": 1787637562.989
+        "lastSeen": 1787637620.352
+      },
+      "1787637611.934649": {
+        "post": "1787637611.934649",
+        "lastSeen": 1787637620.352
+      },
+      "1787637601.366719": {
+        "post": "1787637601.366719",
+        "lastSeen": 1787637620.352
       }
     },
     "days": {
@@ -163656,7 +163675,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 14:59",
+    "at": "2026-08-25 15:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
