@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 968,
- "updatedAt": "2026-08-25 16:06",
+ "version": 969,
+ "updatedAt": "2026-08-25 16:07",
  "days": 30,
  "items": [
   {
@@ -247,8 +247,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "1. 청도 9000원(식권 회수 바로 위에 빈 칸에 넣어달라 하십니다)\n2. 식권 9000원(청도 추가한 거 옆쪽에)"
    ],
-   "rc": 2,
-   "lr": "1787640766.591739",
+   "rc": 3,
+   "lr": "1787641607.779829",
    "rfx": 3,
    "status": "done",
    "handler": "서상원",
