@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4933,
+  "version": 4934,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130878,10 +130878,24 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "배선유": 1
+        },
+        "menu": {
+          "배선유": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:22",
+          "store": "샐러드타임",
+          "biz": "8854001099",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 완료"
+        },
         {
           "time": "09:00",
           "store": "다움헤어",
@@ -130895,7 +130909,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 1,
         "unknown": 0
       },
@@ -131025,10 +131039,6 @@ window.SLACK_DATA = {
       "1787589002.171429": {
         "post": "1787589002.171429",
         "lastSeen": 1787611524.291
-      },
-      "1787615100.202119": {
-        "post": "1787615100.202119",
-        "lastSeen": 1787617352.646
       }
     },
     "days": {
@@ -161534,7 +161544,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 09:22",
+    "at": "2026-08-25 09:24",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
