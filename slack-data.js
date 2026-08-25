@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4982,
+  "version": 4983,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,8 +130863,8 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "extern": {
-          "서상원": 1,
-          "김동욱": 3
+          "김동욱": 4,
+          "서상원": 1
         },
         "as": {
           "송태양": 1,
@@ -130903,6 +130903,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "11:03",
+          "store": "그여행 두호점",
+          "biz": "2022212424",
+          "cat": "extern",
+          "emp": "김동욱",
+          "req": "외주",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
         {
           "time": "11:02",
           "store": "더큰도시락 죽전단국대점",
@@ -131315,7 +131326,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 34,
-        "offline": 4,
+        "offline": 5,
         "unknown": 0
       },
       "updatedAt": "11:09",
@@ -131462,7 +131473,7 @@ window.SLACK_DATA = {
       },
       "1787622300.806129": {
         "post": "1787622300.806129",
-        "lastSeen": 1787623769.744
+        "lastSeen": 1787623824.01
       }
     },
     "days": {
@@ -162120,7 +162131,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 11:09",
+    "at": "2026-08-25 11:10",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
