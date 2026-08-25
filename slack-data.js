@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5031,
+  "version": 5032,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130892,6 +130892,17 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "12:00",
+          "store": "곱도리탕전문점 연수점",
+          "biz": "8983101171",
+          "handler": "김현기",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "1차 부재"
+          ]
+        },
+        {
           "time": "11:12",
           "store": "미친피자 김포장기점",
           "biz": "5964001239",
@@ -131678,11 +131689,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 56,
+        "online": 57,
         "offline": 15,
         "unknown": 0
       },
-      "updatedAt": "12:56",
+      "updatedAt": "13:00",
       "voc": {
         "responses": 3,
         "install": {
@@ -131826,11 +131837,15 @@ window.SLACK_DATA = {
       },
       "1787628603.892099": {
         "post": "1787628603.892099",
-        "lastSeen": 1787630303.228
+        "lastSeen": 1787630423.891
       },
       "1787628602.300949": {
         "post": "1787628602.300949",
-        "lastSeen": 1787630303.228
+        "lastSeen": 1787630423.891
+      },
+      "1787630401.393139": {
+        "post": "1787630401.393139",
+        "lastSeen": 1787630423.891
       }
     },
     "days": {
@@ -162576,7 +162591,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 12:58",
+    "at": "2026-08-25 13:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
