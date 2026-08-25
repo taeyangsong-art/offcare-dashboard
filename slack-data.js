@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4979,
+  "version": 4980,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130862,6 +130862,10 @@ window.SLACK_DATA = {
     },
     "2026-08-25": {
       "counts": {
+        "extern": {
+          "서상원": 1,
+          "김동욱": 3
+        },
         "as": {
           "고경림": 6,
           "배선유": 5,
@@ -130870,9 +130874,6 @@ window.SLACK_DATA = {
           "서상원": 1,
           "김동욱": 2,
           "심성현": 2
-        },
-        "extern": {
-          "김동욱": 3
         },
         "onboarding": {
           "송태양": 1,
@@ -130901,6 +130902,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "11:02",
+          "store": "더큰도시락 죽전단국대점",
+          "biz": "6398502967",
+          "cat": "extern",
+          "emp": "서상원",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "10:57",
           "store": "진희푸드연구소",
@@ -131279,7 +131291,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 31,
+        "online": 32,
         "offline": 4,
         "unknown": 0
       },
@@ -131427,11 +131439,7 @@ window.SLACK_DATA = {
       },
       "1787622300.806129": {
         "post": "1787622300.806129",
-        "lastSeen": 1787623522.42
-      },
-      "1787623486.194599": {
-        "post": "1787623486.194599",
-        "lastSeen": 1787623522.42
+        "lastSeen": 1787623562.943
       }
     },
     "days": {
@@ -161912,8 +161920,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-25": {
-        "cnt": 20,
-        "sumMin": 108.08114117383955,
+        "cnt": 21,
+        "sumMin": 109.02258952458698,
         "over": 0,
         "items": [
           {
@@ -162075,13 +162083,21 @@ window.SLACK_DATA = {
             "biz": "8580503570",
             "who": "송태양",
             "cat": "as"
+          },
+          {
+            "hm": "11:04",
+            "min": 0.9,
+            "store": "돌판장 주식회사",
+            "biz": "5608700293",
+            "who": "고경림",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-25 11:05",
+    "at": "2026-08-25 11:06",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
