@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5089,
+  "version": 5090,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130876,6 +130876,7 @@ window.SLACK_DATA = {
         },
         "onboarding": {
           "심성현": 2,
+          "김동욱": 1,
           "서상원": 4,
           "김현기": 2,
           "송태양": 4,
@@ -130894,7 +130895,7 @@ window.SLACK_DATA = {
           "김현기": 1
         },
         "menu": {
-          "배선유": 7,
+          "배선유": 9,
           "김규빈": 3
         }
       },
@@ -130934,6 +130935,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "15:03",
+          "store": "명동돌판삼겹",
+          "biz": "5032538411",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "신규 설치 예정 메뉴 등록",
+          "hw": "",
+          "intake": "offline",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! /"
+        },
         {
           "time": "15:00",
           "store": "그로잉라운지",
@@ -131001,6 +131013,17 @@ window.SLACK_DATA = {
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 우미각 테이블 및 메뉴 부탁드립니다 / 완료"
         },
         {
+          "time": "14:40",
+          "store": "가온정",
+          "biz": "3130972121",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "신규 설치 예정 메뉴 등록",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! /"
+        },
+        {
           "time": "14:37",
           "store": "원미당소금빵 천안병천순대거리",
           "biz": "4991003360",
@@ -131010,6 +131033,18 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "CL 테크"
+        },
+        {
+          "time": "14:36",
+          "store": "파머드림",
+          "biz": "5455800784",
+          "cat": "onboarding",
+          "emp": "김동욱",
+          "req": "핸드폰 + 프론트 온보딩",
+          "hw": "",
+          "urgent": true,
+          "intake": "online",
+          "note": "포프(휴대폰) 온보딩 완료"
         },
         {
           "time": "14:35",
@@ -132351,11 +132386,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 111,
-        "offline": 20,
+        "online": 113,
+        "offline": 21,
         "unknown": 0
       },
-      "updatedAt": "15:03",
+      "updatedAt": "15:05",
       "voc": {
         "responses": 3,
         "install": {
@@ -132462,11 +132497,19 @@ window.SLACK_DATA = {
         ]
       },
       "ob": {
-        "count": 14,
+        "count": 15,
         "byEmp": {
-          "김규빈": 14
+          "김규빈": 15
         },
         "items": [
+          {
+            "key": "2026년 8월 25일 오전 9:40:44|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786324016328799#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-25",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786324016328799"
+          },
           {
             "key": "2026년 8월 25일 오전 9:04:56|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787293910416539#1",
             "handler": "김규빈",
@@ -132615,11 +132658,11 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787637837.605
+        "lastSeen": 1787638044.02
       },
-      "1787637781.068079": {
-        "post": "1787637781.068079",
-        "lastSeen": 1787637837.605
+      "1787637936.583699": {
+        "post": "1787637936.583699",
+        "lastSeen": 1787638044.02
       }
     },
     "days": {
@@ -163725,19 +163768,19 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 15:04",
+    "at": "2026-08-25 15:07",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3702,
-    "named": 398,
+    "named": 399,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 398,
+    "done": 399,
     "byStatus": {
-      "일정등록완료": 247,
+      "일정등록완료": 248,
       "1차부재": 89,
       "점주직접접수": 35,
       "설치불가": 8,
