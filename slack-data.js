@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5185,
+  "version": 5186,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130891,6 +130891,7 @@ window.SLACK_DATA = {
           "김동욱": 6
         },
         "transfer": {
+          "심성현": 1,
           "송태양": 5,
           "최민석": 1,
           "김동욱": 1,
@@ -130950,7 +130951,18 @@ window.SLACK_DATA = {
           "req": "포프(휴대폰) + 유프 온보딩 요청드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "클래스업 플러그인 이용입니다 자체 해결하셨고 프린터 소리 설정만 25%로 완료"
+        },
+        {
+          "time": "17:52",
+          "store": "리코그PT",
+          "biz": "7527800662",
+          "cat": "transfer",
+          "emp": "심성현",
+          "req": "프론트 / 금일 내로 요청",
+          "hw": "",
+          "intake": "online",
+          "note": "명변 완료"
         },
         {
           "time": "17:49",
@@ -133333,11 +133345,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 185,
+        "online": 186,
         "offline": 34,
         "unknown": 0
       },
-      "updatedAt": "18:02",
+      "updatedAt": "18:03",
       "voc": {
         "responses": 13,
         "install": {
@@ -133801,15 +133813,15 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787648601.358
+        "lastSeen": 1787648793.724
       },
       "1787647500.986649": {
         "post": "1787647500.986649",
-        "lastSeen": 1787648601.358
+        "lastSeen": 1787648793.724
       },
       "1787648514.557959": {
         "post": "1787648514.557959",
-        "lastSeen": 1787648601.358
+        "lastSeen": 1787648793.724
       }
     },
     "days": {
@@ -165355,7 +165367,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 18:03",
+    "at": "2026-08-25 18:06",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
