@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 977,
- "updatedAt": "2026-08-25 17:14",
+ "version": 978,
+ "updatedAt": "2026-08-25 17:21",
  "days": 30,
  "items": [
+  {
+   "ts": "1787646076.017079",
+   "date": "2026-08-25",
+   "time": "17:21",
+   "store": "뮌헨",
+   "biz": "5660702429",
+   "pos": "기타",
+   "content": "켈리,테라,카스,후레시,진로,진로오리지널,처음처럼,새로\n가격모두 5500원으로 수정\n\n무뼈직화불닭발+콘치즈\n29000원으로 가격수정 요망",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787646078.856739",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787646076017079"
+  },
   {
    "ts": "1787645549.985539",
    "date": "2026-08-25",
