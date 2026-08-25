@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4951,
+  "version": 4952,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,6 +130863,7 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
+          "서상원": 1,
           "김현기": 1,
           "김동욱": 1,
           "배선유": 2,
@@ -130878,8 +130879,31 @@ window.SLACK_DATA = {
           "배선유": 1
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "09:00",
+          "store": "드롭탑 팔공산진갤러리점",
+          "biz": "2863400841",
+          "handler": "배선유",
+          "cat": "as",
+          "intake": "offline",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "done": [
+        {
+          "time": "09:58",
+          "store": "컴포즈커피 성수코리아IT점",
+          "biz": "5218102386",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "웨이브 키오스크 설정",
+          "hw": "",
+          "intake": "online",
+          "note": "명현님지원"
+        },
         {
           "time": "09:45",
           "store": "케이 뷰티",
@@ -130970,11 +130994,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 6,
-        "offline": 2,
+        "online": 7,
+        "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "09:58",
+      "updatedAt": "10:00",
       "voc": {
         "responses": 2,
         "install": {
@@ -131103,7 +131127,11 @@ window.SLACK_DATA = {
       },
       "1787619438.728019": {
         "post": "1787619438.728019",
-        "lastSeen": 1787619561.429
+        "lastSeen": 1787619624.371
+      },
+      "1787619605.682539": {
+        "post": "1787619605.682539",
+        "lastSeen": 1787619624.371
       }
     },
     "days": {
@@ -161665,7 +161693,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 09:59",
+    "at": "2026-08-25 10:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
