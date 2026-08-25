@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 964,
- "updatedAt": "2026-08-25 15:07",
+ "version": 965,
+ "updatedAt": "2026-08-25 15:11",
  "days": 30,
  "items": [
+  {
+   "ts": "1787638250.100349",
+   "date": "2026-08-25",
+   "time": "15:10",
+   "store": "알비온",
+   "biz": "7680100928",
+   "pos": "토스포스",
+   "content": "저희가 평일 가격하고 주말 가격이 다른데 각각 동일 카테고리에 동일 메뉴인데 가격을 다르게 심어났습니다. 저번에 코드 해주셨는데 카테고리 하고 코드가 등록되어있지 않아 추가로 부탁드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787638253.006239",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787638250100349"
+  },
   {
    "ts": "1787637781.068079",
    "date": "2026-08-25",

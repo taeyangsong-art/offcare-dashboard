@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5093,
+  "version": 5094,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130966,7 +130966,7 @@ window.SLACK_DATA = {
           "req": "SMT-T226 키인결제 기능 진행하면 화면전환이 되지 않는다고 하여 확인 부탁드립니다!",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "특수 -&gt; 2670 -&gt; 1. 단말설정 -&gt; 1. 키인 설정 -&gt; 2. 사용 특수 - 2670 - 1. 단말설정 - 1. 키인 설정 - 2. 사용 / 설정 후 키인 결제 가능"
         },
         {
           "time": "14:45",
@@ -132390,7 +132390,7 @@ window.SLACK_DATA = {
         "offline": 21,
         "unknown": 0
       },
-      "updatedAt": "15:09",
+      "updatedAt": "15:10",
       "voc": {
         "responses": 3,
         "install": {
@@ -132658,11 +132658,15 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787638221.165
+        "lastSeen": 1787638284.377
       },
       "1787637936.583699": {
         "post": "1787637936.583699",
-        "lastSeen": 1787638221.165
+        "lastSeen": 1787638284.377
+      },
+      "1787638250.100349": {
+        "post": "1787638250.100349",
+        "lastSeen": 1787638284.377
       }
     },
     "days": {
@@ -163776,7 +163780,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 15:10",
+    "at": "2026-08-25 15:11",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
