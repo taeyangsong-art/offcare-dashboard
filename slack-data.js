@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5254,
+  "version": 5255,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,7 +130863,7 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
-          "최민석": 21,
+          "최민석": 22,
           "김규빈": 14,
           "심성현": 22,
           "송태양": 10,
@@ -130932,6 +130932,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "23:26",
+          "store": "치킨신드롬 봉명자이점",
+          "biz": "5383701738",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "• 메이트 포스 연동 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "타대리점 kicc 벤사 사용중 대리점 계약 문의 후 재인입 하신다고 합니다."
+        },
         {
           "time": "23:11",
           "store": "피자다오 중앙대점",
@@ -133667,11 +133678,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 212,
+        "online": 213,
         "offline": 37,
         "unknown": 0
       },
-      "updatedAt": "23:26",
+      "updatedAt": "23:48",
       "voc": {
         "responses": 13,
         "install": {
@@ -134101,6 +134112,17 @@ window.SLACK_DATA = {
           }
         ]
       }
+    },
+    "2026-08-26": {
+      "counts": {},
+      "pending": [],
+      "done": [],
+      "intake": {
+        "online": 0,
+        "offline": 0,
+        "unknown": 0
+      },
+      "updatedAt": ""
     }
   },
   "resp": {
@@ -165845,7 +165867,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 23:45",
+    "at": "2026-08-26 00:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
