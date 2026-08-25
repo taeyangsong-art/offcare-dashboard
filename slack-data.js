@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4997,
+  "version": 4998,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130862,18 +130862,18 @@ window.SLACK_DATA = {
     },
     "2026-08-25": {
       "counts": {
+        "extern": {
+          "서상원": 3,
+          "김동욱": 5
+        },
         "as": {
-          "서상원": 2,
           "김동욱": 3,
           "고경림": 8,
           "심성현": 3,
           "송태양": 1,
           "김규빈": 5,
           "배선유": 6,
-          "김현기": 4
-        },
-        "extern": {
-          "김동욱": 5,
+          "김현기": 4,
           "서상원": 1
         },
         "onboarding": {
@@ -130904,10 +130904,21 @@ window.SLACK_DATA = {
       ],
       "done": [
         {
+          "time": "11:40",
+          "store": "주식회사 베이프코리아",
+          "biz": "2998102102",
+          "cat": "extern",
+          "emp": "서상원",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
           "time": "11:36",
           "store": "칸 프리베 스튜디오 헤어 살롱",
           "biz": "6383701436",
-          "cat": "as",
+          "cat": "extern",
           "emp": "서상원",
           "req": "외주",
           "hw": "",
@@ -131435,11 +131446,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 41,
+        "online": 42,
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "11:36",
+      "updatedAt": "11:40",
       "voc": {
         "responses": 3,
         "install": {
@@ -162301,7 +162312,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 11:39",
+    "at": "2026-08-25 11:42",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
