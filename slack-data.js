@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5021,
+  "version": 5022,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130885,7 +130885,7 @@ window.SLACK_DATA = {
           "김현기": 1
         },
         "menu": {
-          "김규빈": 2,
+          "김규빈": 3,
           "배선유": 3
         }
       },
@@ -130914,6 +130914,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "12:29",
+          "store": "모퉁이피자집",
+          "biz": "7160702795",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 유플"
+        },
         {
           "time": "12:27",
           "store": "99공방카페",
@@ -131600,7 +131611,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 51,
+        "online": 52,
         "offline": 13,
         "unknown": 0
       },
@@ -131748,15 +131759,15 @@ window.SLACK_DATA = {
       },
       "1787628603.892099": {
         "post": "1787628603.892099",
-        "lastSeen": 1787628922.149
+        "lastSeen": 1787628985.652
       },
       "1787628602.300949": {
         "post": "1787628602.300949",
-        "lastSeen": 1787628922.149
+        "lastSeen": 1787628985.652
       },
       "1787628822.444049": {
         "post": "1787628822.444049",
-        "lastSeen": 1787628922.149
+        "lastSeen": 1787628985.652
       }
     },
     "days": {
@@ -162494,7 +162505,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 12:35",
+    "at": "2026-08-25 12:36",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
