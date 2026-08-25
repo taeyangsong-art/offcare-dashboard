@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5075,
+  "version": 5076,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130865,8 +130865,8 @@ window.SLACK_DATA = {
         "as": {
           "서상원": 5,
           "김동욱": 5,
+          "심성현": 10,
           "김기범": 4,
-          "심성현": 9,
           "김현기": 10,
           "고경림": 16,
           "배선유": 12,
@@ -130964,6 +130964,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "익일 오전 11시 15분 예약메시지 진행"
+        },
+        {
+          "time": "14:11",
+          "store": "어알아 인테리어 필름 아카데미",
+          "biz": "6611902071",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "PC + 프론트 온보딩 요청 드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "1515 통화 예약 요청"
         },
         {
           "time": "14:06",
@@ -132138,11 +132149,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 93,
+        "online": 94,
         "offline": 19,
         "unknown": 0
       },
-      "updatedAt": "14:30",
+      "updatedAt": "14:33",
       "voc": {
         "responses": 3,
         "install": {
@@ -132249,11 +132260,19 @@ window.SLACK_DATA = {
         ]
       },
       "ob": {
-        "count": 5,
+        "count": 6,
         "byEmp": {
-          "김규빈": 5
+          "김규빈": 6
         },
         "items": [
+          {
+            "key": "2026년 8월 25일 오전 8:43:00|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787216645306209#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-25",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787216645306209"
+          },
           {
             "key": "2026년 8월 25일 오전 8:40:46|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786069530768039#1",
             "handler": "김규빈",
@@ -132330,27 +132349,23 @@ window.SLACK_DATA = {
       },
       "1787634900.356249": {
         "post": "1787634900.356249",
-        "lastSeen": 1787635825.526
+        "lastSeen": 1787636064.704
       },
       "1787634975.037219": {
         "post": "1787634975.037219",
-        "lastSeen": 1787635825.526
+        "lastSeen": 1787636064.704
       },
       "1787635666.803829": {
         "post": "1787635666.803829",
-        "lastSeen": 1787635825.526
-      },
-      "1787635812.404809": {
-        "post": "1787635812.404809",
-        "lastSeen": 1787635825.526
+        "lastSeen": 1787636064.704
       },
       "1787635800.892209": {
         "post": "1787635800.892209",
-        "lastSeen": 1787635825.526
+        "lastSeen": 1787636064.704
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787635825.526
+        "lastSeen": 1787636064.704
       }
     },
     "days": {
@@ -162831,8 +162846,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-25": {
-        "cnt": 63,
-        "sumMin": 597.5549882372218,
+        "cnt": 64,
+        "sumMin": 599.7668247540789,
         "over": 1,
         "items": [
           {
@@ -163338,25 +163353,33 @@ window.SLACK_DATA = {
             "biz": "8751201798",
             "who": "송태양",
             "cat": "as"
+          },
+          {
+            "hm": "14:30",
+            "min": 2.2,
+            "store": "24기억의꽃무인플라워",
+            "biz": "4161531435",
+            "who": "김현기",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-25 14:30",
+    "at": "2026-08-25 14:34",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3702,
-    "named": 389,
+    "named": 390,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 389,
+    "done": 390,
     "byStatus": {
-      "일정등록완료": 241,
+      "일정등록완료": 242,
       "1차부재": 87,
       "점주직접접수": 35,
       "설치불가": 8,
