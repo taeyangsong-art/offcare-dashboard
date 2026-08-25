@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5189,
+  "version": 5190,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130866,9 +130866,9 @@ window.SLACK_DATA = {
           "심성현": 22,
           "김규빈": 11,
           "송태양": 10,
+          "배선유": 19,
           "김현기": 19,
           "고경림": 29,
-          "배선유": 18,
           "김동욱": 14,
           "최민석": 8,
           "서상원": 8,
@@ -130985,6 +130985,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "6시 45분 예약 요청으로 예약 완료입니다"
+        },
+        {
+          "time": "17:54",
+          "store": "새장터",
+          "biz": "7395500132",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "프론트 업데이트 문구 지속 발생으로 카드 취소가 불가능한 상황 / 확인 한 번 부탁드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": ""
         },
         {
           "time": "17:52",
@@ -133378,7 +133389,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 188,
+        "online": 189,
         "offline": 35,
         "unknown": 0
       },
@@ -133846,15 +133857,15 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787649143.387
+        "lastSeen": 1787649199.07
       },
       "1787647500.986649": {
         "post": "1787647500.986649",
-        "lastSeen": 1787649143.387
+        "lastSeen": 1787649199.07
       },
       "1787648514.557959": {
         "post": "1787648514.557959",
-        "lastSeen": 1787649143.387
+        "lastSeen": 1787649199.07
       }
     },
     "days": {
@@ -165400,7 +165411,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 18:12",
+    "at": "2026-08-25 18:13",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
