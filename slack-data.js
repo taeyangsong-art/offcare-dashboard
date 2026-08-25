@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5101,
+  "version": 5102,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130862,6 +130862,15 @@ window.SLACK_DATA = {
     },
     "2026-08-25": {
       "counts": {
+        "onboarding": {
+          "심성현": 3,
+          "송태양": 5,
+          "김동욱": 1,
+          "서상원": 4,
+          "김현기": 2,
+          "배선유": 3,
+          "고경림": 1
+        },
         "as": {
           "서상원": 5,
           "고경림": 22,
@@ -130873,15 +130882,6 @@ window.SLACK_DATA = {
           "김동욱": 6,
           "김기범": 4,
           "김규빈": 8
-        },
-        "onboarding": {
-          "송태양": 5,
-          "심성현": 2,
-          "김동욱": 1,
-          "서상원": 4,
-          "김현기": 2,
-          "배선유": 3,
-          "고경림": 1
         },
         "extern": {
           "김기범": 1,
@@ -130946,6 +130946,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "15:15",
+          "store": "어알아 인테리어 필름 아카데미",
+          "biz": "6611902071",
+          "cat": "onboarding",
+          "emp": "심성현",
+          "req": "PC + 프론트 온보딩 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 사용 방법 전달 완료"
+        },
         {
           "time": "15:13",
           "store": "주디살롱(JUDYSALON)",
@@ -132474,11 +132485,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 120,
+        "online": 121,
         "offline": 22,
         "unknown": 0
       },
-      "updatedAt": "15:21",
+      "updatedAt": "15:22",
       "voc": {
         "responses": 7,
         "install": {
@@ -132626,9 +132637,9 @@ window.SLACK_DATA = {
         ]
       },
       "ob": {
-        "count": 18,
+        "count": 19,
         "byEmp": {
-          "김규빈": 18
+          "김규빈": 19
         },
         "items": [
           {
@@ -132638,6 +132649,14 @@ window.SLACK_DATA = {
             "recvDate": "2026-08-25",
             "planDate": "2026-08-27",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787288011496989"
+          },
+          {
+            "key": "2026년 8월 25일 오후 1:03:41|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786498433833999#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-25",
+            "planDate": "2026-08-27",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786498433833999"
           },
           {
             "key": "2026년 8월 25일 오후 1:03:29|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787129450871539#1",
@@ -132811,31 +132830,35 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787638944.95
+        "lastSeen": 1787638999.795
       },
       "1787637936.583699": {
         "post": "1787637936.583699",
-        "lastSeen": 1787638944.95
+        "lastSeen": 1787638999.795
       },
       "1787638250.100349": {
         "post": "1787638250.100349",
-        "lastSeen": 1787638944.95
+        "lastSeen": 1787638999.795
       },
       "1787638793.030569": {
         "post": "1787638793.030569",
-        "lastSeen": 1787638944.95
+        "lastSeen": 1787638999.795
       },
       "1787638780.347319": {
         "post": "1787638780.347319",
-        "lastSeen": 1787638944.95
+        "lastSeen": 1787638999.795
       },
       "1787638878.892119": {
         "post": "1787638878.892119",
-        "lastSeen": 1787638944.95
+        "lastSeen": 1787638999.795
       },
       "1787638893.030289": {
         "post": "1787638893.030289",
-        "lastSeen": 1787638944.95
+        "lastSeen": 1787638999.795
+      },
+      "1787638977.134289": {
+        "post": "1787638977.134289",
+        "lastSeen": 1787638999.795
       }
     },
     "days": {
@@ -163981,19 +164004,19 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 15:22",
+    "at": "2026-08-25 15:23",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3702,
-    "named": 402,
+    "named": 403,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 402,
+    "done": 403,
     "byStatus": {
-      "일정등록완료": 249,
+      "일정등록완료": 250,
       "1차부재": 89,
       "점주직접접수": 36,
       "설치불가": 8,
