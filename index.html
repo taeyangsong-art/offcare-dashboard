@@ -788,6 +788,7 @@
   .voc-stat.st-ob{background:var(--green-soft); color:#166534; border-color:#bbf7d0}
   .voc-stat.st-absent{background:#ffe1de; color:#b91c1c; border-color:#fecaca}
   .voc-stat.st-reject{background:#ffedd5; color:#c2410c; border-color:#fed7aa}
+  .voc-stat.st-void{background:#f3f4f6; color:#6b7280; border-color:#e5e7eb; text-decoration:line-through}
   /* VOC 드릴다운(업종/사유 → 매장 상세) */
   .voc-drill{border:1px solid var(--line-soft); border-radius:10px; margin-bottom:8px; overflow:hidden; background:var(--surface2)}
   .voc-drill summary{list-style:none; cursor:pointer; display:flex; align-items:center; gap:10px; padding:10px 12px}
@@ -894,6 +895,7 @@
   .vd-stat.st-ob{background:var(--green-soft); color:#166534}
   .vd-stat.st-absent{background:#ffe1de; color:#b91c1c}
   .vd-stat.st-reject{background:#ffedd5; color:#c2410c}
+  .vd-stat.st-void{background:#f3f4f6; color:#6b7280; text-decoration:line-through}
   .vd-content,.vd-note{font-size:13px; color:var(--ink-soft); line-height:1.5}
   .vd-note{margin-top:3px}
   .vd-content b,.vd-note b{font-size:10.5px; color:var(--gray); font-weight:800; margin-right:6px; letter-spacing:.02em}
@@ -1436,7 +1438,7 @@ const SHARE_TYPES = {
 // VOC 수기 선택용 목록 (드롭다운)
 const VOC_INDUSTRIES = ["서비스[뷰티,헤어]","서비스[학원]","카페","요식업","서비스[체육]","서비스[숙박]","도소매","기타"];
 const VOC_REASONS = ["필요한 기능이 없거나 몰라서 불편","고객센터 연락이 매우 힘듦","사용중 오류가 자주 발생함","단말기 설치나 초기 과정이 어려움","구매,계약과정에서 설명이 부족","기타 이슈(정산/직원에 대한 불만/호영님출몰)"];
-const VOC_STATUSES = ["처리중","부재","통화거부","OB필요없음","처리완료"];
+const VOC_STATUSES = ["처리중","부재","통화거부","OB필요없음","처리완료","오적재"];
 
 // 2026 대한민국 공휴일 (대체공휴일 포함, 대표)
 const HOLIDAYS = {
@@ -5007,10 +5009,13 @@ function showVocDetail(key){
 }
 const VOC_ALERT_HEAD=`<tr><th style="width:52px">시간</th><th style="min-width:110px">매장명</th><th style="width:140px">업종</th><th class="num" style="width:92px">저점</th><th style="width:150px">저점이유</th><th style="min-width:180px">고객 원문</th><th style="min-width:190px">처리 내용</th><th style="width:108px">상태</th></tr>`;
 // 저점 alert 정규화(매장명·업종·사유·저점내용·해결내용·상태) — renderVoc/먼슬리 공용
-function vocDone(s){ return s==='처리완료' || s==='OB필요없음' || s==='부재' || s==='통화거부'; }   // 확인필요에서 빠지는(해결) 상태 — 부재·통화거부도 처리완료로 간주
+function vocDone(s){ return s==='처리완료' || s==='OB필요없음' || s==='부재' || s==='통화거부' || vocVoid(s); }   // 확인필요에서 빠지는 상태 — 부재·통화거부도 처리완료로 간주
+// 오적재 = 설문이 잘못 적재된 건(우리 저점이 아님). 확인필요에서는 빠지되 '처리 실적'도 아니라서
+// 처리완료율 계산에서는 분자·분모 양쪽에서 제외한다.
+function vocVoid(s){ return s==='오적재'; }
 function vocStatCls(s){ return vocDone(s)?'done':(s==='처리중'?'':'hold'); }
 // 상태별 색상 클래스 (처리중=회색, 처리완료=파랑, OB필요없음=초록, 부재=빨강, 통화거부=주황)
-function vocStatColorCls(s){ return ({'처리중':'st-progress','처리완료':'st-done','OB필요없음':'st-ob','부재':'st-absent','통화거부':'st-reject'})[s]||'st-progress'; }
+function vocStatColorCls(s){ return ({'처리중':'st-progress','처리완료':'st-done','OB필요없음':'st-ob','부재':'st-absent','통화거부':'st-reject','오적재':'st-void'})[s]||'st-progress'; }
 // 유효 상태/처리내용: 사용자가 직접 수정(VOCEDIT)했으면 그 값, 아니면 슬랙 자동값(확인+아이샵케어 이모지 → 처리완료 / 스레드 처리내용)
 function vocEffStatus(a){ const ed=VOCEDIT[vocKey(a)]||{}; return ed.status || a.autoStatus || '처리중'; }
 function vocEffNote(a){ const ed=VOCEDIT[vocKey(a)]||{}; return ed.note!=null?ed.note:(a.autoNote||''); }
@@ -5444,19 +5449,24 @@ function renderVocMonthly(){
   const ns=vocNpsStats(v.npsDist), avgInstall=avgScore(v.installDist);   // NPS 지표
   const npsColor=s=>s>=9?'#34c759':s>=7?'#ff9500':'#ff3b30';
   const insColor=s=>s>=4?'#34c759':s>=3?'#ff9500':'#ff3b30';
-  const doneCount=v.alerts.filter(a=>vocDone(vocEffStatus(a))).length;
-  const doneRate=totalIn?Math.round(doneCount/totalIn*100):0;
+  // 오적재는 실적도 미처리도 아니므로 처리완료율 모수에서 뺀다(분자·분모 양쪽).
+  const voidCount=v.alerts.filter(a=>vocVoid(vocEffStatus(a))).length;
+  const doneBase=totalIn-voidCount;
+  const doneCount=v.alerts.filter(a=>{const st=vocEffStatus(a); return vocDone(st)&&!vocVoid(st);}).length;
+  const doneRate=doneBase?Math.round(doneCount/doneBase*100):0;
   // 저점 처리 상태별 건수 (처리완료=OB완료 · 부재 · 통화거부 · OB필요없음 · 처리중=미처리)
-  const VStatOrder=['처리완료','부재','통화거부','OB필요없음','처리중'];
+  const VStatOrder=['처리완료','부재','통화거부','OB필요없음','처리중','오적재'];
   const vStatCnt={}; VStatOrder.forEach(s=>vStatCnt[s]=0);
   v.alerts.forEach(a=>{ const s=vocEffStatus(a); vStatCnt[s]=(vStatCnt[s]||0)+1; });
-  const vStatSty={'처리완료':{c:'#1e40af',bg:'#dbeafe',bd:'#bfdbfe',bar:'#3b82f6'},'부재':{c:'#b91c1c',bg:'#ffe1de',bd:'#fecaca',bar:'#ef4444'},'통화거부':{c:'#c2410c',bg:'#ffedd5',bd:'#fed7aa',bar:'#f97316'},'OB필요없음':{c:'#166534',bg:'#dcfce7',bd:'#bbf7d0',bar:'#22c55e'},'처리중':{c:'#475569',bg:'#eef1f4',bd:'#dde3ea',bar:'#94a3b8'}};
+  const vStatSty={'처리완료':{c:'#1e40af',bg:'#dbeafe',bd:'#bfdbfe',bar:'#3b82f6'},'부재':{c:'#b91c1c',bg:'#ffe1de',bd:'#fecaca',bar:'#ef4444'},'통화거부':{c:'#c2410c',bg:'#ffedd5',bd:'#fed7aa',bar:'#f97316'},'OB필요없음':{c:'#166534',bg:'#dcfce7',bd:'#bbf7d0',bar:'#22c55e'},'처리중':{c:'#475569',bg:'#eef1f4',bd:'#dde3ea',bar:'#94a3b8'},'오적재':{c:'#6b7280',bg:'#f3f4f6',bd:'#e5e7eb',bar:'#9ca3af'}};
   const posCount=vpCount+(v.high.install+v.high.nps), sentTot=posCount+totalIn;
   const posRate=sentTot?Math.round(posCount/sentTot*100):0;
   // ── 전월 대비 지표(NPS·점수분포·처리완료율·긍정비율) ──
   const pns=vocNpsStats(pv.npsDist), pAvgInstall=avgScore(pv.installDist);
-  const pDoneCount=pv.alerts.filter(a=>vocDone(vocEffStatus(a))).length;
-  const pDoneRate=pvIn?Math.round(pDoneCount/pvIn*100):0;
+  const pVoidCount=pv.alerts.filter(a=>vocVoid(vocEffStatus(a))).length;
+  const pDoneBase=pvIn-pVoidCount;
+  const pDoneCount=pv.alerts.filter(a=>{const st=vocEffStatus(a); return vocDone(st)&&!vocVoid(st);}).length;
+  const pDoneRate=pDoneBase?Math.round(pDoneCount/pDoneBase*100):0;
   const pPosCount=staffPraises(pv.praises).length+(pv.high.install+pv.high.nps), pSentTot=pPosCount+pvIn;
   const pPosRate=pSentTot?Math.round(pPosCount/pSentTot*100):0;
   const pctOf=(n,t)=>t?Math.round(n/t*100):0;
@@ -5467,7 +5477,7 @@ function renderVocMonthly(){
     nps:{cur:ns, prev:pns},
     dist:{cur:v.npsDist, prev:pv.npsDist},
     sent:{cur:{pos:posCount,neg:totalIn,rate:posRate}, prev:{pos:pPosCount,neg:pvIn,rate:pPosRate}},
-    done:{cur:{n:doneCount,t:totalIn,rate:doneRate}, prev:{n:pDoneCount,t:pvIn,rate:pDoneRate}},
+    done:{cur:{n:doneCount,t:doneBase,rate:doneRate}, prev:{n:pDoneCount,t:pDoneBase,rate:pDoneRate}},
     ind:{cur:mIndEntries, prev:pIndEntries},
     rea:{cur:mReaEntries, prev:pReaEntries},
   };
