@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5157,
+  "version": 5158,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,7 +130863,7 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
-          "배선유": 16,
+          "배선유": 17,
           "김현기": 18,
           "김동욱": 13,
           "송태양": 9,
@@ -130941,6 +130941,18 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "16:51",
+          "store": "모던파스타",
+          "biz": "1327200717",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "배달 연동이 풀렸다하여 도움부탁드립니다.",
+          "hw": "",
+          "urgent": true,
+          "intake": "online",
+          "note": "배민lite 실행 안 된 상태 / 메등록 문의하셔서 링크 전달"
+        },
         {
           "time": "16:50",
           "store": "온당 Korean Tofu Culture",
@@ -133068,11 +133080,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 164,
+        "online": 165,
         "offline": 31,
         "unknown": 0
       },
-      "updatedAt": "16:57",
+      "updatedAt": "17:00",
       "voc": {
         "responses": 9,
         "install": {
@@ -133509,19 +133521,23 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787644699.356
+        "lastSeen": 1787644822.85
       },
       "1787643045.119009": {
         "post": "1787643045.119009",
-        "lastSeen": 1787644699.356
+        "lastSeen": 1787644822.85
       },
       "1787644668.630789": {
         "post": "1787644668.630789",
-        "lastSeen": 1787644699.356
+        "lastSeen": 1787644822.85
       },
       "1787644631.003169": {
         "post": "1787644631.003169",
-        "lastSeen": 1787644699.356
+        "lastSeen": 1787644822.85
+      },
+      "1787644806.062629": {
+        "post": "1787644806.062629",
+        "lastSeen": 1787644822.85
       }
     },
     "days": {
@@ -164971,7 +164987,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 16:58",
+    "at": "2026-08-25 17:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
