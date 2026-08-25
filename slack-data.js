@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4970,
+  "version": 4971,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130883,7 +130883,7 @@ window.SLACK_DATA = {
         },
         "menu": {
           "김규빈": 1,
-          "배선유": 2
+          "배선유": 3
         }
       },
       "pending": [
@@ -130943,6 +130943,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": ""
+        },
+        {
+          "time": "10:26",
+          "store": "파머스테이블",
+          "biz": "8434501203",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         },
         {
           "time": "10:15",
@@ -131201,11 +131212,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 24,
+        "online": 25,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "10:45",
+      "updatedAt": "10:48",
       "voc": {
         "responses": 3,
         "install": {
@@ -131347,13 +131358,9 @@ window.SLACK_DATA = {
         "post": "1787589002.171429",
         "lastSeen": 1787611524.291
       },
-      "1787622301.087289": {
-        "post": "1787622301.087289",
-        "lastSeen": 1787622322.108
-      },
       "1787622300.806129": {
         "post": "1787622300.806129",
-        "lastSeen": 1787622322.108
+        "lastSeen": 1787622564.859
       }
     },
     "days": {
@@ -161834,8 +161841,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-25": {
-        "cnt": 15,
-        "sumMin": 95.7554452617963,
+        "cnt": 16,
+        "sumMin": 98.12871544361113,
         "over": 0,
         "items": [
           {
@@ -161957,13 +161964,21 @@ window.SLACK_DATA = {
             "biz": "8675401007",
             "who": "김규빈",
             "cat": "as"
+          },
+          {
+            "hm": "10:45",
+            "min": 2.4,
+            "store": "소프씨",
+            "biz": "2408703474",
+            "who": "김현기",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-25 10:45",
+    "at": "2026-08-25 10:49",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
