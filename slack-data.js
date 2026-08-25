@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5183,
+  "version": 5184,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130864,11 +130864,11 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김규빈": 10,
+          "김현기": 19,
           "심성현": 21,
           "고경림": 29,
           "배선유": 18,
           "김동욱": 14,
-          "김현기": 18,
           "송태양": 9,
           "최민석": 8,
           "서상원": 8,
@@ -130954,6 +130954,17 @@ window.SLACK_DATA = {
         },
         {
           "time": "17:48",
+          "store": "헨크",
+          "biz": "6906800763",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "배민 태블릿으로 주문 받으신다고 하십니다 영수증 나오게 설정 부탁드립니다 :꾸벅:",
+          "hw": "",
+          "intake": "online",
+          "note": "배민 태블릿 연동완료, 사용방법 설명 완료"
+        },
+        {
+          "time": "17:48",
           "store": "리에또",
           "biz": "1970402708",
           "cat": "transfer",
@@ -130961,7 +130972,7 @@ window.SLACK_DATA = {
           "req": "<https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1787376569559759?thread_ts=1787375992.645239&cid=C09HRUSG4TX|8/22(토) 당시 명의변경 ",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "• 명변 완료입니다 명변 완료입니다"
         },
         {
           "time": "17:44",
@@ -133311,11 +133322,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 183,
+        "online": 184,
         "offline": 34,
         "unknown": 0
       },
-      "updatedAt": "17:54",
+      "updatedAt": "18:00",
       "voc": {
         "responses": 12,
         "install": {
@@ -133775,15 +133786,19 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787648122.279
+        "lastSeen": 1787648421.301
       },
       "1787647500.986649": {
         "post": "1787647500.986649",
-        "lastSeen": 1787648122.279
+        "lastSeen": 1787648421.301
       },
-      "1787647926.087879": {
-        "post": "1787647926.087879",
-        "lastSeen": 1787648122.279
+      "1787648404.430249": {
+        "post": "1787648404.430249",
+        "lastSeen": 1787648421.301
+      },
+      "1787648403.131039": {
+        "post": "1787648403.131039",
+        "lastSeen": 1787648421.301
       }
     },
     "days": {
@@ -165313,7 +165328,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 17:55",
+    "at": "2026-08-25 18:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
