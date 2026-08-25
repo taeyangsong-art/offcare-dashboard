@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5182,
+  "version": 5183,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130891,7 +130891,7 @@ window.SLACK_DATA = {
           "김동욱": 6
         },
         "transfer": {
-          "송태양": 4,
+          "송태양": 5,
           "최민석": 1,
           "김동욱": 1,
           "김현기": 1
@@ -130951,6 +130951,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "쿠팡프로그램 멈춤 재실행 정상"
+        },
+        {
+          "time": "17:48",
+          "store": "리에또",
+          "biz": "1970402708",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "<https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1787376569559759?thread_ts=1787375992.645239&cid=C09HRUSG4TX|8/22(토) 당시 명의변경 ",
+          "hw": "",
+          "intake": "online",
+          "note": ""
         },
         {
           "time": "17:44",
@@ -133300,7 +133311,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 182,
+        "online": 183,
         "offline": 34,
         "unknown": 0
       },
@@ -133764,15 +133775,15 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787648064.758
+        "lastSeen": 1787648122.279
       },
       "1787647500.986649": {
         "post": "1787647500.986649",
-        "lastSeen": 1787648064.758
+        "lastSeen": 1787648122.279
       },
       "1787647926.087879": {
         "post": "1787647926.087879",
-        "lastSeen": 1787648064.758
+        "lastSeen": 1787648122.279
       }
     },
     "days": {
@@ -165302,7 +165313,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 17:54",
+    "at": "2026-08-25 17:55",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
