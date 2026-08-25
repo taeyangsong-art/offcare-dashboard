@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5026,
+  "version": 5027,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130946,7 +130946,7 @@ window.SLACK_DATA = {
           "req": "주문서+배달영수증 프린터 출력이 안된다하여 점검부탁드립니다.",
           "hw": "",
           "intake": "offline",
-          "note": ""
+          "note": "PC + 프린터 연동 완료"
         },
         {
           "time": "12:29",
@@ -131660,7 +131660,7 @@ window.SLACK_DATA = {
         "offline": 14,
         "unknown": 0
       },
-      "updatedAt": "12:34",
+      "updatedAt": "12:44",
       "voc": {
         "responses": 3,
         "install": {
@@ -131804,11 +131804,11 @@ window.SLACK_DATA = {
       },
       "1787628603.892099": {
         "post": "1787628603.892099",
-        "lastSeen": 1787629464.049
+        "lastSeen": 1787629524.415
       },
       "1787628602.300949": {
         "post": "1787628602.300949",
-        "lastSeen": 1787629464.049
+        "lastSeen": 1787629524.415
       }
     },
     "days": {
@@ -162554,13 +162554,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 12:44",
+    "at": "2026-08-25 12:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3690,
+    "rows": 3691,
     "named": 384,
     "unknownName": 0,
     "beforeStart": 0,
