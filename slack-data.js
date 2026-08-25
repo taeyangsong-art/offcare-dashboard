@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5118,
+  "version": 5119,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130867,8 +130867,8 @@ window.SLACK_DATA = {
           "김현기": 14,
           "고경림": 25,
           "최민석": 3,
+          "배선유": 13,
           "심성현": 14,
-          "배선유": 12,
           "송태양": 6,
           "김동욱": 7,
           "김기범": 4,
@@ -131081,6 +131081,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "온보딩 사용 방법 전달 완료"
+        },
+        {
+          "time": "15:15",
+          "store": "밀라이스",
+          "biz": "1380221793",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "포스기가 하루에 한번씩 먹통이되어 점검요청 (오케이포스프로그램 사용매장 )",
+          "hw": "",
+          "intake": "offline",
+          "note": "상호: 착한통닭 / KIS 사업자번호: 8805400786 핸드폰 번호: 01053565890 / 갤럭시 주소: 경기도 성남시 중원구 성남대로1139번길 6 (성남동) 1층 2호 인입유형: 오프라인 공급유형: 임대 배달제휴: 자대리점: N 내용: 오케이 포스 프로그램 사용 중 / 결제 전과 후 프로그램 멈춤 현상 발생 / 프로그램 껐다 키면 그 때 결제가 "
         },
         {
           "time": "15:13",
@@ -132634,10 +132645,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 131,
-        "offline": 25,
+        "offline": 26,
         "unknown": 0
       },
-      "updatedAt": "15:50",
+      "updatedAt": "15:52",
       "voc": {
         "responses": 8,
         "install": {
@@ -132789,9 +132800,9 @@ window.SLACK_DATA = {
         ]
       },
       "ob": {
-        "count": 24,
+        "count": 25,
         "byEmp": {
-          "김규빈": 24
+          "김규빈": 25
         },
         "items": [
           {
@@ -132801,6 +132812,14 @@ window.SLACK_DATA = {
             "recvDate": "2026-08-25",
             "planDate": "2026-08-27",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787288011496989"
+          },
+          {
+            "key": "2026년 8월 25일 오후 1:20:27|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787621698761069#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-25",
+            "planDate": "2026-08-27",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787621698761069"
           },
           {
             "key": "2026년 8월 25일 오후 1:16:34|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786496170572619#1",
@@ -133022,15 +133041,19 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787640684.082
+        "lastSeen": 1787640749.884
       },
       "1787638250.100349": {
         "post": "1787638250.100349",
-        "lastSeen": 1787640684.082
+        "lastSeen": 1787640749.884
       },
       "1787640166.269889": {
         "post": "1787640166.269889",
-        "lastSeen": 1787640684.082
+        "lastSeen": 1787640749.884
+      },
+      "1787640720.232069": {
+        "post": "1787640720.232069",
+        "lastSeen": 1787640749.884
       }
     },
     "days": {
@@ -164288,19 +164311,19 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 15:51",
+    "at": "2026-08-25 15:52",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3702,
-    "named": 408,
+    "named": 409,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 408,
+    "done": 409,
     "byStatus": {
-      "일정등록완료": 253,
+      "일정등록완료": 254,
       "1차부재": 89,
       "점주직접접수": 36,
       "설치불가": 9,
