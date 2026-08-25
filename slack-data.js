@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4952,
+  "version": 4953,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130998,47 +130998,50 @@ window.SLACK_DATA = {
         "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "10:00",
+      "updatedAt": "10:03",
       "voc": {
-        "responses": 2,
+        "responses": 3,
         "install": {
-          "count": 2,
+          "count": 3,
           "low": 1
         },
         "nps": {
-          "count": 2,
+          "count": 3,
           "low": 1
         },
         "high": {
-          "install": 0,
+          "install": 1,
           "nps": 0
         },
         "npsDist": {
           "1": 1,
-          "8": 1
+          "8": 1,
+          "9": 1
         },
         "installDist": {
           "1": 1,
-          "4": 1
+          "4": 1,
+          "5": 1
         },
         "byIndustry": {
+          "카페": 1,
           "서비스[학원]": 1,
           "도소매": 1
         },
         "byTenure": {
           "구매설치": {
-            "total": 2,
+            "total": 3,
             "low": 1
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 2,
+            "low": 0
+          },
           "KCP": {
             "total": 1,
             "low": 1
-          },
-          "KOCES": {
-            "total": 1,
-            "low": 0
           }
         },
         "reasonCounts": {
@@ -131075,6 +131078,18 @@ window.SLACK_DATA = {
           }
         ],
         "praises": [
+          {
+            "time": "10:01",
+            "store": "메종그리즈",
+            "storeId": "579097",
+            "indBucket": "카페",
+            "emp": "",
+            "install": 5,
+            "nps": 9,
+            "text": "친절하게 응대해 주시고 설치가 안될시엔 연락하면 처리해 주는 시스템이여서 혼자 설치 할 수 있었음 편리해서",
+            "byReaction": false,
+            "doneDate": ""
+          },
           {
             "time": "01:00",
             "store": "꽃뜰리에 루원시티가정점",
@@ -131125,13 +131140,13 @@ window.SLACK_DATA = {
         "post": "1787589002.171429",
         "lastSeen": 1787611524.291
       },
-      "1787619438.728019": {
-        "post": "1787619438.728019",
-        "lastSeen": 1787619624.371
-      },
       "1787619605.682539": {
         "post": "1787619605.682539",
-        "lastSeen": 1787619624.371
+        "lastSeen": 1787619865.496
+      },
+      "1787619817.257619": {
+        "post": "1787619817.257619",
+        "lastSeen": 1787619865.496
       }
     },
     "days": {
@@ -161612,8 +161627,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-25": {
-        "cnt": 9,
-        "sumMin": 41.69093765815099,
+        "cnt": 10,
+        "sumMin": 46.79436234235764,
         "over": 0,
         "items": [
           {
@@ -161687,13 +161702,21 @@ window.SLACK_DATA = {
             "biz": "5455800784",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "09:57",
+            "min": 5.1,
+            "store": "박승광 해물손칼국수 검단신도시직영점",
+            "biz": "5335101097",
+            "who": "김동욱",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-25 10:00",
+    "at": "2026-08-25 10:04",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
