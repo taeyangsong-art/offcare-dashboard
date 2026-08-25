@@ -2,55 +2,25 @@
  * 회사 구글 캘린더(iCal) 동기화 데이터 — gcal-sync 워크플로가 자동 생성/갱신합니다.
  */
 window.GCAL_DATA = {
-  "version": 473,
-  "updatedAt": "2026-08-25 20:32",
+  "version": 474,
+  "updatedAt": "2026-08-25 21:54",
   "days": {
-    "2026-08-06": [
+    "2026-08-13": [
       {
         "title": "OCTeam 정기회의",
         "time": "09:30~10:30",
         "allDay": false
       }
     ],
-    "2026-08-14": [
+    "2026-07-30": [
       {
-        "title": "iShopCARE Town Hall Meeting",
-        "time": "09:30~11:00",
+        "title": "OCTeam 정기회의",
+        "time": "09:30~10:30",
         "allDay": false
-      }
-    ],
-    "2026-09-11": [
+      },
       {
-        "title": "iShopCARE Town Hall Meeting",
-        "time": "09:30~11:00",
-        "allDay": false
-      }
-    ],
-    "2026-10-09": [
-      {
-        "title": "iShopCARE Town Hall Meeting",
-        "time": "09:30~11:00",
-        "allDay": false
-      }
-    ],
-    "2026-11-13": [
-      {
-        "title": "iShopCARE Town Hall Meeting",
-        "time": "09:30~11:00",
-        "allDay": false
-      }
-    ],
-    "2026-12-11": [
-      {
-        "title": "iShopCARE Town Hall Meeting",
-        "time": "09:30~11:00",
-        "allDay": false
-      }
-    ],
-    "2027-01-08": [
-      {
-        "title": "iShopCARE Town Hall Meeting",
-        "time": "09:30~11:00",
+        "title": "원격파트 정기회의",
+        "time": "18:00~19:30",
         "allDay": false
       }
     ],
@@ -215,22 +185,52 @@ window.GCAL_DATA = {
         "allDay": false
       }
     ],
-    "2026-08-13": [
+    "2026-08-06": [
       {
         "title": "OCTeam 정기회의",
         "time": "09:30~10:30",
         "allDay": false
       }
     ],
-    "2026-07-30": [
+    "2026-08-14": [
       {
-        "title": "OCTeam 정기회의",
-        "time": "09:30~10:30",
+        "title": "iShopCARE Town Hall Meeting",
+        "time": "09:30~11:00",
         "allDay": false
-      },
+      }
+    ],
+    "2026-09-11": [
       {
-        "title": "원격파트 정기회의",
-        "time": "18:00~19:30",
+        "title": "iShopCARE Town Hall Meeting",
+        "time": "09:30~11:00",
+        "allDay": false
+      }
+    ],
+    "2026-10-09": [
+      {
+        "title": "iShopCARE Town Hall Meeting",
+        "time": "09:30~11:00",
+        "allDay": false
+      }
+    ],
+    "2026-11-13": [
+      {
+        "title": "iShopCARE Town Hall Meeting",
+        "time": "09:30~11:00",
+        "allDay": false
+      }
+    ],
+    "2026-12-11": [
+      {
+        "title": "iShopCARE Town Hall Meeting",
+        "time": "09:30~11:00",
+        "allDay": false
+      }
+    ],
+    "2027-01-08": [
+      {
+        "title": "iShopCARE Town Hall Meeting",
+        "time": "09:30~11:00",
         "allDay": false
       }
     ]
