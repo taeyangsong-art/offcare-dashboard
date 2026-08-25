@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 978,
- "updatedAt": "2026-08-25 17:21",
+ "version": 979,
+ "updatedAt": "2026-08-25 17:24",
  "days": 30,
  "items": [
   {
@@ -18,14 +18,33 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BSF6RRRML",
+     "from": "댓글",
+     "path": "menu-files/1787646076_017079-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "메뉴",
+       "name": "무뼈불닭발+콘치즈",
+       "price": 29000
+      }
+     ]
+    }
+   ],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787646078.856739",
+   "replies": [
+    "이건되어잇음",
+    "카스무알콜은 일단 없으니깐 5500원 유지",
+    "솔완"
+   ],
+   "rc": 4,
+   "lr": "1787646247.354149",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787646076017079"
   },
   {
