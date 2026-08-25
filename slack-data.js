@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5012,
+  "version": 5013,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,13 +130863,13 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
+          "심성현": 5,
           "김규빈": 6,
+          "송태양": 2,
           "배선유": 8,
-          "심성현": 4,
           "김현기": 6,
           "고경림": 9,
           "김동욱": 3,
-          "송태양": 1,
           "서상원": 1
         },
         "extern": {
@@ -130891,6 +130891,17 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "11:12",
+          "store": "미친피자 김포장기점",
+          "biz": "5964001239",
+          "handler": "김현기",
+          "cat": "as",
+          "intake": "offline",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
           "time": "09:24",
           "store": "제니 앤 김밥",
           "biz": "6281103306",
@@ -130904,6 +130915,17 @@ window.SLACK_DATA = {
       ],
       "done": [
         {
+          "time": "12:05",
+          "store": "에브리도넛(EVERY DONUT)",
+          "biz": "7681102207",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포스기 사용 중인 매장으로 포스기 실행 시 토스포스 앱 실행이 되지 않는다고 하셔서 확인 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "지우고 다시깔아도 동일하다고 합니다 지우고 다시깔아도 동일하다고 합니다"
+        },
+        {
           "time": "12:04",
           "store": "큰별",
           "biz": "2262898060",
@@ -130913,6 +130935,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "기존에 노트북 프론트 터미널로 사용해서 쓰고 있는데 터미널 - 프론트로 바꾸실에 노트북으로 사용이 안된다고 하엿으나 위부분에 대한 안내가 없으신걸로 고객센터 인입 예정"
+        },
+        {
+          "time": "12:04",
+          "store": "이디야커피랩",
+          "biz": "1078616302",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "유선프린터기 출력 안된다고 하심 / 케이블 문제라고 파악 하신 것 같은데 원격 점검 요청 드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "• 어뎁터 불량으로 어뎁터 교체 후 정상 부팅 출력 어뎁터 불량으로 어뎁터 교체 후 정상 부팅 출력"
         },
         {
           "time": "11:42",
@@ -131523,8 +131556,8 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 47,
-        "offline": 10,
+        "online": 48,
+        "offline": 12,
         "unknown": 0
       },
       "updatedAt": "12:05",
@@ -162405,7 +162438,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 12:10",
+    "at": "2026-08-25 12:13",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
