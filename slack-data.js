@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5086,
+  "version": 5087,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130866,7 +130866,7 @@ window.SLACK_DATA = {
           "김현기": 11,
           "송태양": 6,
           "김동욱": 6,
-          "심성현": 11,
+          "심성현": 12,
           "고경림": 19,
           "김기범": 4,
           "서상원": 4,
@@ -130916,17 +130916,6 @@ window.SLACK_DATA = {
           "handler": "김현기",
           "cat": "as",
           "intake": "offline",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "09:24",
-          "store": "제니 앤 김밥",
-          "biz": "6281103306",
-          "handler": "심성현",
-          "cat": "as",
-          "intake": "online",
           "reasons": [
             "확인 후 미완료"
           ]
@@ -132249,6 +132238,18 @@ window.SLACK_DATA = {
           "note": "키오스크 프로그램이 멈출시 재부팅하면 정상작동 한다고함 원격으로 확인시 문제될부분이 없어 , 우선 키오스크 프로그램 재설치 도와드렸습니다. 추후 동일문제 발생시 재인입 요청"
         },
         {
+          "time": "09:24",
+          "store": "제니 앤 김밥",
+          "biz": "6281103306",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포스기 전원꺼짐 현상으로 교체 받았는데 동일증상 또 확인되어 기기 점검 요청드립니다!",
+          "hw": "잘 모르겠다고 하심(아이폰 추정)",
+          "urgent": true,
+          "intake": "online",
+          "note": "윈도우 실행 중 복구 중 화면에서 멈춤 증상 주장 매장 가는 중 10분 뒤 통화 요청 / 01030708253 / /"
+        },
+        {
           "time": "09:22",
           "store": "샐러드타임",
           "biz": "8854001099",
@@ -132309,7 +132310,7 @@ window.SLACK_DATA = {
         "offline": 19,
         "unknown": 0
       },
-      "updatedAt": "14:52",
+      "updatedAt": "14:58",
       "voc": {
         "responses": 3,
         "install": {
@@ -132561,11 +132562,11 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787637382.831
+        "lastSeen": 1787637562.989
       },
       "1787636447.744369": {
         "post": "1787636447.744369",
-        "lastSeen": 1787637382.831
+        "lastSeen": 1787637562.989
       }
     },
     "days": {
@@ -163655,7 +163656,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 14:56",
+    "at": "2026-08-25 14:59",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
