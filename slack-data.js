@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4944,
+  "version": 4945,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130888,7 +130888,19 @@ window.SLACK_DATA = {
           "배선유": 1
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "08:45",
+          "store": "기댈빙 -&gt; 주식회사 밀크앤허니컴퍼니 (명변 건)",
+          "biz": "8068703764",
+          "handler": "송태양",
+          "cat": "transfer",
+          "intake": "online",
+          "reasons": [
+            "1차 부재"
+          ]
+        }
+      ],
       "done": [
         {
           "time": "09:25",
@@ -130958,11 +130970,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 4,
+        "online": 5,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:40",
+      "updatedAt": "09:45",
       "voc": {
         "responses": 2,
         "install": {
@@ -131091,7 +131103,19 @@ window.SLACK_DATA = {
       },
       "1787617801.032249": {
         "post": "1787617801.032249",
-        "lastSeen": 1787618481.918
+        "lastSeen": 1787618724.654
+      },
+      "1787618701.022839": {
+        "post": "1787618701.022839",
+        "lastSeen": 1787618724.654
+      },
+      "1787618700.814909": {
+        "post": "1787618700.814909",
+        "lastSeen": 1787618724.654
+      },
+      "1787618700.526339": {
+        "post": "1787618700.526339",
+        "lastSeen": 1787618724.654
       }
     },
     "days": {
@@ -161621,7 +161645,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 09:41",
+    "at": "2026-08-25 09:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
