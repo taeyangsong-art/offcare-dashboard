@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 940,
- "updatedAt": "2026-08-25 10:44",
+ "version": 941,
+ "updatedAt": "2026-08-25 11:18",
  "days": 30,
  "items": [
+  {
+   "ts": "1787624241.018419",
+   "date": "2026-08-25",
+   "time": "11:17",
+   "store": "오! 찰도그",
+   "biz": "5678100900",
+   "pos": "",
+   "content": "사진 등록 요청 드립니다!",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "오! 찰도그 수내점(<tel:···|···>)에 있는 메뉴 사진을 해당 매장으로 그대로 복사 원하십니다! :감사콩:"
+   ],
+   "rc": 3,
+   "lr": "1787624304.572769",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787624241018419"
+  },
   {
    "ts": "1787621764.744339",
    "date": "2026-08-25",

@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4986,
+  "version": 4987,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,22 +130863,22 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "extern": {
-          "김동욱": 4,
+          "김동욱": 5,
           "서상원": 1
         },
+        "onboarding": {
+          "송태양": 2,
+          "김현기": 1
+        },
         "as": {
+          "고경림": 7,
           "송태양": 1,
           "김규빈": 5,
           "배선유": 6,
           "김현기": 4,
-          "고경림": 6,
           "서상원": 1,
           "김동욱": 2,
           "심성현": 2
-        },
-        "onboarding": {
-          "송태양": 1,
-          "김현기": 1
         },
         "transfer": {
           "김현기": 1,
@@ -130903,6 +130903,39 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "11:14",
+          "store": "오찰도그 함박산점",
+          "biz": "3232802088",
+          "cat": "extern",
+          "emp": "김동욱",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "11:09",
+          "store": "WPtune",
+          "biz": "7321400104",
+          "cat": "onboarding",
+          "emp": "송태양",
+          "req": "포프(휴대폰/갤) / 신규 온보딩 요청드립니다 / 금액입력모드 설정",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료입니다"
+        },
+        {
+          "time": "11:04",
+          "store": "돌판장 주식회사",
+          "biz": "5608700293",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "결제 후 영수증 나오는 속도가 너무 느리다 하셔서 확인 부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "설정에는 문제가없어, brd 케이블 재연결후 정상출력확인 추후 동일증상 발생시 케이블 교체필요"
+        },
         {
           "time": "11:03",
           "store": "그여행 두호점",
@@ -131347,11 +131380,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 35,
-        "offline": 6,
+        "online": 37,
+        "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "11:15",
+      "updatedAt": "11:17",
       "voc": {
         "responses": 3,
         "install": {
@@ -131495,11 +131528,7 @@ window.SLACK_DATA = {
       },
       "1787622300.806129": {
         "post": "1787622300.806129",
-        "lastSeen": 1787624122.114
-      },
-      "1787624101.122309": {
-        "post": "1787624101.122309",
-        "lastSeen": 1787624122.114
+        "lastSeen": 1787624302.078
       }
     },
     "days": {
@@ -161980,8 +162009,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-25": {
-        "cnt": 23,
-        "sumMin": 111.66804739634195,
+        "cnt": 24,
+        "sumMin": 113.51760891675949,
         "over": 0,
         "items": [
           {
@@ -162167,13 +162196,21 @@ window.SLACK_DATA = {
             "biz": "5964001239",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "11:15",
+            "min": 1.8,
+            "store": "댓아카데미",
+            "biz": "5395700797",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-25 11:15",
+    "at": "2026-08-25 11:18",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
