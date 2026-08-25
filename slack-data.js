@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5255,
+  "version": 5256,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130862,6 +130862,16 @@ window.SLACK_DATA = {
     },
     "2026-08-25": {
       "counts": {
+        "onboarding": {
+          "최민석": 7,
+          "김현기": 3,
+          "김동욱": 3,
+          "고경림": 3,
+          "심성현": 8,
+          "서상원": 6,
+          "배선유": 4,
+          "송태양": 5
+        },
         "as": {
           "최민석": 22,
           "김규빈": 14,
@@ -130873,16 +130883,6 @@ window.SLACK_DATA = {
           "김동욱": 14,
           "서상원": 8,
           "김기범": 5
-        },
-        "onboarding": {
-          "최민석": 6,
-          "김현기": 3,
-          "김동욱": 3,
-          "고경림": 3,
-          "심성현": 8,
-          "서상원": 6,
-          "배선유": 4,
-          "송태양": 5
         },
         "extern": {
           "서상원": 4,
@@ -130932,6 +130932,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "23:48",
+          "store": "주식회사 이랑아트스페이스(Erang Art Space)",
+          "biz": "7128702572",
+          "cat": "onboarding",
+          "emp": "최민석",
+          "req": "• 포프 온보딩 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "플러그인 사용중이 아닌 매장인데 플러그인이 켜져있어 공장초기화 후 재온보딩 완료 기존 포프 사용중인 매장으로 키오스크만 이용하신다고 하시여 연결없이 키오스크 사용 온보딩 완료 키오스크 설정 방법 안내 완료"
+        },
         {
           "time": "23:26",
           "store": "치킨신드롬 봉명자이점",
@@ -133678,7 +133689,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 213,
+        "online": 214,
         "offline": 37,
         "unknown": 0
       },
@@ -165867,7 +165878,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 00:00",
+    "at": "2026-08-26 00:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
