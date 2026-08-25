@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5017,
+  "version": 5018,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130864,7 +130864,7 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김규빈": 7,
-          "심성현": 5,
+          "심성현": 6,
           "송태양": 2,
           "배선유": 8,
           "김현기": 6,
@@ -130957,6 +130957,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "• 어뎁터 불량으로 어뎁터 교체 후 정상 부팅 출력 어뎁터 불량으로 어뎁터 교체 후 정상 부팅 출력"
+        },
+        {
+          "time": "11:51",
+          "store": "얼큰칼국수",
+          "biz": "5240701746",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "금일 방문설치 진행 되었으나, 배달앱 연동이 되지 않아 연동 요청드립니다. (배민, 요기요, 쿠팡이츠)",
+          "hw": "",
+          "intake": "online",
+          "note": "배달 프로그램 ID/PW 분실 확인 후 재연락 / 배달 3사 설치 및 출력 테스트 완료"
         },
         {
           "time": "11:42",
@@ -131567,11 +131578,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 49,
+        "online": 50,
         "offline": 12,
         "unknown": 0
       },
-      "updatedAt": "12:24",
+      "updatedAt": "12:27",
       "voc": {
         "responses": 3,
         "install": {
@@ -131712,6 +131723,10 @@ window.SLACK_DATA = {
       "1787589002.171429": {
         "post": "1787589002.171429",
         "lastSeen": 1787611524.291
+      },
+      "1787628471.151719": {
+        "post": "1787628471.151719",
+        "lastSeen": 1787628504.72
       }
     },
     "days": {
@@ -162449,7 +162464,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 12:26",
+    "at": "2026-08-25 12:28",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

@@ -3,10 +3,220 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 947,
- "updatedAt": "2026-08-25 11:39",
+ "version": 948,
+ "updatedAt": "2026-08-25 12:28",
  "days": 30,
  "items": [
+  {
+   "ts": "1787628471.151719",
+   "date": "2026-08-25",
+   "time": "12:27",
+   "store": "99공방카페",
+   "biz": "6963101819",
+   "pos": "토스포스",
+   "content": "전체",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1MrIMIeTTrhSAvy3XgDytx6mO8Q4C0ElT/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1MrIMIeTTrhSAvy3XgDytx6mO8Q4C0ElT",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "Espresso",
+       "name": "에스프레소",
+       "price": 2500
+      },
+      {
+       "category": "Espresso",
+       "name": "아메리카노",
+       "price": 3000
+      },
+      {
+       "category": "Espresso",
+       "name": "핸드드립커피",
+       "price": 5000
+      },
+      {
+       "category": "Espresso",
+       "name": "셀프드립커피",
+       "price": 3000
+      },
+      {
+       "category": "Latte",
+       "name": "카페 라떼",
+       "price": 4500
+      },
+      {
+       "category": "Latte",
+       "name": "바닐라 라떼",
+       "price": 4500
+      },
+      {
+       "category": "Latte",
+       "name": "헤이즐넛라떼",
+       "price": 4500
+      },
+      {
+       "category": "Latte",
+       "name": "카라멜 라떼",
+       "price": 4500
+      },
+      {
+       "category": "Latte",
+       "name": "초코라떼",
+       "price": 4000
+      },
+      {
+       "category": "Latte",
+       "name": "녹차라떼",
+       "price": 4000
+      },
+      {
+       "category": "Latte",
+       "name": "오곡라떼",
+       "price": 4000
+      },
+      {
+       "category": "Tea",
+       "name": "캐모마일",
+       "price": 4000
+      },
+      {
+       "category": "Tea",
+       "name": "페퍼민트",
+       "price": 4000
+      },
+      {
+       "category": "Tea",
+       "name": "루이보스",
+       "price": 4000
+      },
+      {
+       "category": "Tea",
+       "name": "얼그레이",
+       "price": 4000
+      },
+      {
+       "category": "과일차",
+       "name": "수제 레몬차",
+       "price": 4500
+      },
+      {
+       "category": "과일차",
+       "name": "수제 자몽차",
+       "price": 4500
+      },
+      {
+       "category": "과일차",
+       "name": "수제 유자차",
+       "price": 4500
+      },
+      {
+       "category": "과일차",
+       "name": "수제 생강차",
+       "price": 4500
+      },
+      {
+       "category": "Juice&Ade",
+       "name": "복숭아아이스티",
+       "price": 3000
+      },
+      {
+       "category": "과일쥬스",
+       "name": "수박",
+       "price": 6000
+      },
+      {
+       "category": "과일쥬스",
+       "name": "딸기",
+       "price": 6000
+      },
+      {
+       "category": "과일쥬스",
+       "name": "망고",
+       "price": 6000
+      },
+      {
+       "category": "과일쥬스",
+       "name": "키위",
+       "price": 6000
+      },
+      {
+       "category": "과일쥬스",
+       "name": "토마토",
+       "price": 6000
+      },
+      {
+       "category": "에이드",
+       "name": "자몽",
+       "price": 4000
+      },
+      {
+       "category": "에이드",
+       "name": "청포토",
+       "price": 4000
+      },
+      {
+       "category": "에이드",
+       "name": "레몬",
+       "price": 4000
+      },
+      {
+       "category": "스무디",
+       "name": "딸기",
+       "price": 5000
+      },
+      {
+       "category": "스무디",
+       "name": "망고",
+       "price": 5000
+      },
+      {
+       "category": "스무디",
+       "name": "블루베리",
+       "price": 5000
+      },
+      {
+       "category": "Desert",
+       "name": "머핀",
+       "price": 0
+      },
+      {
+       "category": "Desert",
+       "name": "치즈",
+       "price": 5000
+      },
+      {
+       "category": "Desert",
+       "name": "블루베리 초코",
+       "price": 5000
+      },
+      {
+       "category": "Desert",
+       "name": "조각케익",
+       "price": 5000
+      },
+      {
+       "category": "Desert",
+       "name": "베이글",
+       "price": 5000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787628477.311259",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787628471151719"
+  },
   {
    "ts": "1787624241.018419",
    "date": "2026-08-25",
