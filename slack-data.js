@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5003,
+  "version": 5004,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -131649,11 +131649,7 @@ window.SLACK_DATA = {
       },
       "1787625753.953969": {
         "post": "1787625753.953969",
-        "lastSeen": 1787626342.476
-      },
-      "1787626275.200929": {
-        "post": "1787626275.200929",
-        "lastSeen": 1787626342.476
+        "lastSeen": 1787626404.195
       }
     },
     "days": {
@@ -162134,8 +162130,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-25": {
-        "cnt": 29,
-        "sumMin": 123.1424073298772,
+        "cnt": 30,
+        "sumMin": 124.77798351446786,
         "over": 0,
         "items": [
           {
@@ -162369,13 +162365,21 @@ window.SLACK_DATA = {
             "biz": "6383701436",
             "who": "서상원",
             "cat": "as"
+          },
+          {
+            "hm": "11:51",
+            "min": 1.6,
+            "store": "얼큰칼국수",
+            "biz": "5240701746",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-25 11:52",
+    "at": "2026-08-25 11:53",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
