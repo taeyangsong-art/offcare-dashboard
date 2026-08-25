@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5025,
+  "version": 5026,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130862,19 +130862,20 @@ window.SLACK_DATA = {
     },
     "2026-08-25": {
       "counts": {
+        "extern": {
+          "김현기": 1,
+          "서상원": 3,
+          "김동욱": 5
+        },
         "as": {
-          "김현기": 8,
           "김규빈": 8,
           "심성현": 7,
           "송태양": 3,
+          "김현기": 7,
           "배선유": 8,
           "고경림": 9,
           "김동욱": 3,
           "서상원": 1
-        },
-        "extern": {
-          "서상원": 3,
-          "김동욱": 5
         },
         "onboarding": {
           "송태양": 2,
@@ -130918,7 +130919,7 @@ window.SLACK_DATA = {
           "time": "12:34",
           "store": "탑(TOP)송산센터학원",
           "biz": "8359601524",
-          "cat": "as",
+          "cat": "extern",
           "emp": "김현기",
           "req": "외주사",
           "hw": "",
@@ -131803,11 +131804,11 @@ window.SLACK_DATA = {
       },
       "1787628603.892099": {
         "post": "1787628603.892099",
-        "lastSeen": 1787629400.168
+        "lastSeen": 1787629464.049
       },
       "1787628602.300949": {
         "post": "1787628602.300949",
-        "lastSeen": 1787629400.168
+        "lastSeen": 1787629464.049
       }
     },
     "days": {
@@ -162553,7 +162554,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 12:43",
+    "at": "2026-08-25 12:44",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
