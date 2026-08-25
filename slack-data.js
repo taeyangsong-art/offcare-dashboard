@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5155,
+  "version": 5156,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130864,8 +130864,8 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "배선유": 16,
-          "김동욱": 12,
-          "김현기": 17,
+          "김현기": 18,
+          "김동욱": 13,
           "송태양": 9,
           "심성현": 18,
           "최민석": 7,
@@ -130951,6 +130951,28 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "통화중 자체해결"
+        },
+        {
+          "time": "16:46",
+          "store": "주식회사 국민귀금속거래소",
+          "biz": "7958101727",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "프론트 결제시 IC 칩 인식이 안되어 점검부탁드립니다!",
+          "hw": "",
+          "intake": "offline",
+          "note": "금거래단말기 느낌 / 1544-3850 / 금거래 단말기 kpn 전화 안내 / 금거래 단말기 맞음"
+        },
+        {
+          "time": "16:46",
+          "store": "오에이 스튜디오",
+          "biz": "",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "8월 25일 오후 5시 / 메뉴 복사 O / 프론트",
+          "hw": "",
+          "intake": "online",
+          "note": "매장에 없어 6시 30분 통화요청. 예약메시지 진행"
         },
         {
           "time": "16:45",
@@ -133046,8 +133068,8 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 163,
-        "offline": 30,
+        "online": 164,
+        "offline": 31,
         "unknown": 0
       },
       "updatedAt": "16:51",
@@ -133487,11 +133509,11 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787644516.563
+        "lastSeen": 1787644582.415
       },
       "1787643045.119009": {
         "post": "1787643045.119009",
-        "lastSeen": 1787644516.563
+        "lastSeen": 1787644582.415
       }
     },
     "days": {
@@ -164941,7 +164963,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 16:55",
+    "at": "2026-08-25 16:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
