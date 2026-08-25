@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5179,
+  "version": 5180,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,9 +130863,9 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
+          "심성현": 21,
           "김규빈": 9,
           "고경림": 29,
-          "심성현": 20,
           "배선유": 18,
           "김동욱": 14,
           "김현기": 18,
@@ -130941,6 +130941,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "17:44",
+          "store": "이엠커피(EMCOFFEE)부산남포점",
+          "biz": "6624101339",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "키오스크 결제가 안된다 하셔서 (멀티패드에 아무 반응 없음) 점검 부탁드립니다. 금일 로그아웃 돼서 재로그인한 이력 있고 이거때문에 안되는건지 문의 주셨습니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "멀티 패드 터치 보정 창 진입 상태 / 리더기 다시 잡고 정상"
+        },
         {
           "time": "17:36",
           "store": "강창구찹쌀진순대(김포한강점)",
@@ -133279,10 +133290,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 182,
-        "offline": 32,
+        "offline": 33,
         "unknown": 0
       },
-      "updatedAt": "17:49",
+      "updatedAt": "17:52",
       "voc": {
         "responses": 12,
         "install": {
@@ -133742,11 +133753,15 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787647859.563
+        "lastSeen": 1787647938.805
       },
       "1787647500.986649": {
         "post": "1787647500.986649",
-        "lastSeen": 1787647859.563
+        "lastSeen": 1787647938.805
+      },
+      "1787647926.087879": {
+        "post": "1787647926.087879",
+        "lastSeen": 1787647938.805
       }
     },
     "days": {
@@ -165276,7 +165291,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 17:51",
+    "at": "2026-08-25 17:52",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
