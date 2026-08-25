@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4973,
+  "version": 4974,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130862,6 +130862,9 @@ window.SLACK_DATA = {
     },
     "2026-08-25": {
       "counts": {
+        "extern": {
+          "김동욱": 3
+        },
         "as": {
           "배선유": 5,
           "김현기": 3,
@@ -130870,9 +130873,6 @@ window.SLACK_DATA = {
           "서상원": 1,
           "김동욱": 2,
           "심성현": 2
-        },
-        "extern": {
-          "김동욱": 2
         },
         "onboarding": {
           "김현기": 1
@@ -130900,6 +130900,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "10:54",
+          "store": "99공방카페",
+          "biz": "6963101819",
+          "cat": "extern",
+          "emp": "김동욱",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "10:48",
           "store": "모던파스타",
@@ -131245,7 +131256,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 28,
+        "online": 29,
         "offline": 4,
         "unknown": 0
       },
@@ -131393,7 +131404,7 @@ window.SLACK_DATA = {
       },
       "1787622300.806129": {
         "post": "1787622300.806129",
-        "lastSeen": 1787622925.252
+        "lastSeen": 1787622981.63
       }
     },
     "days": {
@@ -162011,7 +162022,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 10:55",
+    "at": "2026-08-25 10:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
