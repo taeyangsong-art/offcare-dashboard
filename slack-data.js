@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5008,
+  "version": 5009,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -131649,11 +131649,7 @@ window.SLACK_DATA = {
       },
       "1787625753.953969": {
         "post": "1787625753.953969",
-        "lastSeen": 1787627123.162
-      },
-      "1787627107.285519": {
-        "post": "1787627107.285519",
-        "lastSeen": 1787627123.162
+        "lastSeen": 1787627182.039
       }
     },
     "days": {
@@ -162134,8 +162130,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-25": {
-        "cnt": 30,
-        "sumMin": 124.77798351446786,
+        "cnt": 31,
+        "sumMin": 125.53323320150375,
         "over": 0,
         "items": [
           {
@@ -162377,13 +162373,21 @@ window.SLACK_DATA = {
             "biz": "5240701746",
             "who": "심성현",
             "cat": "as"
+          },
+          {
+            "hm": "12:05",
+            "min": 0.8,
+            "store": "에브리도넛(EVERY DONUT)",
+            "biz": "7681102207",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-25 12:05",
+    "at": "2026-08-25 12:06",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
