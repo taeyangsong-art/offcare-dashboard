@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4971,
+  "version": 4972,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130862,17 +130862,17 @@ window.SLACK_DATA = {
     },
     "2026-08-25": {
       "counts": {
-        "extern": {
-          "김동욱": 2
-        },
         "as": {
+          "김현기": 3,
           "김규빈": 4,
           "고경림": 4,
           "서상원": 1,
           "김동욱": 2,
           "심성현": 1,
-          "김현기": 1,
           "배선유": 4
+        },
+        "extern": {
+          "김동욱": 2
         },
         "onboarding": {
           "김현기": 1
@@ -130887,17 +130887,6 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
-        {
-          "time": "09:45",
-          "store": "파머드림",
-          "biz": "5455800784",
-          "handler": "김현기",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
         {
           "time": "09:30",
           "store": "더샵키친컴퍼니",
@@ -130922,6 +130911,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "10:45",
+          "store": "소프씨",
+          "biz": "2408703474",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "• 아이패드/앱포스 연결 관련 안내 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "자체해결완료"
+        },
         {
           "time": "10:36",
           "store": "피플스클럽 아오리의행방불명춘천석사점",
@@ -131069,6 +131069,17 @@ window.SLACK_DATA = {
         },
         {
           "time": "09:45",
+          "store": "파머드림",
+          "biz": "5455800784",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "핸드폰 + 프론트 온보딩",
+          "hw": "",
+          "intake": "online",
+          "note": "9월 중순 셀프로 해보겠음"
+        },
+        {
+          "time": "09:45",
           "store": "카페 아일랜드",
           "biz": "1610702748",
           "cat": "as",
@@ -131212,7 +131223,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 25,
+        "online": 26,
         "offline": 4,
         "unknown": 0
       },
@@ -131360,7 +131371,7 @@ window.SLACK_DATA = {
       },
       "1787622300.806129": {
         "post": "1787622300.806129",
-        "lastSeen": 1787622564.859
+        "lastSeen": 1787622621.602
       }
     },
     "days": {
@@ -161978,7 +161989,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 10:49",
+    "at": "2026-08-25 10:50",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
