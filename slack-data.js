@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5145,
+  "version": 5146,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130879,7 +130879,7 @@ window.SLACK_DATA = {
           "김동욱": 11,
           "고경림": 26,
           "심성현": 17,
-          "배선유": 14,
+          "배선유": 15,
           "송태양": 8,
           "김기범": 5,
           "김규빈": 8
@@ -130915,17 +130915,6 @@ window.SLACK_DATA = {
           "intake": "online",
           "reasons": [
             "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "15:00",
-          "store": "제이팬트리(JeleePantry)",
-          "biz": "4829701778",
-          "handler": "배선유",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "1차 부재"
           ]
         },
         {
@@ -131494,6 +131483,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "kicc요청 및 대리점에서 메일요청으로 신청 후 23일 소요 안내받아 점주님 전달 대기중 5시 재연락 요청"
+        },
+        {
+          "time": "15:00",
+          "store": "제이팬트리(JeleePantry)",
+          "biz": "4829701778",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "포프(휴대폰) 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "1차부재 / 2차부재, :통화중: 2차부재,"
         },
         {
           "time": "14:58",
@@ -132973,7 +132973,7 @@ window.SLACK_DATA = {
         "offline": 29,
         "unknown": 0
       },
-      "updatedAt": "16:34",
+      "updatedAt": "16:39",
       "voc": {
         "responses": 9,
         "install": {
@@ -133410,15 +133410,19 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787643499.707
+        "lastSeen": 1787643624.584
       },
       "1787643002.437919": {
         "post": "1787643002.437919",
-        "lastSeen": 1787643499.707
+        "lastSeen": 1787643624.584
       },
       "1787643045.119009": {
         "post": "1787643045.119009",
-        "lastSeen": 1787643499.707
+        "lastSeen": 1787643624.584
+      },
+      "1787643569.199669": {
+        "post": "1787643569.199669",
+        "lastSeen": 1787643624.584
       }
     },
     "days": {
@@ -164796,7 +164800,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 16:38",
+    "at": "2026-08-25 16:40",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
