@@ -3,10 +3,234 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 966,
- "updatedAt": "2026-08-25 15:52",
+ "version": 967,
+ "updatedAt": "2026-08-25 15:54",
  "days": 30,
  "items": [
+  {
+   "ts": "1787640801.679649",
+   "date": "2026-08-25",
+   "time": "15:53",
+   "store": "실바",
+   "biz": "4540703412",
+   "pos": "토스포스",
+   "content": "없음",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1TfSjVCvYhd5SDWz4VzTuA_eqeelIGkeQ/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1jjWaq2EdSIR4JXocD69VcIumHILz0Lv0/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1j9Tb4Nxc5rJs-jASkYl3NwG7-Gk5FedZ/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1TfSjVCvYhd5SDWz4VzTuA_eqeelIGkeQ",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "커피",
+       "name": "에스프레소",
+       "price": 2500
+      },
+      {
+       "category": "커피",
+       "name": "아메리카노",
+       "price": 4500
+      },
+      {
+       "category": "커피",
+       "name": "카페라떼",
+       "price": 5000
+      },
+      {
+       "category": "커피",
+       "name": "바닐라라떼",
+       "price": 5500
+      },
+      {
+       "category": "커피",
+       "name": "연유라떼",
+       "price": 5500
+      },
+      {
+       "category": "커피",
+       "name": "말차크림라떼",
+       "price": 6000
+      },
+      {
+       "category": "커피",
+       "name": "카페모카",
+       "price": 5500
+      },
+      {
+       "category": "커피",
+       "name": "아인슈페너",
+       "price": 6000
+      },
+      {
+       "category": "커피",
+       "name": "카라멜 마끼야또",
+       "price": 5500
+      }
+     ]
+    },
+    {
+     "id": "1jjWaq2EdSIR4JXocD69VcIumHILz0Lv0",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "LATTE",
+       "name": "초코라떼",
+       "price": 5500
+      },
+      {
+       "category": "LATTE",
+       "name": "말차라떼",
+       "price": 5500
+      },
+      {
+       "category": "LATTE",
+       "name": "딸기라떼",
+       "price": 5500
+      },
+      {
+       "category": "LATTE",
+       "name": "망고라떼",
+       "price": 5500
+      },
+      {
+       "category": "LATTE",
+       "name": "밀크티",
+       "price": 5500
+      },
+      {
+       "category": "LATTE",
+       "name": "고구마라떼",
+       "price": 5500
+      },
+      {
+       "category": "SHAKE",
+       "name": "바닐라 쉐이크",
+       "price": 6000
+      },
+      {
+       "category": "SHAKE",
+       "name": "망고 쉐이크",
+       "price": 6000
+      },
+      {
+       "category": "SHAKE",
+       "name": "딸기 쉐이크",
+       "price": 6000
+      }
+     ]
+    },
+    {
+     "id": "1j9Tb4Nxc5rJs-jASkYl3NwG7-Gk5FedZ",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "ADE",
+       "name": "딸기에이드",
+       "price": 5500
+      },
+      {
+       "category": "ADE",
+       "name": "망고에이드",
+       "price": 5500
+      },
+      {
+       "category": "ADE",
+       "name": "자몽에이드",
+       "price": 5500
+      },
+      {
+       "category": "ADE",
+       "name": "레몬에이드",
+       "price": 5500
+      },
+      {
+       "category": "ADE",
+       "name": "청포도에이드",
+       "price": 5500
+      },
+      {
+       "category": "과일차",
+       "name": "유자",
+       "price": 5000
+      },
+      {
+       "category": "과일차",
+       "name": "레몬",
+       "price": 5000
+      },
+      {
+       "category": "과일차",
+       "name": "오미자",
+       "price": 5000
+      },
+      {
+       "category": "과일차",
+       "name": "자몽",
+       "price": 5000
+      },
+      {
+       "category": "과일차",
+       "name": "자몽허니블랙티",
+       "price": 5000
+      },
+      {
+       "category": "TEA",
+       "name": "쌍화차",
+       "price": 5000
+      },
+      {
+       "category": "TEA",
+       "name": "대추차",
+       "price": 5000
+      },
+      {
+       "category": "TEA",
+       "name": "아이스티",
+       "price": 5000
+      },
+      {
+       "category": "TEA",
+       "name": "캐모마일",
+       "price": 5000
+      },
+      {
+       "category": "TEA",
+       "name": "페퍼민트",
+       "price": 5000
+      },
+      {
+       "category": "TEA",
+       "name": "얼그레이",
+       "price": 5000
+      },
+      {
+       "category": "TEA",
+       "name": "루이보스",
+       "price": 5000
+      },
+      {
+       "category": "TEA",
+       "name": "히비스커스",
+       "price": 5000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787640804.989549",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787640801679649"
+  },
   {
    "ts": "1787640720.232069",
    "date": "2026-08-25",
@@ -20,9 +244,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787640728.011639",
+   "replies": [
+    "1. 청도 9000원(식권 회수 바로 위에 빈 칸에 넣어달라 하십니다)\n2. 식권 9000원(청도 추가한 거 옆쪽에)"
+   ],
+   "rc": 2,
+   "lr": "1787640766.591739",
    "rfx": 3,
    "status": "wait",
    "handler": null,
