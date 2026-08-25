@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4961,
+  "version": 4962,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,7 +130863,7 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
-          "김규빈": 2,
+          "김규빈": 3,
           "서상원": 1,
           "고경림": 3,
           "김현기": 1,
@@ -130881,8 +130881,31 @@ window.SLACK_DATA = {
           "배선유": 2
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "09:24",
+          "store": "제니 앤 김밥",
+          "biz": "6281103306",
+          "handler": "심성현",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "done": [
+        {
+          "time": "10:15",
+          "store": "댓아카데미",
+          "biz": "5395700797",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "• 팝엄 행사로 프론트 단말기 이동 예정, 온보딩 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "11시 15분 예약"
+        },
         {
           "time": "10:03",
           "store": "플래니크",
@@ -131062,7 +131085,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 13,
+        "online": 15,
         "offline": 3,
         "unknown": 0
       },
@@ -131210,11 +131233,7 @@ window.SLACK_DATA = {
       },
       "1787620526.016289": {
         "post": "1787620526.016289",
-        "lastSeen": 1787620944.96
-      },
-      "1787620500.645389": {
-        "post": "1787620500.645389",
-        "lastSeen": 1787620944.96
+        "lastSeen": 1787621129.019
       }
     },
     "days": {
@@ -161695,8 +161714,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-25": {
-        "cnt": 13,
-        "sumMin": 75.83665656248728,
+        "cnt": 14,
+        "sumMin": 84.77572507858275,
         "over": 0,
         "items": [
           {
@@ -161802,13 +161821,21 @@ window.SLACK_DATA = {
             "biz": "7831802767",
             "who": "김규빈",
             "cat": "as"
+          },
+          {
+            "hm": "10:15",
+            "min": 8.9,
+            "store": "댓아카데미",
+            "biz": "5395700797",
+            "who": "김규빈",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-25 10:22",
+    "at": "2026-08-25 10:25",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
