@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4964,
+  "version": 4965,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,13 +130863,13 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "extern": {
-          "김동욱": 1
+          "김동욱": 2
         },
         "as": {
-          "김규빈": 3,
+          "김규빈": 4,
+          "고경림": 4,
           "서상원": 1,
           "김동욱": 2,
-          "고경림": 3,
           "김현기": 1,
           "배선유": 4
         },
@@ -130922,6 +130922,17 @@ window.SLACK_DATA = {
         },
         {
           "time": "10:15",
+          "store": "제스트 하우스 (zest haus)",
+          "biz": "8675401007",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "배민 프린터 설정 도움 부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "테블릿에서 배민 연동시 시스템에 문제가 생겼어요 발생하여 토플에 문의 요청"
+        },
+        {
+          "time": "10:15",
           "store": "댓아카데미",
           "biz": "5395700797",
           "cat": "as",
@@ -130930,6 +130941,18 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "11시 15분 예약"
+        },
+        {
+          "time": "10:10",
+          "store": "주식회사 비케이푸드",
+          "biz": "2428102498",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "터미널2 설치 오류 하나비즈 <tel:010-2120-7344|010-2120-7344>",
+          "hw": "",
+          "urgent": true,
+          "intake": "online",
+          "note": ""
         },
         {
           "time": "10:03",
@@ -131019,6 +131042,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "터2프 / 셀프로 온보딩 해결 했음, 토플파 상에도 설치 잘 올라옴"
+        },
+        {
+          "time": "09:40",
+          "store": "그여행 쌍사점",
+          "biz": "7041602324",
+          "cat": "extern",
+          "emp": "김동욱",
+          "req": "외주",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
         },
         {
           "time": "09:30",
@@ -131132,8 +131166,8 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 19,
-        "offline": 3,
+        "online": 21,
+        "offline": 4,
         "unknown": 0
       },
       "updatedAt": "10:26",
@@ -131277,10 +131311,6 @@ window.SLACK_DATA = {
       "1787589002.171429": {
         "post": "1787589002.171429",
         "lastSeen": 1787611524.291
-      },
-      "1787621170.606029": {
-        "post": "1787621170.606029",
-        "lastSeen": 1787621431.799
       }
     },
     "days": {
@@ -161890,7 +161920,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 10:30",
+    "at": "2026-08-25 10:33",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
