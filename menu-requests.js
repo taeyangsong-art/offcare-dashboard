@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 952,
- "updatedAt": "2026-08-25 12:36",
+ "version": 953,
+ "updatedAt": "2026-08-25 13:14",
  "days": 30,
  "items": [
+  {
+   "ts": "1787631232.785849",
+   "date": "2026-08-25",
+   "time": "13:13",
+   "store": "쭈닭한상",
+   "biz": "7822301997",
+   "pos": "토스포스",
+   "content": "메뉴추가 / 부추 비빔밥(쭈삼) 10,900",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787631236.278829",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787631232785849"
+  },
   {
    "ts": "1787628555.283969",
    "date": "2026-08-25",
