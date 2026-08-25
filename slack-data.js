@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5085,
+  "version": 5086,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -132416,11 +132416,19 @@ window.SLACK_DATA = {
         ]
       },
       "ob": {
-        "count": 12,
+        "count": 13,
         "byEmp": {
-          "김규빈": 12
+          "김규빈": 13
         },
         "items": [
+          {
+            "key": "2026년 8월 25일 오전 9:04:01|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786069829005159#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-25",
+            "planDate": "2026-08-28",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786069829005159"
+          },
           {
             "key": "2026년 8월 25일 오전 9:03:27|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1783910225986509#1",
             "handler": "김규빈",
@@ -132553,11 +132561,11 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787637325.399
+        "lastSeen": 1787637382.831
       },
       "1787636447.744369": {
         "post": "1787636447.744369",
-        "lastSeen": 1787637325.399
+        "lastSeen": 1787637382.831
       }
     },
     "days": {
@@ -163647,19 +163655,19 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 14:55",
+    "at": "2026-08-25 14:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3702,
-    "named": 396,
+    "named": 397,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 396,
+    "done": 397,
     "byStatus": {
-      "일정등록완료": 245,
+      "일정등록완료": 246,
       "1차부재": 89,
       "점주직접접수": 35,
       "설치불가": 8,
