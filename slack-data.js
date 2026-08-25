@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4999,
+  "version": 5000,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130867,7 +130867,7 @@ window.SLACK_DATA = {
           "김동욱": 5
         },
         "as": {
-          "배선유": 7,
+          "배선유": 8,
           "고경림": 9,
           "김동욱": 3,
           "심성현": 3,
@@ -130945,7 +130945,7 @@ window.SLACK_DATA = {
           "req": "포프(휴대폰) 온보딩 요청 드립니다!",
           "hw": "",
           "intake": "offline",
-          "note": ""
+          "note": "프론트 nfc 인식저하로 대체기 출고매장 포프(휴대폰) 온보딩이아닌 프+터미널 재온보딩입니다 ㅠㅠ 재온보딩 완료 및 테스트완료"
         },
         {
           "time": "11:20",
@@ -130990,6 +130990,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": ""
+        },
+        {
+          "time": "11:12",
+          "store": "러프로스터스",
+          "biz": "6201155265",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "포스(아이폰)+프론트+유프 사용 중",
+          "hw": "",
+          "intake": "online",
+          "note": "1520분 후 연락 요청"
         },
         {
           "time": "11:09",
@@ -131468,7 +131479,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 43,
+        "online": 44,
         "offline": 9,
         "unknown": 0
       },
@@ -131616,7 +131627,7 @@ window.SLACK_DATA = {
       },
       "1787625753.953969": {
         "post": "1787625753.953969",
-        "lastSeen": 1787625804.852
+        "lastSeen": 1787625860.665
       }
     },
     "days": {
@@ -162338,7 +162349,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 11:43",
+    "at": "2026-08-25 11:44",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
