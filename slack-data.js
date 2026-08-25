@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4940,
+  "version": 4941,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130877,7 +130877,8 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
-          "배선유": 2
+          "배선유": 2,
+          "고경림": 1
         },
         "onboarding": {
           "김현기": 1
@@ -130898,6 +130899,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "토스포스 연동X / AB케이블로 PC 연결해 배민,쿠팡 개별 출력 사용중 / 배민측에서 출력속도 변경해보라고 안내받으셔서 도움드렸으나 동일 증상 발생 / 배민측에 재문의 안내"
+        },
+        {
+          "time": "09:24",
+          "store": "울엄니김밥",
+          "biz": "4244001346",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "사용하시다가 키오스크가 멈출떄가 있어, 원격으로 점검 요청 주셨습니다.(매번 멈추는게 아닌, 사용하시다가 갑자기 멈춤 현상 발생한다고합니다.)",
+          "hw": "",
+          "intake": "online",
+          "note": ""
         },
         {
           "time": "09:22",
@@ -130934,7 +130946,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 2,
+        "online": 3,
         "offline": 2,
         "unknown": 0
       },
@@ -131067,7 +131079,7 @@ window.SLACK_DATA = {
       },
       "1787617801.032249": {
         "post": "1787617801.032249",
-        "lastSeen": 1787618140.014
+        "lastSeen": 1787618236.003
       }
     },
     "days": {
@@ -161597,7 +161609,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 09:35",
+    "at": "2026-08-25 09:37",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
