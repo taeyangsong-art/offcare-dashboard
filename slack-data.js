@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5019,
+  "version": 5020,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130885,7 +130885,7 @@ window.SLACK_DATA = {
           "김현기": 1
         },
         "menu": {
-          "김규빈": 1,
+          "김규빈": 2,
           "배선유": 3
         }
       },
@@ -130914,6 +130914,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "12:27",
+          "store": "99공방카페",
+          "biz": "6963101819",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
+        },
         {
           "time": "12:21",
           "store": "큰나무가자라는큰숲수학교습소",
@@ -131589,11 +131600,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 50,
+        "online": 51,
         "offline": 13,
         "unknown": 0
       },
-      "updatedAt": "12:30",
+      "updatedAt": "12:33",
       "voc": {
         "responses": 3,
         "install": {
@@ -131737,15 +131748,15 @@ window.SLACK_DATA = {
       },
       "1787628603.892099": {
         "post": "1787628603.892099",
-        "lastSeen": 1787628622.017
+        "lastSeen": 1787628862.803
       },
       "1787628602.300949": {
         "post": "1787628602.300949",
-        "lastSeen": 1787628622.017
+        "lastSeen": 1787628862.803
       },
-      "1787628555.283969": {
-        "post": "1787628555.283969",
-        "lastSeen": 1787628622.017
+      "1787628822.444049": {
+        "post": "1787628822.444049",
+        "lastSeen": 1787628862.803
       }
     },
     "days": {
@@ -162483,7 +162494,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 12:30",
+    "at": "2026-08-25 12:34",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
