@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5173,
+  "version": 5174,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,6 +130863,7 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
+          "김규빈": 9,
           "고경림": 28,
           "심성현": 19,
           "김동욱": 14,
@@ -130871,8 +130872,7 @@ window.SLACK_DATA = {
           "송태양": 9,
           "최민석": 8,
           "서상원": 8,
-          "김기범": 5,
-          "김규빈": 8
+          "김기범": 5
         },
         "onboarding": {
           "김동욱": 3,
@@ -130941,6 +130941,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "17:36",
+          "store": "강창구찹쌀진순대(김포한강점)",
+          "biz": "3060653988",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "영수증에 테이블 표시 설정",
+          "hw": "",
+          "intake": "offline",
+          "note": "완"
+        },
         {
           "time": "17:30",
           "store": "다올찰떡",
@@ -133224,10 +133235,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 178,
-        "offline": 31,
+        "offline": 32,
         "unknown": 0
       },
-      "updatedAt": "17:33",
+      "updatedAt": "17:36",
       "voc": {
         "responses": 12,
         "install": {
@@ -133687,7 +133698,7 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787646979.463
+        "lastSeen": 1787647041.796
       }
     },
     "days": {
@@ -165201,7 +165212,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 17:36",
+    "at": "2026-08-25 17:37",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
