@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4963,
+  "version": 4964,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130862,13 +130862,16 @@ window.SLACK_DATA = {
     },
     "2026-08-25": {
       "counts": {
+        "extern": {
+          "김동욱": 1
+        },
         "as": {
           "김규빈": 3,
           "서상원": 1,
           "김동욱": 2,
           "고경림": 3,
           "김현기": 1,
-          "배선유": 3
+          "배선유": 4
         },
         "onboarding": {
           "김현기": 1
@@ -130883,6 +130886,17 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "09:30",
+          "store": "더샵키친컴퍼니",
+          "biz": "3832402423",
+          "handler": "심성현",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "1차 부재"
+          ]
+        },
+        {
           "time": "09:24",
           "store": "제니 앤 김밥",
           "biz": "6281103306",
@@ -130895,6 +130909,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "10:26",
+          "store": "휴먼플라워",
+          "biz": "4109034877",
+          "cat": "extern",
+          "emp": "김동욱",
+          "req": "01041155597 외주업체 원격요청",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "10:15",
           "store": "댓아카데미",
@@ -130997,6 +131022,17 @@ window.SLACK_DATA = {
         },
         {
           "time": "09:30",
+          "store": "수산한반찬",
+          "biz": "5610502056",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "• 프론트를 살짝 움직이면 전원이 계속 꺼져 확인 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "1차부재, 전화거절 / TOSSFR02WHKISMAIN / 이카운트"
+        },
+        {
+          "time": "09:30",
           "store": "한솔김밥",
           "biz": "",
           "cat": "transfer",
@@ -131096,7 +131132,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 16,
+        "online": 19,
         "offline": 3,
         "unknown": 0
       },
@@ -131244,7 +131280,7 @@ window.SLACK_DATA = {
       },
       "1787621170.606029": {
         "post": "1787621170.606029",
-        "lastSeen": 1787621240.58
+        "lastSeen": 1787621431.799
       }
     },
     "days": {
@@ -161854,7 +161890,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 10:27",
+    "at": "2026-08-25 10:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
