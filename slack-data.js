@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4953,
+  "version": 4954,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130864,10 +130864,10 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "서상원": 1,
+          "고경림": 2,
           "김현기": 1,
           "김동욱": 1,
-          "배선유": 2,
-          "고경림": 1
+          "배선유": 3
         },
         "onboarding": {
           "김현기": 1
@@ -130879,19 +130879,7 @@ window.SLACK_DATA = {
           "배선유": 1
         }
       },
-      "pending": [
-        {
-          "time": "09:00",
-          "store": "드롭탑 팔공산진갤러리점",
-          "biz": "2863400841",
-          "handler": "배선유",
-          "cat": "as",
-          "intake": "offline",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
         {
           "time": "09:58",
@@ -130903,6 +130891,18 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "명현님지원"
+        },
+        {
+          "time": "09:49",
+          "store": "로커스헤어",
+          "biz": "5831100398",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "PC+CAT/ 핸드SOS 사용 중 케이블 접촉 불량인지 연동이 안되어 점검 요청 (핸드 측에서 접촉 불량이라고 안내 받고 온 상황)",
+          "hw": "",
+          "urgent": true,
+          "intake": "online",
+          "note": "1차부재 (통화거절) / 통화중이셔서, 문자남겨놨습니다."
         },
         {
           "time": "09:45",
@@ -130972,6 +130972,17 @@ window.SLACK_DATA = {
         },
         {
           "time": "09:00",
+          "store": "드롭탑 팔공산진갤러리점",
+          "biz": "2863400841",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "하나시스 포스 C드라이브 용량 없음 리커버리 요청",
+          "hw": "",
+          "intake": "offline",
+          "note": "리커버리 중 / 여기 스파로스 프로그램 입니다 / 드롭탑전용 / 네 확인했습니다."
+        },
+        {
+          "time": "09:00",
           "store": "다움헤어",
           "biz": "6133802618",
           "cat": "as",
@@ -130994,11 +131005,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 7,
+        "online": 8,
         "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "10:03",
+      "updatedAt": "10:10",
       "voc": {
         "responses": 3,
         "install": {
@@ -131140,13 +131151,13 @@ window.SLACK_DATA = {
         "post": "1787589002.171429",
         "lastSeen": 1787611524.291
       },
-      "1787619605.682539": {
-        "post": "1787619605.682539",
-        "lastSeen": 1787619865.496
-      },
       "1787619817.257619": {
         "post": "1787619817.257619",
-        "lastSeen": 1787619865.496
+        "lastSeen": 1787620221.2
+      },
+      "1787620200.530189": {
+        "post": "1787620200.530189",
+        "lastSeen": 1787620221.2
       }
     },
     "days": {
@@ -161627,8 +161638,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-25": {
-        "cnt": 10,
-        "sumMin": 46.79436234235764,
+        "cnt": 11,
+        "sumMin": 54.08878669341405,
         "over": 0,
         "items": [
           {
@@ -161710,13 +161721,21 @@ window.SLACK_DATA = {
             "biz": "5335101097",
             "who": "김동욱",
             "cat": "as"
+          },
+          {
+            "hm": "10:00",
+            "min": 7.3,
+            "store": "필라테스 와이",
+            "biz": "2982901475",
+            "who": "김규빈",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-25 10:04",
+    "at": "2026-08-25 10:10",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
