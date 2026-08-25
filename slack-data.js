@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4994,
+  "version": 4995,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,13 +130863,13 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
+          "김동욱": 3,
           "고경림": 8,
           "송태양": 1,
           "김규빈": 5,
           "배선유": 6,
           "김현기": 4,
           "서상원": 1,
-          "김동욱": 2,
           "심성현": 2
         },
         "extern": {
@@ -130903,6 +130903,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "11:20",
+          "store": "카페왓에버(Cafe Whatever)",
+          "biz": "2340502907",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "배민 주문접수 프로그램 원격 설치 요청 (토스포스 연동x 배민 프로그램 설치), 프린터 설정 도움 부탁드립니다",
+          "hw": "",
+          "intake": "offline",
+          "note": "설치완료"
+        },
         {
           "time": "11:19",
           "store": "",
@@ -131392,10 +131403,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 38,
-        "offline": 7,
+        "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "11:25",
+      "updatedAt": "11:32",
       "voc": {
         "responses": 3,
         "install": {
@@ -131536,6 +131547,10 @@ window.SLACK_DATA = {
       "1787589002.171429": {
         "post": "1787589002.171429",
         "lastSeen": 1787611524.291
+      },
+      "1787625146.854649": {
+        "post": "1787625146.854649",
+        "lastSeen": 1787625195.529
       }
     },
     "days": {
@@ -162241,7 +162256,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 11:30",
+    "at": "2026-08-25 11:33",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
