@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 973,
- "updatedAt": "2026-08-25 16:29",
+ "version": 974,
+ "updatedAt": "2026-08-25 16:44",
  "days": 30,
  "items": [
+  {
+   "ts": "1787643829.448519",
+   "date": "2026-08-25",
+   "time": "16:43",
+   "store": "쏘주 맥쭈",
+   "biz": "1921702310",
+   "pos": "오케이포스",
+   "content": "오케이포스 사용매장 메뉴 등록, 삭제부탁드립니다",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "탕/찌개 카테고리에\n매콤 우삼겹 된장술밥 20900원 추가\n\n뺄거\n육회비빔면곱빼기\n오돌뼈볶음\n우삼겹숙주볶음\n오븐치즈스파게티\n우삼겹마라크림파스타\n순살 떡도리탕\n체다범벅 롱치즈돈까스\n아이스홍시"
+   ],
+   "rc": 2,
+   "lr": "1787643841.910149",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787643829448519"
+  },
   {
    "ts": "1787640801.679649",
    "date": "2026-08-25",
