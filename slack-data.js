@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4947,
+  "version": 4948,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,6 +130863,7 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
+          "김현기": 1,
           "김동욱": 1,
           "배선유": 2,
           "고경림": 1
@@ -130888,6 +130889,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "09:45",
+          "store": "케이 뷰티",
+          "biz": "8181101274",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "갤럭시탭/ 포프 온보딩 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "터2프 / 셀프로 온보딩 해결 했음, 토플파 상에도 설치 잘 올라옴"
+        },
         {
           "time": "09:25",
           "store": "주식회사 안동롯지",
@@ -130956,7 +130968,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 5,
+        "online": 6,
         "offline": 2,
         "unknown": 0
       },
@@ -131089,15 +131101,15 @@ window.SLACK_DATA = {
       },
       "1787617801.032249": {
         "post": "1787617801.032249",
-        "lastSeen": 1787619024.255
+        "lastSeen": 1787619141.064
       },
       "1787618701.022839": {
         "post": "1787618701.022839",
-        "lastSeen": 1787619024.255
+        "lastSeen": 1787619141.064
       },
       "1787618760.042409": {
         "post": "1787618760.042409",
-        "lastSeen": 1787619024.255
+        "lastSeen": 1787619141.064
       }
     },
     "days": {
@@ -161643,7 +161655,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 09:50",
+    "at": "2026-08-25 09:52",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
