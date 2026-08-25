@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4945,
+  "version": 4946,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130974,7 +130974,7 @@ window.SLACK_DATA = {
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:45",
+      "updatedAt": "09:46",
       "voc": {
         "responses": 2,
         "install": {
@@ -131103,19 +131103,19 @@ window.SLACK_DATA = {
       },
       "1787617801.032249": {
         "post": "1787617801.032249",
-        "lastSeen": 1787618724.654
+        "lastSeen": 1787618893.888
       },
       "1787618701.022839": {
         "post": "1787618701.022839",
-        "lastSeen": 1787618724.654
+        "lastSeen": 1787618893.888
       },
       "1787618700.814909": {
         "post": "1787618700.814909",
-        "lastSeen": 1787618724.654
+        "lastSeen": 1787618893.888
       },
-      "1787618700.526339": {
-        "post": "1787618700.526339",
-        "lastSeen": 1787618724.654
+      "1787618760.042409": {
+        "post": "1787618760.042409",
+        "lastSeen": 1787618893.888
       }
     },
     "days": {
@@ -161596,8 +161596,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-25": {
-        "cnt": 5,
-        "sumMin": 14.766320919990541,
+        "cnt": 6,
+        "sumMin": 16.578731934229534,
         "over": 0,
         "items": [
           {
@@ -161639,13 +161639,21 @@ window.SLACK_DATA = {
             "biz": "5610502056",
             "who": "배선유",
             "cat": "as"
+          },
+          {
+            "hm": "09:45",
+            "min": 1.8,
+            "store": "케이 뷰티",
+            "biz": "8181101274",
+            "who": "김현기",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-25 09:45",
+    "at": "2026-08-25 09:48",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
