@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5032,
+  "version": 5033,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -131837,15 +131837,11 @@ window.SLACK_DATA = {
       },
       "1787628603.892099": {
         "post": "1787628603.892099",
-        "lastSeen": 1787630423.891
+        "lastSeen": 1787630601.857
       },
       "1787628602.300949": {
         "post": "1787628602.300949",
-        "lastSeen": 1787630423.891
-      },
-      "1787630401.393139": {
-        "post": "1787630401.393139",
-        "lastSeen": 1787630423.891
+        "lastSeen": 1787630601.857
       }
     },
     "days": {
@@ -162326,8 +162322,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-25": {
-        "cnt": 32,
-        "sumMin": 129.2107573866844,
+        "cnt": 33,
+        "sumMin": 131.06877173980075,
         "over": 0,
         "items": [
           {
@@ -162585,19 +162581,27 @@ window.SLACK_DATA = {
             "biz": "2262898060",
             "who": "김규빈",
             "cat": "as"
+          },
+          {
+            "hm": "13:00",
+            "min": 1.9,
+            "store": "스몰비(Small B)",
+            "biz": "7280403821",
+            "who": "배선유",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-25 13:00",
+    "at": "2026-08-25 13:03",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3691,
+    "rows": 3692,
     "named": 384,
     "unknownName": 0,
     "beforeStart": 0,
