@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5024,
+  "version": 5025,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130865,8 +130865,8 @@ window.SLACK_DATA = {
         "as": {
           "김현기": 8,
           "김규빈": 8,
+          "심성현": 7,
           "송태양": 3,
-          "심성현": 6,
           "배선유": 8,
           "고경림": 9,
           "김동욱": 3,
@@ -130935,6 +130935,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "터미널 단독으로 사용원하신대요 KOCES TID 1개로 프론트 터미널 등록되어있어서 결제가 안되는거같아서 전산팀에 요청 드릴게요"
+        },
+        {
+          "time": "12:33",
+          "store": "청년과일 부평점",
+          "biz": "3041804053",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "주문서+배달영수증 프린터 출력이 안된다하여 점검부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
         },
         {
           "time": "12:29",
@@ -131645,7 +131656,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 55,
-        "offline": 13,
+        "offline": 14,
         "unknown": 0
       },
       "updatedAt": "12:34",
@@ -131792,11 +131803,11 @@ window.SLACK_DATA = {
       },
       "1787628603.892099": {
         "post": "1787628603.892099",
-        "lastSeen": 1787629282.245
+        "lastSeen": 1787629400.168
       },
       "1787628602.300949": {
         "post": "1787628602.300949",
-        "lastSeen": 1787629282.245
+        "lastSeen": 1787629400.168
       }
     },
     "days": {
@@ -162542,7 +162553,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 12:41",
+    "at": "2026-08-25 12:43",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
