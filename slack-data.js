@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5088,
+  "version": 5089,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,11 +130863,12 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
+          "최민석": 1,
+          "심성현": 13,
           "고경림": 20,
           "김현기": 11,
           "송태양": 6,
           "김동욱": 6,
-          "심성현": 12,
           "김기범": 4,
           "서상원": 4,
           "배선유": 11,
@@ -130899,6 +130900,17 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "14:00",
+          "store": "란드리마을 (Landry Village) 경기도북부경찰",
+          "biz": "4990603330",
+          "handler": "김동욱",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
           "time": "12:00",
           "store": "곱도리탕전문점 연수점",
           "biz": "8983101171",
@@ -130923,6 +130935,28 @@ window.SLACK_DATA = {
       ],
       "done": [
         {
+          "time": "15:00",
+          "store": "그로잉라운지",
+          "biz": "5810402107",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "아이샵케어 통해 이지포스 사용중",
+          "hw": "",
+          "intake": "offline",
+          "note": "kicc요청 및 대리점에서 메일요청으로 신청 후 23일 소요 안내받아 점주님 전달 대기중 5시 재연락 요청"
+        },
+        {
+          "time": "14:58",
+          "store": "달굼(DALGOOM)",
+          "biz": "1344701189",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "SMT-T226 키인결제 기능 진행하면 화면전환이 되지 않는다고 하여 확인 부탁드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
           "time": "14:45",
           "store": "전 학암상회",
           "biz": "1160331319",
@@ -130931,7 +130965,7 @@ window.SLACK_DATA = {
           "req": "유선프린터 케이블도 헷갈려 하시고 연결 어려워 하셔서 연결 방법 안내 부탁드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "연결 정상적으로 되어있음 영수 출력버튼을 누르지않으셔서 안내완료"
         },
         {
           "time": "14:45",
@@ -132317,11 +132351,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 109,
-        "offline": 19,
+        "online": 111,
+        "offline": 20,
         "unknown": 0
       },
-      "updatedAt": "15:00",
+      "updatedAt": "15:03",
       "voc": {
         "responses": 3,
         "install": {
@@ -132428,11 +132462,19 @@ window.SLACK_DATA = {
         ]
       },
       "ob": {
-        "count": 13,
+        "count": 14,
         "byEmp": {
-          "김규빈": 13
+          "김규빈": 14
         },
         "items": [
+          {
+            "key": "2026년 8월 25일 오전 9:04:56|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787293910416539#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-25",
+            "planDate": "2026-08-28",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787293910416539"
+          },
           {
             "key": "2026년 8월 25일 오전 9:04:01|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786069829005159#1",
             "handler": "김규빈",
@@ -132573,19 +132615,11 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787637620.352
+        "lastSeen": 1787637837.605
       },
-      "1787636447.744369": {
-        "post": "1787636447.744369",
-        "lastSeen": 1787637620.352
-      },
-      "1787637611.934649": {
-        "post": "1787637611.934649",
-        "lastSeen": 1787637620.352
-      },
-      "1787637601.366719": {
-        "post": "1787637601.366719",
-        "lastSeen": 1787637620.352
+      "1787637781.068079": {
+        "post": "1787637781.068079",
+        "lastSeen": 1787637837.605
       }
     },
     "days": {
@@ -163066,8 +163100,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-25": {
-        "cnt": 75,
-        "sumMin": 697.3586797634757,
+        "cnt": 77,
+        "sumMin": 701.4362736264861,
         "over": 1,
         "items": [
           {
@@ -163669,25 +163703,41 @@ window.SLACK_DATA = {
             "biz": "8302801914",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "15:00",
+            "min": 2,
+            "store": "그로잉라운지",
+            "biz": "5810402107",
+            "who": "최민석",
+            "cat": "as"
+          },
+          {
+            "hm": "15:00",
+            "min": 2.1,
+            "store": "제이팬트리(JeleePantry)",
+            "biz": "4829701778",
+            "who": "배선유",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-25 15:00",
+    "at": "2026-08-25 15:04",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3702,
-    "named": 397,
+    "named": 398,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 397,
+    "done": 398,
     "byStatus": {
-      "일정등록완료": 246,
+      "일정등록완료": 247,
       "1차부재": 89,
       "점주직접접수": 35,
       "설치불가": 8,
