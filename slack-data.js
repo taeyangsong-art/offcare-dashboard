@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5136,
+  "version": 5137,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130898,7 +130898,7 @@ window.SLACK_DATA = {
         },
         "menu": {
           "서상원": 1,
-          "배선유": 9,
+          "배선유": 10,
           "김규빈": 3
         },
         "delivery": {
@@ -130906,17 +130906,6 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
-        {
-          "time": "15:10",
-          "store": "알비온",
-          "biz": "7680100928",
-          "handler": "배선유",
-          "cat": "menu",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
         {
           "time": "15:00",
           "store": "제이팬트리(JeleePantry)",
@@ -131317,6 +131306,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "프론트 시리얼 통신속도 115200-&gt; 9600 변경후 정상출력확인 프론트 시리얼 통신속도 115200- 9600 변경후 정상출력확인"
+        },
+        {
+          "time": "15:10",
+          "store": "알비온",
+          "biz": "7680100928",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / TEA, BUBBLE TEA 등록 완료"
         },
         {
           "time": "15:09",
@@ -133299,11 +133299,7 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787642538.979
-      },
-      "1787640801.679649": {
-        "post": "1787640801.679649",
-        "lastSeen": 1787642538.979
+        "lastSeen": 1787642600.751
       }
     },
     "days": {
@@ -164657,7 +164653,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 16:22",
+    "at": "2026-08-25 16:23",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
