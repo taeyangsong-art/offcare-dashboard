@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4965,
+  "version": 4966,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130952,7 +130952,7 @@ window.SLACK_DATA = {
           "hw": "",
           "urgent": true,
           "intake": "online",
-          "note": ""
+          "note": "/ KOCES는 TID가 한번 잘못들어가면 해당 문제가 발생하는것으로 확인 조치방법 터미널2세대 공장초기화로 확인되어 진행중"
         },
         {
           "time": "10:03",
@@ -161920,7 +161920,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 10:33",
+    "at": "2026-08-25 10:35",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
