@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5184,
+  "version": 5185,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,7 +130863,7 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
-          "김규빈": 10,
+          "김규빈": 11,
           "김현기": 19,
           "심성현": 21,
           "고경림": 29,
@@ -130941,6 +130941,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "18:00",
+          "store": "리더수학과학학원",
+          "biz": "1059775539",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "포프(휴대폰) + 유프 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "17:49",
           "store": "밀라이스",
@@ -133322,19 +133333,19 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 184,
+        "online": 185,
         "offline": 34,
         "unknown": 0
       },
-      "updatedAt": "18:00",
+      "updatedAt": "18:02",
       "voc": {
-        "responses": 12,
+        "responses": 13,
         "install": {
           "count": 4,
           "low": 1
         },
         "nps": {
-          "count": 12,
+          "count": 13,
           "low": 4
         },
         "high": {
@@ -133347,7 +133358,7 @@ window.SLACK_DATA = {
           "4": 1,
           "5": 1,
           "8": 3,
-          "9": 2,
+          "9": 3,
           "10": 3
         },
         "installDist": {
@@ -133361,6 +133372,10 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 1,
+            "low": 0
+          },
           "12개월": {
             "total": 3,
             "low": 0
@@ -133375,13 +133390,13 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SECTA9": {
+            "total": 2,
+            "low": 1
+          },
           "KPN": {
             "total": 4,
             "low": 2
-          },
-          "SECTA9": {
-            "total": 1,
-            "low": 1
           },
           "NICE": {
             "total": 1,
@@ -133786,19 +133801,15 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787648421.301
+        "lastSeen": 1787648601.358
       },
       "1787647500.986649": {
         "post": "1787647500.986649",
-        "lastSeen": 1787648421.301
+        "lastSeen": 1787648601.358
       },
-      "1787648404.430249": {
-        "post": "1787648404.430249",
-        "lastSeen": 1787648421.301
-      },
-      "1787648403.131039": {
-        "post": "1787648403.131039",
-        "lastSeen": 1787648421.301
+      "1787648514.557959": {
+        "post": "1787648514.557959",
+        "lastSeen": 1787648601.358
       }
     },
     "days": {
@@ -164279,8 +164290,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-25": {
-        "cnt": 130,
-        "sumMin": 1019.7300678292909,
+        "cnt": 132,
+        "sumMin": 1023.3150297045706,
         "over": 2,
         "items": [
           {
@@ -165322,13 +165333,29 @@ window.SLACK_DATA = {
             "biz": "6624101339",
             "who": "심성현",
             "cat": "as"
+          },
+          {
+            "hm": "18:00",
+            "min": 1.8,
+            "store": "리더수학과학학원",
+            "biz": "1059775539",
+            "who": "김규빈",
+            "cat": "as"
+          },
+          {
+            "hm": "18:00",
+            "min": 1.8,
+            "store": "굽네치킨",
+            "biz": "2032950677",
+            "who": "송태양",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-25 18:00",
+    "at": "2026-08-25 18:03",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
