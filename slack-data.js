@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5120,
+  "version": 5121,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130875,6 +130875,7 @@ window.SLACK_DATA = {
           "김규빈": 8
         },
         "onboarding": {
+          "최민석": 1,
           "서상원": 6,
           "고경림": 2,
           "심성현": 3,
@@ -130949,6 +130950,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": ""
+        },
+        {
+          "time": "15:42",
+          "store": "모리숲미술학원",
+          "biz": "4969202238",
+          "cat": "onboarding",
+          "emp": "최민석",
+          "req": "포프 + 프린터 연결 관련 온보딩 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포프유프 온보딩 완료"
         },
         {
           "time": "15:41",
@@ -132644,11 +132656,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 131,
+        "online": 132,
         "offline": 26,
         "unknown": 0
       },
-      "updatedAt": "15:53",
+      "updatedAt": "15:54",
       "voc": {
         "responses": 8,
         "install": {
@@ -132800,9 +132812,9 @@ window.SLACK_DATA = {
         ]
       },
       "ob": {
-        "count": 25,
+        "count": 26,
         "byEmp": {
-          "김규빈": 25
+          "김규빈": 26
         },
         "items": [
           {
@@ -132812,6 +132824,14 @@ window.SLACK_DATA = {
             "recvDate": "2026-08-25",
             "planDate": "2026-08-27",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787288011496989"
+          },
+          {
+            "key": "2026년 8월 25일 오후 1:26:04|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787106694069469#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-25",
+            "planDate": "2026-09-01",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787106694069469"
           },
           {
             "key": "2026년 8월 25일 오후 1:20:27|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787621698761069#1",
@@ -133041,27 +133061,23 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787640802.586
+        "lastSeen": 1787641020.706
       },
       "1787638250.100349": {
         "post": "1787638250.100349",
-        "lastSeen": 1787640802.586
-      },
-      "1787640166.269889": {
-        "post": "1787640166.269889",
-        "lastSeen": 1787640802.586
+        "lastSeen": 1787641020.706
       },
       "1787640720.232069": {
         "post": "1787640720.232069",
-        "lastSeen": 1787640802.586
+        "lastSeen": 1787641020.706
       },
       "1787640798.323439": {
         "post": "1787640798.323439",
-        "lastSeen": 1787640802.586
+        "lastSeen": 1787641020.706
       },
       "1787640801.679649": {
         "post": "1787640801.679649",
-        "lastSeen": 1787640802.586
+        "lastSeen": 1787641020.706
       }
     },
     "days": {
@@ -163542,8 +163558,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-25": {
-        "cnt": 96,
-        "sumMin": 832.2207089304924,
+        "cnt": 97,
+        "sumMin": 844.6436441103617,
         "over": 1,
         "items": [
           {
@@ -164313,25 +164329,33 @@ window.SLACK_DATA = {
             "biz": "3551002509",
             "who": "배선유",
             "cat": "as"
+          },
+          {
+            "hm": "15:42",
+            "min": 12.4,
+            "store": "모리숲미술학원",
+            "biz": "4969202238",
+            "who": "최민석",
+            "cat": "onboarding"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-25 15:53",
+    "at": "2026-08-25 15:57",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3702,
-    "named": 409,
+    "named": 410,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 409,
+    "done": 410,
     "byStatus": {
-      "일정등록완료": 254,
+      "일정등록완료": 255,
       "1차부재": 89,
       "점주직접접수": 36,
       "설치불가": 9,
