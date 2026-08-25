@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4998,
+  "version": 4999,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130867,12 +130867,12 @@ window.SLACK_DATA = {
           "김동욱": 5
         },
         "as": {
+          "배선유": 7,
+          "고경림": 9,
           "김동욱": 3,
-          "고경림": 8,
           "심성현": 3,
           "송태양": 1,
           "김규빈": 5,
-          "배선유": 6,
           "김현기": 4,
           "서상원": 1
         },
@@ -130915,6 +130915,17 @@ window.SLACK_DATA = {
           "note": ""
         },
         {
+          "time": "11:40",
+          "store": "주식회사 밀크앤허니컴퍼니",
+          "biz": "8068703764",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "키오스크 사용 매장으로, 키오스크에서 용지 출력이 되지 않으신다고 하여 점검 요청드립니다! (금일 오전 명변 진행 매장)",
+          "hw": "",
+          "intake": "online",
+          "note": "출력물 설정 관련해서 문의하셔서 안내"
+        },
+        {
           "time": "11:36",
           "store": "칸 프리베 스튜디오 헤어 살롱",
           "biz": "6383701436",
@@ -130923,6 +130934,17 @@ window.SLACK_DATA = {
           "req": "외주",
           "hw": "",
           "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "11:25",
+          "store": "와이헤어",
+          "biz": "2083014008",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "포프(휴대폰) 온보딩 요청 드립니다!",
+          "hw": "",
+          "intake": "offline",
           "note": ""
         },
         {
@@ -131446,11 +131468,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 42,
-        "offline": 8,
+        "online": 43,
+        "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "11:40",
+      "updatedAt": "11:42",
       "voc": {
         "responses": 3,
         "install": {
@@ -131591,6 +131613,10 @@ window.SLACK_DATA = {
       "1787589002.171429": {
         "post": "1787589002.171429",
         "lastSeen": 1787611524.291
+      },
+      "1787625753.953969": {
+        "post": "1787625753.953969",
+        "lastSeen": 1787625804.852
       }
     },
     "days": {
@@ -162312,7 +162338,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 11:42",
+    "at": "2026-08-25 11:43",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
