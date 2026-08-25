@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4972,
+  "version": 4973,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,13 +130863,13 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
+          "배선유": 5,
           "김현기": 3,
+          "고경림": 5,
           "김규빈": 4,
-          "고경림": 4,
           "서상원": 1,
           "김동욱": 2,
-          "심성현": 1,
-          "배선유": 4
+          "심성현": 2
         },
         "extern": {
           "김동욱": 2
@@ -130888,17 +130888,6 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "09:30",
-          "store": "더샵키친컴퍼니",
-          "biz": "3832402423",
-          "handler": "심성현",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "1차 부재"
-          ]
-        },
-        {
           "time": "09:24",
           "store": "제니 앤 김밥",
           "biz": "6281103306",
@@ -130912,6 +130901,17 @@ window.SLACK_DATA = {
       ],
       "done": [
         {
+          "time": "10:48",
+          "store": "모던파스타",
+          "biz": "1327200717",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "토스포스에서 배민라이트 실행했을때 주문접수창이 뜨지않아 도움 요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "배민lite, 주문접수 동시사용 안내"
+        },
+        {
           "time": "10:45",
           "store": "소프씨",
           "biz": "2408703474",
@@ -130921,6 +130921,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "자체해결완료"
+        },
+        {
+          "time": "10:43",
+          "store": "빛나다",
+          "biz": "8782701772",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "노트북 + 프론트는 온보딩 완료 / 프린터 출력이 안되어 도움부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트쪽에 프린터설정이 잘못되어 설정해드린후 정상 출력확인"
         },
         {
           "time": "10:36",
@@ -131113,6 +131124,17 @@ window.SLACK_DATA = {
         },
         {
           "time": "09:30",
+          "store": "더샵키친컴퍼니",
+          "biz": "3832402423",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "메이트포스, 프론트, 유프 사용중인데 잘되다가 어떤날은 또 안되고의 반복이며 주방프린터에는 주문서가 바로바로 잘 나오지만 카운터 프린터에는 주문서가 나오기까지 길면 3분이상 소요된다 하시어 점검 부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "CPP - 3000, TS100 프린터 충돌 문제 8385로 재출고"
+        },
+        {
+          "time": "09:30",
           "store": "수산한반찬",
           "biz": "5610502056",
           "cat": "as",
@@ -131223,11 +131245,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 26,
+        "online": 28,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "10:48",
+      "updatedAt": "10:54",
       "voc": {
         "responses": 3,
         "install": {
@@ -131371,7 +131393,7 @@ window.SLACK_DATA = {
       },
       "1787622300.806129": {
         "post": "1787622300.806129",
-        "lastSeen": 1787622621.602
+        "lastSeen": 1787622925.252
       }
     },
     "days": {
@@ -161989,7 +162011,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 10:50",
+    "at": "2026-08-25 10:55",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
