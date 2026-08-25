@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5284,
+  "version": 5285,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130899,6 +130899,7 @@ window.SLACK_DATA = {
           "김현기": 1
         },
         "menu": {
+          "김동욱": 1,
           "김규빈": 7,
           "배선유": 13,
           "서상원": 1
@@ -130964,6 +130965,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "ab케이블 usb빠져있어 장착 후 정상작동 완료"
+        },
+        {
+          "time": "22:45",
+          "store": "더맨",
+          "biz": "2422201298",
+          "cat": "menu",
+          "emp": "김동욱",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         },
         {
           "time": "21:35",
@@ -133689,7 +133701,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 214,
+        "online": 215,
         "offline": 37,
         "unknown": 0
       },
@@ -134262,7 +134274,7 @@ window.SLACK_DATA = {
       },
       "1787677200.356799": {
         "post": "1787677200.356799",
-        "lastSeen": 1787695232.053
+        "lastSeen": 1787696124.272
       }
     },
     "days": {
@@ -165968,7 +165980,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 07:00",
+    "at": "2026-08-26 07:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
