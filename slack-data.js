@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5201,
+  "version": 5202,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130891,6 +130891,7 @@ window.SLACK_DATA = {
           "김동욱": 6
         },
         "transfer": {
+          "김규빈": 1,
           "심성현": 1,
           "송태양": 5,
           "최민석": 1,
@@ -130942,6 +130943,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "18:30",
+          "store": "오에이 스튜디오",
+          "biz": "",
+          "cat": "transfer",
+          "emp": "김규빈",
+          "req": "8월 25일 오후 6시 30분 / 메뉴 복사 O / 프론트 / 오후 7시 전 통화필수!",
+          "hw": "",
+          "intake": "online",
+          "note": "님 메뉴 복사가 안되어있고 다른메뉴로 되어있는데요..? 님 메뉴 복사가 안되어있고 다른메뉴로 되어있는데요..? / 허허.. / 4062901912 오에이 스튜디오 메뉴껄로 되어잇네요 / 명변완"
+        },
         {
           "time": "18:29",
           "store": "뮌헨",
@@ -133477,7 +133489,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 196,
+        "online": 197,
         "offline": 36,
         "unknown": 0
       },
@@ -133945,15 +133957,15 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787650643.501
+        "lastSeen": 1787650881.772
       },
       "1787647500.986649": {
         "post": "1787647500.986649",
-        "lastSeen": 1787650643.501
+        "lastSeen": 1787650881.772
       },
       "1787650308.431649": {
         "post": "1787650308.431649",
-        "lastSeen": 1787650643.501
+        "lastSeen": 1787650881.772
       }
     },
     "days": {
@@ -165531,7 +165543,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 18:37",
+    "at": "2026-08-25 18:41",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
