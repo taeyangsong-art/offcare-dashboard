@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4977,
+  "version": 4978,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130866,6 +130866,7 @@ window.SLACK_DATA = {
           "고경림": 6,
           "배선유": 5,
           "김현기": 3,
+          "송태양": 1,
           "김규빈": 4,
           "서상원": 1,
           "김동욱": 2,
@@ -130909,7 +130910,7 @@ window.SLACK_DATA = {
           "req": "포스기 자체가 사용 시 많이 느려 전원까지 켜지는데 15분이상걸리신다고 합니다. 포스기 점검 요청 드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "temp파일이 너무 많아 느려지신걸로 확인 정리완료후 재부팅후에도 동일하시면 재연락요청드렸습니다 ."
         },
         {
           "time": "10:54",
@@ -130943,6 +130944,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "자체해결완료"
+        },
+        {
+          "time": "10:45",
+          "store": "바이윤",
+          "biz": "3074600476",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "컴퓨터 + 프론트+프린터",
+          "hw": "",
+          "intake": "online",
+          "note": ""
         },
         {
           "time": "10:43",
@@ -131267,7 +131279,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 30,
+        "online": 31,
         "offline": 4,
         "unknown": 0
       },
@@ -131415,11 +131427,11 @@ window.SLACK_DATA = {
       },
       "1787622300.806129": {
         "post": "1787622300.806129",
-        "lastSeen": 1787623404.046
+        "lastSeen": 1787623462.929
       },
       "1787623229.530369": {
         "post": "1787623229.530369",
-        "lastSeen": 1787623404.046
+        "lastSeen": 1787623462.929
       }
     },
     "days": {
@@ -162061,7 +162073,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 11:03",
+    "at": "2026-08-25 11:04",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
