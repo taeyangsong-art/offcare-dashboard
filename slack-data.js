@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5181,
+  "version": 5182,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,8 +130863,8 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
+          "김규빈": 10,
           "심성현": 21,
-          "김규빈": 9,
           "고경림": 29,
           "배선유": 18,
           "김동욱": 14,
@@ -130941,6 +130941,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "17:49",
+          "store": "밀라이스",
+          "biz": "1380221793",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "쿠팡 출력 안됨 확인 요청",
+          "hw": "",
+          "intake": "offline",
+          "note": "쿠팡프로그램 멈춤 재실행 정상"
+        },
         {
           "time": "17:44",
           "store": "이엠커피(EMCOFFEE)부산남포점",
@@ -133290,10 +133301,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 182,
-        "offline": 33,
+        "offline": 34,
         "unknown": 0
       },
-      "updatedAt": "17:52",
+      "updatedAt": "17:54",
       "voc": {
         "responses": 12,
         "install": {
@@ -133753,15 +133764,15 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787647998.84
+        "lastSeen": 1787648064.758
       },
       "1787647500.986649": {
         "post": "1787647500.986649",
-        "lastSeen": 1787647998.84
+        "lastSeen": 1787648064.758
       },
       "1787647926.087879": {
         "post": "1787647926.087879",
-        "lastSeen": 1787647998.84
+        "lastSeen": 1787648064.758
       }
     },
     "days": {
@@ -165291,7 +165302,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 17:53",
+    "at": "2026-08-25 17:54",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
