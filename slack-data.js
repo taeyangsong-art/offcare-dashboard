@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5117,
+  "version": 5118,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,9 +130863,9 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
+          "서상원": 6,
           "김현기": 14,
           "고경림": 25,
-          "서상원": 5,
           "최민석": 3,
           "심성현": 14,
           "배선유": 12,
@@ -130939,6 +130939,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "15:48",
+          "store": "용용선생 동탄북광장점",
+          "biz": "3108514811",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "민원처리",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
         {
           "time": "15:41",
           "store": "라파의료기 광장점",
@@ -132623,10 +132634,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 131,
-        "offline": 24,
+        "offline": 25,
         "unknown": 0
       },
-      "updatedAt": "15:49",
+      "updatedAt": "15:50",
       "voc": {
         "responses": 8,
         "install": {
@@ -133011,19 +133022,15 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787640562.615
+        "lastSeen": 1787640684.082
       },
       "1787638250.100349": {
         "post": "1787638250.100349",
-        "lastSeen": 1787640562.615
+        "lastSeen": 1787640684.082
       },
       "1787640166.269889": {
         "post": "1787640166.269889",
-        "lastSeen": 1787640562.615
-      },
-      "1787640545.207299": {
-        "post": "1787640545.207299",
-        "lastSeen": 1787640562.615
+        "lastSeen": 1787640684.082
       }
     },
     "days": {
@@ -163504,8 +163511,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-25": {
-        "cnt": 95,
-        "sumMin": 830.9183555801709,
+        "cnt": 96,
+        "sumMin": 832.2207089304924,
         "over": 1,
         "items": [
           {
@@ -164267,13 +164274,21 @@ window.SLACK_DATA = {
             "biz": "4646200750",
             "who": "고경림",
             "cat": "as"
+          },
+          {
+            "hm": "15:49",
+            "min": 1.3,
+            "store": "베스트생갈비찜&amp;찜닭",
+            "biz": "3551002509",
+            "who": "배선유",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-25 15:49",
+    "at": "2026-08-25 15:51",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
