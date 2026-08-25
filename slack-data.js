@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5187,
+  "version": 5188,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,10 +130863,10 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
+          "심성현": 22,
           "김규빈": 11,
           "송태양": 10,
           "김현기": 19,
-          "심성현": 21,
           "고경림": 29,
           "배선유": 18,
           "김동욱": 14,
@@ -130898,7 +130898,7 @@ window.SLACK_DATA = {
           "김현기": 1
         },
         "menu": {
-          "김규빈": 5,
+          "김규빈": 6,
           "배선유": 12,
           "서상원": 1
         },
@@ -130942,6 +130942,28 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "18:08",
+          "store": "강창구 찹쌀진순대 광장점",
+          "biz": "2198509446",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "메뉴 추가",
+          "hw": "",
+          "intake": "offline",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
+        },
+        {
+          "time": "18:03",
+          "store": "풍천민물장어",
+          "biz": "3651202290",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "무선프린터기(와이파이) / 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "18:00",
           "store": "리더수학과학학원",
@@ -133356,11 +133378,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 187,
-        "offline": 34,
+        "online": 188,
+        "offline": 35,
         "unknown": 0
       },
-      "updatedAt": "18:08",
+      "updatedAt": "18:09",
       "voc": {
         "responses": 13,
         "install": {
@@ -133824,15 +133846,15 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787648902.089
+        "lastSeen": 1787649092.282
       },
       "1787647500.986649": {
         "post": "1787647500.986649",
-        "lastSeen": 1787648902.089
+        "lastSeen": 1787649092.282
       },
       "1787648514.557959": {
         "post": "1787648514.557959",
-        "lastSeen": 1787648902.089
+        "lastSeen": 1787649092.282
       }
     },
     "days": {
@@ -165378,7 +165400,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 18:08",
+    "at": "2026-08-25 18:11",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
