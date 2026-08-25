@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4968,
+  "version": 4969,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130870,6 +130870,7 @@ window.SLACK_DATA = {
           "고경림": 4,
           "서상원": 1,
           "김동욱": 2,
+          "심성현": 1,
           "김현기": 1,
           "배선유": 4
         },
@@ -130881,6 +130882,7 @@ window.SLACK_DATA = {
           "송태양": 1
         },
         "menu": {
+          "김규빈": 1,
           "배선유": 2
         }
       },
@@ -130909,6 +130911,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "10:36",
+          "store": "피플스클럽 아오리의행방불명춘천석사점",
+          "biz": "4705000499",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "신규 설치 예정 메뉴 등록",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 이메일 스팸으로 옴"
+        },
         {
           "time": "10:26",
           "store": "휴먼플라워",
@@ -131031,6 +131044,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "무선프린터 재온보딩완료"
+        },
+        {
+          "time": "09:45",
+          "store": "카페 아일랜드",
+          "biz": "1610702748",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "• 메뉴 등록은 메뉴 등록팀에서 완료",
+          "hw": "",
+          "intake": "online",
+          "note": "완료"
         },
         {
           "time": "09:45",
@@ -131166,11 +131190,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 21,
+        "online": 23,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "10:36",
+      "updatedAt": "10:43",
       "voc": {
         "responses": 3,
         "install": {
@@ -161920,7 +161944,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 10:37",
+    "at": "2026-08-25 10:44",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
