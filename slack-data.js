@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5162,
+  "version": 5163,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130897,9 +130897,9 @@ window.SLACK_DATA = {
           "김현기": 1
         },
         "menu": {
+          "김규빈": 4,
           "배선유": 12,
-          "서상원": 1,
-          "김규빈": 3
+          "서상원": 1
         },
         "delivery": {
           "최민석": 1
@@ -130941,6 +130941,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "17:12",
+          "store": "맛나지예 대전유성점",
+          "biz": "4360603116",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 완"
+        },
         {
           "time": "16:57",
           "store": "엠엘성장영어교습소",
@@ -133124,20 +133135,20 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 169,
+        "online": 170,
         "offline": 31,
         "unknown": 0
       },
-      "updatedAt": "17:12",
+      "updatedAt": "17:14",
       "voc": {
-        "responses": 9,
+        "responses": 12,
         "install": {
           "count": 4,
           "low": 1
         },
         "nps": {
-          "count": 9,
-          "low": 3
+          "count": 12,
+          "low": 4
         },
         "high": {
           "install": 2,
@@ -133146,9 +133157,10 @@ window.SLACK_DATA = {
         "npsDist": {
           "0": 1,
           "1": 1,
+          "4": 1,
           "5": 1,
-          "8": 2,
-          "9": 1,
+          "8": 3,
+          "9": 2,
           "10": 3
         },
         "installDist": {
@@ -133162,20 +133174,24 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
-          "3개월": {
+          "12개월": {
             "total": 3,
-            "low": 2
+            "low": 0
+          },
+          "3개월": {
+            "total": 5,
+            "low": 3
           },
           "구매설치": {
             "total": 4,
             "low": 1
-          },
-          "12개월": {
-            "total": 2,
-            "low": 0
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 4,
+            "low": 2
+          },
           "SECTA9": {
             "total": 1,
             "low": 1
@@ -133183,10 +133199,6 @@ window.SLACK_DATA = {
           "NICE": {
             "total": 1,
             "low": 0
-          },
-          "KPN": {
-            "total": 1,
-            "low": 1
           },
           "KIS": {
             "total": 3,
@@ -133202,11 +133214,33 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
-          "사용중 오류가 자주 발생함": 1,
+          "사용중 오류가 자주 발생함": 2,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "17:14",
+            "store": "애프터 글로우",
+            "storeId": "473198",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 4,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 4,
+                "text": "가끔 ㅠㅜ 작동이 잘 안돼요 너무 불편",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "16:14",
             "store": "주식회사 진성푸드빌",
@@ -133565,7 +133599,11 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787645603.22
+        "lastSeen": 1787645661.559
+      },
+      "1787645617.317309": {
+        "post": "1787645617.317309",
+        "lastSeen": 1787645661.559
       }
     },
     "days": {
@@ -165055,7 +165093,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 17:13",
+    "at": "2026-08-25 17:14",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
