@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5186,
+  "version": 5187,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130864,12 +130864,12 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김규빈": 11,
+          "송태양": 10,
           "김현기": 19,
           "심성현": 21,
           "고경림": 29,
           "배선유": 18,
           "김동욱": 14,
-          "송태양": 9,
           "최민석": 8,
           "서상원": 8,
           "김기범": 5
@@ -130952,6 +130952,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "클래스업 플러그인 이용입니다 자체 해결하셨고 프린터 소리 설정만 25%로 완료"
+        },
+        {
+          "time": "18:00",
+          "store": "굽네치킨",
+          "biz": "2032950677",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "포프 온보딩 요청드립니다. / 매장 포스기와 연결 희망하십니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "6시 45분 예약 요청으로 예약 완료입니다"
         },
         {
           "time": "17:52",
@@ -133345,11 +133356,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 186,
+        "online": 187,
         "offline": 34,
         "unknown": 0
       },
-      "updatedAt": "18:03",
+      "updatedAt": "18:08",
       "voc": {
         "responses": 13,
         "install": {
@@ -133813,15 +133824,15 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787648793.724
+        "lastSeen": 1787648902.089
       },
       "1787647500.986649": {
         "post": "1787647500.986649",
-        "lastSeen": 1787648793.724
+        "lastSeen": 1787648902.089
       },
       "1787648514.557959": {
         "post": "1787648514.557959",
-        "lastSeen": 1787648793.724
+        "lastSeen": 1787648902.089
       }
     },
     "days": {
@@ -165367,7 +165378,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 18:06",
+    "at": "2026-08-25 18:08",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
