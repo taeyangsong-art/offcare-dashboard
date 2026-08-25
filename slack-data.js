@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5018,
+  "version": 5019,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130864,10 +130864,10 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김규빈": 7,
+          "김현기": 7,
           "심성현": 6,
           "송태양": 2,
           "배선유": 8,
-          "김현기": 6,
           "고경림": 9,
           "김동욱": 3,
           "서상원": 1
@@ -130924,6 +130924,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "금액입력결제모드 시 사용 프린터 관련 설명 완료"
+        },
+        {
+          "time": "12:21",
+          "store": "메이",
+          "biz": "5490703059",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "아이샵케어 미가맹으로 확인되어요. <https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1784884987431759?thread_ts=1783412343.623719&cid=C0AL2V3MM",
+          "hw": "",
+          "intake": "offline",
+          "note": "타사 토스포스 com3 9600 / 쿠팡이츠 연결 완료"
         },
         {
           "time": "12:05",
@@ -131579,10 +131590,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 50,
-        "offline": 12,
+        "offline": 13,
         "unknown": 0
       },
-      "updatedAt": "12:27",
+      "updatedAt": "12:30",
       "voc": {
         "responses": 3,
         "install": {
@@ -131724,9 +131735,17 @@ window.SLACK_DATA = {
         "post": "1787589002.171429",
         "lastSeen": 1787611524.291
       },
-      "1787628471.151719": {
-        "post": "1787628471.151719",
-        "lastSeen": 1787628504.72
+      "1787628603.892099": {
+        "post": "1787628603.892099",
+        "lastSeen": 1787628622.017
+      },
+      "1787628602.300949": {
+        "post": "1787628602.300949",
+        "lastSeen": 1787628622.017
+      },
+      "1787628555.283969": {
+        "post": "1787628555.283969",
+        "lastSeen": 1787628622.017
       }
     },
     "days": {
@@ -162464,7 +162483,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 12:28",
+    "at": "2026-08-25 12:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

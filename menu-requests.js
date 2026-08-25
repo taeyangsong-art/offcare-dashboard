@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 948,
- "updatedAt": "2026-08-25 12:28",
+ "version": 949,
+ "updatedAt": "2026-08-25 12:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1787628555.283969",
+   "date": "2026-08-25",
+   "time": "12:29",
+   "store": "모퉁이피자집",
+   "biz": "7160702795",
+   "pos": "오케이포스",
+   "content": "추가 음료/주류 웰치스 2000원\n                        사이다 2000원\n                        탄산수 1500원\n수정 음료/주류 코카콜라오리지날 2000원-> 2500원",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787628558.264819",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787628555283969"
+  },
   {
    "ts": "1787628471.151719",
    "date": "2026-08-25",
@@ -213,8 +234,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1787628477.311259",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787628471151719"
   },
   {
