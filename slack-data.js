@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4969,
+  "version": 4970,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130888,6 +130888,17 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "09:45",
+          "store": "파머드림",
+          "biz": "5455800784",
+          "handler": "김현기",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
           "time": "09:30",
           "store": "더샵키친컴퍼니",
           "biz": "3832402423",
@@ -131190,11 +131201,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 23,
+        "online": 24,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "10:43",
+      "updatedAt": "10:45",
       "voc": {
         "responses": 3,
         "install": {
@@ -131335,6 +131346,14 @@ window.SLACK_DATA = {
       "1787589002.171429": {
         "post": "1787589002.171429",
         "lastSeen": 1787611524.291
+      },
+      "1787622301.087289": {
+        "post": "1787622301.087289",
+        "lastSeen": 1787622322.108
+      },
+      "1787622300.806129": {
+        "post": "1787622300.806129",
+        "lastSeen": 1787622322.108
       }
     },
     "days": {
@@ -161944,7 +161963,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 10:44",
+    "at": "2026-08-25 10:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
