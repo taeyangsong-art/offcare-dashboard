@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5095,
+  "version": 5096,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,9 +130863,9 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
+          "고경림": 21,
           "최민석": 1,
           "심성현": 13,
-          "고경림": 20,
           "김현기": 11,
           "송태양": 6,
           "김동욱": 6,
@@ -130946,6 +130946,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "15:10",
+          "store": "버핏그라운드 한티(주식회사 버핏서울_수동)",
+          "biz": "5488101437",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "버핏그라운드 마포점 인입 &gt;&gt; 버핏그라운드 플러그인 사용 중입니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
         {
           "time": "15:03",
           "store": "명동돌판삼겹",
@@ -132409,28 +132420,30 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 115,
-        "offline": 21,
+        "offline": 22,
         "unknown": 0
       },
-      "updatedAt": "15:10",
+      "updatedAt": "15:14",
       "voc": {
-        "responses": 3,
+        "responses": 7,
         "install": {
           "count": 3,
           "low": 1
         },
         "nps": {
-          "count": 3,
-          "low": 1
+          "count": 7,
+          "low": 2
         },
         "high": {
           "install": 1,
-          "nps": 0
+          "nps": 2
         },
         "npsDist": {
+          "0": 1,
           "1": 1,
-          "8": 1,
-          "9": 1
+          "8": 2,
+          "9": 1,
+          "10": 2
         },
         "installDist": {
           "1": 1,
@@ -132443,12 +132456,28 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 2,
+            "low": 1
+          },
+          "12개월": {
+            "total": 2,
+            "low": 0
+          },
           "구매설치": {
             "total": 3,
             "low": 1
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 1,
+            "low": 1
+          },
+          "KIS": {
+            "total": 3,
+            "low": 0
+          },
           "KOCES": {
             "total": 2,
             "low": 0
@@ -132459,9 +132488,32 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "15:14",
+            "store": "정떡집",
+            "storeId": "313333",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "쓰기 편리하고 디자인이 깔끔 예쁘게 생겼다",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "08:31",
             "store": "팀 HJ",
@@ -132688,15 +132740,19 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787638403.808
+        "lastSeen": 1787638459.104
       },
       "1787637936.583699": {
         "post": "1787637936.583699",
-        "lastSeen": 1787638403.808
+        "lastSeen": 1787638459.104
       },
       "1787638250.100349": {
         "post": "1787638250.100349",
-        "lastSeen": 1787638403.808
+        "lastSeen": 1787638459.104
+      },
+      "1787638414.581319": {
+        "post": "1787638414.581319",
+        "lastSeen": 1787638459.104
       }
     },
     "days": {
@@ -163810,7 +163866,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 15:13",
+    "at": "2026-08-25 15:14",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
