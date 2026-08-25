@@ -3,10 +3,225 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 959,
- "updatedAt": "2026-08-25 14:27",
+ "version": 960,
+ "updatedAt": "2026-08-25 14:42",
  "days": 30,
  "items": [
+  {
+   "ts": "1787636447.744369",
+   "date": "2026-08-25",
+   "time": "14:40",
+   "store": "가온정",
+   "biz": "3130972121",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "Resized_20260825_142311.jpg.jpeg",
+     "fid": "F0BSE5FHDN2",
+     "from": "댓글",
+     "path": "menu-files/1787636447_744369-0.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류/음료",
+       "name": "소주",
+       "price": 5000
+      },
+      {
+       "category": "주류/음료",
+       "name": "맥주",
+       "price": 5000
+      },
+      {
+       "category": "주류/음료",
+       "name": "막걸리",
+       "price": 5000
+      },
+      {
+       "category": "주류/음료",
+       "name": "음료수",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260825_142307.jpg.jpeg",
+     "fid": "F0BSC6S3YF7",
+     "from": "댓글",
+     "path": "menu-files/1787636447_744369-1.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "메인메뉴",
+       "name": "생오겹살",
+       "price": 19000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "생삼겹살",
+       "price": 18000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "생목살",
+       "price": 19000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "생꼬들목살",
+       "price": 19000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "생뼈삼겹살",
+       "price": 19000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "생오리로스",
+       "price": 70000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "주물럭소갈비살",
+       "price": 20000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "생소갈비살",
+       "price": 20000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "깍뚝등심",
+       "price": 20000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "부채살",
+       "price": 23000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "갈매기살",
+       "price": 22000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "전복삼계탕",
+       "price": 20000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "두루치기",
+       "price": 12000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "김치찌개",
+       "price": 9000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "고추장찌개",
+       "price": 9000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "청국장된장찌개",
+       "price": 9000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "고등어묵은지",
+       "price": 12000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "생선구이",
+       "price": 12000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "삼계탕",
+       "price": 17000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "한우국밥",
+       "price": 12000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "갈비탕",
+       "price": 15000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "특선",
+       "price": 12000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "육개장1만원",
+       "price": 10000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "물냉면",
+       "price": 8000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "비빔냉면",
+       "price": 8000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "국수(물)",
+       "price": 8000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "비빔국수",
+       "price": 8000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "계란찜",
+       "price": 3000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "추가된장찌개",
+       "price": 3000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "추가고추장찌개",
+       "price": 5000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "공기밥",
+       "price": 1000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1787636470.033199",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787636447744369"
+  },
   {
    "ts": "1787635563.464349",
    "date": "2026-08-25",
