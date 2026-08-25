@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4985,
+  "version": 4986,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -131351,7 +131351,7 @@ window.SLACK_DATA = {
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "11:12",
+      "updatedAt": "11:15",
       "voc": {
         "responses": 3,
         "install": {
@@ -131495,11 +131495,11 @@ window.SLACK_DATA = {
       },
       "1787622300.806129": {
         "post": "1787622300.806129",
-        "lastSeen": 1787624004.654
+        "lastSeen": 1787624122.114
       },
-      "1787623952.278709": {
-        "post": "1787623952.278709",
-        "lastSeen": 1787624004.654
+      "1787624101.122309": {
+        "post": "1787624101.122309",
+        "lastSeen": 1787624122.114
       }
     },
     "days": {
@@ -161980,8 +161980,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-25": {
-        "cnt": 22,
-        "sumMin": 109.81629254420596,
+        "cnt": 23,
+        "sumMin": 111.66804739634195,
         "over": 0,
         "items": [
           {
@@ -162159,13 +162159,21 @@ window.SLACK_DATA = {
             "biz": "6201155265",
             "who": "배선유",
             "cat": "as"
+          },
+          {
+            "hm": "11:12",
+            "min": 1.9,
+            "store": "미친피자 김포장기점",
+            "biz": "5964001239",
+            "who": "김현기",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-25 11:13",
+    "at": "2026-08-25 11:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
