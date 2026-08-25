@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5079,
+  "version": 5080,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130869,8 +130869,8 @@ window.SLACK_DATA = {
           "서상원": 3
         },
         "as": {
+          "김동욱": 6,
           "서상원": 5,
-          "김동욱": 5,
           "심성현": 10,
           "김기범": 4,
           "김현기": 10,
@@ -130943,6 +130943,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "CL 테크"
+        },
+        {
+          "time": "14:33",
+          "store": "브릿지움(Bridgium)#2",
+          "biz": "2230467669",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "터프 -&gt; 포터프 전환",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트 어댑터 구매링크 전달"
         },
         {
           "time": "14:30",
@@ -132194,7 +132205,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 98,
+        "online": 99,
         "offline": 19,
         "unknown": 0
       },
@@ -132313,9 +132324,9 @@ window.SLACK_DATA = {
           {
             "key": "2026년 8월 25일 오전 8:43:56|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786433952480409#1",
             "handler": "김규빈",
-            "status": "",
+            "status": "일정등록완료",
             "recvDate": "2026-08-25",
-            "planDate": "",
+            "planDate": "2026-08-28",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786433952480409"
           },
           {
@@ -132323,7 +132334,7 @@ window.SLACK_DATA = {
             "handler": "김규빈",
             "status": "일정등록완료",
             "recvDate": "2026-08-25",
-            "planDate": "",
+            "planDate": "2026-08-28",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787216645306209"
           },
           {
@@ -132410,19 +132421,15 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787636300.546
+        "lastSeen": 1787636426.741
       },
       "1787636157.806969": {
         "post": "1787636157.806969",
-        "lastSeen": 1787636300.546
+        "lastSeen": 1787636426.741
       },
       "1787636151.085339": {
         "post": "1787636151.085339",
-        "lastSeen": 1787636300.546
-      },
-      "1787636215.444549": {
-        "post": "1787636215.444549",
-        "lastSeen": 1787636300.546
+        "lastSeen": 1787636426.741
       }
     },
     "days": {
@@ -162903,8 +162910,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-25": {
-        "cnt": 68,
-        "sumMin": 660.2076663176216,
+        "cnt": 69,
+        "sumMin": 662.6776488304135,
         "over": 1,
         "items": [
           {
@@ -163450,13 +163457,21 @@ window.SLACK_DATA = {
             "biz": "7715100744",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "14:36",
+            "min": 2.5,
+            "store": "파머드림",
+            "biz": "5455800784",
+            "who": "김동욱",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-25 14:38",
+    "at": "2026-08-25 14:40",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
@@ -163468,11 +163483,11 @@ window.SLACK_DATA = {
     "beforeStart": 0,
     "done": 392,
     "byStatus": {
-      "일정등록완료": 242,
+      "일정등록완료": 243,
       "1차부재": 87,
       "점주직접접수": 35,
       "설치불가": 8,
-      "(빈칸)": 4,
+      "(빈칸)": 3,
       "자가설치": 14,
       "설치보류요청": 2
     }
