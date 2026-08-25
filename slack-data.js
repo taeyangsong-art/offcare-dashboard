@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5170,
+  "version": 5171,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,6 +130863,7 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
+          "고경림": 27,
           "김동욱": 14,
           "배선유": 18,
           "김현기": 18,
@@ -130870,7 +130871,6 @@ window.SLACK_DATA = {
           "심성현": 18,
           "최민석": 8,
           "서상원": 8,
-          "고경림": 26,
           "김기범": 5,
           "김규빈": 8
         },
@@ -130951,6 +130951,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 이건되어잇음 / 카스무알콜은 일단 없으니깐 5500원 유지 / 솔완"
+        },
+        {
+          "time": "17:19",
+          "store": "루미에르",
+          "biz": "4230903256",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "<https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1787529751188059|포스기 고장>으로 새로 받으셨는데 재온보딩 도움 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "재온보딩 및 테스트 완료"
         },
         {
           "time": "17:13",
@@ -133190,11 +133201,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 175,
+        "online": 176,
         "offline": 31,
         "unknown": 0
       },
-      "updatedAt": "17:24",
+      "updatedAt": "17:30",
       "voc": {
         "responses": 12,
         "install": {
@@ -133654,7 +133665,7 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787646579.5
+        "lastSeen": 1787646621.344
       }
     },
     "days": {
@@ -165168,7 +165179,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 17:29",
+    "at": "2026-08-25 17:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
