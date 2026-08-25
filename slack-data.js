@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5115,
+  "version": 5116,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130898,6 +130898,9 @@ window.SLACK_DATA = {
         "menu": {
           "배선유": 9,
           "김규빈": 3
+        },
+        "delivery": {
+          "최민석": 1
         }
       },
       "pending": [
@@ -131001,6 +131004,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "포프유프 금전함 명변완료"
+        },
+        {
+          "time": "15:21",
+          "store": "밀방",
+          "biz": "2161531359",
+          "cat": "delivery",
+          "emp": "최민석",
+          "req": "쿠팡이츠 주문접수 프로그램 설치 후 로그인한 사진 1장",
+          "hw": "",
+          "intake": "online",
+          "note": "사진 수취 완료"
         },
         {
           "time": "15:19",
@@ -132597,7 +132611,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 129,
+        "online": 130,
         "offline": 24,
         "unknown": 0
       },
@@ -132753,9 +132767,9 @@ window.SLACK_DATA = {
         ]
       },
       "ob": {
-        "count": 22,
+        "count": 24,
         "byEmp": {
-          "김규빈": 22
+          "김규빈": 24
         },
         "items": [
           {
@@ -132765,6 +132779,22 @@ window.SLACK_DATA = {
             "recvDate": "2026-08-25",
             "planDate": "2026-08-27",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787288011496989"
+          },
+          {
+            "key": "2026년 8월 25일 오후 1:16:34|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786496170572619#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-25",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786496170572619"
+          },
+          {
+            "key": "2026년 8월 25일 오후 1:15:40|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787186044301879#1",
+            "handler": "김규빈",
+            "status": "",
+            "recvDate": "2026-08-25",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787186044301879"
           },
           {
             "key": "2026년 8월 25일 오후 1:14:54|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786323299734609#1",
@@ -132970,27 +133000,15 @@ window.SLACK_DATA = {
       },
       "1787635782.579579": {
         "post": "1787635782.579579",
-        "lastSeen": 1787640321.158
+        "lastSeen": 1787640503.013
       },
       "1787638250.100349": {
         "post": "1787638250.100349",
-        "lastSeen": 1787640321.158
-      },
-      "1787639777.765639": {
-        "post": "1787639777.765639",
-        "lastSeen": 1787640321.158
-      },
-      "1787640064.523999": {
-        "post": "1787640064.523999",
-        "lastSeen": 1787640321.158
+        "lastSeen": 1787640503.013
       },
       "1787640166.269889": {
         "post": "1787640166.269889",
-        "lastSeen": 1787640321.158
-      },
-      "1787640300.937909": {
-        "post": "1787640300.937909",
-        "lastSeen": 1787640321.158
+        "lastSeen": 1787640503.013
       }
     },
     "days": {
@@ -163471,8 +163489,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-25": {
-        "cnt": 92,
-        "sumMin": 812.7012063622474,
+        "cnt": 95,
+        "sumMin": 830.9183555801709,
         "over": 1,
         "items": [
           {
@@ -164210,29 +164228,53 @@ window.SLACK_DATA = {
             "biz": "5581302680",
             "who": "최민석",
             "cat": "as"
+          },
+          {
+            "hm": "15:45",
+            "min": 1.9,
+            "store": "보길도 랭이네",
+            "biz": "8911702789",
+            "who": "송태양",
+            "cat": "as"
+          },
+          {
+            "hm": "15:41",
+            "min": 5.8,
+            "store": "라파의료기 광장점",
+            "biz": "8171402776",
+            "who": "김현기",
+            "cat": "as"
+          },
+          {
+            "hm": "15:36",
+            "min": 10.6,
+            "store": "월송국밥",
+            "biz": "4646200750",
+            "who": "고경림",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-25 15:45",
+    "at": "2026-08-25 15:48",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3702,
-    "named": 406,
+    "named": 408,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 406,
+    "done": 408,
     "byStatus": {
-      "일정등록완료": 252,
+      "일정등록완료": 253,
       "1차부재": 89,
       "점주직접접수": 36,
       "설치불가": 9,
-      "(빈칸)": 4,
+      "(빈칸)": 5,
       "자가설치": 14,
       "설치보류요청": 2
     }
