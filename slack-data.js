@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4989,
+  "version": 4990,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130862,16 +130862,8 @@ window.SLACK_DATA = {
     },
     "2026-08-25": {
       "counts": {
-        "extern": {
-          "김동욱": 5,
-          "서상원": 1
-        },
-        "onboarding": {
-          "송태양": 2,
-          "김현기": 1
-        },
         "as": {
-          "고경림": 7,
+          "고경림": 8,
           "송태양": 1,
           "김규빈": 5,
           "배선유": 6,
@@ -130879,6 +130871,14 @@ window.SLACK_DATA = {
           "서상원": 1,
           "김동욱": 2,
           "심성현": 2
+        },
+        "extern": {
+          "김동욱": 5,
+          "서상원": 1
+        },
+        "onboarding": {
+          "송태양": 2,
+          "김현기": 1
         },
         "transfer": {
           "김현기": 1,
@@ -130903,6 +130903,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "11:19",
+          "store": "",
+          "biz": "",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "포스기가 하루에 한번씩 먹통된다고 합니다. 확인 부탁드립니다."
+        },
         {
           "time": "11:14",
           "store": "오찰도그 함박산점",
@@ -131380,11 +131391,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 37,
+        "online": 38,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "11:19",
+      "updatedAt": "11:20",
       "voc": {
         "responses": 3,
         "install": {
@@ -131528,7 +131539,11 @@ window.SLACK_DATA = {
       },
       "1787622300.806129": {
         "post": "1787622300.806129",
-        "lastSeen": 1787624422.932
+        "lastSeen": 1787624482.159
+      },
+      "1787624457.244519": {
+        "post": "1787624457.244519",
+        "lastSeen": 1787624482.159
       }
     },
     "days": {
@@ -162218,7 +162233,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 11:20",
+    "at": "2026-08-25 11:21",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
