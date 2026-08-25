@@ -538,8 +538,37 @@ async function tallyVoc(msgs, voc, channelId, opts) {
   // 최근 3일을 매번 다시 훑어, 어제/그제 건에 나중에 찍힌 중복·완료·부재 변경도 반영.
   const wdStartObj = new Date(Date.UTC(Y, M, D - 2));
   const wdStart = `${wdStartObj.getUTCFullYear()}-${pad(wdStartObj.getUTCMonth() + 1)}-${pad(wdStartObj.getUTCDate())}`;
-  const workDates = backfillFrom ? dateList(backfillFrom, targetDate) : dateList(wdStart, targetDate);
+  let workDates = backfillFrom ? dateList(backfillFrom, targetDate) : dateList(wdStart, targetDate);
   if (backfillFrom) console.log(`[백필] ${backfillFrom} ~ ${targetDate} (${workDates.length}일) 재집계`);
+
+  // 미처리가 남아 있는 '오래된 날짜'도 다시 훑는다.
+  //
+  // 3일 롤링만 돌면, 4일 넘은 누락 건은 슬랙에서 처리해도 그 날짜를 다시 안 보기 때문에
+  // pending 에 영원히 남는다(대시보드 '누락 랭킹'에서 안 사라짐 — 실제로 14일·6일 된 건이 있었다).
+  // 그렇다고 VOC 처럼 30일을 통째로 훑으면 채널 수만큼 API 호출이 10배가 된다.
+  // → 아직 pending 이 남은 날짜만 골라 덧붙인다. 보통 몇 개뿐이고, 처리되면 다음 실행부터 빠진다.
+  const STALE_LOOKBACK = 60;      // 이보다 오래된 건 슬랙 히스토리도 못 믿으므로 손대지 않는다
+  // 상한. 슬랙 새 글마다 워크플로가 즉시 도는 구조라(2026-08-24 도입) 실행 1회당 API 호출을 묶어둬야 한다.
+  // 날짜 하나당 채널 수만큼 호출이 늘어난다. 최근 것부터 처리하고, 처리돼 빠지면 그만큼
+  // 더 오래된 날짜가 다음 실행에서 창 안으로 들어온다(자연히 소진된다).
+  const STALE_CAP = 10;
+  if (!backfillFrom) {
+    const lbObj = new Date(Date.UTC(Y, M, D - STALE_LOOKBACK));
+    const lbStart = `${lbObj.getUTCFullYear()}-${pad(lbObj.getUTCMonth() + 1)}-${pad(lbObj.getUTCDate())}`;
+    const inWindow = new Set(workDates);
+    const stale = Object.keys(data.days || {})
+      .filter((d) => d >= lbStart && d < wdStart && !inWindow.has(d))
+      .filter((d) => (((data.days[d] || {}).pending) || []).length > 0)
+      .sort();
+    const use = stale.slice(-STALE_CAP);          // 최신 쪽 우선 — 오래된 건 다음 실행에서
+    if (stale.length > use.length) {
+      console.log(`[미처리 재확인] ${stale.length}일 중 최근 ${use.length}일만 이번에 처리(상한 ${STALE_CAP}) — 나머지는 다음 실행`);
+    }
+    if (use.length) {
+      console.log(`[미처리 재확인] 3일 창 밖에서 미처리가 남은 ${use.length}일 추가 재집계: ${use.join(', ')}`);
+      workDates = [...use, ...workDates];
+    }
+  }
   // 처리내역(note) 수집은 MAX_REPLY_FETCH 상한을 공유하므로, 최신 날짜부터 처리해
   // 사람들이 가장 많이 보는 '오늘' 건의 note가 상한 소진 전에 먼저 채워지도록 한다.
   for (const dstr of [...workDates].reverse()) {
@@ -560,6 +589,15 @@ async function tallyVoc(msgs, voc, channelId, opts) {
     pending.sort((a, b) => (b.time || '').localeCompare(a.time || ''));
     done.sort((a, b) => (b.time || '').localeCompare(a.time || ''));
     const de = data.days[dstr] || {};
+    // 아무것도 못 읽었는데 원래 데이터가 있던 날이면 덮어쓰지 않는다.
+    // 채널 읽기가 전부 실패했거나(위 catch 는 continue 라 빈 값으로 내려온다) 슬랙 히스토리 보존기간이
+    // 지난 오래된 날짜를 다시 훑는 경우, 그대로 대입하면 그 날 집계가 통째로 지워진다.
+    const gotNothing = !done.length && !pending.length && !Object.keys(counts).length;
+    const hadSomething = (de.done && de.done.length) || (de.pending && de.pending.length) || (de.counts && Object.keys(de.counts).length);
+    if (gotNothing && hadSomething) {
+      console.log(`  [업무 ${dstr}] 읽은 내용 없음 — 기존 집계 보존(덮어쓰기 생략)`);
+      continue;
+    }
     // 인입유형 집계 — 전체 원격 건(완료 done + 미처리 pending) 기준 온라인/오프라인/미상
     const intakeAgg = { online: 0, offline: 0, unknown: 0 };
     for (const it of done) intakeAgg[it.intake || 'unknown']++;
