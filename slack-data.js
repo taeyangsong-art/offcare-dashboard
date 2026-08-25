@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5002,
+  "version": 5003,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130868,10 +130868,10 @@ window.SLACK_DATA = {
         },
         "as": {
           "배선유": 8,
+          "심성현": 4,
           "김현기": 5,
           "고경림": 9,
           "김동욱": 3,
-          "심성현": 3,
           "송태양": 1,
           "김규빈": 5,
           "서상원": 1
@@ -130924,6 +130924,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "출력물 설정 관련해서 문의하셔서 안내"
+        },
+        {
+          "time": "11:36",
+          "store": "카페인더문(부산대점)",
+          "biz": "3113701190",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "키오스크 결제시 vcat 오류가 뜬다 하시어 확인 부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "DAOU / VCAT 연동 풀림 증상"
         },
         {
           "time": "11:36",
@@ -131491,10 +131502,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 45,
-        "offline": 9,
+        "offline": 10,
         "unknown": 0
       },
-      "updatedAt": "11:42",
+      "updatedAt": "11:51",
       "voc": {
         "responses": 3,
         "install": {
@@ -131638,7 +131649,11 @@ window.SLACK_DATA = {
       },
       "1787625753.953969": {
         "post": "1787625753.953969",
-        "lastSeen": 1787626042.862
+        "lastSeen": 1787626342.476
+      },
+      "1787626275.200929": {
+        "post": "1787626275.200929",
+        "lastSeen": 1787626342.476
       }
     },
     "days": {
@@ -162360,7 +162375,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 11:47",
+    "at": "2026-08-25 11:52",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
