@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 4981,
+  "version": 4982,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130923,7 +130923,7 @@ window.SLACK_DATA = {
           "req": "포스기가 먹통이 되었다 하셔서 점검 부탁드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "• APEXA 1500 강제 재부팅 후 정상작동 • 동일증상 발생시 교체안내 APEXA 1500 강제 재부팅 후 정상작동 동일증상 발생시 교체안내"
         },
         {
           "time": "11:00",
@@ -131318,7 +131318,7 @@ window.SLACK_DATA = {
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "11:04",
+      "updatedAt": "11:09",
       "voc": {
         "responses": 3,
         "install": {
@@ -131462,7 +131462,7 @@ window.SLACK_DATA = {
       },
       "1787622300.806129": {
         "post": "1787622300.806129",
-        "lastSeen": 1787623707.927
+        "lastSeen": 1787623769.744
       }
     },
     "days": {
@@ -162120,7 +162120,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 11:08",
+    "at": "2026-08-25 11:09",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
