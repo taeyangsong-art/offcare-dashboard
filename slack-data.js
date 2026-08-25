@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5034,
+  "version": 5035,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130863,12 +130863,13 @@ window.SLACK_DATA = {
     "2026-08-25": {
       "counts": {
         "as": {
+          "김기범": 1,
+          "고경림": 10,
           "김현기": 8,
           "심성현": 8,
           "김규빈": 8,
           "송태양": 3,
           "배선유": 8,
-          "고경림": 9,
           "김동욱": 3,
           "서상원": 1
         },
@@ -130926,6 +130927,28 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "13:07",
+          "store": "더큰도시락 죽전단국대점",
+          "biz": "6398502967",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "테이블 오더 선불시 핸드폰에서 안뜸",
+          "hw": "",
+          "intake": "online",
+          "note": "테이블 번호 매핑이 안되어있음 / 완료"
+        },
+        {
+          "time": "12:56",
+          "store": "카페메이드",
+          "biz": "5954001371",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "상품등록 및 금액입력모드 셋팅 부탁드립니다! :꾸벅_옐로:",
+          "hw": "",
+          "intake": "online",
+          "note": "비과세 결제 필요매장 터미널에서 과세 + 비과세 혼합설정완료 비과세 결제 사용법 안내완료"
+        },
         {
           "time": "12:48",
           "store": "주식회사 루이지",
@@ -131689,11 +131712,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 57,
+        "online": 59,
         "offline": 15,
         "unknown": 0
       },
-      "updatedAt": "13:00",
+      "updatedAt": "13:07",
       "voc": {
         "responses": 3,
         "install": {
@@ -131837,11 +131860,11 @@ window.SLACK_DATA = {
       },
       "1787628603.892099": {
         "post": "1787628603.892099",
-        "lastSeen": 1787630664.057
+        "lastSeen": 1787630900.822
       },
       "1787628602.300949": {
         "post": "1787628602.300949",
-        "lastSeen": 1787630664.057
+        "lastSeen": 1787630900.822
       }
     },
     "days": {
@@ -162595,7 +162618,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-25 13:04",
+    "at": "2026-08-25 13:08",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
