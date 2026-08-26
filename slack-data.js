@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5298,
+  "version": 5299,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134139,6 +134139,7 @@ window.SLACK_DATA = {
     "2026-08-26": {
       "counts": {
         "as": {
+          "고경림": 1,
           "심성현": 1
         },
         "extern": {
@@ -134147,6 +134148,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:27",
+          "store": "앵커스터디카페 워크라운지",
+          "biz": "3390503711",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "포프(노트북) 사용 매장으로, 유프 금일 갑자기 출력이 되지 않으신다고 하여 점검 요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "09:16",
           "store": "우리동네 힐링샵 남양점",
@@ -134171,11 +134183,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
+        "online": 2,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:27",
+      "updatedAt": "09:30",
       "voc": {
         "responses": 2,
         "install": {
@@ -134304,7 +134316,7 @@ window.SLACK_DATA = {
       },
       "1787677200.356799": {
         "post": "1787677200.356799",
-        "lastSeen": 1787704101.178
+        "lastSeen": 1787704223.138
       }
     },
     "days": {
@@ -166010,7 +166022,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 09:28",
+    "at": "2026-08-26 09:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
