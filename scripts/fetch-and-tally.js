@@ -86,24 +86,29 @@ const pad = n => String(n).padStart(2, '0');
 
 // 집계 대상 날짜: TALLY_DATE_OFFSET (0=오늘, -1=어제). 새벽 최종집계는 -1 로 '전날' 마감.
 const offset = parseInt(process.env.TALLY_DATE_OFFSET || '0', 10);
-// 업무일 경계 = 새벽 1시. 자정~01:00 은 '그 전날' 업무로 집계한다.
-// 야간당직자가 새벽 1시까지 근무하는데 00:30 건이 달력상 다음날로 넘어가 있었다.
-// (실측: 최근 76일 00시대 5건 · 01~05시 3건 — 01시를 경계로 잡으면 야간 근무분이 제 날짜에 붙는다)
-const DAY_START_H = 1;
-const DAY_OFF_MS = (DAY_START_H - 9) * 3600 * 1000;   // UTC 자정 → 그 날 업무 시작(01:00 KST)까지의 보정
+// 업무일 = 05:30 ~ 다음날 01:00 KST.
+//  - 05:30 : 새벽 출근자 근무 시작
+//  - 01:00 : 야간당직 종료. 00:30 건은 달력상 다음날이지만 '그 전날' 업무로 잡는다.
+//  - 01:00~05:30 은 고객센터 운영시간이 아니라 어느 업무일에도 넣지 않는다(사용자 확인).
+//    실측 76일 기준 이 구간 3건(0.03%) — 집계에서 빠진다.
+const DAY_START_MIN = 5 * 60 + 30;   // 05:30 업무 시작
+const DAY_END_MIN = 1 * 60;          // 다음날 01:00 마감
 const now = new Date();
-// 업무일 기준 '지금' — 01시 이전이면 아직 전날 업무일이다
-const kstNow = new Date(now.getTime() + 9 * 3600 * 1000 - DAY_START_H * 3600 * 1000);
+// 업무일 기준 '지금' — 05:30 이전이면 아직 전날 업무일(또는 방금 닫힌 업무일)이다
+const kstNow = new Date(now.getTime() + 9 * 3600 * 1000 - DAY_START_MIN * 60 * 1000);
 const tgt = new Date(Date.UTC(kstNow.getUTCFullYear(), kstNow.getUTCMonth(), kstNow.getUTCDate() + offset));
 const Y = tgt.getUTCFullYear(), M = tgt.getUTCMonth(), D = tgt.getUTCDate();
 const targetDate = `${Y}-${pad(M + 1)}-${pad(D)}`;
-const oldest = (Date.UTC(Y, M, D) + DAY_OFF_MS) / 1000;            // 대상일 01:00 KST
-const latestBound = (Date.UTC(Y, M, D + 1) + DAY_OFF_MS) / 1000;   // 다음날 01:00 KST (하루 경계 상한)
+const oldest = (Date.UTC(Y, M, D) + (DAY_START_MIN - 540) * 60 * 1000) / 1000;          // 대상일 05:30 KST
+const latestBound = (Date.UTC(Y, M, D + 1) + (DAY_END_MIN - 540) * 60 * 1000) / 1000;   // 다음날 01:00 KST (상한)
 const todayKstDate = `${kstNow.getUTCFullYear()}-${pad(kstNow.getUTCMonth() + 1)}-${pad(kstNow.getUTCDate())}`;  // 완료 처리된 '오늘' 업무일
 
 // 날짜 유틸 (YYYY-MM-DD ↔ KST 하루 경계)
 function dateUTC(s) { const [y, mo, da] = s.split('-').map(Number); return Date.UTC(y, mo - 1, da); }
-function boundsOf(s) { const t = dateUTC(s); return { oldest: (t + DAY_OFF_MS) / 1000, latestBound: (t + 86400000 + DAY_OFF_MS) / 1000 }; }   // 업무일 = 01:00 ~ 다음날 01:00 KST
+// 업무일 = 05:30 ~ 다음날 01:00 KST (540 = UTC→KST 9시간을 분으로 환산)
+function boundsOf(s) { const t = dateUTC(s); return {
+  oldest: (t + (DAY_START_MIN - 540) * 60 * 1000) / 1000,
+  latestBound: (t + 86400000 + (DAY_END_MIN - 540) * 60 * 1000) / 1000 }; }
 function dateList(fromS, toS) { const out = []; for (let t = dateUTC(fromS), e = dateUTC(toS); t <= e; t += 86400000) { const d = new Date(t); out.push(`${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())}`); } return out; }
 
 // 백필: BACKFILL_FROM=YYYY-MM-DD 지정 시 그 날부터 오늘까지 모든 카테고리를 날짜별로 다시 적재 (일회성)
@@ -123,9 +128,16 @@ function nowKstStamp() {
   const d = new Date(Date.now() + 9 * 3600 * 1000);
   return `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())}`;
 }
-// 업무일 기준 날짜 — 00:30 건은 전날로 잡힌다(DAY_START_H)
+// 타임스탬프 → 업무일. 00:30 건은 전날(야간당직), 01:00~05:29 는 운영시간 밖이라 ''(제외).
+// boundsOf 범위와 정확히 짝을 이룬다 — 여기서 ''로 빠지는 건은 어느 날 범위에도 안 들어간다.
 function kstDate(ts) {
-  const d = new Date(parseFloat(ts) * 1000 + 9 * 3600 * 1000 - DAY_START_H * 3600 * 1000);
+  const d = new Date(parseFloat(ts) * 1000 + 9 * 3600 * 1000);
+  const mod = d.getUTCHours() * 60 + d.getUTCMinutes();
+  if (mod < DAY_END_MIN) {                        // 00:00~00:59 → 전날 업무일
+    const p = new Date(d.getTime() - 86400000);
+    return `${p.getUTCFullYear()}-${pad(p.getUTCMonth() + 1)}-${pad(p.getUTCDate())}`;
+  }
+  if (mod < DAY_START_MIN) { return ''; }         // 01:00~05:29 → 운영시간 밖
   return `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())}`;
 }
 function freshVoc() {
@@ -404,6 +416,7 @@ function trackResp(data, msgs, ch) {
         const mid = (W[key].lastSeen + nowSec) / 2;    // 확인은 (lastSeen, now) 사이에 발생 → 중간값 추정
         const respMin = Math.max(0, (mid - postSec) / 60);
         const day = kstDate(m.ts);
+        if (!day) { delete W[key]; continue; }          // 운영시간 밖(01:00~05:30) — 응답시간 표본에서 제외
         DD[day] = DD[day] || { cnt: 0, sumMin: 0, over: 0, items: [] };
         DD[day].items = DD[day].items || [];
         DD[day].cnt++; DD[day].sumMin += respMin; if (respMin > RESP_DELAY_MIN) DD[day].over++;
@@ -663,7 +676,7 @@ async function tallyVoc(msgs, voc, channelId, opts) {
     try { wide = await fetchAllRange(vocCh.id, oldestWide, latestBound); }
     catch (e) { console.error(`  ⚠ [VOC] 기간 읽기 실패(${e.message}) — VOC 재집계 생략`); }
     const byDate = {};
-    for (const m of wide) { if (m.subtype && m.subtype !== 'bot_message') continue; const d = kstDate(m.ts); if (d < minDate) continue; (byDate[d] = byDate[d] || []).push(m); }
+    for (const m of wide) { if (m.subtype && m.subtype !== 'bot_message') continue; const d = kstDate(m.ts); if (!d || d < minDate) continue; (byDate[d] = byDate[d] || []).push(m); }
     for (const d of Object.keys(byDate).sort()) {
       const vagg = freshVoc();
       try { await tallyVoc(byDate[d], vagg, vocCh.id, { dayDate: d, todayKstDate, priorMap, noteSince: oldestWide }); }

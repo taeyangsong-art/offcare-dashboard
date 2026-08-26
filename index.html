@@ -1733,8 +1733,8 @@ function save(k, v){ localStorage.setItem(k, JSON.stringify(v)); }
 // 업무일 경계 = 새벽 1시(집계 스크립트 DAY_START_H 와 같은 값).
 // 야간당직자가 새벽 1시까지 근무하므로 00:00~01:00 은 아직 '어제' 업무일이다.
 // 이 값이 집계와 어긋나면 자정 직후 대시보드만 새 날짜로 넘어가 빈 화면을 보여준다.
-const DAY_START_H = 1;
-function today(){ const d=new Date(); if(d.getHours()<DAY_START_H) d.setDate(d.getDate()-1); return d; }  // 업무일 기준 오늘
+const DAY_START_MIN = 5*60 + 30;   // 05:30 업무 시작 (집계 스크립트와 같은 값)
+function today(){ const d=new Date(); if(d.getHours()*60+d.getMinutes() < DAY_START_MIN) d.setDate(d.getDate()-1); return d; }  // 업무일 기준 오늘
 function ymd(d){ const y=d.getFullYear(), m=String(d.getMonth()+1).padStart(2,'0'), dd=String(d.getDate()).padStart(2,'0'); return `${y}-${m}-${dd}`; }
 function parseYmd(s){ const [y,m,dd]=s.split("-").map(Number); return new Date(y,m-1,dd); }
 function addDays(d,n){ const x=new Date(d); x.setDate(x.getDate()+n); return x; }

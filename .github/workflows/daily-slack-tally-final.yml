@@ -21,11 +21,13 @@ jobs:
         with:
           node-version: '20'
 
-      - name: 슬랙 집계 실행 (어제 최종)
+      - name: 슬랙 집계 실행 (방금 닫힌 업무일 최종)
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           SLACK_CHANNEL: C09HRUSG4TX
-          TALLY_DATE_OFFSET: '-1'
+          # offset 0 이 맞다. 업무일 기준이 05:30 이라 01:10 KST 시점의 '오늘 업무일'은
+          # 이미 어제 날짜(방금 01:00 에 닫힌 그 날)다. -1 로 두면 이틀 전을 집계한다.
+          TALLY_DATE_OFFSET: '0'
         run: node scripts/fetch-and-tally.js
 
       - name: 변경 시 커밋 & 푸시
