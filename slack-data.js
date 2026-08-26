@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5324,
+  "version": 5325,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134091,7 +134091,7 @@ window.SLACK_DATA = {
         "as": {
           "김동욱": 2,
           "김현기": 2,
-          "고경림": 2,
+          "고경림": 3,
           "심성현": 2
         },
         "onboarding": {
@@ -134140,6 +134140,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "[기록용]7430503720 / 100%국산콩 시골 손두부 사업자의 TID정보가 들어가있었음 cc. cc."
+        },
+        {
+          "time": "10:00",
+          "store": "다락스토어",
+          "biz": "6895800385",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "캣단말기(MPOS-1700AE) 연결이 되지 않으신다고 하여 확인 부탁드리겠습니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "캣+프 온보딩완료 키인결제 방법 안내완료"
         },
         {
           "time": "09:59",
@@ -134275,7 +134286,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 10,
+        "online": 11,
         "offline": 5,
         "unknown": 0
       },
@@ -134399,11 +134410,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787707085.474
-      },
-      "1787706982.325159": {
-        "post": "1787706982.325159",
-        "lastSeen": 1787707085.474
+        "lastSeen": 1787707265.213
       }
     },
     "days": {
@@ -166107,8 +166114,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-26": {
-        "cnt": 6,
-        "sumMin": 7.202982099850973,
+        "cnt": 7,
+        "sumMin": 10.419954450925193,
         "over": 0,
         "items": [
           {
@@ -166158,13 +166165,21 @@ window.SLACK_DATA = {
             "biz": "7305800816",
             "who": "김동욱",
             "cat": "as"
+          },
+          {
+            "hm": "10:16",
+            "min": 3.2,
+            "store": "뮤위",
+            "biz": "8232501477",
+            "who": "김동욱",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-26 10:18",
+    "at": "2026-08-26 10:21",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
