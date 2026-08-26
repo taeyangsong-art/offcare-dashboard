@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1041,
- "updatedAt": "2026-08-26 19:36",
+ "version": 1042,
+ "updatedAt": "2026-08-26 20:49",
  "days": 30,
  "items": [
+  {
+   "ts": "1787744905.024849",
+   "date": "2026-08-26",
+   "time": "20:48",
+   "store": "오후의과일",
+   "biz": "2431502477",
+   "pos": "토스포스",
+   "content": "현재 토스포스 사용중인데 테이블qr오더로 변경하려고 준비중입니다.\n다양한 옵션이 있는데 손님이 직접 선택하실수 있도록 하는걸 몰라서 문의드려요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787744908.654709",
+   "rfx": 3,
+   "status": "done",
+   "handler": "최민석",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787744905024849"
+  },
   {
    "ts": "1787740511.184969",
    "date": "2026-08-26",
