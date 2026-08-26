@@ -2383,7 +2383,7 @@ async function menuregGen(pi,gridId){
   const wb=XLSX.utils.book_new(); XLSX.utils.book_append_sheet(wb,ws,'상품등록');
   const out=XLSX.write(wb,{bookType:'xlsx',type:'array'});
   menuregDl(P.key+'_업로드_'+safe+'.xlsx', new Blob([out],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'}));
-  // 내려받기 성공한 경우에만 비운다(라이브러리 실패로 복사 경로를 탄 경우는 위에서 이미 return).
+  // 라이브러리 실패로 복사 경로를 탄 경우는 위에서 이미 return 했고, 거기서 menuregCopy 가 비운다.
   const cleared=menuregClearGrid(P.label+' 양식을 내려받았습니다');
   alert((P.note?'⚠️ '+P.note:'✅ '+P.label+' 양식 '+rows.length+'행을 xlsx 로 내려받았습니다.')+menuregDedupMsg()
     +(cleared?'\n\n🧹 변환란을 비웠습니다 — 다음 매장 메뉴와 섞이지 않습니다.\n같은 매장으로 다른 POS 양식도 받으려면 화면의 [↩ 되돌리기] 를 누르세요.':''));
@@ -2398,9 +2398,17 @@ function menuregCopy(pi,gridId){
   const t=menuregTsv(pi,gridId);
   if(!t){ alert('메뉴 항목이 없습니다.\n한 줄당 "'+FMT_HINT+'" 형식입니다.'); return; }
   const P=MENUREG_POS[pi];
-  const done=()=>alert('📋 '+P.label+' 양식용 텍스트 복사 완료!\n\n엑셀 양식을 열고 데이터 시작 행'+(P.key==='스파로스포스'?'(스파로스는 4행)':'(헤더 아래 첫 행)')+'의 첫 칸 클릭 → 붙여넣기(Ctrl+V) 하면 컬럼에 맞게 들어갑니다.'+(P.note?'\n\n⚠️ '+P.note:'')+menuregDedupMsg());
-  if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(done,()=>prompt('자동 복사 실패 — 아래를 전체선택(Ctrl+A)·복사(Ctrl+C) 하세요:',t));
-  else prompt('아래를 전체선택(Ctrl+A)·복사(Ctrl+C) 하세요:',t);
+  // 복사도 '이 매장 작업을 끝냈다'는 뜻이라 내려받기와 똑같이 변환란을 비운다.
+  // (안 비우면 앞 매장 메뉴가 남아 다음 매장 양식에 섞인다) 되돌리기는 그대로 제공.
+  const clearMsg=()=>{
+    const cleared=menuregClearGrid(P.label+' 양식용 텍스트를 복사했습니다');
+    return cleared?'\n\n🧹 변환란을 비웠습니다 — 다음 매장 메뉴와 섞이지 않습니다.\n같은 매장으로 다른 POS 양식도 만들려면 화면의 [↩ 되돌리기] 를 누르세요.':'';
+  };
+  const done=()=>alert('📋 '+P.label+' 양식용 텍스트 복사 완료!\n\n엑셀 양식을 열고 데이터 시작 행'+(P.key==='스파로스포스'?'(스파로스는 4행)':'(헤더 아래 첫 행)')+'의 첫 칸 클릭 → 붙여넣기(Ctrl+V) 하면 컬럼에 맞게 들어갑니다.'+(P.note?'\n\n⚠️ '+P.note:'')+menuregDedupMsg()+clearMsg());
+  // 자동 복사가 막힌 환경(권한·비보안 컨텍스트)에서는 직접 복사하도록 창을 띄운 뒤 비운다.
+  const manual=()=>{ prompt('자동 복사 실패 — 아래를 전체선택(Ctrl+A)·복사(Ctrl+C) 하세요:',t); const m=clearMsg(); if(m) alert(m.trim()); };
+  if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(done,manual);
+  else manual();
 }
 // ── 📂 매장 엑셀 업로드 → 메뉴 추출 → POS 양식 변환 ──────────────────────
 let menuregXlName='', menuregXlCache='', xlsxLibP=null;
