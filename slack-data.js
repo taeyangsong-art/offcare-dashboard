@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5348,
+  "version": 5349,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134090,9 +134090,9 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "배선유": 4,
+          "김현기": 4,
           "고경림": 5,
           "심성현": 4,
-          "김현기": 3,
           "김동욱": 2
         },
         "onboarding": {
@@ -134134,6 +134134,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "이 포스의 주문건만 출력할게요 체크 해제, 오더포스(태블릿) 와이파이 변경 후 출력 테스트 완료"
+        },
+        {
+          "time": "11:06",
+          "store": "포하우스 김해내외점",
+          "biz": "2991802369",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "토스포스 설치 완료 / 배민 앱 연동 온보딩 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
         },
         {
           "time": "11:02",
@@ -134468,7 +134479,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 24,
+        "online": 25,
         "offline": 8,
         "unknown": 0
       },
@@ -134588,19 +134599,19 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787710639.628
+        "lastSeen": 1787710698.79
       },
       "1787710500.389289": {
         "post": "1787710500.389289",
-        "lastSeen": 1787710639.628
+        "lastSeen": 1787710698.79
       },
       "1787710500.438849": {
         "post": "1787710500.438849",
-        "lastSeen": 1787710639.628
+        "lastSeen": 1787710698.79
       },
       "1787710621.454649": {
         "post": "1787710621.454649",
-        "lastSeen": 1787710639.628
+        "lastSeen": 1787710698.79
       }
     },
     "days": {
@@ -166385,7 +166396,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 11:17",
+    "at": "2026-08-26 11:18",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
