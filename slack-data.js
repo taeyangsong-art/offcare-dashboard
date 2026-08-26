@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5442,
+  "version": 5443,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134160,7 +134160,7 @@ window.SLACK_DATA = {
           "req": "페이스페이 작동 불가 / 확인 부탁드립니다:감사합니다꾸벅:",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "가결제 건으로 제대로 안되었을 확률 있음 / 지금은 잘 될것으로 보여 나중에 또 해보고 안되면 바로 문의 주기로 함"
         },
         {
           "time": "14:30",
@@ -135675,7 +135675,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787722823.523
+        "lastSeen": 1787722882.029
       },
       "1787722356.190299": {
         "post": "1787722356.190299",
@@ -167768,7 +167768,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 14:40",
+    "at": "2026-08-26 14:41",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
