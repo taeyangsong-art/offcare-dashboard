@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5473,
+  "version": 5474,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134165,7 +134165,7 @@ window.SLACK_DATA = {
           "req": "CPP-3000 / 유프 온보딩 요청드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "크젠 재연결 후 정ㅇ상확인"
         },
         {
           "time": "15:48",
@@ -136208,7 +136208,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787727441.76
+        "lastSeen": 1787727563.717
       },
       "1787722356.190299": {
         "post": "1787722356.190299",
@@ -136216,15 +136216,15 @@ window.SLACK_DATA = {
       },
       "1787723067.665549": {
         "post": "1787723067.665549",
-        "lastSeen": 1787727441.76
+        "lastSeen": 1787727563.717
       },
       "1787725802.816159": {
         "post": "1787725802.816159",
-        "lastSeen": 1787727441.76
+        "lastSeen": 1787727563.717
       },
       "1787727375.777939": {
         "post": "1787727375.777939",
-        "lastSeen": 1787727441.76
+        "lastSeen": 1787727563.717
       }
     },
     "days": {
@@ -168497,7 +168497,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 15:57",
+    "at": "2026-08-26 15:59",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
