@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5310,
+  "version": 5311,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134150,8 +134150,8 @@ window.SLACK_DATA = {
     "2026-08-26": {
       "counts": {
         "as": {
-          "심성현": 2,
-          "고경림": 1
+          "고경림": 2,
+          "심성현": 2
         },
         "onboarding": {
           "배선유": 1
@@ -134162,6 +134162,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:39",
+          "store": "초록사서함",
+          "biz": "7880403110",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "CPP-3000 비프음 소리나면서 빨간 불 들어오는 현상 / 어제까진 괜찮았다고 함 / 점검 부탁 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "09:30",
           "store": "삼성영어가음센텀어학원",
@@ -134219,7 +134230,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 3,
+        "online": 4,
         "offline": 2,
         "unknown": 0
       },
@@ -134330,7 +134341,7 @@ window.SLACK_DATA = {
       },
       "1787677200.356799": {
         "post": "1787677200.356799",
-        "lastSeen": 1787705422.543
+        "lastSeen": 1787705482.632
       }
     },
     "days": {
@@ -166051,7 +166062,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 09:50",
+    "at": "2026-08-26 09:51",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
