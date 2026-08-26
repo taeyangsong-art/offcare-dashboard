@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5353,
+  "version": 5354,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134109,11 +134109,23 @@ window.SLACK_DATA = {
           "송태양": 1
         },
         "menu": {
+          "김규빈": 1,
           "배선유": 2
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:17",
+          "store": "움버거",
+          "biz": "1358560825",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 식권 NEW 카테고리에 입력 매달 마감하실떄 필요한거라 싯가로 완료요 / 008463"
+        },
         {
           "time": "11:16",
           "store": "카페프라하",
@@ -134502,7 +134514,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 26,
+        "online": 27,
         "offline": 9,
         "unknown": 0
       },
@@ -134622,15 +134634,11 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787711006.602
+        "lastSeen": 1787711061.022
       },
       "1787710500.438849": {
         "post": "1787710500.438849",
-        "lastSeen": 1787711006.602
-      },
-      "1787710991.762669": {
-        "post": "1787710991.762669",
-        "lastSeen": 1787711006.602
+        "lastSeen": 1787711061.022
       }
     },
     "days": {
@@ -166334,8 +166342,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-26": {
-        "cnt": 10,
-        "sumMin": 19.614021341005962,
+        "cnt": 11,
+        "sumMin": 20.31484352350235,
         "over": 0,
         "items": [
           {
@@ -166417,13 +166425,21 @@ window.SLACK_DATA = {
             "biz": "6568700482",
             "who": "김동욱",
             "cat": "as"
+          },
+          {
+            "hm": "11:23",
+            "min": 0.7,
+            "store": "공포의 아구찜, 탕",
+            "biz": "3010858250",
+            "who": "배선유",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-26 11:23",
+    "at": "2026-08-26 11:24",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
