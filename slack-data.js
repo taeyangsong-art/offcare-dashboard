@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5444,
+  "version": 5445,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134090,7 +134090,7 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김현기": 6,
-          "고경림": 18,
+          "고경림": 19,
           "심성현": 10,
           "김동욱": 7,
           "서상원": 5,
@@ -134128,14 +134128,14 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "13:29",
-          "store": "성북동돼지갈비집휴게소",
-          "biz": "4454500373",
-          "handler": "고경림",
+          "time": "13:45",
+          "store": "주식회사 한국민화학교",
+          "biz": "1458702409",
+          "handler": "배선유",
           "cat": "as",
-          "intake": "offline",
+          "intake": "online",
           "reasons": [
-            "1차 부재"
+            "확인 후 미완료"
           ]
         },
         {
@@ -134480,6 +134480,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "매장이 아니셔서, 유튜브 영상안내 및 방법 안내 드렸습니다. 직접 다시해보시고 안되시면 재인입 예정"
+        },
+        {
+          "time": "13:29",
+          "store": "성북동돼지갈비집휴게소",
+          "biz": "4454500373",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "포스기 전원이 계속 꺼졌다 켜졌다 발생하여 점검 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "1차부재 / 여기 3천건매장이니 점검해보시고 방문해야하면 택배 보내지마시고, 저희직원 보내주세요 / 네 알겠습니다"
         },
         {
           "time": "13:29",
@@ -135387,11 +135398,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 88,
+        "online": 89,
         "offline": 26,
         "unknown": 0
       },
-      "updatedAt": "14:38",
+      "updatedAt": "14:45",
       "voc": {
         "responses": 4,
         "install": {
@@ -135538,9 +135549,9 @@ window.SLACK_DATA = {
           {
             "key": "2026년 8월 26일 오전 8:36:16|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787548296242629#1",
             "handler": "김규빈",
-            "status": "",
+            "status": "일정등록완료",
             "recvDate": "2026-08-26",
-            "planDate": "",
+            "planDate": "2026-08-28",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787548296242629"
           },
           {
@@ -135675,11 +135686,15 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787722918.293
+        "lastSeen": 1787723123.565
       },
       "1787722356.190299": {
         "post": "1787722356.190299",
         "lastSeen": 1787722415.217
+      },
+      "1787723067.665549": {
+        "post": "1787723067.665549",
+        "lastSeen": 1787723123.565
       }
     },
     "days": {
@@ -167768,7 +167783,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 14:42",
+    "at": "2026-08-26 14:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
@@ -167780,11 +167795,11 @@ window.SLACK_DATA = {
     "beforeStart": 0,
     "done": 425,
     "byStatus": {
-      "일정등록완료": 262,
+      "일정등록완료": 263,
       "1차부재": 95,
       "점주직접접수": 37,
       "설치불가": 9,
-      "(빈칸)": 6,
+      "(빈칸)": 5,
       "자가설치": 14,
       "설치보류요청": 2
     }
