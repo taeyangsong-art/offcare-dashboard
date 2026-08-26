@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5351,
+  "version": 5352,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134089,10 +134089,10 @@ window.SLACK_DATA = {
     "2026-08-26": {
       "counts": {
         "as": {
+          "고경림": 6,
           "송태양": 1,
           "배선유": 4,
           "김현기": 4,
-          "고경림": 5,
           "심성현": 4,
           "김동욱": 2
         },
@@ -134114,6 +134114,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:16",
+          "store": "카페프라하",
+          "biz": "7958803495",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "포스기 용량 부족 오류 문구 지속 노출 되어 확인 요청 드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "디스크 정리 및 temp 파일정리후 2기가 추가 확보 완료 정상작동확인"
+        },
         {
           "time": "11:14",
           "store": "동구 해물된장뚝배기",
@@ -134492,7 +134503,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 26,
-        "offline": 8,
+        "offline": 9,
         "unknown": 0
       },
       "updatedAt": "11:17",
@@ -134611,19 +134622,15 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787710821.363
+        "lastSeen": 1787710944.448
       },
       "1787710500.389289": {
         "post": "1787710500.389289",
-        "lastSeen": 1787710821.363
+        "lastSeen": 1787710944.448
       },
       "1787710500.438849": {
         "post": "1787710500.438849",
-        "lastSeen": 1787710821.363
-      },
-      "1787710621.454649": {
-        "post": "1787710621.454649",
-        "lastSeen": 1787710821.363
+        "lastSeen": 1787710944.448
       }
     },
     "days": {
@@ -166408,7 +166415,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 11:20",
+    "at": "2026-08-26 11:22",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
