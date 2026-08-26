@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1020,
- "updatedAt": "2026-08-26 14:25",
+ "version": 1021,
+ "updatedAt": "2026-08-26 14:27",
  "days": 30,
  "items": [
   {
@@ -18,14 +18,477 @@ window.MENU_REQUESTS = {
    "special": "]*",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "i_3587076096ff.jpg",
+     "fid": "F0BSMPH0X5K",
+     "from": "댓글",
+     "path": "menu-files/1787721933_558509-0.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "프리미엄피자",
+       "name": "씨푸드 골드피자 L",
+       "price": 25800
+      },
+      {
+       "category": "프리미엄피자",
+       "name": "씨푸드 골드피자 F",
+       "price": 30800
+      },
+      {
+       "category": "프리미엄피자",
+       "name": "랍스타 골드피자 L",
+       "price": 25800
+      },
+      {
+       "category": "프리미엄피자",
+       "name": "랍스타 골드피자 F",
+       "price": 30800
+      },
+      {
+       "category": "프리미엄피자",
+       "name": "포테이토골드피자 L",
+       "price": 25800
+      },
+      {
+       "category": "프리미엄피자",
+       "name": "포테이토골드피자 F",
+       "price": 30800
+      },
+      {
+       "category": "프리미엄피자",
+       "name": "고구마리치피자 L",
+       "price": 25800
+      },
+      {
+       "category": "프리미엄피자",
+       "name": "고구마리치피자 M",
+       "price": 23000
+      },
+      {
+       "category": "프리미엄피자",
+       "name": "고구마리치피자 F",
+       "price": 30800
+      },
+      {
+       "category": "프리미엄피자",
+       "name": "치즈바이트피자 L",
+       "price": 31300
+      },
+      {
+       "category": "프리미엄피자",
+       "name": "치즈바이트피자 M",
+       "price": 25800
+      },
+      {
+       "category": "프리미엄피자",
+       "name": "치즈바이트피자 F",
+       "price": 36300
+      },
+      {
+       "category": "프리미엄피자",
+       "name": "씨푸드 바이트피자 L",
+       "price": 32300
+      },
+      {
+       "category": "프리미엄피자",
+       "name": "씨푸드 바이트피자 M",
+       "price": 26800
+      },
+      {
+       "category": "프리미엄피자",
+       "name": "씨푸드 바이트피자 F",
+       "price": 37300
+      },
+      {
+       "category": "스탠다드 피자",
+       "name": "랍스타피자 M",
+       "price": 21000
+      },
+      {
+       "category": "스탠다드 피자",
+       "name": "랍스타피자 L",
+       "price": 25500
+      },
+      {
+       "category": "스탠다드 피자",
+       "name": "랍스타피자 F",
+       "price": 29500
+      },
+      {
+       "category": "스탠다드 피자",
+       "name": "포테이토피자 M",
+       "price": 21000
+      },
+      {
+       "category": "스탠다드 피자",
+       "name": "포테이토피자 L",
+       "price": 25500
+      },
+      {
+       "category": "스탠다드 피자",
+       "name": "포테이토피자 F",
+       "price": 29500
+      }
+     ]
+    },
+    {
+     "name": "i_5aecd0620b69.jpg",
+     "fid": "F0BSMPH4LQM",
+     "from": "댓글",
+     "path": "menu-files/1787721933_558509-1.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "콤비네이션 피자 M",
+       "price": 21000
+      },
+      {
+       "category": "",
+       "name": "콤비네이션 피자 L",
+       "price": 25500
+      },
+      {
+       "category": "",
+       "name": "콤비네이션 피자 F",
+       "price": 29500
+      },
+      {
+       "category": "",
+       "name": "불고기 피자 M",
+       "price": 20500
+      },
+      {
+       "category": "",
+       "name": "불고기 피자 L",
+       "price": 25000
+      },
+      {
+       "category": "",
+       "name": "불고기 피자 F",
+       "price": 29000
+      },
+      {
+       "category": "",
+       "name": "야채피자 M",
+       "price": 20500
+      },
+      {
+       "category": "",
+       "name": "야채피자 L",
+       "price": 25000
+      },
+      {
+       "category": "",
+       "name": "야채피자 F",
+       "price": 28000
+      },
+      {
+       "category": "",
+       "name": "스페셜 피자 M",
+       "price": 20000
+      },
+      {
+       "category": "",
+       "name": "스페셜 피자 L",
+       "price": 24500
+      },
+      {
+       "category": "",
+       "name": "스페셜 피자 F",
+       "price": 28500
+      },
+      {
+       "category": "",
+       "name": "뉴욕 스페셜 피자 M",
+       "price": 20000
+      },
+      {
+       "category": "",
+       "name": "뉴욕 스페셜 피자 L",
+       "price": 24500
+      },
+      {
+       "category": "",
+       "name": "뉴욕 스페셜 피자 F",
+       "price": 28500
+      },
+      {
+       "category": "",
+       "name": "하와이안 피자 M",
+       "price": 18500
+      },
+      {
+       "category": "",
+       "name": "하와이안 피자 L",
+       "price": 24000
+      },
+      {
+       "category": "",
+       "name": "하와이안 피자 F",
+       "price": 28000
+      },
+      {
+       "category": "",
+       "name": "페파로니 피자 M",
+       "price": 18500
+      },
+      {
+       "category": "",
+       "name": "페파로니 피자 L",
+       "price": 24000
+      },
+      {
+       "category": "",
+       "name": "페파로니 피자 F",
+       "price": 28000
+      },
+      {
+       "category": "",
+       "name": "치즈 피자 M",
+       "price": 18500
+      },
+      {
+       "category": "",
+       "name": "치즈 피자 L",
+       "price": 24000
+      },
+      {
+       "category": "",
+       "name": "치즈 피자 F",
+       "price": 28000
+      },
+      {
+       "category": "치즈크러스트 피자",
+       "name": "랍스터 치즈크러스트 M",
+       "price": 24000
+      },
+      {
+       "category": "치즈크러스트 피자",
+       "name": "랍스터 치즈크러스트 L",
+       "price": 29500
+      },
+      {
+       "category": "치즈크러스트 피자",
+       "name": "랍스터 치즈크러스트 F",
+       "price": 34500
+      },
+      {
+       "category": "치즈크러스트 피자",
+       "name": "포테이토 치즈크러스트 M",
+       "price": 24000
+      },
+      {
+       "category": "치즈크러스트 피자",
+       "name": "포테이토 치즈크러스트 L",
+       "price": 29600
+      },
+      {
+       "category": "치즈크러스트 피자",
+       "name": "포테이토 치즈크러스트 F",
+       "price": 34500
+      },
+      {
+       "category": "치즈크러스트 피자",
+       "name": "콤비네이션 치즈크러스트 M",
+       "price": 24000
+      },
+      {
+       "category": "치즈크러스트 피자",
+       "name": "콤비네이션 치즈크러스트 L",
+       "price": 29500
+      },
+      {
+       "category": "치즈크러스트 피자",
+       "name": "콤비네이션 치즈크러스트 F",
+       "price": 34500
+      },
+      {
+       "category": "치즈크러스트 피자",
+       "name": "불고기 치즈크러스트 M",
+       "price": 23500
+      },
+      {
+       "category": "치즈크러스트 피자",
+       "name": "불고기 치즈크러스트 L",
+       "price": 29000
+      },
+      {
+       "category": "치즈크러스트 피자",
+       "name": "불고기 치즈크러스트 F",
+       "price": 34000
+      }
+     ]
+    },
+    {
+     "name": "i_dcd0d755fe51.jpg",
+     "fid": "F0BSTLDL849",
+     "from": "댓글",
+     "path": "menu-files/1787721933_558509-2.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "야채 치즈크러스트 M",
+       "price": 23500
+      },
+      {
+       "category": "",
+       "name": "야채 치즈크러스트 L",
+       "price": 28500
+      },
+      {
+       "category": "",
+       "name": "야채 치즈크러스트 F",
+       "price": 34000
+      },
+      {
+       "category": "",
+       "name": "스페셜 치즈크러스트 M",
+       "price": 23000
+      },
+      {
+       "category": "",
+       "name": "스페셜 치즈크러스트 L",
+       "price": 28500
+      },
+      {
+       "category": "",
+       "name": "스페셜 치즈크러스트 F",
+       "price": 33500
+      },
+      {
+       "category": "",
+       "name": "뉴욕스페셜 치즈크러스트 M",
+       "price": 23000
+      },
+      {
+       "category": "",
+       "name": "뉴욕스페셜 치즈크러스트 L",
+       "price": 28500
+      },
+      {
+       "category": "",
+       "name": "뉴욕스페셜 치즈크러스트 F",
+       "price": 33500
+      },
+      {
+       "category": "",
+       "name": "하와이안 치즈크러스트 M",
+       "price": 22500
+      },
+      {
+       "category": "",
+       "name": "하와이안 치즈크러스트 L",
+       "price": 28000
+      },
+      {
+       "category": "",
+       "name": "하와이안 치즈크러스트 F",
+       "price": 33000
+      },
+      {
+       "category": "",
+       "name": "페파로니 치즈크러스트 M",
+       "price": 22500
+      },
+      {
+       "category": "",
+       "name": "페파로니 치즈크러스트 L",
+       "price": 28000
+      },
+      {
+       "category": "",
+       "name": "페파로니 치즈크러스트 F",
+       "price": 33000
+      },
+      {
+       "category": "",
+       "name": "치즈크러스트 피자 M",
+       "price": 22500
+      },
+      {
+       "category": "",
+       "name": "치즈크러스트 피자 L",
+       "price": 28000
+      },
+      {
+       "category": "",
+       "name": "치즈크러스트 피자 F",
+       "price": 33000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "치즈오븐 스파게티",
+       "price": 7000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "치즈스틱",
+       "price": 6000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "버팔로윙",
+       "price": 6000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "치킨텐더",
+       "price": 6000
+      },
+      {
+       "category": "음료",
+       "name": "코카콜라 500ml",
+       "price": 1800
+      },
+      {
+       "category": "음료",
+       "name": "코카콜라 1.25L",
+       "price": 2700
+      },
+      {
+       "category": "음료",
+       "name": "펩시콜라 1.25L",
+       "price": 2500
+      },
+      {
+       "category": "음료",
+       "name": "사이다",
+       "price": 2700
+      },
+      {
+       "category": "",
+       "name": "피클",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "갈릭디핑소스",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "핫소스",
+       "price": 200
+      },
+      {
+       "category": "",
+       "name": "치즈가루",
+       "price": 200
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [],
-   "rc": 0,
-   "lr": "",
+   "rc": 2,
+   "lr": "1787721972.356319",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787721933558509"
   },
   {
