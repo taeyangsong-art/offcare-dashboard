@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5357,
+  "version": 5358,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134094,10 +134094,10 @@ window.SLACK_DATA = {
         },
         "as": {
           "배선유": 5,
-          "고경림": 6,
+          "고경림": 7,
+          "심성현": 5,
           "송태양": 1,
           "김현기": 4,
-          "심성현": 4,
           "김동욱": 2
         },
         "onboarding": {
@@ -134139,6 +134139,17 @@ window.SLACK_DATA = {
           "note": "영상통화로 교육 완료"
         },
         {
+          "time": "11:22",
+          "store": "스마일 정육점",
+          "biz": "7721802151",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "포스기 배달앱 사용매장인데 저장공간 부족이라는 문구확인되어 확인 부탁드립니다!",
+          "hw": "",
+          "intake": "offline",
+          "note": "디스크 정리 및 temp 파일 삭제로 4gb 확보완료"
+        },
+        {
           "time": "11:17",
           "store": "움버거",
           "biz": "1358560825",
@@ -134159,6 +134170,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "디스크 정리 및 temp 파일정리후 2기가 추가 확보 완료 정상작동확인"
+        },
+        {
+          "time": "11:15",
+          "store": "아르케디자인",
+          "biz": "1464401124",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "핸드폰+프론트 온보딩요청 .",
+          "hw": "",
+          "intake": "online",
+          "note": ""
         },
         {
           "time": "11:14",
@@ -134537,46 +134559,52 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 27,
-        "offline": 11,
+        "online": 28,
+        "offline": 12,
         "unknown": 0
       },
-      "updatedAt": "11:30",
+      "updatedAt": "11:34",
       "voc": {
-        "responses": 2,
+        "responses": 3,
         "install": {
-          "count": 1,
+          "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 2,
-          "low": 1
+          "count": 3,
+          "low": 2
         },
         "high": {
-          "install": 0,
+          "install": 1,
           "nps": 1
         },
         "npsDist": {
-          "4": 1,
+          "4": 2,
           "10": 1
         },
         "installDist": {
-          "4": 1
+          "4": 1,
+          "5": 1
         },
         "byIndustry": {
+          "요식업": 1,
           "기타": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 2,
+            "low": 2
+          },
           "12개월": {
             "total": 1,
             "low": 0
-          },
-          "구매설치": {
-            "total": 1,
-            "low": 1
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 1,
+            "low": 1
+          },
           "KPN": {
             "total": 1,
             "low": 0
@@ -134587,9 +134615,32 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1,
           "필요한 기능이 없거나 몰라서 불편": 1
         },
         "alerts": [
+          {
+            "time": "11:34",
+            "store": "월송국밥",
+            "storeId": "599882",
+            "industry": "음식점/주점",
+            "indBucket": "요식업",
+            "install": 5,
+            "nps": 4,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 4,
+                "text": "직접설치는 어렵고 상담사연결도 지연됨",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "10:04",
             "store": "온담니트수선",
@@ -134657,11 +134708,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787711428.167
-      },
-      "1787711400.388099": {
-        "post": "1787711400.388099",
-        "lastSeen": 1787711428.167
+        "lastSeen": 1787711721.936
       }
     },
     "days": {
@@ -166462,7 +166509,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 11:30",
+    "at": "2026-08-26 11:35",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
