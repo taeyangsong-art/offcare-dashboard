@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1031,
- "updatedAt": "2026-08-26 16:55",
+ "version": 1032,
+ "updatedAt": "2026-08-26 17:19",
  "days": 30,
  "items": [
   {
@@ -40812,27 +40812,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785145643855459"
-  },
-  {
-   "ts": "1785140275.706329",
-   "date": "2026-07-27",
-   "time": "17:17",
-   "store": "케이핀초반",
-   "biz": "2660303234",
-   "pos": "기타",
-   "content": "안주류 카테고리에 매운돈까스 16000원 -> 17000원으로 수정 부탁드립니다",
-   "special": "지금 바로 부탁드립니다",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1785140279.612389",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785140275706329"
   }
  ],
  "ocr": {

@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5511,
+  "version": 5512,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134089,6 +134089,7 @@ window.SLACK_DATA = {
     "2026-08-26": {
       "counts": {
         "as": {
+          "김규빈": 3,
           "송태양": 7,
           "배선유": 16,
           "김기범": 4,
@@ -134097,8 +134098,7 @@ window.SLACK_DATA = {
           "고경림": 29,
           "최민석": 4,
           "심성현": 13,
-          "김동욱": 8,
-          "김규빈": 2
+          "김동욱": 8
         },
         "onboarding": {
           "김규빈": 1,
@@ -134180,6 +134180,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "17:05",
+          "store": "도시곳간 마곡점",
+          "biz": "4654001589",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "포스기/ 배달의 민족 연동 즉시접수 → 자체접수 설정 변경 요청 주셨는데 점검 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "2030분 소요 양해 / 배민 라이트에 자동 주문접수 On &gt; OFF 로 변경 배민 라이트에 자동 주문접수 On OFF 로 변경"
+        },
         {
           "time": "16:58",
           "store": "유월커피",
@@ -136254,7 +136265,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 159,
+        "online": 160,
         "offline": 33,
         "unknown": 0
       },
@@ -136662,7 +136673,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787732129.999
+        "lastSeen": 1787732323.08
       },
       "1787722356.190299": {
         "post": "1787722356.190299",
@@ -136670,15 +136681,15 @@ window.SLACK_DATA = {
       },
       "1787723067.665549": {
         "post": "1787723067.665549",
-        "lastSeen": 1787732129.999
+        "lastSeen": 1787732323.08
       },
       "1787731200.355089": {
         "post": "1787731200.355089",
-        "lastSeen": 1787732129.999
+        "lastSeen": 1787732323.08
       },
       "1787732100.448809": {
         "post": "1787732100.448809",
-        "lastSeen": 1787732129.999
+        "lastSeen": 1787732323.08
       }
     },
     "days": {
@@ -169239,13 +169250,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 17:15",
+    "at": "2026-08-26 17:19",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3729,
+    "rows": 3730,
     "named": 438,
     "unknownName": 0,
     "beforeStart": 0,
