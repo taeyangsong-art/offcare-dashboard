@@ -3,10 +3,592 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1015,
- "updatedAt": "2026-08-26 13:22",
+ "version": 1016,
+ "updatedAt": "2026-08-26 13:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1787718535.514759",
+   "date": "2026-08-26",
+   "time": "13:28",
+   "store": "키친31",
+   "biz": "6144600020",
+   "pos": "",
+   "content": "타사교체 신규설치 메뉴와테이블 등록요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "1000011439.jpg",
+     "fid": "F0BSA3JPU8P",
+     "from": "댓글",
+     "path": "menu-files/1787718535_514759-0.jpg",
+     "kind": "pos_screen",
+     "menu": []
+    },
+    {
+     "name": "1000011440.jpg",
+     "fid": "F0BSA3JRXNK",
+     "from": "댓글",
+     "path": "menu-files/1787718535_514759-1.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "메인메",
+       "name": "꽃갈비살 타타키",
+       "price": 49000
+      },
+      {
+       "category": "메인메",
+       "name": "모둠사시미(대)",
+       "price": 130000
+      },
+      {
+       "category": "메인메",
+       "name": "모둠사시미(소)",
+       "price": 49000
+      },
+      {
+       "category": "메인메",
+       "name": "모둠사시미(중)",
+       "price": 95000
+      },
+      {
+       "category": "메인메",
+       "name": "배추 우삼겹 나베",
+       "price": 38000
+      },
+      {
+       "category": "메인메",
+       "name": "참깨사시미 호소마키",
+       "price": 38000
+      },
+      {
+       "category": "메인메",
+       "name": "백합술찜",
+       "price": 35000
+      },
+      {
+       "category": "메인메",
+       "name": "국내산 보라성게 한판",
+       "price": 58000
+      },
+      {
+       "category": "메인메",
+       "name": "국내산 보라성게 반판",
+       "price": 29000
+      },
+      {
+       "category": "메인메",
+       "name": "오마카세",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "1000011441.jpg",
+     "fid": "F0BSV4TP7SQ",
+     "from": "댓글",
+     "path": "menu-files/1787718535_514759-2.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "사이드메",
+       "name": "유린기",
+       "price": 28000
+      },
+      {
+       "category": "사이드메",
+       "name": "치킨난반",
+       "price": 28000
+      },
+      {
+       "category": "사이드메",
+       "name": "닭연골튀김",
+       "price": 26000
+      },
+      {
+       "category": "사이드메",
+       "name": "초당옥수수튀김",
+       "price": 20000
+      },
+      {
+       "category": "사이드메",
+       "name": "메로구이",
+       "price": 31000
+      },
+      {
+       "category": "사이드메",
+       "name": "오늘의 생선구이",
+       "price": 27000
+      },
+      {
+       "category": "사이드메",
+       "name": "명란스파게티",
+       "price": 27000
+      },
+      {
+       "category": "사이드메",
+       "name": "야키멘타이코",
+       "price": 26000
+      },
+      {
+       "category": "사이드메",
+       "name": "피문어 카르파쵸",
+       "price": 28000
+      },
+      {
+       "category": "사이드메",
+       "name": "깨소금양념 오이",
+       "price": 11000
+      },
+      {
+       "category": "사이드메",
+       "name": "마라큐리",
+       "price": 11000
+      },
+      {
+       "category": "사이드메",
+       "name": "에이히레",
+       "price": 24000
+      },
+      {
+       "category": "사이드메",
+       "name": "백합술찜",
+       "price": 35000
+      },
+      {
+       "category": "사이드메",
+       "name": "레몬슬라이스 추가",
+       "price": 3000
+      },
+      {
+       "category": "사이드메",
+       "name": "시소 추가",
+       "price": 2000
+      },
+      {
+       "category": "사이드메",
+       "name": "마키추가",
+       "price": 5000
+      },
+      {
+       "category": "사이드메",
+       "name": "감태추가",
+       "price": 4000
+      }
+     ]
+    },
+    {
+     "name": "1000011442.jpg",
+     "fid": "F0BSMFEEK2R",
+     "from": "댓글",
+     "path": "menu-files/1787718535_514759-3.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "국산주류",
+       "name": "화요25",
+       "price": 38000
+      },
+      {
+       "category": "국산주류",
+       "name": "화요41",
+       "price": 58000
+      },
+      {
+       "category": "국산주류",
+       "name": "화요25세트(레몬+토닉)",
+       "price": 43000
+      },
+      {
+       "category": "국산주류",
+       "name": "화요41세트(레몬+토닉)",
+       "price": 63000
+      },
+      {
+       "category": "국산주류",
+       "name": "일품진로세트(싱하소다워터+레몬)",
+       "price": 45000
+      },
+      {
+       "category": "국산주류",
+       "name": "화요25세트(싱하소다워터+레몬)",
+       "price": 45000
+      },
+      {
+       "category": "국산주류",
+       "name": "일품진로43 OAK",
+       "price": 60000
+      },
+      {
+       "category": "국산주류",
+       "name": "일품진로",
+       "price": 38000
+      },
+      {
+       "category": "국산주류",
+       "name": "일품진로25 OAK",
+       "price": 45000
+      },
+      {
+       "category": "국산주류",
+       "name": "토닉워터",
+       "price": 5000
+      }
+     ]
+    },
+    {
+     "name": "1000011443.jpg",
+     "fid": "F0BSRDRQJKC",
+     "from": "댓글",
+     "path": "menu-files/1787718535_514759-4.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "준마이 사카야",
+       "price": 65000
+      },
+      {
+       "category": "",
+       "name": "기린잔 덴토 카라구",
+       "price": 100000
+      },
+      {
+       "category": "",
+       "name": "니와노우구이스 오우카",
+       "price": 100000
+      },
+      {
+       "category": "",
+       "name": "준마이 텐쥬",
+       "price": 95000
+      },
+      {
+       "category": "",
+       "name": "은하철도의 밤 다이긴죠",
+       "price": 95000
+      },
+      {
+       "category": "",
+       "name": "조카이산 순마이 다이긴죠",
+       "price": 130000
+      },
+      {
+       "category": "",
+       "name": "뉴호 키모토 준마이 햐쿠만고쿠로 시",
+       "price": 130000
+      },
+      {
+       "category": "",
+       "name": "요에몬 특별 준마이",
+       "price": 120000
+      },
+      {
+       "category": "",
+       "name": "다이나 조카라구치 준마이",
+       "price": 130000
+      },
+      {
+       "category": "",
+       "name": "뫼브 드 베트디어 브뤼 (스파클링...",
+       "price": 68000
+      },
+      {
+       "category": "",
+       "name": "마쓰자케 140ml",
+       "price": 14000
+      },
+      {
+       "category": "",
+       "name": "하우스사케 300ml(2인기준)",
+       "price": 30000
+      },
+      {
+       "category": "",
+       "name": "다인하드 그린라벨 리슬링",
+       "price": 75000
+      },
+      {
+       "category": "",
+       "name": "나카시마야 준마이긴죠 무로카나...",
+       "price": 200000
+      },
+      {
+       "category": "",
+       "name": "무츠 핫센 레드라벨",
+       "price": 200000
+      },
+      {
+       "category": "",
+       "name": "호오비덴 아카반 준마이 다이긴",
+       "price": 270000
+      },
+      {
+       "category": "",
+       "name": "자쿠 미야비 노토모 나카토리 다이...",
+       "price": 59000
+      },
+      {
+       "category": "",
+       "name": "요시노가와 히야나",
+       "price": 38000
+      }
+     ]
+    },
+    {
+     "name": "1000011444.jpg",
+     "fid": "F0BSPG5A85C",
+     "from": "댓글",
+     "path": "menu-files/1787718535_514759-5.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "위스키",
+       "name": "글렌로티스 12년 잔",
+       "price": 15000
+      },
+      {
+       "category": "위스키",
+       "name": "달모아12년 SHERRY CASK...",
+       "price": 420000
+      },
+      {
+       "category": "위스키",
+       "name": "달모아12년 잔",
+       "price": 18500
+      },
+      {
+       "category": "위스키",
+       "name": "맥캘란12년",
+       "price": 350000
+      },
+      {
+       "category": "위스키",
+       "name": "맥캘란12년 잔",
+       "price": 17000
+      },
+      {
+       "category": "위스키",
+       "name": "발베니 12년 DOUBLE WOOD",
+       "price": 360000
+      },
+      {
+       "category": "위스키",
+       "name": "발베니 12년 SINGBLE BARREL 잔",
+       "price": 35000
+      },
+      {
+       "category": "위스키",
+       "name": "후지 산로쿠 잔",
+       "price": 20000
+      },
+      {
+       "category": "위스키",
+       "name": "후지 싱글 그레인 위스키",
+       "price": 410000
+      },
+      {
+       "category": "위스키",
+       "name": "후지 싱글 블렌디드 위스",
+       "price": 420000
+      },
+      {
+       "category": "위스키",
+       "name": "후지 싱글 블렌디드 위스키 잔",
+       "price": 25000
+      }
+     ]
+    },
+    {
+     "name": "1000011445.jpg",
+     "fid": "F0BTKR7TEQG",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "소프트드링크",
+       "name": "콜라",
+       "price": 5000
+      },
+      {
+       "category": "소프트드링크",
+       "name": "제로콜라",
+       "price": 5000
+      },
+      {
+       "category": "소프트드링크",
+       "name": "토닉워터",
+       "price": 5000
+      },
+      {
+       "category": "소프트드링크",
+       "name": "스프라이",
+       "price": 5000
+      },
+      {
+       "category": "소프트드링크",
+       "name": "진저엘(토닉)",
+       "price": 5000
+      },
+      {
+       "category": "소프트드링크",
+       "name": "우롱차",
+       "price": 5000
+      },
+      {
+       "category": "소프트드링크",
+       "name": "싱하소다워",
+       "price": 6000
+      }
+     ]
+    },
+    {
+     "name": "1000011446.jpg",
+     "fid": "F0BSRDT2HUJ",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "비잔클리어(쌀)720",
+       "price": 75000
+      },
+      {
+       "category": "",
+       "name": "세키토바(고구마)720",
+       "price": 150000
+      },
+      {
+       "category": "",
+       "name": "세키노바 무라사키(고구마)300",
+       "price": 63000
+      },
+      {
+       "category": "",
+       "name": "우미(고구마) 720",
+       "price": 95000
+      },
+      {
+       "category": "",
+       "name": "하쿠스이 누기(보리)720",
+       "price": 90000
+      },
+      {
+       "category": "",
+       "name": "다이야메(고구마)900",
+       "price": 100000
+      },
+      {
+       "category": "",
+       "name": "쿠로이사니시키900",
+       "price": 85000
+      }
+     ]
+    },
+    {
+     "name": "1000011447.jpg",
+     "fid": "F0BSA3JJQTH",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "생맥주&하이볼",
+       "name": "(生)기린생맥주",
+       "price": 10000
+      },
+      {
+       "category": "생맥주&하이볼",
+       "name": "수제 생과일 사와",
+       "price": 11000
+      },
+      {
+       "category": "생맥주&하이볼",
+       "name": "우롱하이",
+       "price": 11000
+      },
+      {
+       "category": "생맥주&하이볼",
+       "name": "마쓰자케 140ml",
+       "price": 14000
+      },
+      {
+       "category": "생맥주&하이볼",
+       "name": "유자소다",
+       "price": 11000
+      },
+      {
+       "category": "생맥주&하이볼",
+       "name": "기린 제로이치(논알콜) 캔맥주",
+       "price": 15000
+      },
+      {
+       "category": "생맥주&하이볼",
+       "name": "논알콜 생과일사와",
+       "price": 15000
+      },
+      {
+       "category": "생맥주&하이볼",
+       "name": "나모나키 메이슈 하이볼",
+       "price": 10000
+      },
+      {
+       "category": "생맥주&하이볼",
+       "name": "산토리가쿠빈 하이볼",
+       "price": 11000
+      },
+      {
+       "category": "생맥주&하이볼",
+       "name": "샷추가",
+       "price": 3000
+      },
+      {
+       "category": "생맥주&하이볼",
+       "name": "샷추가",
+       "price": 4000
+      },
+      {
+       "category": "생맥주&하이볼",
+       "name": "콜키지(사케,와인)",
+       "price": 50000
+      },
+      {
+       "category": "생맥주&하이볼",
+       "name": "콜키지(쇼츄)",
+       "price": 70000
+      },
+      {
+       "category": "생맥주&하이볼",
+       "name": "콜키지(위스키)",
+       "price": 90000
+      }
+     ]
+    },
+    {
+     "name": "1000011448.jpg",
+     "fid": "F0BSMFEGAKF",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "크림브륄레",
+       "price": 0
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1787718562.123749",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787718535514759"
+  },
   {
    "ts": "1787713288.276579",
    "date": "2026-08-26",

@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5410,
+  "version": 5411,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134089,13 +134089,13 @@ window.SLACK_DATA = {
     "2026-08-26": {
       "counts": {
         "as": {
+          "배선유": 7,
           "서상원": 3,
           "고경림": 11,
           "김현기": 5,
           "심성현": 7,
           "김규빈": 2,
           "송태양": 3,
-          "배선유": 6,
           "김동욱": 2
         },
         "onboarding": {
@@ -134123,6 +134123,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "13:23",
+          "store": "강창구찹쌀진순대 영등포에이스하이테크시티점",
+          "biz": "8982302229",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "보안리더기오류",
+          "hw": "",
+          "intake": "offline",
+          "note": "강창구 담당자에 연락처 확인 요청"
+        },
         {
           "time": "13:14",
           "store": "제주청과농산",
@@ -134898,10 +134909,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 54,
-        "offline": 16,
+        "offline": 17,
         "unknown": 0
       },
-      "updatedAt": "13:25",
+      "updatedAt": "13:28",
       "voc": {
         "responses": 4,
         "install": {
@@ -135069,19 +135080,23 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787718443.179
+        "lastSeen": 1787718561.399
       },
       "1787717700.434799": {
         "post": "1787717700.434799",
-        "lastSeen": 1787718443.179
+        "lastSeen": 1787718561.399
       },
       "1787717860.037569": {
         "post": "1787717860.037569",
-        "lastSeen": 1787718443.179
+        "lastSeen": 1787718561.399
       },
       "1787718330.130759": {
         "post": "1787718330.130759",
-        "lastSeen": 1787718443.179
+        "lastSeen": 1787718561.399
+      },
+      "1787718535.514759": {
+        "post": "1787718535.514759",
+        "lastSeen": 1787718561.399
       }
     },
     "days": {
@@ -166970,7 +166985,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 13:27",
+    "at": "2026-08-26 13:29",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
