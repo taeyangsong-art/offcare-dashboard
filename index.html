@@ -2321,6 +2321,33 @@ function menuregDl(name,blob){
   const a=document.createElement('a');
   a.href=URL.createObjectURL(blob); a.download=name; a.click(); URL.revokeObjectURL(a.href);
 }
+/* 양식을 내려받고 나면 변환란을 비운다.
+ * menuregFillFromOcr 은 기존 내용 '뒤에 이어붙이는' 동작이라, 매장을 연달아 처리하면
+ * 앞 매장 메뉴가 남아 다음 매장 양식에 섞여 들어갔다. 파일명에 쓰는 menuregXlName 도
+ * 처음 값이 계속 남아 다른 매장 이름으로 저장되는 문제가 있었다.
+ * 같은 매장의 다른 POS 양식을 이어서 받을 수도 있으므로 한 단계 되돌리기를 남겨둔다. */
+let menuregXlUndo=null;
+function menuregClearGrid(reason){
+  const ta=document.getElementById('mrXlGrid');
+  const prev=(ta?ta.value:menuregXlCache)||'';
+  if(!prev.trim()) return false;
+  menuregXlUndo={text:prev, name:menuregXlName};
+  if(ta) ta.value='';
+  menuregXlCache=''; menuregXlName='';
+  const info=document.getElementById('mrXlInfo');
+  if(info) info.innerHTML='🧹 '+escapeHtml(reason)+' — 변환란을 비웠습니다 (다음 매장과 섞이지 않도록). '
+    +'<button class="btn" style="padding:2px 10px;font-size:12px;margin-left:4px" onclick="menuregUndoClear()">↩ 되돌리기</button>';
+  return true;
+}
+function menuregUndoClear(){
+  if(!menuregXlUndo) return;
+  const ta=document.getElementById('mrXlGrid');
+  if(ta) ta.value=menuregXlUndo.text;
+  menuregXlCache=menuregXlUndo.text; menuregXlName=menuregXlUndo.name||'';
+  menuregXlUndo=null;
+  const info=document.getElementById('mrXlInfo');
+  if(info) info.textContent='↩ 되돌렸습니다 — 같은 내용으로 다른 POS 양식도 받을 수 있습니다.';
+}
 async function menuregGen(pi,gridId){
   const P=MENUREG_POS[pi]; const rows=menuregParseGrid(gridId);
   if(!rows.length){ alert('메뉴 항목이 없습니다.\n한 줄당 "'+FMT_HINT+'" 형식입니다.\n뒤쪽 4칸은 없으면 생략해도 됩니다 (최소 "상품명 | 가격").\n가격이 정해지지 않은 상품은 가격 칸에 "시가" 라고 적으면 시가상품으로 넣습니다.'); return; }
@@ -2356,7 +2383,10 @@ async function menuregGen(pi,gridId){
   const wb=XLSX.utils.book_new(); XLSX.utils.book_append_sheet(wb,ws,'상품등록');
   const out=XLSX.write(wb,{bookType:'xlsx',type:'array'});
   menuregDl(P.key+'_업로드_'+safe+'.xlsx', new Blob([out],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'}));
-  alert((P.note?'⚠️ '+P.note:'✅ '+P.label+' 양식 '+rows.length+'행을 xlsx 로 내려받았습니다.')+menuregDedupMsg());
+  // 내려받기 성공한 경우에만 비운다(라이브러리 실패로 복사 경로를 탄 경우는 위에서 이미 return).
+  const cleared=menuregClearGrid(P.label+' 양식을 내려받았습니다');
+  alert((P.note?'⚠️ '+P.note:'✅ '+P.label+' 양식 '+rows.length+'행을 xlsx 로 내려받았습니다.')+menuregDedupMsg()
+    +(cleared?'\n\n🧹 변환란을 비웠습니다 — 다음 매장 메뉴와 섞이지 않습니다.\n같은 매장으로 다른 POS 양식도 받으려면 화면의 [↩ 되돌리기] 를 누르세요.':''));
 }
 // 붙여넣기용 TSV(탭 구분) — 엑셀 양식의 데이터 첫 행 첫 칸에 Ctrl+V 하면 컬럼에 맞게 들어감
 function menuregTsv(pi,gridId){
