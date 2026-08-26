@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5375,
+  "version": 5376,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134098,7 +134098,7 @@ window.SLACK_DATA = {
           "김동욱": 2
         },
         "onboarding": {
-          "김현기": 1,
+          "김현기": 2,
           "심성현": 4,
           "김동욱": 2,
           "고경림": 2,
@@ -134139,6 +134139,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "영상 통화 재실행 방법 안내 완료"
+        },
+        {
+          "time": "11:56",
+          "store": "치킨신드롬 봉명자이점",
+          "biz": "5383701738",
+          "cat": "onboarding",
+          "emp": "김현기",
+          "req": "<https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1787668012630819|이전 내역> / 본사에 변경 가능 확인후 재인입되어 원격 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "여기 가결제 qr인식 해도 가결제 통과 안되네요... 일단 온보딩은 완료 했고 카드결제는 vcat으로 정상 구동 확인 여기 가결제 qr인식 해도 가결제 통과 안되네요... 일단 온보딩은 완료 했고 카드결제는 vcat으로 정상 구동 확인"
         },
         {
           "time": "11:52",
@@ -134671,7 +134682,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 35,
+        "online": 36,
         "offline": 15,
         "unknown": 0
       },
@@ -134816,7 +134827,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787714124.359
+        "lastSeen": 1787714300.603
       }
     },
     "days": {
@@ -166625,7 +166636,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 12:15",
+    "at": "2026-08-26 12:18",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
