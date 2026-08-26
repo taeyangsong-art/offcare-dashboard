@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5438,
+  "version": 5439,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134088,21 +134088,21 @@ window.SLACK_DATA = {
     },
     "2026-08-26": {
       "counts": {
+        "extern": {
+          "서상원": 9,
+          "김동욱": 2,
+          "김현기": 1
+        },
         "as": {
-          "서상원": 6,
           "심성현": 10,
           "김동욱": 7,
           "고경림": 17,
+          "서상원": 5,
           "배선유": 11,
           "김기범": 2,
           "김현기": 5,
           "김규빈": 2,
           "송태양": 3
-        },
-        "extern": {
-          "서상원": 8,
-          "김동욱": 2,
-          "김현기": 1
         },
         "onboarding": {
           "고경림": 3,
@@ -134154,7 +134154,7 @@ window.SLACK_DATA = {
           "time": "14:28",
           "store": "그여행 문덕점",
           "biz": "5101993861",
-          "cat": "as",
+          "cat": "extern",
           "emp": "서상원",
           "req": "외주",
           "hw": "",
@@ -135423,11 +135423,11 @@ window.SLACK_DATA = {
                 "cat": "사용중 오류가 자주 발생함"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• OB완료 • 현재정상작동중이시며, 작성 여부도 기억이 안나신다고 함 • 추후 동일증상시 연락주시기로 함 OB완료 현재정상작동중이시며, 작성 여부도 기억이 안나신다고 함 추후 동일증상시 연락주시기로 함",
+            "doneDate": "2026-08-26"
           },
           {
             "time": "11:34",
@@ -135477,11 +135477,19 @@ window.SLACK_DATA = {
         "praises": []
       },
       "ob": {
-        "count": 12,
+        "count": 13,
         "byEmp": {
-          "김규빈": 12
+          "김규빈": 13
         },
         "items": [
+          {
+            "key": "2026년 8월 26일 오전 8:36:16|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787548296242629#1",
+            "handler": "김규빈",
+            "status": "",
+            "recvDate": "2026-08-26",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787548296242629"
+          },
           {
             "key": "2026년 8월 26일 오전 8:34:03|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787292036843769#1",
             "handler": "김규빈",
@@ -135614,7 +135622,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787722415.217
+        "lastSeen": 1787722521.93
       },
       "1787722356.190299": {
         "post": "1787722356.190299",
@@ -167707,23 +167715,23 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 14:33",
+    "at": "2026-08-26 14:35",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3728,
-    "named": 423,
+    "named": 424,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 423,
+    "done": 424,
     "byStatus": {
       "일정등록완료": 261,
       "1차부재": 95,
       "점주직접접수": 37,
       "설치불가": 9,
-      "(빈칸)": 5,
+      "(빈칸)": 6,
       "자가설치": 14,
       "설치보류요청": 2
     }
