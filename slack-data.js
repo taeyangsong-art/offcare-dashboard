@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5467,
+  "version": 5468,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134088,14 +134088,8 @@ window.SLACK_DATA = {
     },
     "2026-08-26": {
       "counts": {
-        "extern": {
-          "김동욱": 3,
-          "배선유": 1,
-          "서상원": 10,
-          "김현기": 1
-        },
         "as": {
-          "서상원": 7,
+          "서상원": 8,
           "최민석": 4,
           "고경림": 24,
           "심성현": 11,
@@ -134105,6 +134099,12 @@ window.SLACK_DATA = {
           "배선유": 13,
           "김기범": 3,
           "김규빈": 2
+        },
+        "extern": {
+          "김동욱": 3,
+          "배선유": 1,
+          "서상원": 10,
+          "김현기": 1
         },
         "onboarding": {
           "심성현": 6,
@@ -134156,6 +134156,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "15:48",
+          "store": "윤살롱",
+          "biz": "5823800674",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "MPOS1700ae 영수증 출력용으로 사용원하셔서 연결 도움부탁드립니다(케이블 구매 완료)",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "15:47",
           "store": "안다다씨(Anda da Sea)",
@@ -135755,11 +135766,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 118,
+        "online": 119,
         "offline": 29,
         "unknown": 0
       },
-      "updatedAt": "15:47",
+      "updatedAt": "15:48",
       "voc": {
         "responses": 4,
         "install": {
@@ -136139,7 +136150,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787726899.156
+        "lastSeen": 1787727090.54
       },
       "1787722356.190299": {
         "post": "1787722356.190299",
@@ -136147,11 +136158,11 @@ window.SLACK_DATA = {
       },
       "1787723067.665549": {
         "post": "1787723067.665549",
-        "lastSeen": 1787726899.156
+        "lastSeen": 1787727090.54
       },
       "1787725802.816159": {
         "post": "1787725802.816159",
-        "lastSeen": 1787726899.156
+        "lastSeen": 1787727090.54
       }
     },
     "days": {
@@ -168408,7 +168419,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 15:48",
+    "at": "2026-08-26 15:51",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
