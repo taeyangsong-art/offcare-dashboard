@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5359,
+  "version": 5360,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134096,7 +134096,7 @@ window.SLACK_DATA = {
           "배선유": 5,
           "고경림": 7,
           "심성현": 5,
-          "송태양": 1,
+          "송태양": 2,
           "김현기": 4,
           "김동욱": 2
         },
@@ -134116,6 +134116,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:30",
+          "store": "댕샤워",
+          "biz": "7756200776",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "• 메뉴 복사O / 다운로드 요청 / 프론트+터미널",
+          "hw": "",
+          "intake": "online",
+          "note": "• 익일 오전 11시 예약요청으로 예약 완료입니다 익일 오전 11시 예약요청으로 예약 완료입니다"
+        },
         {
           "time": "11:23",
           "store": "레이지모닝",
@@ -134559,7 +134570,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 28,
+        "online": 29,
         "offline": 12,
         "unknown": 0
       },
@@ -134708,7 +134719,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787711842.81
+        "lastSeen": 1787711908.734
       }
     },
     "days": {
@@ -166509,7 +166520,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 11:37",
+    "at": "2026-08-26 11:38",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
