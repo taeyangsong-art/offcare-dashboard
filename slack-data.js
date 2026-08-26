@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5321,
+  "version": 5322,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134149,6 +134149,10 @@ window.SLACK_DATA = {
     },
     "2026-08-26": {
       "counts": {
+        "onboarding": {
+          "심성현": 2,
+          "배선유": 1
+        },
         "extern": {
           "서상원": 3
         },
@@ -134158,16 +134162,23 @@ window.SLACK_DATA = {
           "고경림": 2,
           "심성현": 2
         },
-        "onboarding": {
-          "심성현": 1,
-          "배선유": 1
-        },
         "menu": {
           "배선유": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:03",
+          "store": "빵빵쌀한입",
+          "biz": "1784301366",
+          "cat": "onboarding",
+          "emp": "심성현",
+          "req": "포프(노트북) 설치 중 프론트에서 초기화 실패 오류문구가 떠서 점검 부탁드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "[기록용]7430503720 / 100%국산콩 시골 손두부 사업자의 TID정보가 들어가있었음 cc. cc."
+        },
         {
           "time": "09:59",
           "store": "그여행 무거점",
@@ -134302,11 +134313,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 8,
+        "online": 9,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "10:10",
+      "updatedAt": "10:12",
       "voc": {
         "responses": 2,
         "install": {
@@ -134444,7 +134455,11 @@ window.SLACK_DATA = {
       },
       "1787677200.356799": {
         "post": "1787677200.356799",
-        "lastSeen": 1787706679.386
+        "lastSeen": 1787706864.049
+      },
+      "1787706753.326809": {
+        "post": "1787706753.326809",
+        "lastSeen": 1787706864.049
       }
     },
     "days": {
@@ -166197,7 +166212,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 10:11",
+    "at": "2026-08-26 10:14",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
