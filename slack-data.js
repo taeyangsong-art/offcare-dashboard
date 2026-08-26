@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5436,
+  "version": 5437,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134091,9 +134091,9 @@ window.SLACK_DATA = {
         "as": {
           "심성현": 10,
           "김동욱": 7,
+          "고경림": 17,
           "서상원": 5,
           "배선유": 11,
-          "고경림": 16,
           "김기범": 2,
           "김현기": 5,
           "김규빈": 2,
@@ -134114,8 +134114,8 @@ window.SLACK_DATA = {
           "김동욱": 2
         },
         "transfer": {
-          "김동욱": 2,
-          "송태양": 2
+          "송태양": 3,
+          "김동욱": 2
         },
         "menu": {
           "배선유": 3,
@@ -134126,6 +134126,17 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
+        {
+          "time": "13:29",
+          "store": "성북동돼지갈비집휴게소",
+          "biz": "4454500373",
+          "handler": "고경림",
+          "cat": "as",
+          "intake": "offline",
+          "reasons": [
+            "1차 부재"
+          ]
+        },
         {
           "time": "13:10",
           "store": "리리커피로스터리",
@@ -134182,6 +134193,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "칼날 위치이동해서 열리고 닫는데는 문제없으나 에러불 지속발생하여 대체품 출고"
+        },
+        {
+          "time": "14:10",
+          "store": "마음쉼터 힐링숲",
+          "biz": "8640103859",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "유프 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포프(PC)+유프 온보딩완료"
         },
         {
           "time": "14:10",
@@ -134380,6 +134402,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "터미널 1047554433 VAN (PG용터미널) 로 재온보딩완료 감사합니다! 감사합니다!"
+        },
+        {
+          "time": "13:30",
+          "store": "코리안 비우티 코드(KOREAN BEAUTY COURT",
+          "biz": "8602001355",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "8월 26일 오후 2시 / 메뉴복사O / 프론트",
+          "hw": "",
+          "intake": "online",
+          "note": "• 명변완료입니다 명변완료입니다"
         },
         {
           "time": "13:29",
@@ -135298,11 +135331,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 82,
-        "offline": 24,
+        "online": 84,
+        "offline": 25,
         "unknown": 0
       },
-      "updatedAt": "14:25",
+      "updatedAt": "14:30",
       "voc": {
         "responses": 4,
         "install": {
@@ -135433,11 +135466,35 @@ window.SLACK_DATA = {
         "praises": []
       },
       "ob": {
-        "count": 7,
+        "count": 10,
         "byEmp": {
-          "김규빈": 7
+          "김규빈": 10
         },
         "items": [
+          {
+            "key": "2026년 8월 26일 오전 8:27:53|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787129661866799#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-26",
+            "planDate": "2026-08-28",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787129661866799"
+          },
+          {
+            "key": "2026년 8월 26일 오전 8:23:16|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787278532580649#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-26",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787278532580649"
+          },
+          {
+            "key": "2026년 8월 26일 오전 8:22:04|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787204175094689#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-26",
+            "planDate": "2026-08-28",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787204175094689"
+          },
           {
             "key": "2026년 8월 26일 오전 8:19:14|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787289247821409#1",
             "handler": "김규빈",
@@ -135530,7 +135587,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787721979.957
+        "lastSeen": 1787722227.241
       }
     },
     "days": {
@@ -167619,20 +167676,20 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 14:26",
+    "at": "2026-08-26 14:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3728,
-    "named": 418,
+    "named": 421,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 418,
+    "done": 421,
     "byStatus": {
-      "일정등록완료": 258,
-      "1차부재": 93,
+      "일정등록완료": 260,
+      "1차부재": 94,
       "점주직접접수": 37,
       "설치불가": 9,
       "(빈칸)": 5,
