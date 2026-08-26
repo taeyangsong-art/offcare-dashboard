@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5362,
+  "version": 5363,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134088,17 +134088,17 @@ window.SLACK_DATA = {
     },
     "2026-08-26": {
       "counts": {
-        "extern": {
-          "김동욱": 1,
-          "서상원": 4
-        },
         "as": {
-          "배선유": 5,
+          "배선유": 6,
           "고경림": 7,
           "심성현": 5,
           "송태양": 2,
           "김현기": 4,
           "김동욱": 2
+        },
+        "extern": {
+          "김동욱": 1,
+          "서상원": 4
         },
         "onboarding": {
           "고경림": 2,
@@ -134126,6 +134126,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 완료"
+        },
+        {
+          "time": "11:34",
+          "store": "멕시카나 고잔호수점",
+          "biz": "6981402985",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "메이트포스 연동 요청 주시어 도움 부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "익일 방문 매장 / 메이트포스 사용매장이나 토스포스랑 연동해놓으셔서 변경중 익일 방문 매장 / 메이트포스 사용매장이나 토스포스랑 연동해놓으셔서 변경중"
         },
         {
           "time": "11:30",
@@ -134582,10 +134593,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 30,
-        "offline": 12,
+        "offline": 13,
         "unknown": 0
       },
-      "updatedAt": "11:37",
+      "updatedAt": "11:45",
       "voc": {
         "responses": 3,
         "install": {
@@ -134730,7 +134741,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787712085.3
+        "lastSeen": 1787712321.914
       }
     },
     "days": {
@@ -166531,7 +166542,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 11:41",
+    "at": "2026-08-26 11:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
