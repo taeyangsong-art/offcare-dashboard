@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5344,
+  "version": 5345,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134088,6 +134088,13 @@ window.SLACK_DATA = {
     },
     "2026-08-26": {
       "counts": {
+        "as": {
+          "고경림": 5,
+          "심성현": 4,
+          "김현기": 3,
+          "배선유": 3,
+          "김동욱": 2
+        },
         "onboarding": {
           "고경림": 2,
           "김동욱": 1,
@@ -134096,13 +134103,6 @@ window.SLACK_DATA = {
         },
         "extern": {
           "서상원": 4
-        },
-        "as": {
-          "김현기": 3,
-          "배선유": 3,
-          "심성현": 3,
-          "고경림": 4,
-          "김동욱": 2
         },
         "transfer": {
           "송태양": 1
@@ -134113,6 +134113,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:02",
+          "store": "푸페또클럽",
+          "biz": "5272802017",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "터미널 영수증 컷팅부분 되지않아 점검 부탁드립니다ㅣ!",
+          "hw": "",
+          "intake": "online",
+          "note": "영상통화 확인결과, 터미널기기 컷팅불량으로 확인 금일 대체기 출고요청완료 및 8월 31일 회수요청 완료"
+        },
+        {
+          "time": "11:00",
+          "store": "과천빙상장스케이트날정비코너",
+          "biz": "2875800457",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "오케이포스/ 업그레이드 이후 월, 연간 매출 확인하는기능이 보이지 않아 기능설명 부탁드립니다!",
+          "hw": "",
+          "intake": "offline",
+          "note": "완료 / 사용 방법 전달 완료"
+        },
         {
           "time": "10:55",
           "store": "블랑코뷰티",
@@ -134424,11 +134446,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 22,
-        "offline": 6,
+        "online": 23,
+        "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "11:06",
+      "updatedAt": "11:09",
       "voc": {
         "responses": 2,
         "install": {
@@ -134544,7 +134566,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787710042.684
+        "lastSeen": 1787710225.21
       }
     },
     "days": {
@@ -166321,7 +166343,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 11:07",
+    "at": "2026-08-26 11:10",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
