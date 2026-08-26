@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1004,
- "updatedAt": "2026-08-26 11:16",
+ "version": 1005,
+ "updatedAt": "2026-08-26 11:17",
  "days": 30,
  "items": [
+  {
+   "ts": "1787710621.454649",
+   "date": "2026-08-26",
+   "time": "11:17",
+   "store": "움버거",
+   "biz": "1358560825",
+   "pos": "퍼스트포스",
+   "content": "포스에만\n식권 창 만들어주세요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787710624.058389",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787710621454649"
+  },
   {
    "ts": "1787710499.120559",
    "date": "2026-08-26",
@@ -22,12 +43,13 @@ window.MENU_REQUESTS = {
    "datt": [],
    "replies": [
     "소불고기뚝배기 12,000원\n감자탕 12,000원\n아구찜 25,000원 / 35,000원\n해물탕 25,000원 / 35,000원\n해물 파전 10,000원",
-    "아구찜, 해물탕 소/중 문구 없이 요청 주셨습니다."
+    "아구찜, 해물탕 소/중 문구 없이 요청 주셨습니다.",
+    "넴 감사합니당"
    ],
-   "rc": 3,
-   "lr": "1787710544.664529",
+   "rc": 6,
+   "lr": "1787710637.972159",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787710499120559"
   },
