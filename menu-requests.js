@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 995,
- "updatedAt": "2026-08-26 09:50",
+ "version": 996,
+ "updatedAt": "2026-08-26 09:59",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BSNF7L8P8",
      "from": "댓글",
-     "path": "menu-files/1787705370_384289-0.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -196,13 +195,93 @@ window.MENU_REQUESTS = {
        "name": "얼그레이",
        "price": 4000
       }
+     ],
+     "path": "menu-files/1787705370_384289-0.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BSNGGGK1C",
+     "from": "댓글",
+     "path": "menu-files/1787705370_384289-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "아이스 아메리카노 스몰",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "아메리카노 핫 스몰",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "아메리카노 라지",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "아이스 아메리카노 라지",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "라떼 스몰",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "라떼 라지",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "아이스라떼 스몰",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "아이스라떼 라지",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "에이드 스무디 라지",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "모카 핫 스몰",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "모카핫 라지",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "모카 아이스 스몰",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "모카 아이스 라지",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "번다버그 스몰",
+       "price": 0
+      }
      ]
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 3,
-   "lr": "1787705411.023879",
+   "rc": 4,
+   "lr": "1787705920.816559",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
