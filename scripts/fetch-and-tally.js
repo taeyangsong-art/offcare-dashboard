@@ -86,18 +86,24 @@ const pad = n => String(n).padStart(2, '0');
 
 // 집계 대상 날짜: TALLY_DATE_OFFSET (0=오늘, -1=어제). 새벽 최종집계는 -1 로 '전날' 마감.
 const offset = parseInt(process.env.TALLY_DATE_OFFSET || '0', 10);
+// 업무일 경계 = 새벽 1시. 자정~01:00 은 '그 전날' 업무로 집계한다.
+// 야간당직자가 새벽 1시까지 근무하는데 00:30 건이 달력상 다음날로 넘어가 있었다.
+// (실측: 최근 76일 00시대 5건 · 01~05시 3건 — 01시를 경계로 잡으면 야간 근무분이 제 날짜에 붙는다)
+const DAY_START_H = 1;
+const DAY_OFF_MS = (DAY_START_H - 9) * 3600 * 1000;   // UTC 자정 → 그 날 업무 시작(01:00 KST)까지의 보정
 const now = new Date();
-const kstNow = new Date(now.getTime() + 9 * 3600 * 1000);
+// 업무일 기준 '지금' — 01시 이전이면 아직 전날 업무일이다
+const kstNow = new Date(now.getTime() + 9 * 3600 * 1000 - DAY_START_H * 3600 * 1000);
 const tgt = new Date(Date.UTC(kstNow.getUTCFullYear(), kstNow.getUTCMonth(), kstNow.getUTCDate() + offset));
 const Y = tgt.getUTCFullYear(), M = tgt.getUTCMonth(), D = tgt.getUTCDate();
 const targetDate = `${Y}-${pad(M + 1)}-${pad(D)}`;
-const oldest = (Date.UTC(Y, M, D) - 9 * 3600 * 1000) / 1000;       // 대상일 00:00 KST
-const latestBound = (Date.UTC(Y, M, D + 1) - 9 * 3600 * 1000) / 1000; // 다음날 00:00 KST (하루 경계 상한)
-const todayKstDate = `${kstNow.getUTCFullYear()}-${pad(kstNow.getUTCMonth() + 1)}-${pad(kstNow.getUTCDate())}`;  // 완료 처리된 '오늘' 날짜
+const oldest = (Date.UTC(Y, M, D) + DAY_OFF_MS) / 1000;            // 대상일 01:00 KST
+const latestBound = (Date.UTC(Y, M, D + 1) + DAY_OFF_MS) / 1000;   // 다음날 01:00 KST (하루 경계 상한)
+const todayKstDate = `${kstNow.getUTCFullYear()}-${pad(kstNow.getUTCMonth() + 1)}-${pad(kstNow.getUTCDate())}`;  // 완료 처리된 '오늘' 업무일
 
 // 날짜 유틸 (YYYY-MM-DD ↔ KST 하루 경계)
 function dateUTC(s) { const [y, mo, da] = s.split('-').map(Number); return Date.UTC(y, mo - 1, da); }
-function boundsOf(s) { const t = dateUTC(s); return { oldest: (t - 9 * 3600 * 1000) / 1000, latestBound: (t + 86400000 - 9 * 3600 * 1000) / 1000 }; }
+function boundsOf(s) { const t = dateUTC(s); return { oldest: (t + DAY_OFF_MS) / 1000, latestBound: (t + 86400000 + DAY_OFF_MS) / 1000 }; }   // 업무일 = 01:00 ~ 다음날 01:00 KST
 function dateList(fromS, toS) { const out = []; for (let t = dateUTC(fromS), e = dateUTC(toS); t <= e; t += 86400000) { const d = new Date(t); out.push(`${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())}`); } return out; }
 
 // 백필: BACKFILL_FROM=YYYY-MM-DD 지정 시 그 날부터 오늘까지 모든 카테고리를 날짜별로 다시 적재 (일회성)
@@ -117,8 +123,9 @@ function nowKstStamp() {
   const d = new Date(Date.now() + 9 * 3600 * 1000);
   return `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())}`;
 }
+// 업무일 기준 날짜 — 00:30 건은 전날로 잡힌다(DAY_START_H)
 function kstDate(ts) {
-  const d = new Date(parseFloat(ts) * 1000 + 9 * 3600 * 1000);
+  const d = new Date(parseFloat(ts) * 1000 + 9 * 3600 * 1000 - DAY_START_H * 3600 * 1000);
   return `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())}`;
 }
 function freshVoc() {

@@ -324,7 +324,9 @@ var WATCH_CHANNELS = [
 ];
 var GH_REPO = 'taeyangsong-art/offcare-dashboard';
 var GH_EVENT = 'slack-new-message';      // 워크플로의 repository_dispatch types 와 일치해야 함
-var WATCH_HOURS = { from: 9, to: 23 };   // KST 업무시간 밖에는 트리거 실행시간을 쓰지 않는다
+// KST 업무시간 밖에는 트리거 실행시간을 쓰지 않는다.
+// 업무일이 05:30~다음날 01:00 이라 자정을 넘는 창이다(from > to 이면 넘김으로 해석).
+var WATCH_HOURS = { from: 5, to: 1 };
 
 function prop_(k) { return PropertiesService.getScriptProperties().getProperty(k) || ''; }
 
@@ -350,7 +352,10 @@ function channelSignature_(chId, token) {
 function watchSlackAndDispatch() {
   var props = PropertiesService.getScriptProperties();
   var hour = parseInt(Utilities.formatDate(new Date(), 'Asia/Seoul', 'H'), 10);
-  if (hour < WATCH_HOURS.from || hour >= WATCH_HOURS.to) { return; }   // 업무시간 밖
+  var active = (WATCH_HOURS.from < WATCH_HOURS.to)
+    ? (hour >= WATCH_HOURS.from && hour < WATCH_HOURS.to)
+    : (hour >= WATCH_HOURS.from || hour < WATCH_HOURS.to);   // 자정을 넘는 창
+  if (!active) { return; }   // 업무시간 밖
 
   var token = prop_('SLACK_BOT_TOKEN');
   if (!token) { console.log('SLACK_BOT_TOKEN 스크립트 속성이 없습니다.'); return; }

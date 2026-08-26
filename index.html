@@ -1730,7 +1730,11 @@ function load(k, def){ try{ const v=JSON.parse(localStorage.getItem(k)); return 
 function save(k, v){ localStorage.setItem(k, JSON.stringify(v)); }
 
 /* ================= Date helpers ================= */
-function today(){ return new Date(); }  // 실제 오늘 사용
+// 업무일 경계 = 새벽 1시(집계 스크립트 DAY_START_H 와 같은 값).
+// 야간당직자가 새벽 1시까지 근무하므로 00:00~01:00 은 아직 '어제' 업무일이다.
+// 이 값이 집계와 어긋나면 자정 직후 대시보드만 새 날짜로 넘어가 빈 화면을 보여준다.
+const DAY_START_H = 1;
+function today(){ const d=new Date(); if(d.getHours()<DAY_START_H) d.setDate(d.getDate()-1); return d; }  // 업무일 기준 오늘
 function ymd(d){ const y=d.getFullYear(), m=String(d.getMonth()+1).padStart(2,'0'), dd=String(d.getDate()).padStart(2,'0'); return `${y}-${m}-${dd}`; }
 function parseYmd(s){ const [y,m,dd]=s.split("-").map(Number); return new Date(y,m-1,dd); }
 function addDays(d,n){ const x=new Date(d); x.setDate(x.getDate()+n); return x; }
@@ -1770,7 +1774,9 @@ let ovMode = "today";                        // yesterday | today | d7 | d30 | r
 let ovShift = "all";                         // all(전체) | night(야간, 18:00 이후 인입)
 let vocFilterInd = "", vocFilterRea = "";    // VOC 저점 매장 필터: 업종 / 저점이유 ("" = 전체)
 const NIGHT_FROM = "18:00";                   // 야간 기준 시각
-function isNightTime(t){ return (t||"") >= NIGHT_FROM; }
+// 야간 = 18:00 ~ 다음날 01:00. 업무일이 01시에 끝나므로 00시대도 야간에 포함해야 한다
+// (전에는 "00:30" >= "18:00" 이 false 라 야간 필터에서 통째로 빠졌다).
+function isNightTime(t){ t=t||""; if(!t) return false; return t >= NIGHT_FROM || t < "01:00"; }
 function shiftToggle(){ return `<div class="seg"><button class="${ovShift==='all'?'on':''}" onclick="setOvShift('all')">☀️ 전체</button><button class="${ovShift==='night'?'on':''}" onclick="setOvShift('night')">🌙 야간</button></div>`; }
 function setOvShift(s){ ovShift=s; renderOverview(); }
 // 야간(18:00 이후 인입) 항목 = 처리(done)+미처리(pending)+VOC처리, 시간>=18:00

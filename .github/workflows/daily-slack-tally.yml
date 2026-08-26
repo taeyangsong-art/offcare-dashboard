@@ -9,7 +9,11 @@ name: daily-slack-tally (progress)
 #   schedule 은 트리거가 죽었을 때를 대비한 안전망으로 그대로 둔다.
 on:
   schedule:
-    - cron: '*/10 0-13 * * *'
+    # 업무일이 05:30~다음날 01:00 KST 로 넓어져서 실행 창도 맞춘다(UTC = KST-9).
+    # 05:30 KST = 20:30 UTC(전날) · 01:00 KST = 16:00 UTC → 20:30~23:59, 00:00~16:00 UTC
+    - cron: '30,40,50 20 * * *'
+    - cron: '*/10 21-23 * * *'
+    - cron: '*/10 0-16 * * *'
   repository_dispatch:
     types: [slack-new-message]
   workflow_dispatch: {}
