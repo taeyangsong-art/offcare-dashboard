@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1023,
- "updatedAt": "2026-08-26 14:52",
+ "version": 1024,
+ "updatedAt": "2026-08-26 14:53",
  "days": 30,
  "items": [
   {
@@ -21,10 +21,13 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [
-    "이거 아까 위에 로칼 다른지점하고 똑같은거같은데"
+    "이거 아까 위에 로칼 다른지점하고 똑같은거같은데",
+    "이미지도 똑같으면 그냥 복제 떠버리는게 나을지도요 온보딩 안되어잇으면",
+    "복제하겠습니다.",
+    "온보딩 여부확인하고 메뉴 쳌!"
    ],
-   "rc": 2,
-   "lr": "1787723543.645079",
+   "rc": 5,
+   "lr": "1787723563.783469",
    "rfx": 3,
    "status": "confirm",
    "handler": "심성현",
