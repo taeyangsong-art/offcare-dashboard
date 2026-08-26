@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5295,
+  "version": 5296,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134138,12 +134138,26 @@ window.SLACK_DATA = {
     },
     "2026-08-26": {
       "counts": {
+        "as": {
+          "심성현": 1
+        },
         "extern": {
           "서상원": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:16",
+          "store": "우리동네 힐링샵 남양점",
+          "biz": "3083301949",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "프론트 온보딩 부탁드립니다. :감사합니다꾸벅:",
+          "hw": "",
+          "intake": "online",
+          "note": "매장 아님 1015 통화 요청"
+        },
         {
           "time": "09:03",
           "store": "황태진국",
@@ -134157,7 +134171,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 1,
         "unknown": 0
       },
@@ -134290,7 +134304,7 @@ window.SLACK_DATA = {
       },
       "1787677200.356799": {
         "post": "1787677200.356799",
-        "lastSeen": 1787703497.266
+        "lastSeen": 1787703565.661
       }
     },
     "days": {
@@ -165996,7 +166010,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 09:18",
+    "at": "2026-08-26 09:19",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
