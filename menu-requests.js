@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1030,
- "updatedAt": "2026-08-26 16:37",
+ "version": 1031,
+ "updatedAt": "2026-08-26 16:55",
  "days": 30,
  "items": [
   {
@@ -40833,30 +40833,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785140275706329"
-  },
-  {
-   "ts": "1785138911.307079",
-   "date": "2026-07-27",
-   "time": "16:55",
-   "store": "원아이원주식회사",
-   "biz": "4608603052",
-   "pos": "퍼스트포스",
-   "content": "메뉴 복사 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "여기 동일 사업자번호인데 2van 입니다.\nKSnet 토플파에 등록되어있는 메뉴  KPN 쪽으로 복사 부탁 드리겠습니다. :꾸벅:",
-    "여기 단말기 양도 받아서 1avn 만드는 작업중에 있습니다..!\n해당 매장은 동일 문의 드릴 일 없도록 깔끔하게 처리 해두겠습니다...!  :햄스터-꾸벅:"
-   ],
-   "rc": 5,
-   "lr": "1785139817.038509",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785138911307079"
   }
  ],
  "ocr": {
