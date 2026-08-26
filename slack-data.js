@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5322,
+  "version": 5323,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -78601,18 +78601,18 @@ window.SLACK_DATA = {
       },
       "updatedAt": "23:49",
       "voc": {
-        "responses": 24,
+        "responses": 23,
         "install": {
           "count": 11,
           "low": 1
         },
         "nps": {
-          "count": 24,
+          "count": 23,
           "low": 5
         },
         "high": {
           "install": 5,
-          "nps": 14
+          "nps": 13
         },
         "npsDist": {
           "0": 1,
@@ -78622,7 +78622,7 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 2,
           "9": 2,
-          "10": 14
+          "10": 13
         },
         "installDist": {
           "2": 1,
@@ -78652,7 +78652,7 @@ window.SLACK_DATA = {
             "low": 3
           },
           "1개월": {
-            "total": 3,
+            "total": 2,
             "low": 0
           },
           "3개월": {
@@ -78662,7 +78662,7 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KPN": {
-            "total": 6,
+            "total": 5,
             "low": 0
           },
           "DAOU": {
@@ -78907,13 +78907,13 @@ window.SLACK_DATA = {
       },
       "updatedAt": "23:50",
       "voc": {
-        "responses": 27,
+        "responses": 26,
         "install": {
           "count": 8,
           "low": 2
         },
         "nps": {
-          "count": 27,
+          "count": 26,
           "low": 6
         },
         "high": {
@@ -78927,7 +78927,7 @@ window.SLACK_DATA = {
           "5": 2,
           "7": 1,
           "8": 3,
-          "9": 3,
+          "9": 2,
           "10": 14
         },
         "installDist": {
@@ -78943,7 +78943,7 @@ window.SLACK_DATA = {
         },
         "byTenure": {
           "1개월": {
-            "total": 8,
+            "total": 7,
             "low": 0
           },
           "구매설치": {
@@ -78961,7 +78961,7 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KIS": {
-            "total": 7,
+            "total": 6,
             "low": 1
           },
           "KPN": {
@@ -95495,18 +95495,18 @@ window.SLACK_DATA = {
       },
       "updatedAt": "23:39",
       "voc": {
-        "responses": 22,
+        "responses": 21,
         "install": {
-          "count": 8,
+          "count": 7,
           "low": 2
         },
         "nps": {
-          "count": 22,
+          "count": 21,
           "low": 8
         },
         "high": {
-          "install": 4,
-          "nps": 7
+          "install": 3,
+          "nps": 6
         },
         "npsDist": {
           "0": 2,
@@ -95514,17 +95514,17 @@ window.SLACK_DATA = {
           "5": 3,
           "8": 6,
           "9": 1,
-          "10": 7
+          "10": 6
         },
         "installDist": {
           "1": 1,
           "2": 1,
           "3": 2,
-          "5": 4
+          "5": 3
         },
         "byIndustry": {
           "카페": 1,
-          "도소매": 2,
+          "도소매": 1,
           "요식업": 1,
           "서비스[뷰티,헤어]": 2,
           "서비스[학원]": 2
@@ -95535,7 +95535,7 @@ window.SLACK_DATA = {
             "low": 2
           },
           "구매설치": {
-            "total": 8,
+            "total": 7,
             "low": 3
           },
           "1개월": {
@@ -95557,7 +95557,7 @@ window.SLACK_DATA = {
             "low": 2
           },
           "KOCES": {
-            "total": 6,
+            "total": 5,
             "low": 2
           },
           "KSNET": {
@@ -95823,18 +95823,6 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 9,
             "text": "영통으로 설치햇는데 너무쉽게 설명해주셔서 좋앗습니다 사용하기 쉬워요",
-            "byReaction": false,
-            "doneDate": ""
-          },
-          {
-            "time": "03:36",
-            "store": "엘뤼프",
-            "storeId": "565328",
-            "indBucket": "도소매",
-            "emp": "",
-            "install": 5,
-            "nps": 10,
-            "text": "매뉴얼 보고 설치하다가 잘 몰라서 안하고 있었는데 콜센터에서 전화와서 세밀하게 가르쳐 주셔서 순조롭게 설치함 초보자도 쉽게 사용할 수 있는 편의성",
             "byReaction": false,
             "doneDate": ""
           }
@@ -108551,14 +108539,14 @@ window.SLACK_DATA = {
       },
       "updatedAt": "22:26",
       "voc": {
-        "responses": 19,
+        "responses": 18,
         "install": {
           "count": 5,
           "low": 0
         },
         "nps": {
-          "count": 19,
-          "low": 4
+          "count": 18,
+          "low": 3
         },
         "high": {
           "install": 3,
@@ -108567,7 +108555,6 @@ window.SLACK_DATA = {
         "npsDist": {
           "0": 2,
           "1": 1,
-          "5": 1,
           "6": 2,
           "8": 3,
           "9": 1,
@@ -108597,8 +108584,8 @@ window.SLACK_DATA = {
             "low": 1
           },
           "3개월": {
-            "total": 7,
-            "low": 2
+            "total": 6,
+            "low": 1
           },
           "6개월": {
             "total": 1,
@@ -108627,8 +108614,8 @@ window.SLACK_DATA = {
             "low": 1
           },
           "SECTA9": {
-            "total": 3,
-            "low": 1
+            "total": 2,
+            "low": 0
           },
           "KOVAN": {
             "total": 1,
@@ -108636,7 +108623,7 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
-          "단말기 설치나 초기 과정이 어려움": 2,
+          "단말기 설치나 초기 과정이 어려움": 1,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "필요한 기능이 없거나 몰라서 불편": 1
         },
@@ -108705,28 +108692,6 @@ window.SLACK_DATA = {
             "autoStatus": "",
             "autoEmp": "",
             "autoNote": "",
-            "doneDate": ""
-          },
-          {
-            "time": "01:25",
-            "store": "위드팜 컴퍼니",
-            "storeId": "432607",
-            "industry": "",
-            "indBucket": "",
-            "install": null,
-            "nps": 5,
-            "reasons": [
-              {
-                "q": "추천의향",
-                "score": 5,
-                "text": "부가세 적용,미적용여부를 단말기 설정에서 변경가능 좋겠음.",
-                "cat": "단말기 설치나 초기 과정이 어려움"
-              }
-            ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "금약입력모드에서 부가세 선택이 없어서 불편하다 일반 단말기는 되는데 1만원이면 10% 자동 부과를 원한다는 불만 추후 토플쪽에 개발요청 드리겠다고 안내 금약입력모드에서 부가세 선택이 없어서 불편하다 일반 단말기는 되는데 1만원이면 10% 자동 부과를 원한다는 불만 추후 토플쪽에 개발요청 드리겠다고 안내",
             "doneDate": ""
           }
         ],
@@ -113025,13 +112990,13 @@ window.SLACK_DATA = {
       },
       "updatedAt": "22:17",
       "voc": {
-        "responses": 23,
+        "responses": 22,
         "install": {
           "count": 4,
           "low": 0
         },
         "nps": {
-          "count": 23,
+          "count": 22,
           "low": 7
         },
         "high": {
@@ -113042,7 +113007,7 @@ window.SLACK_DATA = {
           "2": 1,
           "3": 1,
           "5": 5,
-          "7": 2,
+          "7": 1,
           "8": 3,
           "10": 11
         },
@@ -113057,7 +113022,7 @@ window.SLACK_DATA = {
         },
         "byTenure": {
           "1개월": {
-            "total": 9,
+            "total": 8,
             "low": 3
           },
           "12개월": {
@@ -113079,7 +113044,7 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KIS": {
-            "total": 9,
+            "total": 8,
             "low": 4
           },
           "KSNET": {
@@ -113295,18 +113260,6 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 10,
             "text": "친절하게 잘해주셨습니다 포스관리및 사용 편리함",
-            "byReaction": false,
-            "doneDate": ""
-          },
-          {
-            "time": "02:43",
-            "store": "스타일by유강HAIR",
-            "storeId": "544391",
-            "indBucket": "",
-            "emp": "",
-            "install": null,
-            "nps": 7,
-            "text": "메뉴얼이 식당용 같습니다.  미용은 서비스 종료 후 결제하는데 \"주문번호로 알려드릴게요\"라는 멘트가 나옵니다. 메뉴의 추가요금 부분도 일일히 입력한다고 해도 식당 선결재 서비스 셋팅은 아닌것같습니다.  나중에 환불할때는 어떻게하는지 아직 찾아 보지는 않았습니다. 토스프론트단발기와 함께 온 안내 메뉴에는 없습니다. 영수증은 받고 싶은 사람만 전화번호 입력란이 있으면 좋겠습니다. 문자발송으로 보낼 수 있게.. 현금영수증 발급기능이 있음 좋겠습니다.",
             "byReaction": false,
             "doneDate": ""
           }
@@ -122513,13 +122466,13 @@ window.SLACK_DATA = {
       },
       "updatedAt": "23:31",
       "voc": {
-        "responses": 17,
+        "responses": 16,
         "install": {
           "count": 5,
           "low": 0
         },
         "nps": {
-          "count": 17,
+          "count": 16,
           "low": 3
         },
         "high": {
@@ -122531,7 +122484,7 @@ window.SLACK_DATA = {
           "5": 2,
           "6": 1,
           "7": 4,
-          "8": 2,
+          "8": 1,
           "9": 2,
           "10": 5
         },
@@ -122559,7 +122512,7 @@ window.SLACK_DATA = {
             "low": 1
           },
           "3개월": {
-            "total": 6,
+            "total": 5,
             "low": 2
           },
           "1개월": {
@@ -122585,7 +122538,7 @@ window.SLACK_DATA = {
             "low": 0
           },
           "SMARTRO": {
-            "total": 3,
+            "total": 2,
             "low": 0
           },
           "SECTA9": {
@@ -133702,13 +133655,13 @@ window.SLACK_DATA = {
       },
       "updatedAt": "23:48",
       "voc": {
-        "responses": 14,
+        "responses": 13,
         "install": {
-          "count": 4,
+          "count": 3,
           "low": 1
         },
         "nps": {
-          "count": 14,
+          "count": 13,
           "low": 4
         },
         "high": {
@@ -133720,19 +133673,17 @@ window.SLACK_DATA = {
           "1": 1,
           "4": 1,
           "5": 1,
-          "8": 3,
+          "8": 2,
           "9": 4,
           "10": 3
         },
         "installDist": {
           "1": 1,
-          "4": 1,
           "5": 2
         },
         "byIndustry": {
           "서비스[학원]": 2,
-          "카페": 1,
-          "도소매": 1
+          "카페": 1
         },
         "byTenure": {
           "1개월": {
@@ -133752,7 +133703,7 @@ window.SLACK_DATA = {
             "low": 3
           },
           "구매설치": {
-            "total": 4,
+            "total": 3,
             "low": 1
           }
         },
@@ -133774,7 +133725,7 @@ window.SLACK_DATA = {
             "low": 0
           },
           "KOCES": {
-            "total": 2,
+            "total": 1,
             "low": 0
           },
           "KCP": {
@@ -133905,18 +133856,6 @@ window.SLACK_DATA = {
             "install": 5,
             "nps": 9,
             "text": "친절하게 응대해 주시고 설치가 안될시엔 연락하면 처리해 주는 시스템이여서 혼자 설치 할 수 있었음 편리해서",
-            "byReaction": false,
-            "doneDate": ""
-          },
-          {
-            "time": "01:00",
-            "store": "꽃뜰리에 루원시티가정점",
-            "storeId": "597011",
-            "indBucket": "도소매",
-            "emp": "",
-            "install": 4,
-            "nps": 8,
-            "text": "자세한 프로그램 설명이 없어서 기능적인 문제로 여러번 통화가필요했음 기능적으로 불편한부분도 있지만 대체적만족",
             "byReaction": false,
             "doneDate": ""
           }
@@ -134317,23 +134256,22 @@ window.SLACK_DATA = {
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "10:12",
+      "updatedAt": "10:15",
       "voc": {
-        "responses": 2,
+        "responses": 1,
         "install": {
           "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 2,
-          "low": 2
+          "count": 1,
+          "low": 1
         },
         "high": {
           "install": 0,
           "nps": 0
         },
         "npsDist": {
-          "3": 1,
           "4": 1
         },
         "installDist": {
@@ -134346,24 +134284,16 @@ window.SLACK_DATA = {
           "구매설치": {
             "total": 1,
             "low": 1
-          },
-          "12개월": {
-            "total": 1,
-            "low": 1
           }
         },
         "byVan": {
           "KIS": {
             "total": 1,
             "low": 1
-          },
-          "NICE": {
-            "total": 1,
-            "low": 1
           }
         },
         "reasonCounts": {
-          "필요한 기능이 없거나 몰라서 불편": 2
+          "필요한 기능이 없거나 몰라서 불편": 1
         },
         "alerts": [
           {
@@ -134379,28 +134309,6 @@ window.SLACK_DATA = {
                 "q": "추천의향",
                 "score": 4,
                 "text": "초보자에게는 좀 복잡해요",
-                "cat": "필요한 기능이 없거나 몰라서 불편"
-              }
-            ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
-          },
-          {
-            "time": "01:44",
-            "store": "루미아트",
-            "storeId": "204822",
-            "industry": "",
-            "indBucket": "",
-            "install": null,
-            "nps": 3,
-            "reasons": [
-              {
-                "q": "추천의향",
-                "score": 3,
-                "text": "포스기에서 영수증이 안나와서 불편해요",
                 "cat": "필요한 기능이 없거나 몰라서 불편"
               }
             ],
@@ -134459,7 +134367,11 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787706864.049
+        "lastSeen": 1787706919.222
+      },
+      "1787706901.065009": {
+        "post": "1787706901.065009",
+        "lastSeen": 1787706919.222
       }
     },
     "days": {
@@ -166212,7 +166124,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 10:14",
+    "at": "2026-08-26 10:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
