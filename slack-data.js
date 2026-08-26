@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5340,
+  "version": 5341,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134090,8 +134090,8 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김현기": 3,
+          "배선유": 3,
           "심성현": 3,
-          "배선유": 2,
           "고경림": 4,
           "김동욱": 2
         },
@@ -134120,6 +134120,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "아직 사무실 도착을 못 함 11시 살짝 넘어서 재통화요청"
+        },
+        {
+          "time": "10:45",
+          "store": "미슬 중계클럽",
+          "biz": "2170956269",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "PC/테블릿+프론트+프린터 온보딩",
+          "hw": "",
+          "intake": "online",
+          "note": "노트북에 토스포스 설치까지만 진행 / 프론트 어댑터 못찾고 계셔서 찾은 후 업무폰으로 연락 안내"
         },
         {
           "time": "10:38",
@@ -134377,7 +134388,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 18,
+        "online": 19,
         "offline": 6,
         "unknown": 0
       },
@@ -134497,7 +134508,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787709382.892
+        "lastSeen": 1787709503.829
       }
     },
     "days": {
@@ -166274,7 +166285,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 10:56",
+    "at": "2026-08-26 10:58",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
