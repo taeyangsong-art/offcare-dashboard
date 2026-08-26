@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5335,
+  "version": 5336,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134088,18 +134088,18 @@ window.SLACK_DATA = {
     },
     "2026-08-26": {
       "counts": {
+        "as": {
+          "김현기": 3,
+          "배선유": 2,
+          "고경림": 4,
+          "김동욱": 2,
+          "심성현": 2
+        },
         "onboarding": {
           "고경림": 1,
           "김동욱": 1,
           "심성현": 3,
           "배선유": 1
-        },
-        "as": {
-          "배선유": 2,
-          "고경림": 4,
-          "김동욱": 2,
-          "김현기": 2,
-          "심성현": 2
         },
         "extern": {
           "서상원": 3
@@ -134111,6 +134111,17 @@ window.SLACK_DATA = {
       "pending": [],
       "done": [
         {
+          "time": "10:45",
+          "store": "아르케디자인",
+          "biz": "1464401124",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "핸드폰+프론트 온보딩요청 .",
+          "hw": "",
+          "intake": "online",
+          "note": "아직 사무실 도착을 못 함 11시 살짝 넘어서 재통화요청"
+        },
+        {
           "time": "10:35",
           "store": "필라 나 요가",
           "biz": "3803101097",
@@ -134119,7 +134130,7 @@ window.SLACK_DATA = {
           "req": "포프(휴대폰) 온보딩 요청",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "포프(휴대폰) 온보딩 완료 및 사용법 안내완료"
         },
         {
           "time": "10:32",
@@ -134355,7 +134366,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 16,
+        "online": 17,
         "offline": 6,
         "unknown": 0
       },
@@ -134475,11 +134486,11 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787708899.035
+        "lastSeen": 1787708961.541
       },
       "1787708654.456529": {
         "post": "1787708654.456529",
-        "lastSeen": 1787708899.035
+        "lastSeen": 1787708961.541
       }
     },
     "days": {
@@ -166256,7 +166267,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 10:48",
+    "at": "2026-08-26 10:49",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
