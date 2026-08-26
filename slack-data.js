@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5441,
+  "version": 5442,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134089,13 +134089,13 @@ window.SLACK_DATA = {
     "2026-08-26": {
       "counts": {
         "as": {
+          "김현기": 6,
           "고경림": 18,
           "심성현": 10,
           "김동욱": 7,
           "서상원": 5,
           "배선유": 11,
           "김기범": 3,
-          "김현기": 5,
           "김규빈": 2,
           "송태양": 3
         },
@@ -134151,6 +134151,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "14:31",
+          "store": "이연헤어",
+          "biz": "1274709539",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "페이스페이 작동 불가 / 확인 부탁드립니다:감사합니다꾸벅:",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "14:30",
           "store": "꽃,플로리진 (FLORI JIN)",
@@ -135376,7 +135387,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 87,
+        "online": 88,
         "offline": 26,
         "unknown": 0
       },
@@ -135511,11 +135522,19 @@ window.SLACK_DATA = {
         "praises": []
       },
       "ob": {
-        "count": 13,
+        "count": 14,
         "byEmp": {
-          "김규빈": 13
+          "김규빈": 14
         },
         "items": [
+          {
+            "key": "2026년 8월 26일 오전 8:36:41|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787201091038549#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-26",
+            "planDate": "2026-08-28",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787201091038549"
+          },
           {
             "key": "2026년 8월 26일 오전 8:36:16|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787548296242629#1",
             "handler": "김규빈",
@@ -135656,7 +135675,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787722763.474
+        "lastSeen": 1787722823.523
       },
       "1787722356.190299": {
         "post": "1787722356.190299",
@@ -167749,19 +167768,19 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 14:39",
+    "at": "2026-08-26 14:40",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3728,
-    "named": 424,
+    "named": 425,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 424,
+    "done": 425,
     "byStatus": {
-      "일정등록완료": 261,
+      "일정등록완료": 262,
       "1차부재": 95,
       "점주직접접수": 37,
       "설치불가": 9,
