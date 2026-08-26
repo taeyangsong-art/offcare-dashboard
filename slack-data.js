@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5365,
+  "version": 5366,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134088,6 +134088,13 @@ window.SLACK_DATA = {
     },
     "2026-08-26": {
       "counts": {
+        "onboarding": {
+          "김현기": 1,
+          "심성현": 4,
+          "고경림": 2,
+          "김동욱": 1,
+          "배선유": 1
+        },
         "as": {
           "배선유": 6,
           "고경림": 7,
@@ -134100,12 +134107,6 @@ window.SLACK_DATA = {
           "김동욱": 1,
           "서상원": 4
         },
-        "onboarding": {
-          "심성현": 4,
-          "고경림": 2,
-          "김동욱": 1,
-          "배선유": 1
-        },
         "transfer": {
           "송태양": 1
         },
@@ -134116,6 +134117,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:45",
+          "store": "주식회사 오버더문글로벌",
+          "biz": "8768803815",
+          "cat": "onboarding",
+          "emp": "김현기",
+          "req": "테블릿 + 프론트 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "폰에 온보딩 완료 / 태블릿을 까먹고 두고옴, 셀프로 재연결 해보겠음, 재연결시 꼭 폰에 연결된 프론트 삭제 해야함 안내 완료"
+        },
         {
           "time": "11:37",
           "store": "청죽골",
@@ -134592,11 +134604,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 30,
+        "online": 31,
         "offline": 13,
         "unknown": 0
       },
-      "updatedAt": "11:51",
+      "updatedAt": "11:52",
       "voc": {
         "responses": 3,
         "install": {
@@ -134741,7 +134753,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787712738.399
+        "lastSeen": 1787712803.133
       }
     },
     "days": {
@@ -166542,7 +166554,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 11:52",
+    "at": "2026-08-26 11:53",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
