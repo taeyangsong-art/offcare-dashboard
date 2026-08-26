@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5336,
+  "version": 5337,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134090,10 +134090,10 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김현기": 3,
+          "심성현": 3,
           "배선유": 2,
           "고경림": 4,
-          "김동욱": 2,
-          "심성현": 2
+          "김동욱": 2
         },
         "onboarding": {
           "고경림": 1,
@@ -134120,6 +134120,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "아직 사무실 도착을 못 함 11시 살짝 넘어서 재통화요청"
+        },
+        {
+          "time": "10:38",
+          "store": "꿈의 제과점(Patisserie De Reves)",
+          "biz": "1070348077",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "고령 점주 / 포프+프론트 <https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1787309064507369|이전>과 동일하게 연결이 지속적으로 끊기고 느리게 작동하신다고하여 단말기 점검 요",
+          "hw": "",
+          "intake": "online",
+          "note": "태블릿 SK 공유기 프론트 IPTIME으로 연결 상태 / 와이파이 맞추고 정상"
         },
         {
           "time": "10:35",
@@ -134366,7 +134377,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 17,
+        "online": 18,
         "offline": 6,
         "unknown": 0
       },
@@ -134486,11 +134497,11 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787708961.541
+        "lastSeen": 1787709081.302
       },
       "1787708654.456529": {
         "post": "1787708654.456529",
-        "lastSeen": 1787708961.541
+        "lastSeen": 1787709081.302
       }
     },
     "days": {
@@ -166267,7 +166278,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 10:49",
+    "at": "2026-08-26 10:51",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
