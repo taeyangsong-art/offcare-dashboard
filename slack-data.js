@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5326,
+  "version": 5327,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134089,14 +134089,14 @@ window.SLACK_DATA = {
     "2026-08-26": {
       "counts": {
         "as": {
+          "고경림": 4,
           "배선유": 1,
           "김동욱": 2,
           "김현기": 2,
-          "고경림": 3,
           "심성현": 2
         },
         "onboarding": {
-          "심성현": 2,
+          "심성현": 3,
           "배선유": 1
         },
         "extern": {
@@ -134108,6 +134108,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:22",
+          "store": "제스트 하우스 (zest haus)",
+          "biz": "8675401007",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "토스포스 - 배민 연동 요청 드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "정상연동확인 토스포스 앱 내에서 주문서 출력 안내드렸습니다."
+        },
+        {
+          "time": "10:15",
+          "store": "우리동네 힐링샵 남양점",
+          "biz": "3083301949",
+          "cat": "onboarding",
+          "emp": "심성현",
+          "req": "프론트 온보딩 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 전자 영수 설정 사용 방법 안내 완료"
+        },
         {
           "time": "10:15",
           "store": "라이프푸드 주식회사(2번코너)",
@@ -134298,7 +134320,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 12,
+        "online": 14,
         "offline": 5,
         "unknown": 0
       },
@@ -134422,7 +134444,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787707442.678
+        "lastSeen": 1787707624.434
       }
     },
     "days": {
@@ -166191,7 +166213,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 10:24",
+    "at": "2026-08-26 10:27",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
