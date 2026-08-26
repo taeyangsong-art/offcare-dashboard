@@ -6509,14 +6509,28 @@ function checkDataFile(file, onChanged){
     onChanged();
   }).catch(()=>{ dataTagOk[file]=false; });
 }
+// 입력 중에는 '데이터는 받되 다시 그리지만 않는다'.
+//
+// 전에는 syncBlocked() 면 확인 자체를 건너뛰었는데, 메뉴등록 탭은 양식 변환란(textarea)에
+// 커서가 놓인 채로 작업하는 시간이 대부분이라 새 요청이 들어와도 목록이 영영 갱신되지 않았다.
+// 재렌더만 미루면 타이핑을 방해하지 않으면서 데이터는 항상 최신으로 유지된다.
+let deferredRender=null;
+function renderWhenIdle(fn){
+  if(syncBlocked()){ deferredRender=fn; return; }   // 입력 중 — 커서를 뺏지 않도록 미룸
+  fn();
+}
+function flushDeferredRender(){
+  if(!deferredRender || syncBlocked()) return;
+  const fn=deferredRender; deferredRender=null; fn();
+}
 function menuReqReload(){
-  loadData('menu-requests.js', function(){ if(activeCat==='menureg') renderMain(); });
+  loadData('menu-requests.js', function(){ if(activeCat==='menureg') renderWhenIdle(renderMain); });
 }
 function slackDataReload(){
   const prev=(window.SLACK_DATA && window.SLACK_DATA.version) || 0;
   reloadSlackData(function(){
     const cur=(window.SLACK_DATA && window.SLACK_DATA.version) || 0;
-    if(cur!==prev){ applySlackData(); if(activeCat!=="duty" && activeCat!=="share") renderMain(); }
+    if(cur!==prev){ applySlackData(); if(activeCat!=="duty" && activeCat!=="share") renderWhenIdle(renderMain); }
   });
 }
 function calendarReload(){
@@ -6528,7 +6542,9 @@ function calendarReload(){
 }
 // 빠른 루프에서 도는 확인들. 화면에 안 보이거나 입력 중이면 건너뛴다.
 function checkDataUpdates(){
-  if(document.hidden || syncBlocked()) return;
+  if(document.hidden) return;                  // 숨은 탭은 폴링하지 않음
+  flushDeferredRender();                       // 입력이 끝났으면 미뤄둔 갱신부터 반영
+  // syncBlocked() 여도 확인·다운로드는 진행한다 — 재렌더만 renderWhenIdle 로 미뤄진다.
   checkDataFile('slack-data.js', slackDataReload);
   if(activeCat==='menureg') checkDataFile('menu-requests.js', menuReqReload);
 }
@@ -6536,6 +6552,12 @@ function startAutoRefresh(){
   setInterval(checkCloudRev, SYNC_FAST_MS);
   setInterval(checkDataUpdates, SYNC_DATA_MS);
   document.addEventListener('visibilitychange', function(){ if(!document.hidden){ checkCloudRev(); checkDataUpdates(); } });  // 탭 복귀 즉시 반영
+  // 입력칸에서 빠져나오면 미뤄둔 갱신을 바로 반영 — 다음 확인 주기(30초)까지 기다리지 않는다.
+  // focusout 직후에는 activeElement 가 아직 옛 값이라 한 틱 뒤에 확인한다.
+  document.addEventListener('focusout', function(){ setTimeout(flushDeferredRender, 150); });
+  // 이벤트에만 기대지 않는다 — 포커스 이동 경로가 다양하고(창 전환·프로그램적 blur 등)
+  // 이벤트가 안 오는 경우가 실제로 있었다. 네트워크를 쓰지 않는 로컬 검사라 부담이 없다.
+  setInterval(flushDeferredRender, 2000);
   setInterval(function(){
     if(syncBlocked()) return;
     // 캘린더는 시간당 1회 갱신이라 느린 루프로 충분하다(4.9KB 라 통째로 받아도 부담 없음).
