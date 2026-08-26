@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1001,
- "updatedAt": "2026-08-26 10:27",
+ "version": 1002,
+ "updatedAt": "2026-08-26 10:36",
  "days": 30,
  "items": [
   {
@@ -39451,130 +39451,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785117071060779"
-  },
-  {
-   "ts": "1785116051.528929",
-   "date": "2026-07-27",
-   "time": "10:34",
-   "store": "스무치 창원명서점",
-   "biz": "1625900586",
-   "pos": "토스포스",
-   "content": "덮밥메뉴 옵션 수정부탁드립니다",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/1JhyVQPAm-BHpCRDIAHe01JupBFyznoMo/view?usp=drivesdk",
-    "https://drive.google.com/file/d/13CFX_z7MJJxnfVXVc2Yz62_dp4s6go7G/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "1JhyVQPAm-BHpCRDIAHe01JupBFyznoMo",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "밥 재료 선택",
-       "name": "백미밥",
-       "price": 0
-      },
-      {
-       "category": "밥 재료 선택",
-       "name": "곤약밥",
-       "price": 0
-      },
-      {
-       "category": "맵기 선택",
-       "name": "순한맛",
-       "price": 0
-      },
-      {
-       "category": "맵기 선택",
-       "name": "보통맛",
-       "price": 0
-      },
-      {
-       "category": "맵기 선택",
-       "name": "매운맛",
-       "price": 0
-      },
-      {
-       "category": "국물 선택",
-       "name": "기본 된장찌개",
-       "price": 0
-      },
-      {
-       "category": "국물 선택",
-       "name": "우유 계란찜",
-       "price": 500
-      },
-      {
-       "category": "국물 선택",
-       "name": "우삼겹 된장찌개",
-       "price": 1000
-      }
-     ]
-    },
-    {
-     "id": "13CFX_z7MJJxnfVXVc2Yz62_dp4s6go7G",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "",
-       "name": "우삼겹 된장찌개",
-       "price": 1000
-      },
-      {
-       "category": "",
-       "name": "국물 빼고 주세요",
-       "price": 0
-      },
-      {
-       "category": "고기 추가",
-       "name": "(명품 한돈) 막고기 100g",
-       "price": 4000
-      },
-      {
-       "category": "고기 추가",
-       "name": "(명품 한돈) 불고기 100g",
-       "price": 4500
-      },
-      {
-       "category": "고기 추가",
-       "name": "(명품 한돈) 삼겹살 100g",
-       "price": 6000
-      },
-      {
-       "category": "고기 추가",
-       "name": "(명품 한돈) 숙성목살 100g",
-       "price": 6000
-      },
-      {
-       "category": "고기 추가",
-       "name": "(명품 한돈) 항정살 100g",
-       "price": 8000
-      },
-      {
-       "category": "고기 추가",
-       "name": "(국내산 냉장) 닭다리살 100g",
-       "price": 4000
-      },
-      {
-       "category": "고기 추가",
-       "name": "우삼겹 100g",
-       "price": 4000
-      }
-     ]
-    }
-   ],
-   "replies": [
-    "요청사항을 모르겠어서 문자"
-   ],
-   "rc": 2,
-   "lr": "1785119814.370099",
-   "rfx": 3,
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785116051528929"
   }
  ],
  "ocr": {
