@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5317,
+  "version": 5318,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134292,42 +134292,77 @@ window.SLACK_DATA = {
         "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "10:03",
+      "updatedAt": "10:04",
       "voc": {
-        "responses": 1,
+        "responses": 2,
         "install": {
-          "count": 0,
+          "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 1,
-          "low": 1
+          "count": 2,
+          "low": 2
         },
         "high": {
           "install": 0,
           "nps": 0
         },
         "npsDist": {
-          "3": 1
+          "3": 1,
+          "4": 1
         },
-        "installDist": {},
-        "byIndustry": {},
+        "installDist": {
+          "4": 1
+        },
+        "byIndustry": {
+          "기타": 1
+        },
         "byTenure": {
+          "구매설치": {
+            "total": 1,
+            "low": 1
+          },
           "12개월": {
             "total": 1,
             "low": 1
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 1,
+            "low": 1
+          },
           "NICE": {
             "total": 1,
             "low": 1
           }
         },
         "reasonCounts": {
-          "필요한 기능이 없거나 몰라서 불편": 1
+          "필요한 기능이 없거나 몰라서 불편": 2
         },
         "alerts": [
+          {
+            "time": "10:04",
+            "store": "온담니트수선",
+            "storeId": "544021",
+            "industry": "수선",
+            "indBucket": "기타",
+            "install": 4,
+            "nps": 4,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 4,
+                "text": "초보자에게는 좀 복잡해요",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "01:44",
             "store": "루미아트",
@@ -134399,11 +134434,7 @@ window.SLACK_DATA = {
       },
       "1787677200.356799": {
         "post": "1787677200.356799",
-        "lastSeen": 1787706215.211
-      },
-      "1787706201.788829": {
-        "post": "1787706201.788829",
-        "lastSeen": 1787706215.211
+        "lastSeen": 1787706272.659
       }
     },
     "days": {
@@ -166107,8 +166138,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-26": {
-        "cnt": 2,
-        "sumMin": 2.86939936876297,
+        "cnt": 3,
+        "sumMin": 3.5718355496724445,
         "over": 0,
         "items": [
           {
@@ -166126,13 +166157,21 @@ window.SLACK_DATA = {
             "biz": "1744701284",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "10:03",
+            "min": 0.7,
+            "store": "빵빵쌀한입",
+            "biz": "1784301366",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-26 10:03",
+    "at": "2026-08-26 10:04",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
