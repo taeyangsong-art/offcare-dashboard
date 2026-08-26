@@ -3,10 +3,211 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 994,
- "updatedAt": "2026-08-26 09:48",
+ "version": 995,
+ "updatedAt": "2026-08-26 09:50",
  "days": 30,
  "items": [
+  {
+   "ts": "1787705370.384289",
+   "date": "2026-08-26",
+   "time": "09:49",
+   "store": "좋은날257",
+   "biz": "7301502549",
+   "pos": "토스포스",
+   "content": "토스포스 메뉴 등록 요청 드립니다. (스레드 사진 첨부)",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BSNF7L8P8",
+     "from": "댓글",
+     "path": "menu-files/1787705370_384289-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "커피 Coffee",
+       "name": "에스프레소",
+       "price": 3000
+      },
+      {
+       "category": "커피 Coffee",
+       "name": "아메리카노",
+       "price": 3000
+      },
+      {
+       "category": "커피 Coffee",
+       "name": "헤이즐넛",
+       "price": 4000
+      },
+      {
+       "category": "커피 Coffee",
+       "name": "카페라떼",
+       "price": 4000
+      },
+      {
+       "category": "커피 Coffee",
+       "name": "카푸치노",
+       "price": 4000
+      },
+      {
+       "category": "커피 Coffee",
+       "name": "카페모카",
+       "price": 4500
+      },
+      {
+       "category": "커피 Coffee",
+       "name": "카라멜 마끼야또",
+       "price": 4500
+      },
+      {
+       "category": "None Coffee",
+       "name": "밤",
+       "price": 4000
+      },
+      {
+       "category": "None Coffee",
+       "name": "고구마",
+       "price": 4000
+      },
+      {
+       "category": "None Coffee",
+       "name": "녹차",
+       "price": 4000
+      },
+      {
+       "category": "None Coffee",
+       "name": "초코",
+       "price": 4000
+      },
+      {
+       "category": "None Coffee",
+       "name": "딸기",
+       "price": 4000
+      },
+      {
+       "category": "None Coffee",
+       "name": "녹차 딸기",
+       "price": 4500
+      },
+      {
+       "category": "에이드 Ade",
+       "name": "자몽",
+       "price": 5000
+      },
+      {
+       "category": "에이드 Ade",
+       "name": "레몬",
+       "price": 5000
+      },
+      {
+       "category": "에이드 Ade",
+       "name": "한라봉",
+       "price": 5000
+      },
+      {
+       "category": "에이드 Ade",
+       "name": "청포도",
+       "price": 5000
+      },
+      {
+       "category": "에이드 Ade",
+       "name": "오미자",
+       "price": 5000
+      },
+      {
+       "category": "스무디 Smoothie",
+       "name": "딸기",
+       "price": 5000
+      },
+      {
+       "category": "스무디 Smoothie",
+       "name": "망고",
+       "price": 5000
+      },
+      {
+       "category": "스무디 Smoothie",
+       "name": "블루베리",
+       "price": 5000
+      },
+      {
+       "category": "스무디 Smoothie",
+       "name": "바나나",
+       "price": 5000
+      },
+      {
+       "category": "스무디 Smoothie",
+       "name": "키위",
+       "price": 5000
+      },
+      {
+       "category": "스무디 Smoothie",
+       "name": "딸기 바나나",
+       "price": 5000
+      },
+      {
+       "category": "차 Tea",
+       "name": "유자",
+       "price": 4000
+      },
+      {
+       "category": "차 Tea",
+       "name": "자몽",
+       "price": 4000
+      },
+      {
+       "category": "차 Tea",
+       "name": "레몬",
+       "price": 4000
+      },
+      {
+       "category": "차 Tea",
+       "name": "생강",
+       "price": 4000
+      },
+      {
+       "category": "차 Tea",
+       "name": "오미자",
+       "price": 4000
+      },
+      {
+       "category": "차 Tea",
+       "name": "레몬진저",
+       "price": 4000
+      },
+      {
+       "category": "차 Tea",
+       "name": "카모마일",
+       "price": 4000
+      },
+      {
+       "category": "차 Tea",
+       "name": "페퍼민트",
+       "price": 4000
+      },
+      {
+       "category": "차 Tea",
+       "name": "블랙티",
+       "price": 4000
+      },
+      {
+       "category": "차 Tea",
+       "name": "얼그레이",
+       "price": 4000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 3,
+   "lr": "1787705411.023879",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787705370384289"
+  },
   {
    "ts": "1787665528.482389",
    "date": "2026-08-25",
