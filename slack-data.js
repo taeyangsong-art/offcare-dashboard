@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5315,
+  "version": 5316,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134149,20 +134149,43 @@ window.SLACK_DATA = {
     },
     "2026-08-26": {
       "counts": {
+        "extern": {
+          "서상원": 2
+        },
         "as": {
+          "김동욱": 1,
           "고경림": 2,
           "심성현": 2
         },
         "onboarding": {
           "심성현": 1,
           "배선유": 1
-        },
-        "extern": {
-          "서상원": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:59",
+          "store": "그여행 무거점",
+          "biz": "1862801404",
+          "cat": "extern",
+          "emp": "서상원",
+          "req": "외주",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
+        {
+          "time": "09:44",
+          "store": "유어타입",
+          "biz": "1390974652",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "TS400(W) 사용 매장으로, 와이파이 설정이 깨져 출력이 안된다고 하시어 점검 요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "1차 부재 / ip 재설정 후 정상출력 확인."
+        },
         {
           "time": "09:39",
           "store": "초록사서함",
@@ -134242,11 +134265,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 5,
-        "offline": 2,
+        "online": 6,
+        "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "09:58",
+      "updatedAt": "10:00",
       "voc": {
         "responses": 1,
         "install": {
@@ -134353,7 +134376,7 @@ window.SLACK_DATA = {
       },
       "1787677200.356799": {
         "post": "1787677200.356799",
-        "lastSeen": 1787705960.612
+        "lastSeen": 1787706023.197
       }
     },
     "days": {
@@ -166082,7 +166105,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 09:59",
+    "at": "2026-08-26 10:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

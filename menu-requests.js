@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 996,
- "updatedAt": "2026-08-26 09:59",
+ "version": 997,
+ "updatedAt": "2026-08-26 10:00",
  "days": 30,
  "items": [
   {
@@ -202,7 +202,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BSNGGGK1C",
      "from": "댓글",
-     "path": "menu-files/1787705370_384289-1.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -275,13 +274,14 @@ window.MENU_REQUESTS = {
        "name": "번다버그 스몰",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1787705370_384289-1.png"
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 4,
-   "lr": "1787705920.816559",
+   "rc": 5,
+   "lr": "1787706017.531719",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
