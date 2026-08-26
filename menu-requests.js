@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1035,
- "updatedAt": "2026-08-26 17:29",
+ "version": 1036,
+ "updatedAt": "2026-08-26 17:33",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "Resized_20260826_172232.jpg.jpeg",
      "fid": "F0BSNTMD3J9",
      "from": "댓글",
-     "path": "menu-files/1787732654_567529-0.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -111,13 +110,13 @@ window.MENU_REQUESTS = {
        "name": "신메뉴(1.7)",
        "price": 17000
       }
-     ]
+     ],
+     "path": "menu-files/1787732654_567529-0.jpeg"
     },
     {
      "name": "Resized_20260826_172250.jpg.jpeg",
      "fid": "F0BSBFSQWEB",
      "from": "댓글",
-     "path": "menu-files/1787732654_567529-1.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -180,13 +179,13 @@ window.MENU_REQUESTS = {
        "name": "아이스왕도",
        "price": 10000
       }
-     ]
+     ],
+     "path": "menu-files/1787732654_567529-1.jpeg"
     },
     {
      "name": "Resized_20260826_172303.jpg.jpeg",
      "fid": "F0BTM80V37S",
      "from": "댓글",
-     "path": "menu-files/1787732654_567529-2.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -259,13 +258,13 @@ window.MENU_REQUESTS = {
        "name": "케이준감자",
        "price": 16000
       }
-     ]
+     ],
+     "path": "menu-files/1787732654_567529-2.jpeg"
     },
     {
      "name": "Resized_20260826_172314.jpg.jpeg",
      "fid": "F0BSNTNGPLM",
      "from": "댓글",
-     "path": "menu-files/1787732654_567529-3.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -343,13 +342,13 @@ window.MENU_REQUESTS = {
        "name": "다나가사거짬뽕탕",
        "price": 20000
       }
-     ]
+     ],
+     "path": "menu-files/1787732654_567529-3.jpeg"
     },
     {
      "name": "Resized_20260826_172327.jpg.jpeg",
      "fid": "F0BSLKEU551",
      "from": "댓글",
-     "path": "menu-files/1787732654_567529-4.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -472,13 +471,13 @@ window.MENU_REQUESTS = {
        "name": "인상2000",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1787732654_567529-4.jpeg"
     },
     {
      "name": "Resized_20260826_172343.jpg.jpeg",
      "fid": "F0BSNTPHYH3",
      "from": "댓글",
-     "path": "menu-files/1787732654_567529-5.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -606,7 +605,8 @@ window.MENU_REQUESTS = {
        "name": "스파클링와인 싱슐",
        "price": 6000
       }
-     ]
+     ],
+     "path": "menu-files/1787732654_567529-5.jpeg"
     },
     {
      "name": "Resized_20260826_172356.jpg.jpeg",
@@ -811,9 +811,11 @@ window.MENU_REQUESTS = {
     }
    ],
    "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1787732764.702099",
+   "replies": [
+    "고급사케 월계관쥰마이다긴죠 하나기자쿠라쥰마이\n일빈사케 하쿠시카쥰마이 다이긴죠 입니다\n월계관 쥰마이 다이긴죠\\"
+   ],
+   "rc": 3,
+   "lr": "1787733221.293709",
    "rfx": 3,
    "status": "confirm",
    "handler": "김규빈",
