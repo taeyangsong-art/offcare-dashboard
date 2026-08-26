@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1038,
- "updatedAt": "2026-08-26 17:49",
+ "version": 1039,
+ "updatedAt": "2026-08-26 17:56",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BSWMS4HHA",
      "from": "댓글",
-     "path": "menu-files/1787734055_746969-0.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -46,13 +45,13 @@ window.MENU_REQUESTS = {
        "name": "1,000,000 정액권 (25% 적립)",
        "price": 1000000
       }
-     ]
+     ],
+     "path": "menu-files/1787734055_746969-0.png"
     },
     {
      "name": "image.png",
      "fid": "F0BSP2Z3K37",
      "from": "댓글",
-     "path": "menu-files/1787734055_746969-1.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -145,13 +144,13 @@ window.MENU_REQUESTS = {
        "name": "C 프리미엄영양",
        "price": 100000
       }
-     ]
+     ],
+     "path": "menu-files/1787734055_746969-1.png"
     },
     {
      "name": "image.png",
      "fid": "F0BSLQ66RV1",
      "from": "댓글",
-     "path": "menu-files/1787734055_746969-2.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -219,17 +218,18 @@ window.MENU_REQUESTS = {
        "name": "전체염색 (단발기준)",
        "price": 130000
       }
-     ]
+     ],
+     "path": "menu-files/1787734055_746969-2.png"
     }
    ],
    "datt": [],
    "replies": [
     "메뉴등록 부탁드립니다!:꾸벅5:!"
    ],
-   "rc": 3,
-   "lr": "1787734108.001299",
+   "rc": 4,
+   "lr": "1787734565.228359",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787734055746969"
   },
