@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1014,
- "updatedAt": "2026-08-26 12:47",
+ "version": 1015,
+ "updatedAt": "2026-08-26 13:22",
  "days": 30,
  "items": [
   {
@@ -39590,52 +39590,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785127539373469"
-  },
-  {
-   "ts": "1785126062.375039",
-   "date": "2026-07-27",
-   "time": "13:21",
-   "store": "더 멀리",
-   "biz": "3976300914",
-   "pos": "토스포스",
-   "content": "토스포스 메뉴 등록 요청드립니다. (사진 첨부)",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BLSQT0R4G",
-     "from": "댓글",
-     "kind": "other",
-     "menu": []
-    },
-    {
-     "name": "image.png",
-     "fid": "F0BKH43ANBH",
-     "from": "댓글",
-     "kind": "other",
-     "menu": []
-    },
-    {
-     "name": "image.png",
-     "fid": "F0BKYEZD72N",
-     "from": "댓글",
-     "kind": "other",
-     "menu": []
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "상품명, 상품가격(정가), 수량 등록 부탁드립니다 :woman-bowing:",
-    "헉 다음에는 제가 먼저 엑셀로 요청하겠습니다, 불편 드려 죄송해요!ㅜㅜ"
-   ],
-   "rc": 7,
-   "lr": "1785126803.350509",
-   "rfx": 3,
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785126062375039"
   }
  ],
  "ocr": {
