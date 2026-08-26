@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5330,
+  "version": 5331,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134096,6 +134096,7 @@ window.SLACK_DATA = {
           "심성현": 2
         },
         "onboarding": {
+          "김동욱": 1,
           "심성현": 3,
           "배선유": 1
         },
@@ -134118,6 +134119,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "정상연동확인 토스포스 앱 내에서 주문서 출력 안내드렸습니다."
+        },
+        {
+          "time": "10:16",
+          "store": "뮤위",
+          "biz": "8232501477",
+          "cat": "onboarding",
+          "emp": "김동욱",
+          "req": "포프 + 맥북 연결 및 온보딩 교육 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포프(아이맥) 온보딩 완료"
         },
         {
           "time": "10:15",
@@ -134320,11 +134332,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 14,
+        "online": 15,
         "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "10:35",
+      "updatedAt": "10:38",
       "voc": {
         "responses": 2,
         "install": {
@@ -134444,7 +134456,11 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787708182.897
+        "lastSeen": 1787708302.267
+      },
+      "1787708292.649459": {
+        "post": "1787708292.649459",
+        "lastSeen": 1787708302.267
       }
     },
     "days": {
@@ -166213,7 +166229,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 10:36",
+    "at": "2026-08-26 10:38",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
