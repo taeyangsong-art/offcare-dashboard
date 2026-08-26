@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5395,
+  "version": 5396,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134088,19 +134088,20 @@ window.SLACK_DATA = {
     },
     "2026-08-26": {
       "counts": {
-        "extern": {
-          "김동욱": 2,
-          "김현기": 1,
-          "서상원": 4
-        },
         "as": {
+          "고경림": 9,
+          "서상원": 1,
           "김현기": 5,
           "심성현": 7,
           "김규빈": 2,
           "송태양": 3,
-          "고경림": 8,
           "배선유": 6,
           "김동욱": 2
+        },
+        "extern": {
+          "김동욱": 2,
+          "김현기": 1,
+          "서상원": 4
         },
         "onboarding": {
           "송태양": 1,
@@ -134121,12 +134122,34 @@ window.SLACK_DATA = {
       "pending": [],
       "done": [
         {
+          "time": "13:00",
+          "store": "까사 드 까페",
+          "biz": "5761103062",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "포프유프(포스기) / <https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1787361909063379|대체품> 수령 후 설치했으나",
+          "hw": "",
+          "intake": "online",
+          "note": "기존 영수프린터 기기 셋팅이 115200으로 되어있어 9600 으로 설정변경후 정상출력확인 했습니다 ."
+        },
+        {
           "time": "12:55",
           "store": "하이윰",
           "biz": "5590902482",
           "cat": "extern",
           "emp": "김동욱",
           "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "12:53",
+          "store": "치킨신드롬 봉명자이점",
+          "biz": "5383701738",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "가결제",
           "hw": "",
           "intake": "online",
           "note": ""
@@ -134784,7 +134807,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 44,
+        "online": 46,
         "offline": 16,
         "unknown": 0
       },
@@ -134956,11 +134979,11 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787716824.483
+        "lastSeen": 1787717010.3
       },
       "1787715001.607579": {
         "post": "1787715001.607579",
-        "lastSeen": 1787716824.483
+        "lastSeen": 1787717010.3
       }
     },
     "days": {
@@ -166777,7 +166800,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 13:00",
+    "at": "2026-08-26 13:03",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
