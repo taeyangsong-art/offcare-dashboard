@@ -3,10 +3,170 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1021,
- "updatedAt": "2026-08-26 14:27",
+ "version": 1022,
+ "updatedAt": "2026-08-26 14:49",
  "days": 30,
  "items": [
+  {
+   "ts": "1787723275.429889",
+   "date": "2026-08-26",
+   "time": "14:47",
+   "store": "이(李)집 소금빵(Lee's house bakery)",
+   "biz": "6875000705",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "Resized_20260826_144408.jpg.jpeg",
+     "fid": "F0BSRR8FT3L",
+     "from": "댓글",
+     "path": "menu-files/1787723275_429889-0.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "음료",
+       "name": "아메리카노(ICE)",
+       "price": 4500
+      },
+      {
+       "category": "음료",
+       "name": "아메리카노(HOT)",
+       "price": 4500
+      },
+      {
+       "category": "음료",
+       "name": "카페라떼(ICE)",
+       "price": 5500
+      },
+      {
+       "category": "음료",
+       "name": "카페라떼(HOT)",
+       "price": 5500
+      },
+      {
+       "category": "음료",
+       "name": "바닐라라떼(ICE)",
+       "price": 5500
+      },
+      {
+       "category": "음료",
+       "name": "바닐라라떼(HOT)",
+       "price": 5500
+      },
+      {
+       "category": "음료",
+       "name": "모카라떼(ICE)",
+       "price": 5500
+      },
+      {
+       "category": "음료",
+       "name": "모카라떼(HOT)",
+       "price": 5500
+      },
+      {
+       "category": "음료",
+       "name": "딸기라떼",
+       "price": 6000
+      },
+      {
+       "category": "음료",
+       "name": "초코라떼",
+       "price": 5500
+      },
+      {
+       "category": "음료",
+       "name": "황도아이스티",
+       "price": 5500
+      },
+      {
+       "category": "음료",
+       "name": "샷 추가",
+       "price": 500
+      },
+      {
+       "category": "음료",
+       "name": "블랙티",
+       "price": 6000
+      },
+      {
+       "category": "음료",
+       "name": "카모마일",
+       "price": 6000
+      },
+      {
+       "category": "음료",
+       "name": "얼그레이",
+       "price": 6000
+      },
+      {
+       "category": "음료",
+       "name": "바닐라버번",
+       "price": 6000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260826_144353.jpg.jpeg",
+     "fid": "F0BSTPS0H8R",
+     "from": "댓글",
+     "path": "menu-files/1787723275_429889-1.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "보퀄레",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "글레이즈드",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "명란",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "우유크림",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "플레인",
+       "price": 3500
+      },
+      {
+       "category": "",
+       "name": "카야버터",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "초코",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "봉투",
+       "price": 100
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1787723308.109739",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787723275429889"
+  },
   {
    "ts": "1787721933.558509",
    "date": "2026-08-26",
@@ -487,7 +647,7 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1787721972.356319",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787721933558509"
   },

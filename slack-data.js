@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5445,
+  "version": 5446,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134119,7 +134119,7 @@ window.SLACK_DATA = {
           "김동욱": 2
         },
         "menu": {
-          "배선유": 3,
+          "배선유": 4,
           "김규빈": 4
         },
         "delivery": {
@@ -134183,6 +134183,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": ""
+        },
+        {
+          "time": "14:25",
+          "store": "이석민피자",
+          "biz": "1191618386",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "토스포스 메뉴 등록 요청 드립니다. (스레드 사진 첨부)",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! /"
         },
         {
           "time": "14:15",
@@ -135398,11 +135409,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 89,
+        "online": 90,
         "offline": 26,
         "unknown": 0
       },
-      "updatedAt": "14:45",
+      "updatedAt": "14:48",
       "voc": {
         "responses": 4,
         "install": {
@@ -135533,11 +135544,19 @@ window.SLACK_DATA = {
         "praises": []
       },
       "ob": {
-        "count": 14,
+        "count": 15,
         "byEmp": {
-          "김규빈": 14
+          "김규빈": 15
         },
         "items": [
+          {
+            "key": "2026년 8월 26일 오전 8:40:16|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787387515181929#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-26",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787387515181929"
+          },
           {
             "key": "2026년 8월 26일 오전 8:36:41|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787201091038549#1",
             "handler": "김규빈",
@@ -135686,7 +135705,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787723123.565
+        "lastSeen": 1787723321.333
       },
       "1787722356.190299": {
         "post": "1787722356.190299",
@@ -135694,7 +135713,11 @@ window.SLACK_DATA = {
       },
       "1787723067.665549": {
         "post": "1787723067.665549",
-        "lastSeen": 1787723123.565
+        "lastSeen": 1787723321.333
+      },
+      "1787723275.429889": {
+        "post": "1787723275.429889",
+        "lastSeen": 1787723321.333
       }
     },
     "days": {
@@ -167783,20 +167806,20 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 14:45",
+    "at": "2026-08-26 14:48",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3728,
-    "named": 425,
+    "named": 426,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 425,
+    "done": 426,
     "byStatus": {
       "일정등록완료": 263,
-      "1차부재": 95,
+      "1차부재": 96,
       "점주직접접수": 37,
       "설치불가": 9,
       "(빈칸)": 5,
