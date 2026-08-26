@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5378,
+  "version": 5379,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134088,6 +134088,14 @@ window.SLACK_DATA = {
     },
     "2026-08-26": {
       "counts": {
+        "onboarding": {
+          "송태양": 1,
+          "김현기": 2,
+          "심성현": 4,
+          "김동욱": 2,
+          "고경림": 2,
+          "배선유": 1
+        },
         "as": {
           "김규빈": 2,
           "심성현": 5,
@@ -134096,13 +134104,6 @@ window.SLACK_DATA = {
           "배선유": 6,
           "김현기": 4,
           "김동욱": 2
-        },
-        "onboarding": {
-          "김현기": 2,
-          "심성현": 4,
-          "김동욱": 2,
-          "고경림": 2,
-          "배선유": 1
         },
         "extern": {
           "김동욱": 1,
@@ -134118,6 +134119,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "12:14",
+          "store": "바이진헤어",
+          "biz": "4376600737",
+          "cat": "onboarding",
+          "emp": "송태양",
+          "req": "맥북 포프 유프 온보딩 부탁 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료입니다"
+        },
         {
           "time": "12:00",
           "store": "메리먼트",
@@ -134682,7 +134694,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 36,
+        "online": 37,
         "offline": 15,
         "unknown": 0
       },
@@ -134827,7 +134839,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787714421.072
+        "lastSeen": 1787714660.977
       }
     },
     "days": {
@@ -166636,7 +166648,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 12:20",
+    "at": "2026-08-26 12:24",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
