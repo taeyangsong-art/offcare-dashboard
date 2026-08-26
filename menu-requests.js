@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 992,
- "updatedAt": "2026-08-26 07:15",
+ "version": 993,
+ "updatedAt": "2026-08-26 09:00",
  "days": 30,
  "items": [
   {
@@ -39494,27 +39494,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785113236485139"
-  },
-  {
-   "ts": "1785109564.909899",
-   "date": "2026-07-27",
-   "time": "08:46",
-   "store": "어썸웰스파라운지 안양평촌점",
-   "biz": "4762402235",
-   "pos": "",
-   "content": "어썸웰스파라운지 안양명학점 (<tel:···|···>) 기준으로 메뉴 복제 부탁드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1785110172.650829",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김동욱",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785109564909899"
   }
  ],
  "ocr": {
