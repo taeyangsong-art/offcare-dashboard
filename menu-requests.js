@@ -3,10 +3,145 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1044,
- "updatedAt": "2026-08-26 21:15",
+ "version": 1045,
+ "updatedAt": "2026-08-26 22:34",
  "days": 30,
  "items": [
+  {
+   "ts": "1787751235.320309",
+   "date": "2026-08-26",
+   "time": "22:33",
+   "store": "아마데우스 피안ᆢ",
+   "biz": "1249157305",
+   "pos": "토스포스",
+   "content": "첫 셋팅 부탁드립니다",
+   "special": "첫 셋팅 부탁드립니다",
+   "drive": [
+    "https://drive.google.com/file/d/11z5-czroV84Agje87SMvlJq7BDzW8AFo/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "11z5-czroV84Agje87SMvlJq7BDzW8AFo",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "주4회",
+       "name": "바이엘",
+       "price": 170000
+      },
+      {
+       "category": "주4회",
+       "name": "체르니 100",
+       "price": 180000
+      },
+      {
+       "category": "주4회",
+       "name": "체르니 30",
+       "price": 190000
+      },
+      {
+       "category": "주4회",
+       "name": "체르니 40 /50",
+       "price": 200000
+      },
+      {
+       "category": "주4회",
+       "name": "유아부 (40분수업)",
+       "price": 150000
+      },
+      {
+       "category": "주3회",
+       "name": "바이엘",
+       "price": 160000
+      },
+      {
+       "category": "주3회",
+       "name": "체르니 100",
+       "price": 170000
+      },
+      {
+       "category": "주3회",
+       "name": "체르니 30",
+       "price": 180000
+      },
+      {
+       "category": "주3회",
+       "name": "체르니 40 /50",
+       "price": 190000
+      },
+      {
+       "category": "주3회",
+       "name": "유아부 (40분수업)",
+       "price": 140000
+      },
+      {
+       "category": "주2회",
+       "name": "바이엘",
+       "price": 150000
+      },
+      {
+       "category": "주2회",
+       "name": "체르니 100",
+       "price": 160000
+      },
+      {
+       "category": "주2회",
+       "name": "체르니 30",
+       "price": 170000
+      },
+      {
+       "category": "주2회",
+       "name": "체르니 40 /50",
+       "price": 180000
+      },
+      {
+       "category": "주2회",
+       "name": "유아부 (40분수업)",
+       "price": 130000
+      },
+      {
+       "category": "주1회",
+       "name": "바이엘",
+       "price": 100000
+      },
+      {
+       "category": "주1회",
+       "name": "체르니 100",
+       "price": 100000
+      },
+      {
+       "category": "주1회",
+       "name": "체르니 30",
+       "price": 100000
+      },
+      {
+       "category": "주1회",
+       "name": "체르니 40 /50",
+       "price": 100000
+      },
+      {
+       "category": "주1회",
+       "name": "유아부 (40분수업)",
+       "price": 100000
+      },
+      {
+       "category": "주1회",
+       "name": "성인",
+       "price": 120000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787751242.960029",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787751235320309"
+  },
   {
    "ts": "1787744905.024849",
    "date": "2026-08-26",
