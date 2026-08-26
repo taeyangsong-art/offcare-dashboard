@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5349,
+  "version": 5350,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134144,7 +134144,7 @@ window.SLACK_DATA = {
           "req": "토스포스 설치 완료 / 배민 앱 연동 온보딩 부탁드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "배민 라이트 연동 완료"
         },
         {
           "time": "11:02",
@@ -134599,19 +134599,19 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787710698.79
+        "lastSeen": 1787710759.382
       },
       "1787710500.389289": {
         "post": "1787710500.389289",
-        "lastSeen": 1787710698.79
+        "lastSeen": 1787710759.382
       },
       "1787710500.438849": {
         "post": "1787710500.438849",
-        "lastSeen": 1787710698.79
+        "lastSeen": 1787710759.382
       },
       "1787710621.454649": {
         "post": "1787710621.454649",
-        "lastSeen": 1787710698.79
+        "lastSeen": 1787710759.382
       }
     },
     "days": {
@@ -166396,7 +166396,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 11:18",
+    "at": "2026-08-26 11:19",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
