@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1029,
- "updatedAt": "2026-08-26 16:36",
+ "version": 1030,
+ "updatedAt": "2026-08-26 16:37",
  "days": 30,
  "items": [
   {
@@ -40857,63 +40857,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785138911307079"
-  },
-  {
-   "ts": "1785137824.093689",
-   "date": "2026-07-27",
-   "time": "16:37",
-   "store": "고모카세",
-   "biz": "6710902671",
-   "pos": "스파로스포스",
-   "content": "(유플스파로스) 메뉴 변경",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "Resized(1785137769096)_Resized_20260727_",
-     "fid": "F0BL1EUL8V7",
-     "from": "댓글",
-     "kind": "menu_board",
-     "menu": []
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "육회, 육사시미 29,000원 인상 부탁드려요 대표님 뒷북",
-    "24017",
-    "24018",
-    "제가수정완료"
-   ],
-   "rc": 7,
-   "lr": "1785141634.049229",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785137824093689"
-  },
-  {
-   "ts": "1785137810.525779",
-   "date": "2026-07-27",
-   "time": "16:36",
-   "store": "용용선생 구미인동점",
-   "biz": "4556700519",
-   "pos": "",
-   "content": "메뉴 추가",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "무알콜 맥주(500ml) 6000원\n\n카스(500ml) 1+1 4900원\n카스(300ml) 1+1 3500원\n블랑1 +1 6900원\n\n메뉴생성 부탁드립니다"
-   ],
-   "rc": 2,
-   "lr": "1785137816.823009",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785137810525779"
   }
  ],
  "ocr": {
