@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5325,
+  "version": 5326,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134089,6 +134089,7 @@ window.SLACK_DATA = {
     "2026-08-26": {
       "counts": {
         "as": {
+          "배선유": 1,
           "김동욱": 2,
           "김현기": 2,
           "고경림": 3,
@@ -134107,6 +134108,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:15",
+          "store": "라이프푸드 주식회사(2번코너)",
+          "biz": "6188602176",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "• 영수증 출력 시 용지가 있음에도 삐삐 소리가 나 점검 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "cpp3000 여분 있어서 교체 설치, 대체품 발송"
+        },
         {
           "time": "10:10",
           "store": "더코니",
@@ -134286,11 +134298,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 11,
+        "online": 12,
         "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "10:16",
+      "updatedAt": "10:22",
       "voc": {
         "responses": 2,
         "install": {
@@ -134410,7 +134422,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787707265.213
+        "lastSeen": 1787707442.678
       }
     },
     "days": {
@@ -166179,7 +166191,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 10:21",
+    "at": "2026-08-26 10:24",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
