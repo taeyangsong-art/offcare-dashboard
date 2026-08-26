@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5316,
+  "version": 5317,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134150,9 +134150,10 @@ window.SLACK_DATA = {
     "2026-08-26": {
       "counts": {
         "extern": {
-          "서상원": 2
+          "서상원": 3
         },
         "as": {
+          "김현기": 1,
           "김동욱": 1,
           "고경림": 2,
           "심성현": 2
@@ -134174,6 +134175,28 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": ""
+        },
+        {
+          "time": "09:58",
+          "store": "청죽골",
+          "biz": "4083326051",
+          "cat": "extern",
+          "emp": "서상원",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "09:52",
+          "store": "언커브(uncurb)",
+          "biz": "1744701284",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "휴대폰으로 배달 주문 받아 영수증 출력 희망 휴대폰 영수증 프린트연동 요청 주셨습니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "설정 완료 사용법 간단 안내"
         },
         {
           "time": "09:44",
@@ -134265,11 +134288,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 6,
+        "online": 8,
         "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "10:00",
+      "updatedAt": "10:03",
       "voc": {
         "responses": 1,
         "install": {
@@ -134376,7 +134399,11 @@ window.SLACK_DATA = {
       },
       "1787677200.356799": {
         "post": "1787677200.356799",
-        "lastSeen": 1787706023.197
+        "lastSeen": 1787706215.211
+      },
+      "1787706201.788829": {
+        "post": "1787706201.788829",
+        "lastSeen": 1787706215.211
       }
     },
     "days": {
@@ -166105,7 +166132,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 10:00",
+    "at": "2026-08-26 10:03",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
