@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5352,
+  "version": 5353,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134506,7 +134506,7 @@ window.SLACK_DATA = {
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "11:17",
+      "updatedAt": "11:23",
       "voc": {
         "responses": 2,
         "install": {
@@ -134622,15 +134622,15 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787710944.448
-      },
-      "1787710500.389289": {
-        "post": "1787710500.389289",
-        "lastSeen": 1787710944.448
+        "lastSeen": 1787711006.602
       },
       "1787710500.438849": {
         "post": "1787710500.438849",
-        "lastSeen": 1787710944.448
+        "lastSeen": 1787711006.602
+      },
+      "1787710991.762669": {
+        "post": "1787710991.762669",
+        "lastSeen": 1787711006.602
       }
     },
     "days": {
@@ -166334,8 +166334,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-26": {
-        "cnt": 9,
-        "sumMin": 11.695092821121216,
+        "cnt": 10,
+        "sumMin": 19.614021341005962,
         "over": 0,
         "items": [
           {
@@ -166409,13 +166409,21 @@ window.SLACK_DATA = {
             "biz": "7958803495",
             "who": "고경림",
             "cat": "as"
+          },
+          {
+            "hm": "11:15",
+            "min": 7.9,
+            "store": "(주)디에스전기",
+            "biz": "6568700482",
+            "who": "김동욱",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-26 11:22",
+    "at": "2026-08-26 11:23",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
