@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5446,
+  "version": 5447,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134088,21 +134088,21 @@ window.SLACK_DATA = {
     },
     "2026-08-26": {
       "counts": {
+        "extern": {
+          "서상원": 10,
+          "김동욱": 2,
+          "김현기": 1
+        },
         "as": {
-          "김현기": 6,
+          "김현기": 7,
           "고경림": 19,
           "심성현": 10,
+          "배선유": 12,
           "김동욱": 7,
           "서상원": 5,
-          "배선유": 11,
           "김기범": 3,
           "김규빈": 2,
           "송태양": 3
-        },
-        "extern": {
-          "서상원": 9,
-          "김동욱": 2,
-          "김현기": 1
         },
         "onboarding": {
           "고경림": 3,
@@ -134119,7 +134119,7 @@ window.SLACK_DATA = {
           "김동욱": 2
         },
         "menu": {
-          "배선유": 4,
+          "배선유": 5,
           "김규빈": 4
         },
         "delivery": {
@@ -134151,6 +134151,39 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "14:49",
+          "store": "안다다씨(Anda da Sea)",
+          "biz": "1714800944",
+          "cat": "extern",
+          "emp": "서상원",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "14:48",
+          "store": "오오사칠 순천점",
+          "biz": "3761702728",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "배민 타 매장 연동 해지후 재 온보딩 요청 주셨습니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "지금 당장 매장 아님 / 내일 15시 30분 이후 예약"
+        },
+        {
+          "time": "14:47",
+          "store": "이(李)집 소금빵(Lee's house bakery)",
+          "biz": "6875000705",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "신규 설치 예정 메뉴 등록",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! /"
+        },
         {
           "time": "14:31",
           "store": "이연헤어",
@@ -134205,6 +134238,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "통신사 통해서 인터넷 연결 후 가능하신 날짜에 고객센터로 재인입 예정"
+        },
+        {
+          "time": "14:14",
+          "store": "네이처아트랩",
+          "biz": "8044401176",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "포프(폰) 포스 프로그램 일시적인 오류발생이라는 문구가 계속 떠서 확인부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "앱 재설치 후 재온보딩 완료 / 바우처 등록 문의"
         },
         {
           "time": "14:14",
@@ -135409,11 +135453,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 90,
+        "online": 94,
         "offline": 26,
         "unknown": 0
       },
-      "updatedAt": "14:48",
+      "updatedAt": "14:51",
       "voc": {
         "responses": 4,
         "install": {
@@ -135544,11 +135588,27 @@ window.SLACK_DATA = {
         "praises": []
       },
       "ob": {
-        "count": 15,
+        "count": 17,
         "byEmp": {
-          "김규빈": 15
+          "김규빈": 17
         },
         "items": [
+          {
+            "key": "2026년 8월 26일 오전 8:46:17|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787632610414269#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-26",
+            "planDate": "2026-09-02",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787632610414269"
+          },
+          {
+            "key": "2026년 8월 26일 오전 8:41:57|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787561072203959#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-26",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787561072203959"
+          },
           {
             "key": "2026년 8월 26일 오전 8:40:16|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787387515181929#1",
             "handler": "김규빈",
@@ -135705,7 +135765,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787723321.333
+        "lastSeen": 1787723536.674
       },
       "1787722356.190299": {
         "post": "1787722356.190299",
@@ -135713,11 +135773,11 @@ window.SLACK_DATA = {
       },
       "1787723067.665549": {
         "post": "1787723067.665549",
-        "lastSeen": 1787723321.333
+        "lastSeen": 1787723536.674
       },
-      "1787723275.429889": {
-        "post": "1787723275.429889",
-        "lastSeen": 1787723321.333
+      "1787723507.997819": {
+        "post": "1787723507.997819",
+        "lastSeen": 1787723536.674
       }
     },
     "days": {
@@ -167806,20 +167866,20 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 14:48",
+    "at": "2026-08-26 14:52",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3728,
-    "named": 426,
+    "named": 428,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 426,
+    "done": 428,
     "byStatus": {
-      "일정등록완료": 263,
-      "1차부재": 96,
+      "일정등록완료": 264,
+      "1차부재": 97,
       "점주직접접수": 37,
       "설치불가": 9,
       "(빈칸)": 5,
