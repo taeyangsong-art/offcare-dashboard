@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5355,
+  "version": 5356,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134089,9 +134089,9 @@ window.SLACK_DATA = {
     "2026-08-26": {
       "counts": {
         "as": {
+          "배선유": 5,
           "고경림": 6,
           "송태양": 1,
-          "배선유": 4,
           "김현기": 4,
           "심성현": 4,
           "김동욱": 2
@@ -134115,6 +134115,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:23",
+          "store": "공포의 아구찜, 탕",
+          "biz": "3010858250",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "삼성페이 결제 인식이 순단적으로 안된다고 하시어 점검 요청 드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "영상통화로 교육 완료"
+        },
         {
           "time": "11:17",
           "store": "움버거",
@@ -134515,7 +134526,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 27,
-        "offline": 9,
+        "offline": 10,
         "unknown": 0
       },
       "updatedAt": "11:23",
@@ -134634,11 +134645,11 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787711121.046
+        "lastSeen": 1787711245.325
       },
       "1787710500.438849": {
         "post": "1787710500.438849",
-        "lastSeen": 1787711121.046
+        "lastSeen": 1787711245.325
       }
     },
     "days": {
@@ -166439,7 +166450,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 11:25",
+    "at": "2026-08-26 11:27",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
