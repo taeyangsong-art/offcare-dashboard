@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5332,
+  "version": 5333,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134089,8 +134089,8 @@ window.SLACK_DATA = {
     "2026-08-26": {
       "counts": {
         "as": {
+          "배선유": 2,
           "고경림": 4,
-          "배선유": 1,
           "김동욱": 2,
           "김현기": 2,
           "심성현": 2
@@ -134109,6 +134109,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:32",
+          "store": "드롭탑 팔공산진갤러리점",
+          "biz": "2863400841",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "포스기 포맷한 이후 매장 음악 스피커 3개중, 1개가 나오지않는다하여 도움부탁드립니다",
+          "hw": "",
+          "intake": "offline",
+          "note": "포스에 꽂혀있는 AUX 재연결 안내했으나 잘 모르겠고 담당자 아니라고 하셔서 잘 아시는 분 오면 해보겠다고 함"
+        },
         {
           "time": "10:22",
           "store": "제스트 하우스 (zest haus)",
@@ -134333,7 +134344,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 15,
-        "offline": 5,
+        "offline": 6,
         "unknown": 0
       },
       "updatedAt": "10:38",
@@ -134456,7 +134467,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787708365.004
+        "lastSeen": 1787708481.561
       }
     },
     "days": {
@@ -166233,7 +166244,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 10:39",
+    "at": "2026-08-26 10:41",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
