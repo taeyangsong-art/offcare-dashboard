@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5308,
+  "version": 5309,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -133826,11 +133826,11 @@ window.SLACK_DATA = {
                 "cat": "사용중 오류가 자주 발생함"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 지난주 주말 토스사장님 앱 관련 오류있었던 점 고지 • 앱 재설치로 해결가능함 안내 완료 지난주 주말 토스사장님 앱 관련 오류있었던 점 고지 앱 재설치로 해결가능함 안내 완료",
+            "doneDate": "2026-08-26"
           },
           {
             "time": "15:14",
@@ -134153,6 +134153,9 @@ window.SLACK_DATA = {
           "심성현": 2,
           "고경림": 1
         },
+        "onboarding": {
+          "배선유": 1
+        },
         "extern": {
           "서상원": 1
         }
@@ -134193,6 +134196,17 @@ window.SLACK_DATA = {
           "note": "매장 아님 1015 통화 요청"
         },
         {
+          "time": "09:15",
+          "store": "산들크레",
+          "biz": "2030556700",
+          "cat": "onboarding",
+          "emp": "배선유",
+          "req": "포프(태블릿) + 유프 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "10분 / 온보딩 완료 / 출력속도 115200"
+        },
+        {
           "time": "09:03",
           "store": "황태진국",
           "biz": "5013431132",
@@ -134205,7 +134219,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 2,
+        "online": 3,
         "offline": 2,
         "unknown": 0
       },
@@ -134316,7 +134330,7 @@ window.SLACK_DATA = {
       },
       "1787677200.356799": {
         "post": "1787677200.356799",
-        "lastSeen": 1787705122.995
+        "lastSeen": 1787705301.123
       }
     },
     "days": {
@@ -166037,7 +166051,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 09:45",
+    "at": "2026-08-26 09:48",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
