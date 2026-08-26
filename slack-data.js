@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5313,
+  "version": 5314,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134353,11 +134353,7 @@ window.SLACK_DATA = {
       },
       "1787677200.356799": {
         "post": "1787677200.356799",
-        "lastSeen": 1787705601.306
-      },
-      "1787705566.241859": {
-        "post": "1787705566.241859",
-        "lastSeen": 1787705601.306
+        "lastSeen": 1787705780.35
       }
     },
     "days": {
@@ -166061,8 +166057,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-26": {
-        "cnt": 1,
-        "sumMin": 0.7929636836051941,
+        "cnt": 2,
+        "sumMin": 2.86939936876297,
         "over": 0,
         "items": [
           {
@@ -166072,19 +166068,27 @@ window.SLACK_DATA = {
             "biz": "1390974652",
             "who": "김동욱",
             "cat": "as"
+          },
+          {
+            "hm": "09:52",
+            "min": 2.1,
+            "store": "언커브(uncurb)",
+            "biz": "1744701284",
+            "who": "김현기",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-26 09:53",
+    "at": "2026-08-26 09:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3720,
+    "rows": 3721,
     "named": 411,
     "unknownName": 0,
     "beforeStart": 0,
