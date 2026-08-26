@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5297,
+  "version": 5298,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130837,11 +130837,11 @@ window.SLACK_DATA = {
                 "cat": "사용중 오류가 자주 발생함"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
             "autoNote": "1차부재 1차부재",
-            "doneDate": ""
+            "doneDate": "2026-08-26"
           }
         ],
         "praises": [
@@ -133805,11 +133805,11 @@ window.SLACK_DATA = {
                 "cat": "사용중 오류가 자주 발생함"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 아이패드 연동하여 사용중 • 애플관련 디바이스는 높은 보안정책 등으로 인한 연결끊김증상 있을 수 있음 • 혹은 프론트 문제거나 통신문제 일 가능성도 있는 점 설명 • 프론트 교체 안내 드렸으나 아직은 사용할만 하시다고 하셔서 추후 동일증상시 고객센터로 연락주시면 점검 및 교체 등 조치 취해드리겠음 안내 아이패드 연동하여 사용중 애플관련 디바이스는 높은 ",
+            "doneDate": "2026-08-26"
           },
           {
             "time": "16:14",
@@ -134175,7 +134175,7 @@ window.SLACK_DATA = {
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:21",
+      "updatedAt": "09:27",
       "voc": {
         "responses": 2,
         "install": {
@@ -134304,7 +134304,7 @@ window.SLACK_DATA = {
       },
       "1787677200.356799": {
         "post": "1787677200.356799",
-        "lastSeen": 1787703741.417
+        "lastSeen": 1787704101.178
       }
     },
     "days": {
@@ -166010,7 +166010,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 09:22",
+    "at": "2026-08-26 09:28",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
