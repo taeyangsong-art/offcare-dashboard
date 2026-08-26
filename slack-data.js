@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5331,
+  "version": 5332,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134456,11 +134456,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787708302.267
-      },
-      "1787708292.649459": {
-        "post": "1787708292.649459",
-        "lastSeen": 1787708302.267
+        "lastSeen": 1787708365.004
       }
     },
     "days": {
@@ -166164,8 +166160,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-26": {
-        "cnt": 7,
-        "sumMin": 10.419954450925193,
+        "cnt": 8,
+        "sumMin": 11.103055135409038,
         "over": 0,
         "items": [
           {
@@ -166223,13 +166219,21 @@ window.SLACK_DATA = {
             "biz": "8232501477",
             "who": "김동욱",
             "cat": "as"
+          },
+          {
+            "hm": "10:38",
+            "min": 0.7,
+            "store": "꿈의 제과점(Patisserie De Reves)",
+            "biz": "1070348077",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-26 10:38",
+    "at": "2026-08-26 10:39",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
