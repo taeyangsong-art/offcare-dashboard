@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5334,
+  "version": 5335,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134088,17 +134088,18 @@ window.SLACK_DATA = {
     },
     "2026-08-26": {
       "counts": {
+        "onboarding": {
+          "고경림": 1,
+          "김동욱": 1,
+          "심성현": 3,
+          "배선유": 1
+        },
         "as": {
           "배선유": 2,
           "고경림": 4,
           "김동욱": 2,
           "김현기": 2,
           "심성현": 2
-        },
-        "onboarding": {
-          "김동욱": 1,
-          "심성현": 3,
-          "배선유": 1
         },
         "extern": {
           "서상원": 3
@@ -134109,6 +134110,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:35",
+          "store": "필라 나 요가",
+          "biz": "3803101097",
+          "cat": "onboarding",
+          "emp": "고경림",
+          "req": "포프(휴대폰) 온보딩 요청",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "10:32",
           "store": "드롭탑 팔공산진갤러리점",
@@ -134343,7 +134355,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 15,
+        "online": 16,
         "offline": 6,
         "unknown": 0
       },
@@ -134425,10 +134437,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1787536008.835079": {
-        "post": "1787536008.835079",
-        "lastSeen": 1787587295.313
-      },
       "1787540881.150669": {
         "post": "1787540881.150669",
         "lastSeen": 1787587295.313
@@ -134467,11 +134475,11 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787708720.587
+        "lastSeen": 1787708899.035
       },
       "1787708654.456529": {
         "post": "1787708654.456529",
-        "lastSeen": 1787708720.587
+        "lastSeen": 1787708899.035
       }
     },
     "days": {
@@ -166248,7 +166256,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 10:45",
+    "at": "2026-08-26 10:48",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
