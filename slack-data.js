@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5307,
+  "version": 5308,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134316,11 +134316,7 @@ window.SLACK_DATA = {
       },
       "1787677200.356799": {
         "post": "1787677200.356799",
-        "lastSeen": 1787705060.663
-      },
-      "1787705044.251179": {
-        "post": "1787705044.251179",
-        "lastSeen": 1787705060.663
+        "lastSeen": 1787705122.995
       }
     },
     "days": {
@@ -166022,11 +166018,26 @@ window.SLACK_DATA = {
             "cat": "as"
           }
         ]
+      },
+      "2026-08-26": {
+        "cnt": 1,
+        "sumMin": 0.7929636836051941,
+        "over": 0,
+        "items": [
+          {
+            "hm": "09:44",
+            "min": 0.8,
+            "store": "유어타입",
+            "biz": "1390974652",
+            "who": "김동욱",
+            "cat": "as"
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-26 09:44",
+    "at": "2026-08-26 09:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
