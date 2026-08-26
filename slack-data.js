@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5323,
+  "version": 5324,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134088,6 +134088,12 @@ window.SLACK_DATA = {
     },
     "2026-08-26": {
       "counts": {
+        "as": {
+          "김동욱": 2,
+          "김현기": 2,
+          "고경림": 2,
+          "심성현": 2
+        },
         "onboarding": {
           "심성현": 2,
           "배선유": 1
@@ -134095,18 +134101,35 @@ window.SLACK_DATA = {
         "extern": {
           "서상원": 3
         },
-        "as": {
-          "김현기": 1,
-          "김동욱": 1,
-          "고경림": 2,
-          "심성현": 2
-        },
         "menu": {
           "배선유": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:10",
+          "store": "더코니",
+          "biz": "2664101354",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "프린터기 재 온보딩 요청 드립니다~!",
+          "hw": "",
+          "urgent": true,
+          "intake": "online",
+          "note": "포스기에서 프린터 포스뱅크 젠더가 빠져있엇음. 연결 후 정상출력 확인"
+        },
+        {
+          "time": "10:09",
+          "store": "구워스(GOOWAS)",
+          "biz": "8641702400",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "대형 키오스크 사용 중/ 매장 고유번호 입력 후 실행했으나 초기화 되었다고 하여 확인 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "상품등록해달라는 문구가 뜬다고합니다 . / ksnet 잘못 로그인 / 나이스 매장 고유번호 안내, 문자로 재발송 대표님 이해 완료 / 나이스 로그인 후 정상 확인"
+        },
         {
           "time": "10:03",
           "store": "빵빵쌀한입",
@@ -134252,27 +134275,28 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 9,
-        "offline": 4,
+        "online": 10,
+        "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "10:15",
+      "updatedAt": "10:16",
       "voc": {
-        "responses": 1,
+        "responses": 2,
         "install": {
           "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 1,
+          "count": 2,
           "low": 1
         },
         "high": {
           "install": 0,
-          "nps": 0
+          "nps": 1
         },
         "npsDist": {
-          "4": 1
+          "4": 1,
+          "10": 1
         },
         "installDist": {
           "4": 1
@@ -134281,12 +134305,20 @@ window.SLACK_DATA = {
           "기타": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 1,
+            "low": 0
+          },
           "구매설치": {
             "total": 1,
             "low": 1
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 1,
+            "low": 0
+          },
           "KIS": {
             "total": 1,
             "low": 1
@@ -134367,11 +134399,11 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787706919.222
+        "lastSeen": 1787707085.474
       },
-      "1787706901.065009": {
-        "post": "1787706901.065009",
-        "lastSeen": 1787706919.222
+      "1787706982.325159": {
+        "post": "1787706982.325159",
+        "lastSeen": 1787707085.474
       }
     },
     "days": {
@@ -166075,8 +166107,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-26": {
-        "cnt": 5,
-        "sumMin": 5.514932250976563,
+        "cnt": 6,
+        "sumMin": 7.202982099850973,
         "over": 0,
         "items": [
           {
@@ -166118,13 +166150,21 @@ window.SLACK_DATA = {
             "biz": "8641702400",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "10:15",
+            "min": 1.7,
+            "store": "베르노(VERNO)",
+            "biz": "7305800816",
+            "who": "김동욱",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-26 10:15",
+    "at": "2026-08-26 10:18",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
