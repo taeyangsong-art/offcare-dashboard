@@ -3,10 +3,141 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1026,
- "updatedAt": "2026-08-26 15:18",
+ "version": 1027,
+ "updatedAt": "2026-08-26 16:13",
  "days": 30,
  "items": [
+  {
+   "ts": "1787728363.254069",
+   "date": "2026-08-26",
+   "time": "16:12",
+   "store": "이석민피자",
+   "biz": "1191618386",
+   "pos": "",
+   "content": "메뉴 등록 요청드립니다 >>",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BSB0MH7KR",
+     "from": "댓글",
+     "path": "menu-files/1787728363_254069-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "콘옥수수치즈",
+       "price": 1000
+      },
+      {
+       "category": "세트메뉴 - 스프링 피자세트",
+       "name": "훼미리 세트",
+       "price": 34000
+      },
+      {
+       "category": "세트메뉴 - 스프링 피자세트",
+       "name": "라지 세트",
+       "price": 31500
+      },
+      {
+       "category": "세트메뉴 - 스프링 피자세트",
+       "name": "미디움 세트",
+       "price": 26000
+      },
+      {
+       "category": "치즈크러스트 피자세트",
+       "name": "훼미리 세트",
+       "price": 38000
+      },
+      {
+       "category": "치즈크러스트 피자세트",
+       "name": "라지 세트",
+       "price": 35500
+      },
+      {
+       "category": "치즈크러스트 피자세트",
+       "name": "미디움 세트",
+       "price": 29000
+      },
+      {
+       "category": "고구마피자 세트",
+       "name": "M",
+       "price": 32000
+      },
+      {
+       "category": "고구마피자 세트",
+       "name": "L",
+       "price": 35000
+      },
+      {
+       "category": "고구마피자 세트",
+       "name": "F",
+       "price": 40000
+      },
+      {
+       "category": "골드피자 세트",
+       "name": "L",
+       "price": 35000
+      },
+      {
+       "category": "골드피자 세트",
+       "name": "F",
+       "price": 40000
+      },
+      {
+       "category": "씨푸드 골드피자 세트",
+       "name": "L",
+       "price": 36000
+      },
+      {
+       "category": "씨푸드 골드피자 세트",
+       "name": "F",
+       "price": 41000
+      },
+      {
+       "category": "치즈마라불세트",
+       "name": "M",
+       "price": 35000
+      },
+      {
+       "category": "치즈마라불세트",
+       "name": "L",
+       "price": 41000
+      },
+      {
+       "category": "치즈마라불세트",
+       "name": "F",
+       "price": 46000
+      },
+      {
+       "category": "씨푸드 마라불 세트",
+       "name": "M",
+       "price": 36000
+      },
+      {
+       "category": "씨푸드 마라불 세트",
+       "name": "L",
+       "price": 42000
+      },
+      {
+       "category": "씨푸드 마라불 세트",
+       "name": "F",
+       "price": 47000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1787728373.260189",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787728363254069"
+  },
   {
    "ts": "1787723351.369649",
    "date": "2026-08-26",
