@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5302,
+  "version": 5303,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -19434,8 +19434,8 @@ window.SLACK_DATA = {
         },
         "menu": {
           "서상원": 1,
+          "배선유": 13,
           "최민석": 1,
-          "배선유": 11,
           "김동욱": 2,
           "김규빈": 8
         },
@@ -22568,10 +22568,32 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "온보딩 완료 / 키인결제 필요, 단말기 추가 상담 ob전달"
+        },
+        {
+          "time": "00:25",
+          "store": "단디헤어",
+          "biz": "3681502816",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 엇 메뉴가 이미 있음 / 작업은 해놨는데 여기서 추가되는 것만 넣어달라고 함 / 필요 메뉴만 적어서 재접수 안내"
+        },
+        {
+          "time": "00:08",
+          "store": "더엘음악학원",
+          "biz": "2589301518",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         }
       ],
       "intake": {
-        "online": 206,
+        "online": 208,
         "offline": 39,
         "unknown": 0
       }
@@ -65256,21 +65278,20 @@ window.SLACK_DATA = {
       },
       "updatedAt": "22:00",
       "voc": {
-        "responses": 9,
+        "responses": 8,
         "install": {
           "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 9,
-          "low": 1
+          "count": 8,
+          "low": 0
         },
         "high": {
           "install": 2,
           "nps": 5
         },
         "npsDist": {
-          "5": 1,
           "6": 1,
           "7": 2,
           "10": 5
@@ -65292,8 +65313,8 @@ window.SLACK_DATA = {
             "low": 0
           },
           "1개월": {
-            "total": 2,
-            "low": 1
+            "total": 1,
+            "low": 0
           },
           "3개월": {
             "total": 2,
@@ -65332,39 +65353,10 @@ window.SLACK_DATA = {
           "KPN": {
             "total": 1,
             "low": 0
-          },
-          "KIS": {
-            "total": 1,
-            "low": 1
           }
         },
-        "reasonCounts": {
-          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
-        },
-        "alerts": [
-          {
-            "time": "00:08",
-            "store": "뮤엠영어대연황령어학원",
-            "storeId": "491703",
-            "industry": "",
-            "indBucket": "",
-            "install": null,
-            "nps": 5,
-            "reasons": [
-              {
-                "q": "추천의향",
-                "score": 5,
-                "text": "한달동안 사용한 결제대금이 전혀 입금 되지 않았습니다.",
-                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
-              }
-            ],
-            "emp": "송태양",
-            "autoStatus": "처리완료",
-            "autoEmp": "송태양",
-            "autoNote": "• KIS벤 조회시 프론트 결제건 정산 완료됨. • 오늘얼마 등 입금예정내역은 단순 참고용이며 카드사로 문의하셔야함 • 프론트 결제내역 확인 요청 건은 CX인입되어 엑셀자료 전달됨 KIS벤 조회시 프론트 결제건 정산 완료됨. 오늘얼마 등 입금예정내역은 단순 참고용이며 카드사로 문의하셔야함 프론트 결제내역 확인 요청 건은 CX인입되어 엑셀자료 전달됨",
-            "doneDate": "2026-07-27"
-          }
-        ],
+        "reasonCounts": {},
+        "alerts": [],
         "praises": [
           {
             "time": "16:00",
@@ -71398,25 +71390,25 @@ window.SLACK_DATA = {
       },
       "updatedAt": "23:46",
       "voc": {
-        "responses": 19,
+        "responses": 20,
         "install": {
           "count": 5,
           "low": 1
         },
         "nps": {
-          "count": 19,
+          "count": 20,
           "low": 4
         },
         "high": {
           "install": 4,
-          "nps": 11
+          "nps": 12
         },
         "npsDist": {
           "4": 2,
           "5": 2,
           "6": 1,
           "9": 3,
-          "10": 11
+          "10": 12
         },
         "installDist": {
           "1": 1,
@@ -71428,13 +71420,13 @@ window.SLACK_DATA = {
           "기타": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 6,
+            "low": 2
+          },
           "1개월": {
             "total": 3,
             "low": 0
-          },
-          "3개월": {
-            "total": 5,
-            "low": 2
           },
           "12개월": {
             "total": 4,
@@ -71450,6 +71442,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SECTA9": {
+            "total": 3,
+            "low": 0
+          },
           "KSNET": {
             "total": 3,
             "low": 1
@@ -71464,10 +71460,6 @@ window.SLACK_DATA = {
           },
           "SMARTRO": {
             "total": 3,
-            "low": 0
-          },
-          "SECTA9": {
-            "total": 2,
             "low": 0
           },
           "KIS": {
@@ -74593,18 +74585,18 @@ window.SLACK_DATA = {
       },
       "updatedAt": "22:22",
       "voc": {
-        "responses": 28,
+        "responses": 27,
         "install": {
           "count": 7,
           "low": 0
         },
         "nps": {
-          "count": 28,
+          "count": 27,
           "low": 4
         },
         "high": {
           "install": 5,
-          "nps": 14
+          "nps": 13
         },
         "npsDist": {
           "0": 2,
@@ -74613,7 +74605,7 @@ window.SLACK_DATA = {
           "7": 4,
           "8": 3,
           "9": 2,
-          "10": 14
+          "10": 13
         },
         "installDist": {
           "4": 2,
@@ -74635,7 +74627,7 @@ window.SLACK_DATA = {
             "low": 0
           },
           "3개월": {
-            "total": 10,
+            "total": 9,
             "low": 2
           },
           "1개월": {
@@ -74669,7 +74661,7 @@ window.SLACK_DATA = {
             "low": 0
           },
           "SECTA9": {
-            "total": 7,
+            "total": 6,
             "low": 1
           }
         },
@@ -78915,18 +78907,18 @@ window.SLACK_DATA = {
       },
       "updatedAt": "23:50",
       "voc": {
-        "responses": 26,
+        "responses": 27,
         "install": {
           "count": 8,
           "low": 2
         },
         "nps": {
-          "count": 26,
+          "count": 27,
           "low": 6
         },
         "high": {
           "install": 6,
-          "nps": 13
+          "nps": 14
         },
         "npsDist": {
           "0": 1,
@@ -78936,7 +78928,7 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 3,
           "9": 3,
-          "10": 13
+          "10": 14
         },
         "installDist": {
           "1": 2,
@@ -78950,6 +78942,10 @@ window.SLACK_DATA = {
           "카페": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 8,
+            "low": 0
+          },
           "구매설치": {
             "total": 8,
             "low": 2
@@ -78961,19 +78957,15 @@ window.SLACK_DATA = {
           "3개월": {
             "total": 5,
             "low": 1
-          },
-          "1개월": {
-            "total": 7,
-            "low": 0
           }
         },
         "byVan": {
-          "KPN": {
+          "KIS": {
             "total": 7,
             "low": 1
           },
-          "KIS": {
-            "total": 6,
+          "KPN": {
+            "total": 7,
             "low": 1
           },
           "DAOU": {
@@ -82004,23 +81996,23 @@ window.SLACK_DATA = {
       },
       "updatedAt": "23:47",
       "voc": {
-        "responses": 8,
+        "responses": 7,
         "install": {
           "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 8,
+          "count": 7,
           "low": 0
         },
         "high": {
           "install": 1,
-          "nps": 4
+          "nps": 3
         },
         "npsDist": {
           "8": 3,
           "9": 1,
-          "10": 4
+          "10": 3
         },
         "installDist": {
           "4": 1,
@@ -82032,7 +82024,7 @@ window.SLACK_DATA = {
         },
         "byTenure": {
           "1개월": {
-            "total": 3,
+            "total": 2,
             "low": 0
           },
           "6개월": {
@@ -82054,7 +82046,7 @@ window.SLACK_DATA = {
             "low": 0
           },
           "KIS": {
-            "total": 4,
+            "total": 3,
             "low": 0
           },
           "KSNET": {
@@ -84608,18 +84600,18 @@ window.SLACK_DATA = {
       },
       "updatedAt": "23:05",
       "voc": {
-        "responses": 21,
+        "responses": 22,
         "install": {
-          "count": 9,
+          "count": 10,
           "low": 1
         },
         "nps": {
-          "count": 21,
+          "count": 22,
           "low": 7
         },
         "high": {
-          "install": 3,
-          "nps": 11
+          "install": 4,
+          "nps": 12
         },
         "npsDist": {
           "0": 1,
@@ -84628,23 +84620,23 @@ window.SLACK_DATA = {
           "5": 2,
           "7": 2,
           "9": 1,
-          "10": 11
+          "10": 12
         },
         "installDist": {
           "1": 1,
           "3": 2,
           "4": 3,
-          "5": 3
+          "5": 4
         },
         "byIndustry": {
+          "서비스[학원]": 5,
           "요식업": 2,
-          "서비스[학원]": 4,
           "도소매": 2,
           "카페": 1
         },
         "byTenure": {
           "구매설치": {
-            "total": 9,
+            "total": 10,
             "low": 5
           },
           "12개월": {
@@ -84666,7 +84658,7 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KOCES": {
-            "total": 2,
+            "total": 3,
             "low": 2
           },
           "KPN": {
@@ -87945,39 +87937,43 @@ window.SLACK_DATA = {
       "voc": {
         "responses": 26,
         "install": {
-          "count": 7,
+          "count": 6,
           "low": 1
         },
         "nps": {
           "count": 26,
-          "low": 4
+          "low": 5
         },
         "high": {
-          "install": 5,
-          "nps": 16
+          "install": 4,
+          "nps": 15
         },
         "npsDist": {
           "0": 1,
-          "1": 1,
+          "1": 2,
           "2": 1,
           "5": 1,
           "6": 1,
           "8": 3,
           "9": 2,
-          "10": 16
+          "10": 15
         },
         "installDist": {
           "2": 1,
           "3": 1,
-          "5": 5
+          "5": 4
         },
         "byIndustry": {
-          "서비스[학원]": 5,
+          "서비스[학원]": 4,
           "서비스[뷰티,헤어]": 2
         },
         "byTenure": {
+          "3개월": {
+            "total": 2,
+            "low": 1
+          },
           "구매설치": {
-            "total": 7,
+            "total": 6,
             "low": 2
           },
           "12개월": {
@@ -87991,19 +87987,15 @@ window.SLACK_DATA = {
           "1개월": {
             "total": 6,
             "low": 0
-          },
-          "3개월": {
-            "total": 1,
-            "low": 0
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 10,
+            "low": 2
+          },
           "KIS": {
             "total": 2,
-            "low": 1
-          },
-          "KPN": {
-            "total": 9,
             "low": 1
           },
           "SMARTRO": {
@@ -88025,19 +88017,37 @@ window.SLACK_DATA = {
           "DAOU": {
             "total": 1,
             "low": 0
-          },
-          "KOCES": {
-            "total": 1,
-            "low": 0
           }
         },
         "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 2,
           "사용중 오류가 자주 발생함": 2,
-          "단말기 설치나 초기 과정이 어려움": 1,
           "필요한 기능이 없거나 몰라서 불편": 1,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
         },
         "alerts": [
+          {
+            "time": "00:06",
+            "store": "안녕,멍멍",
+            "storeId": "452769",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "중간에 시스템점검인지 뭔지해서 결제도안되고 토스간말기계가 계속 연결 끊기고해서 연락했더니 인터넷문제라고만하고 인터넷에선 아무문제없다고하고 일단 제대로 쓰고있지않음",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "1차부재 1차부재 / 2차부재 2차부재",
+            "doneDate": "2026-08-26"
+          },
           {
             "time": "19:18",
             "store": "임프라수학입시학원",
@@ -90748,14 +90758,14 @@ window.SLACK_DATA = {
       },
       "updatedAt": "23:43",
       "voc": {
-        "responses": 19,
+        "responses": 18,
         "install": {
           "count": 7,
           "low": 2
         },
         "nps": {
-          "count": 19,
-          "low": 6
+          "count": 18,
+          "low": 5
         },
         "high": {
           "install": 3,
@@ -90763,7 +90773,6 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "0": 1,
-          "1": 1,
           "2": 1,
           "4": 1,
           "5": 2,
@@ -90788,8 +90797,8 @@ window.SLACK_DATA = {
         },
         "byTenure": {
           "3개월": {
-            "total": 5,
-            "low": 2
+            "total": 4,
+            "low": 1
           },
           "구매설치": {
             "total": 7,
@@ -90810,8 +90819,8 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KPN": {
-            "total": 4,
-            "low": 3
+            "total": 3,
+            "low": 2
           },
           "KOCES": {
             "total": 3,
@@ -90835,7 +90844,7 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
-          "단말기 설치나 초기 과정이 어려움": 3,
+          "단말기 설치나 초기 과정이 어려움": 2,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "고객센터 연락이 매우 힘듦": 1,
           "필요한 기능이 없거나 몰라서 불편": 1,
@@ -90964,28 +90973,6 @@ window.SLACK_DATA = {
             "autoEmp": "송태양",
             "autoNote": "• 금일 오후 4시 45분 원격지원 예정 금일 오후 4시 45분 원격지원 예정",
             "doneDate": "2026-08-06"
-          },
-          {
-            "time": "00:06",
-            "store": "안녕,멍멍",
-            "storeId": "452769",
-            "industry": "",
-            "indBucket": "",
-            "install": null,
-            "nps": 1,
-            "reasons": [
-              {
-                "q": "추천의향",
-                "score": 1,
-                "text": "중간에 시스템점검인지 뭔지해서 결제도안되고 토스간말기계가 계속 연결 끊기고해서 연락했더니 인터넷문제라고만하고 인터넷에선 아무문제없다고하고 일단 제대로 쓰고있지않음",
-                "cat": "단말기 설치나 초기 과정이 어려움"
-              }
-            ],
-            "emp": "송태양",
-            "autoStatus": "처리완료",
-            "autoEmp": "송태양",
-            "autoNote": "1차부재 1차부재",
-            "doneDate": "2026-08-07"
           }
         ],
         "praises": [
@@ -112828,13 +112815,13 @@ window.SLACK_DATA = {
       },
       "updatedAt": "23:59",
       "voc": {
-        "responses": 13,
+        "responses": 14,
         "install": {
-          "count": 4,
-          "low": 1
+          "count": 5,
+          "low": 2
         },
         "nps": {
-          "count": 13,
+          "count": 14,
           "low": 2
         },
         "high": {
@@ -112844,25 +112831,26 @@ window.SLACK_DATA = {
         "npsDist": {
           "3": 1,
           "5": 1,
-          "7": 3,
+          "7": 4,
           "8": 3,
           "9": 1,
           "10": 4
         },
         "installDist": {
-          "1": 1,
+          "1": 2,
           "4": 1,
           "5": 2
         },
         "byIndustry": {
+          "서비스[뷰티,헤어]": 1,
           "도소매": 1,
           "서비스[학원]": 2,
           "기타": 1
         },
         "byTenure": {
           "구매설치": {
-            "total": 4,
-            "low": 1
+            "total": 5,
+            "low": 2
           },
           "3개월": {
             "total": 2,
@@ -112882,6 +112870,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "DAOU": {
+            "total": 1,
+            "low": 1
+          },
           "KOCES": {
             "total": 2,
             "low": 0
@@ -112904,11 +112896,33 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 2,
           "사용중 오류가 자주 발생함": 1,
-          "단말기 설치나 초기 과정이 어려움": 1,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1
         },
         "alerts": [
+          {
+            "time": "00:53",
+            "store": "며니살롱",
+            "storeId": "592371",
+            "industry": "뷰티",
+            "indBucket": "서비스[뷰티,헤어]",
+            "install": 1,
+            "nps": 7,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "설치너무어렵고  기사방문원해요",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "너무 어렵게 설치하셨다고 합니다. 문제 있으시면 꼭 연락 달라고 안내함 너무 어렵게 설치하셨다고 합니다. 문제 있으시면 꼭 연락 달라고 안내함",
+            "doneDate": ""
+          },
           {
             "time": "15:39",
             "store": "토마루해물칼국수",
@@ -113011,13 +113025,13 @@ window.SLACK_DATA = {
       },
       "updatedAt": "22:17",
       "voc": {
-        "responses": 24,
+        "responses": 23,
         "install": {
-          "count": 5,
-          "low": 1
+          "count": 4,
+          "low": 0
         },
         "nps": {
-          "count": 24,
+          "count": 23,
           "low": 7
         },
         "high": {
@@ -113028,20 +113042,18 @@ window.SLACK_DATA = {
           "2": 1,
           "3": 1,
           "5": 5,
-          "7": 3,
+          "7": 2,
           "8": 3,
           "10": 11
         },
         "installDist": {
-          "1": 1,
           "3": 1,
           "5": 3
         },
         "byIndustry": {
           "도소매": 2,
           "기타": 1,
-          "서비스[학원]": 1,
-          "서비스[뷰티,헤어]": 1
+          "서비스[학원]": 1
         },
         "byTenure": {
           "1개월": {
@@ -113053,8 +113065,8 @@ window.SLACK_DATA = {
             "low": 2
           },
           "구매설치": {
-            "total": 5,
-            "low": 1
+            "total": 4,
+            "low": 0
           },
           "3개월": {
             "total": 2,
@@ -113087,8 +113099,8 @@ window.SLACK_DATA = {
             "low": 0
           },
           "DAOU": {
-            "total": 2,
-            "low": 2
+            "total": 1,
+            "low": 1
           },
           "SECTA9": {
             "total": 2,
@@ -113103,7 +113115,7 @@ window.SLACK_DATA = {
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 3,
           "필요한 기능이 없거나 몰라서 불편": 1,
           "사용중 오류가 자주 발생함": 2,
-          "단말기 설치나 초기 과정이 어려움": 2
+          "단말기 설치나 초기 과정이 어려움": 1
         },
         "alerts": [
           {
@@ -113258,28 +113270,6 @@ window.SLACK_DATA = {
             "autoStatus": "",
             "autoEmp": "",
             "autoNote": "프린터기는 부가장비로 따로 신청해야한다고 안내 배경화면 그림 설정 법 안내 프린터기는 부가장비로 따로 신청해야한다고 안내 배경화면 그림 설정 법 안내",
-            "doneDate": ""
-          },
-          {
-            "time": "00:53",
-            "store": "며니살롱",
-            "storeId": "592371",
-            "industry": "뷰티",
-            "indBucket": "서비스[뷰티,헤어]",
-            "install": 1,
-            "nps": 7,
-            "reasons": [
-              {
-                "q": "구매설치",
-                "score": 1,
-                "text": "설치너무어렵고  기사방문원해요",
-                "cat": "단말기 설치나 초기 과정이 어려움"
-              }
-            ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "너무 어렵게 설치하셨다고 합니다. 문제 있으시면 꼭 연락 달라고 안내함 너무 어렵게 설치하셨다고 합니다. 문제 있으시면 꼭 연락 달라고 안내함",
             "doneDate": ""
           }
         ],
@@ -127036,36 +127026,41 @@ window.SLACK_DATA = {
       },
       "updatedAt": "23:50",
       "voc": {
-        "responses": 13,
+        "responses": 14,
         "install": {
-          "count": 5,
+          "count": 6,
           "low": 1
         },
         "nps": {
-          "count": 13,
+          "count": 14,
           "low": 2
         },
         "high": {
           "install": 3,
-          "nps": 7
+          "nps": 8
         },
         "npsDist": {
           "1": 1,
           "5": 1,
           "8": 1,
           "9": 3,
-          "10": 7
+          "10": 8
         },
         "installDist": {
           "2": 1,
-          "3": 1,
+          "3": 2,
           "5": 3
         },
         "byIndustry": {
+          "요식업": 1,
           "서비스[학원]": 3,
           "서비스[뷰티,헤어]": 2
         },
         "byTenure": {
+          "구매설치": {
+            "total": 6,
+            "low": 1
+          },
           "6개월": {
             "total": 2,
             "low": 0
@@ -127073,10 +127068,6 @@ window.SLACK_DATA = {
           "12개월": {
             "total": 4,
             "low": 0
-          },
-          "구매설치": {
-            "total": 5,
-            "low": 1
           },
           "1개월": {
             "total": 1,
@@ -127088,6 +127079,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SECTA9": {
+            "total": 1,
+            "low": 0
+          },
           "DAOU": {
             "total": 1,
             "low": 0
@@ -127225,18 +127220,18 @@ window.SLACK_DATA = {
       },
       "updatedAt": "20:25",
       "voc": {
-        "responses": 25,
+        "responses": 24,
         "install": {
-          "count": 13,
+          "count": 12,
           "low": 3
         },
         "nps": {
-          "count": 25,
+          "count": 24,
           "low": 6
         },
         "high": {
           "install": 6,
-          "nps": 14
+          "nps": 13
         },
         "npsDist": {
           "0": 2,
@@ -127246,17 +127241,17 @@ window.SLACK_DATA = {
           "6": 2,
           "8": 1,
           "9": 2,
-          "10": 14
+          "10": 13
         },
         "installDist": {
           "1": 2,
           "2": 1,
-          "3": 3,
+          "3": 2,
           "4": 1,
           "5": 6
         },
         "byIndustry": {
-          "요식업": 4,
+          "요식업": 3,
           "서비스[학원]": 1,
           "서비스[뷰티,헤어]": 3,
           "카페": 2,
@@ -127265,7 +127260,7 @@ window.SLACK_DATA = {
         },
         "byTenure": {
           "구매설치": {
-            "total": 13,
+            "total": 12,
             "low": 6
           },
           "6개월": {
@@ -127307,7 +127302,7 @@ window.SLACK_DATA = {
             "low": 2
           },
           "SECTA9": {
-            "total": 3,
+            "total": 2,
             "low": 0
           },
           "KIS": {
@@ -133707,13 +133702,13 @@ window.SLACK_DATA = {
       },
       "updatedAt": "23:48",
       "voc": {
-        "responses": 13,
+        "responses": 14,
         "install": {
           "count": 4,
           "low": 1
         },
         "nps": {
-          "count": 13,
+          "count": 14,
           "low": 4
         },
         "high": {
@@ -133726,7 +133721,7 @@ window.SLACK_DATA = {
           "4": 1,
           "5": 1,
           "8": 3,
-          "9": 3,
+          "9": 4,
           "10": 3
         },
         "installDist": {
@@ -133740,6 +133735,10 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 1,
+            "low": 0
+          },
           "6개월": {
             "total": 1,
             "low": 0
@@ -133758,13 +133757,13 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 5,
+            "low": 2
+          },
           "SECTA9": {
             "total": 2,
             "low": 1
-          },
-          "KPN": {
-            "total": 4,
-            "low": 2
           },
           "NICE": {
             "total": 1,
@@ -133885,6 +133884,18 @@ window.SLACK_DATA = {
           }
         ],
         "praises": [
+          {
+            "time": "00:21",
+            "store": "비앤비헤어(B&B)",
+            "storeId": "559015",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 9,
+            "text": "결재하기편리합니다",
+            "byReaction": false,
+            "doneDate": ""
+          },
           {
             "time": "10:01",
             "store": "메종그리즈",
@@ -134200,13 +134211,13 @@ window.SLACK_DATA = {
       },
       "updatedAt": "09:35",
       "voc": {
-        "responses": 2,
+        "responses": 1,
         "install": {
           "count": 0,
           "low": 0
         },
         "nps": {
-          "count": 2,
+          "count": 1,
           "low": 1
         },
         "high": {
@@ -134214,8 +134225,7 @@ window.SLACK_DATA = {
           "nps": 0
         },
         "npsDist": {
-          "3": 1,
-          "9": 1
+          "3": 1
         },
         "installDist": {},
         "byIndustry": {},
@@ -134223,20 +134233,12 @@ window.SLACK_DATA = {
           "12개월": {
             "total": 1,
             "low": 1
-          },
-          "1개월": {
-            "total": 1,
-            "low": 0
           }
         },
         "byVan": {
           "NICE": {
             "total": 1,
             "low": 1
-          },
-          "KPN": {
-            "total": 1,
-            "low": 0
           }
         },
         "reasonCounts": {
@@ -134266,20 +134268,7 @@ window.SLACK_DATA = {
             "doneDate": ""
           }
         ],
-        "praises": [
-          {
-            "time": "00:21",
-            "store": "비앤비헤어(B&B)",
-            "storeId": "559015",
-            "indBucket": "",
-            "emp": "",
-            "install": null,
-            "nps": 9,
-            "text": "결재하기편리합니다",
-            "byReaction": false,
-            "doneDate": ""
-          }
-        ]
+        "praises": []
       }
     }
   },
@@ -134327,7 +134316,7 @@ window.SLACK_DATA = {
       },
       "1787677200.356799": {
         "post": "1787677200.356799",
-        "lastSeen": 1787704521.541
+        "lastSeen": 1787704687.641
       }
     },
     "days": {
@@ -166033,7 +166022,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 09:35",
+    "at": "2026-08-26 09:38",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
