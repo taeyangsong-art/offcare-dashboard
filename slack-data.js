@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5345,
+  "version": 5346,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134089,10 +134089,10 @@ window.SLACK_DATA = {
     "2026-08-26": {
       "counts": {
         "as": {
+          "배선유": 4,
           "고경림": 5,
           "심성현": 4,
           "김현기": 3,
-          "배선유": 3,
           "김동욱": 2
         },
         "onboarding": {
@@ -134113,6 +134113,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:09",
+          "store": "수랏간들밥&amp;파크",
+          "biz": "5162101469",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "주방 무선프린터W 출력 불가 제보주셨는데 점검 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "이 포스의 주문건만 출력할게요 체크 해제, 오더포스(태블릿) 와이파이 변경 후 출력 테스트 완료"
+        },
         {
           "time": "11:02",
           "store": "푸페또클럽",
@@ -134446,11 +134457,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 23,
+        "online": 24,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "11:09",
+      "updatedAt": "11:12",
       "voc": {
         "responses": 2,
         "install": {
@@ -134566,7 +134577,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787710225.21
+        "lastSeen": 1787710405.154
       }
     },
     "days": {
@@ -166343,7 +166354,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 11:10",
+    "at": "2026-08-26 11:13",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
