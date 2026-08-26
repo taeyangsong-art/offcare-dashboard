@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5400,
+  "version": 5401,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134090,7 +134090,7 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "서상원": 2,
-          "고경림": 9,
+          "고경림": 10,
           "김현기": 5,
           "심성현": 7,
           "김규빈": 2,
@@ -134128,6 +134128,17 @@ window.SLACK_DATA = {
           "cat": "as",
           "emp": "서상원",
           "req": "핸드폰 포프 유프 온보딩 부탁 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "13:04",
+          "store": "리브필라테스&amp;바레",
+          "biz": "2352802160",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "이전 온보딩 받았으나 출력이 안되어보니 프린터 연동이 풀린것으로 보입니다.",
           "hw": "",
           "intake": "online",
           "note": ""
@@ -134818,11 +134829,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 47,
+        "online": 48,
         "offline": 16,
         "unknown": 0
       },
-      "updatedAt": "13:09",
+      "updatedAt": "13:10",
       "voc": {
         "responses": 4,
         "install": {
@@ -134990,19 +135001,23 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787717419.563
+        "lastSeen": 1787717482.091
       },
       "1787715001.607579": {
         "post": "1787715001.607579",
-        "lastSeen": 1787717419.563
+        "lastSeen": 1787717482.091
       },
       "1787717170.415189": {
         "post": "1787717170.415189",
-        "lastSeen": 1787717419.563
+        "lastSeen": 1787717482.091
       },
       "1787717362.464119": {
         "post": "1787717362.464119",
-        "lastSeen": 1787717419.563
+        "lastSeen": 1787717482.091
+      },
+      "1787717459.748789": {
+        "post": "1787717459.748789",
+        "lastSeen": 1787717482.091
       }
     },
     "days": {
@@ -166827,13 +166842,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 13:10",
+    "at": "2026-08-26 13:11",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3725,
+    "rows": 3726,
     "named": 411,
     "unknownName": 0,
     "beforeStart": 0,
