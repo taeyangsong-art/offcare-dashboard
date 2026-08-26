@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5370,
+  "version": 5371,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134089,9 +134089,9 @@ window.SLACK_DATA = {
     "2026-08-26": {
       "counts": {
         "as": {
-          "김규빈": 1,
+          "김규빈": 2,
+          "고경림": 8,
           "배선유": 6,
-          "고경림": 7,
           "송태양": 2,
           "김현기": 4,
           "심성현": 4,
@@ -134119,6 +134119,17 @@ window.SLACK_DATA = {
       "pending": [],
       "done": [
         {
+          "time": "12:00",
+          "store": "메리먼트",
+          "biz": "1651502672",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "아이패드 → 갤럭시탭 변경 이후 배달영수증 출력이 안되는 증상 제보주셨는데 점검 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "변경된 테블릿에 배달주문서 OFF &gt; ON 변경 후 정상 변경된 테블릿에 배달주문서 OFF ON 변경 후 정상"
+        },
+        {
           "time": "11:52",
           "store": "주식회사 옐로우짐만촌역점",
           "biz": "7178803118",
@@ -134128,6 +134139,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "RJ45 케이블 구매하셔셔 연동완료"
+        },
+        {
+          "time": "11:46",
+          "store": "미국캘리포니아우육면",
+          "biz": "1082139876",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "포스기/ 종종 주문 선택 시에 먹통이 발생해서 프로그램 끄고 키는 행동 반복중/ 점검 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
         },
         {
           "time": "11:45",
@@ -134627,11 +134649,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 33,
-        "offline": 13,
+        "online": 34,
+        "offline": 14,
         "unknown": 0
       },
-      "updatedAt": "12:00",
+      "updatedAt": "12:01",
       "voc": {
         "responses": 3,
         "install": {
@@ -134776,7 +134798,11 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787713222.262
+        "lastSeen": 1787713398.026
+      },
+      "1787713288.276579": {
+        "post": "1787713288.276579",
+        "lastSeen": 1787713398.026
       }
     },
     "days": {
@@ -166585,7 +166611,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 12:00",
+    "at": "2026-08-26 12:03",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
