@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5341,
+  "version": 5342,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134088,6 +134088,15 @@ window.SLACK_DATA = {
     },
     "2026-08-26": {
       "counts": {
+        "onboarding": {
+          "고경림": 2,
+          "김동욱": 1,
+          "심성현": 3,
+          "배선유": 1
+        },
+        "extern": {
+          "서상원": 4
+        },
         "as": {
           "김현기": 3,
           "배선유": 3,
@@ -134095,21 +134104,34 @@ window.SLACK_DATA = {
           "고경림": 4,
           "김동욱": 2
         },
-        "onboarding": {
-          "고경림": 1,
-          "김동욱": 1,
-          "심성현": 3,
-          "배선유": 1
-        },
-        "extern": {
-          "서상원": 3
-        },
         "menu": {
           "배선유": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:55",
+          "store": "블랑코뷰티",
+          "biz": "8577200271",
+          "cat": "onboarding",
+          "emp": "고경림",
+          "req": "포프(폰) 온보딩 부탁드립니다! / 프론트 연결문구 확인안됨",
+          "hw": "",
+          "intake": "online",
+          "note": "포프 온보딩 완료 및 사용법 안내완료"
+        },
+        {
+          "time": "10:53",
+          "store": "조서방",
+          "biz": "8124701144",
+          "cat": "extern",
+          "emp": "서상원",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "10:45",
           "store": "아르케디자인",
@@ -134388,7 +134410,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 19,
+        "online": 21,
         "offline": 6,
         "unknown": 0
       },
@@ -134508,7 +134530,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787709503.829
+        "lastSeen": 1787709622.742
       }
     },
     "days": {
@@ -166285,7 +166307,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 10:58",
+    "at": "2026-08-26 11:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
