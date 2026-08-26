@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5392,
+  "version": 5393,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134777,16 +134777,16 @@ window.SLACK_DATA = {
         "offline": 16,
         "unknown": 0
       },
-      "updatedAt": "12:43",
+      "updatedAt": "12:53",
       "voc": {
-        "responses": 3,
+        "responses": 4,
         "install": {
           "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 3,
-          "low": 2
+          "count": 4,
+          "low": 3
         },
         "high": {
           "install": 1,
@@ -134794,6 +134794,7 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "4": 2,
+          "5": 1,
           "10": 1
         },
         "installDist": {
@@ -134805,6 +134806,10 @@ window.SLACK_DATA = {
           "기타": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 1,
+            "low": 1
+          },
           "구매설치": {
             "total": 2,
             "low": 2
@@ -134815,6 +134820,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 2,
+            "low": 2
+          },
           "KOCES": {
             "total": 1,
             "low": 1
@@ -134822,17 +134831,35 @@ window.SLACK_DATA = {
           "KPN": {
             "total": 1,
             "low": 0
-          },
-          "KIS": {
-            "total": 1,
-            "low": 1
           }
         },
         "reasonCounts": {
-          "사용중 오류가 자주 발생함": 1,
+          "사용중 오류가 자주 발생함": 2,
           "필요한 기능이 없거나 몰라서 불편": 1
         },
         "alerts": [
+          {
+            "time": "12:52",
+            "store": "옥길모터스",
+            "storeId": "553832",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "터치가 잘  안 됨",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "11:34",
             "store": "월송국밥",
@@ -134918,15 +134945,15 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787716245.883
+        "lastSeen": 1787716460.317
       },
       "1787715001.607579": {
         "post": "1787715001.607579",
-        "lastSeen": 1787716245.883
+        "lastSeen": 1787716460.317
       },
       "1787715000.952159": {
         "post": "1787715000.952159",
-        "lastSeen": 1787716245.883
+        "lastSeen": 1787716460.317
       }
     },
     "days": {
@@ -166743,13 +166770,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 12:50",
+    "at": "2026-08-26 12:54",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3723,
+    "rows": 3724,
     "named": 411,
     "unknownName": 0,
     "beforeStart": 0,
