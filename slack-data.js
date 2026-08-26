@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5343,
+  "version": 5344,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134104,6 +134104,9 @@ window.SLACK_DATA = {
           "고경림": 4,
           "김동욱": 2
         },
+        "transfer": {
+          "송태양": 1
+        },
         "menu": {
           "배선유": 1
         }
@@ -134153,6 +134156,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "노트북에 토스포스 설치까지만 진행 / 프론트 어댑터 못찾고 계셔서 찾은 후 업무폰으로 연락 안내"
+        },
+        {
+          "time": "10:44",
+          "store": "애스태디카페",
+          "biz": "2830803739",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "8월 26일 오전 11시 / 메뉴복사O / 프론트, 유프",
+          "hw": "",
+          "intake": "online",
+          "note": "명변 완료입니다"
         },
         {
           "time": "10:38",
@@ -134410,11 +134424,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 21,
+        "online": 22,
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "11:02",
+      "updatedAt": "11:06",
       "voc": {
         "responses": 2,
         "install": {
@@ -134530,7 +134544,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787709810.947
+        "lastSeen": 1787710042.684
       }
     },
     "days": {
@@ -166307,7 +166321,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 11:03",
+    "at": "2026-08-26 11:07",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
