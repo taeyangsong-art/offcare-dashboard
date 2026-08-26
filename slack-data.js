@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5393,
+  "version": 5394,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134088,6 +134088,11 @@ window.SLACK_DATA = {
     },
     "2026-08-26": {
       "counts": {
+        "extern": {
+          "김동욱": 2,
+          "김현기": 1,
+          "서상원": 4
+        },
         "as": {
           "김현기": 5,
           "심성현": 7,
@@ -134096,11 +134101,6 @@ window.SLACK_DATA = {
           "고경림": 8,
           "배선유": 6,
           "김동욱": 2
-        },
-        "extern": {
-          "김현기": 1,
-          "김동욱": 1,
-          "서상원": 4
         },
         "onboarding": {
           "송태양": 1,
@@ -134120,6 +134120,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "12:55",
+          "store": "하이윰",
+          "biz": "5590902482",
+          "cat": "extern",
+          "emp": "김동욱",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "12:43",
           "store": "리리커피로스터리",
@@ -134773,11 +134784,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 43,
+        "online": 44,
         "offline": 16,
         "unknown": 0
       },
-      "updatedAt": "12:53",
+      "updatedAt": "12:55",
       "voc": {
         "responses": 4,
         "install": {
@@ -134945,15 +134956,15 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787716460.317
+        "lastSeen": 1787716581.361
       },
       "1787715001.607579": {
         "post": "1787715001.607579",
-        "lastSeen": 1787716460.317
+        "lastSeen": 1787716581.361
       },
       "1787715000.952159": {
         "post": "1787715000.952159",
-        "lastSeen": 1787716460.317
+        "lastSeen": 1787716581.361
       }
     },
     "days": {
@@ -166770,7 +166781,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 12:54",
+    "at": "2026-08-26 12:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
