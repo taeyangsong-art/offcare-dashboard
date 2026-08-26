@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5363,
+  "version": 5364,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134091,9 +134091,9 @@ window.SLACK_DATA = {
         "as": {
           "배선유": 6,
           "고경림": 7,
-          "심성현": 5,
           "송태양": 2,
           "김현기": 4,
+          "심성현": 4,
           "김동욱": 2
         },
         "extern": {
@@ -134101,9 +134101,9 @@ window.SLACK_DATA = {
           "서상원": 4
         },
         "onboarding": {
+          "심성현": 4,
           "고경림": 2,
           "김동욱": 1,
-          "심성현": 3,
           "배선유": 1
         },
         "transfer": {
@@ -134208,12 +134208,12 @@ window.SLACK_DATA = {
           "time": "11:15",
           "store": "아르케디자인",
           "biz": "1464401124",
-          "cat": "as",
+          "cat": "onboarding",
           "emp": "심성현",
           "req": "핸드폰+프론트 온보딩요청 .",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "온보딩 사용 방법 안내 완료"
         },
         {
           "time": "11:14",
@@ -134596,7 +134596,7 @@ window.SLACK_DATA = {
         "offline": 13,
         "unknown": 0
       },
-      "updatedAt": "11:45",
+      "updatedAt": "11:46",
       "voc": {
         "responses": 3,
         "install": {
@@ -134741,7 +134741,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787712321.914
+        "lastSeen": 1787712496.753
       }
     },
     "days": {
@@ -166542,7 +166542,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 11:45",
+    "at": "2026-08-26 11:48",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
