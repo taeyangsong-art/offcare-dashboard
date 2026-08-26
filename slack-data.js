@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5542,
+  "version": 5543,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134189,7 +134189,7 @@ window.SLACK_DATA = {
           "req": "유프 자가설치 진행 했으나, 어려워하셔서 원격 요청드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "rj45케이블 반대로 꽂으셔서 재연결"
         },
         {
           "time": "18:03",
@@ -136569,7 +136569,7 @@ window.SLACK_DATA = {
         "offline": 35,
         "unknown": 0
       },
-      "updatedAt": "18:17",
+      "updatedAt": "18:24",
       "voc": {
         "responses": 6,
         "install": {
@@ -136977,7 +136977,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787736190.602
+        "lastSeen": 1787736326.862
       },
       "1787722356.190299": {
         "post": "1787722356.190299",
@@ -136985,11 +136985,15 @@ window.SLACK_DATA = {
       },
       "1787723067.665549": {
         "post": "1787723067.665549",
-        "lastSeen": 1787736190.602
+        "lastSeen": 1787736326.862
       },
       "1787735267.956539": {
         "post": "1787735267.956539",
-        "lastSeen": 1787736190.602
+        "lastSeen": 1787736326.862
+      },
+      "1787736278.043939": {
+        "post": "1787736278.043939",
+        "lastSeen": 1787736326.862
       }
     },
     "days": {
@@ -169630,7 +169634,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 18:23",
+    "at": "2026-08-26 18:25",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
