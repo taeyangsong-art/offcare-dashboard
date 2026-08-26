@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5299,
+  "version": 5300,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134139,8 +134139,8 @@ window.SLACK_DATA = {
     "2026-08-26": {
       "counts": {
         "as": {
-          "고경림": 1,
-          "심성현": 1
+          "심성현": 2,
+          "고경림": 1
         },
         "extern": {
           "서상원": 1
@@ -134148,6 +134148,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:30",
+          "store": "삼성영어가음센텀어학원",
+          "biz": "5289300683",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "• 프론트 카드 인식으 하지 못하여 점검 부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "매장 방문 전 1315 통화 예약 요청 / 프론트 초기화 및 방전 작업 필요"
+        },
         {
           "time": "09:27",
           "store": "앵커스터디카페 워크라운지",
@@ -134157,7 +134168,7 @@ window.SLACK_DATA = {
           "req": "포프(노트북) 사용 매장으로, 유프 금일 갑자기 출력이 되지 않으신다고 하여 점검 요청드립니다!",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "현재 매장이아니심 , 조치방법 안내요청해주셔서 안내완료 통화로 확인결과 영수용지를 반대로 넣으신걸로 확인됨 방향 안내드리고, 동일증상 발생시 재인입 요청"
         },
         {
           "time": "09:16",
@@ -134184,7 +134195,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 2,
-        "offline": 1,
+        "offline": 2,
         "unknown": 0
       },
       "updatedAt": "09:30",
@@ -134316,7 +134327,7 @@ window.SLACK_DATA = {
       },
       "1787677200.356799": {
         "post": "1787677200.356799",
-        "lastSeen": 1787704223.138
+        "lastSeen": 1787704417.888
       }
     },
     "days": {
@@ -166022,7 +166033,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 09:30",
+    "at": "2026-08-26 09:33",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
