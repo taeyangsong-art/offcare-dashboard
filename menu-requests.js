@@ -3,10 +3,236 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1037,
- "updatedAt": "2026-08-26 17:38",
+ "version": 1038,
+ "updatedAt": "2026-08-26 17:49",
  "days": 30,
  "items": [
+  {
+   "ts": "1787734055.746969",
+   "date": "2026-08-26",
+   "time": "17:47",
+   "store": "칸 프리베 스튜디오 헤어 살롱",
+   "biz": "6383701436",
+   "pos": "토스포스",
+   "content": "토스포스 메뉴등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BSWMS4HHA",
+     "from": "댓글",
+     "path": "menu-files/1787734055_746969-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "CLINKC",
+       "name": "올라클리닉",
+       "price": 250000
+      },
+      {
+       "category": "CLINKC",
+       "name": "두피스케일링",
+       "price": 60000
+      },
+      {
+       "category": "SPECIAL PREPAID",
+       "name": "500,000 정액권 (15% 적립)",
+       "price": 500000
+      },
+      {
+       "category": "SPECIAL PREPAID",
+       "name": "1,000,000 정액권 (25% 적립)",
+       "price": 1000000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BSP2Z3K37",
+     "from": "댓글",
+     "path": "menu-files/1787734055_746969-1.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "PERM",
+       "name": "일반펌(주니어)",
+       "price": 150000
+      },
+      {
+       "category": "PERM",
+       "name": "일반펌",
+       "price": 170000
+      },
+      {
+       "category": "PERM",
+       "name": "WOMAN 펌",
+       "price": 190000
+      },
+      {
+       "category": "PERM",
+       "name": "콜드펌",
+       "price": 200000
+      },
+      {
+       "category": "PERM",
+       "name": "미디움",
+       "price": 250000
+      },
+      {
+       "category": "PERM",
+       "name": "롱",
+       "price": 270000
+      },
+      {
+       "category": "PERM",
+       "name": "앞머리 펌",
+       "price": 50000
+      },
+      {
+       "category": "PERM",
+       "name": "앞머리매직아이롱펌",
+       "price": 100000
+      },
+      {
+       "category": "PERM",
+       "name": "아이롱펌",
+       "price": 190000
+      },
+      {
+       "category": "PERM",
+       "name": "사이드다운펌",
+       "price": 60000
+      },
+      {
+       "category": "PERM",
+       "name": "전체다운펌",
+       "price": 130000
+      },
+      {
+       "category": "PERM",
+       "name": "매직셋팅펌",
+       "price": 350000
+      },
+      {
+       "category": "PERM",
+       "name": "볼륨매직",
+       "price": 320000
+      },
+      {
+       "category": "PERM",
+       "name": "뿌리매직",
+       "price": 300000
+      },
+      {
+       "category": "PERM",
+       "name": "뿌리볼륨펌",
+       "price": 200000
+      },
+      {
+       "category": "PERM",
+       "name": "A 기본영양",
+       "price": 50000
+      },
+      {
+       "category": "PERM",
+       "name": "B 디톡스영양",
+       "price": 70000
+      },
+      {
+       "category": "PERM",
+       "name": "C 프리미엄영양",
+       "price": 100000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BSLQ66RV1",
+     "from": "댓글",
+     "path": "menu-files/1787734055_746969-2.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "CUT",
+       "name": "주니어컷",
+       "price": 35000
+      },
+      {
+       "category": "CUT",
+       "name": "남성컷",
+       "price": 40000
+      },
+      {
+       "category": "CUT",
+       "name": "여성컷",
+       "price": 50000
+      },
+      {
+       "category": "CUT",
+       "name": "디자인컷",
+       "price": 70000
+      },
+      {
+       "category": "CUT",
+       "name": "롱헤어컷",
+       "price": 80000
+      },
+      {
+       "category": "DRY",
+       "name": "남성드라이",
+       "price": 25000
+      },
+      {
+       "category": "DRY",
+       "name": "여성드라이",
+       "price": 30000
+      },
+      {
+       "category": "DRY",
+       "name": "(샴푸)",
+       "price": 15000
+      },
+      {
+       "category": "COLOR",
+       "name": "뿌리염색",
+       "price": 100000
+      },
+      {
+       "category": "COLOR",
+       "name": "천연염색",
+       "price": 130000
+      },
+      {
+       "category": "COLOR",
+       "name": "왁싱",
+       "price": 140000
+      },
+      {
+       "category": "COLOR",
+       "name": "헤어라인염색",
+       "price": 60000
+      },
+      {
+       "category": "COLOR",
+       "name": "전체염색 (단발기준)",
+       "price": 130000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "메뉴등록 부탁드립니다!:꾸벅5:!"
+   ],
+   "rc": 3,
+   "lr": "1787734108.001299",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787734055746969"
+  },
   {
    "ts": "1787732654.567529",
    "date": "2026-08-26",
