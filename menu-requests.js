@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1024,
- "updatedAt": "2026-08-26 14:53",
+ "version": 1025,
+ "updatedAt": "2026-08-26 15:07",
  "days": 30,
  "items": [
   {
@@ -24,12 +24,13 @@ window.MENU_REQUESTS = {
     "이거 아까 위에 로칼 다른지점하고 똑같은거같은데",
     "이미지도 똑같으면 그냥 복제 떠버리는게 나을지도요 온보딩 안되어잇으면",
     "복제하겠습니다.",
-    "온보딩 여부확인하고 메뉴 쳌!"
+    "온보딩 여부확인하고 메뉴 쳌!",
+    "매장 복제 후 재온보딩 완료"
    ],
-   "rc": 5,
-   "lr": "1787723563.783469",
+   "rc": 6,
+   "lr": "1787724385.165239",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "심성현",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787723351369649"
   },
