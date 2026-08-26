@@ -3,10 +3,141 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1049,
- "updatedAt": "2026-08-26 22:58",
+ "version": 1050,
+ "updatedAt": "2026-08-27 06:18",
  "days": 30,
  "items": [
+  {
+   "ts": "1787778878.223949",
+   "date": "2026-08-27",
+   "time": "06:14",
+   "store": "아마데우스 피아노",
+   "biz": "1249157035",
+   "pos": "",
+   "content": "메뉴등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BSHKX7U7R",
+     "from": "댓글",
+     "path": "menu-files/1787778878_223949-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "주4회",
+       "name": "바이엘",
+       "price": 170000
+      },
+      {
+       "category": "주4회",
+       "name": "체르니 100",
+       "price": 180000
+      },
+      {
+       "category": "주4회",
+       "name": "체르니 30",
+       "price": 190000
+      },
+      {
+       "category": "주4회",
+       "name": "체르니 40/50",
+       "price": 200000
+      },
+      {
+       "category": "주4회",
+       "name": "유치부(40분수업)",
+       "price": 150000
+      },
+      {
+       "category": "주3회",
+       "name": "바이엘",
+       "price": 160000
+      },
+      {
+       "category": "주3회",
+       "name": "체르니 100",
+       "price": 170000
+      },
+      {
+       "category": "주3회",
+       "name": "체르니 30",
+       "price": 180000
+      },
+      {
+       "category": "주3회",
+       "name": "체르니 40/50",
+       "price": 190000
+      },
+      {
+       "category": "주3회",
+       "name": "유치부(40분수업)",
+       "price": 140000
+      },
+      {
+       "category": "주2회",
+       "name": "바이엘",
+       "price": 150000
+      },
+      {
+       "category": "주2회",
+       "name": "체르니 100",
+       "price": 160000
+      },
+      {
+       "category": "주2회",
+       "name": "체르니 30",
+       "price": 170000
+      },
+      {
+       "category": "주2회",
+       "name": "체르니 40/50",
+       "price": 180000
+      },
+      {
+       "category": "주2회",
+       "name": "유치부(40분수업)",
+       "price": 130000
+      },
+      {
+       "category": "주1회",
+       "name": "바이엘",
+       "price": 100000
+      },
+      {
+       "category": "주1회",
+       "name": "체르니 100",
+       "price": 100000
+      },
+      {
+       "category": "주1회",
+       "name": "체르니 30",
+       "price": 100000
+      },
+      {
+       "category": "주1회",
+       "name": "체르니 40/50",
+       "price": 100000
+      },
+      {
+       "category": "주1회",
+       "name": "성인",
+       "price": 120000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1787778923.822699",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "김동욱",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787778878223949"
+  },
   {
    "ts": "1787751321.526829",
    "date": "2026-08-26",
@@ -272,10 +403,11 @@ window.MENU_REQUESTS = {
     }
    ],
    "replies": [
-    "토플파 미생성 매장"
+    "토플파 미생성 매장",
+    "사업자번호 잘못되어있음. ··· 새로운 쓰레드로 진행"
    ],
-   "rc": 2,
-   "lr": "1787752684.838819",
+   "rc": 3,
+   "lr": "1787778855.980089",
    "rfx": 3,
    "status": "wait",
    "handler": null,
