@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1025,
- "updatedAt": "2026-08-26 15:07",
+ "version": 1026,
+ "updatedAt": "2026-08-26 15:18",
  "days": 30,
  "items": [
   {
@@ -40783,32 +40783,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785137810525779"
-  },
-  {
-   "ts": "1785132871.022149",
-   "date": "2026-07-27",
-   "time": "15:14",
-   "store": "선산곱창",
-   "biz": "5040946739",
-   "pos": "",
-   "content": "메뉴 수정 / 추가 부탁 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "[가격수정]\n카테고리 : 사이드\n메뉴명 : 어린이용 생선\n금액 : 5,000 > 6,000\n\n카테고리 : 사이드\n메뉴명 : 계란찜\n가격 : 5,000 > 6,000\n\n[메뉴추가]\n카테고리 : 사이드\n메뉴명 : 양념특양한판(500g)\n가격 : 63,000원",
-    "님, 혹시 제가 올린 원격이 문제이신가요.... :동공지진:",
-    "?",
-    ":개굴-눈물:"
-   ],
-   "rc": 17,
-   "lr": "1785133233.421179",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785132871022149"
   }
  ],
  "ocr": {
