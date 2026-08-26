@@ -3,10 +3,145 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1009,
- "updatedAt": "2026-08-26 11:25",
+ "version": 1010,
+ "updatedAt": "2026-08-26 11:38",
  "days": 30,
  "items": [
+  {
+   "ts": "1787711824.549819",
+   "date": "2026-08-26",
+   "time": "11:37",
+   "store": "청죽골",
+   "biz": "4083326051",
+   "pos": "토스포스",
+   "content": "메뉴판보내드릴테니 다넣어주세요",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/124moUXOQ77lG4ea_5Y3g01OlWkMQzAqc/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "124moUXOQ77lG4ea_5Y3g01OlWkMQzAqc",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "담양 녹돈 암돼지",
+       "name": "삼겹살",
+       "price": 15000
+      },
+      {
+       "category": "담양 녹돈 암돼지",
+       "name": "목살",
+       "price": 15000
+      },
+      {
+       "category": "담양 녹돈 암돼지",
+       "name": "항정살",
+       "price": 17000
+      },
+      {
+       "category": "담양 녹돈 암돼지",
+       "name": "가브리살",
+       "price": 16000
+      },
+      {
+       "category": "담양 녹돈 암돼지",
+       "name": "왕돼지갈비",
+       "price": 17000
+      },
+      {
+       "category": "청죽골 모듬한판",
+       "name": "소 400g·2인 추천",
+       "price": 33000
+      },
+      {
+       "category": "청죽골 모듬한판",
+       "name": "중 500g·2~3인 추천",
+       "price": 42000
+      },
+      {
+       "category": "청죽골 모듬한판",
+       "name": "대 700g·3~4인 추천",
+       "price": 59000
+      },
+      {
+       "category": "암소 한우",
+       "name": "암소 꽃등심",
+       "price": 36000
+      },
+      {
+       "category": "암소 한우",
+       "name": "육사시미",
+       "price": 25000
+      },
+      {
+       "category": "식사·사이드",
+       "name": "된장밥",
+       "price": 7000
+      },
+      {
+       "category": "식사·사이드",
+       "name": "계란찜",
+       "price": 7000
+      },
+      {
+       "category": "식사·사이드",
+       "name": "김치찌개",
+       "price": 7000
+      },
+      {
+       "category": "식사·사이드",
+       "name": "잔치국수",
+       "price": 7000
+      },
+      {
+       "category": "식사·사이드",
+       "name": "비빔국수",
+       "price": 7000
+      },
+      {
+       "category": "식사·사이드",
+       "name": "구워먹는 임실치즈",
+       "price": 5000
+      },
+      {
+       "category": "식사·사이드",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "주류·음료",
+       "name": "소주",
+       "price": 5000
+      },
+      {
+       "category": "주류·음료",
+       "name": "맥주",
+       "price": 5000
+      },
+      {
+       "category": "주류·음료",
+       "name": "막걸리",
+       "price": 4000
+      },
+      {
+       "category": "주류·음료",
+       "name": "음료",
+       "price": 2000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787711827.479179",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787711824549819"
+  },
   {
    "ts": "1787710621.454649",
    "date": "2026-08-26",
