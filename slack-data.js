@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5367,
+  "version": 5368,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134091,8 +134091,8 @@ window.SLACK_DATA = {
         "onboarding": {
           "김현기": 1,
           "심성현": 4,
+          "김동욱": 2,
           "고경림": 2,
-          "김동욱": 1,
           "배선유": 1
         },
         "as": {
@@ -134226,6 +134226,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "온보딩 사용 방법 안내 완료"
+        },
+        {
+          "time": "11:15",
+          "store": "(주)디에스전기",
+          "biz": "6568700482",
+          "cat": "onboarding",
+          "emp": "김동욱",
+          "req": "토스페이먼츠건입니다 프론트 터미널 4세트 온보딩부탁드립니다 (다중TID)",
+          "hw": "",
+          "intake": "online",
+          "note": "#1. 1047536679 (VAN용) 1047536677 (PG용프론트) 1047536676 (PG용터미널) 설치주소: 경기도 하남시 감일남로 54, 디에스전기 #2. 1047543963 (VAN용) 1047543962 (PG용프론트) 1047543961 (PG용터미널) #3. 1047543960 (VAN용) 1047543959 (PG용프론트) 10475"
         },
         {
           "time": "11:14",
@@ -134604,11 +134615,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 31,
+        "online": 32,
         "offline": 13,
         "unknown": 0
       },
-      "updatedAt": "11:52",
+      "updatedAt": "11:56",
       "voc": {
         "responses": 3,
         "install": {
@@ -134753,7 +134764,11 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787712863.474
+        "lastSeen": 1787712982.384
+      },
+      "1787712978.653379": {
+        "post": "1787712978.653379",
+        "lastSeen": 1787712982.384
       }
     },
     "days": {
@@ -166554,7 +166569,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 11:54",
+    "at": "2026-08-26 11:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
