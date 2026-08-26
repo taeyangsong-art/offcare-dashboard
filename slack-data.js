@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5637,
+  "version": 5638,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137219,11 +137219,27 @@ window.SLACK_DATA = {
       }
     },
     "2026-08-27": {
-      "counts": {},
+      "counts": {
+        "menu": {
+          "김동욱": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "06:14",
+          "store": "아마데우스 피아노",
+          "biz": "1249157035",
+          "cat": "menu",
+          "emp": "김동욱",
+          "req": "메뉴등록",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / / 면세상품으로 등록완"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
@@ -170039,7 +170055,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 06:18",
+    "at": "2026-08-27 06:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
