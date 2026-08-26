@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5434,
+  "version": 5435,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134181,7 +134181,7 @@ window.SLACK_DATA = {
           "req": "프론트+ 유프 온보딩 및 케이블 구분이 안된다고 하셔서 같이 안내 부탁드립니다!:꾸벅5:",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "못받았다고함 발송"
         },
         {
           "time": "14:10",
@@ -135411,11 +135411,19 @@ window.SLACK_DATA = {
         "praises": []
       },
       "ob": {
-        "count": 6,
+        "count": 7,
         "byEmp": {
-          "김규빈": 6
+          "김규빈": 7
         },
         "items": [
+          {
+            "key": "2026년 8월 26일 오전 8:19:14|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787289247821409#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-08-26",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787289247821409"
+          },
           {
             "key": "2026년 8월 26일 오전 8:18:22|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786083102033079#1",
             "handler": "김규빈",
@@ -135500,11 +135508,11 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787721860.771
+        "lastSeen": 1787721920.097
       },
       "1787721014.170309": {
         "post": "1787721014.170309",
-        "lastSeen": 1787721860.771
+        "lastSeen": 1787721920.097
       }
     },
     "days": {
@@ -167593,20 +167601,20 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 14:24",
+    "at": "2026-08-26 14:25",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3728,
-    "named": 417,
+    "named": 418,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 417,
+    "done": 418,
     "byStatus": {
       "일정등록완료": 258,
-      "1차부재": 92,
+      "1차부재": 93,
       "점주직접접수": 37,
       "설치불가": 9,
       "(빈칸)": 5,
