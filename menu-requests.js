@@ -3,10 +3,145 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1045,
- "updatedAt": "2026-08-26 22:34",
+ "version": 1046,
+ "updatedAt": "2026-08-26 22:39",
  "days": 30,
  "items": [
+  {
+   "ts": "1787751321.526829",
+   "date": "2026-08-26",
+   "time": "22:35",
+   "store": "마블스퀘어",
+   "biz": "6526700764",
+   "pos": "토스포스",
+   "content": "밀크티4500\n본마망쨈14000원 \n포션크림치즈 1500\n뽀로로 음료 2,000원\n상하목장 유기농주스 1,500원\n상하목장 유기농우유 2,000원\n골드메달 애플주스 3,500원\n분다버그 4,000원\n쇼핑백100\n적립금 -100원 \n어니언 올리브올 3800",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1ZsxRxwdJt5CcLsUAySrpnY2WENLSk4mT/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1ZsxRxwdJt5CcLsUAySrpnY2WENLSk4mT",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "COFFEE",
+       "name": "아메리카노",
+       "price": 3500
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페라떼",
+       "price": 4000
+      },
+      {
+       "category": "COFFEE",
+       "name": "바닐라라떼",
+       "price": 4500
+      },
+      {
+       "category": "COFFEE",
+       "name": "샷 추가",
+       "price": 500
+      },
+      {
+       "category": "COFFEE",
+       "name": "헤이즐넛",
+       "price": 500
+      },
+      {
+       "category": "LATTE",
+       "name": "초코라떼",
+       "price": 4000
+      },
+      {
+       "category": "LATTE",
+       "name": "녹차라떼",
+       "price": 4000
+      },
+      {
+       "category": "ADE",
+       "name": "자몽에이드",
+       "price": 4600
+      },
+      {
+       "category": "ADE",
+       "name": "레몬에이드",
+       "price": 4600
+      },
+      {
+       "category": "ADE",
+       "name": "자두에이드",
+       "price": 4600
+      },
+      {
+       "category": "SMOOTHIE & SHAKE",
+       "name": "밀크쉐이크",
+       "price": 4500
+      },
+      {
+       "category": "SMOOTHIE & SHAKE",
+       "name": "플레인요거트",
+       "price": 4500
+      },
+      {
+       "category": "SMOOTHIE & SHAKE",
+       "name": "딸기요거트",
+       "price": 4800
+      },
+      {
+       "category": "SMOOTHIE & SHAKE",
+       "name": "블루베리요거트",
+       "price": 4800
+      },
+      {
+       "category": "TEA",
+       "name": "허니자몽블랙티",
+       "price": 4500
+      },
+      {
+       "category": "TEA",
+       "name": "복숭아 아이스티",
+       "price": 3800
+      },
+      {
+       "category": "TEA",
+       "name": "밀크티",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "캐모마일티",
+       "price": 3800
+      },
+      {
+       "category": "차",
+       "name": "유자차",
+       "price": 4000
+      },
+      {
+       "category": "차",
+       "name": "대추차",
+       "price": 4000
+      },
+      {
+       "category": "차",
+       "name": "레몬차",
+       "price": 4000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787751324.506179",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787751321526829"
+  },
   {
    "ts": "1787751235.320309",
    "date": "2026-08-26",
