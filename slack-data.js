@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5465,
+  "version": 5466,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -134101,12 +134101,12 @@ window.SLACK_DATA = {
           "김규빈": 2
         },
         "onboarding": {
+          "심성현": 6,
           "서상원": 3,
           "최민석": 2,
           "김동욱": 3,
           "배선유": 6,
           "고경림": 3,
-          "심성현": 5,
           "김현기": 3,
           "송태양": 1
         },
@@ -134132,6 +134132,17 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
+        {
+          "time": "14:45",
+          "store": "해듦 심리 상담센터",
+          "biz": "3179302140",
+          "handler": "심성현",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
         {
           "time": "13:10",
           "store": "리리커피로스터리",
@@ -134166,6 +134177,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "10분 뒤 재통화 요청"
+        },
+        {
+          "time": "15:29",
+          "store": "솔레이순환테라피",
+          "biz": "1446800805",
+          "cat": "onboarding",
+          "emp": "심성현",
+          "req": "자가설치로 이용중인 PC랑 프론트 연동요청",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
         },
         {
           "time": "15:19",
@@ -135700,11 +135722,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 114,
-        "offline": 28,
+        "online": 115,
+        "offline": 29,
         "unknown": 0
       },
-      "updatedAt": "15:38",
+      "updatedAt": "15:45",
       "voc": {
         "responses": 4,
         "install": {
@@ -136084,7 +136106,7 @@ window.SLACK_DATA = {
       },
       "1787706753.326809": {
         "post": "1787706753.326809",
-        "lastSeen": 1787726423.173
+        "lastSeen": 1787726720.727
       },
       "1787722356.190299": {
         "post": "1787722356.190299",
@@ -136092,15 +136114,23 @@ window.SLACK_DATA = {
       },
       "1787723067.665549": {
         "post": "1787723067.665549",
-        "lastSeen": 1787726423.173
+        "lastSeen": 1787726720.727
       },
       "1787725802.816159": {
         "post": "1787725802.816159",
-        "lastSeen": 1787726423.173
+        "lastSeen": 1787726720.727
       },
       "1787726297.636249": {
         "post": "1787726297.636249",
-        "lastSeen": 1787726423.173
+        "lastSeen": 1787726720.727
+      },
+      "1787726700.345659": {
+        "post": "1787726700.345659",
+        "lastSeen": 1787726720.727
+      },
+      "1787726700.255009": {
+        "post": "1787726700.255009",
+        "lastSeen": 1787726720.727
       }
     },
     "days": {
@@ -168333,7 +168363,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-26 15:40",
+    "at": "2026-08-26 15:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
