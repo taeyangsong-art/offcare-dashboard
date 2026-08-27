@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5707,
+  "version": 5708,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137629,7 +137629,7 @@ window.SLACK_DATA = {
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "11:16"
+      "updatedAt": "11:18"
     }
   },
   "resp": {
@@ -137668,11 +137668,7 @@ window.SLACK_DATA = {
       },
       "1787796900.434779": {
         "post": "1787796900.434779",
-        "lastSeen": 1787797103.663
-      },
-      "1787796972.506309": {
-        "post": "1787796972.506309",
-        "lastSeen": 1787797103.663
+        "lastSeen": 1787797162.441
       }
     },
     "days": {
@@ -170447,8 +170443,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-27": {
-        "cnt": 19,
-        "sumMin": 117.28658448855082,
+        "cnt": 20,
+        "sumMin": 119.96234600543976,
         "over": 0,
         "items": [
           {
@@ -170602,13 +170598,21 @@ window.SLACK_DATA = {
             "biz": "2289303631",
             "who": "심성현",
             "cat": "as"
+          },
+          {
+            "hm": "11:16",
+            "min": 2.7,
+            "store": "3월애(愛)반점",
+            "biz": "4475700561",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-27 11:18",
+    "at": "2026-08-27 11:19",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
