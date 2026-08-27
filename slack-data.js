@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5766,
+  "version": 5767,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137198,7 +137198,8 @@ window.SLACK_DATA = {
     "2026-08-27": {
       "counts": {
         "as": {
-          "서상원": 5,
+          "서상원": 6,
+          "김동욱": 1,
           "배선유": 11,
           "송태양": 7,
           "김현기": 5,
@@ -137259,6 +137260,17 @@ window.SLACK_DATA = {
       ],
       "done": [
         {
+          "time": "13:44",
+          "store": "뵈르뵈르 서면전포역점",
+          "biz": "6880302740",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "외주",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
+        {
           "time": "13:30",
           "store": "아이니네일",
           "biz": "3431003164",
@@ -137267,7 +137279,7 @@ window.SLACK_DATA = {
           "req": "노트북 포프 사용중 / 노트북 변경되어 온보딩 부탁 드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "재온보딩"
         },
         {
           "time": "13:22",
@@ -137290,6 +137302,18 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "wifi 연결"
+        },
+        {
+          "time": "13:21",
+          "store": "강창구찹쌀진순대 과천펜타원점",
+          "biz": "6103262196",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "포스기 전원이 꺼지지 않음 / 며칠동안 강제 종료 하셨다고합니다. 확인 요청 드립니다.",
+          "hw": "",
+          "urgent": true,
+          "intake": "offline",
+          "note": "포스리커버리 필요. 패스트오더 사용중으로 리커버리 시 재설치 필요하니 패스트오더와 일정 마춘 뒤 연락주시면 리커버리 진행 도와드리겠다 안내드림"
         },
         {
           "time": "13:20",
@@ -138076,10 +138100,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 66,
-        "offline": 10,
+        "offline": 12,
         "unknown": 0
       },
-      "updatedAt": "13:45"
+      "updatedAt": "13:46"
     }
   },
   "resp": {
@@ -138118,15 +138142,11 @@ window.SLACK_DATA = {
       },
       "1787803140.618239": {
         "post": "1787803140.618239",
-        "lastSeen": 1787805923.247
-      },
-      "1787805475.978429": {
-        "post": "1787805475.978429",
-        "lastSeen": 1787805923.247
+        "lastSeen": 1787806103.654
       },
       "1787805900.218439": {
         "post": "1787805900.218439",
-        "lastSeen": 1787805923.247
+        "lastSeen": 1787806103.654
       }
     },
     "days": {
@@ -170901,8 +170921,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-27": {
-        "cnt": 45,
-        "sumMin": 228.2225102543831,
+        "cnt": 46,
+        "sumMin": 237.18037810325626,
         "over": 0,
         "items": [
           {
@@ -171264,19 +171284,27 @@ window.SLACK_DATA = {
             "biz": "7180204095",
             "who": "배선유",
             "cat": "as"
+          },
+          {
+            "hm": "13:37",
+            "min": 9,
+            "store": "그여행 문덕점",
+            "biz": "5101993861",
+            "who": "김동욱",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-27 13:45",
+    "at": "2026-08-27 13:48",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3756,
+    "rows": 3758,
     "named": 438,
     "unknownName": 0,
     "beforeStart": 0,

@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1079,
- "updatedAt": "2026-08-27 13:43",
+ "version": 1080,
+ "updatedAt": "2026-08-27 13:48",
  "days": 30,
  "items": [
+  {
+   "ts": "1787805981.057259",
+   "date": "2026-08-27",
+   "time": "13:46",
+   "store": "단군한우",
+   "biz": "2919901706",
+   "pos": "",
+   "content": "바코드 등록 요청 드립니다. ( 운영 가맹점으로 최대한 빠른 등록 요청 주셨습니다.)",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787805984.384479",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787805981057259"
+  },
   {
    "ts": "1787804565.880149",
    "date": "2026-08-27",
