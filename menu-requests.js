@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1065,
- "updatedAt": "2026-08-27 12:13",
+ "version": 1066,
+ "updatedAt": "2026-08-27 12:26",
  "days": 30,
  "items": [
   {
@@ -487,7 +487,7 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1787800331.840319",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787799851461029"
   },
@@ -42481,29 +42481,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785210953429509"
-  },
-  {
-   "ts": "1785208884.876419",
-   "date": "2026-07-28",
-   "time": "12:21",
-   "store": "주식회사 에이티식스컴퍼니",
-   "biz": "5328701749",
-   "pos": "",
-   "content": "메뉴 등록 부탁드립니다",
-   "special": "",
-   "drive": [],
-   "files": 1,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "채널톡 올려주시어 요청드렸는데 위에 내용 확인을 미처못했습니다.\n동일 매장 맞습니다"
-   ],
-   "rc": 8,
-   "lr": "1785209982.674729",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785208884876419"
   }
  ],
  "ocr": {

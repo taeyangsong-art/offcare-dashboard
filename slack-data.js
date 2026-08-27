@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5735,
+  "version": 5736,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137198,9 +137198,9 @@ window.SLACK_DATA = {
     "2026-08-27": {
       "counts": {
         "onboarding": {
+          "송태양": 4,
           "김규빈": 1,
           "심성현": 1,
-          "송태양": 3,
           "배선유": 3,
           "김현기": 1,
           "고경림": 1
@@ -137223,7 +137223,7 @@ window.SLACK_DATA = {
           "심성현": 1
         },
         "menu": {
-          "김규빈": 3,
+          "김규빈": 4,
           "배선유": 1,
           "김동욱": 1
         },
@@ -137233,6 +137233,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "12:15",
+          "store": "온레브(ON REVE)",
+          "biz": "2064192848",
+          "cat": "onboarding",
+          "emp": "송태양",
+          "req": "포프(pc) + 유프 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료입니다"
+        },
+        {
+          "time": "12:04",
+          "store": "국대찜닭 유천점",
+          "biz": "3670502911",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 샵앤샵인듯"
+        },
         {
           "time": "12:00",
           "store": "인디코",
@@ -137819,7 +137841,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 44,
+        "online": 46,
         "offline": 9,
         "unknown": 0
       },
@@ -170874,7 +170896,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 12:19",
+    "at": "2026-08-27 12:26",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
