@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5651,
+  "version": 5652,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137197,12 +137197,26 @@ window.SLACK_DATA = {
     },
     "2026-08-27": {
       "counts": {
+        "onboarding": {
+          "고경림": 1
+        },
         "menu": {
           "김동욱": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:03",
+          "store": "라움메이크업",
+          "biz": "2160721031",
+          "cat": "onboarding",
+          "emp": "고경림",
+          "req": "포프 연결 및 온보딩 교육 부탁드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "포프(휴대폰)+영수프린터 온보딩 및 교육 완료"
+        },
         {
           "time": "06:14",
           "store": "아마데우스 피아노",
@@ -137216,7 +137230,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
+        "online": 2,
         "offline": 0,
         "unknown": 0
       },
@@ -170032,13 +170046,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 09:15",
+    "at": "2026-08-27 09:17",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3740,
+    "rows": 3742,
     "named": 438,
     "unknownName": 0,
     "beforeStart": 0,
