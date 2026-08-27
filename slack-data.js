@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6011,
+  "version": 6012,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140762,11 +140762,11 @@ window.SLACK_DATA = {
       },
       "1787865301.102509": {
         "post": "1787865301.102509",
-        "lastSeen": 1787868924.638
+        "lastSeen": 1787869828.248
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787868924.638
+        "lastSeen": 1787869828.248
       }
     },
     "days": {
@@ -174974,17 +174974,25 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 07:21",
+    "at": "2026-08-28 07:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
-    "ok": false,
-    "error": "terminated",
-    "rows": 0,
-    "named": 0,
+    "ok": true,
+    "error": "",
+    "rows": 3769,
+    "named": 470,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 0,
-    "byStatus": {}
+    "done": 470,
+    "byStatus": {
+      "일정등록완료": 294,
+      "1차부재": 107,
+      "점주직접접수": 40,
+      "설치불가": 9,
+      "(빈칸)": 3,
+      "자가설치": 15,
+      "설치보류요청": 2
+    }
   }
 };
