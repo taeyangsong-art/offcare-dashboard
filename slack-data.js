@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5712,
+  "version": 5713,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137198,7 +137198,7 @@ window.SLACK_DATA = {
     "2026-08-27": {
       "counts": {
         "as": {
-          "송태양": 4,
+          "송태양": 5,
           "김현기": 4,
           "심성현": 4,
           "배선유": 6
@@ -137226,6 +137226,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:24",
+          "store": "블리스버거(Bliss Burger) 양주옥정점",
+          "biz": "6863801316",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "• 프론트 단말기 충전 단자 접촉불량인거 같다고 말씀주시는데 확인 한 번 부탁드립니다~",
+          "hw": "",
+          "intake": "offline",
+          "note": "• 교체 안내 및 입출고 접수 완료 • 장비 수령 후 재인입해주시면 연동 도와드리겠음 안내 드렸어요 교체 안내 및 입출고 접수 완료 장비 수령 후 재인입해주시면 연동 도와드리겠음 안내 드렸어요"
+        },
         {
           "time": "11:15",
           "store": "착한토끼 키즈카페 키즈룸 제주삼화하우스",
@@ -137637,7 +137648,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 31,
-        "offline": 6,
+        "offline": 7,
         "unknown": 0
       },
       "updatedAt": "11:24"
@@ -137679,7 +137690,7 @@ window.SLACK_DATA = {
       },
       "1787796900.434779": {
         "post": "1787796900.434779",
-        "lastSeen": 1787797583.718
+        "lastSeen": 1787797704.362
       }
     },
     "days": {
@@ -170623,7 +170634,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 11:26",
+    "at": "2026-08-27 11:28",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
