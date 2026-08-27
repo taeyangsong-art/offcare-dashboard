@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5666,
+  "version": 5667,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137198,6 +137198,7 @@ window.SLACK_DATA = {
     "2026-08-27": {
       "counts": {
         "as": {
+          "김현기": 1,
           "송태양": 1,
           "심성현": 1
         },
@@ -137211,6 +137212,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:40",
+          "store": "박승광 해물손칼국수 검단신도시직영점",
+          "biz": "5335101097",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "<https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1778836242215339|전일> <https://w1659946222-hxm266180.slack.com/archives/C09HRU",
+          "hw": "",
+          "intake": "online",
+          "note": "물리적으로 FEED 버튼이 계속 눌리는 것 처럼 빈 용지가 주르륵 나옴, 고장으로 보여 대체품 발송 / 다음주 수 회수"
+        },
         {
           "time": "09:26",
           "store": "케이핀초반",
@@ -137269,11 +137281,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 4,
+        "online": 5,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:45"
+      "updatedAt": "09:46"
     }
   },
   "resp": {
@@ -137312,7 +137324,11 @@ window.SLACK_DATA = {
       },
       "1787791500.521559": {
         "post": "1787791500.521559",
-        "lastSeen": 1787791523.43
+        "lastSeen": 1787791692.928
+      },
+      "1787791614.626459": {
+        "post": "1787791614.626459",
+        "lastSeen": 1787791692.928
       }
     },
     "days": {
@@ -170104,13 +170120,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 09:45",
+    "at": "2026-08-27 09:48",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3752,
+    "rows": 3753,
     "named": 438,
     "unknownName": 0,
     "beforeStart": 0,
