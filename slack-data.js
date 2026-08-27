@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5664,
+  "version": 5665,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137309,10 +137309,6 @@ window.SLACK_DATA = {
       "1787751235.320309": {
         "post": "1787751235.320309",
         "lastSeen": 1787775328.58
-      },
-      "1787791259.515289": {
-        "post": "1787791259.515289",
-        "lastSeen": 1787791282.103
       }
     },
     "days": {
@@ -170085,11 +170081,26 @@ window.SLACK_DATA = {
             "cat": "as"
           }
         ]
+      },
+      "2026-08-27": {
+        "cnt": 1,
+        "sumMin": 1.3736201802889505,
+        "over": 0,
+        "items": [
+          {
+            "hm": "09:40",
+            "min": 1.4,
+            "store": "박승광 해물손칼국수 검단신도시직영점",
+            "biz": "5335101097",
+            "who": "김현기",
+            "cat": "as"
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-27 09:41",
+    "at": "2026-08-27 09:43",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
