@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5684,
+  "version": 5685,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137197,16 +137197,17 @@ window.SLACK_DATA = {
     },
     "2026-08-27": {
       "counts": {
+        "onboarding": {
+          "송태양": 1,
+          "배선유": 2,
+          "김현기": 1,
+          "고경림": 1
+        },
         "as": {
           "배선유": 5,
           "김현기": 1,
           "송태양": 1,
           "심성현": 1
-        },
-        "onboarding": {
-          "배선유": 2,
-          "김현기": 1,
-          "고경림": 1
         },
         "menu": {
           "김규빈": 1,
@@ -137215,6 +137216,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:22",
+          "store": "하치하치88",
+          "biz": "3921902651",
+          "cat": "onboarding",
+          "emp": "송태양",
+          "req": "포프(태블릿) 유프 온보딩 요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "10:15",
           "store": "네일바운더리",
@@ -137372,11 +137384,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 13,
+        "online": 14,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "10:25"
+      "updatedAt": "10:28"
     }
   },
   "resp": {
@@ -137412,6 +137424,10 @@ window.SLACK_DATA = {
       "1787751235.320309": {
         "post": "1787751235.320309",
         "lastSeen": 1787775328.58
+      },
+      "1787794133.585069": {
+        "post": "1787794133.585069",
+        "lastSeen": 1787794161.006
       }
     },
     "days": {
@@ -170291,7 +170307,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 10:28",
+    "at": "2026-08-27 10:29",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
