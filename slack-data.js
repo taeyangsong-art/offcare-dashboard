@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5727,
+  "version": 5728,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137199,6 +137199,7 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "고경림": 1,
+          "김규빈": 1,
           "배선유": 8,
           "서상원": 1,
           "송태양": 6,
@@ -137241,6 +137242,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "미개봉 상태라, 각기기 전원 연결방법 안내 및 노트북 토스포스 설치안내까지 완료 12시 15분 예약완료"
+        },
+        {
+          "time": "11:39",
+          "store": "써니 헤어염색 전문점",
+          "biz": "6960503652",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "포프유프(노트북) / 유프 간헐적 출력안됨 및 고객 정보 등록 영상통호 안내요청",
+          "hw": "",
+          "intake": "online",
+          "note": "금액입력으로 사용하시는걸로 보임 / 고객정보 사용방법안내드림"
         },
         {
           "time": "11:39",
@@ -137751,7 +137763,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 38,
+        "online": 39,
         "offline": 9,
         "unknown": 0
       },
@@ -170782,7 +170794,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 11:56",
+    "at": "2026-08-27 11:59",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
