@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1078,
- "updatedAt": "2026-08-27 13:38",
+ "version": 1079,
+ "updatedAt": "2026-08-27 13:43",
  "days": 30,
  "items": [
   {
@@ -42652,29 +42652,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785215790133799"
-  },
-  {
-   "ts": "1785213812.401259",
-   "date": "2026-07-28",
-   "time": "13:43",
-   "store": "올레시장흑돼지 흑돈바라기",
-   "biz": "1470503484",
-   "pos": "토스포스",
-   "content": "토스포스 메뉴등록 부탁드립니다! (금일 4시 오픈으로 긴급)",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "메뉴사진입니다!"
-   ],
-   "rc": 3,
-   "lr": "1785214223.428859",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785213812401259"
   }
  ],
  "ocr": {
