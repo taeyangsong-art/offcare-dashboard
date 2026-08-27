@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1123,
- "updatedAt": "2026-08-27 17:09",
+ "version": 1124,
+ "updatedAt": "2026-08-27 17:11",
  "days": 30,
  "items": [
   {
@@ -18,11 +18,515 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "Resized_20260827_150429.jpg (1).jpeg",
+     "fid": "F0BTWS8MC00",
+     "from": "댓글",
+     "path": "menu-files/1787818160_594919-0.jpeg",
+     "kind": "pos_screen",
+     "menu": []
+    },
+    {
+     "name": "Resized_20260827_150441.jpg (1).jpeg",
+     "fid": "F0BTWS8K8HW",
+     "from": "댓글",
+     "path": "menu-files/1787818160_594919-1.jpeg",
+     "kind": "pos_screen",
+     "menu": []
+    },
+    {
+     "name": "Resized_20260827_150240.jpg (1).jpeg",
+     "fid": "F0BT2ET8PQA",
+     "from": "댓글",
+     "path": "menu-files/1787818160_594919-2.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "세트메뉴",
+       "name": "A.뒷고기모둠구이세트",
+       "price": 53000
+      },
+      {
+       "category": "세트메뉴",
+       "name": "A.석쇠불고기세트",
+       "price": 43000
+      },
+      {
+       "category": "세트메뉴",
+       "name": "A.숯불곰장어세트",
+       "price": 54000
+      },
+      {
+       "category": "세트메뉴",
+       "name": "A.매콤닭발세트",
+       "price": 51000
+      },
+      {
+       "category": "세트메뉴",
+       "name": "A.생막창세트",
+       "price": 51000
+      },
+      {
+       "category": "세트메뉴",
+       "name": "A.양념막창세트",
+       "price": 51000
+      },
+      {
+       "category": "세트메뉴",
+       "name": "뚝배기파스타",
+       "price": 0
+      },
+      {
+       "category": "세트메뉴",
+       "name": "왕 계란찜",
+       "price": 0
+      },
+      {
+       "category": "세트메뉴",
+       "name": "날치알 주먹밥",
+       "price": 0
+      },
+      {
+       "category": "세트메뉴",
+       "name": "B.뒷고기모둠구이세트",
+       "price": 50000
+      },
+      {
+       "category": "세트메뉴",
+       "name": "B.석쇠불고기세트",
+       "price": 40000
+      },
+      {
+       "category": "세트메뉴",
+       "name": "B.숯불곰장어세트",
+       "price": 51000
+      },
+      {
+       "category": "세트메뉴",
+       "name": "B.양념막창세트",
+       "price": 48000
+      },
+      {
+       "category": "세트메뉴",
+       "name": "B.생막창세트",
+       "price": 48000
+      },
+      {
+       "category": "세트메뉴",
+       "name": "B.매콤닭발세트",
+       "price": 48000
+      },
+      {
+       "category": "세트메뉴",
+       "name": "배추전",
+       "price": 0
+      },
+      {
+       "category": "세트메뉴",
+       "name": "김치전",
+       "price": 0
+      },
+      {
+       "category": "세트메뉴",
+       "name": "부추전",
+       "price": 0
+      },
+      {
+       "category": "세트메뉴",
+       "name": "왕 계란찜",
+       "price": 0
+      },
+      {
+       "category": "세트메뉴",
+       "name": "날치알 주먹밥",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260827_150316.jpg (1).jpeg",
+     "fid": "F0BTWS9CVME",
+     "from": "댓글",
+     "path": "menu-files/1787818160_594919-3.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "구이류",
+       "name": "뒷고기모듬구이",
+       "price": 35000
+      },
+      {
+       "category": "구이류",
+       "name": "석쇠불고기",
+       "price": 25000
+      },
+      {
+       "category": "구이류",
+       "name": "매콤양념닭발",
+       "price": 11000
+      },
+      {
+       "category": "구이류",
+       "name": "양념막창",
+       "price": 11000
+      },
+      {
+       "category": "구이류",
+       "name": "생막창",
+       "price": 11000
+      },
+      {
+       "category": "구이류",
+       "name": "숯불곰장어",
+       "price": 12000
+      },
+      {
+       "category": "구이류",
+       "name": "삼겹살",
+       "price": 11000
+      },
+      {
+       "category": "구이류",
+       "name": "돼지껍데기",
+       "price": 7000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260827_150331.jpg (1).jpeg",
+     "fid": "F0BT0H7M6SJ",
+     "from": "댓글",
+     "path": "menu-files/1787818160_594919-4.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "식사류",
+       "name": "잔치국수(냉)",
+       "price": 5000
+      },
+      {
+       "category": "식사류",
+       "name": "잔치국수(곱빼기/냉)",
+       "price": 7000
+      },
+      {
+       "category": "식사류",
+       "name": "잔치국수(온)",
+       "price": 6000
+      },
+      {
+       "category": "식사류",
+       "name": "잔치국수(곱빼기/온)",
+       "price": 7000
+      },
+      {
+       "category": "식사류",
+       "name": "콩국수",
+       "price": 9000
+      },
+      {
+       "category": "식사류",
+       "name": "콩국수(곱빼기)",
+       "price": 11000
+      },
+      {
+       "category": "식사류",
+       "name": "물냉면",
+       "price": 8000
+      },
+      {
+       "category": "식사류",
+       "name": "물냉면(곱빼기)",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "콩나물해장국",
+       "price": 8000
+      },
+      {
+       "category": "식사류",
+       "name": "라면",
+       "price": 4000
+      },
+      {
+       "category": "식사류",
+       "name": "낚지알주먹밥",
+       "price": 6000
+      },
+      {
+       "category": "식사류",
+       "name": "함께라면",
+       "price": 7000
+      },
+      {
+       "category": "식사류",
+       "name": "된장찌개",
+       "price": 2000
+      },
+      {
+       "category": "식사류",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "식사류",
+       "name": "폭탄고명추가",
+       "price": 1000
+      },
+      {
+       "category": "식사류",
+       "name": "치즈 추가",
+       "price": 2000
+      },
+      {
+       "category": "식사류",
+       "name": "배추전(단품)",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "김치전(단품)",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "부추전(단품)",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "쭉배기파스타(단품)",
+       "price": 13000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260827_165618.jpg.jpeg",
+     "fid": "F0BSYEKQ0MB",
+     "from": "댓글",
+     "path": "menu-files/1787818160_594919-5.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류/음료",
+       "name": "소주",
+       "price": 5000
+      },
+      {
+       "category": "주류/음료",
+       "name": "맥주",
+       "price": 5000
+      },
+      {
+       "category": "주류/음료",
+       "name": "막걸리",
+       "price": 4000
+      },
+      {
+       "category": "주류/음료",
+       "name": "음료수",
+       "price": 2000
+      },
+      {
+       "category": "주류/음료",
+       "name": "청하",
+       "price": 6000
+      },
+      {
+       "category": "주류/음료",
+       "name": "생맥주",
+       "price": 5000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260827_165649.jpg.jpeg",
+     "fid": "F0BSM4LJ3RV",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "곰장어(포장/중)",
+       "price": 39000
+      },
+      {
+       "category": "",
+       "name": "곰장어(포장/대)",
+       "price": 49000
+      },
+      {
+       "category": "",
+       "name": "양념막창(포장/중)",
+       "price": 35000
+      },
+      {
+       "category": "",
+       "name": "양념막창(포장/대)",
+       "price": 45000
+      },
+      {
+       "category": "",
+       "name": "생막창(포장/중)",
+       "price": 35000
+      },
+      {
+       "category": "",
+       "name": "생막창(포장/대)",
+       "price": 45000
+      },
+      {
+       "category": "",
+       "name": "매콤닭발(포장/중)",
+       "price": 35000
+      },
+      {
+       "category": "",
+       "name": "매콤닭발(포장/대)",
+       "price": 45000
+      },
+      {
+       "category": "",
+       "name": "석쇠불고기(포장/중)",
+       "price": 27000
+      },
+      {
+       "category": "",
+       "name": "석쇠불고기(포장/대)",
+       "price": 37000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260827_165718.jpg.jpeg",
+     "fid": "F0BT0H87H2A",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "감바스마늘탕",
+       "price": 22000
+      },
+      {
+       "category": "",
+       "name": "오꼬노미야끼",
+       "price": 18000
+      },
+      {
+       "category": "",
+       "name": "쫑집볶음",
+       "price": 16000
+      },
+      {
+       "category": "",
+       "name": "두부김치",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "육쌈개래갈비스타",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "꼬지어묵탕",
+       "price": 16000
+      },
+      {
+       "category": "",
+       "name": "매콤꼬지어묵탕",
+       "price": 17000
+      },
+      {
+       "category": "",
+       "name": "왕꼬모듬튀김",
+       "price": 22000
+      },
+      {
+       "category": "",
+       "name": "쫑집튀김",
+       "price": 16000
+      },
+      {
+       "category": "",
+       "name": "반반버팔로",
+       "price": 12000
+      },
+      {
+       "category": "",
+       "name": "팝콘",
+       "price": 7000
+      },
+      {
+       "category": "",
+       "name": "쥐포튀김갈새우칩",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "엽통꼬지",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "옛날빙수",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "과일빙수",
+       "price": 12000
+      },
+      {
+       "category": "",
+       "name": "계란토스트",
+       "price": 7000
+      },
+      {
+       "category": "",
+       "name": "마픈오징어",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "쥐포구이",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "치킨텐더샐러",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "철판치즈",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "소주/맥주",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "막걸리",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "음료수",
+       "price": 2000
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1787818163.360099",
+   "rc": 2,
+   "lr": "1787818220.644039",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -89,7 +593,7 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1787817336.201129",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787817319685229"
   },
