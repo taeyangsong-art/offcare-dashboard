@@ -3,10 +3,52 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1091,
- "updatedAt": "2026-08-27 14:43",
+ "version": 1092,
+ "updatedAt": "2026-08-27 14:45",
  "days": 30,
  "items": [
+  {
+   "ts": "1787809464.234789",
+   "date": "2026-08-27",
+   "time": "14:44",
+   "store": "장군갈비",
+   "biz": "2061380015",
+   "pos": "퍼스트포스",
+   "content": "메뉴 수정 요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787809467.610119",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787809464234789"
+  },
+  {
+   "ts": "1787809420.476819",
+   "date": "2026-08-27",
+   "time": "14:43",
+   "store": "냉정 소담한",
+   "biz": "7063101421",
+   "pos": "토스포스",
+   "content": "포스 신규 설치 메뉴 사전등록",
+   "special": "메뉴 이미지 메일로 보내드리겠습니다",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787809423.189369",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787809420476819"
+  },
   {
    "ts": "1787809380.325889",
    "date": "2026-08-27",
@@ -18,11 +60,584 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BSXFYTV9T",
+     "from": "댓글",
+     "path": "menu-files/1787809380_325889-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "전자저울",
+       "name": "마라탕 1단계",
+       "price": 0
+      },
+      {
+       "category": "전자저울",
+       "name": "마라탕 2단계",
+       "price": 0
+      },
+      {
+       "category": "전자저울",
+       "name": "마라탕 3단계",
+       "price": 0
+      },
+      {
+       "category": "전자저울",
+       "name": "마라비빔",
+       "price": 0
+      },
+      {
+       "category": "전자저울",
+       "name": "마라샹궈 1단계",
+       "price": 0
+      },
+      {
+       "category": "전자저울",
+       "name": "마라샹궈 2단계",
+       "price": 0
+      },
+      {
+       "category": "전자저울",
+       "name": "마라샹궈 3단계",
+       "price": 0
+      },
+      {
+       "category": "전자저울",
+       "name": "꼬치",
+       "price": 1000
+      },
+      {
+       "category": "전자저울",
+       "name": "미니꿔바로",
+       "price": 13000
+      },
+      {
+       "category": "전자저울",
+       "name": "라면사리",
+       "price": 2000
+      },
+      {
+       "category": "전자저울",
+       "name": "양고기(100g)",
+       "price": 3000
+      },
+      {
+       "category": "전자저울",
+       "name": "소고기(100g)",
+       "price": 3000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BT3EDPFK3",
+     "from": "댓글",
+     "path": "menu-files/1787809380_325889-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "세트메뉴",
+       "name": "A세트",
+       "price": 60000
+      },
+      {
+       "category": "세트메뉴",
+       "name": "B세트",
+       "price": 50000
+      },
+      {
+       "category": "세트메뉴",
+       "name": "C세트",
+       "price": 35000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BTVTMHUC8",
+     "from": "댓글",
+     "path": "menu-files/1787809380_325889-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "코스요리",
+       "name": "샤브4인",
+       "price": 40000
+      },
+      {
+       "category": "코스요리",
+       "name": "샤브2인",
+       "price": 25000
+      },
+      {
+       "category": "코스요리",
+       "name": "양고기250g",
+       "price": 12000
+      },
+      {
+       "category": "코스요리",
+       "name": "소고기250g",
+       "price": 13000
+      },
+      {
+       "category": "코스요리",
+       "name": "마라룽샤",
+       "price": 30000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BSXG0BK8D",
+     "from": "댓글",
+     "path": "menu-files/1787809380_325889-3.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "꼬치류",
+       "name": "양꼬치",
+       "price": 15000
+      },
+      {
+       "category": "꼬치류",
+       "name": "양고급갈비",
+       "price": 26000
+      },
+      {
+       "category": "꼬치류",
+       "name": "양갈비살",
+       "price": 17000
+      },
+      {
+       "category": "꼬치류",
+       "name": "소갈비살",
+       "price": 17000
+      },
+      {
+       "category": "꼬치류",
+       "name": "마라양꼬치",
+       "price": 16000
+      },
+      {
+       "category": "꼬치류",
+       "name": "오돌뼈꼬치",
+       "price": 15000
+      },
+      {
+       "category": "꼬치류",
+       "name": "어묵완자",
+       "price": 10000
+      },
+      {
+       "category": "꼬치류",
+       "name": "새우왕꼬치",
+       "price": 11000
+      },
+      {
+       "category": "꼬치류",
+       "name": "양념양꼬치",
+       "price": 16000
+      },
+      {
+       "category": "꼬치류",
+       "name": "닭날개 (보통맛)",
+       "price": 20000
+      },
+      {
+       "category": "꼬치류",
+       "name": "닭날개 (매운맛)",
+       "price": 20000
+      },
+      {
+       "category": "꼬치류",
+       "name": "건두부팽이버섯꼬치 5개",
+       "price": 10000
+      },
+      {
+       "category": "꼬치류",
+       "name": "소세지꼬치",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BT1G6A082",
+     "from": "댓글",
+     "path": "menu-files/1787809380_325889-4.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "볶음류",
+       "name": "철판소고기볶음",
+       "price": 20000
+      },
+      {
+       "category": "볶음류",
+       "name": "철판명란볶음",
+       "price": 18000
+      },
+      {
+       "category": "볶음류",
+       "name": "꿔보러우",
+       "price": 18000
+      },
+      {
+       "category": "볶음류",
+       "name": "향라새우",
+       "price": 18000
+      },
+      {
+       "category": "볶음류",
+       "name": "향라닭날개",
+       "price": 18000
+      },
+      {
+       "category": "볶음류",
+       "name": "크림새우",
+       "price": 18000
+      },
+      {
+       "category": "볶음류",
+       "name": "경장유슬",
+       "price": 18000
+      },
+      {
+       "category": "볶음류",
+       "name": "향라유슬",
+       "price": 18000
+      },
+      {
+       "category": "볶음류",
+       "name": "가지만두",
+       "price": 16000
+      },
+      {
+       "category": "볶음류",
+       "name": "지삼선",
+       "price": 15000
+      },
+      {
+       "category": "볶음류",
+       "name": "건두부볶음",
+       "price": 13000
+      },
+      {
+       "category": "볶음류",
+       "name": "마파두부",
+       "price": 13000
+      },
+      {
+       "category": "볶음류",
+       "name": "숙주볶음",
+       "price": 13000
+      },
+      {
+       "category": "볶음류",
+       "name": "계란토마토볶음",
+       "price": 10000
+      },
+      {
+       "category": "볶음류",
+       "name": "쯔란혈관볶음",
+       "price": 16000
+      },
+      {
+       "category": "볶음류",
+       "name": "미꾸라지볶음",
+       "price": 20000
+      },
+      {
+       "category": "볶음류",
+       "name": "어향가지",
+       "price": 16000
+      },
+      {
+       "category": "볶음류",
+       "name": "계란부추볶음",
+       "price": 13000
+      },
+      {
+       "category": "볶음류",
+       "name": "돼지고기튀김볶음",
+       "price": 18000
+      },
+      {
+       "category": "볶음류",
+       "name": "고추잡채",
+       "price": 18000
+      },
+      {
+       "category": "볶음류",
+       "name": "양고기대파볶음",
+       "price": 20000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BTVTNEF96",
+     "from": "댓글",
+     "path": "menu-files/1787809380_325889-5.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "무침류",
+       "name": "매운해림고",
+       "price": 18000
+      },
+      {
+       "category": "무침류",
+       "name": "소고기오이무침",
+       "price": 18000
+      },
+      {
+       "category": "무침류",
+       "name": "건두부무침",
+       "price": 13000
+      },
+      {
+       "category": "무침류",
+       "name": "오이무침",
+       "price": 10000
+      },
+      {
+       "category": "무침류",
+       "name": "돼지귀무침",
+       "price": 10000
+      },
+      {
+       "category": "무침류",
+       "name": "양깃머리",
+       "price": 18000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BTVTP2ZQ8",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "식사류",
+       "name": "계란볶음밥",
+       "price": 7000
+      },
+      {
+       "category": "식사류",
+       "name": "가지볶음밥",
+       "price": 7000
+      },
+      {
+       "category": "식사류",
+       "name": "옥수수온면",
+       "price": 7000
+      },
+      {
+       "category": "식사류",
+       "name": "우육탕면",
+       "price": 8000
+      },
+      {
+       "category": "식사류",
+       "name": "소마이(5개)",
+       "price": 7000
+      },
+      {
+       "category": "식사류",
+       "name": "하가우(5개)",
+       "price": 7000
+      },
+      {
+       "category": "식사류",
+       "name": "소룡포(5개)",
+       "price": 7000
+      },
+      {
+       "category": "식사류",
+       "name": "모둠 (소마이+하가우+소룡포)",
+       "price": 9000
+      },
+      {
+       "category": "식사류",
+       "name": "물냉면",
+       "price": 8000
+      },
+      {
+       "category": "식사류",
+       "name": "비빔면",
+       "price": 8000
+      },
+      {
+       "category": "식사류",
+       "name": "콩국수",
+       "price": 8000
+      },
+      {
+       "category": "식사류",
+       "name": "물만두",
+       "price": 7000
+      },
+      {
+       "category": "식사류",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "식사류",
+       "name": "계란찜",
+       "price": 3000
+      },
+      {
+       "category": "식사류",
+       "name": "오뎅탕",
+       "price": 3000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BT3EGL9AM",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류/음료",
+       "name": "연태고량(大)",
+       "price": 40000
+      },
+      {
+       "category": "주류/음료",
+       "name": "연태고량(中)",
+       "price": 20000
+      },
+      {
+       "category": "주류/음료",
+       "name": "연태고량(小)",
+       "price": 10000
+      },
+      {
+       "category": "주류/음료",
+       "name": "공부가주(大)",
+       "price": 40000
+      },
+      {
+       "category": "주류/음료",
+       "name": "공부가주(小)",
+       "price": 20000
+      },
+      {
+       "category": "주류/음료",
+       "name": "로쥬탄",
+       "price": 20000
+      },
+      {
+       "category": "주류/음료",
+       "name": "설원(大)",
+       "price": 20000
+      },
+      {
+       "category": "주류/음료",
+       "name": "설원(小)",
+       "price": 15000
+      },
+      {
+       "category": "주류/음료",
+       "name": "청도",
+       "price": 7000
+      },
+      {
+       "category": "주류/음료",
+       "name": "하얼빈",
+       "price": 7000
+      },
+      {
+       "category": "주류/음료",
+       "name": "새로",
+       "price": 5000
+      },
+      {
+       "category": "주류/음료",
+       "name": "진로",
+       "price": 5000
+      },
+      {
+       "category": "주류/음료",
+       "name": "참이슬",
+       "price": 5000
+      },
+      {
+       "category": "주류/음료",
+       "name": "시원",
+       "price": 5000
+      },
+      {
+       "category": "주류/음료",
+       "name": "처음처럼",
+       "price": 5000
+      },
+      {
+       "category": "주류/음료",
+       "name": "생맥주",
+       "price": 5000
+      },
+      {
+       "category": "주류/음료",
+       "name": "카스",
+       "price": 5000
+      },
+      {
+       "category": "주류/음료",
+       "name": "테라",
+       "price": 5000
+      },
+      {
+       "category": "주류/음료",
+       "name": "켈리",
+       "price": 5000
+      },
+      {
+       "category": "주류/음료",
+       "name": "코카콜라",
+       "price": 2000
+      },
+      {
+       "category": "주류/음료",
+       "name": "사이다",
+       "price": 2000
+      },
+      {
+       "category": "주류/음료",
+       "name": "탄산수",
+       "price": 2000
+      },
+      {
+       "category": "주류/음료",
+       "name": "환타파인",
+       "price": 2000
+      },
+      {
+       "category": "주류/음료",
+       "name": "차파이",
+       "price": 4000
+      },
+      {
+       "category": "주류/음료",
+       "name": "빙홍차",
+       "price": 3000
+      }
+     ]
+    }
+   ],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787809384.134329",
+   "replies": [
+    "마라탕 123단계 마라비빔은  싯가"
+   ],
+   "rc": 3,
+   "lr": "1787809477.702629",
    "rfx": 3,
    "status": "wait",
    "handler": null,
