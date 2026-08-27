@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1121,
- "updatedAt": "2026-08-27 16:56",
+ "version": 1122,
+ "updatedAt": "2026-08-27 17:06",
  "days": 30,
  "items": [
   {
@@ -303,9 +303,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787815822.520029",
+   "replies": [
+    "넵! 천천히 해주셔도 됩니다. 항상 감사합니다. :꾸벅:"
+   ],
+   "rc": 3,
+   "lr": "1787817943.826979",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
@@ -44135,27 +44137,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785226397724099"
-  },
-  {
-   "ts": "1785225848.944519",
-   "date": "2026-07-28",
-   "time": "17:04",
-   "store": "삼맛카페(Sammat Cafe)",
-   "biz": "1092706588",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1785225859.584619",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785225848944519"
   }
  ],
  "ocr": {
