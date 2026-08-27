@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1130,
- "updatedAt": "2026-08-27 17:35",
+ "version": 1131,
+ "updatedAt": "2026-08-27 17:37",
  "days": 30,
  "items": [
   {
@@ -44,8 +44,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "일상 신촌점 메뉴 > 가좌점 메뉴 등록 요청하셨었는데\n메뉴 사진이 옮겨져있지않아 사진등록 부탁드리겠습니다!\n\n https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787550023237509"
    ],
-   "rc": 2,
-   "lr": "1787819311.688699",
+   "rc": 4,
+   "lr": "1787819851.754869",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
@@ -44703,30 +44703,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785236620267649"
-  },
-  {
-   "ts": "1785227808.476239",
-   "date": "2026-07-28",
-   "time": "17:36",
-   "store": "마담하오 (Madam Hao)",
-   "biz": "4258704297",
-   "pos": "",
-   "content": "배민원 연동하였는데 쿠팡이츠랑 동일하게 매뉴등록 부탁드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "최근에 쿠팡이츠 등록하셨다고 파일은 따로 주시지 않으셨는데 받아올까요..!!",
-    "요청했습니다!!!! 들어오면 전달드릴게요!!!!"
-   ],
-   "rc": 4,
-   "lr": "1785231274.934549",
-   "rfx": 3,
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785227808476239"
   }
  ],
  "ocr": {
