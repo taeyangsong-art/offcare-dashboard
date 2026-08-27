@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5718,
+  "version": 5719,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137250,7 +137250,7 @@ window.SLACK_DATA = {
           "req": "프론트 연결끊김이 지속적으로 발생한다고 하여 점검 요청드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "네트워크 점검 시에는 문제없음 / 어제 저녁에 프론트 전원이 꺼지는 증상이 있었다고 함 / 멀티탭 옮겨 꽂아보시길 권장"
         },
         {
           "time": "11:24",
@@ -137688,7 +137688,7 @@ window.SLACK_DATA = {
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "11:36"
+      "updatedAt": "11:39"
     }
   },
   "resp": {
@@ -137725,9 +137725,9 @@ window.SLACK_DATA = {
         "post": "1787751235.320309",
         "lastSeen": 1787775328.58
       },
-      "1787798165.825829": {
-        "post": "1787798165.825829",
-        "lastSeen": 1787798302.036
+      "1787798360.424109": {
+        "post": "1787798360.424109",
+        "lastSeen": 1787798361.994
       }
     },
     "days": {
@@ -170502,8 +170502,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-27": {
-        "cnt": 23,
-        "sumMin": 127.92069688638051,
+        "cnt": 24,
+        "sumMin": 130.69051640033723,
         "over": 0,
         "items": [
           {
@@ -170689,13 +170689,21 @@ window.SLACK_DATA = {
             "biz": "3201602320",
             "who": "서상원",
             "cat": "as"
+          },
+          {
+            "hm": "11:36",
+            "min": 2.8,
+            "store": "Q사랑헤어",
+            "biz": "7101800188",
+            "who": "배선유",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-27 11:38",
+    "at": "2026-08-27 11:39",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
