@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5701,
+  "version": 5702,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137198,7 +137198,8 @@ window.SLACK_DATA = {
     "2026-08-27": {
       "counts": {
         "extern": {
-          "김동욱": 2
+          "김동욱": 2,
+          "김현기": 1
         },
         "as": {
           "김현기": 4,
@@ -137240,6 +137241,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "키오스크에서 대면모드로 바뀌면 원래 수동으로 해줘야 하는게 맞음 대표님 이해 완료"
+        },
+        {
+          "time": "10:57",
+          "store": "몽쥬르",
+          "biz": "2350402408",
+          "cat": "extern",
+          "emp": "김현기",
+          "req": "프린터 사운드조절 지원요청 스타정보 010-8604-6357",
+          "hw": "",
+          "intake": "online",
+          "note": "무음 설명 완료 대표님 바로 이해 완료 / 잉 외주가아니고?"
         },
         {
           "time": "10:57",
@@ -137541,7 +137553,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 24,
+        "online": 25,
         "offline": 5,
         "unknown": 0
       },
@@ -137584,7 +137596,7 @@ window.SLACK_DATA = {
       },
       "1787796001.715809": {
         "post": "1787796001.715809",
-        "lastSeen": 1787796209.952
+        "lastSeen": 1787796384.218
       }
     },
     "days": {
@@ -170512,7 +170524,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 11:03",
+    "at": "2026-08-27 11:06",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
