@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5705,
+  "version": 5706,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137219,6 +137219,7 @@ window.SLACK_DATA = {
         },
         "menu": {
           "김규빈": 2,
+          "배선유": 1,
           "김동욱": 1
         }
       },
@@ -137355,6 +137356,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "• 터미널 ic 반응없음 교체 안내 및 입출고 접수 완료입니다 터미널 ic 반응없음 교체 안내 및 입출고 접수 완료입니다"
+        },
+        {
+          "time": "10:41",
+          "store": "씨씨디(CCD)마산경남대점",
+          "biz": "5062794207",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "• <mailto:rm@ishopcare.co.kr|rm@ishopcare.co.kr> / *25일 수요일* 해당 메일로 메뉴 보냈으며, 빠른 등록 요청 주셨어요.",
+          "hw": "",
+          "intake": "offline",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 이거 스팸으로 빠져있어서 해제 했어요 선유님 / / 하나더이씀 / 거기에 알집파일있음 / / 오 감삼당"
         },
         {
           "time": "10:40",
@@ -137602,10 +137614,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 29,
-        "offline": 5,
+        "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "11:10"
+      "updatedAt": "11:15"
     }
   },
   "resp": {
@@ -137641,6 +137653,10 @@ window.SLACK_DATA = {
       "1787751235.320309": {
         "post": "1787751235.320309",
         "lastSeen": 1787775328.58
+      },
+      "1787796900.434779": {
+        "post": "1787796900.434779",
+        "lastSeen": 1787796924.024
       }
     },
     "days": {
@@ -170576,7 +170592,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 11:11",
+    "at": "2026-08-27 11:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
