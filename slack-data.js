@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5741,
+  "version": 5742,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137223,7 +137223,7 @@ window.SLACK_DATA = {
           "심성현": 1
         },
         "menu": {
-          "김규빈": 4,
+          "김규빈": 5,
           "배선유": 1,
           "김동욱": 1
         },
@@ -137233,6 +137233,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "12:33",
+          "store": "M.M.N_memine",
+          "biz": "8041702922",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
+        },
         {
           "time": "12:15",
           "store": "온레브(ON REVE)",
@@ -137852,11 +137863,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 47,
+        "online": 48,
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "12:37"
+      "updatedAt": "12:42"
     }
   },
   "resp": {
@@ -170907,7 +170918,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 12:38",
+    "at": "2026-08-27 12:43",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
