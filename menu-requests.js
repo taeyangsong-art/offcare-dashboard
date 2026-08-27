@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1086,
- "updatedAt": "2026-08-27 14:18",
+ "version": 1087,
+ "updatedAt": "2026-08-27 14:19",
  "days": 30,
  "items": [
   {
@@ -42685,29 +42685,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785217062848139"
-  },
-  {
-   "ts": "1785215953.396469",
-   "date": "2026-07-28",
-   "time": "14:19",
-   "store": "장수원",
-   "biz": "2170685889",
-   "pos": "",
-   "content": "메뉴 수정 부탁드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "• 소고기 \n 생갈비 29,000원, 소왕갈비 26,000원, 안창살 17,000원, 갈비살 17,000원_포장가격도 동일하게 변경\n• 식사\n갈비탕 13,000원_포장가격도 동일하게 변경"
-   ],
-   "rc": 3,
-   "lr": "1785219265.760849",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785215953396469"
   }
  ],
  "ocr": {
