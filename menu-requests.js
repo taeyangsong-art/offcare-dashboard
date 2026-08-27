@@ -3,10 +3,130 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1087,
- "updatedAt": "2026-08-27 14:19",
+ "version": 1088,
+ "updatedAt": "2026-08-27 14:28",
  "days": 30,
  "items": [
+  {
+   "ts": "1787808407.044649",
+   "date": "2026-08-27",
+   "time": "14:26",
+   "store": "엘샤론안양점",
+   "biz": "3757000299",
+   "pos": "토스포스",
+   "content": "메뉴등록",
+   "special": "물건가와 시술가 등록",
+   "drive": [
+    "https://drive.google.com/file/d/1JbOhzN1wQ09IVRF7PwyPEzqL6RYssgWm/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1JbOhzN1wQ09IVRF7PwyPEzqL6RYssgWm",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "생활용품",
+       "name": "원적외선 목드라이기",
+       "price": 150000
+      },
+      {
+       "category": "에센스",
+       "name": "아르간 오일(100ml)",
+       "price": 28000
+      },
+      {
+       "category": "에센스",
+       "name": "모링스 트리트먼트(350ml)",
+       "price": 35000
+      },
+      {
+       "category": "에센스",
+       "name": "헤어팩(영양) 1000ml",
+       "price": 55000
+      },
+      {
+       "category": "염모제",
+       "name": "5호 (블랙) 250ml",
+       "price": 40000
+      },
+      {
+       "category": "염모제",
+       "name": "6호 (자갈) 250ml",
+       "price": 40000
+      },
+      {
+       "category": "염모제",
+       "name": "8호 (밝은갈색) 250ml",
+       "price": 40000
+      },
+      {
+       "category": "염모제",
+       "name": "5호 (블랙) 750ml",
+       "price": 85000
+      },
+      {
+       "category": "염모제",
+       "name": "6호 (자갈) 750ml",
+       "price": 85000
+      },
+      {
+       "category": "염모제",
+       "name": "8호 (밝.갈) 750ml",
+       "price": 85000
+      },
+      {
+       "category": "염모제",
+       "name": "9호 (황.갈) 750ml",
+       "price": 85000
+      },
+      {
+       "category": "헤어샴푸",
+       "name": "탈모방지 천연 샴푸 700ml",
+       "price": 68000
+      },
+      {
+       "category": "헤어샴푸",
+       "name": "약산성 (건성모발용) 1000ml",
+       "price": 45000
+      },
+      {
+       "category": "헤어샴푸",
+       "name": "약산성 (두피 케어,쿨) 1000ml",
+       "price": 45000
+      },
+      {
+       "category": "염색시술",
+       "name": "뿌리 염색(남성)",
+       "price": 20000
+      },
+      {
+       "category": "염색시술",
+       "name": "뿌리 염색(여성)",
+       "price": 23000
+      },
+      {
+       "category": "염색시술",
+       "name": "뿌염 (긴머리)",
+       "price": 25000
+      },
+      {
+       "category": "염색시술",
+       "name": "뿌염 (8주이상)",
+       "price": 30000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787808410.511599",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787808407044649"
+  },
   {
    "ts": "1787807882.266179",
    "date": "2026-08-27",
@@ -77,8 +197,8 @@ window.MENU_REQUESTS = {
     "안녕하세요, 해당 가맹점 빠른 설치 진행 요청 주시어 한번 더 태그드립니다 :woman-bowing::skin-tone-4:",
     "+ 저울에서 출력한 바코드 사용 예정입니다!"
    ],
-   "rc": 4,
-   "lr": "1787806495.777399",
+   "rc": 5,
+   "lr": "1787808438.127519",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
