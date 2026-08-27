@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5725,
+  "version": 5726,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137200,7 +137200,7 @@ window.SLACK_DATA = {
         "as": {
           "배선유": 8,
           "서상원": 1,
-          "송태양": 5,
+          "송태양": 6,
           "심성현": 5,
           "김현기": 4
         },
@@ -137251,6 +137251,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "다중설정 넣어드림"
+        },
+        {
+          "time": "11:30",
+          "store": "위위버거(WEWE Burger)",
+          "biz": "7142102140",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "키오스크로 페이스페이 결제시 앱 업데이트가 필요하다는 문구 확인되어 확인 부탁드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "페페 초기화 후 재온보딩 완료입니다 / 결제테스트 정상"
         },
         {
           "time": "11:30",
@@ -137728,7 +137739,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 36,
+        "online": 37,
         "offline": 9,
         "unknown": 0
       },
@@ -170759,7 +170770,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 11:50",
+    "at": "2026-08-27 11:51",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
