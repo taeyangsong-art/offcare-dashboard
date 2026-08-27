@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5704,
+  "version": 5705,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137198,9 +137198,15 @@ window.SLACK_DATA = {
     "2026-08-27": {
       "counts": {
         "extern": {
+          "김동욱": 3,
           "김기범": 1,
-          "김동욱": 2,
           "김현기": 1
+        },
+        "onboarding": {
+          "송태양": 3,
+          "배선유": 3,
+          "김현기": 1,
+          "고경림": 1
         },
         "as": {
           "김현기": 4,
@@ -137208,11 +137214,8 @@ window.SLACK_DATA = {
           "심성현": 4,
           "배선유": 6
         },
-        "onboarding": {
-          "배선유": 3,
-          "송태양": 2,
-          "김현기": 1,
-          "고경림": 1
+        "transfer": {
+          "심성현": 1
         },
         "menu": {
           "김규빈": 2,
@@ -137221,6 +137224,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:10",
+          "store": "제로스토어(화성동탄역2번출구점)",
+          "biz": "4060454319",
+          "cat": "extern",
+          "emp": "김동욱",
+          "req": "제로스토어 프론트캠 설치. 외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "11:07",
           "store": "중앙식당",
@@ -137242,6 +137256,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": ""
+        },
+        {
+          "time": "11:00",
+          "store": "한양식",
+          "biz": "2464301295",
+          "cat": "onboarding",
+          "emp": "송태양",
+          "req": "매장 포스기 (OK 포스) + 프론트 + 유프 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료입니다"
         },
         {
           "time": "10:58",
@@ -137296,6 +137321,17 @@ window.SLACK_DATA = {
           "req": "외주",
           "hw": "",
           "intake": "offline",
+          "note": ""
+        },
+        {
+          "time": "10:45",
+          "store": "댕샤워",
+          "biz": "7756200776",
+          "cat": "transfer",
+          "emp": "심성현",
+          "req": "• 메뉴 복사O / 다운로드 요청 / 프론트+터미널 27일 오전 11시",
+          "hw": "",
+          "intake": "online",
           "note": ""
         },
         {
@@ -137565,11 +137601,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 26,
+        "online": 29,
         "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "11:07"
+      "updatedAt": "11:10"
     }
   },
   "resp": {
@@ -137605,10 +137641,6 @@ window.SLACK_DATA = {
       "1787751235.320309": {
         "post": "1787751235.320309",
         "lastSeen": 1787775328.58
-      },
-      "1787796001.715809": {
-        "post": "1787796001.715809",
-        "lastSeen": 1787796503.702
       }
     },
     "days": {
@@ -170383,8 +170415,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-27": {
-        "cnt": 18,
-        "sumMin": 107.44058963855107,
+        "cnt": 19,
+        "sumMin": 117.28658448855082,
         "over": 0,
         "items": [
           {
@@ -170530,19 +170562,27 @@ window.SLACK_DATA = {
             "biz": "2350402408",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "11:00",
+            "min": 9.8,
+            "store": "재미있는역사미술",
+            "biz": "2289303631",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-27 11:08",
+    "at": "2026-08-27 11:11",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3753,
+    "rows": 3754,
     "named": 438,
     "unknownName": 0,
     "beforeStart": 0,
