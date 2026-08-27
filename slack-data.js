@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5677,
+  "version": 5678,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137199,12 +137199,13 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "배선유": 4,
-          "김현기": 2,
+          "김현기": 1,
           "송태양": 1,
           "심성현": 1
         },
         "onboarding": {
           "배선유": 1,
+          "김현기": 1,
           "고경림": 1
         },
         "menu": {
@@ -137318,12 +137319,12 @@ window.SLACK_DATA = {
           "time": "09:19",
           "store": "메종율",
           "biz": "2343901510",
-          "cat": "as",
+          "cat": "onboarding",
           "emp": "김현기",
           "req": "캣프 온보딩 부탁드립니다.",
           "hw": "",
           "intake": "online",
-          "note": "1차부재전화안받음 / 캣 시리얼"
+          "note": "1차부재전화안받음 / 캣 시리얼 / 캣프온보딩완"
         },
         {
           "time": "09:03",
@@ -137353,7 +137354,7 @@ window.SLACK_DATA = {
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "10:15"
+      "updatedAt": "10:20"
     }
   },
   "resp": {
@@ -137390,13 +137391,13 @@ window.SLACK_DATA = {
         "post": "1787751235.320309",
         "lastSeen": 1787775328.58
       },
-      "1787793074.289419": {
-        "post": "1787793074.289419",
-        "lastSeen": 1787793499.869
-      },
       "1787793300.374959": {
         "post": "1787793300.374959",
-        "lastSeen": 1787793499.869
+        "lastSeen": 1787793684.903
+      },
+      "1787793629.626649": {
+        "post": "1787793629.626649",
+        "lastSeen": 1787793684.903
       }
     },
     "days": {
@@ -170171,8 +170172,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-27": {
-        "cnt": 7,
-        "sumMin": 72.19922428131105,
+        "cnt": 8,
+        "sumMin": 80.83416730165483,
         "over": 0,
         "items": [
           {
@@ -170230,13 +170231,21 @@ window.SLACK_DATA = {
             "biz": "2073207793",
             "who": "배선유",
             "cat": "as"
+          },
+          {
+            "hm": "10:11",
+            "min": 8.6,
+            "store": "카페 딥 (CAFE DEEP)",
+            "biz": "2772102428",
+            "who": "김현기",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-27 10:18",
+    "at": "2026-08-27 10:21",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
