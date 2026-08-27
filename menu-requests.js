@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1095,
- "updatedAt": "2026-08-27 15:15",
+ "version": 1096,
+ "updatedAt": "2026-08-27 15:20",
  "days": 30,
  "items": [
   {
@@ -43417,32 +43417,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785219789856639"
-  },
-  {
-   "ts": "1785219626.712639",
-   "date": "2026-07-28",
-   "time": "15:20",
-   "store": "카페맑음",
-   "biz": "4114003862",
-   "pos": "오케이포스",
-   "content": "삭제/석류차\n추가/포장&매장/천도복숭아 주스/카테고리-주스에이드/4000원/옵션 사이즈업 1000\n추가/매장/1인 빙수/카테고리-커피 맨 처음으로/6500\n추가/매장/2인 빙수/카테고리-커피 맨 처음으로/12500",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "https://asp.upsolution.co.kr/BasicSetting/index/100006#2\n메뉴 관리 > 메뉴판 관리",
-    "오늘의 음료 sold out 되어잇음",
-    ":memo: 검색용 / 아임유포스 아임유키오스크 /\n왼쪽 위 더블클릭 9999 > 매장옵션 > 품절 관리 > 여기에서 저장 필요 / 만약 안되면 버전이 낮아서 그러니 업데이트 필요해 up cloud 쪽으로 원격 요청 필요",
-    "품절 해제 완료"
-   ],
-   "rc": 5,
-   "lr": "1785221750.306559",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785219626712639"
   }
  ],
  "ocr": {
