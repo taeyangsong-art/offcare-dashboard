@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5731,
+  "version": 5732,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137197,6 +137197,14 @@ window.SLACK_DATA = {
     },
     "2026-08-27": {
       "counts": {
+        "onboarding": {
+          "김규빈": 1,
+          "심성현": 1,
+          "송태양": 3,
+          "배선유": 3,
+          "김현기": 1,
+          "고경림": 1
+        },
         "as": {
           "고경림": 1,
           "김규빈": 1,
@@ -137207,16 +137215,9 @@ window.SLACK_DATA = {
           "김현기": 4
         },
         "extern": {
-          "김동욱": 4,
+          "김동욱": 5,
           "김기범": 1,
           "김현기": 1
-        },
-        "onboarding": {
-          "심성현": 1,
-          "송태양": 3,
-          "배선유": 3,
-          "김현기": 1,
-          "고경림": 1
         },
         "transfer": {
           "심성현": 1
@@ -137232,6 +137233,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "12:00",
+          "store": "인디코",
+          "biz": "8483501422",
+          "cat": "onboarding",
+          "emp": "김규빈",
+          "req": "포프 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "전화 걸자마자 끊어짐 1차부재 / 휴대폰 온보딩 금액입력 활성화"
+        },
         {
           "time": "12:00",
           "store": "김밥조",
@@ -137253,6 +137265,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "미개봉 상태라, 각기기 전원 연결방법 안내 및 노트북 토스포스 설치안내까지 완료 12시 15분 예약완료"
+        },
+        {
+          "time": "11:42",
+          "store": "제로스토어(용인역북점)",
+          "biz": "3093002047",
+          "cat": "extern",
+          "emp": "김동욱",
+          "req": "제로스토어 프론트캠 설치. 외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
         },
         {
           "time": "11:39",
@@ -137785,7 +137808,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 41,
+        "online": 43,
         "offline": 9,
         "unknown": 0
       },
@@ -137828,7 +137851,7 @@ window.SLACK_DATA = {
       },
       "1787799851.461029": {
         "post": "1787799851.461029",
-        "lastSeen": 1787799864.013
+        "lastSeen": 1787800221.533
       }
     },
     "days": {
@@ -170836,7 +170859,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 12:04",
+    "at": "2026-08-27 12:10",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
