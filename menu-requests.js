@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1072,
- "updatedAt": "2026-08-27 13:18",
+ "version": 1073,
+ "updatedAt": "2026-08-27 13:20",
  "days": 30,
  "items": [
+  {
+   "ts": "1787804396.870349",
+   "date": "2026-08-27",
+   "time": "13:19",
+   "store": "바로종합학원",
+   "biz": "5099130538",
+   "pos": "토스포스",
+   "content": "초등영어 17만\n중등영어 25만\n고등영어 25만\n초등영어회화 25만\n미래엔수학 17만",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787804402.404439",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787804396870349"
+  },
   {
    "ts": "1787801584.099879",
    "date": "2026-08-27",
