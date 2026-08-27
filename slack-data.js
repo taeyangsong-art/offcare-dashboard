@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5715,
+  "version": 5716,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137198,6 +137198,7 @@ window.SLACK_DATA = {
     "2026-08-27": {
       "counts": {
         "as": {
+          "서상원": 1,
           "송태양": 5,
           "김현기": 4,
           "심성현": 4,
@@ -137229,6 +137230,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:30",
+          "store": "텐퍼센트 광주매곡중앙점",
+          "biz": "3201602320",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "페이스페이 업데이트 필요 안내를 받았다 하셔서 확인 요청 드립니다. (오케이포스-프론트 이용중)",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "11:24",
           "store": "블리스버거(Bliss Burger) 양주옥정점",
@@ -137661,11 +137673,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 32,
+        "online": 33,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "11:30"
+      "updatedAt": "11:36"
     }
   },
   "resp": {
@@ -137702,9 +137714,9 @@ window.SLACK_DATA = {
         "post": "1787751235.320309",
         "lastSeen": 1787775328.58
       },
-      "1787797817.180069": {
-        "post": "1787797817.180069",
-        "lastSeen": 1787797992.735
+      "1787798165.825829": {
+        "post": "1787798165.825829",
+        "lastSeen": 1787798183.273
       }
     },
     "days": {
@@ -170479,8 +170491,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-27": {
-        "cnt": 22,
-        "sumMin": 123.40696470340093,
+        "cnt": 23,
+        "sumMin": 127.92069688638051,
         "over": 0,
         "items": [
           {
@@ -170658,13 +170670,21 @@ window.SLACK_DATA = {
             "biz": "4894301311",
             "who": "배선유",
             "cat": "as"
+          },
+          {
+            "hm": "11:30",
+            "min": 4.5,
+            "store": "텐퍼센트 광주매곡중앙점",
+            "biz": "3201602320",
+            "who": "서상원",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-27 11:33",
+    "at": "2026-08-27 11:36",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
