@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1112,
- "updatedAt": "2026-08-27 16:29",
+ "version": 1113,
+ "updatedAt": "2026-08-27 16:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1787815818.397179",
+   "date": "2026-08-27",
+   "time": "16:30",
+   "store": "SCH 향설관 (탕탕칼제비)",
+   "biz": "4988502390",
+   "pos": "",
+   "content": "SCH 향설관 (컵밥&김밥) >  SCH 향설관 (탕탕칼제비) 메뉴 그대로 복사 요청 주셨습니다. :감사합니다꾸벅:",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787815822.520029",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787815818397179"
+  },
   {
    "ts": "1787814241.570749",
    "date": "2026-08-27",
