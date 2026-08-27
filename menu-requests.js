@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1064,
- "updatedAt": "2026-08-27 12:05",
+ "version": 1065,
+ "updatedAt": "2026-08-27 12:13",
  "days": 30,
  "items": [
   {
@@ -481,12 +481,14 @@ window.MENU_REQUESTS = {
      ]
     }
    ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787799854.466649",
+   "replies": [
+    "샵앤샵인듯"
+   ],
+   "rc": 2,
+   "lr": "1787800331.840319",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787799851461029"
   },
   {
@@ -42502,30 +42504,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785208884876419"
-  },
-  {
-   "ts": "1785208313.805559",
-   "date": "2026-07-28",
-   "time": "12:11",
-   "store": "주식회사 에이티식스컴퍼니",
-   "biz": "5328701749",
-   "pos": "오케이포스",
-   "content": "신규매장 상품 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "안녕하세요, 바쁘시겠지만 해당 대표님 온도감이 많이 높으셔서 빠른 등록 가능할까요ㅜㅜ",
-    "님 여기 토스포스맞죠?"
-   ],
-   "rc": 3,
-   "lr": "1785209635.409119",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785208313805559"
   }
  ],
  "ocr": {
