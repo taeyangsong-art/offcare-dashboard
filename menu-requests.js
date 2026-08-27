@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1070,
- "updatedAt": "2026-08-27 12:43",
+ "version": 1071,
+ "updatedAt": "2026-08-27 12:56",
  "days": 30,
  "items": [
   {
@@ -42679,29 +42679,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785212260557039"
-  },
-  {
-   "ts": "1785210953.429509",
-   "date": "2026-07-28",
-   "time": "12:55",
-   "store": "쿠커피(KOO COFFEE)",
-   "biz": "5112068681",
-   "pos": "토스포스",
-   "content": "토스포스 메뉴등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "요기서 진행할게ㅣ욥"
-   ],
-   "rc": 2,
-   "lr": "1785210997.921459",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785210953429509"
   }
  ],
  "ocr": {

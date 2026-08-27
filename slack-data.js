@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5746,
+  "version": 5747,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137197,6 +137197,12 @@ window.SLACK_DATA = {
     },
     "2026-08-27": {
       "counts": {
+        "extern": {
+          "김동욱": 6,
+          "심성현": 1,
+          "김기범": 1,
+          "김현기": 1
+        },
         "onboarding": {
           "김규빈": 2,
           "송태양": 4,
@@ -137204,12 +137210,6 @@ window.SLACK_DATA = {
           "배선유": 3,
           "김현기": 1,
           "고경림": 1
-        },
-        "extern": {
-          "심성현": 1,
-          "김동욱": 5,
-          "김기범": 1,
-          "김현기": 1
         },
         "as": {
           "김현기": 5,
@@ -137234,6 +137234,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "12:56",
+          "store": "저팔계 특수부위",
+          "biz": "7241002739",
+          "cat": "extern",
+          "emp": "김동욱",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "12:45",
           "store": "네일다이아",
@@ -137886,11 +137897,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 50,
+        "online": 51,
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "12:55"
+      "updatedAt": "12:56"
     }
   },
   "resp": {
@@ -137929,7 +137940,7 @@ window.SLACK_DATA = {
       },
       "1787802900.849649": {
         "post": "1787802900.849649",
-        "lastSeen": 1787802924.719
+        "lastSeen": 1787802981.346
       }
     },
     "days": {
@@ -170969,7 +170980,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 12:55",
+    "at": "2026-08-27 12:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
