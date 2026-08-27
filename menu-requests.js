@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1141,
- "updatedAt": "2026-08-27 22:30",
+ "version": 1142,
+ "updatedAt": "2026-08-27 22:39",
  "days": 30,
  "items": [
   {
@@ -18,11 +18,19 @@ window.MENU_REQUESTS = {
    "special": "카테고리별 품목 및 수량, 금액 그대로 입력 바랍니다.",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "5473302107_2026-08-27T13-29-28_1_로컬페어링토스",
+     "fid": "F0BT8EVB6SY",
+     "from": "댓글",
+     "path": "menu-files/1787837373_370479-0.zip",
+     "nj": 1
+    }
+   ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1787837376.671049",
+   "rc": 2,
+   "lr": "1787837897.681849",
    "rfx": 3,
    "status": "wait",
    "handler": null,
