@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5693,
+  "version": 5694,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137197,17 +137197,17 @@ window.SLACK_DATA = {
     },
     "2026-08-27": {
       "counts": {
+        "as": {
+          "심성현": 3,
+          "김현기": 3,
+          "배선유": 6,
+          "송태양": 1
+        },
         "onboarding": {
           "송태양": 2,
           "배선유": 2,
           "김현기": 1,
           "고경림": 1
-        },
-        "as": {
-          "김현기": 3,
-          "배선유": 6,
-          "심성현": 2,
-          "송태양": 1
         },
         "menu": {
           "김규빈": 1,
@@ -137216,6 +137216,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:40",
+          "store": "우리동네 정분식",
+          "biz": "3326100719",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "태블릿 포프 유프 사용중/  배민 연동 요청 주시어 도움 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "배달 앱 연동 및 사용 방법 안내 완료"
+        },
         {
           "time": "10:30",
           "store": "한진 광택 디테일샵",
@@ -137439,11 +137450,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 16,
+        "online": 17,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "10:41"
+      "updatedAt": "10:45"
     }
   },
   "resp": {
@@ -137479,6 +137490,10 @@ window.SLACK_DATA = {
       "1787751235.320309": {
         "post": "1787751235.320309",
         "lastSeen": 1787775328.58
+      },
+      "1787795100.355339": {
+        "post": "1787795100.355339",
+        "lastSeen": 1787795125.531
       }
     },
     "days": {
@@ -170382,7 +170397,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 10:44",
+    "at": "2026-08-27 10:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
