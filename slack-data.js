@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5679,
+  "version": 5680,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137197,16 +137197,16 @@ window.SLACK_DATA = {
     },
     "2026-08-27": {
       "counts": {
+        "as": {
+          "배선유": 5,
+          "김현기": 1,
+          "송태양": 1,
+          "심성현": 1
+        },
         "onboarding": {
           "배선유": 2,
           "김현기": 1,
           "고경림": 1
-        },
-        "as": {
-          "배선유": 4,
-          "김현기": 1,
-          "송태양": 1,
-          "심성현": 1
         },
         "menu": {
           "김규빈": 1,
@@ -137215,6 +137215,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:15",
+          "store": "네일바운더리",
+          "biz": "8942702069",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "포프(태블릿) + 유프 온보딩 요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "10:06",
           "store": "파란교재",
@@ -137361,7 +137372,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 12,
+        "online": 13,
         "offline": 1,
         "unknown": 0
       },
@@ -137402,13 +137413,9 @@ window.SLACK_DATA = {
         "post": "1787751235.320309",
         "lastSeen": 1787775328.58
       },
-      "1787793629.626649": {
-        "post": "1787793629.626649",
-        "lastSeen": 1787793741.747
-      },
       "1787793736.731319": {
         "post": "1787793736.731319",
-        "lastSeen": 1787793741.747
+        "lastSeen": 1787793800.73
       }
     },
     "days": {
@@ -170183,8 +170190,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-27": {
-        "cnt": 9,
-        "sumMin": 87.71666798591615,
+        "cnt": 10,
+        "sumMin": 90.07686550617218,
         "over": 0,
         "items": [
           {
@@ -170258,13 +170265,21 @@ window.SLACK_DATA = {
             "biz": "8942702069",
             "who": "배선유",
             "cat": "as"
+          },
+          {
+            "hm": "10:20",
+            "min": 2.4,
+            "store": "그여행 송정점",
+            "biz": "7687800459",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-27 10:22",
+    "at": "2026-08-27 10:23",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
