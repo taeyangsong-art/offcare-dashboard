@@ -3,10 +3,272 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1116,
- "updatedAt": "2026-08-27 16:38",
+ "version": 1117,
+ "updatedAt": "2026-08-27 16:40",
  "days": 30,
  "items": [
+  {
+   "ts": "1787816342.100789",
+   "date": "2026-08-27",
+   "time": "16:39",
+   "store": "젤라띠",
+   "biz": "7970203842",
+   "pos": "토스포스",
+   "content": "메뉴 추가",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1kAfCXFvN4KSx2ng48SnWfxjTYYGjssp-/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1xEMqFkizn0HO-C_0kG1l2UknWUeEKJVE/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1kAfCXFvN4KSx2ng48SnWfxjTYYGjssp-",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "REAL JUICE",
+       "name": "자몽 착즙 주스",
+       "price": 4000
+      },
+      {
+       "category": "REAL JUICE",
+       "name": "청사과 착즙 주스",
+       "price": 4000
+      },
+      {
+       "category": "ADE & SMOOTHIE",
+       "name": "레몬 에이드",
+       "price": 3500
+      },
+      {
+       "category": "ADE & SMOOTHIE",
+       "name": "자몽 에이드",
+       "price": 3500
+      },
+      {
+       "category": "ADE & SMOOTHIE",
+       "name": "수제 오렌지 에이드",
+       "price": 3800
+      },
+      {
+       "category": "ADE & SMOOTHIE",
+       "name": "블루 레몬 에이드",
+       "price": 3800
+      },
+      {
+       "category": "ADE & SMOOTHIE",
+       "name": "유자 스무디",
+       "price": 4000
+      },
+      {
+       "category": "ADE & SMOOTHIE",
+       "name": "망고 스무디",
+       "price": 4000
+      },
+      {
+       "category": "ADE & SMOOTHIE",
+       "name": "자두 스무디",
+       "price": 4500
+      },
+      {
+       "category": "DESSERT",
+       "name": "로투스 브라우니 치즈 케이크",
+       "price": 5500
+      },
+      {
+       "category": "DESSERT",
+       "name": "화이트 오레오 브라우니",
+       "price": 4000
+      },
+      {
+       "category": "DESSERT",
+       "name": "말차 브라우니",
+       "price": 3000
+      },
+      {
+       "category": "DESSERT",
+       "name": "리얼 초코 피칸 브라우니",
+       "price": 3500
+      },
+      {
+       "category": "DESSERT",
+       "name": "아품곰 쿠키 & 아품토 쿠키",
+       "price": 3000
+      },
+      {
+       "category": "DESSERT",
+       "name": "르뱅쿠키",
+       "price": 3500
+      },
+      {
+       "category": "DESSERT",
+       "name": "브라우니 쿠키",
+       "price": 2500
+      },
+      {
+       "category": "DESSERT",
+       "name": "상투과자",
+       "price": 2500
+      }
+     ]
+    },
+    {
+     "id": "1xEMqFkizn0HO-C_0kG1l2UknWUeEKJVE",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "SIGNATURE",
+       "name": "소금 커피",
+       "price": 3800
+      },
+      {
+       "category": "SIGNATURE",
+       "name": "크림 모카 (only hot)",
+       "price": 3700
+      },
+      {
+       "category": "SIGNATURE",
+       "name": "수제 버터 스카치 라떼",
+       "price": 3800
+      },
+      {
+       "category": "SIGNATURE",
+       "name": "복숭아 소다",
+       "price": 3800
+      },
+      {
+       "category": "COFFEE (Hot/Ice)",
+       "name": "에스프레소",
+       "price": 1500
+      },
+      {
+       "category": "COFFEE (Hot/Ice)",
+       "name": "아메리카노",
+       "price": 2000
+      },
+      {
+       "category": "COFFEE (Hot/Ice)",
+       "name": "카페라떼",
+       "price": 2800
+      },
+      {
+       "category": "COFFEE (Hot/Ice)",
+       "name": "시나몬 카푸치노 (only hot)",
+       "price": 3300
+      },
+      {
+       "category": "COFFEE (Hot/Ice)",
+       "name": "수제 바닐라빈 라떼",
+       "price": 3500
+      },
+      {
+       "category": "COFFEE (Hot/Ice)",
+       "name": "돌체 라떼",
+       "price": 3800
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "리얼 초코 라떼 (only ice)",
+       "price": 3500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "마시멜로우 핫초코",
+       "price": 3500
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "말차 라떼",
+       "price": 4000
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "초코 젤라떼 ( 초코스무디 + 초코 젤라또 )",
+       "price": 4800
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "딸기 젤라떼 ( 딸기라떼 + 딸기 젤라또 )",
+       "price": 4800
+      },
+      {
+       "category": "NON-COFFEE",
+       "name": "딸기 라떼",
+       "price": 3500
+      },
+      {
+       "category": "Tea",
+       "name": "쟈스민 (No.96)",
+       "price": 4000
+      },
+      {
+       "category": "Tea",
+       "name": "캐모마일 (No.67)",
+       "price": 4000
+      },
+      {
+       "category": "Tea",
+       "name": "루이보스 (No.55)",
+       "price": 4000
+      },
+      {
+       "category": "Tea",
+       "name": "페퍼민트 (No.45)",
+       "price": 4000
+      },
+      {
+       "category": "Tea",
+       "name": "복숭아 아이스티 (Only Ice)",
+       "price": 3000
+      },
+      {
+       "category": "Tea",
+       "name": "유자차",
+       "price": 3500
+      },
+      {
+       "category": "Tea",
+       "name": "레몬차",
+       "price": 3500
+      },
+      {
+       "category": "Tea",
+       "name": "수제 오렌지 차",
+       "price": 3900
+      },
+      {
+       "category": "Tea",
+       "name": "자몽차",
+       "price": 3900
+      },
+      {
+       "category": "",
+       "name": "샷추가(1샷)",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "디카페인 변경",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "아몬드 우유 변경",
+       "price": 1000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787816344.865269",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787816342100789"
+  },
   {
    "ts": "1787815818.397179",
    "date": "2026-08-27",
