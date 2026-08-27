@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5754,
+  "version": 5755,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137956,7 +137956,7 @@ window.SLACK_DATA = {
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "13:15"
+      "updatedAt": "13:16"
     }
   },
   "resp": {
@@ -137995,15 +137995,15 @@ window.SLACK_DATA = {
       },
       "1787803140.618239": {
         "post": "1787803140.618239",
-        "lastSeen": 1787804126.267
+        "lastSeen": 1787804301.611
       },
       "1787804100.881649": {
         "post": "1787804100.881649",
-        "lastSeen": 1787804126.267
+        "lastSeen": 1787804301.611
       },
-      "1787804100.514879": {
-        "post": "1787804100.514879",
-        "lastSeen": 1787804126.267
+      "1787804203.137599": {
+        "post": "1787804203.137599",
+        "lastSeen": 1787804301.611
       }
     },
     "days": {
@@ -170778,8 +170778,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-27": {
-        "cnt": 36,
-        "sumMin": 172.7928862730662,
+        "cnt": 37,
+        "sumMin": 174.68328829209008,
         "over": 0,
         "items": [
           {
@@ -171069,13 +171069,21 @@ window.SLACK_DATA = {
             "biz": "2919901706",
             "who": "배선유",
             "cat": "as"
+          },
+          {
+            "hm": "13:15",
+            "min": 1.9,
+            "store": "미라인 스킨케어",
+            "biz": "3481103259",
+            "who": "고경림",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-27 13:15",
+    "at": "2026-08-27 13:18",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

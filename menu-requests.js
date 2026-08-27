@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1071,
- "updatedAt": "2026-08-27 12:56",
+ "version": 1072,
+ "updatedAt": "2026-08-27 13:18",
  "days": 30,
  "items": [
   {
@@ -42656,29 +42656,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785212790887709"
-  },
-  {
-   "ts": "1785212260.557039",
-   "date": "2026-07-28",
-   "time": "13:17",
-   "store": "초우정",
-   "biz": "5652000091",
-   "pos": "토스포스",
-   "content": "토스포스 메뉴수정",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "메뉴 수정부탁드립니다!\n• 버섯갈비전골 60,000원(대), 35,000원(중)"
-   ],
-   "rc": 4,
-   "lr": "1785214704.893299",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785212260557039"
   }
  ],
  "ocr": {
