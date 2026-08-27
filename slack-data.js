@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5726,
+  "version": 5727,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137198,6 +137198,7 @@ window.SLACK_DATA = {
     "2026-08-27": {
       "counts": {
         "as": {
+          "고경림": 1,
           "배선유": 8,
           "서상원": 1,
           "송태양": 6,
@@ -137230,6 +137231,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:45",
+          "store": "온레브(ON REVE)",
+          "biz": "2064192848",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "포프(태블릿) + 유프 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "미개봉 상태라, 각기기 전원 연결방법 안내 및 노트북 토스포스 설치안내까지 완료 12시 15분 예약완료"
+        },
         {
           "time": "11:39",
           "store": "주식회사 에이치에스씨오씨",
@@ -137739,7 +137751,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 37,
+        "online": 38,
         "offline": 9,
         "unknown": 0
       },
@@ -170770,7 +170782,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 11:51",
+    "at": "2026-08-27 11:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
