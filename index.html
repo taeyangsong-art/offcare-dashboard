@@ -3665,6 +3665,9 @@ const GAME_ITEMS = {
     {id:'p_whale',name:'고래',price:800,e:'🐋',rarity:'mythic',fishOnly:true,perk:{item:0.006,keep:0.22}},
     {id:'fp_otter',name:'수달',price:300,e:'🦦',rarity:'epic',fishOnly:true,dropWeight:0.45,perk:{keep:0.06,item:0.0035}},
     {id:'fp_dolphin',name:'돌고래',price:600,e:'🐬',rarity:'legendary',fishOnly:true,perk:{keep:0.08,miss:0.05,item:0.005}},
+    // 개구리 — 전설 펫 중 '꽝 회피' 특화. miss 를 전설 최고치(0.07)로 올리는 대신 keep·item 을 낮춰
+    // 돌고래(0.08/0.05/0.005)와 총합을 비슷하게 맞췄다. 신화 인어(miss 0.06)보다 miss 만 높고 나머지는 낮다.
+    {id:'fp_frog',name:'개구리',price:550,e:'🐸',rarity:'legendary',fishOnly:true,perk:{miss:0.07,keep:0.05,item:0.004}},
     {id:'fp_mermaid',name:'인어',price:850,e:'🧜‍♀️',rarity:'mythic',fishOnly:true,perk:{keep:0.10,item:0.006,miss:0.06}},
   ],
 };
