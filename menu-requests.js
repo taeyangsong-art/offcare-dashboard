@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1094,
- "updatedAt": "2026-08-27 15:08",
+ "version": 1095,
+ "updatedAt": "2026-08-27 15:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1787811259.256469",
+   "date": "2026-08-27",
+   "time": "15:14",
+   "store": "쏘주 맥쭈",
+   "biz": "1921702310",
+   "pos": "",
+   "content": "메뉴등록 요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "[메뉴추가 요청]\n카테고리 : 피자/치킨\n\n메뉴명 : 불고기타르트피자\n가격 : 23,900\n\n메뉴명 : 미니페퍼로니타르트피자\n가격 : 20,900"
+   ],
+   "rc": 2,
+   "lr": "1787811291.472209",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787811259256469"
+  },
   {
    "ts": "1787809464.234789",
    "date": "2026-08-27",
