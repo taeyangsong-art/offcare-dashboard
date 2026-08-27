@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5763,
+  "version": 5764,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137207,8 +137207,8 @@ window.SLACK_DATA = {
           "심성현": 5
         },
         "onboarding": {
+          "배선유": 5,
           "고경림": 3,
-          "배선유": 4,
           "김규빈": 2,
           "송태양": 4,
           "심성현": 2,
@@ -137290,6 +137290,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "wifi 연결"
+        },
+        {
+          "time": "13:20",
+          "store": "가위왕국",
+          "biz": "3144000813",
+          "cat": "onboarding",
+          "emp": "배선유",
+          "req": "토스포스(스마트폰) 프론트 온보딩 도움 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
         },
         {
           "time": "13:19",
@@ -138064,7 +138075,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 65,
+        "online": 66,
         "offline": 10,
         "unknown": 0
       },
@@ -138107,15 +138118,11 @@ window.SLACK_DATA = {
       },
       "1787803140.618239": {
         "post": "1787803140.618239",
-        "lastSeen": 1787805502.58
-      },
-      "1787805154.787189": {
-        "post": "1787805154.787189",
-        "lastSeen": 1787805502.58
+        "lastSeen": 1787805560.997
       },
       "1787805475.978429": {
         "post": "1787805475.978429",
-        "lastSeen": 1787805502.58
+        "lastSeen": 1787805560.997
       }
     },
     "days": {
@@ -170890,8 +170897,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-27": {
-        "cnt": 44,
-        "sumMin": 221.93915507396065,
+        "cnt": 45,
+        "sumMin": 228.2225102543831,
         "over": 0,
         "items": [
           {
@@ -171245,13 +171252,21 @@ window.SLACK_DATA = {
             "biz": "3511701962",
             "who": "서상원",
             "cat": "as"
+          },
+          {
+            "hm": "13:32",
+            "min": 6.3,
+            "store": "크레산도",
+            "biz": "7180204095",
+            "who": "배선유",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-27 13:38",
+    "at": "2026-08-27 13:39",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
