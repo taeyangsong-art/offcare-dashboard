@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1119,
- "updatedAt": "2026-08-27 16:43",
+ "version": 1120,
+ "updatedAt": "2026-08-27 16:48",
  "days": 30,
  "items": [
   {
@@ -44135,27 +44135,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785225848944519"
-  },
-  {
-   "ts": "1785224863.968259",
-   "date": "2026-07-28",
-   "time": "16:47",
-   "store": "THENCE ARCHIVE",
-   "biz": "1140323564",
-   "pos": "토스포스",
-   "content": "토스포스에 등록되어 있는 메뉴를 엑셀파일 발송 부탁드립니다. <mailto:···|···>\n이메일:",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1785225229.863439",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785224863968259"
   }
  ],
  "ocr": {
