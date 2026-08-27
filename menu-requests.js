@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1113,
- "updatedAt": "2026-08-27 16:30",
+ "version": 1114,
+ "updatedAt": "2026-08-27 16:33",
  "days": 30,
  "items": [
   {
@@ -441,8 +441,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1787813521.739239",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787813502329109"
   },
   {
@@ -456,14 +456,84 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BT26XNSH0",
+     "from": "댓글",
+     "path": "menu-files/1787813303_399339-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "후불",
+       "name": "후불01",
+       "price": 0
+      },
+      {
+       "category": "후불",
+       "name": "후불02",
+       "price": 0
+      },
+      {
+       "category": "후불",
+       "name": "후불03",
+       "price": 0
+      },
+      {
+       "category": "후불",
+       "name": "후불04",
+       "price": 0
+      },
+      {
+       "category": "후불",
+       "name": "후불05",
+       "price": 0
+      },
+      {
+       "category": "후불",
+       "name": "후불06",
+       "price": 0
+      },
+      {
+       "category": "후불",
+       "name": "후불07",
+       "price": 0
+      },
+      {
+       "category": "후불",
+       "name": "후불08",
+       "price": 0
+      },
+      {
+       "category": "후불",
+       "name": "후불09",
+       "price": 0
+      },
+      {
+       "category": "후불",
+       "name": "후불10",
+       "price": 0
+      },
+      {
+       "category": "후불",
+       "name": "후불11",
+       "price": 0
+      },
+      {
+       "category": "후불",
+       "name": "후불12",
+       "price": 0
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1787813307.181329",
+   "rc": 2,
+   "lr": "1787815991.051899",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787813303399339"
   },
   {
@@ -483,8 +553,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1787812228.286329",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787812225449849"
   },
   {
