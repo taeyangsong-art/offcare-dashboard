@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1082,
- "updatedAt": "2026-08-27 13:50",
+ "version": 1083,
+ "updatedAt": "2026-08-27 13:53",
  "days": 30,
  "items": [
+  {
+   "ts": "1787806411.278569",
+   "date": "2026-08-27",
+   "time": "13:53",
+   "store": "국밥백서 세종아름점",
+   "biz": "7122501992",
+   "pos": "기타",
+   "content": "",
+   "special": "놓은지 두달이 넘었는데 지난번 사진첨부건 신청으로",
+   "drive": [
+    "https://drive.google.com/open?id=1iyqv0T15GVh-LqFQqhfTgqWWQwpPwHL2"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787806414.381419",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787806411278569"
+  },
   {
    "ts": "1787805981.057259",
    "date": "2026-08-27",
