@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1132,
- "updatedAt": "2026-08-27 17:50",
+ "version": 1133,
+ "updatedAt": "2026-08-27 18:00",
  "days": 30,
  "items": [
   {
@@ -18,13 +18,536 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "KakaoTalk_20260827_175127244_06.jpg",
+     "fid": "F0BT0SF1Q06",
+     "from": "댓글",
+     "path": "menu-files/1787820600_125829-0.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)딸기빙수세트",
+       "price": 30000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)사쿠라빙수세트",
+       "price": 33000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)제주애플망고빙수세트",
+       "price": 65000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)망고빙수세트",
+       "price": 36000
+      },
+      {
+       "category": "빙수",
+       "name": "말차빙수단품",
+       "price": 26000
+      },
+      {
+       "category": "빙수",
+       "name": "호지차빙수단품",
+       "price": 26000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)복숭아빙수단품",
+       "price": 28000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)무화과밀크티빙수단품",
+       "price": 25000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)딸기말차빙수단품",
+       "price": 28000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)딸기빙수단품",
+       "price": 25000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)사쿠라빙수단품",
+       "price": 28000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)제주애플망고빙수단품",
+       "price": 52000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)망고빙수단품",
+       "price": 29000
+      },
+      {
+       "category": "빙수",
+       "name": "1인말차빙수",
+       "price": 18000
+      },
+      {
+       "category": "빙수",
+       "name": "1 인호지차빙수",
+       "price": 18000
+      },
+      {
+       "category": "빙수",
+       "name": "1인복숭아빙수",
+       "price": 18000
+      },
+      {
+       "category": "빙수",
+       "name": "1인망고빙수",
+       "price": 18000
+      },
+      {
+       "category": "빙수",
+       "name": "1인딸기말차빙수",
+       "price": 18000
+      },
+      {
+       "category": "빙수",
+       "name": "1인딸기빙수",
+       "price": 18000
+      }
+     ]
+    },
+    {
+     "name": "KakaoTalk_20260827_175127244_02.jpg",
+     "fid": "F0BSWHGGB8B",
+     "from": "댓글",
+     "path": "menu-files/1787820600_125829-1.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "커피",
+       "name": "아메리카노 HOT",
+       "price": 6500
+      },
+      {
+       "category": "커피",
+       "name": "아메리카노 ICED",
+       "price": 6500
+      },
+      {
+       "category": "커피",
+       "name": "카페라떼 HOT",
+       "price": 7500
+      },
+      {
+       "category": "커피",
+       "name": "카페라떼 ICED",
+       "price": 7500
+      },
+      {
+       "category": "커피",
+       "name": "바닐라빈라떼hot",
+       "price": 7500
+      },
+      {
+       "category": "커피",
+       "name": "바닐라빈라떼iced",
+       "price": 7500
+      },
+      {
+       "category": "커피",
+       "name": "말차라떼hot",
+       "price": 7500
+      },
+      {
+       "category": "커피",
+       "name": "말차라떼iced",
+       "price": 7500
+      },
+      {
+       "category": "커피",
+       "name": "허브레몬iced",
+       "price": 9000
+      },
+      {
+       "category": "커피",
+       "name": "호지라떼 hot",
+       "price": 10000
+      },
+      {
+       "category": "커피",
+       "name": "호지라떼 iced",
+       "price": 10000
+      },
+      {
+       "category": "커피",
+       "name": "(시즌메뉴)복숭아 생과일주스",
+       "price": 10000
+      },
+      {
+       "category": "커피",
+       "name": "대왕말차라떼",
+       "price": 75000
+      },
+      {
+       "category": "커피",
+       "name": "딸기말차라떼iced",
+       "price": 11000
+      },
+      {
+       "category": "커피",
+       "name": "(시즌메뉴)샤쿠라라떼hot",
+       "price": 9000
+      },
+      {
+       "category": "커피",
+       "name": "샤쿠라라떼iced",
+       "price": 9000
+      },
+      {
+       "category": "커피",
+       "name": "(시즌메뉴)망고라떼iced",
+       "price": 10000
+      },
+      {
+       "category": "커피",
+       "name": "(시즌메뉴)망고 요거트 블렌디드 iced",
+       "price": 11000
+      }
+     ]
+    },
+    {
+     "name": "KakaoTalk_20260827_175127244_03.jpg",
+     "fid": "F0BT6F393QC",
+     "from": "댓글",
+     "path": "menu-files/1787820600_125829-2.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "스페셜티",
+       "name": "로얄밀크티 HOT",
+       "price": 11000
+      },
+      {
+       "category": "스페셜티",
+       "name": "모모우롱 HOT",
+       "price": 10000
+      },
+      {
+       "category": "스페셜티",
+       "name": "모모우롱 ICED",
+       "price": 10000
+      },
+      {
+       "category": "스페셜티",
+       "name": "(시즌메뉴)사쿠라티 hot",
+       "price": 10000
+      },
+      {
+       "category": "스페셜티",
+       "name": "(시즌메뉴)사쿠라티 iced",
+       "price": 10000
+      },
+      {
+       "category": "스페셜티",
+       "name": "스미다밀크티 ICED",
+       "price": 10000
+      },
+      {
+       "category": "스페셜티",
+       "name": "호지차HOT",
+       "price": 10000
+      },
+      {
+       "category": "스페셜티",
+       "name": "호지차ICED",
+       "price": 10000
+      }
+     ]
+    },
+    {
+     "name": "KakaoTalk_20260827_175127244_04.jpg",
+     "fid": "F0BSMDVA9FH",
+     "from": "댓글",
+     "path": "menu-files/1787820600_125829-3.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "싱글오리진",
+       "name": "후쿠오카 말차 hot",
+       "price": 20000
+      },
+      {
+       "category": "싱글오리진",
+       "name": "후쿠오카 말차 iced",
+       "price": 20000
+      },
+      {
+       "category": "싱글오리진",
+       "name": "후쿠오카 말차라떼 hot",
+       "price": 20000
+      },
+      {
+       "category": "싱글오리진",
+       "name": "후쿠오카 말차라떼 iced",
+       "price": 20000
+      },
+      {
+       "category": "싱글오리진",
+       "name": "대만 동방미인",
+       "price": 14000
+      },
+      {
+       "category": "싱글오리진",
+       "name": "하동 만송포",
+       "price": 11000
+      },
+      {
+       "category": "싱글오리진",
+       "name": "설중매",
+       "price": 11000
+      },
+      {
+       "category": "싱글오리진",
+       "name": "인도 히말라야산 다즐링",
+       "price": 11000
+      },
+      {
+       "category": "싱글오리진",
+       "name": "인도 아쌈",
+       "price": 13000
+      },
+      {
+       "category": "싱글오리진",
+       "name": "경곡 고죽산 보이고수생차",
+       "price": 11000
+      },
+      {
+       "category": "싱글오리진",
+       "name": "기문홍차",
+       "price": 12000
+      },
+      {
+       "category": "싱글오리진",
+       "name": "틴케이스 tea",
+       "price": 6000
+      }
+     ]
+    },
+    {
+     "name": "KakaoTalk_20260827_175127244_05.jpg",
+     "fid": "F0BT0SH1WVC",
+     "from": "댓글",
+     "path": "menu-files/1787820600_125829-4.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "스미다 set",
+       "name": "시그니처 티타임 세트",
+       "price": 33000
+      },
+      {
+       "category": "스미다 set",
+       "name": "스미다 풀코스 세트",
+       "price": 38000
+      }
+     ]
+    },
+    {
+     "name": "KakaoTalk_20260827_175127244.jpg",
+     "fid": "F0BT6F3V6TE",
+     "from": "댓글",
+     "path": "menu-files/1787820600_125829-5.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "빙수",
+       "name": "말차빙수세트",
+       "price": 31000
+      },
+      {
+       "category": "빙수",
+       "name": "호지차빙수세트",
+       "price": 31000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)복숭아빙수세트",
+       "price": 31000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)무화과밀크티빙수세트",
+       "price": 30000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)딸기말차빙수세트",
+       "price": 33000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)딸기빙수세트",
+       "price": 30000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)사쿠라빙수세트",
+       "price": 33000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)제주애플망고빙수세트",
+       "price": 65000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)망고빙수세트",
+       "price": 36000
+      },
+      {
+       "category": "빙수",
+       "name": "말차빙수단품",
+       "price": 26000
+      },
+      {
+       "category": "빙수",
+       "name": "호지차빙수단품",
+       "price": 26000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)복숭아빙수단품",
+       "price": 28000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)무화과밀크티빙수단품",
+       "price": 25000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)딸기말차빙수단품",
+       "price": 28000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)딸기빙수단품",
+       "price": 25000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)사쿠라빙수단품",
+       "price": 28000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)제주애플망고빙수단품",
+       "price": 52000
+      },
+      {
+       "category": "빙수",
+       "name": "(시즌메뉴)망고빙수단품",
+       "price": 29000
+      },
+      {
+       "category": "빙수",
+       "name": "1인말차빙수",
+       "price": 18000
+      },
+      {
+       "category": "빙수",
+       "name": "1 인호지차빙수",
+       "price": 18000
+      },
+      {
+       "category": "빙수",
+       "name": "1인복숭아빙수",
+       "price": 0
+      },
+      {
+       "category": "빙수",
+       "name": "1인망고빙수",
+       "price": 0
+      },
+      {
+       "category": "빙수",
+       "name": "1인딸기말차빙수",
+       "price": 0
+      },
+      {
+       "category": "빙수",
+       "name": "1인딸기빙수",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "KakaoTalk_20260827_175127244_01.jpg",
+     "fid": "F0BSWHH5BHR",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "티푸드",
+       "name": "(시즌메뉴)모모산도",
+       "price": 12000
+      },
+      {
+       "category": "티푸드",
+       "name": "애플파이",
+       "price": 6500
+      },
+      {
+       "category": "티푸드",
+       "name": "모나카",
+       "price": 8000
+      },
+      {
+       "category": "티푸드",
+       "name": "비스켓+크림+잼",
+       "price": 6500
+      },
+      {
+       "category": "티푸드",
+       "name": "레몬 양갱",
+       "price": 4800
+      },
+      {
+       "category": "티푸드",
+       "name": "비스켓(잼 크림X)",
+       "price": 4800
+      },
+      {
+       "category": "티푸드",
+       "name": "말차쿠키4개",
+       "price": 4800
+      },
+      {
+       "category": "티푸드",
+       "name": "크림&잼 추가시",
+       "price": 1700
+      },
+      {
+       "category": "티푸드",
+       "name": "(시즌메뉴)딸기산도",
+       "price": 9500
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1787820603.068719",
+   "rc": 2,
+   "lr": "1787820841.801239",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787820600125829"
   },
