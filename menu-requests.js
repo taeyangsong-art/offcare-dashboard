@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1124,
- "updatedAt": "2026-08-27 17:11",
+ "version": 1125,
+ "updatedAt": "2026-08-27 17:15",
  "days": 30,
  "items": [
   {
@@ -528,8 +528,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1787818220.644039",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787818160594919"
   },
   {
@@ -572,7 +572,7 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1787818047.467199",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787818040405129"
   },
@@ -855,8 +855,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1787816344.865269",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787816342100789"
   },
   {
@@ -44683,29 +44683,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785227808476239"
-  },
-  {
-   "ts": "1785226397.724099",
-   "date": "2026-07-28",
-   "time": "17:13",
-   "store": "(주)창구유통강창구찹쌀진순대광장점",
-   "biz": "8508503184",
-   "pos": "",
-   "content": "메뉴 삭제",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "완료"
-   ],
-   "rc": 2,
-   "lr": "1785226675.863069",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785226397724099"
   }
  ],
  "ocr": {
