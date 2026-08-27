@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1127,
- "updatedAt": "2026-08-27 17:21",
+ "version": 1128,
+ "updatedAt": "2026-08-27 17:28",
  "days": 30,
  "items": [
+  {
+   "ts": "1787819263.406319",
+   "date": "2026-08-27",
+   "time": "17:27",
+   "store": "일상 가좌점",
+   "biz": "2977800578",
+   "pos": "",
+   "content": "메뉴등록 요청드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "일상 신촌점 메뉴 > 가좌점 메뉴 등록 요청하셨었는데\n메뉴 사진이 옮겨져있지않아 사진등록 부탁드리겠습니다!\n\n https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787550023237509"
+   ],
+   "rc": 2,
+   "lr": "1787819311.688699",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787819263406319"
+  },
   {
    "ts": "1787818160.594919",
    "date": "2026-08-27",
