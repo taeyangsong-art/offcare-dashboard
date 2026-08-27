@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5698,
+  "version": 5699,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137207,8 +137207,8 @@ window.SLACK_DATA = {
           "김동욱": 1
         },
         "onboarding": {
+          "배선유": 3,
           "송태양": 2,
-          "배선유": 2,
           "김현기": 1,
           "고경림": 1
         },
@@ -137262,6 +137262,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "• 터미널 ic 반응없음 교체 안내 및 입출고 접수 완료입니다 터미널 ic 반응없음 교체 안내 및 입출고 접수 완료입니다"
+        },
+        {
+          "time": "10:40",
+          "store": "아르모니아",
+          "biz": "8270703513",
+          "cat": "onboarding",
+          "emp": "배선유",
+          "req": "포프(태블릿) 유프 온보딩 요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료"
         },
         {
           "time": "10:40",
@@ -137497,11 +137508,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 20,
+        "online": 21,
         "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "10:57"
+      "updatedAt": "10:58"
     }
   },
   "resp": {
@@ -137540,7 +137551,7 @@ window.SLACK_DATA = {
       },
       "1787795855.215939": {
         "post": "1787795855.215939",
-        "lastSeen": 1787795904.93
+        "lastSeen": 1787795974.008
       }
     },
     "days": {
@@ -170452,7 +170463,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 10:58",
+    "at": "2026-08-27 10:59",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
