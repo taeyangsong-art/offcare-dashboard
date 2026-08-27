@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1115,
- "updatedAt": "2026-08-27 16:37",
+ "version": 1116,
+ "updatedAt": "2026-08-27 16:38",
  "days": 30,
  "items": [
   {
@@ -45,8 +45,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1787814244.614069",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787814241570749"
   },
   {
@@ -441,7 +441,7 @@ window.MENU_REQUESTS = {
    "rc": 3,
    "lr": "1787816195.020149",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787813502329109"
   },
@@ -43894,36 +43894,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785224863968259"
-  },
-  {
-   "ts": "1785224262.125679",
-   "date": "2026-07-28",
-   "time": "16:37",
-   "store": "단하나",
-   "biz": "7570103546",
-   "pos": "토스포스",
-   "content": "3개의매장이라 첨부사진드립니다",
-   "special": "메일로 보내드리겠습니다",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "퇴근하고..",
-    "쌀국수공방 / 미스터국수왕 / 쭈꾸미클라스",
-    "쌀국수",
-    "미스터국수왕",
-    "쭈꾸미",
-    "옵션은 별도",
-    "1차 백업",
-    "오늘 마무리 포기! 메뉴만 등록하고 마무리"
-   ],
-   "rc": 12,
-   "lr": "1785234073.819559",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785224262125679"
   }
  ],
  "ocr": {
