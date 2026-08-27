@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5723,
+  "version": 5724,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137198,11 +137198,11 @@ window.SLACK_DATA = {
     "2026-08-27": {
       "counts": {
         "as": {
+          "배선유": 8,
           "서상원": 1,
-          "배선유": 7,
           "송태양": 5,
-          "김현기": 4,
-          "심성현": 4
+          "심성현": 5,
+          "김현기": 4
         },
         "extern": {
           "김동욱": 4,
@@ -137230,6 +137230,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:39",
+          "store": "주식회사 에이치에스씨오씨",
+          "biz": "1948602743",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "프린터 연결 문제로 원격 요청 주셔서 원격 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "1차부재 / 금액입력결제모드 사용 매장 / 앱 실행된 상태로 결제해야 자동출력 가능 안내"
+        },
         {
           "time": "11:30",
           "store": "텐퍼센트 광주매곡중앙점",
@@ -137273,6 +137284,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": ""
+        },
+        {
+          "time": "11:16",
+          "store": "3월애(愛)반점",
+          "biz": "4475700561",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "영수증안나옴 원격안내완료",
+          "hw": "",
+          "intake": "offline",
+          "note": "DAOU CAT 출력 불량 포트 USB to RS232 CO7 단말기 결제 건 출력도 불량"
         },
         {
           "time": "11:15",
@@ -137706,8 +137728,8 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 35,
-        "offline": 8,
+        "online": 36,
+        "offline": 9,
         "unknown": 0
       },
       "updatedAt": "11:45"
@@ -170737,7 +170759,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 11:45",
+    "at": "2026-08-27 11:48",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
