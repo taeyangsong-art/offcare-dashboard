@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1085,
- "updatedAt": "2026-08-27 13:55",
+ "version": 1086,
+ "updatedAt": "2026-08-27 14:18",
  "days": 30,
  "items": [
+  {
+   "ts": "1787807882.266179",
+   "date": "2026-08-27",
+   "time": "14:18",
+   "store": "더멀리",
+   "biz": "3976300914",
+   "pos": "토스포스",
+   "content": "안녕이라 그랬어(특별 한정 집 에디션)\t16,800\t4\n빌어먹을, 차가운 심장 (도서전 특별에디션)\t12,000\t2\n아름답고 쓸모없기를 (도서전 특별에디션)\t12,000\t2\n시인선 마스킹테이프\t4,000\t6\n그랬다고 적었다 (동네서점 에디션)\t17,000\t4\n우리가 우리를 우리라고 부를 때\t17,000\t2\n너무 시끄러운 고독(양장본 Hardcover)\t15,000  2\n아무도 미치지 않았다\t\t16,000          2\n이지페이지: 악수도 없이 헤어졌다(큰글자책)16,000  2\n얼어붙은 입\t산지니\t20,000          1\n자화상\t\t15,000                  2\n일인칭 가난(온(on) 시리즈)\t\t14,000  2\n\n 책 추가 부탁드릴게요. \n\n차 종류에 레몬차와 자몽차가 아이스/핫 구분이 안되어 이것도 수정 부탁드립니다! 감사합니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787807885.515349",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787807882266179"
+  },
   {
    "ts": "1787806411.278569",
    "date": "2026-08-27",
@@ -59,7 +80,7 @@ window.MENU_REQUESTS = {
    "rc": 4,
    "lr": "1787806495.777399",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787805981057259"
   },
@@ -42687,27 +42708,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785215953396469"
-  },
-  {
-   "ts": "1785215790.133799",
-   "date": "2026-07-28",
-   "time": "14:16",
-   "store": "밤부길",
-   "biz": "1111635469",
-   "pos": "토스포스",
-   "content": "토스포스 / 메뉴 추가 요청드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1785216489.268669",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785215790133799"
   }
  ],
  "ocr": {
