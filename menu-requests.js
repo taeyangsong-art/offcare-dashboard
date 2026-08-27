@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1075,
- "updatedAt": "2026-08-27 13:23",
+ "version": 1076,
+ "updatedAt": "2026-08-27 13:30",
  "days": 30,
  "items": [
   {
@@ -47,7 +47,7 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1787804402.404439",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787804396870349"
   },
@@ -42675,31 +42675,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785213812401259"
-  },
-  {
-   "ts": "1785212790.887709",
-   "date": "2026-07-28",
-   "time": "13:26",
-   "store": "러프로스터스",
-   "biz": "6201155265",
-   "pos": "",
-   "content": "메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "아이고.. 이미지를 이렇게 주시면 등록 불가",
-    "통화로 이미지 재첨부 안내 / 메뉴 먼저 등록",
-    "감사합니당"
-   ],
-   "rc": 6,
-   "lr": "1785297461.581749",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785212790887709"
   }
  ],
  "ocr": {
