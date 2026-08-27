@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5744,
+  "version": 5745,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137198,8 +137198,8 @@ window.SLACK_DATA = {
     "2026-08-27": {
       "counts": {
         "onboarding": {
+          "김규빈": 2,
           "송태양": 4,
-          "김규빈": 1,
           "심성현": 2,
           "배선유": 3,
           "김현기": 1,
@@ -137233,6 +137233,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "12:45",
+          "store": "네일다이아",
+          "biz": "1293720472",
+          "cat": "onboarding",
+          "emp": "김규빈",
+          "req": "포프(휴대폰) 온보딩 요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 및 금액입력모드 활성화 완료"
+        },
         {
           "time": "12:33",
           "store": "M.M.N_memine",
@@ -137863,7 +137874,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 48,
+        "online": 49,
         "offline": 9,
         "unknown": 0
       },
@@ -137903,18 +137914,6 @@ window.SLACK_DATA = {
       "1787751235.320309": {
         "post": "1787751235.320309",
         "lastSeen": 1787775328.58
-      },
-      "1787802301.070549": {
-        "post": "1787802301.070549",
-        "lastSeen": 1787802321.784
-      },
-      "1787802300.964869": {
-        "post": "1787802300.964869",
-        "lastSeen": 1787802321.784
-      },
-      "1787802300.755529": {
-        "post": "1787802300.755529",
-        "lastSeen": 1787802321.784
       }
     },
     "days": {
@@ -170689,8 +170688,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-27": {
-        "cnt": 29,
-        "sumMin": 140.9445779879888,
+        "cnt": 32,
+        "sumMin": 154.14938720464707,
         "over": 0,
         "items": [
           {
@@ -170924,13 +170923,37 @@ window.SLACK_DATA = {
             "biz": "2064192848",
             "who": "송태양",
             "cat": "as"
+          },
+          {
+            "hm": "12:45",
+            "min": 4.4,
+            "store": "건어물하우스",
+            "biz": "1560300342",
+            "who": "배선유",
+            "cat": "as"
+          },
+          {
+            "hm": "12:45",
+            "min": 4.4,
+            "store": "비바플레르",
+            "biz": "5989301361",
+            "who": "고경림",
+            "cat": "as"
+          },
+          {
+            "hm": "12:45",
+            "min": 4.4,
+            "store": "네일다이아",
+            "biz": "1293720472",
+            "who": "김규빈",
+            "cat": "onboarding"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-27 12:45",
+    "at": "2026-08-27 12:53",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
