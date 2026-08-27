@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1100,
- "updatedAt": "2026-08-27 15:41",
+ "version": 1101,
+ "updatedAt": "2026-08-27 15:45",
  "days": 30,
  "items": [
   {
@@ -132,7 +132,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BSXFYTV9T",
      "from": "댓글",
-     "path": "menu-files/1787809380_325889-0.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -195,13 +194,13 @@ window.MENU_REQUESTS = {
        "name": "소고기(100g)",
        "price": 3000
       }
-     ]
+     ],
+     "path": "menu-files/1787809380_325889-0.png"
     },
     {
      "name": "image.png",
      "fid": "F0BT3EDPFK3",
      "from": "댓글",
-     "path": "menu-files/1787809380_325889-1.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -219,13 +218,13 @@ window.MENU_REQUESTS = {
        "name": "C세트",
        "price": 35000
       }
-     ]
+     ],
+     "path": "menu-files/1787809380_325889-1.png"
     },
     {
      "name": "image.png",
      "fid": "F0BTVTMHUC8",
      "from": "댓글",
-     "path": "menu-files/1787809380_325889-2.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -253,13 +252,13 @@ window.MENU_REQUESTS = {
        "name": "마라룽샤",
        "price": 30000
       }
-     ]
+     ],
+     "path": "menu-files/1787809380_325889-2.png"
     },
     {
      "name": "image.png",
      "fid": "F0BSXG0BK8D",
      "from": "댓글",
-     "path": "menu-files/1787809380_325889-3.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -327,13 +326,13 @@ window.MENU_REQUESTS = {
        "name": "소세지꼬치",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1787809380_325889-3.png"
     },
     {
      "name": "image.png",
      "fid": "F0BT1G6A082",
      "from": "댓글",
-     "path": "menu-files/1787809380_325889-4.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -441,13 +440,13 @@ window.MENU_REQUESTS = {
        "name": "양고기대파볶음",
        "price": 20000
       }
-     ]
+     ],
+     "path": "menu-files/1787809380_325889-4.png"
     },
     {
      "name": "image.png",
      "fid": "F0BTVTNEF96",
      "from": "댓글",
-     "path": "menu-files/1787809380_325889-5.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -480,7 +479,8 @@ window.MENU_REQUESTS = {
        "name": "양깃머리",
        "price": 18000
       }
-     ]
+     ],
+     "path": "menu-files/1787809380_325889-5.png"
     },
     {
      "name": "image.png",
@@ -703,8 +703,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "마라탕 123단계 마라비빔은  싯가"
    ],
-   "rc": 3,
-   "lr": "1787809477.702629",
+   "rc": 4,
+   "lr": "1787813092.956669",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
