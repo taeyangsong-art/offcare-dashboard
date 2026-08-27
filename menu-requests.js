@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1105,
- "updatedAt": "2026-08-27 15:59",
+ "version": 1106,
+ "updatedAt": "2026-08-27 16:03",
  "days": 30,
  "items": [
   {
@@ -43811,30 +43811,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785224262125679"
-  },
-  {
-   "ts": "1785222164.987869",
-   "date": "2026-07-28",
-   "time": "16:02",
-   "store": "THENCE",
-   "biz": "5888800207",
-   "pos": "토스포스",
-   "content": "안녕하세요, 현재 토스포스에 등록되어 있는 메뉴를 엑셀파일로 받을 수 있을까요? 현재 메뉴 엑셀파일에서 수정 후 메뉴등록 요청하신다 하셨습니다. 대표님께서 포스에서 직접 엑셀받기가 가능하면 제가 안내드리도록 하겠습니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "이메일: <mailto:···|···>",
-    "님 감사합니다! 대표님께서 다른 사업장도 동일하게 엑셀 파일 받기 원하시는데 새로 업로드할까요 아님 여기에 남겨드리면 될까요?"
-   ],
-   "rc": 5,
-   "lr": "1785222632.632869",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785222164987869"
   }
  ],
  "ocr": {
