@@ -3,10 +3,336 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1056,
- "updatedAt": "2026-08-27 10:45",
+ "version": 1057,
+ "updatedAt": "2026-08-27 10:49",
  "days": 30,
  "items": [
+  {
+   "ts": "1787795152.446209",
+   "date": "2026-08-27",
+   "time": "10:45",
+   "store": "카페 오넬",
+   "biz": "5491003011",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF9TY2FuXzIwMjYwODI1Xz",
+     "fid": "F0BSU5ZKJ83",
+     "from": "댓글",
+     "path": "menu-files/1787795152_446209-0.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "COFFEE",
+       "name": "아메리카노 (HOT)",
+       "price": 2500
+      },
+      {
+       "category": "COFFEE",
+       "name": "아메리카노 (ICE)",
+       "price": 3000
+      },
+      {
+       "category": "COFFEE",
+       "name": "디카페인 (HOT)",
+       "price": 3000
+      },
+      {
+       "category": "COFFEE",
+       "name": "디카페인 (ICE)",
+       "price": 3500
+      },
+      {
+       "category": "COFFEE",
+       "name": "아보카토 (ICE)",
+       "price": 4500
+      },
+      {
+       "category": "Fruit Juice",
+       "name": "토마토",
+       "price": 5000
+      },
+      {
+       "category": "Fruit Juice",
+       "name": "망고",
+       "price": 5500
+      },
+      {
+       "category": "Fruit Juice",
+       "name": "오렌지",
+       "price": 5500
+      },
+      {
+       "category": "Fruit Juice",
+       "name": "키위",
+       "price": 5500
+      },
+      {
+       "category": "Latte",
+       "name": "카페라떼 (HOT)",
+       "price": 4000
+      },
+      {
+       "category": "Latte",
+       "name": "카페라떼 (ICE)",
+       "price": 4500
+      },
+      {
+       "category": "Latte",
+       "name": "바닐라 라떼 (HOT)",
+       "price": 4000
+      },
+      {
+       "category": "Latte",
+       "name": "바닐라 라떼 (ICE)",
+       "price": 4500
+      },
+      {
+       "category": "Latte",
+       "name": "말차 라떼 (HOT)",
+       "price": 4000
+      },
+      {
+       "category": "Latte",
+       "name": "말차 라떼 (ICE)",
+       "price": 4500
+      },
+      {
+       "category": "Latte",
+       "name": "아인슈페너라떼 (HOT)",
+       "price": 5000
+      },
+      {
+       "category": "Latte",
+       "name": "아인슈페너라떼 (ICE)",
+       "price": 5500
+      },
+      {
+       "category": "Latte",
+       "name": "흑임자라떼 (HOT)",
+       "price": 4500
+      },
+      {
+       "category": "Latte",
+       "name": "흑임자라떼 (ICE)",
+       "price": 5000
+      },
+      {
+       "category": "Latte",
+       "name": "오곡라떼 (HOT)",
+       "price": 4500
+      },
+      {
+       "category": "Latte",
+       "name": "오곡라떼 (ICE)",
+       "price": 5000
+      },
+      {
+       "category": "ADE",
+       "name": "매실 에이드 (차) (HOT)",
+       "price": 4500
+      },
+      {
+       "category": "ADE",
+       "name": "매실 에이드 (차) (ICE)",
+       "price": 5000
+      },
+      {
+       "category": "ADE",
+       "name": "레몬 에이드 (차) (HOT)",
+       "price": 4500
+      },
+      {
+       "category": "ADE",
+       "name": "레몬 에이드 (차) (ICE)",
+       "price": 5000
+      },
+      {
+       "category": "ADE",
+       "name": "자몽에이드 (차) (HOT)",
+       "price": 5000
+      },
+      {
+       "category": "ADE",
+       "name": "자몽에이드 (차) (ICE)",
+       "price": 5500
+      },
+      {
+       "category": "ADE",
+       "name": "청포도 에이드 (차) (HOT)",
+       "price": 5000
+      },
+      {
+       "category": "ADE",
+       "name": "청포도 에이드 (차) (ICE)",
+       "price": 5500
+      },
+      {
+       "category": "ADE",
+       "name": "복숭아 아이스티",
+       "price": 3500
+      },
+      {
+       "category": "TEA",
+       "name": "케모마일 (HOT)",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "케모마일 (ICE)",
+       "price": 4500
+      },
+      {
+       "category": "TEA",
+       "name": "페퍼민트 (HOT)",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "페퍼민트 (ICE)",
+       "price": 4500
+      },
+      {
+       "category": "TEA",
+       "name": "루이보스 (HOT)",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "루이보스 (ICE)",
+       "price": 4500
+      },
+      {
+       "category": "TEA",
+       "name": "라벤더 (HOT)",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "라벤더 (ICE)",
+       "price": 4500
+      },
+      {
+       "category": "TEA",
+       "name": "얼그레이 (HOT)",
+       "price": 4000
+      },
+      {
+       "category": "TEA",
+       "name": "얼그레이 (ICE)",
+       "price": 4500
+      },
+      {
+       "category": "TEA",
+       "name": "바닐라 버번 (HOT)",
+       "price": 4500
+      },
+      {
+       "category": "TEA",
+       "name": "바닐라 버번 (ICE)",
+       "price": 5000
+      },
+      {
+       "category": "Dessert 앤 Bakery",
+       "name": "소금빵",
+       "price": 3000
+      },
+      {
+       "category": "Dessert 앤 Bakery",
+       "name": "명란소금빵",
+       "price": 5000
+      },
+      {
+       "category": "Dessert 앤 Bakery",
+       "name": "쪽파 크림치즈 소금빵",
+       "price": 4500
+      },
+      {
+       "category": "베이글",
+       "name": "플레인 베이글",
+       "price": 3000
+      },
+      {
+       "category": "베이글",
+       "name": "쪽파 크림치즈 베이글",
+       "price": 4500
+      },
+      {
+       "category": "휘낭시에",
+       "name": "플레인 휘낭시에",
+       "price": 2000
+      },
+      {
+       "category": "휘낭시에",
+       "name": "솔티드 휘낭시에",
+       "price": 2800
+      },
+      {
+       "category": "휘낭시에",
+       "name": "두바이 휘낭시에",
+       "price": 3200
+      },
+      {
+       "category": "휘낭시에",
+       "name": "두바이 쫀득쿠키",
+       "price": 3200
+      },
+      {
+       "category": "",
+       "name": "크림치즈 케익 (1조각)",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "곰 마들렌",
+       "price": 2300
+      },
+      {
+       "category": "샌드위치",
+       "name": "에그샌드위치",
+       "price": 4500
+      },
+      {
+       "category": "샌드위치",
+       "name": "감자 샐러드 샌드위치",
+       "price": 4500
+      },
+      {
+       "category": "샌드위치",
+       "name": "햄치즈 샌드위치",
+       "price": 6000
+      },
+      {
+       "category": "샌드위치",
+       "name": "클럽 샌드위치",
+       "price": 7500
+      },
+      {
+       "category": "샌드위치",
+       "name": "불고기 샌드위치",
+       "price": 8500
+      },
+      {
+       "category": "샌드위치",
+       "name": "브런치 세트 메뉴 (플레이트 앤 커피 2잔)",
+       "price": 15000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1787795179.680209",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787795152446209"
+  },
   {
    "ts": "1787794867.761159",
    "date": "2026-08-27",
@@ -42134,216 +42460,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785205209095829"
-  },
-  {
-   "ts": "1785203333.643849",
-   "date": "2026-07-28",
-   "time": "10:48",
-   "store": "바닐라파레트",
-   "biz": "2990501507",
-   "pos": "",
-   "content": "메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "KakaoTalk_20260728_104751755.jpg",
-     "fid": "F0BL0UR8G9H",
-     "from": "댓글",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "Coffee",
-       "name": "에스프레소",
-       "price": 4500
-      },
-      {
-       "category": "Coffee",
-       "name": "아메리카노",
-       "price": 4500
-      },
-      {
-       "category": "Coffee",
-       "name": "카페라떼",
-       "price": 5000
-      },
-      {
-       "category": "Coffee",
-       "name": "바닐라라떼(수제)",
-       "price": 5500
-      },
-      {
-       "category": "Only ice",
-       "name": "아샷추(아이스티+에스프레소)",
-       "price": 6500
-      },
-      {
-       "category": "Only ice",
-       "name": "바닐라크림라떼",
-       "price": 6500
-      },
-      {
-       "category": "Only ice",
-       "name": "콜드브루",
-       "price": 6000
-      },
-      {
-       "category": "Only ice",
-       "name": "콜드브루라떼",
-       "price": 6500
-      },
-      {
-       "category": "Only ice",
-       "name": "+ 샷추가",
-       "price": 1000
-      },
-      {
-       "category": "Non Coffee",
-       "name": "쑥크림라떼",
-       "price": 6000
-      },
-      {
-       "category": "Non Coffee",
-       "name": "유기농 말차라떼 (100%제주말차)",
-       "price": 7000
-      },
-      {
-       "category": "Non Coffee",
-       "name": "+샷추가",
-       "price": 1000
-      },
-      {
-       "category": "Non Coffee",
-       "name": "아이스크림 밀크티",
-       "price": 6500
-      },
-      {
-       "category": "Non Coffee",
-       "name": "제주개역 (미숫가루)",
-       "price": 5500
-      },
-      {
-       "category": "Non Coffee",
-       "name": "복숭아 아이스티",
-       "price": 5500
-      },
-      {
-       "category": "Non Coffee",
-       "name": "딸기(소르베)라떼",
-       "price": 7000
-      },
-      {
-       "category": "Tea",
-       "name": "얼그레이",
-       "price": 5500
-      },
-      {
-       "category": "Tea",
-       "name": "피치 라즈베리 앤로즈(복숭아,로즈힙,사과,덩굴장미꽃잎 등)",
-       "price": 5500
-      },
-      {
-       "category": "Tea",
-       "name": "엘더플라워 앤 애플(사과,엘더베리꽃,포트마리골드꽃 등)",
-       "price": 5500
-      },
-      {
-       "category": "Tea",
-       "name": "레몬 앤 진저(레몬글라스,레몬껍질,생강,피라나무꽃 등)",
-       "price": 5500
-      },
-      {
-       "category": "Tea",
-       "name": "베리베리 크러쉬(포도,엘더베리,블루베르,첨차잎 등)",
-       "price": 5500
-      },
-      {
-       "category": "Dessert",
-       "name": "딸기모찌",
-       "price": 3800
-      },
-      {
-       "category": "Dessert",
-       "name": "테린느 (말차,쑥,초코)",
-       "price": 6000
-      },
-      {
-       "category": "Dessert",
-       "name": "스모어 쿠키 (플레인,초코)",
-       "price": 4000
-      },
-      {
-       "category": "Dessert",
-       "name": "에그타르트",
-       "price": 3000
-      },
-      {
-       "category": "Dessert",
-       "name": "옥수수타르트",
-       "price": 3300
-      },
-      {
-       "category": "Dessert",
-       "name": "치즈케이크",
-       "price": 6500
-      },
-      {
-       "category": "Dessert",
-       "name": "크루키",
-       "price": 4000
-      },
-      {
-       "category": "Dessert",
-       "name": "쌀 소금빵(100% 국산쌀)",
-       "price": 3000
-      },
-      {
-       "category": "Dessert",
-       "name": "명란마요 쌀 소금빵 BEST",
-       "price": 4500
-      },
-      {
-       "category": "Dessert",
-       "name": "앙버터 쌀 소금빵",
-       "price": 4500
-      },
-      {
-       "category": "Dessert",
-       "name": "피자 쌀 소금빵",
-       "price": 4500
-      },
-      {
-       "category": "Dessert",
-       "name": "감자사라다 쌀 소금빵",
-       "price": 4500
-      },
-      {
-       "category": "Dessert",
-       "name": "야채사라다 쌀 소금빵",
-       "price": 4500
-      },
-      {
-       "category": "Dessert",
-       "name": "찹쌀떡 쌀 소금빵",
-       "price": 4500
-      },
-      {
-       "category": "Dessert",
-       "name": "단팥 쌀 소금빵",
-       "price": 4500
-      }
-     ]
-    }
-   ],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1785203358.722429",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785203333643849"
   }
  ],
  "ocr": {
