@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1074,
- "updatedAt": "2026-08-27 13:22",
+ "version": 1075,
+ "updatedAt": "2026-08-27 13:23",
  "days": 30,
  "items": [
+  {
+   "ts": "1787804565.880149",
+   "date": "2026-08-27",
+   "time": "13:22",
+   "store": "강창구찹쌀진순대 중계브라운스톤점",
+   "biz": "1673601335",
+   "pos": "",
+   "content": "메뉴 가격 수정 요청 드립니다!",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "식사류/안주류 볶음밥 2,000원 > 3,000원 변경 요청"
+   ],
+   "rc": 2,
+   "lr": "1787804573.669059",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787804565880149"
+  },
   {
    "ts": "1787804396.870349",
    "date": "2026-08-27",
