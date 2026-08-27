@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5697,
+  "version": 5698,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137538,9 +137538,9 @@ window.SLACK_DATA = {
         "post": "1787751235.320309",
         "lastSeen": 1787775328.58
       },
-      "1787795833.443529": {
-        "post": "1787795833.443529",
-        "lastSeen": 1787795842.015
+      "1787795855.215939": {
+        "post": "1787795855.215939",
+        "lastSeen": 1787795904.93
       }
     },
     "days": {
@@ -170315,8 +170315,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-27": {
-        "cnt": 15,
-        "sumMin": 100.488720591863,
+        "cnt": 16,
+        "sumMin": 101.15587011178334,
         "over": 0,
         "items": [
           {
@@ -170438,13 +170438,21 @@ window.SLACK_DATA = {
             "biz": "3071871041",
             "who": "송태양",
             "cat": "as"
+          },
+          {
+            "hm": "10:57",
+            "min": 0.7,
+            "store": "피부공방 맑음",
+            "biz": "7518703237",
+            "who": "송태양",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-27 10:57",
+    "at": "2026-08-27 10:58",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
