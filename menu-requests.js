@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1136,
- "updatedAt": "2026-08-27 19:20",
+ "version": 1137,
+ "updatedAt": "2026-08-27 19:24",
  "days": 30,
  "items": [
   {
@@ -23,11 +23,11 @@ window.MENU_REQUESTS = {
    "replies": [
     "··· 삼포돌판 사업장 메뉴 그대로 복사 부탁드립니다."
    ],
-   "rc": 3,
-   "lr": "1787822506.045689",
+   "rc": 4,
+   "lr": "1787826196.473889",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787822258024469"
   },
   {
