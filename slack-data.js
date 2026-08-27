@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5737,
+  "version": 5738,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137200,7 +137200,7 @@ window.SLACK_DATA = {
         "onboarding": {
           "송태양": 4,
           "김규빈": 1,
-          "심성현": 1,
+          "심성현": 2,
           "배선유": 3,
           "김현기": 1,
           "고경림": 1
@@ -137287,6 +137287,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
+        },
+        {
+          "time": "11:49",
+          "store": "한솔노피곰 센트럴자이3단지 교실",
+          "biz": "5059202416",
+          "cat": "onboarding",
+          "emp": "심성현",
+          "req": "토스포스(pc) 프론트 온보딩 도움 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "상호: 한솔노피곰 센트럴자이3단지 교실 / KOCES 사업자번호: 5059202416 핸드폰 번호: 01039662796 갤럭시 주소: 경기도 평택시 상서재로 55, 310동 803호(동삭동, 평택센트럴자이3단지) 인입유형: 온라인 공급유형: 임대 배달제휴: 자대리점: N 내용: 프론트 다운로드 실패 전산 확인 부탁드립니다. / 초기화 실패 문구 / 공장 "
         },
         {
           "time": "11:45",
@@ -137841,11 +137852,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 46,
+        "online": 47,
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "12:15"
+      "updatedAt": "12:30"
     }
   },
   "resp": {
@@ -170896,7 +170907,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 12:27",
+    "at": "2026-08-27 12:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
