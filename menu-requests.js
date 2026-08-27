@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1109,
- "updatedAt": "2026-08-27 16:12",
+ "version": 1110,
+ "updatedAt": "2026-08-27 16:15",
  "days": 30,
  "items": [
   {
@@ -506,8 +506,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1787811291.472209",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787811259256469"
   },
   {
@@ -524,12 +524,13 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [
-    "[금액수정]\n카테고리 : 식사류\n메뉴명 : 멸치국수\n가격 : 10,000 > 11,000\n\n[메뉴추가]\n카테고리 : 고기상\n메뉴명 : 술밥\n가격 : 12,000\n\n[메뉴삭제]\n카테고리  : 고기상\n메뉴명 : 양념게장추가\n가격 : 4,000"
+    "[금액수정]\n카테고리 : 식사류\n메뉴명 : 멸치국수\n가격 : 10,000 > 11,000\n\n[메뉴추가]\n카테고리 : 고기상\n메뉴명 : 술밥\n가격 : 12,000\n\n[메뉴삭제]\n카테고리  : 고기상\n메뉴명 : 양념게장추가\n가격 : 4,000",
+    "악 감사합니다!"
    ],
-   "rc": 2,
-   "lr": "1787809528.560169",
+   "rc": 4,
+   "lr": "1787814927.778149",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787809464234789"
   },
