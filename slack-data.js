@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5673,
+  "version": 5674,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137197,14 +137197,15 @@ window.SLACK_DATA = {
     },
     "2026-08-27": {
       "counts": {
+        "onboarding": {
+          "배선유": 1,
+          "고경림": 1
+        },
         "as": {
           "배선유": 2,
           "김현기": 1,
           "송태양": 1,
           "심성현": 1
-        },
-        "onboarding": {
-          "고경림": 1
         },
         "menu": {
           "김규빈": 1,
@@ -137213,6 +137214,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:50",
+          "store": "운뷰티",
+          "biz": "4756900818",
+          "cat": "onboarding",
+          "emp": "배선유",
+          "req": "포프(핸드폰) + 프론트 / 가이드 안내드렸으나 자가 설치 어려워하셔서 온보딩 요청드립니다 .",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료"
+        },
         {
           "time": "09:46",
           "store": "착한미용실",
@@ -137304,7 +137316,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 7,
+        "online": 8,
         "offline": 1,
         "unknown": 0
       },
@@ -137347,15 +137359,11 @@ window.SLACK_DATA = {
       },
       "1787792400.618589": {
         "post": "1787792400.618589",
-        "lastSeen": 1787792785.305
-      },
-      "1787792400.553899": {
-        "post": "1787792400.553899",
-        "lastSeen": 1787792785.305
+        "lastSeen": 1787792961.745
       },
       "1787792762.526819": {
         "post": "1787792762.526819",
-        "lastSeen": 1787792785.305
+        "lastSeen": 1787792961.745
       }
     },
     "days": {
@@ -170130,8 +170138,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-27": {
-        "cnt": 4,
-        "sumMin": 36.68347939650218,
+        "cnt": 5,
+        "sumMin": 44.56633108059565,
         "over": 0,
         "items": [
           {
@@ -170165,13 +170173,21 @@ window.SLACK_DATA = {
             "biz": "4756900818",
             "who": "배선유",
             "cat": "as"
+          },
+          {
+            "hm": "10:00",
+            "min": 7.9,
+            "store": "바른RC중장비카페",
+            "biz": "4750903238",
+            "who": "배선유",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-27 10:06",
+    "at": "2026-08-27 10:09",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
