@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1096,
- "updatedAt": "2026-08-27 15:20",
+ "version": 1097,
+ "updatedAt": "2026-08-27 15:25",
  "days": 30,
  "items": [
   {
@@ -43375,48 +43375,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785222164987869"
-  },
-  {
-   "ts": "1785219894.246719",
-   "date": "2026-07-28",
-   "time": "15:24",
-   "store": "소피의 책방",
-   "biz": "3271302897",
-   "pos": "토스포스",
-   "content": "토스포스 / 메뉴 등록 요청드립니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1785222163.810409",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785219894246719"
-  },
-  {
-   "ts": "1785219789.856639",
-   "date": "2026-07-28",
-   "time": "15:23",
-   "store": "장수원",
-   "biz": "2170685889",
-   "pos": "",
-   "content": "가격수정 요청 드립니다\n• 식사류  > 특갈비탕 17000원으로 인상\n• 식사류 (포장)  > 특갈비탕 17000원으로 인상",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1785220395.131739",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785219789856639"
   }
  ],
  "ocr": {
