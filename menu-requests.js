@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1104,
- "updatedAt": "2026-08-27 15:58",
+ "version": 1105,
+ "updatedAt": "2026-08-27 15:59",
  "days": 30,
  "items": [
+  {
+   "ts": "1787813924.708289",
+   "date": "2026-08-27",
+   "time": "15:58",
+   "store": "냉정 소담한",
+   "biz": "7063101421",
+   "pos": "",
+   "content": "메뉴등록 부탁드려요~",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "중복 확인"
+   ],
+   "rc": 2,
+   "lr": "1787813958.445089",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787813924708289"
+  },
   {
    "ts": "1787813502.329109",
    "date": "2026-08-27",
@@ -1098,8 +1121,8 @@ window.MENU_REQUESTS = {
     "마라탕 123단계 마라비빔은  싯가",
     "s"
    ],
-   "rc": 5,
-   "lr": "1787813848.526419",
+   "rc": 6,
+   "lr": "1787813923.351699",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
