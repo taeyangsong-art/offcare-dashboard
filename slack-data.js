@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5716,
+  "version": 5717,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137199,10 +137199,10 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "서상원": 1,
+          "배선유": 7,
           "송태양": 5,
           "김현기": 4,
-          "심성현": 4,
-          "배선유": 6
+          "심성현": 4
         },
         "extern": {
           "김동욱": 3,
@@ -137237,6 +137237,17 @@ window.SLACK_DATA = {
           "cat": "as",
           "emp": "서상원",
           "req": "페이스페이 업데이트 필요 안내를 받았다 하셔서 확인 요청 드립니다. (오케이포스-프론트 이용중)",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "11:30",
+          "store": "그리니 에스테틱",
+          "biz": "4894301311",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "프론트 연결끊김이 지속적으로 발생한다고 하여 점검 요청드립니다.",
           "hw": "",
           "intake": "online",
           "note": ""
@@ -137673,7 +137684,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 33,
+        "online": 34,
         "offline": 7,
         "unknown": 0
       },
@@ -137716,7 +137727,7 @@ window.SLACK_DATA = {
       },
       "1787798165.825829": {
         "post": "1787798165.825829",
-        "lastSeen": 1787798183.273
+        "lastSeen": 1787798244.203
       }
     },
     "days": {
@@ -170684,7 +170695,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 11:36",
+    "at": "2026-08-27 11:37",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
