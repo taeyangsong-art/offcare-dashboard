@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5692,
+  "version": 5693,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137479,14 +137479,6 @@ window.SLACK_DATA = {
       "1787751235.320309": {
         "post": "1787751235.320309",
         "lastSeen": 1787775328.58
-      },
-      "1787794875.641029": {
-        "post": "1787794875.641029",
-        "lastSeen": 1787794945.949
-      },
-      "1787794867.761159": {
-        "post": "1787794867.761159",
-        "lastSeen": 1787794945.949
       }
     },
     "days": {
@@ -170261,8 +170253,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-27": {
-        "cnt": 14,
-        "sumMin": 98.29117107391357,
+        "cnt": 15,
+        "sumMin": 100.488720591863,
         "over": 0,
         "items": [
           {
@@ -170376,13 +170368,21 @@ window.SLACK_DATA = {
             "biz": "1168145067",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "10:41",
+            "min": 2.2,
+            "store": "엘리헤어(eli hair)",
+            "biz": "3071871041",
+            "who": "송태양",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-27 10:42",
+    "at": "2026-08-27 10:44",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
