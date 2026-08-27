@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1114,
- "updatedAt": "2026-08-27 16:33",
+ "version": 1115,
+ "updatedAt": "2026-08-27 16:37",
  "days": 30,
  "items": [
   {
@@ -88,7 +88,6 @@ window.MENU_REQUESTS = {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDgyN18xNDE4Mz",
      "fid": "F0BTW9XDSRE",
      "from": "댓글",
-     "path": "menu-files/1787813502_329109-0.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -206,13 +205,13 @@ window.MENU_REQUESTS = {
        "name": "한우특수부위(냉장)",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1787813502_329109-0.jpeg"
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDgyN18xNDE4ND",
      "fid": "F0BT00VU154",
      "from": "댓글",
-     "path": "menu-files/1787813502_329109-1.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -250,13 +249,13 @@ window.MENU_REQUESTS = {
        "name": "한우 등사태(냉동)",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1787813502_329109-1.jpeg"
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDgyN18xNDE5Mz",
      "fid": "F0BT3S5CCBB",
      "from": "댓글",
-     "path": "menu-files/1787813502_329109-2.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -329,13 +328,13 @@ window.MENU_REQUESTS = {
        "name": "돈등뼈(냉장)",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1787813502_329109-2.jpeg"
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDgyN18xNDE5Mj",
      "fid": "F0BT3S67BLH",
      "from": "댓글",
-     "path": "menu-files/1787813502_329109-3.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -433,13 +432,14 @@ window.MENU_REQUESTS = {
        "name": "돈등뼈(냉장)",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1787813502_329109-3.jpeg"
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1787813521.739239",
+   "rc": 3,
+   "lr": "1787816195.020149",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
