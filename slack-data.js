@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5706,
+  "version": 5707,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137203,6 +137203,7 @@ window.SLACK_DATA = {
           "김현기": 1
         },
         "onboarding": {
+          "심성현": 1,
           "송태양": 3,
           "배선유": 3,
           "김현기": 1,
@@ -137257,6 +137258,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": ""
+        },
+        {
+          "time": "11:00",
+          "store": "재미있는역사미술",
+          "biz": "2289303631",
+          "cat": "onboarding",
+          "emp": "심성현",
+          "req": "핸드폰 + 프론트 + 프린터.",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 출력 테스트 사용 방법 안내 완료"
         },
         {
           "time": "11:00",
@@ -137613,11 +137625,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 29,
+        "online": 30,
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "11:15"
+      "updatedAt": "11:16"
     }
   },
   "resp": {
@@ -137656,7 +137668,11 @@ window.SLACK_DATA = {
       },
       "1787796900.434779": {
         "post": "1787796900.434779",
-        "lastSeen": 1787796924.024
+        "lastSeen": 1787797103.663
+      },
+      "1787796972.506309": {
+        "post": "1787796972.506309",
+        "lastSeen": 1787797103.663
       }
     },
     "days": {
@@ -170592,13 +170608,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 11:15",
+    "at": "2026-08-27 11:18",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3754,
+    "rows": 3755,
     "named": 438,
     "unknownName": 0,
     "beforeStart": 0,
