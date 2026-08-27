@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5678,
+  "version": 5679,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137197,16 +137197,16 @@ window.SLACK_DATA = {
     },
     "2026-08-27": {
       "counts": {
+        "onboarding": {
+          "배선유": 2,
+          "김현기": 1,
+          "고경림": 1
+        },
         "as": {
           "배선유": 4,
           "김현기": 1,
           "송태양": 1,
           "심성현": 1
-        },
-        "onboarding": {
-          "배선유": 1,
-          "김현기": 1,
-          "고경림": 1
         },
         "menu": {
           "김규빈": 1,
@@ -137215,6 +137215,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:06",
+          "store": "파란교재",
+          "biz": "1303413515",
+          "cat": "onboarding",
+          "emp": "배선유",
+          "req": "포프(휴대폰) / 온보딩 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료, 가이드 발송"
+        },
         {
           "time": "10:00",
           "store": "오땡큐",
@@ -137350,11 +137361,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 11,
+        "online": 12,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "10:20"
+      "updatedAt": "10:22"
     }
   },
   "resp": {
@@ -137391,13 +137402,13 @@ window.SLACK_DATA = {
         "post": "1787751235.320309",
         "lastSeen": 1787775328.58
       },
-      "1787793300.374959": {
-        "post": "1787793300.374959",
-        "lastSeen": 1787793684.903
-      },
       "1787793629.626649": {
         "post": "1787793629.626649",
-        "lastSeen": 1787793684.903
+        "lastSeen": 1787793741.747
+      },
+      "1787793736.731319": {
+        "post": "1787793736.731319",
+        "lastSeen": 1787793741.747
       }
     },
     "days": {
@@ -170172,8 +170183,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-27": {
-        "cnt": 8,
-        "sumMin": 80.83416730165483,
+        "cnt": 9,
+        "sumMin": 87.71666798591615,
         "over": 0,
         "items": [
           {
@@ -170239,13 +170250,21 @@ window.SLACK_DATA = {
             "biz": "2772102428",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "10:15",
+            "min": 6.9,
+            "store": "네일바운더리",
+            "biz": "8942702069",
+            "who": "배선유",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-27 10:21",
+    "at": "2026-08-27 10:22",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
