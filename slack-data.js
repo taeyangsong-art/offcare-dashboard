@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5650,
+  "version": 5651,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -130826,7 +130826,7 @@ window.SLACK_DATA = {
           "심성현": 22,
           "송태양": 10,
           "배선유": 19,
-          "김현기": 19,
+          "김현기": 20,
           "고경림": 31,
           "김동욱": 14,
           "서상원": 8,
@@ -130856,30 +130856,7 @@ window.SLACK_DATA = {
           "최민석": 1
         }
       },
-      "pending": [
-        {
-          "time": "12:00",
-          "store": "곱도리탕전문점 연수점",
-          "biz": "8983101171",
-          "handler": "김현기",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "1차 부재"
-          ]
-        },
-        {
-          "time": "11:12",
-          "store": "미친피자 김포장기점",
-          "biz": "5964001239",
-          "handler": "김현기",
-          "cat": "as",
-          "intake": "offline",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
         {
           "time": "23:48",
@@ -133151,6 +133128,17 @@ window.SLACK_DATA = {
         },
         {
           "time": "11:12",
+          "store": "미친피자 김포장기점",
+          "biz": "5964001239",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "PC에 포스피드, 토스포스 둘다 사용중인데 토스포스 주문건 srp330 프린터기로 영수증 출력 원하셔서 도움 요청드립니다!",
+          "hw": "",
+          "intake": "offline",
+          "note": "usb드라이버 통하여 연결 설정 완료 / 다만 끊킬 수 있음 설명 안내"
+        },
+        {
+          "time": "11:12",
           "store": "러프로스터스",
           "biz": "6201155265",
           "cat": "as",
@@ -133649,7 +133637,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 215,
+        "online": 214,
         "offline": 37,
         "unknown": 0
       },
@@ -134095,7 +134083,7 @@ window.SLACK_DATA = {
           "김규빈": 7,
           "배선유": 19,
           "심성현": 19,
-          "김현기": 17,
+          "김현기": 18,
           "서상원": 13,
           "고경림": 31,
           "김동욱": 8
@@ -134136,28 +134124,6 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
-        {
-          "time": "15:15",
-          "store": "로하국어논술",
-          "biz": "8349502222",
-          "handler": "김현기",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "1차 부재"
-          ]
-        },
-        {
-          "time": "15:06",
-          "store": "주식회사 에투아르피아틀리에",
-          "biz": "8618603648",
-          "handler": "김현기",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
         {
           "time": "14:45",
           "store": "해듦 심리 상담센터",
@@ -135374,6 +135340,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": ""
+        },
+        {
+          "time": "15:06",
+          "store": "주식회사 에투아르피아틀리에",
+          "biz": "8618603648",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "TS-100 RJ45 테이블 구매 후 도착 해서 온보딩 요청 드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "타사 유프(ts100)연결 완료"
         },
         {
           "time": "15:04",
@@ -136831,7 +136808,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 204,
+        "online": 203,
         "offline": 40,
         "unknown": 0
       },
@@ -170055,13 +170032,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 09:04",
+    "at": "2026-08-27 09:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3736,
+    "rows": 3740,
     "named": 438,
     "unknownName": 0,
     "beforeStart": 0,
