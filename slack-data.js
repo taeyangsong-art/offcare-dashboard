@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5695,
+  "version": 5696,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137213,7 +137213,7 @@ window.SLACK_DATA = {
           "고경림": 1
         },
         "menu": {
-          "김규빈": 1,
+          "김규빈": 2,
           "김동욱": 1
         }
       },
@@ -137231,6 +137231,17 @@ window.SLACK_DATA = {
           "note": ""
         },
         {
+          "time": "10:45",
+          "store": "카페 오넬",
+          "biz": "5491003011",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "신규 설치 예정 메뉴 등록",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! /"
+        },
+        {
           "time": "10:41",
           "store": "엘리헤어(eli hair)",
           "biz": "3071871041",
@@ -137239,7 +137250,7 @@ window.SLACK_DATA = {
           "req": "터2+프 사용 / 터미널에서 결제 시스템 오류라고 뜬다고 하셔서 확인 요청 드립니다!",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "• 터미널 ic 반응없음 교체 안내 및 입출고 접수 완료입니다 터미널 ic 반응없음 교체 안내 및 입출고 접수 완료입니다"
         },
         {
           "time": "10:40",
@@ -137475,11 +137486,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 18,
+        "online": 19,
         "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "10:47"
+      "updatedAt": "10:54"
     }
   },
   "resp": {
@@ -170418,7 +170429,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 10:49",
+    "at": "2026-08-27 10:55",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
