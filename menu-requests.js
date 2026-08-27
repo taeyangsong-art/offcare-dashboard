@@ -3,10 +3,383 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1102,
- "updatedAt": "2026-08-27 15:48",
+ "version": 1103,
+ "updatedAt": "2026-08-27 15:53",
  "days": 30,
  "items": [
+  {
+   "ts": "1787813502.329109",
+   "date": "2026-08-27",
+   "time": "15:51",
+   "store": "한우현대축산",
+   "biz": "1289835217",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDgyN18xNDE4Mz",
+     "fid": "F0BTW9XDSRE",
+     "from": "댓글",
+     "path": "menu-files/1787813502_329109-0.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "한우(냉장)",
+       "name": "한우국거리(냉장)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉장)",
+       "name": "한우주먹시(냉장)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉장)",
+       "name": "한우 업진살(냉장)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉장)",
+       "name": "한우 안심(냉장)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉장)",
+       "name": "한우 양지(냉장)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉장)",
+       "name": "한우 사태(냉장)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉장)",
+       "name": "한우 육회(냉장)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉장)",
+       "name": "한우 설도(냉장)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉장)",
+       "name": "사골곰탕",
+       "price": 0
+      },
+      {
+       "category": "한우(냉장)",
+       "name": "한우 꽃등심(냉장)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉장)",
+       "name": "한우 홍두께(냉장)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉장)",
+       "name": "한우 정육(냉장)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉장)",
+       "name": "한우 우둔(냉장)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉장)",
+       "name": "한우 불고기(냉장)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉장)",
+       "name": "한우 차돌박이(냉장)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉장)",
+       "name": "한우 민찌(냉장)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉장)",
+       "name": "한우 갈비(냉장)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉장)",
+       "name": "한우 채끝등심(냉장)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉장)",
+       "name": "한우 치마살(냉장)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉장)",
+       "name": "한우 제비추리(냉장)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉장)",
+       "name": "한우 안창살(냉장)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉장)",
+       "name": "한우 갈비살(냉장)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉장)",
+       "name": "한우특수부위(냉장)",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDgyN18xNDE4ND",
+     "fid": "F0BT00VU154",
+     "from": "댓글",
+     "path": "menu-files/1787813502_329109-1.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "한우(냉동)",
+       "name": "한우 불고기(냉동)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉동)",
+       "name": "한우 차돌박이(냉동)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉동)",
+       "name": "한우 민찌(냉동)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉동)",
+       "name": "한우 갈비(냉동)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉동)",
+       "name": "한우 사골(냉동)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉동)",
+       "name": "한우 등뼈(냉동)",
+       "price": 0
+      },
+      {
+       "category": "한우(냉동)",
+       "name": "한우 등사태(냉동)",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDgyN18xNDE5Mz",
+     "fid": "F0BT3S5CCBB",
+     "from": "댓글",
+     "path": "menu-files/1787813502_329109-2.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "돼지(냉장)",
+       "name": "삼겹(냉장)",
+       "price": 0
+      },
+      {
+       "category": "돼지(냉장)",
+       "name": "목살(냉장)",
+       "price": 0
+      },
+      {
+       "category": "돼지(냉장)",
+       "name": "전지(냉장)",
+       "price": 0
+      },
+      {
+       "category": "돼지(냉장)",
+       "name": "사태(냉장)",
+       "price": 0
+      },
+      {
+       "category": "돼지(냉장)",
+       "name": "갈비(냉장)",
+       "price": 0
+      },
+      {
+       "category": "돼지(냉장)",
+       "name": "등갈비(냉장)",
+       "price": 0
+      },
+      {
+       "category": "돼지(냉장)",
+       "name": "찌개용(냉장)",
+       "price": 0
+      },
+      {
+       "category": "돼지(냉장)",
+       "name": "등심(냉장)",
+       "price": 0
+      },
+      {
+       "category": "돼지(냉장)",
+       "name": "안심(냉장)",
+       "price": 0
+      },
+      {
+       "category": "돼지(냉장)",
+       "name": "후지(냉장)",
+       "price": 0
+      },
+      {
+       "category": "돼지(냉장)",
+       "name": "항정살(냉장)",
+       "price": 0
+      },
+      {
+       "category": "돼지(냉장)",
+       "name": "갈매기살(냉장)",
+       "price": 0
+      },
+      {
+       "category": "돼지(냉장)",
+       "name": "가브리살(냉장)",
+       "price": 0
+      },
+      {
+       "category": "돼지(냉장)",
+       "name": "돈등뼈(냉장)",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDgyN18xNDE5Mj",
+     "fid": "F0BT3S67BLH",
+     "from": "댓글",
+     "path": "menu-files/1787813502_329109-3.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "한우(냉장)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "한우(냉동)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "돼지(냉장)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "돼지(냉동)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "수입산",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "삼겹(냉장)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "목살(냉장)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "전지(냉장)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "사태(냉장)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "갈비(냉장)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "등갈비(냉장)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "찌개용(냉장)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "등심(냉장)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "안심(냉장)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "후지(냉장)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "항정살(냉장)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "갈매기살(냉장)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "가브리살(냉장)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "돈등뼈(냉장)",
+       "price": 0
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1787813521.739239",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787813502329109"
+  },
   {
    "ts": "1787813303.399339",
    "date": "2026-08-27",
