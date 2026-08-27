@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5670,
+  "version": 5671,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137198,7 +137198,7 @@ window.SLACK_DATA = {
     "2026-08-27": {
       "counts": {
         "as": {
-          "배선유": 1,
+          "배선유": 2,
           "김현기": 1,
           "송태양": 1,
           "심성현": 1
@@ -137213,6 +137213,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:46",
+          "store": "착한미용실",
+          "biz": "1115301474",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "포프+유프(휴대폰) / 온보딩 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포프(폰) 자체 온보딩 / 유프 연결 필요하나 예약 손님있어 통화 불가 / 금일 12:55 예약"
+        },
         {
           "time": "09:45",
           "store": "비비(B&amp;B) 에스테틱",
@@ -137293,7 +137304,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 6,
+        "online": 7,
         "offline": 1,
         "unknown": 0
       },
@@ -137336,15 +137347,15 @@ window.SLACK_DATA = {
       },
       "1787791827.875929": {
         "post": "1787791827.875929",
-        "lastSeen": 1787792424.797
+        "lastSeen": 1787792603.362
       },
       "1787792400.618589": {
         "post": "1787792400.618589",
-        "lastSeen": 1787792424.797
+        "lastSeen": 1787792603.362
       },
       "1787792400.553899": {
         "post": "1787792400.553899",
-        "lastSeen": 1787792424.797
+        "lastSeen": 1787792603.362
       }
     },
     "days": {
@@ -170152,7 +170163,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 10:00",
+    "at": "2026-08-27 10:03",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
