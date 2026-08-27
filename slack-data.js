@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5717,
+  "version": 5718,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137239,7 +137239,7 @@ window.SLACK_DATA = {
           "req": "페이스페이 업데이트 필요 안내를 받았다 하셔서 확인 요청 드립니다. (오케이포스-프론트 이용중)",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "다중설정 넣어드림"
         },
         {
           "time": "11:30",
@@ -137727,7 +137727,7 @@ window.SLACK_DATA = {
       },
       "1787798165.825829": {
         "post": "1787798165.825829",
-        "lastSeen": 1787798244.203
+        "lastSeen": 1787798302.036
       }
     },
     "days": {
@@ -170695,7 +170695,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 11:37",
+    "at": "2026-08-27 11:38",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
