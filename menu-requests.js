@@ -3,10 +3,75 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1122,
- "updatedAt": "2026-08-27 17:06",
+ "version": 1123,
+ "updatedAt": "2026-08-27 17:09",
  "days": 30,
  "items": [
+  {
+   "ts": "1787818160.594919",
+   "date": "2026-08-27",
+   "time": "17:09",
+   "store": "막무가내포차",
+   "biz": "3770703599",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787818163.360099",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787818160594919"
+  },
+  {
+   "ts": "1787818130.303149",
+   "date": "2026-08-27",
+   "time": "17:08",
+   "store": "카페D&올인베이커리 광주동강대점",
+   "biz": "1224091898",
+   "pos": "",
+   "content": "외주 메뉴등록요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787818133.279549",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787818130303149"
+  },
+  {
+   "ts": "1787818040.405129",
+   "date": "2026-08-27",
+   "time": "17:07",
+   "store": "강창구 찹쌀진순대 광장점",
+   "biz": "2198509446",
+   "pos": "",
+   "content": "메뉴 옵션 추가",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "(특)순대국\n얼큰순대국\n순대국\n\n옵션 국선택 =  순대만 추가 부탁드립니다."
+   ],
+   "rc": 2,
+   "lr": "1787818047.467199",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787818040405129"
+  },
   {
    "ts": "1787817319.685229",
    "date": "2026-08-27",
@@ -24,8 +89,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1787817336.201129",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787817319685229"
   },
   {
