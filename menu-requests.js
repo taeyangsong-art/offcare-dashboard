@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1089,
- "updatedAt": "2026-08-27 14:33",
+ "version": 1090,
+ "updatedAt": "2026-08-27 14:38",
  "days": 30,
  "items": [
   {
@@ -42782,31 +42782,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785219626712639"
-  },
-  {
-   "ts": "1785217062.848139",
-   "date": "2026-07-28",
-   "time": "14:37",
-   "store": "느영나영",
-   "biz": "8700903563",
-   "pos": "토스포스",
-   "content": "첨부파일확인",
-   "special": "사진첨부안됨 메일확인바래요",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "https://w1659946222-hxm266180.slack.com/archives/C07CL4BV9QT/p1785218226842739?thread_ts=···.442079&cid=C07CL4BV9QT",
-    "제미나이 사춘기 이슈",
-    "등록 완료"
-   ],
-   "rc": 4,
-   "lr": "1785221874.727969",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785217062848139"
   }
  ],
  "ocr": {
