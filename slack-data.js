@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5691,
+  "version": 5692,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137197,17 +137197,17 @@ window.SLACK_DATA = {
     },
     "2026-08-27": {
       "counts": {
+        "onboarding": {
+          "송태양": 2,
+          "배선유": 2,
+          "김현기": 1,
+          "고경림": 1
+        },
         "as": {
           "김현기": 3,
           "배선유": 6,
           "심성현": 2,
           "송태양": 1
-        },
-        "onboarding": {
-          "송태양": 1,
-          "배선유": 2,
-          "김현기": 1,
-          "고경림": 1
         },
         "menu": {
           "김규빈": 1,
@@ -137216,6 +137216,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:30",
+          "store": "한진 광택 디테일샵",
+          "biz": "1123366623",
+          "cat": "onboarding",
+          "emp": "송태양",
+          "req": "태블릿/포프 온보딩 요청드립니다. (고연령)",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료입니다"
+        },
         {
           "time": "10:28",
           "store": "주)아이엠에스그룹",
@@ -137428,7 +137439,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 15,
+        "online": 16,
         "offline": 4,
         "unknown": 0
       },
@@ -137471,11 +137482,11 @@ window.SLACK_DATA = {
       },
       "1787794875.641029": {
         "post": "1787794875.641029",
-        "lastSeen": 1787794884.283
+        "lastSeen": 1787794945.949
       },
       "1787794867.761159": {
         "post": "1787794867.761159",
-        "lastSeen": 1787794884.283
+        "lastSeen": 1787794945.949
       }
     },
     "days": {
@@ -170371,7 +170382,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 10:41",
+    "at": "2026-08-27 10:42",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
