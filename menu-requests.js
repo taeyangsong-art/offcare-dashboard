@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1137,
- "updatedAt": "2026-08-27 19:24",
+ "version": 1138,
+ "updatedAt": "2026-08-27 20:06",
  "days": 30,
  "items": [
   {
@@ -45247,29 +45247,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785286840172609"
-  },
-  {
-   "ts": "1785236620.267649",
-   "date": "2026-07-28",
-   "time": "20:03",
-   "store": "은성한정식",
-   "biz": "5298703678",
-   "pos": "퍼스트포스",
-   "content": "손님이 계산하실때 영수증이 2장(내역 없는것, 내역 있는것) 나오는데\n내역 없는것 1장만 출력되게 해주세요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "익일 오후 3시 재연락 요청 예약메세지 작성 완료\nas이관"
-   ],
-   "rc": 2,
-   "lr": "1785244721.386609",
-   "rfx": 3,
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785236620267649"
   }
  ],
  "ocr": {
