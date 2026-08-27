@@ -3,10 +3,230 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1067,
- "updatedAt": "2026-08-27 12:30",
+ "version": 1068,
+ "updatedAt": "2026-08-27 12:34",
  "days": 30,
  "items": [
+  {
+   "ts": "1787801584.099879",
+   "date": "2026-08-27",
+   "time": "12:33",
+   "store": "M.M.N_memine",
+   "biz": "8041702922",
+   "pos": "토스포스",
+   "content": "사진첨부한 모든 메뉴",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1gYOC9TPVD4D1gztLQMoFt4wKvLwet-Rh/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1s1P53N_dDZOlQHtsm5gs9TZQwi7rpQYD/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1Aid3dmpFvLMZnQJtob41NPQ8Ao7tjdpd/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1oVGheCSRyaHYvFFp6eF65muipeCxvBB4/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1gYOC9TPVD4D1gztLQMoFt4wKvLwet-Rh",
+     "kind": "other",
+     "menu": []
+    },
+    {
+     "id": "1s1P53N_dDZOlQHtsm5gs9TZQwi7rpQYD",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "NON COFFEE",
+       "name": "JEJU MATCHA LATTE 제주 말차 라떼 (HOT)",
+       "price": 6500
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "JEJU MATCHA LATTE 제주 말차 라떼 (ICE)",
+       "price": 7000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "VALRHONA CHOCOLATE LATTE 발로나 초콜렛 라떼 (HOT)",
+       "price": 6500
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "VALRHONA CHOCOLATE LATTE 발로나 초콜렛 라떼 (ICE)",
+       "price": 7000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "MILK TEA 밀크티 (HOT)",
+       "price": 6000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "MILK TEA 밀크티 (ICE)",
+       "price": 6500
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "SEASONAL LATTE 시즌 라떼 (HOT)",
+       "price": 6500
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "SEASONAL LATTE 시즌 라떼 (ICE)",
+       "price": 7000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "TWG GRAND WEDDING TWG 그랜드 웨딩 티 (HOT)",
+       "price": 5500
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "TWG GRAND WEDDING TWG 그랜드 웨딩 티 (ICE)",
+       "price": 6000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "TWG MOROCCAN MINT TWG 모로칸 민트 티 (HOT)",
+       "price": 5500
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "TWG MOROCCAN MINT TWG 모로칸 민트 티 (ICE)",
+       "price": 6000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "TWG GEISHA BLOSSOM TWG 게이샤 블라썸 티 (HOT)",
+       "price": 5500
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "TWG GEISHA BLOSSOM TWG 게이샤 블라썸 티 (ICE)",
+       "price": 6000
+      }
+     ]
+    },
+    {
+     "id": "1Aid3dmpFvLMZnQJtob41NPQ8Ao7tjdpd",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "OTHER DRINKS",
+       "name": "COLD-PRESSED JUICE 생과일 착즙 주스",
+       "price": 7
+      },
+      {
+       "category": "OTHER DRINKS",
+       "name": "100% CARROT 100% 국내산 당근주스",
+       "price": 0
+      },
+      {
+       "category": "OTHER DRINKS",
+       "name": "TODAY'S JUICE 오늘의 착즙 주스",
+       "price": 0
+      },
+      {
+       "category": "OTHER DRINKS",
+       "name": "FRESH FRUIT ADE 시트러스 과일 에이드",
+       "price": 6
+      },
+      {
+       "category": "OTHER DRINKS",
+       "name": "GRAPEFRUIT 자몽 에이드",
+       "price": 0
+      },
+      {
+       "category": "OTHER DRINKS",
+       "name": "LEMON 레몬 에이드",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "id": "1oVGheCSRyaHYvFFp6eF65muipeCxvBB4",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "COFFEE",
+       "name": "ESPRESSO 에스프레소",
+       "price": 3800
+      },
+      {
+       "category": "COFFEE",
+       "name": "AMERICANO 아메리카노 (HOT)",
+       "price": 3800
+      },
+      {
+       "category": "COFFEE",
+       "name": "AMERICANO 아메리카노 (ICE)",
+       "price": 4300
+      },
+      {
+       "category": "COFFEE",
+       "name": "CAFE LATTE 카페 라떼 (HOT)",
+       "price": 4500
+      },
+      {
+       "category": "COFFEE",
+       "name": "CAFE LATTE 카페 라떼 (ICE)",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "CAPPUCCINO 카푸치노 (HOT)",
+       "price": 4500
+      },
+      {
+       "category": "COFFEE",
+       "name": "CAPPUCCINO 카푸치노 (ICE)",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "VANILLA LATTE 바닐라 라떼 (HOT)",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "VANILLA LATTE 바닐라 라떼 (ICE)",
+       "price": 5500
+      },
+      {
+       "category": "COFFEE",
+       "name": "MEMINE LATTE 미마인 시그니쳐 라떼",
+       "price": 6000
+      },
+      {
+       "category": "COFFEE",
+       "name": "MATCHA AFFOGATO 미마인 말차 아포카토",
+       "price": 8000
+      },
+      {
+       "category": "COFFEE",
+       "name": "EINSPÄNNER 아인슈페너 (HOT)",
+       "price": 6500
+      },
+      {
+       "category": "COFFEE",
+       "name": "EINSPÄNNER 아인슈페너 (ICE)",
+       "price": 7000
+      },
+      {
+       "category": "COFFEE",
+       "name": "COCONUT EINSPÄNNER 코코넛 아인슈페너",
+       "price": 7000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787801587.143439",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787801584099879"
+  },
   {
    "ts": "1787799851.461029",
    "date": "2026-08-27",
