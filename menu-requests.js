@@ -3,10 +3,492 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1063,
- "updatedAt": "2026-08-27 12:03",
+ "version": 1064,
+ "updatedAt": "2026-08-27 12:05",
  "days": 30,
  "items": [
+  {
+   "ts": "1787799851.461029",
+   "date": "2026-08-27",
+   "time": "12:04",
+   "store": "국대찜닭 유천점",
+   "biz": "3670502911",
+   "pos": "토스포스",
+   "content": "메뉴 신규등록 요청요",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1_c9OfP4AyotHlJMzEsKHeW1PdjevQPdh/view?usp=drivesdk",
+    "https://drive.google.com/file/d/12FGOmdFAByQkdfjKP_Th4cv6tzbTi0EY/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1_c9OfP4AyotHlJMzEsKHeW1PdjevQPdh",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "냉면 육가",
+       "name": "물냉면",
+       "price": 9500
+      },
+      {
+       "category": "냉면 육가",
+       "name": "물비냉",
+       "price": 10500
+      },
+      {
+       "category": "냉면 육가",
+       "name": "비빔냉면",
+       "price": 10500
+      },
+      {
+       "category": "냉면 육가",
+       "name": "불냉면",
+       "price": 11000
+      },
+      {
+       "category": "냉면 육가",
+       "name": "만두냉면세트",
+       "price": 13000
+      },
+      {
+       "category": "냉면 육가",
+       "name": "함박냉면세트",
+       "price": 13500
+      },
+      {
+       "category": "냉면 육가",
+       "name": "메밀전병냉면세트",
+       "price": 14000
+      },
+      {
+       "category": "냉면 육가",
+       "name": "수제돈까스냉면세트",
+       "price": 14000
+      },
+      {
+       "category": "냉면 육가",
+       "name": "고기구이(200g)냉면세트",
+       "price": 18500
+      },
+      {
+       "category": "냉면 육가",
+       "name": "수제돈가스냉면음료세트",
+       "price": 15500
+      },
+      {
+       "category": "냉면 육가",
+       "name": "새우튀김냉면음료세트",
+       "price": 14500
+      },
+      {
+       "category": "토핑 추가",
+       "name": "오이추가",
+       "price": 500
+      },
+      {
+       "category": "토핑 추가",
+       "name": "양념장 추가",
+       "price": 1000
+      },
+      {
+       "category": "토핑 추가",
+       "name": "메추리알 5알 추가",
+       "price": 1000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "명태회무침 100g",
+       "price": 3000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "감자튀김 100g+닭튀김 3p",
+       "price": 2000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "군만두 5p",
+       "price": 2500
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "김치메밀전병 2p",
+       "price": 4500
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "갈비만두 8개",
+       "price": 7000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "김치왕만두 5개",
+       "price": 7000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "고기왕만두 5개",
+       "price": 7000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "반반만두(갈4+김2)",
+       "price": 7000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "반반만두(갈4+고2)",
+       "price": 7000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "반반반만두(갈2+고2+김2)",
+       "price": 7000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "함박스테이크 2개",
+       "price": 4000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "수제돈까스 1개",
+       "price": 4500
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "왕새우튀김 2개(헤드온)",
+       "price": 4000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "직화불고기 (200g)",
+       "price": 9500
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "냉면육수한사발",
+       "price": 2000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "냉면무 (육수 절반정도 들어감)",
+       "price": 2000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "코카콜라 500ml",
+       "price": 2000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "제로콜라 500ml",
+       "price": 2000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "스프라이트 500ml",
+       "price": 2000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "펩시콜라 355ml",
+       "price": 1500
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "펩시제로라임 355ml",
+       "price": 1500
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "칠성사이다 355ml",
+       "price": 1500
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "카스",
+       "price": 4000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "참이슬 후레쉬",
+       "price": 4000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "이제우린",
+       "price": 4000
+      }
+     ]
+    },
+    {
+     "id": "12FGOmdFAByQkdfjKP_Th4cv6tzbTi0EY",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "국대 찜닭",
+       "name": "까망 안동찜닭 (소)",
+       "price": 23800
+      },
+      {
+       "category": "국대 찜닭",
+       "name": "까망 안동찜닭 (중)",
+       "price": 29800
+      },
+      {
+       "category": "국대 찜닭",
+       "name": "까망 안동찜닭 (대)",
+       "price": 37800
+      },
+      {
+       "category": "국대 찜닭",
+       "name": "안동참고구마찜닭 (소)",
+       "price": 26800
+      },
+      {
+       "category": "국대 찜닭",
+       "name": "안동참고구마찜닭 (중)",
+       "price": 32800
+      },
+      {
+       "category": "국대 찜닭",
+       "name": "안동참고구마찜닭 (대)",
+       "price": 40800
+      },
+      {
+       "category": "국대 찜닭",
+       "name": "치즈폭탄구름찜닭(순살) (소)",
+       "price": 29800
+      },
+      {
+       "category": "국대 찜닭",
+       "name": "치즈폭탄구름찜닭(순살) (중)",
+       "price": 35800
+      },
+      {
+       "category": "국대 찜닭",
+       "name": "치즈폭탄구름찜닭(순살) (대)",
+       "price": 43800
+      },
+      {
+       "category": "국대 찜닭",
+       "name": "순살 황금로제찜닭 (소)",
+       "price": 28800
+      },
+      {
+       "category": "국대 찜닭",
+       "name": "순살 황금로제찜닭 (중)",
+       "price": 34800
+      },
+      {
+       "category": "국대 찜닭",
+       "name": "순살 황금로제찜닭 (대)",
+       "price": 42800
+      },
+      {
+       "category": "국대 도리탕",
+       "name": "순살 떡도리탕 (소)",
+       "price": 23800
+      },
+      {
+       "category": "국대 도리탕",
+       "name": "순살 떡도리탕 (중)",
+       "price": 29800
+      },
+      {
+       "category": "국대 도리탕",
+       "name": "순살 떡도리탕 (대)",
+       "price": 37800
+      },
+      {
+       "category": "국대 도리탕",
+       "name": "명품 닭도리탕 (중)",
+       "price": 29800
+      },
+      {
+       "category": "국대 도리탕",
+       "name": "명품 닭도리탕 (대)",
+       "price": 37800
+      },
+      {
+       "category": "국대 도리탕",
+       "name": "명품 닭도리탕(순살) (중)",
+       "price": 32800
+      },
+      {
+       "category": "국대 도리탕",
+       "name": "명품 닭도리탕(순살) (대)",
+       "price": 40800
+      },
+      {
+       "category": "국대 도리탕",
+       "name": "한우1++ 곱도리탕(순살) (중)",
+       "price": 39800
+      },
+      {
+       "category": "국대 도리탕",
+       "name": "한우1++ 곱도리탕(순살) (대)",
+       "price": 46800
+      },
+      {
+       "category": "국대 도리탕",
+       "name": "1.5 닭도리탕(순살)",
+       "price": 20800
+      },
+      {
+       "category": "국대 도리탕",
+       "name": "1.5 한우곱도리탕(순살)",
+       "price": 25800
+      },
+      {
+       "category": "사이드",
+       "name": "멘보샤 5개",
+       "price": 6000
+      },
+      {
+       "category": "사이드",
+       "name": "치즈볼 5개",
+       "price": 4000
+      },
+      {
+       "category": "사이드",
+       "name": "수제돈가스",
+       "price": 4000
+      },
+      {
+       "category": "사이드",
+       "name": "왕새우 2개",
+       "price": 4000
+      },
+      {
+       "category": "사이드",
+       "name": "김말이 5개",
+       "price": 3000
+      },
+      {
+       "category": "사이드",
+       "name": "매콤김말이 10개",
+       "price": 4000
+      },
+      {
+       "category": "사이드",
+       "name": "김말이 일반 5개+매콤 5개",
+       "price": 5000
+      },
+      {
+       "category": "사이드",
+       "name": "납작만두 5개",
+       "price": 2000
+      },
+      {
+       "category": "사이드",
+       "name": "콘치즈",
+       "price": 4000
+      },
+      {
+       "category": "사이드",
+       "name": "맛감자 10개",
+       "price": 2000
+      },
+      {
+       "category": "사이드",
+       "name": "일반공기밥(햇반) 210g",
+       "price": 1500
+      },
+      {
+       "category": "사이드",
+       "name": "큰공기밥(햇반) 300g",
+       "price": 2500
+      },
+      {
+       "category": "사이드",
+       "name": "계란밥",
+       "price": 3500
+      },
+      {
+       "category": "사이드",
+       "name": "수제피클무",
+       "price": 1000
+      },
+      {
+       "category": "사이드",
+       "name": "계란찜",
+       "price": 3000
+      },
+      {
+       "category": "사이드",
+       "name": "군만두 5p",
+       "price": 2500
+      },
+      {
+       "category": "사이드",
+       "name": "메추리알",
+       "price": 1500
+      },
+      {
+       "category": "사이드",
+       "name": "치즈떡 10개",
+       "price": 2000
+      },
+      {
+       "category": "사이드",
+       "name": "고구마떡 10개",
+       "price": 2000
+      },
+      {
+       "category": "사이드",
+       "name": "코카콜라500ml",
+       "price": 2000
+      },
+      {
+       "category": "사이드",
+       "name": "제로콜라500ml",
+       "price": 2000
+      },
+      {
+       "category": "사이드",
+       "name": "스프라이트500ml",
+       "price": 2000
+      },
+      {
+       "category": "사이드",
+       "name": "펩시355ml",
+       "price": 1500
+      },
+      {
+       "category": "사이드",
+       "name": "펩시제로라임355ml",
+       "price": 1500
+      },
+      {
+       "category": "사이드",
+       "name": "칠성사이다355ml",
+       "price": 1500
+      },
+      {
+       "category": "사이드",
+       "name": "참이슬, 이제우린",
+       "price": 4000
+      },
+      {
+       "category": "사이드",
+       "name": "카스 500ml",
+       "price": 4000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787799854.466649",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787799851461029"
+  },
   {
    "ts": "1787799600.945009",
    "date": "2026-08-27",

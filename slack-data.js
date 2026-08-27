@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5730,
+  "version": 5731,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137789,7 +137789,7 @@ window.SLACK_DATA = {
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "12:00"
+      "updatedAt": "12:04"
     }
   },
   "resp": {
@@ -137826,9 +137826,9 @@ window.SLACK_DATA = {
         "post": "1787751235.320309",
         "lastSeen": 1787775328.58
       },
-      "1787799602.902209": {
-        "post": "1787799602.902209",
-        "lastSeen": 1787799790.065
+      "1787799851.461029": {
+        "post": "1787799851.461029",
+        "lastSeen": 1787799864.013
       }
     },
     "days": {
@@ -170603,8 +170603,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-27": {
-        "cnt": 27,
-        "sumMin": 134.8272444566091,
+        "cnt": 28,
+        "sumMin": 138.5628576397896,
         "over": 0,
         "items": [
           {
@@ -170822,13 +170822,21 @@ window.SLACK_DATA = {
             "biz": "4012268433",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "12:00",
+            "min": 3.7,
+            "store": "인디코",
+            "biz": "8483501422",
+            "who": "김규빈",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-27 12:03",
+    "at": "2026-08-27 12:04",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
