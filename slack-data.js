@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 5753,
+  "version": 5754,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -137214,11 +137214,11 @@ window.SLACK_DATA = {
         },
         "onboarding": {
           "배선유": 4,
+          "고경림": 2,
           "김규빈": 2,
           "송태양": 4,
           "심성현": 2,
-          "김현기": 1,
-          "고경림": 1
+          "김현기": 1
         },
         "transfer": {
           "심성현": 1
@@ -137277,6 +137277,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": ""
+        },
+        {
+          "time": "12:45",
+          "store": "비바플레르",
+          "biz": "5989301361",
+          "cat": "onboarding",
+          "emp": "고경림",
+          "req": "포프(노트북) 온보딩 요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "미개봉 와이파이까지 연결후 연락요청 / 포프(휴대폰) 온보딩완료"
         },
         {
           "time": "12:45",
@@ -137941,11 +137952,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 55,
+        "online": 56,
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "13:10"
+      "updatedAt": "13:15"
     }
   },
   "resp": {
@@ -137984,7 +137995,15 @@ window.SLACK_DATA = {
       },
       "1787803140.618239": {
         "post": "1787803140.618239",
-        "lastSeen": 1787803884.152
+        "lastSeen": 1787804126.267
+      },
+      "1787804100.881649": {
+        "post": "1787804100.881649",
+        "lastSeen": 1787804126.267
+      },
+      "1787804100.514879": {
+        "post": "1787804100.514879",
+        "lastSeen": 1787804126.267
       }
     },
     "days": {
@@ -171056,7 +171075,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-27 13:11",
+    "at": "2026-08-27 13:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
