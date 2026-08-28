@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6063,
+  "version": 6064,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140707,7 +140707,7 @@ window.SLACK_DATA = {
         "onboarding": {
           "심성현": 2,
           "김규빈": 1,
-          "김동욱": 1,
+          "김동욱": 2,
           "김현기": 1
         },
         "menu": {
@@ -140838,6 +140838,17 @@ window.SLACK_DATA = {
           "note": "1차 부재 / 포프(휴대폰) 온보딩완료. 금액입력결제모드 설정 완료"
         },
         {
+          "time": "09:45",
+          "store": "국대찜닭 유천점",
+          "biz": "3670502911",
+          "cat": "onboarding",
+          "emp": "김동욱",
+          "req": "포프(컴퓨터) + 유프 온보딩 요청드립니다. 본인 휴대폰 연동도 원합니다",
+          "hw": "",
+          "intake": "online",
+          "note": "10시 10분 통화요청 / 포프유프(데스크탑) 온보딩 완료"
+        },
+        {
           "time": "09:31",
           "store": "태성열처리",
           "biz": "1171396935",
@@ -140960,11 +140971,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 20,
+        "online": 21,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "10:28"
+      "updatedAt": "10:33"
     }
   },
   "resp": {
@@ -141019,7 +141030,11 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787880802.674
+        "lastSeen": 1787880863.155
+      },
+      "1787880820.342039": {
+        "post": "1787880820.342039",
+        "lastSeen": 1787880863.155
       }
     },
     "days": {
@@ -175394,7 +175409,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 10:33",
+    "at": "2026-08-28 10:34",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
