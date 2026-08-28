@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6049,
+  "version": 6050,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140698,6 +140698,7 @@ window.SLACK_DATA = {
       "counts": {
         "onboarding": {
           "심성현": 1,
+          "김동욱": 1,
           "김현기": 1
         },
         "as": {
@@ -140756,6 +140757,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / / 클로드 일 안합니다! 젬민이 대신 일 시킬게요 클로드 일 안합니다! 젬민이 대신 일 시킬게요"
+        },
+        {
+          "time": "09:45",
+          "store": "필라테스오브(Pilates_Aube)",
+          "biz": "2033501823",
+          "cat": "onboarding",
+          "emp": "김동욱",
+          "req": "포프(휴대폰) 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "1차 부재 / 포프(휴대폰) 온보딩완료. 금액입력결제모드 설정 완료"
         },
         {
           "time": "09:31",
@@ -140880,7 +140892,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 14,
+        "online": 15,
         "offline": 1,
         "unknown": 0
       },
@@ -140943,11 +140955,11 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787879182.891
+        "lastSeen": 1787879241.644
       },
       "1787878807.172979": {
         "post": "1787878807.172979",
-        "lastSeen": 1787879182.891
+        "lastSeen": 1787879241.644
       }
     },
     "days": {
@@ -175290,7 +175302,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 10:06",
+    "at": "2026-08-28 10:07",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
