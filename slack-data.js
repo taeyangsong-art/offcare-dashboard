@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6383,
+  "version": 6384,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144228,12 +144228,28 @@ window.SLACK_DATA = {
       }
     },
     "2026-08-29": {
-      "counts": {},
+      "counts": {
+        "menu": {
+          "김규빈": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "05:51",
+          "store": "스키당",
+          "biz": "4582401280",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "신규 설치 예정 메뉴 등록",
+          "hw": "",
+          "intake": "offline",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! /"
+        }
+      ],
       "intake": {
         "online": 0,
-        "offline": 0,
+        "offline": 1,
         "unknown": 0
       },
       "updatedAt": "05:51"
@@ -144316,10 +144332,6 @@ window.SLACK_DATA = {
       "1787912598.042309": {
         "post": "1787912598.042309",
         "lastSeen": 1787912660.497
-      },
-      "1787950286.186709": {
-        "post": "1787950286.186709",
-        "lastSeen": 1787950837.81
       }
     },
     "days": {
@@ -180326,7 +180338,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-29 06:00",
+    "at": "2026-08-29 06:10",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
