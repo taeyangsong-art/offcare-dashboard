@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6021,
+  "version": 6022,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140697,7 +140697,8 @@ window.SLACK_DATA = {
     "2026-08-28": {
       "counts": {
         "as": {
-          "김동욱": 1
+          "김동욱": 1,
+          "송태양": 1
         }
       },
       "pending": [],
@@ -140712,14 +140713,25 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "오전 9시가 아닌 저녁 9시. 예약메시지 진행"
+        },
+        {
+          "time": "08:30",
+          "store": "메디결라인 청라점",
+          "biz": "",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "8월 28일 오전 9시 / 메뉴 복사 O / 프론트",
+          "hw": "",
+          "intake": "online",
+          "note": "금일 오후 9시 예약요청으로 예약 완료입니다"
         }
       ],
       "intake": {
-        "online": 1,
+        "online": 2,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:04"
+      "updatedAt": "09:08"
     }
   },
   "resp": {
@@ -140776,13 +140788,9 @@ window.SLACK_DATA = {
         "post": "1787822547.166409",
         "lastSeen": 1787861727.424
       },
-      "1787865301.102509": {
-        "post": "1787865301.102509",
-        "lastSeen": 1787875583.299
-      },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787875583.299
+        "lastSeen": 1787875708.279
       }
     },
     "days": {
@@ -175013,7 +175021,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 09:06",
+    "at": "2026-08-28 09:08",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
