@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6085,
+  "version": 6086,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140703,7 +140703,7 @@ window.SLACK_DATA = {
           "배선유": 1
         },
         "as": {
-          "김동욱": 6,
+          "김동욱": 7,
           "김현기": 7,
           "김규빈": 2,
           "송태양": 4,
@@ -140790,6 +140790,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
+        },
+        {
+          "time": "11:15",
+          "store": "원이메이드",
+          "biz": "8730500117",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "포프(휴대폰) + 유프 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "다른 곳은 토스페이라든가 태블릿이라든가 무상으로 제공하는데 아샵은 없다고 살짝 아주 살짝 불만제기. 고객센터로 직접 전화하여 확인 후 설치요청주신다고 하심."
         },
         {
           "time": "11:03",
@@ -141288,11 +141299,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 44,
+        "online": 45,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "11:19"
+      "updatedAt": "11:25"
     }
   },
   "resp": {
@@ -141347,7 +141358,11 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787883924.672
+        "lastSeen": 1787883982.666
+      },
+      "1787883939.784329": {
+        "post": "1787883939.784329",
+        "lastSeen": 1787883982.666
       }
     },
     "days": {
@@ -175858,7 +175873,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 11:25",
+    "at": "2026-08-28 11:26",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
