@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1152,
- "updatedAt": "2026-08-28 11:14",
+ "version": 1153,
+ "updatedAt": "2026-08-28 11:15",
  "days": 30,
  "items": [
   {
@@ -30,9 +30,11 @@ window.MENU_REQUESTS = {
     }
    ],
    "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1787883212.806369",
+   "replies": [
+    "도넛 > 핫도그로 변경 완"
+   ],
+   "rc": 3,
+   "lr": "1787883287.999899",
    "rfx": 3,
    "status": "done",
    "handler": "김규빈",
