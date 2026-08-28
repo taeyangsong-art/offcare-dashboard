@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1145,
- "updatedAt": "2026-08-28 09:51",
+ "version": 1146,
+ "updatedAt": "2026-08-28 09:53",
  "days": 30,
  "items": [
   {
@@ -18,14 +18,51 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "Resized_20260811_204938.jpg (1).jpeg",
+     "fid": "F0BTDFXQEA0",
+     "from": "댓글",
+     "path": "menu-files/1787878240_203639-0.jpeg"
+    },
+    {
+     "name": "Resized_20260811_204957.jpg.jpeg",
+     "fid": "F0BT7TBB0H4",
+     "from": "댓글",
+     "path": "menu-files/1787878240_203639-1.jpeg"
+    },
+    {
+     "name": "Resized_20260811_204952.jpg.jpeg",
+     "fid": "F0BT7TCEDSS",
+     "from": "댓글",
+     "path": "menu-files/1787878240_203639-2.jpeg"
+    },
+    {
+     "name": "Resized_20260811_205002.jpg.jpeg",
+     "fid": "F0BT5NWR553",
+     "from": "댓글",
+     "path": "menu-files/1787878240_203639-3.jpeg"
+    },
+    {
+     "name": "Resized_20260811_205009.jpg.jpeg",
+     "fid": "F0BSUET772T",
+     "from": "댓글",
+     "path": "menu-files/1787878240_203639-4.jpeg"
+    },
+    {
+     "name": "Resized_20260811_205017.jpg.jpeg",
+     "fid": "F0BTDFYMP7E",
+     "from": "댓글",
+     "path": "menu-files/1787878240_203639-5.jpeg"
+    }
+   ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1787878244.276709",
+   "rc": 2,
+   "lr": "1787878355.909149",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787878240203639"
   },
   {
@@ -45327,6 +45364,10 @@ window.MENU_REQUESTS = {
  "ocr": {
   "model": "claude-opus-5",
   "enabled": true,
-  "drive": true
+  "drive": true,
+  "halt": {
+   "status": 400,
+   "message": "Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."
+  }
  }
 };
