@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6038,
+  "version": 6039,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140697,8 +140697,8 @@ window.SLACK_DATA = {
     "2026-08-28": {
       "counts": {
         "as": {
+          "배선유": 3,
           "김동욱": 3,
-          "배선유": 2,
           "송태양": 3,
           "김현기": 1
         },
@@ -140708,6 +140708,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:31",
+          "store": "태성열처리",
+          "biz": "1171396935",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "MPOS-1101TE(S) / 카드 꽂으면 '핀 번호' 입력하라는데 핀패드 인식이 안됨/ 핀 번호 입력하도록 설정이 잘못된 것은 아닌지 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "상호. 태성열처리 주소. 남양주 내용. 2인치 용지요청 / 매장에서 나오셔서 as진행불가 / 10개 중 2,3개 문제 생기고 해당 증상이 발생할 때 사인패드가 깜빡거린다고 함 / 연결불량 의심되어 14:00에 연락해 사인패드 재설정 예정 / 기기 변경도 고려중이라고 하셔서 구매상담 ob 전달"
+        },
         {
           "time": "09:30",
           "store": "다올콩나물국밥",
@@ -140820,7 +140831,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 10,
+        "online": 11,
         "offline": 0,
         "unknown": 0
       },
@@ -140883,7 +140894,7 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787878105.006
+        "lastSeen": 1787878161.286
       }
     },
     "days": {
@@ -175178,7 +175189,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 09:48",
+    "at": "2026-08-28 09:49",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
