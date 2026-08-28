@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1182,
- "updatedAt": "2026-08-28 13:53",
+ "version": 1183,
+ "updatedAt": "2026-08-28 14:00",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "i_12742fcdd8ff.png",
      "fid": "F0BU59XCCUQ",
      "from": "댓글",
-     "path": "menu-files/1787892742_362309-0.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -346,6 +345,56 @@ window.MENU_REQUESTS = {
        "name": "산지직송홍합탕",
        "price": 10000
       }
+     ],
+     "path": "menu-files/1787892742_362309-0.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BTAUF0WE6",
+     "from": "댓글",
+     "path": "menu-files/1787892742_362309-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류및음료",
+       "name": "소주",
+       "price": 4500
+      },
+      {
+       "category": "주류및음료",
+       "name": "맥주",
+       "price": 4500
+      },
+      {
+       "category": "주류및음료",
+       "name": "오미자",
+       "price": 4500
+      },
+      {
+       "category": "주류및음료",
+       "name": "막걸리",
+       "price": 5000
+      },
+      {
+       "category": "주류및음료",
+       "name": "여울",
+       "price": 20000
+      },
+      {
+       "category": "주류및음료",
+       "name": "화요25",
+       "price": 30000
+      },
+      {
+       "category": "주류및음료",
+       "name": "복분자",
+       "price": 15000
+      },
+      {
+       "category": "주류및음료",
+       "name": "음료수",
+       "price": 2000
+      }
      ]
     }
    ],
@@ -354,10 +403,10 @@ window.MENU_REQUESTS = {
     "주류에 소주 이름(새로,처음처럼 등) 지우고 소주와 맥주로만 표기 요청 주셨습니다. :감사합니다꾸벅:",
     "수정 다 되면 채팅으로 안내 예정이라 솔라피 안 보내 주셔도 됩니다!"
    ],
-   "rc": 3,
-   "lr": "1787892793.540479",
+   "rc": 4,
+   "lr": "1787893170.524919",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787892742362309"
   },
