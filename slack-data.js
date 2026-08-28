@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6070,
+  "version": 6071,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140696,16 +140696,16 @@ window.SLACK_DATA = {
     },
     "2026-08-28": {
       "counts": {
-        "extern": {
-          "서상원": 2
-        },
         "as": {
-          "심성현": 2,
+          "심성현": 3,
           "고경림": 3,
           "김현기": 3,
           "배선유": 4,
           "김동욱": 3,
           "송태양": 3
+        },
+        "extern": {
+          "서상원": 2
         },
         "onboarding": {
           "김동욱": 3,
@@ -140719,6 +140719,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:45",
+          "store": "청담예슬",
+          "biz": "1145301115",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포프(노트북/태블릿) + 유프 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "12시 통화 요청"
+        },
         {
           "time": "10:40",
           "store": "수북(SOOBOOK)",
@@ -141029,7 +141040,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 25,
+        "online": 26,
         "offline": 3,
         "unknown": 0
       },
@@ -141088,7 +141099,7 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787881699.88
+        "lastSeen": 1787881884.678
       }
     },
     "days": {
@@ -175503,7 +175514,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 10:48",
+    "at": "2026-08-28 10:51",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
