@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1178,
- "updatedAt": "2026-08-28 13:29",
+ "version": 1179,
+ "updatedAt": "2026-08-28 13:35",
  "days": 30,
  "items": [
   {
@@ -18,11 +18,419 @@ window.MENU_REQUESTS = {
    "special": "수정할 게 있어서 다시 보내드렸고 이걸로 반영 부탁드립니다. (영문명 무시)",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BTCP5KL1F",
+     "from": "댓글",
+     "path": "menu-files/1787890507_677099-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "커피",
+       "name": "아메리카노",
+       "price": 3500
+      },
+      {
+       "category": "커피",
+       "name": "에스프레소",
+       "price": 3500
+      },
+      {
+       "category": "커피",
+       "name": "카페라떼",
+       "price": 4000
+      },
+      {
+       "category": "커피",
+       "name": "카푸치노",
+       "price": 4300
+      },
+      {
+       "category": "커피",
+       "name": "카페모카",
+       "price": 4500
+      },
+      {
+       "category": "커피",
+       "name": "헤이즐넛 아메리카노",
+       "price": 4000
+      },
+      {
+       "category": "커피",
+       "name": "헤이즐넛 라떼",
+       "price": 4500
+      },
+      {
+       "category": "커피",
+       "name": "바닐라 라떼",
+       "price": 4500
+      },
+      {
+       "category": "커피",
+       "name": "연유 카페라떼",
+       "price": 4500
+      },
+      {
+       "category": "커피",
+       "name": "카라멜 마끼아또",
+       "price": 4500
+      },
+      {
+       "category": "커피",
+       "name": "바나나 카페라떼",
+       "price": 4500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BTCP6STED",
+     "from": "댓글",
+     "path": "menu-files/1787890507_677099-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "논커피",
+       "name": "리얼초코라떼",
+       "price": 4500
+      },
+      {
+       "category": "논커피",
+       "name": "그린티라떼",
+       "price": 4500
+      },
+      {
+       "category": "논커피",
+       "name": "민트초코라떼",
+       "price": 4500
+      },
+      {
+       "category": "논커피",
+       "name": "리얼딸기라떼",
+       "price": 4800
+      },
+      {
+       "category": "논커피",
+       "name": "자색고구마 라떼",
+       "price": 4800
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BTAR04J66",
+     "from": "댓글",
+     "path": "menu-files/1787890507_677099-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "요거트",
+       "name": "플레인 요거트",
+       "price": 4800
+      },
+      {
+       "category": "요거트",
+       "name": "딸기 요거트",
+       "price": 5300
+      },
+      {
+       "category": "요거트",
+       "name": "복숭아 요거트",
+       "price": 5300
+      },
+      {
+       "category": "요거트",
+       "name": "레몬 요거트",
+       "price": 5300
+      },
+      {
+       "category": "요거트",
+       "name": "블루베리 요거트",
+       "price": 5300
+      },
+      {
+       "category": "요거트",
+       "name": "자몽 요거트",
+       "price": 5300
+      },
+      {
+       "category": "요거트",
+       "name": "망고 요거트",
+       "price": 5300
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BSVF46RF1",
+     "from": "댓글",
+     "path": "menu-files/1787890507_677099-3.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "스무디/쉐이크/플랫치노",
+       "name": "청포도 스무디",
+       "price": 5300
+      },
+      {
+       "category": "스무디/쉐이크/플랫치노",
+       "name": "블루베리 스무디",
+       "price": 5300
+      },
+      {
+       "category": "스무디/쉐이크/플랫치노",
+       "name": "망고 스무디",
+       "price": 5300
+      },
+      {
+       "category": "스무디/쉐이크/플랫치노",
+       "name": "밀크쉐이크",
+       "price": 4500
+      },
+      {
+       "category": "스무디/쉐이크/플랫치노",
+       "name": "딸기쉐이크",
+       "price": 4800
+      },
+      {
+       "category": "스무디/쉐이크/플랫치노",
+       "name": "바나나쉐이크",
+       "price": 4800
+      },
+      {
+       "category": "스무디/쉐이크/플랫치노",
+       "name": "그린티 플랫치노",
+       "price": 5300
+      },
+      {
+       "category": "스무디/쉐이크/플랫치노",
+       "name": "초코 플랫치노",
+       "price": 5300
+      },
+      {
+       "category": "스무디/쉐이크/플랫치노",
+       "name": "민트초코 플랫치노",
+       "price": 5300
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BTAR24EPL",
+     "from": "댓글",
+     "path": "menu-files/1787890507_677099-4.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "음료",
+       "name": "복숭아 아이스티",
+       "price": 3800
+      },
+      {
+       "category": "음료",
+       "name": "레몬 아이스티",
+       "price": 3800
+      },
+      {
+       "category": "음료",
+       "name": "레몬에이드",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "블루베리 에이드",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "자몽에이드",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "청포도에이드",
+       "price": 4000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BT6P9JHJR",
+     "from": "댓글",
+     "path": "menu-files/1787890507_677099-5.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "티",
+       "name": "제주그린티",
+       "price": 3500
+      },
+      {
+       "category": "티",
+       "name": "페퍼민트",
+       "price": 3500
+      },
+      {
+       "category": "티",
+       "name": "캐모마일",
+       "price": 3500
+      },
+      {
+       "category": "티",
+       "name": "히비스커스",
+       "price": 3500
+      },
+      {
+       "category": "티",
+       "name": "루이보스",
+       "price": 3500
+      },
+      {
+       "category": "티",
+       "name": "로즈마리",
+       "price": 3500
+      },
+      {
+       "category": "티",
+       "name": "유자차",
+       "price": 3500
+      },
+      {
+       "category": "티",
+       "name": "자몽차",
+       "price": 3500
+      },
+      {
+       "category": "티",
+       "name": "생강차",
+       "price": 3500
+      },
+      {
+       "category": "티",
+       "name": "금화규꽃차",
+       "price": 3500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BT6PA0UUD",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "베이커리",
+       "name": "크루아상",
+       "price": 2800
+      },
+      {
+       "category": "베이커리",
+       "name": "생크림크루아상",
+       "price": 3400
+      },
+      {
+       "category": "베이커리",
+       "name": "에그마요크루아상",
+       "price": 4000
+      },
+      {
+       "category": "베이커리",
+       "name": "앙버터크루아상",
+       "price": 4500
+      },
+      {
+       "category": "베이커리",
+       "name": "크루아상샌드위치",
+       "price": 4500
+      },
+      {
+       "category": "베이커리",
+       "name": "소금빵",
+       "price": 3500
+      },
+      {
+       "category": "베이커리",
+       "name": "마들렌/휘낭시에",
+       "price": 2300
+      },
+      {
+       "category": "베이커리",
+       "name": "글레이즈도넛",
+       "price": 1600
+      },
+      {
+       "category": "베이커리",
+       "name": "초코후로스트",
+       "price": 1600
+      },
+      {
+       "category": "베이커리",
+       "name": "초코링",
+       "price": 1700
+      },
+      {
+       "category": "베이커리",
+       "name": "슈가딸기",
+       "price": 1800
+      },
+      {
+       "category": "베이커리",
+       "name": "슈가바바리안",
+       "price": 1800
+      },
+      {
+       "category": "베이커리",
+       "name": "초코후렌치",
+       "price": 1800
+      },
+      {
+       "category": "베이커리",
+       "name": "더블쿠키초코링",
+       "price": 1900
+      },
+      {
+       "category": "베이커리",
+       "name": "초코보스톤",
+       "price": 1900
+      },
+      {
+       "category": "베이커리",
+       "name": "초코마카롱도넛",
+       "price": 1900
+      },
+      {
+       "category": "베이커리",
+       "name": "딸기마카롱도넛",
+       "price": 1900
+      },
+      {
+       "category": "베이커리",
+       "name": "6개세트",
+       "price": 9900
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BT8TSPLLE",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "기본",
+       "name": "개강이벤트",
+       "price": 2000
+      }
+     ]
+    }
+   ],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787890510.677589",
+   "replies": [
+    "백업"
+   ],
+   "rc": 2,
+   "lr": "1787891588.765819",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
