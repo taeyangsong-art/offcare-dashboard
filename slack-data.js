@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6096,
+  "version": 6097,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140702,6 +140702,14 @@ window.SLACK_DATA = {
           "서상원": 2,
           "배선유": 1
         },
+        "onboarding": {
+          "배선유": 1,
+          "김동욱": 3,
+          "심성현": 2,
+          "김규빈": 1,
+          "고경림": 1,
+          "김현기": 1
+        },
         "as": {
           "김현기": 8,
           "송태양": 5,
@@ -140710,13 +140718,6 @@ window.SLACK_DATA = {
           "심성현": 6,
           "김규빈": 2,
           "배선유": 5
-        },
-        "onboarding": {
-          "김동욱": 3,
-          "심성현": 2,
-          "김규빈": 1,
-          "고경림": 1,
-          "김현기": 1
         },
         "transfer": {
           "송태양": 1
@@ -140738,6 +140739,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "제주포스"
+        },
+        {
+          "time": "11:30",
+          "store": "유니헤어",
+          "biz": "5792800631",
+          "cat": "onboarding",
+          "emp": "배선유",
+          "req": "프론트+유프 온보딩 부탁드립니다:감사합니다꾸벅:",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료"
         },
         {
           "time": "11:29",
@@ -141382,11 +141394,46 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 50,
+        "online": 51,
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "11:45"
+      "updatedAt": "11:54",
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 0,
+          "low": 0
+        },
+        "nps": {
+          "count": 1,
+          "low": 0
+        },
+        "high": {
+          "install": 0,
+          "nps": 1
+        },
+        "npsDist": {
+          "10": 1
+        },
+        "installDist": {},
+        "byIndustry": {},
+        "byTenure": {
+          "12개월": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "KPN": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {},
+        "alerts": [],
+        "praises": []
+      }
     }
   },
   "resp": {
@@ -141441,7 +141488,7 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787885420.899
+        "lastSeen": 1787885661.865
       }
     },
     "days": {
@@ -176000,7 +176047,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 11:50",
+    "at": "2026-08-28 11:54",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
