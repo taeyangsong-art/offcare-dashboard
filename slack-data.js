@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6097,
+  "version": 6098,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140697,8 +140697,8 @@ window.SLACK_DATA = {
     "2026-08-28": {
       "counts": {
         "extern": {
+          "김동욱": 2,
           "김기범": 3,
-          "김동욱": 1,
           "서상원": 2,
           "배선유": 1
         },
@@ -140729,6 +140729,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:54",
+          "store": "던던(DAWN-DAWN)",
+          "biz": "2021621000",
+          "cat": "extern",
+          "emp": "김동욱",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "11:39",
           "store": "정품전자담배 제원점",
@@ -141394,7 +141405,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 51,
+        "online": 52,
         "offline": 9,
         "unknown": 0
       },
@@ -141488,7 +141499,7 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787885661.865
+        "lastSeen": 1787885726.874
       }
     },
     "days": {
@@ -176047,7 +176058,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 11:54",
+    "at": "2026-08-28 11:55",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
