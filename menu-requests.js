@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1191,
- "updatedAt": "2026-08-28 14:25",
+ "version": 1192,
+ "updatedAt": "2026-08-28 15:00",
  "days": 30,
  "items": [
   {
@@ -16744,8 +16744,7 @@ window.MENU_REQUESTS = {
        "name": "콘파냐",
        "price": 3500
       }
-     ],
-     "path": "menu-files/1787291923_828629-0.jpeg"
+     ]
     },
     {
      "name": "IMG_5818.jpg.jpeg",
@@ -16873,8 +16872,7 @@ window.MENU_REQUESTS = {
        "name": "아이스티",
        "price": 4000
       }
-     ],
-     "path": "menu-files/1787291923_828629-1.jpeg"
+     ]
     },
     {
      "name": "IMG_5819.jpg.jpeg",
@@ -17027,8 +17025,7 @@ window.MENU_REQUESTS = {
        "name": "아망디오",
        "price": 0
       }
-     ],
-     "path": "menu-files/1787291923_828629-2.jpeg"
+     ]
     },
     {
      "name": "IMG_5820.jpg.jpeg",
@@ -17096,8 +17093,7 @@ window.MENU_REQUESTS = {
        "name": "초",
        "price": 3000
       }
-     ],
-     "path": "menu-files/1787291923_828629-3.jpeg"
+     ]
     },
     {
      "name": "IMG_5821.jpg.jpeg",
@@ -17150,8 +17146,7 @@ window.MENU_REQUESTS = {
        "name": "00",
        "price": 0
       }
-     ],
-     "path": "menu-files/1787291923_828629-4.jpeg"
+     ]
     }
    ],
    "datt": [],
