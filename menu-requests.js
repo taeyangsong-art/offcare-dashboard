@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1155,
- "updatedAt": "2026-08-28 11:22",
+ "version": 1156,
+ "updatedAt": "2026-08-28 11:25",
  "days": 30,
  "items": [
   {
@@ -14692,13 +14692,6 @@ window.MENU_REQUESTS = {
        "price": 1500
       }
      ]
-    },
-    {
-     "name": "레이지모닝.zip",
-     "fid": "F0BRNDTAD1C",
-     "from": "원글",
-     "path": "menu-files/1787278980_607179-0.zip",
-     "nj": 1
     }
    ],
    "datt": [],
