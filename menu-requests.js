@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1147,
- "updatedAt": "2026-08-28 09:57",
+ "version": 1148,
+ "updatedAt": "2026-08-28 10:00",
  "days": 30,
  "items": [
   {
@@ -45338,27 +45338,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785297470238059"
-  },
-  {
-   "ts": "1785286840.172609",
-   "date": "2026-07-29",
-   "time": "10:00",
-   "store": "커넥츠커피 마곡점",
-   "biz": "5450403702",
-   "pos": "",
-   "content": "내일 설치 매장으로 메뉴 등록 부탁드립니다. 엑셀파일 첨부드립니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1785291130.947199",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785286840172609"
   }
  ],
  "ocr": {
