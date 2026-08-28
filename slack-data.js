@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6074,
+  "version": 6075,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -141132,15 +141132,11 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787882183.481
+        "lastSeen": 1787882244.229
       },
       "1787882175.501519": {
         "post": "1787882175.501519",
-        "lastSeen": 1787882183.481
-      },
-      "1787882152.937749": {
-        "post": "1787882152.937749",
-        "lastSeen": 1787882183.481
+        "lastSeen": 1787882244.229
       }
     },
     "days": {
@@ -175346,8 +175342,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-28": {
-        "cnt": 25,
-        "sumMin": 88.10810407797494,
+        "cnt": 26,
+        "sumMin": 89.12339159647622,
         "over": 0,
         "items": [
           {
@@ -175549,13 +175545,21 @@ window.SLACK_DATA = {
             "biz": "3371500250",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "10:55",
+            "min": 1,
+            "store": "몰디브태닝(광교)",
+            "biz": "8762702173",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-28 10:56",
+    "at": "2026-08-28 10:57",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
