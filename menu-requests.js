@@ -3,10 +3,306 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1189,
- "updatedAt": "2026-08-28 14:23",
+ "version": 1190,
+ "updatedAt": "2026-08-28 14:24",
  "days": 30,
  "items": [
+  {
+   "ts": "1787894648.419459",
+   "date": "2026-08-28",
+   "time": "14:24",
+   "store": "금화춘",
+   "biz": "1248589026",
+   "pos": "",
+   "content": "메뉴 등록 부탁드립니다~",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BSVN1NUVD",
+     "from": "댓글",
+     "path": "menu-files/1787894648_419459-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "짜장",
+       "name": "짜장",
+       "price": 5500
+      },
+      {
+       "category": "짜장",
+       "name": "간짜장",
+       "price": 7500
+      },
+      {
+       "category": "짜장",
+       "name": "고추간짜장",
+       "price": 8000
+      },
+      {
+       "category": "짜장",
+       "name": "삼선간짜장",
+       "price": 9500
+      },
+      {
+       "category": "짜장",
+       "name": "버터머쉬룸간짜장",
+       "price": 10000
+      },
+      {
+       "category": "짬뽕",
+       "name": "짬뽕",
+       "price": 7500
+      },
+      {
+       "category": "짬뽕",
+       "name": "우거지짬뽕",
+       "price": 8000
+      },
+      {
+       "category": "짬뽕",
+       "name": "바지락짬뽕",
+       "price": 10500
+      },
+      {
+       "category": "짬뽕",
+       "name": "삼선짬뽕",
+       "price": 11000
+      },
+      {
+       "category": "짬뽕",
+       "name": "소고기짬뽕",
+       "price": 11500
+      },
+      {
+       "category": "짬뽕",
+       "name": "순두부짬뽕",
+       "price": 10000
+      },
+      {
+       "category": "짬뽕",
+       "name": "크림짬뽕",
+       "price": 12000
+      },
+      {
+       "category": "밥류",
+       "name": "볶음밥",
+       "price": 8500
+      },
+      {
+       "category": "밥류",
+       "name": "새우볶음밥",
+       "price": 10000
+      },
+      {
+       "category": "밥류",
+       "name": "중화비빔밥",
+       "price": 10000
+      },
+      {
+       "category": "밥류",
+       "name": "삼선짬뽕밥",
+       "price": 11000
+      },
+      {
+       "category": "볶음면",
+       "name": "해물쟁반짜장",
+       "price": 10000
+      },
+      {
+       "category": "볶음면",
+       "name": "해물볶음짬뽕",
+       "price": 10000
+      },
+      {
+       "category": "SET MENU",
+       "name": "1인 세트",
+       "price": 13000
+      },
+      {
+       "category": "SET MENU",
+       "name": "2인 세트",
+       "price": 20000
+      },
+      {
+       "category": "SET MENU",
+       "name": "3인 세트",
+       "price": 35000
+      },
+      {
+       "category": "SET MENU",
+       "name": "4인 세트",
+       "price": 40000
+      },
+      {
+       "category": "탕수육 (수제)",
+       "name": "미니 (200g)",
+       "price": 8000
+      },
+      {
+       "category": "탕수육 (수제)",
+       "name": "소 (400g)",
+       "price": 16000
+      },
+      {
+       "category": "탕수육 (수제)",
+       "name": "중 (500g)",
+       "price": 20000
+      },
+      {
+       "category": "탕수육 (수제)",
+       "name": "대 (650g)",
+       "price": 26000
+      },
+      {
+       "category": "깐풍기 (수제)",
+       "name": "미니",
+       "price": 8000
+      },
+      {
+       "category": "깐풍기 (수제)",
+       "name": "소",
+       "price": 16000
+      },
+      {
+       "category": "칠리새우",
+       "name": "미니 (5미)",
+       "price": 8000
+      },
+      {
+       "category": "칠리새우",
+       "name": "소 (10미)",
+       "price": 16000
+      },
+      {
+       "category": "크림새우",
+       "name": "미니 (5미)",
+       "price": 8000
+      },
+      {
+       "category": "크림새우",
+       "name": "소 (10미)",
+       "price": 16000
+      },
+      {
+       "category": "만두류",
+       "name": "중화야끼만두 (5p)",
+       "price": 3500
+      },
+      {
+       "category": "만두류",
+       "name": "마라야끼교자 (5p)",
+       "price": 5000
+      },
+      {
+       "category": "추가메뉴",
+       "name": "곱빼기",
+       "price": 2000
+      },
+      {
+       "category": "추가메뉴",
+       "name": "계란후라이",
+       "price": 1000
+      },
+      {
+       "category": "추가메뉴",
+       "name": "고추",
+       "price": 1000
+      },
+      {
+       "category": "추가메뉴",
+       "name": "우거지",
+       "price": 1000
+      },
+      {
+       "category": "추가메뉴",
+       "name": "짬뽕국물",
+       "price": 1500
+      },
+      {
+       "category": "주류",
+       "name": "참이슬",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "처음처럼",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "새로",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "진로",
+       "price": 5000
+      },
+      {
+       "category": "맥주",
+       "name": "카스 (500ml)",
+       "price": 5000
+      },
+      {
+       "category": "맥주",
+       "name": "테라 (500ml)",
+       "price": 5000
+      },
+      {
+       "category": "맥주",
+       "name": "칭따오 (640ml)",
+       "price": 7000
+      },
+      {
+       "category": "청하",
+       "name": "청하 (360ml)",
+       "price": 6000
+      },
+      {
+       "category": "중국주",
+       "name": "연태고량주 125ml",
+       "price": 11000
+      },
+      {
+       "category": "중국주",
+       "name": "연태고량주 250ml",
+       "price": 20000
+      },
+      {
+       "category": "음료",
+       "name": "코카콜라",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "펩시제로",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "칠성사이다",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "환타 파인",
+       "price": 2000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1787894671.682629",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787894648419459"
+  },
   {
    "ts": "1787894482.807499",
    "date": "2026-08-28",
@@ -1101,8 +1397,8 @@ window.MENU_REQUESTS = {
     "외부라고 하셔서 저걸로 괜히 전달드려서 혼동 드렸네용 ㅠㅠ",
     "요러케 바꿔놨어용"
    ],
-   "rc": 7,
-   "lr": "1787894619.928609",
+   "rc": 8,
+   "lr": "1787894621.868249",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
