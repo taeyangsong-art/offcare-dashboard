@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6197,
+  "version": 6198,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140813,7 +140813,7 @@ window.SLACK_DATA = {
           "req": "QR오더로 주문 시 순서편집이 되지 않아 확인 부탁드립니다. (순서편집 경로 안내드렸고 수정하였으나 반영되지 않았다고 주장)",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "/ 순서편집 및 주문서/테이블 설정 안내 완료"
         },
         {
           "time": "15:00",
@@ -142510,26 +142510,27 @@ window.SLACK_DATA = {
         "offline": 25,
         "unknown": 0
       },
-      "updatedAt": "15:15",
+      "updatedAt": "15:25",
       "voc": {
-        "responses": 6,
+        "responses": 8,
         "install": {
           "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 6,
+          "count": 8,
           "low": 2
         },
         "high": {
           "install": 0,
-          "nps": 3
+          "nps": 4
         },
         "npsDist": {
           "2": 1,
           "5": 1,
           "7": 1,
-          "10": 3
+          "8": 1,
+          "10": 4
         },
         "installDist": {
           "3": 1
@@ -142538,6 +142539,14 @@ window.SLACK_DATA = {
           "서비스[학원]": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 2,
+            "low": 0
+          },
+          "3개월": {
+            "total": 1,
+            "low": 0
+          },
           "6개월": {
             "total": 3,
             "low": 1
@@ -142549,13 +142558,17 @@ window.SLACK_DATA = {
           "1개월": {
             "total": 1,
             "low": 1
-          },
-          "12개월": {
-            "total": 1,
-            "low": 0
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 1,
+            "low": 0
+          },
+          "KPN": {
+            "total": 2,
+            "low": 0
+          },
           "SECTA9": {
             "total": 3,
             "low": 1
@@ -142563,10 +142576,6 @@ window.SLACK_DATA = {
           "KOCES": {
             "total": 2,
             "low": 1
-          },
-          "KPN": {
-            "total": 1,
-            "low": 0
           }
         },
         "reasonCounts": {
@@ -142622,9 +142631,9 @@ window.SLACK_DATA = {
         "praises": []
       },
       "ob": {
-        "count": 9,
+        "count": 10,
         "byEmp": {
-          "김규빈": 9
+          "김규빈": 10
         },
         "items": [
           {
@@ -142634,6 +142643,14 @@ window.SLACK_DATA = {
             "recvDate": "2026-08-28",
             "planDate": "",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787563520060549"
+          },
+          {
+            "key": "2026년 8월 28일 오전 8:42:50|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786252053938489#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-08-28",
+            "planDate": "2026-09-02",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786252053938489"
           },
           {
             "key": "2026년 8월 27일 오후 5:01:29|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787118612061589#1",
@@ -142747,11 +142764,11 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787898141.8
+        "lastSeen": 1787898324.453
       },
       "1787887664.797579": {
         "post": "1787887664.797579",
-        "lastSeen": 1787898141.8
+        "lastSeen": 1787898324.453
       },
       "1787891340.301269": {
         "post": "1787891340.301269",
@@ -142759,31 +142776,27 @@ window.SLACK_DATA = {
       },
       "1787894648.419459": {
         "post": "1787894648.419459",
-        "lastSeen": 1787898141.8
+        "lastSeen": 1787898324.453
       },
       "1787894890.893389": {
         "post": "1787894890.893389",
-        "lastSeen": 1787898141.8
+        "lastSeen": 1787898324.453
       },
       "1787895000.599679": {
         "post": "1787895000.599679",
-        "lastSeen": 1787898141.8
-      },
-      "1787897373.017359": {
-        "post": "1787897373.017359",
-        "lastSeen": 1787898141.8
+        "lastSeen": 1787898324.453
       },
       "1787897625.967949": {
         "post": "1787897625.967949",
-        "lastSeen": 1787898141.8
+        "lastSeen": 1787898324.453
       },
       "1787897629.895269": {
         "post": "1787897629.895269",
-        "lastSeen": 1787898141.8
+        "lastSeen": 1787898324.453
       },
       "1787897700.424369": {
         "post": "1787897700.424369",
-        "lastSeen": 1787898141.8
+        "lastSeen": 1787898324.453
       }
     },
     "days": {
@@ -176989,8 +177002,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-28": {
-        "cnt": 127,
-        "sumMin": 1450.578692082564,
+        "cnt": 128,
+        "sumMin": 1464.9138444344203,
         "over": 6,
         "items": [
           {
@@ -178008,25 +178021,33 @@ window.SLACK_DATA = {
             "biz": "8990902721",
             "who": "최민석",
             "cat": "as"
+          },
+          {
+            "hm": "15:09",
+            "min": 14.3,
+            "store": "킹콩낚시",
+            "biz": "7510701620",
+            "who": "고경림",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-28 15:22",
+    "at": "2026-08-28 15:25",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3781,
-    "named": 479,
+    "named": 480,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 479,
+    "done": 480,
     "byStatus": {
-      "일정등록완료": 301,
+      "일정등록완료": 302,
       "1차부재": 107,
       "점주직접접수": 41,
       "설치불가": 9,
