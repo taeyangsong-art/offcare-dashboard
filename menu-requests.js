@@ -3,10 +3,55 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1149,
- "updatedAt": "2026-08-28 10:03",
+ "version": 1150,
+ "updatedAt": "2026-08-28 11:04",
  "days": 30,
  "items": [
+  {
+   "ts": "1787882628.560099",
+   "date": "2026-08-28",
+   "time": "11:03",
+   "store": "바이트앤레스트",
+   "biz": "5438503030",
+   "pos": "퍼스트포스",
+   "content": "도넛창은 전체삭제해주세요\n\n핫도그 \n칠리살사핫도그 7.000원\n딥치즈 핫도그 7,000원\n만들어주세요",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1-iCE9-XwyA6ESXvzZnanxaLNlcYHGbE_/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1DluaSMBgWMteqmPQUWC3FF7NUWdJDN3S/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787882631.243639",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787882628560099"
+  },
+  {
+   "ts": "1787882569.066069",
+   "date": "2026-08-28",
+   "time": "11:02",
+   "store": "커피마노보라공방",
+   "biz": "5932001509",
+   "pos": "토스포스",
+   "content": "메뉴 신규등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787882588.361149",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787882569066069"
+  },
   {
    "ts": "1787878240.203639",
    "date": "2026-08-28",
