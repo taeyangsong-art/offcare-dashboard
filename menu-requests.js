@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1184,
- "updatedAt": "2026-08-28 14:04",
+ "version": 1185,
+ "updatedAt": "2026-08-28 14:11",
  "days": 30,
  "items": [
   {
@@ -451,7 +451,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BTCP5KL1F",
      "from": "댓글",
-     "path": "menu-files/1787890507_677099-0.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -509,13 +508,13 @@ window.MENU_REQUESTS = {
        "name": "바나나 카페라떼",
        "price": 4500
       }
-     ]
+     ],
+     "path": "menu-files/1787890507_677099-0.png"
     },
     {
      "name": "image.png",
      "fid": "F0BTCP6STED",
      "from": "댓글",
-     "path": "menu-files/1787890507_677099-1.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -543,13 +542,13 @@ window.MENU_REQUESTS = {
        "name": "자색고구마 라떼",
        "price": 4800
       }
-     ]
+     ],
+     "path": "menu-files/1787890507_677099-1.png"
     },
     {
      "name": "image.png",
      "fid": "F0BTAR04J66",
      "from": "댓글",
-     "path": "menu-files/1787890507_677099-2.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -587,13 +586,13 @@ window.MENU_REQUESTS = {
        "name": "망고 요거트",
        "price": 5300
       }
-     ]
+     ],
+     "path": "menu-files/1787890507_677099-2.png"
     },
     {
      "name": "image.png",
      "fid": "F0BSVF46RF1",
      "from": "댓글",
-     "path": "menu-files/1787890507_677099-3.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -641,13 +640,13 @@ window.MENU_REQUESTS = {
        "name": "민트초코 플랫치노",
        "price": 5300
       }
-     ]
+     ],
+     "path": "menu-files/1787890507_677099-3.png"
     },
     {
      "name": "image.png",
      "fid": "F0BTAR24EPL",
      "from": "댓글",
-     "path": "menu-files/1787890507_677099-4.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -680,13 +679,13 @@ window.MENU_REQUESTS = {
        "name": "청포도에이드",
        "price": 4000
       }
-     ]
+     ],
+     "path": "menu-files/1787890507_677099-4.png"
     },
     {
      "name": "image.png",
      "fid": "F0BT6P9JHJR",
      "from": "댓글",
-     "path": "menu-files/1787890507_677099-5.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -739,7 +738,8 @@ window.MENU_REQUESTS = {
        "name": "금화규꽃차",
        "price": 3500
       }
-     ]
+     ],
+     "path": "menu-files/1787890507_677099-5.png"
     },
     {
      "name": "image.png",
@@ -855,10 +855,11 @@ window.MENU_REQUESTS = {
    ],
    "datt": [],
    "replies": [
-    "백업"
+    "백업",
+    "님, 아직 채팅 응대중인데 위 등록 사진 전달드리니\n카푸치노, 바나나 카페라떼, 카라멜마끼아또 같은 메뉴는 엑셀 파일에 없다고 하시며\n기존 메뉴가 아직 남아 있다고 하시어 확인 부탁드려도 될까요? :ㅠㅠ:"
    ],
-   "rc": 2,
-   "lr": "1787891588.765819",
+   "rc": 3,
+   "lr": "1787893896.091979",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
