@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6055,
+  "version": 6056,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140931,7 +140931,7 @@ window.SLACK_DATA = {
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "10:15"
+      "updatedAt": "10:16"
     }
   },
   "resp": {
@@ -140986,15 +140986,11 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787879721.295
+        "lastSeen": 1787879905.549
       },
       "1787879700.236719": {
         "post": "1787879700.236719",
-        "lastSeen": 1787879721.295
-      },
-      "1787879689.408629": {
-        "post": "1787879689.408629",
-        "lastSeen": 1787879721.295
+        "lastSeen": 1787879905.549
       }
     },
     "days": {
@@ -175200,8 +175196,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-28": {
-        "cnt": 18,
-        "sumMin": 68.25604346195857,
+        "cnt": 19,
+        "sumMin": 70.32293297847112,
         "over": 0,
         "items": [
           {
@@ -175347,13 +175343,21 @@ window.SLACK_DATA = {
             "biz": "2881900238",
             "who": "심성현",
             "cat": "as"
+          },
+          {
+            "hm": "10:14",
+            "min": 2.1,
+            "store": "주식회사 콘텐츠그룹아베끄",
+            "biz": "1718603768",
+            "who": "고경림",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-28 10:15",
+    "at": "2026-08-28 10:18",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
