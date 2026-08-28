@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6066,
+  "version": 6067,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140986,7 +140986,7 @@ window.SLACK_DATA = {
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "10:37"
+      "updatedAt": "10:40"
     }
   },
   "resp": {
@@ -141041,11 +141041,7 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787881101.816
-      },
-      "1787881057.452839": {
-        "post": "1787881057.452839",
-        "lastSeen": 1787881101.816
+        "lastSeen": 1787881289.135
       }
     },
     "days": {
@@ -175251,8 +175247,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-28": {
-        "cnt": 21,
-        "sumMin": 78.90514534314472,
+        "cnt": 22,
+        "sumMin": 81.20552302996316,
         "over": 0,
         "items": [
           {
@@ -175422,13 +175418,21 @@ window.SLACK_DATA = {
             "biz": "8512701952",
             "who": "김동욱",
             "cat": "as"
+          },
+          {
+            "hm": "10:37",
+            "min": 2.3,
+            "store": "리에또",
+            "biz": "6313401735",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-28 10:38",
+    "at": "2026-08-28 10:41",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
