@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6057,
+  "version": 6058,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140698,9 +140698,9 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "고경림": 2,
+          "김현기": 3,
           "심성현": 1,
           "배선유": 4,
-          "김현기": 2,
           "김동욱": 3,
           "송태양": 3
         },
@@ -140726,6 +140726,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "키오스크 전용으로 설정 로그아웃후 재온보딩후 정상연동확인"
+        },
+        {
+          "time": "10:00",
+          "store": "꿀보리밥",
+          "biz": "3260703645",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "PC변경으로 인해 단말기 재 온보딩 요청 주셨습니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "개인노트북재온보딩완료"
         },
         {
           "time": "10:00",
@@ -140938,7 +140949,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 18,
+        "online": 19,
         "offline": 2,
         "unknown": 0
       },
@@ -140997,11 +141008,7 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787880081.435
-      },
-      "1787879700.236719": {
-        "post": "1787879700.236719",
-        "lastSeen": 1787880081.435
+        "lastSeen": 1787880144.228
       }
     },
     "days": {
@@ -175207,8 +175214,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-28": {
-        "cnt": 19,
-        "sumMin": 70.32293297847112,
+        "cnt": 20,
+        "sumMin": 77.19951266447703,
         "over": 0,
         "items": [
           {
@@ -175362,13 +175369,21 @@ window.SLACK_DATA = {
             "biz": "1718603768",
             "who": "고경림",
             "cat": "as"
+          },
+          {
+            "hm": "10:15",
+            "min": 6.9,
+            "store": "네일공주",
+            "biz": "1662801486",
+            "who": "고경림",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-28 10:21",
+    "at": "2026-08-28 10:22",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
