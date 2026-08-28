@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6094,
+  "version": 6095,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140703,11 +140703,11 @@ window.SLACK_DATA = {
           "배선유": 1
         },
         "as": {
+          "김현기": 8,
           "송태양": 5,
           "고경림": 5,
           "김동욱": 7,
           "심성현": 6,
-          "김현기": 7,
           "김규빈": 2,
           "배선유": 5
         },
@@ -140738,6 +140738,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "제주포스"
+        },
+        {
+          "time": "11:29",
+          "store": "주식회사 더뉴",
+          "biz": "5958700251",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "어제 방문설치로 설치했는데 포스기에는 리더기 상태 체크 오류, 프론트에는 매장정보를 입력하라고 뜬다 하시어 확인 부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "프론트 재온보딩 후 okpos내 키다운로드 완료 후 완료"
         },
         {
           "time": "11:28",
@@ -141372,7 +141383,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 50,
-        "offline": 8,
+        "offline": 9,
         "unknown": 0
       },
       "updatedAt": "11:45"
@@ -141430,11 +141441,7 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787885182.941
-      },
-      "1787885140.708999": {
-        "post": "1787885140.708999",
-        "lastSeen": 1787885182.941
+        "lastSeen": 1787885363.362
       }
     },
     "days": {
@@ -175640,8 +175647,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-28": {
-        "cnt": 42,
-        "sumMin": 187.12871770064032,
+        "cnt": 43,
+        "sumMin": 189.33609271844225,
         "over": 0,
         "items": [
           {
@@ -175979,13 +175986,21 @@ window.SLACK_DATA = {
             "biz": "5201102997",
             "who": "김규빈",
             "cat": "as"
+          },
+          {
+            "hm": "11:45",
+            "min": 2.2,
+            "store": "웅칼 강남점",
+            "biz": "2758103008",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-28 11:46",
+    "at": "2026-08-28 11:49",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
