@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1223,
- "updatedAt": "2026-08-28 17:06",
+ "version": 1224,
+ "updatedAt": "2026-08-28 17:12",
  "days": 30,
  "items": [
   {
@@ -23,11 +23,11 @@ window.MENU_REQUESTS = {
    "replies": [
     "메뉴 추가 부탁드립니다!\n• 생면칼국수 12,000원\n•  콩국수 12,000원\n• 김치만두 12,000원\n• 빈대떡 15,000원\n• 새우찜 15,000원\n• 소라 15,000원"
    ],
-   "rc": 2,
-   "lr": "1787903272.511849",
+   "rc": 5,
+   "lr": "1787904657.185069",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787903233043169"
   },
   {
@@ -117,7 +117,7 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1787902679.102059",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787902675830709"
   },
