@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6135,
+  "version": 6136,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140722,6 +140722,7 @@ window.SLACK_DATA = {
           "배선유": 1
         },
         "transfer": {
+          "김동욱": 1,
           "송태양": 1
         },
         "menu": {
@@ -140774,7 +140775,7 @@ window.SLACK_DATA = {
           "req": "포프(노트북) 온보딩 도움 요청드립니다. RJ45케이블이 없다고 하시어 영상으로 확인 부탁드립니다!",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "프린터 설치 완료"
         },
         {
           "time": "13:00",
@@ -140797,6 +140798,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "PC + 프론트 온보딩 완료"
+        },
+        {
+          "time": "13:00",
+          "store": "메디결라인 청라점",
+          "biz": "",
+          "cat": "transfer",
+          "emp": "김동욱",
+          "req": "8월 28일 13~14시 / 메뉴 복사 O / 프론트",
+          "hw": "",
+          "intake": "online",
+          "note": "포프(노트북) 명의변경 완료"
         },
         {
           "time": "12:56",
@@ -141683,11 +141695,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 74,
+        "online": 75,
         "offline": 12,
         "unknown": 0
       },
-      "updatedAt": "13:12",
+      "updatedAt": "13:15",
       "voc": {
         "responses": 1,
         "install": {
@@ -141777,23 +141789,35 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787890404.741
+        "lastSeen": 1787890521.288
       },
       "1787887664.797579": {
         "post": "1787887664.797579",
-        "lastSeen": 1787890404.741
+        "lastSeen": 1787890521.288
       },
       "1787889601.028909": {
         "post": "1787889601.028909",
-        "lastSeen": 1787890404.741
+        "lastSeen": 1787890521.288
       },
       "1787889573.634629": {
         "post": "1787889573.634629",
-        "lastSeen": 1787890404.741
+        "lastSeen": 1787890521.288
       },
       "1787890379.254649": {
         "post": "1787890379.254649",
-        "lastSeen": 1787890404.741
+        "lastSeen": 1787890521.288
+      },
+      "1787890501.968809": {
+        "post": "1787890501.968809",
+        "lastSeen": 1787890521.288
+      },
+      "1787890500.713189": {
+        "post": "1787890500.713189",
+        "lastSeen": 1787890521.288
+      },
+      "1787890507.677099": {
+        "post": "1787890507.677099",
+        "lastSeen": 1787890521.288
       }
     },
     "days": {
@@ -176472,13 +176496,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 13:13",
+    "at": "2026-08-28 13:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3772,
+    "rows": 3774,
     "named": 470,
     "unknownName": 0,
     "beforeStart": 0,
