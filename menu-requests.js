@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1214,
- "updatedAt": "2026-08-28 16:41",
+ "version": 1215,
+ "updatedAt": "2026-08-28 16:43",
  "days": 30,
  "items": [
+  {
+   "ts": "1787903009.087349",
+   "date": "2026-08-28",
+   "time": "16:43",
+   "store": "동동국밥 논현점",
+   "biz": "7068503378",
+   "pos": "",
+   "content": "기존 테이블 유지, 선불 테이블 16개 생성 부탁드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787903012.131549",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787903009087349"
+  },
   {
    "ts": "1787902675.830709",
    "date": "2026-08-28",
@@ -48765,27 +48786,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785313848978369"
-  },
-  {
-   "ts": "1785310986.252279",
-   "date": "2026-07-29",
-   "time": "16:43",
-   "store": "피자스쿨(구로전화국점)",
-   "biz": "1191789592",
-   "pos": "오케이포스",
-   "content": "소스 ㅡ 할라피뇨 500원\n추가 해주세요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1785310990.246239",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785310986252279"
   }
  ],
  "ocr": {
