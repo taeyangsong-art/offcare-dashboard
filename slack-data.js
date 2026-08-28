@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6056,
+  "version": 6057,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140697,8 +140697,8 @@ window.SLACK_DATA = {
     "2026-08-28": {
       "counts": {
         "as": {
+          "고경림": 2,
           "심성현": 1,
-          "고경림": 1,
           "배선유": 4,
           "김현기": 2,
           "김동욱": 3,
@@ -140716,6 +140716,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:14",
+          "store": "주식회사 콘텐츠그룹아베끄",
+          "biz": "1718603768",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "맥북 프론트 온보딩중, 인증번호 누르라고 나오며 지속 연결이 안되어 도움부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "키오스크 전용으로 설정 로그아웃후 재온보딩후 정상연동확인"
+        },
         {
           "time": "10:00",
           "store": "명동찰보리밥",
@@ -140927,7 +140938,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 17,
+        "online": 18,
         "offline": 2,
         "unknown": 0
       },
@@ -140986,11 +140997,11 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787879905.549
+        "lastSeen": 1787880081.435
       },
       "1787879700.236719": {
         "post": "1787879700.236719",
-        "lastSeen": 1787879905.549
+        "lastSeen": 1787880081.435
       }
     },
     "days": {
@@ -175357,7 +175368,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 10:18",
+    "at": "2026-08-28 10:21",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
