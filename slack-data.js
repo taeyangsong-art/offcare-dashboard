@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6048,
+  "version": 6049,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140722,7 +140722,7 @@ window.SLACK_DATA = {
           "req": "유프 온보딩 요청 드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "온보딩 완료"
         },
         {
           "time": "09:56",
@@ -140943,15 +140943,11 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787879120.767
+        "lastSeen": 1787879182.891
       },
       "1787878807.172979": {
         "post": "1787878807.172979",
-        "lastSeen": 1787879120.767
-      },
-      "1787878802.236499": {
-        "post": "1787878802.236499",
-        "lastSeen": 1787879120.767
+        "lastSeen": 1787879182.891
       }
     },
     "days": {
@@ -175157,8 +175153,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-28": {
-        "cnt": 15,
-        "sumMin": 46.25637924671173,
+        "cnt": 16,
+        "sumMin": 52.082920928796135,
         "over": 0,
         "items": [
           {
@@ -175280,13 +175276,21 @@ window.SLACK_DATA = {
             "biz": "8927400661",
             "who": "고경림",
             "cat": "as"
+          },
+          {
+            "hm": "10:00",
+            "min": 5.8,
+            "store": "명동찰보리밥",
+            "biz": "2197100318",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-28 10:05",
+    "at": "2026-08-28 10:06",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
