@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1215,
- "updatedAt": "2026-08-28 16:43",
+ "version": 1216,
+ "updatedAt": "2026-08-28 16:48",
  "days": 30,
  "items": [
+  {
+   "ts": "1787903233.043169",
+   "date": "2026-08-28",
+   "time": "16:47",
+   "store": "사랑방칼국수",
+   "biz": "1370632771",
+   "pos": "",
+   "content": "메뉴 추가 요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "메뉴 추가 부탁드립니다!\n• 생면칼국수 12,000원\n•  콩국수 12,000원\n• 김치만두 12,000원\n• 빈대떡 15,000원\n• 새우찜 15,000원\n• 소라 15,000원"
+   ],
+   "rc": 2,
+   "lr": "1787903272.511849",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787903233043169"
+  },
   {
    "ts": "1787903009.087349",
    "date": "2026-08-28",
@@ -112,8 +135,8 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1787902650.357929",
+   "rc": 3,
+   "lr": "1787903224.605529",
    "rfx": 3,
    "status": "confirm",
    "handler": "김규빈",
