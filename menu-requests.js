@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1198,
- "updatedAt": "2026-08-28 15:28",
+ "version": 1199,
+ "updatedAt": "2026-08-28 15:39",
  "days": 30,
  "items": [
+  {
+   "ts": "1787899055.939619",
+   "date": "2026-08-28",
+   "time": "15:37",
+   "store": "월아칼국수",
+   "biz": "6640903503",
+   "pos": "",
+   "content": "메뉴 및 카테고리 옵션 수정 요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787899060.613299",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787899055939619"
+  },
   {
    "ts": "1787897686.918659",
    "date": "2026-08-28",
@@ -48645,27 +48666,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785310986252279"
-  },
-  {
-   "ts": "1785307000.000229",
-   "date": "2026-07-29",
-   "time": "15:36",
-   "store": "1키로탕수육",
-   "biz": "4171698514",
-   "pos": "",
-   "content": "메뉴 등록 요청 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 11,
-   "lr": "1785370304.816339",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785307000000229"
   }
  ],
  "ocr": {
