@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1172,
- "updatedAt": "2026-08-28 13:08",
+ "version": 1173,
+ "updatedAt": "2026-08-28 13:11",
  "days": 30,
  "items": [
   {
@@ -39,14 +39,23 @@ window.MENU_REQUESTS = {
    "special": "엑셀파일로 첨부했고, 영문 메뉴는 나중에 키오스크용이라 무시해주셔도 좋습니다.",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BU54G7S48",
+     "from": "댓글",
+     "path": "menu-files/1787887890_217429-0.png"
+    }
+   ],
    "datt": [],
    "replies": [
     "님, 안녕하세요! 금일 내로 등록 완료 요청주시어, 완료 시 문자 한 번 발송 부탁드립니다!",
-    "음"
+    "음",
+    "사업자번호는 297크루아상카페로 확인되고 상호명으로 검색했을때는 안나옴",
+    "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787651340208289?thread_ts=···.431649&cid=C08740SFT1S"
    ],
-   "rc": 3,
-   "lr": "1787890029.223989",
+   "rc": 5,
+   "lr": "1787890279.648229",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
