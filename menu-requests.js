@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1226,
- "updatedAt": "2026-08-28 17:51",
+ "version": 1227,
+ "updatedAt": "2026-08-28 18:36",
  "days": 30,
  "items": [
   {
@@ -48742,29 +48742,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785372759078959"
-  },
-  {
-   "ts": "1785317742.709279",
-   "date": "2026-07-29",
-   "time": "18:35",
-   "store": "쌀똑 핫도그",
-   "biz": "7540800781",
-   "pos": "",
-   "content": "• 메뉴 가격 변경 요청 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "카테고리: 커피\n메뉴명: 고구마토핑 감자토핑\n가격: 1,000 ~ 1,500원으로 변경 요청"
-   ],
-   "rc": 5,
-   "lr": "1785318364.735429",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785317742709279"
   }
  ],
  "ocr": {
