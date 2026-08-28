@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6062,
+  "version": 6063,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140705,8 +140705,8 @@ window.SLACK_DATA = {
           "송태양": 3
         },
         "onboarding": {
+          "심성현": 2,
           "김규빈": 1,
-          "심성현": 1,
           "김동욱": 1,
           "김현기": 1
         },
@@ -140726,6 +140726,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "키오스크 전용으로 설정 로그아웃후 재온보딩후 정상연동확인"
+        },
+        {
+          "time": "10:08",
+          "store": "루미르 뷰",
+          "biz": "2881900238",
+          "cat": "onboarding",
+          "emp": "심성현",
+          "req": "프론트 + 유선프린트기 온보딩 도움 부탁드립니다.  :감사합니다꾸벅:",
+          "hw": "",
+          "intake": "online",
+          "note": "완료"
         },
         {
           "time": "10:00",
@@ -140949,7 +140960,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 19,
+        "online": 20,
         "offline": 2,
         "unknown": 0
       },
@@ -141008,7 +141019,7 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787880629.434
+        "lastSeen": 1787880802.674
       }
     },
     "days": {
@@ -175383,7 +175394,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 10:30",
+    "at": "2026-08-28 10:33",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
