@@ -3,10 +3,175 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1186,
- "updatedAt": "2026-08-28 14:18",
+ "version": 1187,
+ "updatedAt": "2026-08-28 14:22",
  "days": 30,
  "items": [
+  {
+   "ts": "1787894482.807499",
+   "date": "2026-08-28",
+   "time": "14:21",
+   "store": "커피마노보라공방",
+   "biz": "5932001509",
+   "pos": "토스포스",
+   "content": "전메뉴 입력",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1cKp1TsNY5uwoGjPMYBlrpkowHulJSeMq/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1cKp1TsNY5uwoGjPMYBlrpkowHulJSeMq",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "COFFEE",
+       "name": "에스프레소",
+       "price": 3800
+      },
+      {
+       "category": "COFFEE",
+       "name": "아메리카노 (원두선택 : 마노 블렌딩 / 에티오피아 블렌딩 / 디카페인)",
+       "price": 3800
+      },
+      {
+       "category": "COFFEE",
+       "name": "플랫화이트 (우유양이 적은 진한 라떼)",
+       "price": 4200
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페라떼 / 카푸치노 (Only HOT)",
+       "price": 4500
+      },
+      {
+       "category": "COFFEE",
+       "name": "리얼 바닐라라떼 (바닐라빈으로 만든 수제시럽)",
+       "price": 4800
+      },
+      {
+       "category": "COFFEE",
+       "name": "카라멜 마끼아또 / 카페 모카 / 돌체라떼",
+       "price": 4800
+      },
+      {
+       "category": "COFFEE",
+       "name": "마노라떼 (Only ICE)",
+       "price": 4800
+      },
+      {
+       "category": "COFFEE",
+       "name": "소금 크림커피 (Only ICE)",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "아인슈페너",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "흑임자 크림라떼 (Only ICE)",
+       "price": 5500
+      },
+      {
+       "category": "COFFEE",
+       "name": "헤이즐넛 오트라떼",
+       "price": 5300
+      },
+      {
+       "category": "COFFEE",
+       "name": "엑설런트 라떼",
+       "price": 5500
+      },
+      {
+       "category": "COFFEE",
+       "name": "콩카페 코코넛스무디",
+       "price": 5500
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "말차라떼( 한국제다 말차 사용)",
+       "price": 5000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "밀크티(얼그레이)",
+       "price": 5000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "리얼 초코라떼",
+       "price": 5000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "수제청 차 / 에이드",
+       "price": 5000
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "티 베리에이션(허니자몽블랙티 / 청귤 아이스티)",
+       "price": 5500
+      },
+      {
+       "category": "NON COFFEE",
+       "name": "요거트 스무디",
+       "price": 4500
+      },
+      {
+       "category": "TEA",
+       "name": "캐모마일 (카페인 x)",
+       "price": 4500
+      },
+      {
+       "category": "TEA",
+       "name": "페퍼민트 (카페인 x)",
+       "price": 4500
+      },
+      {
+       "category": "TEA",
+       "name": "복숭아 아이스티",
+       "price": 3500
+      },
+      {
+       "category": "TEA",
+       "name": "피치우롱 (카페인 0 )",
+       "price": 4500
+      },
+      {
+       "category": "TEA",
+       "name": "루이보스 빌베리(카페인X)",
+       "price": 4500
+      },
+      {
+       "category": "콜드브루",
+       "name": "콜드브루(Only Ice)",
+       "price": 4000
+      },
+      {
+       "category": "콜드브루",
+       "name": "오렌지 콜드브루 (오렌지베이스, 콜드브루)",
+       "price": 4800
+      },
+      {
+       "category": "콜드브루",
+       "name": "오렌지 비앙코 (오렌지베이스,우유,콜드브루, 밀크폼의 조합)",
+       "price": 5500
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787894486.437439",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787894482807499"
+  },
   {
    "ts": "1787893393.775869",
    "date": "2026-08-28",
