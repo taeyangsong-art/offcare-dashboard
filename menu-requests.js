@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1194,
- "updatedAt": "2026-08-28 15:15",
+ "version": 1195,
+ "updatedAt": "2026-08-28 15:16",
  "days": 30,
  "items": [
   {
@@ -29,10 +29,12 @@ window.MENU_REQUESTS = {
    ],
    "datt": [],
    "replies": [
-    "메뉴 다운로드 받은 것 그대로 업로드 해드려유~"
+    "메뉴 다운로드 받은 것 그대로 업로드 해드려유~",
+    "> • 위베이프 문화점 / ···\n> • 정품전자담배 제원점 / ···\n세 매장 모두 동일합니다 :c_업참바:",
+    "어 아니다"
    ],
-   "rc": 2,
-   "lr": "1787897712.604739",
+   "rc": 4,
+   "lr": "1787897787.481909",
    "rfx": 3,
    "status": "confirm",
    "handler": "김동욱",
