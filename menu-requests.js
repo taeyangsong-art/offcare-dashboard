@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1162,
- "updatedAt": "2026-08-28 12:34",
+ "version": 1163,
+ "updatedAt": "2026-08-28 12:37",
  "days": 30,
  "items": [
   {
@@ -66,6 +66,36 @@ window.MENU_REQUESTS = {
      "fid": "F0BT8FQCN94",
      "from": "댓글",
      "path": "menu-files/1787885954_471519-0.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BTE92NQ4U",
+     "from": "댓글",
+     "path": "menu-files/1787885954_471519-1.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BT8LGPXN2",
+     "from": "댓글",
+     "path": "menu-files/1787885954_471519-2.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BTAHV6MUJ",
+     "from": "댓글",
+     "path": "menu-files/1787885954_471519-3.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BT6G1RQKF",
+     "from": "댓글",
+     "path": "menu-files/1787885954_471519-4.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BSV7YM7MM",
+     "from": "댓글",
+     "path": "menu-files/1787885954_471519-5.png"
     }
    ],
    "datt": [],
@@ -74,8 +104,8 @@ window.MENU_REQUESTS = {
     "규빈님 저 이사람 채팅가지고있어서",
     "필요하신거있으시면 말씀해주새여!"
    ],
-   "rc": 7,
-   "lr": "1787887591.028209",
+   "rc": 9,
+   "lr": "1787888216.418539",
    "rfx": 3,
    "status": "confirm",
    "handler": "김규빈",
