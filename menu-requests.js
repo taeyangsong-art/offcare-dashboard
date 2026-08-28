@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1224,
- "updatedAt": "2026-08-28 17:12",
+ "version": 1225,
+ "updatedAt": "2026-08-28 17:34",
  "days": 30,
  "items": [
   {
@@ -48789,29 +48789,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785315016248479"
-  },
-  {
-   "ts": "1785313848.978369",
-   "date": "2026-07-29",
-   "time": "17:30",
-   "store": "피자스쿨일원점",
-   "biz": "1200925308",
-   "pos": "",
-   "content": "메뉴 추가 요청 드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "• 피자 : 비프타코 15900원 /치킨타코 15900원 \n• 크러스트 : 비프타코크러스트 18900원 / 치킨타코크러스트 18900원\n• 추가목록에 피클과 갈릭소스 옆 또는 아래(비어있는 자리에) 할라피뇨 500원 추가 요청 주셨습니다."
-   ],
-   "rc": 3,
-   "lr": "1785314578.396469",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785313848978369"
   }
  ],
  "ocr": {
