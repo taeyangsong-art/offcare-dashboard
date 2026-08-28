@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6046,
+  "version": 6047,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140698,10 +140698,10 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "고경림": 1,
+          "김현기": 2,
           "배선유": 3,
           "김동욱": 3,
-          "송태양": 3,
-          "김현기": 1
+          "송태양": 3
         },
         "onboarding": {
           "김현기": 1
@@ -140722,6 +140722,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "프론트정상 사용법안내완료"
+        },
+        {
+          "time": "09:50",
+          "store": "돈아당",
+          "biz": "6220336973",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "테이블 오더 사용 중 테이블 비우기 방법 안내 요청 및 포스 사용방법 원격 요청 주셨습니다 :woman-bowing::skin-tone-4:",
+          "hw": "",
+          "intake": "offline",
+          "note": "선불 결제시 손님이 나가면 꼭 테이블 비우기를 눌러줘야햠, 누르지 않으면 다음 고객이 주문 했을때 내역이 계속 쌓이는 게 맞음"
         },
         {
           "time": "09:50",
@@ -140858,7 +140869,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 13,
-        "offline": 0,
+        "offline": 1,
         "unknown": 0
       },
       "updatedAt": "10:00"
@@ -140920,15 +140931,15 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787879016.782
+        "lastSeen": 1787879065.038
       },
       "1787878807.172979": {
         "post": "1787878807.172979",
-        "lastSeen": 1787879016.782
+        "lastSeen": 1787879065.038
       },
       "1787878802.236499": {
         "post": "1787878802.236499",
-        "lastSeen": 1787879016.782
+        "lastSeen": 1787879065.038
       }
     },
     "days": {
@@ -175263,7 +175274,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 10:03",
+    "at": "2026-08-28 10:04",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
