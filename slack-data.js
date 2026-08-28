@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6064,
+  "version": 6065,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140697,7 +140697,7 @@ window.SLACK_DATA = {
     "2026-08-28": {
       "counts": {
         "as": {
-          "고경림": 2,
+          "고경림": 3,
           "김현기": 3,
           "심성현": 1,
           "배선유": 4,
@@ -140716,6 +140716,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:28",
+          "store": "안(安)빵",
+          "biz": "2393301565",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "프론트 인터넷 연결끊긴 후 온보딩되고있지않아 도움부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트 재온보딩후 정상작동 확인"
+        },
         {
           "time": "10:14",
           "store": "주식회사 콘텐츠그룹아베끄",
@@ -140971,11 +140982,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 21,
+        "online": 22,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "10:33"
+      "updatedAt": "10:35"
     }
   },
   "resp": {
@@ -141030,11 +141041,7 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787880863.155
-      },
-      "1787880820.342039": {
-        "post": "1787880820.342039",
-        "lastSeen": 1787880863.155
+        "lastSeen": 1787880982.205
       }
     },
     "days": {
@@ -175240,8 +175247,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-28": {
-        "cnt": 20,
-        "sumMin": 77.19951266447703,
+        "cnt": 21,
+        "sumMin": 78.90514534314472,
         "over": 0,
         "items": [
           {
@@ -175403,13 +175410,21 @@ window.SLACK_DATA = {
             "biz": "1662801486",
             "who": "고경림",
             "cat": "as"
+          },
+          {
+            "hm": "10:33",
+            "min": 1.7,
+            "store": "모닝그레인",
+            "biz": "8512701952",
+            "who": "김동욱",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-28 10:34",
+    "at": "2026-08-28 10:36",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
