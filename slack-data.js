@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6029,
+  "version": 6030,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140699,7 +140699,8 @@ window.SLACK_DATA = {
         "as": {
           "송태양": 2,
           "김현기": 1,
-          "김동욱": 1
+          "김동욱": 1,
+          "배선유": 1
         }
       },
       "pending": [],
@@ -140738,6 +140739,17 @@ window.SLACK_DATA = {
           "note": "오전 9시가 아닌 저녁 9시. 예약메시지 진행"
         },
         {
+          "time": "09:00",
+          "store": "재리스토스트 중앙대점",
+          "biz": "6432302463",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "주방프린터 및 키오스크 프린터 설정 요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "15분후 / 주방프린터 2개, 키오스크프린터 출력 설정 완료"
+        },
+        {
           "time": "08:30",
           "store": "메디결라인 청라점",
           "biz": "",
@@ -140750,7 +140762,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 4,
+        "online": 5,
         "offline": 0,
         "unknown": 0
       },
@@ -140813,7 +140825,7 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787876601.255
+        "lastSeen": 1787876843.583
       }
     },
     "days": {
@@ -175060,7 +175072,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 09:23",
+    "at": "2026-08-28 09:27",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
