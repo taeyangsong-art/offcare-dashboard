@@ -3,10 +3,41 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1193,
- "updatedAt": "2026-08-28 15:14",
+ "version": 1194,
+ "updatedAt": "2026-08-28 15:15",
  "days": 30,
  "items": [
+  {
+   "ts": "1787897686.918659",
+   "date": "2026-08-28",
+   "time": "15:14",
+   "store": "정품전자담배 신라면세점점",
+   "biz": "3972402290",
+   "pos": "",
+   "content": "• 메뉴 등록 요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "정품전자담배 신라면세점점_상품목록-260828151440.xlsx.exs",
+     "fid": "F0BT53PAEAF",
+     "from": "댓글",
+     "path": "menu-files/1787897686_918659-0.exs",
+     "nj": 1
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "메뉴 다운로드 받은 것 그대로 업로드 해드려유~"
+   ],
+   "rc": 2,
+   "lr": "1787897712.604739",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "김동욱",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787897686918659"
+  },
   {
    "ts": "1787894648.419459",
    "date": "2026-08-28",
