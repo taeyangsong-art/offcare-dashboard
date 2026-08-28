@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1209,
- "updatedAt": "2026-08-28 16:29",
+ "version": 1210,
+ "updatedAt": "2026-08-28 16:33",
  "days": 30,
  "items": [
   {
@@ -48,8 +48,8 @@ window.MENU_REQUESTS = {
     "통화중이라서 지금 확인했습니당 :face_holding_back_tears:\n\n굴매생이 / 12,000원\n맷돌콩국수 /10,000원\n굴매생이 /  2,000원",
     "1인분 가격입니다!"
    ],
-   "rc": 10,
-   "lr": "1787902158.795829",
+   "rc": 11,
+   "lr": "1787902284.953379",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
