@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6086,
+  "version": 6087,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140715,6 +140715,7 @@ window.SLACK_DATA = {
           "김동욱": 3,
           "심성현": 2,
           "김규빈": 1,
+          "고경림": 1,
           "김현기": 1
         },
         "menu": {
@@ -140722,19 +140723,7 @@ window.SLACK_DATA = {
           "배선유": 1
         }
       },
-      "pending": [
-        {
-          "time": "10:00",
-          "store": "듀온에스테틱",
-          "biz": "8927400661",
-          "handler": "고경림",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
         {
           "time": "11:19",
@@ -141100,6 +141089,17 @@ window.SLACK_DATA = {
           "note": "온보딩 및 교육 완료"
         },
         {
+          "time": "10:00",
+          "store": "듀온에스테틱",
+          "biz": "8927400661",
+          "cat": "onboarding",
+          "emp": "고경림",
+          "req": "포프(pc) + 유프 온보딩 요청드립니다. (오전 10시경)",
+          "hw": "",
+          "intake": "online",
+          "note": "미개봉 / 개봉후 전원연결후 문자요청 / 포프(pc) + 유프 온보딩 완료"
+        },
+        {
           "time": "09:59",
           "store": "헤어,라움",
           "biz": "8721901672",
@@ -141303,7 +141303,7 @@ window.SLACK_DATA = {
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "11:25"
+      "updatedAt": "11:29"
     }
   },
   "resp": {
@@ -141358,11 +141358,15 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787883982.666
+        "lastSeen": 1787884162.519
       },
-      "1787883939.784329": {
-        "post": "1787883939.784329",
-        "lastSeen": 1787883982.666
+      "1787884156.756009": {
+        "post": "1787884156.756009",
+        "lastSeen": 1787884162.519
+      },
+      "1787884092.570949": {
+        "post": "1787884092.570949",
+        "lastSeen": 1787884162.519
       }
     },
     "days": {
@@ -175568,8 +175572,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-28": {
-        "cnt": 37,
-        "sumMin": 161.94155011574423,
+        "cnt": 38,
+        "sumMin": 164.1550196329752,
         "over": 0,
         "items": [
           {
@@ -175867,19 +175871,27 @@ window.SLACK_DATA = {
             "biz": "3952701559",
             "who": "송태양",
             "cat": "as"
+          },
+          {
+            "hm": "11:25",
+            "min": 2.2,
+            "store": "주식회사 메미",
+            "biz": "8558702938",
+            "who": "고경림",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-28 11:26",
+    "at": "2026-08-28 11:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3772,
+    "rows": 3773,
     "named": 470,
     "unknownName": 0,
     "beforeStart": 0,
