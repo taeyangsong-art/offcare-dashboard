@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6134,
+  "version": 6135,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140697,7 +140697,7 @@ window.SLACK_DATA = {
     "2026-08-28": {
       "counts": {
         "as": {
-          "배선유": 9,
+          "배선유": 10,
           "고경림": 7,
           "김규빈": 3,
           "심성현": 11,
@@ -140765,6 +140765,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "13:00",
+          "store": "조각베어",
+          "biz": "8352402337",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "포프(노트북) 온보딩 도움 요청드립니다. RJ45케이블이 없다고 하시어 영상으로 확인 부탁드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "13:00",
           "store": "수정마켓",
@@ -141672,11 +141683,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 73,
+        "online": 74,
         "offline": 12,
         "unknown": 0
       },
-      "updatedAt": "13:11",
+      "updatedAt": "13:12",
       "voc": {
         "responses": 1,
         "install": {
@@ -141766,19 +141777,23 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787890344.326
+        "lastSeen": 1787890404.741
       },
       "1787887664.797579": {
         "post": "1787887664.797579",
-        "lastSeen": 1787890344.326
+        "lastSeen": 1787890404.741
       },
       "1787889601.028909": {
         "post": "1787889601.028909",
-        "lastSeen": 1787890344.326
+        "lastSeen": 1787890404.741
       },
       "1787889573.634629": {
         "post": "1787889573.634629",
-        "lastSeen": 1787890344.326
+        "lastSeen": 1787890404.741
+      },
+      "1787890379.254649": {
+        "post": "1787890379.254649",
+        "lastSeen": 1787890404.741
       }
     },
     "days": {
@@ -176457,7 +176472,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 13:12",
+    "at": "2026-08-28 13:13",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
