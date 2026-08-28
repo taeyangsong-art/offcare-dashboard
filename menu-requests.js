@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1227,
- "updatedAt": "2026-08-28 18:36",
+ "version": 1228,
+ "updatedAt": "2026-08-28 18:53",
  "days": 30,
  "items": [
+  {
+   "ts": "1787910775.351079",
+   "date": "2026-08-28",
+   "time": "18:52",
+   "store": "월아칼국수",
+   "biz": "6640903503",
+   "pos": "",
+   "content": "메뉴 등록 부탁 드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "카테고리 : 메인메뉴\n메뉴 : 해물파전\n금액 : 15,000원\n\n연락처 : ···"
+   ],
+   "rc": 2,
+   "lr": "1787910805.103049",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787910775351079"
+  },
   {
    "ts": "1787903233.043169",
    "date": "2026-08-28",
