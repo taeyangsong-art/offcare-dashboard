@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6047,
+  "version": 6048,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140696,6 +140696,10 @@ window.SLACK_DATA = {
     },
     "2026-08-28": {
       "counts": {
+        "onboarding": {
+          "심성현": 1,
+          "김현기": 1
+        },
         "as": {
           "고경림": 1,
           "김현기": 2,
@@ -140703,15 +140707,23 @@ window.SLACK_DATA = {
           "김동욱": 3,
           "송태양": 3
         },
-        "onboarding": {
-          "김현기": 1
-        },
         "menu": {
           "배선유": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:59",
+          "store": "헤어,라움",
+          "biz": "8721901672",
+          "cat": "onboarding",
+          "emp": "심성현",
+          "req": "유프 온보딩 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "09:56",
           "store": "대전배터리 로케트밧데리(신탄진점)",
@@ -140868,7 +140880,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 13,
+        "online": 14,
         "offline": 1,
         "unknown": 0
       },
@@ -140931,15 +140943,15 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787879065.038
+        "lastSeen": 1787879120.767
       },
       "1787878807.172979": {
         "post": "1787878807.172979",
-        "lastSeen": 1787879065.038
+        "lastSeen": 1787879120.767
       },
       "1787878802.236499": {
         "post": "1787878802.236499",
-        "lastSeen": 1787879065.038
+        "lastSeen": 1787879120.767
       }
     },
     "days": {
@@ -175274,7 +175286,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 10:04",
+    "at": "2026-08-28 10:05",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
