@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6019,
+  "version": 6020,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140695,15 +140695,31 @@ window.SLACK_DATA = {
       }
     },
     "2026-08-28": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "김동욱": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:00",
+          "store": "리셋건강운동센터 전주점",
+          "biz": "3230303819",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "포프(pc) 온보딩 요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "오전 9시가 아닌 저녁 9시. 예약메시지 진행"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:00"
+      "updatedAt": "09:04"
     }
   },
   "resp": {
@@ -140762,15 +140778,19 @@ window.SLACK_DATA = {
       },
       "1787865301.102509": {
         "post": "1787865301.102509",
-        "lastSeen": 1787875393.896
+        "lastSeen": 1787875468.156
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787875393.896
+        "lastSeen": 1787875468.156
       },
       "1787873400.421289": {
         "post": "1787873400.421289",
-        "lastSeen": 1787875393.896
+        "lastSeen": 1787875468.156
+      },
+      "1787875443.141639": {
+        "post": "1787875443.141639",
+        "lastSeen": 1787875468.156
       }
     },
     "days": {
@@ -174993,7 +175013,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 09:03",
+    "at": "2026-08-28 09:04",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
