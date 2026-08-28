@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6071,
+  "version": 6072,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140697,11 +140697,11 @@ window.SLACK_DATA = {
     "2026-08-28": {
       "counts": {
         "as": {
+          "김동욱": 4,
           "심성현": 3,
+          "김현기": 4,
           "고경림": 3,
-          "김현기": 3,
           "배선유": 4,
-          "김동욱": 3,
           "송태양": 3
         },
         "extern": {
@@ -140719,6 +140719,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:45",
+          "store": "아름아시아마트",
+          "biz": "5453002134",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "터프(토스포스사용X) 온보딩 요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "방문설치 요청하셔서 차주 월요일 방문일정동륵 완료"
+        },
         {
           "time": "10:45",
           "store": "청담예슬",
@@ -140751,6 +140762,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "요기요 연동 및 출력 테스트 완료"
+        },
+        {
+          "time": "10:35",
+          "store": "주식회사 나인스포츠",
+          "biz": "2018644487",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "포스(pc)+프론트 온보딩 부탁드립니다! 약간 고령으로 느껴져요.",
+          "hw": "",
+          "intake": "offline",
+          "note": "여기 토플파도 미생성인데요 / 1차부재 토플파 미생성 프론트만 추가 구매 한 거 같음 / 구형 kicc 단말기라 터프 or 캣프 신규로 상담이 진행되어야 하는데 기추로 진행됨 / 토플파X 밴X"
         },
         {
           "time": "10:33",
@@ -141040,8 +141062,8 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 26,
-        "offline": 3,
+        "online": 27,
+        "offline": 4,
         "unknown": 0
       },
       "updatedAt": "10:45"
@@ -141099,7 +141121,7 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787881884.678
+        "lastSeen": 1787881945.142
       }
     },
     "days": {
@@ -175514,7 +175536,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 10:51",
+    "at": "2026-08-28 10:52",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
