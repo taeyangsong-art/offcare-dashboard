@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6054,
+  "version": 6055,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140931,7 +140931,7 @@ window.SLACK_DATA = {
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "10:08"
+      "updatedAt": "10:15"
     }
   },
   "resp": {
@@ -140986,11 +140986,15 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787879661.365
+        "lastSeen": 1787879721.295
       },
-      "1787879304.701669": {
-        "post": "1787879304.701669",
-        "lastSeen": 1787879661.365
+      "1787879700.236719": {
+        "post": "1787879700.236719",
+        "lastSeen": 1787879721.295
+      },
+      "1787879689.408629": {
+        "post": "1787879689.408629",
+        "lastSeen": 1787879721.295
       }
     },
     "days": {
@@ -175196,8 +175200,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-28": {
-        "cnt": 17,
-        "sumMin": 61.812237946192425,
+        "cnt": 18,
+        "sumMin": 68.25604346195857,
         "over": 0,
         "items": [
           {
@@ -175335,13 +175339,21 @@ window.SLACK_DATA = {
             "biz": "3260703645",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "10:08",
+            "min": 6.4,
+            "store": "루미르 뷰",
+            "biz": "2881900238",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-28 10:14",
+    "at": "2026-08-28 10:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
