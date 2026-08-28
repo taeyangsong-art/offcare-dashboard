@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6035,
+  "version": 6036,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140697,9 +140697,9 @@ window.SLACK_DATA = {
     "2026-08-28": {
       "counts": {
         "as": {
+          "김동욱": 3,
           "배선유": 2,
           "송태양": 3,
-          "김동욱": 2,
           "김현기": 1
         },
         "onboarding": {
@@ -140708,6 +140708,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:30",
+          "store": "다올콩나물국밥",
+          "biz": "4023041242",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "포프(태블릿) + 유프 자가 설치 했지만 프린터기 작동하지 않는다고 합니다. 호가인 부탁드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "토스포스 프린터 설정이 잘못되어있었음. 재설정 후 정상출력 확인"
+        },
         {
           "time": "09:30",
           "store": "네일,봄",
@@ -140809,7 +140820,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 9,
+        "online": 10,
         "offline": 0,
         "unknown": 0
       },
@@ -140872,7 +140883,7 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787877502.513
+        "lastSeen": 1787877624.037
       }
     },
     "days": {
@@ -175151,7 +175162,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 09:38",
+    "at": "2026-08-28 09:40",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
