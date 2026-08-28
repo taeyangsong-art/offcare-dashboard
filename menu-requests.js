@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1190,
- "updatedAt": "2026-08-28 14:24",
+ "version": 1191,
+ "updatedAt": "2026-08-28 14:25",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BSVN1NUVD",
      "from": "댓글",
-     "path": "menu-files/1787894648_419459-0.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -291,13 +290,24 @@ window.MENU_REQUESTS = {
        "name": "환타 파인",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1787894648_419459-0.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BT4RPSAGK",
+     "from": "댓글",
+     "path": "menu-files/1787894648_419459-1.png",
+     "kind": "other",
+     "menu": []
     }
    ],
    "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1787894671.682629",
+   "replies": [
+    "담당자 연락처 (필요시 요기로 문의 부탁드립니다)"
+   ],
+   "rc": 3,
+   "lr": "1787894701.534979",
    "rfx": 3,
    "status": "wait",
    "handler": null,
