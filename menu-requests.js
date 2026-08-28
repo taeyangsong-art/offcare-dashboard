@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1166,
- "updatedAt": "2026-08-28 12:49",
+ "version": 1167,
+ "updatedAt": "2026-08-28 12:52",
  "days": 30,
  "items": [
   {
@@ -42,10 +42,11 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [
-    "뭘... 수정하실껀데용 :telephone_receiver:"
+    "뭘... 수정하실껀데용 :telephone_receiver:",
+    "대표번호 상담 시 링크로 접수하면 as부서에서 메뉴 수정방법 알려준다고 안내받았다고 하심 :개굴-hmm:\n웹정보에서 가격 수정 방법 안내\n 혜수님 혹시 예약메세지 걸어놓은 거 있으시면 삭제해주세욥 안내완료입니다~"
    ],
-   "rc": 2,
-   "lr": "1787888581.699179",
+   "rc": 3,
+   "lr": "1787889126.202749",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
