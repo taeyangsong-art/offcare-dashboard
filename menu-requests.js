@@ -3,10 +3,55 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1153,
- "updatedAt": "2026-08-28 11:15",
+ "version": 1154,
+ "updatedAt": "2026-08-28 11:19",
  "days": 30,
  "items": [
+  {
+   "ts": "1787883528.477829",
+   "date": "2026-08-28",
+   "time": "11:18",
+   "store": "바이트앤 레스트",
+   "biz": "5438503030",
+   "pos": "퍼스트포스",
+   "content": "도넛 창  전제 삭제해주세요\n\n핫도그 \n칠리살사핫도그 7.000\n딥치즈핫도그   7.000\n\n창 만들어주세요",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/12Uw1Ro8HEFxR-jImYAjqbvuK4hZl66sd/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1x5hT7yW27O0I5N7hjybx7zPejUP-SBLC/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787883531.138319",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787883528477829"
+  },
+  {
+   "ts": "1787883521.710889",
+   "date": "2026-08-28",
+   "time": "11:18",
+   "store": "케이핀초반",
+   "biz": "2660303234",
+   "pos": "기타",
+   "content": "안주류 카테고리에 오돌뼈 15000원->16000원 ,\n라볶이 14000원->15000원으로 수정 부탁드립니다",
+   "special": "바로 부탁드립니다",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787883524.591099",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787883521710889"
+  },
   {
    "ts": "1787882628.560099",
    "date": "2026-08-28",
