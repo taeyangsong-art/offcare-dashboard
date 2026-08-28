@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6079,
+  "version": 6080,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -141191,7 +141191,7 @@ window.SLACK_DATA = {
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "11:06"
+      "updatedAt": "11:10"
     }
   },
   "resp": {
@@ -141246,15 +141246,15 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787883004.761
-      },
-      "1787882402.104849": {
-        "post": "1787882402.104849",
-        "lastSeen": 1787883004.761
+        "lastSeen": 1787883186.733
       },
       "1787882400.504649": {
         "post": "1787882400.504649",
-        "lastSeen": 1787883004.761
+        "lastSeen": 1787883186.733
+      },
+      "1787883052.047169": {
+        "post": "1787883052.047169",
+        "lastSeen": 1787883186.733
       }
     },
     "days": {
@@ -175460,8 +175460,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-28": {
-        "cnt": 33,
-        "sumMin": 130.22806638876594,
+        "cnt": 34,
+        "sumMin": 141.78876890341436,
         "over": 0,
         "items": [
           {
@@ -175727,13 +175727,21 @@ window.SLACK_DATA = {
             "biz": "4988502390",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "11:00",
+            "min": 11.6,
+            "store": "통도자연휴향림",
+            "biz": "4483101258",
+            "who": "김동욱",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-28 11:10",
+    "at": "2026-08-28 11:13",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
