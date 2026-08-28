@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6088,
+  "version": 6089,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140738,7 +140738,7 @@ window.SLACK_DATA = {
           "hw": "",
           "urgent": true,
           "intake": "online",
-          "note": ""
+          "note": "유선프린터 초기불량으로 확인 (정상적으로 용지를넣어도, 용지 부족 사운드 및 에러등이 나옴 ) 영수프린터 교체품 출고 및 초기불량제품 회수"
         },
         {
           "time": "11:19",
@@ -141408,15 +141408,15 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787884394.277
+        "lastSeen": 1787884581.009
       },
       "1787884156.756009": {
         "post": "1787884156.756009",
-        "lastSeen": 1787884394.277
+        "lastSeen": 1787884581.009
       },
       "1787884200.835569": {
         "post": "1787884200.835569",
-        "lastSeen": 1787884394.277
+        "lastSeen": 1787884581.009
       }
     },
     "days": {
@@ -175943,7 +175943,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 11:33",
+    "at": "2026-08-28 11:36",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
