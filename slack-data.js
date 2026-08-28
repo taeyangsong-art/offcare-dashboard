@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6072,
+  "version": 6073,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140699,7 +140699,7 @@ window.SLACK_DATA = {
         "as": {
           "김동욱": 4,
           "심성현": 3,
-          "김현기": 4,
+          "김현기": 5,
           "고경림": 3,
           "배선유": 4,
           "송태양": 3
@@ -140740,6 +140740,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "12시 통화 요청"
+        },
+        {
+          "time": "10:43",
+          "store": "늘솜뷰티",
+          "biz": "3371500250",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "유프 연결 후 포프에서 각각 프린터 설정 했음에도 이상한 문구가 나온다고 하셔서 확인 요청 드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "포스뱅크 젠더 사용 젠더 분리 후 정상 출력"
         },
         {
           "time": "10:40",
@@ -141062,11 +141073,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 27,
+        "online": 28,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "10:45"
+      "updatedAt": "10:53"
     }
   },
   "resp": {
@@ -141121,7 +141132,7 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787881945.142
+        "lastSeen": 1787882003.789
       }
     },
     "days": {
@@ -175536,7 +175547,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 10:52",
+    "at": "2026-08-28 10:53",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
