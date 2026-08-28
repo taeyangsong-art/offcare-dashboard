@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6026,
+  "version": 6027,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140697,12 +140697,23 @@ window.SLACK_DATA = {
     "2026-08-28": {
       "counts": {
         "as": {
-          "김동욱": 1,
-          "송태양": 1
+          "송태양": 2,
+          "김동욱": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:08",
+          "store": "안성 분식",
+          "biz": "8781202777",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "프론트 먹통, 터치 안됨 / 확인 부탁드립니다:감사합니다꾸벅:",
+          "hw": "",
+          "intake": "online",
+          "note": "천안시 서북구 성환2로 74-9번지 jk타운 12동 304호"
+        },
         {
           "time": "09:00",
           "store": "리셋건강운동센터 전주점",
@@ -140727,7 +140738,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 2,
+        "online": 3,
         "offline": 0,
         "unknown": 0
       },
@@ -140790,15 +140801,15 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787876122.742
+        "lastSeen": 1787876304.796
       },
       "1787875935.134789": {
         "post": "1787875935.134789",
-        "lastSeen": 1787876122.742
+        "lastSeen": 1787876304.796
       },
       "1787876101.042279": {
         "post": "1787876101.042279",
-        "lastSeen": 1787876122.742
+        "lastSeen": 1787876304.796
       }
     },
     "days": {
@@ -175029,7 +175040,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 09:15",
+    "at": "2026-08-28 09:18",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
