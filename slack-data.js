@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6133,
+  "version": 6134,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140705,6 +140705,14 @@ window.SLACK_DATA = {
           "송태양": 5,
           "김동욱": 7
         },
+        "onboarding": {
+          "고경림": 2,
+          "김규빈": 2,
+          "배선유": 1,
+          "김동욱": 3,
+          "심성현": 2,
+          "김현기": 1
+        },
         "extern": {
           "김현기": 1,
           "심성현": 1,
@@ -140712,14 +140720,6 @@ window.SLACK_DATA = {
           "김기범": 3,
           "서상원": 2,
           "배선유": 1
-        },
-        "onboarding": {
-          "김규빈": 2,
-          "배선유": 1,
-          "김동욱": 3,
-          "심성현": 2,
-          "고경림": 1,
-          "김현기": 1
         },
         "transfer": {
           "송태양": 1
@@ -140775,6 +140775,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "1시간 후 재예약"
+        },
+        {
+          "time": "13:00",
+          "store": "하이피트니스 당진점 헬스&amp;피티",
+          "biz": "3110912898",
+          "cat": "onboarding",
+          "emp": "고경림",
+          "req": "PC + 프론트 온보딩 도움부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "PC + 프론트 온보딩 완료"
         },
         {
           "time": "12:56",
@@ -141661,11 +141672,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 72,
+        "online": 73,
         "offline": 12,
         "unknown": 0
       },
-      "updatedAt": "13:00",
+      "updatedAt": "13:11",
       "voc": {
         "responses": 1,
         "install": {
@@ -141755,19 +141766,19 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787890281.375
+        "lastSeen": 1787890344.326
       },
       "1787887664.797579": {
         "post": "1787887664.797579",
-        "lastSeen": 1787890281.375
+        "lastSeen": 1787890344.326
       },
       "1787889601.028909": {
         "post": "1787889601.028909",
-        "lastSeen": 1787890281.375
+        "lastSeen": 1787890344.326
       },
       "1787889573.634629": {
         "post": "1787889573.634629",
-        "lastSeen": 1787890281.375
+        "lastSeen": 1787890344.326
       }
     },
     "days": {
@@ -176446,7 +176457,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 13:11",
+    "at": "2026-08-28 13:12",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
