@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1179,
- "updatedAt": "2026-08-28 13:35",
+ "version": 1180,
+ "updatedAt": "2026-08-28 13:39",
  "days": 30,
  "items": [
   {
@@ -432,7 +432,7 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1787891588.765819",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787890507677099"
   },
@@ -489,8 +489,8 @@ window.MENU_REQUESTS = {
     "엇 제가 채팅 상담중이라 말씀해주시면 안내드리고 공유드릴게용",
     "오 그러면"
    ],
-   "rc": 12,
-   "lr": "1787890785.123139",
+   "rc": 13,
+   "lr": "1787891823.738789",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -511,10 +511,11 @@ window.MENU_REQUESTS = {
    "datt": [],
    "replies": [
     "뭘... 수정하실껀데용 :telephone_receiver:",
-    "대표번호 상담 시 링크로 접수하면 as부서에서 메뉴 수정방법 알려준다고 안내받았다고 하심 :개굴-hmm:\n웹정보에서 가격 수정 방법 안내\n 혜수님 혹시 예약메세지 걸어놓은 거 있으시면 삭제해주세욥 안내완료입니다~"
+    "대표번호 상담 시 링크로 접수하면 as부서에서 메뉴 수정방법 알려준다고 안내받았다고 하심 :개굴-hmm:\n웹정보에서 가격 수정 방법 안내\n 혜수님 혹시 예약메세지 걸어놓은 거 있으시면 삭제해주세욥 안내완료입니다~",
+    "오케이포스라 원격 요청으로 수정 방법 요청 드린다고 안내랑 메뉴수정 링크 안내는 드렸는데 링크 통해 메뉴 수정 방법을 알려준다고는 안했눈데 ..\n\n오해하셨나봐요 ..:눈물ㅠ: 예약 메세지 걸어둔거 삭제 완료입니다 ! 감사해요 :face_holding_back_tears:"
    ],
-   "rc": 3,
-   "lr": "1787889126.202749",
+   "rc": 4,
+   "lr": "1787891780.704989",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
