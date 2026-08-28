@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6053,
+  "version": 6054,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140705,6 +140705,7 @@ window.SLACK_DATA = {
           "송태양": 3
         },
         "onboarding": {
+          "김규빈": 1,
           "심성현": 1,
           "김동욱": 1,
           "김현기": 1
@@ -140725,6 +140726,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "님, 여기 통화중이셨다고 하시며 대기하겠다고 하시어 재컨택 부탁 드립니다. :꾸벅: 님, 여기 통화중이셨다고 하시며 대기하겠다고 하시어 재컨택 부탁 드립니다."
+        },
+        {
+          "time": "10:00",
+          "store": "리소울(re_soul)",
+          "biz": "4964901136",
+          "cat": "onboarding",
+          "emp": "김규빈",
+          "req": "포프(pc) + 유프 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 및 교육 완료"
         },
         {
           "time": "09:59",
@@ -140915,7 +140927,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 16,
+        "online": 17,
         "offline": 2,
         "unknown": 0
       },
@@ -140924,10 +140936,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1787706753.326809": {
-        "post": "1787706753.326809",
-        "lastSeen": 1787775328.58
-      },
       "1787722356.190299": {
         "post": "1787722356.190299",
         "lastSeen": 1787722415.217
@@ -140978,11 +140986,11 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787879483.854
+        "lastSeen": 1787879661.365
       },
       "1787879304.701669": {
         "post": "1787879304.701669",
-        "lastSeen": 1787879483.854
+        "lastSeen": 1787879661.365
       }
     },
     "days": {
@@ -175333,7 +175341,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 10:11",
+    "at": "2026-08-28 10:14",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
