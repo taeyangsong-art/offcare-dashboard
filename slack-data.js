@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6106,
+  "version": 6107,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140730,6 +140730,17 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "11:15",
+          "store": "토스트 엔 커피하우스",
+          "biz": "3952701559",
+          "handler": "송태양",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
           "time": "11:06",
           "store": "던던(DAWN-DAWN)",
           "biz": "2021621000",
@@ -141473,11 +141484,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 58,
+        "online": 59,
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "12:08",
+      "updatedAt": "12:18",
       "voc": {
         "responses": 1,
         "install": {
@@ -141567,15 +141578,19 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787886899.515
+        "lastSeen": 1787887161.777
       },
       "1787885954.471519": {
         "post": "1787885954.471519",
-        "lastSeen": 1787886899.515
+        "lastSeen": 1787887161.777
       },
       "1787886001.188799": {
         "post": "1787886001.188799",
-        "lastSeen": 1787886899.515
+        "lastSeen": 1787887161.777
+      },
+      "1787887112.519899": {
+        "post": "1787887112.519899",
+        "lastSeen": 1787887161.777
       }
     },
     "days": {
@@ -176174,7 +176189,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-28 12:15",
+    "at": "2026-08-28 12:19",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
