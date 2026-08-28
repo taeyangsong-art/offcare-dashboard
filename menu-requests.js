@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1188,
- "updatedAt": "2026-08-28 14:22",
+ "version": 1189,
+ "updatedAt": "2026-08-28 14:23",
  "days": 30,
  "items": [
   {
@@ -1016,16 +1016,93 @@ window.MENU_REQUESTS = {
        "price": 2000
       }
      ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BSVMXTHD5",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "베이글",
+       "name": "플레인",
+       "price": 3300
+      },
+      {
+       "category": "베이글",
+       "name": "바질",
+       "price": 3800
+      },
+      {
+       "category": "베이글",
+       "name": "블루베리",
+       "price": 3800
+      },
+      {
+       "category": "베이글",
+       "name": "통밀",
+       "price": 3800
+      },
+      {
+       "category": "베이글",
+       "name": "올리브치즈",
+       "price": 4400
+      },
+      {
+       "category": "베이글",
+       "name": "무화과",
+       "price": 3800
+      },
+      {
+       "category": "베이글",
+       "name": "어니언",
+       "price": 3800
+      },
+      {
+       "category": "베이글",
+       "name": "소금빵",
+       "price": 4200
+      },
+      {
+       "category": "베이글",
+       "name": "밤",
+       "price": 4400
+      },
+      {
+       "category": "베이글",
+       "name": "갈릭버터",
+       "price": 4800
+      },
+      {
+       "category": "베이글",
+       "name": "모카번",
+       "price": 5200
+      },
+      {
+       "category": "베이글",
+       "name": "명란마요",
+       "price": 5300
+      },
+      {
+       "category": "베이글",
+       "name": "감자치즈",
+       "price": 5400
+      }
+     ]
     }
    ],
    "datt": [],
    "replies": [
     "백업",
     "님, 아직 채팅 응대중인데 위 등록 사진 전달드리니\n카푸치노, 바나나 카페라떼, 카라멜마끼아또 같은 메뉴는 엑셀 파일에 없다고 하시며\n기존 메뉴가 아직 남아 있다고 하시어 확인 부탁드려도 될까요? :ㅠㅠ:",
-    "음? 위 사진??"
+    "음? 위 사진??",
+    "아! 저거는 변경 전 사진이에여! ㅋㅋㅋㅋ 혹시나 롤백해달라고 할까봥",
+    "요게 진짜입니다요",
+    "외부라고 하셔서 저걸로 괜히 전달드려서 혼동 드렸네용 ㅠㅠ",
+    "요러케 바꿔놨어용"
    ],
-   "rc": 4,
-   "lr": "1787894537.763439",
+   "rc": 7,
+   "lr": "1787894619.928609",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
