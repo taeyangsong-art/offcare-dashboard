@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6093,
+  "version": 6094,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -141375,7 +141375,7 @@ window.SLACK_DATA = {
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "11:43"
+      "updatedAt": "11:45"
     }
   },
   "resp": {
@@ -141430,11 +141430,11 @@ window.SLACK_DATA = {
       },
       "1787868447.181299": {
         "post": "1787868447.181299",
-        "lastSeen": 1787885123.892
+        "lastSeen": 1787885182.941
       },
-      "1787885010.696089": {
-        "post": "1787885010.696089",
-        "lastSeen": 1787885123.892
+      "1787885140.708999": {
+        "post": "1787885140.708999",
+        "lastSeen": 1787885182.941
       }
     },
     "days": {
@@ -175640,8 +175640,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-28": {
-        "cnt": 41,
-        "sumMin": 184.7500441829363,
+        "cnt": 42,
+        "sumMin": 187.12871770064032,
         "over": 0,
         "items": [
           {
@@ -175971,13 +175971,21 @@ window.SLACK_DATA = {
             "biz": "5958700251",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "11:43",
+            "min": 2.4,
+            "store": "스킨단단",
+            "biz": "5201102997",
+            "who": "김규빈",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-28 11:45",
+    "at": "2026-08-28 11:46",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
