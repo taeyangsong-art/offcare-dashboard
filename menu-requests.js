@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1197,
- "updatedAt": "2026-08-28 15:22",
+ "version": 1198,
+ "updatedAt": "2026-08-28 15:28",
  "days": 30,
  "items": [
   {
@@ -48666,29 +48666,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785307000000229"
-  },
-  {
-   "ts": "1785306504.576739",
-   "date": "2026-07-29",
-   "time": "15:28",
-   "store": "피자스쿨(구로전화국점)",
-   "biz": "1191789592",
-   "pos": "오케이포스",
-   "content": "오케이포스) 메뉴 추가 요청드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "피자 카테고리\n비프타코피자 15,900원\n치킨타코피자 15,900원\n\n기존 메뉴 중간에 가격 오름차순으로 정렬 부탁드리겠습니다."
-   ],
-   "rc": 4,
-   "lr": "1785309788.522129",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785306504576739"
   }
  ],
  "ocr": {
