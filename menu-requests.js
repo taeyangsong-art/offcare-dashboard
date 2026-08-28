@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1206,
- "updatedAt": "2026-08-28 16:18",
+ "version": 1207,
+ "updatedAt": "2026-08-28 16:21",
  "days": 30,
  "items": [
   {
@@ -46,8 +46,8 @@ window.MENU_REQUESTS = {
     "님! 안녕하세요 :개굴-하트:  해당매장 4시 30분 전까지 세팅 완료해달라고 재인입되었숩니다! 가능하실까욤?지속 요청주셔서 문의드려요 :헤드오픈_너구리_눈물_엉엉_ㅠ:",
     "추가 요청 전달드립니다.\n\n• 주류 \n매실마을 10,000원\n복분자 15,000원\n동동주 6,000원"
    ],
-   "rc": 5,
-   "lr": "1787901461.520639",
+   "rc": 7,
+   "lr": "1787901649.202889",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
