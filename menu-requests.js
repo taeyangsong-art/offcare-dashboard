@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1245,
- "updatedAt": "2026-08-29 14:25",
+ "version": 1246,
+ "updatedAt": "2026-08-29 14:28",
  "days": 30,
  "items": [
   {
@@ -563,13 +563,14 @@ window.MENU_REQUESTS = {
    "datt": [],
    "replies": [
     "유플러스 매장, 토스포스X 대표님께서 잘못 작성하신듯 합니다.\n 님 정말 바쁘시겠지만 대표님께서 온도감이 좀 높으셔서 확인해 주시면 감사하겠습니다 :루피눈물:",
-    "원격 밀려있어서 잠시뒤에 진행하겠습니다."
+    "원격 밀려있어서 잠시뒤에 진행하겠습니다.",
+    "완료입니다"
    ],
-   "rc": 3,
-   "lr": "1787981096.355519",
+   "rc": 4,
+   "lr": "1787981268.487149",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787966440000679"
   },
   {
