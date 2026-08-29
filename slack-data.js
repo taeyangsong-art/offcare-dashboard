@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6430,
+  "version": 6431,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144230,7 +144230,7 @@ window.SLACK_DATA = {
     "2026-08-29": {
       "counts": {
         "as": {
-          "김규빈": 5
+          "김규빈": 6
         },
         "transfer": {
           "김규빈": 1
@@ -144241,6 +144241,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:55",
+          "store": "태산만두 포항본점",
+          "biz": "4480202830",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "PC+TS400W / 연결 끊김으로 원격 지원 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "인터페이스에 인터넷 설정이 죽음 우선 usb로 사용 대체품 이카운트 발송"
+        },
         {
           "time": "10:45",
           "store": "하루haru",
@@ -144320,7 +144331,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 6,
+        "online": 7,
         "offline": 1,
         "unknown": 0
       },
@@ -144442,15 +144453,11 @@ window.SLACK_DATA = {
       },
       "1787966440.000679": {
         "post": "1787966440.000679",
-        "lastSeen": 1787969121.179
+        "lastSeen": 1787969242.06
       },
       "1787968801.184639": {
         "post": "1787968801.184639",
-        "lastSeen": 1787969121.179
-      },
-      "1787968800.797789": {
-        "post": "1787968800.797789",
-        "lastSeen": 1787969121.179
+        "lastSeen": 1787969242.06
       }
     },
     "days": {
@@ -180455,8 +180462,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-29": {
-        "cnt": 6,
-        "sumMin": 37.323669425646465,
+        "cnt": 7,
+        "sumMin": 43.67069793939591,
         "over": 0,
         "items": [
           {
@@ -180506,13 +180513,21 @@ window.SLACK_DATA = {
             "biz": "4480202830",
             "who": "김규빈",
             "cat": "as"
+          },
+          {
+            "hm": "11:00",
+            "min": 6.3,
+            "store": "청아닭갈비",
+            "biz": "2130637916",
+            "who": "김규빈",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-29 11:05",
+    "at": "2026-08-29 11:07",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
