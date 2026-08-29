@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6427,
+  "version": 6428,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144230,7 +144230,7 @@ window.SLACK_DATA = {
     "2026-08-29": {
       "counts": {
         "as": {
-          "김규빈": 4
+          "김규빈": 5
         },
         "transfer": {
           "김규빈": 1
@@ -144241,6 +144241,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:45",
+          "store": "하루haru",
+          "biz": "6933701388",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "터미널 사용 중 / 주방 프린터 영수증 미출력 - 포스 프로그램 상 연결 및 주방 프린터 출력은 체크 확인하였습니다. 확인 부탁드립니다..!",
+          "hw": "",
+          "intake": "online",
+          "note": "재온보딩 후 정상 아이패드 토스프로그램이 최신으로 안되어있던걸로 추정"
+        },
         {
           "time": "10:34",
           "store": "키도비(KYDO.B)",
@@ -144309,7 +144320,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 5,
+        "online": 6,
         "offline": 1,
         "unknown": 0
       },
@@ -144431,11 +144442,11 @@ window.SLACK_DATA = {
       },
       "1787966440.000679": {
         "post": "1787966440.000679",
-        "lastSeen": 1787968581.935
+        "lastSeen": 1787968639.58
       },
       "1787968553.976509": {
         "post": "1787968553.976509",
-        "lastSeen": 1787968581.935
+        "lastSeen": 1787968639.58
       }
     },
     "days": {
@@ -180489,7 +180500,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-29 10:56",
+    "at": "2026-08-29 10:57",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
