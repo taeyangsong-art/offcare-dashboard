@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6443,
+  "version": 6444,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144230,7 +144230,7 @@ window.SLACK_DATA = {
     "2026-08-29": {
       "counts": {
         "as": {
-          "김규빈": 8
+          "김규빈": 9
         },
         "onboarding": {
           "김규빈": 1
@@ -144244,6 +144244,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:23",
+          "store": "착한통닭",
+          "biz": "8805400786",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "포스기/ 화면 먹통으로 터치 안되는 증상 반복/ 교체 언급으로 지원 부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "방전작업 시도 하려 하였으나 매장이 바빠서 퇴근 하실때 21시에 재접수 하시기로함"
+        },
         {
           "time": "11:12",
           "store": "레드타이 블루스퀘어",
@@ -144368,7 +144379,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 10,
-        "offline": 1,
+        "offline": 2,
         "unknown": 0
       },
       "updatedAt": "11:39",
@@ -144489,23 +144500,23 @@ window.SLACK_DATA = {
       },
       "1787966440.000679": {
         "post": "1787966440.000679",
-        "lastSeen": 1787971220.874
+        "lastSeen": 1787971279.977
       },
       "1787970426.729939": {
         "post": "1787970426.729939",
-        "lastSeen": 1787971220.874
+        "lastSeen": 1787971279.977
       },
       "1787970604.113239": {
         "post": "1787970604.113239",
-        "lastSeen": 1787971220.874
+        "lastSeen": 1787971279.977
       },
       "1787970661.571669": {
         "post": "1787970661.571669",
-        "lastSeen": 1787971220.874
+        "lastSeen": 1787971279.977
       },
       "1787971192.438269": {
         "post": "1787971192.438269",
-        "lastSeen": 1787971220.874
+        "lastSeen": 1787971279.977
       }
     },
     "days": {
@@ -180599,7 +180610,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-29 11:40",
+    "at": "2026-08-29 11:41",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
