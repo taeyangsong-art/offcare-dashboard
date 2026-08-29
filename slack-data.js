@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6513,
+  "version": 6514,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144229,13 +144229,13 @@ window.SLACK_DATA = {
     },
     "2026-08-29": {
       "counts": {
+        "onboarding": {
+          "미지정": 3,
+          "김규빈": 2
+        },
         "as": {
           "김규빈": 25,
           "미지정": 4
-        },
-        "onboarding": {
-          "미지정": 2,
-          "김규빈": 2
         },
         "transfer": {
           "김규빈": 1
@@ -144246,6 +144246,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "14:45",
+          "store": "라온엘헤어",
+          "biz": "7751402851",
+          "cat": "onboarding",
+          "emp": "미지정",
+          "req": "포프(pc) + 유프 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료 사용법 설명"
+        },
         {
           "time": "14:28",
           "store": "카페드롭탑 동부산관광단지점",
@@ -144668,7 +144679,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 31,
+        "online": 32,
         "offline": 7,
         "unknown": 0
       },
@@ -144774,19 +144785,15 @@ window.SLACK_DATA = {
       },
       "1787978700.516829": {
         "post": "1787978700.516829",
-        "lastSeen": 1787983460.443
-      },
-      "1787982300.516889": {
-        "post": "1787982300.516889",
-        "lastSeen": 1787983460.443
+        "lastSeen": 1787983640.913
       },
       "1787983205.501499": {
         "post": "1787983205.501499",
-        "lastSeen": 1787983460.443
+        "lastSeen": 1787983640.913
       },
       "1787983200.262379": {
         "post": "1787983200.262379",
-        "lastSeen": 1787983460.443
+        "lastSeen": 1787983640.913
       }
     },
     "days": {
@@ -180791,8 +180798,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-29": {
-        "cnt": 33,
-        "sumMin": 554.0591110229492,
+        "cnt": 34,
+        "sumMin": 574.8951295375824,
         "over": 7,
         "items": [
           {
@@ -181058,13 +181065,21 @@ window.SLACK_DATA = {
             "biz": "6049455136",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "14:45",
+            "min": 20.8,
+            "store": "라온엘헤어",
+            "biz": "7751402851",
+            "who": "",
+            "cat": "onboarding"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-29 15:04",
+    "at": "2026-08-29 15:07",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
