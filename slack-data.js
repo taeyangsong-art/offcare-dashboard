@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6417,
+  "version": 6418,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144230,7 +144230,7 @@ window.SLACK_DATA = {
     "2026-08-29": {
       "counts": {
         "as": {
-          "김규빈": 1
+          "김규빈": 2
         },
         "transfer": {
           "김규빈": 1
@@ -144241,6 +144241,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:20",
+          "store": "황태진국",
+          "biz": "7646300768",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "무선 프린터 &gt; 유선으로 사용할 수 있게 연결 온보딩 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "TS400W 유선으로 사용불가 사용할려면 USB로 이용해야되는데 주방에쓸거라 불가로 유선 프린터 기추 관련 인입 예정"
+        },
         {
           "time": "10:12",
           "store": "정품전자담배 신라면세점점",
@@ -144276,7 +144287,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 2,
+        "online": 3,
         "offline": 1,
         "unknown": 0
       },
@@ -144363,11 +144374,11 @@ window.SLACK_DATA = {
       },
       "1787966440.000679": {
         "post": "1787966440.000679",
-        "lastSeen": 1787967028.249
+        "lastSeen": 1787967201.394
       },
       "1787966558.966159": {
         "post": "1787966558.966159",
-        "lastSeen": 1787967028.249
+        "lastSeen": 1787967201.394
       }
     },
     "days": {
@@ -180397,7 +180408,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-29 10:30",
+    "at": "2026-08-29 10:33",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
