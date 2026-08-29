@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6478,
+  "version": 6479,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144230,7 +144230,7 @@ window.SLACK_DATA = {
     "2026-08-29": {
       "counts": {
         "as": {
-          "김규빈": 16,
+          "김규빈": 17,
           "미지정": 3
         },
         "onboarding": {
@@ -144245,6 +144245,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "13:44",
+          "store": "애월 큐 당구장",
+          "biz": "3090268518",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "프+유프/ 영수증 설정 후 [테스트 출력] 중에 용지가 계속 나와서 지원 요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "재온보딩 이후 및 유프 재연결 완료"
+        },
         {
           "time": "13:30",
           "store": "망고정 여의도점",
@@ -144490,7 +144501,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 18,
+        "online": 19,
         "offline": 4,
         "unknown": 0
       },
@@ -144608,19 +144619,19 @@ window.SLACK_DATA = {
       },
       "1787966440.000679": {
         "post": "1787966440.000679",
-        "lastSeen": 1787978898.754
+        "lastSeen": 1787979142.418
       },
       "1787970426.729939": {
         "post": "1787970426.729939",
-        "lastSeen": 1787978898.754
+        "lastSeen": 1787979142.418
       },
       "1787978700.516829": {
         "post": "1787978700.516829",
-        "lastSeen": 1787978898.754
+        "lastSeen": 1787979142.418
       },
       "1787978700.226109": {
         "post": "1787978700.226109",
-        "lastSeen": 1787978898.754
+        "lastSeen": 1787979142.418
       }
     },
     "days": {
@@ -180802,7 +180813,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-29 13:48",
+    "at": "2026-08-29 13:52",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
