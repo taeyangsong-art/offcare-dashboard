@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1255,
- "updatedAt": "2026-08-29 17:12",
+ "version": 1256,
+ "updatedAt": "2026-08-29 17:45",
  "days": 30,
  "items": [
   {
@@ -49560,29 +49560,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김현기",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785401829324979"
-  },
-  {
-   "ts": "1785400612.677689",
-   "date": "2026-07-30",
-   "time": "17:36",
-   "store": "로르솝",
-   "biz": "3790503266",
-   "pos": "토스포스",
-   "content": "최초등록임\n카테고리별로 분리해주세요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "등록 완료 / 이미지 등록 방법 솔라피 발송"
-   ],
-   "rc": 2,
-   "lr": "1785409028.805239",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785400612677689"
   }
  ],
  "ocr": {
