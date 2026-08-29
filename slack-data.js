@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6434,
+  "version": 6435,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144230,7 +144230,7 @@ window.SLACK_DATA = {
     "2026-08-29": {
       "counts": {
         "as": {
-          "김규빈": 6
+          "김규빈": 7
         },
         "transfer": {
           "김규빈": 1
@@ -144241,6 +144241,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:00",
+          "store": "청아닭갈비",
+          "biz": "2130637916",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "초기화에 실패했습니다. 문구 뜨면서 단말기랑 연결이 안된다고 합니다. 점검 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "POS가 아니라 일반으로 되어있음 POS 생성함 / TID 변경 후 재온보딩 완료"
+        },
         {
           "time": "10:55",
           "store": "태산만두 포항본점",
@@ -144331,7 +144342,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 7,
+        "online": 8,
         "offline": 1,
         "unknown": 0
       },
@@ -144453,15 +144464,15 @@ window.SLACK_DATA = {
       },
       "1787966440.000679": {
         "post": "1787966440.000679",
-        "lastSeen": 1787969722.344
+        "lastSeen": 1787969840.224
       },
       "1787968801.184639": {
         "post": "1787968801.184639",
-        "lastSeen": 1787969722.344
+        "lastSeen": 1787969840.224
       },
       "1787969533.748119": {
         "post": "1787969533.748119",
-        "lastSeen": 1787969722.344
+        "lastSeen": 1787969840.224
       }
     },
     "days": {
@@ -180531,7 +180542,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-29 11:15",
+    "at": "2026-08-29 11:17",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
