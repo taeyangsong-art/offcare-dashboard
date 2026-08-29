@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6405,
+  "version": 6406,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144229,12 +144229,26 @@ window.SLACK_DATA = {
     },
     "2026-08-29": {
       "counts": {
+        "transfer": {
+          "김규빈": 1
+        },
         "menu": {
           "김규빈": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:45",
+          "store": "아시안상회 논라 대신점",
+          "biz": "6951003503",
+          "cat": "transfer",
+          "emp": "김규빈",
+          "req": "금일 요청 / 메뉴복사 X / 프론트",
+          "hw": "",
+          "intake": "online",
+          "note": "님 안녕하세요, 바쁘시겠지만 혹시 금일 다운로드 진행 가능할까요? 님 안녕하세요, 바쁘시겠지만 혹시 금일 다운로드 진행 가능할까요? / 전화걸고있습니다 / 명변완료"
+        },
         {
           "time": "05:51",
           "store": "스키당",
@@ -144248,7 +144262,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 1,
         "unknown": 0
       },
@@ -144332,10 +144346,6 @@ window.SLACK_DATA = {
       "1787912598.042309": {
         "post": "1787912598.042309",
         "lastSeen": 1787912660.497
-      },
-      "1787964315.383229": {
-        "post": "1787964315.383229",
-        "lastSeen": 1787964324.243
       }
     },
     "days": {
@@ -180342,7 +180352,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-29 09:45",
+    "at": "2026-08-29 10:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

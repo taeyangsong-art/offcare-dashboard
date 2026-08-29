@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1234,
- "updatedAt": "2026-08-29 06:10",
+ "version": 1235,
+ "updatedAt": "2026-08-29 10:00",
  "days": 30,
  "items": [
   {
@@ -49538,30 +49538,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785377671478869"
-  },
-  {
-   "ts": "1785372759.078959",
-   "date": "2026-07-30",
-   "time": "09:52",
-   "store": "형과아우 황칠누룽지 삼계탕",
-   "biz": "7643801386",
-   "pos": "오케이포스",
-   "content": "프로그램 : KISOKPOS\n주요 메뉴 : 누룽지추가 2,000원 / 포장용기 1,000원\n주류 : 막걸리 4,000원\n메뉴 추가 요청 부탁드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "여기 기장점입니다!",
-    "네네 감사합니닷!"
-   ],
-   "rc": 6,
-   "lr": "1785373203.601429",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785372759078959"
   }
  ],
  "ocr": {
