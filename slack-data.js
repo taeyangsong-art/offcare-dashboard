@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6638,
+  "version": 6639,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144230,7 +144230,7 @@ window.SLACK_DATA = {
     "2026-08-29": {
       "counts": {
         "as": {
-          "미지정": 21,
+          "미지정": 22,
           "김규빈": 25
         },
         "onboarding": {
@@ -144247,6 +144247,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "22:43",
+          "store": "반점주점",
+          "biz": "1364701206",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "무선 프린터기 w 용지 출력 불가 증상으로 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트 - 프린터 연결 케이블 빠져있었음"
+        },
         {
           "time": "22:13",
           "store": "sbs 노래연습장",
@@ -144999,19 +145010,19 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 56,
+        "online": 57,
         "offline": 12,
         "unknown": 0
       },
-      "updatedAt": "22:43",
+      "updatedAt": "22:54",
       "voc": {
-        "responses": 23,
+        "responses": 24,
         "install": {
           "count": 8,
           "low": 0
         },
         "nps": {
-          "count": 23,
+          "count": 24,
           "low": 1
         },
         "high": {
@@ -145020,7 +145031,7 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "5": 1,
-          "8": 2,
+          "8": 3,
           "9": 2,
           "10": 18
         },
@@ -145036,6 +145047,10 @@ window.SLACK_DATA = {
           "서비스[학원]": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 4,
+            "low": 0
+          },
           "1개월": {
             "total": 6,
             "low": 1
@@ -145044,16 +145059,16 @@ window.SLACK_DATA = {
             "total": 8,
             "low": 0
           },
-          "6개월": {
-            "total": 3,
-            "low": 0
-          },
           "12개월": {
             "total": 6,
             "low": 0
           }
         },
         "byVan": {
+          "NICE": {
+            "total": 2,
+            "low": 0
+          },
           "KOCES": {
             "total": 5,
             "low": 1
@@ -145079,10 +145094,6 @@ window.SLACK_DATA = {
             "low": 0
           },
           "KPN": {
-            "total": 1,
-            "low": 0
-          },
-          "NICE": {
             "total": 1,
             "low": 0
           }
@@ -145211,35 +145222,31 @@ window.SLACK_DATA = {
       },
       "1787978700.516829": {
         "post": "1787978700.516829",
-        "lastSeen": 1788011299.223
+        "lastSeen": 1788011780.804
       },
       "1787983205.501499": {
         "post": "1787983205.501499",
-        "lastSeen": 1788011299.223
+        "lastSeen": 1788011780.804
       },
       "1787990400.865769": {
         "post": "1787990400.865769",
-        "lastSeen": 1788011299.223
+        "lastSeen": 1788011780.804
       },
       "1787994000.965269": {
         "post": "1787994000.965269",
-        "lastSeen": 1788011299.223
+        "lastSeen": 1788011780.804
       },
       "1787995386.826719": {
         "post": "1787995386.826719",
-        "lastSeen": 1788011299.223
+        "lastSeen": 1788011780.804
       },
       "1787996380.854489": {
         "post": "1787996380.854489",
-        "lastSeen": 1788011299.223
+        "lastSeen": 1788011780.804
       },
       "1788001134.838139": {
         "post": "1788001134.838139",
         "lastSeen": 1788001233.557
-      },
-      "1788010998.312749": {
-        "post": "1788010998.312749",
-        "lastSeen": 1788011299.223
       }
     },
     "days": {
@@ -181244,8 +181251,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-29": {
-        "cnt": 59,
-        "sumMin": 1405.5867027839024,
+        "cnt": 60,
+        "sumMin": 1414.615048635006,
         "over": 18,
         "items": [
           {
@@ -181719,13 +181726,21 @@ window.SLACK_DATA = {
             "biz": "6520900196",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "22:43",
+            "min": 9,
+            "store": "반점주점",
+            "biz": "1364701206",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-29 22:48",
+    "at": "2026-08-29 22:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
