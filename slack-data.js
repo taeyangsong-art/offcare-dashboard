@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6520,
+  "version": 6521,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144683,58 +144683,105 @@ window.SLACK_DATA = {
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "15:12",
+      "updatedAt": "15:22",
       "voc": {
-        "responses": 2,
+        "responses": 8,
         "install": {
-          "count": 0,
+          "count": 5,
           "low": 0
         },
         "nps": {
-          "count": 2,
+          "count": 8,
           "low": 0
         },
         "high": {
-          "install": 0,
-          "nps": 0
+          "install": 4,
+          "nps": 5
         },
         "npsDist": {
-          "8": 2
+          "8": 2,
+          "9": 1,
+          "10": 5
         },
-        "installDist": {},
-        "byIndustry": {},
+        "installDist": {
+          "3": 1,
+          "5": 4
+        },
+        "byIndustry": {
+          "요식업": 1,
+          "카페": 1,
+          "기타": 2,
+          "서비스[학원]": 1
+        },
         "byTenure": {
-          "1개월": {
-            "total": 1,
+          "구매설치": {
+            "total": 5,
             "low": 0
           },
           "6개월": {
+            "total": 2,
+            "low": 0
+          },
+          "1개월": {
             "total": 1,
             "low": 0
           }
         },
         "byVan": {
-          "KIS": {
+          "KCP": {
             "total": 1,
             "low": 0
           },
+          "KIS": {
+            "total": 2,
+            "low": 0
+          },
+          "KOCES": {
+            "total": 2,
+            "low": 0
+          },
           "SMARTRO": {
+            "total": 2,
+            "low": 0
+          },
+          "SECTA9": {
             "total": 1,
             "low": 0
           }
         },
         "reasonCounts": {},
         "alerts": [],
-        "praises": []
+        "praises": [
+          {
+            "time": "15:22",
+            "store": "오이시",
+            "storeId": "615456",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "너무 친절하시게 설치 해주시고 설명도 너무 잘해주셔서 이해가 너무잘 되었어요 사용하기 너무좋고 디자인도 이뻐서 무조건추전해주고 싶어요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:22",
+            "store": "망원견",
+            "storeId": "614661",
+            "indBucket": "기타",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "기사님께서 꼼꼼히 설명 가이드 다 해주시고 빠르게 설치 해주셨습니다~ 기기 디자인이 독보적이지 않을까요 수수료 없음과",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
       }
     }
   },
   "resp": {
     "watch": {
-      "1787811528.151499": {
-        "post": "1787811528.151499",
-        "lastSeen": 1787812408.513
-      },
       "1787813924.708289": {
         "post": "1787813924.708289",
         "lastSeen": 1787861727.424
@@ -144793,23 +144840,23 @@ window.SLACK_DATA = {
       },
       "1787978700.516829": {
         "post": "1787978700.516829",
-        "lastSeen": 1787984122.461
+        "lastSeen": 1787984661.99
       },
       "1787983205.501499": {
         "post": "1787983205.501499",
-        "lastSeen": 1787984122.461
+        "lastSeen": 1787984661.99
       },
       "1787983200.262379": {
         "post": "1787983200.262379",
-        "lastSeen": 1787984122.461
+        "lastSeen": 1787984661.99
       },
       "1787983885.053309": {
         "post": "1787983885.053309",
-        "lastSeen": 1787984122.461
+        "lastSeen": 1787984661.99
       },
       "1787983965.546509": {
         "post": "1787983965.546509",
-        "lastSeen": 1787984122.461
+        "lastSeen": 1787984661.99
       }
     },
     "days": {
@@ -181095,7 +181142,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-29 15:15",
+    "at": "2026-08-29 15:24",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
