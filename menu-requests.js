@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1266,
- "updatedAt": "2026-08-29 22:05",
+ "version": 1267,
+ "updatedAt": "2026-08-29 22:06",
  "days": 30,
  "items": [
   {
@@ -23,10 +23,11 @@ window.MENU_REQUESTS = {
    "replies": [
     "곱배기 메뉴 전 메뉴를 단일 메뉴로 추가 생성 요청입니다..!\n(옵션 선택없이 바로바로 선택할 수 있도록 요청)",
     "시간차로 다른 내용 계속 남겨주셔서 제가 직접 수정 중..",
-    "헉 그럼 그대로 두셔도 될거 같아요.."
+    "헉 그럼 그대로 두셔도 될거 같아요..",
+    "오히려 좋아하실거 같습니다.."
    ],
-   "rc": 5,
-   "lr": "1788008664.484439",
+   "rc": 6,
+   "lr": "1788008734.842029",
    "rfx": 3,
    "status": "wait",
    "handler": null,
