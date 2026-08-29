@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1251,
- "updatedAt": "2026-08-29 15:41",
+ "version": 1252,
+ "updatedAt": "2026-08-29 15:43",
  "days": 30,
  "items": [
   {
@@ -20,9 +20,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787985611.871929",
+   "replies": [
+    "카테고리 신메뉴 > 처음 앞쪽으로 새로 만들어 주세요\n\n[메뉴추가] 신메뉴\n멸치국수 7000\nㄴ곱빼기 1500\nㄴ공기밥 1500\n\n순두부 게살 스프 단품 10900\nㄴ게살 추가3600\nㄴ공기밥 1500\n\n소불고기 덮밥 13900\nㄴ소고기추가100g 3600\nㄴ공기밥 1500\n\n우삼겹 숙주 덮밥 10900\nㄴ소고기 추가 100g 3600원\nㄴ공기밥 추가 1500\n\n포스 키오스크 모두 요청"
+   ],
+   "rc": 2,
+   "lr": "1787985739.874079",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -49910,27 +49912,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785397246451689"
-  },
-  {
-   "ts": "1785393799.391159",
-   "date": "2026-07-30",
-   "time": "15:43",
-   "store": "눈꽃아나고",
-   "biz": "8350103491",
-   "pos": "",
-   "content": "메뉴 시간양해 사전안내",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1785395258.915069",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785393799391159"
   }
  ],
  "ocr": {
