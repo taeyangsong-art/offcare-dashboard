@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6500,
+  "version": 6501,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144230,7 +144230,7 @@ window.SLACK_DATA = {
     "2026-08-29": {
       "counts": {
         "as": {
-          "김규빈": 23,
+          "김규빈": 24,
           "미지정": 3
         },
         "onboarding": {
@@ -144257,6 +144257,17 @@ window.SLACK_DATA = {
           "urgent": true,
           "intake": "offline",
           "note": "에이전트 재실행 정상"
+        },
+        {
+          "time": "14:24",
+          "store": "뉴베리영어독서영어교습소",
+          "biz": "1799302010",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "유프/ 떨어뜨리면서 뚜껑이 분리됨/ 파손은 아니고 스프링이 빠져서 어떻게 끼워야 하는지 도움 요청",
+          "hw": "",
+          "intake": "online",
+          "note": "영상통화로 확인 해보니 뚜껑이 아예 파손되었습니다. 무상면책으로 가능한지 고객센터 인입 후 교체 진행 부탁드려요"
         },
         {
           "time": "14:04",
@@ -144613,7 +144624,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 27,
+        "online": 28,
         "offline": 6,
         "unknown": 0
       },
@@ -144727,19 +144738,19 @@ window.SLACK_DATA = {
       },
       "1787970426.729939": {
         "post": "1787970426.729939",
-        "lastSeen": 1787982086.995
+        "lastSeen": 1787982201.515
       },
       "1787978700.516829": {
         "post": "1787978700.516829",
-        "lastSeen": 1787982086.995
+        "lastSeen": 1787982201.515
       },
       "1787980533.090629": {
         "post": "1787980533.090629",
-        "lastSeen": 1787982086.995
+        "lastSeen": 1787982201.515
       },
       "1787980730.404709": {
         "post": "1787980730.404709",
-        "lastSeen": 1787982086.995
+        "lastSeen": 1787982201.515
       }
     },
     "days": {
@@ -181009,7 +181020,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-29 14:41",
+    "at": "2026-08-29 14:43",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
