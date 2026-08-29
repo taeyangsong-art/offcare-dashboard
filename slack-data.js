@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6621,
+  "version": 6622,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144229,13 +144229,13 @@ window.SLACK_DATA = {
     },
     "2026-08-29": {
       "counts": {
+        "onboarding": {
+          "미지정": 11,
+          "김규빈": 2
+        },
         "as": {
           "미지정": 20,
           "김규빈": 25
-        },
-        "onboarding": {
-          "미지정": 10,
-          "김규빈": 2
         },
         "transfer": {
           "김규빈": 1
@@ -144247,6 +144247,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "21:34",
+          "store": "아쿠아해유",
+          "biz": "2180571625",
+          "cat": "onboarding",
+          "emp": "미지정",
+          "req": "포프(포스기) 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포스 프론트 연결 및 프린터 포스에 연결 완료"
+        },
         {
           "time": "21:04",
           "store": "온도 혼술바 청주 동남지구점",
@@ -144966,19 +144977,19 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 55,
+        "online": 56,
         "offline": 10,
         "unknown": 0
       },
-      "updatedAt": "21:34",
+      "updatedAt": "21:42",
       "voc": {
-        "responses": 21,
+        "responses": 22,
         "install": {
           "count": 8,
           "low": 0
         },
         "nps": {
-          "count": 21,
+          "count": 22,
           "low": 0
         },
         "high": {
@@ -144987,7 +144998,7 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "8": 2,
-          "9": 1,
+          "9": 2,
           "10": 18
         },
         "installDist": {
@@ -145003,7 +145014,7 @@ window.SLACK_DATA = {
         },
         "byTenure": {
           "1개월": {
-            "total": 4,
+            "total": 5,
             "low": 0
           },
           "구매설치": {
@@ -145020,6 +145031,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KSNET": {
+            "total": 1,
+            "low": 0
+          },
           "KIS": {
             "total": 8,
             "low": 0
@@ -145148,35 +145163,31 @@ window.SLACK_DATA = {
       },
       "1787978700.516829": {
         "post": "1787978700.516829",
-        "lastSeen": 1788007037.154
+        "lastSeen": 1788007399.044
       },
       "1787983205.501499": {
         "post": "1787983205.501499",
-        "lastSeen": 1788007037.154
+        "lastSeen": 1788007399.044
       },
       "1787990400.865769": {
         "post": "1787990400.865769",
-        "lastSeen": 1788007037.154
+        "lastSeen": 1788007399.044
       },
       "1787994000.965269": {
         "post": "1787994000.965269",
-        "lastSeen": 1788007037.154
+        "lastSeen": 1788007399.044
       },
       "1787995386.826719": {
         "post": "1787995386.826719",
-        "lastSeen": 1788007037.154
+        "lastSeen": 1788007399.044
       },
       "1787996380.854489": {
         "post": "1787996380.854489",
-        "lastSeen": 1788007037.154
+        "lastSeen": 1788007399.044
       },
       "1788001134.838139": {
         "post": "1788001134.838139",
         "lastSeen": 1788001233.557
-      },
-      "1788006881.243099": {
-        "post": "1788006881.243099",
-        "lastSeen": 1788007037.154
       }
     },
     "days": {
@@ -181181,8 +181192,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-29": {
-        "cnt": 57,
-        "sumMin": 1381.4987514177958,
+        "cnt": 58,
+        "sumMin": 1387.1130164345104,
         "over": 18,
         "items": [
           {
@@ -181640,13 +181651,21 @@ window.SLACK_DATA = {
             "biz": "4792601957",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "21:34",
+            "min": 5.6,
+            "store": "아쿠아해유",
+            "biz": "2180571625",
+            "who": "",
+            "cat": "onboarding"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-29 21:37",
+    "at": "2026-08-29 21:43",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
