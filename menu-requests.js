@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1241,
- "updatedAt": "2026-08-29 13:59",
+ "version": 1242,
+ "updatedAt": "2026-08-29 14:15",
  "days": 30,
  "items": [
   {
@@ -49904,29 +49904,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김현기",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785390164526449"
-  },
-  {
-   "ts": "1785388304.065309",
-   "date": "2026-07-30",
-   "time": "14:11",
-   "store": "컵넛 창원가로수점",
-   "biz": "1416400415",
-   "pos": "토스포스",
-   "content": "컵넛 마산해양공원점과 옵션까지 똑같이 적용 부탁드립니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "담당자 번호로 :telephone_receiver: 아직 장사 안한다고 하셔서 토플파 복사, 재온보딩으로 진행하기로 함"
-   ],
-   "rc": 2,
-   "lr": "1785394089.459579",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785388304065309"
   }
  ],
  "ocr": {
