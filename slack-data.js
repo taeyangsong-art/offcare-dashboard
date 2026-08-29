@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6670,
+  "version": 6671,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145189,12 +145189,28 @@ window.SLACK_DATA = {
       }
     },
     "2026-08-30": {
-      "counts": {},
+      "counts": {
+        "menu": {
+          "김규빈": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "05:46",
+          "store": "",
+          "biz": "4582401280",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "메뉴 옵션 작업",
+          "hw": "",
+          "intake": "offline",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
+        }
+      ],
       "intake": {
         "online": 0,
-        "offline": 0,
+        "offline": 1,
         "unknown": 0
       },
       "updatedAt": "05:46"
@@ -145269,10 +145285,6 @@ window.SLACK_DATA = {
       "1788001134.838139": {
         "post": "1788001134.838139",
         "lastSeen": 1788001233.557
-      },
-      "1788036406.198359": {
-        "post": "1788036406.198359",
-        "lastSeen": 1788037233.348
       }
     },
     "days": {
@@ -181766,7 +181778,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-30 06:00",
+    "at": "2026-08-30 06:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
