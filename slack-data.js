@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6463,
+  "version": 6464,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144242,7 +144242,19 @@ window.SLACK_DATA = {
           "김규빈": 1
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "12:04",
+          "store": "박승광 해물손칼국수 검단신도시직영점",
+          "biz": "5335101097",
+          "handler": "김규빈",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "done": [
         {
           "time": "12:00",
@@ -144423,11 +144435,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 12,
+        "online": 13,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "12:43",
+      "updatedAt": "13:06",
       "voc": {
         "responses": 1,
         "install": {
@@ -144541,19 +144553,23 @@ window.SLACK_DATA = {
       },
       "1787966440.000679": {
         "post": "1787966440.000679",
-        "lastSeen": 1787976035.086
+        "lastSeen": 1787976442.244
       },
       "1787970426.729939": {
         "post": "1787970426.729939",
-        "lastSeen": 1787976035.086
+        "lastSeen": 1787976442.244
       },
       "1787974710.695769": {
         "post": "1787974710.695769",
-        "lastSeen": 1787976035.086
+        "lastSeen": 1787976442.244
       },
       "1787975002.256759": {
         "post": "1787975002.256759",
-        "lastSeen": 1787976035.086
+        "lastSeen": 1787976442.244
+      },
+      "1787976412.381069": {
+        "post": "1787976412.381069",
+        "lastSeen": 1787976442.244
       }
     },
     "days": {
@@ -180687,7 +180703,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-29 13:00",
+    "at": "2026-08-29 13:07",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
