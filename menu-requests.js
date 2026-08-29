@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1238,
- "updatedAt": "2026-08-29 11:28",
+ "version": 1239,
+ "updatedAt": "2026-08-29 12:10",
  "days": 30,
  "items": [
   {
@@ -49969,95 +49969,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785381214720969"
-  },
-  {
-   "ts": "1785380960.097139",
-   "date": "2026-07-30",
-   "time": "12:09",
-   "store": "미트하이",
-   "biz": "4941003249",
-   "pos": "토스포스",
-   "content": "이미지로 첨부",
-   "special": "바로 가능한 시간",
-   "drive": [
-    "https://drive.google.com/open?id=128_HI4jmOEOWnXdSz82AHSI6Rsj-2l76",
-    "https://drive.google.com/open?id=1JahkjmjWqG3Z2Tsar-T5PDxFYMTEfKZm"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "128_HI4jmOEOWnXdSz82AHSI6Rsj-2l76",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "coffee",
-       "name": "아메리카노",
-       "price": 3800
-      },
-      {
-       "category": "Season",
-       "name": "부안 수박쥬스",
-       "price": 6800
-      },
-      {
-       "category": "Ours",
-       "name": "체리 콕",
-       "price": 4500
-      },
-      {
-       "category": "Ours",
-       "name": "오로라 퍼플 에이드",
-       "price": 5800
-      },
-      {
-       "category": "Ours",
-       "name": "제주 숲 쑥말차 라떼",
-       "price": 5500
-      }
-     ]
-    },
-    {
-     "id": "1JahkjmjWqG3Z2Tsar-T5PDxFYMTEfKZm",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "SIGNATURE COCKTAIL",
-       "name": "화요하이볼",
-       "price": 8500
-      },
-      {
-       "category": "SIGNATURE COCKTAIL",
-       "name": "블루사파이어",
-       "price": 7800
-      },
-      {
-       "category": "SIGNATURE COCKTAIL",
-       "name": "블랙러시안",
-       "price": 10500
-      },
-      {
-       "category": "SIGNATURE COCKTAIL",
-       "name": "화이트러시안",
-       "price": 11500
-      },
-      {
-       "category": "SIGNATURE COCKTAIL",
-       "name": "산토리 하이볼",
-       "price": 9000
-      }
-     ]
-    }
-   ],
-   "replies": [
-    "기존에 몇개 추가되어있음 제외하고 완료"
-   ],
-   "rc": 2,
-   "lr": "1785381419.903889",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785380960097139"
   }
  ],
  "ocr": {
