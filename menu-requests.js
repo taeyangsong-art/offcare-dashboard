@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1239,
- "updatedAt": "2026-08-29 12:10",
+ "version": 1240,
+ "updatedAt": "2026-08-29 12:15",
  "days": 30,
  "items": [
   {
@@ -49948,27 +49948,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785387543387099"
-  },
-  {
-   "ts": "1785381214.720969",
-   "date": "2026-07-30",
-   "time": "12:13",
-   "store": "등촌샤브칼국수 안양호계점",
-   "biz": "2386600824",
-   "pos": "",
-   "content": "선,후불 테이블 14개 생성 요청 드립니다. :감사합니다꾸벅:",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1785381470.662199",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785381214720969"
   }
  ],
  "ocr": {
