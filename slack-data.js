@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6543,
+  "version": 6544,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144229,13 +144229,13 @@ window.SLACK_DATA = {
     },
     "2026-08-29": {
       "counts": {
+        "onboarding": {
+          "미지정": 8,
+          "김규빈": 2
+        },
         "as": {
           "미지정": 9,
           "김규빈": 25
-        },
-        "onboarding": {
-          "미지정": 7,
-          "김규빈": 2
         },
         "transfer": {
           "김규빈": 1
@@ -144246,6 +144246,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:35",
+          "store": "보금사",
+          "biz": "8112402097",
+          "cat": "onboarding",
+          "emp": "미지정",
+          "req": "포프(휴대폰) + 유프 온보딩 + 금액입력결제 세팅 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "재온보딩후 금액입력모드 설정"
+        },
         {
           "time": "16:30",
           "store": "이문 닭불고기",
@@ -144778,7 +144789,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 40,
+        "online": 41,
         "offline": 8,
         "unknown": 0
       },
@@ -144943,23 +144954,19 @@ window.SLACK_DATA = {
       },
       "1787978700.516829": {
         "post": "1787978700.516829",
-        "lastSeen": 1787990183.839
+        "lastSeen": 1787990360.269
       },
       "1787983205.501499": {
         "post": "1787983205.501499",
-        "lastSeen": 1787990183.839
+        "lastSeen": 1787990360.269
       },
       "1787985607.219829": {
         "post": "1787985607.219829",
-        "lastSeen": 1787990183.839
-      },
-      "1787988929.665779": {
-        "post": "1787988929.665779",
-        "lastSeen": 1787990183.839
+        "lastSeen": 1787990360.269
       },
       "1787989679.585169": {
         "post": "1787989679.585169",
-        "lastSeen": 1787990183.839
+        "lastSeen": 1787990360.269
       }
     },
     "days": {
@@ -180964,8 +180971,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-29": {
-        "cnt": 43,
-        "sumMin": 952.4939461827279,
+        "cnt": 44,
+        "sumMin": 974.8670831958453,
         "over": 12,
         "items": [
           {
@@ -181311,13 +181318,21 @@ window.SLACK_DATA = {
             "biz": "3972402290",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "16:35",
+            "min": 22.4,
+            "store": "보금사",
+            "biz": "8112402097",
+            "who": "",
+            "cat": "onboarding"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-29 16:56",
+    "at": "2026-08-29 16:59",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
