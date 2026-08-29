@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6467,
+  "version": 6468,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144230,7 +144230,7 @@ window.SLACK_DATA = {
     "2026-08-29": {
       "counts": {
         "as": {
-          "김규빈": 13
+          "김규빈": 14
         },
         "onboarding": {
           "김규빈": 1
@@ -144256,6 +144256,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "12:43",
+          "store": "우고집",
+          "biz": "1162614833",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "하이오더에서 주문 시 홀에서 프린터 출력 안됨 오류 원격 점검 요청!",
+          "hw": "",
+          "intake": "online",
+          "note": "안나오는게 아니라 하이오더 메뉴에 품절걸려잇대요... 하이오더측으로 연락요청"
+        },
         {
           "time": "12:00",
           "store": "(주)디에스라이팅",
@@ -144435,7 +144446,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 13,
+        "online": 14,
         "offline": 4,
         "unknown": 0
       },
@@ -144553,19 +144564,19 @@ window.SLACK_DATA = {
       },
       "1787966440.000679": {
         "post": "1787966440.000679",
-        "lastSeen": 1787976679.928
+        "lastSeen": 1787976739.398
       },
       "1787970426.729939": {
         "post": "1787970426.729939",
-        "lastSeen": 1787976679.928
+        "lastSeen": 1787976739.398
       },
       "1787974710.695769": {
         "post": "1787974710.695769",
-        "lastSeen": 1787976679.928
+        "lastSeen": 1787976739.398
       },
       "1787976412.381069": {
         "post": "1787976412.381069",
-        "lastSeen": 1787976679.928
+        "lastSeen": 1787976739.398
       }
     },
     "days": {
@@ -180707,7 +180718,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-29 13:11",
+    "at": "2026-08-29 13:12",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
