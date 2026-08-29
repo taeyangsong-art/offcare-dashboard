@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6418,
+  "version": 6419,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144291,7 +144291,7 @@ window.SLACK_DATA = {
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "10:22"
+      "updatedAt": "10:34"
     }
   },
   "resp": {
@@ -144374,11 +144374,11 @@ window.SLACK_DATA = {
       },
       "1787966440.000679": {
         "post": "1787966440.000679",
-        "lastSeen": 1787967201.394
+        "lastSeen": 1787967321.586
       },
-      "1787966558.966159": {
-        "post": "1787966558.966159",
-        "lastSeen": 1787967201.394
+      "1787967284.602809": {
+        "post": "1787967284.602809",
+        "lastSeen": 1787967321.586
       }
     },
     "days": {
@@ -180383,8 +180383,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-29": {
-        "cnt": 2,
-        "sumMin": 14.19364636739095,
+        "cnt": 3,
+        "sumMin": 25.902377049128212,
         "over": 0,
         "items": [
           {
@@ -180402,13 +180402,21 @@ window.SLACK_DATA = {
             "biz": "7646300768",
             "who": "김규빈",
             "cat": "as"
+          },
+          {
+            "hm": "10:22",
+            "min": 11.7,
+            "store": "카페 더 갤러리",
+            "biz": "5920203704",
+            "who": "김규빈",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-29 10:33",
+    "at": "2026-08-29 10:35",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
