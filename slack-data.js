@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6413,
+  "version": 6414,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144266,7 +144266,7 @@ window.SLACK_DATA = {
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "10:20"
+      "updatedAt": "10:22"
     }
   },
   "resp": {
@@ -144347,17 +144347,17 @@ window.SLACK_DATA = {
         "post": "1787912598.042309",
         "lastSeen": 1787912660.497
       },
-      "1787965920.960479": {
-        "post": "1787965920.960479",
-        "lastSeen": 1787966539.765
-      },
       "1787966426.602239": {
         "post": "1787966426.602239",
-        "lastSeen": 1787966539.765
+        "lastSeen": 1787966598.487
       },
       "1787966440.000679": {
         "post": "1787966440.000679",
-        "lastSeen": 1787966539.765
+        "lastSeen": 1787966598.487
+      },
+      "1787966558.966159": {
+        "post": "1787966558.966159",
+        "lastSeen": 1787966598.487
       }
     },
     "days": {
@@ -180360,11 +180360,26 @@ window.SLACK_DATA = {
             "cat": "as"
           }
         ]
+      },
+      "2026-08-29": {
+        "cnt": 1,
+        "sumMin": 10.80275868177414,
+        "over": 0,
+        "items": [
+          {
+            "hm": "10:12",
+            "min": 10.8,
+            "store": "정품전자담배 신라면세점점",
+            "biz": "3972402290",
+            "who": "김규빈",
+            "cat": "as"
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-29 10:22",
+    "at": "2026-08-29 10:23",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
