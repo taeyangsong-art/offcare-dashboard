@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6562,
+  "version": 6563,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144837,43 +144837,43 @@ window.SLACK_DATA = {
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "18:13",
+      "updatedAt": "18:23",
       "voc": {
-        "responses": 15,
+        "responses": 16,
         "install": {
-          "count": 6,
+          "count": 7,
           "low": 0
         },
         "nps": {
-          "count": 15,
+          "count": 16,
           "low": 0
         },
         "high": {
-          "install": 5,
-          "nps": 12
+          "install": 6,
+          "nps": 13
         },
         "npsDist": {
           "8": 2,
           "9": 1,
-          "10": 12
+          "10": 13
         },
         "installDist": {
           "3": 1,
-          "5": 5
+          "5": 6
         },
         "byIndustry": {
-          "도소매": 1,
+          "도소매": 2,
           "요식업": 1,
           "카페": 1,
           "기타": 2,
           "서비스[학원]": 1
         },
         "byTenure": {
-          "12개월": {
-            "total": 6,
+          "구매설치": {
+            "total": 7,
             "low": 0
           },
-          "구매설치": {
+          "12개월": {
             "total": 6,
             "low": 0
           },
@@ -144887,6 +144887,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 3,
+            "low": 0
+          },
           "KIS": {
             "total": 6,
             "low": 0
@@ -144903,10 +144907,6 @@ window.SLACK_DATA = {
             "total": 1,
             "low": 0
           },
-          "KOCES": {
-            "total": 2,
-            "low": 0
-          },
           "SMARTRO": {
             "total": 2,
             "low": 0
@@ -144919,6 +144919,18 @@ window.SLACK_DATA = {
         "reasonCounts": {},
         "alerts": [],
         "praises": [
+          {
+            "time": "18:23",
+            "store": "신선식품",
+            "storeId": "599901",
+            "indBucket": "도소매",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "꼼꼼하게 해주셔. 기기 가 신속하게 결제되요",
+            "byReaction": false,
+            "doneDate": ""
+          },
           {
             "time": "15:22",
             "store": "오이시",
@@ -144949,10 +144961,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1787822547.166409": {
-        "post": "1787822547.166409",
-        "lastSeen": 1787861727.424
-      },
       "1787868447.181299": {
         "post": "1787868447.181299",
         "lastSeen": 1787948125.455
@@ -144995,43 +145003,47 @@ window.SLACK_DATA = {
       },
       "1787978700.516829": {
         "post": "1787978700.516829",
-        "lastSeen": 1787995279.1
+        "lastSeen": 1787995462.125
       },
       "1787983205.501499": {
         "post": "1787983205.501499",
-        "lastSeen": 1787995279.1
+        "lastSeen": 1787995462.125
       },
       "1787985607.219829": {
         "post": "1787985607.219829",
-        "lastSeen": 1787995279.1
+        "lastSeen": 1787995462.125
       },
       "1787990400.865769": {
         "post": "1787990400.865769",
-        "lastSeen": 1787995279.1
+        "lastSeen": 1787995462.125
       },
       "1787991108.398459": {
         "post": "1787991108.398459",
-        "lastSeen": 1787995279.1
+        "lastSeen": 1787995462.125
       },
       "1787993376.996959": {
         "post": "1787993376.996959",
-        "lastSeen": 1787995279.1
+        "lastSeen": 1787995462.125
       },
       "1787994000.965269": {
         "post": "1787994000.965269",
-        "lastSeen": 1787995279.1
+        "lastSeen": 1787995462.125
       },
       "1787994614.900849": {
         "post": "1787994614.900849",
-        "lastSeen": 1787995279.1
+        "lastSeen": 1787995462.125
       },
       "1787994028.526019": {
         "post": "1787994028.526019",
-        "lastSeen": 1787995279.1
+        "lastSeen": 1787995462.125
       },
       "1787994788.355449": {
         "post": "1787994788.355449",
-        "lastSeen": 1787995279.1
+        "lastSeen": 1787995462.125
+      },
+      "1787995386.826719": {
+        "post": "1787995386.826719",
+        "lastSeen": 1787995462.125
       }
     },
     "days": {
@@ -181429,7 +181441,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-29 18:21",
+    "at": "2026-08-29 18:24",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
