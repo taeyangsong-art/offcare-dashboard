@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6501,
+  "version": 6502,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144230,7 +144230,7 @@ window.SLACK_DATA = {
     "2026-08-29": {
       "counts": {
         "as": {
-          "김규빈": 24,
+          "김규빈": 25,
           "미지정": 3
         },
         "onboarding": {
@@ -144279,6 +144279,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "온보딩 및 사용법안내"
+        },
+        {
+          "time": "14:00",
+          "store": "카페드롭탑 광주송정점",
+          "biz": "3752001463",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "대형 키오스크 주문건/ 주방 주문서 미출력",
+          "hw": "",
+          "intake": "offline",
+          "note": "방화벽 막혀있엇음 해제 후 정상"
         },
         {
           "time": "14:00",
@@ -144625,7 +144636,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 28,
-        "offline": 6,
+        "offline": 7,
         "unknown": 0
       },
       "updatedAt": "14:28",
@@ -144738,19 +144749,19 @@ window.SLACK_DATA = {
       },
       "1787970426.729939": {
         "post": "1787970426.729939",
-        "lastSeen": 1787982201.515
+        "lastSeen": 1787982260.965
       },
       "1787978700.516829": {
         "post": "1787978700.516829",
-        "lastSeen": 1787982201.515
+        "lastSeen": 1787982260.965
       },
       "1787980533.090629": {
         "post": "1787980533.090629",
-        "lastSeen": 1787982201.515
+        "lastSeen": 1787982260.965
       },
       "1787980730.404709": {
         "post": "1787980730.404709",
-        "lastSeen": 1787982201.515
+        "lastSeen": 1787982260.965
       }
     },
     "days": {
@@ -181020,7 +181031,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-29 14:43",
+    "at": "2026-08-29 14:44",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
