@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1243,
- "updatedAt": "2026-08-29 14:19",
+ "version": 1244,
+ "updatedAt": "2026-08-29 14:22",
  "days": 30,
  "items": [
   {
@@ -561,9 +561,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787966444.721689",
+   "replies": [
+    "유플러스 매장, 토스포스X 대표님께서 잘못 작성하신듯 합니다.\n 님 정말 바쁘시겠지만 대표님께서 온도감이 좀 높으셔서 확인해 주시면 감사하겠습니다 :루피눈물:"
+   ],
+   "rc": 2,
+   "lr": "1787980869.809219",
    "rfx": 3,
    "status": "wait",
    "handler": null,
