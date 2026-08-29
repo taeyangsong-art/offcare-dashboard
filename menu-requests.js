@@ -3,10 +3,69 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1258,
- "updatedAt": "2026-08-29 18:30",
+ "version": 1259,
+ "updatedAt": "2026-08-29 18:43",
  "days": 30,
  "items": [
+  {
+   "ts": "1787996538.479779",
+   "date": "2026-08-29",
+   "time": "18:42",
+   "store": "와룡",
+   "biz": "3111297655",
+   "pos": "",
+   "content": "메뉴 옵션 추가 요청 >>",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BTMHKGERX",
+     "from": "댓글",
+     "path": "menu-files/1787996538_479779-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "콜라",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "제로콜라",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "스프라이트",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "환타 - 오렌지",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "환타 - 파인애플",
+       "price": 2000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "전달해주신 내용 그대로 기재\n\n짜장 간짜장. 짬뽕 우동. 곱빼기  1500원\n우동밑으로. 곱베기2000원\n밥류  전체메뉴.곱베기 2000원\n요일밥 곱베기 2000원\n반반메뉴 곱베기 2000원\n세트메뉴\n탕수육 짜장곱 .짜장 1000 원 추가 2개 곱베기 2000원\n칠리탕수육도 동일",
+    "355는 ml로 등록 필요"
+   ],
+   "rc": 4,
+   "lr": "1787996568.518879",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787996538479779"
+  },
   {
    "ts": "1787985607.219829",
    "date": "2026-08-29",
