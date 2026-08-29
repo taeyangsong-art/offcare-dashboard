@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1252,
- "updatedAt": "2026-08-29 15:43",
+ "version": 1253,
+ "updatedAt": "2026-08-29 16:41",
  "days": 30,
  "items": [
   {
@@ -49891,27 +49891,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785397547232769"
-  },
-  {
-   "ts": "1785397246.451689",
-   "date": "2026-07-30",
-   "time": "16:40",
-   "store": "우리끼리 키즈카페 동화마을 대전관평점",
-   "biz": "8230501810",
-   "pos": "",
-   "content": "명의변경 메뉴 복사 요청 드립니다.\n··· > ···",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1785397786.063809",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785397246451689"
   }
  ],
  "ocr": {
