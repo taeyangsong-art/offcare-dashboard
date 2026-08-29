@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1242,
- "updatedAt": "2026-08-29 14:15",
+ "version": 1243,
+ "updatedAt": "2026-08-29 14:19",
  "days": 30,
  "items": [
+  {
+   "ts": "1787980730.404709",
+   "date": "2026-08-29",
+   "time": "14:18",
+   "store": "아찌라멘 울산점",
+   "biz": "4153300710",
+   "pos": "기타",
+   "content": "카테고리  사이드메뉴,  도깨비치즈스틱>>포테이토치즈스틱으로 변경  가격 1개70g 1900원 2 개 3800원",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787980734.095619",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787980730404709"
+  },
   {
    "ts": "1787970426.729939",
    "date": "2026-08-29",
