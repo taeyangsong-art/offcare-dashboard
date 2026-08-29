@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6521,
+  "version": 6522,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144230,7 +144230,7 @@ window.SLACK_DATA = {
     "2026-08-29": {
       "counts": {
         "onboarding": {
-          "미지정": 3,
+          "미지정": 4,
           "김규빈": 2
         },
         "as": {
@@ -144246,6 +144246,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:11",
+          "store": "착한미용실",
+          "biz": "8970403923",
+          "cat": "onboarding",
+          "emp": "미지정",
+          "req": "포프(휴대폰) + 유프 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료 사용법안내"
+        },
         {
           "time": "14:45",
           "store": "라온엘헤어",
@@ -144679,7 +144690,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 32,
+        "online": 33,
         "offline": 7,
         "unknown": 0
       },
@@ -144840,23 +144851,19 @@ window.SLACK_DATA = {
       },
       "1787978700.516829": {
         "post": "1787978700.516829",
-        "lastSeen": 1787984661.99
+        "lastSeen": 1787984965.422
       },
       "1787983205.501499": {
         "post": "1787983205.501499",
-        "lastSeen": 1787984661.99
+        "lastSeen": 1787984965.422
       },
       "1787983200.262379": {
         "post": "1787983200.262379",
-        "lastSeen": 1787984661.99
-      },
-      "1787983885.053309": {
-        "post": "1787983885.053309",
-        "lastSeen": 1787984661.99
+        "lastSeen": 1787984965.422
       },
       "1787983965.546509": {
         "post": "1787983965.546509",
-        "lastSeen": 1787984661.99
+        "lastSeen": 1787984965.422
       }
     },
     "days": {
@@ -180861,8 +180868,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-29": {
-        "cnt": 34,
-        "sumMin": 574.8951295375824,
+        "cnt": 35,
+        "sumMin": 590.3726743857067,
         "over": 7,
         "items": [
           {
@@ -181136,13 +181143,21 @@ window.SLACK_DATA = {
             "biz": "7751402851",
             "who": "",
             "cat": "onboarding"
+          },
+          {
+            "hm": "15:11",
+            "min": 15.5,
+            "store": "착한미용실",
+            "biz": "8970403923",
+            "who": "",
+            "cat": "onboarding"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-29 15:24",
+    "at": "2026-08-29 15:29",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
