@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6594,
+  "version": 6595,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144904,66 +144904,70 @@ window.SLACK_DATA = {
         "offline": 10,
         "unknown": 0
       },
-      "updatedAt": "19:42",
+      "updatedAt": "19:58",
       "voc": {
-        "responses": 18,
+        "responses": 20,
         "install": {
-          "count": 7,
+          "count": 8,
           "low": 0
         },
         "nps": {
-          "count": 18,
+          "count": 20,
           "low": 0
         },
         "high": {
-          "install": 6,
-          "nps": 15
+          "install": 7,
+          "nps": 17
         },
         "npsDist": {
           "8": 2,
           "9": 1,
-          "10": 15
+          "10": 17
         },
         "installDist": {
           "3": 1,
-          "5": 6
+          "5": 7
         },
         "byIndustry": {
+          "카페": 2,
           "도소매": 2,
           "요식업": 1,
-          "카페": 1,
           "기타": 2,
           "서비스[학원]": 1
         },
         "byTenure": {
-          "1개월": {
+          "구매설치": {
+            "total": 8,
+            "low": 0
+          },
+          "6개월": {
             "total": 3,
             "low": 0
           },
-          "구매설치": {
-            "total": 7,
+          "1개월": {
+            "total": 3,
             "low": 0
           },
           "12개월": {
             "total": 6,
             "low": 0
-          },
-          "6개월": {
-            "total": 2,
-            "low": 0
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 4,
+            "low": 0
+          },
+          "SECTA9": {
+            "total": 2,
+            "low": 0
+          },
           "SMARTRO": {
             "total": 3,
             "low": 0
           },
           "KIS": {
             "total": 7,
-            "low": 0
-          },
-          "KOCES": {
-            "total": 3,
             "low": 0
           },
           "KCP": {
@@ -144977,15 +144981,23 @@ window.SLACK_DATA = {
           "NICE": {
             "total": 1,
             "low": 0
-          },
-          "SECTA9": {
-            "total": 1,
-            "low": 0
           }
         },
         "reasonCounts": {},
         "alerts": [],
         "praises": [
+          {
+            "time": "19:53",
+            "store": "커피마노 보라공방",
+            "storeId": "612231",
+            "indBucket": "카페",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "설치가 빠르고 친절한 설명 임대료 저렴, 애플페이 가능",
+            "byReaction": false,
+            "doneDate": ""
+          },
           {
             "time": "18:23",
             "store": "신선식품",
@@ -145070,35 +145082,39 @@ window.SLACK_DATA = {
       },
       "1787978700.516829": {
         "post": "1787978700.516829",
-        "lastSeen": 1788000324.252
+        "lastSeen": 1788001160.599
       },
       "1787983205.501499": {
         "post": "1787983205.501499",
-        "lastSeen": 1788000324.252
+        "lastSeen": 1788001160.599
       },
       "1787985607.219829": {
         "post": "1787985607.219829",
-        "lastSeen": 1788000324.252
+        "lastSeen": 1788001160.599
       },
       "1787990400.865769": {
         "post": "1787990400.865769",
-        "lastSeen": 1788000324.252
+        "lastSeen": 1788001160.599
       },
       "1787991108.398459": {
         "post": "1787991108.398459",
-        "lastSeen": 1788000324.252
+        "lastSeen": 1788001160.599
       },
       "1787994000.965269": {
         "post": "1787994000.965269",
-        "lastSeen": 1788000324.252
+        "lastSeen": 1788001160.599
       },
       "1787995386.826719": {
         "post": "1787995386.826719",
-        "lastSeen": 1788000324.252
+        "lastSeen": 1788001160.599
       },
       "1787996380.854489": {
         "post": "1787996380.854489",
-        "lastSeen": 1788000324.252
+        "lastSeen": 1788001160.599
+      },
+      "1788001134.838139": {
+        "post": "1788001134.838139",
+        "lastSeen": 1788001160.599
       }
     },
     "days": {
@@ -181536,7 +181552,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-29 19:45",
+    "at": "2026-08-29 19:59",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

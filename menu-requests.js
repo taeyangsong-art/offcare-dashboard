@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1260,
- "updatedAt": "2026-08-29 19:31",
+ "version": 1261,
+ "updatedAt": "2026-08-29 19:59",
  "days": 30,
  "items": [
+  {
+   "ts": "1788001134.838139",
+   "date": "2026-08-29",
+   "time": "19:58",
+   "store": "순생막창",
+   "biz": "2770703775",
+   "pos": "",
+   "content": "포프 및 유프 선 점검 (올바르게 체결되었는지) 지원 요청드립니다.\n문제는 없다고 하는데 프린터기 출력 문제로 걱정을 하시는 상황이라고 하네요..",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 0,
+   "lr": "",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788001134838139"
+  },
   {
    "ts": "1787996538.479779",
    "date": "2026-08-29",
