@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6424,
+  "version": 6425,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144230,7 +144230,7 @@ window.SLACK_DATA = {
     "2026-08-29": {
       "counts": {
         "as": {
-          "김규빈": 3
+          "김규빈": 4
         },
         "transfer": {
           "김규빈": 1
@@ -144241,6 +144241,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:34",
+          "store": "키도비(KYDO.B)",
+          "biz": "2352201567",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "갤럭시탭/ 주문서가 3~4장씩 출력되며 수량이 매번 바뀜 / + 주문 상품 프론트에서 미리 보기 OFF 되어있어서 그 부분도 함께 설정 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "주방 주문서 기존 설정 &gt; 1로 변경 주방 주문서 기존 설정 1로 변경 / 등록된 포스가 너무 많음 (실제는 갤탭 1대 사용) / 주방프린터 3장으로 되어있음 1장으로 수정 프론트 메뉴 찍을 때 메뉴 보이게도 설정 완료"
+        },
         {
           "time": "10:22",
           "store": "카페 더 갤러리",
@@ -144298,7 +144309,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 4,
+        "online": 5,
         "offline": 1,
         "unknown": 0
       },
@@ -144385,11 +144396,7 @@ window.SLACK_DATA = {
       },
       "1787966440.000679": {
         "post": "1787966440.000679",
-        "lastSeen": 1787967983.477
-      },
-      "1787967928.735639": {
-        "post": "1787967928.735639",
-        "lastSeen": 1787967983.477
+        "lastSeen": 1787968099.056
       }
     },
     "days": {
@@ -180394,8 +180401,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-29": {
-        "cnt": 4,
-        "sumMin": 32.4904552300771,
+        "cnt": 5,
+        "sumMin": 34.36596957842509,
         "over": 0,
         "items": [
           {
@@ -180429,13 +180436,21 @@ window.SLACK_DATA = {
             "biz": "2352201567",
             "who": "김규빈",
             "cat": "as"
+          },
+          {
+            "hm": "10:45",
+            "min": 1.9,
+            "store": "하루haru",
+            "biz": "6933701388",
+            "who": "김규빈",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-29 10:46",
+    "at": "2026-08-29 10:48",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
