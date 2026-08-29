@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6634,
+  "version": 6635,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145003,22 +145003,23 @@ window.SLACK_DATA = {
         "offline": 12,
         "unknown": 0
       },
-      "updatedAt": "22:13",
+      "updatedAt": "22:43",
       "voc": {
-        "responses": 22,
+        "responses": 23,
         "install": {
           "count": 8,
           "low": 0
         },
         "nps": {
-          "count": 22,
-          "low": 0
+          "count": 23,
+          "low": 1
         },
         "high": {
           "install": 7,
           "nps": 18
         },
         "npsDist": {
+          "5": 1,
           "8": 2,
           "9": 2,
           "10": 18
@@ -145036,8 +145037,8 @@ window.SLACK_DATA = {
         },
         "byTenure": {
           "1개월": {
-            "total": 5,
-            "low": 0
+            "total": 6,
+            "low": 1
           },
           "구매설치": {
             "total": 8,
@@ -145053,16 +145054,16 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 5,
+            "low": 1
+          },
           "KSNET": {
             "total": 1,
             "low": 0
           },
           "KIS": {
             "total": 8,
-            "low": 0
-          },
-          "KOCES": {
-            "total": 4,
             "low": 0
           },
           "SECTA9": {
@@ -145086,8 +145087,33 @@ window.SLACK_DATA = {
             "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "필요한 기능이 없거나 몰라서 불편": 1
+        },
+        "alerts": [
+          {
+            "time": "22:43",
+            "store": "오오사칠 순천점",
+            "storeId": "547370",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "먼저 작고 귀엽고 핸드폰같지만 높은수수료와 현금카드결제시 현금결제 키오스크로 안되는점, 매번 점주가 해줘야하며 옵션을 넣고 메뉴추가등 결제하기가 손님들 입장에선 매우 불편하다고 함.",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
         "praises": [
           {
             "time": "19:53",
@@ -145185,31 +145211,35 @@ window.SLACK_DATA = {
       },
       "1787978700.516829": {
         "post": "1787978700.516829",
-        "lastSeen": 1788010401.136
+        "lastSeen": 1788011067.657
       },
       "1787983205.501499": {
         "post": "1787983205.501499",
-        "lastSeen": 1788010401.136
+        "lastSeen": 1788011067.657
       },
       "1787990400.865769": {
         "post": "1787990400.865769",
-        "lastSeen": 1788010401.136
+        "lastSeen": 1788011067.657
       },
       "1787994000.965269": {
         "post": "1787994000.965269",
-        "lastSeen": 1788010401.136
+        "lastSeen": 1788011067.657
       },
       "1787995386.826719": {
         "post": "1787995386.826719",
-        "lastSeen": 1788010401.136
+        "lastSeen": 1788011067.657
       },
       "1787996380.854489": {
         "post": "1787996380.854489",
-        "lastSeen": 1788010401.136
+        "lastSeen": 1788011067.657
       },
       "1788001134.838139": {
         "post": "1788001134.838139",
         "lastSeen": 1788001233.557
+      },
+      "1788010998.312749": {
+        "post": "1788010998.312749",
+        "lastSeen": 1788011067.657
       }
     },
     "days": {
@@ -181695,7 +181725,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-29 22:33",
+    "at": "2026-08-29 22:44",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
