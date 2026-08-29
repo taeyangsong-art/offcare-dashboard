@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6428,
+  "version": 6429,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144324,7 +144324,7 @@ window.SLACK_DATA = {
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "10:55",
+      "updatedAt": "11:00",
       "voc": {
         "responses": 1,
         "install": {
@@ -144442,11 +144442,15 @@ window.SLACK_DATA = {
       },
       "1787966440.000679": {
         "post": "1787966440.000679",
-        "lastSeen": 1787968639.58
+        "lastSeen": 1787968823.297
       },
-      "1787968553.976509": {
-        "post": "1787968553.976509",
-        "lastSeen": 1787968639.58
+      "1787968801.184639": {
+        "post": "1787968801.184639",
+        "lastSeen": 1787968823.297
+      },
+      "1787968800.797789": {
+        "post": "1787968800.797789",
+        "lastSeen": 1787968823.297
       }
     },
     "days": {
@@ -180451,8 +180455,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-29": {
-        "cnt": 5,
-        "sumMin": 34.36596957842509,
+        "cnt": 6,
+        "sumMin": 37.323669425646465,
         "over": 0,
         "items": [
           {
@@ -180494,13 +180498,21 @@ window.SLACK_DATA = {
             "biz": "6933701388",
             "who": "김규빈",
             "cat": "as"
+          },
+          {
+            "hm": "10:55",
+            "min": 3,
+            "store": "태산만두 포항본점",
+            "biz": "4480202830",
+            "who": "김규빈",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-29 10:57",
+    "at": "2026-08-29 11:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
