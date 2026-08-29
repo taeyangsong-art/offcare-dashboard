@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6438,
+  "version": 6439,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144229,6 +144229,9 @@ window.SLACK_DATA = {
     },
     "2026-08-29": {
       "counts": {
+        "onboarding": {
+          "김규빈": 1
+        },
         "as": {
           "김규빈": 7
         },
@@ -144241,6 +144244,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:00",
+          "store": "정가담 기정떡 군산점",
+          "biz": "7983501559",
+          "cat": "onboarding",
+          "emp": "김규빈",
+          "req": "포프(pc) + 유프 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩은 완료 유프 초기불량 용지 인식 불가 이카운트 등록"
+        },
         {
           "time": "11:00",
           "store": "청아닭갈비",
@@ -144342,11 +144356,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 8,
+        "online": 9,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "11:27",
+      "updatedAt": "11:30",
       "voc": {
         "responses": 1,
         "install": {
@@ -144464,19 +144478,23 @@ window.SLACK_DATA = {
       },
       "1787966440.000679": {
         "post": "1787966440.000679",
-        "lastSeen": 1787970443.862
+        "lastSeen": 1787970621.832
       },
       "1787969533.748119": {
         "post": "1787969533.748119",
-        "lastSeen": 1787970443.862
+        "lastSeen": 1787970621.832
       },
       "1787970221.084369": {
         "post": "1787970221.084369",
-        "lastSeen": 1787970443.862
+        "lastSeen": 1787970621.832
       },
       "1787970426.729939": {
         "post": "1787970426.729939",
-        "lastSeen": 1787970443.862
+        "lastSeen": 1787970621.832
+      },
+      "1787970604.113239": {
+        "post": "1787970604.113239",
+        "lastSeen": 1787970621.832
       }
     },
     "days": {
@@ -180554,7 +180572,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-29 11:27",
+    "at": "2026-08-29 11:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
