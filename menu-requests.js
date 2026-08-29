@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1235,
- "updatedAt": "2026-08-29 10:00",
+ "version": 1236,
+ "updatedAt": "2026-08-29 10:21",
  "days": 30,
  "items": [
+  {
+   "ts": "1787966440.000679",
+   "date": "2026-08-29",
+   "time": "10:20",
+   "store": "명성정육식당",
+   "biz": "6110658769",
+   "pos": "토스포스",
+   "content": "한우모듬490000원을\n59000원으로\n수정해주세요\n면세포스랑  과세포스\n두군데다  수정해야합니다",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1787966444.721689",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787966440000679"
+  },
   {
    "ts": "1787950286.186709",
    "date": "2026-08-29",
