@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6421,
+  "version": 6422,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144230,7 +144230,7 @@ window.SLACK_DATA = {
     "2026-08-29": {
       "counts": {
         "as": {
-          "김규빈": 2
+          "김규빈": 3
         },
         "transfer": {
           "김규빈": 1
@@ -144241,6 +144241,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:22",
+          "store": "카페 더 갤러리",
+          "biz": "5920203704",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "포스기/ 고령/ 포스기 터치음 설정 도움 요청드립니다. 소리가 났다가 안났다가 반복적",
+          "hw": "",
+          "intake": "online",
+          "note": "키오스크임 / 터치 프로그램에 beep로 설정 정상 확인"
+        },
         {
           "time": "10:20",
           "store": "황태진국",
@@ -144287,7 +144298,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 3,
+        "online": 4,
         "offline": 1,
         "unknown": 0
       },
@@ -144374,11 +144385,7 @@ window.SLACK_DATA = {
       },
       "1787966440.000679": {
         "post": "1787966440.000679",
-        "lastSeen": 1787967500.031
-      },
-      "1787967284.602809": {
-        "post": "1787967284.602809",
-        "lastSeen": 1787967500.031
+        "lastSeen": 1787967859.744
       }
     },
     "days": {
@@ -180383,8 +180390,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-29": {
-        "cnt": 3,
-        "sumMin": 25.902377049128212,
+        "cnt": 4,
+        "sumMin": 32.4904552300771,
         "over": 0,
         "items": [
           {
@@ -180410,13 +180417,21 @@ window.SLACK_DATA = {
             "biz": "5920203704",
             "who": "김규빈",
             "cat": "as"
+          },
+          {
+            "hm": "10:34",
+            "min": 6.6,
+            "store": "키도비(KYDO.B)",
+            "biz": "2352201567",
+            "who": "김규빈",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-29 10:38",
+    "at": "2026-08-29 10:44",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
