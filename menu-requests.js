@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1262,
- "updatedAt": "2026-08-29 20:08",
+ "version": 1263,
+ "updatedAt": "2026-08-29 20:30",
  "days": 30,
  "items": [
   {
@@ -82,8 +82,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "카테고리 신메뉴 > 처음 앞쪽으로 새로 만들어 주세요\n\n[메뉴추가] 신메뉴\n멸치국수 7000\nㄴ곱빼기 1500\nㄴ공기밥 1500\n\n순두부 게살 스프 단품 10900\nㄴ게살 추가3600\nㄴ공기밥 1500\n\n소불고기 덮밥 13900\nㄴ소고기추가100g 3600\nㄴ공기밥 1500\n\n우삼겹 숙주 덮밥 10900\nㄴ소고기 추가 100g 3600원\nㄴ공기밥 추가 1500\n\n포스 키오스크 모두 요청"
    ],
-   "rc": 2,
-   "lr": "1787985739.874079",
+   "rc": 3,
+   "lr": "1788003032.605269",
    "rfx": 3,
    "status": "wait",
    "handler": null,
