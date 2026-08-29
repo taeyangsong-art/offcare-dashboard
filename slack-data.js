@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6516,
+  "version": 6517,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144683,15 +144683,15 @@ window.SLACK_DATA = {
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "15:00",
+      "updatedAt": "15:11",
       "voc": {
-        "responses": 1,
+        "responses": 2,
         "install": {
           "count": 0,
           "low": 0
         },
         "nps": {
-          "count": 1,
+          "count": 2,
           "low": 0
         },
         "high": {
@@ -144699,17 +144699,25 @@ window.SLACK_DATA = {
           "nps": 0
         },
         "npsDist": {
-          "8": 1
+          "8": 2
         },
         "installDist": {},
         "byIndustry": {},
         "byTenure": {
+          "1개월": {
+            "total": 1,
+            "low": 0
+          },
           "6개월": {
             "total": 1,
             "low": 0
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 1,
+            "low": 0
+          },
           "SMARTRO": {
             "total": 1,
             "low": 0
@@ -144785,15 +144793,19 @@ window.SLACK_DATA = {
       },
       "1787978700.516829": {
         "post": "1787978700.516829",
-        "lastSeen": 1787983818.151
+        "lastSeen": 1787983941.832
       },
       "1787983205.501499": {
         "post": "1787983205.501499",
-        "lastSeen": 1787983818.151
+        "lastSeen": 1787983941.832
       },
       "1787983200.262379": {
         "post": "1787983200.262379",
-        "lastSeen": 1787983818.151
+        "lastSeen": 1787983941.832
+      },
+      "1787983885.053309": {
+        "post": "1787983885.053309",
+        "lastSeen": 1787983941.832
       }
     },
     "days": {
@@ -181079,7 +181091,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-29 15:10",
+    "at": "2026-08-29 15:12",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
