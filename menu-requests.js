@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1273,
- "updatedAt": "2026-08-30 09:15",
+ "version": 1274,
+ "updatedAt": "2026-08-30 09:30",
  "days": 30,
  "items": [
   {
@@ -49321,29 +49321,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785459286868369"
-  },
-  {
-   "ts": "1785457718.417879",
-   "date": "2026-07-31",
-   "time": "09:28",
-   "store": "전골 부엌",
-   "biz": "8343701596",
-   "pos": "",
-   "content": "어제 방문기사님께서 사진 촬영해 가셨다 하셨는데 아직 안됐다 하시어 요청 드립니다 :woman-bowing:",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "토스포스 오전 10시까지 가능할까요?"
-   ],
-   "rc": 3,
-   "lr": "1785458065.171749",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785457718417879"
   }
  ],
  "ocr": {
