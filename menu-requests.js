@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1275,
- "updatedAt": "2026-08-30 10:00",
+ "version": 1276,
+ "updatedAt": "2026-08-30 11:01",
  "days": 30,
  "items": [
   {
@@ -49276,27 +49276,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785465763285789"
-  },
-  {
-   "ts": "1785463143.448559",
-   "date": "2026-07-31",
-   "time": "10:59",
-   "store": "웰빙앤푸드(전888분식)",
-   "biz": "1245328464",
-   "pos": "기타",
-   "content": "나랑드사이다. 금액 2천5백원 추가",
-   "special": "카테고리 음료메뉴란에 나랑드사이다 추가로 넣어주세요.",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1785463159.589959",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785463143448559"
   }
  ],
  "ocr": {
