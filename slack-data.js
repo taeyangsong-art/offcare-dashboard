@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6744,
+  "version": 6745,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145191,7 +145191,7 @@ window.SLACK_DATA = {
     "2026-08-30": {
       "counts": {
         "as": {
-          "미지정": 6,
+          "미지정": 7,
           "김규빈": 5
         },
         "menu": {
@@ -145200,6 +145200,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:39",
+          "store": "굴뚝에 걸린 베이글 잠원점",
+          "biz": "8301103573",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "금전함이 안닫힌다고 하셔서 점검 요청 드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "금전함 안쪽에 지폐가 끼워져 있어서 제거 후 정상작동 확인"
+        },
         {
           "time": "15:54",
           "store": "대어",
@@ -145334,20 +145345,20 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 4,
+        "online": 5,
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "16:39",
+      "updatedAt": "16:48",
       "voc": {
-        "responses": 11,
+        "responses": 12,
         "install": {
           "count": 2,
           "low": 1
         },
         "nps": {
-          "count": 11,
-          "low": 4
+          "count": 12,
+          "low": 5
         },
         "high": {
           "install": 0,
@@ -145356,6 +145367,7 @@ window.SLACK_DATA = {
         "npsDist": {
           "0": 2,
           "1": 1,
+          "3": 1,
           "5": 1,
           "8": 2,
           "9": 1,
@@ -145369,6 +145381,10 @@ window.SLACK_DATA = {
           "도소매": 2
         },
         "byTenure": {
+          "1개월": {
+            "total": 2,
+            "low": 1
+          },
           "3개월": {
             "total": 4,
             "low": 0
@@ -145384,20 +145400,16 @@ window.SLACK_DATA = {
           "구매설치": {
             "total": 2,
             "low": 2
-          },
-          "1개월": {
-            "total": 1,
-            "low": 0
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 2,
+            "low": 2
+          },
           "SMARTRO": {
             "total": 2,
             "low": 0
-          },
-          "KIS": {
-            "total": 1,
-            "low": 1
           },
           "KPN": {
             "total": 2,
@@ -145421,12 +145433,34 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
-          "사용중 오류가 자주 발생함": 1,
+          "사용중 오류가 자주 발생함": 2,
           "필요한 기능이 없거나 몰라서 불편": 1,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "16:48",
+            "store": "김선희뷰티샵",
+            "storeId": "567176",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "노트북과 단말기의 연결 프로그램이 자꾸 끊기고 재부팅해야하는 번거로움과 프로그램  오류ㅠ",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "16:38",
             "store": "클레오파트라 헤어",
@@ -145583,11 +145617,7 @@ window.SLACK_DATA = {
       },
       "1788073486.626739": {
         "post": "1788073486.626739",
-        "lastSeen": 1788075928.441
-      },
-      "1788075558.843689": {
-        "post": "1788075558.843689",
-        "lastSeen": 1788075928.441
+        "lastSeen": 1788076105.999
       }
     },
     "days": {
@@ -182079,8 +182109,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-30": {
-        "cnt": 8,
-        "sumMin": 102.32482096751531,
+        "cnt": 9,
+        "sumMin": 109.96442615191141,
         "over": 1,
         "items": [
           {
@@ -182146,13 +182176,21 @@ window.SLACK_DATA = {
             "biz": "8966300615",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "16:39",
+            "min": 7.6,
+            "store": "굴뚝에 걸린 베이글 잠원점",
+            "biz": "8301103573",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-30 16:45",
+    "at": "2026-08-30 16:48",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
