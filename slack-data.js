@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6682,
+  "version": 6683,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145213,7 +145213,77 @@ window.SLACK_DATA = {
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "05:46"
+      "updatedAt": "08:57",
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 1,
+          "low": 1
+        },
+        "nps": {
+          "count": 1,
+          "low": 1
+        },
+        "high": {
+          "install": 0,
+          "nps": 0
+        },
+        "npsDist": {
+          "1": 1
+        },
+        "installDist": {
+          "1": 1
+        },
+        "byIndustry": {
+          "도소매": 1
+        },
+        "byTenure": {
+          "구매설치": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "byVan": {
+          "KOCES": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 2
+        },
+        "alerts": [
+          {
+            "time": "08:57",
+            "store": "속옷갑부",
+            "storeId": "621172",
+            "industry": "도소매",
+            "indBucket": "도소매",
+            "install": 1,
+            "nps": 1,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "설치방법이 너무 힘들다",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              },
+              {
+                "q": "추천의향",
+                "score": 1,
+                "text": "설치방법이 너무 힘들다",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
+        "praises": []
+      }
     }
   },
   "resp": {
@@ -181774,7 +181844,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-30 08:45",
+    "at": "2026-08-30 09:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

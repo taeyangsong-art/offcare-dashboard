@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1271,
- "updatedAt": "2026-08-30 06:15",
+ "version": 1272,
+ "updatedAt": "2026-08-30 09:00",
  "days": 30,
  "items": [
   {
@@ -49365,27 +49365,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785456352764919"
-  },
-  {
-   "ts": "1785456003.002879",
-   "date": "2026-07-31",
-   "time": "09:00",
-   "store": "꿈의제과점(Patisserie De Reves)",
-   "biz": "1070348077",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1785456028.733289",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785456003002879"
   }
  ],
  "ocr": {
