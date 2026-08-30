@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1277,
- "updatedAt": "2026-08-30 11:45",
+ "version": 1278,
+ "updatedAt": "2026-08-30 12:00",
  "days": 30,
  "items": [
   {
@@ -49232,27 +49232,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785468249030539"
-  },
-  {
-   "ts": "1785466182.624599",
-   "date": "2026-07-31",
-   "time": "11:49",
-   "store": "맥쓰(MEXX)세계치킨제기역점",
-   "biz": "3464601387",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1785466215.389449",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785466182624599"
   }
  ],
  "ocr": {
