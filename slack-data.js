@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6694,
+  "version": 6695,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145190,12 +145190,26 @@ window.SLACK_DATA = {
     },
     "2026-08-30": {
       "counts": {
+        "as": {
+          "김규빈": 1
+        },
         "menu": {
           "김규빈": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:25",
+          "store": "가온한정",
+          "biz": "5706700633",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "포터프(포스기) 사용중",
+          "hw": "",
+          "intake": "online",
+          "note": "화면 전체적으로 먼지나 물기 없이 닦고 정상 확인 / 동일 증상 발생시 화면 터치 보정 예정"
+        },
         {
           "time": "05:46",
           "store": "",
@@ -145209,7 +145223,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 1,
         "unknown": 0
       },
@@ -181844,7 +181858,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-30 11:26",
+    "at": "2026-08-30 11:29",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
