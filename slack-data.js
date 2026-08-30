@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6747,
+  "version": 6748,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145360,15 +145360,15 @@ window.SLACK_DATA = {
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "16:48",
+      "updatedAt": "17:28",
       "voc": {
-        "responses": 12,
+        "responses": 13,
         "install": {
-          "count": 2,
+          "count": 3,
           "low": 1
         },
         "nps": {
-          "count": 12,
+          "count": 13,
           "low": 5
         },
         "high": {
@@ -145381,17 +145381,23 @@ window.SLACK_DATA = {
           "3": 1,
           "5": 1,
           "8": 2,
-          "9": 1,
+          "9": 2,
           "10": 4
         },
         "installDist": {
           "1": 1,
-          "3": 1
+          "3": 1,
+          "4": 1
         },
         "byIndustry": {
+          "서비스[뷰티,헤어]": 1,
           "도소매": 2
         },
         "byTenure": {
+          "구매설치": {
+            "total": 3,
+            "low": 2
+          },
           "1개월": {
             "total": 2,
             "low": 1
@@ -145407,22 +145413,18 @@ window.SLACK_DATA = {
           "6개월": {
             "total": 2,
             "low": 0
-          },
-          "구매설치": {
-            "total": 2,
-            "low": 2
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 3,
+            "low": 0
+          },
           "KIS": {
             "total": 2,
             "low": 2
           },
           "SMARTRO": {
-            "total": 2,
-            "low": 0
-          },
-          "KPN": {
             "total": 2,
             "low": 0
           },
@@ -182205,7 +182207,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-30 17:15",
+    "at": "2026-08-30 17:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
