@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6760,
+  "version": 6761,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145191,7 +145191,7 @@ window.SLACK_DATA = {
     "2026-08-30": {
       "counts": {
         "as": {
-          "미지정": 10,
+          "미지정": 11,
           "김규빈": 5
         },
         "menu": {
@@ -145200,6 +145200,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "19:32",
+          "store": "도예가있는미술",
+          "biz": "8969601591",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "유프 무음 설정 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "무음설정 완료"
+        },
         {
           "time": "19:16",
           "store": "투투 체이스",
@@ -145378,7 +145389,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 8,
+        "online": 9,
         "offline": 8,
         "unknown": 0
       },
@@ -145637,10 +145648,6 @@ window.SLACK_DATA = {
       "1788001134.838139": {
         "post": "1788001134.838139",
         "lastSeen": 1788001233.557
-      },
-      "1788085932.237689": {
-        "post": "1788085932.237689",
-        "lastSeen": 1788085999.737
       }
     },
     "days": {
@@ -182132,8 +182139,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-30": {
-        "cnt": 12,
-        "sumMin": 172.72334986925128,
+        "cnt": 13,
+        "sumMin": 175.35584671894713,
         "over": 2,
         "items": [
           {
@@ -182231,13 +182238,21 @@ window.SLACK_DATA = {
             "biz": "1444700983",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "19:32",
+            "min": 2.6,
+            "store": "도예가있는미술",
+            "biz": "8969601591",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-30 19:33",
+    "at": "2026-08-30 19:36",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
