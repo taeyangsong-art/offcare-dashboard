@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1285,
- "updatedAt": "2026-08-30 16:40",
+ "version": 1286,
+ "updatedAt": "2026-08-30 17:15",
  "days": 30,
  "items": [
   {
@@ -48901,86 +48901,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785490657776149"
-  },
-  {
-   "ts": "1785484872.698789",
-   "date": "2026-07-31",
-   "time": "17:01",
-   "store": "더(THE)바다&THE바다까페",
-   "biz": "6376700450",
-   "pos": "",
-   "content": "메뉴등록 요청드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "Resized(1785484739931)_Resized_IMG_20260",
-     "fid": "F0BMYDLN7NC",
-     "from": "댓글",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "에이드",
-       "name": "레몬",
-       "price": 6000
-      },
-      {
-       "category": "에이드",
-       "name": "유자",
-       "price": 6000
-      },
-      {
-       "category": "에이드",
-       "name": "자몽",
-       "price": 6000
-      },
-      {
-       "category": "스무디",
-       "name": "딸기요거트",
-       "price": 6500
-      },
-      {
-       "category": "스무디",
-       "name": "블루베리요거트",
-       "price": 6500
-      },
-      {
-       "category": "팥빙수",
-       "name": "소",
-       "price": 7000
-      },
-      {
-       "category": "팥빙수",
-       "name": "대",
-       "price": 12000
-      },
-      {
-       "category": "",
-       "name": "오디쥬스",
-       "price": 7000
-      },
-      {
-       "category": "",
-       "name": "수제요거트",
-       "price": 6000
-      },
-      {
-       "category": "",
-       "name": "샌드위치",
-       "price": 7000
-      }
-     ]
-    }
-   ],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1785484907.908019",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785484872698789"
   }
  ],
  "ocr": {
