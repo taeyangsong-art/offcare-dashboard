@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1281,
- "updatedAt": "2026-08-30 14:30",
+ "version": 1282,
+ "updatedAt": "2026-08-30 14:45",
  "days": 30,
  "items": [
   {
@@ -49046,27 +49046,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785480481151449"
-  },
-  {
-   "ts": "1785476351.336569",
-   "date": "2026-07-31",
-   "time": "14:39",
-   "store": "올데이크레페(ALL DAY CREPE) 다대점",
-   "biz": "2861502950",
-   "pos": "",
-   "content": "메뉴 복사 요청 드립니다.\n\n··· / \t\n올데이크레페(ALL DAY CREPE) 운정점  < 해당 가맹점 메뉴 동일 복사 요청 드립니다. :woman-bowing::skin-tone-4:",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1785476856.450859",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785476351336569"
   }
  ],
  "ocr": {
