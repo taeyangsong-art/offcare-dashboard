@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6716,
+  "version": 6717,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145191,8 +145191,8 @@ window.SLACK_DATA = {
     "2026-08-30": {
       "counts": {
         "as": {
-          "미지정": 2,
-          "김규빈": 3
+          "김규빈": 4,
+          "미지정": 2
         },
         "menu": {
           "김규빈": 1
@@ -145200,6 +145200,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "13:50",
+          "store": "드롭탑 모다아울렛 천안아산점(KIS)",
+          "biz": "4223201869",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "주방 주문서 갑자기 출력안됨 / 긴급 점검 부탁드립니다",
+          "hw": "",
+          "intake": "offline",
+          "note": "전화 수신이 매우 불량함 통화 불가 / 010-4286-3158(아) / 매우 바쁨 통화 불가로 재접수"
+        },
         {
           "time": "13:42",
           "store": "부빵",
@@ -145269,7 +145280,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 1,
-        "offline": 5,
+        "offline": 6,
         "unknown": 0
       },
       "updatedAt": "13:55",
@@ -145405,7 +145416,7 @@ window.SLACK_DATA = {
       },
       "1788065725.984659": {
         "post": "1788065725.984659",
-        "lastSeen": 1788065789.261
+        "lastSeen": 1788065901.431
       }
     },
     "days": {
@@ -181938,7 +181949,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-30 13:56",
+    "at": "2026-08-30 13:58",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
