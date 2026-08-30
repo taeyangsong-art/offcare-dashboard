@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6710,
+  "version": 6711,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145191,8 +145191,8 @@ window.SLACK_DATA = {
     "2026-08-30": {
       "counts": {
         "as": {
-          "미지정": 1,
-          "김규빈": 2
+          "김규빈": 3,
+          "미지정": 1
         },
         "menu": {
           "김규빈": 1
@@ -145200,6 +145200,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "13:34",
+          "store": "고봉삼계탕광화문점",
+          "biz": "8858802799",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "홀 오더포스 연결끊김으로 인한 점검 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "오더포스 lan 선 접촉불량 (LAN 선이 많이 낡음) 선 조금 건들이고 다시 정상으로 돌아오긴 하였으나 동일 증상 발생시 lan선 교체 이후 포스기 교체 필요"
+        },
         {
           "time": "13:26",
           "store": "헤어마루",
@@ -145247,10 +145258,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 1,
-        "offline": 3,
+        "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "13:34",
+      "updatedAt": "13:42",
       "voc": {
         "responses": 1,
         "install": {
@@ -145381,9 +145392,9 @@ window.SLACK_DATA = {
         "post": "1788001134.838139",
         "lastSeen": 1788001233.557
       },
-      "1788064477.773129": {
-        "post": "1788064477.773129",
-        "lastSeen": 1788064520.329
+      "1788064932.141639": {
+        "post": "1788064932.141639",
+        "lastSeen": 1788065003.081
       }
     },
     "days": {
@@ -181875,8 +181886,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-30": {
-        "cnt": 2,
-        "sumMin": 11.033288033803304,
+        "cnt": 3,
+        "sumMin": 15.765485882759094,
         "over": 0,
         "items": [
           {
@@ -181894,13 +181905,21 @@ window.SLACK_DATA = {
             "biz": "5210802549",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "13:34",
+            "min": 4.7,
+            "store": "고봉삼계탕광화문점",
+            "biz": "8858802799",
+            "who": "김규빈",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-30 13:35",
+    "at": "2026-08-30 13:43",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
