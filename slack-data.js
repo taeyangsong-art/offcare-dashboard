@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6764,
+  "version": 6765,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145191,7 +145191,7 @@ window.SLACK_DATA = {
     "2026-08-30": {
       "counts": {
         "as": {
-          "미지정": 11,
+          "미지정": 12,
           "김규빈": 5
         },
         "menu": {
@@ -145200,6 +145200,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "20:04",
+          "store": "김치돼학교 영통점",
+          "biz": "3330803636",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "유프 배달 주문서 출력이 잘되다가 갑자기 안된다고 하여 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "윈도우에서 Spooler 서비스가 중단되어 있어서 서비스 시작 후 정상작동 확인. 1. Windows 키 + R을 눌러 실행 창을 엽니다. 2. services.msc를 입력하고 확인을 클릭합니다. 3. 서비스 목록에서 Print Spooler 항목을 찾습니다. 4. Print Spooler를 마우스 우클릭한 뒤 시작 (또는 다시 시작)을 선택합니다. 5."
+        },
         {
           "time": "19:32",
           "store": "도예가있는미술",
@@ -145389,19 +145400,19 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 9,
+        "online": 10,
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "20:04",
+      "updatedAt": "20:09",
       "voc": {
-        "responses": 13,
+        "responses": 14,
         "install": {
           "count": 3,
           "low": 1
         },
         "nps": {
-          "count": 13,
+          "count": 14,
           "low": 5
         },
         "high": {
@@ -145414,7 +145425,7 @@ window.SLACK_DATA = {
           "3": 1,
           "5": 1,
           "8": 2,
-          "9": 2,
+          "9": 3,
           "10": 4
         },
         "installDist": {
@@ -145427,6 +145438,10 @@ window.SLACK_DATA = {
           "도소매": 2
         },
         "byTenure": {
+          "3개월": {
+            "total": 5,
+            "low": 0
+          },
           "구매설치": {
             "total": 3,
             "low": 2
@@ -145434,10 +145449,6 @@ window.SLACK_DATA = {
           "1개월": {
             "total": 2,
             "low": 1
-          },
-          "3개월": {
-            "total": 4,
-            "low": 0
           },
           "12개월": {
             "total": 2,
@@ -145449,6 +145460,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SECTA9": {
+            "total": 2,
+            "low": 0
+          },
           "KPN": {
             "total": 3,
             "low": 0
@@ -145468,10 +145483,6 @@ window.SLACK_DATA = {
           "KOCES": {
             "total": 2,
             "low": 1
-          },
-          "SECTA9": {
-            "total": 1,
-            "low": 0
           },
           "KSNET": {
             "total": 1,
@@ -145648,10 +145659,6 @@ window.SLACK_DATA = {
       "1788001134.838139": {
         "post": "1788001134.838139",
         "lastSeen": 1788001233.557
-      },
-      "1788087871.141169": {
-        "post": "1788087871.141169",
-        "lastSeen": 1788087924.831
       }
     },
     "days": {
@@ -182143,8 +182150,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-30": {
-        "cnt": 13,
-        "sumMin": 175.35584671894713,
+        "cnt": 14,
+        "sumMin": 180.71847723722462,
         "over": 2,
         "items": [
           {
@@ -182250,13 +182257,21 @@ window.SLACK_DATA = {
             "biz": "8969601591",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "20:04",
+            "min": 5.4,
+            "store": "김치돼학교 영통점",
+            "biz": "3330803636",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-30 20:05",
+    "at": "2026-08-30 20:14",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
