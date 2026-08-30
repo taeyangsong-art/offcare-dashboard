@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6718,
+  "version": 6719,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145191,8 +145191,8 @@ window.SLACK_DATA = {
     "2026-08-30": {
       "counts": {
         "as": {
-          "김규빈": 4,
-          "미지정": 2
+          "미지정": 3,
+          "김규빈": 4
         },
         "menu": {
           "김규빈": 1
@@ -145200,6 +145200,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "13:55",
+          "store": "하만 방이점",
+          "biz": "2018145496",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "무프w 연결끊김으로 인한 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "용지 반대로 끼우심.. 정상작동 확인"
+        },
         {
           "time": "13:50",
           "store": "드롭탑 모다아울렛 천안아산점(KIS)",
@@ -145279,7 +145290,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
+        "online": 2,
         "offline": 6,
         "unknown": 0
       },
@@ -145413,10 +145424,6 @@ window.SLACK_DATA = {
       "1788001134.838139": {
         "post": "1788001134.838139",
         "lastSeen": 1788001233.557
-      },
-      "1788065725.984659": {
-        "post": "1788065725.984659",
-        "lastSeen": 1788066032.185
       }
     },
     "days": {
@@ -181908,8 +181915,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-30": {
-        "cnt": 4,
-        "sumMin": 25.929875234762825,
+        "cnt": 5,
+        "sumMin": 31.441547584533687,
         "over": 0,
         "items": [
           {
@@ -181943,13 +181950,21 @@ window.SLACK_DATA = {
             "biz": "2990302797",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "13:55",
+            "min": 5.5,
+            "store": "하만 방이점",
+            "biz": "2018145496",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-30 14:00",
+    "at": "2026-08-30 14:01",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
