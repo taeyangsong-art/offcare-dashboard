@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1274,
- "updatedAt": "2026-08-30 09:30",
+ "version": 1275,
+ "updatedAt": "2026-08-30 10:00",
  "days": 30,
  "items": [
   {
@@ -49297,30 +49297,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785463143448559"
-  },
-  {
-   "ts": "1785459286.868369",
-   "date": "2026-07-31",
-   "time": "09:54",
-   "store": "평강면옥",
-   "biz": "1831702596",
-   "pos": "",
-   "content": "메뉴 수정 요청드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "물냉면 13,000원\n비빔냉면 13,000원\n물냉 곱배기 17,000원\n비냉곱배기 17,000원",
-    "감사합니당 :감사합니다꾸벅:"
-   ],
-   "rc": 4,
-   "lr": "1785459390.421019",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785459286868369"
   }
  ],
  "ocr": {
