@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6752,
+  "version": 6753,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145191,7 +145191,7 @@ window.SLACK_DATA = {
     "2026-08-30": {
       "counts": {
         "as": {
-          "미지정": 8,
+          "미지정": 9,
           "김규빈": 5
         },
         "menu": {
@@ -145200,6 +145200,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "18:30",
+          "store": "미엘스튜디오",
+          "biz": "8031003439",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "핸드폰+프론트/ 온보딩 후 금액입력결제 기능, 키오스크모드 기능 안내 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 되어있는 상태 키오스크 모드 사진 변경방법 금액입력결제모드 사용방법 할인 방법 네이버리뷰 모으기 방법 안내 완료"
+        },
         {
           "time": "16:39",
           "store": "굴뚝에 걸린 베이글 잠원점",
@@ -145356,7 +145367,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 6,
+        "online": 7,
         "offline": 8,
         "unknown": 0
       },
@@ -145623,10 +145634,6 @@ window.SLACK_DATA = {
       "1788001134.838139": {
         "post": "1788001134.838139",
         "lastSeen": 1788001233.557
-      },
-      "1788082200.621669": {
-        "post": "1788082200.621669",
-        "lastSeen": 1788082221.52
       }
     },
     "days": {
@@ -182118,8 +182125,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-30": {
-        "cnt": 10,
-        "sumMin": 159.59074716965358,
+        "cnt": 11,
+        "sumMin": 165.43321935335797,
         "over": 2,
         "items": [
           {
@@ -182201,13 +182208,21 @@ window.SLACK_DATA = {
             "biz": "7052502047",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "18:30",
+            "min": 5.8,
+            "store": "미엘스튜디오",
+            "biz": "8031003439",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-30 18:30",
+    "at": "2026-08-30 18:41",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
