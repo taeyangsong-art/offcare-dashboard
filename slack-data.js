@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6782,
+  "version": 6783,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145406,14 +145406,14 @@ window.SLACK_DATA = {
       },
       "updatedAt": "22:49",
       "voc": {
-        "responses": 17,
+        "responses": 18,
         "install": {
           "count": 3,
           "low": 1
         },
         "nps": {
-          "count": 17,
-          "low": 5
+          "count": 18,
+          "low": 6
         },
         "high": {
           "install": 0,
@@ -145423,7 +145423,7 @@ window.SLACK_DATA = {
           "0": 2,
           "1": 1,
           "3": 1,
-          "5": 1,
+          "5": 2,
           "8": 2,
           "9": 4,
           "10": 6
@@ -145438,13 +145438,13 @@ window.SLACK_DATA = {
           "도소매": 2
         },
         "byTenure": {
+          "3개월": {
+            "total": 7,
+            "low": 1
+          },
           "1개월": {
             "total": 3,
             "low": 1
-          },
-          "3개월": {
-            "total": 6,
-            "low": 0
           },
           "6개월": {
             "total": 3,
@@ -145460,6 +145460,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SMARTRO": {
+            "total": 3,
+            "low": 1
+          },
           "KOCES": {
             "total": 3,
             "low": 1
@@ -145480,10 +145484,6 @@ window.SLACK_DATA = {
             "total": 2,
             "low": 2
           },
-          "SMARTRO": {
-            "total": 2,
-            "low": 0
-          },
           "KOVAN": {
             "total": 2,
             "low": 1
@@ -145494,12 +145494,34 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 2,
           "사용중 오류가 자주 발생함": 2,
           "필요한 기능이 없거나 몰라서 불편": 1,
-          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "00:10",
+            "store": "모모",
+            "storeId": "488451",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "별로에요",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "16:48",
             "store": "김선희뷰티샵",
@@ -182275,7 +182297,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 00:00",
+    "at": "2026-08-31 00:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
