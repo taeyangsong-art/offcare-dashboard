@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6737,
+  "version": 6738,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145191,7 +145191,7 @@ window.SLACK_DATA = {
     "2026-08-30": {
       "counts": {
         "as": {
-          "미지정": 5,
+          "미지정": 6,
           "김규빈": 5
         },
         "menu": {
@@ -145200,6 +145200,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:54",
+          "store": "대어",
+          "biz": "8966300615",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "프린터기 비프음 및 경고등 점등으로 인한 점검 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "터미널에서 주문서 2장출력 설정. 프린터 출하지시서 요청 완료"
+        },
         {
           "time": "15:31",
           "store": "강창구진순대(여주점)",
@@ -145324,7 +145335,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 4,
-        "offline": 7,
+        "offline": 8,
         "unknown": 0
       },
       "updatedAt": "16:04",
@@ -145533,13 +145544,9 @@ window.SLACK_DATA = {
         "post": "1788001134.838139",
         "lastSeen": 1788001233.557
       },
-      "1788072887.963069": {
-        "post": "1788072887.963069",
-        "lastSeen": 1788073521.336
-      },
       "1788073486.626739": {
         "post": "1788073486.626739",
-        "lastSeen": 1788073521.336
+        "lastSeen": 1788073583.597
       }
     },
     "days": {
@@ -182031,8 +182038,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-30": {
-        "cnt": 7,
-        "sumMin": 91.24976378679276,
+        "cnt": 8,
+        "sumMin": 102.32482096751531,
         "over": 1,
         "items": [
           {
@@ -182090,13 +182097,21 @@ window.SLACK_DATA = {
             "biz": "1220428586",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "15:54",
+            "min": 11.1,
+            "store": "대어",
+            "biz": "8966300615",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-30 16:05",
+    "at": "2026-08-30 16:06",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
