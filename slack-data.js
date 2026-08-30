@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6820,
+  "version": 6821,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140659,11 +140659,11 @@ window.SLACK_DATA = {
                 "cat": "사용중 오류가 자주 발생함"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 원격 처리건 원격 처리건 상호: 제이더블유홀딩스주식회사 / KOCES 사업자번호: 7918503361 핸드폰 번호: 01049463897 (아) 주소: 경상북도 김천시 부곡길 219 (부곡동) 3층 (305,306호) 인입유형: 온라인 공급유형: 임대 배달제휴: 자대리점: N 내용: 포프(노트북) 사용 중, 유프 출력 불가로 점검 요청드립니다. 상호: ",
+            "doneDate": "2026-08-31"
           },
           {
             "time": "15:38",
@@ -145664,7 +145664,67 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": ""
+      "updatedAt": "08:32",
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 0,
+          "low": 0
+        },
+        "nps": {
+          "count": 1,
+          "low": 1
+        },
+        "high": {
+          "install": 0,
+          "nps": 0
+        },
+        "npsDist": {
+          "0": 1
+        },
+        "installDist": {},
+        "byIndustry": {},
+        "byTenure": {
+          "6개월": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "byVan": {
+          "KSNET": {
+            "total": 1,
+            "low": 1
+          }
+        },
+        "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1
+        },
+        "alerts": [
+          {
+            "time": "08:32",
+            "store": "부엉이젤라또",
+            "storeId": "373367",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "매번 결제마다 렉이 걸리고, 배달 주문시 영수증이 4분정도 뒤에 출력됩니다. 인터넷도 빠르고. 태블릿 용량도 충분한데 왜 이럿는지 해결도 안되고 지금 너무 화가 납니다.",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
+        "praises": []
+      }
     }
   },
   "resp": {
@@ -182308,13 +182368,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 08:30",
+    "at": "2026-08-31 08:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3783,
+    "rows": 3786,
     "named": 490,
     "unknownName": 0,
     "beforeStart": 0,
