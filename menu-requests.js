@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1280,
- "updatedAt": "2026-08-30 13:56",
+ "version": 1281,
+ "updatedAt": "2026-08-30 14:30",
  "days": 30,
  "items": [
   {
@@ -49067,123 +49067,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785476351336569"
-  },
-  {
-   "ts": "1785475011.813639",
-   "date": "2026-07-31",
-   "time": "14:16",
-   "store": "타렛카페",
-   "biz": "1370288490",
-   "pos": "토스포스",
-   "content": "메뉴 포스입력",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/1ASb09A7uFRe4cfcmas4XOnz6kCEVdwBw/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "1ASb09A7uFRe4cfcmas4XOnz6kCEVdwBw",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "",
-       "name": "아메리카노",
-       "price": 3500
-      },
-      {
-       "category": "",
-       "name": "아이스아메리카노",
-       "price": 3900
-      },
-      {
-       "category": "",
-       "name": "카페 라떼",
-       "price": 3900
-      },
-      {
-       "category": "",
-       "name": "레몬 에이드",
-       "price": 0
-      },
-      {
-       "category": "",
-       "name": "청포도 에이드",
-       "price": 4500
-      },
-      {
-       "category": "",
-       "name": "파인에플 에이드",
-       "price": 0
-      },
-      {
-       "category": "",
-       "name": "라즈베리 에이드",
-       "price": 0
-      },
-      {
-       "category": "",
-       "name": "캐모마일",
-       "price": 0
-      },
-      {
-       "category": "",
-       "name": "루이보스",
-       "price": 4500
-      },
-      {
-       "category": "",
-       "name": "레몬그라스/레몬밤",
-       "price": 0
-      },
-      {
-       "category": "",
-       "name": "유자차",
-       "price": 4500
-      },
-      {
-       "category": "",
-       "name": "망고 타래빙수",
-       "price": 0
-      },
-      {
-       "category": "",
-       "name": "블루베리 타래빙수",
-       "price": 9500
-      },
-      {
-       "category": "",
-       "name": "블루베리 + 망고 타래빙수",
-       "price": 0
-      },
-      {
-       "category": "",
-       "name": "견과류 타랫 용수염",
-       "price": 0
-      },
-      {
-       "category": "",
-       "name": "초코 타랫 용수염",
-       "price": 3000
-      },
-      {
-       "category": "",
-       "name": "말차 타랫 용수염",
-       "price": 0
-      }
-     ]
-    }
-   ],
-   "replies": [
-    "완료"
-   ],
-   "rc": 2,
-   "lr": "1785476088.608199",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785475011813639"
   }
  ],
  "ocr": {
