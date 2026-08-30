@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6745,
+  "version": 6746,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145191,7 +145191,7 @@ window.SLACK_DATA = {
     "2026-08-30": {
       "counts": {
         "as": {
-          "미지정": 7,
+          "미지정": 8,
           "김규빈": 5
         },
         "menu": {
@@ -145210,6 +145210,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "금전함 안쪽에 지폐가 끼워져 있어서 제거 후 정상작동 확인"
+        },
+        {
+          "time": "16:04",
+          "store": "파라솔",
+          "biz": "7052502047",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "포스기/ 화면이 꺼져서 안들어옴/ <https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1780650001512449|기존 문제 발생 매장>으로 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "17시 매장 도착 예정 / 멀티탭에서 전원 빠져있어서 연결 후 정상작동 확인"
         },
         {
           "time": "15:54",
@@ -145345,7 +145356,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 5,
+        "online": 6,
         "offline": 8,
         "unknown": 0
       },
@@ -145614,10 +145625,6 @@ window.SLACK_DATA = {
       "1788001134.838139": {
         "post": "1788001134.838139",
         "lastSeen": 1788001233.557
-      },
-      "1788073486.626739": {
-        "post": "1788073486.626739",
-        "lastSeen": 1788076105.999
       }
     },
     "days": {
@@ -182109,9 +182116,9 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-30": {
-        "cnt": 9,
-        "sumMin": 109.96442615191141,
-        "over": 1,
+        "cnt": 10,
+        "sumMin": 159.59074716965358,
+        "over": 2,
         "items": [
           {
             "hm": "13:02",
@@ -182184,13 +182191,21 @@ window.SLACK_DATA = {
             "biz": "8301103573",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "16:04",
+            "min": 49.6,
+            "store": "파라솔",
+            "biz": "7052502047",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-30 16:48",
+    "at": "2026-08-30 17:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
