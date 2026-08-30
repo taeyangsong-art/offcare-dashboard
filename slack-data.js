@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6703,
+  "version": 6704,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145361,10 +145361,6 @@ window.SLACK_DATA = {
       "1788001134.838139": {
         "post": "1788001134.838139",
         "lastSeen": 1788001233.557
-      },
-      "1788062567.952239": {
-        "post": "1788062567.952239",
-        "lastSeen": 1788062582.749
       }
     },
     "days": {
@@ -181854,11 +181850,26 @@ window.SLACK_DATA = {
             "cat": "as"
           }
         ]
+      },
+      "2026-08-30": {
+        "cnt": 1,
+        "sumMin": 6.437221018473307,
+        "over": 0,
+        "items": [
+          {
+            "hm": "13:02",
+            "min": 6.4,
+            "store": "살롱드뤄니(SALON DE RUNNY)",
+            "biz": "8031902355",
+            "who": "김규빈",
+            "cat": "as"
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-30 13:03",
+    "at": "2026-08-30 13:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
