@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6758,
+  "version": 6759,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145191,7 +145191,7 @@ window.SLACK_DATA = {
     "2026-08-30": {
       "counts": {
         "as": {
-          "미지정": 9,
+          "미지정": 10,
           "김규빈": 5
         },
         "menu": {
@@ -145200,6 +145200,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "19:16",
+          "store": "투투 체이스",
+          "biz": "1444700983",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "포프(휴대폰) 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 및 현금영수증 사용방법 안내 완료"
+        },
         {
           "time": "18:30",
           "store": "미엘스튜디오",
@@ -145367,7 +145378,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 7,
+        "online": 8,
         "offline": 8,
         "unknown": 0
       },
@@ -145599,10 +145610,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1787912598.042309": {
-        "post": "1787912598.042309",
-        "lastSeen": 1787912660.497
-      },
       "1787978700.516829": {
         "post": "1787978700.516829",
         "lastSeen": 1788034524.034
@@ -145630,10 +145637,6 @@ window.SLACK_DATA = {
       "1788001134.838139": {
         "post": "1788001134.838139",
         "lastSeen": 1788001233.557
-      },
-      "1788084963.874169": {
-        "post": "1788084963.874169",
-        "lastSeen": 1788084981.456
       }
     },
     "days": {
@@ -182125,8 +182128,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-30": {
-        "cnt": 11,
-        "sumMin": 165.43321935335797,
+        "cnt": 12,
+        "sumMin": 172.72334986925128,
         "over": 2,
         "items": [
           {
@@ -182216,13 +182219,21 @@ window.SLACK_DATA = {
             "biz": "8031003439",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "19:16",
+            "min": 7.3,
+            "store": "투투 체이스",
+            "biz": "1444700983",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-30 19:16",
+    "at": "2026-08-30 19:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
