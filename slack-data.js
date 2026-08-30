@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6713,
+  "version": 6714,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145191,8 +145191,8 @@ window.SLACK_DATA = {
     "2026-08-30": {
       "counts": {
         "as": {
-          "김규빈": 3,
-          "미지정": 1
+          "미지정": 2,
+          "김규빈": 3
         },
         "menu": {
           "김규빈": 1
@@ -145200,6 +145200,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "13:42",
+          "store": "부빵",
+          "biz": "2990302797",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "프린터 출력 불가로 인입되었습니다. 프린터 전원이 갑자기 안들어오는데, 후면 전원 케이블, 어댑터케이블, 콘센트 부분 모두 문제 없는것 같다고 주장하셔서 원격 점검 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "KIS-1421 단말기 아답타에서 전원선 분리되어 있어서 전원 안켜짐. 재연결 후 정상작동 확인."
+        },
         {
           "time": "13:34",
           "store": "고봉삼계탕광화문점",
@@ -145258,7 +145269,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 1,
-        "offline": 4,
+        "offline": 5,
         "unknown": 0
       },
       "updatedAt": "13:50",
@@ -145391,10 +145402,6 @@ window.SLACK_DATA = {
       "1788001134.838139": {
         "post": "1788001134.838139",
         "lastSeen": 1788001233.557
-      },
-      "1788064932.141639": {
-        "post": "1788064932.141639",
-        "lastSeen": 1788065481.676
       }
     },
     "days": {
@@ -181886,8 +181893,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-30": {
-        "cnt": 3,
-        "sumMin": 15.765485882759094,
+        "cnt": 4,
+        "sumMin": 25.929875234762825,
         "over": 0,
         "items": [
           {
@@ -181913,13 +181920,21 @@ window.SLACK_DATA = {
             "biz": "8858802799",
             "who": "김규빈",
             "cat": "as"
+          },
+          {
+            "hm": "13:42",
+            "min": 10.2,
+            "store": "부빵",
+            "biz": "2990302797",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-30 13:51",
+    "at": "2026-08-30 13:53",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
