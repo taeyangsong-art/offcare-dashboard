@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6734,
+  "version": 6735,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145191,7 +145191,7 @@ window.SLACK_DATA = {
     "2026-08-30": {
       "counts": {
         "as": {
-          "미지정": 4,
+          "미지정": 5,
           "김규빈": 5
         },
         "menu": {
@@ -145200,6 +145200,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:31",
+          "store": "강창구진순대(여주점)",
+          "biz": "1220428586",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "OK 포스 사용매장 / 주방 유프 커버 안닫힘",
+          "hw": "",
+          "intake": "offline",
+          "note": "현재는 외부여서 커버 칼날 조정하는 방법 안내 함 안되면 내일 다시 연락 주신다고 함"
+        },
         {
           "time": "15:16",
           "store": "우만동족발집 율전점",
@@ -145313,38 +145324,43 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 4,
-        "offline": 6,
+        "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "15:54",
+      "updatedAt": "15:58",
       "voc": {
-        "responses": 6,
+        "responses": 7,
         "install": {
-          "count": 1,
+          "count": 2,
           "low": 1
         },
         "nps": {
-          "count": 6,
-          "low": 2
+          "count": 7,
+          "low": 3
         },
         "high": {
           "install": 0,
           "nps": 2
         },
         "npsDist": {
-          "0": 1,
+          "0": 2,
           "1": 1,
           "8": 1,
           "9": 1,
           "10": 2
         },
         "installDist": {
-          "1": 1
+          "1": 1,
+          "3": 1
         },
         "byIndustry": {
-          "도소매": 1
+          "도소매": 2
         },
         "byTenure": {
+          "구매설치": {
+            "total": 2,
+            "low": 2
+          },
           "1개월": {
             "total": 1,
             "low": 0
@@ -145360,13 +145376,13 @@ window.SLACK_DATA = {
           "12개월": {
             "total": 1,
             "low": 1
-          },
-          "구매설치": {
-            "total": 1,
-            "low": 1
           }
         },
         "byVan": {
+          "KOVAN": {
+            "total": 1,
+            "low": 1
+          },
           "KOCES": {
             "total": 2,
             "low": 1
@@ -145389,10 +145405,33 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "필요한 기능이 없거나 몰라서 불편": 1,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "15:58",
+            "store": "제주청과농산",
+            "storeId": "613961",
+            "industry": "도소매",
+            "indBucket": "도소매",
+            "install": 3,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "사용 방법이 불편하며 컴퓨터에서 취소를 해야하는등 사용이 불편함",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:08",
             "store": "가현헤어",
@@ -145494,13 +145533,9 @@ window.SLACK_DATA = {
         "post": "1788001134.838139",
         "lastSeen": 1788001233.557
       },
-      "1788071482.680489": {
-        "post": "1788071482.680489",
-        "lastSeen": 1788072981.543
-      },
       "1788072887.963069": {
         "post": "1788072887.963069",
-        "lastSeen": 1788072981.543
+        "lastSeen": 1788073102.757
       }
     },
     "days": {
@@ -181992,8 +182027,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-30": {
-        "cnt": 6,
-        "sumMin": 65.25860526959102,
+        "cnt": 7,
+        "sumMin": 91.24976378679276,
         "over": 1,
         "items": [
           {
@@ -182043,13 +182078,21 @@ window.SLACK_DATA = {
             "biz": "4260203542",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "15:31",
+            "min": 26,
+            "store": "강창구진순대(여주점)",
+            "biz": "1220428586",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-30 15:56",
+    "at": "2026-08-30 15:58",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
