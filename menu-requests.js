@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1278,
- "updatedAt": "2026-08-30 12:00",
+ "version": 1279,
+ "updatedAt": "2026-08-30 12:30",
  "days": 30,
  "items": [
   {
@@ -49208,30 +49208,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785473761708389"
-  },
-  {
-   "ts": "1785468249.030539",
-   "date": "2026-07-31",
-   "time": "12:24",
-   "store": "멕시카나 망포점",
-   "biz": "3302901497",
-   "pos": "기타",
-   "content": "키오스크 내점 금액은 그대로지만 포장은  치킨한마리기준2천원할인적용될까요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "완료",
-    "메뉴 할인 사용 방법 교육"
-   ],
-   "rc": 3,
-   "lr": "1785469515.990449",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785468249030539"
   }
  ],
  "ocr": {
