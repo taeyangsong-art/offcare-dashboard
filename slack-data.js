@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6704,
+  "version": 6705,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145191,7 +145191,7 @@ window.SLACK_DATA = {
     "2026-08-30": {
       "counts": {
         "as": {
-          "김규빈": 1
+          "김규빈": 2
         },
         "menu": {
           "김규빈": 1
@@ -145199,6 +145199,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "13:02",
+          "store": "살롱드뤄니(SALON DE RUNNY)",
+          "biz": "8031902355",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "포스기 내에서 지속적인 비프음 발생한다고 하여 점검 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "실시간 검사, 디펜더 모두 일단 종료 후 멤 리덕트로 메모리 정리함 / 포스기 장비 우리꺼인지 확인 후 업그레이드 가능한지 영업팀 확인 필요"
+        },
         {
           "time": "11:25",
           "store": "가온한정",
@@ -145224,7 +145235,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 1,
-        "offline": 1,
+        "offline": 2,
         "unknown": 0
       },
       "updatedAt": "13:02",
@@ -181869,7 +181880,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-30 13:15",
+    "at": "2026-08-30 13:18",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
