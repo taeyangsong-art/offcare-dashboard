@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6725,
+  "version": 6726,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145191,8 +145191,8 @@ window.SLACK_DATA = {
     "2026-08-30": {
       "counts": {
         "as": {
-          "미지정": 3,
-          "김규빈": 4
+          "김규빈": 5,
+          "미지정": 3
         },
         "menu": {
           "김규빈": 1
@@ -145200,6 +145200,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "14:57",
+          "store": "케이엔스포츠(케이엔풋살파크)",
+          "biz": "7780603193",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "포프(휴대폰) 온보딩 시 프론트 타 매장 연결 문구 확인되어 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "단독 키오스크 모드로 사용중 휴대폰하고 연결 안되어있음 휴대폰으로 로그인 후 매출 확인 완료"
+        },
         {
           "time": "13:55",
           "store": "하만 방이점",
@@ -145290,7 +145301,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 2,
+        "online": 3,
         "offline": 6,
         "unknown": 0
       },
@@ -181956,7 +181967,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-30 15:00",
+    "at": "2026-08-30 15:04",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
