@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6727,
+  "version": 6728,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145305,22 +145305,23 @@ window.SLACK_DATA = {
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "14:57",
+      "updatedAt": "15:08",
       "voc": {
-        "responses": 1,
+        "responses": 2,
         "install": {
           "count": 1,
           "low": 1
         },
         "nps": {
-          "count": 1,
-          "low": 1
+          "count": 2,
+          "low": 2
         },
         "high": {
           "install": 0,
           "nps": 0
         },
         "npsDist": {
+          "0": 1,
           "1": 1
         },
         "installDist": {
@@ -145330,21 +145331,52 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 1,
+            "low": 1
+          },
           "구매설치": {
             "total": 1,
             "low": 1
           }
         },
         "byVan": {
+          "KSNET": {
+            "total": 1,
+            "low": 1
+          },
           "KOCES": {
             "total": 1,
             "low": 1
           }
         },
         "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "15:08",
+            "store": "가현헤어",
+            "storeId": "153479",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "너무 느려요",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "08:57",
             "store": "속옷갑부",
@@ -145380,10 +145412,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1787897629.895269": {
-        "post": "1787897629.895269",
-        "lastSeen": 1787948125.455
-      },
       "1787903100.459629": {
         "post": "1787903100.459629",
         "lastSeen": 1787948125.455
@@ -181967,7 +181995,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-30 15:05",
+    "at": "2026-08-30 15:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
