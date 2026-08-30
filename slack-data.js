@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6708,
+  "version": 6709,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145191,6 +145191,7 @@ window.SLACK_DATA = {
     "2026-08-30": {
       "counts": {
         "as": {
+          "미지정": 1,
           "김규빈": 2
         },
         "menu": {
@@ -145199,6 +145200,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "13:26",
+          "store": "헤어마루",
+          "biz": "5210802549",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "사용중 터프 전원 꺼짐 / 재부팅 및 RJ9  뺏꼈했으나  프론트로 신호 안감    / 재온보딩 영상 지원 부탁드립니다 (고령)",
+          "hw": "",
+          "intake": "offline",
+          "note": "터미널 Serial2에 연결되어있어서 1으로 이동 후 정상작동 확인"
+        },
         {
           "time": "13:02",
           "store": "살롱드뤄니(SALON DE RUNNY)",
@@ -145235,7 +145247,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 1,
-        "offline": 2,
+        "offline": 3,
         "unknown": 0
       },
       "updatedAt": "13:26",
@@ -145368,10 +145380,6 @@ window.SLACK_DATA = {
       "1788001134.838139": {
         "post": "1788001134.838139",
         "lastSeen": 1788001233.557
-      },
-      "1788064012.198979": {
-        "post": "1788064012.198979",
-        "lastSeen": 1788064234.727
       }
     },
     "days": {
@@ -181863,8 +181871,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-30": {
-        "cnt": 1,
-        "sumMin": 6.437221018473307,
+        "cnt": 2,
+        "sumMin": 11.033288033803304,
         "over": 0,
         "items": [
           {
@@ -181874,13 +181882,21 @@ window.SLACK_DATA = {
             "biz": "8031902355",
             "who": "김규빈",
             "cat": "as"
+          },
+          {
+            "hm": "13:26",
+            "min": 4.6,
+            "store": "헤어마루",
+            "biz": "5210802549",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-30 13:30",
+    "at": "2026-08-30 13:32",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
