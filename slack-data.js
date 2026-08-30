@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6776,
+  "version": 6777,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145404,15 +145404,15 @@ window.SLACK_DATA = {
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "20:39",
+      "updatedAt": "22:49",
       "voc": {
-        "responses": 16,
+        "responses": 17,
         "install": {
           "count": 3,
           "low": 1
         },
         "nps": {
-          "count": 16,
+          "count": 17,
           "low": 5
         },
         "high": {
@@ -145425,7 +145425,7 @@ window.SLACK_DATA = {
           "3": 1,
           "5": 1,
           "8": 2,
-          "9": 3,
+          "9": 4,
           "10": 6
         },
         "installDist": {
@@ -145438,6 +145438,10 @@ window.SLACK_DATA = {
           "도소매": 2
         },
         "byTenure": {
+          "1개월": {
+            "total": 3,
+            "low": 1
+          },
           "3개월": {
             "total": 6,
             "low": 0
@@ -145450,16 +145454,16 @@ window.SLACK_DATA = {
             "total": 3,
             "low": 2
           },
-          "1개월": {
-            "total": 2,
-            "low": 1
-          },
           "12개월": {
             "total": 2,
             "low": 2
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 3,
+            "low": 1
+          },
           "KPN": {
             "total": 4,
             "low": 0
@@ -145481,10 +145485,6 @@ window.SLACK_DATA = {
             "low": 0
           },
           "KOVAN": {
-            "total": 2,
-            "low": 1
-          },
-          "KOCES": {
             "total": 2,
             "low": 1
           },
@@ -182275,7 +182275,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-30 22:45",
+    "at": "2026-08-30 23:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
