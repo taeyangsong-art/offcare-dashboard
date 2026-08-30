@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6732,
+  "version": 6733,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145191,8 +145191,8 @@ window.SLACK_DATA = {
     "2026-08-30": {
       "counts": {
         "as": {
-          "김규빈": 5,
-          "미지정": 3
+          "미지정": 4,
+          "김규빈": 5
         },
         "menu": {
           "김규빈": 1
@@ -145200,6 +145200,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:16",
+          "store": "우만동족발집 율전점",
+          "biz": "4260203542",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "포프(포스기) + 유프 온보딩 지원 요청드립니다. (+금전함까지)",
+          "hw": "",
+          "intake": "online",
+          "note": "포스 프론트 온보딩 완료 엄청 구형 포스에 다우 단말기 연동하여 프린터로 사용중 현재 OKPOS+ 쓰고있는데 포스기 교체 고민중 이라고 함."
+        },
         {
           "time": "14:57",
           "store": "케이엔스포츠(케이엔풋살파크)",
@@ -145301,31 +145312,31 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 3,
+        "online": 4,
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "15:38",
+      "updatedAt": "15:54",
       "voc": {
-        "responses": 5,
+        "responses": 6,
         "install": {
           "count": 1,
           "low": 1
         },
         "nps": {
-          "count": 5,
+          "count": 6,
           "low": 2
         },
         "high": {
           "install": 0,
-          "nps": 1
+          "nps": 2
         },
         "npsDist": {
           "0": 1,
           "1": 1,
           "8": 1,
           "9": 1,
-          "10": 1
+          "10": 2
         },
         "installDist": {
           "1": 1
@@ -145334,6 +145345,10 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 1,
+            "low": 0
+          },
           "3개월": {
             "total": 2,
             "low": 0
@@ -145352,6 +145367,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 2,
+            "low": 1
+          },
           "SMARTRO": {
             "total": 1,
             "low": 0
@@ -145365,10 +145384,6 @@ window.SLACK_DATA = {
             "low": 0
           },
           "KSNET": {
-            "total": 1,
-            "low": 1
-          },
-          "KOCES": {
             "total": 1,
             "low": 1
           }
@@ -145479,13 +145494,13 @@ window.SLACK_DATA = {
         "post": "1788001134.838139",
         "lastSeen": 1788001233.557
       },
-      "1788070593.435539": {
-        "post": "1788070593.435539",
-        "lastSeen": 1788072323.453
-      },
       "1788071482.680489": {
         "post": "1788071482.680489",
-        "lastSeen": 1788072323.453
+        "lastSeen": 1788072921.465
+      },
+      "1788072887.963069": {
+        "post": "1788072887.963069",
+        "lastSeen": 1788072921.465
       }
     },
     "days": {
@@ -181977,9 +181992,9 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-30": {
-        "cnt": 5,
-        "sumMin": 31.441547584533687,
-        "over": 0,
+        "cnt": 6,
+        "sumMin": 65.25860526959102,
+        "over": 1,
         "items": [
           {
             "hm": "13:02",
@@ -182020,13 +182035,21 @@ window.SLACK_DATA = {
             "biz": "2018145496",
             "who": "",
             "cat": "as"
+          },
+          {
+            "hm": "15:16",
+            "min": 33.8,
+            "store": "우만동족발집 율전점",
+            "biz": "4260203542",
+            "who": "",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-30 15:45",
+    "at": "2026-08-30 15:55",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
