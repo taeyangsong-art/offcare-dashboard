@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6742,
+  "version": 6743,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145338,27 +145338,28 @@ window.SLACK_DATA = {
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "16:28",
+      "updatedAt": "16:39",
       "voc": {
-        "responses": 8,
+        "responses": 11,
         "install": {
           "count": 2,
           "low": 1
         },
         "nps": {
-          "count": 8,
-          "low": 3
+          "count": 11,
+          "low": 4
         },
         "high": {
           "install": 0,
-          "nps": 3
+          "nps": 4
         },
         "npsDist": {
           "0": 2,
           "1": 1,
-          "8": 1,
+          "5": 1,
+          "8": 2,
           "9": 1,
-          "10": 3
+          "10": 4
         },
         "installDist": {
           "1": 1,
@@ -145368,6 +145369,14 @@ window.SLACK_DATA = {
           "도소매": 2
         },
         "byTenure": {
+          "3개월": {
+            "total": 4,
+            "low": 0
+          },
+          "12개월": {
+            "total": 2,
+            "low": 2
+          },
           "6개월": {
             "total": 2,
             "low": 0
@@ -145379,17 +145388,21 @@ window.SLACK_DATA = {
           "1개월": {
             "total": 1,
             "low": 0
-          },
-          "3개월": {
-            "total": 2,
-            "low": 0
-          },
-          "12개월": {
-            "total": 1,
-            "low": 1
           }
         },
         "byVan": {
+          "SMARTRO": {
+            "total": 2,
+            "low": 0
+          },
+          "KIS": {
+            "total": 1,
+            "low": 1
+          },
+          "KPN": {
+            "total": 2,
+            "low": 0
+          },
           "KOVAN": {
             "total": 2,
             "low": 1
@@ -145397,14 +145410,6 @@ window.SLACK_DATA = {
           "KOCES": {
             "total": 2,
             "low": 1
-          },
-          "SMARTRO": {
-            "total": 1,
-            "low": 0
-          },
-          "KPN": {
-            "total": 1,
-            "low": 0
           },
           "SECTA9": {
             "total": 1,
@@ -145416,11 +145421,34 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1,
           "필요한 기능이 없거나 몰라서 불편": 1,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "16:38",
+            "store": "클레오파트라 헤어",
+            "storeId": "244565",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "프로그램 오류가 많아요.",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:58",
             "store": "제주청과농산",
@@ -145494,7 +145522,20 @@ window.SLACK_DATA = {
             "doneDate": ""
           }
         ],
-        "praises": []
+        "praises": [
+          {
+            "time": "16:38",
+            "store": "카페 낭(cafe nang)",
+            "storeId": "489469",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "빨리 활성화 되어서 가게에 도움이 되면 좋겠네요.",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
       }
     }
   },
@@ -145546,7 +145587,11 @@ window.SLACK_DATA = {
       },
       "1788073486.626739": {
         "post": "1788073486.626739",
-        "lastSeen": 1788075027.421
+        "lastSeen": 1788075624.178
+      },
+      "1788075558.843689": {
+        "post": "1788075558.843689",
+        "lastSeen": 1788075624.178
       }
     },
     "days": {
@@ -182111,7 +182156,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-30 16:30",
+    "at": "2026-08-30 16:40",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
