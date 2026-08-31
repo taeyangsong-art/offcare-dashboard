@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1337,
- "updatedAt": "2026-08-31 14:48",
+ "version": 1338,
+ "updatedAt": "2026-08-31 14:49",
  "days": 30,
  "items": [
   {
@@ -276,9 +276,12 @@ window.MENU_REQUESTS = {
      ]
     }
    ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1788153908.150239",
+   "replies": [
+    "`오리메뉴` → `닭메뉴` → `식사류` → `추가메뉴` → `주류/음료`",
+    "• 기존 `찰밥/칼국수사리 6,000원` 항목 삭제\n• *요청된 4개 항목으로 정정 입력:* `큰찰밥추가 (6,000원)`, `작은찰밥추가 (3,000원)`, `칼국수추가 (6,000원)`, `칼국수리뷰 (0원)`"
+   ],
+   "rc": 3,
+   "lr": "1788155371.709899",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
