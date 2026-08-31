@@ -3,10 +3,178 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1360,
- "updatedAt": "2026-08-31 18:35",
+ "version": 1361,
+ "updatedAt": "2026-08-31 18:44",
  "days": 30,
  "items": [
+  {
+   "ts": "1788169387.808579",
+   "date": "2026-08-31",
+   "time": "18:43",
+   "store": "와룡",
+   "biz": "3111297655",
+   "pos": "",
+   "content": "메뉴 등록 요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "i_73396b790412.jpg",
+     "fid": "F0BTPSCHT37",
+     "from": "댓글",
+     "path": "menu-files/1788169387_808579-0.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "밥류",
+       "name": "볶",
+       "price": 9000
+      },
+      {
+       "category": "밥류",
+       "name": "짜밥",
+       "price": 9000
+      },
+      {
+       "category": "밥류",
+       "name": "김볶",
+       "price": 10000
+      },
+      {
+       "category": "밥류",
+       "name": "잡채밥",
+       "price": 10000
+      },
+      {
+       "category": "밥류",
+       "name": "제육덮밥",
+       "price": 10000
+      },
+      {
+       "category": "밥류",
+       "name": "오징어덮밥",
+       "price": 10000
+      },
+      {
+       "category": "밥류",
+       "name": "새볶",
+       "price": 10000
+      },
+      {
+       "category": "밥류",
+       "name": "삼볶",
+       "price": 10000
+      },
+      {
+       "category": "밥류",
+       "name": "송이밥",
+       "price": 10000
+      },
+      {
+       "category": "밥류",
+       "name": "마파밥",
+       "price": 10000
+      },
+      {
+       "category": "밥류",
+       "name": "짬뽕밥",
+       "price": 10000
+      },
+      {
+       "category": "밥류",
+       "name": "백짬밥",
+       "price": 13000
+      },
+      {
+       "category": "밥류",
+       "name": "특밥",
+       "price": 10000
+      },
+      {
+       "category": "밥류",
+       "name": "고추밥",
+       "price": 10000
+      },
+      {
+       "category": "밥류",
+       "name": "육개장",
+       "price": 10000
+      },
+      {
+       "category": "밥류",
+       "name": "고추짬밥",
+       "price": 13000
+      },
+      {
+       "category": "밥류",
+       "name": "삼선짬뽕밥",
+       "price": 13000
+      },
+      {
+       "category": "밥류",
+       "name": "차돌짬밥",
+       "price": 11000
+      },
+      {
+       "category": "밥류",
+       "name": "굴짬밥",
+       "price": 11000
+      },
+      {
+       "category": "밥류",
+       "name": "삼간 밥",
+       "price": 11000
+      },
+      {
+       "category": "밥류",
+       "name": "간짜밥",
+       "price": 10000
+      },
+      {
+       "category": "밥류",
+       "name": "유산슬밥",
+       "price": 15000
+      },
+      {
+       "category": "밥류",
+       "name": "잡탕밥",
+       "price": 17000
+      },
+      {
+       "category": "밥류",
+       "name": "누룽지탕 식사",
+       "price": 20000
+      },
+      {
+       "category": "밥류",
+       "name": "오므라이스",
+       "price": 9000
+      },
+      {
+       "category": "밥류",
+       "name": "우동밥",
+       "price": 10000
+      },
+      {
+       "category": "밥류",
+       "name": "공기밥",
+       "price": 1000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "사진 메뉴 그대로. 똑같은 순서에 곱자만 붙혀주시고 밥 곱배기 카테고리에 생성 부탁 드립니다.\n금액은 직접 수정하신다고 하시어 메뉴 생성만 부탁 드립니다."
+   ],
+   "rc": 2,
+   "lr": "1788169439.876459",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788169387808579"
+  },
   {
    "ts": "1788164003.570879",
    "date": "2026-08-31",
