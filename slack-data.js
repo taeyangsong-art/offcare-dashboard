@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6914,
+  "version": 6915,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145681,7 +145681,7 @@ window.SLACK_DATA = {
           "김동욱": 1
         },
         "menu": {
-          "배선유": 4,
+          "배선유": 5,
           "김규빈": 1
         },
         "delivery": {
@@ -145702,6 +145702,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "11:52",
+          "store": "계부자",
+          "biz": "3460603093",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "금액 수정 부탁 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 주류음료 카테고리 소주 4000원 맥주 4000원 으로 가격변경 부탁 드립니다. / 문자보냈어요"
+        },
         {
           "time": "11:50",
           "store": "소중한내한끼",
@@ -146369,11 +146380,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 50,
+        "online": 51,
         "offline": 11,
         "unknown": 0
       },
-      "updatedAt": "11:52",
+      "updatedAt": "11:54",
       "voc": {
         "responses": 2,
         "install": {
@@ -146477,7 +146488,7 @@ window.SLACK_DATA = {
       },
       "1788138906.847629": {
         "post": "1788138906.847629",
-        "lastSeen": 1788144861.778
+        "lastSeen": 1788144919.548
       },
       "1788142500.935479": {
         "post": "1788142500.935479",
@@ -183373,7 +183384,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 11:54",
+    "at": "2026-08-31 11:55",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

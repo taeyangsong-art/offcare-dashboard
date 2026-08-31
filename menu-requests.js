@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1312,
- "updatedAt": "2026-08-31 11:54",
+ "version": 1313,
+ "updatedAt": "2026-08-31 11:55",
  "days": 30,
  "items": [
   {
@@ -23,10 +23,10 @@ window.MENU_REQUESTS = {
    "replies": [
     "주류음료 카테고리\n소주 4000원\n맥주 4000원\n으로 가격변경 부탁 드립니다."
    ],
-   "rc": 2,
-   "lr": "1788144785.352319",
+   "rc": 3,
+   "lr": "1788144907.286339",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788144773390649"
   },
