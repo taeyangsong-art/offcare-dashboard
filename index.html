@@ -3963,7 +3963,7 @@ function loadCloud(cb){
       if(b._v||b.players){   // 신규 통합 포맷 — 파괴적 덮어쓰기 대신 병합
         const rp={};
         const mP=mergePlayers(GAME,b.players);         GAME=mP.merged;       if(Object.keys(mP.restore).length) rp.players=mP.restore;
-        const mE=mergeCloudDict(VOCEDIT,b.vocEdit);     VOCEDIT=mE.merged;     if(Object.keys(mE.restore).length) rp.vocEdit=mE.restore;
+        const mE=mergeCloudDict(VOCEDIT,b.vocEdit);     VOCEDIT=mE.merged;     _vocEmpOpts=null;   if(Object.keys(mE.restore).length) rp.vocEdit=mE.restore;
         const mR=mergeCloudDict(VOCPRAISE,b.vocPraise); VOCPRAISE=mR.merged;   if(Object.keys(mR.restore).length) rp.vocPraise=mR.restore;
         const mC=mergeCloudDict(VOCCOMMENT,b.vocComment);VOCCOMMENT=mC.merged; if(Object.keys(mC.restore).length) rp.vocComment=mC.restore;
         const mD=mergeCloudDict(DUTYOVER,b.dutyOver);   DUTYOVER=mD.merged;    if(Object.keys(mD.restore).length) rp.dutyOver=mD.restore;
@@ -5023,6 +5023,21 @@ function vocEmpOf(a){ return vocEmpAt(a.date, a); }
 // 이게 없으면 수기로 처리한 건은 완료일이 없어 직원별 VOC 처리 집계에 영원히 안 잡힌다.
 function vocDoneAt(d, x){ const ed=VOCEDIT[vocKeyOf(d,x)]||{}; return x.doneDate||ed.doneAt||''; }
 function vocDoneDateOf(a){ return vocDoneAt(a.date, a); }
+/* 담당자 드롭다운 후보 — 원격팀(EMPLOYEES) 외에, 실제로 이미 등장한 담당자 이름을 자동 수집한다.
+ * CX팀 이관(2026-09-01) 이후 김유나·홍지혜 같은 이름을 매번 '직접 입력'으로 타이핑하지 않도록,
+ * 슬랙 '<이름>확인' 이모지로 잡힌 이름과 표에서 수기 지정한 이름을 모두 후보로 올린다.
+ * 행마다 전체 스캔하면 낭비라 캐시하고, 지정·클라우드 병합 때만 무효화한다. */
+let _vocEmpOpts = null;
+function vocEmpOptions(){
+  if(_vocEmpOpts) return _vocEmpOpts;
+  const extra=new Set();
+  const add=n=>{ n=String(n||'').trim(); if(n && !EMPLOYEES.includes(n)) extra.add(n); };
+  allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v) return;
+    [...(v.alerts||[]),...(v.praises||[])].forEach(x=>add(vocEmpAt(d,x))); });
+  for(const k in VOCEDIT)   add((VOCEDIT[k]||{}).emp);
+  for(const k in VOCPRAISE) splitNames((VOCPRAISE[k]||{}).emp).forEach(add);
+  return _vocEmpOpts=[...extra].sort();
+}
 // 팀 공유 시 '남의 필드를 지우는' 사고를 막기 위한 패치 본문 생성.
 //
 // 서버는 patch 의 키 값을 통째로 대입한다 → 두 사람이 같은 건의 다른 필드
@@ -5046,6 +5061,7 @@ function saveVocEdit(key, field, val){
     if(vocDone(val)&&!vocVoid(val)){ if(!VOCEDIT[key].doneAt) VOCEDIT[key].doneAt=ymd(today()); }
     else delete VOCEDIT[key].doneAt;
   }
+  if(field==='emp') _vocEmpOpts=null;            // 새 담당자 이름 → 드롭다운 후보 다시 만들기
   const gone = Object.keys(VOCEDIT[key]).length===0;
   if(gone) delete VOCEDIT[key];
   save(LS_VOCEDIT, VOCEDIT);
@@ -5077,7 +5093,9 @@ function vocAlertRow(a){
   const statSel=`<select class="voc-sel voc-stat ${vocStatColorCls(statVal)}" onchange="saveVocEdit('${key}','status',this.value)">${VOC_STATUSES.map(o=>`<option ${statVal===o?'selected':''}>${o}</option>`).join('')}</select>`;
   // 담당자 — 직접 지정한 이름 우선, 없으면 슬랙 자동 감지값. 목록 밖 이름도 그대로 보여준다.
   const empVal=vocEmpOf(a), doneDate=vocDoneDateOf(a);
-  const empSel=`<select class="voc-sel" onchange="pickVocEmp('${key}',this.value)"><option value=""${empVal?'':' selected'}>미지정</option>${EMPLOYEES.map(e=>`<option ${e===empVal?'selected':''}>${e}</option>`).join('')}${(empVal&&!EMPLOYEES.includes(empVal))?`<option selected>${escapeHtml(empVal)}</option>`:''}<option value="__type__">✏️ 직접 입력…</option></select>`;
+  const empExtra=vocEmpOptions();
+  const empOpt=e=>`<option value="${escapeHtml(e)}"${e===empVal?' selected':''}>${escapeHtml(e)}</option>`;
+  const empSel=`<select class="voc-sel" onchange="pickVocEmp('${key}',this.value)"><option value=""${empVal?'':' selected'}>미지정</option><optgroup label="원격팀">${EMPLOYEES.map(empOpt).join('')}</optgroup>${empExtra.length?`<optgroup label="CX·타팀">${empExtra.map(empOpt).join('')}</optgroup>`:''}${(empVal&&!EMPLOYEES.includes(empVal)&&!empExtra.includes(empVal))?empOpt(empVal):''}<option value="__type__">✏️ 직접 입력…</option></select>`;
   const searchKey=((a.store||'')+' '+(a.storeId||'')).toLowerCase();
   // 상세 팝업용 데이터 적재 (고객 원문 클릭 시 사용)
   VOCDETAIL[key]={ store:a.store||'-', storeId:a.storeId||'', time:a.time||'', date:a.date||'',
