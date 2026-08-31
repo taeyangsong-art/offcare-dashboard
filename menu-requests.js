@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1322,
- "updatedAt": "2026-08-31 13:55",
+ "version": 1323,
+ "updatedAt": "2026-08-31 14:00",
  "days": 30,
  "items": [
   {
@@ -1165,10 +1165,10 @@ window.MENU_REQUESTS = {
     "RM 메일 인입건",
     "선유님..! 요기 엑셀파일도 있는데 업로드가 안되어서 혹시 RM메일도 같이 봐주실 수 있으실까요..!? (매장 2개라서 하나 더 스레드 생성해서 올리겠슴다 !)"
    ],
-   "rc": 4,
-   "lr": "1788151555.863229",
+   "rc": 5,
+   "lr": "1788152379.868489",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788151152027469"
   },
