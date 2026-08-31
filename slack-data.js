@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6823,
+  "version": 6824,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145659,7 +145659,8 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "송태양": 1,
-          "배선유": 1
+          "배선유": 1,
+          "심성현": 1
         }
       },
       "pending": [],
@@ -145685,10 +145686,21 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "1차부재, 전화거절 / 문자 : 오늘 오후에 가능할것 같습니다! 3시이후여ㅠㅠ 3:15 예약"
+        },
+        {
+          "time": "09:00",
+          "store": "바로종합학원",
+          "biz": "5099130538",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포프(휴대폰) 온보딩 요청드립니다. / 학원에서 편하게 사용할 수 있는 방법에 관련하여 자세한 안내 원하십니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
         }
       ],
       "intake": {
-        "online": 2,
+        "online": 3,
         "offline": 0,
         "unknown": 0
       },
@@ -145787,11 +145799,7 @@ window.SLACK_DATA = {
       },
       "1788134406.513879": {
         "post": "1788134406.513879",
-        "lastSeen": 1788134605.052
-      },
-      "1788133961.018509": {
-        "post": "1788133961.018509",
-        "lastSeen": 1788134605.052
+        "lastSeen": 1788134662.363
       }
     },
     "days": {
@@ -182435,7 +182443,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 09:03",
+    "at": "2026-08-31 09:04",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
