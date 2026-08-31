@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6866,
+  "version": 6867,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145658,11 +145658,11 @@ window.SLACK_DATA = {
     "2026-08-31": {
       "counts": {
         "as": {
+          "배선유": 5,
           "심성현": 6,
           "송태양": 4,
           "김현기": 3,
-          "고경림": 3,
-          "배선유": 4
+          "고경림": 3
         },
         "extern": {
           "배선유": 1,
@@ -145683,6 +145683,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:30",
+          "store": "도로시헤어",
+          "biz": "6071032980",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "포프(노트북) + 유프 온보딩 요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "금일 16:15 재예약"
+        },
         {
           "time": "10:23",
           "store": "하얀 얼굴 피부 공방",
@@ -146050,11 +146061,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 29,
+        "online": 30,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "10:30",
+      "updatedAt": "10:32",
       "voc": {
         "responses": 1,
         "install": {
@@ -146149,11 +146160,7 @@ window.SLACK_DATA = {
       },
       "1788138906.847629": {
         "post": "1788138906.847629",
-        "lastSeen": 1788139823.178
-      },
-      "1788139802.764419": {
-        "post": "1788139802.764419",
-        "lastSeen": 1788139823.178
+        "lastSeen": 1788140005.8
       }
     },
     "days": {
@@ -182764,8 +182771,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-31": {
-        "cnt": 20,
-        "sumMin": 95.98062232732772,
+        "cnt": 21,
+        "sumMin": 97.84269867340723,
         "over": 0,
         "items": [
           {
@@ -182927,13 +182934,21 @@ window.SLACK_DATA = {
             "biz": "6640903503",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "10:30",
+            "min": 1.9,
+            "store": "고미소리음악학원",
+            "biz": "3179067399",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-31 10:30",
+    "at": "2026-08-31 10:33",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
