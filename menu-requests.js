@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1308,
- "updatedAt": "2026-08-31 11:41",
+ "version": 1309,
+ "updatedAt": "2026-08-31 11:44",
  "days": 30,
  "items": [
   {
@@ -49218,30 +49218,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "송태양",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785552823909339"
-  },
-  {
-   "ts": "1785552221.033219",
-   "date": "2026-08-01",
-   "time": "11:43",
-   "store": "청풍돌짜장",
-   "biz": "4530401287",
-   "pos": "",
-   "content": "OK 포스 메뉴 수정 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "요리류에 있는 미니탕수육\n\n15,000원 으로 수정 요청하셨습니다.",
-    "태양님. 제가 OK 포스 메뉴 수정 방법을 몰라서 부득이하게 요청드립니다. :눈물햄스터:\n\n가능하실 때 수정 한 번만 부탁드립니다. :감사합니다꾸벅:"
-   ],
-   "rc": 4,
-   "lr": "1785552550.353889",
-   "rfx": 3,
-   "status": "done",
-   "handler": "송태양",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785552221033219"
   }
  ],
  "ocr": {
