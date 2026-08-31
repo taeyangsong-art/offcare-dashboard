@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6923,
+  "version": 6924,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145658,12 +145658,12 @@ window.SLACK_DATA = {
     "2026-08-31": {
       "counts": {
         "as": {
+          "김규빈": 3,
           "송태양": 6,
           "김현기": 5,
           "배선유": 8,
           "고경림": 6,
-          "심성현": 12,
-          "김규빈": 2
+          "심성현": 12
         },
         "extern": {
           "서상원": 4,
@@ -145702,6 +145702,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "12:01",
+          "store": "(주)석아 국가대표",
+          "biz": "4478502785",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "<https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1787713818791319?thread_ts=1787712710.321409&cid=C09HRUSG4TX|당시 오류>로 8/28 교체 ",
+          "hw": "",
+          "intake": "offline",
+          "note": "바이라스, anti 해제 후 일단 사용"
+        },
         {
           "time": "12:00",
           "store": "에떼스튜디오(ete-studio)",
@@ -146403,7 +146414,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 53,
-        "offline": 11,
+        "offline": 12,
         "unknown": 0
       },
       "updatedAt": "12:10",
@@ -146510,7 +146521,7 @@ window.SLACK_DATA = {
       },
       "1788138906.847629": {
         "post": "1788138906.847629",
-        "lastSeen": 1788145882.309
+        "lastSeen": 1788145941.217
       },
       "1788142500.935479": {
         "post": "1788142500.935479",
@@ -146518,7 +146529,7 @@ window.SLACK_DATA = {
       },
       "1788145829.868469": {
         "post": "1788145829.868469",
-        "lastSeen": 1788145882.309
+        "lastSeen": 1788145941.217
       }
     },
     "days": {
@@ -183426,7 +183437,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 12:11",
+    "at": "2026-08-31 12:12",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
