@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6855,
+  "version": 6856,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145880,7 +145880,7 @@ window.SLACK_DATA = {
         "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "10:05",
+      "updatedAt": "10:08",
       "voc": {
         "responses": 1,
         "install": {
@@ -145975,19 +145975,15 @@ window.SLACK_DATA = {
       },
       "1788138006.913339": {
         "post": "1788138006.913339",
-        "lastSeen": 1788138382.413
-      },
-      "1788138005.734579": {
-        "post": "1788138005.734579",
-        "lastSeen": 1788138382.413
+        "lastSeen": 1788138558.595
       },
       "1788138025.374569": {
         "post": "1788138025.374569",
-        "lastSeen": 1788138382.413
+        "lastSeen": 1788138558.595
       },
       "1788138331.632729": {
         "post": "1788138331.632729",
-        "lastSeen": 1788138382.413
+        "lastSeen": 1788138558.595
       }
     },
     "days": {
@@ -182598,8 +182594,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-31": {
-        "cnt": 13,
-        "sumMin": 54.14156904220581,
+        "cnt": 14,
+        "sumMin": 61.88772606054942,
         "over": 0,
         "items": [
           {
@@ -182705,13 +182701,21 @@ window.SLACK_DATA = {
             "biz": "4090567732",
             "who": "김규빈",
             "cat": "as"
+          },
+          {
+            "hm": "10:00",
+            "min": 7.7,
+            "store": "봄봄언어인지발달센터",
+            "biz": "3139716596",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-31 10:06",
+    "at": "2026-08-31 10:09",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
