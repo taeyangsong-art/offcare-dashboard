@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1358,
- "updatedAt": "2026-08-31 17:13",
+ "version": 1359,
+ "updatedAt": "2026-08-31 17:18",
  "days": 30,
  "items": [
   {
@@ -21,13 +21,14 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [
-    "엑스트라 카테고리 난 클릭 시 금액 입력 창이 뜬다고 합니다.\n난 3,000원 고정으로 수정 부탁드립니다.\n추가로 주방쪽도 있는데 같이 연동이 되지 않는다며 연동되게 요청 주셨어요."
+    "엑스트라 카테고리 난 클릭 시 금액 입력 창이 뜬다고 합니다.\n난 3,000원 고정으로 수정 부탁드립니다.\n추가로 주방쪽도 있는데 같이 연동이 되지 않는다며 연동되게 요청 주셨어요.",
+    "금일 메뉴 변경 요청 준 건 완료 되었으나 안되었다고 하여 포스기 재실행 안내 드렸어요."
    ],
-   "rc": 3,
-   "lr": "1788164024.961289",
+   "rc": 5,
+   "lr": "1788164294.493839",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788164003570879"
   },
   {
