@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6828,
+  "version": 6829,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -133815,11 +133815,11 @@ window.SLACK_DATA = {
                 "cat": "단말기 설치나 초기 과정이 어려움"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
             "autoNote": "1차부재 1차부재",
-            "doneDate": ""
+            "doneDate": "2026-08-31"
           }
         ],
         "praises": [
@@ -144163,7 +144163,7 @@ window.SLACK_DATA = {
           {
             "key": "2026년 8월 27일 오후 5:01:29|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787118612061589#1",
             "handler": "김규빈",
-            "status": "",
+            "status": "일정등록완료",
             "recvDate": "2026-08-27",
             "planDate": "2026-09-03",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787118612061589"
@@ -145784,7 +145784,7 @@ window.SLACK_DATA = {
             "emp": "",
             "autoStatus": "",
             "autoEmp": "",
-            "autoNote": "",
+            "autoNote": "• 금일 오후 5시 15분 원격점검 예정 금일 오후 5시 15분 원격점검 예정",
             "doneDate": ""
           }
         ],
@@ -145824,7 +145824,7 @@ window.SLACK_DATA = {
       },
       "1788134406.513879": {
         "post": "1788134406.513879",
-        "lastSeen": 1788135139.285
+        "lastSeen": 1788135325.645
       }
     },
     "days": {
@@ -182468,23 +182468,23 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 09:12",
+    "at": "2026-08-31 09:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3788,
+    "rows": 3789,
     "named": 490,
     "unknownName": 0,
     "beforeStart": 0,
     "done": 490,
     "byStatus": {
-      "일정등록완료": 307,
+      "일정등록완료": 308,
       "1차부재": 111,
       "점주직접접수": 42,
       "설치불가": 9,
-      "(빈칸)": 4,
+      "(빈칸)": 3,
       "자가설치": 15,
       "설치보류요청": 2
     }
