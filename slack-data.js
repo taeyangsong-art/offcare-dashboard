@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6926,
+  "version": 6927,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -146439,7 +146439,7 @@ window.SLACK_DATA = {
         "offline": 13,
         "unknown": 0
       },
-      "updatedAt": "12:15",
+      "updatedAt": "12:16",
       "voc": {
         "responses": 2,
         "install": {
@@ -146543,15 +146543,19 @@ window.SLACK_DATA = {
       },
       "1788138906.847629": {
         "post": "1788138906.847629",
-        "lastSeen": 1788146123.432
+        "lastSeen": 1788146302.499
       },
       "1788142500.935479": {
         "post": "1788142500.935479",
         "lastSeen": 1788143545.697
       },
-      "1788146100.691319": {
-        "post": "1788146100.691319",
-        "lastSeen": 1788146123.432
+      "1788146217.719569": {
+        "post": "1788146217.719569",
+        "lastSeen": 1788146302.499
+      },
+      "1788146214.835619": {
+        "post": "1788146214.835619",
+        "lastSeen": 1788146302.499
       }
     },
     "days": {
@@ -183162,8 +183166,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-31": {
-        "cnt": 37,
-        "sumMin": 151.84242126941677,
+        "cnt": 38,
+        "sumMin": 153.71365761756894,
         "over": 0,
         "items": [
           {
@@ -183461,13 +183465,21 @@ window.SLACK_DATA = {
             "biz": "6014114881",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "12:15",
+            "min": 1.9,
+            "store": "더채움 스킨앤바디",
+            "biz": "2971802887",
+            "who": "송태양",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-31 12:15",
+    "at": "2026-08-31 12:18",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
