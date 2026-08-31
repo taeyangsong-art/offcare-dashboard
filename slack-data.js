@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6878,
+  "version": 6879,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145659,7 +145659,7 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김규빈": 1,
-          "심성현": 7,
+          "심성현": 8,
           "배선유": 5,
           "김현기": 4,
           "송태양": 4,
@@ -145718,6 +145718,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "/ / 가상 메모리 설정 완료"
+        },
+        {
+          "time": "10:30",
+          "store": "고미소리음악학원",
+          "biz": "3179067399",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포프(태블릿) + 유프 온보딩 요청드립니다. / 출결 관리, 원생 관리 기능 사용 방법 문의 하셨습니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "1415 통화 예약 요청"
         },
         {
           "time": "10:30",
@@ -146108,19 +146119,19 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 33,
+        "online": 34,
         "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "10:53",
+      "updatedAt": "10:54",
       "voc": {
-        "responses": 1,
+        "responses": 2,
         "install": {
           "count": 0,
           "low": 0
         },
         "nps": {
-          "count": 1,
+          "count": 2,
           "low": 1
         },
         "high": {
@@ -146128,17 +146139,26 @@ window.SLACK_DATA = {
           "nps": 0
         },
         "npsDist": {
-          "0": 1
+          "0": 1,
+          "6": 1
         },
         "installDist": {},
         "byIndustry": {},
         "byTenure": {
+          "1개월": {
+            "total": 1,
+            "low": 0
+          },
           "6개월": {
             "total": 1,
             "low": 1
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 1,
+            "low": 0
+          },
           "KSNET": {
             "total": 1,
             "low": 1
@@ -146207,15 +146227,15 @@ window.SLACK_DATA = {
       },
       "1788138906.847629": {
         "post": "1788138906.847629",
-        "lastSeen": 1788141261.592
+        "lastSeen": 1788141321.661
       },
       "1788140668.164099": {
         "post": "1788140668.164099",
-        "lastSeen": 1788141261.592
+        "lastSeen": 1788141321.661
       },
       "1788141195.262649": {
         "post": "1788141195.262649",
-        "lastSeen": 1788141261.592
+        "lastSeen": 1788141321.661
       }
     },
     "days": {
@@ -183027,7 +183047,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 10:54",
+    "at": "2026-08-31 10:55",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
