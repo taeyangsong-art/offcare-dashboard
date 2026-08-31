@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6845,
+  "version": 6846,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145777,7 +145777,7 @@ window.SLACK_DATA = {
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:45",
+      "updatedAt": "09:50",
       "voc": {
         "responses": 1,
         "install": {
@@ -145872,19 +145872,19 @@ window.SLACK_DATA = {
       },
       "1788136202.747429": {
         "post": "1788136202.747429",
-        "lastSeen": 1788137359.568
-      },
-      "1788136950.753509": {
-        "post": "1788136950.753509",
-        "lastSeen": 1788137359.568
+        "lastSeen": 1788137421.437
       },
       "1788137101.327189": {
         "post": "1788137101.327189",
-        "lastSeen": 1788137359.568
+        "lastSeen": 1788137421.437
       },
       "1788137124.356329": {
         "post": "1788137124.356329",
-        "lastSeen": 1788137359.568
+        "lastSeen": 1788137421.437
+      },
+      "1788137402.391549": {
+        "post": "1788137402.391549",
+        "lastSeen": 1788137421.437
       }
     },
     "days": {
@@ -182495,8 +182495,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-31": {
-        "cnt": 8,
-        "sumMin": 15.980988963445029,
+        "cnt": 9,
+        "sumMin": 23.310138813654582,
         "over": 0,
         "items": [
           {
@@ -182562,13 +182562,21 @@ window.SLACK_DATA = {
             "biz": "5968602221",
             "who": "김동욱",
             "cat": "as"
+          },
+          {
+            "hm": "09:42",
+            "min": 7.3,
+            "store": "젬마(GEMMA)",
+            "biz": "2451000539",
+            "who": "배선유",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-31 09:49",
+    "at": "2026-08-31 09:50",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
