@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1366,
- "updatedAt": "2026-08-31 20:31",
+ "version": 1367,
+ "updatedAt": "2026-08-31 22:49",
  "days": 30,
  "items": [
   {
@@ -23,17 +23,17 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BTD8DP7P1",
      "from": "댓글",
-     "path": "menu-files/1788174558_223329-0.png",
      "kind": "product_photo",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1788174558_223329-0.png"
     },
     {
      "name": "image.png",
      "fid": "F0BTSM0KHPG",
      "from": "댓글",
-     "path": "menu-files/1788174558_223329-1.png",
      "kind": "product_photo",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1788174558_223329-1.png"
     }
    ],
    "datt": [],
@@ -42,11 +42,11 @@ window.MENU_REQUESTS = {
     "사진은 이메일로 보내셨다고 합니다.",
     "사진 직접 받았습니다!"
    ],
-   "rc": 4,
-   "lr": "1788175850.999309",
+   "rc": 5,
+   "lr": "1788184114.579649",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788174558223329"
   },
   {
