@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6871,
+  "version": 6872,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -146076,7 +146076,7 @@ window.SLACK_DATA = {
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "10:42",
+      "updatedAt": "10:43",
       "voc": {
         "responses": 1,
         "install": {
@@ -146171,11 +146171,11 @@ window.SLACK_DATA = {
       },
       "1788138906.847629": {
         "post": "1788138906.847629",
-        "lastSeen": 1788140541.476
+        "lastSeen": 1788140599.4
       },
-      "1788140524.007819": {
-        "post": "1788140524.007819",
-        "lastSeen": 1788140541.476
+      "1788140583.904129": {
+        "post": "1788140583.904129",
+        "lastSeen": 1788140599.4
       }
     },
     "days": {
@@ -182786,8 +182786,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-31": {
-        "cnt": 21,
-        "sumMin": 97.84269867340723,
+        "cnt": 22,
+        "sumMin": 98.61653502782185,
         "over": 0,
         "items": [
           {
@@ -182957,13 +182957,21 @@ window.SLACK_DATA = {
             "biz": "3179067399",
             "who": "심성현",
             "cat": "as"
+          },
+          {
+            "hm": "10:42",
+            "min": 0.8,
+            "store": "주식회사 프리츠(독립문점_플리마켓)",
+            "biz": "1058801127",
+            "who": "김현기",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-31 10:42",
+    "at": "2026-08-31 10:43",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
