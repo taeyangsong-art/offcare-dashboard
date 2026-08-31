@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6827,
+  "version": 6828,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145661,6 +145661,9 @@ window.SLACK_DATA = {
           "송태양": 2,
           "배선유": 1,
           "심성현": 1
+        },
+        "menu": {
+          "배선유": 1
         }
       },
       "pending": [],
@@ -145708,11 +145711,22 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "기본 세팅 완료 1115 재예약 요청"
+        },
+        {
+          "time": "08:52",
+          "store": "을지로골뱅이",
+          "biz": "2200887418",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "메뉴 가격 수정 요청",
+          "hw": "",
+          "intake": "offline",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 안주1) 강남누드골뱅이를&gt;누드골뱅이 로 누드골뱅이과일set&gt;62,500 (안주2) 별미오징어볶음&gt;27,000 별미오징어데침&gt;27,000 별미오징어무침&gt;27,000 오징어부추전&gt;27,000 오징어김치전&gt;27,000 골뱅이부추전&gt;27,000 매운고추전&gt;골뱅이매콤"
         }
       ],
       "intake": {
         "online": 4,
-        "offline": 0,
+        "offline": 1,
         "unknown": 0
       },
       "updatedAt": "09:06",
@@ -145810,7 +145824,7 @@ window.SLACK_DATA = {
       },
       "1788134406.513879": {
         "post": "1788134406.513879",
-        "lastSeen": 1788135020.148
+        "lastSeen": 1788135139.285
       }
     },
     "days": {
@@ -182454,13 +182468,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 09:10",
+    "at": "2026-08-31 09:12",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3786,
+    "rows": 3788,
     "named": 490,
     "unknownName": 0,
     "beforeStart": 0,
