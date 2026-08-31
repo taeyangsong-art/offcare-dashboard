@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6932,
+  "version": 6933,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145711,7 +145711,7 @@ window.SLACK_DATA = {
           "req": "키오스크모드에서 영수증 출력이 안된다하여 점검부탁드립니다",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "프론트내에 프린터 설정이 안되어있었음 프린터 소리 OFF 완료"
         },
         {
           "time": "12:15",
@@ -146483,7 +146483,7 @@ window.SLACK_DATA = {
         "offline": 13,
         "unknown": 0
       },
-      "updatedAt": "12:21",
+      "updatedAt": "12:27",
       "voc": {
         "responses": 2,
         "install": {
@@ -146587,7 +146587,7 @@ window.SLACK_DATA = {
       },
       "1788138906.847629": {
         "post": "1788138906.847629",
-        "lastSeen": 1788146720.812
+        "lastSeen": 1788146840.83
       },
       "1788142500.935479": {
         "post": "1788142500.935479",
@@ -146595,11 +146595,15 @@ window.SLACK_DATA = {
       },
       "1788146217.719569": {
         "post": "1788146217.719569",
-        "lastSeen": 1788146720.812
+        "lastSeen": 1788146840.83
       },
       "1788146214.835619": {
         "post": "1788146214.835619",
-        "lastSeen": 1788146720.812
+        "lastSeen": 1788146840.83
+      },
+      "1788146833.103489": {
+        "post": "1788146833.103489",
+        "lastSeen": 1788146840.83
       }
     },
     "days": {
@@ -183531,7 +183535,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 12:25",
+    "at": "2026-08-31 12:27",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
