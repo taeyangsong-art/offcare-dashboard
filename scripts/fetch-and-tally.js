@@ -26,6 +26,23 @@ const NAMES = Object.keys(personMap).join('|');
 const RE_EMP      = new RegExp('^원격(' + NAMES + ')$');          // 원격OOO (완료 담당자)
 const RE_CONFIRM  = new RegExp('^(' + NAMES + ')(_확인.*)?$');     // OOO / OOO_확인
 const RE_CONFIRM2 = new RegExp('^(' + NAMES + ')_?확인_?$');       // OOO_확인_
+/* VOC 채널의 '<이름>확인' 이모지 — personMap(원격팀 10명)에 없는 사람도 담당자로 인정한다.
+ * 10명만 매칭하던 탓에 유나확인·지혜확인처럼 타팀 담당자의 이모지가 통째로 무시됐고,
+ * 실제로 저점 185건의 담당자가 전부 '송태양' 한 명으로만 잡혀 있었다.
+ * personMap 에 있으면 풀네임(규빈→김규빈)으로, 없으면 이모지에 적힌 이름을 그대로 쓴다. */
+const RE_CONFIRM_ANY = /^([가-힣]{2,6})_?확인_?$/;
+// 사람 이름이 아닌 '…확인' 이모지 — 담당자로 오인하면 안 되는 것들
+const NOT_PERSON = new Set(['아이샵케어','원격','완료','중복','부재','이중','재차','최종','전체','내용','설문','매장','접수','처리','미확인','확인']);
+const unknownConfirms = new Set();   // 목록 밖 담당자 — 실행 로그에 남겨 personMap 보강 여부를 판단
+function confirmPersonOf(nm) {
+  const mm = String(nm || '').match(RE_CONFIRM_ANY);
+  if (!mm) return '';
+  const raw = mm[1];
+  if (personMap[raw]) return personMap[raw];
+  if (NOT_PERSON.has(raw)) return '';
+  unknownConfirms.add(raw);
+  return raw;
+}
 /* ── 설치 OB ──────────────────────────────────────────────────────────────
  * 원본: 구글시트 '⚒️설치일정 확인해주세요'.
  *   A=접수시각 · B=연락처(읽지 않음) · C=슬랙링크 · D=확인여부 · E=상태 · F=요청자 · G=설치예정일
@@ -113,7 +130,7 @@ function dateList(fromS, toS) { const out = []; for (let t = dateUTC(fromS), e =
 
 // 백필: BACKFILL_FROM=YYYY-MM-DD 지정 시 그 날부터 오늘까지 모든 카테고리를 날짜별로 다시 적재 (일회성)
 const backfillFrom = (process.env.BACKFILL_FROM || '').trim();
-// VOC 롤링 재집계 시작일 = min(오늘-14일, 백필시작일). 과거 설문에 뒤늦게 '확인+완료' 이모지 찍히면 반영.
+// VOC 롤링 재집계 시작일 = min(오늘-VOC_LOOKBACK일, 백필시작일). 과거 설문에 뒤늦게 '확인+완료' 이모지 찍히면 반영.
 const VOC_LOOKBACK = 30;
 const defMinObj = new Date(Date.UTC(Y, M, D - VOC_LOOKBACK));
 const defMin = `${defMinObj.getUTCFullYear()}-${pad(defMinObj.getUTCMonth() + 1)}-${pad(defMinObj.getUTCDate())}`;
@@ -495,7 +512,7 @@ async function tallyVoc(msgs, voc, channelId, opts) {
     let confirmP = null, remoteP = null;
     for (const nm of names) {
       let mm;
-      if (!confirmP && (mm = nm.match(RE_CONFIRM2))) confirmP = personMap[mm[1]];
+      if (!confirmP) confirmP = confirmPersonOf(nm) || null;
       if (!remoteP  && (mm = nm.match(RE_EMP)))     remoteP = personMap[mm[1]];
     }
     const autoDone = !!confirmP && hasIshop;                     // 확인 + 아이샵케어 VOC체크(ishopcare)
@@ -692,6 +709,7 @@ async function tallyVoc(msgs, voc, channelId, opts) {
     }
   }
 
+  if (unknownConfirms.size) console.log(`[VOC 담당자] personMap 밖 '<이름>확인' 이모지 ${unknownConfirms.size}명 감지: ${[...unknownConfirms].join(', ')} — 원격팀이면 personMap 에 추가(아니면 대시보드 '기타'로 집계)`);
   console.log(`[완료] 업무 ${workDates.length}일 · VOC ${vocResTotal}응답/${vocDaysTouched}일 재집계`);
   data.version = (data.version || 0) + 1;
   const header = '/*\n * 슬랙 원격 처리 채널(AS요청·명의변경 등) 집계 데이터 (날짜별 누적)\n * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.\n */\n';

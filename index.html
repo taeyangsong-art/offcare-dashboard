@@ -1720,7 +1720,8 @@ function pickDuty(i, name){
   const el=document.getElementById('dutyPickModal'); if(el) el.remove();
   if(name) swapDutyByIdx(i, name); else saveDutyOverride(DUTYKEYS[i], '');
 }
-let VOCEDIT= load(LS_VOCEDIT, {}); // { "date|storeId|time": { industry, reasonCat, note } } — VOC 수기 보정
+let VOCEDIT= load(LS_VOCEDIT, {}); // { "date|storeId|time": { industry, reasonCat, note, status, emp, doneAt } } — VOC 수기 보정
+                                   // emp=직접 지정한 처리 담당자(자동 감지보다 우선) · doneAt=수기 처리완료일
 const LS_VOCCOMMENT = "opcare_voccomment_v1";
 let VOCCOMMENT = load(LS_VOCCOMMENT, {}); // { "YYYY-MM": "먼슬리 코멘트" }
 const LS_VOCPRAISE = "opcare_vocpraise_v1";
@@ -1786,14 +1787,14 @@ function nightItems(dates){
     ((slackDay(d)||{}).done||[]).forEach(x=>{ if(isNightTime(x.time)) out.push({time:x.time,store:x.store,biz:x.biz,emp:x.emp,cat:x.cat,date:d,st:'처리'}); });
     ((slackDay(d)||{}).pending||[]).forEach(x=>{ if(isNightTime(x.time)){ const ab=(x.reasons||[]).some(r=>/부재/.test(r)); out.push({time:x.time,store:x.store,biz:x.biz,emp:x.handler,cat:x.cat,date:d,st:ab?'부재':'확인필요'}); } });
   });
-  allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ if(x.emp&&x.doneDate&&set.has(x.doneDate)&&isNightTime(x.time)) out.push({time:x.time,store:x.store,biz:x.storeId,emp:x.emp,cat:'voc',date:x.doneDate,st:'처리'}); }); });
+  allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ const e=vocEmpAt(d,x), dd=vocDoneAt(d,x); if(e&&dd&&set.has(dd)&&isNightTime(x.time)) out.push({time:x.time,store:x.store,biz:x.storeId,emp:e,cat:'voc',date:dd,st:'처리'}); }); });
   return out;
 }
 // 특정 직원이 fromTime(예:21:00) 이후에 처리한 누적 건수 (업무 done + VOC 완료) — 타이틀 구매 요건용
 function nightHandled(emp, fromTime){
   const from = fromTime || "21:00"; let n=0;
   monthSlackDates().forEach(d=>{ ((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp===emp && (x.time||"")>=from) n++; }); });
-  monthSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ if(x.emp===emp && x.doneDate && (x.time||"")>=from) n++; }); });
+  monthSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ if(vocEmpAt(d,x)===emp && vocDoneAt(d,x) && (x.time||"")>=from) n++; }); });
   return n;
 }
 // ===== 타이틀 달성 조건 (충족 시 코인 없이 무료 획득) — 진행도는 '현재 달'만 측정 → 매월 1일 초기화 =====
@@ -1832,7 +1833,7 @@ function achStatus(emp, it){
   if(!it || !it.ach || !emp) return it&&it.ach ? {ok:false, label:achShort(it.ach), prog:'-'} : null;
   if(it.ach==='hand'){ const best=Math.max(0,...Object.values(empWorkByDay(emp))); return {ok:best>=35, label:'하루 원격 35건 처리', prog:`${best}/35건`}; }
   if(it.ach==='phoenix'){ const toMin=t=>{ const p=(t||'').split(':'); return (+p[0]||0)*60+(+p[1]||0); }; let ok=false, bestSpan=0; monthSlackDates().forEach(d=>{ const ts=((slackDay(d)||{}).done||[]).filter(x=>x.emp===emp&&x.time).map(x=>toMin(x.time)); if(ts.length>=2){ const span=Math.max(...ts)-Math.min(...ts); if(span>bestSpan) bestSpan=span; if(span>=720) ok=true; } }); return {ok, label:'하루 원격 처리 이력 12시간 이상 (첫~마지막 처리 간격)', prog:ok?'달성 ✓':`최고 ${Math.floor(bestSpan/60)}시간 ${bestSpan%60}분/12시간`}; }
-  if(it.ach==='master'){ let ok=false; const W=['onboarding','as','transfer','menu','delivery','extern']; monthSlackDates().forEach(d=>{ const day=slackDay(d)||{}; const dn=(day.done||[]).filter(x=>x.emp===emp); const cs=new Set(dn.map(x=>x.cat)); const all6=W.every(c=>cs.has(c)); const voc=day.voc?[...(day.voc.alerts||[]),...(day.voc.praises||[])].some(x=>x.emp===emp&&x.doneDate===d):false; const anyPending=(day.pending||[]).some(p=>p.handler===emp); if(all6&&voc&&!anyPending) ok=true; }); return {ok, label:'하루에 온보딩·AS·명변·메뉴·배달·외주·VOC 각 1건 이상 + 부재·미처리 0건', prog:ok?'달성 ✓':'미달'}; }
+  if(it.ach==='master'){ let ok=false; const W=['onboarding','as','transfer','menu','delivery','extern']; monthSlackDates().forEach(d=>{ const day=slackDay(d)||{}; const dn=(day.done||[]).filter(x=>x.emp===emp); const cs=new Set(dn.map(x=>x.cat)); const all6=W.every(c=>cs.has(c)); const voc=day.voc?[...(day.voc.alerts||[]),...(day.voc.praises||[])].some(x=>vocEmpAt(d,x)===emp&&vocDoneAt(d,x)===d):false; const anyPending=(day.pending||[]).some(p=>p.handler===emp); if(all6&&voc&&!anyPending) ok=true; }); return {ok, label:'하루에 온보딩·AS·명변·메뉴·배달·외주·VOC 각 1건 이상 + 부재·미처리 0건', prog:ok?'달성 ✓':'미달'}; }
   if(it.ach==='god'){ const best=Math.max(0,...Object.values(empWorkByDay(emp))); const mvp=mvpCountOf(emp); return {ok:best>=50&&mvp>=10, label:'하루 50건 이상 처리 + MVP 10회 이상 선정', prog:`하루최고 ${best}/50 · MVP ${mvp}/10`}; }
   if(it.ach==='night'){ const have=nightHandled(emp,'20:00'); return {ok:have>=300, label:'밤 20:00 이후 300건 처리', prog:`${have}/300건`}; }
   if(it.ach==='fool'){ const miss=missCumCount(emp); return {ok:miss>=5, label:'이번 달 누락 이력 5건 이상 (해결해도 누적)', prog:`${miss}/5건`}; }   // 히든(달성 시 공개)
@@ -1913,7 +1914,7 @@ function ovCnt(cat, dates, emp){
 function ovVocDone(dates){
   if(ovShift!=='night') return vocDoneInRange(dates);
   const set=new Set(dates); let cnt=0; const byEmp={};
-  allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ if(x.emp&&x.doneDate&&set.has(x.doneDate)&&isNightTime(x.time)){ cnt++; byEmp[x.emp]=(byEmp[x.emp]||0)+1; } }); });
+  allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ const e=vocEmpAt(d,x), dd=vocDoneAt(d,x); if(e&&dd&&set.has(dd)&&isNightTime(x.time)){ cnt++; byEmp[e]=(byEmp[e]||0)+1; } }); });
   return {cnt, byEmp};
 }
 function ovVocAlerts(dates){ const a=aggVoc(dates).alerts; return ovShift==='night'? a.filter(x=>isNightTime(x.time)) : a; }
@@ -4661,7 +4662,7 @@ function showObDetail(){
 }
 function showDoneDetail(mode, key){
   const dates=ovDates(), set=new Set(dates); let items=[], title='';
-  const pushVocDone=(empFilter)=>{ allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ if(x.emp&&(!empFilter||x.emp===empFilter)&&x.doneDate&&set.has(x.doneDate)) items.push({time:'',store:x.store,biz:x.storeId,emp:x.emp,cat:'voc',date:x.doneDate,st:'처리',nt:isNightTime(x.time)}); }); }); };
+  const pushVocDone=(empFilter)=>{ allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ const e=vocEmpAt(d,x), dd=vocDoneAt(d,x); if(e&&(!empFilter||e===empFilter)&&dd&&set.has(dd)) items.push({time:'',store:x.store,biz:x.storeId,emp:e,cat:'voc',date:dd,st:'처리',nt:isNightTime(x.time)}); }); }); };
   // 설치 OB — 시트 기준이라 상호·사업자·시각이 없다. 상태를 상호 칸에 넣어 무엇인지 알아보게 한다.
   // 야간 탭에서는 obItems 가 시각 정보를 못 주므로 아예 넣지 않는다(집계에서도 빠져 있어 숫자가 맞는다).
   const pushOb=(filter)=>{ if(ovShift==='night') return; obItems(dates).forEach(x=>{ if(filter&&!filter(x)) return; items.push({time:'',store:x.status||'(상태 미기재)',biz:'',emp:x.handler,cat:'ob',date:x._date,st:'처리',nt:false}); }); };
@@ -4678,7 +4679,7 @@ function showDoneDetail(mode, key){
   } else if(mode==='etc'){   // 미등록 담당자(미지정·타파트 지원 등) 전체
     title = '기타(미지정·타파트) 처리 상세';
     dates.forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(!EMPLOYEES.includes((x.emp||'').trim())) items.push({time:x.time,store:x.store,biz:x.biz,emp:x.emp||'미지정',cat:x.cat,date:d,st:'처리'}); }));
-    allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ if(x.doneDate&&set.has(x.doneDate)&&!EMPLOYEES.includes((x.emp||'').trim())) items.push({time:'',store:x.store,biz:x.storeId,emp:x.emp||'미지정',cat:'voc',date:x.doneDate,st:'처리',nt:isNightTime(x.time)}); }); });
+    allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ const e=vocEmpAt(d,x), dd=vocDoneAt(d,x); if(dd&&set.has(dd)&&!EMPLOYEES.includes((e||'').trim())) items.push({time:'',store:x.store,biz:x.storeId,emp:e||'미지정',cat:'voc',date:dd,st:'처리',nt:isNightTime(x.time)}); }); });
     pushOb(x=>!EMPLOYEES.includes((x.handler||'').trim()));
   } else { // 'all' = 원격 총 건수 (처리 + 설치 OB + 부재 + 확인필요)
     title = '원격 총 건수 상세';
@@ -4720,7 +4721,7 @@ function runStoreSearch(q){
   for(const d of allSlackDates()){ const dd=slackDay(d)||{};
     (dd.done||[]).forEach(x=>{ if(matchWork(x.store,x.biz)) rows.push({date:d,time:x.time,store:x.store,cat:x.cat,emp:x.emp,st:'처리',note:x.note||''}); });
     (dd.pending||[]).forEach(x=>{ if(matchWork(x.store,x.biz)){ const ab=(x.reasons||[]).some(r=>/부재/.test(r)); rows.push({date:d,time:x.time,store:x.store,cat:x.cat,emp:x.handler,st:ab?'부재':'확인필요',note:(x.reasons||[]).join(', ')}); } });
-    const v=dd.voc; if(v)(v.alerts||[]).forEach(x=>{ if((x.store&&x.store.toLowerCase().includes(ql))||(x.storeId&&String(x.storeId).toLowerCase().includes(ql))) rows.push({date:d,time:x.time,store:x.store,cat:'voc',emp:x.emp||x.autoEmp||'',st:vocDone(x.autoStatus||'')?'처리':'저점',note:x.autoNote||((x.reasons||[]).map(r=>r.text).filter(Boolean).join(' / '))}); });
+    const v=dd.voc; if(v)(v.alerts||[]).forEach(x=>{ if((x.store&&x.store.toLowerCase().includes(ql))||(x.storeId&&String(x.storeId).toLowerCase().includes(ql))) rows.push({date:d,time:x.time,store:x.store,cat:'voc',emp:vocEmpAt(d,x),st:vocDone(x.autoStatus||'')?'처리':'저점',note:x.autoNote||((x.reasons||[]).map(r=>r.text).filter(Boolean).join(' / '))}); });
   }
   if(!rows.length){ body.innerHTML=`<div class="empty-note">"${escapeHtml(q)}" 검색 결과가 없습니다.</div>`; return; }
   rows.sort((a,b)=>((b.date||'')+(b.time||'')).localeCompare((a.date||'')+(a.time||'')));
@@ -5005,7 +5006,16 @@ function barRow(name,val,max,color){
   return `<div class="bar-row"><div class="bar-meta"><span class="nm">${escapeHtml(name)}</span><span class="ct">${val}건</span></div>
     <div class="bar-track"><div class="bar-fill" style="width:${val/max*100}%;background:${color}"></div></div></div>`;
 }
-function vocKey(a){ return (a.date||'')+'|'+(a.storeId||'')+'|'+(a.time||''); }
+function vocKey(a){ return vocKeyOf(a.date, a); }
+// 집계 루프는 날짜별 원본 alert(x)을 도는데 x 에는 date 가 없다 → 순회 중인 날짜(d)로 같은 키를 만든다
+function vocKeyOf(d, x){ return (d||'')+'|'+(x.storeId||'')+'|'+(x.time||''); }
+// 처리 담당자 — 저점 표에서 직접 지정한 이름(VOCEDIT.emp)이 슬랙 자동 감지(emp/autoEmp)보다 우선한다
+function vocEmpAt(d, x){ const ed=VOCEDIT[vocKeyOf(d,x)]||{}; return ed.emp!=null?ed.emp:(x.emp||x.autoEmp||''); }
+function vocEmpOf(a){ return vocEmpAt(a.date, a); }
+// 완료일 — 슬랙 자동 완료일이 없으면 표에서 처리완료로 바꾼 날짜(doneAt)를 쓴다.
+// 이게 없으면 수기로 처리한 건은 완료일이 없어 직원별 VOC 처리 집계에 영원히 안 잡힌다.
+function vocDoneAt(d, x){ const ed=VOCEDIT[vocKeyOf(d,x)]||{}; return x.doneDate||ed.doneAt||''; }
+function vocDoneDateOf(a){ return vocDoneAt(a.date, a); }
 // 팀 공유 시 '남의 필드를 지우는' 사고를 막기 위한 패치 본문 생성.
 //
 // 서버는 patch 의 키 값을 통째로 대입한다 → 두 사람이 같은 건의 다른 필드
@@ -5022,11 +5032,29 @@ function fieldPatch(obj, field, val){
 function saveVocEdit(key, field, val){
   if(!VOCEDIT[key]) VOCEDIT[key]={};
   if(val==='') delete VOCEDIT[key][field]; else VOCEDIT[key][field]=val;
+  // 표에서 직접 처리완료로 바꾼 건은 슬랙 자동 완료일(doneDate)이 없다 → 바꾼 날짜를 완료일로 찍는다.
+  // 직원별 VOC 처리 집계가 '완료일 기준'이라, 이걸 안 찍으면 지정한 담당자 실적이 잡히지 않는다.
+  // 오적재는 처리 실적이 아니므로(vocVoid) 제외한다.
+  if(field==='status'){
+    if(vocDone(val)&&!vocVoid(val)){ if(!VOCEDIT[key].doneAt) VOCEDIT[key].doneAt=ymd(today()); }
+    else delete VOCEDIT[key].doneAt;
+  }
   const gone = Object.keys(VOCEDIT[key]).length===0;
   if(gone) delete VOCEDIT[key];
   save(LS_VOCEDIT, VOCEDIT);
   pushPatch({vocEdit:{[key]: gone ? '' : fieldPatch(VOCEDIT[key], field, val)}});
-  if(field==='reasonCat'||field==='status') renderVoc();   // 사유차트/상태이동 반영
+  if(field==='reasonCat'||field==='status'||field==='emp') renderVoc();   // 사유차트/상태이동/담당자 반영
+}
+// 담당자 드롭다운 — 직원 목록에 없는 사람은 '✏️ 직접 입력…' 으로 이름을 적어 지정한다.
+// 여기서 지정한 이름이 그 건의 처리 담당자가 되어 직원별 처리 집계에 반영된다.
+function pickVocEmp(key, val){
+  if(val==='__type__'){
+    const cur=(VOCEDIT[key]||{}).emp||'';
+    const name=(prompt('처리 담당자 이름을 입력하세요', cur)||'').trim();
+    if(!name){ renderVoc(); return; }   // 취소·공백 — 드롭다운을 원래 값으로 되돌린다
+    saveVocEdit(key,'emp',name); return;
+  }
+  saveVocEdit(key,'emp',val);
 }
 // 저점 매장 표의 한 행 (업종·저점이유·처리내용·상태 편집)
 function vocAlertRow(a){
@@ -5040,19 +5068,23 @@ function vocAlertRow(a){
   const reaSel=`<select class="voc-sel" onchange="saveVocEdit('${key}','reasonCat',this.value)"><option value="">미지정</option>${VOC_REASONS.map(x=>`<option value="${escapeHtml(x)}" ${x===reaVal?'selected':''}>${escapeHtml(x.split('(')[0])}</option>`).join('')}</select>`;
   const noteInput=`<input class="voc-note" type="text" value="${escapeHtml(note)}" placeholder="처리 내용 입력…" onchange="saveVocEdit('${key}','note',this.value)">`;
   const statSel=`<select class="voc-sel voc-stat ${vocStatColorCls(statVal)}" onchange="saveVocEdit('${key}','status',this.value)">${VOC_STATUSES.map(o=>`<option ${statVal===o?'selected':''}>${o}</option>`).join('')}</select>`;
+  // 담당자 — 직접 지정한 이름 우선, 없으면 슬랙 자동 감지값. 목록 밖 이름도 그대로 보여준다.
+  const empVal=vocEmpOf(a), doneDate=vocDoneDateOf(a);
+  const empSel=`<select class="voc-sel" onchange="pickVocEmp('${key}',this.value)"><option value=""${empVal?'':' selected'}>미지정</option>${EMPLOYEES.map(e=>`<option ${e===empVal?'selected':''}>${e}</option>`).join('')}${(empVal&&!EMPLOYEES.includes(empVal))?`<option selected>${escapeHtml(empVal)}</option>`:''}<option value="__type__">✏️ 직접 입력…</option></select>`;
   const searchKey=((a.store||'')+' '+(a.storeId||'')).toLowerCase();
   // 상세 팝업용 데이터 적재 (고객 원문 클릭 시 사용)
   VOCDETAIL[key]={ store:a.store||'-', storeId:a.storeId||'', time:a.time||'', date:a.date||'',
     score:(a.install!=null?'구매설치 '+a.install:'')+((a.install!=null&&a.nps!=null)?' · ':'')+(a.nps!=null?'추천 '+a.nps:''),
-    orig:(a.reasons||[]).map(r=>r.text||'').filter(Boolean), note:note, doneDate:a.doneDate||'', status:statVal, emp:a.autoEmp||a.emp||'' };
+    orig:(a.reasons||[]).map(r=>r.text||'').filter(Boolean), note:note, doneDate:doneDate, status:statVal, emp:empVal };
   return `<tr class="voc-alert-row" data-key="${searchKey}">
     <td class="trow-time">${a.time||''}${a.date?`<div class="voc-rawind">${fmtShort(a.date)}</div>`:''}</td>
-    <td class="emp-name">${escapeHtml(a.store||'-')}${a.storeId?`<span class="voc-storeid">${escapeHtml(String(a.storeId))}</span>`:''}${(vocDone(statVal)&&a.doneDate)?`<div class="voc-donedate">✓ ${fmtShort(a.doneDate)} 완료${a.autoEmp?' · '+escapeHtml(a.autoEmp):''}</div>`:''}${a.industry?`<div class="voc-rawind">원본: ${escapeHtml(a.industry)}</div>`:''}</td>
+    <td class="emp-name">${escapeHtml(a.store||'-')}${a.storeId?`<span class="voc-storeid">${escapeHtml(String(a.storeId))}</span>`:''}${(vocDone(statVal)&&doneDate)?`<div class="voc-donedate">✓ ${fmtShort(doneDate)} 완료${empVal?' · '+escapeHtml(empVal):''}</div>`:''}${a.industry?`<div class="voc-rawind">원본: ${escapeHtml(a.industry)}</div>`:''}</td>
     <td>${indSel}</td>
     <td class="num" style="color:var(--red);font-weight:800;white-space:nowrap">${score||'-'}</td>
     <td>${reaSel}</td>
     <td class="voc-rawtxt clickable" onclick="showVocDetail('${key}')" title="클릭 → 원문·처리날짜·처리내용 보기">${reasonTxt}</td>
     <td>${noteInput}</td>
+    <td>${empSel}</td>
     <td>${statSel}</td>
   </tr>`;
 }
@@ -5069,7 +5101,7 @@ function showVocDetail(key){
       <div class="vdt-sec"><div class="vdt-lab">📝 처리 내용${d.doneDate?` <span style="font-weight:600;color:var(--gray2);font-size:12px">(완료 ${fmtShort(d.doneDate)})</span>`:''}</div><div class="vdt-note">${d.note?escapeHtml(d.note):'<span class="vdt-empty">기입된 처리 내용이 없습니다</span>'}</div></div>
     </div></div>`;
 }
-const VOC_ALERT_HEAD=`<tr><th style="width:52px">시간</th><th style="min-width:110px">매장명</th><th style="width:140px">업종</th><th class="num" style="width:92px">저점</th><th style="width:150px">저점이유</th><th style="min-width:180px">고객 원문</th><th style="min-width:190px">처리 내용</th><th style="width:108px">상태</th></tr>`;
+const VOC_ALERT_HEAD=`<tr><th style="width:52px">시간</th><th style="min-width:110px">매장명</th><th style="width:140px">업종</th><th class="num" style="width:92px">저점</th><th style="width:150px">저점이유</th><th style="min-width:180px">고객 원문</th><th style="min-width:190px">처리 내용</th><th style="width:116px">담당자</th><th style="width:108px">상태</th></tr>`;
 // 저점 alert 정규화(매장명·업종·사유·저점내용·해결내용·상태) — renderVoc/먼슬리 공용
 function vocDone(s){ return s==='처리완료' || s==='OB필요없음' || s==='부재' || s==='통화거부' || vocVoid(s); }   // 확인필요에서 빠지는 상태 — 부재·통화거부도 처리완료로 간주
 // 오적재 = 설문이 잘못 적재된 건(우리 저점이 아님). 확인필요에서는 빠지되 '처리 실적'도 아니라서
@@ -5328,7 +5360,7 @@ function renderVoc(){
       ${pendingAlerts.length||v.alerts.length?`<input class="search-box" type="text" placeholder="매장명 또는 매장ID 검색…" oninput="filterVoc(this.value)">
       <div style="overflow-x:auto"><table class="voc-table" style="margin-top:12px">
         <thead>${VOC_ALERT_HEAD}</thead>
-        <tbody id="vocPendBody">${pendingAlerts.length?pendingAlerts.map(vocAlertRow).join(''):`<tr><td colspan="8" style="text-align:center;color:var(--gray2);padding:22px 0">처리중인 저점 건이 없습니다 👍</td></tr>`}</tbody>
+        <tbody id="vocPendBody">${pendingAlerts.length?pendingAlerts.map(vocAlertRow).join(''):`<tr><td colspan="9" style="text-align:center;color:var(--gray2);padding:22px 0">처리중인 저점 건이 없습니다 👍</td></tr>`}</tbody>
       </table></div>`:'<div class="empty-note">이 기간 저점 건이 없습니다 👍</div>'}
     </div>
 
@@ -6590,8 +6622,8 @@ function applySlackData(){
 function slackDay(date){ return (window.SLACK_DATA&&window.SLACK_DATA.days&&window.SLACK_DATA.days[date])||null; }
 function allSlackDates(){ return (window.SLACK_DATA&&window.SLACK_DATA.days)?Object.keys(window.SLACK_DATA.days).sort():[]; }
 // VOC 처리(완료)를 완료일(doneDate) 기준으로 집계 — 설문 원본 날짜와 무관
-function vocDoneByDay(){ const map={}; allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ if(x.emp&&x.doneDate) map[x.doneDate]=(map[x.doneDate]||0)+1; }); }); return map; }
-function vocDoneInRange(dates){ const set=new Set(dates); let cnt=0; const byEmp={}; allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ if(x.emp&&x.doneDate&&set.has(x.doneDate)){ cnt++; byEmp[x.emp]=(byEmp[x.emp]||0)+1; } }); }); return {cnt, byEmp}; }
+function vocDoneByDay(){ const map={}; allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ const dd=vocDoneAt(d,x); if(vocEmpAt(d,x)&&dd) map[dd]=(map[dd]||0)+1; }); }); return map; }
+function vocDoneInRange(dates){ const set=new Set(dates); let cnt=0; const byEmp={}; allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ const e=vocEmpAt(d,x), dd=vocDoneAt(d,x); if(e&&dd&&set.has(dd)){ cnt++; byEmp[e]=(byEmp[e]||0)+1; } }); }); return {cnt, byEmp}; }
 
 function seedShare(){
   const base=today();
