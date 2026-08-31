@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1321,
- "updatedAt": "2026-08-31 13:53",
+ "version": 1322,
+ "updatedAt": "2026-08-31 13:55",
  "days": 30,
  "items": [
   {
@@ -655,10 +655,11 @@ window.MENU_REQUESTS = {
    "datt": [],
    "replies": [
     "RM메일 인입건",
-    "어라... 잠시만요 !"
+    "어라... 잠시만요 !",
+    "제가 엑셀파일 잘못올렸슴다,,:man-bowing:"
    ],
-   "rc": 4,
-   "lr": "1788151980.296289",
+   "rc": 5,
+   "lr": "1788152088.125599",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -50472,30 +50473,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785576878491639"
-  },
-  {
-   "ts": "1785560092.025329",
-   "date": "2026-08-01",
-   "time": "13:54",
-   "store": "(주)이디피에스",
-   "biz": "3938600833",
-   "pos": "토스포스",
-   "content": "오픈초기라 글보다는 직접 소통하면서 전체적으로 수정하고자 합니다. 빠른 회신 부탁드립니다",
-   "special": "오프닝 메뉴 수정입니다",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "2차부재 솔라피",
-    "완료"
-   ],
-   "rc": 3,
-   "lr": "1785565540.018799",
-   "rfx": 3,
-   "status": "done",
-   "handler": "송태양",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785560092025329"
   }
  ],
  "ocr": {
