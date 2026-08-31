@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1311,
- "updatedAt": "2026-08-31 11:53",
+ "version": 1312,
+ "updatedAt": "2026-08-31 11:54",
  "days": 30,
  "items": [
   {
@@ -49309,30 +49309,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "송태양",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785560092025329"
-  },
-  {
-   "ts": "1785552823.909339",
-   "date": "2026-08-01",
-   "time": "11:53",
-   "store": "(주)이디피에스",
-   "biz": "3938600833",
-   "pos": "",
-   "content": "테이블 생성 요청  / 테이블 비우기 사전 안내",
-   "special": "",
-   "drive": [],
-   "files": 1,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "오늘 이내 테이블 등록 안내 / 제가 하려고 했는데 어려워 전달드립니다. 부탁드립니다 ㅠㅠ !",
-    "태양님 여기 시간되실때 한번 부탁드립니다..! 테이블 비우기 안내 했으나, 기존 테이블 삭제 안됨 이슈...."
-   ],
-   "rc": 4,
-   "lr": "1785559292.816189",
-   "rfx": 3,
-   "status": "done",
-   "handler": "송태양",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785552823909339"
   }
  ],
  "ocr": {
