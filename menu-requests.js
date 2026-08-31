@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1356,
- "updatedAt": "2026-08-31 17:06",
+ "version": 1357,
+ "updatedAt": "2026-08-31 17:10",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "KakaoTalk_20260831_170021950_07.jpg",
      "fid": "F0BTP630XMK",
      "from": "댓글",
-     "path": "menu-files/1788163287_128769-0.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -71,13 +70,13 @@ window.MENU_REQUESTS = {
        "name": "사이다",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1788163287_128769-0.jpg"
     },
     {
      "name": "KakaoTalk_20260831_170021950_06.jpg",
      "fid": "F0BTM2K132P",
      "from": "댓글",
-     "path": "menu-files/1788163287_128769-1.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -110,13 +109,13 @@ window.MENU_REQUESTS = {
        "name": "사와",
        "price": 6500
       }
-     ]
+     ],
+     "path": "menu-files/1788163287_128769-1.jpg"
     },
     {
      "name": "KakaoTalk_20260831_170021950_05.jpg",
      "fid": "F0BUMLNTSL8",
      "from": "댓글",
-     "path": "menu-files/1788163287_128769-2.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -149,13 +148,13 @@ window.MENU_REQUESTS = {
        "name": "새로",
        "price": 4500
       }
-     ]
+     ],
+     "path": "menu-files/1788163287_128769-2.jpg"
     },
     {
      "name": "KakaoTalk_20260831_170021950_03.jpg",
      "fid": "F0BTT8WUMTL",
      "from": "댓글",
-     "path": "menu-files/1788163287_128769-3.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -198,13 +197,13 @@ window.MENU_REQUESTS = {
        "name": "대선",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1788163287_128769-3.jpg"
     },
     {
      "name": "KakaoTalk_20260831_170021950_04.jpg",
      "fid": "F0BTRBLHY94",
      "from": "댓글",
-     "path": "menu-files/1788163287_128769-4.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -237,13 +236,13 @@ window.MENU_REQUESTS = {
        "name": "비빔우동",
        "price": 5000
       }
-     ]
+     ],
+     "path": "menu-files/1788163287_128769-4.jpg"
     },
     {
      "name": "KakaoTalk_20260831_170021950_02.jpg",
      "fid": "F0BTX06T55J",
      "from": "댓글",
-     "path": "menu-files/1788163287_128769-5.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -276,7 +275,8 @@ window.MENU_REQUESTS = {
        "name": "오뎅탕 중짜",
        "price": 9000
       }
-     ]
+     ],
+     "path": "menu-files/1788163287_128769-5.jpg"
     },
     {
      "name": "KakaoTalk_20260831_170021950_01.jpg",
@@ -385,10 +385,10 @@ window.MENU_REQUESTS = {
    ],
    "datt": [],
    "replies": [],
-   "rc": 3,
-   "lr": "1788163445.054039",
+   "rc": 4,
+   "lr": "1788163666.630599",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788163287128769"
   },
