@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1293,
- "updatedAt": "2026-08-31 09:43",
+ "version": 1294,
+ "updatedAt": "2026-08-31 09:44",
  "days": 30,
  "items": [
   {
@@ -20,12 +20,14 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1788137001.480379",
+   "replies": [
+    "• 돼지불백 11,000원에서 12,000원으로 변경"
+   ],
+   "rc": 2,
+   "lr": "1788137017.927089",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788136998156179"
   },
   {
