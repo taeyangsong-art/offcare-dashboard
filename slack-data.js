@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6944,
+  "version": 6945,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145663,7 +145663,8 @@ window.SLACK_DATA = {
           "송태양": 9,
           "심성현": 15,
           "배선유": 8,
-          "고경림": 6
+          "고경림": 6,
+          "김동욱": 1
         },
         "extern": {
           "송태양": 1,
@@ -145673,9 +145674,9 @@ window.SLACK_DATA = {
         },
         "onboarding": {
           "김현기": 2,
+          "김동욱": 3,
           "고경림": 3,
-          "김규빈": 1,
-          "김동욱": 2
+          "김규빈": 1
         },
         "transfer": {
           "송태양": 3,
@@ -145697,28 +145698,6 @@ window.SLACK_DATA = {
           "handler": "김동욱",
           "cat": "as",
           "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "11:34",
-          "store": "보라필라테스",
-          "biz": "5360104365",
-          "handler": "김동욱",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "10:05",
-          "store": "컴포즈_본사테스트",
-          "biz": "5218102386",
-          "handler": "김동욱",
-          "cat": "as",
-          "intake": "offline",
           "reasons": [
             "확인 후 미완료"
           ]
@@ -145934,6 +145913,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
+        },
+        {
+          "time": "11:34",
+          "store": "보라필라테스",
+          "biz": "5360104365",
+          "cat": "onboarding",
+          "emp": "김동욱",
+          "req": "토스포스에 프론트가 다른 매장에 연결되어 있다며 연결이 되지 않음으로 연락 주셨습니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포프유프(휴대폰) 온보딩 완료"
         },
         {
           "time": "11:34",
@@ -146257,6 +146247,17 @@ window.SLACK_DATA = {
           "note": ""
         },
         {
+          "time": "10:05",
+          "store": "컴포즈_본사테스트",
+          "biz": "5218102386",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "프론트 + 프론트캠 온보딩 요청 부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "프론트가 키오스크 리더기로 붙어있어요 / 프론트캠 설치 완료"
+        },
+        {
           "time": "10:00",
           "store": "더채움 스킨앤바디",
           "biz": "2971802887",
@@ -146572,7 +146573,7 @@ window.SLACK_DATA = {
         "offline": 14,
         "unknown": 0
       },
-      "updatedAt": "12:52",
+      "updatedAt": "12:56",
       "voc": {
         "responses": 2,
         "install": {
@@ -146676,7 +146677,7 @@ window.SLACK_DATA = {
       },
       "1788138906.847629": {
         "post": "1788138906.847629",
-        "lastSeen": 1788148400.023
+        "lastSeen": 1788148641.602
       },
       "1788142500.935479": {
         "post": "1788142500.935479",
@@ -146689,6 +146690,10 @@ window.SLACK_DATA = {
       "1788146214.835619": {
         "post": "1788146214.835619",
         "lastSeen": 1788148162.195
+      },
+      "1788148599.042309": {
+        "post": "1788148599.042309",
+        "lastSeen": 1788148641.602
       }
     },
     "days": {
@@ -183628,7 +183633,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 12:53",
+    "at": "2026-08-31 12:57",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
