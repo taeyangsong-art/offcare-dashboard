@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1301,
- "updatedAt": "2026-08-31 11:11",
+ "version": 1302,
+ "updatedAt": "2026-08-31 11:12",
  "days": 30,
  "items": [
   {
@@ -18,13 +18,91 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BTTD5L0KB",
+     "from": "댓글",
+     "path": "menu-files/1788139402_014799-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "브런치&Etc",
+       "name": "팜 플레이트",
+       "price": 20000
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "아사다 프라이즈",
+       "price": 19000
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "베이컨에그베네딕트",
+       "price": 16900
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "미트 우오바",
+       "price": 21000
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "연어에그베네딕트",
+       "price": 17500
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "로띠바카르",
+       "price": 17500
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "브리치즈 감바스",
+       "price": 21000
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "해물 우오바",
+       "price": 21000
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "크리스피 치킨",
+       "price": 21000
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "단호박크림스프",
+       "price": 7000
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "치즈닭갈비",
+       "price": 21000
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "마른 안주",
+       "price": 25000
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "밥추가",
+       "price": 2500
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [
-    "님, 안녕하세요!\n바쁘신데 죄송합니다만, 혹시 위 매장 메뉴 등록 완료 된 상태 맞을까요? :꾸벅:"
+    "님, 안녕하세요!\n바쁘신데 죄송합니다만, 혹시 위 매장 메뉴 등록 완료 된 상태 맞을까요? :꾸벅:",
+    "넹~ 뚝딱했쥬",
+    "재시작 안내 부탁드려융",
+    "오더에도 쓸것같아서 키오스크상품관리에도 다 넣어놨어영"
    ],
-   "rc": 2,
-   "lr": "1788142273.847729",
+   "rc": 5,
+   "lr": "1788142331.938679",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
@@ -2657,8 +2735,8 @@ window.MENU_REQUESTS = {
     "삼계탕 카테고리의\n런치2종삭제\n\n비빔밥 카테고리의\n런치2종삭제\n\n(포스/키오스크 모두 삭제 필요)",
     "메뉴가격 수정 추가2건\n\n불고기비빔밥(고기2배)\n14900\n\n오당비빔밥(오징어2배)\n14900"
    ],
-   "rc": 6,
-   "lr": "1788140873.252669",
+   "rc": 7,
+   "lr": "1788142345.928069",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
