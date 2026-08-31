@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1310,
- "updatedAt": "2026-08-31 11:50",
+ "version": 1311,
+ "updatedAt": "2026-08-31 11:53",
  "days": 30,
  "items": [
+  {
+   "ts": "1788144773.390649",
+   "date": "2026-08-31",
+   "time": "11:52",
+   "store": "계부자",
+   "biz": "3460603093",
+   "pos": "퍼스트포스",
+   "content": "금액 수정 부탁 드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "주류음료 카테고리\n소주 4000원\n맥주 4000원\n으로 가격변경 부탁 드립니다."
+   ],
+   "rc": 2,
+   "lr": "1788144785.352319",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788144773390649"
+  },
   {
    "ts": "1788143729.837129",
    "date": "2026-08-31",
@@ -237,7 +260,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BTKD60MD1",
      "from": "댓글",
-     "path": "menu-files/1788139402_014799-1.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -320,7 +342,8 @@ window.MENU_REQUESTS = {
        "name": "소 화식",
        "price": 4000
       }
-     ]
+     ],
+     "path": "menu-files/1788139402_014799-1.png"
     }
    ],
    "datt": [],
@@ -330,10 +353,11 @@ window.MENU_REQUESTS = {
     "재시작 안내 부탁드려융",
     "오더에도 쓸것같아서 키오스크상품관리에도 다 넣어놨어영",
     "님, 안녕하세요.\n여기 재부팅 이후에도 메뉴 안보인다고 하시어 확인 한번만 부탁 드립니다ㅠㅠ",
-    "제가 전화드리겟습ㄴ디ㅏ"
+    "제가 전화드리겟습ㄴ디ㅏ",
+    ":전화해: 완료"
    ],
-   "rc": 7,
-   "lr": "1788144602.459949",
+   "rc": 8,
+   "lr": "1788144801.005499",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
