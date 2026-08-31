@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6936,
+  "version": 6937,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145691,6 +145691,17 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "11:34",
+          "store": "보라필라테스",
+          "biz": "5360104365",
+          "handler": "김동욱",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
           "time": "10:05",
           "store": "컴포즈_본사테스트",
           "biz": "5218102386",
@@ -146502,11 +146513,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 60,
+        "online": 61,
         "offline": 13,
         "unknown": 0
       },
-      "updatedAt": "12:31",
+      "updatedAt": "12:34",
       "voc": {
         "responses": 2,
         "install": {
@@ -146610,7 +146621,7 @@ window.SLACK_DATA = {
       },
       "1788138906.847629": {
         "post": "1788138906.847629",
-        "lastSeen": 1788147201.169
+        "lastSeen": 1788147383.253
       },
       "1788142500.935479": {
         "post": "1788142500.935479",
@@ -146618,11 +146629,11 @@ window.SLACK_DATA = {
       },
       "1788146217.719569": {
         "post": "1788146217.719569",
-        "lastSeen": 1788147201.169
+        "lastSeen": 1788147383.253
       },
       "1788146214.835619": {
         "post": "1788146214.835619",
-        "lastSeen": 1788147201.169
+        "lastSeen": 1788147383.253
       }
     },
     "days": {
@@ -183554,7 +183565,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 12:33",
+    "at": "2026-08-31 12:36",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
