@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6937,
+  "version": 6938,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145658,7 +145658,7 @@ window.SLACK_DATA = {
     "2026-08-31": {
       "counts": {
         "as": {
-          "심성현": 14,
+          "심성현": 15,
           "김규빈": 4,
           "송태양": 8,
           "김현기": 6,
@@ -145735,6 +145735,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "• 땡겨요설치 완료 땡겨요설치 완료"
+        },
+        {
+          "time": "12:19",
+          "store": "클라우든커피 (Clouden coffee)",
+          "biz": "2408101983",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포스(태블릿)+프론트+유프 연동 요청 주셨습니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "10분 뒤 통화 요청 / 태블릿 추후 회수 예정 안내 및 포장 요청 완료 / 온보딩 출력 테스트 완료"
         },
         {
           "time": "12:16",
@@ -146513,7 +146524,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 61,
+        "online": 62,
         "offline": 13,
         "unknown": 0
       },
@@ -146621,7 +146632,7 @@ window.SLACK_DATA = {
       },
       "1788138906.847629": {
         "post": "1788138906.847629",
-        "lastSeen": 1788147383.253
+        "lastSeen": 1788147742.011
       },
       "1788142500.935479": {
         "post": "1788142500.935479",
@@ -146629,11 +146640,11 @@ window.SLACK_DATA = {
       },
       "1788146217.719569": {
         "post": "1788146217.719569",
-        "lastSeen": 1788147383.253
+        "lastSeen": 1788147742.011
       },
       "1788146214.835619": {
         "post": "1788146214.835619",
-        "lastSeen": 1788147383.253
+        "lastSeen": 1788147742.011
       }
     },
     "days": {
@@ -183565,7 +183576,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 12:36",
+    "at": "2026-08-31 12:42",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
