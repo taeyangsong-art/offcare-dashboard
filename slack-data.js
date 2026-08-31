@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6929,
+  "version": 6930,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -146450,7 +146450,7 @@ window.SLACK_DATA = {
         "offline": 13,
         "unknown": 0
       },
-      "updatedAt": "12:19",
+      "updatedAt": "12:21",
       "voc": {
         "responses": 2,
         "install": {
@@ -146554,7 +146554,7 @@ window.SLACK_DATA = {
       },
       "1788138906.847629": {
         "post": "1788138906.847629",
-        "lastSeen": 1788146420.354
+        "lastSeen": 1788146539.881
       },
       "1788142500.935479": {
         "post": "1788142500.935479",
@@ -146562,15 +146562,11 @@ window.SLACK_DATA = {
       },
       "1788146217.719569": {
         "post": "1788146217.719569",
-        "lastSeen": 1788146420.354
+        "lastSeen": 1788146539.881
       },
       "1788146214.835619": {
         "post": "1788146214.835619",
-        "lastSeen": 1788146420.354
-      },
-      "1788146376.146889": {
-        "post": "1788146376.146889",
-        "lastSeen": 1788146420.354
+        "lastSeen": 1788146539.881
       }
     },
     "days": {
@@ -183181,8 +183177,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-31": {
-        "cnt": 38,
-        "sumMin": 153.71365761756894,
+        "cnt": 39,
+        "sumMin": 155.44650113582608,
         "over": 0,
         "items": [
           {
@@ -183488,13 +183484,21 @@ window.SLACK_DATA = {
             "biz": "2971802887",
             "who": "송태양",
             "cat": "as"
+          },
+          {
+            "hm": "12:19",
+            "min": 1.7,
+            "store": "클라우든커피 (Clouden coffee)",
+            "biz": "2408101983",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-31 12:20",
+    "at": "2026-08-31 12:22",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
