@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6851,
+  "version": 6852,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145672,7 +145672,19 @@ window.SLACK_DATA = {
           "배선유": 2
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "09:00",
+          "store": "포토미 사진관",
+          "biz": "",
+          "handler": "김동욱",
+          "cat": "transfer",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "done": [
         {
           "time": "09:52",
@@ -145853,11 +145865,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 13,
+        "online": 14,
         "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "09:53",
+      "updatedAt": "10:00",
       "voc": {
         "responses": 1,
         "install": {
@@ -145949,6 +145961,18 @@ window.SLACK_DATA = {
       "1788001134.838139": {
         "post": "1788001134.838139",
         "lastSeen": 1788001233.557
+      },
+      "1788138006.913339": {
+        "post": "1788138006.913339",
+        "lastSeen": 1788138022.184
+      },
+      "1788138005.734579": {
+        "post": "1788138005.734579",
+        "lastSeen": 1788138022.184
+      },
+      "1788138005.532119": {
+        "post": "1788138005.532119",
+        "lastSeen": 1788138022.184
       }
     },
     "days": {
@@ -182664,7 +182688,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 09:58",
+    "at": "2026-08-31 10:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
