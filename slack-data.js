@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6861,
+  "version": 6862,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145657,15 +145657,16 @@ window.SLACK_DATA = {
     },
     "2026-08-31": {
       "counts": {
+        "extern": {
+          "배선유": 1,
+          "서상원": 1
+        },
         "as": {
           "송태양": 4,
           "심성현": 4,
           "고경림": 3,
           "김현기": 2,
           "배선유": 2
-        },
-        "extern": {
-          "서상원": 1
         },
         "onboarding": {
           "고경림": 2,
@@ -145694,6 +145695,17 @@ window.SLACK_DATA = {
       ],
       "done": [
         {
+          "time": "10:13",
+          "store": "브에르헤어 청북점",
+          "biz": "1023194754",
+          "cat": "extern",
+          "emp": "배선유",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": "tid 생성 상호명: 브에르헤어 청북점 사업자번호: 1023194754 주소지: 경기도 평택시 VAN: KPN 내용: 토플파 TID 등록 요청드립니다. 현장설치 중입니다!"
+        },
+        {
           "time": "10:10",
           "store": "위드베이커리(With bakery)",
           "biz": "7147500577",
@@ -145703,7 +145715,7 @@ window.SLACK_DATA = {
           "hw": "",
           "urgent": true,
           "intake": "online",
-          "note": ""
+          "note": "• 현재는 정상부팅 • 교체 안내 및 입출고 접수 완료입니다 현재는 정상부팅 교체 안내 및 입출고 접수 완료입니다"
         },
         {
           "time": "10:08",
@@ -145961,11 +145973,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 22,
+        "online": 23,
         "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "10:15",
+      "updatedAt": "10:16",
       "voc": {
         "responses": 1,
         "install": {
@@ -146060,7 +146072,15 @@ window.SLACK_DATA = {
       },
       "1788138906.847629": {
         "post": "1788138906.847629",
-        "lastSeen": 1788138919.206
+        "lastSeen": 1788139087.279
+      },
+      "1788139015.588869": {
+        "post": "1788139015.588869",
+        "lastSeen": 1788139087.279
+      },
+      "1788139000.387999": {
+        "post": "1788139000.387999",
+        "lastSeen": 1788139087.279
       }
     },
     "days": {
@@ -182832,7 +182852,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 10:15",
+    "at": "2026-08-31 10:18",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

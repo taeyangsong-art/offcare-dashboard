@@ -3,10 +3,359 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1295,
- "updatedAt": "2026-08-31 09:45",
+ "version": 1296,
+ "updatedAt": "2026-08-31 10:18",
  "days": 30,
  "items": [
+  {
+   "ts": "1788139000.387999",
+   "date": "2026-08-31",
+   "time": "10:16",
+   "store": "래빗캐슬",
+   "biz": "8463101321",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "IMG_7598.png",
+     "fid": "F0BTUUNKB8U",
+     "from": "댓글",
+     "path": "menu-files/1788139000_387999-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "칵테일, 맥주",
+       "name": "하이트 제로 (무알콜맥주)",
+       "price": 5000
+      },
+      {
+       "category": "칵테일, 맥주",
+       "name": "사랑할때",
+       "price": 9000
+      },
+      {
+       "category": "보틀 와인",
+       "name": "콘도르 픽 까베르네 소비뇽",
+       "price": 32000
+      },
+      {
+       "category": "보틀 와인",
+       "name": "1808 비뉴베르드",
+       "price": 38000
+      },
+      {
+       "category": "보틀 와인",
+       "name": "카보다 로카 리스보아 로제",
+       "price": 40000
+      },
+      {
+       "category": "보틀 와인",
+       "name": "카보다 로카 리스보아",
+       "price": 40000
+      },
+      {
+       "category": "보틀 와인",
+       "name": "발비 소프라니 모스카토 다스티",
+       "price": 42000
+      },
+      {
+       "category": "보틀 와인",
+       "name": "오싸 투리가 나시오날 레드",
+       "price": 48000
+      },
+      {
+       "category": "보틀 와인",
+       "name": "1808 피노누아 레드",
+       "price": 59000
+      },
+      {
+       "category": "보틀 와인",
+       "name": "몬테 카스카스 리제르바 도루 레드",
+       "price": 65000
+      },
+      {
+       "category": "보틀 와인",
+       "name": "콜키지",
+       "price": 20000
+      },
+      {
+       "category": "직원호출",
+       "name": "소중한 직원호출",
+       "price": 0
+      },
+      {
+       "category": "직원호출",
+       "name": "피클(요청시 제공)",
+       "price": 0
+      },
+      {
+       "category": "직원호출",
+       "name": "물",
+       "price": 0
+      },
+      {
+       "category": "직원호출",
+       "name": "앞치마",
+       "price": 0
+      },
+      {
+       "category": "직원호출",
+       "name": "소주잔",
+       "price": 0
+      },
+      {
+       "category": "직원호출",
+       "name": "집게",
+       "price": 0
+      },
+      {
+       "category": "직원호출",
+       "name": "젓가락",
+       "price": 0
+      },
+      {
+       "category": "직원호출",
+       "name": "맥주잔",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "IMG_7597.png",
+     "fid": "F0BT9TEU171",
+     "from": "댓글",
+     "path": "menu-files/1788139000_387999-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "음료",
+       "name": "아이스 아메리카노",
+       "price": 3500
+      },
+      {
+       "category": "음료",
+       "name": "따뜻한 카페 라떼",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "아이스 카페 라떼",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "따뜻한 아메리카노(리필)",
+       "price": 0
+      },
+      {
+       "category": "음료",
+       "name": "아이스 아메리카노(리필)",
+       "price": 0
+      },
+      {
+       "category": "음료",
+       "name": "논알콜 썬라이즈",
+       "price": 7000
+      },
+      {
+       "category": "음료",
+       "name": "레몬 에이드",
+       "price": 6000
+      },
+      {
+       "category": "음료",
+       "name": "자몽 에이드",
+       "price": 6000
+      },
+      {
+       "category": "음료",
+       "name": "청포도 에이드",
+       "price": 6000
+      },
+      {
+       "category": "음료",
+       "name": "탄산수",
+       "price": 5000
+      },
+      {
+       "category": "음료",
+       "name": "코카콜라",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "제로콜라",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "스프라이트",
+       "price": 4000
+      },
+      {
+       "category": "잔 와인",
+       "name": "하우스 와인 (Dry Red)",
+       "price": 10000
+      },
+      {
+       "category": "잔 와인",
+       "name": "하우스 와인 (Dry White)",
+       "price": 11000
+      },
+      {
+       "category": "잔 와인",
+       "name": "하우스 와인 (Sweet White)",
+       "price": 12000
+      },
+      {
+       "category": "칵테일, 맥주",
+       "name": "진저 하이볼",
+       "price": 9000
+      },
+      {
+       "category": "칵테일, 맥주",
+       "name": "틴토 데 베라노",
+       "price": 12000
+      },
+      {
+       "category": "칵테일, 맥주",
+       "name": "핑크 소다",
+       "price": 14000
+      },
+      {
+       "category": "칵테일, 맥주",
+       "name": "1664 블랑 생맥주",
+       "price": 9000
+      }
+     ]
+    },
+    {
+     "name": "IMG_7596.png",
+     "fid": "F0BTM5DBZ8D",
+     "from": "댓글",
+     "path": "menu-files/1788139000_387999-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "서비스",
+       "name": "한입 티라미수(요청시 제공됩니다)",
+       "price": 0
+      },
+      {
+       "category": "서비스",
+       "name": "곁들임 빵(리뷰이벤트)",
+       "price": 1000
+      },
+      {
+       "category": "서비스",
+       "name": "피클(요청시 제공됩니다)",
+       "price": 0
+      },
+      {
+       "category": "야심작",
+       "name": "뽀모도로 토마토 파스타",
+       "price": 17000
+      },
+      {
+       "category": "야심작",
+       "name": "명란 먹물 스파게티",
+       "price": 18000
+      },
+      {
+       "category": "야심작",
+       "name": "씨푸드 오일 파스타",
+       "price": 18000
+      },
+      {
+       "category": "야심작",
+       "name": "라따뚜이 뇨끼",
+       "price": 19000
+      },
+      {
+       "category": "야심작",
+       "name": "새우 크림 파스타",
+       "price": 18000
+      },
+      {
+       "category": "야심작",
+       "name": "비스큐 파스타",
+       "price": 19000
+      },
+      {
+       "category": "야심작",
+       "name": "볼로네제",
+       "price": 20000
+      },
+      {
+       "category": "야심작",
+       "name": "키즈 볼로네제(만 14세 미만)",
+       "price": 16000
+      },
+      {
+       "category": "야심작",
+       "name": "버섯 크림 라비올리",
+       "price": 21000
+      },
+      {
+       "category": "야심작",
+       "name": "시칠리아 풍 해산물 리조또",
+       "price": 18000
+      },
+      {
+       "category": "야심작",
+       "name": "트러플 리조또",
+       "price": 19000
+      },
+      {
+       "category": "야심작",
+       "name": "페스카토레 피자",
+       "price": 25000
+      },
+      {
+       "category": "야심작",
+       "name": "포레스트 피자",
+       "price": 26000
+      },
+      {
+       "category": "야심작",
+       "name": "부채살 스테이크",
+       "price": 39000
+      },
+      {
+       "category": "사이드",
+       "name": "곁들임 빵",
+       "price": 5000
+      },
+      {
+       "category": "사이드",
+       "name": "베이컨 포테이토 수프",
+       "price": 8000
+      },
+      {
+       "category": "사이드",
+       "name": "리코타 치즈 샐러드",
+       "price": 10000
+      },
+      {
+       "category": "음료",
+       "name": "따뜻한 아메리카노",
+       "price": 3500
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1788139020.799559",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788139000387999"
+  },
   {
    "ts": "1788136998.156179",
    "date": "2026-08-31",
