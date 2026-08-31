@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6942,
+  "version": 6943,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145659,9 +145659,9 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김규빈": 5,
+          "김현기": 7,
           "송태양": 9,
           "심성현": 15,
-          "김현기": 6,
           "배선유": 8,
           "고경림": 6
         },
@@ -145735,6 +145735,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "9월 1일로 연기하셨다고함 재예약"
+        },
+        {
+          "time": "12:34",
+          "store": "날마다 꽃",
+          "biz": "3909301452",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "포프(핸드폰) 재온보딩 중 연동이 어렵다고 하셔서 원격 도움 부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "개인소유 아이폰 재온보딩 완료"
         },
         {
           "time": "12:31",
@@ -146558,7 +146569,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 65,
-        "offline": 13,
+        "offline": 14,
         "unknown": 0
       },
       "updatedAt": "12:47",
@@ -146665,7 +146676,7 @@ window.SLACK_DATA = {
       },
       "1788138906.847629": {
         "post": "1788138906.847629",
-        "lastSeen": 1788148102.915
+        "lastSeen": 1788148162.195
       },
       "1788142500.935479": {
         "post": "1788142500.935479",
@@ -146673,11 +146684,11 @@ window.SLACK_DATA = {
       },
       "1788146217.719569": {
         "post": "1788146217.719569",
-        "lastSeen": 1788148102.915
+        "lastSeen": 1788148162.195
       },
       "1788146214.835619": {
         "post": "1788146214.835619",
-        "lastSeen": 1788148102.915
+        "lastSeen": 1788148162.195
       }
     },
     "days": {
@@ -183617,13 +183628,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 12:48",
+    "at": "2026-08-31 12:49",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3790,
+    "rows": 3791,
     "named": 490,
     "unknownName": 0,
     "beforeStart": 0,
