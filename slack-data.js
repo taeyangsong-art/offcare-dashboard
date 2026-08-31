@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6882,
+  "version": 6883,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145676,6 +145676,7 @@ window.SLACK_DATA = {
           "김동욱": 2
         },
         "transfer": {
+          "김동욱": 1,
           "송태양": 2
         },
         "menu": {
@@ -145683,19 +145684,7 @@ window.SLACK_DATA = {
           "김규빈": 1
         }
       },
-      "pending": [
-        {
-          "time": "09:53",
-          "store": "허니농원",
-          "biz": "",
-          "handler": "김동욱",
-          "cat": "transfer",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
         {
           "time": "10:52",
@@ -145896,6 +145885,18 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "터미널 tid값 잘못 들어가 있어서 공초 후 정ㅈ상"
+        },
+        {
+          "time": "09:53",
+          "store": "허니농원",
+          "biz": "",
+          "cat": "transfer",
+          "emp": "김동욱",
+          "req": "8월 31일 지금 바로 / 메뉴 복사 O / 터프",
+          "hw": "",
+          "urgent": true,
+          "intake": "online",
+          "note": "터프 명의변경 완료"
         },
         {
           "time": "09:52",
@@ -146146,7 +146147,7 @@ window.SLACK_DATA = {
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "10:55",
+      "updatedAt": "11:00",
       "voc": {
         "responses": 2,
         "install": {
@@ -146250,7 +146251,15 @@ window.SLACK_DATA = {
       },
       "1788138906.847629": {
         "post": "1788138906.847629",
-        "lastSeen": 1788141562.877
+        "lastSeen": 1788141622.051
+      },
+      "1788141601.564499": {
+        "post": "1788141601.564499",
+        "lastSeen": 1788141622.051
+      },
+      "1788141600.343609": {
+        "post": "1788141600.343609",
+        "lastSeen": 1788141622.051
       }
     },
     "days": {
@@ -183086,7 +183095,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 10:59",
+    "at": "2026-08-31 11:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
