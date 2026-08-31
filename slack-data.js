@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6838,
+  "version": 6839,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145658,9 +145658,9 @@ window.SLACK_DATA = {
     "2026-08-31": {
       "counts": {
         "as": {
+          "배선유": 2,
           "김현기": 1,
           "송태양": 2,
-          "배선유": 1,
           "심성현": 1
         },
         "menu": {
@@ -145669,6 +145669,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:28",
+          "store": "착한통닭",
+          "biz": "8805400786",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "포스기/ 화면 먹통으로 터치 안되는 증상 반복/ 교체 언급으로 지원 부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "결제 시 멈춤 / 이번 업데이트 사항 / 최신버전 업데이트"
+        },
         {
           "time": "09:21",
           "store": "엠투파크골프 정릉점",
@@ -145738,10 +145749,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 5,
-        "offline": 1,
+        "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:30",
+      "updatedAt": "09:38",
       "voc": {
         "responses": 1,
         "install": {
@@ -145836,7 +145847,11 @@ window.SLACK_DATA = {
       },
       "1788136202.747429": {
         "post": "1788136202.747429",
-        "lastSeen": 1788136579.653
+        "lastSeen": 1788136702.335
+      },
+      "1788136684.427989": {
+        "post": "1788136684.427989",
+        "lastSeen": 1788136702.335
       }
     },
     "days": {
@@ -182488,7 +182503,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 09:36",
+    "at": "2026-08-31 09:38",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
