@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1369,
- "updatedAt": "2026-08-31 22:57",
+ "version": 1370,
+ "updatedAt": "2026-08-31 23:45",
  "days": 30,
  "items": [
   {
@@ -66,7 +66,6 @@ window.MENU_REQUESTS = {
      "name": "i_73396b790412.jpg",
      "fid": "F0BTPSCHT37",
      "from": "댓글",
-     "path": "menu-files/1788169387_808579-0.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -204,18 +203,19 @@ window.MENU_REQUESTS = {
        "name": "공기밥",
        "price": 1000
       }
-     ]
+     ],
+     "path": "menu-files/1788169387_808579-0.jpg"
     }
    ],
    "datt": [],
    "replies": [
     "사진 메뉴 그대로. 똑같은 순서에 곱자만 붙혀주시고 밥 곱배기 카테고리에 생성 부탁 드립니다.\n금액은 직접 수정하신다고 하시어 메뉴 생성만 부탁 드립니다."
    ],
-   "rc": 2,
-   "lr": "1788169439.876459",
+   "rc": 3,
+   "lr": "1788187401.529339",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788169387808579"
   },
   {
