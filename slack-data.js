@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6918,
+  "version": 6919,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145657,18 +145657,18 @@ window.SLACK_DATA = {
     },
     "2026-08-31": {
       "counts": {
-        "extern": {
-          "서상원": 4,
-          "김동욱": 1,
-          "배선유": 1
-        },
         "as": {
+          "송태양": 6,
           "배선유": 8,
           "고경림": 6,
           "심성현": 12,
           "김규빈": 2,
-          "김현기": 4,
-          "송태양": 5
+          "김현기": 4
+        },
+        "extern": {
+          "서상원": 4,
+          "김동욱": 1,
+          "배선유": 1
         },
         "onboarding": {
           "고경림": 3,
@@ -145702,6 +145702,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "12:00",
+          "store": "에떼스튜디오(ete-studio)",
+          "biz": "6731402502",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "포프 온보딩 지원 요청드립니다. (연결하려는 기기 확인 불가..)",
+          "hw": "",
+          "intake": "online",
+          "note": "• 금일 5시 45분 예약요청으로 예약 완료입니다 금일 5시 45분 예약요청으로 예약 완료입니다"
+        },
         {
           "time": "11:52",
           "store": "계부자",
@@ -146380,11 +146391,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 51,
+        "online": 52,
         "offline": 11,
         "unknown": 0
       },
-      "updatedAt": "12:00",
+      "updatedAt": "12:01",
       "voc": {
         "responses": 2,
         "install": {
@@ -146488,7 +146499,7 @@ window.SLACK_DATA = {
       },
       "1788138906.847629": {
         "post": "1788138906.847629",
-        "lastSeen": 1788145224.178
+        "lastSeen": 1788145404.111
       },
       "1788142500.935479": {
         "post": "1788142500.935479",
@@ -183384,7 +183395,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 12:00",
+    "at": "2026-08-31 12:03",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
