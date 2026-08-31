@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6842,
+  "version": 6843,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145667,11 +145667,22 @@ window.SLACK_DATA = {
           "고경림": 1
         },
         "menu": {
-          "배선유": 1
+          "배선유": 2
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:43",
+          "store": "바다양푼이동태탕",
+          "biz": "2103243951",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "메뉴 가격수정 부탁드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / • 돼지불백 11,000원에서 12,000원으로 변경 돼지불백 11,000원에서 12,000원으로 변경 / 솔라피 발송"
+        },
         {
           "time": "09:28",
           "store": "착한통닭",
@@ -145762,11 +145773,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 6,
+        "online": 7,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:43",
+      "updatedAt": "09:45",
       "voc": {
         "responses": 1,
         "install": {
@@ -145861,11 +145872,15 @@ window.SLACK_DATA = {
       },
       "1788136202.747429": {
         "post": "1788136202.747429",
-        "lastSeen": 1788137060.479
+        "lastSeen": 1788137122.591
       },
       "1788136950.753509": {
         "post": "1788136950.753509",
-        "lastSeen": 1788137060.479
+        "lastSeen": 1788137122.591
+      },
+      "1788137101.327189": {
+        "post": "1788137101.327189",
+        "lastSeen": 1788137122.591
       }
     },
     "days": {
@@ -182549,7 +182564,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 09:44",
+    "at": "2026-08-31 09:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
