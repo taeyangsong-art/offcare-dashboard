@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1309,
- "updatedAt": "2026-08-31 11:44",
+ "version": 1310,
+ "updatedAt": "2026-08-31 11:50",
  "days": 30,
  "items": [
   {
@@ -163,7 +163,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BTTD5L0KB",
      "from": "댓글",
-     "path": "menu-files/1788139402_014799-0.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -231,6 +230,96 @@ window.MENU_REQUESTS = {
        "name": "밥추가",
        "price": 2500
       }
+     ],
+     "path": "menu-files/1788139402_014799-0.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BTKD60MD1",
+     "from": "댓글",
+     "path": "menu-files/1788139402_014799-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "브런치&Etc",
+       "name": "깜 플레이트",
+       "price": 20000
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "마사다 프라이즈",
+       "price": 20000
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "베이컨에그베네딕트",
+       "price": 16900
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "미트 우오바",
+       "price": 21000
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "연어에그베넉딕트",
+       "price": 17500
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "로티바카로",
+       "price": 18000
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "브러치즈 감바스",
+       "price": 21000
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "해물 우오바",
+       "price": 21000
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "크리스피 치킨",
+       "price": 21000
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "단호박크림스프",
+       "price": 7000
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "치즈닭갈비",
+       "price": 21000
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "마른안주",
+       "price": 25000
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "닭 화식",
+       "price": 3000
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "오리 화식",
+       "price": 3500
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "돼지 화식",
+       "price": 3500
+      },
+      {
+       "category": "브런치&Etc",
+       "name": "소 화식",
+       "price": 4000
+      }
      ]
     }
    ],
@@ -239,10 +328,12 @@ window.MENU_REQUESTS = {
     "님, 안녕하세요!\n바쁘신데 죄송합니다만, 혹시 위 매장 메뉴 등록 완료 된 상태 맞을까요? :꾸벅:",
     "넹~ 뚝딱했쥬",
     "재시작 안내 부탁드려융",
-    "오더에도 쓸것같아서 키오스크상품관리에도 다 넣어놨어영"
+    "오더에도 쓸것같아서 키오스크상품관리에도 다 넣어놨어영",
+    "님, 안녕하세요.\n여기 재부팅 이후에도 메뉴 안보인다고 하시어 확인 한번만 부탁 드립니다ㅠㅠ",
+    "제가 전화드리겟습ㄴ디ㅏ"
    ],
-   "rc": 5,
-   "lr": "1788142331.938679",
+   "rc": 7,
+   "lr": "1788144602.459949",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
