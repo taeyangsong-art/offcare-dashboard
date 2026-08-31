@@ -408,6 +408,20 @@ function applyObResults(data, found, o) {
 //  · 확인 이모지 없는 요청 → watch에 담고 매 실행 lastSeen 갱신
 //  · 이전에 watch에 있던(=확인 없던) 요청에 확인이 붙으면 → 응답시각 ≈ (lastSeen, now) 중간값 → 응답분 확정
 //  · 처음 볼 때 이미 확인됨(측정 불가)·2일 넘게 무응답 → 제외  ⇒ 자연히 '배포 이후' 건만 측정 (해상도 ±폴링간격)
+/* 셀프 처리 판정 — 자기가 올린 요청글에 자기가 확인·완료 이모지를 찍은 건.
+ * 남을 기다린 시간이 0 이라 응답/소요시간 표본에 넣으면 평균이 실제보다 좋게 나온다.
+ * 슬랙 reactions[].users 에 찍은 사람 ID 가 오므로 작성자(m.user)와 대조한다.
+ * 봇 접수글(m.user 없음)이나 users 를 안 주는 경우는 판정 불가 → 기존대로 집계. */
+function selfHandled(m) {
+  const author = m.user;
+  if (!author) return false;
+  return (m.reactions || []).some(r => {
+    if (!Array.isArray(r.users) || !r.users.includes(author)) return false;
+    return RE_CONFIRM.test(r.name) || RE_EMP.test(r.name) || r.name === '원격외주'
+        || (catMap[r.name] && catMap[r.name] !== 'voc');
+  });
+}
+let selfSkipped = 0;   // 실행 로그용 — 셀프 처리로 제외한 건수
 function trackResp(data, msgs, ch) {
   data.resp = data.resp || { watch: {}, days: {} };
   const W = data.resp.watch, DD = data.resp.days;
@@ -418,6 +432,7 @@ function trackResp(data, msgs, ch) {
     if (!postSec) continue;
     const names = (m.reactions || []).map(r => r.name);
     if (names.some(n => /중복/.test(n)) || names.includes('x')) { delete W[key]; continue; }   // 중복·X(잘못올린글) → 표본 제외
+    if (selfHandled(m)) { selfSkipped++; delete W[key]; continue; }   // 본인이 올린 글에 본인이 찍음 → 대기가 없던 건이라 제외
     const hasCat = names.some(n => catMap[n] && catMap[n] !== 'voc');
     const hasEmp = names.some(n => RE_EMP.test(n));
     const hasConfirm = names.some(n => RE_CONFIRM.test(n));
@@ -724,6 +739,7 @@ async function tallyVoc(msgs, voc, channelId, opts) {
   }
 
   if (unknownConfirms.size) console.log(`[VOC 담당자] personMap 밖 '<이름>확인' 이모지 ${unknownConfirms.size}명 감지: ${[...unknownConfirms].join(', ')} — 원격팀이면 personMap 에 추가(아니면 대시보드 '기타'로 집계)`);
+  if (selfSkipped) console.log(`[응답·소요시간] 셀프 처리(본인 글에 본인 이모지) ${selfSkipped}건 표본 제외`);
   console.log(`[완료] 업무 ${workDates.length}일 · VOC ${vocResTotal}응답/${vocDaysTouched}일 재집계`);
   data.version = (data.version || 0) + 1;
   const header = '/*\n * 슬랙 원격 처리 채널(AS요청·명의변경 등) 집계 데이터 (날짜별 누적)\n * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.\n */\n';
