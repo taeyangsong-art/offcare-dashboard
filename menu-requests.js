@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1349,
- "updatedAt": "2026-08-31 16:04",
+ "version": 1350,
+ "updatedAt": "2026-08-31 16:07",
  "days": 30,
  "items": [
   {
@@ -21,10 +21,15 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [
-    "[금액수정]\n온모밀 8500원\n사게도로동 13000원\n연어사시미 15000원"
+    "[금액수정]\n온모밀 8500원\n사게도로동 13000원\n연어사시미 15000원",
+    "음,,,,그거말고는 없는거같습니다...",
+    "연어가 올랐으니 사케동도 올랐다",
+    "잠시만요 저 채팅 있어서",
+    "오잉",
+    "네넵..!"
    ],
-   "rc": 3,
-   "lr": "1788159661.672769",
+   "rc": 11,
+   "lr": "1788159939.761109",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
