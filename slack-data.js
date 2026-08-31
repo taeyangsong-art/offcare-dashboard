@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6876,
+  "version": 6877,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145658,8 +145658,9 @@ window.SLACK_DATA = {
     "2026-08-31": {
       "counts": {
         "as": {
+          "김규빈": 1,
+          "심성현": 7,
           "배선유": 5,
-          "심성현": 6,
           "김현기": 4,
           "송태양": 4,
           "고경림": 3
@@ -145681,8 +145682,43 @@ window.SLACK_DATA = {
           "김규빈": 1
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "09:53",
+          "store": "허니농원",
+          "biz": "",
+          "handler": "김동욱",
+          "cat": "transfer",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "done": [
+        {
+          "time": "10:45",
+          "store": "소담",
+          "biz": "6450201688",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "메인 포스는 이상 없으나 오더 포스에서 흰 화면만 나오다가 재부팅하니 화면 깜빡거리며 토스포스 전혀 실행안되어 도움 부탁드립니다.",
+          "hw": "",
+          "urgent": true,
+          "intake": "offline",
+          "note": "현재는 재부팅 후 정상 안바쁠시간때 재부팅 하셔서 동일 증상 확인 필요 영상 찍어놔달라고 요청 드림"
+        },
+        {
+          "time": "10:33",
+          "store": "씨즈카페",
+          "biz": "2262721604",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "<https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1788135913527579|금일 원격 진행> 되었으나 , 이후 동일하게 메모리 부족 및 토스 앱이 종료 되신다고 재원격 요청 주셔서 재",
+          "hw": "",
+          "intake": "online",
+          "note": "/ / 가상 메모리 설정 완료"
+        },
         {
           "time": "10:30",
           "store": "도로시헤어",
@@ -146072,11 +146108,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 31,
-        "offline": 4,
+        "online": 33,
+        "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "10:45",
+      "updatedAt": "10:53",
       "voc": {
         "responses": 1,
         "install": {
@@ -146171,15 +146207,15 @@ window.SLACK_DATA = {
       },
       "1788138906.847629": {
         "post": "1788138906.847629",
-        "lastSeen": 1788140961.056
+        "lastSeen": 1788141199.337
       },
       "1788140668.164099": {
         "post": "1788140668.164099",
-        "lastSeen": 1788140961.056
+        "lastSeen": 1788141199.337
       },
-      "1788140749.102069": {
-        "post": "1788140749.102069",
-        "lastSeen": 1788140961.056
+      "1788141195.262649": {
+        "post": "1788141195.262649",
+        "lastSeen": 1788141199.337
       }
     },
     "days": {
@@ -182790,8 +182826,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-31": {
-        "cnt": 23,
-        "sumMin": 99.37723287741343,
+        "cnt": 24,
+        "sumMin": 104.89547339280446,
         "over": 0,
         "items": [
           {
@@ -182977,13 +183013,21 @@ window.SLACK_DATA = {
             "biz": "5981802252",
             "who": "고경림",
             "cat": "as"
+          },
+          {
+            "hm": "10:45",
+            "min": 5.5,
+            "store": "소담",
+            "biz": "6450201688",
+            "who": "김규빈",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-31 10:49",
+    "at": "2026-08-31 10:53",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
