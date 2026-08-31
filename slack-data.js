@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6825,
+  "version": 6826,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140712,7 +140712,7 @@ window.SLACK_DATA = {
           "고경림": 35,
           "심성현": 25,
           "김규빈": 8,
-          "김현기": 25,
+          "김현기": 26,
           "배선유": 20,
           "서상원": 12,
           "김동욱": 14,
@@ -140753,17 +140753,6 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
-        {
-          "time": "17:20",
-          "store": "맑음 필라테스 앤 요가",
-          "biz": "2662102786",
-          "handler": "김현기",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
         {
           "time": "15:44",
           "store": "속옷갑부",
@@ -141278,6 +141267,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": ""
+        },
+        {
+          "time": "17:20",
+          "store": "맑음 필라테스 앤 요가",
+          "biz": "2662102786",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "포프+유프 사용 매장으로, 출력 시 이상한 문구 출력된다고 하시어 점검 요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트 내 속도 값 변경 후 정상 출력"
         },
         {
           "time": "17:16",
@@ -145704,7 +145704,7 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:00",
+      "updatedAt": "09:06",
       "voc": {
         "responses": 1,
         "install": {
@@ -145799,7 +145799,7 @@ window.SLACK_DATA = {
       },
       "1788134406.513879": {
         "post": "1788134406.513879",
-        "lastSeen": 1788134723.21
+        "lastSeen": 1788134842.682
       }
     },
     "days": {
@@ -182443,7 +182443,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 09:05",
+    "at": "2026-08-31 09:07",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
