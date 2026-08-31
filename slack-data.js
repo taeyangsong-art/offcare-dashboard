@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6859,
+  "version": 6860,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145660,16 +145660,17 @@ window.SLACK_DATA = {
         "extern": {
           "서상원": 1
         },
+        "onboarding": {
+          "고경림": 2,
+          "김규빈": 1,
+          "김동욱": 2
+        },
         "as": {
           "심성현": 4,
           "고경림": 3,
           "송태양": 3,
           "김현기": 2,
           "배선유": 2
-        },
-        "onboarding": {
-          "김동욱": 2,
-          "고경림": 1
         },
         "transfer": {
           "송태양": 1
@@ -145705,6 +145706,17 @@ window.SLACK_DATA = {
         },
         {
           "time": "10:00",
+          "store": "핑크몬스터",
+          "biz": "5101594450",
+          "cat": "onboarding",
+          "emp": "고경림",
+          "req": "포프(휴대폰) + 유프 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "직접 온보딩 완료 사용법 안내드렸습니다 ."
+        },
+        {
+          "time": "10:00",
           "store": "봄봄언어인지발달센터",
           "biz": "3139716596",
           "cat": "as",
@@ -145713,6 +145725,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "매장 아님 금일은 설치가 어렵고 자가 설치한 후 도움이 필요하면 재인입 예정"
+        },
+        {
+          "time": "10:00",
+          "store": "디자인박스",
+          "biz": "4090567732",
+          "cat": "onboarding",
+          "emp": "김규빈",
+          "req": "포프(휴대폰) 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 및 금액입력 활성화 완료"
         },
         {
           "time": "09:52",
@@ -145926,11 +145949,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 19,
+        "online": 21,
         "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "10:11",
+      "updatedAt": "10:13",
       "voc": {
         "responses": 1,
         "install": {
@@ -146025,7 +146048,11 @@ window.SLACK_DATA = {
       },
       "1788138705.863259": {
         "post": "1788138705.863259",
-        "lastSeen": 1788138799.406
+        "lastSeen": 1788138861.241
+      },
+      "1788138809.893459": {
+        "post": "1788138809.893459",
+        "lastSeen": 1788138861.241
       }
     },
     "days": {
@@ -182781,7 +182808,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 10:13",
+    "at": "2026-08-31 10:14",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
