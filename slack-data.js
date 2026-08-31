@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6850,
+  "version": 6851,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145664,9 +145664,9 @@ window.SLACK_DATA = {
         "as": {
           "고경림": 2,
           "송태양": 3,
+          "김현기": 2,
           "배선유": 2,
-          "심성현": 2,
-          "김현기": 1
+          "심성현": 2
         },
         "menu": {
           "배선유": 2
@@ -145740,6 +145740,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "강릉 온보딩 완료."
+        },
+        {
+          "time": "09:30",
+          "store": "박승광 해물손칼국수 검단신도시직영점",
+          "biz": "5335101097",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "ts400W 새로 받은거 토스포스에서에서는 정상",
+          "hw": "",
+          "intake": "online",
+          "note": "이게 그 주말에 전화한 그거죠? 이게 그 주말에 전화한 그거죠? / 맞아유 / 이거 아이피 뭐에요? / 이거 주방에 잇는 IP / 101 / 102 둘 다 있는데 / / 저기서 주방! 101 / 토스포스는 나옴 / 배달app 에서 출력 불가 / 아 아닌가 102인가 / 전화 ㄱㄱ 해보겠습니다 / 제어판에서 완전히 드라이버 파일 지우고 재부팅 / 다시 설치하"
         },
         {
           "time": "09:28",
@@ -145842,7 +145853,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 12,
+        "online": 13,
         "offline": 3,
         "unknown": 0
       },
@@ -182653,7 +182664,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 09:57",
+    "at": "2026-08-31 09:58",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
