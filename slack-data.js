@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6826,
+  "version": 6827,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145658,13 +145658,24 @@ window.SLACK_DATA = {
     "2026-08-31": {
       "counts": {
         "as": {
-          "송태양": 1,
+          "송태양": 2,
           "배선유": 1,
           "심성현": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:06",
+          "store": "부엉이젤라또",
+          "biz": "4130994314",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "voc",
+          "hw": "",
+          "intake": "online",
+          "note": "• 5시 15분 예약 5시 15분 예약"
+        },
         {
           "time": "09:00",
           "store": "커피손",
@@ -145700,7 +145711,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 3,
+        "online": 4,
         "offline": 0,
         "unknown": 0
       },
@@ -145799,7 +145810,7 @@ window.SLACK_DATA = {
       },
       "1788134406.513879": {
         "post": "1788134406.513879",
-        "lastSeen": 1788134842.682
+        "lastSeen": 1788135020.148
       }
     },
     "days": {
@@ -182443,7 +182454,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 09:07",
+    "at": "2026-08-31 09:10",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
