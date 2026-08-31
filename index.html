@@ -4576,7 +4576,7 @@ function renderOverview(){
     <div class="card">
       <div class="card-head">
         <h3>직원별 · 카테고리별 처리건수</h3>
-        <span class="hint">${viewLabel} · 🔎 <b>직원 이름 클릭 → 처리 내역 상세</b> · 미등록 담당(타파트 지원 등)은 <b>🧩 기타</b> 행 · VOC는 확인 담당자 기준 · <b>📞 설치 OB</b>는 설치일정 시트 D열 기준${NIGHT?' (야간은 시각 정보가 없어 집계 제외)':''}</span>
+        <span class="hint">${viewLabel} · 🔎 <b>직원 이름 클릭 → 처리 내역 상세</b> · 미등록 담당(타파트 지원 등)은 <b>🧩 기타</b> 행 · VOC는 확인 담당자 기준 · <b>📞 설치 OB</b>는 설치일정 시트 D열 기준${NIGHT?' (야간은 시각 정보가 없어 집계 제외)':''}${viewDates.some(d=>d>=VOC_DRI_HANDOVER)?` · <b style="color:var(--red)">💬 VOC는 ${fmtShort(VOC_DRI_HANDOVER)}부터 CX팀 이관 — 처리 실적 미집계(0 표시가 정상)</b>`:''}</span>
       </div>
       <div style="overflow-x:auto">
         <table class="matrix">
