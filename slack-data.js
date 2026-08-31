@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6839,
+  "version": 6840,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145752,7 +145752,7 @@ window.SLACK_DATA = {
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:38",
+      "updatedAt": "09:40",
       "voc": {
         "responses": 1,
         "install": {
@@ -145847,11 +145847,15 @@ window.SLACK_DATA = {
       },
       "1788136202.747429": {
         "post": "1788136202.747429",
-        "lastSeen": 1788136702.335
+        "lastSeen": 1788136880.941
       },
-      "1788136684.427989": {
-        "post": "1788136684.427989",
-        "lastSeen": 1788136702.335
+      "1788136826.839199": {
+        "post": "1788136826.839199",
+        "lastSeen": 1788136880.941
+      },
+      "1788136819.006169": {
+        "post": "1788136819.006169",
+        "lastSeen": 1788136880.941
       }
     },
     "days": {
@@ -182462,8 +182466,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-31": {
-        "cnt": 4,
-        "sumMin": 6.539344056447347,
+        "cnt": 5,
+        "sumMin": 8.32617757320404,
         "over": 0,
         "items": [
           {
@@ -182497,13 +182501,21 @@ window.SLACK_DATA = {
             "biz": "2262721604",
             "who": "심성현",
             "cat": "as"
+          },
+          {
+            "hm": "09:38",
+            "min": 1.8,
+            "store": "드롭탑 부여백제(서천방향)휴게소",
+            "biz": "4588502636",
+            "who": "배선유",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-31 09:38",
+    "at": "2026-08-31 09:41",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
