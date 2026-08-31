@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7191,
+  "version": 7192,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -140985,7 +140985,7 @@ window.SLACK_DATA = {
           "김규빈": 10,
           "서상원": 12,
           "심성현": 28,
-          "김동욱": 1
+          "김동욱": 2
         },
         "onboarding": {
           "최민석": 7,
@@ -141017,19 +141017,7 @@ window.SLACK_DATA = {
           "김현기": 1
         }
       },
-      "pending": [
-        {
-          "time": "11:43",
-          "store": "정품전자담배 신라면세점점",
-          "biz": "3972402290",
-          "handler": "김동욱",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
         {
           "time": "22:10",
@@ -143236,6 +143224,17 @@ window.SLACK_DATA = {
           "urgent": true,
           "intake": "offline",
           "note": "결제버튼 숨김 해제"
+        },
+        {
+          "time": "11:43",
+          "store": "정품전자담배 신라면세점점",
+          "biz": "3972402290",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "• <@U08BA4PDNLT> 동욱님! 여기 3개 매장 전부 볼 수 있게 본사로 묶어주세요.. :meow_sad:",
+          "hw": "",
+          "intake": "online",
+          "note": "말씀 주신 것 처럼 • 시간 소요 안내 • 이전 내역은 매출 자료로 봐야하고, URL 내에서 볼 수 없다고도 말씀드렸어요 :눈물햄스터: 시간 소요 안내 이전 내역은 매출 자료로 봐야하고, URL 내에서 볼 수 없다고도 말씀드렸어요 / URL : ID w는 소문자여야 합니다. • 정품전자담배 신라면세점점 ◦ ID : w11553 ◦ PW : 02290 • 위"
         },
         {
           "time": "11:35",
@@ -182462,7 +182461,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-01 06:00",
+    "at": "2026-09-01 06:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
