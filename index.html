@@ -1291,6 +1291,13 @@
 <script>
 /* ================= Config ================= */
 const EMPLOYEES = ["김기범","서상원","김규빈","김동욱","송태양","김현기","배선유","최민석","심성현","고경림"];
+/* 2026-09-01 VOC DRI 이관 (원격팀 → CX팀).
+ * 이 날짜 이후 완료된 VOC 는 우리 팀 처리 실적으로 집계하지 않는다 —
+ * 직원별 처리량·MVP·랭킹·야간 처리·업적·일별 처리 추이에서 모두 빠진다.
+ * 저점 모니터링은 그대로 유지된다: 저점 표·처리완료 이동·완료일/담당자 표기는 계속 동작하고,
+ * CX팀 담당자(김유나·홍지혜 등) 이모지도 그대로 '✓ 9/1 완료 · 홍지혜' 로 표시된다. */
+const VOC_DRI_HANDOVER = "2026-09-01";
+function vocCredited(doneDate){ return !!doneDate && doneDate < VOC_DRI_HANDOVER; }   // 우리 팀 실적으로 셀 완료건인가
 // 공유 캘린더 — 직원별 고유 색상(흰 글씨가 잘 보이는 진한 톤)
 const EMP_COLORS = {
   "김기범":"#1f6feb","서상원":"#2f9e44","김규빈":"#e8590c","김동욱":"#6741d9",
@@ -1787,14 +1794,14 @@ function nightItems(dates){
     ((slackDay(d)||{}).done||[]).forEach(x=>{ if(isNightTime(x.time)) out.push({time:x.time,store:x.store,biz:x.biz,emp:x.emp,cat:x.cat,date:d,st:'처리'}); });
     ((slackDay(d)||{}).pending||[]).forEach(x=>{ if(isNightTime(x.time)){ const ab=(x.reasons||[]).some(r=>/부재/.test(r)); out.push({time:x.time,store:x.store,biz:x.biz,emp:x.handler,cat:x.cat,date:d,st:ab?'부재':'확인필요'}); } });
   });
-  allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ const e=vocEmpAt(d,x), dd=vocDoneAt(d,x); if(e&&dd&&set.has(dd)&&isNightTime(x.time)) out.push({time:x.time,store:x.store,biz:x.storeId,emp:e,cat:'voc',date:dd,st:'처리'}); }); });
+  allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ const e=vocEmpAt(d,x), dd=vocDoneAt(d,x); if(e&&vocCredited(dd)&&set.has(dd)&&isNightTime(x.time)) out.push({time:x.time,store:x.store,biz:x.storeId,emp:e,cat:'voc',date:dd,st:'처리'}); }); });
   return out;
 }
 // 특정 직원이 fromTime(예:21:00) 이후에 처리한 누적 건수 (업무 done + VOC 완료) — 타이틀 구매 요건용
 function nightHandled(emp, fromTime){
   const from = fromTime || "21:00"; let n=0;
   monthSlackDates().forEach(d=>{ ((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp===emp && (x.time||"")>=from) n++; }); });
-  monthSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ if(vocEmpAt(d,x)===emp && vocDoneAt(d,x) && (x.time||"")>=from) n++; }); });
+  monthSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ if(vocEmpAt(d,x)===emp && vocCredited(vocDoneAt(d,x)) && (x.time||"")>=from) n++; }); });
   return n;
 }
 // ===== 타이틀 달성 조건 (충족 시 코인 없이 무료 획득) — 진행도는 '현재 달'만 측정 → 매월 1일 초기화 =====
@@ -1833,7 +1840,7 @@ function achStatus(emp, it){
   if(!it || !it.ach || !emp) return it&&it.ach ? {ok:false, label:achShort(it.ach), prog:'-'} : null;
   if(it.ach==='hand'){ const best=Math.max(0,...Object.values(empWorkByDay(emp))); return {ok:best>=35, label:'하루 원격 35건 처리', prog:`${best}/35건`}; }
   if(it.ach==='phoenix'){ const toMin=t=>{ const p=(t||'').split(':'); return (+p[0]||0)*60+(+p[1]||0); }; let ok=false, bestSpan=0; monthSlackDates().forEach(d=>{ const ts=((slackDay(d)||{}).done||[]).filter(x=>x.emp===emp&&x.time).map(x=>toMin(x.time)); if(ts.length>=2){ const span=Math.max(...ts)-Math.min(...ts); if(span>bestSpan) bestSpan=span; if(span>=720) ok=true; } }); return {ok, label:'하루 원격 처리 이력 12시간 이상 (첫~마지막 처리 간격)', prog:ok?'달성 ✓':`최고 ${Math.floor(bestSpan/60)}시간 ${bestSpan%60}분/12시간`}; }
-  if(it.ach==='master'){ let ok=false; const W=['onboarding','as','transfer','menu','delivery','extern']; monthSlackDates().forEach(d=>{ const day=slackDay(d)||{}; const dn=(day.done||[]).filter(x=>x.emp===emp); const cs=new Set(dn.map(x=>x.cat)); const all6=W.every(c=>cs.has(c)); const voc=day.voc?[...(day.voc.alerts||[]),...(day.voc.praises||[])].some(x=>vocEmpAt(d,x)===emp&&vocDoneAt(d,x)===d):false; const anyPending=(day.pending||[]).some(p=>p.handler===emp); if(all6&&voc&&!anyPending) ok=true; }); return {ok, label:'하루에 온보딩·AS·명변·메뉴·배달·외주·VOC 각 1건 이상 + 부재·미처리 0건', prog:ok?'달성 ✓':'미달'}; }
+  if(it.ach==='master'){ let ok=false; const W=['onboarding','as','transfer','menu','delivery','extern']; monthSlackDates().forEach(d=>{ const day=slackDay(d)||{}; const dn=(day.done||[]).filter(x=>x.emp===emp); const cs=new Set(dn.map(x=>x.cat)); const all6=W.every(c=>cs.has(c)); const voc=day.voc?[...(day.voc.alerts||[]),...(day.voc.praises||[])].some(x=>vocEmpAt(d,x)===emp&&vocDoneAt(d,x)===d&&vocCredited(d)):false; const anyPending=(day.pending||[]).some(p=>p.handler===emp); if(all6&&voc&&!anyPending) ok=true; }); return {ok, label:'하루에 온보딩·AS·명변·메뉴·배달·외주·VOC 각 1건 이상 + 부재·미처리 0건', prog:ok?'달성 ✓':'미달'}; }
   if(it.ach==='god'){ const best=Math.max(0,...Object.values(empWorkByDay(emp))); const mvp=mvpCountOf(emp); return {ok:best>=50&&mvp>=10, label:'하루 50건 이상 처리 + MVP 10회 이상 선정', prog:`하루최고 ${best}/50 · MVP ${mvp}/10`}; }
   if(it.ach==='night'){ const have=nightHandled(emp,'20:00'); return {ok:have>=300, label:'밤 20:00 이후 300건 처리', prog:`${have}/300건`}; }
   if(it.ach==='fool'){ const miss=missCumCount(emp); return {ok:miss>=5, label:'이번 달 누락 이력 5건 이상 (해결해도 누적)', prog:`${miss}/5건`}; }   // 히든(달성 시 공개)
@@ -1914,7 +1921,7 @@ function ovCnt(cat, dates, emp){
 function ovVocDone(dates){
   if(ovShift!=='night') return vocDoneInRange(dates);
   const set=new Set(dates); let cnt=0; const byEmp={};
-  allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ const e=vocEmpAt(d,x), dd=vocDoneAt(d,x); if(e&&dd&&set.has(dd)&&isNightTime(x.time)){ cnt++; byEmp[e]=(byEmp[e]||0)+1; } }); });
+  allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ const e=vocEmpAt(d,x), dd=vocDoneAt(d,x); if(e&&vocCredited(dd)&&set.has(dd)&&isNightTime(x.time)){ cnt++; byEmp[e]=(byEmp[e]||0)+1; } }); });
   return {cnt, byEmp};
 }
 function ovVocAlerts(dates){ const a=aggVoc(dates).alerts; return ovShift==='night'? a.filter(x=>isNightTime(x.time)) : a; }
@@ -4662,7 +4669,7 @@ function showObDetail(){
 }
 function showDoneDetail(mode, key){
   const dates=ovDates(), set=new Set(dates); let items=[], title='';
-  const pushVocDone=(empFilter)=>{ allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ const e=vocEmpAt(d,x), dd=vocDoneAt(d,x); if(e&&(!empFilter||e===empFilter)&&dd&&set.has(dd)) items.push({time:'',store:x.store,biz:x.storeId,emp:e,cat:'voc',date:dd,st:'처리',nt:isNightTime(x.time)}); }); }); };
+  const pushVocDone=(empFilter)=>{ allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ const e=vocEmpAt(d,x), dd=vocDoneAt(d,x); if(e&&(!empFilter||e===empFilter)&&vocCredited(dd)&&set.has(dd)) items.push({time:'',store:x.store,biz:x.storeId,emp:e,cat:'voc',date:dd,st:'처리',nt:isNightTime(x.time)}); }); }); };
   // 설치 OB — 시트 기준이라 상호·사업자·시각이 없다. 상태를 상호 칸에 넣어 무엇인지 알아보게 한다.
   // 야간 탭에서는 obItems 가 시각 정보를 못 주므로 아예 넣지 않는다(집계에서도 빠져 있어 숫자가 맞는다).
   const pushOb=(filter)=>{ if(ovShift==='night') return; obItems(dates).forEach(x=>{ if(filter&&!filter(x)) return; items.push({time:'',store:x.status||'(상태 미기재)',biz:'',emp:x.handler,cat:'ob',date:x._date,st:'처리',nt:false}); }); };
@@ -4679,7 +4686,7 @@ function showDoneDetail(mode, key){
   } else if(mode==='etc'){   // 미등록 담당자(미지정·타파트 지원 등) 전체
     title = '기타(미지정·타파트) 처리 상세';
     dates.forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(!EMPLOYEES.includes((x.emp||'').trim())) items.push({time:x.time,store:x.store,biz:x.biz,emp:x.emp||'미지정',cat:x.cat,date:d,st:'처리'}); }));
-    allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ const e=vocEmpAt(d,x), dd=vocDoneAt(d,x); if(dd&&set.has(dd)&&!EMPLOYEES.includes((e||'').trim())) items.push({time:'',store:x.store,biz:x.storeId,emp:e||'미지정',cat:'voc',date:dd,st:'처리',nt:isNightTime(x.time)}); }); });
+    allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ const e=vocEmpAt(d,x), dd=vocDoneAt(d,x); if(vocCredited(dd)&&set.has(dd)&&!EMPLOYEES.includes((e||'').trim())) items.push({time:'',store:x.store,biz:x.storeId,emp:e||'미지정',cat:'voc',date:dd,st:'처리',nt:isNightTime(x.time)}); }); });
     pushOb(x=>!EMPLOYEES.includes((x.handler||'').trim()));
   } else { // 'all' = 원격 총 건수 (처리 + 설치 OB + 부재 + 확인필요)
     title = '원격 총 건수 상세';
@@ -6622,8 +6629,8 @@ function applySlackData(){
 function slackDay(date){ return (window.SLACK_DATA&&window.SLACK_DATA.days&&window.SLACK_DATA.days[date])||null; }
 function allSlackDates(){ return (window.SLACK_DATA&&window.SLACK_DATA.days)?Object.keys(window.SLACK_DATA.days).sort():[]; }
 // VOC 처리(완료)를 완료일(doneDate) 기준으로 집계 — 설문 원본 날짜와 무관
-function vocDoneByDay(){ const map={}; allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ const dd=vocDoneAt(d,x); if(vocEmpAt(d,x)&&dd) map[dd]=(map[dd]||0)+1; }); }); return map; }
-function vocDoneInRange(dates){ const set=new Set(dates); let cnt=0; const byEmp={}; allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ const e=vocEmpAt(d,x), dd=vocDoneAt(d,x); if(e&&dd&&set.has(dd)){ cnt++; byEmp[e]=(byEmp[e]||0)+1; } }); }); return {cnt, byEmp}; }
+function vocDoneByDay(){ const map={}; allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ const dd=vocDoneAt(d,x); if(vocEmpAt(d,x)&&vocCredited(dd)) map[dd]=(map[dd]||0)+1; }); }); return map; }
+function vocDoneInRange(dates){ const set=new Set(dates); let cnt=0; const byEmp={}; allSlackDates().forEach(d=>{ const v=(slackDay(d)||{}).voc; if(!v)return; [...(v.alerts||[]),...(v.praises||[])].forEach(x=>{ const e=vocEmpAt(d,x), dd=vocDoneAt(d,x); if(e&&vocCredited(dd)&&set.has(dd)){ cnt++; byEmp[e]=(byEmp[e]||0)+1; } }); }); return {cnt, byEmp}; }
 
 function seedShare(){
   const base=today();
