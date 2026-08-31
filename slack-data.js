@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6922,
+  "version": 6923,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145604,11 +145604,11 @@ window.SLACK_DATA = {
                 "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "송태양",
+            "autoStatus": "처리완료",
+            "autoEmp": "송태양",
+            "autoNote": "• 핫스팟으로 사용중 • 무제한요금제가 아니라면 속도저하 등으로 이슈 생길 위험 설명 • 매장 와이파이 설치 권유 -&gt; 알아보시겠다고 함 핫스팟으로 사용중 무제한요금제가 아니라면 속도저하 등으로 이슈 생길 위험 설명 매장 와이파이 설치 권유 - 알아보시겠다고 함",
+            "doneDate": "2026-08-31"
           },
           {
             "time": "08:57",
@@ -146406,7 +146406,7 @@ window.SLACK_DATA = {
         "offline": 11,
         "unknown": 0
       },
-      "updatedAt": "12:07",
+      "updatedAt": "12:10",
       "voc": {
         "responses": 2,
         "install": {
@@ -146510,15 +146510,15 @@ window.SLACK_DATA = {
       },
       "1788138906.847629": {
         "post": "1788138906.847629",
-        "lastSeen": 1788145703.485
+        "lastSeen": 1788145882.309
       },
       "1788142500.935479": {
         "post": "1788142500.935479",
         "lastSeen": 1788143545.697
       },
-      "1788145644.018839": {
-        "post": "1788145644.018839",
-        "lastSeen": 1788145703.485
+      "1788145829.868469": {
+        "post": "1788145829.868469",
+        "lastSeen": 1788145882.309
       }
     },
     "days": {
@@ -183129,8 +183129,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-31": {
-        "cnt": 35,
-        "sumMin": 144.97780973513918,
+        "cnt": 36,
+        "sumMin": 147.45911241769787,
         "over": 0,
         "items": [
           {
@@ -183412,13 +183412,21 @@ window.SLACK_DATA = {
             "biz": "3111297655",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "12:07",
+            "min": 2.5,
+            "store": "인카브 153",
+            "biz": "8114101358",
+            "who": "송태양",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-31 12:08",
+    "at": "2026-08-31 12:11",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
