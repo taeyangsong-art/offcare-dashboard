@@ -140,12 +140,15 @@
   .nav-div{height:1px; background:var(--line-soft); margin:8px 12px}
 
   /* Overview 헤드라인/알림/근무/랭킹 */
-  .headline{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-bottom:24px}
+  .headline{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:24px}
+  /* 카드 4장(총건수·MVP·응답시간·소요시간)은 좁은 화면에서 2×2 로 접는다 */
+  @media (max-width:1240px){ .headline{grid-template-columns:repeat(2,1fr)} }
   .hl-card{border-radius:20px; padding:18px 20px; border:1.5px solid transparent; position:relative; overflow:hidden; transition:transform .15s}
   .hl-card:hover{transform:translateY(-2px)}
   .hl-card.blue{background:linear-gradient(155deg,#e9f2ff,#f6faff); border-color:#d5e6ff}
   .hl-card.gold{background:linear-gradient(155deg,#fff5db,#fffdf4); border-color:#ffe6a8}
   .hl-card.mint{background:linear-gradient(155deg,#e4faef,#f4fffa); border-color:#c3efd7}
+  .hl-card.plum{background:linear-gradient(155deg,#f3ecff,#faf7ff); border-color:#e0d2ff}   /* 소요시간 */
   .hl-ic{font-size:32px; line-height:1; margin-bottom:9px}
   .hl-lab{font-size:15px; font-weight:700; color:var(--gray)}
   .hl-big{font-size:44px; font-weight:800; letter-spacing:-.03em; line-height:1.12; margin-top:3px; color:var(--ink)}
@@ -313,11 +316,6 @@
   #mvpCard .hl-big{font-size:34px}
   /* AS 응답시간 카드 — 오늘 값만으로는 추세를 못 보므로 최근 7일·30일 평균을 함께 노출 */
   .hl-trend{margin-top:14px; padding-top:11px; border-top:1px solid rgba(0,0,0,.08); display:flex; flex-direction:column; gap:8px}
-  /* 응답시간 카드 안의 보조 지표(평균 소요시간) — 큰 숫자(응답)와 트렌드 사이 한 줄 */
-  .hl-sub{margin-top:10px; padding-top:9px; border-top:1px solid rgba(0,0,0,.08);
-    display:flex; align-items:baseline; justify-content:space-between; gap:10px; font-size:13px; color:var(--ink-soft)}
-  .hl-sub b{font-size:19px; font-weight:800; color:var(--ink)}
-  .hl-sub .sc{font-size:11.5px; color:var(--gray2); font-weight:600; margin-left:5px}
   .hl-trend-row{display:flex; align-items:baseline; justify-content:space-between; gap:10px; border-radius:8px; padding:2px 4px; margin:0 -4px; transition:background .15s}
   .hl-trend-row.clickable{cursor:pointer}
   .hl-trend-row.clickable:hover{background:rgba(0,0,0,.045)}
@@ -4503,6 +4501,7 @@ function renderOverview(){
   const respAgg = respStats(viewDates);
   const RESP_TRENDS = [7,30].map(n=>({n, lab:`최근 ${n}일 평균`, st:respStats(lastNDays(n))}));
   const doneAgg = doneStats(viewDates);   // 요청 → 처리 완료(카테고리 이모지)까지
+  const DONE_TRENDS = [7,30].map(n=>({n, lab:`최근 ${n}일 평균`, st:doneStats(lastNDays(n))}));
 
   document.getElementById("main").innerHTML = `
     <div class="page-head">
@@ -4542,18 +4541,28 @@ function renderOverview(){
       </div>
       <div class="hl-card mint${respAgg.cnt?' clickable':''}"${respAgg.cnt?' onclick="showRespDetail()" title="클릭 → 건별 응답시간 상세(정렬)"':''}>
         <div class="hl-ic">⏱️</div>
-        <div class="hl-lab">${periodWord} AS 평균 응답시간 ${respAgg.cnt?'<span class="hl-drill">🔎</span>':'<span class="hl-drill" title="AS 요청글이 올라온 뒤 담당자 확인 이모지가 찍히기까지 걸린 평균 시간 (10분 폴링 근사) · 명의변경·메뉴등록·배달 제외">ⓘ</span>'}</div>
+        <div class="hl-lab">${periodWord} AS·온보딩 평균 응답시간 ${respAgg.cnt?'<span class="hl-drill">🔎</span>':'<span class="hl-drill" title="요청글이 올라온 뒤 담당자 확인 이모지가 찍히기까지 걸린 평균 시간 (10분 폴링 근사) · AS·온보딩·외주 포함, 명의변경·메뉴등록·배달 제외">ⓘ</span>'}</div>
         <div class="hl-big">${respAgg.cnt?`${respAgg.avg}<small>분</small>`:`<span style="font-size:21px;color:var(--gray2);font-weight:700">집계 대기중</span>`}</div>
         <div class="ov-delta flat"><span>${respAgg.cnt?`지연율(30분↑) ${respAgg.overRate}% · ${respAgg.cnt}건 기준`:'배포 후 인입 건부터 순차 집계'}</span></div>
-        <div class="hl-sub" title="요청글이 올라온 뒤 처리 완료(A/S·온보딩 등 카테고리 이모지)까지 걸린 평균 시간 · 10분 폴링 근사">
-          <span>🛠️ ${periodWord} 평균 소요시간</span>
-          <span>${doneAgg.cnt?`<b>${doneAgg.avg}</b>분<span class="sc">${doneAgg.cnt}건</span>`:'<span class="sc">집계 대기중</span>'}</span>
-        </div>
         <div class="hl-trend">
           ${RESP_TRENDS.map(t=>t.st.cnt
             ? `<div class="hl-trend-row clickable" title="클릭 → 최근 ${t.n}일 건별 응답시간 상세" onclick="event.stopPropagation();showRespDetail(${t.n})">
                  <span class="tl">${t.lab}</span>
                  <span class="tv">${t.st.avg}<small>분</small><span class="tc">${t.st.cnt}건 · 지연 ${t.st.overRate}%</span></span>
+               </div>`
+            : `<div class="hl-trend-row"><span class="tl">${t.lab}</span><span class="tv-none">집계 없음</span></div>`).join('')}
+        </div>
+      </div>
+      <div class="hl-card plum${doneAgg.cnt?' clickable':''}"${doneAgg.cnt?' onclick="showRespDetail(null,\'dslow\')" title="클릭 → 건별 소요시간 상세(정렬)"':''}>
+        <div class="hl-ic">🛠️</div>
+        <div class="hl-lab">${periodWord} AS·온보딩 평균 소요시간 ${doneAgg.cnt?'<span class="hl-drill">🔎</span>':'<span class="hl-drill" title="요청글이 올라온 뒤 처리 완료 이모지(원격as·원격온보딩·원격외주)가 찍히기까지 걸린 평균 시간 (10분 폴링 근사) · 명의변경·메뉴등록·배달 제외">ⓘ</span>'}</div>
+        <div class="hl-big">${doneAgg.cnt?`${doneAgg.avg}<small>분</small>`:`<span style="font-size:21px;color:var(--gray2);font-weight:700">집계 대기중</span>`}</div>
+        <div class="ov-delta flat"><span>${doneAgg.cnt?`완료 이모지 기준 · ${doneAgg.cnt}건 기준`:'완료 이모지가 찍힌 건부터 순차 집계'}</span></div>
+        <div class="hl-trend">
+          ${DONE_TRENDS.map(t=>t.st.cnt
+            ? `<div class="hl-trend-row clickable" title="클릭 → 최근 ${t.n}일 건별 소요시간 상세" onclick="event.stopPropagation();showRespDetail(${t.n},'dslow')">
+                 <span class="tl">${t.lab}</span>
+                 <span class="tv">${t.st.avg}<small>분</small><span class="tc">${t.st.cnt}건</span></span>
                </div>`
             : `<div class="hl-trend-row"><span class="tl">${t.lab}</span><span class="tv-none">집계 없음</span></div>`).join('')}
         </div>
@@ -4766,7 +4775,7 @@ function runStoreSearch(q){
 // ⏱️ 평균 응답시간 카드 클릭 → 건별 상세(올라온시간·응답분·담당), 응답 빠른순/느린순 정렬
 let respDetailItems=[]; let respSortMode='fast'; let respDetailLabel='';
 // days 를 주면 최근 N일(카드의 7일·30일 추세 행 클릭), 없으면 화면에서 선택한 기간
-function showRespDetail(days){
+function showRespDetail(days, sort){
   const dates = typeof days==='number' ? lastNDays(days) : ovDates();
   respDetailLabel = typeof days==='number' ? `최근 ${days}일` : ovRangeText();
   const R=(window.SLACK_DATA&&window.SLACK_DATA.resp&&window.SLACK_DATA.resp.days)||{};
@@ -4774,17 +4783,23 @@ function showRespDetail(days){
   for(const d of dates){ const arr=(R[d]&&R[d].items)||[]; for(const it of arr) respDetailItems.push(Object.assign({date:d}, it)); }
   respDetailItems=respDetailItems.filter(x=>!(x.cat&&RESP_EXCL_CATS.includes(x.cat)));   // 순수 AS 적재 — 명변·메뉴등록·배달 제외
   if(ovShift==='night') respDetailItems=respDetailItems.filter(x=>isNightTime(x.hm));
-  respSortMode='fast'; renderRespModal();
+  respSortMode = sort || 'fast';
+  renderRespModal();
 }
 function respSort(mode){ respSortMode=mode; renderRespModal(); }
 function renderRespModal(){
-  const items=respDetailItems.slice().sort((a,b)=> respSortMode==='fast' ? (a.min-b.min) : (b.min-a.min));
-  const avg=items.length?Math.round(items.reduce((a,x)=>a+(x.min||0),0)/items.length):0;
+  const DUR = respSortMode==='dslow'||respSortMode==='dfast';   // 소요시간 기준 보기
+  const val = x => DUR ? (x.dmin||0) : (x.min||0);
+  const asc = respSortMode==='fast'||respSortMode==='dfast';
+  // 소요시간 보기에서는 아직 완료 이모지가 안 찍힌 건(dmin 없음)을 빼야 평균이 왜곡되지 않는다
+  const base = DUR ? respDetailItems.filter(x=>x.dmin!=null) : respDetailItems;
+  const items=base.slice().sort((a,b)=> asc ? (val(a)-val(b)) : (val(b)-val(a)));
+  const avg=items.length?Math.round(items.reduce((a,x)=>a+val(x),0)/items.length):0;
   const rows=items.length? items.map((x,i)=>`<tr class="dm-row" data-k="${((x.store||'')+' '+(x.biz||'')).toLowerCase()}"><td class="dm-num">${i+1}</td><td class="trow-time">${fmtShort(x.date)}<br>${escapeHtml(x.hm||'')}</td><td style="font-weight:800;color:${x.min>30?'var(--red)':'var(--green)'}">${x.min}분</td><td style="font-weight:700;color:var(--ink-soft)">${x.dmin!=null?`${x.dmin}분`:'<span style="color:var(--gray2)">—</span>'}</td><td class="emp-name">${escapeHtml(x.store||'-')}</td><td>${x.cat?catChip(x.cat):'<span style="color:var(--gray2)">—</span>'}</td><td class="dm-emp">${escapeHtml(x.who||'-')}</td></tr>`).join('')
     : `<tr><td colspan="7" style="text-align:center;color:var(--gray2);padding:22px">아직 측정된 응답 건이 없습니다.<br><span style="font-size:12px">배포 후 새로 인입·확인된 건부터 순차 집계됩니다.</span></td></tr>`;
   let el=document.getElementById('respModal'); if(!el){ el=document.createElement('div'); el.id='respModal'; el.className='detail-overlay'; el.onclick=e=>{ if(e.target===el) el.remove(); }; document.body.appendChild(el); }
-  el.innerHTML=`<div class="detail-box"><div class="detail-head"><h3>⏱️ 응답시간 상세${respDetailLabel?` · ${escapeHtml(respDetailLabel)}`:''} <span class="cnt-badge">${items.length}건 · 평균 ${avg}분</span></h3><button class="detail-x" onclick="document.getElementById('respModal').remove()">✕</button></div>
-    <div class="seg" style="margin-top:10px"><button class="${respSortMode==='fast'?'on':''}" onclick="respSort('fast')">응답 빠른순 ↑</button><button class="${respSortMode==='slow'?'on':''}" onclick="respSort('slow')">응답 느린순 ↓</button></div>
+  el.innerHTML=`<div class="detail-box"><div class="detail-head"><h3>${DUR?'🛠️ 소요시간':'⏱️ 응답시간'} 상세${respDetailLabel?` · ${escapeHtml(respDetailLabel)}`:''} <span class="cnt-badge">${items.length}건 · 평균 ${avg}분</span></h3><button class="detail-x" onclick="document.getElementById('respModal').remove()">✕</button></div>
+    <div class="seg" style="margin-top:10px"><button class="${respSortMode==='fast'?'on':''}" onclick="respSort('fast')">응답 빠른순 ↑</button><button class="${respSortMode==='slow'?'on':''}" onclick="respSort('slow')">응답 느린순 ↓</button><button class="${respSortMode==='dslow'?'on':''}" onclick="respSort('dslow')">소요 느린순 ↓</button><button class="${respSortMode==='dfast'?'on':''}" onclick="respSort('dfast')">소요 빠른순 ↑</button></div>
     <div class="detail-scroll"><table class="voc-table"><thead><tr><th style="width:34px">#</th><th style="width:70px">올라온</th><th style="width:60px">응답</th><th style="width:60px">소요</th><th>상호</th><th style="width:84px">유형</th><th style="width:86px">담당</th></tr></thead><tbody>${rows}</tbody></table></div></div>`;
 }
 
