@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6831,
+  "version": 6832,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145658,6 +145658,7 @@ window.SLACK_DATA = {
     "2026-08-31": {
       "counts": {
         "as": {
+          "김현기": 1,
           "송태양": 2,
           "배선유": 1,
           "심성현": 1
@@ -145668,6 +145669,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:21",
+          "store": "엠투파크골프 정릉점",
+          "biz": "3634701185",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "결제 화면은 정상적으로 노출 되고 있으나, ic칩 반응이 없어서 점검 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트 물리 껏켯 후 정상"
+        },
         {
           "time": "09:06",
           "store": "부엉이젤라또",
@@ -145725,11 +145737,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 4,
+        "online": 5,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:23",
+      "updatedAt": "09:25",
       "voc": {
         "responses": 1,
         "install": {
@@ -145822,13 +145834,9 @@ window.SLACK_DATA = {
         "post": "1788001134.838139",
         "lastSeen": 1788001233.557
       },
-      "1788134406.513879": {
-        "post": "1788134406.513879",
-        "lastSeen": 1788135801.597
-      },
-      "1788135781.438689": {
-        "post": "1788135781.438689",
-        "lastSeen": 1788135801.597
+      "1788135913.527579": {
+        "post": "1788135913.527579",
+        "lastSeen": 1788135979.05
       }
     },
     "days": {
@@ -182472,7 +182480,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 09:23",
+    "at": "2026-08-31 09:26",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
