@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6920,
+  "version": 6921,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145659,11 +145659,11 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "송태양": 6,
+          "김현기": 5,
           "배선유": 8,
           "고경림": 6,
           "심성현": 12,
-          "김규빈": 2,
-          "김현기": 4
+          "김규빈": 2
         },
         "extern": {
           "서상원": 4,
@@ -145712,6 +145712,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "• 금일 5시 45분 예약요청으로 예약 완료입니다 금일 5시 45분 예약요청으로 예약 완료입니다"
+        },
+        {
+          "time": "11:54",
+          "store": "루미에 네일",
+          "biz": "3436900433",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "포프(pc,모바일) / 주로 pc로 프론트 연결하고 있는데 자주 연결 끊김 현상 발생되어 점검 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "폰에 중복 잡혀있음 폰 프론트 삭제, 노트북 토스포스 최신 업데이트 안내 오나료"
         },
         {
           "time": "11:52",
@@ -146391,11 +146402,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 52,
+        "online": 53,
         "offline": 11,
         "unknown": 0
       },
-      "updatedAt": "12:01",
+      "updatedAt": "12:06",
       "voc": {
         "responses": 2,
         "install": {
@@ -146499,11 +146510,15 @@ window.SLACK_DATA = {
       },
       "1788138906.847629": {
         "post": "1788138906.847629",
-        "lastSeen": 1788145462.393
+        "lastSeen": 1788145642.353
       },
       "1788142500.935479": {
         "post": "1788142500.935479",
         "lastSeen": 1788143545.697
+      },
+      "1788145610.346859": {
+        "post": "1788145610.346859",
+        "lastSeen": 1788145642.353
       }
     },
     "days": {
@@ -183395,7 +183410,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 12:04",
+    "at": "2026-08-31 12:07",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
