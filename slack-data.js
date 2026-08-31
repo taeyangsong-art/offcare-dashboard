@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6917,
+  "version": 6918,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145659,13 +145659,13 @@ window.SLACK_DATA = {
       "counts": {
         "extern": {
           "서상원": 4,
+          "김동욱": 1,
           "배선유": 1
         },
         "as": {
           "배선유": 8,
           "고경림": 6,
           "심성현": 12,
-          "김동욱": 1,
           "김규빈": 2,
           "김현기": 4,
           "송태양": 5
@@ -145773,12 +145773,12 @@ window.SLACK_DATA = {
           "time": "11:16",
           "store": "제로스토어_광양 마동점",
           "biz": "",
-          "cat": "as",
+          "cat": "extern",
           "emp": "김동욱",
           "req": "외주설치요청드려요",
           "hw": "",
           "intake": "online",
-          "note": "여기 업데이트 미리하는거 공지 못받았다는디.."
+          "note": "여기 업데이트 미리하는거 공지 못받았다는디.. / / ?.."
         },
         {
           "time": "11:15",
@@ -146384,7 +146384,7 @@ window.SLACK_DATA = {
         "offline": 11,
         "unknown": 0
       },
-      "updatedAt": "11:58",
+      "updatedAt": "12:00",
       "voc": {
         "responses": 2,
         "install": {
@@ -146488,7 +146488,7 @@ window.SLACK_DATA = {
       },
       "1788138906.847629": {
         "post": "1788138906.847629",
-        "lastSeen": 1788145159.157
+        "lastSeen": 1788145224.178
       },
       "1788142500.935479": {
         "post": "1788142500.935479",
@@ -183384,7 +183384,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 11:59",
+    "at": "2026-08-31 12:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
