@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6888,
+  "version": 6889,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145658,7 +145658,7 @@ window.SLACK_DATA = {
     "2026-08-31": {
       "counts": {
         "as": {
-          "심성현": 10,
+          "심성현": 11,
           "서상원": 1,
           "김규빈": 1,
           "고경림": 4,
@@ -145701,6 +145701,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "11:00",
+          "store": "통도자연휴향림",
+          "biz": "4483101258",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포프(PC) + 유프 온보딩 도움 부탁드립니다. (방문 하였으나 매장 인터넷 문제로 온보딩 불가했던 매장 원격 온보딩 도움 요청) / 포스기 추가하실지 PC에 연결하실지 주말동안 고민 해보신다고 하심. 통화하여 PC로 하신다면 pc로 온보딩, 포스기 ",
+          "hw": "",
+          "intake": "online",
+          "note": "포스 구매 희망 기기 추가 이관"
+        },
         {
           "time": "10:55",
           "store": "물댄동산 수학공부방",
@@ -146202,11 +146213,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 39,
+        "online": 40,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "11:01",
+      "updatedAt": "11:11",
       "voc": {
         "responses": 2,
         "install": {
@@ -146310,11 +146321,15 @@ window.SLACK_DATA = {
       },
       "1788138906.847629": {
         "post": "1788138906.847629",
-        "lastSeen": 1788142099.598
+        "lastSeen": 1788142281.838
       },
       "1788141600.343609": {
         "post": "1788141600.343609",
-        "lastSeen": 1788142099.598
+        "lastSeen": 1788142281.838
+      },
+      "1788142261.232249": {
+        "post": "1788142261.232249",
+        "lastSeen": 1788142281.838
       }
     },
     "days": {
@@ -183166,7 +183181,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 11:08",
+    "at": "2026-08-31 11:11",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
