@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1318,
- "updatedAt": "2026-08-31 13:46",
+ "version": 1319,
+ "updatedAt": "2026-08-31 13:50",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "1788080492312.jpg",
      "fid": "F0BULFWDH16",
      "from": "댓글",
-     "path": "menu-files/1788151458_059829-0.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -141,13 +140,13 @@ window.MENU_REQUESTS = {
        "name": "공기밥",
        "price": 1000
       }
-     ]
+     ],
+     "path": "menu-files/1788151458_059829-0.jpg"
     },
     {
      "name": "1788080492361.jpg",
      "fid": "F0BTN1JBMGV",
      "from": "댓글",
-     "path": "menu-files/1788151458_059829-1.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -275,13 +274,13 @@ window.MENU_REQUESTS = {
        "name": "싯가상품",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1788151458_059829-1.jpg"
     },
     {
      "name": "1788080492403.jpg",
      "fid": "F0BTAPLLMM5",
      "from": "댓글",
-     "path": "menu-files/1788151458_059829-2.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -344,13 +343,13 @@ window.MENU_REQUESTS = {
        "name": "튀김만두+소시지",
        "price": 8000
       }
-     ]
+     ],
+     "path": "menu-files/1788151458_059829-2.jpg"
     },
     {
      "name": "1788080492447.jpg",
      "fid": "F0BTU2EVD17",
      "from": "댓글",
-     "path": "menu-files/1788151458_059829-3.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -418,13 +417,13 @@ window.MENU_REQUESTS = {
        "name": "찜",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1788151458_059829-3.jpg"
     },
     {
      "name": "1788080492490.jpg",
      "fid": "F0BTVQVASRJ",
      "from": "댓글",
-     "path": "menu-files/1788151458_059829-4.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -542,13 +541,13 @@ window.MENU_REQUESTS = {
        "name": "항/깻잎육회",
        "price": 38000
       }
-     ]
+     ],
+     "path": "menu-files/1788151458_059829-4.jpg"
     },
     {
      "name": "1788080492532.jpg",
      "fid": "F0BULFZ6HBJ",
      "from": "댓글",
-     "path": "menu-files/1788151458_059829-5.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -611,7 +610,8 @@ window.MENU_REQUESTS = {
        "name": "항/어묵탕",
        "price": 13000
       }
-     ]
+     ],
+     "path": "menu-files/1788151458_059829-5.jpg"
     },
     {
      "name": "1788080492575.jpg",
@@ -656,8 +656,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "RM메일 인입건"
    ],
-   "rc": 2,
-   "lr": "1788151522.243139",
+   "rc": 3,
+   "lr": "1788151702.855899",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -679,7 +679,6 @@ window.MENU_REQUESTS = {
      "name": "1788080399622.jpg",
      "fid": "F0BTQ6FMHHC",
      "from": "댓글",
-     "path": "menu-files/1788151152_027469-0.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -797,13 +796,13 @@ window.MENU_REQUESTS = {
        "name": "콜키지",
        "price": 10000
       }
-     ]
+     ],
+     "path": "menu-files/1788151152_027469-0.jpg"
     },
     {
      "name": "1788080399715.jpg",
      "fid": "F0BTVQGULAG",
      "from": "댓글",
-     "path": "menu-files/1788151152_027469-1.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -921,13 +920,13 @@ window.MENU_REQUESTS = {
        "name": "포장",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1788151152_027469-1.jpg"
     },
     {
      "name": "1788080399760.jpg",
      "fid": "F0BTAPBLZ8F",
      "from": "댓글",
-     "path": "menu-files/1788151152_027469-2.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -950,13 +949,13 @@ window.MENU_REQUESTS = {
        "name": "소고기육전",
        "price": 25000
       }
-     ]
+     ],
+     "path": "menu-files/1788151152_027469-2.jpg"
     },
     {
      "name": "1788080399804.jpg",
      "fid": "F0BTVQHPEDS",
      "from": "댓글",
-     "path": "menu-files/1788151152_027469-3.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -1059,13 +1058,13 @@ window.MENU_REQUESTS = {
        "name": "어묵5개추가",
        "price": 5000
       }
-     ]
+     ],
+     "path": "menu-files/1788151152_027469-3.jpg"
     },
     {
      "name": "1788080399848.jpg",
      "fid": "F0BTN1912BX",
      "from": "댓글",
-     "path": "menu-files/1788151152_027469-4.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -1148,7 +1147,15 @@ window.MENU_REQUESTS = {
        "name": "새우/연어",
        "price": 59000
       }
-     ]
+     ],
+     "path": "menu-files/1788151152_027469-4.jpg"
+    },
+    {
+     "name": "독도집광주공원점.xlsx",
+     "fid": "F0BTN1PLZJ9",
+     "from": "댓글",
+     "path": "menu-files/1788151152_027469-5.xlsx",
+     "nj": 1
     }
    ],
    "datt": [],
@@ -1156,8 +1163,8 @@ window.MENU_REQUESTS = {
     "RM 메일 인입건",
     "선유님..! 요기 엑셀파일도 있는데 업로드가 안되어서 혹시 RM메일도 같이 봐주실 수 있으실까요..!? (매장 2개라서 하나 더 스레드 생성해서 올리겠슴다 !)"
    ],
-   "rc": 3,
-   "lr": "1788151383.569629",
+   "rc": 4,
+   "lr": "1788151555.863229",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
