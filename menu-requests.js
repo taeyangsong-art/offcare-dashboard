@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1302,
- "updatedAt": "2026-08-31 11:12",
+ "version": 1303,
+ "updatedAt": "2026-08-31 11:13",
  "days": 30,
  "items": [
   {
@@ -2735,8 +2735,8 @@ window.MENU_REQUESTS = {
     "삼계탕 카테고리의\n런치2종삭제\n\n비빔밥 카테고리의\n런치2종삭제\n\n(포스/키오스크 모두 삭제 필요)",
     "메뉴가격 수정 추가2건\n\n불고기비빔밥(고기2배)\n14900\n\n오당비빔밥(오징어2배)\n14900"
    ],
-   "rc": 7,
-   "lr": "1788142345.928069",
+   "rc": 8,
+   "lr": "1788142376.303439",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
