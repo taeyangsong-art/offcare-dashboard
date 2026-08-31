@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1364,
- "updatedAt": "2026-08-31 20:09",
+ "version": 1365,
+ "updatedAt": "2026-08-31 20:10",
  "days": 30,
  "items": [
   {
@@ -20,9 +20,12 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1788174562.353719",
+   "replies": [
+    "카테고리: 신메뉴\n메뉴명: 게살계란덮밥\n금액: 10,900원",
+    "사진은 이메일로 보내셨다고 합니다."
+   ],
+   "rc": 3,
+   "lr": "1788174591.487869",
    "rfx": 3,
    "status": "wait",
    "handler": null,
