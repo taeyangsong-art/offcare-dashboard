@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6881,
+  "version": 6882,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145658,8 +145658,9 @@ window.SLACK_DATA = {
     "2026-08-31": {
       "counts": {
         "as": {
+          "서상원": 1,
           "김규빈": 1,
-          "심성현": 8,
+          "심성현": 9,
           "배선유": 5,
           "김현기": 4,
           "송태양": 4,
@@ -145697,6 +145698,17 @@ window.SLACK_DATA = {
       ],
       "done": [
         {
+          "time": "10:52",
+          "store": "우고하우스 우현점",
+          "biz": "5660503254",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "외주",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
+        {
           "time": "10:45",
           "store": "소담",
           "biz": "6450201688",
@@ -145707,6 +145719,17 @@ window.SLACK_DATA = {
           "urgent": true,
           "intake": "offline",
           "note": "현재는 재부팅 후 정상 안바쁠시간때 재부팅 하셔서 동일 증상 확인 필요 영상 찍어놔달라고 요청 드림"
+        },
+        {
+          "time": "10:44",
+          "store": "별아헤어(byulaHair)",
+          "biz": "6043501875",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포프(노트북) + 프론트 온보딩 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "기기 미수령 / 장비 확인 후 재인입 예정"
         },
         {
           "time": "10:33",
@@ -146119,8 +146142,8 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 34,
-        "offline": 5,
+        "online": 35,
+        "offline": 6,
         "unknown": 0
       },
       "updatedAt": "10:55",
@@ -146227,11 +146250,7 @@ window.SLACK_DATA = {
       },
       "1788138906.847629": {
         "post": "1788138906.847629",
-        "lastSeen": 1788141443.218
-      },
-      "1788141342.870519": {
-        "post": "1788141342.870519",
-        "lastSeen": 1788141443.218
+        "lastSeen": 1788141562.877
       }
     },
     "days": {
@@ -182842,8 +182861,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-31": {
-        "cnt": 26,
-        "sumMin": 119.91358592112859,
+        "cnt": 27,
+        "sumMin": 122.5832022746404,
         "over": 0,
         "items": [
           {
@@ -183053,13 +183072,21 @@ window.SLACK_DATA = {
             "biz": "5341202858",
             "who": "김규빈",
             "cat": "as"
+          },
+          {
+            "hm": "10:55",
+            "min": 2.7,
+            "store": "물댄동산 수학공부방",
+            "biz": "4309701312",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-31 10:57",
+    "at": "2026-08-31 10:59",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
