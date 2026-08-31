@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6857,
+  "version": 6858,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145657,6 +145657,9 @@ window.SLACK_DATA = {
     },
     "2026-08-31": {
       "counts": {
+        "extern": {
+          "서상원": 1
+        },
         "as": {
           "심성현": 4,
           "고경림": 3,
@@ -145689,6 +145692,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "10:08",
+          "store": "욱이네 영광모싯잎송편",
+          "biz": "6902300291",
+          "cat": "extern",
+          "emp": "서상원",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "10:00",
           "store": "봄봄언어인지발달센터",
@@ -145912,11 +145926,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 18,
+        "online": 19,
         "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "10:10",
+      "updatedAt": "10:11",
       "voc": {
         "responses": 1,
         "install": {
@@ -146009,9 +146023,9 @@ window.SLACK_DATA = {
         "post": "1788001134.838139",
         "lastSeen": 1788001233.557
       },
-      "1788138331.632729": {
-        "post": "1788138331.632729",
-        "lastSeen": 1788138684.26
+      "1788138705.863259": {
+        "post": "1788138705.863259",
+        "lastSeen": 1788138740.502
       }
     },
     "days": {
@@ -182622,8 +182636,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-08-31": {
-        "cnt": 16,
-        "sumMin": 82.06384426355362,
+        "cnt": 17,
+        "sumMin": 88.40964878002802,
         "over": 0,
         "items": [
           {
@@ -182753,13 +182767,21 @@ window.SLACK_DATA = {
             "biz": "5101594450",
             "who": "고경림",
             "cat": "as"
+          },
+          {
+            "hm": "10:05",
+            "min": 6.3,
+            "store": "컴포즈_본사테스트",
+            "biz": "5218102386",
+            "who": "김동욱",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-08-31 10:11",
+    "at": "2026-08-31 10:12",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
