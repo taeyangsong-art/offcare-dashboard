@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 6846,
+  "version": 6847,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -145657,14 +145657,15 @@ window.SLACK_DATA = {
     },
     "2026-08-31": {
       "counts": {
+        "onboarding": {
+          "김동욱": 1,
+          "고경림": 1
+        },
         "as": {
           "배선유": 2,
           "김현기": 1,
           "송태양": 2,
           "심성현": 1
-        },
-        "onboarding": {
-          "고경림": 1
         },
         "menu": {
           "배선유": 2
@@ -145682,6 +145683,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / • 돼지불백 11,000원에서 12,000원으로 변경 돼지불백 11,000원에서 12,000원으로 변경 / 솔라피 발송"
+        },
+        {
+          "time": "09:40",
+          "store": "법무법인 대웅 (삼척)",
+          "biz": "5968602221",
+          "cat": "onboarding",
+          "emp": "김동욱",
+          "req": "터+프 온보딩 요청(오프 pg 매장)",
+          "hw": "",
+          "intake": "online",
+          "note": "강릉 온보딩 완료."
         },
         {
           "time": "09:28",
@@ -145773,11 +145785,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 7,
+        "online": 8,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:50",
+      "updatedAt": "09:52",
       "voc": {
         "responses": 1,
         "install": {
@@ -145872,19 +145884,19 @@ window.SLACK_DATA = {
       },
       "1788136202.747429": {
         "post": "1788136202.747429",
-        "lastSeen": 1788137421.437
+        "lastSeen": 1788137541.982
       },
       "1788137101.327189": {
         "post": "1788137101.327189",
-        "lastSeen": 1788137421.437
+        "lastSeen": 1788137541.982
       },
       "1788137124.356329": {
         "post": "1788137124.356329",
-        "lastSeen": 1788137421.437
+        "lastSeen": 1788137541.982
       },
       "1788137402.391549": {
         "post": "1788137402.391549",
-        "lastSeen": 1788137421.437
+        "lastSeen": 1788137541.982
       }
     },
     "days": {
@@ -182576,7 +182588,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-08-31 09:50",
+    "at": "2026-08-31 09:52",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
