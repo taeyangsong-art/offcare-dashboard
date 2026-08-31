@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1336,
- "updatedAt": "2026-08-31 14:44",
+ "version": 1337,
+ "updatedAt": "2026-08-31 14:48",
  "days": 30,
  "items": [
   {
@@ -45,10 +45,10 @@ window.MENU_REQUESTS = {
     "RICE\nJIZ MAZZA / 소고기 야채볶음 — 18,000원\nIPAK YO'LI BEEF / 소고기 부추볶음 — 17,000원\nQAYMOQLI GO'SHT / 크림 소고기버섯 — 19,000원\n\nSALAD\nBAQLAJON MAZZA / 가지 후무스 — 18,000원\nQUVVAT SALAT / 소고기 브로콜리 — 16,000원",
     ":memo: 메뉴 등록 후 솔라피 발송 예정"
    ],
-   "rc": 3,
-   "lr": "1788154558.930939",
+   "rc": 4,
+   "lr": "1788155301.371949",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788154049894859"
   },
