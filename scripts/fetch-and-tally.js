@@ -24,7 +24,7 @@ const catMap = { '원격온보딩':'onboarding', '원격as':'as', '원격명의�
 // 이모지 이름 목록은 personMap에서 자동 생성 — 입·퇴사 시 personMap만 고치면 됨
 const NAMES = Object.keys(personMap).join('|');
 const RE_EMP      = new RegExp('^원격(' + NAMES + ')$');          // 원격OOO (완료 담당자)
-const RE_CONFIRM  = new RegExp('^(' + NAMES + ')(_확인.*)?$');     // OOO / OOO_확인
+const RE_CONFIRM  = new RegExp('^(' + NAMES + ')(_?확인.*)?$');    // OOO / OOO확인 / OOO_확인_ (밑줄 유무 모두)
 const RE_CONFIRM2 = new RegExp('^(' + NAMES + ')_?확인_?$');       // OOO_확인_
 /* VOC 채널의 '<이름>확인' 이모지 — personMap(원격팀 10명)에 없는 사람도 담당자로 인정한다.
  * 10명만 매칭하던 탓에 유나확인·지혜확인처럼 타팀 담당자의 이모지가 통째로 무시됐고,
@@ -423,35 +423,49 @@ function trackResp(data, msgs, ch) {
     const hasConfirm = names.some(n => RE_CONFIRM.test(n));
     const hasExtern = names.includes('원격외주');
     const responded = hasCat || hasEmp || hasConfirm || hasExtern;   // 담당자가 손댐(확인/완료/카테고리/외주)
-    if (responded) {
-      if (W[key]) {                                    // 직전 실행까지 '확인 없음' → 이번에 확인됨 = 측정 가능
-        // 카테고리 판정(tallyInto 규칙). 응답시간은 '순수 AS' 적재 → 명변·메뉴등록·배달은 제외.
-        let emojiCat = null;
-        for (const n of names) { if (catMap[n] && catMap[n] !== 'voc') { emojiCat = catMap[n]; break; } }
-        const catKey = names.includes('원격외주') ? 'extern' : (emojiCat || (ch && ch.defaultCat) || 'as');
-        if (catKey === 'transfer' || catKey === 'menu' || catKey === 'delivery') { delete W[key]; continue; }
-        const mid = (W[key].lastSeen + nowSec) / 2;    // 확인은 (lastSeen, now) 사이에 발생 → 중간값 추정
-        const respMin = Math.max(0, (mid - postSec) / 60);
-        const day = kstDate(m.ts);
-        if (!day) { delete W[key]; continue; }          // 운영시간 밖(01:00~05:30) — 응답시간 표본에서 제외
-        DD[day] = DD[day] || { cnt: 0, sumMin: 0, over: 0, items: [] };
-        DD[day].items = DD[day].items || [];
-        DD[day].cnt++; DD[day].sumMin += respMin; if (respMin > RESP_DELAY_MIN) DD[day].over++;
-        // 건별 상세(올라온시간·응답분·상호·담당·카테고리) 저장 — 상세 모달용
-        const text = m.text || '';
-        let store = (((text.match(/상호\s*[:：]?\s*(.+)/) || [])[1]) || ((text.match(/매장명\s*[:：]?\s*(.+)/) || [])[1]) || '').trim().split('/')[0].trim();
-        if (store.length > 30) store = store.slice(0, 30);
-        const biz = ((text.match(/사업자\s*번?호?\s*[:：]?\s*([\d\-]+)/) || [])[1] || '').replace(/-/g, '').trim();
-        let who = '';
-        for (const n of names) { const pm = n.match(RE_EMP); if (pm) { who = personMap[pm[1]]; break; } }
-        if (!who) for (const n of names) { const cm = n.match(RE_CONFIRM); if (cm) { who = personMap[cm[1]]; break; } }
-        DD[day].items.push({ hm: kstHM(m.ts), min: Math.round(respMin * 10) / 10, store, biz, who, cat: catKey });
-        delete W[key];
-      }
-      // 처음 볼 때 이미 확인됨 → 언제 찍혔는지 알 수 없어 제외
-    } else {
-      W[key] = { post: key, lastSeen: nowSec };        // 관찰중(매 실행 lastSeen 갱신)
+    // 완료 = 카테고리(원격as·원격온보딩…)·원격OOO·원격외주 이모지. 처리를 끝냈을 때 찍으므로 '소요시간'의 종점.
+    // ('OOO확인'은 손댔다는 표시일 뿐이라 응답시간의 종점이고, 소요시간에는 쓰지 않는다)
+    const finished = hasCat || hasEmp || hasExtern;
+    const w = W[key];
+    if (!w) {
+      // 처음 볼 때 이미 이모지가 찍혀 있으면 언제 찍혔는지 알 수 없어 제외. 아무것도 없을 때만 관찰 시작.
+      if (!responded) W[key] = { post: key, lastSeen: nowSec };
+      continue;
     }
+    // 카테고리 판정(tallyInto 규칙). 응답·소요시간은 '순수 AS' 적재 → 명변·메뉴등록·배달은 제외.
+    let emojiCat = null;
+    for (const n of names) { if (catMap[n] && catMap[n] !== 'voc') { emojiCat = catMap[n]; break; } }
+    const catKey = names.includes('원격외주') ? 'extern' : (emojiCat || (ch && ch.defaultCat) || 'as');
+    if (catKey === 'transfer' || catKey === 'menu' || catKey === 'delivery') { delete W[key]; continue; }
+    const day = kstDate(m.ts);
+    if (!day) { delete W[key]; continue; }             // 운영시간 밖(01:00~05:30) — 표본에서 제외
+    const mid = (w.lastSeen + nowSec) / 2;             // 이모지는 (lastSeen, now) 사이에 찍힘 → 중간값 추정
+
+    if (!w.r && responded) {                           // ① 응답(첫 확인) 확정
+      const respMin = Math.max(0, (mid - postSec) / 60);
+      DD[day] = DD[day] || { cnt: 0, sumMin: 0, over: 0, items: [] };
+      DD[day].items = DD[day].items || [];
+      DD[day].cnt++; DD[day].sumMin += respMin; if (respMin > RESP_DELAY_MIN) DD[day].over++;
+      // 건별 상세(올라온시간·응답분·상호·담당·카테고리) 저장 — 상세 모달용
+      const text = m.text || '';
+      let store = (((text.match(/상호\s*[:：]?\s*(.+)/) || [])[1]) || ((text.match(/매장명\s*[:：]?\s*(.+)/) || [])[1]) || '').trim().split('/')[0].trim();
+      if (store.length > 30) store = store.slice(0, 30);
+      const biz = ((text.match(/사업자\s*번?호?\s*[:：]?\s*([\d\-]+)/) || [])[1] || '').replace(/-/g, '').trim();
+      let who = '';
+      for (const n of names) { const pm = n.match(RE_EMP); if (pm) { who = personMap[pm[1]]; break; } }
+      if (!who) for (const n of names) { const cm = n.match(RE_CONFIRM); if (cm) { who = personMap[cm[1]]; break; } }
+      DD[day].items.push({ hm: kstHM(m.ts), min: Math.round(respMin * 10) / 10, store, biz, who, cat: catKey });
+      w.r = 1; w.day = day; w.idx = DD[day].items.length - 1;
+    }
+    if (!w.d && finished) {                            // ② 완료 확정 → 소요시간(dmin)을 같은 건에 붙인다
+      const doneMin = Math.max(0, (mid - postSec) / 60);
+      const arr = (DD[w.day] && DD[w.day].items) || null;
+      const it = arr && w.idx != null ? arr[w.idx] : null;
+      if (it) { it.dmin = Math.round(doneMin * 10) / 10; it.cat = catKey; }   // 완료 이모지가 최종 카테고리
+      w.d = 1;
+    }
+    if (w.r && w.d) delete W[key];                     // 둘 다 측정 완료 → 관찰 종료
+    else w.lastSeen = nowSec;                          // 아직 남았으면 계속 관찰
   }
   for (const k in W) { if (nowSec - parseFloat(W[k].post) > 2 * 86400) delete W[k]; }   // 무응답 2일 경과 정리
 }

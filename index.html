@@ -313,6 +313,11 @@
   #mvpCard .hl-big{font-size:34px}
   /* AS 응답시간 카드 — 오늘 값만으로는 추세를 못 보므로 최근 7일·30일 평균을 함께 노출 */
   .hl-trend{margin-top:14px; padding-top:11px; border-top:1px solid rgba(0,0,0,.08); display:flex; flex-direction:column; gap:8px}
+  /* 응답시간 카드 안의 보조 지표(평균 소요시간) — 큰 숫자(응답)와 트렌드 사이 한 줄 */
+  .hl-sub{margin-top:10px; padding-top:9px; border-top:1px solid rgba(0,0,0,.08);
+    display:flex; align-items:baseline; justify-content:space-between; gap:10px; font-size:13px; color:var(--ink-soft)}
+  .hl-sub b{font-size:19px; font-weight:800; color:var(--ink)}
+  .hl-sub .sc{font-size:11.5px; color:var(--gray2); font-weight:600; margin-left:5px}
   .hl-trend-row{display:flex; align-items:baseline; justify-content:space-between; gap:10px; border-radius:8px; padding:2px 4px; margin:0 -4px; transition:background .15s}
   .hl-trend-row.clickable{cursor:pointer}
   .hl-trend-row.clickable:hover{background:rgba(0,0,0,.045)}
@@ -1428,6 +1433,19 @@ function respStats(dates){
   let cnt=0,sum=0,over=0;
   for(const d of dates){ const arr=(R[d]&&R[d].items)||[]; for(const it of arr){ if(it.cat&&RESP_EXCL_CATS.includes(it.cat)) continue; cnt++; sum+=it.min||0; if((it.min||0)>30) over++; } }
   return {cnt, avg: cnt?Math.round(sum/cnt):0, overRate: cnt?Math.round(over/cnt*100):0};
+}
+// 소요시간(요청→처리 완료). 응답시간이 'OOO확인'(손댐) 기준인 것과 달리,
+// 카테고리 이모지(원격as·원격온보딩·원격외주 = 처리를 끝냈을 때 찍음) 시각을 종점으로 본다.
+// 같은 items 배열의 dmin 을 쓰므로 제외 카테고리 규칙도 응답시간과 동일하다.
+function doneStats(dates){
+  const R=(window.SLACK_DATA&&window.SLACK_DATA.resp&&window.SLACK_DATA.resp.days)||{};
+  let cnt=0,sum=0;
+  for(const d of dates){ const arr=(R[d]&&R[d].items)||[]; for(const it of arr){
+    if(it.cat&&RESP_EXCL_CATS.includes(it.cat)) continue;
+    if(it.dmin==null) continue;                       // 아직 완료 이모지가 안 찍힌 건
+    cnt++; sum+=it.dmin;
+  } }
+  return {cnt, avg: cnt?Math.round(sum/cnt):0};
 }
 
 // 공유(일정) 이벤트 유형
@@ -4484,6 +4502,7 @@ function renderOverview(){
   // 응답시간(요청→첫 확인) 폴링 집계 — 선택 기간 + 추세용 최근 7일·30일
   const respAgg = respStats(viewDates);
   const RESP_TRENDS = [7,30].map(n=>({n, lab:`최근 ${n}일 평균`, st:respStats(lastNDays(n))}));
+  const doneAgg = doneStats(viewDates);   // 요청 → 처리 완료(카테고리 이모지)까지
 
   document.getElementById("main").innerHTML = `
     <div class="page-head">
@@ -4526,6 +4545,10 @@ function renderOverview(){
         <div class="hl-lab">${periodWord} AS 평균 응답시간 ${respAgg.cnt?'<span class="hl-drill">🔎</span>':'<span class="hl-drill" title="AS 요청글이 올라온 뒤 담당자 확인 이모지가 찍히기까지 걸린 평균 시간 (10분 폴링 근사) · 명의변경·메뉴등록·배달 제외">ⓘ</span>'}</div>
         <div class="hl-big">${respAgg.cnt?`${respAgg.avg}<small>분</small>`:`<span style="font-size:21px;color:var(--gray2);font-weight:700">집계 대기중</span>`}</div>
         <div class="ov-delta flat"><span>${respAgg.cnt?`지연율(30분↑) ${respAgg.overRate}% · ${respAgg.cnt}건 기준`:'배포 후 인입 건부터 순차 집계'}</span></div>
+        <div class="hl-sub" title="요청글이 올라온 뒤 처리 완료(A/S·온보딩 등 카테고리 이모지)까지 걸린 평균 시간 · 10분 폴링 근사">
+          <span>🛠️ ${periodWord} 평균 소요시간</span>
+          <span>${doneAgg.cnt?`<b>${doneAgg.avg}</b>분<span class="sc">${doneAgg.cnt}건</span>`:'<span class="sc">집계 대기중</span>'}</span>
+        </div>
         <div class="hl-trend">
           ${RESP_TRENDS.map(t=>t.st.cnt
             ? `<div class="hl-trend-row clickable" title="클릭 → 최근 ${t.n}일 건별 응답시간 상세" onclick="event.stopPropagation();showRespDetail(${t.n})">
@@ -4757,12 +4780,12 @@ function respSort(mode){ respSortMode=mode; renderRespModal(); }
 function renderRespModal(){
   const items=respDetailItems.slice().sort((a,b)=> respSortMode==='fast' ? (a.min-b.min) : (b.min-a.min));
   const avg=items.length?Math.round(items.reduce((a,x)=>a+(x.min||0),0)/items.length):0;
-  const rows=items.length? items.map((x,i)=>`<tr class="dm-row" data-k="${((x.store||'')+' '+(x.biz||'')).toLowerCase()}"><td class="dm-num">${i+1}</td><td class="trow-time">${fmtShort(x.date)}<br>${escapeHtml(x.hm||'')}</td><td style="font-weight:800;color:${x.min>30?'var(--red)':'var(--green)'}">${x.min}분</td><td class="emp-name">${escapeHtml(x.store||'-')}</td><td>${x.cat?catChip(x.cat):'<span style="color:var(--gray2)">—</span>'}</td><td class="dm-emp">${escapeHtml(x.who||'-')}</td></tr>`).join('')
-    : `<tr><td colspan="6" style="text-align:center;color:var(--gray2);padding:22px">아직 측정된 응답 건이 없습니다.<br><span style="font-size:12px">배포 후 새로 인입·확인된 건부터 순차 집계됩니다.</span></td></tr>`;
+  const rows=items.length? items.map((x,i)=>`<tr class="dm-row" data-k="${((x.store||'')+' '+(x.biz||'')).toLowerCase()}"><td class="dm-num">${i+1}</td><td class="trow-time">${fmtShort(x.date)}<br>${escapeHtml(x.hm||'')}</td><td style="font-weight:800;color:${x.min>30?'var(--red)':'var(--green)'}">${x.min}분</td><td style="font-weight:700;color:var(--ink-soft)">${x.dmin!=null?`${x.dmin}분`:'<span style="color:var(--gray2)">—</span>'}</td><td class="emp-name">${escapeHtml(x.store||'-')}</td><td>${x.cat?catChip(x.cat):'<span style="color:var(--gray2)">—</span>'}</td><td class="dm-emp">${escapeHtml(x.who||'-')}</td></tr>`).join('')
+    : `<tr><td colspan="7" style="text-align:center;color:var(--gray2);padding:22px">아직 측정된 응답 건이 없습니다.<br><span style="font-size:12px">배포 후 새로 인입·확인된 건부터 순차 집계됩니다.</span></td></tr>`;
   let el=document.getElementById('respModal'); if(!el){ el=document.createElement('div'); el.id='respModal'; el.className='detail-overlay'; el.onclick=e=>{ if(e.target===el) el.remove(); }; document.body.appendChild(el); }
   el.innerHTML=`<div class="detail-box"><div class="detail-head"><h3>⏱️ 응답시간 상세${respDetailLabel?` · ${escapeHtml(respDetailLabel)}`:''} <span class="cnt-badge">${items.length}건 · 평균 ${avg}분</span></h3><button class="detail-x" onclick="document.getElementById('respModal').remove()">✕</button></div>
     <div class="seg" style="margin-top:10px"><button class="${respSortMode==='fast'?'on':''}" onclick="respSort('fast')">응답 빠른순 ↑</button><button class="${respSortMode==='slow'?'on':''}" onclick="respSort('slow')">응답 느린순 ↓</button></div>
-    <div class="detail-scroll"><table class="voc-table"><thead><tr><th style="width:34px">#</th><th style="width:70px">올라온</th><th style="width:60px">응답</th><th>상호</th><th style="width:84px">유형</th><th style="width:86px">담당</th></tr></thead><tbody>${rows}</tbody></table></div></div>`;
+    <div class="detail-scroll"><table class="voc-table"><thead><tr><th style="width:34px">#</th><th style="width:70px">올라온</th><th style="width:60px">응답</th><th style="width:60px">소요</th><th>상호</th><th style="width:84px">유형</th><th style="width:86px">담당</th></tr></thead><tbody>${rows}</tbody></table></div></div>`;
 }
 
 // 전체 처리 추이 (기간 내 일별 전 카테고리 합계)
