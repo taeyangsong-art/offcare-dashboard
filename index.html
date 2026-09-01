@@ -3148,7 +3148,11 @@ const ADM_HIST = [
 ];
 // 리포트 행을 라이브 행과 같은 모양으로 맞춘다(평일 수는 달력에서 계산 — 1일 평균 비교용)
 function admHistRows(){
-  return ADM_HIST.map(h=>Object.assign({}, h, {hist:true, days:0, biz:admBizDays(h.m), bizCnt:h.total, emps:0, ob:0, voc:h.by.voc||0}));
+  // total 은 라이브 행과 기준을 맞춰 '실 처리 건수'(done)를 쓴다.
+  // 라이브의 total 은 처리 건수 합이라, 리포트의 '원격 인입 건수'를 넣으면 같은 열에 인입/처리가 섞인다.
+  // 인입 값은 intake 로 따로 남겨 전월 비교 탭에서 쓴다.
+  return ADM_HIST.map(h=>Object.assign({}, h, {hist:true, days:0, biz:admBizDays(h.m),
+    intake:h.total, total:h.done, bizCnt:h.done, emps:0, ob:0, voc:h.by.voc||0}));
 }
 // 리포트(1~6월) + 라이브(7월~) 를 이어 붙인 월별 행. 같은 달이 양쪽에 있으면 라이브를 쓴다.
 // 온·오프라인 월별 · 온보딩·AS 월별 두 탭이 함께 쓴다.
@@ -3423,13 +3427,56 @@ function admDri(){
 }
 
 /* ── 탭 3. 전월 업무 비교표 (주간/야간 따로) ── */
+/* 리포트(1~6월) 달의 전월 비교 — 주/야 구분이 없어 '전체' 한 블록으로 낸다.
+ * 증감은 라이브와 같은 기준(1일 평균끼리)으로 계산한다. 1월은 전월(2025.12)이 없어 '—'. */
+function admHistPrevBlock(cur, histMonths){
+  const H=m=>ADM_HIST.find(h=>h.m===m);
+  const a=H(cur), i=histMonths.indexOf(cur), pm=i>0?histMonths[i-1]:null, b=pm?H(pm):null;
+  const ad=admBizDays(cur)||1, bd=pm?(admBizDays(pm)||1):1;
+  const per=(n,d)=>(n/d).toFixed(1);
+  const dl=(x,y)=>{ if(!b) return '<span class="zero">—</span>';
+    if(!y) return x?'<span style="color:var(--green);font-weight:700">신규</span>':'<span class="zero">—</span>';
+    const p=Math.round((x-y)/y*100);
+    return `<span style="color:${p>0?'var(--green)':p<0?'var(--red)':'var(--gray2)'};font-weight:700">${p>0?'▲':p<0?'▼':''}${Math.abs(p)}%</span>`; };
+  const line=(label,ax,bx,strong)=>`<tr><td>${label}</td>
+    <td class="num"${strong?' style="font-weight:800"':''}>${ax.toLocaleString()}</td>
+    <td class="num" style="font-weight:800">${per(ax,ad)}</td>
+    <td class="num" style="color:var(--gray2)">${b?bx.toLocaleString():'—'}</td>
+    <td class="num" style="color:var(--gray2);font-weight:800">${b?per(bx,bd):'—'}</td>
+    <td class="num">${dl(ax/ad, b?bx/bd:0)}</td></tr>`;
+  // 리포트 표의 유형별 순서 그대로. 설치 OB 는 리포트에 없다.
+  const ROWS=[['🚀 온보딩','onboarding'],['🔧 AS','as'],['🧩 외주설치','extern'],['📝 명의변경','transfer'],
+              ['💬 VOC','voc'],['🍱 메뉴등록','menu'],['🛵 배달','delivery']];
+  const rowsH=ROWS.map(([n,k])=>line(n, a.by[k]||0, b?(b.by[k]||0):0)).join('')
+    + line('📵 부재', a.absent||0, b?(b.absent||0):0);
+  return `<div class="card"><div class="card-head">
+      <h3>📄 전체 — ${cur.replace('-','.')} vs ${pm?pm.replace('-','.'):'전월 없음'}</h3>
+      <span class="hint">월간 리포트 수치 · 주/야 구분 없음 · 평일 ${ad}일 / 전월 평일 ${pm?bd+'일':'—'}</span></div>
+    <div style="overflow-x:auto"><table class="matrix">
+      <thead><tr><th>유형</th>
+        <th class="num">${cur.replace('-','.')}<br><span style="font-weight:600;color:var(--muted)">건수</span></th>
+        <th class="num">${cur.replace('-','.')}<br>1일 평균</th>
+        <th class="num">${pm?pm.replace('-','.'):'전월'}<br><span style="font-weight:600;color:var(--muted)">건수</span></th>
+        <th class="num">${pm?pm.replace('-','.'):'전월'}<br>1일 평균</th>
+        <th class="num">1일 평균<br>증감</th></tr></thead>
+      <tbody>${rowsH}</tbody>
+      <tfoot>${line('원격 인입 건수', a.total, b?b.total:0, true)}${line('실 처리 건수', a.done, b?b.done:0, true)}</tfoot>
+    </table></div></div>`;
+}
 function admPrevMonth(){
   const withData=adminLiveDates();
-  const months=[...new Set(withData.map(d=>d.slice(0,7)))].sort();
+  const liveMonths=[...new Set(withData.map(d=>d.slice(0,7)))].sort();
+  const histMonths=ADM_HIST.map(h=>h.m).filter(m=>!liveMonths.includes(m));
+  const months=[...histMonths, ...liveMonths];
   if(months.length<1) return `<div class="empty-note">처리 상세 데이터가 없습니다.</div>`;
   const cur = adminMonth && months.includes(adminMonth) ? adminMonth : months[months.length-1];
-  const ci = months.indexOf(cur), prev = ci>0 ? months[ci-1] : null;
-  const pick=`<div class="seg">${months.map(m=>`<button class="${m===cur?'on':''}" onclick="setAdminMonth('${m}')">${m.replace('-','.')}</button>`).join('')}</div>`;
+  const pick=`<div class="seg">${months.map(m=>`<button class="${m===cur?'on':''}" onclick="setAdminMonth('${m}')">${m.replace('-','.')}${histMonths.includes(m)?'<span style="font-size:10px;opacity:.65"> 리포트</span>':''}</button>`).join('')}</div>`;
+  if(histMonths.includes(cur)){
+    return `<div class="adm-note">📄 <b>${cur.replace('-','.')}</b> 은 월간 리포트 수치입니다 — 건별 상세가 없어 <b>주/야 구분은 불가</b>하고 '전체' 한 표로 보여줍니다.
+        주/야 비교는 <b>2026.07</b> 이후 달을 고르세요.</div>${pick}${admHistPrevBlock(cur, histMonths)}`;
+  }
+  // 라이브 달의 전월은 '직전 라이브 달' 만 쓴다 — 리포트 달과는 주/야 기준이 달라 비교하면 전부 급감으로 보인다.
+  const ci = liveMonths.indexOf(cur), prev = ci>0 ? liveMonths[ci-1] : null;
 
   const agg = (mm, night) => {
     if(!mm) return null;
@@ -3575,7 +3622,7 @@ function admTypeRows(R){
   });
 }
 function admWorkday(){
-  const R=admMonthly(); if(!R.length) return `<div class="empty-note">집계 데이터가 없습니다.</div>`;
+  const R=admMonthlyWithHist(); if(!R.length) return `<div class="empty-note">집계 데이터가 없습니다.</div>`;
   const L=R.map(r=>r.m.replace('-','.'));
   const perDay=R.map(r=>admPerDay(r.total,r));
   const perPer=R.map(r=>+(r.total/(r.biz||1)/(r.emps||1)).toFixed(1));
@@ -3587,8 +3634,8 @@ function admWorkday(){
     <tbody>${R.map((r,i)=>`<tr><td>${r.m.replace('-','.')}</td>
       <td class="num" style="font-weight:800">${r.biz}</td>
       <td class="num">${r.total.toLocaleString()}</td><td class="num" style="font-weight:800">${perDay[i]}</td>
-      <td class="num" style="color:var(--gray2)">${r.emps}</td><td class="num tot">${perPer[i]}</td>
-      <td class="num" style="color:var(--gray2)">${weekend[i].toLocaleString()}</td></tr>`).join('')}</tbody>
+      <td class="num" style="color:var(--gray2)">${r.hist?'—':r.emps}</td><td class="num tot">${r.hist?'—':perPer[i]}</td>
+      <td class="num" style="color:var(--gray2)">${r.hist?'—':weekend[i].toLocaleString()}</td></tr>`).join('')}</tbody>
   </table></div>`;
   // 막대 = 근무일 수(평일), 선 = 1일 평균 — 참고 이미지의 '근무일 수, 1일 평균' 형태
   const chart=(function(){
@@ -3613,7 +3660,8 @@ function admWorkday(){
         ${R.length>1?`<polyline points="${pts}" fill="none" stroke="#ff3b30" stroke-width="2.5"/>`:''}${dots}</svg></div>
       <div class="legend"><span><span class="swatch" style="background:#0071e3"></span>근무일 수(평일)</span><span><span class="swatch" style="background:#ff3b30"></span>1일 평균 처리</span></div>`;
   })();
-  return admMonthNote(R)
+  return admHistNote(R)
+    + `<div class="adm-note">ℹ️ <b>2026.01~06</b> 은 월간 리포트 수치라 <b>담당자 수·1인 1일 평균·주말 처리분</b>은 알 수 없어 <b>—</b> 로 둡니다.</div>`
     + `<div class="adm-note"><b>근무일 수 = 평일</b>(토·일·공휴일 제외, 공휴일은 대체공휴일 포함). 진행 중인 달은 <b>오늘까지 경과한 평일</b>만 셉니다.
        <b>1일 평균 = 총 건수 ÷ 평일 수</b> — 주말·당직에 처리한 건도 분자에는 들어갑니다(맨 오른쪽 열에 따로 표기).</div>`
     + `<div class="card"><div class="card-head"><h3>근무일 수 · 1일 평균</h3><span class="hint">막대 = 평일 수 · 선 = 1일 평균 처리 건수</span></div>${chart}</div>`
