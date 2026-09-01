@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7569,
+  "version": 7570,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144835,15 +144835,31 @@ window.SLACK_DATA = {
       }
     },
     "2026-09-02": {
-      "counts": {},
+      "counts": {
+        "onboarding": {
+          "김동욱": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "08:11",
+          "store": "올드페리도넛 신사점",
+          "biz": "5208503075",
+          "cat": "onboarding",
+          "emp": "김동욱",
+          "req": "온보딩 요청 부탁드립니다",
+          "hw": "",
+          "intake": "offline",
+          "note": "온보딩 완료"
+        }
+      ],
       "intake": {
         "online": 0,
-        "offline": 0,
+        "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "08:11"
+      "updatedAt": "08:30"
     }
   },
   "resp": {
@@ -144959,6 +144975,10 @@ window.SLACK_DATA = {
       "1788226711.709729": {
         "post": "1788226711.709729",
         "lastSeen": 1788293728.296
+      },
+      "1788305400.214149": {
+        "post": "1788305400.214149",
+        "lastSeen": 1788305434.439
       }
     },
     "days": {
@@ -184436,13 +184456,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-02 08:15",
+    "at": "2026-09-02 08:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3821,
+    "rows": 3824,
     "named": 530,
     "unknownName": 0,
     "beforeStart": 0,
