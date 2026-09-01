@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7288,
+  "version": 7289,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144224,6 +144224,7 @@ window.SLACK_DATA = {
           "김동욱": 1
         },
         "as": {
+          "김규빈": 1,
           "김현기": 10,
           "송태양": 4,
           "심성현": 8,
@@ -144262,6 +144263,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "T6D &lt;&lt; 설치 방법 안내 T6D << 설치 방법 안내"
+        },
+        {
+          "time": "12:10",
+          "store": "이엔비케어",
+          "biz": "6571500417",
+          "cat": "as",
+          "emp": "김규빈",
+          "req": "CPP-3000 / 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "유프 연결 및 사용방법 안내 완료"
         },
         {
           "time": "12:02",
@@ -144938,33 +144950,37 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 52,
+        "online": 53,
         "offline": 10,
         "unknown": 0
       },
-      "updatedAt": "12:19",
+      "updatedAt": "12:22",
       "voc": {
-        "responses": 3,
+        "responses": 4,
         "install": {
           "count": 0,
           "low": 0
         },
         "nps": {
-          "count": 3,
+          "count": 4,
           "low": 0
         },
         "high": {
           "install": 0,
-          "nps": 1
+          "nps": 2
         },
         "npsDist": {
           "6": 1,
           "8": 1,
-          "10": 1
+          "10": 2
         },
         "installDist": {},
         "byIndustry": {},
         "byTenure": {
+          "3개월": {
+            "total": 1,
+            "low": 0
+          },
           "1개월": {
             "total": 2,
             "low": 0
@@ -144975,6 +144991,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SMARTRO": {
+            "total": 1,
+            "low": 0
+          },
           "KIS": {
             "total": 2,
             "low": 0
@@ -144987,6 +145007,18 @@ window.SLACK_DATA = {
         "reasonCounts": {},
         "alerts": [],
         "praises": [
+          {
+            "time": "12:22",
+            "store": "세무회계정담",
+            "storeId": "460774",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "무료인데 좋음",
+            "byReaction": false,
+            "doneDate": ""
+          },
           {
             "time": "10:31",
             "store": "카이로 테라피",
@@ -145058,57 +145090,46 @@ window.SLACK_DATA = {
       },
       "1788224939.479749": {
         "post": "1788224939.479749",
-        "lastSeen": 1788232821.657,
+        "lastSeen": 1788233002.136,
         "r": 1,
         "day": "2026-09-01",
         "idx": 7
       },
       "1788227100.602229": {
         "post": "1788227100.602229",
-        "lastSeen": 1788232821.657,
+        "lastSeen": 1788233002.136,
         "r": 1,
         "day": "2026-09-01",
         "idx": 15
       },
       "1788229556.671949": {
         "post": "1788229556.671949",
-        "lastSeen": 1788232821.657,
+        "lastSeen": 1788233002.136,
         "r": 1,
         "day": "2026-09-01",
         "idx": 27
       },
       "1788231896.099939": {
         "post": "1788231896.099939",
-        "lastSeen": 1788232821.657,
+        "lastSeen": 1788233002.136,
         "r": 1,
         "day": "2026-09-01",
         "idx": 33
       },
-      "1788232200.335729": {
-        "post": "1788232200.335729",
-        "lastSeen": 1788232821.657,
-        "r": 1,
-        "day": "2026-09-01",
-        "idx": 34
-      },
       "1788232500.793549": {
         "post": "1788232500.793549",
-        "lastSeen": 1788232821.657
+        "lastSeen": 1788233002.136
       },
       "1788232481.624169": {
         "post": "1788232481.624169",
-        "lastSeen": 1788232821.657,
+        "lastSeen": 1788233002.136,
         "r": 1,
         "day": "2026-09-01",
         "idx": 35
       },
       "1788232601.653539": {
         "post": "1788232601.653539",
-        "lastSeen": 1788232821.657
-      },
-      "1788226711.709729": {
-        "post": "1788226711.709729",
-        "lastSeen": 1788232821.657
+        "lastSeen": 1788233002.136
       }
     },
     "days": {
@@ -183610,7 +183631,8 @@ window.SLACK_DATA = {
             "store": "이엔비케어",
             "biz": "6571500417",
             "who": "김규빈",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 11.9
           },
           {
             "hm": "12:14",
@@ -183625,7 +183647,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-01 12:20",
+    "at": "2026-09-01 12:23",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
