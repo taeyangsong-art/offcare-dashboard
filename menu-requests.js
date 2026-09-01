@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1393,
- "updatedAt": "2026-09-01 14:22",
+ "version": 1394,
+ "updatedAt": "2026-09-01 14:23",
  "days": 30,
  "items": [
   {
@@ -67,7 +67,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BTV67NWBV",
      "from": "댓글",
-     "path": "menu-files/1788233508_822579-0.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -190,13 +189,13 @@ window.MENU_REQUESTS = {
        "name": "1인 生삼겹김치찜 한그릇 홍밥",
        "price": 12000
       }
-     ]
+     ],
+     "path": "menu-files/1788233508_822579-0.png"
     },
     {
      "name": "image.png",
      "fid": "F0BTX8URBPF",
      "from": "댓글",
-     "path": "menu-files/1788233508_822579-1.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -329,13 +328,247 @@ window.MENU_REQUESTS = {
        "name": "리뷰) 미니계란찜 후기약속",
        "price": 500
       }
+     ],
+     "path": "menu-files/1788233508_822579-1.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BTVL0QKK5",
+     "from": "댓글",
+     "path": "menu-files/1788233508_822579-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "[포동포동] 압력밥솥 돼지갈비찜",
+       "name": "[사장님추천] 간장 돼지갈비찜SET",
+       "price": 29000
+      },
+      {
+       "category": "[포동포동] 압력밥솥 돼지갈비찜",
+       "name": "[HOT] 매운 돼지갈비찜SET",
+       "price": 29000
+      },
+      {
+       "category": "[야들야들] 정말 부드러운 소갈비찜",
+       "name": "[압력밥솥취사] 간장 소갈비찜SET",
+       "price": 35900
+      },
+      {
+       "category": "[야들야들] 정말 부드러운 소갈비찜",
+       "name": "[실시간UP] 매운 소갈비찜SET",
+       "price": 35900
+      },
+      {
+       "category": "가성비 1인분메뉴",
+       "name": "[1인] 간장 돼지갈비찜 SET",
+       "price": 20000
+      },
+      {
+       "category": "가성비 1인분메뉴",
+       "name": "[1인] 매운 돼지갈비찜 SET",
+       "price": 20000
+      },
+      {
+       "category": "가성비 1인분메뉴",
+       "name": "[1인] 간장 소갈비찜 SET",
+       "price": 22900
+      },
+      {
+       "category": "가성비 1인분메뉴",
+       "name": "[1인] 매운 소갈비찜 SET",
+       "price": 22900
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "푸딩계란찜",
+       "price": 3000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "오리지날 주먹밥",
+       "price": 3000
+      },
+      {
+       "category": "사이드 메뉴",
+       "name": "공기밥",
+       "price": 1500
+      },
+      {
+       "category": "음료메뉴",
+       "name": "[뚱캔] 콜라",
+       "price": 2000
+      },
+      {
+       "category": "음료메뉴",
+       "name": "[뚱캔] 제로콜라",
+       "price": 2000
+      },
+      {
+       "category": "음료메뉴",
+       "name": "[뚱캔] 사이다",
+       "price": 2000
+      },
+      {
+       "category": "음료메뉴",
+       "name": "[뚱캔] 제로사이다",
+       "price": 2000
+      },
+      {
+       "category": "주류",
+       "name": "참이슬 후레쉬",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "처음처럼",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "새로",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "테라",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "카스",
+       "price": 5000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BTLGK3UT1",
+     "from": "댓글",
+     "path": "menu-files/1788233508_822579-3.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "사이즈 선택",
+       "name": "2~3인분 선택",
+       "price": 0
+      },
+      {
+       "category": "사이즈 선택",
+       "name": "3~4인분 선택",
+       "price": 10900
+      },
+      {
+       "category": "맵기 선택",
+       "name": "기본맛",
+       "price": 0
+      },
+      {
+       "category": "맵기 선택",
+       "name": "살짝매운맛 [땡초가루1스푼]",
+       "price": 0
+      },
+      {
+       "category": "맵기 선택",
+       "name": "매운맛 [땡초가루2스푼]",
+       "price": 0
+      },
+      {
+       "category": "사리추가",
+       "name": "당면추가",
+       "price": 1500
+      },
+      {
+       "category": "사리추가",
+       "name": "떡 5개 추가",
+       "price": 1500
+      },
+      {
+       "category": "사리추가",
+       "name": "메추리알 5개 추가",
+       "price": 1500
+      },
+      {
+       "category": "사리추가",
+       "name": "감자 추가",
+       "price": 2500
+      },
+      {
+       "category": "사리추가",
+       "name": "비엔나 소시지 5개 추가",
+       "price": 1500
+      },
+      {
+       "category": "사리추가",
+       "name": "모짜렐라 치즈 추가",
+       "price": 2000
+      },
+      {
+       "category": "공기밥 추가",
+       "name": "공기밥 1개추가",
+       "price": 1500
+      },
+      {
+       "category": "공기밥 추가",
+       "name": "공기밥 2개추가",
+       "price": 3000
+      },
+      {
+       "category": "공기밥 추가",
+       "name": "공기밥 3개추가",
+       "price": 4500
+      },
+      {
+       "category": "사이드추가",
+       "name": "푸딩계란찜 추가",
+       "price": 3000
+      },
+      {
+       "category": "사이드추가",
+       "name": "오리지널 주먹밥 추가",
+       "price": 3000
+      },
+      {
+       "category": "김치선택",
+       "name": "김치(O) 주세요",
+       "price": 0
+      },
+      {
+       "category": "김치선택",
+       "name": "김치(X) 빼주세요",
+       "price": 0
+      },
+      {
+       "category": "김치선택",
+       "name": "김치(x2) 두개 주세요",
+       "price": 1000
+      },
+      {
+       "category": "음료선택",
+       "name": "뚱캔) 펩시콜라 추가",
+       "price": 2000
+      },
+      {
+       "category": "음료선택",
+       "name": "뚱캔) 펩시 제로콜라 추가",
+       "price": 2000
+      },
+      {
+       "category": "음료선택",
+       "name": "뚱캔) 칠성사이다 추가",
+       "price": 2000
+      },
+      {
+       "category": "음료선택",
+       "name": "뚱캔) 칠성 제로사이다 추가",
+       "price": 2000
+      }
      ]
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1788240094.179899",
+   "rc": 3,
+   "lr": "1788240166.906939",
    "rfx": 3,
    "status": "confirm",
    "handler": "심성현",
