@@ -155,6 +155,19 @@
   .adj-btn{font-family:inherit; font-size:12.5px; font-weight:700; color:var(--ink-soft); cursor:pointer;
     background:var(--surface); border:1px solid var(--line); border-radius:9px; padding:7px 14px; transition:all .15s}
   .adj-btn:hover{background:var(--canvas); border-color:var(--blue); color:var(--blue)}
+  /* 표 하단 공개 보정 목록 — 암호 없이 전원이 본다 */
+  .adj-pub{margin-top:14px; border-top:1px dashed var(--line); padding-top:11px}
+  .adj-pub-h{font-size:12.5px; font-weight:800; color:var(--ink-soft); margin-bottom:7px}
+  .adj-pub-h span{font-weight:600; color:var(--gray2)}
+  .adj-pub-row{display:flex; align-items:baseline; gap:9px; font-size:12.5px; padding:5px 0; border-bottom:1px solid var(--line-soft)}
+  .adj-pub-row:last-child{border-bottom:none}
+  .adj-pub-row .apd{color:var(--gray2); font-weight:600; white-space:nowrap; min-width:44px}
+  .adj-pub-row .ape{font-weight:800; color:var(--ink); white-space:nowrap}
+  .adj-pub-row .apc{white-space:nowrap}
+  .adj-pub-row .apn{font-weight:800; white-space:nowrap}
+  .adj-pub-row .apw{color:var(--ink-soft); flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+  .adj-pub-row .apb{color:var(--gray2); font-size:11.5px; font-weight:600; white-space:nowrap}
+  @media (max-width:900px){ .adj-pub-row{flex-wrap:wrap} .adj-pub-row .apw{flex-basis:100%} }
   .adj-form{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:12px}
   .adj-form label{display:flex; flex-direction:column; gap:5px; font-size:12px; font-weight:700; color:var(--gray)}
   .adj-form input,.adj-form select{font-family:inherit; font-size:13.5px; padding:8px 10px; border:1px solid var(--line);
@@ -2019,21 +2032,49 @@ function getCount(cat, date, emp){ return (COUNTS[cat] && COUNTS[cat][date] && C
  * 반영은 sumRange(집계 경로)에서만 한다. getCount 는 카테고리 페이지의 수정 input 이
  * 그대로 읽어 setCount 로 되쓰는 자리라, 여기에 더하면 보정이 COUNTS 에 구워져 이중 계산된다.
  * 야간 모드(ovShift='night')는 보정에 시각 정보가 없어 제외된다(설치 OB 와 동일). */
-function adjKey(date, emp, cat){ return date+'|'+emp+'|'+cat; }
-function adjN(date, emp, cat){ const r=ADJUST[adjKey(date,emp,cat)]; return r?(Number(r.n)||0):0; }
-function adjDay(cat, date){    // 담당자 구분 없는 그날 보정 합계(카테고리 총계·기타 행 계산용)
-  let n=0; const pre=date+'|', suf='|'+cat;
-  for(const k in ADJUST){ if(k.indexOf(pre)===0 && k.slice(-suf.length)===suf) n+=Number((ADJUST[k]||{}).n)||0; }
+/* 키는 '날짜|담당자|카테고리|uid'. uid 를 붙여 건별로 따로 저장한다 —
+ * 같은 칸에 여러 번 보정하면 사유도 여러 개이므로, 합쳐버리면 사유 이력이 사라진다. */
+function adjKey(date, emp, cat, uid){ return date+'|'+emp+'|'+cat+'|'+(uid||adjUid()); }
+function adjUid(){ return Date.now().toString(36)+Math.random().toString(36).slice(2,6); }
+function adjParse(k){ const p=k.split('|'); return {date:p[0]||'', emp:p[1]||'', cat:p[2]||'', uid:p[3]||''}; }
+// 삭제된 건은 다른 브라우저에 묘비('')로 도착한다 → 합계·목록에서 모두 걸러낸다
+function adjLive(k){ const r=ADJUST[k]; return !!(r && Number(r.n)); }
+function adjN(date, emp, cat){
+  let n=0;
+  for(const k in ADJUST){ if(!adjLive(k)) continue; const p=adjParse(k);
+    if(p.date===date && p.emp===emp && p.cat===cat) n+=Number(ADJUST[k].n)||0; }
   return n;
 }
-function adjEntries(dates){   // 조회 기간에 걸치는 보정 목록 (최신 날짜순)
+function adjDay(cat, date){    // 담당자 구분 없는 그날 보정 합계(카테고리 총계·기타 행 계산용)
+  let n=0;
+  for(const k in ADJUST){ if(!adjLive(k)) continue; const p=adjParse(k);
+    if(p.date===date && p.cat===cat) n+=Number(ADJUST[k].n)||0; }
+  return n;
+}
+function adjEntries(dates){   // 조회 기간에 걸치는 보정 목록 (최신순)
   const set=new Set(dates||[]);
-  // 삭제된 건은 다른 브라우저에 묘비('')로 도착한다 → 목록·건수에서 걸러낸다
-  return Object.keys(ADJUST).filter(k=>ADJUST[k] && Number(ADJUST[k].n)).filter(k=>set.has(k.split('|')[0]))
-    .map(k=>{ const [date,emp,cat]=k.split('|'); return {k, date, emp, cat, ...ADJUST[k]}; })
-    .sort((a,b)=> b.date.localeCompare(a.date) || a.emp.localeCompare(b.emp));
+  return Object.keys(ADJUST).filter(k=>adjLive(k))
+    .map(k=>({k, ...adjParse(k), ...ADJUST[k]}))
+    .filter(x=>set.has(x.date))
+    .sort((a,b)=> (b.at||'').localeCompare(a.at||'') || b.date.localeCompare(a.date));
 }
 function adjCountIn(dates){ return adjEntries(dates).length; }
+// 표 하단 공개 목록 — 암호 없이 팀 전원이 '누가 왜 몇 건 보정했는지' 를 볼 수 있어야 한다
+function adjPublicList(dates){
+  const list=adjEntries(dates);
+  if(!list.length) return '';
+  return `<div class="adj-pub">
+    <div class="adj-pub-h">⚖️ 이 기간 보정 ${list.length}건 <span>— 아래 표 숫자에 이미 반영된 값입니다</span></div>
+    ${list.map(x=>`<div class="adj-pub-row">
+      <span class="apd">${fmtShort(x.date)}</span>
+      <span class="ape">${escapeHtml(x.emp)}</span>
+      <span class="apc">${catNameOfKey(x.cat)}</span>
+      <span class="apn" style="color:${x.n>0?'var(--blue)':'var(--red)'}">${x.n>0?'+':''}${x.n}건</span>
+      <span class="apw">${x.why?escapeHtml(x.why):'<span style="color:var(--gray2)">사유 미기재</span>'}</span>
+      ${x.by?`<span class="apb">${escapeHtml(x.by)}</span>`:'<span class="apb"></span>'}
+    </div>`).join('')}
+  </div>`;
+}
 function catNameOfKey(key){ const c=WORK_CATS.find(x=>x.key===key); return c?`${c.icon} ${c.name}`:key; }
 
 // ── 보정 모달 ─────────────────────────────────────────────────────────────
@@ -2043,6 +2084,7 @@ function openAdjust(){
   const list=adjEntries(dates);
   const rows=list.length? list.map(x=>`<div class="adj-row">
       <span>${fmtShort(x.date)} · <b>${escapeHtml(x.emp)}</b> · ${catNameOfKey(x.cat)} <b style="color:${x.n>0?'var(--blue)':'var(--red)'}">${x.n>0?'+':''}${x.n}건</b>
+        ${x.why?`<span style="color:var(--ink-soft)"> — ${escapeHtml(x.why)}</span>`:''}
         ${x.by?`<span style="color:var(--gray2);font-size:11.5px">· ${escapeHtml(x.by)}</span>`:''}</span>
       <button class="adj-del" onclick="deleteAdjust('${x.k}')">삭제</button>
     </div>`).join('') : '<div class="empty-note" style="padding:12px 0">이 기간에 적용된 보정이 없습니다</div>';
@@ -2057,6 +2099,8 @@ function openAdjust(){
         <label>담당자<select id="adjEmp">${EMPLOYEES.map(e=>`<option>${e}</option>`).join('')}</select></label>
         <label>카테고리<select id="adjCat">${WORK_CATS.map(c=>`<option value="${c.key}"${c.key==='menu'?' selected':''}>${c.icon} ${c.name}</option>`).join('')}</select></label>
         <label>건수 (음수 = 차감)<input type="number" id="adjNum" value="1" step="1"></label>
+        <label class="wide">보정 사유 <span style="font-weight:600;color:var(--gray2)">(표 하단·처리상세에 공개됩니다)</span>
+          <input type="text" id="adjWhy" maxlength="80" placeholder="예: 슬랙에 이모지 누락 — 실제 처리 완료" autocomplete="off"></label>
         <label class="wide">관리자 암호<input type="password" id="adjPw" placeholder="관리자 암호" autocomplete="off"
           onkeydown="if(event.key==='Enter') saveAdjust()"></label>
         <div class="adj-err" id="adjErr"></div>
@@ -2072,17 +2116,16 @@ function saveAdjust(){
   const emp=(document.getElementById('adjEmp')||{}).value||'';
   const cat=(document.getElementById('adjCat')||{}).value||'';
   const n=parseInt((document.getElementById('adjNum')||{}).value,10);
+  const why=((document.getElementById('adjWhy')||{}).value||'').trim();
   const pw=(document.getElementById('adjPw')||{}).value||'';
   if(pw!==ADMIN_PASS){ err.textContent='관리자 암호가 올바르지 않습니다.'; return; }
   if(!date||!emp||!cat){ err.textContent='날짜·담당자·카테고리를 모두 선택하세요.'; return; }
   if(!n || isNaN(n)){ err.textContent='건수는 0이 아닌 정수로 입력하세요.'; return; }
-  const key=adjKey(date,emp,cat);
-  const cur=Number((ADJUST[key]||{}).n)||0;
-  const next=cur+n;                                  // 같은 칸에 또 넣으면 누적된다
-  if(next===0) delete ADJUST[key];
-  else ADJUST[key]={n:next, by:(typeof gameMe!=='undefined'&&gameMe)||'', at:new Date().toISOString().slice(0,16)};
+  if(!why){ err.textContent='보정 사유를 입력하세요. (표 하단과 처리상세에 공개됩니다)'; return; }
+  const key=adjKey(date,emp,cat);                    // uid 포함 → 건별로 따로 쌓인다
+  ADJUST[key]={n, why:why.slice(0,80), by:(typeof gameMe!=='undefined'&&gameMe)||'', at:new Date().toISOString().slice(0,16)};
   save(LS_ADJUST, ADJUST);
-  pushPatch({adjust:{[key]: next===0 ? '' : ADJUST[key]}});   // ''=묘비(다른 브라우저가 되살리지 않도록)
+  pushPatch({adjust:{[key]: ADJUST[key]}});
   renderMain(); openAdjust();
 }
 function deleteAdjust(key){
@@ -4739,9 +4782,10 @@ function renderOverview(){
           <tfoot><tr><td>합계</td>${workCatTotals.map(c=>`<td class="num">${c.total}</td>`).join("")}<td class="num">${vocAttr}</td><td class="num ob-col">${obSum}</td><td class="num tot">${grandEmp}</td></tr></tfoot>
         </table>
       </div>
+      ${adjPublicList(viewDates)}
       <div class="adj-foot">
-        ${adjCountIn(viewDates)?`<span class="adj-note">⚖️ 이 기간 보정 ${adjCountIn(viewDates)}건 적용 중</span>`:'<span></span>'}
-        <button class="adj-btn" onclick="openAdjust()" title="슬랙 이모지로 안 잡힌 처리 건을 담당자별로 더하거나 뺍니다 (관리자 암호 필요)">⚖️ 보정</button>
+        <span class="adj-note">⚖️ 보정 = 슬랙 이모지로 안 잡힌 처리 건을 관리자가 더하거나 뺀 값</span>
+        <button class="adj-btn" onclick="openAdjust()" title="담당자별 처리건수를 더하거나 뺍니다 (관리자 암호 필요)">⚖️ 보정</button>
       </div>
     </div>
 
@@ -4838,6 +4882,17 @@ function showDoneDetail(mode, key){
     pushOb();
     dates.forEach(d=>((slackDay(d)||{}).pending||[]).forEach(x=>{ const ab=(x.reasons||[]).some(r=>/부재/.test(r)); items.push({time:x.time,store:x.store,biz:x.biz,emp:x.handler,cat:x.cat,date:d,st:ab?'부재':'확인필요'}); }));
   }
+  // 관리자 보정 — 표 숫자에는 이미 들어가 있으므로 상세에도 같이 보여야 합이 맞는다.
+  // 상호 칸에 '⚖️ 보정 +70건 · 사유' 로 넣어 무엇 때문에 늘었는지 바로 읽히게 한다.
+  const pushAdj=(filter)=>{ if(ovShift==='night') return;   // 야간은 보정이 집계에서도 빠져 있다
+    adjEntries(dates).forEach(x=>{ if(filter && !filter(x)) return;
+      items.push({time:'', date:x.date, cat:x.cat, emp:x.emp, st:'보정', biz:'',
+        store:`⚖️ ${x.n>0?'+':''}${x.n}건 · ${x.why||'사유 미기재'}${x.by?' ('+x.by+')':''}`}); }); };
+  if(mode==='cat')      pushAdj(x=>x.cat===key);
+  else if(mode==='emp') pushAdj(x=>x.emp===key);
+  else if(mode==='etc') pushAdj(x=>!EMPLOYEES.includes((x.emp||'').trim()));
+  else                  pushAdj();
+
   if(ovShift==='night'){ items=items.filter(x=> x.cat==='voc' ? x.nt : isNightTime(x.time)); title='🌙 '+title; }
   openDetailModal(title, items);
 }
