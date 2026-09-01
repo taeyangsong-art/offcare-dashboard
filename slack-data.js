@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7296,
+  "version": 7297,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -141942,6 +141942,13 @@ window.SLACK_DATA = {
     },
     "2026-09-01": {
       "counts": {
+        "onboarding": {
+          "송태양": 2,
+          "고경림": 3,
+          "심성현": 6,
+          "배선유": 3,
+          "김동욱": 1
+        },
         "extern": {
           "김현기": 1,
           "김동욱": 1
@@ -141954,13 +141961,6 @@ window.SLACK_DATA = {
           "고경림": 4,
           "김동욱": 6,
           "배선유": 8
-        },
-        "onboarding": {
-          "고경림": 3,
-          "심성현": 6,
-          "송태양": 1,
-          "배선유": 3,
-          "김동욱": 1
         },
         "transfer": {
           "심성현": 1
@@ -141976,6 +141976,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "12:45",
+          "store": "로바(LOVA)",
+          "biz": "7471502912",
+          "cat": "onboarding",
+          "emp": "송태양",
+          "req": "포프(노트북) 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩완료입니다"
+        },
         {
           "time": "12:19",
           "store": "도우리",
@@ -142717,11 +142728,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 55,
+        "online": 56,
         "offline": 12,
         "unknown": 0
       },
-      "updatedAt": "12:47",
+      "updatedAt": "12:48",
       "voc": {
         "responses": 4,
         "install": {
@@ -142857,32 +142868,28 @@ window.SLACK_DATA = {
       },
       "1788224939.479749": {
         "post": "1788224939.479749",
-        "lastSeen": 1788234499.099,
+        "lastSeen": 1788234666.786,
         "r": 1,
         "day": "2026-09-01",
         "idx": 7
       },
       "1788227100.602229": {
         "post": "1788227100.602229",
-        "lastSeen": 1788234499.099,
+        "lastSeen": 1788234666.786,
         "r": 1,
         "day": "2026-09-01",
         "idx": 15
       },
       "1788229556.671949": {
         "post": "1788229556.671949",
-        "lastSeen": 1788234499.099,
+        "lastSeen": 1788234666.786,
         "r": 1,
         "day": "2026-09-01",
         "idx": 27
       },
       "1788234300.951689": {
         "post": "1788234300.951689",
-        "lastSeen": 1788234499.099
-      },
-      "1788226711.709729": {
-        "post": "1788226711.709729",
-        "lastSeen": 1788234499.099
+        "lastSeen": 1788234666.786
       }
     },
     "days": {
@@ -181420,7 +181427,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-01 12:48",
+    "at": "2026-09-01 12:51",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
