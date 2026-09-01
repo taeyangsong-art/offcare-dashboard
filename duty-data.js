@@ -3,8 +3,8 @@
  * scripts/fetch-duty.js 가 GitHub Actions 에서 주기 갱신합니다. 원본은 구글시트입니다.
  */
 window.DUTY_DATA = {
- "version": 17,
- "updatedAt": "2026-09-01 14:18",
+ "version": 18,
+ "updatedAt": "2026-09-01 14:19",
  "sheet": "1Gto8lYR1Nvh8M_YpcuBs1DG2LiX7b0iMUm2YeN5-2wM",
  "url": "https://docs.google.com/spreadsheets/d/1Gto8lYR1Nvh8M_YpcuBs1DG2LiX7b0iMUm2YeN5-2wM/edit",
  "days": {
@@ -46,7 +46,7 @@ window.DUTY_DATA = {
    "inst": "김규빈(9) 06-15 / 김주진(4.5) 13-18 / 공명현(8) 15-24"
   },
   "2026-08-30": {
-   "inst": "김규빈(9) 06-15 / 공명현(8) 13-22 / 용선유(18~21)"
+   "inst": "김규빈(9) 06-15 / 공명현(8) 13-22"
   },
   "2026-09-05": {
    "day": "송태양",
@@ -94,7 +94,8 @@ window.DUTY_DATA = {
   },
   "2026-09-27": {
    "day": "심성현",
-   "nit": "송태양"
+   "nit": "송태양",
+   "inst": "용선유(18~21)"
   }
  }
 };
