@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1401,
- "updatedAt": "2026-09-01 15:13",
+ "version": 1402,
+ "updatedAt": "2026-09-01 15:18",
  "days": 30,
  "items": [
   {
@@ -18,16 +18,101 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BUWHYUV9N",
+     "from": "댓글",
+     "path": "menu-files/1788243086_936869-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "기본",
+       "name": "기본15",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본14",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본13",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본12",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본11",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본10",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본09",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본08",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본01",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본02",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본03",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본04",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본05",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본06",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본07",
+       "price": 0
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [
     "https://w1659946222-hxm266180.slack.com/archives/C0ADC9759KQ/p1788242984875409?thread_ts=···.246499&cid=C0ADC9759KQ",
     "메뉴작업은 되어있음"
    ],
-   "rc": 3,
-   "lr": "1788243121.151259",
+   "rc": 4,
+   "lr": "1788243380.222479",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788243086936869"
   },
