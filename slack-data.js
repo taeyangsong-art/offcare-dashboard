@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7209,
+  "version": 7210,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144220,11 +144220,23 @@ window.SLACK_DATA = {
     "2026-09-01": {
       "counts": {
         "as": {
+          "심성현": 1,
           "배선유": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:18",
+          "store": "오뜨미르",
+          "biz": "5640503452",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포프(당사 렌탈 태블릿) + 터미널 이용 매장인데, 태블릿이 파란불빛과 함께 소리가 나면서 전원이 켜지지 않는다고 하셔서 원격 점검 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "태블릿 볼륨 + - 전원 15초 강제 종료 후 재부팅 정상"
+        },
         {
           "time": "09:00",
           "store": "메디결라인 청라점",
@@ -144238,7 +144250,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
+        "online": 2,
         "offline": 0,
         "unknown": 0
       },
@@ -144300,7 +144312,7 @@ window.SLACK_DATA = {
       },
       "1788221953.994349": {
         "post": "1788221953.994349",
-        "lastSeen": 1788222019.767,
+        "lastSeen": 1788222260.898,
         "r": 1,
         "day": "2026-09-01",
         "idx": 1
@@ -182519,7 +182531,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-01 09:20",
+    "at": "2026-09-01 09:24",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
