@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7208,
+  "version": 7209,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144300,7 +144300,10 @@ window.SLACK_DATA = {
       },
       "1788221953.994349": {
         "post": "1788221953.994349",
-        "lastSeen": 1788221962.127
+        "lastSeen": 1788222019.767,
+        "r": 1,
+        "day": "2026-09-01",
+        "idx": 1
       }
     },
     "days": {
@@ -182490,8 +182493,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-01": {
-        "cnt": 1,
-        "sumMin": 1.6839621822039286,
+        "cnt": 2,
+        "sumMin": 2.299839699268341,
         "over": 0,
         "items": [
           {
@@ -182502,13 +182505,21 @@ window.SLACK_DATA = {
             "who": "배선유",
             "cat": "as",
             "dmin": 4.6
+          },
+          {
+            "hm": "09:19",
+            "min": 0.6,
+            "store": "주식회사 프리츠(원서점KIS)",
+            "biz": "1058801127",
+            "who": "고경림",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-01 09:19",
+    "at": "2026-09-01 09:20",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
