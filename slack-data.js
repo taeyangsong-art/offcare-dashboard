@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7206,
+  "version": 7207,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -136082,6 +136082,17 @@ window.SLACK_DATA = {
           "reasons": [
             "확인 후 미완료"
           ]
+        },
+        {
+          "time": "14:24",
+          "store": "금화춘",
+          "biz": "1248589026",
+          "handler": "배선유",
+          "cat": "menu",
+          "intake": "offline",
+          "reasons": [
+            "확인 후 미완료"
+          ]
         }
       ],
       "done": [
@@ -139198,7 +139209,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 242,
-        "offline": 40,
+        "offline": 41,
         "unknown": 0
       },
       "updatedAt": "22:57",
@@ -144231,7 +144242,7 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:00"
+      "updatedAt": "09:15"
     }
   },
   "resp": {
@@ -144286,6 +144297,10 @@ window.SLACK_DATA = {
       "1788138906.847629": {
         "post": "1788138906.847629",
         "lastSeen": 1788207324.891
+      },
+      "1788221700.844139": {
+        "post": "1788221700.844139",
+        "lastSeen": 1788221724.292
       }
     },
     "days": {
@@ -182493,13 +182508,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-01 09:06",
+    "at": "2026-09-01 09:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3808,
+    "rows": 3809,
     "named": 508,
     "unknownName": 0,
     "beforeStart": 0,
