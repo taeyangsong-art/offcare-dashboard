@@ -3128,6 +3128,39 @@ function admBizDays(m, upto){
   }
   return n;
 }
+/* 2026년 상반기(1~6월) 월간 리포트 수치 — 대시보드 집계(2026-07-01~) 이전 구간이라
+ * 슬랙에서 다시 뽑을 수 없어 월간 리포트 표의 값을 그대로 둔다. 7월부터는 라이브 집계가 이어받는다.
+ * ⚠️ 온라인+오프라인 < 총 건수 다(월 100~280건). 리포트 원본이 그렇고, 인입유형 미기재분으로 보인다.
+ *    그래서 '온라인 비중' 은 (온라인 ÷ 온·오프 합계) 로 계산해 라이브 구간과 기준을 맞춘다. */
+const ADM_HIST = [
+  {m:'2026-01', total:4657, online:3376, offline:1003, done:4634, absent:171,
+   by:{onboarding:552, as:3073, extern:168, transfer:231, menu:439, delivery:0, voc:0}},
+  {m:'2026-02', total:3839, online:2889, offline:827,  done:3813, absent:112,
+   by:{onboarding:411, as:2682, extern:137, transfer:171, menu:300, delivery:0, voc:0}},
+  {m:'2026-03', total:4831, online:3745, offline:968,  done:4802, absent:105,
+   by:{onboarding:455, as:3232, extern:252, transfer:227, menu:531, delivery:0, voc:0}},
+  {m:'2026-04', total:4754, online:3727, offline:904,  done:4748, absent:120,
+   by:{onboarding:435, as:3191, extern:271, transfer:236, menu:412, delivery:54, voc:29}},
+  {m:'2026-05', total:4290, online:3367, offline:824,  done:3726, absent:96,
+   by:{onboarding:482, as:2721, extern:212, transfer:232, menu:385, delivery:79, voc:79}},
+  {m:'2026-06', total:5025, online:4057, offline:841,  done:4392, absent:124,
+   by:{onboarding:739, as:3214, extern:190, transfer:196, menu:426, delivery:65, voc:53}},
+];
+// 리포트 행을 라이브 행과 같은 모양으로 맞춘다(평일 수는 달력에서 계산 — 1일 평균 비교용)
+function admHistRows(){
+  return ADM_HIST.map(h=>Object.assign({}, h, {hist:true, days:0, biz:admBizDays(h.m), bizCnt:h.total, emps:0, ob:0}));
+}
+// 온·오프라인 탭 전용 — 리포트(1~6월) + 라이브(7월~). 같은 달이 양쪽에 있으면 라이브를 쓴다.
+function admMonthlyChan(){
+  const live=admMonthly(), have=new Set(live.map(r=>r.m));
+  return admHistRows().filter(r=>!have.has(r.m)).concat(live);
+}
+function admChanNote(rows){
+  const first=rows[0], last=rows[rows.length-1];
+  return `<div class="adm-note">출처: <b>2026.01~06</b> 은 월간 리포트 수기 수치(대시보드 집계 이전 구간),
+    <b>2026.07</b> 부터는 <b>대시보드 집계</b>(전체현황과 동일 소스) · 이력 <b>${first.m.replace('-','.')} ~ ${last.m.replace('-','.')}</b>
+    ${last.days&&last.days<20?`<br>⚠️ <b>${last.m.replace('-','.')}</b> 는 진행 중(평일 ${last.biz}일)이라 총 건수는 아직 작습니다 — <b>1일 평균</b>으로 보세요.`:''}</div>`;
+}
 function admMonthly(){
   const all=adminLiveDates();
   return admMonths().map(m=>{
@@ -3500,11 +3533,11 @@ function admOnbAs(){
                             {n:'A/S 1일 평균',   v:R.map(r=>admPerDay(r.by.as,r))}])}</div>`;
 }
 function admChannel(){
-  const R=admMonthly(); if(!R.length) return `<div class="empty-note">집계 데이터가 없습니다.</div>`;
+  const R=admMonthlyChan(); if(!R.length) return `<div class="empty-note">집계 데이터가 없습니다.</div>`;
   const L=R.map(r=>r.m.replace('-','.'));
   const s=[{n:'온라인',c:'#0071e3',v:R.map(r=>r.online)},{n:'오프라인',c:'#ff9500',v:R.map(r=>r.offline)}];
   const share=R.map(r=>{ const t=r.online+r.offline; return t?Math.round(r.online/t*100):0; });
-  return admMonthNote(R)
+  return admChanNote(R)
     + `<div class="card"><div class="card-head"><h3>온라인 · 오프라인 월 건수</h3></div>${monthBarChart(L,s)}</div>`
     + `<div class="card"><div class="card-head"><h3>1일 평균 비교</h3><span class="hint">월 건수 ÷ 평일 수(토·일·공휴일 제외)</span></div>
         ${monthBarChart(L,[{n:'온라인',c:'#0071e3',v:R.map(r=>admPerDay(r.online,r))},
