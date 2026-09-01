@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1395,
- "updatedAt": "2026-09-01 14:52",
+ "version": 1396,
+ "updatedAt": "2026-09-01 14:57",
  "days": 30,
  "items": [
   {
@@ -567,10 +567,14 @@ window.MENU_REQUESTS = {
    ],
    "datt": [],
    "replies": [
-    "메뉴 등록 솔라피 발송"
+    "메뉴 등록 솔라피 발송",
+    "선배님 더 빨리하는 꿀팁 잇는지 전수좀",
+    "성현님이 이 노가다가 믿기지 않나봐여 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ :crying:",
+    "옵션은",
+    "노가다입니다"
    ],
-   "rc": 4,
-   "lr": "1788241912.039519",
+   "rc": 7,
+   "lr": "1788242256.550819",
    "rfx": 3,
    "status": "done",
    "handler": "심성현",
