@@ -3,10 +3,34 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1379,
- "updatedAt": "2026-09-01 10:48",
+ "version": 1380,
+ "updatedAt": "2026-09-01 10:51",
  "days": 30,
  "items": [
+  {
+   "ts": "1788227409.085049",
+   "date": "2026-09-01",
+   "time": "10:50",
+   "store": "더카페KCC 웰츠밸리점",
+   "biz": "3697400521",
+   "pos": "",
+   "content": "메뉴",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "https://w1659946222-hxm266180.slack.com/archives/C0ADC9759KQ/p1788227268758529?thread_ts=···.246499&cid=C0ADC9759KQ",
+    "https://w1659946222-hxm266180.slack.com/archives/C0ADC9759KQ/p1788227281809329?thread_ts=···.246499&cid=C0ADC9759KQ"
+   ],
+   "rc": 3,
+   "lr": "1788227444.605099",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788227409085049"
+  },
   {
    "ts": "1788226711.709729",
    "date": "2026-09-01",
@@ -18,11 +42,22 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BU0R2CB6W",
+     "from": "댓글",
+     "path": "menu-files/1788226711_709729-0.png",
+     "kind": "other",
+     "menu": []
+    }
+   ],
    "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1788227253.751899",
+   "replies": [
+    "넹! 말씀주신 내용 토대로 다시 말씀드려볼게요"
+   ],
+   "rc": 4,
+   "lr": "1788227433.816139",
    "rfx": 3,
    "status": "wait",
    "handler": null,
