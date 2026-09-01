@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7207,
+  "version": 7208,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -136065,7 +136065,7 @@ window.SLACK_DATA = {
         "menu": {
           "최민석": 1,
           "김규빈": 11,
-          "배선유": 7
+          "배선유": 8
         },
         "delivery": {
           "최민석": 2
@@ -136079,17 +136079,6 @@ window.SLACK_DATA = {
           "handler": "김기범",
           "cat": "as",
           "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "14:24",
-          "store": "금화춘",
-          "biz": "1248589026",
-          "handler": "배선유",
-          "cat": "menu",
-          "intake": "offline",
           "reasons": [
             "확인 후 미완료"
           ]
@@ -137681,6 +137670,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "tm-tm88 / LAN / 9600 / 192.168.28.82 / 9100 / okpos설정됨"
+        },
+        {
+          "time": "14:24",
+          "store": "금화춘",
+          "biz": "1248589026",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "메뉴 등록 부탁드립니다~",
+          "hw": "",
+          "intake": "offline",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / / 담당자 연락처 (필요시 요기로 문의 부탁드립니다) / 님 님 메뉴등록 누락된거 같아요 확인 부탁드립니다! 님 님 메뉴등록 누락된거 같아요 / 바로 작업하겟습니다 / 완료입니다!"
         },
         {
           "time": "14:22",
@@ -144242,7 +144242,7 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:15"
+      "updatedAt": "09:19"
     }
   },
   "resp": {
@@ -144298,9 +144298,9 @@ window.SLACK_DATA = {
         "post": "1788138906.847629",
         "lastSeen": 1788207324.891
       },
-      "1788221700.844139": {
-        "post": "1788221700.844139",
-        "lastSeen": 1788221724.292
+      "1788221953.994349": {
+        "post": "1788221953.994349",
+        "lastSeen": 1788221962.127
       }
     },
     "days": {
@@ -182508,7 +182508,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-01 09:15",
+    "at": "2026-09-01 09:19",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
