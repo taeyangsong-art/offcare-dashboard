@@ -2028,7 +2028,8 @@ function adjDay(cat, date){    // 담당자 구분 없는 그날 보정 합계(�
 }
 function adjEntries(dates){   // 조회 기간에 걸치는 보정 목록 (최신 날짜순)
   const set=new Set(dates||[]);
-  return Object.keys(ADJUST).filter(k=>set.has(k.split('|')[0]))
+  // 삭제된 건은 다른 브라우저에 묘비('')로 도착한다 → 목록·건수에서 걸러낸다
+  return Object.keys(ADJUST).filter(k=>ADJUST[k] && Number(ADJUST[k].n)).filter(k=>set.has(k.split('|')[0]))
     .map(k=>{ const [date,emp,cat]=k.split('|'); return {k, date, emp, cat, ...ADJUST[k]}; })
     .sort((a,b)=> b.date.localeCompare(a.date) || a.emp.localeCompare(b.emp));
 }
@@ -4109,7 +4110,7 @@ function loadCloud(cb){
 }
 function loadGameCloud(cb){ loadCloud(cb); }   // 하위호환
 // 팀 공유 클라우드 데이터 스냅샷 — 주기 동기화 시 '변경됐을 때만' 재렌더 판정용
-function cloudSnapshot(){ try{ return JSON.stringify([GAME,FISHWAIT,VOCEDIT,VOCPRAISE,VOCCOMMENT,DUTYOVER,TENOVER,NOTICES,NCOMMENTS,NREACTS,SHAREEV,DUTY,MENUMEMO,DUTYMEMO,DRI]); }catch(e){ return ''; } }
+function cloudSnapshot(){ try{ return JSON.stringify([GAME,FISHWAIT,VOCEDIT,VOCPRAISE,VOCCOMMENT,DUTYOVER,TENOVER,NOTICES,NCOMMENTS,NREACTS,SHAREEV,DUTY,MENUMEMO,DUTYMEMO,DRI,ADJUST]); }catch(e){ return '';} }
 async function setGameMe(v){
   gameMe=v; save("opcare_gameme_v1",gameMe); renderGame();
   if(v && GAME_API && !isGameAuthed(v)){
