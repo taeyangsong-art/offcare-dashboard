@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1376,
- "updatedAt": "2026-09-01 09:51",
+ "version": 1377,
+ "updatedAt": "2026-09-01 09:53",
  "days": 30,
  "items": [
   {
@@ -25,10 +25,10 @@ window.MENU_REQUESTS = {
     "병치조림과 초무침은 원래 가격이 생각이 안난다고 가격 45000,60000으로 등록되어있으면 그냥 둬달라 하셨습니다!",
     "*황석 짜박 대사이즈 60,000이 아니라 35,000원입니다! :개굴-죄송:"
    ],
-   "rc": 4,
-   "lr": "1788223758.350639",
+   "rc": 5,
+   "lr": "1788223925.676369",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김동욱",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788223382396969"
   },
