@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1394,
- "updatedAt": "2026-09-01 14:23",
+ "version": 1395,
+ "updatedAt": "2026-09-01 14:52",
  "days": 30,
  "items": [
   {
@@ -335,7 +335,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BTVL0QKK5",
      "from": "댓글",
-     "path": "menu-files/1788233508_822579-2.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -438,13 +437,13 @@ window.MENU_REQUESTS = {
        "name": "카스",
        "price": 5000
       }
-     ]
+     ],
+     "path": "menu-files/1788233508_822579-2.png"
     },
     {
      "name": "image.png",
      "fid": "F0BTLGK3UT1",
      "from": "댓글",
-     "path": "menu-files/1788233508_822579-3.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -562,15 +561,18 @@ window.MENU_REQUESTS = {
        "name": "뚱캔) 칠성 제로사이다 추가",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1788233508_822579-3.png"
     }
    ],
    "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1788240166.906939",
+   "replies": [
+    "메뉴 등록 솔라피 발송"
+   ],
+   "rc": 4,
+   "lr": "1788241912.039519",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "심성현",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788233508822579"
   },
