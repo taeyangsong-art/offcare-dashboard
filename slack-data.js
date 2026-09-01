@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7253,
+  "version": 7254,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144693,7 +144693,7 @@ window.SLACK_DATA = {
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "11:00",
+      "updatedAt": "11:08",
       "voc": {
         "responses": 1,
         "install": {
@@ -144799,38 +144799,42 @@ window.SLACK_DATA = {
       },
       "1788224939.479749": {
         "post": "1788224939.479749",
-        "lastSeen": 1788228502.116,
+        "lastSeen": 1788228560.634,
         "r": 1,
         "day": "2026-09-01",
         "idx": 7
       },
       "1788227100.608819": {
         "post": "1788227100.608819",
-        "lastSeen": 1788228502.116,
+        "lastSeen": 1788228560.634,
         "r": 1,
         "day": "2026-09-01",
         "idx": 17
       },
       "1788227100.602229": {
         "post": "1788227100.602229",
-        "lastSeen": 1788228502.116,
+        "lastSeen": 1788228560.634,
         "r": 1,
         "day": "2026-09-01",
         "idx": 15
       },
       "1788228004.131629": {
         "post": "1788228004.131629",
-        "lastSeen": 1788228502.116,
+        "lastSeen": 1788228560.634,
         "r": 1,
         "day": "2026-09-01",
         "idx": 22
       },
       "1788228000.786859": {
         "post": "1788228000.786859",
-        "lastSeen": 1788228502.116,
+        "lastSeen": 1788228560.634,
         "r": 1,
         "day": "2026-09-01",
         "idx": 19
+      },
+      "1788226711.709729": {
+        "post": "1788226711.709729",
+        "lastSeen": 1788228560.634
       }
     },
     "days": {
@@ -183231,25 +183235,17 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-01 11:08",
+    "at": "2026-09-01 11:11",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
-    "ok": true,
-    "error": "",
-    "rows": 3809,
-    "named": 508,
+    "ok": false,
+    "error": "시트 export 실패 HTTP 500",
+    "rows": 0,
+    "named": 0,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 508,
-    "byStatus": {
-      "일정등록완료": 321,
-      "1차부재": 113,
-      "점주직접접수": 44,
-      "설치불가": 9,
-      "(빈칸)": 3,
-      "자가설치": 15,
-      "설치보류요청": 3
-    }
+    "done": 0,
+    "byStatus": {}
   }
 };
