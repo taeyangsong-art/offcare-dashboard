@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7386,
+  "version": 7387,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -141950,6 +141950,7 @@ window.SLACK_DATA = {
           "심성현": 13,
           "최민석": 2,
           "서상원": 5,
+          "김기범": 1,
           "김동욱": 8,
           "김규빈": 3
         },
@@ -141986,17 +141987,6 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
-        {
-          "time": "14:28",
-          "store": "에르메스 도산",
-          "biz": "1208171453",
-          "handler": "김기범",
-          "cat": "as",
-          "intake": "offline",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
         {
           "time": "13:18",
           "store": "캠핑스토리",
@@ -142264,6 +142254,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "프론트 내의 속도값 115,200 미설정 / 9600 변경후 정상"
+        },
+        {
+          "time": "14:28",
+          "store": "에르메스 도산",
+          "biz": "1208171453",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "kpn-6205 wifi 무선단말기 사용중인데 억단위 자릿수가 안찍힘",
+          "hw": "",
+          "intake": "offline",
+          "note": "여깁니다! 여깁니다! / 억매출 ㄷㄷ;; / KPN 본사 연락함 알아보고 연락 준다고함"
         },
         {
           "time": "14:22",
@@ -143494,16 +143495,16 @@ window.SLACK_DATA = {
         "offline": 22,
         "unknown": 0
       },
-      "updatedAt": "15:30",
+      "updatedAt": "15:32",
       "voc": {
-        "responses": 10,
+        "responses": 11,
         "install": {
           "count": 0,
           "low": 0
         },
         "nps": {
-          "count": 10,
-          "low": 2
+          "count": 11,
+          "low": 3
         },
         "high": {
           "install": 0,
@@ -143511,7 +143512,7 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "2": 1,
-          "5": 1,
+          "5": 2,
           "6": 1,
           "8": 3,
           "9": 1,
@@ -143520,6 +143521,10 @@ window.SLACK_DATA = {
         "installDist": {},
         "byIndustry": {},
         "byTenure": {
+          "1개월": {
+            "total": 3,
+            "low": 1
+          },
           "3개월": {
             "total": 3,
             "low": 0
@@ -143531,13 +143536,13 @@ window.SLACK_DATA = {
           "6개월": {
             "total": 1,
             "low": 0
-          },
-          "1개월": {
-            "total": 2,
-            "low": 0
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 1,
+            "low": 1
+          },
           "KIS": {
             "total": 4,
             "low": 0
@@ -143564,9 +143569,32 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "필요한 기능이 없거나 몰라서 불편": 2
         },
         "alerts": [
+          {
+            "time": "15:32",
+            "store": "크리갤러리",
+            "storeId": "571066",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "영수증 발행이 쉽지가 않아요",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:23",
             "store": "소프티오알(SOFTYOR)",
@@ -143652,11 +143680,19 @@ window.SLACK_DATA = {
         ]
       },
       "ob": {
-        "count": 16,
+        "count": 17,
         "byEmp": {
-          "김규빈": 16
+          "김규빈": 17
         },
         "items": [
+          {
+            "key": "2026년 9월 1일 오후 1:11:25|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787732680393089#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-09-01",
+            "planDate": "2026-09-03",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787732680393089"
+          },
           {
             "key": "2026년 9월 1일 오후 1:08:22|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787901502938599#1",
             "handler": "김규빈",
@@ -143844,57 +143880,53 @@ window.SLACK_DATA = {
       },
       "1788224939.479749": {
         "post": "1788224939.479749",
-        "lastSeen": 1788244224.549,
+        "lastSeen": 1788244392.907,
         "r": 1,
         "day": "2026-09-01",
         "idx": 7
       },
       "1788227100.602229": {
         "post": "1788227100.602229",
-        "lastSeen": 1788244224.549,
+        "lastSeen": 1788244392.907,
         "r": 1,
         "day": "2026-09-01",
         "idx": 15
       },
       "1788229556.671949": {
         "post": "1788229556.671949",
-        "lastSeen": 1788244224.549,
+        "lastSeen": 1788244392.907,
         "r": 1,
         "day": "2026-09-01",
         "idx": 27
       },
       "1788234300.951689": {
         "post": "1788234300.951689",
-        "lastSeen": 1788244224.549
+        "lastSeen": 1788244392.907
       },
       "1788238564.234729": {
         "post": "1788238564.234729",
-        "lastSeen": 1788244224.549,
+        "lastSeen": 1788244392.907,
         "r": 1,
         "day": "2026-09-01",
         "idx": 51
       },
-      "1788240500.973319": {
-        "post": "1788240500.973319",
-        "lastSeen": 1788244224.549,
-        "r": 1,
-        "day": "2026-09-01",
-        "idx": 64
-      },
       "1788243300.148919": {
         "post": "1788243300.148919",
-        "lastSeen": 1788244224.549,
+        "lastSeen": 1788244392.907,
         "r": 1,
         "day": "2026-09-01",
         "idx": 80
       },
       "1788244200.397919": {
         "post": "1788244200.397919",
-        "lastSeen": 1788244224.549
+        "lastSeen": 1788244392.907,
+        "r": 1,
+        "day": "2026-09-01",
+        "idx": 83
       },
-      "1788226711.709729": {
-        "post": "1788226711.709729",
-        "lastSeen": 1788244224.549
+      "1788244228.785429": {
+        "post": "1788244228.785429",
+        "lastSeen": 1788244392.907
       }
     },
     "days": {
@@ -182084,8 +182116,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-01": {
-        "cnt": 83,
-        "sumMin": 467.1805748740833,
+        "cnt": 84,
+        "sumMin": 468.98607622782396,
         "over": 0,
         "items": [
           {
@@ -182666,7 +182698,8 @@ window.SLACK_DATA = {
             "store": "에르메스 도산",
             "biz": "1208171453",
             "who": "김기범",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 63.5
           },
           {
             "hm": "14:22",
@@ -182828,25 +182861,33 @@ window.SLACK_DATA = {
             "who": "김현기",
             "cat": "as",
             "dmin": 7.5
+          },
+          {
+            "hm": "15:30",
+            "min": 1.8,
+            "store": "태웅3체육관",
+            "biz": "6229200163",
+            "who": "배선유",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-01 15:30",
+    "at": "2026-09-01 15:33",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3821,
-    "named": 524,
+    "named": 525,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 524,
+    "done": 525,
     "byStatus": {
-      "일정등록완료": 331,
+      "일정등록완료": 332,
       "1차부재": 117,
       "점주직접접수": 44,
       "설치불가": 9,
