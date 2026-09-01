@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7235,
+  "version": 7236,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144219,16 +144219,16 @@ window.SLACK_DATA = {
     },
     "2026-09-01": {
       "counts": {
-        "onboarding": {
-          "배선유": 1,
-          "심성현": 2
-        },
         "as": {
-          "심성현": 4,
+          "심성현": 5,
           "김현기": 3,
           "김동욱": 2,
           "배선유": 3,
           "고경림": 1
+        },
+        "onboarding": {
+          "배선유": 1,
+          "심성현": 2
         },
         "extern": {
           "김동욱": 1
@@ -144242,6 +144242,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:30",
+          "store": "랑STUDIO",
+          "biz": "5032027578",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포프(노트북) 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "금일 설치 불가 익일 1630 통화 예약 요청"
+        },
         {
           "time": "10:16",
           "store": "우리동네마음센터",
@@ -144454,11 +144465,59 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 15,
+        "online": 16,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "10:30"
+      "updatedAt": "10:31",
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 0,
+          "low": 0
+        },
+        "nps": {
+          "count": 1,
+          "low": 0
+        },
+        "high": {
+          "install": 0,
+          "nps": 0
+        },
+        "npsDist": {
+          "6": 1
+        },
+        "installDist": {},
+        "byIndustry": {},
+        "byTenure": {
+          "1개월": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "KIS": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {},
+        "alerts": [],
+        "praises": [
+          {
+            "time": "10:31",
+            "store": "카이로 테라피",
+            "storeId": "534809",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 6,
+            "text": "토스 쓰기전에 공부를 해야 합니다 예전 단말기 쓰는거 같이 생각 하시면  손님 앞에서 허둥됩니다",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
+      }
     }
   },
   "resp": {
@@ -144516,28 +144575,28 @@ window.SLACK_DATA = {
       },
       "1788224408.529949": {
         "post": "1788224408.529949",
-        "lastSeen": 1788226224.05,
+        "lastSeen": 1788226396.728,
         "r": 1,
         "day": "2026-09-01",
         "idx": 8
       },
       "1788224400.895249": {
         "post": "1788224400.895249",
-        "lastSeen": 1788226224.05,
+        "lastSeen": 1788226396.728,
         "r": 1,
         "day": "2026-09-01",
         "idx": 5
       },
       "1788224939.479749": {
         "post": "1788224939.479749",
-        "lastSeen": 1788226224.05,
+        "lastSeen": 1788226396.728,
         "r": 1,
         "day": "2026-09-01",
         "idx": 7
       },
       "1788225234.465839": {
         "post": "1788225234.465839",
-        "lastSeen": 1788226224.05,
+        "lastSeen": 1788226396.728,
         "r": 1,
         "day": "2026-09-01",
         "idx": 10
@@ -182843,7 +182902,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-01 10:30",
+    "at": "2026-09-01 10:33",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
