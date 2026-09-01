@@ -3148,7 +3148,7 @@ const ADM_HIST = [
 ];
 // 리포트 행을 라이브 행과 같은 모양으로 맞춘다(평일 수는 달력에서 계산 — 1일 평균 비교용)
 function admHistRows(){
-  return ADM_HIST.map(h=>Object.assign({}, h, {hist:true, days:0, biz:admBizDays(h.m), bizCnt:h.total, emps:0, ob:0}));
+  return ADM_HIST.map(h=>Object.assign({}, h, {hist:true, days:0, biz:admBizDays(h.m), bizCnt:h.total, emps:0, ob:0, voc:h.by.voc||0}));
 }
 // 온·오프라인 탭 전용 — 리포트(1~6월) + 라이브(7월~). 같은 달이 양쪽에 있으면 라이브를 쓴다.
 function admMonthlyChan(){
@@ -3176,7 +3176,11 @@ function admMonthly(){
     const emps=new Set();
     ds.forEach(d=>{ for(const o of Object.values((slackDay(d)||{}).counts||{})) Object.keys(o).forEach(e=>emps.add(e)); });
     Object.keys(obByEmpRaw(ds)).forEach(e=>emps.add(e));      // 설치 OB 만 한 담당자도 활동 인원에 넣는다
-    return {m, days:ds.length, biz:admBizDays(m, ds[ds.length-1]), bizCnt, by, total, online:ik.online, offline:ik.offline, emps:emps.size};
+    // VOC 처리(완료일 기준)·부재는 WORK_CATS 에 없어 따로 센다 — 온·오프라인 탭의 유형별 행에 쓴다.
+    // ovShift 에 좌우되지 않도록 pending 을 직접 세고, sumRange 와 같은 기준(주야 구분 없음)을 유지한다.
+    const absent=ds.reduce((a,d)=>a+((slackDay(d)||{}).pending||[]).filter(p=>(p.reasons||[]).some(r=>/부재/.test(r))).length, 0);
+    return {m, days:ds.length, biz:admBizDays(m, ds[ds.length-1]), bizCnt, by, total, online:ik.online, offline:ik.offline, emps:emps.size,
+            voc:vocDoneInRange(ds).cnt, absent};
   });
 }
 // 1일 평균의 분모는 '평일 수'(토·일·공휴일 제외)로 통일한다 — 팀 기준.
@@ -3542,9 +3546,32 @@ function admChannel(){
     + `<div class="card"><div class="card-head"><h3>1일 평균 비교</h3><span class="hint">월 건수 ÷ 평일 수(토·일·공휴일 제외)</span></div>
         ${monthBarChart(L,[{n:'온라인',c:'#0071e3',v:R.map(r=>admPerDay(r.online,r))},
                            {n:'오프라인',c:'#ff9500',v:R.map(r=>admPerDay(r.offline,r))}], v=>Number(v).toFixed(1))}</div>`
-    + `<div class="card"><div class="card-head"><h3>월별 수치</h3></div>
+    + `<div class="card"><div class="card-head"><h3>월별 수치</h3>
+          <span class="hint">유형별: <b>01~06</b> 월간 리포트 · <b>07~</b> 대시보드 집계 · VOC는 처리 완료 건</span></div>
+        <div class="adm-note" style="margin:0 0 10px">⚠️ <b>부재*</b> 는 두 구간의 기준이 다릅니다 —
+          <b>01~06</b> 은 그 달에 <b>발생한</b> 부재 건수(리포트), <b>07~</b> 은 <b>미해결로 남은</b> 부재 건수입니다.
+          대시보드는 부재가 처리되면 처리 건으로 옮기고 미처리에서 빼기 때문에 발생 누계를 복원할 수 없습니다. 두 구간을 직접 비교하지 마세요.</div>
         ${monthTable(L, s, [{n:'평일 수', v:R.map(r=>r.biz), tot:R.reduce((a,r)=>a+r.biz,0)},
-                            {n:'온라인 비중', v:share.map(p=>p+'%')}])}</div>`;
+                            {n:'온라인 비중', v:share.map(p=>p+'%')},
+                            ...admTypeRows(R)])}</div>`;
+}
+/* 월별 수치 표의 유형별 세부 행 — 리포트(1~6월)와 라이브(7월~)를 같은 행에 이어 붙인다.
+ * VOC·부재는 WORK_CATS 에 없어 admMonthly 가 따로 담아 둔 값을 쓴다. */
+function admTypeRows(R){
+  const TYPES=[
+    ['🚀 온보딩',   r=>r.by.onboarding],
+    ['🔧 AS',       r=>r.by.as],
+    ['🧩 외주설치', r=>r.by.extern],
+    ['📝 명의변경', r=>r.by.transfer],
+    ['💬 VOC',      r=>r.voc],
+    ['🍱 메뉴등록', r=>r.by.menu],
+    ['📵 부재*',    r=>r.absent],
+    ['🛵 배달',     r=>r.by.delivery],
+  ];
+  return TYPES.map(([n,get])=>{
+    const v=R.map(r=>Number(get(r))||0);
+    return {n, v:v.map(x=>x?x.toLocaleString():'·'), tot:v.reduce((a,b)=>a+b,0).toLocaleString()};
+  });
 }
 function admWorkday(){
   const R=admMonthly(); if(!R.length) return `<div class="empty-note">집계 데이터가 없습니다.</div>`;
