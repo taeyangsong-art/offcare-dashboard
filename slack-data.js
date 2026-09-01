@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7220,
+  "version": 7221,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144220,7 +144220,7 @@ window.SLACK_DATA = {
     "2026-09-01": {
       "counts": {
         "as": {
-          "심성현": 2,
+          "심성현": 3,
           "김동욱": 1,
           "배선유": 2,
           "고경림": 1,
@@ -144229,6 +144229,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:45",
+          "store": "익스트림 컴뱃",
+          "biz": "7329400241",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포프(PC) + 유프 온보딩 요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "저채 온보딩 완료 / 사용 방법 전달 완료"
+        },
         {
           "time": "09:36",
           "store": "수금스넥",
@@ -144308,7 +144319,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 5,
+        "online": 6,
         "offline": 2,
         "unknown": 0
       },
@@ -144367,14 +144378,6 @@ window.SLACK_DATA = {
       "1788138906.847629": {
         "post": "1788138906.847629",
         "lastSeen": 1788207324.891
-      },
-      "1788222600.138609": {
-        "post": "1788222600.138609",
-        "lastSeen": 1788223521.468
-      },
-      "1788223382.396969": {
-        "post": "1788223382.396969",
-        "lastSeen": 1788223521.468
       }
     },
     "days": {
@@ -182591,7 +182594,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-01 09:45",
+    "at": "2026-09-01 09:48",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
