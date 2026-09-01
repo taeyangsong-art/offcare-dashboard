@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7213,
+  "version": 7214,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144221,8 +144221,9 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김동욱": 1,
-          "심성현": 1,
-          "배선유": 1
+          "배선유": 2,
+          "고경림": 1,
+          "심성현": 1
         }
       },
       "pending": [],
@@ -144237,6 +144238,28 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "메뉴는 키오스크모드 활성화하셔야 보임안내. 금액입력결제모드 사용하신다고 하심"
+        },
+        {
+          "time": "09:30",
+          "store": "슈아브헤어",
+          "biz": "3053263008",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "포프(휴대폰) + 유프 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "익일 오전 방문설치"
+        },
+        {
+          "time": "09:19",
+          "store": "주식회사 프리츠(원서점KIS)",
+          "biz": "1058801127",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "프린터기에서 빌지 출력 시, 전체적으로 글씨가 왼쪽으로 쏠린다고 함",
+          "hw": "",
+          "intake": "offline",
+          "note": "토스포스 자체결함 안내완료"
         },
         {
           "time": "09:18",
@@ -144262,11 +144285,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 3,
-        "offline": 0,
+        "online": 4,
+        "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:30"
+      "updatedAt": "09:36"
     }
   },
   "resp": {
@@ -144322,12 +144345,9 @@ window.SLACK_DATA = {
         "post": "1788138906.847629",
         "lastSeen": 1788207324.891
       },
-      "1788221953.994349": {
-        "post": "1788221953.994349",
-        "lastSeen": 1788222804.417,
-        "r": 1,
-        "day": "2026-09-01",
-        "idx": 1
+      "1788222600.138609": {
+        "post": "1788222600.138609",
+        "lastSeen": 1788222985.968
       }
     },
     "days": {
@@ -182536,14 +182556,15 @@ window.SLACK_DATA = {
             "store": "주식회사 프리츠(원서점KIS)",
             "biz": "1058801127",
             "who": "고경림",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 15.7
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-01 09:33",
+    "at": "2026-09-01 09:36",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
