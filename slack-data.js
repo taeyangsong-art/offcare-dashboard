@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7559,
+  "version": 7560,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -142003,7 +142003,7 @@ window.SLACK_DATA = {
           "time": "13:18",
           "store": "캠핑스토리",
           "biz": "7533301168",
-          "handler": "김동욱",
+          "handler": "미지정",
           "cat": "as",
           "intake": "online",
           "reasons": [
@@ -184436,7 +184436,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-02 06:00",
+    "at": "2026-09-02 06:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
