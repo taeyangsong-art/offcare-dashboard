@@ -3150,12 +3150,13 @@ const ADM_HIST = [
 function admHistRows(){
   return ADM_HIST.map(h=>Object.assign({}, h, {hist:true, days:0, biz:admBizDays(h.m), bizCnt:h.total, emps:0, ob:0, voc:h.by.voc||0}));
 }
-// 온·오프라인 탭 전용 — 리포트(1~6월) + 라이브(7월~). 같은 달이 양쪽에 있으면 라이브를 쓴다.
-function admMonthlyChan(){
+// 리포트(1~6월) + 라이브(7월~) 를 이어 붙인 월별 행. 같은 달이 양쪽에 있으면 라이브를 쓴다.
+// 온·오프라인 월별 · 온보딩·AS 월별 두 탭이 함께 쓴다.
+function admMonthlyWithHist(){
   const live=admMonthly(), have=new Set(live.map(r=>r.m));
   return admHistRows().filter(r=>!have.has(r.m)).concat(live);
 }
-function admChanNote(rows){
+function admHistNote(rows){
   const first=rows[0], last=rows[rows.length-1];
   return `<div class="adm-note">출처: <b>2026.01~06</b> 은 월간 리포트 수기 수치(대시보드 집계 이전 구간),
     <b>2026.07</b> 부터는 <b>대시보드 집계</b>(전체현황과 동일 소스) · 이력 <b>${first.m.replace('-','.')} ~ ${last.m.replace('-','.')}</b>
@@ -3524,10 +3525,10 @@ function monthTable(labels, series, rows){
     </tbody></table></div>`;
 }
 function admOnbAs(){
-  const R=admMonthly(); if(!R.length) return `<div class="empty-note">집계 데이터가 없습니다.</div>`;
+  const R=admMonthlyWithHist(); if(!R.length) return `<div class="empty-note">집계 데이터가 없습니다.</div>`;
   const L=R.map(r=>r.m.replace('-','.'));
   const s=[{n:'온보딩',c:'#0071e3',v:R.map(r=>r.by.onboarding||0)},{n:'A/S',c:'#34c759',v:R.map(r=>r.by.as||0)}];
-  return admMonthNote(R)
+  return admHistNote(R)
     + `<div class="card"><div class="card-head"><h3>온보딩 · A/S 월 건수</h3><span class="hint">막대 위 숫자 = 월 총 건수</span></div>${monthBarChart(L,s)}</div>`
     + `<div class="card"><div class="card-head"><h3>1일 평균 비교</h3><span class="hint">월 건수 ÷ 평일 수(토·일·공휴일 제외) — 진행 중인 달도 공정하게 비교됩니다</span></div>
         ${monthBarChart(L,[{n:'온보딩',c:'#0071e3',v:R.map(r=>admPerDay(r.by.onboarding,r))},{n:'A/S',c:'#34c759',v:R.map(r=>admPerDay(r.by.as,r))}], v=>Number(v).toFixed(1))}</div>`
@@ -3537,11 +3538,11 @@ function admOnbAs(){
                             {n:'A/S 1일 평균',   v:R.map(r=>admPerDay(r.by.as,r))}])}</div>`;
 }
 function admChannel(){
-  const R=admMonthlyChan(); if(!R.length) return `<div class="empty-note">집계 데이터가 없습니다.</div>`;
+  const R=admMonthlyWithHist(); if(!R.length) return `<div class="empty-note">집계 데이터가 없습니다.</div>`;
   const L=R.map(r=>r.m.replace('-','.'));
   const s=[{n:'온라인',c:'#0071e3',v:R.map(r=>r.online)},{n:'오프라인',c:'#ff9500',v:R.map(r=>r.offline)}];
   const share=R.map(r=>{ const t=r.online+r.offline; return t?Math.round(r.online/t*100):0; });
-  return admChanNote(R)
+  return admHistNote(R)
     + `<div class="card"><div class="card-head"><h3>온라인 · 오프라인 월 건수</h3></div>${monthBarChart(L,s)}</div>`
     + `<div class="card"><div class="card-head"><h3>1일 평균 비교</h3><span class="hint">월 건수 ÷ 평일 수(토·일·공휴일 제외)</span></div>
         ${monthBarChart(L,[{n:'온라인',c:'#0071e3',v:R.map(r=>admPerDay(r.online,r))},
