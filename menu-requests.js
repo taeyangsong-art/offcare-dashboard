@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1392,
- "updatedAt": "2026-09-01 14:08",
+ "version": 1393,
+ "updatedAt": "2026-09-01 14:22",
  "days": 30,
  "items": [
   {
@@ -62,11 +62,280 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BTV67NWBV",
+     "from": "댓글",
+     "path": "menu-files/1788233508_822579-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "메인메뉴",
+       "name": "[1.5인분] 홍밥 김치찜 1.5인홍밥세트",
+       "price": 14900
+      },
+      {
+       "category": "메인메뉴",
+       "name": "[대표메뉴] 生삼겹 가득 김치찜 中(2-3인분)",
+       "price": 26900
+      },
+      {
+       "category": "메인메뉴",
+       "name": "[대표메뉴] 生삼겹 가득 김치찜 大(3-4인분)",
+       "price": 35500
+      },
+      {
+       "category": "메인메뉴",
+       "name": "[먹방용] Real통삼겹김치찜 中(2-3인분)",
+       "price": 27900
+      },
+      {
+       "category": "메인메뉴",
+       "name": "[먹방용] Real통삼겹김치찜 大(3-4인분)",
+       "price": 36500
+      },
+      {
+       "category": "메인메뉴",
+       "name": "스팸 폭탄 김치찜 中(2-3인분)",
+       "price": 26500
+      },
+      {
+       "category": "메인메뉴",
+       "name": "스팸 폭탄 김치찜 大(3-4인분)",
+       "price": 33500
+      },
+      {
+       "category": "메인메뉴",
+       "name": "우삼겹 홍콸 김치찜 中(2-3인분)",
+       "price": 33500
+      },
+      {
+       "category": "메인메뉴",
+       "name": "우삼겹 홍콸 김치찜 大(3-4인분)",
+       "price": 34000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "돼지김치찌개 中(2-3인분)",
+       "price": 26900
+      },
+      {
+       "category": "메인메뉴",
+       "name": "돼지김치찌개 大(3-4인분)",
+       "price": 35500
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "푸딩계란찜 추가",
+       "price": 3000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "사각김 추가",
+       "price": 500
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "공기밥 추가",
+       "price": 1500
+      },
+      {
+       "category": "음료메뉴",
+       "name": "[뚱캔] 콜라",
+       "price": 2000
+      },
+      {
+       "category": "음료메뉴",
+       "name": "[뚱캔] 제로콜라",
+       "price": 2000
+      },
+      {
+       "category": "음료메뉴",
+       "name": "[뚱캔] 사이다",
+       "price": 2000
+      },
+      {
+       "category": "음료메뉴",
+       "name": "[뚱캔] 제로사이다",
+       "price": 2000
+      },
+      {
+       "category": "주류",
+       "name": "참이슬 후레쉬",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "처음처럼",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "새로",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "테라",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "카스",
+       "price": 5000
+      },
+      {
+       "category": "[한그릇메뉴]",
+       "name": "1인 生삼겹김치찜 한그릇 홍밥",
+       "price": 12000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BTX8URBPF",
+     "from": "댓글",
+     "path": "menu-files/1788233508_822579-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "찌개사리 선택",
+       "name": "生삼겹김치찜",
+       "price": 0
+      },
+      {
+       "category": "찌개사리 선택",
+       "name": "스팸폭탄김치찜",
+       "price": 0
+      },
+      {
+       "category": "찌개사리 선택",
+       "name": "우삼겹김치찜",
+       "price": 500
+      },
+      {
+       "category": "구성변경",
+       "name": "[1인] 공기밥+맛김",
+       "price": 0
+      },
+      {
+       "category": "구성변경",
+       "name": "[1인] 공기밥+계란후라이",
+       "price": 1000
+      },
+      {
+       "category": "매운맛선택",
+       "name": "기본맛",
+       "price": 0
+      },
+      {
+       "category": "매운맛선택",
+       "name": "매운맛 [신라면보다 살짝 더 매워요]",
+       "price": 0
+      },
+      {
+       "category": "토핑추가",
+       "name": "두부 추가(大4개)",
+       "price": 3000
+      },
+      {
+       "category": "토핑추가",
+       "name": "生삼겹 150g 추가",
+       "price": 5000
+      },
+      {
+       "category": "토핑추가",
+       "name": "스팸 150g 추가",
+       "price": 5000
+      },
+      {
+       "category": "토핑추가",
+       "name": "우삼겹 150g추가",
+       "price": 5000
+      },
+      {
+       "category": "토핑추가",
+       "name": "김치 100g추가",
+       "price": 3000
+      },
+      {
+       "category": "사이드 추가",
+       "name": "공기밥 1개 추가",
+       "price": 1500
+      },
+      {
+       "category": "사이드 추가",
+       "name": "공기밥 2개 추가",
+       "price": 2500
+      },
+      {
+       "category": "사이드 추가",
+       "name": "공기밥 3개 추가",
+       "price": 4000
+      },
+      {
+       "category": "사이드 추가",
+       "name": "사각김 1개 추가",
+       "price": 500
+      },
+      {
+       "category": "사이드 추가",
+       "name": "사각김 2개 추가",
+       "price": 1000
+      },
+      {
+       "category": "사이드 추가",
+       "name": "푸딩계란찜 추가",
+       "price": 3000
+      },
+      {
+       "category": "음료추가",
+       "name": "[뚱캔] 콜라",
+       "price": 2000
+      },
+      {
+       "category": "음료추가",
+       "name": "[뚱캔] 제로콜라",
+       "price": 2000
+      },
+      {
+       "category": "음료추가",
+       "name": "[뚱캔] 사이다",
+       "price": 2000
+      },
+      {
+       "category": "음료추가",
+       "name": "[뚱캔] 제로사이다",
+       "price": 2000
+      },
+      {
+       "category": "리뷰 이벤트",
+       "name": "리뷰) 두부 추가(大2개) 후기약속",
+       "price": 0
+      },
+      {
+       "category": "리뷰 이벤트",
+       "name": "리뷰) 맛김 한봉 후기약속",
+       "price": 0
+      },
+      {
+       "category": "리뷰 이벤트",
+       "name": "리뷰) 고기추가 후기약속",
+       "price": 500
+      },
+      {
+       "category": "리뷰 이벤트",
+       "name": "리뷰) 미니계란찜 후기약속",
+       "price": 500
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1788233511.890649",
+   "rc": 2,
+   "lr": "1788240094.179899",
    "rfx": 3,
    "status": "confirm",
    "handler": "심성현",
