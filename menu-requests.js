@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1377,
- "updatedAt": "2026-09-01 09:53",
+ "version": 1378,
+ "updatedAt": "2026-09-01 10:39",
  "days": 30,
  "items": [
+  {
+   "ts": "1788226711.709729",
+   "date": "2026-09-01",
+   "time": "10:38",
+   "store": "청명 푸드",
+   "biz": "8372002316",
+   "pos": "토스포스",
+   "content": "배민앱과 똑같이 등록 요청 / 토스포스프로그램 사용",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1788226715.529849",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788226711709729"
+  },
   {
    "ts": "1788223382.396969",
    "date": "2026-09-01",
