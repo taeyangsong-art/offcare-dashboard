@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7216,
+  "version": 7217,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144220,14 +144220,26 @@ window.SLACK_DATA = {
     "2026-09-01": {
       "counts": {
         "as": {
+          "심성현": 2,
           "김동욱": 1,
           "배선유": 2,
           "고경림": 1,
-          "심성현": 1
+          "김현기": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:36",
+          "store": "수금스넥",
+          "biz": "4324600748",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "3개월 전 프로그램 업데이트된 이후부터 싸인패드에 서명 시 인식이 안된 거 같다고 하시어 점검 부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "현재 통화 불가 상태 1500 통화 예약 요청"
+        },
         {
           "time": "09:30",
           "store": "팬텀튜닝",
@@ -144273,6 +144285,17 @@ window.SLACK_DATA = {
           "note": "태블릿 볼륨 + - 전원 15초 강제 종료 후 재부팅 정상"
         },
         {
+          "time": "09:15",
+          "store": "동네 커피",
+          "biz": "3143801600",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "아이샵케어 미가맹 쿠팡이츠 타겟 건",
+          "hw": "",
+          "intake": "online",
+          "note": "1차부재 전화 안받음 / 지금 당장 바빠서 어려움 11시 맞춰서 예약"
+        },
+        {
           "time": "09:00",
           "store": "메디결라인 청라점",
           "biz": "7447000646",
@@ -144285,8 +144308,8 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 4,
-        "offline": 1,
+        "online": 5,
+        "offline": 2,
         "unknown": 0
       },
       "updatedAt": "09:36"
@@ -144344,10 +144367,6 @@ window.SLACK_DATA = {
       "1788138906.847629": {
         "post": "1788138906.847629",
         "lastSeen": 1788207324.891
-      },
-      "1788222600.138609": {
-        "post": "1788222600.138609",
-        "lastSeen": 1788223108.978
       }
     },
     "days": {
@@ -182564,7 +182583,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-01 09:38",
+    "at": "2026-09-01 09:42",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
