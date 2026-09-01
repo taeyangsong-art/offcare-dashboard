@@ -3,10 +3,69 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1403,
- "updatedAt": "2026-09-01 15:25",
+ "version": 1404,
+ "updatedAt": "2026-09-01 16:18",
  "days": 30,
  "items": [
+  {
+   "ts": "1788246930.584879",
+   "date": "2026-09-01",
+   "time": "16:15",
+   "store": "쏘주 맥쭈",
+   "biz": "1921702310",
+   "pos": "오케이포스",
+   "content": "오케이포스 사용 매장 / 메뉴 등록 부탁드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BU6A0FVEY",
+     "from": "댓글",
+     "path": "menu-files/1788246930_584879-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "파스타면",
+       "name": "새우 크림파스타",
+       "price": 18900
+      },
+      {
+       "category": "파스타면",
+       "name": "새우 투움바 파스타",
+       "price": 18900
+      },
+      {
+       "category": "파스타면",
+       "name": "불닭크림 파스타",
+       "price": 18900
+      },
+      {
+       "category": "파스타면",
+       "name": "우삼겹 새우 홀판 짜파게티",
+       "price": 14900
+      },
+      {
+       "category": "파스타면",
+       "name": "누들 크림짬뽕&마늘 바게트",
+       "price": 23900
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "파스타&면 카테고리 안에\n누들크림짬뽕&마늘바게트 23,900원",
+    "엥 저거 하나 요청 주셨는데 전화 드려볼게요"
+   ],
+   "rc": 4,
+   "lr": "1788247073.512259",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788246930584879"
+  },
   {
    "ts": "1788243086.936869",
    "date": "2026-09-01",
