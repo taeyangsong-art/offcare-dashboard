@@ -3,10 +3,54 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1382,
- "updatedAt": "2026-09-01 11:00",
+ "version": 1383,
+ "updatedAt": "2026-09-01 12:03",
  "days": 30,
  "items": [
+  {
+   "ts": "1788231722.515139",
+   "date": "2026-09-01",
+   "time": "12:02",
+   "store": "강창구찹쌀진순대 토평점",
+   "biz": "4688700056",
+   "pos": "",
+   "content": "메뉴 삭제",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "부대찌개 삭제"
+   ],
+   "rc": 2,
+   "lr": "1788231752.589139",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788231722515139"
+  },
+  {
+   "ts": "1788231681.465979",
+   "date": "2026-09-01",
+   "time": "12:01",
+   "store": "강창구 찹쌀진순대 광장점",
+   "biz": "2198509446",
+   "pos": "",
+   "content": "메뉴 삭제",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1788231701.838809",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788231681465979"
+  },
   {
    "ts": "1788227409.085049",
    "date": "2026-09-01",
