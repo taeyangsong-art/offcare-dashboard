@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7204,
+  "version": 7205,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144273,7 +144273,10 @@ window.SLACK_DATA = {
       },
       "1788220817.734769": {
         "post": "1788220817.734769",
-        "lastSeen": 1788220827.157
+        "lastSeen": 1788221010.388,
+        "r": 1,
+        "day": "2026-09-01",
+        "idx": 0
       }
     },
     "days": {
@@ -182461,11 +182464,26 @@ window.SLACK_DATA = {
             "dmin": 33.9
           }
         ]
+      },
+      "2026-09-01": {
+        "cnt": 1,
+        "sumMin": 1.6839621822039286,
+        "over": 0,
+        "items": [
+          {
+            "hm": "09:00",
+            "min": 1.7,
+            "store": "메디결라인 청라점",
+            "biz": "7447000646",
+            "who": "배선유",
+            "cat": "as"
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-01 09:00",
+    "at": "2026-09-01 09:03",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
