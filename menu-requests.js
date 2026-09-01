@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1404,
- "updatedAt": "2026-09-01 16:18",
+ "version": 1405,
+ "updatedAt": "2026-09-01 16:21",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BU6A0FVEY",
      "from": "댓글",
-     "path": "menu-files/1788246930_584879-0.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -51,19 +50,21 @@ window.MENU_REQUESTS = {
        "name": "누들 크림짬뽕&마늘 바게트",
        "price": 23900
       }
-     ]
+     ],
+     "path": "menu-files/1788246930_584879-0.png"
     }
    ],
    "datt": [],
    "replies": [
     "파스타&면 카테고리 안에\n누들크림짬뽕&마늘바게트 23,900원",
-    "엥 저거 하나 요청 주셨는데 전화 드려볼게요"
+    "엥 저거 하나 요청 주셨는데 전화 드려볼게요",
+    "그럴까요? 그럼 알겠습니다 전화 종료\n했습니다~ 완료 처리 해주세욥!"
    ],
-   "rc": 4,
-   "lr": "1788247073.512259",
+   "rc": 5,
+   "lr": "1788247152.308189",
    "rfx": 3,
-   "status": "confirm",
-   "handler": "배선유",
+   "status": "wait",
+   "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788246930584879"
   },
   {
