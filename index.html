@@ -149,6 +149,27 @@
   .hl-card.gold{background:linear-gradient(155deg,#fff5db,#fffdf4); border-color:#ffe6a8}
   .hl-card.mint{background:linear-gradient(155deg,#e4faef,#f4fffa); border-color:#c3efd7}
   .hl-card.plum{background:linear-gradient(155deg,#f3ecff,#faf7ff); border-color:#e0d2ff}   /* 소요시간 */
+  /* 관리자 보정 — 직원별 표 우측 하단 */
+  .adj-foot{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:12px}
+  .adj-note{font-size:12px; color:var(--gray2); font-weight:600}
+  .adj-btn{font-family:inherit; font-size:12.5px; font-weight:700; color:var(--ink-soft); cursor:pointer;
+    background:var(--surface); border:1px solid var(--line); border-radius:9px; padding:7px 14px; transition:all .15s}
+  .adj-btn:hover{background:var(--canvas); border-color:var(--blue); color:var(--blue)}
+  .adj-form{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:12px}
+  .adj-form label{display:flex; flex-direction:column; gap:5px; font-size:12px; font-weight:700; color:var(--gray)}
+  .adj-form input,.adj-form select{font-family:inherit; font-size:13.5px; padding:8px 10px; border:1px solid var(--line);
+    border-radius:9px; background:var(--canvas); color:var(--ink)}
+  .adj-form .wide{grid-column:1 / -1}
+  .adj-save{font-family:inherit; font-size:14px; font-weight:800; color:#fff; background:var(--blue); cursor:pointer;
+    border:none; border-radius:10px; padding:11px; grid-column:1 / -1}
+  .adj-save:hover{background:var(--blue-deep,#0058c7)}
+  .adj-err{grid-column:1 / -1; font-size:12.5px; font-weight:700; color:var(--red); min-height:16px}
+  .adj-list{margin-top:16px; border-top:1px solid var(--line-soft); padding-top:12px}
+  .adj-row{display:flex; align-items:center; justify-content:space-between; gap:8px; font-size:13px; padding:7px 0;
+    border-bottom:1px solid var(--line-soft)}
+  .adj-row .adj-del{font-family:inherit; font-size:11.5px; font-weight:700; color:var(--red); cursor:pointer;
+    background:none; border:1px solid var(--line); border-radius:7px; padding:4px 9px}
+  .adj-row b{font-weight:800}
   .hl-ic{font-size:32px; line-height:1; margin-bottom:9px}
   .hl-lab{font-size:15px; font-weight:700; color:var(--gray)}
   .hl-big{font-size:44px; font-weight:800; letter-spacing:-.03em; line-height:1.12; margin-top:3px; color:var(--ink)}
@@ -1482,6 +1503,9 @@ const LS_DUTY  = "opcare_duty_v1";
 const LS_SHARE = "opcare_share_v1";
 const LS_SHAREEV = "opcare_shareev_v1";   // 공유 일정 — 이벤트 단위(id) 저장·동기화(팀 공유 안정화)
 const LS_VOCEDIT = "opcare_vocedit_v1";
+const LS_ADJUST  = "opcare_adjust_v1";
+// 관리자 보정 암호. ⚠️ 이 저장소는 public 이라 소스에서 보인다(로그인 비번 '시프티'와 동일한 수준의 방어).
+const ADMIN_PASS = "0831";
 let COUNTS = load(LS_COUNT, {});   // { cat: { "YYYY-MM-DD": { emp: n } } }
 let DUTY   = load(LS_DUTY, {});    // { "YYYY-MM-DD": { day, aft, nit } }
 /* 당직 기본값은 구글 당직시트(scripts/fetch-duty.js → duty-data.js)에서 온다.
@@ -1744,6 +1768,7 @@ function pickDuty(i, name){
   if(name) swapDutyByIdx(i, name); else saveDutyOverride(DUTYKEYS[i], '');
 }
 let VOCEDIT= load(LS_VOCEDIT, {}); // { "date|storeId|time": { industry, reasonCat, note, status, emp, doneAt } } — VOC 수기 보정
+let ADJUST = load(LS_ADJUST, {});  // { "date|담당자|카테고리": { n, by, at } } — 관리자 처리건수 보정
                                    // emp=직접 지정한 처리 담당자(자동 감지보다 우선) · doneAt=수기 처리완료일
 const LS_VOCCOMMENT = "opcare_voccomment_v1";
 let VOCCOMMENT = load(LS_VOCCOMMENT, {}); // { "YYYY-MM": "먼슬리 코멘트" }
@@ -1988,6 +2013,86 @@ let ovEnd = ymd(today());
 
 /* ================= Count data access ================= */
 function getCount(cat, date, emp){ return (COUNTS[cat] && COUNTS[cat][date] && COUNTS[cat][date][emp]) || 0; }
+/* ── 관리자 보정 ───────────────────────────────────────────────────────────
+ * 슬랙 이모지로 안 잡힌 처리 건을 관리자가 직접 더하거나 빼는 값.
+ * { "YYYY-MM-DD|담당자|카테고리": {n, by, at} } — 날짜별로 두므로 조회 기간 필터를 그대로 탄다.
+ * 반영은 sumRange(집계 경로)에서만 한다. getCount 는 카테고리 페이지의 수정 input 이
+ * 그대로 읽어 setCount 로 되쓰는 자리라, 여기에 더하면 보정이 COUNTS 에 구워져 이중 계산된다.
+ * 야간 모드(ovShift='night')는 보정에 시각 정보가 없어 제외된다(설치 OB 와 동일). */
+function adjKey(date, emp, cat){ return date+'|'+emp+'|'+cat; }
+function adjN(date, emp, cat){ const r=ADJUST[adjKey(date,emp,cat)]; return r?(Number(r.n)||0):0; }
+function adjDay(cat, date){    // 담당자 구분 없는 그날 보정 합계(카테고리 총계·기타 행 계산용)
+  let n=0; const pre=date+'|', suf='|'+cat;
+  for(const k in ADJUST){ if(k.indexOf(pre)===0 && k.slice(-suf.length)===suf) n+=Number((ADJUST[k]||{}).n)||0; }
+  return n;
+}
+function adjEntries(dates){   // 조회 기간에 걸치는 보정 목록 (최신 날짜순)
+  const set=new Set(dates||[]);
+  return Object.keys(ADJUST).filter(k=>set.has(k.split('|')[0]))
+    .map(k=>{ const [date,emp,cat]=k.split('|'); return {k, date, emp, cat, ...ADJUST[k]}; })
+    .sort((a,b)=> b.date.localeCompare(a.date) || a.emp.localeCompare(b.emp));
+}
+function adjCountIn(dates){ return adjEntries(dates).length; }
+function catNameOfKey(key){ const c=WORK_CATS.find(x=>x.key===key); return c?`${c.icon} ${c.name}`:key; }
+
+// ── 보정 모달 ─────────────────────────────────────────────────────────────
+function openAdjust(){
+  const dates=ovDates();
+  const defDate=dates[dates.length-1]||ymd(today());
+  const list=adjEntries(dates);
+  const rows=list.length? list.map(x=>`<div class="adj-row">
+      <span>${fmtShort(x.date)} · <b>${escapeHtml(x.emp)}</b> · ${catNameOfKey(x.cat)} <b style="color:${x.n>0?'var(--blue)':'var(--red)'}">${x.n>0?'+':''}${x.n}건</b>
+        ${x.by?`<span style="color:var(--gray2);font-size:11.5px">· ${escapeHtml(x.by)}</span>`:''}</span>
+      <button class="adj-del" onclick="deleteAdjust('${x.k}')">삭제</button>
+    </div>`).join('') : '<div class="empty-note" style="padding:12px 0">이 기간에 적용된 보정이 없습니다</div>';
+  let el=document.getElementById('adjModal');
+  if(!el){ el=document.createElement('div'); el.id='adjModal'; el.className='detail-overlay'; el.onclick=e=>{ if(e.target===el) el.remove(); }; document.body.appendChild(el); }
+  el.innerHTML=`<div class="detail-box"><div class="detail-head"><h3>⚖️ 처리건수 보정</h3>
+      <button class="detail-x" onclick="document.getElementById('adjModal').remove()">✕</button></div>
+    <div class="detail-scroll">
+      <div class="hint" style="font-size:12.5px;color:var(--gray2)">슬랙 이모지로 안 잡힌 처리 건을 담당자별로 더하거나 뺍니다. 날짜별로 저장돼 조회 기간을 그대로 따릅니다. (야간 보기에는 반영되지 않습니다)</div>
+      <div class="adj-form">
+        <label>날짜<input type="date" id="adjDate" value="${defDate}"></label>
+        <label>담당자<select id="adjEmp">${EMPLOYEES.map(e=>`<option>${e}</option>`).join('')}</select></label>
+        <label>카테고리<select id="adjCat">${WORK_CATS.map(c=>`<option value="${c.key}"${c.key==='menu'?' selected':''}>${c.icon} ${c.name}</option>`).join('')}</select></label>
+        <label>건수 (음수 = 차감)<input type="number" id="adjNum" value="1" step="1"></label>
+        <label class="wide">관리자 암호<input type="password" id="adjPw" placeholder="관리자 암호" autocomplete="off"
+          onkeydown="if(event.key==='Enter') saveAdjust()"></label>
+        <div class="adj-err" id="adjErr"></div>
+        <button class="adj-save" onclick="saveAdjust()">보정 저장</button>
+      </div>
+      <div class="adj-list"><div style="font-size:12px;font-weight:800;color:var(--gray);margin-bottom:6px">이 기간 보정 ${list.length}건</div>${rows}</div>
+    </div></div>`;
+  const pw=document.getElementById('adjPw'); if(pw) pw.focus();
+}
+function saveAdjust(){
+  const err=document.getElementById('adjErr');
+  const date=(document.getElementById('adjDate')||{}).value||'';
+  const emp=(document.getElementById('adjEmp')||{}).value||'';
+  const cat=(document.getElementById('adjCat')||{}).value||'';
+  const n=parseInt((document.getElementById('adjNum')||{}).value,10);
+  const pw=(document.getElementById('adjPw')||{}).value||'';
+  if(pw!==ADMIN_PASS){ err.textContent='관리자 암호가 올바르지 않습니다.'; return; }
+  if(!date||!emp||!cat){ err.textContent='날짜·담당자·카테고리를 모두 선택하세요.'; return; }
+  if(!n || isNaN(n)){ err.textContent='건수는 0이 아닌 정수로 입력하세요.'; return; }
+  const key=adjKey(date,emp,cat);
+  const cur=Number((ADJUST[key]||{}).n)||0;
+  const next=cur+n;                                  // 같은 칸에 또 넣으면 누적된다
+  if(next===0) delete ADJUST[key];
+  else ADJUST[key]={n:next, by:(typeof gameMe!=='undefined'&&gameMe)||'', at:new Date().toISOString().slice(0,16)};
+  save(LS_ADJUST, ADJUST);
+  pushPatch({adjust:{[key]: next===0 ? '' : ADJUST[key]}});   // ''=묘비(다른 브라우저가 되살리지 않도록)
+  renderMain(); openAdjust();
+}
+function deleteAdjust(key){
+  const pw=prompt('관리자 암호를 입력하세요 (보정 삭제)');
+  if(pw===null) return;
+  if(pw!==ADMIN_PASS){ alert('관리자 암호가 올바르지 않습니다.'); return; }
+  delete ADJUST[key];
+  save(LS_ADJUST, ADJUST);
+  pushPatch({adjust:{[key]:''}});
+  renderMain(); openAdjust();
+}
 function setCount(cat, date, emp, n){
   if(!COUNTS[cat]) COUNTS[cat]={};
   if(!COUNTS[cat][date]) COUNTS[cat][date]={};
@@ -2040,9 +2145,9 @@ function setOvEnd(v){ ovMode='range'; ovEnd=v; renderOverview(); }
 function resetOverviewPeriod(){ ovMode='today'; ovStart=ymd(addDays(today(),-6)); ovEnd=ymd(today()); }
 function sumRange(cat, dates, emp){
   return dates.reduce((a,d)=>{
-    if(emp) return a + getCount(cat,d,emp);
+    if(emp) return a + getCount(cat,d,emp) + adjN(d,emp,cat);
     const day = COUNTS[cat] && COUNTS[cat][d] ? Object.values(COUNTS[cat][d]).reduce((x,y)=>x+y,0) : 0;
-    return a + day;
+    return a + day + adjDay(cat,d);
   }, 0);
 }
 
@@ -3980,6 +4085,7 @@ function loadCloud(cb){
         const rp={};
         const mP=mergePlayers(GAME,b.players);         GAME=mP.merged;       if(Object.keys(mP.restore).length) rp.players=mP.restore;
         const mE=mergeCloudDict(VOCEDIT,b.vocEdit);     VOCEDIT=mE.merged;     if(Object.keys(mE.restore).length) rp.vocEdit=mE.restore;
+        const mAj=mergeCloudDict(ADJUST,b.adjust);      ADJUST=mAj.merged;     if(Object.keys(mAj.restore).length) rp.adjust=mAj.restore;
         const mR=mergeCloudDict(VOCPRAISE,b.vocPraise); VOCPRAISE=mR.merged;   if(Object.keys(mR.restore).length) rp.vocPraise=mR.restore;
         const mC=mergeCloudDict(VOCCOMMENT,b.vocComment);VOCCOMMENT=mC.merged; if(Object.keys(mC.restore).length) rp.vocComment=mC.restore;
         const mD=mergeCloudDict(DUTYOVER,b.dutyOver);   DUTYOVER=mD.merged;    if(Object.keys(mD.restore).length) rp.dutyOver=mD.restore;
@@ -4631,6 +4737,10 @@ function renderOverview(){
           </tbody>
           <tfoot><tr><td>합계</td>${workCatTotals.map(c=>`<td class="num">${c.total}</td>`).join("")}<td class="num">${vocAttr}</td><td class="num ob-col">${obSum}</td><td class="num tot">${grandEmp}</td></tr></tfoot>
         </table>
+      </div>
+      <div class="adj-foot">
+        ${adjCountIn(viewDates)?`<span class="adj-note">⚖️ 이 기간 보정 ${adjCountIn(viewDates)}건 적용 중</span>`:'<span></span>'}
+        <button class="adj-btn" onclick="openAdjust()" title="슬랙 이모지로 안 잡힌 처리 건을 담당자별로 더하거나 뺍니다 (관리자 암호 필요)">⚖️ 보정</button>
       </div>
     </div>
 
