@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1386,
- "updatedAt": "2026-09-01 12:45",
+ "version": 1387,
+ "updatedAt": "2026-09-01 13:14",
  "days": 30,
  "items": [
+  {
+   "ts": "1788236011.162999",
+   "date": "2026-09-01",
+   "time": "13:13",
+   "store": "버거307 호매실점",
+   "biz": "2072609505",
+   "pos": "",
+   "content": "해당 매장 블리스버거 대천해수욕장점(<tel:···|···>)과 메뉴 동일하게 복사 요청 부탁드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1788236053.709239",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788236011162999"
+  },
   {
    "ts": "1788233508.822579",
    "date": "2026-09-01",
