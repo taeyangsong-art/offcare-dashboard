@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7205,
+  "version": 7206,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144207,11 +144207,27 @@ window.SLACK_DATA = {
       }
     },
     "2026-09-01": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "배선유": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:00",
+          "store": "메디결라인 청라점",
+          "biz": "7447000646",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "기존 보유 프린터 기기 연결 가능 확인 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "smt-t225 / 케이블 구매링크 발송"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
@@ -144270,13 +144286,6 @@ window.SLACK_DATA = {
       "1788138906.847629": {
         "post": "1788138906.847629",
         "lastSeen": 1788207324.891
-      },
-      "1788220817.734769": {
-        "post": "1788220817.734769",
-        "lastSeen": 1788221010.388,
-        "r": 1,
-        "day": "2026-09-01",
-        "idx": 0
       }
     },
     "days": {
@@ -182476,14 +182485,15 @@ window.SLACK_DATA = {
             "store": "메디결라인 청라점",
             "biz": "7447000646",
             "who": "배선유",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 4.6
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-01 09:03",
+    "at": "2026-09-01 09:06",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
