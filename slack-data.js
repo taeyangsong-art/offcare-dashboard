@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7212,
+  "version": 7213,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144220,12 +144220,24 @@ window.SLACK_DATA = {
     "2026-09-01": {
       "counts": {
         "as": {
+          "김동욱": 1,
           "심성현": 1,
           "배선유": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:30",
+          "store": "팬텀튜닝",
+          "biz": "2105400255",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "금액 입력 결제 모드 설정 방법 안내 부탁드립니다. / 메뉴 등록했는데 금액 입력 결제 모드에서 보이지 않는다고 하십니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "메뉴는 키오스크모드 활성화하셔야 보임안내. 금액입력결제모드 사용하신다고 하심"
+        },
         {
           "time": "09:18",
           "store": "오뜨미르",
@@ -144250,7 +144262,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 2,
+        "online": 3,
         "offline": 0,
         "unknown": 0
       },
@@ -144312,14 +144324,10 @@ window.SLACK_DATA = {
       },
       "1788221953.994349": {
         "post": "1788221953.994349",
-        "lastSeen": 1788222623.611,
+        "lastSeen": 1788222804.417,
         "r": 1,
         "day": "2026-09-01",
         "idx": 1
-      },
-      "1788222600.138609": {
-        "post": "1788222600.138609",
-        "lastSeen": 1788222623.611
       }
     },
     "days": {
@@ -182535,7 +182543,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-01 09:30",
+    "at": "2026-09-01 09:33",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
