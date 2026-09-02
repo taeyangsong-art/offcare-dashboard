@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1477,
- "updatedAt": "2026-09-02 18:29",
+ "version": 1478,
+ "updatedAt": "2026-09-02 18:30",
  "days": 30,
  "items": [
   {
@@ -18,16 +18,25 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BUDRXM0KC",
+     "from": "댓글",
+     "path": "menu-files/1788341004_101259-0.png",
+     "kind": "other",
+     "menu": []
+    }
+   ],
    "datt": [],
    "replies": [
     "··· / 애니랩스 기준 토플파 메뉴 그대로 복사 부탁드리겠습니다. (3층 X, 아무것도 없는 애니랩스 토플파)"
    ],
-   "rc": 4,
-   "lr": "1788341345.816119",
+   "rc": 5,
+   "lr": "1788341420.196819",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788341004101259"
   },
   {
