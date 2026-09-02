@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1465,
- "updatedAt": "2026-09-02 18:08",
+ "version": 1466,
+ "updatedAt": "2026-09-02 18:10",
  "days": 30,
  "items": [
   {
@@ -251,7 +251,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BUFK89D17",
      "from": "댓글",
-     "path": "menu-files/1788339251_237159-2.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -334,6 +333,351 @@ window.MENU_REQUESTS = {
        "name": "대관시간",
        "price": 50000
       }
+     ],
+     "path": "menu-files/1788339251_237159-2.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUDLZT5CJ",
+     "from": "댓글",
+     "path": "menu-files/1788339251_237159-3.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "유기농 캐모마일",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "유기농 페퍼민트",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "유기농 얼그레이",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "유기농 블렌딩 티 프루티 골드",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "유기농 블렌딩 티 초카모카",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "유기농 블렌딩 티 버건디 선데이",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "유기농 블렌딩 티 언틸던",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "진하고진허다 대추차",
+       "price": 8500
+      },
+      {
+       "category": "",
+       "name": "달콤하고상큼 유자차",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "레몬자몽가득 자몽차",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "오늘의디톡스 레몬차",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "문경에서왔다 오미자차",
+       "price": 8500
+      },
+      {
+       "category": "",
+       "name": "면역력에 좋은 생강차",
+       "price": 8500
+      },
+      {
+       "category": "",
+       "name": "추운 겨울에는 쌍화차",
+       "price": 8500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUDM0RVNW",
+     "from": "댓글",
+     "path": "menu-files/1788339251_237159-4.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "유기농 캐모마일",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "유기농 페퍼민트",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "유기농 얼그레이",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "유기농 블렌딩 티 프루티 골드",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "유기농 블렌딩 티 초카모카",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "유기농 블렌딩 티 버건디 선데이",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "유기농 블렌딩 티 언틸던",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "진하고진허다 대추차",
+       "price": 8500
+      },
+      {
+       "category": "",
+       "name": "달콤하고상큼 유자차",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "레몬자몽가득 자몽차",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "오늘의디톡스 레몬차",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "문경에서왔다 오미자차",
+       "price": 8500
+      },
+      {
+       "category": "",
+       "name": "면역력에 좋은 생강차",
+       "price": 8500
+      },
+      {
+       "category": "",
+       "name": "추운 겨울에는 쌍화차",
+       "price": 8500
+      },
+      {
+       "category": "",
+       "name": "꿀복숭아이스티(Only ICE)",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "건강 샐러드(레귤러)",
+       "price": 6500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUDM2PQRY",
+     "from": "댓글",
+     "path": "menu-files/1788339251_237159-5.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "레몬추가",
+       "name": "유기농 캐모마일",
+       "price": 5000
+      },
+      {
+       "category": "레몬추가",
+       "name": "유기농 페퍼민트",
+       "price": 5000
+      },
+      {
+       "category": "레몬추가",
+       "name": "유기농 얼그레이",
+       "price": 5000
+      },
+      {
+       "category": "레몬추가",
+       "name": "유기농 블렌딩 티 프루티 골드",
+       "price": 5500
+      },
+      {
+       "category": "레몬추가",
+       "name": "유기농 블렌딩 티 초카모카",
+       "price": 5500
+      },
+      {
+       "category": "레몬추가",
+       "name": "유기농 블렌딩 티 버건디 선데이",
+       "price": 5500
+      },
+      {
+       "category": "레몬추가",
+       "name": "유기농 블렌딩 티 언틸던",
+       "price": 5500
+      },
+      {
+       "category": "레몬추가",
+       "name": "레몬자몽가득 자몽차",
+       "price": 5500
+      },
+      {
+       "category": "레몬추가",
+       "name": "오늘의디톡스 레몬차",
+       "price": 5500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUBPPPKFG",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "레몬추가",
+       "name": "유기농 캐모마일",
+       "price": 5000
+      },
+      {
+       "category": "레몬추가",
+       "name": "유기농 페퍼민트",
+       "price": 5000
+      },
+      {
+       "category": "레몬추가",
+       "name": "유기농 얼그레이",
+       "price": 5000
+      },
+      {
+       "category": "레몬추가",
+       "name": "유기농 블렌딩 티 프루티 골드",
+       "price": 5500
+      },
+      {
+       "category": "레몬추가",
+       "name": "유기농 블렌딩 티 초카모카",
+       "price": 5500
+      },
+      {
+       "category": "레몬추가",
+       "name": "유기농 블렌딩 티 버건디 선데이",
+       "price": 5500
+      },
+      {
+       "category": "레몬추가",
+       "name": "유기농 블렌딩 티 언틸던",
+       "price": 5500
+      },
+      {
+       "category": "레몬추가",
+       "name": "레몬자몽가득 자몽차",
+       "price": 5500
+      },
+      {
+       "category": "레몬추가",
+       "name": "오늘의디톡스 레몬차",
+       "price": 5500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BV83LFC8G",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "에이드변경",
+       "name": "달콤하고상큼 유자차",
+       "price": 5500
+      },
+      {
+       "category": "에이드변경",
+       "name": "레몬자몽가득 자몽차",
+       "price": 5500
+      },
+      {
+       "category": "에이드변경",
+       "name": "오늘의디톡스 레몬차",
+       "price": 5500
+      },
+      {
+       "category": "에이드변경",
+       "name": "문경에서왔다 오미자차",
+       "price": 8500
+      },
+      {
+       "category": "에이드변경",
+       "name": "꿀복숭아이스티(Only ICE)",
+       "price": 5500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUHC11R6G",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "크림치즈",
+       "name": "블루베리베이글",
+       "price": 3000
+      },
+      {
+       "category": "크림치즈",
+       "name": "통밀베이글",
+       "price": 3000
+      },
+      {
+       "category": "크림치즈",
+       "name": "오리지널 치즈베이글",
+       "price": 3500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUFKKFWJD",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "사이즈업",
+       "name": "미모건강주스(Only ICE)",
+       "price": 8500
+      }
      ]
     }
    ],
@@ -341,8 +685,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "• 기존 메뉴사진들은 그대로 살리고, 사진이 없는 메뉴는 비워달라고 하셨습니다!"
    ],
-   "rc": 5,
-   "lr": "1788340049.576019",
+   "rc": 6,
+   "lr": "1788340136.254459",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
