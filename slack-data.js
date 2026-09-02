@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7648,
+  "version": 7649,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144826,8 +144826,8 @@ window.SLACK_DATA = {
     "2026-09-02": {
       "counts": {
         "as": {
+          "심성현": 9,
           "배선유": 7,
-          "심성현": 8,
           "김규빈": 5,
           "김현기": 4,
           "김동욱": 4,
@@ -144886,6 +144886,18 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "11:36",
+          "store": "와룡",
+          "biz": "3111297655",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "U+ 인터넷 설치 후 프론트 결제가 되지 않는다고 합니다. 온보딩 부탁드려요. :woman-bowing::skin-tone-2:",
+          "hw": "",
+          "urgent": true,
+          "intake": "offline",
+          "note": "바로 결제 받아야해서 빠른 연락 요청 주셨습니다. / 결제 출력 테스트 완료"
+        },
         {
           "time": "11:29",
           "store": "브라운핸즈 송림동화점",
@@ -145462,10 +145474,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 41,
-        "offline": 13,
+        "offline": 14,
         "unknown": 0
       },
-      "updatedAt": "11:39",
+      "updatedAt": "11:42",
       "voc": {
         "responses": 1,
         "install": {
@@ -145611,24 +145623,21 @@ window.SLACK_DATA = {
       },
       "1788307596.403259": {
         "post": "1788307596.403259",
-        "lastSeen": 1788316819.441,
+        "lastSeen": 1788316945.08,
         "r": 1,
         "day": "2026-09-02",
         "idx": 0
       },
       "1788312601.098729": {
         "post": "1788312601.098729",
-        "lastSeen": 1788316819.441,
+        "lastSeen": 1788316945.08,
         "r": 1,
         "day": "2026-09-02",
         "idx": 11
       },
-      "1788316608.223819": {
-        "post": "1788316608.223819",
-        "lastSeen": 1788316819.441,
-        "r": 1,
-        "day": "2026-09-02",
-        "idx": 27
+      "1788316931.827819": {
+        "post": "1788316931.827819",
+        "lastSeen": 1788316945.08
       }
     },
     "days": {
@@ -185355,14 +185364,15 @@ window.SLACK_DATA = {
             "store": "와룡",
             "biz": "3111297655",
             "who": "심성현",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 4.6
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-02 11:40",
+    "at": "2026-09-02 11:42",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
