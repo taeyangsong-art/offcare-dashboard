@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1432,
- "updatedAt": "2026-09-02 15:49",
+ "version": 1433,
+ "updatedAt": "2026-09-02 15:53",
  "days": 30,
  "items": [
+  {
+   "ts": "1788331959.003039",
+   "date": "2026-09-02",
+   "time": "15:52",
+   "store": "램니쿠야 둔촌2호점",
+   "biz": "6687700434",
+   "pos": "퍼스트포스",
+   "content": "무슨 포스인지 모르겠다고 하심 / 메뉴 수정 요청 >>",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "기타 주류 > 기린생맥주 360ml 8,000원 밑에\n기린할인맥주 7,000원 추가\n노주노교블랙(?) 15,000 > 16,000 인상\n레몬 3,000 인상, 콜라/사이다/환타 3,000 인상\n하이네켄 / 타이거 맥주 삭제\n\n<tel:···|···> / <tel:···|···> 으로 문자 요청"
+   ],
+   "rc": 2,
+   "lr": "1788331981.617389",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788331959003039"
+  },
   {
    "ts": "1788330965.587429",
    "date": "2026-09-02",
@@ -52119,39 +52142,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785742665413989"
-  },
-  {
-   "ts": "1785739972.879339",
-   "date": "2026-08-03",
-   "time": "15:52",
-   "store": "돼지뚱땡이",
-   "biz": "8810903258",
-   "pos": "토스포스",
-   "content": "신규등록",
-   "special": "메일 첨부하겠습니다",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BMTJKNDDY",
-     "from": "댓글",
-     "kind": "other",
-     "menu": []
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "메일 없어 연락했으나 부재",
-    "님 안녕하세요!\n아래와 같이 메일 수신 확인되어 전달드립니다. 혹시 등록 진행 후 완료 시 문자 발송 가능하실까요~?",
-    "안녕하세욥! 새로 올려서 처리 후 문자드릴게요~"
-   ],
-   "rc": 4,
-   "lr": "1785815508.755169",
-   "rfx": 3,
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785739972879339"
   }
  ],
  "ocr": {
