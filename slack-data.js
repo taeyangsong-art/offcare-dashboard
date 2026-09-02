@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7670,
+  "version": 7671,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144826,8 +144826,8 @@ window.SLACK_DATA = {
     "2026-09-02": {
       "counts": {
         "as": {
+          "심성현": 13,
           "김규빈": 6,
-          "심성현": 12,
           "송태양": 3,
           "배선유": 7,
           "김현기": 4,
@@ -144898,6 +144898,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "12:45",
+          "store": "와이비엠잉글루영어보습학원",
+          "biz": "8969002017",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포프(pc) + 유프 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "1345 통화 예약 기기 미개봉 기본 세팅 요청"
+        },
         {
           "time": "12:32",
           "store": "아도라헤어(철원점)",
@@ -145640,44 +145651,88 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 54,
+        "online": 55,
         "offline": 16,
         "unknown": 0
       },
       "updatedAt": "12:45",
       "voc": {
-        "responses": 1,
+        "responses": 2,
         "install": {
-          "count": 0,
-          "low": 0
+          "count": 1,
+          "low": 1
         },
         "nps": {
-          "count": 1,
-          "low": 0
+          "count": 2,
+          "low": 1
         },
         "high": {
           "install": 0,
           "nps": 0
         },
         "npsDist": {
+          "2": 1,
           "9": 1
         },
-        "installDist": {},
-        "byIndustry": {},
+        "installDist": {
+          "2": 1
+        },
+        "byIndustry": {
+          "서비스[학원]": 1
+        },
         "byTenure": {
+          "구매설치": {
+            "total": 1,
+            "low": 1
+          },
           "1개월": {
             "total": 1,
             "low": 0
           }
         },
         "byVan": {
+          "SMARTRO": {
+            "total": 1,
+            "low": 1
+          },
           "KIS": {
             "total": 1,
             "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "필요한 기능이 없거나 몰라서 불편": 2
+        },
+        "alerts": [
+          {
+            "time": "12:45",
+            "store": "채움아트 미술교습소",
+            "storeId": "293051",
+            "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
+            "install": 2,
+            "nps": 2,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 2,
+                "text": "전자영수증 발급이 번거롭고  전자영수증시 나에게 어떤학부모님인지 기록하기가 어렵다",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              },
+              {
+                "q": "추천의향",
+                "score": 2,
+                "text": "물어보시던데..리뷰 남기는것도어렵고..학원업계에서는 ...별로",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
         "praises": []
       }
     }
@@ -145782,42 +145837,42 @@ window.SLACK_DATA = {
       },
       "1788307596.403259": {
         "post": "1788307596.403259",
-        "lastSeen": 1788320723.535,
+        "lastSeen": 1788320900.749,
         "r": 1,
         "day": "2026-09-02",
         "idx": 0
       },
       "1788312601.098729": {
         "post": "1788312601.098729",
-        "lastSeen": 1788320723.535,
+        "lastSeen": 1788320900.749,
         "r": 1,
         "day": "2026-09-02",
         "idx": 11
       },
       "1788317100.456199": {
         "post": "1788317100.456199",
-        "lastSeen": 1788320723.535,
+        "lastSeen": 1788320900.749,
         "r": 1,
         "day": "2026-09-02",
         "idx": 30
       },
       "1788317974.458459": {
         "post": "1788317974.458459",
-        "lastSeen": 1788320723.535,
+        "lastSeen": 1788320900.749,
         "r": 1,
         "day": "2026-09-02",
         "idx": 35
       },
       "1788318039.633239": {
         "post": "1788318039.633239",
-        "lastSeen": 1788320723.535,
+        "lastSeen": 1788320900.749,
         "r": 1,
         "day": "2026-09-02",
         "idx": 38
       },
       "1788318870.957079": {
         "post": "1788318870.957079",
-        "lastSeen": 1788320723.535,
+        "lastSeen": 1788320900.749,
         "r": 1,
         "day": "2026-09-02",
         "idx": 37
@@ -185677,13 +185732,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-02 12:45",
+    "at": "2026-09-02 12:48",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3838,
+    "rows": 3839,
     "named": 530,
     "unknownName": 0,
     "beforeStart": 0,
