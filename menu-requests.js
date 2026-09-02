@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1417,
- "updatedAt": "2026-09-02 12:06",
+ "version": 1418,
+ "updatedAt": "2026-09-02 13:30",
  "days": 30,
  "items": [
   {
@@ -52793,29 +52793,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785732563914419"
-  },
-  {
-   "ts": "1785731413.655779",
-   "date": "2026-08-03",
-   "time": "13:30",
-   "store": "가배차 명륜점",
-   "biz": "7341701978",
-   "pos": "토스포스",
-   "content": "전체 메뉴등록 부탁드립니다",
-   "special": "메뉴만 등록해주시고 옵션및 사진은 추후에 등록 다시 하겠습니다",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "완료"
-   ],
-   "rc": 3,
-   "lr": "1785732779.545529",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785731413655779"
   }
  ],
  "ocr": {
