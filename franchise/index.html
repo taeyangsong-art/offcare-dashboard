@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<script>try{if(localStorage.getItem('opcare_theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
+<title>프랜차이즈 대시보드 · iShopCare</title>
+<link rel="icon" type="image/png" href="../favicon.png">
+<style>
+  :root{
+    --ink:#1d1d1f; --ink-soft:#424245; --gray:#6e6e73; --gray2:#86868b;
+    --line:#d2d2d7; --line-soft:#e8e8ed; --surface:#f5f5f7; --surface2:#fafafa;
+    --surface-soft:#f0f0f3;
+    --canvas:#ffffff; --blue:#0071e3; --blue-soft:#e8f1fd; --blue-deep:#0060c0;
+    --red:#ff3b30; --red-soft:#ffecec; --green:#34c759; --green-soft:#e7f8ec;
+    --orange:#ff9500; --purple:#5e5ce6; --teal:#00c7be; --muted:#aeaeb4;
+    --shadow:0 1px 3px rgba(0,0,0,.06),0 6px 20px rgba(0,0,0,.05);
+    --radius:18px;
+  }
+  :root[data-theme="dark"]{
+    --ink:#f2f2f7; --ink-soft:#c9c9ce; --gray:#a0a0a6; --gray2:#8a8a90;
+    --line:#3a3a3f; --line-soft:#2a2a2e; --surface:#17171a; --surface2:#202024;
+    --surface-soft:#2c2c31;
+    --canvas:#242429; --blue:#0a84ff; --blue-soft:rgba(10,132,255,.22); --blue-deep:#5aa9ff;
+    --red:#ff453a; --red-soft:rgba(255,69,58,.20); --green:#30d158; --green-soft:rgba(48,209,88,.20);
+    --orange:#ff9f0a; --purple:#8b88ff; --teal:#40cbc4; --muted:#7a7a80;
+    --shadow:0 1px 3px rgba(0,0,0,.5),0 8px 24px rgba(0,0,0,.55);
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro KR","Apple SD Gothic Neo",
+      "Pretendard","Segoe UI",Roboto,sans-serif;
+    background:var(--surface); color:var(--ink);
+    -webkit-font-smoothing:antialiased; line-height:1.45;
+    display:flex; min-height:100vh;
+  }
+
+  /* ===== Sidebar ===== */
+  .sidebar{width:248px; flex:0 0 248px; background:var(--canvas);
+    border-right:1px solid var(--line-soft); padding:26px 16px;
+    display:flex; flex-direction:column; gap:6px; position:sticky; top:0; height:100vh}
+  .brand{padding:4px 12px 22px}
+  .brand h1{font-size:17px; font-weight:700; letter-spacing:-.02em; line-height:1.3}
+  .brand p{font-size:12px; color:var(--gray2); margin-top:4px}
+  .nav-label{font-size:11px; font-weight:700; letter-spacing:.06em; color:var(--gray2);
+    padding:8px 12px 4px; text-transform:uppercase}
+  .navbtn{display:flex; align-items:center; gap:11px; width:100%; text-align:left;
+    padding:11px 13px; border:none; background:none; border-radius:11px;
+    font-size:15px; font-weight:600; color:var(--ink-soft); cursor:pointer;
+    transition:background .15s, color .15s; font-family:inherit}
+  .navbtn:hover{background:var(--surface)}
+  .navbtn.active{background:var(--blue); color:#fff}
+  .navbtn .ic{width:20px; text-align:center; font-size:16px}
+  .navbtn .nb{margin-left:auto; background:var(--orange); color:#fff; font-size:11px; font-weight:800;
+    padding:1px 8px; border-radius:20px}
+  .navbtn.active .nb{background:rgba(255,255,255,.28)}
+  .nav-div{height:1px; background:var(--line-soft); margin:8px 12px}
+  .side-foot{margin-top:auto; font-size:11.5px; color:var(--gray2); padding:10px 11px; line-height:1.6}
+  /* 페이지 이동 링크는 실제로 눌러 쓰는 항목이라 캡션보다 크게 */
+  .side-foot a{display:block; color:var(--blue); text-decoration:none;
+    font-size:14px; font-weight:700; padding:7px 2px; border-radius:8px; transition:background .15s}
+  .side-foot a:hover{background:var(--surface)}
+
+  /* ===== Main ===== */
+  .main{flex:1; min-width:0; padding:32px 40px 72px; overflow-x:hidden}
+  .page-head{display:flex; align-items:flex-end; justify-content:space-between; gap:20px;
+    flex-wrap:wrap; margin-bottom:24px}
+  .page-head h2{font-size:30px; font-weight:700; letter-spacing:-.03em}
+  .page-head .sub{font-size:14px; color:var(--gray); margin-top:5px}
+
+  .controls{display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+  .seg{display:inline-flex; background:var(--surface); border-radius:11px; padding:3px;
+    border:1px solid var(--line-soft)}
+  .seg button{border:none; background:none; padding:8px 15px; border-radius:8px;
+    font-size:13px; font-weight:600; color:var(--gray); cursor:pointer; font-family:inherit; transition:.15s}
+  .seg button.on{background:var(--canvas); color:var(--ink); box-shadow:0 1px 2px rgba(0,0,0,.08)}
+  input[type=date],input[type=search],input[type=text]{font-family:inherit; font-size:14px; padding:9px 13px;
+    border:1px solid var(--line); border-radius:11px; background:var(--canvas); color:var(--ink)}
+  input[type=date]{cursor:pointer}
+  .btn{background:var(--canvas); border:1px solid var(--line); padding:9px 15px; border-radius:11px;
+    font-size:13px; font-weight:600; color:var(--ink); cursor:pointer; font-family:inherit; transition:.15s}
+  .btn:hover{background:var(--surface)}
+  .btn:active{transform:scale(.96)}
+  .btn.primary{background:var(--blue); color:#fff; border-color:var(--blue)}
+  .btn.primary:hover{background:var(--blue-deep)}
+  .btn.sm{padding:6px 11px; font-size:12.5px}
+
+  /* tiles */
+  .ov-tiles{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:24px}
+  .ov-tile{background:var(--canvas); border-radius:16px; padding:16px 18px; box-shadow:var(--shadow);
+    border-left:4px solid var(--c,var(--blue))}
+  .ov-tile .ov-name{font-size:15px; font-weight:600; color:var(--gray); display:flex; align-items:center; gap:6px}
+  .ov-tile .ov-val{font-size:38px; font-weight:800; letter-spacing:-.03em; margin-top:9px; line-height:1}
+  .ov-tile .ov-val small{font-size:15px; font-weight:600; color:var(--gray2); margin-left:4px}
+  .ov-tile .ov-sub{font-size:12.5px; font-weight:600; margin-top:7px; color:var(--gray2)}
+  .ov-tile.grand{background:linear-gradient(135deg,#0071e3,#4a9bff); border-left-color:#0060c0}
+  .ov-tile.grand .ov-name{color:rgba(255,255,255,.9)}
+  .ov-tile.grand .ov-val{color:#fff}
+  .ov-tile.grand .ov-val small,.ov-tile.grand .ov-sub{color:rgba(255,255,255,.88)}
+
+  /* card */
+  .card{background:var(--canvas); border-radius:var(--radius); padding:24px; box-shadow:var(--shadow); margin-bottom:24px}
+  .card-head{display:flex; align-items:center; justify-content:space-between; margin-bottom:18px; gap:12px; flex-wrap:wrap}
+  .card-head h3{font-size:17px; font-weight:700; letter-spacing:-.01em}
+  .card-head .hint{font-size:12.5px; color:var(--gray2)}
+  .grid2{display:grid; grid-template-columns:1.25fr .75fr; gap:24px; align-items:start}
+  .grid2.even{grid-template-columns:1fr 1fr; align-items:stretch}
+  .grid2.even>.card{margin-bottom:24px}
+  .chart-wrap{width:100%; overflow-x:auto}
+  svg{display:block; max-width:100%}
+  /* 차트는 좁은 화면에서 찌그러뜨리지 않고 원래 크기로 가로 스크롤시킨다 */
+  .chart-wrap svg{max-width:none}
+
+  /* legend */
+  .legend{display:flex; flex-wrap:wrap; gap:12px; margin-top:14px}
+  .lg{display:inline-flex; align-items:center; gap:6px; font-size:12.5px; color:var(--gray); font-weight:600}
+  .lg i{width:10px; height:10px; border-radius:3px; display:inline-block}
+
+  /* bars */
+  .bar-row{margin-bottom:11px}
+  .bar-meta{display:flex; justify-content:space-between; font-size:13px; margin-bottom:5px; gap:10px}
+  .bar-meta .nm{font-weight:600; color:var(--ink-soft); overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+  .bar-meta .ct{font-weight:700; color:var(--ink); white-space:nowrap}
+  .bar-track{height:10px; background:var(--surface); border-radius:6px; overflow:hidden}
+  .bar-fill{height:100%; border-radius:6px; background:linear-gradient(90deg,var(--blue),#4a9bff)}
+  .bar-row.clickable{cursor:pointer; padding:2px 4px; margin:0 -4px 9px; border-radius:8px; transition:background .12s}
+  .bar-row.clickable:hover{background:var(--surface)}
+
+  /* tables */
+  table{width:100%; border-collapse:collapse; font-size:14px}
+  th{text-align:left; font-size:12px; font-weight:700; color:var(--gray); letter-spacing:.02em;
+    padding:11px 12px; border-bottom:1px solid var(--line); white-space:nowrap; background:var(--canvas)}
+  th.num,td.num{text-align:right}
+  th.sortable{cursor:pointer; user-select:none}
+  th.sortable:hover{color:var(--ink)}
+  th .arw{opacity:.45; font-size:10px; margin-left:3px}
+  td{padding:9px 12px; border-bottom:1px solid var(--line-soft); vertical-align:middle}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr:hover td{background:var(--surface)}
+  .tbl-wrap{overflow-x:auto}
+  .tbl-wrap table{min-width:640px}
+  /* 긴 표: 헤더·합계행 고정 + 내부 스크롤. overflow-x 만 준 컨테이너에서는
+     세로 sticky 가 먹지 않으므로 overflow:auto 로 양방향을 함께 준다. */
+  .tbl-scroll{max-height:68vh; overflow:auto; border:1px solid var(--line-soft); border-radius:12px}
+  .tbl-scroll table{min-width:640px}
+  .tbl-scroll thead th{position:sticky; top:0; z-index:3; box-shadow:inset 0 -1px 0 var(--line)}
+  .tbl-scroll tfoot td{position:sticky; bottom:0; z-index:3}
+  .zero{color:var(--muted)}
+  .totcell{font-weight:800; color:var(--blue-deep); background:var(--blue-soft)}
+  tfoot td{font-weight:800; font-size:15px; color:var(--blue-deep); border-top:2px solid var(--blue);
+    background:var(--blue-soft); padding:11px 12px}
+  tfoot td:first-child{color:var(--ink-soft); background:var(--surface)}
+  .brand-link{font-weight:700; color:var(--blue); cursor:pointer}
+  .brand-link:hover{text-decoration:underline}
+  .brand-link::after{content:' →'; font-size:11px; opacity:.5}
+  /* 계약 고객사 카드 */
+  .cgrid{display:grid; grid-template-columns:repeat(auto-fill,minmax(215px,1fr)); gap:13px}
+  .ccard{display:block; text-decoration:none; background:var(--surface2);
+    border:1px solid var(--line-soft); border-radius:15px; padding:18px 19px; transition:transform .15s, border-color .15s}
+  .ccard:hover{transform:translateY(-2px); border-color:var(--blue)}
+  .ccard .ci{font-size:29px; line-height:1}
+  .ccard .cn{font-size:18px; font-weight:800; color:var(--ink); margin-top:9px; letter-spacing:-.02em}
+  .ccard .cd{font-size:12.5px; color:var(--gray); margin-top:5px; line-height:1.5; word-break:keep-all}
+  .ccard .cgo{font-size:12.5px; font-weight:700; color:var(--blue); margin-top:11px}
+  .ccard .cbig{font-size:31px; font-weight:800; letter-spacing:-.03em; color:var(--ink); margin-top:7px; line-height:1}
+  .ccard .cbig small{font-size:14px; font-weight:600; color:var(--gray2); margin-left:3px}
+  .ccard .cbig .cst{font-size:12.5px; font-weight:700; color:var(--gray); margin-left:9px; letter-spacing:0}
+  .s-badge{display:inline-block; font-size:10.5px; font-weight:800; padding:1px 7px; border-radius:20px;
+    margin-left:6px; vertical-align:middle; background:var(--red); color:#fff; letter-spacing:0}
+  /* 전용 원장에만 있는 카테고리 열 — 슬랙 파이프라인엔 분류가 없다는 표시 */
+  th.conly{color:var(--purple)}
+  th.conly::after{content:' ▲'; font-size:8px; opacity:.65}
+  .cli-badge{display:inline-block; font-size:10.5px; font-weight:800; padding:1px 7px; border-radius:20px;
+    margin-left:6px; vertical-align:middle; background:var(--blue); color:#fff}
+  tr.cli-row td{background:var(--blue-soft); border-bottom:1px solid var(--line)}
+  tr.cli-row:hover td{background:var(--blue-soft)}
+  .tierbadge{display:inline-block; font-size:10.5px; font-weight:800; padding:1px 7px; border-radius:20px;
+    margin-left:6px; vertical-align:middle}
+  .tierbadge.A{background:var(--green-soft); color:#166534}
+  .tierbadge.B{background:#fff4e0; color:#b45309}
+  :root[data-theme="dark"] .tierbadge.B{background:rgba(255,159,10,.2); color:#ffb340}
+  .cat-chip{display:inline-block; font-size:11.5px; font-weight:700; padding:2px 9px; border-radius:20px; white-space:nowrap}
+  .req-cell{max-width:340px; font-size:13px; color:var(--ink-soft); line-height:1.4}
+  .empty{text-align:center; color:var(--gray2); font-size:14px; padding:44px 10px; line-height:1.7}
+
+  /* candidates */
+  .cand-scroll{max-height:520px; overflow-y:auto; border:1px solid var(--line-soft); border-radius:12px; padding:4px 14px}
+  .cand-row{display:flex; align-items:flex-start; gap:12px; padding:12px 4px; border-bottom:1px solid var(--line-soft)}
+  .cand-row:last-child{border-bottom:none}
+  .cand-row input{margin-top:4px; width:17px; height:17px; accent-color:var(--blue); cursor:pointer; flex:0 0 auto}
+  .cand-body{flex:1; min-width:0}
+  .cand-name{font-size:15px; font-weight:700; color:var(--ink)}
+  .cand-n{font-size:12px; font-weight:800; color:var(--orange); margin-left:7px}
+  .cand-stores{font-size:12.5px; color:var(--gray); margin-top:3px; line-height:1.5; word-break:keep-all}
+  .snip{background:var(--surface2); border:1px solid var(--line-soft); border-radius:12px; padding:14px 16px;
+    font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace; font-size:12.5px; color:var(--ink);
+    white-space:pre-wrap; word-break:break-all; line-height:1.7; margin-top:14px}
+  .notice{display:flex; gap:11px; align-items:flex-start; background:var(--blue-soft);
+    border-radius:14px; padding:14px 16px; margin-bottom:22px}
+  .notice .k{flex:0 0 auto; background:var(--blue); color:#fff; font-size:11.5px; font-weight:800;
+    padding:3px 10px; border-radius:20px}
+  .notice .t{font-size:13.5px; color:var(--ink-soft); line-height:1.6}
+  .notice.warn{background:#fff4e0} .notice.warn .k{background:var(--orange)}
+  :root[data-theme="dark"] .notice.warn{background:rgba(255,159,10,.16)}
+
+  /* modal */
+  .ov{position:fixed; inset:0; z-index:9998; background:rgba(0,0,0,.45); display:flex;
+    align-items:center; justify-content:center; padding:20px}
+  .box{background:var(--canvas); border-radius:18px; width:100%; max-width:760px; max-height:84vh;
+    display:flex; flex-direction:column; padding:22px 24px; box-shadow:0 24px 60px rgba(0,0,0,.3)}
+  .box-head{display:flex; align-items:center; justify-content:space-between; gap:12px}
+  .box-head h3{font-size:18px; font-weight:800}
+  .box-x{border:none; background:var(--surface2); width:31px; height:31px; border-radius:50%;
+    font-size:15px; cursor:pointer; color:var(--gray); flex:0 0 auto}
+  .box-x:hover{background:var(--line-soft)}
+  .box-scroll{overflow:auto; margin-top:14px}
+  .box-sum{display:flex; flex-wrap:wrap; gap:7px; margin-top:12px}
+  .box-sum .c{background:var(--surface2); border:1px solid var(--line-soft); border-radius:9px;
+    padding:4px 10px; font-size:12.5px; color:var(--gray)}
+  .box-sum .c b{color:var(--ink)}
+
+  /* theme fab */
+  .theme-fab{position:fixed; right:20px; bottom:20px; z-index:900; width:52px; height:52px;
+    border-radius:50%; border:1px solid var(--line); background:var(--canvas); color:var(--ink);
+    font-size:23px; cursor:pointer; box-shadow:0 6px 20px rgba(0,0,0,.18);
+    display:flex; align-items:center; justify-content:center; transition:transform .15s}
+  .theme-fab:hover{transform:translateY(-2px)}
+
+  @media (max-width:1100px){ .ov-tiles{grid-template-columns:repeat(2,1fr)} .grid2,.grid2.even{grid-template-columns:1fr} }
+  @media (max-width:860px){
+    body{display:block}
+    .sidebar{width:auto; flex:none; height:auto; position:static; flex-direction:row; overflow-x:auto;
+      border-right:none; border-bottom:1px solid var(--line-soft); padding:14px; gap:8px; align-items:center}
+    .brand,.nav-label,.nav-div,.side-foot{display:none}
+    .navbtn{width:auto; white-space:nowrap; padding:9px 13px; font-size:14px}
+    .main{padding:22px 16px 72px}
+    .page-head h2{font-size:24px}
+    .ov-tiles{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<aside class="sidebar">
+  <div class="brand">
+    <h1>🏢 프랜차이즈 대시보드</h1>
+    <p>원격파트 · 프랜차이즈 인입 집계</p>
+  </div>
+  <div class="nav-label">분석</div>
+  <button class="navbtn active" data-view="overview"><span class="ic">📊</span>전체현황</button>
+  <button class="navbtn" data-view="brands"><span class="ic">🏢</span>브랜드별</button>
+  <button class="navbtn" data-view="staff"><span class="ic">👤</span>담당자별</button>
+  <button class="navbtn" data-view="records"><span class="ic">📋</span>처리내역</button>
+  <div class="nav-div"></div>
+  <div class="nav-label">기준 관리</div>
+  <button class="navbtn" data-view="cands"><span class="ic">🔍</span>브랜드 후보<span class="nb" id="candBadge">0</span></button>
+  <div class="side-foot">
+    <div style="padding:0 2px 6px">판별 기준: <b>brands.js</b> 브랜드 리스트</div>
+    <a href="client.html?b=%EC%BB%B4%ED%8F%AC%EC%A6%88%EC%BB%A4%ED%94%BC">☕ 컴포즈커피 대시보드 →</a>
+    <a href="../index.html">← 전체 원격 대시보드</a>
+  </div>
+</aside>
+
+<main class="main">
+  <div class="page-head">
+    <div>
+      <h2 id="pgTitle">전체현황</h2>
+      <div class="sub" id="pgSub">—</div>
+    </div>
+    <div class="controls" id="periodCtl">
+      <div class="seg" id="periodSeg">
+        <button data-p="today">오늘</button>
+        <button data-p="d7">최근 7일</button>
+        <button data-p="d30" class="on">최근 30일</button>
+        <button data-p="all">전체</button>
+      </div>
+      <input type="date" id="dFrom"><span style="color:var(--gray2)">~</span><input type="date" id="dTo">
+      <button class="btn" id="dApply">적용</button>
+    </div>
+  </div>
+  <div id="viewHost"></div>
+</main>
+
+<button class="theme-fab" id="themeFab" title="야간 모드">🌙</button>
+
+<script src="../slack-data.js"></script>
+<script src="brands.js"></script>
+<script src="clients.js"></script>
+<script src="brand-match.js"></script>
+<script>
+/* =====================================================================
+   프랜차이즈 대시보드
+   데이터: ../slack-data.js (window.SLACK_DATA) — 기존 원격 대시보드와 동일 소스
+   판별:  brands.js (window.FRANCHISE_BRANDS) 브랜드 마스터 리스트
+   ===================================================================== */
+
+const RAW   = window.SLACK_DATA || {days:{}};
+const DAYS  = Object.keys(RAW.days || {}).sort();
+const BRANDS_SRC = window.FRANCHISE_BRANDS || [];
+const EXCLUDE    = window.FRANCHISE_EXCLUDE || [];
+
+/* ── 카테고리 ─────────────────────────────────────────────────
+   허브는 두 소스를 한 표에 얹는다.
+     · slack-data.js  → 기존 6종 (온보딩·AS·명의변경·메뉴등록·배달·외주)
+     · 전용 원장(data/*.js) → 계약 8종 (방문AS·단순문의·세금계산서발급·해지·철거 추가)
+   그래서 표 열은 두 체계의 【합집합】이다.
+   합집합이 아니면 컴포즈커피 24건 중 절반(방문AS·단순문의·세금계산서·해지)이 표에서 사라진다.
+
+   clientOnly:true 인 열은 슬랙 파이프라인에 분류 자체가 없다 →
+   슬랙 브랜드 칸은 '0' 이 아니라 '·'(미집계)로 남는다. 둘은 다른 뜻이다. */
+const SLACK_CATS = [
+  {key:'onboarding', name:'온보딩',   color:'#0071e3'},
+  {key:'as',         name:'AS',       color:'#34c759'},
+  {key:'transfer',   name:'명의변경', color:'#ff9500'},
+  {key:'menu',       name:'메뉴등록', color:'#5e5ce6'},
+  {key:'delivery',   name:'배달',     color:'#00c7be'},
+  {key:'extern',     name:'외주',     color:'#8e8e93'},
+];
+const CONTRACT_ONLY = ((window.FRANCHISE_TAXONOMY||{}).contract || [])
+  .filter(c=>!SLACK_CATS.some(s=>s.key===c.key))
+  .map(c=>Object.assign({}, c, {clientOnly:true}));
+const CATS = SLACK_CATS.concat(CONTRACT_ONLY);
+const CAT_MAP = Object.fromEntries(CATS.map(c=>[c.key,c]));
+const catName  = k => (CAT_MAP[k] ? CAT_MAP[k].name : (k||'기타'));
+const catColor = k => (CAT_MAP[k] ? CAT_MAP[k].color : '#aeaeb4');
+
+/* ── 브랜드 매칭 ───────────────────────────────────────────────
+   정규화·인덱스·지점명 분리 로직은 brand-match.js 에 모아두고
+   허브(이 페이지)와 고객사 페이지(client.html)가 함께 쓴다.
+   각자 복사본을 갖고 있으면 한쪽만 고쳐져 숫자가 어긋난다. */
+const stripCorp = BrandMatch.stripCorp;
+const keyOf     = BrandMatch.keyOf;
+const BRAND_IDX = BrandMatch.buildIndex(BRANDS_SRC);
+const EXCL      = BrandMatch.buildExclude(EXCLUDE);
+const isExcluded = (store, biz) => EXCL.test(store, biz);
+const matchBrand = store => BrandMatch.matchBrand(BRAND_IDX, store);
+const branchOf   = (store, hit) => BrandMatch.branchOf(store, hit);
+
+/* ── 고객사(계약 프랜차이즈) ───────────────────────────────────
+   clients.js 에 등록된 브랜드는 전용 원장을 쓰는 "계약 고객사"다.
+   슬랙 집계에 아직 한 건도 없어도 허브에서 반드시 보여야 하므로 별도로 취급한다. */
+const CLIENTS = window.FRANCHISE_CLIENTS || [];
+const clientOf = b => (window.findClient ? window.findClient(b) : null);
+const clientURL = b => 'client.html?b=' + encodeURIComponent(b);
+/* 브랜드명 클릭 → 그 브랜드의 전용 대시보드로 이동 */
+function goBrand(name){ location.href = clientURL(name); }
+
+/* ── 레코드 적재 ─────────────────────────────────────────────── */
+const ALL_DONE = [];   // 전체 처리건(비중 계산용)
+const FR = [];         // 프랜차이즈 처리건
+const FR_PEND = [];    // 프랜차이즈 미처리건
+let PEND_ALL = 0;
+
+DAYS.forEach(date=>{
+  const day = RAW.days[date] || {};
+  (day.done || []).forEach(r=>{
+    const rec = {
+      date, time:r.time||'', store:r.store||'', biz:r.biz||'', cat:r.cat||'',
+      emp:r.emp||'', req:r.req||'', hw:r.hw||'', intake:r.intake||'unknown', note:r.note||''
+    };
+    ALL_DONE.push(rec);
+    if(isExcluded(rec.store, rec.biz)) return;
+    const m = matchBrand(rec.store);
+    if(!m) return;
+    FR.push(Object.assign({}, rec, {
+      brand : m.brand.name,
+      tier  : m.brand.tier,
+      branch: branchOf(rec.store, m.hit),
+      src   : 'slack',
+      sample: false,
+    }));
+  });
+  (day.pending || []).forEach(r=>{
+    PEND_ALL++;
+    if(isExcluded(r.store, r.biz)) return;
+    const m = matchBrand(r.store||'');
+    if(!m) return;
+    FR_PEND.push({
+      date, time:r.time||'', store:r.store||'', biz:r.biz||'', cat:r.cat||'',
+      emp:r.handler||'', intake:r.intake||'unknown',
+      reasons:(r.reasons||[]).join(', '),
+      brand:m.brand.name, branch:branchOf(r.store||'', m.hit)
+    });
+  });
+});
+
+/* ── 계약 고객사 전용 원장 병합 ────────────────────────────────
+   컴포즈커피처럼 전용 원장(data/*.js)을 쓰는 고객사도 허브에서 한 번에 보여야 한다.
+   원장 파일은 clients.js 의 dataFile 경로를 보고 부팅 시 동적으로 로드한다.
+   (새 고객사를 추가해도 이 페이지는 손댈 필요 없음) */
+const CLIENT_FR = [];        // 전용 원장에서 온 처리건
+let   CLIENT_SAMPLE = [];    // 샘플 플래그가 켜진 고객사 이름들
+function loadScript(src){
+  return new Promise((res)=>{
+    const s = document.createElement('script');
+    s.src = src;
+    s.onload = ()=>res(true);
+    s.onerror = ()=>res(false);   // 원장 파일이 없어도 허브는 계속 떠야 한다
+    document.head.appendChild(s);
+  });
+}
+async function loadClientLedgers(){
+  const targets = CLIENTS.filter(c=>c.dataFile);
+  await Promise.all(targets.map(c=>loadScript(c.dataFile)));
+  targets.forEach(c=>{
+    const D = (window.CLIENT_DATA || {})[c.slug];
+    if(!D || !D.records) return;
+    if(D.sample) CLIENT_SAMPLE.push(c.brand);
+    D.records.filter(r=>r && r.date && r.cat).forEach(r=>{
+      /* 지점명이 없으면 매장명에서 브랜드명을 떼어 만든다 (client.html 과 같은 규칙) */
+      let branch = r.branch ? String(r.branch).trim() : '';
+      if(!branch){
+        branch = String(r.store||'').split(c.brand).join(' ').replace(/\s+/g,' ').trim().replace(/^\((.+)\)$/,'$1') || '본점';
+      }
+      CLIENT_FR.push({
+        date  : String(r.date).slice(0,10),
+        time  : r.time || '',
+        store : r.store || '',
+        biz   : String(r.biz||'').replace(/\D/g,''),
+        cat   : r.cat,
+        emp   : r.emp || '미지정',
+        req   : r.req || '', hw:'', note:r.note || '',
+        /* 전용 원장의 intake 는 hq/phone 도 쓴다. 허브 '인입 경로'는 온·오프라인만 구분하므로
+           phone·hq 는 오프라인으로 접는다(전화·본사 전달 모두 비온라인). */
+        intake: r.intake === 'online' ? 'online' : (r.intake ? 'offline' : 'unknown'),
+        brand : c.brand,
+        tier  : 'A',
+        branch: branch,
+        src   : 'client',
+        sample: !!D.sample,
+      });
+    });
+  });
+}
+
+/* ── 브랜드 미등록 후보 ───────────────────────────────────────
+   '○○점' 으로 끝나는데 브랜드 리스트에 안 걸린 매장 → 등록 후보.
+   리스트를 계속 키울 수 있게 대시보드가 스스로 찾아준다. */
+const RE_BRANCH = /^(.*?)[\s\-_·]*([가-힣A-Za-z0-9()\[\]]{2,20})점$/;
+const CANDS = (function(){
+  const map = new Map();   // brandCandidate -> {stores:Set, n:count}
+  ALL_DONE.forEach(r=>{
+    if(isExcluded(r.store, r.biz)) return;
+    if(matchBrand(r.store)) return;
+    const s = stripCorp(r.store);
+    const m = s.match(RE_BRANCH);
+    if(!m) return;
+    const b = m[1].trim();
+    if(b.length < 2) return;
+    if(!map.has(b)) map.set(b, {name:b, stores:new Set(), n:0});
+    const o = map.get(b); o.stores.add(s); o.n++;
+  });
+  return [...map.values()].sort((a,b)=> b.stores.size-a.stores.size || b.n-a.n || a.name.localeCompare(b.name,'ko'));
+})();
+
+/* ── 기간 ──────────────────────────────────────────────────────
+   날짜 범위는 슬랙 집계일 ∪ 전용 원장 기록일 이다.
+   두 소스의 기간이 다르므로 한쪽만 기준으로 잡으면 다른 쪽이 통째로 숨는다. */
+let ALL_DATES = DAYS.slice();
+let LAST = DAYS.length ? DAYS[DAYS.length-1] : '';
+function rebuildDateUniverse(){
+  const s = new Set(DAYS);
+  CLIENT_FR.forEach(r=>s.add(r.date));
+  ALL_DATES = [...s].sort();
+  LAST = ALL_DATES.length ? ALL_DATES[ALL_DATES.length-1] : '';
+}
+/* 날짜 가감. KST(UTC+9)에서 new Date('...T00:00:00') + toISOString() 을 쓰면
+   자정이 UTC 기준 전날 15시로 되돌아가 하루가 밀린다 → UTC로만 계산한다. */
+function shiftDays(dateStr, n){
+  const d = new Date(dateStr + 'T00:00:00Z');
+  d.setUTCDate(d.getUTCDate() + n);
+  return d.toISOString().slice(0,10);
+}
+/* 기본값이 '전체'인 이유: 허브는 슬랙 집계와 전용 원장을 함께 얹는 화면이고
+   두 소스의 기간이 다르다. 최근 N일로 시작하면 한쪽 소스가 조용히 빠져
+   "컴포즈커피 건수가 왜 안 보이지"가 된다. */
+let period = {mode:'all', from:'', to:''};
+function periodDates(){
+  if(!ALL_DATES.length) return [];
+  if(period.mode === 'all')   return ALL_DATES.slice();
+  if(period.mode === 'today') return ALL_DATES.filter(d=>d===LAST);
+  if(period.mode === 'custom'){
+    const a = period.from || ALL_DATES[0], b = period.to || LAST;
+    return ALL_DATES.filter(d=>d>=a && d<=b);
+  }
+  const n = period.mode === 'd7' ? 7 : 30;
+  const from = shiftDays(LAST, -(n-1));
+  return ALL_DATES.filter(d=>d>=from && d<=LAST);
+}
+/* 실제 오늘 (브라우저 기준) — 최신 데이터일이 오늘이 아닐 때 라벨을 바로잡는 데 쓴다 */
+const REAL_TODAY = (function(){
+  const d = new Date();
+  return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+})();
+function periodLabel(){
+  const ds = periodDates();
+  if(!ds.length) return '데이터 없음';
+  const t = {today:(LAST===REAL_TODAY ? '오늘' : '최신 데이터일'), d7:'최근 7일', d30:'최근 30일',
+             all:'전체 기간', custom:'지정 기간'}[period.mode];
+  return t + ' · ' + fmtD(ds[0]) + (ds.length>1 ? ' ~ ' + fmtD(ds[ds.length-1]) : '') + ' (' + ds.length + '일)';
+}
+const fmtD = s => s ? s.slice(5).replace('-','/') : '';
+const num  = n => (n||0).toLocaleString('ko-KR');
+const esc  = s => String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+/* onclick 속성 안에 넣을 문자열 (따옴표·역슬래시 이스케이프) */
+const jsq  = s => String(s==null?'':s).replace(/\\/g,'\\\\').replace(/'/g,"\\'");
+
+/* ── 집계 헬퍼 ───────────────────────────────────────────────── */
+function scoped(){
+  const set = new Set(periodDates());
+  return {
+    dates : periodDates(),
+    fr    : FR.filter(r=>set.has(r.date)),
+    all   : ALL_DONE.filter(r=>set.has(r.date)),
+    pend  : FR_PEND.filter(r=>set.has(r.date)),
+  };
+}
+function countBy(rows, fn){
+  const m = new Map();
+  rows.forEach(r=>{ const k = fn(r); if(k==null || k==='') return; m.set(k,(m.get(k)||0)+1); });
+  return m;
+}
+function catBreak(rows){
+  const o = {};
+  rows.forEach(r=>{ o[r.cat] = (o[r.cat]||0)+1; });
+  return o;
+}
+
+/* 전용 원장 중 sample:true 인 고객사가 있으면 허브 합계에도 가짜 숫자가 섞인다 →
+   합계를 신뢰하기 전에 반드시 알려야 한다. sample:false 로 바꾸면 자동으로 사라진다. */
+function hubSampleBanner(){
+  if(!CLIENT_SAMPLE.length) return '';
+  const n = FR.filter(r=>r.sample).length;
+  return '<div class="notice danger"><span class="k">샘플 포함</span><span class="t">'
+    + '<b>'+CLIENT_SAMPLE.map(esc).join(' · ')+'</b> 의 전용 원장이 아직 샘플입니다. '
+    + '이 화면의 합계에 <b>샘플 '+num(n)+'건</b>이 섞여 있으므로 그대로 보고에 쓰면 안 됩니다. '
+    + '해당 <code>data/*.js</code> 의 샘플 records 를 지우고 <code>sample:false</code> 로 바꾸면 사라집니다.'
+    + '</span></div>';
+}
+
+/* =====================================================================
+   차트
+   ===================================================================== */
+function svgDailyStack(dates, rows){
+  if(!dates.length) return '<div class="empty">기간에 데이터가 없습니다.</div>';
+  const byDate = new Map(dates.map(d=>[d, {}]));
+  rows.forEach(r=>{ const o = byDate.get(r.date); if(o) o[r.cat] = (o[r.cat]||0)+1; });
+  const R = dates.map(d=>{
+    const o = byDate.get(d) || {};
+    return {d, o, t:Object.keys(o).reduce((a,k)=>a+o[k],0)};
+  });
+  const max = Math.max(1, ...R.map(r=>r.t));
+  const colW = R.length > 34 ? 22 : (R.length > 16 ? 32 : 46);
+  const padL = 38, padR = 10, padT = 14, padB = 40;
+  const W = padL + padR + colW*R.length, H = 250, base = H - padB;
+  const bw = Math.min(colW - 8, 26);
+  const Y = v => base - (v/max)*(base - padT);
+
+  let g = '';
+  for(let i=0;i<=4;i++){
+    const v = Math.round(max*i/4), y = Y(v);
+    g += '<line x1="'+padL+'" y1="'+y.toFixed(1)+'" x2="'+(W-padR)+'" y2="'+y.toFixed(1)+'" stroke="var(--line-soft)" stroke-width="1"/>'
+      +  '<text x="'+(padL-7)+'" y="'+(y+4).toFixed(1)+'" text-anchor="end" font-size="10.5" fill="var(--gray2)">'+v+'</text>';
+  }
+  let bars = '';
+  R.forEach((r,i)=>{
+    const cx = padL + colW*i + colW/2, x = cx - bw/2;
+    let acc = 0;
+    CATS.forEach(c=>{
+      const v = r.o[c.key] || 0; if(!v) return;
+      const y0 = Y(acc), y1 = Y(acc+v), h = Math.max(1, y0-y1);
+      bars += '<rect x="'+x.toFixed(1)+'" y="'+y1.toFixed(1)+'" width="'+bw+'" height="'+h.toFixed(1)+'" fill="'+c.color+'">'
+           +  '<title>'+fmtD(r.d)+' · '+c.name+' '+v+'건</title></rect>';
+      acc += v;
+    });
+    // 리스트에 없는 카테고리(방어)
+    Object.keys(r.o).forEach(k=>{ if(!CAT_MAP[k]){ const v=r.o[k]; const y0=Y(acc),y1=Y(acc+v);
+      bars += '<rect x="'+x.toFixed(1)+'" y="'+y1.toFixed(1)+'" width="'+bw+'" height="'+Math.max(1,y0-y1).toFixed(1)+'" fill="#aeaeb4"><title>'+fmtD(r.d)+' · 기타 '+v+'건</title></rect>'; acc+=v; } });
+    if(r.t) bars += '<text x="'+cx.toFixed(1)+'" y="'+(Y(r.t)-6).toFixed(1)+'" text-anchor="middle" font-size="10.5" font-weight="700" fill="var(--ink)">'+r.t+'</text>';
+    const step = R.length > 34 ? 3 : (R.length > 16 ? 2 : 1);
+    if(i % step === 0 || i === R.length-1)
+      bars += '<text x="'+cx.toFixed(1)+'" y="'+(base+16)+'" text-anchor="middle" font-size="10.5" fill="var(--gray2)">'+fmtD(r.d)+'</text>';
+  });
+  return '<svg viewBox="0 0 '+W+' '+H+'" width="'+W+'" height="'+H+'" role="img">'
+    + g + '<line x1="'+padL+'" y1="'+base+'" x2="'+(W-padR)+'" y2="'+base+'" stroke="var(--line)"/>' + bars + '</svg>';
+}
+
+function svgDonut(entries, total){
+  const R = 78, sw = 26, rm = R - sw/2, C = 2*Math.PI*rm, cx = 96, cy = 96;
+  if(!total) return '<div class="empty">데이터 없음</div>';
+  let acc = 0, segs = '';
+  entries.forEach(e=>{
+    const len = e.v/total*C;
+    segs += '<circle cx="'+cx+'" cy="'+cy+'" r="'+rm+'" fill="none" stroke="'+e.c+'" stroke-width="'+sw+'"'
+      + ' stroke-dasharray="'+len.toFixed(2)+' '+(C-len).toFixed(2)+'" stroke-dashoffset="'+(-acc).toFixed(2)+'"'
+      + ' transform="rotate(-90 '+cx+' '+cy+')"><title>'+esc(e.n)+' '+e.v+'건 ('+Math.round(e.v/total*100)+'%)</title></circle>';
+    acc += len;
+  });
+  return '<svg viewBox="0 0 192 192" width="192" height="192">'+segs
+    + '<text x="'+cx+'" y="'+(cy-4)+'" text-anchor="middle" font-size="30" font-weight="800" fill="var(--ink)">'+total+'</text>'
+    + '<text x="'+cx+'" y="'+(cy+18)+'" text-anchor="middle" font-size="12" fill="var(--gray2)">건</text></svg>';
+}
+
+function svgStaffStack(rows){
+  const empTot = countBy(rows, r=>r.emp);
+  const emps = [...empTot.entries()].sort((a,b)=>b[1]-a[1]);
+  if(!emps.length) return '<div class="empty">기간에 데이터가 없습니다.</div>';
+  const max = Math.max(1, ...emps.map(e=>e[1]));
+  const gw = 62, padL = 38, padR = 10, padT = 16, padB = 42;
+  const W = padL + padR + gw*emps.length, H = 260, base = H - padB, bw = 34;
+  const Y = v => base - (v/max)*(base - padT);
+  let g = '';
+  for(let i=0;i<=4;i++){
+    const v = Math.round(max*i/4), y = Y(v);
+    g += '<line x1="'+padL+'" y1="'+y.toFixed(1)+'" x2="'+(W-padR)+'" y2="'+y.toFixed(1)+'" stroke="var(--line-soft)"/>'
+      +  '<text x="'+(padL-7)+'" y="'+(y+4).toFixed(1)+'" text-anchor="end" font-size="10.5" fill="var(--gray2)">'+v+'</text>';
+  }
+  let bars = '';
+  emps.forEach((e,i)=>{
+    const name = e[0], mine = rows.filter(r=>r.emp===name), o = catBreak(mine);
+    const cx = padL + gw*i + gw/2, x = cx - bw/2;
+    let acc = 0;
+    CATS.forEach(c=>{
+      const v = o[c.key] || 0; if(!v) return;
+      const y0 = Y(acc), y1 = Y(acc+v);
+      bars += '<rect x="'+x.toFixed(1)+'" y="'+y1.toFixed(1)+'" width="'+bw+'" height="'+Math.max(1,y0-y1).toFixed(1)+'" rx="2" fill="'+c.color+'">'
+           +  '<title>'+esc(name)+' · '+c.name+' '+v+'건</title></rect>';
+      acc += v;
+    });
+    bars += '<text x="'+cx.toFixed(1)+'" y="'+(Y(e[1])-6).toFixed(1)+'" text-anchor="middle" font-size="11.5" font-weight="800" fill="var(--ink)">'+e[1]+'</text>'
+         +  '<text x="'+cx.toFixed(1)+'" y="'+(base+18)+'" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">'+esc(name)+'</text>';
+  });
+  return '<svg viewBox="0 0 '+W+' '+H+'" width="'+W+'" height="'+H+'">'
+    + g + '<line x1="'+padL+'" y1="'+base+'" x2="'+(W-padR)+'" y2="'+base+'" stroke="var(--line)"/>' + bars + '</svg>';
+}
+
+const legendHTML = () => '<div class="legend">' +
+  CATS.map(c=>'<span class="lg"><i style="background:'+c.color+'"></i>'+c.name+'</span>').join('') + '</div>';
+
+/* =====================================================================
+   뷰 · 전체현황
+   ===================================================================== */
+function viewOverview(){
+  const S = scoped();
+  const fr = S.fr, all = S.all;
+  const stores  = new Set(fr.map(r=>keyOf(r.store))).size;
+  const brands  = new Set(fr.map(r=>r.brand)).size;
+  const share   = all.length ? (fr.length/all.length*100) : 0;
+  const catE    = CATS.map(c=>({n:c.name, c:c.color, v:fr.filter(r=>r.cat===c.key).length})).filter(e=>e.v);
+  const intake  = {online:0, offline:0, unknown:0};
+  fr.forEach(r=>{ intake[r.intake==='online'?'online':(r.intake==='offline'?'offline':'unknown')]++; });
+
+  const brandTot = [...countBy(fr, r=>r.brand).entries()].sort((a,b)=>b[1]-a[1]);
+  const topMax   = brandTot.length ? brandTot[0][1] : 1;
+  const top10    = brandTot.slice(0,10);
+
+  /* 소스별 분해 — 합계만 보여주면 어디서 온 숫자인지 알 수 없다 */
+  const nSlack  = fr.filter(r=>r.src!=='client').length;
+  const nClient = fr.length - nSlack;
+  /* '전체 대비 비중'은 슬랙끼리만 비교해야 맞다.
+     전용 원장 건은 slack-data.js 의 전체 인입(all)에 애초에 들어있지 않다. */
+  const slackShare = all.length ? (nSlack/all.length*100) : 0;
+
+  let h = '';
+
+  if(!BRAND_IDX.length){
+    h += '<div class="notice warn"><span class="k">설정 필요</span><span class="t">'
+      + '<b>brands.js</b> 의 브랜드 리스트가 비어 있어 집계할 수 없습니다. 브랜드명을 추가해 주세요.</span></div>';
+  }
+  h += hubSampleBanner();
+
+  /* 계약 고객사 — 전용 원장 실건수를 카드에 바로 띄운다 */
+  if(CLIENTS.length){
+    h += '<div class="card"><div class="card-head"><h3>🤝 계약 고객사</h3>'
+      + '<span class="hint">전용 원장 건수도 아래 집계에 합산되어 있습니다 · 클릭하면 전용 대시보드</span></div>'
+      + '<div class="cgrid">'
+      + CLIENTS.map(function(c){
+          const mine = fr.filter(r=>r.brand===c.brand);
+          const allMine = FR.filter(r=>r.brand===c.brand);
+          const st = new Set(mine.map(r=>r.branch)).size;
+          const cb = catBreak(mine);
+          const isS = CLIENT_SAMPLE.indexOf(c.brand) >= 0;
+          return '<a class="ccard" href="'+clientURL(c.brand)+'">'
+            + '<div class="ci">'+(c.icon||'🏢')+'</div>'
+            + '<div class="cn">'+esc(c.brand)+(isS?'<span class="s-badge">샘플</span>':'')+'</div>'
+            + '<div class="cbig">'+num(mine.length)+'<small>건</small>'
+            + (st?'<span class="cst">지점 '+st+'곳</span>':'')+'</div>'
+            + '<div class="cd">'
+            + (mine.length
+                ? CATS.filter(x=>cb[x.key]).map(x=>esc(x.name)+' '+cb[x.key]).join(' · ')
+                : (allMine.length ? '이 기간 0건 · 전체 '+allMine.length+'건' : esc(c.note || (c.startDate?('개시 '+c.startDate):'계약 고객사'))))
+            + '</div>'
+            + '<div class="cgo">전용 대시보드 →</div></a>';
+        }).join('')
+      + '</div></div>';
+  }
+
+  h += '<div class="ov-tiles">'
+    + tile('grand','🏢','프랜차이즈 인입', fr.length, '건',
+        nClient ? '슬랙 집계 '+num(nSlack)+'건 + 전용 원장 '+num(nClient)+'건'
+                : '전체 인입 '+num(all.length)+'건 중 '+slackShare.toFixed(1)+'%')
+    + tile('','🏪','프랜차이즈 매장', stores, '곳', '인입이 1건 이상 있던 지점 수', '#5e5ce6')
+    + tile('','🔖','브랜드', brands, '개', '등록 '+BRAND_IDX.length+'개 중 인입 발생', '#ff9500')
+    + tile('','⏳','미처리', S.pend.length, '건', S.pend.length ? '보류 사유 확인 필요' : '보류 건 없음', S.pend.length?'#ff3b30':'#34c759')
+    + '</div>';
+
+  h += '<div class="card"><div class="card-head"><h3>일별 인입 추이</h3>'
+    + '<span class="hint">카테고리 누적 · 막대 위 숫자는 합계</span></div>'
+    + '<div class="chart-wrap">'+svgDailyStack(S.dates, fr)+'</div>'+legendHTML()+'</div>';
+
+  h += '<div class="grid2">'
+    + '<div class="card"><div class="card-head"><h3>브랜드 TOP 10</h3><span class="hint">클릭하면 상세</span></div>'
+    + (top10.length ? top10.map(function(e){
+        return '<div class="bar-row clickable" onclick="goBrand(\''+esc(e[0]).replace(/'/g,"\\'")+'\')">'
+          + '<div class="bar-meta"><span class="nm">'+esc(e[0])+'</span><span class="ct">'+e[1]+'건</span></div>'
+          + '<div class="bar-track"><div class="bar-fill" style="width:'+(e[1]/topMax*100).toFixed(1)+'%"></div></div></div>';
+      }).join('') : '<div class="empty">기간에 프랜차이즈 인입이 없습니다.</div>')
+    + '</div>'
+    + '<div class="card"><div class="card-head"><h3>카테고리 분포</h3></div>'
+    + '<div style="display:flex;justify-content:center">'+svgDonut(catE, fr.length)+'</div>'
+    + '<div class="legend" style="justify-content:center">'
+    + catE.map(e=>'<span class="lg"><i style="background:'+e.c+'"></i>'+e.n+' '+e.v+'</span>').join('')
+    + '</div></div></div>';
+
+  h += '<div class="grid2 even">'
+    + '<div class="card"><div class="card-head"><h3>인입 경로</h3><span class="hint">온라인 = 슬랙/메신저 · 오프라인 = 유선</span></div>'
+    + [['온라인',intake.online,'#0071e3'],['오프라인',intake.offline,'#ff9500'],['미기재',intake.unknown,'#aeaeb4']]
+        .map(function(x){ const p = fr.length ? x[1]/fr.length*100 : 0;
+          return '<div class="bar-row"><div class="bar-meta"><span class="nm">'+x[0]+'</span>'
+            + '<span class="ct">'+x[1]+'건 <span style="color:var(--gray2);font-weight:600">'+p.toFixed(0)+'%</span></span></div>'
+            + '<div class="bar-track"><div class="bar-fill" style="width:'+p.toFixed(1)+'%;background:'+x[2]+'"></div></div></div>'; }).join('')
+    + '</div>'
+    + '<div class="card"><div class="card-head"><h3>담당자 처리량</h3></div>'
+    + (function(){
+        const e = [...countBy(fr, r=>r.emp).entries()].sort((a,b)=>b[1]-a[1]);
+        if(!e.length) return '<div class="empty">데이터 없음</div>';
+        const mx = e[0][1];
+        return e.map(function(x){ return '<div class="bar-row"><div class="bar-meta"><span class="nm">'+esc(x[0])+'</span>'
+          + '<span class="ct">'+x[1]+'건</span></div><div class="bar-track"><div class="bar-fill" style="width:'+(x[1]/mx*100).toFixed(1)+'%"></div></div></div>'; }).join('');
+      })()
+    + '</div></div>';
+
+  if(S.pend.length){
+    h += '<div class="card"><div class="card-head"><h3>⏳ 미처리 프랜차이즈 건</h3>'
+      + '<span class="hint">전체 미처리 '+num(PEND_ALL)+'건 중 프랜차이즈 '+S.pend.length+'건</span></div>'
+      + '<div class="tbl-wrap"><table><thead><tr><th>날짜</th><th>브랜드</th><th>지점</th><th>구분</th><th>담당</th><th>보류 사유</th></tr></thead><tbody>'
+      + S.pend.map(function(r){ return '<tr><td>'+fmtD(r.date)+' '+esc(r.time)+'</td>'
+        + '<td><span class="brand-link" onclick="goBrand(\''+esc(r.brand).replace(/'/g,"\\'")+'\')">'+esc(r.brand)+'</span></td>'
+        + '<td>'+esc(r.branch)+'</td>'
+        + '<td><span class="cat-chip" style="background:'+catColor(r.cat)+'22;color:'+catColor(r.cat)+'">'+catName(r.cat)+'</span></td>'
+        + '<td>'+esc(r.emp)+'</td><td class="req-cell">'+esc(r.reasons||'—')+'</td></tr>'; }).join('')
+      + '</tbody></table></div></div>';
+  }
+  return h;
+}
+function tile(cls, ic, name, val, unit, sub, color){
+  return '<div class="ov-tile '+cls+'"'+(color?' style="--c:'+color+'"':'')+'>'
+    + '<div class="ov-name"><span>'+ic+'</span>'+name+'</div>'
+    + '<div class="ov-val">'+num(val)+'<small>'+unit+'</small></div>'
+    + '<div class="ov-sub">'+esc(sub)+'</div></div>';
+}
+
+/* =====================================================================
+   뷰 · 브랜드별
+   ===================================================================== */
+let brandSort = {k:'total', dir:-1};
+let brandQ = '';
+
+/* 브랜드 검색 — 브랜드명뿐 아니라 brands.js 의 별칭(alias)까지 본다.
+   '카페드롭탑' 으로 찾으면 드롭탑이, '옆커폰' 으로 찾으면 휴대폰성지가 나와야 하기 때문.
+   keyOf 로 정규화하므로 공백·기호·대소문자는 무시된다('드롭 탑' → 드롭탑). */
+const BRAND_DISP = (function(){
+  const o = {};
+  BRAND_IDX.forEach(b=>{ o[b.name] = b.disp; });
+  return o;
+})();
+function brandHitQ(name){
+  const qk = keyOf(brandQ);
+  if(!qk) return true;
+  const ds = BRAND_DISP[name] || [name];
+  return ds.some(d=>keyOf(d).indexOf(qk) >= 0);
+}
+
+function viewBrands(){
+  const S = scoped(), fr = S.fr;
+  const m = new Map();
+  fr.forEach(r=>{
+    if(!m.has(r.brand)) m.set(r.brand, {brand:r.brand, tier:r.tier, stores:new Set(), total:0, cats:{}, last:''});
+    const o = m.get(r.brand);
+    o.stores.add(keyOf(r.store)); o.total++;
+    o.cats[r.cat] = (o.cats[r.cat]||0)+1;
+    if(r.date > o.last) o.last = r.date;
+  });
+  const allRows = [...m.values()].map(o=>Object.assign(o,{nStore:o.stores.size}));
+  let rows = allRows.filter(o=>brandHitQ(o.brand));
+  const k = brandSort.k, dir = brandSort.dir;
+  rows.sort(function(a,b){
+    let av, bv;
+    if(k==='brand'){ return a.brand.localeCompare(b.brand,'ko')*dir; }
+    if(k==='last'){ av=a.last; bv=b.last; return (av<bv?-1:av>bv?1:0)*dir; }
+    if(k==='nStore'){ av=a.nStore; bv=b.nStore; }
+    else if(CAT_MAP[k]){ av=a.cats[k]||0; bv=b.cats[k]||0; }
+    else { av=a.total; bv=b.total; }
+    return (av-bv)*dir || b.total-a.total;
+  });
+
+  const notReg = BRAND_IDX.length - new Set(fr.map(r=>r.brand)).size;
+  let h = hubSampleBanner();
+  h += '<div class="notice"><span class="k">이동</span><span class="t">'
+    + '<b>브랜드명을 클릭하면 그 프랜차이즈의 전용 대시보드</b>로 이동합니다. '
+    + '계약 고객사(<span class="cli-badge">전용</span>)는 전용 원장·월간 보고서를, 그 외 브랜드는 기존 원격 집계를 보여줍니다.'
+    + '</span></div>';
+  if(!brandQ){
+    h += '<div class="notice"><span class="k">기준</span><span class="t">'
+      + '등록 브랜드 <b>'+BRAND_IDX.length+'개</b> 중 이 기간에 인입이 있던 브랜드만 표시합니다'
+      + (notReg>0 ? ' (인입 없음 '+notReg+'개 숨김)' : '') + '. '
+      + '<b>A</b>=지점 2곳 이상 확인된 확정 브랜드, <b>B</b>=자동 제안(검수 권장).</span></div>';
+  }
+
+  if(!allRows.length) return h + '<div class="card"><div class="empty">기간에 프랜차이즈 인입이 없습니다.<br>기간을 넓히거나 brands.js 에 브랜드를 추가해 보세요.</div></div>';
+
+  const th = (key,label,cls) => '<th class="sortable '+(cls||'')+'" onclick="setBrandSort(\''+key+'\')">'+label
+    + (brandSort.k===key ? '<span class="arw">'+(dir<0?'▼':'▲')+'</span>' : '') + '</th>';
+
+  /* 합계는 "지금 표에 보이는 것"만 더한다 — 검색 중인데 전체 합계가 뜨면 숫자가 안 맞는다 */
+  const tot = {total:0, cats:{}, stores:new Set()};
+  rows.forEach(o=>{ tot.total+=o.total; o.stores.forEach(s=>tot.stores.add(s));
+    Object.keys(o.cats).forEach(c=>tot.cats[c]=(tot.cats[c]||0)+o.cats[c]); });
+
+  /* 검색어가 등록 브랜드와는 맞는데 이 기간에 인입이 0건인 경우.
+     "결과 없음"으로 끝내면 브랜드가 없는 건지 인입이 없는 건지 알 수 없다. */
+  const noHitButKnown = brandQ
+    ? BRAND_IDX.filter(b=>brandHitQ(b.name) && !allRows.some(o=>o.brand===b.name)).map(b=>b.name)
+    : [];
+
+  /* 전용 원장 건수가 있으면 계약 고객사도 그냥 일반 행으로 들어온다.
+     아래 pinned 는 "아직 단 한 건도 없는 고객사"만 자리 표시용으로 남긴다. */
+  const pinned = CLIENTS.filter(c=>!allRows.some(o=>o.brand===c.brand) && brandHitQ(c.brand));
+
+  h += '<div class="card"><div class="card-head"><h3>브랜드별 인입 집계</h3>'
+    + '<div class="controls">'
+    + '<input type="search" id="brandQ" placeholder="브랜드명·별칭 검색 (예: 드롭탑, 옆커폰)" value="'+esc(brandQ)+'" style="min-width:265px">'
+    + (brandQ ? '<button class="btn sm" id="brandQClear">✕ 초기화</button>' : '')
+    + '</div></div>'
+    + '<div class="hint" style="font-size:12.5px;color:var(--gray2);margin-bottom:12px">'
+    + (brandQ ? '<b style="color:var(--ink)">“'+esc(brandQ)+'”</b> 검색 · ' : '')
+    + rows.length + '개 브랜드'
+    + (brandQ ? ' <span style="color:var(--gray2)">(전체 '+allRows.length+'개 중)</span>' : '')
+    + ' · '+num(tot.stores.size)+'개 지점 · '+num(tot.total)+'건</div>';
+
+  if(!rows.length && !pinned.length){
+    /* 두 경우를 구분해야 한다.
+       ① 등록 브랜드는 맞는데 이 기간 인입이 0건  ② 아예 등록되지 않은 이름 */
+    h += '<div class="empty">'
+      + (noHitButKnown.length
+          ? '<b style="color:var(--ink)">'+noHitButKnown.map(esc).join(' · ')+'</b>'
+            + ' — 등록된 브랜드지만'
+            + '<br><b>'+esc(periodLabel())+'</b> 인입이 0건입니다.'
+            + '<br><br><span style="font-size:12.5px">기간을 <b>전체</b>로 바꿔 보거나, 아래를 눌러 전용 대시보드에서 확인하세요.</span><br><br>'
+            + noHitButKnown.map(n=>'<span class="brand-link" onclick="goBrand(\''+jsq(n)+'\')">'+esc(n)+'</span>').join(' · ')
+          : '<b style="color:var(--ink)">“'+esc(brandQ)+'”</b> 에 해당하는 브랜드가 없습니다.'
+            + '<br><span style="font-size:12.5px">brands.js 에 등록된 브랜드명·별칭만 검색됩니다. '
+            + '새 브랜드는 <b>브랜드 후보</b> 탭에서 등록할 수 있습니다.</span>')
+      + '</div></div>';
+    return h;
+  }
+
+  h += '<div class="tbl-scroll"><table><thead><tr>'
+    + th('brand','브랜드') + th('nStore','지점수','num') + th('total','총 인입','num')
+    + CATS.map(c=>th(c.key, c.name, 'num'+(c.clientOnly?' conly':''))).join('') + th('last','최근 인입','num')
+    + '</tr></thead><tbody>'
+    /* 계약 고객사는 전용 원장을 쓰므로 이 슬랙 집계에 0건으로 잡힌다.
+       그렇다고 목록에서 빠지면 "브랜드 눌러서 이동"이 성립하지 않으니 맨 위에 고정한다.
+       (검색 중이면 검색어에 맞는 고객사만 — pinned 에서 이미 걸러져 있다) */
+    + pinned.map(function(c){
+        return '<tr class="cli-row"><td><span class="brand-link" onclick="goBrand(\''+esc(c.brand).replace(/'/g,"\\'")+'\')">'
+          + esc(c.brand)+'</span><span class="cli-badge">전용</span></td>'
+          + '<td class="num zero" colspan="'+(CATS.length+2)+'" style="text-align:left;font-size:12.5px">'
+          + '전용 원장으로 관리 — 집계·월간 보고서는 <b>전용 대시보드</b>에서 확인'
+          + (c.startDate ? ' (개시 '+esc(c.startDate)+')' : '') + '</td>'
+          + '<td class="num zero">·</td></tr>';
+      }).join('')
+    + rows.map(function(o){
+        return '<tr><td><span class="brand-link" onclick="goBrand(\''+esc(o.brand).replace(/'/g,"\\'")+'\')">'+esc(o.brand)+'</span>'
+          + (clientOf(o.brand) ? '<span class="cli-badge">전용</span>' : '')
+          + '<span class="tierbadge '+o.tier+'">'+o.tier+'</span></td>'
+          + '<td class="num">'+o.nStore+'</td><td class="num totcell">'+o.total+'</td>'
+          + CATS.map(c=>'<td class="num'+(o.cats[c.key]?'':' zero')+'">'+(o.cats[c.key]||'·')+'</td>').join('')
+          + '<td class="num" style="color:var(--gray)">'+fmtD(o.last)+'</td></tr>';
+      }).join('')
+    + '</tbody><tfoot><tr><td>합계</td><td class="num">'+tot.stores.size+'</td><td class="num">'+tot.total+'</td>'
+    + CATS.map(c=>'<td class="num">'+(tot.cats[c.key]||0)+'</td>').join('')+'<td></td></tr></tfoot>'
+    + '</table></div>'
+    + (CONTRACT_ONLY.length
+        ? '<div class="hint" style="margin-top:13px;color:var(--gray2);font-size:12.5px">'
+          + '<b style="color:var(--purple)">'+CONTRACT_ONLY.map(c=>esc(c.name)).join(' · ')+'</b>'
+          + ' 열(<span style="color:var(--purple)">▲</span>)은 <b>전용 원장에만 있는 분류</b>입니다. '
+          + '기존 슬랙 파이프라인에는 이 분류가 없어서 일반 브랜드 칸은 0이 아니라 <b>·</b>(미집계)로 둡니다.</div>'
+        : '')
+    + '</div>';
+  return h;
+}
+function setBrandSort(k){
+  if(brandSort.k===k) brandSort.dir *= -1;
+  else brandSort = {k:k, dir:(k==='brand'?1:-1)};
+  render();
+}
+
+/* =====================================================================
+   뷰 · 담당자별
+   ===================================================================== */
+function viewStaff(){
+  const S = scoped(), fr = S.fr;
+  if(!fr.length) return '<div class="card"><div class="empty">기간에 프랜차이즈 인입이 없습니다.</div></div>';
+  const emps = [...countBy(fr, r=>r.emp).entries()].sort((a,b)=>b[1]-a[1]);
+  const tot = {}; CATS.forEach(c=>tot[c.key]=0);
+
+  let h = hubSampleBanner();
+  h += '<div class="card"><div class="card-head"><h3>담당자별 처리량</h3>'
+    + '<span class="hint">프랜차이즈 건만 · 카테고리 누적 · 전용 원장 포함</span></div>'
+    + '<div class="chart-wrap">'+svgStaffStack(fr)+'</div>'+legendHTML()+'</div>';
+
+  h += '<div class="card"><div class="card-head"><h3>담당자 × 카테고리</h3></div><div class="tbl-wrap"><table>'
+    + '<thead><tr><th>담당자</th>'+CATS.map(c=>'<th class="num'+(c.clientOnly?' conly':'')+'">'+c.name+'</th>').join('')
+    + '<th class="num">합계</th><th class="num">담당 브랜드</th></tr></thead><tbody>'
+    + emps.map(function(e){
+        const mine = fr.filter(r=>r.emp===e[0]), o = catBreak(mine);
+        CATS.forEach(c=>tot[c.key]+=(o[c.key]||0));
+        return '<tr><td style="font-weight:600">'+esc(e[0])+'</td>'
+          + CATS.map(c=>'<td class="num'+(o[c.key]?'':' zero')+'">'+(o[c.key]||'·')+'</td>').join('')
+          + '<td class="num totcell">'+e[1]+'</td>'
+          + '<td class="num" style="color:var(--gray)">'+new Set(mine.map(r=>r.brand)).size+'</td></tr>';
+      }).join('')
+    + '</tbody><tfoot><tr><td>합계</td>'+CATS.map(c=>'<td class="num">'+tot[c.key]+'</td>').join('')
+    + '<td class="num">'+fr.length+'</td><td class="num">'+new Set(fr.map(r=>r.brand)).size+'</td></tr></tfoot>'
+    + '</table></div></div>';
+  return h;
+}
+
+/* =====================================================================
+   뷰 · 처리내역
+   ===================================================================== */
+let recQ = '', recCat = '';
+function viewRecords(){
+  const S = scoped();
+  let rows = S.fr.slice().sort((a,b)=> (a.date<b.date?1:a.date>b.date?-1:0) || (a.time<b.time?1:-1));
+  if(recCat) rows = rows.filter(r=>r.cat===recCat);
+  if(recQ){
+    const q = recQ.toLowerCase();
+    rows = rows.filter(r=>(r.brand+' '+r.branch+' '+r.store+' '+r.emp+' '+r.req).toLowerCase().indexOf(q)>=0);
+  }
+  let h = hubSampleBanner();
+  h += '<div class="card"><div class="card-head"><h3>프랜차이즈 처리내역</h3>'
+    + '<div class="controls">'
+    + '<input type="search" id="recQ" placeholder="브랜드·지점·담당자·요청내용 검색" value="'+esc(recQ)+'" style="min-width:250px">'
+    + '<div class="seg" id="recCatSeg"><button data-c="" class="'+(recCat?'':'on')+'">전체</button>'
+    + CATS.map(c=>'<button data-c="'+c.key+'" class="'+(recCat===c.key?'on':'')+'">'+c.name+'</button>').join('')
+    + '</div><button class="btn sm" id="csvBtn">⬇ CSV</button></div></div>'
+    + '<div class="hint" style="font-size:12.5px;color:var(--gray2);margin-bottom:12px">'+num(rows.length)+'건 표시</div>';
+
+  if(!rows.length) return h + '<div class="empty">조건에 맞는 내역이 없습니다.</div></div>';
+
+  h += '<div class="tbl-scroll"><table style="min-width:900px"><thead><tr>'
+    + '<th>일시</th><th>브랜드</th><th>지점</th><th>구분</th><th>담당</th><th>경로</th><th>요청 내용</th></tr></thead><tbody>'
+    + rows.slice(0,500).map(function(r){
+        return '<tr><td style="white-space:nowrap;color:var(--gray)">'+fmtD(r.date)+' '+esc(r.time)+'</td>'
+          + '<td><span class="brand-link" onclick="goBrand(\''+esc(r.brand).replace(/'/g,"\\'")+'\')">'+esc(r.brand)+'</span></td>'
+          + '<td style="font-weight:600">'+esc(r.branch)+'</td>'
+          + '<td><span class="cat-chip" style="background:'+catColor(r.cat)+'22;color:'+catColor(r.cat)+'">'+catName(r.cat)+'</span></td>'
+          + '<td style="white-space:nowrap">'+esc(r.emp)+'</td>'
+          + '<td style="font-size:12.5px;color:var(--gray)">'+(r.intake==='online'?'온라인':r.intake==='offline'?'오프라인':'—')+'</td>'
+          + '<td class="req-cell">'+esc(r.req || '—')+'</td></tr>';
+      }).join('')
+    + '</tbody></table></div>'
+    + (rows.length>500 ? '<div class="hint" style="margin-top:12px;color:var(--gray2);font-size:12.5px">상위 500건만 표시했습니다. 전체는 CSV로 내려받으세요.</div>' : '')
+    + '</div>';
+  return h;
+}
+function downloadCSV(){
+  const S = scoped();
+  let rows = S.fr.slice().sort((a,b)=> (a.date<b.date?1:-1));
+  if(recCat) rows = rows.filter(r=>r.cat===recCat);
+  if(recQ){ const q=recQ.toLowerCase();
+    rows = rows.filter(r=>(r.brand+' '+r.branch+' '+r.store+' '+r.emp+' '+r.req).toLowerCase().indexOf(q)>=0); }
+  const q = s => '"' + String(s==null?'':s).replace(/"/g,'""') + '"';
+  /* 합쳐진 원장이므로 출처를 남긴다 — 나중에 숫자가 안 맞을 때 이 열이 유일한 단서가 된다 */
+  const head = ['날짜','시간','브랜드','지점','매장명(원본)','사업자번호','구분','담당자','인입경로','요청내용','출처','샘플'];
+  const body = rows.map(r=>[r.date,r.time,r.brand,r.branch,r.store,r.biz,catName(r.cat),r.emp,
+    (r.intake==='online'?'온라인':r.intake==='offline'?'오프라인':''), r.req,
+    (r.src==='client'?'전용 원장':'슬랙 집계'), (r.sample?'샘플':'')].map(q).join(','));
+  const csv = '\ufeff' + [head.map(q).join(',')].concat(body).join('\r\n');
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([csv], {type:'text/csv;charset=utf-8'}));
+  a.download = '프랜차이즈_인입내역_' + (periodDates()[0]||'') + '_' + (periodDates().slice(-1)[0]||'') + '.csv';
+  document.body.appendChild(a); a.click(); a.remove();
+}
+
+/* =====================================================================
+   뷰 · 브랜드 후보
+   ===================================================================== */
+const picked = new Set();
+/* 기본 필터: 지점 2곳 이상 후보가 있으면 그것부터(프랜차이즈 확률이 높음),
+   없으면 전체를 보여준다. (등록 브랜드가 늘면 2곳↑ 후보는 0이 되는 게 정상) */
+let candFilter = CANDS.some(c=>c.stores.size>=2) ? 'multi' : 'all';
+let candQ = '';
+function candList(){
+  let L = CANDS.slice();
+  if(candFilter === 'multi') L = L.filter(c=>c.stores.size >= 2);
+  if(candQ){ const q = candQ.toLowerCase();
+    L = L.filter(c=>(c.name+' '+[...c.stores].join(' ')).toLowerCase().indexOf(q)>=0); }
+  return L;
+}
+function viewCands(){
+  const nA = BRAND_IDX.filter(b=>b.tier==='A').length, nB = BRAND_IDX.filter(b=>b.tier==='B').length;
+  const nMulti = CANDS.filter(c=>c.stores.size>=2).length;
+
+  let h = '<div class="notice"><span class="k">이 화면의 역할</span><span class="t">'
+    + '매장명이 <b>“○○점”</b>으로 끝나는데 brands.js 에 아직 없는 매장을 모아 보여줍니다. '
+    + '프랜차이즈가 맞는 것만 체크하면 <b>brands.js 에 붙여넣을 코드</b>가 바로 만들어집니다. '
+    + '기간 필터와 무관하게 <b>전체 기간</b>을 기준으로 찾습니다.</span></div>';
+
+  h += '<div class="notice warn"><span class="k">검수 요청</span><span class="t">'
+    + '등록된 '+BRAND_IDX.length+'개 중 Tier <b>B '+nB+'개</b>는 데이터에 1지점만 있어 프랜차이즈로 <b>추정</b>해 넣은 브랜드입니다. '
+    + '아닌 브랜드는 brands.js 에서 해당 줄만 지우면 즉시 집계에서 빠집니다. '
+    + 'Tier <b>A '+nA+'개</b>는 지점 2곳 이상이 데이터로 확인된 확정 브랜드입니다.</span></div>';
+
+  /* 선택 → 코드 생성 카드를 리스트 위에 둔다 (아래로 스크롤하지 않아도 바로 복사) */
+  const sel = CANDS.filter(c=>picked.has(c.name));
+  h += '<div class="card"><div class="card-head"><h3>brands.js 추가 코드</h3>'
+    + '<div class="controls"><span class="hint">'+sel.length+'개 선택</span>'
+    + '<button class="btn sm" id="candClear">선택 해제</button>'
+    + '<button class="btn sm primary" id="copySnip">복사</button></div></div>'
+    + '<div class="snip" id="snipBox">'+(sel.length
+        ? esc(sel.map(c=>"  { n:'"+c.name.replace(/'/g,"\\'")+"', tier:'A' },").join('\n'))
+        : '아래에서 프랜차이즈가 맞는 브랜드를 체크하면 여기에 코드가 생성됩니다.')
+    + '</div>'
+    + '<div class="hint" style="margin-top:12px;color:var(--gray2);font-size:12.5px">'
+    + 'brands.js 를 열어 <b>window.FRANCHISE_BRANDS</b> 배열 안 아무 곳에나 붙여넣고 저장 → 새로고침하면 바로 반영됩니다.</div>'
+    + '</div>';
+
+  const L = candList();
+  h += '<div class="card"><div class="card-head"><h3>미등록 후보</h3>'
+    + '<div class="controls">'
+    + '<input type="search" id="candQ" placeholder="후보·매장명 검색" value="'+esc(candQ)+'" style="min-width:190px">'
+    + '<div class="seg" id="candSeg">'
+    + '<button data-f="multi" class="'+(candFilter==='multi'?'on':'')+'" title="같은 브랜드명이 2개 이상 매장에서 반복 — 프랜차이즈 확률 높음">지점 2곳↑ ('+nMulti+')</button>'
+    + '<button data-f="all" class="'+(candFilter==='all'?'on':'')+'">전체 ('+CANDS.length+')</button>'
+    + '</div><button class="btn sm" id="candAll2">보이는 항목 전체선택</button></div></div>';
+
+  if(!L.length){
+    h += '<div class="empty">'+(CANDS.length ? '조건에 맞는 후보가 없습니다.' : '미등록 후보가 없습니다. 👍')+'</div></div>';
+    return h;
+  }
+  h += '<div class="hint" style="font-size:12.5px;color:var(--gray2);margin-bottom:10px">'+L.length+'개 표시 · 지점 수 많은 순</div>'
+    + '<div class="cand-scroll">'
+    + L.map(function(c){
+      const arr = [...c.stores];
+      return '<div class="cand-row"><input type="checkbox" data-cn="'+esc(c.name)+'"'+(picked.has(c.name)?' checked':'')+'>'
+        + '<div class="cand-body"><div class="cand-name">'+esc(c.name)
+        + '<span class="cand-n">지점 '+c.stores.size+' · '+c.n+'건</span></div>'
+        + '<div class="cand-stores">'+arr.slice(0,4).map(esc).join(' · ')+(arr.length>4?' 외 '+(arr.length-4)+'곳':'')+'</div></div></div>';
+    }).join('')
+    + '</div></div>';
+
+  h += '<div class="card"><div class="card-head"><h3>등록 브랜드 '+BRAND_IDX.length+'개</h3>'
+    + '<span class="hint">A(확정) '+nA+' · B(검수 권장) '+nB+'</span></div>'
+    + '<div style="display:flex;flex-wrap:wrap;gap:7px">'
+    + BRAND_IDX.slice().sort((a,b)=>a.tier.localeCompare(b.tier)||a.name.localeCompare(b.name,'ko'))
+        .map(b=>'<span class="c" style="background:var(--surface2);border:1px solid var(--line-soft);border-radius:9px;padding:4px 10px;font-size:12.5px;color:var(--ink-soft)">'
+          + esc(b.name)+'<span class="tierbadge '+b.tier+'">'+b.tier+'</span></span>').join('')
+    + '</div></div>';
+  return h;
+}
+
+/* =====================================================================
+   라우팅 / 렌더
+   ===================================================================== */
+let view = 'overview';
+const TITLES = {
+  overview:['전체현황','프랜차이즈 매장 인입 요약'],
+  brands  :['브랜드별','브랜드 단위 인입·지점 집계'],
+  staff   :['담당자별','프랜차이즈 건 처리량'],
+  records :['처리내역','건별 원장 · CSV 내려받기'],
+  cands   :['브랜드 후보','판별 기준(brands.js) 관리'],
+};
+
+function render(){
+  const t = TITLES[view];
+  document.getElementById('pgTitle').textContent = t[0];
+  document.getElementById('pgSub').textContent   = t[1] + ' · ' + (view==='cands' ? '전체 기간 기준' : periodLabel());
+  document.getElementById('periodCtl').style.display = (view==='cands') ? 'none' : 'flex';
+  document.getElementById('candBadge').textContent = CANDS.length;
+
+  const host = document.getElementById('viewHost');
+  if(!ALL_DATES.length){
+    host.innerHTML = '<div class="card"><div class="empty">불러올 데이터가 없습니다.<br>'
+      + '이 페이지는 상위 폴더의 <b>../slack-data.js</b> 와 계약 고객사 전용 원장(<b>data/*.js</b>)을 사용합니다.</div></div>';
+    return;
+  }
+
+  host.innerHTML = view==='overview' ? viewOverview()
+                 : view==='brands'   ? viewBrands()
+                 : view==='staff'    ? viewStaff()
+                 : view==='records'  ? viewRecords()
+                 : viewCands();
+  bindViewEvents();
+}
+
+function bindViewEvents(){
+  /* 브랜드 검색 — 입력 중 리렌더되므로 커서 위치를 되돌려줘야 연속 타이핑이 끊기지 않는다 */
+  const bq = document.getElementById('brandQ');
+  if(bq){
+    bq.addEventListener('input', function(){
+      brandQ = this.value;
+      clearTimeout(bq._t);
+      bq._t = setTimeout(function(){
+        render();
+        const n = document.getElementById('brandQ');
+        if(n){ n.focus(); n.setSelectionRange(n.value.length, n.value.length); }
+      }, 200);
+    });
+    bq.addEventListener('keydown', function(e){ if(e.key==='Escape'){ brandQ=''; render(); } });
+  }
+  const bqc = document.getElementById('brandQClear');
+  if(bqc) bqc.addEventListener('click', function(){ brandQ = ''; render(); });
+
+  const q = document.getElementById('recQ');
+  if(q){
+    q.addEventListener('input', function(){
+      recQ = this.value;
+      clearTimeout(q._t);
+      q._t = setTimeout(function(){ render(); const n=document.getElementById('recQ'); if(n){ n.focus(); n.setSelectionRange(n.value.length,n.value.length);} }, 220);
+    });
+  }
+  const seg = document.getElementById('recCatSeg');
+  if(seg) seg.addEventListener('click', function(e){
+    const b = e.target.closest('button'); if(!b) return;
+    recCat = b.dataset.c; render();
+  });
+  const csv = document.getElementById('csvBtn');
+  if(csv) csv.addEventListener('click', downloadCSV);
+
+  /* 후보 체크박스 — 리스트 스크롤 위치를 유지해야 연속 체크가 편하다 */
+  const scroller = document.querySelector('.cand-scroll');
+  document.querySelectorAll('input[data-cn]').forEach(function(cb){
+    cb.addEventListener('change', function(){
+      const nm = this.dataset.cn;
+      if(this.checked) picked.add(nm); else picked.delete(nm);
+      const top = scroller ? scroller.scrollTop : 0;
+      render();
+      const s2 = document.querySelector('.cand-scroll'); if(s2) s2.scrollTop = top;
+    });
+  });
+  const cq = document.getElementById('candQ');
+  if(cq) cq.addEventListener('input', function(){
+    candQ = this.value; clearTimeout(cq._t);
+    cq._t = setTimeout(function(){ render(); const n=document.getElementById('candQ');
+      if(n){ n.focus(); n.setSelectionRange(n.value.length,n.value.length); } }, 220);
+  });
+  const cseg = document.getElementById('candSeg');
+  if(cseg) cseg.addEventListener('click', function(e){
+    const b = e.target.closest('button'); if(!b) return;
+    candFilter = b.dataset.f; render();
+  });
+  const a2 = document.getElementById('candAll2');
+  if(a2) a2.addEventListener('click', function(){ candList().forEach(c=>picked.add(c.name)); render(); });
+  const cl = document.getElementById('candClear');
+  if(cl) cl.addEventListener('click', function(){ picked.clear(); render(); });
+  const cp = document.getElementById('copySnip');
+  if(cp) cp.addEventListener('click', function(){
+    const txt = document.getElementById('snipBox').textContent;
+    navigator.clipboard.writeText(txt).then(()=>{ cp.textContent='✓ 복사됨'; setTimeout(()=>cp.textContent='복사',1400); })
+      .catch(()=>{ cp.textContent='복사 실패'; setTimeout(()=>cp.textContent='복사',1400); });
+  });
+}
+
+document.querySelector('.sidebar').addEventListener('click', function(e){
+  const b = e.target.closest('.navbtn'); if(!b) return;
+  document.querySelectorAll('.navbtn').forEach(n=>n.classList.remove('active'));
+  b.classList.add('active');
+  view = b.dataset.view;
+  render();
+});
+document.getElementById('periodSeg').addEventListener('click', function(e){
+  const b = e.target.closest('button'); if(!b) return;
+  [...this.children].forEach(n=>n.classList.remove('on'));
+  b.classList.add('on');
+  period = {mode:b.dataset.p, from:'', to:''};
+  render();
+});
+document.getElementById('dApply').addEventListener('click', function(){
+  const f = document.getElementById('dFrom').value, t = document.getElementById('dTo').value;
+  if(!f && !t) return;
+  period = {mode:'custom', from:f, to:t};
+  document.querySelectorAll('#periodSeg button').forEach(n=>n.classList.remove('on'));
+  render();
+});
+document.getElementById('themeFab').addEventListener('click', function(){
+  const dark = document.documentElement.getAttribute('data-theme')==='dark';
+  if(dark){ document.documentElement.removeAttribute('data-theme'); try{localStorage.setItem('opcare_theme','light');}catch(e){} this.textContent='🌙'; }
+  else    { document.documentElement.setAttribute('data-theme','dark'); try{localStorage.setItem('opcare_theme','dark');}catch(e){} this.textContent='☀️'; }
+});
+
+/* ── 부팅 ──────────────────────────────────────────────────────
+   계약 고객사 전용 원장을 먼저 받아 FR 에 합친 뒤 렌더한다.
+   원장 파일이 없거나 실패해도 슬랙 집계만으로 화면은 정상 동작한다. */
+(async function boot(){
+  if(document.documentElement.getAttribute('data-theme')==='dark') document.getElementById('themeFab').textContent='☀️';
+
+  await loadClientLedgers();
+  CLIENT_FR.forEach(r=>FR.push(r));
+  rebuildDateUniverse();
+
+  if(ALL_DATES.length){
+    const a = ALL_DATES[0], b = ALL_DATES[ALL_DATES.length-1];
+    ['dFrom','dTo'].forEach(function(id, i){
+      const el = document.getElementById(id);
+      el.value = i === 0 ? a : b;
+      el.min = a; el.max = b;
+    });
+  }
+  /* '오늘' 버튼은 "가장 최신 데이터일"을 고른다. 실제 오늘과 다르면 라벨을 바꿔
+     08/31 짜리 데이터를 '오늘'이라 부르는 일이 없게 한다. */
+  const todayBtn = document.querySelector('#periodSeg button[data-p="today"]');
+  if(todayBtn && LAST && LAST !== REAL_TODAY) todayBtn.textContent = '최신 ' + fmtD(LAST);
+
+  /* 기본 기간('전체')과 세그먼트 버튼 상태를 맞춘다 */
+  document.querySelectorAll('#periodSeg button').forEach(function(b){
+    b.classList.toggle('on', b.dataset.p === period.mode);
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>

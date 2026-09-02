@@ -70,17 +70,29 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/fetch-menu-requests.js || echo "메뉴요청 적재 실패 — 집계는 계속"
 
+      - name: 프랜차이즈 고객사 원장 생성 (컴포즈커피)
+        # slack-data.js 에서 브랜드 매칭으로 컴포즈커피 건만 추려 franchise/data/compose.js 로.
+        # 슬랙 재호출이 없어 실패해도 본 집계에는 영향이 없다.
+        run: node scripts/tally-compose.js || echo "컴포즈 원장 생성 실패 — 집계는 계속"
+
+      - name: 고객사 공유 페이지 빌드
+        # --hosted: 원장을 런타임에 읽는 호스팅본만 만든다.
+        # 단독 파일(원장 인라인)은 적재마다 100KB씩 쌓여 CI 에서는 만들지 않는다.
+        run: node scripts/build-compose-share.js --hosted || echo "공유 페이지 빌드 실패 — 집계는 계속"
+
       - name: 변경 시 커밋 & 푸시
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ -z "$(git status --porcelain slack-data.js menu-requests.js duty-data.js menu-files 2>/dev/null)" ]; then
+          if [ -z "$(git status --porcelain slack-data.js menu-requests.js duty-data.js menu-files franchise/data share/compose 2>/dev/null)" ]; then
             echo "변경 없음 — 커밋 생략"
           else
             git add slack-data.js
             [ -f menu-requests.js ] && git add menu-requests.js
             [ -f duty-data.js ] && git add duty-data.js
             [ -d menu-files ] && git add -A menu-files
+            [ -d franchise/data ] && git add -A franchise/data
+            [ -d share/compose ] && git add -A share/compose
             git commit -m "chore: 원격 AS 집계 자동 갱신 ($(TZ=Asia/Seoul date +%Y-%m-%d))"
             for i in 1 2 3 4 5 6 7 8; do
               git pull --rebase --autostash origin main && git push && { echo "푸시 성공"; exit 0; }
