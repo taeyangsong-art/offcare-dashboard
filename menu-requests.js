@@ -3,10 +3,196 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1433,
- "updatedAt": "2026-09-02 15:53",
+ "version": 1434,
+ "updatedAt": "2026-09-02 15:54",
  "days": 30,
  "items": [
+  {
+   "ts": "1788332029.860289",
+   "date": "2026-09-02",
+   "time": "15:53",
+   "store": "전주식 가맥",
+   "biz": "8991702347",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "Resized_20260902_154945.jpg.jpeg",
+     "fid": "F0BUEJSD0F3",
+     "from": "댓글",
+     "path": "menu-files/1788332029_860289-0.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "볶음",
+       "name": "오징어",
+       "price": 31900
+      },
+      {
+       "category": "볶음",
+       "name": "두윰갑차 새우볶음",
+       "price": 29900
+      },
+      {
+       "category": "볶음",
+       "name": "한우생차오돌개 골뱅이소면",
+       "price": 18900
+      },
+      {
+       "category": "볶음",
+       "name": "멸간새살차 제육볶음",
+       "price": 17900
+      },
+      {
+       "category": "볶음",
+       "name": "오징어숙회",
+       "price": 17900
+      },
+      {
+       "category": "볶음",
+       "name": "쭈꾸미볶음",
+       "price": 17900
+      },
+      {
+       "category": "볶음",
+       "name": "치즈등록등록 계란말이",
+       "price": 13900
+      },
+      {
+       "category": "볶음",
+       "name": "스팸계란후라이",
+       "price": 13900
+      },
+      {
+       "category": "볶음",
+       "name": "30cm 고등어구이",
+       "price": 14900
+      },
+      {
+       "category": "탕류",
+       "name": "통! 오징어 짬뽕탕",
+       "price": 27900
+      },
+      {
+       "category": "탕류",
+       "name": "통!게가득 홍게탕",
+       "price": 19900
+      },
+      {
+       "category": "탕류",
+       "name": "얼마가 담근 김치찌개",
+       "price": 17900
+      },
+      {
+       "category": "탕류",
+       "name": "국물해물찜",
+       "price": 16900
+      },
+      {
+       "category": "탕류",
+       "name": "주전자 조림이 오징어",
+       "price": 16900
+      },
+      {
+       "category": "탕류",
+       "name": "김치수육",
+       "price": 16900
+      },
+      {
+       "category": "탕류",
+       "name": "해물뚝배기탕",
+       "price": 13900
+      },
+      {
+       "category": "탕류",
+       "name": "나가사끼짬뽕탕",
+       "price": 17900
+      },
+      {
+       "category": "탕류",
+       "name": "번데기탕",
+       "price": 9900
+      },
+      {
+       "category": "마른안주",
+       "name": "딱새",
+       "price": 16900
+      },
+      {
+       "category": "마른안주",
+       "name": "반건조오징어",
+       "price": 16900
+      },
+      {
+       "category": "마른안주",
+       "name": "한치",
+       "price": 16900
+      },
+      {
+       "category": "마른안주",
+       "name": "아귀포",
+       "price": 16900
+      },
+      {
+       "category": "마른안주",
+       "name": "마른오징어",
+       "price": 15900
+      },
+      {
+       "category": "마른안주",
+       "name": "반건조 노가리",
+       "price": 15900
+      },
+      {
+       "category": "피짜! & 전!",
+       "name": "치즈 감자채전",
+       "price": 16900
+      },
+      {
+       "category": "피짜! & 전!",
+       "name": "감자체전과 사랑이야기",
+       "price": 14900
+      },
+      {
+       "category": "피짜! & 전!",
+       "name": "페페로니피자",
+       "price": 14900
+      },
+      {
+       "category": "피짜! & 전!",
+       "name": "고르곤졸라피자",
+       "price": 14900
+      },
+      {
+       "category": "하이볼",
+       "name": "레몬하이볼",
+       "price": 7500
+      },
+      {
+       "category": "하이볼",
+       "name": "자몽하이볼",
+       "price": 7500
+      },
+      {
+       "category": "하이볼",
+       "name": "피치하이볼",
+       "price": 7500
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1788332053.540489",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788332029860289"
+  },
   {
    "ts": "1788331959.003039",
    "date": "2026-09-02",
@@ -70,8 +256,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1788329259.989659",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788329242763739"
   },
   {
