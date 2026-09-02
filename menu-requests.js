@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1482,
- "updatedAt": "2026-09-03 07:46",
+ "version": 1483,
+ "updatedAt": "2026-09-03 08:01",
  "days": 30,
  "items": [
   {
@@ -23,49 +23,49 @@ window.MENU_REQUESTS = {
      "name": "1000015903.jpg",
      "fid": "F0BULANUJ3U",
      "from": "댓글",
-     "path": "menu-files/1788388572_023099-0.jpg",
      "kind": "product_photo",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1788388572_023099-0.jpg"
     },
     {
      "name": "1000015892.png",
      "fid": "F0C00NBRVCY",
      "from": "댓글",
-     "path": "menu-files/1788388572_023099-1.png",
      "kind": "product_photo",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1788388572_023099-1.png"
     },
     {
      "name": "1000015893.png",
      "fid": "F0BUE46U17V",
      "from": "댓글",
-     "path": "menu-files/1788388572_023099-2.png",
      "kind": "product_photo",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1788388572_023099-2.png"
     },
     {
      "name": "1000015894.png",
      "fid": "F0BU50EH1MM",
      "from": "댓글",
-     "path": "menu-files/1788388572_023099-3.png",
      "kind": "product_photo",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1788388572_023099-3.png"
     },
     {
      "name": "1000015895.png",
      "fid": "F0BU50EH4UX",
      "from": "댓글",
-     "path": "menu-files/1788388572_023099-4.png",
      "kind": "product_photo",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1788388572_023099-4.png"
     },
     {
      "name": "1000015896.png",
      "fid": "F0BU50ETD71",
      "from": "댓글",
-     "path": "menu-files/1788388572_023099-5.png",
      "kind": "product_photo",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1788388572_023099-5.png"
     },
     {
      "name": "1000015899.png",
@@ -189,14 +189,185 @@ window.MENU_REQUESTS = {
        "price": 28000
       }
      ]
+    },
+    {
+     "name": "1000015911.jpg",
+     "fid": "F0BU5195CR5",
+     "from": "댓글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "수박빙수 2~3인분",
+       "price": 23000
+      },
+      {
+       "category": "",
+       "name": "수박빙수 4~5인분",
+       "price": 26000
+      },
+      {
+       "category": "",
+       "name": "말차빙수 2~3인분",
+       "price": 18000
+      },
+      {
+       "category": "",
+       "name": "말차빙수 4~5인분",
+       "price": 22000
+      },
+      {
+       "category": "",
+       "name": "옛날빙수 2~3인분",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "옛날빙수 4~5인분",
+       "price": 20000
+      }
+     ]
+    },
+    {
+     "name": "1000015909.jpg",
+     "fid": "F0BUE52PQRZ",
+     "from": "댓글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "아메리카노 ICE",
+       "price": 3500
+      },
+      {
+       "category": "",
+       "name": "아메리카노 HOT",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "카페라떼 ICE",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "카페라떼 HOT",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "카라멜마끼아또 ICE",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "카라멜마끼아또 HOT",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "복숭아 아이스티",
+       "price": 3500
+      },
+      {
+       "category": "",
+       "name": "유자차 HOT",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "수박주스",
+       "price": 4800
+      },
+      {
+       "category": "",
+       "name": "초코라떼 HOT",
+       "price": 3500
+      },
+      {
+       "category": "",
+       "name": "초코라떼 ICE",
+       "price": 4000
+      },
+      {
+       "category": "요거트",
+       "name": "딸기",
+       "price": 4800
+      },
+      {
+       "category": "요거트",
+       "name": "망고",
+       "price": 4800
+      },
+      {
+       "category": "요거트",
+       "name": "메론",
+       "price": 4800
+      },
+      {
+       "category": "요거트",
+       "name": "블루베리",
+       "price": 4800
+      },
+      {
+       "category": "스무디",
+       "name": "딸기",
+       "price": 4500
+      },
+      {
+       "category": "스무디",
+       "name": "망고",
+       "price": 4500
+      },
+      {
+       "category": "스무디",
+       "name": "메론",
+       "price": 4500
+      },
+      {
+       "category": "스무디",
+       "name": "블루베리",
+       "price": 4500
+      }
+     ]
+    },
+    {
+     "name": "1000015907.jpg",
+     "fid": "F0BUN9WF4NM",
+     "from": "댓글",
+     "kind": "other",
+     "menu": [
+      {
+       "category": "추가 토핑",
+       "name": "연유",
+       "price": 1000
+      },
+      {
+       "category": "추가 토핑",
+       "name": "떡 15개",
+       "price": 1000
+      },
+      {
+       "category": "추가 토핑",
+       "name": "팥",
+       "price": 1000
+      },
+      {
+       "category": "추가 토핑",
+       "name": "치즈큐브 5개",
+       "price": 2000
+      }
+     ]
     }
    ],
    "datt": [],
    "replies": [
-    "• 시럽 추가 1,000원 \n> 딸기 \n> 망고\n> 블루베리\n> 초코 \n> 멜론\n> 말차 \n> 수박\n> 복숭아 \n• 아이스크림 추가 3,000원 \n> 초코 \n> 바닐라 \n> 딸기 \n• 추가토핑 \n> 연유 1,000원 \n> 떡 15개 1,000원\n> 팥 1,000원 \n> 치즈큐브 2,000원 \n• 혹시 몰라  메일 포워딩 드렸습니다 ! cc.  :감사합니다꾸벅:"
+    "• 시럽 추가 1,000원 \n> 딸기 \n> 망고\n> 블루베리\n> 초코 \n> 멜론\n> 말차 \n> 수박\n> 복숭아 \n• 아이스크림 추가 3,000원 \n> 초코 \n> 바닐라 \n> 딸기 \n• 추가토핑 \n> 연유 1,000원 \n> 떡 15개 1,000원\n> 팥 1,000원 \n> 치즈큐브 2,000원 \n• 혹시 몰라  메일 포워딩 드렸습니다 ! cc.  :감사합니다꾸벅:",
+    "아 그래여 ? 중복인가보네여 ..ㅎ 확인 해주셔서 감사합니다 !",
+    "감사합니다 동욱님 !"
    ],
-   "rc": 3,
-   "lr": "1788389000.787479",
+   "rc": 8,
+   "lr": "1788389346.388479",
    "rfx": 3,
    "status": "wait",
    "handler": null,
