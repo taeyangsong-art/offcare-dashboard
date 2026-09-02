@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1418,
- "updatedAt": "2026-09-02 13:30",
+ "version": 1419,
+ "updatedAt": "2026-09-02 13:49",
  "days": 30,
  "items": [
   {
@@ -52770,29 +52770,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785733144528599"
-  },
-  {
-   "ts": "1785732563.914419",
-   "date": "2026-08-03",
-   "time": "13:49",
-   "store": "찬미당",
-   "biz": "6634900979",
-   "pos": "",
-   "content": "메뉴등록요청드립니다 .",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "반찬가게 인지라 금액으로 메뉴 생성해서 사용하고 있다함 .\n500원 / 1000원 이후 천원단위로 25000원 까지 생성요청  /"
-   ],
-   "rc": 3,
-   "lr": "1785732950.002589",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785732563914419"
   }
  ],
  "ocr": {
