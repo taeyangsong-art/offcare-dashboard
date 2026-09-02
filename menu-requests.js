@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1442,
- "updatedAt": "2026-09-02 16:09",
+ "version": 1443,
+ "updatedAt": "2026-09-02 16:10",
  "days": 30,
  "items": [
   {
@@ -18,11 +18,188 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "Resized(1788332806453)_Resized_20260902_",
+     "fid": "F0BV76CUR24",
+     "from": "댓글",
+     "path": "menu-files/1788332915_954999-0.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "메인메뉴",
+       "name": "직화 양념 뼈구이 2인",
+       "price": 36000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "직화 양념 뼈구이 3인",
+       "price": 44000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "직화 양념 뼈구이 4인",
+       "price": 52000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "직화 간장 뼈구이 2인",
+       "price": 36000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "직화 간장 뼈구이 3인",
+       "price": 44000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "직화 간장 뼈구이 4인",
+       "price": 52000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "우거지 감자탕 2인",
+       "price": 34000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "우거지 감자탕 3인",
+       "price": 41000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "우거지 감자탕 4인",
+       "price": 48000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "돈가스",
+       "price": 14000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "고추 튀김 2pc",
+       "price": 4000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "왕새우 튀김 2pc",
+       "price": 4000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "감자튀김",
+       "price": 6000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "볶음밥",
+       "price": 3000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "주먹밥",
+       "price": 4000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "계란찜",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "코카콜라 355ml",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "제로콜라 355ml",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "칠성사이다 355ml",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "환타파인맛 355ml",
+       "price": 2000
+      },
+      {
+       "category": "주류",
+       "name": "소주",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "백주",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "슬러시 막걸리 (1.8L)",
+       "price": 13000
+      },
+      {
+       "category": "주류",
+       "name": "생맥주 300ml",
+       "price": 3300
+      },
+      {
+       "category": "주류",
+       "name": "생맥주 500ml",
+       "price": 4500
+      },
+      {
+       "category": "주류",
+       "name": "생맥주 1700ml",
+       "price": 16000
+      },
+      {
+       "category": "추가메뉴",
+       "name": "떡튀김",
+       "price": 3000
+      },
+      {
+       "category": "추가메뉴",
+       "name": "당면사리",
+       "price": 2000
+      },
+      {
+       "category": "추가메뉴",
+       "name": "라면사리",
+       "price": 2000
+      },
+      {
+       "category": "추가메뉴",
+       "name": "우동사리",
+       "price": 2000
+      },
+      {
+       "category": "추가메뉴",
+       "name": "파채 추가",
+       "price": 2000
+      },
+      {
+       "category": "추가메뉴",
+       "name": "우거지 추가",
+       "price": 5000
+      },
+      {
+       "category": "추가메뉴",
+       "name": "뼈 추가 (4개)",
+       "price": 18000
+      }
+     ]
+    }
+   ],
    "datt": [],
-   "replies": [],
-   "rc": 0,
-   "lr": "",
+   "replies": [
+    "추가메뉴에 공기밥 1000원 넣어주세요"
+   ],
+   "rc": 2,
+   "lr": "1788333013.022659",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -206,9 +383,13 @@ window.MENU_REQUESTS = {
     }
    ],
    "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1788332976.723749",
+   "replies": [
+    "이거 세로로 준걸",
+    "가로로 돌려준건데",
+    "세로로 보내줘바?"
+   ],
+   "rc": 9,
+   "lr": "1788333011.768399",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
