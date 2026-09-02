@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1454,
- "updatedAt": "2026-09-02 16:55",
+ "version": 1455,
+ "updatedAt": "2026-09-02 17:09",
  "days": 30,
  "items": [
+  {
+   "ts": "1788336491.348669",
+   "date": "2026-09-02",
+   "time": "17:08",
+   "store": "쏘주 맥쭈",
+   "biz": "1921702310",
+   "pos": "토스포스",
+   "content": "오케이포스 메뉴 등록 요청 카테고리 '디저트' > 앙버터 인절미 토스트 13,900원 요청드립니다. 완료 후 솔라피 발송 부탁드립니다.:woman-bowing:",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "메뉴 등록 신청 링크 오류로 제출 안된다고 제보 주심..."
+   ],
+   "rc": 2,
+   "lr": "1788336532.067339",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788336491348669"
+  },
   {
    "ts": "1788333974.069589",
    "date": "2026-09-02",
