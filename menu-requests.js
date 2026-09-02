@@ -3,10 +3,34 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1478,
- "updatedAt": "2026-09-02 18:30",
+ "version": 1479,
+ "updatedAt": "2026-09-02 19:38",
  "days": 30,
  "items": [
+  {
+   "ts": "1788345427.119649",
+   "date": "2026-09-02",
+   "time": "19:37",
+   "store": "집밥",
+   "biz": "1304800813",
+   "pos": "퍼스트포스",
+   "content": "• 메뉴 삭제 요청 드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "순두무 게살 스프 삭제 요청드려요.\n(포스/키오스크 반영 요청)",
+    "제가 비밀번호 5회 오류로 정지 되었는데.......\n\n정말 죄송합니다. 혹시 어떻게 비밀번호 배설정 할 수 있을까요"
+   ],
+   "rc": 3,
+   "lr": "1788345472.298459",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788345427119649"
+  },
   {
    "ts": "1788341004.101259",
    "date": "2026-09-02",
