@@ -3,10 +3,205 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1481,
- "updatedAt": "2026-09-02 23:01",
+ "version": 1482,
+ "updatedAt": "2026-09-03 07:46",
  "days": 30,
  "items": [
+  {
+   "ts": "1788388572.023099",
+   "date": "2026-09-03",
+   "time": "07:36",
+   "store": "실타래(Siltarae)",
+   "biz": "5433201716",
+   "pos": "",
+   "content": "메뉴 등록 요청드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "1000015903.jpg",
+     "fid": "F0BULANUJ3U",
+     "from": "댓글",
+     "path": "menu-files/1788388572_023099-0.jpg",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "name": "1000015892.png",
+     "fid": "F0C00NBRVCY",
+     "from": "댓글",
+     "path": "menu-files/1788388572_023099-1.png",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "name": "1000015893.png",
+     "fid": "F0BUE46U17V",
+     "from": "댓글",
+     "path": "menu-files/1788388572_023099-2.png",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "name": "1000015894.png",
+     "fid": "F0BU50EH1MM",
+     "from": "댓글",
+     "path": "menu-files/1788388572_023099-3.png",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "name": "1000015895.png",
+     "fid": "F0BU50EH4UX",
+     "from": "댓글",
+     "path": "menu-files/1788388572_023099-4.png",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "name": "1000015896.png",
+     "fid": "F0BU50ETD71",
+     "from": "댓글",
+     "path": "menu-files/1788388572_023099-5.png",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "name": "1000015899.png",
+     "fid": "F0BU50G0SKH",
+     "from": "댓글",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "name": "1000015900.png",
+     "fid": "F0BUG2A4PJ9",
+     "from": "댓글",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "name": "1000015901.png",
+     "fid": "F0BULAT3SJE",
+     "from": "댓글",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "name": "1000015902.png",
+     "fid": "F0BUQ1BKC20",
+     "from": "댓글",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "name": "1000015908.jpg",
+     "fid": "F0BUE51CF0T",
+     "from": "댓글",
+     "kind": "other",
+     "menu": []
+    },
+    {
+     "name": "1000015910.jpg",
+     "fid": "F0C00P7QC3S",
+     "from": "댓글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "빙수",
+       "name": "초코빙수 2~3인분",
+       "price": 17000
+      },
+      {
+       "category": "빙수",
+       "name": "초코빙수 4~5인분",
+       "price": 22000
+      },
+      {
+       "category": "빙수",
+       "name": "인절미빙수 2~3인분",
+       "price": 15000
+      },
+      {
+       "category": "빙수",
+       "name": "인절미빙수 4~5인분",
+       "price": 20000
+      },
+      {
+       "category": "빙수",
+       "name": "망고빙수 2~3인분",
+       "price": 20000
+      },
+      {
+       "category": "빙수",
+       "name": "망고빙수 4~5인분",
+       "price": 25000
+      },
+      {
+       "category": "빙수",
+       "name": "(생)애플망고 2~3인분",
+       "price": 33000
+      },
+      {
+       "category": "빙수",
+       "name": "(생)애플망고 4~5인분",
+       "price": 40000
+      },
+      {
+       "category": "빙수",
+       "name": "메론빙수 2~3인분",
+       "price": 23000
+      },
+      {
+       "category": "빙수",
+       "name": "메론빙수 4~5인분",
+       "price": 28000
+      },
+      {
+       "category": "빙수",
+       "name": "복숭아빙수 2~3인분",
+       "price": 23000
+      },
+      {
+       "category": "빙수",
+       "name": "복숭아빙수 4~5인분",
+       "price": 28000
+      },
+      {
+       "category": "빙수",
+       "name": "딸기빙수 2~3인분",
+       "price": 23000
+      },
+      {
+       "category": "빙수",
+       "name": "딸기빙수 4~5인분",
+       "price": 28000
+      },
+      {
+       "category": "빙수",
+       "name": "블루베리빙수 2~3인분",
+       "price": 23000
+      },
+      {
+       "category": "빙수",
+       "name": "블루베리빙수 4~5인분",
+       "price": 28000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "• 시럽 추가 1,000원 \n> 딸기 \n> 망고\n> 블루베리\n> 초코 \n> 멜론\n> 말차 \n> 수박\n> 복숭아 \n• 아이스크림 추가 3,000원 \n> 초코 \n> 바닐라 \n> 딸기 \n• 추가토핑 \n> 연유 1,000원 \n> 떡 15개 1,000원\n> 팥 1,000원 \n> 치즈큐브 2,000원 \n• 혹시 몰라  메일 포워딩 드렸습니다 ! cc.  :감사합니다꾸벅:"
+   ],
+   "rc": 3,
+   "lr": "1788389000.787479",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788388572023099"
+  },
   {
    "ts": "1788345427.119649",
    "date": "2026-09-02",
