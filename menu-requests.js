@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1416,
- "updatedAt": "2026-09-02 11:20",
+ "version": 1417,
+ "updatedAt": "2026-09-02 12:06",
  "days": 30,
  "items": [
   {
@@ -52816,124 +52816,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785731413655779"
-  },
-  {
-   "ts": "1785726206.398679",
-   "date": "2026-08-03",
-   "time": "12:03",
-   "store": "다온재",
-   "biz": "2111906606",
-   "pos": "",
-   "content": "메뉴",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "Resized_20260803_102846.jpeg",
-     "fid": "F0BMJ3HEASW",
-     "from": "댓글",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "",
-       "name": "스틱계란빵",
-       "price": 3000
-      },
-      {
-       "category": "",
-       "name": "고구마칩",
-       "price": 2000
-      },
-      {
-       "category": "",
-       "name": "칠리치즈감자",
-       "price": 2000
-      },
-      {
-       "category": "",
-       "name": "소라과자",
-       "price": 2000
-      },
-      {
-       "category": "",
-       "name": "카라멜콘",
-       "price": 1000
-      },
-      {
-       "category": "",
-       "name": "닭꼬치",
-       "price": 2000
-      }
-     ]
-    },
-    {
-     "name": "Resized_20260803_102830.jpeg",
-     "fid": "F0BM2N1H8P9",
-     "from": "댓글",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "음료수",
-       "name": "에너지드링크 (샤크샤크)",
-       "price": 6500
-      },
-      {
-       "category": "음료수",
-       "name": "소플말빙수 (샤르트)",
-       "price": 7000
-      },
-      {
-       "category": "음료수",
-       "name": "단품숙",
-       "price": 6000
-      },
-      {
-       "category": "커피",
-       "name": "아메리카노 HOT",
-       "price": 3500
-      },
-      {
-       "category": "커피",
-       "name": "아메리카노 ICE",
-       "price": 4000
-      },
-      {
-       "category": "커피",
-       "name": "카페라떼 HOT",
-       "price": 4000
-      },
-      {
-       "category": "커피",
-       "name": "카페라떼 ICE",
-       "price": 4500
-      },
-      {
-       "category": "커피",
-       "name": "바닐라라떼 HOT",
-       "price": 4000
-      },
-      {
-       "category": "커피",
-       "name": "바닐라라떼 ICE",
-       "price": 4500
-      },
-      {
-       "category": "에이드",
-       "name": "레몬/자몽/청귤/블루레몬",
-       "price": 4500
-      }
-     ]
-    }
-   ],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1785727774.875499",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785726206398679"
   }
  ],
  "ocr": {
