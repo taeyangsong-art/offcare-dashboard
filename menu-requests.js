@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1475,
- "updatedAt": "2026-09-02 18:24",
+ "version": 1476,
+ "updatedAt": "2026-09-02 18:26",
  "days": 30,
  "items": [
   {
@@ -23,8 +23,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "··· / 애니랩스 기준 토플파 메뉴 그대로 복사 부탁드리겠습니다. (3층 X, 아무것도 없는 애니랩스 토플파)"
    ],
-   "rc": 2,
-   "lr": "1788341050.115559",
+   "rc": 3,
+   "lr": "1788341203.134689",
    "rfx": 3,
    "status": "wait",
    "handler": null,
