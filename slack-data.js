@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7644,
+  "version": 7645,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144826,7 +144826,7 @@ window.SLACK_DATA = {
     "2026-09-02": {
       "counts": {
         "as": {
-          "배선유": 6,
+          "배선유": 7,
           "심성현": 8,
           "김규빈": 5,
           "김현기": 4,
@@ -144886,6 +144886,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "11:29",
+          "store": "브라운핸즈 송림동화점",
+          "biz": "2998702502",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "프린터/ 전원이 깜빡거리는 것이 어댑터 불량 의심/ 영상 지원 요청드립니다! (점주가 인입되어 직원 연락처 전달)",
+          "hw": "",
+          "intake": "offline",
+          "note": "어댑터쪽 케이블 접촉불량으로 교체"
+        },
         {
           "time": "11:17",
           "store": "카페하담",
@@ -145451,7 +145462,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 41,
-        "offline": 12,
+        "offline": 13,
         "unknown": 0
       },
       "updatedAt": "11:29",
@@ -145600,14 +145611,14 @@ window.SLACK_DATA = {
       },
       "1788307596.403259": {
         "post": "1788307596.403259",
-        "lastSeen": 1788316460.363,
+        "lastSeen": 1788316522.195,
         "r": 1,
         "day": "2026-09-02",
         "idx": 0
       },
       "1788312601.098729": {
         "post": "1788312601.098729",
-        "lastSeen": 1788316460.363,
+        "lastSeen": 1788316522.195,
         "r": 1,
         "day": "2026-09-02",
         "idx": 11
@@ -185336,7 +185347,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-02 11:34",
+    "at": "2026-09-02 11:35",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
