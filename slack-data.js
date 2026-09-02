@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7642,
+  "version": 7643,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144829,7 +144829,6 @@ window.SLACK_DATA = {
           "배선유": 6,
           "심성현": 8,
           "김규빈": 4,
-          "서상원": 1,
           "김현기": 4,
           "김동욱": 4,
           "송태양": 2,
@@ -144840,6 +144839,7 @@ window.SLACK_DATA = {
           "김동욱": 1
         },
         "onboarding": {
+          "서상원": 1,
           "심성현": 1,
           "배선유": 3,
           "송태양": 2,
@@ -144906,7 +144906,7 @@ window.SLACK_DATA = {
           "req": "연락처 버기즈 본사 대표 / <tel:010-9597-0999|010-9597-0999>",
           "hw": "",
           "intake": "offline",
-          "note": ""
+          "note": "<mailto:burgiz.r@gmail.com|burgiz.r@gmail.com 버기즈12!! burgiz.r@gmail.com"
         },
         {
           "time": "11:10",
@@ -144934,7 +144934,7 @@ window.SLACK_DATA = {
           "time": "11:00",
           "store": "아이엠 뷰티헤어",
           "biz": "3141640407",
-          "cat": "as",
+          "cat": "onboarding",
           "emp": "서상원",
           "req": "포프(휴대폰) + 유프 온보딩 요청드립니다.",
           "hw": "",
@@ -145577,21 +145577,21 @@ window.SLACK_DATA = {
       },
       "1788307596.403259": {
         "post": "1788307596.403259",
-        "lastSeen": 1788316221.22,
+        "lastSeen": 1788316396.135,
         "r": 1,
         "day": "2026-09-02",
         "idx": 0
       },
       "1788312601.098729": {
         "post": "1788312601.098729",
-        "lastSeen": 1788316221.22,
+        "lastSeen": 1788316396.135,
         "r": 1,
         "day": "2026-09-02",
         "idx": 11
       },
       "1788314663.837919": {
         "post": "1788314663.837919",
-        "lastSeen": 1788316221.22,
+        "lastSeen": 1788316396.135,
         "r": 1,
         "day": "2026-09-02",
         "idx": 25
@@ -185319,7 +185319,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-02 11:30",
+    "at": "2026-09-02 11:33",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
