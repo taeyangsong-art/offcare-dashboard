@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1422,
- "updatedAt": "2026-09-02 14:51",
+ "version": 1423,
+ "updatedAt": "2026-09-02 14:52",
  "days": 30,
  "items": [
+  {
+   "ts": "1788328295.046019",
+   "date": "2026-09-02",
+   "time": "14:51",
+   "store": "망고식스 전시장행사용",
+   "biz": "1283861142",
+   "pos": "퍼스트포스",
+   "content": "메뉴 수정 요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "상품 제외 하고 그 자리에 상품 추가 요청드립니다.\n\n\n• 다용도컵 매장 [제외] → *핫 연유카페라떼 5,700원*\n• 추가 타피오카 [제외] → *아이스 연유카페라떼 5700원*"
+   ],
+   "rc": 2,
+   "lr": "1788328341.458859",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788328295046019"
+  },
   {
    "ts": "1788328259.312579",
    "date": "2026-09-02",
@@ -24,8 +47,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1788328263.641699",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788328259312579"
   },
   {
