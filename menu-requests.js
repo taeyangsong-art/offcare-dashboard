@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1441,
- "updatedAt": "2026-09-02 16:06",
+ "version": 1442,
+ "updatedAt": "2026-09-02 16:09",
  "days": 30,
  "items": [
+  {
+   "ts": "1788332915.954999",
+   "date": "2026-09-02",
+   "time": "16:08",
+   "store": "뼈타작",
+   "biz": "3930203994",
+   "pos": "퍼스트포스",
+   "content": "메뉴",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 0,
+   "lr": "",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788332915954999"
+  },
   {
    "ts": "1788332029.860289",
    "date": "2026-09-02",
@@ -23,7 +44,6 @@ window.MENU_REQUESTS = {
      "name": "Resized_20260902_154945.jpg.jpeg",
      "fid": "F0BUEJSD0F3",
      "from": "댓글",
-     "path": "menu-files/1788332029_860289-0.jpeg",
      "kind": "menu_board",
      "menu": [
       {
@@ -181,13 +201,14 @@ window.MENU_REQUESTS = {
        "name": "피치하이볼",
        "price": 7500
       }
-     ]
+     ],
+     "path": "menu-files/1788332029_860289-0.jpeg"
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1788332053.540489",
+   "rc": 3,
+   "lr": "1788332976.723749",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
