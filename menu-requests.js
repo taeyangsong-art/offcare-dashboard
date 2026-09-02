@@ -3,10 +3,42 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1458,
- "updatedAt": "2026-09-02 17:34",
+ "version": 1459,
+ "updatedAt": "2026-09-02 17:49",
  "days": 30,
  "items": [
+  {
+   "ts": "1788338917.960749",
+   "date": "2026-09-02",
+   "time": "17:48",
+   "store": "비틀주스(한국외대점)",
+   "biz": "6933800673",
+   "pos": "퍼스트포스",
+   "content": "메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkwMV8xMzQ2MD",
+     "fid": "F0BUBK3TY3G",
+     "from": "댓글",
+     "path": "menu-files/1788338917_960749-0.jpeg",
+     "kind": "product_photo",
+     "menu": []
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "[브런치/프루츠/차]\n에그마요모닝빵옆에\n에그당근라페모닝빵2,800원 올려주세요~"
+   ],
+   "rc": 3,
+   "lr": "1788338936.454039",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788338917960749"
+  },
   {
    "ts": "1788336491.348669",
    "date": "2026-09-02",
