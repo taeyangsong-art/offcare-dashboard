@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1423,
- "updatedAt": "2026-09-02 14:52",
+ "version": 1424,
+ "updatedAt": "2026-09-02 14:53",
  "days": 30,
  "items": [
   {
@@ -21,10 +21,11 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [
-    "상품 제외 하고 그 자리에 상품 추가 요청드립니다.\n\n\n• 다용도컵 매장 [제외] → *핫 연유카페라떼 5,700원*\n• 추가 타피오카 [제외] → *아이스 연유카페라떼 5700원*"
+    "상품 제외 하고 그 자리에 상품 추가 요청드립니다.\n\n\n• 다용도컵 매장 [제외] → *핫 연유카페라떼 5,700원*\n• 추가 타피오카 [제외] → *아이스 연유카페라떼 5700원*",
+    ":white_check_mark: 완료 후 ··· 번호로 문자 발송 요청드립니다."
    ],
-   "rc": 2,
-   "lr": "1788328341.458859",
+   "rc": 3,
+   "lr": "1788328357.982189",
    "rfx": 3,
    "status": "wait",
    "handler": null,
