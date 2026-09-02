@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1469,
- "updatedAt": "2026-09-02 18:13",
+ "version": 1470,
+ "updatedAt": "2026-09-02 18:18",
  "days": 30,
  "items": [
+  {
+   "ts": "1788340704.301269",
+   "date": "2026-09-02",
+   "time": "18:18",
+   "store": "미친피자 하남점",
+   "biz": "5036225357",
+   "pos": "",
+   "content": "• 메뉴 등록 요청 드립니다.\n• 일산직영점과 똑같이 등록 희망하고 계십니다",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1788340708.916289",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788340704301269"
+  },
   {
    "ts": "1788339251.237159",
    "date": "2026-09-02",
