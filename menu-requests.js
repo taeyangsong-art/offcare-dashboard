@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1428,
- "updatedAt": "2026-09-02 15:20",
+ "version": 1429,
+ "updatedAt": "2026-09-02 15:23",
  "days": 30,
  "items": [
   {
@@ -52131,29 +52131,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785739972879339"
-  },
-  {
-   "ts": "1785738163.570789",
-   "date": "2026-08-03",
-   "time": "15:22",
-   "store": "(주)이디피에스",
-   "biz": "3938600833",
-   "pos": "토스포스",
-   "content": "중국어와 일본어 메뉴 QR오더 추가요청",
-   "special": "워드파일 업로드지원이 안되나요?",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "넹.."
-   ],
-   "rc": 2,
-   "lr": "1785738453.695639",
-   "rfx": 3,
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785738163570789"
   }
  ],
  "ocr": {
