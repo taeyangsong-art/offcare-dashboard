@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1443,
- "updatedAt": "2026-09-02 16:10",
+ "version": 1444,
+ "updatedAt": "2026-09-02 16:11",
  "days": 30,
  "items": [
   {
@@ -380,6 +380,90 @@ window.MENU_REQUESTS = {
       }
      ],
      "path": "menu-files/1788332029_860289-0.jpeg"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BTXE2CZ1V",
+     "from": "댓글",
+     "path": "menu-files/1788332029_860289-1.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "사이드",
+       "name": "고추튀김",
+       "price": 9900
+      },
+      {
+       "category": "사이드",
+       "name": "알탕감자 토네이도",
+       "price": 8900
+      },
+      {
+       "category": "사이드",
+       "name": "콘치즈",
+       "price": 8900
+      },
+      {
+       "category": "사이드",
+       "name": "먹태 마요",
+       "price": 8900
+      },
+      {
+       "category": "사이드",
+       "name": "한국인의 밥상",
+       "price": 6900
+      },
+      {
+       "category": "사이드",
+       "name": "계란말이",
+       "price": 5900
+      },
+      {
+       "category": "주류",
+       "name": "소주",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "맥주",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "청하",
+       "price": 6000
+      },
+      {
+       "category": "주류",
+       "name": "막걸리",
+       "price": 6000
+      },
+      {
+       "category": "음료·막걸리",
+       "name": "음료",
+       "price": 2500
+      },
+      {
+       "category": "음료·막걸리",
+       "name": "콜라",
+       "price": 2500
+      },
+      {
+       "category": "음료·막걸리",
+       "name": "사이다",
+       "price": 2500
+      },
+      {
+       "category": "하이볼",
+       "name": "하이볼",
+       "price": 7500
+      },
+      {
+       "category": "하이볼",
+       "name": "제로토닉",
+       "price": 2500
+      }
+     ]
     }
    ],
    "datt": [],
@@ -388,8 +472,8 @@ window.MENU_REQUESTS = {
     "가로로 돌려준건데",
     "세로로 보내줘바?"
    ],
-   "rc": 9,
-   "lr": "1788333011.768399",
+   "rc": 10,
+   "lr": "1788333062.072829",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
