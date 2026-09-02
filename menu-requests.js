@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1460,
- "updatedAt": "2026-09-02 17:54",
+ "version": 1461,
+ "updatedAt": "2026-09-02 17:56",
  "days": 30,
  "items": [
   {
@@ -18,11 +18,242 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BU9BCAM7F",
+     "from": "댓글",
+     "path": "menu-files/1788339251_237159-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "커피",
+       "name": "에스프레소",
+       "price": 3500
+      },
+      {
+       "category": "커피",
+       "name": "아메리카노",
+       "price": 3800
+      },
+      {
+       "category": "커피",
+       "name": "카페라떼",
+       "price": 4500
+      },
+      {
+       "category": "커피",
+       "name": "바닐라라떼",
+       "price": 5500
+      },
+      {
+       "category": "커피",
+       "name": "헤즐넛라떼",
+       "price": 5500
+      },
+      {
+       "category": "SPECIAL TEA",
+       "name": "오늘의 블렌딩 스페셜 티",
+       "price": 5500
+      },
+      {
+       "category": "SPECIAL TEA",
+       "name": "캐모마일",
+       "price": 5000
+      },
+      {
+       "category": "SPECIAL TEA",
+       "name": "페퍼민트",
+       "price": 5000
+      },
+      {
+       "category": "SPECIAL TEA",
+       "name": "얼그레이",
+       "price": 5000
+      },
+      {
+       "category": "LATTE",
+       "name": "말차라떼",
+       "price": 5500
+      },
+      {
+       "category": "LATTE",
+       "name": "딸기라떼",
+       "price": 5500
+      },
+      {
+       "category": "LATTE",
+       "name": "블루베리라떼",
+       "price": 5500
+      },
+      {
+       "category": "건강 한방차",
+       "name": "달콤하고 상큼한 유자차",
+       "price": 5500
+      },
+      {
+       "category": "건강 한방차",
+       "name": "레드자몽 가득 자몽차",
+       "price": 5500
+      },
+      {
+       "category": "건강 한방차",
+       "name": "오늘의 티톡스 레몬차",
+       "price": 5500
+      },
+      {
+       "category": "건강 한방차",
+       "name": "생각나서 생강차",
+       "price": 5500
+      },
+      {
+       "category": "건강 한방차",
+       "name": "문경에서 왔다 오미자차",
+       "price": 6500
+      },
+      {
+       "category": "SIGNATURE",
+       "name": "레몬꿀복숭아 아이스티",
+       "price": 5500
+      },
+      {
+       "category": "SIGNATURE",
+       "name": "ABC 주스",
+       "price": 9000
+      },
+      {
+       "category": "beer",
+       "name": "하이볼",
+       "price": 0
+      },
+      {
+       "category": "beer",
+       "name": "기네스 생맥주",
+       "price": 10000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUH8HAD6G",
+     "from": "댓글",
+     "path": "menu-files/1788339251_237159-1.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "COFFEE",
+       "name": "Espresso",
+       "price": 3
+      },
+      {
+       "category": "COFFEE",
+       "name": "Americano",
+       "price": 3
+      },
+      {
+       "category": "COFFEE",
+       "name": "Café Latte",
+       "price": 4
+      },
+      {
+       "category": "COFFEE",
+       "name": "Vanilla Latte",
+       "price": 5
+      },
+      {
+       "category": "COFFEE",
+       "name": "Hazelnut Latte",
+       "price": 5
+      },
+      {
+       "category": "SPECIAL TEA",
+       "name": "Today's Blending Special Tea",
+       "price": 5
+      },
+      {
+       "category": "SPECIAL TEA",
+       "name": "Chamomile",
+       "price": 5
+      },
+      {
+       "category": "SPECIAL TEA",
+       "name": "Peppermint",
+       "price": 5
+      },
+      {
+       "category": "SPECIAL TEA",
+       "name": "Earl Grey",
+       "price": 5
+      },
+      {
+       "category": "LATTE",
+       "name": "Matcha Latte",
+       "price": 5
+      },
+      {
+       "category": "LATTE",
+       "name": "Strawberry Latte",
+       "price": 5
+      },
+      {
+       "category": "LATTE",
+       "name": "Blueberry Latte",
+       "price": 5
+      },
+      {
+       "category": "HERBAL TEA",
+       "name": "Sweet and Warm Yuzu Tea",
+       "price": 5
+      },
+      {
+       "category": "HERBAL TEA",
+       "name": "Red Ginseng Jujube Tea",
+       "price": 5
+      },
+      {
+       "category": "HERBAL TEA",
+       "name": "Today's Detox Lemon Tea",
+       "price": 5
+      },
+      {
+       "category": "HERBAL TEA",
+       "name": "Ginger Tea",
+       "price": 5
+      },
+      {
+       "category": "HERBAL TEA",
+       "name": "Omija Tea from Mungyeong",
+       "price": 6
+      },
+      {
+       "category": "SIGNATURE",
+       "name": "Lemon Blossom Ade",
+       "price": 5
+      },
+      {
+       "category": "SIGNATURE",
+       "name": "ABC Juice",
+       "price": 9
+      },
+      {
+       "category": "beer",
+       "name": "Highball",
+       "price": 0
+      },
+      {
+       "category": "beer",
+       "name": "Guinness Draft Beer",
+       "price": 10
+      }
+     ]
+    }
+   ],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1788339254.833509",
+   "replies": [
+    "• 기존 메뉴사진들은 그대로 살리고, 사진이 없는 메뉴는 비워달라고 하셨습니다!"
+   ],
+   "rc": 2,
+   "lr": "1788339298.657819",
    "rfx": 3,
    "status": "wait",
    "handler": null,
