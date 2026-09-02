@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7598,
+  "version": 7599,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144832,6 +144832,7 @@ window.SLACK_DATA = {
           "김동욱": 3
         },
         "onboarding": {
+          "김현기": 1,
           "김규빈": 1,
           "김동욱": 1
         },
@@ -144865,6 +144866,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "연결상에는 문제 없음 이사도중에 프린터나 케이블 문제가 있을것으로 예상되어 이카운트 등록"
+        },
+        {
+          "time": "09:40",
+          "store": "새론마트",
+          "biz": "4160484692",
+          "cat": "onboarding",
+          "emp": "김현기",
+          "req": "기존 포스기 ( 토스포스 ) + 프론트 + 유선프린터 +기존 보유 금전함 연결 온보딩 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "개인pc(포스용) 온보딩 완료"
         },
         {
           "time": "09:39",
@@ -145000,7 +145012,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 10,
+        "online": 11,
         "offline": 4,
         "unknown": 0
       },
@@ -145123,17 +145135,14 @@ window.SLACK_DATA = {
       },
       "1788307596.403259": {
         "post": "1788307596.403259",
-        "lastSeen": 1788311008.397,
+        "lastSeen": 1788311179.111,
         "r": 1,
         "day": "2026-09-02",
         "idx": 0
       },
-      "1788309655.703259": {
-        "post": "1788309655.703259",
-        "lastSeen": 1788311008.397,
-        "r": 1,
-        "day": "2026-09-02",
-        "idx": 6
+      "1788310803.599939": {
+        "post": "1788310803.599939",
+        "lastSeen": 1788311179.111
       }
     },
     "days": {
@@ -184672,7 +184681,8 @@ window.SLACK_DATA = {
             "store": "새론마트",
             "biz": "4160484692",
             "who": "김현기",
-            "cat": "as"
+            "cat": "onboarding",
+            "dmin": 24
           },
           {
             "hm": "09:43",
@@ -184688,7 +184698,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-02 10:03",
+    "at": "2026-09-02 10:06",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
