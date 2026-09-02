@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1448,
- "updatedAt": "2026-09-02 16:27",
+ "version": 1449,
+ "updatedAt": "2026-09-02 16:30",
  "days": 30,
  "items": [
   {
@@ -409,7 +409,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BTXE2CZ1V",
      "from": "댓글",
-     "path": "menu-files/1788332029_860289-1.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -487,7 +486,8 @@ window.MENU_REQUESTS = {
        "name": "제로토닉",
        "price": 2500
       }
-     ]
+     ],
+     "path": "menu-files/1788332029_860289-1.png"
     }
    ],
    "datt": [],
@@ -496,8 +496,8 @@ window.MENU_REQUESTS = {
     "가로로 돌려준건데",
     "세로로 보내줘바?"
    ],
-   "rc": 10,
-   "lr": "1788333062.072829",
+   "rc": 11,
+   "lr": "1788334214.413819",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
