@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1415,
- "updatedAt": "2026-09-02 10:30",
+ "version": 1416,
+ "updatedAt": "2026-09-02 11:20",
  "days": 30,
  "items": [
   {
@@ -52934,37 +52934,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785726206398679"
-  },
-  {
-   "ts": "1785723476.000549",
-   "date": "2026-08-03",
-   "time": "11:17",
-   "store": "형과아우 삼계탕 안락점",
-   "biz": "4136200733",
-   "pos": "오케이포스",
-   "content": "오케이포스) 테이블 수정 요청드립니다 >>",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BMFV7EZF0",
-     "from": "댓글",
-     "kind": "pos_screen",
-     "menu": []
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "*<요청사항>* \n\n3-2를 3-1로 수정\n1층 14번 삽입"
-   ],
-   "rc": 3,
-   "lr": "1785724231.242309",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785723476000549"
   }
  ],
  "ocr": {
