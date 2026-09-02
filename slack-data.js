@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7577,
+  "version": 7578,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144837,6 +144837,7 @@ window.SLACK_DATA = {
     "2026-09-02": {
       "counts": {
         "as": {
+          "심성현": 1,
           "김동욱": 1
         },
         "onboarding": {
@@ -144845,6 +144846,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:04",
+          "store": "카페 샌드",
+          "biz": "5121265421",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "유선프린터에서 영수증, 주문서 출력 후 이상한 오류음 발생하며, 영수증 컷팅도 되지않는다고 하셔서 점검요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "CPP-3000 커팅 불량 에러 비프음 지속 발생 금일 발송 접수 9/8 회수 접수 완료"
+        },
         {
           "time": "08:39",
           "store": "스토리오브라망 파주운정점",
@@ -144869,7 +144881,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 2,
         "unknown": 0
       },
@@ -144992,14 +145004,14 @@ window.SLACK_DATA = {
       },
       "1788307630.268869": {
         "post": "1788307630.268869",
-        "lastSeen": 1788307941.016,
+        "lastSeen": 1788308000.338,
         "r": 1,
         "day": "2026-09-02",
         "idx": 1
       },
       "1788307596.403259": {
         "post": "1788307596.403259",
-        "lastSeen": 1788307941.016,
+        "lastSeen": 1788308000.338,
         "r": 1,
         "day": "2026-09-02",
         "idx": 0
@@ -184503,7 +184515,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-02 09:12",
+    "at": "2026-09-02 09:13",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
