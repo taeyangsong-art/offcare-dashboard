@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7578,
+  "version": 7579,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144842,6 +144842,9 @@ window.SLACK_DATA = {
         },
         "onboarding": {
           "김동욱": 1
+        },
+        "transfer": {
+          "배선유": 1
         }
       },
       "pending": [],
@@ -144869,6 +144872,17 @@ window.SLACK_DATA = {
           "note": "통화중 1차부재 / 9시 넘어서 전화 드려도 괜찮습니다용(급건 아님) ㅎㅎㅎ / 전산확인 시 취소 후 6초만에 재결제 된걸로 확인되어 토스포스 단순취소가 아닌 수단변경으로 취소하고 카드를 빼지않아 바로 재결제된걸로 추측됨. 안내완료"
         },
         {
+          "time": "08:30",
+          "store": "조선제일한의원",
+          "biz": "",
+          "cat": "transfer",
+          "emp": "배선유",
+          "req": "9월 2일 오전 9시 / 메뉴 복사 O / 터프",
+          "hw": "",
+          "intake": "online",
+          "note": "터프1/ 터미널3 / 터미널3이 출시햇어요?"
+        },
+        {
           "time": "08:11",
           "store": "올드페리도넛 신사점",
           "biz": "5208503075",
@@ -144881,11 +144895,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
+        "online": 2,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:07"
+      "updatedAt": "09:15"
     }
   },
   "resp": {
@@ -145004,17 +145018,21 @@ window.SLACK_DATA = {
       },
       "1788307630.268869": {
         "post": "1788307630.268869",
-        "lastSeen": 1788308000.338,
+        "lastSeen": 1788308125.223,
         "r": 1,
         "day": "2026-09-02",
         "idx": 1
       },
       "1788307596.403259": {
         "post": "1788307596.403259",
-        "lastSeen": 1788308000.338,
+        "lastSeen": 1788308125.223,
         "r": 1,
         "day": "2026-09-02",
         "idx": 0
+      },
+      "1788308114.623669": {
+        "post": "1788308114.623669",
+        "lastSeen": 1788308125.223
       }
     },
     "days": {
@@ -184515,7 +184533,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-02 09:13",
+    "at": "2026-09-02 09:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
