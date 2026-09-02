@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1463,
- "updatedAt": "2026-09-02 18:00",
+ "version": 1464,
+ "updatedAt": "2026-09-02 18:06",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BU9BCAM7F",
      "from": "댓글",
-     "path": "menu-files/1788339251_237159-0.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -131,13 +130,13 @@ window.MENU_REQUESTS = {
        "name": "기네스 생맥주",
        "price": 10000
       }
-     ]
+     ],
+     "path": "menu-files/1788339251_237159-0.png"
     },
     {
      "name": "image.png",
      "fid": "F0BUH8HAD6G",
      "from": "댓글",
-     "path": "menu-files/1788339251_237159-1.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -245,15 +244,16 @@ window.MENU_REQUESTS = {
        "name": "Guinness Draft Beer",
        "price": 10
       }
-     ]
+     ],
+     "path": "menu-files/1788339251_237159-1.png"
     }
    ],
    "datt": [],
    "replies": [
     "• 기존 메뉴사진들은 그대로 살리고, 사진이 없는 메뉴는 비워달라고 하셨습니다!"
    ],
-   "rc": 2,
-   "lr": "1788339298.657819",
+   "rc": 4,
+   "lr": "1788339963.007609",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
