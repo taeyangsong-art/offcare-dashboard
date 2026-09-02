@@ -1247,33 +1247,28 @@ function viewOverview(){
     return h;
   }
 
-  /* 상단 타일 — 모드별로 낼 수 있는 지표가 다르다.
-     contract  총 인입 · 원격지원 · 현장방문 · 메뉴등록 · 명의변경 · 처리중
-     slack     ../slack-data.js 에 방문AS·단순문의 분류 자체가 없어 기존 4종 유지 */
+  /* 상단 타일 — 전 브랜드 동일하게 6종.
+     총 인입 · 원격지원 · 현장방문 · 메뉴등록 · 명의변경 · 처리중
+     브랜드를 옮겨 다닐 때 읽는 법이 바뀌지 않도록 모드로 갈라두지 않는다.
+     그 브랜드 체계에 없는 분류(slack 모드의 방문AS)는 '집계 대상 아님' 으로 표시된다. */
   const pct = v => rows.length ? '전체의 '+(v/rows.length*100).toFixed(1)+'%' : '—';
+  /* 이 브랜드의 카테고리 체계에 없는 분류는 '0건'이 아니라 집계 대상이 아니라고 적는다.
+     (slack 모드에는 방문AS 분류 자체가 없다 — 0건으로 두면 '없었다'로 읽힌다) */
   const catTile = (key, ic, label) => {
-    const c = CAT_MAP[key], v = cb[key] || 0;
-    return tile('', ic, label, v, '건', pct(v), c ? c.color : '#aeaeb4');
+    const c = CAT_MAP[key];
+    if(!c) return tile('', ic, label, 0, '건', '집계 대상 아님', '#aeaeb4');
+    return tile('', ic, label, cb[key] || 0, '건', pct(cb[key] || 0), c.color);
   };
   const grandTile = tile('grand','📥','총 인입', rows.length,'건',
                          esc(scopeLabel())+' · 지점 '+stores+'곳');
   const openTile  = tile('','⏳','처리중', open,'건',
                          open?'진행중·보류 확인 필요':'전건 처리완료', open?'#ff9500':'#34c759');
-  let tiles;
-  if(MODE === 'contract'){
-    tiles = [ grandTile,
-              catTile('as','🖥','원격지원'),
-              catTile('visit','🚗','현장방문'),
-              catTile('menu','📝','메뉴등록'),
-              catTile('transfer','🔄','명의변경'),
-              openTile ];
-  }else{
-    const top = CATS.map(c=>({c:c,v:cb[c.key]||0})).sort((a,b)=>b.v-a.v)[0];
-    tiles = [ grandTile,
-              tile('','🔧','최다 카테고리', top?top.v:0,'건', top?top.c.name:'—','#34c759'),
-              tile('','🏪','인입 지점', stores,'곳','1건 이상 인입 발생','#5e5ce6'),
-              openTile ];
-  }
+  const tiles = [ grandTile,
+                  catTile('as','🖥','원격지원'),
+                  catTile('visit','🚗','현장방문'),
+                  catTile('menu','📝','메뉴등록'),
+                  catTile('transfer','🔄','명의변경'),
+                  openTile ];
   h += '<div class="ov-tiles" style="--n:'+tiles.length+'">' + tiles.join('') + '</div>';
 
   h += '<div class="card"><div class="card-head"><h3>일별 인입 현황</h3>'
