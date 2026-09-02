@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1419,
- "updatedAt": "2026-09-02 13:49",
+ "version": 1420,
+ "updatedAt": "2026-09-02 13:59",
  "days": 30,
  "items": [
   {
@@ -52726,50 +52726,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "심성현",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785733689417239"
-  },
-  {
-   "ts": "1785733152.711089",
-   "date": "2026-08-03",
-   "time": "13:59",
-   "store": "가배차 명륜점",
-   "biz": "7341701978",
-   "pos": "토스포스",
-   "content": "메뉴 전체 등록 부탁드립니다",
-   "special": "키오스크랑 포스 둘다 등롣 부탁드립니다",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1785733157.397769",
-   "rfx": 3,
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785733152711089"
-  },
-  {
-   "ts": "1785733144.528599",
-   "date": "2026-08-03",
-   "time": "13:59",
-   "store": "갈풍집",
-   "biz": "3014014266",
-   "pos": "오케이포스",
-   "content": "오케이포스 / 메뉴 가격 수정부탁드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "• 마늘갈비살, 매콤 갈비살, 생갈비살 19000원 > 20000원으로 변경"
-   ],
-   "rc": 3,
-   "lr": "1785734224.464349",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785733144528599"
   }
  ],
  "ocr": {
