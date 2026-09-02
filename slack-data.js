@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7599,
+  "version": 7600,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144843,7 +144843,19 @@ window.SLACK_DATA = {
           "배선유": 1
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "09:06",
+          "store": "연탄불생고기",
+          "biz": "1132139392",
+          "handler": "김현기",
+          "cat": "as",
+          "intake": "offline",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "done": [
         {
           "time": "10:00",
@@ -145013,10 +145025,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 11,
-        "offline": 4,
+        "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "10:01"
+      "updatedAt": "10:06"
     }
   },
   "resp": {
@@ -145135,14 +145147,10 @@ window.SLACK_DATA = {
       },
       "1788307596.403259": {
         "post": "1788307596.403259",
-        "lastSeen": 1788311179.111,
+        "lastSeen": 1788311239.958,
         "r": 1,
         "day": "2026-09-02",
         "idx": 0
-      },
-      "1788310803.599939": {
-        "post": "1788310803.599939",
-        "lastSeen": 1788311179.111
       }
     },
     "days": {
@@ -184698,7 +184706,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-02 10:06",
+    "at": "2026-09-02 10:07",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
