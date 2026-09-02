@@ -128,6 +128,19 @@ ${body}
 
 const dest = path.join(FR, 'data', SLUG + '.js');
 fs.mkdirSync(path.dirname(dest), { recursive: true });
+
+/* 내용이 그대로면 파일을 건드리지 않는다.
+   CI 가 10분마다 도는데 갱신 시각만 바뀌어도 파일이 달라져 커밋이 쌓인다
+   (실제로 배포 첫날 57개가 생겼다). 시각을 지운 상태로 비교해서 판단한다. */
+/* \r 도 지운다 — 윈도우 작업트리는 CRLF, CI(리눅스)는 LF 라 그대로 비교하면 항상 다르다 */
+const NOSTAMP = s => s.split('\r').join('')
+                       .replace(/갱신: [\d-]+ [\d:]+ KST/, '갱신: -')
+                       .replace(/updatedAt : '[^']*'/, "updatedAt : '-'");
+const prev = fs.existsSync(dest) ? fs.readFileSync(dest, 'utf8') : '';
+if(prev && NOSTAMP(prev) === NOSTAMP(out)){
+  console.log('변경  없음 — 파일 유지 (' + records.length + '건)');
+  process.exit(0);
+}
 fs.writeFileSync(dest, out, 'utf8');
 
 const byCat = {};
