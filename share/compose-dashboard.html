@@ -865,7 +865,7 @@ window.FRANCHISE_EXCLUDE = [
  * ============================================================
  *  직접 수정하지 마세요. 고치면 다음 집계 때 덮어써집니다.
  *  생성: scripts/tally-compose.js  (slack-data.js 에서 브랜드 매칭)
- *  갱신: 2026-09-02 14:11 KST
+ *  갱신: 2026-09-02 19:16 KST
  *
  *  집계된 카테고리 : as
  *  미수집 카테고리 : visit(방문AS) · inquiry(단순문의) · tax(세금계산서발급) · terminate(해지·철거)
@@ -876,7 +876,7 @@ window.CLIENT_DATA = window.CLIENT_DATA || {};
 window.CLIENT_DATA['compose'] = {
 
   sample    : false,
-  updatedAt : '2026-09-02 14:11',
+  updatedAt : '2026-09-02 19:16',
   source    : 'slack-data.js (브랜드 매칭)',
 
   records: [
@@ -1056,11 +1056,6 @@ function scopeLabel(){
   return ymLabel(month);
 }
 function byCat(rows){ const o={}; CATS.forEach(c=>o[c.key]=0); rows.forEach(r=>{ o[r.cat]=(o[r.cat]||0)+1; }); return o; }
-function countBy(rows, fn){
-  const m = new Map();
-  rows.forEach(r=>{ const k = fn(r); if(k==null||k==='') return; m.set(k,(m.get(k)||0)+1); });
-  return m;
-}
 function storeAgg(rows){
   const m = new Map();
   rows.forEach(r=>{
@@ -1253,7 +1248,7 @@ function viewOverview(){
   }
 
   /* 상단 타일 — 모드별로 낼 수 있는 지표가 다르다.
-     contract  총 인입 · 원격지원 · 현장방문 · 단순문의 · 처리중 (고객사 보고 기준 5종)
+     contract  총 인입 · 원격지원 · 현장방문 · 메뉴등록 · 명의변경 · 처리중
      slack     ../slack-data.js 에 방문AS·단순문의 분류 자체가 없어 기존 4종 유지 */
   const pct = v => rows.length ? '전체의 '+(v/rows.length*100).toFixed(1)+'%' : '—';
   const catTile = (key, ic, label) => {
@@ -1269,7 +1264,8 @@ function viewOverview(){
     tiles = [ grandTile,
               catTile('as','🖥','원격지원'),
               catTile('visit','🚗','현장방문'),
-              catTile('inquiry','💬','단순문의'),
+              catTile('menu','📝','메뉴등록'),
+              catTile('transfer','🔄','명의변경'),
               openTile ];
   }else{
     const top = CATS.map(c=>({c:c,v:cb[c.key]||0})).sort((a,b)=>b.v-a.v)[0];
@@ -1313,18 +1309,53 @@ function viewOverview(){
           + '<div class="bar-track"><div class="bar-fill" style="width:'+p.toFixed(1)+'%;background:'+t.color+'"></div></div></div>';
       }).join('') : '<div class="empty">데이터 없음</div>')
     + '</div>'
-    + '<div class="card"><div class="card-head"><h3>담당자 처리량</h3></div>'
-    + (function(){
-        const e = [...countBy(rows,r=>r.emp).entries()].sort((a,b)=>b[1]-a[1]);
-        if(!e.length) return '<div class="empty">데이터 없음</div>';
-        const m = e[0][1];
-        return e.map(x=>'<div class="bar-row"><div class="bar-meta"><span class="nm">'+esc(x[0])+'</span>'
-          + '<span class="ct">'+x[1]+'건</span></div><div class="bar-track">'
-          + '<div class="bar-fill" style="width:'+(x[1]/m*100).toFixed(1)+'%"></div></div></div>').join('');
-      })()
+    + '<div class="card"><div class="card-head"><h3>시간대별 인입</h3>'
+    + '<span class="hint">인입 시각 기준</span></div>'
+    + hourBands(rows)
     + '</div></div>';
   return h;
 }
+/* ── 시간대별 인입 ──────────────────────────────────────────
+   가맹점이 주로 언제 도움을 필요로 하는지. 담당자 처리량을 대신한다 —
+   고객사가 보는 화면에 사내 직원별 실적을 둘 이유가 없다.
+   시(hour) 단위로 24칸을 그리면 절반이 빈 칸이라, 운영상 의미가 있는
+   구간으로 묶는다. 한 종류 계열이므로 색은 한 가지만 쓰고 범례를 두지 않는다. */
+const HOUR_BANDS = [
+  { label: '09시 이전', desc: '개점 준비',      test: h => h < 9 },
+  { label: '09–12시',  desc: '오전',           test: h => h >= 9  && h < 12 },
+  { label: '12–15시',  desc: '점심 피크 전후',  test: h => h >= 12 && h < 15 },
+  { label: '15–18시',  desc: '오후',           test: h => h >= 15 && h < 18 },
+  { label: '18시 이후', desc: '저녁·마감',      test: h => h >= 18 },
+];
+
+function hourBands(rows){
+  const timed = rows.filter(r => /^\d{1,2}:/.test(String(r.time || '')));
+  if(!timed.length) return '<div class="empty">인입 시각이 기록된 건이 없습니다.</div>';
+
+  const counts = HOUR_BANDS.map(b => timed.filter(r => b.test(+String(r.time).split(':')[0])).length);
+  const mx = Math.max.apply(null, counts), tot = timed.length;
+  const noTime = rows.length - timed.length;
+
+  let h = HOUR_BANDS.map(function(b, i){
+    const v = counts[i];
+    const peak = v > 0 && v === mx;
+    return '<div class="bar-row" title="' + esc(b.label + ' (' + b.desc + ') · ' + v + '건') + '">'
+      + '<div class="bar-meta"><span class="nm">' + esc(b.label)
+      + (peak ? ' <span style="font-size:11px;color:var(--blue);font-weight:700">최다</span>' : '')
+      + '</span><span class="ct">' + v + '건 '
+      + '<span style="color:var(--gray2);font-weight:600">' + (v / tot * 100).toFixed(0) + '%</span>'
+      + '</span></div>'
+      + '<div class="bar-track"><div class="bar-fill" style="width:'
+      + (mx ? (v / mx * 100).toFixed(1) : '0') + '%"></div></div></div>';
+  }).join('');
+
+  /* 시각이 없는 건을 조용히 빼면 합이 안 맞아 보인다 */
+  if(noTime)
+    h += '<div style="font-size:11.5px;color:var(--gray2);margin-top:10px">'
+       + '시각 미기재 ' + noTime + '건은 제외했습니다.</div>';
+  return h;
+}
+
 function tile(cls, ic, name, val, unit, sub, color){
   return '<div class="ov-tile '+cls+'"'+(color?' style="--c:'+color+'"':'')+'>'
     + '<div class="ov-name"><span>'+ic+'</span>'+esc(name)+'</div>'
@@ -1588,15 +1619,6 @@ function downloadXlsx(){
   agg.forEach(o=>s2.push([o.branch,o.store,o.total].concat(CATS.map(c=>o.cats[c.key]||0), ONSITE.length?[o.onsite]:[], [o.last])));
   s2.push(['합계','',rows.length].concat(CATS.map(c=>cb[c.key]||0), ONSITE.length?[onsite.length]:[], ['']));
   sheets.push({name:'지점별', rows:s2, widths:[20,26,9].concat(CATS.map(()=>11),[10,14])});
-
-  const emps = [...countBy(rows,r=>r.emp).entries()].sort((a,b)=>b[1]-a[1]);
-  const s3 = [['담당자','합계'].concat(CATS.map(c=>c.name))];
-  emps.forEach(function(e){
-    const o = byCat(rows.filter(r=>r.emp===e[0]));
-    s3.push([e[0], e[1]].concat(CATS.map(c=>o[c.key]||0)));
-  });
-  s3.push(['합계', rows.length].concat(CATS.map(c=>cb[c.key]||0)));
-  sheets.push({name:'담당자별', rows:s3, widths:[14,9].concat(CATS.map(()=>11))});
 
   if(ONSITE.length){
     const s4 = [['일자','시각','지점','매장명','상태','담당자','인입경로','사유','메모']];
