@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1421,
- "updatedAt": "2026-09-02 14:08",
+ "version": 1422,
+ "updatedAt": "2026-09-02 14:51",
  "days": 30,
  "items": [
+  {
+   "ts": "1788328259.312579",
+   "date": "2026-09-02",
+   "time": "14:50",
+   "store": "형과아우 황칠누룽지 삼계탕",
+   "biz": "7643801386",
+   "pos": "오케이포스",
+   "content": "KIS오케이포스 사용 매장\n기존 메뉴중 황칠오리능이백숙 70,000원 > 75,000원으로 가격 변경 요청.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1788328263.641699",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788328259312579"
+  },
   {
    "ts": "1788312594.093719",
    "date": "2026-09-02",
