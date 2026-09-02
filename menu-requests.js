@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1466,
- "updatedAt": "2026-09-02 18:10",
+ "version": 1467,
+ "updatedAt": "2026-09-02 18:11",
  "days": 30,
  "items": [
   {
@@ -340,7 +340,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BUDLZT5CJ",
      "from": "댓글",
-     "path": "menu-files/1788339251_237159-3.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -413,13 +412,13 @@ window.MENU_REQUESTS = {
        "name": "추운 겨울에는 쌍화차",
        "price": 8500
       }
-     ]
+     ],
+     "path": "menu-files/1788339251_237159-3.png"
     },
     {
      "name": "image.png",
      "fid": "F0BUDM0RVNW",
      "from": "댓글",
-     "path": "menu-files/1788339251_237159-4.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -502,13 +501,13 @@ window.MENU_REQUESTS = {
        "name": "건강 샐러드(레귤러)",
        "price": 6500
       }
-     ]
+     ],
+     "path": "menu-files/1788339251_237159-4.png"
     },
     {
      "name": "image.png",
      "fid": "F0BUDM2PQRY",
      "from": "댓글",
-     "path": "menu-files/1788339251_237159-5.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -556,7 +555,8 @@ window.MENU_REQUESTS = {
        "name": "오늘의디톡스 레몬차",
        "price": 5500
       }
-     ]
+     ],
+     "path": "menu-files/1788339251_237159-5.png"
     },
     {
      "name": "image.png",
@@ -685,8 +685,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "• 기존 메뉴사진들은 그대로 살리고, 사진이 없는 메뉴는 비워달라고 하셨습니다!"
    ],
-   "rc": 6,
-   "lr": "1788340136.254459",
+   "rc": 7,
+   "lr": "1788340285.135189",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
