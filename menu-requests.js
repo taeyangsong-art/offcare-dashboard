@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1473,
- "updatedAt": "2026-09-02 18:22",
+ "version": 1474,
+ "updatedAt": "2026-09-02 18:23",
  "days": 30,
  "items": [
+  {
+   "ts": "1788341004.101259",
+   "date": "2026-09-02",
+   "time": "18:23",
+   "store": "주식회사 애니랩스",
+   "biz": "8958604295",
+   "pos": "",
+   "content": "메뉴 복사 요청드립니다 >>",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1788341019.808439",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788341004101259"
+  },
   {
    "ts": "1788340704.301269",
    "date": "2026-09-02",
@@ -709,8 +730,8 @@ window.MENU_REQUESTS = {
     "• 기존 메뉴사진들은 그대로 살리고, 사진이 없는 메뉴는 비워달라고 하셨습니다!",
     "메뉴가 정말 많군요ㅠㅠㅠㅠㅠㅠㅠㅠ"
    ],
-   "rc": 10,
-   "lr": "1788340889.040979",
+   "rc": 11,
+   "lr": "1788341003.381669",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
