@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7595,
+  "version": 7596,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -141998,17 +141998,6 @@ window.SLACK_DATA = {
           "reasons": [
             "확인 후 미완료"
           ]
-        },
-        {
-          "time": "13:18",
-          "store": "캠핑스토리",
-          "biz": "7533301168",
-          "handler": "미지정",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "1차 부재"
-          ]
         }
       ],
       "done": [
@@ -144429,7 +144418,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 186,
+        "online": 185,
         "offline": 35,
         "unknown": 0
       },
@@ -144992,7 +144981,7 @@ window.SLACK_DATA = {
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "09:43"
+      "updatedAt": "09:58"
     }
   },
   "resp": {
@@ -145111,21 +145100,21 @@ window.SLACK_DATA = {
       },
       "1788307596.403259": {
         "post": "1788307596.403259",
-        "lastSeen": 1788310281.386,
+        "lastSeen": 1788310761.437,
         "r": 1,
         "day": "2026-09-02",
         "idx": 0
       },
       "1788309655.703259": {
         "post": "1788309655.703259",
-        "lastSeen": 1788310281.386,
+        "lastSeen": 1788310761.437,
         "r": 1,
         "day": "2026-09-02",
         "idx": 6
       },
       "1788309811.405039": {
         "post": "1788309811.405039",
-        "lastSeen": 1788310281.386,
+        "lastSeen": 1788310761.437,
         "r": 1,
         "day": "2026-09-02",
         "idx": 7
@@ -184682,7 +184671,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-02 09:51",
+    "at": "2026-09-02 09:59",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
