@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7602,
+  "version": 7603,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144825,16 +144825,17 @@ window.SLACK_DATA = {
     },
     "2026-09-02": {
       "counts": {
+        "onboarding": {
+          "송태양": 1,
+          "김현기": 1,
+          "김규빈": 1,
+          "김동욱": 1
+        },
         "as": {
           "배선유": 3,
           "김규빈": 1,
           "심성현": 3,
           "김동욱": 3
-        },
-        "onboarding": {
-          "김현기": 1,
-          "김규빈": 1,
-          "김동욱": 1
         },
         "transfer": {
           "배선유": 1
@@ -144857,6 +144858,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "10:06",
+          "store": "우리집밥",
+          "biz": "6506600820",
+          "cat": "onboarding",
+          "emp": "송태양",
+          "req": "포프(핸드폰) + 유프 온보딩 + 프론트 금액입력결제모드 설정 후 현금영수증 발행 방법 안내 원격 도움 부탁드립니다. :꾸벅:",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "10:00",
           "store": "폴리 연희",
@@ -145024,7 +145036,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 11,
+        "online": 12,
         "offline": 5,
         "unknown": 0
       },
@@ -145147,14 +145159,18 @@ window.SLACK_DATA = {
       },
       "1788307596.403259": {
         "post": "1788307596.403259",
-        "lastSeen": 1788311482.021,
+        "lastSeen": 1788311540.786,
         "r": 1,
         "day": "2026-09-02",
         "idx": 0
       },
       "1788311438.744479": {
         "post": "1788311438.744479",
-        "lastSeen": 1788311482.021
+        "lastSeen": 1788311540.786
+      },
+      "1788310803.599939": {
+        "post": "1788310803.599939",
+        "lastSeen": 1788311540.786
       }
     },
     "days": {
@@ -184710,7 +184726,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-02 10:11",
+    "at": "2026-09-02 10:12",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
