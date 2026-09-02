@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1446,
- "updatedAt": "2026-09-02 16:20",
+ "version": 1447,
+ "updatedAt": "2026-09-02 16:21",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "Resized(1788332806453)_Resized_20260902_",
      "fid": "F0BV76CUR24",
      "from": "댓글",
-     "path": "menu-files/1788332915_954999-0.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -191,15 +190,17 @@ window.MENU_REQUESTS = {
        "name": "뼈 추가 (4개)",
        "price": 18000
       }
-     ]
+     ],
+     "path": "menu-files/1788332915_954999-0.jpg"
     }
    ],
    "datt": [],
    "replies": [
-    "추가메뉴에 공기밥 1000원 넣어주세요"
+    "추가메뉴에 공기밥 1000원 넣어주세요",
+    "메뉴 완료"
    ],
-   "rc": 2,
-   "lr": "1788333013.022659",
+   "rc": 3,
+   "lr": "1788333646.573919",
    "rfx": 3,
    "status": "done",
    "handler": "김현기",
