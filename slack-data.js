@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7575,
+  "version": 7576,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144978,11 +144978,14 @@ window.SLACK_DATA = {
       },
       "1788307630.268869": {
         "post": "1788307630.268869",
-        "lastSeen": 1788307642.453
+        "lastSeen": 1788307700.617
       },
       "1788307596.403259": {
         "post": "1788307596.403259",
-        "lastSeen": 1788307642.453
+        "lastSeen": 1788307700.617,
+        "r": 1,
+        "day": "2026-09-02",
+        "idx": 0
       }
     },
     "days": {
@@ -184456,11 +184459,26 @@ window.SLACK_DATA = {
             "dmin": 9
           }
         ]
+      },
+      "2026-09-02": {
+        "cnt": 1,
+        "sumMin": 1.2521956841150919,
+        "over": 0,
+        "items": [
+          {
+            "hm": "09:06",
+            "min": 1.3,
+            "store": "연탄불생고기",
+            "biz": "1132139392",
+            "who": "김현기",
+            "cat": "as"
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-02 09:07",
+    "at": "2026-09-02 09:08",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
