@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1470,
- "updatedAt": "2026-09-02 18:18",
+ "version": 1471,
+ "updatedAt": "2026-09-02 18:19",
  "days": 30,
  "items": [
   {
@@ -20,9 +20,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1788340708.916289",
+   "replies": [
+    "*일산 직영점*\n사업자번호: ···\n상호명: 미친피자 일산직영점"
+   ],
+   "rc": 2,
+   "lr": "1788340752.011879",
    "rfx": 3,
    "status": "wait",
    "handler": null,
