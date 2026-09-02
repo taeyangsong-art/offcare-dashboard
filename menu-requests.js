@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1464,
- "updatedAt": "2026-09-02 18:06",
+ "version": 1465,
+ "updatedAt": "2026-09-02 18:08",
  "days": 30,
  "items": [
   {
@@ -246,14 +246,103 @@ window.MENU_REQUESTS = {
       }
      ],
      "path": "menu-files/1788339251_237159-1.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUFK89D17",
+     "from": "댓글",
+     "path": "menu-files/1788339251_237159-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "온도선택",
+       "name": "ICE",
+       "price": 0
+      },
+      {
+       "category": "온도선택",
+       "name": "HOT",
+       "price": 0
+      },
+      {
+       "category": "아메리카노 사이즈 선택",
+       "name": "regular",
+       "price": 0
+      },
+      {
+       "category": "아메리카노 사이즈 선택",
+       "name": "large",
+       "price": 700
+      },
+      {
+       "category": "사이즈 선택",
+       "name": "regular",
+       "price": 0
+      },
+      {
+       "category": "사이즈 선택",
+       "name": "large",
+       "price": 500
+      },
+      {
+       "category": "ICE 옵션",
+       "name": "에이드",
+       "price": 500
+      },
+      {
+       "category": "디카페인 변경",
+       "name": "디카페인 변경",
+       "price": 500
+      },
+      {
+       "category": "샷추가",
+       "name": "샷추가",
+       "price": 500
+      },
+      {
+       "category": "샷추가",
+       "name": "더블샷추가",
+       "price": 1000
+      },
+      {
+       "category": "레몬추가",
+       "name": "레몬추가",
+       "price": 500
+      },
+      {
+       "category": "라떼 변경",
+       "name": "라떼 변경",
+       "price": 500
+      },
+      {
+       "category": "에이드변경",
+       "name": "에이드",
+       "price": 500
+      },
+      {
+       "category": "크림치즈",
+       "name": "크림치즈",
+       "price": 500
+      },
+      {
+       "category": "사이즈업",
+       "name": "ABC주스 사이즈업",
+       "price": 1000
+      },
+      {
+       "category": "대관료",
+       "name": "대관시간",
+       "price": 50000
+      }
+     ]
     }
    ],
    "datt": [],
    "replies": [
     "• 기존 메뉴사진들은 그대로 살리고, 사진이 없는 메뉴는 비워달라고 하셨습니다!"
    ],
-   "rc": 4,
-   "lr": "1788339963.007609",
+   "rc": 5,
+   "lr": "1788340049.576019",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
