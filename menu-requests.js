@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1457,
- "updatedAt": "2026-09-02 17:12",
+ "version": 1458,
+ "updatedAt": "2026-09-02 17:34",
  "days": 30,
  "items": [
   {
@@ -52445,36 +52445,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785765346504249"
-  },
-  {
-   "ts": "1785746045.371239",
-   "date": "2026-08-03",
-   "time": "17:34",
-   "store": "유한회사 포그니",
-   "biz": "1858701392",
-   "pos": "퍼스트포스",
-   "content": "상품별 메뉴 터치키 품목별로 5개로 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "200개 넘어가는데",
-    "6칸에서 5칸으로 일렬로 정리해달라고하넴",
-    "낼가지 해주겟다고해슴",
-    "같이 ㄱㄱ",
-    "뒤에서부터 ㄱㄱ",
-    "난 앞",
-    "동시에해도 괜찮겟..지",
-    "미리해두게용"
-   ],
-   "rc": 17,
-   "lr": "1785746803.860149",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785746045371239"
   }
  ],
  "ocr": {
