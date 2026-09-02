@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1479,
- "updatedAt": "2026-09-02 19:38",
+ "version": 1480,
+ "updatedAt": "2026-09-02 20:05",
  "days": 30,
  "items": [
   {
@@ -22,10 +22,11 @@ window.MENU_REQUESTS = {
    "datt": [],
    "replies": [
     "순두무 게살 스프 삭제 요청드려요.\n(포스/키오스크 반영 요청)",
-    "제가 비밀번호 5회 오류로 정지 되었는데.......\n\n정말 죄송합니다. 혹시 어떻게 비밀번호 배설정 할 수 있을까요"
+    "제가 비밀번호 5회 오류로 정지 되었는데.......\n\n정말 죄송합니다. 혹시 어떻게 비밀번호 배설정 할 수 있을까요",
+    "처리완료"
    ],
-   "rc": 3,
-   "lr": "1788345472.298459",
+   "rc": 4,
+   "lr": "1788347116.129389",
    "rfx": 3,
    "status": "wait",
    "handler": null,
