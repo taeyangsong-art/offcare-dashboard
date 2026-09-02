@@ -639,6 +639,27 @@
     margin:0; font-family:inherit; line-height:1.6}
   @media(max-width:680px){ .ocr-card{flex-direction:column} .ocr-thumb{flex:none; width:100%; max-width:340px} }
   /* 📞 설치 OB — 다른 카테고리와 소스가 달라(설치일정 시트) 글자색으로만 구분 */
+  /* 월별 수치 표 — 달이 9개를 넘으면 좌우로 길어져 눈이 미끄러진다.
+     ① '구분' 열을 고정해 가로 스크롤 중에도 행 이름이 보이게
+     ② 달마다 세로 구분선, 분기 경계(3·6·9월)는 굵게
+     ③ 짝수 달 옅은 음영 + 최신 달 파란 강조
+     ④ 숫자는 tabular-nums 로 자릿수 정렬 */
+  .mtbl-wrap{overflow-x:auto; border:1px solid var(--line-soft); border-radius:12px}
+  table.matrix.mtbl{min-width:860px; font-variant-numeric:tabular-nums; font-size:13.5px}
+  table.matrix.mtbl th,table.matrix.mtbl td{border-right:1px solid var(--line-soft)}
+  table.matrix.mtbl th.mh-lab,table.matrix.mtbl td.mlab{position:sticky; left:0; z-index:2;
+    background:var(--canvas); border-right:2px solid var(--line); min-width:138px}
+  table.matrix.mtbl thead th.mh-lab{background:var(--surface); z-index:3}
+  table.matrix.mtbl tfoot td.mlab{background:var(--surface)}
+  table.matrix.mtbl .mh-y{display:block; font-size:10px; font-weight:600; color:var(--muted)}
+  table.matrix.mtbl th.alt,table.matrix.mtbl td.alt{background:rgba(0,0,0,.022)}
+  table.matrix.mtbl th.qend,table.matrix.mtbl td.qend{border-right:2px solid var(--line)}
+  table.matrix.mtbl th.last,table.matrix.mtbl td.last{background:var(--blue-soft)}
+  table.matrix.mtbl thead th.last{color:var(--blue-deep)}
+  table.matrix.mtbl tr.mgrp td{background:var(--surface); color:var(--steel); font-size:11px; font-weight:800;
+    letter-spacing:.06em; padding:6px 12px; border-top:1px solid var(--line); border-right:none; text-align:left}
+  table.matrix.mtbl tbody tr:hover td:not(.mlab){background:var(--blue-soft)}
+  :root[data-theme="dark"] table.matrix.mtbl th.alt,:root[data-theme="dark"] table.matrix.mtbl td.alt{background:rgba(255,255,255,.04)}
   table.matrix .ob-col{color:#4338ca}
   table.matrix thead th.ob-col{color:#4338ca}
   /* 🔐 관리(파트리더) — 탭 바 · 좁은 히트맵 표 · 시트 대기 안내 */
@@ -3558,16 +3579,31 @@ function monthBarChart(labels, series, fmt){
     <div class="legend">${series.map(s=>`<span><span class="swatch" style="background:${s.c}"></span>${s.n}</span>`).join('')}</div>`;
 }
 // 월별 수치표 — 각 계열의 1일 평균을 같이 보여준다(진행 중인 달과 끝난 달을 나란히 비교하려면 필수)
+/* 월별 수치 표. rows 항목에 {group:'라벨'} 을 넣으면 그 자리에 구간 머리행이 들어간다. */
 function monthTable(labels, series, rows){
-  return `<div style="overflow-x:auto"><table class="matrix">
-    <thead><tr><th>구분</th>${labels.map(l=>`<th class="num">${l}</th>`).join('')}<th class="num tot">합계</th></tr></thead>
+  const n=labels.length;
+  const years=[...new Set(labels.map(l=>String(l).split('.')[0]))];
+  const oneYear=years.length===1;                       // 같은 해면 '01월' 로 짧게 쓰고 연도는 좌상단에 한 번만
+  const lab=l=>{ const p=String(l).split('.'); return oneYear? Number(p[1])+'월' : l; };
+  const cls=i=>{
+    const m=Number(String(labels[i]).split('.')[1]||0);
+    return 'num'+(i%2?' alt':'')+(m%3===0&&i<n-1?' qend':'')+(i===n-1?' last':'');
+  };
+  const cells=(vals, fmt, style)=>vals.map((v,i)=>`<td class="${cls(i)}"${style?` style="${style}"`:''}>${fmt(v)}</td>`).join('');
+  const numFmt=v=>Number(v)?Number(v).toLocaleString():'<span class="zero">·</span>';
+  const rawFmt=v=>(v===''||v==null)?'<span class="zero">·</span>':v;
+  return `<div class="mtbl-wrap"><table class="matrix mtbl">
+    <thead><tr><th class="mh-lab">구분${oneYear?`<span class="mh-y">${years[0]}년</span>`:''}</th>
+      ${labels.map((l,i)=>`<th class="${cls(i)}">${lab(l)}</th>`).join('')}<th class="num tot">합계</th></tr></thead>
     <tbody>${series.map(s=>`<tr>
-      <td><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${s.c};margin-right:7px"></span>${s.n}</td>
-      ${s.v.map(v=>`<td class="num">${Number(v)?Number(v).toLocaleString():'<span class="zero">·</span>'}</td>`).join('')}
+      <td class="mlab"><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${s.c};margin-right:7px"></span>${s.n}</td>
+      ${cells(s.v, numFmt)}
       <td class="num tot">${s.v.reduce((a,b)=>a+(Number(b)||0),0).toLocaleString()}</td></tr>`).join('')}
-      ${(rows||[]).map(r=>`<tr>
-      <td style="color:var(--gray2)">${r.n}</td>
-      ${r.v.map(v=>`<td class="num" style="color:var(--gray2);font-weight:700">${v}</td>`).join('')}
+      ${(rows||[]).map(r=>r.group
+        ? `<tr class="mgrp"><td colspan="${n+2}">${r.group}</td></tr>`
+        : `<tr>
+      <td class="mlab" style="color:var(--gray2)">${r.n}</td>
+      ${cells(r.v, rawFmt, 'color:var(--gray2);font-weight:700')}
       <td class="num" style="color:var(--gray2)">${r.tot!==undefined?r.tot:'—'}</td></tr>`).join('')}
     </tbody></table></div>`;
 }
@@ -3601,6 +3637,7 @@ function admChannel(){
           대시보드는 부재가 처리되면 처리 건으로 옮기고 미처리에서 빼기 때문에 발생 누계를 복원할 수 없습니다. 두 구간을 직접 비교하지 마세요.</div>
         ${monthTable(L, s, [{n:'평일 수', v:R.map(r=>r.biz), tot:R.reduce((a,r)=>a+r.biz,0)},
                             {n:'온라인 비중', v:share.map(p=>p+'%')},
+                            {group:'유형별 처리 건수'},
                             ...admTypeRows(R)])}</div>`;
 }
 /* 월별 수치 표의 유형별 세부 행 — 리포트(1~6월)와 라이브(7월~)를 같은 행에 이어 붙인다.
