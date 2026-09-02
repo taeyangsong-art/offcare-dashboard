@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1426,
- "updatedAt": "2026-09-02 14:58",
+ "version": 1427,
+ "updatedAt": "2026-09-02 15:08",
  "days": 30,
  "items": [
+  {
+   "ts": "1788329242.763739",
+   "date": "2026-09-02",
+   "time": "15:07",
+   "store": "유가네",
+   "biz": "4693200312",
+   "pos": "퍼스트포스",
+   "content": "오더포스) 메뉴 추가 요청 >>",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "특선 카테고리\n제육 + 야채비빔밥 10,000원\n야채비빔밥 하단에 추가 요청"
+   ],
+   "rc": 2,
+   "lr": "1788329259.989659",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788329242763739"
+  },
   {
    "ts": "1788328295.046019",
    "date": "2026-09-02",
