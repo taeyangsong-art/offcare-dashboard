@@ -413,7 +413,8 @@ const TODAY = (function(){
 
 /* ── 상태 (데이터 로드 후 채워짐) ───────────────────────────── */
 let REC = [], IS_SAMPLE = false, DATA_UPDATED = '', LOAD_ERR = '';
-let MONTHS = [], month = '', scope = 'month';
+let MONTHS = [], month = '', scope = 'today';
+let rangeFrom = '', rangeTo = '';        /* 기간선택 */
 let view = 'overview', recQ = '', recCat = '';
 let repKpi = '';          /* 월간 보고서 상단 KPI 펼침 상태: '' | 'cat' | 'store' */
 
@@ -519,11 +520,60 @@ function finishInit(){
 }
 
 /* ── 집계 헬퍼 ─────────────────────────────────────────────── */
-function scopedRecs(){ return scope==='all' ? REC.slice() : REC.filter(r=>ymOf(r.date)===month); }
+/* ── 기간 선택 ──────────────────────────────────────────────
+   scope: today | yesterday | week | month | custom
+     · month  은 monthSel 로 고른 달
+     · custom 은 rangeFrom ~ rangeTo
+   월간 보고서는 언제나 '한 달' 문서라 이 선택과 무관하게 month 를 쓴다. */
+const SCOPES = [
+  { key:'yesterday', name:'어제' },
+  { key:'today',     name:'오늘' },
+  { key:'week',      name:'주간' },
+  { key:'month',     name:'월별' },
+  { key:'custom',    name:'기간선택' },
+];
+
+/* 날짜 더하기는 UTC 로 한다 — 로컬 시간으로 계산하면 시차·서머타임에서 하루가 밀린다 */
+const dnum = s => Date.UTC(+String(s).slice(0,4), +String(s).slice(5,7) - 1, +String(s).slice(8,10));
+const dstr = t => { const d = new Date(t);
+  return d.getUTCFullYear() + '-' + String(d.getUTCMonth()+1).padStart(2,'0')
+       + '-' + String(d.getUTCDate()).padStart(2,'0'); };
+const addD = (s, n) => dstr(dnum(s) + n * 86400000);
+
+function scopeRange(){
+  if(scope === 'yesterday'){ const d = addD(TODAY, -1); return { from:d, to:d }; }
+  if(scope === 'today')      return { from:TODAY, to:TODAY };
+  if(scope === 'week'){
+    /* 월요일 시작. 일요일(0)이면 6일 전이 그 주 월요일이다 */
+    const mon = addD(TODAY, -((dowOf(TODAY) + 6) % 7));
+    return { from:mon, to:addD(mon, 6) };
+  }
+  if(scope === 'custom'){
+    const a = rangeFrom || TODAY, b = rangeTo || TODAY;
+    return a <= b ? { from:a, to:b } : { from:b, to:a };   /* 거꾸로 골라도 동작 */
+  }
+  const days = daysInYM(month);                             /* month */
+  return { from:days[0], to:days[days.length-1] };
+}
+
+function scopedRecs(){
+  const r = scopeRange();
+  return REC.filter(x => x.date >= r.from && x.date <= r.to);
+}
+
 function scopeLabel(){
-  if(scope === 'all')
-    return '전체 기간' + (REC.length ? ' · '+ymLabel(ymOf(REC[REC.length-1].date))+' ~ '+ymLabel(ymOf(REC[0].date)) : '');
-  return ymLabel(month);
+  if(scope === 'month') return ymLabel(month);
+  const r = scopeRange();
+  if(r.from === r.to) return r.from + ' (' + DOW_KO[dowOf(r.from)] + ')';
+  return r.from + ' ~ ' + r.to;
+}
+
+/* 달력은 기간에 걸친 달을 전부 그린다 (오늘/어제면 그 달 한 장) */
+function scopeMonths(){
+  const r = scopeRange(), out = [];
+  let ym = ymOf(r.from), end = ymOf(r.to);
+  for(let i = 0; i < 24 && ym <= end; i++){ out.push(ym); ym = nextYM(ym); }
+  return out;
 }
 function byCat(rows){ const o={}; CATS.forEach(c=>o[c.key]=0); rows.forEach(r=>{ o[r.cat]=(o[r.cat]||0)+1; }); return o; }
 function storeAgg(rows){
@@ -696,9 +746,10 @@ function modeBanner(){
     + '전용 대시보드로 승격하려면 좌측 <b>데이터 연결 가이드</b>를 확인하세요.</span></div>';
 }
 function preStartBanner(){
-  if(!START_YM || scope==='all' || month>=START_YM) return '';
+  if(!START_YM) return '';
+  if(ymOf(scopeRange().to) >= START_YM) return '';
   return '<div class="notice warn"><span class="k">개시 전</span><span class="t">'
-    + esc(ymLabel(month))+'은 관리 개시일(<b>'+esc(CLIENT.startDate)+'</b>) 이전입니다. 집계 대상 기간이 아닙니다.</span></div>';
+    + esc(scopeLabel())+'은 관리 개시일(<b>'+esc(CLIENT.startDate)+'</b>) 이전입니다. 집계 대상 기간이 아닙니다.</span></div>';
 }
 
 /* ── 뷰: 전체현황 ──────────────────────────────────────────── */
@@ -743,7 +794,7 @@ function viewOverview(){
 
   h += '<div class="card"><div class="card-head"><h3>일별 인입 현황</h3>'
     + '<span class="hint">칸이 진할수록 많음 · 날짜를 누르면 그날 인입 상세</span></div>'
-    + calDaily(rows, scope==='all' ? {} : {months:[month]})+'</div>';
+    + calDaily(rows, {months: scopeMonths()})+'</div>';
 
   h += '<div class="card"><div class="card-head"><h3>🔧 AS 유형별</h3>'
     + '<span class="hint">'+esc(asKeyLabel())+' 기준 · 요청내역+처리내역으로 분류 · 유형을 누르면 목록</span></div>'
@@ -1051,10 +1102,10 @@ function viewReport(){
 
 /* ── 엑셀 ──────────────────────────────────────────────────── */
 function downloadXlsx(){
-  const rows = scope==='all' ? REC.slice() : REC.filter(r=>ymOf(r.date)===month);
+  const rows = REC.filter(r=>ymOf(r.date)===month);   /* 보고서는 항상 한 달 */
   if(!rows.length){ alert(scopeLabel()+' 데이터가 없어 내려받을 내용이 없습니다.'); return; }
   const cb = byCat(rows), agg = storeAgg(rows);
-  const pv = prevYM(month), prevR = scope==='all' ? [] : REC.filter(r=>ymOf(r.date)===pv);
+  const pv = prevYM(month), prevR = REC.filter(r=>ymOf(r.date)===pv);
   const pb = byCat(prevR);
   const onsite = rows.filter(r=>ONSITE.indexOf(r.cat)>=0);
   const sheets = [];
@@ -1100,7 +1151,9 @@ function downloadXlsx(){
     .forEach(r=>s5.push([r.date,r.time,r.branch,r.store,r.biz,catName(r.cat),r.emp,intName(r.intake),stName(r.status),r.req,r.note]));
   sheets.push({name:'전건상세', rows:s5, widths:[12,8,18,26,14,14,10,10,10,46,24]});
 
-  const tag = scope==='all' ? '전체' : month.replace('-','');
+  const r0 = scopeRange();
+  const tag = scope==='month' ? month.replace('-','')
+            : (r0.from === r0.to ? r0.from : r0.from + '_' + r0.to).replace(/-/g,'');
   XLSX.download((IS_SAMPLE?'[샘플]':'')+CLIENT.name+'_원격지원_'+tag+'.xlsx', sheets);
 }
 
@@ -1446,11 +1499,20 @@ const TITLES = {
 };
 function controlsHTML(){
   if(view === 'setup') return '';
-  const opts = MONTHS.map(m=>'<option value="'+m+'"'+(m===month&&scope==='month'?' selected':'')+'>'+ymLabel(m)+'</option>').join('');
-  let h = '<select id="monthSel" title="보고 대상 월">'+opts+'</select>';
-  if(view !== 'report')
-    h += '<div class="seg" id="scopeSeg"><button data-s="month" class="'+(scope==='month'?'on':'')+'">월별</button>'
-      +  '<button data-s="all" class="'+(scope==='all'?'on':'')+'">전체</button></div>';
+  const opts = MONTHS.map(m=>'<option value="'+m+'"'+(m===month?' selected':'')+'>'+ymLabel(m)+'</option>').join('');
+  let h = '';
+  if(view === 'report'){
+    h += '<select id="monthSel" title="보고 대상 월">'+opts+'</select>';
+  }else{
+    h += '<div class="seg" id="scopeSeg">'
+      + SCOPES.map(x=>'<button data-s="'+x.key+'" class="'+(scope===x.key?'on':'')+'">'+x.name+'</button>').join('')
+      + '</div>';
+    /* 고른 기간에 필요한 입력만 곁들인다 */
+    if(scope === 'month')  h += '<select id="monthSel" title="대상 월">'+opts+'</select>';
+    if(scope === 'custom') h += '<input type="date" id="rgFrom" value="'+esc(rangeFrom)+'" max="'+TODAY+'">'
+      + '<span style="color:var(--gray2);font-weight:700">~</span>'
+      + '<input type="date" id="rgTo" value="'+esc(rangeTo)+'" max="'+TODAY+'">';
+  }
   h += '<button class="btn" id="xlsxBtn">⬇ 엑셀</button>';
   if(view === 'report') h += '<button class="btn primary" id="printBtn">🖨 인쇄 · PDF</button>';
   return h;
@@ -1493,9 +1555,19 @@ function render(){
 
 function bindEvents(){
   const ms = document.getElementById('monthSel');
-  if(ms) ms.addEventListener('change', function(){ month = this.value; scope='month'; render(); });
+  if(ms) ms.addEventListener('change', function(){ month = this.value; render(); });
   const ss = document.getElementById('scopeSeg');
-  if(ss) ss.addEventListener('click', function(e){ const b=e.target.closest('button'); if(!b) return; scope=b.dataset.s; render(); });
+  if(ss) ss.addEventListener('click', function(e){
+    const b = e.target.closest('button'); if(!b) return;
+    scope = b.dataset.s;
+    /* 기간선택을 처음 열면 최근 7일을 채워둔다 — 빈 칸이 뜨면 뭘 해야 할지 모른다 */
+    if(scope === 'custom' && !rangeFrom){ rangeFrom = addD(TODAY, -6); rangeTo = TODAY; }
+    render();
+  });
+  const rf = document.getElementById('rgFrom');
+  if(rf) rf.addEventListener('change', function(){ rangeFrom = this.value; render(); });
+  const rt = document.getElementById('rgTo');
+  if(rt) rt.addEventListener('change', function(){ rangeTo = this.value; render(); });
   const xb = document.getElementById('xlsxBtn');
   if(xb) xb.addEventListener('click', downloadXlsx);
   const pb = document.getElementById('printBtn');
