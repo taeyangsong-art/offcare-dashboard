@@ -1080,13 +1080,6 @@ function scopeLabel(){
   return r.from + ' ~ ' + r.to;
 }
 
-/* 달력은 기간에 걸친 달을 전부 그린다 (오늘/어제면 그 달 한 장) */
-function scopeMonths(){
-  const r = scopeRange(), out = [];
-  let ym = ymOf(r.from), end = ymOf(r.to);
-  for(let i = 0; i < 24 && ym <= end; i++){ out.push(ym); ym = nextYM(ym); }
-  return out;
-}
 function byCat(rows){ const o={}; CATS.forEach(c=>o[c.key]=0); rows.forEach(r=>{ o[r.cat]=(o[r.cat]||0)+1; }); return o; }
 function storeAgg(rows){
   const m = new Map();
@@ -1271,15 +1264,6 @@ function viewOverview(){
   const open   = rows.filter(r=>r.status!=='done').length;
   let h = sampleBanner() + modeBanner() + preStartBanner();
 
-  if(!rows.length){
-    h += '<div class="card"><div class="empty">'
-      + '<b style="font-size:17px;color:var(--ink)">'+esc(scopeLabel())+' 인입 내역이 없습니다.</b><br>'
-      + (START_YM && month < START_YM ? '관리 개시는 '+esc(CLIENT.startDate)+'입니다.'
-         : '기간을 바꿔 보거나, 좌측 <b>데이터 연결 가이드</b>를 확인하세요.')
-      + '</div></div>';
-    return h;
-  }
-
   /* 상단 타일 — 전 브랜드 동일하게 6종.
      총 인입 · 원격지원 · 현장방문 · 메뉴등록 · 명의변경 · 처리중
      브랜드를 옮겨 다닐 때 읽는 법이 바뀌지 않도록 모드로 갈라두지 않는다.
@@ -1304,9 +1288,21 @@ function viewOverview(){
                   openTile ];
   h += '<div class="ov-tiles" style="--n:'+tiles.length+'">' + tiles.join('') + '</div>';
 
+  if(!rows.length){
+    h += '<div class="card"><div class="empty">'
+      + '<b style="font-size:17px;color:var(--ink)">'+esc(scopeLabel())+' 인입 내역이 없습니다.</b><br>'
+      + (START_YM && ymOf(scopeRange().to) < START_YM
+          ? '관리 개시는 '+esc(CLIENT.startDate)+'입니다.'
+          : '위 기간 버튼으로 다른 기간을 보시거나, 아래 달력에서 인입이 있던 날을 눌러보세요.')
+      + '</div></div>';
+  }
+
   h += '<div class="card"><div class="card-head"><h3>일별 인입 현황</h3>'
-    + '<span class="hint">칸이 진할수록 많음 · 날짜를 누르면 그날 인입 상세</span></div>'
-    + calDaily(rows, {months: scopeMonths()})+'</div>';
+    + '<span class="hint">전체 기간 · 칸이 진할수록 많음 · 날짜를 누르면 그날 인입 상세</span></div>'
+    + calDaily(REC, {})+'</div>';
+
+  /* 아래 카드들은 고른 기간의 숫자라 0건이면 낼 것이 없다 */
+  if(!rows.length) return h;
 
   h += '<div class="card"><div class="card-head"><h3>🔧 AS 유형별</h3>'
     + '<span class="hint">'+esc(asKeyLabel())+' 기준 · 요청내역+처리내역으로 분류 · 유형을 누르면 목록</span></div>'
