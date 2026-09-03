@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7952,
+  "version": 7953,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144866,7 +144866,7 @@ window.SLACK_DATA = {
         },
         "menu": {
           "김규빈": 3,
-          "배선유": 9,
+          "배선유": 10,
           "김현기": 1
         },
         "delivery": {
@@ -144874,17 +144874,6 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
-        {
-          "time": "17:54",
-          "store": "살롱드뤄니(SALON DE RUNNY)",
-          "biz": "8031902355",
-          "handler": "배선유",
-          "cat": "menu",
-          "intake": "offline",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
         {
           "time": "15:27",
           "store": "팔팔(88)오리",
@@ -145261,6 +145250,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "금일 인터넷 기계 점검 받으셨다고 하는데 와이파이 연결이안되어있음 비밀번호 확인 후 재연하시면 된다고 안내드림"
+        },
+        {
+          "time": "17:54",
+          "store": "살롱드뤄니(SALON DE RUNNY)",
+          "biz": "8031902355",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "메뉴 등록 요청드립니다!",
+          "hw": "",
+          "intake": "offline",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / • 기존 메뉴사진들은 그대로 살리고, 사진이 없는 메뉴는 비워달라고 하셨습니다! 기존 메뉴사진들은 그대로 살리고, 사진이 없는 메뉴는 비워달라고 하셨습니다! / <mailto:annaonagency@naver.com|annaonagency@naver.com annaonagency@naver.com / 구체"
         },
         {
           "time": "17:53",
@@ -148206,7 +148206,7 @@ window.SLACK_DATA = {
           "req": "TID변경으로 인한 재온보딩 요청(본점 가맹번호 사용중이었으나 종된 복수가맹 체결로 아이디 분리)",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "13859030 / 13859031 해당 tid 로 재온보딩완료 13859030 / 13859031 해당 tid 로 재온보딩완료"
         },
         {
           "time": "08:44",
@@ -148370,21 +148370,21 @@ window.SLACK_DATA = {
       },
       "1788393614.545929": {
         "post": "1788393614.545929",
-        "lastSeen": 1788394340.621,
+        "lastSeen": 1788394399.907,
         "r": 1,
         "day": "2026-09-03",
         "idx": 4
       },
       "1788393600.832509": {
         "post": "1788393600.832509",
-        "lastSeen": 1788394340.621,
+        "lastSeen": 1788394399.907,
         "r": 1,
         "day": "2026-09-03",
         "idx": 1
       },
-      "1788394339.848969": {
-        "post": "1788394339.848969",
-        "lastSeen": 1788394340.621
+      "1788388572.023099": {
+        "post": "1788388572.023099",
+        "lastSeen": 1788394399.907
       }
     },
     "days": {
@@ -189586,7 +189586,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-03 09:12",
+    "at": "2026-09-03 09:13",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
