@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1537,
- "updatedAt": "2026-09-03 21:36",
+ "version": 1538,
+ "updatedAt": "2026-09-03 21:43",
  "days": 30,
  "items": [
   {
@@ -23,20 +23,20 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C05JFK8KA",
      "from": "댓글",
-     "path": "menu-files/1788437422_399659-0.png",
      "kind": "other",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1788437422_399659-0.png"
     }
    ],
    "datt": [],
    "replies": [
     "탕수육 세트 카테고리에 추가"
    ],
-   "rc": 2,
-   "lr": "1788437447.911459",
+   "rc": 3,
+   "lr": "1788439355.007649",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788437422399659"
   },
   {
