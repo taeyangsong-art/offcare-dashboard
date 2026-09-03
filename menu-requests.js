@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1487,
- "updatedAt": "2026-09-03 10:40",
+ "version": 1488,
+ "updatedAt": "2026-09-03 10:49",
  "days": 30,
  "items": [
   {
@@ -53488,127 +53488,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785810350195149"
-  },
-  {
-   "ts": "1785808114.589989",
-   "date": "2026-08-04",
-   "time": "10:48",
-   "store": "미소육화감자탕.돌판생삼겹살",
-   "biz": "3281900351",
-   "pos": "퍼스트포스",
-   "content": "메뉴 추가 요청 드립니다\n• 메뉴 하단측에 포장용기 1,000원,  포장용기 500원 메뉴등록 요청드립니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BMR3PMD1U",
-     "from": "댓글",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "탕모찜",
-       "name": "토종감자탕(대)",
-       "price": 42000
-      },
-      {
-       "category": "탕모찜",
-       "name": "토종감자탕(중)",
-       "price": 37000
-      },
-      {
-       "category": "탕모찜",
-       "name": "토종감자탕(소)",
-       "price": 32000
-      },
-      {
-       "category": "탕모찜",
-       "name": "묵은지김치감자탕(대)",
-       "price": 45000
-      },
-      {
-       "category": "탕모찜",
-       "name": "묵은지김치감자탕(중)",
-       "price": 40000
-      },
-      {
-       "category": "탕모찜",
-       "name": "묵은지김치감자탕(소)",
-       "price": 35000
-      },
-      {
-       "category": "탕모찜",
-       "name": "해물뼈찜(대)",
-       "price": 45000
-      },
-      {
-       "category": "탕모찜",
-       "name": "해물뼈찜(중)",
-       "price": 40000
-      },
-      {
-       "category": "탕모찜",
-       "name": "해물뼈찜(소)",
-       "price": 35000
-      },
-      {
-       "category": "탕모찜",
-       "name": "묵은지김치찜(대)",
-       "price": 40000
-      },
-      {
-       "category": "탕모찜",
-       "name": "묵은지김치찜(중)",
-       "price": 35000
-      },
-      {
-       "category": "탕모찜",
-       "name": "묵은지김치찜(소)",
-       "price": 30000
-      },
-      {
-       "category": "탕모찜",
-       "name": "포장 용기",
-       "price": 1000
-      },
-      {
-       "category": "탕모찜",
-       "name": "포장 용기.",
-       "price": 500
-      }
-     ]
-    }
-   ],
-   "datt": [],
-   "replies": [],
-   "rc": 6,
-   "lr": "1785808462.251309",
-   "rfx": 3,
-   "status": "done",
-   "handler": "심성현",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785808114589989"
-  },
-  {
-   "ts": "1785807944.693239",
-   "date": "2026-08-04",
-   "time": "10:45",
-   "store": "도우를 아십니까 의정부역점",
-   "biz": "4770403597",
-   "pos": "토스포스",
-   "content": "추가/ 메뉴추가가 있어요\n추가변경\n토핑추가\n써비스 스파게티 0원\n써비스음료500m 0원\n써비스음료1.25 0원",
-   "special": "주무시 같이 주문할 수 있도록 만들어주세요.",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1785807950.061809",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785807944693239"
   }
  ],
  "ocr": {
