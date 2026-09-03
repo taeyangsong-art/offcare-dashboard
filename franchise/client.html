@@ -1190,7 +1190,7 @@ function mergeVisits(){
       branch: BrandMatch.branchOf(v.store || '', m.hit),
       biz   : String(v.biz || '').replace(/\D/g, ''),
       cat   : 'visit',
-      emp   : v.assignee || v.requester || '미지정',
+      emp   : v.assignee || '미지정',   /* 요청자로 대체하지 않는다 — 접수자 ≠ 방문 담당 */
       intake: 'unknown',
       status: v.status || 'done',
       req   : visitReqText(v),
@@ -1218,7 +1218,7 @@ function visitDetail(v){
     ['설치구분',  v.kind],
     ['방문일자',  v.visitDate],
     ['방문 회차', v.rounds > 1 ? v.rounds + '회차 (' + (v.roundDates || []).join(', ') + ')' : ''],
-    ['설치 담당', v.assignee],
+    ['담당자',    v.assignee],
     ['요청자',    v.requester],
     ['지역',      v.region],
     ['주소지',    v.addr],
