@@ -1,10 +1,10 @@
 /*
  * 방문설치 채널(#ishopcare_new_방문설치) 적재 — 자동 생성 파일
  * 직접 수정하지 마세요. scripts/fetch-visits.js 가 덮어씁니다.
- * 갱신: 2026-09-03 16:30 KST · 116건 (2026-07-01 이후)
+ * 갱신: 2026-09-03 16:34 KST · 116건 (2026-07-01 이후)
  */
 window.VISIT_DATA = {
-  updatedAt: '2026-09-03 16:30',
+  updatedAt: '2026-09-03 16:34',
   records: [
   {"id":"11366","date":"2026-07-01","time":"09:40","store":"(주)참치공방(종각본점)","biz":"2338800379","kind":"AS","status":"done","visitDate":"2026-07-01","region":"수도권","route":"온라인","addr":"서울특별시 종로구","van":"DAOU","equip":"dk9300 용지 끼임 점검","ship":"","delivery":"","requester":"","assignee":"이성철","rounds":0,"roundDates":[],"brand":"참치공방"},
   {"id":"11367","date":"2026-07-01","time":"09:45","store":"참치공방 시청지점","biz":"7368501084","kind":"AS","status":"done","visitDate":"2026-07-01","region":"수도권","route":"오프라인","addr":"서울특별시 중구","van":"DAOU","equip":"DK 9300","ship":"","delivery":"","requester":"","assignee":"이성철","rounds":4,"roundDates":["2025-04-22","2025-06-04","2026-05-12","2026-07-01","2025-04-22","2025-06-04","2026-05-12","2026-07-01"],"brand":"참치공방"},
@@ -34,7 +34,7 @@ window.VISIT_DATA = {
   {"id":"12007","date":"2026-07-15","time":"09:13","store":"주식회사 티피와이(보사노바 커피 로스터스)","biz":"5178501144","kind":"설치","status":"done","visitDate":"2026-07-16","region":"수도권","route":"오프라인","addr":"서울특별시 송파구","van":"KIS","equip":"포스기+프론트+CAT(KIS) +금전한함 소형 화이트","ship":"2026-07-09","delivery":"","requester":"","assignee":"김명석","rounds":0,"roundDates":[],"brand":"보사노바"},
   {"id":"12039","date":"2026-07-15","time":"14:33","store":"카페드롭탑 광주송정점","biz":"3752001463","kind":"설치","status":"done","visitDate":"2026-07-20","region":"지방","route":"오프라인","addr":"광주광역시 광산구","van":"KIS","equip":"대형키오스크 스탠드","ship":"2026-07-15","delivery":"","requester":"","assignee":"신우정보통신","rounds":0,"roundDates":[],"brand":"드롭탑"},
   {"id":"12042","date":"2026-07-15","time":"14:50","store":"드롭탑 강천산(광주)휴게소점","biz":"8608503013","kind":"설치","status":"done","visitDate":"2026-07-21","region":"지방","route":"오프라인","addr":"전북특별자치도 순창군","van":"KIS","equip":"아펙사 포스+듀얼모니터+CAT(KIS-1421)+트론트화이트+유프(CPP3000)블랙+금전함 대형 블랙+바코드스캐너(TSK-750)+대형키오스크 스탠드형(KIS멀티패드 포함)","ship":"2026-07-15","delivery":"","requester":"","assignee":"비젼포스","rounds":0,"roundDates":[],"brand":"드롭탑"},
-  {"id":"12053","date":"2026-07-15","time":"17:33","store":"로칼 은평점","biz":"7583901675","kind":"AS","status":"done","visitDate":"2026-07-17","region":"수도권","route":"오프라인","addr":"서울특별시 은평구","van":"KIS","equip":"주방프린터 케이블 연결 및 출력 설정, 포스기 점검","ship":"","delivery":"","requester":"","assignee":"","rounds":0,"roundDates":[],"brand":"로칼"},
+  {"id":"12053","date":"2026-07-15","time":"17:33","store":"로칼 은평점","biz":"7583901675","kind":"AS","status":"done","visitDate":"2026-07-17","region":"수도권","route":"오프라인","addr":"서울특별시 은평구","van":"KIS","equip":"주방프린터 케이블 연결 및 출력 설정, 포스기 점검","ship":"","delivery":"","requester":"","assignee":"공명현","rounds":0,"roundDates":[],"brand":"로칼"},
   {"id":"12150","date":"2026-07-20","time":"15:42","store":"스무치 창원명서점","biz":"1625900586","kind":"설치","status":"done","visitDate":"2026-07-23","region":"지방","route":"온라인","addr":"경상남도 창원시 의창구","van":"KOCES","equip":"포스 프론트 유선프린터 금전함","ship":"2026-07-20","delivery":"","requester":"","assignee":"페이닷","rounds":0,"roundDates":[],"brand":"스무치"},
   {"id":"12159","date":"2026-07-20","time":"16:52","store":"동동국밥 시흥장곡점","biz":"6492102512","kind":"설치","status":"done","visitDate":"2026-07-24","region":"수도권","route":"오프라인","addr":"경기도 시흥시","van":"NICE","equip":"포스 프론트 유선프린터 금전함","ship":"2026-07-20","delivery":"","requester":"","assignee":"경인시스템","rounds":0,"roundDates":[],"brand":"동동국밥"},
   {"id":"12166","date":"2026-07-21","time":"09:35","store":"재리스 토스트 내포신도시점","biz":"3602202498","kind":"AS","status":"done","visitDate":"2026-07-22","region":"지방","route":"온라인","addr":"충청남도 홍성군","van":"KIS","equip":"키오스크 멀티패드 떨어짐","ship":"","delivery":"","requester":"","assignee":"","rounds":0,"roundDates":[],"brand":"재리스토스트"},
