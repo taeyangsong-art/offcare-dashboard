@@ -1,10 +1,10 @@
 /*
  * 방문설치 채널(#ishopcare_new_방문설치) 적재 — 자동 생성 파일
  * 직접 수정하지 마세요. scripts/fetch-visits.js 가 덮어씁니다.
- * 갱신: 2026-09-03 14:11 KST · 116건 (2026-07-01 이후)
+ * 갱신: 2026-09-03 14:14 KST · 116건 (2026-07-01 이후)
  */
 window.VISIT_DATA = {
-  updatedAt: '2026-09-03 14:11',
+  updatedAt: '2026-09-03 14:14',
   records: [
   {"id":"11366","date":"2026-07-01","time":"09:40","store":"(주)참치공방(종각본점)","biz":"2338800379","kind":"AS","status":"done","visitDate":"2026-07-01","region":"수도권","route":"온라인","addr":"서울특별시 종로구","van":"DAOU","equip":"dk9300 용지 끼임 점검","ship":"","delivery":"","requester":"","assignee":"이성철","rounds":0,"roundDates":[],"brand":"참치공방"},
   {"id":"11367","date":"2026-07-01","time":"09:45","store":"참치공방 시청지점","biz":"7368501084","kind":"AS","status":"done","visitDate":"2026-07-01","region":"수도권","route":"오프라인","addr":"서울특별시 중구","van":"DAOU","equip":"DK 9300","ship":"","delivery":"","requester":"","assignee":"이성철","rounds":4,"roundDates":["2025-04-22","2025-06-04","2026-05-12","2026-07-01","2025-04-22","2025-06-04","2026-05-12","2026-07-01"],"brand":"참치공방"},
@@ -109,7 +109,7 @@ window.VISIT_DATA = {
   {"id":"13726","date":"2026-08-27","time":"14:09","store":"컴포즈커피 성수코리아IT점","biz":"5218102386","kind":"설치","status":"done","visitDate":"2026-08-27","region":"수도권","route":"오프라인","addr":"서울특별시 성동구","van":"KPN","equip":"태블릿 1EA(KDS용)","ship":"2026-08-27","delivery":"","requester":"","assignee":"김명석","rounds":4,"roundDates":["2026-08-05","2026-08-24","2026-08-25","2026-08-27","2026-08-05","2026-08-24","2026-08-25","2026-08-27"],"brand":"컴포즈커피"},
   {"id":"13743","date":"2026-08-27","time":"15:09","store":"강창구찹쌀진순대별내중앙점","biz":"2661702076","kind":"AS","status":"done","visitDate":"2026-08-28","region":"수도권","route":"오프라인","addr":"경기도 남양주시","van":"KIS","equip":"포스","ship":"","delivery":"","requester":"","assignee":"김명석","rounds":0,"roundDates":[],"brand":"강창구찹쌀진순대"},
   {"id":"13774","date":"2026-08-27","time":"17:41","store":"(주)참치공방","biz":"2338800379","kind":"설치","status":"done","visitDate":"2026-08-31","region":"수도권","route":"오프라인","addr":"서울특별시 종로구","van":"DAOU","equip":"프론트 , 보유중(아펙사 포스 / 제드 2ea, CAT 2)","ship":"2026-08-27","delivery":"","requester":"","assignee":"김명석","rounds":3,"roundDates":["2026-05-27","2026-07-01","2026-08-31","2026-05-27","2026-07-01","2026-08-31"],"brand":"참치공방"},
-  {"id":"13784","date":"2026-08-28","time":"09:44","store":"미친피자 관악점","biz":"6206100498","kind":"설치","status":"done","visitDate":"2026-08-31","region":"수도권","route":"오프라인","addr":"서울특별시 관악구","van":"KIS","equip":"자체 PC + 프론트 1EA","ship":"2026-08-27","delivery":"","requester":"","assignee":"","rounds":0,"roundDates":[],"brand":"미친피자"},
+  {"id":"13784","date":"2026-08-28","time":"09:44","store":"미친피자 관악점","biz":"6206100498","kind":"설치","status":"done","visitDate":"2026-08-31","region":"수도권","route":"오프라인","addr":"서울특별시 관악구","van":"KIS","equip":"자체 PC + 프론트 1EA","ship":"2026-08-27","delivery":"","requester":"","assignee":"디에스이엔씨","rounds":0,"roundDates":[],"brand":"미친피자"},
   {"id":"13795","date":"2026-08-28","time":"11:36","store":"김마리","biz":"5713201875","kind":"AS","status":"done","visitDate":"2026-08-28","region":"수도권","route":"오프라인","addr":"경기도 성남시 분당구","van":"KPN","equip":"키오스크 멀티패드 교체","ship":"","delivery":"","requester":"","assignee":"김주진","rounds":0,"roundDates":[],"brand":"김마리"},
   {"id":"13846","date":"2026-08-29","time":"14:32","store":"몰디브태닝(광교)","biz":"8762702173","kind":"설치","status":"done","visitDate":"2026-08-31","region":"지방","route":"오프라인","addr":"경기도 수원시 영통구","van":"NICE","equip":"포스(pc)+프론트+유프","ship":"","delivery":"","requester":"","assignee":"가나정보","rounds":0,"roundDates":[],"brand":"몰디브태닝"},
   {"id":"13856","date":"2026-08-30","time":"16:26","store":"강창구진순대(여주점)","biz":"1220428586","kind":"AS","status":"done","visitDate":"2026-09-01","region":"지방","route":"오프라인","addr":"경기도 여주시","van":"KPN","equip":"프린터","ship":"2026-08-31","delivery":"","requester":"","assignee":"예스아이엔티","rounds":0,"roundDates":[],"brand":"강창구찹쌀진순대"},
