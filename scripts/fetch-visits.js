@@ -35,10 +35,16 @@ const CHANNEL = process.env.VISIT_CHANNEL || 'C0B2XSJ08UA';   // ishopcare_new_�
 
 /* ── 파싱 (슬랙 없이도 단위 검증할 수 있게 순수 함수로 둔다) ── */
 
+/* 멘션이 <@U072VD9H342> 처럼 이름 없이 오는 경우가 있다.
+   users.list 로 만든 표를 여기에 꽂아 사람 이름으로 바꾼다(없으면 지운다 — 원시 ID는 노이즈). */
+let USER_MAP = {};
+function setUserMap(m){ USER_MAP = m || {}; }
+
 /* 슬랙 마크업을 사람이 읽는 형태로 */
 function unmark(s){
   return String(s == null ? '' : s)
     .replace(/<@[^>|]+\|([^>]+)>/g, '@$1')            // <@U1|홍길동> → @홍길동
+    .replace(/<@([A-Z0-9]+)>/g, (_, id) => USER_MAP[id] ? '@' + USER_MAP[id] : '')
     .replace(/<#[^>|]+\|([^>]+)>/g, '#$1')
     .replace(/<(https?:[^>|]+)\|([^>]+)>/g, '$2')     // 링크는 라벨만
     .replace(/<(https?:[^>|]+)>/g, '$1')
@@ -160,7 +166,7 @@ function toRecord(text, replies, todayYmd){
   };
 }
 
-module.exports = { parseFields, toRecord, normKind, parseThread, unmark, extractText };
+module.exports = { parseFields, toRecord, normKind, parseThread, unmark, extractText, setUserMap };
 
 /* ── 여기부터는 실행용 (슬랙 토큰 필요) ────────────────────── */
 if(require.main !== module) return;
@@ -179,6 +185,25 @@ async function slack(method, params){
   const j = await res.json().catch(() => ({}));
   if(!j.ok) throw new Error(method + ': ' + (j.error || 'unknown'));
   return j;
+}
+
+/* 멘션 ID → 이름. 한 번만 받아 캐시한다. 실패해도 적재는 계속(ID 는 지워짐) */
+async function loadUsers(){
+  const map = {};
+  let cursor = '', guard = 0;
+  try {
+    do {
+      const p = { limit: '200' };
+      if(cursor) p.cursor = cursor;
+      const j = await slack('users.list', p);
+      for(const u of (j.members || [])){
+        const pr = u.profile || {};
+        map[u.id] = pr.display_name || pr.real_name || u.real_name || u.name || '';
+      }
+      cursor = (j.response_metadata && j.response_metadata.next_cursor) || '';
+    } while(cursor && ++guard < 20);
+  } catch(e){ console.log('  (users.list 실패 — 멘션은 이름 대신 생략됩니다: ' + e.message + ')'); }
+  return map;
 }
 
 async function history(){
@@ -206,6 +231,7 @@ async function replies(ts){
 }
 
 (async () => {
+  setUserMap(await loadUsers());
   const msgs = await history();
   const recs = [];
   const seen = new Set();
