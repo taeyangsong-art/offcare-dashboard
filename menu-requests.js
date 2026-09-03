@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1527,
- "updatedAt": "2026-09-03 18:25",
+ "version": 1528,
+ "updatedAt": "2026-09-03 18:34",
  "days": 30,
  "items": [
   {
@@ -54716,30 +54716,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785836703707209"
-  },
-  {
-   "ts": "1785836057.973549",
-   "date": "2026-08-04",
-   "time": "18:34",
-   "store": "러프로스터스",
-   "biz": "6201155265",
-   "pos": "토스포스",
-   "content": "토스포스) 메뉴 수정 요청드립니다! (스레드 내 추가 전달주신 내용 바로 남기겠습니다)",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785834256497659\n------\n상품 터치 시, 옵션에서\n\n1. 블렌드 선택 _ RR1 / RR2 / 디카페인\n2. 온도 _ ICE / HOT",
-    "+\n아포가토는 별도로 옵션\n1. 맛 _ 바닐라 OR 녹차\n2. 원두선택 _ RR1 OR RR2 OR 디카페인\n3. 온도 _ only ice\n---\n아래 이미지는 상품별 블렌드/온도 옵션입니다"
-   ],
-   "rc": 5,
-   "lr": "1785844134.678029",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785836057973549"
   }
  ],
  "ocr": {
