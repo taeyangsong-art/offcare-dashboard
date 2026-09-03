@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1513,
- "updatedAt": "2026-09-03 16:22",
+ "version": 1514,
+ "updatedAt": "2026-09-03 16:46",
  "days": 30,
  "items": [
   {
@@ -71,7 +71,6 @@ window.MENU_REQUESTS = {
      "name": "Grey Modern Professional Price List - 2.",
      "fid": "F0BULCPPF4N",
      "from": "댓글",
-     "path": "menu-files/1788411180_450239-0.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -309,13 +308,13 @@ window.MENU_REQUESTS = {
        "name": "50만원권",
        "price": 500000
       }
-     ]
+     ],
+     "path": "menu-files/1788411180_450239-0.png"
     },
     {
      "name": "Grey Modern Professional Price List - 3.",
      "fid": "F0BULCSJ0TY",
      "from": "댓글",
-     "path": "menu-files/1788411180_450239-1.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -363,13 +362,14 @@ window.MENU_REQUESTS = {
        "name": "마렌영양제 듀얼 ( 투명 + 블랙 )",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1788411180_450239-1.png"
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1788412443.912599",
+   "rc": 3,
+   "lr": "1788421571.920229",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
