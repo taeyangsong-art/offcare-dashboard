@@ -3,10 +3,34 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1508,
- "updatedAt": "2026-09-03 15:56",
+ "version": 1509,
+ "updatedAt": "2026-09-03 16:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1788418781.148819",
+   "date": "2026-09-03",
+   "time": "15:59",
+   "store": "도담",
+   "biz": "3441100610",
+   "pos": "오케이포스",
+   "content": "오케이포스) 메뉴 수정 요청 >>",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "닭도리탕 45,000원",
+    "소면 품절 해제"
+   ],
+   "rc": 3,
+   "lr": "1788418807.160269",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788418781148819"
+  },
   {
    "ts": "1788418520.391139",
    "date": "2026-09-03",
@@ -23,8 +47,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "카테고리: 피자&치킨\n메뉴명: 순살 매운 슈프림 치킨\n금액: 25,900원\n\n카테고리: 피자&치킨\n메뉴명: 허니 갈릭 쉬림프 버블 씬피자\n금액: 26,900원"
    ],
-   "rc": 1,
-   "lr": "1788418524.386369",
+   "rc": 2,
+   "lr": "1788418599.200999",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -367,11 +391,11 @@ window.MENU_REQUESTS = {
     "메인 카테고리에 추가\n크리스피 치킨윙 / Crispy Chicken Wings / Хрустящие куриные крылышки — 19,000원",
     "추가한 메뉴가 가끔 주방 주문서로 잘 출력이 안된다고 하셔서 출력 될 수 있게끔 꼭 요청 주셨습니다..!\n\n항상 추가하고나면 출력이 안된다고 하셔서요. :꾸벅:\n\n(혹시 요청 드린 내용은 <#C09HRUSG4TX> 으로 올리는게 나을까요? )"
    ],
-   "rc": 3,
-   "lr": "1788412025.933449",
+   "rc": 4,
+   "lr": "1788418782.402619",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788410767938709"
   },
   {
