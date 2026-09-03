@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1535,
- "updatedAt": "2026-09-03 21:11",
+ "version": 1536,
+ "updatedAt": "2026-09-03 21:31",
  "days": 30,
  "items": [
   {
@@ -712,15 +712,300 @@ window.MENU_REQUESTS = {
        "price": 1500
       }
      ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BU9P1244X",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "에그마요 추가",
+       "price": 1500
+      },
+      {
+       "category": "",
+       "name": "흑미밥 추가",
+       "price": 1500
+      },
+      {
+       "category": "",
+       "name": "옥수수콘 한줌 추가",
+       "price": 900
+      },
+      {
+       "category": "",
+       "name": "생 브로콜리 추가(4pcs)",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "멕시칸 할라피뇨 (매콤) 추가",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "블랙 올리브 슬라이스 추가",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "멕시칸 또띠아 (12cm) 3pcs",
+       "price": 2500
+      },
+      {
+       "category": "",
+       "name": "삶은 계란 슬라이스 한알 추가",
+       "price": 1500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUR3WVC58",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "포케 소스 추가",
+       "name": "오리엔탈 소스 추가",
+       "price": 1000
+      },
+      {
+       "category": "포케 소스 추가",
+       "name": "스리라차마요 추가",
+       "price": 1000
+      },
+      {
+       "category": "포케 소스 추가",
+       "name": "바베큐소스 추가",
+       "price": 1500
+      },
+      {
+       "category": "포케 소스 추가",
+       "name": "멕시칸 치폴레 소스 추가",
+       "price": 1500
+      },
+      {
+       "category": "포케 소스 추가",
+       "name": "랜치 마요 소스 추가",
+       "price": 1500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUT28719P",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "[ 육회 추가 옵션 ]",
+       "name": "육회 곱빼기 ( 80g 추가 )",
+       "price": 6500
+      },
+      {
+       "category": "[ 육회 추가 옵션 ]",
+       "name": "육회 트리플 ( 160g 추가 )",
+       "price": 13000
+      },
+      {
+       "category": "[ 닭가슴살 추가 옵션 ]",
+       "name": "닭가슴살 곱빼기 ( 100g 추가 )",
+       "price": 3500
+      },
+      {
+       "category": "[ 닭가슴살 추가 옵션 ]",
+       "name": "닭가슴살 트리플 ( 200g 추가 )",
+       "price": 6500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUJSW7U75",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "[ 수비드 풀드포크 추가 옵션 ]",
+       "name": "풀드포크 곱빼기 ( 80g 추가 )",
+       "price": 4500
+      },
+      {
+       "category": "[ 수비드 풀드포크 추가 옵션 ]",
+       "name": "풀드포크 트리플 ( 160g 추가 )",
+       "price": 8500
+      },
+      {
+       "category": "[ 커스텀 ] 기본 포케 재료 제외 ( X )",
+       "name": "( 1/2 ) 양상추 반만 빼주세요 ( 1/2 )",
+       "price": 0
+      },
+      {
+       "category": "[ 커스텀 ] 기본 포케 재료 제외 ( X )",
+       "name": "( X ) 양상추 다 빼주세요 ( X )",
+       "price": 0
+      },
+      {
+       "category": "[ 커스텀 ] 기본 포케 재료 제외 ( X )",
+       "name": "( X ) 적채 빼주세요 ( X )",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUUQ0N5QU",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "[ 커스텀 ] 기본 포케 재료 제외 ( X )",
+       "name": "( 1/2 ) 양상추 반만 빼주세요 ( 1/2 )",
+       "price": 0
+      },
+      {
+       "category": "[ 커스텀 ] 기본 포케 재료 제외 ( X )",
+       "name": "( X ) 양상추 다 빼주세요 ( X )",
+       "price": 0
+      },
+      {
+       "category": "[ 커스텀 ] 기본 포케 재료 제외 ( X )",
+       "name": "( X ) 적채 빼주세요 ( X )",
+       "price": 0
+      },
+      {
+       "category": "[ 커스텀 ] 기본 포케 재료 제외 ( X )",
+       "name": "( X ) 오이빼주세요 ( X )",
+       "price": 0
+      },
+      {
+       "category": "[ 커스텀 ] 기본 포케 재료 제외 ( X )",
+       "name": "( X ) 병아리콩 빼주세요 ( X )",
+       "price": 0
+      },
+      {
+       "category": "[ 커스텀 ] 기본 포케 재료 제외 ( X )",
+       "name": "( X ) 궁채 빼주세요 ( X )",
+       "price": 0
+      },
+      {
+       "category": "[ 커스텀 ] 기본 포케 재료 제외 ( X )",
+       "name": "( X ) 양파후레이크 빼주세요 ( X )",
+       "price": 0
+      },
+      {
+       "category": "[ 커스텀 ] 기본 포케 재료 제외 ( X )",
+       "name": "( X ) 에그마요 빼주세요 ( X )",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BULQZ9KL5",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "[ 수제 리코타 치즈 추가 ]",
+       "name": "리코타치즈 한 스쿱 추가 1 +",
+       "price": 4300
+      },
+      {
+       "category": "[ 수제 리코타 치즈 추가 ]",
+       "name": "리코타치즈 두 스쿱 추가 2++",
+       "price": 7500
+      },
+      {
+       "category": "[ 인생두부 몽글이 흰 순두부옵션 ]",
+       "name": "따뜻하게 데워주세요",
+       "price": 0
+      },
+      {
+       "category": "[ 인생두부 몽글이 흰 순두부옵션 ]",
+       "name": "( L ) 순두부 큰그릇으로 변경",
+       "price": 3000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUUQ53A2G",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "[ 베이글 ] 디저트",
+       "name": "베이글 단품",
+       "price": 0
+      },
+      {
+       "category": "[ 베이글 ] 디저트",
+       "name": "베이글 + 크림치즈 추가",
+       "price": 1000
+      },
+      {
+       "category": "[ 베이글 ] 디저트",
+       "name": "베이글+수제리코타",
+       "price": 2000
+      },
+      {
+       "category": "[ 베이글 ] 디저트",
+       "name": "베이글+수제리코타+메이플",
+       "price": 3000
+      },
+      {
+       "category": "[ 치아바타 ] 디저트",
+       "name": "치아바타 단품",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C05FQ4BNC",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "[ 치아바타 ] 디저트",
+       "name": "치아바타 단품",
+       "price": 0
+      },
+      {
+       "category": "[ 치아바타 ] 디저트",
+       "name": "치아바타 + 크림치즈",
+       "price": 1000
+      },
+      {
+       "category": "[ 치아바타 ] 디저트",
+       "name": "치아바타+수제리코타",
+       "price": 2000
+      },
+      {
+       "category": "[ 치아바타 ] 디저트",
+       "name": "치아바타+수제리코타+메이플",
+       "price": 3000
+      },
+      {
+       "category": "[ 숙성 연어 추가 옵션 ]",
+       "name": "숙성 연어 곱빼기 ( 80g 추가 )",
+       "price": 6300
+      }
+     ]
     }
    ],
    "datt": [],
    "replies": [
-    "[옵션 보지 마시고 상품/금액만 등록]",
-    "[옵션만 등록]"
+    "[상품]",
+    "[옵션만 등록]",
+    "어떤 상품에 어떤 옵션을 연결 하실지는 대표님께서 하신다고 합니다.\n\n상품과 옵션만 등록 부탁드립니다."
    ],
-   "rc": 6,
-   "lr": "1788436796.909779",
+   "rc": 7,
+   "lr": "1788438613.349859",
    "rfx": 3,
    "status": "wait",
    "handler": null,
