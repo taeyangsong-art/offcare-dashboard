@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1526,
- "updatedAt": "2026-09-03 18:22",
+ "version": 1527,
+ "updatedAt": "2026-09-03 18:25",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BUS076BJ5",
      "from": "댓글",
-     "path": "menu-files/1788427218_297809-0.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -101,18 +100,20 @@ window.MENU_REQUESTS = {
        "name": "메리골드, 국화, 목련, 벚꽃, 유자, 자몽 ( hot / ice )",
        "price": 5500
       }
-     ]
+     ],
+     "path": "menu-files/1788427218_297809-0.png"
     }
    ],
    "datt": [],
    "replies": [
-    "카테고리명 : [코발토]  로 부탁드립니다!"
+    "카테고리명 : [코발토]  로 부탁드립니다!",
+    "규빈님 넘나 감사합니다... 초고속.."
    ],
-   "rc": 2,
-   "lr": "1788427242.981619",
+   "rc": 4,
+   "lr": "1788427515.455299",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788427218297809"
   },
   {
