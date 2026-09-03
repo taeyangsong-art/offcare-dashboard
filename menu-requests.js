@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1500,
- "updatedAt": "2026-09-03 13:45",
+ "version": 1501,
+ "updatedAt": "2026-09-03 13:49",
  "days": 30,
  "items": [
+  {
+   "ts": "1788410767.938709",
+   "date": "2026-09-03",
+   "time": "13:46",
+   "store": "부카리",
+   "biz": "7160802924",
+   "pos": "",
+   "content": "메뉴 추가 요청 드립니다. :감사합니다꾸벅:",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "메인 카테고리에 추가\n크리스피 치킨윙 / Crispy Chicken Wings / Хрустящие куриные крылышки — 19,000원"
+   ],
+   "rc": 2,
+   "lr": "1788410773.656409",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788410767938709"
+  },
   {
    "ts": "1788410577.934979",
    "date": "2026-09-03",
@@ -53835,29 +53858,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785822231001159"
-  },
-  {
-   "ts": "1785818803.350689",
-   "date": "2026-08-04",
-   "time": "13:46",
-   "store": "맥쓰(MEXX)세계치킨제기역점",
-   "biz": "3464601387",
-   "pos": "",
-   "content": "메뉴 수정 및 이미지 적용",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "이벤트 맥주,생맥주,소주 만들기"
-   ],
-   "rc": 4,
-   "lr": "1785818856.066169",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김동욱",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785818803350689"
   }
  ],
  "ocr": {
