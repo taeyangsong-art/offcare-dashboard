@@ -146,7 +146,12 @@ hosted = must(hosted,
 + "       캐시가 남으면 고객사가 옛 숫자를 보게 되므로 버전 쿼리를 붙인다. */\n"
 + "    if(MODE === 'contract'){ await loadScript('" + LEDGER_REL + "?v=' + Date.now()); buildFromClientData(); }",
   '원장 런타임 경로');
-hosted = stamp(hosted, '호스팅용', '원장: ' + LEDGER_REL + ' 를 런타임에 읽습니다.');
+/* 현장방문 원본도 한 단계 더 위에 있다 */
+hosted = must(hosted,
+  "    try { await loadScript('../visit-data.js'); mergeVisits(); } catch(e){}",
+  "    try { await loadScript('../../visit-data.js?v=' + Date.now()); mergeVisits(); } catch(e){}",
+  '현장방문 경로');
+hosted = stamp(hosted, '호스팅용', '원장: ' + LEDGER_REL + ' · 현장방문: ../../visit-data.js');
 const nH = verify(hosted, '호스팅용');
 
 /* ── 2) 단독 파일 ──────────────────────────────────────────
@@ -162,6 +167,17 @@ if(!HOSTED_ONLY){
     "    if(MODE === 'contract'){ await loadScript(REG.dataFile); buildFromClientData(); }",
     "    if(MODE === 'contract'){ buildFromClientData(); }   /* 원장 인라인됨 */",
     '원장 인라인');
+  /* 단독 파일은 외부 의존이 0 이어야 한다 — 현장방문도 인라인하고 로드를 없앤다.
+     아직 수집 전이라 파일이 없으면 그 부분만 비워둔다. */
+  const vPath = path.join(ROOT, 'visit-data.js');
+  const vInline = fs.existsSync(vPath)
+    ? '<script>/* ===== visit-data.js ===== */\n' + safe(read(vPath)) + '\n</script>\n'
+    : '';
+  single = must(single,
+    "    try { await loadScript('../visit-data.js'); mergeVisits(); } catch(e){}",
+    "    try { mergeVisits(); } catch(e){}   /* 현장방문 인라인됨 */",
+    '현장방문 인라인 전환');
+  if(vInline) single = must(single, '<script>/* ===== clients.js', vInline + '<script>/* ===== clients.js', '현장방문 인라인');
   single = stamp(single, '단독 파일', '원장까지 인라인된 스냅샷입니다.');
   nS = verify(single, '단독 파일');
 }

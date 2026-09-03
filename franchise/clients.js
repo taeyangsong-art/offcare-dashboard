@@ -50,13 +50,14 @@ window.FRANCHISE_CLIENTS = [
 /*
  * 카테고리 체계
  *  contract : 계약 고객사 전용 8종. 여기에 한 줄 추가하면 표 열·차트·보고서 행·엑셀 시트가 전부 따라 늘어남
- *  slack    : ../slack-data.js 가 실제로 기록하는 6종. 임의로 늘리면 안 됨(데이터에 없는 분류가 생김)
+ *  slack    : ../slack-data.js 6종 + 현장방문(visit-data.js 에서 합침).
+ *             그 밖으로 늘리면 안 됨(데이터에 없는 분류가 생김)
  * 특정 고객사만 다른 체계를 쓰려면 그 CLIENTS 블록에 cats: [...] 를 넣어 덮어쓸 수 있습니다.
  */
 window.FRANCHISE_TAXONOMY = {
   contract: [
     { key:'as',         name:'원격AS',         color:'#34c759' },
-    { key:'visit',      name:'방문AS',         color:'#ff3b30', onsite:true },
+    { key:'visit',      name:'현장방문',       color:'#ff3b30', onsite:true },
     { key:'inquiry',    name:'단순문의',       color:'#0071e3' },
     { key:'tax',        name:'세금계산서발급', color:'#af52de' },
     { key:'onboarding', name:'온보딩',         color:'#5e5ce6' },
@@ -67,6 +68,7 @@ window.FRANCHISE_TAXONOMY = {
   slack: [
     { key:'onboarding', name:'온보딩',   color:'#5e5ce6' },
     { key:'as',         name:'AS',       color:'#34c759' },
+    { key:'visit',      name:'현장방문', color:'#ff3b30', onsite:true },
     { key:'transfer',   name:'명의변경', color:'#ff9500' },
     { key:'menu',       name:'메뉴등록', color:'#00c7be' },
     { key:'delivery',   name:'배달',     color:'#0071e3' },

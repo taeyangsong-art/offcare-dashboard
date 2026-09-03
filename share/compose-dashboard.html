@@ -130,6 +130,13 @@
   :root[data-theme="dark"]{ --seq1:#0d366b; --seq2:#256abf; --seq3:#6da7ec; --seq4:#cde2fb;
          --seq1-ink:#dbe9fb; --seq2-ink:#ffffff; --seq3-ink:#10233d; --seq4-ink:#10233d; }
   .cal-wrap{display:flex; flex-wrap:wrap; justify-content:center; gap:20px 30px; margin-top:4px}
+  .vd-card{border:1px solid var(--line-soft); border-radius:12px; padding:12px 14px; margin-bottom:10px}
+  .vd-head{display:flex; align-items:center; gap:10px; margin-bottom:8px; font-size:14.5px}
+  .vd-head .vd-meta{color:var(--gray2); font-size:12.5px; font-weight:600; margin-left:auto}
+  .vd-tbl{width:100%; border-collapse:collapse; font-size:13px}
+  .vd-tbl th{width:88px; text-align:left; padding:4px 8px 4px 0; color:var(--gray);
+    font-weight:600; vertical-align:top; white-space:nowrap}
+  .vd-tbl td{padding:4px 0; color:var(--ink-soft); word-break:break-all}
   .as-brk{display:flex; flex-direction:column; gap:9px}
   .as-brk-row{display:flex; align-items:center; gap:12px; cursor:pointer;
     padding:5px 6px; border-radius:9px; transition:background .12s}
@@ -393,13 +400,14 @@ window.FRANCHISE_CLIENTS = [
 /*
  * 카테고리 체계
  *  contract : 계약 고객사 전용 8종. 여기에 한 줄 추가하면 표 열·차트·보고서 행·엑셀 시트가 전부 따라 늘어남
- *  slack    : ../slack-data.js 가 실제로 기록하는 6종. 임의로 늘리면 안 됨(데이터에 없는 분류가 생김)
+ *  slack    : ../slack-data.js 6종 + 현장방문(visit-data.js 에서 합침).
+ *             그 밖으로 늘리면 안 됨(데이터에 없는 분류가 생김)
  * 특정 고객사만 다른 체계를 쓰려면 그 CLIENTS 블록에 cats: [...] 를 넣어 덮어쓸 수 있습니다.
  */
 window.FRANCHISE_TAXONOMY = {
   contract: [
     { key:'as',         name:'원격AS',         color:'#34c759' },
-    { key:'visit',      name:'방문AS',         color:'#ff3b30', onsite:true },
+    { key:'visit',      name:'현장방문',       color:'#ff3b30', onsite:true },
     { key:'inquiry',    name:'단순문의',       color:'#0071e3' },
     { key:'tax',        name:'세금계산서발급', color:'#af52de' },
     { key:'onboarding', name:'온보딩',         color:'#5e5ce6' },
@@ -410,6 +418,7 @@ window.FRANCHISE_TAXONOMY = {
   slack: [
     { key:'onboarding', name:'온보딩',   color:'#5e5ce6' },
     { key:'as',         name:'AS',       color:'#34c759' },
+    { key:'visit',      name:'현장방문', color:'#ff3b30', onsite:true },
     { key:'transfer',   name:'명의변경', color:'#ff9500' },
     { key:'menu',       name:'메뉴등록', color:'#00c7be' },
     { key:'delivery',   name:'배달',     color:'#0071e3' },
@@ -1279,6 +1288,8 @@ function viewOverview(){
     + '<span class="hint">'+esc(asKeyLabel())+' 기준 · 요청내역+처리내역으로 분류 · 유형을 누르면 목록</span></div>'
     + asIssueBreakdown(rows)+'</div>';
 
+  h += visitKindBreakdown(rows);
+
   const agg = storeAgg(rows), mx = agg.length?agg[0].total:1;
   h += '<div class="grid2">'
     + '<div class="card"><div class="card-head"><h3>지점 TOP 10</h3><span class="hint">클릭하면 상세</span></div>'
@@ -1691,6 +1702,120 @@ function slugGuess(s){
 }
 
 /* ── 지점 상세 모달 ────────────────────────────────────────── */
+/* ── 현장방문 (visit-data.js) ───────────────────────────────
+   #ishopcare_new_방문설치 채널의 워크플로우 글을 상호명으로 브랜드를 갈라
+   각 브랜드의 '현장방문' 으로 합친다. 계약 고객사·슬랙 브랜드 모두 같다.
+   slack-data.js 에는 방문 분류가 없어서 이 파일이 유일한 출처다.
+   파일이 아직 없어도(수집 전) 대시보드는 그대로 동작해야 한다. */
+function mergeVisits(){
+  const VD = window.VISIT_DATA;
+  if(!VD || !Array.isArray(VD.records) || !VD.records.length) return 0;
+  if(!window.BrandMatch || !window.FRANCHISE_BRANDS) return 0;
+
+  const idx = BrandMatch.buildIndex(window.FRANCHISE_BRANDS);
+  const ex  = BrandMatch.buildExclude(window.FRANCHISE_EXCLUDE);
+  let n = 0;
+
+  VD.records.forEach(function(v){
+    if(ex.test(v.store, v.biz)) return;
+    const m = BrandMatch.matchBrand(idx, v.store || '');
+    if(!m || m.brand.name !== BRAND) return;
+    /* 관리 개시일 이전 건은 계약 대상이 아니다 (계약 고객사에만 해당) */
+    if(MODE === 'contract' && START_YM && ymOf(v.date) < START_YM) return;
+    REC.push({
+      date  : String(v.date).slice(0, 10),
+      time  : v.time || '',
+      store : v.store || '',
+      branch: BrandMatch.branchOf(v.store || '', m.hit),
+      biz   : String(v.biz || '').replace(/\D/g, ''),
+      cat   : 'visit',
+      emp   : v.assignee || v.requester || '미지정',
+      intake: 'unknown',
+      status: v.status || 'done',
+      req   : visitReqText(v),
+      note  : '',
+      visit : v,                       /* 워크플로우 원문 — 상세에서 펼쳐 보여준다 */
+    });
+    n++;
+  });
+  return n;
+}
+
+/* 목록/표에 한 줄로 뜨는 요약. 상세는 visitDetail() 이 따로 그린다 */
+function visitReqText(v){
+  const bits = ['[' + (v.kind || '기타') + ']'];
+  if(v.visitDate) bits.push('방문 ' + v.visitDate);
+  if(v.rounds > 1) bits.push(v.rounds + '회차');
+  if(v.equip)  bits.push(v.equip);
+  if(v.region) bits.push(v.region);
+  return bits.join(' · ');
+}
+
+/* 워크플로우 내용을 읽기 좋은 표로. 값이 없는 항목은 빼서 여백을 만들지 않는다 */
+function visitDetail(v){
+  const rows = [
+    ['설치구분',  v.kind],
+    ['방문일자',  v.visitDate],
+    ['방문 회차', v.rounds > 1 ? v.rounds + '회차 (' + (v.roundDates || []).join(', ') + ')' : ''],
+    ['설치 담당', v.assignee],
+    ['요청자',    v.requester],
+    ['지역',      v.region],
+    ['주소지',    v.addr],
+    ['판매경로',  v.route],
+    ['VAN',       v.van],
+    ['설치장비',  v.equip],
+    ['택배발송일', v.ship],
+    ['배달4사',   v.delivery],
+    ['사업자번호', v.biz],
+    ['요청 ID',   v.id],
+  ].filter(r => r[1] !== undefined && r[1] !== null && String(r[1]).trim() !== '');
+  return '<table class="vd-tbl"><tbody>'
+    + rows.map(r => '<tr><th>' + esc(r[0]) + '</th><td>' + esc(String(r[1])) + '</td></tr>').join('')
+    + '</tbody></table>';
+}
+
+/* 설치구분(설치·AS·기타) 분포 — 현장방문이 어떤 성격인지 한눈에 */
+const VISIT_KINDS = [
+  { key:'설치', color:'#5e5ce6', desc:'신규 오픈·장비 설치' },
+  { key:'AS',   color:'#ff3b30', desc:'장애 대응 방문' },
+  { key:'기타', color:'#8e8e93', desc:'그 외' },
+];
+function visitKindBreakdown(rows){
+  const vs = rows.filter(r => r.cat === 'visit' && r.visit);
+  if(!vs.length) return '';
+  const total = vs.length;
+  const counts = VISIT_KINDS.map(k => vs.filter(r => (r.visit.kind || '기타') === k.key).length);
+  const mx = Math.max.apply(null, counts);
+  const body = VISIT_KINDS.map(function(k, i){
+    const n = counts[i];
+    return '<div class="as-brk-row" data-visitkind="' + esc(k.key) + '" title="누르면 목록">'
+      + '<div class="as-brk-lab">' + esc(k.key) + '</div>'
+      + '<div class="as-brk-bar"><div class="as-brk-fill" style="width:'
+      + (mx ? Math.max(5, Math.round(n / mx * 100)) : 0) + '%;background:' + k.color + '"></div></div>'
+      + '<div class="as-brk-n"><b>' + n + '</b>건 · ' + Math.round(n / total * 100) + '%</div></div>';
+  }).join('');
+  return '<div class="card"><div class="card-head"><h3>🚗 현장방문 구분</h3>'
+    + '<span class="hint">방문설치 채널 · 구분을 누르면 상세</span></div>'
+    + '<div class="as-brk">' + body + '</div></div>';
+}
+
+/* 구분을 누르면 그 성격의 방문 건 목록 — 워크플로우 내용을 펼쳐 보여준다 */
+function drillVisitKind(kind){
+  const list = scopedRecs().filter(r => r.cat === 'visit' && r.visit && (r.visit.kind || '기타') === kind)
+    .sort((a, b) => (b.date + (b.time || '')).localeCompare(a.date + (a.time || '')));
+  const chips = '<span class="c">기간 <b>' + esc(scopeLabel()) + '</b></span>'
+    + '<span class="c">' + esc(kind) + ' <b>' + list.length + '</b>건</span>'
+    + '<span class="c">지점 <b>' + new Set(list.map(r => r.branch)).size + '</b>곳</span>';
+  const body = list.length
+    ? list.map(r => '<div class="vd-card">'
+        + '<div class="vd-head"><b>' + esc(r.branch) + '</b>'
+        + '<span class="vd-meta">요청 ' + esc(r.date) + (r.time ? ' ' + esc(r.time) : '') + '</span>'
+        + stChip(r.status) + '</div>'
+        + visitDetail(r.visit) + '</div>').join('')
+    : '<div class="empty">해당 건이 없습니다.</div>';
+  openDrill('🚗 현장방문 · ' + esc(kind), chips, body);
+}
+
 /* ── AS 유형별 ───────────────────────────────────────────────
    어떤 기기에서 문제가 났는지를 요청내역+처리내역의 키워드로 분류한다.
    원격파트 대시보드(index.html)의 규칙에서 출발했지만 프랜차이즈용으로 3종 + 기타로 줄였다.
@@ -1925,6 +2050,7 @@ function bindEvents(){
   document.querySelectorAll('.as-brk').forEach(function(w){
     w.addEventListener('click', function(e){
       const r = e.target.closest('.as-brk-row'); if(!r) return;
+      if(r.dataset.visitkind) { drillVisitKind(r.dataset.visitkind); return; }
       drillAsIssue(r.dataset.issue);
     });
   });
@@ -1990,6 +2116,8 @@ function fillClientSelect(){
   try{
     if(MODE === 'contract'){ buildFromClientData(); }   /* 원장 인라인됨 */
     else                   { await loadScript('../slack-data.js'); buildFromSlack(); }
+    /* 현장방문은 별도 파일에서 온다. 아직 수집 전이면 조용히 건너뛴다 */
+    try { mergeVisits(); } catch(e){}   /* 현장방문 인라인됨 */
   }catch(e){ LOAD_ERR = e.message; }
 
   if(LOAD_ERR){
