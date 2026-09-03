@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1536,
- "updatedAt": "2026-09-03 21:31",
+ "version": 1537,
+ "updatedAt": "2026-09-03 21:36",
  "days": 30,
  "items": [
   {
@@ -1022,14 +1022,22 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C05PTPCMN",
+     "from": "댓글",
+     "path": "menu-files/1788432444_235589-0.png",
+     "kind": "product_photo",
+     "menu": []
+    }
+   ],
    "datt": [],
    "replies": [
-    "카테고리: 신메뉴\n메뉴명: 멸치국수\n금액: 7,000원\n옵션: 곱빼기 1,500원 추가\n옵션2: 공기밥 1,500원 추가",
-    "순두부 게살 스프\n메뉴 삭제 요청 주셔서 추가 전달 드립니다."
+    "카테고리: 신메뉴\n메뉴명: 멸치국수\n금액: 7,000원\n옵션: 곱빼기 1,500원 추가\n옵션2: 공기밥 1,500원 추가"
    ],
    "rc": 3,
-   "lr": "1788435755.032559",
+   "lr": "1788438885.755219",
    "rfx": 3,
    "status": "wait",
    "handler": null,
