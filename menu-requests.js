@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1489,
- "updatedAt": "2026-09-03 11:13",
+ "version": 1490,
+ "updatedAt": "2026-09-03 11:18",
  "days": 30,
  "items": [
   {
@@ -184,8 +184,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1788401404.732389",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788401383383079"
   },
   {
@@ -495,7 +495,7 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1788401344.750859",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788401297490229"
   },
@@ -515,10 +515,10 @@ window.MENU_REQUESTS = {
    "replies": [
     "··· / 올데이크레페(ALL DAY CREPE) 운정점\n\n메뉴 그대로 https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788169062370749?thread_ts=···.726909&cid=C0AL2V3MM7U"
    ],
-   "rc": 3,
-   "lr": "1788401510.701749",
+   "rc": 4,
+   "lr": "1788401635.035159",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788399291107609"
   },
