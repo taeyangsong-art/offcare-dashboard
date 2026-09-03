@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1507,
- "updatedAt": "2026-09-03 15:52",
+ "version": 1508,
+ "updatedAt": "2026-09-03 15:56",
  "days": 30,
  "items": [
+  {
+   "ts": "1788418520.391139",
+   "date": "2026-09-03",
+   "time": "15:55",
+   "store": "쏘주 맥쭈",
+   "biz": "1921702310",
+   "pos": "오케이포스",
+   "content": "오케이포스 메뉴 등록 요청 드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "카테고리: 피자&치킨\n메뉴명: 순살 매운 슈프림 치킨\n금액: 25,900원\n\n카테고리: 피자&치킨\n메뉴명: 허니 갈릭 쉬림프 버블 씬피자\n금액: 26,900원"
+   ],
+   "rc": 1,
+   "lr": "1788418524.386369",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788418520391139"
+  },
   {
    "ts": "1788411180.450239",
    "date": "2026-09-03",
