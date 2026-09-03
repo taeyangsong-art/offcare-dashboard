@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1502,
- "updatedAt": "2026-09-03 13:53",
+ "version": 1503,
+ "updatedAt": "2026-09-03 14:07",
  "days": 30,
  "items": [
   {
@@ -42,10 +42,11 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [
-    "메인 카테고리에 추가\n크리스피 치킨윙 / Crispy Chicken Wings / Хрустящие куриные крылышки — 19,000원"
+    "메인 카테고리에 추가\n크리스피 치킨윙 / Crispy Chicken Wings / Хрустящие куриные крылышки — 19,000원",
+    "추가한 메뉴가 가끔 주방 주문서로 잘 출력이 안된다고 하셔서 출력 될 수 있게끔 꼭 요청 주셨습니다..!\n\n항상 추가하고나면 출력이 안된다고 하셔서요. :꾸벅:\n\n(혹시 요청 드린 내용은 <#C09HRUSG4TX> 으로 올리는게 나을까요? )"
    ],
-   "rc": 2,
-   "lr": "1788410773.656409",
+   "rc": 3,
+   "lr": "1788412025.933449",
    "rfx": 3,
    "status": "wait",
    "handler": null,
