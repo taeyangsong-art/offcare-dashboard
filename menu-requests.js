@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1533,
- "updatedAt": "2026-09-03 20:56",
+ "version": 1534,
+ "updatedAt": "2026-09-03 21:02",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BUJS45DEF",
      "from": "댓글",
-     "path": "menu-files/1788436396_507689-0.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -41,13 +40,13 @@ window.MENU_REQUESTS = {
        "name": "[프라임] 인생 볏짚불백 포케",
        "price": 14500
       }
-     ]
+     ],
+     "path": "menu-files/1788436396_507689-0.png"
     },
     {
      "name": "image.png",
      "fid": "F0BUUP7RBUL",
      "from": "댓글",
-     "path": "menu-files/1788436396_507689-1.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -65,13 +64,13 @@ window.MENU_REQUESTS = {
        "name": "[BEST] 인생 클래식 닭가슴살 포케",
        "price": 13800
       }
-     ]
+     ],
+     "path": "menu-files/1788436396_507689-1.png"
     },
     {
      "name": "image.png",
      "fid": "F0BUT1J3G2D",
      "from": "댓글",
-     "path": "menu-files/1788436396_507689-2.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -89,13 +88,13 @@ window.MENU_REQUESTS = {
        "name": "[For비건] 시장표 사장님 손두부 포케",
        "price": 13800
       }
-     ]
+     ],
+     "path": "menu-files/1788436396_507689-2.png"
     },
     {
      "name": "image.png",
      "fid": "F0BUR38SEFL",
      "from": "댓글",
-     "path": "menu-files/1788436396_507689-3.png",
      "kind": "other",
      "menu": [
       {
@@ -113,13 +112,13 @@ window.MENU_REQUESTS = {
        "name": "2인) 베이직 닭살커플 세트(1베이글+1음료 포함)",
        "price": 29000
       }
-     ]
+     ],
+     "path": "menu-files/1788436396_507689-3.png"
     },
     {
      "name": "image.png",
      "fid": "F0BUR396JE6",
      "from": "댓글",
-     "path": "menu-files/1788436396_507689-4.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -132,13 +131,13 @@ window.MENU_REQUESTS = {
        "name": "[프리미엄] 수비드 그릴 닭다리 포케",
        "price": 15800
       }
-     ]
+     ],
+     "path": "menu-files/1788436396_507689-4.png"
     },
     {
      "name": "image.png",
      "fid": "F0BULQ62NAH",
      "from": "댓글",
-     "path": "menu-files/1788436396_507689-5.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -156,7 +155,8 @@ window.MENU_REQUESTS = {
        "name": "[ 한끼완성 ] 인생 한돈떡갈비 도시락 포케",
        "price": 15900
       }
-     ]
+     ],
+     "path": "menu-files/1788436396_507689-5.png"
     },
     {
      "name": "image.png",
@@ -259,14 +259,436 @@ window.MENU_REQUESTS = {
        "price": 6500
       }
      ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BU9NM27K9",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "프리미엄 연어 큐브 100G",
+       "price": 12800
+      },
+      {
+       "category": "",
+       "name": "[100G] 미니 육회",
+       "price": 11600
+      },
+      {
+       "category": "[인생포케's 스페셜 디저트]",
+       "name": "토코메 (시그니처 디저트)",
+       "price": 6900
+      },
+      {
+       "category": "[인생포케's 스페셜 디저트]",
+       "name": "플레인 베이글 (1pcs)",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C05F2S35W",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "[인생포케's 스페셜 디저트]",
+       "name": "베이글 단품",
+       "price": 3500
+      },
+      {
+       "category": "[인생포케's 스페셜 디저트]",
+       "name": "베이글+크림치즈",
+       "price": 4500
+      },
+      {
+       "category": "[인생포케's 스페셜 디저트]",
+       "name": "베이글+수제리코타",
+       "price": 5500
+      },
+      {
+       "category": "[인생포케's 스페셜 디저트]",
+       "name": "베이글+수제리코타+메이플",
+       "price": 6500
+      },
+      {
+       "category": "[인생포케's 스페셜 디저트]",
+       "name": "치아바타 단품",
+       "price": 4500
+      },
+      {
+       "category": "[인생포케's 스페셜 디저트]",
+       "name": "치아바타+크림치즈",
+       "price": 5500
+      },
+      {
+       "category": "[인생포케's 스페셜 디저트]",
+       "name": "치아바타+수제리코타",
+       "price": 6500
+      },
+      {
+       "category": "[인생포케's 스페셜 디저트]",
+       "name": "치아바타+수제리코타+메이플",
+       "price": 7500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUR3HN6MQ",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "[인생포케 소스 추가]",
+       "name": "[인생포케] 오리엔탈 소스",
+       "price": 1000
+      },
+      {
+       "category": "[인생포케 소스 추가]",
+       "name": "[인생포케] 스리라차마요 소스",
+       "price": 1000
+      },
+      {
+       "category": "[인생포케 소스 추가]",
+       "name": "[두부소스] 참기름간장 소스",
+       "price": 1000
+      },
+      {
+       "category": "[인생포케 소스 추가]",
+       "name": "[인생포케] 바베큐소스",
+       "price": 1000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUT1XJ1JM",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "[인생포케 소스 추가]",
+       "name": "[더매콤한] 멕시칸 치폴레 소스",
+       "price": 1500
+      },
+      {
+       "category": "[인생포케 소스 추가]",
+       "name": "[드레싱엔] 랜치 마요 소스",
+       "price": 1500
+      },
+      {
+       "category": "[당 ZERO 음료]",
+       "name": "[자몽] 제로 애사비 자몽소다 350ml",
+       "price": 3000
+      },
+      {
+       "category": "[당 ZERO 음료]",
+       "name": "[애플] 제로 애사비 오리지널 소다 500ml",
+       "price": 3500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BULQGBJ21",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "[당 ZERO 음료]",
+       "name": "[콜라] 제로 클리어 소다 350ML",
+       "price": 3000
+      },
+      {
+       "category": "[당 ZERO 음료]",
+       "name": "[ 아이스티 ] 제로 복숭아 아이스티 500ML",
+       "price": 3500
+      },
+      {
+       "category": "[당 ZERO 음료]",
+       "name": "[ 레몬탄산수 ] 트레비 무라벨 탄산수 350ML",
+       "price": 2500
+      },
+      {
+       "category": "[한그릇메뉴]",
+       "name": "[한그릇세트]구운명란포케&작은컵 흰순두부 도시락",
+       "price": 15000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUJSKM37D",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "[인생 파스타] PREMIUM PASTA",
+       "name": "[단품] 명란품은 아보카도 파스타 단품",
+       "price": 14900
+      },
+      {
+       "category": "[인생 파스타] PREMIUM PASTA",
+       "name": "[SET] 명란품은 아보카도 파스타 세트 (빵+음료)",
+       "price": 19000
+      },
+      {
+       "category": "[인생 파스타] PREMIUM PASTA",
+       "name": "[스모키] 불향에 빠진 연어 아보카도 파스타 단품",
+       "price": 17900
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUUPPEKPW",
+     "from": "댓글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "[인생 파스타] PREMIUM PASTA",
+       "name": "[스모키] 불향에 빠진 연어 아보카도 파스타 단품",
+       "price": 17900
+      },
+      {
+       "category": "[인생 파스타] PREMIUM PASTA",
+       "name": "[파스타SET]갈릭통통새우 파스타 세트(빵+음료포함)",
+       "price": 17900
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUT2420JD",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "[ 탄수화물 ] 양 조절",
+       "name": "[150g 기본] 쌀+흑미밥(263kcal)",
+       "price": 0
+      },
+      {
+       "category": "[ 탄수화물 ] 양 조절",
+       "name": "[ 100g으로 변경 ] 쌀+흑미밥 (181kcal)",
+       "price": 0
+      },
+      {
+       "category": "[ 탄수화물 ] 양 조절",
+       "name": "[ 50g으로 변경 ] 쌀+흑미밥(98kcal)",
+       "price": 0
+      },
+      {
+       "category": "[ 탄수화물 ] 양 조절",
+       "name": "( X ) [밥은 빼주세요] (0kcal) (X)",
+       "price": 0
+      },
+      {
+       "category": "[ 탄수화물 ] 양 조절",
+       "name": "[ 밥대신 ] 파스타면 변경 (120G)",
+       "price": 1500
+      },
+      {
+       "category": "[ 탄수화물 ] 양 조절",
+       "name": "[ 밥+면 ] 흑미밥(100G) + 파스타면(120G)",
+       "price": 2500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BU9NY6A8P",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "[ 밥대신 ] 파스타면 변경 (120G)",
+       "price": 1500
+      },
+      {
+       "category": "",
+       "name": "[ 밥+면 ] 흑미밥(100G) + 파스타면(120G)",
+       "price": 2500
+      },
+      {
+       "category": "[ 간장불백 옵션 추가 ]",
+       "name": "간장불백 ( 80g 추가 )",
+       "price": 4500
+      },
+      {
+       "category": "[ 간장불백 옵션 추가 ]",
+       "name": "간장불백 ( 160g 추가 )",
+       "price": 8500
+      },
+      {
+       "category": "[ 메인 토핑 추가 ]",
+       "name": "닭가슴살 추가 (100g)",
+       "price": 4000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C05FDTDHN",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "[ 메인 토핑 추가 ]",
+       "name": "닭가슴살 추가 (100g)",
+       "price": 4000
+      },
+      {
+       "category": "[ 메인 토핑 추가 ]",
+       "name": "육회 추가 ( 80g )",
+       "price": 6500
+      },
+      {
+       "category": "[ 메인 토핑 추가 ]",
+       "name": "생연어 80G 추가",
+       "price": 6000
+      },
+      {
+       "category": "[ 메인 토핑 추가 ]",
+       "name": "숙성 연어 80G",
+       "price": 6300
+      },
+      {
+       "category": "[ 메인 토핑 추가 ]",
+       "name": "풀드포크( BBQ소스 버무림 80g ) 추가",
+       "price": 4500
+      },
+      {
+       "category": "[ 메인 토핑 추가 ]",
+       "name": "볏집불백 80g 추가",
+       "price": 4500
+      },
+      {
+       "category": "[ 메인 토핑 추가 ]",
+       "name": "두부 8pcs 추가",
+       "price": 2500
+      },
+      {
+       "category": "[ 메인 토핑 추가 ]",
+       "name": "두부16pcs 추가",
+       "price": 4800
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUP66PZLN",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "구운 명란 1알 추가",
+       "price": 2500
+      },
+      {
+       "category": "",
+       "name": "구운 명란 2알 추가",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "한돈 떡갈비 1개 추가",
+       "price": 5800
+      },
+      {
+       "category": "",
+       "name": "크리스피 텐더치킨 1pcs 추가",
+       "price": 2800
+      },
+      {
+       "category": "",
+       "name": "크리스피 텐더 치킨 2pcs 추가",
+       "price": 4800
+      },
+      {
+       "category": "",
+       "name": "[미니] 작은 흰 순두부 (100%국산콩) 추가",
+       "price": 3500
+      },
+      {
+       "category": "",
+       "name": "갈릭버터 통통새우 2pcs 추가",
+       "price": 3500
+      },
+      {
+       "category": "",
+       "name": "갈릭버터 통통새우 4pcs 추가",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "존슨빌소세지 1pcs 추가",
+       "price": 2900
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUT261KPB",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "서브 토핑 추가",
+       "name": "오이 한 줌 추가",
+       "price": 900
+      },
+      {
+       "category": "서브 토핑 추가",
+       "name": "궁채 한 줌 추가",
+       "price": 1000
+      },
+      {
+       "category": "서브 토핑 추가",
+       "name": "병아리콩 한 줌 추가",
+       "price": 900
+      },
+      {
+       "category": "서브 토핑 추가",
+       "name": "양파 후레이크 한 줌 추가",
+       "price": 900
+      },
+      {
+       "category": "서브 토핑 추가",
+       "name": "방울토마토 (2개) 추가",
+       "price": 900
+      },
+      {
+       "category": "서브 토핑 추가",
+       "name": "방울토마토 (4개) 추가",
+       "price": 1500
+      },
+      {
+       "category": "서브 토핑 추가",
+       "name": "생아보카도 3조각 추가",
+       "price": 2000
+      },
+      {
+       "category": "서브 토핑 추가",
+       "name": "에그마요 추가",
+       "price": 1500
+      }
+     ]
     }
    ],
    "datt": [],
    "replies": [
-    "[상품]"
+    "[옵션 보지 마시고 상품/금액만 등록]",
+    "[옵션만 등록]"
    ],
-   "rc": 2,
-   "lr": "1788436510.997509",
+   "rc": 6,
+   "lr": "1788436796.909779",
    "rfx": 3,
    "status": "wait",
    "handler": null,
