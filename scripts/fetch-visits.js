@@ -360,6 +360,13 @@ ${body}
     console.log('진단  → 길이가 0 이면 본문을 못 읽은 것, 길면 "상호명:" 형식이 다른 것');
   }
 
+  /* 상태·이모지 요약은 파일이 안 바뀌어도 항상 남긴다.
+     '변경 없음' 뒤에 두면 정작 왜 상태가 안 바뀌었는지 확인할 길이 없다. */
+  const st = {}; recs.forEach(r => st[r.status] = (st[r.status] || 0) + 1);
+  const em = Object.entries(diag.emoji).sort((a,b)=>b[1]-a[1]).slice(0,20).map(x=>x[0]+' '+x[1]).join(' · ');
+  console.log('상태  ' + JSON.stringify(st));
+  console.log('이모지 ' + (em || '(리액션이 하나도 없음)') + '   ← 완료로 칠 것이 빠졌으면 DONE_EMOJI 에 추가');
+
   if(prev && NOSTAMP(prev) === NOSTAMP(out)){
     console.log('변경  없음 — 파일 유지 (' + recs.length + '건)');
     return;
@@ -373,9 +380,5 @@ ${body}
   console.log('브랜드 ' + Object.keys(brands).length + '개 — ' + top);
   console.log('제외  형식 불일치 ' + skipped + '건 · 스레드 조회 ' + replyCalls + '회'
     + ' · 담당자 확인 ' + recs.filter(r => r.assignee).length + '건');
-  const st = {}; recs.forEach(r => st[r.status] = (st[r.status] || 0) + 1);
-  const em = Object.entries(diag.emoji).sort((a,b)=>b[1]-a[1]).slice(0,12).map(x=>x[0]+' '+x[1]).join(' · ');
-  console.log('상태  ' + JSON.stringify(st));
-  console.log('이모지 ' + (em || '(없음)') + '   ← 완료로 칠 것이 빠졌으면 DONE_EMOJI 에 추가');
   console.log('생성  ' + path.relative(ROOT, OUT) + ' (' + Math.round(out.length / 1024) + ' KB)');
 })().catch(e => { console.error('실패:', e.message); process.exit(1); });
