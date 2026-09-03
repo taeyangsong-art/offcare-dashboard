@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1523,
- "updatedAt": "2026-09-03 18:10",
+ "version": 1524,
+ "updatedAt": "2026-09-03 18:13",
  "days": 30,
  "items": [
   {
@@ -23,10 +23,10 @@ window.MENU_REQUESTS = {
    "replies": [
     "유플 매장\n\n메인메뉴에 소곱창전골 18900원\n\n• 전표는 주방만 출력되게끔 요청 주셨습니다.\n• 키오스크에도 추가 필요합니다."
    ],
-   "rc": 2,
-   "lr": "1788426546.995759",
+   "rc": 4,
+   "lr": "1788426648.774919",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788426517226429"
   },
