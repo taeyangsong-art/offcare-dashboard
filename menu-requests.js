@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1512,
- "updatedAt": "2026-09-03 16:21",
+ "version": 1513,
+ "updatedAt": "2026-09-03 16:22",
  "days": 30,
  "items": [
   {
@@ -54141,29 +54141,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785833950993479"
-  },
-  {
-   "ts": "1785828109.181089",
-   "date": "2026-08-04",
-   "time": "16:21",
-   "store": "",
-   "biz": "7380503688",
-   "pos": "토스포스",
-   "content": "* 안녕하세요, 813국수입니다.\n 메뉴등록에서 지속적인 에러가 발생하여, 메일로 첨부드립니다.\n 사업자 번호 ··· / 토스포스\n 전화번호 : ···\n \n \n 점심 메뉴\n 01.온국수 9,000원\n 02.온국수 세트 : 11,000원\n 03.냉국수 10,000원\n 04.냉국수 세트:12,000원\n 05.비빔국수 : 9,500원\n 06.비빔국수 세트 : 11,000원\n (국수종류 곱배기 : 1,000원 추가)\n 07.비빔밥 : 11,000원\n 08.소고기국밥 : 12,000원\n 09.찐만두: 8,000\n:link: [메일 열기](<https://mail.google.com/mail/u/0/#inbox/19fcba4d11c385b5>)",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "찐만두(고기)\n찐만두(김치)\n\n수정 완료"
-   ],
-   "rc": 3,
-   "lr": "1785831958.513189",
-   "rfx": 3,
-   "status": "done",
-   "handler": "심성현",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785828109181089"
   }
  ],
  "ocr": {
