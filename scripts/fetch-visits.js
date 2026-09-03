@@ -101,12 +101,15 @@ function normKind(v){
 function parseThread(replies){
   let assignee = '', rounds = 0, roundDates = [];
   for(const r of (replies || [])){
-    const t = unmark(r.text || '');
-    const a = t.match(/설치\s*담당\s*배정\s*:?\s*(.*)/);
+    /* 댓글도 blocks 로 오는 경우가 있어 본문 추출을 똑같이 거친다 */
+    const t = unmark(extractText(r));
+    /* '설치 담당 배정 : -> 공명현' · '담당배정: 공명현' 등 표기 흔들림을 함께 받는다 */
+    const a = t.match(/(?:설치\s*)?담당\s*(?:자|배정)\s*(?:배정)?\s*[:：]?\s*([^\n]*)/);
     if(a){
       /* '이전 -> 새사람' 형태면 화살표 뒤가 최종 담당자 */
-      const v = a[1].split('->').pop().replace(/\s*by\s+.*$/i, '').trim();
-      if(v) assignee = v;
+      const v = a[1].split(/->|→/).pop()
+        .replace(/\s*by\s+.*$/i, '').replace(/^[\s:：-]+/, '').trim();
+      if(v && v.length <= 20) assignee = v;
     }
     for(const m of t.matchAll(/(\d{4}-\d{2}-\d{2})\s*\[(\d+)\s*회차\]/g)){
       roundDates.push(m[1]);
@@ -192,7 +195,7 @@ async function history(){
 
 /* 스레드는 담당자·회차 때문에 읽는다. 실패해도 본체는 살린다 */
 let replyCalls = 0;
-const MAX_REPLIES = +(process.env.VISIT_MAX_REPLIES || 400);
+const MAX_REPLIES = +(process.env.VISIT_MAX_REPLIES || 600);   /* 프랜차이즈 건만 조회하므로 넉넉하다 */
 async function replies(ts){
   if(replyCalls >= MAX_REPLIES) return [];
   replyCalls++;
@@ -225,14 +228,50 @@ async function replies(ts){
     const text = extractText(m);
     diag.textLens.push(text.length);
     if(!/상호명\s*:/.test(unmark(text))){ skipped++; continue; }
-    const th = m.thread_ts && m.reply_count ? await replies(m.thread_ts) : [];
-    const r = toRecord(text, th, TODAY);
+    const r = toRecord(text, [], TODAY);        /* 스레드는 아래에서 따로 붙인다 */
     if(!r){ skipped++; continue; }
     /* 같은 요청이 여러 번 올라오면 ID 로 한 건으로 본다 */
     const key = r.id || (r.store + '|' + r.date + '|' + r.time);
     if(seen.has(key)) continue;
     seen.add(key);
+    r._ts = m.thread_ts || m.ts;
+    r._hasThread = !!(m.reply_count || m.thread_ts);
     recs.push(r);
+  }
+
+  /* ── 프랜차이즈 매장만 남긴다 ────────────────────────────
+     이 파일을 읽는 건 프랜차이즈 대시보드뿐이다. 전 건을 담으면 1MB 가
+     넘어 고객사가 페이지를 열 때마다 받아야 하고, 스레드도 2,600번 넘게
+     조회해 상한에 걸린다. 브랜드 판별은 대시보드와 같은 모듈을 쓴다. */
+  const vm2 = require('vm');
+  const sb = { window: {}, console: console };
+  sb.window.window = sb.window;
+  vm2.createContext(sb);
+  for(const f of ['brands.js', 'brand-match.js']){
+    vm2.runInContext(fs.readFileSync(path.join(ROOT, 'franchise', f), 'utf8'), sb, { filename: f });
+  }
+  const BM = sb.window.BrandMatch;
+  const bidx = BM.buildIndex(sb.window.FRANCHISE_BRANDS);
+  const bex  = BM.buildExclude(sb.window.FRANCHISE_EXCLUDE);
+
+  const all = recs.length;
+  const kept = recs.filter(r => {
+    if(bex.test(r.store, r.biz)) return false;
+    const m = BM.matchBrand(bidx, r.store || '');
+    if(!m) return false;
+    r.brand = m.brand.name;                    /* 어느 브랜드로 갔는지 파일에 남긴다 */
+    return true;
+  });
+  recs.length = 0; recs.push(...kept);
+
+  /* 남은 건만 스레드를 읽는다 — 담당자·방문 회차가 여기 있다 */
+  for(const r of recs){
+    if(!r._hasThread) { delete r._ts; delete r._hasThread; continue; }
+    const th = await replies(r._ts);
+    const t = parseThread(th);
+    if(t.assignee) r.assignee = t.assignee;
+    if(t.rounds)   { r.rounds = t.rounds; r.roundDates = t.roundDates; }
+    delete r._ts; delete r._hasThread;
   }
 
   recs.sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time));
@@ -276,7 +315,13 @@ ${body}
     return;
   }
   fs.writeFileSync(OUT, out, 'utf8');
-  console.log('적재  ' + recs.length + '건  ' + JSON.stringify(byKind));
-  console.log('제외  형식 불일치 ' + skipped + '건 · 스레드 조회 ' + replyCalls + '회');
-  console.log('생성  ' + path.relative(ROOT, OUT));
+  const brands = {};
+  recs.forEach(r => brands[r.brand] = (brands[r.brand] || 0) + 1);
+  const top = Object.entries(brands).sort((a, b) => b[1] - a[1]).slice(0, 6)
+    .map(x => x[0] + ' ' + x[1]).join(' · ');
+  console.log('적재  ' + recs.length + '건 (방문요청 ' + all + '건 중 프랜차이즈 매장)  ' + JSON.stringify(byKind));
+  console.log('브랜드 ' + Object.keys(brands).length + '개 — ' + top);
+  console.log('제외  형식 불일치 ' + skipped + '건 · 스레드 조회 ' + replyCalls + '회'
+    + ' · 담당자 확인 ' + recs.filter(r => r.assignee).length + '건');
+  console.log('생성  ' + path.relative(ROOT, OUT) + ' (' + Math.round(out.length / 1024) + ' KB)');
 })().catch(e => { console.error('실패:', e.message); process.exit(1); });
