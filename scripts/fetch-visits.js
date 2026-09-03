@@ -45,6 +45,30 @@ function unmark(s){
     .replace(/[*`]/g, '');
 }
 
+/* 메시지 본문 뽑기.
+   슬랙 워크플로우 글은 본문이 text 가 아니라 blocks(rich_text/section) 나
+   attachments 에 들어온다. 셋 다 훑어서 나오는 텍스트를 전부 잇는다. */
+function extractText(m){
+  const out = [];
+  const walk = (n) => {
+    if(n == null) return;
+    if(typeof n === 'string'){ out.push(n); return; }
+    if(Array.isArray(n)){ n.forEach(walk); return; }
+    if(typeof n !== 'object') return;
+    /* 텍스트를 담는 필드만 골라 내려간다 (user/ts 같은 값이 섞이지 않게) */
+    if(typeof n.text === 'string') out.push(n.text);
+    else if(n.text) walk(n.text);
+    ['elements', 'fields', 'blocks', 'attachments'].forEach(k => walk(n[k]));
+    if(typeof n.fallback === 'string') out.push(n.fallback);
+    if(typeof n.pretext === 'string')  out.push(n.pretext);
+    if(typeof n.title === 'string')    out.push(n.title);
+    if(typeof n.value === 'string')    out.push(n.value);
+  };
+  walk({ text: m.text, blocks: m.blocks, attachments: m.attachments });
+  /* 같은 문구가 text 와 blocks 에 중복으로 오는 경우가 흔하다 */
+  return [...new Set(out.map(s => String(s).trim()).filter(Boolean))].join('\n');
+}
+
 /* '키: 값' 줄을 모아 객체로. 값 안의 콜론(18:54)이 깨지지 않도록 첫 콜론만 자른다 */
 function parseFields(text){
   const out = {};
@@ -133,7 +157,7 @@ function toRecord(text, replies, todayYmd){
   };
 }
 
-module.exports = { parseFields, toRecord, normKind, parseThread, unmark };
+module.exports = { parseFields, toRecord, normKind, parseThread, unmark, extractText };
 
 /* ── 여기부터는 실행용 (슬랙 토큰 필요) ────────────────────── */
 if(require.main !== module) return;
@@ -184,9 +208,22 @@ async function replies(ts){
   const seen = new Set();
   let skipped = 0;
 
+  /* 진단용 — 0건이 나왔을 때 원인을 좁히기 위한 '구조' 정보만 모은다.
+     저장소가 public 이라 Actions 로그도 공개된다. 상호명·사업자번호 같은
+     내용은 절대 찍지 않는다. */
+  const diag = { subtypes: {}, containers: {}, blockTypes: {}, textLens: [] };
+  const NOISE = ['channel_join', 'channel_leave', 'channel_topic', 'channel_purpose', 'channel_name'];
+
   for(const m of msgs){
-    if(m.subtype && m.subtype !== 'bot_message') continue;
-    const text = m.text || (m.attachments || []).map(a => a.text || '').join('\n');
+    if(NOISE.includes(m.subtype)) continue;
+    diag.subtypes[m.subtype || '(none)'] = (diag.subtypes[m.subtype || '(none)'] || 0) + 1;
+    if(m.text)        diag.containers.text = (diag.containers.text || 0) + 1;
+    if(m.blocks)      diag.containers.blocks = (diag.containers.blocks || 0) + 1;
+    if(m.attachments) diag.containers.attachments = (diag.containers.attachments || 0) + 1;
+    (m.blocks || []).forEach(bl => diag.blockTypes[bl.type] = (diag.blockTypes[bl.type] || 0) + 1);
+
+    const text = extractText(m);
+    diag.textLens.push(text.length);
     if(!/상호명\s*:/.test(unmark(text))){ skipped++; continue; }
     const th = m.thread_ts && m.reply_count ? await replies(m.thread_ts) : [];
     const r = toRecord(text, th, TODAY);
@@ -223,6 +260,16 @@ ${body}
   const prev = fs.existsSync(OUT) ? fs.readFileSync(OUT, 'utf8') : '';
   const byKind = {};
   recs.forEach(r => byKind[r.kind] = (byKind[r.kind] || 0) + 1);
+
+  /* 한 건도 못 건졌으면 왜인지 구조만 남긴다 (내용은 찍지 않는다) */
+  if(!recs.length){
+    const lens = diag.textLens.sort((a, b) => a - b);
+    console.log('진단  메시지 ' + msgs.length + '건 · subtype ' + JSON.stringify(diag.subtypes));
+    console.log('진단  본문 위치 ' + JSON.stringify(diag.containers) + ' · block종류 ' + JSON.stringify(diag.blockTypes));
+    console.log('진단  추출 길이 min/중앙/max = '
+      + (lens[0] || 0) + '/' + (lens[Math.floor(lens.length / 2)] || 0) + '/' + (lens[lens.length - 1] || 0));
+    console.log('진단  → 길이가 0 이면 본문을 못 읽은 것, 길면 "상호명:" 형식이 다른 것');
+  }
 
   if(prev && NOSTAMP(prev) === NOSTAMP(out)){
     console.log('변경  없음 — 파일 유지 (' + recs.length + '건)');
