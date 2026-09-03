@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1529,
- "updatedAt": "2026-09-03 18:45",
+ "version": 1530,
+ "updatedAt": "2026-09-03 19:50",
  "days": 30,
  "items": [
+  {
+   "ts": "1788432444.235589",
+   "date": "2026-09-03",
+   "time": "19:47",
+   "store": "집밥",
+   "biz": "1304800813",
+   "pos": "퍼스트포스",
+   "content": "• 메뉴 등록 요청 드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "카테고리: 신메뉴\n메뉴명: 멸치국수\n금액: 7,000원\n옵션: 곱빼기 1,500원 추가\n옵션2: 공기밥 1,500원 추가"
+   ],
+   "rc": 2,
+   "lr": "1788432505.096249",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788432444235589"
+  },
   {
    "ts": "1788427218.297809",
    "date": "2026-09-03",
