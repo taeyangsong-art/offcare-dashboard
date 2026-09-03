@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1528,
- "updatedAt": "2026-09-03 18:34",
+ "version": 1529,
+ "updatedAt": "2026-09-03 18:45",
  "days": 30,
  "items": [
   {
@@ -54693,29 +54693,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785888297483889"
-  },
-  {
-   "ts": "1785836703.707209",
-   "date": "2026-08-04",
-   "time": "18:45",
-   "store": "살롱드비키",
-   "biz": "2092792875",
-   "pos": "기타",
-   "content": "추가/세트/커플세트(고르곤,노가리) 33000원,빠네세트(빠네,노가리) 33000원  피자세트(페페로니,노가리) 33000원   친구세트(페퍼,고르곤) 56000원\n노가리(단품),10000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "메뉴등록 완료"
-   ],
-   "rc": 2,
-   "lr": "1785844728.489179",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785836703707209"
   }
  ],
  "ocr": {
