@@ -23,6 +23,9 @@
 <title>원격파트 대시보드 · iShopCare</title>
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
+<!-- 한글 본문용 웹폰트(Pretendard) — Windows 기본 폰트(맑은 고딕)는 작은 글씨가 흐려 가독성이 떨어진다 -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
 <style>
   :root{
     --ink:#1d1d1f; --ink-soft:#424245; --gray:#6e6e73; --gray2:#86868b;
@@ -78,7 +81,7 @@
   html{-webkit-text-size-adjust:100%}
   body{
     font-family:-apple-system,BlinkMacSystemFont,"SF Pro KR","Apple SD Gothic Neo",
-      "Pretendard","Segoe UI",Roboto,sans-serif;
+      "Pretendard Variable",Pretendard,"Segoe UI",Roboto,sans-serif;
     background:var(--surface); color:var(--ink);
     -webkit-font-smoothing:antialiased; line-height:1.45;
     display:flex; min-height:100vh;
@@ -1006,56 +1009,105 @@
   .spark i.hi{background:var(--blue)}
 
   /* ===== Duty calendar ===== */
-  .cal-toolbar{display:flex; align-items:center; gap:14px; margin-bottom:20px}
-  .cal-toolbar .mtitle{font-size:22px; font-weight:700; letter-spacing:-.02em; min-width:150px}
+  .cal-toolbar{display:flex; align-items:center; gap:12px; margin-bottom:16px}
+  .cal-toolbar .mtitle{font-size:24px; font-weight:700; letter-spacing:-.03em; min-width:160px}
   .navround{width:38px; height:38px; border-radius:50%; border:1px solid var(--line); background:var(--canvas);
-    font-size:17px; cursor:pointer; color:var(--ink); display:inline-flex; align-items:center; justify-content:center}
+    font-size:17px; cursor:pointer; color:var(--ink); display:inline-flex; align-items:center; justify-content:center;
+    transition:background .15s, transform .1s}
   .navround:hover{background:var(--surface)}
-  .cal-grid{display:grid; grid-template-columns:repeat(7,1fr); gap:8px}
-  .dow{font-size:12px; font-weight:700; text-align:center; padding:6px 0; color:var(--gray)}
+  .navround:active{transform:scale(.94)}
+
+  /* 오늘/내일 당직 — 달력을 훑기 전에 '지금 누가 당직인지' 한 줄로 */
+  .duty-hero{background:var(--canvas); border:1px solid var(--line-soft); border-radius:var(--radius);
+    padding:16px 18px; margin-bottom:14px; display:flex; align-items:center; gap:18px; flex-wrap:wrap}
+  .dh-head{flex:0 0 auto; min-width:118px}
+  .dh-kicker{font-size:11px; font-weight:700; letter-spacing:.08em; color:var(--blue)}
+  .dh-date{font-size:19px; font-weight:700; letter-spacing:-.03em; margin-top:2px; line-height:1.2}
+  .dh-holi{font-size:11.5px; font-weight:700; color:var(--red); margin-top:3px}
+  .dh-grid{flex:1 1 420px; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:8px}
+  .dh-item{display:flex; align-items:center; gap:9px; padding:9px 11px; border-radius:14px;
+    background:var(--surface); min-width:0}
+  .dh-ico{font-size:16px; line-height:1; flex:0 0 auto}
+  .dh-txt{min-width:0}
+  .dh-lab{font-size:10.5px; font-weight:700; letter-spacing:.03em; color:var(--gray)}
+  .dh-name{font-size:17px; font-weight:700; letter-spacing:-.03em; color:var(--ink); line-height:1.25;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .dh-name.none{color:var(--muted); font-weight:600; font-size:15px}
+  .dh-next{flex:1 1 100%; font-size:12.5px; color:var(--gray); border-top:1px solid var(--line-soft);
+    padding-top:11px; margin-top:2px}
+  .dh-next b{color:var(--ink-soft); font-weight:700}
+  .dh-next .none{color:var(--muted); font-weight:600}
+
+  /* minmax(0,1fr) — 셀 내용(이름)이 길어도 7칸이 화면 밖으로 밀려나지 않게 */
+  .cal-grid{display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:7px}
+  .dow{font-size:12.5px; font-weight:700; letter-spacing:.03em; text-align:center; padding:2px 0 8px; color:var(--gray)}
   .dow.s-sat{color:var(--sat)} .dow.s-sun{color:var(--sun)}
-  .daycell{background:var(--canvas); border:1px solid var(--line-soft); border-radius:14px; min-height:150px;
-    padding:9px; display:flex; flex-direction:column; gap:6px}
-  .daycell.empty{background:transparent; border:none}
-  .daycell.today{border:2px solid var(--blue); box-shadow:0 0 0 3px var(--blue-soft)}
+  .daycell{background:var(--canvas); border:1px solid var(--line-soft); border-radius:16px; min-height:120px;
+    padding:8px 8px 9px; display:flex; flex-direction:column; gap:3px; transition:border-color .15s, box-shadow .15s}
+  .daycell:hover{border-color:var(--line)}
+  .daycell.empty{background:transparent; border:none; min-height:0}
+  .daycell.today{border-color:var(--blue); box-shadow:0 0 0 3px var(--blue-soft)}
   .daycell.holi{background:var(--red-soft)}
-  .dnum{font-size:16px; font-weight:800; display:flex; align-items:center; gap:5px}
+  .dnum{font-size:14px; font-weight:700; display:flex; align-items:center; gap:5px; margin-bottom:1px}
   .dnum.s-sat{color:var(--sat)} .dnum.s-sun{color:var(--sun)}
+  /* 날짜 숫자 — 오늘은 파란 배지로 한눈에 */
+  .dn-n{display:inline-flex; align-items:center; justify-content:center; min-width:25px; height:25px;
+    border-radius:9px; font-size:15px; font-weight:700; letter-spacing:-.02em; font-variant-numeric:tabular-nums}
+  .dnum.is-today .dn-n{background:var(--blue); color:#fff}
   .holi-tag{font-size:10px; font-weight:700; color:var(--red); background:var(--canvas); padding:1px 6px;
     border-radius:6px; border:1px solid var(--red-soft)}
   .duty-slot{display:flex; align-items:center; gap:6px}
-  .slot-tag{font-size:10px; font-weight:800; letter-spacing:.02em; padding:3px 6px; border-radius:6px;
-    flex:0 0 auto; width:38px; text-align:center}
-  .slot-tag.day{background:#fff3cd; color:#946200}
-  .slot-tag.aft{background:#d9edff; color:#0060c0}
-  .slot-tag.nit{background:#e4e0ff; color:#4b45c0}
-  .slot-tag.inst{background:#d6f5e3; color:#1a7d47}
-  .slot-field{flex:1; min-width:0; font-size:12.5px; padding:5px 7px; border:1px solid transparent;
-    border-radius:7px; background:var(--surface); cursor:text; color:var(--ink); font-family:inherit;
-    min-height:27px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
-  .slot-field:hover{background:var(--surface2); border-color:var(--line-soft)}
+  .duty-slot.off{opacity:.5; transition:opacity .15s}
+  .duty-slot.off:hover, .daycell:hover .duty-slot.off{opacity:1}
+  .slot-tag{font-size:10px; font-weight:700; letter-spacing:0; line-height:1.4; padding:3px 0; border-radius:6px;
+    flex:0 0 auto; width:34px; text-align:center}
+  .slot-tag.day{background:#ffefc2; color:#7a4f00}
+  .slot-tag.aft{background:#d5e8ff; color:#00509e}
+  .slot-tag.nit{background:#e0dbff; color:#3f38b5}
+  .slot-tag.inst{background:#c9f0da; color:#0d6437}
+  .duty-slot.off .slot-tag{background:var(--surface); color:var(--muted)}
+  /* 이름 = 이 화면의 주인공. 굵고 진하게, 배경 없이 */
+  .slot-field{flex:1; min-width:0; font-size:14px; font-weight:700; letter-spacing:-.02em; color:var(--ink);
+    padding:2px 6px; border:1px solid transparent; border-radius:8px; background:transparent; cursor:text;
+    font-family:inherit; min-height:25px; line-height:21px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .duty-slot.off .slot-field{min-height:21px; line-height:17px}
+  .slot-field:hover{background:var(--surface); border-color:var(--line-soft)}
   /* 대시보드에서 고쳐 시트 값을 덮은 칸 — 어느 값이 어디서 왔는지 구분되게 */
-  .slot-field.ovr{background:#fff7e6; border-color:#f0c36d; font-weight:600}
+  .slot-field.ovr{background:#fff8e5; border-color:#f0d69b}
   .slot-field.ovr:hover{background:#fff2d6}
   .ovr-undo{flex:0 0 auto; border:none; background:transparent; cursor:pointer; font-size:12px;
     color:var(--gray2); padding:0 3px; line-height:1}
   .ovr-undo:hover{color:var(--ink)}
-  .slot-field:empty::before{content:"이름 입력"; color:var(--gray2)}
+  .slot-field:empty::before{content:""}
+  .daycell:hover .slot-field:empty::before, .slot-field:focus:empty::before{content:"+"; color:var(--muted); font-weight:600; font-size:13px}
   .slot-field:focus{outline:none; border-color:var(--blue); background:var(--canvas); box-shadow:0 0 0 3px var(--blue-soft);
     white-space:normal}
+  .duty-slot.off .slot-field:focus{opacity:1}
+  /* 다크 모드 — 파스텔 태그·노란 덮어쓰기 칸은 톤을 낮춰야 눈이 편하다 */
+  :root[data-theme="dark"] .slot-tag.day{background:rgba(255,159,10,.20); color:#ffca7a}
+  :root[data-theme="dark"] .slot-tag.aft{background:rgba(10,132,255,.20); color:#7db8ff}
+  :root[data-theme="dark"] .slot-tag.nit{background:rgba(139,136,255,.22); color:#b6b3ff}
+  :root[data-theme="dark"] .slot-tag.inst{background:rgba(48,209,88,.18); color:#6fe093}
+  :root[data-theme="dark"] .duty-slot.off .slot-tag{background:var(--surface); color:var(--muted)}
+  :root[data-theme="dark"] .slot-field.ovr{background:rgba(255,159,10,.16); border-color:rgba(255,159,10,.42); color:#ffd699}
+  :root[data-theme="dark"] .slot-field.ovr:hover{background:rgba(255,159,10,.24)}
+  :root[data-theme="dark"] .holi-tag{background:transparent}
   /* 날짜 메모 — 날짜를 클릭하면 팝업(행사·교육·특이사항 등) */
-  .dnum.memo-open{cursor:pointer; border-radius:7px; padding:1px 3px; margin:-1px -3px; transition:.15s}
+  .dnum.memo-open{cursor:pointer; border-radius:9px; padding:1px 3px; margin:-1px -3px; transition:.15s}
   .dnum.memo-open:hover{background:var(--surface)}
   .memo-btn{margin-left:auto; width:21px; height:21px; border-radius:6px; border:none; cursor:pointer;
-    background:var(--surface); color:var(--gray); font-size:11px; line-height:1;
+    background:transparent; color:var(--muted); font-size:11px; line-height:1;
     display:inline-flex; align-items:center; justify-content:center; transition:.15s}
+  .daycell:hover .memo-btn{background:var(--surface); color:var(--gray)}
   .memo-btn:hover{background:var(--blue); color:#fff}
   .memo-btn.on{background:#fff3d6; color:#b45309}
-  .memo-chip{margin-top:2px; font-size:12px; font-weight:600; line-height:1.45; color:#8a5a00;
-    background:#fffbe8; border:1px solid #f0e0a8; border-radius:9px; padding:6px 8px; cursor:pointer;
-    white-space:pre-wrap; display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical;
+  .memo-chip{margin-top:3px; font-size:11.5px; font-weight:600; line-height:1.4; color:#8a5a00;
+    background:#fffbe8; border:1px solid #f0e0a8; border-radius:9px; padding:5px 7px; cursor:pointer;
+    white-space:pre-wrap; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;
     overflow:hidden; transition:.15s}
   .memo-chip:hover{background:#fff5cf; border-color:#e5cf88}
+  :root[data-theme="dark"] .memo-chip{background:rgba(255,159,10,.13); border-color:rgba(255,159,10,.32); color:#f0c88a}
+  :root[data-theme="dark"] .memo-btn.on{background:rgba(255,159,10,.20); color:#ffca7a}
   .memo-ta{width:100%; font-family:inherit; font-size:14px; line-height:1.6; padding:11px 13px;
     border:1px solid var(--line); border-radius:12px; background:var(--surface); color:var(--ink); resize:vertical}
   .memo-ta:focus{outline:none; border-color:var(--blue); background:var(--canvas); box-shadow:0 0 0 3px var(--blue-soft)}
@@ -1236,6 +1288,28 @@
     .grid2{grid-template-columns:1fr}
     .cal-grid{gap:4px}
     .daycell{min-height:auto; padding:6px}
+    /* 당직 달력: 좁은 화면에선 오늘 요약을 2열로, 칩·이름을 한 단계 작게 */
+    .duty-hero{padding:14px; gap:12px}
+    .dh-grid{flex-basis:100%; grid-template-columns:repeat(2,minmax(0,1fr))}
+    .dh-next{padding-top:9px}
+    .slot-tag{width:29px; font-size:9.5px}
+    .slot-field{font-size:13px; padding:2px 4px}
+    .dn-n{min-width:22px; height:22px; font-size:13.5px}
+  }
+  /* 폰 화면: 7칸 달력이 가로로 넘치지 않게 — 빈 근무는 감추고 이름은 태그 아래로 */
+  @media (max-width:640px){
+    .duty-hero{padding:13px}
+    .dh-name{font-size:16px}
+    .daycell{min-height:70px; padding:6px 5px; gap:2px}
+    .dnum{font-size:12.5px; gap:3px}
+    .memo-btn{width:18px; height:18px}
+    .duty-slot{flex-wrap:wrap; gap:2px}
+    .duty-slot.off{display:none}
+    .slot-tag{width:auto; padding:1px 5px; font-size:9px}
+    .slot-field{flex:1 0 100%; font-size:12.5px; min-height:18px; line-height:16px; padding:1px 3px;
+      white-space:normal; overflow-wrap:anywhere}
+    .memo-chip{font-size:10.5px; padding:4px 5px; -webkit-line-clamp:2}
+    .legend{gap:10px; font-size:11.5px}
   }
 </style>
 </head>
@@ -1707,32 +1781,19 @@ function renderShareChangelog(){
     </div>`;
   markChangelogSeen();
 }
-function saveDutyOverride(key, name){ if(name) DUTYOVER[key]=name; else delete DUTYOVER[key]; save(LS_DUTYOVER, DUTYOVER); pushPatch({dutyOver:{[key]:DUTYOVER[key]||''}}); renderShare(); }   // 삭제는 ''(묘비) — null이면 키 제거→타 브라우저 복원으로 부활
 function dutyPersonAt(key, mapVal){ return DUTYOVER[key] || mapVal || ''; }
-// ── 당번 '맞교환' — 한쪽만 바꾸면 그 사람이 두 번 당번이 되므로, 상대 회의도 함께 교환 ──
-// 예) 9일 김규빈 → 송태양으로 바꾸면, 원래 송태양이 맡던 16일은 김규빈이 이어받음.
+// ── 당번 이름 바꾸기 — 고른 사람으로 이 회의 당번만 교체 (다른 날짜/회의는 건드리지 않음) ──
 function setDutyOne(key, name, dmap){
   if(name && name!==dmap[key]) DUTYOVER[key]=name;   // 자동 순번과 같아지면 override를 지워 '순번 자동' 상태로 복귀
   else delete DUTYOVER[key];
 }
-function swapDutyOverride(key, newPerson){
-  const dmap=dutyMap(), cur=dutyPersonAt(key, dmap[key]);
-  if(!newPerson || newPerson===cur){ renderShare(); return; }
-  // 바꿔 넣을 사람이 이미 맡고 있는 '다음 회의'를 찾아 상대로 지정 (오늘 이후, 날짜순 · 지난 회의는 건드리지 않음)
-  const todayS=ymd(today());
-  let mate=null;
-  for(const m of meetingDutyList()){
-    if(m.date<todayS) continue;
-    const k=m.date+'|'+m.time+'|'+m.title;
-    if(k!==key && dutyPersonAt(k, dmap[k])===newPerson){ mate={key:k, date:m.date, title:m.title}; break; }
-  }
+function setDutyOverride(key, newPerson){
+  const dmap=dutyMap();
+  if(newPerson===dutyPersonAt(key, dmap[key])){ renderShare(); return; }
   setDutyOne(key, newPerson, dmap);
-  if(mate) setDutyOne(mate.key, cur, dmap);   // 맞교환
   save(LS_DUTYOVER, DUTYOVER);
-  const patch={[key]:DUTYOVER[key]||''}; if(mate) patch[mate.key]=DUTYOVER[mate.key]||'';
-  pushPatch({dutyOver:patch});
+  pushPatch({dutyOver:{[key]:DUTYOVER[key]||''}});
   renderShare();
-  if(mate) alert(`🔁 맞교환 완료\n· ${fmtShort(key.split('|')[0])} → ${newPerson}\n· ${fmtShort(mate.date)} → ${cur}`);
 }
 /* ===== 🕙 10시 출근 로테이션 (주 단위 · 월요일 표시) ===== */
 // 배정은 '그 주 월요일 날짜'만의 순수 함수 → 누가 보든 동일. 수동 교체는 TENOVER로 덮어씀.
@@ -1783,7 +1844,7 @@ function pickTen(ds, name){
 // 회의 키(날짜|시간|제목)에 따옴표가 섞여도 안전하게 onclick으로 넘기기 위한 인덱스 테이블
 let DUTYKEYS=[];
 function dutyKeyIdx(k){ const i=DUTYKEYS.indexOf(k); return i>=0?i:(DUTYKEYS.push(k)-1); }
-function swapDutyByIdx(i, name){ swapDutyOverride(DUTYKEYS[i], name); }
+function setDutyByIdx(i, name){ setDutyOverride(DUTYKEYS[i], name); }
 // 🏠 달력에서 근무당번 이름 클릭 → 직원 목록 팝업에서 바로 교체
 function openDutyPicker(i){
   const key=DUTYKEYS[i]; if(!key) return;
@@ -1794,13 +1855,13 @@ function openDutyPicker(i){
     <div class="detail-head"><h3>🏠 근무당번 지정</h3><button class="detail-x" onclick="document.getElementById('dutyPickModal').remove()">✕</button></div>
     <div class="dp-meta">${fmtShort(date)} · ${escapeHtml(title||'회의')}${cur?` · 현재 <b>${escapeHtml(cur)}</b>`:''}</div>
     <div class="dp-list">${EMPLOYEES.map(e=>`<button class="dp-item ${e===cur?'on':''}" onclick="pickDuty(${i},'${escapeHtml(e)}')">${escapeHtml(e)}${e===cur?' ✓':''}</button>`).join('')}</div>
-    <div class="dp-note">선택하면 그 사람이 맡던 다음 회의와 <b>맞교환</b>됩니다 (같은 사람이 두 번 당번이 되지 않게)</div>
+    <div class="dp-note">고른 사람으로 <b>이 회의 당번만</b> 바뀝니다 (다른 날짜는 그대로)</div>
     ${DUTYOVER[key]?`<button class="dp-auto" onclick="pickDuty(${i},'')">↺ 순번 자동으로 되돌리기</button>`:''}
   </div>`;
 }
 function pickDuty(i, name){
   const el=document.getElementById('dutyPickModal'); if(el) el.remove();
-  if(name) swapDutyByIdx(i, name); else saveDutyOverride(DUTYKEYS[i], '');
+  setDutyByIdx(i, name||'');
 }
 let VOCEDIT= load(LS_VOCEDIT, {}); // { "date|storeId|time": { industry, reasonCat, note, status, emp, doneAt } } — VOC 수기 보정
 let ADJUST = load(LS_ADJUST, {});  // { "date|담당자|카테고리": { n, by, at } } — 관리자 처리건수 보정
@@ -6396,6 +6457,41 @@ function resetVocPeriod(){ viewMode='today'; selDate=ymd(today()); rangeStart=ym
 function onInput(emp, val){ setCount(activeCat, selDate, emp, Math.max(0, parseInt(val)||0)); renderStats(); }
 
 /* ================= Duty page ================= */
+// 근무 구분(키 · 라벨 · 아이콘) — 달력 · 범례 · 오늘 요약이 같은 정의를 쓴다
+const DUTY_SLOTS=[['day','주간','☀️'],['aft','오후','🌇'],['nit','야간','🌙'],['inst','행사','🎪']];
+const DOW_KR=['일','월','화','수','목','금','토'];
+// 달력을 훑기 전에 “오늘 누가 당직인지”부터 보여준다 (내일은 한 줄 요약)
+// 오늘 당직이 비어 있으면(평일 등) 가장 가까운 당직일을 대신 보여준다
+function dutyNextDutyDate(){
+  for(let i=1;i<=90;i++){ const ds=ymd(addDays(today(),i)); if(Object.keys(dutyOf(ds)).length) return ds; }
+  return "";
+}
+function dutyDowLabel(d){ return `${d.getMonth()+1}월 ${d.getDate()}일 (${DOW_KR[d.getDay()]})`; }
+// 달력을 훑기 전에 “누가 당직인지”부터 보여준다
+function dutyHeroHTML(){
+  const t=today(), tds=ymd(t), rToday=dutyOf(tds);
+  const hasToday=Object.keys(rToday).length>0;
+  const ds=hasToday?tds:dutyNextDutyDate();
+  const d=ds?parseYmd(ds):t, r=ds?dutyOf(ds):{};
+  const items=DUTY_SLOTS.map(([k,lab,ico])=>`<div class="dh-item"><span class="dh-ico">${ico}</span><div class="dh-txt"><div class="dh-lab">${lab}</div><div class="dh-name${r[k]?'':' none'}">${r[k]?escapeHtml(r[k]):'미지정'}</div></div></div>`).join("");
+  let sub;
+  if(hasToday){
+    const nt=addDays(t,1), nr=dutyOf(ymd(nt));
+    const next=DUTY_SLOTS.map(([k,lab])=>`${lab} ${nr[k]?`<b>${escapeHtml(nr[k])}</b>`:'<span class="none">미지정</span>'}`).join(" · ");
+    sub=`내일 ${dutyDowLabel(nt)} · ${next}`;
+  }else if(ds){
+    sub=`오늘 ${dutyDowLabel(t)}은 지정된 당직이 없습니다 · 가장 가까운 당직일을 보여드려요`;
+  }else{
+    sub=`앞으로 90일 안에 지정된 당직이 없습니다`;
+  }
+  return `<div class="duty-hero">
+    <div class="dh-head"><div class="dh-kicker">${hasToday?"TODAY":"NEXT"}</div>
+      <div class="dh-date">${dutyDowLabel(d)}</div>
+      ${HOLIDAYS[ds]?`<div class="dh-holi">${escapeHtml(HOLIDAYS[ds])}</div>`:""}</div>
+    <div class="dh-grid">${items}</div>
+    <div class="dh-next">${sub}</div>
+  </div>`;
+}
 function renderDuty(){
   const y=dutyMonth.getFullYear(), m=dutyMonth.getMonth();
   const first=new Date(y,m,1), lastDate=new Date(y,m+1,0).getDate();
@@ -6415,7 +6511,7 @@ function renderDuty(){
     const numCls = isSun?"s-sun":isSat?"s-sat":"";
     const memo=dutyMemoText(ds);
     return `<div class="daycell ${ds===todayStr?'today':''} ${holi?'holi':''}">
-      <div class="dnum memo-open ${numCls}" title="클릭 → 이 날짜 메모" onclick="openDutyMemo('${ds}')">${d}${holi?`<span class="holi-tag">${holi}</span>`:''}
+      <div class="dnum memo-open ${numCls} ${ds===todayStr?'is-today':''}" title="클릭 → 이 날짜 메모" onclick="openDutyMemo('${ds}')"><span class="dn-n">${d}</span>${holi?`<span class="holi-tag">${holi}</span>`:''}
         <button class="memo-btn ${memo?'on':''}" title="${memo?'메모 보기·수정':'메모 추가'}" onclick="event.stopPropagation();openDutyMemo('${ds}')">📝</button></div>
       ${slot("day","주간",ds,rec.day)}
       ${slot("aft","오후",ds,rec.aft)}
@@ -6440,6 +6536,7 @@ function renderDuty(){
       </div>
     </div>
 
+    ${dutyHeroHTML()}
     <div class="card">
       <div class="cal-toolbar">
         <button class="navround" onclick="dutyNav(-1)">‹</button>
@@ -6453,10 +6550,8 @@ function renderDuty(){
       <div class="legend">
         <span><span class="swatch" style="background:var(--sat)"></span>토요일</span>
         <span><span class="swatch" style="background:var(--sun)"></span>일요일 · 공휴일</span>
-        <span><span class="slot-tag day" style="width:auto;padding:2px 6px">주간</span></span>
-        <span><span class="slot-tag aft" style="width:auto;padding:2px 6px">오후</span></span>
-        <span><span class="slot-tag nit" style="width:auto;padding:2px 6px">야간</span></span>
-        <span><span class="slot-tag inst" style="width:auto;padding:2px 6px">행사</span></span>
+        ${DUTY_SLOTS.map(([k,lab])=>`<span><span class="slot-tag ${k}" style="width:auto;padding:2px 7px">${lab}</span></span>`).join("")}
+        <span style="margin-left:auto">이름을 클릭하면 바로 고칠 수 있어요</span>
       </div>
     </div>
   `;
@@ -6468,7 +6563,7 @@ function slot(type,label,ds,val){
   // 여기서 고친 값이 시트를 이긴다. 비우면 다시 시트 값으로 돌아간다.
   const tip = ovr ? `대시보드에서 수정한 값 (시트: ${sheetVal||'없음'}) · 비우면 시트 값으로 되돌아갑니다`
                   : (sheetVal ? '당직시트 값 · 고치면 이 값 대신 표시됩니다' : '');
-  return `<div class="duty-slot"><span class="slot-tag ${cls}">${label}</span>
+  return `<div class="duty-slot ${val?'on':'off'}"><span class="slot-tag ${cls}">${label}</span>
     <div class="slot-field${ovr?' ovr':''}" contenteditable="true" spellcheck="false"${tip?` title="${escapeHtml(tip)}"`:''}
       onblur="saveDuty('${ds}','${type}',this.innerText)">${val?escapeHtml(val):''}</div>
     ${ovr?`<button class="ovr-undo" title="시트 값으로 되돌리기" onclick="saveDuty('${ds}','${type}','')">↺</button>`:''}
@@ -6569,7 +6664,7 @@ function renderShare(){
         <span class="ev-txt"><span class="ev-head">🕙 ${escapeHtml(tenWho)} <span class="ten-lab">10출</span></span></span></div>` : '';
     return `<div class="daycell share ${ds===todayStr?'today':''} ${holi?'holi':''}"
       ondragover="shareDragOver(event,this)" ondragleave="shareDragLeave(this)" ondrop="shareDrop(event,'${ds}',this)">
-      <div class="dnum ${numCls}">${d}${holi?`<span class="holi-tag">${holi}</span>`:''}
+      <div class="dnum ${numCls} ${ds===todayStr?'is-today':''}"><span class="dn-n">${d}</span>${holi?`<span class="holi-tag">${holi}</span>`:''}
         <button class="add-ev" title="일정 추가" onclick="openShareForm('${ds}')">+</button></div>
       <div class="ev-list">${tenChip}${chips}${gchips}</div>
     </div>`;
