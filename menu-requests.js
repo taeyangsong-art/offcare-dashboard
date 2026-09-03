@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1486,
- "updatedAt": "2026-09-03 10:35",
+ "version": 1487,
+ "updatedAt": "2026-09-03 10:40",
  "days": 30,
  "items": [
   {
@@ -20,9 +20,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1788399294.864549",
+   "replies": [
+    "··· / 올데이크레페(ALL DAY CREPE) 운정점\n\n메뉴 그대로 https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788169062370749?thread_ts=···.726909&cid=C0AL2V3MM7U"
+   ],
+   "rc": 2,
+   "lr": "1788399351.385169",
    "rfx": 3,
    "status": "wait",
    "handler": null,
