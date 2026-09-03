@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1503,
- "updatedAt": "2026-09-03 14:07",
+ "version": 1504,
+ "updatedAt": "2026-09-03 14:15",
  "days": 30,
  "items": [
   {
@@ -18,11 +18,310 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "Grey Modern Professional Price List - 2.",
+     "fid": "F0BULCPPF4N",
+     "from": "댓글",
+     "path": "menu-files/1788411180_450239-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "BRAZILIAN",
+       "name": "올누드 (고급)",
+       "price": 50000
+      },
+      {
+       "category": "BRAZILIAN",
+       "name": "비키니 (중급)",
+       "price": 50000
+      },
+      {
+       "category": "BRAZILIAN",
+       "name": "비키니 (초급)",
+       "price": 30000
+      },
+      {
+       "category": "FACE",
+       "name": "코털 (여)",
+       "price": 10000
+      },
+      {
+       "category": "FACE",
+       "name": "코털 (남)",
+       "price": 10000
+      },
+      {
+       "category": "FACE",
+       "name": "눈썹 (여)",
+       "price": 20000
+      },
+      {
+       "category": "FACE",
+       "name": "눈썹 (남)",
+       "price": 20000
+      },
+      {
+       "category": "FACE",
+       "name": "이마 (여)",
+       "price": 20000
+      },
+      {
+       "category": "FACE",
+       "name": "이마 (남)",
+       "price": 20000
+      },
+      {
+       "category": "FACE",
+       "name": "헤어라인 (여)",
+       "price": 30000
+      },
+      {
+       "category": "FACE",
+       "name": "헤어라인 (남)",
+       "price": 30000
+      },
+      {
+       "category": "FACE",
+       "name": "구레나룻 (여)",
+       "price": 10000
+      },
+      {
+       "category": "FACE",
+       "name": "구레나룻 (남)",
+       "price": 10000
+      },
+      {
+       "category": "FACE",
+       "name": "볼 (여)",
+       "price": 10000
+      },
+      {
+       "category": "FACE",
+       "name": "볼 (남)",
+       "price": 10000
+      },
+      {
+       "category": "FACE",
+       "name": "인중 (여)",
+       "price": 10000
+      },
+      {
+       "category": "FACE",
+       "name": "인중 (남)",
+       "price": 20000
+      },
+      {
+       "category": "FACE",
+       "name": "턱 (여)",
+       "price": 10000
+      },
+      {
+       "category": "FACE",
+       "name": "턱 (남)",
+       "price": 30000
+      },
+      {
+       "category": "FACE",
+       "name": "뒷목 (여)",
+       "price": 30000
+      },
+      {
+       "category": "FACE",
+       "name": "뒷목 (남)",
+       "price": 30000
+      },
+      {
+       "category": "FACE",
+       "name": "수염전체 (남)",
+       "price": 50000
+      },
+      {
+       "category": "FACE",
+       "name": "풀페이스 (여)",
+       "price": 100000
+      },
+      {
+       "category": "FACE",
+       "name": "풀페이스 (남)",
+       "price": 130000
+      },
+      {
+       "category": "BODY",
+       "name": "손,발가락 (여)",
+       "price": 10000
+      },
+      {
+       "category": "BODY",
+       "name": "손,발가락 (남)",
+       "price": 10000
+      },
+      {
+       "category": "BODY",
+       "name": "겨드랑이 (여)",
+       "price": 20000
+      },
+      {
+       "category": "BODY",
+       "name": "겨드랑이 (남)",
+       "price": 20000
+      },
+      {
+       "category": "BODY",
+       "name": "가슴 전체 (여)",
+       "price": 20000
+      },
+      {
+       "category": "BODY",
+       "name": "가슴 전체 (남)",
+       "price": 20000
+      },
+      {
+       "category": "BODY",
+       "name": "등 전체 (여)",
+       "price": 30000
+      },
+      {
+       "category": "BODY",
+       "name": "등 전체 (남)",
+       "price": 40000
+      },
+      {
+       "category": "BODY",
+       "name": "배 전체 (여)",
+       "price": 20000
+      },
+      {
+       "category": "BODY",
+       "name": "배 전체 (남)",
+       "price": 40000
+      },
+      {
+       "category": "BODY",
+       "name": "배렛나루 (여)",
+       "price": 10000
+      },
+      {
+       "category": "BODY",
+       "name": "배렛나루 (남)",
+       "price": 20000
+      },
+      {
+       "category": "BODY",
+       "name": "팔 절반 (여)",
+       "price": 30000
+      },
+      {
+       "category": "BODY",
+       "name": "팔 절반 (남)",
+       "price": 40000
+      },
+      {
+       "category": "BODY",
+       "name": "팔 전체 (여)",
+       "price": 50000
+      },
+      {
+       "category": "BODY",
+       "name": "팔 전체 (남)",
+       "price": 60000
+      },
+      {
+       "category": "BODY",
+       "name": "다리 절반 (여)",
+       "price": 40000
+      },
+      {
+       "category": "BODY",
+       "name": "다리 절반 (남)",
+       "price": 50000
+      },
+      {
+       "category": "BODY",
+       "name": "다리 전체 (여)",
+       "price": 80000
+      },
+      {
+       "category": "BODY",
+       "name": "다리 전체 (남)",
+       "price": 100000
+      },
+      {
+       "category": "MEMBERSHIP",
+       "name": "20만원권",
+       "price": 200000
+      },
+      {
+       "category": "MEMBERSHIP",
+       "name": "30만원권",
+       "price": 300000
+      },
+      {
+       "category": "MEMBERSHIP",
+       "name": "50만원권",
+       "price": 500000
+      }
+     ]
+    },
+    {
+     "name": "Grey Modern Professional Price List - 3.",
+     "fid": "F0BULCSJ0TY",
+     "from": "댓글",
+     "path": "menu-files/1788411180_450239-1.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "LASH SERVICES",
+       "name": "베이직 수분펌",
+       "price": 40000
+      },
+      {
+       "category": "LASH SERVICES",
+       "name": "딥블랙펌",
+       "price": 45000
+      },
+      {
+       "category": "LASH SERVICES",
+       "name": "프리미엄케어펌",
+       "price": 50000
+      },
+      {
+       "category": "LASH SERVICES",
+       "name": "연장제거",
+       "price": 5000
+      },
+      {
+       "category": "LASH SERVICES",
+       "name": "딥블랙 추가",
+       "price": 5000
+      },
+      {
+       "category": "EYELASH CARE",
+       "name": "그로우업 생장제",
+       "price": 0
+      },
+      {
+       "category": "EYELASH CARE",
+       "name": "마렌영양제 투명",
+       "price": 0
+      },
+      {
+       "category": "EYELASH CARE",
+       "name": "마렌영양제 블랙",
+       "price": 0
+      },
+      {
+       "category": "EYELASH CARE",
+       "name": "마렌영양제 듀얼 ( 투명 + 블랙 )",
+       "price": 0
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1788411183.812909",
+   "rc": 2,
+   "lr": "1788412443.912599",
    "rfx": 3,
    "status": "wait",
    "handler": null,
