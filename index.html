@@ -1658,7 +1658,7 @@ function pushDutyMemo(ds){ pushPatch({dutyMemo:{[ds]: DUTYMEMO[ds]||''}}); }
 const LS_DUTYOVER = "opcare_dutyover_v1";
 let DUTYOVER = load(LS_DUTYOVER, {});   // { "date|time|title": "직원명" } — 회의 원격당번 수동 지정
 const LS_TENOVER = "opcare_tenover_v1";
-let TENOVER = load(LS_TENOVER, {});     // { "YYYY-MM-DD"(월요일): "직원명" } — 10시 출근 로테이션 맞교환 지정
+let TENOVER = load(LS_TENOVER, {});     // { "YYYY-MM-DD"(월요일): "직원명" } — 10시 출근 로테이션 수동 지정
 // 📢 공지사항 · 공유 게시판 (팀 공유 클라우드)
 const LS_NOTICES = "opcare_notices_v1";
 let NOTICES = load(LS_NOTICES, {});   // { id: {text, author, ts, type:'공지'|'공유', deleted} }
@@ -1805,23 +1805,13 @@ function tenPersonByDate(ds){
 }
 function tenPersonAt(ds){ return TENOVER[ds] || tenPersonByDate(ds); }
 function setTenOne(ds, name){ if(name && name!==tenPersonByDate(ds)) TENOVER[ds]=name; else delete TENOVER[ds]; }   // 자동 순번과 같아지면 override 제거
-// 맞교환: 이 주를 P로 바꾸면, 원래 P가 맡던 다음 주는 이 주의 원래 담당자가 이어받음
-function swapTenOver(ds, np){
-  const cur=tenPersonAt(ds);
-  if(!np || np===cur){ renderShare(); return; }
-  const todayS=ymd(today()); let mate=null;
-  for(let i=0;i<104;i++){                                             // 오늘 이후 2년치 월요일에서 상대 탐색
-    const k=ymd(addDays(parseYmd(TEN_ANCHOR_DATE), i*7));
-    if(k<todayS || k===ds) continue;
-    if(tenPersonAt(k)===np){ mate=k; break; }
-  }
+// 고른 사람으로 이 주만 교체 — 다른 주는 건드리지 않는다
+function setTenOver(ds, np){
+  if(np===tenPersonAt(ds)){ renderShare(); return; }
   setTenOne(ds, np);
-  if(mate) setTenOne(mate, cur);
   save(LS_TENOVER, TENOVER);
-  const patch={[ds]:TENOVER[ds]||''}; if(mate) patch[mate]=TENOVER[mate]||'';
-  pushPatch({tenOver:patch});
+  pushPatch({tenOver:{[ds]:TENOVER[ds]||''}});
   renderShare();
-  if(mate) alert(`🔁 10출 맞교환 완료\n· ${fmtShort(ds)} → ${np}\n· ${fmtShort(mate)} → ${cur}`);
 }
 // 🕙 달력의 10출 칩 클릭 → 직원 목록 팝업
 function openTenPicker(ds){
@@ -1832,14 +1822,13 @@ function openTenPicker(ds){
     <div class="detail-head"><h3>🕙 10시 출근 지정</h3><button class="detail-x" onclick="document.getElementById('tenPickModal').remove()">✕</button></div>
     <div class="dp-meta">${fmtShort(ds)} 주 (월~일)${cur?` · 현재 <b>${escapeHtml(cur)}</b>`:''}</div>
     <div class="dp-list">${TEN_ORDER.map(e=>`<button class="dp-item ${e===cur?'on':''}" onclick="pickTen('${ds}','${escapeHtml(e)}')">${escapeHtml(e)}${e===cur?' ✓':''}</button>`).join('')}</div>
-    <div class="dp-note">선택하면 그 사람이 맡던 다음 주와 <b>맞교환</b>됩니다 (같은 사람이 두 번 되지 않게)</div>
+    <div class="dp-note">고른 사람으로 <b>이 주만</b> 바뀝니다 (다른 주는 그대로)</div>
     ${TENOVER[ds]?`<button class="dp-auto" onclick="pickTen('${ds}','')">↺ 순번 자동으로 되돌리기</button>`:''}
   </div>`;
 }
 function pickTen(ds, name){
   const el=document.getElementById('tenPickModal'); if(el) el.remove();
-  if(name) swapTenOver(ds, name);
-  else { delete TENOVER[ds]; save(LS_TENOVER,TENOVER); pushPatch({tenOver:{[ds]:''}}); renderShare(); }
+  setTenOver(ds, name||'');
 }
 // 회의 키(날짜|시간|제목)에 따옴표가 섞여도 안전하게 onclick으로 넘기기 위한 인덱스 테이블
 let DUTYKEYS=[];
@@ -6701,7 +6690,7 @@ function renderShare(){
         <span style="margin-left:6px"><span class="swatch" style="background:#e8f0fe;border:1px solid #c6dafc"></span>회의(구글)</span>
       </div>
       <div class="duty-order">🏠 회의 중 원격 근무당번 순서 · ${DUTY_ORDER.join(' → ')}</div>
-      <div class="duty-order ten-order">🕙 10시 출근 로테이션(주 단위 · 월요일 시작) · ${TEN_ORDER.join(' → ')} <span style="font-weight:600;color:var(--gray2)">· 달력의 <b>10출</b> 칩 클릭 → 맞교환</span></div>
+      <div class="duty-order ten-order">🕙 10시 출근 로테이션(주 단위 · 월요일 시작) · ${TEN_ORDER.join(' → ')} <span style="font-weight:600;color:var(--gray2)">· 달력의 <b>10출</b> 칩 클릭 → 이름 변경</span></div>
     </div>
   `;
 }
