@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1524,
- "updatedAt": "2026-09-03 18:13",
+ "version": 1525,
+ "updatedAt": "2026-09-03 18:17",
  "days": 30,
  "items": [
   {
@@ -54631,30 +54631,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785836057973549"
-  },
-  {
-   "ts": "1785834910.433159",
-   "date": "2026-08-04",
-   "time": "18:15",
-   "store": "고모카세",
-   "biz": "6710902671",
-   "pos": "",
-   "content": "메뉴 가격 수정 요청드립니다:man-bowing:",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "(유플)\n• 술\n    ◦ 하이볼 종류 7,000원으로 가격 인하",
-    "규빈님, 따로 변경된 사항은 없는데 제가 관련 내용 인지하지 못했던 것 같습니다.\n추후 자체처리 진행하겠습니다 감사합니다!!"
-   ],
-   "rc": 6,
-   "lr": "1785835230.646929",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785834910433159"
   }
  ],
  "ocr": {
