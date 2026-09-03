@@ -129,8 +129,25 @@ function parseThread(replies){
   return { assignee, rounds, roundDates };
 }
 
+/* 완료 신호 이모지.
+   방문일자만으로 판단하면 예정일이 안 지난 건이 계속 '처리중' 으로 남는다.
+   채널에서 완료 표시로 찍는 이모지가 있으면 날짜와 무관하게 완료로 본다.
+   (원격<사람이름> 은 그 사람이 처리했다는 표시라 완료로 친다) */
+const DONE_EMOJI = [
+  '원격as', '원격온보딩', '원격명의변경', '원격메뉴등록', '원격배달',
+  '완료', '처리완료', '설치완료', '방문완료',
+  'white_check_mark', 'heavy_check_mark', 'ballot_box_with_check',
+];
+const DONE_EMP_RE = /^원격[가-힣]{2,4}$/;
+function doneByEmoji(reactions){
+  return (reactions || []).some(r => {
+    const n = String(r && r.name || '').toLowerCase().replace(/::skin-tone-\d/, '');
+    return DONE_EMOJI.includes(n) || DONE_EMP_RE.test(n);
+  });
+}
+
 /* 워크플로우 글 1건 → 방문 레코드. 형식이 아니면 null */
-function toRecord(text, replies, todayYmd){
+function toRecord(text, replies, todayYmd, reactions){
   const f = parseFields(text);
   const store = f['상호명'];
   if(!store || isBlank(store)) return null;          // 상호명이 없으면 브랜드를 가를 수 없다
@@ -144,8 +161,10 @@ function toRecord(text, replies, todayYmd){
   const date = reqDate || visitDate;
   if(!date) return null;
 
+  /* 완료 이모지가 찍혔으면 예정일이 남았어도 완료다 */
   let status = 'hold';                                // 방문일자 미정
-  if(visitDate) status = visitDate <= todayYmd ? 'done' : 'pending';
+  if(doneByEmoji(reactions))  status = 'done';
+  else if(visitDate)          status = visitDate <= todayYmd ? 'done' : 'pending';
 
   return {
     id      : (f['ID'] || '').trim(),
@@ -170,7 +189,7 @@ function toRecord(text, replies, todayYmd){
   };
 }
 
-module.exports = { parseFields, toRecord, normKind, parseThread, unmark, extractText, setUserMap };
+module.exports = { parseFields, toRecord, normKind, parseThread, unmark, extractText, setUserMap, doneByEmoji };
 
 /* ── 여기부터는 실행용 (슬랙 토큰 필요) ────────────────────── */
 if(require.main !== module) return;
@@ -244,7 +263,7 @@ async function replies(ts){
   /* 진단용 — 0건이 나왔을 때 원인을 좁히기 위한 '구조' 정보만 모은다.
      저장소가 public 이라 Actions 로그도 공개된다. 상호명·사업자번호 같은
      내용은 절대 찍지 않는다. */
-  const diag = { subtypes: {}, containers: {}, blockTypes: {}, textLens: [] };
+  const diag = { subtypes: {}, containers: {}, blockTypes: {}, textLens: [], emoji: {} };
   const NOISE = ['channel_join', 'channel_leave', 'channel_topic', 'channel_purpose', 'channel_name'];
 
   for(const m of msgs){
@@ -258,7 +277,8 @@ async function replies(ts){
     const text = extractText(m);
     diag.textLens.push(text.length);
     if(!/상호명\s*:/.test(unmark(text))){ skipped++; continue; }
-    const r = toRecord(text, [], TODAY);        /* 스레드는 아래에서 따로 붙인다 */
+    (m.reactions || []).forEach(x => diag.emoji[x.name] = (diag.emoji[x.name] || 0) + 1);
+    const r = toRecord(text, [], TODAY, m.reactions);   /* 스레드는 아래에서 따로 붙인다 */
     if(!r){ skipped++; continue; }
     /* 같은 요청이 여러 번 올라오면 ID 로 한 건으로 본다 */
     const key = r.id || (r.store + '|' + r.date + '|' + r.time);
@@ -353,5 +373,9 @@ ${body}
   console.log('브랜드 ' + Object.keys(brands).length + '개 — ' + top);
   console.log('제외  형식 불일치 ' + skipped + '건 · 스레드 조회 ' + replyCalls + '회'
     + ' · 담당자 확인 ' + recs.filter(r => r.assignee).length + '건');
+  const st = {}; recs.forEach(r => st[r.status] = (st[r.status] || 0) + 1);
+  const em = Object.entries(diag.emoji).sort((a,b)=>b[1]-a[1]).slice(0,12).map(x=>x[0]+' '+x[1]).join(' · ');
+  console.log('상태  ' + JSON.stringify(st));
+  console.log('이모지 ' + (em || '(없음)') + '   ← 완료로 칠 것이 빠졌으면 DONE_EMOJI 에 추가');
   console.log('생성  ' + path.relative(ROOT, OUT) + ' (' + Math.round(out.length / 1024) + ' KB)');
 })().catch(e => { console.error('실패:', e.message); process.exit(1); });
