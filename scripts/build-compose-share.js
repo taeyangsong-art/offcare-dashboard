@@ -72,11 +72,7 @@ function common(html){
     "  const sel = document.getElementById('clientSel');\n  if(!sel) return;   /* 공유본에는 없음 */",
     'fillClientSelect 가드');
 
-  /* 「데이터 연결 가이드」는 내부 파일 경로·코드가 그대로 노출된다 — 고객사 화면에서 뺀다 */
-  html = must(html,
-    '  <div class="nav-div"></div>\n  <div class="nav-label">설정</div>\n'
-  + '  <button class="navbtn" data-view="setup"><span class="ic">⚙️</span>데이터 연결 가이드</button>\n',
-    '', '데이터 연결 가이드 탭 제거');
+  /* 「데이터 연결 가이드」는 원본에서 통째로 없앴다 — 여기서 뺄 것이 없다 */
 
   /* 허브로 돌아가는 링크 — 공유본에는 옆 페이지가 없다 */
   html = must(html,

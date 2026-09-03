@@ -329,9 +329,6 @@
   <div class="nav-div"></div>
   <div class="nav-label">보고</div>
   <button class="navbtn" data-view="report"><span class="ic">📄</span>월간 보고서</button>
-  <div class="nav-div"></div>
-  <div class="nav-label">설정</div>
-  <button class="navbtn" data-view="setup"><span class="ic">⚙️</span>데이터 연결 가이드</button>
   <div class="side-foot">
     <a href="index.html">← 프랜차이즈 전체 현황</a>
     <a href="../index.html">원격파트 대시보드 →</a>
@@ -736,7 +733,7 @@ function modeBanner(){
   return '<div class="notice warn"><span class="k">일반 브랜드</span><span class="t">'
     + '<b>'+esc(BRAND)+'</b>은 계약 고객사로 등록되지 않아, 기존 원격 집계(<code>slack-data.js</code>)를 브랜드명으로 걸러 보여줍니다. '
     + (missing.length ? '기존 파이프라인에 분류가 없어 <b>'+esc(missing.join(' · '))+'</b>는 표시되지 않습니다. ' : '')
-    + '전용 대시보드로 승격하려면 좌측 <b>데이터 연결 가이드</b>를 확인하세요.</span></div>';
+    + '전용 대시보드로 승격하려면 <code>clients.js</code> 에 고객사를 등록하세요.</span></div>';
 }
 function preStartBanner(){
   if(!START_YM) return '';
@@ -1153,65 +1150,6 @@ function downloadXlsx(){
   XLSX.download((IS_SAMPLE?'[샘플]':'')+CLIENT.name+'_원격지원_'+tag+'.xlsx', sheets);
 }
 
-/* ── 뷰: 데이터 연결 가이드 ────────────────────────────────── */
-function viewSetup(){
-  let h = '';
-  if(MODE === 'contract'){
-    h += '<div class="notice"><span class="k">현재 상태</span><span class="t">'
-      + '<b>'+esc(CLIENT.name)+'</b>은 계약 고객사로 등록되어 전용 원장 <code>'+esc(REG.dataFile)+'</code> 을 읽습니다. '
-      + '수집 방식(슬랙·구글시트·수동)이 무엇으로 정해지든 <b>그 파일만 채우면</b> 화면·엑셀·보고서가 모두 동작합니다.'
-      + '</span></div>';
-  } else {
-    h += '<div class="notice warn"><span class="k">일반 브랜드</span><span class="t">'
-      + '<b>'+esc(BRAND)+'</b>은 아직 계약 고객사가 아닙니다. 지금은 기존 원격 집계(<code>slack-data.js</code>)를 '
-      + '브랜드명으로 걸러 보여주는 중이며, 카테고리도 기존 파이프라인의 '+CATS.length+'종만 씁니다.'
-      + '</span></div>'
-      + '<div class="card"><div class="card-head"><h3>전용 대시보드로 승격하기</h3></div>'
-      + '<div class="step"><span class="sn">1</span><div class="sb"><div class="st">clients.js 에 블록 추가</div>'
-      + '<div class="sd">아래 코드를 <b>clients.js</b> 의 <code>FRANCHISE_CLIENTS</code> 배열에 붙여넣습니다.</div>'
-      + '<div class="code"><pre>{\n'
-      + '  slug       : \''+esc(slugGuess(BRAND))+'\',\n'
-      + '  brand      : \''+esc(BRAND)+'\',\n'
-      + '  icon       : \'🏢\',\n'
-      + '  startDate  : \'2026-__-__\',   <span class="cm">// 관리 개시일</span>\n'
-      + '  provider   : \'iShopCare 원격파트\',\n'
-      + '  reportTitle: \'원격 지원 월간 리포트\',\n'
-      + '  dataFile   : \'data/'+esc(slugGuess(BRAND))+'.js\',\n'
-      + '},</pre></div></div></div>'
-      + '<div class="step"><span class="sn">2</span><div class="sb"><div class="st">data/'+esc(slugGuess(BRAND))+'.js 만들기</div>'
-      + '<div class="sd"><b>data/compose.js</b> 를 복사해 파일명과 <code>CLIENT_DATA[\'slug\']</code> 키만 바꾸면 됩니다.</div></div></div>'
-      + '<div class="step"><span class="sn">3</span><div class="sb"><div class="st">새로고침</div>'
-      + '<div class="sd">그 즉시 8종 카테고리 · 월간 보고서 · 5시트 엑셀이 활성화됩니다. client.html 은 손댈 필요 없습니다.</div></div></div>'
-      + '</div>';
-  }
-
-  h += '<div class="card"><div class="card-head"><h3>카테고리 '+CATS.length+'종 (현재 적용)</h3>'
-    + '<span class="hint">'+(MODE==='contract'?'clients.js · TAXONOMY.contract':'clients.js · TAXONOMY.slack')+'</span></div>'
-    + '<div class="tbl-wrap"><table><thead><tr><th>표시명</th><th>데이터 key</th><th>구분</th></tr></thead><tbody>'
-    + CATS.map(c=>'<tr><td style="font-weight:600"><span class="cat-dot" style="background:'+c.color+'"></span>'+esc(c.name)+'</td>'
-        + '<td style="font-family:ui-monospace,monospace;font-size:13px;color:var(--blue-deep)">'+esc(c.key)+'</td>'
-        + '<td>'+(c.onsite?'<span class="cat-chip" style="background:var(--red-soft);color:var(--red)">현장 방문</span>':'<span style="color:var(--gray2)">원격</span>')+'</td></tr>').join('')
-    + '</tbody></table></div></div>';
-
-  h += '<div class="card"><div class="card-head"><h3>파일 구성</h3></div>'
-    + '<div class="code"><pre>franchise/\n'
-    + '├── index.html        <span class="cm">← 프랜차이즈 허브 (브랜드 클릭 → 이 페이지)</span>\n'
-    + '├── client.html       <span class="cm">← 고객사별 대시보드 (?b=브랜드명) · 손댈 일 없음</span>\n'
-    + '├── clients.js        <span class="cm">← 고객사 레지스트리 + 카테고리 (여기를 고침)</span>\n'
-    + '├── data/compose.js   <span class="cm">← 컴포즈커피 원장 (여기를 채움)</span>\n'
-    + '├── brands.js         <span class="cm">← 브랜드 마스터 리스트</span>\n'
-    + '├── brand-match.js    <span class="cm">← 브랜드 매칭 (공용)</span>\n'
-    + '└── xlsx.js           <span class="cm">← 엑셀 생성기</span></pre></div></div>';
-  return h;
-}
-function slugGuess(s){
-  const map = {'드롭탑':'droptop','용용선생':'yongyong','컴포즈커피':'compose'};
-  if(map[s]) return map[s];
-  const ascii = String(s||'').replace(/[^A-Za-z0-9]/g,'').toLowerCase();
-  return ascii || 'client' + String(s||'').length;
-}
-
-/* ── 지점 상세 모달 ────────────────────────────────────────── */
 /* ── 현장방문 (visit-data.js) ───────────────────────────────
    #ishopcare_new_방문설치 채널의 워크플로우 글을 상호명으로 브랜드를 갈라
    각 브랜드의 '현장방문' 으로 합친다. 계약 고객사·슬랙 브랜드 모두 같다.
@@ -1491,10 +1429,8 @@ const TITLES = {
   stores  :['지점별','지점 단위 인입 집계'],
   records :['처리내역','건별 원장'],
   report  :['월간 보고서','제출용 · 인쇄/PDF + 엑셀'],
-  setup   :['데이터 연결 가이드','카테고리 체계와 원장 스키마'],
 };
 function controlsHTML(){
-  if(view === 'setup') return '';
   const opts = MONTHS.map(m=>'<option value="'+m+'"'+(m===month?' selected':'')+'>'+ymLabel(m)+'</option>').join('');
   let h = '';
   if(view === 'report'){
@@ -1538,14 +1474,13 @@ function render(){
   const t = TITLES[view];
   document.getElementById('pgTitle').textContent = t[0];
   document.getElementById('pgSub').textContent = CLIENT.name + ' · ' + t[1]
-    + (view==='setup' ? '' : ' · ' + (view==='report' ? ymLabel(month) : scopeLabel()));
+    + ' · ' + (view==='report' ? ymLabel(month) : scopeLabel());
   document.getElementById('ctlHost').innerHTML = controlsHTML();
   const host = document.getElementById('viewHost');
   host.innerHTML = view==='overview' ? viewOverview()
                  : view==='stores'   ? viewStores()
                  : view==='records'  ? viewRecords()
-                 : view==='report'   ? viewReport()
-                 : viewSetup();
+                 : viewReport();
   bindEvents();
 }
 
