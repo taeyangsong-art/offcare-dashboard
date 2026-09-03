@@ -33,7 +33,10 @@ const OUT_SINGLE = path.join(ROOT, 'share', SLUG + '-dashboard.html');
 /* 호스팅본 위치(share/<slug>/) 에서 원장까지의 상대 경로 */
 const LEDGER_REL = '../../franchise/data/' + SLUG + '.js';
 
-const read = p => fs.readFileSync(p, 'utf8');
+/* 줄바꿈을 LF 로 통일해서 읽는다.
+   저장소 정본은 LF 지만 윈도우 작업트리는 CRLF 로 체크아웃돼(autocrlf),
+   그대로 읽으면 아래 치환 패턴이 전부 빗나간다. */
+const read = p => fs.readFileSync(p, 'utf8').split('\r\n').join('\n');
 
 /* 인라인 스크립트 안에 </script> 가 있으면 HTML 파서가 거기서 블록을 끊는다.
    백슬래시를 끼워 넣으면 HTML 파서는 못 알아보고 JS 파서는 그대로 읽는다. */

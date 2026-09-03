@@ -184,7 +184,7 @@
   .empty{text-align:center; color:var(--gray2); font-size:14px; padding:44px 12px; line-height:1.8}
   .delta{font-size:12.5px; font-weight:700}
   .delta.up{color:var(--red)} .delta.down{color:var(--green)} .delta.flat{color:var(--gray2)}
-  .st-chip{display:inline-block; font-size:11px; font-weight:800; padding:2px 8px; border-radius:20px}
+  .st-chip{display:inline-block; font-size:11px; font-weight:800; padding:2px 8px; border-radius:20px; white-space:nowrap}
 
   .rep{background:var(--canvas); border-radius:var(--radius); box-shadow:var(--shadow); padding:34px 38px; margin-bottom:22px}
   .rep-head{border-bottom:2px solid var(--ink); padding-bottom:18px; margin-bottom:26px}
@@ -1205,10 +1205,9 @@ function mergeVisits(){
 /* 목록/표에 한 줄로 뜨는 요약. 상세는 visitDetail() 이 따로 그린다 */
 function visitReqText(v){
   const bits = ['[' + (v.kind || '기타') + ']'];
-  if(v.visitDate) bits.push('방문 ' + v.visitDate);
-  if(v.rounds > 1) bits.push(v.rounds + '회차');
-  if(v.equip)  bits.push(v.equip);
-  if(v.region) bits.push(v.region);
+  if(v.visitDate)  bits.push('방문 ' + v.visitDate);
+  if(v.rounds > 0) bits.push(v.rounds + '회차');
+  if(v.equip)      bits.push(v.equip);
   return bits.join(' · ');
 }
 
