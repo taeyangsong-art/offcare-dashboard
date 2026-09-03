@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1532,
- "updatedAt": "2026-09-03 20:54",
+ "version": 1533,
+ "updatedAt": "2026-09-03 20:56",
  "days": 30,
  "items": [
   {
@@ -18,11 +18,255 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BUJS45DEF",
+     "from": "댓글",
+     "path": "menu-files/1788436396_507689-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "[BEST] 인생 클래식 닭가슴살 포케",
+       "price": 13800
+      },
+      {
+       "category": "",
+       "name": "[갓성비] 인생 시그니처 연어 포케",
+       "price": 15800
+      },
+      {
+       "category": "",
+       "name": "[프라임] 인생 볏짚불백 포케",
+       "price": 14500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUUP7RBUL",
+     "from": "댓글",
+     "path": "menu-files/1788436396_507689-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "[사장님추천] 인생 구운명란 포케",
+       "price": 12800
+      },
+      {
+       "category": "",
+       "name": "[ 한끼완성 ] 인생 한돈떡갈비 도시락 포케",
+       "price": 15900
+      },
+      {
+       "category": "가장 인기 있는 메뉴",
+       "name": "[BEST] 인생 클래식 닭가슴살 포케",
+       "price": 13800
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUT1J3G2D",
+     "from": "댓글",
+     "path": "menu-files/1788436396_507689-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "인기 메뉴",
+       "name": "[갓성비] 인생 시그니처 연어 포케",
+       "price": 15800
+      },
+      {
+       "category": "인기 메뉴",
+       "name": "[사장님추천] 인생 구운명란 포케",
+       "price": 12800
+      },
+      {
+       "category": "인기 메뉴",
+       "name": "[For비건] 시장표 사장님 손두부 포케",
+       "price": 13800
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUR38SEFL",
+     "from": "댓글",
+     "path": "menu-files/1788436396_507689-3.png",
+     "kind": "other",
+     "menu": [
+      {
+       "category": "인기 메뉴",
+       "name": "[프리미엄] 수비드 그릴 닭다리 포케",
+       "price": 15800
+      },
+      {
+       "category": "[2인 세트 메뉴] 음료+빵 포함",
+       "name": "2인) 닭가슴살+두부 포케 세트(1베이글+1음료 포함)",
+       "price": 28000
+      },
+      {
+       "category": "[2인 세트 메뉴] 음료+빵 포함",
+       "name": "2인) 베이직 닭살커플 세트(1베이글+1음료 포함)",
+       "price": 29000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUR396JE6",
+     "from": "댓글",
+     "path": "menu-files/1788436396_507689-4.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "[NEW]국산콩 100% 사장님수제두부 입니다",
+       "name": "[SET] 몽글이 들기름 순두부 한식 세트",
+       "price": 16000
+      },
+      {
+       "category": "[NEW 1일한정메뉴 ]",
+       "name": "[프리미엄] 수비드 그릴 닭다리 포케",
+       "price": 15800
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BULQ62NAH",
+     "from": "댓글",
+     "path": "menu-files/1788436396_507689-5.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "[갓성비] 인생 시그니처 연어 포케",
+       "price": 15800
+      },
+      {
+       "category": "",
+       "name": "[다시돌아온] 셰프스페셜 육회 포케",
+       "price": 15800
+      },
+      {
+       "category": "",
+       "name": "[ 한끼완성 ] 인생 한돈떡갈비 도시락 포케",
+       "price": 15900
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUJS838RZ",
+     "from": "댓글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "[ 육연무죄 ] 반반했소 포케",
+       "price": 19900
+      },
+      {
+       "category": "메인 인생 포케",
+       "name": "[BEST] 인생 클래식 닭가슴살 포케",
+       "price": 13800
+      },
+      {
+       "category": "메인 인생 포케",
+       "name": "[For비건] 시장표 사장님 손두부 포케",
+       "price": 13800
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BU9NF5WP9",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "메인 인생 포케",
+       "name": "[수제훈연] 프리미엄 폴드포크 포케",
+       "price": 14500
+      },
+      {
+       "category": "메인 인생 포케",
+       "name": "[훈제] 인생 라이트 오리 포케",
+       "price": 14500
+      },
+      {
+       "category": "메인 인생 포케",
+       "name": "[SET] 두부 포케 & 작은컵 흰 순두부 세트",
+       "price": 16000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BULQ749EZ",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "메인 인생 포케",
+       "name": "[SET] 닭가슴살포케 & 작은컵 흰 순두부 세트",
+       "price": 16000
+      },
+      {
+       "category": "메인 인생 포케",
+       "name": "[베이직] 인생포케 플레인 샐러드",
+       "price": 9900
+      },
+      {
+       "category": "메인 인생 포케",
+       "name": "[크리스피] 이겉바속촉 치킨텐더 포케",
+       "price": 14800
+      },
+      {
+       "category": "메인 인생 포케",
+       "name": "[바다한입] 갈릭버터 통통새우 포케",
+       "price": 15900
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUR3B4Z98",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "[셰프스페셜] 수제 리코타치즈 샐러드",
+       "price": 13900
+      },
+      {
+       "category": "[스페셜 추가]",
+       "name": "[인생두부] 흰순두부 (100%국산) 옵션 - L ) 큰 한그릇 으로 변경",
+       "price": 7500
+      },
+      {
+       "category": "[스페셜 추가]",
+       "name": "[인생두부] 흰순두부 (100%국산) 옵션 - [ 미니 ] 작은 한그릇",
+       "price": 4000
+      },
+      {
+       "category": "[스페셜 추가]",
+       "name": "[100% 국산콩] 사장님 수제 모두부 450~500g",
+       "price": 6500
+      }
+     ]
+    }
+   ],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1788436417.296249",
+   "replies": [
+    "[상품]"
+   ],
+   "rc": 2,
+   "lr": "1788436510.997509",
    "rfx": 3,
    "status": "wait",
    "handler": null,
