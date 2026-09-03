@@ -3,10 +3,502 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1488,
- "updatedAt": "2026-09-03 10:49",
+ "version": 1489,
+ "updatedAt": "2026-09-03 11:13",
  "days": 30,
  "items": [
+  {
+   "ts": "1788401383.383079",
+   "date": "2026-09-03",
+   "time": "11:09",
+   "store": "느락카페",
+   "biz": "3875900792",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "1776991533988.jpg.jpeg",
+     "fid": "F0C01R7B34Y",
+     "from": "댓글",
+     "path": "menu-files/1788401383_383079-0.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "커피",
+       "name": "에스프레소",
+       "price": 3500
+      },
+      {
+       "category": "커피",
+       "name": "아메리카노",
+       "price": 3500
+      },
+      {
+       "category": "커피",
+       "name": "카페라떼",
+       "price": 4000
+      },
+      {
+       "category": "커피",
+       "name": "카푸치노",
+       "price": 4000
+      },
+      {
+       "category": "커피",
+       "name": "카페모카",
+       "price": 4500
+      },
+      {
+       "category": "커피",
+       "name": "바닐라라떼",
+       "price": 4500
+      },
+      {
+       "category": "커피",
+       "name": "헤이즐럿라떼",
+       "price": 4500
+      },
+      {
+       "category": "커피",
+       "name": "카라멜마끼아또",
+       "price": 4500
+      },
+      {
+       "category": "커피",
+       "name": "달달커피",
+       "price": 4000
+      },
+      {
+       "category": "디저트",
+       "name": "허니버터브레드",
+       "price": 7000
+      },
+      {
+       "category": "디저트",
+       "name": "생크림 카스텔라",
+       "price": 4000
+      },
+      {
+       "category": "디저트",
+       "name": "에그타르트",
+       "price": 3000
+      },
+      {
+       "category": "디저트",
+       "name": "치즈에그타르트",
+       "price": 3500
+      },
+      {
+       "category": "디저트",
+       "name": "가래떡구이(겨울한정)",
+       "price": 5000
+      },
+      {
+       "category": "과일 쥬스",
+       "name": "생과일주스",
+       "price": 6000
+      },
+      {
+       "category": "과일 쥬스",
+       "name": "에이드",
+       "price": 6000
+      },
+      {
+       "category": "과일 쥬스",
+       "name": "요거트스무디",
+       "price": 5000
+      },
+      {
+       "category": "음료",
+       "name": "초코라떼",
+       "price": 4500
+      },
+      {
+       "category": "음료",
+       "name": "녹차라떼",
+       "price": 4500
+      },
+      {
+       "category": "음료",
+       "name": "오곡라떼",
+       "price": 4500
+      },
+      {
+       "category": "음료",
+       "name": "고구마라떼",
+       "price": 4500
+      },
+      {
+       "category": "음료",
+       "name": "딸기라떼",
+       "price": 5500
+      },
+      {
+       "category": "음료",
+       "name": "블루베리라떼",
+       "price": 6000
+      },
+      {
+       "category": "음료",
+       "name": "흑당버블티",
+       "price": 5000
+      },
+      {
+       "category": "차 / 주류",
+       "name": "수제 생강차",
+       "price": 6000
+      },
+      {
+       "category": "차 / 주류",
+       "name": "수제 대추차",
+       "price": 6000
+      },
+      {
+       "category": "차 / 주류",
+       "name": "수제 레몬생강차",
+       "price": 6000
+      },
+      {
+       "category": "차 / 주류",
+       "name": "허브차",
+       "price": 5000
+      },
+      {
+       "category": "차 / 주류",
+       "name": "맥주",
+       "price": 5000
+      },
+      {
+       "category": "차 / 주류",
+       "name": "소주",
+       "price": 5000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1788401404.732389",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788401383383079"
+  },
+  {
+   "ts": "1788401297.490229",
+   "date": "2026-09-03",
+   "time": "11:08",
+   "store": "윤이불닭발목포포미점",
+   "biz": "6053383139",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "Resized_20260902_185501.jpg.jpeg",
+     "fid": "F0BUMDBF2LA",
+     "from": "댓글",
+     "path": "menu-files/1788401297_490229-0.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "닭발",
+       "name": "[단품]통뼈 닭발",
+       "price": 21900
+      },
+      {
+       "category": "닭발",
+       "name": "[세트]통뼈 닭발",
+       "price": 26900
+      },
+      {
+       "category": "닭발",
+       "name": "[단품]툴립 닭발",
+       "price": 21900
+      },
+      {
+       "category": "닭발",
+       "name": "[세트]툴립 닭발",
+       "price": 27900
+      },
+      {
+       "category": "닭발",
+       "name": "[단품]무뼈 닭발",
+       "price": 21900
+      },
+      {
+       "category": "닭발",
+       "name": "[세트]무뼈 닭발",
+       "price": 27900
+      },
+      {
+       "category": "닭발",
+       "name": "[단품]통뼈국물 닭발",
+       "price": 24900
+      },
+      {
+       "category": "닭발",
+       "name": "[세트]통뼈국물 닭발",
+       "price": 28900
+      },
+      {
+       "category": "닭발",
+       "name": "[단품]툴립국물 닭발",
+       "price": 24900
+      },
+      {
+       "category": "닭발",
+       "name": "[세트]툴립국물 닭발",
+       "price": 28900
+      },
+      {
+       "category": "닭발",
+       "name": "[단품]무뼈국물 닭발",
+       "price": 24900
+      },
+      {
+       "category": "닭발",
+       "name": "[세트]무뼈국물 닭발",
+       "price": 28900
+      },
+      {
+       "category": "닭발",
+       "name": "[단품]오돌뼈",
+       "price": 21900
+      },
+      {
+       "category": "닭발",
+       "name": "[세트]오돌뼈",
+       "price": 25900
+      },
+      {
+       "category": "닭발",
+       "name": "500",
+       "price": 500
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260902_185504.jpg.jpeg",
+     "fid": "F0BUPBMQG0Z",
+     "from": "댓글",
+     "path": "menu-files/1788401297_490229-1.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "찜닭",
+       "name": "불찜닭",
+       "price": 28800
+      },
+      {
+       "category": "찜닭",
+       "name": "까망찜닭",
+       "price": 28800
+      },
+      {
+       "category": "찜닭",
+       "name": "미로찜닭",
+       "price": 28800
+      },
+      {
+       "category": "찜닭",
+       "name": "김치찜닭",
+       "price": 30800
+      },
+      {
+       "category": "찜닭",
+       "name": "로제찜닭",
+       "price": 30800
+      },
+      {
+       "category": "찜닭",
+       "name": "크림찜닭",
+       "price": 30800
+      },
+      {
+       "category": "찜닭",
+       "name": "닭볶음탕",
+       "price": 28800
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260902_185507.jpg.jpeg",
+     "fid": "F0BUH4Y7621",
+     "from": "댓글",
+     "path": "menu-files/1788401297_490229-2.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "쭈꾸미",
+       "name": "직화 불부꾸미",
+       "price": 15000
+      },
+      {
+       "category": "쭈꾸미",
+       "name": "직화 쭈삼새 삼합",
+       "price": 20000
+      },
+      {
+       "category": "쭈꾸미",
+       "name": "직화 쭈우새 삼합",
+       "price": 21000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260902_185510.jpg.jpeg",
+     "fid": "F0BUPBPV36D",
+     "from": "댓글",
+     "path": "menu-files/1788401297_490229-3.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "안주",
+       "name": "후라이드 윙봉 치킨",
+       "price": 18000
+      },
+      {
+       "category": "안주",
+       "name": "닭똥집 구이",
+       "price": 18000
+      },
+      {
+       "category": "안주",
+       "name": "오뎅탕",
+       "price": 14900
+      },
+      {
+       "category": "안주",
+       "name": "조개탕",
+       "price": 14900
+      },
+      {
+       "category": "안주",
+       "name": "감자튀김",
+       "price": 5000
+      },
+      {
+       "category": "안주",
+       "name": "버터갈릭 감자튀김",
+       "price": 7000
+      },
+      {
+       "category": "안주",
+       "name": "하인애플 샤베트",
+       "price": 7000
+      },
+      {
+       "category": "안주",
+       "name": "달콤 치즈 감자",
+       "price": 7000
+      },
+      {
+       "category": "안주",
+       "name": "어린이돈까스",
+       "price": 7000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260902_185512.jpg.jpeg",
+     "fid": "F0BUPBPJJQZ",
+     "from": "댓글",
+     "path": "menu-files/1788401297_490229-4.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류&음료",
+       "name": "소주",
+       "price": 5000
+      },
+      {
+       "category": "주류&음료",
+       "name": "맥주",
+       "price": 5000
+      },
+      {
+       "category": "주류&음료",
+       "name": "하이볼",
+       "price": 6900
+      },
+      {
+       "category": "주류&음료",
+       "name": "쿨피스",
+       "price": 1000
+      },
+      {
+       "category": "주류&음료",
+       "name": "탄산음료",
+       "price": 2000
+      },
+      {
+       "category": "주류&음료",
+       "name": "1300",
+       "price": 1300
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260902_185515.jpg.jpeg",
+     "fid": "F0BUF6XCUD9",
+     "from": "댓글",
+     "path": "menu-files/1788401297_490229-5.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "사이드(추가)",
+       "name": "사리 추가(기타)",
+       "price": 1000
+      },
+      {
+       "category": "사이드(추가)",
+       "name": "계란찜",
+       "price": 4000
+      },
+      {
+       "category": "사이드(추가)",
+       "name": "주먹밥",
+       "price": 4000
+      },
+      {
+       "category": "사이드(추가)",
+       "name": "튀김",
+       "price": 4000
+      },
+      {
+       "category": "사이드(추가)",
+       "name": "치즈추가",
+       "price": 3000
+      },
+      {
+       "category": "사이드(추가)",
+       "name": "사리추가",
+       "price": 2000
+      },
+      {
+       "category": "사이드(추가)",
+       "name": "공기밥",
+       "price": 1000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1788401344.750859",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788401297490229"
+  },
   {
    "ts": "1788399291.107609",
    "date": "2026-09-03",
@@ -23,11 +515,11 @@ window.MENU_REQUESTS = {
    "replies": [
     "··· / 올데이크레페(ALL DAY CREPE) 운정점\n\n메뉴 그대로 https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788169062370749?thread_ts=···.726909&cid=C0AL2V3MM7U"
    ],
-   "rc": 2,
-   "lr": "1788399351.385169",
+   "rc": 3,
+   "lr": "1788401510.701749",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788399291107609"
   },
   {
