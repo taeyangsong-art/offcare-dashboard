@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 7955,
+  "version": 7956,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -148144,6 +148144,9 @@ window.SLACK_DATA = {
         "extern": {
           "서상원": 1
         },
+        "onboarding": {
+          "심성현": 1
+        },
         "as": {
           "김동욱": 2,
           "김현기": 1,
@@ -148163,6 +148166,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": ""
+        },
+        {
+          "time": "09:00",
+          "store": "천등팜",
+          "biz": "1199921619",
+          "cat": "onboarding",
+          "emp": "심성현",
+          "req": "포프(노트북) + 유프 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료 출력 테스트 완료"
         },
         {
           "time": "09:00",
@@ -148221,7 +148235,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 5,
+        "online": 6,
         "offline": 1,
         "unknown": 0
       },
@@ -148368,30 +148382,19 @@ window.SLACK_DATA = {
         "post": "1788330965.587429",
         "lastSeen": 1788380129.535
       },
-      "1788393614.545929": {
-        "post": "1788393614.545929",
-        "lastSeen": 1788394701.856,
-        "r": 1,
-        "day": "2026-09-03",
-        "idx": 4
-      },
       "1788393600.832509": {
         "post": "1788393600.832509",
-        "lastSeen": 1788394701.856,
+        "lastSeen": 1788395121.539,
         "r": 1,
         "day": "2026-09-03",
         "idx": 1
       },
       "1788394524.934019": {
         "post": "1788394524.934019",
-        "lastSeen": 1788394701.856,
+        "lastSeen": 1788395121.539,
         "r": 1,
         "day": "2026-09-03",
         "idx": 5
-      },
-      "1788388572.023099": {
-        "post": "1788388572.023099",
-        "lastSeen": 1788394701.856
       }
     },
     "days": {
@@ -189586,7 +189589,8 @@ window.SLACK_DATA = {
             "store": "천등팜",
             "biz": "1199921619",
             "who": "김동욱",
-            "cat": "as"
+            "cat": "onboarding",
+            "dmin": 21.6
           },
           {
             "hm": "09:15",
@@ -189601,7 +189605,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-03 09:18",
+    "at": "2026-09-03 09:25",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
