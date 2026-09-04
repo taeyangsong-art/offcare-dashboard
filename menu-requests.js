@@ -3,10 +3,53 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1620,
- "updatedAt": "2026-09-04 21:22",
+ "version": 1621,
+ "updatedAt": "2026-09-04 22:10",
  "days": 30,
  "items": [
+  {
+   "ts": "1788527361.829209",
+   "date": "2026-09-04",
+   "time": "22:09",
+   "store": "비플러스",
+   "biz": "6121493916",
+   "pos": "",
+   "content": "• 메뉴 등록 요청드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "f_2954fa3e8f12.cell",
+     "fid": "F0BV1G54YQJ",
+     "from": "댓글",
+     "path": "menu-files/1788527361_829209-0.cell",
+     "nj": 1
+    },
+    {
+     "name": "f_4c1eaa323ed0.tmp",
+     "fid": "F0BV3EBV9EV",
+     "from": "댓글",
+     "path": "menu-files/1788527361_829209-1.tmp",
+     "nj": 1
+    },
+    {
+     "name": "f_aa219dc1655c.tmp",
+     "fid": "F0BV56JQFRA",
+     "from": "댓글",
+     "path": "menu-files/1788527361_829209-2.tmp",
+     "nj": 1
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1788527384.622029",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788527361829209"
+  },
   {
    "ts": "1788523860.585799",
    "date": "2026-09-04",
