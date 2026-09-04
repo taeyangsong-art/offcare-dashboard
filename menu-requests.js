@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1549,
- "updatedAt": "2026-09-04 10:17",
+ "version": 1550,
+ "updatedAt": "2026-09-04 10:21",
  "days": 30,
  "items": [
   {
@@ -23,35 +23,35 @@ window.MENU_REQUESTS = {
      "name": "i_f4befc00784e.png",
      "fid": "F0BUVB6RCNS",
      "from": "댓글",
-     "path": "menu-files/1788484450_879859-0.png",
      "kind": "product_photo",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1788484450_879859-0.png"
     },
     {
      "name": "i_c65699313e05.png",
      "fid": "F0BUX8X6A2E",
      "from": "댓글",
-     "path": "menu-files/1788484450_879859-1.png",
      "kind": "product_photo",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1788484450_879859-1.png"
     },
     {
      "name": "i_1150de7c13bc.png",
      "fid": "F0BUX8X7602",
      "from": "댓글",
-     "path": "menu-files/1788484450_879859-2.png",
      "kind": "product_photo",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1788484450_879859-2.png"
     }
    ],
    "datt": [],
    "replies": [
     "버터소금빵 . 4500\n블루베리 크럼블 타르트 4800\n치즈 쫀득 타르트 4800"
    ],
-   "rc": 2,
-   "lr": "1788484489.710719",
+   "rc": 3,
+   "lr": "1788484665.191369",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788484450879859"
   },
@@ -688,7 +688,7 @@ window.MENU_REQUESTS = {
    "rc": 4,
    "lr": "1788484286.501159",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788483988462869"
   },
