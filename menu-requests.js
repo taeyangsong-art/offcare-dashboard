@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1565,
- "updatedAt": "2026-09-04 13:34",
+ "version": 1566,
+ "updatedAt": "2026-09-04 13:38",
  "days": 30,
  "items": [
   {
@@ -133,6 +133,13 @@ window.MENU_REQUESTS = {
      "kind": "other",
      "menu": [],
      "path": "menu-files/1788495944_435849-1.png"
+    },
+    {
+     "name": "상품목록-260904133703.xlsx",
+     "fid": "F0BV1TLU5FE",
+     "from": "댓글",
+     "path": "menu-files/1788495944_435849-2.xlsx",
+     "nj": 1
     }
    ],
    "datt": [],
@@ -140,8 +147,8 @@ window.MENU_REQUESTS = {
     "악 여기 토플파 복제 되었나봐요\n\n2층  신규오픈 카페 에서만 쓰실꺼고\n오늘 방문설치라 1층에 [코발토] 카테고리로 임시등록했어요 ㅠㅠ\n\nhttps://partners.tossplace.com/merchants/635847/settings/catalog\n\n이 토플파에는 메뉴판 기준으로만 등록 되어야해요..!\n• 스무디\n• 클라우드 \n• 커피&티",
     "네 감사합니다!!!"
    ],
-   "rc": 6,
-   "lr": "1788496406.011109",
+   "rc": 7,
+   "lr": "1788496642.924289",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
