@@ -3,10 +3,214 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1570,
- "updatedAt": "2026-09-04 13:54",
+ "version": 1571,
+ "updatedAt": "2026-09-04 14:06",
  "days": 30,
  "items": [
+  {
+   "ts": "1788498354.478949",
+   "date": "2026-09-04",
+   "time": "14:05",
+   "store": "갱랑씨",
+   "biz": "4960203430",
+   "pos": "",
+   "content": "테이블 및 메뉴등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BUWE9PCRL",
+     "from": "댓글",
+     "path": "menu-files/1788498354_478949-0.png",
+     "kind": "pos_screen",
+     "menu": []
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUWEAL24W",
+     "from": "댓글",
+     "path": "menu-files/1788498354_478949-1.png",
+     "kind": "pos_screen",
+     "menu": []
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUYC0JS90",
+     "from": "댓글",
+     "path": "menu-files/1788498354_478949-2.png",
+     "kind": "pos_screen",
+     "menu": []
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUS5F0XHR",
+     "from": "댓글",
+     "path": "menu-files/1788498354_478949-3.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주메뉴",
+       "name": "냉삼겹",
+       "price": 12000
+      },
+      {
+       "category": "주메뉴",
+       "name": "대패삼겹",
+       "price": 12000
+      },
+      {
+       "category": "주메뉴",
+       "name": "막창",
+       "price": 12000
+      },
+      {
+       "category": "주메뉴",
+       "name": "생삼겹살",
+       "price": 15000
+      },
+      {
+       "category": "주메뉴",
+       "name": "소주",
+       "price": 4000
+      },
+      {
+       "category": "주메뉴",
+       "name": "도시락 카드결제",
+       "price": 7700
+      },
+      {
+       "category": "주메뉴",
+       "name": "도시락",
+       "price": 8800
+      },
+      {
+       "category": "주메뉴",
+       "name": "두루치기",
+       "price": 35000
+      },
+      {
+       "category": "주메뉴",
+       "name": "조개탕",
+       "price": 25000
+      },
+      {
+       "category": "주메뉴",
+       "name": "맥주",
+       "price": 4000
+      },
+      {
+       "category": "주메뉴",
+       "name": "과메기",
+       "price": 25000
+      },
+      {
+       "category": "주메뉴",
+       "name": "굴",
+       "price": 20000
+      },
+      {
+       "category": "주메뉴",
+       "name": "굴+과메기",
+       "price": 40000
+      },
+      {
+       "category": "주메뉴",
+       "name": "1인식대",
+       "price": 10000
+      },
+      {
+       "category": "주메뉴",
+       "name": "음료수",
+       "price": 2000
+      },
+      {
+       "category": "주메뉴",
+       "name": "1인 식사",
+       "price": 9000
+      },
+      {
+       "category": "주메뉴",
+       "name": "2인식사",
+       "price": 18000
+      },
+      {
+       "category": "주메뉴",
+       "name": "3인식사",
+       "price": 27000
+      },
+      {
+       "category": "주메뉴",
+       "name": "4인식사",
+       "price": 36000
+      },
+      {
+       "category": "주메뉴",
+       "name": "식사 1인",
+       "price": 8000
+      },
+      {
+       "category": "주메뉴",
+       "name": "1인식대",
+       "price": 9000
+      },
+      {
+       "category": "주메뉴",
+       "name": "식사뷔페1인",
+       "price": 4000
+      },
+      {
+       "category": "주메뉴",
+       "name": "기타",
+       "price": 5000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BV22E9CCC",
+     "from": "댓글",
+     "path": "menu-files/1788498354_478949-4.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류",
+       "name": "소주",
+       "price": 4000
+      },
+      {
+       "category": "주류",
+       "name": "맥주",
+       "price": 4000
+      },
+      {
+       "category": "주류",
+       "name": "음료수",
+       "price": 2000
+      },
+      {
+       "category": "주류",
+       "name": "도시락 카드결제",
+       "price": 7700
+      },
+      {
+       "category": "주류",
+       "name": "도시락",
+       "price": 8800
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1788498381.616659",
+   "rfx": 3,
+   "status": "done",
+   "handler": "김동욱",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788498354478949"
+  },
   {
    "ts": "1788496336.232979",
    "date": "2026-09-04",
@@ -56711,29 +56915,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785906862147539"
-  },
-  {
-   "ts": "1785906125.711779",
-   "date": "2026-08-05",
-   "time": "14:02",
-   "store": "전주종가콩나물국밥전문점 미아",
-   "biz": "8882500548",
-   "pos": "",
-   "content": "OK포스 메뉴 수정",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "행사소주 1900 > 2500\n행사맥주 1900 > 2500"
-   ],
-   "rc": 3,
-   "lr": "1785907735.303269",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785906125711779"
   }
  ],
  "ocr": {
