@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8228,
+  "version": 8229,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -151519,12 +151519,26 @@ window.SLACK_DATA = {
     },
     "2026-09-04": {
       "counts": {
+        "as": {
+          "심성현": 1
+        },
         "menu": {
           "서상원": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:00",
+          "store": "샤론옷수선",
+          "biz": "3090294184",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포프(휴대폰) + 유프 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "고령 2시에 설치 가능하신 분 모셔서 자가 설치 진행한다고 합니다. 온보딩 확인 차 1430 통화 예약"
+        },
         {
           "time": "08:40",
           "store": "제주치유농장보메와산",
@@ -151538,7 +151552,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
+        "online": 2,
         "offline": 0,
         "unknown": 0
       },
@@ -151704,17 +151718,12 @@ window.SLACK_DATA = {
         "post": "1788433460.906049",
         "lastSeen": 1788433522.645
       },
-      "1788480016.347049": {
-        "post": "1788480016.347049",
-        "lastSeen": 1788480022.839
-      },
       "1788480011.368969": {
         "post": "1788480011.368969",
-        "lastSeen": 1788480022.839
-      },
-      "1788480010.032439": {
-        "post": "1788480010.032439",
-        "lastSeen": 1788480022.839
+        "lastSeen": 1788480378.685,
+        "r": 1,
+        "day": "2026-09-04",
+        "idx": 1
       }
     },
     "days": {
@@ -194526,17 +194535,41 @@ window.SLACK_DATA = {
             "dmin": 3.1
           }
         ]
+      },
+      "2026-09-04": {
+        "cnt": 2,
+        "sumMin": 6.2301330367724095,
+        "over": 0,
+        "items": [
+          {
+            "hm": "09:00",
+            "min": 3.1,
+            "store": "샤론옷수선",
+            "biz": "3090294184",
+            "who": "심성현",
+            "cat": "as",
+            "dmin": 3.1
+          },
+          {
+            "hm": "09:00",
+            "min": 3.2,
+            "store": "이춘봉치킨 초지점",
+            "biz": "8442502075",
+            "who": "고경림",
+            "cat": "as"
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-04 09:00",
+    "at": "2026-09-04 09:06",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3894,
+    "rows": 3895,
     "named": 587,
     "unknownName": 0,
     "beforeStart": 0,
