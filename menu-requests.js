@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1603,
- "updatedAt": "2026-09-04 16:57",
+ "version": 1604,
+ "updatedAt": "2026-09-04 17:00",
  "days": 30,
  "items": [
   {
@@ -44,15 +44,14 @@ window.MENU_REQUESTS = {
      "name": "Resized_1788505047010.jpg.jpeg",
      "fid": "F0BUT1HCBV1",
      "from": "댓글",
-     "path": "menu-files/1788507157_300789-0.jpeg",
      "kind": "pos_screen",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1788507157_300789-0.jpeg"
     },
     {
      "name": "Resized_1788505046961.jpg.jpeg",
      "fid": "F0BUUSFLQMT",
      "from": "댓글",
-     "path": "menu-files/1788507157_300789-1.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -180,13 +179,13 @@ window.MENU_REQUESTS = {
        "name": "칼카시(소)",
        "price": 5000
       }
-     ]
+     ],
+     "path": "menu-files/1788507157_300789-1.jpeg"
     },
     {
      "name": "Resized_1788505046805.jpg.jpeg",
      "fid": "F0BUZ85BPBL",
      "from": "댓글",
-     "path": "menu-files/1788507157_300789-2.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -239,13 +238,13 @@ window.MENU_REQUESTS = {
        "name": "김치찌개",
        "price": 17000
       }
-     ]
+     ],
+     "path": "menu-files/1788507157_300789-2.jpeg"
     },
     {
      "name": "Resized_1788505046912.jpg.jpeg",
      "fid": "F0BV16BF9BK",
      "from": "댓글",
-     "path": "menu-files/1788507157_300789-3.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -328,21 +327,21 @@ window.MENU_REQUESTS = {
        "name": "짬채 그래거",
        "price": 11000
       }
-     ]
+     ],
+     "path": "menu-files/1788507157_300789-3.jpeg"
     },
     {
      "name": "Resized_1788505046858.jpg.jpeg",
      "fid": "F0C0DKL4VNU",
      "from": "댓글",
-     "path": "menu-files/1788507157_300789-4.jpeg",
      "kind": "pos_screen",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1788507157_300789-4.jpeg"
     },
     {
      "name": "Resized_1788505046745.jpg.jpeg",
      "fid": "F0BUHT63P71",
      "from": "댓글",
-     "path": "menu-files/1788507157_300789-5.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -390,7 +389,8 @@ window.MENU_REQUESTS = {
        "name": "액바구매",
        "price": 16000
       }
-     ]
+     ],
+     "path": "menu-files/1788507157_300789-5.jpeg"
     },
     {
      "name": "Resized_1788505046646.jpg.jpeg",
@@ -484,12 +484,29 @@ window.MENU_REQUESTS = {
        "price": 2000
       }
      ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUXFLS3AS",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": []
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUJ33GC15",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": []
     }
    ],
    "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1788507183.136799",
+   "replies": [
+    "오돌뼈..?",
+    "사진다시보내라고하겟음 ㄷㄱ"
+   ],
+   "rc": 8,
+   "lr": "1788508808.766789",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
