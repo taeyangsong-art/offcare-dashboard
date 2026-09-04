@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1590,
- "updatedAt": "2026-09-04 15:47",
+ "version": 1591,
+ "updatedAt": "2026-09-04 15:54",
  "days": 30,
  "items": [
   {
@@ -23,11 +23,11 @@ window.MENU_REQUESTS = {
    "replies": [
     "[메뉴명 수정]\n산더미짬뽕(곱배기불가)\n짬뽕 으로 변경\n\n[메뉴추가]\n짬뽕곱배기\n8000원"
    ],
-   "rc": 2,
-   "lr": "1788504143.417499",
+   "rc": 3,
+   "lr": "1788504685.036749",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788504090756579"
   },
   {
@@ -47,7 +47,7 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1788504046.619099",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788504043752029"
   },
@@ -68,7 +68,7 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1788503917.033229",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788503914263689"
   },
@@ -89,7 +89,7 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1788503628.552569",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788503625402299"
   },
@@ -133,11 +133,11 @@ window.MENU_REQUESTS = {
    "replies": [
     "[유플러스]\n소 왕갈비(생) 40.000원\n소 왕갈비(양념) 39.000원으로 변경 부탁드립니다"
    ],
-   "rc": 2,
-   "lr": "1788500823.223399",
+   "rc": 3,
+   "lr": "1788504570.547499",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788500810591819"
   },
   {
@@ -56850,69 +56850,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "심성현",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785921126096119"
-  },
-  {
-   "ts": "1785912768.004399",
-   "date": "2026-08-05",
-   "time": "15:52",
-   "store": "국밥집",
-   "biz": "1434101522",
-   "pos": "토스포스",
-   "content": "토스POS 메뉴등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1785912830.259729",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785912768004399"
-  },
-  {
-   "ts": "1785912753.618769",
-   "date": "2026-08-05",
-   "time": "15:52",
-   "store": "멕시카나 망포점",
-   "biz": "3302901497",
-   "pos": "기타",
-   "content": "키오스크 메뉴 등록",
-   "special": "생맥주 판매",
-   "drive": [
-    "https://drive.google.com/file/d/1Rq-SlVTo2U9f6QADeBUku9W10dma1Bfn/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "1Rq-SlVTo2U9f6QADeBUku9W10dma1Bfn",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "치치콜 세트",
-       "name": "치치콜 세트",
-       "price": 8000
-      },
-      {
-       "category": "치치콜 세트",
-       "name": "치치콜 세트 (음료 제외 시)",
-       "price": 7000
-      }
-     ]
-    }
-   ],
-   "replies": [
-    ":telephone_receiver: 전화 완료"
-   ],
-   "rc": 2,
-   "lr": "1785919778.579179",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785912753618769"
   }
  ],
  "ocr": {
