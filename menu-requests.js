@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1584,
- "updatedAt": "2026-09-04 15:14",
+ "version": 1585,
+ "updatedAt": "2026-09-04 15:21",
  "days": 30,
  "items": [
   {
@@ -24,10 +24,10 @@ window.MENU_REQUESTS = {
     "[기존]\nhttps://partners.tossplace.com/merchants/474674  (고유번호: ···)\n\n[변경 후]\nhttps://partners.tossplace.com/merchants/627316(고유번호: ···)",
     "저녁 장사로 인해 조금 빠른 진행 요청주셨습니다! (CC. )"
    ],
-   "rc": 6,
-   "lr": "1788502398.394149",
+   "rc": 7,
+   "lr": "1788502852.727339",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788501528796339"
   },
