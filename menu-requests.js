@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1574,
- "updatedAt": "2026-09-04 14:22",
+ "version": 1575,
+ "updatedAt": "2026-09-04 14:26",
  "days": 30,
  "items": [
+  {
+   "ts": "1788499484.508249",
+   "date": "2026-09-04",
+   "time": "14:24",
+   "store": "아찌라멘 울산점",
+   "biz": "4153300410",
+   "pos": "기타",
+   "content": "카테고리라멘 에비(새우살)라멘 단품 11500, 정식 14500",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1788499487.421799",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788499484508249"
+  },
   {
    "ts": "1788499278.988849",
    "date": "2026-09-04",
@@ -24,7 +45,7 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1788499281.973279",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788499278988849"
   },
@@ -248,10 +269,10 @@ window.MENU_REQUESTS = {
    "replies": [
     "https://w1659946222-hxm266180.slack.com/archives/C0A7CLLANP7/p1788496166185249?thread_ts=···.219249&cid=C0A7CLLANP7"
    ],
-   "rc": 2,
-   "lr": "1788496339.907609",
+   "rc": 3,
+   "lr": "1788499480.911109",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788496336232979"
   },
