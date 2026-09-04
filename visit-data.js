@@ -1,10 +1,10 @@
 /*
  * 방문설치 채널(#ishopcare_new_방문설치) 적재 — 자동 생성 파일
  * 직접 수정하지 마세요. scripts/fetch-visits.js 가 덮어씁니다.
- * 갱신: 2026-09-04 11:55 KST · 120건 (2026-07-01 이후)
+ * 갱신: 2026-09-04 11:57 KST · 121건 (2026-07-01 이후)
  */
 window.VISIT_DATA = {
-  updatedAt: '2026-09-04 11:55',
+  updatedAt: '2026-09-04 11:57',
   records: [
   {"id":"11366","date":"2026-07-01","time":"09:40","store":"(주)참치공방(종각본점)","biz":"2338800379","kind":"AS","status":"done","visitDate":"2026-07-01","region":"수도권","route":"온라인","addr":"서울특별시 종로구","van":"DAOU","equip":"dk9300 용지 끼임 점검","ship":"","delivery":"","requester":"","assignee":"이성철","rounds":0,"roundDates":[],"brand":"참치공방"},
   {"id":"11367","date":"2026-07-01","time":"09:45","store":"참치공방 시청지점","biz":"7368501084","kind":"AS","status":"done","visitDate":"2026-07-01","region":"수도권","route":"오프라인","addr":"서울특별시 중구","van":"DAOU","equip":"DK 9300","ship":"","delivery":"","requester":"","assignee":"이성철","rounds":4,"roundDates":["2025-04-22","2025-06-04","2026-05-12","2026-07-01","2025-04-22","2025-06-04","2026-05-12","2026-07-01"],"brand":"참치공방"},
@@ -126,5 +126,6 @@ window.VISIT_DATA = {
   {"id":"14120","date":"2026-09-04","time":"10:04","store":"휴대폰성지휴맛집제천점","biz":"6491003460","kind":"설치","status":"pending","visitDate":"2026-09-07","region":"지방","route":"온라인","addr":"충청북도 제천시","van":"KOCES","equip":"자체 pc + 프론트 + 유선 프린터기","ship":"","delivery":"","requester":"","assignee":"에스포스","rounds":0,"roundDates":[],"brand":"휴대폰성지"},
   {"id":"14123","date":"2026-09-04","time":"10:42","store":"미친피자 금천점","biz":"4593201537","kind":"설치","status":"pending","visitDate":"2026-09-07","region":"수도권","route":"오프라인","addr":"서울특별시 금천구","van":"KIS","equip":"개인 PC + 프론트 1EA","ship":"2026-09-03","delivery":"","requester":"","assignee":"","rounds":0,"roundDates":[],"brand":"미친피자"},
   {"id":"14128","date":"2026-09-04","time":"11:36","store":"신전떡볶이쌍용동나사렛대점","biz":"2675600653","kind":"설치","status":"done","visitDate":"2026-09-08","region":"지방","route":"온라인","addr":"충청남도 천안시 서북구","van":"KOCES","equip":"토스포스(기존포스기) + 유선프린터","ship":"2026-09-02","delivery":"","requester":"","assignee":"","rounds":0,"roundDates":[],"brand":"신전떡볶이"},
+  {"id":"14130","date":"2026-09-04","time":"11:56","store":"미친피자 평택점","biz":"1251726762","kind":"설치","status":"pending","visitDate":"2026-09-07","region":"지방","route":"오프라인","addr":"경기도 평택시","van":"NICE","equip":"개인PC + 프론트 1EA","ship":"2026-09-03","delivery":"","requester":"","assignee":"","rounds":0,"roundDates":[],"brand":"미친피자"},
   ],
 };
