@@ -3,10 +3,58 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1548,
- "updatedAt": "2026-09-04 10:12",
+ "version": 1549,
+ "updatedAt": "2026-09-04 10:17",
  "days": 30,
  "items": [
+  {
+   "ts": "1788484450.879859",
+   "date": "2026-09-04",
+   "time": "10:14",
+   "store": "실타래(Siltarae)",
+   "biz": "5433201716",
+   "pos": "",
+   "content": "메뉴 등록 부탁 드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "i_f4befc00784e.png",
+     "fid": "F0BUVB6RCNS",
+     "from": "댓글",
+     "path": "menu-files/1788484450_879859-0.png",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "name": "i_c65699313e05.png",
+     "fid": "F0BUX8X6A2E",
+     "from": "댓글",
+     "path": "menu-files/1788484450_879859-1.png",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "name": "i_1150de7c13bc.png",
+     "fid": "F0BUX8X7602",
+     "from": "댓글",
+     "path": "menu-files/1788484450_879859-2.png",
+     "kind": "product_photo",
+     "menu": []
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "버터소금빵 . 4500\n블루베리 크럼블 타르트 4800\n치즈 쫀득 타르트 4800"
+   ],
+   "rc": 2,
+   "lr": "1788484489.710719",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788484450879859"
+  },
   {
    "ts": "1788484098.025589",
    "date": "2026-09-04",
@@ -44,7 +92,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BUVA33YK0",
      "from": "댓글",
-     "path": "menu-files/1788483988_462869-0.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -157,13 +204,13 @@ window.MENU_REQUESTS = {
        "name": "배달료1000",
        "price": 1000
       }
-     ]
+     ],
+     "path": "menu-files/1788483988_462869-0.png"
     },
     {
      "name": "image.png",
      "fid": "F0C0BKHJYMN",
      "from": "댓글",
-     "path": "menu-files/1788483988_462869-1.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -251,13 +298,13 @@ window.MENU_REQUESTS = {
        "name": "순두부짬뽕우동",
        "price": 8500
       }
-     ]
+     ],
+     "path": "menu-files/1788483988_462869-1.png"
     },
     {
      "name": "image.png",
      "fid": "F0BUX83QUBU",
      "from": "댓글",
-     "path": "menu-files/1788483988_462869-2.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -340,13 +387,13 @@ window.MENU_REQUESTS = {
        "name": "어묵탕",
        "price": 7000
       }
-     ]
+     ],
+     "path": "menu-files/1788483988_462869-2.png"
     },
     {
      "name": "image.png",
      "fid": "F0BUFT7MZ1D",
      "from": "댓글",
-     "path": "menu-files/1788483988_462869-3.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -394,13 +441,13 @@ window.MENU_REQUESTS = {
        "name": "새우오므라이스",
        "price": 11000
       }
-     ]
+     ],
+     "path": "menu-files/1788483988_462869-3.png"
     },
     {
      "name": "image.png",
      "fid": "F0BUZ6B275F",
      "from": "댓글",
-     "path": "menu-files/1788483988_462869-4.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -503,13 +550,13 @@ window.MENU_REQUESTS = {
        "name": "소불고기덮밥",
        "price": 9000
       }
-     ]
+     ],
+     "path": "menu-files/1788483988_462869-4.png"
     },
     {
      "name": "image.png",
      "fid": "F0BUVAFQNRL",
      "from": "댓글",
-     "path": "menu-files/1788483988_462869-5.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -552,7 +599,8 @@ window.MENU_REQUESTS = {
        "name": "떡왕만두국",
        "price": 9000
       }
-     ]
+     ],
+     "path": "menu-files/1788483988_462869-5.png"
     },
     {
      "name": "image.png",
@@ -637,11 +685,11 @@ window.MENU_REQUESTS = {
    "replies": [
     "메뉴 작업 천천히하셔도됩니다"
    ],
-   "rc": 3,
-   "lr": "1788484276.614599",
+   "rc": 4,
+   "lr": "1788484286.501159",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788483988462869"
   },
   {
