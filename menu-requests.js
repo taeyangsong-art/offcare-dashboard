@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1622,
- "updatedAt": "2026-09-04 22:12",
+ "version": 1623,
+ "updatedAt": "2026-09-04 22:14",
  "days": 30,
  "items": [
   {
@@ -42,9 +42,11 @@ window.MENU_REQUESTS = {
     }
    ],
    "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1788527510.519039",
+   "replies": [
+    "안열려서..고객한테 pdf로 줄수없는지 물어봤어욤.."
+   ],
+   "rc": 4,
+   "lr": "1788527628.465789",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -66,7 +68,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BUZ5Y2X0W",
      "from": "댓글",
-     "path": "menu-files/1788523860_585799-0.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -134,13 +135,13 @@ window.MENU_REQUESTS = {
        "name": "초코르뱅 쿠키",
        "price": 4500
       }
-     ]
+     ],
+     "path": "menu-files/1788523860_585799-0.png"
     },
     {
      "name": "image.png",
      "fid": "F0BUZ5ZTSFQ",
      "from": "댓글",
-     "path": "menu-files/1788523860_585799-1.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -198,18 +199,19 @@ window.MENU_REQUESTS = {
        "name": "카페모카",
        "price": 5500
       }
-     ]
+     ],
+     "path": "menu-files/1788523860_585799-1.png"
     }
    ],
    "datt": [],
    "replies": [
     "금일중으로 꼭 등록 필요(내일 오픈)"
    ],
-   "rc": 4,
-   "lr": "1788523956.103349",
+   "rc": 5,
+   "lr": "1788527603.620529",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788523860585799"
   },
   {
