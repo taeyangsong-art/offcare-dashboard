@@ -133,6 +133,16 @@
   .vd-tbl th{width:88px; text-align:left; padding:4px 8px 4px 0; color:var(--gray);
     font-weight:600; vertical-align:top; white-space:nowrap}
   .vd-tbl td{padding:4px 0; color:var(--ink-soft); word-break:break-all}
+  .dlt{display:block; margin-top:5px; font-size:11.5px; font-weight:700}
+  .ov-tile.grand .dlt{color:rgba(255,255,255,.95)}
+  .dlt.up{color:var(--red)} .dlt.down{color:var(--green)} .dlt.flat,.dlt.new{color:var(--gray2)}
+  .ov-tile.tile-btn{cursor:pointer; transition:transform .12s, box-shadow .12s}
+  .ov-tile.tile-btn:hover{transform:translateY(-2px); box-shadow:0 6px 18px rgba(0,0,0,.10)}
+  .lead-sum{display:flex; gap:18px; padding:2px 2px 14px}
+  .lead-sum div{display:flex; flex-direction:column}
+  .lead-sum b{font-size:24px; font-weight:800; letter-spacing:-.02em}
+  .lead-sum small{font-size:12px; color:var(--gray2); font-weight:600; margin-left:2px}
+  .lead-sum span{font-size:11.5px; color:var(--gray2); font-weight:600; margin-top:2px}
   .as-brk{display:flex; flex-direction:column; gap:9px}
   .as-brk-row{display:flex; align-items:center; gap:12px; cursor:pointer;
     padding:5px 6px; border-radius:9px; transition:background .12s}
@@ -413,6 +423,7 @@ let REC = [], IS_SAMPLE = false, DATA_UPDATED = '', LOAD_ERR = '';
 let MONTHS = [], month = '', scope = 'today';
 let rangeFrom = '', rangeTo = '';        /* 기간선택 */
 let view = 'overview', recQ = '', recCat = '';
+let storeQ = '';                         /* 지점 검색어 */
 let repKpi = '';          /* 월간 보고서 상단 KPI 펼침 상태: '' | 'cat' | 'store' */
 
 /* ── 월 유틸 ────────────────────────────────────────────────── */
@@ -762,9 +773,11 @@ function viewOverview(){
     return tile('', ic, label, cb[key] || 0, '건', pct(cb[key] || 0), c.color);
   };
   const grandTile = tile('grand','📥','총 인입', rows.length,'건',
-                         esc(scopeLabel())+' · 지점 '+stores+'곳');
-  const openTile  = tile('','⏳','처리중', open,'건',
-                         open?'진행중·보류 확인 필요':'전건 처리완료', open?'#ff9500':'#34c759');
+                         esc(scopeLabel())+' · 지점 '+stores+'곳' + deltaBadge(rows.length));
+  /* 처리중은 눌러서 목록을 볼 수 있게 한다 — 본사가 가장 급한 항목이다 */
+  const openTile  = tile(open?'tile-btn':'','⏳','처리중', open,'건',
+                         open?'눌러서 목록 보기':'전건 처리완료', open?'#ff9500':'#34c759',
+                         open?'open':'');
   const tiles = [ grandTile,
                   catTile('as','🖥','원격지원'),
                   catTile('visit','🚗','현장방문'),
@@ -793,16 +806,34 @@ function viewOverview(){
     + '<span class="hint">'+esc(asKeyLabel())+' 기준 · 요청내역+처리내역으로 분류 · 유형을 누르면 목록</span></div>'
     + asIssueBreakdown(rows)+'</div>';
 
-  h += visitKindBreakdown(rows);
+  h += (function(){
+    const vk = visitKindBreakdown(rows), lt = leadTimeCard(rows);
+    if(!vk) return '';                      /* 방문 건이 없으면 둘 다 내지 않는다 */
+    return '<div class="grid2">' + vk + lt + '</div>';
+  })();
 
-  const agg = storeAgg(rows), mx = agg.length?agg[0].total:1;
+  /* 지점 검색 — 본사가 특정 가맹점 이력을 바로 찾을 수 있게 */
+  const q = storeQ.trim().toLowerCase();
+  const aggAll = storeAgg(rows);
+  const agg = q ? aggAll.filter(o => (o.branch + ' ' + o.store).toLowerCase().includes(q)) : aggAll;
+  const mx = agg.length ? agg[0].total : 1;
+  const shown = q ? agg : agg.slice(0, 10);
   h += '<div class="grid2">'
-    + '<div class="card"><div class="card-head"><h3>지점 TOP 10</h3><span class="hint">클릭하면 상세</span></div>'
-    + agg.slice(0,10).map(o=>'<div class="bar-row" style="cursor:pointer" onclick="drillStore(\''+jsq(o.branch)+'\')">'
-        + '<div class="bar-meta"><span class="nm">'+esc(o.branch)+'</span><span class="ct">'+o.total+'건'
-        + (o.onsite?' <span style="color:var(--red);font-size:11.5px">방문'+o.onsite+'</span>':'')+'</span></div>'
-        + '<div class="bar-track"><div class="bar-fill" style="width:'+(o.total/mx*100).toFixed(1)+'%"></div></div></div>').join('')
+    + '<div class="card"><div class="card-head"><h3>지점' + (q ? '' : ' TOP 10') + '</h3>'
+    + '<input type="search" id="storeQ" placeholder="지점 검색" value="' + esc(storeQ) + '"'
+    + ' style="min-width:130px;max-width:170px"></div>'
+    + (shown.length
+        ? shown.map(o => '<div class="bar-row" style="cursor:pointer" data-branch="' + esc(o.branch) + '">'
+            + '<div class="bar-meta"><span class="nm">' + esc(o.branch) + '</span><span class="ct">' + o.total + '건'
+            + (o.onsite ? ' <span style="color:var(--red);font-size:11.5px">방문' + o.onsite + '</span>' : '') + '</span></div>'
+            + '<div class="bar-track"><div class="bar-fill" style="width:' + (o.total / mx * 100).toFixed(1) + '%"></div></div></div>').join('')
+        : '<div class="empty">맞는 지점이 없습니다.</div>')
+    + (q ? '<div style="font-size:11.5px;color:var(--gray2);margin-top:8px">검색 결과 ' + agg.length + '곳</div>' : '')
     + '</div>'
+    + repeatStoresCard(rows)
+    + '</div>';
+
+  h += '<div class="grid2">'
     + '<div class="card"><div class="card-head"><h3>카테고리 분포</h3></div>'
     + '<div style="display:flex;justify-content:center">'
     + svgDonut(CATS.filter(c=>cb[c.key]).map(c=>({n:c.name,c:c.color,v:cb[c.key]})), rows.length)+'</div>'
@@ -867,8 +898,9 @@ function hourBands(rows){
   return h;
 }
 
-function tile(cls, ic, name, val, unit, sub, color){
-  return '<div class="ov-tile '+cls+'"'+(color?' style="--c:'+color+'"':'')+'>'
+function tile(cls, ic, name, val, unit, sub, color, drill){
+  return '<div class="ov-tile '+cls+'"'+(color?' style="--c:'+color+'"':'')
+    + (drill?' data-drill="'+drill+'"':'')+'>'
     + '<div class="ov-name"><span>'+ic+'</span>'+esc(name)+'</div>'
     + '<div class="ov-val">'+num(val)+'<small>'+unit+'</small></div>'
     + '<div class="ov-sub">'+sub+'</div></div>';
@@ -1148,6 +1180,120 @@ function downloadXlsx(){
   const tag = scope==='month' ? month.replace('-','')
             : (r0.from === r0.to ? r0.from : r0.from + '_' + r0.to).replace(/-/g,'');
   XLSX.download((IS_SAMPLE?'[샘플]':'')+CLIENT.name+'_원격지원_'+tag+'.xlsx', sheets);
+}
+
+/* ── 이전 기간 대비 ─────────────────────────────────────────
+   "지난달보다 늘었나 줄었나" 가 전체현황에서 안 보였다.
+   고른 기간 '바로 직전' 의 같은 길이 구간과 비교한다(월별이면 전월). */
+function prevRange(){
+  if(scope === 'month'){
+    const d = daysInYM(prevYM(month));
+    return { from:d[0], to:d[d.length-1], label:'전월 대비' };
+  }
+  const r = scopeRange();
+  const days = Math.round((dnum(r.to) - dnum(r.from)) / 86400000) + 1;
+  return { from: addD(r.from, -days), to: addD(r.from, -1), label:'이전 기간 대비' };
+}
+function deltaBadge(cur){
+  const p = prevRange();
+  const prev = REC.filter(x => x.date >= p.from && x.date <= p.to).length;
+  if(!prev && !cur) return '';
+  const d = cur - prev;
+  const tip = p.from + ' ~ ' + p.to + ' : ' + prev + '건 → ' + cur + '건';
+  if(!prev) return '<span class="dlt new" title="' + esc(tip) + '">신규 · ' + esc(p.label) + '</span>';
+  const arrow = d > 0 ? '▲' : d < 0 ? '▼' : '–';
+  const cls   = d > 0 ? 'up' : d < 0 ? 'down' : 'flat';
+  return '<span class="dlt ' + cls + '" title="' + esc(tip) + '">'
+    + arrow + ' ' + Math.abs(d) + '건 · ' + esc(p.label) + '</span>';
+}
+
+/* ── 처리중 목록 ────────────────────────────────────────────
+   숫자만 있고 눌러볼 수 없어, 본사가 가장 급한 '안 끝난 건' 을 볼 길이 없었다. */
+function drillOpen(){
+  const list = scopedRecs().filter(r => r.status !== 'done')
+    .sort((a, b) => (a.date + (a.time || '')).localeCompare(b.date + (b.time || '')));
+  const chips = '<span class="c">기간 <b>' + esc(scopeLabel()) + '</b></span>'
+    + '<span class="c">미완료 <b>' + list.length + '</b>건</span>'
+    + '<span class="c">지점 <b>' + new Set(list.map(r => r.branch)).size + '</b>곳</span>';
+  const body = list.length
+    ? '<table><thead><tr><th>접수</th><th>지점</th><th>구분</th><th>상태</th><th>담당</th><th>내용</th></tr></thead><tbody>'
+      + list.map(r => '<tr>'
+          + '<td style="white-space:nowrap;color:var(--gray)">' + r.date
+          + (r.time ? '<br><span style="color:var(--gray2)">' + esc(r.time) + '</span>' : '') + '</td>'
+          + '<td style="white-space:nowrap"><span style="color:var(--blue);cursor:pointer;font-weight:600"'
+          + ' data-branch="' + esc(r.branch) + '">' + esc(r.branch) + '</span></td>'
+          + '<td>' + catChip(r.cat) + '</td>'
+          + '<td>' + stChip(r.status) + '</td>'
+          + '<td style="white-space:nowrap">' + esc(r.emp) + '</td>'
+          + '<td class="req-cell">' + esc(r.req || '—') + '</td></tr>').join('')
+      + '</tbody></table>'
+    : '<div class="empty">미완료 건이 없습니다.</div>';
+  openDrill('⏳ 처리중 · ' + esc(scopeLabel()), chips, body);
+}
+
+/* ── 반복 인입 지점 ─────────────────────────────────────────
+   본사가 실제로 조치하고 싶은 건 '어느 가맹점이 계속 문제냐' 다.
+   월간 보고서에만 있어 평소에는 볼 수 없었다. */
+function repeatStoresCard(rows){
+  const rep = storeAgg(rows).filter(o => o.total >= 2);
+  const head = '<div class="card"><div class="card-head"><h3>⚠ 반복 인입 지점</h3>'
+    + '<span class="hint">' + esc(scopeLabel()) + ' 2건 이상 · 클릭하면 상세</span></div>';
+  if(!rep.length)
+    return head + '<div class="empty">같은 지점에서 2건 이상 인입된 곳이 없습니다.</div></div>';
+  const mx = rep[0].total;
+  return head + rep.slice(0, 10).map(o =>
+      '<div class="bar-row" style="cursor:pointer" data-branch="' + esc(o.branch) + '">'
+    + '<div class="bar-meta"><span class="nm">' + esc(o.branch) + '</span>'
+    + '<span class="ct">' + o.total + '건'
+    + (o.onsite ? ' <span style="color:var(--red);font-size:11.5px">방문' + o.onsite + '</span>' : '')
+    + '</span></div>'
+    + '<div class="bar-track"><div class="bar-fill" style="width:' + (o.total / mx * 100).toFixed(1) + '%;background:#ff9500"></div></div>'
+    + '<div style="font-size:11.5px;color:var(--gray2);margin-top:3px">'
+    + esc(Object.keys(o.cats).map(k => catName(k) + ' ' + o.cats[k]).join(' · ')) + '</div></div>').join('')
+    + (rep.length > 10 ? '<div style="font-size:11.5px;color:var(--gray2);margin-top:8px">외 '
+        + (rep.length - 10) + '곳 — 지점별 탭에서 전체 확인</div>' : '')
+    + '</div>';
+}
+
+/* ── 대응 소요 ──────────────────────────────────────────────
+   '얼마나 빨리 처리해주나' 는 수탁 대시보드의 핵심인데 지표가 없었다.
+   다만 slack-data.js 에 완료 시각이 없어 원격 건은 산출할 수 없다.
+   방문 건만 요청일→방문일로 계산하고, 원격 건은 그렇다고 밝힌다. */
+const LEAD_BANDS = [
+  { name:'당일',      test:d => d <= 0, color:'#34c759' },
+  { name:'1일',       test:d => d === 1, color:'#0071e3' },
+  { name:'2~3일',     test:d => d >= 2 && d <= 3, color:'#ff9500' },
+  { name:'4일 이상',  test:d => d >= 4, color:'#ff3b30' },
+];
+function leadTimeCard(rows){
+  const vs = rows.filter(r => r.cat === 'visit' && r.visit && r.visit.visitDate && r.date);
+  const head = '<div class="card"><div class="card-head"><h3>⏱ 방문 대응 소요</h3>'
+    + '<span class="hint">요청일 → 방문일</span></div>';
+  if(!vs.length)
+    return head + '<div class="empty">방문일자가 있는 건이 없습니다.</div></div>';
+
+  const ds = vs.map(r => Math.round((dnum(r.visit.visitDate) - dnum(r.date)) / 86400000))
+               .filter(n => n >= 0 && n < 400).sort((a, b) => a - b);
+  if(!ds.length) return head + '<div class="empty">계산할 수 있는 건이 없습니다.</div></div>';
+  const avg = ds.reduce((a, b) => a + b, 0) / ds.length;
+  const med = ds[Math.floor(ds.length / 2)];
+  const counts = LEAD_BANDS.map(b => ds.filter(b.test).length);
+  const mx = Math.max.apply(null, counts);
+
+  return head
+    + '<div class="lead-sum"><div><b>' + avg.toFixed(1) + '</b><small>일</small>'
+    + '<span>평균</span></div><div><b>' + med + '</b><small>일</small><span>중앙값</span></div>'
+    + '<div><b>' + ds[ds.length - 1] + '</b><small>일</small><span>최장</span></div></div>'
+    + LEAD_BANDS.map(function(b, i){
+        const n = counts[i];
+        return '<div class="bar-row"><div class="bar-meta"><span class="nm">' + b.name + '</span>'
+          + '<span class="ct">' + n + '건 <span style="color:var(--gray2);font-weight:600">'
+          + Math.round(n / ds.length * 100) + '%</span></span></div>'
+          + '<div class="bar-track"><div class="bar-fill" style="width:'
+          + (mx ? (n / mx * 100).toFixed(1) : 0) + '%;background:' + b.color + '"></div></div></div>';
+      }).join('')
+    + '<div style="font-size:11.5px;color:var(--gray2);margin-top:10px">'
+    + '원격 건은 완료 시각이 수집되지 않아 이 지표에서 제외됩니다.</div></div>';
 }
 
 /* ── 현장방문 (visit-data.js) ───────────────────────────────
@@ -1508,6 +1654,27 @@ function bindEvents(){
     recQ = this.value; clearTimeout(q._t);
     q._t = setTimeout(function(){ render(); const n=document.getElementById('recQ');
       if(n){ n.focus(); n.setSelectionRange(n.value.length,n.value.length); } }, 220);
+  });
+  /* 지점 막대 클릭 → 지점 상세 (지점 TOP10 · 반복 인입 공용) */
+  document.querySelectorAll('.card').forEach(function(c){
+    c.addEventListener('click', function(e){
+      const b = e.target.closest('.bar-row[data-branch]'); if(!b) return;
+      drillStore(b.dataset.branch);
+    });
+  });
+  /* 처리중 타일 → 미완료 목록 */
+  const ovt = document.querySelector('.ov-tiles');
+  if(ovt) ovt.addEventListener('click', function(e){
+    const t = e.target.closest('.ov-tile[data-drill="open"]'); if(!t) return;
+    drillOpen();
+  });
+  /* 지점 검색 — 입력 중 포커스가 날아가지 않게 커서를 되돌린다 */
+  const sq = document.getElementById('storeQ');
+  if(sq) sq.addEventListener('input', function(){
+    storeQ = this.value; clearTimeout(sq._t);
+    sq._t = setTimeout(function(){ render();
+      const n = document.getElementById('storeQ');
+      if(n){ n.focus(); n.setSelectionRange(n.value.length, n.value.length); } }, 220);
   });
   /* AS 유형별: 유형 클릭 → 해당 건 목록 */
   document.querySelectorAll('.as-brk').forEach(function(w){
