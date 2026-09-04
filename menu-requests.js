@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1578,
- "updatedAt": "2026-09-04 14:42",
+ "version": 1579,
+ "updatedAt": "2026-09-04 14:47",
  "days": 30,
  "items": [
+  {
+   "ts": "1788500810.591819",
+   "date": "2026-09-04",
+   "time": "14:46",
+   "store": "김송숯불갈비",
+   "biz": "6775200944",
+   "pos": "",
+   "content": "메뉴 가격 수정 요청 드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "[유플러스]\n소 왕갈비(생) 40.000원\n소 왕갈비(양념) 39.000원으로 변경 부탁드립니다"
+   ],
+   "rc": 2,
+   "lr": "1788500823.223399",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788500810591819"
+  },
   {
    "ts": "1788500281.134289",
    "date": "2026-09-04",
