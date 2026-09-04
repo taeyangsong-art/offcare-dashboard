@@ -1,10 +1,10 @@
 /*
  * 방문설치 채널(#ishopcare_new_방문설치) 적재 — 자동 생성 파일
  * 직접 수정하지 마세요. scripts/fetch-visits.js 가 덮어씁니다.
- * 갱신: 2026-09-04 22:20 KST · 122건 (2026-07-01 이후)
+ * 갱신: 2026-09-04 22:25 KST · 122건 (2026-07-01 이후)
  */
 window.VISIT_DATA = {
-  updatedAt: '2026-09-04 22:20',
+  updatedAt: '2026-09-04 22:25',
   records: [
   {"id":"11366","date":"2026-07-01","time":"09:40","store":"(주)참치공방(종각본점)","biz":"2338800379","kind":"AS","status":"done","visitDate":"2026-07-01","region":"수도권","route":"온라인","addr":"서울특별시 종로구","van":"DAOU","equip":"dk9300 용지 끼임 점검","ship":"","delivery":"","requester":"","assignee":"이성철","rounds":0,"roundDates":[],"brand":"참치공방"},
   {"id":"11367","date":"2026-07-01","time":"09:45","store":"참치공방 시청지점","biz":"7368501084","kind":"AS","status":"done","visitDate":"2026-07-01","region":"수도권","route":"오프라인","addr":"서울특별시 중구","van":"DAOU","equip":"DK 9300","ship":"","delivery":"","requester":"","assignee":"이성철","rounds":4,"roundDates":["2025-04-22","2025-06-04","2026-05-12","2026-07-01","2025-04-22","2025-06-04","2026-05-12","2026-07-01"],"brand":"참치공방"},
@@ -66,7 +66,7 @@ window.VISIT_DATA = {
   {"id":"12812","date":"2026-08-05","time":"09:48","store":"피자스쿨호탄점","biz":"2404701034","kind":"설치","status":"done","visitDate":"2026-08-10","region":"지방","route":"온라인","addr":"경상남도 진주시","van":"KOCES","equip":"포스 프론트 유선프린터 금전함","ship":"2026-08-05","delivery":"","requester":"","assignee":"블루스카이","rounds":0,"roundDates":[],"brand":"피자스쿨"},
   {"id":"12824","date":"2026-08-05","time":"13:49","store":"주식회사 도시곳간","biz":"3288801680","kind":"설치","status":"done","visitDate":"2026-08-06","region":"수도권","route":"오프라인","addr":"서울특별시 광진구","van":"NICE","equip":"포스기 세트 (포스+프론트+유프+금전함)","ship":"","delivery":"","requester":"","assignee":"김명석","rounds":0,"roundDates":[],"brand":"도시곳간"},
   {"id":"12830","date":"2026-08-05","time":"14:17","store":"최강흥진점잉글리시아이교습소","biz":"2619301571","kind":"설치","status":"done","visitDate":"2026-08-07","region":"수도권","route":"온라인","addr":"경기도 군포시","van":"KOCES","equip":"개인소유컴퓨터or태블릿 + 프론트2 + 유선프린터","ship":"2026-08-05","delivery":"","requester":"","assignee":"박성민","rounds":0,"roundDates":[],"brand":"잉글리시아이"},
-  {"id":"12867","date":"2026-08-06","time":"15:35","store":"컵넛 창원가로수점","biz":"1416400415","kind":"AS","status":"done","visitDate":"2026-08-10","region":"지방","route":"오프라인","addr":"경상남도 창원시 성산구","van":"KSNET","equip":"포스","ship":"2026-08-06","delivery":"","requester":"","assignee":"페이닷","rounds":0,"roundDates":[],"brand":"컵넛"},
+  {"id":"12867","date":"2026-08-06","time":"15:35","store":"컵넛 창원가로수점","biz":"1416400415","kind":"AS","status":"done","visitDate":"2026-08-10","region":"지방","route":"오프라인","addr":"경상남도 창원시 성산구","van":"KSNET","equip":"포스","ship":"2026-08-06","delivery":"","requester":"","assignee":"","rounds":0,"roundDates":[],"brand":"컵넛"},
   {"id":"12920","date":"2026-08-07","time":"15:10","store":"용용선생 부산동래점","biz":"1253501256","kind":"설치","status":"done","visitDate":"2026-08-10","region":"지방","route":"오프라인","addr":"부산광역시 동래구","van":"NICE","equip":"포스기(메인/오더) 2EA + 프론트(기보유) 1EA + NICE CAT단말기 1EA + 주방프린터기 4EA + 금전함 1EA","ship":"2026-08-06","delivery":"","requester":"","assignee":"페이닷","rounds":0,"roundDates":[],"brand":"용용선생"},
   {"id":"12928","date":"2026-08-07","time":"15:38","store":"휴대폰성지 폰명장 고무신모바일 간석점","biz":"1533501678","kind":"설치","status":"done","visitDate":"2026-08-10","region":"수도권","route":"오프라인","addr":"인천광역시 부평구","van":"KPN","equip":"[프론트, 유선프린터] 휴대폰 사용","ship":"2026-08-07","delivery":"","requester":"","assignee":"경인시스템","rounds":0,"roundDates":[],"brand":"휴대폰성지"},
   {"id":"12982","date":"2026-08-10","time":"18:52","store":"용용선생 목포평화광장점","biz":"2592201995","kind":"설치","status":"done","visitDate":"2026-08-13","region":"지방","route":"오프라인","addr":"전남광주통합특별시 목포시","van":"NICE","equip":"포스 2대(메인1/오더1) + NC8000 1대 + 주방 프린터 3대 + 금전함 1대 + 토스 프론트(기존 장비)","ship":"2026-08-11","delivery":"","requester":"","assignee":"비젼포스","rounds":0,"roundDates":[],"brand":"용용선생"},
