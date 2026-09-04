@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1617,
- "updatedAt": "2026-09-04 20:39",
+ "version": 1618,
+ "updatedAt": "2026-09-04 20:59",
  "days": 30,
  "items": [
   {
@@ -52,7 +52,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BV4FE0SLC",
      "from": "댓글",
-     "path": "menu-files/1788519235_984179-0.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -95,17 +94,18 @@ window.MENU_REQUESTS = {
        "name": "굴짬뽕(곱빼기)",
        "price": 13000
       }
-     ]
+     ],
+     "path": "menu-files/1788519235_984179-0.png"
     }
    ],
    "datt": [],
    "replies": [
     "산더미짬뽕(곱배기불가) 7000원을\n*짬뽕* 으로 변경\n\n옵션 짬뽕곱배기도 추가 요청(8000원)"
    ],
-   "rc": 4,
-   "lr": "1788521234.562629",
+   "rc": 5,
+   "lr": "1788523094.916759",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788519235984179"
   },
