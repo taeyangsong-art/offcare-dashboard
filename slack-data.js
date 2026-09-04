@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8227,
+  "version": 8228,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -151518,15 +151518,31 @@ window.SLACK_DATA = {
       }
     },
     "2026-09-04": {
-      "counts": {},
+      "counts": {
+        "menu": {
+          "서상원": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "08:40",
+          "store": "제주치유농장보메와산",
+          "biz": "8940303548",
+          "cat": "menu",
+          "emp": "서상원",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "08:42"
+      "updatedAt": "09:00"
     }
   },
   "resp": {
@@ -151688,13 +151704,17 @@ window.SLACK_DATA = {
         "post": "1788433460.906049",
         "lastSeen": 1788433522.645
       },
-      "1788478822.005229": {
-        "post": "1788478822.005229",
-        "lastSeen": 1788479130.675
+      "1788480016.347049": {
+        "post": "1788480016.347049",
+        "lastSeen": 1788480022.839
       },
-      "1788478819.516799": {
-        "post": "1788478819.516799",
-        "lastSeen": 1788479130.675
+      "1788480011.368969": {
+        "post": "1788480011.368969",
+        "lastSeen": 1788480022.839
+      },
+      "1788480010.032439": {
+        "post": "1788480010.032439",
+        "lastSeen": 1788480022.839
       }
     },
     "days": {
@@ -194510,13 +194530,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-04 08:45",
+    "at": "2026-09-04 09:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3890,
+    "rows": 3894,
     "named": 587,
     "unknownName": 0,
     "beforeStart": 0,
