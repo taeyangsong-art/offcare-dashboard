@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1555,
- "updatedAt": "2026-09-04 11:12",
+ "version": 1556,
+ "updatedAt": "2026-09-04 11:16",
  "days": 30,
  "items": [
+  {
+   "ts": "1788488067.505669",
+   "date": "2026-09-04",
+   "time": "11:14",
+   "store": "아찌라멘 울산점",
+   "biz": "4153300710",
+   "pos": "기타",
+   "content": "신메뉴 등록 카테고리  라멘 에비(새우)라멘 12500",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1788488070.493959",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788488067505669"
+  },
   {
    "ts": "1788487498.604019",
    "date": "2026-09-04",
