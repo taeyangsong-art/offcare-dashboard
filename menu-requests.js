@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1613,
- "updatedAt": "2026-09-04 18:18",
+ "version": 1614,
+ "updatedAt": "2026-09-04 19:58",
  "days": 30,
  "items": [
+  {
+   "ts": "1788519235.984179",
+   "date": "2026-09-04",
+   "time": "19:53",
+   "store": "쌍령각",
+   "biz": "6291202710",
+   "pos": "",
+   "content": "메뉴 추가 요청 드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "산더미짬뽕(곱배기불가) 7000원을\n*짬뽕* 으로 변경\n\n옵션 짬뽕곱배기도 추가 요청(8000원)"
+   ],
+   "rc": 2,
+   "lr": "1788519286.699439",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788519235984179"
+  },
   {
    "ts": "1788511236.638879",
    "date": "2026-09-04",
