@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1561,
- "updatedAt": "2026-09-04 12:34",
+ "version": 1562,
+ "updatedAt": "2026-09-04 12:38",
  "days": 30,
  "items": [
   {
@@ -21,12 +21,14 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [
-    "• 황칠 왕갈비탕\n• 황칠 전복 왕갈비탕\n위 2개 메뉴 숨김 처리되어있다고 말씀주시는데, 노출 희망하십니다!\n완료 이후 문자 한통 부탁드리겠습니다 :man-bowing:"
+    "• 황칠 왕갈비탕\n• 황칠 전복 왕갈비탕\n위 2개 메뉴 숨김 처리되어있다고 말씀주시는데, 노출 희망하십니다!\n완료 이후 문자 한통 부탁드리겠습니다 :man-bowing:",
+    "7월 14일 메뉴 숨김 > 17일 재노출 이력은 있으셨다고 말씀드렸고,\n유선으로는 해당 메뉴를 다시 노출시키고 싶다고 말씀해주시긴 하셨습니다,,!",
+    "감사합니다:man-bowing::man-bowing:"
    ],
-   "rc": 4,
-   "lr": "1788492791.511549",
+   "rc": 8,
+   "lr": "1788493099.672129",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788492208081059"
   },
