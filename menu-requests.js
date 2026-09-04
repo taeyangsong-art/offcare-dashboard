@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1589,
- "updatedAt": "2026-09-04 15:42",
+ "version": 1590,
+ "updatedAt": "2026-09-04 15:47",
  "days": 30,
  "items": [
   {
@@ -47,8 +47,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1788504046.619099",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788504043752029"
   },
   {
@@ -68,8 +68,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1788503917.033229",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788503914263689"
   },
   {
@@ -56913,148 +56913,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785912753618769"
-  },
-  {
-   "ts": "1785912244.475559",
-   "date": "2026-08-05",
-   "time": "15:44",
-   "store": "반달커피",
-   "biz": "3022363308",
-   "pos": "토스포스",
-   "content": "샌드위치 옵션 추가",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/1y_NSXjB_3jVobZG3D4tWqJKLY_Z6kkbJ/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "1y_NSXjB_3jVobZG3D4tWqJKLY_Z6kkbJ",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "",
-       "name": "슬라이스 햄 샌드",
-       "price": 7500
-      },
-      {
-       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
-       "name": "양상추제외",
-       "price": 0
-      },
-      {
-       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
-       "name": "양파제외",
-       "price": 0
-      },
-      {
-       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
-       "name": "올리브제외",
-       "price": 0
-      },
-      {
-       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
-       "name": "파프리카제외",
-       "price": 0
-      },
-      {
-       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
-       "name": "오이제외",
-       "price": 0
-      },
-      {
-       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
-       "name": "피클제외",
-       "price": 0
-      },
-      {
-       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
-       "name": "할라피뇨제외",
-       "price": 0
-      },
-      {
-       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
-       "name": "토마토제외",
-       "price": 0
-      },
-      {
-       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
-       "name": "햄 추가",
-       "price": 1000
-      },
-      {
-       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
-       "name": "베이컨 추가",
-       "price": 1000
-      },
-      {
-       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
-       "name": "에그마요 추가",
-       "price": 1000
-      },
-      {
-       "category": "샌드위치토핑(선택하시면 제외됩니다) (선택)",
-       "name": "닭가슴살 추가",
-       "price": 1500
-      },
-      {
-       "category": "치즈토핑 (필수)",
-       "name": "체다치즈",
-       "price": 0
-      },
-      {
-       "category": "치즈토핑 (필수)",
-       "name": "슈레드치즈",
-       "price": 0
-      },
-      {
-       "category": "치즈토핑 (필수)",
-       "name": "모짜렐라치즈",
-       "price": 0
-      },
-      {
-       "category": "치즈토핑 (필수)",
-       "name": "치즈 X",
-       "price": 0
-      },
-      {
-       "category": "소스선택 (필수)",
-       "name": "어니언랜치소스",
-       "price": 0
-      },
-      {
-       "category": "소스선택 (필수)",
-       "name": "스위트칠리소스",
-       "price": 0
-      },
-      {
-       "category": "소스선택 (필수)",
-       "name": "데리야끼소스",
-       "price": 0
-      },
-      {
-       "category": "소스선택 (필수)",
-       "name": "불닭소스",
-       "price": 0
-      },
-      {
-       "category": "소스선택 (필수)",
-       "name": "반달pick (어니언+칠리)",
-       "price": 0
-      }
-     ]
-    }
-   ],
-   "replies": [
-    "닭가슴살샌드위치\n베이컨샌드위치\n에그마요샌드위치\n햄샌드위치\n\n네개 메뉴에 옵션 3개 추가"
-   ],
-   "rc": 2,
-   "lr": "1785913096.429199",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785912244475559"
   }
  ],
  "ocr": {
