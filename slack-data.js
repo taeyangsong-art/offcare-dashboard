@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8229,
+  "version": 8230,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -151357,9 +151357,9 @@ window.SLACK_DATA = {
           {
             "key": "2026년 9월 3일 오후 1:16:15|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787635083228649#1",
             "handler": "김규빈",
-            "status": "",
+            "status": "일정등록완료",
             "recvDate": "2026-09-03",
-            "planDate": "",
+            "planDate": "2026-09-10",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787635083228649"
           },
           {
@@ -151556,18 +151556,11 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:00"
+      "updatedAt": "09:07"
     }
   },
   "resp": {
     "watch": {
-      "1788307596.403259": {
-        "post": "1788307596.403259",
-        "lastSeen": 1788380129.535,
-        "r": 1,
-        "day": "2026-09-02",
-        "idx": 0
-      },
       "1788317974.458459": {
         "post": "1788317974.458459",
         "lastSeen": 1788380129.535,
@@ -151720,10 +151713,14 @@ window.SLACK_DATA = {
       },
       "1788480011.368969": {
         "post": "1788480011.368969",
-        "lastSeen": 1788480378.685,
+        "lastSeen": 1788480501.349,
         "r": 1,
         "day": "2026-09-04",
         "idx": 1
+      },
+      "1788480010.032439": {
+        "post": "1788480010.032439",
+        "lastSeen": 1788480501.349
       }
     },
     "days": {
@@ -194563,7 +194560,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-04 09:06",
+    "at": "2026-09-04 09:08",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
@@ -194575,11 +194572,11 @@ window.SLACK_DATA = {
     "beforeStart": 0,
     "done": 587,
     "byStatus": {
-      "일정등록완료": 369,
+      "일정등록완료": 370,
       "1차부재": 134,
       "점주직접접수": 48,
       "설치불가": 10,
-      "(빈칸)": 4,
+      "(빈칸)": 3,
       "자가설치": 18,
       "설치보류요청": 4
     }
