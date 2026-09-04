@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1586,
- "updatedAt": "2026-09-04 15:23",
+ "version": 1587,
+ "updatedAt": "2026-09-04 15:34",
  "days": 30,
  "items": [
+  {
+   "ts": "1788503625.402299",
+   "date": "2026-09-04",
+   "time": "15:33",
+   "store": "아찌라멘 울산점",
+   "biz": "4153300710",
+   "pos": "기타",
+   "content": "에비동 단품12500 에비동 정식15500",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1788503628.552569",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788503625402299"
+  },
   {
    "ts": "1788501528.796339",
    "date": "2026-09-04",
