@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1560,
- "updatedAt": "2026-09-04 12:30",
+ "version": 1561,
+ "updatedAt": "2026-09-04 12:34",
  "days": 30,
  "items": [
   {
@@ -23,8 +23,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "• 황칠 왕갈비탕\n• 황칠 전복 왕갈비탕\n위 2개 메뉴 숨김 처리되어있다고 말씀주시는데, 노출 희망하십니다!\n완료 이후 문자 한통 부탁드리겠습니다 :man-bowing:"
    ],
-   "rc": 2,
-   "lr": "1788492222.097189",
+   "rc": 4,
+   "lr": "1788492791.511549",
    "rfx": 3,
    "status": "confirm",
    "handler": "김규빈",
