@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1563,
- "updatedAt": "2026-09-04 13:29",
+ "version": 1564,
+ "updatedAt": "2026-09-04 13:30",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BUTQELJBX",
      "from": "원글",
-     "path": "menu-files/1788495944_435849-0.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -101,13 +100,22 @@ window.MENU_REQUESTS = {
        "name": "메리골드, 국화, 목련, 벚꽃, 유자, 자몽 ( hot / ice )",
        "price": 5500
       }
-     ]
+     ],
+     "path": "menu-files/1788495944_435849-0.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUTR04BV3",
+     "from": "댓글",
+     "path": "menu-files/1788495944_435849-1.png",
+     "kind": "other",
+     "menu": []
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1788496151.951739",
+   "rc": 3,
+   "lr": "1788496203.413649",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
