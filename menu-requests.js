@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1566,
- "updatedAt": "2026-09-04 13:38",
+ "version": 1567,
+ "updatedAt": "2026-09-04 13:43",
  "days": 30,
  "items": [
   {
@@ -42,6 +42,21 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 1,
    "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BUTR04BV3",
+     "from": "댓글",
+     "kind": "other",
+     "menu": [],
+     "path": "menu-files/1788495944_435849-1.png"
+    },
+    {
+     "name": "상품목록-260904133703.xlsx",
+     "fid": "F0BV1TLU5FE",
+     "from": "댓글",
+     "path": "menu-files/1788495944_435849-2.xlsx",
+     "nj": 1
+    },
     {
      "name": "image.png",
      "fid": "F0BUTQELJBX",
@@ -125,21 +140,6 @@ window.MENU_REQUESTS = {
       }
      ],
      "path": "menu-files/1788495944_435849-0.png"
-    },
-    {
-     "name": "image.png",
-     "fid": "F0BUTR04BV3",
-     "from": "댓글",
-     "kind": "other",
-     "menu": [],
-     "path": "menu-files/1788495944_435849-1.png"
-    },
-    {
-     "name": "상품목록-260904133703.xlsx",
-     "fid": "F0BV1TLU5FE",
-     "from": "댓글",
-     "path": "menu-files/1788495944_435849-2.xlsx",
-     "nj": 1
     }
    ],
    "datt": [],
