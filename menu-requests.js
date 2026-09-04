@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1599,
- "updatedAt": "2026-09-04 16:36",
+ "version": 1600,
+ "updatedAt": "2026-09-04 16:42",
  "days": 30,
  "items": [
+  {
+   "ts": "1788507677.221949",
+   "date": "2026-09-04",
+   "time": "16:41",
+   "store": "그란데커피",
+   "biz": "1073364036",
+   "pos": "",
+   "content": "메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1788507682.093039",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788507677221949"
+  },
   {
    "ts": "1788507157.300789",
    "date": "2026-09-04",
@@ -815,15 +836,14 @@ window.MENU_REQUESTS = {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkwNF8xNTA3MD",
      "fid": "F0BUHSH9PJT",
      "from": "댓글",
-     "path": "menu-files/1788506972_687589-0.jpeg",
      "kind": "pos_screen",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1788506972_687589-0.jpeg"
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkwNF8xNTA3MT",
      "fid": "F0BUHSJFP2B",
      "from": "댓글",
-     "path": "menu-files/1788506972_687589-1.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -871,13 +891,13 @@ window.MENU_REQUESTS = {
        "name": "국물닭발",
        "price": 23000
       }
-     ]
+     ],
+     "path": "menu-files/1788506972_687589-1.jpeg"
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkwNF8xNTA3Mj",
      "fid": "F0BUX9RD4BG",
      "from": "댓글",
-     "path": "menu-files/1788506972_687589-2.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -900,25 +920,321 @@ window.MENU_REQUESTS = {
        "name": "쭉쭉오징어",
        "price": 17000
       }
-     ]
+     ],
+     "path": "menu-files/1788506972_687589-2.jpeg"
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkwNF8xNTA3Mz",
      "fid": "F0BV15MJ6TB",
      "from": "댓글",
-     "path": "menu-files/1788506972_687589-3.jpeg"
+     "path": "menu-files/1788506972_687589-3.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "오리지날순살치킨",
+       "price": 23000
+      },
+      {
+       "category": "",
+       "name": "바짤로윙/봉",
+       "price": 19000
+      },
+      {
+       "category": "",
+       "name": "통오징어튀김",
+       "price": 18000
+      },
+      {
+       "category": "",
+       "name": "통마늘닭중집튀김",
+       "price": 18000
+      },
+      {
+       "category": "",
+       "name": "한가득감자튀김",
+       "price": 17000
+      },
+      {
+       "category": "",
+       "name": "옛날통닭",
+       "price": 16000
+      }
+     ]
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkwNF8xNTA3Mz",
      "fid": "F0BUT0Q9N03",
      "from": "댓글",
-     "path": "menu-files/1788506972_687589-4.jpeg"
+     "path": "menu-files/1788506972_687589-4.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "크림생맥주(470ml)",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "레몬생맥주(470ml)",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "카스",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "참이슬",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "진로",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "청하",
+       "price": 6500
+      },
+      {
+       "category": "",
+       "name": "한라산",
+       "price": 6500
+      },
+      {
+       "category": "",
+       "name": "테라",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "참",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "새로",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "짐빔하이볼",
+       "price": 8500
+      },
+      {
+       "category": "",
+       "name": "산토리하이볼",
+       "price": 8500
+      },
+      {
+       "category": "",
+       "name": "봄베이하이볼",
+       "price": 8500
+      },
+      {
+       "category": "",
+       "name": "토닉워터",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "자몽하이볼",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "블루레몬하이볼",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "청포도하이볼",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "맥스웰히트",
+       "price": 9500
+      },
+      {
+       "category": "",
+       "name": "레몬슬라이스",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "화요25",
+       "price": 26000
+      },
+      {
+       "category": "",
+       "name": "화요41",
+       "price": 43000
+      },
+      {
+       "category": "",
+       "name": "스텔라 생맥",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "스텔라 생맥",
+       "price": 6500
+      },
+      {
+       "category": "",
+       "name": "스텔라생맥 4잔",
+       "price": 20000
+      }
+     ]
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkwNF8xNTA3ND",
      "fid": "F0BUX9SNR6J",
      "from": "댓글",
-     "path": "menu-files/1788506972_687589-5.jpeg"
+     "path": "menu-files/1788506972_687589-5.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "스팸김치볶음밥",
+       "price": 9500
+      },
+      {
+       "category": "",
+       "name": "짜파구리",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "모찌리도후",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "야끼교자만두",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "아이스파인샤베트",
+       "price": 8500
+      },
+      {
+       "category": "",
+       "name": "아이스황도",
+       "price": 8500
+      },
+      {
+       "category": "",
+       "name": "계란말이",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "얼큰번데기탕",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "들기름막국수",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "감자전",
+       "price": 12000
+      },
+      {
+       "category": "",
+       "name": "오므라이스",
+       "price": 14000
+      },
+      {
+       "category": "",
+       "name": "팥빙수",
+       "price": 6500
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkwNF8xNTA3ND",
+     "fid": "F0BUX9T54F8",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "오뎅추가",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "라면사리",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "우동사리",
+       "price": 3000
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkwNF8xNTA3NT",
+     "fid": "F0BV15P34JD",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "음료",
+       "price": 2500
+      },
+      {
+       "category": "",
+       "name": "과자",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "컵라면",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "햇반",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "아이스크림",
+       "price": 1500
+      },
+      {
+       "category": "",
+       "name": "한라토닉 세트",
+       "price": 13500
+      },
+      {
+       "category": "",
+       "name": "소주토닉 세트",
+       "price": 12000
+      },
+      {
+       "category": "",
+       "name": "토닉 세트",
+       "price": 7000
+      },
+      {
+       "category": "",
+       "name": "스팸김치볶음밥",
+       "price": 9500
+      }
+     ]
     }
    ],
    "datt": [],
@@ -947,8 +1263,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1788506811.198299",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788506808331539"
   },
   {
