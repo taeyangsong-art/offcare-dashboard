@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1604,
- "updatedAt": "2026-09-04 17:00",
+ "version": 1605,
+ "updatedAt": "2026-09-04 17:06",
  "days": 30,
  "items": [
+  {
+   "ts": "1788509108.175859",
+   "date": "2026-09-04",
+   "time": "17:05",
+   "store": "홍제동 순두부 우동국수",
+   "biz": "5290703720",
+   "pos": "",
+   "content": "메뉴",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "https://w1659946222-hxm266180.slack.com/archives/C0A7CLLANP7/p1788509046613119?thread_ts=···.219249&cid=C0A7CLLANP7"
+   ],
+   "rc": 2,
+   "lr": "1788509114.308979",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788509108175859"
+  },
   {
    "ts": "1788507677.221949",
    "date": "2026-09-04",
@@ -498,15 +521,49 @@ window.MENU_REQUESTS = {
      "from": "댓글",
      "kind": "pos_screen",
      "menu": []
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BUV3WBRNH",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "볶음요리",
+       "name": "오징볶음",
+       "price": 16000
+      },
+      {
+       "category": "볶음요리",
+       "name": "두부김치",
+       "price": 15000
+      },
+      {
+       "category": "볶음요리",
+       "name": "순대볶음",
+       "price": 20000
+      },
+      {
+       "category": "볶음요리",
+       "name": "제육볶음",
+       "price": 15000
+      },
+      {
+       "category": "볶음요리",
+       "name": "쭈나오제육볶음",
+       "price": 17000
+      }
+     ]
     }
    ],
    "datt": [],
    "replies": [
     "오돌뼈..?",
-    "사진다시보내라고하겟음 ㄷㄱ"
+    "사진다시보내라고하겟음 ㄷㄱ",
+    "청량한 사진 도착"
    ],
-   "rc": 8,
-   "lr": "1788508808.766789",
+   "rc": 10,
+   "lr": "1788509152.986749",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
