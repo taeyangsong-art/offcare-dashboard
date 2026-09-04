@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1564,
- "updatedAt": "2026-09-04 13:30",
+ "version": 1565,
+ "updatedAt": "2026-09-04 13:34",
  "days": 30,
  "items": [
+  {
+   "ts": "1788496336.232979",
+   "date": "2026-09-04",
+   "time": "13:32",
+   "store": "보람 노원직영점",
+   "biz": "2020853846",
+   "pos": "",
+   "content": "메뉴",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "https://w1659946222-hxm266180.slack.com/archives/C0A7CLLANP7/p1788496166185249?thread_ts=···.219249&cid=C0A7CLLANP7"
+   ],
+   "rc": 2,
+   "lr": "1788496339.907609",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788496336232979"
+  },
   {
    "ts": "1788495944.435849",
    "date": "2026-09-04",
@@ -107,15 +130,18 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BUTR04BV3",
      "from": "댓글",
-     "path": "menu-files/1788495944_435849-1.png",
      "kind": "other",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1788495944_435849-1.png"
     }
    ],
    "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1788496203.413649",
+   "replies": [
+    "악 여기 토플파 복제 되었나봐요\n\n2층  신규오픈 카페 에서만 쓰실꺼고\n오늘 방문설치라 1층에 [코발토] 카테고리로 임시등록했어요 ㅠㅠ\n\nhttps://partners.tossplace.com/merchants/635847/settings/catalog\n\n이 토플파에는 메뉴판 기준으로만 등록 되어야해요..!\n• 스무디\n• 클라우드 \n• 커피&티",
+    "네 감사합니다!!!"
+   ],
+   "rc": 6,
+   "lr": "1788496406.011109",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
@@ -159,9 +185,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1788488070.493959",
+   "replies": [
+    "선유님! 이제 잘 들어온다요 그쵸! :amaze:"
+   ],
+   "rc": 2,
+   "lr": "1788496440.977039",
    "rfx": 3,
    "status": "done",
    "handler": "김규빈",
