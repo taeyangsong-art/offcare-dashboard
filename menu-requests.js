@@ -3,10 +3,116 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1562,
- "updatedAt": "2026-09-04 12:38",
+ "version": 1563,
+ "updatedAt": "2026-09-04 13:29",
  "days": 30,
  "items": [
+  {
+   "ts": "1788495944.435849",
+   "date": "2026-09-04",
+   "time": "13:25",
+   "store": "코발토",
+   "biz": "6058703346",
+   "pos": "토스포스",
+   "content": "토스포스 / 메뉴 등록 요청 드립니다!",
+   "special": "",
+   "drive": [],
+   "files": 1,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BUTQELJBX",
+     "from": "원글",
+     "path": "menu-files/1788495944_435849-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "Smoothie",
+       "name": "와이낫진생",
+       "price": 12000
+      },
+      {
+       "category": "Smoothie",
+       "name": "코발토 호라이즌",
+       "price": 9500
+      },
+      {
+       "category": "Smoothie",
+       "name": "선셋 체리",
+       "price": 9500
+      },
+      {
+       "category": "Smoothie",
+       "name": "블루베리 나이트",
+       "price": 10000
+      },
+      {
+       "category": "Smoothie",
+       "name": "피치 오로라",
+       "price": 10000
+      },
+      {
+       "category": "Cloud",
+       "name": "말차 클라우드",
+       "price": 8500
+      },
+      {
+       "category": "Cloud",
+       "name": "베리 클라우드",
+       "price": 8500
+      },
+      {
+       "category": "Cloud",
+       "name": "초코 클라우드",
+       "price": 8500
+      },
+      {
+       "category": "Cloud",
+       "name": "말차 베리 클라우드",
+       "price": 9000
+      },
+      {
+       "category": "Cloud",
+       "name": "초코 베리 클라우드",
+       "price": 9000
+      },
+      {
+       "category": "Coffee & Tea",
+       "name": "아메리카노 ( hot / ice )",
+       "price": 5500
+      },
+      {
+       "category": "Coffee & Tea",
+       "name": "카페라떼 ( ice only )",
+       "price": 6000
+      },
+      {
+       "category": "Coffee & Tea",
+       "name": "바닐라라떼 ( ice only )",
+       "price": 6500
+      },
+      {
+       "category": "Coffee & Tea",
+       "name": "아인슈페너 ( ice only )",
+       "price": 7000
+      },
+      {
+       "category": "Tea",
+       "name": "메리골드, 국화, 목련, 벚꽃, 유자, 자몽 ( hot / ice )",
+       "price": 5500
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1788496151.951739",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788495944435849"
+  },
   {
    "ts": "1788492208.081059",
    "date": "2026-09-04",
