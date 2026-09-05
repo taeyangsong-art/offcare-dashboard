@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8573,
+  "version": 8574,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155540,13 +155540,13 @@ window.SLACK_DATA = {
     },
     "2026-09-05": {
       "counts": {
+        "as": {
+          "미지정": 8,
+          "송태양": 24
+        },
         "onboarding": {
           "미지정": 1,
           "송태양": 1
-        },
-        "as": {
-          "미지정": 7,
-          "송태양": 24
         },
         "transfer": {
           "송태양": 2
@@ -155572,6 +155572,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "14:32",
+          "store": "(주)배드민턴마켓",
+          "biz": "1098604781",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "ts121 제품으로 결제취소 진행했는데 영수증 재출력하는 방법 문의주셔서 도움요청드립니다!",
+          "hw": "",
+          "intake": "offline",
+          "note": "직전거래 재인쇄 완료"
+        },
         {
           "time": "14:05",
           "store": "화영필라테스",
@@ -155994,7 +156005,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 28,
-        "offline": 11,
+        "offline": 12,
         "unknown": 0
       },
       "updatedAt": "14:33"
@@ -156164,11 +156175,10 @@ window.SLACK_DATA = {
       },
       "1788586380.590479": {
         "post": "1788586380.590479",
-        "lastSeen": 1788586421.16
-      },
-      "1788586359.870339": {
-        "post": "1788586359.870339",
-        "lastSeen": 1788586421.16
+        "lastSeen": 1788586819.216,
+        "r": 1,
+        "day": "2026-09-05",
+        "idx": 26
       }
     },
     "days": {
@@ -201110,8 +201120,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-05": {
-        "cnt": 26,
-        "sumMin": 373.5158787608147,
+        "cnt": 28,
+        "sumMin": 381.84779847065613,
         "over": 1,
         "items": [
           {
@@ -201347,13 +201357,30 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "onboarding",
             "dmin": 21
+          },
+          {
+            "hm": "14:33",
+            "min": 4,
+            "store": "은밀한부엌",
+            "biz": "3440301026",
+            "who": "송태양",
+            "cat": "as"
+          },
+          {
+            "hm": "14:32",
+            "min": 4.3,
+            "store": "(주)배드민턴마켓",
+            "biz": "1098604781",
+            "who": "",
+            "cat": "as",
+            "dmin": 4.3
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 14:33",
+    "at": "2026-09-05 14:40",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
