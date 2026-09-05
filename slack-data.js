@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8643,
+  "version": 8644,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155540,15 +155540,15 @@ window.SLACK_DATA = {
     },
     "2026-09-05": {
       "counts": {
+        "onboarding": {
+          "최민석": 2,
+          "미지정": 4,
+          "송태양": 2
+        },
         "as": {
           "최민석": 16,
           "미지정": 17,
           "송태양": 27
-        },
-        "onboarding": {
-          "최민석": 1,
-          "미지정": 4,
-          "송태양": 2
         },
         "extern": {
           "최민석": 1
@@ -155566,6 +155566,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "19:00",
+          "store": "잰네일",
+          "biz": "7033701443",
+          "cat": "onboarding",
+          "emp": "최민석",
+          "req": "포프(노트북) + 유프 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "15분 뒤 재연락 요청 / 포프온보딩 완료"
+        },
         {
           "time": "18:34",
           "store": "말바우카페, 온새미로",
@@ -156385,7 +156396,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 56,
+        "online": 57,
         "offline": 18,
         "unknown": 0
       },
@@ -202150,7 +202161,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 19:30",
+    "at": "2026-09-05 19:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
