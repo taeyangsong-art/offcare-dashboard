@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8542,
+  "version": 8543,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,7 +155541,7 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "송태양": 19
+          "송태양": 20
         },
         "onboarding": {
           "송태양": 1
@@ -155559,6 +155559,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": ""
+        },
+        {
+          "time": "11:45",
+          "store": "",
+          "biz": "5592202254",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "주소 변경 후 최신 정보불러오기 했으나 진행되지 않아 확인 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "전산/토플파에 수정안되어있었음 수정완료"
         },
         {
           "time": "11:39",
@@ -155772,7 +155783,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 13,
+        "online": 14,
         "offline": 7,
         "unknown": 0
       },
@@ -155958,19 +155969,15 @@ window.SLACK_DATA = {
       },
       "1788576437.657379": {
         "post": "1788576437.657379",
-        "lastSeen": 1788577943.252
+        "lastSeen": 1788578125.764
       },
       "1788577880.525239": {
         "post": "1788577880.525239",
-        "lastSeen": 1788577943.252
+        "lastSeen": 1788578125.764
       },
-      "1788572700.947989": {
-        "post": "1788572700.947989",
-        "lastSeen": 1788577943.252
-      },
-      "1788575597.892429": {
-        "post": "1788575597.892429",
-        "lastSeen": 1788577943.252
+      "1788576671.308029": {
+        "post": "1788576671.308029",
+        "lastSeen": 1788578125.764
       }
     },
     "days": {
@@ -201038,7 +201045,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 12:12",
+    "at": "2026-09-05 12:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
