@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8642,
+  "version": 8643,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155543,7 +155543,7 @@ window.SLACK_DATA = {
         "as": {
           "최민석": 16,
           "미지정": 17,
-          "송태양": 26
+          "송태양": 27
         },
         "onboarding": {
           "최민석": 1,
@@ -155564,19 +155564,7 @@ window.SLACK_DATA = {
           "송태양": 1
         }
       },
-      "pending": [
-        {
-          "time": "13:00",
-          "store": "우석런드리 브런치카페",
-          "biz": "6333601598",
-          "handler": "송태양",
-          "cat": "delivery",
-          "intake": "online",
-          "reasons": [
-            "1차 부재"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
         {
           "time": "18:34",
@@ -156096,6 +156084,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "주방프린터 재설정 완료"
+        },
+        {
+          "time": "13:00",
+          "store": "우석런드리 브런치카페",
+          "biz": "6333601598",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "유프 온보딩 / 땡겨요 주문접수 프로그램 설치 , 영수증 출력 사진 1장",
+          "hw": "",
+          "intake": "online",
+          "note": "금일 오후 9시 재연락 요청"
         },
         {
           "time": "12:11",
@@ -202151,7 +202150,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 19:15",
+    "at": "2026-09-05 19:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
