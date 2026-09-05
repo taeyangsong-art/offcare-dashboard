@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8566,
+  "version": 8567,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,7 +155541,7 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "미지정": 6,
+          "미지정": 7,
           "송태양": 24
         },
         "onboarding": {
@@ -155578,6 +155578,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "현재는 정상결제됨 5G&gt;&gt;2.4G 변경사용 권해드림 5G2.4G 변경사용 권해드림"
+        },
+        {
+          "time": "13:49",
+          "store": "김송숯불갈비",
+          "biz": "6775200944",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "유플러스 포스 / 일부금액 먼저 결제 후 나머지금액을 나중에 결제진행하는 방법 문의주셔서 도움부탁드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "사용법 셀프해결하심 토스포스 사용 권해드림"
         },
         {
           "time": "13:34",
@@ -155934,7 +155945,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 23,
+        "online": 24,
         "offline": 11,
         "unknown": 0
       },
@@ -156114,13 +156125,9 @@ window.SLACK_DATA = {
         "post": "1788487200.788279",
         "lastSeen": 1788552926.026
       },
-      "1788583776.397049": {
-        "post": "1788583776.397049",
-        "lastSeen": 1788584423.076
-      },
-      "1788575597.892429": {
-        "post": "1788575597.892429",
-        "lastSeen": 1788584423.076
+      "1788576671.308029": {
+        "post": "1788576671.308029",
+        "lastSeen": 1788584672.823
       }
     },
     "days": {
@@ -201062,8 +201069,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-05": {
-        "cnt": 24,
-        "sumMin": 339.6327400604884,
+        "cnt": 25,
+        "sumMin": 352.49194757938386,
         "over": 1,
         "items": [
           {
@@ -201281,13 +201288,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 7.7
+          },
+          {
+            "hm": "13:49",
+            "min": 12.9,
+            "store": "김송숯불갈비",
+            "biz": "6775200944",
+            "who": "",
+            "cat": "as",
+            "dmin": 12.9
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 14:00",
+    "at": "2026-09-05 14:04",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
