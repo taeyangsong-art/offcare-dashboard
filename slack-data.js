@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8503,
+  "version": 8504,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,11 +155541,23 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "송태양": 2
+          "송태양": 3
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:19",
+          "store": "여수힐링요트(Healing Yacht)",
+          "biz": "2450102888",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "포프(휴대폰) 카드 결제기 작동이 안된다며 긴급 점검 요청주시어 도움 부탁드립니다! (고령)",
+          "hw": "",
+          "urgent": true,
+          "intake": "online",
+          "note": "• 사용법 미숙으로 금액입력결제모드 / 전자영수증 교육 완료입니다 사용법 미숙으로 금액입력결제모드 / 전자영수증 교육 완료입니다"
+        },
         {
           "time": "09:17",
           "store": "와룡",
@@ -155570,7 +155582,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 2,
         "unknown": 0
       },
@@ -155761,16 +155773,12 @@ window.SLACK_DATA = {
         "post": "1788487200.788279",
         "lastSeen": 1788552926.026
       },
-      "1788567585.410649": {
-        "post": "1788567585.410649",
-        "lastSeen": 1788567920.785,
-        "r": 1,
-        "day": "2026-09-05",
-        "idx": 0
-      },
       "1788567897.192629": {
         "post": "1788567897.192629",
-        "lastSeen": 1788567920.785
+        "lastSeen": 1788568221.938,
+        "r": 1,
+        "day": "2026-09-05",
+        "idx": 1
       }
     },
     "days": {
@@ -200712,8 +200720,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-05": {
-        "cnt": 1,
-        "sumMin": 2.0725308458010354,
+        "cnt": 2,
+        "sumMin": 4.975345361232757,
         "over": 0,
         "items": [
           {
@@ -200722,6 +200730,15 @@ window.SLACK_DATA = {
             "store": "여수힐링요트(Healing Yacht)",
             "biz": "2450102888",
             "who": "송태양",
+            "cat": "as",
+            "dmin": 8.1
+          },
+          {
+            "hm": "09:24",
+            "min": 2.9,
+            "store": "365나이스 스크린골프",
+            "biz": "1026100971",
+            "who": "송태양",
             "cat": "as"
           }
         ]
@@ -200729,7 +200746,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 09:25",
+    "at": "2026-09-05 09:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
