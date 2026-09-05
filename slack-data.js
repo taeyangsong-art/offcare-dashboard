@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8518,
+  "version": 8519,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155844,11 +155844,10 @@ window.SLACK_DATA = {
       },
       "1788572680.632479": {
         "post": "1788572680.632479",
-        "lastSeen": 1788572721.21
-      },
-      "1788572700.947989": {
-        "post": "1788572700.947989",
-        "lastSeen": 1788572721.21
+        "lastSeen": 1788573198.742,
+        "r": 1,
+        "day": "2026-09-05",
+        "idx": 5
       }
     },
     "days": {
@@ -200790,8 +200789,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-05": {
-        "cnt": 5,
-        "sumMin": 26.580204244454706,
+        "cnt": 6,
+        "sumMin": 31.235929596424107,
         "over": 0,
         "items": [
           {
@@ -200838,13 +200837,21 @@ window.SLACK_DATA = {
             "who": "송태양",
             "cat": "as",
             "dmin": 7.1
+          },
+          {
+            "hm": "10:44",
+            "min": 4.7,
+            "store": "용용선생 창원상남점",
+            "biz": "2534600811",
+            "who": "송태양",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 10:45",
+    "at": "2026-09-05 10:53",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
