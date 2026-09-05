@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8611,
+  "version": 8612,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155582,7 +155582,7 @@ window.SLACK_DATA = {
           "req": "포스에서 프론트 찾기가 안되어 도움요청드립니다! / 에듀ok 연동필요",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "에듀오케이 이용중 토스포스에서 프론트 연결 안됨 안내 완료 님 안녕하세요! 플러그인 이용시 내부적인 소프트웨어 문의 -&gt; 플러그인 회사 단말기 고장 및 프린터 관련문의 -&gt; 아이샵케어로 알아주시면 좋을 것 같습니다! 플러그인 사용 시 토스포스는 프론트 연결 부가능 합니다. 님 안녕하세요! 플러그인 이용시 내부적인 소프트웨어 문의 - 플러그인 회사"
         },
         {
           "time": "16:35",
@@ -156230,28 +156230,29 @@ window.SLACK_DATA = {
         "offline": 16,
         "unknown": 0
       },
-      "updatedAt": "16:56",
+      "updatedAt": "16:59",
       "voc": {
-        "responses": 11,
+        "responses": 13,
         "install": {
           "count": 3,
           "low": 1
         },
         "nps": {
-          "count": 11,
+          "count": 13,
           "low": 3
         },
         "high": {
           "install": 1,
-          "nps": 6
+          "nps": 7
         },
         "npsDist": {
           "2": 1,
           "4": 1,
           "5": 1,
           "7": 1,
+          "8": 1,
           "9": 1,
-          "10": 6
+          "10": 7
         },
         "installDist": {
           "2": 1,
@@ -156263,13 +156264,13 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 4,
+            "low": 0
+          },
           "구매설치": {
             "total": 3,
             "low": 1
-          },
-          "1개월": {
-            "total": 2,
-            "low": 0
           },
           "6개월": {
             "total": 1,
@@ -156282,7 +156283,11 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KOCES": {
-            "total": 3,
+            "total": 4,
+            "low": 0
+          },
+          "SMARTRO": {
+            "total": 1,
             "low": 0
           },
           "KPN": {
@@ -156524,19 +156529,15 @@ window.SLACK_DATA = {
       },
       "1788593400.294719": {
         "post": "1788593400.294719",
-        "lastSeen": 1788595041.845
+        "lastSeen": 1788595160.083
       },
       "1788594752.216469": {
         "post": "1788594752.216469",
-        "lastSeen": 1788595041.845
+        "lastSeen": 1788595160.083
       },
       "1788594968.416189": {
         "post": "1788594968.416189",
-        "lastSeen": 1788595041.845
-      },
-      "1788590182.148629": {
-        "post": "1788590182.148629",
-        "lastSeen": 1788595041.845
+        "lastSeen": 1788595160.083
       }
     },
     "days": {
@@ -201892,7 +201893,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 16:57",
+    "at": "2026-09-05 16:59",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
