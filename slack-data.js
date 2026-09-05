@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8637,
+  "version": 8638,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155545,12 +155545,13 @@ window.SLACK_DATA = {
           "미지정": 17,
           "송태양": 26
         },
-        "extern": {
-          "최민석": 1
-        },
         "onboarding": {
+          "최민석": 1,
           "미지정": 4,
           "송태양": 2
+        },
+        "extern": {
+          "최민석": 1
         },
         "transfer": {
           "송태양": 2
@@ -155586,6 +155587,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "프론트 껏켯 후 정상작동"
+        },
+        {
+          "time": "18:23",
+          "store": "본바디 에스테틱",
+          "biz": "2213169463",
+          "cat": "onboarding",
+          "emp": "최민석",
+          "req": "포프(데스크탑) 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포프유프 온보딩 완료 무음설정 완료"
         },
         {
           "time": "18:11",
@@ -156362,7 +156374,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 54,
+        "online": 55,
         "offline": 18,
         "unknown": 0
       },
@@ -156671,17 +156683,6 @@ window.SLACK_DATA = {
       "1788487200.788279": {
         "post": "1788487200.788279",
         "lastSeen": 1788552926.026
-      },
-      "1788600239.891019": {
-        "post": "1788600239.891019",
-        "lastSeen": 1788601520.151,
-        "r": 1,
-        "day": "2026-09-05",
-        "idx": 56
-      },
-      "1788590182.148629": {
-        "post": "1788590182.148629",
-        "lastSeen": 1788601520.151
       }
     },
     "days": {
@@ -202137,14 +202138,15 @@ window.SLACK_DATA = {
             "store": "본바디 에스테틱",
             "biz": "2213169463",
             "who": "최민석",
-            "cat": "as"
+            "cat": "onboarding",
+            "dmin": 26.9
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 18:45",
+    "at": "2026-09-05 18:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
