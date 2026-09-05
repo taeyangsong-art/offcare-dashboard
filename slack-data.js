@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8640,
+  "version": 8641,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155557,6 +155557,7 @@ window.SLACK_DATA = {
           "송태양": 2
         },
         "menu": {
+          "최민석": 1,
           "송태양": 2
         },
         "delivery": {
@@ -155819,6 +155820,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "온보딩 완료입니다"
+        },
+        {
+          "time": "15:36",
+          "store": "아찌라멘 울산점",
+          "biz": "4153300710",
+          "cat": "menu",
+          "emp": "최민석",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 옵션설정 완료 솔라피 발송완료"
         },
         {
           "time": "15:32",
@@ -156374,7 +156386,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 55,
+        "online": 56,
         "offline": 18,
         "unknown": 0
       },
@@ -202139,7 +202151,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 19:08",
+    "at": "2026-09-05 19:11",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
