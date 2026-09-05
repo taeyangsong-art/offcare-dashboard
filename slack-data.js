@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8516,
+  "version": 8517,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,7 +155541,7 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "송태양": 7
+          "송태양": 8
         },
         "onboarding": {
           "송태양": 1
@@ -155549,6 +155549,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:29",
+          "store": "여기는미용실",
+          "biz": "4881002885",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "핸드SOS + 캣프 이용 매장인데, 이전에 삼성페이 인식 불량 문제로 프론트 기기를 교체받고나서 잘 되는듯 하다가 또 동일한 증상 발생하였다고 주장하십니다. 원격 점검 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "• 프론트 재교체 및 입출고 접수 완료입니다 프론트 재교체 및 입출고 접수 완료입니다"
+        },
         {
           "time": "10:28",
           "store": "윤슬담에스테틱",
@@ -155640,7 +155651,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 4,
+        "online": 5,
         "offline": 4,
         "unknown": 0
       },
@@ -155830,13 +155841,6 @@ window.SLACK_DATA = {
       "1788487200.788279": {
         "post": "1788487200.788279",
         "lastSeen": 1788552926.026
-      },
-      "1788571757.780979": {
-        "post": "1788571757.780979",
-        "lastSeen": 1788572065.191,
-        "r": 1,
-        "day": "2026-09-05",
-        "idx": 4
       }
     },
     "days": {
@@ -200824,14 +200828,15 @@ window.SLACK_DATA = {
             "store": "여기는미용실",
             "biz": "4881002885",
             "who": "송태양",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 7.1
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 10:34",
+    "at": "2026-09-05 10:38",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
