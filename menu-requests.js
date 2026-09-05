@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1640,
- "updatedAt": "2026-09-05 16:23",
+ "version": 1641,
+ "updatedAt": "2026-09-05 16:41",
  "days": 30,
  "items": [
   {
@@ -56017,35 +56017,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786007203049959"
-  },
-  {
-   "ts": "1786001947.449539",
-   "date": "2026-08-06",
-   "time": "16:39",
-   "store": "생생어물시장",
-   "biz": "6867300579",
-   "pos": "",
-   "content": "바코드가 있는메뉴만 등록 요청 실제 바코드 사용예정이라고 합니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "전품목 엑셀파일.xlsx",
-     "fid": "F0BMYTRDKK9",
-     "from": "댓글",
-     "path": "menu-files/1786001947_449539-0.xlsx",
-     "nj": 1
-    }
-   ],
-   "datt": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1786066674.216819",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786001947449539"
   }
  ],
  "ocr": {
