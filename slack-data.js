@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8591,
+  "version": 8592,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156097,7 +156097,7 @@ window.SLACK_DATA = {
         "offline": 14,
         "unknown": 0
       },
-      "updatedAt": "15:37",
+      "updatedAt": "15:47",
       "voc": {
         "responses": 8,
         "install": {
@@ -156361,19 +156361,22 @@ window.SLACK_DATA = {
       },
       "1788589465.499079": {
         "post": "1788589465.499079",
-        "lastSeen": 1788590684.32
+        "lastSeen": 1788590915.816
       },
       "1788589617.000029": {
         "post": "1788589617.000029",
-        "lastSeen": 1788590684.32
+        "lastSeen": 1788590915.816
       },
       "1788589951.101459": {
         "post": "1788589951.101459",
-        "lastSeen": 1788590684.32
+        "lastSeen": 1788590915.816,
+        "r": 1,
+        "day": "2026-09-05",
+        "idx": 34
       },
-      "1788590182.148629": {
-        "post": "1788590182.148629",
-        "lastSeen": 1788590684.32
+      "1788590839.854509": {
+        "post": "1788590839.854509",
+        "lastSeen": 1788590915.816
       }
     },
     "days": {
@@ -201315,8 +201318,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-05": {
-        "cnt": 34,
-        "sumMin": 424.2648545781772,
+        "cnt": 35,
+        "sumMin": 438.414296925068,
         "over": 1,
         "items": [
           {
@@ -201624,13 +201627,21 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 13.7
+          },
+          {
+            "hm": "15:32",
+            "min": 14.1,
+            "store": "힐링STAY 체형관리센터",
+            "biz": "1860104160",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 15:44",
+    "at": "2026-09-05 15:48",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
