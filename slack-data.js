@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8629,
+  "version": 8630,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,7 +155541,7 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "최민석": 13,
+          "최민석": 14,
           "미지정": 17,
           "송태양": 26
         },
@@ -155576,6 +155576,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "17:59",
+          "store": "차차하우스(CHACHA HAUS)",
+          "biz": "7441402842",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "포스기 이용중 / 결제 시 토스포스랑 프론트와 연결 끊기며 카드 결제 오류 발생된다고 하시어 도움 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "17:56",
           "store": "여다 헤어",
@@ -156329,7 +156340,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 51,
+        "online": 52,
         "offline": 18,
         "unknown": 0
       },
@@ -156639,20 +156650,9 @@ window.SLACK_DATA = {
         "post": "1788487200.788279",
         "lastSeen": 1788552926.026
       },
-      "1788598740.375519": {
-        "post": "1788598740.375519",
-        "lastSeen": 1788599541.54,
-        "r": 1,
-        "day": "2026-09-05",
-        "idx": 53
-      },
       "1788599509.000699": {
         "post": "1788599509.000699",
-        "lastSeen": 1788599541.54
-      },
-      "1788590182.148629": {
-        "post": "1788590182.148629",
-        "lastSeen": 1788599541.54
+        "lastSeen": 1788599728.092
       }
     },
     "days": {
@@ -202081,14 +202081,15 @@ window.SLACK_DATA = {
             "store": "차차하우스(CHACHA HAUS)",
             "biz": "7441402842",
             "who": "최민석",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 14.9
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 18:12",
+    "at": "2026-09-05 18:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
