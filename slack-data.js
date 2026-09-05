@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8632,
+  "version": 8633,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155596,7 +155596,7 @@ window.SLACK_DATA = {
           "req": "포스기 이용중 / 결제 시 토스포스랑 프론트와 연결 끊기며 카드 결제 오류 발생된다고 하시어 도움 부탁드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "8912611304 / TA24078823"
         },
         {
           "time": "17:56",
@@ -156663,7 +156663,11 @@ window.SLACK_DATA = {
       },
       "1788600239.891019": {
         "post": "1788600239.891019",
-        "lastSeen": 1788600258.44
+        "lastSeen": 1788600560.247
+      },
+      "1788590182.148629": {
+        "post": "1788590182.148629",
+        "lastSeen": 1788600560.247
       }
     },
     "days": {
@@ -202109,7 +202113,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 18:24",
+    "at": "2026-09-05 18:29",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
