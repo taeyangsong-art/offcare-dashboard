@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8675,
+  "version": 8676,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156491,14 +156491,14 @@ window.SLACK_DATA = {
       },
       "updatedAt": "21:29",
       "voc": {
-        "responses": 18,
+        "responses": 19,
         "install": {
-          "count": 4,
+          "count": 5,
           "low": 1
         },
         "nps": {
-          "count": 18,
-          "low": 4
+          "count": 19,
+          "low": 5
         },
         "high": {
           "install": 2,
@@ -156507,7 +156507,7 @@ window.SLACK_DATA = {
         "npsDist": {
           "2": 1,
           "4": 1,
-          "5": 2,
+          "5": 3,
           "7": 1,
           "8": 2,
           "9": 1,
@@ -156515,15 +156515,19 @@ window.SLACK_DATA = {
         },
         "installDist": {
           "2": 1,
-          "3": 1,
+          "3": 2,
           "5": 2
         },
         "byIndustry": {
+          "서비스[뷰티,헤어]": 2,
           "서비스[학원]": 1,
-          "요식업": 2,
-          "서비스[뷰티,헤어]": 1
+          "요식업": 2
         },
         "byTenure": {
+          "구매설치": {
+            "total": 5,
+            "low": 2
+          },
           "3개월": {
             "total": 1,
             "low": 0
@@ -156536,23 +156540,19 @@ window.SLACK_DATA = {
             "total": 6,
             "low": 1
           },
-          "구매설치": {
-            "total": 4,
-            "low": 1
-          },
           "12개월": {
             "total": 5,
             "low": 1
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 7,
+            "low": 3
+          },
           "SMARTRO": {
             "total": 2,
             "low": 0
-          },
-          "KPN": {
-            "total": 6,
-            "low": 2
           },
           "KIS": {
             "total": 4,
@@ -156572,12 +156572,35 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "구매,계약과정에서 설명이 부족": 1,
           "사용중 오류가 자주 발생함": 2,
           "단말기 설치나 초기 과정이 어려움": 1,
           "고객센터 연락이 매우 힘듦": 1,
           "필요한 기능이 없거나 몰라서 불편": 1
         },
         "alerts": [
+          {
+            "time": "00:38",
+            "store": "헤어오브제",
+            "storeId": "629779",
+            "industry": "뷰티",
+            "indBucket": "서비스[뷰티,헤어]",
+            "install": 3,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "좀더 꼼꼼하게 설명해주었음 좋겠어요",
+                "cat": "구매,계약과정에서 설명이 부족"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "17:59",
             "store": "뷰티예날",
@@ -202295,7 +202318,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-06 00:30",
+    "at": "2026-09-06 00:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
