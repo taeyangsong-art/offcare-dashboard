@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8532,
+  "version": 8533,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,7 +155541,7 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "송태양": 15
+          "송태양": 16
         },
         "onboarding": {
           "송태양": 1
@@ -155549,6 +155549,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:28",
+          "store": "리에또",
+          "biz": "6313401735",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "프린터 2대 사용중, 배달 연동도 되어있는데 배민만 전표 출력 불가하다고 하셔서 배달 연동 정상 여부 점검 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "배민일반버전 삭제 및 라이트버전 재연동 완료입니다"
+        },
         {
           "time": "11:12",
           "store": "헤어삘",
@@ -155728,11 +155739,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 9,
+        "online": 10,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "11:33"
+      "updatedAt": "11:35"
     }
   },
   "resp": {
@@ -155918,14 +155929,6 @@ window.SLACK_DATA = {
       "1788487200.788279": {
         "post": "1788487200.788279",
         "lastSeen": 1788552926.026
-      },
-      "1788572700.947989": {
-        "post": "1788572700.947989",
-        "lastSeen": 1788575660.192
-      },
-      "1788575597.892429": {
-        "post": "1788575597.892429",
-        "lastSeen": 1788575660.192
       }
     },
     "days": {
@@ -200975,7 +200978,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 11:34",
+    "at": "2026-09-05 11:38",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
