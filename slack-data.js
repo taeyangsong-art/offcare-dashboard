@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8625,
+  "version": 8626,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156313,14 +156313,14 @@ window.SLACK_DATA = {
       },
       "updatedAt": "17:59",
       "voc": {
-        "responses": 13,
+        "responses": 14,
         "install": {
           "count": 3,
           "low": 1
         },
         "nps": {
-          "count": 13,
-          "low": 3
+          "count": 14,
+          "low": 4
         },
         "high": {
           "install": 1,
@@ -156329,7 +156329,7 @@ window.SLACK_DATA = {
         "npsDist": {
           "2": 1,
           "4": 1,
-          "5": 1,
+          "5": 2,
           "7": 1,
           "8": 1,
           "9": 1,
@@ -156346,8 +156346,8 @@ window.SLACK_DATA = {
         },
         "byTenure": {
           "1개월": {
-            "total": 4,
-            "low": 0
+            "total": 5,
+            "low": 1
           },
           "구매설치": {
             "total": 3,
@@ -156363,6 +156363,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 4,
+            "low": 2
+          },
           "KOCES": {
             "total": 4,
             "low": 0
@@ -156375,10 +156379,6 @@ window.SLACK_DATA = {
             "total": 3,
             "low": 2
           },
-          "KIS": {
-            "total": 3,
-            "low": 1
-          },
           "DAOU": {
             "total": 1,
             "low": 0
@@ -156389,12 +156389,34 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "사용중 오류가 자주 발생함": 2,
           "단말기 설치나 초기 과정이 어려움": 1,
           "고객센터 연락이 매우 힘듦": 1,
-          "사용중 오류가 자주 발생함": 1,
           "필요한 기능이 없거나 몰라서 불편": 1
         },
         "alerts": [
+          {
+            "time": "17:59",
+            "store": "뷰티예날",
+            "storeId": "567156",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "영수증출력이 안됨.영수증얘기하니 추가 구매또는 월사용료 내라함. 처음부터 얘기줬음 좋았을듯",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "16:06",
             "store": "헤어삘",
@@ -156596,19 +156618,18 @@ window.SLACK_DATA = {
       },
       "1788598299.786679": {
         "post": "1788598299.786679",
-        "lastSeen": 1788598759.116
+        "lastSeen": 1788598838.277,
+        "r": 1,
+        "day": "2026-09-05",
+        "idx": 51
       },
       "1788598602.644599": {
         "post": "1788598602.644599",
-        "lastSeen": 1788598759.116
+        "lastSeen": 1788598838.277
       },
       "1788598740.375519": {
         "post": "1788598740.375519",
-        "lastSeen": 1788598759.116
-      },
-      "1788590182.148629": {
-        "post": "1788590182.148629",
-        "lastSeen": 1788598759.116
+        "lastSeen": 1788598838.277
       }
     },
     "days": {
@@ -201550,8 +201571,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-05": {
-        "cnt": 51,
-        "sumMin": 785.8931783477466,
+        "cnt": 52,
+        "sumMin": 794.2083420276642,
         "over": 5,
         "items": [
           {
@@ -202012,13 +202033,21 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 65.8
+          },
+          {
+            "hm": "17:51",
+            "min": 8.3,
+            "store": "주식회사 엠에프씨21",
+            "biz": "2078157006",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 17:59",
+    "at": "2026-09-05 18:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
