@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8579,
+  "version": 8580,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,6 +155541,7 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
+          "최민석": 1,
           "미지정": 9,
           "송태양": 25
         },
@@ -155572,6 +155573,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "15:00",
+          "store": "공터영어목동프리미엄센터학원",
+          "biz": "4099984725",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "포프(노트북) 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "매장이동중 3시45분 재연락 요청"
+        },
         {
           "time": "14:59",
           "store": "골드",
@@ -156026,11 +156038,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 29,
+        "online": 30,
         "offline": 13,
         "unknown": 0
       },
-      "updatedAt": "15:00"
+      "updatedAt": "15:07"
     }
   },
   "resp": {
@@ -156186,17 +156198,10 @@ window.SLACK_DATA = {
       },
       "1788587582.835389": {
         "post": "1788587582.835389",
-        "lastSeen": 1788588296.331,
+        "lastSeen": 1788588537.652,
         "r": 1,
         "day": "2026-09-05",
         "idx": 30
-      },
-      "1788588000.519549": {
-        "post": "1788588000.519549",
-        "lastSeen": 1788588296.331,
-        "r": 1,
-        "day": "2026-09-05",
-        "idx": 28
       }
     },
     "days": {
@@ -201400,7 +201405,8 @@ window.SLACK_DATA = {
             "store": "공터영어목동프리미엄센터학원",
             "biz": "4099984725",
             "who": "최민석",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 6.9
           },
           {
             "hm": "14:59",
@@ -201424,7 +201430,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 15:05",
+    "at": "2026-09-05 15:09",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
