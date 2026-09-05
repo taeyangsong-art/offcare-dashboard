@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8596,
+  "version": 8597,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155546,8 +155546,8 @@ window.SLACK_DATA = {
           "송태양": 26
         },
         "onboarding": {
-          "미지정": 2,
-          "송태양": 1
+          "송태양": 2,
+          "미지정": 2
         },
         "transfer": {
           "송태양": 2
@@ -155583,6 +155583,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "01055966843"
+        },
+        {
+          "time": "15:47",
+          "store": "라크엘뷰티",
+          "biz": "4510803555",
+          "cat": "onboarding",
+          "emp": "송태양",
+          "req": "터프 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료입니다"
         },
         {
           "time": "15:32",
@@ -156126,7 +156137,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 36,
+        "online": 37,
         "offline": 15,
         "unknown": 0
       },
@@ -156394,18 +156405,15 @@ window.SLACK_DATA = {
       },
       "1788589465.499079": {
         "post": "1788589465.499079",
-        "lastSeen": 1788591622.954
-      },
-      "1788590839.854509": {
-        "post": "1788590839.854509",
-        "lastSeen": 1788591622.954,
-        "r": 1,
-        "day": "2026-09-05",
-        "idx": 35
+        "lastSeen": 1788591855.037
       },
       "1788591600.487079": {
         "post": "1788591600.487079",
-        "lastSeen": 1788591622.954
+        "lastSeen": 1788591855.037
+      },
+      "1788590182.148629": {
+        "post": "1788590182.148629",
+        "lastSeen": 1788591855.037
       }
     },
     "days": {
@@ -201672,7 +201680,8 @@ window.SLACK_DATA = {
             "store": "라크엘뷰티",
             "biz": "4510803555",
             "who": "송태양",
-            "cat": "as"
+            "cat": "onboarding",
+            "dmin": 15
           },
           {
             "hm": "15:26",
@@ -201688,7 +201697,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 16:00",
+    "at": "2026-09-05 16:04",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
