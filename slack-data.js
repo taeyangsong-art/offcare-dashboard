@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8584,
+  "version": 8585,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,7 +155541,7 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "미지정": 10,
+          "미지정": 11,
           "최민석": 1,
           "송태양": 26
         },
@@ -155573,6 +155573,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "15:20",
+          "store": "착한통닭",
+          "biz": "8805400786",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "프린터기 인쇄 흐릿하게 나오는 문제로 점검 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "롤러 청소 및 용지교체 후 정상출력됨"
+        },
         {
           "time": "15:09",
           "store": "브릿지움(Bridgium)#2",
@@ -156061,10 +156072,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 32,
-        "offline": 13,
+        "offline": 14,
         "unknown": 0
       },
-      "updatedAt": "15:21",
+      "updatedAt": "15:24",
       "voc": {
         "responses": 5,
         "install": {
@@ -156280,9 +156291,13 @@ window.SLACK_DATA = {
         "post": "1788487200.788279",
         "lastSeen": 1788552926.026
       },
-      "1788589233.874629": {
-        "post": "1788589233.874629",
-        "lastSeen": 1788589317.519
+      "1788589465.499079": {
+        "post": "1788589465.499079",
+        "lastSeen": 1788589586.225
+      },
+      "1788589345.880679": {
+        "post": "1788589345.880679",
+        "lastSeen": 1788589586.225
       }
     },
     "days": {
@@ -201224,8 +201239,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-05": {
-        "cnt": 32,
-        "sumMin": 406.9140013774237,
+        "cnt": 33,
+        "sumMin": 410.5472908933958,
         "over": 1,
         "items": [
           {
@@ -201515,13 +201530,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 9.7
+          },
+          {
+            "hm": "15:20",
+            "min": 3.6,
+            "store": "착한통닭",
+            "biz": "8805400786",
+            "who": "",
+            "cat": "as",
+            "dmin": 3.6
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 15:22",
+    "at": "2026-09-05 15:26",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
