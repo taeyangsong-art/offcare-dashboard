@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8599,
+  "version": 8600,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,7 +155541,7 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "최민석": 4,
+          "최민석": 5,
           "미지정": 12,
           "송태양": 26
         },
@@ -155573,6 +155573,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "16:00",
+          "store": "용용선생 창원상남점",
+          "biz": "2534600811",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "용용선생 로제투도우펀/로제천당세트가 주문서 출력불 추가옵션 등이 볶음 프린터에 나오게 설정 요청",
+          "hw": "",
+          "intake": "offline",
+          "note": "볶음프린터 설정 후 정상출력 완료"
+        },
         {
           "time": "15:51",
           "store": "용용선생 종각점",
@@ -156138,10 +156149,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 37,
-        "offline": 15,
+        "offline": 16,
         "unknown": 0
       },
-      "updatedAt": "16:06",
+      "updatedAt": "16:12",
       "voc": {
         "responses": 10,
         "install": {
@@ -156438,18 +156449,11 @@ window.SLACK_DATA = {
       },
       "1788589465.499079": {
         "post": "1788589465.499079",
-        "lastSeen": 1788592222.368
+        "lastSeen": 1788592451.202
       },
-      "1788591600.487079": {
-        "post": "1788591600.487079",
-        "lastSeen": 1788592222.368,
-        "r": 1,
-        "day": "2026-09-05",
-        "idx": 37
-      },
-      "1788590182.148629": {
-        "post": "1788590182.148629",
-        "lastSeen": 1788592222.368
+      "1788592362.790669": {
+        "post": "1788592362.790669",
+        "lastSeen": 1788592451.202
       }
     },
     "days": {
@@ -201734,14 +201738,15 @@ window.SLACK_DATA = {
             "store": "용용선생 창원상남점",
             "biz": "2534600811",
             "who": "최민석",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 12.3
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 16:10",
+    "at": "2026-09-05 16:14",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
