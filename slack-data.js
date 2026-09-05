@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8588,
+  "version": 8589,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,7 +155541,7 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "미지정": 11,
+          "미지정": 12,
           "최민석": 1,
           "송태양": 26
         },
@@ -155573,6 +155573,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "15:22",
+          "store": "커피패밀리",
+          "biz": "7721602782",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "포스기 연결끊김으로 인한 점검 요청드립니다. (고령)",
+          "hw": "",
+          "intake": "online",
+          "note": "포스, 키오스크 인터넷 안되고 공유기 재부팅해도 안됨 월요일에 KT에서 방문예정이며 결제는 스와이프로 가능"
+        },
         {
           "time": "15:20",
           "store": "착한통닭",
@@ -156071,33 +156082,47 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 32,
+        "online": 33,
         "offline": 14,
         "unknown": 0
       },
-      "updatedAt": "15:32",
+      "updatedAt": "15:37",
       "voc": {
-        "responses": 6,
+        "responses": 8,
         "install": {
-          "count": 0,
+          "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 6,
-          "low": 1
+          "count": 8,
+          "low": 2
         },
         "high": {
           "install": 0,
           "nps": 4
         },
         "npsDist": {
+          "4": 1,
           "5": 1,
+          "7": 1,
           "9": 1,
           "10": 4
         },
-        "installDist": {},
-        "byIndustry": {},
+        "installDist": {
+          "3": 1
+        },
+        "byIndustry": {
+          "요식업": 1
+        },
         "byTenure": {
+          "6개월": {
+            "total": 1,
+            "low": 1
+          },
+          "구매설치": {
+            "total": 1,
+            "low": 0
+          },
           "1개월": {
             "total": 1,
             "low": 0
@@ -156108,12 +156133,16 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
-          "KOCES": {
+          "KIS": {
+            "total": 3,
+            "low": 1
+          },
+          "DAOU": {
             "total": 1,
             "low": 0
           },
-          "KIS": {
-            "total": 2,
+          "KOCES": {
+            "total": 1,
             "low": 0
           },
           "KPN": {
@@ -156126,9 +156155,32 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1,
           "필요한 기능이 없거나 몰라서 불편": 1
         },
         "alerts": [
+          {
+            "time": "15:37",
+            "store": "로스톤",
+            "storeId": "377335",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 4,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 4,
+                "text": "프로그램 오류가 많고 ui가 카페에서 사용하기 불편함",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:21",
             "store": "완소컴퓨터",
@@ -156302,19 +156354,19 @@ window.SLACK_DATA = {
       },
       "1788589465.499079": {
         "post": "1788589465.499079",
-        "lastSeen": 1788590096.326
-      },
-      "1788589345.880679": {
-        "post": "1788589345.880679",
-        "lastSeen": 1788590096.326
+        "lastSeen": 1788590241.543
       },
       "1788589617.000029": {
         "post": "1788589617.000029",
-        "lastSeen": 1788590096.326
+        "lastSeen": 1788590241.543
       },
       "1788589951.101459": {
         "post": "1788589951.101459",
-        "lastSeen": 1788590096.326
+        "lastSeen": 1788590241.543
+      },
+      "1788590182.148629": {
+        "post": "1788590182.148629",
+        "lastSeen": 1788590241.543
       }
     },
     "days": {
@@ -201256,8 +201308,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-05": {
-        "cnt": 33,
-        "sumMin": 410.5472908933958,
+        "cnt": 34,
+        "sumMin": 424.2648545781772,
         "over": 1,
         "items": [
           {
@@ -201556,13 +201608,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 3.6
+          },
+          {
+            "hm": "15:22",
+            "min": 13.7,
+            "store": "커피패밀리",
+            "biz": "7721602782",
+            "who": "",
+            "cat": "as",
+            "dmin": 13.7
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 15:35",
+    "at": "2026-09-05 15:37",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
