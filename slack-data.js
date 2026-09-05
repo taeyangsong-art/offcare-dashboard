@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8508,
+  "version": 8509,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,11 +155541,22 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "송태양": 4
+          "송태양": 5
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:34",
+          "store": "파라다이스",
+          "biz": "2072161113",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "CAT 단말기 용지 출력 불가(출력음은 들리는데, 안에서 롤이 헛돌아서 용지가 출력되지 않는것 같다고 하심)로 문의주셔서 원격 점검 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "• MPOS1300AE 노후화 출력불로 교체안내 및 1700AE/어댑터/BRD케이블/서명패드4to6케이블출고등록 완료 • 9월 9일 수요일 방문일정 접수 완료이나 장비 월요일 출고예정으로 화요일 도착하면 직접 해보신 뒤 자체 온보딩 성공하면 연락주시겠다고 합니다. MPOS1300AE 노후화 출력불로 교체안내 및 1700AE/어댑터/BRD케이블/서명패드4to"
+        },
         {
           "time": "09:24",
           "store": "365나이스 스크린골프",
@@ -155594,10 +155605,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 1,
-        "offline": 3,
+        "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "09:34"
+      "updatedAt": "09:45"
     }
   },
   "resp": {
@@ -200751,7 +200762,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 09:45",
+    "at": "2026-09-05 09:59",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
