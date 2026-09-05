@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8511,
+  "version": 8512,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155540,12 +155540,26 @@ window.SLACK_DATA = {
     },
     "2026-09-05": {
       "counts": {
+        "onboarding": {
+          "송태양": 1
+        },
         "as": {
           "송태양": 5
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:45",
+          "store": "윤슬담에스테틱",
+          "biz": "7340703623",
+          "cat": "onboarding",
+          "emp": "송태양",
+          "req": "포프(노트북) 온보딩 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포프(노트북)+유프 온보딩 완료입니다"
+        },
         {
           "time": "09:34",
           "store": "파라다이스",
@@ -155604,7 +155618,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
+        "online": 2,
         "offline": 4,
         "unknown": 0
       },
@@ -155797,7 +155811,14 @@ window.SLACK_DATA = {
       },
       "1788570000.915809": {
         "post": "1788570000.915809",
-        "lastSeen": 1788570924.143
+        "lastSeen": 1788571101.814,
+        "r": 1,
+        "day": "2026-09-05",
+        "idx": 2
+      },
+      "1788570001.733949": {
+        "post": "1788570001.733949",
+        "lastSeen": 1788571101.814
       }
     },
     "days": {
@@ -200739,8 +200760,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-05": {
-        "cnt": 2,
-        "sumMin": 4.975345361232757,
+        "cnt": 3,
+        "sumMin": 21.843056877454124,
         "over": 0,
         "items": [
           {
@@ -200760,13 +200781,21 @@ window.SLACK_DATA = {
             "who": "송태양",
             "cat": "as",
             "dmin": 7.3
+          },
+          {
+            "hm": "10:00",
+            "min": 16.9,
+            "store": "시월요가",
+            "biz": "5592202254",
+            "who": "송태양",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 10:15",
+    "at": "2026-09-05 10:18",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
