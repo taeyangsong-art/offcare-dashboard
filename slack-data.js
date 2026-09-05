@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8499,
+  "version": 8500,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155539,15 +155539,31 @@ window.SLACK_DATA = {
       }
     },
     "2026-09-05": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "송태양": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:04",
+          "store": "미나 미용실",
+          "biz": "6320500234",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "매장에 인터넷에는 문제가 없는데 단말기에서 인터넷이 안된다는 문구가 뜬다고 하십니다. 캣프 이용 매장으로 보이는데, 원격 점검 부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "• 공유기/프론트 껐켰 후 정상작동입니다 공유기/프론트 껐켰 후 정상작동입니다"
+        }
+      ],
       "intake": {
         "online": 0,
-        "offline": 0,
+        "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:04"
+      "updatedAt": "09:17"
     }
   },
   "resp": {
@@ -200676,7 +200692,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 09:15",
+    "at": "2026-09-05 09:18",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
