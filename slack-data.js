@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8504,
+  "version": 8505,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,11 +155541,22 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "송태양": 3
+          "송태양": 4
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:24",
+          "store": "365나이스 스크린골프",
+          "biz": "1026100971",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "포프캣 이용중인 매장인데 포스에서 결제 시 캣에서 영수증 정상 출력 되다가 갑자기 출력이 안된다고 하십니다. 프린터 설정이 토스 프론트로 잡혀있긴 한데, 프론트와 CAT 연결되는 케이블의 문제로 의심되어 원격 점검 부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "• 단순 선빠짐 재결합 후 출력 정상입니다 단순 선빠짐 재결합 후 출력 정상입니다"
+        },
         {
           "time": "09:19",
           "store": "여수힐링요트(Healing Yacht)",
@@ -155583,7 +155594,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 1,
-        "offline": 2,
+        "offline": 3,
         "unknown": 0
       },
       "updatedAt": "09:24"
@@ -155772,13 +155783,6 @@ window.SLACK_DATA = {
       "1788487200.788279": {
         "post": "1788487200.788279",
         "lastSeen": 1788552926.026
-      },
-      "1788567897.192629": {
-        "post": "1788567897.192629",
-        "lastSeen": 1788568221.938,
-        "r": 1,
-        "day": "2026-09-05",
-        "idx": 1
       }
     },
     "days": {
@@ -200739,14 +200743,15 @@ window.SLACK_DATA = {
             "store": "365나이스 스크린골프",
             "biz": "1026100971",
             "who": "송태양",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 7.3
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 09:30",
+    "at": "2026-09-05 09:34",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
