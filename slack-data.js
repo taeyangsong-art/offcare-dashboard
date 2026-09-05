@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8605,
+  "version": 8606,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,7 +155541,7 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "미지정": 13,
+          "미지정": 14,
           "최민석": 6,
           "송태양": 26
         },
@@ -155573,6 +155573,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "16:22",
+          "store": "치치치",
+          "biz": "8732402227",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "포프(태블릿) / 프론트가 아래 이미지 상태로 멈춰 도움 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "업데이트 끝나고 연결 해보신다고 합니다"
+        },
         {
           "time": "16:22",
           "store": "토스팃 (toasted)",
@@ -156182,24 +156193,24 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 40,
+        "online": 41,
         "offline": 16,
         "unknown": 0
       },
-      "updatedAt": "16:30",
+      "updatedAt": "16:36",
       "voc": {
-        "responses": 10,
+        "responses": 11,
         "install": {
-          "count": 2,
+          "count": 3,
           "low": 1
         },
         "nps": {
-          "count": 10,
+          "count": 11,
           "low": 3
         },
         "high": {
-          "install": 0,
-          "nps": 5
+          "install": 1,
+          "nps": 6
         },
         "npsDist": {
           "2": 1,
@@ -156207,19 +156218,20 @@ window.SLACK_DATA = {
           "5": 1,
           "7": 1,
           "9": 1,
-          "10": 5
+          "10": 6
         },
         "installDist": {
           "2": 1,
-          "3": 1
+          "3": 1,
+          "5": 1
         },
         "byIndustry": {
-          "서비스[뷰티,헤어]": 1,
-          "요식업": 1
+          "요식업": 2,
+          "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
           "구매설치": {
-            "total": 2,
+            "total": 3,
             "low": 1
           },
           "1개월": {
@@ -156236,13 +156248,13 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 3,
+            "low": 0
+          },
           "KPN": {
             "total": 3,
             "low": 2
-          },
-          "KOCES": {
-            "total": 2,
-            "low": 0
           },
           "KIS": {
             "total": 3,
@@ -156477,21 +156489,17 @@ window.SLACK_DATA = {
         "post": "1788487200.788279",
         "lastSeen": 1788552926.026
       },
-      "1788592952.043429": {
-        "post": "1788592952.043429",
-        "lastSeen": 1788593680.865
-      },
       "1788593085.557919": {
         "post": "1788593085.557919",
-        "lastSeen": 1788593680.865
+        "lastSeen": 1788593900.001
       },
       "1788593400.294719": {
         "post": "1788593400.294719",
-        "lastSeen": 1788593680.865
+        "lastSeen": 1788593900.001
       },
-      "1788590182.148629": {
-        "post": "1788590182.148629",
-        "lastSeen": 1788593680.865
+      "1788593701.674699": {
+        "post": "1788593701.674699",
+        "lastSeen": 1788593900.001
       }
     },
     "days": {
@@ -201433,8 +201441,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-05": {
-        "cnt": 41,
-        "sumMin": 548.380091015498,
+        "cnt": 42,
+        "sumMin": 562.3532505353294,
         "over": 2,
         "items": [
           {
@@ -201805,13 +201813,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 10.2
+          },
+          {
+            "hm": "16:22",
+            "min": 14,
+            "store": "치치치",
+            "biz": "8732402227",
+            "who": "",
+            "cat": "as",
+            "dmin": 14
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 16:34",
+    "at": "2026-09-05 16:38",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
