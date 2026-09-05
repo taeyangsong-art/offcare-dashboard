@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8614,
+  "version": 8615,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155540,6 +155540,9 @@ window.SLACK_DATA = {
     },
     "2026-09-05": {
       "counts": {
+        "extern": {
+          "최민석": 1
+        },
         "as": {
           "최민석": 8,
           "미지정": 15,
@@ -155573,6 +155576,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "17:10",
+          "store": "동희헤어샵",
+          "biz": "6071609875",
+          "cat": "extern",
+          "emp": "최민석",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": "미래통신"
+        },
         {
           "time": "16:40",
           "store": "(주)포스카이학원",
@@ -156226,11 +156240,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 44,
+        "online": 45,
         "offline": 16,
         "unknown": 0
       },
-      "updatedAt": "17:00",
+      "updatedAt": "17:10",
       "voc": {
         "responses": 13,
         "install": {
@@ -156529,23 +156543,27 @@ window.SLACK_DATA = {
       },
       "1788593400.294719": {
         "post": "1788593400.294719",
-        "lastSeen": 1788595420.374
+        "lastSeen": 1788595881.07
       },
       "1788594752.216469": {
         "post": "1788594752.216469",
-        "lastSeen": 1788595420.374
+        "lastSeen": 1788595881.07
       },
       "1788594968.416189": {
         "post": "1788594968.416189",
-        "lastSeen": 1788595420.374
+        "lastSeen": 1788595881.07
       },
       "1788595201.010009": {
         "post": "1788595201.010009",
-        "lastSeen": 1788595420.374
+        "lastSeen": 1788595881.07
       },
       "1788595232.546319": {
         "post": "1788595232.546319",
-        "lastSeen": 1788595420.374
+        "lastSeen": 1788595881.07
+      },
+      "1788590182.148629": {
+        "post": "1788590182.148629",
+        "lastSeen": 1788595881.07
       }
     },
     "days": {
@@ -201901,7 +201919,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 17:03",
+    "at": "2026-09-05 17:11",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
