@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8583,
+  "version": 8584,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,8 +155541,8 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
+          "미지정": 10,
           "최민석": 1,
-          "미지정": 9,
           "송태양": 26
         },
         "onboarding": {
@@ -155573,6 +155573,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "15:09",
+          "store": "브릿지움(Bridgium)#2",
+          "biz": "2230467669",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "포프(태블릿) + 터미널 이용중인 매장인데, 토스 포스 켜둔 상태로 프론트 키오스크모드로 주문 시 터미널에서 주문서 출력이 어제부터 갑자기 안된다고 하십니다. 또한, 현재 영수증 번호 변경 해드렸는데 최신정보 불러오기도 불가한 상황입니다. 재온보딩이 ",
+          "hw": "",
+          "intake": "online",
+          "note": "포스앱 업데이트 후 정상출력"
+        },
         {
           "time": "15:00",
           "store": "공터영어목동프리미엄센터학원",
@@ -156049,11 +156060,80 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 31,
+        "online": 32,
         "offline": 13,
         "unknown": 0
       },
-      "updatedAt": "15:09"
+      "updatedAt": "15:21",
+      "voc": {
+        "responses": 5,
+        "install": {
+          "count": 0,
+          "low": 0
+        },
+        "nps": {
+          "count": 5,
+          "low": 1
+        },
+        "high": {
+          "install": 0,
+          "nps": 4
+        },
+        "npsDist": {
+          "5": 1,
+          "10": 4
+        },
+        "installDist": {},
+        "byIndustry": {},
+        "byTenure": {
+          "12개월": {
+            "total": 5,
+            "low": 1
+          }
+        },
+        "byVan": {
+          "KIS": {
+            "total": 2,
+            "low": 0
+          },
+          "KPN": {
+            "total": 2,
+            "low": 1
+          },
+          "NICE": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {
+          "필요한 기능이 없거나 몰라서 불편": 1
+        },
+        "alerts": [
+          {
+            "time": "15:21",
+            "store": "완소컴퓨터",
+            "storeId": "250200",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "카테고리가 고정된 숫자에 맞춰진 늘어진 사이즈, 표현방식이 불편하고, 카테고리에 1~3단계같은 트리구조, 또는 제조사별 분류 등 POS 발전이 더딘거같습니다.",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
+        "praises": []
+      }
     }
   },
   "resp": {
@@ -156200,9 +156280,9 @@ window.SLACK_DATA = {
         "post": "1788487200.788279",
         "lastSeen": 1788552926.026
       },
-      "1788588597.627069": {
-        "post": "1788588597.627069",
-        "lastSeen": 1788589040.901
+      "1788589233.874629": {
+        "post": "1788589233.874629",
+        "lastSeen": 1788589317.519
       }
     },
     "days": {
@@ -201144,8 +201224,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-05": {
-        "cnt": 31,
-        "sumMin": 397.2209525267284,
+        "cnt": 32,
+        "sumMin": 406.9140013774237,
         "over": 1,
         "items": [
           {
@@ -201426,13 +201506,22 @@ window.SLACK_DATA = {
             "who": "송태양",
             "cat": "as",
             "dmin": 23.4
+          },
+          {
+            "hm": "15:09",
+            "min": 9.7,
+            "store": "브릿지움(Bridgium)#2",
+            "biz": "2230467669",
+            "who": "",
+            "cat": "as",
+            "dmin": 9.7
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 15:17",
+    "at": "2026-09-05 15:22",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
