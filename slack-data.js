@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8659,
+  "version": 8660,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,7 +155541,7 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "최민석": 20,
+          "최민석": 21,
           "미지정": 17,
           "송태양": 27
         },
@@ -155566,6 +155566,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "21:26",
+          "store": "우석런드리 브런치카페",
+          "biz": "6333601598",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "유프 온보딩",
+          "hw": "",
+          "intake": "online",
+          "note": "유프 온보딩 완료"
+        },
         {
           "time": "21:06",
           "store": "오에이치 에디션(O.H EDITION)",
@@ -156451,11 +156462,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 61,
+        "online": 62,
         "offline": 19,
         "unknown": 0
       },
-      "updatedAt": "21:19",
+      "updatedAt": "21:26",
       "voc": {
         "responses": 18,
         "install": {
@@ -202261,7 +202272,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 21:25",
+    "at": "2026-09-05 21:27",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
