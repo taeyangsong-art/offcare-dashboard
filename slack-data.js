@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8620,
+  "version": 8621,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155540,13 +155540,13 @@ window.SLACK_DATA = {
     },
     "2026-09-05": {
       "counts": {
+        "as": {
+          "최민석": 11,
+          "미지정": 16,
+          "송태양": 26
+        },
         "extern": {
           "최민석": 1
-        },
-        "as": {
-          "미지정": 16,
-          "최민석": 10,
-          "송태양": 26
         },
         "onboarding": {
           "미지정": 4,
@@ -155576,6 +155576,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "17:30",
+          "store": "스시 토코",
+          "biz": "1556700701",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "포프(태블릿) / 일시불 구매한 와이파이 무프 주방용으로 연결 세팅 도움 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "30분 뒤 재연락 요청"
+        },
         {
           "time": "17:10",
           "store": "동희헤어샵",
@@ -156285,7 +156296,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 47,
+        "online": 48,
         "offline": 18,
         "unknown": 0
       },
@@ -156574,14 +156585,11 @@ window.SLACK_DATA = {
       },
       "1788594752.216469": {
         "post": "1788594752.216469",
-        "lastSeen": 1788597276.198
+        "lastSeen": 1788597924.887
       },
-      "1788597000.290939": {
-        "post": "1788597000.290939",
-        "lastSeen": 1788597276.198,
-        "r": 1,
-        "day": "2026-09-05",
-        "idx": 48
+      "1788590182.148629": {
+        "post": "1788590182.148629",
+        "lastSeen": 1788597924.887
       }
     },
     "days": {
@@ -201965,7 +201973,8 @@ window.SLACK_DATA = {
             "store": "스시 토코",
             "biz": "1556700701",
             "who": "최민석",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 10
           },
           {
             "hm": "17:00",
@@ -201981,7 +201990,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 17:34",
+    "at": "2026-09-05 17:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
