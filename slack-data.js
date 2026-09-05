@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8555,
+  "version": 8556,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155551,7 +155551,19 @@ window.SLACK_DATA = {
           "송태양": 1
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "10:45",
+          "store": "슈슈바스켓",
+          "biz": "",
+          "handler": "송태양",
+          "cat": "transfer",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "done": [
         {
           "time": "13:11",
@@ -155831,7 +155843,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 16,
+        "online": 17,
         "offline": 9,
         "unknown": 0
       },
@@ -156013,19 +156025,19 @@ window.SLACK_DATA = {
       },
       "1788581289.531499": {
         "post": "1788581289.531499",
-        "lastSeen": 1788582446.175
+        "lastSeen": 1788582632.109
       },
       "1788581700.431369": {
         "post": "1788581700.431369",
-        "lastSeen": 1788582446.175
+        "lastSeen": 1788582632.109
       },
       "1788581690.004519": {
         "post": "1788581690.004519",
-        "lastSeen": 1788582446.175
+        "lastSeen": 1788582632.109
       },
-      "1788576671.308029": {
-        "post": "1788576671.308029",
-        "lastSeen": 1788582446.175
+      "1788575597.892429": {
+        "post": "1788575597.892429",
+        "lastSeen": 1788582632.109
       }
     },
     "days": {
@@ -201129,7 +201141,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 13:27",
+    "at": "2026-09-05 13:31",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
