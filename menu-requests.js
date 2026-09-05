@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1627,
- "updatedAt": "2026-09-05 00:01",
+ "version": 1628,
+ "updatedAt": "2026-09-05 10:15",
  "days": 30,
  "items": [
   {
@@ -57010,119 +57010,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "심성현",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785979928500899"
-  },
-  {
-   "ts": "1785978780.448379",
-   "date": "2026-08-06",
-   "time": "10:13",
-   "store": "또바기",
-   "biz": "4951702183",
-   "pos": "기타",
-   "content": "추가 - 오삼불고기 15,000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BNCA1BX8S",
-     "from": "댓글",
-     "path": "menu-files/1785978780_448379-0.png",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "식사메뉴",
-       "name": "제육볶음",
-       "price": 11000
-      },
-      {
-       "category": "식사메뉴",
-       "name": "오삼불고기",
-       "price": 15000
-      },
-      {
-       "category": "식사메뉴",
-       "name": "차돌 된장찌개",
-       "price": 11000
-      },
-      {
-       "category": "식사메뉴",
-       "name": "청국장",
-       "price": 10000
-      },
-      {
-       "category": "식사메뉴",
-       "name": "뚝배기 부대찌개",
-       "price": 11000
-      },
-      {
-       "category": "식사메뉴",
-       "name": "꼬막비빔밥",
-       "price": 12000
-      },
-      {
-       "category": "식사메뉴",
-       "name": "바지락 순두부",
-       "price": 10000
-      },
-      {
-       "category": "식사메뉴",
-       "name": "수육국밥",
-       "price": 10000
-      },
-      {
-       "category": "식사메뉴",
-       "name": "검은콩국수",
-       "price": 10000
-      },
-      {
-       "category": "식사메뉴",
-       "name": "열무국수",
-       "price": 10000
-      },
-      {
-       "category": "식사메뉴",
-       "name": "미역국(포장)",
-       "price": 9000
-      },
-      {
-       "category": "식사메뉴",
-       "name": "라면사리",
-       "price": 1000
-      },
-      {
-       "category": "식사메뉴",
-       "name": "계란후라이1",
-       "price": 1000
-      },
-      {
-       "category": "식사메뉴",
-       "name": "공기밥",
-       "price": 1000
-      },
-      {
-       "category": "식사메뉴",
-       "name": "식대",
-       "price": 10000
-      },
-      {
-       "category": "식사메뉴",
-       "name": "식대",
-       "price": 100000
-      }
-     ]
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "솔라피 발송 완료"
-   ],
-   "rc": 3,
-   "lr": "1785979490.430659",
-   "rfx": 3,
-   "status": "done",
-   "handler": "심성현",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785978780448379"
   }
  ],
  "ocr": {
