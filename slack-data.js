@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8602,
+  "version": 8603,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155540,14 +155540,14 @@ window.SLACK_DATA = {
     },
     "2026-09-05": {
       "counts": {
+        "onboarding": {
+          "미지정": 3,
+          "송태양": 2
+        },
         "as": {
           "최민석": 6,
           "미지정": 12,
           "송태양": 26
-        },
-        "onboarding": {
-          "송태양": 2,
-          "미지정": 2
         },
         "transfer": {
           "송태양": 2
@@ -155573,6 +155573,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "16:14",
+          "store": "수학의 신",
+          "biz": "7989101763",
+          "cat": "onboarding",
+          "emp": "미지정",
+          "req": "포프(태블릿) 온보딩 부탁드립니다! / 동일한 와이파이인데 아니라고 뜸",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료입니다"
+        },
         {
           "time": "16:00",
           "store": "용용선생 창원상남점",
@@ -156160,11 +156171,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 38,
+        "online": 39,
         "offline": 16,
         "unknown": 0
       },
-      "updatedAt": "16:22",
+      "updatedAt": "16:24",
       "voc": {
         "responses": 10,
         "install": {
@@ -156459,17 +156470,21 @@ window.SLACK_DATA = {
         "post": "1788487200.788279",
         "lastSeen": 1788552926.026
       },
-      "1788592473.478669": {
-        "post": "1788592473.478669",
-        "lastSeen": 1788593000.158
-      },
       "1788592952.043429": {
         "post": "1788592952.043429",
-        "lastSeen": 1788593000.158
+        "lastSeen": 1788593121.667
       },
       "1788592937.923989": {
         "post": "1788592937.923989",
-        "lastSeen": 1788593000.158
+        "lastSeen": 1788593121.667
+      },
+      "1788593085.557919": {
+        "post": "1788593085.557919",
+        "lastSeen": 1788593121.667
+      },
+      "1788590182.148629": {
+        "post": "1788590182.148629",
+        "lastSeen": 1788593121.667
       }
     },
     "days": {
@@ -201411,8 +201426,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-05": {
-        "cnt": 39,
-        "sumMin": 528.3682519833249,
+        "cnt": 40,
+        "sumMin": 538.158815832933,
         "over": 2,
         "items": [
           {
@@ -201765,13 +201780,22 @@ window.SLACK_DATA = {
             "who": "최민석",
             "cat": "as",
             "dmin": 51.6
+          },
+          {
+            "hm": "16:14",
+            "min": 9.8,
+            "store": "수학의 신",
+            "biz": "7989101763",
+            "who": "",
+            "cat": "onboarding",
+            "dmin": 9.8
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 16:23",
+    "at": "2026-09-05 16:25",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
