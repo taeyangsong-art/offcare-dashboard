@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8501,
+  "version": 8502,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,11 +155541,22 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "송태양": 1
+          "송태양": 2
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:17",
+          "store": "와룡",
+          "biz": "3111297655",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "포스기세트 + CAT 이용 매장인데 유프 출력 시 현재 소리가 나지 않는 상황, 소리 나게 설정 원한다고 하십니다. 고령 대표님이라 영상 보고 진행 어려울것 같아서 원격 도움 부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "소리나오게 설정 완료입니다"
+        },
         {
           "time": "09:04",
           "store": "미나 미용실",
@@ -155560,7 +155571,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 0,
-        "offline": 1,
+        "offline": 2,
         "unknown": 0
       },
       "updatedAt": "09:19"
@@ -155752,7 +155763,10 @@ window.SLACK_DATA = {
       },
       "1788567585.410649": {
         "post": "1788567585.410649",
-        "lastSeen": 1788567618.53
+        "lastSeen": 1788567800.995,
+        "r": 1,
+        "day": "2026-09-05",
+        "idx": 0
       }
     },
     "days": {
@@ -200692,11 +200706,26 @@ window.SLACK_DATA = {
             "dmin": 6.5
           }
         ]
+      },
+      "2026-09-05": {
+        "cnt": 1,
+        "sumMin": 2.0725308458010354,
+        "over": 0,
+        "items": [
+          {
+            "hm": "09:19",
+            "min": 2.1,
+            "store": "여수힐링요트(Healing Yacht)",
+            "biz": "2450102888",
+            "who": "송태양",
+            "cat": "as"
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 09:20",
+    "at": "2026-09-05 09:23",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
