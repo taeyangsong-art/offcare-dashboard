@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8568,
+  "version": 8569,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155548,7 +155548,7 @@ window.SLACK_DATA = {
           "송태양": 1
         },
         "transfer": {
-          "송태양": 1
+          "송태양": 2
         },
         "delivery": {
           "송태양": 1
@@ -155565,9 +155565,31 @@ window.SLACK_DATA = {
           "reasons": [
             "1차 부재"
           ]
+        },
+        {
+          "time": "11:33",
+          "store": "계경순대국 송파점",
+          "biz": "1110224932",
+          "handler": "송태양",
+          "cat": "menu",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
         }
       ],
       "done": [
+        {
+          "time": "13:54",
+          "store": "오늘과자점",
+          "biz": "5108513047",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "9/5 최대한 빨리 / 메뉴복사 X / 프론트, 터미널, 태블릿, 금전함",
+          "hw": "",
+          "intake": "online",
+          "note": "명변 완료"
+        },
         {
           "time": "13:51",
           "store": "모수림",
@@ -155945,7 +155967,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 24,
+        "online": 26,
         "offline": 11,
         "unknown": 0
       },
@@ -155954,10 +155976,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1788412159.282559": {
-        "post": "1788412159.282559",
-        "lastSeen": 1788466528.455
-      },
       "1788414098.136469": {
         "post": "1788414098.136469",
         "lastSeen": 1788466528.455,
@@ -156120,11 +156138,11 @@ window.SLACK_DATA = {
       },
       "1788584718.134129": {
         "post": "1788584718.134129",
-        "lastSeen": 1788584778.233
+        "lastSeen": 1788585326.892
       },
-      "1788575597.892429": {
-        "post": "1788575597.892429",
-        "lastSeen": 1788584778.233
+      "1788576671.308029": {
+        "post": "1788576671.308029",
+        "lastSeen": 1788585326.892
       }
     },
     "days": {
@@ -201300,7 +201318,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 14:06",
+    "at": "2026-09-05 14:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
