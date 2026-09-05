@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8631,
+  "version": 8632,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,7 +155541,7 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "최민석": 14,
+          "최민석": 15,
           "미지정": 17,
           "송태양": 26
         },
@@ -155576,6 +155576,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "18:11",
+          "store": "럭셔리 샵(옷가게)",
+          "biz": "4171193396",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "금일 단말기 수령했으나 결제 불가 / 도움 요청",
+          "hw": "",
+          "intake": "online",
+          "note": "차주 월요일 10시 15분 재연락 요청"
+        },
         {
           "time": "17:59",
           "store": "차차하우스(CHACHA HAUS)",
@@ -156340,11 +156351,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 52,
+        "online": 53,
         "offline": 18,
         "unknown": 0
       },
-      "updatedAt": "18:11",
+      "updatedAt": "18:23",
       "voc": {
         "responses": 15,
         "install": {
@@ -156650,16 +156661,9 @@ window.SLACK_DATA = {
         "post": "1788487200.788279",
         "lastSeen": 1788552926.026
       },
-      "1788599509.000699": {
-        "post": "1788599509.000699",
-        "lastSeen": 1788600140.851,
-        "r": 1,
-        "day": "2026-09-05",
-        "idx": 54
-      },
-      "1788590182.148629": {
-        "post": "1788590182.148629",
-        "lastSeen": 1788600140.851
+      "1788600239.891019": {
+        "post": "1788600239.891019",
+        "lastSeen": 1788600258.44
       }
     },
     "days": {
@@ -202097,14 +202101,15 @@ window.SLACK_DATA = {
             "store": "럭셔리 샵(옷가게)",
             "biz": "4171193396",
             "who": "최민석",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 11.5
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 18:22",
+    "at": "2026-09-05 18:24",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
