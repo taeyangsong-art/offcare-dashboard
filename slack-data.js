@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8658,
+  "version": 8659,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,7 +155541,7 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "최민석": 19,
+          "최민석": 20,
           "미지정": 17,
           "송태양": 27
         },
@@ -155566,6 +155566,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "21:06",
+          "store": "오에이치 에디션(O.H EDITION)",
+          "biz": "8061303098",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "프린터 무한출력 증상으로 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "프린터 껏켯 후 정상출력 완료"
+        },
         {
           "time": "20:00",
           "store": "미쯔마켓(mizz maket)",
@@ -156440,24 +156451,24 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 60,
+        "online": 61,
         "offline": 19,
         "unknown": 0
       },
-      "updatedAt": "21:06",
+      "updatedAt": "21:19",
       "voc": {
-        "responses": 17,
+        "responses": 18,
         "install": {
           "count": 4,
           "low": 1
         },
         "nps": {
-          "count": 17,
+          "count": 18,
           "low": 4
         },
         "high": {
           "install": 2,
-          "nps": 9
+          "nps": 10
         },
         "npsDist": {
           "2": 1,
@@ -156466,7 +156477,7 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 2,
           "9": 1,
-          "10": 9
+          "10": 10
         },
         "installDist": {
           "2": 1,
@@ -156479,6 +156490,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 1,
+            "low": 0
+          },
           "6개월": {
             "total": 2,
             "low": 1
@@ -156497,6 +156512,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SMARTRO": {
+            "total": 2,
+            "low": 0
+          },
           "KPN": {
             "total": 6,
             "low": 2
@@ -156507,10 +156526,6 @@ window.SLACK_DATA = {
           },
           "KOCES": {
             "total": 4,
-            "low": 0
-          },
-          "SMARTRO": {
-            "total": 1,
             "low": 0
           },
           "DAOU": {
@@ -156738,10 +156753,6 @@ window.SLACK_DATA = {
       "1788487200.788279": {
         "post": "1788487200.788279",
         "lastSeen": 1788552926.026
-      },
-      "1788609981.614399": {
-        "post": "1788609981.614399",
-        "lastSeen": 1788610524.674
       }
     },
     "days": {
@@ -201683,8 +201694,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-05": {
-        "cnt": 61,
-        "sumMin": 871.5173126816749,
+        "cnt": 62,
+        "sumMin": 885.5569977005322,
         "over": 5,
         "items": [
           {
@@ -202235,13 +202246,22 @@ window.SLACK_DATA = {
             "who": "최민석",
             "cat": "as",
             "dmin": 22.7
+          },
+          {
+            "hm": "21:06",
+            "min": 14,
+            "store": "오에이치 에디션(O.H EDITION)",
+            "biz": "8061303098",
+            "who": "최민석",
+            "cat": "as",
+            "dmin": 14
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 21:15",
+    "at": "2026-09-05 21:25",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
