@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8515,
+  "version": 8516,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,7 +155541,7 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "송태양": 6
+          "송태양": 7
         },
         "onboarding": {
           "송태양": 1
@@ -155549,6 +155549,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:28",
+          "store": "윤슬담에스테틱",
+          "biz": "7340703623",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "포프(노트북) <https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1788569142093109|온보딩> 후 유프 영수증 외계어 출력 도움 부탁드려요!",
+          "hw": "",
+          "intake": "online",
+          "note": "• 용지 반대로 삽입하심 용지 반대로 삽입하심"
+        },
         {
           "time": "10:00",
           "store": "시월요가",
@@ -155629,7 +155640,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 3,
+        "online": 4,
         "offline": 4,
         "unknown": 0
       },
@@ -155822,14 +155833,10 @@ window.SLACK_DATA = {
       },
       "1788571757.780979": {
         "post": "1788571757.780979",
-        "lastSeen": 1788571831.151
-      },
-      "1788571702.834179": {
-        "post": "1788571702.834179",
-        "lastSeen": 1788571831.151,
+        "lastSeen": 1788572065.191,
         "r": 1,
         "day": "2026-09-05",
-        "idx": 3
+        "idx": 4
       }
     },
     "days": {
@@ -200771,8 +200778,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-05": {
-        "cnt": 4,
-        "sumMin": 23.40703722635905,
+        "cnt": 5,
+        "sumMin": 26.580204244454706,
         "over": 0,
         "items": [
           {
@@ -200808,6 +200815,15 @@ window.SLACK_DATA = {
             "store": "윤슬담에스테틱",
             "biz": "7340703623",
             "who": "송태양",
+            "cat": "as",
+            "dmin": 4.1
+          },
+          {
+            "hm": "10:29",
+            "min": 3.2,
+            "store": "여기는미용실",
+            "biz": "4881002885",
+            "who": "송태양",
             "cat": "as"
           }
         ]
@@ -200815,7 +200831,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 10:30",
+    "at": "2026-09-05 10:34",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
