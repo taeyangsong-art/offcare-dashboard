@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8645,
+  "version": 8646,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156400,7 +156400,7 @@ window.SLACK_DATA = {
         "offline": 18,
         "unknown": 0
       },
-      "updatedAt": "19:49",
+      "updatedAt": "19:55",
       "voc": {
         "responses": 17,
         "install": {
@@ -156701,7 +156701,14 @@ window.SLACK_DATA = {
       },
       "1788605344.729139": {
         "post": "1788605344.729139",
-        "lastSeen": 1788605369.799
+        "lastSeen": 1788605779.013,
+        "r": 1,
+        "day": "2026-09-05",
+        "idx": 57
+      },
+      "1788605737.874749": {
+        "post": "1788605737.874749",
+        "lastSeen": 1788605779.013
       }
     },
     "days": {
@@ -201643,8 +201650,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-05": {
-        "cnt": 57,
-        "sumMin": 840.768438442548,
+        "cnt": 58,
+        "sumMin": 844.5963861266771,
         "over": 5,
         "items": [
           {
@@ -202159,13 +202166,21 @@ window.SLACK_DATA = {
             "who": "최민석",
             "cat": "onboarding",
             "dmin": 26.9
+          },
+          {
+            "hm": "19:49",
+            "min": 3.8,
+            "store": "신나래노래연습장",
+            "biz": "1010326565",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 19:49",
+    "at": "2026-09-05 19:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
