@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8565,
+  "version": 8566,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,7 +155541,7 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "미지정": 5,
+          "미지정": 6,
           "송태양": 24
         },
         "onboarding": {
@@ -155554,8 +155554,31 @@ window.SLACK_DATA = {
           "송태양": 1
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "13:00",
+          "store": "우석런드리 브런치카페",
+          "biz": "6333601598",
+          "handler": "송태양",
+          "cat": "delivery",
+          "intake": "online",
+          "reasons": [
+            "1차 부재"
+          ]
+        }
+      ],
       "done": [
+        {
+          "time": "13:51",
+          "store": "모수림",
+          "biz": "1607100618",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "프론트 결제 중 카드인식 로딩시간이 너무 오래걸리고 결제진행되지않는 경우가 많아 점검 부탁드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "현재는 정상결제됨 5G&gt;&gt;2.4G 변경사용 권해드림 5G2.4G 변경사용 권해드림"
+        },
         {
           "time": "13:34",
           "store": "바디디렉터",
@@ -155911,7 +155934,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 21,
+        "online": 23,
         "offline": 11,
         "unknown": 0
       },
@@ -156093,15 +156116,11 @@ window.SLACK_DATA = {
       },
       "1788583776.397049": {
         "post": "1788583776.397049",
-        "lastSeen": 1788584320.419
+        "lastSeen": 1788584423.076
       },
-      "1788583911.780349": {
-        "post": "1788583911.780349",
-        "lastSeen": 1788584320.419
-      },
-      "1788576671.308029": {
-        "post": "1788576671.308029",
-        "lastSeen": 1788584320.419
+      "1788575597.892429": {
+        "post": "1788575597.892429",
+        "lastSeen": 1788584423.076
       }
     },
     "days": {
@@ -201043,8 +201062,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-05": {
-        "cnt": 23,
-        "sumMin": 331.9666208783786,
+        "cnt": 24,
+        "sumMin": 339.6327400604884,
         "over": 1,
         "items": [
           {
@@ -201253,13 +201272,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 19.7
+          },
+          {
+            "hm": "13:51",
+            "min": 7.7,
+            "store": "모수림",
+            "biz": "1607100618",
+            "who": "",
+            "cat": "as",
+            "dmin": 7.7
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 13:58",
+    "at": "2026-09-05 14:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
