@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8529,
+  "version": 8530,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,7 +155541,7 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "송태양": 14
+          "송태양": 15
         },
         "onboarding": {
           "송태양": 1
@@ -155549,6 +155549,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:12",
+          "store": "헤어삘",
+          "biz": "1081830972",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "영수증 출력 소리 설정 도움요청드립니다! / 가이드대로 하니 종이만 뽑히고 안된다고 하심",
+          "hw": "",
+          "intake": "online",
+          "note": "설정 완료입니다"
+        },
         {
           "time": "11:06",
           "store": "오르빛정원",
@@ -155717,11 +155728,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 8,
+        "online": 9,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "11:12"
+      "updatedAt": "11:28"
     }
   },
   "resp": {
@@ -155908,12 +155919,9 @@ window.SLACK_DATA = {
         "post": "1788487200.788279",
         "lastSeen": 1788552926.026
       },
-      "1788574334.277039": {
-        "post": "1788574334.277039",
-        "lastSeen": 1788575185.869,
-        "r": 1,
-        "day": "2026-09-05",
-        "idx": 10
+      "1788572700.947989": {
+        "post": "1788572700.947989",
+        "lastSeen": 1788575358.915
       }
     },
     "days": {
@@ -200955,14 +200963,15 @@ window.SLACK_DATA = {
             "store": "헤어삘",
             "biz": "1081830972",
             "who": "송태양",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 15.6
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 11:26",
+    "at": "2026-09-05 11:29",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
