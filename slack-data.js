@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8590,
+  "version": 8591,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155542,7 +155542,7 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "미지정": 12,
-          "최민석": 1,
+          "최민석": 2,
           "송태양": 26
         },
         "onboarding": {
@@ -155605,6 +155605,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "포스앱 업데이트 후 정상출력"
+        },
+        {
+          "time": "15:07",
+          "store": "살롱 n 로아",
+          "biz": "2771702926",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "핸드SOS 캣프 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "usb to rs232 선 불량의심으로 대체품 발송 안내 완료 만일 대비하여 캣단말기 같이 발송 안내 완료"
         },
         {
           "time": "15:00",
@@ -156082,7 +156093,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 33,
+        "online": 34,
         "offline": 14,
         "unknown": 0
       },
@@ -156350,15 +156361,19 @@ window.SLACK_DATA = {
       },
       "1788589465.499079": {
         "post": "1788589465.499079",
-        "lastSeen": 1788590422.093
+        "lastSeen": 1788590684.32
       },
       "1788589617.000029": {
         "post": "1788589617.000029",
-        "lastSeen": 1788590422.093
+        "lastSeen": 1788590684.32
       },
       "1788589951.101459": {
         "post": "1788589951.101459",
-        "lastSeen": 1788590422.093
+        "lastSeen": 1788590684.32
+      },
+      "1788590182.148629": {
+        "post": "1788590182.148629",
+        "lastSeen": 1788590684.32
       }
     },
     "days": {
@@ -201615,7 +201630,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 15:40",
+    "at": "2026-09-05 15:44",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
