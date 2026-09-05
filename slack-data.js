@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8597,
+  "version": 8598,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156141,22 +156141,23 @@ window.SLACK_DATA = {
         "offline": 15,
         "unknown": 0
       },
-      "updatedAt": "16:00",
+      "updatedAt": "16:06",
       "voc": {
-        "responses": 9,
+        "responses": 10,
         "install": {
-          "count": 1,
-          "low": 0
+          "count": 2,
+          "low": 1
         },
         "nps": {
-          "count": 9,
-          "low": 2
+          "count": 10,
+          "low": 3
         },
         "high": {
           "install": 0,
           "nps": 5
         },
         "npsDist": {
+          "2": 1,
           "4": 1,
           "5": 1,
           "7": 1,
@@ -156164,12 +156165,18 @@ window.SLACK_DATA = {
           "10": 5
         },
         "installDist": {
+          "2": 1,
           "3": 1
         },
         "byIndustry": {
+          "서비스[뷰티,헤어]": 1,
           "요식업": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 2,
+            "low": 1
+          },
           "1개월": {
             "total": 2,
             "low": 0
@@ -156178,16 +156185,16 @@ window.SLACK_DATA = {
             "total": 1,
             "low": 1
           },
-          "구매설치": {
-            "total": 1,
-            "low": 0
-          },
           "12개월": {
             "total": 5,
             "low": 1
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 3,
+            "low": 2
+          },
           "KOCES": {
             "total": 2,
             "low": 0
@@ -156200,20 +156207,46 @@ window.SLACK_DATA = {
             "total": 1,
             "low": 0
           },
-          "KPN": {
-            "total": 2,
-            "low": 1
-          },
           "NICE": {
             "total": 1,
             "low": 0
           }
         },
         "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 1,
+          "고객센터 연락이 매우 힘듦": 1,
           "사용중 오류가 자주 발생함": 1,
           "필요한 기능이 없거나 몰라서 불편": 1
         },
         "alerts": [
+          {
+            "time": "16:06",
+            "store": "헤어삘",
+            "storeId": "630141",
+            "industry": "뷰티",
+            "indBucket": "서비스[뷰티,헤어]",
+            "install": 2,
+            "nps": 2,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 2,
+                "text": "기존에 단말기는 한 기기 안에서 조정 이 기기는 일일이 포스로 들어가서 해야 하는것도 있고 프린터로 해야 하는것도 있고 복잡합니다",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              },
+              {
+                "q": "추천의향",
+                "score": 2,
+                "text": "나의 경험상 일일이 전화해서 물어봐야해서 영상 통화할때도 있고...",
+                "cat": "고객센터 연락이 매우 힘듦"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:37",
             "store": "로스톤",
@@ -156405,15 +156438,14 @@ window.SLACK_DATA = {
       },
       "1788589465.499079": {
         "post": "1788589465.499079",
-        "lastSeen": 1788591855.037
+        "lastSeen": 1788592042.703
       },
       "1788591600.487079": {
         "post": "1788591600.487079",
-        "lastSeen": 1788591855.037
-      },
-      "1788590182.148629": {
-        "post": "1788590182.148629",
-        "lastSeen": 1788591855.037
+        "lastSeen": 1788592042.703,
+        "r": 1,
+        "day": "2026-09-05",
+        "idx": 37
       }
     },
     "days": {
@@ -201355,8 +201387,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-05": {
-        "cnt": 37,
-        "sumMin": 470.95272128582013,
+        "cnt": 38,
+        "sumMin": 476.759103302161,
         "over": 1,
         "items": [
           {
@@ -201691,13 +201723,21 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "onboarding",
             "dmin": 29.4
+          },
+          {
+            "hm": "16:00",
+            "min": 5.8,
+            "store": "용용선생 창원상남점",
+            "biz": "2534600811",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 16:04",
+    "at": "2026-09-05 16:07",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
