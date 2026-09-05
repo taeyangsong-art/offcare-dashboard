@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8630,
+  "version": 8631,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156652,7 +156652,14 @@ window.SLACK_DATA = {
       },
       "1788599509.000699": {
         "post": "1788599509.000699",
-        "lastSeen": 1788599728.092
+        "lastSeen": 1788600140.851,
+        "r": 1,
+        "day": "2026-09-05",
+        "idx": 54
+      },
+      "1788590182.148629": {
+        "post": "1788590182.148629",
+        "lastSeen": 1788600140.851
       }
     },
     "days": {
@@ -201594,8 +201601,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-05": {
-        "cnt": 54,
-        "sumMin": 809.2933650612831,
+        "cnt": 55,
+        "sumMin": 816.3845450758934,
         "over": 5,
         "items": [
           {
@@ -202083,13 +202090,21 @@ window.SLACK_DATA = {
             "who": "최민석",
             "cat": "as",
             "dmin": 14.9
+          },
+          {
+            "hm": "18:11",
+            "min": 7.1,
+            "store": "럭셔리 샵(옷가게)",
+            "biz": "4171193396",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 18:15",
+    "at": "2026-09-05 18:22",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
