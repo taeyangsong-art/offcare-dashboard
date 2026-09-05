@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8661,
+  "version": 8662,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,7 +155541,7 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "최민석": 21,
+          "최민석": 22,
           "미지정": 17,
           "송태양": 27
         },
@@ -155566,6 +155566,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "21:29",
+          "store": "미쯔마켓(mizz maket)",
+          "biz": "5743901397",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "유선프린터 전원이 들어오지 않아 점검 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "1차 부재"
+        },
         {
           "time": "21:26",
           "store": "우석런드리 브런치카페",
@@ -156462,7 +156473,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 62,
+        "online": 63,
         "offline": 19,
         "unknown": 0
       },
@@ -202272,7 +202283,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 21:30",
+    "at": "2026-09-05 21:35",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
