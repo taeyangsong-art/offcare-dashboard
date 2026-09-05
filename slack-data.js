@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8571,
+  "version": 8572,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155540,12 +155540,13 @@ window.SLACK_DATA = {
     },
     "2026-09-05": {
       "counts": {
+        "onboarding": {
+          "미지정": 1,
+          "송태양": 1
+        },
         "as": {
           "미지정": 7,
           "송태양": 24
-        },
-        "onboarding": {
-          "송태양": 1
         },
         "transfer": {
           "송태양": 2
@@ -155571,6 +155572,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "14:05",
+          "store": "화영필라테스",
+          "biz": "8481600378",
+          "cat": "onboarding",
+          "emp": "미지정",
+          "req": "포프(폰) 온보딩 도움요청드립니다! / 프론트 찾기 안나온다고 하심",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 및 사용설명"
+        },
         {
           "time": "13:54",
           "store": "오늘과자점",
@@ -155981,7 +155993,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 27,
+        "online": 28,
         "offline": 11,
         "unknown": 0
       },
@@ -156149,10 +156161,6 @@ window.SLACK_DATA = {
       "1788487200.788279": {
         "post": "1788487200.788279",
         "lastSeen": 1788552926.026
-      },
-      "1788584718.134129": {
-        "post": "1788584718.134129",
-        "lastSeen": 1788585740.076
       }
     },
     "days": {
@@ -201094,8 +201102,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-05": {
-        "cnt": 25,
-        "sumMin": 352.49194757938386,
+        "cnt": 26,
+        "sumMin": 373.5158787608147,
         "over": 1,
         "items": [
           {
@@ -201322,13 +201330,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 12.9
+          },
+          {
+            "hm": "14:05",
+            "min": 21,
+            "store": "화영필라테스",
+            "biz": "8481600378",
+            "who": "",
+            "cat": "onboarding",
+            "dmin": 21
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 14:22",
+    "at": "2026-09-05 14:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
