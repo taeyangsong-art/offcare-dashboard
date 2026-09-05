@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8639,
+  "version": 8640,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156378,15 +156378,15 @@ window.SLACK_DATA = {
         "offline": 18,
         "unknown": 0
       },
-      "updatedAt": "19:00",
+      "updatedAt": "19:08",
       "voc": {
-        "responses": 16,
+        "responses": 17,
         "install": {
           "count": 4,
           "low": 1
         },
         "nps": {
-          "count": 16,
+          "count": 17,
           "low": 4
         },
         "high": {
@@ -156398,7 +156398,7 @@ window.SLACK_DATA = {
           "4": 1,
           "5": 2,
           "7": 1,
-          "8": 1,
+          "8": 2,
           "9": 1,
           "10": 9
         },
@@ -156413,16 +156413,16 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 2,
+            "low": 1
+          },
           "1개월": {
             "total": 6,
             "low": 1
           },
           "구매설치": {
             "total": 4,
-            "low": 1
-          },
-          "6개월": {
-            "total": 1,
             "low": 1
           },
           "12개월": {
@@ -156432,7 +156432,7 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KPN": {
-            "total": 5,
+            "total": 6,
             "low": 2
           },
           "KIS": {
@@ -156676,14 +156676,6 @@ window.SLACK_DATA = {
       "1788487200.788279": {
         "post": "1788487200.788279",
         "lastSeen": 1788552926.026
-      },
-      "1788602400.874869": {
-        "post": "1788602400.874869",
-        "lastSeen": 1788602422.719
-      },
-      "1788590182.148629": {
-        "post": "1788590182.148629",
-        "lastSeen": 1788602422.719
       }
     },
     "days": {
@@ -202147,7 +202139,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 19:00",
+    "at": "2026-09-05 19:08",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
