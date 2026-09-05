@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1638,
- "updatedAt": "2026-09-05 15:37",
+ "version": 1639,
+ "updatedAt": "2026-09-05 15:54",
  "days": 30,
  "items": [
   {
@@ -56584,29 +56584,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786000769579559"
-  },
-  {
-   "ts": "1785999173.086529",
-   "date": "2026-08-06",
-   "time": "15:52",
-   "store": "오늘애",
-   "biz": "2351502404",
-   "pos": "스파로스포스",
-   "content": "제가 상품관리에서 가격수정을 한 메뉴들이 가격입력창이 떠서 가격을 입렵해야 해서 너무 불편해요\n왜그런건가요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "싯가로 되어있음 해제 완료"
-   ],
-   "rc": 2,
-   "lr": "1786007760.322889",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1785999173086529"
   }
  ],
  "ocr": {
