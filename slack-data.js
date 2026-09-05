@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8570,
+  "version": 8571,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155551,7 +155551,7 @@ window.SLACK_DATA = {
           "송태양": 2
         },
         "menu": {
-          "송태양": 1
+          "송태양": 2
         },
         "delivery": {
           "송태양": 1
@@ -155713,6 +155713,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "키오스크 프로그램 재설치 완료입니다"
+        },
+        {
+          "time": "11:51",
+          "store": "더멀리",
+          "biz": "3976300914",
+          "cat": "menu",
+          "emp": "송태양",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 완료"
         },
         {
           "time": "11:47",
@@ -155970,7 +155981,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 26,
+        "online": 27,
         "offline": 11,
         "unknown": 0
       },
@@ -156141,7 +156152,7 @@ window.SLACK_DATA = {
       },
       "1788584718.134129": {
         "post": "1788584718.134129",
-        "lastSeen": 1788585438.958
+        "lastSeen": 1788585740.076
       }
     },
     "days": {
@@ -201317,7 +201328,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 14:17",
+    "at": "2026-09-05 14:22",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
