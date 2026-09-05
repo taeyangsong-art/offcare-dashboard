@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8651,
+  "version": 8652,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,7 +155541,7 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "최민석": 18,
+          "최민석": 19,
           "미지정": 17,
           "송태양": 27
         },
@@ -155566,6 +155566,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "20:00",
+          "store": "미쯔마켓(mizz maket)",
+          "biz": "5743901397",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "유선프린터 전원이 들어오지 않아 점검 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "9시30분 재연락 요청"
+        },
         {
           "time": "20:00",
           "store": "궁전노래연습장",
@@ -156429,7 +156440,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 59,
+        "online": 60,
         "offline": 19,
         "unknown": 0
       },
@@ -156727,13 +156738,6 @@ window.SLACK_DATA = {
       "1788487200.788279": {
         "post": "1788487200.788279",
         "lastSeen": 1788552926.026
-      },
-      "1788606001.422139": {
-        "post": "1788606001.422139",
-        "lastSeen": 1788607283.711,
-        "r": 1,
-        "day": "2026-09-05",
-        "idx": 60
       }
     },
     "days": {
@@ -202225,14 +202229,15 @@ window.SLACK_DATA = {
             "store": "미쯔마켓(mizz maket)",
             "biz": "5743901397",
             "who": "최민석",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 22.7
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 20:21",
+    "at": "2026-09-05 20:24",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
