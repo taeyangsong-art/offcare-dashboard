@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8650,
+  "version": 8651,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155546,7 +155546,7 @@ window.SLACK_DATA = {
           "송태양": 27
         },
         "onboarding": {
-          "최민석": 2,
+          "최민석": 3,
           "미지정": 4,
           "송태양": 2
         },
@@ -155576,6 +155576,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "토스앱 실행되어야 출력되는 점 안내 완료"
+        },
+        {
+          "time": "19:55",
+          "store": "네일선셋(Nail sunset)",
+          "biz": "4801203036",
+          "cat": "onboarding",
+          "emp": "최민석",
+          "req": "포프(휴대폰) 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포프유프 온보딩 완료"
         },
         {
           "time": "19:49",
@@ -156418,7 +156429,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 58,
+        "online": 59,
         "offline": 19,
         "unknown": 0
       },
@@ -156717,16 +156728,12 @@ window.SLACK_DATA = {
         "post": "1788487200.788279",
         "lastSeen": 1788552926.026
       },
-      "1788605737.874749": {
-        "post": "1788605737.874749",
-        "lastSeen": 1788606928.254,
-        "r": 1,
-        "day": "2026-09-05",
-        "idx": 58
-      },
       "1788606001.422139": {
         "post": "1788606001.422139",
-        "lastSeen": 1788606928.254
+        "lastSeen": 1788607283.711,
+        "r": 1,
+        "day": "2026-09-05",
+        "idx": 60
       }
     },
     "days": {
@@ -201668,8 +201675,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-05": {
-        "cnt": 60,
-        "sumMin": 853.1079733292261,
+        "cnt": 61,
+        "sumMin": 871.5173126816749,
         "over": 5,
         "items": [
           {
@@ -202200,7 +202207,8 @@ window.SLACK_DATA = {
             "store": "네일선셋(Nail sunset)",
             "biz": "4801203036",
             "who": "최민석",
-            "cat": "as"
+            "cat": "onboarding",
+            "dmin": 22.8
           },
           {
             "hm": "20:00",
@@ -202210,13 +202218,21 @@ window.SLACK_DATA = {
             "who": "최민석",
             "cat": "as",
             "dmin": 6.8
+          },
+          {
+            "hm": "20:00",
+            "min": 18.4,
+            "store": "미쯔마켓(mizz maket)",
+            "biz": "5743901397",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 20:15",
+    "at": "2026-09-05 20:21",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
