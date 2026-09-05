@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8609,
+  "version": 8610,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,7 +155541,7 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "최민석": 7,
+          "최민석": 8,
           "미지정": 15,
           "송태양": 26
         },
@@ -155573,6 +155573,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "16:40",
+          "store": "(주)포스카이학원",
+          "biz": "5178603829",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "포스에서 프론트 찾기가 안되어 도움요청드립니다! / 에듀ok 연동필요",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "16:35",
           "store": "길없음",
@@ -156215,11 +156226,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 43,
+        "online": 44,
         "offline": 16,
         "unknown": 0
       },
-      "updatedAt": "16:40",
+      "updatedAt": "16:52",
       "voc": {
         "responses": 11,
         "install": {
@@ -156513,18 +156524,11 @@ window.SLACK_DATA = {
       },
       "1788593400.294719": {
         "post": "1788593400.294719",
-        "lastSeen": 1788594681.679
+        "lastSeen": 1788594801.343
       },
-      "1788594059.657069": {
-        "post": "1788594059.657069",
-        "lastSeen": 1788594681.679,
-        "r": 1,
-        "day": "2026-09-05",
-        "idx": 44
-      },
-      "1788590182.148629": {
-        "post": "1788590182.148629",
-        "lastSeen": 1788594681.679
+      "1788594752.216469": {
+        "post": "1788594752.216469",
+        "lastSeen": 1788594801.343
       }
     },
     "days": {
@@ -201872,14 +201876,15 @@ window.SLACK_DATA = {
             "store": "(주)포스카이학원",
             "biz": "5178603829",
             "who": "최민석",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 11.4
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 16:51",
+    "at": "2026-09-05 16:53",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
