@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8514,
+  "version": 8515,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155822,11 +155822,14 @@ window.SLACK_DATA = {
       },
       "1788571757.780979": {
         "post": "1788571757.780979",
-        "lastSeen": 1788571762.195
+        "lastSeen": 1788571831.151
       },
       "1788571702.834179": {
         "post": "1788571702.834179",
-        "lastSeen": 1788571762.195
+        "lastSeen": 1788571831.151,
+        "r": 1,
+        "day": "2026-09-05",
+        "idx": 3
       }
     },
     "days": {
@@ -200768,8 +200771,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-05": {
-        "cnt": 3,
-        "sumMin": 21.843056877454124,
+        "cnt": 4,
+        "sumMin": 23.40703722635905,
         "over": 0,
         "items": [
           {
@@ -200798,13 +200801,21 @@ window.SLACK_DATA = {
             "who": "송태양",
             "cat": "as",
             "dmin": 19.3
+          },
+          {
+            "hm": "10:28",
+            "min": 1.6,
+            "store": "윤슬담에스테틱",
+            "biz": "7340703623",
+            "who": "송태양",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-05 10:29",
+    "at": "2026-09-05 10:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
