@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8569,
+  "version": 8570,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155550,6 +155550,9 @@ window.SLACK_DATA = {
         "transfer": {
           "송태양": 2
         },
+        "menu": {
+          "송태양": 1
+        },
         "delivery": {
           "송태양": 1
         }
@@ -155564,17 +155567,6 @@ window.SLACK_DATA = {
           "intake": "online",
           "reasons": [
             "1차 부재"
-          ]
-        },
-        {
-          "time": "11:33",
-          "store": "계경순대국 송파점",
-          "biz": "1110224932",
-          "handler": "송태양",
-          "cat": "menu",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
           ]
         }
       ],
@@ -155765,6 +155757,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "• 포스 부팅불 리커버리도 불가 휴대폰에 임시온보딩 및 결제 가능하게 도와드린 상태. • 작일 받은 신품으로 금일 신품 퀵발송 안내 포스 부팅불 리커버리도 불가 휴대폰에 임시온보딩 및 결제 가능하게 도와드린 상태. 작일 받은 신품으로 금일 신품 퀵발송 안내 / 님 여기 퀵 배차만 부탁드려도될까요! 님 여기 퀵 배차만 부탁드려도될까요! / 출하지시서 작성완료"
+        },
+        {
+          "time": "11:33",
+          "store": "계경순대국 송파점",
+          "biz": "1110224932",
+          "cat": "menu",
+          "emp": "송태양",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 완료"
         },
         {
           "time": "11:28",
@@ -156138,11 +156141,7 @@ window.SLACK_DATA = {
       },
       "1788584718.134129": {
         "post": "1788584718.134129",
-        "lastSeen": 1788585326.892
-      },
-      "1788576671.308029": {
-        "post": "1788576671.308029",
-        "lastSeen": 1788585326.892
+        "lastSeen": 1788585438.958
       }
     },
     "days": {
@@ -201318,7 +201317,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 14:15",
+    "at": "2026-09-05 14:17",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
