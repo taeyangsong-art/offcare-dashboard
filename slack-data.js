@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8574,
+  "version": 8575,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,8 +155541,8 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "미지정": 8,
-          "송태양": 24
+          "송태양": 25,
+          "미지정": 8
         },
         "onboarding": {
           "미지정": 1,
@@ -155572,6 +155572,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "14:33",
+          "store": "은밀한부엌",
+          "biz": "3440301026",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "프론트에 별도 보유중인 캣 단말기 (SMT-T281) 영수증 출력되도록 세팅 도움 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "/ 자체포스기 com1/38400 연동 완료입니다"
+        },
         {
           "time": "14:32",
           "store": "(주)배드민턴마켓",
@@ -156004,7 +156015,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 28,
+        "online": 29,
         "offline": 12,
         "unknown": 0
       },
@@ -156013,13 +156024,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1788414098.136469": {
-        "post": "1788414098.136469",
-        "lastSeen": 1788466528.455,
-        "r": 1,
-        "day": "2026-09-03",
-        "idx": 80
-      },
       "1788415313.913579": {
         "post": "1788415313.913579",
         "lastSeen": 1788466528.455
@@ -156172,13 +156176,6 @@ window.SLACK_DATA = {
       "1788487200.788279": {
         "post": "1788487200.788279",
         "lastSeen": 1788552926.026
-      },
-      "1788586380.590479": {
-        "post": "1788586380.590479",
-        "lastSeen": 1788586819.216,
-        "r": 1,
-        "day": "2026-09-05",
-        "idx": 26
       }
     },
     "days": {
@@ -201364,7 +201361,8 @@ window.SLACK_DATA = {
             "store": "은밀한부엌",
             "biz": "3440301026",
             "who": "송태양",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 8.4
           },
           {
             "hm": "14:32",
@@ -201380,7 +201378,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 14:40",
+    "at": "2026-09-05 14:42",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
