@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8595,
+  "version": 8596,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155541,7 +155541,7 @@ window.SLACK_DATA = {
     "2026-09-05": {
       "counts": {
         "as": {
-          "최민석": 3,
+          "최민석": 4,
           "미지정": 12,
           "송태양": 26
         },
@@ -155573,6 +155573,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "15:51",
+          "store": "용용선생 종각점",
+          "biz": "6640802282",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "특정 파트(전골) 프린터기가 갑자기 출력되지 않는 증상으로 점검 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "01055966843"
+        },
         {
           "time": "15:32",
           "store": "힐링STAY 체형관리센터",
@@ -156116,30 +156127,30 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 36,
-        "offline": 14,
+        "offline": 15,
         "unknown": 0
       },
-      "updatedAt": "15:51",
+      "updatedAt": "16:00",
       "voc": {
-        "responses": 8,
+        "responses": 9,
         "install": {
           "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 8,
+          "count": 9,
           "low": 2
         },
         "high": {
           "install": 0,
-          "nps": 4
+          "nps": 5
         },
         "npsDist": {
           "4": 1,
           "5": 1,
           "7": 1,
           "9": 1,
-          "10": 4
+          "10": 5
         },
         "installDist": {
           "3": 1
@@ -156148,15 +156159,15 @@ window.SLACK_DATA = {
           "요식업": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 2,
+            "low": 0
+          },
           "6개월": {
             "total": 1,
             "low": 1
           },
           "구매설치": {
-            "total": 1,
-            "low": 0
-          },
-          "1개월": {
             "total": 1,
             "low": 0
           },
@@ -156166,15 +156177,15 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 2,
+            "low": 0
+          },
           "KIS": {
             "total": 3,
             "low": 1
           },
           "DAOU": {
-            "total": 1,
-            "low": 0
-          },
-          "KOCES": {
             "total": 1,
             "low": 0
           },
@@ -156383,18 +156394,18 @@ window.SLACK_DATA = {
       },
       "1788589465.499079": {
         "post": "1788589465.499079",
-        "lastSeen": 1788591500.615
+        "lastSeen": 1788591622.954
       },
       "1788590839.854509": {
         "post": "1788590839.854509",
-        "lastSeen": 1788591500.615,
+        "lastSeen": 1788591622.954,
         "r": 1,
         "day": "2026-09-05",
         "idx": 35
       },
-      "1788590182.148629": {
-        "post": "1788590182.148629",
-        "lastSeen": 1788591500.615
+      "1788591600.487079": {
+        "post": "1788591600.487079",
+        "lastSeen": 1788591622.954
       }
     },
     "days": {
@@ -201677,7 +201688,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-05 15:58",
+    "at": "2026-09-05 16:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
