@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1656,
- "updatedAt": "2026-09-06 17:15",
+ "version": 1657,
+ "updatedAt": "2026-09-06 17:49",
  "days": 30,
  "items": [
   {
@@ -54283,57 +54283,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "서상원",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786098326394879"
-  },
-  {
-   "ts": "1786092493.740719",
-   "date": "2026-08-07",
-   "time": "17:48",
-   "store": "그곳에 가면",
-   "biz": "7442402268",
-   "pos": "토스포스",
-   "content": "커피\n에스프레소 4.5\n아메리카노 4.9\n카페라떼 5.5\n카푸치노 5.5\n바닐라라떼 5.9\n카페모카 5.9\n아인슈페너 6.5\n아포카토 6.5\n논커피\n초코라떼 5.9\n딸리라떼 6.5\n딸기라떼 6.5\n미숫가루 라떼 6.9\n쑥라떼 6.9\n\n주스\n토마토 주스 6.9\n키위주스 6.9\n수박주스 6.9\n\n허브티\n캐모마일 6.5\n페퍼민트 6.5\n얼그레이 6.5\n\n\n수제에이드\n레몬에이드 6.5\n자몽에이드 6.5\n블루베리 6.5\n패션후르츠 6.5\n생강에이드 6.5\n\n수제 전통차\n쌍화차 7.9\n대추차 7.9\n생강차 6.9\n\n공간대관 50만원\n\n디저트 \n쑥인절미와플 12.9\n쑥인절미빙수 12.9\n샌드위치 12.9\n증편 샌드위치 12.9",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1786092497.969089",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786092493740719"
-  },
-  {
-   "ts": "1786092492.241839",
-   "date": "2026-08-07",
-   "time": "17:48",
-   "store": "237오므카레 서초 지파이브점",
-   "biz": "4261502882",
-   "pos": "",
-   "content": "하이오더 선불형 연동 위해 선불 테이블 생성 부탁드립니다.\n\n카테고리 요청 : 후불형 테이블과 동일하게 생성\n• 선불 1 \n• 선불 2",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BNLPLTY3X",
-     "from": "댓글",
-     "path": "menu-files/1786092492_241839-0.png",
-     "kind": "pos_screen",
-     "menu": []
-    }
-   ],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1786092789.414139",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786092492241839"
   }
  ],
  "ocr": {
