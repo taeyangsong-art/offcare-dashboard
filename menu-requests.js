@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1655,
- "updatedAt": "2026-09-06 16:32",
+ "version": 1656,
+ "updatedAt": "2026-09-06 17:15",
  "days": 30,
  "items": [
   {
@@ -54334,27 +54334,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786092492241839"
-  },
-  {
-   "ts": "1786090103.641189",
-   "date": "2026-08-07",
-   "time": "17:08",
-   "store": "이태리 경양식",
-   "biz": "7411203076",
-   "pos": "토스포스",
-   "content": "메뉴등록\n돈가스정식14000\n치즈돈가스정식16000\n탄산음료 2000",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1786090107.962279",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786090103641189"
   }
  ],
  "ocr": {
