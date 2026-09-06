@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8773,
+  "version": 8774,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156702,7 +156702,7 @@ window.SLACK_DATA = {
     "2026-09-06": {
       "counts": {
         "as": {
-          "최민석": 6,
+          "최민석": 7,
           "김동욱": 9
         },
         "onboarding": {
@@ -156715,6 +156715,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:31",
+          "store": "스팀하우스",
+          "biz": "3742102578",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "유프 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "1차 통화중 / 유프 온보딩 완료"
+        },
         {
           "time": "16:22",
           "store": "베이비 버드 (baby bird)",
@@ -156926,7 +156937,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 18,
+        "online": 19,
         "offline": 1,
         "unknown": 0
       },
@@ -157096,13 +157107,12 @@ window.SLACK_DATA = {
         "post": "1788531187.814259",
         "lastSeen": 1788531324.962
       },
-      "1788679915.671709": {
-        "post": "1788679915.671709",
-        "lastSeen": 1788680362.754
-      },
       "1788680020.579249": {
         "post": "1788680020.579249",
-        "lastSeen": 1788680362.754
+        "lastSeen": 1788680597.306,
+        "r": 1,
+        "day": "2026-09-06",
+        "idx": 14
       }
     },
     "days": {
@@ -202609,8 +202619,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-06": {
-        "cnt": 14,
-        "sumMin": 122.41983657280602,
+        "cnt": 16,
+        "sumMin": 139.48332060575484,
         "over": 0,
         "items": [
           {
@@ -202738,13 +202748,30 @@ window.SLACK_DATA = {
             "who": "최민석",
             "cat": "as",
             "dmin": 14.5
+          },
+          {
+            "hm": "16:33",
+            "min": 7.7,
+            "store": "루미가넷 네일존",
+            "biz": "4961802524",
+            "who": "최민석",
+            "cat": "as"
+          },
+          {
+            "hm": "16:31",
+            "min": 9.4,
+            "store": "스팀하우스",
+            "biz": "3742102578",
+            "who": "최민석",
+            "cat": "as",
+            "dmin": 9.4
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-06 16:39",
+    "at": "2026-09-06 16:43",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
