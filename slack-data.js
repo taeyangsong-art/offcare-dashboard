@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8757,
+  "version": 8758,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156703,7 +156703,7 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김동욱": 9,
-          "최민석": 1
+          "최민석": 2
         },
         "onboarding": {
           "김동욱": 1,
@@ -156747,6 +156747,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "토플파 수정완료. 15시 50분통화요청. 예약메시지 진행"
+        },
+        {
+          "time": "15:00",
+          "store": "홒홈(hope home)",
+          "biz": "8262501592",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "포프(포스기) / <https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1788418918599289|포스기 신품 >수령 후 재설치 시 동일 오류 발생되어 도움 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "1차 부재"
         },
         {
           "time": "14:59",
@@ -156860,7 +156871,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 12,
+        "online": 13,
         "offline": 1,
         "unknown": 0
       },
@@ -157007,13 +157018,6 @@ window.SLACK_DATA = {
       "1788531187.814259": {
         "post": "1788531187.814259",
         "lastSeen": 1788531324.962
-      },
-      "1788674400.260909": {
-        "post": "1788674400.260909",
-        "lastSeen": 1788676122.44,
-        "r": 1,
-        "day": "2026-09-06",
-        "idx": 9
       }
     },
     "days": {
@@ -202611,14 +202615,15 @@ window.SLACK_DATA = {
             "store": "홒홈(hope home)",
             "biz": "8262501592",
             "who": "최민석",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 29.5
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-06 15:28",
+    "at": "2026-09-06 15:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
