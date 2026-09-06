@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8805,
+  "version": 8806,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157269,11 +157269,10 @@ window.SLACK_DATA = {
       },
       "1788690173.653559": {
         "post": "1788690173.653559",
-        "lastSeen": 1788690200.18
-      },
-      "1788684408.354789": {
-        "post": "1788684408.354789",
-        "lastSeen": 1788690200.18
+        "lastSeen": 1788690631.894,
+        "r": 1,
+        "day": "2026-09-06",
+        "idx": 22
       }
     },
     "days": {
@@ -202780,8 +202779,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-06": {
-        "cnt": 22,
-        "sumMin": 163.6338327050209,
+        "cnt": 23,
+        "sumMin": 167.6735567251841,
         "over": 0,
         "items": [
           {
@@ -202981,13 +202980,21 @@ window.SLACK_DATA = {
             "who": "최민석",
             "cat": "as",
             "dmin": 11.5
+          },
+          {
+            "hm": "19:22",
+            "min": 4,
+            "store": "만야수산",
+            "biz": "3534101570",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-06 19:23",
+    "at": "2026-09-06 19:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
