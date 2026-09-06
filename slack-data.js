@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8752,
+  "version": 8753,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156701,6 +156701,9 @@ window.SLACK_DATA = {
     },
     "2026-09-06": {
       "counts": {
+        "onboarding": {
+          "김동욱": 1
+        },
         "as": {
           "최민석": 2,
           "김동욱": 6
@@ -156711,6 +156714,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "14:59",
+          "store": "피아골소안재펜션",
+          "biz": "8076500619",
+          "cat": "onboarding",
+          "emp": "김동욱",
+          "req": "포프(핸드폰) 온보딩 도움 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포프(휴대폰) 온보딩완료"
+        },
         {
           "time": "14:45",
           "store": "해법영어 다니엘교실",
@@ -156812,44 +156826,87 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 8,
+        "online": 9,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "15:08",
+      "updatedAt": "15:12",
       "voc": {
-        "responses": 2,
+        "responses": 4,
         "install": {
-          "count": 0,
-          "low": 0
+          "count": 2,
+          "low": 1
         },
         "nps": {
-          "count": 2,
+          "count": 4,
           "low": 0
         },
         "high": {
-          "install": 0,
-          "nps": 2
+          "install": 1,
+          "nps": 4
         },
         "npsDist": {
-          "10": 2
+          "10": 4
         },
-        "installDist": {},
-        "byIndustry": {},
+        "installDist": {
+          "2": 1,
+          "5": 1
+        },
+        "byIndustry": {
+          "도소매": 1,
+          "서비스[뷰티,헤어]": 1
+        },
         "byTenure": {
+          "구매설치": {
+            "total": 2,
+            "low": 1
+          },
           "12개월": {
             "total": 2,
             "low": 0
           }
         },
         "byVan": {
+          "KCP": {
+            "total": 1,
+            "low": 0
+          },
+          "KPN": {
+            "total": 1,
+            "low": 1
+          },
           "KIS": {
             "total": 2,
             "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 1
+        },
+        "alerts": [
+          {
+            "time": "15:12",
+            "store": "보보스 헤어",
+            "storeId": "634076",
+            "industry": "뷰티",
+            "indBucket": "서비스[뷰티,헤어]",
+            "install": 2,
+            "nps": 10,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 2,
+                "text": "아직까지 프린터로 용지가 나오지 않아요  아직 해결을 못했어요",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
         "praises": []
       }
     }
@@ -156891,26 +156948,22 @@ window.SLACK_DATA = {
       },
       "1788674401.119899": {
         "post": "1788674401.119899",
-        "lastSeen": 1788674959.386
+        "lastSeen": 1788675203.076,
+        "r": 1,
+        "day": "2026-09-06",
+        "idx": 6
       },
       "1788674400.260909": {
         "post": "1788674400.260909",
-        "lastSeen": 1788674959.386
-      },
-      "1788674355.965129": {
-        "post": "1788674355.965129",
-        "lastSeen": 1788674959.386,
-        "r": 1,
-        "day": "2026-09-06",
-        "idx": 5
+        "lastSeen": 1788675203.076
       },
       "1788674899.618069": {
         "post": "1788674899.618069",
-        "lastSeen": 1788674959.386
+        "lastSeen": 1788675203.076
       },
       "1788674896.710399": {
         "post": "1788674896.710399",
-        "lastSeen": 1788674959.386
+        "lastSeen": 1788675203.076
       }
     },
     "days": {
@@ -202417,8 +202470,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-06": {
-        "cnt": 6,
-        "sumMin": 32.13269493977229,
+        "cnt": 7,
+        "sumMin": 43.46787995497386,
         "over": 0,
         "items": [
           {
@@ -202472,6 +202525,15 @@ window.SLACK_DATA = {
             "store": "피아골소안재펜션",
             "biz": "8076500619",
             "who": "김동욱",
+            "cat": "onboarding",
+            "dmin": 12.1
+          },
+          {
+            "hm": "15:00",
+            "min": 11.3,
+            "store": "조선F&amp;C (현대자동차)",
+            "biz": "8588703649",
+            "who": "김동욱",
             "cat": "as"
           }
         ]
@@ -202479,7 +202541,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-06 15:09",
+    "at": "2026-09-06 15:13",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
