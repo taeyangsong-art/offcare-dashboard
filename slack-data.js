@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8787,
+  "version": 8788,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157178,11 +157178,10 @@ window.SLACK_DATA = {
       },
       "1788684414.496569": {
         "post": "1788684414.496569",
-        "lastSeen": 1788684560.734
-      },
-      "1788684408.354789": {
-        "post": "1788684408.354789",
-        "lastSeen": 1788684560.734
+        "lastSeen": 1788684621.884,
+        "r": 1,
+        "day": "2026-09-06",
+        "idx": 17
       }
     },
     "days": {
@@ -202689,8 +202688,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-06": {
-        "cnt": 17,
-        "sumMin": 143.46034711996714,
+        "cnt": 18,
+        "sumMin": 146.4072209715843,
         "over": 0,
         "items": [
           {
@@ -202845,13 +202844,21 @@ window.SLACK_DATA = {
             "who": "최민석",
             "cat": "as",
             "dmin": 15
+          },
+          {
+            "hm": "17:46",
+            "min": 2.9,
+            "store": "채덮밥",
+            "biz": "4560903218",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-06 17:49",
+    "at": "2026-09-06 17:50",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
