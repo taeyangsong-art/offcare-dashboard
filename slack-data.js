@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8760,
+  "version": 8761,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156702,7 +156702,7 @@ window.SLACK_DATA = {
     "2026-09-06": {
       "counts": {
         "as": {
-          "최민석": 3,
+          "최민석": 4,
           "김동욱": 9
         },
         "onboarding": {
@@ -156715,6 +156715,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:32",
+          "store": "돼지게티연신내점",
+          "biz": "2182366728",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "포스기 사용 매장으로, 쿠팡이츠 출력 시 원래는 매장용&amp;고객용 2장 출력되었으나,",
+          "hw": "",
+          "intake": "online",
+          "note": "쿠팡 및 토스포스 동시출력으로 쿠팡포스 출력설정 해제 후 정상출력 완료"
+        },
         {
           "time": "15:32",
           "store": "더 키친 플렉스",
@@ -156882,44 +156893,44 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 14,
+        "online": 15,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "15:34",
+      "updatedAt": "15:42",
       "voc": {
-        "responses": 5,
+        "responses": 6,
         "install": {
-          "count": 2,
+          "count": 3,
           "low": 1
         },
         "nps": {
-          "count": 5,
+          "count": 6,
           "low": 1
         },
         "high": {
-          "install": 1,
-          "nps": 4
+          "install": 2,
+          "nps": 5
         },
         "npsDist": {
           "5": 1,
-          "10": 4
+          "10": 5
         },
         "installDist": {
           "2": 1,
-          "5": 1
+          "5": 2
         },
         "byIndustry": {
-          "도소매": 1,
+          "도소매": 2,
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
-          "6개월": {
-            "total": 1,
+          "구매설치": {
+            "total": 3,
             "low": 1
           },
-          "구매설치": {
-            "total": 2,
+          "6개월": {
+            "total": 1,
             "low": 1
           },
           "12개월": {
@@ -156928,6 +156939,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 1,
+            "low": 0
+          },
           "KPN": {
             "total": 2,
             "low": 2
@@ -156991,7 +157006,20 @@ window.SLACK_DATA = {
             "doneDate": ""
           }
         ],
-        "praises": []
+        "praises": [
+          {
+            "time": "15:42",
+            "store": "코지네스트 안양호계점",
+            "storeId": "611558",
+            "indBucket": "도소매",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "친절하게 설명 , 주말에도 통화가능 무상설치",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
       }
     }
   },
@@ -157030,16 +157058,12 @@ window.SLACK_DATA = {
         "post": "1788531187.814259",
         "lastSeen": 1788531324.962
       },
-      "1788676375.158859": {
-        "post": "1788676375.158859",
-        "lastSeen": 1788676752.42,
-        "r": 1,
-        "day": "2026-09-06",
-        "idx": 10
-      },
       "1788676497.896489": {
         "post": "1788676497.896489",
-        "lastSeen": 1788676752.42
+        "lastSeen": 1788677001.662,
+        "r": 1,
+        "day": "2026-09-06",
+        "idx": 11
       }
     },
     "days": {
@@ -202546,8 +202570,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-06": {
-        "cnt": 11,
-        "sumMin": 96.27970101833343,
+        "cnt": 12,
+        "sumMin": 102.5987762014071,
         "over": 0,
         "items": [
           {
@@ -202646,6 +202670,15 @@ window.SLACK_DATA = {
             "store": "돼지게티연신내점",
             "biz": "2182366728",
             "who": "최민석",
+            "cat": "as",
+            "dmin": 8.4
+          },
+          {
+            "hm": "15:34",
+            "min": 6.3,
+            "store": "마담하오 (Madam Hao)",
+            "biz": "4258704297",
+            "who": "최민석",
             "cat": "as"
           }
         ]
@@ -202653,7 +202686,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-06 15:39",
+    "at": "2026-09-06 15:43",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
