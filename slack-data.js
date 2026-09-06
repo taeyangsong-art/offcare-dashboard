@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8768,
+  "version": 8769,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156701,13 +156701,13 @@ window.SLACK_DATA = {
     },
     "2026-09-06": {
       "counts": {
-        "as": {
-          "최민석": 6,
-          "김동욱": 9
-        },
         "onboarding": {
-          "김동욱": 1,
-          "최민석": 1
+          "최민석": 2,
+          "김동욱": 1
+        },
+        "as": {
+          "최민석": 5,
+          "김동욱": 9
         },
         "transfer": {
           "최민석": 1
@@ -156719,12 +156719,12 @@ window.SLACK_DATA = {
           "time": "15:50",
           "store": "조선F&amp;C (현대자동차)",
           "biz": "8588703649",
-          "cat": "as",
+          "cat": "onboarding",
           "emp": "최민석",
           "req": "단기렌탈 업체 / 갤탭, 프론트, 유프 / 팝업 현장 온보딩중 프론트에 초기화 실패, 가맹점 정보를 불러올수없어요. 가맹점 정보를 찾을수없어요 문구 노출, 확인 부탁 드립니다. (껐켰 후 온보딩해도 동일 문구 노출)",
           "hw": "",
           "intake": "online",
-          "note": "1차 부재"
+          "note": "1차 부재 / 점주님 자체 온보딩 완료"
         },
         {
           "time": "15:34",
@@ -156919,7 +156919,7 @@ window.SLACK_DATA = {
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "16:14",
+      "updatedAt": "16:22",
       "voc": {
         "responses": 8,
         "install": {
@@ -157084,6 +157084,10 @@ window.SLACK_DATA = {
       "1788531187.814259": {
         "post": "1788531187.814259",
         "lastSeen": 1788531324.962
+      },
+      "1788679340.303339": {
+        "post": "1788679340.303339",
+        "lastSeen": 1788679428.739
       }
     },
     "days": {
@@ -202716,7 +202720,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-06 16:19",
+    "at": "2026-09-06 16:24",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
