@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8818,
+  "version": 8819,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156711,6 +156711,9 @@ window.SLACK_DATA = {
         },
         "transfer": {
           "최민석": 1
+        },
+        "menu": {
+          "최민석": 1
         }
       },
       "pending": [],
@@ -156780,6 +156783,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "손님방문으로 재온보딩 후 증상 문자확인 후 재연락 예정"
+        },
+        {
+          "time": "17:46",
+          "store": "",
+          "biz": "",
+          "cat": "menu",
+          "emp": "최민석",
+          "req": "* 8854001099 샐러드타임 키오스크 사진 등록 및 메뉴등록 요청 1.키오스크 메뉴등록(사진등록)   유부월남쌈 13,900원 2.스프 탭 : 메뉴등록(사진등록)   고구마스프 6,000원   3.나머지 사진은 탭별 사진이 없는 메뉴 사진 전송입",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 메뉴등록완료 솔라피 발송 완료"
         },
         {
           "time": "17:32",
@@ -157047,7 +157061,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 28,
+        "online": 29,
         "offline": 2,
         "unknown": 0
       },
@@ -203011,17 +203025,25 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-06 21:30",
+    "at": "2026-09-06 21:38",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
-    "ok": false,
-    "error": "fetch failed",
-    "rows": 0,
-    "named": 0,
+    "ok": true,
+    "error": "",
+    "rows": 3907,
+    "named": 613,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 0,
-    "byStatus": {}
+    "done": 613,
+    "byStatus": {
+      "일정등록완료": 389,
+      "1차부재": 138,
+      "점주직접접수": 50,
+      "설치불가": 10,
+      "(빈칸)": 3,
+      "자가설치": 18,
+      "설치보류요청": 5
+    }
   }
 };
