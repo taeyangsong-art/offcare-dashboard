@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1646,
- "updatedAt": "2026-09-06 11:06",
+ "version": 1647,
+ "updatedAt": "2026-09-06 11:26",
  "days": 30,
  "items": [
   {
@@ -55903,35 +55903,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786070178859179"
-  },
-  {
-   "ts": "1786069399.974749",
-   "date": "2026-08-07",
-   "time": "11:23",
-   "store": "바이트 앤 레스트 더블유 피에스 스타벅스 킨텍스점",
-   "biz": "5438503030",
-   "pos": "퍼스트포스",
-   "content": "논커피메뉴에서\n수박주스 5500원추가해주세요\n이미지 파일 보냈습니다\n망고,딸기라테 5500가격수정\n밀크티,자몽허니블랙티, 유자히비스커스  5500가격수정해주세요",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/1oygFFVE--c3fpbWS8b-c3XbiZ5euZ450/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "1oygFFVE--c3fpbWS8b-c3XbiZ5euZ450",
-     "kind": "product_photo",
-     "menu": []
-    }
-   ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1786069404.817789",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786069399974749"
   }
  ],
  "ocr": {
