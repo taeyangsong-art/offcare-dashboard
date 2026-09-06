@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8774,
+  "version": 8775,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156941,25 +156941,25 @@ window.SLACK_DATA = {
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "16:33",
+      "updatedAt": "16:44",
       "voc": {
-        "responses": 8,
+        "responses": 9,
         "install": {
           "count": 3,
           "low": 1
         },
         "nps": {
-          "count": 8,
+          "count": 9,
           "low": 1
         },
         "high": {
           "install": 2,
-          "nps": 6
+          "nps": 7
         },
         "npsDist": {
           "5": 1,
           "9": 1,
-          "10": 6
+          "10": 7
         },
         "installDist": {
           "2": 1,
@@ -156971,7 +156971,7 @@ window.SLACK_DATA = {
         },
         "byTenure": {
           "6개월": {
-            "total": 2,
+            "total": 3,
             "low": 1
           },
           "12개월": {
@@ -156984,6 +156984,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 3,
+            "low": 0
+          },
           "SECTA9": {
             "total": 1,
             "low": 0
@@ -157002,10 +157006,6 @@ window.SLACK_DATA = {
           },
           "KCP": {
             "total": 1,
-            "low": 0
-          },
-          "KIS": {
-            "total": 2,
             "low": 0
           }
         },
@@ -157109,7 +157109,7 @@ window.SLACK_DATA = {
       },
       "1788680020.579249": {
         "post": "1788680020.579249",
-        "lastSeen": 1788680597.306,
+        "lastSeen": 1788680730.342,
         "r": 1,
         "day": "2026-09-06",
         "idx": 14
@@ -202771,7 +202771,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-06 16:43",
+    "at": "2026-09-06 16:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
