@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8745,
+  "version": 8746,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156704,10 +156704,24 @@ window.SLACK_DATA = {
         "as": {
           "최민석": 1,
           "김동욱": 6
+        },
+        "transfer": {
+          "최민석": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "14:11",
+          "store": "비노빌라쥬 마레",
+          "biz": "1621902235",
+          "cat": "transfer",
+          "emp": "최민석",
+          "req": "포프유프 명변 다운로드",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "13:14",
           "store": "그반뷰티&amp;래쉬",
@@ -156787,11 +156801,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 6,
+        "online": 7,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "14:00",
+      "updatedAt": "14:11",
       "voc": {
         "responses": 2,
         "install": {
@@ -156831,10 +156845,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1788498643.880169": {
-        "post": "1788498643.880169",
-        "lastSeen": 1788552926.026
-      },
       "1788500667.689289": {
         "post": "1788500667.689289",
         "lastSeen": 1788552926.026
@@ -156878,10 +156888,6 @@ window.SLACK_DATA = {
       "1788531187.814259": {
         "post": "1788531187.814259",
         "lastSeen": 1788531324.962
-      },
-      "1788670801.102909": {
-        "post": "1788670801.102909",
-        "lastSeen": 1788670818.809
       }
     },
     "days": {
@@ -202433,7 +202439,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-06 14:00",
+    "at": "2026-09-06 14:13",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
