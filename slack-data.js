@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8772,
+  "version": 8773,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155561,22 +155561,11 @@ window.SLACK_DATA = {
           "송태양": 2
         },
         "delivery": {
+          "최민석": 1,
           "송태양": 1
         }
       },
-      "pending": [
-        {
-          "time": "21:00",
-          "store": "우석런드리 브런치카페",
-          "biz": "6333601598",
-          "handler": "최민석",
-          "cat": "delivery",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
         {
           "time": "21:29",
@@ -155610,6 +155599,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "프린터 껏켯 후 정상출력 완료"
+        },
+        {
+          "time": "21:00",
+          "store": "우석런드리 브런치카페",
+          "biz": "6333601598",
+          "cat": "delivery",
+          "emp": "최민석",
+          "req": "유프 온보딩 / 땡겨요 주문접수 프로그램 설치 , 영수증 출력 사진 1장",
+          "hw": "",
+          "intake": "online",
+          "note": "배땡요 설치 완료 및 유프 온보딩 완료 사진수취 완료"
         },
         {
           "time": "20:00",
@@ -156701,13 +156701,13 @@ window.SLACK_DATA = {
     },
     "2026-09-06": {
       "counts": {
+        "as": {
+          "최민석": 6,
+          "김동욱": 9
+        },
         "onboarding": {
           "최민석": 2,
           "김동욱": 1
-        },
-        "as": {
-          "최민석": 5,
-          "김동욱": 9
         },
         "transfer": {
           "최민석": 1
@@ -156715,6 +156715,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:22",
+          "store": "베이비 버드 (baby bird)",
+          "biz": "2172266640",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "포프(태블릿) 사용 매장으로, 최근 태블릿을 교체했는데 결제 넘어가기까지가 오래걸린다고 하시어 점검 요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "현재는 정상작동 프론트 태블릿 wifi 동일wifi 로 변환 및 동일현상 발생 시 재인입 안내 완료"
+        },
         {
           "time": "15:50",
           "store": "조선F&amp;C (현대자동차)",
@@ -156915,7 +156926,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 17,
+        "online": 18,
         "offline": 1,
         "unknown": 0
       },
@@ -157085,20 +157096,13 @@ window.SLACK_DATA = {
         "post": "1788531187.814259",
         "lastSeen": 1788531324.962
       },
-      "1788679340.303339": {
-        "post": "1788679340.303339",
-        "lastSeen": 1788680061.547,
-        "r": 1,
-        "day": "2026-09-06",
-        "idx": 13
-      },
       "1788679915.671709": {
         "post": "1788679915.671709",
-        "lastSeen": 1788680061.547
+        "lastSeen": 1788680362.754
       },
       "1788680020.579249": {
         "post": "1788680020.579249",
-        "lastSeen": 1788680061.547
+        "lastSeen": 1788680362.754
       }
     },
     "days": {
@@ -202732,14 +202736,15 @@ window.SLACK_DATA = {
             "store": "베이비 버드 (baby bird)",
             "biz": "2172266640",
             "who": "최민석",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 14.5
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-06 16:34",
+    "at": "2026-09-06 16:39",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
