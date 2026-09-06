@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8798,
+  "version": 8799,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156702,7 +156702,7 @@ window.SLACK_DATA = {
     "2026-09-06": {
       "counts": {
         "as": {
-          "최민석": 13,
+          "최민석": 14,
           "김동욱": 9
         },
         "onboarding": {
@@ -156736,6 +156736,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "키오스크모드 사용중 키오스크 배경화면 변경 안내 완료 정상변경 완료"
+        },
+        {
+          "time": "18:13",
+          "store": "코드:유(CODE:U)",
+          "biz": "1651003375",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "유프 외계어 출력으로 인한 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
         },
         {
           "time": "17:46",
@@ -157014,24 +157025,24 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 25,
+        "online": 26,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "18:25",
+      "updatedAt": "18:43",
       "voc": {
-        "responses": 12,
+        "responses": 13,
         "install": {
-          "count": 4,
+          "count": 5,
           "low": 1
         },
         "nps": {
-          "count": 12,
+          "count": 13,
           "low": 2
         },
         "high": {
-          "install": 2,
-          "nps": 7
+          "install": 3,
+          "nps": 8
         },
         "npsDist": {
           "0": 1,
@@ -157039,20 +157050,21 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 1,
           "9": 1,
-          "10": 7
+          "10": 8
         },
         "installDist": {
           "2": 1,
           "4": 1,
-          "5": 2
+          "5": 3
         },
         "byIndustry": {
+          "서비스[학원]": 1,
           "도소매": 3,
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
           "구매설치": {
-            "total": 4,
+            "total": 5,
             "low": 1
           },
           "3개월": {
@@ -157069,6 +157081,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KOVAN": {
+            "total": 1,
+            "low": 0
+          },
           "KOCES": {
             "total": 2,
             "low": 0
@@ -157209,12 +157225,9 @@ window.SLACK_DATA = {
         "post": "1788531187.814259",
         "lastSeen": 1788531324.962
       },
-      "1788686039.132119": {
-        "post": "1788686039.132119",
-        "lastSeen": 1788687200.746,
-        "r": 1,
-        "day": "2026-09-06",
-        "idx": 18
+      "1788684408.354789": {
+        "post": "1788684408.354789",
+        "lastSeen": 1788687925.208
       }
     },
     "days": {
@@ -202893,7 +202906,8 @@ window.SLACK_DATA = {
             "store": "코드:유(CODE:U)",
             "biz": "1651003375",
             "who": "최민석",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 25.4
           },
           {
             "hm": "18:25",
@@ -202918,7 +202932,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-06 18:33",
+    "at": "2026-09-06 18:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
