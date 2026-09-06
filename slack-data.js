@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8726,
+  "version": 8727,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156702,11 +156702,22 @@ window.SLACK_DATA = {
     "2026-09-06": {
       "counts": {
         "as": {
-          "김동욱": 3
+          "김동욱": 4
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:00",
+          "store": "파스타고",
+          "biz": "3312002201",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "주문 진행 시 빌지가 간헐적으로 미출력되는 오류가 있다고 하여 점검 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "배달 4사 + 네이버주문 + 토스 까지 동시다발적으로 주문 들어올 시 미출력 되는 문제로 과부화로 인하여 미출력 발생 가능성 안내. 고객님 수긍하심. 배달용 프린터 별도 사용하는 방향 고려해보신다고 하심"
+        },
         {
           "time": "10:32",
           "store": "아늠헤어",
@@ -156743,7 +156754,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 3,
-        "offline": 0,
+        "offline": 1,
         "unknown": 0
       },
       "updatedAt": "11:00",
@@ -156868,10 +156879,6 @@ window.SLACK_DATA = {
       "1788531187.814259": {
         "post": "1788531187.814259",
         "lastSeen": 1788531324.962
-      },
-      "1788660000.984169": {
-        "post": "1788660000.984169",
-        "lastSeen": 1788660019.231
       }
     },
     "days": {
@@ -202378,8 +202385,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-06": {
-        "cnt": 2,
-        "sumMin": 10.36935836871465,
+        "cnt": 3,
+        "sumMin": 13.672422218322753,
         "over": 0,
         "items": [
           {
@@ -202399,13 +202406,22 @@ window.SLACK_DATA = {
             "who": "김동욱",
             "cat": "as",
             "dmin": 5.5
+          },
+          {
+            "hm": "11:00",
+            "min": 3.3,
+            "store": "파스타고",
+            "biz": "3312002201",
+            "who": "김동욱",
+            "cat": "as",
+            "dmin": 3.3
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-06 11:00",
+    "at": "2026-09-06 11:06",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
