@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8764,
+  "version": 8765,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156702,7 +156702,7 @@ window.SLACK_DATA = {
     "2026-09-06": {
       "counts": {
         "as": {
-          "최민석": 4,
+          "최민석": 5,
           "김동욱": 9
         },
         "onboarding": {
@@ -156715,6 +156715,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:34",
+          "store": "마담하오 (Madam Hao)",
+          "biz": "4258704297",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "프론트나 테이블오더는 정상 작동하나 포스기 내 인터넷 연결만 되지 않는다고 하여 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "인터넷 회선문제로 인터넷 회사문의 안내 포스는 장애복구 되었으나 휴대폰 앱에서 문제 발생됨"
+        },
         {
           "time": "15:32",
           "store": "돼지게티연신내점",
@@ -156893,7 +156904,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 15,
+        "online": 16,
         "offline": 1,
         "unknown": 0
       },
@@ -157063,16 +157074,12 @@ window.SLACK_DATA = {
         "post": "1788531187.814259",
         "lastSeen": 1788531324.962
       },
-      "1788676497.896489": {
-        "post": "1788676497.896489",
-        "lastSeen": 1788678039.042,
-        "r": 1,
-        "day": "2026-09-06",
-        "idx": 11
-      },
       "1788677400.860039": {
         "post": "1788677400.860039",
-        "lastSeen": 1788678039.042
+        "lastSeen": 1788678561.334,
+        "r": 1,
+        "day": "2026-09-06",
+        "idx": 12
       }
     },
     "days": {
@@ -202579,8 +202586,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-06": {
-        "cnt": 12,
-        "sumMin": 102.5987762014071,
+        "cnt": 13,
+        "sumMin": 117.5875755548477,
         "over": 0,
         "items": [
           {
@@ -202688,6 +202695,15 @@ window.SLACK_DATA = {
             "store": "마담하오 (Madam Hao)",
             "biz": "4258704297",
             "who": "최민석",
+            "cat": "as",
+            "dmin": 30
+          },
+          {
+            "hm": "15:50",
+            "min": 15,
+            "store": "조선F&amp;C (현대자동차)",
+            "biz": "8588703649",
+            "who": "최민석",
             "cat": "as"
           }
         ]
@@ -202695,7 +202711,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-06 16:00",
+    "at": "2026-09-06 16:09",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
