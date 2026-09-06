@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8766,
+  "version": 8767,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156919,25 +156919,25 @@ window.SLACK_DATA = {
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "15:58",
+      "updatedAt": "16:14",
       "voc": {
-        "responses": 7,
+        "responses": 8,
         "install": {
           "count": 3,
           "low": 1
         },
         "nps": {
-          "count": 7,
+          "count": 8,
           "low": 1
         },
         "high": {
           "install": 2,
-          "nps": 5
+          "nps": 6
         },
         "npsDist": {
           "5": 1,
           "9": 1,
-          "10": 5
+          "10": 6
         },
         "installDist": {
           "2": 1,
@@ -156948,6 +156948,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 2,
+            "low": 1
+          },
           "12개월": {
             "total": 3,
             "low": 0
@@ -156955,13 +156959,13 @@ window.SLACK_DATA = {
           "구매설치": {
             "total": 3,
             "low": 1
-          },
-          "6개월": {
-            "total": 1,
-            "low": 1
           }
         },
         "byVan": {
+          "SECTA9": {
+            "total": 1,
+            "low": 0
+          },
           "NICE": {
             "total": 1,
             "low": 0
@@ -157052,10 +157056,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1788505960.536959": {
-        "post": "1788505960.536959",
-        "lastSeen": 1788505969.492
-      },
       "1788508805.737779": {
         "post": "1788508805.737779",
         "lastSeen": 1788552926.026,
@@ -202716,7 +202716,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-06 16:11",
+    "at": "2026-09-06 16:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
