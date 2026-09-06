@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8729,
+  "version": 8730,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156702,11 +156702,22 @@ window.SLACK_DATA = {
     "2026-09-06": {
       "counts": {
         "as": {
-          "김동욱": 4
+          "김동욱": 5
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:25",
+          "store": "1키로 탕수육",
+          "biz": "3642302478",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "포프(포스기) 사용 매장으로, 프론트 키오스크 모드 활성화 되어있어 OFF 요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "키오스크 설정 창 이동 후 정상 확인"
+        },
         {
           "time": "11:00",
           "store": "파스타고",
@@ -156753,7 +156764,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 3,
+        "online": 4,
         "offline": 1,
         "unknown": 0
       },
@@ -202421,7 +202432,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-06 11:26",
+    "at": "2026-09-06 11:28",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
