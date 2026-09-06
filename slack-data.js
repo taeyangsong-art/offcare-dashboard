@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8803,
+  "version": 8804,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156702,7 +156702,7 @@ window.SLACK_DATA = {
     "2026-09-06": {
       "counts": {
         "as": {
-          "최민석": 14,
+          "최민석": 15,
           "김동욱": 9
         },
         "onboarding": {
@@ -156715,6 +156715,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "19:06",
+          "store": "트웨인",
+          "biz": "1915900930",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "포프(태블릿) 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포프 재온보딩 완료"
+        },
         {
           "time": "18:25",
           "store": "니코미",
@@ -157025,7 +157036,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 26,
+        "online": 27,
         "offline": 2,
         "unknown": 0
       },
@@ -157255,17 +157266,6 @@ window.SLACK_DATA = {
       "1788531187.814259": {
         "post": "1788531187.814259",
         "lastSeen": 1788531324.962
-      },
-      "1788689219.342109": {
-        "post": "1788689219.342109",
-        "lastSeen": 1788689727.89,
-        "r": 1,
-        "day": "2026-09-06",
-        "idx": 21
-      },
-      "1788684408.354789": {
-        "post": "1788684408.354789",
-        "lastSeen": 1788689727.89
       }
     },
     "days": {
@@ -202971,14 +202971,15 @@ window.SLACK_DATA = {
             "store": "트웨인",
             "biz": "1915900930",
             "who": "최민석",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 11.5
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-06 19:15",
+    "at": "2026-09-06 19:21",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
