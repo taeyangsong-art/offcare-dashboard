@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8759,
+  "version": 8760,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156702,8 +156702,8 @@ window.SLACK_DATA = {
     "2026-09-06": {
       "counts": {
         "as": {
-          "김동욱": 9,
-          "최민석": 2
+          "최민석": 3,
+          "김동욱": 9
         },
         "onboarding": {
           "김동욱": 1,
@@ -156715,6 +156715,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:32",
+          "store": "더 키친 플렉스",
+          "biz": "7712002277",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "포프(노트북) 사용 매장으로, 키오스크 모드에서는 노출되나 포스에서 옵션 선택 시 설정한 옵션 노출이 되지 않으신다고 하여 원격으로 도움 한번만 부탁드리겠습니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "옵션 필수옵션 없을 시 옵션버튼 클릭 안내 및 필수 옵션 1개는 있어야 상품 눌렀을 때 노출됨 안내 완료"
+        },
         {
           "time": "15:08",
           "store": "중식타워다미(多味)",
@@ -156871,11 +156882,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 13,
+        "online": 14,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "15:32",
+      "updatedAt": "15:34",
       "voc": {
         "responses": 5,
         "install": {
@@ -157021,7 +157032,14 @@ window.SLACK_DATA = {
       },
       "1788676375.158859": {
         "post": "1788676375.158859",
-        "lastSeen": 1788676467.544
+        "lastSeen": 1788676752.42,
+        "r": 1,
+        "day": "2026-09-06",
+        "idx": 10
+      },
+      "1788676497.896489": {
+        "post": "1788676497.896489",
+        "lastSeen": 1788676752.42
       }
     },
     "days": {
@@ -202528,8 +202546,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-06": {
-        "cnt": 10,
-        "sumMin": 92.3659820040067,
+        "cnt": 11,
+        "sumMin": 96.27970101833343,
         "over": 0,
         "items": [
           {
@@ -202621,13 +202639,21 @@ window.SLACK_DATA = {
             "who": "최민석",
             "cat": "as",
             "dmin": 29.5
+          },
+          {
+            "hm": "15:32",
+            "min": 3.9,
+            "store": "돼지게티연신내점",
+            "biz": "2182366728",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-06 15:34",
+    "at": "2026-09-06 15:39",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
