@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8816,
+  "version": 8817,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157051,15 +157051,15 @@ window.SLACK_DATA = {
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "19:22",
+      "updatedAt": "21:14",
       "voc": {
-        "responses": 14,
+        "responses": 15,
         "install": {
-          "count": 6,
+          "count": 7,
           "low": 2
         },
         "nps": {
-          "count": 14,
+          "count": 15,
           "low": 3
         },
         "high": {
@@ -157069,7 +157069,7 @@ window.SLACK_DATA = {
         "npsDist": {
           "0": 2,
           "5": 1,
-          "7": 1,
+          "7": 2,
           "8": 1,
           "9": 1,
           "10": 8
@@ -157077,17 +157077,17 @@ window.SLACK_DATA = {
         "installDist": {
           "1": 1,
           "2": 1,
-          "4": 1,
+          "4": 2,
           "5": 3
         },
         "byIndustry": {
-          "서비스[학원]": 2,
+          "서비스[학원]": 3,
           "도소매": 3,
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
           "구매설치": {
-            "total": 6,
+            "total": 7,
             "low": 2
           },
           "3개월": {
@@ -157104,16 +157104,16 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 3,
+            "low": 0
+          },
           "KSNET": {
             "total": 1,
             "low": 1
           },
           "KOVAN": {
             "total": 1,
-            "low": 0
-          },
-          "KOCES": {
-            "total": 2,
             "low": 0
           },
           "KIS": {
@@ -157245,6 +157245,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "21:14",
+            "store": "클로드엠(M)입시미술학원",
+            "storeId": "627712",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 4,
+            "nps": 7,
+            "text": "직접 설치해 주시지는 않다보니 다른분의 도움으로 설치해야 하는 번거로움이 있습니다 역시나 직접설치해야 하는 번거로움과 사용 설명을 듣지못하고 직접 설명서를 보고 습득해야하는 어려움이 있습니다",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "18:13",
             "store": "애니통신&앤언니",
             "storeId": "630385",
@@ -157277,6 +157289,10 @@ window.SLACK_DATA = {
       "1788531187.814259": {
         "post": "1788531187.814259",
         "lastSeen": 1788531324.962
+      },
+      "1788684408.354789": {
+        "post": "1788684408.354789",
+        "lastSeen": 1788696924.994
       }
     },
     "days": {
@@ -202999,7 +203015,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-06 21:06",
+    "at": "2026-09-06 21:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
