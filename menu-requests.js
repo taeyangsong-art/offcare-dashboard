@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1647,
- "updatedAt": "2026-09-06 11:26",
+ "version": 1648,
+ "updatedAt": "2026-09-06 11:45",
  "days": 30,
  "items": [
   {
@@ -55813,96 +55813,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786071542263139"
-  },
-  {
-   "ts": "1786070178.859179",
-   "date": "2026-08-07",
-   "time": "11:36",
-   "store": "카페예이",
-   "biz": "3721302766",
-   "pos": "토스포스",
-   "content": "메뉴 추가 부탁드려요 디저트로요 \n\n그리고 디저트중에 휘낭시에 3.0짜리도 하나 도 부탁드려요",
-   "special": "크로플은 가격별 순서로 부탁드려요",
-   "drive": [
-    "https://drive.google.com/file/d/1N2iMdNKTGUjw5nnFK9QzD4_8AfKJlt5y/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "1N2iMdNKTGUjw5nnFK9QzD4_8AfKJlt5y",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "",
-       "name": "눈꽃 칼방수 (인절미)",
-       "price": 6500
-      },
-      {
-       "category": "",
-       "name": "눈꽃 칼방수 (망고)",
-       "price": 7500
-      },
-      {
-       "category": "",
-       "name": "눈꽃 칼방수 (인절미) 2-3인",
-       "price": 11900
-      },
-      {
-       "category": "",
-       "name": "눈꽃 칼방수 (망고) 2-3인",
-       "price": 13900
-      },
-      {
-       "category": "크로플",
-       "name": "플레인",
-       "price": 4000
-      },
-      {
-       "category": "크로플",
-       "name": "인절미",
-       "price": 5500
-      },
-      {
-       "category": "크로플",
-       "name": "누텔라",
-       "price": 5000
-      },
-      {
-       "category": "크로플",
-       "name": "크루아상",
-       "price": 5500
-      },
-      {
-       "category": "크로플",
-       "name": "애플시나몬",
-       "price": 4500
-      },
-      {
-       "category": "크로플",
-       "name": "모짜렐 치즈크로플",
-       "price": 6500
-      },
-      {
-       "category": "크로플",
-       "name": "바나나 크로플",
-       "price": 6000
-      },
-      {
-       "category": "옵션",
-       "name": "아이스크림",
-       "price": 1000
-      }
-     ]
-    }
-   ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1786070183.442999",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786070178859179"
   }
  ],
  "ocr": {
