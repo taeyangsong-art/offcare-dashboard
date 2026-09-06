@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8751,
+  "version": 8752,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156816,7 +156816,7 @@ window.SLACK_DATA = {
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "15:00",
+      "updatedAt": "15:08",
       "voc": {
         "responses": 2,
         "install": {
@@ -156891,15 +156891,26 @@ window.SLACK_DATA = {
       },
       "1788674401.119899": {
         "post": "1788674401.119899",
-        "lastSeen": 1788674419.027
+        "lastSeen": 1788674959.386
       },
       "1788674400.260909": {
         "post": "1788674400.260909",
-        "lastSeen": 1788674419.027
+        "lastSeen": 1788674959.386
       },
       "1788674355.965129": {
         "post": "1788674355.965129",
-        "lastSeen": 1788674419.027
+        "lastSeen": 1788674959.386,
+        "r": 1,
+        "day": "2026-09-06",
+        "idx": 5
+      },
+      "1788674899.618069": {
+        "post": "1788674899.618069",
+        "lastSeen": 1788674959.386
+      },
+      "1788674896.710399": {
+        "post": "1788674896.710399",
+        "lastSeen": 1788674959.386
       }
     },
     "days": {
@@ -202406,8 +202417,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-06": {
-        "cnt": 5,
-        "sumMin": 26.578672087192537,
+        "cnt": 6,
+        "sumMin": 32.13269493977229,
         "over": 0,
         "items": [
           {
@@ -202454,13 +202465,21 @@ window.SLACK_DATA = {
             "who": "최민석",
             "cat": "as",
             "dmin": 8.1
+          },
+          {
+            "hm": "14:59",
+            "min": 5.6,
+            "store": "피아골소안재펜션",
+            "biz": "8076500619",
+            "who": "김동욱",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-06 15:00",
+    "at": "2026-09-06 15:09",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
