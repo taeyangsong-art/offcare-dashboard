@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8776,
+  "version": 8777,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156701,13 +156701,13 @@ window.SLACK_DATA = {
     },
     "2026-09-06": {
       "counts": {
+        "as": {
+          "최민석": 8,
+          "김동욱": 9
+        },
         "onboarding": {
           "최민석": 3,
           "김동욱": 1
-        },
-        "as": {
-          "최민석": 7,
-          "김동욱": 9
         },
         "transfer": {
           "최민석": 1
@@ -156715,6 +156715,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:52",
+          "store": "헤어삘",
+          "biz": "1081830972",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "유프 미출력으로 인한 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "토스포스 안켜져있을 시 출력안됨 안내 완료 매장 상주 pc설치 안내드렸으나 일단 알겠다고 하시며 통화 종료"
+        },
         {
           "time": "16:33",
           "store": "루미가넷 네일존",
@@ -156948,27 +156959,29 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 20,
+        "online": 21,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "16:52",
+      "updatedAt": "16:55",
       "voc": {
-        "responses": 9,
+        "responses": 11,
         "install": {
           "count": 3,
           "low": 1
         },
         "nps": {
-          "count": 9,
-          "low": 1
+          "count": 11,
+          "low": 2
         },
         "high": {
           "install": 2,
           "nps": 7
         },
         "npsDist": {
+          "0": 1,
           "5": 1,
+          "7": 1,
           "9": 1,
           "10": 7
         },
@@ -156981,6 +156994,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 2,
+            "low": 1
+          },
           "6개월": {
             "total": 3,
             "low": 1
@@ -156996,7 +157013,11 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KIS": {
-            "total": 3,
+            "total": 4,
+            "low": 1
+          },
+          "SMARTRO": {
+            "total": 1,
             "low": 0
           },
           "SECTA9": {
@@ -157021,10 +157042,32 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
-          "필요한 기능이 없거나 몰라서 불편": 1,
-          "단말기 설치나 초기 과정이 어려움": 1
+          "단말기 설치나 초기 과정이 어려움": 2,
+          "필요한 기능이 없거나 몰라서 불편": 1
         },
         "alerts": [
+          {
+            "time": "16:55",
+            "store": "윤이네 포케샌드",
+            "storeId": "493671",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "3달 쓰면서 프로그램 연결에 문제 생긴 것만 두세번/ 포스기 조그마해서 고객님들이 불편해함 / 배달 어플 불편 등",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:13",
             "store": "유한회사 빈엔터테인먼트",
@@ -202776,7 +202819,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-06 16:53",
+    "at": "2026-09-06 16:57",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
