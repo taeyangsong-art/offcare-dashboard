@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8756,
+  "version": 8757,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156703,10 +156703,11 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김동욱": 9,
-          "최민석": 2
+          "최민석": 1
         },
         "onboarding": {
-          "김동욱": 1
+          "김동욱": 1,
+          "최민석": 1
         },
         "transfer": {
           "최민석": 1
@@ -156762,12 +156763,12 @@ window.SLACK_DATA = {
           "time": "14:45",
           "store": "해법영어 다니엘교실",
           "biz": "4669400951",
-          "cat": "as",
+          "cat": "onboarding",
           "emp": "최민석",
           "req": "포프(태블릿)+유프 사용 매장으로, 온보딩 도움 요청주시어 확인 부탁드리겠습니다!",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "포프유프 온보딩 완료"
         },
         {
           "time": "14:11",
@@ -157009,7 +157010,10 @@ window.SLACK_DATA = {
       },
       "1788674400.260909": {
         "post": "1788674400.260909",
-        "lastSeen": 1788676039.577
+        "lastSeen": 1788676122.44,
+        "r": 1,
+        "day": "2026-09-06",
+        "idx": 9
       }
     },
     "days": {
@@ -202516,8 +202520,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-06": {
-        "cnt": 9,
-        "sumMin": 64.35352215369542,
+        "cnt": 10,
+        "sumMin": 92.3659820040067,
         "over": 0,
         "items": [
           {
@@ -202600,13 +202604,21 @@ window.SLACK_DATA = {
             "who": "김동욱",
             "cat": "as",
             "dmin": 14.8
+          },
+          {
+            "hm": "15:00",
+            "min": 28,
+            "store": "홒홈(hope home)",
+            "biz": "8262501592",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-06 15:27",
+    "at": "2026-09-06 15:28",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
