@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8822,
+  "version": 8823,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156702,7 +156702,7 @@ window.SLACK_DATA = {
     "2026-09-06": {
       "counts": {
         "as": {
-          "최민석": 16,
+          "최민석": 17,
           "김동욱": 9
         },
         "onboarding": {
@@ -156718,6 +156718,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "21:58",
+          "store": "가배각",
+          "biz": "8555300876",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "대형 키오스크 사용) 주문서 미출력으로 인한 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포스프로그램 껏켯 후 정상출력 완료"
+        },
         {
           "time": "19:22",
           "store": "만야수산",
@@ -157061,7 +157072,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 29,
+        "online": 30,
         "offline": 2,
         "unknown": 0
       },
@@ -157303,13 +157314,6 @@ window.SLACK_DATA = {
       "1788531187.814259": {
         "post": "1788531187.814259",
         "lastSeen": 1788531324.962
-      },
-      "1788699538.472469": {
-        "post": "1788699538.472469",
-        "lastSeen": 1788699637.744,
-        "r": 1,
-        "day": "2026-09-06",
-        "idx": 23
       }
     },
     "days": {
@@ -203033,14 +203037,15 @@ window.SLACK_DATA = {
             "store": "가배각",
             "biz": "8555300876",
             "who": "최민석",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 4.5
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-06 22:00",
+    "at": "2026-09-06 22:06",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
