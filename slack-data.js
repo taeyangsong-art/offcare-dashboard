@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8775,
+  "version": 8776,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156701,13 +156701,13 @@ window.SLACK_DATA = {
     },
     "2026-09-06": {
       "counts": {
+        "onboarding": {
+          "최민석": 3,
+          "김동욱": 1
+        },
         "as": {
           "최민석": 7,
           "김동욱": 9
-        },
-        "onboarding": {
-          "최민석": 2,
-          "김동욱": 1
         },
         "transfer": {
           "최민석": 1
@@ -156715,6 +156715,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:33",
+          "store": "루미가넷 네일존",
+          "biz": "4961802524",
+          "cat": "onboarding",
+          "emp": "최민석",
+          "req": "포프(휴대폰) 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "16:31",
           "store": "스팀하우스",
@@ -156937,11 +156948,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 19,
+        "online": 20,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "16:44",
+      "updatedAt": "16:52",
       "voc": {
         "responses": 9,
         "install": {
@@ -157106,13 +157117,6 @@ window.SLACK_DATA = {
       "1788531187.814259": {
         "post": "1788531187.814259",
         "lastSeen": 1788531324.962
-      },
-      "1788680020.579249": {
-        "post": "1788680020.579249",
-        "lastSeen": 1788680730.342,
-        "r": 1,
-        "day": "2026-09-06",
-        "idx": 14
       }
     },
     "days": {
@@ -202755,7 +202759,8 @@ window.SLACK_DATA = {
             "store": "루미가넷 네일존",
             "biz": "4961802524",
             "who": "최민석",
-            "cat": "as"
+            "cat": "onboarding",
+            "dmin": 15.8
           },
           {
             "hm": "16:31",
@@ -202771,7 +202776,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-06 16:45",
+    "at": "2026-09-06 16:53",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
