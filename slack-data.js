@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8780,
+  "version": 8781,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156702,7 +156702,7 @@ window.SLACK_DATA = {
     "2026-09-06": {
       "counts": {
         "as": {
-          "최민석": 8,
+          "최민석": 9,
           "김동욱": 9
         },
         "onboarding": {
@@ -156715,6 +156715,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "17:20",
+          "store": "카피솔루션",
+          "biz": "1051645583",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "포프(PC)+유프 사용 매장으로, 자체 온보딩 이후 프린터 전원이 안켜진다고 하시어 점검 요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "rj9 to rs233 선 pc 프린터 연결 되어있고 rj45 프린터 케이블 두개 같이 연결되어있어 오류발생 선 정상연결 후 아답터 재연결 정상작동 완료"
+        },
         {
           "time": "16:52",
           "store": "헤어삘",
@@ -156959,7 +156970,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 21,
+        "online": 22,
         "offline": 1,
         "unknown": 0
       },
@@ -202812,7 +202823,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-06 17:21",
+    "at": "2026-09-06 17:29",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
