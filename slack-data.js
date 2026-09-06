@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8741,
+  "version": 8742,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156702,11 +156702,23 @@ window.SLACK_DATA = {
     "2026-09-06": {
       "counts": {
         "as": {
+          "최민석": 1,
           "김동욱": 6
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "13:14",
+          "store": "그반뷰티&amp;래쉬",
+          "biz": "8331902356",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "프론트에서 결제 시, 결제 신호는 가지만 카드 삽입 시 IC 인식이 되지 않으신다고 하여 점검 요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "껏켯 후 정상작동 완료"
+        },
         {
           "time": "11:47",
           "store": "한상한판",
@@ -156775,7 +156787,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 5,
+        "online": 6,
         "offline": 1,
         "unknown": 0
       },
@@ -156894,10 +156906,6 @@ window.SLACK_DATA = {
       "1788531187.814259": {
         "post": "1788531187.814259",
         "lastSeen": 1788531324.962
-      },
-      "1788668042.071949": {
-        "post": "1788668042.071949",
-        "lastSeen": 1788668062.811
       }
     },
     "days": {
@@ -202404,8 +202412,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-06": {
-        "cnt": 3,
-        "sumMin": 13.672422218322753,
+        "cnt": 4,
+        "sumMin": 18.48435640335083,
         "over": 0,
         "items": [
           {
@@ -202434,13 +202442,22 @@ window.SLACK_DATA = {
             "who": "김동욱",
             "cat": "as",
             "dmin": 3.3
+          },
+          {
+            "hm": "13:14",
+            "min": 4.8,
+            "store": "그반뷰티&amp;래쉬",
+            "biz": "8331902356",
+            "who": "최민석",
+            "cat": "as",
+            "dmin": 4.8
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-06 13:14",
+    "at": "2026-09-06 13:23",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
