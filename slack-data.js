@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8802,
+  "version": 8803,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157029,23 +157029,23 @@ window.SLACK_DATA = {
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "19:06",
+      "updatedAt": "19:13",
       "voc": {
-        "responses": 13,
+        "responses": 14,
         "install": {
-          "count": 5,
-          "low": 1
+          "count": 6,
+          "low": 2
         },
         "nps": {
-          "count": 13,
-          "low": 2
+          "count": 14,
+          "low": 3
         },
         "high": {
           "install": 3,
           "nps": 8
         },
         "npsDist": {
-          "0": 1,
+          "0": 2,
           "5": 1,
           "7": 1,
           "8": 1,
@@ -157053,19 +157053,20 @@ window.SLACK_DATA = {
           "10": 8
         },
         "installDist": {
+          "1": 1,
           "2": 1,
           "4": 1,
           "5": 3
         },
         "byIndustry": {
-          "서비스[학원]": 1,
+          "서비스[학원]": 2,
           "도소매": 3,
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
           "구매설치": {
-            "total": 5,
-            "low": 1
+            "total": 6,
+            "low": 2
           },
           "3개월": {
             "total": 2,
@@ -157081,6 +157082,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KSNET": {
+            "total": 1,
+            "low": 1
+          },
           "KOVAN": {
             "total": 1,
             "low": 0
@@ -157115,10 +157120,40 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1,
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "단말기 설치나 초기 과정이 어려움": 2,
           "필요한 기능이 없거나 몰라서 불편": 1
         },
         "alerts": [
+          {
+            "time": "19:13",
+            "store": "(선등록)파이프짐(출입용)",
+            "storeId": "599961",
+            "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
+            "install": 1,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "느리고 설치가 허접함",
+                "cat": "사용중 오류가 자주 발생함"
+              },
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "비추 그자체",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "16:55",
             "store": "윤이네 포케샌드",
@@ -157223,7 +157258,14 @@ window.SLACK_DATA = {
       },
       "1788689219.342109": {
         "post": "1788689219.342109",
-        "lastSeen": 1788689238.98
+        "lastSeen": 1788689727.89,
+        "r": 1,
+        "day": "2026-09-06",
+        "idx": 21
+      },
+      "1788684408.354789": {
+        "post": "1788684408.354789",
+        "lastSeen": 1788689727.89
       }
     },
     "days": {
@@ -202730,8 +202772,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-06": {
-        "cnt": 21,
-        "sumMin": 159.23228452205657,
+        "cnt": 22,
+        "sumMin": 163.6338327050209,
         "over": 0,
         "items": [
           {
@@ -202922,13 +202964,21 @@ window.SLACK_DATA = {
             "who": "최민석",
             "cat": "as",
             "dmin": 6.6
+          },
+          {
+            "hm": "19:06",
+            "min": 4.4,
+            "store": "트웨인",
+            "biz": "1915900930",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-06 19:07",
+    "at": "2026-09-06 19:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
