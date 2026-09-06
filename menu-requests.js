@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1652,
- "updatedAt": "2026-09-06 15:39",
+ "version": 1653,
+ "updatedAt": "2026-09-06 16:00",
  "days": 30,
  "items": [
   {
@@ -54632,27 +54632,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김동욱",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786086623743639"
-  },
-  {
-   "ts": "1786085688.975329",
-   "date": "2026-08-07",
-   "time": "15:54",
-   "store": "피코",
-   "biz": "4887100710",
-   "pos": "기타",
-   "content": "안주류;무침회 30,000원으로 수정해주세요\n점심식사류; 문어들기름막국수한상 13,000원 으로 수정",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1786085693.176009",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786085688975329"
   }
  ],
  "ocr": {
