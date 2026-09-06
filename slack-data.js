@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8831,
+  "version": 8832,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157078,13 +157078,13 @@ window.SLACK_DATA = {
       },
       "updatedAt": "21:58",
       "voc": {
-        "responses": 15,
+        "responses": 16,
         "install": {
           "count": 7,
           "low": 2
         },
         "nps": {
-          "count": 15,
+          "count": 16,
           "low": 3
         },
         "high": {
@@ -157094,7 +157094,7 @@ window.SLACK_DATA = {
         "npsDist": {
           "0": 2,
           "5": 1,
-          "7": 2,
+          "7": 3,
           "8": 1,
           "9": 1,
           "10": 8
@@ -157111,6 +157111,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 1,
+            "low": 0
+          },
           "구매설치": {
             "total": 7,
             "low": 2
@@ -157129,6 +157133,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 5,
+            "low": 1
+          },
           "KOCES": {
             "total": 3,
             "low": 0
@@ -157140,10 +157148,6 @@ window.SLACK_DATA = {
           "KOVAN": {
             "total": 1,
             "low": 0
-          },
-          "KIS": {
-            "total": 4,
-            "low": 1
           },
           "SMARTRO": {
             "total": 1,
@@ -203040,7 +203044,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-07 00:00",
+    "at": "2026-09-07 00:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
