@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8806,
+  "version": 8807,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156702,7 +156702,7 @@ window.SLACK_DATA = {
     "2026-09-06": {
       "counts": {
         "as": {
-          "최민석": 15,
+          "최민석": 16,
           "김동욱": 9
         },
         "onboarding": {
@@ -156715,6 +156715,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "19:22",
+          "store": "만야수산",
+          "biz": "3534101570",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "와이파이 프린터 출력 오류로 인한 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "ts400w 와이파이 연결 고장으로 인한 대체품 퀵 발송 안내 완료"
+        },
         {
           "time": "19:06",
           "store": "트웨인",
@@ -157036,7 +157047,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 27,
+        "online": 28,
         "offline": 2,
         "unknown": 0
       },
@@ -157267,12 +157278,9 @@ window.SLACK_DATA = {
         "post": "1788531187.814259",
         "lastSeen": 1788531324.962
       },
-      "1788690173.653559": {
-        "post": "1788690173.653559",
-        "lastSeen": 1788690631.894,
-        "r": 1,
-        "day": "2026-09-06",
-        "idx": 22
+      "1788684408.354789": {
+        "post": "1788684408.354789",
+        "lastSeen": 1788691048.549
       }
     },
     "days": {
@@ -202987,14 +202995,15 @@ window.SLACK_DATA = {
             "store": "만야수산",
             "biz": "3534101570",
             "who": "최민석",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 11.1
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-06 19:30",
+    "at": "2026-09-06 19:37",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
