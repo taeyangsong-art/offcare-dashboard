@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8753,
+  "version": 8754,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156701,12 +156701,12 @@ window.SLACK_DATA = {
     },
     "2026-09-06": {
       "counts": {
+        "as": {
+          "김동욱": 7,
+          "최민석": 2
+        },
         "onboarding": {
           "김동욱": 1
-        },
-        "as": {
-          "최민석": 2,
-          "김동욱": 6
         },
         "transfer": {
           "최민석": 1
@@ -156714,6 +156714,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:00",
+          "store": "조선F&amp;C (현대자동차)",
+          "biz": "8588703649",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "단기렌탈 업체 / 갤탭, 프론트, 유프 / 팝업 현장 온보딩중 프론트에 초기화 실패, 가맹점 정보를 불러올수없어요.  가맹점 정보를 찾을수없어요 문구 노출, 확인 부탁 드립니다. (껐켰 후 온보딩해도 동일 문구 노출)",
+          "hw": "",
+          "intake": "online",
+          "note": "토플파 수정완료. 15시 50분통화요청. 예약메시지 진행"
+        },
         {
           "time": "14:59",
           "store": "피아골소안재펜션",
@@ -156826,26 +156837,27 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 9,
+        "online": 10,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "15:12",
+      "updatedAt": "15:13",
       "voc": {
-        "responses": 4,
+        "responses": 5,
         "install": {
           "count": 2,
           "low": 1
         },
         "nps": {
-          "count": 4,
-          "low": 0
+          "count": 5,
+          "low": 1
         },
         "high": {
           "install": 1,
           "nps": 4
         },
         "npsDist": {
+          "5": 1,
           "10": 4
         },
         "installDist": {
@@ -156857,6 +156869,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 1,
+            "low": 1
+          },
           "구매설치": {
             "total": 2,
             "low": 1
@@ -156867,13 +156883,13 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 2,
+            "low": 2
+          },
           "KCP": {
             "total": 1,
             "low": 0
-          },
-          "KPN": {
-            "total": 1,
-            "low": 1
           },
           "KIS": {
             "total": 2,
@@ -156881,9 +156897,32 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "필요한 기능이 없거나 몰라서 불편": 1,
           "단말기 설치나 초기 과정이 어려움": 1
         },
         "alerts": [
+          {
+            "time": "15:13",
+            "store": "유한회사 빈엔터테인먼트",
+            "storeId": "378615",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "결제가 안되는경우가 있고 카드번호로만 결제기능이 있었으면 좋겟어요",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:12",
             "store": "보보스 헤어",
@@ -156946,24 +156985,20 @@ window.SLACK_DATA = {
         "post": "1788531187.814259",
         "lastSeen": 1788531324.962
       },
-      "1788674401.119899": {
-        "post": "1788674401.119899",
-        "lastSeen": 1788675203.076,
-        "r": 1,
-        "day": "2026-09-06",
-        "idx": 6
-      },
       "1788674400.260909": {
         "post": "1788674400.260909",
-        "lastSeen": 1788675203.076
+        "lastSeen": 1788675319.333
       },
       "1788674899.618069": {
         "post": "1788674899.618069",
-        "lastSeen": 1788675203.076
+        "lastSeen": 1788675319.333
       },
       "1788674896.710399": {
         "post": "1788674896.710399",
-        "lastSeen": 1788675203.076
+        "lastSeen": 1788675319.333,
+        "r": 1,
+        "day": "2026-09-06",
+        "idx": 7
       }
     },
     "days": {
@@ -202470,8 +202505,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-06": {
-        "cnt": 7,
-        "sumMin": 43.46787995497386,
+        "cnt": 8,
+        "sumMin": 49.542781639099125,
         "over": 0,
         "items": [
           {
@@ -202534,6 +202569,15 @@ window.SLACK_DATA = {
             "store": "조선F&amp;C (현대자동차)",
             "biz": "8588703649",
             "who": "김동욱",
+            "cat": "as",
+            "dmin": 14.3
+          },
+          {
+            "hm": "15:08",
+            "min": 6.1,
+            "store": "오순도순분식",
+            "biz": "1606100827",
+            "who": "김동욱",
             "cat": "as"
           }
         ]
@@ -202541,7 +202585,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-06 15:13",
+    "at": "2026-09-06 15:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
