@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8934,
+  "version": 8935,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -156585,7 +156585,7 @@ window.SLACK_DATA = {
             "emp": "",
             "autoStatus": "",
             "autoEmp": "",
-            "autoNote": "",
+            "autoNote": "시술 중 / 15시이후 재통요청 시술 중 / 15시이후 재통요청",
             "doneDate": ""
           },
           {
@@ -158146,18 +158146,17 @@ window.SLACK_DATA = {
       },
       "1788750276.253509": {
         "post": "1788750276.253509",
-        "lastSeen": 1788750679.483,
+        "lastSeen": 1788750929.676,
         "r": 1,
         "day": "2026-09-07",
         "idx": 36
       },
       "1788750640.408929": {
         "post": "1788750640.408929",
-        "lastSeen": 1788750679.483
-      },
-      "1788750636.422099": {
-        "post": "1788750636.422099",
-        "lastSeen": 1788750679.483
+        "lastSeen": 1788750929.676,
+        "r": 1,
+        "day": "2026-09-07",
+        "idx": 37
       }
     },
     "days": {
@@ -203887,8 +203886,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-07": {
-        "cnt": 37,
-        "sumMin": 168.27035444974902,
+        "cnt": 38,
+        "sumMin": 171.0065306345622,
         "over": 0,
         "items": [
           {
@@ -204222,13 +204221,21 @@ window.SLACK_DATA = {
             "biz": "3152901315",
             "who": "심성현",
             "cat": "as"
+          },
+          {
+            "hm": "12:10",
+            "min": 2.7,
+            "store": "윤호헤어",
+            "biz": "7455300619",
+            "who": "김현기",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-07 12:11",
+    "at": "2026-09-07 12:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
