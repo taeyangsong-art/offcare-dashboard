@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8878,
+  "version": 8879,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157405,7 +157405,10 @@ window.SLACK_DATA = {
     "watch": {
       "1788740824.780419": {
         "post": "1788740824.780419",
-        "lastSeen": 1788740899.908
+        "lastSeen": 1788741036.877,
+        "r": 1,
+        "day": "2026-09-07",
+        "idx": 0
       }
     },
     "days": {
@@ -203133,11 +203136,26 @@ window.SLACK_DATA = {
             "dmin": 4.5
           }
         ]
+      },
+      "2026-09-07": {
+        "cnt": 1,
+        "sumMin": 2.3935346802075705,
+        "over": 0,
+        "items": [
+          {
+            "hm": "09:27",
+            "min": 2.4,
+            "store": "계경순대국 송파점",
+            "biz": "1110224932",
+            "who": "김동욱",
+            "cat": "as"
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-07 09:28",
+    "at": "2026-09-07 09:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
