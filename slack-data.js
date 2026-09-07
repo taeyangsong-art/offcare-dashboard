@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8900,
+  "version": 8901,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157652,7 +157652,7 @@ window.SLACK_DATA = {
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "10:39",
+      "updatedAt": "10:40",
       "voc": {
         "responses": 1,
         "install": {
@@ -157719,14 +157719,21 @@ window.SLACK_DATA = {
     "watch": {
       "1788744821.045449": {
         "post": "1788744821.045449",
-        "lastSeen": 1788745219.178,
+        "lastSeen": 1788745282.4,
         "r": 1,
         "day": "2026-09-07",
         "idx": 11
       },
       "1788745164.363129": {
         "post": "1788745164.363129",
-        "lastSeen": 1788745219.178
+        "lastSeen": 1788745282.4,
+        "r": 1,
+        "day": "2026-09-07",
+        "idx": 12
+      },
+      "1788744600.975869": {
+        "post": "1788744600.975869",
+        "lastSeen": 1788745282.4
       }
     },
     "days": {
@@ -203456,8 +203463,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-07": {
-        "cnt": 12,
-        "sumMin": 34.974376364549,
+        "cnt": 13,
+        "sumMin": 36.41480755011241,
         "over": 0,
         "items": [
           {
@@ -203566,13 +203573,21 @@ window.SLACK_DATA = {
             "biz": "6538803809",
             "who": "송태양",
             "cat": "as"
+          },
+          {
+            "hm": "10:39",
+            "min": 1.4,
+            "store": "주식회사 프리츠(원서점KIS)",
+            "biz": "1058801127",
+            "who": "배선유",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-07 10:40",
+    "at": "2026-09-07 10:41",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
