@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1676,
- "updatedAt": "2026-09-07 15:28",
+ "version": 1677,
+ "updatedAt": "2026-09-07 15:34",
  "days": 30,
  "items": [
+  {
+   "ts": "1788762834.142499",
+   "date": "2026-09-07",
+   "time": "15:33",
+   "store": "유가네",
+   "biz": "4693200312",
+   "pos": "퍼스트포스",
+   "content": "FD 포스/ 메뉴 신규 등록 요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "[메뉴 특선]\n\n낙지볶음 2인분   26,000원"
+   ],
+   "rc": 2,
+   "lr": "1788762859.333219",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788762834142499"
+  },
   {
    "ts": "1788761987.053679",
    "date": "2026-09-07",
@@ -136,9 +159,12 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1788760596.195389",
+   "replies": [
+    "?? 복사코드가 뭐지...",
+    "배달 어플일거같은 느낌이 싹 드네"
+   ],
+   "rc": 3,
+   "lr": "1788762803.965059",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
@@ -54869,30 +54895,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김동욱",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786251697263709"
-  },
-  {
-   "ts": "1786170680.217389",
-   "date": "2026-08-08",
-   "time": "15:31",
-   "store": "다율김밥",
-   "biz": "4462302557",
-   "pos": "",
-   "content": "메뉴 추가 요청드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "카테고리에 강정 추가\n - 후라이드 빠삭 강정(400g) 12,900원\n - 달콤 닭강정(400g) 13,900원\n - 매콤 닭강정(400g) 13,900원\n\n배달앱에는 1000원씩 올려서 메뉴추가 부탁드립니다!",
-    "혹시! 배달앱은 대표님이 직접 하셔야하는걸까요!?"
-   ],
-   "rc": 4,
-   "lr": "1786170946.977479",
-   "rfx": 3,
-   "status": "done",
-   "handler": "서상원",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786170680217389"
   }
  ],
  "ocr": {
