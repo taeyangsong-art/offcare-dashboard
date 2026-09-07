@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1679,
- "updatedAt": "2026-09-07 15:44",
+ "version": 1680,
+ "updatedAt": "2026-09-07 15:51",
  "days": 30,
  "items": [
   {
@@ -227,13 +227,14 @@ window.MENU_REQUESTS = {
    "datt": [],
    "replies": [
     "?? 복사코드가 뭐지...",
-    "배달 어플일거같은 느낌이 싹 드네"
+    "배달 어플일거같은 느낌이 싹 드네",
+    "정답입니다. 이미지나 엑셀로 보내달라고 안내"
    ],
-   "rc": 3,
-   "lr": "1788762803.965059",
+   "rc": 4,
+   "lr": "1788763856.537619",
    "rfx": 3,
-   "status": "confirm",
-   "handler": "배선유",
+   "status": "wait",
+   "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788760593313109"
   },
   {
