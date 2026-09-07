@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8882,
+  "version": 8883,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157302,9 +157302,11 @@ window.SLACK_DATA = {
     "2026-09-07": {
       "counts": {
         "as": {
-          "서상원": 1,
-          "배선유": 2,
-          "고경림": 1
+          "고경림": 2,
+          "배선유": 2
+        },
+        "extern": {
+          "서상원": 1
         },
         "menu": {
           "김동욱": 1
@@ -157313,10 +157315,21 @@ window.SLACK_DATA = {
       "pending": [],
       "done": [
         {
+          "time": "09:38",
+          "store": "스시앤도시락",
+          "biz": "2410201604",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "<https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1788493141057259|9/4 교체 이후>, 자가 설치 어려워하셔서 재온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포프(포스) 재온보딩 및 결제테스트 완료 프론트 교체 이후 결제 테스트시 기존보다 훨씬빨라지셨다고 만족하십니다. 기존 프론트 기기 재포장후 회수안내완료"
+        },
+        {
           "time": "09:27",
           "store": "온",
           "biz": "8403600426",
-          "cat": "as",
+          "cat": "extern",
           "emp": "서상원",
           "req": "외주",
           "hw": "",
@@ -157369,11 +157382,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 2,
+        "online": 3,
         "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "09:38",
+      "updatedAt": "09:48",
       "voc": {
         "responses": 1,
         "install": {
@@ -157440,17 +157453,10 @@ window.SLACK_DATA = {
     "watch": {
       "1788740824.780419": {
         "post": "1788740824.780419",
-        "lastSeen": 1788741929.795,
+        "lastSeen": 1788742160.28,
         "r": 1,
         "day": "2026-09-07",
         "idx": 0
-      },
-      "1788741528.786879": {
-        "post": "1788741528.786879",
-        "lastSeen": 1788741929.795,
-        "r": 1,
-        "day": "2026-09-07",
-        "idx": 1
       }
     },
     "days": {
@@ -203198,14 +203204,15 @@ window.SLACK_DATA = {
             "store": "스시앤도시락",
             "biz": "2410201604",
             "who": "고경림",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 8.6
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-07 09:45",
+    "at": "2026-09-07 09:49",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
