@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1699,
- "updatedAt": "2026-09-07 17:59",
+ "version": 1700,
+ "updatedAt": "2026-09-07 18:04",
  "days": 30,
  "items": [
   {
@@ -18,16 +18,57 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C03FXD473",
+     "from": "댓글",
+     "path": "menu-files/1788771263_308199-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "단품",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "두상세트메뉴",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "추가메뉴",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "주류 및 음료",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "3.3.3데이행사",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "비빔밥",
+       "price": 0
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [
-    "삭제\n우동  6,900\n달걀말이 10,000\n뽁음밥 2,000\n\n추가\n통통쭈꾸미 신라면 8,900"
+    "삭제\n우동  6,900\n달걀말이 10,000\n뽁음밥 2,000\n\n추가\n한상카테고리\n통통쭈꾸미 신라면 8,900",
+    "단품에 등록해주십쇼,,,!"
    ],
-   "rc": 2,
-   "lr": "1788771300.437489",
+   "rc": 6,
+   "lr": "1788771746.281239",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788771263308199"
   },
   {
@@ -71,8 +112,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1788768936.022459",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788768932413159"
   },
   {
