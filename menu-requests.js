@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1683,
- "updatedAt": "2026-09-07 16:05",
+ "version": 1684,
+ "updatedAt": "2026-09-07 16:06",
  "days": 30,
  "items": [
   {
@@ -453,8 +453,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1788763183.004769",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788763179987469"
   },
   {
@@ -473,10 +473,10 @@ window.MENU_REQUESTS = {
    "replies": [
     "[메뉴 특선]\n\n낙지볶음 2인분   26,000원"
    ],
-   "rc": 2,
-   "lr": "1788762859.333219",
+   "rc": 3,
+   "lr": "1788764736.695049",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788762834142499"
   },
