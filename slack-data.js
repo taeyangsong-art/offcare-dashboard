@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8903,
+  "version": 8904,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157302,11 +157302,11 @@ window.SLACK_DATA = {
     "2026-09-07": {
       "counts": {
         "as": {
+          "심성현": 4,
           "고경림": 8,
           "배선유": 5,
           "송태양": 3,
           "김현기": 3,
-          "심성현": 3,
           "김동욱": 3
         },
         "onboarding": {
@@ -157327,6 +157327,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:45",
+          "store": "플로렌(FLOREN)",
+          "biz": "1979900138",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포프(태블릿) + 유프 온보딩요청드립니다. 이미 원격예약되신 분들이 있어서 대기시간 조금 걸릴 수 있다고 안내드렸습니다",
+          "hw": "",
+          "intake": "online",
+          "note": "매장 방문 시간 지연 1445 통화 예약 요청"
+        },
         {
           "time": "10:40",
           "store": "남서울 아바이 순대",
@@ -157402,7 +157413,7 @@ window.SLACK_DATA = {
           "req": "프론트에 카드 꽂아보니 인식이 안된다 하셔서 점검 부탁드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "금일 발송 접수 9/10 회수 접수 완료"
         },
         {
           "time": "10:20",
@@ -157681,7 +157692,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 22,
+        "online": 23,
         "offline": 10,
         "unknown": 0
       },
@@ -157749,16 +157760,7 @@ window.SLACK_DATA = {
     }
   },
   "resp": {
-    "watch": {
-      "1788745500.911949": {
-        "post": "1788745500.911949",
-        "lastSeen": 1788745521.561
-      },
-      "1788744600.975869": {
-        "post": "1788744600.975869",
-        "lastSeen": 1788745521.561
-      }
-    },
+    "watch": {},
     "days": {
       "2026-07-16": {
         "cnt": 114,
@@ -203486,8 +203488,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-07": {
-        "cnt": 13,
-        "sumMin": 36.41480755011241,
+        "cnt": 14,
+        "sumMin": 38.84494173526764,
         "over": 0,
         "items": [
           {
@@ -203606,13 +203608,22 @@ window.SLACK_DATA = {
             "who": "배선유",
             "cat": "as",
             "dmin": 4.9
+          },
+          {
+            "hm": "10:45",
+            "min": 2.4,
+            "store": "플로렌(FLOREN)",
+            "biz": "1979900138",
+            "who": "심성현",
+            "cat": "as",
+            "dmin": 2.4
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-07 10:45",
+    "at": "2026-09-07 10:49",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
