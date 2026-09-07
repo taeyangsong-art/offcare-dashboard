@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9139,
+  "version": 9140,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157337,9 +157337,9 @@ window.SLACK_DATA = {
         },
         "menu": {
           "최민석": 3,
+          "김동욱": 2,
           "김규빈": 5,
-          "배선유": 8,
-          "김동욱": 1
+          "배선유": 8
         },
         "delivery": {
           "김현기": 2,
@@ -157600,6 +157600,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "완료욥"
+        },
+        {
+          "time": "18:35",
+          "store": "숨은그림책방",
+          "biz": "1450803266",
+          "cat": "menu",
+          "emp": "김동욱",
+          "req": "해당 매장 유플러스 건입니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 님 안녕하세요! 해당 매장 조회가 안되어 유플 정확한 매장명이 어떻게 될까요? 님 안녕하세요! / 1111256753 / 말랭이카페 / 메뉴등록 완료"
         },
         {
           "time": "18:34",
@@ -160084,7 +160095,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 204,
+        "online": 205,
         "offline": 44,
         "unknown": 0
       },
@@ -207671,13 +207682,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-08 08:00",
+    "at": "2026-09-08 08:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3933,
+    "rows": 3936,
     "named": 637,
     "unknownName": 0,
     "beforeStart": 0,
