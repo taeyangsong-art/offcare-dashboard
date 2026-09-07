@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8873,
+  "version": 8874,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -144851,7 +144851,7 @@ window.SLACK_DATA = {
         "extern": {
           "배선유": 1,
           "고경림": 1,
-          "김현기": 1,
+          "김현기": 2,
           "김동욱": 2,
           "김규빈": 1,
           "서상원": 2
@@ -144873,19 +144873,7 @@ window.SLACK_DATA = {
           "김현기": 1
         }
       },
-      "pending": [
-        {
-          "time": "12:14",
-          "store": "",
-          "biz": "",
-          "handler": "김현기",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
         {
           "time": "23:47",
@@ -146935,6 +146923,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "!재고 ts400 / \"ts400\" 로 14품목 — 3PL 47 · 선릉 87 PRTS400WHADP (중고) TS-400어댑터전원케이블 [-/무선/WHITE] 재고 3PL 0 (출고 없음) · 선릉 32 (잔여 32.0일) 일 평균 1.0 · 월 평균 0.3 PRTS400WBKMAIN (중고) TS-400본체WIFI [-/무선/BLACK] 재고 3PL 4"
+        },
+        {
+          "time": "12:14",
+          "store": "",
+          "biz": "",
+          "cat": "extern",
+          "emp": "김현기",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "제로스토어세종 나성점 사업자 : 1461802371 고유번호 : 9110730729 휴대폰 : 01030784206 / 완료"
         },
         {
           "time": "12:00",
@@ -157339,7 +157338,7 @@ window.SLACK_DATA = {
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:11",
+      "updatedAt": "09:19",
       "voc": {
         "responses": 1,
         "install": {
@@ -203133,7 +203132,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-07 09:14",
+    "at": "2026-09-07 09:20",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
