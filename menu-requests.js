@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1706,
- "updatedAt": "2026-09-07 20:58",
+ "version": 1707,
+ "updatedAt": "2026-09-07 21:02",
  "days": 30,
  "items": [
   {
@@ -52,11 +52,11 @@ window.MENU_REQUESTS = {
    "replies": [
     "엑셀 파일 내 메뉴 등록 요청드립니다."
    ],
-   "rc": 2,
-   "lr": "1788778423.727739",
+   "rc": 3,
+   "lr": "1788782496.046119",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788778404877429"
   },
   {
