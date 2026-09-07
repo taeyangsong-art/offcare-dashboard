@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8879,
+  "version": 8880,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157302,7 +157302,8 @@ window.SLACK_DATA = {
     "2026-09-07": {
       "counts": {
         "as": {
-          "배선유": 1
+          "서상원": 1,
+          "배선유": 2
         },
         "menu": {
           "김동욱": 1
@@ -157310,6 +157311,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:27",
+          "store": "온",
+          "biz": "8403600426",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "09:23",
+          "store": "안동회관",
+          "biz": "7856800760",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "배민 프린터기 출력이 갑자기 안된다하시어 점검부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "배달주문서 꺼져있어 다시 켬"
+        },
         {
           "time": "09:11",
           "store": "동동국밥 논현점",
@@ -157334,11 +157357,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
-        "offline": 1,
+        "online": 2,
+        "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:27",
+      "updatedAt": "09:31",
       "voc": {
         "responses": 1,
         "install": {
@@ -157405,10 +157428,14 @@ window.SLACK_DATA = {
     "watch": {
       "1788740824.780419": {
         "post": "1788740824.780419",
-        "lastSeen": 1788741036.877,
+        "lastSeen": 1788741294.582,
         "r": 1,
         "day": "2026-09-07",
         "idx": 0
+      },
+      "1788741100.510629": {
+        "post": "1788741100.510629",
+        "lastSeen": 1788741294.582
       }
     },
     "days": {
@@ -203155,7 +203182,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-07 09:30",
+    "at": "2026-09-07 09:35",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
