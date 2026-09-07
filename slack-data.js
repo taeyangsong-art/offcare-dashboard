@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8885,
+  "version": 8886,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157302,6 +157302,7 @@ window.SLACK_DATA = {
     "2026-09-07": {
       "counts": {
         "as": {
+          "송태양": 1,
           "고경림": 2,
           "김동욱": 1,
           "배선유": 2
@@ -157315,6 +157316,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:48",
+          "store": "지니어스 교학GMP(카페사무소)",
+          "biz": "8950201022",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "포프(노트북) / 지난 주 금요일부터 현재까지 프론트가 업데이트중이라고 뜨며",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "09:38",
           "store": "스시앤도시락",
@@ -157394,11 +157406,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 3,
+        "online": 4,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "09:48",
+      "updatedAt": "09:56",
       "voc": {
         "responses": 1,
         "install": {
@@ -203217,7 +203229,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-07 09:54",
+    "at": "2026-09-07 09:57",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
