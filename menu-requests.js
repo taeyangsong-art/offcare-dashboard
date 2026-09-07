@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1702,
- "updatedAt": "2026-09-07 18:35",
+ "version": 1703,
+ "updatedAt": "2026-09-07 18:49",
  "days": 30,
  "items": [
+  {
+   "ts": "1788774400.193179",
+   "date": "2026-09-07",
+   "time": "18:46",
+   "store": "홍제동 순두부 우동국수",
+   "biz": "5290703720",
+   "pos": "",
+   "content": "rm메일로 발송 해 주시긴했는데 빠르게 등록 요청 주셔서 별도로 올리겠습니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "• 메뉴 사진 등록 요청(톡스포스)\n• 혹시 사이다,콜라 기본 이미지 있다면 같이 추가 해 주실 수 있으실까요..?\n• 등록 후 솔라피 발송 부탁 드립니다. :감사합니다꾸벅:"
+   ],
+   "rc": 2,
+   "lr": "1788774505.530679",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788774400193179"
+  },
   {
    "ts": "1788773722.655939",
    "date": "2026-09-07",
@@ -1472,7 +1495,7 @@ window.MENU_REQUESTS = {
    "rc": 7,
    "lr": "1788767872.429559",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788763364253379"
   },
