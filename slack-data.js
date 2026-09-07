@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8910,
+  "version": 8911,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157321,7 +157321,7 @@ window.SLACK_DATA = {
           "서상원": 1
         },
         "transfer": {
-          "송태양": 1
+          "송태양": 2
         },
         "menu": {
           "김동욱": 1
@@ -157438,6 +157438,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "• 교체 안내 및 입출고 접수 완료 • 교체 후에도 동일증상시 통신점검 받아보셔야함 안내 교체 안내 및 입출고 접수 완료 교체 후에도 동일증상시 통신점검 받아보셔야함 안내"
+        },
+        {
+          "time": "10:30",
+          "store": "온소리해금교습소",
+          "biz": "1849502205",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "9월 7일 오전 11시 / 메뉴 복사 O / 프론트",
+          "hw": "",
+          "intake": "online",
+          "note": "11시 10분 통화요청 / 명변 완료입니다"
         },
         {
           "time": "10:22",
@@ -157760,11 +157771,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 29,
+        "online": 30,
         "offline": 10,
         "unknown": 0
       },
-      "updatedAt": "11:06",
+      "updatedAt": "11:12",
       "voc": {
         "responses": 1,
         "install": {
@@ -157831,17 +157842,25 @@ window.SLACK_DATA = {
     "watch": {
       "1788746561.523029": {
         "post": "1788746561.523029",
-        "lastSeen": 1788747004.355,
+        "lastSeen": 1788747208.979,
         "r": 1,
         "day": "2026-09-07",
         "idx": 16
       },
       "1788746400.921059": {
         "post": "1788746400.921059",
-        "lastSeen": 1788747004.355,
+        "lastSeen": 1788747208.979,
         "r": 1,
         "day": "2026-09-07",
         "idx": 15
+      },
+      "1788747166.061769": {
+        "post": "1788747166.061769",
+        "lastSeen": 1788747208.979
+      },
+      "1788747118.912829": {
+        "post": "1788747118.912829",
+        "lastSeen": 1788747208.979
       }
     },
     "days": {
@@ -203740,13 +203759,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-07 11:10",
+    "at": "2026-09-07 11:13",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3922,
+    "rows": 3923,
     "named": 613,
     "unknownName": 0,
     "beforeStart": 0,
