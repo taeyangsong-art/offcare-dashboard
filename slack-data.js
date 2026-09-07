@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8943,
+  "version": 8944,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -158097,7 +158097,7 @@ window.SLACK_DATA = {
         "offline": 15,
         "unknown": 0
       },
-      "updatedAt": "12:40",
+      "updatedAt": "12:43",
       "voc": {
         "responses": 1,
         "install": {
@@ -158168,21 +158168,32 @@ window.SLACK_DATA = {
       },
       "1788750276.253509": {
         "post": "1788750276.253509",
-        "lastSeen": 1788752479.341,
+        "lastSeen": 1788752666.008,
         "r": 1,
         "day": "2026-09-07",
         "idx": 36
       },
       "1788750640.408929": {
         "post": "1788750640.408929",
-        "lastSeen": 1788752479.341,
+        "lastSeen": 1788752666.008,
         "r": 1,
         "day": "2026-09-07",
         "idx": 37
       },
       "1788752452.988019": {
         "post": "1788752452.988019",
-        "lastSeen": 1788752479.341
+        "lastSeen": 1788752666.008,
+        "r": 1,
+        "day": "2026-09-07",
+        "idx": 39
+      },
+      "1788752627.745099": {
+        "post": "1788752627.745099",
+        "lastSeen": 1788752666.008
+      },
+      "1788750636.422099": {
+        "post": "1788750636.422099",
+        "lastSeen": 1788752666.008
       }
     },
     "days": {
@@ -203912,8 +203923,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-07": {
-        "cnt": 39,
-        "sumMin": 174.58368548552198,
+        "cnt": 40,
+        "sumMin": 176.57846016883852,
         "over": 0,
         "items": [
           {
@@ -204264,19 +204275,27 @@ window.SLACK_DATA = {
             "who": "김현기",
             "cat": "as",
             "dmin": 10.8
+          },
+          {
+            "hm": "12:40",
+            "min": 2,
+            "store": "과천별양 에듀플렉스 심리상담연구소",
+            "biz": "4019907777",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-07 12:41",
+    "at": "2026-09-07 12:44",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3925,
+    "rows": 3927,
     "named": 613,
     "unknownName": 0,
     "beforeStart": 0,
