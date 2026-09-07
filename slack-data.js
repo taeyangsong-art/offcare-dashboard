@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8890,
+  "version": 8891,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157302,6 +157302,7 @@ window.SLACK_DATA = {
     "2026-09-07": {
       "counts": {
         "onboarding": {
+          "김동욱": 1,
           "배선유": 1
         },
         "as": {
@@ -157321,6 +157322,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:00",
+          "store": "바비야기 안산",
+          "biz": "6110944738",
+          "cat": "onboarding",
+          "emp": "김동욱",
+          "req": "포프(핸드폰) + 유프 온보딩 도움 부탁드립니다. (10:00 예약)",
+          "hw": "",
+          "intake": "online",
+          "note": "포프(휴대폰) 온보딩 완료. 프린터는 현재 없어 추 후 다시 고개센터로 연락주기로 하심"
+        },
         {
           "time": "10:00",
           "store": "제이-코리아",
@@ -157466,11 +157478,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 8,
+        "online": 9,
         "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "10:07",
+      "updatedAt": "10:11",
       "voc": {
         "responses": 1,
         "install": {
@@ -157535,12 +157547,13 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1788742807.042019": {
-        "post": "1788742807.042019",
-        "lastSeen": 1788743272.099,
-        "r": 1,
-        "day": "2026-09-07",
-        "idx": 2
+      "1788743498.826879": {
+        "post": "1788743498.826879",
+        "lastSeen": 1788743501.656
+      },
+      "1788743465.889619": {
+        "post": "1788743465.889619",
+        "lastSeen": 1788743501.656
       }
     },
     "days": {
@@ -203298,7 +203311,8 @@ window.SLACK_DATA = {
             "store": "바비야기 안산",
             "biz": "6110944738",
             "who": "김동욱",
-            "cat": "as"
+            "cat": "onboarding",
+            "dmin": 9.7
           },
           {
             "hm": "10:00",
@@ -203314,7 +203328,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-07 10:08",
+    "at": "2026-09-07 10:11",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
