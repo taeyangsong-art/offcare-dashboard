@@ -3,10 +3,105 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1674,
- "updatedAt": "2026-09-07 15:08",
+ "version": 1675,
+ "updatedAt": "2026-09-07 15:20",
  "days": 30,
  "items": [
+  {
+   "ts": "1788761987.053679",
+   "date": "2026-09-07",
+   "time": "15:19",
+   "store": "대가한방족발",
+   "biz": "3925500189",
+   "pos": "토스포스",
+   "content": "처음등록",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1DikAyuNSQc19iGIrwP_K_nukc06bmTt_/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1DikAyuNSQc19iGIrwP_K_nukc06bmTt_",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "앞발",
+       "price": 39000
+      },
+      {
+       "category": "",
+       "name": "뒷발",
+       "price": 35000
+      },
+      {
+       "category": "",
+       "name": "앞발불족",
+       "price": 42000
+      },
+      {
+       "category": "",
+       "name": "뒷발불족",
+       "price": 38000
+      },
+      {
+       "category": "",
+       "name": "앞발불반",
+       "price": 41000
+      },
+      {
+       "category": "",
+       "name": "뒷발불반",
+       "price": 37000
+      },
+      {
+       "category": "",
+       "name": "미니불족",
+       "price": 20000
+      },
+      {
+       "category": "",
+       "name": "계란찜",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "어묵탕",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "라면",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "소주맥주",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "음료",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "막걸리",
+       "price": 3000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1788761991.029359",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788761987053679"
+  },
   {
    "ts": "1788761255.340449",
    "date": "2026-09-07",
