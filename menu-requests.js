@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1669,
- "updatedAt": "2026-09-07 14:30",
+ "version": 1670,
+ "updatedAt": "2026-09-07 14:34",
  "days": 30,
  "items": [
   {
@@ -46,15 +46,14 @@ window.MENU_REQUESTS = {
      "name": "IMG_1858.jpg.jpeg",
      "fid": "F0BUYM83687",
      "from": "댓글",
-     "path": "menu-files/1788757705_997639-0.jpeg",
      "kind": "pos_screen",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1788757705_997639-0.jpeg"
     },
     {
      "name": "IMG_1850.jpg.jpeg",
      "fid": "F0BVC4G08KY",
      "from": "댓글",
-     "path": "menu-files/1788757705_997639-1.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -192,13 +191,13 @@ window.MENU_REQUESTS = {
        "name": "포장공기밥",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1788757705_997639-1.jpeg"
     },
     {
      "name": "IMG_1851.jpg.jpeg",
      "fid": "F0C02099GSD",
      "from": "댓글",
-     "path": "menu-files/1788757705_997639-2.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -301,13 +300,13 @@ window.MENU_REQUESTS = {
        "name": "포장공기밥",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1788757705_997639-2.jpeg"
     },
     {
      "name": "IMG_1852.jpg.jpeg",
      "fid": "F0BV7QYR743",
      "from": "댓글",
-     "path": "menu-files/1788757705_997639-3.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -365,13 +364,13 @@ window.MENU_REQUESTS = {
        "name": "음료수",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1788757705_997639-3.jpeg"
     },
     {
      "name": "IMG_1853.jpg.jpeg",
      "fid": "F0C020A0TMF",
      "from": "댓글",
-     "path": "menu-files/1788757705_997639-4.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -454,13 +453,13 @@ window.MENU_REQUESTS = {
        "name": "제육고기추가",
        "price": 3000
       }
-     ]
+     ],
+     "path": "menu-files/1788757705_997639-4.jpeg"
     },
     {
      "name": "IMG_1854.jpg.jpeg",
      "fid": "F0C002639K4",
      "from": "댓글",
-     "path": "menu-files/1788757705_997639-5.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -508,7 +507,8 @@ window.MENU_REQUESTS = {
        "name": "캔음료",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1788757705_997639-5.jpeg"
     },
     {
      "name": "IMG_1855.jpg.jpeg",
@@ -753,12 +753,130 @@ window.MENU_REQUESTS = {
        "price": 2000
       }
      ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C03RDNJMA",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "계란후라이",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "김",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "스팸",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "떡갈비",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "비엔나소세지",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "스팸한조각",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "포장1인",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "캔음료",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "포장공기밥",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "짜국세트",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "제육팬세트",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "우국세트",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "오삼팬세트",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "계란후라이",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "김",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "스팸",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "떡갈비",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "비엔나소세지",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "스팸한조각",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "포장1인",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "캔음료",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "포장공기밥",
+       "price": 0
+      }
+     ]
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1788757818.333789",
+   "rc": 3,
+   "lr": "1788759194.610339",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
