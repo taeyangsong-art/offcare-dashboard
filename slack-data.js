@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8872,
+  "version": 8873,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -148148,8 +148148,8 @@ window.SLACK_DATA = {
           "배선유": 18,
           "서상원": 11,
           "김규빈": 6,
+          "김현기": 22,
           "고경림": 31,
-          "김현기": 21,
           "김동욱": 20,
           "심성현": 6,
           "미지정": 1
@@ -148187,30 +148187,7 @@ window.SLACK_DATA = {
           "김동욱": 1
         }
       },
-      "pending": [
-        {
-          "time": "17:30",
-          "store": "갯벌철판낙지",
-          "biz": "1191052330",
-          "handler": "김현기",
-          "cat": "as",
-          "intake": "offline",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
-        {
-          "time": "14:06",
-          "store": "영주할매땅콩빵",
-          "biz": "5760603883",
-          "handler": "김현기",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "1차 부재"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
         {
           "time": "22:49",
@@ -148717,6 +148694,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "• 교체안내 및 입출고접수 완료 • 7일자 방문일정접수 완료입니다 교체안내 및 입출고접수 완료 7일자 방문일정접수 완료입니다"
+        },
+        {
+          "time": "17:30",
+          "store": "갯벌철판낙지",
+          "biz": "1191052330",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "NM-2000N / 휴대용 단말기 연결을 어려워하셔서 지원 요청드립니다. 리더기 연결 화면에서 계속 반복되는중",
+          "hw": "",
+          "intake": "offline",
+          "note": "3738009000 / 온보딩 완료"
         },
         {
           "time": "17:30",
@@ -151014,7 +151002,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 217,
+        "online": 216,
         "offline": 39,
         "unknown": 0
       },
@@ -157314,12 +157302,26 @@ window.SLACK_DATA = {
     },
     "2026-09-07": {
       "counts": {
+        "as": {
+          "배선유": 1
+        },
         "menu": {
           "김동욱": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:11",
+          "store": "동동국밥 논현점",
+          "biz": "7068503378",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "담당자 연락처: 이채은 매니저 <tel:010-9029-4451|010-9029-4451> / 옵션 관련 문의",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
         {
           "time": "09:09",
           "store": "한상한판",
@@ -157334,10 +157336,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 1,
-        "offline": 0,
+        "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:10",
+      "updatedAt": "09:11",
       "voc": {
         "responses": 1,
         "install": {
@@ -203131,7 +203133,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-07 09:10",
+    "at": "2026-09-07 09:14",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

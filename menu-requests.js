@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1661,
- "updatedAt": "2026-09-07 09:10",
+ "version": 1662,
+ "updatedAt": "2026-09-07 09:15",
  "days": 30,
  "items": [
   {
@@ -18,11 +18,48 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "오늘의 백반.jpeg",
+     "fid": "F0BV8B40G1K",
+     "from": "댓글",
+     "path": "menu-files/1788739773_355829-0.jpeg"
+    },
+    {
+     "name": "돼지짜글이.jpeg",
+     "fid": "F0C0T4WJ7EU",
+     "from": "댓글",
+     "path": "menu-files/1788739773_355829-1.jpeg"
+    },
+    {
+     "name": "육회.jpeg",
+     "fid": "F0BVAR99LLE",
+     "from": "댓글",
+     "path": "menu-files/1788739773_355829-2.jpeg"
+    },
+    {
+     "name": "닭발.jpeg",
+     "fid": "F0BV8B5PU4D",
+     "from": "댓글",
+     "path": "menu-files/1788739773_355829-3.jpeg"
+    },
+    {
+     "name": "오리주물럭.jpeg",
+     "fid": "F0C02DDFA12",
+     "from": "댓글",
+     "path": "menu-files/1788739773_355829-4.jpeg"
+    },
+    {
+     "name": "닭다리.jpeg",
+     "fid": "F0C0T4XQB2L",
+     "from": "댓글",
+     "path": "menu-files/1788739773_355829-5.jpeg"
+    }
+   ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1788739777.355999",
+   "rc": 2,
+   "lr": "1788739874.616909",
    "rfx": 3,
    "status": "done",
    "handler": "김동욱",
@@ -53807,6 +53844,10 @@ window.MENU_REQUESTS = {
  "ocr": {
   "model": "claude-opus-5",
   "enabled": true,
-  "drive": true
+  "drive": true,
+  "halt": {
+   "status": 400,
+   "message": "Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."
+  }
  }
 };
