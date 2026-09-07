@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1685,
- "updatedAt": "2026-09-07 16:11",
+ "version": 1686,
+ "updatedAt": "2026-09-07 16:19",
  "days": 30,
  "items": [
   {
@@ -423,16 +423,148 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0BV8HA42HH",
+     "from": "댓글",
+     "path": "menu-files/1788763217_285159-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "메뉴",
+       "name": "양념제육볶음",
+       "price": 11000
+      },
+      {
+       "category": "메뉴",
+       "name": "1인 양념무뼈닭발",
+       "price": 15000
+      },
+      {
+       "category": "메뉴",
+       "name": "계경국밥(돼지국밥)",
+       "price": 10000
+      },
+      {
+       "category": "메뉴",
+       "name": "고기듬뿍국밥(특돼지국밥",
+       "price": 12000
+      },
+      {
+       "category": "메뉴",
+       "name": "순대국(보통)",
+       "price": 10000
+      },
+      {
+       "category": "메뉴",
+       "name": "순대국(순대만)",
+       "price": 10000
+      },
+      {
+       "category": "메뉴",
+       "name": "순대국(고기만)1",
+       "price": 10000
+      },
+      {
+       "category": "메뉴",
+       "name": "내장순대국",
+       "price": 11000
+      },
+      {
+       "category": "메뉴",
+       "name": "(특)순대국11",
+       "price": 11000
+      },
+      {
+       "category": "메뉴",
+       "name": "(특)순대국(순대만)",
+       "price": 11000
+      },
+      {
+       "category": "메뉴",
+       "name": "(특)순대국(고기만)",
+       "price": 11000
+      },
+      {
+       "category": "메뉴",
+       "name": "뼈해장국",
+       "price": 11000
+      },
+      {
+       "category": "메뉴",
+       "name": "만두국",
+       "price": 10000
+      },
+      {
+       "category": "메뉴",
+       "name": "얼큰만두국",
+       "price": 10000
+      },
+      {
+       "category": "메뉴",
+       "name": "술국",
+       "price": 16000
+      },
+      {
+       "category": "메뉴",
+       "name": "편육",
+       "price": 10000
+      },
+      {
+       "category": "메뉴",
+       "name": "찐만두",
+       "price": 6000
+      },
+      {
+       "category": "메뉴",
+       "name": "선지순대국",
+       "price": 10000
+      },
+      {
+       "category": "메뉴",
+       "name": "양선지순대국",
+       "price": 11000
+      },
+      {
+       "category": "메뉴",
+       "name": "육개장",
+       "price": 10000
+      },
+      {
+       "category": "메뉴",
+       "name": "정식추가",
+       "price": 6000
+      },
+      {
+       "category": "메뉴",
+       "name": "찰순대",
+       "price": 6000
+      },
+      {
+       "category": "메뉴",
+       "name": "모듬순대",
+       "price": 12000
+      },
+      {
+       "category": "메뉴",
+       "name": "공기밥",
+       "price": 1000
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [
     "1인 양념제육볶음 11,000원 / 1인 양념무뼈닭발 15,000원\n맨 앞에 추가",
-    "삭제) 삼계탕 / 모듬수육"
+    "삭제) 삼계탕 / 모듬수육",
+    "님 양념제육볶음 앞에도 1인 붙여주실 수 있을까유!",
+    "<tel:···|···> 발송 완"
    ],
-   "rc": 3,
-   "lr": "1788763235.212739",
+   "rc": 8,
+   "lr": "1788765448.104189",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788763217285159"
   },
