@@ -138,11 +138,30 @@
   .dlt.up{color:var(--red)} .dlt.down{color:var(--green)} .dlt.flat,.dlt.new{color:var(--gray2)}
   .ov-tile.tile-btn{cursor:pointer; transition:transform .12s, box-shadow .12s}
   .ov-tile.tile-btn:hover{transform:translateY(-2px); box-shadow:0 6px 18px rgba(0,0,0,.10)}
-  .lead-sum{display:flex; gap:18px; padding:2px 2px 14px}
-  .lead-sum div{display:flex; flex-direction:column}
-  .lead-sum b{font-size:24px; font-weight:800; letter-spacing:-.02em}
-  .lead-sum small{font-size:12px; color:var(--gray2); font-weight:600; margin-left:2px}
-  .lead-sum span{font-size:11.5px; color:var(--gray2); font-weight:600; margin-top:2px}
+  .lead-sum{display:flex; flex-wrap:wrap; gap:10px 34px; padding:2px 2px 18px}
+  .lead-sum .ls{display:flex; flex-direction:column}
+  .lead-sum .ls-v{display:flex; align-items:baseline; gap:3px}   /* 숫자와 '일' 을 같은 줄에 */
+  .lead-sum b{font-size:28px; font-weight:800; letter-spacing:-.02em; line-height:1.1}
+  .lead-sum small{font-size:13.5px; color:var(--gray2); font-weight:700}
+  .lead-sum span{font-size:12px; color:var(--gray2); font-weight:600; margin-top:3px}
+  /* 반복 인입 — 전체 폭이라 지점명·막대·건수·구성을 한 줄에 둔다 */
+  .rep-row{display:flex; align-items:center; gap:14px; cursor:pointer;
+    padding:7px 8px; border-radius:10px; transition:background .12s}
+  .rep-row:hover{background:var(--surface)}
+  .rep-nm{flex:0 0 132px; font-size:14px; font-weight:700; color:var(--ink);
+    overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+  .rep-bar{flex:1 1 150px; min-width:80px; height:12px; background:var(--surface);
+    border-radius:7px; overflow:hidden}
+  .rep-fill{height:100%; border-radius:7px; background:#ff9500; min-width:6px;
+    -webkit-print-color-adjust:exact; print-color-adjust:exact}
+  .rep-n{flex:0 0 auto; font-size:12.5px; color:var(--gray); white-space:nowrap; min-width:58px}
+  .rep-n b{font-size:15px; color:var(--ink)}
+  .rep-cats{flex:1 1 240px; display:flex; flex-wrap:wrap; gap:4px; justify-content:flex-end}
+  @media (max-width:860px){
+    .rep-row{flex-wrap:wrap; gap:8px}
+    .rep-nm{flex:1 1 100%}
+    .rep-cats{flex:1 1 100%; justify-content:flex-start}
+  }
   .as-brk{display:flex; flex-direction:column; gap:9px}
   .as-brk-row{display:flex; align-items:center; gap:12px; cursor:pointer;
     padding:5px 6px; border-radius:9px; transition:background .12s}
@@ -807,9 +826,9 @@ function viewOverview(){
     + asIssueBreakdown(rows)+'</div>';
 
   h += (function(){
-    const vk = visitKindBreakdown(rows), lt = leadTimeCard(rows);
+    const vk = visitKindBreakdown(rows);
     if(!vk) return '';                      /* 방문 건이 없으면 둘 다 내지 않는다 */
-    return '<div class="grid2">' + vk + lt + '</div>';
+    return vk + leadTimeCard(rows);         /* 각각 전체 폭 — 반쪽에서는 막대가 너무 짧다 */
   })();
 
   /* 지점 검색 — 본사가 특정 가맹점 이력을 바로 찾을 수 있게 */
@@ -830,16 +849,14 @@ function viewOverview(){
         : '<div class="empty">맞는 지점이 없습니다.</div>')
     + (q ? '<div style="font-size:11.5px;color:var(--gray2);margin-top:8px">검색 결과 ' + agg.length + '곳</div>' : '')
     + '</div>'
-    + repeatStoresCard(rows)
-    + '</div>';
-
-  h += '<div class="grid2">'
     + '<div class="card"><div class="card-head"><h3>카테고리 분포</h3></div>'
     + '<div style="display:flex;justify-content:center">'
     + svgDonut(CATS.filter(c=>cb[c.key]).map(c=>({n:c.name,c:c.color,v:cb[c.key]})), rows.length)+'</div>'
     + '<div class="legend" style="justify-content:center">'
     + CATS.filter(c=>cb[c.key]).map(c=>'<span class="lg"><i style="background:'+c.color+'"></i>'+c.name+' '+cb[c.key]+'</span>').join('')
     + '</div></div></div>';
+
+  h += repeatStoresCard(rows);            /* 지점명 + 카테고리 구성이라 폭이 필요하다 */
 
   const usedInt = INTAKES.filter(t=>rows.some(r=>r.intake===t.key));
   h += '<div class="grid2 even">'
@@ -923,18 +940,6 @@ function viewStores(){
     + '</tbody><tfoot><tr><td>합계</td><td class="num">'+rows.length+'</td>'
     + CATS.map(c=>'<td class="num">'+(tot[c.key]||0)+'</td>').join('')+'<td></td></tr></tfoot></table></div></div>';
 
-  const rep = agg.filter(o=>o.total>=2);
-  if(rep.length){
-    h += '<div class="card"><div class="card-head"><h3>⚠ 반복 인입 지점</h3>'
-      + '<span class="hint">'+esc(scopeLabel())+' 2건 이상 — 관리 포인트</span></div>'
-      + '<div class="tbl-wrap"><table><thead><tr><th>지점</th><th class="num">인입</th>'
-      + (ONSITE.length?'<th class="num">방문AS</th>':'')+'<th>구성</th></tr></thead><tbody>'
-      + rep.map(o=>'<tr><td style="font-weight:600">'+esc(o.branch)+'</td><td class="num" style="font-weight:800">'+o.total+'</td>'
-          + (ONSITE.length?'<td class="num'+(o.onsite?'" style="color:var(--red);font-weight:800':' zero')+'">'+(o.onsite||'·')+'</td>':'')
-          + '<td>'+Object.keys(o.cats).map(k=>'<span class="cat-chip" style="background:'+catColor(k)+'22;color:'+catColor(k)+';margin-right:4px">'
-              + catName(k)+' '+o.cats[k]+'</span>').join('')+'</td></tr>').join('')
-      + '</tbody></table></div></div>';
-  }
   return h;
 }
 
@@ -1242,14 +1247,15 @@ function repeatStoresCard(rows){
     return head + '<div class="empty">같은 지점에서 2건 이상 인입된 곳이 없습니다.</div></div>';
   const mx = rep[0].total;
   return head + rep.slice(0, 10).map(o =>
-      '<div class="bar-row" style="cursor:pointer" data-branch="' + esc(o.branch) + '">'
-    + '<div class="bar-meta"><span class="nm">' + esc(o.branch) + '</span>'
-    + '<span class="ct">' + o.total + '건'
-    + (o.onsite ? ' <span style="color:var(--red);font-size:11.5px">방문' + o.onsite + '</span>' : '')
-    + '</span></div>'
-    + '<div class="bar-track"><div class="bar-fill" style="width:' + (o.total / mx * 100).toFixed(1) + '%;background:#ff9500"></div></div>'
-    + '<div style="font-size:11.5px;color:var(--gray2);margin-top:3px">'
-    + esc(Object.keys(o.cats).map(k => catName(k) + ' ' + o.cats[k]).join(' · ')) + '</div></div>').join('')
+      '<div class="rep-row" data-branch="' + esc(o.branch) + '">'
+    + '<div class="rep-nm">' + esc(o.branch) + '</div>'
+    + '<div class="rep-bar"><div class="rep-fill" style="width:' + (o.total / mx * 100).toFixed(1) + '%"></div></div>'
+    + '<div class="rep-n"><b>' + o.total + '</b>건'
+    + (o.onsite ? ' <span style="color:var(--red)">방문' + o.onsite + '</span>' : '') + '</div>'
+    + '<div class="rep-cats">'
+    + Object.keys(o.cats).map(k => '<span class="cat-chip" style="background:' + catColor(k) + '22;color:'
+        + catColor(k) + '">' + esc(catName(k)) + ' ' + o.cats[k] + '</span>').join('')
+    + '</div></div>').join('')
     + (rep.length > 10 ? '<div style="font-size:11.5px;color:var(--gray2);margin-top:8px">외 '
         + (rep.length - 10) + '곳 — 지점별 탭에서 전체 확인</div>' : '')
     + '</div>';
@@ -1281,9 +1287,11 @@ function leadTimeCard(rows){
   const mx = Math.max.apply(null, counts);
 
   return head
-    + '<div class="lead-sum"><div><b>' + avg.toFixed(1) + '</b><small>일</small>'
-    + '<span>평균</span></div><div><b>' + med + '</b><small>일</small><span>중앙값</span></div>'
-    + '<div><b>' + ds[ds.length - 1] + '</b><small>일</small><span>최장</span></div></div>'
+    + '<div class="lead-sum">'
+    + [['평균', avg.toFixed(1)], ['중앙값', med], ['최장', ds[ds.length - 1]]]
+        .map(x => '<div class="ls"><div class="ls-v"><b>' + x[1] + '</b><small>일</small></div>'
+                + '<span>' + x[0] + '</span></div>').join('')
+    + '</div>'
     + LEAD_BANDS.map(function(b, i){
         const n = counts[i];
         return '<div class="bar-row"><div class="bar-meta"><span class="nm">' + b.name + '</span>'
@@ -1658,7 +1666,7 @@ function bindEvents(){
   /* 지점 막대 클릭 → 지점 상세 (지점 TOP10 · 반복 인입 공용) */
   document.querySelectorAll('.card').forEach(function(c){
     c.addEventListener('click', function(e){
-      const b = e.target.closest('.bar-row[data-branch]'); if(!b) return;
+      const b = e.target.closest('[data-branch]'); if(!b || !b.dataset.branch) return;
       drillStore(b.dataset.branch);
     });
   });
