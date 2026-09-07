@@ -3,10 +3,54 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1677,
- "updatedAt": "2026-09-07 15:34",
+ "version": 1678,
+ "updatedAt": "2026-09-07 15:40",
  "days": 30,
  "items": [
+  {
+   "ts": "1788763217.285159",
+   "date": "2026-09-07",
+   "time": "15:40",
+   "store": "계경순대국 광교월드마크점",
+   "biz": "7303401430",
+   "pos": "",
+   "content": "유니온포스) 메뉴 등록 및 삭제 요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "1인 양념제육볶음 11,000원 / 1인 양념무뼈닭발 15,000원\n맨 앞에 추가"
+   ],
+   "rc": 2,
+   "lr": "1788763226.106699",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788763217285159"
+  },
+  {
+   "ts": "1788763179.987469",
+   "date": "2026-09-07",
+   "time": "15:39",
+   "store": "아찌라멘 울산점",
+   "biz": "4153300710",
+   "pos": "기타",
+   "content": "카테고리 덮밥  타마고동 정식 가격수졍 12500 변경해주세요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1788763183.004769",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788763179987469"
+  },
   {
    "ts": "1788762834.142499",
    "date": "2026-09-07",
