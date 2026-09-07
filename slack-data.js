@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8889,
+  "version": 8890,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157301,16 +157301,16 @@ window.SLACK_DATA = {
     },
     "2026-09-07": {
       "counts": {
+        "onboarding": {
+          "배선유": 1
+        },
         "as": {
           "심성현": 1,
           "김현기": 1,
+          "고경림": 3,
           "송태양": 1,
-          "고경림": 2,
           "김동욱": 2,
           "배선유": 2
-        },
-        "onboarding": {
-          "고경림": 1
         },
         "extern": {
           "서상원": 1
@@ -157321,6 +157321,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:00",
+          "store": "제이-코리아",
+          "biz": "8251501019",
+          "cat": "onboarding",
+          "emp": "배선유",
+          "req": "프론트 온보딩 부탁드립니다:감사합니다꾸벅: /고령",
+          "hw": "",
+          "intake": "online",
+          "note": "포프(노트북) 온보딩 완료"
+        },
         {
           "time": "10:00",
           "store": "수학의 이음 수학교습소",
@@ -157347,12 +157358,12 @@ window.SLACK_DATA = {
           "time": "09:56",
           "store": "브라보캠프",
           "biz": "8482801744",
-          "cat": "onboarding",
+          "cat": "as",
           "emp": "고경림",
           "req": "노트북 + 프 + 유프 온보딩중, 와이파이도 바꾸어보았으나 프론트 연결시 연결할수 없어요 문구가 지속떠서 도움부탁드립니다",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "키오스크 모드로만 사용 선택하여 연동불가 로그아웃후 재 온보딩후 정상 연동 확인"
         },
         {
           "time": "09:48",
@@ -157455,11 +157466,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 7,
+        "online": 8,
         "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "10:00",
+      "updatedAt": "10:07",
       "voc": {
         "responses": 1,
         "install": {
@@ -157526,17 +157537,10 @@ window.SLACK_DATA = {
     "watch": {
       "1788742807.042019": {
         "post": "1788742807.042019",
-        "lastSeen": 1788743057.2,
+        "lastSeen": 1788743272.099,
         "r": 1,
         "day": "2026-09-07",
         "idx": 2
-      },
-      "1788742806.427599": {
-        "post": "1788742806.427599",
-        "lastSeen": 1788743057.2,
-        "r": 1,
-        "day": "2026-09-07",
-        "idx": 3
       }
     },
     "days": {
@@ -203302,14 +203306,15 @@ window.SLACK_DATA = {
             "store": "제이-코리아",
             "biz": "8251501019",
             "who": "배선유",
-            "cat": "as"
+            "cat": "onboarding",
+            "dmin": 6
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-07 10:04",
+    "at": "2026-09-07 10:08",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
