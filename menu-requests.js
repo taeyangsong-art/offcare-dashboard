@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1691,
- "updatedAt": "2026-09-07 16:50",
+ "version": 1692,
+ "updatedAt": "2026-09-07 16:54",
  "days": 30,
  "items": [
   {
@@ -428,7 +428,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C04FP4RNG",
      "from": "댓글",
-     "path": "menu-files/1788763364_253379-0.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -501,13 +500,13 @@ window.MENU_REQUESTS = {
        "name": "헤이즐럿 시럽추가",
        "price": 500
       }
-     ]
+     ],
+     "path": "menu-files/1788763364_253379-0.png"
     },
     {
      "name": "image.png",
      "fid": "F0BVCTLFF70",
      "from": "댓글",
-     "path": "menu-files/1788763364_253379-1.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -595,13 +594,13 @@ window.MENU_REQUESTS = {
        "name": "매장",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1788763364_253379-1.png"
     },
     {
      "name": "image.png",
      "fid": "F0C02PG1N0Z",
      "from": "댓글",
-     "path": "menu-files/1788763364_253379-2.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -674,13 +673,13 @@ window.MENU_REQUESTS = {
        "name": "TO-GO",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1788763364_253379-2.png"
     },
     {
      "name": "image.png",
      "fid": "F0BVCTP65L6",
      "from": "댓글",
-     "path": "menu-files/1788763364_253379-3.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -733,13 +732,13 @@ window.MENU_REQUESTS = {
        "name": "TO-GO",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1788763364_253379-3.png"
     },
     {
      "name": "image.png",
      "fid": "F0C0V7C74PJ",
      "from": "댓글",
-     "path": "menu-files/1788763364_253379-4.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -772,13 +771,13 @@ window.MENU_REQUESTS = {
        "name": "TO-GO",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1788763364_253379-4.png"
     },
     {
      "name": "image.png",
      "fid": "F0BVCTRHDLN",
      "from": "댓글",
-     "path": "menu-files/1788763364_253379-5.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -816,7 +815,8 @@ window.MENU_REQUESTS = {
        "name": "아포카토",
        "price": 5500
       }
-     ]
+     ],
+     "path": "menu-files/1788763364_253379-5.png"
     },
     {
      "name": "image.png",
@@ -1290,12 +1290,55 @@ window.MENU_REQUESTS = {
        "price": 0
       }
      ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BVCTZSET0",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "DRINK",
+       "name": "랭거스자몽",
+       "price": 4800
+      },
+      {
+       "category": "DRINK",
+       "name": "랭거스망고",
+       "price": 4800
+      },
+      {
+       "category": "DRINK",
+       "name": "페리에라임",
+       "price": 4300
+      },
+      {
+       "category": "DRINK",
+       "name": "페리에레몬",
+       "price": 4300
+      },
+      {
+       "category": "DRINK",
+       "name": "로리나핑크",
+       "price": 4800
+      },
+      {
+       "category": "DRINK",
+       "name": "골드메달애플주스",
+       "price": 4600
+      },
+      {
+       "category": "DRINK",
+       "name": "분다",
+       "price": 4800
+      }
+     ]
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 5,
-   "lr": "1788765848.279299",
+   "rc": 6,
+   "lr": "1788767521.002119",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
