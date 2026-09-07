@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8985,
+  "version": 8986,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -158656,7 +158656,7 @@ window.SLACK_DATA = {
         "offline": 24,
         "unknown": 0
       },
-      "updatedAt": "14:48",
+      "updatedAt": "14:50",
       "voc": {
         "responses": 2,
         "install": {
@@ -158723,9 +158723,9 @@ window.SLACK_DATA = {
         "praises": []
       },
       "ob": {
-        "count": 12,
+        "count": 13,
         "byEmp": {
-          "김규빈": 12
+          "김규빈": 13
         },
         "items": [
           {
@@ -158735,6 +158735,14 @@ window.SLACK_DATA = {
             "recvDate": "2026-09-07",
             "planDate": "",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785212960299569"
+          },
+          {
+            "key": "2026년 9월 7일 오전 8:12:53|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788317033560569#1",
+            "handler": "김규빈",
+            "status": "",
+            "recvDate": "2026-09-07",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788317033560569"
           },
           {
             "key": "2026년 9월 7일 오전 8:12:00|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788423735616559#1",
@@ -158836,36 +158844,40 @@ window.SLACK_DATA = {
       },
       "1788754319.713369": {
         "post": "1788754319.713369",
-        "lastSeen": 1788760162.12,
+        "lastSeen": 1788760283.533,
         "r": 1,
         "day": "2026-09-07",
         "idx": 48
       },
       "1788756119.531489": {
         "post": "1788756119.531489",
-        "lastSeen": 1788760162.12,
+        "lastSeen": 1788760283.533,
         "r": 1,
         "day": "2026-09-07",
         "idx": 56
       },
       "1788759156.883699": {
         "post": "1788759156.883699",
-        "lastSeen": 1788760162.12,
+        "lastSeen": 1788760283.533,
         "r": 1,
         "day": "2026-09-07",
         "idx": 69
       },
       "1788759034.069909": {
         "post": "1788759034.069909",
-        "lastSeen": 1788760162.12
+        "lastSeen": 1788760283.533
       },
       "1788760099.195029": {
         "post": "1788760099.195029",
-        "lastSeen": 1788760162.12
+        "lastSeen": 1788760283.533
       },
-      "1788760083.632159": {
-        "post": "1788760083.632159",
-        "lastSeen": 1788760162.12
+      "1788760211.789009": {
+        "post": "1788760211.789009",
+        "lastSeen": 1788760283.533
+      },
+      "1788750636.422099": {
+        "post": "1788750636.422099",
+        "lastSeen": 1788760283.533
       }
     },
     "days": {
@@ -205258,23 +205270,23 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-07 14:49",
+    "at": "2026-09-07 14:51",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3932,
-    "named": 625,
+    "named": 626,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 625,
+    "done": 626,
     "byStatus": {
       "일정등록완료": 396,
       "1차부재": 142,
       "점주직접접수": 50,
       "설치불가": 10,
-      "(빈칸)": 3,
+      "(빈칸)": 4,
       "자가설치": 18,
       "설치보류요청": 6
     }
