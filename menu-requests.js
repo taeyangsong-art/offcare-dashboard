@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1672,
- "updatedAt": "2026-09-07 14:54",
+ "version": 1673,
+ "updatedAt": "2026-09-07 14:56",
  "days": 30,
  "items": [
+  {
+   "ts": "1788760593.313109",
+   "date": "2026-09-07",
+   "time": "14:56",
+   "store": "계근상 경남대점",
+   "biz": "5360603658",
+   "pos": "토스포스",
+   "content": "계근상 고양화정점\n복사코드 : 14851502\n카테고리:  찜·탕·찌개 / 백반·죽·국수 / 야식\n\n전통숙성 황실김치찜&찌개 고양화정점\n복사코드 : 14846489 \n카테고리:  찜·탕·찌개 / 백반·죽·국수 / 야식",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1788760596.195389",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788760593313109"
+  },
   {
    "ts": "1788758853.289079",
    "date": "2026-09-07",
