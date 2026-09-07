@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8874,
+  "version": 8875,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157319,7 +157319,7 @@ window.SLACK_DATA = {
           "req": "담당자 연락처: 이채은 매니저 <tel:010-9029-4451|010-9029-4451> / 옵션 관련 문의",
           "hw": "",
           "intake": "offline",
-          "note": ""
+          "note": "수정완료! 하이오더 메뉴 동기화 할 줄 아셔서 적용해보고 추가 수정사항은 업무폰으로 전달해주시기로"
         },
         {
           "time": "09:09",
@@ -203132,7 +203132,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-07 09:20",
+    "at": "2026-09-07 09:22",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
