@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8886,
+  "version": 8887,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157304,7 +157304,7 @@ window.SLACK_DATA = {
         "as": {
           "송태양": 1,
           "고경림": 2,
-          "김동욱": 1,
+          "김동욱": 2,
           "배선유": 2
         },
         "extern": {
@@ -157325,7 +157325,7 @@ window.SLACK_DATA = {
           "req": "포프(노트북) / 지난 주 금요일부터 현재까지 프론트가 업데이트중이라고 뜨며",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "• 프론트 관리대리점에 문의하세요 문구 -&gt; 무조건 교체 필요한 상황 • 구매 제품이나 보증기간 도과 안되어 금번에 한하여 무상으로 진행 안내 • 대체품 그대로 지속 사용원하심 (수리후 재발송 필요 없음) • 입출고 접수 완료 프론트 관리대리점에 문의하세요 문구 - 무조건 교체 필요한 상황 구매 제품이나 보증기간 도과 안되어 금번에 한하여 무상으로 진"
         },
         {
           "time": "09:38",
@@ -157359,6 +157359,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "옵티머스 포스 사용중으로 보임. 동일 재고 없어 아임유 교체예정. 금일 방문. fd-170 어댑터 챙겨가서 어댑터만 바꿔보고 안되면 교체"
+        },
+        {
+          "time": "09:26",
+          "store": "미친피자 대전직영점",
+          "biz": "6578503547",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "포프(PC) + 프린터(기존보유) 이용중, 결제 시 주문서 출력되도록 세팅 도움 부탁드립니다!",
+          "hw": "",
+          "intake": "offline",
+          "note": "1차 부재 / 프린터 주방주문서 0장출력 설정 1장출력으로 변경해드림"
         },
         {
           "time": "09:23",
@@ -157407,10 +157418,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 4,
-        "offline": 4,
+        "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "09:56",
+      "updatedAt": "09:58",
       "voc": {
         "responses": 1,
         "install": {
@@ -203229,7 +203240,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-07 09:57",
+    "at": "2026-09-07 09:59",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
