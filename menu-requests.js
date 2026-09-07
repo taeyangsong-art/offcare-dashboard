@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1678,
- "updatedAt": "2026-09-07 15:40",
+ "version": 1679,
+ "updatedAt": "2026-09-07 15:44",
  "days": 30,
  "items": [
+  {
+   "ts": "1788763364.253379",
+   "date": "2026-09-07",
+   "time": "15:42",
+   "store": "주커피 한국산업기술대점",
+   "biz": "1211050752",
+   "pos": "토스포스",
+   "content": "해당 매장 스파로스 ->토스포스로 메뉴 이관 부탁드립니다",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1788763368.010979",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788763364253379"
+  },
   {
    "ts": "1788763217.285159",
    "date": "2026-09-07",
@@ -21,10 +42,11 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [
-    "1인 양념제육볶음 11,000원 / 1인 양념무뼈닭발 15,000원\n맨 앞에 추가"
+    "1인 양념제육볶음 11,000원 / 1인 양념무뼈닭발 15,000원\n맨 앞에 추가",
+    "삭제) 삼계탕 / 모듬수육"
    ],
-   "rc": 2,
-   "lr": "1788763226.106699",
+   "rc": 3,
+   "lr": "1788763235.212739",
    "rfx": 3,
    "status": "wait",
    "handler": null,
