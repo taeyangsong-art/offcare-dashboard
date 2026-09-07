@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1697,
- "updatedAt": "2026-09-07 17:54",
+ "version": 1698,
+ "updatedAt": "2026-09-07 17:58",
  "days": 30,
  "items": [
+  {
+   "ts": "1788771263.308199",
+   "date": "2026-09-07",
+   "time": "17:54",
+   "store": "쭈닭한상",
+   "biz": "7822301997",
+   "pos": "퍼스트포스",
+   "content": "스파로스 포스 메뉴 등록 요청 드립니다. ( 테이블 + 대형키오스크 함께 사용)",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "삭제\n우동  6,900\n달걀말이 10,000\n뽁음밥 2,000\n\n추가\n통통쭈꾸미 신라면 8,900"
+   ],
+   "rc": 2,
+   "lr": "1788771300.437489",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788771263308199"
+  },
   {
    "ts": "1788771114.172739",
    "date": "2026-09-07",
