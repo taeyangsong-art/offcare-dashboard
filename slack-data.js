@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8884,
+  "version": 8885,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157303,6 +157303,7 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "고경림": 2,
+          "김동욱": 1,
           "배선유": 2
         },
         "extern": {
@@ -157335,6 +157336,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": ""
+        },
+        {
+          "time": "09:27",
+          "store": "계경순대국 송파점",
+          "biz": "1110224932",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "포스기 불도 들어오지않고 작동이안된다하여 점검부탁드립니다",
+          "hw": "",
+          "intake": "offline",
+          "note": "옵티머스 포스 사용중으로 보임. 동일 재고 없어 아임유 교체예정. 금일 방문. fd-170 어댑터 챙겨가서 어댑터만 바꿔보고 안되면 교체"
         },
         {
           "time": "09:23",
@@ -157383,7 +157395,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 3,
-        "offline": 3,
+        "offline": 4,
         "unknown": 0
       },
       "updatedAt": "09:48",
@@ -157450,15 +157462,7 @@ window.SLACK_DATA = {
     }
   },
   "resp": {
-    "watch": {
-      "1788740824.780419": {
-        "post": "1788740824.780419",
-        "lastSeen": 1788742224.612,
-        "r": 1,
-        "day": "2026-09-07",
-        "idx": 0
-      }
-    },
+    "watch": {},
     "days": {
       "2026-07-16": {
         "cnt": 114,
@@ -203196,7 +203200,8 @@ window.SLACK_DATA = {
             "store": "계경순대국 송파점",
             "biz": "1110224932",
             "who": "김동욱",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 25.3
           },
           {
             "hm": "09:38",
@@ -203212,7 +203217,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-07 09:50",
+    "at": "2026-09-07 09:54",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
