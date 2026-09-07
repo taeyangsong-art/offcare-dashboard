@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8899,
+  "version": 8900,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157380,7 +157380,7 @@ window.SLACK_DATA = {
           "req": "9월 7일 오전 10시 45분 / 메뉴 복사 O / 프론트",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "명변 완료입니다"
         },
         {
           "time": "10:19",
@@ -157652,7 +157652,7 @@ window.SLACK_DATA = {
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "10:33",
+      "updatedAt": "10:39",
       "voc": {
         "responses": 1,
         "install": {
@@ -157719,11 +157719,14 @@ window.SLACK_DATA = {
     "watch": {
       "1788744821.045449": {
         "post": "1788744821.045449",
-        "lastSeen": 1788745041.769
+        "lastSeen": 1788745219.178,
+        "r": 1,
+        "day": "2026-09-07",
+        "idx": 11
       },
-      "1788744600.975869": {
-        "post": "1788744600.975869",
-        "lastSeen": 1788745041.769
+      "1788745164.363129": {
+        "post": "1788745164.363129",
+        "lastSeen": 1788745219.178
       }
     },
     "days": {
@@ -203453,8 +203456,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-07": {
-        "cnt": 11,
-        "sumMin": 29.817242181301115,
+        "cnt": 12,
+        "sumMin": 34.974376364549,
         "over": 0,
         "items": [
           {
@@ -203555,13 +203558,21 @@ window.SLACK_DATA = {
             "who": "김현기",
             "cat": "as",
             "dmin": 8.2
+          },
+          {
+            "hm": "10:33",
+            "min": 5.2,
+            "store": "주식회사 세컨드서브",
+            "biz": "6538803809",
+            "who": "송태양",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-07 10:37",
+    "at": "2026-09-07 10:40",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
