@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8933,
+  "version": 8934,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -155274,11 +155274,11 @@ window.SLACK_DATA = {
                 "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "지혜",
+            "autoStatus": "처리완료",
+            "autoEmp": "지혜",
+            "autoNote": "- 프론트에서 금액입력결제희망 / 외부에 계셔서 설정 가이드 문자 발송 - 결제취소는 토스포스에서 버튼 눌러주셔야 함 설명, 어려운 경우 연락주시기로 함 - 프론트에서 금액입력결제희망 / 외부에 계셔서 설정 가이드 문자 발송 - 결제취소는 토스포스에서 버튼 눌러주셔야 함 설명, 어려운 경우 연락주시기로 함 / 토스페이 가맹 완료되어 있어 , 페페결제도 가능",
+            "doneDate": "2026-09-07"
           }
         ],
         "praises": [
@@ -158075,7 +158075,7 @@ window.SLACK_DATA = {
         "offline": 15,
         "unknown": 0
       },
-      "updatedAt": "12:04",
+      "updatedAt": "12:10",
       "voc": {
         "responses": 1,
         "install": {
@@ -158146,10 +158146,18 @@ window.SLACK_DATA = {
       },
       "1788750276.253509": {
         "post": "1788750276.253509",
-        "lastSeen": 1788750540.801,
+        "lastSeen": 1788750679.483,
         "r": 1,
         "day": "2026-09-07",
         "idx": 36
+      },
+      "1788750640.408929": {
+        "post": "1788750640.408929",
+        "lastSeen": 1788750679.483
+      },
+      "1788750636.422099": {
+        "post": "1788750636.422099",
+        "lastSeen": 1788750679.483
       }
     },
     "days": {
@@ -204220,7 +204228,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-07 12:09",
+    "at": "2026-09-07 12:11",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
