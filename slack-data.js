@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8880,
+  "version": 8881,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157303,7 +157303,8 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "서상원": 1,
-          "배선유": 2
+          "배선유": 2,
+          "고경림": 1
         },
         "menu": {
           "김동욱": 1
@@ -157334,6 +157335,17 @@ window.SLACK_DATA = {
           "note": "배달주문서 꺼져있어 다시 켬"
         },
         {
+          "time": "09:19",
+          "store": "형과아우누룽지삼계탕&amp;왕갈비탕 터미널점",
+          "biz": "8185500852",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "OKPOS 이용 매장, 포스기 전원은 켜지는데 포스 프로그램이 안켜진다고 하셔서 원격 점검 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
+        {
           "time": "09:11",
           "store": "동동국밥 논현점",
           "biz": "7068503378",
@@ -157358,10 +157370,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 2,
-        "offline": 2,
+        "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "09:31",
+      "updatedAt": "09:38",
       "voc": {
         "responses": 1,
         "install": {
@@ -157428,14 +157440,14 @@ window.SLACK_DATA = {
     "watch": {
       "1788740824.780419": {
         "post": "1788740824.780419",
-        "lastSeen": 1788741294.582,
+        "lastSeen": 1788741532.272,
         "r": 1,
         "day": "2026-09-07",
         "idx": 0
       },
-      "1788741100.510629": {
-        "post": "1788741100.510629",
-        "lastSeen": 1788741294.582
+      "1788741528.786879": {
+        "post": "1788741528.786879",
+        "lastSeen": 1788741532.272
       }
     },
     "days": {
@@ -203182,7 +203194,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-07 09:35",
+    "at": "2026-09-07 09:39",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

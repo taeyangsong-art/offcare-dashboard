@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1663,
- "updatedAt": "2026-09-07 09:35",
+ "version": 1664,
+ "updatedAt": "2026-09-07 09:39",
  "days": 30,
  "items": [
   {
@@ -20,9 +20,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1788741103.789959",
+   "replies": [
+    "?>?? 괜찮음...?"
+   ],
+   "rc": 2,
+   "lr": "1788741367.780869",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -44,37 +46,77 @@ window.MENU_REQUESTS = {
      "name": "오늘의 백반.jpeg",
      "fid": "F0BV8B40G1K",
      "from": "댓글",
-     "path": "menu-files/1788739773_355829-0.jpeg"
+     "path": "menu-files/1788739773_355829-0.jpeg",
+     "kind": "product_photo",
+     "menu": []
     },
     {
      "name": "돼지짜글이.jpeg",
      "fid": "F0C0T4WJ7EU",
      "from": "댓글",
-     "path": "menu-files/1788739773_355829-1.jpeg"
+     "path": "menu-files/1788739773_355829-1.jpeg",
+     "kind": "product_photo",
+     "menu": []
     },
     {
      "name": "육회.jpeg",
      "fid": "F0BVAR99LLE",
      "from": "댓글",
-     "path": "menu-files/1788739773_355829-2.jpeg"
+     "path": "menu-files/1788739773_355829-2.jpeg",
+     "kind": "product_photo",
+     "menu": []
     },
     {
      "name": "닭발.jpeg",
      "fid": "F0BV8B5PU4D",
      "from": "댓글",
-     "path": "menu-files/1788739773_355829-3.jpeg"
+     "path": "menu-files/1788739773_355829-3.jpeg",
+     "kind": "product_photo",
+     "menu": []
     },
     {
      "name": "오리주물럭.jpeg",
      "fid": "F0C02DDFA12",
      "from": "댓글",
-     "path": "menu-files/1788739773_355829-4.jpeg"
+     "path": "menu-files/1788739773_355829-4.jpeg",
+     "kind": "product_photo",
+     "menu": []
     },
     {
      "name": "닭다리.jpeg",
      "fid": "F0C0T4XQB2L",
      "from": "댓글",
-     "path": "menu-files/1788739773_355829-5.jpeg"
+     "path": "menu-files/1788739773_355829-5.jpeg",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "name": "오리로스.jpeg",
+     "fid": "F0C00M5NC9F",
+     "from": "댓글",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "name": "삼겹살.jpeg",
+     "fid": "F0C02DFAT2Q",
+     "from": "댓글",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "name": "김치삼겹.jpeg",
+     "fid": "F0BV6GGEV8T",
+     "from": "댓글",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "name": "닭돼오.jpeg",
+     "fid": "F0BV8B94J3X",
+     "from": "댓글",
+     "kind": "product_photo",
+     "menu": []
     }
    ],
    "datt": [],
@@ -53865,10 +53907,6 @@ window.MENU_REQUESTS = {
  "ocr": {
   "model": "claude-opus-5",
   "enabled": true,
-  "drive": true,
-  "halt": {
-   "status": 400,
-   "message": "Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."
-  }
+  "drive": true
  }
 };
