@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1682,
- "updatedAt": "2026-09-07 15:59",
+ "version": 1683,
+ "updatedAt": "2026-09-07 16:05",
  "days": 30,
  "items": [
   {
@@ -476,8 +476,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1788762859.333219",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788762834142499"
   },
   {
@@ -493,7 +493,15 @@ window.MENU_REQUESTS = {
     "https://drive.google.com/file/d/1DikAyuNSQc19iGIrwP_K_nukc06bmTt_/view?usp=drivesdk"
    ],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "11.xlsx",
+     "fid": "F0C0V368Z3J",
+     "from": "댓글",
+     "path": "menu-files/1788761987_053679-0.xlsx",
+     "nj": 1
+    }
+   ],
    "datt": [
     {
      "id": "1DikAyuNSQc19iGIrwP_K_nukc06bmTt_",
@@ -567,11 +575,14 @@ window.MENU_REQUESTS = {
      ]
     }
    ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1788761991.029359",
+   "replies": [
+    "토플파x",
+    "작업은 해놓음"
+   ],
+   "rc": 3,
+   "lr": "1788764556.048769",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788761987053679"
   },
