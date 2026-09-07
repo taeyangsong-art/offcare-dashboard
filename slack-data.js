@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8905,
+  "version": 8906,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157302,12 +157302,12 @@ window.SLACK_DATA = {
     "2026-09-07": {
       "counts": {
         "as": {
+          "김동욱": 4,
           "심성현": 4,
           "고경림": 8,
           "배선유": 5,
           "송태양": 3,
-          "김현기": 3,
-          "김동욱": 3
+          "김현기": 3
         },
         "onboarding": {
           "심성현": 1,
@@ -157327,6 +157327,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:53",
+          "store": "바른보쌈1990원종점",
+          "biz": "1302097556",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "성민님 지원",
+          "hw": "",
+          "intake": "online",
+          "note": "신품 출고 이후 VAN변경되어 멀티패드 교체 필요."
+        },
         {
           "time": "10:45",
           "store": "플로렌(FLOREN)",
@@ -157692,11 +157703,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 23,
+        "online": 24,
         "offline": 10,
         "unknown": 0
       },
-      "updatedAt": "10:50",
+      "updatedAt": "10:53",
       "voc": {
         "responses": 1,
         "install": {
@@ -157760,12 +157771,7 @@ window.SLACK_DATA = {
     }
   },
   "resp": {
-    "watch": {
-      "1788744600.975869": {
-        "post": "1788744600.975869",
-        "lastSeen": 1788745878.846
-      }
-    },
+    "watch": {},
     "days": {
       "2026-07-16": {
         "cnt": 114,
@@ -203628,7 +203634,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-07 10:51",
+    "at": "2026-09-07 10:54",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
