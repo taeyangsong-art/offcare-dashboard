@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8906,
+  "version": 8907,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157303,9 +157303,9 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김동욱": 4,
+          "배선유": 6,
           "심성현": 4,
           "고경림": 8,
-          "배선유": 5,
           "송태양": 3,
           "김현기": 3
         },
@@ -157337,6 +157337,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "신품 출고 이후 VAN변경되어 멀티패드 교체 필요."
+        },
+        {
+          "time": "10:50",
+          "store": "퀸앤아이덴티티,춘천 미래",
+          "biz": "6118703278",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "포프(포스기) / 프린터기 전원 어답터가 불이 들어왔다 안 들어왔다 하루에 1번 이상 발생하여",
+          "hw": "",
+          "intake": "online",
+          "note": ""
         },
         {
           "time": "10:45",
@@ -157703,11 +157714,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 24,
+        "online": 25,
         "offline": 10,
         "unknown": 0
       },
-      "updatedAt": "10:53",
+      "updatedAt": "10:58",
       "voc": {
         "responses": 1,
         "install": {
@@ -157771,7 +157782,16 @@ window.SLACK_DATA = {
     }
   },
   "resp": {
-    "watch": {},
+    "watch": {
+      "1788746280.184829": {
+        "post": "1788746280.184829",
+        "lastSeen": 1788746313.421
+      },
+      "1788746288.328429": {
+        "post": "1788746288.328429",
+        "lastSeen": 1788746313.421
+      }
+    },
     "days": {
       "2026-07-16": {
         "cnt": 114,
@@ -203634,7 +203654,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-07 10:54",
+    "at": "2026-09-07 10:58",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
