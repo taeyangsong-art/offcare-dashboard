@@ -3,10 +3,41 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1703,
- "updatedAt": "2026-09-07 18:49",
+ "version": 1704,
+ "updatedAt": "2026-09-07 19:54",
  "days": 30,
  "items": [
+  {
+   "ts": "1788778404.877429",
+   "date": "2026-09-07",
+   "time": "19:53",
+   "store": "마음문화공간한땀협동조합",
+   "biz": "2498103940",
+   "pos": "",
+   "content": "메뉴 등록 요청 >>",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "f_29aa3097814d.xlsx.exs",
+     "fid": "F0BVA4YJJCT",
+     "from": "댓글",
+     "path": "menu-files/1788778404_877429-0.exs",
+     "nj": 1
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "엑셀 파일 내 메뉴 등록 요청드립니다."
+   ],
+   "rc": 2,
+   "lr": "1788778423.727739",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788778404877429"
+  },
   {
    "ts": "1788774400.193179",
    "date": "2026-09-07",
