@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8892,
+  "version": 8893,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157302,12 +157302,12 @@ window.SLACK_DATA = {
     "2026-09-07": {
       "counts": {
         "as": {
+          "배선유": 3,
+          "고경림": 4,
           "심성현": 2,
           "김현기": 1,
-          "고경림": 3,
           "송태양": 1,
-          "김동욱": 2,
-          "배선유": 2
+          "김동욱": 2
         },
         "onboarding": {
           "김동욱": 1,
@@ -157323,6 +157323,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:15",
+          "store": "럭셔리 샵(옷가게)",
+          "biz": "4171193396",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "금일 단말기 수령했으나 결제 불가 / 도움 요청",
+          "hw": "",
+          "intake": "online",
+          "note": "자체온보딩"
+        },
+        {
+          "time": "10:09",
+          "store": "프랭클린커피익스프레스",
+          "biz": "6506500764",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "일반 키오스크에서 선불권 사용 버튼이 노출이 안된다하여 확인부탁드립니다",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
         {
           "time": "10:07",
           "store": "오베이글",
@@ -157501,11 +157523,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 10,
-        "offline": 6,
+        "online": 11,
+        "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "10:15",
+      "updatedAt": "10:17",
       "voc": {
         "responses": 1,
         "install": {
@@ -157572,21 +157594,17 @@ window.SLACK_DATA = {
     "watch": {
       "1788743498.826879": {
         "post": "1788743498.826879",
-        "lastSeen": 1788743745.146,
+        "lastSeen": 1788743841.626,
         "r": 1,
         "day": "2026-09-07",
         "idx": 4
       },
       "1788743465.889619": {
         "post": "1788743465.889619",
-        "lastSeen": 1788743745.146,
+        "lastSeen": 1788743841.626,
         "r": 1,
         "day": "2026-09-07",
         "idx": 5
-      },
-      "1788743700.356059": {
-        "post": "1788743700.356059",
-        "lastSeen": 1788743745.146
       }
     },
     "days": {
@@ -203316,8 +203334,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-07": {
-        "cnt": 6,
-        "sumMin": 14.90177643299103,
+        "cnt": 7,
+        "sumMin": 16.45227544705073,
         "over": 0,
         "items": [
           {
@@ -203371,13 +203389,22 @@ window.SLACK_DATA = {
             "biz": "2048622240",
             "who": "김동욱",
             "cat": "as"
+          },
+          {
+            "hm": "10:15",
+            "min": 1.6,
+            "store": "럭셔리 샵(옷가게)",
+            "biz": "4171193396",
+            "who": "배선유",
+            "cat": "as",
+            "dmin": 1.6
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-07 10:15",
+    "at": "2026-09-07 10:17",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
