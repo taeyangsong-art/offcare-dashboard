@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1708,
- "updatedAt": "2026-09-07 21:15",
+ "version": 1709,
+ "updatedAt": "2026-09-07 21:35",
  "days": 30,
  "items": [
   {
@@ -75,8 +75,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "• 메뉴 사진 등록 요청(톡스포스)\n• 혹시 사이다,콜라 기본 이미지 있다면 같이 추가 해 주실 수 있으실까요..?\n• 등록 후 솔라피 발송 부탁 드립니다. :감사합니다꾸벅:"
    ],
-   "rc": 2,
-   "lr": "1788774505.530679",
+   "rc": 3,
+   "lr": "1788784483.506229",
    "rfx": 3,
    "status": "done",
    "handler": "최민석",
