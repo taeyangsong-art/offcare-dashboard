@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 8983,
+  "version": 8984,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -157301,28 +157301,28 @@ window.SLACK_DATA = {
     },
     "2026-09-07": {
       "counts": {
-        "extern": {
-          "서상원": 3
-        },
         "as": {
+          "김현기": 11,
           "김동욱": 7,
           "고경림": 15,
           "심성현": 10,
           "배선유": 16,
           "서상원": 7,
-          "김현기": 10,
           "김기범": 3,
           "김규빈": 4,
           "송태양": 7
         },
         "onboarding": {
+          "김동욱": 5,
           "고경림": 2,
-          "심성현": 5,
+          "심성현": 6,
           "배선유": 4,
-          "김동욱": 4,
           "서상원": 2,
           "김규빈": 2,
           "송태양": 3
+        },
+        "extern": {
+          "서상원": 3
         },
         "transfer": {
           "김동욱": 3,
@@ -157361,6 +157361,28 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "14:41",
+          "store": "꽈잇꽈베기",
+          "biz": "7640403813",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "프론트 문구 수정",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "14:38",
+          "store": "어리틀",
+          "biz": "4893701120",
+          "cat": "onboarding",
+          "emp": "김동욱",
+          "req": "프론트+터미널 온보딩 부탁드립니다:감사합니다꾸벅:",
+          "hw": "",
+          "intake": "online",
+          "note": "off pg 건. 터프 온보딩완료."
+        },
         {
           "time": "14:37",
           "store": "미시간",
@@ -157525,6 +157547,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "재다운로드"
+        },
+        {
+          "time": "14:00",
+          "store": "래쉬무드(Lash Mood)",
+          "biz": "5874501434",
+          "cat": "onboarding",
+          "emp": "심성현",
+          "req": "포프(태블릿) 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "기기 미개봉 기본 세팅 안내 세팅 후 재연락 예정 / 온보딩 완료 사용 방법 및 예약 결제 방법 안내 완ㄹ"
         },
         {
           "time": "14:00",
@@ -158608,11 +158641,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 92,
+        "online": 95,
         "offline": 23,
         "unknown": 0
       },
-      "updatedAt": "14:41",
+      "updatedAt": "14:45",
       "voc": {
         "responses": 2,
         "install": {
@@ -158679,9 +158712,9 @@ window.SLACK_DATA = {
         "praises": []
       },
       "ob": {
-        "count": 10,
+        "count": 12,
         "byEmp": {
-          "김규빈": 10
+          "김규빈": 12
         },
         "items": [
           {
@@ -158691,6 +158724,22 @@ window.SLACK_DATA = {
             "recvDate": "2026-09-07",
             "planDate": "",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785212960299569"
+          },
+          {
+            "key": "2026년 9월 7일 오전 8:12:00|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788423735616559#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-09-07",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788423735616559"
+          },
+          {
+            "key": "2026년 9월 7일 오전 8:02:41|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787016578672859#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-09-07",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787016578672859"
           },
           {
             "key": "2026년 9월 7일 오전 8:02:16|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788324608101999#1",
@@ -158776,42 +158825,36 @@ window.SLACK_DATA = {
       },
       "1788754319.713369": {
         "post": "1788754319.713369",
-        "lastSeen": 1788759759.287,
+        "lastSeen": 1788759974.24,
         "r": 1,
         "day": "2026-09-07",
         "idx": 48
       },
       "1788756119.531489": {
         "post": "1788756119.531489",
-        "lastSeen": 1788759759.287,
+        "lastSeen": 1788759974.24,
         "r": 1,
         "day": "2026-09-07",
         "idx": 56
       },
-      "1788757202.001559": {
-        "post": "1788757202.001559",
-        "lastSeen": 1788759759.287,
-        "r": 1,
-        "day": "2026-09-07",
-        "idx": 60
-      },
       "1788759156.883699": {
         "post": "1788759156.883699",
-        "lastSeen": 1788759759.287,
+        "lastSeen": 1788759974.24,
         "r": 1,
         "day": "2026-09-07",
         "idx": 69
       },
       "1788759034.069909": {
         "post": "1788759034.069909",
-        "lastSeen": 1788759759.287
+        "lastSeen": 1788759974.24
       },
-      "1788759508.442449": {
-        "post": "1788759508.442449",
-        "lastSeen": 1788759759.287,
-        "r": 1,
-        "day": "2026-09-07",
-        "idx": 71
+      "1788759900.297779": {
+        "post": "1788759900.297779",
+        "lastSeen": 1788759974.24
+      },
+      "1788750636.422099": {
+        "post": "1788750636.422099",
+        "lastSeen": 1788759974.24
       }
     },
     "days": {
@@ -205089,7 +205132,8 @@ window.SLACK_DATA = {
             "store": "래쉬무드(Lash Mood)",
             "biz": "5874501434",
             "who": "심성현",
-            "cat": "as"
+            "cat": "onboarding",
+            "dmin": 44.4
           },
           {
             "hm": "14:00",
@@ -205186,27 +205230,28 @@ window.SLACK_DATA = {
             "store": "어리틀",
             "biz": "4893701120",
             "who": "김동욱",
-            "cat": "as"
+            "cat": "onboarding",
+            "dmin": 6
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-07 14:42",
+    "at": "2026-09-07 14:46",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3932,
-    "named": 623,
+    "named": 625,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 623,
+    "done": 625,
     "byStatus": {
       "일정등록완료": 396,
-      "1차부재": 140,
+      "1차부재": 142,
       "점주직접접수": 50,
       "설치불가": 10,
       "(빈칸)": 3,
