@@ -741,9 +741,14 @@ function viewOverview(){
     + tile('','⏳','미처리', S.pend.length, '건', S.pend.length ? '보류 사유 확인 필요' : '보류 건 없음', S.pend.length?'#ff3b30':'#34c759')
     + '</div>';
 
+  /* 기간 전체(전체 선택 시 약 90일)를 그리면 막대가 빽빽해 읽히지 않는다 — 끝 7일만 */
+  const trendDates = S.dates.slice(-7);
+  const trendFr = fr.filter(r => trendDates.indexOf(r.date) >= 0);
   h += '<div class="card"><div class="card-head"><h3>일별 인입 추이</h3>'
-    + '<span class="hint">카테고리 누적 · 막대 위 숫자는 합계</span></div>'
-    + '<div class="chart-wrap">'+svgDailyStack(S.dates, fr)+'</div>'+legendHTML()+'</div>';
+    + '<span class="hint">최근 ' + trendDates.length + '일'
+    + (S.dates.length > trendDates.length ? ' (기간 ' + S.dates.length + '일 중)' : '')
+    + ' · ' + num(trendFr.length) + '건 · 카테고리 누적</span></div>'
+    + '<div class="chart-wrap">'+svgDailyStack(trendDates, fr)+'</div>'+legendHTML()+'</div>';
 
   h += '<div class="grid2">'
     + '<div class="card"><div class="card-head"><h3>브랜드 TOP 10</h3><span class="hint">클릭하면 상세</span></div>'
