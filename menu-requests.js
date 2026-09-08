@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1761,
- "updatedAt": "2026-09-08 16:29",
+ "version": 1762,
+ "updatedAt": "2026-09-08 16:35",
  "days": 30,
  "items": [
+  {
+   "ts": "1788852788.210799",
+   "date": "2026-09-08",
+   "time": "16:33",
+   "store": "실타래(Siltarae)",
+   "biz": "5433201716",
+   "pos": "",
+   "content": "메뉴 가격수정, 고객용 채널노출",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1788852791.574079",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788852788210799"
+  },
   {
    "ts": "1788849707.608049",
    "date": "2026-09-08",
@@ -5050,6 +5071,56 @@ window.MENU_REQUESTS = {
        "price": 6000
       }
      ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0BUSRZSQ",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": []
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BV6UPP5EK",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "퓨전요리",
+       "name": "양념감자",
+       "price": 11000
+      },
+      {
+       "category": "퓨전요리",
+       "name": "오코노미야끼",
+       "price": 15000
+      },
+      {
+       "category": "퓨전요리",
+       "name": "벌집감자튀김",
+       "price": 16000
+      },
+      {
+       "category": "퓨전요리",
+       "name": "순살뿌링클치킨",
+       "price": 18000
+      },
+      {
+       "category": "퓨전요리",
+       "name": "양념닭강정",
+       "price": 18000
+      },
+      {
+       "category": "퓨전요리",
+       "name": "치즈감자튀김",
+       "price": 13000
+      },
+      {
+       "category": "퓨전요리",
+       "name": "참래크래커",
+       "price": 11000
+      }
+     ]
     }
    ],
    "datt": [],
@@ -5063,8 +5134,8 @@ window.MENU_REQUESTS = {
     "아니 엑셀앞에 ㄱ은 뭐임",
     "옼돜"
    ],
-   "rc": 24,
-   "lr": "1788852512.050439",
+   "rc": 31,
+   "lr": "1788852856.690499",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
