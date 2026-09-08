@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1714,
- "updatedAt": "2026-09-08 10:05",
+ "version": 1715,
+ "updatedAt": "2026-09-08 10:09",
  "days": 30,
  "items": [
   {
@@ -29,10 +29,12 @@ window.MENU_REQUESTS = {
    ],
    "datt": [],
    "replies": [
-    "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788778404877429"
+    "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788778404877429",
+    "확인해보니 카테고리가 도서인데.. 각 출판사별로 카테고리가 등록되어 있어서. 변경해야 할 것 같습니다.\n혹시 다시 등록 가능할까요?\n\n라고 하시네요...ㅎㅎ",
+    "그래도 엑셀 파일 보내주신것으로 위안을......:꾸벅:"
    ],
-   "rc": 3,
-   "lr": "1788829503.892309",
+   "rc": 6,
+   "lr": "1788829616.907039",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
@@ -54,10 +56,10 @@ window.MENU_REQUESTS = {
    "replies": [
     "헤르츠 혼술바 구월점 ··· 과 메뉴 동일하게 등록 부탁드립니다!\n• 메뉴순서, 카테고리, 메뉴이미지 등 완전히 똑같이 복붙 요청"
    ],
-   "rc": 3,
-   "lr": "1788829312.694069",
+   "rc": 4,
+   "lr": "1788829537.917819",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788829259235009"
   },
