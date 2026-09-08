@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9157,
+  "version": 9158,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -160480,7 +160480,7 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "송태양": 4,
-          "배선유": 3,
+          "배선유": 4,
           "고경림": 2,
           "김동욱": 1
         },
@@ -160511,6 +160511,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "10시 45분 예약 요청으로 예약 완료입니다"
+        },
+        {
+          "time": "09:26",
+          "store": "온유모먼트(ON YOU MOMENT)",
+          "biz": "2104111918",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "노트북 네트워크 연결 끊김 오류 문구 노출 되어 확인 요청 드립니다. ( 다른 인터넷 사용 정상적으로 가능 )",
+          "hw": "",
+          "intake": "online",
+          "note": ""
         },
         {
           "time": "09:21",
@@ -160613,7 +160624,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 9,
+        "online": 10,
         "offline": 2,
         "unknown": 0
       },
@@ -160705,14 +160716,14 @@ window.SLACK_DATA = {
       },
       "1788827345.006619": {
         "post": "1788827345.006619",
-        "lastSeen": 1788828261.062,
+        "lastSeen": 1788828328.088,
         "r": 1,
         "day": "2026-09-08",
         "idx": 3
       },
       "1788828040.565099": {
         "post": "1788828040.565099",
-        "lastSeen": 1788828261.062,
+        "lastSeen": 1788828328.088,
         "r": 1,
         "day": "2026-09-08",
         "idx": 5
@@ -207942,7 +207953,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-08 09:44",
+    "at": "2026-09-08 09:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
