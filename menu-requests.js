@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1766,
- "updatedAt": "2026-09-08 16:55",
+ "version": 1767,
+ "updatedAt": "2026-09-08 17:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1788854231.878869",
+   "date": "2026-09-08",
+   "time": "16:57",
+   "store": "리틀콘타이 홍제",
+   "biz": "2322702112",
+   "pos": "토스포스",
+   "content": "메뉴등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1788854235.277869",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788854231878869"
+  },
   {
    "ts": "1788853584.863789",
    "date": "2026-09-08",
@@ -125,7 +146,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0BV72RCGDD",
      "from": "댓글",
-     "path": "menu-files/1788853584_863789-2.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -278,7 +298,8 @@ window.MENU_REQUESTS = {
        "name": "공기밥",
        "price": 1000
       }
-     ]
+     ],
+     "path": "menu-files/1788853584_863789-2.png"
     }
    ],
    "datt": [],
@@ -289,10 +310,10 @@ window.MENU_REQUESTS = {
     "오케이포스 사용 중이라고합니다,.,,!",
     "결제 내역 확인해보아도 토스포스 결제내역은 없숩니다,,,!ㅜㅜ"
    ],
-   "rc": 14,
-   "lr": "1788853867.889579",
+   "rc": 16,
+   "lr": "1788854265.722679",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788853584863789"
   },
