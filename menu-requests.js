@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1753,
- "updatedAt": "2026-09-08 15:29",
+ "version": 1754,
+ "updatedAt": "2026-09-08 15:34",
  "days": 30,
  "items": [
+  {
+   "ts": "1788849239.318729",
+   "date": "2026-09-08",
+   "time": "15:33",
+   "store": "에쎄카페",
+   "biz": "1058541550",
+   "pos": "",
+   "content": "*닥터로빈 박하은 프로 / <tel:···|···>*",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 0,
+   "lr": "",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788849239318729"
+  },
   {
    "ts": "1788848774.306129",
    "date": "2026-09-08",
@@ -79,11 +100,13 @@ window.MENU_REQUESTS = {
      ]
     }
    ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1788848777.092709",
+   "replies": [
+    "11000 > 12000 가격수정"
+   ],
+   "rc": 2,
+   "lr": "1788848987.781059",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788848774306129"
   },
@@ -664,13 +687,14 @@ window.MENU_REQUESTS = {
     "자도 없어요...",
     "해야하는데...",
     "캡쳐떠서 어떻게든 해보려구욤",
-    "에잇 메일로 엑셀파일 첨부해 재전송 요청"
+    "에잇 메일로 엑셀파일 첨부해 재전송 요청",
+    "완료우"
    ],
-   "rc": 7,
-   "lr": "1788840040.860209",
+   "rc": 8,
+   "lr": "1788849003.147879",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788835713524539"
   },
   {
