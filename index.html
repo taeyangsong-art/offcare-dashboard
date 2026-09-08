@@ -4957,7 +4957,7 @@ function renderOverview(){
     </div>
 
     <div class="grid2 even">
-      <div class="card"><div class="card-head"><h3>📈 처리 추이</h3><span class="hint">최근 7일 (오늘 강조)</span></div>${overviewTrend(trendDates)}</div>
+      <div class="card"><div class="card-head"><h3>📈 처리 추이</h3><span class="hint">최근 7일 · <b style="color:var(--purple)">오늘</b> · <b style="color:var(--sat)">토</b> · <b style="color:var(--sun)">일·공휴일</b></span></div>${overviewTrend(trendDates)}</div>
       <div class="card"><div class="card-head"><h3>⏰ 처리 추이 (시간대별)</h3><span class="hint">${viewLabel} · 인입 시각 기준 · 라벨=시작 시각(9시=9~10시)</span></div>${overviewHourly(viewDates)}</div>
     </div>
 
@@ -5199,9 +5199,12 @@ function overviewTrend(dates){
   const fs=Math.max(11, Math.min(17, gap*0.24));
   const bars=dates.map((d,i)=>{ const v=vals[i], h=(H-56)*(v/mx), x=pad+i*gap+(gap-bw)/2, y=H-32-h, dd=parseYmd(d), isT=d===ymd(today());
     const lbl=many?dd.getDate():`${dd.getMonth()+1}/${dd.getDate()}`;
-    return `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${bw.toFixed(1)}" height="${h.toFixed(1)}" rx="5" fill="${isT?'var(--blue)':'#cfe3fb'}"><title>${fmtShort(d)} · ${v}건</title></rect>`
+    const dow=dd.getDay(), holi=HOLIDAYS[d];
+    // 날짜 색: 오늘(보라) > 일요일·공휴일(빨강) > 토요일(파랑) > 평일(회색). 오늘을 파랑으로 두면 토요일과 구분이 안 된다
+    const lblCol = isT ? 'var(--purple)' : (holi||dow===0) ? 'var(--sun)' : dow===6 ? 'var(--sat)' : 'var(--gray2)';
+    return `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${bw.toFixed(1)}" height="${h.toFixed(1)}" rx="5" fill="${isT?'var(--purple)':'#cfe3fb'}"><title>${fmtShort(d)}${holi?' · '+holi:''} · ${v}건</title></rect>`
       +(v>0?`<text x="${(x+bw/2).toFixed(1)}" y="${(y-7).toFixed(1)}" text-anchor="middle" font-size="${fs.toFixed(1)}" font-weight="800" style="fill:var(--ink-soft)">${v}</text>`:'')
-      +`<text x="${(x+bw/2).toFixed(1)}" y="${H-12}" text-anchor="middle" font-size="${(fs*0.85).toFixed(1)}" font-weight="${isT?'800':'600'}" style="fill:${isT?'var(--blue)':'var(--gray2)'}">${lbl}</text>`;}).join('');
+      +`<text x="${(x+bw/2).toFixed(1)}" y="${H-12}" text-anchor="middle" font-size="${(fs*0.85).toFixed(1)}" font-weight="${(isT||holi||dow===0||dow===6)?'800':'600'}" style="fill:${lblCol}">${lbl}${holi?`<title>${escapeHtml(holi)}</title>`:''}</text>`;}).join('');
   return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="display:block"><line x1="${pad}" y1="${H-32}" x2="${W-pad}" y2="${H-32}" stroke="var(--line)"/>${bars}</svg></div>`;
 }
 // 시간대별 처리 추이 — done(처리완료) 항목을 인입 시각(HH) 시간대로 버킷팅
@@ -6415,12 +6418,19 @@ function trendChart(cat, mode, ref){
     const v=vals[i]; const h=(H-50)*(v/mx);
     const x=pad + i*gap + (gap-bw)/2, y=H-30-h;
     const dd=parseYmd(d); const isToday=d===ymd(today());
+    const dow=dd.getDay(), holi=HOLIDAYS[d];
     const lbl = mode==="month"? (dd.getDate()) : `${dd.getMonth()+1}/${dd.getDate()}`;
-    const col = isToday? "var(--blue)" : "#cfe3fb";
+    // 오늘은 보라 — 토요일 파랑과 같은 색이면 구분이 안 된다
+    const col = isToday? "var(--purple)" : "#cfe3fb";
+    // 날짜 색: 오늘(보라) > 일요일·공휴일(빨강) > 토요일(파랑) > 평일(회색)
+    const lblCol = isToday ? "var(--purple)"
+                 : (holi||dow===0) ? "var(--sun)"
+                 : dow===6 ? "var(--sat)" : "var(--gray2)";
+    const lblW = (isToday||holi||dow===0||dow===6) ? 700 : 400;
     return `<g>
       <rect x="${x}" y="${y}" width="${bw}" height="${h}" rx="4" fill="${col}"></rect>
       ${v>0?`<text x="${x+bw/2}" y="${y-6}" text-anchor="middle" font-size="11" font-weight="700" style="fill:var(--ink-soft)">${v}</text>`:''}
-      <text x="${x+bw/2}" y="${H-12}" text-anchor="middle" font-size="10" style="fill:var(--gray2)">${lbl}</text>
+      <text x="${x+bw/2}" y="${H-12}" text-anchor="middle" font-size="10" font-weight="${lblW}" style="fill:${lblCol}">${lbl}${holi?`<title>${escapeHtml(holi)}</title>`:""}</text>
     </g>`;
   }).join("");
   const total = vals.reduce((a,b)=>a+b,0);
@@ -6431,8 +6441,10 @@ function trendChart(cat, mode, ref){
     </svg>
   </div>
   <div class="legend">
-    <span><span class="swatch" style="background:var(--blue)"></span>오늘</span>
     <span><span class="swatch" style="background:#cfe3fb"></span>처리건수</span>
+    <span><span class="swatch" style="background:var(--purple)"></span>오늘</span>
+    <span><span class="swatch" style="background:var(--sat)"></span>토요일</span>
+    <span><span class="swatch" style="background:var(--sun)"></span>일요일 · 공휴일</span>
     <span style="margin-left:auto;font-weight:600;color:var(--ink)">기간 합계 ${total}건</span>
   </div>`;
 }
