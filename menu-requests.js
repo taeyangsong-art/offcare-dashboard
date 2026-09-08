@@ -3,10 +3,54 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1738,
- "updatedAt": "2026-09-08 13:24",
+ "version": 1739,
+ "updatedAt": "2026-09-08 13:29",
  "days": 30,
  "items": [
+  {
+   "ts": "1788841622.611209",
+   "date": "2026-09-08",
+   "time": "13:27",
+   "store": "올드타운",
+   "biz": "7688101161",
+   "pos": "토스포스",
+   "content": "롱블랙 카테고리 만들어서 \n롱블랙 ice\n롱블랙 hot\n플랫화이트 ice\n플랫화이트 hot\n블랙레몬에이드 only ice\n블랙 밀크티 only ice",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1788841626.126859",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788841622611209"
+  },
+  {
+   "ts": "1788841493.642189",
+   "date": "2026-09-08",
+   "time": "13:24",
+   "store": "실타래(Siltarae)",
+   "biz": "5433201716",
+   "pos": "",
+   "content": "메뉴 수정 부탁 드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "빙수 전부 수정\n• 생망고빙수  2~3인분 35000원 / 4~5인분 42000원\n• 그냥 망고빙수 18000원 그냥망고빙수는 한사이즈만(큰거 작은거 빼주세요) \n• 나머지 빙수들. 생망고빙수처럼 (생)으로 앞에 다써주시고. 금액 1000원 전체 추가\n•  딸기/블루베리/수박/냉동으로 추가 필요하나 냉동으로 쓰지말고 망고빙수처럼 생으로 작성해주세요. >> ex:생딸기빙수 / 전부 18,000원 수정 요청"
+   ],
+   "rc": 2,
+   "lr": "1788841653.199649",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788841493642189"
+  },
   {
    "ts": "1788841459.022179",
    "date": "2026-09-08",
