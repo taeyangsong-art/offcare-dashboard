@@ -825,11 +825,8 @@ function viewOverview(){
     + '<span class="hint">'+esc(asKeyLabel())+' 기준 · 요청내역+처리내역으로 분류 · 유형을 누르면 목록</span></div>'
     + asIssueBreakdown(rows)+'</div>';
 
-  h += (function(){
-    const vk = visitKindBreakdown(rows);
-    if(!vk) return '';                      /* 방문 건이 없으면 둘 다 내지 않는다 */
-    return vk + leadTimeCard(rows);         /* 각각 전체 폭 — 반쪽에서는 막대가 너무 짧다 */
-  })();
+  /* 각각 전체 폭 — 반쪽에서는 막대가 너무 짧다 */
+  h += visitKindBreakdown(rows) + leadTimeCard(rows);
 
   /* 지점 검색 — 본사가 특정 가맹점 이력을 바로 찾을 수 있게 */
   const q = storeQ.trim().toLowerCase();
@@ -1276,7 +1273,7 @@ function leadTimeCard(rows){
   const head = '<div class="card"><div class="card-head"><h3>⏱ 방문 대응 소요</h3>'
     + '<span class="hint">요청일 → 방문일</span></div>';
   if(!vs.length)
-    return head + '<div class="empty">방문일자가 있는 건이 없습니다.</div></div>';
+    return head + '<div class="empty">' + visitElsewhereNote() + '</div></div>';
 
   const ds = vs.map(r => Math.round((dnum(r.visit.visitDate) - dnum(r.date)) / 86400000))
                .filter(n => n >= 0 && n < 400).sort((a, b) => a - b);
@@ -1381,9 +1378,21 @@ const VISIT_KINDS = [
   { key:'AS',   color:'#ff3b30', desc:'장애 대응 방문' },
   { key:'기타', color:'#8e8e93', desc:'그 외' },
 ];
+/* 고른 기간엔 없지만 다른 기간엔 있을 때, 어디를 보면 되는지 알려준다 */
+function visitElsewhereNote(){
+  const all = REC.filter(r => r.cat === 'visit');
+  if(!all.length) return '이 브랜드는 방문설치 채널에 접수된 건이 없습니다.';
+  const ms = [...new Set(all.map(r => ymOf(r.date)))].sort().map(ymLabel);
+  return '고른 기간에는 없습니다. 전체 기간 기준 <b>' + all.length + '건</b>이 있습니다 ('
+    + esc(ms.join(' · ')) + '). 위 기간 버튼을 바꿔 보세요.';
+}
+
 function visitKindBreakdown(rows){
   const vs = rows.filter(r => r.cat === 'visit' && r.visit);
-  if(!vs.length) return '';
+  if(!vs.length)
+    return '<div class="card"><div class="card-head"><h3>🚗 현장방문 구분</h3>'
+      + '<span class="hint">방문설치 채널</span></div>'
+      + '<div class="empty">' + visitElsewhereNote() + '</div></div>';
   const total = vs.length;
   const counts = VISIT_KINDS.map(k => vs.filter(r => (r.visit.kind || '기타') === k.key).length);
   const mx = Math.max.apply(null, counts);
