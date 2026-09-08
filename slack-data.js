@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9151,
+  "version": 9152,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -160479,9 +160479,9 @@ window.SLACK_DATA = {
     "2026-09-08": {
       "counts": {
         "as": {
+          "배선유": 3,
           "송태양": 2,
           "고경림": 2,
-          "배선유": 2,
           "김동욱": 1
         },
         "onboarding": {
@@ -160490,6 +160490,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:21",
+          "store": "윤우산업",
+          "biz": "4453301914",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "포프(pc)+유프 사용 매장으로, 유프 온보딩 도움 요청주시어 확인 부탁드리겠습니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "프린터설정 완료 / 무음 설정"
+        },
         {
           "time": "09:20",
           "store": "모금(mogeum)",
@@ -160580,11 +160591,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 6,
+        "online": 7,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:24",
+      "updatedAt": "09:29",
       "voc": {
         "responses": 1,
         "install": {
@@ -160653,6 +160664,10 @@ window.SLACK_DATA = {
       "1788773722.655939": {
         "post": "1788773722.655939",
         "lastSeen": 1788812129.404
+      },
+      "1788827345.006619": {
+        "post": "1788827345.006619",
+        "lastSeen": 1788827355.675
       }
     },
     "days": {
@@ -207854,7 +207869,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-08 09:25",
+    "at": "2026-09-08 09:29",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
