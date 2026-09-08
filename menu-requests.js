@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1741,
- "updatedAt": "2026-09-08 13:52",
+ "version": 1742,
+ "updatedAt": "2026-09-08 13:56",
  "days": 30,
  "items": [
   {
@@ -18,14 +18,100 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C013E7GQK",
+     "from": "댓글",
+     "path": "menu-files/1788841622_611209-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "WiiM",
+       "name": "아메리카노a",
+       "price": 4500
+      },
+      {
+       "category": "WiiM",
+       "name": "라떼a",
+       "price": 5000
+      },
+      {
+       "category": "WiiM",
+       "name": "너티초코",
+       "price": 5500
+      },
+      {
+       "category": "WiiM",
+       "name": "얼그레이밀크티",
+       "price": 5500
+      },
+      {
+       "category": "WiiM",
+       "name": "콜드브루크림a",
+       "price": 6000
+      },
+      {
+       "category": "WiiM",
+       "name": "크랜베리에이드",
+       "price": 6000
+      },
+      {
+       "category": "디저트",
+       "name": "미니 클래식 비터바",
+       "price": 3000
+      },
+      {
+       "category": "디저트",
+       "name": "미니 레몬 비터바",
+       "price": 3500
+      },
+      {
+       "category": "디저트",
+       "name": "잠봉뵈르",
+       "price": 7000
+      },
+      {
+       "category": "RTD",
+       "name": "스트릿 오트라떼",
+       "price": 6500
+      },
+      {
+       "category": "RTD",
+       "name": "히떼 콜드브루",
+       "price": 4500
+      },
+      {
+       "category": "RTD",
+       "name": "베르크 콜드브루",
+       "price": 4500
+      },
+      {
+       "category": "핵과 도자기잔",
+       "name": "윤주당의 사계절 막걸리 레시피",
+       "price": 32000
+      },
+      {
+       "category": "Glass",
+       "name": "오미자 막걸리",
+       "price": 6000
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [
     "여기 카테고리 롱블랙으로 하나 생성해주시고 나머지는 모두 삭제 해달라고 하시네요!",
-    "등록된 메뉴가 56개인데 다 삭제하고 위에 요청하신것만 남겨놔염?"
+    "등록된 메뉴가 56개인데 다 삭제하고 위에 요청하신것만 남겨놔염?",
+    "옵션도 많은데 즘....멜루...?",
+    "앗 그런 얘기는 없던데 잠쉬만요",
+    "요런거 진짜진짜루 싹 다 삭제인지!",
+    "올려달라고 한것 제외하고 싹 다 삭제요!",
+    "넹! 근데 가격이 없어영!",
+    "옵션, 카테고디 포함"
    ],
-   "rc": 3,
-   "lr": "1788843118.310489",
+   "rc": 13,
+   "lr": "1788843342.278909",
    "rfx": 3,
    "status": "wait",
    "handler": null,
