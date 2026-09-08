@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1721,
- "updatedAt": "2026-09-08 11:26",
+ "version": 1722,
+ "updatedAt": "2026-09-08 11:30",
  "days": 30,
  "items": [
   {
@@ -26,8 +26,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1788833806.629909",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788833780451419"
   },
   {
@@ -46,8 +46,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "음료\n콜라,사이다,제로콜라 1.25L  2,900원\n콜라,사이다 500ml 1,900원\n\n\n1.25L 음료는 모두 2,900원\n500ml 음료는 모두 1,900원 이라고합니다!"
    ],
-   "rc": 2,
-   "lr": "1788833045.614669",
+   "rc": 3,
+   "lr": "1788834552.522699",
    "rfx": 3,
    "status": "confirm",
    "handler": "김규빈",
