@@ -166,6 +166,9 @@
     .rep-nm{flex:1 1 100%}
     .rep-cats{flex:1 1 100%; justify-content:flex-start}
   }
+  .vendors{display:flex; flex-wrap:wrap; align-items:center; gap:10px 14px; margin-top:14px;
+    padding-top:12px; border-top:1px solid var(--line-soft)}
+  .vendors .vh{font-size:11.5px; font-weight:700; color:var(--gray2)}
   .as-brk{display:flex; flex-direction:column; gap:9px}
   .as-brk-row{display:flex; align-items:center; gap:12px; cursor:pointer;
     padding:5px 6px; border-radius:9px; transition:background .12s}
@@ -470,6 +473,25 @@ window.FRANCHISE_STATUSES = [
   { key:'pending', name:'진행중',   color:'#ff9500' },
   { key:'hold',    name:'보류',     color:'#ff3b30' },
 ];
+
+/* ── 현장방문 수행 주체 ────────────────────────────────────
+ *  방문 건의 '설치 담당 배정' 에는 자사 직원 이름과 외주 업체명이 섞여 들어온다.
+ *  이름 생김새로 추측하면 틀리므로 자사 직원만 명시하고 나머지를 외주로 본다.
+ *  ※ 새 직원이 들어오면 여기에 이름을 추가해야 외주로 잘못 잡히지 않는다.
+ * ───────────────────────────────────────────────────────── */
+window.FRANCHISE_INHOUSE = [
+  '이성철', '김명석', '김주진', '공명현', '박성민',
+  '강승철', '홍남수', '황선혁', '유동건',
+];
+
+/* 담당자 이름 → '자사직원' | '외주' | '미지정' */
+window.visitBy = function(assignee){
+  const v = String(assignee == null ? '' : assignee).trim();
+  if(!v) return '미지정';
+  /* 스레드에서 잘못 긁힌 문구는 담당자로 치지 않는다 (예: '분께 확인요청중 .') */
+  if(/요청|확인|문의|대기|미정/.test(v)) return '미지정';
+  return (window.FRANCHISE_INHOUSE || []).indexOf(v) >= 0 ? '자사직원' : '외주';
+};
 
 /* 브랜드명 → 고객사 조회 (client.html·index.html 공용) */
 window.findClient = function(brand){
@@ -1341,7 +1363,7 @@ function viewOverview(){
     + asIssueBreakdown(rows)+'</div>';
 
   /* 각각 전체 폭 — 반쪽에서는 막대가 너무 짧다 */
-  h += visitKindBreakdown(rows) + leadTimeCard(rows);
+  h += visitKindBreakdown(rows) + visitByBreakdown(rows) + leadTimeCard(rows);
 
   /* 지점 검색 — 본사가 특정 가맹점 이력을 바로 찾을 수 있게 */
   const q = storeQ.trim().toLowerCase();
@@ -1870,7 +1892,7 @@ function visitDetail(v){
     ['설치구분',  v.kind],
     ['방문일자',  v.visitDate],
     ['방문 회차', v.rounds > 1 ? v.rounds + '회차 (' + (v.roundDates || []).join(', ') + ')' : ''],
-    ['담당자',    v.assignee],
+    ['담당자',    v.assignee ? v.assignee + (window.visitBy ? ' (' + window.visitBy(v.assignee) + ')' : '') : ''],
     ['요청자',    v.requester],
     ['지역',      v.region],
     ['주소지',    v.addr],
@@ -1922,6 +1944,64 @@ function visitKindBreakdown(rows){
   return '<div class="card"><div class="card-head"><h3>🚗 현장방문 구분</h3>'
     + '<span class="hint">방문설치 채널 · 구분을 누르면 상세</span></div>'
     + '<div class="as-brk">' + body + '</div></div>';
+}
+
+/* 방문을 누가 수행했는지 — 자사 직원인지 외주 업체인지.
+   명단은 clients.js 의 FRANCHISE_INHOUSE 에 있다. */
+const VISIT_BY = [
+  { key:'자사직원', color:'#0071e3' },
+  { key:'외주',     color:'#af52de' },
+  { key:'미지정',   color:'#8e8e93' },
+];
+function visitByOf(r){ return window.visitBy ? window.visitBy(r.visit && r.visit.assignee) : '미지정'; }
+
+function visitByBreakdown(rows){
+  const vs = rows.filter(r => r.cat === 'visit' && r.visit);
+  const head = '<div class="card"><div class="card-head"><h3>🧰 방문 수행 주체</h3>'
+    + '<span class="hint">설치 담당 기준 · 누르면 목록</span></div>';
+  if(!vs.length) return head + '<div class="empty">' + visitElsewhereNote() + '</div></div>';
+
+  const total = vs.length;
+  const counts = VISIT_BY.map(k => vs.filter(r => visitByOf(r) === k.key).length);
+  const mx = Math.max.apply(null, counts);
+  /* 외주는 어느 업체가 많은지가 실제로 궁금한 부분이다 */
+  const vendors = {};
+  vs.filter(r => visitByOf(r) === '외주')
+    .forEach(r => vendors[r.visit.assignee] = (vendors[r.visit.assignee] || 0) + 1);
+  const top = Object.entries(vendors).sort((a, b) => b[1] - a[1]).slice(0, 6);
+
+  return head + '<div class="as-brk">'
+    + VISIT_BY.map(function(k, i){
+        const n = counts[i];
+        if(!n && k.key === '미지정') return '';
+        return '<div class="as-brk-row" data-visitby="' + esc(k.key) + '" title="누르면 목록">'
+          + '<div class="as-brk-lab">' + esc(k.key) + '</div>'
+          + '<div class="as-brk-bar"><div class="as-brk-fill" style="width:'
+          + (mx ? Math.max(5, Math.round(n / mx * 100)) : 0) + '%;background:' + k.color + '"></div></div>'
+          + '<div class="as-brk-n"><b>' + n + '</b>건 · ' + Math.round(n / total * 100) + '%</div></div>';
+      }).join('')
+    + '</div>'
+    + (top.length ? '<div class="vendors"><span class="vh">외주 업체</span>'
+        + top.map(x => '<span class="lg"><i style="background:#af52de"></i>' + esc(x[0]) + ' <b>' + x[1] + '</b></span>').join('')
+        + (Object.keys(vendors).length > 6 ? '<span class="lg" style="color:var(--gray2)">외 '
+            + (Object.keys(vendors).length - 6) + '곳</span>' : '')
+        + '</div>' : '')
+    + '</div>';
+}
+
+function drillVisitBy(by){
+  const list = scopedRecs().filter(r => r.cat === 'visit' && r.visit && visitByOf(r) === by)
+    .sort((a, b) => (b.date + (b.time || '')).localeCompare(a.date + (a.time || '')));
+  const chips = '<span class="c">기간 <b>' + esc(scopeLabel()) + '</b></span>'
+    + '<span class="c">' + esc(by) + ' <b>' + list.length + '</b>건</span>'
+    + '<span class="c">지점 <b>' + new Set(list.map(r => r.branch)).size + '</b>곳</span>';
+  const body = list.length
+    ? list.map(r => '<div class="vd-card">'
+        + '<div class="vd-head"><b>' + esc(r.branch) + '</b>'
+        + '<span class="vd-meta">요청 ' + esc(r.date) + (r.time ? ' ' + esc(r.time) : '') + '</span>'
+        + stChip(r.status) + '</div>' + visitDetail(r.visit) + '</div>').join('')
+    : '<div class="empty">해당 건이 없습니다.</div>';
+  openDrill('🧰 현장방문 · ' + esc(by), chips, body);
 }
 
 /* 구분을 누르면 그 성격의 방문 건 목록 — 워크플로우 내용을 펼쳐 보여준다 */
@@ -2213,6 +2293,7 @@ function bindEvents(){
     w.addEventListener('click', function(e){
       const r = e.target.closest('.as-brk-row'); if(!r) return;
       if(r.dataset.visitkind) { drillVisitKind(r.dataset.visitkind); return; }
+      if(r.dataset.visitby)   { drillVisitBy(r.dataset.visitby); return; }
       drillAsIssue(r.dataset.issue);
     });
   });
