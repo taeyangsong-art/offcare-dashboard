@@ -402,6 +402,39 @@ function loadScript(src){
     document.head.appendChild(s);
   });
 }
+/* ── 현장방문 병합 ────────────────────────────────────────────
+   #ishopcare_new_방문설치 채널 적재분. client.html 과 같은 소스를 봐야
+   허브의 브랜드별 건수와 상세 화면의 건수가 어긋나지 않는다.
+   파일이 없어도(수집 전) 허브는 그대로 떠야 한다. */
+const VISIT_FR = [];
+async function loadVisits(){
+  await loadScript('../visit-data.js');
+  const VD = window.VISIT_DATA;
+  if(!VD || !Array.isArray(VD.records)) return;
+  VD.records.forEach(v=>{
+    if(!v || !v.date || !v.store) return;
+    if(isExcluded(v.store, v.biz)) return;
+    const m = matchBrand(v.store);
+    if(!m) return;
+    VISIT_FR.push({
+      date  : String(v.date).slice(0,10),
+      time  : v.time || '',
+      store : v.store || '',
+      biz   : String(v.biz||'').replace(/\D/g,''),
+      cat   : 'visit',
+      emp   : v.assignee || '미지정',
+      req   : '[' + (v.kind || '기타') + ']' + (v.visitDate ? ' 방문 ' + v.visitDate : ''),
+      hw    : '', note : '',
+      intake: 'unknown',
+      brand : m.brand.name,
+      tier  : m.brand.tier,
+      branch: branchOf(v.store, m.hit),
+      src   : 'visit',
+      sample: false,
+    });
+  });
+}
+
 async function loadClientLedgers(){
   const targets = CLIENTS.filter(c=>c.dataFile);
   await Promise.all(targets.map(c=>loadScript(c.dataFile)));
@@ -464,6 +497,7 @@ let LAST = DAYS.length ? DAYS[DAYS.length-1] : '';
 function rebuildDateUniverse(){
   const s = new Set(DAYS);
   CLIENT_FR.forEach(r=>s.add(r.date));
+  VISIT_FR.forEach(r=>s.add(r.date));
   ALL_DATES = [...s].sort();
   LAST = ALL_DATES.length ? ALL_DATES[ALL_DATES.length-1] : '';
 }
@@ -1210,8 +1244,9 @@ document.getElementById('themeFab').addEventListener('click', function(){
 (async function boot(){
   if(document.documentElement.getAttribute('data-theme')==='dark') document.getElementById('themeFab').textContent='☀️';
 
-  await loadClientLedgers();
+  await Promise.all([loadClientLedgers(), loadVisits()]);
   CLIENT_FR.forEach(r=>FR.push(r));
+  VISIT_FR.forEach(r=>FR.push(r));
   rebuildDateUniverse();
 
   if(ALL_DATES.length){
