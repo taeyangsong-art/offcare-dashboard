@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9152,
+  "version": 9153,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -160479,8 +160479,8 @@ window.SLACK_DATA = {
     "2026-09-08": {
       "counts": {
         "as": {
+          "송태양": 3,
           "배선유": 3,
-          "송태양": 2,
           "고경림": 2,
           "김동욱": 1
         },
@@ -160490,6 +160490,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:30",
+          "store": "바비야기 안산",
+          "biz": "6110944738",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "유프 온보딩 요청드립니다. / <https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1788742807042019|포프는 설치 완료>",
+          "hw": "",
+          "intake": "online",
+          "note": "10시 45분 예약 요청으로 예약 완료입니다"
+        },
         {
           "time": "09:21",
           "store": "윤우산업",
@@ -160591,11 +160602,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 7,
+        "online": 8,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:29",
+      "updatedAt": "09:30",
       "voc": {
         "responses": 1,
         "install": {
@@ -160667,7 +160678,10 @@ window.SLACK_DATA = {
       },
       "1788827345.006619": {
         "post": "1788827345.006619",
-        "lastSeen": 1788827355.675
+        "lastSeen": 1788827576.344,
+        "r": 1,
+        "day": "2026-09-08",
+        "idx": 3
       }
     },
     "days": {
@@ -207833,8 +207847,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-08": {
-        "cnt": 3,
-        "sumMin": 6.9409770488739015,
+        "cnt": 4,
+        "sumMin": 8.957691733042399,
         "over": 0,
         "items": [
           {
@@ -207863,13 +207877,21 @@ window.SLACK_DATA = {
             "who": "배선유",
             "cat": "as",
             "dmin": 2.4
+          },
+          {
+            "hm": "09:29",
+            "min": 2,
+            "store": "시너지커피 선정릉점",
+            "biz": "6714201209",
+            "who": "김동욱",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-08 09:29",
+    "at": "2026-09-08 09:33",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
