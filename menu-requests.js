@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1742,
- "updatedAt": "2026-09-08 13:56",
+ "version": 1743,
+ "updatedAt": "2026-09-08 14:00",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C013E7GQK",
      "from": "댓글",
-     "path": "menu-files/1788841622_611209-0.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -96,6 +95,46 @@ window.MENU_REQUESTS = {
        "name": "오미자 막걸리",
        "price": 6000
       }
+     ],
+     "path": "menu-files/1788841622_611209-0.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0B1AV1D2",
+     "from": "댓글",
+     "path": "menu-files/1788841622_611209-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "룽블랙",
+       "name": "룽블랙 ice",
+       "price": 5900
+      },
+      {
+       "category": "룽블랙",
+       "name": "룽블랙 hot",
+       "price": 5900
+      },
+      {
+       "category": "룽블랙",
+       "name": "플랫화이트 ice",
+       "price": 5900
+      },
+      {
+       "category": "룽블랙",
+       "name": "플랫화이트 hot",
+       "price": 5900
+      },
+      {
+       "category": "룽블랙",
+       "name": "블랙레몬에이드 only ice",
+       "price": 5900
+      },
+      {
+       "category": "룽블랙",
+       "name": "블랙 밀크티 only ice",
+       "price": 5900
+      }
      ]
     }
    ],
@@ -110,11 +149,11 @@ window.MENU_REQUESTS = {
     "넹! 근데 가격이 없어영!",
     "옵션, 카테고디 포함"
    ],
-   "rc": 13,
-   "lr": "1788843342.278909",
+   "rc": 14,
+   "lr": "1788843524.869619",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788841622611209"
   },
   {
