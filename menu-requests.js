@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1759,
- "updatedAt": "2026-09-08 16:00",
+ "version": 1760,
+ "updatedAt": "2026-09-08 16:25",
  "days": 30,
  "items": [
   {
@@ -4993,10 +4993,11 @@ window.MENU_REQUESTS = {
    "replies": [
     "오돌뼈..?",
     "사진다시보내라고하겟음 ㄷㄱ",
-    "청량한 사진 도착"
+    "청량한 사진 도착",
+    "님 여기 메뉴 안들어가 잇다는데 확인좀요!"
    ],
-   "rc": 11,
-   "lr": "1788509310.127619",
+   "rc": 12,
+   "lr": "1788852218.423939",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
@@ -12198,8 +12199,7 @@ window.MENU_REQUESTS = {
        "name": "시럽추가 ADD SYRUP",
        "price": 500
       }
-     ],
-     "path": "menu-files/1788247384_547189-0.png"
+     ]
     }
    ],
    "datt": [],
