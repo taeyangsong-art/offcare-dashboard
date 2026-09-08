@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1735,
- "updatedAt": "2026-09-08 13:12",
+ "version": 1736,
+ "updatedAt": "2026-09-08 13:17",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C11FXLQF2",
      "from": "댓글",
-     "path": "menu-files/1788838939_549189-0.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -131,6 +130,101 @@ window.MENU_REQUESTS = {
        "name": "모듬수육",
        "price": 0
       }
+     ],
+     "path": "menu-files/1788838939_549189-0.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C02N521FX",
+     "from": "댓글",
+     "path": "menu-files/1788838939_549189-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "메인메뉴",
+       "name": "감자탕(小)",
+       "price": 30000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "감자탕(中)",
+       "price": 38000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "감자탕(大)",
+       "price": 46000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "간장뼈찜(小)",
+       "price": 35000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "간장뼈찜(中)",
+       "price": 43000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "백순대볶음 소",
+       "price": 28000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "백순대볶음 중",
+       "price": 36000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "매운뼈찜(小)",
+       "price": 35000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "매운뼈찜(中)",
+       "price": 43000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "양념순대볶음 소",
+       "price": 28000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "양념순대볶음 중",
+       "price": 36000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "순대곱창전골 소",
+       "price": 28000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "순대곱창전골 중",
+       "price": 36000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "물냉면",
+       "price": 8000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "비빔냉면",
+       "price": 8000
+      },
+      {
+       "category": "메인메뉴",
+       "name": "서비스편육",
+       "price": 0
+      }
      ]
     }
    ],
@@ -140,13 +234,15 @@ window.MENU_REQUESTS = {
     "메인메뉴랑 식사류 겹치는 메뉴가 잇음",
     "<tel:···|···>",
     "겹치면 식사류 아니면 메인메뉴로~",
-    "식사"
+    "식사",
+    "메인메뉴",
+    "완료"
    ],
-   "rc": 6,
-   "lr": "1788840724.423219",
+   "rc": 8,
+   "lr": "1788840928.934239",
    "rfx": 3,
-   "status": "confirm",
-   "handler": "김규빈",
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788838939549189"
   },
   {
