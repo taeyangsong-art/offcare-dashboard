@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1734,
- "updatedAt": "2026-09-08 13:05",
+ "version": 1735,
+ "updatedAt": "2026-09-08 13:12",
  "days": 30,
  "items": [
   {
@@ -18,16 +18,132 @@ window.MENU_REQUESTS = {
    "special": "정애진 이름으로 메일전송보내겠습니다",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C11FXLQF2",
+     "from": "댓글",
+     "path": "menu-files/1788838939_549189-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "뼈해장국",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "얼큰 뼈해장국",
+       "price": 11000
+      },
+      {
+       "category": "",
+       "name": "순살뼈해장국",
+       "price": 11000
+      },
+      {
+       "category": "",
+       "name": "얼큰 순살뼈해장국",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "(특)순살뼈해장국",
+       "price": 12000
+      },
+      {
+       "category": "",
+       "name": "( 특)얼큰 순살뼈해장국",
+       "price": 14000
+      },
+      {
+       "category": "",
+       "name": "얼큰 오소리순대국",
+       "price": 12000
+      },
+      {
+       "category": "",
+       "name": "순대국",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "얼큰순대국",
+       "price": 11000
+      },
+      {
+       "category": "",
+       "name": "머릿고기 순대국",
+       "price": 11000
+      },
+      {
+       "category": "",
+       "name": "얼큰 머릿고기 순대국",
+       "price": 12000
+      },
+      {
+       "category": "",
+       "name": "오소리 순대국",
+       "price": 11000
+      },
+      {
+       "category": "",
+       "name": "(특)순대국",
+       "price": 11000
+      },
+      {
+       "category": "",
+       "name": "(특)얼큰순대국",
+       "price": 12000
+      },
+      {
+       "category": "",
+       "name": "(특) 머릿고기 순대국",
+       "price": 12000
+      },
+      {
+       "category": "",
+       "name": "(특)얼큰 모릿고기 순대국",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "(특)오소리 순대국",
+       "price": 12000
+      },
+      {
+       "category": "",
+       "name": "(특)얼큰 오소리순대국",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "순대 한접시",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "편육 한접시",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "모듬수육",
+       "price": 0
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [
     "메뉴가 이미 등록되어있음 카테고리만 옮기는거",
     "메인메뉴랑 식사류 겹치는 메뉴가 잇음",
     "<tel:···|···>",
-    "겹치면 식사류 아니면 메인메뉴로~"
+    "겹치면 식사류 아니면 메인메뉴로~",
+    "식사"
    ],
-   "rc": 5,
-   "lr": "1788839911.105179",
+   "rc": 6,
+   "lr": "1788840724.423219",
    "rfx": 3,
    "status": "confirm",
    "handler": "김규빈",
