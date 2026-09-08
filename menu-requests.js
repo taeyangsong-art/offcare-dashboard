@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1725,
- "updatedAt": "2026-09-08 11:45",
+ "version": 1726,
+ "updatedAt": "2026-09-08 11:49",
  "days": 30,
  "items": [
+  {
+   "ts": "1788835713.524539",
+   "date": "2026-09-08",
+   "time": "11:48",
+   "store": "메모라",
+   "biz": "8063002062",
+   "pos": "토스포스",
+   "content": "상품등록오류",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1788835716.445179",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788835713524539"
+  },
   {
    "ts": "1788834964.802329",
    "date": "2026-09-08",
@@ -20,12 +41,14 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1788834967.560089",
+   "replies": [
+    "재접수하기로"
+   ],
+   "rc": 2,
+   "lr": "1788835590.769579",
    "rfx": 3,
-   "status": "confirm",
-   "handler": "배선유",
+   "status": "wait",
+   "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788834964802329"
   },
   {
