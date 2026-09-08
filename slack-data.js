@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9145,
+  "version": 9146,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -160479,12 +160479,24 @@ window.SLACK_DATA = {
     "2026-09-08": {
       "counts": {
         "as": {
+          "김동욱": 1,
           "고경림": 1,
           "배선유": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:04",
+          "store": "와일드마일드",
+          "biz": "6785300911",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "금일 출근시 프론트,유프 초기화되어있다하시어 재온보딩 도움부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "태블릿+프론트2대+유선프린터1대 사용중. 프론트 1대는 태블릿과 연결 / 프론트 1대는 단독키오스크모드 재온보딩 및 프린터 설정 완료"
+        },
         {
           "time": "09:00",
           "store": "삼형제김밥 천안불당점",
@@ -160505,11 +160517,11 @@ window.SLACK_DATA = {
           "req": "초기화 실패 전문 송수신 오류 발생 건 (공장 초기화 후 동일) / 전산 추가 생성 후 정상 온보딩 확인",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "핫스팟 연결해 사용하는 매장, 노트북도 핫스팟으로 사용중이나 데이터에는 문제 없다고 함 / 어제 tid 새로 생성해 재온보딩 시도 필요 / 14:00 출근 예정으로 재예약 / 추가생성 tid: 8912616001"
         }
       ],
       "intake": {
-        "online": 2,
+        "online": 3,
         "offline": 0,
         "unknown": 0
       },
@@ -160546,7 +160558,7 @@ window.SLACK_DATA = {
       },
       "1788825609.885909": {
         "post": "1788825609.885909",
-        "lastSeen": 1788825871.829,
+        "lastSeen": 1788826161.177,
         "r": 1,
         "day": "2026-09-08",
         "idx": 0
@@ -207750,13 +207762,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-08 09:04",
+    "at": "2026-09-08 09:09",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3944,
+    "rows": 3945,
     "named": 637,
     "unknownName": 0,
     "beforeStart": 0,
