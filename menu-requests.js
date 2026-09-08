@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1729,
- "updatedAt": "2026-09-08 12:42",
+ "version": 1730,
+ "updatedAt": "2026-09-08 12:49",
  "days": 30,
  "items": [
   {
@@ -20,12 +20,14 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1788838942.467179",
+   "replies": [
+    "메뉴가 이미 등록되어있음 카테고리만 옮기는거"
+   ],
+   "rc": 2,
+   "lr": "1788839275.255219",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788838939549189"
   },
   {
@@ -43,10 +45,13 @@ window.MENU_REQUESTS = {
    "datt": [],
    "replies": [
     "해야되는겨? 하고있는겨?",
-    "나는 편집권한이 없네"
+    "나는 편집권한이 없네",
+    "자도 없어요...",
+    "해야하는데...",
+    "캡쳐떠서 어떻게든 해보려구욤"
    ],
-   "rc": 3,
-   "lr": "1788837602.834319",
+   "rc": 6,
+   "lr": "1788839186.548319",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
