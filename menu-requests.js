@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1760,
- "updatedAt": "2026-09-08 16:25",
+ "version": 1761,
+ "updatedAt": "2026-09-08 16:29",
  "days": 30,
  "items": [
   {
@@ -4987,6 +4987,69 @@ window.MENU_REQUESTS = {
        "price": 17000
       }
      ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0BU1A5L4",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류",
+       "name": "ㄱ/후레쉬",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "ㄱ/처음처럼",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "ㄱ/테라",
+       "price": 5500
+      },
+      {
+       "category": "주류",
+       "name": "ㄱ/카스",
+       "price": 5500
+      },
+      {
+       "category": "주류",
+       "name": "ㄱ/청하",
+       "price": 6000
+      },
+      {
+       "category": "주류",
+       "name": "ㄱ/매화수",
+       "price": 6000
+      },
+      {
+       "category": "주류",
+       "name": "카드분실",
+       "price": 100
+      },
+      {
+       "category": "주류",
+       "name": "ㄱ/새로",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "ㄱ/진로",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "ㄱ/요구르트주",
+       "price": 6000
+      },
+      {
+       "category": "주류",
+       "name": "ㄱ/레몬주",
+       "price": 6000
+      }
+     ]
     }
    ],
    "datt": [],
@@ -4994,10 +5057,14 @@ window.MENU_REQUESTS = {
     "오돌뼈..?",
     "사진다시보내라고하겟음 ㄷㄱ",
     "청량한 사진 도착",
-    "님 여기 메뉴 안들어가 잇다는데 확인좀요!"
+    "님 여기 메뉴 안들어가 잇다는데 확인좀요!",
+    "ㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱ",
+    "ㅇㅋ 올리겟음",
+    "아니 엑셀앞에 ㄱ은 뭐임",
+    "옼돜"
    ],
-   "rc": 12,
-   "lr": "1788852218.423939",
+   "rc": 24,
+   "lr": "1788852512.050439",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
