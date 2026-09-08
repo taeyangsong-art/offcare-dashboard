@@ -3,10 +3,241 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1755,
- "updatedAt": "2026-09-08 15:38",
+ "version": 1756,
+ "updatedAt": "2026-09-08 15:43",
  "days": 30,
  "items": [
+  {
+   "ts": "1788849707.608049",
+   "date": "2026-09-08",
+   "time": "15:41",
+   "store": "별난식당",
+   "biz": "1283960418",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "Resized_20260908_152755.jpg.jpeg",
+     "fid": "F0C09S8HK4Z",
+     "from": "댓글",
+     "path": "menu-files/1788849707_608049-0.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "안주류",
+       "name": "삼겹살",
+       "price": 16000
+      },
+      {
+       "category": "안주류",
+       "name": "오리백숙",
+       "price": 70000
+      },
+      {
+       "category": "안주류",
+       "name": "오리로스",
+       "price": 70000
+      },
+      {
+       "category": "안주류",
+       "name": "토종닭백숙",
+       "price": 60000
+      },
+      {
+       "category": "안주류",
+       "name": "묵은지닭도리탕",
+       "price": 60000
+      },
+      {
+       "category": "안주류",
+       "name": "동태전골",
+       "price": 45000
+      },
+      {
+       "category": "안주류",
+       "name": "부어전골",
+       "price": 45000
+      },
+      {
+       "category": "안주류",
+       "name": "김치전골",
+       "price": 45000
+      },
+      {
+       "category": "안주류",
+       "name": "곱창전골",
+       "price": 45000
+      },
+      {
+       "category": "안주류",
+       "name": "제육볶음",
+       "price": 25000
+      },
+      {
+       "category": "안주류",
+       "name": "쭈꾸미",
+       "price": 25000
+      },
+      {
+       "category": "안주류",
+       "name": "두부김치",
+       "price": 20000
+      },
+      {
+       "category": "식사류",
+       "name": "묵은지고등어",
+       "price": 22000
+      },
+      {
+       "category": "식사류",
+       "name": "갈치조림",
+       "price": 22000
+      },
+      {
+       "category": "식사류",
+       "name": "갈비탕",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "내장탕",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "갈비탕",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "사골우거지탕",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "김치찌개",
+       "price": 9000
+      },
+      {
+       "category": "식사류",
+       "name": "손두부찌개",
+       "price": 9000
+      },
+      {
+       "category": "식사류",
+       "name": "된장찌개",
+       "price": 9000
+      },
+      {
+       "category": "식사류",
+       "name": "청국장",
+       "price": 9000
+      },
+      {
+       "category": "식사류",
+       "name": "콩비지",
+       "price": 9000
+      },
+      {
+       "category": "식사류",
+       "name": "제육덮밥",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "생선구이",
+       "price": 12000
+      },
+      {
+       "category": "식사류",
+       "name": "굴보쌈",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "임면수구이",
+       "price": 12000
+      },
+      {
+       "category": "",
+       "name": "김장철안주",
+       "price": 70000
+      },
+      {
+       "category": "계절",
+       "name": "떡만두국",
+       "price": 9000
+      },
+      {
+       "category": "계절",
+       "name": "열무국수",
+       "price": 9000
+      },
+      {
+       "category": "계절",
+       "name": "콩국수",
+       "price": 9000
+      },
+      {
+       "category": "주류",
+       "name": "맥주",
+       "price": 4000
+      },
+      {
+       "category": "주류",
+       "name": "소주",
+       "price": 4000
+      },
+      {
+       "category": "주류",
+       "name": "막걸리",
+       "price": 4000
+      },
+      {
+       "category": "주류",
+       "name": "청하",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "카프리",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "음료수",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "홍어삼합",
+       "price": 70000
+      },
+      {
+       "category": "",
+       "name": "국물닭발",
+       "price": 20000
+      },
+      {
+       "category": "",
+       "name": "홍어한접시",
+       "price": 30000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1788849738.843379",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788849707608049"
+  },
   {
    "ts": "1788849239.318729",
    "date": "2026-09-08",
