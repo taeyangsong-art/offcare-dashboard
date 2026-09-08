@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9154,
+  "version": 9155,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -160606,7 +160606,7 @@ window.SLACK_DATA = {
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:36",
+      "updatedAt": "09:40",
       "voc": {
         "responses": 1,
         "install": {
@@ -160645,6 +160645,22 @@ window.SLACK_DATA = {
         "reasonCounts": {},
         "alerts": [],
         "praises": []
+      },
+      "ob": {
+        "count": 1,
+        "byEmp": {
+          "김규빈": 1
+        },
+        "items": [
+          {
+            "key": "2026년 9월 8일 오전 8:06:21|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788743203369899#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-09-08",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788743203369899"
+          }
+        ]
       }
     }
   },
@@ -160678,14 +160694,21 @@ window.SLACK_DATA = {
       },
       "1788827345.006619": {
         "post": "1788827345.006619",
-        "lastSeen": 1788827841.758,
+        "lastSeen": 1788828080.007,
         "r": 1,
         "day": "2026-09-08",
         "idx": 3
       },
       "1788827806.239649": {
         "post": "1788827806.239649",
-        "lastSeen": 1788827841.758
+        "lastSeen": 1788828080.007,
+        "r": 1,
+        "day": "2026-09-08",
+        "idx": 4
+      },
+      "1788828040.565099": {
+        "post": "1788828040.565099",
+        "lastSeen": 1788828080.007
       }
     },
     "days": {
@@ -207851,8 +207874,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-08": {
-        "cnt": 4,
-        "sumMin": 8.957691733042399,
+        "cnt": 5,
+        "sumMin": 11.535072580973306,
         "over": 0,
         "items": [
           {
@@ -207889,25 +207912,33 @@ window.SLACK_DATA = {
             "biz": "6714201209",
             "who": "김동욱",
             "cat": "as"
+          },
+          {
+            "hm": "09:36",
+            "min": 2.6,
+            "store": "레자미오네뜨",
+            "biz": "1914700316",
+            "who": "송태양",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-08 09:37",
+    "at": "2026-09-08 09:41",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 3945,
-    "named": 637,
+    "named": 638,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 637,
+    "done": 638,
     "byStatus": {
-      "일정등록완료": 406,
+      "일정등록완료": 407,
       "1차부재": 143,
       "점주직접접수": 50,
       "설치불가": 10,
