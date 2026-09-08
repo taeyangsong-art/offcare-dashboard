@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1740,
- "updatedAt": "2026-09-08 13:48",
+ "version": 1741,
+ "updatedAt": "2026-09-08 13:52",
  "days": 30,
  "items": [
   {
@@ -21,10 +21,11 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [
-    "여기 카테고리 롱블랙으로 하나 생성해주시고 나머지는 모두 삭제 해달라고 하시네요!"
+    "여기 카테고리 롱블랙으로 하나 생성해주시고 나머지는 모두 삭제 해달라고 하시네요!",
+    "등록된 메뉴가 56개인데 다 삭제하고 위에 요청하신것만 남겨놔염?"
    ],
-   "rc": 2,
-   "lr": "1788842865.389009",
+   "rc": 3,
+   "lr": "1788843118.310489",
    "rfx": 3,
    "status": "wait",
    "handler": null,
