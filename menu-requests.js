@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1717,
- "updatedAt": "2026-09-08 10:16",
+ "version": 1718,
+ "updatedAt": "2026-09-08 10:20",
  "days": 30,
  "items": [
   {
@@ -31,12 +31,13 @@ window.MENU_REQUESTS = {
    "replies": [
     "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788778404877429",
     "확인해보니 카테고리가 도서인데.. 각 출판사별로 카테고리가 등록되어 있어서. 변경해야 할 것 같습니다.\n혹시 다시 등록 가능할까요?\n\n라고 하시네요...ㅎㅎ",
-    "그래도 엑셀 파일 보내주신것으로 위안을......:꾸벅:"
+    "그래도 엑셀 파일 보내주신것으로 위안을......:꾸벅:",
+    "감사합니다^^"
    ],
-   "rc": 6,
-   "lr": "1788829616.907039",
+   "rc": 8,
+   "lr": "1788830225.192899",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788829378855049"
   },
