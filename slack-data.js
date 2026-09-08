@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9150,
+  "version": 9151,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -160479,10 +160479,10 @@ window.SLACK_DATA = {
     "2026-09-08": {
       "counts": {
         "as": {
+          "송태양": 2,
           "고경림": 2,
           "배선유": 2,
-          "김동욱": 1,
-          "송태양": 1
+          "김동욱": 1
         },
         "onboarding": {
           "김현기": 1
@@ -160490,6 +160490,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:20",
+          "store": "모금(mogeum)",
+          "biz": "4115001602",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "프론트 꽂으면 전기차단기가 내려가는 증상이 있어 기기점검 요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "• 프론트+어댑터 교체 안내 및 입출고 접수 완료 • 프론트+어댑터 교체 후에도 동일증상 일시 전기쪽 문제로 자체 해결 하셔야 함 안내드렸어요 프론트+어댑터 교체 안내 및 입출고 접수 완료 프론트+어댑터 교체 후에도 동일증상 일시 전기쪽 문제로 자체 해결 하셔야 함 안내드렸어요"
+        },
         {
           "time": "09:15",
           "store": "원당감자탕(용산)",
@@ -160569,11 +160580,50 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 5,
+        "online": 6,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:20"
+      "updatedAt": "09:24",
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 1,
+          "low": 0
+        },
+        "nps": {
+          "count": 1,
+          "low": 0
+        },
+        "high": {
+          "install": 1,
+          "nps": 1
+        },
+        "npsDist": {
+          "10": 1
+        },
+        "installDist": {
+          "5": 1
+        },
+        "byIndustry": {
+          "요식업": 1
+        },
+        "byTenure": {
+          "구매설치": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "KOVAN": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {},
+        "alerts": [],
+        "praises": []
+      }
     }
   },
   "resp": {
@@ -207804,7 +207854,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-08 09:21",
+    "at": "2026-09-08 09:25",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
