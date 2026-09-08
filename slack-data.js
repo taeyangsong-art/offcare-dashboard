@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9155,
+  "version": 9156,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -160479,7 +160479,7 @@ window.SLACK_DATA = {
     "2026-09-08": {
       "counts": {
         "as": {
-          "송태양": 3,
+          "송태양": 4,
           "배선유": 3,
           "고경림": 2,
           "김동욱": 1
@@ -160490,6 +160490,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:36",
+          "store": "레자미오네뜨",
+          "biz": "1914700316",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "프론트와 연결이 끊켰어요라는 문구 확인되어 포프(노트북)재온보딩 요청드립니다! /",
+          "hw": "",
+          "intake": "online",
+          "note": "재온보딩 완료입니다"
+        },
         {
           "time": "09:30",
           "store": "바비야기 안산",
@@ -160602,11 +160613,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 8,
+        "online": 9,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:40",
+      "updatedAt": "09:41",
       "voc": {
         "responses": 1,
         "install": {
@@ -160694,21 +160705,17 @@ window.SLACK_DATA = {
       },
       "1788827345.006619": {
         "post": "1788827345.006619",
-        "lastSeen": 1788828080.007,
+        "lastSeen": 1788828176.023,
         "r": 1,
         "day": "2026-09-08",
         "idx": 3
       },
-      "1788827806.239649": {
-        "post": "1788827806.239649",
-        "lastSeen": 1788828080.007,
-        "r": 1,
-        "day": "2026-09-08",
-        "idx": 4
-      },
       "1788828040.565099": {
         "post": "1788828040.565099",
-        "lastSeen": 1788828080.007
+        "lastSeen": 1788828176.023,
+        "r": 1,
+        "day": "2026-09-08",
+        "idx": 5
       }
     },
     "days": {
@@ -207874,8 +207881,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-08": {
-        "cnt": 5,
-        "sumMin": 11.535072580973306,
+        "cnt": 6,
+        "sumMin": 12.992570928732553,
         "over": 0,
         "items": [
           {
@@ -207919,6 +207926,15 @@ window.SLACK_DATA = {
             "store": "레자미오네뜨",
             "biz": "1914700316",
             "who": "송태양",
+            "cat": "as",
+            "dmin": 5.4
+          },
+          {
+            "hm": "09:40",
+            "min": 1.5,
+            "store": "현중세무회계",
+            "biz": "3450400861",
+            "who": "김동욱",
             "cat": "as"
           }
         ]
@@ -207926,7 +207942,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-08 09:41",
+    "at": "2026-09-08 09:43",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
