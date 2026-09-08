@@ -1,10 +1,10 @@
 /*
  * 방문설치 채널(#ishopcare_new_방문설치) 적재 — 자동 생성 파일
  * 직접 수정하지 마세요. scripts/fetch-visits.js 가 덮어씁니다.
- * 갱신: 2026-09-08 12:01 KST · 126건 (2026-07-01 이후)
+ * 갱신: 2026-09-08 12:04 KST · 126건 (2026-07-01 이후)
  */
 window.VISIT_DATA = {
-  updatedAt: '2026-09-08 12:01',
+  updatedAt: '2026-09-08 12:04',
   records: [
   {"id":"11366","date":"2026-07-01","time":"09:40","store":"(주)참치공방(종각본점)","biz":"2338800379","kind":"AS","status":"done","visitDate":"2026-07-01","region":"수도권","route":"온라인","addr":"서울특별시 종로구","van":"DAOU","equip":"dk9300 용지 끼임 점검","ship":"","delivery":"","requester":"","assignee":"이성철","rounds":0,"roundDates":[],"brand":"참치공방"},
   {"id":"11367","date":"2026-07-01","time":"09:45","store":"참치공방 시청지점","biz":"7368501084","kind":"AS","status":"done","visitDate":"2026-07-01","region":"수도권","route":"오프라인","addr":"서울특별시 중구","van":"DAOU","equip":"DK 9300","ship":"","delivery":"","requester":"","assignee":"이성철","rounds":4,"roundDates":["2025-04-22","2025-06-04","2026-05-12","2026-07-01","2025-04-22","2025-06-04","2026-05-12","2026-07-01"],"brand":"참치공방"},
@@ -129,7 +129,7 @@ window.VISIT_DATA = {
   {"id":"14130","date":"2026-09-04","time":"11:56","store":"미친피자 평택점","biz":"1251726762","kind":"설치","status":"done","visitDate":"2026-09-07","region":"지방","route":"오프라인","addr":"경기도 평택시","van":"NICE","equip":"개인PC + 프론트 1EA","ship":"2026-09-03","delivery":"","requester":"","assignee":"미르컴퍼니","rounds":0,"roundDates":[],"brand":"미친피자"},
   {"id":"14182","date":"2026-09-04","time":"17:56","store":"웅칼 강남점","biz":"2758103008","kind":"설치","status":"done","visitDate":"2026-09-08","region":"수도권","route":"온라인","addr":"서울특별시 강남구","van":"NICE","equip":"태블릿+프론트","ship":"","delivery":"","requester":"","assignee":"유동건","rounds":9,"roundDates":["2025-07-31","2025-08-14","2025-11-04","2025-12-22","2025-12-23","2026-02-20","2026-06-18","2026-08-31","2026-09-08","2025-07-31","2025-08-14","2025-11-04","2025-12-22","2025-12-23","2026-02-20","2026-06-18","2026-08-31","2026-09-08"],"brand":"웅칼"},
   {"id":"14189","date":"2026-09-05","time":"11:06","store":"몰디브태닝(광교)","biz":"8762702173","kind":"AS","status":"done","visitDate":"2026-09-08","region":"지방","route":"온라인","addr":"경기도 수원시 영통구","van":"NICE","equip":"프론트+유선프린터","ship":"","delivery":"","requester":"","assignee":"김주진","rounds":3,"roundDates":["2025-08-29","2026-09-01","2026-09-08","2025-08-29","2026-09-01","2026-09-08"],"brand":"몰디브태닝"},
-  {"id":"14197","date":"2026-09-07","time":"09:55","store":"계경순대국 송파점","biz":"1110224932","kind":"AS","status":"done","visitDate":"2026-09-07","region":"수도권","route":"오프라인","addr":"서울특별시 송파구","van":"KIS","equip":"FD-170 어댑터, 아임유 N250","ship":"","delivery":"","requester":"","assignee":"김주진","rounds":0,"roundDates":[],"brand":"계경순대국"},
+  {"id":"14197","date":"2026-09-07","time":"09:55","store":"계경순대국 송파점","biz":"1110224932","kind":"AS","status":"done","visitDate":"2026-09-07","region":"수도권","route":"오프라인","addr":"서울특별시 송파구","van":"KIS","equip":"FD-170 어댑터, 아임유 N250","ship":"","delivery":"","requester":"","assignee":"","rounds":0,"roundDates":[],"brand":"계경순대국"},
   {"id":"14216","date":"2026-09-07","time":"14:08","store":"도시곳간 수원 오목천점","biz":"3015900823","kind":"설치","status":"done","visitDate":"2026-09-08","region":"지방","route":"오프라인","addr":"경기도 수원시 권선구","van":"NICE","equip":"포스기+프론트 블랙+CAT+듀얼모니터+유프블랙+금전함 블랙 대형","ship":"2026-09-03","delivery":"","requester":"","assignee":"김주진","rounds":0,"roundDates":[],"brand":"도시곳간"},
   {"id":"14292","date":"2026-09-08","time":"11:47","store":"등촌샤브칼국수 성남금광점","biz":"5223201887","kind":"설치","status":"pending","visitDate":"2026-09-09","region":"수도권","route":"오프라인","addr":"경기도 성남시 중원구","van":"KIS","equip":"포스기 2EA(메인/오더(브라캣)) + 프론트 1EA + 유선프린터기 1EA + 금전함 1EA","ship":"2026-09-07","delivery":"","requester":"","assignee":"","rounds":0,"roundDates":[],"brand":"등촌샤브칼국수"},
   ],
