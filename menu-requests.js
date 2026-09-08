@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1731,
- "updatedAt": "2026-09-08 12:53",
+ "version": 1732,
+ "updatedAt": "2026-09-08 12:59",
  "days": 30,
  "items": [
   {
@@ -23,10 +23,11 @@ window.MENU_REQUESTS = {
    "replies": [
     "메뉴가 이미 등록되어있음 카테고리만 옮기는거",
     "메인메뉴랑 식사류 겹치는 메뉴가 잇음",
-    "<tel:···|···>"
+    "<tel:···|···>",
+    "겹치면 식사류 아니면 메인메뉴로~"
    ],
-   "rc": 4,
-   "lr": "1788839592.060619",
+   "rc": 5,
+   "lr": "1788839911.105179",
    "rfx": 3,
    "status": "confirm",
    "handler": "김규빈",
