@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9158,
+  "version": 9159,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -160479,10 +160479,10 @@ window.SLACK_DATA = {
     "2026-09-08": {
       "counts": {
         "as": {
+          "김동욱": 3,
           "송태양": 4,
           "배선유": 4,
-          "고경림": 2,
-          "김동욱": 1
+          "고경림": 3
         },
         "onboarding": {
           "김현기": 1
@@ -160490,6 +160490,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:41",
+          "store": "마이봄뷰티",
+          "biz": "6852502307",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "포프(PC) 사용 매장으로, 갑자기 프론트 초기화 되었다고 하시어 재연결 요청주시어 도움 부탁드리겠습니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트 재온보딩 완료"
+        },
+        {
+          "time": "09:40",
+          "store": "현중세무회계",
+          "biz": "3450400861",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "포프(pc) / 연결이 갑자기 끊어져 동일한 와이파이 잡으라는 문구 확인되어 도움요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "로그아웃 동일 현상. 재온보딩완료"
+        },
         {
           "time": "09:36",
           "store": "레자미오네뜨",
@@ -160522,6 +160544,18 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": ""
+        },
+        {
+          "time": "09:24",
+          "store": "카페코너",
+          "biz": "4800403351",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "포스기 갑자기 부정사용 방지 오류 문구 노출 되어 확인 요청 드립니다.",
+          "hw": "",
+          "urgent": true,
+          "intake": "online",
+          "note": "1차부재 통화거절"
         },
         {
           "time": "09:21",
@@ -160624,11 +160658,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 10,
+        "online": 13,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:43",
+      "updatedAt": "09:48",
       "voc": {
         "responses": 1,
         "install": {
@@ -160716,17 +160750,14 @@ window.SLACK_DATA = {
       },
       "1788827345.006619": {
         "post": "1788827345.006619",
-        "lastSeen": 1788828328.088,
+        "lastSeen": 1788828561.049,
         "r": 1,
         "day": "2026-09-08",
         "idx": 3
       },
-      "1788828040.565099": {
-        "post": "1788828040.565099",
-        "lastSeen": 1788828328.088,
-        "r": 1,
-        "day": "2026-09-08",
-        "idx": 5
+      "1788828493.645509": {
+        "post": "1788828493.645509",
+        "lastSeen": 1788828561.049
       }
     },
     "days": {
@@ -207946,14 +207977,15 @@ window.SLACK_DATA = {
             "store": "현중세무회계",
             "biz": "3450400861",
             "who": "김동욱",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 6.7
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-08 09:45",
+    "at": "2026-09-08 09:49",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
