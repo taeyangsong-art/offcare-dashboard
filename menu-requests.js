@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1749,
- "updatedAt": "2026-09-08 14:43",
+ "version": 1750,
+ "updatedAt": "2026-09-08 14:47",
  "days": 30,
  "items": [
   {
@@ -172,11 +172,11 @@ window.MENU_REQUESTS = {
    "replies": [
     "빙수 전부 수정\n• 생망고빙수  2~3인분 35000원 / 4~5인분 42000원\n• 그냥 망고빙수 18000원 그냥망고빙수는 한사이즈만(큰거 작은거 빼주세요) \n• 나머지 빙수들. 생망고빙수처럼 (생)으로 앞에 다써주시고. 금액 1000원 전체 추가\n•  딸기/블루베리/수박/냉동으로 추가 필요하나 냉동으로 쓰지말고 망고빙수처럼 생으로 작성해주세요. >> ex:생딸기빙수 / 전부 18,000원 수정 요청"
    ],
-   "rc": 10,
-   "lr": "1788846119.719239",
+   "rc": 11,
+   "lr": "1788846328.134899",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788841493642189"
   },
   {
