@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1743,
- "updatedAt": "2026-09-08 14:00",
+ "version": 1744,
+ "updatedAt": "2026-09-08 14:03",
  "days": 30,
  "items": [
   {
@@ -57351,29 +57351,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김동욱",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786319163028879"
-  },
-  {
-   "ts": "1786251697.263709",
-   "date": "2026-08-09",
-   "time": "14:01",
-   "store": "바이트 앤 레스트 더블유 피에스 스타벅스 킨텍스점",
-   "biz": "5438503030",
-   "pos": "퍼스트포스",
-   "content": "수박주스 메뉴추가후 키오스크 메인포스 주문서가 안나옵니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "주방출력물 설정완료"
-   ],
-   "rc": 2,
-   "lr": "1786318810.452689",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김동욱",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786251697263709"
   }
  ],
  "ocr": {
