@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1756,
- "updatedAt": "2026-09-08 15:43",
+ "version": 1757,
+ "updatedAt": "2026-09-08 15:51",
  "days": 30,
  "items": [
   {
@@ -262,11 +262,11 @@ window.MENU_REQUESTS = {
    "replies": [
     "포스프로그램에 메뉴등록 후,\n대시보드로 메뉴 끌어갈 수 있죵??"
    ],
-   "rc": 2,
-   "lr": "1788849295.461599",
+   "rc": 3,
+   "lr": "1788850257.985489",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788849239318729"
   },
   {
