@@ -1876,6 +1876,25 @@ function startOfWeek(d){ const x=new Date(d); const dow=(x.getDay()+6)%7; return
 function fmtKDate(d){ const w=["일","월","화","수","목","금","토"][d.getDay()];
   return `${d.getFullYear()}년 ${d.getMonth()+1}월 ${d.getDate()}일 (${w})`; }
 function fmtShort(s){ const d=parseYmd(s); return `${d.getMonth()+1}/${d.getDate()}`; }
+/* ── 차트 날짜축 색 규칙 (전 탭 공통) ──
+ * 오늘=보라 > 일요일·공휴일=빨강 > 토요일=파랑 > 평일=회색.
+ * 오늘을 파랑으로 두면 토요일과 색이 같아 구분이 안 되므로 보라를 쓴다.
+ * 날짜축이 있는 차트는 전부 이 두 함수만 쓴다 — 규칙이 갈라지지 않게. */
+function dateAxisColor(ds){
+  if(ds===ymd(today())) return 'var(--purple)';
+  const dow=parseYmd(ds).getDay();
+  if(HOLIDAYS[ds]||dow===0) return 'var(--sun)';
+  if(dow===6) return 'var(--sat)';
+  return 'var(--gray2)';
+}
+function dateAxisBold(ds){
+  const dow=parseYmd(ds).getDay();
+  return ds===ymd(today()) || !!HOLIDAYS[ds] || dow===0 || dow===6;
+}
+// 날짜축 색 규칙을 카드 힌트에 한 줄로 — 범례가 따로 없는 카드용
+function dateAxisHint(){
+  return `<b style="color:var(--purple)">오늘</b> · <b style="color:var(--sat)">토</b> · <b style="color:var(--sun)">일·공휴일</b>`;
+}
 // 공용 기간 헬퍼 (어제/오늘/최근N일/기간)
 function lastNDays(n){ const out=[]; for(let i=n-1;i>=0;i--) out.push(ymd(addDays(today(),-i))); return out; }
 function dateRangeList(s,e){ let a=parseYmd(s), b=parseYmd(e); if(b<a){const t=a;a=b;b=t;} const out=[]; for(let d=new Date(a); d<=b; d=addDays(d,1)) out.push(ymd(d)); return out; }
@@ -4957,7 +4976,7 @@ function renderOverview(){
     </div>
 
     <div class="grid2 even">
-      <div class="card"><div class="card-head"><h3>📈 처리 추이</h3><span class="hint">최근 7일 · <b style="color:var(--purple)">오늘</b> · <b style="color:var(--sat)">토</b> · <b style="color:var(--sun)">일·공휴일</b></span></div>${overviewTrend(trendDates)}</div>
+      <div class="card"><div class="card-head"><h3>📈 처리 추이</h3><span class="hint">최근 7일 · ${dateAxisHint()}</span></div>${overviewTrend(trendDates)}</div>
       <div class="card"><div class="card-head"><h3>⏰ 처리 추이 (시간대별)</h3><span class="hint">${viewLabel} · 인입 시각 기준 · 라벨=시작 시각(9시=9~10시)</span></div>${overviewHourly(viewDates)}</div>
     </div>
 
@@ -5199,12 +5218,11 @@ function overviewTrend(dates){
   const fs=Math.max(11, Math.min(17, gap*0.24));
   const bars=dates.map((d,i)=>{ const v=vals[i], h=(H-56)*(v/mx), x=pad+i*gap+(gap-bw)/2, y=H-32-h, dd=parseYmd(d), isT=d===ymd(today());
     const lbl=many?dd.getDate():`${dd.getMonth()+1}/${dd.getDate()}`;
-    const dow=dd.getDay(), holi=HOLIDAYS[d];
-    // 날짜 색: 오늘(보라) > 일요일·공휴일(빨강) > 토요일(파랑) > 평일(회색). 오늘을 파랑으로 두면 토요일과 구분이 안 된다
-    const lblCol = isT ? 'var(--purple)' : (holi||dow===0) ? 'var(--sun)' : dow===6 ? 'var(--sat)' : 'var(--gray2)';
+    const holi=HOLIDAYS[d];
+    const lblCol=dateAxisColor(d);
     return `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${bw.toFixed(1)}" height="${h.toFixed(1)}" rx="5" fill="${isT?'var(--purple)':'#cfe3fb'}"><title>${fmtShort(d)}${holi?' · '+holi:''} · ${v}건</title></rect>`
       +(v>0?`<text x="${(x+bw/2).toFixed(1)}" y="${(y-7).toFixed(1)}" text-anchor="middle" font-size="${fs.toFixed(1)}" font-weight="800" style="fill:var(--ink-soft)">${v}</text>`:'')
-      +`<text x="${(x+bw/2).toFixed(1)}" y="${H-12}" text-anchor="middle" font-size="${(fs*0.85).toFixed(1)}" font-weight="${(isT||holi||dow===0||dow===6)?'800':'600'}" style="fill:${lblCol}">${lbl}${holi?`<title>${escapeHtml(holi)}</title>`:''}</text>`;}).join('');
+      +`<text x="${(x+bw/2).toFixed(1)}" y="${H-12}" text-anchor="middle" font-size="${(fs*0.85).toFixed(1)}" font-weight="${dateAxisBold(d)?'800':'600'}" style="fill:${lblCol}">${lbl}${holi?`<title>${escapeHtml(holi)}</title>`:''}</text>`;}).join('');
   return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="display:block"><line x1="${pad}" y1="${H-32}" x2="${W-pad}" y2="${H-32}" stroke="var(--line)"/>${bars}</svg></div>`;
 }
 // 시간대별 처리 추이 — done(처리완료) 항목을 인입 시각(HH) 시간대로 버킷팅
@@ -5926,10 +5944,10 @@ function vocDailyTrend(dates){
   const W=880;                                   // 기준 폭(가로 100%로 늘어남) — 슬롯을 균등 분할해 막대를 두껍게
   const slot=(W-padL-padR)/n, bw=Math.max(6, slot*0.82), gap=slot-bw;
   const fs=Math.max(8, Math.min(13, slot*0.46));   // 날짜·건수 글자도 막대 폭에 맞춰 조정
-  const bars=dates.map((d,i)=>{ const c=counts[i], h=c/mx*plotH, x=padL+i*slot+gap/2, y=base-h, day=parseYmd(d).getDate();
-    return `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${bw.toFixed(1)}" height="${h.toFixed(1)}" rx="3" fill="${c>0?'#ff3b30':'#ececf0'}"><title>${fmtShort(d)} · ${c}건</title></rect>`
+  const bars=dates.map((d,i)=>{ const c=counts[i], h=c/mx*plotH, x=padL+i*slot+gap/2, y=base-h, day=parseYmd(d).getDate(), holi=HOLIDAYS[d];
+    return `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${bw.toFixed(1)}" height="${h.toFixed(1)}" rx="3" fill="${c>0?'#ff3b30':'#ececf0'}"><title>${fmtShort(d)}${holi?' · '+holi:''} · ${c}건</title></rect>`
       +(c>0?`<text x="${(x+bw/2).toFixed(1)}" y="${(y-5).toFixed(1)}" text-anchor="middle" font-size="${fs.toFixed(1)}" font-weight="800" style="fill:var(--ink-soft)">${c}</text>`:'')
-      +`<text x="${(x+bw/2).toFixed(1)}" y="${base+16}" text-anchor="middle" font-size="${(fs*0.92).toFixed(1)}" font-weight="600" style="fill:var(--gray2)">${day}</text>`;
+      +`<text x="${(x+bw/2).toFixed(1)}" y="${base+16}" text-anchor="middle" font-size="${(fs*0.92).toFixed(1)}" font-weight="${dateAxisBold(d)?'800':'600'}" style="fill:${dateAxisColor(d)}">${day}${holi?`<title>${escapeHtml(holi)}</title>`:''}</text>`;
   }).join('');
   return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="display:block"><line x1="${padL-4}" y1="${base}" x2="${W-padR+4}" y2="${base}" stroke="#d2d2d7"/>${bars}</svg></div>`;
 }
@@ -6105,7 +6123,7 @@ function renderVocMonthly(){
       <div class="card"><div class="card-head"><h3>🏦 VAN사별 저점율</h3><span class="hint">응답 대비 저점 비율</span></div>
         ${vanRows.length?vanRows.map(([n,o])=>ratioRow(n,o.low,o.total)).join(''):'<div class="empty-note">데이터 없음</div>'}</div>
     </div>
-    <div class="card"><div class="card-head"><h3>일별 인입 추이</h3><span class="hint">${mo+1}월</span></div>${vocDailyTrend(dates)}</div>
+    <div class="card"><div class="card-head"><h3>일별 인입 추이</h3><span class="hint">${mo+1}월 · ${dateAxisHint()}</span></div>${vocDailyTrend(dates)}</div>
     <div class="card">
       <div class="card-head"><h3>💚 칭찬 상세 · 직원 지정</h3><span class="hint">${vpCount}건 · 각 카드에서 <b>이름·팀</b> 입력 · 상단 <b>팀 선택</b> 시 그 팀 이름만 후보 표시 · 불필요한 건 × 삭제</span></div>
       ${praiseCardsHTML(v.praises.filter(isStaffPraise))}
@@ -6418,15 +6436,10 @@ function trendChart(cat, mode, ref){
     const v=vals[i]; const h=(H-50)*(v/mx);
     const x=pad + i*gap + (gap-bw)/2, y=H-30-h;
     const dd=parseYmd(d); const isToday=d===ymd(today());
-    const dow=dd.getDay(), holi=HOLIDAYS[d];
+    const holi=HOLIDAYS[d];
     const lbl = mode==="month"? (dd.getDate()) : `${dd.getMonth()+1}/${dd.getDate()}`;
-    // 오늘은 보라 — 토요일 파랑과 같은 색이면 구분이 안 된다
-    const col = isToday? "var(--purple)" : "#cfe3fb";
-    // 날짜 색: 오늘(보라) > 일요일·공휴일(빨강) > 토요일(파랑) > 평일(회색)
-    const lblCol = isToday ? "var(--purple)"
-                 : (holi||dow===0) ? "var(--sun)"
-                 : dow===6 ? "var(--sat)" : "var(--gray2)";
-    const lblW = (isToday||holi||dow===0||dow===6) ? 700 : 400;
+    const col = isToday? "var(--purple)" : "#cfe3fb";   // 오늘 막대 — 토요일 파랑과 겹치지 않게
+    const lblCol = dateAxisColor(d), lblW = dateAxisBold(d) ? 700 : 400;
     return `<g>
       <rect x="${x}" y="${y}" width="${bw}" height="${h}" rx="4" fill="${col}"></rect>
       ${v>0?`<text x="${x+bw/2}" y="${y-6}" text-anchor="middle" font-size="11" font-weight="700" style="fill:var(--ink-soft)">${v}</text>`:''}
