@@ -3,10 +3,140 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1764,
- "updatedAt": "2026-09-08 16:45",
+ "version": 1765,
+ "updatedAt": "2026-09-08 16:50",
  "days": 30,
  "items": [
+  {
+   "ts": "1788853584.863789",
+   "date": "2026-09-08",
+   "time": "16:46",
+   "store": "서당골 감자탕순대국",
+   "biz": "5930402492",
+   "pos": "오케이포스",
+   "content": "오케이포스 메뉴 카테고리 수정 요청 드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "1000101259 (1).jpg",
+     "fid": "F0C04050QTX",
+     "from": "댓글",
+     "path": "menu-files/1788853584_863789-0.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "감자탕 소",
+       "price": 30000
+      },
+      {
+       "category": "",
+       "name": "감자탕 중",
+       "price": 36000
+      },
+      {
+       "category": "",
+       "name": "감자탕 대",
+       "price": 46000
+      },
+      {
+       "category": "",
+       "name": "감자바지락전골 소",
+       "price": 35000
+      },
+      {
+       "category": "",
+       "name": "감자바지락전골 중",
+       "price": 43000
+      },
+      {
+       "category": "",
+       "name": "홍합뼈해장 소",
+       "price": 26000
+      },
+      {
+       "category": "",
+       "name": "홍합뼈해장 중",
+       "price": 36000
+      },
+      {
+       "category": "",
+       "name": "미더백 소",
+       "price": 35000
+      },
+      {
+       "category": "",
+       "name": "미더백 중",
+       "price": 43000
+      },
+      {
+       "category": "",
+       "name": "야채뼈해장 소",
+       "price": 26000
+      },
+      {
+       "category": "",
+       "name": "야채뼈해장 중",
+       "price": 36000
+      },
+      {
+       "category": "",
+       "name": "뼈해장국",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "소주",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "맥주",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "막걸리",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "음료수",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C12PX2E9W",
+     "from": "댓글",
+     "path": "menu-files/1788853584_863789-1.png",
+     "kind": "pos_screen",
+     "menu": []
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788838939549189",
+    "토스포스 선택해주셨으나 오케이포스 사용 가맹점으로 아래 사진과 같이 분리 요청 드립니다.",
+    "완료 후 문자 발송 예정 전달 드렸습니다.",
+    "오케이포스 사용 중이라고합니다,.,,!",
+    "결제 내역 확인해보아도 토스포스 결제내역은 없숩니다,,,!ㅜㅜ"
+   ],
+   "rc": 9,
+   "lr": "1788853776.916639",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788853584863789"
+  },
   {
    "ts": "1788852788.210799",
    "date": "2026-09-08",
