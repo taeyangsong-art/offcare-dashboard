@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1765,
- "updatedAt": "2026-09-08 16:50",
+ "version": 1766,
+ "updatedAt": "2026-09-08 16:55",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "1000101259 (1).jpg",
      "fid": "F0C04050QTX",
      "from": "댓글",
-     "path": "menu-files/1788853584_863789-0.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -111,15 +110,175 @@ window.MENU_REQUESTS = {
        "name": "음료수",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1788853584_863789-0.jpg"
     },
     {
      "name": "image.png",
      "fid": "F0C12PX2E9W",
      "from": "댓글",
-     "path": "menu-files/1788853584_863789-1.png",
      "kind": "pos_screen",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1788853584_863789-1.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0BV72RCGDD",
+     "from": "댓글",
+     "path": "menu-files/1788853584_863789-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "감자탕(소)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "감자탕(中)",
+       "price": 38000
+      },
+      {
+       "category": "",
+       "name": "감자탕(大)",
+       "price": 46000
+      },
+      {
+       "category": "",
+       "name": "물냉면",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "비빔냉면",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "백순대볶음(小)",
+       "price": 28000
+      },
+      {
+       "category": "",
+       "name": "백순대볶음(中)",
+       "price": 36000
+      },
+      {
+       "category": "",
+       "name": "양념순대볶음(小)",
+       "price": 28000
+      },
+      {
+       "category": "",
+       "name": "양념순대볶음(中)",
+       "price": 36000
+      },
+      {
+       "category": "",
+       "name": "얼큰뼈해장국",
+       "price": 11000
+      },
+      {
+       "category": "",
+       "name": "매운뼈찜(小)",
+       "price": 35000
+      },
+      {
+       "category": "",
+       "name": "매운뼈찜(中)",
+       "price": 43000
+      },
+      {
+       "category": "",
+       "name": "간장뼈찜(小)",
+       "price": 35000
+      },
+      {
+       "category": "",
+       "name": "간장뼈찜(中)",
+       "price": 43000
+      },
+      {
+       "category": "",
+       "name": "얼큰순살뼈해장국",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "뼈해장국",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "순대국",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "(특)순대국",
+       "price": 11000
+      },
+      {
+       "category": "",
+       "name": "얼큰순대국",
+       "price": 11000
+      },
+      {
+       "category": "",
+       "name": "(특)얼큰순대국",
+       "price": 12000
+      },
+      {
+       "category": "",
+       "name": "순대곱창전골 小",
+       "price": 28000
+      },
+      {
+       "category": "",
+       "name": "순대곱창전골 중",
+       "price": 36000
+      },
+      {
+       "category": "",
+       "name": "모둠수육",
+       "price": 28000
+      },
+      {
+       "category": "",
+       "name": "순대 한접시",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "편육 한접시",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "순살뼈해장국",
+       "price": 12000
+      },
+      {
+       "category": "",
+       "name": "(특)순살뼈해장국",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "머릿고기순대국",
+       "price": 11000
+      },
+      {
+       "category": "",
+       "name": "오소리순대국",
+       "price": 11000
+      },
+      {
+       "category": "",
+       "name": "공기밥",
+       "price": 1000
+      }
+     ]
     }
    ],
    "datt": [],
@@ -130,8 +289,8 @@ window.MENU_REQUESTS = {
     "오케이포스 사용 중이라고합니다,.,,!",
     "결제 내역 확인해보아도 토스포스 결제내역은 없숩니다,,,!ㅜㅜ"
    ],
-   "rc": 9,
-   "lr": "1788853776.916639",
+   "rc": 14,
+   "lr": "1788853867.889579",
    "rfx": 3,
    "status": "confirm",
    "handler": "김규빈",
