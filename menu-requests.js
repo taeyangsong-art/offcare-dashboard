@@ -3,10 +3,155 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1737,
- "updatedAt": "2026-09-08 13:20",
+ "version": 1738,
+ "updatedAt": "2026-09-08 13:24",
  "days": 30,
  "items": [
+  {
+   "ts": "1788841459.022179",
+   "date": "2026-09-08",
+   "time": "13:24",
+   "store": "민서네떡볶이",
+   "biz": "6440703465",
+   "pos": "토스포스",
+   "content": "카테고리\n세트 떡볶이 식사 사이드 튀김 음료\n메뉴는 파일 첨부할께요",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1x91xVaz1Xs-B79sjDoYa4NOU8hS_6EIu/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1x91xVaz1Xs-B79sjDoYa4NOU8hS_6EIu",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "SET MENU",
+       "name": "A세트",
+       "price": 15000
+      },
+      {
+       "category": "SET MENU",
+       "name": "B세트",
+       "price": 12000
+      },
+      {
+       "category": "SET MENU",
+       "name": "C세트",
+       "price": 30000
+      },
+      {
+       "category": "SET MENU",
+       "name": "1인세트",
+       "price": 10000
+      },
+      {
+       "category": "SET MENU",
+       "name": "떡순벅 튀밥 세트",
+       "price": 14000
+      },
+      {
+       "category": "떡볶이",
+       "name": "냠냠 떡볶이",
+       "price": 5500
+      },
+      {
+       "category": "떡볶이",
+       "name": "치즈폭탄 떡볶이",
+       "price": 10000
+      },
+      {
+       "category": "떡볶이",
+       "name": "로제 국물 떡볶이",
+       "price": 10000
+      },
+      {
+       "category": "떡볶이",
+       "name": "짜장 국물 떡볶이",
+       "price": 10000
+      },
+      {
+       "category": "떡볶이",
+       "name": "짜계치 라볶이",
+       "price": 12000
+      },
+      {
+       "category": "떡볶이",
+       "name": "해장 국물 떡볶이",
+       "price": 12000
+      },
+      {
+       "category": "순대",
+       "name": "순대",
+       "price": 5500
+      },
+      {
+       "category": "순대",
+       "name": "순대 내장만 듬뿍",
+       "price": 10500
+      },
+      {
+       "category": "식사류",
+       "name": "참치마요덮밥",
+       "price": 6000
+      },
+      {
+       "category": "식사류",
+       "name": "라면",
+       "price": 5000
+      },
+      {
+       "category": "식사류",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "튀김",
+       "name": "모듬튀김 5가지",
+       "price": 5000
+      },
+      {
+       "category": "튀김",
+       "name": "통고추튀김",
+       "price": 1000
+      },
+      {
+       "category": "튀김",
+       "name": "오징어튀김",
+       "price": 1000
+      },
+      {
+       "category": "튀김",
+       "name": "김말이",
+       "price": 1000
+      },
+      {
+       "category": "튀김",
+       "name": "새우튀김",
+       "price": 1000
+      },
+      {
+       "category": "튀김",
+       "name": "만두튀김",
+       "price": 1000
+      },
+      {
+       "category": "추억의도시락",
+       "name": "라면세트",
+       "price": 11500
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1788841462.077459",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788841459022179"
+  },
   {
    "ts": "1788838939.549189",
    "date": "2026-09-08",
