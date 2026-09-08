@@ -3,10 +3,41 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1713,
- "updatedAt": "2026-09-08 10:01",
+ "version": 1714,
+ "updatedAt": "2026-09-08 10:05",
  "days": 30,
  "items": [
+  {
+   "ts": "1788829378.855049",
+   "date": "2026-09-08",
+   "time": "10:02",
+   "store": "마음문화공간한땀협동조합",
+   "biz": "2498103940",
+   "pos": "",
+   "content": "메뉴 등록 요청(어제 진행했으나 다시 요청)주셨습니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "f_4c171c4674f9.xlsx",
+     "fid": "F0BV4U80487",
+     "from": "댓글",
+     "path": "menu-files/1788829378_855049-0.xlsx",
+     "nj": 1
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788778404877429"
+   ],
+   "rc": 3,
+   "lr": "1788829503.892309",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788829378855049"
+  },
   {
    "ts": "1788829259.235009",
    "date": "2026-09-08",
@@ -20,12 +51,14 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 0,
-   "lr": "",
+   "replies": [
+    "헤르츠 혼술바 구월점 ··· 과 메뉴 동일하게 등록 부탁드립니다!\n• 메뉴순서, 카테고리, 메뉴이미지 등 완전히 똑같이 복붙 요청"
+   ],
+   "rc": 3,
+   "lr": "1788829312.694069",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788829259235009"
   },
   {
