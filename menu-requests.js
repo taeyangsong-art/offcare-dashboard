@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1820,
- "updatedAt": "2026-09-09 17:33",
+ "version": 1821,
+ "updatedAt": "2026-09-09 17:37",
  "days": 30,
  "items": [
   {
@@ -1100,171 +1100,6 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 5,
    "att": [
-    {
-     "name": "image (73).png",
-     "fid": "F0C0AEJH40K",
-     "from": "원글",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "",
-       "name": "[뼈없는] 순살아구찜 1-2인",
-       "price": 26900
-      },
-      {
-       "category": "",
-       "name": "[뼈없는] 순살아구찜 소",
-       "price": 35000
-      },
-      {
-       "category": "",
-       "name": "[뼈없는] 순살아구찜 중",
-       "price": 44000
-      },
-      {
-       "category": "",
-       "name": "[뼈없는] 순살아구찜 대",
-       "price": 54000
-      },
-      {
-       "category": "",
-       "name": "명품해물찜 1-2인(미니갑오징어)",
-       "price": 27900
-      }
-     ],
-     "path": "menu-files/1788921298_650129-0.png"
-    },
-    {
-     "name": "image (74).png",
-     "fid": "F0C0C8GASSH",
-     "from": "원글",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "",
-       "name": "명품해물찜 소(오징어+쭈꾸미)",
-       "price": 39000
-      },
-      {
-       "category": "",
-       "name": "명품해물찜 중(오징어+왕쭈꾸미)",
-       "price": 50000
-      },
-      {
-       "category": "",
-       "name": "명품해물찜 대(오징어+왕쭈꾸미+낙지)",
-       "price": 62000
-      },
-      {
-       "category": "",
-       "name": "[최상급알] 고니명란알찜 1-2인",
-       "price": 25000
-      },
-      {
-       "category": "",
-       "name": "[최상급알] 고니명란알찜 소",
-       "price": 33000
-      },
-      {
-       "category": "",
-       "name": "[최상급알] 고니명란알찜 중",
-       "price": 42000
-      }
-     ],
-     "path": "menu-files/1788921298_650129-1.png"
-    },
-    {
-     "name": "image (75).png",
-     "fid": "F0C0AF2GDSP",
-     "from": "원글",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "",
-       "name": "[최상급알] 고니명란알찜 대",
-       "price": 52000
-      },
-      {
-       "category": "",
-       "name": "[살이꽉찬] 꽃게찜 1-2인",
-       "price": 25000
-      },
-      {
-       "category": "",
-       "name": "[살이꽉찬] 꽃게찜 소",
-       "price": 33000
-      },
-      {
-       "category": "",
-       "name": "[살이꽉찬] 꽃게찜 중",
-       "price": 42000
-      },
-      {
-       "category": "",
-       "name": "[살이꽉찬] 꽃게찜 대",
-       "price": 52000
-      }
-     ],
-     "path": "menu-files/1788921298_650129-2.png"
-    },
-    {
-     "name": "image (76).png",
-     "fid": "F0C1B3LP0TA",
-     "from": "원글",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "",
-       "name": "[원기회복]낙지찜1-2인(낙지2마리)",
-       "price": 25000
-      },
-      {
-       "category": "",
-       "name": "[원기회복] 낙지찜 소(낙지3마리)",
-       "price": 33000
-      },
-      {
-       "category": "",
-       "name": "[원기회복] 낙지찜 중(낙지4마리)",
-       "price": 42000
-      },
-      {
-       "category": "",
-       "name": "[원기회복] 낙지찜 대(낙지5마리)",
-       "price": 52000
-      },
-      {
-       "category": "",
-       "name": "[키토산제왕] 왕새우찜 1-2인",
-       "price": 25000
-      }
-     ],
-     "path": "menu-files/1788921298_650129-3.png"
-    },
-    {
-     "name": "image (77).png",
-     "fid": "F0C0LCA7020",
-     "from": "원글",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "",
-       "name": "[키토산제왕] 왕새우찜 소",
-       "price": 33000
-      },
-      {
-       "category": "",
-       "name": "[키토산제왕] 왕새우찜 중",
-       "price": 42000
-      },
-      {
-       "category": "",
-       "name": "[키토산제왕] 왕새우찜 대",
-       "price": 52000
-      }
-     ],
-     "path": "menu-files/1788921298_650129-4.png"
-    },
     {
      "name": "Screenshot_20260909_132048.jpg",
      "fid": "F0C0K5MLKTK",
@@ -2766,6 +2601,171 @@ window.MENU_REQUESTS = {
        "price": 17900
       }
      ]
+    },
+    {
+     "name": "image (73).png",
+     "fid": "F0C0AEJH40K",
+     "from": "원글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "[뼈없는] 순살아구찜 1-2인",
+       "price": 26900
+      },
+      {
+       "category": "",
+       "name": "[뼈없는] 순살아구찜 소",
+       "price": 35000
+      },
+      {
+       "category": "",
+       "name": "[뼈없는] 순살아구찜 중",
+       "price": 44000
+      },
+      {
+       "category": "",
+       "name": "[뼈없는] 순살아구찜 대",
+       "price": 54000
+      },
+      {
+       "category": "",
+       "name": "명품해물찜 1-2인(미니갑오징어)",
+       "price": 27900
+      }
+     ],
+     "path": "menu-files/1788921298_650129-0.png"
+    },
+    {
+     "name": "image (74).png",
+     "fid": "F0C0C8GASSH",
+     "from": "원글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "명품해물찜 소(오징어+쭈꾸미)",
+       "price": 39000
+      },
+      {
+       "category": "",
+       "name": "명품해물찜 중(오징어+왕쭈꾸미)",
+       "price": 50000
+      },
+      {
+       "category": "",
+       "name": "명품해물찜 대(오징어+왕쭈꾸미+낙지)",
+       "price": 62000
+      },
+      {
+       "category": "",
+       "name": "[최상급알] 고니명란알찜 1-2인",
+       "price": 25000
+      },
+      {
+       "category": "",
+       "name": "[최상급알] 고니명란알찜 소",
+       "price": 33000
+      },
+      {
+       "category": "",
+       "name": "[최상급알] 고니명란알찜 중",
+       "price": 42000
+      }
+     ],
+     "path": "menu-files/1788921298_650129-1.png"
+    },
+    {
+     "name": "image (75).png",
+     "fid": "F0C0AF2GDSP",
+     "from": "원글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "[최상급알] 고니명란알찜 대",
+       "price": 52000
+      },
+      {
+       "category": "",
+       "name": "[살이꽉찬] 꽃게찜 1-2인",
+       "price": 25000
+      },
+      {
+       "category": "",
+       "name": "[살이꽉찬] 꽃게찜 소",
+       "price": 33000
+      },
+      {
+       "category": "",
+       "name": "[살이꽉찬] 꽃게찜 중",
+       "price": 42000
+      },
+      {
+       "category": "",
+       "name": "[살이꽉찬] 꽃게찜 대",
+       "price": 52000
+      }
+     ],
+     "path": "menu-files/1788921298_650129-2.png"
+    },
+    {
+     "name": "image (76).png",
+     "fid": "F0C1B3LP0TA",
+     "from": "원글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "[원기회복]낙지찜1-2인(낙지2마리)",
+       "price": 25000
+      },
+      {
+       "category": "",
+       "name": "[원기회복] 낙지찜 소(낙지3마리)",
+       "price": 33000
+      },
+      {
+       "category": "",
+       "name": "[원기회복] 낙지찜 중(낙지4마리)",
+       "price": 42000
+      },
+      {
+       "category": "",
+       "name": "[원기회복] 낙지찜 대(낙지5마리)",
+       "price": 52000
+      },
+      {
+       "category": "",
+       "name": "[키토산제왕] 왕새우찜 1-2인",
+       "price": 25000
+      }
+     ],
+     "path": "menu-files/1788921298_650129-3.png"
+    },
+    {
+     "name": "image (77).png",
+     "fid": "F0C0LCA7020",
+     "from": "원글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "[키토산제왕] 왕새우찜 소",
+       "price": 33000
+      },
+      {
+       "category": "",
+       "name": "[키토산제왕] 왕새우찜 중",
+       "price": 42000
+      },
+      {
+       "category": "",
+       "name": "[키토산제왕] 왕새우찜 대",
+       "price": 52000
+      }
+     ],
+     "path": "menu-files/1788921298_650129-4.png"
     }
    ],
    "datt": [],
@@ -57490,306 +57490,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786352210462109"
-  },
-  {
-   "ts": "1786350829.420859",
-   "date": "2026-08-10",
-   "time": "17:33",
-   "store": "하 쿠시 맨",
-   "biz": "5376000336",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "Resized_20260810_172612.jpg.jpeg",
-     "fid": "F0BPZESE8GY",
-     "from": "댓글",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "쿠시카츠(단품)",
-       "name": "닭꼬치류 1P",
-       "price": 3000
-      },
-      {
-       "category": "쿠시카츠(단품)",
-       "name": "어묵4개꼬치김밥",
-       "price": 0
-      },
-      {
-       "category": "쿠시카츠(단품)",
-       "name": "떡꼬치/메추리알/마늘고추",
-       "price": 1500
-      },
-      {
-       "category": "쿠시카츠(단품)",
-       "name": "가래떡/치즈부침",
-       "price": 3000
-      },
-      {
-       "category": "쿠시카츠(단품)",
-       "name": "대하/소세지/감자튀김",
-       "price": 2500
-      },
-      {
-       "category": "쿠시카츠(단품)",
-       "name": "가지튀김/꽈리고추",
-       "price": 3500
-      },
-      {
-       "category": "쿠시카츠(단품)",
-       "name": "옥수수튀김",
-       "price": 5000
-      },
-      {
-       "category": "일품요리",
-       "name": "일본어묵탕",
-       "price": 20000
-      },
-      {
-       "category": "일품요리",
-       "name": "나가사키짬뽕탕",
-       "price": 18000
-      },
-      {
-       "category": "일품요리",
-       "name": "오뎅탕",
-       "price": 18000
-      },
-      {
-       "category": "일품요리",
-       "name": "스지오뎅탕",
-       "price": 25000
-      },
-      {
-       "category": "일품요리",
-       "name": "모듬수육",
-       "price": 32000
-      },
-      {
-       "category": "일품요리",
-       "name": "오돌뼈볶음",
-       "price": 15000
-      },
-      {
-       "category": "일품요리",
-       "name": "차돌구이",
-       "price": 15000
-      },
-      {
-       "category": "일품요리",
-       "name": "고등어/삼치구이",
-       "price": 18000
-      },
-      {
-       "category": "일품요리",
-       "name": "해물순두부",
-       "price": 28000
-      },
-      {
-       "category": "포차요리",
-       "name": "크림떡볶이",
-       "price": 7900
-      },
-      {
-       "category": "포차요리",
-       "name": "로제떡볶이",
-       "price": 8900
-      },
-      {
-       "category": "포차요리",
-       "name": "부산어묵탕",
-       "price": 8000
-      },
-      {
-       "category": "포차요리",
-       "name": "계란말이",
-       "price": 8000
-      },
-      {
-       "category": "포차요리",
-       "name": "양념계란말이",
-       "price": 10000
-      },
-      {
-       "category": "포차요리",
-       "name": "파인애플새우",
-       "price": 15000
-      },
-      {
-       "category": "포차요리",
-       "name": "어묵우동",
-       "price": 7000
-      },
-      {
-       "category": "포차요리",
-       "name": "닭볶음탕",
-       "price": 8000
-      },
-      {
-       "category": "포차요리",
-       "name": "닭알탕",
-       "price": 8000
-      },
-      {
-       "category": "포차요리",
-       "name": "부엉이튀김",
-       "price": 10000
-      },
-      {
-       "category": "주류/음료",
-       "name": "소주(대선)",
-       "price": 5000
-      },
-      {
-       "category": "주류/음료",
-       "name": "맥주",
-       "price": 5000
-      },
-      {
-       "category": "주류/음료",
-       "name": "생맥주500cc",
-       "price": 4500
-      },
-      {
-       "category": "주류/음료",
-       "name": "막걸리",
-       "price": 5000
-      },
-      {
-       "category": "주류/음료",
-       "name": "산토리하이볼",
-       "price": 8000
-      },
-      {
-       "category": "주류/음료",
-       "name": "와인",
-       "price": 25000
-      },
-      {
-       "category": "주류/음료",
-       "name": "양주",
-       "price": 45000
-      },
-      {
-       "category": "주류/음료",
-       "name": "콜라",
-       "price": 4500
-      },
-      {
-       "category": "주류/음료",
-       "name": "사케",
-       "price": 35000
-      },
-      {
-       "category": "주류/음료",
-       "name": "레몬슬라이스",
-       "price": 3000
-      },
-      {
-       "category": "주류/음료",
-       "name": "음료",
-       "price": 2000
-      }
-     ],
-     "path": "menu-files/1786350829_420859-0.jpeg"
-    },
-    {
-     "name": "Resized_20260810_172605.jpg.jpeg",
-     "fid": "F0BP546L4N6",
-     "from": "댓글",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "매인메뉴",
-       "name": "갈비살 숯불구이",
-       "price": 50000
-      },
-      {
-       "category": "매인메뉴",
-       "name": "모듬화판구이 3~4인",
-       "price": 100000
-      },
-      {
-       "category": "매인메뉴",
-       "name": "1인 추가시 추가금",
-       "price": 20000
-      },
-      {
-       "category": "꼬치세트",
-       "name": "숯불꼬치 6종세트",
-       "price": 16000
-      },
-      {
-       "category": "꼬치세트",
-       "name": "쭈사쿠 6종세트",
-       "price": 16000
-      },
-      {
-       "category": "꼬치세트",
-       "name": "숯불꼬치 10종세트(쭈사쿠츄 반반가능)",
-       "price": 25000
-      },
-      {
-       "category": "숯불꼬치 단품",
-       "name": "돼지고기류 1P",
-       "price": 3000
-      },
-      {
-       "category": "숯불꼬치 단품",
-       "name": "쇠고기말이류 1P",
-       "price": 3000
-      },
-      {
-       "category": "숯불꼬치 단품",
-       "name": "쭈꾸미",
-       "price": 3500
-      },
-      {
-       "category": "숯불꼬치 단품",
-       "name": "치즈뜨구네",
-       "price": 4000
-      },
-      {
-       "category": "어류&기타꼬치류",
-       "name": "메추리알/소세지",
-       "price": 1500
-      },
-      {
-       "category": "어류&기타꼬치류",
-       "name": "어묵/소세지",
-       "price": 2500
-      },
-      {
-       "category": "어류&기타꼬치류",
-       "name": "닭고기류/가리비",
-       "price": 3000
-      },
-      {
-       "category": "어류&기타꼬치류",
-       "name": "소라살",
-       "price": 3500
-      },
-      {
-       "category": "어류&기타꼬치류",
-       "name": "사시미3P/왕문어/새우슬라이스/멍스지",
-       "price": 5000
-      }
-     ],
-     "path": "menu-files/1786350829_420859-1.jpeg"
-    }
-   ],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1786350858.095199",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786350829420859"
   }
  ],
  "ocr": {
