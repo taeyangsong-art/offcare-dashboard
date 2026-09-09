@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1803,
- "updatedAt": "2026-09-09 14:57",
+ "version": 1804,
+ "updatedAt": "2026-09-09 15:00",
  "days": 30,
  "items": [
   {
@@ -658,171 +658,6 @@ window.MENU_REQUESTS = {
    "files": 5,
    "att": [
     {
-     "name": "image (73).png",
-     "fid": "F0C0AEJH40K",
-     "from": "원글",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "",
-       "name": "[뼈없는] 순살아구찜 1-2인",
-       "price": 26900
-      },
-      {
-       "category": "",
-       "name": "[뼈없는] 순살아구찜 소",
-       "price": 35000
-      },
-      {
-       "category": "",
-       "name": "[뼈없는] 순살아구찜 중",
-       "price": 44000
-      },
-      {
-       "category": "",
-       "name": "[뼈없는] 순살아구찜 대",
-       "price": 54000
-      },
-      {
-       "category": "",
-       "name": "명품해물찜 1-2인(미니갑오징어)",
-       "price": 27900
-      }
-     ],
-     "path": "menu-files/1788921298_650129-0.png"
-    },
-    {
-     "name": "image (74).png",
-     "fid": "F0C0C8GASSH",
-     "from": "원글",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "",
-       "name": "명품해물찜 소(오징어+쭈꾸미)",
-       "price": 39000
-      },
-      {
-       "category": "",
-       "name": "명품해물찜 중(오징어+왕쭈꾸미)",
-       "price": 50000
-      },
-      {
-       "category": "",
-       "name": "명품해물찜 대(오징어+왕쭈꾸미+낙지)",
-       "price": 62000
-      },
-      {
-       "category": "",
-       "name": "[최상급알] 고니명란알찜 1-2인",
-       "price": 25000
-      },
-      {
-       "category": "",
-       "name": "[최상급알] 고니명란알찜 소",
-       "price": 33000
-      },
-      {
-       "category": "",
-       "name": "[최상급알] 고니명란알찜 중",
-       "price": 42000
-      }
-     ],
-     "path": "menu-files/1788921298_650129-1.png"
-    },
-    {
-     "name": "image (75).png",
-     "fid": "F0C0AF2GDSP",
-     "from": "원글",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "",
-       "name": "[최상급알] 고니명란알찜 대",
-       "price": 52000
-      },
-      {
-       "category": "",
-       "name": "[살이꽉찬] 꽃게찜 1-2인",
-       "price": 25000
-      },
-      {
-       "category": "",
-       "name": "[살이꽉찬] 꽃게찜 소",
-       "price": 33000
-      },
-      {
-       "category": "",
-       "name": "[살이꽉찬] 꽃게찜 중",
-       "price": 42000
-      },
-      {
-       "category": "",
-       "name": "[살이꽉찬] 꽃게찜 대",
-       "price": 52000
-      }
-     ],
-     "path": "menu-files/1788921298_650129-2.png"
-    },
-    {
-     "name": "image (76).png",
-     "fid": "F0C1B3LP0TA",
-     "from": "원글",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "",
-       "name": "[원기회복]낙지찜1-2인(낙지2마리)",
-       "price": 25000
-      },
-      {
-       "category": "",
-       "name": "[원기회복] 낙지찜 소(낙지3마리)",
-       "price": 33000
-      },
-      {
-       "category": "",
-       "name": "[원기회복] 낙지찜 중(낙지4마리)",
-       "price": 42000
-      },
-      {
-       "category": "",
-       "name": "[원기회복] 낙지찜 대(낙지5마리)",
-       "price": 52000
-      },
-      {
-       "category": "",
-       "name": "[키토산제왕] 왕새우찜 1-2인",
-       "price": 25000
-      }
-     ],
-     "path": "menu-files/1788921298_650129-3.png"
-    },
-    {
-     "name": "image (77).png",
-     "fid": "F0C0LCA7020",
-     "from": "원글",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "",
-       "name": "[키토산제왕] 왕새우찜 소",
-       "price": 33000
-      },
-      {
-       "category": "",
-       "name": "[키토산제왕] 왕새우찜 중",
-       "price": 42000
-      },
-      {
-       "category": "",
-       "name": "[키토산제왕] 왕새우찜 대",
-       "price": 52000
-      }
-     ],
-     "path": "menu-files/1788921298_650129-4.png"
-    },
-    {
      "name": "Screenshot_20260909_132048.jpg",
      "fid": "F0C0K5MLKTK",
      "from": "댓글",
@@ -1152,6 +987,171 @@ window.MENU_REQUESTS = {
        "price": 1000
       }
      ]
+    },
+    {
+     "name": "image (73).png",
+     "fid": "F0C0AEJH40K",
+     "from": "원글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "[뼈없는] 순살아구찜 1-2인",
+       "price": 26900
+      },
+      {
+       "category": "",
+       "name": "[뼈없는] 순살아구찜 소",
+       "price": 35000
+      },
+      {
+       "category": "",
+       "name": "[뼈없는] 순살아구찜 중",
+       "price": 44000
+      },
+      {
+       "category": "",
+       "name": "[뼈없는] 순살아구찜 대",
+       "price": 54000
+      },
+      {
+       "category": "",
+       "name": "명품해물찜 1-2인(미니갑오징어)",
+       "price": 27900
+      }
+     ],
+     "path": "menu-files/1788921298_650129-0.png"
+    },
+    {
+     "name": "image (74).png",
+     "fid": "F0C0C8GASSH",
+     "from": "원글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "명품해물찜 소(오징어+쭈꾸미)",
+       "price": 39000
+      },
+      {
+       "category": "",
+       "name": "명품해물찜 중(오징어+왕쭈꾸미)",
+       "price": 50000
+      },
+      {
+       "category": "",
+       "name": "명품해물찜 대(오징어+왕쭈꾸미+낙지)",
+       "price": 62000
+      },
+      {
+       "category": "",
+       "name": "[최상급알] 고니명란알찜 1-2인",
+       "price": 25000
+      },
+      {
+       "category": "",
+       "name": "[최상급알] 고니명란알찜 소",
+       "price": 33000
+      },
+      {
+       "category": "",
+       "name": "[최상급알] 고니명란알찜 중",
+       "price": 42000
+      }
+     ],
+     "path": "menu-files/1788921298_650129-1.png"
+    },
+    {
+     "name": "image (75).png",
+     "fid": "F0C0AF2GDSP",
+     "from": "원글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "[최상급알] 고니명란알찜 대",
+       "price": 52000
+      },
+      {
+       "category": "",
+       "name": "[살이꽉찬] 꽃게찜 1-2인",
+       "price": 25000
+      },
+      {
+       "category": "",
+       "name": "[살이꽉찬] 꽃게찜 소",
+       "price": 33000
+      },
+      {
+       "category": "",
+       "name": "[살이꽉찬] 꽃게찜 중",
+       "price": 42000
+      },
+      {
+       "category": "",
+       "name": "[살이꽉찬] 꽃게찜 대",
+       "price": 52000
+      }
+     ],
+     "path": "menu-files/1788921298_650129-2.png"
+    },
+    {
+     "name": "image (76).png",
+     "fid": "F0C1B3LP0TA",
+     "from": "원글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "[원기회복]낙지찜1-2인(낙지2마리)",
+       "price": 25000
+      },
+      {
+       "category": "",
+       "name": "[원기회복] 낙지찜 소(낙지3마리)",
+       "price": 33000
+      },
+      {
+       "category": "",
+       "name": "[원기회복] 낙지찜 중(낙지4마리)",
+       "price": 42000
+      },
+      {
+       "category": "",
+       "name": "[원기회복] 낙지찜 대(낙지5마리)",
+       "price": 52000
+      },
+      {
+       "category": "",
+       "name": "[키토산제왕] 왕새우찜 1-2인",
+       "price": 25000
+      }
+     ],
+     "path": "menu-files/1788921298_650129-3.png"
+    },
+    {
+     "name": "image (77).png",
+     "fid": "F0C0LCA7020",
+     "from": "원글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "[키토산제왕] 왕새우찜 소",
+       "price": 33000
+      },
+      {
+       "category": "",
+       "name": "[키토산제왕] 왕새우찜 중",
+       "price": 42000
+      },
+      {
+       "category": "",
+       "name": "[키토산제왕] 왕새우찜 대",
+       "price": 52000
+      }
+     ],
+     "path": "menu-files/1788921298_650129-4.png"
     }
    ],
    "datt": [],
@@ -58127,388 +58127,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786341850263819"
-  },
-  {
-   "ts": "1786341476.762079",
-   "date": "2026-08-10",
-   "time": "14:57",
-   "store": "호퍼스키친",
-   "biz": "1358564855",
-   "pos": "토스포스",
-   "content": "기타 매뉴추가 (금액수정가능하게 부탁드립니다)\n대관 0원\n콜키지 0원\n토핑추가 0원\n외부음식 0원",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/1wBGaHAJBYz1PVM4t_d07QeTi_RUZHFpI/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "1wBGaHAJBYz1PVM4t_d07QeTi_RUZHFpI",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "PIZZA",
-       "name": "그랜드 콤비네이션 (R)",
-       "price": 25900
-      },
-      {
-       "category": "PIZZA",
-       "name": "그랜드 콤비네이션 (L)",
-       "price": 29900
-      },
-      {
-       "category": "PIZZA",
-       "name": "카우보이 불고기 (R)",
-       "price": 25900
-      },
-      {
-       "category": "PIZZA",
-       "name": "카우보이 불고기 (L)",
-       "price": 29900
-      },
-      {
-       "category": "PIZZA",
-       "name": "데스밸리 쏘 핫 (R)",
-       "price": 25900
-      },
-      {
-       "category": "PIZZA",
-       "name": "데스밸리 쏘 핫 (L)",
-       "price": 29900
-      },
-      {
-       "category": "PIZZA",
-       "name": "블랙 골드 트러플 불고기 (R)",
-       "price": 29900
-      },
-      {
-       "category": "PIZZA",
-       "name": "블랙 골드 트러플 불고기 (L)",
-       "price": 33900
-      },
-      {
-       "category": "PIZZA",
-       "name": "클래식 페퍼로니 (R)",
-       "price": 25900
-      },
-      {
-       "category": "PIZZA",
-       "name": "클래식 페퍼로니 (L)",
-       "price": 29900
-      },
-      {
-       "category": "PIZZA",
-       "name": "골드러시 스위트 포테이토 (R)",
-       "price": 25900
-      },
-      {
-       "category": "PIZZA",
-       "name": "골드러시 스위트 포테이토 (L)",
-       "price": 29800
-      },
-      {
-       "category": "PIZZA",
-       "name": "서부 무법자 치즈 (R)",
-       "price": 25900
-      },
-      {
-       "category": "PIZZA",
-       "name": "서부 무법자 치즈 (L)",
-       "price": 29900
-      },
-      {
-       "category": "PIZZA",
-       "name": "갈릭 쉬림프 (R)",
-       "price": 26900
-      },
-      {
-       "category": "PIZZA",
-       "name": "갈릭 쉬림프 (L)",
-       "price": 30900
-      },
-      {
-       "category": "PIZZA",
-       "name": "스모키베이컨포테이토 (R)",
-       "price": 26900
-      },
-      {
-       "category": "PIZZA",
-       "name": "스모키베이컨포테이토 (L)",
-       "price": 30900
-      },
-      {
-       "category": "PIZZA",
-       "name": "선셋 하와이안 (R)",
-       "price": 26900
-      },
-      {
-       "category": "PIZZA",
-       "name": "선셋 하와이안 (L)",
-       "price": 30900
-      },
-      {
-       "category": "PIZZA",
-       "name": "오아시스 루꼴라 (R)",
-       "price": 26900
-      },
-      {
-       "category": "PIZZA",
-       "name": "오아시스 루꼴라 (L)",
-       "price": 30900
-      },
-      {
-       "category": "PIZZA",
-       "name": "스파이시할라피뇨베이컨 (R)",
-       "price": 26900
-      },
-      {
-       "category": "PIZZA",
-       "name": "스파이시할라피뇨베이컨 (L)",
-       "price": 30900
-      },
-      {
-       "category": "PANUOZZO SANDWICH",
-       "name": "호퍼스 시그니쳐 샌드",
-       "price": 12900
-      },
-      {
-       "category": "PANUOZZO SANDWICH",
-       "name": "카우보이 갈릭 불고기",
-       "price": 11900
-      },
-      {
-       "category": "PANUOZZO SANDWICH",
-       "name": "갈릭쉬림프 샌드",
-       "price": 11900
-      },
-      {
-       "category": "PANUOZZO SANDWICH",
-       "name": "스파이시 튜나 샌드",
-       "price": 10800
-      },
-      {
-       "category": "PANUOZZO SANDWICH",
-       "name": "리치에그마요 샌드",
-       "price": 9900
-      },
-      {
-       "category": "PANUOZZO SANDWICH",
-       "name": "BLT 샌드",
-       "price": 9200
-      },
-      {
-       "category": "PANUOZZO SANDWICH",
-       "name": "텍사스 풀드포크",
-       "price": 11900
-      },
-      {
-       "category": "PANUOZZO SANDWICH",
-       "name": "루스터 그릴드 치킨 샌드",
-       "price": 11900
-      },
-      {
-       "category": "PANUOZZO SANDWICH",
-       "name": "스모키베이컨포테이토 샌드",
-       "price": 12900
-      },
-      {
-       "category": "PANUOZZO SANDWICH",
-       "name": "갈릭버터머쉬룸 샌드",
-       "price": 9900
-      },
-      {
-       "category": "PANUOZZO SANDWICH",
-       "name": "블랙 골드 트러플 머쉬룸 샌드",
-       "price": 14900
-      },
-      {
-       "category": "STROMBOLI",
-       "name": "페페롤리",
-       "price": 11900
-      },
-      {
-       "category": "STROMBOLI",
-       "name": "하와이안 파인애플 롤리",
-       "price": 11900
-      },
-      {
-       "category": "STROMBOLI",
-       "name": "스모키 불고기 롤리",
-       "price": 12900
-      },
-      {
-       "category": "STROMBOLI",
-       "name": "치폴레 치킨 롤리",
-       "price": 12900
-      },
-      {
-       "category": "STROMBOLI",
-       "name": "갈릭 쉬림프 롤리",
-       "price": 12900
-      },
-      {
-       "category": "STROMBOLI",
-       "name": "텍사스 풀드포크 롤리",
-       "price": 12900
-      },
-      {
-       "category": "STROMBOLI",
-       "name": "그랜드하우스콤비 롤리",
-       "price": 13900
-      },
-      {
-       "category": "SALAD",
-       "name": "훈제연어 아보카도",
-       "price": 12500
-      },
-      {
-       "category": "SALAD",
-       "name": "쉬림프 아보카도",
-       "price": 13500
-      },
-      {
-       "category": "SALAD",
-       "name": "쉬림프 샐러드",
-       "price": 12500
-      },
-      {
-       "category": "SALAD",
-       "name": "고구마 에그",
-       "price": 11500
-      },
-      {
-       "category": "SALAD",
-       "name": "훈제오리",
-       "price": 12500
-      },
-      {
-       "category": "SALAD",
-       "name": "닭가슴살",
-       "price": 11500
-      },
-      {
-       "category": "SALAD",
-       "name": "에그마요",
-       "price": 10500
-      },
-      {
-       "category": "SALAD",
-       "name": "버섯 불고기",
-       "price": 12500
-      },
-      {
-       "category": "SALAD",
-       "name": "치킨마요",
-       "price": 12500
-      },
-      {
-       "category": "SIDE",
-       "name": "크리스피 감자튀김",
-       "price": 4900
-      },
-      {
-       "category": "SIDE",
-       "name": "오븐 치즈스파게티",
-       "price": 6900
-      },
-      {
-       "category": "SIDE",
-       "name": "매콤 윔뽕 3P",
-       "price": 5700
-      },
-      {
-       "category": "SIDE",
-       "name": "매콤 윔뽕 6P",
-       "price": 9600
-      },
-      {
-       "category": "SIDE",
-       "name": "바삭 치킨텐더 4P",
-       "price": 4900
-      },
-      {
-       "category": "SIDE",
-       "name": "바삭 치킨텐더 8P",
-       "price": 8900
-      },
-      {
-       "category": "SIDE",
-       "name": "모짜렐라 치즈스틱 2P",
-       "price": 3900
-      },
-      {
-       "category": "SIDE",
-       "name": "스위트콘치즈",
-       "price": 5900
-      },
-      {
-       "category": "SIDE",
-       "name": "그릴드 정보닭다리 1P",
-       "price": 2900
-      },
-      {
-       "category": "SIDE",
-       "name": "그릴드 정보닭다리 2P",
-       "price": 5700
-      },
-      {
-       "category": "SIDE",
-       "name": "그릴드 정보닭다리 3P",
-       "price": 7500
-      },
-      {
-       "category": "DRINK",
-       "name": "콜라 500ml",
-       "price": 2000
-      },
-      {
-       "category": "DRINK",
-       "name": "콜라 1.25L",
-       "price": 3000
-      },
-      {
-       "category": "DRINK",
-       "name": "제로 콜라 500ml",
-       "price": 2000
-      },
-      {
-       "category": "DRINK",
-       "name": "제로 콜라 1.25L",
-       "price": 3000
-      },
-      {
-       "category": "DRINK",
-       "name": "스프라이트 500ml",
-       "price": 2000
-      },
-      {
-       "category": "DRINK",
-       "name": "스프라이트 1.25L",
-       "price": 3000
-      },
-      {
-       "category": "DRINK",
-       "name": "아이스티",
-       "price": 3000
-      },
-      {
-       "category": "DRINK",
-       "name": "아메리카노",
-       "price": 3000
-      }
-     ]
-    }
-   ],
-   "replies": [
-    "4개 다 시가로 등록"
-   ],
-   "rc": 2,
-   "lr": "1786343085.218639",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786341476762079"
   }
  ],
  "ocr": {
