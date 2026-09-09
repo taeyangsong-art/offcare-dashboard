@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1772,
- "updatedAt": "2026-09-08 19:45",
+ "version": 1773,
+ "updatedAt": "2026-09-09 09:00",
  "days": 30,
  "items": [
   {
@@ -58081,83 +58081,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786322156866409"
-  },
-  {
-   "ts": "1786319163.028879",
-   "date": "2026-08-10",
-   "time": "08:46",
-   "store": "맥쓰(MEXX)세계치킨제기역점",
-   "biz": "3464601387",
-   "pos": "",
-   "content": "메뉴 이미지 추가",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "1786115574520.png",
-     "fid": "F0BP6D3B45S",
-     "from": "댓글",
-     "path": "menu-files/1786319163_028879-0.png",
-     "kind": "product_photo",
-     "menu": []
-    },
-    {
-     "name": "Screenshot_20260808_003312_KakaoTalk.jpg",
-     "fid": "F0BP2MU3EBC",
-     "from": "댓글",
-     "path": "menu-files/1786319163_028879-1.jpg",
-     "kind": "product_photo",
-     "menu": []
-    },
-    {
-     "name": "Screenshot_20260808_024737_KakaoTalk.jpg",
-     "fid": "F0BNMB3J4A3",
-     "from": "댓글",
-     "path": "menu-files/1786319163_028879-2.jpg",
-     "kind": "product_photo",
-     "menu": []
-    },
-    {
-     "name": "1786116103339.png",
-     "fid": "F0BNMB32AG7",
-     "from": "댓글",
-     "path": "menu-files/1786319163_028879-3.png",
-     "kind": "product_photo",
-     "menu": []
-    },
-    {
-     "name": "1786115663684.png",
-     "fid": "F0BNMB3HLH5",
-     "from": "댓글",
-     "path": "menu-files/1786319163_028879-4.png",
-     "kind": "product_photo",
-     "menu": []
-    },
-    {
-     "name": "Screenshot_20260807_231043_KakaoTalk(1).",
-     "fid": "F0BNZ83AVL5",
-     "from": "댓글",
-     "path": "menu-files/1786319163_028879-5.jpg",
-     "kind": "product_photo",
-     "menu": []
-    },
-    {
-     "name": "Screenshot_20260807_231707_KakaoTalk.jpg",
-     "fid": "F0BP2MVEW4S",
-     "from": "댓글",
-     "kind": "product_photo",
-     "menu": []
-    }
-   ],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1786319239.161079",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김동욱",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786319163028879"
   }
  ],
  "ocr": {
