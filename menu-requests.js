@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1844,
- "updatedAt": "2026-09-09 20:31",
+ "version": 1845,
+ "updatedAt": "2026-09-09 22:45",
  "days": 30,
  "items": [
   {
@@ -58211,29 +58211,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786406678954229"
-  },
-  {
-   "ts": "1786369363.056939",
-   "date": "2026-08-10",
-   "time": "22:42",
-   "store": "도마",
-   "biz": "8143601450",
-   "pos": "",
-   "content": "• 메뉴 등록 및 수정 요청 드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "숙성회 항목에서 / 숙성회 3인 가격 75,000원으로 변경\n\n숙성회 항목에 / 성게알(우니) 37,000원 추가\n\n튀김 항목에 / 크리스피 치킨 17,000원 추가\n\n주류2 항목에 / 하쿠슈 샷잔 18,000원 , 야마자키 샷잔 18,000원 , 히비키하모니 샷잔 17,000원 추가\n\n그리고 추가된 우니랑, 크리스피 치킨 주문서가 주방 프린터에 출력되도록 설정 요청"
-   ],
-   "rc": 3,
-   "lr": "1786370054.883229",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786369363056939"
   }
  ],
  "ocr": {
