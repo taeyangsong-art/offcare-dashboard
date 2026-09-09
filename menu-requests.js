@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1802,
- "updatedAt": "2026-09-09 14:47",
+ "version": 1803,
+ "updatedAt": "2026-09-09 14:57",
  "days": 30,
  "items": [
+  {
+   "ts": "1788933281.414819",
+   "date": "2026-09-09",
+   "time": "14:54",
+   "store": "쏘주맥쭈",
+   "biz": "1921702310",
+   "pos": "오케이포스",
+   "content": "'추가메뉴' 카테고리에\n'갈릭소스 2,000원' 추가해주세요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1788933284.543329",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788933281414819"
+  },
   {
    "ts": "1788932663.749689",
    "date": "2026-09-09",
@@ -805,7 +826,332 @@ window.MENU_REQUESTS = {
      "name": "Screenshot_20260909_132048.jpg",
      "fid": "F0C0K5MLKTK",
      "from": "댓글",
-     "path": "menu-files/1788921298_650129-5.jpg"
+     "path": "menu-files/1788921298_650129-5.jpg",
+     "nj": 1
+    },
+    {
+     "name": "Screenshot_20260909_132127.jpg",
+     "fid": "F0C0CPF9DHT",
+     "from": "댓글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "스페셜메뉴",
+       "name": "[취향저격]내맘대로섞어찜",
+       "price": 20400
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[알이랑콩나물만]Only알찜(단품) 1~2인",
+       "price": 23000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[알이랑콩나물만]Only알찜(단품) 소",
+       "price": 31000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[알이랑콩나물만]Only알찜(단품) 중",
+       "price": 40000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[알이랑콩나물만]Only알찜(단품) 대",
+       "price": 50000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[하이클래스]문어 해물찜 소(문어/오징어)",
+       "price": 42000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[하이클래스]문어 해물찜 중(문어+오징어)",
+       "price": 54000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[하이클래스]문어 해물찜 대(문어+오징어+낙지)",
+       "price": 66000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[하이클래스]문어 해물찜 1~2인",
+       "price": 32000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[쫄깃쫀득]대구뽈찜 소",
+       "price": 35000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[쫄깃쫀득]대구뽈찜 중",
+       "price": 44000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[쫄깃쫀득]대구뽈찜 대",
+       "price": 54000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[쫄깃쫀득]대구뽈찜 1~2인",
+       "price": 26900
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[아구랑대구랑]아뽈찜 소",
+       "price": 34000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[아구랑대구랑]아뽈찜 중",
+       "price": 43000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[아구랑대구랑]아뽈찜 대",
+       "price": 53000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[아구랑대구랑]아뽈찜 1~2인",
+       "price": 25900
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[쭈꾸미+소라]꼬마쭈꾸미소라찜 1~2인",
+       "price": 25000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[쭈꾸미+소라]꼬마쭈꾸미소라찜 소",
+       "price": 33000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[쭈꾸미+소라]꼬마쭈꾸미소라찜 중",
+       "price": 42000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[쭈꾸미+소라]꼬마쭈꾸미소라찜 대",
+       "price": 52000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[아구랑알이랑]아구명란알찜 소",
+       "price": 35000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[아구랑알이랑]아구명란알찜 중",
+       "price": 45000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[아구랑알이랑]아구명란알찜 대",
+       "price": 55000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[아구&갑오징어]아갑찜 소",
+       "price": 35000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[아구&갑오징어]아갑찜 중",
+       "price": 45000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[아구&갑오징어]아갑찜 대",
+       "price": 55000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[야들야들]갑오징어찜 소(갑오징어2마리)",
+       "price": 33000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[야들야들]갑오징어찜 중(갑오징어3마리)",
+       "price": 43000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[야들야들]갑오징어찜 대(갑오징어4마리)",
+       "price": 53000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[아구랑낙지랑]아낙찜 소(낙지2마리)",
+       "price": 35000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[아구랑낙지랑]아낙찜 중(낙지3마리)",
+       "price": 45000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[아구랑낙지랑]아낙찜 대(낙지4마리)",
+       "price": 55000
+      },
+      {
+       "category": "1인싱글메뉴",
+       "name": "1인[아구랑콩나물만]Only아구찜(단품) 1~2인",
+       "price": 22900
+      },
+      {
+       "category": "1인싱글메뉴",
+       "name": "1인[뼈조금]살마니아구찜 1~2인",
+       "price": 24900
+      }
+     ]
+    },
+    {
+     "name": "Screenshot_20260909_132207.jpg",
+     "fid": "F0C0B0QPDC3",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "1인싱글메뉴",
+       "name": "1인[아구랑콩나물만]Only아구찜(단품)",
+       "price": 22900
+      },
+      {
+       "category": "1인싱글메뉴",
+       "name": "1인[뼈조금]살마니아구찜",
+       "price": 24900
+      },
+      {
+       "category": "1인싱글메뉴",
+       "name": "1인[뼈없는]순살아구찜",
+       "price": 26900
+      },
+      {
+       "category": "1인싱글메뉴",
+       "name": "1인명품해물찜",
+       "price": 27900
+      },
+      {
+       "category": "1인싱글메뉴",
+       "name": "1인[사르르톡톡]고니명란알찜",
+       "price": 25000
+      },
+      {
+       "category": "1인싱글메뉴",
+       "name": "1인[고니x]명란알찜",
+       "price": 25000
+      },
+      {
+       "category": "1인싱글메뉴",
+       "name": "1인[쫄깃쫀득]대구뽈찜",
+       "price": 26900
+      },
+      {
+       "category": "1인싱글메뉴",
+       "name": "1인[아구랑대구랑]아뽈찜",
+       "price": 25900
+      },
+      {
+       "category": "1인싱글메뉴",
+       "name": "1인[살이통통]문어해물찜",
+       "price": 32000
+      },
+      {
+       "category": "1인싱글메뉴",
+       "name": "1인[야들야들]낙지찜",
+       "price": 25000
+      },
+      {
+       "category": "1인싱글메뉴",
+       "name": "1인[살이꽉찬]꽃게찜",
+       "price": 25000
+      },
+      {
+       "category": "1인싱글메뉴",
+       "name": "1인[키토산제왕]왕새우찜",
+       "price": 25000
+      },
+      {
+       "category": "1인싱글메뉴",
+       "name": "대구지리탕(조리)+공기밥2",
+       "price": 25000
+      },
+      {
+       "category": "1인싱글메뉴",
+       "name": "[한그릇]나홀로 아구찜",
+       "price": 14900
+      },
+      {
+       "category": "1인싱글메뉴",
+       "name": "[한그릇]나홀로 알찜",
+       "price": 14900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "뼈조금살마니아구400g",
+       "price": 7900
+      }
+     ]
+    },
+    {
+     "name": "Screenshot_20260909_132302.jpg",
+     "fid": "F0C0F9PV23G",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류메뉴",
+       "name": "카스",
+       "price": 3500
+      },
+      {
+       "category": "주류메뉴",
+       "name": "테라",
+       "price": 3500
+      },
+      {
+       "category": "주류메뉴",
+       "name": "진로",
+       "price": 3500
+      },
+      {
+       "category": "주류메뉴",
+       "name": "참이슬",
+       "price": 3500
+      },
+      {
+       "category": "주류메뉴",
+       "name": "잎새주",
+       "price": 3500
+      },
+      {
+       "category": "주류메뉴",
+       "name": "새로",
+       "price": 3500
+      },
+      {
+       "category": "소스류 추가",
+       "name": "초장",
+       "price": 500
+      },
+      {
+       "category": "소스류 추가",
+       "name": "와사비간장믹스",
+       "price": 500
+      },
+      {
+       "category": "소스류 추가",
+       "name": "초장간장와사비세트",
+       "price": 1000
+      }
+     ]
     }
    ],
    "datt": [],
@@ -58168,10 +58514,6 @@ window.MENU_REQUESTS = {
  "ocr": {
   "model": "claude-opus-5",
   "enabled": true,
-  "drive": true,
-  "halt": {
-   "status": 400,
-   "message": "messages.0.content.0.image.source.base64.data: At least one of the image dimensions exceed max allowed size: 8000 pixels"
-  }
+  "drive": true
  }
 };
