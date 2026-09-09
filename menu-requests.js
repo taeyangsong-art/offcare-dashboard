@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1788,
- "updatedAt": "2026-09-09 11:38",
+ "version": 1789,
+ "updatedAt": "2026-09-09 11:43",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "image (73).png",
      "fid": "F0C0AEJH40K",
      "from": "원글",
-     "path": "menu-files/1788921298_650129-0.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -51,13 +50,13 @@ window.MENU_REQUESTS = {
        "name": "명품해물찜 1-2인(미니갑오징어)",
        "price": 27900
       }
-     ]
+     ],
+     "path": "menu-files/1788921298_650129-0.png"
     },
     {
      "name": "image (74).png",
      "fid": "F0C0C8GASSH",
      "from": "원글",
-     "path": "menu-files/1788921298_650129-1.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -90,13 +89,13 @@ window.MENU_REQUESTS = {
        "name": "[최상급알] 고니명란알찜 중",
        "price": 42000
       }
-     ]
+     ],
+     "path": "menu-files/1788921298_650129-1.png"
     },
     {
      "name": "image (75).png",
      "fid": "F0C0AF2GDSP",
      "from": "원글",
-     "path": "menu-files/1788921298_650129-2.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -124,13 +123,13 @@ window.MENU_REQUESTS = {
        "name": "[살이꽉찬] 꽃게찜 대",
        "price": 52000
       }
-     ]
+     ],
+     "path": "menu-files/1788921298_650129-2.png"
     },
     {
      "name": "image (76).png",
      "fid": "F0C1B3LP0TA",
      "from": "원글",
-     "path": "menu-files/1788921298_650129-3.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -158,13 +157,13 @@ window.MENU_REQUESTS = {
        "name": "[키토산제왕] 왕새우찜 1-2인",
        "price": 25000
       }
-     ]
+     ],
+     "path": "menu-files/1788921298_650129-3.png"
     },
     {
      "name": "image (77).png",
      "fid": "F0C0LCA7020",
      "from": "원글",
-     "path": "menu-files/1788921298_650129-4.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -182,16 +181,17 @@ window.MENU_REQUESTS = {
        "name": "[키토산제왕] 왕새우찜 대",
        "price": 52000
       }
-     ]
+     ],
+     "path": "menu-files/1788921298_650129-4.png"
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1788921303.243479",
+   "rc": 2,
+   "lr": "1788921588.775089",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788921298650129"
   },
   {
