@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1806,
- "updatedAt": "2026-09-09 15:10",
+ "version": 1807,
+ "updatedAt": "2026-09-09 15:22",
  "days": 30,
  "items": [
   {
@@ -658,10 +658,448 @@ window.MENU_REQUESTS = {
    "files": 5,
    "att": [
     {
+     "name": "image (73).png",
+     "fid": "F0C0AEJH40K",
+     "from": "원글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "[뼈없는] 순살아구찜 1-2인",
+       "price": 26900
+      },
+      {
+       "category": "",
+       "name": "[뼈없는] 순살아구찜 소",
+       "price": 35000
+      },
+      {
+       "category": "",
+       "name": "[뼈없는] 순살아구찜 중",
+       "price": 44000
+      },
+      {
+       "category": "",
+       "name": "[뼈없는] 순살아구찜 대",
+       "price": 54000
+      },
+      {
+       "category": "",
+       "name": "명품해물찜 1-2인(미니갑오징어)",
+       "price": 27900
+      }
+     ],
+     "path": "menu-files/1788921298_650129-0.png"
+    },
+    {
+     "name": "image (74).png",
+     "fid": "F0C0C8GASSH",
+     "from": "원글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "명품해물찜 소(오징어+쭈꾸미)",
+       "price": 39000
+      },
+      {
+       "category": "",
+       "name": "명품해물찜 중(오징어+왕쭈꾸미)",
+       "price": 50000
+      },
+      {
+       "category": "",
+       "name": "명품해물찜 대(오징어+왕쭈꾸미+낙지)",
+       "price": 62000
+      },
+      {
+       "category": "",
+       "name": "[최상급알] 고니명란알찜 1-2인",
+       "price": 25000
+      },
+      {
+       "category": "",
+       "name": "[최상급알] 고니명란알찜 소",
+       "price": 33000
+      },
+      {
+       "category": "",
+       "name": "[최상급알] 고니명란알찜 중",
+       "price": 42000
+      }
+     ],
+     "path": "menu-files/1788921298_650129-1.png"
+    },
+    {
+     "name": "image (75).png",
+     "fid": "F0C0AF2GDSP",
+     "from": "원글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "[최상급알] 고니명란알찜 대",
+       "price": 52000
+      },
+      {
+       "category": "",
+       "name": "[살이꽉찬] 꽃게찜 1-2인",
+       "price": 25000
+      },
+      {
+       "category": "",
+       "name": "[살이꽉찬] 꽃게찜 소",
+       "price": 33000
+      },
+      {
+       "category": "",
+       "name": "[살이꽉찬] 꽃게찜 중",
+       "price": 42000
+      },
+      {
+       "category": "",
+       "name": "[살이꽉찬] 꽃게찜 대",
+       "price": 52000
+      }
+     ],
+     "path": "menu-files/1788921298_650129-2.png"
+    },
+    {
+     "name": "image (76).png",
+     "fid": "F0C1B3LP0TA",
+     "from": "원글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "[원기회복]낙지찜1-2인(낙지2마리)",
+       "price": 25000
+      },
+      {
+       "category": "",
+       "name": "[원기회복] 낙지찜 소(낙지3마리)",
+       "price": 33000
+      },
+      {
+       "category": "",
+       "name": "[원기회복] 낙지찜 중(낙지4마리)",
+       "price": 42000
+      },
+      {
+       "category": "",
+       "name": "[원기회복] 낙지찜 대(낙지5마리)",
+       "price": 52000
+      },
+      {
+       "category": "",
+       "name": "[키토산제왕] 왕새우찜 1-2인",
+       "price": 25000
+      }
+     ],
+     "path": "menu-files/1788921298_650129-3.png"
+    },
+    {
+     "name": "image (77).png",
+     "fid": "F0C0LCA7020",
+     "from": "원글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "[키토산제왕] 왕새우찜 소",
+       "price": 33000
+      },
+      {
+       "category": "",
+       "name": "[키토산제왕] 왕새우찜 중",
+       "price": 42000
+      },
+      {
+       "category": "",
+       "name": "[키토산제왕] 왕새우찜 대",
+       "price": 52000
+      }
+     ],
+     "path": "menu-files/1788921298_650129-4.png"
+    },
+    {
      "name": "Screenshot_20260909_132048.jpg",
      "fid": "F0C0K5MLKTK",
      "from": "댓글",
-     "path": "menu-files/1788921298_650129-5.jpg"
+     "path": "menu-files/1788921298_650129-5.jpg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "대표메인메뉴",
+       "name": "비교불가[뼈조림]순살아구찜 1~2인",
+       "price": 26900
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "비교불가[뼈조림]순살아구찜 소",
+       "price": 35000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "비교불가[뼈조림]순살아구찜 중",
+       "price": 44000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "비교불가[뼈조림]순살아구찜 대",
+       "price": 54000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "광주TOP[뼈조금]살마니아구찜 소",
+       "price": 33000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "광주TOP[뼈조금]살마니아구찜 중",
+       "price": 42000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "광주TOP[뼈조금]살마니아구찜 대",
+       "price": 52000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "광주TOP[뼈조금]살마니아구찜 1~2인",
+       "price": 24900
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[아구랑콩나물만]Only아구찜(단품) 1~2인",
+       "price": 22900
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[아구랑콩나물만]Only아구찜(단품) 소",
+       "price": 31000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[아구랑콩나물만]Only아구찜(단품) 중",
+       "price": 40000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[아구랑콩나물만]Only아구찜(단품) 대",
+       "price": 50000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "프리미엄[10가지해물]명품해물찜 소(오징어+쭈꾸미)",
+       "price": 39000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "프리미엄[10가지해물]명품해물찜 중(오징어+왕쭈꾸미)",
+       "price": 50000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "프리미엄[10가지해물]명품해물찜 대(오징어+왕쭈꾸미+낙지)",
+       "price": 62000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "프리미엄[10가지해물]명품해물찜 1~2인(미니갑오징어)",
+       "price": 27900
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "고퀄리티[아구랑해물]해물아구섞어찜 소(오징어+쭈꾸미)",
+       "price": 40000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "고퀄리티[아구랑해물]해물아구섞어찜 중(오징어+왕쭈꾸미)",
+       "price": 52000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "고퀄리티[아구랑해물]해물아구섞어찜 대(오징어+왕쭈꾸미+낙지)",
+       "price": 65000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[최상급알]고니명란알찜 소",
+       "price": 33000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[최상급알]고니명란알찜 중",
+       "price": 42000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[최상급알]고니명란알찜 대",
+       "price": 52000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[최상급알]고니명란알찜 1~2인",
+       "price": 25000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "고니X[알만가득]명란알찜 소",
+       "price": 33000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "고니X[알만가득]명란알찜 중",
+       "price": 42000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "고니X[알만가득]명란알찜 대",
+       "price": 52000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "고니X[알만가득]명란알찜 1~2인",
+       "price": 25000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[살아꽉찬]꽃게찜 소",
+       "price": 33000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[살아꽉찬]꽃게찜 중",
+       "price": 42000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[살아꽉찬]꽃게찜 대",
+       "price": 52000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[살아꽉찬]꽃게찜 1~2인",
+       "price": 25000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[원기회복]낙지찜 소(낙지3마리)",
+       "price": 33000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[원기회복]낙지찜 중(낙지4마리)",
+       "price": 42000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[원기회복]낙지찜 대(낙지5마리)",
+       "price": 52000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[원기회복]낙지찜 1~2인(낙지2마리)",
+       "price": 25000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[키토산제왕]왕새우찜 1~2인",
+       "price": 25000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[키토산제왕]왕새우찜 소",
+       "price": 33000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[키토산제왕]왕새우찜 중",
+       "price": 42000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[키토산제왕]왕새우찜 대",
+       "price": 52000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[소酒를부르는]해물탕/꽃게탕/알탕 해물탕(2~4인)비조리",
+       "price": 42000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[소酒를부르는]해물탕/꽃게탕/알탕 꽃게탕(2~3인)비조리",
+       "price": 36000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[소酒를부르는]해물탕/꽃게탕/알탕 알탕(2~3인)비조리",
+       "price": 36000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[소酒를부르는]해물탕/꽃게탕/알탕 아구대구탕(2~3인)비조리",
+       "price": 36000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "[소酒를부르는]해물탕/꽃게탕/알탕 꽃게알탕(2~3인)비조리",
+       "price": 36000
+      },
+      {
+       "category": "대표메인메뉴",
+       "name": "대구지리탕(조리)+공기밥2 1.5인",
+       "price": 25000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[취향저격]내맘대로섞어찜",
+       "price": 20400
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[알이랑콩나물만]Only알찜(단품) 1~2인",
+       "price": 23000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[알이랑콩나물만]Only알찜(단품) 소",
+       "price": 31000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[알이랑콩나물만]Only알찜(단품) 중",
+       "price": 40000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[알이랑콩나물만]Only알찜(단품) 대",
+       "price": 50000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[하이클래스]문어 해물찜 소(문어/오징어)",
+       "price": 42000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[하이클래스]문어 해물찜 중(문어+오징어)",
+       "price": 54000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[하이클래스]문어 해물찜 대(문어+오징어+낙지)",
+       "price": 66000
+      },
+      {
+       "category": "스페셜메뉴",
+       "name": "[하이클래스]문어 해물찜 1~2인",
+       "price": 32000
+      }
+     ]
     },
     {
      "name": "Screenshot_20260909_132127.jpg",
@@ -935,6 +1373,342 @@ window.MENU_REQUESTS = {
      ]
     },
     {
+     "name": "Screenshot_20260909_132224.jpg",
+     "fid": "F0C0LT9PHFW",
+     "from": "댓글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "해산물 추가",
+       "name": "뼈조금살마니아구400g",
+       "price": 7900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "뼈조금살마니아구600g",
+       "price": 11900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "뼈없는순살아구400g",
+       "price": 9900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "뼈없는순살아구600g",
+       "price": 14900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "대구뽈살400g추가(뼈있음)",
+       "price": 9900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "대구뽈살600g추가(뼈있음)",
+       "price": 14900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "아구대창 추가",
+       "price": 6900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "명란알 추가",
+       "price": 7900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "참소라 추가",
+       "price": 6900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "고니 추가",
+       "price": 6900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "위소라슬라이스",
+       "price": 5900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "새우7마리 추가",
+       "price": 6900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "절단꽃게4개 추가",
+       "price": 7900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "낙지한마리",
+       "price": 7900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "오징어한마리",
+       "price": 7500
+      },
+      {
+       "category": "해산물 추가",
+       "name": "갑오징어한마리",
+       "price": 9900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "미니갑오징어7미",
+       "price": 5900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "솔방울오징어10개",
+       "price": 4900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "절단쭈꾸미 추가",
+       "price": 5900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "왕쭈꾸미한마리",
+       "price": 8900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "문어한마리",
+       "price": 19900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "문어반마리",
+       "price": 10900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "미더덕(오만둥이) 추가",
+       "price": 5900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "아삭아삭콩나물 추가",
+       "price": 3000
+      },
+      {
+       "category": "해산물 추가",
+       "name": "미나리 추가",
+       "price": 3900
+      },
+      {
+       "category": "해산물 추가",
+       "name": "쫄면사리(찜위에) 추가",
+       "price": 2500
+      },
+      {
+       "category": "해산물 추가",
+       "name": "감자수제비사리 추가",
+       "price": 2500
+      },
+      {
+       "category": "해산물 숙회",
+       "name": "참소라숙회",
+       "price": 17900
+      },
+      {
+       "category": "해산물 숙회",
+       "name": "찐새우13마리",
+       "price": 16900
+      }
+     ]
+    },
+    {
+     "name": "Screenshot_20260909_132244.jpg",
+     "fid": "F0C0B0N6XH9",
+     "from": "댓글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "해산물 숙회",
+       "name": "참소라숙회",
+       "price": 17900
+      },
+      {
+       "category": "해산물 숙회",
+       "name": "찐새우13마리",
+       "price": 16900
+      },
+      {
+       "category": "해산물 숙회",
+       "name": "오징어숙회(2마리)",
+       "price": 17900
+      },
+      {
+       "category": "해산물 숙회",
+       "name": "문어숙회 반마리",
+       "price": 14900
+      },
+      {
+       "category": "해산물 숙회",
+       "name": "문어숙회 한마리",
+       "price": 25900
+      },
+      {
+       "category": "해산물 숙회",
+       "name": "모듬숙회(문어반+오징어+참소라)",
+       "price": 24900
+      },
+      {
+       "category": "밥&튀김류",
+       "name": "공기밥",
+       "price": 1500
+      },
+      {
+       "category": "밥&튀김류",
+       "name": "도시락김 3개",
+       "price": 1000
+      },
+      {
+       "category": "밥&튀김류",
+       "name": "김가루컵밥",
+       "price": 2000
+      },
+      {
+       "category": "밥&튀김류",
+       "name": "날치알주먹밥",
+       "price": 3500
+      },
+      {
+       "category": "밥&튀김류",
+       "name": "새우튀김 5개",
+       "price": 4500
+      },
+      {
+       "category": "밥&튀김류",
+       "name": "새우튀김 10개",
+       "price": 8500
+      },
+      {
+       "category": "밥&튀김류",
+       "name": "꽃게살튀김 5개",
+       "price": 4500
+      },
+      {
+       "category": "밥&튀김류",
+       "name": "꽃게살튀김 10개",
+       "price": 8500
+      },
+      {
+       "category": "밥&튀김류",
+       "name": "가리비관자모양튀김 6개",
+       "price": 4500
+      },
+      {
+       "category": "밥&튀김류",
+       "name": "가리비관자모양튀김 12개",
+       "price": 8500
+      },
+      {
+       "category": "밥&튀김류",
+       "name": "오징어링 6개",
+       "price": 4500
+      },
+      {
+       "category": "밥&튀김류",
+       "name": "오징어링 12개",
+       "price": 8500
+      },
+      {
+       "category": "밥&튀김류",
+       "name": "고구마치즈스틱 5개",
+       "price": 4500
+      },
+      {
+       "category": "밥&튀김류",
+       "name": "고구마치즈스틱 10개",
+       "price": 8500
+      },
+      {
+       "category": "밥&튀김류",
+       "name": "김말이튀김 6개",
+       "price": 4500
+      },
+      {
+       "category": "밥&튀김류",
+       "name": "김말이튀김 12개",
+       "price": 8500
+      },
+      {
+       "category": "밥&튀김류",
+       "name": "고구마튀김 4개",
+       "price": 4500
+      },
+      {
+       "category": "밥&튀김류",
+       "name": "고구마튀김 8개",
+       "price": 8500
+      },
+      {
+       "category": "밥&튀김류",
+       "name": "바삭군만두 6개",
+       "price": 4500
+      },
+      {
+       "category": "밥&튀김류",
+       "name": "바삭군만두 12개",
+       "price": 8500
+      },
+      {
+       "category": "음료및간식",
+       "name": "코카콜라 350ml",
+       "price": 2000
+      },
+      {
+       "category": "음료및간식",
+       "name": "코카콜라제로 350ml",
+       "price": 2000
+      },
+      {
+       "category": "음료및간식",
+       "name": "칠성사이다 350ml",
+       "price": 2000
+      },
+      {
+       "category": "음료및간식",
+       "name": "펩시제로 350ml",
+       "price": 2000
+      },
+      {
+       "category": "음료및간식",
+       "name": "웰치스포도 350ml",
+       "price": 2000
+      },
+      {
+       "category": "음료및간식",
+       "name": "쿨피스 950ml",
+       "price": 2000
+      },
+      {
+       "category": "음료및간식",
+       "name": "푸딩계란찜",
+       "price": 2500
+      },
+      {
+       "category": "음료및간식",
+       "name": "볶음밥용토핑4종세트 날치알치즈단무지김가루",
+       "price": 2500
+      },
+      {
+       "category": "음료및간식",
+       "name": "날치알주먹밥",
+       "price": 3500
+      }
+     ]
+    },
+    {
      "name": "Screenshot_20260909_132302.jpg",
      "fid": "F0C0F9PV23G",
      "from": "댓글",
@@ -988,169 +1762,567 @@ window.MENU_REQUESTS = {
      ]
     },
     {
-     "name": "image (73).png",
-     "fid": "F0C0AEJH40K",
-     "from": "원글",
-     "kind": "menu_board",
+     "name": "1788927918305.jpeg",
+     "fid": "F0C0B0W9LR1",
+     "from": "댓글",
+     "kind": "pos_screen",
      "menu": [
       {
-       "category": "",
-       "name": "[뼈없는] 순살아구찜 1-2인",
+       "category": "가격",
+       "name": "1~2인",
        "price": 26900
       },
       {
-       "category": "",
-       "name": "[뼈없는] 순살아구찜 소",
+       "category": "가격",
+       "name": "소",
        "price": 35000
       },
       {
-       "category": "",
-       "name": "[뼈없는] 순살아구찜 중",
+       "category": "가격",
+       "name": "중",
        "price": 44000
       },
       {
-       "category": "",
-       "name": "[뼈없는] 순살아구찜 대",
+       "category": "가격",
+       "name": "대",
        "price": 54000
       },
       {
-       "category": "",
-       "name": "명품해물찜 1-2인(미니갑오징어)",
-       "price": 27900
+       "category": "매운맛(창렬고추%) 선택",
+       "name": "0단계(신라면)",
+       "price": 0
+      },
+      {
+       "category": "매운맛(창렬고추%) 선택",
+       "name": "1단계5%",
+       "price": 0
+      },
+      {
+       "category": "매운맛(창렬고추%) 선택",
+       "name": "1.5단계15%",
+       "price": 0
+      },
+      {
+       "category": "매운맛(창렬고추%) 선택",
+       "name": "2단계30%",
+       "price": 0
+      },
+      {
+       "category": "매운맛(창렬고추%) 선택",
+       "name": "2.5단계60%",
+       "price": 500
+      },
+      {
+       "category": "매운맛(창렬고추%) 선택",
+       "name": "3단계90%",
+       "price": 700
+      },
+      {
+       "category": "매운맛(창렬고추%) 선택",
+       "name": "4단계100%매운맛문판량",
+       "price": 1000
+      },
+      {
+       "category": "소스유무 선택",
+       "name": "간장마사비쏘스",
+       "price": 0
+      },
+      {
+       "category": "소스유무 선택",
+       "name": "초장간장마사비",
+       "price": 0
+      },
+      {
+       "category": "소스유무 선택",
+       "name": "초장만",
+       "price": 0
+      },
+      {
+       "category": "소스유무 선택",
+       "name": "초장간장마사비 X",
+       "price": 0
+      },
+      {
+       "category": "무료사이드메뉴 선택",
+       "name": "안주세도되요",
+       "price": 0
+      },
+      {
+       "category": "무료사이드메뉴 선택",
+       "name": "새우튀김",
+       "price": 0
+      },
+      {
+       "category": "무료사이드메뉴 선택",
+       "name": "꽃게살튀김",
+       "price": 0
+      },
+      {
+       "category": "무료사이드메뉴 선택",
+       "name": "오징어링",
+       "price": 0
+      },
+      {
+       "category": "무료사이드메뉴 선택",
+       "name": "가리비관자모양튀김",
+       "price": 0
+      },
+      {
+       "category": "무료사이드메뉴 선택",
+       "name": "김말이튀김",
+       "price": 0
+      },
+      {
+       "category": "무료사이드메뉴 선택",
+       "name": "고구마튀김",
+       "price": 0
+      },
+      {
+       "category": "무료사이드메뉴 선택",
+       "name": "바삭군만두",
+       "price": 0
+      },
+      {
+       "category": "무료사이드메뉴 선택",
+       "name": "우동계란만두",
+       "price": 0
+      },
+      {
+       "category": "무료사이드메뉴 선택",
+       "name": "공기밥1개",
+       "price": 0
+      },
+      {
+       "category": "무료사이드메뉴 선택",
+       "name": "공기밥1개",
+       "price": 0
+      },
+      {
+       "category": "무료사이드메뉴 선택",
+       "name": "김가루컵밥",
+       "price": 500
+      },
+      {
+       "category": "무료사이드메뉴 선택",
+       "name": "날치알유부초밥",
+       "price": 1500
+      },
+      {
+       "category": "무료사이드메뉴 선택",
+       "name": "도시락김[1인3장&4인8장]",
+       "price": 0
+      },
+      {
+       "category": "무료사이드메뉴 선택",
+       "name": "날치알처즌단짜프김가루",
+       "price": 500
+      },
+      {
+       "category": "무료사이드메뉴 선택",
+       "name": "코카콜라350ml",
+       "price": 0
+      },
+      {
+       "category": "무료사이드메뉴 선택",
+       "name": "코카콜라제로350ml",
+       "price": 0
+      },
+      {
+       "category": "무료사이드메뉴 선택",
+       "name": "칠성사이다350ml",
+       "price": 0
+      },
+      {
+       "category": "무료사이드메뉴 선택",
+       "name": "펩시제로350ml",
+       "price": 0
+      },
+      {
+       "category": "무료사이드메뉴 선택",
+       "name": "웰치스포도350ml",
+       "price": 0
+      },
+      {
+       "category": "무료사이드메뉴 선택",
+       "name": "쿨피스950ml",
+       "price": 0
+      },
+      {
+       "category": "무료사이드메뉴 선택",
+       "name": "초장간장마사비세트 추가",
+       "price": 0
+      },
+      {
+       "category": "추가선택 1",
+       "name": "빠조갈살아나라구400g",
+       "price": 7900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "빠조갈살아나라구600g",
+       "price": 11900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "빠깔는살아구살400g",
+       "price": 9900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "빠깔는살아구살600g",
+       "price": 14900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "대구곱살400g추가(빼있음)",
+       "price": 9900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "대구곱살600g추가(빼있음)",
+       "price": 14900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "아구대창 추가",
+       "price": 6900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "명란알 추가",
+       "price": 7900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "참소라 추가",
+       "price": 6900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "고니 추가",
+       "price": 6900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "위소라슬라이스 추가",
+       "price": 5900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "새우(7미리) 추가",
+       "price": 6900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "칠던찾계4개 추가",
+       "price": 7900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "낙지 추가",
+       "price": 7900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "낙지 칼라서 추가",
+       "price": 7900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "오징어한마리 추가",
+       "price": 7500
+      },
+      {
+       "category": "추가선택 1",
+       "name": "오징어칼라서 추가",
+       "price": 7500
+      },
+      {
+       "category": "추가선택 1",
+       "name": "오징어군라리추가",
+       "price": 13900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "갑오징어 추가",
+       "price": 9900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "갑오징어칼라서 추가",
+       "price": 9900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "미니갑오징어기미",
+       "price": 5900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "슬쌈물오징어10개",
+       "price": 4900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "꼬마털무무미",
+       "price": 5900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "왕주꾸미 추가",
+       "price": 8900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "왕주꾸미칼라서 추가",
+       "price": 8900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "문어10마리 추가",
+       "price": 19900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "문어한마리칼라서 추가",
+       "price": 19900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "문어한마리 추가",
+       "price": 10900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "문어한마리칼라서 추가",
+       "price": 10900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "미더덕(오만둥이)추가",
+       "price": 5900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "아사아식꼽나물 추가",
+       "price": 5900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "미나리 추가",
+       "price": 3900
+      },
+      {
+       "category": "추가선택 1",
+       "name": "날치알가득주먹밥 추가",
+       "price": 3500
+      },
+      {
+       "category": "추가선택 1",
+       "name": "새우칩김수제 추가",
+       "price": 4500
+      },
+      {
+       "category": "추가선택 1",
+       "name": "쫄면사리",
+       "price": 2500
+      },
+      {
+       "category": "추가선택 1",
+       "name": "감자수제비 사리",
+       "price": 2500
+      },
+      {
+       "category": "추가선택 1",
+       "name": "창소라추가",
+       "price": 17900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "빠조갈살아나라구400g",
+       "price": 7900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "빠조갈살아나라구600g",
+       "price": 11900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "빠깔는살아구살400g",
+       "price": 9900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "빠깔는살아구살600g",
+       "price": 14900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "대구곱살400g추가(빼있음)",
+       "price": 9900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "대구곱살600g추가(빼있음)",
+       "price": 14900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "아사아식꼽나물 추가",
+       "price": 3000
+      },
+      {
+       "category": "추가선택 2",
+       "name": "아구대창 추가",
+       "price": 6900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "명란알 추가",
+       "price": 7900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "참소라 추가",
+       "price": 6900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "고니 추가",
+       "price": 6900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "위소라슬라이스 추가",
+       "price": 5900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "새우7마리 추가",
+       "price": 6900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "칠던찾계4개 추가",
+       "price": 7900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "낙지 추가",
+       "price": 7900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "낙지 칼라서 추가",
+       "price": 7900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "꼬마털무무미",
+       "price": 5900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "왕주꾸미 추가",
+       "price": 8900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "왕주꾸미칼라서 추가",
+       "price": 8900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "문어한마리 추가",
+       "price": 19900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "문어한마리칼라서 추가",
+       "price": 19900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "문어한마리 추가",
+       "price": 10900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "오징어한마리 추가",
+       "price": 7500
+      },
+      {
+       "category": "추가선택 2",
+       "name": "오징어 칼라서 추가",
+       "price": 7500
+      },
+      {
+       "category": "추가선택 2",
+       "name": "오징어군라리추가",
+       "price": 13900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "갑오징어 추가",
+       "price": 9900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "갑오징어칼라서 추가",
+       "price": 9900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "미니갑오징어기미",
+       "price": 5900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "슬쌈물오징어10개 추가",
+       "price": 4900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "미더덕(오만둥이)추가",
+       "price": 5900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "미나리 추가",
+       "price": 3900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "날치알가득주먹밥 추가",
+       "price": 3500
+      },
+      {
+       "category": "추가선택 2",
+       "name": "새우퍼김수제 추가",
+       "price": 4500
+      },
+      {
+       "category": "추가선택 2",
+       "name": "감자수제비 사리",
+       "price": 2500
+      },
+      {
+       "category": "추가선택 2",
+       "name": "쫄면사리",
+       "price": 2500
+      },
+      {
+       "category": "추가선택 2",
+       "name": "미나리 추가",
+       "price": 3900
+      },
+      {
+       "category": "추가선택 2",
+       "name": "창소라추가",
+       "price": 17900
       }
-     ],
-     "path": "menu-files/1788921298_650129-0.png"
-    },
-    {
-     "name": "image (74).png",
-     "fid": "F0C0C8GASSH",
-     "from": "원글",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "",
-       "name": "명품해물찜 소(오징어+쭈꾸미)",
-       "price": 39000
-      },
-      {
-       "category": "",
-       "name": "명품해물찜 중(오징어+왕쭈꾸미)",
-       "price": 50000
-      },
-      {
-       "category": "",
-       "name": "명품해물찜 대(오징어+왕쭈꾸미+낙지)",
-       "price": 62000
-      },
-      {
-       "category": "",
-       "name": "[최상급알] 고니명란알찜 1-2인",
-       "price": 25000
-      },
-      {
-       "category": "",
-       "name": "[최상급알] 고니명란알찜 소",
-       "price": 33000
-      },
-      {
-       "category": "",
-       "name": "[최상급알] 고니명란알찜 중",
-       "price": 42000
-      }
-     ],
-     "path": "menu-files/1788921298_650129-1.png"
-    },
-    {
-     "name": "image (75).png",
-     "fid": "F0C0AF2GDSP",
-     "from": "원글",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "",
-       "name": "[최상급알] 고니명란알찜 대",
-       "price": 52000
-      },
-      {
-       "category": "",
-       "name": "[살이꽉찬] 꽃게찜 1-2인",
-       "price": 25000
-      },
-      {
-       "category": "",
-       "name": "[살이꽉찬] 꽃게찜 소",
-       "price": 33000
-      },
-      {
-       "category": "",
-       "name": "[살이꽉찬] 꽃게찜 중",
-       "price": 42000
-      },
-      {
-       "category": "",
-       "name": "[살이꽉찬] 꽃게찜 대",
-       "price": 52000
-      }
-     ],
-     "path": "menu-files/1788921298_650129-2.png"
-    },
-    {
-     "name": "image (76).png",
-     "fid": "F0C1B3LP0TA",
-     "from": "원글",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "",
-       "name": "[원기회복]낙지찜1-2인(낙지2마리)",
-       "price": 25000
-      },
-      {
-       "category": "",
-       "name": "[원기회복] 낙지찜 소(낙지3마리)",
-       "price": 33000
-      },
-      {
-       "category": "",
-       "name": "[원기회복] 낙지찜 중(낙지4마리)",
-       "price": 42000
-      },
-      {
-       "category": "",
-       "name": "[원기회복] 낙지찜 대(낙지5마리)",
-       "price": 52000
-      },
-      {
-       "category": "",
-       "name": "[키토산제왕] 왕새우찜 1-2인",
-       "price": 25000
-      }
-     ],
-     "path": "menu-files/1788921298_650129-3.png"
-    },
-    {
-     "name": "image (77).png",
-     "fid": "F0C0LCA7020",
-     "from": "원글",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "",
-       "name": "[키토산제왕] 왕새우찜 소",
-       "price": 33000
-      },
-      {
-       "category": "",
-       "name": "[키토산제왕] 왕새우찜 중",
-       "price": 42000
-      },
-      {
-       "category": "",
-       "name": "[키토산제왕] 왕새우찜 대",
-       "price": 52000
-      }
-     ],
-     "path": "menu-files/1788921298_650129-4.png"
+     ]
     }
    ],
    "datt": [],
