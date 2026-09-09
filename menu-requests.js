@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1799,
- "updatedAt": "2026-09-09 14:11",
+ "version": 1800,
+ "updatedAt": "2026-09-09 14:34",
  "days": 30,
  "items": [
+  {
+   "ts": "1788931971.338319",
+   "date": "2026-09-09",
+   "time": "14:32",
+   "store": "사랑방",
+   "biz": "3130703504",
+   "pos": "퍼스트포스",
+   "content": "구네투:스마트페이 / 메뉴 금액 수정 요청드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1788931975.326449",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788931971338319"
+  },
   {
    "ts": "1788928999.847599",
    "date": "2026-09-09",
