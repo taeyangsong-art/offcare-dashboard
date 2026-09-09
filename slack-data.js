@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9418,
+  "version": 9419,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -164275,15 +164275,80 @@ window.SLACK_DATA = {
       }
     },
     "2026-09-09": {
-      "counts": {},
+      "counts": {
+        "onboarding": {
+          "고경림": 1
+        },
+        "transfer": {
+          "송태양": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:00",
+          "store": "제주 트립티",
+          "biz": "1058773435",
+          "cat": "onboarding",
+          "emp": "고경림",
+          "req": "갤럭시+프론트+프린터 온보딩",
+          "hw": "",
+          "intake": "online",
+          "note": "갤럭시+프론트+프린터 온보딩 완료 사용법 안내완료"
+        },
+        {
+          "time": "08:45",
+          "store": "까치내624",
+          "biz": "2734601226",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "9월 9일 오전 9시 / 메뉴복사O / 프론트",
+          "hw": "",
+          "intake": "online",
+          "note": "완료입니다"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 2,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:00"
+      "updatedAt": "09:14",
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 0,
+          "low": 0
+        },
+        "nps": {
+          "count": 1,
+          "low": 0
+        },
+        "high": {
+          "install": 0,
+          "nps": 0
+        },
+        "npsDist": {
+          "9": 1
+        },
+        "installDist": {},
+        "byIndustry": {},
+        "byTenure": {
+          "6개월": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "SECTA9": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {},
+        "alerts": [],
+        "praises": []
+      }
     }
   },
   "resp": {
@@ -164409,10 +164474,6 @@ window.SLACK_DATA = {
       "1788855114.476539": {
         "post": "1788855114.476539",
         "lastSeen": 1788898530.993
-      },
-      "1788912007.751599": {
-        "post": "1788912007.751599",
-        "lastSeen": 1788912019.905
       }
     },
     "days": {
@@ -213191,11 +213252,27 @@ window.SLACK_DATA = {
             "dmin": 23.1
           }
         ]
+      },
+      "2026-09-09": {
+        "cnt": 1,
+        "sumMin": 7.707215015093485,
+        "over": 0,
+        "items": [
+          {
+            "hm": "09:00",
+            "min": 7.7,
+            "store": "제주 트립티",
+            "biz": "1058773435",
+            "who": "고경림",
+            "cat": "onboarding",
+            "dmin": 7.7
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-09 09:00",
+    "at": "2026-09-09 09:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
