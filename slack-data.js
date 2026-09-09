@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9423,
+  "version": 9424,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -164277,6 +164277,8 @@ window.SLACK_DATA = {
     "2026-09-09": {
       "counts": {
         "as": {
+          "김현기": 1,
+          "배선유": 1,
           "고경림": 1
         },
         "onboarding": {
@@ -164288,6 +164290,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:24",
+          "store": "요이토스트",
+          "biz": "2432001846",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "프론트 충전기를 몇시간 안꽂아놨더니 꽂은이후에도 아예 전원이 들어오지 않아 확인 부탁드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "전용어댑터X 프론트 전용 어댑터 구매 링크 발송"
+        },
+        {
+          "time": "09:20",
+          "store": "온담",
+          "biz": "3800903492",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "포스기에서 토스포스 이용중인데 포스 프로그램 실행 불가로 인입되었습니다. 재설치 등 조치가 필요할것 같아 원격 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "재설치 및 재온보딩"
+        },
         {
           "time": "09:14",
           "store": "우성 IEG",
@@ -164323,11 +164347,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 3,
+        "online": 5,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:30",
+      "updatedAt": "09:31",
       "voc": {
         "responses": 1,
         "install": {
@@ -164491,14 +164515,21 @@ window.SLACK_DATA = {
       },
       "1788913428.529589": {
         "post": "1788913428.529589",
-        "lastSeen": 1788913837.709,
+        "lastSeen": 1788914074.114,
         "r": 1,
         "day": "2026-09-09",
         "idx": 1
       },
       "1788913834.101129": {
         "post": "1788913834.101129",
-        "lastSeen": 1788913837.709
+        "lastSeen": 1788914074.114,
+        "r": 1,
+        "day": "2026-09-09",
+        "idx": 2
+      },
+      "1788913881.578759": {
+        "post": "1788913881.578759",
+        "lastSeen": 1788914074.114
       }
     },
     "days": {
@@ -213279,8 +213310,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-09": {
-        "cnt": 2,
-        "sumMin": 8.740155200163523,
+        "cnt": 3,
+        "sumMin": 10.770328048865,
         "over": 0,
         "items": [
           {
@@ -213299,13 +213330,21 @@ window.SLACK_DATA = {
             "biz": "1485000933",
             "who": "고경림",
             "cat": "as"
+          },
+          {
+            "hm": "09:30",
+            "min": 2,
+            "store": "새절떡볶이",
+            "biz": "4421503054",
+            "who": "김동욱",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-09 09:30",
+    "at": "2026-09-09 09:34",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
