@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1835,
- "updatedAt": "2026-09-09 18:57",
+ "version": 1836,
+ "updatedAt": "2026-09-09 19:02",
  "days": 30,
  "items": [
   {
@@ -44,7 +44,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C0K7Q7RH8",
      "from": "댓글",
-     "path": "menu-files/1788946067_496159-0.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -67,13 +66,13 @@ window.MENU_REQUESTS = {
        "name": "반반족발2~3인 족발+매콤불족발 (중)",
        "price": 45000
       }
-     ]
+     ],
+     "path": "menu-files/1788946067_496159-0.png"
     },
     {
      "name": "image.png",
      "fid": "F0C0NU4NA0L",
      "from": "댓글",
-     "path": "menu-files/1788946067_496159-1.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -96,13 +95,13 @@ window.MENU_REQUESTS = {
        "name": "반반보쌈2~3인 보쌈+마늘보쌈 (중)",
        "price": 45000
       }
-     ]
+     ],
+     "path": "menu-files/1788946067_496159-1.png"
     },
     {
      "name": "image.png",
      "fid": "F0C0M6EEV8R",
      "from": "댓글",
-     "path": "menu-files/1788946067_496159-2.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -135,13 +134,13 @@ window.MENU_REQUESTS = {
        "name": "마늘보쌈 변경",
        "price": 3000
       }
-     ]
+     ],
+     "path": "menu-files/1788946067_496159-2.png"
     },
     {
      "name": "image.png",
      "fid": "F0C0M6FU3K3",
      "from": "댓글",
-     "path": "menu-files/1788946067_496159-3.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -169,13 +168,13 @@ window.MENU_REQUESTS = {
        "name": "보쌈무김치",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1788946067_496159-3.png"
     },
     {
      "name": "image.png",
      "fid": "F0C0HAHSX5L",
      "from": "댓글",
-     "path": "menu-files/1788946067_496159-4.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -198,7 +197,8 @@ window.MENU_REQUESTS = {
        "name": "쌈장",
        "price": 1000
       }
-     ]
+     ],
+     "path": "menu-files/1788946067_496159-4.png"
     }
    ],
    "datt": [],
@@ -206,11 +206,11 @@ window.MENU_REQUESTS = {
     "• *기존 주류/음료 제외 전부 삭제*(족발집으로 상호/업종 변경 예정)",
     "[신규 메뉴 추가]"
    ],
-   "rc": 3,
-   "lr": "1788946338.289379",
+   "rc": 5,
+   "lr": "1788948048.118419",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788946067496159"
   },
   {
