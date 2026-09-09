@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9432,
+  "version": 9433,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -164277,10 +164277,10 @@ window.SLACK_DATA = {
     "2026-09-09": {
       "counts": {
         "as": {
+          "배선유": 3,
           "김동욱": 2,
           "고경림": 3,
           "송태양": 1,
-          "배선유": 2,
           "김현기": 1
         },
         "onboarding": {
@@ -164295,6 +164295,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:56",
+          "store": "로또킹",
+          "biz": "5081893314",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "포프(패드) / 유선프린터 용지 출력되지 않아 확인부탁드립니다! / 기기문제일 경우 당일 대체품 받기 희망함",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트 내부 출력 속도 115200으로 변경되어있어 9600으로 변경"
+        },
         {
           "time": "09:47",
           "store": "사용안함[1]양재",
@@ -164440,11 +164451,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 10,
+        "online": 11,
         "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "09:57",
+      "updatedAt": "10:00",
       "voc": {
         "responses": 1,
         "install": {
@@ -164608,10 +164619,22 @@ window.SLACK_DATA = {
       },
       "1788914194.353489": {
         "post": "1788914194.353489",
-        "lastSeen": 1788915439.232,
+        "lastSeen": 1788915619.044,
         "r": 1,
         "day": "2026-09-09",
         "idx": 3
+      },
+      "1788915606.381559": {
+        "post": "1788915606.381559",
+        "lastSeen": 1788915619.044
+      },
+      "1788915603.056919": {
+        "post": "1788915603.056919",
+        "lastSeen": 1788915619.044
+      },
+      "1788915601.348279": {
+        "post": "1788915601.348279",
+        "lastSeen": 1788915619.044
       }
     },
     "days": {
@@ -213454,7 +213477,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-09 09:57",
+    "at": "2026-09-09 10:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
