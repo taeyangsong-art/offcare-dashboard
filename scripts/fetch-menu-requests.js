@@ -191,6 +191,14 @@ function scrubPII(t) {
  * 12번씩 같은 400 을 맞으면서 하루 넘게 0건 판독이 이어졌다. 원인도 데이터에 안 남았다. */
 let ocrHalt = null;                    // {status, message} — 설정되면 이번 실행의 남은 판독을 건너뛴다
 const OCR_FATAL = new Set([400, 401, 403, 404]);   // 잔액·키·모델명 문제 — 재시도해도 같은 결과
+/* 단, 400 에는 성격이 다른 두 가지가 섞여 있다.
+ *   ① 계정 문제(크레딧 소진 등) — 다음 장도 똑같이 실패한다 → 이번 실행 중단이 맞다
+ *   ② 이 사진 한 장의 문제(픽셀 8000 초과·디코드 실패 등) — 다른 사진은 멀쩡하다
+ * ②까지 중단으로 처리하면 그 한 장이 큐 맨 앞에 박혀 파이프라인이 영구히 멈춘다.
+ * 2026-09-09 에 1080x10879 안드로이드 스크롤 스크린샷 한 장 때문에 13:28부터 판독이 0건이 됐다.
+ * API 는 요청 본문의 어느 필드가 문제인지 'messages.0.content.0.image.source…' 로 짚어준다
+ * — 이 접두사가 붙은 400 은 ②로 보고 그 첨부만 판독 불가로 표시하고 다음 장으로 넘어간다. */
+const OCR_BAD_INPUT = /messages\.\d+\.content|invalid[_ ]image|could not process (image|document)/i;
 async function readMenuImage(dest) {
   if (ocrHalt) return null;
   if (ocrDone >= OCR_CAP) return null;
@@ -237,6 +245,11 @@ async function readMenuImage(dest) {
   } catch (e) {
     const st = e.status || 0;
     const msg = String((e.error && e.error.error && e.error.error.message) || e.message || e).slice(0, 200);
+    if (st === 400 && OCR_BAD_INPUT.test(msg)) {   // 이 첨부 하나의 문제 — 다시 보내도 같은 400 이다
+      ocrDone++;
+      console.log('판독 불가(이 첨부만 건너뜀):', dest, msg.slice(0, 120));
+      return { bad: true };
+    }
     if (OCR_FATAL.has(st)) {          // 잔액 부족·키 오류 등 — 이번 실행은 여기서 판독을 접는다
       ocrHalt = { status: st, message: msg };
       console.log(`⛔ 판독 중단(HTTP ${st}): ${msg}`);
@@ -382,6 +395,7 @@ function detectPos(text) {
           // 판독 완료분은 영구 재사용. 구 tesseract 캐시(ocr 문자열)도 그대로 살려 재판독 비용을 아낀다.
           if ('kind' in p) { datt.push({ id, kind: p.kind, menu: p.menu || [] }); continue; }
           if ('ocr' in p) { datt.push({ id, ocr: p.ocr }); continue; }
+          if (p.nj) { datt.push({ id, nj: 1 }); continue; }               // 판독 불가로 확정된 파일
           di++;
 
           const meta = await driveMeta(id, tok);
@@ -397,7 +411,8 @@ function detectPos(text) {
           if (!got) continue;
           try {
             const r = await readMenuImage(tmp);
-            if (r) datt.push({ id, kind: r.kind, menu: r.menu });          // null(상한/키없음)은 다음 실행 재시도
+            if (r && r.bad) datt.push({ id, nj: 1 });                      // 판독 불가 — 매 실행 다시 받아 호출하지 않는다
+            else if (r) datt.push({ id, kind: r.kind, menu: r.menu });     // null(상한/키없음)은 다음 실행 재시도
           } finally { try { fs.unlinkSync(tmp); } catch (e) {} }
         }
       }
@@ -474,7 +489,11 @@ function detectPos(text) {
         }
         if (judgePath) {
           const isTemp = judgePath.startsWith(DRIVE_TMP);   // 축소본·창밖 임시본은 판독 후 지운다
-          try { const r = await readMenuImage(judgePath); if (r) { a.kind = r.kind; a.menu = r.menu; } }
+          try {
+            const r = await readMenuImage(judgePath);
+            if (r && r.bad) a.nj = 1;                                   // 판독 불가 사진 — 다음 실행에서 재시도하지 않는다
+            else if (r) { a.kind = r.kind; a.menu = r.menu; }
+          }
           finally { if (isTemp) { try { fs.unlinkSync(judgePath); } catch (e) {} } }
         }
       }
