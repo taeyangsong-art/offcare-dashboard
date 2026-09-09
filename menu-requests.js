@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1776,
- "updatedAt": "2026-09-09 09:44",
+ "version": 1777,
+ "updatedAt": "2026-09-09 09:48",
  "days": 30,
  "items": [
   {
@@ -18,13 +18,103 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C0G59AD2N",
+     "from": "댓글",
+     "path": "menu-files/1788914571_670679-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "기본",
+       "name": "빵",
+       "price": 2800
+      },
+      {
+       "category": "기본",
+       "name": "빵(4개이상)",
+       "price": 2500
+      },
+      {
+       "category": "기본",
+       "name": "팥빙수",
+       "price": 5500
+      },
+      {
+       "category": "기본",
+       "name": "단팥죽",
+       "price": 5500
+      },
+      {
+       "category": "기본",
+       "name": "양송이크림스프",
+       "price": 5500
+      },
+      {
+       "category": "음료",
+       "name": "아메리카노",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "카페라떼",
+       "price": 2500
+      },
+      {
+       "category": "음료",
+       "name": "수제오미자레몬차",
+       "price": 5500
+      },
+      {
+       "category": "음료",
+       "name": "수제흑임자두유(소금)",
+       "price": 3800
+      },
+      {
+       "category": "음료",
+       "name": "콩쥐팥쥐두유(꿀)",
+       "price": 3800
+      },
+      {
+       "category": "음료",
+       "name": "유기농과일쥬스",
+       "price": 2500
+      },
+      {
+       "category": "음료",
+       "name": "유기농차",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "청량음료(콜라,사이다)",
+       "price": 2000
+      },
+      {
+       "category": "기본",
+       "name": "선물용 쇼핑백",
+       "price": 2000
+      },
+      {
+       "category": "기본",
+       "name": "빵3800",
+       "price": 3800
+      },
+      {
+       "category": "기본",
+       "name": "빵3500",
+       "price": 3500
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [
     "··· 동래꿀팥빵 메뉴를 > ··· 다고미고(동래꿀팥빵이 될 예정) 여기로 이전 부탁드립니다.\n\n기존 다고미고 메뉴들은 모두 삭제 부탁드려요!"
    ],
-   "rc": 2,
-   "lr": "1788914617.631999",
+   "rc": 5,
+   "lr": "1788914909.015649",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",

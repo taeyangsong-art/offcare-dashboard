@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9427,
+  "version": 9428,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -164277,8 +164277,8 @@ window.SLACK_DATA = {
     "2026-09-09": {
       "counts": {
         "as": {
+          "김동욱": 2,
           "배선유": 2,
-          "김동욱": 1,
           "김현기": 1,
           "고경림": 2
         },
@@ -164291,6 +164291,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:47",
+          "store": "사용안함[1]양재",
+          "biz": "8468600225",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "양재 -&gt; 삼성DSR 이관 / 삼진어묵(DSR) 변경 필요",
+          "hw": "",
+          "intake": "online",
+          "note": "대시보드, 토플파, VAN전산 수정 완료"
+        },
         {
           "time": "09:31",
           "store": "팥방 수영본점",
@@ -164381,11 +164392,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 7,
+        "online": 8,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:42",
+      "updatedAt": "09:47",
       "voc": {
         "responses": 1,
         "install": {
@@ -164549,21 +164560,21 @@ window.SLACK_DATA = {
       },
       "1788914194.353489": {
         "post": "1788914194.353489",
-        "lastSeen": 1788914651.479,
+        "lastSeen": 1788914908.493,
         "r": 1,
         "day": "2026-09-09",
         "idx": 3
       },
       "1788914413.184699": {
         "post": "1788914413.184699",
-        "lastSeen": 1788914651.479,
+        "lastSeen": 1788914908.493,
         "r": 1,
         "day": "2026-09-09",
         "idx": 4
       },
       "1788914400.419849": {
         "post": "1788914400.419849",
-        "lastSeen": 1788914651.479,
+        "lastSeen": 1788914908.493,
         "r": 1,
         "day": "2026-09-09",
         "idx": 5
@@ -213407,13 +213418,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-09 09:44",
+    "at": "2026-09-09 09:48",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 3977,
+    "rows": 3979,
     "named": 663,
     "unknownName": 0,
     "beforeStart": 0,
