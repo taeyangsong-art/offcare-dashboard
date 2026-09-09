@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1808,
- "updatedAt": "2026-09-09 15:27",
+ "version": 1809,
+ "updatedAt": "2026-09-09 15:31",
  "days": 30,
  "items": [
   {
@@ -65,8 +65,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "[음료]\n아이스티/ 냉커피/ 감식초/ 매실/ 석류/ 식혜  - 5,000원\n\n콜라/ 사이다 - 3,000원\n\n===\n한강라면 / 짜파게티  - 6,000원\n미역국밥 / 육개장국밥 - 8,000원\n생수 - 2,000원\n돈까스 - 14,000원\n육개장 - 11,000원\n김치찌개 / 미역국 / 순두부정식 / 떡만두국 - 10,000원\n공기밥 추가 - 2,000원\n라볶이 - 12,000원\n떡볶이 - 7,000원\n떡라면 - 7,000원\n컵라면 - 5,000원\n팥빙수 - 12,000원\n\n\n계란 3개 2,000원  >> 계란 1개 1,000원\n=====\n\n[메뉴 추가]\n햇반 2,000원 (생수 옆에 위치)"
    ],
-   "rc": 3,
-   "lr": "1788934141.913939",
+   "rc": 4,
+   "lr": "1788935444.426339",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -620,7 +620,7 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1788927732.496359",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788927728982859"
   },
