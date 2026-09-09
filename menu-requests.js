@@ -3,10 +3,225 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1797,
- "updatedAt": "2026-09-09 13:28",
+ "version": 1798,
+ "updatedAt": "2026-09-09 13:43",
  "days": 30,
  "items": [
+  {
+   "ts": "1788928999.847599",
+   "date": "2026-09-09",
+   "time": "13:43",
+   "store": "연지민물매운탕",
+   "biz": "2062828779",
+   "pos": "오케이포스",
+   "content": "파일을보냈습니다",
+   "special": "이미지파일을보냈습니다",
+   "drive": [
+    "https://drive.google.com/file/d/13qsjssZqGxlLt_hsMrAhZjXBHPHob-ND/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "13qsjssZqGxlLt_hsMrAhZjXBHPHob-ND",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "기본메뉴",
+       "name": "메기 (2人)",
+       "price": 38000
+      },
+      {
+       "category": "기본메뉴",
+       "name": "메기 (3人)",
+       "price": 52000
+      },
+      {
+       "category": "기본메뉴",
+       "name": "메기 (4人)",
+       "price": 66000
+      },
+      {
+       "category": "기본메뉴",
+       "name": "잡고기 (2人)",
+       "price": 40000
+      },
+      {
+       "category": "기본메뉴",
+       "name": "잡고기 (3人)",
+       "price": 56000
+      },
+      {
+       "category": "기본메뉴",
+       "name": "잡고기 (4人)",
+       "price": 70000
+      },
+      {
+       "category": "기본메뉴",
+       "name": "빠가사리 (2人)",
+       "price": 47000
+      },
+      {
+       "category": "기본메뉴",
+       "name": "빠가사리 (3人)",
+       "price": 67000
+      },
+      {
+       "category": "기본메뉴",
+       "name": "빠가사리 (4人)",
+       "price": 87000
+      },
+      {
+       "category": "기본메뉴",
+       "name": "쏘가리 (2人)",
+       "price": 90000
+      },
+      {
+       "category": "기본메뉴",
+       "name": "쏘가리 (3人)",
+       "price": 130000
+      },
+      {
+       "category": "기본메뉴",
+       "name": "쏘가리 (4人)",
+       "price": 160000
+      },
+      {
+       "category": "특별메뉴",
+       "name": "메기 순두부 (2人)",
+       "price": 42000
+      },
+      {
+       "category": "특별메뉴",
+       "name": "메기 순두부 (3人)",
+       "price": 57000
+      },
+      {
+       "category": "특별메뉴",
+       "name": "메기 순두부 (4人)",
+       "price": 73000
+      },
+      {
+       "category": "특별메뉴",
+       "name": "메기+빠가 (2人)",
+       "price": 42000
+      },
+      {
+       "category": "특별메뉴",
+       "name": "빠가+잡고기 (3人)",
+       "price": 60000
+      },
+      {
+       "category": "특별메뉴",
+       "name": "빠가+잡고기 (4人)",
+       "price": 78000
+      },
+      {
+       "category": "특별메뉴",
+       "name": "잡탕 (2人)",
+       "price": 65000
+      },
+      {
+       "category": "특별메뉴",
+       "name": "잡탕 (3人)",
+       "price": 90000
+      },
+      {
+       "category": "특별메뉴",
+       "name": "잡탕 (4人)",
+       "price": 115000
+      },
+      {
+       "category": "특별메뉴",
+       "name": "민물새우튀김",
+       "price": 20000
+      },
+      {
+       "category": "특별메뉴",
+       "name": "참게추가 (1마리)",
+       "price": 6000
+      },
+      {
+       "category": "특별메뉴",
+       "name": "새우추가",
+       "price": 6000
+      },
+      {
+       "category": "특별메뉴",
+       "name": "순두부추가",
+       "price": 5000
+      },
+      {
+       "category": "식사메뉴",
+       "name": "어탕 소면국수",
+       "price": 10000
+      },
+      {
+       "category": "식사메뉴",
+       "name": "어탕 칼국수",
+       "price": 10000
+      },
+      {
+       "category": "식사메뉴",
+       "name": "어탕 국밥",
+       "price": 11000
+      },
+      {
+       "category": "사리",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "사리",
+       "name": "라면/소면/칼국수",
+       "price": 2000
+      },
+      {
+       "category": "사리",
+       "name": "수제비사리",
+       "price": 3000
+      },
+      {
+       "category": "사리",
+       "name": "야채추가",
+       "price": 2000
+      },
+      {
+       "category": "주류",
+       "name": "소주 / 맥주",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "청 하",
+       "price": 6000
+      },
+      {
+       "category": "주류",
+       "name": "복분자",
+       "price": 14000
+      },
+      {
+       "category": "주류",
+       "name": "막걸리",
+       "price": 4000
+      },
+      {
+       "category": "주류",
+       "name": "음료수",
+       "price": 3000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1788929002.917379",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788928999847599"
+  },
   {
    "ts": "1788927728.982859",
    "date": "2026-09-09",
