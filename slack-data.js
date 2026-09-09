@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9421,
+  "version": 9422,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -164297,7 +164297,7 @@ window.SLACK_DATA = {
           "req": "프린터기 전원을 켜면 테스트문자가 지속 출력된다하여 점검부탁드립니다",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "포프 연동 및 영수프린터 설정 안되어있어, 외계어출력되던증상 포프 연동 및 설정후 정상출력확인"
         },
         {
           "time": "09:00",
@@ -164327,7 +164327,7 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:23",
+      "updatedAt": "09:24",
       "voc": {
         "responses": 1,
         "install": {
@@ -164491,7 +164491,10 @@ window.SLACK_DATA = {
       },
       "1788913428.529589": {
         "post": "1788913428.529589",
-        "lastSeen": 1788913459.38
+        "lastSeen": 1788913521.632,
+        "r": 1,
+        "day": "2026-09-09",
+        "idx": 1
       }
     },
     "days": {
@@ -213272,8 +213275,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-09": {
-        "cnt": 1,
-        "sumMin": 7.707215015093485,
+        "cnt": 2,
+        "sumMin": 8.740155200163523,
         "over": 0,
         "items": [
           {
@@ -213284,13 +213287,21 @@ window.SLACK_DATA = {
             "who": "고경림",
             "cat": "onboarding",
             "dmin": 7.7
+          },
+          {
+            "hm": "09:23",
+            "min": 1,
+            "store": "참새방앗간",
+            "biz": "1485000933",
+            "who": "고경림",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-09 09:24",
+    "at": "2026-09-09 09:25",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
