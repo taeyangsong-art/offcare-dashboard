@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1811,
- "updatedAt": "2026-09-09 16:09",
+ "version": 1812,
+ "updatedAt": "2026-09-09 16:13",
  "days": 30,
  "items": [
   {
@@ -20,12 +20,14 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1788933284.543329",
+   "replies": [
+    "이미 갈릭소스가 잇지만 원하시는대로 추가 완료"
+   ],
+   "rc": 2,
+   "lr": "1788938008.736279",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788933281414819"
   },
   {
@@ -41,9 +43,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1788932666.685099",
+   "replies": [
+    ":전화해: 토스포스라 직접 등록하는 법 안내"
+   ],
+   "rc": 2,
+   "lr": "1788937865.362239",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -59153,107 +59157,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786346071016949"
-  },
-  {
-   "ts": "1786345988.442839",
-   "date": "2026-08-10",
-   "time": "16:13",
-   "store": "황금보리",
-   "biz": "2925600493",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BP897DLA0",
-     "from": "댓글",
-     "path": "menu-files/1786345988_442839-0.png",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "",
-       "name": "찰보리빵 쇼핑백30개",
-       "price": 13000
-      },
-      {
-       "category": "",
-       "name": "먹빼비",
-       "price": 3000
-      },
-      {
-       "category": "",
-       "name": "찰보리빵 선물3(",
-       "price": 15000
-      },
-      {
-       "category": "",
-       "name": "찰보리빵 쇼핑백50개",
-       "price": 21000
-      },
-      {
-       "category": "",
-       "name": "찰보리빵 선물박스40개",
-       "price": 18000
-      },
-      {
-       "category": "",
-       "name": "찰보리빵60개",
-       "price": 26000
-      },
-      {
-       "category": "",
-       "name": "찰보리빵40개",
-       "price": 17000
-      },
-      {
-       "category": "",
-       "name": "찰보리빵20개",
-       "price": 9000
-      },
-      {
-       "category": "",
-       "name": "할인제품",
-       "price": 9000
-      },
-      {
-       "category": "",
-       "name": "사과즙",
-       "price": 25000
-      },
-      {
-       "category": "",
-       "name": "찰보리빵",
-       "price": 20000
-      },
-      {
-       "category": "",
-       "name": "먹빼비",
-       "price": 2500
-      },
-      {
-       "category": "",
-       "name": "찰보리빵100개",
-       "price": 40000
-      },
-      {
-       "category": "",
-       "name": "황금찰보리빵",
-       "price": 10000
-      }
-     ]
-    }
-   ],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1786346002.469119",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786345988442839"
   }
  ],
  "ocr": {
