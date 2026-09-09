@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9463,
+  "version": 9464,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -164292,7 +164292,7 @@ window.SLACK_DATA = {
           "고경림": 1
         },
         "transfer": {
-          "송태양": 2
+          "송태양": 3
         },
         "menu": {
           "배선유": 3
@@ -164354,6 +164354,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "일이 생겨서 지금 바로 하기어려움 / 이따 오후 17시로 재예약"
+        },
+        {
+          "time": "11:00",
+          "store": "카페 이마고",
+          "biz": "4233101924",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "9월 9일 오전 11시 15분 / 메뉴 복사 O / 터프",
+          "hw": "",
+          "intake": "online",
+          "note": "172.30.1.43 / 명변 완료입니다"
         },
         {
           "time": "10:55",
@@ -164810,7 +164821,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 37,
+        "online": 38,
         "offline": 9,
         "unknown": 0
       },
@@ -164987,14 +164998,10 @@ window.SLACK_DATA = {
       },
       "1788919673.504319": {
         "post": "1788919673.504319",
-        "lastSeen": 1788920540.438,
+        "lastSeen": 1788920604.135,
         "r": 1,
         "day": "2026-09-09",
         "idx": 23
-      },
-      "1788918116.134959": {
-        "post": "1788918116.134959",
-        "lastSeen": 1788920540.438
       }
     },
     "days": {
@@ -214008,7 +214015,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-09 11:22",
+    "at": "2026-09-09 11:23",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
