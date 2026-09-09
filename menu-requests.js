@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1777,
- "updatedAt": "2026-09-09 09:48",
+ "version": 1778,
+ "updatedAt": "2026-09-09 09:52",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C0G59AD2N",
      "from": "댓글",
-     "path": "menu-files/1788914571_670679-0.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -106,17 +105,18 @@ window.MENU_REQUESTS = {
        "name": "빵3500",
        "price": 3500
       }
-     ]
+     ],
+     "path": "menu-files/1788914571_670679-0.png"
     }
    ],
    "datt": [],
    "replies": [
     "··· 동래꿀팥빵 메뉴를 > ··· 다고미고(동래꿀팥빵이 될 예정) 여기로 이전 부탁드립니다.\n\n기존 다고미고 메뉴들은 모두 삭제 부탁드려요!"
    ],
-   "rc": 5,
-   "lr": "1788914909.015649",
+   "rc": 7,
+   "lr": "1788915035.916899",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788914571670679"
   },
