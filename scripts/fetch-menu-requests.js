@@ -114,7 +114,10 @@ const OCR_EXT = /\.(jpe?g|png|webp|bmp|gif)$/i;
 const OCR_CAP = Number(process.env.OCR_CAP || 12);   // 실행당 신규 판독 상한(비용·런타임 보호)
 // API 가 받는 이미지 상한은 base64 기준 5MB. 여유를 두고 4.5MB 를 넘으면 축소본을 쓴다.
 const OCR_MAX_BYTES = 4.5 * 1024 * 1024;
-let thumbUsed = 0;
+// 용량과 별개로 픽셀 상한도 있다 — 한 변이 8000px 를 넘으면 400. 안드로이드 스크롤 스크린샷은
+// 용량은 1MB 도 안 되면서 세로가 1만을 넘어 여기 걸린다(2026-09-09 판독 정지의 원인).
+const OCR_MAX_PX = 8000;
+let thumbUsed = 0, pxShrunk = 0;
 const OCR_MODEL = process.env.OCR_MODEL || 'claude-opus-5';
 const OCR_PRICE = { in: 5, out: 25 };                // $/1M tok — 로그의 비용 추정용
 const KRW_PER_USD = Number(process.env.KRW_PER_USD || 1380);
@@ -199,18 +202,54 @@ const OCR_FATAL = new Set([400, 401, 403, 404]);   // 잔액·키·모델명 문
  * API 는 요청 본문의 어느 필드가 문제인지 'messages.0.content.0.image.source…' 로 짚어준다
  * — 이 접두사가 붙은 400 은 ②로 보고 그 첨부만 판독 불가로 표시하고 다음 장으로 넘어간다. */
 const OCR_BAD_INPUT = /messages\.\d+\.content|invalid[_ ]image|could not process (image|document)/i;
+// sharp 는 optionalDependencies — 설치가 안 돼도 판독은 그대로 돌아간다(초과분만 건너뜀).
+let _sharp = null;   // null=미확인, 'FAIL'=사용불가
+function getSharp() {
+  if (_sharp === 'FAIL') return null;
+  if (_sharp) return _sharp;
+  try { _sharp = require('sharp'); return _sharp; }
+  catch (e) { console.log('축소 비활성: sharp 없음 — 8000px 초과 사진은 판독을 건너뜁니다'); _sharp = 'FAIL'; return null; }
+}
+/* 한 변이 상한을 넘으면 상한 안으로 줄인 임시 JPEG 를 만든다.
+ *   null            = 줄일 필요 없음(그대로 보내면 된다)
+ *   {ok:true,path}  = 줄인 파일
+ *   {ok:false}      = 줄여야 하는데 못 줄임 → 보내봐야 400 이라 판독 불가로 굳힌다 */
+async function shrinkToLimit(src) {
+  const sharp = getSharp();
+  if (!sharp) return null;   // 크기를 볼 수단이 없다 — 일단 보내고 400 이면 판독 불가로 처리된다
+  let md;
+  try { md = await sharp(src).metadata(); } catch (e) { return null; }
+  if (Math.max(md.width || 0, md.height || 0) <= OCR_MAX_PX) return null;
+  try {
+    const out = `${DRIVE_TMP}/px-${path.basename(src)}.jpg`;
+    await sharp(src)
+      .resize({ width: OCR_MAX_PX, height: OCR_MAX_PX, fit: 'inside', withoutEnlargement: true })
+      .jpeg({ quality: 85 })
+      .toFile(out);
+    pxShrunk++;
+    console.log(`↧ ${md.width}x${md.height} → 상한 ${OCR_MAX_PX}px 안으로 축소해 판독: ${src}`);
+    return { ok: true, path: out };
+  } catch (e) { console.log('축소 실패:', src, String(e.message || e).slice(0, 100)); return { ok: false }; }
+}
 async function readMenuImage(dest) {
   if (ocrHalt) return null;
   if (ocrDone >= OCR_CAP) return null;
   const client = getAnthropic();
   if (!client) return null;
   const ext = path.extname(dest).toLowerCase();
-  const media = OCR_MEDIA[ext];
+  let media = OCR_MEDIA[ext];
   const isPdf = ext === OCR_PDF;
   if (!media && !isPdf) return null;
-  let buf;
-  try { buf = fs.readFileSync(dest); } catch (e) { return null; }
-  if (!buf.length) return null;
+  let src = dest, shrunk = null;
+  if (!isPdf) {
+    const sh = await shrinkToLimit(dest);
+    if (sh && !sh.ok) { console.log(`판독 건너뜀(한 변 ${OCR_MAX_PX}px 초과 · 축소 불가):`, dest); return { bad: true }; }
+    if (sh) { src = sh.path; shrunk = sh.path; media = 'image/jpeg'; }
+  }
+  let buf = null;
+  try { buf = fs.readFileSync(src); } catch (e) {}
+  if (shrunk) { try { fs.unlinkSync(shrunk); } catch (e) {} }   // 데이터는 buf 에 있다 — 바로 정리
+  if (!buf || !buf.length) return null;
   if (buf.length > OCR_MAX_BYTES) {   // 상한 초과 — 보내봐야 400 이다. 호출하지 않고 건너뛴다
     console.log(`판독 건너뜀(용량 ${(buf.length / 1048576).toFixed(1)}MB > ${(OCR_MAX_BYTES / 1048576).toFixed(1)}MB):`, dest);
     return null;
@@ -548,7 +587,8 @@ function detectPos(text) {
     const pend = (c.원글[1] - c.원글[0]) + (c.댓글[1] - c.댓글[0]);
     console.log(`🖼 첨부 판독 현황 — 원글 ${c.원글[0]}/${c.원글[1]} · 댓글 ${c.댓글[0]}/${c.댓글[1]}`
       + (pend ? ` · 대기 ${pend}장(판독 불가 제외, 다음 실행에서 계속)` : ' · 대기 없음')
-      + (thumbUsed ? ` · 큰 사진 ${thumbUsed}장은 슬랙 축소본으로 판독` : ''));
+      + (thumbUsed ? ` · 큰 사진 ${thumbUsed}장은 슬랙 축소본으로 판독` : '')
+      + (pxShrunk ? ` · ${OCR_MAX_PX}px 초과 ${pxShrunk}장은 축소해 판독` : ''));
     if (ocrHalt) console.log(`⛔ 이번 실행 판독 중단 — HTTP ${ocrHalt.status}: ${ocrHalt.message}\n`
       + `   해결 전까지 대기 ${pend}장은 그대로 남습니다(데이터는 보존되고, 풀리면 자동으로 이어서 판독합니다).`);
   }
