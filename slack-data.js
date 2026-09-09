@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9430,
+  "version": 9431,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -164290,7 +164290,7 @@ window.SLACK_DATA = {
           "송태양": 1
         },
         "menu": {
-          "배선유": 1
+          "배선유": 2
         }
       },
       "pending": [],
@@ -164349,6 +164349,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "노트북 교체, 재온보딩 완료"
+        },
+        {
+          "time": "09:31",
+          "store": "더멀리",
+          "biz": "3976300914",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 동네책방 지속 탐구 / 완료"
         },
         {
           "time": "09:30",
@@ -164429,11 +164440,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 9,
+        "online": 10,
         "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "09:47",
+      "updatedAt": "09:56",
       "voc": {
         "responses": 1,
         "install": {
@@ -164597,7 +164608,7 @@ window.SLACK_DATA = {
       },
       "1788914194.353489": {
         "post": "1788914194.353489",
-        "lastSeen": 1788915258.926,
+        "lastSeen": 1788915379.435,
         "r": 1,
         "day": "2026-09-09",
         "idx": 3
@@ -213443,7 +213454,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-09 09:54",
+    "at": "2026-09-09 09:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
