@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1828,
- "updatedAt": "2026-09-09 18:06",
+ "version": 1829,
+ "updatedAt": "2026-09-09 18:20",
  "days": 30,
  "items": [
   {
@@ -44,7 +44,6 @@ window.MENU_REQUESTS = {
      "name": "Resized_20260909_162204.jpg.jpeg",
      "fid": "F0C0GGNELNS",
      "from": "댓글",
-     "path": "menu-files/1788940138_399199-0.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -117,13 +116,13 @@ window.MENU_REQUESTS = {
        "name": "아포가토",
        "price": 5000
       }
-     ]
+     ],
+     "path": "menu-files/1788940138_399199-0.jpeg"
     },
     {
      "name": "Resized_20260909_162212.jpg.jpeg",
      "fid": "F0C0JDXB4F4",
      "from": "댓글",
-     "path": "menu-files/1788940138_399199-1.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -201,13 +200,13 @@ window.MENU_REQUESTS = {
        "name": "토피넛라떼",
        "price": 5000
       }
-     ]
+     ],
+     "path": "menu-files/1788940138_399199-1.jpeg"
     },
     {
      "name": "Resized_20260909_162221.jpg.jpeg",
      "fid": "F0C0JDY4Q82",
      "from": "댓글",
-     "path": "menu-files/1788940138_399199-2.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -245,13 +244,13 @@ window.MENU_REQUESTS = {
        "name": "돼지바프라페",
        "price": 6000
       }
-     ]
+     ],
+     "path": "menu-files/1788940138_399199-2.jpeg"
     },
     {
      "name": "Resized_20260909_162228.jpg.jpeg",
      "fid": "F0C03401C6T",
      "from": "댓글",
-     "path": "menu-files/1788940138_399199-3.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -329,13 +328,13 @@ window.MENU_REQUESTS = {
        "name": "바나나주스",
        "price": 6000
       }
-     ]
+     ],
+     "path": "menu-files/1788940138_399199-3.jpeg"
     },
     {
      "name": "Resized_20260909_162241.jpg.jpeg",
      "fid": "F0C0C7PKFFD",
      "from": "댓글",
-     "path": "menu-files/1788940138_399199-4.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -413,13 +412,13 @@ window.MENU_REQUESTS = {
        "name": "히비스커스",
        "price": 4000
       }
-     ]
+     ],
+     "path": "menu-files/1788940138_399199-4.jpeg"
     },
     {
      "name": "Resized_20260909_162446.jpg.jpeg",
      "fid": "F0C0E1062QM",
      "from": "댓글",
-     "path": "menu-files/1788940138_399199-5.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -432,7 +431,8 @@ window.MENU_REQUESTS = {
        "name": "말렌카 코코아",
        "price": 5500
       }
-     ]
+     ],
+     "path": "menu-files/1788940138_399199-5.jpeg"
     },
     {
      "name": "Resized_20260909_162521.jpg.jpeg",
@@ -459,12 +459,20 @@ window.MENU_REQUESTS = {
     }
    ],
    "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1788940188.809649",
+   "replies": [
+    "뭐여",
+    "나 넣고잇엇는데",
+    "마저해주셈",
+    "나 다른거해야댐",
+    "커피만 넣엇음",
+    "안들어갈텐데?",
+    "겹쳐가지고"
+   ],
+   "rc": 12,
+   "lr": "1788945558.070729",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788940138399199"
   },
   {
