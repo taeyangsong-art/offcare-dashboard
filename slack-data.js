@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9465,
+  "version": 9466,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -164277,8 +164277,8 @@ window.SLACK_DATA = {
     "2026-09-09": {
       "counts": {
         "as": {
+          "고경림": 11,
           "심성현": 8,
-          "고경림": 10,
           "김현기": 6,
           "송태양": 3,
           "배선유": 5,
@@ -164292,7 +164292,7 @@ window.SLACK_DATA = {
           "고경림": 1
         },
         "transfer": {
-          "송태양": 3
+          "송태양": 4
         },
         "menu": {
           "배선유": 3
@@ -164300,6 +164300,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:18",
+          "store": "토브 로스터리(TOWB ROASTERY)",
+          "biz": "8401702234",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "포스기 사용 매장으로, 포스 앱 실행 시 자바스크립트 오류 발생한다고 하시어 원격 도움 부탁드리겠습니다!",
+          "hw": "",
+          "intake": "offline",
+          "note": "토스포스 프로그램 재설치후 정상 작동확인"
+        },
         {
           "time": "11:12",
           "store": "베가",
@@ -164354,6 +164365,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "일이 생겨서 지금 바로 하기어려움 / 이따 오후 17시로 재예약"
+        },
+        {
+          "time": "11:00",
+          "store": "정담",
+          "biz": "4236600820",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "9월 9일 오전 11시 30분 / 메뉴 복사 O / 프론트",
+          "hw": "",
+          "intake": "online",
+          "note": ""
         },
         {
           "time": "11:00",
@@ -164821,8 +164843,8 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 38,
-        "offline": 9,
+        "online": 39,
+        "offline": 10,
         "unknown": 0
       },
       "updatedAt": "11:25",
@@ -164998,22 +165020,18 @@ window.SLACK_DATA = {
       },
       "1788919673.504319": {
         "post": "1788919673.504319",
-        "lastSeen": 1788920781.051,
+        "lastSeen": 1788920960.886,
         "r": 1,
         "day": "2026-09-09",
         "idx": 23
       },
       "1788920728.964879": {
         "post": "1788920728.964879",
-        "lastSeen": 1788920781.051
+        "lastSeen": 1788920960.886
       },
       "1788920710.876299": {
         "post": "1788920710.876299",
-        "lastSeen": 1788920781.051
-      },
-      "1788918116.134959": {
-        "post": "1788918116.134959",
-        "lastSeen": 1788920781.051
+        "lastSeen": 1788920960.886
       }
     },
     "days": {
@@ -214027,7 +214045,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-09 11:26",
+    "at": "2026-09-09 11:29",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
