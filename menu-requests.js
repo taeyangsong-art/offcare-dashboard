@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1796,
- "updatedAt": "2026-09-09 13:23",
+ "version": 1797,
+ "updatedAt": "2026-09-09 13:28",
  "days": 30,
  "items": [
   {
@@ -541,12 +541,18 @@ window.MENU_REQUESTS = {
       }
      ],
      "path": "menu-files/1788921298_650129-4.png"
+    },
+    {
+     "name": "Screenshot_20260909_132048.jpg",
+     "fid": "F0C0K5MLKTK",
+     "from": "댓글",
+     "path": "menu-files/1788921298_650129-5.jpg"
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 3,
-   "lr": "1788927554.419939",
+   "rc": 5,
+   "lr": "1788927920.948369",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
@@ -57927,6 +57933,10 @@ window.MENU_REQUESTS = {
  "ocr": {
   "model": "claude-opus-5",
   "enabled": true,
-  "drive": true
+  "drive": true,
+  "halt": {
+   "status": 400,
+   "message": "messages.0.content.0.image.source.base64.data: At least one of the image dimensions exceed max allowed size: 8000 pixels"
+  }
  }
 };
