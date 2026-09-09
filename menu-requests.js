@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1831,
- "updatedAt": "2026-09-09 18:30",
+ "version": 1832,
+ "updatedAt": "2026-09-09 18:35",
  "days": 30,
  "items": [
   {
@@ -18,13 +18,175 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C0K7Q7RH8",
+     "from": "댓글",
+     "path": "menu-files/1788946067_496159-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "족발3인 (중)뒷발",
+       "price": 39000
+      },
+      {
+       "category": "",
+       "name": "족발3인 (대)앞발",
+       "price": 44000
+      },
+      {
+       "category": "",
+       "name": "족발4인 (특대)큰앞발",
+       "price": 53000
+      },
+      {
+       "category": "",
+       "name": "반반족발2~3인 족발+매콤불족발 (중)",
+       "price": 45000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0NU4NA0L",
+     "from": "댓글",
+     "path": "menu-files/1788946067_496159-1.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "보쌈3인 (중)",
+       "price": 39000
+      },
+      {
+       "category": "",
+       "name": "보쌈4인 (대)",
+       "price": 44000
+      },
+      {
+       "category": "",
+       "name": "보쌈5인 (특대)",
+       "price": 53000
+      },
+      {
+       "category": "",
+       "name": "반반보쌈2~3인 보쌈+마늘보쌈 (중)",
+       "price": 45000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0M6EEV8R",
+     "from": "댓글",
+     "path": "menu-files/1788946067_496159-2.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "족발+보쌈3~4인 (중)뒷발",
+       "price": 63000
+      },
+      {
+       "category": "",
+       "name": "족발+보쌈4~5인 (대)앞발",
+       "price": 73000
+      },
+      {
+       "category": "",
+       "name": "족발+보쌈5~6인 (특대)큰앞발",
+       "price": 83000
+      },
+      {
+       "category": "카테고리(고기변경)",
+       "name": "매콤불족발 변경",
+       "price": 3000
+      },
+      {
+       "category": "카테고리(고기변경)",
+       "name": "마늘족발 변경",
+       "price": 3000
+      },
+      {
+       "category": "카테고리(고기변경)",
+       "name": "마늘보쌈 변경",
+       "price": 3000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0M6FU3K3",
+     "from": "댓글",
+     "path": "menu-files/1788946067_496159-3.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "쟁반막국수[대]",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "참치마요주먹밥",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "김가루주먹밥",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "공기밥",
+       "price": 1500
+      },
+      {
+       "category": "",
+       "name": "보쌈무김치",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0HAHSX5L",
+     "from": "댓글",
+     "path": "menu-files/1788946067_496159-4.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "마늘소스",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "매콤소스",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "새우젓",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "쌈장",
+       "price": 1000
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [
-    "• 기존 주류/음료 제외 전부 삭제(족발집으로 상호/업종 변경 예정)"
+    "• *기존 주류/음료 제외 전부 삭제*(족발집으로 상호/업종 변경 예정)",
+    "[신규 메뉴 추가]"
    ],
-   "rc": 2,
-   "lr": "1788946079.291639",
+   "rc": 3,
+   "lr": "1788946338.289379",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -43,9 +205,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1788943860.486729",
+   "replies": [
+    "<tel:···|···>"
+   ],
+   "rc": 2,
+   "lr": "1788946353.655239",
    "rfx": 3,
    "status": "confirm",
    "handler": "김규빈",
