@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9442,
+  "version": 9443,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -164277,8 +164277,8 @@ window.SLACK_DATA = {
     "2026-09-09": {
       "counts": {
         "as": {
+          "심성현": 3,
           "고경림": 6,
-          "심성현": 2,
           "배선유": 5,
           "김동욱": 2,
           "송태양": 1,
@@ -164300,6 +164300,18 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:24",
+          "store": "바른봄KSNS센타",
+          "biz": "2152439966",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포프(태블릿) 연결끊김으로 인한 재온보딩 지원 요청드립니다.",
+          "hw": "",
+          "urgent": true,
+          "intake": "online",
+          "note": "온보딩 사용 방법 안내 완료"
+        },
         {
           "time": "10:11",
           "store": "애니랩스 국전 8층",
@@ -164600,11 +164612,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 22,
+        "online": 23,
         "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "10:28",
+      "updatedAt": "10:30",
       "voc": {
         "responses": 1,
         "install": {
@@ -164768,7 +164780,22 @@ window.SLACK_DATA = {
       },
       "1788917325.599269": {
         "post": "1788917325.599269",
-        "lastSeen": 1788917360.841
+        "lastSeen": 1788917600.116,
+        "r": 1,
+        "day": "2026-09-09",
+        "idx": 14
+      },
+      "1788917425.231879": {
+        "post": "1788917425.231879",
+        "lastSeen": 1788917600.116
+      },
+      "1788917401.484689": {
+        "post": "1788917401.484689",
+        "lastSeen": 1788917600.116
+      },
+      "1788917400.257569": {
+        "post": "1788917400.257569",
+        "lastSeen": 1788917600.116
       }
     },
     "days": {
@@ -213549,8 +213576,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-09": {
-        "cnt": 14,
-        "sumMin": 49.29324058294296,
+        "cnt": 15,
+        "sumMin": 51.87456109921137,
         "over": 0,
         "items": [
           {
@@ -213678,13 +213705,21 @@ window.SLACK_DATA = {
             "who": "김동욱",
             "cat": "onboarding",
             "dmin": 16
+          },
+          {
+            "hm": "10:28",
+            "min": 2.6,
+            "store": "꾸준라운지",
+            "biz": "5708702584",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-09 10:29",
+    "at": "2026-09-09 10:33",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
