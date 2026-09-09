@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9420,
+  "version": 9421,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -164276,6 +164276,9 @@ window.SLACK_DATA = {
     },
     "2026-09-09": {
       "counts": {
+        "as": {
+          "고경림": 1
+        },
         "onboarding": {
           "고경림": 1
         },
@@ -164285,6 +164288,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:14",
+          "store": "우성 IEG",
+          "biz": "4943401780",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "프린터기 전원을 켜면 테스트문자가 지속 출력된다하여 점검부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "09:00",
           "store": "제주 트립티",
@@ -164309,11 +164323,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 2,
+        "online": 3,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:20",
+      "updatedAt": "09:23",
       "voc": {
         "responses": 1,
         "install": {
@@ -164474,6 +164488,10 @@ window.SLACK_DATA = {
       "1788855114.476539": {
         "post": "1788855114.476539",
         "lastSeen": 1788898530.993
+      },
+      "1788913428.529589": {
+        "post": "1788913428.529589",
+        "lastSeen": 1788913459.38
       }
     },
     "days": {
@@ -213272,7 +213290,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-09 09:21",
+    "at": "2026-09-09 09:24",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
