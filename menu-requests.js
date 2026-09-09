@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1829,
- "updatedAt": "2026-09-09 18:20",
+ "version": 1830,
+ "updatedAt": "2026-09-09 18:28",
  "days": 30,
  "items": [
+  {
+   "ts": "1788946067.496159",
+   "date": "2026-09-09",
+   "time": "18:27",
+   "store": "도담",
+   "biz": "5936200795",
+   "pos": "",
+   "content": "기존 메뉴 삭제 후 신규 등록 요청 드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "• 기존 주류/음료 제외 전부 삭제(족발집으로 상호/업종 변경 예정)"
+   ],
+   "rc": 2,
+   "lr": "1788946079.291639",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788946067496159"
+  },
   {
    "ts": "1788943848.827739",
    "date": "2026-09-09",
