@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1837,
- "updatedAt": "2026-09-09 19:03",
+ "version": 1838,
+ "updatedAt": "2026-09-09 19:06",
  "days": 30,
  "items": [
   {
@@ -206,10 +206,10 @@ window.MENU_REQUESTS = {
     "• *기존 주류/음료 제외 전부 삭제*(족발집으로 상호/업종 변경 예정)",
     "[신규 메뉴 추가]"
    ],
-   "rc": 6,
-   "lr": "1788948168.691439",
+   "rc": 7,
+   "lr": "1788948319.101899",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788946067496159"
   },
