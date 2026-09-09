@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1817,
- "updatedAt": "2026-09-09 17:19",
+ "version": 1818,
+ "updatedAt": "2026-09-09 17:24",
  "days": 30,
  "items": [
   {
@@ -2770,8 +2770,8 @@ window.MENU_REQUESTS = {
    ],
    "datt": [],
    "replies": [],
-   "rc": 7,
-   "lr": "1788941971.918889",
+   "rc": 8,
+   "lr": "1788942016.597419",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
@@ -57790,29 +57790,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786350829420859"
-  },
-  {
-   "ts": "1786350205.009889",
-   "date": "2026-08-10",
-   "time": "17:23",
-   "store": "무토",
-   "biz": "2871702879",
-   "pos": "토스포스",
-   "content": "제가 메뉴넣은것들은 삭제해주세요ㅜㅜ",
-   "special": "ㅜㅜ",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "삭제되어잇음"
-   ],
-   "rc": 2,
-   "lr": "1786350782.941489",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786350205009889"
   }
  ],
  "ocr": {
