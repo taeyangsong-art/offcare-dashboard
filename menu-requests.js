@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1775,
- "updatedAt": "2026-09-09 09:37",
+ "version": 1776,
+ "updatedAt": "2026-09-09 09:44",
  "days": 30,
  "items": [
+  {
+   "ts": "1788914571.670679",
+   "date": "2026-09-09",
+   "time": "09:42",
+   "store": "동래꿀팥빵",
+   "biz": "1552701970",
+   "pos": "",
+   "content": "메뉴 이전요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "··· 동래꿀팥빵 메뉴를 > ··· 다고미고(동래꿀팥빵이 될 예정) 여기로 이전 부탁드립니다.\n\n기존 다고미고 메뉴들은 모두 삭제 부탁드려요!"
+   ],
+   "rc": 2,
+   "lr": "1788914617.631999",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788914571670679"
+  },
   {
    "ts": "1788913881.578759",
    "date": "2026-09-09",
@@ -20,12 +43,14 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1788913885.694639",
+   "replies": [
+    "동네책방 지속 탐구"
+   ],
+   "rc": 2,
+   "lr": "1788914634.402089",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788913881578759"
   },
   {
