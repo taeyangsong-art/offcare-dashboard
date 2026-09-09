@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1779,
- "updatedAt": "2026-09-09 09:56",
+ "version": 1780,
+ "updatedAt": "2026-09-09 10:08",
  "days": 30,
  "items": [
   {
@@ -58042,27 +58042,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786325839038889"
-  },
-  {
-   "ts": "1786324009.713429",
-   "date": "2026-08-10",
-   "time": "10:06",
-   "store": "청춘감성 쌀 핫도그 부산 동삼점",
-   "biz": "1025400463",
-   "pos": "",
-   "content": "메뉴등록요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1786324303.901269",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786324009713429"
   }
  ],
  "ocr": {
