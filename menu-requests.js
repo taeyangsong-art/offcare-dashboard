@@ -661,8 +661,7 @@ window.MENU_REQUESTS = {
      "name": "Screenshot_20260909_132048.jpg",
      "fid": "F0C0K5MLKTK",
      "from": "댓글",
-     "path": "menu-files/1788921298_650129-5.jpg",
-     "nj": 1
+     "path": "menu-files/1788921298_650129-5.jpg"
     },
     {
      "name": "Screenshot_20260909_132127.jpg",
