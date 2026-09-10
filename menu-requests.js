@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1902,
- "updatedAt": "2026-09-10 17:20",
+ "version": 1903,
+ "updatedAt": "2026-09-10 17:34",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxMF8xNjIwND",
      "fid": "F0C1P8GQR5W",
      "from": "댓글",
-     "path": "menu-files/1789027503_750099-0.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -101,13 +100,13 @@ window.MENU_REQUESTS = {
        "name": "활어물회-대",
        "price": 63000
       }
-     ]
+     ],
+     "path": "menu-files/1789027503_750099-0.jpeg"
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxMF8xNjIwNT",
      "fid": "F0C0US70118",
      "from": "댓글",
-     "path": "menu-files/1789027503_750099-1.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -170,13 +169,13 @@ window.MENU_REQUESTS = {
        "name": "대방어+도다리세꼬시 중",
        "price": 92000
       }
-     ]
+     ],
+     "path": "menu-files/1789027503_750099-1.jpeg"
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxMF8xNjIwNT",
      "fid": "F0C0US6T5PC",
      "from": "댓글",
-     "path": "menu-files/1789027503_750099-2.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -244,13 +243,13 @@ window.MENU_REQUESTS = {
        "name": "세가지모듬회(특대)",
        "price": 80000
       }
-     ]
+     ],
+     "path": "menu-files/1789027503_750099-2.jpeg"
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxMF8xNjIxMD",
      "fid": "F0C0US7SXCJ",
      "from": "댓글",
-     "path": "menu-files/1789027503_750099-3.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -333,13 +332,13 @@ window.MENU_REQUESTS = {
        "name": "도미모듬회-특대",
        "price": 92000
       }
-     ]
+     ],
+     "path": "menu-files/1789027503_750099-3.jpeg"
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxMF8xNjIxMD",
      "fid": "F0C0NLFGJBD",
      "from": "댓글",
-     "path": "menu-files/1789027503_750099-4.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -417,13 +416,13 @@ window.MENU_REQUESTS = {
        "name": "매운탕",
        "price": 5000
       }
-     ]
+     ],
+     "path": "menu-files/1789027503_750099-4.jpeg"
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxMF8xNjIxMT",
      "fid": "F0C0QBJJNH3",
      "from": "댓글",
-     "path": "menu-files/1789027503_750099-5.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -496,7 +495,8 @@ window.MENU_REQUESTS = {
        "name": "광+우+보리숭어-특대",
        "price": 64000
       }
-     ]
+     ],
+     "path": "menu-files/1789027503_750099-5.jpeg"
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxMF8xNjIxMT",
@@ -761,12 +761,14 @@ window.MENU_REQUESTS = {
     }
    ],
    "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1789028244.536279",
+   "replies": [
+    "AI로 넣엇더니 엉망진창 리셋"
+   ],
+   "rc": 3,
+   "lr": "1789029257.935969",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789027503750099"
   },
   {
