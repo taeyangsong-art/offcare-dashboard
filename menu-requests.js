@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1916,
- "updatedAt": "2026-09-10 22:58",
+ "version": 1917,
+ "updatedAt": "2026-09-10 23:16",
  "days": 30,
  "items": [
   {
@@ -26,44 +26,14 @@ window.MENU_REQUESTS = {
      "kind": "product_photo",
      "menu": [],
      "path": "menu-files/1789042938_104239-0.png"
-    },
-    {
-     "name": "image.png",
-     "fid": "F0C0FB7PSP9",
-     "from": "댓글",
-     "path": "menu-files/1789042938_104239-1.png",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "추천메뉴",
-       "name": "음료 증정",
-       "price": 0
-      },
-      {
-       "category": "추천메뉴",
-       "name": "아메리카노",
-       "price": 4000
-      },
-      {
-       "category": "추천메뉴",
-       "name": "돌체라떼",
-       "price": 0
-      },
-      {
-       "category": "추천메뉴",
-       "name": "아몬드크림라떼",
-       "price": 0
-      }
-     ]
     }
    ],
    "datt": [],
    "replies": [
-    "버섯크림스프",
-    "해당 경로 리뷰 이벤트 내 이미지로도 등록 부탁드리겠습니다!"
+    "버섯크림스프"
    ],
-   "rc": 3,
-   "lr": "1789043499.690929",
+   "rc": 2,
+   "lr": "1789042956.443199",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -2862,6 +2832,362 @@ window.MENU_REQUESTS = {
        "price": 0
       }
      ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0VL0UV8W",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "쉬림프 매콤로제파스타",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "쉬림프 크림파스타",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "라구파스타",
+       "price": 13500
+      },
+      {
+       "category": "",
+       "name": "돈까스커리라이스",
+       "price": 11900
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C118AJRUL",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "라구크림리조또",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "새우라이스",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "새우라이스(특)",
+       "price": 10000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C118B1AA0",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "브로스돈까스",
+       "price": 12800
+      },
+      {
+       "category": "",
+       "name": "매콤돈까스",
+       "price": 12900
+      },
+      {
+       "category": "",
+       "name": "크림돈까스",
+       "price": 13900
+      },
+      {
+       "category": "",
+       "name": "스노우치즈돈까스",
+       "price": 14900
+      },
+      {
+       "category": "",
+       "name": "스노우매콤치즈돈까스",
+       "price": 14900
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0XH1775G",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "브로스돈까스 정식 (돈까스+미니메뉴)",
+       "price": 17300
+      },
+      {
+       "category": "",
+       "name": "매콤돈까스 정식 (돈까스+미니메뉴)",
+       "price": 17400
+      },
+      {
+       "category": "",
+       "name": "크림돈까스 정식 (돈까스+미니메뉴)",
+       "price": 18400
+      },
+      {
+       "category": "",
+       "name": "매콤로제돈까스 정식 (돈까스+미니메뉴)",
+       "price": 19400
+      },
+      {
+       "category": "",
+       "name": "스노우치즈 정식 (돈까스+미니메뉴)",
+       "price": 19400
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0ZG7JMLH",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "스노우매콤치즈정식 (돈까스+미니메뉴)",
+       "price": 19400
+      },
+      {
+       "category": "",
+       "name": "브로스/매콤 정식 (돈까스+미니메뉴)",
+       "price": 17400
+      },
+      {
+       "category": "",
+       "name": "매콤/크림 정식 (돈까스+미니메뉴)",
+       "price": 18400
+      },
+      {
+       "category": "",
+       "name": "브로스/크림 정식 (돈까스+미니메뉴)",
+       "price": 18400
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0T24FT6H",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "수제치킨 샐러드",
+       "price": 7000
+      },
+      {
+       "category": "",
+       "name": "모닝빵+딸기잼",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "아보카도 코울슬로 추가",
+       "price": 1500
+      },
+      {
+       "category": "",
+       "name": "밥추가",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "케이준 감자튀김(side)",
+       "price": 4500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0G7PV879",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "소세지 (3ea)",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "새우튀김 (3ea)",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "치킨텐더 (3ea)",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "해쉬 포테이토 (3ea)",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "고구마 치즈고로케 (3ea)",
+       "price": 4500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0G7RU83Z",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "야채튀김우동+돈까스 1/2",
+       "price": 12500
+      },
+      {
+       "category": "",
+       "name": "꼬치어묵우동+돈까스 1/2",
+       "price": 12500
+      },
+      {
+       "category": "",
+       "name": "왕새우튀김우동+돈까스 1/2",
+       "price": 13500
+      },
+      {
+       "category": "",
+       "name": "왕새우/꼬치어묵우동+돈까스 1/2",
+       "price": 14500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0G7RAYR5",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "수제치킨 샐러드",
+       "price": 7000
+      },
+      {
+       "category": "",
+       "name": "모닝빵+딸기잼 추가",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "아보카도 코울슬로 추가",
+       "price": 1500
+      },
+      {
+       "category": "",
+       "name": "밥추가",
+       "price": 500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0VLJ8562",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "야채튀김 우동",
+       "price": 8500
+      },
+      {
+       "category": "",
+       "name": "왕새우튀김 우동",
+       "price": 9500
+      },
+      {
+       "category": "",
+       "name": "꼬치어묵 우동",
+       "price": 8500
+      },
+      {
+       "category": "",
+       "name": "왕새우/꼬치어묵 우동",
+       "price": 10500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0G7UJAMV",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "토핑 돈까스(브로스)",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "토핑 돈까스(매콤)",
+       "price": 4200
+      },
+      {
+       "category": "",
+       "name": "토핑 돈까스(크림)",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "토핑 돈까스(로제)",
+       "price": 4500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0VLKGJB0",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "토핑 소세지.",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "토핑 새우튀김.",
+       "price": 1500
+      },
+      {
+       "category": "",
+       "name": "토핑 치킨텐더.",
+       "price": 1500
+      },
+      {
+       "category": "",
+       "name": "토핑 감자튀김.",
+       "price": 1500
+      },
+      {
+       "category": "",
+       "name": "토핑 해쉬포테이토.",
+       "price": 1500
+      }
+     ]
     }
    ],
    "datt": [],
@@ -2869,8 +3195,8 @@ window.MENU_REQUESTS = {
     "하.... 메일로 보내주신게 그것밖에 없군요.....",
     "혹시 포스앱에 미리 만들어진 메뉴 자체도 없을까요?"
    ],
-   "rc": 10,
-   "lr": "1789048436.425779",
+   "rc": 24,
+   "lr": "1789049266.217409",
    "rfx": 3,
    "status": "done",
    "handler": "김규빈",
