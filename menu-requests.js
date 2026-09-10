@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1896,
- "updatedAt": "2026-09-10 16:37",
+ "version": 1897,
+ "updatedAt": "2026-09-10 16:50",
  "days": 30,
  "items": [
   {
@@ -1264,6 +1264,13 @@ window.MENU_REQUESTS = {
      "from": "댓글",
      "path": "menu-files/1789014523_084569-3.xlsx",
      "nj": 1
+    },
+    {
+     "name": "11.xlsx",
+     "fid": "F0C0WJY3FS5",
+     "from": "댓글",
+     "path": "menu-files/1789014523_084569-4.xlsx",
+     "nj": 1
     }
    ],
    "datt": [],
@@ -1277,8 +1284,8 @@ window.MENU_REQUESTS = {
     "왜냐면 아직 등록중이니가...",
     "ㅠㅠ"
    ],
-   "rc": 13,
-   "lr": "1789022153.933169",
+   "rc": 14,
+   "lr": "1789026606.213389",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
