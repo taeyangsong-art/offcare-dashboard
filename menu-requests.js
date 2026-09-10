@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1909,
- "updatedAt": "2026-09-10 18:24",
+ "version": 1910,
+ "updatedAt": "2026-09-10 18:35",
  "days": 30,
  "items": [
   {
@@ -2329,8 +2329,8 @@ window.MENU_REQUESTS = {
     "왜냐면 아직 등록중이니가...",
     "ㅠㅠ"
    ],
-   "rc": 15,
-   "lr": "1789029770.730969",
+   "rc": 16,
+   "lr": "1789032760.405939",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
@@ -58273,144 +58273,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786455907660869"
-  },
-  {
-   "ts": "1786440649.412099",
-   "date": "2026-08-11",
-   "time": "18:30",
-   "store": "반달커피",
-   "biz": "3022363308",
-   "pos": "",
-   "content": "메뉴 금액 수정 요청드립니다 >>",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BPASQ6XEZ",
-     "from": "댓글",
-     "path": "menu-files/1786440649_412099-0.png",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "붕어+분식+치킨",
-       "name": "닭다리3+감튀300g",
-       "price": 23800
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "후라이드순살+감튀250g",
-       "price": 22000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "매콤달콤국물떡볶이",
-       "price": 10000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "국물꾸덕로제떡볶이",
-       "price": 10000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "매콤닭다리1조각",
-       "price": 6600
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "순살후라이드6조각",
-       "price": 6600
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "감자통모짜스틱2개",
-       "price": 4600
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "감자튀김",
-       "price": 5000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "팥붕",
-       "price": 1500
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "슈붕",
-       "price": 1500
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "아붕",
-       "price": 2000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "초붕",
-       "price": 2000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "애붕",
-       "price": 2000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "피붕",
-       "price": 2000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "호떡붕",
-       "price": 2000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "고붕",
-       "price": 2000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "호팥붕",
-       "price": 2000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "고피붕",
-       "price": 2000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "옥치붕",
-       "price": 2000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "모치붕",
-       "price": 2000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "크치붕",
-       "price": 2000
-      }
-     ]
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "토스포스\n사진 상 이미지와 같이 금액 수정 요청드립니다"
-   ],
-   "rc": 3,
-   "lr": "1786454979.461009",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786440649412099"
   }
  ],
  "ocr": {
