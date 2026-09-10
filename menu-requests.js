@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1877,
- "updatedAt": "2026-09-10 13:50",
+ "version": 1878,
+ "updatedAt": "2026-09-10 13:56",
  "days": 30,
  "items": [
   {
@@ -32,16 +32,24 @@ window.MENU_REQUESTS = {
      "from": "댓글",
      "path": "menu-files/1789014523_084569-1.xlsx",
      "nj": 1
+    },
+    {
+     "name": "11.xlsx",
+     "fid": "F0C0X7P7L0L",
+     "from": "댓글",
+     "path": "menu-files/1789014523_084569-2.xlsx",
+     "nj": 1
     }
    ],
    "datt": [],
    "replies": [
     "아잇 백업을 생활화하자 :개굴-메모:",
     "원본",
-    "이게 2번 파일"
+    "이게 2번 파일",
+    "3번"
    ],
-   "rc": 4,
-   "lr": "1789015756.710739",
+   "rc": 5,
+   "lr": "1789016106.610299",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
