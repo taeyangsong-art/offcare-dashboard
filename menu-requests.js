@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1893,
- "updatedAt": "2026-09-10 16:29",
+ "version": 1894,
+ "updatedAt": "2026-09-10 16:30",
  "days": 30,
  "items": [
   {
@@ -763,8 +763,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "님, 해당 매장 킴스 패밀리 [티오더 사용]에서 변경하는 매장입니다!"
    ],
-   "rc": 2,
-   "lr": "1789025330.579539",
+   "rc": 3,
+   "lr": "1789025373.578349",
    "rfx": 3,
    "status": "confirm",
    "handler": "김규빈",
