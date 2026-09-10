@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1888,
- "updatedAt": "2026-09-10 15:53",
+ "version": 1889,
+ "updatedAt": "2026-09-10 15:58",
  "days": 30,
  "items": [
   {
@@ -18,11 +18,237 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "KakaoTalk_20260910_154503495.jpg",
+     "fid": "F0C0SAQARK8",
+     "from": "댓글",
+     "path": "menu-files/1789023228_140969-0.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "Espresso",
+       "name": "에스프레소",
+       "price": 5500
+      },
+      {
+       "category": "Espresso",
+       "name": "롱블랙",
+       "price": 5500
+      },
+      {
+       "category": "Espresso",
+       "name": "아메리카노",
+       "price": 5500
+      },
+      {
+       "category": "Espresso",
+       "name": "플랫화이트",
+       "price": 6000
+      },
+      {
+       "category": "Espresso",
+       "name": "카페라테",
+       "price": 6000
+      },
+      {
+       "category": "Espresso",
+       "name": "콤보 메뉴",
+       "price": 9000
+      },
+      {
+       "category": "Espresso",
+       "name": "수제 바닐라 라떼",
+       "price": 6500
+      },
+      {
+       "category": "Espresso",
+       "name": "크림 바닐라 라떼 (only iced)",
+       "price": 6800
+      },
+      {
+       "category": "Espresso",
+       "name": "아포가토",
+       "price": 7500
+      },
+      {
+       "category": "Espresso",
+       "name": "아인슈페너 (only iced)",
+       "price": 6500
+      },
+      {
+       "category": "Espresso",
+       "name": "에스프레소 토닉",
+       "price": 7000
+      }
+     ]
+    },
+    {
+     "name": "KakaoTalk_20260910_154503495_01.jpg",
+     "fid": "F0C0SARGM70",
+     "from": "댓글",
+     "path": "menu-files/1789023228_140969-1.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "Beans",
+       "name": "리볼브 블렌드",
+       "price": 0
+      },
+      {
+       "category": "Beans",
+       "name": "낙성대 블렌드",
+       "price": 0
+      },
+      {
+       "category": "Beans",
+       "name": "에티오피아 구지 부쿠 사이사 내추럴",
+       "price": 0
+      },
+      {
+       "category": "Beans",
+       "name": "콜롬비아 엑셀소 디카페인",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "KakaoTalk_20260910_154503495_02.jpg",
+     "fid": "F0C0CTG2EK1",
+     "from": "댓글",
+     "path": "menu-files/1789023228_140969-2.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "Light Roast",
+       "name": "에티오피아 구지 부쿠 사이사 내추럴",
+       "price": 6500
+      },
+      {
+       "category": "Light Roast",
+       "name": "에티오피안 플라워 블렌드",
+       "price": 7000
+      },
+      {
+       "category": "Light Roast",
+       "name": "봄방학 블렌드",
+       "price": 7000
+      },
+      {
+       "category": "Light Roast",
+       "name": "콜롬비아 후일라 루시타니아 #2 by 구스타보 피게로아 워시드",
+       "price": 7000
+      },
+      {
+       "category": "Light Roast",
+       "name": "케냐 무티투 AA 워시드",
+       "price": 7000
+      },
+      {
+       "category": "Light Roast",
+       "name": "볼리비아 아이마리타 게이샤 워시드",
+       "price": 9000
+      },
+      {
+       "category": "Light Roast",
+       "name": "페루 아마조나스 산타 테레사 게이샤 내추럴",
+       "price": 9000
+      },
+      {
+       "category": "Medium Light Roast",
+       "name": "럼 동 블렌드",
+       "price": 7000
+      }
+     ]
+    },
+    {
+     "name": "KakaoTalk_20260910_154503495_03.jpg",
+     "fid": "F0C0PNJ7P4M",
+     "from": "댓글",
+     "path": "menu-files/1789023228_140969-3.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "Non coffee",
+       "name": "이른 봄 쑥차(논카페인)",
+       "price": 7000
+      },
+      {
+       "category": "Non coffee",
+       "name": "호박차(논카페인)",
+       "price": 7000
+      },
+      {
+       "category": "Non coffee",
+       "name": "목련 현미 녹차",
+       "price": 7000
+      },
+      {
+       "category": "Non coffee",
+       "name": "보성 말차 라떼",
+       "price": 7000
+      },
+      {
+       "category": "Non coffee",
+       "name": "하동 쑥 라떼(논카페인)",
+       "price": 7000
+      },
+      {
+       "category": "Non coffee",
+       "name": "애플 시나몬 에이드",
+       "price": 7000
+      },
+      {
+       "category": "Non coffee",
+       "name": "감귤 주스 100%",
+       "price": 7000
+      }
+     ]
+    },
+    {
+     "name": "KakaoTalk_20260910_154503495_04.jpg",
+     "fid": "F0C0SATKA5C",
+     "from": "댓글",
+     "path": "menu-files/1789023228_140969-4.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "Dessert",
+       "name": "밀크롤",
+       "price": 6500
+      },
+      {
+       "category": "Dessert",
+       "name": "말차롤",
+       "price": 7000
+      },
+      {
+       "category": "Dessert",
+       "name": "라즈베리롤(with. 피스타치오크림)",
+       "price": 7500
+      },
+      {
+       "category": "Dessert",
+       "name": "레몬 가또",
+       "price": 7500
+      },
+      {
+       "category": "Dessert",
+       "name": "바스크 치즈케이크",
+       "price": 7000
+      },
+      {
+       "category": "Dessert",
+       "name": "빅토리아케이크",
+       "price": 7500
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [],
-   "rc": 0,
-   "lr": "",
+   "rc": 2,
+   "lr": "1789023272.806279",
    "rfx": 3,
    "status": "wait",
    "handler": null,
