@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1872,
- "updatedAt": "2026-09-10 12:47",
+ "version": 1873,
+ "updatedAt": "2026-09-10 12:48",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C0NMG60VB",
      "from": "댓글",
-     "path": "menu-files/1789011717_637199-0.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -51,7 +50,8 @@ window.MENU_REQUESTS = {
        "name": "제육볶음 2인분",
        "price": 20000
       }
-     ]
+     ],
+     "path": "menu-files/1789011717_637199-0.png"
     }
    ],
    "datt": [],
@@ -59,10 +59,10 @@ window.MENU_REQUESTS = {
     "FD 포스\n추가 이후 솔라피 발송 부탁 드립니다..! :꾸벅:",
     "그때 규빈님이 등록 해 드렸었는데 없다고 하셔서.. :당황소율:"
    ],
-   "rc": 3,
-   "lr": "1789012044.885589",
+   "rc": 4,
+   "lr": "1789012100.429519",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789011717637199"
   },
