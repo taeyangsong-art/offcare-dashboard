@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1853,
- "updatedAt": "2026-09-10 09:24",
+ "version": 1854,
+ "updatedAt": "2026-09-10 09:36",
  "days": 30,
  "items": [
   {
@@ -45,7 +45,7 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1788998297.430589",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788998293267309"
   },
@@ -1934,10 +1934,11 @@ window.MENU_REQUESTS = {
     "특별메뉴 - 과자 부분 지워달라고 하셨습니다 !",
     "특별메뉴에 과자는 없는데....?",
     "오잉 ..? 없으면 그냥 뺴ㅐ주셔요 ..! ㅎㅎ",
-    "kcl4223 / *[U80778]*"
+    "kcl4223 / *[U80778]*",
+    "완료"
    ],
-   "rc": 6,
-   "lr": "1788999601.023179",
+   "rc": 7,
+   "lr": "1789000419.952259",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
