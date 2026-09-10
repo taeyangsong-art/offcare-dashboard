@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1906,
- "updatedAt": "2026-09-10 17:52",
+ "version": 1907,
+ "updatedAt": "2026-09-10 17:55",
  "days": 30,
  "items": [
   {
@@ -175,7 +175,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C0DPLP7E3",
      "from": "댓글",
-     "path": "menu-files/1789029867_852419-4.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -218,13 +217,13 @@ window.MENU_REQUESTS = {
        "name": "백김치",
        "price": 5000
       }
-     ]
+     ],
+     "path": "menu-files/1789029867_852419-4.png"
     },
     {
      "name": "image.png",
      "fid": "F0C0X2ZQXQR",
      "from": "댓글",
-     "path": "menu-files/1789029867_852419-5.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -262,7 +261,8 @@ window.MENU_REQUESTS = {
        "name": "고추",
        "price": 1000
       }
-     ]
+     ],
+     "path": "menu-files/1789029867_852419-5.png"
     }
    ],
    "datt": [],
@@ -274,10 +274,10 @@ window.MENU_REQUESTS = {
     "• 카테고리: 사이드",
     "ㅠㅠ 너무 죄송하고 감사합니다!"
    ],
-   "rc": 9,
-   "lr": "1789030205.166639",
+   "rc": 10,
+   "lr": "1789030481.292709",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789029867852419"
   },
