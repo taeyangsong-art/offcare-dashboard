@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1885,
- "updatedAt": "2026-09-10 15:32",
+ "version": 1886,
+ "updatedAt": "2026-09-10 15:38",
  "days": 30,
  "items": [
   {
@@ -18,11 +18,343 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C0PJ7353P",
+     "from": "댓글",
+     "path": "menu-files/1789021864_475179-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "광어회 전용",
+       "name": "광어회 홀전용(2~3인)",
+       "price": 79000
+      },
+      {
+       "category": "광어회 전용",
+       "name": "광어회알뜰SET",
+       "price": 119000
+      },
+      {
+       "category": "광어회 전용",
+       "name": "광어회포장전용(2~3인)",
+       "price": 65000
+      },
+      {
+       "category": "광어회 전용",
+       "name": "포장",
+       "price": 0
+      },
+      {
+       "category": "광어회 전용",
+       "name": "광어회양양서핑SET",
+       "price": 159000
+      },
+      {
+       "category": "광어회 전용",
+       "name": "광어회&대게파티SET",
+       "price": 319000
+      },
+      {
+       "category": "광어회 전용",
+       "name": "네이버결제완료",
+       "price": 0
+      },
+      {
+       "category": "광어회 전용",
+       "name": "*치즈가리비*",
+       "price": 0
+      },
+      {
+       "category": "광어회 전용",
+       "name": "체험단",
+       "price": 0
+      },
+      {
+       "category": "광어회 전용",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "광어회 전용",
+       "name": "세트라면",
+       "price": 0
+      },
+      {
+       "category": "광어회 전용",
+       "name": "게딱지밥",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0S6PQ6ES",
+     "from": "댓글",
+     "path": "menu-files/1789021864_475179-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "대게 전용",
+       "name": "대게단품 (대게+게딱지밥)",
+       "price": 110000
+      },
+      {
+       "category": "대게 전용",
+       "name": "대게알뜰SET",
+       "price": 145000
+      },
+      {
+       "category": "대게 전용",
+       "name": "대게양양서핑SET",
+       "price": 185000
+      },
+      {
+       "category": "대게 전용",
+       "name": "대게양리단길SET",
+       "price": 319000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0W2T2K7T",
+     "from": "댓글",
+     "path": "menu-files/1789021864_475179-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "해산물&가리비",
+       "name": "-해산물모듬",
+       "price": 49000
+      },
+      {
+       "category": "해산물&가리비",
+       "name": "-해산물모듬 스페셜",
+       "price": 79000
+      },
+      {
+       "category": "해산물&가리비",
+       "name": "가리비 회",
+       "price": 49000
+      },
+      {
+       "category": "해산물&가리비",
+       "name": "가리비치즈찜",
+       "price": 54000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0XQFEB6Y",
+     "from": "댓글",
+     "path": "menu-files/1789021864_475179-3.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "전복버터구이",
+       "price": 38000
+      },
+      {
+       "category": "",
+       "name": "해산물물회",
+       "price": 35000
+      },
+      {
+       "category": "",
+       "name": "가자미물회",
+       "price": 30000
+      },
+      {
+       "category": "",
+       "name": "백골뱅이탕",
+       "price": 35000
+      },
+      {
+       "category": "",
+       "name": "조개탕",
+       "price": 25000
+      },
+      {
+       "category": "",
+       "name": "생합탕",
+       "price": 25000
+      },
+      {
+       "category": "",
+       "name": "-전복한접시",
+       "price": 30000
+      },
+      {
+       "category": "",
+       "name": "-멍게한접시",
+       "price": 30000
+      },
+      {
+       "category": "",
+       "name": "해물떡볶이",
+       "price": 28000
+      },
+      {
+       "category": "",
+       "name": "통오징어튀김",
+       "price": 25000
+      },
+      {
+       "category": "",
+       "name": "왕새우튀김",
+       "price": 23000
+      },
+      {
+       "category": "",
+       "name": "옛날돈가스",
+       "price": 23000
+      },
+      {
+       "category": "",
+       "name": "닭강정",
+       "price": 23000
+      },
+      {
+       "category": "",
+       "name": "해물라면",
+       "price": 11000
+      },
+      {
+       "category": "",
+       "name": "공기밥",
+       "price": 1000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0CPGGZ0F",
+     "from": "댓글",
+     "path": "menu-files/1789021864_475179-4.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류&음료",
+       "name": "생맥주",
+       "price": 3500
+      },
+      {
+       "category": "주류&음료",
+       "name": "참이슬",
+       "price": 6000
+      },
+      {
+       "category": "주류&음료",
+       "name": "진로",
+       "price": 6000
+      },
+      {
+       "category": "주류&음료",
+       "name": "켈리",
+       "price": 6000
+      },
+      {
+       "category": "주류&음료",
+       "name": "테라",
+       "price": 6000
+      },
+      {
+       "category": "주류&음료",
+       "name": "매화수",
+       "price": 7000
+      },
+      {
+       "category": "주류&음료",
+       "name": "청하",
+       "price": 7000
+      },
+      {
+       "category": "주류&음료",
+       "name": "별빛청하",
+       "price": 8000
+      },
+      {
+       "category": "주류&음료",
+       "name": "코카콜라",
+       "price": 2000
+      },
+      {
+       "category": "주류&음료",
+       "name": "코카콜라제로",
+       "price": 2000
+      },
+      {
+       "category": "주류&음료",
+       "name": "스프라이트",
+       "price": 2000
+      },
+      {
+       "category": "주류&음료",
+       "name": "탐스(파인)",
+       "price": 2000
+      },
+      {
+       "category": "주류&음료",
+       "name": "포장 1리터 생맥주",
+       "price": 10000
+      },
+      {
+       "category": "주류&음료",
+       "name": "코코넛레몬사워500",
+       "price": 9900
+      },
+      {
+       "category": "주류&음료",
+       "name": "코코넛레몬사워1000",
+       "price": 14900
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0U3T49PU",
+     "from": "댓글",
+     "path": "menu-files/1789021864_475179-5.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "가격인상 대게품목",
+       "name": "*대게단품",
+       "price": 140000
+      },
+      {
+       "category": "가격인상 대게품목",
+       "name": "**대게알뜰SET",
+       "price": 165000
+      },
+      {
+       "category": "가격인상 대게품목",
+       "name": "**대게양양서핑SET",
+       "price": 205000
+      },
+      {
+       "category": "가격인상 대게품목",
+       "name": "**대게양리단길SET",
+       "price": 339000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0MTG0XC3",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": []
+    }
+   ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1789021867.641659",
+   "rc": 3,
+   "lr": "1789022000.728579",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -551,10 +883,13 @@ window.MENU_REQUESTS = {
     "원본",
     "이게 2번 파일",
     "3번",
-    "4번"
+    "4번",
+    "안넝하세요 선유님! 해당매장 바코드 등록해주신 것 확인해서 스캐너로 인식했을때 등록되지 않은 상품이라고 뜬다고 하셔가지구 확인부탁드려도 될까요!!:pray:",
+    "왜냐면 아직 등록중이니가...",
+    "ㅠㅠ"
    ],
-   "rc": 6,
-   "lr": "1789021443.206389",
+   "rc": 13,
+   "lr": "1789022153.933169",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
