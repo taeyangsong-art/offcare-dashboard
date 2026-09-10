@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1901,
- "updatedAt": "2026-09-10 17:05",
+ "version": 1902,
+ "updatedAt": "2026-09-10 17:20",
  "days": 30,
  "items": [
   {
@@ -18,11 +18,752 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxMF8xNjIwND",
+     "fid": "F0C1P8GQR5W",
+     "from": "댓글",
+     "path": "menu-files/1789027503_750099-0.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "회/대방어",
+       "name": "광어회-중",
+       "price": 53000
+      },
+      {
+       "category": "회/대방어",
+       "name": "광어회-대",
+       "price": 68000
+      },
+      {
+       "category": "회/대방어",
+       "name": "광어회--특대",
+       "price": 80000
+      },
+      {
+       "category": "회/대방어",
+       "name": "도다리회-중",
+       "price": 55000
+      },
+      {
+       "category": "회/대방어",
+       "name": "도다리회-대",
+       "price": 70000
+      },
+      {
+       "category": "회/대방어",
+       "name": "도다리회-특대",
+       "price": 82000
+      },
+      {
+       "category": "회/대방어",
+       "name": "대방어-소",
+       "price": 55000
+      },
+      {
+       "category": "회/대방어",
+       "name": "대방어-중",
+       "price": 75000
+      },
+      {
+       "category": "회/대방어",
+       "name": "대방어-대",
+       "price": 95000
+      },
+      {
+       "category": "회/대방어",
+       "name": "대방어-특대",
+       "price": 115000
+      },
+      {
+       "category": "회/대방어",
+       "name": "우럭(중)",
+       "price": 55000
+      },
+      {
+       "category": "회/대방어",
+       "name": "우럭(대)",
+       "price": 82000
+      },
+      {
+       "category": "회/대방어",
+       "name": "활어물회-소",
+       "price": 33000
+      },
+      {
+       "category": "회/대방어",
+       "name": "활어물회-중",
+       "price": 48000
+      },
+      {
+       "category": "회/대방어",
+       "name": "활어물회-대",
+       "price": 63000
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxMF8xNjIwNT",
+     "fid": "F0C0US70118",
+     "from": "댓글",
+     "path": "menu-files/1789027503_750099-1.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "대방어+광어 특소",
+       "price": 52000
+      },
+      {
+       "category": "",
+       "name": "대방어+참돔 특소",
+       "price": 52000
+      },
+      {
+       "category": "",
+       "name": "대방어+광어 중",
+       "price": 72000
+      },
+      {
+       "category": "",
+       "name": "대방어+참돔 중",
+       "price": 72000
+      },
+      {
+       "category": "",
+       "name": "대방어+참돔+광어 중",
+       "price": 72000
+      },
+      {
+       "category": "",
+       "name": "대방어+광어 특대",
+       "price": 112000
+      },
+      {
+       "category": "",
+       "name": "대방어+참돔 특대",
+       "price": 112000
+      },
+      {
+       "category": "",
+       "name": "대방어+도다리 회 중",
+       "price": 72000
+      },
+      {
+       "category": "",
+       "name": "대방어+도다리회 대",
+       "price": 92000
+      },
+      {
+       "category": "",
+       "name": "대방어+도다리회+특대",
+       "price": 112000
+      },
+      {
+       "category": "",
+       "name": "대방어+도다리세꼬시 소",
+       "price": 72000
+      },
+      {
+       "category": "",
+       "name": "대방어+도다리세꼬시 중",
+       "price": 92000
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxMF8xNjIwNT",
+     "fid": "F0C0US6T5PC",
+     "from": "댓글",
+     "path": "menu-files/1789027503_750099-2.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "광어+우럭(중)",
+       "price": 53000
+      },
+      {
+       "category": "",
+       "name": "광어+우럭(대)",
+       "price": 66000
+      },
+      {
+       "category": "",
+       "name": "광어+우럭-특대",
+       "price": 80000
+      },
+      {
+       "category": "",
+       "name": "활 살 세가지-중",
+       "price": 53000
+      },
+      {
+       "category": "",
+       "name": "광어+도다리회(중)",
+       "price": 55000
+      },
+      {
+       "category": "",
+       "name": "광어+도다리회(대)",
+       "price": 70000
+      },
+      {
+       "category": "",
+       "name": "광어+도다리회-특대",
+       "price": 80000
+      },
+      {
+       "category": "",
+       "name": "우럭+도다리회(중)",
+       "price": 55000
+      },
+      {
+       "category": "",
+       "name": "우럭+도다리회(대)",
+       "price": 70000
+      },
+      {
+       "category": "",
+       "name": "세가지모듬회-소",
+       "price": 38000
+      },
+      {
+       "category": "",
+       "name": "세가지모듬회(중)",
+       "price": 53000
+      },
+      {
+       "category": "",
+       "name": "세가지모듬회(대)",
+       "price": 68000
+      },
+      {
+       "category": "",
+       "name": "세가지모듬회(특대)",
+       "price": 80000
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxMF8xNjIxMD",
+     "fid": "F0C0US7SXCJ",
+     "from": "댓글",
+     "path": "menu-files/1789027503_750099-3.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "서꼬시/참돔",
+       "name": "참돔+광어-소",
+       "price": 43000
+      },
+      {
+       "category": "서꼬시/참돔",
+       "name": "참돔+광어-중",
+       "price": 58000
+      },
+      {
+       "category": "서꼬시/참돔",
+       "name": "참돔+광어-대",
+       "price": 78000
+      },
+      {
+       "category": "서꼬시/참돔",
+       "name": "참돔+광어-특대",
+       "price": 93000
+      },
+      {
+       "category": "서꼬시/참돔",
+       "name": "참돔+도다리회-중",
+       "price": 58000
+      },
+      {
+       "category": "서꼬시/참돔",
+       "name": "참돔+도다리회-대",
+       "price": 78000
+      },
+      {
+       "category": "서꼬시/참돔",
+       "name": "참돔+도다리회-특대",
+       "price": 93000
+      },
+      {
+       "category": "서꼬시/참돔",
+       "name": "참돔+도다리 세꼬시-중",
+       "price": 58000
+      },
+      {
+       "category": "서꼬시/참돔",
+       "name": "참돔+도다리 세꼬시-대",
+       "price": 78000
+      },
+      {
+       "category": "서꼬시/참돔",
+       "name": "참돔+도다리 세꼬시-특대",
+       "price": 93000
+      },
+      {
+       "category": "서꼬시/참돔",
+       "name": "참돔회+우럭-중",
+       "price": 58000
+      },
+      {
+       "category": "서꼬시/참돔",
+       "name": "참돔+우럭회-대",
+       "price": 78000
+      },
+      {
+       "category": "서꼬시/참돔",
+       "name": "참돔+우럭회-특대",
+       "price": 93000
+      },
+      {
+       "category": "서꼬시/참돔",
+       "name": "도미모듬회-중",
+       "price": 57000
+      },
+      {
+       "category": "서꼬시/참돔",
+       "name": "도미모듬회-대",
+       "price": 77000
+      },
+      {
+       "category": "서꼬시/참돔",
+       "name": "도미모듬회-특대",
+       "price": 92000
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxMF8xNjIxMD",
+     "fid": "F0C0NLFGJBD",
+     "from": "댓글",
+     "path": "menu-files/1789027503_750099-4.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어-소",
+       "price": 35000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어-중",
+       "price": 50000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어-대",
+       "price": 65000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어-특대",
+       "price": 77000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "광어+숭어",
+       "price": 35000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어+광어회-중",
+       "price": 55000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어+광어회-대",
+       "price": 70000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어+광어회-특대",
+       "price": 85000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어+도다리회-중",
+       "price": 55000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어+도다리회-대",
+       "price": 68000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어+도다리회-특대",
+       "price": 83000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어+우럭회-중",
+       "price": 53000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어+우럭회-대",
+       "price": 68000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어+우럭회-특대",
+       "price": 83000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "매운탕",
+       "price": 5000
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxMF8xNjIxMT",
+     "fid": "F0C0QBJJNH3",
+     "from": "댓글",
+     "path": "menu-files/1789027503_750099-5.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어+광어회-소",
+       "price": 39000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어+광어회-중",
+       "price": 56000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어+광어회-대",
+       "price": 65000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어+광어회-특대",
+       "price": 77000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어+도다리회-중",
+       "price": 53000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어+도다리회-대",
+       "price": 68000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어+도다리회-특대",
+       "price": 83000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어회+무럭-소",
+       "price": 31000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어+우럭회-중",
+       "price": 53000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어+우럭회-대",
+       "price": 68000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "보리숭어+우럭-특대",
+       "price": 83000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "광+우+보리숭어-중",
+       "price": 42000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "광+우+보리숭어-대",
+       "price": 53000
+      },
+      {
+       "category": "탈/보리숭어",
+       "name": "광+우+보리숭어-특대",
+       "price": 64000
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxMF8xNjIxMT",
+     "fid": "F0C0US8B90A",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "회/대방어/물회",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "기본세트메뉴",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "세꼬시/찰돔",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "탕/보리술어",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "해산물/리뷰이벤트",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "사이드메뉴",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "광어회덮밥",
+       "price": 12000
+      },
+      {
+       "category": "",
+       "name": "멍게회덮밥",
+       "price": 12000
+      },
+      {
+       "category": "",
+       "name": "멍게",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "초대리밥",
+       "price": 1500
+      },
+      {
+       "category": "",
+       "name": "라면 사리",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "수제비사리",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "쌤와사비",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "양파슬라이스(드레싱)",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "김치전 추가",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "날치알주먹",
+       "price": 3900
+      },
+      {
+       "category": "",
+       "name": "김치사왈면",
+       "price": 2500
+      },
+      {
+       "category": "",
+       "name": "통기",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "소면사리추가",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "묵은지추가",
+       "price": 1500
+      },
+      {
+       "category": "",
+       "name": "무순추가",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "김추가",
+       "price": 400
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxMF8xNjIxMz",
+     "fid": "F0C0SV94XPY",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "멍게",
+       "price": 17000
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "개불",
+       "price": 20000
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "가리비",
+       "price": 23000
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "산낙지",
+       "price": 25000
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "해삼",
+       "price": 25000
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "전복",
+       "price": 25000
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "해물모듬",
+       "price": 38000
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "낙지1마리",
+       "price": 11500
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "소라찜-소",
+       "price": 27000
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "소라찜-중",
+       "price": 37000
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "해삼+멍게",
+       "price": 23000
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "전복3마리",
+       "price": 15000
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "전복+멍게",
+       "price": 23000
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "해물모듬",
+       "price": 45000
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "배달비",
+       "price": 4000
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "리뷰이벤트 1번 날치알 주먹밥 4개",
+       "price": 0
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "리뷰이벤트 2번 찐새우 4마리",
+       "price": 0
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "리뷰이벤트 3번 초대리밥",
+       "price": 0
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "리뷰이벤트 4번 스프라이트",
+       "price": 0
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "리뷰이벤트 5번 소주",
+       "price": 0
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "리뷰이벤트 6번 김치전",
+       "price": 0
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "리뷰이벤트 6번 석화2개",
+       "price": 0
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "★ 고등어구이 빼기 ★",
+       "price": 0
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "회 밑야채 빼세요!!!!",
+       "price": 0
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "석화 1접시",
+       "price": 17000
+      },
+      {
+       "category": "해산물/리뷰이벤트",
+       "name": "석화-중",
+       "price": 27000
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1789027507.114669",
+   "rc": 2,
+   "lr": "1789028244.536279",
    "rfx": 3,
    "status": "wait",
    "handler": null,
