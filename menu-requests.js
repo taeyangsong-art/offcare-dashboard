@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1913,
- "updatedAt": "2026-09-10 21:31",
+ "version": 1914,
+ "updatedAt": "2026-09-10 21:32",
  "days": 30,
  "items": [
   {
@@ -23,17 +23,47 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C10A2BPLL",
      "from": "댓글",
-     "path": "menu-files/1789042938_104239-0.png",
      "kind": "product_photo",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1789042938_104239-0.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0FB7PSP9",
+     "from": "댓글",
+     "path": "menu-files/1789042938_104239-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "추천메뉴",
+       "name": "음료 증정",
+       "price": 0
+      },
+      {
+       "category": "추천메뉴",
+       "name": "아메리카노",
+       "price": 4000
+      },
+      {
+       "category": "추천메뉴",
+       "name": "돌체라떼",
+       "price": 0
+      },
+      {
+       "category": "추천메뉴",
+       "name": "아몬드크림라떼",
+       "price": 0
+      }
+     ]
     }
    ],
    "datt": [],
    "replies": [
-    "버섯크림스프"
+    "버섯크림스프",
+    "해당 경로 리뷰 이벤트 내 이미지로도 등록 부탁드리겠습니다!"
    ],
-   "rc": 2,
-   "lr": "1789042956.443199",
+   "rc": 3,
+   "lr": "1789043499.690929",
    "rfx": 3,
    "status": "wait",
    "handler": null,
