@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1873,
- "updatedAt": "2026-09-10 12:48",
+ "version": 1874,
+ "updatedAt": "2026-09-10 13:15",
  "days": 30,
  "items": [
   {
@@ -56573,27 +56573,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786422980960799"
-  },
-  {
-   "ts": "1786421717.744599",
-   "date": "2026-08-11",
-   "time": "13:15",
-   "store": "컵넛 강릉점",
-   "biz": "4480803485",
-   "pos": "",
-   "content": "컵넛 마산해양공원점(사업자 번호: <tel:···|···>)과 옵션까지 똑같이 부탁드립니다! (복제하면 옵션도 따라가지요??ㅎㅎ)\n복제로 진행할 경우, 대시보드 연결 부탁드립니다! (컵넛(CUPNUPT)입니다)",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1786424584.960339",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786421717744599"
   }
  ],
  "ocr": {
