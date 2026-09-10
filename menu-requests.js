@@ -3,10 +3,42 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1911,
- "updatedAt": "2026-09-10 19:05",
+ "version": 1912,
+ "updatedAt": "2026-09-10 21:23",
  "days": 30,
  "items": [
+  {
+   "ts": "1789042938.104239",
+   "date": "2026-09-10",
+   "time": "21:22",
+   "store": "밀라노키친",
+   "biz": "8270703264",
+   "pos": "퍼스트포스",
+   "content": "메뉴 이미지 등록 요청 >>",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C10A2BPLL",
+     "from": "댓글",
+     "path": "menu-files/1789042938_104239-0.png",
+     "kind": "product_photo",
+     "menu": []
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "버섯크림스프"
+   ],
+   "rc": 2,
+   "lr": "1789042956.443199",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789042938104239"
+  },
   {
    "ts": "1789030101.485939",
    "date": "2026-09-10",
