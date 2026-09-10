@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1876,
- "updatedAt": "2026-09-10 13:45",
+ "version": 1877,
+ "updatedAt": "2026-09-10 13:50",
  "days": 30,
  "items": [
   {
@@ -18,11 +18,30 @@ window.MENU_REQUESTS = {
    "special": "<mailto:···|···> 메일로 보냈습니다",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "하이체리_매장_메뉴리스트_01_20260910132539.xlsx.exs",
+     "fid": "F0C0TFLLQ1G",
+     "from": "댓글",
+     "path": "menu-files/1789014523_084569-0.exs",
+     "nj": 1
+    },
+    {
+     "name": "11.xlsx",
+     "fid": "F0C0RJQ0XJS",
+     "from": "댓글",
+     "path": "menu-files/1789014523_084569-1.xlsx",
+     "nj": 1
+    }
+   ],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1789014526.788719",
+   "replies": [
+    "아잇 백업을 생활화하자 :개굴-메모:",
+    "원본",
+    "이게 2번 파일"
+   ],
+   "rc": 4,
+   "lr": "1789015756.710739",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
@@ -56341,238 +56360,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786424668670299"
-  },
-  {
-   "ts": "1786423674.596459",
-   "date": "2026-08-11",
-   "time": "13:47",
-   "store": "반달커피",
-   "biz": "3022363308",
-   "pos": "토스포스",
-   "content": "토스포스/ 메뉴 일부 등록 누락되어 등록 요청드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BPCR9SHUJ",
-     "from": "댓글",
-     "path": "menu-files/1786423674_596459-1.png",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "붕어+분식+치킨",
-       "name": "닭다리3+감튀300g",
-       "price": 23800
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "후라이드순살+감튀250g",
-       "price": 22000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "매콤달콤국물떡볶이",
-       "price": 10000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "국물꾸덕로제떡볶이",
-       "price": 10000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "매콤닭다리1조각",
-       "price": 6600
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "순살후라이드6조각",
-       "price": 6600
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "감자통모짜스틱2개",
-       "price": 4600
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "감자튀김",
-       "price": 5000
-      }
-     ]
-    },
-    {
-     "name": "image.png",
-     "fid": "F0BPGJW9R28",
-     "from": "댓글",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "붕어+분식+치킨",
-       "name": "닭다리3+김밥300g",
-       "price": 23800
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "후라이드순살+김투250g",
-       "price": 22000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "매콤달콤국물떡볶이",
-       "price": 10000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "국물꾸덕로제떡볶이",
-       "price": 10000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "매콤닭다리1조각",
-       "price": 6600
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "순살후라이드6조각",
-       "price": 6600
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "감자통핫스틱2개",
-       "price": 4600
-      }
-     ],
-     "path": "menu-files/1786423674_596459-2.png"
-    },
-    {
-     "name": "image.png",
-     "fid": "F0BQ79JLREC",
-     "from": "댓글",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "붕어+분식+치킨",
-       "name": "닭다리3+감튀300g",
-       "price": 23800
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "후라이드순살+감튀250g",
-       "price": 22000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "매콤달콤국물떡볶이",
-       "price": 10000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "국물꾸덕로제떡볶이",
-       "price": 10000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "매콤닭다리1조각",
-       "price": 6600
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "순살후라이드6조각",
-       "price": 6600
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "감자통모짜스틱2개",
-       "price": 4600
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "감자튀김",
-       "price": 5000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "팥붕",
-       "price": 1500
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "슈붕",
-       "price": 1500
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "아붕",
-       "price": 2000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "초붕",
-       "price": 2000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "애붕",
-       "price": 2000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "피붕",
-       "price": 2000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "호떡붕",
-       "price": 2000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "고붕",
-       "price": 2000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "호팥붕",
-       "price": 2000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "고피붕",
-       "price": 2000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "옥치붕",
-       "price": 2000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "모치붕",
-       "price": 2000
-      },
-      {
-       "category": "붕어+분식+치킨",
-       "name": "크치붕",
-       "price": 2000
-      }
-     ]
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "• 카테고리 : 붕어+분식+치킨",
-    "아아앗",
-    "감사합니다! 붕어는 제가 수정하겠습니다."
-   ],
-   "rc": 8,
-   "lr": "1786426236.770989",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786423674596459"
   }
  ],
  "ocr": {
