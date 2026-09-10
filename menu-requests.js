@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1914,
- "updatedAt": "2026-09-10 21:32",
+ "version": 1915,
+ "updatedAt": "2026-09-10 22:45",
  "days": 30,
  "items": [
   {
@@ -58709,27 +58709,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786499983486809"
-  },
-  {
-   "ts": "1786455907.660869",
-   "date": "2026-08-11",
-   "time": "22:45",
-   "store": "미라클 밥상(여주터미널점)",
-   "biz": "6023808645",
-   "pos": "토스포스",
-   "content": "혼족세트 19900\n족발,막국수,묵사발,반찬세트,음료,쌈채소 \n혼보세트 19900원\n보쌈,막국수,묵사발,반찬세트,음료,쌈채소",
-   "special": "위에 메뉴도 넣어주세요~  그리고 카테고리 몇개 넣을 수 있어요 3개는 넣을 수 있다고 들었는데 한식,족발보쌈,야식에 넣어주세요~",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1786455928.181259",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786455907660869"
   }
  ],
  "ocr": {
