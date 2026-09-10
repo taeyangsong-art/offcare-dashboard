@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1884,
- "updatedAt": "2026-09-10 15:28",
+ "version": 1885,
+ "updatedAt": "2026-09-10 15:32",
  "days": 30,
  "items": [
+  {
+   "ts": "1789021864.475179",
+   "date": "2026-09-10",
+   "time": "15:31",
+   "store": "양양해산물식당",
+   "biz": "1368511628",
+   "pos": "",
+   "content": "메뉴",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789021867.641659",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789021864475179"
+  },
   {
    "ts": "1789018529.338449",
    "date": "2026-09-10",
@@ -56789,27 +56810,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "심성현",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786433704425749"
-  },
-  {
-   "ts": "1786429920.680229",
-   "date": "2026-08-11",
-   "time": "15:32",
-   "store": "칠암장수국수",
-   "biz": "6874301365",
-   "pos": "",
-   "content": "하이오더용 선불테이블 6대 생성 부탁드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1786432982.806589",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786429920680229"
   }
  ],
  "ocr": {
