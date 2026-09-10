@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9679,
+  "version": 9680,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -164333,6 +164333,17 @@ window.SLACK_DATA = {
           ]
         },
         {
+          "time": "13:43",
+          "store": "연지민물매운탕",
+          "biz": "2062828779",
+          "handler": "배선유",
+          "cat": "menu",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
           "time": "11:07",
           "store": "파도",
           "biz": "7721502975",
@@ -167534,7 +167545,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 246,
+        "online": 247,
         "offline": 43,
         "unknown": 0
       },
@@ -168150,7 +168161,7 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:00"
+      "updatedAt": "09:11"
     }
   },
   "resp": {
@@ -168308,17 +168319,21 @@ window.SLACK_DATA = {
       },
       "1788998412.033889": {
         "post": "1788998412.033889",
-        "lastSeen": 1788998960.459,
+        "lastSeen": 1788999139.546,
         "r": 1,
         "day": "2026-09-10",
         "idx": 0
       },
       "1788998406.481399": {
         "post": "1788998406.481399",
-        "lastSeen": 1788998960.459,
+        "lastSeen": 1788999139.546,
         "r": 1,
         "day": "2026-09-10",
         "idx": 1
+      },
+      "1788999078.659199": {
+        "post": "1788999078.659199",
+        "lastSeen": 1788999139.546
       }
     },
     "days": {
@@ -218923,7 +218938,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-10 09:09",
+    "at": "2026-09-10 09:12",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
