@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1894,
- "updatedAt": "2026-09-10 16:30",
+ "version": 1895,
+ "updatedAt": "2026-09-10 16:34",
  "days": 30,
  "items": [
   {
@@ -163,7 +163,6 @@ window.MENU_REQUESTS = {
      "name": "KakaoTalk_20260910_154503495.jpg",
      "fid": "F0C0SAQARK8",
      "from": "댓글",
-     "path": "menu-files/1789023228_140969-0.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -221,13 +220,13 @@ window.MENU_REQUESTS = {
        "name": "에스프레소 토닉",
        "price": 7000
       }
-     ]
+     ],
+     "path": "menu-files/1789023228_140969-0.jpg"
     },
     {
      "name": "KakaoTalk_20260910_154503495_01.jpg",
      "fid": "F0C0SARGM70",
      "from": "댓글",
-     "path": "menu-files/1789023228_140969-1.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -250,13 +249,13 @@ window.MENU_REQUESTS = {
        "name": "콜롬비아 엑셀소 디카페인",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1789023228_140969-1.jpg"
     },
     {
      "name": "KakaoTalk_20260910_154503495_02.jpg",
      "fid": "F0C0CTG2EK1",
      "from": "댓글",
-     "path": "menu-files/1789023228_140969-2.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -299,13 +298,13 @@ window.MENU_REQUESTS = {
        "name": "럼 동 블렌드",
        "price": 7000
       }
-     ]
+     ],
+     "path": "menu-files/1789023228_140969-2.jpg"
     },
     {
      "name": "KakaoTalk_20260910_154503495_03.jpg",
      "fid": "F0C0PNJ7P4M",
      "from": "댓글",
-     "path": "menu-files/1789023228_140969-3.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -343,13 +342,13 @@ window.MENU_REQUESTS = {
        "name": "감귤 주스 100%",
        "price": 7000
       }
-     ]
+     ],
+     "path": "menu-files/1789023228_140969-3.jpg"
     },
     {
      "name": "KakaoTalk_20260910_154503495_04.jpg",
      "fid": "F0C0SATKA5C",
      "from": "댓글",
-     "path": "menu-files/1789023228_140969-4.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -382,15 +381,16 @@ window.MENU_REQUESTS = {
        "name": "빅토리아케이크",
        "price": 7500
       }
-     ]
+     ],
+     "path": "menu-files/1789023228_140969-4.jpg"
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1789023272.806279",
+   "rc": 3,
+   "lr": "1789025639.098579",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789023228140969"
   },
