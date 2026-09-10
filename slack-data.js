@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9686,
+  "version": 9687,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -168115,14 +168115,25 @@ window.SLACK_DATA = {
     "2026-09-10": {
       "counts": {
         "as": {
+          "김동욱": 2,
           "고경림": 1,
-          "김동욱": 1,
           "송태양": 1,
           "배선유": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:18",
+          "store": "카파쓰(SMARTRO)",
+          "biz": "2200279541",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "캣프 이용중 / 어제 저녁부터 결제 불가, 표시할 메뉴가 없어요 오류 메시지 팝업된다고 하시어 도움 부탁드립니다!",
+          "hw": "",
+          "intake": "offline",
+          "note": "캣프 재온보딩 완료"
+        },
         {
           "time": "09:00",
           "store": "코지퍼프",
@@ -168170,10 +168181,45 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 4,
-        "offline": 0,
+        "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:18"
+      "updatedAt": "09:28",
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 0,
+          "low": 0
+        },
+        "nps": {
+          "count": 1,
+          "low": 0
+        },
+        "high": {
+          "install": 0,
+          "nps": 1
+        },
+        "npsDist": {
+          "10": 1
+        },
+        "installDist": {},
+        "byIndustry": {},
+        "byTenure": {
+          "1개월": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "KIS": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {},
+        "alerts": [],
+        "praises": []
+      }
     }
   },
   "resp": {
@@ -168331,21 +168377,21 @@ window.SLACK_DATA = {
       },
       "1788998412.033889": {
         "post": "1788998412.033889",
-        "lastSeen": 1788999862.079,
+        "lastSeen": 1789000116.172,
         "r": 1,
         "day": "2026-09-10",
         "idx": 0
       },
       "1788999380.948759": {
         "post": "1788999380.948759",
-        "lastSeen": 1788999862.079,
+        "lastSeen": 1789000116.172,
         "r": 1,
         "day": "2026-09-10",
         "idx": 3
       },
-      "1788999078.659199": {
-        "post": "1788999078.659199",
-        "lastSeen": 1788999862.079
+      "1789000074.854199": {
+        "post": "1789000074.854199",
+        "lastSeen": 1789000116.172
       }
     },
     "days": {
@@ -218959,7 +219005,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-10 09:24",
+    "at": "2026-09-10 09:28",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
