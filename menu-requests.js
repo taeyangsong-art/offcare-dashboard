@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1855,
- "updatedAt": "2026-09-10 09:41",
+ "version": 1856,
+ "updatedAt": "2026-09-10 09:51",
  "days": 30,
  "items": [
   {
@@ -21,10 +21,10 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [],
-   "rc": 3,
-   "lr": "1789000837.312549",
+   "rc": 4,
+   "lr": "1789001411.635099",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1788999078659199"
   },
@@ -1935,10 +1935,11 @@ window.MENU_REQUESTS = {
     "특별메뉴에 과자는 없는데....?",
     "오잉 ..? 없으면 그냥 뺴ㅐ주셔요 ..! ㅎㅎ",
     "kcl4223 / *[U80778]*",
-    "완료"
+    "완료",
+    "님 안녕하세요!!\n아래 메뉴가 2개 중복으로 나란히 뜬다고 하셔서\n1개 삭제 요청주시는데 혹시 완료 후 문자 한 번 발송 도움 주실 수 있으실까요~?\n• 기본메뉴 - 참게추가(1마리)"
    ],
-   "rc": 7,
-   "lr": "1789000419.952259",
+   "rc": 8,
+   "lr": "1789001445.492239",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
