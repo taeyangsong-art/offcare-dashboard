@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1899,
- "updatedAt": "2026-09-10 16:58",
+ "version": 1900,
+ "updatedAt": "2026-09-10 17:03",
  "days": 30,
  "items": [
   {
@@ -143,7 +143,7 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1789025206.719129",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789025203327209"
   },
@@ -57426,29 +57426,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786440258710499"
-  },
-  {
-   "ts": "1786435193.226069",
-   "date": "2026-08-11",
-   "time": "16:59",
-   "store": "쿠타팜 테라스",
-   "biz": "7413600207",
-   "pos": "오케이포스",
-   "content": "오케이포스/ 메뉴 수정 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "*[금액 변경]*\n\n• 카테고리 : 시그니처\n    ◦ *트리플화이타*  29,500 >>  *30,900원*\n• 카테고리: 브런치\n    ◦ *아사다 프라이즈*  19,000 >> *20,000원*"
-   ],
-   "rc": 2,
-   "lr": "1786435270.991389",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786435193226069"
   }
  ],
  "ocr": {
