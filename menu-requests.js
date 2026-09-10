@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1895,
- "updatedAt": "2026-09-10 16:34",
+ "version": 1896,
+ "updatedAt": "2026-09-10 16:37",
  "days": 30,
  "items": [
   {
@@ -763,8 +763,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "님, 해당 매장 킴스 패밀리 [티오더 사용]에서 변경하는 매장입니다!"
    ],
-   "rc": 3,
-   "lr": "1789025373.578349",
+   "rc": 4,
+   "lr": "1789025860.387949",
    "rfx": 3,
    "status": "confirm",
    "handler": "김규빈",
@@ -57442,98 +57442,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786435193226069"
-  },
-  {
-   "ts": "1786433704.425749",
-   "date": "2026-08-11",
-   "time": "16:35",
-   "store": "가든갤러리",
-   "biz": "1322074826",
-   "pos": "퍼스트포스",
-   "content": "퍼스트포스) 메뉴 수정 요청드립니다 >>",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BPG6DLUCR",
-     "from": "댓글",
-     "path": "menu-files/1786433704_425749-0.png",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "",
-       "name": "반반 고르곤졸라",
-       "price": 0
-      },
-      {
-       "category": "",
-       "name": "반반 루꼴라",
-       "price": 0
-      },
-      {
-       "category": "",
-       "name": "반반 마르게리따",
-       "price": 0
-      },
-      {
-       "category": "",
-       "name": "반반 프로슈토",
-       "price": 0
-      },
-      {
-       "category": "",
-       "name": "반반 피칸테",
-       "price": 0
-      }
-     ]
-    },
-    {
-     "name": "image.png",
-     "fid": "F0BPHURS1B6",
-     "from": "댓글",
-     "path": "menu-files/1786433704_425749-1.png",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "옵션",
-       "name": "반반 고르곤졸라",
-       "price": 0
-      },
-      {
-       "category": "옵션",
-       "name": "반반 루꼴라",
-       "price": 0
-      },
-      {
-       "category": "옵션",
-       "name": "반반 마르게리따",
-       "price": 0
-      },
-      {
-       "category": "옵션",
-       "name": "반반 프로슈토",
-       "price": 0
-      },
-      {
-       "category": "옵션",
-       "name": "반반 피칸테",
-       "price": 0
-      }
-     ]
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "세트메뉴 카테고리 내 메뉴 클릭 시 사이드 메뉴 2개 이상 선택할 수 있도록 변경\n세트메뉴에서 반반피자 선택 시 각 피자 맛을 각각 선택할 수 있도록 변경 (피자 5가지)\n원 주문에서 추가 메뉴 선택 시 해당 추가 메뉴만 주문서 올라올 수 있도록 요청"
-   ],
-   "rc": 11,
-   "lr": "1786439303.800509",
-   "rfx": 3,
-   "status": "done",
-   "handler": "심성현",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786433704425749"
   }
  ],
  "ocr": {
