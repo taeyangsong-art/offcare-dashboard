@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1851,
- "updatedAt": "2026-09-10 09:13",
+ "version": 1852,
+ "updatedAt": "2026-09-10 09:17",
  "days": 30,
  "items": [
   {
@@ -1546,7 +1546,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C0S41FMFC",
      "from": "댓글",
-     "path": "menu-files/1788928999_847599-0.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -1734,7 +1733,8 @@ window.MENU_REQUESTS = {
        "name": "음료수",
        "price": 3000
       }
-     ]
+     ],
+     "path": "menu-files/1788928999_847599-0.png"
     }
    ],
    "datt": [
@@ -1932,10 +1932,11 @@ window.MENU_REQUESTS = {
    ],
    "replies": [
     "특별메뉴 - 과자 부분 지워달라고 하셨습니다 !",
-    "특별메뉴에 과자는 없는데....?"
+    "특별메뉴에 과자는 없는데....?",
+    "오잉 ..? 없으면 그냥 뺴ㅐ주셔요 ..! ㅎㅎ"
    ],
-   "rc": 4,
-   "lr": "1788998907.006099",
+   "rc": 5,
+   "lr": "1788999429.908149",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
