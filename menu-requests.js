@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1905,
- "updatedAt": "2026-09-10 17:48",
+ "version": 1906,
+ "updatedAt": "2026-09-10 17:52",
  "days": 30,
  "items": [
+  {
+   "ts": "1789030101.485939",
+   "date": "2026-09-10",
+   "time": "17:48",
+   "store": "대한복집",
+   "biz": "8434400599",
+   "pos": "토스포스",
+   "content": "전메뉴",
+   "special": "파일메일로보낼게요",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789030104.421409",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789030101485939"
+  },
   {
    "ts": "1789029867.852419",
    "date": "2026-09-10",
@@ -23,7 +44,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C1PFBDDLG",
      "from": "댓글",
-     "path": "menu-files/1789029867_852419-0.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -56,13 +76,13 @@ window.MENU_REQUESTS = {
        "name": "반반족발3~4인 족발+매콤불족발 (대)",
        "price": 55000
       }
-     ]
+     ],
+     "path": "menu-files/1789029867_852419-0.png"
     },
     {
      "name": "image.png",
      "fid": "F0C0DPEGPSB",
      "from": "댓글",
-     "path": "menu-files/1789029867_852419-1.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -95,13 +115,13 @@ window.MENU_REQUESTS = {
        "name": "반반보쌈3~4인 보쌈+마늘보쌈 (대)",
        "price": 55000
       }
-     ]
+     ],
+     "path": "menu-files/1789029867_852419-1.png"
     },
     {
      "name": "image.png",
      "fid": "F0C0DPG94PR",
      "from": "댓글",
-     "path": "menu-files/1789029867_852419-2.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -124,13 +144,13 @@ window.MENU_REQUESTS = {
        "name": "족발+보쌈5~6인 (특대)큰앞발",
        "price": 83000
       }
-     ]
+     ],
+     "path": "menu-files/1789029867_852419-2.png"
     },
     {
      "name": "image.png",
      "fid": "F0C1PFGSCFJ",
      "from": "댓글",
-     "path": "menu-files/1789029867_852419-3.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -148,6 +168,100 @@ window.MENU_REQUESTS = {
        "name": "마늘보쌈 변경",
        "price": 3000
       }
+     ],
+     "path": "menu-files/1789029867_852419-3.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0DPLP7E3",
+     "from": "댓글",
+     "path": "menu-files/1789029867_852419-4.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "사이드",
+       "name": "쟁반막국수[중]",
+       "price": 6000
+      },
+      {
+       "category": "사이드",
+       "name": "쟁반막국수[대]",
+       "price": 9000
+      },
+      {
+       "category": "사이드",
+       "name": "참치마요주먹밥",
+       "price": 6000
+      },
+      {
+       "category": "사이드",
+       "name": "김가루주먹밥",
+       "price": 5000
+      },
+      {
+       "category": "사이드",
+       "name": "공기밥",
+       "price": 1500
+      },
+      {
+       "category": "사이드",
+       "name": "보쌈무김치",
+       "price": 6000
+      },
+      {
+       "category": "사이드",
+       "name": "보쌈김치",
+       "price": 7000
+      },
+      {
+       "category": "사이드",
+       "name": "백김치",
+       "price": 5000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0X2ZQXQR",
+     "from": "댓글",
+     "path": "menu-files/1789029867_852419-5.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "상추",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "마늘소스",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "매콤소스",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "새우젓",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "쌈장",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "마늘",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "고추",
+       "price": 1000
+      }
      ]
     }
    ],
@@ -156,13 +270,15 @@ window.MENU_REQUESTS = {
     "• 카테고리 : 야들야들족발",
     "• 카테고리 : 부들부들보쌈",
     "• 카테고리: 족발+보쌈",
-    "• 카테고리: 고기변경"
+    "• 카테고리: 고기변경",
+    "• 카테고리: 사이드",
+    "ㅠㅠ 너무 죄송하고 감사합니다!"
    ],
-   "rc": 5,
-   "lr": "1789030090.135829",
+   "rc": 9,
+   "lr": "1789030205.166639",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789029867852419"
   },
   {
