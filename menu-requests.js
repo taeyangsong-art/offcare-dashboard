@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1874,
- "updatedAt": "2026-09-10 13:15",
+ "version": 1875,
+ "updatedAt": "2026-09-10 13:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1789014523.084569",
+   "date": "2026-09-10",
+   "time": "13:28",
+   "store": "하이체리",
+   "biz": "3681302336",
+   "pos": "토스포스",
+   "content": "새로 설치하는데\n기존 키오스크에서 사용하던 상품바코드를 토스 포스 프로그램에 등록해야합니다\n약 8000개 대량등록\n\n동일한 바코드로 기존 키오스크와 토스키오스크에서 다 결제 가능하도록",
+   "special": "<mailto:···|···> 메일로 보냈습니다",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789014526.788719",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789014523084569"
+  },
   {
    "ts": "1789011717.637199",
    "date": "2026-09-10",
