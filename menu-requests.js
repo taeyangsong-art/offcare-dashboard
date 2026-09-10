@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1912,
- "updatedAt": "2026-09-10 21:23",
+ "version": 1913,
+ "updatedAt": "2026-09-10 21:31",
  "days": 30,
  "items": [
   {
@@ -2443,7 +2443,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C0XKLF5ED",
      "from": "댓글",
-     "path": "menu-files/1789008055_247509-1.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -2466,13 +2465,13 @@ window.MENU_REQUESTS = {
        "name": "돈까스커리라이스",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1789008055_247509-1.png"
     },
     {
      "name": "image.png",
      "fid": "F0C0VLK97GS",
      "from": "댓글",
-     "path": "menu-files/1789008055_247509-2.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -2490,13 +2489,13 @@ window.MENU_REQUESTS = {
        "name": "새우라이스(특)",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1789008055_247509-2.png"
     },
     {
      "name": "image.png",
      "fid": "F0C0TPKP2G6",
      "from": "댓글",
-     "path": "menu-files/1789008055_247509-3.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -2524,13 +2523,13 @@ window.MENU_REQUESTS = {
        "name": "스노우매콤치즈돈까스",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1789008055_247509-3.png"
     },
     {
      "name": "image.png",
      "fid": "F0C0R5VLAHK",
      "from": "댓글",
-     "path": "menu-files/1789008055_247509-4.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -2558,13 +2557,13 @@ window.MENU_REQUESTS = {
        "name": "스노우치즈 정식 (돈까스+미니메뉴)",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1789008055_247509-4.png"
     },
     {
      "name": "image.png",
      "fid": "F0C0TPLDUES",
      "from": "댓글",
-     "path": "menu-files/1789008055_247509-5.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -2587,7 +2586,8 @@ window.MENU_REQUESTS = {
        "name": "브로스/크림 정식 (돈까스+미니메뉴)",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1789008055_247509-5.png"
     },
     {
      "name": "image.png",
@@ -2799,6 +2799,39 @@ window.MENU_REQUESTS = {
        "price": 0
       }
      ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0R60BSKX",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "토핑 고로케.",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "토핑 치즈.",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "브로스 소스",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "매콤 소스",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "크림 소스",
+       "price": 0
+      }
+     ]
     }
    ],
    "datt": [],
@@ -2806,8 +2839,8 @@ window.MENU_REQUESTS = {
     "하.... 메일로 보내주신게 그것밖에 없군요.....",
     "혹시 포스앱에 미리 만들어진 메뉴 자체도 없을까요?"
    ],
-   "rc": 8,
-   "lr": "1789034618.936919",
+   "rc": 9,
+   "lr": "1789043069.263979",
    "rfx": 3,
    "status": "done",
    "handler": "김규빈",
