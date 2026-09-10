@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1875,
- "updatedAt": "2026-09-10 13:30",
+ "version": 1876,
+ "updatedAt": "2026-09-10 13:45",
  "days": 30,
  "items": [
   {
@@ -24,8 +24,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1789014526.788719",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789014523084569"
   },
   {
@@ -56573,27 +56573,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786423674596459"
-  },
-  {
-   "ts": "1786422980.960799",
-   "date": "2026-08-11",
-   "time": "13:36",
-   "store": "피코",
-   "biz": "4887100710",
-   "pos": "기타",
-   "content": "점심메뉴추가 잔치국수10,000",
-   "special": "언제든수정가능",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1786422985.320609",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786422980960799"
   }
  ],
  "ocr": {
