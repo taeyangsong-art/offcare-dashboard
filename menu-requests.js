@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1908,
- "updatedAt": "2026-09-10 18:12",
+ "version": 1909,
+ "updatedAt": "2026-09-10 18:24",
  "days": 30,
  "items": [
   {
@@ -58411,66 +58411,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786440649412099"
-  },
-  {
-   "ts": "1786440258.710499",
-   "date": "2026-08-11",
-   "time": "18:24",
-   "store": "브라운",
-   "biz": "1051988486",
-   "pos": "오케이포스",
-   "content": "사진에 작성해놨습니다",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/1Gk5Wl6CgObWAVb0zraCzqo4qZbmk_N4-/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "1Gk5Wl6CgObWAVb0zraCzqo4qZbmk_N4-",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "BEER",
-       "name": "Budweisr",
-       "price": 9000
-      },
-      {
-       "category": "BEER",
-       "name": "Corona",
-       "price": 10000
-      },
-      {
-       "category": "BEER",
-       "name": "Heineken",
-       "price": 10000
-      },
-      {
-       "category": "BEER",
-       "name": "Hoegaarden",
-       "price": 10000
-      },
-      {
-       "category": "BEER",
-       "name": "cass zero",
-       "price": 8000
-      },
-      {
-       "category": "BEER",
-       "name": "cass zero lemon",
-       "price": 8000
-      }
-     ]
-    }
-   ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1786440262.747449",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786440258710499"
   }
  ],
  "ocr": {
