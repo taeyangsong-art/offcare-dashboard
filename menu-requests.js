@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1857,
- "updatedAt": "2026-09-10 09:54",
+ "version": 1858,
+ "updatedAt": "2026-09-10 10:04",
  "days": 30,
  "items": [
+  {
+   "ts": "1789002181.292739",
+   "date": "2026-09-10",
+   "time": "10:03",
+   "store": "계경순대국 미아점",
+   "biz": "2692100244",
+   "pos": "",
+   "content": "메뉴 수정 요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "안녕하세요 계경순대국 미아점 입니다\n\n주류행사가격 수정 하려는데 오늘 얼마 앱에서 수정이 안되네요\n\n수정가능하시면\n행사 카테고리는 그대로 두시고,\n●●메인카테고리인 계경순대국항목에서\n소주     4,000=>3,000\n맥주     5,000=>3,000\n막걸리 4,000=>3,000\n으로 수정좀 해 주세요\n\n완료되시면 문자주셔요\n고맙습니다"
+   ],
+   "rc": 2,
+   "lr": "1789002191.963249",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789002181292739"
+  },
   {
    "ts": "1788999078.659199",
    "date": "2026-09-10",
@@ -56464,27 +56487,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786413326233759"
-  },
-  {
-   "ts": "1786410221.683539",
-   "date": "2026-08-11",
-   "time": "10:03",
-   "store": "브릭스 랩(BRIX LAB)",
-   "biz": "5693400751",
-   "pos": "토스포스",
-   "content": "전체",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1786410227.141859",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786410221683539"
   }
  ],
  "ocr": {
