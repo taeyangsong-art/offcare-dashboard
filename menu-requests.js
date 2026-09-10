@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1903,
- "updatedAt": "2026-09-10 17:34",
+ "version": 1904,
+ "updatedAt": "2026-09-10 17:44",
  "days": 30,
  "items": [
   {
@@ -2035,6 +2035,13 @@ window.MENU_REQUESTS = {
      "from": "댓글",
      "path": "menu-files/1789014523_084569-4.xlsx",
      "nj": 1
+    },
+    {
+     "name": "11.xlsx",
+     "fid": "F0C0NS8HSHH",
+     "from": "댓글",
+     "path": "menu-files/1789014523_084569-5.xlsx",
+     "nj": 1
     }
    ],
    "datt": [],
@@ -2048,8 +2055,8 @@ window.MENU_REQUESTS = {
     "왜냐면 아직 등록중이니가...",
     "ㅠㅠ"
    ],
-   "rc": 14,
-   "lr": "1789026606.213389",
+   "rc": 15,
+   "lr": "1789029770.730969",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
@@ -3180,8 +3187,8 @@ window.MENU_REQUESTS = {
     "아 넵! 요청 해볼게요\n근데 기기를 너무 못만지시는 분이라",
     "2번째 사진이랑 3번째 사진이랑 이어지는거 같아서 혹시 그냥 진행 가능할까욤??\n대표님께서 첨부하시기 어려우신 듯 합니다!"
    ],
-   "rc": 9,
-   "lr": "1788949773.481609",
+   "rc": 10,
+   "lr": "1789029827.977109",
    "rfx": 3,
    "status": "done",
    "handler": "김규빈",
