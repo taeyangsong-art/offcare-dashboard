@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1871,
- "updatedAt": "2026-09-10 12:46",
+ "version": 1872,
+ "updatedAt": "2026-09-10 12:47",
  "days": 30,
  "items": [
   {
@@ -18,13 +18,49 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C0NMG60VB",
+     "from": "댓글",
+     "path": "menu-files/1789011717_637199-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "볶음",
+       "name": "버터키조개관자볶음",
+       "price": 30000
+      },
+      {
+       "category": "볶음",
+       "name": "두부김치",
+       "price": 20000
+      },
+      {
+       "category": "볶음",
+       "name": "제육볶음",
+       "price": 10000
+      },
+      {
+       "category": "볶음",
+       "name": "닭도리탕",
+       "price": 35000
+      },
+      {
+       "category": "볶음",
+       "name": "제육볶음 2인분",
+       "price": 20000
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [
-    "FD 포스\n추가 이후 솔라피 발송 부탁 드립니다..! :꾸벅:"
+    "FD 포스\n추가 이후 솔라피 발송 부탁 드립니다..! :꾸벅:",
+    "그때 규빈님이 등록 해 드렸었는데 없다고 하셔서.. :당황소율:"
    ],
-   "rc": 1,
-   "lr": "1789011730.815549",
+   "rc": 3,
+   "lr": "1789012044.885589",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
