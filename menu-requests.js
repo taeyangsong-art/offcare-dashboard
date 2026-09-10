@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1865,
- "updatedAt": "2026-09-10 11:41",
+ "version": 1866,
+ "updatedAt": "2026-09-10 12:04",
  "days": 30,
  "items": [
   {
@@ -20,9 +20,12 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1789008095.679809",
+   "replies": [
+    "하.... 메일로 보내주신게 그것밖에 없군요.....",
+    "혹시 포스앱에 미리 만들어진 메뉴 자체도 없을까요?"
+   ],
+   "rc": 5,
+   "lr": "1789009382.632229",
    "rfx": 3,
    "status": "wait",
    "handler": null,
