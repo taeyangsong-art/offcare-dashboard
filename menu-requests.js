@@ -3,10 +3,168 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1904,
- "updatedAt": "2026-09-10 17:44",
+ "version": 1905,
+ "updatedAt": "2026-09-10 17:48",
  "days": 30,
  "items": [
+  {
+   "ts": "1789029867.852419",
+   "date": "2026-09-10",
+   "time": "17:44",
+   "store": "도담",
+   "biz": "5936200795",
+   "pos": "토스포스",
+   "content": "토스포스/ 메뉴 추가 등록 요청드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C1PFBDDLG",
+     "from": "댓글",
+     "path": "menu-files/1789029867_852419-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "야들야들족발",
+       "name": "족발2인 (소)",
+       "price": 33000
+      },
+      {
+       "category": "야들야들족발",
+       "name": "족발3인 (중)뒷발",
+       "price": 39000
+      },
+      {
+       "category": "야들야들족발",
+       "name": "족발3인 (대)앞발",
+       "price": 44000
+      },
+      {
+       "category": "야들야들족발",
+       "name": "족발4인 (특대)큰앞발",
+       "price": 53000
+      },
+      {
+       "category": "야들야들족발",
+       "name": "반반족발2~3인 족발+매콤불족발 (중)",
+       "price": 45000
+      },
+      {
+       "category": "야들야들족발",
+       "name": "반반족발3~4인 족발+매콤불족발 (대)",
+       "price": 55000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0DPEGPSB",
+     "from": "댓글",
+     "path": "menu-files/1789029867_852419-1.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "부들부들보쌈",
+       "name": "보쌈2인 (소)",
+       "price": 33000
+      },
+      {
+       "category": "부들부들보쌈",
+       "name": "보쌈3인 (중)",
+       "price": 39000
+      },
+      {
+       "category": "부들부들보쌈",
+       "name": "보쌈4인 (대)",
+       "price": 44000
+      },
+      {
+       "category": "부들부들보쌈",
+       "name": "보쌈5인 (특대)",
+       "price": 53000
+      },
+      {
+       "category": "부들부들보쌈",
+       "name": "반반보쌈2~3인 보쌈+마늘보쌈 (중)",
+       "price": 45000
+      },
+      {
+       "category": "부들부들보쌈",
+       "name": "반반보쌈3~4인 보쌈+마늘보쌈 (대)",
+       "price": 55000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0DPG94PR",
+     "from": "댓글",
+     "path": "menu-files/1789029867_852419-2.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "카테고리(족발+보쌈)",
+       "name": "족발+보쌈2~3인 (소)",
+       "price": 47000
+      },
+      {
+       "category": "카테고리(족발+보쌈)",
+       "name": "족발+보쌈3~4인 (중)뒷발",
+       "price": 63000
+      },
+      {
+       "category": "카테고리(족발+보쌈)",
+       "name": "족발+보쌈4~5인 (대)앞발",
+       "price": 73000
+      },
+      {
+       "category": "카테고리(족발+보쌈)",
+       "name": "족발+보쌈5~6인 (특대)큰앞발",
+       "price": 83000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C1PFGSCFJ",
+     "from": "댓글",
+     "path": "menu-files/1789029867_852419-3.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "카테고리(고기변경)",
+       "name": "매콤물속발 변경",
+       "price": 3000
+      },
+      {
+       "category": "카테고리(고기변경)",
+       "name": "마늘족발 변경",
+       "price": 3000
+      },
+      {
+       "category": "카테고리(고기변경)",
+       "name": "마늘보쌈 변경",
+       "price": 3000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "• 카테고리 : 야들야들족발",
+    "• 카테고리 : 부들부들보쌈",
+    "• 카테고리: 족발+보쌈",
+    "• 카테고리: 고기변경"
+   ],
+   "rc": 5,
+   "lr": "1789030090.135829",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789029867852419"
+  },
   {
    "ts": "1789027503.750099",
    "date": "2026-09-10",
