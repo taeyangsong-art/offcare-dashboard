@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1892,
- "updatedAt": "2026-09-10 16:27",
+ "version": 1893,
+ "updatedAt": "2026-09-10 16:29",
  "days": 30,
  "items": [
   {
@@ -390,8 +390,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1789023272.806279",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789023228140969"
   },
   {
@@ -760,12 +760,14 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1789018533.371509",
+   "replies": [
+    "님, 해당 매장 킴스 패밀리 [티오더 사용]에서 변경하는 매장입니다!"
+   ],
+   "rc": 2,
+   "lr": "1789025330.579539",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789018529338449"
   },
   {
