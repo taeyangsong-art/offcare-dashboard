@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1938,
- "updatedAt": "2026-09-11 16:40",
+ "version": 1939,
+ "updatedAt": "2026-09-11 17:14",
  "days": 30,
  "items": [
   {
@@ -58381,29 +58381,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786523837015949"
-  },
-  {
-   "ts": "1786522033.806389",
-   "date": "2026-08-12",
-   "time": "17:07",
-   "store": "떡하지",
-   "biz": "3110389148",
-   "pos": "토스포스",
-   "content": "일반떡 카테고리 \"떡\" 제품 금액은 0원입니다",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/open?id=12fgA_6O4JK9bbWvl2e6x1ekU9LLc3igS"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1786522037.809119",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786522033806389"
   }
  ],
  "ocr": {
