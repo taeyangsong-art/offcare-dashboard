@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1933,
- "updatedAt": "2026-09-11 13:27",
+ "version": 1934,
+ "updatedAt": "2026-09-11 14:15",
  "days": 30,
  "items": [
   {
@@ -20,12 +20,14 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1789096806.423309",
+   "replies": [
+    "완"
+   ],
+   "rc": 2,
+   "lr": "1789103612.306239",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789096802999089"
   },
   {
@@ -39,11 +41,30 @@ window.MENU_REQUESTS = {
    "special": "메일로 메뉴 이미지 파일을 전달드리겠습니다.",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "토스프론트 메뉴_옵션 일괄등록 요청(덮음밥까지).xlsx",
+     "fid": "F0C15Q6E7C1",
+     "from": "댓글",
+     "path": "menu-files/1789093371_739099-0.xlsx",
+     "nj": 1
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C15QARMG9",
+     "from": "댓글",
+     "path": "menu-files/1789093371_739099-1.png",
+     "kind": "other",
+     "menu": []
+    }
+   ],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1789093375.316689",
+   "replies": [
+    "사업자번호 조회xx",
+    "이미지파일zip은 권한 없어서 안열림"
+   ],
+   "rc": 3,
+   "lr": "1789103512.192819",
    "rfx": 3,
    "status": "wait",
    "handler": null,
