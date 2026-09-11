@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9960,
+  "version": 9961,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -168140,7 +168140,7 @@ window.SLACK_DATA = {
           "김동욱": 5
         },
         "menu": {
-          "최민석": 2,
+          "최민석": 3,
           "김규빈": 15,
           "서상원": 1,
           "배선유": 3
@@ -168862,6 +168862,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "온보딩 완료입니다"
+        },
+        {
+          "time": "17:48",
+          "store": "대한복집",
+          "biz": "8434400599",
+          "cat": "menu",
+          "emp": "최민석",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 메뉴등록 완료"
         },
         {
           "time": "17:45",
@@ -172053,7 +172064,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 303,
+        "online": 304,
         "offline": 49,
         "unknown": 0
       },
@@ -172483,6 +172494,7 @@ window.SLACK_DATA = {
           "송태양": 1
         },
         "menu": {
+          "김규빈": 1,
           "배선유": 1
         }
       },
@@ -172511,6 +172523,17 @@ window.SLACK_DATA = {
           "note": "매장특성상(역내 매장) 인터넷성능저하로 프론트 결제 월활치않아 되었다 안되었다 확인. 백업단말기로 승인처리하시겠다고합니다."
         },
         {
+          "time": "09:17",
+          "store": "토모루 삼송신원점",
+          "biz": "2023580524",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "신규 설치 예정 메뉴 등록",
+          "hw": "",
+          "intake": "offline",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / /"
+        },
+        {
           "time": "09:10",
           "store": "순둥이네 대구고성점",
           "biz": "4433701221",
@@ -172535,10 +172558,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 2,
-        "offline": 2,
+        "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "09:30"
+      "updatedAt": "09:40"
     }
   },
   "resp": {
@@ -172692,10 +172715,14 @@ window.SLACK_DATA = {
       },
       "1789086600.542859": {
         "post": "1789086600.542859",
-        "lastSeen": 1789087049.647,
+        "lastSeen": 1789087280.327,
         "r": 1,
         "day": "2026-09-11",
         "idx": 1
+      },
+      "1789086600.580559": {
+        "post": "1789086600.580559",
+        "lastSeen": 1789087280.327
       }
     },
     "days": {
@@ -225514,7 +225541,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-11 09:37",
+    "at": "2026-09-11 09:41",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
