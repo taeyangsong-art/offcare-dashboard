@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1940,
- "updatedAt": "2026-09-11 17:45",
+ "version": 1941,
+ "updatedAt": "2026-09-11 18:01",
  "days": 30,
  "items": [
   {
@@ -58288,27 +58288,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "송태양",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786525436469249"
-  },
-  {
-   "ts": "1786524901.613069",
-   "date": "2026-08-12",
-   "time": "17:55",
-   "store": "백호태권도",
-   "biz": "8829102150",
-   "pos": "토스포스",
-   "content": "주1회 ㅡ 12만\n주2~3회 ㅡ 15만\n주4~5회 ㅡ 16만",
-   "special": "면세로 등록 해주세요~^^",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1786524905.386419",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786524901613069"
   }
  ],
  "ocr": {
