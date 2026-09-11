@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9963,
+  "version": 9964,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -172489,6 +172489,7 @@ window.SLACK_DATA = {
     "2026-09-11": {
       "counts": {
         "as": {
+          "배선유": 1,
           "김기범": 1,
           "미지정": 1,
           "송태양": 1
@@ -172500,6 +172501,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:40",
+          "store": "주커피 한국산업기술대점",
+          "biz": "1211050752",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "주방주문서 출력 안됨",
+          "hw": "",
+          "intake": "online",
+          "note": "주방주문서 출력으로 변경 / 각종 사용설명"
+        },
         {
           "time": "09:27",
           "store": "도피오커피인 킨텍스점",
@@ -172557,7 +172569,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 2,
+        "online": 3,
         "offline": 3,
         "unknown": 0
       },
@@ -172715,14 +172727,10 @@ window.SLACK_DATA = {
       },
       "1789086600.542859": {
         "post": "1789086600.542859",
-        "lastSeen": 1789087528.603,
+        "lastSeen": 1789087821.335,
         "r": 1,
         "day": "2026-09-11",
         "idx": 1
-      },
-      "1789086600.580559": {
-        "post": "1789086600.580559",
-        "lastSeen": 1789087528.603
       }
     },
     "days": {
@@ -225541,7 +225549,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-11 09:45",
+    "at": "2026-09-11 09:50",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
