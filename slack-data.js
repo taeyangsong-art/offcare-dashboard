@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9969,
+  "version": 9970,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -172549,7 +172549,7 @@ window.SLACK_DATA = {
           "req": "토스포스 안열림",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "4개월전쯤에 비정상적인 c드라이브 꽉참으로 d드라이브 용량을 드렸는데 또 c드라이브 꽉참으로 다시 d드라이브 용량처리. 월요일 방문일정으로 접수합니다(리커버리필요)"
         },
         {
           "time": "09:40",
@@ -225615,7 +225615,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-11 10:15",
+    "at": "2026-09-11 10:17",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
