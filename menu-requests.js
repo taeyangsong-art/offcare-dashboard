@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1921,
- "updatedAt": "2026-09-11 09:19",
+ "version": 1922,
+ "updatedAt": "2026-09-11 09:23",
  "days": 30,
  "items": [
   {
@@ -18,11 +18,434 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "Resized_20260910_184239.jpg.jpeg",
+     "fid": "F0C1WQE7740",
+     "from": "댓글",
+     "path": "menu-files/1789085825_848849-0.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "메로 프리미엄 세트",
+       "price": 56000
+      },
+      {
+       "category": "",
+       "name": "메로 라이트 세트",
+       "price": 40000
+      },
+      {
+       "category": "일반세트",
+       "name": "SET A 광어사시미 + 해물삼진어묵탕",
+       "price": 42000
+      },
+      {
+       "category": "일반세트",
+       "name": "SET B 아보카도명란구이 + 치킨카라아게",
+       "price": 35000
+      },
+      {
+       "category": "일반세트",
+       "name": "SET C 수제감자고로케 + 탄탄면",
+       "price": 33000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260910_184302.jpg.jpeg",
+     "fid": "F0C14BT1FCH",
+     "from": "댓글",
+     "path": "menu-files/1789085825_848849-1.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "사시미",
+       "name": "모듬사시미",
+       "price": 36000
+      },
+      {
+       "category": "사시미",
+       "name": "사시미 반",
+       "price": 19000
+      },
+      {
+       "category": "사시미",
+       "name": "히라메 고노와다",
+       "price": 26000
+      },
+      {
+       "category": "사시미",
+       "name": "광어 사시미",
+       "price": 25000
+      },
+      {
+       "category": "사시미",
+       "name": "연어사시미",
+       "price": 25000
+      },
+      {
+       "category": "초밥 & 식사",
+       "name": "광어 초밥",
+       "price": 18000
+      },
+      {
+       "category": "초밥 & 식사",
+       "name": "연어 초밥",
+       "price": 18000
+      },
+      {
+       "category": "초밥 & 식사",
+       "name": "반반 초밥",
+       "price": 18000
+      },
+      {
+       "category": "초밥 & 식사",
+       "name": "모모투 말이",
+       "price": 10000
+      },
+      {
+       "category": "간단 사시미",
+       "name": "간단 참치회",
+       "price": 15000
+      },
+      {
+       "category": "간단 사시미",
+       "name": "간단 광어회",
+       "price": 14000
+      },
+      {
+       "category": "간단 사시미",
+       "name": "간단 연어회",
+       "price": 14000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260910_184316.jpg.jpeg",
+     "fid": "F0C0XRSG76Z",
+     "from": "댓글",
+     "path": "menu-files/1789085825_848849-2.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "튀김",
+       "name": "문어 카라아게",
+       "price": 20000
+      },
+      {
+       "category": "튀김",
+       "name": "치킨 카라아게",
+       "price": 18000
+      },
+      {
+       "category": "튀김",
+       "name": "새우 튀김",
+       "price": 18000
+      },
+      {
+       "category": "튀김",
+       "name": "수제생선까스",
+       "price": 18000
+      },
+      {
+       "category": "튀김",
+       "name": "수제 감자 고로케",
+       "price": 17000
+      },
+      {
+       "category": "튀김",
+       "name": "새우깡",
+       "price": 14000
+      },
+      {
+       "category": "탕 & 면",
+       "name": "광어 서더리 매운탕",
+       "price": 20000
+      },
+      {
+       "category": "탕 & 면",
+       "name": "해물 삼진 어묵탕",
+       "price": 20000
+      },
+      {
+       "category": "탕 & 면",
+       "name": "나가사키 짬뽕",
+       "price": 18000
+      },
+      {
+       "category": "탕 & 면",
+       "name": "탄탄면",
+       "price": 18000
+      },
+      {
+       "category": "탕 & 면",
+       "name": "메가 해물 라면",
+       "price": 18000
+      },
+      {
+       "category": "탕 & 면",
+       "name": "해장 해물 라면",
+       "price": 10000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260910_184339.jpg.jpeg",
+     "fid": "F0C1WQEMYD6",
+     "from": "댓글",
+     "path": "menu-files/1789085825_848849-3.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "구이",
+       "name": "메로 간장구이",
+       "price": 25000
+      },
+      {
+       "category": "구이",
+       "name": "아보카도 명란 구이",
+       "price": 19000
+      },
+      {
+       "category": "구이",
+       "name": "바삭 멱태와 땅콩",
+       "price": 20000
+      },
+      {
+       "category": "볶음 & 일품요리",
+       "name": "소고기 버터야끼",
+       "price": 25000
+      },
+      {
+       "category": "볶음 & 일품요리",
+       "name": "참치무침 & 낫또",
+       "price": 20000
+      },
+      {
+       "category": "볶음 & 일품요리",
+       "name": "오징어 숙회",
+       "price": 18000
+      },
+      {
+       "category": "볶음 & 일품요리",
+       "name": "야끼우동",
+       "price": 18000
+      },
+      {
+       "category": "볶음 & 일품요리",
+       "name": "우삼겹 숙주볶음",
+       "price": 17000
+      },
+      {
+       "category": "볶음 & 일품요리",
+       "name": "문어 겨자 무침",
+       "price": 17000
+      },
+      {
+       "category": "볶음 & 일품요리",
+       "name": "닭 똥집 볶음",
+       "price": 17000
+      },
+      {
+       "category": "볶음 & 일품요리",
+       "name": "광어 미소 무침",
+       "price": 15000
+      },
+      {
+       "category": "볶음 & 일품요리",
+       "name": "타코 와사비",
+       "price": 14000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260910_184351.jpg.jpeg",
+     "fid": "F0C0W6Z45L3",
+     "from": "댓글",
+     "path": "menu-files/1789085825_848849-4.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "일반 주류",
+       "name": "아사히 생맥주",
+       "price": 8000
+      },
+      {
+       "category": "일반 주류",
+       "name": "카스 생맥주",
+       "price": 5000
+      },
+      {
+       "category": "일반 주류",
+       "name": "테라 / 켈러 / 카스 병맥주",
+       "price": 5000
+      },
+      {
+       "category": "일반 주류",
+       "name": "참이슬 / 진로이즈백 / 진로골드",
+       "price": 5000
+      },
+      {
+       "category": "일반 주류",
+       "name": "처음처럼 / 새로 / 새로 다래 / 새로 살구",
+       "price": 5000
+      },
+      {
+       "category": "일반 주류",
+       "name": "청하 / 별빛청하 / 한라산21",
+       "price": 6000
+      },
+      {
+       "category": "일반 주류",
+       "name": "일품진로 25",
+       "price": 30000
+      },
+      {
+       "category": "일반 주류",
+       "name": "화요 25",
+       "price": 30000
+      },
+      {
+       "category": "일반 주류",
+       "name": "토닉워터 / 탄산수",
+       "price": 2500
+      },
+      {
+       "category": "일반 주류",
+       "name": "레몬 슬라이스",
+       "price": 2000
+      },
+      {
+       "category": "일반 주류",
+       "name": "콜라 / 사이다 / 환타파인 / ZERO콜라, 사이다",
+       "price": 2500
+      },
+      {
+       "category": "일반 주류",
+       "name": "무알콜 맥주 카스 300ml",
+       "price": 4000
+      },
+      {
+       "category": "하이볼",
+       "name": "산토리 가쿠빈 하이볼",
+       "price": 8000
+      },
+      {
+       "category": "하이볼",
+       "name": "짐빔 하이볼",
+       "price": 8000
+      },
+      {
+       "category": "하이볼",
+       "name": "얼그레이 하이볼",
+       "price": 8000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260910_184410.jpg.jpeg",
+     "fid": "F0C163ZLL20",
+     "from": "댓글",
+     "path": "menu-files/1789085825_848849-5.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "토모루 팩 사케",
+       "name": "간바레오토상",
+       "price": 35000
+      },
+      {
+       "category": "토모루 팩 사케",
+       "name": "마루900",
+       "price": 35000
+      },
+      {
+       "category": "토모루 팩 사케",
+       "name": "탄레이준마이",
+       "price": 35000
+      },
+      {
+       "category": "토모루 팩 사케",
+       "name": "하쿠센 유즈슈",
+       "price": 39000
+      },
+      {
+       "category": "일본소주",
+       "name": "쿠로기리시마",
+       "price": 85000
+      },
+      {
+       "category": "일본소주",
+       "name": "비잔클리어",
+       "price": 50000
+      },
+      {
+       "category": "잔술",
+       "name": "도쿠리 (한홉)",
+       "price": 7000
+      },
+      {
+       "category": "잔술",
+       "name": "히레사케",
+       "price": 7000
+      },
+      {
+       "category": "잔술",
+       "name": "잔 (반홉)",
+       "price": 6000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260910_184400.jpg.jpeg",
+     "fid": "F0C1WQF6REC",
+     "from": "댓글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "토모루 병 사케",
+       "name": "온나나카세",
+       "price": 95000
+      },
+      {
+       "category": "토모루 병 사케",
+       "name": "월계관준마이 다이긴죠",
+       "price": 85000
+      },
+      {
+       "category": "토모루 병 사케",
+       "name": "다카시미즈준마이",
+       "price": 59000
+      },
+      {
+       "category": "토모루 병 사케",
+       "name": "쿠로마츠 준마이 모미오단",
+       "price": 42000
+      },
+      {
+       "category": "토모루 병 사케",
+       "name": "기자쿠라 쿠쿠 준마이",
+       "price": 39000
+      },
+      {
+       "category": "토모루 병 사케",
+       "name": "월계관 준마이 750",
+       "price": 35000
+      },
+      {
+       "category": "토모루 병 사케",
+       "name": "센 300",
+       "price": 9000
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1789085829.102889",
+   "rc": 2,
+   "lr": "1789086119.269239",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -44,7 +467,6 @@ window.MENU_REQUESTS = {
      "name": "=_UTF-8_B_UmVzaXplZF8zMDU2OV84NDY5MzQxOD",
      "fid": "F0C10E2NVHU",
      "from": "댓글",
-     "path": "menu-files/1789085425_941379-0.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -72,13 +494,43 @@ window.MENU_REQUESTS = {
        "name": "토닥 세트",
        "price": 7000
       }
+     ],
+     "path": "menu-files/1789085425_941379-0.jpeg"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C0W70HFK5",
+     "from": "댓글",
+     "path": "menu-files/1789085425_941379-1.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "가1)황태+순살치킨",
+       "price": 42000
+      },
+      {
+       "category": "",
+       "name": "2)떡볶이+통오징어",
+       "price": 35000
+      },
+      {
+       "category": "",
+       "name": "살치킨+떡볶이+건어물",
+       "price": 59000
+      },
+      {
+       "category": "",
+       "name": "+떡볶이+어묵탕+",
+       "price": 76000
+      }
      ]
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1789085480.206539",
+   "rc": 3,
+   "lr": "1789086121.985559",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
