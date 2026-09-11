@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9968,
+  "version": 9969,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -172491,9 +172491,13 @@ window.SLACK_DATA = {
         "as": {
           "김동욱": 1,
           "김기범": 2,
+          "미지정": 2,
           "배선유": 1,
           "김현기": 1,
-          "미지정": 1,
+          "송태양": 1
+        },
+        "transfer": {
+          "배선유": 1,
           "송태양": 1
         },
         "menu": {
@@ -172503,6 +172507,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:00",
+          "store": "역시해장국",
+          "biz": "1307800519",
+          "cat": "transfer",
+          "emp": "배선유",
+          "req": "9월 11일 오전 10시/ 메뉴복사O / 프론트, 유프",
+          "hw": "",
+          "intake": "online",
+          "note": "명변완"
+        },
         {
           "time": "09:59",
           "store": "카파쓰(SMARTRO)",
@@ -172526,6 +172541,17 @@ window.SLACK_DATA = {
           "note": "인터넷 연결끈겨 KT 전화안내"
         },
         {
+          "time": "09:54",
+          "store": "청진동해장국",
+          "biz": "2090852270",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "토스포스 안열림",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
           "time": "09:40",
           "store": "주커피 한국산업기술대점",
           "biz": "1211050752",
@@ -172546,6 +172572,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "rj45케이블 분실한 것 같음 / 구매링크 전달 / 구매 및 찾아보고 재인입 예정"
+        },
+        {
+          "time": "09:30",
+          "store": "다마트다",
+          "biz": "3382002347",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "9월 11일 오전 10시 / 메뉴복사O / 프론트, 유프",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트 9600 / 명변 완료입니다"
         },
         {
           "time": "09:27",
@@ -172604,7 +172641,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 4,
+        "online": 7,
         "offline": 5,
         "unknown": 0
       },
@@ -172759,10 +172796,6 @@ window.SLACK_DATA = {
       "1789030101.485939": {
         "post": "1789030101.485939",
         "lastSeen": 1789071327.499
-      },
-      "1789088051.760609": {
-        "post": "1789088051.760609",
-        "lastSeen": 1789088595.935
       }
     },
     "days": {
@@ -225582,7 +225615,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-11 10:03",
+    "at": "2026-09-11 10:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
