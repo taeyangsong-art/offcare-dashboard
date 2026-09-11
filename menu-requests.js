@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1929,
- "updatedAt": "2026-09-11 12:20",
+ "version": 1930,
+ "updatedAt": "2026-09-11 12:45",
  "days": 30,
  "items": [
   {
@@ -59064,35 +59064,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786506587398659"
-  },
-  {
-   "ts": "1786506172.023379",
-   "date": "2026-08-12",
-   "time": "12:42",
-   "store": "온기",
-   "biz": "6948103626",
-   "pos": "토스포스",
-   "content": "지은테스트",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/16aH049KHvASvJjUoZULxHX0j7eqncT6m/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "16aH049KHvASvJjUoZULxHX0j7eqncT6m",
-     "kind": "other",
-     "menu": []
-    }
-   ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1786506176.556379",
-   "rfx": 3,
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786506172023379"
   }
  ],
  "ocr": {
