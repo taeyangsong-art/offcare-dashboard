@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1934,
- "updatedAt": "2026-09-11 14:15",
+ "version": 1935,
+ "updatedAt": "2026-09-11 14:59",
  "days": 30,
  "items": [
   {
@@ -53,18 +53,19 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C15QARMG9",
      "from": "댓글",
-     "path": "menu-files/1789093371_739099-1.png",
      "kind": "other",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1789093371_739099-1.png"
     }
    ],
    "datt": [],
    "replies": [
     "사업자번호 조회xx",
-    "이미지파일zip은 권한 없어서 안열림"
+    "이미지파일zip은 권한 없어서 안열림",
+    "서민제육 어제작업한 다른매장있긴한디"
    ],
-   "rc": 3,
-   "lr": "1789103512.192819",
+   "rc": 4,
+   "lr": "1789106321.925089",
    "rfx": 3,
    "status": "wait",
    "handler": null,
