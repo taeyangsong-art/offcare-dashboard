@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1939,
- "updatedAt": "2026-09-11 17:14",
+ "version": 1940,
+ "updatedAt": "2026-09-11 17:45",
  "days": 30,
  "items": [
   {
@@ -58309,78 +58309,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786524901613069"
-  },
-  {
-   "ts": "1786523837.015949",
-   "date": "2026-08-12",
-   "time": "17:37",
-   "store": "김마리 야탑점",
-   "biz": "4155900952",
-   "pos": "퍼스트포스",
-   "content": "안녕하세요, 대표님께서 8/7 날짜로 메뉴 등록 요청 rm 메일로 보내셨다 하셨는데 아직 등록이 안됐다 하셔서요! 김마리 야탑점, 서현점, 태전점 키오스크 메뉴 사진 등재 부탁드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "돈까스 김치나베.png",
-     "fid": "F0BPH8C5SEP",
-     "from": "댓글",
-     "kind": "product_photo",
-     "menu": [],
-     "path": "menu-files/1786523837_015949-0.png"
-    },
-    {
-     "name": "까르보라나 크림 떡볶이 .png",
-     "fid": "F0BQHRKFDH6",
-     "from": "댓글",
-     "kind": "product_photo",
-     "menu": [],
-     "path": "menu-files/1786523837_015949-1.png"
-    },
-    {
-     "name": "감태 명란 아보카도 김밥 소스.png",
-     "fid": "F0BPKU58V9B",
-     "from": "댓글",
-     "kind": "product_photo",
-     "menu": [],
-     "path": "menu-files/1786523837_015949-2.png"
-    },
-    {
-     "name": "스파이시 닭가슴살 김밥.png",
-     "fid": "F0BPKU7BV29",
-     "from": "댓글",
-     "kind": "product_photo",
-     "menu": [],
-     "path": "menu-files/1786523837_015949-3.png"
-    },
-    {
-     "name": "바질페스토 크림 우동.png",
-     "fid": "F0BPH8G4L4T",
-     "from": "댓글",
-     "kind": "product_photo",
-     "menu": [],
-     "path": "menu-files/1786523837_015949-4.png"
-    },
-    {
-     "name": "명란마요 크래미 김밥 소스.png",
-     "fid": "F0BPPEZKPRQ",
-     "from": "댓글",
-     "kind": "product_photo",
-     "menu": [],
-     "path": "menu-files/1786523837_015949-5.png"
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "메일 제목 : 김마리 야탑점 메뉴사진 총 6개 등록부탁드려요\n혹시 사진 첨부 필요하면 제가 하겠습니다..!"
-   ],
-   "rc": 5,
-   "lr": "1786533151.389959",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786523837015949"
   }
  ],
  "ocr": {
