@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9966,
+  "version": 9967,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -172489,9 +172489,10 @@ window.SLACK_DATA = {
     "2026-09-11": {
       "counts": {
         "as": {
+          "김동욱": 1,
+          "김기범": 2,
           "배선유": 1,
           "김현기": 1,
-          "김기범": 1,
           "미지정": 1,
           "송태양": 1
         },
@@ -172502,6 +172503,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:59",
+          "store": "카파쓰(SMARTRO)",
+          "biz": "2200279541",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "고객영수증 서명 출력",
+          "hw": "",
+          "intake": "offline",
+          "note": "고객용 영수증 서명 인쇄 설정 완료."
+        },
+        {
+          "time": "09:58",
+          "store": "드롭탑 세종도담점",
+          "biz": "8323701213",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "포스 프로그램이 실행이 안됨",
+          "hw": "",
+          "intake": "offline",
+          "note": "인터넷 연결끈겨 KT 전화안내"
+        },
         {
           "time": "09:40",
           "store": "주커피 한국산업기술대점",
@@ -172582,10 +172605,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 4,
-        "offline": 3,
+        "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "09:54"
+      "updatedAt": "09:59"
     }
   },
   "resp": {
@@ -172739,7 +172762,7 @@ window.SLACK_DATA = {
       },
       "1789088051.760609": {
         "post": "1789088051.760609",
-        "lastSeen": 1789088210.059
+        "lastSeen": 1789088361.853
       }
     },
     "days": {
@@ -225559,7 +225582,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-11 09:57",
+    "at": "2026-09-11 09:59",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
