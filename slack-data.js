@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10018,
+  "version": 10019,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -172506,12 +172506,23 @@ window.SLACK_DATA = {
           "송태양": 1
         },
         "menu": {
-          "배선유": 3,
+          "배선유": 4,
           "김규빈": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:47",
+          "store": "더멀리",
+          "biz": "3976300914",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 완료"
+        },
         {
           "time": "13:59",
           "store": "효소온 부산역 효소온Lab",
@@ -172701,31 +172712,35 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 12,
+        "online": 13,
         "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "16:20",
+      "updatedAt": "16:37",
       "voc": {
-        "responses": 2,
+        "responses": 3,
         "install": {
           "count": 0,
           "low": 0
         },
         "nps": {
-          "count": 2,
+          "count": 3,
           "low": 0
         },
         "high": {
           "install": 0,
-          "nps": 2
+          "nps": 3
         },
         "npsDist": {
-          "10": 2
+          "10": 3
         },
         "installDist": {},
         "byIndustry": {},
         "byTenure": {
+          "1개월": {
+            "total": 1,
+            "low": 0
+          },
           "12개월": {
             "total": 1,
             "low": 0
@@ -172736,6 +172751,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 1,
+            "low": 0
+          },
           "KIS": {
             "total": 1,
             "low": 0
@@ -172862,26 +172881,22 @@ window.SLACK_DATA = {
       },
       "1789089865.885659": {
         "post": "1789089865.885659",
-        "lastSeen": 1789111835.965
+        "lastSeen": 1789112422.874
       },
       "1789090860.543319": {
         "post": "1789090860.543319",
-        "lastSeen": 1789111835.965
+        "lastSeen": 1789112422.874
       },
       "1789100785.323739": {
         "post": "1789100785.323739",
-        "lastSeen": 1789111835.965,
+        "lastSeen": 1789112422.874,
         "r": 1,
         "day": "2026-09-11",
         "idx": 2
       },
-      "1789109276.778279": {
-        "post": "1789109276.778279",
-        "lastSeen": 1789111835.965
-      },
-      "1789093608.594209": {
-        "post": "1789093608.594209",
-        "lastSeen": 1789111835.965
+      "1789093371.739099": {
+        "post": "1789093371.739099",
+        "lastSeen": 1789112422.874
       }
     },
     "days": {
@@ -225709,7 +225724,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-11 16:30",
+    "at": "2026-09-11 16:40",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
