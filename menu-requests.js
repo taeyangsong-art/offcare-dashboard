@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1923,
- "updatedAt": "2026-09-11 09:28",
+ "version": 1924,
+ "updatedAt": "2026-09-11 09:37",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "Resized_20260910_184239.jpg.jpeg",
      "fid": "F0C1WQE7740",
      "from": "댓글",
-     "path": "menu-files/1789085825_848849-0.jpeg",
      "kind": "menu_board",
      "menu": [
       {
@@ -51,13 +50,13 @@ window.MENU_REQUESTS = {
        "name": "SET C 수제감자고로케 + 탄탄면",
        "price": 33000
       }
-     ]
+     ],
+     "path": "menu-files/1789085825_848849-0.jpeg"
     },
     {
      "name": "Resized_20260910_184302.jpg.jpeg",
      "fid": "F0C14BT1FCH",
      "from": "댓글",
-     "path": "menu-files/1789085825_848849-1.jpeg",
      "kind": "menu_board",
      "menu": [
       {
@@ -120,13 +119,13 @@ window.MENU_REQUESTS = {
        "name": "간단 연어회",
        "price": 14000
       }
-     ]
+     ],
+     "path": "menu-files/1789085825_848849-1.jpeg"
     },
     {
      "name": "Resized_20260910_184316.jpg.jpeg",
      "fid": "F0C0XRSG76Z",
      "from": "댓글",
-     "path": "menu-files/1789085825_848849-2.jpeg",
      "kind": "menu_board",
      "menu": [
       {
@@ -189,13 +188,13 @@ window.MENU_REQUESTS = {
        "name": "해장 해물 라면",
        "price": 10000
       }
-     ]
+     ],
+     "path": "menu-files/1789085825_848849-2.jpeg"
     },
     {
      "name": "Resized_20260910_184339.jpg.jpeg",
      "fid": "F0C1WQEMYD6",
      "from": "댓글",
-     "path": "menu-files/1789085825_848849-3.jpeg",
      "kind": "menu_board",
      "menu": [
       {
@@ -258,13 +257,13 @@ window.MENU_REQUESTS = {
        "name": "타코 와사비",
        "price": 14000
       }
-     ]
+     ],
+     "path": "menu-files/1789085825_848849-3.jpeg"
     },
     {
      "name": "Resized_20260910_184351.jpg.jpeg",
      "fid": "F0C0W6Z45L3",
      "from": "댓글",
-     "path": "menu-files/1789085825_848849-4.jpeg",
      "kind": "menu_board",
      "menu": [
       {
@@ -342,13 +341,13 @@ window.MENU_REQUESTS = {
        "name": "얼그레이 하이볼",
        "price": 8000
       }
-     ]
+     ],
+     "path": "menu-files/1789085825_848849-4.jpeg"
     },
     {
      "name": "Resized_20260910_184410.jpg.jpeg",
      "fid": "F0C163ZLL20",
      "from": "댓글",
-     "path": "menu-files/1789085825_848849-5.jpeg",
      "kind": "menu_board",
      "menu": [
       {
@@ -396,7 +395,8 @@ window.MENU_REQUESTS = {
        "name": "잔 (반홉)",
        "price": 6000
       }
-     ]
+     ],
+     "path": "menu-files/1789085825_848849-5.jpeg"
     },
     {
      "name": "Resized_20260910_184400.jpg.jpeg",
@@ -444,10 +444,10 @@ window.MENU_REQUESTS = {
    ],
    "datt": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1789086119.269239",
+   "rc": 3,
+   "lr": "1789086970.480839",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789085825848849"
   },
