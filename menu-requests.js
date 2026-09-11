@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1942,
- "updatedAt": "2026-09-11 18:15",
+ "version": 1943,
+ "updatedAt": "2026-09-11 18:30",
  "days": 30,
  "items": [
   {
@@ -58087,89 +58087,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786578988940389"
-  },
-  {
-   "ts": "1786526770.111489",
-   "date": "2026-08-12",
-   "time": "18:26",
-   "store": "미라클밥상",
-   "biz": "0623808645",
-   "pos": "토스포스",
-   "content": "수정은 아니고 추가요\n혼족세트19900원 \n혼보세트19900원\n주류 후레쉬,처음처럼,새로,이즈백,카스,테라 5000원 올려주세요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BPTE3K65A",
-     "from": "댓글",
-     "path": "menu-files/1786526770_111489-0.png",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "주류/음료",
-       "name": "참이슬",
-       "price": 5000
-      },
-      {
-       "category": "주류/음료",
-       "name": "이즈백",
-       "price": 5000
-      },
-      {
-       "category": "주류/음료",
-       "name": "새로",
-       "price": 5000
-      },
-      {
-       "category": "주류/음료",
-       "name": "처음처럼",
-       "price": 5000
-      },
-      {
-       "category": "주류/음료",
-       "name": "카스",
-       "price": 5000
-      },
-      {
-       "category": "주류/음료",
-       "name": "테라",
-       "price": 5000
-      }
-     ]
-    },
-    {
-     "name": "image.png",
-     "fid": "F0BPL7GRXV3",
-     "from": "댓글",
-     "path": "menu-files/1786526770_111489-1.png",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "족발",
-       "name": "혼족세트",
-       "price": 19900
-      },
-      {
-       "category": "족발",
-       "name": "혼보세트",
-       "price": 19900
-      }
-     ]
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "···",
-    "메뉴 등록 이미 되어있어서 안내드림"
-   ],
-   "rc": 4,
-   "lr": "1786527466.583179",
-   "rfx": 3,
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786526770111489"
   }
  ],
  "ocr": {
