@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10030,
+  "version": 10031,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -172727,30 +172727,31 @@ window.SLACK_DATA = {
         "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "16:37",
+      "updatedAt": "18:37",
       "voc": {
-        "responses": 3,
+        "responses": 4,
         "install": {
           "count": 0,
           "low": 0
         },
         "nps": {
-          "count": 3,
-          "low": 0
+          "count": 4,
+          "low": 1
         },
         "high": {
           "install": 0,
           "nps": 3
         },
         "npsDist": {
+          "0": 1,
           "10": 3
         },
         "installDist": {},
         "byIndustry": {},
         "byTenure": {
           "1개월": {
-            "total": 1,
-            "low": 0
+            "total": 2,
+            "low": 1
           },
           "12개월": {
             "total": 1,
@@ -172762,6 +172763,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SMARTRO": {
+            "total": 2,
+            "low": 1
+          },
           "KPN": {
             "total": 1,
             "low": 0
@@ -172769,14 +172774,35 @@ window.SLACK_DATA = {
           "KIS": {
             "total": 1,
             "low": 0
-          },
-          "SMARTRO": {
-            "total": 1,
-            "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 1
+        },
+        "alerts": [
+          {
+            "time": "18:37",
+            "store": "엔터",
+            "storeId": "584915",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "수수료가 생각보다 비싸요. 그리고 프린터를 구하기가 어려워요",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
         "praises": []
       }
     }
@@ -172877,22 +172903,22 @@ window.SLACK_DATA = {
       },
       "1789089865.885659": {
         "post": "1789089865.885659",
-        "lastSeen": 1789119038.876
+        "lastSeen": 1789119927.718
       },
       "1789090860.543319": {
         "post": "1789090860.543319",
-        "lastSeen": 1789119038.876
+        "lastSeen": 1789119927.718
       },
       "1789100785.323739": {
         "post": "1789100785.323739",
-        "lastSeen": 1789119038.876,
+        "lastSeen": 1789119927.718,
         "r": 1,
         "day": "2026-09-11",
         "idx": 2
       },
-      "1789093608.594209": {
-        "post": "1789093608.594209",
-        "lastSeen": 1789119038.876
+      "1789093371.739099": {
+        "post": "1789093371.739099",
+        "lastSeen": 1789119927.718
       }
     },
     "days": {
@@ -225720,7 +225746,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-11 18:30",
+    "at": "2026-09-11 18:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
