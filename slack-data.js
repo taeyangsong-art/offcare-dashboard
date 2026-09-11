@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9958,
+  "version": 9959,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -172508,7 +172508,7 @@ window.SLACK_DATA = {
           "req": "결제오류",
           "hw": "",
           "intake": "offline",
-          "note": ""
+          "note": "매장특성상(역내 매장) 인터넷성능저하로 프론트 결제 월활치않아 되었다 안되었다 확인. 백업단말기로 승인처리하시겠다고합니다."
         },
         {
           "time": "09:10",
@@ -172538,7 +172538,7 @@ window.SLACK_DATA = {
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:27"
+      "updatedAt": "09:30"
     }
   },
   "resp": {
@@ -172689,6 +172689,14 @@ window.SLACK_DATA = {
       "1789030101.485939": {
         "post": "1789030101.485939",
         "lastSeen": 1789071327.499
+      },
+      "1789086600.542859": {
+        "post": "1789086600.542859",
+        "lastSeen": 1789086624.647
+      },
+      "1789086600.580559": {
+        "post": "1789086600.580559",
+        "lastSeen": 1789086624.647
       }
     },
     "days": {
@@ -225499,7 +225507,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-11 09:28",
+    "at": "2026-09-11 09:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
