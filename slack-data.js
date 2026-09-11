@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9964,
+  "version": 9965,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -172490,6 +172490,7 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "배선유": 1,
+          "김현기": 1,
           "김기범": 1,
           "미지정": 1,
           "송태양": 1
@@ -172511,6 +172512,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "주방주문서 출력으로 변경 / 각종 사용설명"
+        },
+        {
+          "time": "09:30",
+          "store": "젤리나영어",
+          "biz": "7609001534",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "태블릿 + 프론트 연결 후 사용 중 유선프린터 연결 온보딩 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "rj45케이블 분실한 것 같음 / 구매링크 전달 / 구매 및 찾아보고 재인입 예정"
         },
         {
           "time": "09:27",
@@ -172569,11 +172581,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 3,
+        "online": 4,
         "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "09:40"
+      "updatedAt": "09:54"
     }
   },
   "resp": {
@@ -172725,12 +172737,13 @@ window.SLACK_DATA = {
         "post": "1789030101.485939",
         "lastSeen": 1789071327.499
       },
-      "1789086600.542859": {
-        "post": "1789086600.542859",
-        "lastSeen": 1789087821.335,
-        "r": 1,
-        "day": "2026-09-11",
-        "idx": 1
+      "1789088051.760609": {
+        "post": "1789088051.760609",
+        "lastSeen": 1789088122.683
+      },
+      "1789086600.580559": {
+        "post": "1789086600.580559",
+        "lastSeen": 1789088122.683
       }
     },
     "days": {
@@ -225542,14 +225555,15 @@ window.SLACK_DATA = {
             "store": "젤리나영어",
             "biz": "7609001534",
             "who": "김현기",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 22.9
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-11 09:50",
+    "at": "2026-09-11 09:55",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
