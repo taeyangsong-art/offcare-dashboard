@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1922,
- "updatedAt": "2026-09-11 09:23",
+ "version": 1923,
+ "updatedAt": "2026-09-11 09:28",
  "days": 30,
  "items": [
   {
@@ -447,8 +447,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1789086119.269239",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789085825848849"
   },
   {
@@ -501,7 +501,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C0W70HFK5",
      "from": "댓글",
-     "path": "menu-files/1789085425_941379-1.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -524,15 +523,16 @@ window.MENU_REQUESTS = {
        "name": "+떡볶이+어묵탕+",
        "price": 76000
       }
-     ]
+     ],
+     "path": "menu-files/1789085425_941379-1.png"
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 3,
-   "lr": "1789086121.985559",
+   "rc": 4,
+   "lr": "1789086451.406629",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789085425941379"
   },

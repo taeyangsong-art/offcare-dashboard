@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9957,
+  "version": 9958,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -168151,6 +168151,17 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "19:42",
+          "store": "엔젤아쿠아",
+          "biz": "6102951802",
+          "handler": "송태양",
+          "cat": "transfer",
+          "intake": "online",
+          "reasons": [
+            "1차 부재"
+          ]
+        },
+        {
           "time": "18:48",
           "store": "",
           "biz": "",
@@ -172042,7 +172053,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 302,
+        "online": 303,
         "offline": 49,
         "unknown": 0
       },
@@ -172465,15 +172476,69 @@ window.SLACK_DATA = {
       }
     },
     "2026-09-11": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "김기범": 1,
+          "미지정": 1,
+          "송태양": 1
+        },
+        "menu": {
+          "배선유": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:27",
+          "store": "도피오커피인 킨텍스점",
+          "biz": "1378549995",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "프론트 ic인식안됨",
+          "hw": "",
+          "intake": "offline",
+          "note": "프론트교체 월요일방문"
+        },
+        {
+          "time": "09:17",
+          "store": "어묵나라(월곡점)",
+          "biz": "3132400595",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "결제오류",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
+        {
+          "time": "09:10",
+          "store": "순둥이네 대구고성점",
+          "biz": "4433701221",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "메뉴 추가 요청",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / / 글자 짤림..ㅠㅜㅜ / ai맹신론자 등록 완료"
+        },
+        {
+          "time": "09:00",
+          "store": "역시해장국",
+          "biz": "1307800519",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "9월 11일 오전 9시 30분/ 메뉴복사O / 프론트, 유프",
+          "hw": "",
+          "intake": "online",
+          "note": "com5 / 영수증 주문서 모든상품"
+        }
+      ],
       "intake": {
-        "online": 0,
-        "offline": 0,
+        "online": 2,
+        "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:17"
+      "updatedAt": "09:27"
     }
   },
   "resp": {
@@ -172624,14 +172689,6 @@ window.SLACK_DATA = {
       "1789030101.485939": {
         "post": "1789030101.485939",
         "lastSeen": 1789071327.499
-      },
-      "1789085837.700219": {
-        "post": "1789085837.700219",
-        "lastSeen": 1789086139.825
-      },
-      "1789084815.105109": {
-        "post": "1789084815.105109",
-        "lastSeen": 1789086139.825
       }
     },
     "days": {
@@ -225422,11 +225479,27 @@ window.SLACK_DATA = {
             "dmin": 23.1
           }
         ]
+      },
+      "2026-09-11": {
+        "cnt": 1,
+        "sumMin": 25.11428985198339,
+        "over": 0,
+        "items": [
+          {
+            "hm": "09:00",
+            "min": 25.1,
+            "store": "역시해장국",
+            "biz": "1307800519",
+            "who": "송태양",
+            "cat": "as",
+            "dmin": 25.1
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-11 09:22",
+    "at": "2026-09-11 09:28",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
