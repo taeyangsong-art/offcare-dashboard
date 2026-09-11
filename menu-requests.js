@@ -3,10 +3,66 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1919,
- "updatedAt": "2026-09-11 00:31",
+ "version": 1920,
+ "updatedAt": "2026-09-11 09:11",
  "days": 30,
  "items": [
+  {
+   "ts": "1789085425.941379",
+   "date": "2026-09-11",
+   "time": "09:10",
+   "store": "순둥이네 대구고성점",
+   "biz": "4433701221",
+   "pos": "",
+   "content": "메뉴 추가 요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8zMDU2OV84NDY5MzQxOD",
+     "fid": "F0C10E2NVHU",
+     "from": "댓글",
+     "path": "menu-files/1789085425_941379-0.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "화요25토닥세트",
+       "price": 32000
+      },
+      {
+       "category": "",
+       "name": "화요41토닥세트",
+       "price": 49000
+      },
+      {
+       "category": "",
+       "name": "한라토닥세트",
+       "price": 13500
+      },
+      {
+       "category": "",
+       "name": "소주토닥세트",
+       "price": 12000
+      },
+      {
+       "category": "",
+       "name": "토닥 세트",
+       "price": 7000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1789085480.206539",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789085425941379"
+  },
   {
    "ts": "1789053624.416339",
    "date": "2026-09-11",
