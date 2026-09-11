@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10003,
+  "version": 10004,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -172488,6 +172488,10 @@ window.SLACK_DATA = {
     },
     "2026-09-11": {
       "counts": {
+        "onboarding": {
+          "김동욱": 1,
+          "최민석": 1
+        },
         "as": {
           "서상원": 1,
           "김동욱": 1,
@@ -172496,9 +172500,6 @@ window.SLACK_DATA = {
           "배선유": 1,
           "김현기": 1,
           "송태양": 1
-        },
-        "onboarding": {
-          "최민석": 1
         },
         "transfer": {
           "배선유": 1,
@@ -172511,6 +172512,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "13:59",
+          "store": "효소온 부산역 효소온Lab",
+          "biz": "6901003056",
+          "cat": "onboarding",
+          "emp": "김동욱",
+          "req": "전문송수신오류 EOT 수신 오류 / 토플건",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료"
+        },
         {
           "time": "10:38",
           "store": "이오미술교습소",
@@ -172667,11 +172679,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 9,
+        "online": 10,
         "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "13:55",
+      "updatedAt": "13:59",
       "voc": {
         "responses": 1,
         "install": {
@@ -172834,26 +172846,26 @@ window.SLACK_DATA = {
       },
       "1789089865.885659": {
         "post": "1789089865.885659",
-        "lastSeen": 1789102639.605
+        "lastSeen": 1789102821.525
       },
       "1789090860.543319": {
         "post": "1789090860.543319",
-        "lastSeen": 1789102639.605
+        "lastSeen": 1789102821.525
       },
       "1789100785.323739": {
         "post": "1789100785.323739",
-        "lastSeen": 1789102639.605,
+        "lastSeen": 1789102821.525,
         "r": 1,
         "day": "2026-09-11",
         "idx": 2
       },
-      "1789096802.999089": {
-        "post": "1789096802.999089",
-        "lastSeen": 1789102639.605
+      "1789102558.149029": {
+        "post": "1789102558.149029",
+        "lastSeen": 1789102821.525
       },
-      "1789093371.739099": {
-        "post": "1789093371.739099",
-        "lastSeen": 1789102639.605
+      "1789093608.594209": {
+        "post": "1789093608.594209",
+        "lastSeen": 1789102821.525
       }
     },
     "days": {
@@ -225681,7 +225693,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-11 13:57",
+    "at": "2026-09-11 14:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
