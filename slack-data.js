@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 9977,
+  "version": 9978,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -172489,12 +172489,16 @@ window.SLACK_DATA = {
     "2026-09-11": {
       "counts": {
         "as": {
+          "서상원": 1,
           "김동욱": 1,
           "김기범": 2,
           "미지정": 2,
           "배선유": 1,
           "김현기": 1,
           "송태양": 1
+        },
+        "onboarding": {
+          "최민석": 1
         },
         "transfer": {
           "배선유": 1,
@@ -172507,6 +172511,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:38",
+          "store": "이오미술교습소",
+          "biz": "3669002516",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "가결제 / 토페 가MID 뽑혔는지 확인해보고 매핑확인하고 처리",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "10:30",
+          "store": "단미뷰티",
+          "biz": "8480401689",
+          "cat": "onboarding",
+          "emp": "최민석",
+          "req": "포스기+유프+금전함 온보딩 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포프유프 온보딩 완료"
+        },
         {
           "time": "10:00",
           "store": "역시해장국",
@@ -172641,11 +172667,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 7,
+        "online": 9,
         "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "10:38"
+      "updatedAt": "10:41"
     }
   },
   "resp": {
@@ -172699,10 +172725,6 @@ window.SLACK_DATA = {
       },
       "1788941787.819719": {
         "post": "1788941787.819719",
-        "lastSeen": 1788984928.581
-      },
-      "1788918116.134959": {
-        "post": "1788918116.134959",
         "lastSeen": 1788984928.581
       },
       "1789004447.535259": {
@@ -172799,7 +172821,11 @@ window.SLACK_DATA = {
       },
       "1789089865.885659": {
         "post": "1789089865.885659",
-        "lastSeen": 1789090712.214
+        "lastSeen": 1789090939.059
+      },
+      "1789090860.543319": {
+        "post": "1789090860.543319",
+        "lastSeen": 1789090939.059
       }
     },
     "days": {
@@ -225619,7 +225645,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-11 10:38",
+    "at": "2026-09-11 10:42",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
