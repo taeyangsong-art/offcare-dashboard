@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10011,
+  "version": 10012,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -172705,33 +172705,41 @@ window.SLACK_DATA = {
         "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "13:59",
+      "updatedAt": "15:30",
       "voc": {
-        "responses": 1,
+        "responses": 2,
         "install": {
           "count": 0,
           "low": 0
         },
         "nps": {
-          "count": 1,
+          "count": 2,
           "low": 0
         },
         "high": {
           "install": 0,
-          "nps": 1
+          "nps": 2
         },
         "npsDist": {
-          "10": 1
+          "10": 2
         },
         "installDist": {},
         "byIndustry": {},
         "byTenure": {
+          "12개월": {
+            "total": 1,
+            "low": 0
+          },
           "6개월": {
             "total": 1,
             "low": 0
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 1,
+            "low": 0
+          },
           "SMARTRO": {
             "total": 1,
             "low": 0
@@ -172861,22 +172869,22 @@ window.SLACK_DATA = {
       },
       "1789089865.885659": {
         "post": "1789089865.885659",
-        "lastSeen": 1789107326.089
+        "lastSeen": 1789108236.235
       },
       "1789090860.543319": {
         "post": "1789090860.543319",
-        "lastSeen": 1789107326.089
+        "lastSeen": 1789108236.235
       },
       "1789100785.323739": {
         "post": "1789100785.323739",
-        "lastSeen": 1789107326.089,
+        "lastSeen": 1789108236.235,
         "r": 1,
         "day": "2026-09-11",
         "idx": 2
       },
-      "1789093371.739099": {
-        "post": "1789093371.739099",
-        "lastSeen": 1789107326.089
+      "1789093608.594209": {
+        "post": "1789093608.594209",
+        "lastSeen": 1789108236.235
       }
     },
     "days": {
@@ -225704,7 +225712,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-11 15:15",
+    "at": "2026-09-11 15:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
