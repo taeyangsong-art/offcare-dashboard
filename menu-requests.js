@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1932,
- "updatedAt": "2026-09-11 13:15",
+ "version": 1933,
+ "updatedAt": "2026-09-11 13:27",
  "days": 30,
  "items": [
   {
@@ -14828,8 +14828,7 @@ window.MENU_REQUESTS = {
        "name": "메리골드, 국화, 목련, 벚꽃, 유자, 자몽 ( hot / ice )",
        "price": 5500
       }
-     ],
-     "path": "menu-files/1788495944_435849-0.png"
+     ]
     }
    ],
    "datt": [],
