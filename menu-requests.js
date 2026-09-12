@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1945,
- "updatedAt": "2026-09-12 09:30",
+ "version": 1946,
+ "updatedAt": "2026-09-12 10:30",
  "days": 30,
  "items": [
   {
@@ -57477,87 +57477,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786586364654609"
-  },
-  {
-   "ts": "1786584386.236289",
-   "date": "2026-08-13",
-   "time": "10:26",
-   "store": "코모스유통 (주)",
-   "biz": "1068628203",
-   "pos": "토스포스",
-   "content": "상품등록 요청합니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "상품등록정보 POS.xlsx",
-     "fid": "F0BPQAC6MEF",
-     "from": "댓글",
-     "path": "menu-files/1786584386_236289-0.xlsx",
-     "nj": 1
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "구글시트 편집자 권한없음 전화 필요",
-    "메일로 재전달 주시기로함",
-    "뭐여 엑셀 1000개 넘어가면 나눠야되네",
-    "맞아요,,따릅",
-    "완료"
-   ],
-   "rc": 7,
-   "lr": "1786585636.004129",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786584386236289"
-  },
-  {
-   "ts": "1786584337.830119",
-   "date": "2026-08-13",
-   "time": "10:25",
-   "store": "커피창작마을",
-   "biz": "4031498452",
-   "pos": "토스포스",
-   "content": "이메일로 자료 첨부 발송 함",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BQ07M93NY",
-     "from": "댓글",
-     "path": "menu-files/1786584337_830119-0.png",
-     "kind": "other",
-     "menu": []
-    },
-    {
-     "name": "아이스크림 크로플.png",
-     "fid": "F0BPWGF6Q0J",
-     "from": "댓글",
-     "path": "menu-files/1786584337_830119-1.png",
-     "kind": "product_photo",
-     "menu": []
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "이메일 확인 필요",
-    "이전에 보내주신내용임 이미 등록된거같음",
-    "일단 까볼게영",
-    "들어가잇을거유? 어제내가 넣엇눈디",
-    "호잉 그래요",
-    "그럼 안까징",
-    "확인해보라고 문자 날림"
-   ],
-   "rc": 9,
-   "lr": "1786584734.320719",
-   "rfx": 3,
-   "status": "dup",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786584337830119"
   }
  ],
  "ocr": {
