@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10151,
+  "version": 10152,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -172807,12 +172807,28 @@ window.SLACK_DATA = {
       }
     },
     "2026-09-12": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "서상원": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "22:31",
+          "store": "용용선생 서산호수공원점",
+          "biz": "5793601203",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "업데이트 후 프린터 출력불",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        }
+      ],
       "intake": {
         "online": 0,
-        "offline": 0,
+        "offline": 1,
         "unknown": 0
       },
       "updatedAt": "22:31",
@@ -173051,10 +173067,6 @@ window.SLACK_DATA = {
       "1789093608.594209": {
         "post": "1789093608.594209",
         "lastSeen": 1789157726.096
-      },
-      "1789219892.664429": {
-        "post": "1789219892.664429",
-        "lastSeen": 1789219940.595
       }
     },
     "days": {
@@ -225882,7 +225894,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-12 22:32",
+    "at": "2026-09-12 22:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
