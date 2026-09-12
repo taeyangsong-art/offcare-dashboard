@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10120,
+  "version": 10121,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -172815,27 +172815,28 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "15:20",
+      "updatedAt": "15:36",
       "voc": {
-        "responses": 10,
+        "responses": 13,
         "install": {
           "count": 5,
           "low": 0
         },
         "nps": {
-          "count": 10,
-          "low": 1
+          "count": 13,
+          "low": 2
         },
         "high": {
           "install": 5,
-          "nps": 5
+          "nps": 7
         },
         "npsDist": {
+          "4": 1,
           "5": 1,
           "7": 1,
           "8": 2,
           "9": 1,
-          "10": 5
+          "10": 7
         },
         "installDist": {
           "5": 5
@@ -172845,6 +172846,14 @@ window.SLACK_DATA = {
           "요식업": 2
         },
         "byTenure": {
+          "12개월": {
+            "total": 5,
+            "low": 2
+          },
+          "3개월": {
+            "total": 2,
+            "low": 0
+          },
           "구매설치": {
             "total": 5,
             "low": 0
@@ -172852,24 +172861,20 @@ window.SLACK_DATA = {
           "1개월": {
             "total": 1,
             "low": 0
-          },
-          "12개월": {
-            "total": 3,
-            "low": 1
-          },
-          "3개월": {
-            "total": 1,
-            "low": 0
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 6,
+            "low": 2
+          },
+          "KPN": {
+            "total": 1,
+            "low": 0
+          },
           "KOCES": {
             "total": 5,
             "low": 0
-          },
-          "KIS": {
-            "total": 4,
-            "low": 1
           },
           "KOVAN": {
             "total": 1,
@@ -172877,9 +172882,32 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "필요한 기능이 없거나 몰라서 불편": 1,
           "사용중 오류가 자주 발생함": 1
         },
         "alerts": [
+          {
+            "time": "15:36",
+            "store": "미술로 생각하기 동탄2학원",
+            "storeId": "250863",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 4,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 4,
+                "text": "장부기능 매칭이 안되는 경우가 많음",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:06",
             "store": "가은당",
@@ -172904,6 +172932,18 @@ window.SLACK_DATA = {
           }
         ],
         "praises": [
+          {
+            "time": "15:36",
+            "store": "조선대주",
+            "storeId": "220478",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "이번 매장 오픈 전 지난 10년간 개인 매장에서 타사 포스기를 이용했었고, 그전 10년은 다양한 포스기를 경험했는데 토스포스가 제일 깔끔해요. 직관성, 편리성, 이용방법이 어려울때마다, 문의했을때마다 돌아온 피드백과 친절함이 타사에 비례했을때 만족도 가 가장 높아요. CS 교육이 굉장히 잘 되어있다는 느낌을 많이 받았고, 거기다 다양한 기능들까지 토스포스를 이용하지 않을 이유를 찾는 게 더 어려울 정도로 만족하고 있어요. 주변 동료들에게도 항상 토스포스를 추천하는데, 다들 만족스러워해요.앞으로도 오랜시간 함께 했으면 좋겠습니다.",
+            "byReaction": false,
+            "doneDate": ""
+          },
           {
             "time": "15:19",
             "store": "굿모닝 계란(싱싱농장직송직판장 2호점)",
@@ -225842,7 +225882,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-12 15:30",
+    "at": "2026-09-12 15:46",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
