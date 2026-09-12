@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1949,
- "updatedAt": "2026-09-12 11:45",
+ "version": 1950,
+ "updatedAt": "2026-09-12 13:01",
  "days": 30,
  "items": [
   {
@@ -56781,31 +56781,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786593707181269"
-  },
-  {
-   "ts": "1786592758.316319",
-   "date": "2026-08-13",
-   "time": "12:45",
-   "store": "서울혼술바 제주아홉 홍대점",
-   "biz": "8482501985",
-   "pos": "",
-   "content": "*··· >> ···*\n• 제주아홉 혼술바 서울 신촌점 매장의 메뉴를 서울혼술바 제주아홉 홍대점으로 복사 요청주셨습니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "이미 기존에 운영중인 매장이며, 16시쯤 매장에 가신다고 하십니다!",
-    "선유님! 해당 매장 용지출력 이상이 있어 16시에 <#C09HRUSG4TX> 채널에 예약해놓기는했는데 그냥 거기에다가 재온보딩 요청도 남겨놓을까요!",
-    "넵! 위 전달주신 내용으로 추가로 남겨놓겠습니다! 감사합니다:man-bowing:"
-   ],
-   "rc": 8,
-   "lr": "1786595016.702459",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786592758316319"
   }
  ],
  "ocr": {
