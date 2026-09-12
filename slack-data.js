@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10118,
+  "version": 10119,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -172815,22 +172815,24 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "13:36",
+      "updatedAt": "15:14",
       "voc": {
-        "responses": 4,
+        "responses": 6,
         "install": {
           "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 4,
-          "low": 0
+          "count": 6,
+          "low": 1
         },
         "high": {
           "install": 1,
           "nps": 2
         },
         "npsDist": {
+          "5": 1,
+          "7": 1,
           "8": 1,
           "9": 1,
           "10": 2
@@ -172842,9 +172844,13 @@ window.SLACK_DATA = {
           "요식업": 1
         },
         "byTenure": {
-          "12개월": {
-            "total": 2,
+          "1개월": {
+            "total": 1,
             "low": 0
+          },
+          "12개월": {
+            "total": 3,
+            "low": 1
           },
           "3개월": {
             "total": 1,
@@ -172856,17 +172862,46 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
-          "KIS": {
-            "total": 3,
+          "KOCES": {
+            "total": 1,
             "low": 0
+          },
+          "KIS": {
+            "total": 4,
+            "low": 1
           },
           "KOVAN": {
             "total": 1,
             "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1
+        },
+        "alerts": [
+          {
+            "time": "15:06",
+            "store": "가은당",
+            "storeId": "251497",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "피드백이느리다",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
         "praises": [
           {
             "time": "09:48",
@@ -225782,7 +225817,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-12 15:00",
+    "at": "2026-09-12 15:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
