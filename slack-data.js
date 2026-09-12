@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10119,
+  "version": 10120,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -172815,35 +172815,40 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "15:14",
+      "updatedAt": "15:20",
       "voc": {
-        "responses": 6,
+        "responses": 10,
         "install": {
-          "count": 1,
+          "count": 5,
           "low": 0
         },
         "nps": {
-          "count": 6,
+          "count": 10,
           "low": 1
         },
         "high": {
-          "install": 1,
-          "nps": 2
+          "install": 5,
+          "nps": 5
         },
         "npsDist": {
           "5": 1,
           "7": 1,
-          "8": 1,
+          "8": 2,
           "9": 1,
-          "10": 2
+          "10": 5
         },
         "installDist": {
-          "5": 1
+          "5": 5
         },
         "byIndustry": {
-          "요식업": 1
+          "도소매": 3,
+          "요식업": 2
         },
         "byTenure": {
+          "구매설치": {
+            "total": 5,
+            "low": 0
+          },
           "1개월": {
             "total": 1,
             "low": 0
@@ -172855,15 +172860,11 @@ window.SLACK_DATA = {
           "3개월": {
             "total": 1,
             "low": 0
-          },
-          "구매설치": {
-            "total": 1,
-            "low": 0
           }
         },
         "byVan": {
           "KOCES": {
-            "total": 1,
+            "total": 5,
             "low": 0
           },
           "KIS": {
@@ -172903,6 +172904,30 @@ window.SLACK_DATA = {
           }
         ],
         "praises": [
+          {
+            "time": "15:19",
+            "store": "굿모닝 계란(싱싱농장직송직판장 2호점)",
+            "storeId": "639283",
+            "indBucket": "도소매",
+            "emp": "",
+            "install": 5,
+            "nps": 8,
+            "text": "바쁠때오셔서 설명을잘해주심 용지를 무상증정이라했는데 매출대비 배송비요구는 쌀짝 삐짐^^",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:19",
+            "store": "네평반",
+            "storeId": "639975",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "꼼꼼하게 이것저것 잘 챙겨주셨어요 이용이 편해요",
+            "byReaction": false,
+            "doneDate": ""
+          },
           {
             "time": "09:48",
             "store": "사나이뚝배기 경희대점",
@@ -225817,7 +225842,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-12 15:15",
+    "at": "2026-09-12 15:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
