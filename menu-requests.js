@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1948,
- "updatedAt": "2026-09-12 11:30",
+ "version": 1949,
+ "updatedAt": "2026-09-12 11:45",
  "days": 30,
  "items": [
   {
@@ -56806,138 +56806,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786592758316319"
-  },
-  {
-   "ts": "1786588701.278589",
-   "date": "2026-08-13",
-   "time": "11:38",
-   "store": "황가네",
-   "biz": "3860502931",
-   "pos": "기타",
-   "content": "포장메뉴 글씨 크기와 굵기를\n만두추가와 같게 부탁드려요~",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "머쓲타드 완료"
-   ],
-   "rc": 2,
-   "lr": "1786588741.142319",
-   "rfx": 3,
-   "status": "dup",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786588701278589"
-  },
-  {
-   "ts": "1786588368.035779",
-   "date": "2026-08-13",
-   "time": "11:32",
-   "store": "황가네",
-   "biz": "3860502931",
-   "pos": "기타",
-   "content": "만두메뉴 위에 빨간색배경으로\n이름 포장\n금액은 500원으로 추가해주세요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BPFEM028P",
-     "from": "댓글",
-     "path": "menu-files/1786588368_035779-0.png",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "",
-       "name": "잔치국수",
-       "price": 6500
-      },
-      {
-       "category": "",
-       "name": "비빔국수",
-       "price": 7500
-      },
-      {
-       "category": "",
-       "name": "콩국수",
-       "price": 9000
-      },
-      {
-       "category": "",
-       "name": "김치말이국수",
-       "price": 8500
-      },
-      {
-       "category": "",
-       "name": "칼국수",
-       "price": 7500
-      },
-      {
-       "category": "",
-       "name": "수제비",
-       "price": 8500
-      },
-      {
-       "category": "",
-       "name": "떡만두국",
-       "price": 8500
-      },
-      {
-       "category": "",
-       "name": "포장",
-       "price": 500
-      },
-      {
-       "category": "",
-       "name": "만두",
-       "price": 6000
-      },
-      {
-       "category": "",
-       "name": "제육 비빔밥",
-       "price": 9000
-      },
-      {
-       "category": "",
-       "name": "후라이추가",
-       "price": 1000
-      },
-      {
-       "category": "",
-       "name": "만두추가",
-       "price": 1000
-      },
-      {
-       "category": "",
-       "name": "김밥",
-       "price": 3800
-      },
-      {
-       "category": "",
-       "name": "공기밥",
-       "price": 1000
-      },
-      {
-       "category": "",
-       "name": "곱빼기",
-       "price": 1000
-      }
-     ]
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "슾하슾하 스파로스",
-    ":telephone_receiver: 만두추가 위로 변경"
-   ],
-   "rc": 4,
-   "lr": "1786588629.773279",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786588368035779"
   }
  ],
  "ocr": {
