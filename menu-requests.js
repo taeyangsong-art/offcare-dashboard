@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1952,
- "updatedAt": "2026-09-12 14:45",
+ "version": 1953,
+ "updatedAt": "2026-09-12 15:01",
  "days": 30,
  "items": [
   {
@@ -56029,102 +56029,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786604365851779"
-  },
-  {
-   "ts": "1786600177.281789",
-   "date": "2026-08-13",
-   "time": "14:49",
-   "store": "형과아우 누룽지삼계탕 대구 칠곡점",
-   "biz": "7983401362",
-   "pos": "오케이포스",
-   "content": "메뉴 등록 요청드립니다. (오케이포스)\n\n포장 카테고리 하위에 공기밥 옆에 아래 포장 용기 메뉴 추가 부탁드립니다.\n• 포장 용기 : 1,000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BQSQ911UY",
-     "from": "댓글",
-     "path": "menu-files/1786600177_281789-0.png",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "포장",
-       "name": "황칠삼계탕(포장)",
-       "price": 16000
-      },
-      {
-       "category": "포장",
-       "name": "황칠누룽지삼계탕(포장)",
-       "price": 18000
-      },
-      {
-       "category": "포장",
-       "name": "황칠녹두삼계탕(포장)",
-       "price": 18000
-      },
-      {
-       "category": "포장",
-       "name": "황칠 전복삼계탕(포장)",
-       "price": 20000
-      },
-      {
-       "category": "포장",
-       "name": "황칠 전복누룽지삼계탕(포장)",
-       "price": 0
-      },
-      {
-       "category": "포장",
-       "name": "황칠능이흑마늘삼계탕(포장)",
-       "price": 0
-      },
-      {
-       "category": "포장",
-       "name": "황칠왕갈비탕(포장)",
-       "price": 17000
-      },
-      {
-       "category": "포장",
-       "name": "황칠 전복왕갈비탕(포장)",
-       "price": 20000
-      },
-      {
-       "category": "포장",
-       "name": "황칠생오리구이(600g)(포장)",
-       "price": 0
-      },
-      {
-       "category": "포장",
-       "name": "황칠생오리양념불고기(600g)(포장)",
-       "price": 0
-      },
-      {
-       "category": "포장",
-       "name": "황칠오리능이백숙(포장)",
-       "price": 74000
-      },
-      {
-       "category": "포장",
-       "name": "공기밥(포장)",
-       "price": 1000
-      },
-      {
-       "category": "포장",
-       "name": "포장용기",
-       "price": 1000
-      }
-     ]
-    }
-   ],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1786607822.818489",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786600177281789"
   }
  ],
  "ocr": {
