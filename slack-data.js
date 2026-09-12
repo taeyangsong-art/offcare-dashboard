@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10130,
+  "version": 10131,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -172815,20 +172815,20 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "17:14",
+      "updatedAt": "17:50",
       "voc": {
-        "responses": 17,
+        "responses": 18,
         "install": {
-          "count": 5,
+          "count": 6,
           "low": 0
         },
         "nps": {
-          "count": 17,
+          "count": 18,
           "low": 2
         },
         "high": {
-          "install": 5,
-          "nps": 8
+          "install": 6,
+          "nps": 9
         },
         "npsDist": {
           "4": 1,
@@ -172836,16 +172836,20 @@ window.SLACK_DATA = {
           "7": 2,
           "8": 4,
           "9": 1,
-          "10": 8
+          "10": 9
         },
         "installDist": {
-          "5": 5
+          "5": 6
         },
         "byIndustry": {
-          "도소매": 3,
-          "요식업": 2
+          "요식업": 3,
+          "도소매": 3
         },
         "byTenure": {
+          "구매설치": {
+            "total": 6,
+            "low": 0
+          },
           "1개월": {
             "total": 2,
             "low": 0
@@ -172857,15 +172861,11 @@ window.SLACK_DATA = {
           "3개월": {
             "total": 2,
             "low": 0
-          },
-          "구매설치": {
-            "total": 5,
-            "low": 0
           }
         },
         "byVan": {
           "KOCES": {
-            "total": 6,
+            "total": 7,
             "low": 0
           },
           "KPN": {
@@ -172933,6 +172933,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "17:50",
+            "store": "오색동 배곧직영점",
+            "storeId": "638951",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "사용편의성, 채팅상담문의신속성 편의성",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "16:37",
             "store": "본디",
             "storeId": "243296",
@@ -172998,23 +173010,12 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1789030802.867069": {
-        "post": "1789030802.867069",
-        "lastSeen": 1789071327.499,
-        "r": 1,
-        "day": "2026-09-10",
-        "idx": 207
-      },
       "1789032600.621509": {
         "post": "1789032600.621509",
         "lastSeen": 1789071327.499,
         "r": 1,
         "day": "2026-09-10",
         "idx": 222
-      },
-      "1789030101.485939": {
-        "post": "1789030101.485939",
-        "lastSeen": 1789071327.499
       },
       "1789089865.885659": {
         "post": "1789089865.885659",
@@ -225861,7 +225862,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-12 17:45",
+    "at": "2026-09-12 18:01",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
