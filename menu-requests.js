@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1946,
- "updatedAt": "2026-09-12 10:30",
+ "version": 1947,
+ "updatedAt": "2026-09-12 11:00",
  "days": 30,
  "items": [
   {
@@ -57444,39 +57444,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786587749019279"
-  },
-  {
-   "ts": "1786586364.654609",
-   "date": "2026-08-13",
-   "time": "10:59",
-   "store": "(주) 크리미",
-   "biz": "2908503169",
-   "pos": "토스포스",
-   "content": "영수증이 안나옵니다 확인부탁드려요",
-   "special": "저희 메뉴가격 처리 되었을까요?",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BPYLCB09F",
-     "from": "댓글",
-     "path": "menu-files/1786586364_654609-0.png",
-     "kind": "other",
-     "menu": []
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "여기도 메일 안옴;",
-    "이거인듯 중복임"
-   ],
-   "rc": 4,
-   "lr": "1786586864.391059",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786586364654609"
   }
  ],
  "ocr": {
