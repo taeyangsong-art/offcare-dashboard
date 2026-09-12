@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10124,
+  "version": 10125,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -172815,15 +172815,15 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "16:07",
+      "updatedAt": "16:37",
       "voc": {
-        "responses": 14,
+        "responses": 16,
         "install": {
           "count": 5,
           "low": 0
         },
         "nps": {
-          "count": 14,
+          "count": 16,
           "low": 2
         },
         "high": {
@@ -172833,8 +172833,8 @@ window.SLACK_DATA = {
         "npsDist": {
           "4": 1,
           "5": 1,
-          "7": 1,
-          "8": 3,
+          "7": 2,
+          "8": 4,
           "9": 1,
           "10": 7
         },
@@ -172847,7 +172847,7 @@ window.SLACK_DATA = {
         },
         "byTenure": {
           "12개월": {
-            "total": 6,
+            "total": 8,
             "low": 2
           },
           "3개월": {
@@ -172864,13 +172864,13 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
-          "KIS": {
-            "total": 7,
-            "low": 2
-          },
           "KPN": {
-            "total": 1,
+            "total": 2,
             "low": 0
+          },
+          "KIS": {
+            "total": 8,
+            "low": 2
           },
           "KOCES": {
             "total": 5,
@@ -172933,6 +172933,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "16:37",
+            "store": "본디",
+            "storeId": "243296",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 7,
+            "text": "대체로 만족하나, 포스 및 프론트 문제로 결제가 안된적이 있어서 너무 난감했어요 사용하면서 아쉬운점 몇가지도 있었으나 대체로 만족합니다!",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "15:36",
             "store": "조선대주",
             "storeId": "220478",
@@ -172986,13 +172998,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1789026112.482849": {
-        "post": "1789026112.482849",
-        "lastSeen": 1789071327.499,
-        "r": 1,
-        "day": "2026-09-10",
-        "idx": 181
-      },
       "1789027200.454109": {
         "post": "1789027200.454109",
         "lastSeen": 1789071327.499,
@@ -225878,7 +225883,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-12 16:30",
+    "at": "2026-09-12 16:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
