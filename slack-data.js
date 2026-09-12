@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10131,
+  "version": 10132,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -172815,28 +172815,28 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "17:50",
+      "updatedAt": "18:14",
       "voc": {
-        "responses": 18,
+        "responses": 20,
         "install": {
           "count": 6,
           "low": 0
         },
         "nps": {
-          "count": 18,
-          "low": 2
+          "count": 20,
+          "low": 3
         },
         "high": {
           "install": 6,
-          "nps": 9
+          "nps": 10
         },
         "npsDist": {
           "4": 1,
-          "5": 1,
+          "5": 2,
           "7": 2,
           "8": 4,
           "9": 1,
-          "10": 9
+          "10": 10
         },
         "installDist": {
           "5": 6
@@ -172846,17 +172846,17 @@ window.SLACK_DATA = {
           "도소매": 3
         },
         "byTenure": {
+          "1개월": {
+            "total": 3,
+            "low": 1
+          },
+          "12개월": {
+            "total": 9,
+            "low": 2
+          },
           "구매설치": {
             "total": 6,
             "low": 0
-          },
-          "1개월": {
-            "total": 2,
-            "low": 0
-          },
-          "12개월": {
-            "total": 8,
-            "low": 2
           },
           "3개월": {
             "total": 2,
@@ -172865,11 +172865,11 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KOCES": {
-            "total": 7,
-            "low": 0
+            "total": 8,
+            "low": 1
           },
           "KPN": {
-            "total": 2,
+            "total": 3,
             "low": 0
           },
           "KIS": {
@@ -172882,10 +172882,33 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 1,
           "필요한 기능이 없거나 몰라서 불편": 1,
           "사용중 오류가 자주 발생함": 1
         },
         "alerts": [
+          {
+            "time": "18:14",
+            "store": "다윤꼬마김밥.덮밥",
+            "storeId": "589654",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "타 프로그램보다 속도와 연결된 소스가 느림",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:36",
             "store": "미술로 생각하기 동탄2학원",
@@ -225862,7 +225885,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-12 18:01",
+    "at": "2026-09-12 18:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
