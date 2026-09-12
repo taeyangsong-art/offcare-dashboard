@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10096,
+  "version": 10097,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -172815,33 +172815,45 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "07:34",
+      "updatedAt": "09:48",
       "voc": {
-        "responses": 1,
+        "responses": 2,
         "install": {
-          "count": 0,
-          "low": 0
-        },
-        "nps": {
           "count": 1,
           "low": 0
         },
+        "nps": {
+          "count": 2,
+          "low": 0
+        },
         "high": {
-          "install": 0,
-          "nps": 1
+          "install": 1,
+          "nps": 2
         },
         "npsDist": {
-          "10": 1
+          "10": 2
         },
-        "installDist": {},
-        "byIndustry": {},
+        "installDist": {
+          "5": 1
+        },
+        "byIndustry": {
+          "요식업": 1
+        },
         "byTenure": {
+          "구매설치": {
+            "total": 1,
+            "low": 0
+          },
           "12개월": {
             "total": 1,
             "low": 0
           }
         },
         "byVan": {
+          "KOVAN": {
+            "total": 1,
+            "low": 0
+          },
           "KIS": {
             "total": 1,
             "low": 0
@@ -172849,7 +172861,20 @@ window.SLACK_DATA = {
         },
         "reasonCounts": {},
         "alerts": [],
-        "praises": []
+        "praises": [
+          {
+            "time": "09:48",
+            "store": "사나이뚝배기 경희대점",
+            "storeId": "635719",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "기사분께서 친절하시고 설명도 잘해주셨습니다 사용이 편리하고 디자인도 매우만족",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
       }
     }
   },
@@ -225792,7 +225817,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-12 09:45",
+    "at": "2026-09-12 10:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
