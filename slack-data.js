@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10290,
+  "version": 10291,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173484,27 +173484,27 @@ window.SLACK_DATA = {
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "15:59",
+      "updatedAt": "16:24",
       "voc": {
-        "responses": 15,
+        "responses": 17,
         "install": {
           "count": 7,
           "low": 0
         },
         "nps": {
-          "count": 15,
-          "low": 3
+          "count": 17,
+          "low": 4
         },
         "high": {
           "install": 2,
-          "nps": 9
+          "nps": 10
         },
         "npsDist": {
-          "5": 3,
+          "5": 4,
           "6": 1,
           "7": 1,
           "8": 1,
-          "10": 9
+          "10": 10
         },
         "installDist": {
           "3": 3,
@@ -173516,6 +173516,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 3
         },
         "byTenure": {
+          "1개월": {
+            "total": 5,
+            "low": 1
+          },
           "6개월": {
             "total": 2,
             "low": 1
@@ -173523,10 +173527,6 @@ window.SLACK_DATA = {
           "구매설치": {
             "total": 7,
             "low": 1
-          },
-          "1개월": {
-            "total": 3,
-            "low": 0
           },
           "12개월": {
             "total": 2,
@@ -173538,6 +173538,14 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 5,
+            "low": 1
+          },
+          "KSNET": {
+            "total": 1,
+            "low": 1
+          },
           "NICE": {
             "total": 1,
             "low": 1
@@ -173545,10 +173553,6 @@ window.SLACK_DATA = {
           "KOVAN": {
             "total": 1,
             "low": 0
-          },
-          "KOCES": {
-            "total": 4,
-            "low": 1
           },
           "KPN": {
             "total": 5,
@@ -173568,11 +173572,34 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "고객센터 연락이 매우 힘듦": 1,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "필요한 기능이 없거나 몰라서 불편": 1,
           "단말기 설치나 초기 과정이 어려움": 1
         },
         "alerts": [
+          {
+            "time": "16:20",
+            "store": "미유(MEOW)",
+            "storeId": "538444",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "제품은 마음에 드는데 토스 본사 연락이 잘 안되어 불편함을 겪고 있습니다.",
+                "cat": "고객센터 연락이 매우 힘듦"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:59",
             "store": "라엠메이크업",
@@ -173685,17 +173712,21 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789284002.13,
+        "lastSeen": 1789284258.55,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789284002.13,
+        "lastSeen": 1789284258.55,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
+      },
+      "1789284065.673819": {
+        "post": "1789284065.673819",
+        "lastSeen": 1789284258.55
       }
     },
     "days": {
@@ -226725,7 +226756,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 16:20",
+    "at": "2026-09-13 16:24",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
