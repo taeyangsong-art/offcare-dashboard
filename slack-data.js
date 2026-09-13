@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10264,
+  "version": 10265,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173049,9 +173049,9 @@ window.SLACK_DATA = {
     "2026-09-13": {
       "counts": {
         "as": {
+          "최민석": 9,
           "미지정": 2,
-          "김동욱": 14,
-          "최민석": 8
+          "김동욱": 14
         },
         "transfer": {
           "최민석": 1,
@@ -173067,6 +173067,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "13:51",
+          "store": "땅땅치킨 중리점",
+          "biz": "2745900929",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "푸드테크 연동 희망 확인 후 연동 요청 드립니다",
+          "hw": "",
+          "intake": "offline",
+          "note": "프론트 포스에 연결 까지 완료 이후 푸드테크 컨택하여 잔여 진행 하신다고 합니다."
+        },
         {
           "time": "13:31",
           "store": "크레센도",
@@ -173390,7 +173401,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 23,
-        "offline": 6,
+        "offline": 7,
         "unknown": 0
       },
       "updatedAt": "13:51",
@@ -173457,14 +173468,14 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789275641.834,
+        "lastSeen": 1789276459.032,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789275641.834,
+        "lastSeen": 1789276459.032,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
@@ -226461,7 +226472,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 14:01",
+    "at": "2026-09-13 14:14",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
