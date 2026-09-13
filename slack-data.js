@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10292,
+  "version": 10293,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173484,48 +173484,48 @@ window.SLACK_DATA = {
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "16:24",
+      "updatedAt": "16:26",
       "voc": {
-        "responses": 17,
+        "responses": 18,
         "install": {
-          "count": 7,
+          "count": 8,
           "low": 0
         },
         "nps": {
-          "count": 17,
+          "count": 18,
           "low": 4
         },
         "high": {
-          "install": 2,
-          "nps": 10
+          "install": 3,
+          "nps": 11
         },
         "npsDist": {
           "5": 4,
           "6": 1,
           "7": 1,
           "8": 1,
-          "10": 10
+          "10": 11
         },
         "installDist": {
           "3": 3,
           "4": 2,
-          "5": 2
+          "5": 3
         },
         "byIndustry": {
-          "도소매": 4,
-          "서비스[뷰티,헤어]": 3
+          "서비스[뷰티,헤어]": 4,
+          "도소매": 4
         },
         "byTenure": {
+          "구매설치": {
+            "total": 8,
+            "low": 1
+          },
           "1개월": {
             "total": 5,
             "low": 1
           },
           "6개월": {
             "total": 2,
-            "low": 1
-          },
-          "구매설치": {
-            "total": 7,
             "low": 1
           },
           "12개월": {
@@ -173538,6 +173538,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 2,
+            "low": 0
+          },
           "KOCES": {
             "total": 5,
             "low": 1
@@ -173563,10 +173567,6 @@ window.SLACK_DATA = {
             "low": 1
           },
           "SECTA9": {
-            "total": 1,
-            "low": 0
-          },
-          "KIS": {
             "total": 1,
             "low": 0
           }
@@ -173669,6 +173669,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "16:26",
+            "store": "애랑헤어",
+            "storeId": "644950",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "우선 디자인이 이쁘고 그날 매출  바로 확인할수 있어서  좋아요 또 사용료가 없다는점이  좋습니다 사용료가 없으며 디자인 이쁜점",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "15:26",
             "store": "라르브르플라워스튜디오",
             "storeId": "629660",
@@ -173712,21 +173724,21 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789284320.965,
+        "lastSeen": 1789284634.426,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789284320.965,
+        "lastSeen": 1789284634.426,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
       },
       "1789284065.673819": {
         "post": "1789284065.673819",
-        "lastSeen": 1789284320.965
+        "lastSeen": 1789284634.426
       }
     },
     "days": {
@@ -226756,7 +226768,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 16:25",
+    "at": "2026-09-13 16:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
