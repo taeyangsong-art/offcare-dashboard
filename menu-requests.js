@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1983,
- "updatedAt": "2026-09-13 18:30",
+ "version": 1984,
+ "updatedAt": "2026-09-13 19:39",
  "days": 30,
  "items": [
   {
@@ -53148,38 +53148,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786753680776119"
-  },
-  {
-   "ts": "1786703962.693599",
-   "date": "2026-08-14",
-   "time": "19:39",
-   "store": "알비온",
-   "biz": "7680100928",
-   "pos": "토스포스",
-   "content": "첨푸파일에 있는 코드를 다 심어 주시고 카테고리 별로 분리 부탁드립니다. 혹시 저희매장이 평일 가격하고 주말 가격이 다른데 설정을 하는 방법을 알려주시면 감사하겠습니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "11.xlsx",
-     "fid": "F0BQHSC7HFE",
-     "from": "댓글",
-     "path": "menu-files/1786703962_693599-0.xlsx",
-     "nj": 1
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "3시 이후 연락 예정",
-    "백업"
-   ],
-   "rc": 3,
-   "lr": "1786764609.191089",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786703962693599"
   }
  ],
  "ocr": {
