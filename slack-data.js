@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10340,
+  "version": 10341,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173616,22 +173616,23 @@ window.SLACK_DATA = {
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "23:15",
+      "updatedAt": "23:22",
       "voc": {
-        "responses": 23,
+        "responses": 24,
         "install": {
           "count": 8,
           "low": 0
         },
         "nps": {
-          "count": 23,
-          "low": 5
+          "count": 24,
+          "low": 6
         },
         "high": {
           "install": 3,
           "nps": 14
         },
         "npsDist": {
+          "2": 1,
           "5": 5,
           "6": 1,
           "7": 1,
@@ -173648,6 +173649,10 @@ window.SLACK_DATA = {
           "도소매": 4
         },
         "byTenure": {
+          "1개월": {
+            "total": 6,
+            "low": 2
+          },
           "12개월": {
             "total": 4,
             "low": 1
@@ -173663,16 +173668,12 @@ window.SLACK_DATA = {
           "구매설치": {
             "total": 8,
             "low": 1
-          },
-          "1개월": {
-            "total": 5,
-            "low": 1
           }
         },
         "byVan": {
           "KPN": {
-            "total": 8,
-            "low": 1
+            "total": 9,
+            "low": 2
           },
           "NICE": {
             "total": 2,
@@ -173704,13 +173705,35 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "필요한 기능이 없거나 몰라서 불편": 2,
           "사용중 오류가 자주 발생함": 1,
           "고객센터 연락이 매우 힘듦": 1,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
-          "필요한 기능이 없거나 몰라서 불편": 1,
           "단말기 설치나 초기 과정이 어려움": 1
         },
         "alerts": [
+          {
+            "time": "23:22",
+            "store": "에떼드뷰티(ete de Beauty)",
+            "storeId": "580495",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 2,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 2,
+                "text": "사용하기 쉽긴하지만 생각보다 쓰기가 좀 불편해요.. 키보드도 안되서 마우스로 숫자를 눌러야 하고 이런저런 불편함이 있네요..",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "23:15",
             "store": "경춘스테이션 북앤커피",
@@ -173879,14 +173902,14 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789308962.865,
+        "lastSeen": 1789309837.334,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789308962.865,
+        "lastSeen": 1789309837.334,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
@@ -226982,7 +227005,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 23:16",
+    "at": "2026-09-13 23:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
