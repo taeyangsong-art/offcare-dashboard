@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10279,
+  "version": 10280,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173054,9 +173054,9 @@ window.SLACK_DATA = {
           "김동욱": 1
         },
         "as": {
+          "미지정": 3,
           "김기범": 1,
           "최민석": 9,
-          "미지정": 2,
           "김동욱": 14
         },
         "transfer": {
@@ -173079,6 +173079,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "프린터 온보딩 및 용지출력 정상 완료"
+        },
+        {
+          "time": "15:00",
+          "store": "온당 Korean Tofu Culture",
+          "biz": "7028802325",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "3층에 포스기 + 프린터 / 태블릿 + 프론트 + 유프 로 이용중이신것 같은데 포스기에 연결된 프린터에선 출력이 되나 프론트와 연동된 프린터에서 출력이 안된다고 하십니다. 유프 온보딩 부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "기본적은 부분은 설정하였으나 지속적 원격 요청건으로 각층의 디테일이 존재하여 15일 화요일 방문일정 처리합니다."
         },
         {
           "time": "14:57",
@@ -173436,7 +173447,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 26,
-        "offline": 7,
+        "offline": 8,
         "unknown": 0
       },
       "updatedAt": "15:29",
@@ -173582,21 +173593,17 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789281034.446,
+        "lastSeen": 1789281198.561,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789281034.446,
+        "lastSeen": 1789281198.561,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
-      },
-      "1789279201.807909": {
-        "post": "1789279201.807909",
-        "lastSeen": 1789281034.446
       }
     },
     "days": {
@@ -226422,9 +226429,9 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-13": {
-        "cnt": 19,
-        "sumMin": 104.58922764062882,
-        "over": 0,
+        "cnt": 20,
+        "sumMin": 136.50082082351048,
+        "over": 1,
         "items": [
           {
             "hm": "10:13",
@@ -226593,13 +226600,22 @@ window.SLACK_DATA = {
             "who": "김기범",
             "cat": "as",
             "dmin": 4.9
+          },
+          {
+            "hm": "15:00",
+            "min": 31.9,
+            "store": "온당 Korean Tofu Culture",
+            "biz": "7028802325",
+            "who": "",
+            "cat": "as",
+            "dmin": 31.9
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-13 15:30",
+    "at": "2026-09-13 15:33",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
