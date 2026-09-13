@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10305,
+  "version": 10306,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173049,9 +173049,9 @@ window.SLACK_DATA = {
     "2026-09-13": {
       "counts": {
         "as": {
+          "미지정": 4,
           "김기범": 4,
           "최민석": 11,
-          "미지정": 3,
           "김동욱": 14
         },
         "onboarding": {
@@ -173070,6 +173070,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:56",
+          "store": "원이네",
+          "biz": "5384800958",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "포프(PC와 랜선으로 연결)  wifi무프 사용중   / 매장 공유기 변경되어  무프 출력 안됨",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "16:53",
           "store": "굽네치킨 완주삼례점",
@@ -173535,11 +173546,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 34,
+        "online": 35,
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "16:56",
+      "updatedAt": "17:37",
       "voc": {
         "responses": 19,
         "install": {
@@ -173779,21 +173790,21 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789288333.968,
+        "lastSeen": 1789288698.581,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789288333.968,
+        "lastSeen": 1789288698.581,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
       },
-      "1789286193.860419": {
-        "post": "1789286193.860419",
-        "lastSeen": 1789288333.968
+      "1789288679.187739": {
+        "post": "1789288679.187739",
+        "lastSeen": 1789288698.581
       }
     },
     "days": {
@@ -226619,9 +226630,9 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-13": {
-        "cnt": 24,
-        "sumMin": 174.1216890533765,
-        "over": 1,
+        "cnt": 25,
+        "sumMin": 212.82859040101368,
+        "over": 2,
         "items": [
           {
             "hm": "10:13",
@@ -226835,13 +226846,22 @@ window.SLACK_DATA = {
             "who": "김기범",
             "cat": "as",
             "dmin": 12.6
+          },
+          {
+            "hm": "16:56",
+            "min": 38.7,
+            "store": "원이네",
+            "biz": "5384800958",
+            "who": "",
+            "cat": "as",
+            "dmin": 38.7
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-13 17:32",
+    "at": "2026-09-13 17:38",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
