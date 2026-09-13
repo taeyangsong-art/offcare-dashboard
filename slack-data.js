@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10230,
+  "version": 10231,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173049,8 +173049,8 @@ window.SLACK_DATA = {
     "2026-09-13": {
       "counts": {
         "as": {
-          "최민석": 6,
-          "김동욱": 5
+          "김동욱": 6,
+          "최민석": 7
         },
         "onboarding": {
           "김동욱": 1,
@@ -173065,6 +173065,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:00",
+          "store": "오후의 미장원",
+          "biz": "6054397777",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "포프(데스크탑) 사용 중, 프론트 IC 인식이 불가한 문제가 있다고 하여 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "대체품 발송"
+        },
+        {
+          "time": "10:55",
+          "store": "온다인",
+          "biz": "5838602318",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "유프 갑자기 출력안되어 인입 /  토스포스,프론트 내  시리얼케이블 설정 &amp; 9600해도 테스트 출력안되어   점검 부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "10:52",
           "store": "조우딘 과자점",
@@ -173233,11 +173255,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 11,
+        "online": 13,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "11:00",
+      "updatedAt": "11:01",
       "voc": {
         "responses": 2,
         "install": {
@@ -173312,21 +173334,10 @@ window.SLACK_DATA = {
       },
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789264828.408,
+        "lastSeen": 1789265065.703,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
-      },
-      "1789264514.926939": {
-        "post": "1789264514.926939",
-        "lastSeen": 1789264828.408,
-        "r": 1,
-        "day": "2026-09-13",
-        "idx": 6
-      },
-      "1789264800.639619": {
-        "post": "1789264800.639619",
-        "lastSeen": 1789264828.408
       }
     },
     "days": {
@@ -226152,8 +226163,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-13": {
-        "cnt": 7,
-        "sumMin": 26.328572281201684,
+        "cnt": 8,
+        "sumMin": 28.76883696317673,
         "over": 0,
         "items": [
           {
@@ -226215,14 +226226,24 @@ window.SLACK_DATA = {
             "store": "온다인",
             "biz": "5838602318",
             "who": "최민석",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 7.2
+          },
+          {
+            "hm": "11:00",
+            "min": 2.4,
+            "store": "오후의 미장원",
+            "biz": "6054397777",
+            "who": "김동욱",
+            "cat": "as",
+            "dmin": 2.4
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-13 11:00",
+    "at": "2026-09-13 11:04",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
