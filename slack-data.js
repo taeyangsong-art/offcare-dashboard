@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10228,
+  "version": 10229,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173049,8 +173049,8 @@ window.SLACK_DATA = {
     "2026-09-13": {
       "counts": {
         "as": {
-          "김동욱": 4,
-          "최민석": 5
+          "최민석": 6,
+          "김동욱": 4
         },
         "onboarding": {
           "김동욱": 1,
@@ -173065,6 +173065,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:52",
+          "store": "조우딘 과자점",
+          "biz": "2782402121",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "포프( 태블릿 ) 설치 받으셨는데 자꾸 안된다고만 하시고, 정확한 증상 파악 없이 원격 연결 요청 주셔서 통화 부탁 드립니다.(전원은 켜진다고 함)",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "10:40",
           "store": "꽃붓캘리(월영점)",
@@ -173211,11 +173222,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 9,
+        "online": 10,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "10:52",
+      "updatedAt": "10:55",
       "voc": {
         "responses": 2,
         "install": {
@@ -173290,17 +173301,21 @@ window.SLACK_DATA = {
       },
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789264399.669,
+        "lastSeen": 1789264581.994,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789263546.575749": {
         "post": "1789263546.575749",
-        "lastSeen": 1789264399.669,
+        "lastSeen": 1789264581.994,
         "r": 1,
         "day": "2026-09-13",
         "idx": 5
+      },
+      "1789264514.926939": {
+        "post": "1789264514.926939",
+        "lastSeen": 1789264581.994
       }
     },
     "days": {
@@ -226187,7 +226202,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 10:53",
+    "at": "2026-09-13 10:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
