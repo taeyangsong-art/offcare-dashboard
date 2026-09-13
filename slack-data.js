@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10237,
+  "version": 10238,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173049,7 +173049,7 @@ window.SLACK_DATA = {
     "2026-09-13": {
       "counts": {
         "as": {
-          "김동욱": 7,
+          "김동욱": 8,
           "최민석": 7
         },
         "onboarding": {
@@ -173065,6 +173065,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:11",
+          "store": "큐이디골프(첨단점)",
+          "biz": "8872300478",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "포프(타사 포스기) 이용 중 유프 온보딩 도움 요청하셨습니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포프유프(데스크탑) 프린터 연결 완료 / 포스기라고 하시더니.. 데탑이셨군.. ㅠㅠ"
+        },
         {
           "time": "11:01",
           "store": "착한갈비찜",
@@ -173266,7 +173277,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 14,
+        "online": 15,
         "offline": 4,
         "unknown": 0
       },
@@ -173345,18 +173356,21 @@ window.SLACK_DATA = {
       },
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789265958.796,
+        "lastSeen": 1789266198.926,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265773.983119": {
         "post": "1789265773.983119",
-        "lastSeen": 1789265958.796
+        "lastSeen": 1789266198.926,
+        "r": 1,
+        "day": "2026-09-13",
+        "idx": 8
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789265958.796
+        "lastSeen": 1789266198.926
       }
     },
     "days": {
@@ -226182,8 +226196,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-13": {
-        "cnt": 8,
-        "sumMin": 28.76883696317673,
+        "cnt": 9,
+        "sumMin": 33.85013498067856,
         "over": 0,
         "items": [
           {
@@ -226256,13 +226270,21 @@ window.SLACK_DATA = {
             "who": "김동욱",
             "cat": "as",
             "dmin": 2.4
+          },
+          {
+            "hm": "11:16",
+            "min": 5.1,
+            "store": "비스밀라 케밥&amp;비리야니(Bismillah Kab",
+            "biz": "3743501654",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-13 11:19",
+    "at": "2026-09-13 11:23",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
