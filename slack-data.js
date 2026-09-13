@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10227,
+  "version": 10228,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173050,7 +173050,7 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김동욱": 4,
-          "최민석": 4
+          "최민석": 5
         },
         "onboarding": {
           "김동욱": 1,
@@ -173076,6 +173076,17 @@ window.SLACK_DATA = {
           "urgent": true,
           "intake": "online",
           "note": "포프유프(아이패드) -&gt; 포프유프(휴대폰) 재온보딩 완료. 포프유프(아이패드) - 포프유프(휴대폰) 재온보딩 완료."
+        },
+        {
+          "time": "10:39",
+          "store": "이중식탁",
+          "biz": "5700903611",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "배달의 민족 연동 및 사용 관련 안내 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "배민 연동 및 배달프로그램 설치 완료 사용방법 안내 완료"
         },
         {
           "time": "10:33",
@@ -173200,11 +173211,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 8,
+        "online": 9,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "10:40",
+      "updatedAt": "10:52",
       "voc": {
         "responses": 2,
         "install": {
@@ -173279,24 +173290,17 @@ window.SLACK_DATA = {
       },
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789264280.744,
+        "lastSeen": 1789264399.669,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789263546.575749": {
         "post": "1789263546.575749",
-        "lastSeen": 1789264280.744,
+        "lastSeen": 1789264399.669,
         "r": 1,
         "day": "2026-09-13",
         "idx": 5
-      },
-      "1789263540.374179": {
-        "post": "1789263540.374179",
-        "lastSeen": 1789264280.744,
-        "r": 1,
-        "day": "2026-09-13",
-        "idx": 3
       }
     },
     "days": {
@@ -226158,7 +226162,8 @@ window.SLACK_DATA = {
             "store": "이중식탁",
             "biz": "5700903611",
             "who": "최민석",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 13.3
           },
           {
             "hm": "10:40",
@@ -226182,7 +226187,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 10:51",
+    "at": "2026-09-13 10:53",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
