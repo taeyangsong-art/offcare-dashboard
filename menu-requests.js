@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1982,
- "updatedAt": "2026-09-13 18:15",
+ "version": 1983,
+ "updatedAt": "2026-09-13 18:30",
  "days": 30,
  "items": [
   {
@@ -53180,29 +53180,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786703962693599"
-  },
-  {
-   "ts": "1786699559.812189",
-   "date": "2026-08-14",
-   "time": "18:25",
-   "store": "토이즈나(TOISNA)",
-   "biz": "2641902297",
-   "pos": "기타",
-   "content": "와이파이 카테고리 생성 후 와이파이 메뉴 만들어주세요",
-   "special": "금액은 0원입니다",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "메뉴등록 완료 및 솔라피발송완료\n키오스크 전시관리 완료"
-   ],
-   "rc": 2,
-   "lr": "1786699900.688699",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786699559812189"
   }
  ],
  "ocr": {
