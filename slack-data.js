@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10381,
+  "version": 10382,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -168108,7 +168108,7 @@ window.SLACK_DATA = {
           "김기범": 22,
           "심성현": 38,
           "배선유": 27,
-          "송태양": 27,
+          "송태양": 28,
           "김현기": 18,
           "고경림": 28,
           "서상원": 15,
@@ -168150,17 +168150,6 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
-        {
-          "time": "19:42",
-          "store": "엔젤아쿠아",
-          "biz": "6102951802",
-          "handler": "송태양",
-          "cat": "transfer",
-          "intake": "online",
-          "reasons": [
-            "1차 부재"
-          ]
-        },
         {
           "time": "18:48",
           "store": "",
@@ -168407,6 +168396,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "금일10시 재연락 요청"
+        },
+        {
+          "time": "19:42",
+          "store": "엔젤아쿠아",
+          "biz": "6102951802",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "제신고로 인한 다운로드 필요로 확인되어 요청 드려요.",
+          "hw": "",
+          "intake": "online",
+          "note": "이렇게 확인되는데 여기 요청이 맞을까요..! 스레드 이렇게 확인되는데 여기 요청이 맞을까요..! 청약 위탁 접수 내역 청약 위탁 접수 내역 by &lt; - &gt; 카드사 가맹유형 / 사업자유형 / 구매유형 기가맹 / 개인-단독대표 / 제신고 상호명 / 사업자번호 엔젤아쿠아 / 6102951802 문서이름 (CS)개인제신고[주소] 엔젤아쿠아61029518"
         },
         {
           "time": "19:39",
@@ -227020,7 +227020,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-14 08:30",
+    "at": "2026-09-14 08:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
