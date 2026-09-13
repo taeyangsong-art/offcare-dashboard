@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10294,
+  "version": 10295,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173048,17 +173048,17 @@ window.SLACK_DATA = {
     },
     "2026-09-13": {
       "counts": {
+        "as": {
+          "최민석": 10,
+          "김기범": 2,
+          "미지정": 3,
+          "김동욱": 14
+        },
         "onboarding": {
           "미지정": 2,
           "김기범": 1,
           "최민석": 2,
           "김동욱": 1
-        },
-        "as": {
-          "김기범": 2,
-          "미지정": 3,
-          "최민석": 9,
-          "김동욱": 14
         },
         "transfer": {
           "최민석": 1,
@@ -173070,6 +173070,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:24",
+          "store": "검단 왕새우 직판장 아라점",
+          "biz": "8442002648",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "주방 공유기 변경으로 인한 무프W 재온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "무프 재온보딩 완료"
+        },
         {
           "time": "16:21",
           "store": "루비랜드마크",
@@ -173491,19 +173502,19 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 30,
+        "online": 31,
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "16:26",
+      "updatedAt": "16:38",
       "voc": {
-        "responses": 18,
+        "responses": 19,
         "install": {
           "count": 8,
           "low": 0
         },
         "nps": {
-          "count": 18,
+          "count": 19,
           "low": 4
         },
         "high": {
@@ -173514,7 +173525,7 @@ window.SLACK_DATA = {
           "5": 4,
           "6": 1,
           "7": 1,
-          "8": 1,
+          "8": 2,
           "10": 11
         },
         "installDist": {
@@ -173527,6 +173538,10 @@ window.SLACK_DATA = {
           "도소매": 4
         },
         "byTenure": {
+          "3개월": {
+            "total": 2,
+            "low": 1
+          },
           "구매설치": {
             "total": 8,
             "low": 1
@@ -173542,13 +173557,13 @@ window.SLACK_DATA = {
           "12개월": {
             "total": 2,
             "low": 0
-          },
-          "3개월": {
-            "total": 1,
-            "low": 1
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 6,
+            "low": 0
+          },
           "KIS": {
             "total": 2,
             "low": 0
@@ -173567,10 +173582,6 @@ window.SLACK_DATA = {
           },
           "KOVAN": {
             "total": 1,
-            "low": 0
-          },
-          "KPN": {
-            "total": 5,
             "low": 0
           },
           "SMARTRO": {
@@ -173735,14 +173746,14 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789284980.515,
+        "lastSeen": 1789285158.122,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789284980.515,
+        "lastSeen": 1789285158.122,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
@@ -226784,7 +226795,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 16:36",
+    "at": "2026-09-13 16:39",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
