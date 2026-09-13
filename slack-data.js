@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10222,
+  "version": 10223,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173049,8 +173049,8 @@ window.SLACK_DATA = {
     "2026-09-13": {
       "counts": {
         "as": {
-          "최민석": 4,
-          "김동욱": 2
+          "김동욱": 3,
+          "최민석": 4
         },
         "onboarding": {
           "최민석": 1
@@ -173064,6 +173064,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:33",
+          "store": "대박삼겹김치찜 앤 초대박등갈비김치찜",
+          "biz": "1103675938",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "프린터기 용지 교체하려고 하나, 뚜껑이 안열림",
+          "hw": "",
+          "intake": "online",
+          "note": "칼날 위치조정 후 정상 확인"
+        },
         {
           "time": "10:19",
           "store": "광어2마리 15000원",
@@ -173165,7 +173176,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 5,
+        "online": 6,
         "offline": 4,
         "unknown": 0
       },
@@ -173248,7 +173259,7 @@ window.SLACK_DATA = {
       },
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789263271.441,
+        "lastSeen": 1789263498.556,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
@@ -226112,7 +226123,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 10:34",
+    "at": "2026-09-13 10:38",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
