@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1963,
- "updatedAt": "2026-09-13 09:28",
+ "version": 1964,
+ "updatedAt": "2026-09-13 09:32",
  "days": 30,
  "items": [
   {
@@ -54104,29 +54104,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786671739351299"
-  },
-  {
-   "ts": "1786667440.450549",
-   "date": "2026-08-14",
-   "time": "09:30",
-   "store": "강창구 찹쌀진순대 광장점",
-   "biz": "2198509446",
-   "pos": "",
-   "content": "주류 메뉴 원복",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "17일 저녁 9시 30분에 할인된 메뉴로 재 요청해서 예약 메시지 등록"
-   ],
-   "rc": 2,
-   "lr": "1786667478.445629",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786667440450549"
   }
  ],
  "ocr": {
