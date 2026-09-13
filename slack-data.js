@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10211,
+  "version": 10212,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173049,7 +173049,7 @@ window.SLACK_DATA = {
     "2026-09-13": {
       "counts": {
         "as": {
-          "최민석": 1,
+          "최민석": 2,
           "김동욱": 1
         },
         "transfer": {
@@ -173061,6 +173061,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:51",
+          "store": "딜라잇필라테스&amp;재활운동센터",
+          "biz": "5751003233",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "금일 포프 (PC) 명변 완료",
+          "hw": "",
+          "intake": "online",
+          "note": "포프 재온보딩 완료"
+        },
         {
           "time": "09:43",
           "store": "수담수학학원",
@@ -173107,7 +173118,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 2,
+        "online": 3,
         "offline": 2,
         "unknown": 0
       },
@@ -226013,7 +226024,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 10:00",
+    "at": "2026-09-13 10:03",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
