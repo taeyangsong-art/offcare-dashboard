@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10293,
+  "version": 10294,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173049,7 +173049,7 @@ window.SLACK_DATA = {
     "2026-09-13": {
       "counts": {
         "onboarding": {
-          "미지정": 1,
+          "미지정": 2,
           "김기범": 1,
           "최민석": 2,
           "김동욱": 1
@@ -173070,6 +173070,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:21",
+          "store": "루비랜드마크",
+          "biz": "5030923785",
+          "cat": "onboarding",
+          "emp": "미지정",
+          "req": "포프(데스크탑) 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "피씨+프론트+프린터 온보딩완료, 추가로 헤어짱연동 문의주셔서 해당장비로는 안됨안내. 추후 캣으로 전환가능성도 있습니다."
+        },
         {
           "time": "15:47",
           "store": "뒤끌헤어",
@@ -173480,7 +173491,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 29,
+        "online": 30,
         "offline": 8,
         "unknown": 0
       },
@@ -173724,21 +173735,17 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789284634.426,
+        "lastSeen": 1789284980.515,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789284634.426,
+        "lastSeen": 1789284980.515,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
-      },
-      "1789284065.673819": {
-        "post": "1789284065.673819",
-        "lastSeen": 1789284634.426
       }
     },
     "days": {
@@ -226564,8 +226571,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-13": {
-        "cnt": 22,
-        "sumMin": 159.3964106877645,
+        "cnt": 23,
+        "sumMin": 171.7596887032191,
         "over": 1,
         "items": [
           {
@@ -226762,13 +226769,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "onboarding",
             "dmin": 19.1
+          },
+          {
+            "hm": "16:21",
+            "min": 12.4,
+            "store": "루비랜드마크",
+            "biz": "5030923785",
+            "who": "",
+            "cat": "onboarding",
+            "dmin": 12.4
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-13 16:30",
+    "at": "2026-09-13 16:36",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
