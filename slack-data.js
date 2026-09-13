@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10339,
+  "version": 10340,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173616,23 +173616,23 @@ window.SLACK_DATA = {
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "21:39",
+      "updatedAt": "23:15",
       "voc": {
-        "responses": 22,
+        "responses": 23,
         "install": {
           "count": 8,
           "low": 0
         },
         "nps": {
-          "count": 22,
-          "low": 4
+          "count": 23,
+          "low": 5
         },
         "high": {
           "install": 3,
           "nps": 14
         },
         "npsDist": {
-          "5": 4,
+          "5": 5,
           "6": 1,
           "7": 1,
           "8": 2,
@@ -173648,6 +173648,10 @@ window.SLACK_DATA = {
           "도소매": 4
         },
         "byTenure": {
+          "12개월": {
+            "total": 4,
+            "low": 1
+          },
           "3개월": {
             "total": 3,
             "low": 1
@@ -173655,10 +173659,6 @@ window.SLACK_DATA = {
           "6개월": {
             "total": 3,
             "low": 1
-          },
-          "12개월": {
-            "total": 3,
-            "low": 0
           },
           "구매설치": {
             "total": 8,
@@ -173670,16 +173670,16 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 8,
+            "low": 1
+          },
           "NICE": {
             "total": 2,
             "low": 1
           },
           "SECTA9": {
             "total": 2,
-            "low": 0
-          },
-          "KPN": {
-            "total": 7,
             "low": 0
           },
           "KIS": {
@@ -173704,12 +173704,35 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1,
           "고객센터 연락이 매우 힘듦": 1,
           "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "필요한 기능이 없거나 몰라서 불편": 1,
           "단말기 설치나 초기 과정이 어려움": 1
         },
         "alerts": [
+          {
+            "time": "23:15",
+            "store": "경춘스테이션 북앤커피",
+            "storeId": "244796",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "태블릿에서 오류가 너무 잦음",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "16:20",
             "store": "미유(MEOW)",
@@ -173856,14 +173879,14 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789308042.235,
+        "lastSeen": 1789308962.865,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789308042.235,
+        "lastSeen": 1789308962.865,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
@@ -226959,7 +226982,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 23:00",
+    "at": "2026-09-13 23:16",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
