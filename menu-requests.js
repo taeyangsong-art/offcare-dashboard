@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1962,
- "updatedAt": "2026-09-13 09:26",
+ "version": 1963,
+ "updatedAt": "2026-09-13 09:28",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C104ANTFZ",
      "from": "댓글",
-     "path": "menu-files/1789258250_870129-0.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -81,13 +80,13 @@ window.MENU_REQUESTS = {
        "name": "과자",
        "price": 5000
       }
-     ]
+     ],
+     "path": "menu-files/1789258250_870129-0.png"
     },
     {
      "name": "image.png",
      "fid": "F0C1AS5U76Z",
      "from": "댓글",
-     "path": "menu-files/1789258250_870129-1.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -210,16 +209,18 @@ window.MENU_REQUESTS = {
        "name": "참게추가(1마리)",
        "price": 6000
       }
-     ]
+     ],
+     "path": "menu-files/1789258250_870129-1.png"
     }
    ],
    "datt": [],
    "replies": [
     "메기+빠가\n3인 60,000원\n4인 78,000원\n\n빠가 + 잡고기\n2인  42, 000원\n\n미나리추가 삭제",
-    "완료 후 문자 발송 요청 드립니다 :woman-bowing::skin-tone-4:"
+    "완료 후 문자 발송 요청 드립니다 :woman-bowing::skin-tone-4:",
+    "넵! 감사합니다!!"
    ],
-   "rc": 6,
-   "lr": "1789258960.059809",
+   "rc": 7,
+   "lr": "1789259311.337179",
    "rfx": 3,
    "status": "done",
    "handler": "최민석",
@@ -54126,29 +54127,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786667440450549"
-  },
-  {
-   "ts": "1786667270.375149",
-   "date": "2026-08-14",
-   "time": "09:27",
-   "store": "두현24시불가마사우나",
-   "biz": "1238626817",
-   "pos": "",
-   "content": "메뉴 금액 변경 요청\n스낵코너\n맥반석계란 2500\n훈제계란 3000",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "FD 포스"
-   ],
-   "rc": 3,
-   "lr": "1786667405.387519",
-   "rfx": 3,
-   "status": "done",
-   "handler": "서상원",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786667270375149"
   }
  ],
  "ocr": {
