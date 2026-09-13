@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10332,
+  "version": 10333,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173049,7 +173049,7 @@ window.SLACK_DATA = {
     "2026-09-13": {
       "counts": {
         "as": {
-          "김기범": 7,
+          "김기범": 8,
           "미지정": 4,
           "최민석": 11,
           "김동욱": 14
@@ -173070,6 +173070,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "21:00",
+          "store": "원이네",
+          "biz": "5384800958",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "포프(PC와 랜선으로 연결)  wifi무프 사용중   / 매장 공유기 변경되어  무프 출력 안됨",
+          "hw": "",
+          "intake": "online",
+          "note": "공유기가 방에있고 포스기는 스카이라이프 일반 모뎀에 있어 안되는 부분이엿음 스카이 라이프 부르셔서 공유기 위치 변경 요청하시라고 안내"
+        },
         {
           "time": "20:00",
           "store": "카나리아 카페",
@@ -173601,31 +173612,31 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 40,
+        "online": 41,
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "21:00",
+      "updatedAt": "21:39",
       "voc": {
-        "responses": 21,
+        "responses": 22,
         "install": {
           "count": 8,
           "low": 0
         },
         "nps": {
-          "count": 21,
+          "count": 22,
           "low": 4
         },
         "high": {
           "install": 3,
-          "nps": 13
+          "nps": 14
         },
         "npsDist": {
           "5": 4,
           "6": 1,
           "7": 1,
           "8": 2,
-          "10": 13
+          "10": 14
         },
         "installDist": {
           "3": 3,
@@ -173637,6 +173648,10 @@ window.SLACK_DATA = {
           "도소매": 4
         },
         "byTenure": {
+          "3개월": {
+            "total": 3,
+            "low": 1
+          },
           "6개월": {
             "total": 3,
             "low": 1
@@ -173644,10 +173659,6 @@ window.SLACK_DATA = {
           "12개월": {
             "total": 3,
             "low": 0
-          },
-          "3개월": {
-            "total": 2,
-            "low": 1
           },
           "구매설치": {
             "total": 8,
@@ -173659,6 +173670,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "NICE": {
+            "total": 2,
+            "low": 1
+          },
           "SECTA9": {
             "total": 2,
             "low": 0
@@ -173676,10 +173691,6 @@ window.SLACK_DATA = {
             "low": 1
           },
           "KSNET": {
-            "total": 1,
-            "low": 1
-          },
-          "NICE": {
             "total": 1,
             "low": 1
           },
@@ -173845,24 +173856,17 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789302636.675,
+        "lastSeen": 1789303528.676,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789302636.675,
+        "lastSeen": 1789303528.676,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
-      },
-      "1789300801.193249": {
-        "post": "1789300801.193249",
-        "lastSeen": 1789302636.675,
-        "r": 1,
-        "day": "2026-09-13",
-        "idx": 28
       }
     },
     "days": {
@@ -226947,14 +226951,15 @@ window.SLACK_DATA = {
             "store": "원이네",
             "biz": "5384800958",
             "who": "김기범",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 38
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-13 21:30",
+    "at": "2026-09-13 21:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
