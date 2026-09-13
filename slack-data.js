@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10296,
+  "version": 10297,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173079,7 +173079,7 @@ window.SLACK_DATA = {
           "req": "터프 (포스X) 온보딩 도움 부탁드립니다",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "전원 바꾸고 대표번호 교체하고 온보딩 완료"
         },
         {
           "time": "16:24",
@@ -173517,7 +173517,7 @@ window.SLACK_DATA = {
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "16:38",
+      "updatedAt": "16:52",
       "voc": {
         "responses": 19,
         "install": {
@@ -173757,14 +173757,14 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789285527.359,
+        "lastSeen": 1789285944.421,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789285527.359,
+        "lastSeen": 1789285944.421,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
@@ -226806,7 +226806,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 16:45",
+    "at": "2026-09-13 16:52",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
