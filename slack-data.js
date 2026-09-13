@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10205,
+  "version": 10206,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173048,6 +173048,9 @@ window.SLACK_DATA = {
     },
     "2026-09-13": {
       "counts": {
+        "as": {
+          "김동욱": 1
+        },
         "transfer": {
           "김동욱": 1
         },
@@ -173057,6 +173060,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:35",
+          "store": "대박삼겹김치찜&amp;초대박등갈비김치찜 양평점",
+          "biz": "3714800660",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "토스포스(포스기) 배달 앱 연동 후 프린터 출력 안된다고 하셔서 확인 부탁 드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "포프유프(1500) 프론트-프린터 연결되어있어 프린터-포스 연결 후 배달앱 출력설정 완료"
+        },
         {
           "time": "09:12",
           "store": "딜라잇필라테스&재활운동센터",
@@ -173081,11 +173095,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
+        "online": 2,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:35",
+      "updatedAt": "09:43",
       "voc": {
         "responses": 1,
         "install": {
@@ -225987,7 +226001,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 09:40",
+    "at": "2026-09-13 09:44",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
