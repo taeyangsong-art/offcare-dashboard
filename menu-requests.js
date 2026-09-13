@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1969,
- "updatedAt": "2026-09-13 10:45",
+ "version": 1970,
+ "updatedAt": "2026-09-13 11:08",
  "days": 30,
  "items": [
   {
@@ -53690,29 +53690,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786675510468859"
-  },
-  {
-   "ts": "1786673241.374369",
-   "date": "2026-08-14",
-   "time": "11:07",
-   "store": "요리비아구찜",
-   "biz": "4020339245",
-   "pos": "",
-   "content": "기존 추가된 메뉴 주방에서 출력 설정 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786327946209649\n포장메뉴 카테고리에\n\n곤이써비스\n콩나물써비스\n\n위 두가지 항목이 주방에서 출력 안된다고 하시어 확인 부탁 드립니다. :꾸벅:"
-   ],
-   "rc": 4,
-   "lr": "1786674035.990639",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786673241374369"
   }
  ],
  "ocr": {

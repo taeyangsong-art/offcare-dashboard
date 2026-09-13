@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10231,
+  "version": 10232,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173049,7 +173049,7 @@ window.SLACK_DATA = {
     "2026-09-13": {
       "counts": {
         "as": {
-          "김동욱": 6,
+          "김동욱": 7,
           "최민석": 7
         },
         "onboarding": {
@@ -173065,6 +173065,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:01",
+          "store": "착한갈비찜",
+          "biz": "5730503422",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "어제까지는 배민 연동이 되어 있어서 주문접수 프로그램이랑 배민 lite 가 잘 열렸는데 지금은 둘 중에 하나 밖에 안 열림",
+          "hw": "",
+          "intake": "online",
+          "note": "배민lite 배달대행사 연동 해제 후 정상"
+        },
         {
           "time": "11:00",
           "store": "오후의 미장원",
@@ -173085,7 +173096,7 @@ window.SLACK_DATA = {
           "req": "유프 갑자기 출력안되어 인입 /  토스포스,프론트 내  시리얼케이블 설정 &amp; 9600해도 테스트 출력안되어   점검 부탁드립니다",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "포스기 포트 빠져있어 재결합 후 정상출력 완료"
         },
         {
           "time": "10:52",
@@ -173255,7 +173266,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 13,
+        "online": 14,
         "offline": 4,
         "unknown": 0
       },
@@ -173334,7 +173345,7 @@ window.SLACK_DATA = {
       },
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789265065.703,
+        "lastSeen": 1789265298.038,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
@@ -226243,7 +226254,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 11:04",
+    "at": "2026-09-13 11:08",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
