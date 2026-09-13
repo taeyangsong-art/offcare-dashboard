@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10225,
+  "version": 10226,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173053,6 +173053,7 @@ window.SLACK_DATA = {
           "최민석": 4
         },
         "onboarding": {
+          "김동욱": 1,
           "최민석": 1
         },
         "transfer": {
@@ -173074,6 +173075,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "칼날 위치조정 후 정상 확인"
+        },
+        {
+          "time": "10:30",
+          "store": "위베이프(coco)",
+          "biz": "1750703692",
+          "cat": "onboarding",
+          "emp": "김동욱",
+          "req": "휴대폰 + 프론트 + 유선프린터 연결 온보딩 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "1차 부재 / 포프유프(휴대폰) 온보딩 완료"
         },
         {
           "time": "10:19",
@@ -173176,7 +173188,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 6,
+        "online": 7,
         "offline": 4,
         "unknown": 0
       },
@@ -173255,25 +173267,28 @@ window.SLACK_DATA = {
       },
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789263814.363,
+        "lastSeen": 1789263924.317,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789263546.575749": {
         "post": "1789263546.575749",
-        "lastSeen": 1789263814.363
+        "lastSeen": 1789263924.317
       },
       "1789263540.374179": {
         "post": "1789263540.374179",
-        "lastSeen": 1789263814.363,
+        "lastSeen": 1789263924.317,
         "r": 1,
         "day": "2026-09-13",
         "idx": 3
       },
       "1789263644.513729": {
         "post": "1789263644.513729",
-        "lastSeen": 1789263814.363
+        "lastSeen": 1789263924.317,
+        "r": 1,
+        "day": "2026-09-13",
+        "idx": 4
       }
     },
     "days": {
@@ -226099,8 +226114,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-13": {
-        "cnt": 4,
-        "sumMin": 10.144320901234945,
+        "cnt": 5,
+        "sumMin": 13.891425414880118,
         "over": 0,
         "items": [
           {
@@ -226136,13 +226151,21 @@ window.SLACK_DATA = {
             "biz": "5700903611",
             "who": "최민석",
             "cat": "as"
+          },
+          {
+            "hm": "10:40",
+            "min": 3.7,
+            "store": "꽃붓캘리(월영점)",
+            "biz": "6156400712",
+            "who": "김동욱",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-13 10:43",
+    "at": "2026-09-13 10:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
