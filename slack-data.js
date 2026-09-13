@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10329,
+  "version": 10330,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173845,21 +173845,24 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789300819.982,
+        "lastSeen": 1789301727.885,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789300819.982,
+        "lastSeen": 1789301727.885,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
       },
       "1789300801.193249": {
         "post": "1789300801.193249",
-        "lastSeen": 1789300819.982
+        "lastSeen": 1789301727.885,
+        "r": 1,
+        "day": "2026-09-13",
+        "idx": 28
       }
     },
     "days": {
@@ -226685,8 +226688,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-13": {
-        "cnt": 28,
-        "sumMin": 273.6221069574356,
+        "cnt": 29,
+        "sumMin": 281.5011111418406,
         "over": 3,
         "items": [
           {
@@ -226937,13 +226940,21 @@ window.SLACK_DATA = {
             "who": "김기범",
             "cat": "onboarding",
             "dmin": 39.8
+          },
+          {
+            "hm": "21:00",
+            "min": 7.9,
+            "store": "원이네",
+            "biz": "5384800958",
+            "who": "김기범",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-13 21:00",
+    "at": "2026-09-13 21:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
