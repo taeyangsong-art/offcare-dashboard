@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10302,
+  "version": 10303,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173050,7 +173050,7 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김기범": 4,
-          "최민석": 10,
+          "최민석": 11,
           "미지정": 3,
           "김동욱": 14
         },
@@ -173080,6 +173080,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "굽네치킨용 메이트포스와 프론트 연동하실려고함 USB RS232 구입 하셔야한다고 안내 완료 구입하고 다시 전화 주신다합니다"
+        },
+        {
+          "time": "16:52",
+          "store": "나의샐러드&amp;샌드위치",
+          "biz": "1985400881",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "• 대형키오스크 자가설치를 하신 분,, :돈:",
+          "hw": "",
+          "intake": "online",
+          "note": "키오스크 온보딩 완료"
         },
         {
           "time": "16:38",
@@ -173524,7 +173535,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 33,
+        "online": 34,
         "offline": 8,
         "unknown": 0
       },
@@ -173768,21 +173779,21 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789287326.979,
+        "lastSeen": 1789287984.164,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789287326.979,
+        "lastSeen": 1789287984.164,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
       },
       "1789286193.860419": {
         "post": "1789286193.860419",
-        "lastSeen": 1789287326.979
+        "lastSeen": 1789287984.164
       }
     },
     "days": {
@@ -226830,7 +226841,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 17:15",
+    "at": "2026-09-13 17:26",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
