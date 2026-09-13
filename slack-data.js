@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10260,
+  "version": 10261,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173049,8 +173049,8 @@ window.SLACK_DATA = {
     "2026-09-13": {
       "counts": {
         "as": {
+          "미지정": 2,
           "김동욱": 14,
-          "미지정": 1,
           "최민석": 8
         },
         "transfer": {
@@ -173067,6 +173067,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "13:31",
+          "store": "크레센도",
+          "biz": "3101245590",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "프론트 기기 결제 속도가 매우 느리고 터치도 잘 안되는것 같다며 원격 점검 요청하셨습니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "와이파이 2.4 / 5G 자동연결중으로 프론트,테블릿 5G삭제하고 테스트시 속도향상 완료입니다."
+        },
         {
           "time": "13:03",
           "store": "카페 딥 (CAFE DEEP)",
@@ -173378,7 +173389,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 22,
+        "online": 23,
         "offline": 6,
         "unknown": 0
       },
@@ -173446,21 +173457,17 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789274122.034,
+        "lastSeen": 1789274599.426,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789274122.034,
+        "lastSeen": 1789274599.426,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
-      },
-      "1789273861.692209": {
-        "post": "1789273861.692209",
-        "lastSeen": 1789274122.034
       }
     },
     "days": {
@@ -226286,8 +226293,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-13": {
-        "cnt": 17,
-        "sumMin": 91.42069343725841,
+        "cnt": 18,
+        "sumMin": 99.7379899541537,
         "over": 0,
         "items": [
           {
@@ -226439,13 +226446,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 13.3
+          },
+          {
+            "hm": "13:31",
+            "min": 8.3,
+            "store": "크레센도",
+            "biz": "3101245590",
+            "who": "",
+            "cat": "as",
+            "dmin": 8.3
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-13 13:35",
+    "at": "2026-09-13 13:43",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
