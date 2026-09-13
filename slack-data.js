@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10199,
+  "version": 10200,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173047,12 +173047,28 @@ window.SLACK_DATA = {
       }
     },
     "2026-09-13": {
-      "counts": {},
+      "counts": {
+        "menu": {
+          "최민석": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:10",
+          "store": "연지 민물매운탕",
+          "biz": "2062828779",
+          "cat": "menu",
+          "emp": "최민석",
+          "req": "오케이포스 메뉴 수정 부탁 드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 메기+빠가 3인 60,000원 4인 78,000원 빠가 + 잡고기 2인 42, 000원 미나리추가 삭제 / 완료 후 문자 발송 요청 드립니다 완료 후 문자 발송 요청 드립니다 / 님 안녕하세요! 미나리 추가는 메뉴가 없어 미나리 추가 제외 완료입니다. 님 안녕하세요!"
+        }
+      ],
       "intake": {
         "online": 0,
-        "offline": 0,
+        "offline": 1,
         "unknown": 0
       },
       "updatedAt": "09:12",
@@ -225957,7 +225973,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 09:16",
+    "at": "2026-09-13 09:21",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
