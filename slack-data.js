@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10271,
+  "version": 10272,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -172239,11 +172239,11 @@ window.SLACK_DATA = {
                 "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "지혜",
+            "autoStatus": "처리완료",
+            "autoEmp": "지혜",
+            "autoNote": "태블릿set 사용중 / 태블릿 배터리 소진 너무 빠르고, 전기 오르는 느낌, 사용중 앱 먹통되는 경우 다수라고하심 • 태블릿 사양 관련 불편 있으셔서 해당부분은 태블릿 제조사측에 의견 전달드려보겠다 안내 완료 • 기기에 문제 있는지 점검 받아보시는 것 권장 &gt; 수긍 &gt; 9/13 14시30분 원격 예약 • SR2609130007 / (중고)뮤패드 ",
+            "doneDate": "2026-09-13"
           }
         ],
         "praises": [
@@ -173416,7 +173416,7 @@ window.SLACK_DATA = {
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "14:30",
+      "updatedAt": "14:57",
       "voc": {
         "responses": 2,
         "install": {
@@ -173480,14 +173480,14 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789278618.319,
+        "lastSeen": 1789279104.955,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789278618.319,
+        "lastSeen": 1789279104.955,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
@@ -226493,7 +226493,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 14:50",
+    "at": "2026-09-13 14:58",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
