@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1979,
- "updatedAt": "2026-09-13 15:36",
+ "version": 1980,
+ "updatedAt": "2026-09-13 16:00",
  "days": 30,
  "items": [
   {
@@ -53267,37 +53267,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786693769098779"
-  },
-  {
-   "ts": "1786690128.144769",
-   "date": "2026-08-14",
-   "time": "15:48",
-   "store": "김마리 서현점",
-   "biz": "4171992898",
-   "pos": "",
-   "content": "메뉴 이미지 등록 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "attachments (10).zip",
-     "fid": "F0BQ1K15F0B",
-     "from": "댓글",
-     "path": "menu-files/1786690128_144769-0.zip",
-     "nj": 1
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "김마리 서현점에\n꼬마돈가스김밥\n쉬림프 로제우동\n퐁당치즈떢볶이 중간맛\n치킨 가라아게\n이렇게\n야탑점과 같이 부탁드려요~~\n\n이미지 달라고 말씀드리고 대기중 :loading_win:"
-   ],
-   "rc": 3,
-   "lr": "1786697245.152529",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786690128144769"
   }
  ],
  "ocr": {

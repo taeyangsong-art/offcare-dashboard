@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10284,
+  "version": 10285,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173461,38 +173461,50 @@ window.SLACK_DATA = {
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "15:47",
+      "updatedAt": "15:59",
       "voc": {
-        "responses": 12,
+        "responses": 15,
         "install": {
-          "count": 6,
+          "count": 7,
           "low": 0
         },
         "nps": {
-          "count": 12,
-          "low": 2
+          "count": 15,
+          "low": 3
         },
         "high": {
           "install": 2,
-          "nps": 7
+          "nps": 9
         },
         "npsDist": {
-          "5": 2,
+          "5": 3,
           "6": 1,
           "7": 1,
           "8": 1,
-          "10": 7
+          "10": 9
         },
         "installDist": {
           "3": 3,
-          "4": 1,
+          "4": 2,
           "5": 2
         },
         "byIndustry": {
-          "도소매": 3,
+          "도소매": 4,
           "서비스[뷰티,헤어]": 3
         },
         "byTenure": {
+          "6개월": {
+            "total": 2,
+            "low": 1
+          },
+          "구매설치": {
+            "total": 7,
+            "low": 1
+          },
+          "1개월": {
+            "total": 3,
+            "low": 0
+          },
           "12개월": {
             "total": 2,
             "low": 0
@@ -173500,21 +173512,21 @@ window.SLACK_DATA = {
           "3개월": {
             "total": 1,
             "low": 1
-          },
-          "6개월": {
-            "total": 1,
-            "low": 0
-          },
-          "구매설치": {
-            "total": 6,
-            "low": 1
-          },
-          "1개월": {
-            "total": 2,
-            "low": 0
           }
         },
         "byVan": {
+          "NICE": {
+            "total": 1,
+            "low": 1
+          },
+          "KOVAN": {
+            "total": 1,
+            "low": 0
+          },
+          "KOCES": {
+            "total": 4,
+            "low": 1
+          },
           "KPN": {
             "total": 5,
             "low": 0
@@ -173527,20 +173539,39 @@ window.SLACK_DATA = {
             "total": 1,
             "low": 0
           },
-          "KOCES": {
-            "total": 3,
-            "low": 1
-          },
           "KIS": {
             "total": 1,
             "low": 0
           }
         },
         "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "필요한 기능이 없거나 몰라서 불편": 1,
           "단말기 설치나 초기 과정이 어려움": 1
         },
         "alerts": [
+          {
+            "time": "15:59",
+            "store": "라엠메이크업",
+            "storeId": "379090",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "업데이트시 시간너무오래걸림",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:38",
             "store": "리린필라테스",
@@ -173631,28 +173662,28 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789282101.528,
+        "lastSeen": 1789282841.44,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789282101.528,
+        "lastSeen": 1789282841.44,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
       },
       "1789281786.179769": {
         "post": "1789281786.179769",
-        "lastSeen": 1789282101.528,
+        "lastSeen": 1789282841.44,
         "r": 1,
         "day": "2026-09-13",
         "idx": 20
       },
       "1789282037.311839": {
         "post": "1789282037.311839",
-        "lastSeen": 1789282101.528
+        "lastSeen": 1789282841.44
       }
     },
     "days": {
@@ -226672,7 +226703,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 15:48",
+    "at": "2026-09-13 16:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
