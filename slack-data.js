@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10295,
+  "version": 10296,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173049,8 +173049,8 @@ window.SLACK_DATA = {
     "2026-09-13": {
       "counts": {
         "as": {
+          "김기범": 3,
           "최민석": 10,
-          "김기범": 2,
           "미지정": 3,
           "김동욱": 14
         },
@@ -173070,6 +173070,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:38",
+          "store": "금성가설",
+          "biz": "1322137930",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "터프 (포스X) 온보딩 도움 부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "16:24",
           "store": "검단 왕새우 직판장 아라점",
@@ -173502,7 +173513,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 31,
+        "online": 32,
         "offline": 8,
         "unknown": 0
       },
@@ -173746,14 +173757,14 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789285158.122,
+        "lastSeen": 1789285527.359,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789285158.122,
+        "lastSeen": 1789285527.359,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
@@ -226795,7 +226806,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 16:39",
+    "at": "2026-09-13 16:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
