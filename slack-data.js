@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10274,
+  "version": 10275,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173048,6 +173048,10 @@ window.SLACK_DATA = {
     },
     "2026-09-13": {
       "counts": {
+        "onboarding": {
+          "최민석": 2,
+          "김동욱": 1
+        },
         "as": {
           "김기범": 1,
           "최민석": 9,
@@ -173058,16 +173062,23 @@ window.SLACK_DATA = {
           "최민석": 1,
           "김동욱": 1
         },
-        "onboarding": {
-          "김동욱": 1,
-          "최민석": 1
-        },
         "menu": {
           "최민석": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "14:57",
+          "store": "루루아(LULUA)",
+          "biz": "7922702249",
+          "cat": "onboarding",
+          "emp": "최민석",
+          "req": "포프(태블릿) 온보딩 도움 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "01020300905 / 포프유프 온보딩 완료"
+        },
         {
           "time": "14:30",
           "store": "강바다피싱",
@@ -173412,7 +173423,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 24,
+        "online": 25,
         "offline": 7,
         "unknown": 0
       },
@@ -173480,21 +173491,21 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789279522.506,
+        "lastSeen": 1789279759.658,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789279522.506,
+        "lastSeen": 1789279759.658,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
       },
       "1789279201.807909": {
         "post": "1789279201.807909",
-        "lastSeen": 1789279522.506
+        "lastSeen": 1789279759.658
       }
     },
     "days": {
@@ -226497,7 +226508,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 15:05",
+    "at": "2026-09-13 15:09",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
