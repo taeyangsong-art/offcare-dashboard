@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10217,
+  "version": 10218,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -172173,11 +172173,11 @@ window.SLACK_DATA = {
                 "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "지혜",
+            "autoStatus": "처리완료",
+            "autoEmp": "지혜",
+            "autoNote": "바코드스캐너 미사용 매장 / 오더퀸 측으로 바코드숫자 포함된 메뉴 일 받아두셨다함 - 메뉴등록 링크로 파일 첨부주시면 순차반영 &gt; 이후 프론트 바코드주문만 받기 활성화해주시면 가능 / 설정 경로 문자 발송 - 도움 필요시 고객센터로 연락 부탁드림 바코드스캐너 미사용 매장 / 오더퀸 측으로 바코드숫자 포함된 메뉴 일 받아두셨다함 - 메뉴등록 링크로 파일",
+            "doneDate": "2026-09-13"
           },
           {
             "time": "22:38",
@@ -173158,7 +173158,7 @@ window.SLACK_DATA = {
         "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "10:13",
+      "updatedAt": "10:19",
       "voc": {
         "responses": 1,
         "install": {
@@ -173236,10 +173236,14 @@ window.SLACK_DATA = {
       },
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789262309.264,
+        "lastSeen": 1789262427.024,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
+      },
+      "1789262389.888839": {
+        "post": "1789262389.888839",
+        "lastSeen": 1789262427.024
       }
     },
     "days": {
@@ -226091,7 +226095,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 10:18",
+    "at": "2026-09-13 10:20",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
