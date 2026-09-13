@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10259,
+  "version": 10260,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173053,30 +173053,19 @@ window.SLACK_DATA = {
           "미지정": 1,
           "최민석": 8
         },
+        "transfer": {
+          "최민석": 1,
+          "김동욱": 1
+        },
         "onboarding": {
           "김동욱": 1,
           "최민석": 1
-        },
-        "transfer": {
-          "김동욱": 1
         },
         "menu": {
           "최민석": 1
         }
       },
-      "pending": [
-        {
-          "time": "11:39",
-          "store": "빨간대게",
-          "biz": "5015700638",
-          "handler": "최민석",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
         {
           "time": "13:03",
@@ -173121,6 +173110,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "코드가 살짝 뽑혀있었음. 정상 확인"
+        },
+        {
+          "time": "11:39",
+          "store": "빨간대게",
+          "biz": "5015700638",
+          "cat": "transfer",
+          "emp": "최민석",
+          "req": "명의변경으로 단말기 다운로드 부탁드립니다. (메뉴복사O)",
+          "hw": "",
+          "intake": "online",
+          "note": "99343803-테이블고유번호 / youtu.be/BWduZasFCn4?si=… / 포프유프무프 명의변경 완료 / qr오더의 경우 버리셧다고 합니다"
         },
         {
           "time": "11:35",
@@ -173382,7 +173382,7 @@ window.SLACK_DATA = {
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "13:03",
+      "updatedAt": "13:31",
       "voc": {
         "responses": 2,
         "install": {
@@ -173446,24 +173446,21 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789273835.125,
+        "lastSeen": 1789274122.034,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789273835.125,
+        "lastSeen": 1789274122.034,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
       },
-      "1789267161.505259": {
-        "post": "1789267161.505259",
-        "lastSeen": 1789273835.125,
-        "r": 1,
-        "day": "2026-09-13",
-        "idx": 10
+      "1789273861.692209": {
+        "post": "1789273861.692209",
+        "lastSeen": 1789274122.034
       }
     },
     "days": {
@@ -226448,7 +226445,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 13:30",
+    "at": "2026-09-13 13:35",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
