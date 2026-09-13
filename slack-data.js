@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10246,
+  "version": 10247,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -172220,7 +172220,7 @@ window.SLACK_DATA = {
             "emp": "",
             "autoStatus": "",
             "autoEmp": "",
-            "autoNote": "",
+            "autoNote": "통화 단선 통화 단선",
             "doneDate": ""
           },
           {
@@ -173049,7 +173049,7 @@ window.SLACK_DATA = {
     "2026-09-13": {
       "counts": {
         "as": {
-          "김동욱": 11,
+          "김동욱": 12,
           "최민석": 8
         },
         "onboarding": {
@@ -173065,6 +173065,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:51",
+          "store": "바이인 닥터아이티엔 개봉점",
+          "biz": "3692101432",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "터미널 기기 전원이 안들어온다고 하십니다. 전원 케이블 및 어댑터 모두 정상 연결되어있다고 주장하셔서 원격 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "코드가 살짝 뽑혀있었음. 정상 확인"
+        },
         {
           "time": "11:35",
           "store": "족발본부",
@@ -173321,7 +173332,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 18,
+        "online": 19,
         "offline": 5,
         "unknown": 0
       },
@@ -173396,28 +173407,24 @@ window.SLACK_DATA = {
       },
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789267941.238,
+        "lastSeen": 1789268178.606,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789267941.238,
+        "lastSeen": 1789268178.606,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
       },
       "1789267161.505259": {
         "post": "1789267161.505259",
-        "lastSeen": 1789267941.238,
+        "lastSeen": 1789268178.606,
         "r": 1,
         "day": "2026-09-13",
         "idx": 10
-      },
-      "1789267895.934149": {
-        "post": "1789267895.934149",
-        "lastSeen": 1789267941.238
       }
     },
     "days": {
@@ -226243,8 +226250,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-13": {
-        "cnt": 13,
-        "sumMin": 68.9274847070376,
+        "cnt": 14,
+        "sumMin": 71.66061555544535,
         "over": 0,
         "items": [
           {
@@ -226360,13 +226367,22 @@ window.SLACK_DATA = {
             "who": "김동욱",
             "cat": "as",
             "dmin": 14.9
+          },
+          {
+            "hm": "11:51",
+            "min": 2.7,
+            "store": "바이인 닥터아이티엔 개봉점",
+            "biz": "3692101432",
+            "who": "김동욱",
+            "cat": "as",
+            "dmin": 2.7
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-13 11:52",
+    "at": "2026-09-13 11:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
