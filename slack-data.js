@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10240,
+  "version": 10241,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173049,7 +173049,7 @@ window.SLACK_DATA = {
     "2026-09-13": {
       "counts": {
         "as": {
-          "김동욱": 8,
+          "김동욱": 9,
           "최민석": 7
         },
         "onboarding": {
@@ -173075,6 +173075,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "포프유프(데스크탑) 프린터 연결 완료 / 포스기라고 하시더니.. 데탑이셨군.. ㅠㅠ"
+        },
+        {
+          "time": "11:10",
+          "store": "온",
+          "biz": "8403600426",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "<https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1788852714108489|프론트대체품 수령 완료>  / 터프 재온보딩 도움  부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "가게 이동 중 5분 뒤 통화 / 신품 프론트1로 발송됨.. / 신품 프론트2 재출고"
         },
         {
           "time": "11:01",
@@ -173277,11 +173288,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 15,
+        "online": 16,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "11:18",
+      "updatedAt": "11:30",
       "voc": {
         "responses": 2,
         "install": {
@@ -173352,24 +173363,28 @@ window.SLACK_DATA = {
       },
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789266633.952,
+        "lastSeen": 1789266841.963,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265773.983119": {
         "post": "1789265773.983119",
-        "lastSeen": 1789266633.952,
+        "lastSeen": 1789266841.963,
         "r": 1,
         "day": "2026-09-13",
         "idx": 8
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789266633.952,
+        "lastSeen": 1789266841.963,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
+      },
+      "1789266652.336009": {
+        "post": "1789266652.336009",
+        "lastSeen": 1789266841.963
       }
     },
     "days": {
@@ -226291,7 +226306,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 11:30",
+    "at": "2026-09-13 11:34",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
