@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10319,
+  "version": 10320,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173049,7 +173049,7 @@ window.SLACK_DATA = {
     "2026-09-13": {
       "counts": {
         "onboarding": {
-          "김기범": 2,
+          "김기범": 3,
           "미지정": 2,
           "최민석": 2,
           "김동욱": 1
@@ -173070,6 +173070,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "18:42",
+          "store": "조우딘 과자점",
+          "biz": "2782402121",
+          "cat": "onboarding",
+          "emp": "김기범",
+          "req": "포프( 태블릿 ) 설치 관련 19시 예약 건 지금 통화 희망하셔서 전달드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "광두님 지금 키오스크 설치중이라 인입다시되면 양해좀 부탁드려요 / 태블릿 + 프론트 온보딩 완료 키오스크 모드 설명 완료"
+        },
         {
           "time": "18:03",
           "store": "카페 비트윈 (CAFE BETWEEN)",
@@ -173568,7 +173579,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 37,
+        "online": 38,
         "offline": 8,
         "unknown": 0
       },
@@ -173812,24 +173823,17 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789294462.928,
+        "lastSeen": 1789295361.116,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789294462.928,
+        "lastSeen": 1789295361.116,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
-      },
-      "1789292526.383009": {
-        "post": "1789292526.383009",
-        "lastSeen": 1789294462.928,
-        "r": 1,
-        "day": "2026-09-13",
-        "idx": 27
       }
     },
     "days": {
@@ -226905,14 +226909,15 @@ window.SLACK_DATA = {
             "store": "조우딘 과자점",
             "biz": "2782402121",
             "who": "김기범",
-            "cat": "as"
+            "cat": "onboarding",
+            "dmin": 39.8
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-13 19:14",
+    "at": "2026-09-13 19:29",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
