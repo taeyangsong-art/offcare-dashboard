@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10327,
+  "version": 10328,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173049,7 +173049,7 @@ window.SLACK_DATA = {
     "2026-09-13": {
       "counts": {
         "as": {
-          "김기범": 6,
+          "김기범": 7,
           "미지정": 4,
           "최민석": 11,
           "김동욱": 14
@@ -173070,6 +173070,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "20:00",
+          "store": "카나리아 카페",
+          "biz": "8393301934",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "태블릿 + 프론트 + 터미널 + 무프 와이파이 모델 사용 중 와이파이 변경하시어, 재연결 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "엘지 유플러스 공유기로 교체 하여 태블릿 + 프론트 + 터미널 + 무프 와이파이 전부 완료"
+        },
         {
           "time": "19:30",
           "store": "카나리아 카페",
@@ -173590,7 +173601,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 39,
+        "online": 40,
         "offline": 8,
         "unknown": 0
       },
@@ -173834,14 +173845,14 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789299929.167,
+        "lastSeen": 1789300158.083,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789299929.167,
+        "lastSeen": 1789300158.083,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
@@ -226928,7 +226939,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 20:45",
+    "at": "2026-09-13 20:49",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
