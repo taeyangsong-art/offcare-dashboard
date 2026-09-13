@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10280,
+  "version": 10281,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173064,11 +173064,22 @@ window.SLACK_DATA = {
           "김동욱": 1
         },
         "menu": {
-          "최민석": 1
+          "최민석": 2
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:26",
+          "store": "우연초밥",
+          "biz": "1910903529",
+          "cat": "menu",
+          "emp": "최민석",
+          "req": "토스포스  / 메뉴등록 요청  / 0914 반영 가능함으로 사전 양해완료 (0915오픈)",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 초밥류에 • 우연초밥 10p 16,500원 추가 등록 요청 우연초밥 10p 16,500원 추가 등록 요청 / 메뉴등록 완룍 솔라피 발송 완료 / 헙 :스피드zoom: 감사합니다!! 헙 감사합니다!!"
+        },
         {
           "time": "15:04",
           "store": "트럭트",
@@ -173446,7 +173457,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 26,
+        "online": 27,
         "offline": 8,
         "unknown": 0
       },
@@ -173593,14 +173604,14 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789281198.561,
+        "lastSeen": 1789281382.377,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789281198.561,
+        "lastSeen": 1789281382.377,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
@@ -226615,7 +226626,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 15:33",
+    "at": "2026-09-13 15:36",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1978,
- "updatedAt": "2026-09-13 15:33",
+ "version": 1979,
+ "updatedAt": "2026-09-13 15:36",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C1A2KALE7",
      "from": "댓글",
-     "path": "menu-files/1789280815_389539-0.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -126,15 +125,17 @@ window.MENU_REQUESTS = {
        "name": "콜라 사이다",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1789280815_389539-0.png"
     }
    ],
    "datt": [],
    "replies": [
-    "초밥류에\n• 우연초밥 10p  16,500원   추가 등록 요청"
+    "초밥류에\n• 우연초밥 10p  16,500원   추가 등록 요청",
+    "헙  :스피드_zoom:  감사합니다!!"
    ],
-   "rc": 2,
-   "lr": "1789280847.911549",
+   "rc": 4,
+   "lr": "1789281373.174139",
    "rfx": 3,
    "status": "done",
    "handler": "최민석",
