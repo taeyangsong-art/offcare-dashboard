@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10218,
+  "version": 10219,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173236,14 +173236,17 @@ window.SLACK_DATA = {
       },
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789262427.024,
+        "lastSeen": 1789262540.872,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789262389.888839": {
         "post": "1789262389.888839",
-        "lastSeen": 1789262427.024
+        "lastSeen": 1789262540.872,
+        "r": 1,
+        "day": "2026-09-13",
+        "idx": 2
       }
     },
     "days": {
@@ -226069,8 +226072,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-13": {
-        "cnt": 2,
-        "sumMin": 6.1118711988131205,
+        "cnt": 3,
+        "sumMin": 7.679523881276449,
         "over": 0,
         "items": [
           {
@@ -226089,13 +226092,21 @@ window.SLACK_DATA = {
             "who": "최민석",
             "cat": "as",
             "dmin": 3.6
+          },
+          {
+            "hm": "10:19",
+            "min": 1.6,
+            "store": "광어2마리 15000원",
+            "biz": "1329280572",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-13 10:20",
+    "at": "2026-09-13 10:22",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
