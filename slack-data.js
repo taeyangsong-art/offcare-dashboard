@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10219,
+  "version": 10220,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173049,7 +173049,7 @@ window.SLACK_DATA = {
     "2026-09-13": {
       "counts": {
         "as": {
-          "최민석": 3,
+          "최민석": 4,
           "김동욱": 2
         },
         "onboarding": {
@@ -173064,6 +173064,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:19",
+          "store": "광어2마리 15000원",
+          "biz": "1329280572",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "오케이포스 + 프론트 사용 중 인터넷 연결 끊김 문구 노출 후 결제가 아주 느리게 된다고합니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "프론트 랜선 연결하여 사용중 랜선 빼꼇 후 정상 연결 점주님께 랜선 교체 권유 안내 완료"
+        },
         {
           "time": "10:12",
           "store": "공포의 아구찜, 탕",
@@ -173155,40 +173166,45 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 5,
-        "offline": 3,
+        "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "10:19",
+      "updatedAt": "10:25",
       "voc": {
-        "responses": 1,
+        "responses": 2,
         "install": {
-          "count": 1,
+          "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 1,
+          "count": 2,
           "low": 0
         },
         "high": {
-          "install": 1,
-          "nps": 1
+          "install": 2,
+          "nps": 2
         },
         "npsDist": {
-          "10": 1
+          "10": 2
         },
         "installDist": {
-          "5": 1
+          "5": 2
         },
         "byIndustry": {
+          "서비스[뷰티,헤어]": 1,
           "도소매": 1
         },
         "byTenure": {
           "구매설치": {
-            "total": 1,
+            "total": 2,
             "low": 0
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 1,
+            "low": 0
+          },
           "KOCES": {
             "total": 1,
             "low": 0
@@ -173215,10 +173231,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1789089865.885659": {
-        "post": "1789089865.885659",
-        "lastSeen": 1789157726.096
-      },
       "1789090860.543319": {
         "post": "1789090860.543319",
         "lastSeen": 1789157726.096
@@ -173236,17 +173248,10 @@ window.SLACK_DATA = {
       },
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789262540.872,
+        "lastSeen": 1789262963.626,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
-      },
-      "1789262389.888839": {
-        "post": "1789262389.888839",
-        "lastSeen": 1789262540.872,
-        "r": 1,
-        "day": "2026-09-13",
-        "idx": 2
       }
     },
     "days": {
@@ -226099,14 +226104,15 @@ window.SLACK_DATA = {
             "store": "광어2마리 15000원",
             "biz": "1329280572",
             "who": "최민석",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 6
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-13 10:22",
+    "at": "2026-09-13 10:29",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
