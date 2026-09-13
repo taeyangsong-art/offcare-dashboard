@@ -3,10 +3,143 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1976,
- "updatedAt": "2026-09-13 15:09",
+ "version": 1977,
+ "updatedAt": "2026-09-13 15:27",
  "days": 30,
  "items": [
+  {
+   "ts": "1789280815.389539",
+   "date": "2026-09-13",
+   "time": "15:26",
+   "store": "우연초밥",
+   "biz": "1910903529",
+   "pos": "토스포스",
+   "content": "토스포스  / 메뉴등록 요청  / 0914 반영 가능함으로 사전 양해완료 (0915오픈)\n• 익일 반영완료되면  완료 문자 발송 한번만 부탁드립니다 !",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C1A2KALE7",
+     "from": "댓글",
+     "path": "menu-files/1789280815_389539-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "초밥류",
+       "name": "연어초밥 10p",
+       "price": 17500
+      },
+      {
+       "category": "초밥류",
+       "name": "연어초밥 5p",
+       "price": 9000
+      },
+      {
+       "category": "초밥류",
+       "name": "연어회",
+       "price": 17000
+      },
+      {
+       "category": "초밥류",
+       "name": "소고기초밥 · 우삼겹 10p",
+       "price": 15500
+      },
+      {
+       "category": "초밥류",
+       "name": "소고기초밥 · 우삼겹 5p",
+       "price": 7500
+      },
+      {
+       "category": "초밥류",
+       "name": "소고기초밥 · 살치살 10p",
+       "price": 19000
+      },
+      {
+       "category": "초밥류",
+       "name": "소고기초밥 · 살치살 5p",
+       "price": 9500
+      },
+      {
+       "category": "초밥류",
+       "name": "계란초밥 5p",
+       "price": 5000
+      },
+      {
+       "category": "초밥류",
+       "name": "유부초밥 5p",
+       "price": 4000
+      },
+      {
+       "category": "덮밥류",
+       "name": "연어덮밥",
+       "price": 16500
+      },
+      {
+       "category": "덮밥류",
+       "name": "소고기 덮밥",
+       "price": 11000
+      },
+      {
+       "category": "덮밥류",
+       "name": "돈까츠덮밥",
+       "price": 12000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "새우튀김 3p",
+       "price": 5000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "어묵튀김",
+       "price": 5000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "왕치즈스틱",
+       "price": 6000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "어묵우동",
+       "price": 9000
+      },
+      {
+       "category": "사이드메뉴",
+       "name": "수제 돈카츠",
+       "price": 12000
+      },
+      {
+       "category": "주류/음료",
+       "name": "레몬하이볼",
+       "price": 7000
+      },
+      {
+       "category": "주류/음료",
+       "name": "소주 백주",
+       "price": 5000
+      },
+      {
+       "category": "주류/음료",
+       "name": "콜라 사이다",
+       "price": 2000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "초밥류에\n• 우연초밥 10p  16,500원   추가 등록 요청"
+   ],
+   "rc": 2,
+   "lr": "1789280847.911549",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789280815389539"
+  },
   {
    "ts": "1789258250.870129",
    "date": "2026-09-13",
@@ -53164,27 +53297,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786690128144769"
-  },
-  {
-   "ts": "1786688688.565349",
-   "date": "2026-08-14",
-   "time": "15:24",
-   "store": "쏘주 맥쭈",
-   "biz": "1921702310",
-   "pos": "오케이포스",
-   "content": "오케이포스 영수증, 메뉴 추가 요청\n\n프린터 설정 : 디저트 카테고리\n딸기모찌와참치크래커 홀에서만 주문서 출력\n\n메뉴 추가 : 간단안주 카테고리\n갈릭디핑크래미와어니언링 16900원\n주방 홀 출력",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1786688691.978959",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786688688565349"
   }
  ],
  "ocr": {

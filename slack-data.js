@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10277,
+  "version": 10278,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173439,55 +173439,121 @@ window.SLACK_DATA = {
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "15:13",
+      "updatedAt": "15:26",
       "voc": {
-        "responses": 3,
+        "responses": 9,
         "install": {
-          "count": 2,
+          "count": 6,
           "low": 0
         },
         "nps": {
-          "count": 3,
-          "low": 0
+          "count": 9,
+          "low": 1
         },
         "high": {
           "install": 2,
-          "nps": 2
+          "nps": 5
         },
         "npsDist": {
+          "5": 1,
+          "6": 1,
           "7": 1,
-          "10": 2
+          "8": 1,
+          "10": 5
         },
         "installDist": {
+          "3": 3,
+          "4": 1,
           "5": 2
         },
         "byIndustry": {
-          "서비스[뷰티,헤어]": 1,
-          "도소매": 1
+          "도소매": 3,
+          "서비스[뷰티,헤어]": 3
         },
         "byTenure": {
-          "12개월": {
-            "total": 1,
+          "구매설치": {
+            "total": 6,
+            "low": 1
+          },
+          "1개월": {
+            "total": 2,
             "low": 0
           },
-          "구매설치": {
-            "total": 2,
+          "12개월": {
+            "total": 1,
             "low": 0
           }
         },
         "byVan": {
-          "KPN": {
-            "total": 2,
+          "KOCES": {
+            "total": 3,
+            "low": 1
+          },
+          "KIS": {
+            "total": 1,
             "low": 0
           },
-          "KOCES": {
+          "KPN": {
+            "total": 4,
+            "low": 0
+          },
+          "SMARTRO": {
             "total": 1,
             "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 1
+        },
+        "alerts": [
+          {
+            "time": "15:26",
+            "store": "다쏜다 휴대폰 성지 안산 본오점",
+            "storeId": "648887",
+            "industry": "도소매",
+            "indBucket": "도소매",
+            "install": 3,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "설치가 어렵네요",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
         "praises": [
+          {
+            "time": "15:26",
+            "store": "라르브르플라워스튜디오",
+            "storeId": "629660",
+            "indBucket": "도소매",
+            "emp": "",
+            "install": 3,
+            "nps": 10,
+            "text": "디테일하게 알려주시기보단 속전속결 편해요",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
+            "time": "15:26",
+            "store": "영네일",
+            "storeId": "453130",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 3,
+            "nps": 6,
+            "text": "ㅡ 영수증 출력불편",
+            "byReaction": false,
+            "doneDate": ""
+          },
           {
             "time": "08:54",
             "store": "바이쇼룸(byshowroom)",
@@ -173508,21 +173574,25 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789280125.02,
+        "lastSeen": 1789280848.053,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789280125.02,
+        "lastSeen": 1789280848.053,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
       },
       "1789279201.807909": {
         "post": "1789279201.807909",
-        "lastSeen": 1789280125.02
+        "lastSeen": 1789280848.053
+      },
+      "1789280815.389539": {
+        "post": "1789280815.389539",
+        "lastSeen": 1789280848.053
       }
     },
     "days": {
@@ -226525,7 +226595,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 15:15",
+    "at": "2026-09-13 15:27",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
