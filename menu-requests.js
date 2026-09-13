@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1958,
- "updatedAt": "2026-09-13 09:01",
+ "version": 1959,
+ "updatedAt": "2026-09-13 09:12",
  "days": 30,
  "items": [
+  {
+   "ts": "1789258250.870129",
+   "date": "2026-09-13",
+   "time": "09:10",
+   "store": "연지 민물매운탕",
+   "biz": "2062828779",
+   "pos": "오케이포스",
+   "content": "오케이포스 메뉴 수정 부탁 드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "메기+빠가\n3인 60,000원\n4인 78,000원\n\n빠가 + 잡고기\n2인  42, 000원\n\n미나리추가 삭제"
+   ],
+   "rc": 2,
+   "lr": "1789258273.167319",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "최민석",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789258250870129"
+  },
   {
    "ts": "1789109276.778279",
    "date": "2026-09-11",
