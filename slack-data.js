@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10252,
+  "version": 10253,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173063,7 +173063,19 @@ window.SLACK_DATA = {
           "최민석": 1
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "11:39",
+          "store": "빨간대게",
+          "biz": "5015700638",
+          "handler": "최민석",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "done": [
         {
           "time": "11:51",
@@ -173332,7 +173344,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 19,
+        "online": 20,
         "offline": 5,
         "unknown": 0
       },
@@ -173407,21 +173419,21 @@ window.SLACK_DATA = {
       },
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789270541.608,
+        "lastSeen": 1789271127.531,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789270541.608,
+        "lastSeen": 1789271127.531,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
       },
       "1789267161.505259": {
         "post": "1789267161.505259",
-        "lastSeen": 1789270541.608,
+        "lastSeen": 1789271127.531,
         "r": 1,
         "day": "2026-09-13",
         "idx": 10
@@ -226382,7 +226394,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 12:35",
+    "at": "2026-09-13 12:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
