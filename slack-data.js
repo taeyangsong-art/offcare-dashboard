@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10207,
+  "version": 10208,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173049,6 +173049,7 @@ window.SLACK_DATA = {
     "2026-09-13": {
       "counts": {
         "as": {
+          "최민석": 1,
           "김동욱": 1
         },
         "transfer": {
@@ -173060,6 +173061,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:43",
+          "store": "수담수학학원",
+          "biz": "1289386443",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "포프(노트북) 정상 온보딩 여부 확인 부탁드리며, 재온보딩 필요한 경우 온보딩 도움 부탁드립니다. (9시 40분 예약)",
+          "hw": "",
+          "intake": "offline",
+          "note": "에듀ok사용중 토스포스 사용불가 안내 완료 및 프로그램 관련 문의사항 에듀 문의 안내 완료!"
+        },
         {
           "time": "09:35",
           "store": "대박삼겹김치찜&amp;초대박등갈비김치찜 양평점",
@@ -173096,7 +173108,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 2,
-        "offline": 1,
+        "offline": 2,
         "unknown": 0
       },
       "updatedAt": "09:43",
@@ -226001,7 +226013,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 09:45",
+    "at": "2026-09-13 09:49",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
