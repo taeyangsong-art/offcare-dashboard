@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10306,
+  "version": 10307,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173079,7 +173079,7 @@ window.SLACK_DATA = {
           "req": "포프(PC와 랜선으로 연결)  wifi무프 사용중   / 매장 공유기 변경되어  무프 출력 안됨",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "와이파이 세팅은되었으나 포스재부팅팔요하지만 배달주문이 계속들어와 오후9시예약으로 확인건입니다."
         },
         {
           "time": "16:53",
@@ -173790,21 +173790,21 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789288698.581,
+        "lastSeen": 1789288759.906,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789288698.581,
+        "lastSeen": 1789288759.906,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
       },
       "1789288679.187739": {
         "post": "1789288679.187739",
-        "lastSeen": 1789288698.581
+        "lastSeen": 1789288759.906
       }
     },
     "days": {
@@ -226861,7 +226861,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 17:38",
+    "at": "2026-09-13 17:39",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
