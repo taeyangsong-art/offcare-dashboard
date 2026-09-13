@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10275,
+  "version": 10276,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173049,6 +173049,7 @@ window.SLACK_DATA = {
     "2026-09-13": {
       "counts": {
         "onboarding": {
+          "김기범": 1,
           "최민석": 2,
           "김동욱": 1
         },
@@ -173068,6 +173069,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:04",
+          "store": "트럭트",
+          "biz": "8990403666",
+          "cat": "onboarding",
+          "emp": "김기범",
+          "req": "• 프론트 + 프린터기 온보딩 부탁드립니다~",
+          "hw": "",
+          "intake": "online",
+          "note": "프린터 온보딩 및 용지출력 정상 완료"
+        },
         {
           "time": "14:57",
           "store": "루루아(LULUA)",
@@ -173423,19 +173435,19 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 25,
+        "online": 26,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "15:04",
+      "updatedAt": "15:13",
       "voc": {
-        "responses": 2,
+        "responses": 3,
         "install": {
           "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 2,
+          "count": 3,
           "low": 0
         },
         "high": {
@@ -173443,6 +173455,7 @@ window.SLACK_DATA = {
           "nps": 2
         },
         "npsDist": {
+          "7": 1,
           "10": 2
         },
         "installDist": {
@@ -173453,6 +173466,10 @@ window.SLACK_DATA = {
           "도소매": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 1,
+            "low": 0
+          },
           "구매설치": {
             "total": 2,
             "low": 0
@@ -173460,7 +173477,7 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KPN": {
-            "total": 1,
+            "total": 2,
             "low": 0
           },
           "KOCES": {
@@ -173491,21 +173508,21 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789279759.658,
+        "lastSeen": 1789280002.959,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789279759.658,
+        "lastSeen": 1789280002.959,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
       },
       "1789279201.807909": {
         "post": "1789279201.807909",
-        "lastSeen": 1789279759.658
+        "lastSeen": 1789280002.959
       }
     },
     "days": {
@@ -226508,7 +226525,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 15:09",
+    "at": "2026-09-13 15:13",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
