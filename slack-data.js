@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10281,
+  "version": 10282,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173461,27 +173461,27 @@ window.SLACK_DATA = {
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "15:29",
+      "updatedAt": "15:43",
       "voc": {
-        "responses": 10,
+        "responses": 12,
         "install": {
           "count": 6,
           "low": 0
         },
         "nps": {
-          "count": 10,
-          "low": 1
+          "count": 12,
+          "low": 2
         },
         "high": {
           "install": 2,
-          "nps": 6
+          "nps": 7
         },
         "npsDist": {
-          "5": 1,
+          "5": 2,
           "6": 1,
           "7": 1,
           "8": 1,
-          "10": 6
+          "10": 7
         },
         "installDist": {
           "3": 3,
@@ -173493,6 +173493,14 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 3
         },
         "byTenure": {
+          "12개월": {
+            "total": 2,
+            "low": 0
+          },
+          "3개월": {
+            "total": 1,
+            "low": 1
+          },
           "6개월": {
             "total": 1,
             "low": 0
@@ -173504,13 +173512,17 @@ window.SLACK_DATA = {
           "1개월": {
             "total": 2,
             "low": 0
-          },
-          "12개월": {
-            "total": 1,
-            "low": 0
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 5,
+            "low": 0
+          },
+          "SMARTRO": {
+            "total": 2,
+            "low": 1
+          },
           "SECTA9": {
             "total": 1,
             "low": 0
@@ -173522,20 +173534,35 @@ window.SLACK_DATA = {
           "KIS": {
             "total": 1,
             "low": 0
-          },
-          "KPN": {
-            "total": 4,
-            "low": 0
-          },
-          "SMARTRO": {
-            "total": 1,
-            "low": 0
           }
         },
         "reasonCounts": {
+          "필요한 기능이 없거나 몰라서 불편": 1,
           "단말기 설치나 초기 과정이 어려움": 1
         },
         "alerts": [
+          {
+            "time": "15:38",
+            "store": "리린필라테스",
+            "storeId": "493932",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "프로그램을 쓰다보니 불편한점들이 계속 보여서 너무 좋다라고 추천하기는 애매해요",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:26",
             "store": "다쏜다 휴대폰 성지 안산 본오점",
@@ -173604,17 +173631,21 @@ window.SLACK_DATA = {
     "watch": {
       "1789262033.886249": {
         "post": "1789262033.886249",
-        "lastSeen": 1789281382.377,
+        "lastSeen": 1789281859.268,
         "r": 1,
         "day": "2026-09-13",
         "idx": 0
       },
       "1789265896.303689": {
         "post": "1789265896.303689",
-        "lastSeen": 1789281382.377,
+        "lastSeen": 1789281859.268,
         "r": 1,
         "day": "2026-09-13",
         "idx": 9
+      },
+      "1789281786.179769": {
+        "post": "1789281786.179769",
+        "lastSeen": 1789281859.268
       }
     },
     "days": {
@@ -226626,7 +226657,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-13 15:36",
+    "at": "2026-09-13 15:44",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
