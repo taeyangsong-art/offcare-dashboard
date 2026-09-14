@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1987,
- "updatedAt": "2026-09-14 09:31",
+ "version": 1988,
+ "updatedAt": "2026-09-14 09:33",
  "days": 30,
  "items": [
   {
@@ -20,9 +20,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1789345822.201079",
+   "replies": [
+    "상위타이틀 1.밥버거 2.컵밥 3.토핑 4.사이드메뉴\n하위 메뉴는 사진을 참조 부탁드립니다\n고생하십시오\n봉구스밥버거 부산대점 ···"
+   ],
+   "rc": 2,
+   "lr": "1789345924.937999",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -170,8 +172,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1789345312.733949",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789345309537909"
   },
   {
