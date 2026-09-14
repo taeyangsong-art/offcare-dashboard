@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10396,
+  "version": 10397,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173899,6 +173899,10 @@ window.SLACK_DATA = {
     },
     "2026-09-14": {
       "counts": {
+        "onboarding": {
+          "송태양": 1,
+          "고경림": 1
+        },
         "as": {
           "김동욱": 3,
           "서상원": 1,
@@ -173907,15 +173911,23 @@ window.SLACK_DATA = {
           "김현기": 2,
           "배선유": 1
         },
-        "onboarding": {
-          "고경림": 1
-        },
         "menu": {
           "김규빈": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:40",
+          "store": "대오농장",
+          "biz": "2889401888",
+          "cat": "onboarding",
+          "emp": "송태양",
+          "req": "포프(PC) + CAT 온보딩 부탁드립니다. (K501 용 TID 5712614017 생성 완료)",
+          "hw": "",
+          "intake": "online",
+          "note": "• 온보딩 완료입니다 온보딩 완료입니다"
+        },
         {
           "time": "09:27",
           "store": "메이드바이아우라(made by aura)",
@@ -174061,7 +174073,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 8,
+        "online": 9,
         "offline": 5,
         "unknown": 0
       },
@@ -174094,25 +174106,17 @@ window.SLACK_DATA = {
       },
       "1789344003.464149": {
         "post": "1789344003.464149",
-        "lastSeen": 1789347117.833,
+        "lastSeen": 1789347263.296,
         "r": 1,
         "day": "2026-09-14",
         "idx": 1
       },
       "1789345116.087099": {
         "post": "1789345116.087099",
-        "lastSeen": 1789347117.833,
+        "lastSeen": 1789347263.296,
         "r": 1,
         "day": "2026-09-14",
         "idx": 5
-      },
-      "1789346922.665709": {
-        "post": "1789346922.665709",
-        "lastSeen": 1789347117.833
-      },
-      "1789345818.225009": {
-        "post": "1789345818.225009",
-        "lastSeen": 1789347117.833
       }
     },
     "days": {
@@ -227317,7 +227321,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-14 09:52",
+    "at": "2026-09-14 09:54",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
