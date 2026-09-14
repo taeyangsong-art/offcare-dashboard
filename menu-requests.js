@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2005,
- "updatedAt": "2026-09-14 13:14",
+ "version": 2006,
+ "updatedAt": "2026-09-14 13:37",
  "days": 30,
  "items": [
+  {
+   "ts": "1789360508.598689",
+   "date": "2026-09-14",
+   "time": "13:35",
+   "store": "더멀리",
+   "biz": "3976300914",
+   "pos": "토스포스",
+   "content": "espresso 메뉴에 디카페인, 샷추가, 오트밀크 변경 중복 가능하게 변경 부탁드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789360512.463409",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789360508598689"
+  },
   {
    "ts": "1789358913.197009",
    "date": "2026-09-14",
