@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1991,
- "updatedAt": "2026-09-14 09:52",
+ "version": 1992,
+ "updatedAt": "2026-09-14 10:00",
  "days": 30,
  "items": [
+  {
+   "ts": "1789347512.915619",
+   "date": "2026-09-14",
+   "time": "09:58",
+   "store": "온꽈배기 왕십리점",
+   "biz": "7710202894",
+   "pos": "",
+   "content": "메뉴",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "https://w1659946222-hxm266180.slack.com/archives/C0A7CLLANP7/p1789347447104449?thread_ts=···.926609&cid=C0A7CLLANP7"
+   ],
+   "rc": 2,
+   "lr": "1789347523.123739",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789347512915619"
+  },
   {
    "ts": "1789345818.225009",
    "date": "2026-09-14",
@@ -880,8 +903,8 @@ window.MENU_REQUESTS = {
    "rc": 18,
    "lr": "1789347008.967799",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789345818225009"
   },
   {
