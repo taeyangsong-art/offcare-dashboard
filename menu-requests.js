@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2006,
- "updatedAt": "2026-09-14 13:37",
+ "version": 2007,
+ "updatedAt": "2026-09-14 13:52",
  "days": 30,
  "items": [
   {
@@ -339,7 +339,6 @@ window.MENU_REQUESTS = {
      "name": "Resized_1789355253005.jpg",
      "fid": "F0C2E8KSV7S",
      "from": "댓글",
-     "path": "menu-files/1789358795_146169-0.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -412,13 +411,13 @@ window.MENU_REQUESTS = {
        "name": "비닐봉투",
        "price": 100
       }
-     ]
+     ],
+     "path": "menu-files/1789358795_146169-0.jpg"
     },
     {
      "name": "1000004895.jpg",
      "fid": "F0C1F8Z2D45",
      "from": "댓글",
-     "path": "menu-files/1789358795_146169-1.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -511,13 +510,13 @@ window.MENU_REQUESTS = {
        "name": "소금빵",
        "price": 3500
       }
-     ]
+     ],
+     "path": "menu-files/1789358795_146169-1.jpg"
     },
     {
      "name": "1000004894.jpg",
      "fid": "F0C1DLMCMSP",
      "from": "댓글",
-     "path": "menu-files/1789358795_146169-2.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -650,13 +649,13 @@ window.MENU_REQUESTS = {
        "name": "마원 토마토",
        "price": 7000
       }
-     ]
+     ],
+     "path": "menu-files/1789358795_146169-2.jpg"
     },
     {
      "name": "1000004893.jpg",
      "fid": "F0C1HV36VEJ",
      "from": "댓글",
-     "path": "menu-files/1789358795_146169-3.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -724,13 +723,13 @@ window.MENU_REQUESTS = {
        "name": "토마토 쥬스",
        "price": 8500
       }
-     ]
+     ],
+     "path": "menu-files/1789358795_146169-3.jpg"
     },
     {
      "name": "1000004892.jpg",
      "fid": "F0C1PHJ2B3N",
      "from": "댓글",
-     "path": "menu-files/1789358795_146169-4.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -833,13 +832,13 @@ window.MENU_REQUESTS = {
        "name": "얼그레이 흑임자 토스트 (I)",
        "price": 6500
       }
-     ]
+     ],
+     "path": "menu-files/1789358795_146169-4.jpg"
     },
     {
      "name": "1000004891.jpg",
      "fid": "F0C1DLMBZT5",
      "from": "댓글",
-     "path": "menu-files/1789358795_146169-5.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -1002,13 +1001,14 @@ window.MENU_REQUESTS = {
        "name": "아)샷추가",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1789358795_146169-5.jpg"
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1789358882.349349",
+   "rc": 3,
+   "lr": "1789361480.359959",
    "rfx": 3,
    "status": "wait",
    "handler": null,
