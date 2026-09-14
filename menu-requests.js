@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2023,
- "updatedAt": "2026-09-14 15:29",
+ "version": 2024,
+ "updatedAt": "2026-09-14 15:33",
  "days": 30,
  "items": [
   {
@@ -45,10 +45,10 @@ window.MENU_REQUESTS = {
     "화이트 와인 안에\n루이자도 보르고뉴 130,000 -> 150,000 금액 수정 요청 주셨어요.",
     "재인입 / 지연 양해 드렸습니다."
    ],
-   "rc": 7,
-   "lr": "1789367212.955729",
+   "rc": 8,
+   "lr": "1789367453.977109",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789365232636119"
   },
