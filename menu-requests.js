@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2020,
- "updatedAt": "2026-09-14 15:15",
+ "version": 2021,
+ "updatedAt": "2026-09-14 15:19",
  "days": 30,
  "items": [
   {
@@ -47,8 +47,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1789365261.297539",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789365232636119"
   },
   {
@@ -67,7 +67,6 @@ window.MENU_REQUESTS = {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxNF8xNDIwNT",
      "fid": "F0C1N9DGY49",
      "from": "댓글",
-     "path": "menu-files/1789365194_155359-0.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -130,13 +129,13 @@ window.MENU_REQUESTS = {
        "name": "그린샐러드",
        "price": 13000
       }
-     ]
+     ],
+     "path": "menu-files/1789365194_155359-0.jpeg"
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxNF8xNDIwNT",
      "fid": "F0C1E52PKNF",
      "from": "댓글",
-     "path": "menu-files/1789365194_155359-1.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -234,13 +233,13 @@ window.MENU_REQUESTS = {
        "name": "씨푸드토마토2",
        "price": 29000
       }
-     ]
+     ],
+     "path": "menu-files/1789365194_155359-1.jpeg"
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxNF8xNDIxMD",
      "fid": "F0C2ENFT8AU",
      "from": "댓글",
-     "path": "menu-files/1789365194_155359-2.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -308,15 +307,16 @@ window.MENU_REQUESTS = {
        "name": "댕유지에이드",
        "price": 6000
       }
-     ]
+     ],
+     "path": "menu-files/1789365194_155359-2.jpeg"
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1789365220.709609",
+   "rc": 3,
+   "lr": "1789366715.733049",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789365194155359"
   },
