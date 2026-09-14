@@ -3,10 +3,40 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1992,
- "updatedAt": "2026-09-14 10:00",
+ "version": 1993,
+ "updatedAt": "2026-09-14 10:09",
  "days": 30,
  "items": [
+  {
+   "ts": "1789347949.506809",
+   "date": "2026-09-14",
+   "time": "10:05",
+   "store": "이엠커피 창원상남점",
+   "biz": "8832202273",
+   "pos": "",
+   "content": "이메일 내용처럼 사진 추가 부탁드립니다~\n(사진 파일은 별도로 전달받지 않았는데, 기존에 등록되어 있는 메뉴 사진으로 복사해서 사용 가능할까요?\n추가로 필요한 이미지 파일이 있다면 말씀 부탁드립니다! :감사합니다꾸벅:)",
+   "special": "",
+   "drive": [],
+   "files": 1,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C1CSUCT6F",
+     "from": "원글",
+     "path": "menu-files/1789347949_506809-0.png",
+     "kind": "other",
+     "menu": []
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789347952.368919",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789347949506809"
+  },
   {
    "ts": "1789347512.915619",
    "date": "2026-09-14",
@@ -18,16 +48,68 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "20260914_100459.jpg",
+     "fid": "F0C1K2YMA66",
+     "from": "댓글",
+     "path": "menu-files/1789347512_915619-0.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "음료 메뉴",
+       "name": "아메리카노",
+       "price": 1500
+      },
+      {
+       "category": "음료 메뉴",
+       "name": "카페라떼",
+       "price": 2500
+      },
+      {
+       "category": "음료 메뉴",
+       "name": "카페모카",
+       "price": 2500
+      },
+      {
+       "category": "음료 메뉴",
+       "name": "바닐라라떼",
+       "price": 2500
+      },
+      {
+       "category": "음료 메뉴",
+       "name": "초코라떼",
+       "price": 2500
+      },
+      {
+       "category": "음료 메뉴",
+       "name": "말차라떼",
+       "price": 2500
+      },
+      {
+       "category": "음료 메뉴",
+       "name": "오미자 에이드",
+       "price": 2500
+      },
+      {
+       "category": "음료 메뉴",
+       "name": "복숭아 아이스티",
+       "price": 2500
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [
-    "https://w1659946222-hxm266180.slack.com/archives/C0A7CLLANP7/p1789347447104449?thread_ts=···.926609&cid=C0A7CLLANP7"
+    "https://w1659946222-hxm266180.slack.com/archives/C0A7CLLANP7/p1789347447104449?thread_ts=···.926609&cid=C0A7CLLANP7",
+    "F0C1K2YMA66",
+    "음료추가!"
    ],
-   "rc": 2,
-   "lr": "1789347523.123739",
+   "rc": 4,
+   "lr": "1789348019.787899",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789347512915619"
   },
   {
