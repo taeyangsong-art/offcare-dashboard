@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2017,
- "updatedAt": "2026-09-14 15:03",
+ "version": 2018,
+ "updatedAt": "2026-09-14 15:06",
  "days": 30,
  "items": [
   {
@@ -363,7 +363,16 @@ window.MENU_REQUESTS = {
     "https://drive.google.com/file/d/1ROjbhSNARPB3WeJ18jdVmKtQc8JACq9C/view?usp=drivesdk"
    ],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C1NBVF1CH",
+     "from": "댓글",
+     "path": "menu-files/1789364059_591009-0.png",
+     "kind": "product_photo",
+     "menu": []
+    }
+   ],
    "datt": [
     {
      "id": "1ROjbhSNARPB3WeJ18jdVmKtQc8JACq9C",
@@ -371,12 +380,15 @@ window.MENU_REQUESTS = {
      "menu": []
     }
    ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1789364062.588419",
+   "replies": [
+    "[N44936](칠곡점)",
+    "이걸..?"
+   ],
+   "rc": 3,
+   "lr": "1789365921.952589",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789364059591009"
   },
   {
