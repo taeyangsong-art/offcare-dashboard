@@ -3,10 +3,156 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1984,
- "updatedAt": "2026-09-13 19:39",
+ "version": 1985,
+ "updatedAt": "2026-09-14 09:23",
  "days": 30,
  "items": [
+  {
+   "ts": "1789345309.537909",
+   "date": "2026-09-14",
+   "time": "09:21",
+   "store": "죠죠 전주점",
+   "biz": "4741502862",
+   "pos": "",
+   "content": "메뉴 수정요청\n\n```전주점 메뉴 세팅은 동일하고, 음료세팅에 변경사항 있어서 내용 공유드립니다.\n\n생맥 - 산토리 몰츠 0.75 / 몰먹산 0.4 / 한맥 0.5\n병맥 - 카스, 테라라이트 0.5\n소주 - 참이슬, 새로, 진로 0.5```",
+   "special": "",
+   "drive": [],
+   "files": 1,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C1EA02NS1",
+     "from": "원글",
+     "path": "menu-files/1789345309_537909-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "생맥주",
+       "name": "산토리 몰츠 380ml",
+       "price": 0
+      },
+      {
+       "category": "생맥주",
+       "name": "몰래 먹는 산토리 몰츠 200ml",
+       "price": 0
+      },
+      {
+       "category": "생맥주",
+       "name": "죠죠 생맥주 420ml",
+       "price": 0
+      },
+      {
+       "category": "하이볼",
+       "name": "죠죠 하이볼",
+       "price": 0
+      },
+      {
+       "category": "하이볼",
+       "name": "블루베리 하이볼",
+       "price": 0
+      },
+      {
+       "category": "하이볼",
+       "name": "자몽 하이볼",
+       "price": 0
+      },
+      {
+       "category": "하이볼",
+       "name": "딸기 하이볼",
+       "price": 0
+      },
+      {
+       "category": "하이볼",
+       "name": "진저 하이볼",
+       "price": 0
+      },
+      {
+       "category": "사케",
+       "name": "송죽매 준마이",
+       "price": 0
+      },
+      {
+       "category": "사케",
+       "name": "유즈 사와 (유자)",
+       "price": 0
+      },
+      {
+       "category": "사케",
+       "name": "모모 사와 (복숭아)",
+       "price": 0
+      },
+      {
+       "category": "음료",
+       "name": "제로콜라",
+       "price": 0
+      },
+      {
+       "category": "음료",
+       "name": "콜라",
+       "price": 0
+      },
+      {
+       "category": "음료",
+       "name": "스프라이트",
+       "price": 0
+      },
+      {
+       "category": "음료",
+       "name": "우롱차",
+       "price": 0
+      },
+      {
+       "category": "음료",
+       "name": "블루베리 에이드",
+       "price": 0
+      },
+      {
+       "category": "음료",
+       "name": "딸기 에이드",
+       "price": 0
+      },
+      {
+       "category": "음료",
+       "name": "카스 레몬 논알콜",
+       "price": 0
+      },
+      {
+       "category": "병맥주",
+       "name": "카스",
+       "price": 0
+      },
+      {
+       "category": "병맥주",
+       "name": "테라 라이트",
+       "price": 0
+      },
+      {
+       "category": "소주",
+       "name": "참이슬",
+       "price": 0
+      },
+      {
+       "category": "소주",
+       "name": "새로",
+       "price": 0
+      },
+      {
+       "category": "소주",
+       "name": "진로",
+       "price": 0
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789345312.733949",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789345309537909"
+  },
   {
    "ts": "1789280815.389539",
    "date": "2026-09-13",
