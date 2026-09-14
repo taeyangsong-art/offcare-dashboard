@@ -3,10 +3,39 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2012,
- "updatedAt": "2026-09-14 14:33",
+ "version": 2013,
+ "updatedAt": "2026-09-14 14:37",
  "days": 30,
  "items": [
+  {
+   "ts": "1789364059.591009",
+   "date": "2026-09-14",
+   "time": "14:34",
+   "store": "형과아우황칠누룽지삼계탕",
+   "biz": "7983401362",
+   "pos": "오케이포스",
+   "content": "황칠매운소갈비찜",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1ROjbhSNARPB3WeJ18jdVmKtQc8JACq9C/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1ROjbhSNARPB3WeJ18jdVmKtQc8JACq9C",
+     "kind": "product_photo",
+     "menu": []
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789364062.588419",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789364059591009"
+  },
   {
    "ts": "1789361674.850839",
    "date": "2026-09-14",
