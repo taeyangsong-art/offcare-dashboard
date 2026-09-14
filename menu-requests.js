@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1986,
- "updatedAt": "2026-09-14 09:28",
+ "version": 1987,
+ "updatedAt": "2026-09-14 09:31",
  "days": 30,
  "items": [
+  {
+   "ts": "1789345818.225009",
+   "date": "2026-09-14",
+   "time": "09:30",
+   "store": "봉구스 밥버거 부산대점",
+   "biz": "6071324496",
+   "pos": "",
+   "content": "메뉴등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789345822.201079",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789345818225009"
+  },
   {
    "ts": "1789345309.537909",
    "date": "2026-09-14",
@@ -53273,27 +53294,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786762334280019"
-  },
-  {
-   "ts": "1786753680.776119",
-   "date": "2026-08-15",
-   "time": "09:28",
-   "store": "뚜레쥬르 킨텍스2전시장",
-   "biz": "1283678896",
-   "pos": "토스포스",
-   "content": "추가\n(매입음료)\n사과쥬스 3000원\n오렌지쥬스 3000원\n(아이스음료)\n우유쉐이크 6500원",
-   "special": "···",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1786753684.233519",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786753680776119"
   }
  ],
  "ocr": {
