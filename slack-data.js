@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10382,
+  "version": 10383,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -170113,7 +170113,7 @@ window.SLACK_DATA = {
           "req": "태블릿+프+유프// 프린터 연결 끊겨서 재설정 지원 요청드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "월요일 오전 9시 통화 예약 요청"
         },
         {
           "time": "15:00",
@@ -173906,7 +173906,7 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": ""
+      "updatedAt": "09:00"
     }
   },
   "resp": {
@@ -173928,6 +173928,18 @@ window.SLACK_DATA = {
       "1789311626.986459": {
         "post": "1789311626.986459",
         "lastSeen": 1789330526.37
+      },
+      "1789344015.993179": {
+        "post": "1789344015.993179",
+        "lastSeen": 1789344019.86
+      },
+      "1789344005.953359": {
+        "post": "1789344005.953359",
+        "lastSeen": 1789344019.86
+      },
+      "1789344003.464149": {
+        "post": "1789344003.464149",
+        "lastSeen": 1789344019.86
       }
     },
     "days": {
@@ -227020,7 +227032,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-14 08:45",
+    "at": "2026-09-14 09:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
