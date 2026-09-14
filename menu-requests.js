@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1990,
- "updatedAt": "2026-09-14 09:46",
+ "version": 1991,
+ "updatedAt": "2026-09-14 09:52",
  "days": 30,
  "items": [
   {
@@ -30,7 +30,6 @@ window.MENU_REQUESTS = {
      "name": "20260914_082808.jpg",
      "fid": "F0C1JV5GQBU",
      "from": "댓글",
-     "path": "menu-files/1789345818_225009-1.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -103,13 +102,13 @@ window.MENU_REQUESTS = {
        "name": "손맛된장국",
        "price": 1000
       }
-     ]
+     ],
+     "path": "menu-files/1789345818_225009-1.jpg"
     },
     {
      "name": "20260914_082755.jpg",
      "fid": "F0C1EC6CZB7",
      "from": "댓글",
-     "path": "menu-files/1789345818_225009-2.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -142,13 +141,13 @@ window.MENU_REQUESTS = {
        "name": "돼불에헴컵밥",
        "price": 5200
       }
-     ]
+     ],
+     "path": "menu-files/1789345818_225009-2.jpg"
     },
     {
      "name": "20260914_082802.jpg",
      "fid": "F0C2DBTTPGQ",
      "from": "댓글",
-     "path": "menu-files/1789345818_225009-3.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -216,13 +215,13 @@ window.MENU_REQUESTS = {
        "name": "**해쉬브라운(토핑)",
        "price": 1300
       }
-     ]
+     ],
+     "path": "menu-files/1789345818_225009-3.jpg"
     },
     {
      "name": "20260914_082747.jpg",
      "fid": "F0C1JV72MRQ",
      "from": "댓글",
-     "path": "menu-files/1789345818_225009-4.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -310,13 +309,13 @@ window.MENU_REQUESTS = {
        "name": "음료수",
        "price": 1500
       }
-     ]
+     ],
+     "path": "menu-files/1789345818_225009-4.jpg"
     },
     {
      "name": "20260914_082739.jpg",
      "fid": "F0C1LUPPBAM",
      "from": "댓글",
-     "path": "menu-files/1789345818_225009-5.jpg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -429,7 +428,8 @@ window.MENU_REQUESTS = {
        "name": "칠리치킨",
        "price": 4500
       }
-     ]
+     ],
+     "path": "menu-files/1789345818_225009-5.jpg"
     },
     {
      "name": "20260913_103637.jpg",
@@ -873,10 +873,12 @@ window.MENU_REQUESTS = {
     "상위타이틀 1.밥버거 2.컵밥 3.토핑 4.사이드메뉴\n하위 메뉴는 사진을 참조 부탁드립니다\n고생하십시오\n봉구스밥버거 부산대점 ···",
     "이거 밑에 엑셀로 좀 넣엇주세ㅕㅇ....ㅠㅠㅠ",
     "거북섬에서 바이러스를 먹엇나",
-    "거참"
+    "거참",
+    "먼가 이상하죠;; 허어어...",
+    "pc밀어야하나"
    ],
-   "rc": 10,
-   "lr": "1789346737.606529",
+   "rc": 18,
+   "lr": "1789347008.967799",
    "rfx": 3,
    "status": "wait",
    "handler": null,
