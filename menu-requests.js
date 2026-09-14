@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2019,
- "updatedAt": "2026-09-14 15:11",
+ "version": 2020,
+ "updatedAt": "2026-09-14 15:15",
  "days": 30,
  "items": [
   {
@@ -316,8 +316,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1789365220.709609",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789365194155359"
   },
   {
@@ -336,17 +336,86 @@ window.MENU_REQUESTS = {
      "name": "62376.jpg",
      "fid": "F0C1E4R7QUB",
      "from": "댓글",
-     "path": "menu-files/1789365065_073499-0.jpg",
      "kind": "pos_screen",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1789365065_073499-0.jpg"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C1ND4E8TT",
+     "from": "댓글",
+     "path": "menu-files/1789365065_073499-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "기본",
+       "name": "기본01",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본02",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본03",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본04",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본05",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본06",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본07",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본08",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본09",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본10",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본11",
+       "price": 0
+      },
+      {
+       "category": "기본",
+       "name": "기본12",
+       "price": 0
+      }
+     ]
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1789365075.129469",
+   "rc": 3,
+   "lr": "1789366408.706019",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789365065073499"
   },

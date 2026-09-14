@@ -1,10 +1,10 @@
 /*
  * 방문설치 채널(#ishopcare_new_방문설치) 적재 — 자동 생성 파일
  * 직접 수정하지 마세요. scripts/fetch-visits.js 가 덮어씁니다.
- * 갱신: 2026-09-14 15:11 KST · 129건 (2026-07-01 이후)
+ * 갱신: 2026-09-14 15:15 KST · 129건 (2026-07-01 이후)
  */
 window.VISIT_DATA = {
-  updatedAt: '2026-09-14 15:11',
+  updatedAt: '2026-09-14 15:15',
   records: [
   {"id":"11366","date":"2026-07-01","time":"09:40","store":"(주)참치공방(종각본점)","biz":"2338800379","kind":"AS","status":"done","visitDate":"2026-07-01","region":"수도권","route":"온라인","addr":"서울특별시 종로구","van":"DAOU","equip":"dk9300 용지 끼임 점검","ship":"","delivery":"","requester":"","assignee":"이성철","rounds":0,"roundDates":[],"brand":"참치공방"},
   {"id":"11367","date":"2026-07-01","time":"09:45","store":"참치공방 시청지점","biz":"7368501084","kind":"AS","status":"done","visitDate":"2026-07-01","region":"수도권","route":"오프라인","addr":"서울특별시 중구","van":"DAOU","equip":"DK 9300","ship":"","delivery":"","requester":"","assignee":"이성철","rounds":4,"roundDates":["2025-04-22","2025-06-04","2026-05-12","2026-07-01","2025-04-22","2025-06-04","2026-05-12","2026-07-01"],"brand":"참치공방"},
@@ -76,7 +76,7 @@ window.VISIT_DATA = {
   {"id":"13017","date":"2026-08-11","time":"14:48","store":"로칼 용산점","biz":"2250895155","kind":"설치","status":"done","visitDate":"2026-08-18","region":"지방","route":"오프라인","addr":"대구광역시 달서구","van":"KIS","equip":"프론트+유프 (개인소유 포스기에 토스포스 다운 후, 연결 부탁드립니다)","ship":"2026-08-11","delivery":"","requester":"","assignee":"인터링크솔루션","rounds":0,"roundDates":[],"brand":"로칼"},
   {"id":"13041","date":"2026-08-11","time":"16:22","store":"용용선생 대구동성로점","biz":"1936200504","kind":"기타","status":"done","visitDate":"2026-08-18","region":"지방","route":"오프라인","addr":"대구광역시 중구","van":"NICE","equip":"포스기 2EA + 프론트 1EA + CAT단말기 1EA + 유선프린터기 1EA + 금전함 1EA","ship":"","delivery":"","requester":"","assignee":"제이투시스템","rounds":0,"roundDates":[],"brand":"용용선생"},
   {"id":"13051","date":"2026-08-11","time":"18:04","store":"등촌샤브칼국수 강릉점","biz":"3180304311","kind":"설치","status":"done","visitDate":"2026-08-18","region":"지방","route":"오프라인","addr":"강원특별자치도 강릉시","van":"KIS","equip":"개인PC(윈도우 10이상) + 프론트 1EA + 유선프린터기 1EA + 금전함 1EA","ship":"2026-08-11","delivery":"","requester":"","assignee":"","rounds":0,"roundDates":[],"brand":"등촌샤브칼국수"},
-  {"id":"13058","date":"2026-08-12","time":"09:25","store":"자담치킨  외동입실점","biz":"3322002505","kind":"설치","status":"done","visitDate":"2026-08-14","region":"지방","route":"온라인","addr":"경상북도 경주시","van":"KOCES","equip":"자체PC+프론트+유선프린터","ship":"2026-08-11","delivery":"배달의민족(푸드), 요기요, 쿠팡(푸드), 땡겨요","requester":"","assignee":"","rounds":0,"roundDates":[],"brand":"자담치킨"},
+  {"id":"13058","date":"2026-08-12","time":"09:25","store":"자담치킨  외동입실점","biz":"3322002505","kind":"설치","status":"done","visitDate":"2026-08-14","region":"지방","route":"온라인","addr":"경상북도 경주시","van":"KOCES","equip":"자체PC+프론트+유선프린터","ship":"2026-08-11","delivery":"배달의민족(푸드), 요기요, 쿠팡(푸드), 땡겨요","requester":"","assignee":"IC정보통신","rounds":0,"roundDates":[],"brand":"자담치킨"},
   {"id":"13062","date":"2026-08-12","time":"11:25","store":"강창구찹쌀진순대(수유역점)","biz":"4646800562","kind":"AS","status":"done","visitDate":"2026-08-12","region":"수도권","route":"오프라인","addr":"서울특별시 강북구","van":"KIS","equip":"포스+ 듀얼 모니터+ 금전함 + 단말기","ship":"","delivery":"","requester":"","assignee":"김주진","rounds":0,"roundDates":[],"brand":"강창구찹쌀진순대"},
   {"id":"13064","date":"2026-08-12","time":"12:01","store":"강창구찹쌀진순대 세마역점","biz":"5341202858","kind":"AS","status":"done","visitDate":"2026-08-14","region":"지방","route":"오프라인","addr":"경기도 오산시","van":"KIS","equip":"N250","ship":"2026-08-12","delivery":"","requester":"","assignee":"가나정보","rounds":3,"roundDates":["2025-06-09","2025-06-10","2026-08-14","2025-06-09","2025-06-10","2026-08-14"],"brand":"강창구찹쌀진순대"},
   {"id":"13089","date":"2026-08-12","time":"16:42","store":"두찜경산사동점","biz":"2552302188","kind":"설치","status":"done","visitDate":"2026-08-21","region":"지방","route":"온라인","addr":"경상북도 경산시","van":"KOCES","equip":"프론트+포스기+유선프린터+금전함 대형 블랙","ship":"2026-08-11","delivery":"배달의민족(푸드), 요기요, 땡겨요, 쿠팡(푸드)","requester":"","assignee":"SP정보통신","rounds":0,"roundDates":[],"brand":"두찜"},
