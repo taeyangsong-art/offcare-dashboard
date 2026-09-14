@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1997,
- "updatedAt": "2026-09-14 11:45",
+ "version": 1998,
+ "updatedAt": "2026-09-14 11:53",
  "days": 30,
  "items": [
   {
@@ -37,25 +37,25 @@ window.MENU_REQUESTS = {
      "name": "shake upgrade.jpg",
      "fid": "F0C1ES7FTQD",
      "from": "댓글",
-     "path": "menu-files/1789352883_722729-2.jpg",
      "kind": "product_photo",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1789352883_722729-2.jpg"
     },
     {
      "name": "add stack.jpg",
      "fid": "F0C1MDB3589",
      "from": "댓글",
-     "path": "menu-files/1789352883_722729-3.jpg",
      "kind": "product_photo",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1789352883_722729-3.jpg"
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 3,
-   "lr": "1789353007.733439",
+   "rc": 5,
+   "lr": "1789354358.565699",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789352883722729"
   },
@@ -54284,29 +54284,6 @@ window.MENU_REQUESTS = {
    "status": "dup",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786762774639819"
-  },
-  {
-   "ts": "1786762334.280019",
-   "date": "2026-08-15",
-   "time": "11:52",
-   "store": "더 멀리",
-   "biz": "3976300914",
-   "pos": "토스포스",
-   "content": "책 추가",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "중복 다 솎아내고 15개 등록 완료"
-   ],
-   "rc": 2,
-   "lr": "1786770422.696039",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1786762334280019"
   }
  ],
  "ocr": {
