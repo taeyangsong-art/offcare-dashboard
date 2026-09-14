@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10383,
+  "version": 10384,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -173898,15 +173898,31 @@ window.SLACK_DATA = {
       }
     },
     "2026-09-14": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "송태양": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:00",
+          "store": "온담",
+          "biz": "6056400689",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "포프(포스기) 사용 중, 프린터기 전원 미작동으로 인한 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:00"
+      "updatedAt": "09:03"
     }
   },
   "resp": {
@@ -173935,11 +173951,21 @@ window.SLACK_DATA = {
       },
       "1789344005.953359": {
         "post": "1789344005.953359",
-        "lastSeen": 1789344019.86
+        "lastSeen": 1789344258.845,
+        "r": 1,
+        "day": "2026-09-14",
+        "idx": 0
       },
       "1789344003.464149": {
         "post": "1789344003.464149",
-        "lastSeen": 1789344019.86
+        "lastSeen": 1789344258.845,
+        "r": 1,
+        "day": "2026-09-14",
+        "idx": 1
+      },
+      "1789344237.653199": {
+        "post": "1789344237.653199",
+        "lastSeen": 1789344258.845
       }
     },
     "days": {
@@ -227028,11 +227054,34 @@ window.SLACK_DATA = {
             "dmin": 38
           }
         ]
+      },
+      "2026-09-14": {
+        "cnt": 2,
+        "sumMin": 4.488124867280324,
+        "over": 0,
+        "items": [
+          {
+            "hm": "09:00",
+            "min": 2.2,
+            "store": "퀸앤아이덴티티,인천 우리",
+            "biz": "6118703278",
+            "who": "김현기",
+            "cat": "as"
+          },
+          {
+            "hm": "09:00",
+            "min": 2.3,
+            "store": "리리커피로스터리",
+            "biz": "5062394704",
+            "who": "김동욱",
+            "cat": "as"
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-14 09:00",
+    "at": "2026-09-14 09:04",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
