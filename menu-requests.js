@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2018,
- "updatedAt": "2026-09-14 15:06",
+ "version": 2019,
+ "updatedAt": "2026-09-14 15:11",
  "days": 30,
  "items": [
   {
@@ -346,8 +346,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1789365075.129469",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789365065073499"
   },
   {
@@ -368,9 +368,9 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C1NBVF1CH",
      "from": "댓글",
-     "path": "menu-files/1789364059_591009-0.png",
      "kind": "product_photo",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1789364059_591009-0.png"
     }
    ],
    "datt": [
@@ -382,12 +382,13 @@ window.MENU_REQUESTS = {
    ],
    "replies": [
     "[N44936](칠곡점)",
-    "이걸..?"
+    "이걸..?",
+    "황칠매운소갈비찜(2인이상) - 21000원\n메뉴, 포장 카테고리에 1개씩"
    ],
-   "rc": 3,
-   "lr": "1789365921.952589",
+   "rc": 4,
+   "lr": "1789366246.357949",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789364059591009"
   },
