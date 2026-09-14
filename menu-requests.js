@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 1994,
- "updatedAt": "2026-09-14 10:13",
+ "version": 1995,
+ "updatedAt": "2026-09-14 10:23",
  "days": 30,
  "items": [
   {
@@ -30,8 +30,8 @@ window.MENU_REQUESTS = {
    ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1789347952.368919",
+   "rc": 2,
+   "lr": "1789348846.364079",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -53,7 +53,6 @@ window.MENU_REQUESTS = {
      "name": "20260914_100459.jpg",
      "fid": "F0C1K2YMA66",
      "from": "댓글",
-     "path": "menu-files/1789347512_915619-0.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -96,7 +95,8 @@ window.MENU_REQUESTS = {
        "name": "복숭아 아이스티",
        "price": 2500
       }
-     ]
+     ],
+     "path": "menu-files/1789347512_915619-0.jpg"
     }
    ],
    "datt": [],
@@ -105,10 +105,10 @@ window.MENU_REQUESTS = {
     "F0C1K2YMA66",
     "음료추가!"
    ],
-   "rc": 4,
-   "lr": "1789348019.787899",
+   "rc": 5,
+   "lr": "1789348803.165889",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789347512915619"
   },
