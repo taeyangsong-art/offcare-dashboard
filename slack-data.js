@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10656,
+  "version": 10657,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177743,15 +177743,30 @@ window.SLACK_DATA = {
     "2026-09-15": {
       "counts": {
         "as": {
+          "김동욱": 1,
           "고경림": 1,
           "김현기": 1
         },
         "transfer": {
           "송태양": 1
+        },
+        "menu": {
+          "심성현": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:37",
+          "store": "컴포즈_본사테스트",
+          "biz": "5218102386",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "본사 키오스크 로그아웃",
+          "hw": "",
+          "intake": "online",
+          "note": "데모버전의 키오스크 실행하여 발생한 해프닝"
+        },
         {
           "time": "09:23",
           "store": "갓샌드그릴(2호점)",
@@ -177784,20 +177799,39 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "터미널의 경우 삼성페이 인식이 원래 조금 떨어짐 / 토스에서 기기를 만들 때, 프론트에서 메인으로 결제하고 프론트가 파손, 고장 등으로 결제가 불가능할때 서브 개념으로 사용하는 기기로 QR등 지원하지 않고 IC와 MST만 지원함 / 기기를 교체한다 하여도 동일함 / 대표님 인지 완료"
+        },
+        {
+          "time": "09:03",
+          "store": "별에서온 쉐프",
+          "biz": "4021748324",
+          "cat": "menu",
+          "emp": "심성현",
+          "req": "토스포스 -&gt; 오케이포스 변경 매장 입니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
         }
       ],
       "intake": {
-        "online": 3,
+        "online": 5,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:35",
+      "updatedAt": "09:37",
       "ob": {
-        "count": 8,
+        "count": 9,
         "byEmp": {
-          "김규빈": 8
+          "김규빈": 9
         },
         "items": [
+          {
+            "key": "2026년 9월 15일 오전 8:20:35|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788847609543079#1",
+            "handler": "김규빈",
+            "status": "",
+            "recvDate": "2026-09-15",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788847609543079"
+          },
           {
             "key": "2026년 9월 15일 오전 8:19:49|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789274257535319#1",
             "handler": "김규빈",
@@ -177809,9 +177843,9 @@ window.SLACK_DATA = {
           {
             "key": "2026년 9월 15일 오전 8:16:03|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787198968904849#1",
             "handler": "김규빈",
-            "status": "",
+            "status": "일정등록완료",
             "recvDate": "2026-09-15",
-            "planDate": "",
+            "planDate": "2026-09-18",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787198968904849"
           },
           {
@@ -177962,14 +177996,14 @@ window.SLACK_DATA = {
       },
       "1789431909.019439": {
         "post": "1789431909.019439",
-        "lastSeen": 1789432587.224,
+        "lastSeen": 1789432838.606,
         "r": 1,
         "day": "2026-09-15",
         "idx": 0
       },
       "1789432214.036709": {
         "post": "1789432214.036709",
-        "lastSeen": 1789432587.224,
+        "lastSeen": 1789432838.606,
         "r": 1,
         "day": "2026-09-15",
         "idx": 1
@@ -232960,19 +232994,19 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-15 09:36",
+    "at": "2026-09-15 09:40",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 4072,
-    "named": 772,
+    "named": 773,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 772,
+    "done": 773,
     "byStatus": {
-      "일정등록완료": 492,
+      "일정등록완료": 493,
       "1차부재": 168,
       "점주직접접수": 62,
       "설치불가": 13,
