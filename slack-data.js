@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10661,
+  "version": 10662,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177743,6 +177743,7 @@ window.SLACK_DATA = {
     "2026-09-15": {
       "counts": {
         "as": {
+          "배선유": 1,
           "김현기": 3,
           "심성현": 1,
           "김동욱": 2,
@@ -177757,6 +177758,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:54",
+          "store": "카페드롭탑(전주만성점)",
+          "biz": "5987800239",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "단말기에 네트워크 확인 요망 2 표기 됨. 주방프린터 출력 안됨.",
+          "hw": "",
+          "intake": "offline",
+          "note": "/ lan 케이블 문제, 교체 필요 안내했으나 손님왔다며 통화 종료 / 제대로 못 들으신 것 같아서 문자도 발송"
+        },
         {
           "time": "09:46",
           "store": "우연초밥",
@@ -177843,7 +177855,7 @@ window.SLACK_DATA = {
           "req": "9월 15일 오전 9시 40분 / 메뉴 복사 O / 터프, 유프",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "• 명변완료 • 포프터가 아닌 터프 단도긍로 사용하고싶다하셔서 rj9 to rj9 케이블 발송 해드림 • 장비 수령 후 연락주시면 재온보딩 도와드릴 예정 명변완료 포프터가 아닌 터프 단도긍로 사용하고싶다하셔서 rj9 to rj9 케이블 발송 해드림 장비 수령 후 연락주시면 재온보딩 도와드릴 예정"
         },
         {
           "time": "09:14",
@@ -177881,10 +177893,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 10,
-        "offline": 1,
+        "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:54",
+      "updatedAt": "10:00",
       "ob": {
         "count": 14,
         "byEmp": {
@@ -178101,9 +178113,9 @@ window.SLACK_DATA = {
         "post": "1789358845.553799",
         "lastSeen": 1789417000.813
       },
-      "1789433695.270519": {
-        "post": "1789433695.270519",
-        "lastSeen": 1789433777.396
+      "1789433102.622639": {
+        "post": "1789433102.622639",
+        "lastSeen": 1789434028.725
       }
     },
     "days": {
@@ -233102,13 +233114,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-15 09:56",
+    "at": "2026-09-15 10:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 4072,
+    "rows": 4073,
     "named": 778,
     "unknownName": 0,
     "beforeStart": 0,
