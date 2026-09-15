@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10768,
+  "version": 10769,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177811,7 +177811,7 @@ window.SLACK_DATA = {
           "req": "포프(노트북) + 유프 온보딩요청드립니다",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "16일 15시 예약건 예약완료"
         },
         {
           "time": "14:59",
@@ -179153,7 +179153,7 @@ window.SLACK_DATA = {
         "offline": 24,
         "unknown": 0
       },
-      "updatedAt": "15:11",
+      "updatedAt": "15:13",
       "ob": {
         "count": 27,
         "byEmp": {
@@ -179378,6 +179378,42 @@ window.SLACK_DATA = {
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787558366925969"
           }
         ]
+      },
+      "voc": {
+        "responses": 2,
+        "install": {
+          "count": 0,
+          "low": 0
+        },
+        "nps": {
+          "count": 2,
+          "low": 0
+        },
+        "high": {
+          "install": 0,
+          "nps": 0
+        },
+        "npsDist": {
+          "6": 1,
+          "9": 1
+        },
+        "installDist": {},
+        "byIndustry": {},
+        "byTenure": {
+          "6개월": {
+            "total": 2,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "SECTA9": {
+            "total": 2,
+            "low": 0
+          }
+        },
+        "reasonCounts": {},
+        "alerts": [],
+        "praises": []
       }
     }
   },
@@ -179463,37 +179499,48 @@ window.SLACK_DATA = {
       },
       "1789441353.257269": {
         "post": "1789441353.257269",
-        "lastSeen": 1789452669.492,
+        "lastSeen": 1789452887.639,
         "r": 1,
         "day": "2026-09-15",
         "idx": 20
       },
       "1789446671.210049": {
         "post": "1789446671.210049",
-        "lastSeen": 1789452669.492
+        "lastSeen": 1789452887.639
       },
       "1789450653.471049": {
         "post": "1789450653.471049",
-        "lastSeen": 1789452669.492
+        "lastSeen": 1789452887.639
       },
       "1789452004.679449": {
         "post": "1789452004.679449",
-        "lastSeen": 1789452669.492,
+        "lastSeen": 1789452887.639,
         "r": 1,
         "day": "2026-09-15",
         "idx": 52
       },
       "1789452660.079039": {
         "post": "1789452660.079039",
-        "lastSeen": 1789452669.492
+        "lastSeen": 1789452887.639
       },
       "1789452652.958619": {
         "post": "1789452652.958619",
-        "lastSeen": 1789452669.492
+        "lastSeen": 1789452887.639
       },
       "1789452600.830469": {
         "post": "1789452600.830469",
-        "lastSeen": 1789452669.492
+        "lastSeen": 1789452887.639,
+        "r": 1,
+        "day": "2026-09-15",
+        "idx": 54
+      },
+      "1789452785.886759": {
+        "post": "1789452785.886759",
+        "lastSeen": 1789452887.639
+      },
+      "1789452780.736159": {
+        "post": "1789452780.736159",
+        "lastSeen": 1789452887.639
       }
     },
     "days": {
@@ -234456,8 +234503,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-15": {
-        "cnt": 54,
-        "sumMin": 321.6504764080048,
+        "cnt": 55,
+        "sumMin": 324.61272692680365,
         "over": 0,
         "items": [
           {
@@ -234943,13 +234990,21 @@ window.SLACK_DATA = {
             "who": "고경림",
             "cat": "as",
             "dmin": 9.2
+          },
+          {
+            "hm": "15:10",
+            "min": 3,
+            "store": "샤인잉글리시 영어교습소",
+            "biz": "4669601954",
+            "who": "고경림",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-15 15:11",
+    "at": "2026-09-15 15:14",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
