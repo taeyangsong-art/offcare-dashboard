@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2059,
- "updatedAt": "2026-09-15 16:41",
+ "version": 2060,
+ "updatedAt": "2026-09-15 16:45",
  "days": 30,
  "items": [
   {
@@ -24,8 +24,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1789454803.614819",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789454799424269"
   },
   {
@@ -44,13 +44,14 @@ window.MENU_REQUESTS = {
    "replies": [
     "점주님 인입으로 시간 양해 안내 드렸습니다.",
     "keicc237005 / *[S60023]*",
-    "오우 여기 동일한 메뉴명이 아주 많아서 잠시만요~~~ :loading_win:"
+    "오우 여기 동일한 메뉴명이 아주 많아서 잠시만요~~~ :loading_win:",
+    "광어+(방어) 50,000원 > 65,000원 수정 완료"
    ],
-   "rc": 4,
-   "lr": "1789458082.575809",
+   "rc": 5,
+   "lr": "1789458324.159239",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789453493948249"
   },
   {
