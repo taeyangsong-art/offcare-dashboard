@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10728,
+  "version": 10729,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177731,11 +177731,11 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "서상원": 1,
-          "고경림": 8,
           "송태양": 6,
           "김현기": 7,
           "심성현": 9,
           "김동욱": 7,
+          "고경림": 7,
           "김규빈": 1,
           "배선유": 5
         },
@@ -177760,6 +177760,17 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "12:02",
+          "store": "츄로츄로",
+          "biz": "3678703288",
+          "handler": "김현기",
+          "cat": "as",
+          "intake": "offline",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
           "time": "11:00",
           "store": "블렌드 샵",
           "biz": "5181600405",
@@ -177779,17 +177790,6 @@ window.SLACK_DATA = {
           "cat": "as",
           "emp": "서상원",
           "req": "외주",
-          "hw": "",
-          "intake": "online",
-          "note": ""
-        },
-        {
-          "time": "12:59",
-          "store": "오늘예쁘다",
-          "biz": "8184800820",
-          "cat": "as",
-          "emp": "고경림",
-          "req": "[부재로 재접수] 캣( kis-2420) + 프론트 프린터 연결 설정 요청 주셔서 온보딩 요청드립니다. / 케이블은 보유하고 계신다고 합니다.",
           "hw": "",
           "intake": "online",
           "note": ""
@@ -178425,8 +178425,8 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 50,
-        "offline": 10,
+        "online": 49,
+        "offline": 11,
         "unknown": 0
       },
       "updatedAt": "13:00",
@@ -178682,18 +178682,17 @@ window.SLACK_DATA = {
       },
       "1789441353.257269": {
         "post": "1789441353.257269",
-        "lastSeen": 1789444924.376,
+        "lastSeen": 1789445005.417,
         "r": 1,
         "day": "2026-09-15",
         "idx": 20
       },
       "1789444801.060299": {
         "post": "1789444801.060299",
-        "lastSeen": 1789444924.376
-      },
-      "1789444804.494579": {
-        "post": "1789444804.494579",
-        "lastSeen": 1789444924.376
+        "lastSeen": 1789445005.417,
+        "r": 1,
+        "day": "2026-09-15",
+        "idx": 26
       }
     },
     "days": {
@@ -233656,8 +233655,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-15": {
-        "cnt": 26,
-        "sumMin": 162.5573424379031,
+        "cnt": 27,
+        "sumMin": 165.28794579108558,
         "over": 0,
         "items": [
           {
@@ -233892,13 +233891,21 @@ window.SLACK_DATA = {
             "who": "송태양",
             "cat": "as",
             "dmin": 25.8
+          },
+          {
+            "hm": "13:00",
+            "min": 2.7,
+            "store": "제이뷰티룸",
+            "biz": "8934101501",
+            "who": "고경림",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-15 13:02",
+    "at": "2026-09-15 13:03",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
