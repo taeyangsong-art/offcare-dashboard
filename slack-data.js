@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10668,
+  "version": 10669,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177743,9 +177743,9 @@ window.SLACK_DATA = {
     "2026-09-15": {
       "counts": {
         "as": {
+          "김현기": 4,
           "심성현": 2,
           "배선유": 2,
-          "김현기": 3,
           "김동욱": 2,
           "고경림": 3
         },
@@ -177758,6 +177758,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:09",
+          "store": "몽시오",
+          "biz": "6721002670",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "포프(노트북) 사용 매장으로, 반짝 연동 이후, 플러그인 해제한 상황으로 포스 재온보딩 부탁드리겠습니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "개인 노트북 재온보딩 완료"
+        },
         {
           "time": "10:03",
           "store": "우연초밥",
@@ -177936,7 +177947,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 13,
+        "online": 14,
         "offline": 3,
         "unknown": 0
       },
@@ -178160,7 +178171,7 @@ window.SLACK_DATA = {
       },
       "1789434755.726449": {
         "post": "1789434755.726449",
-        "lastSeen": 1789435100.593,
+        "lastSeen": 1789435340.945,
         "r": 1,
         "day": "2026-09-15",
         "idx": 3
@@ -233170,7 +233181,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-15 10:18",
+    "at": "2026-09-15 10:22",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
