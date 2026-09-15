@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2047,
- "updatedAt": "2026-09-15 13:17",
+ "version": 2048,
+ "updatedAt": "2026-09-15 13:21",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C1Z8MLX44",
      "from": "댓글",
-     "path": "menu-files/1789445615_511399-0.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -66,13 +65,13 @@ window.MENU_REQUESTS = {
        "name": "부추전",
        "price": 12000
       }
-     ]
+     ],
+     "path": "menu-files/1789445615_511399-0.png"
     },
     {
      "name": "image.png",
      "fid": "F0C1TL8R9TQ",
      "from": "댓글",
-     "path": "menu-files/1789445615_511399-1.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -170,13 +169,13 @@ window.MENU_REQUESTS = {
        "name": "쭈꾸미닭발",
        "price": 25000
       }
-     ]
+     ],
+     "path": "menu-files/1789445615_511399-1.png"
     },
     {
      "name": "image.png",
      "fid": "F0C1XGMVCD7",
      "from": "댓글",
-     "path": "menu-files/1789445615_511399-2.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -209,13 +208,13 @@ window.MENU_REQUESTS = {
        "name": "공기밥",
        "price": 1000
       }
-     ]
+     ],
+     "path": "menu-files/1789445615_511399-2.png"
     },
     {
      "name": "image.png",
      "fid": "F0C1E7LQM4P",
      "from": "댓글",
-     "path": "menu-files/1789445615_511399-3.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -233,13 +232,13 @@ window.MENU_REQUESTS = {
        "name": "우동사리",
        "price": 3000
       }
-     ]
+     ],
+     "path": "menu-files/1789445615_511399-3.png"
     },
     {
      "name": "image.png",
      "fid": "F0C1Z8PJB36",
      "from": "댓글",
-     "path": "menu-files/1789445615_511399-4.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -272,16 +271,17 @@ window.MENU_REQUESTS = {
        "name": "육전메밀 물비빔막국수",
        "price": 11000
       }
-     ]
+     ],
+     "path": "menu-files/1789445615_511399-4.png"
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1789445743.590879",
+   "rc": 3,
+   "lr": "1789445884.891629",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789445615511399"
   },
   {
