@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10653,
+  "version": 10654,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177761,7 +177761,7 @@ window.SLACK_DATA = {
           "req": "대형 키오스크 사용 매장으로, 결제 이후 주문서 출력이 되지 않으신다고 하여 점검 요청드립니다!",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "키오스크 고객호출방식 -&gt; 주문번호로 설정완료 키오스크 고객호출방식 - 주문번호로 설정완료"
         },
         {
           "time": "09:14",
@@ -177791,7 +177791,7 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:28",
+      "updatedAt": "09:30",
       "ob": {
         "count": 6,
         "byEmp": {
@@ -177946,11 +177946,14 @@ window.SLACK_DATA = {
       },
       "1789431909.019439": {
         "post": "1789431909.019439",
-        "lastSeen": 1789432158.083
+        "lastSeen": 1789432220.015,
+        "r": 1,
+        "day": "2026-09-15",
+        "idx": 0
       },
-      "1789431751.502109": {
-        "post": "1789431751.502109",
-        "lastSeen": 1789432158.083
+      "1789432214.036709": {
+        "post": "1789432214.036709",
+        "lastSeen": 1789432220.015
       }
     },
     "days": {
@@ -232911,11 +232914,26 @@ window.SLACK_DATA = {
             "dmin": 37.7
           }
         ]
+      },
+      "2026-09-15": {
+        "cnt": 1,
+        "sumMin": 4.667159350713094,
+        "over": 0,
+        "items": [
+          {
+            "hm": "09:25",
+            "min": 4.7,
+            "store": "라이크라이크주엽점",
+            "biz": "2351801954",
+            "who": "고경림",
+            "cat": "as"
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-15 09:29",
+    "at": "2026-09-15 09:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
