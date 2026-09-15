@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10660,
+  "version": 10661,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177749,7 +177749,7 @@ window.SLACK_DATA = {
           "고경림": 2
         },
         "transfer": {
-          "송태양": 1
+          "송태양": 2
         },
         "menu": {
           "심성현": 1
@@ -177835,6 +177835,17 @@ window.SLACK_DATA = {
           "note": "키오스크 고객호출방식 -&gt; 주문번호로 설정완료 키오스크 고객호출방식 - 주문번호로 설정완료"
         },
         {
+          "time": "09:22",
+          "store": "홍루이젠 충남계룡점",
+          "biz": "6643601670",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "9월 15일 오전 9시 40분 / 메뉴 복사 O / 터프, 유프",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
           "time": "09:14",
           "store": "하루담",
           "biz": "2800104083",
@@ -177869,17 +177880,33 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 9,
+        "online": 10,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:46",
+      "updatedAt": "09:54",
       "ob": {
-        "count": 12,
+        "count": 14,
         "byEmp": {
-          "김규빈": 12
+          "김규빈": 14
         },
         "items": [
+          {
+            "key": "2026년 9월 15일 오전 9:26:27|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787731318140459#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-09-15",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787731318140459"
+          },
+          {
+            "key": "2026년 9월 15일 오전 9:19:50|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789370766985289#1",
+            "handler": "김규빈",
+            "status": "",
+            "recvDate": "2026-09-15",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789370766985289"
+          },
           {
             "key": "2026년 9월 15일 오전 8:27:56|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789023521058859#1",
             "handler": "김규빈",
@@ -178074,9 +178101,9 @@ window.SLACK_DATA = {
         "post": "1789358845.553799",
         "lastSeen": 1789417000.813
       },
-      "1789433102.622639": {
-        "post": "1789433102.622639",
-        "lastSeen": 1789433558.923
+      "1789433695.270519": {
+        "post": "1789433695.270519",
+        "lastSeen": 1789433777.396
       }
     },
     "days": {
@@ -233075,23 +233102,23 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-15 09:52",
+    "at": "2026-09-15 09:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 4072,
-    "named": 776,
+    "named": 778,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 776,
+    "done": 778,
     "byStatus": {
       "일정등록완료": 497,
-      "1차부재": 168,
+      "1차부재": 169,
       "점주직접접수": 62,
       "설치불가": 13,
-      "(빈칸)": 5,
+      "(빈칸)": 6,
       "자가설치": 24,
       "설치보류요청": 7
     }
