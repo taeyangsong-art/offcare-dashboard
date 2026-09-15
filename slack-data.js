@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10688,
+  "version": 10689,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177730,9 +177730,9 @@ window.SLACK_DATA = {
     "2026-09-15": {
       "counts": {
         "as": {
+          "고경림": 6,
           "심성현": 4,
           "송태양": 2,
-          "고경림": 5,
           "김동욱": 3,
           "김현기": 4,
           "배선유": 3
@@ -177762,6 +177762,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "11:00",
+          "store": "커피포인트(coffee point)",
+          "biz": "4322901056",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "프론트 + 유프 연결 도움 요청 주셨습니다",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "10:59",
           "store": "치유",
@@ -178072,7 +178083,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 23,
+        "online": 24,
         "offline": 6,
         "unknown": 0
       },
@@ -178320,25 +178331,17 @@ window.SLACK_DATA = {
       },
       "1789436700.638159": {
         "post": "1789436700.638159",
-        "lastSeen": 1789437980.595,
+        "lastSeen": 1789438398.4,
         "r": 1,
         "day": "2026-09-15",
         "idx": 4
       },
       "1789437602.174519": {
         "post": "1789437602.174519",
-        "lastSeen": 1789437980.595
-      },
-      "1789437601.484779": {
-        "post": "1789437601.484779",
-        "lastSeen": 1789437980.595,
+        "lastSeen": 1789438398.4,
         "r": 1,
         "day": "2026-09-15",
-        "idx": 5
-      },
-      "1789437601.912149": {
-        "post": "1789437601.912149",
-        "lastSeen": 1789437980.595
+        "idx": 7
       }
     },
     "days": {
@@ -233301,8 +233304,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-15": {
-        "cnt": 7,
-        "sumMin": 19.389147953192392,
+        "cnt": 8,
+        "sumMin": 29.17786430120468,
         "over": 0,
         "items": [
           {
@@ -233355,7 +233358,8 @@ window.SLACK_DATA = {
             "store": "커피포인트(coffee point)",
             "biz": "4322901056",
             "who": "고경림",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 9.8
           },
           {
             "hm": "10:59",
@@ -233365,13 +233369,21 @@ window.SLACK_DATA = {
             "who": "심성현",
             "cat": "as",
             "dmin": 6.4
+          },
+          {
+            "hm": "11:00",
+            "min": 9.8,
+            "store": "인천식당",
+            "biz": "1212337948",
+            "who": "김동욱",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-15 11:06",
+    "at": "2026-09-15 11:13",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
