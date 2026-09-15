@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10674,
+  "version": 10675,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -151520,7 +151520,7 @@ window.SLACK_DATA = {
           "최민석": 21,
           "서상원": 18,
           "배선유": 23,
-          "김기범": 15,
+          "김기범": 16,
           "심성현": 34,
           "송태양": 23,
           "고경림": 26,
@@ -151552,19 +151552,7 @@ window.SLACK_DATA = {
           "배선유": 1
         }
       },
-      "pending": [
-        {
-          "time": "13:49",
-          "store": "카페 융",
-          "biz": "8918603673",
-          "handler": "김기범",
-          "cat": "as",
-          "intake": "offline",
-          "reasons": [
-            "1차 부재"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
         {
           "time": "22:09",
@@ -153794,6 +153782,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "온보딩 완료"
+        },
+        {
+          "time": "13:49",
+          "store": "카페 융",
+          "biz": "8918603673",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "터프 사용 매장으로, 위치 옮기셨다고 하여 재온보딩 요청주시어 확인 부탁드리겠습니다!",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
         },
         {
           "time": "13:46",
@@ -164269,7 +164268,7 @@ window.SLACK_DATA = {
           "김규빈": 7,
           "서상원": 16,
           "심성현": 36,
-          "김기범": 13,
+          "김기범": 14,
           "고경림": 34,
           "송태양": 27,
           "김현기": 25,
@@ -164309,19 +164308,7 @@ window.SLACK_DATA = {
           "배선유": 9
         }
       },
-      "pending": [
-        {
-          "time": "14:37",
-          "store": "파나시아(샐러마켓)킨텍스점",
-          "biz": "8628502271",
-          "handler": "김기범",
-          "cat": "as",
-          "intake": "offline",
-          "reasons": [
-            "1차 부재"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
         {
           "time": "23:14",
@@ -166019,6 +166006,18 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "1차부재 (통화중) / 님, 안녕하세요! 여기 최대한 빠르게 통화 요청 주셔서 통화 부탁 드려도 될까요? 님, 안녕하세요! / 네알겟습니다 : ) / 단말기 초기화후 재온보딩 정상 결제확인 완료했습니다 ."
+        },
+        {
+          "time": "14:37",
+          "store": "파나시아(샐러마켓)킨텍스점",
+          "biz": "8628502271",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "대형 키오스크 사용 매장으로, 교환권이 원래는 1장이 출력되나 영수증에 밑에도 출력되어,",
+          "hw": "",
+          "urgent": true,
+          "intake": "offline",
+          "note": "기범님 ! 아래 번호로 재차 연락 한번만 부탁드리겠습니다! • 010-2744-1232 (갤) 기범님 ! 아래 번호로 재차 연락 한번만 부탁드리겠습니다! 010-2744-1232 (갤) / 넵"
         },
         {
           "time": "14:32",
@@ -177743,6 +177742,7 @@ window.SLACK_DATA = {
     "2026-09-15": {
       "counts": {
         "as": {
+          "서상원": 1,
           "송태양": 1,
           "고경림": 4,
           "심성현": 3,
@@ -177775,6 +177775,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "10:39",
+          "store": "김복남맥주 광주북구우산점",
+          "biz": "8541302502",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "10:30",
           "store": "더윤뷰티",
@@ -178030,11 +178041,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 18,
+        "online": 19,
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "10:39",
+      "updatedAt": "10:42",
       "ob": {
         "count": 16,
         "byEmp": {
@@ -233266,13 +233277,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-15 10:40",
+    "at": "2026-09-15 10:43",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 4074,
+    "rows": 4075,
     "named": 780,
     "unknownName": 0,
     "beforeStart": 0,
