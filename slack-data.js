@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10672,
+  "version": 10673,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177742,15 +177742,16 @@ window.SLACK_DATA = {
     },
     "2026-09-15": {
       "counts": {
-        "extern": {
-          "서상원": 1
-        },
         "as": {
+          "송태양": 1,
           "심성현": 3,
           "김현기": 4,
           "배선유": 3,
           "김동욱": 2,
           "고경림": 3
+        },
+        "extern": {
+          "서상원": 1
         },
         "transfer": {
           "송태양": 3
@@ -177774,6 +177775,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "10:30",
+          "store": "더윤뷰티",
+          "biz": "3821602842",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "포프(태블릿) 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "• 고령으로 원격진행 불가 익일 방문설치 일정접수 완료입니다 고령으로 원격진행 불가 익일 방문설치 일정접수 완료입니다"
+        },
         {
           "time": "10:22",
           "store": "주식회사지니졸리",
@@ -178007,7 +178019,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 16,
+        "online": 17,
         "offline": 6,
         "unknown": 0
       },
@@ -233243,7 +233255,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-15 10:34",
+    "at": "2026-09-15 10:36",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
