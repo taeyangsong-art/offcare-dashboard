@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10671,
+  "version": 10672,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177756,6 +177756,7 @@ window.SLACK_DATA = {
           "송태양": 3
         },
         "menu": {
+          "배선유": 1,
           "심성현": 1
         }
       },
@@ -177783,6 +177784,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": ""
+        },
+        {
+          "time": "10:16",
+          "store": "마장리 국수",
+          "biz": "2241799581",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "메뉴",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 마장리국수 메뉴 테이블 원격 한번 부탁드립니다 / 완료우"
         },
         {
           "time": "10:12",
@@ -177995,7 +178007,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 15,
+        "online": 16,
         "offline": 6,
         "unknown": 0
       },
@@ -233231,7 +233243,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-15 10:30",
+    "at": "2026-09-15 10:34",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
