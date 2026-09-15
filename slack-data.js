@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10752,
+  "version": 10753,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177730,8 +177730,8 @@ window.SLACK_DATA = {
     "2026-09-15": {
       "counts": {
         "extern": {
+          "서상원": 4,
           "김동욱": 1,
-          "서상원": 3,
           "김현기": 1
         },
         "as": {
@@ -177778,6 +177778,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "14:20",
+          "store": "파브로 스튜디오 프로필",
+          "biz": "5171402823",
+          "cat": "extern",
+          "emp": "서상원",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "14:08",
           "store": "복자쌀쿡",
@@ -178805,11 +178816,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 78,
+        "online": 79,
         "offline": 16,
         "unknown": 0
       },
-      "updatedAt": "14:20",
+      "updatedAt": "14:23",
       "ob": {
         "count": 21,
         "byEmp": {
@@ -179071,18 +179082,18 @@ window.SLACK_DATA = {
       },
       "1789441353.257269": {
         "post": "1789441353.257269",
-        "lastSeen": 1789449777.484,
+        "lastSeen": 1789449860.834,
         "r": 1,
         "day": "2026-09-15",
         "idx": 20
       },
       "1789446671.210049": {
         "post": "1789446671.210049",
-        "lastSeen": 1789449777.484
+        "lastSeen": 1789449860.834
       },
-      "1789449301.013019": {
-        "post": "1789449301.013019",
-        "lastSeen": 1789449777.484
+      "1789448753.287169": {
+        "post": "1789448753.287169",
+        "lastSeen": 1789449860.834
       }
     },
     "days": {
@@ -234413,7 +234424,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-15 14:23",
+    "at": "2026-09-15 14:24",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
