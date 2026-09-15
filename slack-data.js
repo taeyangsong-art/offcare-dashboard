@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10686,
+  "version": 10687,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -168148,19 +168148,7 @@ window.SLACK_DATA = {
           "최민석": 1
         }
       },
-      "pending": [
-        {
-          "time": "18:48",
-          "store": "",
-          "biz": "",
-          "handler": "최민석",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
         {
           "time": "23:46",
@@ -172063,7 +172051,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 304,
+        "online": 303,
         "offline": 49,
         "unknown": 0
       },
@@ -177741,16 +177729,16 @@ window.SLACK_DATA = {
     },
     "2026-09-15": {
       "counts": {
-        "extern": {
-          "서상원": 2
-        },
         "as": {
+          "고경림": 5,
           "송태양": 1,
-          "고경림": 4,
           "심성현": 3,
           "김현기": 4,
           "배선유": 3,
           "김동욱": 2
+        },
+        "extern": {
+          "서상원": 2
         },
         "transfer": {
           "송태양": 3
@@ -177774,6 +177762,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "10:49",
+          "store": "메타 포레스트(Meta forest)",
+          "biz": "2194600830",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "포스기 용량 부족으로 정리 확인 요청주셨습니다. 도움 부탁드립니다:감사합니다꾸벅:",
+          "hw": "",
+          "intake": "online",
+          "note": "여기 원격중이면 같이해주세요 여기 원격중이면 같이해주세요 / 이미 민첩한 경림님이 진행 중 ...ㅠ / 윈도우 업데이트 파일 및 템프 정리 10기가 확보완료"
+        },
         {
           "time": "10:39",
           "store": "김복남맥주 광주북구우산점",
@@ -178040,15 +178039,15 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 19,
+        "online": 20,
         "offline": 6,
         "unknown": 0
       },
       "updatedAt": "11:00",
       "ob": {
-        "count": 17,
+        "count": 18,
         "byEmp": {
-          "김규빈": 17
+          "김규빈": 18
         },
         "items": [
           {
@@ -178154,6 +178153,14 @@ window.SLACK_DATA = {
             "recvDate": "2026-09-15",
             "planDate": "",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788930908282339"
+          },
+          {
+            "key": "2026년 9월 15일 오전 10:46:17|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788325338365569#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-09-15",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788325338365569"
           },
           {
             "key": "2026년 9월 15일 오전 10:41:42|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789353428740379#1",
@@ -178280,30 +178287,32 @@ window.SLACK_DATA = {
       },
       "1789436700.638159": {
         "post": "1789436700.638159",
-        "lastSeen": 1789437621.073,
+        "lastSeen": 1789437867.427,
         "r": 1,
         "day": "2026-09-15",
         "idx": 4
       },
       "1789437540.704849": {
         "post": "1789437540.704849",
-        "lastSeen": 1789437621.073
+        "lastSeen": 1789437867.427,
+        "r": 1,
+        "day": "2026-09-15",
+        "idx": 6
       },
       "1789437602.174519": {
         "post": "1789437602.174519",
-        "lastSeen": 1789437621.073
+        "lastSeen": 1789437867.427
       },
       "1789437601.812959": {
         "post": "1789437601.812959",
-        "lastSeen": 1789437621.073
+        "lastSeen": 1789437867.427
       },
       "1789437601.484779": {
         "post": "1789437601.484779",
-        "lastSeen": 1789437621.073
-      },
-      "1789437601.912149": {
-        "post": "1789437601.912149",
-        "lastSeen": 1789437621.073
+        "lastSeen": 1789437867.427,
+        "r": 1,
+        "day": "2026-09-15",
+        "idx": 5
       }
     },
     "days": {
@@ -233266,8 +233275,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-15": {
-        "cnt": 5,
-        "sumMin": 13.617308417956034,
+        "cnt": 7,
+        "sumMin": 19.389147953192392,
         "over": 0,
         "items": [
           {
@@ -233313,26 +233322,42 @@ window.SLACK_DATA = {
             "biz": "3099967106",
             "who": "고경림",
             "cat": "as"
+          },
+          {
+            "hm": "11:00",
+            "min": 2.4,
+            "store": "커피포인트(coffee point)",
+            "biz": "4322901056",
+            "who": "고경림",
+            "cat": "as"
+          },
+          {
+            "hm": "10:59",
+            "min": 3.4,
+            "store": "치유",
+            "biz": "3824601326",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-15 11:00",
+    "at": "2026-09-15 11:04",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 4076,
-    "named": 781,
+    "named": 782,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 781,
+    "done": 782,
     "byStatus": {
       "일정등록완료": 498,
-      "1차부재": 170,
+      "1차부재": 171,
       "점주직접접수": 63,
       "설치불가": 13,
       "(빈칸)": 5,
