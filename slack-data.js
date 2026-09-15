@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10711,
+  "version": 10712,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -178327,7 +178327,7 @@ window.SLACK_DATA = {
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "12:05",
+      "updatedAt": "12:09",
       "ob": {
         "count": 20,
         "byEmp": {
@@ -178580,18 +178580,25 @@ window.SLACK_DATA = {
       },
       "1789441353.257269": {
         "post": "1789441353.257269",
-        "lastSeen": 1789441579.601
+        "lastSeen": 1789441821.449
       },
       "1789441283.316939": {
         "post": "1789441283.316939",
-        "lastSeen": 1789441579.601,
+        "lastSeen": 1789441821.449,
         "r": 1,
         "day": "2026-09-15",
         "idx": 18
       },
       "1789441555.488669": {
         "post": "1789441555.488669",
-        "lastSeen": 1789441579.601
+        "lastSeen": 1789441821.449,
+        "r": 1,
+        "day": "2026-09-15",
+        "idx": 19
+      },
+      "1789441759.560699": {
+        "post": "1789441759.560699",
+        "lastSeen": 1789441821.449
       }
     },
     "days": {
@@ -233554,8 +233561,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-15": {
-        "cnt": 19,
-        "sumMin": 67.59039682149887,
+        "cnt": 20,
+        "sumMin": 70.00766900777816,
         "over": 0,
         "items": [
           {
@@ -233727,13 +233734,21 @@ window.SLACK_DATA = {
             "biz": "3432101895",
             "who": "송태양",
             "cat": "as"
+          },
+          {
+            "hm": "12:05",
+            "min": 2.4,
+            "store": "오미(Omi)",
+            "biz": "8554701272",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-15 12:06",
+    "at": "2026-09-15 12:10",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
