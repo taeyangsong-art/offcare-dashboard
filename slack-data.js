@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10676,
+  "version": 10677,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -168153,7 +168153,7 @@ window.SLACK_DATA = {
           "time": "18:48",
           "store": "",
           "biz": "",
-          "handler": "김기범",
+          "handler": "최민석",
           "cat": "as",
           "intake": "online",
           "reasons": [
@@ -178046,9 +178046,9 @@ window.SLACK_DATA = {
       },
       "updatedAt": "10:45",
       "ob": {
-        "count": 16,
+        "count": 17,
         "byEmp": {
-          "김규빈": 16
+          "김규빈": 17
         },
         "items": [
           {
@@ -178154,6 +178154,14 @@ window.SLACK_DATA = {
             "recvDate": "2026-09-15",
             "planDate": "",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788930908282339"
+          },
+          {
+            "key": "2026년 9월 15일 오전 10:41:42|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789353428740379#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-09-15",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789353428740379"
           },
           {
             "key": "2026년 9월 15일 오전 10:01:14|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785818195201979#1",
@@ -178272,7 +178280,10 @@ window.SLACK_DATA = {
       },
       "1789436700.638159": {
         "post": "1789436700.638159",
-        "lastSeen": 1789436720.289
+        "lastSeen": 1789436957.789,
+        "r": 1,
+        "day": "2026-09-15",
+        "idx": 4
       }
     },
     "days": {
@@ -233235,8 +233246,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-15": {
-        "cnt": 4,
-        "sumMin": 11.310627734661102,
+        "cnt": 5,
+        "sumMin": 13.617308417956034,
         "over": 0,
         "items": [
           {
@@ -233274,26 +233285,34 @@ window.SLACK_DATA = {
             "who": "심성현",
             "cat": "as",
             "dmin": 15.7
+          },
+          {
+            "hm": "10:45",
+            "min": 2.3,
+            "store": "오르다국어교습소",
+            "biz": "3099967106",
+            "who": "고경림",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-15 10:45",
+    "at": "2026-09-15 10:49",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 4075,
-    "named": 780,
+    "rows": 4076,
+    "named": 781,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 780,
+    "done": 781,
     "byStatus": {
       "일정등록완료": 498,
-      "1차부재": 169,
+      "1차부재": 170,
       "점주직접접수": 63,
       "설치불가": 13,
       "(빈칸)": 5,
