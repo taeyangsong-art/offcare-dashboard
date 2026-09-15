@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10669,
+  "version": 10670,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177742,10 +177742,13 @@ window.SLACK_DATA = {
     },
     "2026-09-15": {
       "counts": {
+        "extern": {
+          "서상원": 1
+        },
         "as": {
           "김현기": 4,
           "심성현": 2,
-          "배선유": 2,
+          "배선유": 3,
           "김동욱": 2,
           "고경림": 3
         },
@@ -177758,6 +177761,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:22",
+          "store": "주식회사지니졸리",
+          "biz": "8138700862",
+          "cat": "extern",
+          "emp": "서상원",
+          "req": "외주",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
         {
           "time": "10:09",
           "store": "몽시오",
@@ -177779,6 +177793,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "고객 채널 상품명 설정 방법 안내 완료"
+        },
+        {
+          "time": "10:01",
+          "store": "플로라",
+          "biz": "5143268403",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "포스기 옆에 있는 유선프린터기 작동이 안된다고 출장 요청 주셔서 원격으로 먼저 점검 부탁 드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "1차부재, :통화중: 1차부재, / 통화중 배터리 없어서 통화종료... / 다시 연락달라고 문자 남겨놓음 / 완료"
         },
         {
           "time": "10:00",
@@ -177947,11 +177972,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 14,
-        "offline": 3,
+        "online": 15,
+        "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "10:16",
+      "updatedAt": "10:22",
       "ob": {
         "count": 15,
         "byEmp": {
@@ -178171,7 +178196,7 @@ window.SLACK_DATA = {
       },
       "1789434755.726449": {
         "post": "1789434755.726449",
-        "lastSeen": 1789435340.945,
+        "lastSeen": 1789435576.012,
         "r": 1,
         "day": "2026-09-15",
         "idx": 3
@@ -233181,7 +233206,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-15 10:22",
+    "at": "2026-09-15 10:26",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
