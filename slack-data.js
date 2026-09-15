@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10675,
+  "version": 10676,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177741,17 +177741,16 @@ window.SLACK_DATA = {
     },
     "2026-09-15": {
       "counts": {
+        "extern": {
+          "서상원": 2
+        },
         "as": {
-          "서상원": 1,
           "송태양": 1,
           "고경림": 4,
           "심성현": 3,
           "김현기": 4,
           "배선유": 3,
           "김동욱": 2
-        },
-        "extern": {
-          "서상원": 1
         },
         "transfer": {
           "송태양": 3
@@ -177779,7 +177778,7 @@ window.SLACK_DATA = {
           "time": "10:39",
           "store": "김복남맥주 광주북구우산점",
           "biz": "8541302502",
-          "cat": "as",
+          "cat": "extern",
           "emp": "서상원",
           "req": "외주",
           "hw": "",
@@ -178045,7 +178044,7 @@ window.SLACK_DATA = {
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "10:42",
+      "updatedAt": "10:45",
       "ob": {
         "count": 16,
         "byEmp": {
@@ -178270,6 +178269,10 @@ window.SLACK_DATA = {
       "1789358845.553799": {
         "post": "1789358845.553799",
         "lastSeen": 1789417000.813
+      },
+      "1789436700.638159": {
+        "post": "1789436700.638159",
+        "lastSeen": 1789436720.289
       }
     },
     "days": {
@@ -233277,7 +233280,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-15 10:43",
+    "at": "2026-09-15 10:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
