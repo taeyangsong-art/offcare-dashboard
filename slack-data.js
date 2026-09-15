@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10775,
+  "version": 10776,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177731,7 +177731,7 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "서상원": 9,
-          "김현기": 9,
+          "김현기": 10,
           "고경림": 17,
           "심성현": 17,
           "김동욱": 14,
@@ -177812,6 +177812,17 @@ window.SLACK_DATA = {
           "hw": "",
           "urgent": true,
           "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "15:19",
+          "store": "",
+          "biz": "4155900952",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "• 페이코 인입",
+          "hw": "",
+          "intake": "offline",
           "note": ""
         },
         {
@@ -179273,10 +179284,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 110,
-        "offline": 26,
+        "offline": 27,
         "unknown": 0
       },
-      "updatedAt": "15:35",
+      "updatedAt": "15:40",
       "ob": {
         "count": 27,
         "byEmp": {
@@ -179503,18 +179514,18 @@ window.SLACK_DATA = {
         ]
       },
       "voc": {
-        "responses": 7,
+        "responses": 8,
         "install": {
-          "count": 0,
+          "count": 1,
           "low": 0
         },
         "nps": {
-          "count": 7,
+          "count": 8,
           "low": 1
         },
         "high": {
-          "install": 0,
-          "nps": 2
+          "install": 1,
+          "nps": 3
         },
         "npsDist": {
           "3": 1,
@@ -179522,11 +179533,19 @@ window.SLACK_DATA = {
           "7": 1,
           "8": 1,
           "9": 1,
-          "10": 2
+          "10": 3
         },
-        "installDist": {},
-        "byIndustry": {},
+        "installDist": {
+          "5": 1
+        },
+        "byIndustry": {
+          "서비스[학원]": 1
+        },
         "byTenure": {
+          "구매설치": {
+            "total": 1,
+            "low": 0
+          },
           "3개월": {
             "total": 5,
             "low": 1
@@ -179537,6 +179556,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 1,
+            "low": 0
+          },
           "KPN": {
             "total": 1,
             "low": 0
@@ -179581,7 +179604,20 @@ window.SLACK_DATA = {
             "doneDate": ""
           }
         ],
-        "praises": []
+        "praises": [
+          {
+            "time": "15:39",
+            "store": "봉선엘씨국어전문학원",
+            "storeId": "600010",
+            "indBucket": "서비스[학원]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "안내에 띠라 쉽게 설치할 수 있었습니다. 프론트도 산뜻해지고 사용하기 편리하네여 요.",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
       }
     }
   },
@@ -179667,54 +179703,59 @@ window.SLACK_DATA = {
       },
       "1789441353.257269": {
         "post": "1789441353.257269",
-        "lastSeen": 1789454186.56,
+        "lastSeen": 1789454420.94,
         "r": 1,
         "day": "2026-09-15",
         "idx": 20
       },
       "1789446671.210049": {
         "post": "1789446671.210049",
-        "lastSeen": 1789454186.56
+        "lastSeen": 1789454420.94
       },
       "1789450653.471049": {
         "post": "1789450653.471049",
-        "lastSeen": 1789454186.56
-      },
-      "1789453180.122689": {
-        "post": "1789453180.122689",
-        "lastSeen": 1789454186.56,
-        "r": 1,
-        "day": "2026-09-15",
-        "idx": 63
+        "lastSeen": 1789454420.94
       },
       "1789453260.341739": {
         "post": "1789453260.341739",
-        "lastSeen": 1789454186.56,
+        "lastSeen": 1789454420.94,
         "r": 1,
         "day": "2026-09-15",
         "idx": 62
       },
       "1789453405.558559": {
         "post": "1789453405.558559",
-        "lastSeen": 1789454186.56,
+        "lastSeen": 1789454420.94,
         "r": 1,
         "day": "2026-09-15",
         "idx": 64
       },
       "1789453340.851439": {
         "post": "1789453340.851439",
-        "lastSeen": 1789454186.56,
+        "lastSeen": 1789454420.94,
         "r": 1,
         "day": "2026-09-15",
         "idx": 61
       },
       "1789454108.261289": {
         "post": "1789454108.261289",
-        "lastSeen": 1789454186.56
+        "lastSeen": 1789454420.94
       },
       "1789453973.418389": {
         "post": "1789453973.418389",
-        "lastSeen": 1789454186.56
+        "lastSeen": 1789454420.94
+      },
+      "1789453493.948249": {
+        "post": "1789453493.948249",
+        "lastSeen": 1789454420.94
+      },
+      "1789454400.222799": {
+        "post": "1789454400.222799",
+        "lastSeen": 1789454420.94
+      },
+      "1789453800.465399": {
+        "post": "1789453800.465399",
+        "lastSeen": 1789454420.94
       }
     },
     "days": {
@@ -235251,7 +235292,8 @@ window.SLACK_DATA = {
             "store": "",
             "biz": "4155900952",
             "who": "김현기",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 18.7
           },
           {
             "hm": "15:23",
@@ -235266,7 +235308,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-15 15:36",
+    "at": "2026-09-15 15:40",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
