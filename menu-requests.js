@@ -3,10 +3,55 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2050,
- "updatedAt": "2026-09-15 14:49",
+ "version": 2051,
+ "updatedAt": "2026-09-15 15:05",
  "days": 30,
  "items": [
+  {
+   "ts": "1789452184.455939",
+   "date": "2026-09-15",
+   "time": "15:03",
+   "store": "미식공감",
+   "biz": "5560403473",
+   "pos": "토스포스",
+   "content": "토스프로그램->NICE OKPOS프로그램으로 변경,원장 생성 완료 / 토플파 메뉴 그대로 복사 부탁드립니다.\n\n\n <https://w1659946222-hxm266180.slack.com/archives/C08TFJDCA1K/p1789432669237749?thread_ts=···.328569&cid=C08TFJDCA1K|https://w1659946222-hxm266180.slack.com/archives/C08TFJDCA1K/p1789432669237749?thread_ts=···.328569&cid=C08TFJDCA1K>",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789452193.845639",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789452184455939"
+  },
+  {
+   "ts": "1789452156.491719",
+   "date": "2026-09-15",
+   "time": "15:02",
+   "store": "부곡맛전",
+   "biz": "5682000315",
+   "pos": "퍼스트포스",
+   "content": "메뉴추가",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "대구포  17000원",
+    "메뉴등록 완료"
+   ],
+   "rc": 3,
+   "lr": "1789452191.886819",
+   "rfx": 3,
+   "status": "done",
+   "handler": "최민석",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789452156491719"
+  },
   {
    "ts": "1789450689.953549",
    "date": "2026-09-15",
