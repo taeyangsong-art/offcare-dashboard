@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10730,
+  "version": 10731,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177731,7 +177731,6 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "고경림": 8,
-          "서상원": 1,
           "김동욱": 8,
           "김기범": 1,
           "송태양": 6,
@@ -177740,17 +177739,18 @@ window.SLACK_DATA = {
           "김규빈": 1,
           "배선유": 5
         },
+        "extern": {
+          "서상원": 3,
+          "김현기": 1
+        },
         "onboarding": {
           "송태양": 2,
           "심성현": 1,
           "김현기": 1,
           "고경림": 1
         },
-        "extern": {
-          "서상원": 2,
-          "김현기": 1
-        },
         "transfer": {
+          "배선유": 1,
           "송태양": 4,
           "김동욱": 1
         },
@@ -177799,12 +177799,12 @@ window.SLACK_DATA = {
           "time": "12:59",
           "store": "조이어스(Joyous)",
           "biz": "5090762803",
-          "cat": "as",
+          "cat": "extern",
           "emp": "서상원",
           "req": "외주",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "8385 usb로 연결 (컴포트로 안된다고하심)"
         },
         {
           "time": "12:59",
@@ -177838,6 +177838,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "포프 온보딩 완료이나 유프 온보딩은 2시 15분예약"
+        },
+        {
+          "time": "12:27",
+          "store": "뚱땡이 와플",
+          "biz": "6640303762",
+          "cat": "transfer",
+          "emp": "배선유",
+          "req": "9월 15일 오후 1시 / 메뉴복사O / 터프",
+          "hw": "",
+          "intake": "online",
+          "note": "명변완료"
         },
         {
           "time": "12:25",
@@ -178459,7 +178470,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 50,
+        "online": 51,
         "offline": 13,
         "unknown": 0
       },
@@ -178716,14 +178727,10 @@ window.SLACK_DATA = {
       },
       "1789441353.257269": {
         "post": "1789441353.257269",
-        "lastSeen": 1789445222.98,
+        "lastSeen": 1789445460.158,
         "r": 1,
         "day": "2026-09-15",
         "idx": 20
-      },
-      "1789444804.494579": {
-        "post": "1789444804.494579",
-        "lastSeen": 1789445222.98
       }
     },
     "days": {
@@ -233937,7 +233944,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-15 13:07",
+    "at": "2026-09-15 13:11",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
