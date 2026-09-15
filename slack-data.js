@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10697,
+  "version": 10698,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177729,6 +177729,9 @@ window.SLACK_DATA = {
     },
     "2026-09-15": {
       "counts": {
+        "onboarding": {
+          "김현기": 1
+        },
         "as": {
           "김규빈": 1,
           "김동욱": 4,
@@ -177743,8 +177746,8 @@ window.SLACK_DATA = {
           "김현기": 1
         },
         "transfer": {
-          "김동욱": 1,
-          "송태양": 3
+          "송태양": 4,
+          "김동욱": 1
         },
         "menu": {
           "배선유": 1,
@@ -177766,6 +177769,17 @@ window.SLACK_DATA = {
       ],
       "done": [
         {
+          "time": "11:16",
+          "store": "주식회사 오슬로",
+          "biz": "8588703921",
+          "cat": "onboarding",
+          "emp": "김현기",
+          "req": "포프(휴대폰) 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "개인 공폰 온보딩 완료"
+        },
+        {
           "time": "11:15",
           "store": "스페이스뷰티 분당정자점",
           "biz": "4182501969",
@@ -177775,6 +177789,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "온보딩은 되어있고 영수증 자동으로 출력하는 방법 안내드림"
+        },
+        {
+          "time": "11:15",
+          "store": "두달스 봉덕점",
+          "biz": "4991003429",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "9월 15일 오전 11시 30분 / 메뉴 복사 O / 프론트, 유프",
+          "hw": "",
+          "intake": "online",
+          "note": "명변 완료입니다"
         },
         {
           "time": "11:00",
@@ -178141,15 +178166,15 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 28,
+        "online": 30,
         "offline": 7,
         "unknown": 0
       },
       "updatedAt": "11:29",
       "ob": {
-        "count": 18,
+        "count": 19,
         "byEmp": {
-          "김규빈": 18
+          "김규빈": 19
         },
         "items": [
           {
@@ -178255,6 +178280,14 @@ window.SLACK_DATA = {
             "recvDate": "2026-09-15",
             "planDate": "",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788930908282339"
+          },
+          {
+            "key": "2026년 9월 15일 오전 11:21:33|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789365146597479#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-09-15",
+            "planDate": "2026-09-17",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789365146597479"
           },
           {
             "key": "2026년 9월 15일 오전 10:46:17|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788325338365569#1",
@@ -178382,24 +178415,21 @@ window.SLACK_DATA = {
       },
       "1789436700.638159": {
         "post": "1789436700.638159",
-        "lastSeen": 1789439439.234,
+        "lastSeen": 1789439664.282,
         "r": 1,
         "day": "2026-09-15",
         "idx": 4
       },
-      "1789438615.008659": {
-        "post": "1789438615.008659",
-        "lastSeen": 1789439439.234,
-        "r": 1,
-        "day": "2026-09-15",
-        "idx": 10
-      },
       "1789438836.430659": {
         "post": "1789438836.430659",
-        "lastSeen": 1789439439.234,
+        "lastSeen": 1789439664.282,
         "r": 1,
         "day": "2026-09-15",
         "idx": 9
+      },
+      "1789437601.912149": {
+        "post": "1789437601.912149",
+        "lastSeen": 1789439664.282
       }
     },
     "days": {
@@ -233460,26 +233490,27 @@ window.SLACK_DATA = {
             "store": "주식회사 오슬로",
             "biz": "8588703921",
             "who": "김현기",
-            "cat": "as"
+            "cat": "onboarding",
+            "dmin": 15.6
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-15 11:30",
+    "at": "2026-09-15 11:34",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 4078,
-    "named": 782,
+    "named": 783,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 782,
+    "done": 783,
     "byStatus": {
-      "일정등록완료": 498,
+      "일정등록완료": 499,
       "1차부재": 171,
       "점주직접접수": 63,
       "설치불가": 13,
