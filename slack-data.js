@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10652,
+  "version": 10653,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177743,11 +177743,37 @@ window.SLACK_DATA = {
     "2026-09-15": {
       "counts": {
         "as": {
+          "고경림": 1,
           "김현기": 1
+        },
+        "transfer": {
+          "송태양": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:23",
+          "store": "갓샌드그릴(2호점)",
+          "biz": "1055900905",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "대형 키오스크 사용 매장으로, 결제 이후 주문서 출력이 되지 않으신다고 하여 점검 요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "09:14",
+          "store": "하루담",
+          "biz": "2800104083",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "9월 15일 지금 바로 / 메뉴 복사 O / 프론트, 유프",
+          "hw": "",
+          "intake": "online",
+          "note": "명변중 전원꺼짐 / 명변 완료입니다"
+        },
         {
           "time": "09:09",
           "store": "필라테스 여리한",
@@ -177761,17 +177787,25 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
+        "online": 3,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:25",
+      "updatedAt": "09:28",
       "ob": {
-        "count": 5,
+        "count": 6,
         "byEmp": {
-          "김규빈": 5
+          "김규빈": 6
         },
         "items": [
+          {
+            "key": "2026년 9월 15일 오전 8:15:23|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789267898210329#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-09-15",
+            "planDate": "2026-09-17",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789267898210329"
+          },
           {
             "key": "2026년 9월 15일 오전 8:12:46|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1782378104533529#1",
             "handler": "김규빈",
@@ -177912,7 +177946,11 @@ window.SLACK_DATA = {
       },
       "1789431909.019439": {
         "post": "1789431909.019439",
-        "lastSeen": 1789431980.725
+        "lastSeen": 1789432158.083
+      },
+      "1789431751.502109": {
+        "post": "1789431751.502109",
+        "lastSeen": 1789432158.083
       }
     },
     "days": {
@@ -232877,19 +232915,19 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-15 09:26",
+    "at": "2026-09-15 09:29",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 4072,
-    "named": 769,
+    "named": 770,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 769,
+    "done": 770,
     "byStatus": {
-      "일정등록완료": 491,
+      "일정등록완료": 492,
       "1차부재": 168,
       "점주직접접수": 62,
       "설치불가": 13,
