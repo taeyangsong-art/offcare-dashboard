@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10662,
+  "version": 10663,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177743,11 +177743,11 @@ window.SLACK_DATA = {
     "2026-09-15": {
       "counts": {
         "as": {
-          "배선유": 1,
+          "배선유": 2,
           "김현기": 3,
           "심성현": 1,
           "김동욱": 2,
-          "고경림": 2
+          "고경림": 3
         },
         "transfer": {
           "송태양": 2
@@ -177758,6 +177758,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:00",
+          "store": "샤인잉글리시 영어교습소",
+          "biz": "4669601954",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "포프(휴대폰) + 유프 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "15:10 예약"
+        },
         {
           "time": "09:54",
           "store": "카페드롭탑(전주만성점)",
@@ -177812,6 +177823,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "1차 부재 / 업데이트 이후 다시 보임. 용량 확보 요청하셔서 임시파일 제거"
+        },
+        {
+          "time": "09:31",
+          "store": "(주) 토니모리",
+          "biz": "1148653270",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "바코드 안됨, 인터넷 느림",
+          "hw": "",
+          "intake": "offline",
+          "note": "젠더 자동 인식 안될때 태블릿 설정 -&gt; 태블릿 정보 -&gt; 소프트웨어 정보 -&gt; 빌드번호 연속 터치 -&gt; 개발자모드 활성화 확인 -&gt; 설정 앱 최하단 개발자 옵션 선택 -&gt; USB 디버깅 활성화 -&gt; 태블릿 재시작 -&gt; 젠더 연결 태블릿 설정 - 태블릿 정보 - 소프트웨어 정보 - 빌드번호 연속 터치 - 개발자모드"
         },
         {
           "time": "09:30",
@@ -177892,11 +177914,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 10,
-        "offline": 2,
+        "online": 11,
+        "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "10:00",
+      "updatedAt": "10:03",
       "ob": {
         "count": 14,
         "byEmp": {
@@ -178112,10 +178134,6 @@ window.SLACK_DATA = {
       "1789358845.553799": {
         "post": "1789358845.553799",
         "lastSeen": 1789417000.813
-      },
-      "1789433102.622639": {
-        "post": "1789433102.622639",
-        "lastSeen": 1789434028.725
       }
     },
     "days": {
@@ -233114,13 +233132,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-15 10:00",
+    "at": "2026-09-15 10:04",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 4073,
+    "rows": 4074,
     "named": 778,
     "unknownName": 0,
     "beforeStart": 0,
