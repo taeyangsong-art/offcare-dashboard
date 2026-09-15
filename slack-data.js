@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10699,
+  "version": 10700,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177734,8 +177734,8 @@ window.SLACK_DATA = {
           "김현기": 1
         },
         "as": {
+          "김동욱": 5,
           "김규빈": 1,
-          "김동욱": 4,
           "고경림": 6,
           "배선유": 4,
           "심성현": 4,
@@ -177779,6 +177779,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "01027689872 / 온보딩 완료 사용 방법 전달 완료"
+        },
+        {
+          "time": "11:20",
+          "store": "시옷(siot)",
+          "biz": "1260260226",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "결제시 영수증이 2장씩 나온다하여 점검부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "강제새로고침 후 정상 출려 확인"
         },
         {
           "time": "11:16",
@@ -178178,7 +178189,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 31,
+        "online": 32,
         "offline": 7,
         "unknown": 0
       },
@@ -178435,21 +178446,17 @@ window.SLACK_DATA = {
       },
       "1789436700.638159": {
         "post": "1789436700.638159",
-        "lastSeen": 1789439961.496,
+        "lastSeen": 1789440019.172,
         "r": 1,
         "day": "2026-09-15",
         "idx": 4
       },
-      "1789438836.430659": {
-        "post": "1789438836.430659",
-        "lastSeen": 1789439961.496,
-        "r": 1,
-        "day": "2026-09-15",
-        "idx": 9
-      },
       "1789439942.945649": {
         "post": "1789439942.945649",
-        "lastSeen": 1789439961.496
+        "lastSeen": 1789440019.172,
+        "r": 1,
+        "day": "2026-09-15",
+        "idx": 11
       }
     },
     "days": {
@@ -233412,8 +233419,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-15": {
-        "cnt": 11,
-        "sumMin": 44.64431401888529,
+        "cnt": 12,
+        "sumMin": 45.43411987225214,
         "over": 0,
         "items": [
           {
@@ -233502,7 +233509,8 @@ window.SLACK_DATA = {
             "store": "시옷(siot)",
             "biz": "1260260226",
             "who": "김동욱",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 19.2
           },
           {
             "hm": "11:16",
@@ -233512,13 +233520,21 @@ window.SLACK_DATA = {
             "who": "김현기",
             "cat": "onboarding",
             "dmin": 15.6
+          },
+          {
+            "hm": "11:39",
+            "min": 0.8,
+            "store": "티티카카(TITIQAQA)",
+            "biz": "4295800712",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-15 11:39",
+    "at": "2026-09-15 11:40",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
