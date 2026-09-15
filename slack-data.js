@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10670,
+  "version": 10671,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177746,8 +177746,8 @@ window.SLACK_DATA = {
           "서상원": 1
         },
         "as": {
+          "심성현": 3,
           "김현기": 4,
-          "심성현": 2,
           "배선유": 3,
           "김동욱": 2,
           "고경림": 3
@@ -177759,7 +177759,19 @@ window.SLACK_DATA = {
           "심성현": 1
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "09:28",
+          "store": "(주)참바다수동(포천방향)휴게소",
+          "biz": "2388502615",
+          "handler": "김동욱",
+          "cat": "as",
+          "intake": "offline",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "done": [
         {
           "time": "10:22",
@@ -177768,6 +177780,17 @@ window.SLACK_DATA = {
           "cat": "extern",
           "emp": "서상원",
           "req": "외주",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
+        {
+          "time": "10:12",
+          "store": "초우정",
+          "biz": "5652000091",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "주방프린터기 출력 불가로 인입되어 점검 요청 드립니다.",
           "hw": "",
           "intake": "offline",
           "note": ""
@@ -177973,14 +177996,14 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 15,
-        "offline": 4,
+        "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "10:22",
+      "updatedAt": "10:30",
       "ob": {
-        "count": 15,
+        "count": 16,
         "byEmp": {
-          "김규빈": 15
+          "김규빈": 16
         },
         "items": [
           {
@@ -178088,6 +178111,14 @@ window.SLACK_DATA = {
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788930908282339"
           },
           {
+            "key": "2026년 9월 15일 오전 10:01:14|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785818195201979#1",
+            "handler": "김규빈",
+            "status": "설치보류요청",
+            "recvDate": "2026-09-15",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1785818195201979"
+          },
+          {
             "key": "2026년 9월 14일 오후 3:35:10|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789008828953599#1",
             "handler": "김규빈",
             "status": "일정등록완료",
@@ -178193,13 +178224,6 @@ window.SLACK_DATA = {
       "1789358845.553799": {
         "post": "1789358845.553799",
         "lastSeen": 1789417000.813
-      },
-      "1789434755.726449": {
-        "post": "1789434755.726449",
-        "lastSeen": 1789435576.012,
-        "r": 1,
-        "day": "2026-09-15",
-        "idx": 3
       }
     },
     "days": {
@@ -233199,24 +233223,25 @@ window.SLACK_DATA = {
             "store": "초우정",
             "biz": "5652000091",
             "who": "심성현",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 15.7
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-15 10:26",
+    "at": "2026-09-15 10:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 4074,
-    "named": 779,
+    "named": 780,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 779,
+    "done": 780,
     "byStatus": {
       "일정등록완료": 498,
       "1차부재": 169,
@@ -233224,7 +233249,7 @@ window.SLACK_DATA = {
       "설치불가": 13,
       "(빈칸)": 5,
       "자가설치": 24,
-      "설치보류요청": 7
+      "설치보류요청": 8
     }
   }
 };
