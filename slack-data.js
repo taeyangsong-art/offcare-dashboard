@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10649,
+  "version": 10650,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177741,15 +177741,47 @@ window.SLACK_DATA = {
       }
     },
     "2026-09-15": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "김현기": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:09",
+          "store": "필라테스 여리한",
+          "biz": "4542500762",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "터미널 삼성페이 인식이 원래 잘 안됐었는데 어제 인식이 너무 안되어 2건 정도 결제 실패했다고 하십니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "터미널의 경우 삼성페이 인식이 원래 조금 떨어짐 / 토스에서 기기를 만들 때, 프론트에서 메인으로 결제하고 프론트가 파손, 고장 등으로 결제가 불가능할때 서브 개념으로 사용하는 기기로 QR등 지원하지 않고 IC와 MST만 지원함 / 기기를 교체한다 하여도 동일함 / 대표님 인지 완료"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:14"
+      "updatedAt": "09:14",
+      "ob": {
+        "count": 1,
+        "byEmp": {
+          "김규빈": 1
+        },
+        "items": [
+          {
+            "key": "2026년 9월 14일 오후 3:31:36|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787558366925969#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-09-14",
+            "planDate": "2026-09-21",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787558366925969"
+          }
+        ]
+      }
     }
   },
   "resp": {
@@ -232809,19 +232841,19 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-15 09:15",
+    "at": "2026-09-15 09:21",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 4070,
-    "named": 764,
+    "rows": 4071,
+    "named": 765,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 764,
+    "done": 765,
     "byStatus": {
-      "일정등록완료": 488,
+      "일정등록완료": 489,
       "1차부재": 166,
       "점주직접접수": 62,
       "설치불가": 13,
