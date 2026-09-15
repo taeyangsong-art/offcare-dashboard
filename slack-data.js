@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10731,
+  "version": 10732,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -178474,7 +178474,7 @@ window.SLACK_DATA = {
         "offline": 13,
         "unknown": 0
       },
-      "updatedAt": "13:00",
+      "updatedAt": "13:13",
       "ob": {
         "count": 20,
         "byEmp": {
@@ -178727,10 +178727,14 @@ window.SLACK_DATA = {
       },
       "1789441353.257269": {
         "post": "1789441353.257269",
-        "lastSeen": 1789445460.158,
+        "lastSeen": 1789445603.68,
         "r": 1,
         "day": "2026-09-15",
         "idx": 20
+      },
+      "1789444804.494579": {
+        "post": "1789444804.494579",
+        "lastSeen": 1789445603.68
       }
     },
     "days": {
@@ -233944,7 +233948,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-15 13:11",
+    "at": "2026-09-15 13:13",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
