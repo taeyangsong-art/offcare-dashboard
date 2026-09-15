@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10707,
+  "version": 10708,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177731,12 +177731,12 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김동욱": 6,
+          "고경림": 7,
           "김현기": 5,
           "송태양": 3,
           "심성현": 5,
           "김규빈": 1,
-          "고경림": 6,
-          "배선유": 4
+          "배선유": 5
         },
         "onboarding": {
           "송태양": 1,
@@ -177758,6 +177758,17 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
+        {
+          "time": "11:00",
+          "store": "블렌드 샵",
+          "biz": "5181600405",
+          "handler": "심성현",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
         {
           "time": "09:28",
           "store": "(주)참바다수동(포천방향)휴게소",
@@ -177781,6 +177792,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "결제내역 확인 요청으로 안내완료 cc. cc."
+        },
+        {
+          "time": "11:48",
+          "store": "디저트모트마",
+          "biz": "8270901824",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "배민 토스포스 연동 요청 드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "배민 토스포스 연동완료"
         },
         {
           "time": "11:45",
@@ -177913,6 +177935,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "완료입니다."
+        },
+        {
+          "time": "11:00",
+          "store": "라파",
+          "biz": "6110894416",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "쿠팡이츠 주문접수 프로그램 설치 후 로그인한 사진 1장",
+          "hw": "",
+          "intake": "online",
+          "note": "페이크. 오전 11시 요청건 / 쿠팡이츠 설치 진행중 1시 재연락 예정 쿠팡이츠 설치 진행중 1시 재연락 예정"
         },
         {
           "time": "10:59",
@@ -178257,11 +178290,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 36,
+        "online": 39,
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "11:51",
+      "updatedAt": "12:00",
       "ob": {
         "count": 20,
         "byEmp": {
@@ -178512,19 +178545,20 @@ window.SLACK_DATA = {
         "post": "1789358845.553799",
         "lastSeen": 1789417000.813
       },
-      "1789440518.324889": {
-        "post": "1789440518.324889",
-        "lastSeen": 1789440980.362,
-        "r": 1,
-        "day": "2026-09-15",
-        "idx": 15
-      },
       "1789440631.164739": {
         "post": "1789440631.164739",
-        "lastSeen": 1789440980.362,
+        "lastSeen": 1789441219.541,
         "r": 1,
         "day": "2026-09-15",
         "idx": 16
+      },
+      "1789441200.707829": {
+        "post": "1789441200.707829",
+        "lastSeen": 1789441219.541
+      },
+      "1789441203.600769": {
+        "post": "1789441203.600769",
+        "lastSeen": 1789441219.541
       }
     },
     "days": {
@@ -233632,7 +233666,8 @@ window.SLACK_DATA = {
             "store": "디저트모트마",
             "biz": "8270901824",
             "who": "고경림",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 9.7
           },
           {
             "hm": "11:50",
@@ -233647,13 +233682,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-15 11:56",
+    "at": "2026-09-15 12:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 4078,
+    "rows": 4081,
     "named": 784,
     "unknownName": 0,
     "beforeStart": 0,
