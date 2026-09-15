@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10654,
+  "version": 10655,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177791,13 +177791,29 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:30",
+      "updatedAt": "09:31",
       "ob": {
-        "count": 6,
+        "count": 8,
         "byEmp": {
-          "김규빈": 6
+          "김규빈": 8
         },
         "items": [
+          {
+            "key": "2026년 9월 15일 오전 8:19:49|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789274257535319#1",
+            "handler": "김규빈",
+            "status": "자가설치",
+            "recvDate": "2026-09-15",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789274257535319"
+          },
+          {
+            "key": "2026년 9월 15일 오전 8:16:03|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787198968904849#1",
+            "handler": "김규빈",
+            "status": "",
+            "recvDate": "2026-09-15",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787198968904849"
+          },
           {
             "key": "2026년 9월 15일 오전 8:15:23|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789267898210329#1",
             "handler": "김규빈",
@@ -177946,14 +177962,17 @@ window.SLACK_DATA = {
       },
       "1789431909.019439": {
         "post": "1789431909.019439",
-        "lastSeen": 1789432220.015,
+        "lastSeen": 1789432472.452,
         "r": 1,
         "day": "2026-09-15",
         "idx": 0
       },
       "1789432214.036709": {
         "post": "1789432214.036709",
-        "lastSeen": 1789432220.015
+        "lastSeen": 1789432472.452,
+        "r": 1,
+        "day": "2026-09-15",
+        "idx": 1
       }
     },
     "days": {
@@ -232916,8 +232935,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-15": {
-        "cnt": 1,
-        "sumMin": 4.667159350713094,
+        "cnt": 2,
+        "sumMin": 6.870439199606578,
         "over": 0,
         "items": [
           {
@@ -232927,30 +232946,38 @@ window.SLACK_DATA = {
             "biz": "2351801954",
             "who": "고경림",
             "cat": "as"
+          },
+          {
+            "hm": "09:30",
+            "min": 2.2,
+            "store": "에쎄카페",
+            "biz": "1058541550",
+            "who": "김현기",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-15 09:30",
+    "at": "2026-09-15 09:34",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 4072,
-    "named": 770,
+    "named": 772,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 770,
+    "done": 772,
     "byStatus": {
       "일정등록완료": 492,
       "1차부재": 168,
       "점주직접접수": 62,
       "설치불가": 13,
-      "(빈칸)": 5,
-      "자가설치": 23,
+      "(빈칸)": 6,
+      "자가설치": 24,
       "설치보류요청": 7
     }
   }
