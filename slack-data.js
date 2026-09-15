@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10658,
+  "version": 10659,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177743,7 +177743,8 @@ window.SLACK_DATA = {
     "2026-09-15": {
       "counts": {
         "as": {
-          "김동욱": 1,
+          "심성현": 1,
+          "김동욱": 2,
           "김현기": 2,
           "고경림": 2
         },
@@ -177757,6 +177758,17 @@ window.SLACK_DATA = {
       "pending": [],
       "done": [
         {
+          "time": "09:45",
+          "store": "원주 메리골드 꽃식물원",
+          "biz": "1739602293",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "유프 전원이 들어오지않아 점검 요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "어댑터 빠짐 재장착 후 정상"
+        },
+        {
           "time": "09:37",
           "store": "컴포즈_본사테스트",
           "biz": "5218102386",
@@ -177766,6 +177778,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "데모버전의 키오스크 실행하여 발생한 해프닝"
+        },
+        {
+          "time": "09:35",
+          "store": "매일소풍",
+          "biz": "6774100399",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "포프(포스기) 사용 매장으로, 결제 버튼이 없어지셨다고 하여 원격으로 점검 요청드리겠습니다..!",
+          "hw": "",
+          "intake": "online",
+          "note": "1차 부재 / 업데이트 이후 다시 보임. 용량 확보 요청하셔서 임시파일 제거"
         },
         {
           "time": "09:30",
@@ -177835,17 +177858,25 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 6,
+        "online": 8,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:45",
+      "updatedAt": "09:46",
       "ob": {
-        "count": 10,
+        "count": 11,
         "byEmp": {
-          "김규빈": 10
+          "김규빈": 11
         },
         "items": [
+          {
+            "key": "2026년 9월 15일 오전 8:26:06|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788156284238039#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-09-15",
+            "planDate": "2026-09-17",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788156284238039"
+          },
           {
             "key": "2026년 9월 15일 오전 8:25:41|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788846042279299#1",
             "handler": "김규빈",
@@ -178023,14 +178054,6 @@ window.SLACK_DATA = {
       "1789358845.553799": {
         "post": "1789358845.553799",
         "lastSeen": 1789417000.813
-      },
-      "1789433115.835239": {
-        "post": "1789433115.835239",
-        "lastSeen": 1789433118.627
-      },
-      "1789433102.622639": {
-        "post": "1789433102.622639",
-        "lastSeen": 1789433118.627
       }
     },
     "days": {
@@ -232993,8 +233016,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-15": {
-        "cnt": 2,
-        "sumMin": 6.870439199606578,
+        "cnt": 3,
+        "sumMin": 8.642651887734731,
         "over": 0,
         "items": [
           {
@@ -233014,25 +233037,34 @@ window.SLACK_DATA = {
             "who": "김현기",
             "cat": "as",
             "dmin": 12.7
+          },
+          {
+            "hm": "09:45",
+            "min": 1.8,
+            "store": "원주 메리골드 꽃식물원",
+            "biz": "1739602293",
+            "who": "심성현",
+            "cat": "as",
+            "dmin": 1.8
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-15 09:45",
+    "at": "2026-09-15 09:49",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 4072,
-    "named": 774,
+    "named": 775,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 774,
+    "done": 775,
     "byStatus": {
-      "일정등록완료": 495,
+      "일정등록완료": 496,
       "1차부재": 168,
       "점주직접접수": 62,
       "설치불가": 13,
