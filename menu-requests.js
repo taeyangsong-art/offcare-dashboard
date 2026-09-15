@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2038,
- "updatedAt": "2026-09-15 09:00",
+ "version": 2039,
+ "updatedAt": "2026-09-15 09:04",
  "days": 30,
  "items": [
+  {
+   "ts": "1789430629.489939",
+   "date": "2026-09-15",
+   "time": "09:03",
+   "store": "별에서온 쉐프",
+   "biz": "4021748324",
+   "pos": "오케이포스",
+   "content": "토스포스 -> 오케이포스 변경 매장 입니다.\n메뉴이관부탁드립니다!",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789430633.670079",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789430629489939"
+  },
   {
    "ts": "1789430402.137989",
    "date": "2026-09-15",
@@ -20,9 +41,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1789430410.509919",
+   "replies": [
+    "처리된건"
+   ],
+   "rc": 2,
+   "lr": "1789430445.341239",
    "rfx": 3,
    "status": "wait",
    "handler": null,
