@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10650,
+  "version": 10651,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177765,13 +177765,29 @@ window.SLACK_DATA = {
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:14",
+      "updatedAt": "09:23",
       "ob": {
-        "count": 1,
+        "count": 3,
         "byEmp": {
-          "김규빈": 1
+          "김규빈": 3
         },
         "items": [
+          {
+            "key": "2026년 9월 15일 오전 8:06:14|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788930908282339#1",
+            "handler": "김규빈",
+            "status": "1차부재",
+            "recvDate": "2026-09-15",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788930908282339"
+          },
+          {
+            "key": "2026년 9월 14일 오후 3:35:10|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789008828953599#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-09-14",
+            "planDate": "2026-09-17",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789008828953599"
+          },
           {
             "key": "2026년 9월 14일 오후 3:31:36|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787558366925969#1",
             "handler": "김규빈",
@@ -177877,6 +177893,10 @@ window.SLACK_DATA = {
       "1789358845.553799": {
         "post": "1789358845.553799",
         "lastSeen": 1789417000.813
+      },
+      "1789431751.502109": {
+        "post": "1789431751.502109",
+        "lastSeen": 1789431859.549
       }
     },
     "days": {
@@ -232841,20 +232861,20 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-15 09:21",
+    "at": "2026-09-15 09:24",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 4071,
-    "named": 765,
+    "named": 767,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 765,
+    "done": 767,
     "byStatus": {
-      "일정등록완료": 489,
-      "1차부재": 166,
+      "일정등록완료": 490,
+      "1차부재": 167,
       "점주직접접수": 62,
       "설치불가": 13,
       "(빈칸)": 5,
