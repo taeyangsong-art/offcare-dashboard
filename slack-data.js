@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10706,
+  "version": 10707,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177791,7 +177791,7 @@ window.SLACK_DATA = {
           "req": "휴대폰(토스포스)-프론트 온보딩 및 결제 방법 안내 부탁드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "온보딩 완료입니다"
         },
         {
           "time": "11:42",
@@ -178514,14 +178514,17 @@ window.SLACK_DATA = {
       },
       "1789440518.324889": {
         "post": "1789440518.324889",
-        "lastSeen": 1789440917.696,
+        "lastSeen": 1789440980.362,
         "r": 1,
         "day": "2026-09-15",
         "idx": 15
       },
       "1789440631.164739": {
         "post": "1789440631.164739",
-        "lastSeen": 1789440917.696
+        "lastSeen": 1789440980.362,
+        "r": 1,
+        "day": "2026-09-15",
+        "idx": 16
       }
     },
     "days": {
@@ -233484,8 +233487,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-15": {
-        "cnt": 16,
-        "sumMin": 55.66516360441843,
+        "cnt": 17,
+        "sumMin": 60.96290129025777,
         "over": 0,
         "items": [
           {
@@ -233630,13 +233633,21 @@ window.SLACK_DATA = {
             "biz": "8270901824",
             "who": "고경림",
             "cat": "as"
+          },
+          {
+            "hm": "11:50",
+            "min": 5.3,
+            "store": "주식회사 소호마실(SohoMarsil)",
+            "biz": "1988102323",
+            "who": "김현기",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-15 11:55",
+    "at": "2026-09-15 11:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
