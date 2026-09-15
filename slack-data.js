@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10673,
+  "version": 10674,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177744,11 +177744,11 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "송태양": 1,
+          "고경림": 4,
           "심성현": 3,
           "김현기": 4,
           "배선유": 3,
-          "김동욱": 2,
-          "고경림": 3
+          "김동욱": 2
         },
         "extern": {
           "서상원": 1
@@ -177807,6 +177807,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 마장리국수 메뉴 테이블 원격 한번 부탁드립니다 / 완료우"
+        },
+        {
+          "time": "10:15",
+          "store": "박가네 먹거리",
+          "biz": "7752302251",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "포프(pc) + 유프 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "미개봉 / 개봉후 전원 연결안내완료 13시 15분 예약요청 예약완료"
         },
         {
           "time": "10:12",
@@ -178019,11 +178030,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 17,
+        "online": 18,
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "10:30",
+      "updatedAt": "10:39",
       "ob": {
         "count": 16,
         "byEmp": {
@@ -233255,7 +233266,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-15 10:36",
+    "at": "2026-09-15 10:40",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
