@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2082,
- "updatedAt": "2026-09-16 11:23",
+ "version": 2083,
+ "updatedAt": "2026-09-16 11:35",
  "days": 30,
  "items": [
   {
@@ -12403,8 +12403,7 @@ window.MENU_REQUESTS = {
        "name": "명품해물찜 1-2인(미니갑오징어)",
        "price": 27900
       }
-     ],
-     "path": "menu-files/1788921298_650129-0.png"
+     ]
     },
     {
      "name": "image (74).png",
@@ -12442,8 +12441,7 @@ window.MENU_REQUESTS = {
        "name": "[최상급알] 고니명란알찜 중",
        "price": 42000
       }
-     ],
-     "path": "menu-files/1788921298_650129-1.png"
+     ]
     },
     {
      "name": "image (75).png",
@@ -12476,8 +12474,7 @@ window.MENU_REQUESTS = {
        "name": "[살이꽉찬] 꽃게찜 대",
        "price": 52000
       }
-     ],
-     "path": "menu-files/1788921298_650129-2.png"
+     ]
     },
     {
      "name": "image (76).png",
@@ -12510,8 +12507,7 @@ window.MENU_REQUESTS = {
        "name": "[키토산제왕] 왕새우찜 1-2인",
        "price": 25000
       }
-     ],
-     "path": "menu-files/1788921298_650129-3.png"
+     ]
     },
     {
      "name": "image (77).png",
@@ -12534,8 +12530,7 @@ window.MENU_REQUESTS = {
        "name": "[키토산제왕] 왕새우찜 대",
        "price": 52000
       }
-     ],
-     "path": "menu-files/1788921298_650129-4.png"
+     ]
     }
    ],
    "datt": [],
