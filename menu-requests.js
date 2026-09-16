@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2099,
- "updatedAt": "2026-09-16 17:21",
+ "version": 2100,
+ "updatedAt": "2026-09-16 17:25",
  "days": 30,
  "items": [
   {
@@ -18,11 +18,860 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "Resized_20260916_164728.jpg.jpeg",
+     "fid": "F0C29BEHF0R",
+     "from": "댓글",
+     "path": "menu-files/1789546825_815319-0.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "참다랑어 마니",
+       "price": 29000
+      },
+      {
+       "category": "",
+       "name": "참다랑어 1인",
+       "price": 46000
+      },
+      {
+       "category": "",
+       "name": "참다랑어 2인",
+       "price": 85000
+      },
+      {
+       "category": "",
+       "name": "참다랑어 3인",
+       "price": 120000
+      },
+      {
+       "category": "",
+       "name": "참다랑어 4인",
+       "price": 160000
+      },
+      {
+       "category": "",
+       "name": "적산한판",
+       "price": 25000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260916_164731.jpg.jpeg",
+     "fid": "F0C25F3J26S",
+     "from": "댓글",
+     "path": "menu-files/1789546825_815319-1.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "짐다랑어",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "육회-뭐김",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "기타안주",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "주류",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "사케",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "위스키",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "칵테일",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "세계맥주",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "와인",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "무성비",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "해물누룽지탕",
+       "price": 21000
+      },
+      {
+       "category": "",
+       "name": "토마토탕",
+       "price": 23000
+      },
+      {
+       "category": "",
+       "name": "알탕",
+       "price": 23000
+      },
+      {
+       "category": "",
+       "name": "김치우동",
+       "price": 11000
+      },
+      {
+       "category": "",
+       "name": "오새라면",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "번데기탕",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "세트",
+       "price": 26000
+      },
+      {
+       "category": "",
+       "name": "한돈수제돈까스",
+       "price": 14000
+      },
+      {
+       "category": "",
+       "name": "통새우가라아게",
+       "price": 12000
+      },
+      {
+       "category": "",
+       "name": "치킨가라아게",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "닭똥집튀김",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "감자튀김",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "먹태와감튀",
+       "price": 18000
+      },
+      {
+       "category": "",
+       "name": "오징어다리튀김",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "황새치튀김",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "페스츄리소세지",
+       "price": 14000
+      },
+      {
+       "category": "",
+       "name": "크리스피통닭",
+       "price": 19000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260916_164734.jpg.jpeg",
+     "fid": "F0C1S2LHXRV",
+     "from": "댓글",
+     "path": "menu-files/1789546825_815319-2.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "참치타다끼",
+       "price": 25000
+      },
+      {
+       "category": "",
+       "name": "해물오코노미야끼",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "보리새우감바스",
+       "price": 23000
+      },
+      {
+       "category": "",
+       "name": "손during모듬구이",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "모찌리도후",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "마르게리따피자",
+       "price": 16000
+      },
+      {
+       "category": "",
+       "name": "페퍼로니피자",
+       "price": 16000
+      },
+      {
+       "category": "",
+       "name": "불고기피자",
+       "price": 16000
+      },
+      {
+       "category": "",
+       "name": "고등어조림",
+       "price": 19000
+      },
+      {
+       "category": "",
+       "name": "하이야모듬",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "토마토슬라이스",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "쥐포구이",
+       "price": 14000
+      },
+      {
+       "category": "",
+       "name": "먹태구이",
+       "price": 16000
+      },
+      {
+       "category": "",
+       "name": "마른오징어",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "파인애플사이다",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "요구르트사이다",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "바게트",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "레몬슬라이스",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "우롱사라",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "라면사리",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "측석공기밥",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260916_164737.jpg.jpeg",
+     "fid": "F0C216UGW3V",
+     "from": "댓글",
+     "path": "menu-files/1789546825_815319-3.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "참다랑어",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "국물·튀김",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "기타안주",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "주류",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "사케",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "위스키",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "칵테일",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "세계맥주",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "와인",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "무스비",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "참이슬",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "새로",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "진로",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "처음처럼",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "한라산",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "청하",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "별빛청하",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "새로살구",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "일품진로",
+       "price": 25000
+      },
+      {
+       "category": "",
+       "name": "화요",
+       "price": 25000
+      },
+      {
+       "category": "",
+       "name": "복분자",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "세트",
+       "price": 20000
+      },
+      {
+       "category": "",
+       "name": "스텔라생맥주",
+       "price": 6500
+      },
+      {
+       "category": "",
+       "name": "생맥주",
+       "price": 4500
+      },
+      {
+       "category": "",
+       "name": "카스",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "테라",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "켈리",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "비알콜맥주",
+       "price": 5000
+      },
+      {
+       "category": "",
+       "name": "무알콜칵테일",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "하이볼",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "음료",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "쥬스",
+       "price": 2500
+      },
+      {
+       "category": "",
+       "name": "토닉워터",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "에이드",
+       "price": 3000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260916_164739.jpg.jpeg",
+     "fid": "F0C1S2LQQR5",
+     "from": "댓글",
+     "path": "menu-files/1789546825_815319-4.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "한다랑어",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "국물·튀김",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "기타만주",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "주류",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "사케",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "위스키",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "칵테일",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "세계맥주",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "와인",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "무스비",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "도쿠리 센노유메",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "도쿠리 유하치로",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "도쿠리 가모쓰루 린",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "간바레오또상",
+       "price": 40000
+      },
+      {
+       "category": "",
+       "name": "가모쓰루 조조 가즈구치",
+       "price": 49000
+      },
+      {
+       "category": "",
+       "name": "카키칸쇼",
+       "price": 42000
+      },
+      {
+       "category": "",
+       "name": "쿠보타 센쥬",
+       "price": 89000
+      },
+      {
+       "category": "",
+       "name": "쿠보타 준마이다이긴죠",
+       "price": 89000
+      },
+      {
+       "category": "",
+       "name": "쿠보타 만쥬",
+       "price": 200000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260916_164742.jpg.jpeg",
+     "fid": "F0C27B9QASE",
+     "from": "댓글",
+     "path": "menu-files/1789546825_815319-5.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "위스키",
+       "name": "헤이키 스마크-잔",
+       "price": 11000
+      },
+      {
+       "category": "위스키",
+       "name": "발렌스커10y-잔",
+       "price": 12000
+      },
+      {
+       "category": "위스키",
+       "name": "조니워커그린라벨-잔",
+       "price": 12000
+      },
+      {
+       "category": "위스키",
+       "name": "발렌타인17y-잔",
+       "price": 16000
+      },
+      {
+       "category": "위스키",
+       "name": "발베니12y-잔",
+       "price": 17000
+      },
+      {
+       "category": "위스키",
+       "name": "맥켈란12y더블캐스크-잔",
+       "price": 17000
+      },
+      {
+       "category": "위스키",
+       "name": "발렌타인21y-잔",
+       "price": 30000
+      },
+      {
+       "category": "위스키",
+       "name": "글렌피딕12y-잔",
+       "price": 16000
+      },
+      {
+       "category": "위스키",
+       "name": "헤이키 스마크-병",
+       "price": 120000
+      },
+      {
+       "category": "위스키",
+       "name": "발렌스커10y-병",
+       "price": 170000
+      },
+      {
+       "category": "위스키",
+       "name": "발렌타인17y-병",
+       "price": 450000
+      },
+      {
+       "category": "위스키",
+       "name": "발베니12y-병",
+       "price": 220000
+      },
+      {
+       "category": "위스키",
+       "name": "조니워커그린라벨-병",
+       "price": 490000
+      },
+      {
+       "category": "위스키",
+       "name": "맥켈란12y더블캐스크-병",
+       "price": 280000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260916_164745.jpg.jpeg",
+     "fid": "F0C29BFPPHP",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "산토리",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "잭허니",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "봄바 마히마롤",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "헤이즈스파크하이볼",
+       "price": 11000
+      },
+      {
+       "category": "",
+       "name": "진토닉",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "아이리쉬커피",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "쿠바리브레",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "마가리따",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "마티니",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "흑보단",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "잭콕",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "마드라스",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "섹스온더비치",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "무알콜칵테일",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "복분자하이볼",
+       "price": 7000
+      },
+      {
+       "category": "",
+       "name": "짐빔하이볼",
+       "price": 8000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260916_164747.jpg.jpeg",
+     "fid": "F0C2B3QGKLL",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "호가든",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "블랑",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "듀벨",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "스텔라",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "기네스",
+       "price": 10000
+      },
+      {
+       "category": "",
+       "name": "코로나",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "밀러",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "빅웨이브",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "콜보드",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "파울라너",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "하이네켄",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "산미구엘",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "코젤다크",
+       "price": 8000
+      },
+      {
+       "category": "",
+       "name": "바드와이저",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "블루문",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "사무엘아담스",
+       "price": 10000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260916_164751.jpg.jpeg",
+     "fid": "F0C31Q2FTC0",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "와인",
+       "name": "와인",
+       "price": 65000
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [],
-   "rc": 0,
-   "lr": "",
+   "rc": 2,
+   "lr": "1789547025.171349",
    "rfx": 3,
    "status": "wait",
    "handler": null,
