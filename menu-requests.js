@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2091,
- "updatedAt": "2026-09-16 13:52",
+ "version": 2092,
+ "updatedAt": "2026-09-16 15:15",
  "days": 30,
  "items": [
   {
@@ -257,12 +257,14 @@ window.MENU_REQUESTS = {
      ]
     }
    ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1789527812.779799",
+   "replies": [
+    "금액입력모드 사용x, 메뉴를 등록하고 해당 메뉴를 찍어서 결제해야 영수증에 상품명 노출됨 안내"
+   ],
+   "rc": 2,
+   "lr": "1789539268.010979",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789527810065999"
   },
   {
