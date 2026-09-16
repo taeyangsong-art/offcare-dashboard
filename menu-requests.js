@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2065,
- "updatedAt": "2026-09-16 09:15",
+ "version": 2066,
+ "updatedAt": "2026-09-16 09:19",
  "days": 30,
  "items": [
   {
@@ -18,14 +18,94 @@ window.MENU_REQUESTS = {
    "special": "<mailto:···|···>",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "4791.jpg",
+     "fid": "F0C28AEER4L",
+     "from": "댓글",
+     "path": "menu-files/1789468274_039419-0.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "무인라면",
+       "price": 2500
+      },
+      {
+       "category": "",
+       "name": "계란토핑",
+       "price": 800
+      },
+      {
+       "category": "",
+       "name": "치즈토핑",
+       "price": 800
+      },
+      {
+       "category": "",
+       "name": "참치",
+       "price": 1300
+      },
+      {
+       "category": "",
+       "name": "탄산(캔)",
+       "price": 8500
+      },
+      {
+       "category": "",
+       "name": "생수",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "콜라",
+       "price": 1300
+      },
+      {
+       "category": "",
+       "name": "콜라 제로",
+       "price": 1500
+      },
+      {
+       "category": "",
+       "name": "스프라이트",
+       "price": 1300
+      },
+      {
+       "category": "",
+       "name": "밀키스",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "햇반",
+       "price": 1300
+      },
+      {
+       "category": "",
+       "name": "단무지",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "치즈불고기버거",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "치킨텐더",
+       "price": 0
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [
     "메일에 없음",
     "다시 요청드림"
    ],
-   "rc": 3,
-   "lr": "1789517663.563929",
+   "rc": 4,
+   "lr": "1789517823.447039",
    "rfx": 3,
    "status": "done",
    "handler": "김규빈",
