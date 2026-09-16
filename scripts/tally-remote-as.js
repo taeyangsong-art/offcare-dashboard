@@ -41,14 +41,16 @@ for (const b of t.split('=== Message from').slice(1)) {
   if (store.length > 30) store = store.slice(0, 30);
   const biz = ((b.match(/사업자\s*번?호?\s*[:：]\s*([\d\-]+)/) || [])[1] || '').replace(/-/g, '').trim();
 
-  // 완료 담당자 (원격OOO)
+  // 착수 담당자 (원격OOO) — 2026-09-16 규칙 변경으로 '완료'가 아니라 '손댐' 표시다.
+  // 완료 판정은 카테고리 이모지(원격as·원격온보딩…)·원격외주가 한다.
   let emp = null;
   for (const n of names) { const pm = n.match(RE_EMP); if (pm) { emp = personMap[pm[1]]; break; } }
   // 카테고리 이모지
   let catKey = null;
   for (const n of names) { if (catMap[n]) { catKey = catMap[n]; break; } }
   const hasExtern = names.includes('원격외주');
-  if (!catKey && !hasExtern && emp) catKey = 'as';
+  // 카테고리 이모지가 없으면 완료가 아니다 — 예전엔 '원격OOO'만 있어도 AS 완료로 쳤지만
+  // 이제 '원격OOO'는 착수 표시라, 그대로 두면 잡기만 한 건이 완료로 잡힌다.
   // 확인 담당자 (OOO_확인) — 예: 태양_확인 → 송태양
   let confirmPerson = null;
   for (const n of names) { const cm = n.match(RE_CONFIRM); if (cm) { confirmPerson = personMap[cm[1]]; break; } }
@@ -59,13 +61,14 @@ for (const b of t.split('=== Message from').slice(1)) {
     const who = doer || '미지정';
     counts.extern = counts.extern || {};
     counts.extern[who] = (counts.extern[who] || 0) + 1; externCount++;
-  } else if (emp && catKey) {          // AS/온보딩 완료
+  } else if (catKey) {                 // AS/온보딩 완료 — 카테고리 이모지가 완료 신호
     if (!counts[catKey]) counts[catKey] = {};
-    counts[catKey][emp] = (counts[catKey][emp] || 0) + 1;
+    const who = doer || '미지정';
+    counts[catKey][who] = (counts[catKey][who] || 0) + 1;
     completed++;
-  } else if (confirmPerson && !emp && !catKey && !has2ndAbsent) {
-    // 확인(OOO_확인)만 되고 완료·분류가 안 됐고 2차부재가 아닌 건만 확인필요로 적재
-    pending.push({ time, store, biz, handler: confirmPerson, reasons: ['확인 후 미완료'] });
+  } else if (doer && !has2ndAbsent) {
+    // 착수(원격OOO·OOO_확인)만 되고 완료·분류가 안 됐고 2차부재가 아닌 건만 확인필요로 적재
+    pending.push({ time, store, biz, handler: doer, reasons: ['확인 후 미완료'] });
   }
   // 그 외(무반응 / 부재만 / 이미 분류됨) → 적재하지 않음
 }

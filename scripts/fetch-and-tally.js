@@ -137,6 +137,19 @@ const defMin = `${defMinObj.getUTCFullYear()}-${pad(defMinObj.getUTCMonth() + 1)
 const minDate = (backfillFrom && backfillFrom < defMin) ? backfillFrom : defMin;
 const oldestWide = boundsOf(minDate).oldest;
 
+/* ── 이모지 규칙 전환 (착수 표시: 'XX확인' → '원격XX') ──────────────────────────
+ * 팀이 요청글을 잡을 때 찍는 첫 이모지를 'XX확인' 대신 '원격XX' 로 바꿨다.
+ * 완료 시 카테고리 이모지(원격as·원격온보딩·원격명의변경·원격배달·원격외주)를 찍는 건 그대로다.
+ *
+ * 옛 규칙: '원격XX' = 완료 담당자 (AS채널에선 카테고리 이모지가 없어도 완료로 적재)
+ * 새 규칙: '원격XX' = 착수 표시 (= 예전의 'XX확인'). 완료는 카테고리 이모지·원격외주가 결정.
+ *
+ * 전환일 이전 글은 옛 규칙 그대로 둔다 — 롤링 재집계(최근 3일 + 미처리 잔여일)가
+ * 과거의 '원격XX만 찍고 끝낸' 완료 건을 누락으로 뒤집으면 안 되기 때문. */
+const EMOJI_RULE_CUTOVER = '2026-09-16';                             // 이 업무일부터 새 규칙
+const EMOJI_RULE_CUTOVER_TS = boundsOf(EMOJI_RULE_CUTOVER).oldest;   // 그 업무일 시작(05:30 KST)
+const newEmojiRule = ts => parseFloat(ts || '0') >= EMOJI_RULE_CUTOVER_TS;
+
 function kstHM(ts) {
   const d = new Date(parseFloat(ts) * 1000 + 9 * 3600 * 1000);
   return `${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())}`;
@@ -276,8 +289,11 @@ async function tallyInto(msgs, ch, counts, pending, done, opts) {
     const absTag = names.some(n => /2차.?부재/.test(n)) ? '2차 부재' : '1차 부재';
     const hasDup = names.some(n => /중복/.test(n));                          // 팀이 '진짜 중복'에만 찍는 표시
     const hasX = names.includes('x');                                        // ❌ = 잘못 올린 글 표시
-    const invalidPost = hasX && !!confirmPerson;                             // 확인 + X → 잘못 올린 글 → 부재/미처리 제외
     const doer = emp || confirmPerson;
+    // 착수(손댐) 표시를 낸 사람 — 새 규칙엔 '원격XX', 옛 규칙엔 'XX확인'
+    const newRule = newEmojiRule(m.ts);
+    const toucher = newRule ? doer : confirmPerson;
+    const invalidPost = hasX && !!toucher;                                   // 착수 + X → 잘못 올린 글 → 부재/미처리 제외
     const ageSec = now.getTime() / 1000 - parseFloat(m.ts || '0');   // 메시지 게시 후 경과(초) — 확인/부재 유예 판정용
 
     if (hasDup) { dup++; continue; }         // 중복 이모지 → 집계 제외 (재처리는 중복 표시 없으니 별개 건으로 정상 집계됨)
@@ -291,7 +307,7 @@ async function tallyInto(msgs, ch, counts, pending, done, opts) {
       counts.extern = counts.extern || {};
       counts.extern[who] = (counts.extern[who] || 0) + 1; externCount++;
       done.push({ time, store, biz, cat: 'extern', emp: who, req, hw, urgent, intake, note: await grabNote(m, 'extern', time, store, biz) });
-    } else if (emojiCat || (emp && !ch.requireCat)) {   // 카테고리 이모지 있음, 또는 AS채널에서 완료담당자만(→defaultCat). requireCat 채널은 이모지 필수
+    } else if (emojiCat || (emp && !ch.requireCat && !newRule)) {   // 카테고리 이모지 있음. (옛 규칙 한정) AS채널은 '원격XX'만 있어도 완료→defaultCat
       const catKey = emojiCat || ch.defaultCat;
       const who = emp || confirmPerson || '미지정';
       counts[catKey] = counts[catKey] || {};
@@ -300,8 +316,8 @@ async function tallyInto(msgs, ch, counts, pending, done, opts) {
     } else if (hasAbsent && !invalidPost) {  // 완료·카테고리 이모지 없이 '부재만' (확인+X 잘못올린글 제외)
       // 2차부재(재부재=연락 불가)는 확인필요에서 제외, 1차부재만 — 그것도 1시간 지나야 확인필요로 적재
       if (absTag !== '2차 부재' && ageSec >= CONFIRM_GRACE_SEC) pending.push({ time, store, biz, handler: doer || '미지정', cat: ch.defaultCat, intake, reasons: [absTag] });
-    } else if (confirmPerson && !invalidPost) { // 확인만 찍힘 → 1시간 지나면 '확인 후 미완료' (확인+X 잘못올린글 제외)
-      if (ageSec >= CONFIRM_GRACE_SEC) pending.push({ time, store, biz, handler: confirmPerson, cat: ch.defaultCat, intake, reasons: ['확인 후 미완료'] });
+    } else if (toucher && !invalidPost) { // 착수만 찍힘 → 1시간 지나면 '확인 후 미완료' (착수+X 잘못올린글 제외)
+      if (ageSec >= CONFIRM_GRACE_SEC) pending.push({ time, store, biz, handler: toucher, cat: ch.defaultCat, intake, reasons: ['확인 후 미완료'] });
     }
   }
   return { completed, externCount, dup, latest };
@@ -438,9 +454,10 @@ function trackResp(data, msgs, ch) {
     const hasConfirm = names.some(n => RE_CONFIRM.test(n));
     const hasExtern = names.includes('원격외주');
     const responded = hasCat || hasEmp || hasConfirm || hasExtern;   // 담당자가 손댐(확인/완료/카테고리/외주)
-    // 완료 = 카테고리(원격as·원격온보딩…)·원격OOO·원격외주 이모지. 처리를 끝냈을 때 찍으므로 '소요시간'의 종점.
-    // ('OOO확인'은 손댔다는 표시일 뿐이라 응답시간의 종점이고, 소요시간에는 쓰지 않는다)
-    const finished = hasCat || hasEmp || hasExtern;
+    // 완료 = 카테고리(원격as·원격온보딩…)·원격외주 이모지. 처리를 끝냈을 때 찍으므로 '소요시간'의 종점.
+    // 착수 표시('원격XX' — 옛 규칙에선 'XX확인')는 손댔다는 신호라 응답시간의 종점이고, 소요시간에는 쓰지 않는다.
+    // 옛 규칙 글에서는 '원격XX'가 완료 담당자였으므로 그때만 종점으로 인정한다.
+    const finished = hasCat || hasExtern || (hasEmp && !newEmojiRule(m.ts));
     const w = W[key];
     if (!w) {
       // 처음 볼 때 이미 이모지가 찍혀 있으면 언제 찍혔는지 알 수 없어 제외. 아무것도 없을 때만 관찰 시작.
@@ -544,7 +561,8 @@ async function tallyVoc(msgs, voc, channelId, opts) {
       if (!confirmP) confirmP = confirmPersonOf(nm) || null;
       if (!remoteP  && (mm = nm.match(RE_EMP)))     remoteP = personMap[mm[1]];
     }
-    const autoDone = !!confirmP && hasIshop;                     // 확인 + 아이샵케어 VOC체크(ishopcare)
+    // 확인 + 아이샵케어 VOC체크(ishopcare). 새 규칙에선 담당 확인을 '원격XX'로 찍으므로 그것도 인정한다.
+    const autoDone = !!(confirmP || (newEmojiRule(m.ts) && remoteP)) && hasIshop;
     const handler = confirmP || remoteP || '';
     // 담당자(emp): 처리완료면 handler, 아니면 구방식(원격voc+원격OOO) 호환
     const empVal = autoDone ? handler : ((hasVocTag && remoteP) ? remoteP : '');
