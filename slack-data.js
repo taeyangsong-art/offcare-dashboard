@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11055,
+  "version": 11056,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -180809,8 +180809,8 @@ window.SLACK_DATA = {
     "2026-09-16": {
       "counts": {
         "as": {
+          "서상원": 18,
           "김현기": 14,
-          "서상원": 17,
           "심성현": 21,
           "고경림": 15,
           "송태양": 16,
@@ -180834,8 +180834,8 @@ window.SLACK_DATA = {
           "배선유": 1
         },
         "transfer": {
+          "송태양": 4,
           "최민석": 1,
-          "송태양": 3,
           "김동욱": 1,
           "김현기": 1
         },
@@ -180876,6 +180876,28 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "15:35",
+          "store": "더블라썸플라워샵",
+          "biz": "8069801724",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "박성민님지원",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "15:25",
+          "store": "슬로우스타터(SLOW STARTER)",
+          "biz": "8065601006",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "9월 16일 오후 3시 40분 / 메뉴복사O / 프론트",
+          "hw": "",
+          "intake": "online",
+          "note": "<!subteam^S0BPJ7GLGS1 4시까지만 통화 가능하다고 하셔서 최대한 빠른 확인 부탁드립니다:개굴-죄송: 4시까지만 통화 가능하다고 하셔서 최대한 빠른 확인 부탁드립니다 / 명변 완료입니다"
+        },
         {
           "time": "15:23",
           "store": "아이리부티크",
@@ -182780,11 +182802,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 148,
+        "online": 150,
         "offline": 25,
         "unknown": 0
       },
-      "updatedAt": "15:34",
+      "updatedAt": "15:37",
       "voc": {
         "responses": 9,
         "install": {
@@ -182857,9 +182879,9 @@ window.SLACK_DATA = {
         "praises": []
       },
       "ob": {
-        "count": 18,
+        "count": 20,
         "byEmp": {
-          "김규빈": 18
+          "김규빈": 20
         },
         "items": [
           {
@@ -182991,6 +183013,22 @@ window.SLACK_DATA = {
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787734914128289"
           },
           {
+            "key": "2026년 9월 16일 오전 11:29:38|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789364211538509#1",
+            "handler": "김규빈",
+            "status": "",
+            "recvDate": "2026-09-16",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789364211538509"
+          },
+          {
+            "key": "2026년 9월 16일 오전 11:28:58|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789449826173349#1",
+            "handler": "김규빈",
+            "status": "자가설치",
+            "recvDate": "2026-09-16",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789449826173349"
+          },
+          {
             "key": "2026년 9월 16일 오전 11:28:10|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789367824201659#1",
             "handler": "김규빈",
             "status": "점주직접접수",
@@ -183074,17 +183112,29 @@ window.SLACK_DATA = {
       },
       "1789538404.448919": {
         "post": "1789538404.448919",
-        "lastSeen": 1789540460.455,
+        "lastSeen": 1789540704.013,
         "r": 1,
         "day": "2026-09-16",
         "idx": 117
       },
       "1789539610.644319": {
         "post": "1789539610.644319",
-        "lastSeen": 1789540460.455,
+        "lastSeen": 1789540704.013,
         "r": 1,
         "day": "2026-09-16",
         "idx": 121
+      },
+      "1789540662.237009": {
+        "post": "1789540662.237009",
+        "lastSeen": 1789540704.013
+      },
+      "1789540491.685799": {
+        "post": "1789540491.685799",
+        "lastSeen": 1789540704.013
+      },
+      "1789538990.987429": {
+        "post": "1789538990.987429",
+        "lastSeen": 1789540704.013
       }
     },
     "days": {
@@ -240363,24 +240413,24 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-16 15:34",
+    "at": "2026-09-16 15:38",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 4114,
-    "named": 809,
+    "named": 811,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 809,
+    "done": 811,
     "byStatus": {
       "일정등록완료": 513,
       "1차부재": 177,
       "점주직접접수": 67,
       "설치불가": 14,
-      "(빈칸)": 6,
-      "자가설치": 24,
+      "(빈칸)": 7,
+      "자가설치": 25,
       "설치보류요청": 8
     }
   }
