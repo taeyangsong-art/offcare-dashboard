@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2107,
- "updatedAt": "2026-09-16 18:34",
+ "version": 2108,
+ "updatedAt": "2026-09-16 18:42",
  "days": 30,
  "items": [
+  {
+   "ts": "1789551537.295649",
+   "date": "2026-09-16",
+   "time": "18:38",
+   "store": "만원수산",
+   "biz": "1080846102",
+   "pos": "오케이포스",
+   "content": "오케이포스 메뉴 가격 수정 요청 드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "소주맥주\n가격만 3,000변경"
+   ],
+   "rc": 2,
+   "lr": "1789551546.678269",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789551537295649"
+  },
   {
    "ts": "1789549420.699089",
    "date": "2026-09-16",
