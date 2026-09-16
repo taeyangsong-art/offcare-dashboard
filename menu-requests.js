@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2086,
- "updatedAt": "2026-09-16 12:06",
+ "version": 2087,
+ "updatedAt": "2026-09-16 13:04",
  "days": 30,
  "items": [
   {
@@ -225,10 +225,16 @@ window.MENU_REQUESTS = {
    "files": 1,
    "att": [
     {
+     "name": "(키오스크) 움버거앤윙스_미리내 메뉴 셋팅_치킨불고기.xlsx.exs",
+     "fid": "F0C24UX47MY",
+     "from": "원글",
+     "path": "menu-files/1789522108_300109-0.exs",
+     "nj": 1
+    },
+    {
      "name": "image.png",
      "fid": "F0C256NC0DQ",
      "from": "댓글",
-     "path": "menu-files/1789522108_300109-1.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -246,13 +252,13 @@ window.MENU_REQUESTS = {
        "name": "해쉬브라운 토핑 추가",
        "price": 1000
       }
-     ]
+     ],
+     "path": "menu-files/1789522108_300109-1.png"
     },
     {
      "name": "image.png",
      "fid": "F0C2ZKG5K16",
      "from": "댓글",
-     "path": "menu-files/1789522108_300109-2.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -330,13 +336,13 @@ window.MENU_REQUESTS = {
        "name": "지파이",
        "price": 2900
       }
-     ]
+     ],
+     "path": "menu-files/1789522108_300109-2.png"
     },
     {
      "name": "image.png",
      "fid": "F0C256PFP0S",
      "from": "댓글",
-     "path": "menu-files/1789522108_300109-3.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -379,13 +385,13 @@ window.MENU_REQUESTS = {
        "name": "마운틴듀(L)",
        "price": 200
       }
-     ]
+     ],
+     "path": "menu-files/1789522108_300109-3.png"
     },
     {
      "name": "image.png",
      "fid": "F0C276WRDBK",
      "from": "댓글",
-     "path": "menu-files/1789522108_300109-4.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -418,13 +424,13 @@ window.MENU_REQUESTS = {
        "name": "메가윙 할라피노 2윙스",
        "price": 400
       }
-     ]
+     ],
+     "path": "menu-files/1789522108_300109-4.png"
     },
     {
      "name": "image.png",
      "fid": "F0C256RQRFC",
      "from": "댓글",
-     "path": "menu-files/1789522108_300109-5.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -447,7 +453,8 @@ window.MENU_REQUESTS = {
        "name": "마요네즈 빼주세요",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1789522108_300109-5.png"
     },
     {
      "name": "image.png",
@@ -461,21 +468,14 @@ window.MENU_REQUESTS = {
        "price": 0
       }
      ]
-    },
-    {
-     "name": "(키오스크) 움버거앤윙스_미리내 메뉴 셋팅_치킨불고기.xlsx.exs",
-     "fid": "F0C24UX47MY",
-     "from": "원글",
-     "path": "menu-files/1789522108_300109-0.exs",
-     "nj": 1
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 4,
-   "lr": "1789524976.978199",
+   "rc": 5,
+   "lr": "1789531302.765599",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789522108300109"
   },
