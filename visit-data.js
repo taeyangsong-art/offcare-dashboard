@@ -1,10 +1,10 @@
 /*
  * 방문설치 채널(#ishopcare_new_방문설치) 적재 — 자동 생성 파일
  * 직접 수정하지 마세요. scripts/fetch-visits.js 가 덮어씁니다.
- * 갱신: 2026-09-16 21:16 KST · 131건 (2026-07-01 이후)
+ * 갱신: 2026-09-17 00:31 KST · 131건 (2026-07-01 이후)
  */
 window.VISIT_DATA = {
-  updatedAt: '2026-09-16 21:16',
+  updatedAt: '2026-09-17 00:31',
   records: [
   {"id":"11366","date":"2026-07-01","time":"09:40","store":"(주)참치공방(종각본점)","biz":"2338800379","kind":"AS","status":"done","visitDate":"2026-07-01","region":"수도권","route":"온라인","addr":"서울특별시 종로구","van":"DAOU","equip":"dk9300 용지 끼임 점검","ship":"","delivery":"","requester":"","assignee":"이성철","rounds":0,"roundDates":[],"brand":"참치공방"},
   {"id":"11367","date":"2026-07-01","time":"09:45","store":"참치공방 시청지점","biz":"7368501084","kind":"AS","status":"done","visitDate":"2026-07-01","region":"수도권","route":"오프라인","addr":"서울특별시 중구","van":"DAOU","equip":"DK 9300","ship":"","delivery":"","requester":"","assignee":"이성철","rounds":4,"roundDates":["2025-04-22","2025-06-04","2026-05-12","2026-07-01","2025-04-22","2025-06-04","2026-05-12","2026-07-01"],"brand":"참치공방"},
@@ -57,7 +57,7 @@ window.VISIT_DATA = {
   {"id":"12487","date":"2026-07-28","time":"14:50","store":"등촌샤브칼국수 아현역점","biz":"3671802624","kind":"설치","status":"done","visitDate":"2026-08-04","region":"수도권","route":"오프라인","addr":"서울특별시 서대문구","van":"KIS","equip":"포스 프론트 유선프린터2대 금전함","ship":"2026-07-28","delivery":"","requester":"","assignee":"이성철","rounds":0,"roundDates":[],"brand":"등촌샤브칼국수"},
   {"id":"12533","date":"2026-07-29","time":"09:24","store":"휴대폰성지 세로폰 신정점","biz":"7564901339","kind":"AS","status":"done","visitDate":"2026-07-29","region":"수도권","route":"온라인","addr":"서울특별시 양천구","van":"KIS","equip":"가결제","ship":"","delivery":"","requester":"","assignee":"박성민","rounds":0,"roundDates":[],"brand":"휴대폰성지"},
   {"id":"12568","date":"2026-07-29","time":"15:27","store":"067.우리끼리 키즈카페 스포츠마을 대구시지점","biz":"8998700696","kind":"설치","status":"done","visitDate":"2026-07-30","region":"지방","route":"오프라인","addr":"대구광역시 수성구","van":"KIS","equip":"키오스크모드 프론트 재온보딩","ship":"","delivery":"","requester":"","assignee":"포스21","rounds":0,"roundDates":[],"brand":"우리끼리 키즈카페"},
-  {"id":"12604","date":"2026-07-30","time":"11:17","store":"드롭탑(세정아울렛점)","biz":"1580202669","kind":"AS","status":"done","visitDate":"2026-08-03","region":"지방","route":"오프라인","addr":"전남광주통합특별시 서구","van":"KIS","equip":"하나시스 플러스 포스","ship":"2026-07-30","delivery":"","requester":"","assignee":"비젼포스","rounds":0,"roundDates":[],"brand":"드롭탑"},
+  {"id":"12604","date":"2026-07-30","time":"11:17","store":"드롭탑(세정아울렛점)","biz":"1580202669","kind":"AS","status":"done","visitDate":"2026-08-03","region":"지방","route":"오프라인","addr":"전남광주통합특별시 서구","van":"KIS","equip":"하나시스 플러스 포스","ship":"2026-07-30","delivery":"","requester":"","assignee":"","rounds":0,"roundDates":[],"brand":"드롭탑"},
   {"id":"12605","date":"2026-07-30","time":"11:37","store":"시올돈 낙성대점","biz":"2634601011","kind":"AS","status":"done","visitDate":"2026-07-30","region":"수도권","route":"오프라인","addr":"서울특별시 관악구","van":"KIS","equip":"E250","ship":"","delivery":"","requester":"","assignee":"박성민","rounds":0,"roundDates":[],"brand":"시올돈"},
   {"id":"12711","date":"2026-08-01","time":"21:56","store":"용용선생 포항영일대점","biz":"4291801938","kind":"AS","status":"done","visitDate":"2026-08-03","region":"지방","route":"오프라인","addr":"경상북도 포항시 북구","van":"NICE","equip":"토스_포스_APEXA15 서브포스 혹은 랜선 문제","ship":"","delivery":"","requester":"","assignee":"IC정보통신","rounds":0,"roundDates":[],"brand":"용용선생"},
   {"id":"12795","date":"2026-08-04","time":"17:02","store":"컴포즈커피 성수코리아IT점","biz":"5218102386","kind":"설치","status":"done","visitDate":"2026-08-05","region":"수도권","route":"컴포즈","addr":"서울특별시 성동구","van":"KPN","equip":"설치 환경 점검","ship":"","delivery":"","requester":"","assignee":"이성철","rounds":0,"roundDates":[],"brand":"컴포즈커피"},
