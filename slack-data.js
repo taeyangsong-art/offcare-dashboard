@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10927,
+  "version": 10928,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -177764,6 +177764,7 @@ window.SLACK_DATA = {
           "배선유": 1
         },
         "menu": {
+          "김규빈": 1,
           "배선유": 6,
           "최민석": 1,
           "심성현": 1
@@ -177941,6 +177942,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "선연결 안내 15분 뒤 재통화 요청 / 포프유프 온보딩 완료"
+        },
+        {
+          "time": "19:31",
+          "store": "보글보글",
+          "biz": "3860702916",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 메일에 없음 / 다시 요청드림"
         },
         {
           "time": "19:30",
@@ -180344,7 +180356,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 191,
+        "online": 192,
         "offline": 41,
         "unknown": 0
       },
@@ -180800,7 +180812,7 @@ window.SLACK_DATA = {
         "as": {
           "김현기": 1,
           "김규빈": 1,
-          "김동욱": 1
+          "김동욱": 2
         }
       },
       "pending": [],
@@ -180828,6 +180840,17 @@ window.SLACK_DATA = {
           "note": "9시 30분 예약"
         },
         {
+          "time": "09:00",
+          "store": "커피콩한잔",
+          "biz": "1334001095",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "재용님 요청 프론트 재온보딩 / 토페 청약서류 받기 오전9시 요청",
+          "hw": "",
+          "intake": "offline",
+          "note": "프론트 온보딩 완료. 토스페이 청약을 위해 서류 문자안내완료. 현재 서류가 없어 문자로 보내주기로하심. 토스페이 청약 안될 시 AS불가로 안내"
+        },
+        {
           "time": "08:45",
           "store": "해화원",
           "biz": "6403302013",
@@ -180841,7 +180864,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 3,
-        "offline": 0,
+        "offline": 1,
         "unknown": 0
       },
       "updatedAt": "09:00"
@@ -180951,18 +180974,7 @@ window.SLACK_DATA = {
       },
       "1789516806.640339": {
         "post": "1789516806.640339",
-        "lastSeen": 1789517600.719
-      },
-      "1789516803.130059": {
-        "post": "1789516803.130059",
-        "lastSeen": 1789517600.719,
-        "r": 1,
-        "day": "2026-09-16",
-        "idx": 1
-      },
-      "1789516814.989969": {
-        "post": "1789516814.989969",
-        "lastSeen": 1789517600.719
+        "lastSeen": 1789517719.581
       }
     },
     "days": {
@@ -237155,7 +237167,8 @@ window.SLACK_DATA = {
             "store": "커피콩한잔",
             "biz": "1334001095",
             "who": "김동욱",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 14.3
           },
           {
             "hm": "09:00",
@@ -237171,7 +237184,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-16 09:13",
+    "at": "2026-09-16 09:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
