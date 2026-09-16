@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2111,
- "updatedAt": "2026-09-16 19:12",
+ "version": 2112,
+ "updatedAt": "2026-09-16 19:22",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C23FU016H",
      "from": "댓글",
-     "path": "menu-files/1789553301_713549-0.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -86,15 +85,16 @@ window.MENU_REQUESTS = {
        "name": "토닉워터",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1789553301_713549-0.png"
     }
    ],
    "datt": [],
    "replies": [
     "소주/맥주 가격 3,000원으로 변경 요청 드립니다.\n\n아직 반영 안되었다고 합니다!"
    ],
-   "rc": 4,
-   "lr": "1789553441.614589",
+   "rc": 6,
+   "lr": "1789554141.234269",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
