@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10930,
+  "version": 10931,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -180813,6 +180813,9 @@ window.SLACK_DATA = {
           "김현기": 1,
           "김규빈": 1,
           "김동욱": 2
+        },
+        "onboarding": {
+          "김동욱": 1
         }
       },
       "pending": [],
@@ -180827,6 +180830,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "교체처리 / 중고제품 없어서 신품 발송"
+        },
+        {
+          "time": "09:00",
+          "store": "뉴트브로우",
+          "biz": "2850403800",
+          "cat": "onboarding",
+          "emp": "김동욱",
+          "req": "핸드폰+ 프+유프/ 온보딩 요청드립니다. / 케이블 연동까진 되어있고 갤탭 구매하신 뒤 통화요청",
+          "hw": "",
+          "intake": "online",
+          "note": "포프유프(갤탭) 온보딩 완료"
         },
         {
           "time": "09:00",
@@ -180863,11 +180877,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 3,
+        "online": 4,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:00"
+      "updatedAt": "09:30"
     }
   },
   "resp": {
@@ -180972,12 +180986,17 @@ window.SLACK_DATA = {
         "post": "1789484495.437809",
         "lastSeen": 1789503326.897
       },
-      "1789516806.640339": {
-        "post": "1789516806.640339",
-        "lastSeen": 1789518379.932,
-        "r": 1,
-        "day": "2026-09-16",
-        "idx": 3
+      "1789518602.627879": {
+        "post": "1789518602.627879",
+        "lastSeen": 1789518609.459
+      },
+      "1789518603.292369": {
+        "post": "1789518603.292369",
+        "lastSeen": 1789518609.459
+      },
+      "1789516814.989969": {
+        "post": "1789516814.989969",
+        "lastSeen": 1789518609.459
       }
     },
     "days": {
@@ -237188,14 +237207,15 @@ window.SLACK_DATA = {
             "store": "뉴트브로우",
             "biz": "2850403800",
             "who": "김동욱",
-            "cat": "as"
+            "cat": "onboarding",
+            "dmin": 28.1
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-16 09:26",
+    "at": "2026-09-16 09:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
