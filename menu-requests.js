@@ -3,10 +3,39 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2067,
- "updatedAt": "2026-09-16 09:26",
+ "version": 2068,
+ "updatedAt": "2026-09-16 09:43",
  "days": 30,
  "items": [
+  {
+   "ts": "1789519230.730479",
+   "date": "2026-09-16",
+   "time": "09:40",
+   "store": "바이트앤 레스트",
+   "biz": "5438503030",
+   "pos": "퍼스트포스",
+   "content": "핫도그-머핀 7.000\n커피-에스프레소 4.000\n추가해주세요",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1DQZGa05QmhwsvKZBPkKFOvbTgr0pC8Xz/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1DQZGa05QmhwsvKZBPkKFOvbTgr0pC8Xz",
+     "kind": "product_photo",
+     "menu": []
+    }
+   ],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789519233.723049",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789519230730479"
+  },
   {
    "ts": "1789468274.039419",
    "date": "2026-09-15",
