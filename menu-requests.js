@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2080,
- "updatedAt": "2026-09-16 11:02",
+ "version": 2081,
+ "updatedAt": "2026-09-16 11:18",
  "days": 30,
  "items": [
   {
@@ -25,12 +25,250 @@ window.MENU_REQUESTS = {
      "from": "원글",
      "path": "menu-files/1789522108_300109-0.exs",
      "nj": 1
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C256NC0DQ",
+     "from": "댓글",
+     "path": "menu-files/1789522108_300109-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "토핑 추가",
+       "name": "치즈 토핑 추가",
+       "price": 600
+      },
+      {
+       "category": "토핑 추가",
+       "name": "베이컨 토핑 추가",
+       "price": 1000
+      },
+      {
+       "category": "토핑 추가",
+       "name": "해쉬브라운 토핑 추가",
+       "price": 1000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C2ZKG5K16",
+     "from": "댓글",
+     "path": "menu-files/1789522108_300109-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "사이드 선택",
+       "name": "감자튀김(M)",
+       "price": 0
+      },
+      {
+       "category": "사이드 선택",
+       "name": "감자튀김(L)",
+       "price": 1000
+      },
+      {
+       "category": "사이드 선택",
+       "name": "너겟 크런치오 4EA",
+       "price": 1000
+      },
+      {
+       "category": "사이드 선택",
+       "name": "콘소메 시즈닝 감자(M)",
+       "price": 500
+      },
+      {
+       "category": "사이드 선택",
+       "name": "콘소메 시즈닝 감자(L)",
+       "price": 1500
+      },
+      {
+       "category": "사이드 선택",
+       "name": "핫 솔티 시즈닝 감자(M)",
+       "price": 500
+      },
+      {
+       "category": "사이드 선택",
+       "name": "핫 솔티 시즈닝 감자(L)",
+       "price": 1500
+      },
+      {
+       "category": "사이드 선택",
+       "name": "오리지널 츄러스윗",
+       "price": 0
+      },
+      {
+       "category": "사이드 선택",
+       "name": "휘핑 츄러스윗",
+       "price": 1500
+      },
+      {
+       "category": "사이드 선택",
+       "name": "아이스크림 츄러스윗",
+       "price": 1500
+      },
+      {
+       "category": "사이드 선택",
+       "name": "코울슬로",
+       "price": 0
+      },
+      {
+       "category": "사이드 선택",
+       "name": "블랙 치즈스틱",
+       "price": 0
+      },
+      {
+       "category": "사이드 선택",
+       "name": "해쉬브라운 2EA",
+       "price": 0
+      },
+      {
+       "category": "사이드 선택",
+       "name": "메가텐더",
+       "price": 2500
+      },
+      {
+       "category": "사이드 선택",
+       "name": "지파이",
+       "price": 2900
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C256PFP0S",
+     "from": "댓글",
+     "path": "menu-files/1789522108_300109-3.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "음료 선택",
+       "name": "펩시(M)",
+       "price": 0
+      },
+      {
+       "category": "음료 선택",
+       "name": "펩시(L)",
+       "price": 200
+      },
+      {
+       "category": "음료 선택",
+       "name": "펩시제로(M)",
+       "price": 0
+      },
+      {
+       "category": "음료 선택",
+       "name": "펩시제로(L)",
+       "price": 200
+      },
+      {
+       "category": "음료 선택",
+       "name": "칠성사이다(M)",
+       "price": 0
+      },
+      {
+       "category": "음료 선택",
+       "name": "칠성사이다(L)",
+       "price": 200
+      },
+      {
+       "category": "음료 선택",
+       "name": "마운틴듀(M)",
+       "price": 0
+      },
+      {
+       "category": "음료 선택",
+       "name": "마운틴듀(L)",
+       "price": 200
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C276WRDBK",
+     "from": "댓글",
+     "path": "menu-files/1789522108_300109-4.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "윙 선택",
+       "name": "메가윙 오리지널 2윙스",
+       "price": 0
+      },
+      {
+       "category": "윙 선택",
+       "name": "메가윙 크리미마요 2윙스",
+       "price": 400
+      },
+      {
+       "category": "윙 선택",
+       "name": "메가윙 소이갈릭 2윙스",
+       "price": 400
+      },
+      {
+       "category": "윙 선택",
+       "name": "메가윙 볼케이노 2윙스",
+       "price": 400
+      },
+      {
+       "category": "윙 선택",
+       "name": "메가윙 버팔로 2윙스",
+       "price": 400
+      },
+      {
+       "category": "윙 선택",
+       "name": "메가윙 할라피노 2윙스",
+       "price": 400
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C256RQRFC",
+     "from": "댓글",
+     "path": "menu-files/1789522108_300109-5.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "요청사항",
+       "name": "피클 빼주세요",
+       "price": 0
+      },
+      {
+       "category": "요청사항",
+       "name": "양파 빼주세요",
+       "price": 0
+      },
+      {
+       "category": "요청사항",
+       "name": "청상추 빼주세요",
+       "price": 0
+      },
+      {
+       "category": "요청사항",
+       "name": "마요네즈 빼주세요",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C23ANUHPY",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "메가윙 2윙스",
+       "name": "메가윙 오리지널 2윙스",
+       "price": 0
+      }
+     ]
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 3,
-   "lr": "1789523938.246619",
+   "rc": 4,
+   "lr": "1789524976.978199",
    "rfx": 3,
    "status": "confirm",
    "handler": "배선유",
