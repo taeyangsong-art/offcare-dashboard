@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10943,
+  "version": 10944,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -180811,9 +180811,9 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "심성현": 1,
+          "김현기": 4,
           "송태양": 2,
           "서상원": 2,
-          "김현기": 3,
           "고경림": 1,
           "김동욱": 4,
           "배선유": 1,
@@ -180851,6 +180851,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "매장 오픈 전 2200 가능 통화 예약 요청"
+        },
+        {
+          "time": "10:00",
+          "store": "키보우(KIBOW)",
+          "biz": "8815301011",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "지난 주 금요일부터 포스기가 바이오스 부팅 오류 화면에 멈춰",
+          "hw": "",
+          "intake": "online",
+          "note": "ssd불량 / 초기불량으로 신품 대체 출고 / 셀프로 하고 원격으로 프로그램 설치 지원 예정"
         },
         {
           "time": "09:50",
@@ -181045,11 +181056,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 16,
+        "online": 17,
         "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "10:04"
+      "updatedAt": "10:07"
     }
   },
   "resp": {
@@ -181149,14 +181160,14 @@ window.SLACK_DATA = {
       },
       "1789519054.252619": {
         "post": "1789519054.252619",
-        "lastSeen": 1789520654.948,
+        "lastSeen": 1789520874.712,
         "r": 1,
         "day": "2026-09-16",
         "idx": 4
       },
-      "1789520647.217549": {
-        "post": "1789520647.217549",
-        "lastSeen": 1789520654.948
+      "1789520832.930849": {
+        "post": "1789520832.930849",
+        "lastSeen": 1789520874.712
       }
     },
     "days": {
@@ -237419,7 +237430,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-16 10:04",
+    "at": "2026-09-16 10:08",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
