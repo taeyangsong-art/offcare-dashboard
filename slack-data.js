@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10944,
+  "version": 10945,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -180824,6 +180824,7 @@ window.SLACK_DATA = {
           "김동욱": 1
         },
         "menu": {
+          "심성현": 1,
           "김동욱": 1
         }
       },
@@ -180841,6 +180842,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "10:04",
+          "store": "바이트앤 레스트",
+          "biz": "5438503030",
+          "cat": "menu",
+          "emp": "심성현",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 수정 완료 솔라피 발송"
+        },
         {
           "time": "10:00",
           "store": "피자스쿨공릉점",
@@ -181056,7 +181068,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 17,
+        "online": 18,
         "offline": 3,
         "unknown": 0
       },
@@ -181160,14 +181172,14 @@ window.SLACK_DATA = {
       },
       "1789519054.252619": {
         "post": "1789519054.252619",
-        "lastSeen": 1789520874.712,
+        "lastSeen": 1789521095.099,
         "r": 1,
         "day": "2026-09-16",
         "idx": 4
       },
       "1789520832.930849": {
         "post": "1789520832.930849",
-        "lastSeen": 1789520874.712
+        "lastSeen": 1789521095.099
       }
     },
     "days": {
@@ -237430,7 +237442,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-16 10:08",
+    "at": "2026-09-16 10:11",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
