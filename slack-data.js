@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10940,
+  "version": 10941,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -180811,8 +180811,8 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "서상원": 2,
+          "김현기": 3,
           "고경림": 1,
-          "김현기": 2,
           "김동욱": 4,
           "송태양": 1,
           "김규빈": 1
@@ -180838,6 +180838,17 @@ window.SLACK_DATA = {
           "urgent": true,
           "intake": "online",
           "note": "통화중 / 브이캣 가맹점 자가매출? 이라는데 본인카드 아니라는데 이거 무슨 문구인지 모르겠어요 ㅠㅠ"
+        },
+        {
+          "time": "09:48",
+          "store": "코치 찰리",
+          "biz": "2141424438",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "CPP-3000 / 출력 오류 점검 부탁드립니다. :감사합니다꾸벅:",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트 내의 프린터 설정 빠져있었음 설정 후 정상"
         },
         {
           "time": "09:47",
@@ -180986,7 +180997,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 12,
+        "online": 13,
         "offline": 2,
         "unknown": 0
       },
@@ -181097,17 +181108,10 @@ window.SLACK_DATA = {
       },
       "1789519054.252619": {
         "post": "1789519054.252619",
-        "lastSeen": 1789520181.832,
+        "lastSeen": 1789520360.502,
         "r": 1,
         "day": "2026-09-16",
         "idx": 4
-      },
-      "1789519693.096709": {
-        "post": "1789519693.096709",
-        "lastSeen": 1789520181.832,
-        "r": 1,
-        "day": "2026-09-16",
-        "idx": 7
       }
     },
     "days": {
@@ -237353,14 +237357,15 @@ window.SLACK_DATA = {
             "store": "코치 찰리",
             "biz": "2141424438",
             "who": "김현기",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 9.6
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-16 09:56",
+    "at": "2026-09-16 09:59",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
