@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11053,
+  "version": 11054,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -180834,7 +180834,7 @@ window.SLACK_DATA = {
           "배선유": 1
         },
         "transfer": {
-          "송태양": 2,
+          "송태양": 3,
           "김동욱": 1,
           "김현기": 1
         },
@@ -180851,6 +180851,17 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
+        {
+          "time": "14:26",
+          "store": "페인트 제비스코 충주점",
+          "biz": "3171201588",
+          "handler": "고경림",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
         {
           "time": "13:29",
           "store": "피자스쿨공릉점",
@@ -180874,6 +180885,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "pc에 용량없음 / 메모리비워줬음?"
+        },
+        {
+          "time": "15:05",
+          "store": "멕시코니치킨",
+          "biz": "2031113890",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "9월 16일 오후 3시 30분 / 메뉴복사O / 포프,유프,금전함",
+          "hw": "",
+          "intake": "online",
+          "note": "명변 완료입니다"
         },
         {
           "time": "15:03",
@@ -182735,29 +182757,29 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 144,
+        "online": 146,
         "offline": 25,
         "unknown": 0
       },
-      "updatedAt": "15:20",
+      "updatedAt": "15:29",
       "voc": {
-        "responses": 6,
+        "responses": 8,
         "install": {
           "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 6,
+          "count": 8,
           "low": 0
         },
         "high": {
           "install": 1,
-          "nps": 4
+          "nps": 6
         },
         "npsDist": {
           "7": 1,
           "9": 1,
-          "10": 4
+          "10": 6
         },
         "installDist": {
           "3": 1,
@@ -182768,6 +182790,10 @@ window.SLACK_DATA = {
           "기타": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 2,
+            "low": 0
+          },
           "6개월": {
             "total": 3,
             "low": 0
@@ -182782,6 +182808,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 3,
+            "low": 0
+          },
           "SECTA9": {
             "total": 2,
             "low": 0
@@ -182793,10 +182823,6 @@ window.SLACK_DATA = {
           "KOCES": {
             "total": 2,
             "low": 0
-          },
-          "KIS": {
-            "total": 1,
-            "low": 0
           }
         },
         "reasonCounts": {},
@@ -182804,9 +182830,9 @@ window.SLACK_DATA = {
         "praises": []
       },
       "ob": {
-        "count": 16,
+        "count": 18,
         "byEmp": {
-          "김규빈": 16
+          "김규빈": 18
         },
         "items": [
           {
@@ -182924,7 +182950,7 @@ window.SLACK_DATA = {
           {
             "key": "2026년 9월 16일 오전 7:54:14|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788678074084849#1",
             "handler": "김규빈",
-            "status": "설치보류요청",
+            "status": "1차부재",
             "recvDate": "2026-09-16",
             "planDate": "",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788678074084849"
@@ -182936,6 +182962,22 @@ window.SLACK_DATA = {
             "recvDate": "2026-09-16",
             "planDate": "",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1787734914128289"
+          },
+          {
+            "key": "2026년 9월 16일 오전 11:28:10|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789367824201659#1",
+            "handler": "김규빈",
+            "status": "점주직접접수",
+            "recvDate": "2026-09-16",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789367824201659"
+          },
+          {
+            "key": "2026년 9월 16일 오전 11:24:16|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788339367974269#1",
+            "handler": "김규빈",
+            "status": "점주직접접수",
+            "recvDate": "2026-09-16",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1788339367974269"
           }
         ]
       }
@@ -183005,14 +183047,21 @@ window.SLACK_DATA = {
       },
       "1789538404.448919": {
         "post": "1789538404.448919",
-        "lastSeen": 1789539787.523,
+        "lastSeen": 1789540222.362,
         "r": 1,
         "day": "2026-09-16",
         "idx": 117
       },
       "1789539610.644319": {
         "post": "1789539610.644319",
-        "lastSeen": 1789539787.523
+        "lastSeen": 1789540222.362,
+        "r": 1,
+        "day": "2026-09-16",
+        "idx": 121
+      },
+      "1789538990.987429": {
+        "post": "1789538990.987429",
+        "lastSeen": 1789540222.362
       }
     },
     "days": {
@@ -239186,8 +239235,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-16": {
-        "cnt": 121,
-        "sumMin": 968.0117542266845,
+        "cnt": 122,
+        "sumMin": 974.5833905776341,
         "over": 0,
         "items": [
           {
@@ -240277,31 +240326,39 @@ window.SLACK_DATA = {
             "who": "최민석",
             "cat": "as",
             "dmin": 21.4
+          },
+          {
+            "hm": "15:20",
+            "min": 6.6,
+            "store": "트랜드푸드",
+            "biz": "6972502203",
+            "who": "배선유",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-16 15:23",
+    "at": "2026-09-16 15:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 4114,
-    "named": 807,
+    "named": 809,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 807,
+    "done": 809,
     "byStatus": {
       "일정등록완료": 513,
-      "1차부재": 176,
-      "점주직접접수": 65,
+      "1차부재": 177,
+      "점주직접접수": 67,
       "설치불가": 14,
       "(빈칸)": 6,
       "자가설치": 24,
-      "설치보류요청": 9
+      "설치보류요청": 8
     }
   }
 };
