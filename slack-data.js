@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11054,
+  "version": 11055,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -180809,13 +180809,13 @@ window.SLACK_DATA = {
     "2026-09-16": {
       "counts": {
         "as": {
+          "김현기": 14,
           "서상원": 17,
           "심성현": 21,
           "고경림": 15,
           "송태양": 16,
           "김동욱": 17,
           "배선유": 13,
-          "김현기": 13,
           "김기범": 4,
           "김규빈": 8,
           "최민석": 1
@@ -180834,6 +180834,7 @@ window.SLACK_DATA = {
           "배선유": 1
         },
         "transfer": {
+          "최민석": 1,
           "송태양": 3,
           "김동욱": 1,
           "김현기": 1
@@ -180875,6 +180876,28 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "15:23",
+          "store": "아이리부티크",
+          "biz": "8867500358",
+          "cat": "transfer",
+          "emp": "최민석",
+          "req": "9월 16일 즉시 / 메뉴 복사O / 프론트",
+          "hw": "",
+          "intake": "online",
+          "note": "명의변경 완료 포프 노트북"
+        },
+        {
+          "time": "15:12",
+          "store": "얼굴필라테스 바이 지(by G)",
+          "biz": "1060464009",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "포프(데스크탑) 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "1차부재(통화중) / 매장 내 여러 기기에 프론트가 연결되 어있는것으로 보임. 매장 내 기기들 찾아서 삭제 후 재온보딩 해보기로 함"
+        },
         {
           "time": "15:05",
           "store": "잉글리시 브레인 스튜디오 영어교습소",
@@ -182757,29 +182780,29 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 146,
+        "online": 148,
         "offline": 25,
         "unknown": 0
       },
-      "updatedAt": "15:29",
+      "updatedAt": "15:34",
       "voc": {
-        "responses": 8,
+        "responses": 9,
         "install": {
           "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 8,
+          "count": 9,
           "low": 0
         },
         "high": {
           "install": 1,
-          "nps": 6
+          "nps": 7
         },
         "npsDist": {
           "7": 1,
           "9": 1,
-          "10": 6
+          "10": 7
         },
         "installDist": {
           "3": 1,
@@ -182790,6 +182813,10 @@ window.SLACK_DATA = {
           "기타": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 2,
+            "low": 0
+          },
           "3개월": {
             "total": 2,
             "low": 0
@@ -182801,13 +182828,13 @@ window.SLACK_DATA = {
           "구매설치": {
             "total": 2,
             "low": 0
-          },
-          "12개월": {
-            "total": 1,
-            "low": 0
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 1,
+            "low": 0
+          },
           "KIS": {
             "total": 3,
             "low": 0
@@ -183047,21 +183074,17 @@ window.SLACK_DATA = {
       },
       "1789538404.448919": {
         "post": "1789538404.448919",
-        "lastSeen": 1789540222.362,
+        "lastSeen": 1789540460.455,
         "r": 1,
         "day": "2026-09-16",
         "idx": 117
       },
       "1789539610.644319": {
         "post": "1789539610.644319",
-        "lastSeen": 1789540222.362,
+        "lastSeen": 1789540460.455,
         "r": 1,
         "day": "2026-09-16",
         "idx": 121
-      },
-      "1789538990.987429": {
-        "post": "1789538990.987429",
-        "lastSeen": 1789540222.362
       }
     },
     "days": {
@@ -240340,7 +240363,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-16 15:30",
+    "at": "2026-09-16 15:34",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
