@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10938,
+  "version": 10939,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -180813,12 +180813,15 @@ window.SLACK_DATA = {
           "서상원": 2,
           "고경림": 1,
           "김현기": 2,
+          "김동욱": 4,
           "송태양": 1,
-          "김동욱": 3,
           "김규빈": 1
         },
         "onboarding": {
           "김규빈": 1,
+          "김동욱": 1
+        },
+        "menu": {
           "김동욱": 1
         }
       },
@@ -180859,6 +180862,17 @@ window.SLACK_DATA = {
           "note": "일단 노트북으로 쓰고 있음, 이따 10시에 다시 확인 예정"
         },
         {
+          "time": "09:40",
+          "store": "바이트앤 레스트",
+          "biz": "5438503030",
+          "cat": "menu",
+          "emp": "김동욱",
+          "req": "",
+          "hw": "svKZBPkKFOvbTgr0pC8Xz/view?usp=drivesdk>",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
+        },
+        {
           "time": "09:39",
           "store": "(봉명동)(주) 형과아우",
           "biz": "1398802492",
@@ -180869,6 +180883,17 @@ window.SLACK_DATA = {
           "urgent": true,
           "intake": "online",
           "note": "메인 DB버전과 맞지않음 업데이트"
+        },
+        {
+          "time": "09:38",
+          "store": "유기볼트",
+          "biz": "1410561661",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "• 프론트 단말기 금액입력모드로 사용 중",
+          "hw": "",
+          "intake": "offline",
+          "note": "터프 사용매장으로 터미널에서 금액입력 시 프론트 반응없음. 터프 재온보딩 후 정상 확인"
         },
         {
           "time": "09:33",
@@ -180961,8 +180986,8 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 11,
-        "offline": 1,
+        "online": 12,
+        "offline": 2,
         "unknown": 0
       },
       "updatedAt": "09:50"
@@ -181072,24 +181097,21 @@ window.SLACK_DATA = {
       },
       "1789519054.252619": {
         "post": "1789519054.252619",
-        "lastSeen": 1789519945.869,
+        "lastSeen": 1789520122.302,
         "r": 1,
         "day": "2026-09-16",
         "idx": 4
       },
-      "1789519136.138659": {
-        "post": "1789519136.138659",
-        "lastSeen": 1789519945.869,
-        "r": 1,
-        "day": "2026-09-16",
-        "idx": 5
-      },
       "1789519693.096709": {
         "post": "1789519693.096709",
-        "lastSeen": 1789519945.869,
+        "lastSeen": 1789520122.302,
         "r": 1,
         "day": "2026-09-16",
         "idx": 7
+      },
+      "1789518603.292369": {
+        "post": "1789518603.292369",
+        "lastSeen": 1789520122.302
       }
     },
     "days": {
@@ -237317,7 +237339,8 @@ window.SLACK_DATA = {
             "store": "유기볼트",
             "biz": "1410561661",
             "who": "김동욱",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 15
           },
           {
             "hm": "09:33",
@@ -237341,7 +237364,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-16 09:52",
+    "at": "2026-09-16 09:55",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
