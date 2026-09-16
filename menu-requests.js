@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2083,
- "updatedAt": "2026-09-16 11:35",
+ "version": 2084,
+ "updatedAt": "2026-09-16 11:48",
  "days": 30,
  "items": [
+  {
+   "ts": "1789526864.362279",
+   "date": "2026-09-16",
+   "time": "11:47",
+   "store": "계부자",
+   "biz": "3460603093",
+   "pos": "스파로스포스",
+   "content": "성인평일(중고생포함)\n성인주말공휴일(중고생포함)\n\n메뉴앞에 \"성인\" 추가\n너무 길면 뒤쪽 글씨 삭제",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789526868.022229",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789526864362279"
+  },
   {
    "ts": "1789522108.300109",
    "date": "2026-09-16",
