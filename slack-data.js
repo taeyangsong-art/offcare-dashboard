@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11198,
+  "version": 11199,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -180844,10 +180844,10 @@ window.SLACK_DATA = {
           "김현기": 1
         },
         "menu": {
+          "김동욱": 3,
           "배선유": 6,
           "서상원": 1,
           "심성현": 2,
-          "김동욱": 2,
           "김규빈": 1
         },
         "delivery": {
@@ -180913,6 +180913,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "5분 뒤 재통화 요청"
+        },
+        {
+          "time": "22:30",
+          "store": "북청포차",
+          "biz": "2662202390",
+          "cat": "menu",
+          "emp": "김동욱",
+          "req": "메뉴 등록 요청드립니다 &gt;&gt;",
+          "hw": "",
+          "intake": "offline",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 장사 중에 메뉴 변경 하면 안된다고 하셔서 오전 9시 작업 요청주셨습니다! 장사 중에 메뉴 변경 하면 안된다고 하셔서 오전 9시 작업 요청주셨습니다! / / 주류 후레쉬 5 빨강소주 5 처음처럼 5 새로 5 오미자새로 5 청하 6 별빛청하 6 진로 5 진로골드 5 카스 5 테라 5 한맥 5 진로일품 25 "
         },
         {
           "time": "21:00",
@@ -184027,7 +184038,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 230,
-        "offline": 55,
+        "offline": 56,
         "unknown": 0
       },
       "updatedAt": "22:52",
@@ -242379,7 +242390,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-17 06:00",
+    "at": "2026-09-17 06:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
