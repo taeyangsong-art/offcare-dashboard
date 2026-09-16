@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10932,
+  "version": 10933,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -180809,17 +180809,29 @@ window.SLACK_DATA = {
     },
     "2026-09-16": {
       "counts": {
+        "onboarding": {
+          "김규빈": 1,
+          "김동욱": 1
+        },
         "as": {
           "김현기": 1,
           "김규빈": 1,
           "김동욱": 2
-        },
-        "onboarding": {
-          "김동욱": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:30",
+          "store": "본 광 디테일링",
+          "biz": "8672002485",
+          "cat": "onboarding",
+          "emp": "김규빈",
+          "req": "핸드폰+프론트",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "09:00",
           "store": "에이스한식뷔페",
@@ -180877,11 +180889,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 4,
+        "online": 5,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:33"
+      "updatedAt": "09:37"
     }
   },
   "resp": {
@@ -180988,7 +181000,15 @@ window.SLACK_DATA = {
       },
       "1789518788.342729": {
         "post": "1789518788.342729",
-        "lastSeen": 1789518854.414
+        "lastSeen": 1789519100.202
+      },
+      "1789519054.252619": {
+        "post": "1789519054.252619",
+        "lastSeen": 1789519100.202
+      },
+      "1789518603.292369": {
+        "post": "1789518603.292369",
+        "lastSeen": 1789519100.202
       }
     },
     "days": {
@@ -237207,7 +237227,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-16 09:34",
+    "at": "2026-09-16 09:38",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
