@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2100,
- "updatedAt": "2026-09-16 17:25",
+ "version": 2101,
+ "updatedAt": "2026-09-16 17:31",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "Resized_20260916_164728.jpg.jpeg",
      "fid": "F0C29BEHF0R",
      "from": "댓글",
-     "path": "menu-files/1789546825_815319-0.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -56,13 +55,13 @@ window.MENU_REQUESTS = {
        "name": "적산한판",
        "price": 25000
       }
-     ]
+     ],
+     "path": "menu-files/1789546825_815319-0.jpeg"
     },
     {
      "name": "Resized_20260916_164731.jpg.jpeg",
      "fid": "F0C25F3J26S",
      "from": "댓글",
-     "path": "menu-files/1789546825_815319-1.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -200,13 +199,13 @@ window.MENU_REQUESTS = {
        "name": "크리스피통닭",
        "price": 19000
       }
-     ]
+     ],
+     "path": "menu-files/1789546825_815319-1.jpeg"
     },
     {
      "name": "Resized_20260916_164734.jpg.jpeg",
      "fid": "F0C1S2LHXRV",
      "from": "댓글",
-     "path": "menu-files/1789546825_815319-2.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -314,13 +313,13 @@ window.MENU_REQUESTS = {
        "name": "측석공기밥",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1789546825_815319-2.jpeg"
     },
     {
      "name": "Resized_20260916_164737.jpg.jpeg",
      "fid": "F0C216UGW3V",
      "from": "댓글",
-     "path": "menu-files/1789546825_815319-3.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -493,13 +492,13 @@ window.MENU_REQUESTS = {
        "name": "에이드",
        "price": 3000
       }
-     ]
+     ],
+     "path": "menu-files/1789546825_815319-3.jpeg"
     },
     {
      "name": "Resized_20260916_164739.jpg.jpeg",
      "fid": "F0C1S2LQQR5",
      "from": "댓글",
-     "path": "menu-files/1789546825_815319-4.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -597,13 +596,13 @@ window.MENU_REQUESTS = {
        "name": "쿠보타 만쥬",
        "price": 200000
       }
-     ]
+     ],
+     "path": "menu-files/1789546825_815319-4.jpeg"
     },
     {
      "name": "Resized_20260916_164742.jpg.jpeg",
      "fid": "F0C27B9QASE",
      "from": "댓글",
-     "path": "menu-files/1789546825_815319-5.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -676,7 +675,8 @@ window.MENU_REQUESTS = {
        "name": "맥켈란12y더블캐스크-병",
        "price": 280000
       }
-     ]
+     ],
+     "path": "menu-files/1789546825_815319-5.jpeg"
     },
     {
      "name": "Resized_20260916_164745.jpg.jpeg",
@@ -869,9 +869,12 @@ window.MENU_REQUESTS = {
     }
    ],
    "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1789547025.171349",
+   "replies": [
+    "명선님 문의중 :로딩:",
+    "옆에 무스비는 안하셔도 됩니다"
+   ],
+   "rc": 4,
+   "lr": "1789547470.856999",
    "rfx": 3,
    "status": "wait",
    "handler": null,
