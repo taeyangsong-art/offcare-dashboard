@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10924,
+  "version": 10925,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -180359,7 +180359,7 @@ window.SLACK_DATA = {
           {
             "key": "2026년 9월 15일 오후 12:00:50|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789365504584489#1",
             "handler": "김현기",
-            "status": "토플파미생성",
+            "status": "일정등록완료",
             "recvDate": "2026-09-15",
             "planDate": "2026-09-17",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789365504584489"
@@ -180511,7 +180511,7 @@ window.SLACK_DATA = {
           {
             "key": "2026년 9월 15일 오전 11:57:34|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789286198481589#1",
             "handler": "김현기",
-            "status": "",
+            "status": "점주직접접수",
             "recvDate": "2026-09-15",
             "planDate": "",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789286198481589"
@@ -180927,25 +180927,29 @@ window.SLACK_DATA = {
       },
       "1789516808.240809": {
         "post": "1789516808.240809",
-        "lastSeen": 1789517051.026,
+        "lastSeen": 1789517179.48,
         "r": 1,
         "day": "2026-09-16",
         "idx": 0
       },
       "1789516806.640339": {
         "post": "1789516806.640339",
-        "lastSeen": 1789517051.026
+        "lastSeen": 1789517179.48
       },
       "1789516806.307899": {
         "post": "1789516806.307899",
-        "lastSeen": 1789517051.026
+        "lastSeen": 1789517179.48
       },
       "1789516803.130059": {
         "post": "1789516803.130059",
-        "lastSeen": 1789517051.026,
+        "lastSeen": 1789517179.48,
         "r": 1,
         "day": "2026-09-16",
         "idx": 1
+      },
+      "1789516814.989969": {
+        "post": "1789516814.989969",
+        "lastSeen": 1789517179.48
       }
     },
     "days": {
@@ -237144,7 +237148,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-16 09:04",
+    "at": "2026-09-16 09:06",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
@@ -237156,14 +237160,13 @@ window.SLACK_DATA = {
     "beforeStart": 0,
     "done": 791,
     "byStatus": {
-      "일정등록완료": 504,
+      "일정등록완료": 505,
       "1차부재": 171,
-      "점주직접접수": 63,
+      "점주직접접수": 64,
       "설치불가": 14,
-      "(빈칸)": 6,
+      "(빈칸)": 5,
       "자가설치": 24,
-      "설치보류요청": 8,
-      "토플파미생성": 1
+      "설치보류요청": 8
     }
   }
 };
