@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10933,
+  "version": 10934,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -180809,18 +180809,31 @@ window.SLACK_DATA = {
     },
     "2026-09-16": {
       "counts": {
-        "onboarding": {
-          "김규빈": 1,
-          "김동욱": 1
-        },
         "as": {
+          "서상원": 1,
           "김현기": 1,
           "김규빈": 1,
           "김동욱": 2
+        },
+        "onboarding": {
+          "김규빈": 1,
+          "김동욱": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:39",
+          "store": "(봉명동)(주) 형과아우",
+          "biz": "1398802492",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "포스기/ 메인 포스에서 업데이트 중으로 실행 불가/ 오더 포스에는 연동이 안되는중이라 뜸/ 원격 점검 요청드립니다.",
+          "hw": "",
+          "urgent": true,
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "09:30",
           "store": "본 광 디테일링",
@@ -180830,7 +180843,7 @@ window.SLACK_DATA = {
           "req": "핸드폰+프론트",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "온보딩 및 금액입력모드 활성화 완료"
         },
         {
           "time": "09:00",
@@ -180889,11 +180902,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 5,
+        "online": 6,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:37"
+      "updatedAt": "09:39"
     }
   },
   "resp": {
@@ -181000,15 +181013,18 @@ window.SLACK_DATA = {
       },
       "1789518788.342729": {
         "post": "1789518788.342729",
-        "lastSeen": 1789519100.202
+        "lastSeen": 1789519167.983
       },
       "1789519054.252619": {
         "post": "1789519054.252619",
-        "lastSeen": 1789519100.202
+        "lastSeen": 1789519167.983,
+        "r": 1,
+        "day": "2026-09-16",
+        "idx": 4
       },
-      "1789518603.292369": {
-        "post": "1789518603.292369",
-        "lastSeen": 1789519100.202
+      "1789519136.138659": {
+        "post": "1789519136.138659",
+        "lastSeen": 1789519167.983
       }
     },
     "days": {
@@ -237182,8 +237198,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-16": {
-        "cnt": 4,
-        "sumMin": 30.126639902591705,
+        "cnt": 5,
+        "sumMin": 31.45730458498001,
         "over": 0,
         "items": [
           {
@@ -237221,13 +237237,21 @@ window.SLACK_DATA = {
             "who": "김동욱",
             "cat": "onboarding",
             "dmin": 28.1
+          },
+          {
+            "hm": "09:37",
+            "min": 1.3,
+            "store": "피자스쿨일원점",
+            "biz": "1200925308",
+            "who": "김규빈",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-16 09:38",
+    "at": "2026-09-16 09:39",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
