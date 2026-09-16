@@ -3,10 +3,39 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2074,
- "updatedAt": "2026-09-16 10:22",
+ "version": 2075,
+ "updatedAt": "2026-09-16 10:29",
  "days": 30,
  "items": [
+  {
+   "ts": "1789522108.300109",
+   "date": "2026-09-16",
+   "time": "10:28",
+   "store": "움버거앤윙스 킨텍스점",
+   "biz": "1358560825",
+   "pos": "퍼스트포스",
+   "content": "FD포스 킨텍스매장입니다! 신규 메뉴추가되어서 키오스크, 포스기 세팅부탁드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 1,
+   "att": [
+    {
+     "name": "(키오스크) 움버거앤윙스_미리내 메뉴 셋팅_치킨불고기.xlsx.exs",
+     "fid": "F0C24UX47MY",
+     "from": "원글",
+     "path": "menu-files/1789522108_300109-0.exs",
+     "nj": 1
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789522111.887259",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789522108300109"
+  },
   {
    "ts": "1789521592.259489",
    "date": "2026-09-16",
