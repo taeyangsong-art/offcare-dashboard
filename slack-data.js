@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 10941,
+  "version": 10942,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -180825,7 +180825,19 @@ window.SLACK_DATA = {
           "김동욱": 1
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "09:00",
+          "store": "담소요",
+          "biz": "1091916306",
+          "handler": "김현기",
+          "cat": "transfer",
+          "intake": "online",
+          "reasons": [
+            "1차 부재"
+          ]
+        }
+      ],
       "done": [
         {
           "time": "09:50",
@@ -180997,22 +181009,15 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 13,
+        "online": 14,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:50"
+      "updatedAt": "10:00"
     }
   },
   "resp": {
     "watch": {
-      "1789347600.487889": {
-        "post": "1789347600.487889",
-        "lastSeen": 1789417000.813,
-        "r": 1,
-        "day": "2026-09-14",
-        "idx": 15
-      },
       "1789360133.161679": {
         "post": "1789360133.161679",
         "lastSeen": 1789417000.813
@@ -181108,10 +181113,14 @@ window.SLACK_DATA = {
       },
       "1789519054.252619": {
         "post": "1789519054.252619",
-        "lastSeen": 1789520360.502,
+        "lastSeen": 1789520422.335,
         "r": 1,
         "day": "2026-09-16",
         "idx": 4
+      },
+      "1789520403.554169": {
+        "post": "1789520403.554169",
+        "lastSeen": 1789520422.335
       }
     },
     "days": {
@@ -237365,7 +237374,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-16 09:59",
+    "at": "2026-09-16 10:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
