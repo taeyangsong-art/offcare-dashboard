@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2106,
- "updatedAt": "2026-09-16 18:21",
+ "version": 2107,
+ "updatedAt": "2026-09-16 18:34",
  "days": 30,
  "items": [
   {
@@ -21,12 +21,12 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [
-    "안주 카테고리에 아래 4가지 메뉴 추가 부탁드립니다~!\n• 스낵류 3천원 \n• 스낵류 5천원 \n• 스낵류  1만원 \n• 스낵류  2만원"
+    "안주 카테고리에 아래 4가지 메뉴 추가 부탁드립니다~!\n• 스낵류 3천원 \n• 스낵류 5천원 \n• 스낵류 1만원 \n• 스낵류 2만원"
    ],
-   "rc": 2,
-   "lr": "1789549458.522509",
+   "rc": 3,
+   "lr": "1789551080.706189",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789549420699089"
   },
