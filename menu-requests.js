@@ -3,10 +3,180 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2158,
- "updatedAt": "2026-09-17 17:10",
+ "version": 2159,
+ "updatedAt": "2026-09-17 17:14",
  "days": 30,
  "items": [
+  {
+   "ts": "1789632798.899299",
+   "date": "2026-09-17",
+   "time": "17:13",
+   "store": "시월카페",
+   "biz": "3111593529",
+   "pos": "기타",
+   "content": "등록요청드립니다",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1HnVL-kws-lhzKEroyZ3pKcQLBODPSOiA/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1HnVL-kws-lhzKEroyZ3pKcQLBODPSOiA",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "커피",
+       "name": "아메리카노",
+       "price": 3500
+      },
+      {
+       "category": "커피",
+       "name": "카페라떼",
+       "price": 3800
+      },
+      {
+       "category": "커피",
+       "name": "카라멜마끼아토",
+       "price": 4000
+      },
+      {
+       "category": "커피",
+       "name": "바닐라라떼",
+       "price": 4000
+      },
+      {
+       "category": "커피",
+       "name": "카페모카",
+       "price": 4000
+      },
+      {
+       "category": "커피",
+       "name": "아포가토",
+       "price": 5000
+      },
+      {
+       "category": "라떼",
+       "name": "초코라떼",
+       "price": 3800
+      },
+      {
+       "category": "라떼",
+       "name": "녹차라떼",
+       "price": 3800
+      },
+      {
+       "category": "라떼",
+       "name": "고구마라떼",
+       "price": 4000
+      },
+      {
+       "category": "스무디",
+       "name": "요거트 스무디 (계절과일)",
+       "price": 5000
+      },
+      {
+       "category": "프라프치노",
+       "name": "쿠엔크. 모카. 자바칩",
+       "price": 5000
+      },
+      {
+       "category": "에이드",
+       "name": "복숭아 아이스티",
+       "price": 4000
+      },
+      {
+       "category": "에이드",
+       "name": "레몬",
+       "price": 4000
+      },
+      {
+       "category": "에이드",
+       "name": "자몽",
+       "price": 4000
+      },
+      {
+       "category": "에이드",
+       "name": "패션후르츠",
+       "price": 4000
+      },
+      {
+       "category": "에이드",
+       "name": "청포도",
+       "price": 4000
+      },
+      {
+       "category": "에이드",
+       "name": "블루레몬",
+       "price": 4000
+      },
+      {
+       "category": "에이드",
+       "name": "청귤",
+       "price": 4000
+      },
+      {
+       "category": "과일주스",
+       "name": "계절과일",
+       "price": 5000
+      },
+      {
+       "category": "차",
+       "name": "보성녹차",
+       "price": 4000
+      },
+      {
+       "category": "차",
+       "name": "목련차",
+       "price": 4000
+      },
+      {
+       "category": "차",
+       "name": "페퍼민트",
+       "price": 3500
+      },
+      {
+       "category": "차",
+       "name": "얼그레이",
+       "price": 3500
+      },
+      {
+       "category": "차",
+       "name": "캐모마일",
+       "price": 3500
+      },
+      {
+       "category": "흑당",
+       "name": "달고나 흑당밀크티",
+       "price": 4500
+      },
+      {
+       "category": "흑당",
+       "name": "흑당버블티",
+       "price": 4500
+      },
+      {
+       "category": "빙수",
+       "name": "과일빙수",
+       "price": 12000
+      },
+      {
+       "category": "빙수",
+       "name": "옛날빙수",
+       "price": 9900
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 0,
+   "lr": "",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789632798899299"
+  },
   {
    "ts": "1789631808.504719",
    "date": "2026-09-17",
@@ -871,8 +1041,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1789630695.902789",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789630663510529"
   },
   {
@@ -1146,7 +1316,7 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1789630592.804269",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789630581051909"
   },
