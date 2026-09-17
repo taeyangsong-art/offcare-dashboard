@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2165,
- "updatedAt": "2026-09-17 18:00",
+ "version": 2166,
+ "updatedAt": "2026-09-17 18:04",
  "days": 30,
  "items": [
   {
@@ -805,8 +805,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1789634988.164079",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789634958913609"
   },
   {
@@ -1155,10 +1155,11 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [
-    "[ 사이드 메뉴 ] _ 기존 카테고리에서 메뉴 추가\n• 회덮밥 재료 7,900원\n• 실속회 12,000원\n• 문어숙회 8,900원\n• 소라숙회 8,900원\n&\n\n[ 점심 런치 ] _ 새 카테고리에서 메뉴 추가\n• 초밥 정식 12,000원\n• 회덮밥 12,000원\n• 돈까스 정식 12,000원"
+    "[ 사이드 메뉴 ] _ 기존 카테고리에서 메뉴 추가\n• 회덮밥 재료 7,900원\n• 실속회 12,000원\n• 문어숙회 8,900원\n• 소라숙회 8,900원\n&\n\n[ 점심 런치 ] _ 새 카테고리에서 메뉴 추가\n• 초밥 정식 12,000원\n• 회덮밥 12,000원\n• 돈까스 정식 12,000원",
+    "감사합니다!!"
    ],
-   "rc": 4,
-   "lr": "1789635557.241789",
+   "rc": 5,
+   "lr": "1789635656.942479",
    "rfx": 3,
    "status": "done",
    "handler": "김규빈",
