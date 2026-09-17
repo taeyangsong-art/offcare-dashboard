@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2125,
- "updatedAt": "2026-09-17 10:05",
+ "version": 2126,
+ "updatedAt": "2026-09-17 10:06",
  "days": 30,
  "items": [
   {
@@ -18,11 +18,161 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C1ZPY9NTZ",
+     "from": "댓글",
+     "path": "menu-files/1789607124_726499-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "COFFEE",
+       "name": "아메리카노",
+       "price": 4500
+      },
+      {
+       "category": "COFFEE",
+       "name": "에스프레소",
+       "price": 4500
+      },
+      {
+       "category": "COFFEE",
+       "name": "카페라떼",
+       "price": 5000
+      },
+      {
+       "category": "COFFEE",
+       "name": "바닐라라떼",
+       "price": 5500
+      },
+      {
+       "category": "COFFEE",
+       "name": "돌체라떼",
+       "price": 5500
+      },
+      {
+       "category": "COFFEE",
+       "name": "비반크림라떼",
+       "price": 6500
+      },
+      {
+       "category": "COFFEE",
+       "name": "아인슈페너",
+       "price": 6500
+      },
+      {
+       "category": "COFFEE",
+       "name": "블랙라떼",
+       "price": 6000
+      },
+      {
+       "category": "COFFEE",
+       "name": "샷 추가",
+       "price": 1000
+      },
+      {
+       "category": "COFFEE",
+       "name": "리필",
+       "price": 2000
+      },
+      {
+       "category": "BEVERAGE",
+       "name": "초코라떼",
+       "price": 6000
+      },
+      {
+       "category": "BEVERAGE",
+       "name": "고구마라떼",
+       "price": 6500
+      },
+      {
+       "category": "BEVERAGE",
+       "name": "딸기라떼",
+       "price": 6500
+      },
+      {
+       "category": "BEVERAGE",
+       "name": "녹차라떼",
+       "price": 6000
+      },
+      {
+       "category": "BEVERAGE",
+       "name": "딥블랙초코라떼",
+       "price": 6500
+      },
+      {
+       "category": "TEA",
+       "name": "얼그레이",
+       "price": 5000
+      },
+      {
+       "category": "TEA",
+       "name": "페퍼민트",
+       "price": 5000
+      },
+      {
+       "category": "TEA",
+       "name": "유자차",
+       "price": 5500
+      },
+      {
+       "category": "TEA",
+       "name": "사과유자차",
+       "price": 5500
+      },
+      {
+       "category": "SMOOTHIE",
+       "name": "요거트스무디",
+       "price": 6000
+      },
+      {
+       "category": "SMOOTHIE",
+       "name": "딸기스무디",
+       "price": 6500
+      },
+      {
+       "category": "SMOOTHIE",
+       "name": "블루베리스무디",
+       "price": 6500
+      },
+      {
+       "category": "SMOOTHIE",
+       "name": "망고스무디",
+       "price": 6500
+      },
+      {
+       "category": "ADE",
+       "name": "레몬에이드",
+       "price": 6500
+      },
+      {
+       "category": "ADE",
+       "name": "자몽에이드",
+       "price": 6500
+      },
+      {
+       "category": "ADE",
+       "name": "사과유자에이드",
+       "price": 6500
+      },
+      {
+       "category": "ADE",
+       "name": "체리콕",
+       "price": 6000
+      },
+      {
+       "category": "ADE",
+       "name": "복숭아 아이스티",
+       "price": 5500
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1789607129.422529",
+   "rc": 2,
+   "lr": "1789607133.839929",
    "rfx": 3,
    "status": "wait",
    "handler": null,
