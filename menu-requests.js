@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2122,
- "updatedAt": "2026-09-17 09:21",
+ "version": 2123,
+ "updatedAt": "2026-09-17 09:26",
  "days": 30,
  "items": [
   {
@@ -58004,55 +58004,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787015746329069"
-  },
-  {
-   "ts": "1787012763.079479",
-   "date": "2026-08-18",
-   "time": "09:26",
-   "store": "강창구찹쌀진순대 과천펜타원점",
-   "biz": "6103262196",
-   "pos": "",
-   "content": "메뉴 가격 수정",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "추어탕 가격 ₩11,000 수정"
-   ],
-   "rc": 2,
-   "lr": "1787012769.566369",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787012763079479"
-  },
-  {
-   "ts": "1787012560.535879",
-   "date": "2026-08-18",
-   "time": "09:22",
-   "store": "멕시코 김밥 브리또 화도묵현점",
-   "biz": "6974501110",
-   "pos": "토스포스",
-   "content": "토스포스 설치예정입니다. 메뉴판첨부하니 등록요청합니다.(테이블3, 포장5)",
-   "special": "메뉴판첨부하니 등록요청합니다.",
-   "drive": [
-    "https://drive.google.com/open?id=1y6moNHzlinL9ViLkUsGguEHXDZP2eGpx"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "테이블 3개 생성, 메뉴등록",
-    ":telephone_receiver: 옵션 생성만, 나중에서 설치 후 직접 메뉴에 옵션 넣기로 함"
-   ],
-   "rc": 3,
-   "lr": "1787013465.323629",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787012560535879"
   }
  ],
  "ocr": {
