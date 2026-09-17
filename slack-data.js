@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11213,
+  "version": 11214,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -180823,8 +180823,8 @@ window.SLACK_DATA = {
         "onboarding": {
           "최민석": 8,
           "송태양": 7,
+          "배선유": 5,
           "고경림": 7,
-          "배선유": 4,
           "심성현": 7,
           "김현기": 1,
           "서상원": 3,
@@ -180857,17 +180857,6 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
-        {
-          "time": "18:30",
-          "store": "탐정언니",
-          "biz": "4684300936",
-          "handler": "배선유",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        },
         {
           "time": "17:49",
           "store": "구르미곳간",
@@ -181202,6 +181191,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "포프 온보딩 완료 및 사용방법 익일 재안내 요청으로 익일 오후5시 예약메세지 작성완료"
+        },
+        {
+          "time": "18:30",
+          "store": "탐정언니",
+          "biz": "4684300936",
+          "cat": "onboarding",
+          "emp": "배선유",
+          "req": "포프(pc) 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "10분후 / 1차부재 / 포프(폰) 핫스팟으로 연동"
         },
         {
           "time": "18:27",
@@ -184378,11 +184378,27 @@ window.SLACK_DATA = {
       }
     },
     "2026-09-17": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "송태양": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:07",
+          "store": "베르데 디자인",
+          "biz": "5401502892",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "프론트에서 매장정보일치하지 않는다는 문구 지속노출되어 점검 요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "• 10시 45분 예약 요청으로 예약 완료입니다 10시 45분 예약 요청으로 예약 완료입니다"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
@@ -184542,10 +184558,6 @@ window.SLACK_DATA = {
       "1789547329.617909": {
         "post": "1789547329.617909",
         "lastSeen": 1789589728.057
-      },
-      "1789603623.046279": {
-        "post": "1789603623.046279",
-        "lastSeen": 1789603642.608
       }
     },
     "days": {
@@ -242454,11 +242466,27 @@ window.SLACK_DATA = {
             "dmin": 8.3
           }
         ]
+      },
+      "2026-09-17": {
+        "cnt": 1,
+        "sumMin": 3.3081870158513387,
+        "over": 0,
+        "items": [
+          {
+            "hm": "09:07",
+            "min": 3.3,
+            "store": "베르데 디자인",
+            "biz": "5401502892",
+            "who": "송태양",
+            "cat": "as",
+            "dmin": 3.3
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-17 09:07",
+    "at": "2026-09-17 09:13",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
