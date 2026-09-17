@@ -4093,9 +4093,41 @@ function empHandled(emp, monthKey){
 //   (사용액은 월별 버킷 spentM에 계속 기록해 이력은 남기고, 잔액 계산은 전 기간 합산)
 function curMonthKey(){ return ymd(today()).slice(0,7); }
 function empHandledMonth(emp){ return empHandled(emp, curMonthKey()); }   // 이번 달 처리(참고용 표시)
-function empSpent(emp){ const m=(gs(emp).spentM)||{}; let t=0; for(const k in m) t+=m[k]||0; return t; }   // 전 기간 사용 코인
-function addSpent(emp, delta){ const g=gs(emp); g.spentM=g.spentM||{}; const k=curMonthKey(); g.spentM[k]=(g.spentM[k]||0)+delta; }
-function empCoins(emp){ return Math.floor(empHandled(emp)/GAME_COIN_PER); }        // 누적 획득 코인(전 기간 처리 건수)
+/* ── 🛠 코인 수동 보정 (COIN_FIX) ────────────────────────────────────────────────
+ * 팀 공유 클라우드(GAME_API)가 404 라 '사용' 누계가 각 브라우저 localStorage 에만 남아 있고
+ * 서버에서 읽거나 고칠 수가 없다. 그래서 잔액을 코드에 못 박는다 —
+ * index.html 은 모든 사람이 같은 파일을 받으니 기기·브라우저가 달라도 같은 값이 나온다.
+ *   grant : 보정 시점의 시작 잔액 (이 값이 곧 '지금 보유 코인')
+ *   since : 이 날짜부터의 처리 건수만 새로 적립. 그 전의 처리분·사용분은 전부 무효.
+ * 보정 대상자는 사용액을 spentFix 에 따로 적는다 — spentM 이력은 그대로 남겨,
+ * 클라우드 복구 후 실제 사용 내역과 대조해 정산할 수 있게 한다.
+ * ⚠️ 클라우드가 복구되면 이 표에서 이름을 지우고 실제 spentM 으로 되돌릴 것. */
+const COIN_FIX = {
+  '배선유': { grant: 310, since: '2026-09-18' },   // 2026-09-17 보정 · 그 이전 사용기록 무효
+};
+// 보정 대상의 적립 — since 이후 날짜의 처리 건수만 센다 (empHandled 의 날짜 제한판)
+function empHandledSince(emp, from){
+  let t=0;
+  const days=(window.SLACK_DATA&&window.SLACK_DATA.days)||{};
+  for(const d in days){ if(d<from) continue; const c=days[d].counts||{}; for(const cat in c) t+=c[cat][emp]||0; }
+  for(const cat in COUNTS){ const cc=COUNTS[cat];
+    for(const d in cc){ if(d<from) continue; if(slackHasCount(cat,d)) continue; t+=cc[d][emp]||0; } }
+  return t;
+}
+function empSpent(emp){
+  const g=gs(emp);
+  if(COIN_FIX[emp]) return Math.max(0, g.spentFix||0);   // 보정 후 사용분만 (보정 이전 기록은 무효)
+  const m=g.spentM||{}; let t=0; for(const k in m) t+=m[k]||0; return t;   // 전 기간 사용 코인
+}
+function addSpent(emp, delta){ const g=gs(emp);
+  // 보정 대상은 별도 장부(spentFix)로 잔액을 계산하고, spentM 에는 이력을 계속 남긴다
+  if(COIN_FIX[emp]) g.spentFix=Math.max(0, (g.spentFix||0)+delta);
+  g.spentM=g.spentM||{}; const k=curMonthKey(); g.spentM[k]=(g.spentM[k]||0)+delta; }
+function empCoins(emp){
+  const fx=COIN_FIX[emp];
+  if(fx) return fx.grant + Math.floor(empHandledSince(emp,fx.since)/GAME_COIN_PER);   // 지급액 + 보정 후 처리분
+  return Math.floor(empHandled(emp)/GAME_COIN_PER);   // 누적 획득 코인(전 기간 처리 건수)
+}
 function empAvail(emp){ return Math.max(0, empCoins(emp)-empSpent(emp)); }          // 보유 코인 = 누적 획득 − 누적 사용 (음수 방지)
 function owns(emp,cat,id){ const it=itemById(cat,id); if(it&&it.price===0) return true; return (gs(emp).owned||[]).includes(cat+':'+id); }
 function partE(cat,id){ const it=itemById(cat,id); return it?(it.e||''):''; }
@@ -4253,7 +4285,7 @@ function gameMeInner(emp, eq){ const t=itemById('title',(eq||{}).title);
       ${t?`<div class="gm-title tr-${t.rarity}" style="${titleStyleOf(t)}">[${escapeHtml(t.name)}]</div>`:''}
       <div class="gm-name" style="${nametagStyle(eq)}">${escapeHtml(emp)}</div>
       <div class="gm-coins">🪙 <b>${empAvail(emp)}</b><span>이번 달 코인</span></div>
-      <div class="gm-sub">누적 처리 ${empHandled(emp)}건 · 누적 획득 ${empCoins(emp)}코인 · 사용 ${empSpent(emp)}코인 <span style="color:var(--gray2)">· 이번 달 ${empHandledMonth(emp)}건 · 코인은 이월(초기화 없음)</span></div>
+      <div class="gm-sub">누적 처리 ${empHandled(emp)}건 · 누적 획득 ${empCoins(emp)}코인 · 사용 ${empSpent(emp)}코인 <span style="color:var(--gray2)">· 이번 달 ${empHandledMonth(emp)}건 · 코인은 이월(초기화 없음)</span>${COIN_FIX[emp]?`<span style="color:var(--gray2)"> · 🛠 ${COIN_FIX[emp].grant}코인 보정 지급 (${COIN_FIX[emp].since}부터 재적립)</span>`:''}</div>
     </div>`;
 }
 function previewEq(cat,id){ const emp=gameMe; if(!emp) return; const eq=Object.assign({},(gs(emp).equipped||{})); eq[cat]=id; const box=document.getElementById('gmBox'); if(box){ box.innerHTML=gameMeInner(emp,eq); box.classList.add('previewing'); } }
