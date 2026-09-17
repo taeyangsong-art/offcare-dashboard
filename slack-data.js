@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11218,
+  "version": 11219,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -184380,12 +184380,24 @@ window.SLACK_DATA = {
     "2026-09-17": {
       "counts": {
         "as": {
+          "고경림": 1,
           "심성현": 1,
           "송태양": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:20",
+          "store": "국대찜닭 유천점",
+          "biz": "3670502911",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "포프(컴퓨터) / 상호명 변경해서 최신정보 불러오기 진행했는데 변경되지 않아 도움요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "소복샤브야채찜 / 로그아웃후 재온보딩 정상변경 확인 및 최신정보 확인완료"
+        },
         {
           "time": "09:07",
           "store": "지금놀자",
@@ -184410,7 +184422,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 2,
+        "online": 3,
         "offline": 0,
         "unknown": 0
       },
@@ -184573,7 +184585,10 @@ window.SLACK_DATA = {
       },
       "1789605002.579569": {
         "post": "1789605002.579569",
-        "lastSeen": 1789605031.895
+        "lastSeen": 1789605247.04,
+        "r": 1,
+        "day": "2026-09-17",
+        "idx": 1
       }
     },
     "days": {
@@ -242484,8 +242499,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-17": {
-        "cnt": 1,
-        "sumMin": 3.3081870158513387,
+        "cnt": 2,
+        "sumMin": 5.589652530352275,
         "over": 0,
         "items": [
           {
@@ -242496,13 +242511,21 @@ window.SLACK_DATA = {
             "who": "송태양",
             "cat": "as",
             "dmin": 3.3
+          },
+          {
+            "hm": "09:30",
+            "min": 2.3,
+            "store": "마이요거트립 인덕원점",
+            "biz": "3081553948",
+            "who": "김동욱",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-17 09:30",
+    "at": "2026-09-17 09:34",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
