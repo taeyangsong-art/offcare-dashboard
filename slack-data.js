@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11250,
+  "version": 11251,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -184400,10 +184400,22 @@ window.SLACK_DATA = {
           "송태양": 2
         },
         "menu": {
-          "배선유": 2
+          "배선유": 3
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "10:14",
+          "store": "강창구찹쌀진순대 덕소점",
+          "biz": "2061953558",
+          "handler": "심성현",
+          "cat": "as",
+          "intake": "offline",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "done": [
         {
           "time": "11:06",
@@ -184415,6 +184427,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "<!subteam^S0ANLUVK3PG 님들 안녕하세요. POS8385 프린터 전원불량으로 금일 퀵 발송 신어드민 요청드렸습니다. 확인부탁드리겠습니다! 님들 안녕하세요. / 님 안녕하세요 확인하였습니다 님 안녕하세요 확인하였습니다"
+        },
+        {
+          "time": "11:04",
+          "store": "일마지오 킨텍스점",
+          "biz": "7528502275",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "음료는 불안하니 백업 / 완료"
         },
         {
           "time": "11:00",
@@ -184859,11 +184882,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 35,
-        "offline": 6,
+        "online": 36,
+        "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "11:13",
+      "updatedAt": "11:16",
       "voc": {
         "responses": 1,
         "install": {
@@ -185038,24 +185061,28 @@ window.SLACK_DATA = {
       },
       "1789607682.970599": {
         "post": "1789607682.970599",
-        "lastSeen": 1789611267.642,
+        "lastSeen": 1789611539.635,
         "r": 1,
         "day": "2026-09-17",
         "idx": 17
       },
       "1789609951.613129": {
         "post": "1789609951.613129",
-        "lastSeen": 1789611267.642,
+        "lastSeen": 1789611539.635,
         "r": 1,
         "day": "2026-09-17",
         "idx": 24
       },
       "1789610401.671719": {
         "post": "1789610401.671719",
-        "lastSeen": 1789611267.642,
+        "lastSeen": 1789611539.635,
         "r": 1,
         "day": "2026-09-17",
         "idx": 29
+      },
+      "1789611361.952839": {
+        "post": "1789611361.952839",
+        "lastSeen": 1789611539.635
       }
     },
     "days": {
@@ -243260,7 +243287,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-17 11:14",
+    "at": "2026-09-17 11:19",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
