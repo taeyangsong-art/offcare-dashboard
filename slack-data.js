@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11466,
+  "version": 11467,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -184389,7 +184389,7 @@ window.SLACK_DATA = {
           "송태양": 9
         },
         "menu": {
-          "김동욱": 1,
+          "김동욱": 2,
           "김규빈": 9,
           "배선유": 8,
           "미지정": 1,
@@ -184523,6 +184523,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "1차 통화중 / 현재 매장 아님 프론트 토스포스앱 지속 연결 끊김으로 익일 오후1시 재연락 요청"
+        },
+        {
+          "time": "20:41",
+          "store": "일마지오 킨텍스점",
+          "biz": "7528502275",
+          "cat": "menu",
+          "emp": "김동욱",
+          "req": "",
+          "hw": "5cZkM9x5-bwBy/view?usp=drivesdk>, <https://drive.google.com/",
+          "intake": "online",
+          "note": ""
         },
         {
           "time": "20:22",
@@ -187363,7 +187374,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 227,
+        "online": 228,
         "offline": 41,
         "unknown": 0
       },
@@ -247498,7 +247509,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-18 06:00",
+    "at": "2026-09-18 06:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
