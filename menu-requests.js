@@ -3,10 +3,175 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2123,
- "updatedAt": "2026-09-17 09:26",
+ "version": 2124,
+ "updatedAt": "2026-09-17 09:36",
  "days": 30,
  "items": [
+  {
+   "ts": "1789605335.128719",
+   "date": "2026-09-17",
+   "time": "09:35",
+   "store": "대관령목장",
+   "biz": "1061288350",
+   "pos": "오케이포스",
+   "content": "사진첨부",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1w2IJAWEtJ3ccWHn03w61W6tGjDG3gUIM/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1w2IJAWEtJ3ccWHn03w61W6tGjDG3gUIM",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "A세트",
+       "name": "삼겹살(400g) + 목살(400g) + 항정살(200g) + 껍데기(100g)",
+       "price": 59000
+      },
+      {
+       "category": "B세트",
+       "name": "마늘갈매기살(300g) + 매콤갈매기살(300g) + 소갈비살(200g) + 양념소갈비살(200g) + 홍체",
+       "price": 70000
+      },
+      {
+       "category": "단품",
+       "name": "삼겹살 (300g)",
+       "price": 17000
+      },
+      {
+       "category": "단품",
+       "name": "목살 (300g)",
+       "price": 17000
+      },
+      {
+       "category": "단품",
+       "name": "항정살 (200g)",
+       "price": 17000
+      },
+      {
+       "category": "단품",
+       "name": "껍데기 (300g)",
+       "price": 17000
+      },
+      {
+       "category": "곱창",
+       "name": "홍체막창 (150g)",
+       "price": 16000
+      },
+      {
+       "category": "곱창",
+       "name": "마늘갈매기살 (300g)",
+       "price": 17000
+      },
+      {
+       "category": "곱창",
+       "name": "매콤갈매기살 (300g)",
+       "price": 17000
+      },
+      {
+       "category": "메뉴",
+       "name": "생소갈비살 (200g)",
+       "price": 19000
+      },
+      {
+       "category": "메뉴",
+       "name": "양념소갈비살 (200g)",
+       "price": 19000
+      },
+      {
+       "category": "메뉴",
+       "name": "인장살 (200g)",
+       "price": 27000
+      },
+      {
+       "category": "메뉴",
+       "name": "살치살 (200g)",
+       "price": 27000
+      },
+      {
+       "category": "메뉴",
+       "name": "매운항발 (250g)",
+       "price": 18000
+      },
+      {
+       "category": "메뉴",
+       "name": "한우살 (250g)",
+       "price": 17000
+      },
+      {
+       "category": "메뉴",
+       "name": "수제돼지갈비 (300g)",
+       "price": 17000
+      },
+      {
+       "category": "사이드 & 식사류",
+       "name": "된장찌개",
+       "price": 5000
+      },
+      {
+       "category": "사이드 & 식사류",
+       "name": "순두부찌개",
+       "price": 6000
+      },
+      {
+       "category": "사이드 & 식사류",
+       "name": "계란탕",
+       "price": 6000
+      },
+      {
+       "category": "사이드 & 식사류",
+       "name": "떡라면",
+       "price": 4500
+      },
+      {
+       "category": "사이드 & 식사류",
+       "name": "차돌계티",
+       "price": 4500
+      },
+      {
+       "category": "사이드 & 식사류",
+       "name": "멸치국수",
+       "price": 5000
+      },
+      {
+       "category": "사이드 & 식사류",
+       "name": "비빔국수",
+       "price": 5000
+      },
+      {
+       "category": "사이드 & 식사류",
+       "name": "냉면(물/비빔)",
+       "price": 6000
+      },
+      {
+       "category": "사이드 & 식사류",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "사이드 & 식사류",
+       "name": "버섯+미나리",
+       "price": 3500
+      },
+      {
+       "category": "주류",
+       "name": "소주/맥주/음료",
+       "price": 1500
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 0,
+   "lr": "",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789605335128719"
+  },
   {
    "ts": "1789565439.715769",
    "date": "2026-09-16",
