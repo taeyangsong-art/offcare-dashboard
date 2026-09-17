@@ -402,6 +402,11 @@
   .gm-coins b{font-size:26px; color:#e8a020}
   .gm-coins span{font-size:12px; color:var(--gray); font-weight:600; margin-left:5px}
   .gm-sub{font-size:12.5px; color:var(--gray2); margin-top:4px}
+  /* 초과 사용(사용>획득) 경고 — 예전엔 max(0,…)로 0 으로 깎여 두 달간 아무도 몰랐다 */
+  .gm-over{display:inline-block; font-size:12px; font-weight:700; color:#b91c1c;
+    background:#fee2e2; border-radius:999px; padding:2px 9px; margin-left:8px; vertical-align:middle}
+  .coin-warn{margin-top:8px; background:#fee2e2; color:#991b1b; border-radius:10px;
+    padding:9px 13px; font-size:13px; font-weight:600; line-height:1.55}
   .shop-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(120px,1fr)); gap:12px}
   .shop-item{border:2px solid var(--rar); border-radius:14px; padding:12px 10px; text-align:center; background:var(--surface2); position:relative;
     display:flex; flex-direction:column}
@@ -4141,6 +4146,18 @@ function empCoins(emp){
   return Math.floor(empHandled(emp)/GAME_COIN_PER);   // 누적 획득 코인(전 기간 처리 건수)
 }
 function empAvail(emp){ return Math.max(0, empCoins(emp)-empSpent(emp)); }          // 보유 코인 = 누적 획득 − 누적 사용 (음수 방지)
+/* 초과 사용분 — empAvail 이 0 으로 깎아버리는 '마이너스'를 양수로 꺼낸다.
+ * 2026-09-02 기준 변경으로 5명이 마이너스가 됐는데도 전부 0 으로만 보여서 두 달 가까이 묻혔다.
+ * 다시 어긋나면 본인 카드·상점 상단·구매 실패 안내에서 즉시 드러나게 한다. */
+function empOver(emp){ return Math.max(0, empSpent(emp)-empCoins(emp)); }
+function coinShortMsg(emp){ const o=empOver(emp);
+  if(!o) return `
+원격을 더 처리하면 코인이 쌓여요 (1건 = 1코인)`;
+  return `
+⚠️ 사용(${empSpent(emp)})이 획득(${empCoins(emp)})보다 ${o}코인 많아 잔액이 0 으로 묶여 있습니다.
+일해도 이 차이를 메꿀 때까지 계속 0 이니 담당자에게 알려주세요.`; }
+// 전 직원 초과 현황 — 상점 상단 배너용 (아무도 초과가 아니면 빈 배열)
+function coinOverList(){ return (typeof EMPLOYEES!=='undefined'?EMPLOYEES:[]).map(e=>({emp:e,over:empOver(e)})).filter(x=>x.over>0); }
 function owns(emp,cat,id){ const it=itemById(cat,id); if(it&&it.price===0) return true; return (gs(emp).owned||[]).includes(cat+':'+id); }
 function partE(cat,id){ const it=itemById(cat,id); return it?(it.e||''):''; }
 function titleName(eq){ const t=itemById('title',(eq||{}).title); return t?t.name:''; }
@@ -4296,8 +4313,9 @@ function gameMeInner(emp, eq){ const t=itemById('title',(eq||{}).title);
     <div class="gm-right">
       ${t?`<div class="gm-title tr-${t.rarity}" style="${titleStyleOf(t)}">[${escapeHtml(t.name)}]</div>`:''}
       <div class="gm-name" style="${nametagStyle(eq)}">${escapeHtml(emp)}</div>
-      <div class="gm-coins">🪙 <b>${empAvail(emp)}</b><span>이번 달 코인</span></div>
+      <div class="gm-coins">🪙 <b>${empAvail(emp)}</b><span>보유 코인</span>${empOver(emp)?`<span class="gm-over">⚠️ 초과 사용 −${empOver(emp)}</span>`:''}</div>
       <div class="gm-sub">누적 처리 ${empHandled(emp)}건 · 누적 획득 ${empCoins(emp)}코인 · 사용 ${empSpent(emp)}코인 <span style="color:var(--gray2)">· 이번 달 ${empHandledMonth(emp)}건 · 코인은 이월(초기화 없음)</span>${COIN_FIX[emp]?`<span style="color:var(--gray2)"> · 🛠 ${COIN_FIX[emp].grant}코인 보정 지급 (${COIN_FIX[emp].since}부터 재적립)</span>`:''}</div>
+      ${empOver(emp)?`<div class="coin-warn">⚠️ 사용이 획득보다 <b>${empOver(emp)}코인</b> 많아 잔액이 0 으로 묶여 있습니다. 일해도 이 차이를 메꿀 때까지 계속 0 이니 담당자에게 알려주세요.</div>`:''}
     </div>`;
 }
 function previewEq(cat,id){ const emp=gameMe; if(!emp) return; const eq=Object.assign({},(gs(emp).equipped||{})); eq[cat]=id; const box=document.getElementById('gmBox'); if(box){ box.innerHTML=gameMeInner(emp,eq); box.classList.add('previewing'); } }
@@ -4507,7 +4525,7 @@ async function buyOrEquip(cat,id){
     } else if(hasFreeShop(emp)){   // 👑 곽호영 능력: 무료 획득 (코인 소모·인증 없음)
       g.owned=g.owned||[]; g.owned.push(cat+':'+id);
     } else {  // 일반 코인 아이템
-      if(empAvail(emp)<it.price){ alert('🪙 코인이 부족해요!\n원격을 더 처리하면 코인이 쌓여요 (1건 = 1코인)'); return; }
+      if(empAvail(emp)<it.price){ alert('🪙 코인이 부족해요!\n'+coinShortMsg(emp)); return; }
       if(it.price>0 && !(await requireAuth(emp))) return;   // 유료 구매 → 본인 인증
       addSpent(emp, it.price); g.owned=g.owned||[]; g.owned.push(cat+':'+id);
     }
@@ -4577,7 +4595,8 @@ function renderGame(){
     ${shopSection('pet','🐾 펫',emp)}`;
   }
   document.getElementById("main").innerHTML=`
-    <div class="page-head"><div><h2>🎮 원격 상점</h2><div class="sub">원격 <b>1건 = 🪙1코인</b> · 코인으로 타이틀·네임택·아바타를 획득! · <b>코인은 매달 이월</b>(초기화 없음)${GAME_API?'':' · <b style="color:var(--red)">(현재 이 브라우저에만 저장 — 팀 공유 세팅 필요)</b>'}</div></div>
+    <div class="page-head"><div><h2>🎮 원격 상점</h2><div class="sub">원격 <b>1건 = 🪙1코인</b> · 코인으로 타이틀·네임택·아바타를 획득! · <b>코인은 매달 이월</b>(초기화 없음)${GAME_API?'':' · <b style="color:var(--red)">(현재 이 브라우저에만 저장 — 팀 공유 세팅 필요)</b>'}</div>
+      ${(()=>{const L=coinOverList(); return L.length?`<div class="coin-warn">⚠️ <b>초과 사용 ${L.length}명</b> — ${L.map(x=>escapeHtml(x.emp)+' −'+x.over).join(' · ')}<br>이 분들은 잔액이 0 으로 묶여 일해도 오르지 않습니다. 집계 기준이 바뀌었는지 확인이 필요합니다.</div>`:'';})()}</div>
       <div class="controls"><select class="sel" onchange="setGameMe(this.value)"><option value="">👤 본인 선택</option>${opts}</select><button class="btn" onclick="adminResetPin()" title="관리자: 직원 PIN 초기화">🔧 PIN 초기화</button></div>
     </div>
     ${body}`;
@@ -4728,7 +4747,7 @@ async function castFish(spot){
   const gate=fishGate(emp,f); if(!gate.ok){ alert(gate.msg); return; }
   const cg=fishCastGate(emp,f); if(!cg.ok){ alert(cg.msg); return; }
   const n=castCount(emp), cost=f.cost*n;   // [세월을 낚은] 보유 시 2회 동시 캐스팅 (비용도 2회분)
-  if(empAvail(emp)<cost){ alert('🪙 코인이 부족해요! (캐스트 '+cost+'코인'+(n>1?` · ${n}회분`:'')+')'); return; }
+  if(empAvail(emp)<cost){ alert('🪙 코인이 부족해요! (캐스트 '+cost+'코인'+(n>1?` · ${n}회분`:'')+')'+coinShortMsg(emp)); return; }
   if(!(await requireAuth(emp))) return;   // 코인 소모 → 본인 인증
   addSpent(emp, cost); gs(emp).fishCasts=(gs(emp).fishCasts||0)+n; saveGame();   // 캐스팅 누적(세월을 낚은 타이틀용)
   if((FISH_WAIT[spot]||0)<=0){   // 대기 0(초급) → 던지자마자 바로 결과
