@@ -3,10 +3,285 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2150,
- "updatedAt": "2026-09-17 15:48",
+ "version": 2151,
+ "updatedAt": "2026-09-17 16:37",
  "days": 30,
  "items": [
+  {
+   "ts": "1789630581.051909",
+   "date": "2026-09-17",
+   "time": "16:36",
+   "store": "서민회싸고왕창주는집",
+   "biz": "5050677501",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "Resized_20260917_161531.jpg.jpeg",
+     "fid": "F0C2K7VPH6D",
+     "from": "댓글",
+     "path": "menu-files/1789630581_051909-0.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "모듬회",
+       "name": "모듬회 1.5인",
+       "price": 18000
+      },
+      {
+       "category": "모듬회",
+       "name": "모듬회 2인",
+       "price": 28000
+      },
+      {
+       "category": "모듬회",
+       "name": "모듬회 3인",
+       "price": 42000
+      },
+      {
+       "category": "멸치",
+       "name": "멸치 1.5인",
+       "price": 19000
+      },
+      {
+       "category": "멸치",
+       "name": "멸치 2인",
+       "price": 32000
+      },
+      {
+       "category": "멸치",
+       "name": "멸치 3인",
+       "price": 42000
+      },
+      {
+       "category": "광어",
+       "name": "광어 1.5인",
+       "price": 25000
+      },
+      {
+       "category": "광어",
+       "name": "광어 2인",
+       "price": 36000
+      },
+      {
+       "category": "광어",
+       "name": "광어 3인",
+       "price": 47000
+      },
+      {
+       "category": "갑도다리",
+       "name": "갑도다리 1.5인",
+       "price": 27000
+      },
+      {
+       "category": "갑도다리",
+       "name": "갑도다리 2인",
+       "price": 40000
+      },
+      {
+       "category": "갑도다리",
+       "name": "갑도다리 3인",
+       "price": 51000
+      },
+      {
+       "category": "연어",
+       "name": "연어 1.5인",
+       "price": 25000
+      },
+      {
+       "category": "연어",
+       "name": "연어 2인",
+       "price": 36000
+      },
+      {
+       "category": "연어",
+       "name": "연어 3인",
+       "price": 47000
+      },
+      {
+       "category": "광어+우럭+멸치",
+       "name": "광어+우럭+멸치 1.5인",
+       "price": 25000
+      },
+      {
+       "category": "광어+우럭+멸치",
+       "name": "광어+우럭+멸치 2인",
+       "price": 36000
+      },
+      {
+       "category": "광어+우럭+멸치",
+       "name": "광어+우럭+멸치 3인",
+       "price": 47000
+      },
+      {
+       "category": "갑오징어+모듬회",
+       "name": "갑오징어+모듬회 1.5인",
+       "price": 22000
+      },
+      {
+       "category": "갑오징어+모듬회",
+       "name": "갑오징어+모듬회 2인",
+       "price": 33000
+      },
+      {
+       "category": "갑오징어+모듬회",
+       "name": "갑오징어+모듬회 3인",
+       "price": 44000
+      },
+      {
+       "category": "연어+모듬회",
+       "name": "연어+모듬회 1.5인",
+       "price": 25000
+      },
+      {
+       "category": "연어+모듬회",
+       "name": "연어+모듬회 2인",
+       "price": 36000
+      },
+      {
+       "category": "연어+모듬회",
+       "name": "연어+모듬회 3인",
+       "price": 47000
+      },
+      {
+       "category": "광어+멸치",
+       "name": "광어+멸치 1.5인",
+       "price": 24000
+      },
+      {
+       "category": "광어+멸치",
+       "name": "광어+멸치 2인",
+       "price": 35000
+      },
+      {
+       "category": "광어+멸치",
+       "name": "광어+멸치 3인",
+       "price": 46000
+      },
+      {
+       "category": "갑도다리세꼬시",
+       "name": "갑도다리세꼬시 1.5인",
+       "price": 27000
+      },
+      {
+       "category": "갑도다리세꼬시",
+       "name": "갑도다리세꼬시 2인",
+       "price": 40000
+      },
+      {
+       "category": "갑도다리세꼬시",
+       "name": "갑도다리세꼬시 3인",
+       "price": 51000
+      },
+      {
+       "category": "우럭",
+       "name": "우럭 1.5인",
+       "price": 28000
+      },
+      {
+       "category": "우럭",
+       "name": "우럭 2인",
+       "price": 40000
+      },
+      {
+       "category": "우럭",
+       "name": "우럭 3인",
+       "price": 57000
+      },
+      {
+       "category": "광어+우럭",
+       "name": "광어+우럭 1.5인",
+       "price": 27000
+      },
+      {
+       "category": "광어+우럭",
+       "name": "광어+우럭 2인",
+       "price": 38000
+      },
+      {
+       "category": "광어+우럭",
+       "name": "광어+우럭 3인",
+       "price": 49000
+      },
+      {
+       "category": "해물류",
+       "name": "멍게 1kg",
+       "price": 15000
+      },
+      {
+       "category": "해물류",
+       "name": "해삼 250g",
+       "price": 15000
+      },
+      {
+       "category": "해물류",
+       "name": "산낙지 1마리",
+       "price": 15000
+      }
+     ]
+    },
+    {
+     "name": "Resized_20260917_161551.jpg.jpeg",
+     "fid": "F0C2CFGNS8M",
+     "from": "댓글",
+     "path": "menu-files/1789630581_051909-1.jpeg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "보쌈",
+       "name": "2인 (300g)",
+       "price": 20000
+      },
+      {
+       "category": "보쌈",
+       "name": "3인 (400g)",
+       "price": 28000
+      },
+      {
+       "category": "보쌈",
+       "name": "4인 (500g)",
+       "price": 35000
+      },
+      {
+       "category": "보쌈",
+       "name": "쟁반국수",
+       "price": 5000
+      },
+      {
+       "category": "식사류",
+       "name": "매운탕",
+       "price": 5000
+      },
+      {
+       "category": "식사류",
+       "name": "쟁반국수",
+       "price": 5000
+      },
+      {
+       "category": "식사류",
+       "name": "물회 (밥 미포함)",
+       "price": 13000
+      },
+      {
+       "category": "식사류",
+       "name": "초밥 (12p)",
+       "price": 12000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1789630592.804269",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789630581051909"
+  },
   {
    "ts": "1789627536.489469",
    "date": "2026-09-17",
