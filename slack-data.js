@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11263,
+  "version": 11264,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -184357,6 +184357,10 @@ window.SLACK_DATA = {
     },
     "2026-09-17": {
       "counts": {
+        "onboarding": {
+          "심성현": 1,
+          "송태양": 2
+        },
         "as": {
           "심성현": 9,
           "고경림": 8,
@@ -184371,9 +184375,6 @@ window.SLACK_DATA = {
         "extern": {
           "김동욱": 1,
           "서상원": 1
-        },
-        "onboarding": {
-          "송태양": 2
         },
         "transfer": {
           "송태양": 3
@@ -184399,6 +184400,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "12:00",
+          "store": "엔느(ENNE)",
+          "biz": "4854401451",
+          "cat": "onboarding",
+          "emp": "심성현",
+          "req": "핸드폰+프론트 온보딩.",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 사용 방법 전달 완료"
+        },
         {
           "time": "11:54",
           "store": "울산종합철강 주식회사",
@@ -184997,7 +185009,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 47,
+        "online": 48,
         "offline": 8,
         "unknown": 0
       },
@@ -185169,21 +185181,21 @@ window.SLACK_DATA = {
       },
       "1789609951.613129": {
         "post": "1789609951.613129",
-        "lastSeen": 1789614213.109,
+        "lastSeen": 1789614380.089,
         "r": 1,
         "day": "2026-09-17",
         "idx": 24
       },
       "1789610401.671719": {
         "post": "1789610401.671719",
-        "lastSeen": 1789614213.109,
+        "lastSeen": 1789614380.089,
         "r": 1,
         "day": "2026-09-17",
         "idx": 29
       },
       "1789614034.694439": {
         "post": "1789614034.694439",
-        "lastSeen": 1789614213.109
+        "lastSeen": 1789614380.089
       }
     },
     "days": {
@@ -243398,7 +243410,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-17 12:03",
+    "at": "2026-09-17 12:06",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
