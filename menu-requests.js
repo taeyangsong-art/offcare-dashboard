@@ -3,10 +3,372 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2145,
- "updatedAt": "2026-09-17 15:14",
+ "version": 2146,
+ "updatedAt": "2026-09-17 15:33",
  "days": 30,
  "items": [
+  {
+   "ts": "1789626771.761299",
+   "date": "2026-09-17",
+   "time": "15:32",
+   "store": "호미김밥",
+   "biz": "1983201063",
+   "pos": "",
+   "content": "메뉴 등록 요청 >>",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C2LFX1HE0",
+     "from": "댓글",
+     "path": "menu-files/1789626771_761299-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "김밥류",
+       "name": "호미김밥",
+       "price": 4000
+      },
+      {
+       "category": "김밥류",
+       "name": "치즈김밥",
+       "price": 4500
+      },
+      {
+       "category": "김밥류",
+       "name": "묵은지김밥",
+       "price": 5000
+      },
+      {
+       "category": "김밥류",
+       "name": "계란김밥",
+       "price": 5000
+      },
+      {
+       "category": "김밥류",
+       "name": "매콤어묵김밥",
+       "price": 5000
+      },
+      {
+       "category": "김밥류",
+       "name": "참치김밥",
+       "price": 5000
+      },
+      {
+       "category": "김밥류",
+       "name": "고추참치김밥",
+       "price": 5500
+      },
+      {
+       "category": "김밥류",
+       "name": "크레미김밥",
+       "price": 5500
+      },
+      {
+       "category": "김밥류",
+       "name": "새우김밥",
+       "price": 5500
+      },
+      {
+       "category": "김밥류",
+       "name": "묵은지참치김밥",
+       "price": 6000
+      },
+      {
+       "category": "라면",
+       "name": "라면",
+       "price": 4000
+      },
+      {
+       "category": "라면",
+       "name": "치즈라면",
+       "price": 4500
+      },
+      {
+       "category": "수제튀김류",
+       "name": "고추튀김",
+       "price": 2000
+      },
+      {
+       "category": "수제튀김류",
+       "name": "야채튀김",
+       "price": 1300
+      },
+      {
+       "category": "수제튀김류",
+       "name": "오징어튀김",
+       "price": 1000
+      },
+      {
+       "category": "수제튀김류",
+       "name": "고구마튀김",
+       "price": 900
+      },
+      {
+       "category": "수제튀김류",
+       "name": "김말이튀김",
+       "price": 900
+      },
+      {
+       "category": "수제튀김류",
+       "name": "새우튀김",
+       "price": 900
+      },
+      {
+       "category": "수제튀김류",
+       "name": "계란튀김",
+       "price": 900
+      },
+      {
+       "category": "세트메뉴",
+       "name": "세트메뉴 (튀김+순대+오뎅+떡볶이)",
+       "price": 23000
+      },
+      {
+       "category": "세트메뉴",
+       "name": "모듬튀김",
+       "price": 11000
+      },
+      {
+       "category": "떡볶이",
+       "name": "떡볶이",
+       "price": 4500
+      },
+      {
+       "category": "떡볶이",
+       "name": "치즈떡볶이",
+       "price": 7000
+      },
+      {
+       "category": "떡볶이",
+       "name": "오뎅(4개)",
+       "price": 4000
+      },
+      {
+       "category": "떡볶이",
+       "name": "순대",
+       "price": 5500
+      },
+      {
+       "category": "신메뉴",
+       "name": "오징어 탕탕이 범벅",
+       "price": 5000
+      },
+      {
+       "category": "신메뉴",
+       "name": "떡튀순 범벅",
+       "price": 7000
+      },
+      {
+       "category": "",
+       "name": "콜라 500ml",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "콜라 1.25L",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "스프라이트 500ml",
+       "price": 2000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1789626780.517939",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789626771761299"
+  },
+  {
+   "ts": "1789626727.419779",
+   "date": "2026-09-17",
+   "time": "15:32",
+   "store": "회전",
+   "biz": "6164501289",
+   "pos": "퍼스트포스",
+   "content": "메뉴",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "KakaoTalk_20260917_152647325.jpg",
+     "fid": "F0C2ET9LM8W",
+     "from": "댓글",
+     "path": "menu-files/1789626727_419779-0.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "세트메뉴",
+       "name": "2인세트",
+       "price": 43000
+      },
+      {
+       "category": "세트메뉴",
+       "name": "4인세트",
+       "price": 86000
+      },
+      {
+       "category": "사시미",
+       "name": "모듬사시미 중",
+       "price": 30000
+      },
+      {
+       "category": "사시미",
+       "name": "모듬사시미 대",
+       "price": 42000
+      },
+      {
+       "category": "사시미",
+       "name": "연어사시미 중",
+       "price": 28000
+      },
+      {
+       "category": "사시미",
+       "name": "연어사시미 대",
+       "price": 40000
+      },
+      {
+       "category": "보쌈",
+       "name": "항정살 보쌈 중",
+       "price": 28000
+      },
+      {
+       "category": "보쌈",
+       "name": "항정살 보쌈 대",
+       "price": 40000
+      },
+      {
+       "category": "구이·마끼류",
+       "name": "김치전",
+       "price": 14000
+      },
+      {
+       "category": "구이·마끼류",
+       "name": "부추전",
+       "price": 14000
+      },
+      {
+       "category": "구이·마끼류",
+       "name": "감자전",
+       "price": 15000
+      },
+      {
+       "category": "구이·마끼류",
+       "name": "돈테끼",
+       "price": 18000
+      },
+      {
+       "category": "구이·마끼류",
+       "name": "후토마끼",
+       "price": 15000
+      },
+      {
+       "category": "구이·마끼류",
+       "name": "아보카도 마끼",
+       "price": 14000
+      },
+      {
+       "category": "탕",
+       "name": "나가사키 짬뽕나베",
+       "price": 16000
+      },
+      {
+       "category": "탕",
+       "name": "오뎅나베",
+       "price": 16000
+      },
+      {
+       "category": "탕",
+       "name": "꽃게탕",
+       "price": 16000
+      },
+      {
+       "category": "사이드",
+       "name": "수제 왕새우튀김",
+       "price": 8000
+      },
+      {
+       "category": "사이드",
+       "name": "고로케",
+       "price": 6000
+      },
+      {
+       "category": "사이드",
+       "name": "타.우.단",
+       "price": 6000
+      },
+      {
+       "category": "사이드",
+       "name": "추억의 도시락",
+       "price": 5000
+      },
+      {
+       "category": "사이드",
+       "name": "아이스크림 토스트",
+       "price": 6000
+      },
+      {
+       "category": "사이드",
+       "name": "설.토",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "소주",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "맥주",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "세하",
+       "price": 7000
+      },
+      {
+       "category": "주류",
+       "name": "청하",
+       "price": 8000
+      },
+      {
+       "category": "주류",
+       "name": "화요하이볼",
+       "price": 8000
+      },
+      {
+       "category": "주류",
+       "name": "산토리하이볼",
+       "price": 6000
+      },
+      {
+       "category": "주류",
+       "name": "음료",
+       "price": 2000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1789626747.399479",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789626727419779"
+  },
   {
    "ts": "1789623418.140949",
    "date": "2026-09-17",
