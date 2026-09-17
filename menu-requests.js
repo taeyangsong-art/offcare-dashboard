@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2129,
- "updatedAt": "2026-09-17 10:43",
+ "version": 2130,
+ "updatedAt": "2026-09-17 11:05",
  "days": 30,
  "items": [
+  {
+   "ts": "1789610678.062739",
+   "date": "2026-09-17",
+   "time": "11:04",
+   "store": "일마지오 킨텍스점",
+   "biz": "7528502275",
+   "pos": "퍼스트포스",
+   "content": "메뉴 삭제신청\n\n피자메뉴에\n2인피맥세트,포테이토피자 삭제\n\n파스타 메뉴에\n일맥세트 삭제\n\n음료(캔,병) 메뉴에 생맥주 삭제\n\n시즌음료에\n딸기말차,레몬말차,치즈폼음료,컵빙수 삭제",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 0,
+   "lr": "",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789610678062739"
+  },
   {
    "ts": "1789607124.726499",
    "date": "2026-09-17",
