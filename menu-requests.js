@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2146,
- "updatedAt": "2026-09-17 15:33",
+ "version": 2147,
+ "updatedAt": "2026-09-17 15:37",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C2LFX1HE0",
      "from": "댓글",
-     "path": "menu-files/1789626771_761299-0.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -176,13 +175,16 @@ window.MENU_REQUESTS = {
        "name": "스프라이트 500ml",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1789626771_761299-0.png"
     }
    ],
    "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1789626780.517939",
+   "replies": [
+    "오징어 탕탕이 범벅은 메뉴 등록 안하셔도 된다고 함"
+   ],
+   "rc": 3,
+   "lr": "1789626819.827399",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -365,8 +367,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1789626747.399479",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789626727419779"
   },
   {
