@@ -3,10 +3,284 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2151,
- "updatedAt": "2026-09-17 16:37",
+ "version": 2152,
+ "updatedAt": "2026-09-17 16:42",
  "days": 30,
  "items": [
+  {
+   "ts": "1789630663.510529",
+   "date": "2026-09-17",
+   "time": "16:37",
+   "store": "동양",
+   "biz": "1130859161",
+   "pos": "",
+   "content": "신규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxN18xNjI3Mj",
+     "fid": "F0C3BLPUP3J",
+     "from": "댓글",
+     "path": "menu-files/1789630663_510529-0.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "닭/오리류",
+       "name": "한방닭백숙",
+       "price": 65000
+      },
+      {
+       "category": "닭/오리류",
+       "name": "옻닭백숙",
+       "price": 70000
+      },
+      {
+       "category": "닭/오리류",
+       "name": "참게백숙",
+       "price": 75000
+      },
+      {
+       "category": "닭/오리류",
+       "name": "옻참게백숙",
+       "price": 75000
+      },
+      {
+       "category": "닭/오리류",
+       "name": "한방삼계탕",
+       "price": 16000
+      },
+      {
+       "category": "닭/오리류",
+       "name": "능이백숙",
+       "price": 75000
+      },
+      {
+       "category": "닭/오리류",
+       "name": "능이오리백숙",
+       "price": 75000
+      },
+      {
+       "category": "닭/오리류",
+       "name": "능이추가1만",
+       "price": 10000
+      },
+      {
+       "category": "닭/오리류",
+       "name": "닭볶음탕.토종",
+       "price": 65000
+      },
+      {
+       "category": "닭/오리류",
+       "name": "능이삼계탕★",
+       "price": 19000
+      },
+      {
+       "category": "닭/오리류",
+       "name": "한방오리백숙",
+       "price": 65000
+      },
+      {
+       "category": "닭/오리류",
+       "name": "옻오리백숙",
+       "price": 70000
+      },
+      {
+       "category": "닭/오리류",
+       "name": "참게오리백숙",
+       "price": 75000
+      },
+      {
+       "category": "닭/오리류",
+       "name": "옻참게오리백숙",
+       "price": 75000
+      },
+      {
+       "category": "닭/오리류",
+       "name": "소주/맥주",
+       "price": 5000
+      },
+      {
+       "category": "닭/오리류",
+       "name": "오리볶음탕",
+       "price": 65000
+      },
+      {
+       "category": "닭/오리류",
+       "name": "닭/오리 75반",
+       "price": 38000
+      },
+      {
+       "category": "닭/오리류",
+       "name": "닭/오리 65 반",
+       "price": 33000
+      },
+      {
+       "category": "닭/오리류",
+       "name": "능이만두",
+       "price": 7000
+      },
+      {
+       "category": "닭/오리류",
+       "name": "능이추가3천",
+       "price": 3000
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxN18xNjI3Mz",
+     "fid": "F0C3BLPK0PJ",
+     "from": "댓글",
+     "path": "menu-files/1789630663_510529-1.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "흑염소(호주)/주류",
+       "name": "염소수육(1인분)",
+       "price": 30000
+      },
+      {
+       "category": "흑염소(호주)/주류",
+       "name": "염소무침(1인분)",
+       "price": 27000
+      },
+      {
+       "category": "흑염소(호주)/주류",
+       "name": "염소전골(1인분)",
+       "price": 27000
+      },
+      {
+       "category": "흑염소(호주)/주류",
+       "name": "야채추가",
+       "price": 2000
+      },
+      {
+       "category": "흑염소(호주)/주류",
+       "name": "염소탕(보통)",
+       "price": 15000
+      },
+      {
+       "category": "흑염소(호주)/주류",
+       "name": "염소탕",
+       "price": 20000
+      },
+      {
+       "category": "흑염소(호주)/주류",
+       "name": "염소탕",
+       "price": 50000
+      },
+      {
+       "category": "흑염소(호주)/주류",
+       "name": "공기",
+       "price": 1000
+      },
+      {
+       "category": "흑염소(호주)/주류",
+       "name": "볶음밥",
+       "price": 3000
+      },
+      {
+       "category": "흑염소(호주)/주류",
+       "name": "염소탕(특)★",
+       "price": 18000
+      },
+      {
+       "category": "흑염소(호주)/주류",
+       "name": "무알콜 맥주",
+       "price": 2000
+      },
+      {
+       "category": "흑염소(호주)/주류",
+       "name": "복분자",
+       "price": 14000
+      },
+      {
+       "category": "흑염소(호주)/주류",
+       "name": "청하",
+       "price": 6000
+      },
+      {
+       "category": "흑염소(호주)/주류",
+       "name": "음료",
+       "price": 2000
+      },
+      {
+       "category": "흑염소(호주)/주류",
+       "name": "소주/맥주",
+       "price": 5000
+      },
+      {
+       "category": "흑염소(호주)/주류",
+       "name": "백세주",
+       "price": 8000
+      },
+      {
+       "category": "흑염소(호주)/주류",
+       "name": "산사춘",
+       "price": 8000
+      },
+      {
+       "category": "흑염소(호주)/주류",
+       "name": "막걸리",
+       "price": 4000
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxN18xNjI4ND",
+     "fid": "F0C2FBS8L22",
+     "from": "댓글",
+     "path": "menu-files/1789630663_510529-2.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "시즌메뉴",
+       "name": "염소한마리",
+       "price": 1200000
+      },
+      {
+       "category": "시즌메뉴",
+       "name": "기타",
+       "price": 10000
+      },
+      {
+       "category": "시즌메뉴",
+       "name": "과메기",
+       "price": 30000
+      },
+      {
+       "category": "시즌메뉴",
+       "name": "취",
+       "price": 60000
+      },
+      {
+       "category": "시즌메뉴",
+       "name": "닭개장",
+       "price": 10000
+      },
+      {
+       "category": "시즌메뉴",
+       "name": "삼겹살",
+       "price": 5000
+      },
+      {
+       "category": "시즌메뉴",
+       "name": "옻삼계탕",
+       "price": 17000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1789630695.902789",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789630663510529"
+  },
   {
    "ts": "1789630581.051909",
    "date": "2026-09-17",
