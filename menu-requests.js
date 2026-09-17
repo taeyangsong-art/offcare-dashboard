@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2148,
- "updatedAt": "2026-09-17 15:42",
+ "version": 2149,
+ "updatedAt": "2026-09-17 15:43",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxN18xNDUwMD",
      "fid": "F0C2GQE4MMG",
      "from": "원글",
-     "path": "menu-files/1789627200_240759-0.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -91,13 +90,13 @@ window.MENU_REQUESTS = {
        "name": "환타",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1789627200_240759-0.jpeg"
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxN18xNDQ5NT",
      "fid": "F0C3B86QL9W",
      "from": "원글",
-     "path": "menu-files/1789627200_240759-1.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -180,13 +179,13 @@ window.MENU_REQUESTS = {
        "name": "차돌로스",
        "price": 40000
       }
-     ]
+     ],
+     "path": "menu-files/1789627200_240759-1.jpeg"
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxN18xNDQ5NT",
      "fid": "F0C3B86HH8Q",
      "from": "원글",
-     "path": "menu-files/1789627200_240759-2.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -309,15 +308,16 @@ window.MENU_REQUESTS = {
        "name": "묶음밥",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1789627200_240759-2.jpeg"
     },
     {
      "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxN18xNDQ5ND",
      "fid": "F0C2LH8CM1A",
      "from": "원글",
-     "path": "menu-files/1789627200_240759-3.jpeg",
      "kind": "pos_screen",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1789627200_240759-3.jpeg"
     }
    ],
    "datt": [],
