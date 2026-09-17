@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2120,
- "updatedAt": "2026-09-17 09:00",
+ "version": 2121,
+ "updatedAt": "2026-09-17 09:07",
  "days": 30,
  "items": [
   {
@@ -58602,30 +58602,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787012478576339"
-  },
-  {
-   "ts": "1787011343.497909",
-   "date": "2026-08-18",
-   "time": "09:02",
-   "store": "강창구 찹쌀진순대 광장점",
-   "biz": "2198509446",
-   "pos": "",
-   "content": "과자 카테고리 생성 및 메뉴 추가",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "과자\n황금 고구마칩 ₩ 3,900\n찹쌀누룽지 ₩ 3,900\n21곡두부과자 ₩ 3,000\n누룽지스낵 ₩ 2,000\n현미쌀과자 ₩ 1,000\n꿀약과 ₩ 500",
-    "제가할게유"
-   ],
-   "rc": 4,
-   "lr": "1787011418.865569",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787011343497909"
   }
  ],
  "ocr": {
