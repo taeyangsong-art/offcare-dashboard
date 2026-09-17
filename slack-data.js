@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11214,
+  "version": 11215,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -184380,11 +184380,23 @@ window.SLACK_DATA = {
     "2026-09-17": {
       "counts": {
         "as": {
+          "심성현": 1,
           "송태양": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:07",
+          "store": "지금놀자",
+          "biz": "8820103686",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "slk-ts200 프린터 출력 시, 출력이 되지 않으신다고 하여 점검 요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "용지 롤러 사이에 넣어 장착 상태 정상 장착 방법 안내드렸습니다."
+        },
         {
           "time": "09:07",
           "store": "베르데 디자인",
@@ -184398,7 +184410,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
+        "online": 2,
         "offline": 0,
         "unknown": 0
       },
@@ -242486,7 +242498,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-17 09:13",
+    "at": "2026-09-17 09:14",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
