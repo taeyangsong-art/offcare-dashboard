@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11260,
+  "version": 11261,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -184357,10 +184357,14 @@ window.SLACK_DATA = {
     },
     "2026-09-17": {
       "counts": {
+        "extern": {
+          "김동욱": 1,
+          "서상원": 1
+        },
         "as": {
+          "고경림": 8,
           "배선유": 6,
           "송태양": 7,
-          "고경림": 7,
           "심성현": 8,
           "김동욱": 6,
           "서상원": 2,
@@ -184370,9 +184374,6 @@ window.SLACK_DATA = {
         },
         "onboarding": {
           "송태양": 2
-        },
-        "extern": {
-          "서상원": 1
         },
         "transfer": {
           "송태양": 2
@@ -184386,6 +184387,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:47",
+          "store": "카페 곧, 감",
+          "biz": "2112912107",
+          "cat": "extern",
+          "emp": "김동욱",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "11:37",
+          "store": "피그미엘",
+          "biz": "3651102949",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "포프(포스기) 사용 매장으로, 주방에 있는 무프(W)에서 출력되지 않으신다고 하여 점검 요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "무선프린터에 ip는 심어져있으나, wifi 연결이 안되는것으로 확인 • ts400w 전원버튼이 지속적으로 반짝거림 (해당증상은 wifi 미연결상태로 확인) • 매장와이파이는 정상작동확인 • ab케이블 준비후 재연락요청 (드라이버로 wifi 제설정필요함) ts400w 전원버튼이 지속적으로 반짝거림 (해당증상은 wifi 미연결상태로 확인) 매장와이파이는 정상작"
+        },
         {
           "time": "11:31",
           "store": "카페 쉼결",
@@ -184940,11 +184963,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 42,
+        "online": 44,
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "11:47",
+      "updatedAt": "11:54",
       "voc": {
         "responses": 1,
         "install": {
@@ -185119,14 +185142,14 @@ window.SLACK_DATA = {
       },
       "1789609951.613129": {
         "post": "1789609951.613129",
-        "lastSeen": 1789613300.675,
+        "lastSeen": 1789613722.375,
         "r": 1,
         "day": "2026-09-17",
         "idx": 24
       },
       "1789610401.671719": {
         "post": "1789610401.671719",
-        "lastSeen": 1789613300.675,
+        "lastSeen": 1789613722.375,
         "r": 1,
         "day": "2026-09-17",
         "idx": 29
@@ -243344,7 +243367,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-17 11:48",
+    "at": "2026-09-17 11:55",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
