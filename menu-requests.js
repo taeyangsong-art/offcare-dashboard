@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2149,
- "updatedAt": "2026-09-17 15:43",
+ "version": 2150,
+ "updatedAt": "2026-09-17 15:48",
  "days": 30,
  "items": [
+  {
+   "ts": "1789627536.489469",
+   "date": "2026-09-17",
+   "time": "15:45",
+   "store": "러셀 커피&브런치",
+   "biz": "7236300919",
+   "pos": "토스포스",
+   "content": "없음",
+   "special": "기존 토스에 테스트로 등록해 놓은 아메리카노 메뉴 1개 삭제 후, 첨부한 엑셀 파일 메뉴로 대치하여 등록 부탁드립니다.",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 0,
+   "lr": "",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789627536489469"
+  },
   {
    "ts": "1789627200.240759",
    "date": "2026-09-17",
