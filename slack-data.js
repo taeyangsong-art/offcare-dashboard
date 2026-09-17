@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11253,
+  "version": 11254,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -180858,17 +180858,6 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
-          "time": "16:16",
-          "store": "네일 미 래쉬",
-          "biz": "4370603083",
-          "handler": "고경림",
-          "cat": "as",
-          "intake": "online",
-          "reasons": [
-            "1차 부재"
-          ]
-        },
-        {
           "time": "13:29",
           "store": "피자스쿨공릉점",
           "biz": "2170550063",
@@ -184026,7 +184015,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 229,
+        "online": 228,
         "offline": 56,
         "unknown": 0
       },
@@ -184922,7 +184911,7 @@ window.SLACK_DATA = {
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "11:27",
+      "updatedAt": "11:30",
       "voc": {
         "responses": 1,
         "install": {
@@ -185097,31 +185086,35 @@ window.SLACK_DATA = {
       },
       "1789607682.970599": {
         "post": "1789607682.970599",
-        "lastSeen": 1789612106.251,
+        "lastSeen": 1789612222.701,
         "r": 1,
         "day": "2026-09-17",
         "idx": 17
       },
       "1789609951.613129": {
         "post": "1789609951.613129",
-        "lastSeen": 1789612106.251,
+        "lastSeen": 1789612222.701,
         "r": 1,
         "day": "2026-09-17",
         "idx": 24
       },
       "1789610401.671719": {
         "post": "1789610401.671719",
-        "lastSeen": 1789612106.251,
+        "lastSeen": 1789612222.701,
         "r": 1,
         "day": "2026-09-17",
         "idx": 29
       },
       "1789611361.952839": {
         "post": "1789611361.952839",
-        "lastSeen": 1789612106.251,
+        "lastSeen": 1789612222.701,
         "r": 1,
         "day": "2026-09-17",
         "idx": 32
+      },
+      "1789612200.896009": {
+        "post": "1789612200.896009",
+        "lastSeen": 1789612222.701
       }
     },
     "days": {
@@ -243334,7 +243327,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-17 11:28",
+    "at": "2026-09-17 11:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
