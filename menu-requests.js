@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2135,
- "updatedAt": "2026-09-17 11:38",
+ "version": 2136,
+ "updatedAt": "2026-09-17 12:29",
  "days": 30,
  "items": [
+  {
+   "ts": "1789615690.317039",
+   "date": "2026-09-17",
+   "time": "12:28",
+   "store": "차오름 김밥&누들",
+   "biz": "4701202893",
+   "pos": "",
+   "content": "하이오더 인입 // 선불테이블 7개 생성 부탁 드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789615694.187829",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "김현기",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789615690317039"
+  },
   {
    "ts": "1789610678.062739",
    "date": "2026-09-17",
