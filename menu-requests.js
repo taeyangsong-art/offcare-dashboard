@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2132,
- "updatedAt": "2026-09-17 11:11",
+ "version": 2133,
+ "updatedAt": "2026-09-17 11:15",
  "days": 30,
  "items": [
   {
@@ -24,8 +24,8 @@ window.MENU_REQUESTS = {
    "rc": 0,
    "lr": "",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789610678062739"
   },
   {
@@ -195,8 +195,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1789607133.839929",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789607124726499"
   },
   {
@@ -212,7 +212,394 @@ window.MENU_REQUESTS = {
     "https://drive.google.com/file/d/1w2IJAWEtJ3ccWHn03w61W6tGjDG3gUIM/view?usp=drivesdk"
    ],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C298S7N03",
+     "from": "댓글",
+     "path": "menu-files/1789605335_128719-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "무한리필",
+       "name": "돼지 무한",
+       "price": 15900
+      },
+      {
+       "category": "무한리필",
+       "name": "돼지(7세~초등)",
+       "price": 10900
+      },
+      {
+       "category": "무한리필",
+       "name": "돼지(5세~6세)",
+       "price": 6900
+      },
+      {
+       "category": "무한리필",
+       "name": "소 무한",
+       "price": 27900
+      },
+      {
+       "category": "무한리필",
+       "name": "소(7세~초등학생)",
+       "price": 17900
+      },
+      {
+       "category": "무한리필",
+       "name": "소(5세~6세)",
+       "price": 10900
+      },
+      {
+       "category": "무한리필",
+       "name": "소한마리",
+       "price": 33000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C204FNN31",
+     "from": "댓글",
+     "path": "menu-files/1789605335_128719-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류및음료",
+       "name": "소주",
+       "price": 5000
+      },
+      {
+       "category": "주류및음료",
+       "name": "한라산",
+       "price": 6000
+      },
+      {
+       "category": "주류및음료",
+       "name": "테라",
+       "price": 5500
+      },
+      {
+       "category": "주류및음료",
+       "name": "새로살구",
+       "price": 5000
+      },
+      {
+       "category": "주류및음료",
+       "name": "제로맥주",
+       "price": 3500
+      },
+      {
+       "category": "주류및음료",
+       "name": "클라우드",
+       "price": 5500
+      },
+      {
+       "category": "주류및음료",
+       "name": "칭타오",
+       "price": 6000
+      },
+      {
+       "category": "주류및음료",
+       "name": "화요25°",
+       "price": 25000
+      },
+      {
+       "category": "주류및음료",
+       "name": "화요41°",
+       "price": 40000
+      },
+      {
+       "category": "주류및음료",
+       "name": "일품진로",
+       "price": 25000
+      },
+      {
+       "category": "주류및음료",
+       "name": "매화수",
+       "price": 5000
+      },
+      {
+       "category": "주류및음료",
+       "name": "청하",
+       "price": 6000
+      },
+      {
+       "category": "주류및음료",
+       "name": "막걸리",
+       "price": 5000
+      },
+      {
+       "category": "주류및음료",
+       "name": "토닉워터",
+       "price": 2000
+      },
+      {
+       "category": "주류및음료",
+       "name": "반입주(소)",
+       "price": 10000
+      },
+      {
+       "category": "주류및음료",
+       "name": "반입주(대)",
+       "price": 20000
+      },
+      {
+       "category": "주류및음료",
+       "name": "콜라",
+       "price": 2000
+      },
+      {
+       "category": "주류및음료",
+       "name": "사이다",
+       "price": 2000
+      },
+      {
+       "category": "주류및음료",
+       "name": "환타",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C204G08VD",
+     "from": "댓글",
+     "path": "menu-files/1789605335_128719-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "정육식당메뉴",
+       "name": "삼겹살",
+       "price": 6900
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "생목살",
+       "price": 6900
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "생등심",
+       "price": 15000
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "꽃등심",
+       "price": 18000
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "돼지갈비",
+       "price": 6900
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "배발이껍데기",
+       "price": 5000
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "한우육사시미",
+       "price": 20000
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "차돌박이",
+       "price": 9900
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "한우/육회",
+       "price": 15000
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "가브리살",
+       "price": 6900
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "꼬들살",
+       "price": 6900
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "천겹살",
+       "price": 6900
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "뽈살",
+       "price": 6900
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "생갈매기살",
+       "price": 6900
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "돼지한마리",
+       "price": 18900
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "돼지특수부위",
+       "price": 18900
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "물냉면",
+       "price": 5000
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "비빔냉면",
+       "price": 5000
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "라면",
+       "price": 4000
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "육회양념",
+       "price": 3000
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "1인 상차림비",
+       "price": 2500
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "차돌된장찌개",
+       "price": 5000
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "김치찌개",
+       "price": 5000
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "계란찜",
+       "price": 5000
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "육개장+가마솥밥",
+       "price": 9000
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "코다리+가마솥",
+       "price": 10000
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "가마솥밥",
+       "price": 2000
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "새송이추가",
+       "price": 0
+      },
+      {
+       "category": "정육식당메뉴",
+       "name": "육회비빔밥",
+       "price": 12000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C2FC4G458",
+     "from": "댓글",
+     "path": "menu-files/1789605335_128719-3.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "황제 고기메뉴",
+       "name": "소갈비살(500g)",
+       "price": 299000
+      },
+      {
+       "category": "황제 고기메뉴",
+       "name": "부채살(500g)",
+       "price": 29900
+      },
+      {
+       "category": "황제 고기메뉴",
+       "name": "살치살(300g)",
+       "price": 31900
+      },
+      {
+       "category": "황제 고기메뉴",
+       "name": "안창살(300g)",
+       "price": 31900
+      },
+      {
+       "category": "황제 고기메뉴",
+       "name": "진꽃살(300g)",
+       "price": 34900
+      },
+      {
+       "category": "황제 고기메뉴",
+       "name": "소갈비살(250g)",
+       "price": 15000
+      },
+      {
+       "category": "황제 고기메뉴",
+       "name": "부채살(250g)",
+       "price": 15000
+      },
+      {
+       "category": "황제 고기메뉴",
+       "name": "살치살(150g)",
+       "price": 16000
+      },
+      {
+       "category": "황제 고기메뉴",
+       "name": "안창살((150g)",
+       "price": 16000
+      },
+      {
+       "category": "황제 고기메뉴",
+       "name": "진꽃살(150g)",
+       "price": 17500
+      },
+      {
+       "category": "황제 고기메뉴",
+       "name": "형님세트",
+       "price": 62900
+      },
+      {
+       "category": "황제 고기메뉴",
+       "name": "아우님세트",
+       "price": 48900
+      },
+      {
+       "category": "황제 고기메뉴",
+       "name": "커플A세트",
+       "price": 35900
+      },
+      {
+       "category": "황제 고기메뉴",
+       "name": "커플B세트",
+       "price": 37900
+      }
+     ]
+    }
+   ],
    "datt": [
     {
      "id": "1w2IJAWEtJ3ccWHn03w61W6tGjDG3gUIM",
@@ -359,10 +746,11 @@ window.MENU_REQUESTS = {
    "replies": [
     "keicc237005 / [S08815]",
     "기본 메뉴 두고 2p에 신규생성",
-    ":telephone_receiver: 기본 메뉴 모두 삭제"
+    ":telephone_receiver: 기본 메뉴 모두 삭제",
+    "기존 메뉴 백업"
    ],
-   "rc": 3,
-   "lr": "1789611036.951659",
+   "rc": 4,
+   "lr": "1789611137.907469",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
@@ -58320,27 +58708,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787020642866509"
-  },
-  {
-   "ts": "1787019258.634589",
-   "date": "2026-08-18",
-   "time": "11:14",
-   "store": "강창구 찹쌀진순대 광장점",
-   "biz": "2198509446",
-   "pos": "",
-   "content": "메뉴 프린터 설정",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787019261.875609",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787019258634589"
   }
  ],
  "ocr": {
