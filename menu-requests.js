@@ -3,10 +3,473 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2147,
- "updatedAt": "2026-09-17 15:37",
+ "version": 2148,
+ "updatedAt": "2026-09-17 15:42",
  "days": 30,
  "items": [
+  {
+   "ts": "1789627200.240759",
+   "date": "2026-09-17",
+   "time": "15:40",
+   "store": "네모오징어 서초법원점",
+   "biz": "6203601141",
+   "pos": "토스포스",
+   "content": "해당 매장 테이블세팅 및 메뉴 등록 부탁드립니다.\n프로그램 : 토스포스",
+   "special": "",
+   "drive": [],
+   "files": 4,
+   "att": [
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxN18xNDUwMD",
+     "fid": "F0C2GQE4MMG",
+     "from": "원글",
+     "path": "menu-files/1789627200_240759-0.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류",
+       "name": "참이슬",
+       "price": 5500
+      },
+      {
+       "category": "주류",
+       "name": "처음처럼",
+       "price": 5500
+      },
+      {
+       "category": "주류",
+       "name": "청하",
+       "price": 6500
+      },
+      {
+       "category": "주류",
+       "name": "새로",
+       "price": 6000
+      },
+      {
+       "category": "주류",
+       "name": "진로",
+       "price": 5500
+      },
+      {
+       "category": "주류",
+       "name": "막걸리",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "지평 막걸리",
+       "price": 6000
+      },
+      {
+       "category": "주류",
+       "name": "복분자",
+       "price": 20000
+      },
+      {
+       "category": "주류",
+       "name": "카스",
+       "price": 5500
+      },
+      {
+       "category": "주류",
+       "name": "테라",
+       "price": 5500
+      },
+      {
+       "category": "주류",
+       "name": "콜라",
+       "price": 2000
+      },
+      {
+       "category": "주류",
+       "name": "사이다",
+       "price": 2000
+      },
+      {
+       "category": "주류",
+       "name": "환타",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxN18xNDQ5NT",
+     "fid": "F0C3B86QL9W",
+     "from": "원글",
+     "path": "menu-files/1789627200_240759-1.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "일품요리/세트",
+       "name": "만족세트",
+       "price": 112000
+      },
+      {
+       "category": "일품요리/세트",
+       "name": "행복세트",
+       "price": 122000
+      },
+      {
+       "category": "일품요리/세트",
+       "name": "갑명란불고기",
+       "price": 38000
+      },
+      {
+       "category": "일품요리/세트",
+       "name": "갑오징어물고기",
+       "price": 35000
+      },
+      {
+       "category": "일품요리/세트",
+       "name": "오삼불고기",
+       "price": 30000
+      },
+      {
+       "category": "일품요리/세트",
+       "name": "초무침",
+       "price": 30000
+      },
+      {
+       "category": "일품요리/세트",
+       "name": "연포탕",
+       "price": 33000
+      },
+      {
+       "category": "일품요리/세트",
+       "name": "갑오징어전골(일품)",
+       "price": 36000
+      },
+      {
+       "category": "일품요리/세트",
+       "name": "오징어전골",
+       "price": 33000
+      },
+      {
+       "category": "일품요리/세트",
+       "name": "갑차돌물고기",
+       "price": 40000
+      },
+      {
+       "category": "일품요리/세트",
+       "name": "갑삼물고기",
+       "price": 35000
+      },
+      {
+       "category": "일품요리/세트",
+       "name": "오징어불고기",
+       "price": 13000
+      },
+      {
+       "category": "일품요리/세트",
+       "name": "갑삼불고기(1인)",
+       "price": 15000
+      },
+      {
+       "category": "일품요리/세트",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "일품요리/세트",
+       "name": "볶음밥",
+       "price": 2000
+      },
+      {
+       "category": "일품요리/세트",
+       "name": "차돌로스",
+       "price": 40000
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxN18xNDQ5NT",
+     "fid": "F0C3B86HH8Q",
+     "from": "원글",
+     "path": "menu-files/1789627200_240759-2.jpeg",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "메뉴/튀김",
+       "name": "갑오징백반",
+       "price": 13000
+      },
+      {
+       "category": "메뉴/튀김",
+       "name": "갑상백반",
+       "price": 13000
+      },
+      {
+       "category": "메뉴/튀김",
+       "name": "오삼백반",
+       "price": 11000
+      },
+      {
+       "category": "메뉴/튀김",
+       "name": "갑차돌백반",
+       "price": 13000
+      },
+      {
+       "category": "메뉴/튀김",
+       "name": "삼겹살백반",
+       "price": 10000
+      },
+      {
+       "category": "메뉴/튀김",
+       "name": "오징어백반",
+       "price": 11000
+      },
+      {
+       "category": "메뉴/튀김",
+       "name": "오징어튀김",
+       "price": 15000
+      },
+      {
+       "category": "메뉴/튀김",
+       "name": "갑전골백반",
+       "price": 13000
+      },
+      {
+       "category": "메뉴/튀김",
+       "name": "오징어전골백반",
+       "price": 12000
+      },
+      {
+       "category": "메뉴/튀김",
+       "name": "반반튀김",
+       "price": 15000
+      },
+      {
+       "category": "메뉴/튀김",
+       "name": "가리게살튀김",
+       "price": 15000
+      },
+      {
+       "category": "메뉴/튀김",
+       "name": "가오튀김",
+       "price": 15000
+      },
+      {
+       "category": "메뉴/튀김",
+       "name": "새우튀김",
+       "price": 15000
+      },
+      {
+       "category": "메뉴/튀김",
+       "name": "갑오징어튀김",
+       "price": 17000
+      },
+      {
+       "category": "메뉴/튀김",
+       "name": "가리비살추가",
+       "price": 16000
+      },
+      {
+       "category": "메뉴/튀김",
+       "name": "명란추가",
+       "price": 16000
+      },
+      {
+       "category": "메뉴/튀김",
+       "name": "삼겹살추가",
+       "price": 13000
+      },
+      {
+       "category": "메뉴/튀김",
+       "name": "차돌박이추가",
+       "price": 15000
+      },
+      {
+       "category": "메뉴/튀김",
+       "name": "소면사리",
+       "price": 2000
+      },
+      {
+       "category": "메뉴/튀김",
+       "name": "떡사리",
+       "price": 2000
+      },
+      {
+       "category": "메뉴/튀김",
+       "name": "치즈",
+       "price": 4000
+      },
+      {
+       "category": "메뉴/튀김",
+       "name": "백김치",
+       "price": 10000
+      },
+      {
+       "category": "메뉴/튀김",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "메뉴/튀김",
+       "name": "묶음밥",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8yMDI2MDkxN18xNDQ5ND",
+     "fid": "F0C2LH8CM1A",
+     "from": "원글",
+     "path": "menu-files/1789627200_240759-3.jpeg",
+     "kind": "pos_screen",
+     "menu": []
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789627204.448879",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789627200240759"
+  },
+  {
+   "ts": "1789627170.094269",
+   "date": "2026-09-17",
+   "time": "15:39",
+   "store": "삼송 고기다",
+   "biz": "1026300897",
+   "pos": "",
+   "content": "실규 설치 예정 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "=_UTF-8_B_UmVzaXplZF8xNzg5NjIyNjMyMDA2Ln",
+     "fid": "F0C2ALJTJCT",
+     "from": "댓글",
+     "path": "menu-files/1789627170_094269-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "돼지양념구이 200g",
+       "price": 16000
+      },
+      {
+       "category": "",
+       "name": "갈비살 200g",
+       "price": 23000
+      },
+      {
+       "category": "",
+       "name": "실속 400g",
+       "price": 45000
+      },
+      {
+       "category": "",
+       "name": "대용량 600g",
+       "price": 67000
+      },
+      {
+       "category": "",
+       "name": "통양념 갈비살 200g",
+       "price": 23000
+      },
+      {
+       "category": "",
+       "name": "실속 400g",
+       "price": 45000
+      },
+      {
+       "category": "",
+       "name": "대용량 600g",
+       "price": 67000
+      },
+      {
+       "category": "",
+       "name": "이동갈비 3대 230g",
+       "price": 33000
+      },
+      {
+       "category": "주류·음료",
+       "name": "소주",
+       "price": 4000
+      },
+      {
+       "category": "주류·음료",
+       "name": "맥주",
+       "price": 4000
+      },
+      {
+       "category": "주류·음료",
+       "name": "막걸리",
+       "price": 4000
+      },
+      {
+       "category": "주류·음료",
+       "name": "청하",
+       "price": 6000
+      },
+      {
+       "category": "주류·음료",
+       "name": "복분자",
+       "price": 15000
+      },
+      {
+       "category": "주류·음료",
+       "name": "음료수",
+       "price": 2000
+      },
+      {
+       "category": "식사류",
+       "name": "옛날불고기 300g",
+       "price": 16000
+      },
+      {
+       "category": "식사류",
+       "name": "육회비빔밥",
+       "price": 10000
+      },
+      {
+       "category": "식사류",
+       "name": "된장찌개",
+       "price": 9000
+      },
+      {
+       "category": "식사류",
+       "name": "국수 냉/온",
+       "price": 8000
+      },
+      {
+       "category": "곁들임·후식",
+       "name": "한우육회 150g",
+       "price": 24000
+      },
+      {
+       "category": "곁들임·후식",
+       "name": "후식국수 냉/온",
+       "price": 3000
+      },
+      {
+       "category": "곁들임·후식",
+       "name": "계란찜",
+       "price": 5000
+      },
+      {
+       "category": "곁들임·후식",
+       "name": "공기밥",
+       "price": 1000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1789627188.304709",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789627170094269"
+  },
   {
    "ts": "1789626771.761299",
    "date": "2026-09-17",
@@ -186,8 +649,8 @@ window.MENU_REQUESTS = {
    "rc": 3,
    "lr": "1789626819.827399",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789626771761299"
   },
   {
@@ -206,7 +669,6 @@ window.MENU_REQUESTS = {
      "name": "KakaoTalk_20260917_152647325.jpg",
      "fid": "F0C2ET9LM8W",
      "from": "댓글",
-     "path": "menu-files/1789626727_419779-0.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -359,13 +821,14 @@ window.MENU_REQUESTS = {
        "name": "음료",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1789626727_419779-0.jpg"
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1789626747.399479",
+   "rc": 3,
+   "lr": "1789627137.113439",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
@@ -58484,154 +58947,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787039560532559"
-  },
-  {
-   "ts": "1787035273.429669",
-   "date": "2026-08-18",
-   "time": "15:41",
-   "store": "루엘에스테틱",
-   "biz": "2940203964",
-   "pos": "",
-   "content": "하기 카테고리/메뉴 등록 요청 드립니다.\n\n*[카테고리]*\n• 페이스케어\n• 바디케어\n• 오픈 이벤트\n• 멤버십 프로그램\n*[상품]*\n• 스레드 첨부 이미지 참고",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "i_f4c92fc063ea.png",
-     "fid": "F0BR0GQ7W0L",
-     "from": "댓글",
-     "path": "menu-files/1787035273_429669-0.png",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "FACE CARE",
-       "name": "수분 진정 케어",
-       "price": 80000
-      },
-      {
-       "category": "FACE CARE",
-       "name": "브라이트닝 케어",
-       "price": 80000
-      },
-      {
-       "category": "FACE CARE",
-       "name": "붉은기 진정 케어",
-       "price": 80000
-      },
-      {
-       "category": "FACE CARE",
-       "name": "페이스 밸런스 케어",
-       "price": 150000
-      },
-      {
-       "category": "FACE CARE",
-       "name": "윤곽 타이트닝 케어",
-       "price": 120000
-      }
-     ]
-    },
-    {
-     "name": "i_21b9b74128b6.png",
-     "fid": "F0BQFF7U1ST",
-     "from": "댓글",
-     "path": "menu-files/1787035273_429669-1.png",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "BODY CARE",
-       "name": "프리미엄 바디 디자인",
-       "price": 160000
-      },
-      {
-       "category": "BODY CARE",
-       "name": "힙업 S라인 케어",
-       "price": 90000
-      },
-      {
-       "category": "BODY CARE",
-       "name": "복부 슬림 케어",
-       "price": 90000
-      },
-      {
-       "category": "BODY CARE",
-       "name": "다리 라인 케어",
-       "price": 90000
-      },
-      {
-       "category": "BODY CARE",
-       "name": "등 라인 케어",
-       "price": 80000
-      },
-      {
-       "category": "BODY CARE",
-       "name": "팔 라인 케어",
-       "price": 70000
-      }
-     ]
-    },
-    {
-     "name": "i_2da1a225aa9b.png",
-     "fid": "F0BQUTGBBTQ",
-     "from": "댓글",
-     "path": "menu-files/1787035273_429669-2.png",
-     "kind": "other",
-     "menu": []
-    },
-    {
-     "name": "i_6a91f0d0453d.png",
-     "fid": "F0BQFFE206B",
-     "from": "댓글",
-     "path": "menu-files/1787035273_429669-3.png",
-     "kind": "other",
-     "menu": []
-    },
-    {
-     "name": "i_9da42053e36c.png",
-     "fid": "F0BR0H1TZ9A",
-     "from": "댓글",
-     "path": "menu-files/1787035273_429669-4.png",
-     "kind": "other",
-     "menu": []
-    },
-    {
-     "name": "i_83e519d7cbca.png",
-     "fid": "F0BQQKH6867",
-     "from": "댓글",
-     "path": "menu-files/1787035273_429669-5.png",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "LUEL MEMBERSHIP",
-       "name": "프리미엄 맴버십",
-       "price": 3000000
-      },
-      {
-       "category": "LUEL MEMBERSHIP",
-       "name": "VIP 맴버십",
-       "price": 2000000
-      },
-      {
-       "category": "LUEL MEMBERSHIP",
-       "name": "베이직 맴버십",
-       "price": 1000000
-      }
-     ]
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "페이스케어",
-    "바디케어",
-    "오픈 이벤트",
-    "멤버십 프로그램"
-   ],
-   "rc": 5,
-   "lr": "1787035434.983989",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787035273429669"
   }
  ],
  "ocr": {
