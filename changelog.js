@@ -1,1 +1,1 @@
-window.CHANGELOG = [{"d":"2026-09-16","k":"imp","t":"집계: 원격OOO 이모지를 완료 → 착수 표시로 재해석"}];
+window.CHANGELOG = [{"d":"2026-09-17","k":"imp","t":"코인: 배선유 310코인 보정 지급 (COIN_FIX)"}];
