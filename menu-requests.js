@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2144,
- "updatedAt": "2026-09-17 14:45",
+ "version": 2145,
+ "updatedAt": "2026-09-17 15:14",
  "days": 30,
  "items": [
   {
@@ -58268,31 +58268,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787035273429669"
-  },
-  {
-   "ts": "1787033400.407119",
-   "date": "2026-08-18",
-   "time": "15:10",
-   "store": "플라워비다",
-   "biz": "2321601932",
-   "pos": "퍼스트포스",
-   "content": "'프리저브드' 메뉴 50,000원, 70,000원 면세로 등록 부탁 드립니다. 이전에 꽃다발에 추가해주신 상품도 면세로 수정 원하십니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "대표님이랑 말이 안통해요.... :냥냥단_눈물:  프리저브드란 메뉴가 혹시 기존에는 카테고리로 들어가있었나욤..?",
-    "헉 혹시 통화 드린건가요?",
-    "아하, 감사합니당!! 채팅으로 인입됐는데 이전 내역에도 이번에도 계속 헷갈리게 말씀하셔소,,, :루피눈물: 확인 감사드려용!"
-   ],
-   "rc": 8,
-   "lr": "1787034048.308019",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787033400407119"
   }
  ],
  "ocr": {
