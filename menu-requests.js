@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2216,
- "updatedAt": "2026-09-18 15:55",
+ "version": 2217,
+ "updatedAt": "2026-09-18 16:00",
  "days": 30,
  "items": [
   {
@@ -20,9 +20,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1789714442.841159",
+   "replies": [
+    "메,테 완료"
+   ],
+   "rc": 2,
+   "lr": "1789714829.913209",
    "rfx": 3,
    "status": "done",
    "handler": "서상원",
@@ -336,8 +338,8 @@ window.MENU_REQUESTS = {
    "rc": 3,
    "lr": "1789712715.901279",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789712625619189"
   },
   {
@@ -354,11 +356,11 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1789714445.500149",
+   "rc": 3,
+   "lr": "1789714551.839209",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789712077245919"
   },
   {
