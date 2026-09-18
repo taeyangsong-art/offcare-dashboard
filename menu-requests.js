@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2177,
- "updatedAt": "2026-09-18 10:04",
+ "version": 2178,
+ "updatedAt": "2026-09-18 10:11",
  "days": 30,
  "items": [
   {
@@ -18,15 +18,1045 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "1.png",
+     "fid": "F0C2A0F4K7H",
+     "from": "댓글",
+     "path": "menu-files/1789693130_903929-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "플레인 요아(240g)",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "플레인 요아(480g)",
+       "price": 10500
+      },
+      {
+       "category": "",
+       "name": "저당복숭아요아",
+       "price": 6500
+      },
+      {
+       "category": "",
+       "name": "저당 플레인(240g)",
+       "price": 6500
+      },
+      {
+       "category": "",
+       "name": "저당 플레인(480g)",
+       "price": 11000
+      },
+      {
+       "category": "",
+       "name": "저당 초코(240g)",
+       "price": 6500
+      },
+      {
+       "category": "",
+       "name": "저당 밀크(240g)",
+       "price": 6500
+      },
+      {
+       "category": "",
+       "name": "저당 말차(240g)",
+       "price": 6500
+      },
+      {
+       "category": "",
+       "name": "저당블루베리(240g)",
+       "price": 6500
+      },
+      {
+       "category": "",
+       "name": "저당딸기(240g)",
+       "price": 6500
+      },
+      {
+       "category": "",
+       "name": "복숭아 요아(240g)",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "딸기 요아(240g)",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "생바나나 요아(240g",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "망고 요아(240g)",
+       "price": 6000
+      }
+     ]
+    },
+    {
+     "name": "2.png",
+     "fid": "F0C2PCTFF1U",
+     "from": "댓글",
+     "path": "menu-files/1789693130_903929-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "저당[SET]",
+       "name": "저당초코렛240g",
+       "price": 8000
+      },
+      {
+       "category": "저당[SET]",
+       "name": "저당아사이볼240g",
+       "price": 10000
+      },
+      {
+       "category": "저당[SET]",
+       "name": "딸기두바이 요거트아이스",
+       "price": 16000
+      },
+      {
+       "category": "저당[SET]",
+       "name": "아미아미 PICK",
+       "price": 14000
+      },
+      {
+       "category": "저당[SET]",
+       "name": "저당 벌집꿀허니넛 트림",
+       "price": 12000
+      },
+      {
+       "category": "저당[SET]",
+       "name": "저당 리얼초콜릿 트림",
+       "price": 12000
+      },
+      {
+       "category": "저당[SET]",
+       "name": "저당 망고비치 트림",
+       "price": 12000
+      },
+      {
+       "category": "저당[SET]",
+       "name": "저당 딸기치즈 트림",
+       "price": 12500
+      },
+      {
+       "category": "저당[SET]",
+       "name": "저당 오렌지자몽 트림",
+       "price": 13000
+      },
+      {
+       "category": "저당[SET]",
+       "name": "저당 연유꿀베리 트림",
+       "price": 13500
+      },
+      {
+       "category": "저당[SET]",
+       "name": "저당 연유꿀자몽 트림",
+       "price": 13500
+      }
+     ]
+    },
+    {
+     "name": "3.png",
+     "fid": "F0C2V1A2J2G",
+     "from": "댓글",
+     "path": "menu-files/1789693130_903929-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "다양한요아[SET]",
+       "name": "딸기초코트립(딸기)",
+       "price": 12000
+      },
+      {
+       "category": "다양한요아[SET]",
+       "name": "저당 딸기초코(딸기)",
+       "price": 12500
+      },
+      {
+       "category": "다양한요아[SET]",
+       "name": "저당 딸기바나나(딸기)",
+       "price": 13500
+      },
+      {
+       "category": "다양한요아[SET]",
+       "name": "저당딸기두바이(딸기)",
+       "price": 16000
+      },
+      {
+       "category": "다양한요아[SET]",
+       "name": "저당블루베리링(블루)",
+       "price": 11000
+      },
+      {
+       "category": "다양한요아[SET]",
+       "name": "저당블루베리치즈(블루)",
+       "price": 12500
+      },
+      {
+       "category": "다양한요아[SET]",
+       "name": "딸기바나나트립(바나나)",
+       "price": 11500
+      },
+      {
+       "category": "다양한요아[SET]",
+       "name": "딸초바트립(바나나)",
+       "price": 13000
+      },
+      {
+       "category": "다양한요아[SET]",
+       "name": "복숭아썸머트립(복숭아)",
+       "price": 12500
+      },
+      {
+       "category": "다양한요아[SET]",
+       "name": "키위망고트립(망고)",
+       "price": 12500
+      },
+      {
+       "category": "다양한요아[SET]",
+       "name": "딸기망고트립(망고)",
+       "price": 12500
+      }
+     ]
+    },
+    {
+     "name": "4.png",
+     "fid": "F0C2K4WK8AX",
+     "from": "댓글",
+     "path": "menu-files/1789693130_903929-3.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "저당[SET]",
+       "name": "저당밀크 초코쉘",
+       "price": 8000
+      },
+      {
+       "category": "저당[SET]",
+       "name": "저당밀크 두바이 초코쉘",
+       "price": 12500
+      },
+      {
+       "category": "저당[SET]",
+       "name": "저당밀크 누텔라 초코쉘",
+       "price": 11500
+      },
+      {
+       "category": "저당[SET]",
+       "name": "얼그레이 밀크 초코쉘",
+       "price": 12500
+      },
+      {
+       "category": "저당[SET]",
+       "name": "얼그레이 밀크 말차쉘",
+       "price": 12500
+      },
+      {
+       "category": "저당[SET]",
+       "name": "저당밀크 오레오",
+       "price": 10000
+      },
+      {
+       "category": "저당[SET]",
+       "name": "저당밀크 인절미 팥빙수",
+       "price": 11000
+      },
+      {
+       "category": "저당[SET]",
+       "name": "저당밀크 아포가토",
+       "price": 10000
+      },
+      {
+       "category": "저당[SET]",
+       "name": "저당말차 초코",
+       "price": 12500
+      },
+      {
+       "category": "저당[SET]",
+       "name": "저당말차 팥빙수",
+       "price": 11500
+      },
+      {
+       "category": "저당[SET]",
+       "name": "저당말차 치즈쿠키",
+       "price": 12500
+      },
+      {
+       "category": "저당[SET]",
+       "name": "저당말차 딸기초코",
+       "price": 14000
+      },
+      {
+       "category": "저당[SET]",
+       "name": "저당 빠작 누텔라 딥",
+       "price": 11500
+      },
+      {
+       "category": "저당[SET]",
+       "name": "빠작 두바이 딥 초코쉘",
+       "price": 12500
+      },
+      {
+       "category": "저당[SET]",
+       "name": "리비 PICK",
+       "price": 14000
+      },
+      {
+       "category": "저당[SET]",
+       "name": "코지 PICK",
+       "price": 14500
+      }
+     ]
+    },
+    {
+     "name": "5.png",
+     "fid": "F0C3KMXJHQ8",
+     "from": "댓글",
+     "path": "menu-files/1789693130_903929-4.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "와플픽",
+       "name": "플레인 와플PICK",
+       "price": 2500
+      },
+      {
+       "category": "와플픽",
+       "name": "아이스크림 와플PICK",
+       "price": 4500
+      },
+      {
+       "category": "와플픽",
+       "name": "두바이 와플",
+       "price": 7000
+      },
+      {
+       "category": "와플픽",
+       "name": "딸기 두바이 와플",
+       "price": 9000
+      },
+      {
+       "category": "와플픽",
+       "name": "얼그레이 두바이 와플",
+       "price": 6000
+      },
+      {
+       "category": "와플픽",
+       "name": "애플시나몬 와플",
+       "price": 3800
+      },
+      {
+       "category": "와플픽",
+       "name": "누텔라딸기 와플",
+       "price": 6000
+      },
+      {
+       "category": "와플픽",
+       "name": "누텔라바나나 와플",
+       "price": 5000
+      },
+      {
+       "category": "와플픽",
+       "name": "누텔라오레오 와플",
+       "price": 4800
+      },
+      {
+       "category": "와플픽",
+       "name": "딸기 와플",
+       "price": 5000
+      },
+      {
+       "category": "와플픽",
+       "name": "두바이 밀크와플",
+       "price": 7500
+      },
+      {
+       "category": "와플픽",
+       "name": "사과잼 밀크와플",
+       "price": 5300
+      },
+      {
+       "category": "와플픽",
+       "name": "딸기 밀크와플",
+       "price": 6500
+      },
+      {
+       "category": "와플픽",
+       "name": "인절미 와플",
+       "price": 4000
+      },
+      {
+       "category": "와플픽",
+       "name": "로투스 와플",
+       "price": 4300
+      },
+      {
+       "category": "와플픽",
+       "name": "누텔라딸기 밀크와플",
+       "price": 7500
+      },
+      {
+       "category": "와플픽",
+       "name": "인절미 밀크와플",
+       "price": 5500
+      },
+      {
+       "category": "와플픽",
+       "name": "누텔라오레오 밀크와플",
+       "price": 6300
+      },
+      {
+       "category": "와플픽",
+       "name": "밀크 딸기 아이스 크림",
+       "price": 6500
+      },
+      {
+       "category": "와플픽",
+       "name": "밀크딸기카다이프아이스크",
+       "price": 8500
+      },
+      {
+       "category": "와플픽",
+       "name": "누텔라치즈케이크밀크와플",
+       "price": 7000
+      },
+      {
+       "category": "와플픽",
+       "name": "로투스 밀크와플",
+       "price": 5800
+      },
+      {
+       "category": "와플픽",
+       "name": "누텔라오레오 초코와플",
+       "price": 6300
+      },
+      {
+       "category": "와플픽",
+       "name": "바나나 초코와플",
+       "price": 6000
+      }
+     ]
+    },
+    {
+     "name": "5-2.png",
+     "fid": "F0C2R8RGA2E",
+     "from": "댓글",
+     "path": "menu-files/1789693130_903929-5.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "와플픽",
+       "name": "팥빙수 말차와플",
+       "price": 5500
+      },
+      {
+       "category": "와플픽",
+       "name": "누텔라초코링 말차와플",
+       "price": 7000
+      },
+      {
+       "category": "와플픽",
+       "name": "누텔라치즈쿠키 말차와플",
+       "price": 7800
+      },
+      {
+       "category": "와플픽",
+       "name": "블루베리 요거트와플",
+       "price": 6300
+      },
+      {
+       "category": "와플픽",
+       "name": "치즈케이크 블루베리와플",
+       "price": 7000
+      },
+      {
+       "category": "와플픽",
+       "name": "허니그래놀라 요거트와플",
+       "price": 5800
+      },
+      {
+       "category": "와플픽",
+       "name": "망고 요거트와플",
+       "price": 6300
+      },
+      {
+       "category": "와플픽",
+       "name": "밀크아이스크림+와플",
+       "price": 9000
+      },
+      {
+       "category": "와플픽",
+       "name": "오레오 밀크+와플",
+       "price": 12500
+      },
+      {
+       "category": "와플픽",
+       "name": "말차 아이스크림+와플",
+       "price": 9000
+      },
+      {
+       "category": "와플픽",
+       "name": "치즈쿠키 말차+와플",
+       "price": 15000
+      },
+      {
+       "category": "와플픽",
+       "name": "초코아이스크림+와플",
+       "price": 9000
+      },
+      {
+       "category": "와플픽",
+       "name": "두바이딥초코쉘+와플",
+       "price": 13500
+      },
+      {
+       "category": "와플픽",
+       "name": "요거트아이스크림+와플",
+       "price": 9000
+      },
+      {
+       "category": "와플픽",
+       "name": "벌집꿀허니넛+와플",
+       "price": 14500
+      },
+      {
+       "category": "와플픽",
+       "name": "딸기요아+와플",
+       "price": 9000
+      },
+      {
+       "category": "와플픽",
+       "name": "초코딸기아이스크림+와플",
+       "price": 14500
+      },
+      {
+       "category": "와플픽",
+       "name": "블루베리요아+와플",
+       "price": 9000
+      },
+      {
+       "category": "와플픽",
+       "name": "치즈블루베리요아+와플",
+       "price": 14500
+      }
+     ]
+    },
+    {
+     "name": "6.png",
+     "fid": "F0C2R8RQSJW",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "[토핑]과일/인기",
+       "name": "두바이 쫀득쿠키",
+       "price": 5500
+      },
+      {
+       "category": "[토핑]과일/인기",
+       "name": "얼그레이 말차 쫀득쿠키",
+       "price": 5500
+      },
+      {
+       "category": "[토핑]과일/인기",
+       "name": "딸기 두바이쫀득쿠키",
+       "price": 6500
+      },
+      {
+       "category": "[토핑]과일/인기",
+       "name": "피스타치오 카다이프",
+       "price": 4500
+      },
+      {
+       "category": "[토핑]과일/인기",
+       "name": "누텔라 카다이프",
+       "price": 3500
+      },
+      {
+       "category": "[토핑]과일/인기",
+       "name": "초코쉘",
+       "price": 1500
+      },
+      {
+       "category": "[토핑]과일/인기",
+       "name": "초코링(초코볼스)",
+       "price": 1500
+      },
+      {
+       "category": "[토핑]과일/인기",
+       "name": "아사이볼",
+       "price": 2000
+      },
+      {
+       "category": "[토핑]과일/인기",
+       "name": "그래놀라",
+       "price": 1000
+      },
+      {
+       "category": "[토핑]과일/인기",
+       "name": "치즈큐브",
+       "price": 2500
+      },
+      {
+       "category": "[토핑]과일/인기",
+       "name": "레인보우 드라마시멜로",
+       "price": 1000
+      },
+      {
+       "category": "[토핑]과일/인기",
+       "name": "팝핑보바(리치)",
+       "price": 1500
+      },
+      {
+       "category": "[토핑]과일/인기",
+       "name": "딸기",
+       "price": 3000
+      },
+      {
+       "category": "[토핑]과일/인기",
+       "name": "샤인머스켓(청포도)",
+       "price": 3000
+      },
+      {
+       "category": "[토핑]과일/인기",
+       "name": "바나나",
+       "price": 1500
+      },
+      {
+       "category": "[토핑]과일/인기",
+       "name": "오렌지",
+       "price": 3000
+      },
+      {
+       "category": "[토핑]과일/인기",
+       "name": "자몽",
+       "price": 3000
+      },
+      {
+       "category": "[토핑]과일/인기",
+       "name": "블루베리",
+       "price": 3000
+      },
+      {
+       "category": "[토핑]과일/인기",
+       "name": "키위",
+       "price": 3000
+      },
+      {
+       "category": "[토핑]과일/인기",
+       "name": "백도",
+       "price": 2000
+      },
+      {
+       "category": "[토핑]과일/인기",
+       "name": "프로즌 블루베리",
+       "price": 2000
+      },
+      {
+       "category": "[토핑]과일/인기",
+       "name": "프로즌 스트로베리",
+       "price": 2000
+      },
+      {
+       "category": "[토핑]과일/인기",
+       "name": "프로즌 망고슬라이스",
+       "price": 2000
+      },
+      {
+       "category": "[토핑]과일/인기",
+       "name": "프로즌 트리플베리",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "name": "7.png",
+     "fid": "F0C3KMZ42DN",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "[토핑]시리얼/기타",
+       "name": "초코그래놀라",
+       "price": 1200
+      },
+      {
+       "category": "[토핑]시리얼/기타",
+       "name": "아몬드슬라이스",
+       "price": 1000
+      },
+      {
+       "category": "[토핑]시리얼/기타",
+       "name": "크리스피 코코넛청크",
+       "price": 1500
+      },
+      {
+       "category": "[토핑]시리얼/기타",
+       "name": "시리얼 콘푸로스트",
+       "price": 800
+      },
+      {
+       "category": "[토핑]시리얼/기타",
+       "name": "시리얼 후루트링",
+       "price": 800
+      },
+      {
+       "category": "[토핑]시리얼/기타",
+       "name": "시리얼 오레오쿠키",
+       "price": 800
+      },
+      {
+       "category": "[토핑]시리얼/기타",
+       "name": "시리얼 코코볼",
+       "price": 800
+      },
+      {
+       "category": "[토핑]시리얼/기타",
+       "name": "시리얼 첵스",
+       "price": 800
+      },
+      {
+       "category": "[토핑]시리얼/기타",
+       "name": "로투스크럼블",
+       "price": 800
+      },
+      {
+       "category": "[토핑]시리얼/기타",
+       "name": "쿠키크럼블",
+       "price": 800
+      },
+      {
+       "category": "[토핑]시리얼/기타",
+       "name": "쿠키샌드크럼블",
+       "price": 800
+      },
+      {
+       "category": "[토핑]시리얼/기타",
+       "name": "미니초코다이스",
+       "price": 2000
+      },
+      {
+       "category": "[토핑]시리얼/기타",
+       "name": "빙수팥",
+       "price": 1000
+      },
+      {
+       "category": "[토핑]시리얼/기타",
+       "name": "초코톡톡",
+       "price": 1000
+      },
+      {
+       "category": "[토핑]시리얼/기타",
+       "name": "딸기톡톡",
+       "price": 1000
+      },
+      {
+       "category": "[토핑]시리얼/기타",
+       "name": "민트톡톡",
+       "price": 1000
+      },
+      {
+       "category": "[토핑]시리얼/기타",
+       "name": "피스마니에",
+       "price": 1500
+      },
+      {
+       "category": "[토핑]시리얼/기타",
+       "name": "캐슈넛",
+       "price": 1000
+      },
+      {
+       "category": "[토핑]시리얼/기타",
+       "name": "건크렌베리",
+       "price": 800
+      },
+      {
+       "category": "[토핑]시리얼/기타",
+       "name": "오렌지필",
+       "price": 800
+      }
+     ]
+    },
+    {
+     "name": "8.png",
+     "fid": "F0C3KMYU9K2",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "[토핑]꿀/소스",
+       "name": "벌집꿀",
+       "price": 4000
+      },
+      {
+       "category": "[토핑]꿀/소스",
+       "name": "꿀스틱",
+       "price": 500
+      },
+      {
+       "category": "[토핑]꿀/소스",
+       "name": "초코 소스",
+       "price": 500
+      },
+      {
+       "category": "[토핑]꿀/소스",
+       "name": "연유",
+       "price": 500
+      },
+      {
+       "category": "[토핑]꿀/소스",
+       "name": "딸기소스",
+       "price": 800
+      },
+      {
+       "category": "[토핑]꿀/소스",
+       "name": "망고소스",
+       "price": 800
+      },
+      {
+       "category": "[토핑]꿀/소스",
+       "name": "블루베리소스",
+       "price": 800
+      },
+      {
+       "category": "[토핑]꿀/소스",
+       "name": "한라봉청",
+       "price": 500
+      }
+     ]
+    },
+    {
+     "name": "9.png",
+     "fid": "F0C2LF4RYN9",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "커피/구슬아이스크림",
+       "name": "구슬XL(4가지맛)",
+       "price": 12800
+      },
+      {
+       "category": "커피/구슬아이스크림",
+       "name": "구슬아이스크림XXL(6",
+       "price": 14800
+      },
+      {
+       "category": "커피/구슬아이스크림",
+       "name": "드립커피",
+       "price": 5000
+      },
+      {
+       "category": "커피/구슬아이스크림",
+       "name": "구슬소컵",
+       "price": 3000
+      },
+      {
+       "category": "커피/구슬아이스크림",
+       "name": "청포도모히또",
+       "price": 4000
+      },
+      {
+       "category": "커피/구슬아이스크림",
+       "name": "청",
+       "price": 0
+      },
+      {
+       "category": "커피/구슬아이스크림",
+       "name": "ICE콜드브루",
+       "price": 3500
+      },
+      {
+       "category": "커피/구슬아이스크림",
+       "name": "ICE디카페인콜드브루",
+       "price": 4000
+      },
+      {
+       "category": "커피/구슬아이스크림",
+       "name": "베트남 카페쓰어다",
+       "price": 5500
+      },
+      {
+       "category": "커피/구슬아이스크림",
+       "name": "청포도모히또",
+       "price": 4000
+      }
+     ]
+    },
+    {
+     "name": "10.png",
+     "fid": "F0C2PCYGQB0",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "플레인 그릭(50g)",
+       "price": 1900
+      },
+      {
+       "category": "",
+       "name": "플레인 그릭(100g)",
+       "price": 3800
+      },
+      {
+       "category": "",
+       "name": "소소한여행",
+       "price": 8300
+      },
+      {
+       "category": "",
+       "name": "달콤한여행",
+       "price": 8300
+      },
+      {
+       "category": "",
+       "name": "상큼한여행",
+       "price": 8300
+      },
+      {
+       "category": "",
+       "name": "하루한번여행",
+       "price": 8300
+      },
+      {
+       "category": "",
+       "name": "오늘초코 여행",
+       "price": 7300
+      }
+     ]
+    },
+    {
+     "name": "11.png",
+     "fid": "F0C2R8WNSD8",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "내맘대로 반반빙수",
+       "price": 13000
+      },
+      {
+       "category": "",
+       "name": "내맘대로 구슬반반",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "(1인)내맘대로 빙수",
+       "price": 5500
+      },
+      {
+       "category": "",
+       "name": "(2인)내맘대로 빙수",
+       "price": 7500
+      },
+      {
+       "category": "",
+       "name": "내맘대로 구슬아이스크림",
+       "price": 14500
+      },
+      {
+       "category": "",
+       "name": "초코바나나 구슬빙수",
+       "price": 14500
+      },
+      {
+       "category": "",
+       "name": "더블초코 구슬빙수",
+       "price": 14500
+      },
+      {
+       "category": "",
+       "name": "솜사탕 구슬빙수",
+       "price": 14500
+      },
+      {
+       "category": "",
+       "name": "딸기우유 구슬빙수",
+       "price": 14500
+      },
+      {
+       "category": "",
+       "name": "빠작 두바이 요거트빙수",
+       "price": 16500
+      },
+      {
+       "category": "",
+       "name": "인절미 팥빙수",
+       "price": 11500
+      },
+      {
+       "category": "",
+       "name": "인절미 빙수",
+       "price": 10500
+      },
+      {
+       "category": "",
+       "name": "망고치즈 요거트빙수",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "블루베리 요거트빙수",
+       "price": 15000
+      },
+      {
+       "category": "",
+       "name": "딸기 요거트빙수",
+       "price": 15500
+      },
+      {
+       "category": "",
+       "name": "초코 요거트빙수",
+       "price": 13500
+      },
+      {
+       "category": "",
+       "name": "망즈깐루빙수핑",
+       "price": 16000
+      },
+      {
+       "category": "",
+       "name": "팥인절미빙수",
+       "price": 14000
+      },
+      {
+       "category": "",
+       "name": "로투스 요거트빙수",
+       "price": 8500
+      },
+      {
+       "category": "",
+       "name": "크럼블 요거트빙수",
+       "price": 10800
+      },
+      {
+       "category": "",
+       "name": "딸기블루베리 빙수",
+       "price": 11000
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [
     "여기다가 캡쳐본 바로 올려주세요",
     "일단 메뉴부터 쫙 넣고 옵션있으면 같이 작업합시다요",
-    "인생은 스피드"
+    "인생은 스피드",
+    "요거트집이니 예상했습니다",
+    "일단 메뉴부터 빨리 끝내볼게요 기달"
    ],
-   "rc": 4,
-   "lr": "1789693322.916889",
+   "rc": 11,
+   "lr": "1789693724.971419",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -6207,13 +7237,6 @@ window.MENU_REQUESTS = {
    "files": 1,
    "att": [
     {
-     "name": "(키오스크) 움버거앤윙스_미리내 메뉴 셋팅_치킨불고기.xlsx.exs",
-     "fid": "F0C24UX47MY",
-     "from": "원글",
-     "path": "menu-files/1789522108_300109-0.exs",
-     "nj": 1
-    },
-    {
      "name": "image.png",
      "fid": "F0C256NC0DQ",
      "from": "댓글",
@@ -6450,6 +7473,13 @@ window.MENU_REQUESTS = {
        "price": 0
       }
      ]
+    },
+    {
+     "name": "(키오스크) 움버거앤윙스_미리내 메뉴 셋팅_치킨불고기.xlsx.exs",
+     "fid": "F0C24UX47MY",
+     "from": "원글",
+     "path": "menu-files/1789522108_300109-0.exs",
+     "nj": 1
     }
    ],
    "datt": [],
