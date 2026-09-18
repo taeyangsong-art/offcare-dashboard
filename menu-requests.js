@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2181,
- "updatedAt": "2026-09-18 10:23",
+ "version": 2182,
+ "updatedAt": "2026-09-18 10:28",
  "days": 30,
  "items": [
   {
@@ -1869,6 +1869,372 @@ window.MENU_REQUESTS = {
        "price": 800
       }
      ]
+    },
+    {
+     "name": "옵셔 ㄴ와플 아이스크림맛.png",
+     "fid": "F0C2PFN04G6",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "저당 밀크 아이스크림",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "저당 초코 아이스크림",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "저당 말차 아이스크림",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "저당 플레인 요거트아이",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "저당 블루베리 요거트아",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "옵션 빙수 과일.png",
+     "fid": "F0C2RBKS090",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "망고 슬라이스 + 소스",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "딸기 + 소스",
+       "price": 2500
+      },
+      {
+       "category": "",
+       "name": "블루베리 + 소스",
+       "price": 2500
+      }
+     ]
+    },
+    {
+     "name": "옵션 아이스크림맛.png",
+     "fid": "F0C2V45GL5S",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "옵션 설정",
+       "name": "(저당플레인)패밀리",
+       "price": 4500
+      },
+      {
+       "category": "옵션 설정",
+       "name": "플레인 요아",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "저당 플레인 요아",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "저당 밀크",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "저당 초코",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "저당 말차",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "저당 블루베리",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "저당 딸기",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "복숭아 요아",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "딸기 요아",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "녹차 요아",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "바나나 요아",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "망고 요아",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "옵션 와플 과일.png",
+     "fid": "F0C2TCAUFSM",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "옵션 설정",
+       "name": "바나나",
+       "price": 1000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "블루베리",
+       "price": 1000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "망고슬라이스",
+       "price": 1000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "딸기",
+       "price": 2000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "샤인머스캣(청포도)",
+       "price": 1500
+      },
+      {
+       "category": "옵션 설정",
+       "name": "자몽",
+       "price": 1500
+      },
+      {
+       "category": "옵션 설정",
+       "name": "오렌지",
+       "price": 1500
+      },
+      {
+       "category": "옵션 설정",
+       "name": "키위",
+       "price": 1500
+      },
+      {
+       "category": "옵션 설정",
+       "name": "백도",
+       "price": 1000
+      }
+     ]
+    },
+    {
+     "name": "옵션 와플 꿀 소스.png",
+     "fid": "F0C2LHZAMPX",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "옵션",
+       "name": "벌집꿀",
+       "price": 2000
+      },
+      {
+       "category": "옵션",
+       "name": "꿀",
+       "price": 800
+      },
+      {
+       "category": "옵션",
+       "name": "꿀스틱",
+       "price": 500
+      },
+      {
+       "category": "옵션",
+       "name": "초코 소스",
+       "price": 500
+      },
+      {
+       "category": "옵션",
+       "name": "연유",
+       "price": 500
+      },
+      {
+       "category": "옵션",
+       "name": "카라멜소스",
+       "price": 500
+      },
+      {
+       "category": "옵션",
+       "name": "딸기 소스",
+       "price": 800
+      },
+      {
+       "category": "옵션",
+       "name": "블루베리 소스",
+       "price": 800
+      },
+      {
+       "category": "옵션",
+       "name": "망고 소스",
+       "price": 800
+      }
+     ]
+    },
+    {
+     "name": "옵션 와플 시리얼 견과.png",
+     "fid": "F0C2PFPUAVC",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "초코그래놀라",
+       "price": 800
+      },
+      {
+       "category": "",
+       "name": "인절미 파우더",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "아몬드슬라이스",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "코코넛청크",
+       "price": 1500
+      },
+      {
+       "category": "",
+       "name": "콘푸라이트",
+       "price": 800
+      },
+      {
+       "category": "",
+       "name": "오레오오즈",
+       "price": 800
+      },
+      {
+       "category": "",
+       "name": "첵스",
+       "price": 800
+      },
+      {
+       "category": "",
+       "name": "코코볼",
+       "price": 800
+      },
+      {
+       "category": "",
+       "name": "후루트링",
+       "price": 800
+      }
+     ]
+    },
+    {
+     "name": "옵션 와플 인기 NEW.png",
+     "fid": "F0C2TCC76NM",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "옵션 설정",
+       "name": "화이트크림(기본)",
+       "price": 500
+      },
+      {
+       "category": "옵션 설정",
+       "name": "화이트크림(듬뿍)",
+       "price": 1000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "사과잼",
+       "price": 500
+      },
+      {
+       "category": "옵션 설정",
+       "name": "누텔라",
+       "price": 1000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "시나몬 파우더",
+       "price": 300
+      },
+      {
+       "category": "옵션 설정",
+       "name": "아사이볼(1스쿱)",
+       "price": 2000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "피스타치오 카다이프",
+       "price": 3000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "누텔라 카다이프",
+       "price": 2000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "초코셀",
+       "price": 1000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "초코링",
+       "price": 1500
+      },
+      {
+       "category": "옵션 설정",
+       "name": "치즈큐브",
+       "price": 1500
+      },
+      {
+       "category": "옵션 설정",
+       "name": "팝핑보바",
+       "price": 800
+      },
+      {
+       "category": "옵션 설정",
+       "name": "드라이마시멜로",
+       "price": 1000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "그래놀라",
+       "price": 500
+      }
+     ]
     }
    ],
    "datt": [],
@@ -1880,8 +2246,8 @@ window.MENU_REQUESTS = {
     "일단 메뉴부터 빨리 끝내볼게요 기달",
     "상품 189개는 등록 완료 옵션합시다"
    ],
-   "rc": 13,
-   "lr": "1789694445.974329",
+   "rc": 14,
+   "lr": "1789694728.419879",
    "rfx": 3,
    "status": "wait",
    "handler": null,
