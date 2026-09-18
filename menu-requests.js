@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2205,
- "updatedAt": "2026-09-18 14:55",
+ "version": 2206,
+ "updatedAt": "2026-09-18 14:57",
  "days": 30,
  "items": [
   {
@@ -64,10 +64,11 @@ window.MENU_REQUESTS = {
    "datt": [],
    "replies": [
     "?.? 흑임자를 못찾겠어요",
-    "상품코드 012010 터치키는 등록되어있는데 상품등록에는 안보이고~~ 본사메뉴에도 없고~~~"
+    "상품코드 012010 터치키는 등록되어있는데 상품등록에는 안보이고~~ 본사메뉴에도 없고~~~",
+    "도움! 진짜 못찾겠습니다"
    ],
-   "rc": 2,
-   "lr": "1789710881.643839",
+   "rc": 3,
+   "lr": "1789711038.584269",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
@@ -62474,29 +62475,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787119860605459"
-  },
-  {
-   "ts": "1787119032.094789",
-   "date": "2026-08-19",
-   "time": "14:57",
-   "store": "카페드림",
-   "biz": "3081901676",
-   "pos": "토스포스",
-   "content": "메뉴등록",
-   "special": "이미지가 첨부 안돼서 이메일로 보내드리겠습니다! 내일부터 정상영업이 되야해서 바쁘시겠지만.. 최대한 빨리 등록 부탁드리겠습니다 감사합니다!",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "(https://mail.google.com/mail/u/0/#inbox/1a018991734d0942)"
-   ],
-   "rc": 2,
-   "lr": "1787120033.725649",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787119032094789"
   }
  ],
  "ocr": {
