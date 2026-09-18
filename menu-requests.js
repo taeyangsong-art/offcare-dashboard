@@ -3,10 +3,34 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2175,
- "updatedAt": "2026-09-18 09:55",
+ "version": 2176,
+ "updatedAt": "2026-09-18 09:59",
  "days": 30,
  "items": [
+  {
+   "ts": "1789693130.903929",
+   "date": "2026-09-18",
+   "time": "09:58",
+   "store": "마이요거트립 인덕원점",
+   "biz": "3081553948",
+   "pos": "",
+   "content": "메뉴",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "여기다가 캡쳐본 바로 올려주세요",
+    "일단 메뉴부터 쫙 넣고 옵션있으면 같이 작업합시다요"
+   ],
+   "rc": 3,
+   "lr": "1789693159.235039",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789693130903929"
+  },
   {
    "ts": "1789692861.261909",
    "date": "2026-09-18",
@@ -23,11 +47,11 @@ window.MENU_REQUESTS = {
    "replies": [
     "• 한우꽃등심 45,000원\n• 살치살 95,000원\n• 육회 30,000원\n• 차돌박이 28,000원\n• 갈비살 21,000원\n위 가격으로 수정 필요하며, 완료 이후 문자 한통만 부탁드리겠습니다:감사합니다꾸벅:"
    ],
-   "rc": 2,
-   "lr": "1789692868.533049",
+   "rc": 4,
+   "lr": "1789693168.090789",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789692861261909"
   },
   {
