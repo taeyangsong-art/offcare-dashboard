@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2209,
- "updatedAt": "2026-09-18 15:13",
+ "version": 2210,
+ "updatedAt": "2026-09-18 15:17",
  "days": 30,
  "items": [
+  {
+   "ts": "1789712077.245919",
+   "date": "2026-09-18",
+   "time": "15:14",
+   "store": "젓가락질잘해야만밥을먹나요동광주점",
+   "biz": "4481802530",
+   "pos": "토스포스",
+   "content": "젓가락질 잘해야만 밥을 먹나요 구로점(<tel:···|···>) 메뉴 복사 부탁드립니다.\n프로그램 : 토스포스",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789712080.580509",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789712077245919"
+  },
   {
    "ts": "1789710341.302039",
    "date": "2026-09-18",
