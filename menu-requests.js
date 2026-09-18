@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2203,
- "updatedAt": "2026-09-18 14:23",
+ "version": 2204,
+ "updatedAt": "2026-09-18 14:49",
  "days": 30,
  "items": [
+  {
+   "ts": "1789710341.302039",
+   "date": "2026-09-18",
+   "time": "14:45",
+   "store": "플라워비다",
+   "biz": "2321601932",
+   "pos": "스파로스포스",
+   "content": "[원데이클래스] 카테고리 탭 내 과세 메뉴로 꽃 12만원 상품 추가 요청드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 0,
+   "lr": "",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789710341302039"
+  },
   {
    "ts": "1789708304.732719",
    "date": "2026-09-18",
@@ -41,9 +62,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 0,
-   "lr": "",
+   "replies": [
+    "?.? 흑임자를 못찾겠어요"
+   ],
+   "rc": 1,
+   "lr": "1789710474.422299",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
@@ -62473,27 +62496,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787119032094789"
-  },
-  {
-   "ts": "1787118455.988449",
-   "date": "2026-08-19",
-   "time": "14:47",
-   "store": "카페드림",
-   "biz": "3081901676",
-   "pos": "토스포스",
-   "content": "메뉴등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787118458.951449",
-   "rfx": 3,
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787118455988449"
   }
  ],
  "ocr": {
