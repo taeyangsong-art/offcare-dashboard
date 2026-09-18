@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11483,
+  "version": 11484,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -187756,6 +187756,9 @@ window.SLACK_DATA = {
         "as": {
           "심성현": 1,
           "고경림": 1
+        },
+        "transfer": {
+          "송태양": 1
         }
       },
       "pending": [],
@@ -187792,14 +187795,25 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "충전시에, 충전불이 들어왓다 안들어왓다 하는증상 AS안내를 드렸으나, AS기간동안 결제를 해야하는상황이라, 중고 대체품으로 교체안내 • 4개월전구매 제품 우선 충전은 되고있는상태라, 좀더 사용해보시고 충전이 아에안되실경우 고객센터 재인입예정 4개월전구매 제품"
+        },
+        {
+          "time": "08:45",
+          "store": "무음",
+          "biz": "5111832410",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "9월 18일 오전 9시 / 메뉴 복사 O / 프론트, 유프",
+          "hw": "",
+          "intake": "online",
+          "note": "명변완료입니다"
         }
       ],
       "intake": {
-        "online": 2,
+        "online": 3,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:11"
+      "updatedAt": "09:30"
     }
   },
   "resp": {
@@ -187940,6 +187954,14 @@ window.SLACK_DATA = {
       "1789642338.580629": {
         "post": "1789642338.580629",
         "lastSeen": 1789676129.684
+      },
+      "1789691401.034169": {
+        "post": "1789691401.034169",
+        "lastSeen": 1789691420.73
+      },
+      "1789691400.418479": {
+        "post": "1789691400.418479",
+        "lastSeen": 1789691420.73
       }
     },
     "days": {
@@ -247567,13 +247589,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-18 09:19",
+    "at": "2026-09-18 09:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 4147,
+    "rows": 4148,
     "named": 839,
     "unknownName": 0,
     "beforeStart": 0,
