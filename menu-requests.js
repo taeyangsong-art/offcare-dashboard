@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2182,
- "updatedAt": "2026-09-18 10:28",
+ "version": 2183,
+ "updatedAt": "2026-09-18 10:33",
  "days": 30,
  "items": [
+  {
+   "ts": "1789695041.605169",
+   "date": "2026-09-18",
+   "time": "10:30",
+   "store": "토모니",
+   "biz": "4143300527",
+   "pos": "토스포스",
+   "content": "토스포스 테이블 생성 요청 드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "토스포스 계정 로그인 전으로 토플파 생성 불가로 부득이하게 요청 드립니다 :woman-bowing::skin-tone-4:\n\n테이블 카테고리 : 선불\n테이블 9개 생성 요청 ( 선불 1, 선불 2 와 같이 이름 생성 요청 )"
+   ],
+   "rc": 2,
+   "lr": "1789695088.076729",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789695041605169"
+  },
   {
    "ts": "1789694283.332829",
    "date": "2026-09-18",
