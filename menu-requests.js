@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2206,
- "updatedAt": "2026-09-18 14:57",
+ "version": 2207,
+ "updatedAt": "2026-09-18 14:59",
  "days": 30,
  "items": [
   {
@@ -65,10 +65,13 @@ window.MENU_REQUESTS = {
    "replies": [
     "?.? 흑임자를 못찾겠어요",
     "상품코드 012010 터치키는 등록되어있는데 상품등록에는 안보이고~~ 본사메뉴에도 없고~~~",
-    "도움! 진짜 못찾겠습니다"
+    "도움! 진짜 못찾겠습니다",
+    "그럼 새로 등록!!!!",
+    "ㅋㅋㅋㅋ",
+    "본사관리 상품인뎅 상관없져?"
    ],
-   "rc": 3,
-   "lr": "1789711038.584269",
+   "rc": 6,
+   "lr": "1789711126.082839",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
