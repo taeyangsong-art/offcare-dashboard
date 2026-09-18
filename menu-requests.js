@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2176,
- "updatedAt": "2026-09-18 09:59",
+ "version": 2177,
+ "updatedAt": "2026-09-18 10:04",
  "days": 30,
  "items": [
   {
@@ -22,10 +22,11 @@ window.MENU_REQUESTS = {
    "datt": [],
    "replies": [
     "여기다가 캡쳐본 바로 올려주세요",
-    "일단 메뉴부터 쫙 넣고 옵션있으면 같이 작업합시다요"
+    "일단 메뉴부터 쫙 넣고 옵션있으면 같이 작업합시다요",
+    "인생은 스피드"
    ],
-   "rc": 3,
-   "lr": "1789693159.235039",
+   "rc": 4,
+   "lr": "1789693322.916889",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -6206,6 +6207,13 @@ window.MENU_REQUESTS = {
    "files": 1,
    "att": [
     {
+     "name": "(키오스크) 움버거앤윙스_미리내 메뉴 셋팅_치킨불고기.xlsx.exs",
+     "fid": "F0C24UX47MY",
+     "from": "원글",
+     "path": "menu-files/1789522108_300109-0.exs",
+     "nj": 1
+    },
+    {
      "name": "image.png",
      "fid": "F0C256NC0DQ",
      "from": "댓글",
@@ -6442,19 +6450,12 @@ window.MENU_REQUESTS = {
        "price": 0
       }
      ]
-    },
-    {
-     "name": "(키오스크) 움버거앤윙스_미리내 메뉴 셋팅_치킨불고기.xlsx.exs",
-     "fid": "F0C24UX47MY",
-     "from": "원글",
-     "path": "menu-files/1789522108_300109-0.exs",
-     "nj": 1
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 5,
-   "lr": "1789531302.765599",
+   "rc": 6,
+   "lr": "1789693271.526579",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
