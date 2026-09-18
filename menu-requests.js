@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2196,
- "updatedAt": "2026-09-18 12:56",
+ "version": 2197,
+ "updatedAt": "2026-09-18 13:16",
  "days": 30,
  "items": [
   {
@@ -62655,27 +62655,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787113551301829"
-  },
-  {
-   "ts": "1787112794.856459",
-   "date": "2026-08-19",
-   "time": "13:13",
-   "store": "프리토 카츠",
-   "biz": "8451902456",
-   "pos": "기타",
-   "content": "카츠메뉴- 맵카츠, 갈릭카츠 13,900\n라이스메뉴- 카츠카레라이스 13,900\n카츠(점심할인)메뉴- 맵카츠, 칼릭카츠 12,900\n라이스(점심할인)메뉴- 카츠카레라이스 12,900\n가격 변경 부탁드립니더",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787112798.867219",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787112794856459"
   }
  ],
  "ocr": {
