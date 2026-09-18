@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2221,
- "updatedAt": "2026-09-18 16:51",
+ "version": 2222,
+ "updatedAt": "2026-09-18 16:54",
  "days": 30,
  "items": [
   {
@@ -23,8 +23,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "오케이포스 사용중/메뉴 1개 신규 추가 요청\n\n카테고리: 메인메뉴\n메뉴명: 그릴드 푸싯\n가격: 19,000원"
    ],
-   "rc": 1,
-   "lr": "1789717845.106269",
+   "rc": 2,
+   "lr": "1789717866.522729",
    "rfx": 3,
    "status": "wait",
    "handler": null,
