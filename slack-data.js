@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11480,
+  "version": 11481,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -187749,15 +187749,31 @@ window.SLACK_DATA = {
       }
     },
     "2026-09-18": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "고경림": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:00",
+          "store": "클린유통",
+          "biz": "1171855768",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "• nm400 사용 중",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "09:09"
+      "updatedAt": "09:11"
     }
   },
   "resp": {
@@ -187898,17 +187914,6 @@ window.SLACK_DATA = {
       "1789642338.580629": {
         "post": "1789642338.580629",
         "lastSeen": 1789676129.684
-      },
-      "1789689615.357579": {
-        "post": "1789689615.357579",
-        "lastSeen": 1789690220.309,
-        "r": 1,
-        "day": "2026-09-18",
-        "idx": 0
-      },
-      "1789688702.216219": {
-        "post": "1789688702.216219",
-        "lastSeen": 1789690220.309
       }
     },
     "days": {
@@ -247528,14 +247533,15 @@ window.SLACK_DATA = {
             "store": "클린유통",
             "biz": "1171855768",
             "who": "고경림",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 11.1
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-18 09:10",
+    "at": "2026-09-18 09:12",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
