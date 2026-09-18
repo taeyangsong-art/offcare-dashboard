@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2224,
- "updatedAt": "2026-09-18 17:22",
+ "version": 2225,
+ "updatedAt": "2026-09-18 17:28",
  "days": 30,
  "items": [
+  {
+   "ts": "1789720073.798369",
+   "date": "2026-09-18",
+   "time": "17:27",
+   "store": "피아2",
+   "biz": "4666800802",
+   "pos": "",
+   "content": "··· 피아 라는 매장과 동일하게 메뉴 복사해달라고 하심 .",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789720077.907879",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789720073798369"
+  },
   {
    "ts": "1789719637.097609",
    "date": "2026-09-18",
@@ -62414,29 +62435,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787188212215159"
-  },
-  {
-   "ts": "1787128068.467689",
-   "date": "2026-08-19",
-   "time": "17:27",
-   "store": "장군갈비",
-   "biz": "2061380015",
-   "pos": "퍼스트포스",
-   "content": "메뉴 금액 수정 부탁드리겠습니다:man-bowing: (KPN포스)\n\n*[식사류]*\n• 떡국 10,000 → 12,000원\n• 오삼불고기 33,000 → 36,000원\n• 냉면곱빼기 11,000 → 12,000원\n*[고기류/돼지고기], [고기류/소고기류]*\n• 두부김치 25,000 → 33,000원\n• 계란찜A 3,000 → 5,000원\n• 계란찜B 5,000 → 8,000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "익일 변경 가능성 안내 드렸으나, 가급적 금일 변경 요청주셨습니다"
-   ],
-   "rc": 3,
-   "lr": "1787128303.345499",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787128068467689"
   }
  ],
  "ocr": {
