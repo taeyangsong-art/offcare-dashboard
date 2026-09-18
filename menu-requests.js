@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2179,
- "updatedAt": "2026-09-18 10:17",
+ "version": 2180,
+ "updatedAt": "2026-09-18 10:18",
  "days": 30,
  "items": [
+  {
+   "ts": "1789694283.332829",
+   "date": "2026-09-18",
+   "time": "10:18",
+   "store": "움버거앤윙스 킨텍스점",
+   "biz": "1358560825",
+   "pos": "퍼스트포스",
+   "content": "FD포스 메뉴 이미지등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789694286.453379",
+   "rfx": 3,
+   "status": "done",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789694283332829"
+  },
   {
    "ts": "1789693886.185649",
    "date": "2026-09-18",
@@ -56,9 +77,11 @@ window.MENU_REQUESTS = {
      ]
     }
    ],
-   "replies": [],
-   "rc": 0,
-   "lr": "",
+   "replies": [
+    "https://s.baemin.com/7c000M5ePH49d"
+   ],
+   "rc": 1,
+   "lr": "1789694241.581469",
    "rfx": 3,
    "status": "confirm",
    "handler": "김규빈",
