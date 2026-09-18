@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2195,
- "updatedAt": "2026-09-18 12:48",
+ "version": 2196,
+ "updatedAt": "2026-09-18 12:56",
  "days": 30,
  "items": [
+  {
+   "ts": "1789703782.577199",
+   "date": "2026-09-18",
+   "time": "12:56",
+   "store": "용천통닭 김포점",
+   "biz": "1063537826",
+   "pos": "기타",
+   "content": "●안주류 추가\n버터구이오징어 16,000\n\n●주류  \n무알콜맥주 가격변경 5,000\n\n장수생막걸리를 생막걸리로\n이름변경",
+   "special": "3시오픈이라 그전에 변경부탁드립니다",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 0,
+   "lr": "",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789703782577199"
+  },
   {
    "ts": "1789699264.640439",
    "date": "2026-09-18",
