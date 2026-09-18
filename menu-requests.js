@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2174,
- "updatedAt": "2026-09-18 06:15",
+ "version": 2175,
+ "updatedAt": "2026-09-18 09:55",
  "days": 30,
  "items": [
+  {
+   "ts": "1789692861.261909",
+   "date": "2026-09-18",
+   "time": "09:54",
+   "store": "신마포갈비",
+   "biz": "1132387525",
+   "pos": "오케이포스",
+   "content": "메뉴 가격 수정 요청드립니다! (오케이포스)",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "• 한우꽃등심 45,000원\n• 살치살 95,000원\n• 육회 30,000원\n• 차돌박이 28,000원\n• 갈비살 21,000원\n위 가격으로 수정 필요하며, 완료 이후 문자 한통만 부탁드리겠습니다:감사합니다꾸벅:"
+   ],
+   "rc": 2,
+   "lr": "1789692868.533049",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789692861261909"
+  },
   {
    "ts": "1789645287.292659",
    "date": "2026-09-17",

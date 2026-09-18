@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11489,
+  "version": 11490,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -187750,6 +187750,9 @@ window.SLACK_DATA = {
     },
     "2026-09-18": {
       "counts": {
+        "onboarding": {
+          "배선유": 1
+        },
         "as": {
           "김동욱": 1,
           "심성현": 2,
@@ -187764,6 +187767,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:49",
+          "store": "꾸밈",
+          "biz": "6194800785",
+          "cat": "onboarding",
+          "emp": "배선유",
+          "req": "포프(휴대폰)+유프 사용 매장으로, 자체 온보딩하셨으나 프린터 외계어로 출력된다고 하시어 재온보딩 부탁드리겠습니다!",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "09:42",
           "store": "요미 헤어",
@@ -187832,11 +187846,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 5,
+        "online": 6,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:42"
+      "updatedAt": "09:54"
     }
   },
   "resp": {
@@ -187980,17 +187994,21 @@ window.SLACK_DATA = {
       },
       "1789691400.418479": {
         "post": "1789691400.418479",
-        "lastSeen": 1789692562.745,
+        "lastSeen": 1789692920.552,
         "r": 1,
         "day": "2026-09-18",
         "idx": 2
       },
       "1789691711.253249": {
         "post": "1789691711.253249",
-        "lastSeen": 1789692562.745,
+        "lastSeen": 1789692920.552,
         "r": 1,
         "day": "2026-09-18",
         "idx": 3
+      },
+      "1789692861.261909": {
+        "post": "1789692861.261909",
+        "lastSeen": 1789692920.552
       }
     },
     "days": {
@@ -247643,7 +247661,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-18 09:49",
+    "at": "2026-09-18 09:55",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
