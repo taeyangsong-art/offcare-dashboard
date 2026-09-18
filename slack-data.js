@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11482,
+  "version": 11483,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -187750,12 +187750,38 @@ window.SLACK_DATA = {
     },
     "2026-09-18": {
       "counts": {
+        "extern": {
+          "김동욱": 1
+        },
         "as": {
+          "심성현": 1,
           "고경림": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:11",
+          "store": "푸드숲",
+          "biz": "3673001248",
+          "cat": "extern",
+          "emp": "김동욱",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "09:09",
+          "store": "반석 옛날 토스트",
+          "biz": "3557800516",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "노트북/ 배민 주문서 미출력으로 포트 설정 지원 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "토스 포스 연동 사용 방법 안내 완료 토스 포스 미실행 상태"
+        },
         {
           "time": "09:00",
           "store": "클린유통",
@@ -187765,12 +187791,12 @@ window.SLACK_DATA = {
           "req": "• nm400 사용 중",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "충전시에, 충전불이 들어왓다 안들어왓다 하는증상 AS안내를 드렸으나, AS기간동안 결제를 해야하는상황이라, 중고 대체품으로 교체안내 • 4개월전구매 제품 우선 충전은 되고있는상태라, 좀더 사용해보시고 충전이 아에안되실경우 고객센터 재인입예정 4개월전구매 제품"
         }
       ],
       "intake": {
-        "online": 1,
-        "offline": 0,
+        "online": 2,
+        "offline": 1,
         "unknown": 0
       },
       "updatedAt": "09:11"
@@ -187914,10 +187940,6 @@ window.SLACK_DATA = {
       "1789642338.580629": {
         "post": "1789642338.580629",
         "lastSeen": 1789676129.684
-      },
-      "1789688702.216219": {
-        "post": "1789688702.216219",
-        "lastSeen": 1789690530.202
       }
     },
     "days": {
@@ -247545,7 +247567,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-18 09:15",
+    "at": "2026-09-18 09:19",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
