@@ -3,10 +3,151 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2210,
- "updatedAt": "2026-09-18 15:17",
+ "version": 2211,
+ "updatedAt": "2026-09-18 15:24",
  "days": 30,
  "items": [
+  {
+   "ts": "1789712625.619189",
+   "date": "2026-09-18",
+   "time": "15:23",
+   "store": "스시동",
+   "biz": "4281203251",
+   "pos": "퍼스트포스",
+   "content": "메뉴 등록 요청 드립니다!",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C2USDP1CH",
+     "from": "댓글",
+     "path": "menu-files/1789712625_619189-0.png",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "초밥세트(스시세트)",
+       "name": "광어 2p, 연어 2p, 참돔 1p, 초새우 1p, 슬빛올한지 1p, 간장새우 1p, 생새우 1p, 민물장어",
+       "price": 19000
+      },
+      {
+       "category": "초밥세트(스시세트)",
+       "name": "광어 2p, 연어 2p(뱃살), 참돔 1p, 참치 1p(뱃살), 초새우 1p, 단새우 1p, 민물장어 1p,",
+       "price": 23000
+      },
+      {
+       "category": "초밥세트(스시세트)",
+       "name": "광어 2p(지느러미), 연어 2p, 참돔 1p, 참치뱃살 1p, 카리비칸자 1p, 단새우 1p, 전복 1p,",
+       "price": 27000
+      },
+      {
+       "category": "덮밥세트(동세트)",
+       "name": "연어덮밥(사케동)",
+       "price": 30000
+      },
+      {
+       "category": "덮밥세트(동세트)",
+       "name": "해산물덮밥(카이센동)",
+       "price": 33000
+      },
+      {
+       "category": "덮밥세트(동세트)",
+       "name": "민물장어덮밥",
+       "price": 33000
+      },
+      {
+       "category": "덮밥세트(동세트)",
+       "name": "한우스테이크덮밥",
+       "price": 33000
+      },
+      {
+       "category": "반반 초밥세트",
+       "name": "광어 5p, 연어 5p",
+       "price": 20000
+      },
+      {
+       "category": "반반 초밥세트",
+       "name": "초새우 5p, 생새우 or 간장새우 5p",
+       "price": 18000
+      },
+      {
+       "category": "단품 초밥세트",
+       "name": "광어 3p",
+       "price": 6000
+      },
+      {
+       "category": "단품 초밥세트",
+       "name": "연어 3p",
+       "price": 6000
+      },
+      {
+       "category": "단품 초밥세트",
+       "name": "참돔 3p",
+       "price": 8000
+      },
+      {
+       "category": "단품 초밥세트",
+       "name": "참치 3p",
+       "price": 8000
+      },
+      {
+       "category": "사시미",
+       "name": "광어, 연어, 참돔, 전복 외 大",
+       "price": 60000
+      },
+      {
+       "category": "사시미",
+       "name": "광어, 연어, 참돔, 전복 외 小",
+       "price": 40000
+      },
+      {
+       "category": "주류",
+       "name": "사케(잔술)",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "소주",
+       "price": 4000
+      },
+      {
+       "category": "주류",
+       "name": "맥주",
+       "price": 4000
+      },
+      {
+       "category": "주류",
+       "name": "청하",
+       "price": 4000
+      },
+      {
+       "category": "음료수",
+       "name": "콜라",
+       "price": 2000
+      },
+      {
+       "category": "음료수",
+       "name": "사이다",
+       "price": 2000
+      },
+      {
+       "category": "음료수",
+       "name": "환타",
+       "price": 2000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1789712664.112439",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789712625619189"
+  },
   {
    "ts": "1789712077.245919",
    "date": "2026-09-18",
