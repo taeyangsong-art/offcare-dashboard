@@ -2,10 +2,10 @@
  * 회사 구글 캘린더(iCal) 동기화 데이터 — gcal-sync 워크플로가 자동 생성/갱신합니다.
  */
 window.GCAL_DATA = {
-  "version": 600,
-  "updatedAt": "2026-09-18 07:49",
+  "version": 601,
+  "updatedAt": "2026-09-18 16:13",
   "days": {
-    "2026-10-09": [
+    "2026-10-16": [
       {
         "title": "iShopCARE Town Hall Meeting",
         "time": "09:30~11:00",
