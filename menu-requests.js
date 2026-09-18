@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2180,
- "updatedAt": "2026-09-18 10:18",
+ "version": 2181,
+ "updatedAt": "2026-09-18 10:23",
  "days": 30,
  "items": [
   {
@@ -78,10 +78,11 @@ window.MENU_REQUESTS = {
     }
    ],
    "replies": [
-    "https://s.baemin.com/7c000M5ePH49d"
+    "https://s.baemin.com/7c000M5ePH49d",
+    "국대 카테고리 지우고 진행"
    ],
-   "rc": 1,
-   "lr": "1789694241.581469",
+   "rc": 2,
+   "lr": "1789694322.812609",
    "rfx": 3,
    "status": "confirm",
    "handler": "김규빈",
@@ -1168,6 +1169,706 @@ window.MENU_REQUESTS = {
        "price": 4000
       }
      ]
+    },
+    {
+     "name": "옵션 - 과일.png",
+     "fid": "F0C3KQ388CQ",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "옵션 설정",
+       "name": "블루베리",
+       "price": 3000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "자몽",
+       "price": 3000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "딸기",
+       "price": 3000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "샤인머스캣(청포도)",
+       "price": 3000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "오렌지",
+       "price": 3000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "키위",
+       "price": 3000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "백도",
+       "price": 2000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "프로즌 블루베리",
+       "price": 2000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "프로즌 트리플베리",
+       "price": 2000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "프로즌 스트로베리",
+       "price": 2000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "프로즌 망고",
+       "price": 2000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "바나나",
+       "price": 1500
+      }
+     ]
+    },
+    {
+     "name": "옵션 구슬아이스크림.png",
+     "fid": "F0C2A2N80TZ",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "옵션",
+       "name": "바나나스플릿",
+       "price": 0
+      },
+      {
+       "category": "옵션",
+       "name": "코튼캔디",
+       "price": 0
+      },
+      {
+       "category": "옵션",
+       "name": "딸기플레인",
+       "price": 0
+      },
+      {
+       "category": "옵션",
+       "name": "더블초코",
+       "price": 0
+      },
+      {
+       "category": "옵션",
+       "name": "바닐라",
+       "price": 0
+      },
+      {
+       "category": "옵션",
+       "name": "블루버블",
+       "price": 0
+      },
+      {
+       "category": "옵션",
+       "name": "레몬라임",
+       "price": 0
+      },
+      {
+       "category": "옵션",
+       "name": "레인보우아이스",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "옵션 꿀 소스.png",
+     "fid": "F0C2RAXAMTL",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "꿀/소스",
+       "name": "벌집꿀",
+       "price": 4000
+      },
+      {
+       "category": "꿀/소스",
+       "name": "꿀 30g",
+       "price": 1500
+      },
+      {
+       "category": "꿀/소스",
+       "name": "꿀 스틱",
+       "price": 500
+      },
+      {
+       "category": "꿀/소스",
+       "name": "초코소스",
+       "price": 500
+      },
+      {
+       "category": "꿀/소스",
+       "name": "연유",
+       "price": 500
+      },
+      {
+       "category": "꿀/소스",
+       "name": "딸기소스",
+       "price": 800
+      },
+      {
+       "category": "꿀/소스",
+       "name": "망고소스",
+       "price": 800
+      },
+      {
+       "category": "꿀/소스",
+       "name": "블루베리소스",
+       "price": 800
+      },
+      {
+       "category": "꿀/소스",
+       "name": "한라봉청",
+       "price": 800
+      },
+      {
+       "category": "꿀/소스",
+       "name": "카라멜시럽",
+       "price": 500
+      }
+     ]
+    },
+    {
+     "name": "옵션 내맘대로 구슬반반.png",
+     "fid": "F0C2V3GPX1A",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "옵션 설정",
+       "name": "초코바나나 구슬 빙수",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "솜사탕 구슬 빙수",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "인절미 빙수",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "인절미 팥빙수",
+       "price": 500
+      },
+      {
+       "category": "옵션 설정",
+       "name": "초코 요거트 빙수",
+       "price": 1000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "블루베리 요거트 빙수",
+       "price": 1500
+      },
+      {
+       "category": "옵션 설정",
+       "name": "딸기 요거트 빙수",
+       "price": 2000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "망고치즈 요거트 빙수",
+       "price": 2500
+      },
+      {
+       "category": "옵션 설정",
+       "name": "빽작 투바이 요거트 빙수",
+       "price": 3000
+      }
+     ]
+    },
+    {
+     "name": "옵션 내맘대로 구슬빙수 -1.png",
+     "fid": "F0C2PEZV6Q6",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "옵션분류설정",
+       "name": "과일",
+       "price": 0
+      },
+      {
+       "category": "옵션분류설정",
+       "name": "시리얼/견과",
+       "price": 0
+      },
+      {
+       "category": "옵션분류설정",
+       "name": "초코/스낵",
+       "price": 0
+      },
+      {
+       "category": "옵션분류설정",
+       "name": "꿀/소스",
+       "price": 0
+      },
+      {
+       "category": "옵션분류설정",
+       "name": "구슬아이스크림",
+       "price": 0
+      },
+      {
+       "category": "옵션분류설정",
+       "name": "아포가토",
+       "price": 0
+      },
+      {
+       "category": "옵션분류설정",
+       "name": "인기/NEW",
+       "price": 0
+      },
+      {
+       "category": "옵션분류설정",
+       "name": "내맘대로반반빙수",
+       "price": 0
+      },
+      {
+       "category": "옵션분류설정",
+       "name": "내맘대로구슬반반",
+       "price": 0
+      },
+      {
+       "category": "옵션분류설정",
+       "name": "내맘대로구슬빙수",
+       "price": 0
+      },
+      {
+       "category": "옵션분류설정",
+       "name": "[빙수]시럽/잼",
+       "price": 0
+      },
+      {
+       "category": "옵션분류설정",
+       "name": "[빙수]시리얼/기타",
+       "price": 0
+      },
+      {
+       "category": "옵션분류설정",
+       "name": "[빙수]꿀/케익",
+       "price": 0
+      },
+      {
+       "category": "옵션분류설정",
+       "name": "[빙수]과일",
+       "price": 0
+      },
+      {
+       "category": "옵션분류설정",
+       "name": "아이스크림맛",
+       "price": 0
+      },
+      {
+       "category": "옵션분류설정",
+       "name": "[와플]꿀/소스",
+       "price": 0
+      },
+      {
+       "category": "옵션분류설정",
+       "name": "[와플]시리얼/견과",
+       "price": 0
+      },
+      {
+       "category": "옵션분류설정",
+       "name": "[와플]초코/스낵",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "---[구슬아이스크림 선택",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "바나나스플릿",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "더블초코",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "코튼캔디",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "딸기플레인",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "------[소스선택]------",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "요거트연유",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "초코소스",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "딸기 소스",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "블루베리 소스",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "망고 소스",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "------[토핑선택]------",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "롤웨하스조각",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "쿠키크럼블",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "후르트링",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "첵스",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "콘푸로스트",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "코코볼",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "옵션 내맘대로 반반빙수.png",
+     "fid": "F0C2K73Q49Z",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "옵션 설정",
+       "name": "인절미 빙수",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "인절미 팥빙수",
+       "price": 0
+      },
+      {
+       "category": "옵션 설정",
+       "name": "초코 요거트 빙수",
+       "price": 2000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "블루베리 요거트 빙수",
+       "price": 2500
+      },
+      {
+       "category": "옵션 설정",
+       "name": "딸기 요거트 빙수",
+       "price": 3000
+      },
+      {
+       "category": "옵션 설정",
+       "name": "망고치즈 요거트 빙수",
+       "price": 3500
+      },
+      {
+       "category": "옵션 설정",
+       "name": "빠작 두바이 요거트 빙수",
+       "price": 4000
+      }
+     ]
+    },
+    {
+     "name": "옵션 빙수 꿀케익.png",
+     "fid": "F0C2LHB6F29",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "두바이토핑",
+       "price": 3500
+      },
+      {
+       "category": "",
+       "name": "꿀 스틱",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "벌집 꿀",
+       "price": 4000
+      },
+      {
+       "category": "",
+       "name": "치즈큐브",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "초코링",
+       "price": 1500
+      },
+      {
+       "category": "",
+       "name": "초코 크리스피볼",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "미니초코다이스",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "name": "옵션 빙수 시럽잼.png",
+     "fid": "F0C2RAYPLSW",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "연유",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "초코 소스",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "카라멜 소스",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "딸기 소스",
+       "price": 800
+      },
+      {
+       "category": "",
+       "name": "망고 소스",
+       "price": 800
+      },
+      {
+       "category": "",
+       "name": "블루베리 소스",
+       "price": 800
+      },
+      {
+       "category": "",
+       "name": "인절미 파우더",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "초코 파우더",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "초코쉘",
+       "price": 1500
+      }
+     ]
+    },
+    {
+     "name": "옵션 빙수 시리얼 기타.png",
+     "fid": "F0C3KQ56B8Q",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "화이트 펄",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "로투스 비스켓",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "롤웨하스 조각",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "현미크런치",
+       "price": 500
+      },
+      {
+       "category": "",
+       "name": "빙수떡",
+       "price": 800
+      },
+      {
+       "category": "",
+       "name": "시리얼 콘푸로스트",
+       "price": 800
+      },
+      {
+       "category": "",
+       "name": "시리얼 후르츠링",
+       "price": 800
+      },
+      {
+       "category": "",
+       "name": "시리얼 오레오 오즈",
+       "price": 800
+      },
+      {
+       "category": "",
+       "name": "시리얼 첵스",
+       "price": 800
+      },
+      {
+       "category": "",
+       "name": "시리얼 코코볼",
+       "price": 800
+      },
+      {
+       "category": "",
+       "name": "로투스 크럼블",
+       "price": 800
+      },
+      {
+       "category": "",
+       "name": "초코톡톡",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "딸기톡톡",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "민트톡톡",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "크런치 쿠키",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "쿠키 크럼블",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "쿠키 샌드크럼블",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "크럼블 믹스",
+       "price": 1000
+      }
+     ]
+    },
+    {
+     "name": "옵션 -시리얼 견과.png",
+     "fid": "F0C2A2PPEUX",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "시리얼/견과",
+       "name": "초코 그래놀라",
+       "price": 1200
+      },
+      {
+       "category": "시리얼/견과",
+       "name": "크리스피 코코넛 청크",
+       "price": 1500
+      },
+      {
+       "category": "시리얼/견과",
+       "name": "아몬드 슬라이스",
+       "price": 1000
+      },
+      {
+       "category": "시리얼/견과",
+       "name": "시리얼 콘푸로스트",
+       "price": 800
+      },
+      {
+       "category": "시리얼/견과",
+       "name": "시리얼 오레오오즈",
+       "price": 800
+      },
+      {
+       "category": "시리얼/견과",
+       "name": "시리얼 첵스",
+       "price": 800
+      },
+      {
+       "category": "시리얼/견과",
+       "name": "시리얼 후루트링",
+       "price": 800
+      },
+      {
+       "category": "시리얼/견과",
+       "name": "시리얼 코코볼",
+       "price": 800
+      }
+     ]
     }
    ],
    "datt": [],
@@ -1179,8 +1880,8 @@ window.MENU_REQUESTS = {
     "일단 메뉴부터 빨리 끝내볼게요 기달",
     "상품 189개는 등록 완료 옵션합시다"
    ],
-   "rc": 12,
-   "lr": "1789693834.198129",
+   "rc": 13,
+   "lr": "1789694445.974329",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -61590,278 +62291,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787104306780679"
-  },
-  {
-   "ts": "1787102479.230519",
-   "date": "2026-08-19",
-   "time": "10:21",
-   "store": "넛티(NUTTY)",
-   "biz": "8745100612",
-   "pos": "토스포스",
-   "content": "사진을 잘못 올렸습니다 이걸로 해주세요 ㅠ",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/1vokxgdToRJA8g9NfLxKwZq03vLnrinoY/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "1vokxgdToRJA8g9NfLxKwZq03vLnrinoY",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "Coffee",
-       "name": "아메리카노",
-       "price": 4000
-      },
-      {
-       "category": "Coffee",
-       "name": "라떼",
-       "price": 4500
-      },
-      {
-       "category": "Coffee",
-       "name": "바닐라 라떼",
-       "price": 5000
-      },
-      {
-       "category": "Coffee",
-       "name": "헤이즐넛 라떼",
-       "price": 5000
-      },
-      {
-       "category": "Coffee",
-       "name": "돌체 라떼",
-       "price": 5000
-      },
-      {
-       "category": "Coffee",
-       "name": "카페모카",
-       "price": 5000
-      },
-      {
-       "category": "Coffee",
-       "name": "카라멜 마끼아또",
-       "price": 5000
-      },
-      {
-       "category": "ColdBrew",
-       "name": "콜드브루",
-       "price": 4800
-      },
-      {
-       "category": "ColdBrew",
-       "name": "콜드브루 라떼",
-       "price": 5300
-      },
-      {
-       "category": "ColdBrew",
-       "name": "콜드브루 바닐라라떼",
-       "price": 5800
-      },
-      {
-       "category": "ColdBrew",
-       "name": "콘버터 믹스커피",
-       "price": 4800
-      },
-      {
-       "category": "Milk",
-       "name": "허니 딸기라떼",
-       "price": 4900
-      },
-      {
-       "category": "Milk",
-       "name": "딸기라떼",
-       "price": 5000
-      },
-      {
-       "category": "Milk",
-       "name": "초코밀크",
-       "price": 5300
-      },
-      {
-       "category": "Milk",
-       "name": "밀크티",
-       "price": 5300
-      },
-      {
-       "category": "Milk",
-       "name": "말차밀크",
-       "price": 5300
-      },
-      {
-       "category": "Milk",
-       "name": "콘버터 밀크",
-       "price": 4500
-      },
-      {
-       "category": "Milk",
-       "name": "고구마라떼",
-       "price": 5000
-      },
-      {
-       "category": "Milk",
-       "name": "오곡라떼",
-       "price": 5000
-      },
-      {
-       "category": "ADE",
-       "name": "메론소다",
-       "price": 4900
-      },
-      {
-       "category": "ADE",
-       "name": "청포도 에이드",
-       "price": 4900
-      },
-      {
-       "category": "ADE",
-       "name": "레몬 에이드",
-       "price": 4900
-      },
-      {
-       "category": "ADE",
-       "name": "자몽 에이드",
-       "price": 4900
-      },
-      {
-       "category": "ADE",
-       "name": "오미차 에이드",
-       "price": 4900
-      },
-      {
-       "category": "Shake",
-       "name": "냉율무",
-       "price": 5300
-      },
-      {
-       "category": "Shake",
-       "name": "냉마",
-       "price": 5300
-      },
-      {
-       "category": "Shake",
-       "name": "밀크 쉐이크",
-       "price": 5300
-      },
-      {
-       "category": "Shake",
-       "name": "커피 쉐이크",
-       "price": 5300
-      },
-      {
-       "category": "Blended",
-       "name": "리얼딸기주스",
-       "price": 5300
-      },
-      {
-       "category": "Blended",
-       "name": "플레인요거트 스무디",
-       "price": 5300
-      },
-      {
-       "category": "Blended",
-       "name": "딸기요거트 스무디",
-       "price": 5300
-      },
-      {
-       "category": "Blended",
-       "name": "복숭아요거트 스무디",
-       "price": 5300
-      },
-      {
-       "category": "Blended",
-       "name": "망고요거트 스무디",
-       "price": 5300
-      },
-      {
-       "category": "Blended",
-       "name": "블루베리요거트 스무디",
-       "price": 5300
-      },
-      {
-       "category": "Blended",
-       "name": "자바칩 프라푸치노",
-       "price": 5500
-      },
-      {
-       "category": "Tea",
-       "name": "레몬티",
-       "price": 4500
-      },
-      {
-       "category": "Tea",
-       "name": "자몽티",
-       "price": 4500
-      },
-      {
-       "category": "Tea",
-       "name": "얼그레이",
-       "price": 4000
-      },
-      {
-       "category": "Tea",
-       "name": "캐모마일",
-       "price": 4000
-      },
-      {
-       "category": "Tea",
-       "name": "페퍼민트",
-       "price": 4000
-      },
-      {
-       "category": "Tea",
-       "name": "루이보스 바닐라",
-       "price": 5800
-      },
-      {
-       "category": "Tea",
-       "name": "쿨허벌",
-       "price": 5800
-      },
-      {
-       "category": "Tea",
-       "name": "화이트 템플",
-       "price": 5800
-      },
-      {
-       "category": "Ice Tea",
-       "name": "자몽허니 블랙티",
-       "price": 4900
-      },
-      {
-       "category": "Ice Tea",
-       "name": "복숭아 아이스티",
-       "price": 5000
-      },
-      {
-       "category": "Ice Tea",
-       "name": "레몬 아이스티",
-       "price": 5000
-      },
-      {
-       "category": "",
-       "name": "시그니쳐 크림라떼",
-       "price": 5500
-      },
-      {
-       "category": "",
-       "name": "뱅쇼",
-       "price": 5800
-      }
-     ]
-    }
-   ],
-   "replies": [
-    "완료"
-   ],
-   "rc": 2,
-   "lr": "1787103478.777929",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787102479230519"
   }
  ],
  "ocr": {
