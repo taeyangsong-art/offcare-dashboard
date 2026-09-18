@@ -3,10 +3,67 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2178,
- "updatedAt": "2026-09-18 10:11",
+ "version": 2179,
+ "updatedAt": "2026-09-18 10:17",
  "days": 30,
  "items": [
+  {
+   "ts": "1789693886.185649",
+   "date": "2026-09-18",
+   "time": "10:11",
+   "store": "소복샤브야채찜 중구점",
+   "biz": "3670502911",
+   "pos": "토스포스",
+   "content": "국대찜닭메뉴를 소복샤브야채찜메뉴로 변경/ 배달의민족 앱 내 소복샤브야채찜 중구점(대전 서구 유천동 308-8번지,1층 102호)의 가게 내 메뉴와 옵션을 따와서 토스포스기에 옮겨주세요.",
+   "special": "배달의민족 앱 내 소복샤브야채찜 중구점(대전 서구 유천동 308-8번지,1층 102호)의 가게 내 메뉴와 옵션을 따와서 토스포스기에 옮겨주세요",
+   "drive": [
+    "https://drive.google.com/file/d/1Z6C362cz4Va7wZavvXT6ceiVB8xSW2WK/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1giNKINXpj0ZG2duEUpcOATd82CBbXp-z/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1Ay2is2YAwci5Uw44O1iUbPOaZATdwmxC/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1Z6C362cz4Va7wZavvXT6ceiVB8xSW2WK",
+     "kind": "other",
+     "menu": []
+    },
+    {
+     "id": "1giNKINXpj0ZG2duEUpcOATd82CBbXp-z",
+     "kind": "other",
+     "menu": []
+    },
+    {
+     "id": "1Ay2is2YAwci5Uw44O1iUbPOaZATdwmxC",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "인기 메뉴",
+       "name": "우삼겹 야채찜 [453 칼로리]",
+       "price": 15800
+      },
+      {
+       "category": "인기 메뉴",
+       "name": "대패삼겹 야채찜 [653 칼로리]",
+       "price": 15800
+      },
+      {
+       "category": "소복 샤브야채찜&고기구이",
+       "name": "우삼겹 야채찜 [453 칼로리]",
+       "price": 0
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 0,
+   "lr": "",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789693886185649"
+  },
   {
    "ts": "1789693130.903929",
    "date": "2026-09-18",
@@ -23,7 +80,6 @@ window.MENU_REQUESTS = {
      "name": "1.png",
      "fid": "F0C2A0F4K7H",
      "from": "댓글",
-     "path": "menu-files/1789693130_903929-0.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -96,13 +152,13 @@ window.MENU_REQUESTS = {
        "name": "망고 요아(240g)",
        "price": 6000
       }
-     ]
+     ],
+     "path": "menu-files/1789693130_903929-0.png"
     },
     {
      "name": "2.png",
      "fid": "F0C2PCTFF1U",
      "from": "댓글",
-     "path": "menu-files/1789693130_903929-1.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -160,13 +216,13 @@ window.MENU_REQUESTS = {
        "name": "저당 연유꿀자몽 트림",
        "price": 13500
       }
-     ]
+     ],
+     "path": "menu-files/1789693130_903929-1.png"
     },
     {
      "name": "3.png",
      "fid": "F0C2V1A2J2G",
      "from": "댓글",
-     "path": "menu-files/1789693130_903929-2.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -224,13 +280,13 @@ window.MENU_REQUESTS = {
        "name": "딸기망고트립(망고)",
        "price": 12500
       }
-     ]
+     ],
+     "path": "menu-files/1789693130_903929-2.png"
     },
     {
      "name": "4.png",
      "fid": "F0C2K4WK8AX",
      "from": "댓글",
-     "path": "menu-files/1789693130_903929-3.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -313,13 +369,13 @@ window.MENU_REQUESTS = {
        "name": "코지 PICK",
        "price": 14500
       }
-     ]
+     ],
+     "path": "menu-files/1789693130_903929-3.png"
     },
     {
      "name": "5.png",
      "fid": "F0C3KMXJHQ8",
      "from": "댓글",
-     "path": "menu-files/1789693130_903929-4.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -442,13 +498,13 @@ window.MENU_REQUESTS = {
        "name": "바나나 초코와플",
        "price": 6000
       }
-     ]
+     ],
+     "path": "menu-files/1789693130_903929-4.png"
     },
     {
      "name": "5-2.png",
      "fid": "F0C2R8RGA2E",
      "from": "댓글",
-     "path": "menu-files/1789693130_903929-5.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -546,7 +602,8 @@ window.MENU_REQUESTS = {
        "name": "치즈블루베리요아+와플",
        "price": 14500
       }
-     ]
+     ],
+     "path": "menu-files/1789693130_903929-5.png"
     },
     {
      "name": "6.png",
@@ -1045,6 +1102,49 @@ window.MENU_REQUESTS = {
        "price": 11000
       }
      ]
+    },
+    {
+     "name": "12.png",
+     "fid": "F0C2V1FBRTN",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "그릭요거트",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "빙수요거트립",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "배달료",
+       "price": 2000
+      },
+      {
+       "category": "",
+       "name": "배달료",
+       "price": 2500
+      },
+      {
+       "category": "",
+       "name": "배달료",
+       "price": 3000
+      },
+      {
+       "category": "",
+       "name": "배달료",
+       "price": 3500
+      },
+      {
+       "category": "",
+       "name": "배달료",
+       "price": 4000
+      }
+     ]
     }
    ],
    "datt": [],
@@ -1053,10 +1153,11 @@ window.MENU_REQUESTS = {
     "일단 메뉴부터 쫙 넣고 옵션있으면 같이 작업합시다요",
     "인생은 스피드",
     "요거트집이니 예상했습니다",
-    "일단 메뉴부터 빨리 끝내볼게요 기달"
+    "일단 메뉴부터 빨리 끝내볼게요 기달",
+    "상품 189개는 등록 완료 옵션합시다"
    ],
-   "rc": 11,
-   "lr": "1789693724.971419",
+   "rc": 12,
+   "lr": "1789693834.198129",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -4655,15 +4756,15 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C3A7X2P1N",
      "from": "댓글",
-     "path": "menu-files/1789615690_317039-0.png",
      "kind": "pos_screen",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1789615690_317039-0.png"
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 3,
-   "lr": "1789615952.586699",
+   "rc": 4,
+   "lr": "1789694116.676129",
    "rfx": 3,
    "status": "done",
    "handler": "김현기",
@@ -61738,281 +61839,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787102479230519"
-  },
-  {
-   "ts": "1787101910.181959",
-   "date": "2026-08-19",
-   "time": "10:11",
-   "store": "넛티(NUTTY)",
-   "biz": "8745100612",
-   "pos": "토스포스",
-   "content": "첨부했습니다",
-   "special": "표시된거 빼고 등록해주세요",
-   "drive": [
-    "https://drive.google.com/file/d/1QyQjeOC631RUX44695DytS3Lm5_RxUTp/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "1QyQjeOC631RUX44695DytS3Lm5_RxUTp",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "Coffee",
-       "name": "아메리카노",
-       "price": 4000
-      },
-      {
-       "category": "Coffee",
-       "name": "라떼",
-       "price": 4500
-      },
-      {
-       "category": "Coffee",
-       "name": "바닐라 라떼",
-       "price": 4800
-      },
-      {
-       "category": "Coffee",
-       "name": "헤이즐넛 라떼",
-       "price": 4800
-      },
-      {
-       "category": "Coffee",
-       "name": "돌체 라떼",
-       "price": 5000
-      },
-      {
-       "category": "Coffee",
-       "name": "카페모카",
-       "price": 5000
-      },
-      {
-       "category": "Coffee",
-       "name": "카라멜 마끼아또",
-       "price": 5000
-      },
-      {
-       "category": "Coffee",
-       "name": "퐁라떼",
-       "price": 4800
-      },
-      {
-       "category": "ColdBrew",
-       "name": "콜드브루",
-       "price": 4800
-      },
-      {
-       "category": "ColdBrew",
-       "name": "콜드브루 라떼",
-       "price": 5300
-      },
-      {
-       "category": "ColdBrew",
-       "name": "콜드브루 바닐라라떼",
-       "price": 5800
-      },
-      {
-       "category": "ColdBrew",
-       "name": "콘버터 믹스커피",
-       "price": 4800
-      },
-      {
-       "category": "ColdBrew",
-       "name": "콘버터 크림라떼",
-       "price": 5300
-      },
-      {
-       "category": "Milk",
-       "name": "퐁밀크",
-       "price": 4300
-      },
-      {
-       "category": "Milk",
-       "name": "허니 딸기라떼",
-       "price": 4900
-      },
-      {
-       "category": "Milk",
-       "name": "딸기라떼",
-       "price": 5000
-      },
-      {
-       "category": "Milk",
-       "name": "초코밀크",
-       "price": 5300
-      },
-      {
-       "category": "Milk",
-       "name": "밀크티",
-       "price": 5300
-      },
-      {
-       "category": "Milk",
-       "name": "말차밀크",
-       "price": 5300
-      },
-      {
-       "category": "Milk",
-       "name": "콘버터 밀크",
-       "price": 4500
-      },
-      {
-       "category": "Milk",
-       "name": "군고구마 라떼",
-       "price": 4900
-      },
-      {
-       "category": "Milk",
-       "name": "피스타치오 라떼",
-       "price": 4900
-      },
-      {
-       "category": "ADE",
-       "name": "체리콕",
-       "price": 4900
-      },
-      {
-       "category": "ADE",
-       "name": "메론소다",
-       "price": 4900
-      },
-      {
-       "category": "ADE",
-       "name": "패션후르츠",
-       "price": 5500
-      },
-      {
-       "category": "ADE",
-       "name": "청포도 에이드",
-       "price": 5500
-      },
-      {
-       "category": "ADE",
-       "name": "레몬 에이드",
-       "price": 5500
-      },
-      {
-       "category": "ADE",
-       "name": "자몽 에이드",
-       "price": 5500
-      },
-      {
-       "category": "Shake",
-       "name": "냉율무",
-       "price": 5300
-      },
-      {
-       "category": "Shake",
-       "name": "밀크 쉐이크",
-       "price": 5300
-      },
-      {
-       "category": "Shake",
-       "name": "커피 쉐이크",
-       "price": 5300
-      },
-      {
-       "category": "Blended",
-       "name": "리얼딸기주스",
-       "price": 5300
-      },
-      {
-       "category": "Blended",
-       "name": "플레인요거트디 스무디",
-       "price": 5300
-      },
-      {
-       "category": "Blended",
-       "name": "딸기요거트 스무디",
-       "price": 5300
-      },
-      {
-       "category": "Blended",
-       "name": "망고요거트 스무디",
-       "price": 5300
-      },
-      {
-       "category": "Blended",
-       "name": "블루베리요거트 스무디",
-       "price": 5300
-      },
-      {
-       "category": "Blended",
-       "name": "자바칩 프라푸치노",
-       "price": 5500
-      },
-      {
-       "category": "Blended",
-       "name": "민트초코칩 프라푸치노",
-       "price": 5500
-      },
-      {
-       "category": "Tea",
-       "name": "유자티",
-       "price": 4500
-      },
-      {
-       "category": "Tea",
-       "name": "레몬티",
-       "price": 4500
-      },
-      {
-       "category": "Tea",
-       "name": "자몽티",
-       "price": 4500
-      },
-      {
-       "category": "Tea",
-       "name": "얼그레이",
-       "price": 4000
-      },
-      {
-       "category": "Tea",
-       "name": "캐모마일",
-       "price": 4000
-      },
-      {
-       "category": "Tea",
-       "name": "페퍼민트",
-       "price": 4000
-      },
-      {
-       "category": "Tea",
-       "name": "루이보스 바닐라",
-       "price": 5800
-      },
-      {
-       "category": "Tea",
-       "name": "쿨허벌",
-       "price": 5800
-      },
-      {
-       "category": "Tea",
-       "name": "화이트 템플",
-       "price": 5800
-      },
-      {
-       "category": "Ice Tea",
-       "name": "자몽허니 블랙티",
-       "price": 4900
-      },
-      {
-       "category": "Ice Tea",
-       "name": "복숭아 아이스티",
-       "price": 5000
-      }
-     ]
-    }
-   ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787101914.533089",
-   "rfx": 3,
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787101910181959"
   }
  ],
  "ocr": {
