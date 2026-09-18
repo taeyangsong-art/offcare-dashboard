@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2211,
- "updatedAt": "2026-09-18 15:24",
+ "version": 2212,
+ "updatedAt": "2026-09-18 15:28",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C2USDP1CH",
      "from": "댓글",
-     "path": "menu-files/1789712625_619189-0.png",
      "kind": "menu_board",
      "menu": [
       {
@@ -136,13 +135,16 @@ window.MENU_REQUESTS = {
        "name": "환타",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1789712625_619189-0.png"
     }
    ],
    "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1789712664.112439",
+   "replies": [
+    "+) 주류\n사케 1병 66,000원 도 같이 추가 부탁 드립니다~!\n\n• 스시세트 이름을 위에서 A,B,C 이름으로 등록 해 주시면 됩니다.\n    ◦ A세ㅌ, 19,000원\n    ◦ B세트 : 23,000원\n    ◦ C세트 : 27,000원"
+   ],
+   "rc": 3,
+   "lr": "1789712715.901279",
    "rfx": 3,
    "status": "wait",
    "handler": null,
