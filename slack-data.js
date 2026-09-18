@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11484,
+  "version": 11485,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -187813,7 +187813,7 @@ window.SLACK_DATA = {
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:30"
+      "updatedAt": "09:35"
     }
   },
   "resp": {
@@ -187957,11 +187957,21 @@ window.SLACK_DATA = {
       },
       "1789691401.034169": {
         "post": "1789691401.034169",
-        "lastSeen": 1789691420.73
+        "lastSeen": 1789691781.478,
+        "r": 1,
+        "day": "2026-09-18",
+        "idx": 1
       },
       "1789691400.418479": {
         "post": "1789691400.418479",
-        "lastSeen": 1789691420.73
+        "lastSeen": 1789691781.478,
+        "r": 1,
+        "day": "2026-09-18",
+        "idx": 2
+      },
+      "1789691711.253249": {
+        "post": "1789691711.253249",
+        "lastSeen": 1789691781.478
       }
     },
     "days": {
@@ -247571,8 +247581,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-18": {
-        "cnt": 1,
-        "sumMin": 5.095648682117462,
+        "cnt": 3,
+        "sumMin": 11.7749045530955,
         "over": 0,
         "items": [
           {
@@ -247583,13 +247593,29 @@ window.SLACK_DATA = {
             "who": "고경림",
             "cat": "as",
             "dmin": 11.1
+          },
+          {
+            "hm": "09:30",
+            "min": 3.3,
+            "store": "팀레드폭스 복싱&amp;MMA",
+            "biz": "3029604109",
+            "who": "심성현",
+            "cat": "as"
+          },
+          {
+            "hm": "09:30",
+            "min": 3.3,
+            "store": "마이요거트립 인덕원점",
+            "biz": "3081553948",
+            "who": "고경림",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-18 09:30",
+    "at": "2026-09-18 09:36",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
