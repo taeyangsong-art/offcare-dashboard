@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2202,
- "updatedAt": "2026-09-18 14:14",
+ "version": 2203,
+ "updatedAt": "2026-09-18 14:23",
  "days": 30,
  "items": [
   {
@@ -62494,29 +62494,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787118455988449"
-  },
-  {
-   "ts": "1787117003.999509",
-   "date": "2026-08-19",
-   "time": "14:23",
-   "store": "또래오래 파파빈",
-   "biz": "1244375046",
-   "pos": "",
-   "content": "메뉴 가격 수정",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "방법 알려달라고 하셔서 안내"
-   ],
-   "rc": 2,
-   "lr": "1787118275.943809",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787117003999509"
   }
  ],
  "ocr": {
