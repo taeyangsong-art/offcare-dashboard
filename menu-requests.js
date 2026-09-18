@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2218,
- "updatedAt": "2026-09-18 16:04",
+ "version": 2219,
+ "updatedAt": "2026-09-18 16:14",
  "days": 30,
  "items": [
   {
@@ -46,7 +46,6 @@ window.MENU_REQUESTS = {
      "name": "IMG_1930.jpg (1).jpeg",
      "fid": "F0C2LQ1SE1Z",
      "from": "댓글",
-     "path": "menu-files/1789713355_742689-0.jpeg",
      "kind": "menu_board",
      "menu": [
       {
@@ -114,13 +113,13 @@ window.MENU_REQUESTS = {
        "name": "제로 콜라",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1789713355_742689-0.jpeg"
     },
     {
      "name": "IMG_1929.jpg.jpeg",
      "fid": "F0C2WLELFA8",
      "from": "댓글",
-     "path": "menu-files/1789713355_742689-1.jpeg",
      "kind": "menu_board",
      "menu": [
       {
@@ -148,13 +147,13 @@ window.MENU_REQUESTS = {
        "name": "일본 카레 + 토핑선택",
        "price": 13000
       }
-     ]
+     ],
+     "path": "menu-files/1789713355_742689-1.jpeg"
     },
     {
      "name": "IMG_1928.jpg.jpeg",
      "fid": "F0C2STWS0H0",
      "from": "댓글",
-     "path": "menu-files/1789713355_742689-2.jpeg",
      "kind": "menu_board",
      "menu": [
       {
@@ -187,13 +186,18 @@ window.MENU_REQUESTS = {
        "name": "모듬카츠 (안심 · 새우 · 치킨)",
        "price": 15000
       }
-     ]
+     ],
+     "path": "menu-files/1789713355_742689-2.jpeg"
     }
    ],
    "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1789713392.259249",
+   "replies": [
+    "굴우동 빼고 소고기스키야끼우동(15000원) 들어간다고 합니다!\n\n카레 토핑에서 로스카레 토리카레..이렇게 따로 메뉴만들어주셔야합니다",
+    "라고 추가 요청이..",
+    "감사합니다 ㅠ."
+   ],
+   "rc": 5,
+   "lr": "1789715480.963659",
    "rfx": 3,
    "status": "done",
    "handler": "서상원",
