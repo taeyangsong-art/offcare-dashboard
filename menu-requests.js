@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2249,
- "updatedAt": "2026-09-19 15:07",
+ "version": 2250,
+ "updatedAt": "2026-09-19 15:20",
  "days": 30,
  "items": [
+  {
+   "ts": "1789798804.065659",
+   "date": "2026-09-19",
+   "time": "15:20",
+   "store": "카페 누오보 고급양식",
+   "biz": "7292002183",
+   "pos": "",
+   "content": "메뉴",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789798807.816609",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789798804065659"
+  },
   {
    "ts": "1789797922.993969",
    "date": "2026-09-19",
@@ -60351,43 +60372,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787208470551279"
-  },
-  {
-   "ts": "1787206743.251219",
-   "date": "2026-08-20",
-   "time": "15:19",
-   "store": "라운지엠",
-   "biz": "7791102925",
-   "pos": "토스포스",
-   "content": "신규등록용 - 재송부",
-   "special": "엑셀 파일 .xlsx 포멧입니다.",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BR9QK1WPM",
-     "from": "댓글",
-     "path": "menu-files/1787206743_251219-0.png",
-     "kind": "other",
-     "menu": []
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "수정 불가, 다운로드 불가 / 제발..! 제발 다시 보내거나 권한 좀 달라고 요청",
-    "그냥 메일로 받자요... 권한주는거 모르는사람이 10명중 10명임",
-    "그 메일로 달라고 사정사정 하는중....",
-    "자꾸 있어보래요;;; gpt한테 물어보고온다구ㅠㅠㅠ",
-    "뭘 잇어봐 메뉴나 내놔ㅠ",
-    ":smoking:"
-   ],
-   "rc": 7,
-   "lr": "1787207963.851619",
-   "rfx": 3,
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787206743251219"
   }
  ],
  "ocr": {
