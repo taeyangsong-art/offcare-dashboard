@@ -3,10 +3,66 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2232,
- "updatedAt": "2026-09-19 10:27",
+ "version": 2233,
+ "updatedAt": "2026-09-19 10:34",
  "days": 30,
  "items": [
+  {
+   "ts": "1789781473.046279",
+   "date": "2026-09-19",
+   "time": "10:31",
+   "store": "미소집 평화광장점",
+   "biz": "3955301131",
+   "pos": "",
+   "content": "메뉴 사진 추가 요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C30HK2VM0",
+     "from": "댓글",
+     "path": "menu-files/1789781473_046279-0.png",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C30HKGD8S",
+     "from": "댓글",
+     "path": "menu-files/1789781473_046279-1.png",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C32JE6BPB",
+     "from": "댓글",
+     "path": "menu-files/1789781473_046279-2.png",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C2YMNV18W",
+     "from": "댓글",
+     "path": "menu-files/1789781473_046279-3.png",
+     "kind": "product_photo",
+     "menu": []
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "사진 추가 요청 순서대로 부탁드립니다!\n1. 소갈비탕\n2. 얼큰 미나리 소갈비탕\n3. 미나리 소갈비탕\n4.얼큰 소갈비탕"
+   ],
+   "rc": 2,
+   "lr": "1789781523.245439",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789781473046279"
+  },
   {
    "ts": "1789724584.645169",
    "date": "2026-09-18",
