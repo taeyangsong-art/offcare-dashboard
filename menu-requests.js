@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2233,
- "updatedAt": "2026-09-19 10:34",
+ "version": 2234,
+ "updatedAt": "2026-09-19 10:39",
  "days": 30,
  "items": [
   {
@@ -23,41 +23,42 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C30HK2VM0",
      "from": "댓글",
-     "path": "menu-files/1789781473_046279-0.png",
      "kind": "product_photo",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1789781473_046279-0.png"
     },
     {
      "name": "image.png",
      "fid": "F0C30HKGD8S",
      "from": "댓글",
-     "path": "menu-files/1789781473_046279-1.png",
      "kind": "product_photo",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1789781473_046279-1.png"
     },
     {
      "name": "image.png",
      "fid": "F0C32JE6BPB",
      "from": "댓글",
-     "path": "menu-files/1789781473_046279-2.png",
      "kind": "product_photo",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1789781473_046279-2.png"
     },
     {
      "name": "image.png",
      "fid": "F0C2YMNV18W",
      "from": "댓글",
-     "path": "menu-files/1789781473_046279-3.png",
      "kind": "product_photo",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1789781473_046279-3.png"
     }
    ],
    "datt": [],
    "replies": [
-    "사진 추가 요청 순서대로 부탁드립니다!\n1. 소갈비탕\n2. 얼큰 미나리 소갈비탕\n3. 미나리 소갈비탕\n4.얼큰 소갈비탕"
+    "사진 추가 요청 순서대로 부탁드립니다!\n1. 소갈비탕\n2. 얼큰 미나리 소갈비탕\n3. 미나리 소갈비탕\n4.얼큰 소갈비탕",
+    "현기님 요기 오전중에 요청주셔서 태그드립니다..! :모코코_꾸벅:"
    ],
-   "rc": 2,
-   "lr": "1789781523.245439",
+   "rc": 3,
+   "lr": "1789781941.355109",
    "rfx": 3,
    "status": "wait",
    "handler": null,
