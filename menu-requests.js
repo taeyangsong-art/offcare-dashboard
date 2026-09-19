@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2251,
- "updatedAt": "2026-09-19 15:25",
+ "version": 2252,
+ "updatedAt": "2026-09-19 15:31",
  "days": 30,
  "items": [
   {
@@ -23,15 +23,14 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C33ATC09X",
      "from": "댓글",
-     "path": "menu-files/1789798804_065659-0.png",
      "kind": "pos_screen",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1789798804_065659-0.png"
     },
     {
      "name": "image.png",
      "fid": "F0C3VPF2B5W",
      "from": "댓글",
-     "path": "menu-files/1789798804_065659-1.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -49,13 +48,13 @@ window.MENU_REQUESTS = {
        "name": "알리오 올리오",
        "price": 11000
       }
-     ]
+     ],
+     "path": "menu-files/1789798804_065659-1.png"
     },
     {
      "name": "image.png",
      "fid": "F0C2WFM4PLM",
      "from": "댓글",
-     "path": "menu-files/1789798804_065659-2.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -118,13 +117,13 @@ window.MENU_REQUESTS = {
        "name": "봉골레 파스타",
        "price": 13300
       }
-     ]
+     ],
+     "path": "menu-files/1789798804_065659-2.png"
     },
     {
      "name": "image.png",
      "fid": "F0C31A56V7U",
      "from": "댓글",
-     "path": "menu-files/1789798804_065659-3.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -182,13 +181,13 @@ window.MENU_REQUESTS = {
        "name": "베이컨 필라프",
        "price": 12300
       }
-     ]
+     ],
+     "path": "menu-files/1789798804_065659-3.png"
     },
     {
      "name": "image.png",
      "fid": "F0C352V9X44",
      "from": "댓글",
-     "path": "menu-files/1789798804_065659-4.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -211,13 +210,13 @@ window.MENU_REQUESTS = {
        "name": "채끝등심스테이크와 구운 야채",
        "price": 29300
       }
-     ]
+     ],
+     "path": "menu-files/1789798804_065659-4.png"
     },
     {
      "name": "image.png",
      "fid": "F0C2ZE8EXML",
      "from": "댓글",
-     "path": "menu-files/1789798804_065659-5.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -230,7 +229,8 @@ window.MENU_REQUESTS = {
        "name": "베이비 백립",
        "price": 20300
       }
-     ]
+     ],
+     "path": "menu-files/1789798804_065659-5.png"
     },
     {
      "name": "image.png",
@@ -528,12 +528,264 @@ window.MENU_REQUESTS = {
        "price": 21300
       }
      ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3VPKNUE4",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "리조또&필라프",
+       "name": "해산물 먹물 리조또",
+       "price": 15800
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C2V6FHHH9",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "음료",
+       "name": "리스트레또(only iced)",
+       "price": 6000
+      },
+      {
+       "category": "음료",
+       "name": "레몬차",
+       "price": 5000
+      },
+      {
+       "category": "음료",
+       "name": "유자차",
+       "price": 5000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3VPLS35W",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류",
+       "name": "코콘 하이볼",
+       "price": 6000
+      },
+      {
+       "category": "주류",
+       "name": "유자 하이볼",
+       "price": 7000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C2ZEDE9E2",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "**추가",
+       "name": "(식전빵)브라운브레드",
+       "price": 1000
+      },
+      {
+       "category": "**추가",
+       "name": "베이컨 2줄 추가",
+       "price": 2900
+      },
+      {
+       "category": "**추가",
+       "name": "버터로 구운 관자구이(5EA) 추가",
+       "price": 4800
+      },
+      {
+       "category": "**추가",
+       "name": "버터로 구운 새우 4마리 추가",
+       "price": 3300
+      },
+      {
+       "category": "**추가",
+       "name": "목살스테이크(150g) 추가",
+       "price": 5300
+      },
+      {
+       "category": "**추가",
+       "name": "치즈(보코치니&눈꽃치즈) 추가",
+       "price": 2900
+      },
+      {
+       "category": "**추가",
+       "name": "닭가슴살 스테이크 추가",
+       "price": 3900
+      },
+      {
+       "category": "**추가",
+       "name": "연어스테이크(80g) 추가",
+       "price": 5900
+      },
+      {
+       "category": "**추가",
+       "name": "대왕소시지(21cm) 추가",
+       "price": 3900
+      },
+      {
+       "category": "**추가",
+       "name": "우삼겹(150g) 추가",
+       "price": 5900
+      },
+      {
+       "category": "**추가",
+       "name": "펜네&푸실리(숏파스타) 변경",
+       "price": 1000
+      },
+      {
+       "category": "**추가",
+       "name": "딸리아딸레(넓적면) 변경",
+       "price": 1500
+      },
+      {
+       "category": "**추가",
+       "name": "펜네&푸실리(숏파스타) 추가",
+       "price": 2000
+      },
+      {
+       "category": "**추가",
+       "name": "채끝등심스테이크(100g) 추가",
+       "price": 9300
+      },
+      {
+       "category": "**추가",
+       "name": "일반면 추가",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C33B64WC9",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "두쫀쿠",
+       "name": "두쫀쿠",
+       "price": 6000
+      },
+      {
+       "category": "두쫀쿠",
+       "name": "덕은 특별가(팀당 1개 한정)",
+       "price": 5000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C2L22STF1",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "[강추!] 세트 메뉴",
+       "name": "2인 세트(메인2+샐러드1+음료2)",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3531336G",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "이벤트",
+       "name": "아메리카노[TAKE OUT 할인]",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3531322G",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "배달 전용 품목",
+       "name": "보코치니 샐러드(작은 용기)",
+       "price": 6500
+      },
+      {
+       "category": "배달 전용 품목",
+       "name": "빵 & 버터",
+       "price": 2400
+      },
+      {
+       "category": "배달 전용 품목",
+       "name": "감자스프",
+       "price": 7000
+      },
+      {
+       "category": "배달 전용 품목",
+       "name": "버터 추가",
+       "price": 500
+      },
+      {
+       "category": "배달 전용 품목",
+       "name": "딸기잼 추가",
+       "price": 500
+      },
+      {
+       "category": "배달 전용 품목",
+       "name": "양송이스프",
+       "price": 7000
+      },
+      {
+       "category": "배달 전용 품목",
+       "name": "발사믹 드레싱 추가",
+       "price": 500
+      },
+      {
+       "category": "배달 전용 품목",
+       "name": "피클 추가",
+       "price": 500
+      },
+      {
+       "category": "배달 전용 품목",
+       "name": "감자샐러드 (300g)",
+       "price": 6400
+      },
+      {
+       "category": "배달 전용 품목",
+       "name": "할라피뇨 추가",
+       "price": 500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C31AC17J6",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "과일샤베트",
+       "name": "생과일 그대로 파인애플 샤베트(대)",
+       "price": 6500
+      }
+     ]
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 2,
-   "lr": "1789799050.564089",
+   "rc": 3,
+   "lr": "1789799166.985899",
    "rfx": 3,
    "status": "wait",
    "handler": null,
