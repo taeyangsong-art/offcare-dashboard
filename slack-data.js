@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11778,
+  "version": 11779,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -190957,6 +190957,9 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김현기": 7
+        },
+        "onboarding": {
+          "김현기": 1
         }
       },
       "pending": [],
@@ -190971,6 +190974,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "1회에 한하여 노트북 연결이필요한데, 오늘은 노트북이 없음 / 내일 노트북 지참하여 15시 이후 예약"
+        },
+        {
+          "time": "10:00",
+          "store": "고덕센트럴베이스볼클럽",
+          "biz": "4043801558",
+          "cat": "onboarding",
+          "emp": "김현기",
+          "req": "핸드폰+프론트+프린터",
+          "hw": "",
+          "intake": "online",
+          "note": "<tel:010-7252-3763|010-7252-3763 &lt;&lt; 010-7252-3763 << / 개인폰 프린터 프론트 온보딩 완료"
         },
         {
           "time": "09:40",
@@ -191040,7 +191054,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 6,
+        "online": 7,
         "offline": 1,
         "unknown": 0
       },
@@ -191246,25 +191260,21 @@ window.SLACK_DATA = {
       },
       "1789779603.534999": {
         "post": "1789779603.534999",
-        "lastSeen": 1789780462.499
-      },
-      "1789779600.226989": {
-        "post": "1789779600.226989",
-        "lastSeen": 1789780462.499,
+        "lastSeen": 1789781243.426,
         "r": 1,
         "day": "2026-09-19",
-        "idx": 2
+        "idx": 4
       },
       "1789779600.131479": {
         "post": "1789779600.131479",
-        "lastSeen": 1789780462.499,
+        "lastSeen": 1789781243.426,
         "r": 1,
         "day": "2026-09-19",
         "idx": 3
       },
       "1789780397.515689": {
         "post": "1789780397.515689",
-        "lastSeen": 1789780462.499
+        "lastSeen": 1789781243.426
       }
     },
     "days": {
@@ -252525,8 +252535,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-19": {
-        "cnt": 4,
-        "sumMin": 20.435218898455304,
+        "cnt": 5,
+        "sumMin": 41.25901058514913,
         "over": 0,
         "items": [
           {
@@ -252553,7 +252563,8 @@ window.SLACK_DATA = {
             "store": "고덕센트럴베이스볼클럽",
             "biz": "4043801558",
             "who": "김현기",
-            "cat": "as"
+            "cat": "onboarding",
+            "dmin": 20.9
           },
           {
             "hm": "10:00",
@@ -252562,13 +252573,21 @@ window.SLACK_DATA = {
             "biz": "6959801497",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "10:00",
+            "min": 20.8,
+            "store": "플랜비 웰니스 센터(PlanB wellness cent",
+            "biz": "2432502480",
+            "who": "김현기",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-19 10:14",
+    "at": "2026-09-19 10:27",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

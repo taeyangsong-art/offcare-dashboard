@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2231,
- "updatedAt": "2026-09-19 10:12",
+ "version": 2232,
+ "updatedAt": "2026-09-19 10:27",
  "days": 30,
  "items": [
   {
@@ -62418,46 +62418,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787193875619399"
-  },
-  {
-   "ts": "1787188769.483049",
-   "date": "2026-08-20",
-   "time": "10:19",
-   "store": "달콤한 꽃케이크",
-   "biz": "1393001963",
-   "pos": "토스포스",
-   "content": "포장이랑 시트추가 순서 변경 가능할까요?",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BRAR0B3B7",
-     "from": "댓글",
-     "path": "menu-files/1787188769_483049-0.png",
-     "kind": "pos_screen",
-     "menu": []
-    },
-    {
-     "name": "image.png",
-     "fid": "F0BS906DKH6",
-     "from": "댓글",
-     "path": "menu-files/1787188769_483049-1.png",
-     "kind": "pos_screen",
-     "menu": []
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "일반, 고객용채널 둘 다 변경와뇰"
-   ],
-   "rc": 2,
-   "lr": "1787189849.814669",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787188769483049"
   }
  ],
  "ocr": {
