@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2248,
- "updatedAt": "2026-09-19 14:58",
+ "version": 2249,
+ "updatedAt": "2026-09-19 15:07",
  "days": 30,
  "items": [
+  {
+   "ts": "1789797922.993969",
+   "date": "2026-09-19",
+   "time": "15:05",
+   "store": "요아정전주인후점",
+   "biz": "1854700932",
+   "pos": "",
+   "content": "<@U08HHP6TV39> 배민보고 해달래요... 메뉴...ㅠ",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789797927.382749",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789797922993969"
+  },
   {
    "ts": "1789786938.499979",
    "date": "2026-09-19",
@@ -60367,27 +60388,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787206743251219"
-  },
-  {
-   "ts": "1787206021.907799",
-   "date": "2026-08-20",
-   "time": "15:07",
-   "store": "쭈닭한상",
-   "biz": "7822301997",
-   "pos": "토스포스",
-   "content": "고사리 비빔밥(김치삼겹) 9,900\n고사리 비빔밥(쭈삼)   10,900",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787206024.867779",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787206021907799"
   }
  ],
  "ocr": {
