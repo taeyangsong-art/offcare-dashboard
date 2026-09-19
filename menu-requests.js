@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2241,
- "updatedAt": "2026-09-19 13:00",
+ "version": 2242,
+ "updatedAt": "2026-09-19 13:03",
  "days": 30,
  "items": [
   {
@@ -79,11 +79,13 @@ window.MENU_REQUESTS = {
      ]
     }
    ],
-   "replies": [],
-   "rc": 0,
-   "lr": "",
+   "replies": [
+    "작업완료 솔라피 발"
+   ],
+   "rc": 1,
+   "lr": "1789790539.261899",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김현기",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789786938499979"
   },
@@ -62005,29 +62007,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787199911110049"
-  },
-  {
-   "ts": "1787198523.531769",
-   "date": "2026-08-20",
-   "time": "13:02",
-   "store": "움버거앤윙스 킨텍스점",
-   "biz": "1358560825",
-   "pos": "퍼스트포스",
-   "content": "메뉴이름 변경건입니다\n\n핫레드-볼케이노\n핫크리미-크리미마요\n스파이시로제-로제투움바\n버거,버거세트,시그니처세트,메가윙세트에서도 변경해주세요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "해당 키워드 들어가는 모든 메뉴 변경"
-   ],
-   "rc": 2,
-   "lr": "1787205026.103169",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787198523531769"
   }
  ],
  "ocr": {
