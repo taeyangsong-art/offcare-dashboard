@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2242,
- "updatedAt": "2026-09-19 13:03",
+ "version": 2243,
+ "updatedAt": "2026-09-19 13:25",
  "days": 30,
  "items": [
   {
@@ -61986,27 +61986,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787200050271109"
-  },
-  {
-   "ts": "1787199911.110049",
-   "date": "2026-08-20",
-   "time": "13:25",
-   "store": "퍼리엔",
-   "biz": "1764201290",
-   "pos": "기타",
-   "content": "닭가슴살 쌀국수에 옵션 두개 추가  면추가 2000원.고수추가 고수는 가격없음",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787199915.001719",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787199911110049"
   }
  ],
  "ocr": {
