@@ -3,10 +3,90 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2237,
- "updatedAt": "2026-09-19 11:45",
+ "version": 2238,
+ "updatedAt": "2026-09-19 12:04",
  "days": 30,
  "items": [
+  {
+   "ts": "1789786938.499979",
+   "date": "2026-09-19",
+   "time": "12:02",
+   "store": "황가네",
+   "biz": "3860502931",
+   "pos": "스파로스포스",
+   "content": "서비스상품을 테이크아웃 자리에 와주시고 주문 처럼 한칸 꽉차게 부탁드랴요",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1QXmu-eQMjY9qOmTptE1WvO0IfbTJpnYU/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1QXmu-eQMjY9qOmTptE1WvO0IfbTJpnYU",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "칼국수",
+       "price": 7500
+      },
+      {
+       "category": "",
+       "name": "수제비",
+       "price": 8500
+      },
+      {
+       "category": "",
+       "name": "떡만두국",
+       "price": 8500
+      },
+      {
+       "category": "",
+       "name": "만두",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "제육 비빔밥",
+       "price": 9000
+      },
+      {
+       "category": "",
+       "name": "김밥",
+       "price": 3800
+      },
+      {
+       "category": "",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "후라이추가",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "만두추가",
+       "price": 1000
+      },
+      {
+       "category": "",
+       "name": "곱빼기",
+       "price": 1000
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 0,
+   "lr": "",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789786938499979"
+  },
   {
    "ts": "1789781473.046279",
    "date": "2026-09-19",
