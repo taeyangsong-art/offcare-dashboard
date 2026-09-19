@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11773,
+  "version": 11774,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -190956,11 +190956,22 @@ window.SLACK_DATA = {
     "2026-09-19": {
       "counts": {
         "as": {
-          "김현기": 5
+          "김현기": 6
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:40",
+          "store": "키움공방",
+          "biz": "8204600421",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "프린터가 갑자기 출력되지 않는다고 하십니다. 전원 켜져있으며, 크로스젠더쪽 및 프린터 연결 케이블 재장착 해봐도 동일하게 테스트 출력 불가하여 원격 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "유프 불량 추정, 방전작업 케이블 분리 등 모든 작업을 했지만 출력 아예 반응 없음 / 대체품 및 rj45케이블로 교체 출고 / 회수는 추석 끝나고"
+        },
         {
           "time": "09:38",
           "store": "태산만두 효자점",
@@ -191018,7 +191029,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 4,
+        "online": 5,
         "offline": 1,
         "unknown": 0
       },
@@ -191221,13 +191232,6 @@ window.SLACK_DATA = {
       "1789743700.825809": {
         "post": "1789743700.825809",
         "lastSeen": 1789762527.706
-      },
-      "1789778418.839869": {
-        "post": "1789778418.839869",
-        "lastSeen": 1789778900.824,
-        "r": 1,
-        "day": "2026-09-19",
-        "idx": 0
       }
     },
     "days": {
@@ -252498,14 +252502,15 @@ window.SLACK_DATA = {
             "store": "키움공방",
             "biz": "8204600421",
             "who": "김현기",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 12.6
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-19 09:48",
+    "at": "2026-09-19 09:57",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
