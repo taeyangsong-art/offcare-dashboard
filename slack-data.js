@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11782,
+  "version": 11783,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -190955,15 +190955,26 @@ window.SLACK_DATA = {
     },
     "2026-09-19": {
       "counts": {
+        "onboarding": {
+          "김현기": 2
+        },
         "as": {
           "김현기": 7
-        },
-        "onboarding": {
-          "김현기": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:00",
+          "store": "플랜비 웰니스 센터(PlanB wellness cent",
+          "biz": "2432502480",
+          "cat": "onboarding",
+          "emp": "김현기",
+          "req": "포프(태블릿) + 유프 온보딩요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "개인아이패드 온보딩 완료"
+        },
         {
           "time": "10:00",
           "store": "김해본가뒷고기 범방점",
@@ -191054,7 +191065,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 7,
+        "online": 8,
         "offline": 1,
         "unknown": 0
       },
@@ -191258,31 +191269,28 @@ window.SLACK_DATA = {
         "post": "1789743700.825809",
         "lastSeen": 1789762527.706
       },
-      "1789779603.534999": {
-        "post": "1789779603.534999",
-        "lastSeen": 1789781719.648,
-        "r": 1,
-        "day": "2026-09-19",
-        "idx": 4
-      },
       "1789779600.131479": {
         "post": "1789779600.131479",
-        "lastSeen": 1789781719.648,
+        "lastSeen": 1789781899.35,
         "r": 1,
         "day": "2026-09-19",
         "idx": 3
       },
       "1789780397.515689": {
         "post": "1789780397.515689",
-        "lastSeen": 1789781719.648
+        "lastSeen": 1789781899.35
       },
       "1789781400.574049": {
         "post": "1789781400.574049",
-        "lastSeen": 1789781719.648
+        "lastSeen": 1789781899.35
       },
       "1789781666.195399": {
         "post": "1789781666.195399",
-        "lastSeen": 1789781719.648
+        "lastSeen": 1789781899.35
+      },
+      "1789781473.046279": {
+        "post": "1789781473.046279",
+        "lastSeen": 1789781899.35
       }
     },
     "days": {
@@ -252588,14 +252596,15 @@ window.SLACK_DATA = {
             "store": "플랜비 웰니스 센터(PlanB wellness cent",
             "biz": "2432502480",
             "who": "김현기",
-            "cat": "as"
+            "cat": "onboarding",
+            "dmin": 36.8
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-19 10:35",
+    "at": "2026-09-19 10:38",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
