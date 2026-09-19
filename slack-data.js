@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11817,
+  "version": 11818,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -190968,6 +190968,17 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "11:40",
+          "store": "카페드롭탑 광주송정점",
+          "biz": "3752001463",
+          "handler": "김현기",
+          "cat": "as",
+          "intake": "offline",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
           "time": "10:00",
           "store": "꽃달아",
           "biz": "6959801497",
@@ -191236,7 +191247,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 21,
-        "offline": 3,
+        "offline": 4,
         "unknown": 0
       },
       "updatedAt": "12:02"
@@ -191434,29 +191445,25 @@ window.SLACK_DATA = {
       },
       "1789779600.131479": {
         "post": "1789779600.131479",
-        "lastSeen": 1789788632.347,
+        "lastSeen": 1789789339.93,
         "r": 1,
         "day": "2026-09-19",
         "idx": 3
       },
       "1789785000.231329": {
         "post": "1789785000.231329",
-        "lastSeen": 1789788632.347
+        "lastSeen": 1789789339.93
       },
       "1789785624.241159": {
         "post": "1789785624.241159",
-        "lastSeen": 1789788632.347,
+        "lastSeen": 1789789339.93,
         "r": 1,
         "day": "2026-09-19",
         "idx": 14
       },
       "1789786801.299409": {
         "post": "1789786801.299409",
-        "lastSeen": 1789788632.347
-      },
-      "1789786938.499979": {
-        "post": "1789786938.499979",
-        "lastSeen": 1789788632.347
+        "lastSeen": 1789789339.93
       }
     },
     "days": {
@@ -252895,7 +252902,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-19 12:30",
+    "at": "2026-09-19 12:42",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
