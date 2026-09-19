@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11764,
+  "version": 11765,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -190956,11 +190956,22 @@ window.SLACK_DATA = {
     "2026-09-19": {
       "counts": {
         "as": {
-          "김현기": 1
+          "김현기": 2
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:03",
+          "store": "드롭탑(홍대점)",
+          "biz": "2490700638",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "키오스크 주문 건 만 포스 매출 현황에 뜨지 않는 증상이 어제부터 발생했다고 하셔서 원격 점검 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "원격 들어가니 갑자기 메출 내역이 다 잘 나와있음... 일시적 오류가 아니었을까 추측 해결완료"
+        },
         {
           "time": "09:00",
           "store": "예작카페",
@@ -190975,10 +190986,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 1,
-        "offline": 0,
+        "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:03"
+      "updatedAt": "09:10"
     }
   },
   "resp": {
@@ -252439,7 +252450,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-19 09:04",
+    "at": "2026-09-19 09:11",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
