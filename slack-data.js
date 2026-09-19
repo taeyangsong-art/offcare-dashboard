@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11765,
+  "version": 11766,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -190956,11 +190956,22 @@ window.SLACK_DATA = {
     "2026-09-19": {
       "counts": {
         "as": {
-          "김현기": 2
+          "김현기": 3
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:10",
+          "store": "요소수아울렛북광주점",
+          "biz": "2254601135",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "이전 원격 상담 시 키오스크 vcat 관련 확인으로 점검 받으셨던 매장인데, 금일 '웹소켓 연결 불량' 문구 뜨며 카드 넣어도 결제 안되고 화면 멈추는 증상이 있다고 하십니다. 원격 재점검 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "지금 매장 아님, 오후 13시 예약"
+        },
         {
           "time": "09:03",
           "store": "드롭탑(홍대점)",
@@ -190985,7 +190996,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
+        "online": 2,
         "offline": 1,
         "unknown": 0
       },
@@ -252450,7 +252461,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-19 09:11",
+    "at": "2026-09-19 09:13",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
