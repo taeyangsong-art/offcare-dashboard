@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2250,
- "updatedAt": "2026-09-19 15:20",
+ "version": 2251,
+ "updatedAt": "2026-09-19 15:25",
  "days": 30,
  "items": [
   {
@@ -18,11 +18,522 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C33ATC09X",
+     "from": "댓글",
+     "path": "menu-files/1789798804_065659-0.png",
+     "kind": "pos_screen",
+     "menu": []
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3VPF2B5W",
+     "from": "댓글",
+     "path": "menu-files/1789798804_065659-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "클래식 파스타",
+       "name": "까르보나라",
+       "price": 11000
+      },
+      {
+       "category": "클래식 파스타",
+       "name": "뽀모도로 파스타",
+       "price": 11000
+      },
+      {
+       "category": "클래식 파스타",
+       "name": "알리오 올리오",
+       "price": 11000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C2WFM4PLM",
+     "from": "댓글",
+     "path": "menu-files/1789798804_065659-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "파스타",
+       "name": "매콤 까르보나라 파스타",
+       "price": 11800
+      },
+      {
+       "category": "파스타",
+       "name": "통목살 & 매콤 크림 파스타",
+       "price": 14300
+      },
+      {
+       "category": "파스타",
+       "name": "쉬림프 투움바 파스타",
+       "price": 13300
+      },
+      {
+       "category": "파스타",
+       "name": "연어 스테이크 & 로제 파스타",
+       "price": 16300
+      },
+      {
+       "category": "파스타",
+       "name": "쉬림프 알리오올리오",
+       "price": 13300
+      },
+      {
+       "category": "파스타",
+       "name": "콰트로 치즈 & 뽀모도로 파스타",
+       "price": 13300
+      },
+      {
+       "category": "파스타",
+       "name": "쉬림프 바질 크림 파스타",
+       "price": 14300
+      },
+      {
+       "category": "파스타",
+       "name": "스파이시 볼로네제 파스타",
+       "price": 15800
+      },
+      {
+       "category": "파스타",
+       "name": "매콤 명란 오일 파스타",
+       "price": 16300
+      },
+      {
+       "category": "파스타",
+       "name": "브리치즈 트러플 크림 뇨끼",
+       "price": 18300
+      },
+      {
+       "category": "파스타",
+       "name": "연어 스테이크 & 바질 크림 뇨끼",
+       "price": 18300
+      },
+      {
+       "category": "파스타",
+       "name": "봉골레 파스타",
+       "price": 13300
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C31A56V7U",
+     "from": "댓글",
+     "path": "menu-files/1789798804_065659-3.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "리조또&필라프",
+       "name": "목살 필라프",
+       "price": 14300
+      },
+      {
+       "category": "리조또&필라프",
+       "name": "매콤까르보 리조또",
+       "price": 11800
+      },
+      {
+       "category": "리조또&필라프",
+       "name": "베이컨 김치 필라프",
+       "price": 12300
+      },
+      {
+       "category": "리조또&필라프",
+       "name": "명란 크림 리조또",
+       "price": 16300
+      },
+      {
+       "category": "리조또&필라프",
+       "name": "우삼겹 필라프",
+       "price": 15300
+      },
+      {
+       "category": "리조또&필라프",
+       "name": "통목살 매콤 토마토 리조또",
+       "price": 14300
+      },
+      {
+       "category": "리조또&필라프",
+       "name": "육즙 통소세지 필라프",
+       "price": 13300
+      },
+      {
+       "category": "리조또&필라프",
+       "name": "소세지 토마토 리조또",
+       "price": 13300
+      },
+      {
+       "category": "리조또&필라프",
+       "name": "치킨스테이크 필라프",
+       "price": 13300
+      },
+      {
+       "category": "리조또&필라프",
+       "name": "새우 필라프",
+       "price": 13300
+      },
+      {
+       "category": "리조또&필라프",
+       "name": "베이컨 필라프",
+       "price": 12300
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C352V9X44",
+     "from": "댓글",
+     "path": "menu-files/1789798804_065659-4.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "찹스테이크",
+       "name": "BBQ 찹스테이크",
+       "price": 16300
+      },
+      {
+       "category": "찹스테이크",
+       "name": "블랙페퍼 찹스테이크",
+       "price": 16300
+      },
+      {
+       "category": "찹스테이크",
+       "name": "토마토 찹스테이크",
+       "price": 17300
+      },
+      {
+       "category": "찹스테이크",
+       "name": "채끝등심스테이크와 구운 야채",
+       "price": 29300
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C2ZE8EXML",
+     "from": "댓글",
+     "path": "menu-files/1789798804_065659-5.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "라자냐",
+       "name": "라자냐",
+       "price": 17300
+      },
+      {
+       "category": "라자냐",
+       "name": "베이비 백립",
+       "price": 20300
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C2ZE9C8K0",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "샐러드",
+       "name": "리코타 듬뿍 샐러드",
+       "price": 12300
+      },
+      {
+       "category": "샐러드",
+       "name": "치킨스테이크 샐러드",
+       "price": 13300
+      },
+      {
+       "category": "샐러드",
+       "name": "쉬림프 듬뿍 샐러드",
+       "price": 13300
+      },
+      {
+       "category": "샐러드",
+       "name": "목살 스테이크 샐러드",
+       "price": 14300
+      },
+      {
+       "category": "샐러드",
+       "name": "우삼겹 샐러드",
+       "price": 15300
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C31A67SBC",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "음료",
+       "name": "아메리카노",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "스파클링 아메리카노",
+       "price": 5000
+      },
+      {
+       "category": "음료",
+       "name": "복숭아 아이스티",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "카페라떼",
+       "price": 5000
+      },
+      {
+       "category": "음료",
+       "name": "바닐라라떼",
+       "price": 5500
+      },
+      {
+       "category": "음료",
+       "name": "초코라떼",
+       "price": 6000
+      },
+      {
+       "category": "음료",
+       "name": "밀크티",
+       "price": 6000
+      },
+      {
+       "category": "음료",
+       "name": "ICED 딸기라떼",
+       "price": 5000
+      },
+      {
+       "category": "음료",
+       "name": "딸기에이드",
+       "price": 5000
+      },
+      {
+       "category": "음료",
+       "name": "레몬에이드",
+       "price": 5000
+      },
+      {
+       "category": "음료",
+       "name": "자몽에이드",
+       "price": 5000
+      },
+      {
+       "category": "음료",
+       "name": "오미자에이드",
+       "price": 5000
+      },
+      {
+       "category": "음료",
+       "name": "오미자차",
+       "price": 5000
+      },
+      {
+       "category": "음료",
+       "name": "선셋 파노라마",
+       "price": 5000
+      },
+      {
+       "category": "음료",
+       "name": "블레싱 키스(디카페인)",
+       "price": 5000
+      },
+      {
+       "category": "음료",
+       "name": "레이지 애플",
+       "price": 5000
+      },
+      {
+       "category": "음료",
+       "name": "핑크 블루스",
+       "price": 5000
+      },
+      {
+       "category": "음료",
+       "name": "페퍼민트",
+       "price": 5000
+      },
+      {
+       "category": "음료",
+       "name": "뽀로로음료(밀크맛)",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "뽀로로음료(딸기맛)",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "뽀로로음료(보리차)",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "코카콜라",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "스프라이트",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "코카콜라 제로",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "스프라이트 제로",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C352VHYHJ",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류",
+       "name": "카스 500ml",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "테라 500ml",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "켈리 500ml",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "코로나 330ml",
+       "price": 6000
+      },
+      {
+       "category": "주류",
+       "name": "스텔라 330ml",
+       "price": 6000
+      },
+      {
+       "category": "주류",
+       "name": "산미구엘 애플 330ml",
+       "price": 6500
+      },
+      {
+       "category": "주류",
+       "name": "와인",
+       "price": 40000
+      },
+      {
+       "category": "주류",
+       "name": "와인",
+       "price": 50000
+      },
+      {
+       "category": "주류",
+       "name": "와인",
+       "price": 60000
+      },
+      {
+       "category": "주류",
+       "name": "참이슬 후레쉬 360ml",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "처음처럼 360ml",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "진로이즈백 360ml",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "글라스 와인(레드) 187ml",
+       "price": 8000
+      },
+      {
+       "category": "주류",
+       "name": "글라스 와인(화이트) 187ml",
+       "price": 8000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3VPJ5TSL",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "파스타",
+       "name": "우삼겹 알리오올리오",
+       "price": 15300
+      },
+      {
+       "category": "파스타",
+       "name": "관자 알리오올리오",
+       "price": 14800
+      },
+      {
+       "category": "파스타",
+       "name": "빠쉐(얼큰 해장 파스타)",
+       "price": 13800
+      },
+      {
+       "category": "파스타",
+       "name": "관자 크림 파스타",
+       "price": 14800
+      },
+      {
+       "category": "파스타",
+       "name": "우삼겹 매콤 토마토 파스타",
+       "price": 15300
+      },
+      {
+       "category": "파스타",
+       "name": "관자 토마토 파스타",
+       "price": 14800
+      },
+      {
+       "category": "파스타",
+       "name": "관자 로제 파스타",
+       "price": 15800
+      },
+      {
+       "category": "파스타",
+       "name": "채끝등심스테이크 매콤 크림 파스타",
+       "price": 19300
+      },
+      {
+       "category": "파스타",
+       "name": "채끝등심스테이크 트러플 크림 파스타",
+       "price": 21300
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1789798807.816609",
+   "rc": 2,
+   "lr": "1789799050.564089",
    "rfx": 3,
    "status": "wait",
    "handler": null,
