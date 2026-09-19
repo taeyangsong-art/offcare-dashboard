@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11772,
+  "version": 11773,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -190956,11 +190956,22 @@ window.SLACK_DATA = {
     "2026-09-19": {
       "counts": {
         "as": {
-          "김현기": 4
+          "김현기": 5
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:38",
+          "store": "태산만두 효자점",
+          "biz": "3130763031",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "포프+무프(포스기) / 무프는 ts400w로 이용중이며, 어제부터 끊김이 있다고 하셔서 원격 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "400w 프린터 ip값이 틀어져 있었음 / ip재설정후 정상 출력 확인 완료"
+        },
         {
           "time": "09:30",
           "store": "달리는 커피 광주태전점",
@@ -191007,7 +191018,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 3,
+        "online": 4,
         "offline": 1,
         "unknown": 0
       },
@@ -191213,7 +191224,10 @@ window.SLACK_DATA = {
       },
       "1789778418.839869": {
         "post": "1789778418.839869",
-        "lastSeen": 1789778727.378
+        "lastSeen": 1789778900.824,
+        "r": 1,
+        "day": "2026-09-19",
+        "idx": 0
       }
     },
     "days": {
@@ -252472,11 +252486,26 @@ window.SLACK_DATA = {
             "dmin": 10.9
           }
         ]
+      },
+      "2026-09-19": {
+        "cnt": 1,
+        "sumMin": 6.587685513496399,
+        "over": 0,
+        "items": [
+          {
+            "hm": "09:40",
+            "min": 6.6,
+            "store": "키움공방",
+            "biz": "8204600421",
+            "who": "김현기",
+            "cat": "as"
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-19 09:45",
+    "at": "2026-09-19 09:48",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
