@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11768,
+  "version": 11769,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -190956,11 +190956,22 @@ window.SLACK_DATA = {
     "2026-09-19": {
       "counts": {
         "as": {
-          "김현기": 3
+          "김현기": 4
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:30",
+          "store": "달리는 커피 광주태전점",
+          "biz": "1263012289",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "보유포스기 사용중 / 프론트  IC카드 인식률 저조로  점검 부탁드립니다 / VOC  (온도감 전혀없으시고, 단순 점검 요청입니다!)",
+          "hw": "",
+          "intake": "online",
+          "note": "인식 자체가 안되는 것은 아님, 삼성페이도 가끔 안되는데, 센서 인식을 손님이 잘못 대는게 아닐까 싶음(대표님도 동의) / 일단 추석 까지 조금 지켜보고, 만약에 추석에 조금 인식률이 떨어지거나 하면 추석 끝나고 월요일에 살펴본 후 교체 예정"
+        },
         {
           "time": "09:10",
           "store": "요소수아울렛북광주점",
@@ -190996,7 +191007,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 2,
+        "online": 3,
         "offline": 1,
         "unknown": 0
       },
@@ -252461,7 +252472,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-19 09:30",
+    "at": "2026-09-19 09:37",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
