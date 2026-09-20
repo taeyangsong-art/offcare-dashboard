@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12056,
+  "version": 12057,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192622,7 +192622,7 @@ window.SLACK_DATA = {
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "16:34",
+      "updatedAt": "16:40",
       "voc": {
         "responses": 11,
         "install": {
@@ -192840,11 +192840,11 @@ window.SLACK_DATA = {
       },
       "1789872987.322979": {
         "post": "1789872987.322979",
-        "lastSeen": 1789889718.53
+        "lastSeen": 1789890019.655
       },
       "1789876800.325919": {
         "post": "1789876800.325919",
-        "lastSeen": 1789889718.53,
+        "lastSeen": 1789890019.655,
         "r": 1,
         "day": "2026-09-20",
         "idx": 4
@@ -192855,11 +192855,14 @@ window.SLACK_DATA = {
       },
       "1789889649.674299": {
         "post": "1789889649.674299",
-        "lastSeen": 1789889718.53
+        "lastSeen": 1789890019.655,
+        "r": 1,
+        "day": "2026-09-20",
+        "idx": 16
       },
-      "1789888668.603149": {
-        "post": "1789888668.603149",
-        "lastSeen": 1789889718.53
+      "1789890002.291969": {
+        "post": "1789890002.291969",
+        "lastSeen": 1789890019.655
       }
     },
     "days": {
@@ -254799,8 +254802,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-20": {
-        "cnt": 16,
-        "sumMin": 95.90542508761088,
+        "cnt": 17,
+        "sumMin": 99.56239510377247,
         "over": 0,
         "items": [
           {
@@ -254945,13 +254948,21 @@ window.SLACK_DATA = {
             "who": "최민석",
             "cat": "as",
             "dmin": 5.4
+          },
+          {
+            "hm": "16:34",
+            "min": 3.7,
+            "store": "넛티(NUTTY)",
+            "biz": "8745100612",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-20 16:35",
+    "at": "2026-09-20 16:40",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
