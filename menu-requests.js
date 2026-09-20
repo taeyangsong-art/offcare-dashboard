@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2271,
- "updatedAt": "2026-09-20 14:45",
+ "version": 2272,
+ "updatedAt": "2026-09-20 14:56",
  "days": 30,
  "items": [
   {
@@ -59116,38 +59116,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787291923828629"
-  },
-  {
-   "ts": "1787291364.875179",
-   "date": "2026-08-21",
-   "time": "14:49",
-   "store": "라운지엠",
-   "biz": "7791102925",
-   "pos": "",
-   "content": "전일 <https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787205434388809|엑셀 + 이미지로 메뉴 등록 요청 > > 반영 완료되었으나\n품목 가나다순으로 정렬해서 재등록 요청\n• 직접 변경 안내드렸으나,  물품 많아서 진행 어렵다고 하심  \n• 전체 삭제 후 재등록 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "토스플레이스_매장_대시보드_상품등록_양식.xlsx",
-     "fid": "F0BRMP8C5PX",
-     "from": "댓글",
-     "path": "menu-files/1787291364_875179-0.xlsx",
-     "nj": 1
-    }
-   ],
-   "datt": [],
-   "replies": [
-    ":루피눈물:  대시보드 상품키 배열 바꿔드리려고 했는데 품목이 너무 많아서  별도 요청드립니다..",
-    "시간 오래 소요될 수 있음  사전 안내 완료"
-   ],
-   "rc": 8,
-   "lr": "1787294542.028009",
-   "rfx": 3,
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787291364875179"
   }
  ],
  "ocr": {
