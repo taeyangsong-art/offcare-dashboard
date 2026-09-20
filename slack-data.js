@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11985,
+  "version": 11986,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192338,11 +192338,22 @@ window.SLACK_DATA = {
     "2026-09-20": {
       "counts": {
         "as": {
-          "김동욱": 1
+          "김동욱": 2
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:46",
+          "store": "묵사랑",
+          "biz": "7693501565",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "핸드폰+프+유프/프린터 추가 구매하여 연결 지원 요청 // 우선 유프를 구매한 것으로 추정되며, PC 없을 시 사용 불가할 수 있음은 이야기했어요.",
+          "hw": "",
+          "intake": "online",
+          "note": "유프 연결 불가. 갤럭시탭/노트북/포스/데스크탑 있어야지만 프린터 2개 연결 가능안내. 휴대폰도 아이폰이라 무프 연결 불가 안내. AOS 태블릿이나 노트북 준비할 예정으로 이번에 구매하신 유프 -&gt; 무프로 교체(비용추가) 요청. CX OB 이관 AOS 태블릿이나 노트북 준비할 예정으로 이번에 구매하신 유프 - 무프로 교체(비용추가) 요청."
+        },
         {
           "time": "09:16",
           "store": "자경헤어",
@@ -192356,7 +192367,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
+        "online": 2,
         "offline": 0,
         "unknown": 0
       },
@@ -254523,7 +254534,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-20 09:47",
+    "at": "2026-09-20 09:57",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
