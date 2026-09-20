@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12048,
+  "version": 12049,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192338,7 +192338,7 @@ window.SLACK_DATA = {
     "2026-09-20": {
       "counts": {
         "as": {
-          "최민석": 7,
+          "최민석": 8,
           "김동욱": 12
         },
         "onboarding": {
@@ -192350,6 +192350,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:08",
+          "store": "마이요거트립 부평점",
+          "biz": "5276300418",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "포스기/ 배민 LITE 연동 중인데, 연동 불가 오류 발생하여 원격 지원 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "배달의민족 프랜차이즈 계정으로 배민제휴상태 +메이트 사용중 마이요거트립 본사 바이저 혹은 배민 문의 안내 완료"
+        },
         {
           "time": "15:38",
           "store": "선은손두부",
@@ -192597,7 +192608,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 18,
-        "offline": 4,
+        "offline": 5,
         "unknown": 0
       },
       "updatedAt": "16:08",
@@ -192818,11 +192829,11 @@ window.SLACK_DATA = {
       },
       "1789872987.322979": {
         "post": "1789872987.322979",
-        "lastSeen": 1789888160.198
+        "lastSeen": 1789888340.198
       },
       "1789876800.325919": {
         "post": "1789876800.325919",
-        "lastSeen": 1789888160.198,
+        "lastSeen": 1789888340.198,
         "r": 1,
         "day": "2026-09-20",
         "idx": 4
@@ -254921,7 +254932,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-20 16:09",
+    "at": "2026-09-20 16:12",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
