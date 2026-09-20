@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12045,
+  "version": 12046,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192338,7 +192338,7 @@ window.SLACK_DATA = {
     "2026-09-20": {
       "counts": {
         "as": {
-          "최민석": 6,
+          "최민석": 7,
           "김동욱": 12
         },
         "onboarding": {
@@ -192350,6 +192350,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:38",
+          "store": "선은손두부",
+          "biz": "2162273037",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "유프/ 기기 에러에 빨간불 발생으로 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "/ 용지 없을 경우 비프음 과 경고등 발생 안내 완료 용지 교체 후 정상작동 완료"
+        },
         {
           "time": "15:27",
           "store": "그린식탁 (Green Table)",
@@ -192585,7 +192596,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 17,
+        "online": 18,
         "offline": 4,
         "unknown": 0
       },
@@ -192807,11 +192818,11 @@ window.SLACK_DATA = {
       },
       "1789872987.322979": {
         "post": "1789872987.322979",
-        "lastSeen": 1789886552.784
+        "lastSeen": 1789886659.789
       },
       "1789876800.325919": {
         "post": "1789876800.325919",
-        "lastSeen": 1789886552.784,
+        "lastSeen": 1789886659.789,
         "r": 1,
         "day": "2026-09-20",
         "idx": 4
@@ -192819,13 +192830,6 @@ window.SLACK_DATA = {
       "1789876801.137439": {
         "post": "1789876801.137439",
         "lastSeen": 1789876820.823
-      },
-      "1789886281.574449": {
-        "post": "1789886281.574449",
-        "lastSeen": 1789886552.784,
-        "r": 1,
-        "day": "2026-09-20",
-        "idx": 15
       }
     },
     "days": {
@@ -254909,14 +254913,15 @@ window.SLACK_DATA = {
             "store": "선은손두부",
             "biz": "2162273037",
             "who": "최민석",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 5.4
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-20 15:42",
+    "at": "2026-09-20 15:44",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
