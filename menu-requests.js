@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2259,
- "updatedAt": "2026-09-19 23:30",
+ "version": 2260,
+ "updatedAt": "2026-09-20 09:00",
  "days": 30,
  "items": [
   {
@@ -60146,27 +60146,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787271840039809"
-  },
-  {
-   "ts": "1787270289.047959",
-   "date": "2026-08-21",
-   "time": "08:58",
-   "store": "더푸드",
-   "biz": "4300403429",
-   "pos": "토스포스",
-   "content": "커피가격인상\n아메리카노아이스 4000원\n카페라떼 아이스 5000원\n바닐라라떼 아이스 5000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787270293.238249",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787270289047959"
   }
  ],
  "ocr": {
