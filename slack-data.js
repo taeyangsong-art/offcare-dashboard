@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12090,
+  "version": 12091,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192338,7 +192338,7 @@ window.SLACK_DATA = {
     "2026-09-20": {
       "counts": {
         "as": {
-          "최민석": 20,
+          "최민석": 21,
           "김동욱": 12
         },
         "onboarding": {
@@ -192351,6 +192351,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "20:36",
+          "store": "비플러스",
+          "biz": "6121493916",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "포프(포스기) 사용 중, 용지 미출력 및 소리 설정 지원 부탁드리겠습니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "cpp3000 프린터 usb 인식 고장 프린터 껏켯 후 정상작동이나 다시 끊길 수 있음 안내 및 배달 미사용으로 프론트 rj45연결 안내 선 찾으신 후 연결 시도 해보신다고 합니다. 가이드안내 완료"
+        },
         {
           "time": "19:09",
           "store": "드롭탑 천안삼거리(서울)휴게소점",
@@ -192752,31 +192763,31 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 27,
+        "online": 28,
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "20:36",
+      "updatedAt": "20:55",
       "voc": {
-        "responses": 12,
+        "responses": 13,
         "install": {
           "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 12,
+          "count": 13,
           "low": 1
         },
         "high": {
           "install": 2,
-          "nps": 7
+          "nps": 8
         },
         "npsDist": {
           "3": 1,
           "7": 2,
           "8": 1,
           "9": 1,
-          "10": 7
+          "10": 8
         },
         "installDist": {
           "5": 2
@@ -192786,16 +192797,16 @@ window.SLACK_DATA = {
           "기타": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 2,
+            "low": 0
+          },
           "1개월": {
             "total": 6,
             "low": 1
           },
           "12개월": {
             "total": 2,
-            "low": 0
-          },
-          "3개월": {
-            "total": 1,
             "low": 0
           },
           "6개월": {
@@ -192808,13 +192819,13 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "SECTA9": {
+            "total": 3,
+            "low": 0
+          },
           "KOCES": {
             "total": 4,
             "low": 1
-          },
-          "SECTA9": {
-            "total": 2,
-            "low": 0
           },
           "KIS": {
             "total": 4,
@@ -192938,11 +192949,11 @@ window.SLACK_DATA = {
       },
       "1789872987.322979": {
         "post": "1789872987.322979",
-        "lastSeen": 1789904726.989
+        "lastSeen": 1789905321.372
       },
       "1789876800.325919": {
         "post": "1789876800.325919",
-        "lastSeen": 1789904726.989,
+        "lastSeen": 1789905321.372,
         "r": 1,
         "day": "2026-09-20",
         "idx": 4
@@ -192950,13 +192961,6 @@ window.SLACK_DATA = {
       "1789876801.137439": {
         "post": "1789876801.137439",
         "lastSeen": 1789876820.823
-      },
-      "1789904199.901719": {
-        "post": "1789904199.901719",
-        "lastSeen": 1789904726.989,
-        "r": 1,
-        "day": "2026-09-20",
-        "idx": 22
       }
     },
     "days": {
@@ -255103,14 +255107,15 @@ window.SLACK_DATA = {
             "store": "비플러스",
             "biz": "6121493916",
             "who": "최민석",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 13.7
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-20 20:45",
+    "at": "2026-09-20 20:55",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
