@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12037,
+  "version": 12038,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192338,7 +192338,7 @@ window.SLACK_DATA = {
     "2026-09-20": {
       "counts": {
         "as": {
-          "김동욱": 11,
+          "김동욱": 12,
           "최민석": 3
         },
         "onboarding": {
@@ -192350,6 +192350,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "14:56",
+          "store": "리움마켓",
+          "biz": "7681802583",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "휴대폰+프+유프/  재온보딩 중 프론트 연결 불가로 지원 요청드립니다. (프론트-유프 시리얼 설정 했으나 로그아웃 하면서 초기화되어 다시해야함..)",
+          "hw": "",
+          "intake": "online",
+          "note": "프린터 설정 및 로고사용으로 속도변경완료"
+        },
         {
           "time": "13:44",
           "store": "동동국밥 논현점",
@@ -192541,7 +192552,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 13,
+        "online": 14,
         "offline": 4,
         "unknown": 0
       },
@@ -192702,11 +192713,11 @@ window.SLACK_DATA = {
       },
       "1789872987.322979": {
         "post": "1789872987.322979",
-        "lastSeen": 1789884038.039
+        "lastSeen": 1789884140.579
       },
       "1789876800.325919": {
         "post": "1789876800.325919",
-        "lastSeen": 1789884038.039,
+        "lastSeen": 1789884140.579,
         "r": 1,
         "day": "2026-09-20",
         "idx": 4
@@ -192717,7 +192728,7 @@ window.SLACK_DATA = {
       },
       "1789883751.790639": {
         "post": "1789883751.790639",
-        "lastSeen": 1789884038.039,
+        "lastSeen": 1789884140.579,
         "r": 1,
         "day": "2026-09-20",
         "idx": 12
@@ -254784,7 +254795,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-20 15:00",
+    "at": "2026-09-20 15:02",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
