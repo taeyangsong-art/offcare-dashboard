@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12040,
+  "version": 12041,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192567,25 +192567,25 @@ window.SLACK_DATA = {
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "15:15",
+      "updatedAt": "15:27",
       "voc": {
-        "responses": 4,
+        "responses": 6,
         "install": {
           "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 4,
+          "count": 6,
           "low": 1
         },
         "high": {
           "install": 2,
-          "nps": 2
+          "nps": 3
         },
         "npsDist": {
           "3": 1,
-          "7": 1,
-          "10": 2
+          "7": 2,
+          "10": 3
         },
         "installDist": {
           "5": 2
@@ -192595,6 +192595,14 @@ window.SLACK_DATA = {
           "기타": 1
         },
         "byTenure": {
+          "3개월": {
+            "total": 1,
+            "low": 0
+          },
+          "6개월": {
+            "total": 1,
+            "low": 0
+          },
           "1개월": {
             "total": 2,
             "low": 1
@@ -192605,6 +192613,14 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 2,
+            "low": 0
+          },
+          "SECTA9": {
+            "total": 1,
+            "low": 0
+          },
           "KPN": {
             "total": 1,
             "low": 0
@@ -192612,10 +192628,6 @@ window.SLACK_DATA = {
           "KOCES": {
             "total": 1,
             "low": 1
-          },
-          "KIS": {
-            "total": 1,
-            "low": 0
           },
           "KSNET": {
             "total": 1,
@@ -192756,11 +192768,11 @@ window.SLACK_DATA = {
       },
       "1789872987.322979": {
         "post": "1789872987.322979",
-        "lastSeen": 1789884921.616
+        "lastSeen": 1789885639.374
       },
       "1789876800.325919": {
         "post": "1789876800.325919",
-        "lastSeen": 1789884921.616,
+        "lastSeen": 1789885639.374,
         "r": 1,
         "day": "2026-09-20",
         "idx": 4
@@ -192771,7 +192783,14 @@ window.SLACK_DATA = {
       },
       "1789884901.015179": {
         "post": "1789884901.015179",
-        "lastSeen": 1789884921.616
+        "lastSeen": 1789885639.374,
+        "r": 1,
+        "day": "2026-09-20",
+        "idx": 13
+      },
+      "1789885622.799019": {
+        "post": "1789885622.799019",
+        "lastSeen": 1789885639.374
       }
     },
     "days": {
@@ -254711,8 +254730,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-20": {
-        "cnt": 13,
-        "sumMin": 82.7672775387764,
+        "cnt": 14,
+        "sumMin": 89.09194122155508,
         "over": 0,
         "items": [
           {
@@ -254830,13 +254849,21 @@ window.SLACK_DATA = {
             "who": "최민석",
             "cat": "as",
             "dmin": 11
+          },
+          {
+            "hm": "15:15",
+            "min": 6.3,
+            "store": "김해본가뒷고기 범방점",
+            "biz": "2900703991",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-20 15:15",
+    "at": "2026-09-20 15:27",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
