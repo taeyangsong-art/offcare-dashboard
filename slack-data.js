@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11981,
+  "version": 11982,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192336,11 +192336,27 @@ window.SLACK_DATA = {
       }
     },
     "2026-09-20": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "김동욱": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:16",
+          "store": "자경헤어",
+          "biz": "1262943054",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "노트북+터2 / 결제중 오류가 발생했어요. / 처리실패(8009) 발생하여 지원 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "최소금액 / 가맹점 자가매출로 확인 / 포터프 -&gt; 터프로 재온보딩 완료 포터프 - 터프로 재온보딩 완료"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 0,
         "unknown": 0
       },
@@ -254507,7 +254523,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-20 09:19",
+    "at": "2026-09-20 09:27",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
