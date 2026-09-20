@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12061,
+  "version": 12062,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192644,15 +192644,15 @@ window.SLACK_DATA = {
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "16:44",
+      "updatedAt": "17:07",
       "voc": {
-        "responses": 11,
+        "responses": 12,
         "install": {
           "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 11,
+          "count": 12,
           "low": 1
         },
         "high": {
@@ -192662,6 +192662,7 @@ window.SLACK_DATA = {
         "npsDist": {
           "3": 1,
           "7": 2,
+          "8": 1,
           "9": 1,
           "10": 7
         },
@@ -192674,7 +192675,7 @@ window.SLACK_DATA = {
         },
         "byTenure": {
           "1개월": {
-            "total": 5,
+            "total": 6,
             "low": 1
           },
           "12개월": {
@@ -192696,7 +192697,7 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KOCES": {
-            "total": 3,
+            "total": 4,
             "low": 1
           },
           "SECTA9": {
@@ -192858,11 +192859,11 @@ window.SLACK_DATA = {
       },
       "1789872987.322979": {
         "post": "1789872987.322979",
-        "lastSeen": 1789891239.476
+        "lastSeen": 1789892128.463
       },
       "1789876800.325919": {
         "post": "1789876800.325919",
-        "lastSeen": 1789891239.476,
+        "lastSeen": 1789892128.463,
         "r": 1,
         "day": "2026-09-20",
         "idx": 4
@@ -192873,10 +192874,14 @@ window.SLACK_DATA = {
       },
       "1789890002.291969": {
         "post": "1789890002.291969",
-        "lastSeen": 1789891239.476,
+        "lastSeen": 1789892128.463,
         "r": 1,
         "day": "2026-09-20",
         "idx": 18
+      },
+      "1789888668.603149": {
+        "post": "1789888668.603149",
+        "lastSeen": 1789892128.463
       }
     },
     "days": {
@@ -254994,7 +254999,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-20 17:00",
+    "at": "2026-09-20 17:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
