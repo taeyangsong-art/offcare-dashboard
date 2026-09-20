@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12043,
+  "version": 12044,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192578,26 +192578,26 @@ window.SLACK_DATA = {
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "15:29",
+      "updatedAt": "15:38",
       "voc": {
-        "responses": 8,
+        "responses": 10,
         "install": {
           "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 8,
+          "count": 10,
           "low": 1
         },
         "high": {
           "install": 2,
-          "nps": 4
+          "nps": 6
         },
         "npsDist": {
           "3": 1,
           "7": 2,
           "9": 1,
-          "10": 4
+          "10": 6
         },
         "installDist": {
           "5": 2
@@ -192607,6 +192607,10 @@ window.SLACK_DATA = {
           "기타": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 4,
+            "low": 1
+          },
           "12개월": {
             "total": 2,
             "low": 0
@@ -192619,31 +192623,27 @@ window.SLACK_DATA = {
             "total": 1,
             "low": 0
           },
-          "1개월": {
-            "total": 2,
-            "low": 1
-          },
           "구매설치": {
             "total": 2,
             "low": 0
           }
         },
         "byVan": {
-          "KIS": {
-            "total": 4,
-            "low": 0
+          "KOCES": {
+            "total": 2,
+            "low": 1
           },
           "SECTA9": {
-            "total": 1,
+            "total": 2,
+            "low": 0
+          },
+          "KIS": {
+            "total": 4,
             "low": 0
           },
           "KPN": {
             "total": 1,
             "low": 0
-          },
-          "KOCES": {
-            "total": 1,
-            "low": 1
           },
           "KSNET": {
             "total": 1,
@@ -192678,6 +192678,18 @@ window.SLACK_DATA = {
           }
         ],
         "praises": [
+          {
+            "time": "15:37",
+            "store": "몰입의즐거움",
+            "storeId": "579544",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "편리해요. 그리고 판매점인 아이샵케어에서 24시간 고충처리를 바로바로해결해줘서 만족도가 정말 높습니다.",
+            "byReaction": false,
+            "doneDate": ""
+          },
           {
             "time": "05:41",
             "store": "무지개 세탁소",
@@ -192784,11 +192796,11 @@ window.SLACK_DATA = {
       },
       "1789872987.322979": {
         "post": "1789872987.322979",
-        "lastSeen": 1789885938.591
+        "lastSeen": 1789886301.46
       },
       "1789876800.325919": {
         "post": "1789876800.325919",
-        "lastSeen": 1789885938.591,
+        "lastSeen": 1789886301.46,
         "r": 1,
         "day": "2026-09-20",
         "idx": 4
@@ -192799,10 +192811,14 @@ window.SLACK_DATA = {
       },
       "1789885622.799019": {
         "post": "1789885622.799019",
-        "lastSeen": 1789885938.591,
+        "lastSeen": 1789886301.46,
         "r": 1,
         "day": "2026-09-20",
         "idx": 14
+      },
+      "1789886281.574449": {
+        "post": "1789886281.574449",
+        "lastSeen": 1789886301.46
       }
     },
     "days": {
@@ -254884,7 +254900,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-20 15:32",
+    "at": "2026-09-20 15:38",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
