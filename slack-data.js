@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12089,
+  "version": 12090,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192938,11 +192938,11 @@ window.SLACK_DATA = {
       },
       "1789872987.322979": {
         "post": "1789872987.322979",
-        "lastSeen": 1789904240.899
+        "lastSeen": 1789904726.989
       },
       "1789876800.325919": {
         "post": "1789876800.325919",
-        "lastSeen": 1789904240.899,
+        "lastSeen": 1789904726.989,
         "r": 1,
         "day": "2026-09-20",
         "idx": 4
@@ -192953,7 +192953,10 @@ window.SLACK_DATA = {
       },
       "1789904199.901719": {
         "post": "1789904199.901719",
-        "lastSeen": 1789904240.899
+        "lastSeen": 1789904726.989,
+        "r": 1,
+        "day": "2026-09-20",
+        "idx": 22
       }
     },
     "days": {
@@ -254893,8 +254896,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-20": {
-        "cnt": 22,
-        "sumMin": 143.34458719094593,
+        "cnt": 23,
+        "sumMin": 148.0786252061526,
         "over": 0,
         "items": [
           {
@@ -255093,13 +255096,21 @@ window.SLACK_DATA = {
             "who": "최민석",
             "cat": "as",
             "dmin": 5.3
+          },
+          {
+            "hm": "20:36",
+            "min": 4.7,
+            "store": "비플러스",
+            "biz": "6121493916",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-20 20:37",
+    "at": "2026-09-20 20:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
