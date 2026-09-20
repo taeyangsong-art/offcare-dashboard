@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12038,
+  "version": 12039,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192339,7 +192339,7 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김동욱": 12,
-          "최민석": 3
+          "최민석": 4
         },
         "onboarding": {
           "김동욱": 1
@@ -192360,6 +192360,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "프린터 설정 및 로고사용으로 속도변경완료"
+        },
+        {
+          "time": "14:55",
+          "store": "네일도 맑음",
+          "biz": "2093083717",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "포프(노트북) 으로 이용중인 매장인데, 기존 기기가 포스와 연동이 지속 해제되는 문제 발생으로 프론트 초기화 및 와이파이 2.4g 연결 모두 진행을 해봐도 동일 증상이라 기기 교체를 진행 해드렸던 상황입니다. (CX 인입되어 온도감 높으셨던 상황이라 ",
+          "hw": "",
+          "intake": "online",
+          "note": "대체품 포프 온보딩 완료 기존 미회수건 22일 재접수 완료 하였습니다."
         },
         {
           "time": "13:44",
@@ -192552,26 +192563,28 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 14,
+        "online": 15,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "14:56",
+      "updatedAt": "15:06",
       "voc": {
-        "responses": 2,
+        "responses": 4,
         "install": {
           "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 2,
-          "low": 0
+          "count": 4,
+          "low": 1
         },
         "high": {
           "install": 2,
           "nps": 2
         },
         "npsDist": {
+          "3": 1,
+          "7": 1,
           "10": 2
         },
         "installDist": {
@@ -192582,12 +192595,24 @@ window.SLACK_DATA = {
           "기타": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 2,
+            "low": 1
+          },
           "구매설치": {
             "total": 2,
             "low": 0
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 1,
+            "low": 0
+          },
+          "KOCES": {
+            "total": 1,
+            "low": 1
+          },
           "KIS": {
             "total": 1,
             "low": 0
@@ -192597,8 +192622,33 @@ window.SLACK_DATA = {
             "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1
+        },
+        "alerts": [
+          {
+            "time": "15:06",
+            "store": "이엑스 바이 까리노(EX by CARINO)",
+            "storeId": "597053",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "시스템이 느리고 잦은 업데이트로 결제 지연 발생",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
         "praises": [
           {
             "time": "05:41",
@@ -192713,11 +192763,11 @@ window.SLACK_DATA = {
       },
       "1789872987.322979": {
         "post": "1789872987.322979",
-        "lastSeen": 1789884140.579
+        "lastSeen": 1789884682.641
       },
       "1789876800.325919": {
         "post": "1789876800.325919",
-        "lastSeen": 1789884140.579,
+        "lastSeen": 1789884682.641,
         "r": 1,
         "day": "2026-09-20",
         "idx": 4
@@ -192725,13 +192775,6 @@ window.SLACK_DATA = {
       "1789876801.137439": {
         "post": "1789876801.137439",
         "lastSeen": 1789876820.823
-      },
-      "1789883751.790639": {
-        "post": "1789883751.790639",
-        "lastSeen": 1789884140.579,
-        "r": 1,
-        "day": "2026-09-20",
-        "idx": 12
       }
     },
     "days": {
@@ -254788,14 +254831,15 @@ window.SLACK_DATA = {
             "store": "네일도 맑음",
             "biz": "2093083717",
             "who": "최민석",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 11
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-20 15:02",
+    "at": "2026-09-20 15:11",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
