@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2266,
- "updatedAt": "2026-09-20 12:06",
+ "version": 2267,
+ "updatedAt": "2026-09-20 12:45",
  "days": 30,
  "items": [
   {
@@ -59620,29 +59620,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787287923405579"
-  },
-  {
-   "ts": "1787283661.653639",
-   "date": "2026-08-21",
-   "time": "12:41",
-   "store": "김밥조",
-   "biz": "7275900554",
-   "pos": "오케이포스",
-   "content": "KISOKPOS 메뉴",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "메뉴 변경 요청 부탁드립니다!\n• 쫄면 8000\n• 우동 8000\n• 떡볶이 7000\n• 오뎅탕 7000\n• 샌드위치 카테고리 추가 별도로 만들어 주세요\n• 햄치즈샌드위치 3800\n• 햄치즈통샌드위치 7300\n• 치킨텐더샌드위치 4000\n• 치킨텐더통샌드위치 7700\n• 에그무스샌드위치 2800\n• 통에그무스샌드위치 5300\n• 바질페스토 18000\n• 수제쨈 8000"
-   ],
-   "rc": 2,
-   "lr": "1787283698.801699",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787283661653639"
   }
  ],
  "ocr": {
