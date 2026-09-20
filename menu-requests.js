@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2263,
- "updatedAt": "2026-09-20 10:00",
+ "version": 2264,
+ "updatedAt": "2026-09-20 10:07",
  "days": 30,
  "items": [
   {
@@ -59618,29 +59618,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787278980607179"
-  },
-  {
-   "ts": "1787274137.482859",
-   "date": "2026-08-21",
-   "time": "10:02",
-   "store": "더 멀리",
-   "biz": "3976300914",
-   "pos": "토스포스",
-   "content": "책 추가 부탁드립니다. \n\n절망하는 이들을 위한 민주주의\t23,000\n이지페이지: 사람은 무엇으로 사는가(큰글자책) 17,000\n어휘력 높이고 싶은 어른을 위한 필사책(반양장)\t22,000\n말과 글의 지성을 깨우는 필사 노트\t\t22,000\n하루 한 줄 마음 챙김 필사책\t\t14,800\n제사를 폐함: 삼대 여자들의 종가 혁신 연대기\t15,800\n천로역정\t\t20,000\n안녕, 피터팬\t\t22,000\n남성과 함께하는 페미니즘\t\t17,000\n차별을 훔치는 남자들\t\t19,000\nThe Odyssey: The Complete Screenplay(Paperback)\t\t26,000\n내 생애 첫 번째 철학 수업\t\t18,000\n내 점수는 별 다섯 개\t\t14,000\n하지 않아도 되는 숙제\t\t14,000\n다정한 어른이 된다는 것\t\t17,000\n외톨이 역을 떠나며\t\t30,000\n자몽살구클럽\t12,000\n뉴스, 믿어도 될까?(비행청소년 18)\t\t15,000\n기후로 보는 한국사\t\t19,800\n책임을 묻다\t\t22,000\nDK 지도로 보는 제2차 세계대전(양장본 Hardcover)\t53,000\n기후위기는 어떻게 내 몸을 병들게 하는가\t\t23,000",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "등록 완료"
-   ],
-   "rc": 2,
-   "lr": "1787274769.560329",
-   "rfx": 3,
-   "status": "done",
-   "handler": "심성현",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787274137482859"
   }
  ],
  "ocr": {
