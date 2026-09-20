@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12084,
+  "version": 12085,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192345,6 +192345,7 @@ window.SLACK_DATA = {
           "김동욱": 1
         },
         "menu": {
+          "최민석": 1,
           "김동욱": 2
         }
       },
@@ -192471,6 +192472,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "프론트 재시작 후 정상작동 완료"
+        },
+        {
+          "time": "16:17",
+          "store": "평강삼계탕 중앙대점",
+          "biz": "2610901136",
+          "cat": "menu",
+          "emp": "최민석",
+          "req": "오케이포스) 메뉴 추가 요청 >>",
+          "hw": "",
+          "intake": "offline",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 포장 숟가락 추가 / 0원 / 2+1 / 45,000원 / 솔라피 발송 완료"
         },
         {
           "time": "16:13",
@@ -192741,7 +192753,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 27,
-        "offline": 8,
+        "offline": 9,
         "unknown": 0
       },
       "updatedAt": "19:09",
@@ -192926,11 +192938,11 @@ window.SLACK_DATA = {
       },
       "1789872987.322979": {
         "post": "1789872987.322979",
-        "lastSeen": 1789900335.888
+        "lastSeen": 1789901126.848
       },
       "1789876800.325919": {
         "post": "1789876800.325919",
-        "lastSeen": 1789900335.888,
+        "lastSeen": 1789901126.848,
         "r": 1,
         "day": "2026-09-20",
         "idx": 4
@@ -192938,10 +192950,6 @@ window.SLACK_DATA = {
       "1789876801.137439": {
         "post": "1789876801.137439",
         "lastSeen": 1789876820.823
-      },
-      "1789888668.603149": {
-        "post": "1789888668.603149",
-        "lastSeen": 1789900335.888
       }
     },
     "days": {
@@ -255087,7 +255095,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-20 19:32",
+    "at": "2026-09-20 19:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
