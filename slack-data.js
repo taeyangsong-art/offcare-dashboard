@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12077,
+  "version": 12078,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192338,7 +192338,7 @@ window.SLACK_DATA = {
     "2026-09-20": {
       "counts": {
         "as": {
-          "최민석": 16,
+          "최민석": 17,
           "김동욱": 12
         },
         "onboarding": {
@@ -192350,6 +192350,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "18:48",
+          "store": "주네일스토리",
+          "biz": "4932700121",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "포프(데스크탑) 연결끊김으로 인한 재온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포프 재온보딩 완료"
+        },
         {
           "time": "18:30",
           "store": "웨이브랩스 광교SK뷰레이크37F",
@@ -192696,11 +192707,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 24,
+        "online": 25,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "18:48",
+      "updatedAt": "18:49",
       "voc": {
         "responses": 12,
         "install": {
@@ -192889,11 +192900,11 @@ window.SLACK_DATA = {
       },
       "1789872987.322979": {
         "post": "1789872987.322979",
-        "lastSeen": 1789897762.852
+        "lastSeen": 1789898182.662
       },
       "1789876800.325919": {
         "post": "1789876800.325919",
-        "lastSeen": 1789897762.852,
+        "lastSeen": 1789898182.662,
         "r": 1,
         "day": "2026-09-20",
         "idx": 4
@@ -192901,6 +192912,10 @@ window.SLACK_DATA = {
       "1789876801.137439": {
         "post": "1789876801.137439",
         "lastSeen": 1789876820.823
+      },
+      "1789888668.603149": {
+        "post": "1789888668.603149",
+        "lastSeen": 1789898182.662
       }
     },
     "days": {
@@ -255046,7 +255061,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-20 18:49",
+    "at": "2026-09-20 18:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
