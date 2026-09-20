@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2278,
- "updatedAt": "2026-09-20 18:10",
+ "version": 2279,
+ "updatedAt": "2026-09-20 18:15",
  "days": 30,
  "items": [
   {
@@ -57293,27 +57293,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "심성현",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787305159854719"
-  },
-  {
-   "ts": "1787303558.159039",
-   "date": "2026-08-21",
-   "time": "18:12",
-   "store": "스낵팩멜번 부천점",
-   "biz": "7173801584",
-   "pos": "토스포스",
-   "content": "토스포스 메뉴 복사 부탁드립니다.\n메뉴 복사 매장 : 스낵팩멜번 (<tel:···|···>)",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1787320996.307649",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787303558159039"
   }
  ],
  "ocr": {
