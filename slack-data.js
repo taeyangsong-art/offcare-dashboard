@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12078,
+  "version": 12079,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192338,7 +192338,7 @@ window.SLACK_DATA = {
     "2026-09-20": {
       "counts": {
         "as": {
-          "최민석": 17,
+          "최민석": 18,
           "김동욱": 12
         },
         "onboarding": {
@@ -192350,6 +192350,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "18:49",
+          "store": "네마",
+          "biz": "6700703445",
+          "cat": "as",
+          "emp": "최민석",
+          "req": "포스기 연결끊김으로 인한 점검 요청드립니다. (매장이 아니어 자세한 증상 파악 불가)",
+          "hw": "",
+          "intake": "online",
+          "note": "WiFi저장됨 표시되어 2층 공유기 연결하여 정상연결 완료"
+        },
         {
           "time": "18:48",
           "store": "주네일스토리",
@@ -192707,11 +192718,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 25,
+        "online": 26,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "18:49",
+      "updatedAt": "19:00",
       "voc": {
         "responses": 12,
         "install": {
@@ -192900,11 +192911,11 @@ window.SLACK_DATA = {
       },
       "1789872987.322979": {
         "post": "1789872987.322979",
-        "lastSeen": 1789898182.662
+        "lastSeen": 1789898421.961
       },
       "1789876800.325919": {
         "post": "1789876800.325919",
-        "lastSeen": 1789898182.662,
+        "lastSeen": 1789898421.961,
         "r": 1,
         "day": "2026-09-20",
         "idx": 4
@@ -192912,10 +192923,6 @@ window.SLACK_DATA = {
       "1789876801.137439": {
         "post": "1789876801.137439",
         "lastSeen": 1789876820.823
-      },
-      "1789888668.603149": {
-        "post": "1789888668.603149",
-        "lastSeen": 1789898182.662
       }
     },
     "days": {
@@ -255061,7 +255068,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-20 18:56",
+    "at": "2026-09-20 19:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
