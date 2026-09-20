@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2262,
- "updatedAt": "2026-09-20 09:57",
+ "version": 2263,
+ "updatedAt": "2026-09-20 10:00",
  "days": 30,
  "items": [
   {
@@ -59641,128 +59641,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "심성현",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787274137482859"
-  },
-  {
-   "ts": "1787273874.394869",
-   "date": "2026-08-21",
-   "time": "09:57",
-   "store": "현이네 빤라쵄",
-   "biz": "3340203772",
-   "pos": "토스포스",
-   "content": "메뉴판",
-   "special": "",
-   "drive": [
-    "https://drive.google.com/file/d/157qvyFqY3L2qnHkaPwtLTdQTTMEB-l_l/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BRL5YP953",
-     "from": "댓글",
-     "path": "menu-files/1787273874_394869-0.png",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "무침",
-       "name": "야채",
-       "price": 1500
-      },
-      {
-       "category": "무침",
-       "name": "소고기",
-       "price": 3000
-      },
-      {
-       "category": "무침",
-       "name": "공기밥",
-       "price": 1000
-      },
-      {
-       "category": "구이",
-       "name": "소세지",
-       "price": 4000
-      },
-      {
-       "category": "주류및음료",
-       "name": "소주",
-       "price": 5000
-      },
-      {
-       "category": "주류및음료",
-       "name": "맥주",
-       "price": 5000
-      },
-      {
-       "category": "주류및음료",
-       "name": "음료수",
-       "price": 2000
-      },
-      {
-       "category": "주류및음료",
-       "name": "중국음료수",
-       "price": 3000
-      }
-     ]
-    }
-   ],
-   "datt": [
-    {
-     "id": "157qvyFqY3L2qnHkaPwtLTdQTTMEB-l_l",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "무침",
-       "name": "야채",
-       "price": 1500
-      },
-      {
-       "category": "무침",
-       "name": "소고기",
-       "price": 3000
-      },
-      {
-       "category": "무침",
-       "name": "공기밥",
-       "price": 1000
-      },
-      {
-       "category": "구이",
-       "name": "소세지",
-       "price": 4000
-      },
-      {
-       "category": "주류및음료",
-       "name": "소주",
-       "price": 5000
-      },
-      {
-       "category": "주류및음료",
-       "name": "맥주",
-       "price": 5000
-      },
-      {
-       "category": "주류및음료",
-       "name": "음료수",
-       "price": 2000
-      },
-      {
-       "category": "주류및음료",
-       "name": "중국음료수",
-       "price": 3000
-      }
-     ]
-    }
-   ],
-   "replies": [
-    "등록 완료"
-   ],
-   "rc": 3,
-   "lr": "1787274399.507639",
-   "rfx": 3,
-   "status": "done",
-   "handler": "심성현",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787273874394869"
   }
  ],
  "ocr": {
