@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2275,
- "updatedAt": "2026-09-20 16:18",
+ "version": 2276,
+ "updatedAt": "2026-09-20 16:27",
  "days": 30,
  "items": [
   {
@@ -13,18 +13,19 @@ window.MENU_REQUESTS = {
    "time": "16:17",
    "store": "평강삼계탕 중앙대점",
    "biz": "2610901136",
-   "pos": "",
-   "content": "메뉴 추가 요청 >>",
+   "pos": "오케이포스",
+   "content": "오케이포스) 메뉴 추가 요청 >>",
    "special": "",
    "drive": [],
    "files": 0,
    "att": [],
    "datt": [],
    "replies": [
-    "포장 숟가락 추가 메뉴 생성"
+    "포장 숟가락 추가 / 0원",
+    "2+1 / 45,000원"
    ],
-   "rc": 2,
-   "lr": "1789888702.364339",
+   "rc": 3,
+   "lr": "1789888728.924709",
    "rfx": 3,
    "status": "wait",
    "handler": null,
