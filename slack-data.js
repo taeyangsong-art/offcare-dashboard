@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12036,
+  "version": 12037,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192545,7 +192545,7 @@ window.SLACK_DATA = {
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "14:55",
+      "updatedAt": "14:56",
       "voc": {
         "responses": 2,
         "install": {
@@ -192702,11 +192702,11 @@ window.SLACK_DATA = {
       },
       "1789872987.322979": {
         "post": "1789872987.322979",
-        "lastSeen": 1789883780.033
+        "lastSeen": 1789884038.039
       },
       "1789876800.325919": {
         "post": "1789876800.325919",
-        "lastSeen": 1789883780.033,
+        "lastSeen": 1789884038.039,
         "r": 1,
         "day": "2026-09-20",
         "idx": 4
@@ -192717,7 +192717,10 @@ window.SLACK_DATA = {
       },
       "1789883751.790639": {
         "post": "1789883751.790639",
-        "lastSeen": 1789883780.033
+        "lastSeen": 1789884038.039,
+        "r": 1,
+        "day": "2026-09-20",
+        "idx": 12
       }
     },
     "days": {
@@ -254657,8 +254660,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-20": {
-        "cnt": 12,
-        "sumMin": 80.14652152061463,
+        "cnt": 13,
+        "sumMin": 82.7672775387764,
         "over": 0,
         "items": [
           {
@@ -254767,13 +254770,21 @@ window.SLACK_DATA = {
             "who": "최민석",
             "cat": "as",
             "dmin": 7.5
+          },
+          {
+            "hm": "14:55",
+            "min": 2.6,
+            "store": "네일도 맑음",
+            "biz": "2093083717",
+            "who": "최민석",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-20 14:56",
+    "at": "2026-09-20 15:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
