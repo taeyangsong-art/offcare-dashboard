@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2276,
- "updatedAt": "2026-09-20 16:27",
+ "version": 2277,
+ "updatedAt": "2026-09-20 16:56",
  "days": 30,
  "items": [
   {
@@ -58241,29 +58241,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787302879512159"
-  },
-  {
-   "ts": "1787298677.640629",
-   "date": "2026-08-21",
-   "time": "16:51",
-   "store": "원일국어과학학원",
-   "biz": "5849901966",
-   "pos": "",
-   "content": "메뉴 등록 요청 드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "중등국어 240,000원\n고등국어 280,000원\n중등과학 200,000원\n고등과학 240,000원"
-   ],
-   "rc": 3,
-   "lr": "1787299117.690949",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787298677640629"
   }
  ],
  "ocr": {
