@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 11998,
+  "version": 11999,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192338,11 +192338,22 @@ window.SLACK_DATA = {
     "2026-09-20": {
       "counts": {
         "as": {
-          "김동욱": 3
+          "김동욱": 4
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:12",
+          "store": "요아빙수 숙명여대점",
+          "biz": "4130930756",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "키오스크로 결제 시 결제가 안되고 로딩화면만 뜨며 결제 불가, 결제 불가하여 결제 취소 후 재결제 시도하려고 하면 화면이 멈추는 증상이 있다고 하셔서 원격 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "키오스크 껏다 킨 뒤 정상확인. 다만, 왜 발생했는지 집요하게 확인요청주심. 해당 시간 대 kis agent 호출이 안된걸로 추측되는데 왜 안되었는지 재발생 안하는 방법 문의로 정확한 원인분석을 위해 토플 로그 확인요청하심"
+        },
         {
           "time": "10:00",
           "store": "빈앤브랜드",
@@ -192378,11 +192389,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 3,
+        "online": 4,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "11:12",
+      "updatedAt": "11:41",
       "voc": {
         "responses": 2,
         "install": {
@@ -192572,17 +192583,10 @@ window.SLACK_DATA = {
       },
       "1789870216.574059": {
         "post": "1789870216.574059",
-        "lastSeen": 1789872079.205,
+        "lastSeen": 1789872140.79,
         "r": 1,
         "day": "2026-09-20",
         "idx": 2
-      },
-      "1789870327.774119": {
-        "post": "1789870327.774119",
-        "lastSeen": 1789872079.205,
-        "r": 1,
-        "day": "2026-09-20",
-        "idx": 1
       }
     },
     "days": {
@@ -254541,7 +254545,8 @@ window.SLACK_DATA = {
             "store": "요아빙수 숙명여대점",
             "biz": "4130930756",
             "who": "김동욱",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 29.7
           },
           {
             "hm": "11:10",
@@ -254556,7 +254561,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-20 11:41",
+    "at": "2026-09-20 11:42",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
