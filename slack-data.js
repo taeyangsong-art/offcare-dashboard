@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12257,
+  "version": 12258,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -194158,7 +194158,7 @@ window.SLACK_DATA = {
         "offline": 21,
         "unknown": 0
       },
-      "updatedAt": "14:36",
+      "updatedAt": "14:39",
       "voc": {
         "responses": 3,
         "install": {
@@ -194228,9 +194228,9 @@ window.SLACK_DATA = {
           {
             "key": "2026년 9월 21일 오전 8:20:53|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789614054398999#1",
             "handler": "김규빈",
-            "status": "",
+            "status": "일정등록완료",
             "recvDate": "2026-09-21",
-            "planDate": "",
+            "planDate": "2026-10-01",
             "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789614054398999"
           },
           {
@@ -194367,10 +194367,22 @@ window.SLACK_DATA = {
       },
       "1789965449.776889": {
         "post": "1789965449.776889",
-        "lastSeen": 1789969089.419,
+        "lastSeen": 1789969217.569,
         "r": 1,
         "day": "2026-09-21",
         "idx": 42
+      },
+      "1789969179.178689": {
+        "post": "1789969179.178689",
+        "lastSeen": 1789969217.569
+      },
+      "1789964193.152119": {
+        "post": "1789964193.152119",
+        "lastSeen": 1789969217.569
+      },
+      "1789966368.460699": {
+        "post": "1789966368.460699",
+        "lastSeen": 1789969217.569
       }
     },
     "days": {
@@ -257007,7 +257019,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-21 14:38",
+    "at": "2026-09-21 14:40",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
@@ -257019,11 +257031,11 @@ window.SLACK_DATA = {
     "beforeStart": 0,
     "done": 877,
     "byStatus": {
-      "일정등록완료": 558,
+      "일정등록완료": 559,
       "1차부재": 190,
       "점주직접접수": 70,
       "설치불가": 14,
-      "(빈칸)": 6,
+      "(빈칸)": 5,
       "자가설치": 30,
       "설치보류요청": 9
     }
