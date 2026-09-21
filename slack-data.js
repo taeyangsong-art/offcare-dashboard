@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12210,
+  "version": 12211,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192909,8 +192909,8 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "송태양": 8,
+          "심성현": 10,
           "김규빈": 3,
-          "심성현": 9,
           "고경림": 7,
           "김기범": 3,
           "서상원": 2,
@@ -192972,6 +192972,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "1시 15분 예약 요청으로 예약 완료입니다"
+        },
+        {
+          "time": "12:28",
+          "store": "광화문도시락",
+          "biz": "2464300369",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "프론트 인터넷 연결이 끊긴 후 재연결이 안된다고 하셔서 원격 점검 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "와이파이 재연결 후 결제 테스트 완료"
         },
         {
           "time": "12:15",
@@ -193636,7 +193647,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 52,
-        "offline": 11,
+        "offline": 12,
         "unknown": 0
       },
       "updatedAt": "12:30",
@@ -193760,14 +193771,14 @@ window.SLACK_DATA = {
       },
       "1789955963.451259": {
         "post": "1789955963.451259",
-        "lastSeen": 1789961584.714,
+        "lastSeen": 1789961718.672,
         "r": 1,
         "day": "2026-09-21",
         "idx": 19
       },
       "1789958787.678209": {
         "post": "1789958787.678209",
-        "lastSeen": 1789961584.714,
+        "lastSeen": 1789961718.672,
         "r": 1,
         "day": "2026-09-21",
         "idx": 23
@@ -256176,7 +256187,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-21 12:33",
+    "at": "2026-09-21 12:35",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
