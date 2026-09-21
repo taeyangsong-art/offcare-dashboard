@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2297,
- "updatedAt": "2026-09-21 13:51",
+ "version": 2298,
+ "updatedAt": "2026-09-21 13:53",
  "days": 30,
  "items": [
   {
@@ -50,10 +50,11 @@ window.MENU_REQUESTS = {
    ],
    "datt": [],
    "replies": [
-    "사진 필요 시, 대시보드 초대 해드리겠습니다!"
+    "사진 필요 시, 대시보드 초대 해드리겠습니다!",
+    "메뉴는 대시보드에 다 있다고해요~\n 님 그럼 이미지 파일은 별도로 받아올게요~"
    ],
-   "rc": 3,
-   "lr": "1789966243.484269",
+   "rc": 4,
+   "lr": "1789966390.737559",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -58510,29 +58511,6 @@ window.MENU_REQUESTS = {
    "status": "dup",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787376333449479"
-  },
-  {
-   "ts": "1787374359.448839",
-   "date": "2026-08-22",
-   "time": "13:52",
-   "store": "더 멀리",
-   "biz": "3976300914",
-   "pos": "토스포스",
-   "content": "에스프레소 메뉴에서 샷추가, 오트밀크, 디카페인 음료 누르고 선택할 수 있게 수정 부탁드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "에스프레소 옵션적용"
-   ],
-   "rc": 2,
-   "lr": "1787379633.176149",
-   "rfx": 3,
-   "status": "done",
-   "handler": "서상원",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787374359448839"
   }
  ],
  "ocr": {
