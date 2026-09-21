@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2332,
- "updatedAt": "2026-09-21 18:23",
+ "version": 2333,
+ "updatedAt": "2026-09-21 18:26",
  "days": 30,
  "items": [
   {
@@ -327,7 +327,7 @@ window.MENU_REQUESTS = {
    "att": [
     {
      "name": "스크린샷 2026-09-21 180942.png",
-     "fid": "F0C449FEC0G",
+     "fid": "F0C382QPBPG",
      "from": "댓글",
      "path": "menu-files/1789973623_177929-0.png",
      "kind": "pos_screen",
@@ -480,8 +480,8 @@ window.MENU_REQUESTS = {
      ]
     },
     {
-     "name": "스크린샷 2026-09-21 180957.png",
-     "fid": "F0C2UHAGPGF",
+     "name": "스크린샷 2026-09-21 180948.png",
+     "fid": "F0C382RS8KY",
      "from": "댓글",
      "path": "menu-files/1789973623_177929-1.png",
      "kind": "pos_screen",
@@ -503,12 +503,12 @@ window.MENU_REQUESTS = {
       },
       {
        "category": "포장",
-       "name": "ㅎ",
+       "name": "흥",
        "price": 0
       },
       {
        "category": "포장",
-       "name": "쨈 프리미얼",
+       "name": "쨍 프리미얼",
        "price": 95000
       },
       {
@@ -635,7 +635,7 @@ window.MENU_REQUESTS = {
     },
     {
      "name": "스크린샷 2026-09-21 180953.png",
-     "fid": "F0C2UHBA72B",
+     "fid": "F0C39U3CK5Y",
      "from": "댓글",
      "path": "menu-files/1789973623_177929-2.png",
      "kind": "pos_screen",
@@ -742,7 +742,7 @@ window.MENU_REQUESTS = {
       },
       {
        "category": "",
-       "name": "지발회만숭어(特大)",
+       "name": "지발회만)숭어(特大)",
        "price": 65000
       },
       {
@@ -788,21 +788,21 @@ window.MENU_REQUESTS = {
      ]
     },
     {
-     "name": "스크린샷 2026-09-21 180948.png",
-     "fid": "F0C3808KLNA",
+     "name": "스크린샷 2026-09-21 180957.png",
+     "fid": "F0C3DLU2GSG",
      "from": "댓글",
      "path": "menu-files/1789973623_177929-3.png",
      "kind": "pos_screen",
      "menu": [
       {
        "category": "포장",
-       "name": "완도산 大 광어 2kg (반 마리)",
+       "name": "완도산 大 광어 2kg (반 편)",
        "price": 45000
       },
       {
        "category": "포장",
-       "name": "완도산 大 광어 2kg (한 마리)",
-       "price": 85000
+       "name": "완도산 大 광어 2kg (한 편)",
+       "price": 45000
       },
       {
        "category": "포장",
@@ -886,7 +886,7 @@ window.MENU_REQUESTS = {
       },
       {
        "category": "포장",
-       "name": "스꺼읍다",
+       "name": "스꼬읍다",
        "price": 0
       },
       {
@@ -945,7 +945,7 @@ window.MENU_REQUESTS = {
    "datt": [],
    "replies": [],
    "rc": 4,
-   "lr": "1789981897.364779",
+   "lr": "1789982702.307379",
    "rfx": 3,
    "status": "done",
    "handler": "심성현",
