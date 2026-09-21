@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12183,
+  "version": 12184,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192908,14 +192908,14 @@ window.SLACK_DATA = {
     "2026-09-21": {
       "counts": {
         "as": {
+          "고경림": 5,
           "김기범": 2,
           "김현기": 3,
           "송태양": 5,
           "심성현": 4,
           "김동욱": 4,
           "서상원": 1,
-          "김규빈": 1,
-          "고경림": 4
+          "김규빈": 1
         },
         "onboarding": {
           "송태양": 1,
@@ -192946,6 +192946,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "10:47",
+          "store": "브레인코칭감성융합연구소 성산점",
+          "biz": "4338502597",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "포프(노트북)+유프 매장으로, 온보딩 요청주시어 도움 부탁드리겠습니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "9월말에 직접 온보딩 예정 온보딩 어려울시 고객센터 재인입 안내완료"
+        },
         {
           "time": "10:46",
           "store": "드롭탑(망향휴게소)",
@@ -193300,7 +193311,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 24,
+        "online": 25,
         "offline": 9,
         "unknown": 0
       },
@@ -193419,7 +193430,7 @@ window.SLACK_DATA = {
       },
       "1789950349.719849": {
         "post": "1789950349.719849",
-        "lastSeen": 1789955372.158,
+        "lastSeen": 1789955477.944,
         "r": 1,
         "day": "2026-09-21",
         "idx": 9
@@ -255744,7 +255755,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-21 10:49",
+    "at": "2026-09-21 10:51",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
