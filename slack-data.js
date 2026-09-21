@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12196,
+  "version": 12197,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192988,7 +192988,7 @@ window.SLACK_DATA = {
           "req": "9월 21일 오전 11시 30분 / 메뉴 복사 O / 프론트, KIS -7430",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "• 양도사업자 타사 스마트로 프론트 + CAT + 키오스크 사용중 • 자사 KIS 프론트 + CAT단말기는 창고에 보유중 • 자사 명의변경은 의미가 없을 것 같아 타 대리점에 명의변경 안내드림 • 계약서 상 무약정으로 위약금 발생 X 9월 22일자 단말기 회수접수 완료 양도사업자 타사 스마트로 프론트 + CAT + 키오스크 사용중 자사 KIS 프론트 + C"
         },
         {
           "time": "11:15",
@@ -193513,7 +193513,7 @@ window.SLACK_DATA = {
         "offline": 10,
         "unknown": 0
       },
-      "updatedAt": "11:34",
+      "updatedAt": "11:45",
       "voc": {
         "responses": 2,
         "install": {
@@ -193621,18 +193621,14 @@ window.SLACK_DATA = {
       },
       "1789955963.451259": {
         "post": "1789955963.451259",
-        "lastSeen": 1789958547.876,
+        "lastSeen": 1789958718.663,
         "r": 1,
         "day": "2026-09-21",
         "idx": 19
       },
-      "1789957801.572059": {
-        "post": "1789957801.572059",
-        "lastSeen": 1789958547.876
-      },
-      "1789958072.642909": {
-        "post": "1789958072.642909",
-        "lastSeen": 1789958547.876
+      "1789958700.548819": {
+        "post": "1789958700.548819",
+        "lastSeen": 1789958718.663
       }
     },
     "days": {
@@ -255999,7 +255995,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-21 11:42",
+    "at": "2026-09-21 11:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
