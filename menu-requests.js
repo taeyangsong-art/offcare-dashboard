@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2300,
- "updatedAt": "2026-09-21 14:02",
+ "version": 2301,
+ "updatedAt": "2026-09-21 14:23",
  "days": 30,
  "items": [
   {
@@ -51,10 +51,11 @@ window.MENU_REQUESTS = {
    "datt": [],
    "replies": [
     "사진 필요 시, 대시보드 초대 해드리겠습니다!",
-    "메뉴는 대시보드에 다 있다고해요~\n 님 그럼 이미지 파일은 별도로 받아올게요~"
+    "메뉴는 대시보드에 다 있다고해요~\n 님 그럼 이미지 파일은 별도로 받아올게요~",
+    "님 초대 되셨을거에요~ 확인 부탁드립니다.\ncc.  혹시 몰라서, 선유님도 초대 드렸어용ㅎㅎㅎ\n사진은 제가 이메일로 받아서 전달드릴게요~"
    ],
-   "rc": 5,
-   "lr": "1789966495.732409",
+   "rc": 6,
+   "lr": "1789968083.857539",
    "rfx": 3,
    "status": "wait",
    "handler": null,
