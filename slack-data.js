@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12209,
+  "version": 12210,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192908,7 +192908,7 @@ window.SLACK_DATA = {
     "2026-09-21": {
       "counts": {
         "as": {
-          "송태양": 7,
+          "송태양": 8,
           "김규빈": 3,
           "심성현": 9,
           "고경림": 7,
@@ -192917,14 +192917,15 @@ window.SLACK_DATA = {
           "김동욱": 7,
           "김현기": 4
         },
+        "extern": {
+          "김현기": 1,
+          "김동욱": 2,
+          "서상원": 2
+        },
         "onboarding": {
           "고경림": 3,
           "심성현": 3,
           "송태양": 1
-        },
-        "extern": {
-          "김동욱": 2,
-          "서상원": 2
         },
         "transfer": {
           "송태양": 2
@@ -192937,6 +192938,17 @@ window.SLACK_DATA = {
         }
       },
       "pending": [
+        {
+          "time": "11:30",
+          "store": "미조(mijo)",
+          "biz": "3670703495",
+          "handler": "심성현",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
         {
           "time": "10:59",
           "store": "전담GATE 정품전자담배 문화칼라 사거리점",
@@ -192951,6 +192963,17 @@ window.SLACK_DATA = {
       ],
       "done": [
         {
+          "time": "12:30",
+          "store": "브로시 동탄눈썹문신&amp;두피문신",
+          "biz": "6841403082",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "포프(휴대폰) 온보딩, 사용 방법 안내 요청드립니다. / 금액 입력 결제 모드 설정 희망",
+          "hw": "",
+          "intake": "online",
+          "note": "1시 15분 예약 요청으로 예약 완료입니다"
+        },
+        {
           "time": "12:15",
           "store": "수나네일",
           "biz": "5244801244",
@@ -192960,6 +192983,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "• 유프온보딩 완료입니다 유프온보딩 완료입니다"
+        },
+        {
+          "time": "12:06",
+          "store": "라포커피 천상점",
+          "biz": "6665800970",
+          "cat": "extern",
+          "emp": "김현기",
+          "req": "외주",
+          "hw": "",
+          "intake": "offline",
+          "note": "두 번째 키오스크 내장 출력기 초기 불량 (err 점등)"
         },
         {
           "time": "12:00",
@@ -193601,11 +193635,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 50,
-        "offline": 10,
+        "online": 52,
+        "offline": 11,
         "unknown": 0
       },
-      "updatedAt": "12:28",
+      "updatedAt": "12:30",
       "voc": {
         "responses": 3,
         "install": {
@@ -193726,14 +193760,14 @@ window.SLACK_DATA = {
       },
       "1789955963.451259": {
         "post": "1789955963.451259",
-        "lastSeen": 1789961361.289,
+        "lastSeen": 1789961584.714,
         "r": 1,
         "day": "2026-09-21",
         "idx": 19
       },
       "1789958787.678209": {
         "post": "1789958787.678209",
-        "lastSeen": 1789961361.289,
+        "lastSeen": 1789961584.714,
         "r": 1,
         "day": "2026-09-21",
         "idx": 23
@@ -256142,7 +256176,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-21 12:29",
+    "at": "2026-09-21 12:33",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
