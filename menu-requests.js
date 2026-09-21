@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2288,
- "updatedAt": "2026-09-21 11:27",
+ "version": 2289,
+ "updatedAt": "2026-09-21 11:32",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "1000012136.jpg",
      "fid": "F0C2SH1SUVD",
      "from": "댓글",
-     "path": "menu-files/1789957544_550659-0.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -56,13 +55,13 @@ window.MENU_REQUESTS = {
        "name": "플레인휘낭시에",
        "price": 2000
       }
-     ]
+     ],
+     "path": "menu-files/1789957544_550659-0.jpg"
     },
     {
      "name": "1000012137.jpg",
      "fid": "F0C37RAVDMG",
      "from": "댓글",
-     "path": "menu-files/1789957544_550659-1.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -85,13 +84,13 @@ window.MENU_REQUESTS = {
        "name": "더 블루(ICE)",
        "price": 5800
       }
-     ]
+     ],
+     "path": "menu-files/1789957544_550659-1.jpg"
     },
     {
      "name": "1000012138.jpg",
      "fid": "F0C37RABN8J",
      "from": "댓글",
-     "path": "menu-files/1789957544_550659-2.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -154,13 +153,13 @@ window.MENU_REQUESTS = {
        "name": "콜드브루 (ICE)",
        "price": 4500
       }
-     ]
+     ],
+     "path": "menu-files/1789957544_550659-2.jpg"
     },
     {
      "name": "1000012139.jpg",
      "fid": "F0C2SH2JVST",
      "from": "댓글",
-     "path": "menu-files/1789957544_550659-3.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -193,13 +192,13 @@ window.MENU_REQUESTS = {
        "name": "너티밀키(ICE)",
        "price": 4000
       }
-     ]
+     ],
+     "path": "menu-files/1789957544_550659-3.jpg"
     },
     {
      "name": "1000012140.jpg",
      "fid": "F0C35VDDZB8",
      "from": "댓글",
-     "path": "menu-files/1789957544_550659-4.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -262,13 +261,13 @@ window.MENU_REQUESTS = {
        "name": "비엔나커피(HOT)",
        "price": 4300
       }
-     ]
+     ],
+     "path": "menu-files/1789957544_550659-4.jpg"
     },
     {
      "name": "1000012141.jpg",
      "fid": "F0C4297315W",
      "from": "댓글",
-     "path": "menu-files/1789957544_550659-5.jpg",
      "kind": "menu_board",
      "menu": [
       {
@@ -286,7 +285,8 @@ window.MENU_REQUESTS = {
        "name": "카페모카(HOT)",
        "price": 4500
       }
-     ]
+     ],
+     "path": "menu-files/1789957544_550659-5.jpg"
     },
     {
      "name": "1000012142.jpg",
@@ -534,12 +534,23 @@ window.MENU_REQUESTS = {
        "price": 4500
       }
      ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C360MHCJJ",
+     "from": "댓글",
+     "kind": "product_photo",
+     "menu": []
     }
    ],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1789957582.732589",
+   "replies": [
+    "님 이거 옵션이랑 이미지 원본파일은 추가로 따로 전달 주시는걸까요?",
+    "확인해보겠슴당~",
+    "확인어려움"
+   ],
+   "rc": 3,
+   "lr": "1789957766.972429",
    "rfx": 3,
    "status": "wait",
    "handler": null,
