@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2306,
- "updatedAt": "2026-09-21 15:39",
+ "version": 2307,
+ "updatedAt": "2026-09-21 15:50",
  "days": 30,
  "items": [
+  {
+   "ts": "1789973172.170769",
+   "date": "2026-09-21",
+   "time": "15:46",
+   "store": "마이요거트립 독산점",
+   "biz": "4622202120",
+   "pos": "기타",
+   "content": "메뉴는 통화시 본사랑 통화해서 올려 주시기로 하였습니다.",
+   "special": "와플픽 독산점도 샙앤샵으로 같이 운영합니다.",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 0,
+   "lr": "",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789973172170769"
+  },
   {
    "ts": "1789971691.690409",
    "date": "2026-09-21",
