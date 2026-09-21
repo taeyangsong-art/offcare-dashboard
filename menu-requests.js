@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2323,
- "updatedAt": "2026-09-21 17:43",
+ "version": 2324,
+ "updatedAt": "2026-09-21 17:46",
  "days": 30,
  "items": [
   {
@@ -24,11 +24,11 @@ window.MENU_REQUESTS = {
     "님 해당 매장은 이미지 괜찮다고 합니다용~ ㅎㅎ",
     "부평점만 내일 이미지 받아서 제가 재요청 드릴게요 !"
    ],
-   "rc": 5,
-   "lr": "1789980150.140619",
+   "rc": 6,
+   "lr": "1789980351.489399",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789979905786569"
   },
   {
@@ -58148,149 +58148,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787533715597499"
-  },
-  {
-   "ts": "1787388392.430669",
-   "date": "2026-08-22",
-   "time": "17:46",
-   "store": "헤어86",
-   "biz": "8750603515",
-   "pos": "토스포스",
-   "content": "컷트빼고 모든시술 기장추가금액 설정 만원 단위 2만원단위 적용\n오픈행사로 20%할인 적용 추가 적용 별도할인추가적용 (1.000원~ 3,000원 ~5,000원~ 10.000~등등)",
-   "special": "가격표는 이미지로 보내겠습니다",
-   "drive": [
-    "https://drive.google.com/file/d/1lWc0tvWwwfcqZNBNHHHDV0jEJP1HBact/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "1lWc0tvWwwfcqZNBNHHHDV0jEJP1HBact",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "CUT",
-       "name": "여자컷",
-       "price": 22000
-      },
-      {
-       "category": "CUT",
-       "name": "남자컷",
-       "price": 20000
-      },
-      {
-       "category": "CUT",
-       "name": "학생컷",
-       "price": 15000
-      },
-      {
-       "category": "CUT",
-       "name": "앞머리컷",
-       "price": 3000
-      },
-      {
-       "category": "MAN PERM",
-       "name": "컷 + 다운펌(옆)",
-       "price": 35000
-      },
-      {
-       "category": "MAN PERM",
-       "name": "컷 + 다운펌(옆·뒤)",
-       "price": 40000
-      },
-      {
-       "category": "MAN PERM",
-       "name": "컷 + 전체다운펌",
-       "price": 50000
-      },
-      {
-       "category": "MAN PERM",
-       "name": "일반펌",
-       "price": 50000
-      },
-      {
-       "category": "MAN PERM",
-       "name": "히피펌",
-       "price": 60000
-      },
-      {
-       "category": "STRAIGHT (MAN)",
-       "name": "매직",
-       "price": 100000
-      },
-      {
-       "category": "STRAIGHT (MAN)",
-       "name": "볼륨매직",
-       "price": 110000
-      },
-      {
-       "category": "WOMAN PERM",
-       "name": "일반펌",
-       "price": 60000
-      },
-      {
-       "category": "WOMAN PERM",
-       "name": "디지털펌",
-       "price": 120000
-      },
-      {
-       "category": "WOMAN PERM",
-       "name": "매직",
-       "price": 120000
-      },
-      {
-       "category": "WOMAN PERM",
-       "name": "볼륨매직",
-       "price": 130000
-      },
-      {
-       "category": "WOMAN PERM",
-       "name": "매직셋팅",
-       "price": 150000
-      },
-      {
-       "category": "COLOR 여자",
-       "name": "뿌리염색",
-       "price": 40000
-      },
-      {
-       "category": "COLOR 여자",
-       "name": "전체염색",
-       "price": 60000
-      },
-      {
-       "category": "COLOR 여자",
-       "name": "탈색",
-       "price": 80000
-      },
-      {
-       "category": "COLOR 남자",
-       "name": "전체염색",
-       "price": 50000
-      },
-      {
-       "category": "COLOR 남자",
-       "name": "탈색",
-       "price": 70000
-      },
-      {
-       "category": "CLINIC",
-       "name": "클리닉",
-       "price": 60000
-      }
-     ]
-    }
-   ],
-   "replies": [
-    "오후 전화 예정",
-    "완료"
-   ],
-   "rc": 3,
-   "lr": "1787532383.873019",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787388392430669"
   }
  ],
  "ocr": {
