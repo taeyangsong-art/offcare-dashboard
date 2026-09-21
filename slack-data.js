@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12256,
+  "version": 12257,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192909,12 +192909,12 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김현기": 8,
+          "심성현": 13,
           "김기범": 8,
           "서상원": 8,
           "송태양": 11,
-          "심성현": 12,
+          "고경림": 10,
           "김동욱": 17,
-          "고경림": 9,
           "김규빈": 4
         },
         "onboarding": {
@@ -192940,6 +192940,17 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "13:37",
+          "store": "케치롱",
+          "biz": "2093208013",
+          "handler": "김기범",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "1차 부재"
+          ]
+        },
+        {
           "time": "11:30",
           "store": "미조(mijo)",
           "biz": "3670703495",
@@ -192962,6 +192973,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "몸이 아파서 오늘 조퇴함 / 내일 같은 시간 재예야0ㄱ"
+        },
+        {
+          "time": "14:24",
+          "store": "참생고기집",
+          "biz": "2170831937",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포스기2+CAT+프// <https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1789890273825399|매장 인터넷 문제 해결>되어 포스기 연결 설치 도움 부탁드립니다!",
+          "hw": "",
+          "intake": "offline",
+          "note": "공유기 교체 재온보딩 완료"
         },
         {
           "time": "14:20",
@@ -193051,6 +193073,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "기존 폰 - 프 - 터2 연결 모드에서 / 터 - 프 모드로 재온보딩 완료"
+        },
+        {
+          "time": "14:00",
+          "store": "웨이프캐나다잉글리쉬학원",
+          "biz": "4889101677",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "포프(노트북) 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "미개봉 전원 연결 및 인터넷 연결후 재연락요청"
         },
         {
           "time": "14:00",
@@ -194121,11 +194154,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 87,
-        "offline": 20,
+        "online": 89,
+        "offline": 21,
         "unknown": 0
       },
-      "updatedAt": "14:30",
+      "updatedAt": "14:36",
       "voc": {
         "responses": 3,
         "install": {
@@ -194187,11 +194220,27 @@ window.SLACK_DATA = {
         ]
       },
       "ob": {
-        "count": 9,
+        "count": 11,
         "byEmp": {
-          "김규빈": 9
+          "김규빈": 11
         },
         "items": [
+          {
+            "key": "2026년 9월 21일 오전 8:20:53|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789614054398999#1",
+            "handler": "김규빈",
+            "status": "",
+            "recvDate": "2026-09-21",
+            "planDate": "",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789614054398999"
+          },
+          {
+            "key": "2026년 9월 21일 오전 8:13:52|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789435135773399#1",
+            "handler": "김규빈",
+            "status": "일정등록완료",
+            "recvDate": "2026-09-21",
+            "planDate": "2026-09-28",
+            "link": "https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1789435135773399"
+          },
           {
             "key": "2026년 9월 21일 오전 8:13:09|https://w1659946222-hxm266180.slack.com/archives/C0AL2V3MM7U/p1786689974732559#1",
             "handler": "김규빈",
@@ -194318,25 +194367,10 @@ window.SLACK_DATA = {
       },
       "1789965449.776889": {
         "post": "1789965449.776889",
-        "lastSeen": 1789968858.368,
+        "lastSeen": 1789969089.419,
         "r": 1,
         "day": "2026-09-21",
         "idx": 42
-      },
-      "1789966800.904469": {
-        "post": "1789966800.904469",
-        "lastSeen": 1789968858.368,
-        "r": 1,
-        "day": "2026-09-21",
-        "idx": 44
-      },
-      "1789964193.152119": {
-        "post": "1789964193.152119",
-        "lastSeen": 1789968858.368
-      },
-      "1789966368.460699": {
-        "post": "1789966368.460699",
-        "lastSeen": 1789968858.368
       }
     },
     "days": {
@@ -256902,7 +256936,8 @@ window.SLACK_DATA = {
             "store": "웨이프캐나다잉글리쉬학원",
             "biz": "4889101677",
             "who": "고경림",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 36.2
           },
           {
             "hm": "14:08",
@@ -256972,23 +257007,23 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-21 14:34",
+    "at": "2026-09-21 14:38",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
     "rows": 4184,
-    "named": 875,
+    "named": 877,
     "unknownName": 0,
     "beforeStart": 0,
-    "done": 875,
+    "done": 877,
     "byStatus": {
-      "일정등록완료": 557,
+      "일정등록완료": 558,
       "1차부재": 190,
       "점주직접접수": 70,
       "설치불가": 14,
-      "(빈칸)": 5,
+      "(빈칸)": 6,
       "자가설치": 30,
       "설치보류요청": 9
     }
