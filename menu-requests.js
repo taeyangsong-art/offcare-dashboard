@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2285,
- "updatedAt": "2026-09-21 10:55",
+ "version": 2286,
+ "updatedAt": "2026-09-21 11:00",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "Resized_20260921_105025.jpg.jpeg",
      "fid": "F0C39NSDL7K",
      "from": "댓글",
-     "path": "menu-files/1789955609_696029-0.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -141,13 +140,13 @@ window.MENU_REQUESTS = {
        "name": "샷추가",
        "price": 1000
       }
-     ]
+     ],
+     "path": "menu-files/1789955609_696029-0.jpeg"
     },
     {
      "name": "Resized_20260920_165104.jpg.jpeg",
      "fid": "F0C37MXJV0S",
      "from": "댓글",
-     "path": "menu-files/1789955609_696029-1.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -290,13 +289,13 @@ window.MENU_REQUESTS = {
        "name": "흑임자라떼(ice)",
        "price": 5500
       }
-     ]
+     ],
+     "path": "menu-files/1789955609_696029-1.jpeg"
     },
     {
      "name": "Resized_20260920_165123.jpg.jpeg",
      "fid": "F0C425TUN0Y",
      "from": "댓글",
-     "path": "menu-files/1789955609_696029-2.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -424,13 +423,13 @@ window.MENU_REQUESTS = {
        "name": "고구마라떼(ice)",
        "price": 5500
       }
-     ]
+     ],
+     "path": "menu-files/1789955609_696029-2.jpeg"
     },
     {
      "name": "Resized_20260920_165137.jpg.jpeg",
      "fid": "F0C31J2QM1R",
      "from": "댓글",
-     "path": "menu-files/1789955609_696029-3.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -548,13 +547,13 @@ window.MENU_REQUESTS = {
        "name": "박스",
        "price": 1000
       }
-     ]
+     ],
+     "path": "menu-files/1789955609_696029-3.jpeg"
     },
     {
      "name": "Resized_20260920_165159.jpg.jpeg",
      "fid": "F0C3BEMQRUL",
      "from": "댓글",
-     "path": "menu-files/1789955609_696029-4.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -567,13 +566,13 @@ window.MENU_REQUESTS = {
        "name": "디카페인핸드드립",
        "price": 1500
       }
-     ]
+     ],
+     "path": "menu-files/1789955609_696029-4.jpeg"
     },
     {
      "name": "Resized_20260920_165216.jpg.jpeg",
      "fid": "F0C425UJP2L",
      "from": "댓글",
-     "path": "menu-files/1789955609_696029-5.jpeg",
      "kind": "pos_screen",
      "menu": [
       {
@@ -641,16 +640,17 @@ window.MENU_REQUESTS = {
        "name": "블루베리요거트스무디",
        "price": 6000
       }
-     ]
+     ],
+     "path": "menu-files/1789955609_696029-5.jpeg"
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1789955612.803349",
+   "rc": 2,
+   "lr": "1789955671.905799",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789955609696029"
   },
   {
