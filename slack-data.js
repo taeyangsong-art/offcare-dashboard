@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12181,
+  "version": 12182,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192908,9 +192908,9 @@ window.SLACK_DATA = {
     "2026-09-21": {
       "counts": {
         "as": {
+          "김현기": 3,
           "송태양": 5,
           "심성현": 4,
-          "김현기": 2,
           "김동욱": 4,
           "서상원": 1,
           "김규빈": 1,
@@ -192945,6 +192945,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "10:36",
+          "store": "카페마슬",
+          "biz": "4332802013",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "• 토스포스 프로그램 오류가 많다고 말씀 주시어 확인 한 번 부탁드리어요~ :woman-bowing::skin-tone-2:",
+          "hw": "",
+          "intake": "online",
+          "note": "포스기 자체가 매우 노후화 됨 / 강제 종료 후 셀프로 해보고, 노트북으로 변경할지 포스기를 새로 할지 고민 후 재인입 예정"
+        },
         {
           "time": "10:29",
           "store": "유메이규",
@@ -193266,7 +193277,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 23,
+        "online": 24,
         "offline": 7,
         "unknown": 0
       },
@@ -193385,14 +193396,10 @@ window.SLACK_DATA = {
       },
       "1789950349.719849": {
         "post": "1789950349.719849",
-        "lastSeen": 1789954640.748,
+        "lastSeen": 1789955127.361,
         "r": 1,
         "day": "2026-09-21",
         "idx": 9
-      },
-      "1789954573.512099": {
-        "post": "1789954573.512099",
-        "lastSeen": 1789954640.748
       }
     },
     "days": {
@@ -255554,8 +255561,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-21": {
-        "cnt": 16,
-        "sumMin": 86.53632709582648,
+        "cnt": 17,
+        "sumMin": 91.71203378041587,
         "over": 0,
         "items": [
           {
@@ -255699,13 +255706,22 @@ window.SLACK_DATA = {
             "who": "송태양",
             "cat": "as",
             "dmin": 5
+          },
+          {
+            "hm": "10:36",
+            "min": 5.2,
+            "store": "카페마슬",
+            "biz": "4332802013",
+            "who": "김현기",
+            "cat": "as",
+            "dmin": 5.2
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-21 10:37",
+    "at": "2026-09-21 10:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
