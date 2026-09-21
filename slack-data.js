@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12153,
+  "version": 12154,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192908,16 +192908,33 @@ window.SLACK_DATA = {
     },
     "2026-09-21": {
       "counts": {
+        "extern": {
+          "서상원": 1
+        },
         "as": {
           "김동욱": 2,
           "고경림": 1,
           "송태양": 1,
           "김현기": 1,
           "심성현": 1
+        },
+        "onboarding": {
+          "고경림": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:20",
+          "store": "프루쉬 연산점",
+          "biz": "2713701475",
+          "cat": "extern",
+          "emp": "서상원",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "09:15",
           "store": "서아농원",
@@ -192939,6 +192956,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "현금영수증 발급방법 안내완료"
+        },
+        {
+          "time": "09:07",
+          "store": "행복힐링센타",
+          "biz": "1682102366",
+          "cat": "onboarding",
+          "emp": "고경림",
+          "req": "포프+PC 연결 및 온보딩 교육 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "포프(pc) 온보딩 및 사용법 안내완료"
         },
         {
           "time": "09:04",
@@ -192986,11 +193014,50 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 4,
+        "online": 6,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:15"
+      "updatedAt": "09:22",
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 1,
+          "low": 0
+        },
+        "nps": {
+          "count": 1,
+          "low": 0
+        },
+        "high": {
+          "install": 1,
+          "nps": 1
+        },
+        "npsDist": {
+          "10": 1
+        },
+        "installDist": {
+          "5": 1
+        },
+        "byIndustry": {
+          "서비스[뷰티,헤어]": 1
+        },
+        "byTenure": {
+          "구매설치": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "KPN": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {},
+        "alerts": [],
+        "praises": []
+      }
     }
   },
   "resp": {
@@ -193065,28 +193132,21 @@ window.SLACK_DATA = {
       },
       "1789947900.943629": {
         "post": "1789947900.943629",
-        "lastSeen": 1789949918.008,
+        "lastSeen": 1789950151.485,
         "r": 1,
         "day": "2026-09-21",
         "idx": 1
       },
       "1789948807.007639": {
         "post": "1789948807.007639",
-        "lastSeen": 1789949918.008,
+        "lastSeen": 1789950151.485,
         "r": 1,
         "day": "2026-09-21",
         "idx": 2
       },
-      "1789949240.690939": {
-        "post": "1789949240.690939",
-        "lastSeen": 1789949918.008,
-        "r": 1,
-        "day": "2026-09-21",
-        "idx": 6
-      },
-      "1789948813.738039": {
-        "post": "1789948813.738039",
-        "lastSeen": 1789949918.008
+      "1789950144.363969": {
+        "post": "1789950144.363969",
+        "lastSeen": 1789950151.485
       }
     },
     "days": {
@@ -255309,7 +255369,8 @@ window.SLACK_DATA = {
             "store": "행복힐링센타",
             "biz": "1682102366",
             "who": "고경림",
-            "cat": "as"
+            "cat": "onboarding",
+            "dmin": 13.2
           },
           {
             "hm": "09:08",
@@ -255325,7 +255386,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-21 09:18",
+    "at": "2026-09-21 09:22",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
