@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12218,
+  "version": 12219,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192939,6 +192939,17 @@ window.SLACK_DATA = {
       },
       "pending": [
         {
+          "time": "11:46",
+          "store": "드롭탑 모다아울렛 천안아산점(KIS)",
+          "biz": "4223201869",
+          "handler": "고경림",
+          "cat": "as",
+          "intake": "offline",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        },
+        {
           "time": "11:30",
           "store": "미조(mijo)",
           "biz": "3670703495",
@@ -193680,10 +193691,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 54,
-        "offline": 13,
+        "offline": 14,
         "unknown": 0
       },
-      "updatedAt": "12:45",
+      "updatedAt": "12:48",
       "voc": {
         "responses": 3,
         "install": {
@@ -193804,14 +193815,14 @@ window.SLACK_DATA = {
       },
       "1789955963.451259": {
         "post": "1789955963.451259",
-        "lastSeen": 1789962319.468,
+        "lastSeen": 1789962535.183,
         "r": 1,
         "day": "2026-09-21",
         "idx": 19
       },
       "1789958787.678209": {
         "post": "1789958787.678209",
-        "lastSeen": 1789962319.468,
+        "lastSeen": 1789962535.183,
         "r": 1,
         "day": "2026-09-21",
         "idx": 23
@@ -193822,14 +193833,21 @@ window.SLACK_DATA = {
       },
       "1789962078.024199": {
         "post": "1789962078.024199",
-        "lastSeen": 1789962319.468,
+        "lastSeen": 1789962535.183,
         "r": 1,
         "day": "2026-09-21",
         "idx": 26
       },
       "1789962300.843099": {
         "post": "1789962300.843099",
-        "lastSeen": 1789962319.468
+        "lastSeen": 1789962535.183,
+        "r": 1,
+        "day": "2026-09-21",
+        "idx": 27
+      },
+      "1789962515.704509": {
+        "post": "1789962515.704509",
+        "lastSeen": 1789962535.183
       }
     },
     "days": {
@@ -255991,8 +256009,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-21": {
-        "cnt": 27,
-        "sumMin": 132.72877578337986,
+        "cnt": 28,
+        "sumMin": 134.8368157982826,
         "over": 0,
         "items": [
           {
@@ -256233,13 +256251,21 @@ window.SLACK_DATA = {
             "biz": "7220703450",
             "who": "김현기",
             "cat": "as"
+          },
+          {
+            "hm": "12:45",
+            "min": 2.1,
+            "store": "센트럴1리딩클럽영어도서관학원",
+            "biz": "5059938209",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-21 12:45",
+    "at": "2026-09-21 12:49",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
