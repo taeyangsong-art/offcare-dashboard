@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12227,
+  "version": 12228,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192909,13 +192909,13 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김동욱": 9,
+          "서상원": 3,
           "김규빈": 4,
           "송태양": 10,
           "김현기": 5,
           "심성현": 11,
           "고경림": 8,
-          "김기범": 3,
-          "서상원": 2
+          "김기범": 3
         },
         "extern": {
           "김동욱": 3,
@@ -192983,6 +192983,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": ""
+        },
+        {
+          "time": "13:00",
+          "store": "어여쁘다",
+          "biz": "3682002334",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "유프(CPP-3000) 계속 깜빡거리며 출력되지 않으신다고 하여 점검 요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "대체발송"
         },
         {
           "time": "12:48",
@@ -193767,7 +193778,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 61,
+        "online": 62,
         "offline": 14,
         "unknown": 0
       },
@@ -193890,20 +193901,13 @@ window.SLACK_DATA = {
         "post": "1789959777.194989",
         "lastSeen": 1789960729.754
       },
-      "1789963200.946789": {
-        "post": "1789963200.946789",
-        "lastSeen": 1789963912.289,
-        "r": 1,
-        "day": "2026-09-21",
-        "idx": 29
-      },
       "1789963829.619619": {
         "post": "1789963829.619619",
-        "lastSeen": 1789963912.289
+        "lastSeen": 1789963999.483
       },
       "1789963784.421979": {
         "post": "1789963784.421979",
-        "lastSeen": 1789963912.289
+        "lastSeen": 1789963999.483
       }
     },
     "days": {
@@ -256335,14 +256339,15 @@ window.SLACK_DATA = {
             "store": "어여쁘다",
             "biz": "3682002334",
             "who": "서상원",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 12.6
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-21 13:12",
+    "at": "2026-09-21 13:13",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
