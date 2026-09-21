@@ -4121,6 +4121,9 @@ const COIN_FIX = {
   '배선유': { grant: 224, since: '2026-09-18' },   // 획득 1970 · 사용 2194
   '김기범': { grant: 190, since: '2026-09-18' },   // 획득 533 · 사용 723
   '최민석': { grant: 65,  since: '2026-09-18' },   // 획득 1762 · 사용 1827
+  // ↓ 위 5명과 사유가 다르다. 이중 결제 버그(더블클릭)로 잔액보다 많이 빠져나간 건이라
+  //   grant 0 = 마이너스만 지우고 0 에서 다시 시작. 캐스팅·아이템은 이미 받았으므로 추가 지급은 안 한다.
+  '서상원': { grant: 0,   since: '2026-09-22' },   // 획득 1126 · 사용 1411 → -285 탕감
 };
 // 보정 대상의 적립 — since 이후 날짜의 처리 건수만 센다 (empHandled 의 날짜 제한판)
 function empHandledSince(emp, from){
@@ -4513,6 +4516,7 @@ function adminResetEmpItems(){
 }
 // 👑 유일 타이틀 [곽호영] 착용 시 능력: 모든 상점(코인) 아이템 무료
 function hasFreeShop(emp){ const t=itemById('title',(gs(emp).equipped||{}).title); return !!(t&&t.freeShop); }
+let buyBusy=false;   // 구매 인증 대기 중 재진입 차단 — 낚시와 같은 이중 결제 구멍을 막는다
 async function buyOrEquip(cat,id){
   const emp=gameMe; if(!emp){ alert('먼저 상단에서 본인 이름을 선택하세요 🙂'); return; }
   const it=itemById(cat,id); if(!it) return; const g=gs(emp);
@@ -4526,8 +4530,13 @@ async function buyOrEquip(cat,id){
       g.owned=g.owned||[]; g.owned.push(cat+':'+id);
     } else {  // 일반 코인 아이템
       if(empAvail(emp)<it.price){ alert('🪙 코인이 부족해요!\n'+coinShortMsg(emp)); return; }
-      if(it.price>0 && !(await requireAuth(emp))) return;   // 유료 구매 → 본인 인증
+      if(buyBusy) return;                                    // 인증 대기 중 더블클릭 → 이중 결제
+      buyBusy=true;
+      const authed = it.price>0 ? await requireAuth(emp) : true;   // 유료 구매 → 본인 인증
+      // 대기 중 잔액이 줄었거나 이미 사졌을 수 있어 차감 직전에 다시 본다
+      if(!authed || empAvail(emp)<it.price || owns(emp,cat,id)){ buyBusy=false; return; }
       addSpent(emp, it.price); g.owned=g.owned||[]; g.owned.push(cat+':'+id);
+      buyBusy=false;
     }
   }
   g.equipped=g.equipped||{}; g.equipped[cat]=id; saveGame(); renderGame();
@@ -4747,17 +4756,25 @@ async function castFish(spot){
   const gate=fishGate(emp,f); if(!gate.ok){ alert(gate.msg); return; }
   const cg=fishCastGate(emp,f); if(!cg.ok){ alert(cg.msg); return; }
   const n=castCount(emp), cost=f.cost*n;   // [세월을 낚은] 보유 시 2회 동시 캐스팅 (비용도 2회분)
-  if(empAvail(emp)<cost){ alert('🪙 코인이 부족해요! (캐스트 '+cost+'코인'+(n>1?` · ${n}회분`:'')+')'+coinShortMsg(emp)); return; }
-  if(!(await requireAuth(emp))) return;   // 코인 소모 → 본인 인증
+  const short=()=>alert('🪙 코인이 부족해요! (캐스트 '+cost+'코인'+(n>1?` · ${n}회분`:'')+')'+coinShortMsg(emp));
+  if(empAvail(emp)<cost){ short(); return; }
+  /* ⚠️ 바로 위 잔액 확인과 아래 차감 사이에 await(본인 인증)가 있다. 예전엔 fishBusy 를 차감
+   * '뒤'에야 켜서 이 구간이 비어 있었고, 더블클릭하면 두 호출이 모두 확인을 통과한 다음
+   * 각자 차감해 잔액이 음수로 내려갔다. (실측: 1코인 보유 상태로 5연타 → 5회 차감, 경고도 없음)
+   * → 확인 직후 잠그고, 차감 직전에 잔액을 한 번 더 본다. */
+  fishBusy=true;
+  const authed=await requireAuth(emp);
+  if(!authed || empAvail(emp)<cost){ fishBusy=false; if(authed) short(); return; }
   addSpent(emp, cost); gs(emp).fishCasts=(gs(emp).fishCasts||0)+n; saveGame();   // 캐스팅 누적(세월을 낚은 타이틀용)
   if((FISH_WAIT[spot]||0)<=0){   // 대기 0(초급) → 던지자마자 바로 결과
-    fishBusy=true; showFishing(f,n);
+    showFishing(f,n);   // fishBusy 는 위에서 이미 켜 뒀다
     const res=rollCasts(emp,f,n); saveGame();
     setTimeout(()=>{ showFishResults(res); renderMain(); fishBusy=false; }, 1200);
     return;
   }
   const g=gs(emp); g.pendN=g.pendN||{}; g.pendN[spot]=n;   // 결제한 횟수 기억(대기 중 타이틀 변동과 무관하게 정산)
   setFishCast(emp,spot); saveGame();
+  fishBusy=false;   // 대기 시작 — 결과 확인은 나중이라 여기서 잠금 해제
   showFishCastDone(spot,n); renderMain();
 }
 function showFishing(f,n){
