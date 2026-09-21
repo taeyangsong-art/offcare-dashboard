@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12174,
+  "version": 12175,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192909,11 +192909,11 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "심성현": 4,
+          "김동욱": 4,
           "서상원": 1,
           "송태양": 4,
           "김규빈": 1,
           "고경림": 3,
-          "김동욱": 3,
           "김현기": 1
         },
         "onboarding": {
@@ -192954,6 +192954,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
+        },
+        {
+          "time": "10:12",
+          "store": "신망애이룸터",
+          "biz": "1328272485",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "<https://w1659946222-hxm266180.slack.com/archives/C08BV4A877B/p1789608494891619|프론트 재수령> 후 결제 시도 시 \"비밀 키 다운로드 요망 IC카드 제거 요망 환경 설정에서 포스 다운로드 ",
+          "hw": "",
+          "intake": "online",
+          "note": "kpn 포스 프론트 키다운로드 완료"
         },
         {
           "time": "10:02",
@@ -193210,7 +193221,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 18,
+        "online": 19,
         "offline": 7,
         "unknown": 0
       },
@@ -193329,17 +193340,10 @@ window.SLACK_DATA = {
       },
       "1789950349.719849": {
         "post": "1789950349.719849",
-        "lastSeen": 1789953858.052,
+        "lastSeen": 1789953919.211,
         "r": 1,
         "day": "2026-09-21",
         "idx": 9
-      },
-      "1789953125.584219": {
-        "post": "1789953125.584219",
-        "lastSeen": 1789953858.052,
-        "r": 1,
-        "day": "2026-09-21",
-        "idx": 13
       }
     },
     "days": {
@@ -255626,7 +255630,8 @@ window.SLACK_DATA = {
             "store": "신망애이룸터",
             "biz": "1328272485",
             "who": "김동욱",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 12.7
           },
           {
             "hm": "10:19",
@@ -255642,7 +255647,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-21 10:24",
+    "at": "2026-09-21 10:25",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
