@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12206,
+  "version": 12207,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -193594,53 +193594,66 @@ window.SLACK_DATA = {
         "offline": 10,
         "unknown": 0
       },
-      "updatedAt": "12:15",
+      "updatedAt": "12:20",
       "voc": {
-        "responses": 2,
+        "responses": 3,
         "install": {
-          "count": 1,
-          "low": 0
-        },
-        "nps": {
           "count": 2,
           "low": 0
         },
+        "nps": {
+          "count": 3,
+          "low": 0
+        },
         "high": {
-          "install": 1,
-          "nps": 2
+          "install": 2,
+          "nps": 3
         },
         "npsDist": {
-          "10": 2
+          "10": 3
         },
         "installDist": {
-          "5": 1
+          "5": 2
         },
         "byIndustry": {
-          "서비스[뷰티,헤어]": 1
+          "서비스[뷰티,헤어]": 2
         },
         "byTenure": {
-          "1개월": {
-            "total": 1,
+          "구매설치": {
+            "total": 2,
             "low": 0
           },
-          "구매설치": {
+          "1개월": {
             "total": 1,
             "low": 0
           }
         },
         "byVan": {
-          "KSNET": {
-            "total": 1,
+          "KPN": {
+            "total": 2,
             "low": 0
           },
-          "KPN": {
+          "KSNET": {
             "total": 1,
             "low": 0
           }
         },
         "reasonCounts": {},
         "alerts": [],
-        "praises": []
+        "praises": [
+          {
+            "time": "12:20",
+            "store": "꽃길이발관",
+            "storeId": "665254",
+            "indBucket": "서비스[뷰티,헤어]",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "부담없이 친절한 안내. 어떤 상황에서도 신뢰할수있을것같음",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
       }
     }
   },
@@ -193702,21 +193715,21 @@ window.SLACK_DATA = {
       },
       "1789955963.451259": {
         "post": "1789955963.451259",
-        "lastSeen": 1789960729.754,
+        "lastSeen": 1789960820.03,
         "r": 1,
         "day": "2026-09-21",
         "idx": 19
       },
       "1789958787.678209": {
         "post": "1789958787.678209",
-        "lastSeen": 1789960729.754,
+        "lastSeen": 1789960820.03,
         "r": 1,
         "day": "2026-09-21",
         "idx": 23
       },
       "1789960512.209739": {
         "post": "1789960512.209739",
-        "lastSeen": 1789960729.754,
+        "lastSeen": 1789960820.03,
         "r": 1,
         "day": "2026-09-21",
         "idx": 25
@@ -256124,7 +256137,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-21 12:18",
+    "at": "2026-09-21 12:20",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
