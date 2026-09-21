@@ -3,10 +3,39 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2324,
- "updatedAt": "2026-09-21 17:46",
+ "version": 2325,
+ "updatedAt": "2026-09-21 17:57",
  "days": 30,
  "items": [
+  {
+   "ts": "1789981029.823089",
+   "date": "2026-09-21",
+   "time": "17:57",
+   "store": "예솔스토리",
+   "biz": "2672402174",
+   "pos": "",
+   "content": "해당 매장 기존 메뉴중에 가격 변경이 필요한 메뉴들이 있어 리스트 공유드립니다. 가격 수정 변경 부탁드립니다.",
+   "special": "",
+   "drive": [],
+   "files": 1,
+   "att": [
+    {
+     "name": "예솔스토리_출고내역.xlsx.exs",
+     "fid": "F0C34TXJLCD",
+     "from": "원글",
+     "path": "menu-files/1789981029_823089-0.exs",
+     "nj": 1
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789981033.709469",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789981029823089"
+  },
   {
    "ts": "1789979905.786569",
    "date": "2026-09-21",
@@ -24,8 +53,8 @@ window.MENU_REQUESTS = {
     "님 해당 매장은 이미지 괜찮다고 합니다용~ ㅎㅎ",
     "부평점만 내일 이미지 받아서 제가 재요청 드릴게요 !"
    ],
-   "rc": 6,
-   "lr": "1789980351.489399",
+   "rc": 7,
+   "lr": "1789981034.537009",
    "rfx": 3,
    "status": "done",
    "handler": "김규빈",
