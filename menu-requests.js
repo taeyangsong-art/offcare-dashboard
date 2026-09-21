@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2309,
- "updatedAt": "2026-09-21 16:09",
+ "version": 2310,
+ "updatedAt": "2026-09-21 16:15",
  "days": 30,
  "items": [
   {
@@ -24,8 +24,8 @@ window.MENU_REQUESTS = {
    "rc": 1,
    "lr": "1789973626.378229",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "심성현",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789973623177929"
   },
   {
@@ -41,9 +41,13 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 0,
-   "lr": "",
+   "replies": [
+    "님ㅋㅋㅋ",
+    "요기 *마이요거트립 인덕원점 (*···) 메뉴로 복제 부탁드려요!!!",
+    "휴우...ㅠㅠ"
+   ],
+   "rc": 3,
+   "lr": "1789974921.655589",
    "rfx": 3,
    "status": "confirm",
    "handler": "김규빈",
