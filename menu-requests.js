@@ -3,10 +3,183 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2315,
- "updatedAt": "2026-09-21 16:51",
+ "version": 2316,
+ "updatedAt": "2026-09-21 16:54",
  "days": 30,
  "items": [
+  {
+   "ts": "1789977132.347389",
+   "date": "2026-09-21",
+   "time": "16:52",
+   "store": "테스트",
+   "biz": "1111111111",
+   "pos": "",
+   "content": "메뉴 사진 추가 요청",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "IMG_5390.png",
+     "fid": "F0C3D26PRHS",
+     "from": "댓글",
+     "path": "menu-files/1789977132_347389-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "분식류",
+       "name": "떡볶이",
+       "price": 5500
+      },
+      {
+       "category": "분식류",
+       "name": "라볶이",
+       "price": 6000
+      },
+      {
+       "category": "분식류",
+       "name": "치즈떡볶이",
+       "price": 6000
+      },
+      {
+       "category": "분식류",
+       "name": "치즈라볶이",
+       "price": 6500
+      },
+      {
+       "category": "분식류",
+       "name": "피자치즈라볶이",
+       "price": 7000
+      },
+      {
+       "category": "분식류",
+       "name": "피자치즈떡볶이",
+       "price": 6500
+      }
+     ]
+    },
+    {
+     "name": "IMG_5389.png",
+     "fid": "F0C335Q6EQ3",
+     "from": "댓글",
+     "path": "menu-files/1789977132_347389-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "김밥류",
+       "name": "소고기김밥",
+       "price": 5000
+      },
+      {
+       "category": "김밥류",
+       "name": "날치알김밥",
+       "price": 5000
+      },
+      {
+       "category": "김밥류",
+       "name": "돈까스김밥",
+       "price": 5000
+      },
+      {
+       "category": "김밥류",
+       "name": "참치김치김밥",
+       "price": 5500
+      },
+      {
+       "category": "김밥류",
+       "name": "참치고추김밥",
+       "price": 5500
+      },
+      {
+       "category": "분식류",
+       "name": "오뎅",
+       "price": 4500
+      }
+     ]
+    },
+    {
+     "name": "IMG_5388.png",
+     "fid": "F0C34F25C13",
+     "from": "댓글",
+     "path": "menu-files/1789977132_347389-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "김밥류",
+       "name": "소풍김밥",
+       "price": 4000
+      },
+      {
+       "category": "김밥류",
+       "name": "김치김밥",
+       "price": 4500
+      },
+      {
+       "category": "김밥류",
+       "name": "치즈김밥",
+       "price": 4500
+      },
+      {
+       "category": "김밥류",
+       "name": "샐러드김밥",
+       "price": 4500
+      },
+      {
+       "category": "김밥류",
+       "name": "참치김밥",
+       "price": 5000
+      },
+      {
+       "category": "김밥류",
+       "name": "스팸김밥",
+       "price": 5000
+      }
+     ]
+    },
+    {
+     "name": "IMG_5387.png",
+     "fid": "F0C3BADK3CH",
+     "from": "댓글",
+     "path": "menu-files/1789977132_347389-3.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "인기 메뉴",
+       "name": "참치김밥",
+       "price": 5000
+      },
+      {
+       "category": "인기 메뉴",
+       "name": "소풍김밥",
+       "price": 4000
+      },
+      {
+       "category": "인기 메뉴",
+       "name": "참치김치김밥",
+       "price": 5500
+      },
+      {
+       "category": "인기 메뉴",
+       "name": "소고기김밥",
+       "price": 5000
+      },
+      {
+       "category": "인기 메뉴",
+       "name": "참치고추김밥",
+       "price": 5500
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1789977166.350669",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789977132347389"
+  },
   {
    "ts": "1789973623.177929",
    "date": "2026-09-21",
@@ -2464,10 +2637,10 @@ window.MENU_REQUESTS = {
    "replies": [
     "월요일 세트메뉴 처리 원격연결필요 : <tel:···|···>"
    ],
-   "rc": 4,
-   "lr": "1789805011.914119",
+   "rc": 5,
+   "lr": "1789977174.001409",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789798804065659"
   },
