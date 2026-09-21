@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12184,
+  "version": 12185,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192918,8 +192918,8 @@ window.SLACK_DATA = {
           "김규빈": 1
         },
         "onboarding": {
+          "심성현": 3,
           "송태양": 1,
-          "심성현": 2,
           "고경림": 1
         },
         "extern": {
@@ -193000,6 +193000,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "• 프린터 커버불량으로 교체 안내 및 입출고 접수 완료입니다 프린터 커버불량으로 교체 안내 및 입출고 접수 완료입니다"
+        },
+        {
+          "time": "10:28",
+          "store": "더나은 스킨랩",
+          "biz": "4984600694",
+          "cat": "onboarding",
+          "emp": "심성현",
+          "req": "핸드폰+프론트",
+          "hw": "",
+          "intake": "online",
+          "note": "지금 토스 사장님 어플깔아달라고 막통화종료함 / 온보딩 완료"
         },
         {
           "time": "10:19",
@@ -193311,11 +193322,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 25,
+        "online": 26,
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "10:47",
+      "updatedAt": "10:53",
       "voc": {
         "responses": 2,
         "install": {
@@ -193430,10 +193441,14 @@ window.SLACK_DATA = {
       },
       "1789950349.719849": {
         "post": "1789950349.719849",
-        "lastSeen": 1789955477.944,
+        "lastSeen": 1789955659.662,
         "r": 1,
         "day": "2026-09-21",
         "idx": 9
+      },
+      "1789955609.696029": {
+        "post": "1789955609.696029",
+        "lastSeen": 1789955659.662
       }
     },
     "days": {
@@ -255755,7 +255770,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-21 10:51",
+    "at": "2026-09-21 10:54",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
