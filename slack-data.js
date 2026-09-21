@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12223,
+  "version": 12224,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192993,7 +192993,7 @@ window.SLACK_DATA = {
           "req": "배민 영수증 출력이 안된다고 하시어 점검 요청 드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "• cpp-3000 &lt;&gt; 자체보유 포스기 연동 하였으나 출력불 (포스기 불량 의심 프론트 연동했을때는 출력됨) • 배민LITE 토스포스 연동하였으나 배달대행(스토어프로그램) 연동이 안되어 AB케이블 구매링크 보내드렸고 케이블 수령 후 재인입 해주시면 다시 도와드리겠음(포스기 문제라면 AB케이블로도 출력안될 가능성 높다고 선안내드림) cpp-300"
         },
         {
           "time": "12:45",
@@ -193881,7 +193881,7 @@ window.SLACK_DATA = {
       },
       "1789963200.946789": {
         "post": "1789963200.946789",
-        "lastSeen": 1789963458.909
+        "lastSeen": 1789963517.927
       }
     },
     "days": {
@@ -256312,13 +256312,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-21 13:04",
+    "at": "2026-09-21 13:05",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 4176,
+    "rows": 4177,
     "named": 866,
     "unknownName": 0,
     "beforeStart": 0,
