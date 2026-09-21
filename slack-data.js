@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12214,
+  "version": 12215,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -193793,14 +193793,14 @@ window.SLACK_DATA = {
       },
       "1789955963.451259": {
         "post": "1789955963.451259",
-        "lastSeen": 1789962078.5,
+        "lastSeen": 1789962139.543,
         "r": 1,
         "day": "2026-09-21",
         "idx": 19
       },
       "1789958787.678209": {
         "post": "1789958787.678209",
-        "lastSeen": 1789962078.5,
+        "lastSeen": 1789962139.543,
         "r": 1,
         "day": "2026-09-21",
         "idx": 23
@@ -193811,7 +193811,10 @@ window.SLACK_DATA = {
       },
       "1789962078.024199": {
         "post": "1789962078.024199",
-        "lastSeen": 1789962078.5
+        "lastSeen": 1789962139.543,
+        "r": 1,
+        "day": "2026-09-21",
+        "idx": 26
       }
     },
     "days": {
@@ -255973,8 +255976,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-21": {
-        "cnt": 26,
-        "sumMin": 132.2121540983518,
+        "cnt": 27,
+        "sumMin": 132.72877578337986,
         "over": 0,
         "items": [
           {
@@ -256207,13 +256210,21 @@ window.SLACK_DATA = {
             "who": "송태양",
             "cat": "as",
             "dmin": 6.1
+          },
+          {
+            "hm": "12:41",
+            "min": 0.5,
+            "store": "예원플라워&amp;카페(YeWon Flower&amp;",
+            "biz": "7220703450",
+            "who": "김현기",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-21 12:41",
+    "at": "2026-09-21 12:42",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
