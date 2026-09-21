@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2326,
- "updatedAt": "2026-09-21 18:01",
+ "version": 2327,
+ "updatedAt": "2026-09-21 18:05",
  "days": 30,
  "items": [
   {
@@ -30,7 +30,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C37SWBYK0",
      "from": "댓글",
-     "path": "menu-files/1789981029_823089-1.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -38,13 +37,13 @@ window.MENU_REQUESTS = {
        "name": "TUFFSOAP 터프솝 올인원 향수비누 - 그린",
        "price": 13900
       }
-     ]
+     ],
+     "path": "menu-files/1789981029_823089-1.png"
     },
     {
      "name": "image.png",
      "fid": "F0C33K0157V",
      "from": "댓글",
-     "path": "menu-files/1789981029_823089-2.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -52,17 +51,20 @@ window.MENU_REQUESTS = {
        "name": "[TUFFSOAP] 터프솝 올인원 향수비누 - 그린(155g)",
        "price": 13900
       }
-     ]
+     ],
+     "path": "menu-files/1789981029_823089-2.png"
     }
    ],
    "datt": [],
    "replies": [
     "네네 맞습니다!",
     "가격만 수정 부탁드립니다!",
-    "리스트가 너무 많아서 버거워하시는거 같아요...."
+    "리스트가 너무 많아서 버거워하시는거 같아요....",
+    "넵넵 알겠습니다!",
+    "아니면 제가 한번 다시 확인해보겠습니다."
    ],
-   "rc": 14,
-   "lr": "1789981253.433979",
+   "rc": 17,
+   "lr": "1789981439.722159",
    "rfx": 3,
    "status": "confirm",
    "handler": "김규빈",
