@@ -3,10 +3,41 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2294,
- "updatedAt": "2026-09-21 12:37",
+ "version": 2295,
+ "updatedAt": "2026-09-21 13:19",
  "days": 30,
  "items": [
+  {
+   "ts": "1789964193.152119",
+   "date": "2026-09-21",
+   "time": "13:16",
+   "store": "마이요거트립 부평점",
+   "biz": "5276300418",
+   "pos": "",
+   "content": "대시보드에 있는 메뉴 그대로 넣어주세요~ 샵인샵으로 아래의 3개 브랜드 모두 운영중입니다.\n> • 마이요거트립 부평점\n> • 빙수핑 부평점\n> • 와플픽 부평점",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "마이요거트립_대시보드_상품목록-260921131137.xlsx",
+     "fid": "F0C33CV4621",
+     "from": "댓글",
+     "path": "menu-files/1789964193_152119-0.xlsx",
+     "nj": 1
+    }
+   ],
+   "datt": [],
+   "replies": [
+    "사진 필요 시, 대시보드 초대 해드리겠습니다!"
+   ],
+   "rc": 2,
+   "lr": "1789964233.051719",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789964193152119"
+  },
   {
    "ts": "1789961722.398899",
    "date": "2026-09-21",
