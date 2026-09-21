@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12226,
+  "version": 12227,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192907,20 +192907,20 @@ window.SLACK_DATA = {
     },
     "2026-09-21": {
       "counts": {
-        "extern": {
-          "김동욱": 3,
-          "서상원": 3,
-          "김현기": 1
-        },
         "as": {
+          "김동욱": 9,
           "김규빈": 4,
           "송태양": 10,
           "김현기": 5,
           "심성현": 11,
           "고경림": 8,
           "김기범": 3,
-          "서상원": 2,
-          "김동욱": 8
+          "서상원": 2
+        },
+        "extern": {
+          "김동욱": 3,
+          "서상원": 3,
+          "김현기": 1
         },
         "onboarding": {
           "심성현": 4,
@@ -192951,6 +192951,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "13:06",
+          "store": "제주도정품전자담배 서귀포점 주식회사",
+          "biz": "1528703196",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "알리/위챗 프론트 업데이트",
+          "hw": "",
+          "intake": "online",
+          "note": "2.70.11 확인"
+        },
         {
           "time": "13:02",
           "store": "제주도 정품전자담배 중문 직영점",
@@ -193756,11 +193767,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 60,
+        "online": 61,
         "offline": 14,
         "unknown": 0
       },
-      "updatedAt": "13:08",
+      "updatedAt": "13:10",
       "voc": {
         "responses": 3,
         "install": {
@@ -193881,7 +193892,18 @@ window.SLACK_DATA = {
       },
       "1789963200.946789": {
         "post": "1789963200.946789",
-        "lastSeen": 1789963700.328
+        "lastSeen": 1789963912.289,
+        "r": 1,
+        "day": "2026-09-21",
+        "idx": 29
+      },
+      "1789963829.619619": {
+        "post": "1789963829.619619",
+        "lastSeen": 1789963912.289
+      },
+      "1789963784.421979": {
+        "post": "1789963784.421979",
+        "lastSeen": 1789963912.289
       }
     },
     "days": {
@@ -256043,8 +256065,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-21": {
-        "cnt": 29,
-        "sumMin": 137.04189898173013,
+        "cnt": 30,
+        "sumMin": 147.13126083215076,
         "over": 0,
         "items": [
           {
@@ -256306,19 +256328,27 @@ window.SLACK_DATA = {
             "who": "김규빈",
             "cat": "as",
             "dmin": 2.2
+          },
+          {
+            "hm": "13:00",
+            "min": 10.1,
+            "store": "어여쁘다",
+            "biz": "3682002334",
+            "who": "서상원",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-21 13:08",
+    "at": "2026-09-21 13:12",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 4181,
+    "rows": 4182,
     "named": 866,
     "unknownName": 0,
     "beforeStart": 0,
