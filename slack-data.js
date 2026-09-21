@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12175,
+  "version": 12176,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192931,7 +192931,19 @@ window.SLACK_DATA = {
           "김규빈": 1
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "09:25",
+          "store": "보사노바 커피로스터스 잠실점",
+          "biz": "5178501144",
+          "handler": "김동욱",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "done": [
         {
           "time": "10:19",
@@ -193221,11 +193233,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 19,
+        "online": 20,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "10:19",
+      "updatedAt": "10:28",
       "voc": {
         "responses": 2,
         "install": {
@@ -193340,7 +193352,7 @@ window.SLACK_DATA = {
       },
       "1789950349.719849": {
         "post": "1789950349.719849",
-        "lastSeen": 1789953919.211,
+        "lastSeen": 1789954100.415,
         "r": 1,
         "day": "2026-09-21",
         "idx": 9
@@ -255647,7 +255659,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-21 10:25",
+    "at": "2026-09-21 10:28",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
