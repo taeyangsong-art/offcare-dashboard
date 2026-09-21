@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2338,
- "updatedAt": "2026-09-21 21:23",
+ "version": 2339,
+ "updatedAt": "2026-09-21 21:27",
  "days": 30,
  "items": [
   {
@@ -20,9 +20,12 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1789993363.740819",
+   "replies": [
+    "카테고리 : 빙수 바보 빙식이\n메뉴명:\n아포카토 치즈\n조리퐁쵸코\n커피빙수\n망고 바나나빙수\n찐한우유빙수\n1인망고\n1인딸기\n리얼생딸기\n생딸기바나나\n생딸기치즈\n\n빙수 메뉴 에세 제일 뒤쪽으로 설정 부탁드립니다.",
+    "해당 메뉴들 품절 메뉴여서 뒤쪽으로 배치 해달라고 하십니다."
+   ],
+   "rc": 3,
+   "lr": "1789993458.838149",
    "rfx": 3,
    "status": "wait",
    "handler": null,
