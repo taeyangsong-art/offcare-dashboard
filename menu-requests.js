@@ -3,10 +3,548 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2287,
- "updatedAt": "2026-09-21 11:04",
+ "version": 2288,
+ "updatedAt": "2026-09-21 11:27",
  "days": 30,
  "items": [
+  {
+   "ts": "1789957544.550659",
+   "date": "2026-09-21",
+   "time": "11:25",
+   "store": "스몰굿커피 문정점",
+   "biz": "6412901913",
+   "pos": "토스포스",
+   "content": "모든 메뉴 등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "1000012136.jpg",
+     "fid": "F0C2SH1SUVD",
+     "from": "댓글",
+     "path": "menu-files/1789957544_550659-0.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "베이커리 (Bakery)",
+       "name": "소금빵 러스크",
+       "price": 5000
+      },
+      {
+       "category": "베이커리 (Bakery)",
+       "name": "애플시나몬크랙쿠키",
+       "price": 2000
+      },
+      {
+       "category": "베이커리 (Bakery)",
+       "name": "휘낭시에 러스크",
+       "price": 4000
+      },
+      {
+       "category": "베이커리 (Bakery)",
+       "name": "소금빵",
+       "price": 2700
+      },
+      {
+       "category": "베이커리 (Bakery)",
+       "name": "버터 스콘",
+       "price": 4500
+      },
+      {
+       "category": "베이커리 (Bakery)",
+       "name": "플레인휘낭시에",
+       "price": 2000
+      }
+     ]
+    },
+    {
+     "name": "1000012137.jpg",
+     "fid": "F0C37RAVDMG",
+     "from": "댓글",
+     "path": "menu-files/1789957544_550659-1.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "신메뉴 (NEW)",
+       "name": "초당옥수수 콜드브루 라떼",
+       "price": 5800
+      },
+      {
+       "category": "신메뉴 (NEW)",
+       "name": "초당옥수수 라떼",
+       "price": 4500
+      },
+      {
+       "category": "신메뉴 (NEW)",
+       "name": "코코슈페너 (10oz)",
+       "price": 4300
+      },
+      {
+       "category": "신메뉴 (NEW)",
+       "name": "더 블루(ICE)",
+       "price": 5800
+      }
+     ]
+    },
+    {
+     "name": "1000012138.jpg",
+     "fid": "F0C37RABN8J",
+     "from": "댓글",
+     "path": "menu-files/1789957544_550659-2.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "아이스커피 (ICE)",
+       "name": "아메리카노(ICE)",
+       "price": 2500
+      },
+      {
+       "category": "아이스커피 (ICE)",
+       "name": "더 먹 (The MUK)",
+       "price": 6000
+      },
+      {
+       "category": "아이스커피 (ICE)",
+       "name": "굿데이 헤이즐넛 (ICE)",
+       "price": 4200
+      },
+      {
+       "category": "아이스커피 (ICE)",
+       "name": "시나몬 허니라떼(ICE)",
+       "price": 5000
+      },
+      {
+       "category": "아이스커피 (ICE)",
+       "name": "스몰굿커피(ICE)",
+       "price": 4000
+      },
+      {
+       "category": "아이스커피 (ICE)",
+       "name": "더 블랙(ICE)",
+       "price": 5000
+      },
+      {
+       "category": "아이스커피 (ICE)",
+       "name": "카페라떼(ICE)",
+       "price": 4000
+      },
+      {
+       "category": "아이스커피 (ICE)",
+       "name": "헤이즐넛라떼 (ICE)",
+       "price": 4300
+      },
+      {
+       "category": "아이스커피 (ICE)",
+       "name": "비닐라라떼(ICE)",
+       "price": 4300
+      },
+      {
+       "category": "아이스커피 (ICE)",
+       "name": "돌체라떼(ICE)",
+       "price": 4300
+      },
+      {
+       "category": "아이스커피 (ICE)",
+       "name": "굿커피(ICE)",
+       "price": 5000
+      },
+      {
+       "category": "아이스커피 (ICE)",
+       "name": "콜드브루 (ICE)",
+       "price": 4500
+      }
+     ]
+    },
+    {
+     "name": "1000012139.jpg",
+     "fid": "F0C2SH2JVST",
+     "from": "댓글",
+     "path": "menu-files/1789957544_550659-3.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "아이스커피 (ICE)",
+       "name": "돌체콜드브루(ICE)",
+       "price": 5000
+      },
+      {
+       "category": "아이스커피 (ICE)",
+       "name": "비엔나커피(ICE)",
+       "price": 4300
+      },
+      {
+       "category": "아이스커피 (ICE)",
+       "name": "카페모카(ICE)",
+       "price": 4500
+      },
+      {
+       "category": "아이스커피 (ICE)",
+       "name": "카라멜라떼(ICE)",
+       "price": 5000
+      },
+      {
+       "category": "아이스커피 (ICE)",
+       "name": "플랫화이트(ICE)",
+       "price": 4000
+      },
+      {
+       "category": "아이스커피 (ICE)",
+       "name": "너티밀키(ICE)",
+       "price": 4000
+      }
+     ]
+    },
+    {
+     "name": "1000012140.jpg",
+     "fid": "F0C35VDDZB8",
+     "from": "댓글",
+     "path": "menu-files/1789957544_550659-4.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "핫커피 (HOT)",
+       "name": "아메리카노(HOT)",
+       "price": 2500
+      },
+      {
+       "category": "핫커피 (HOT)",
+       "name": "시나몬 허니라떼(HOT)",
+       "price": 5000
+      },
+      {
+       "category": "핫커피 (HOT)",
+       "name": "에스프레소",
+       "price": 2800
+      },
+      {
+       "category": "핫커피 (HOT)",
+       "name": "에스프레소 콘파나",
+       "price": 3000
+      },
+      {
+       "category": "핫커피 (HOT)",
+       "name": "카페라떼(HOT)",
+       "price": 4000
+      },
+      {
+       "category": "핫커피 (HOT)",
+       "name": "바닐라라떼(HOT)",
+       "price": 4300
+      },
+      {
+       "category": "핫커피 (HOT)",
+       "name": "헤이즐넛라떼(HOT)",
+       "price": 4300
+      },
+      {
+       "category": "핫커피 (HOT)",
+       "name": "스몰굿커피(HOT)",
+       "price": 4000
+      },
+      {
+       "category": "핫커피 (HOT)",
+       "name": "굿커피(HOT)",
+       "price": 5000
+      },
+      {
+       "category": "핫커피 (HOT)",
+       "name": "넛티밀키 (HOT)",
+       "price": 4000
+      },
+      {
+       "category": "핫커피 (HOT)",
+       "name": "돌체라떼 (HOT)",
+       "price": 4300
+      },
+      {
+       "category": "핫커피 (HOT)",
+       "name": "비엔나커피(HOT)",
+       "price": 4300
+      }
+     ]
+    },
+    {
+     "name": "1000012141.jpg",
+     "fid": "F0C4297315W",
+     "from": "댓글",
+     "path": "menu-files/1789957544_550659-5.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "핫커피 (HOT)",
+       "name": "플랫화이트(HOT)",
+       "price": 4000
+      },
+      {
+       "category": "핫커피 (HOT)",
+       "name": "카라멜라떼(HOT)",
+       "price": 5000
+      },
+      {
+       "category": "핫커피 (HOT)",
+       "name": "카페모카(HOT)",
+       "price": 4500
+      }
+     ]
+    },
+    {
+     "name": "1000012142.jpg",
+     "fid": "F0C37RANLG2",
+     "from": "댓글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "빅사이즈 커피",
+       "name": "빅 아메리카노(ICE)",
+       "price": 4500
+      },
+      {
+       "category": "빅사이즈 커피",
+       "name": "빅아메리카노(HOT)",
+       "price": 4500
+      },
+      {
+       "category": "빅사이즈 커피",
+       "name": "빅 더 블랙(ICE)",
+       "price": 7800
+      },
+      {
+       "category": "빅사이즈 커피",
+       "name": "빅 키페라떼(ICE)",
+       "price": 5800
+      },
+      {
+       "category": "빅사이즈 커피",
+       "name": "빅 헤이즐넛라떼(ICE)",
+       "price": 7000
+      },
+      {
+       "category": "빅사이즈 커피",
+       "name": "빅 바닐라라떼(ICE)",
+       "price": 7000
+      },
+      {
+       "category": "빅사이즈 커피",
+       "name": "빅 카페모카(ICE)",
+       "price": 7200
+      },
+      {
+       "category": "빅사이즈 커피",
+       "name": "빅 비엔나커피(ICE)",
+       "price": 7200
+      },
+      {
+       "category": "빅사이즈 커피",
+       "name": "빅 돌체라떼(ICE)",
+       "price": 7200
+      },
+      {
+       "category": "빅사이즈 커피",
+       "name": "빅 굿커피(ICE)",
+       "price": 7600
+      },
+      {
+       "category": "빅사이즈 커피",
+       "name": "빅 카라멜라떼(ICE)",
+       "price": 7500
+      },
+      {
+       "category": "빅사이즈 커피",
+       "name": "빅 너티밀키(ICE)",
+       "price": 7500
+      }
+     ]
+    },
+    {
+     "name": "1000012143.jpg",
+     "fid": "F0C3BHZP760",
+     "from": "댓글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "아이스음료 (ICE)",
+       "name": "식혜",
+       "price": 3200
+      },
+      {
+       "category": "아이스음료 (ICE)",
+       "name": "시트러스 말차",
+       "price": 5500
+      },
+      {
+       "category": "아이스음료 (ICE)",
+       "name": "베리 말차",
+       "price": 5500
+      },
+      {
+       "category": "아이스음료 (ICE)",
+       "name": "초콜릿 말차",
+       "price": 5500
+      },
+      {
+       "category": "아이스음료 (ICE)",
+       "name": "그린 웨이브",
+       "price": 6000
+      },
+      {
+       "category": "아이스음료 (ICE)",
+       "name": "말차라떼(ICE)",
+       "price": 5000
+      },
+      {
+       "category": "아이스음료 (ICE)",
+       "name": "스물곳딸기(ICE)",
+       "price": 4000
+      },
+      {
+       "category": "아이스음료 (ICE)",
+       "name": "자몽블랙티(ICE)",
+       "price": 5000
+      },
+      {
+       "category": "아이스음료 (ICE)",
+       "name": "밀크웨이브(ICE)",
+       "price": 5500
+      },
+      {
+       "category": "아이스음료 (ICE)",
+       "name": "커피밀크웨이브(ICE)",
+       "price": 6500
+      }
+     ]
+    },
+    {
+     "name": "1000012144.jpg",
+     "fid": "F0C2SH1LGDD",
+     "from": "댓글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "아이스음료 (ICE)",
+       "name": "복숭아 아이스티(ICE)",
+       "price": 3900
+      },
+      {
+       "category": "아이스음료 (ICE)",
+       "name": "오렌지에이드(ICE)",
+       "price": 5500
+      },
+      {
+       "category": "아이스음료 (ICE)",
+       "name": "자몽에이드(ICE)",
+       "price": 5500
+      },
+      {
+       "category": "아이스음료 (ICE)",
+       "name": "청포도에이드(ICE)",
+       "price": 5500
+      },
+      {
+       "category": "아이스음료 (ICE)",
+       "name": "레몬에이드(ICE)",
+       "price": 5000
+      },
+      {
+       "category": "아이스음료 (ICE)",
+       "name": "요거트스무디",
+       "price": 5000
+      },
+      {
+       "category": "아이스음료 (ICE)",
+       "name": "블루베리요거트 스무디",
+       "price": 5500
+      },
+      {
+       "category": "아이스음료 (ICE)",
+       "name": "로얄밀크티(ICE)",
+       "price": 5000
+      },
+      {
+       "category": "아이스음료 (ICE)",
+       "name": "세레니티 티(ICE)",
+       "price": 4500
+      },
+      {
+       "category": "아이스음료 (ICE)",
+       "name": "캐리비안 칵테일 티(ICE)",
+       "price": 4500
+      },
+      {
+       "category": "아이스음료 (ICE)",
+       "name": "유자레몬티(ICE)",
+       "price": 4800
+      },
+      {
+       "category": "아이스음료 (ICE)",
+       "name": "피치우롱티 (ICE)",
+       "price": 4500
+      }
+     ]
+    },
+    {
+     "name": "1000012145.jpg",
+     "fid": "F0C331DC9D3",
+     "from": "댓글",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "핫음료 (HOT)",
+       "name": "말차라떼(HOT)",
+       "price": 5000
+      },
+      {
+       "category": "핫음료 (HOT)",
+       "name": "자몽블랙티(HOT)",
+       "price": 5000
+      },
+      {
+       "category": "핫음료 (HOT)",
+       "name": "로얄밀크티(HOT)",
+       "price": 5000
+      },
+      {
+       "category": "핫음료 (HOT)",
+       "name": "다크초콜릿밀크(HOT)",
+       "price": 4500
+      },
+      {
+       "category": "핫음료 (HOT)",
+       "name": "자몽티(HOT)",
+       "price": 4500
+      },
+      {
+       "category": "핫음료 (HOT)",
+       "name": "유자레몬티(HOT)",
+       "price": 4800
+      },
+      {
+       "category": "핫음료 (HOT)",
+       "name": "피지우롱티 (HOT)",
+       "price": 4500
+      },
+      {
+       "category": "핫음료 (HOT)",
+       "name": "세레니티 티(HOT)",
+       "price": 4500
+      },
+      {
+       "category": "핫음료 (HOT)",
+       "name": "캐리비안 칵테일 티 (HOT)",
+       "price": 4500
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789957582.732589",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789957544550659"
+  },
   {
    "ts": "1789955609.696029",
    "date": "2026-09-21",
