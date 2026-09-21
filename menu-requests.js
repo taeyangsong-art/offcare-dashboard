@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2321,
- "updatedAt": "2026-09-21 17:34",
+ "version": 2322,
+ "updatedAt": "2026-09-21 17:39",
  "days": 30,
  "items": [
+  {
+   "ts": "1789979905.786569",
+   "date": "2026-09-21",
+   "time": "17:38",
+   "store": "마이요거트립 연수점",
+   "biz": "5930902895",
+   "pos": "",
+   "content": "마이요거트립 부평점(<tel:···|···>) 메뉴로 복제 부탁드립니다!!",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789979909.435199",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789979905786569"
+  },
   {
    "ts": "1789979502.981039",
    "date": "2026-09-21",
@@ -21,10 +42,10 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1789979506.456799",
+   "rc": 2,
+   "lr": "1789979754.235529",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789979502981039"
   },
