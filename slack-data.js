@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12197,
+  "version": 12198,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192918,7 +192918,7 @@ window.SLACK_DATA = {
           "서상원": 1
         },
         "extern": {
-          "김동욱": 1,
+          "김동욱": 2,
           "서상원": 2
         },
         "onboarding": {
@@ -192956,6 +192956,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "식권대장 금액 및 세금계산서 금액 완료"
+        },
+        {
+          "time": "11:29",
+          "store": "샤브르정원전주점",
+          "biz": "8398101065",
+          "cat": "extern",
+          "emp": "김동욱",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": "KTWiFi315E a123456789"
         },
         {
           "time": "11:26",
@@ -193509,11 +193520,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 42,
+        "online": 43,
         "offline": 10,
         "unknown": 0
       },
-      "updatedAt": "11:45",
+      "updatedAt": "11:46",
       "voc": {
         "responses": 2,
         "install": {
@@ -193621,14 +193632,21 @@ window.SLACK_DATA = {
       },
       "1789955963.451259": {
         "post": "1789955963.451259",
-        "lastSeen": 1789958718.663,
+        "lastSeen": 1789958919.5,
         "r": 1,
         "day": "2026-09-21",
         "idx": 19
       },
       "1789958700.548819": {
         "post": "1789958700.548819",
-        "lastSeen": 1789958718.663
+        "lastSeen": 1789958919.5,
+        "r": 1,
+        "day": "2026-09-21",
+        "idx": 22
+      },
+      "1789958787.678209": {
+        "post": "1789958787.678209",
+        "lastSeen": 1789958919.5
       }
     },
     "days": {
@@ -255790,8 +255808,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-21": {
-        "cnt": 22,
-        "sumMin": 119.38503703276317,
+        "cnt": 23,
+        "sumMin": 121.36058171590169,
         "over": 0,
         "items": [
           {
@@ -255989,13 +256007,21 @@ window.SLACK_DATA = {
             "who": "고경림",
             "cat": "as",
             "dmin": 8.4
+          },
+          {
+            "hm": "11:45",
+            "min": 2,
+            "store": "주식회사 콜사",
+            "biz": "1518701142",
+            "who": "고경림",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-21 11:45",
+    "at": "2026-09-21 11:48",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
