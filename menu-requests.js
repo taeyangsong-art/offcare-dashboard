@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2320,
- "updatedAt": "2026-09-21 17:29",
+ "version": 2321,
+ "updatedAt": "2026-09-21 17:34",
  "days": 30,
  "items": [
+  {
+   "ts": "1789979502.981039",
+   "date": "2026-09-21",
+   "time": "17:31",
+   "store": "행복한집",
+   "biz": "3931301196",
+   "pos": "퍼스트포스",
+   "content": "메뉴 요청 ->  추어탕 제거,   주류에 하이볼 6,000원 추가  요청    :꾸벅:",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1789979506.456799",
+   "rfx": 3,
+   "status": "confirm",
+   "handler": "김규빈",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789979502981039"
+  },
   {
    "ts": "1789978629.182339",
    "date": "2026-09-21",
