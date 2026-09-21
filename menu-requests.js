@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2290,
- "updatedAt": "2026-09-21 11:36",
+ "version": 2291,
+ "updatedAt": "2026-09-21 11:42",
  "days": 30,
  "items": [
   {
@@ -548,12 +548,13 @@ window.MENU_REQUESTS = {
     "님 이거 옵션이랑 이미지 원본파일은 추가로 따로 전달 주시는걸까요?",
     "확인해보겠슴당~",
     "확인어려움",
-    "https://map.naver.com/p/search/%EC%8A%A4%EB%AA%B0%EA%B5%BF%EC%BB%A4%ED%94%BC%EB%AC%B8%EC%A0%95%EC%A0%90?c=15.00,0,0,0,dh&placePath=%2Fhome%3Ffrom%3Dmap%26fromPanelNum%3D1%26additionalHeight%3D76%26timestamp%3D202609211134%26locale%3Dko%26svcName%3Dmap_pcv5%26searchText%3D%EC%8A%A4%EB%AA%B0%EA%B5%BF%EC%BB%A4%ED%94%BC%EB%AC%B8%EC%A0%95%EC%A0%90"
+    "https://map.naver.com/p/search/%EC%8A%A4%EB%AA%B0%EA%B5%BF%EC%BB%A4%ED%94%BC%EB%AC%B8%EC%A0%95%EC%A0%90?c=15.00,0,0,0,dh&placePath=%2Fhome%3Ffrom%3Dmap%26fromPanelNum%3D1%26additionalHeight%3D76%26timestamp%3D202609211134%26locale%3Dko%26svcName%3Dmap_pcv5%26searchText%3D%EC%8A%A4%EB%AA%B0%EA%B5%BF%EC%BB%A4%ED%94%BC%EB%AC%B8%EC%A0%95%EC%A0%90",
+    "첨부해주신 키오스크 사진에 빅 사이즈 음료가 없으니 참고해주시고\n\n이미지는 원본으로 메일로 부탁드립니다.\n\n저희가 일일이 홈페이지 들어가서 사진 다운받고 하기가 어렵습니다\n\n(아메리카노가 ice랑 hot 이미지가 다른데 네이버는 동일한 이미지에요)"
    ],
-   "rc": 5,
-   "lr": "1789958076.480519",
+   "rc": 6,
+   "lr": "1789958495.929869",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789957544550659"
   },

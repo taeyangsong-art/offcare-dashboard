@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12195,
+  "version": 12196,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192914,7 +192914,7 @@ window.SLACK_DATA = {
           "심성현": 8,
           "김규빈": 2,
           "김현기": 4,
-          "송태양": 5,
+          "송태양": 6,
           "서상원": 1
         },
         "extern": {
@@ -192930,7 +192930,7 @@ window.SLACK_DATA = {
           "송태양": 2
         },
         "menu": {
-          "김규빈": 2
+          "김규빈": 3
         }
       },
       "pending": [],
@@ -192964,6 +192964,28 @@ window.SLACK_DATA = {
           "cat": "as",
           "emp": "김동욱",
           "req": "페이스캠 rndis 연결",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "11:25",
+          "store": "스몰굿커피 문정점",
+          "biz": "6412901913",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "/ 님 이거 옵션이랑 이미지 원본파일은 추가로 따로 전달 주시는걸까요? 님 이거 옵션이랑 이미지 원본파일은 추가로 따로 전달 주시는걸까요? / 확인해보겠슴당 / 확인어려움 / map.naver.com/p/search/…/…?c=…&placePath=… 스몰굿커피문정점 / 첨부해주신 키오스크 사진에 빅 사이즈 음료가 없으니 참고해주시고 이미지는 원본으로 메일"
+        },
+        {
+          "time": "11:23",
+          "store": "우브(UOOV)",
+          "biz": "1305201269",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "9월 21일 오전 11시 30분 / 메뉴 복사 O / 프론트, KIS -7430",
           "hw": "",
           "intake": "online",
           "note": ""
@@ -193487,7 +193509,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 40,
+        "online": 42,
         "offline": 10,
         "unknown": 0
       },
@@ -193599,14 +193621,18 @@ window.SLACK_DATA = {
       },
       "1789955963.451259": {
         "post": "1789955963.451259",
-        "lastSeen": 1789958238.161,
+        "lastSeen": 1789958547.876,
         "r": 1,
         "day": "2026-09-21",
         "idx": 19
       },
       "1789957801.572059": {
         "post": "1789957801.572059",
-        "lastSeen": 1789958238.161
+        "lastSeen": 1789958547.876
+      },
+      "1789958072.642909": {
+        "post": "1789958072.642909",
+        "lastSeen": 1789958547.876
       }
     },
     "days": {
@@ -255973,7 +255999,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-21 11:37",
+    "at": "2026-09-21 11:42",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
