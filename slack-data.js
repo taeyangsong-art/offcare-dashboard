@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12186,
+  "version": 12187,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192929,7 +192929,7 @@ window.SLACK_DATA = {
           "송태양": 1
         },
         "menu": {
-          "김규빈": 1
+          "김규빈": 2
         }
       },
       "pending": [
@@ -192946,6 +192946,17 @@ window.SLACK_DATA = {
         }
       ],
       "done": [
+        {
+          "time": "10:53",
+          "store": "쿠키앤테이블",
+          "biz": "1124907722",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "신규 설치 예정 메뉴 등록",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! /"
+        },
         {
           "time": "10:47",
           "store": "브레인코칭감성융합연구소 성산점",
@@ -193322,11 +193333,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 26,
+        "online": 27,
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "10:59",
+      "updatedAt": "11:02",
       "voc": {
         "responses": 2,
         "install": {
@@ -193441,18 +193452,26 @@ window.SLACK_DATA = {
       },
       "1789950349.719849": {
         "post": "1789950349.719849",
-        "lastSeen": 1789955993.617,
+        "lastSeen": 1789956237.102,
         "r": 1,
         "day": "2026-09-21",
         "idx": 9
       },
       "1789955969.963389": {
         "post": "1789955969.963389",
-        "lastSeen": 1789955993.617
+        "lastSeen": 1789956237.102
       },
       "1789955963.451259": {
         "post": "1789955963.451259",
-        "lastSeen": 1789955993.617
+        "lastSeen": 1789956237.102
+      },
+      "1789956152.755329": {
+        "post": "1789956152.755329",
+        "lastSeen": 1789956237.102
+      },
+      "1789956002.469389": {
+        "post": "1789956002.469389",
+        "lastSeen": 1789956237.102
       }
     },
     "days": {
@@ -255774,7 +255793,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-21 11:00",
+    "at": "2026-09-21 11:04",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
