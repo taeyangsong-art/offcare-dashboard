@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2327,
- "updatedAt": "2026-09-21 18:05",
+ "version": 2328,
+ "updatedAt": "2026-09-21 18:09",
  "days": 30,
  "items": [
   {
@@ -19,13 +19,6 @@ window.MENU_REQUESTS = {
    "drive": [],
    "files": 1,
    "att": [
-    {
-     "name": "예솔스토리_출고내역.xlsx.exs",
-     "fid": "F0C34TXJLCD",
-     "from": "원글",
-     "path": "menu-files/1789981029_823089-0.exs",
-     "nj": 1
-    },
     {
      "name": "image.png",
      "fid": "F0C37SWBYK0",
@@ -53,6 +46,13 @@ window.MENU_REQUESTS = {
       }
      ],
      "path": "menu-files/1789981029_823089-2.png"
+    },
+    {
+     "name": "예솔스토리_출고내역.xlsx.exs",
+     "fid": "F0C34TXJLCD",
+     "from": "원글",
+     "path": "menu-files/1789981029_823089-0.exs",
+     "nj": 1
     }
    ],
    "datt": [],
@@ -66,7 +66,7 @@ window.MENU_REQUESTS = {
    "rc": 17,
    "lr": "1789981439.722159",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789981029823089"
   },
