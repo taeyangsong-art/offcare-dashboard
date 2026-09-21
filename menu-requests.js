@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2310,
- "updatedAt": "2026-09-21 16:15",
+ "version": 2311,
+ "updatedAt": "2026-09-21 16:26",
  "days": 30,
  "items": [
   {
@@ -44,12 +44,13 @@ window.MENU_REQUESTS = {
    "replies": [
     "님ㅋㅋㅋ",
     "요기 *마이요거트립 인덕원점 (*···) 메뉴로 복제 부탁드려요!!!",
-    "휴우...ㅠㅠ"
+    "휴우...ㅠㅠ",
+    "복제 완료입니다 기존 토플파는 복제되면 지울게요\n고유번호 변경되니 참고해주세요"
    ],
-   "rc": 3,
-   "lr": "1789974921.655589",
+   "rc": 4,
+   "lr": "1789975514.157569",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789973172170769"
   },
@@ -2483,9 +2484,14 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1789797927.382749",
+   "replies": [
+    "https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1789794001050779",
+    "네 이악물고 방해했는데, 제 이를 깨부셨어요",
+    "그러면 CX팀이나 다른 팀 전부에도 공유 해주세요",
+    "강철수비로 방어했지만... 뚫렸어요 ㅠ"
+   ],
+   "rc": 8,
+   "lr": "1789975587.318729",
    "rfx": 3,
    "status": "wait",
    "handler": null,
