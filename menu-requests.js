@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2289,
- "updatedAt": "2026-09-21 11:32",
+ "version": 2290,
+ "updatedAt": "2026-09-21 11:36",
  "days": 30,
  "items": [
   {
@@ -547,13 +547,14 @@ window.MENU_REQUESTS = {
    "replies": [
     "님 이거 옵션이랑 이미지 원본파일은 추가로 따로 전달 주시는걸까요?",
     "확인해보겠슴당~",
-    "확인어려움"
+    "확인어려움",
+    "https://map.naver.com/p/search/%EC%8A%A4%EB%AA%B0%EA%B5%BF%EC%BB%A4%ED%94%BC%EB%AC%B8%EC%A0%95%EC%A0%90?c=15.00,0,0,0,dh&placePath=%2Fhome%3Ffrom%3Dmap%26fromPanelNum%3D1%26additionalHeight%3D76%26timestamp%3D202609211134%26locale%3Dko%26svcName%3Dmap_pcv5%26searchText%3D%EC%8A%A4%EB%AA%B0%EA%B5%BF%EC%BB%A4%ED%94%BC%EB%AC%B8%EC%A0%95%EC%A0%90"
    ],
-   "rc": 3,
-   "lr": "1789957766.972429",
+   "rc": 5,
+   "lr": "1789958076.480519",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1789957544550659"
   },
   {
