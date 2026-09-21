@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12170,
+  "version": 12171,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192909,8 +192909,8 @@ window.SLACK_DATA = {
     "2026-09-21": {
       "counts": {
         "as": {
+          "심성현": 3,
           "서상원": 1,
-          "심성현": 2,
           "송태양": 4,
           "김규빈": 1,
           "고경림": 3,
@@ -192924,22 +192924,49 @@ window.SLACK_DATA = {
         },
         "extern": {
           "서상원": 2
+        },
+        "transfer": {
+          "송태양": 1
+        },
+        "menu": {
+          "김규빈": 1
         }
       },
-      "pending": [
-        {
-          "time": "09:00",
-          "store": "붕어빵분식",
-          "biz": "4754601405",
-          "handler": "김현기",
-          "cat": "delivery",
-          "intake": "online",
-          "reasons": [
-            "1차 부재"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
+        {
+          "time": "10:13",
+          "store": "강창구찹쌀진순대 오남점",
+          "biz": "8580303805",
+          "cat": "menu",
+          "emp": "김규빈",
+          "req": "터치키 메뉴 사진 전달 요청",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다!"
+        },
+        {
+          "time": "10:02",
+          "store": "혜비수참치",
+          "biz": "1300353338",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "1-2주 사이 결제하다 멈춤 현상 잦게 발생하여 강제 새로고침 혹은 재부팅해야지만 해소된다고 하시어 점검 부탁드립니다!",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
+        {
+          "time": "10:00",
+          "store": "적바림",
+          "biz": "4121602973",
+          "cat": "transfer",
+          "emp": "송태양",
+          "req": "9월 21일 오전 10시 ~ 11시 사이 / 메뉴 복사 O / 프론트, 유프",
+          "hw": "",
+          "intake": "online",
+          "note": "명변 완료입니다"
+        },
         {
           "time": "09:55",
           "store": "수기풍선",
@@ -193173,11 +193200,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 16,
-        "offline": 6,
+        "online": 17,
+        "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "10:12",
+      "updatedAt": "10:16",
       "voc": {
         "responses": 2,
         "install": {
@@ -193292,21 +193319,17 @@ window.SLACK_DATA = {
       },
       "1789950349.719849": {
         "post": "1789950349.719849",
-        "lastSeen": 1789953200.275,
+        "lastSeen": 1789953453.896,
         "r": 1,
         "day": "2026-09-21",
         "idx": 9
       },
-      "1789952546.256259": {
-        "post": "1789952546.256259",
-        "lastSeen": 1789953200.275,
-        "r": 1,
-        "day": "2026-09-21",
-        "idx": 12
-      },
       "1789953125.584219": {
         "post": "1789953125.584219",
-        "lastSeen": 1789953200.275
+        "lastSeen": 1789953453.896,
+        "r": 1,
+        "day": "2026-09-21",
+        "idx": 13
       }
     },
     "days": {
@@ -255468,8 +255491,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-21": {
-        "cnt": 13,
-        "sumMin": 79.08947854439418,
+        "cnt": 14,
+        "sumMin": 82.44783322811128,
         "over": 0,
         "items": [
           {
@@ -255584,6 +255607,15 @@ window.SLACK_DATA = {
             "store": "혜비수참치",
             "biz": "1300353338",
             "who": "심성현",
+            "cat": "as",
+            "dmin": 13
+          },
+          {
+            "hm": "10:12",
+            "min": 3.4,
+            "store": "신망애이룸터",
+            "biz": "1328272485",
+            "who": "김동욱",
             "cat": "as"
           }
         ]
@@ -255591,7 +255623,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-21 10:13",
+    "at": "2026-09-21 10:17",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
