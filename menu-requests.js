@@ -3,10 +3,489 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2345,
- "updatedAt": "2026-09-22 09:44",
+ "version": 2346,
+ "updatedAt": "2026-09-22 09:50",
  "days": 30,
  "items": [
+  {
+   "ts": "1790038038.100289",
+   "date": "2026-09-22",
+   "time": "09:47",
+   "store": "알리오네",
+   "biz": "6703500344",
+   "pos": "",
+   "content": "메뉴",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C3ER7SBCN",
+     "from": "댓글",
+     "path": "menu-files/1790038038_100289-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "크림",
+       "name": "까르보나라",
+       "price": 9500
+      },
+      {
+       "category": "크림",
+       "name": "매운까르보나라",
+       "price": 10500
+      },
+      {
+       "category": "크림",
+       "name": "크림김치",
+       "price": 10000
+      },
+      {
+       "category": "크림",
+       "name": "크림고추새우",
+       "price": 11000
+      },
+      {
+       "category": "크림",
+       "name": "크림해산물",
+       "price": 12000
+      },
+      {
+       "category": "크림",
+       "name": "투움바",
+       "price": 11500
+      },
+      {
+       "category": "크림",
+       "name": "매운투움바",
+       "price": 12500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3AH8RNE7",
+     "from": "댓글",
+     "path": "menu-files/1790038038_100289-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "토마토",
+       "name": "토마토",
+       "price": 9500
+      },
+      {
+       "category": "토마토",
+       "name": "매운토마토",
+       "price": 10500
+      },
+      {
+       "category": "토마토",
+       "name": "토마토치킨",
+       "price": 11000
+      },
+      {
+       "category": "토마토",
+       "name": "미트볼",
+       "price": 11000
+      },
+      {
+       "category": "토마토",
+       "name": "토마토해산물",
+       "price": 12000
+      },
+      {
+       "category": "토마토",
+       "name": "로제",
+       "price": 11500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3GLX34N6",
+     "from": "댓글",
+     "path": "menu-files/1790038038_100289-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "오븐",
+       "name": "치즈오븐크림(순한맛)",
+       "price": 11000
+      },
+      {
+       "category": "오븐",
+       "name": "치즈오븐크림(매운맛)",
+       "price": 12000
+      },
+      {
+       "category": "오븐",
+       "name": "치즈오븐토마토(순한맛)",
+       "price": 11000
+      },
+      {
+       "category": "오븐",
+       "name": "치즈오븐토마토(매운맛)",
+       "price": 12000
+      },
+      {
+       "category": "오븐",
+       "name": "치즈오븐투움바(순한맛)",
+       "price": 12500
+      },
+      {
+       "category": "오븐",
+       "name": "치즈오븐투움바(매운맛)",
+       "price": 13500
+      },
+      {
+       "category": "오븐",
+       "name": "치즈오븐미트볼",
+       "price": 12000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C4B52JUU8",
+     "from": "댓글",
+     "path": "menu-files/1790038038_100289-3.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "알리오",
+       "name": "알리오올리오(순한맛)",
+       "price": 9500
+      },
+      {
+       "category": "알리오",
+       "name": "알리오올리오(매운맛)",
+       "price": 10500
+      },
+      {
+       "category": "알리오",
+       "name": "봉골레(순한맛)",
+       "price": 10500
+      },
+      {
+       "category": "알리오",
+       "name": "봉골레(매운맛)",
+       "price": 11500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3ER9MZE2",
+     "from": "댓글",
+     "path": "menu-files/1790038038_100289-4.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "스페셜",
+       "name": "돈김",
+       "price": 12500
+      },
+      {
+       "category": "스페셜",
+       "name": "안김",
+       "price": 13500
+      },
+      {
+       "category": "스페셜",
+       "name": "치김",
+       "price": 14000
+      },
+      {
+       "category": "스페셜",
+       "name": "짬뽕골레",
+       "price": 11500
+      },
+      {
+       "category": "스페셜",
+       "name": "나가사끼짬뽕골레",
+       "price": 12500
+      },
+      {
+       "category": "스페셜",
+       "name": "돈뽕",
+       "price": 14500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3LDWSLP6",
+     "from": "댓글",
+     "path": "menu-files/1790038038_100289-5.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "수제돈가스",
+       "name": "등심돈가스",
+       "price": 11000
+      },
+      {
+       "category": "수제돈가스",
+       "name": "반반1(등심+안심)",
+       "price": 12000
+      },
+      {
+       "category": "수제돈가스",
+       "name": "반반2(등심+치즈)",
+       "price": 12500
+      },
+      {
+       "category": "수제돈가스",
+       "name": "반반3(안심+치즈)",
+       "price": 13500
+      },
+      {
+       "category": "수제돈가스",
+       "name": "안심돈가스",
+       "price": 13000
+      },
+      {
+       "category": "수제돈가스",
+       "name": "치즈돈가스",
+       "price": 14000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3ERAERN2",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "라이스",
+       "name": "김치볶음밥",
+       "price": 10000
+      },
+      {
+       "category": "라이스",
+       "name": "새우볶음밥",
+       "price": 10000
+      },
+      {
+       "category": "라이스",
+       "name": "불고기볶음밥",
+       "price": 10000
+      },
+      {
+       "category": "라이스",
+       "name": "크림새우도리아",
+       "price": 10000
+      },
+      {
+       "category": "라이스",
+       "name": "치킨도리아",
+       "price": 10000
+      },
+      {
+       "category": "라이스",
+       "name": "김치도리아",
+       "price": 10000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3AHBDVHR",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "피자",
+       "name": "나폴리피자",
+       "price": 12000
+      },
+      {
+       "category": "피자",
+       "name": "고르곤졸라피자",
+       "price": 13000
+      },
+      {
+       "category": "피자",
+       "name": "소세지햄피자",
+       "price": 15000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3GLZGMB4",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "사이드",
+       "name": "미니등심돈가스",
+       "price": 5500
+      },
+      {
+       "category": "사이드",
+       "name": "미니안심돈가스",
+       "price": 6500
+      },
+      {
+       "category": "사이드",
+       "name": "미니치즈돈까스",
+       "price": 7000
+      },
+      {
+       "category": "사이드",
+       "name": "미니레몬소바",
+       "price": 4500
+      },
+      {
+       "category": "사이드",
+       "name": "프랑크소세지",
+       "price": 2000
+      },
+      {
+       "category": "사이드",
+       "name": "공기밥",
+       "price": 1000
+      },
+      {
+       "category": "사이드",
+       "name": "두쫀쿠",
+       "price": 5000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3AHCFR8B",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "음료",
+       "name": "웰치스",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "사이다",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "콜라",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "코카콜라(제로)",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "탄산수",
+       "price": 2000
+      },
+      {
+       "category": "음료",
+       "name": "레몬에이드",
+       "price": 4000
+      },
+      {
+       "category": "음료",
+       "name": "샤인머스캣에이드",
+       "price": 5000
+      },
+      {
+       "category": "음료",
+       "name": "테이크아웃(얼음컵)",
+       "price": 500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3JN3SMUH",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "주류",
+       "name": "산미구엘",
+       "price": 5500
+      },
+      {
+       "category": "주류",
+       "name": "하이네켄",
+       "price": 6000
+      },
+      {
+       "category": "주류",
+       "name": "글라스와인",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "핑크모스카토(병)",
+       "price": 25000
+      },
+      {
+       "category": "주류",
+       "name": "핑크모스카토(잔)",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "시라돌체토(병)",
+       "price": 25000
+      },
+      {
+       "category": "주류",
+       "name": "시라돌체토(잔)",
+       "price": 5000
+      },
+      {
+       "category": "주류",
+       "name": "마티니카버네소비뇽(병)",
+       "price": 35000
+      },
+      {
+       "category": "주류",
+       "name": "마티니카버네소비뇽(잔)",
+       "price": 7000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3JN55E0Z",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "여름메뉴",
+       "name": "막국수",
+       "price": 9000
+      },
+      {
+       "category": "여름메뉴",
+       "name": "돈막",
+       "price": 13000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 4,
+   "lr": "1790038144.329569",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1790038038100289"
+  },
   {
    "ts": "1790035985.792609",
    "date": "2026-09-22",
@@ -21,10 +500,12 @@ window.MENU_REQUESTS = {
    "att": [],
    "datt": [],
    "replies": [
-    "송파점 없음"
+    "송파점 없음",
+    "..? 구매상담 할 때 어디피자 송파점 메뉴 복사해준다고 남자분이 이야기했다는데 :hmmteresting:",
+    "정하님 안녕하세용 :햄스터-꾸벅:\n정하님 리드로 확인되어 태그드려요. 대표님 말씀으로는 송파점 추천으로 구매를 했고, 해당 지점 메뉴를 복사하기로 안내받으셨다는데 '어디피자 송파점'은 가맹점 조회가 되지 않습니다ㅠㅠ 혹시 어디 지점이었는지 기억하세용?"
    ],
-   "rc": 1,
-   "lr": "1790037848.732799",
+   "rc": 2,
+   "lr": "1790037999.122209",
    "rfx": 3,
    "status": "wait",
    "handler": null,
