@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12435,
+  "version": 12436,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -195972,6 +195972,7 @@ window.SLACK_DATA = {
     "2026-09-22": {
       "counts": {
         "extern": {
+          "서상원": 1,
           "김동욱": 2
         },
         "as": {
@@ -195984,6 +195985,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:40",
+          "store": "알리오네",
+          "biz": "6703500344",
+          "cat": "extern",
+          "emp": "서상원",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "09:31",
           "store": "비브앤에스테틱",
@@ -196085,11 +196097,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 8,
+        "online": 9,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:31"
+      "updatedAt": "09:40"
     }
   },
   "resp": {
@@ -196169,24 +196181,32 @@ window.SLACK_DATA = {
       },
       "1790036666.237289": {
         "post": "1790036666.237289",
-        "lastSeen": 1790037449.897,
+        "lastSeen": 1790037682.8,
         "r": 1,
         "day": "2026-09-22",
         "idx": 3
       },
       "1790037000.486369": {
         "post": "1790037000.486369",
-        "lastSeen": 1790037449.897,
+        "lastSeen": 1790037682.8,
         "r": 1,
         "day": "2026-09-22",
         "idx": 5
       },
       "1790037098.679739": {
         "post": "1790037098.679739",
-        "lastSeen": 1790037449.897,
+        "lastSeen": 1790037682.8,
         "r": 1,
         "day": "2026-09-22",
         "idx": 4
+      },
+      "1790037562.988969": {
+        "post": "1790037562.988969",
+        "lastSeen": 1790037682.8
+      },
+      "1790035985.792609": {
+        "post": "1790035985.792609",
+        "lastSeen": 1790037682.8
       }
     },
     "days": {
@@ -259677,7 +259697,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-22 09:37",
+    "at": "2026-09-22 09:41",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
