@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12424,
+  "version": 12425,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -195975,7 +195975,7 @@ window.SLACK_DATA = {
           "김동욱": 1
         },
         "as": {
-          "김동욱": 1
+          "김동욱": 2
         }
       },
       "pending": [],
@@ -196001,10 +196001,21 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "btr-1100 kis 일비문의로 안내완료"
+        },
+        {
+          "time": "08:45",
+          "store": "육찬참숯직화뼈구이",
+          "biz": "8641702870",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "쿠팡이츠 주문접수 프로그램 설치 후 로그인한 사진 1장 / 스티커 부착된 매장 외관 사진 1장 (간판 나오게)",
+          "hw": "",
+          "intake": "online",
+          "note": "10월 오픈예정이고 장비가 준비 안되어 예약메시지 잡으려했으나 정확한 날짜 픽스할 수 없어 고객센터로 다시 연락하여 접수하시겠다 하십니다."
         }
       ],
       "intake": {
-        "online": 2,
+        "online": 3,
         "offline": 0,
         "unknown": 0
       },
@@ -259533,7 +259544,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-22 09:00",
+    "at": "2026-09-22 09:07",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
