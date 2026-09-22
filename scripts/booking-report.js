@@ -136,16 +136,25 @@ const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
   const total = rows.length;
   const live = rows.filter(r => !r.dup && !r.invalid);          // 중복·잘못올린글 제외한 유효 모수
   const cnt = k => live.filter(k).length;
+  // A. 마감 유형 — 서로 겹치지 않게 나눈다. 합 = 유효 모수.
   const stat = [
-    { key: 'onboarding', label: '온보딩 이모지', n: cnt(r => r.cat === 'onboarding') },
-    { key: 'as',         label: 'AS 이모지',     n: cnt(r => r.cat === 'as') },
-    { key: 'abs2',       label: '2차부재',       n: cnt(r => r.abs2) },
-    { key: 'abs1',       label: '1차부재',       n: cnt(r => r.abs1) },
-    { key: 'transfer',   label: '명의변경 이모지', n: cnt(r => r.cat === 'transfer') },
-    { key: 'menu',       label: '메뉴등록 이모지', n: cnt(r => r.cat === 'menu') },
-    { key: 'delivery',   label: '배달 이모지',    n: cnt(r => r.cat === 'delivery') },
-    { key: 'extern',     label: '외주',          n: cnt(r => r.catKo === '외주') },
-    { key: 'none',       label: '이모지 없음(미처리)', n: cnt(r => !r.cat && r.catKo !== '외주' && !r.abs1 && !r.abs2) },
+    { key: 'onboarding', label: '온보딩으로 마감',   n: cnt(r => r.cat === 'onboarding') },
+    { key: 'as',         label: 'AS로 마감',        n: cnt(r => r.cat === 'as') },
+    { key: 'transfer',   label: '명의변경으로 마감',  n: cnt(r => r.cat === 'transfer') },
+    { key: 'menu',       label: '메뉴등록으로 마감',  n: cnt(r => r.cat === 'menu') },
+    { key: 'delivery',   label: '배달로 마감',       n: cnt(r => r.cat === 'delivery') },
+    { key: 'extern',     label: '외주로 마감',       n: cnt(r => !r.cat && r.catKo === '외주') },
+    { key: 'a2only',     label: '미마감 · 2차부재',  n: cnt(r => !r.cat && r.catKo !== '외주' && r.abs2) },
+    { key: 'a1only',     label: '미마감 · 1차부재',  n: cnt(r => !r.cat && r.catKo !== '외주' && r.abs1) },
+    { key: 'none',       label: '미마감 · 이모지 없음', n: cnt(r => !r.cat && r.catKo !== '외주' && !r.abs1 && !r.abs2) },
+  ];
+  const statSum = stat.reduce((a, s) => a + s.n, 0);
+  // B. 부재 동반 — A 와 교차한다(카테고리 이모지와 부재가 한 건에 같이 찍히는 경우).
+  const cross = [
+    { label: '2차부재 (전체)', n: cnt(r => r.abs2),
+      detail: [['마감 안 됨', cnt(r => r.abs2 && !r.cat)], ['AS 마감', cnt(r => r.abs2 && r.cat === 'as')], ['온보딩 마감', cnt(r => r.abs2 && r.cat === 'onboarding')]] },
+    { label: '1차부재 (전체)', n: cnt(r => r.abs1),
+      detail: [['마감 안 됨', cnt(r => r.abs1 && !r.cat)], ['AS 마감', cnt(r => r.abs1 && r.cat === 'as')], ['온보딩 마감', cnt(r => r.abs1 && r.cat === 'onboarding')]] },
   ];
   const byEmp = {};  live.forEach(r => { const e = r.emp || '미지정'; byEmp[e] = (byEmp[e] || 0) + 1; });
   const byDate = {}; live.forEach(r => { byDate[r.date] = (byDate[r.date] || 0) + 1; });
@@ -155,12 +164,16 @@ const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
   console.log(`\n예약 리포트 · ${FROM} ~ ${TO}`);
   console.log('읽은 메시지:', Object.entries(scanned).map(([k, v]) => `${k} ${v === null ? '실패' : v + '건'}`).join(' · '));
   console.log(`\n[예약]/(예약) 총 ${total}건  →  유효 모수 ${live.length}건 (중복 ${rows.filter(r => r.dup).length} · 잘못올린글 ${rows.filter(r => r.invalid).length} 제외)\n`);
-  console.log('  구분                    건수    비중');
+  console.log('  [A] 마감 유형 (배타 분류)   건수    비중');
   console.log('  ' + '-'.repeat(40));
   for (const s of stat) {
     const p = live.length ? (s.n / live.length * 100).toFixed(1) : '0.0';
     console.log('  ' + s.label.padEnd(22) + String(s.n).padStart(4) + String(p + '%').padStart(9));
   }
+  console.log('  ' + '합계'.padEnd(22) + String(statSum).padStart(4) + '   ' + (statSum === live.length ? '모수와 일치' : '⚠ 모수 ' + live.length + ' 와 불일치'));
+  console.log();
+  console.log('  [B] 부재 동반 (A 와 교차)');
+  for (const c of cross) console.log('  ' + c.label.padEnd(22) + String(c.n).padStart(4) + '   → ' + c.detail.filter(d => d[1]).map(d => d[0] + ' ' + d[1]).join(' · '));
   console.log('\n채널별:', JSON.stringify(byCh));
   console.log('담당자별:', JSON.stringify(byEmp));
 
@@ -175,7 +188,7 @@ const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
   fs.writeFileSync(path.join(OUT_DIR, 'booking-report.csv'), '﻿' + csv, 'utf8');
 
   fs.writeFileSync(path.join(OUT_DIR, 'booking-report.html'),
-    renderHtml({ FROM, TO, total, live, rows, stat, byEmp, byDate, byCh, scanned }), 'utf8');
+    renderHtml({ FROM, TO, total, live, rows, stat, statSum, cross, byEmp, byDate, byCh, scanned }), 'utf8');
 
   console.log(`\n✅ ${OUT_DIR}/booking-report.html · ${OUT_DIR}/booking-report.csv 생성 (${rows.length}행)`);
 })().catch(e => { console.error(e.message); process.exit(1); });
@@ -187,8 +200,11 @@ function renderHtml(d) {
   const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const N = d.live.length || 1;
   const pct = n => (n / N * 100).toFixed(1);
-  const key = d.stat.filter(s => ['onboarding', 'as', 'abs2'].includes(s.key));
-  const rest = d.stat.filter(s => !['onboarding', 'as', 'abs2'].includes(s.key));
+  const key = [
+    d.stat.find(s => s.key === 'onboarding'),
+    d.stat.find(s => s.key === 'as'),
+    { label: '2차부재 (전체)', n: d.cross[0].n },
+  ];
   const maxDay = Math.max(1, ...Object.values(d.byDate));
   const days = Object.keys(d.byDate).sort();
 
@@ -286,6 +302,8 @@ function renderHtml(d) {
       </div>`).join('')}
     </div>
 
+    <h2 style="margin-top:56px;font-size:21px">A. 마감 유형</h2>
+    <div style="font-size:14px;color:var(--ink-48)">서로 겹치지 않게 나눈 분류입니다. 합이 모수와 같습니다.</div>
     <table>
       <thead><tr><th>구분</th><th class="n">건수</th><th class="n">비중</th><th style="width:38%"></th></tr></thead>
       <tbody>${d.stat.map(s => `<tr>
@@ -293,10 +311,25 @@ function renderHtml(d) {
         <td class="n">${s.n.toLocaleString()}</td>
         <td class="n">${pct(s.n)}%</td>
         <td><span class="bar" style="width:${Math.max(0, pct(s.n)) * 2.6}px"></span></td>
+      </tr>`).join('')}
+      <tr><td style="font-weight:600">합계</td><td class="n" style="font-weight:600">${d.statSum.toLocaleString()}</td>
+        <td class="n" style="font-weight:600">${d.statSum === d.live.length ? '모수와 일치' : '불일치'}</td><td></td></tr></tbody>
+    </table>
+
+    <h2 style="margin-top:56px;font-size:21px">B. 부재 동반</h2>
+    <div style="font-size:14px;color:var(--ink-48)">부재 이모지는 카테고리 이모지와 <strong>한 건에 같이</strong> 찍힙니다.
+      그래서 A 와 겹치고, A 의 합에는 포함되지 않습니다.</div>
+    <table>
+      <thead><tr><th>구분</th><th class="n">건수</th><th class="n">비중</th><th>내역</th></tr></thead>
+      <tbody>${d.cross.map(c => `<tr>
+        <td>${esc(c.label)}</td>
+        <td class="n">${c.n.toLocaleString()}</td>
+        <td class="n">${pct(c.n)}%</td>
+        <td>${c.detail.filter(x => x[1]).map(x => `<span class="tag">${esc(x[0])} ${x[1]}</span>`).join(' ') || '—'}</td>
       </tr>`).join('')}</tbody>
     </table>
-    <div class="note">카테고리 이모지는 한 건에 하나만 인정합니다(먼저 발견된 것). 부재는 2차부재를 우선으로 세어
-      1차·2차가 겹쳐 잡히지 않습니다. 그래서 위 구분의 합이 모수를 넘지 않습니다.</div>
+    <div class="note">카테고리 이모지는 한 건에 하나만 인정합니다(먼저 발견된 것). 부재는 2차부재를 1차부재보다
+      우선해 세어 둘이 겹쳐 잡히지 않습니다.</div>
   </div>
 </section>
 
