@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2369,
- "updatedAt": "2026-09-22 13:53",
+ "version": 2370,
+ "updatedAt": "2026-09-22 13:57",
  "days": 30,
  "items": [
   {
@@ -5607,13 +5607,6 @@ window.MENU_REQUESTS = {
      "from": "댓글",
      "path": "menu-files/1789797922_993969-0.xlsx",
      "nj": 1
-    },
-    {
-     "name": "토스플레이스_상품등록_요아정인후점_20260922.xlsx",
-     "fid": "F0C32BQQT3R",
-     "from": "댓글",
-     "path": "menu-files/1789797922_993969-1.xlsx",
-     "nj": 1
     }
    ],
    "datt": [],
@@ -5623,8 +5616,8 @@ window.MENU_REQUESTS = {
     "그러면 CX팀이나 다른 팀 전부에도 공유 해주세요",
     "강철수비로 방어했지만... 뚫렸어요 ㅠ"
    ],
-   "rc": 23,
-   "lr": "1790052375.861839",
+   "rc": 27,
+   "lr": "1790053019.360359",
    "rfx": 3,
    "status": "wait",
    "handler": null,
