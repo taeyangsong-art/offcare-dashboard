@@ -3,10 +3,138 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2355,
- "updatedAt": "2026-09-22 11:04",
+ "version": 2356,
+ "updatedAt": "2026-09-22 11:08",
  "days": 30,
  "items": [
+  {
+   "ts": "1790042836.447759",
+   "date": "2026-09-22",
+   "time": "11:07",
+   "store": "강창구찹쌀진순대 오남점",
+   "biz": "8580303805",
+   "pos": "",
+   "content": "가격 수정",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C31NPB88P",
+     "from": "댓글",
+     "path": "menu-files/1790042836_447759-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "순대국 정식",
+       "name": "진순대국 편백정식",
+       "price": 16000
+      },
+      {
+       "category": "순대국 정식",
+       "name": "얼큰순대국 편백정식",
+       "price": 17000
+      },
+      {
+       "category": "순대국 정식",
+       "name": "인삼순대국 편백정식",
+       "price": 18000
+      },
+      {
+       "category": "순대국 정식",
+       "name": "진순대국 솥밥편백정식",
+       "price": 17000
+      },
+      {
+       "category": "순대국 정식",
+       "name": "얼큰순대국 솥밥편백정식",
+       "price": 18000
+      },
+      {
+       "category": "순대국 정식",
+       "name": "인삼순대국 솥밥편백정식",
+       "price": 19000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3H18CNJE",
+     "from": "댓글",
+     "path": "menu-files/1790042836_447759-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "순대국",
+       "name": "진순대국",
+       "price": 11000
+      },
+      {
+       "category": "순대국",
+       "name": "얼큰순대국",
+       "price": 12000
+      },
+      {
+       "category": "순대국",
+       "name": "인삼순대국",
+       "price": 13000
+      },
+      {
+       "category": "순대국",
+       "name": "진순대국 + 솥밥",
+       "price": 12000
+      },
+      {
+       "category": "순대국",
+       "name": "얼큰순대국 +솥밥",
+       "price": 13000
+      },
+      {
+       "category": "순대국",
+       "name": "인삼순대국 +솥밥",
+       "price": 14000
+      },
+      {
+       "category": "순대국",
+       "name": "편백정식 맛보기",
+       "price": 5000
+      }
+     ]
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1790042856.330969",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1790042836447759"
+  },
+  {
+   "ts": "1790042748.817649",
+   "date": "2026-09-22",
+   "time": "11:05",
+   "store": "자연농원",
+   "biz": "4760702505",
+   "pos": "",
+   "content": "메뉴",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "https://w1659946222-hxm266180.slack.com/archives/C0A7CLLANP7/p1790042671886419?thread_ts=···.170919&cid=C0A7CLLANP7"
+   ],
+   "rc": 2,
+   "lr": "1790042753.675109",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1790042748817649"
+  },
   {
    "ts": "1790041039.194019",
    "date": "2026-09-22",
