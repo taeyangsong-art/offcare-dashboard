@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2346,
- "updatedAt": "2026-09-22 09:50",
+ "version": 2347,
+ "updatedAt": "2026-09-22 09:55",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C3ER7SBCN",
      "from": "댓글",
-     "path": "menu-files/1790038038_100289-0.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -61,13 +60,13 @@ window.MENU_REQUESTS = {
        "name": "매운투움바",
        "price": 12500
       }
-     ]
+     ],
+     "path": "menu-files/1790038038_100289-0.png"
     },
     {
      "name": "image.png",
      "fid": "F0C3AH8RNE7",
      "from": "댓글",
-     "path": "menu-files/1790038038_100289-1.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -100,13 +99,13 @@ window.MENU_REQUESTS = {
        "name": "로제",
        "price": 11500
       }
-     ]
+     ],
+     "path": "menu-files/1790038038_100289-1.png"
     },
     {
      "name": "image.png",
      "fid": "F0C3GLX34N6",
      "from": "댓글",
-     "path": "menu-files/1790038038_100289-2.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -144,13 +143,13 @@ window.MENU_REQUESTS = {
        "name": "치즈오븐미트볼",
        "price": 12000
       }
-     ]
+     ],
+     "path": "menu-files/1790038038_100289-2.png"
     },
     {
      "name": "image.png",
      "fid": "F0C4B52JUU8",
      "from": "댓글",
-     "path": "menu-files/1790038038_100289-3.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -173,13 +172,13 @@ window.MENU_REQUESTS = {
        "name": "봉골레(매운맛)",
        "price": 11500
       }
-     ]
+     ],
+     "path": "menu-files/1790038038_100289-3.png"
     },
     {
      "name": "image.png",
      "fid": "F0C3ER9MZE2",
      "from": "댓글",
-     "path": "menu-files/1790038038_100289-4.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -212,13 +211,13 @@ window.MENU_REQUESTS = {
        "name": "돈뽕",
        "price": 14500
       }
-     ]
+     ],
+     "path": "menu-files/1790038038_100289-4.png"
     },
     {
      "name": "image.png",
      "fid": "F0C3LDWSLP6",
      "from": "댓글",
-     "path": "menu-files/1790038038_100289-5.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -251,7 +250,8 @@ window.MENU_REQUESTS = {
        "name": "치즈돈가스",
        "price": 14000
       }
-     ]
+     ],
+     "path": "menu-files/1790038038_100289-5.png"
     },
     {
      "name": "image.png",
@@ -475,15 +475,22 @@ window.MENU_REQUESTS = {
        "price": 13000
       }
      ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C31D1LQNB",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": []
     }
    ],
    "datt": [],
    "replies": [],
-   "rc": 4,
-   "lr": "1790038144.329569",
+   "rc": 5,
+   "lr": "1790038457.913619",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1790038038100289"
   },
   {
@@ -504,8 +511,8 @@ window.MENU_REQUESTS = {
     "..? 구매상담 할 때 어디피자 송파점 메뉴 복사해준다고 남자분이 이야기했다는데 :hmmteresting:",
     "정하님 안녕하세용 :햄스터-꾸벅:\n정하님 리드로 확인되어 태그드려요. 대표님 말씀으로는 송파점 추천으로 구매를 했고, 해당 지점 메뉴를 복사하기로 안내받으셨다는데 '어디피자 송파점'은 가맹점 조회가 되지 않습니다ㅠㅠ 혹시 어디 지점이었는지 기억하세용?"
    ],
-   "rc": 2,
-   "lr": "1790037999.122209",
+   "rc": 3,
+   "lr": "1790038180.443229",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -5214,8 +5221,8 @@ window.MENU_REQUESTS = {
     "그러면 CX팀이나 다른 팀 전부에도 공유 해주세요",
     "강철수비로 방어했지만... 뚫렸어요 ㅠ"
    ],
-   "rc": 17,
-   "lr": "1789982971.401249",
+   "rc": 18,
+   "lr": "1790038193.065729",
    "rfx": 3,
    "status": "wait",
    "handler": null,
