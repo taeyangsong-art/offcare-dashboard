@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2364,
- "updatedAt": "2026-09-22 13:26",
+ "version": 2365,
+ "updatedAt": "2026-09-22 13:40",
  "days": 30,
  "items": [
   {
@@ -23,8 +23,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "메뉴 삭제 및 메뉴추가\n(단, 키오스크만 조정, 포스는 그대로 놔두세요)\n\n• 면 카테고리4종 전부 *삭제*\n*포스에 있는\n면 카테고리의\n• 넉넉 장칼국수 10,900 \n키오스크에 보이게 해주세요.\n\n• 비빔밥 카테고리의\n런치2종삭제"
    ],
-   "rc": 2,
-   "lr": "1790050985.566649",
+   "rc": 3,
+   "lr": "1790051955.164859",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -5614,8 +5614,8 @@ window.MENU_REQUESTS = {
     "그러면 CX팀이나 다른 팀 전부에도 공유 해주세요",
     "강철수비로 방어했지만... 뚫렸어요 ㅠ"
    ],
-   "rc": 20,
-   "lr": "1790050991.306039",
+   "rc": 21,
+   "lr": "1790051621.395109",
    "rfx": 3,
    "status": "wait",
    "handler": null,
