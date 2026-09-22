@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12695,
+  "version": 12696,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -195983,6 +195983,7 @@ window.SLACK_DATA = {
           "송태양": 16
         },
         "menu": {
+          "김동욱": 1,
           "김규빈": 4,
           "배선유": 9
         },
@@ -199045,10 +199046,21 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "10월 오픈예정이고 장비가 준비 안되어 예약메시지 잡으려했으나 정확한 날짜 픽스할 수 없어 고객센터로 다시 연락하여 접수하시겠다 하십니다."
+        },
+        {
+          "time": "00:46",
+          "store": "",
+          "biz": "",
+          "cat": "menu",
+          "emp": "김동욱",
+          "req": "입니다",
+          "hw": "",
+          "intake": "online",
+          "note": ""
         }
       ],
       "intake": {
-        "online": 245,
+        "online": 246,
         "offline": 32,
         "unknown": 0
       },
@@ -264868,7 +264880,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-23 07:30",
+    "at": "2026-09-23 07:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
