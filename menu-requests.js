@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2343,
- "updatedAt": "2026-09-22 09:08",
+ "version": 2344,
+ "updatedAt": "2026-09-22 09:14",
  "days": 30,
  "items": [
+  {
+   "ts": "1790035985.792609",
+   "date": "2026-09-22",
+   "time": "09:13",
+   "store": "어디피자 안산점",
+   "biz": "7755701015",
+   "pos": "토스포스",
+   "content": "어디피자 송파점 메뉴 그대로 붙여넣기 해주세요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 0,
+   "lr": "",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1790035985792609"
+  },
   {
    "ts": "1790035203.484649",
    "date": "2026-09-22",
