@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12496,
+  "version": 12497,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -195971,6 +195971,7 @@ window.SLACK_DATA = {
           "송태양": 4
         },
         "onboarding": {
+          "김규빈": 1,
           "김현기": 3,
           "심성현": 4,
           "서상원": 1,
@@ -196016,6 +196017,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "속도 변경 완료"
+        },
+        {
+          "time": "12:30",
+          "store": "수원휴대폰성지모두의폰정자점",
+          "biz": "3970403350",
+          "cat": "onboarding",
+          "emp": "김규빈",
+          "req": "포프(태블릿) 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 및 금액입력결제모드 활성화 완료"
         },
         {
           "time": "12:23",
@@ -196824,11 +196836,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 62,
+        "online": 63,
         "offline": 13,
         "unknown": 0
       },
-      "updatedAt": "12:38",
+      "updatedAt": "12:42",
       "ob": {
         "count": 1,
         "byEmp": {
@@ -196920,32 +196932,21 @@ window.SLACK_DATA = {
       },
       "1790044200.217269": {
         "post": "1790044200.217269",
-        "lastSeen": 1790048486.412,
+        "lastSeen": 1790048599.863,
         "r": 1,
         "day": "2026-09-22",
         "idx": 26
       },
-      "1790047802.185519": {
-        "post": "1790047802.185519",
-        "lastSeen": 1790048486.412,
-        "r": 1,
-        "day": "2026-09-22",
-        "idx": 32
-      },
       "1790048303.640049": {
         "post": "1790048303.640049",
-        "lastSeen": 1790048486.412,
+        "lastSeen": 1790048599.863,
         "r": 1,
         "day": "2026-09-22",
         "idx": 33
       },
-      "1790038908.859219": {
-        "post": "1790038908.859219",
-        "lastSeen": 1790048486.412
-      },
-      "1790038608.680899": {
-        "post": "1790038608.680899",
-        "lastSeen": 1790048486.412
+      "1790039208.231169": {
+        "post": "1790039208.231169",
+        "lastSeen": 1790048599.863
       }
     },
     "days": {
@@ -260673,7 +260674,8 @@ window.SLACK_DATA = {
             "store": "수원휴대폰성지모두의폰정자점",
             "biz": "3970403350",
             "who": "김규빈",
-            "cat": "as"
+            "cat": "onboarding",
+            "dmin": 12.3
           },
           {
             "hm": "12:38",
@@ -260688,13 +260690,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-22 12:41",
+    "at": "2026-09-22 12:43",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 4217,
+    "rows": 4218,
     "named": 891,
     "unknownName": 0,
     "beforeStart": 0,
