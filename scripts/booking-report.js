@@ -60,8 +60,11 @@ const RE_REQUESTER = /요청자\s*[:：]\s*([가-힣]{2,4})/;
 /* users:read 스코프가 없는 워크스페이스에서는 users.list 가 막혀 이름을 못 읽는다.
    그때는 슬랙 프로필의 '멤버 ID 복사'로 얻은 ID 를 직접 꽂는다.
    TARGET_IDS='U08BA4PDNLT=김봉수,U0XXXX=최승훈' 형식. */
+/* 이 워크스페이스는 users:read 가 막혀 있어서 세 분의 멤버 ID 를 박아 둔다.
+   (슬랙 프로필 → 더 보기 → 멤버 ID 복사. 사람이 바뀌면 여기만 고치면 된다) */
+const DEFAULT_TARGET_IDS = 'U03SA42QD55=김봉수,U0BS7HSKJ65=최승훈,U0BAKTSNZ9P=김규리';
 const TARGET_IDS = {};
-(process.env.TARGET_IDS || '').split(',').map(x => x.trim()).filter(Boolean).forEach(pair => {
+(process.env.TARGET_IDS || DEFAULT_TARGET_IDS).split(',').map(x => x.trim()).filter(Boolean).forEach(pair => {
   const [id, name] = pair.split('=').map(y => (y || '').trim());
   if (id && name) TARGET_IDS[id] = name;
 });
@@ -285,6 +288,8 @@ const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
   ns.unmatched = TARGETS.filter(n => !nsRows.some(r => r.owner === n));   // 한 건도 못 찾은 이름
   ns.authorTop = Object.entries(authorTally).sort((a, b) => b[1] - a[1]).slice(0, 15);
   ns.usersOk = USERS_OK;
+  // ID 를 박아 둔 사람은 users:read 가 없어도 정확히 잡힌다. 경고는 그렇지 않은 이름에만 띄운다.
+  ns.unresolved = USERS_OK ? [] : TARGETS.filter(n => !Object.values(TARGET_IDS).includes(n));
   ns.nameInText = nameInText;
   ns.idTop = Object.entries(idTally).sort((a, b) => b[1] - a[1]).slice(0, 25);
   ns.sawUserProfile = sawUserProfile;
@@ -310,7 +315,8 @@ const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
   console.log('\n── 미설치건 (' + TARGETS.join(' · ') + ') ──');
   // 표시이름이 실명과 다르면 조용히 0건이 나온다. 매번 작성자 목록을 찍어 눈으로 대조할 수 있게 한다.
   if (ns.unmatched.length) console.log('  ⚠ 한 건도 못 찾은 이름: ' + ns.unmatched.join(', '));
-  console.log('  작성자 이름 읽기: ' + (ns.usersOk ? '정상' : '실패 (users:read 스코프 없음)'));
+  console.log('  작성자 이름 읽기: ' + (ns.usersOk ? 'users.list 정상'
+    : 'users.list 실패 (users:read 없음) — 멤버 ID 로 지목: ' + Object.keys(TARGET_IDS).length + '명'));
   console.log('  기간 내 작성자 상위 15명 (표기 대조용):');
   ns.authorTop.forEach(([n, c]) => console.log('    ' + String(c).padStart(4) + '  ' + n));
   if (!ns.usersOk) {
@@ -552,12 +558,12 @@ function renderHtml(d) {
     <div class="lead" style="font-size:19px"><strong>${esc(nsNames)}</strong> 세 분이 올려주시는 건입니다.
       위 예약 집계와는 <strong>모수가 다릅니다</strong> — 같은 기간·같은 채널에서 <strong>올린 사람</strong> 기준으로 추려
       처리 이모지를 똑같은 잣대로 대조했습니다.</div>
-${ns.usersOk ? '' : `
+${ns.unresolved && ns.unresolved.length ? `
     <div style="background:#fdecec;color:#b3261e;border-radius:12px;padding:16px 18px;margin-top:24px;font-size:16px;line-height:1.6">
-      ⚠ 슬랙 앱에 <strong>users:read</strong> 권한이 없어 <strong>글쓴이 이름을 읽지 못했습니다.</strong>
-      그래서 아래 수치는 본문에 <strong>'요청자:'</strong> 줄이 적힌 글만 잡은 것이라 실제보다 적습니다.
-      슬랙 앱에 권한을 추가하고 다시 돌리면 정확해집니다.</div>
-`}
+      ⚠ <strong>${esc(ns.unresolved.join(' · '))}</strong> 은(는) 글쓴이를 가려내지 못했습니다.
+      슬랙 앱에 <strong>users:read</strong> 권한이 없어, 멤버 ID 를 지정하지 않은 사람은 본문에
+      <strong>'요청자:'</strong> 줄이 적힌 글만 잡힙니다 — 실제보다 적게 나옵니다.</div>
+` : ''}
 ${ns.live.length === 0 ? `
     <div class="note" style="font-size:17px;margin-top:28px">기간 내에 세 분이 올린 글을 찾지 못했습니다.
       슬랙 표시이름이 실명과 달라 못 찾았을 수 있습니다 — 워크플로 실행 로그의 <strong>작성자 상위 15명</strong> 목록과
@@ -656,7 +662,7 @@ ${ns.live.length === 0 ? `
       · <strong>2차부재</strong>는 대시보드에 아예 적재되지 않습니다. 이 리포트에서만 볼 수 있는 수치입니다.<br>
       · 이모지가 하나도 없는 건은 <strong>이모지 없음(미처리)</strong> 으로 따로 셌습니다.<br>
       · <strong>미설치건</strong>은 [예약] 표기와 무관하게 <strong>${esc(nsNames)}</strong> 세 분이 올린 글을
-        작성자로 추린 것입니다. 예약 집계와 모수가 다르고, 일부는 서로 겹칩니다(겹친 건 ${ns.booked}건).
+        작성자(슬랙 멤버 ID) 기준으로 추린 것입니다. 예약 집계와 모수가 다르고, 일부는 서로 겹칩니다(겹친 건 ${ns.booked}건).
         마감 여부는 카테고리 이모지(원격온보딩·원격as·원격명의변경·원격메뉴등록·원격배달·원격외주)가 찍혔는지로 판단했습니다.
     </div>
     <div class="meta">생성 ${esc(new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 16).replace('T', ' '))} KST
