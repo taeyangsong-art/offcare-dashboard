@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12492,
+  "version": 12493,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -196806,7 +196806,7 @@ window.SLACK_DATA = {
         "offline": 12,
         "unknown": 0
       },
-      "updatedAt": "12:30",
+      "updatedAt": "12:35",
       "ob": {
         "count": 1,
         "byEmp": {
@@ -196898,22 +196898,21 @@ window.SLACK_DATA = {
       },
       "1790044200.217269": {
         "post": "1790044200.217269",
-        "lastSeen": 1790047819.162,
+        "lastSeen": 1790048181.929,
         "r": 1,
         "day": "2026-09-22",
         "idx": 26
       },
       "1790047802.185519": {
         "post": "1790047802.185519",
-        "lastSeen": 1790047819.162
+        "lastSeen": 1790048181.929,
+        "r": 1,
+        "day": "2026-09-22",
+        "idx": 32
       },
-      "1790038908.859219": {
-        "post": "1790038908.859219",
-        "lastSeen": 1790047819.162
-      },
-      "1790038608.680899": {
-        "post": "1790038608.680899",
-        "lastSeen": 1790047819.162
+      "1790039208.231169": {
+        "post": "1790039208.231169",
+        "lastSeen": 1790048181.929
       }
     },
     "days": {
@@ -260344,8 +260343,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-22": {
-        "cnt": 32,
-        "sumMin": 170.37870737711592,
+        "cnt": 33,
+        "sumMin": 173.68470705747606,
         "over": 0,
         "items": [
           {
@@ -260634,19 +260633,27 @@ window.SLACK_DATA = {
             "who": "배선유",
             "cat": "as",
             "dmin": 2.1
+          },
+          {
+            "hm": "12:30",
+            "min": 3.3,
+            "store": "수원휴대폰성지모두의폰정자점",
+            "biz": "3970403350",
+            "who": "김규빈",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-22 12:30",
+    "at": "2026-09-22 12:36",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 4214,
+    "rows": 4215,
     "named": 891,
     "unknownName": 0,
     "beforeStart": 0,
