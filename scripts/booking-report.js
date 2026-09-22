@@ -105,6 +105,7 @@ async function fetchRange(channelId) {
 
 /* 슬랙 사용자 ID → 이름. 미설치건 작성자를 가리려면 필요하다.
    users:read 스코프가 없어 실패하면 본문 '요청자:' 줄로만 찾고 리포트는 그대로 진행한다. */
+let USERS_OK = false;   // users:read 스코프가 없으면 작성자 이름을 못 읽는다 — 리포트에 그대로 밝힌다
 async function loadUsers() {
   const idx = {};   // id → { label, search }
   let cursor = '', guard = 0;
@@ -125,6 +126,7 @@ async function loadUsers() {
       }
       cursor = (j.response_metadata && j.response_metadata.next_cursor) || '';
     } while (cursor && ++guard < 20);
+    USERS_OK = true;
   } catch (e) {
     console.error('  ⚠ users.list 실패 (' + e.message + ') — 미설치건은 본문 "요청자:" 줄로만 찾습니다.');
   }
@@ -150,6 +152,7 @@ const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
   const rows = [];       // [예약]·(예약) 표기 건
   const nsRows = [];     // 미설치건 — 세 분이 올린 건 (예약 표기와 무관. 둘 다인 건도 있다)
   const authorTally = {};// 진단용 — 기간 내 작성자별 글 수. 이름이 안 잡힐 때 로그에서 원인을 본다.
+  const nameInText = {}; // 진단용 — 대상자 이름이 본문에 나오는 횟수와 표본
   const scanned = {};
   for (const ch of CHANNELS) {
     let msgs = [];
@@ -162,6 +165,12 @@ const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
       const who = authorOf(m);
       const whoKey = who || '(알 수 없음)';
       authorTally[whoKey] = (authorTally[whoKey] || 0) + 1;
+      // 작성자로 못 찾았을 때 대비 — 이름이 본문 어딘가에 나오는지, 어떤 모양으로 나오는지 표본을 남긴다
+      for (const t of TARGETS) if (text.includes(t)) {
+        const b = nameInText[t] || (nameInText[t] = { n: 0, samples: [] });
+        b.n++;
+        if (b.samples.length < 3) b.samples.push(text.replace(/\s+/g, ' ').slice(0, 200));
+      }
       const booked = RE_BOOKING.test(text);
       const owner = ownerOf(m, text);
       if (!booked && !owner) continue;
@@ -260,6 +269,8 @@ const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
   ns.open = nsLive.length - ns.done;
   ns.unmatched = TARGETS.filter(n => !nsRows.some(r => r.owner === n));   // 한 건도 못 찾은 이름
   ns.authorTop = Object.entries(authorTally).sort((a, b) => b[1] - a[1]).slice(0, 15);
+  ns.usersOk = USERS_OK;
+  ns.nameInText = nameInText;
 
   // ── 콘솔 요약 ──
   console.log(`\n예약 리포트 · ${FROM} ~ ${TO}`);
@@ -282,8 +293,15 @@ const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
   console.log('\n── 미설치건 (' + TARGETS.join(' · ') + ') ──');
   // 표시이름이 실명과 다르면 조용히 0건이 나온다. 매번 작성자 목록을 찍어 눈으로 대조할 수 있게 한다.
   if (ns.unmatched.length) console.log('  ⚠ 한 건도 못 찾은 이름: ' + ns.unmatched.join(', '));
+  console.log('  작성자 이름 읽기: ' + (ns.usersOk ? '정상' : '실패 (users:read 스코프 없음)'));
   console.log('  기간 내 작성자 상위 15명 (표기 대조용):');
   ns.authorTop.forEach(([n, c]) => console.log('    ' + String(c).padStart(4) + '  ' + n));
+  for (const t of TARGETS) {
+    const b = ns.nameInText[t];
+    if (!b) { console.log('  · ' + t + ' — 본문에도 한 번도 안 나옴'); continue; }
+    console.log('  · ' + t + ' — 본문 등장 ' + b.n + '건. 표본:');
+    b.samples.forEach(x => console.log('      ' + x));
+  }
   console.log('  총 ' + ns.total + '건 → 유효 ' + ns.live.length + '건 · 마감 ' + ns.done
     + ' · 미마감 ' + ns.open + ' · 그중 [예약] 표기 ' + ns.booked + '건');
   console.log('  요청자      모수  온보딩    AS  기타마감  미마감   마감률');
@@ -512,6 +530,12 @@ function renderHtml(d) {
     <div class="lead" style="font-size:19px"><strong>${esc(nsNames)}</strong> 세 분이 올려주시는 건입니다.
       위 예약 집계와는 <strong>모수가 다릅니다</strong> — 같은 기간·같은 채널에서 <strong>올린 사람</strong> 기준으로 추려
       처리 이모지를 똑같은 잣대로 대조했습니다.</div>
+${ns.usersOk ? '' : `
+    <div style="background:#fdecec;color:#b3261e;border-radius:12px;padding:16px 18px;margin-top:24px;font-size:16px;line-height:1.6">
+      ⚠ 슬랙 앱에 <strong>users:read</strong> 권한이 없어 <strong>글쓴이 이름을 읽지 못했습니다.</strong>
+      그래서 아래 수치는 본문에 <strong>'요청자:'</strong> 줄이 적힌 글만 잡은 것이라 실제보다 적습니다.
+      슬랙 앱에 권한을 추가하고 다시 돌리면 정확해집니다.</div>
+`}
 ${ns.live.length === 0 ? `
     <div class="note" style="font-size:17px;margin-top:28px">기간 내에 세 분이 올린 글을 찾지 못했습니다.
       슬랙 표시이름이 실명과 달라 못 찾았을 수 있습니다 — 워크플로 실행 로그의 <strong>작성자 상위 15명</strong> 목록과
