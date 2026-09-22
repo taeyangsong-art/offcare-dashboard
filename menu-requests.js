@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2377,
- "updatedAt": "2026-09-22 16:25",
+ "version": 2378,
+ "updatedAt": "2026-09-22 16:27",
  "days": 30,
  "items": [
+  {
+   "ts": "1790062035.905579",
+   "date": "2026-09-22",
+   "time": "16:27",
+   "store": "상계식당",
+   "biz": "6624901072",
+   "pos": "스파로스포스",
+   "content": "조기구이5마리\n가격 15,000원",
+   "special": "위 메뉴 추가",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 0,
+   "lr": "",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1790062035905579"
+  },
   {
    "ts": "1790060900.133479",
    "date": "2026-09-22",
@@ -20,9 +41,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1790060903.775389",
+   "replies": [
+    "*카테고리* \n빙수바보 빙식이\n\n바나나초코눈꽂빙수\n조리퐁쵸코빙수\n\n메뉴 뒤쪽으로 배치 부탁드립니다\n#2가지가 빠졌어요"
+   ],
+   "rc": 2,
+   "lr": "1790062003.641929",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
