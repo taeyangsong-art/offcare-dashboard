@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12430,
+  "version": 12431,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -195972,8 +195972,8 @@ window.SLACK_DATA = {
     "2026-09-22": {
       "counts": {
         "as": {
-          "송태양": 1,
-          "김동욱": 2
+          "김동욱": 3,
+          "송태양": 1
         },
         "extern": {
           "김동욱": 1
@@ -195981,6 +195981,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:11",
+          "store": "바다양푼이동태탕",
+          "biz": "2103243951",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "영수증 기본 홀 01 -&gt; 01로 수정 희망 / 포스기 편집탭을 들어가지 못하시어 원격 확인 부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "테이블명 변경 및 포장 테이블 추가. 가결제 완료"
+        },
         {
           "time": "09:08",
           "store": "메몽",
@@ -196027,7 +196038,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 4,
+        "online": 5,
         "offline": 0,
         "unknown": 0
       },
@@ -196111,11 +196122,7 @@ window.SLACK_DATA = {
       },
       "1790036428.832759": {
         "post": "1790036428.832759",
-        "lastSeen": 1790036481.883
-      },
-      "1790035985.792609": {
-        "post": "1790035985.792609",
-        "lastSeen": 1790036481.883
+        "lastSeen": 1790036660.104
       }
     },
     "days": {
@@ -259564,7 +259571,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-22 09:21",
+    "at": "2026-09-22 09:24",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
