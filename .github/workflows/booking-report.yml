@@ -17,6 +17,10 @@ on:
         description: '집계 종료일 (YYYY-MM-DD, 이 날짜 포함)'
         required: true
         default: '2026-08-31'
+      target_ids:
+        description: '미설치건 요청자 슬랙 ID (예: U08BA4PDNLT=김봉수,U0AAA=최승훈). 비우면 이름으로 찾는다'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -35,6 +39,7 @@ jobs:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           FROM: ${{ inputs.from_date }}
           TO: ${{ inputs.to_date }}
+          TARGET_IDS: ${{ inputs.target_ids }}
         run: node scripts/booking-report.js
 
       - name: 커밋 & 푸시

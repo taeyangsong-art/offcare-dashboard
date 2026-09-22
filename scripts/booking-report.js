@@ -55,8 +55,18 @@ const RE_BOOKING = /[\[\(（]\s*예약\s*[\]\)）]/;
    본문 필드(상호/내용/노트)에는 이름이 안 남아서 '누가 올렸나'로 가린다.
    표시이름이 영문이거나 소속이 붙는 경우가 있어 프로필의 이름 필드를 전부 이어붙여 부분일치로 찾고,
    워크플로로 올라온 글은 작성자가 봇이라 본문의 '요청자:' 줄을 예비로 본다. */
-const TARGETS = (process.env.TARGETS || '김봉수,최승훈,김규리').split(',').map(x => x.trim()).filter(Boolean);
+let TARGETS = (process.env.TARGETS || '김봉수,최승훈,김규리').split(',').map(x => x.trim()).filter(Boolean);
 const RE_REQUESTER = /요청자\s*[:：]\s*([가-힣]{2,4})/;
+/* users:read 스코프가 없는 워크스페이스에서는 users.list 가 막혀 이름을 못 읽는다.
+   그때는 슬랙 프로필의 '멤버 ID 복사'로 얻은 ID 를 직접 꽂는다.
+   TARGET_IDS='U08BA4PDNLT=김봉수,U0XXXX=최승훈' 형식. */
+const TARGET_IDS = {};
+(process.env.TARGET_IDS || '').split(',').map(x => x.trim()).filter(Boolean).forEach(pair => {
+  const [id, name] = pair.split('=').map(y => (y || '').trim());
+  if (id && name) TARGET_IDS[id] = name;
+});
+// ID 로만 지정한 사람도 집계 대상에 넣는다
+for (const n of Object.values(TARGET_IDS)) if (!TARGETS.includes(n)) TARGETS.push(n);
 
 const pad = n => String(n).padStart(2, '0');
 const dateUTC = s => { const [y, m, d] = s.split('-').map(Number); return Date.UTC(y, m - 1, d); };
@@ -138,10 +148,11 @@ const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
 (async () => {
   const userIdx = await loadUsers();
   // 작성자 이름 — 사람이면 프로필 이름, 워크플로/봇이면 봇 이름. 원본 표에 그대로 보여준다.
-  const authorOf = m => (userIdx[m.user] && userIdx[m.user].label)
+  const authorOf = m => TARGET_IDS[m.user] || (userIdx[m.user] && userIdx[m.user].label)
     || m.username || (m.bot_profile && m.bot_profile.name) || '';
   // 세 분 중 누가 올린 건인가 — 프로필 이름 우선, 못 찾으면 본문 '요청자:' 줄
   const ownerOf = (m, text) => {
+    if (TARGET_IDS[m.user]) return TARGET_IDS[m.user];        // 직접 꽂은 ID 가 가장 확실하다
     const s = (userIdx[m.user] && userIdx[m.user].search) || '';
     const byProfile = TARGETS.find(n => s.includes(n));
     if (byProfile) return byProfile;
@@ -153,6 +164,8 @@ const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
   const nsRows = [];     // 미설치건 — 세 분이 올린 건 (예약 표기와 무관. 둘 다인 건도 있다)
   const authorTally = {};// 진단용 — 기간 내 작성자별 글 수. 이름이 안 잡힐 때 로그에서 원인을 본다.
   const nameInText = {}; // 진단용 — 대상자 이름이 본문에 나오는 횟수와 표본
+  const idTally = {};    // 진단용 — 사용자 ID 별 글 수. 이름을 못 읽을 때 ID 로 지목하기 위한 후보 목록.
+  let sawUserProfile = false;   // conversations.history 가 프로필을 같이 주는지 확인
   const scanned = {};
   for (const ch of CHANNELS) {
     let msgs = [];
@@ -166,6 +179,8 @@ const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
       const whoKey = who || '(알 수 없음)';
       authorTally[whoKey] = (authorTally[whoKey] || 0) + 1;
       // 작성자로 못 찾았을 때 대비 — 이름이 본문 어딘가에 나오는지, 어떤 모양으로 나오는지 표본을 남긴다
+      if (m.user) idTally[m.user] = (idTally[m.user] || 0) + 1;
+      if (m.user_profile) sawUserProfile = true;
       for (const t of TARGETS) if (text.includes(t)) {
         const b = nameInText[t] || (nameInText[t] = { n: 0, samples: [] });
         b.n++;
@@ -271,6 +286,8 @@ const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
   ns.authorTop = Object.entries(authorTally).sort((a, b) => b[1] - a[1]).slice(0, 15);
   ns.usersOk = USERS_OK;
   ns.nameInText = nameInText;
+  ns.idTop = Object.entries(idTally).sort((a, b) => b[1] - a[1]).slice(0, 25);
+  ns.sawUserProfile = sawUserProfile;
 
   // ── 콘솔 요약 ──
   console.log(`\n예약 리포트 · ${FROM} ~ ${TO}`);
@@ -296,6 +313,11 @@ const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
   console.log('  작성자 이름 읽기: ' + (ns.usersOk ? '정상' : '실패 (users:read 스코프 없음)'));
   console.log('  기간 내 작성자 상위 15명 (표기 대조용):');
   ns.authorTop.forEach(([n, c]) => console.log('    ' + String(c).padStart(4) + '  ' + n));
+  if (!ns.usersOk) {
+    console.log('  메시지에 user_profile 동봉 여부: ' + (ns.sawUserProfile ? '있음' : '없음'));
+    console.log('  글 많은 사용자 ID 상위 25 (슬랙 프로필 → 멤버 ID 복사 로 대조):');
+    ns.idTop.forEach(([id, c]) => console.log('    ' + String(c).padStart(4) + '  ' + id));
+  }
   for (const t of TARGETS) {
     const b = ns.nameInText[t];
     if (!b) { console.log('  · ' + t + ' — 본문에도 한 번도 안 나옴'); continue; }
