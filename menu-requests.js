@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2368,
- "updatedAt": "2026-09-22 13:51",
+ "version": 2369,
+ "updatedAt": "2026-09-22 13:53",
  "days": 30,
  "items": [
   {
@@ -25,11 +25,11 @@ window.MENU_REQUESTS = {
     "선유님!\n비빔밥 카테고리 삭제는 다시 취소요청하셨는데요,\n혹시 이미 삭제되었다면 다시 올려야 할까요?",
     "휴 다행입니다.\n위에 내용으로 진행 부탁드립니다!"
    ],
-   "rc": 6,
-   "lr": "1790052639.324469",
+   "rc": 7,
+   "lr": "1790052761.553819",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1790050944697209"
   },
   {
