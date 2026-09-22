@@ -12,9 +12,15 @@
  *   환경변수 FROM / TO 로 기간 지정 (기본 2026-08-01 ~ 2026-08-31)
  *   OUT_DIR 로 출력 폴더 지정 (기본 share)
  *
+ * 미설치건:
+ *   같은 기간·같은 채널에서 TARGETS(기본 김봉수·최승훈·김규리) 가 올린 글을 작성자 기준으로 따로 모아
+ *   같은 이모지 잣대로 마감 여부를 센다. 예약과는 모수가 다르고 일부만 겹친다.
+ *   본문 필드에는 이름이 안 남아서 users.list 의 프로필 이름으로 가리고, 워크플로 글은 '요청자:' 줄을 본다.
+ *
  * 출력:
- *   <OUT_DIR>/booking-report.html  공유용 페이지
- *   <OUT_DIR>/booking-report.csv   엑셀용 (UTF-8 BOM — 한글 안 깨짐)
+ *   <OUT_DIR>/booking-report.html  공유용 페이지 (예약 + 미설치건)
+ *   <OUT_DIR>/booking-report.csv   예약 엑셀용 (UTF-8 BOM — 한글 안 깨짐)
+ *   <OUT_DIR>/nosetup-report.csv   미설치건 엑셀용
  */
 const fs = require('fs');
 const path = require('path');
@@ -44,6 +50,13 @@ const RE_CONFIRM = new RegExp('^(' + NAMES + ')(_?확인.*)?$'); // XX확인 (�
 
 // [예약] · (예약) · （예약） — 대괄호/소괄호/전각괄호 모두 인정. 공백 허용.
 const RE_BOOKING = /[\[\(（]\s*예약\s*[\]\)）]/;
+
+/* 미설치건 — 아래 세 분이 채널에 올려주는 건을 예약과 별개 모수로 따로 집계한다.
+   본문 필드(상호/내용/노트)에는 이름이 안 남아서 '누가 올렸나'로 가린다.
+   표시이름이 영문이거나 소속이 붙는 경우가 있어 프로필의 이름 필드를 전부 이어붙여 부분일치로 찾고,
+   워크플로로 올라온 글은 작성자가 봇이라 본문의 '요청자:' 줄을 예비로 본다. */
+const TARGETS = (process.env.TARGETS || '김봉수,최승훈,김규리').split(',').map(x => x.trim()).filter(Boolean);
+const RE_REQUESTER = /요청자\s*[:：]\s*([가-힣]{2,4})/;
 
 const pad = n => String(n).padStart(2, '0');
 const dateUTC = s => { const [y, m, d] = s.split('-').map(Number); return Date.UTC(y, m - 1, d); };
@@ -90,10 +103,53 @@ async function fetchRange(channelId) {
   return msgs;
 }
 
+/* 슬랙 사용자 ID → 이름. 미설치건 작성자를 가리려면 필요하다.
+   users:read 스코프가 없어 실패하면 본문 '요청자:' 줄로만 찾고 리포트는 그대로 진행한다. */
+async function loadUsers() {
+  const idx = {};   // id → { label, search }
+  let cursor = '', guard = 0;
+  try {
+    do {
+      const url = new URL('https://slack.com/api/users.list');
+      url.searchParams.set('limit', '200');
+      if (cursor) url.searchParams.set('cursor', cursor);
+      const res = await fetch(url, { headers: { Authorization: 'Bearer ' + TOKEN } });
+      const j = await res.json();
+      if (!j.ok) throw new Error(j.error);
+      for (const u of (j.members || [])) {
+        const pr = u.profile || {};
+        idx[u.id] = {
+          label: pr.display_name || pr.real_name || u.real_name || u.name || u.id,
+          search: [pr.display_name, pr.real_name, pr.real_name_normalized, u.real_name, u.name].filter(Boolean).join('|'),
+        };
+      }
+      cursor = (j.response_metadata && j.response_metadata.next_cursor) || '';
+    } while (cursor && ++guard < 20);
+  } catch (e) {
+    console.error('  ⚠ users.list 실패 (' + e.message + ') — 미설치건은 본문 "요청자:" 줄로만 찾습니다.');
+  }
+  return idx;
+}
+
 const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
 
 (async () => {
-  const rows = [];
+  const userIdx = await loadUsers();
+  // 작성자 이름 — 사람이면 프로필 이름, 워크플로/봇이면 봇 이름. 원본 표에 그대로 보여준다.
+  const authorOf = m => (userIdx[m.user] && userIdx[m.user].label)
+    || m.username || (m.bot_profile && m.bot_profile.name) || '';
+  // 세 분 중 누가 올린 건인가 — 프로필 이름 우선, 못 찾으면 본문 '요청자:' 줄
+  const ownerOf = (m, text) => {
+    const s = (userIdx[m.user] && userIdx[m.user].search) || '';
+    const byProfile = TARGETS.find(n => s.includes(n));
+    if (byProfile) return byProfile;
+    const q = text.match(RE_REQUESTER);
+    return (q && TARGETS.includes(q[1])) ? q[1] : '';
+  };
+
+  const rows = [];       // [예약]·(예약) 표기 건
+  const nsRows = [];     // 미설치건 — 세 분이 올린 건 (예약 표기와 무관. 둘 다인 건도 있다)
+  const authorTally = {};// 진단용 — 기간 내 작성자별 글 수. 이름이 안 잡힐 때 로그에서 원인을 본다.
   const scanned = {};
   for (const ch of CHANNELS) {
     let msgs = [];
@@ -103,7 +159,12 @@ const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
     for (const m of msgs) {
       if (m.subtype && m.subtype !== 'bot_message') continue;
       const text = blocksText(m).replace(/&gt;/g, '>').replace(/&lt;/g, '<').replace(/&amp;/g, '&');
-      if (!RE_BOOKING.test(text)) continue;
+      const who = authorOf(m);
+      const whoKey = who || '(알 수 없음)';
+      authorTally[whoKey] = (authorTally[whoKey] || 0) + 1;
+      const booked = RE_BOOKING.test(text);
+      const owner = ownerOf(m, text);
+      if (!booked && !owner) continue;
 
       const names = (m.reactions || []).map(r => r.name);
       let cat = null;
@@ -122,32 +183,39 @@ const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
       const biz = field(text, /사업자\s*번?호?\s*[:：]?\s*([\d\-]+)/).replace(/-/g, '');
       const req = field(text, /내용\s*[:：]?\s*(.+)/).slice(0, 120);
 
-      rows.push({
+      const row = {
         ch: ch.label, stamp: kstStamp(m.ts), date: kstStamp(m.ts).slice(0, 10), store, biz, req,
         cat, catKo: cat ? CAT_KO[cat] : (extern ? '외주' : ''),
         emp: emp || '', abs1, abs2, dup, invalid,
-        emojis: names.join(' '),
-      });
+        emojis: names.join(' '), who, owner, booked,
+      };
+      if (booked) rows.push(row);
+      if (owner) nsRows.push(row);
     }
   }
   rows.sort((a, b) => a.stamp.localeCompare(b.stamp));
+  nsRows.sort((a, b) => a.stamp.localeCompare(b.stamp));
 
   // ── 집계 ──
   const total = rows.length;
   const live = rows.filter(r => !r.dup && !r.invalid);          // 중복·잘못올린글 제외한 유효 모수
   const cnt = k => live.filter(k).length;
-  // A. 마감 유형 — 서로 겹치지 않게 나눈다. 합 = 유효 모수.
-  const stat = [
-    { key: 'onboarding', label: '온보딩으로 마감',   n: cnt(r => r.cat === 'onboarding') },
-    { key: 'as',         label: 'AS로 마감',        n: cnt(r => r.cat === 'as') },
-    { key: 'transfer',   label: '명의변경으로 마감',  n: cnt(r => r.cat === 'transfer') },
-    { key: 'menu',       label: '메뉴등록으로 마감',  n: cnt(r => r.cat === 'menu') },
-    { key: 'delivery',   label: '배달로 마감',       n: cnt(r => r.cat === 'delivery') },
-    { key: 'extern',     label: '외주로 마감',       n: cnt(r => !r.cat && r.catKo === '외주') },
-    { key: 'a2only',     label: '미마감 · 2차부재',  n: cnt(r => !r.cat && r.catKo !== '외주' && r.abs2) },
-    { key: 'a1only',     label: '미마감 · 1차부재',  n: cnt(r => !r.cat && r.catKo !== '외주' && r.abs1) },
-    { key: 'none',       label: '미마감 · 이모지 없음', n: cnt(r => !r.cat && r.catKo !== '외주' && !r.abs1 && !r.abs2) },
-  ];
+  // A. 마감 유형 — 서로 겹치지 않게 나눈다. 합 = 유효 모수. 미설치건에도 같은 잣대를 쓴다.
+  const breakdown = list => {
+    const c = k => list.filter(k).length;
+    return [
+      { key: 'onboarding', label: '온보딩으로 마감',   n: c(r => r.cat === 'onboarding') },
+      { key: 'as',         label: 'AS로 마감',        n: c(r => r.cat === 'as') },
+      { key: 'transfer',   label: '명의변경으로 마감',  n: c(r => r.cat === 'transfer') },
+      { key: 'menu',       label: '메뉴등록으로 마감',  n: c(r => r.cat === 'menu') },
+      { key: 'delivery',   label: '배달로 마감',       n: c(r => r.cat === 'delivery') },
+      { key: 'extern',     label: '외주로 마감',       n: c(r => !r.cat && r.catKo === '외주') },
+      { key: 'a2only',     label: '미마감 · 2차부재',  n: c(r => !r.cat && r.catKo !== '외주' && r.abs2) },
+      { key: 'a1only',     label: '미마감 · 1차부재',  n: c(r => !r.cat && r.catKo !== '외주' && r.abs1) },
+      { key: 'none',       label: '미마감 · 이모지 없음', n: c(r => !r.cat && r.catKo !== '외주' && !r.abs1 && !r.abs2) },
+    ];
+  };
+  const stat = breakdown(live);
   const statSum = stat.reduce((a, s) => a + s.n, 0);
   // B. 부재 동반 — A 와 교차한다(카테고리 이모지와 부재가 한 건에 같이 찍히는 경우).
   const cross = [
@@ -159,6 +227,39 @@ const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
   const byEmp = {};  live.forEach(r => { const e = r.emp || '미지정'; byEmp[e] = (byEmp[e] || 0) + 1; });
   const byDate = {}; live.forEach(r => { byDate[r.date] = (byDate[r.date] || 0) + 1; });
   const byCh = {};   live.forEach(r => { byCh[r.ch] = (byCh[r.ch] || 0) + 1; });
+
+  // ── 미설치건 집계 — 세 분이 올린 건. 예약과 모수가 다르므로 처음부터 따로 센다. ──
+  const nsLive = nsRows.filter(r => !r.dup && !r.invalid);
+  const closed = r => !!r.cat || r.catKo === '외주';       // 카테고리 이모지가 찍혔으면 마감으로 본다
+  const ns = {
+    total: nsRows.length,
+    rows: nsRows,
+    live: nsLive,
+    stat: breakdown(nsLive),
+    booked: nsLive.filter(r => r.booked).length,           // 그중 [예약] 표기도 달린 건
+    byCh: {}, byDate: {},
+    people: TARGETS.map(name => {
+      const L = nsLive.filter(r => r.owner === name);
+      const done = L.filter(closed).length;
+      return {
+        name, n: L.length, raw: nsRows.filter(r => r.owner === name).length,
+        onboarding: L.filter(r => r.cat === 'onboarding').length,
+        as:         L.filter(r => r.cat === 'as').length,
+        etc:        L.filter(r => closed(r) && r.cat !== 'onboarding' && r.cat !== 'as').length,
+        abs2:       L.filter(r => !closed(r) && r.abs2).length,
+        abs1:       L.filter(r => !closed(r) && r.abs1).length,
+        none:       L.filter(r => !closed(r) && !r.abs1 && !r.abs2).length,
+        booked:     L.filter(r => r.booked).length,
+        done, open: L.length - done,
+      };
+    }),
+  };
+  nsLive.forEach(r => { ns.byCh[r.ch] = (ns.byCh[r.ch] || 0) + 1; ns.byDate[r.date] = (ns.byDate[r.date] || 0) + 1; });
+  ns.statSum = ns.stat.reduce((a, s) => a + s.n, 0);
+  ns.done = nsLive.filter(closed).length;
+  ns.open = nsLive.length - ns.done;
+  ns.unmatched = TARGETS.filter(n => !nsRows.some(r => r.owner === n));   // 한 건도 못 찾은 이름
+  ns.authorTop = Object.entries(authorTally).sort((a, b) => b[1] - a[1]).slice(0, 15);
 
   // ── 콘솔 요약 ──
   console.log(`\n예약 리포트 · ${FROM} ~ ${TO}`);
@@ -177,18 +278,40 @@ const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
   console.log('\n채널별:', JSON.stringify(byCh));
   console.log('담당자별:', JSON.stringify(byEmp));
 
+  // ── 미설치건 ──
+  console.log('\n── 미설치건 (' + TARGETS.join(' · ') + ') ──');
+  // 표시이름이 실명과 다르면 조용히 0건이 나온다. 매번 작성자 목록을 찍어 눈으로 대조할 수 있게 한다.
+  if (ns.unmatched.length) console.log('  ⚠ 한 건도 못 찾은 이름: ' + ns.unmatched.join(', '));
+  console.log('  기간 내 작성자 상위 15명 (표기 대조용):');
+  ns.authorTop.forEach(([n, c]) => console.log('    ' + String(c).padStart(4) + '  ' + n));
+  console.log('  총 ' + ns.total + '건 → 유효 ' + ns.live.length + '건 · 마감 ' + ns.done
+    + ' · 미마감 ' + ns.open + ' · 그중 [예약] 표기 ' + ns.booked + '건');
+  console.log('  요청자      모수  온보딩    AS  기타마감  미마감   마감률');
+  for (const p of ns.people) {
+    console.log('  ' + p.name.padEnd(10) + String(p.n).padStart(4) + String(p.onboarding).padStart(7)
+      + String(p.as).padStart(6) + String(p.etc).padStart(9) + String(p.open).padStart(8)
+      + (p.n ? (p.done / p.n * 100).toFixed(1) + '%' : '-').padStart(9));
+  }
+  console.log('  채널별:', JSON.stringify(ns.byCh));
+
   // ── CSV (엑셀) ──
   const csvEsc = v => { const s = String(v == null ? '' : v); return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
-  const head = ['일시', '채널', '상호', '사업자번호', '카테고리 이모지', '담당자', '1차부재', '2차부재', '중복', '잘못올린글', '요청내용', '찍힌 이모지 전체'];
-  const csv = [head.join(',')].concat(rows.map(r => [
-    r.stamp, r.ch, r.store, r.biz, r.catKo, r.emp, r.abs1 ? 'O' : '', r.abs2 ? 'O' : '',
+  const head = ['일시', '채널', '작성자', '상호', '사업자번호', '카테고리 이모지', '담당자', '1차부재', '2차부재', '중복', '잘못올린글', '요청내용', '찍힌 이모지 전체'];
+  const cells = r => [
+    r.stamp, r.ch, r.who || '', r.store, r.biz, r.catKo, r.emp, r.abs1 ? 'O' : '', r.abs2 ? 'O' : '',
     r.dup ? 'O' : '', r.invalid ? 'O' : '', r.req, r.emojis,
-  ].map(csvEsc).join(','))).join('\r\n');
+  ];
+  const csv = [head.join(',')].concat(rows.map(r => cells(r).map(csvEsc).join(','))).join('\r\n');
   fs.mkdirSync(OUT_DIR, { recursive: true });
   fs.writeFileSync(path.join(OUT_DIR, 'booking-report.csv'), '﻿' + csv, 'utf8');
 
+  // 미설치건은 예약과 모수가 달라 파일을 나눈다. 맨 앞에 요청자(세 분) 열을 붙인다.
+  const nsCsv = [['요청자'].concat(head).join(',')]
+    .concat(nsRows.map(r => [r.owner].concat(cells(r)).map(csvEsc).join(','))).join('\r\n');
+  fs.writeFileSync(path.join(OUT_DIR, 'nosetup-report.csv'), '\ufeff' + nsCsv, 'utf8');
+
   fs.writeFileSync(path.join(OUT_DIR, 'booking-report.html'),
-    renderHtml({ FROM, TO, total, live, rows, stat, statSum, cross, byEmp, byDate, byCh, scanned }), 'utf8');
+    renderHtml({ FROM, TO, total, live, rows, stat, statSum, cross, byEmp, byDate, byCh, scanned, ns }), 'utf8');
 
   console.log(`\n✅ ${OUT_DIR}/booking-report.html · ${OUT_DIR}/booking-report.csv 생성 (${rows.length}행)`);
 })().catch(e => { console.error(e.message); process.exit(1); });
@@ -200,6 +323,11 @@ function renderHtml(d) {
   const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const N = d.live.length || 1;
   const pct = n => (n / N * 100).toFixed(1);
+  const pctOf = (n, t) => (t ? n / t * 100 : 0).toFixed(1);   // 미설치건은 모수가 달라 분모를 받는다
+  const ns = d.ns || { total: 0, rows: [], live: [], stat: [], people: [], byCh: {}, statSum: 0, done: 0, open: 0, booked: 0 };
+  const nsNames = ns.people.map(p => p.name).join(' · ');
+  // 한 건에 찍힌 이모지를 태그로 — 예약 원본표와 미설치 원본표가 같은 표기를 쓰도록 함수로 뺀다
+  const tags = r => `${r.catKo ? `<span class="tag on">${esc(r.catKo)}</span>` : ''}${r.abs2 ? '<span class="tag warn">2차부재</span>' : ''}${r.abs1 ? '<span class="tag">1차부재</span>' : ''}${r.dup ? '<span class="tag">중복</span>' : ''}${r.invalid ? '<span class="tag">잘못올린글</span>' : ''}${!r.catKo && !r.abs1 && !r.abs2 && !r.dup && !r.invalid ? '<span class="tag">없음</span>' : ''}`;
   const key = [
     d.stat.find(s => s.key === 'onboarding'),
     d.stat.find(s => s.key === 'as'),
@@ -362,13 +490,14 @@ function renderHtml(d) {
       <summary>전체 ${d.rows.length}건 원본 보기</summary>
       <div class="tbl-scroll">
         <table>
-          <thead><tr><th>일시</th><th>상호</th><th>사업자</th><th>이모지</th><th>담당</th><th>요청내용</th></tr></thead>
+          <thead><tr><th>일시</th><th>상호</th><th>사업자</th><th>이모지</th><th>담당</th><th>올린사람</th><th>요청내용</th></tr></thead>
           <tbody>${d.rows.map(r => `<tr>
             <td>${esc(r.stamp.slice(5))}</td>
             <td>${esc(r.store || '-')}</td>
             <td>${esc(r.biz || '-')}</td>
-            <td>${r.catKo ? `<span class="tag on">${esc(r.catKo)}</span>` : ''}${r.abs2 ? '<span class="tag warn">2차부재</span>' : ''}${r.abs1 ? '<span class="tag">1차부재</span>' : ''}${r.dup ? '<span class="tag">중복</span>' : ''}${r.invalid ? '<span class="tag">잘못올린글</span>' : ''}${!r.catKo && !r.abs1 && !r.abs2 && !r.dup && !r.invalid ? '<span class="tag">없음</span>' : ''}</td>
+            <td>${tags(r)}</td>
             <td>${esc(r.emp || '-')}</td>
+            <td>${esc(r.who || '-')}</td>
             <td>${esc(r.req || '-')}</td></tr>`).join('')}</tbody>
         </table>
       </div>
@@ -379,12 +508,110 @@ function renderHtml(d) {
 
 <section class="tint">
   <div class="wrap">
+    <h2>미설치건은 어떻게 처리되고 있나</h2>
+    <div class="lead" style="font-size:19px"><strong>${esc(nsNames)}</strong> 세 분이 올려주시는 건입니다.
+      위 예약 집계와는 <strong>모수가 다릅니다</strong> — 같은 기간·같은 채널에서 <strong>올린 사람</strong> 기준으로 추려
+      처리 이모지를 똑같은 잣대로 대조했습니다.</div>
+${ns.live.length === 0 ? `
+    <div class="note" style="font-size:17px;margin-top:28px">기간 내에 세 분이 올린 글을 찾지 못했습니다.
+      슬랙 표시이름이 실명과 달라 못 찾았을 수 있습니다 — 워크플로 실행 로그의 <strong>작성자 상위 15명</strong> 목록과
+      대조해 <code>TARGETS</code> 를 맞춰 주세요.</div>
+` : `
+    <div class="keys" style="margin-top:36px">
+      <div class="key"><div class="kl">미설치건 모수</div>
+        <div class="kn">${ns.live.length.toLocaleString()}<span style="font-size:20px;font-weight:400">건</span></div>
+        <div class="kp">올라온 글 ${ns.total.toLocaleString()}건 중 유효</div>
+        <div class="kbar"><i style="width:100%"></i></div></div>
+      <div class="key"><div class="kl">마감됨 (카테고리 이모지)</div>
+        <div class="kn">${ns.done.toLocaleString()}<span style="font-size:20px;font-weight:400">건</span></div>
+        <div class="kp">${pctOf(ns.done, ns.live.length)}%</div>
+        <div class="kbar"><i style="width:${pctOf(ns.done, ns.live.length)}%"></i></div></div>
+      <div class="key"><div class="kl">미마감</div>
+        <div class="kn">${ns.open.toLocaleString()}<span style="font-size:20px;font-weight:400">건</span></div>
+        <div class="kp">${pctOf(ns.open, ns.live.length)}%</div>
+        <div class="kbar"><i style="width:${pctOf(ns.open, ns.live.length)}%"></i></div></div>
+    </div>
+
+    <h2 style="margin-top:56px;font-size:21px">요청자별</h2>
+    <div style="font-size:14px;color:var(--ink-48)">세 분이 각각 몇 건을 올렸고, 그게 무엇으로 마감됐는지입니다.</div>
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>요청자</th><th class="n">모수</th><th class="n">온보딩 마감</th><th class="n">AS 마감</th>
+          <th class="n">기타 마감</th><th class="n">미마감</th><th class="n">마감률</th><th>미마감 내역</th></tr></thead>
+        <tbody>${ns.people.map(p => `<tr>
+          <td>${esc(p.name)}</td>
+          <td class="n">${p.n.toLocaleString()}</td>
+          <td class="n">${p.onboarding}</td>
+          <td class="n">${p.as}</td>
+          <td class="n">${p.etc}</td>
+          <td class="n">${p.open}</td>
+          <td class="n">${p.n ? pctOf(p.done, p.n) + '%' : '—'}</td>
+          <td>${[['2차부재', p.abs2, 'warn'], ['1차부재', p.abs1, ''], ['이모지 없음', p.none, '']]
+            .filter(x => x[1]).map(x => `<span class="tag ${x[2]}">${x[0]} ${x[1]}</span>`).join(' ') || '—'}</td>
+        </tr>`).join('')}
+        <tr><td style="font-weight:600">합계</td>
+          <td class="n" style="font-weight:600">${ns.live.length.toLocaleString()}</td>
+          <td class="n">${ns.people.reduce((a, p) => a + p.onboarding, 0)}</td>
+          <td class="n">${ns.people.reduce((a, p) => a + p.as, 0)}</td>
+          <td class="n">${ns.people.reduce((a, p) => a + p.etc, 0)}</td>
+          <td class="n">${ns.open}</td>
+          <td class="n" style="font-weight:600">${pctOf(ns.done, ns.live.length)}%</td>
+          <td></td></tr></tbody>
+      </table>
+    </div>
+
+    <h2 style="margin-top:56px;font-size:21px">마감 유형</h2>
+    <div style="font-size:14px;color:var(--ink-48)">위 예약 표(A)와 같은 배타 분류입니다. 합이 미설치건 모수와 같습니다.</div>
+    <table>
+      <thead><tr><th>구분</th><th class="n">건수</th><th class="n">비중</th><th style="width:38%"></th></tr></thead>
+      <tbody>${ns.stat.map(s => `<tr>
+        <td>${esc(s.label)}</td>
+        <td class="n">${s.n.toLocaleString()}</td>
+        <td class="n">${pctOf(s.n, ns.live.length)}%</td>
+        <td><span class="bar" style="width:${pctOf(s.n, ns.live.length) * 2.6}px"></span></td>
+      </tr>`).join('')}
+      <tr><td style="font-weight:600">합계</td><td class="n" style="font-weight:600">${ns.statSum.toLocaleString()}</td>
+        <td class="n" style="font-weight:600">${ns.statSum === ns.live.length ? '모수와 일치' : '불일치'}</td><td></td></tr></tbody>
+    </table>
+
+    <div class="note">채널 분포 ${Object.entries(ns.byCh).sort((a, b) => b[1] - a[1])
+        .map(([c, n]) => `<span class="tag">${esc(c)} ${n}</span>`).join(' ') || '—'}<br>
+      이 중 <strong>[예약]</strong> 표기가 함께 달린 건은 ${ns.booked}건입니다 — 그만큼 위 예약 집계와 겹칩니다.
+      중복·잘못 올린 글 ${(ns.total - ns.live.length).toLocaleString()}건은 모수에서 뺐습니다.</div>
+
+    <details>
+      <summary>미설치건 ${ns.rows.length}건 원본 보기</summary>
+      <div class="tbl-scroll">
+        <table>
+          <thead><tr><th>일시</th><th>요청자</th><th>채널</th><th>상호</th><th>사업자</th><th>이모지</th><th>담당</th><th>요청내용</th></tr></thead>
+          <tbody>${ns.rows.map(r => `<tr>
+            <td>${esc(r.stamp.slice(5))}</td>
+            <td>${esc(r.owner)}</td>
+            <td>${esc(r.ch)}</td>
+            <td>${esc(r.store || '-')}</td>
+            <td>${esc(r.biz || '-')}</td>
+            <td>${tags(r)}</td>
+            <td>${esc(r.emp || '-')}</td>
+            <td>${esc(r.req || '-')}</td></tr>`).join('')}</tbody>
+        </table>
+      </div>
+    </details>
+    <a class="btn" href="nosetup-report.csv" download>미설치건 엑셀(CSV) 내려받기</a>
+`}
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
     <h2>읽는 방법</h2>
     <div class="note" style="font-size:17px;color:var(--ink-80);line-height:1.6">
       · 모수는 <strong>메시지 원문</strong>에서 <strong>[예약]</strong>·<strong>(예약)</strong> 표기를 찾은 것입니다.
         대시보드 집계 데이터에는 이 태그가 남지 않아(요청 '내용' 줄만 140자까지 저장) 슬랙을 다시 읽었습니다.<br>
       · <strong>2차부재</strong>는 대시보드에 아예 적재되지 않습니다. 이 리포트에서만 볼 수 있는 수치입니다.<br>
-      · 이모지가 하나도 없는 건은 <strong>이모지 없음(미처리)</strong> 으로 따로 셌습니다.
+      · 이모지가 하나도 없는 건은 <strong>이모지 없음(미처리)</strong> 으로 따로 셌습니다.<br>
+      · <strong>미설치건</strong>은 [예약] 표기와 무관하게 <strong>${esc(nsNames)}</strong> 세 분이 올린 글을
+        작성자로 추린 것입니다. 예약 집계와 모수가 다르고, 일부는 서로 겹칩니다(겹친 건 ${ns.booked}건).
+        마감 여부는 카테고리 이모지(원격온보딩·원격as·원격명의변경·원격메뉴등록·원격배달·원격외주)가 찍혔는지로 판단했습니다.
     </div>
     <div class="meta">생성 ${esc(new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 16).replace('T', ' '))} KST
       · scripts/booking-report.js</div>
