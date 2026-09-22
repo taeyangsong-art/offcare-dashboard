@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2352,
- "updatedAt": "2026-09-22 10:37",
+ "version": 2353,
+ "updatedAt": "2026-09-22 10:39",
  "days": 30,
  "items": [
   {
@@ -18,11 +18,44 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "스콘.png",
+     "fid": "F0C3LL0CS5A",
+     "from": "댓글",
+     "path": "menu-files/1790041039_194019-1.png",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "name": "바스크치즈케이크.png",
+     "fid": "F0C3APFD9T5",
+     "from": "댓글",
+     "path": "menu-files/1790041039_194019-2.png",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "name": "다크초코 월넛쿠키.png",
+     "fid": "F0C3C2G2B8D",
+     "from": "댓글",
+     "path": "menu-files/1790041039_194019-3.png",
+     "kind": "product_photo",
+     "menu": []
+    },
+    {
+     "name": "얼그레이 휘낭시에.png",
+     "fid": "F0C3C2G2N6R",
+     "from": "댓글",
+     "path": "menu-files/1790041039_194019-4.png",
+     "kind": "product_photo",
+     "menu": []
+    }
+   ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1790041042.221189",
+   "rc": 2,
+   "lr": "1790041096.700149",
    "rfx": 3,
    "status": "wait",
    "handler": null,
