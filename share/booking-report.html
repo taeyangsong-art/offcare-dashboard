@@ -85,74 +85,96 @@
     <div style="font-size:17px;color:var(--ink-80)">예약으로 접수됐지만 마감은 다른 유형으로 찍힙니다. 그 비중입니다.</div>
     <div class="keys">
       <div class="key">
-        <div class="kl">온보딩 이모지</div>
+        <div class="kl">온보딩으로 마감</div>
         <div class="kn">273<span style="font-size:20px;font-weight:400">건</span></div>
         <div class="kp">44.6%</div>
         <div class="kbar"><i style="width:44.6%"></i></div>
       </div><div class="key">
-        <div class="kl">AS 이모지</div>
+        <div class="kl">AS로 마감</div>
         <div class="kn">291<span style="font-size:20px;font-weight:400">건</span></div>
         <div class="kp">47.5%</div>
         <div class="kbar"><i style="width:47.5%"></i></div>
       </div><div class="key">
-        <div class="kl">2차부재</div>
+        <div class="kl">2차부재 (전체)</div>
         <div class="kn">40<span style="font-size:20px;font-weight:400">건</span></div>
         <div class="kp">6.5%</div>
         <div class="kbar"><i style="width:6.5%"></i></div>
       </div>
     </div>
 
+    <h2 style="margin-top:56px;font-size:21px">A. 마감 유형</h2>
+    <div style="font-size:14px;color:var(--ink-48)">서로 겹치지 않게 나눈 분류입니다. 합이 모수와 같습니다.</div>
     <table>
       <thead><tr><th>구분</th><th class="n">건수</th><th class="n">비중</th><th style="width:38%"></th></tr></thead>
       <tbody><tr>
-        <td>온보딩 이모지</td>
+        <td>온보딩으로 마감</td>
         <td class="n">273</td>
         <td class="n">44.6%</td>
         <td><span class="bar" style="width:115.96000000000001px"></span></td>
       </tr><tr>
-        <td>AS 이모지</td>
+        <td>AS로 마감</td>
         <td class="n">291</td>
         <td class="n">47.5%</td>
         <td><span class="bar" style="width:123.5px"></span></td>
       </tr><tr>
-        <td>2차부재</td>
-        <td class="n">40</td>
-        <td class="n">6.5%</td>
-        <td><span class="bar" style="width:16.900000000000002px"></span></td>
-      </tr><tr>
-        <td>1차부재</td>
-        <td class="n">58</td>
-        <td class="n">9.5%</td>
-        <td><span class="bar" style="width:24.7px"></span></td>
-      </tr><tr>
-        <td>명의변경 이모지</td>
+        <td>명의변경으로 마감</td>
         <td class="n">0</td>
         <td class="n">0.0%</td>
         <td><span class="bar" style="width:0px"></span></td>
       </tr><tr>
-        <td>메뉴등록 이모지</td>
+        <td>메뉴등록으로 마감</td>
         <td class="n">0</td>
         <td class="n">0.0%</td>
         <td><span class="bar" style="width:0px"></span></td>
       </tr><tr>
-        <td>배달 이모지</td>
+        <td>배달로 마감</td>
         <td class="n">0</td>
         <td class="n">0.0%</td>
         <td><span class="bar" style="width:0px"></span></td>
       </tr><tr>
-        <td>외주</td>
+        <td>외주로 마감</td>
         <td class="n">1</td>
         <td class="n">0.2%</td>
         <td><span class="bar" style="width:0.52px"></span></td>
       </tr><tr>
-        <td>이모지 없음(미처리)</td>
+        <td>미마감 · 2차부재</td>
+        <td class="n">39</td>
+        <td class="n">6.4%</td>
+        <td><span class="bar" style="width:16.64px"></span></td>
+      </tr><tr>
+        <td>미마감 · 1차부재</td>
+        <td class="n">3</td>
+        <td class="n">0.5%</td>
+        <td><span class="bar" style="width:1.3px"></span></td>
+      </tr><tr>
+        <td>미마감 · 이모지 없음</td>
         <td class="n">5</td>
         <td class="n">0.8%</td>
         <td><span class="bar" style="width:2.08px"></span></td>
+      </tr>
+      <tr><td style="font-weight:600">합계</td><td class="n" style="font-weight:600">612</td>
+        <td class="n" style="font-weight:600">모수와 일치</td><td></td></tr></tbody>
+    </table>
+
+    <h2 style="margin-top:56px;font-size:21px">B. 부재 동반</h2>
+    <div style="font-size:14px;color:var(--ink-48)">부재 이모지는 카테고리 이모지와 <strong>한 건에 같이</strong> 찍힙니다.
+      그래서 A 와 겹치고, A 의 합에는 포함되지 않습니다.</div>
+    <table>
+      <thead><tr><th>구분</th><th class="n">건수</th><th class="n">비중</th><th>내역</th></tr></thead>
+      <tbody><tr>
+        <td>2차부재 (전체)</td>
+        <td class="n">40</td>
+        <td class="n">6.5%</td>
+        <td><span class="tag">마감 안 됨 39</span> <span class="tag">AS 마감 1</span></td>
+      </tr><tr>
+        <td>1차부재 (전체)</td>
+        <td class="n">58</td>
+        <td class="n">9.5%</td>
+        <td><span class="tag">마감 안 됨 3</span> <span class="tag">AS 마감 30</span> <span class="tag">온보딩 마감 25</span></td>
       </tr></tbody>
     </table>
-    <div class="note">카테고리 이모지는 한 건에 하나만 인정합니다(먼저 발견된 것). 부재는 2차부재를 우선으로 세어
-      1차·2차가 겹쳐 잡히지 않습니다. 그래서 위 구분의 합이 모수를 넘지 않습니다.</div>
+    <div class="note">카테고리 이모지는 한 건에 하나만 인정합니다(먼저 발견된 것). 부재는 2차부재를 1차부재보다
+      우선해 세어 둘이 겹쳐 잡히지 않습니다.</div>
   </div>
 </section>
 
@@ -4042,7 +4064,7 @@
       · <strong>2차부재</strong>는 대시보드에 아예 적재되지 않습니다. 이 리포트에서만 볼 수 있는 수치입니다.<br>
       · 이모지가 하나도 없는 건은 <strong>이모지 없음(미처리)</strong> 으로 따로 셌습니다.
     </div>
-    <div class="meta">생성 2026-09-22 13:55 KST
+    <div class="meta">생성 2026-09-22 13:59 KST
       · scripts/booking-report.js</div>
   </div>
 </section>
