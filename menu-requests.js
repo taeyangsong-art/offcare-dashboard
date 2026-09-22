@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2378,
- "updatedAt": "2026-09-22 16:27",
+ "version": 2379,
+ "updatedAt": "2026-09-22 16:46",
  "days": 30,
  "items": [
   {
@@ -39,13 +39,58 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C4D333XDE",
+     "from": "댓글",
+     "path": "menu-files/1790060900_133479-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "빙수바보 빙식이",
+       "name": "애플망고 치즈 눈꽃빙수",
+       "price": 15500
+      },
+      {
+       "category": "빙수바보 빙식이",
+       "name": "슈퍼푸드 빙식이 빙수",
+       "price": 11900
+      },
+      {
+       "category": "빙수바보 빙식이",
+       "name": "로투스 빙수",
+       "price": 14900
+      },
+      {
+       "category": "빙수바보 빙식이",
+       "name": "첵스초코 눈꽃빙수",
+       "price": 14500
+      },
+      {
+       "category": "빙수바보 빙식이",
+       "name": "생딸기 바나나 눈꽃빙수",
+       "price": 15900
+      },
+      {
+       "category": "빙수바보 빙식이",
+       "name": "(신메뉴) 바나나 초코 눈꽃빙수",
+       "price": 15500
+      },
+      {
+       "category": "빙수바보 빙식이",
+       "name": "조리퐁 초코 눈꽃빙수",
+       "price": 14500
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [
     "*카테고리* \n빙수바보 빙식이\n\n바나나초코눈꽂빙수\n조리퐁쵸코빙수\n\n메뉴 뒤쪽으로 배치 부탁드립니다\n#2가지가 빠졌어요"
    ],
-   "rc": 2,
-   "lr": "1790062003.641929",
+   "rc": 5,
+   "lr": "1790063147.408229",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
