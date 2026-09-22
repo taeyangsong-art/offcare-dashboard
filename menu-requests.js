@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2382,
- "updatedAt": "2026-09-22 17:35",
+ "version": 2383,
+ "updatedAt": "2026-09-22 17:40",
  "days": 30,
  "items": [
   {
@@ -487,7 +487,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C3JURENUS",
      "from": "댓글",
-     "path": "menu-files/1790041039_194019-5.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -520,7 +519,8 @@ window.MENU_REQUESTS = {
        "name": "우유 변경",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1790041039_194019-5.png"
     },
     {
      "name": "image.png",
@@ -626,10 +626,11 @@ window.MENU_REQUESTS = {
     "쓰읍... 보내준 메뉴판이랑 키오스크랑 카테고리부터 아예 다름 흠. 빠진 메뉴만 확인 후 넣넣",
     "넹ㄴ넹 스몰굿 완료입니다~",
     "왜여 수정해달래용? 옵션??????",
-    "옵션생성만!"
+    "옵션생성만!",
+    "진짜 생성만! 해놨어융 완룡"
    ],
-   "rc": 9,
-   "lr": "1790065922.864279",
+   "rc": 11,
+   "lr": "1790066330.338879",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
