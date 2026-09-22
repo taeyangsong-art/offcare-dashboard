@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12423,
+  "version": 12424,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -195970,15 +195970,45 @@ window.SLACK_DATA = {
       }
     },
     "2026-09-22": {
-      "counts": {},
+      "counts": {
+        "extern": {
+          "김동욱": 1
+        },
+        "as": {
+          "김동욱": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "08:55",
+          "store": "경희한의원",
+          "biz": "2279602305",
+          "cat": "extern",
+          "emp": "김동욱",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
+        {
+          "time": "08:51",
+          "store": "루트로우(rootraw)",
+          "biz": "6522701845",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "관리번호 ? 문의",
+          "hw": "",
+          "intake": "online",
+          "note": "btr-1100 kis 일비문의로 안내완료"
+        }
+      ],
       "intake": {
-        "online": 0,
+        "online": 2,
         "offline": 0,
         "unknown": 0
       },
-      "updatedAt": "08:51"
+      "updatedAt": "09:00"
     }
   },
   "resp": {
@@ -196055,10 +196085,6 @@ window.SLACK_DATA = {
       "1790002839.560139": {
         "post": "1790002839.560139",
         "lastSeen": 1790022216.163
-      },
-      "1790034717.117919": {
-        "post": "1790034717.117919",
-        "lastSeen": 1790034850.725
       }
     },
     "days": {
@@ -259487,11 +259513,27 @@ window.SLACK_DATA = {
             "dmin": 8
           }
         ]
+      },
+      "2026-09-22": {
+        "cnt": 1,
+        "sumMin": 5.457618014017741,
+        "over": 0,
+        "items": [
+          {
+            "hm": "08:51",
+            "min": 5.5,
+            "store": "루트로우(rootraw)",
+            "biz": "6522701845",
+            "who": "김동욱",
+            "cat": "as",
+            "dmin": 5.5
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-22 08:54",
+    "at": "2026-09-22 09:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
