@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2381,
- "updatedAt": "2026-09-22 17:30",
+ "version": 2382,
+ "updatedAt": "2026-09-22 17:35",
  "days": 30,
  "items": [
   {
@@ -482,14 +482,154 @@ window.MENU_REQUESTS = {
      "kind": "product_photo",
      "menu": [],
      "path": "menu-files/1790041039_194019-4.png"
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3JURENUS",
+     "from": "댓글",
+     "path": "menu-files/1790041039_194019-5.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "",
+       "name": "일반 사이즈 옵션",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "에스프레소 샷 추가 (아샷추)",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "텀블러 사용",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "에스프레소 옵션",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "에스프레소 옵션",
+       "price": 0
+      },
+      {
+       "category": "",
+       "name": "우유 변경",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3M0G4V0R",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "스프레드",
+       "name": "잼+버터",
+       "price": 1000
+      },
+      {
+       "category": "아메리카노이벤트",
+       "name": "아메리카노(ICE)",
+       "price": 0
+      },
+      {
+       "category": "아메리카노이벤트",
+       "name": "아메리카노(HOT)",
+       "price": 0
+      },
+      {
+       "category": "우유 변경",
+       "name": "오트밀크로 변경",
+       "price": 500
+      },
+      {
+       "category": "빅사이즈 아이스 옵션",
+       "name": "1리터 보틀로 변경",
+       "price": 1000
+      },
+      {
+       "category": "아메리카노 선택",
+       "name": "아이스 (ICE)",
+       "price": 0
+      },
+      {
+       "category": "아메리카노 선택",
+       "name": "핫 (HOT)",
+       "price": 0
+      },
+      {
+       "category": "아메리카노 선택",
+       "name": "빅 사이즈 (ICE)",
+       "price": 1400
+      },
+      {
+       "category": "스프레드 구매",
+       "name": "크림치즈 스프레드",
+       "price": 1500
+      },
+      {
+       "category": "스프레드 구매",
+       "name": "블루베리 크림치즈 스프레드",
+       "price": 1500
+      },
+      {
+       "category": "에스프레소 옵션",
+       "name": "에스프레소 샷 추가(2샷)",
+       "price": 1000
+      },
+      {
+       "category": "에스프레소 옵션",
+       "name": "디카페인 샷 추가(2샷)",
+       "price": 1000
+      },
+      {
+       "category": "텀블러 사용",
+       "name": "텀블러 사용",
+       "price": 0
+      },
+      {
+       "category": "비닐캐리어 담기",
+       "name": "1구 캐리어 담기",
+       "price": 0
+      },
+      {
+       "category": "비닐캐리어 담기",
+       "name": "2구 캐리어 담기",
+       "price": 0
+      },
+      {
+       "category": "빅 사이즈 옵션",
+       "name": "연하게",
+       "price": 0
+      },
+      {
+       "category": "빅 사이즈 옵션",
+       "name": "샷추가",
+       "price": 1000
+      },
+      {
+       "category": "빅 사이즈 옵션",
+       "name": "디카페인으로 변경",
+       "price": 1500
+      }
+     ]
     }
    ],
    "datt": [],
    "replies": [
-    "쓰읍... 보내준 메뉴판이랑 키오스크랑 카테고리부터 아예 다름 흠. 빠진 메뉴만 확인 후 넣넣"
+    "쓰읍... 보내준 메뉴판이랑 키오스크랑 카테고리부터 아예 다름 흠. 빠진 메뉴만 확인 후 넣넣",
+    "넹ㄴ넹 스몰굿 완료입니다~",
+    "왜여 수정해달래용? 옵션??????",
+    "옵션생성만!"
    ],
-   "rc": 4,
-   "lr": "1790065819.573419",
+   "rc": 9,
+   "lr": "1790065922.864279",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
