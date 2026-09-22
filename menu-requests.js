@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2363,
- "updatedAt": "2026-09-22 13:22",
+ "version": 2364,
+ "updatedAt": "2026-09-22 13:26",
  "days": 30,
  "items": [
   {
@@ -20,9 +20,11 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1790050948.976179",
+   "replies": [
+    "메뉴 삭제 및 메뉴추가\n(단, 키오스크만 조정, 포스는 그대로 놔두세요)\n\n• 면 카테고리4종 전부 *삭제*\n*포스에 있는\n면 카테고리의\n• 넉넉 장칼국수 10,900 \n키오스크에 보이게 해주세요.\n\n• 비빔밥 카테고리의\n런치2종삭제"
+   ],
+   "rc": 2,
+   "lr": "1790050985.566649",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -5596,7 +5598,15 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "요아정인후점_배민_상품옵션_20260922.xlsx",
+     "fid": "F0C3BDATEJX",
+     "from": "댓글",
+     "path": "menu-files/1789797922_993969-0.xlsx",
+     "nj": 1
+    }
+   ],
    "datt": [],
    "replies": [
     "https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1789794001050779",
@@ -5604,8 +5614,8 @@ window.MENU_REQUESTS = {
     "그러면 CX팀이나 다른 팀 전부에도 공유 해주세요",
     "강철수비로 방어했지만... 뚫렸어요 ㅠ"
    ],
-   "rc": 19,
-   "lr": "1790045836.806409",
+   "rc": 20,
+   "lr": "1790050991.306039",
    "rfx": 3,
    "status": "wait",
    "handler": null,
