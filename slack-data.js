@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12469,
+  "version": 12470,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -195994,7 +195994,7 @@ window.SLACK_DATA = {
           "송태양": 3
         },
         "menu": {
-          "배선유": 4
+          "배선유": 5
         },
         "delivery": {
           "김현기": 1
@@ -196068,6 +196068,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "바쁜시간대라 통화 불가, 다시 연락준다고 함"
+        },
+        {
+          "time": "11:07",
+          "store": "강창구찹쌀진순대 오남점",
+          "biz": "8580303805",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "가격 수정",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! /"
         },
         {
           "time": "11:05",
@@ -196567,11 +196578,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 44,
+        "online": 45,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "11:20"
+      "updatedAt": "11:26"
     }
   },
   "resp": {
@@ -196649,9 +196660,17 @@ window.SLACK_DATA = {
         "post": "1790002839.560139",
         "lastSeen": 1790022216.163
       },
-      "1790039208.231169": {
-        "post": "1790039208.231169",
-        "lastSeen": 1790043684.088
+      "1790038908.859219": {
+        "post": "1790038908.859219",
+        "lastSeen": 1790044039.932
+      },
+      "1790038908.506169": {
+        "post": "1790038908.506169",
+        "lastSeen": 1790044039.932
+      },
+      "1790038608.680899": {
+        "post": "1790038608.680899",
+        "lastSeen": 1790044039.932
       }
     },
     "days": {
@@ -260316,7 +260335,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-22 11:21",
+    "at": "2026-09-22 11:27",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
