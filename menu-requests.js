@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2353,
- "updatedAt": "2026-09-22 10:39",
+ "version": 2354,
+ "updatedAt": "2026-09-22 10:40",
  "days": 30,
  "items": [
   {
@@ -23,39 +23,41 @@ window.MENU_REQUESTS = {
      "name": "스콘.png",
      "fid": "F0C3LL0CS5A",
      "from": "댓글",
-     "path": "menu-files/1790041039_194019-1.png",
      "kind": "product_photo",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1790041039_194019-1.png"
     },
     {
      "name": "바스크치즈케이크.png",
      "fid": "F0C3APFD9T5",
      "from": "댓글",
-     "path": "menu-files/1790041039_194019-2.png",
      "kind": "product_photo",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1790041039_194019-2.png"
     },
     {
      "name": "다크초코 월넛쿠키.png",
      "fid": "F0C3C2G2B8D",
      "from": "댓글",
-     "path": "menu-files/1790041039_194019-3.png",
      "kind": "product_photo",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1790041039_194019-3.png"
     },
     {
      "name": "얼그레이 휘낭시에.png",
      "fid": "F0C3C2G2N6R",
      "from": "댓글",
-     "path": "menu-files/1790041039_194019-4.png",
      "kind": "product_photo",
-     "menu": []
+     "menu": [],
+     "path": "menu-files/1790041039_194019-4.png"
     }
    ],
    "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1790041096.700149",
+   "replies": [
+    "쓰읍... 보내준 메뉴판이랑 키오스크랑 카테고리부터 아예 다름 흠. 빠진 메뉴만 확인 후 넣넣"
+   ],
+   "rc": 3,
+   "lr": "1790041184.683919",
    "rfx": 3,
    "status": "wait",
    "handler": null,
