@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12762,
+  "version": 12763,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -199633,7 +199633,7 @@ window.SLACK_DATA = {
     "2026-09-23": {
       "counts": {
         "as": {
-          "심성현": 9,
+          "심성현": 10,
           "송태양": 5,
           "김규빈": 4,
           "김현기": 8,
@@ -199662,6 +199662,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "12:32",
+          "store": "이로엔네일 iroen_nail",
+          "biz": "1727300629",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "프론트 네트워크 연결 불가 / 점검 부탁드립니다:감사합니다꾸벅:",
+          "hw": "",
+          "intake": "online",
+          "note": "업데이트 이후 네트워크 목록 없어진 현상 재부팅 후 정상 연결 확인 완료"
+        },
         {
           "time": "12:31",
           "store": "앙벨르",
@@ -200358,7 +200369,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 54,
+        "online": 55,
         "offline": 9,
         "unknown": 0
       },
@@ -200555,13 +200566,6 @@ window.SLACK_DATA = {
       "1790038608.680899": {
         "post": "1790038608.680899",
         "lastSeen": 1790108127.224
-      },
-      "1790134373.615299": {
-        "post": "1790134373.615299",
-        "lastSeen": 1790134888.632,
-        "r": 1,
-        "day": "2026-09-23",
-        "idx": 19
       }
     },
     "days": {
@@ -265832,14 +265836,15 @@ window.SLACK_DATA = {
             "store": "이로엔네일 iroen_nail",
             "biz": "1727300629",
             "who": "심성현",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 10
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-23 12:41",
+    "at": "2026-09-23 12:44",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
