@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2405,
- "updatedAt": "2026-09-23 14:00",
+ "version": 2406,
+ "updatedAt": "2026-09-23 14:04",
  "days": 30,
  "items": [
   {
@@ -24,8 +24,8 @@ window.MENU_REQUESTS = {
    "rc": 0,
    "lr": "",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "confirm",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1790139335676689"
   },
   {
@@ -49,11 +49,13 @@ window.MENU_REQUESTS = {
      "menu": []
     }
    ],
-   "replies": [],
-   "rc": 0,
-   "lr": "",
+   "replies": [
+    "매장번호밖에없어서 문자 불가"
+   ],
+   "rc": 1,
+   "lr": "1790139812.800429",
    "rfx": 3,
-   "status": "confirm",
+   "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1790138890725719"
   },
@@ -547,8 +549,8 @@ window.MENU_REQUESTS = {
    "rc": 4,
    "lr": "1790136384.719129",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1790136247556579"
   },
   {
