@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12756,
+  "version": 12757,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -199633,9 +199633,9 @@ window.SLACK_DATA = {
     "2026-09-23": {
       "counts": {
         "as": {
+          "김현기": 7,
           "심성현": 7,
           "김규빈": 3,
-          "김현기": 6,
           "김동욱": 7,
           "배선유": 1,
           "고경림": 6,
@@ -199662,6 +199662,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "12:11",
+          "store": "모아스뷰티",
+          "biz": "6132496201",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "유프 온보딩하였으나 테스트 출력시 글자 프린터가 안되어 확인부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "/ 매우높은확률로 용지를 거꾸로 넣으셨을거 같아요 / 감사합니다. 통화 완료된 점 확인하였습니다. / 아 제가 완료를 늦게 눌렀습니다 죄송합니다. / 아닙니다 감사합니다!"
+        },
         {
           "time": "12:05",
           "store": "푸른목장",
@@ -200292,7 +200303,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 48,
+        "online": 49,
         "offline": 9,
         "unknown": 0
       },
@@ -265705,7 +265716,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-23 12:17",
+    "at": "2026-09-23 12:21",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
