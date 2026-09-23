@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2414,
- "updatedAt": "2026-09-23 15:40",
+ "version": 2415,
+ "updatedAt": "2026-09-23 15:45",
  "days": 30,
  "items": [
   {
@@ -1131,8 +1131,8 @@ window.MENU_REQUESTS = {
    "rc": 2,
    "lr": "1790145329.281769",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "서상원",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1790145256937759"
   },
   {
@@ -1205,8 +1205,8 @@ window.MENU_REQUESTS = {
    "rc": 4,
    "lr": "1790145073.006289",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1790144213515159"
   },
   {
@@ -1226,11 +1226,11 @@ window.MENU_REQUESTS = {
     "냅둬유 내가할게염",
     "아래꺼 ㄱ"
    ],
-   "rc": 1,
-   "lr": "1790145556.670109",
+   "rc": 3,
+   "lr": "1790145583.327659",
    "rfx": 3,
-   "status": "wait",
-   "handler": null,
+   "status": "done",
+   "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1790141297045979"
   },
   {
