@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2408,
- "updatedAt": "2026-09-23 14:29",
+ "version": 2409,
+ "updatedAt": "2026-09-23 14:42",
  "days": 30,
  "items": [
   {
@@ -61920,37 +61920,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787550533596749"
-  },
-  {
-   "ts": "1787550023.237509",
-   "date": "2026-08-24",
-   "time": "14:40",
-   "store": "일상 가좌점",
-   "biz": "2977800578",
-   "pos": "",
-   "content": "메뉴 등록 요청드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "일상포차 신촌점_상품목록-260824144143.xlsx",
-     "fid": "F0BSA9H72KW",
-     "from": "댓글",
-     "path": "menu-files/1787550023_237509-0.xlsx",
-     "nj": 1
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "*일상포차 신촌점 / ···*\n\n등록된 메뉴를 가좌점으로 등록 요청\n\n아래 메뉴만 금액 수정 필요\n※ *소주 =  5,000원*"
-   ],
-   "rc": 4,
-   "lr": "1787550507.190729",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787550023237509"
   }
  ],
  "ocr": {
