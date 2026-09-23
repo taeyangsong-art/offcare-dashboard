@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12765,
+  "version": 12766,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -199633,10 +199633,10 @@ window.SLACK_DATA = {
     "2026-09-23": {
       "counts": {
         "as": {
+          "김현기": 9,
           "심성현": 10,
           "송태양": 5,
           "김규빈": 4,
-          "김현기": 8,
           "김동욱": 7,
           "배선유": 1,
           "고경림": 6
@@ -199662,6 +199662,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "12:50",
+          "store": "왔따쪽갈비 연산직영점",
+          "biz": "5010493257",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "배민 앱 재연동 요청 &gt; 피시 재부팅 후 연결 끊김 확인 부탁드립니다:감사합니다꾸벅:",
+          "hw": "",
+          "intake": "online",
+          "note": "배민 라이트 정상 실행 중 확인 완료"
+        },
         {
           "time": "12:32",
           "store": "이로엔네일 iroen_nail",
@@ -200369,11 +200380,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 55,
+        "online": 56,
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "12:50",
+      "updatedAt": "12:53",
       "voc": {
         "responses": 1,
         "install": {
@@ -200566,10 +200577,6 @@ window.SLACK_DATA = {
       "1790038608.680899": {
         "post": "1790038608.680899",
         "lastSeen": 1790108127.224
-      },
-      "1790135400.993529": {
-        "post": "1790135400.993529",
-        "lastSeen": 1790135423.752
       }
     },
     "days": {
@@ -265848,7 +265855,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-23 12:50",
+    "at": "2026-09-23 12:54",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
