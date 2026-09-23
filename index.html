@@ -612,6 +612,7 @@
   /* 카테고리별 응답·소요시간 (타일 하단 · 상세 창 상단) */
   .ov-tile .ov-rt{font-size:12.5px; color:var(--gray2); margin-top:8px; padding-top:8px; border-top:1px solid var(--line); display:flex; gap:10px; flex-wrap:wrap}
   .ov-tile .ov-rt b{color:var(--ink); font-weight:800}
+  .ov-tile .ov-parts{font-size:13px; color:var(--gray); margin-top:6px} .ov-tile .ov-parts b{color:var(--ink); font-weight:800}
   .rt-strip{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:10px 0 4px}
   .rt-box{border:1px solid var(--line); border-radius:12px; padding:10px 14px}
   .rt-box.clickable{cursor:pointer} .rt-box.clickable:hover{border-color:var(--c,var(--line))}
@@ -1574,6 +1575,12 @@ const OB_CAT = {key:'ob', name:'설치 OB', icon:'📞', color:'#5856d6'};
 // VOC 는 2026-09-01 DRI 가 CX팀으로 이관돼 우리 팀 처리 실적이 아니다 → 전체현황에서 제외.
 // (VOC 페이지·Monthly·저점 모니터링·관리 탭 통계에는 그대로 남는다)
 const OV_CHART_CATS = [...WORK_CATS, OB_CAT];
+/* 전체현황 타일 묶음 — 미설치도 온보딩이라 온보딩 타일에 합쳐 '온보딩 N + 미설치 M' 으로 보여 준다.
+ * 데이터(counts·done)의 카테고리는 그대로 나뉘어 있고(원격 총 건수는 WORK_CATS 합이라 영향 없음),
+ * 타일·카테고리 상세·카테고리별 응답/소요시간에서만 묶는다. 묶인 쪽(미설치)은 따로 타일을 만들지 않는다. */
+const TILE_GROUPS = {onboarding:['onboarding','nosetup']};
+const TILE_HIDDEN = new Set(Object.values(TILE_GROUPS).flat().filter(k=>!TILE_GROUPS[k]));
+const catMembers = key => TILE_GROUPS[key] || [key];
 const RESP_EXCL_CATS = ['transfer','menu','delivery','booking'];   // 응답시간은 '순수 AS' 적재 — 명의변경·메뉴등록·배달·예약 제외
 // 응답시간(요청→첫 확인) 폴링 집계. 날짜 배열만 받으므로 선택 기간·최근 7일·최근 30일에 그대로 재사용한다
 function respStats(dates){
@@ -1621,7 +1628,7 @@ function respItemsOf(dates){
   return ovShift==='night' ? out.filter(x=>isNightTime(x.hm)) : out;
 }
 function catRespStats(cat, items){
-  const all=items.filter(x=>x.cat===cat), r=all.filter(x=>x.min!=null), dn=all.filter(x=>x.dmin!=null);   // git 복원분은 응답(min) 없음
+  const mem=catMembers(cat), all=items.filter(x=>mem.includes(x.cat)), r=all.filter(x=>x.min!=null), dn=all.filter(x=>x.dmin!=null);   // git 복원분은 응답(min) 없음
   const avg=(a,k)=>a.length?Math.round(a.reduce((s,x)=>s+(x[k]||0),0)/a.length):0;
   return {rCnt:r.length, rAvg:avg(r,'min'), over:r.length?Math.round(r.filter(x=>(x.min||0)>30).length/r.length*100):0,
           dCnt:dn.length, dAvg:avg(dn,'dmin')};
@@ -4953,7 +4960,13 @@ function renderOverview(){
   // VOC 처리 = 완료일(doneDate)이 이 기간인 모든 VOC(저점+칭찬) — 완료한 날짜 기준
   const vocDoneCur = ovVocDone(viewDates), vocDonePrv = ovVocDone(prevDates);
   const vocAttr = vocDoneCur.cnt, vocAttrPrev = vocDonePrv.cnt;
-  const catTotals = workCatTotals;   // VOC 타일 제외 (CX팀 이관) — vocTot/vocPrevN 은 아래 저점 알림에서 계속 쓴다
+  // VOC 타일 제외 (CX팀 이관) — vocTot/vocPrevN 은 아래 저점 알림에서 계속 쓴다
+  // 온보딩 타일 = 온보딩 + 미설치 (TILE_GROUPS). parts 는 타일 안 내역 줄용
+  const catTotals = workCatTotals.filter(c=>!TILE_HIDDEN.has(c.key)).map(c=>{
+    const mem=catMembers(c.key); if(mem.length<2) return c;
+    const parts=mem.map(k=>workCatTotals.find(x=>x.key===k)).filter(Boolean);
+    return {...c, total:parts.reduce((a,x)=>a+x.total,0), prev:parts.reduce((a,x)=>a+x.prev,0), parts};
+  });
   /* 설치 OB — 시트(설치일정 확인해주세요) D열 기준.
    * '원격 총 건수' 에는 넣지 않고, 직원별 처리건수·랭킹·MVP 에만 넣는다(사용자 결정).
    * 원격 인입으로 들어온 건이 아니라서 총 건수에 섞으면 인입량이 부풀지만, 담당자가 실제로
@@ -5086,6 +5099,7 @@ function renderOverview(){
         <div class="ov-tile clickable" style="--c:${c.color}" onclick="showDoneDetail('cat','${c.key}')" title="클릭 → 상호·사업자 조회">
           <div class="ov-name"><span class="ov-ic">${c.icon}</span>${c.name}<span class="ov-drill-ic">🔎</span></div>
           <div class="ov-val">${c.total}<small>건</small></div>
+          ${c.parts?`<div class="ov-parts">${c.parts.map(p=>`${p.name} <b>${p.total}</b>건`).join(' + ')}</div>`:''}
           ${deltaHTML(c.total, c.prev)}
           ${(()=>{ const st=catRespStats(c.key, ovRespItems);
             return `<div class="ov-rt" title="응답 = 요청 → 첫 확인 이모지 · 소요 = 요청 → 완료 이모지 (10분 폴링 근사) · 클릭 → 상세"><span>⏱️ 응답 ${st.rCnt?`<b>${st.rAvg}</b>분`:'—'}</span><span>🛠️ 소요 ${st.dCnt?`<b>${st.dAvg}</b>분`:'—'}</span></div>`; })()}
@@ -5221,10 +5235,10 @@ function showDoneDetail(mode, key){
   // 야간 탭에서는 obItems 가 시각 정보를 못 주므로 아예 넣지 않는다(집계에서도 빠져 있어 숫자가 맞는다).
   const pushOb=(filter)=>{ if(ovShift==='night') return; obItems(dates).forEach(x=>{ if(filter&&!filter(x)) return; items.push({time:'',store:x.status||'(상태 미기재)',biz:'',emp:x.handler,cat:'ob',date:x._date,st:'처리',nt:false}); }); };
   if(mode==='cat'){
-    title = catLabelOf(key)+' 처리 상세';
+    title = catMembers(key).length>1 ? catMembers(key).map(catLabelOf).join('+')+' 처리 상세' : catLabelOf(key)+' 처리 상세';
     if(key==='voc'){ pushVocDone(); }
     else if(key==='ob'){ pushOb(); }
-    else { dates.forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.cat===key) items.push({time:x.time,store:x.store,biz:x.biz,emp:x.emp,cat:x.cat,date:d,st:'처리'}); })); }
+    else { const mem=catMembers(key); dates.forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(mem.includes(x.cat)) items.push({time:x.time,store:x.store,biz:x.biz,emp:x.emp,cat:x.cat,date:d,st:'처리'}); })); }
   } else if(mode==='emp'){
     title = key+' 처리 상세';
     dates.forEach(d=>((slackDay(d)||{}).done||[]).forEach(x=>{ if(x.emp===key) items.push({time:x.time,store:x.store,biz:x.biz,emp:x.emp,cat:x.cat,date:d,st:'처리'}); }));
@@ -5248,7 +5262,7 @@ function showDoneDetail(mode, key){
     adjEntries(dates).forEach(x=>{ if(filter && !filter(x)) return;
       items.push({time:'', date:x.date, cat:x.cat, emp:x.emp, st:'보정', biz:'',
         store:`⚖️ ${x.n>0?'+':''}${x.n}건 · ${x.why||'사유 미기재'}${x.by?' ('+x.by+')':''}`}); }); };
-  if(mode==='cat')      pushAdj(x=>x.cat===key);
+  if(mode==='cat')      pushAdj(x=>catMembers(key).includes(x.cat));
   else if(mode==='emp') pushAdj(x=>x.emp===key);
   else if(mode==='etc') pushAdj(x=>!EMPLOYEES.includes((x.emp||'').trim()));
   else                  pushAdj();
@@ -5314,7 +5328,7 @@ function showRespDetail(days, sort, cat){
   respDetailLabel = typeof days==='number' ? `최근 ${days}일` : ovRangeText();
   if(cat){   // 카테고리 상세 창에서 연 경우 — 그 카테고리 건만(최종 카테고리 기준)
     respDetailLabel = catLabelOf(cat)+' · '+respDetailLabel;
-    respDetailItems = respItemsOf(dates).filter(x=>x.cat===cat);
+    respDetailItems = respItemsOf(dates).filter(x=>catMembers(cat).includes(x.cat));
     const old=document.getElementById('respModal'); if(old) old.remove();   // 카테고리 창 위에 새로 띄운다
     respSortMode = sort || 'fast';
     renderRespModal(); return;
