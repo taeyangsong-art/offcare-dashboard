@@ -198,23 +198,51 @@ function loadElapsedIndex() {
   return { idx, n, withDone, firstDone, lastDone, refBy };
 }
 
+/* 폴링 추적이 없던 기간(2026-08-31 이전)은 scripts/mine-emoji-times.js 가
+   git 히스토리의 slack-data.js 스냅샷을 비교해 복원해 둔 값을 쓴다. 키 모양은 추적과 같다.
+   두 소스가 겹치면 추적값을 먼저 쓴다(그때그때 관찰한 값이 1차 자료다). */
+const BACKFILL_SRC = path.join(__dirname, '..', 'share', 'emoji-times.json');
+function loadBackfill() {
+  if (!fs.existsSync(BACKFILL_SRC)) return null;
+  try {
+    const j = JSON.parse(fs.readFileSync(BACKFILL_SRC, 'utf8'));
+    const n = Object.keys(j.items || {}).length;
+    if (!n) return null;
+    console.log(`  복원된 완료시각 ${n}건 (${j.from} ~ ${j.to}, ${j.builtAt || '?'} 생성)`);
+    return j;
+  } catch (e) { console.error('  ⚠ emoji-times.json 읽기 실패: ' + e.message); return null; }
+}
+
 const prevDate = d => {
   const t = new Date(dateUTC(d) - 86400000);
   return `${t.getUTCFullYear()}-${pad(t.getUTCMonth() + 1)}-${pad(t.getUTCDate())}`;
 };
 // 행에 착수(ackMin)·소요(doneMin) 붙이기. 못 찾으면 그대로 둔다(빈칸으로 표시된다).
-function attachElapsed(row, el) {
-  if (!el) return;
+function attachElapsed(row, el, bf) {
   const hm = row.stamp.slice(11);
   const tails = [row.biz, (row.store || '').slice(0, 30)].filter(Boolean);
   // 적재 쪽 '업무일'은 00:00~00:59 글을 전날로 넘긴다 → 달력 날짜와 하루 전을 모두 본다
-  for (const day of [row.date, prevDate(row.date)]) {
-    for (const t of tails) {
-      const it = el.idx[day + '|' + hm + '|' + t];
+  const days = [row.date, prevDate(row.date)];
+  if (el) {
+    for (const day of days) {
+      for (const t of tails) {
+        const it = el.idx[day + '|' + hm + '|' + t];
+        if (!it) continue;
+        if (it.min != null) row.ackMin = it.min;
+        if (it.dmin != null) row.doneMin = it.dmin;
+        break;
+      }
+      if (row.ackMin != null || row.doneMin != null) break;
+    }
+  }
+  if (row.doneMin == null && bf) {            // 추적에 없으면 git 히스토리에서 복원한 값으로
+    for (const day of days) {
+      const it = bf.items[day + '|' + hm + '|' + (row.biz || '')];
       if (!it) continue;
-      if (it.min != null) row.ackMin = it.min;
-      if (it.dmin != null) row.doneMin = it.dmin;
-      return;
+      row.doneMin = it.done;
+      row.doneFrom = 'git';                   // 출처를 남긴다 — 페이지에서 오차폭을 다르게 안내한다
+      row.doneBand = Math.round((it.hi - it.lo) * 10) / 10;
+      break;
     }
   }
 }
@@ -236,6 +264,7 @@ function timeStat(list, pick) {
 (async () => {
   const userIdx = await loadUsers();
   const elapsed = loadElapsedIndex();   // 이모지까지 걸린 시간(대시보드 폴링 추적치)
+  const backfill = loadBackfill();      // 추적 이전 기간은 git 히스토리에서 복원한 값으로 메운다
   // 작성자 이름 — 사람이면 프로필 이름, 워크플로/봇이면 봇 이름. 원본 표에 그대로 보여준다.
   const authorOf = m => TARGET_IDS[m.user] || (userIdx[m.user] && userIdx[m.user].label)
     || m.username || (m.bot_profile && m.bot_profile.name) || '';
@@ -302,7 +331,7 @@ function timeStat(list, pick) {
         emp: emp || '', abs1, abs2, dup, invalid,
         emojis: names.join(' '), who, owner, booked,
       };
-      attachElapsed(row, elapsed);   // 착수(ackMin)·소요(doneMin) — 찾지 못하면 빈칸
+      attachElapsed(row, elapsed, backfill);   // 착수(ackMin)·소요(doneMin) — 찾지 못하면 빈칸
       if (booked) rows.push(row);
       if (owner) nsRows.push(row);
     }
@@ -396,6 +425,15 @@ function timeStat(list, pick) {
     doneAll: timeStat(nsLive.filter(closed), r => r.doneMin),   // 마감된 건 전체
     ack: timeStat(nsLive, r => r.ackMin),                       // 착수(첫 확인 이모지)까지 — dmin 없는 기간에도 남는다
     ackTarget: nsLive.length,
+    // 소요시간이 어디서 왔는지 — 폴링 추적(그때그때 관찰) vs git 히스토리 복원
+    mix: {
+      tracker: nsLive.filter(r => r.doneMin != null && r.doneFrom !== 'git').length,
+      git: nsLive.filter(r => r.doneFrom === 'git').length,
+      band: (() => {
+        const b = nsLive.filter(r => r.doneFrom === 'git' && r.doneBand != null).map(r => r.doneBand);
+        return b.length ? Math.round(b.reduce((a, c) => a + c, 0) / b.length * 10) / 10 : null;
+      })(),
+    },
   };
   ns.unmatched = TARGETS.filter(n => !nsRows.some(r => r.owner === n));   // 한 건도 못 찾은 이름
   ns.authorTop = Object.entries(authorTally).sort((a, b) => b[1] - a[1]).slice(0, 15);
@@ -869,11 +907,13 @@ ${ns.people.some(p => p.onbTime.n) ? `
       </tr>`).join('')}</tbody>
     </table>` : ''}
 
-    <div class="note">슬랙은 <strong>이모지가 찍힌 시각을 API 로 주지 않습니다</strong>.
-      그래서 대시보드 집계가 10분마다 돌며 이모지가 새로 붙은 걸 발견한 시점으로 역산한 값입니다 — <strong>오차 ±10분</strong>.<br>
-      · 소요시간 추적은 <strong>${esc(ns.time.src.firstDone || '-')}</strong> 적재분부터 남아 있어, 그 전 기간은 표본이 비거나 매우 적습니다
-        (전체 추적 ${ns.time.src.n.toLocaleString()}건 중 소요시간 보유 ${ns.time.src.withDone.toLocaleString()}건).<br>
-      · 새벽 01:00~05:29 에 올라온 글, 집계가 처음 봤을 때 이미 이모지가 있던 글, 올린 사람이 직접 처리한 글은 추적에서 빠집니다.<br>
+    <div class="note">슬랙은 <strong>이모지가 찍힌 시각을 API 로 주지 않습니다</strong>. 그래서 두 가지로 역산했습니다.<br>
+      · <strong>폴링 추적</strong> ${ns.time.mix.tracker.toLocaleString()}건 — 대시보드 집계가 10분마다 돌며
+        이모지가 새로 붙은 걸 발견한 시점으로 역산 (오차 ±10분, ${esc(ns.time.src.firstDone || '-')} 적재분부터).<br>
+      ${ns.time.mix.git ? `· <strong>git 히스토리 복원</strong> ${ns.time.mix.git.toLocaleString()}건 — 집계 데이터(slack-data.js)가
+        하루 200번씩 커밋돼 있어, 그 스냅샷들을 비교해 '완료 목록에 처음 등장한 구간'으로 역산
+        (평균 오차폭 ${ns.time.mix.band != null ? ns.time.mix.band : '-'}분). 살아 있는 추적값과 맞춰 본 결과 차이 중앙값 2.4분이었습니다.<br>` : ''}
+      · 새벽 01:00~05:29 에 올라온 글, 관찰을 시작했을 때 이미 이모지가 찍혀 있던 글은 시각을 알 수 없어 표본에서 빠집니다.<br>
       · 그래서 <strong>표본 &lt; 대상</strong> 입니다. 위 표의 '표본' 열이 실제로 시간을 재 본 건수입니다.</div>
 ${refTable}
 ` : `
