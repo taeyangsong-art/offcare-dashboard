@@ -1574,13 +1574,15 @@ const CHART_CATS = [...WORK_CATS, VOC_CAT];
 const OB_CAT = {key:'ob', name:'설치 OB', icon:'📞', color:'#5856d6'};
 // VOC 는 2026-09-01 DRI 가 CX팀으로 이관돼 우리 팀 처리 실적이 아니다 → 전체현황에서 제외.
 // (VOC 페이지·Monthly·저점 모니터링·관리 탭 통계에는 그대로 남는다)
-const OV_CHART_CATS = [...WORK_CATS, OB_CAT];
-/* 전체현황 타일 묶음 — 미설치도 온보딩이라 온보딩 타일에 합쳐 '온보딩 N + 미설치 M' 으로 보여 준다.
- * 데이터(counts·done)의 카테고리는 그대로 나뉘어 있고(원격 총 건수는 WORK_CATS 합이라 영향 없음),
- * 타일·카테고리 상세·카테고리별 응답/소요시간에서만 묶는다. 묶인 쪽(미설치)은 따로 타일을 만들지 않는다. */
+const OV_CHART_CATS = [...WORK_CATS.filter(c=>c.key!=='nosetup'), OB_CAT];   // 미설치는 온보딩에 합쳐 그린다(아래 EMP_CATS 와 같은 순서)
+/* 온보딩 묶음 — 미설치도 온보딩이다. 데이터(counts·done)의 카테고리는 나뉜 채로 두고(원격 총 건수는 WORK_CATS 합이라 영향 없음),
+ *  · 전체현황 온보딩 타일·그 상세·응답/소요시간: 온보딩 + 미설치 합산, 타일에 '온보딩 N + 미설치 M' 내역
+ *  · 미설치 타일: 별도로 둔다 (미설치건만의 응답·소요시간을 보려고)
+ *  · 직원별·카테고리별 표와 직원별 차트·범례: 미설치 칸 없이 온보딩 칸에 합친다 (EMP_CATS) */
 const TILE_GROUPS = {onboarding:['onboarding','nosetup']};
-const TILE_HIDDEN = new Set(Object.values(TILE_GROUPS).flat().filter(k=>!TILE_GROUPS[k]));
+const GROUPED_INTO = new Set(Object.values(TILE_GROUPS).flat().filter(k=>!TILE_GROUPS[k]));   // 다른 칸에 합쳐지는 카테고리
 const catMembers = key => TILE_GROUPS[key] || [key];
+const EMP_CATS = WORK_CATS.filter(c=>!GROUPED_INTO.has(c.key));
 const RESP_EXCL_CATS = ['transfer','menu','delivery','booking'];   // 응답시간은 '순수 AS' 적재 — 명의변경·메뉴등록·배달·예약 제외
 // 응답시간(요청→첫 확인) 폴링 집계. 날짜 배열만 받으므로 선택 기간·최근 7일·최근 30일에 그대로 재사용한다
 function respStats(dates){
@@ -4962,7 +4964,7 @@ function renderOverview(){
   const vocAttr = vocDoneCur.cnt, vocAttrPrev = vocDonePrv.cnt;
   // VOC 타일 제외 (CX팀 이관) — vocTot/vocPrevN 은 아래 저점 알림에서 계속 쓴다
   // 온보딩 타일 = 온보딩 + 미설치 (TILE_GROUPS). parts 는 타일 안 내역 줄용
-  const catTotals = workCatTotals.filter(c=>!TILE_HIDDEN.has(c.key)).map(c=>{
+  const catTotals = workCatTotals.map(c=>{
     const mem=catMembers(c.key); if(mem.length<2) return c;
     const parts=mem.map(k=>workCatTotals.find(x=>x.key===k)).filter(Boolean);
     return {...c, total:parts.reduce((a,x)=>a+x.total,0), prev:parts.reduce((a,x)=>a+x.prev,0), parts};
@@ -4996,12 +4998,12 @@ function renderOverview(){
   const missRows=Object.entries(monthlyMissByEmp().cnt).sort((a,b)=>b[1]-a[1]).slice(0,5);
 
   const empRows = EMPLOYEES.map(e=>{
-    const cells = WORK_CATS.map(c=>ovCnt(c.key, viewDates, e));
+    const cells = EMP_CATS.map(c=>catMembers(c.key).reduce((a,k)=>a+ovCnt(k, viewDates, e),0));   // 미설치는 온보딩 칸에 합산
     const ob = obEmp[e]||0;
     return {emp:e, cells, ob, total:cells.reduce((a,b)=>a+b,0)+ob};   // total=업무처리 + 설치 OB (랭킹·MVP) — VOC 제외
   }).sort((a,b)=>b.total-a.total);
   // 기타(미등록 담당자 = 미지정·타파트 지원 등) — 랭킹/MVP·차트엔 미포함, 표에서 숫자만 일치시키는 집계 행
-  const etcCells = WORK_CATS.map((c,ci)=> Math.max(0, workCatTotals[ci].total - empRows.reduce((a,r)=>a+r.cells[ci],0)));
+  const etcCells = EMP_CATS.map((c,ci)=> Math.max(0, catMembers(c.key).reduce((a,k)=>a+(workCatTotals.find(x=>x.key===k)||{total:0}).total,0) - empRows.reduce((a,r)=>a+r.cells[ci],0)));
   const etcTotal = etcCells.reduce((a,b)=>a+b,0)+obEtc;
   const maxEmp = Math.max(1, ...empRows.map(r=>r.total));
   const maxCell = Math.max(1, ...empRows.flatMap(r=>[...r.cells, r.ob]), ...etcCells, obEtc);
@@ -5138,22 +5140,22 @@ function renderOverview(){
       </div>
       <div style="overflow-x:auto">
         <table class="matrix">
-          <thead><tr><th style="width:84px">직원</th>${WORK_CATS.map(c=>`<th class="num">${c.icon}<br>${c.name}</th>`).join("")}<th class="num ob-col">📞<br>설치 OB</th><th class="num tot">합계</th></tr></thead>
+          <thead><tr><th style="width:84px">직원</th>${EMP_CATS.map(c=>`<th class="num"${TILE_GROUPS[c.key]?` title="${catMembers(c.key).map(catLabelOf).join(' + ')}"`:''}>${c.icon}<br>${c.name}</th>`).join("")}<th class="num ob-col">📞<br>설치 OB</th><th class="num tot">합계</th></tr></thead>
           <tbody>
             ${empRows.map((r,i)=>`<tr>
               <td class="emp-name emp-click" onclick="showDoneDetail('emp','${r.emp}')" title="🔎 ${escapeHtml(r.emp)}님 처리 내역 보기">${medal(i)} ${r.emp}</td>
-              ${r.cells.map((n,ci)=>`<td class="num mcell" style="${n>0?`background:${hexA(WORK_CATS[ci].color,0.08+n/maxCell*0.30)}`:''}">${n||'<span class="zero">·</span>'}</td>`).join("")}
+              ${r.cells.map((n,ci)=>`<td class="num mcell" style="${n>0?`background:${hexA(EMP_CATS[ci].color,0.08+n/maxCell*0.30)}`:''}">${n||'<span class="zero">·</span>'}</td>`).join("")}
               <td class="num mcell ob-col"${r.ob>0?` onclick="event.stopPropagation();showObDetail()" style="cursor:pointer;background:${hexA('#5856d6',0.08+r.ob/maxCell*0.30)}" title="🔎 설치 OB 상세"`:''}>${r.ob||'<span class="zero">·</span>'}</td>
               <td class="num tot">${r.total}</td>
             </tr>`).join("")}
             ${etcTotal>0?`<tr class="etc-row" onclick="showDoneDetail('etc','')" style="cursor:pointer" title="🔎 미지정·타파트 지원 처리 내역 보기">
               <td class="emp-name" style="color:var(--gray2)">🧩 기타 <span style="font-size:11px">(미지정·타파트)</span></td>
-              ${etcCells.map((n,ci)=>`<td class="num mcell" style="${n>0?`background:${hexA(WORK_CATS[ci].color,0.06+n/maxCell*0.24)}`:''}">${n||'<span class="zero">·</span>'}</td>`).join("")}
+              ${etcCells.map((n,ci)=>`<td class="num mcell" style="${n>0?`background:${hexA(EMP_CATS[ci].color,0.06+n/maxCell*0.24)}`:''}">${n||'<span class="zero">·</span>'}</td>`).join("")}
               <td class="num mcell ob-col">${obEtc||'<span class="zero">·</span>'}</td>
               <td class="num tot">${etcTotal}</td>
             </tr>`:''}
           </tbody>
-          <tfoot><tr><td>합계</td>${workCatTotals.map(c=>`<td class="num">${c.total}</td>`).join("")}<td class="num ob-col">${obSum}</td><td class="num tot">${grandEmp}</td></tr></tfoot>
+          <tfoot><tr><td>합계</td>${EMP_CATS.map(c=>`<td class="num">${catMembers(c.key).reduce((a,k)=>a+(workCatTotals.find(x=>x.key===k)||{total:0}).total,0)}</td>`).join("")}<td class="num ob-col">${obSum}</td><td class="num tot">${grandEmp}</td></tr></tfoot>
         </table>
       </div>
       ${adjPublicList(viewDates)}
