@@ -1600,17 +1600,28 @@ function doneStats(dates){
  * resp 표본의 cat 은 '처음 확인됐을 때' 이모지 기준이라, 같은 날 완료 목록(done)에 같은 건(시각|사업자)이 있으면
  * 그 cat(최종 적재 카테고리)으로 다시 붙인다. 미설치·예약처럼 규칙으로 정해지는 카테고리나
  * 나중에 이모지가 바뀐 건도 이렇게 맞춰진다. (위 AS·온보딩 카드는 기존대로 저장된 cat 을 쓴다) */
+/* 소요시간 git 복원분(done-backfill.js · scripts/mine-emoji-times.js) — 폴링 추적이 재지 못한 곳만 메운다.
+ *  · 추적 시작(2026-08-31) 이전 날짜: 전 카테고리
+ *  · 명의변경·메뉴등록·배달: 추적이 2026-09-24 전까지 이 셋을 버려 왔으므로 모든 날짜
+ * 응답시간(첫 확인)은 복원이 안 돼 min 이 없다 — 소요시간에만 쓰인다. 같은 건(시각|사업자)을 추적이 쟀으면 추적값이 우선. */
+const RESP_TRACK_START='2026-08-31', BACKFILL_ALWAYS=['transfer','menu','delivery'];
 function respItemsOf(dates){
   const R=(window.SLACK_DATA&&window.SLACK_DATA.resp&&window.SLACK_DATA.resp.days)||{};
+  const B=(window.DONE_BACKFILL&&window.DONE_BACKFILL.days)||{};
   const out=[];
-  for(const d of dates){ const arr=(R[d]&&R[d].items)||[]; if(!arr.length) continue;
-    const fin={}; ((slackDay(d)||{}).done||[]).forEach(x=>{ fin[(x.time||'')+'|'+(x.biz||'')]=x.cat; });
-    for(const it of arr) out.push(Object.assign({date:d}, it, {cat:fin[(it.hm||'')+'|'+(it.biz||'')]||it.cat||'as'}));
+  for(const d of dates){ const arr=(R[d]&&R[d].items)||[], bf=B[d]||[]; if(!arr.length&&!bf.length) continue;
+    const fin={}; ((slackDay(d)||{}).done||[]).forEach(x=>{ fin[(x.time||'')+'|'+(x.biz||'')]=x; });
+    const seen=new Set();
+    for(const it of arr){ const k=(it.hm||'')+'|'+(it.biz||''); seen.add(k); out.push(Object.assign({date:d}, it, {cat:(fin[k]&&fin[k].cat)||it.cat||'as'})); }
+    for(const [hm,biz,dmin,cat0] of bf){ const k=hm+'|'+biz; if(seen.has(k)) continue;
+      const fx=fin[k], cat=(fx&&fx.cat)||cat0||'as';
+      if(d>=RESP_TRACK_START && !BACKFILL_ALWAYS.includes(cat)) continue;
+      out.push({date:d, hm, biz, min:null, dmin, cat, store:fx?fx.store:'', who:fx?fx.emp:'', src:'git'}); }
   }
   return ovShift==='night' ? out.filter(x=>isNightTime(x.hm)) : out;
 }
 function catRespStats(cat, items){
-  const r=items.filter(x=>x.cat===cat), dn=r.filter(x=>x.dmin!=null);
+  const all=items.filter(x=>x.cat===cat), r=all.filter(x=>x.min!=null), dn=all.filter(x=>x.dmin!=null);   // git 복원분은 응답(min) 없음
   const avg=(a,k)=>a.length?Math.round(a.reduce((s,x)=>s+(x[k]||0),0)/a.length):0;
   return {rCnt:r.length, rAvg:avg(r,'min'), over:r.length?Math.round(r.filter(x=>(x.min||0)>30).length/r.length*100):0,
           dCnt:dn.length, dAvg:avg(dn,'dmin')};
@@ -5322,10 +5333,10 @@ function renderRespModal(){
   const val = x => DUR ? (x.dmin||0) : (x.min||0);
   const asc = respSortMode==='fast'||respSortMode==='dfast';
   // 소요시간 보기에서는 아직 완료 이모지가 안 찍힌 건(dmin 없음)을 빼야 평균이 왜곡되지 않는다
-  const base = DUR ? respDetailItems.filter(x=>x.dmin!=null) : respDetailItems;
+  const base = DUR ? respDetailItems.filter(x=>x.dmin!=null) : respDetailItems.filter(x=>x.min!=null);   // git 복원분은 응답시간이 없다
   const items=base.slice().sort((a,b)=> asc ? (val(a)-val(b)) : (val(b)-val(a)));
   const avg=items.length?Math.round(items.reduce((a,x)=>a+val(x),0)/items.length):0;
-  const rows=items.length? items.map((x,i)=>`<tr class="dm-row" data-k="${((x.store||'')+' '+(x.biz||'')).toLowerCase()}"><td class="dm-num">${i+1}</td><td class="trow-time">${fmtShort(x.date)}<br>${escapeHtml(x.hm||'')}</td><td style="font-weight:800;color:${x.min>30?'var(--red)':'var(--green)'}">${x.min}분</td><td style="font-weight:700;color:var(--ink-soft)">${x.dmin!=null?`${x.dmin}분`:'<span style="color:var(--gray2)">—</span>'}</td><td class="emp-name">${escapeHtml(x.store||'-')}</td><td>${x.cat?catChip(x.cat):'<span style="color:var(--gray2)">—</span>'}</td><td class="dm-emp">${escapeHtml(x.who||'-')}</td></tr>`).join('')
+  const rows=items.length? items.map((x,i)=>`<tr class="dm-row" data-k="${((x.store||'')+' '+(x.biz||'')).toLowerCase()}"><td class="dm-num">${i+1}</td><td class="trow-time">${fmtShort(x.date)}<br>${escapeHtml(x.hm||'')}</td><td style="font-weight:800;color:${x.min>30?'var(--red)':'var(--green)'}">${x.min!=null?`${x.min}분`:'<span style="color:var(--gray2);font-weight:600" title="git 기록으로 복원한 소요시간 — 응답시간은 없음">—</span>'}</td><td style="font-weight:700;color:var(--ink-soft)">${x.dmin!=null?`${x.dmin}분`:'<span style="color:var(--gray2)">—</span>'}</td><td class="emp-name">${escapeHtml(x.store||'-')}</td><td>${x.cat?catChip(x.cat):'<span style="color:var(--gray2)">—</span>'}</td><td class="dm-emp">${escapeHtml(x.who||'-')}</td></tr>`).join('')
     : `<tr><td colspan="7" style="text-align:center;color:var(--gray2);padding:22px">아직 측정된 응답 건이 없습니다.<br><span style="font-size:12px">배포 후 새로 인입·확인된 건부터 순차 집계됩니다.</span></td></tr>`;
   let el=document.getElementById('respModal'); if(!el){ el=document.createElement('div'); el.id='respModal'; el.className='detail-overlay'; el.onclick=e=>{ if(e.target===el) el.remove(); }; document.body.appendChild(el); }
   el.innerHTML=`<div class="detail-box"><div class="detail-head"><h3>${DUR?'🛠️ 소요시간':'⏱️ 응답시간'} 상세${respDetailLabel?` · ${escapeHtml(respDetailLabel)}`:''} <span class="cnt-badge">${items.length}건 · 평균 ${avg}분</span></h3><button class="detail-x" onclick="document.getElementById('respModal').remove()">✕</button></div>
@@ -7079,7 +7090,9 @@ function loadData(file, cb){
   })(0);
 }
 // 최초 로드(둘 다) → 부팅. 데이터 실패해도 앱은 뜸.
-loadData("slack-data.js", function(){ loadData("calendar-data.js", function(){ loadData("duty-data.js", function(){ boot(); }); }); });
+loadData("slack-data.js", function(){ loadData("calendar-data.js", function(){ loadData("duty-data.js", function(){ boot();
+  // 소요시간 git 복원분 — 한 번 만든 뒤 안 바뀌는 과거 데이터라 부팅을 막지 않고 뒤에 받는다
+  loadData("done-backfill.js", function(ok){ if(ok && activeCat==="overview") renderWhenIdle(renderMain); }); }); }); });
 // 선택 날짜의 구글 캘린더 일정 배열 (없으면 [])
 function gcalDay(date){ return (window.GCAL_DATA&&window.GCAL_DATA.days&&window.GCAL_DATA.days[date])||[]; }
 function reloadSlackData(cb){ loadData("slack-data.js", cb); }
