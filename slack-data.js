@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12710,
+  "version": 12711,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -199621,6 +199621,7 @@ window.SLACK_DATA = {
     "2026-09-23": {
       "counts": {
         "as": {
+          "고경림": 1,
           "김동욱": 2,
           "송태양": 1
         },
@@ -199633,6 +199634,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:39",
+          "store": "제스트 하우스 (zest haus)",
+          "biz": "8675401007",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "쿠팡, 배민은 이미 사용줭, 땡겨요 연동 문의주시어 도움부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "태블릿 -토스포스 프로그램 사용중 토스포스 프로그램연동은 배달3사만 연동가능안내 완료 • 떙겨요 주문서 출력원할시에는 , 윈도우 기반기기 준비후 유선프린터 usb로 연결시 출력가능안내 완료 떙겨요 주문서 출력원할시에는 , 윈도우 기반기기 준비후 유선프린터 usb로 연결시 출력가능안내 완료"
+        },
         {
           "time": "09:30",
           "store": "나눔 중앙마트",
@@ -199690,11 +199702,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 3,
+        "online": 4,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:39"
+      "updatedAt": "09:45"
     }
   },
   "resp": {
@@ -199857,9 +199869,9 @@ window.SLACK_DATA = {
         "post": "1790038608.680899",
         "lastSeen": 1790108127.224
       },
-      "1790123954.750449": {
-        "post": "1790123954.750449",
-        "lastSeen": 1790123962.198
+      "1790124301.072419": {
+        "post": "1790124301.072419",
+        "lastSeen": 1790124320.519
       }
     },
     "days": {
@@ -264947,11 +264959,27 @@ window.SLACK_DATA = {
             "dmin": 12.3
           }
         ]
+      },
+      "2026-09-23": {
+        "cnt": 1,
+        "sumMin": 3.110134184360504,
+        "over": 0,
+        "items": [
+          {
+            "hm": "09:39",
+            "min": 3.1,
+            "store": "제스트 하우스 (zest haus)",
+            "biz": "8675401007",
+            "who": "고경림",
+            "cat": "as",
+            "dmin": 3.1
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-23 09:39",
+    "at": "2026-09-23 09:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
