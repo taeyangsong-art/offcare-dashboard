@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12755,
+  "version": 12756,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -199633,9 +199633,9 @@ window.SLACK_DATA = {
     "2026-09-23": {
       "counts": {
         "as": {
+          "심성현": 7,
           "김규빈": 3,
           "김현기": 6,
-          "심성현": 6,
           "김동욱": 7,
           "배선유": 1,
           "고경림": 6,
@@ -199662,6 +199662,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "12:05",
+          "store": "푸른목장",
+          "biz": "1120387859",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포스기가 계속 결제 중 다운되는 증상 발생한다고 하십니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "이번엔 연락을 받을텐데, 혹시라도 전화 못받으면 2차례 재연락 요청 주셨습니다. :꾸벅: 이번엔 연락을 받을텐데, 혹시라도 전화 못받으면 2차례 재연락 요청 주셨습니다. / 업데이트 완료 /"
+        },
         {
           "time": "12:01",
           "store": "킷사키즈나",
@@ -199804,7 +199815,7 @@ window.SLACK_DATA = {
           "req": "포스(pc)  프론트 온보딩 도움 요청 드립니다.",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "온보딩 완료"
         },
         {
           "time": "11:30",
@@ -200282,7 +200293,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 48,
-        "offline": 8,
+        "offline": 9,
         "unknown": 0
       },
       "updatedAt": "12:11"
@@ -200443,13 +200454,6 @@ window.SLACK_DATA = {
       "1790038608.680899": {
         "post": "1790038608.680899",
         "lastSeen": 1790108127.224
-      },
-      "1790132744.493529": {
-        "post": "1790132744.493529",
-        "lastSeen": 1790133327.914,
-        "r": 1,
-        "day": "2026-09-23",
-        "idx": 16
       }
     },
     "days": {
@@ -265693,14 +265697,15 @@ window.SLACK_DATA = {
             "store": "푸른목장",
             "biz": "1120387859",
             "who": "심성현",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 10.7
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-23 12:15",
+    "at": "2026-09-23 12:17",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
