@@ -609,6 +609,15 @@
   .ov-tile .ov-delta{font-size:12.5px; font-weight:700; margin-top:7px}
   .ov-tile .ov-delta.up{color:var(--green)} .ov-tile .ov-delta.down{color:var(--red)} .ov-tile .ov-delta.flat{color:var(--gray2)}
   .ov-tile .ov-delta span{color:var(--gray2); font-weight:500}
+  /* 카테고리별 응답·소요시간 (타일 하단 · 상세 창 상단) */
+  .ov-tile .ov-rt{font-size:12.5px; color:var(--gray2); margin-top:8px; padding-top:8px; border-top:1px solid var(--line); display:flex; gap:10px; flex-wrap:wrap}
+  .ov-tile .ov-rt b{color:var(--ink); font-weight:800}
+  .rt-strip{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:10px 0 4px}
+  .rt-box{border:1px solid var(--line); border-radius:12px; padding:10px 14px}
+  .rt-box.clickable{cursor:pointer} .rt-box.clickable:hover{border-color:var(--c,var(--line))}
+  .rt-box .rt-l{font-size:12.5px; color:var(--gray2); font-weight:600}
+  .rt-box .rt-v{font-size:24px; font-weight:800; margin-top:2px} .rt-box .rt-v small{font-size:13px; font-weight:600; color:var(--gray2); margin-left:3px}
+  .rt-box .rt-s{font-size:12px; color:var(--gray2)}
   .ov-tile.grand{background:linear-gradient(135deg,#0071e3,#4a9bff); border-left-color:#0060c0}
   .ov-tile.grand .ov-name{color:rgba(255,255,255,.9)}
   .ov-tile.grand .ov-val{color:#fff}
@@ -1585,6 +1594,26 @@ function doneStats(dates){
     cnt++; sum+=it.dmin;
   } }
   return {cnt, avg: cnt?Math.round(sum/cnt):0};
+}
+
+/* 카테고리별 응답·소요시간 — 전체현황 타일과 카테고리 상세 창에서 쓴다.
+ * resp 표본의 cat 은 '처음 확인됐을 때' 이모지 기준이라, 같은 날 완료 목록(done)에 같은 건(시각|사업자)이 있으면
+ * 그 cat(최종 적재 카테고리)으로 다시 붙인다. 미설치·예약처럼 규칙으로 정해지는 카테고리나
+ * 나중에 이모지가 바뀐 건도 이렇게 맞춰진다. (위 AS·온보딩 카드는 기존대로 저장된 cat 을 쓴다) */
+function respItemsOf(dates){
+  const R=(window.SLACK_DATA&&window.SLACK_DATA.resp&&window.SLACK_DATA.resp.days)||{};
+  const out=[];
+  for(const d of dates){ const arr=(R[d]&&R[d].items)||[]; if(!arr.length) continue;
+    const fin={}; ((slackDay(d)||{}).done||[]).forEach(x=>{ fin[(x.time||'')+'|'+(x.biz||'')]=x.cat; });
+    for(const it of arr) out.push(Object.assign({date:d}, it, {cat:fin[(it.hm||'')+'|'+(it.biz||'')]||it.cat||'as'}));
+  }
+  return ovShift==='night' ? out.filter(x=>isNightTime(x.hm)) : out;
+}
+function catRespStats(cat, items){
+  const r=items.filter(x=>x.cat===cat), dn=r.filter(x=>x.dmin!=null);
+  const avg=(a,k)=>a.length?Math.round(a.reduce((s,x)=>s+(x[k]||0),0)/a.length):0;
+  return {rCnt:r.length, rAvg:avg(r,'min'), over:r.length?Math.round(r.filter(x=>(x.min||0)>30).length/r.length*100):0,
+          dCnt:dn.length, dAvg:avg(dn,'dmin')};
 }
 
 // 공유(일정) 이벤트 유형
@@ -4973,6 +5002,7 @@ function renderOverview(){
   const RESP_TRENDS = [7,30].map(n=>({n, lab:`최근 ${n}일 평균`, st:respStats(lastNDays(n))}));
   const doneAgg = doneStats(viewDates);   // 요청 → 처리 완료(카테고리 이모지)까지
   const DONE_TRENDS = [7,30].map(n=>({n, lab:`최근 ${n}일 평균`, st:doneStats(lastNDays(n))}));
+  const ovRespItems = respItemsOf(viewDates);   // 카테고리 타일별 응답·소요시간
 
   document.getElementById("main").innerHTML = `
     <div class="page-head">
@@ -5046,6 +5076,8 @@ function renderOverview(){
           <div class="ov-name"><span class="ov-ic">${c.icon}</span>${c.name}<span class="ov-drill-ic">🔎</span></div>
           <div class="ov-val">${c.total}<small>건</small></div>
           ${deltaHTML(c.total, c.prev)}
+          ${(()=>{ const st=catRespStats(c.key, ovRespItems);
+            return `<div class="ov-rt" title="응답 = 요청 → 첫 확인 이모지 · 소요 = 요청 → 완료 이모지 (10분 폴링 근사) · 클릭 → 상세"><span>⏱️ 응답 ${st.rCnt?`<b>${st.rAvg}</b>분`:'—'}</span><span>🛠️ 소요 ${st.dCnt?`<b>${st.dAvg}</b>분`:'—'}</span></div>`; })()}
         </div>`).join("")}
       <div class="ov-tile ob${obCur?' clickable':''}" style="--c:#5856d6"${obCur?' onclick="showObDetail()"':''} title="구글시트 '⚒️설치일정 확인해주세요' 의 D열(확인여부)에 담당자 이름이 적히면 1건 · 이름을 처음 본 날 기준${obCur?' — 클릭하면 건별 상세':''}">
         <div class="ov-name"><span class="ov-ic">📞</span>설치 OB${obCur?'<span class="ov-drill-ic">🔎</span>':''}</div>
@@ -5211,9 +5243,16 @@ function showDoneDetail(mode, key){
   else                  pushAdj();
 
   if(ovShift==='night'){ items=items.filter(x=> x.cat==='voc' ? x.nt : isNightTime(x.time)); title='🌙 '+title; }
-  openDetailModal(title, items);
+  openDetailModal(title, items, (mode==='cat' && WORK_CATS.some(c=>c.key===key)) ? catRespStrip(key, dates) : '');
 }
-function openDetailModal(title, items){
+// 카테고리 상세 창 상단 — 이 카테고리의 평균 응답·소요시간. 누르면 건별 응답/소요시간 상세로.
+function catRespStrip(key, dates){
+  const st=catRespStats(key, respItemsOf(dates)), col=(WORK_CATS.find(c=>c.key===key)||{}).color||'';
+  const box=(on, lab, val, sub, sort)=>`<div class="rt-box${on?' clickable':''}" style="--c:${col}"${on?` onclick="showRespDetail(null,'${sort}','${key}')" title="클릭 → 건별 상세"`:''}>
+      <div class="rt-l">${lab}${on?' 🔎':''}</div><div class="rt-v">${on?`${val}<small>분</small>`:'<span style="font-size:16px;color:var(--gray2)">측정 건 없음</span>'}</div><div class="rt-s">${sub}</div></div>`;
+  return `<div class="rt-strip">${box(st.rCnt,'⏱️ 평균 응답시간',st.rAvg, st.rCnt?`${st.rCnt}건 기준 · 지연(30분↑) ${st.over}%`:'요청 → 첫 확인 이모지','fast')}${box(st.dCnt,'🛠️ 평균 소요시간',st.dAvg, st.dCnt?`${st.dCnt}건 기준`:'요청 → 완료 이모지','dslow')}</div>`;
+}
+function openDetailModal(title, items, extra){
   items.sort((a,b)=>((b.date||'')+(b.time||'')).localeCompare((a.date||'')+(a.time||'')));
   // VOC 행은 biz 칸에 사업자번호가 아닌 매장 ID(storeId)가 들어감 → 전부 VOC면 헤더를 '매장 ID'로 표기
   const idLabel = items.length && items.every(x=>x.cat==='voc') ? '매장 ID' : '사업자';
@@ -5221,6 +5260,7 @@ function openDetailModal(title, items){
     : `<tr><td colspan="7" style="text-align:center;color:var(--gray2);padding:22px">상세 데이터가 없습니다.<br><span style="font-size:12px">과거 일자는 <b>backfill</b> 워크플로 실행 후 표시됩니다.</span></td></tr>`;
   let el=document.getElementById('doneModal'); if(!el){ el=document.createElement('div'); el.id='doneModal'; el.className='detail-overlay'; el.onclick=e=>{ if(e.target===el) el.remove(); }; document.body.appendChild(el); }
   el.innerHTML=`<div class="detail-box"><div class="detail-head"><h3>${escapeHtml(title)} <span class="cnt-badge">${items.length}건</span></h3><button class="detail-x" onclick="document.getElementById('doneModal').remove()">✕</button></div>
+    ${extra||''}
     <input class="search-box" type="text" placeholder="상호명 또는 ${idLabel} 검색…" oninput="filterDoneModal(this.value)">
     <div class="detail-scroll"><table class="voc-table"><thead><tr><th style="width:34px">#</th><th style="width:52px">시간</th><th style="width:72px">상태</th><th style="width:88px">유형</th><th>상호</th><th style="width:110px">${idLabel}</th><th style="width:86px">담당</th></tr></thead><tbody id="doneModalBody">${rows}</tbody></table></div></div>`;
 }
@@ -5258,9 +5298,16 @@ function runStoreSearch(q){
 // ⏱️ 평균 응답시간 카드 클릭 → 건별 상세(올라온시간·응답분·담당), 응답 빠른순/느린순 정렬
 let respDetailItems=[]; let respSortMode='fast'; let respDetailLabel='';
 // days 를 주면 최근 N일(카드의 7일·30일 추세 행 클릭), 없으면 화면에서 선택한 기간
-function showRespDetail(days, sort){
+function showRespDetail(days, sort, cat){
   const dates = typeof days==='number' ? lastNDays(days) : ovDates();
   respDetailLabel = typeof days==='number' ? `최근 ${days}일` : ovRangeText();
+  if(cat){   // 카테고리 상세 창에서 연 경우 — 그 카테고리 건만(최종 카테고리 기준)
+    respDetailLabel = catLabelOf(cat)+' · '+respDetailLabel;
+    respDetailItems = respItemsOf(dates).filter(x=>x.cat===cat);
+    const old=document.getElementById('respModal'); if(old) old.remove();   // 카테고리 창 위에 새로 띄운다
+    respSortMode = sort || 'fast';
+    renderRespModal(); return;
+  }
   const R=(window.SLACK_DATA&&window.SLACK_DATA.resp&&window.SLACK_DATA.resp.days)||{};
   respDetailItems=[];
   for(const d of dates){ const arr=(R[d]&&R[d].items)||[]; for(const it of arr) respDetailItems.push(Object.assign({date:d}, it)); }

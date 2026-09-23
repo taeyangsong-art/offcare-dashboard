@@ -487,11 +487,10 @@ function trackResp(data, msgs, ch) {
       if (!responded) W[key] = { post: key, lastSeen: nowSec };
       continue;
     }
-    // 카테고리 판정(tallyInto 규칙). 응답·소요시간은 '순수 AS' 적재 → 명변·메뉴등록·배달·예약은 제외.
-    // (예약은 정해 둔 시각에 처리하므로 올린 뒤 기다린 시간이 응답 속도가 아니다)
+    // 카테고리 판정(tallyInto 규칙). 전 카테고리를 측정해 cat 과 함께 남긴다 — 대시보드가 카테고리별로 나눠 본다.
+    // (전체 'AS·온보딩' 카드는 대시보드의 RESP_EXCL_CATS 로 명변·메뉴등록·배달·예약을 뺀다)
     const emojiCat = workCatOf(names);
-    const catKey = names.includes('원격외주') ? 'extern' : (emojiCat || (ch && ch.defaultCat) || 'as');
-    if (catKey === 'transfer' || catKey === 'menu' || catKey === 'delivery' || catKey === 'booking') { delete W[key]; continue; }
+    const catKey = names.includes('원격외주') ? 'extern' : (isNoSetup(m) ? 'nosetup' : (emojiCat || (ch && ch.defaultCat) || 'as'));
     const day = kstDate(m.ts);
     if (!day) { delete W[key]; continue; }             // 운영시간 밖(01:00~05:30) — 표본에서 제외
     const mid = (w.lastSeen + nowSec) / 2;             // 이모지는 (lastSeen, now) 사이에 찍힘 → 중간값 추정
