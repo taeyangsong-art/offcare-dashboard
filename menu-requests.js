@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2412,
- "updatedAt": "2026-09-23 15:23",
+ "version": 2413,
+ "updatedAt": "2026-09-23 15:34",
  "days": 30,
  "items": [
+  {
+   "ts": "1790145256.937759",
+   "date": "2026-09-23",
+   "time": "15:34",
+   "store": "특별한 동물가게",
+   "biz": "2295900502",
+   "pos": "",
+   "content": "메뉴",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 1,
+   "lr": "1790145261.265249",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1790145256937759"
+  },
   {
    "ts": "1790144213.515159",
    "date": "2026-09-23",
@@ -18,13 +39,64 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "IMG_0363.jpg",
+     "fid": "F0C4NB0LLRW",
+     "from": "댓글",
+     "path": "menu-files/1790144213_515159-0.jpg",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "",
+       "name": "에스프레소",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "아메리카노",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "카페라떼",
+       "price": 6500
+      },
+      {
+       "category": "",
+       "name": "카푸치노",
+       "price": 6500
+      },
+      {
+       "category": "",
+       "name": "아포가토",
+       "price": 7000
+      },
+      {
+       "category": "",
+       "name": "허브티",
+       "price": 6000
+      },
+      {
+       "category": "",
+       "name": "마살라 차이",
+       "price": 7000
+      },
+      {
+       "category": "",
+       "name": "핫초콜렛",
+       "price": 7000
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [
-    "사진대기중"
+    "사진대기중",
+    "아포가토 제외 나머지 전부 아이스 가능"
    ],
-   "rc": 2,
-   "lr": "1790144252.096669",
+   "rc": 4,
+   "lr": "1790145073.006289",
    "rfx": 3,
    "status": "wait",
    "handler": null,
