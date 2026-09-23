@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12721,
+  "version": 12722,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -199632,6 +199632,7 @@ window.SLACK_DATA = {
           "김동욱": 1
         },
         "onboarding": {
+          "김동욱": 1,
           "송태양": 1,
           "고경림": 2
         }
@@ -199670,6 +199671,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "offline",
           "note": "터미널 단독 랜선으로 연결해 사용중인매장 랜선 연결을 하였으나, 인터넷 연결이안되는증상 • 터미널 이더넷 사용을 미사용 처리해놓으심 • 사용 설정후 정상 작동확인 터미널 이더넷 사용을 미사용 처리해놓으심 사용 설정후 정상 작동확인 / 앗 토스단말기라 하셔서 프론트인줄 알았어요 죄송합니당,, :개굴-죄송: 앗 토스단말기라 하셔서 프론트인줄 알았어요 죄송합니당"
+        },
+        {
+          "time": "10:00",
+          "store": "네일도 맑음",
+          "biz": "5706400821",
+          "cat": "onboarding",
+          "emp": "김동욱",
+          "req": "포프(휴대폰) 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "1차 부재 / 포프(태블릿) 온보딩 완료"
         },
         {
           "time": "10:00",
@@ -199772,7 +199784,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 9,
+        "online": 10,
         "offline": 3,
         "unknown": 0
       },
@@ -199939,23 +199951,12 @@ window.SLACK_DATA = {
         "post": "1790038608.680899",
         "lastSeen": 1790108127.224
       },
-      "1790125203.000799": {
-        "post": "1790125203.000799",
-        "lastSeen": 1790126480.258,
-        "r": 1,
-        "day": "2026-09-23",
-        "idx": 2
-      },
       "1790126353.947529": {
         "post": "1790126353.947529",
-        "lastSeen": 1790126480.258,
+        "lastSeen": 1790126719.939,
         "r": 1,
         "day": "2026-09-23",
         "idx": 4
-      },
-      "1790125204.498489": {
-        "post": "1790125204.498489",
-        "lastSeen": 1790126480.258
       }
     },
     "days": {
@@ -265073,7 +265074,8 @@ window.SLACK_DATA = {
             "store": "네일도 맑음",
             "biz": "5706400821",
             "who": "김동욱",
-            "cat": "as"
+            "cat": "onboarding",
+            "dmin": 23.3
           },
           {
             "hm": "10:02",
@@ -265097,13 +265099,13 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-23 10:21",
+    "at": "2026-09-23 10:25",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 4234,
+    "rows": 4235,
     "named": 926,
     "unknownName": 0,
     "beforeStart": 0,
