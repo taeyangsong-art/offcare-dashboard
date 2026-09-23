@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12731,
+  "version": 12732,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -199634,6 +199634,7 @@ window.SLACK_DATA = {
         },
         "onboarding": {
           "심성현": 1,
+          "김현기": 1,
           "고경림": 4,
           "김동욱": 1,
           "송태양": 1
@@ -199676,6 +199677,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": ""
+        },
+        {
+          "time": "10:45",
+          "store": "제이에프엠",
+          "biz": "4341902407",
+          "cat": "onboarding",
+          "emp": "김현기",
+          "req": "컴퓨터 + 프론트 + 프린터 온보딩",
+          "hw": "",
+          "intake": "online",
+          "note": "개인컴퓨터 온보딩 완"
         },
         {
           "time": "10:33",
@@ -199943,11 +199955,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 21,
+        "online": 22,
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "10:59"
+      "updatedAt": "11:03"
     }
   },
   "resp": {
@@ -200112,28 +200124,28 @@ window.SLACK_DATA = {
       },
       "1790127901.032539": {
         "post": "1790127901.032539",
-        "lastSeen": 1790128762.297,
+        "lastSeen": 1790128999.245,
         "r": 1,
         "day": "2026-09-23",
         "idx": 8
       },
-      "1790127900.873189": {
-        "post": "1790127900.873189",
-        "lastSeen": 1790128762.297,
-        "r": 1,
-        "day": "2026-09-23",
-        "idx": 9
-      },
       "1790128138.259589": {
         "post": "1790128138.259589",
-        "lastSeen": 1790128762.297,
+        "lastSeen": 1790128999.245,
         "r": 1,
         "day": "2026-09-23",
         "idx": 10
       },
       "1790128745.624859": {
         "post": "1790128745.624859",
-        "lastSeen": 1790128762.297
+        "lastSeen": 1790128999.245,
+        "r": 1,
+        "day": "2026-09-23",
+        "idx": 12
+      },
+      "1790128998.357629": {
+        "post": "1790128998.357629",
+        "lastSeen": 1790128999.245
       }
     },
     "days": {
@@ -265223,8 +265235,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-23": {
-        "cnt": 12,
-        "sumMin": 37.12761919895808,
+        "cnt": 13,
+        "sumMin": 39.380054879188535,
         "over": 0,
         "items": [
           {
@@ -265313,7 +265325,8 @@ window.SLACK_DATA = {
             "store": "제이에프엠",
             "biz": "4341902407",
             "who": "김현기",
-            "cat": "as"
+            "cat": "onboarding",
+            "dmin": 16.3
           },
           {
             "hm": "10:48",
@@ -265331,19 +265344,27 @@ window.SLACK_DATA = {
             "who": "김규빈",
             "cat": "as",
             "dmin": 5.6
+          },
+          {
+            "hm": "10:59",
+            "min": 2.3,
+            "store": "주식회사 이노",
+            "biz": "3108702852",
+            "who": "김규빈",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-23 10:59",
+    "at": "2026-09-23 11:03",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 4236,
+    "rows": 4237,
     "named": 926,
     "unknownName": 0,
     "beforeStart": 0,
