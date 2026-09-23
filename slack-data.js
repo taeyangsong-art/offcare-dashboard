@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12713,
+  "version": 12714,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -199620,6 +199620,10 @@ window.SLACK_DATA = {
     },
     "2026-09-23": {
       "counts": {
+        "extern": {
+          "서상원": 1,
+          "김동욱": 1
+        },
         "as": {
           "고경림": 1,
           "김동욱": 2,
@@ -199627,13 +199631,21 @@ window.SLACK_DATA = {
         },
         "onboarding": {
           "고경림": 1
-        },
-        "extern": {
-          "김동욱": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:02",
+          "store": "몽글",
+          "biz": "6144700973",
+          "cat": "extern",
+          "emp": "서상원",
+          "req": "외주",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "09:39",
           "store": "제스트 하우스 (zest haus)",
@@ -199702,11 +199714,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 4,
+        "online": 5,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "10:00"
+      "updatedAt": "10:02"
     }
   },
   "resp": {
@@ -199871,18 +199883,21 @@ window.SLACK_DATA = {
       },
       "1790124301.072419": {
         "post": "1790124301.072419",
-        "lastSeen": 1790125223.745,
+        "lastSeen": 1790125455.206,
         "r": 1,
         "day": "2026-09-23",
         "idx": 1
       },
       "1790125203.000799": {
         "post": "1790125203.000799",
-        "lastSeen": 1790125223.745
+        "lastSeen": 1790125455.206,
+        "r": 1,
+        "day": "2026-09-23",
+        "idx": 2
       },
-      "1790125204.498489": {
-        "post": "1790125204.498489",
-        "lastSeen": 1790125223.745
+      "1790125351.041519": {
+        "post": "1790125351.041519",
+        "lastSeen": 1790125455.206
       }
     },
     "days": {
@@ -264972,8 +264987,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-23": {
-        "cnt": 2,
-        "sumMin": 5.455743869145712,
+        "cnt": 3,
+        "sumMin": 7.730322221914928,
         "over": 0,
         "items": [
           {
@@ -264992,13 +265007,21 @@ window.SLACK_DATA = {
             "biz": "8690901449",
             "who": "송태양",
             "cat": "as"
+          },
+          {
+            "hm": "10:00",
+            "min": 2.3,
+            "store": "네일도 맑음",
+            "biz": "5706400821",
+            "who": "김동욱",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-23 10:00",
+    "at": "2026-09-23 10:04",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
