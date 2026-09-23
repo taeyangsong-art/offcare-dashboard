@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12739,
+  "version": 12740,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -200107,7 +200107,7 @@ window.SLACK_DATA = {
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "11:30"
+      "updatedAt": "11:32"
     }
   },
   "resp": {
@@ -200272,11 +200272,14 @@ window.SLACK_DATA = {
       },
       "1790130602.146959": {
         "post": "1790130602.146959",
-        "lastSeen": 1790130625.271
+        "lastSeen": 1790130849.245,
+        "r": 1,
+        "day": "2026-09-23",
+        "idx": 13
       },
-      "1790130600.242249": {
-        "post": "1790130600.242249",
-        "lastSeen": 1790130625.271
+      "1790130763.164179": {
+        "post": "1790130763.164179",
+        "lastSeen": 1790130849.245
       }
     },
     "days": {
@@ -265366,8 +265369,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-23": {
-        "cnt": 13,
-        "sumMin": 39.380054879188535,
+        "cnt": 14,
+        "sumMin": 41.63190555969874,
         "over": 0,
         "items": [
           {
@@ -265486,13 +265489,21 @@ window.SLACK_DATA = {
             "who": "김규빈",
             "cat": "as",
             "dmin": 16
+          },
+          {
+            "hm": "11:30",
+            "min": 2.3,
+            "store": "마이요거트립 인덕원점",
+            "biz": "3081553948",
+            "who": "김현기",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-23 11:30",
+    "at": "2026-09-23 11:34",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
