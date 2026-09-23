@@ -514,9 +514,7 @@ function renderHtml(d) {
   const refOnb = (ref && (ref.rows.find(r => r.key === 'onboarding') || {}).stat) || { n: 0, buckets: [] };
   // 참고 표 — 기간 표본이 있든 없든 항상 함께 둔다(기간 값과 전체 값을 나란히 읽게)
   const refTable = !ref || !refOnb.n ? '' : `
-    <h2 style="margin-top:${onbStat.n ? 48 : 56}px;font-size:21px">참고 · 추적 전 기간 기준</h2>
-    <div style="font-size:14px;color:var(--ink-48)">소요시간 추적이 남아 있는 <strong>${esc(ref.from)} ~ ${esc(ref.to)}</strong> 전체 표본입니다.
-      요청자 구분 없이 <strong>원격팀이 처리한 모든 건</strong>이라 위 미설치건 수치와 모수가 다릅니다.</div>
+    <h2 style="margin-top:${onbStat.n ? 48 : 56}px;font-size:21px">참고 · 추적 전 기간 (${esc(ref.from)} ~ ${esc(ref.to)}) · 요청자 무관</h2>
     <table>
       <thead><tr><th>구분</th><th class="n">표본</th><th class="n">중앙값</th><th class="n">평균</th><th class="n">p90</th><th class="n">최대</th></tr></thead>
       <tbody>${ref.rows.filter(r => r.stat.n).map(r => `<tr>
@@ -808,8 +806,6 @@ ${ns.live.length === 0 ? `
     </table>
 
     <h2 style="margin-top:56px;font-size:21px">소요시간 — 올린 뒤 마감 이모지가 찍히기까지</h2>
-    <div style="font-size:14px;color:var(--ink-48)">마감 유형이 <strong>온보딩</strong>인 건은,
-      글이 올라온 시각부터 <strong>원격온보딩</strong> 이모지가 찍힌 시각까지 몇 분 걸렸는지입니다.</div>
 ${!ns.time.src ? `
     <div class="note" style="font-size:17px;margin-top:20px">소요시간 추적 데이터(slack-data.js)를 읽지 못해 이 표는 비어 있습니다.</div>
 ` : (onbStat.n ? `
@@ -883,13 +879,13 @@ ${refTable}
 ` : `
     <div class="note" style="font-size:17px;margin-top:20px">이 집계 기간(${esc(d.FROM)} ~ ${esc(d.TO)})에는 소요시간을 잰 표본이 없습니다 —
       추적이 <strong>${esc(ns.time.src.firstDone || '-')}</strong> 적재분부터 시작됐기 때문입니다.
-      그래서 아래는 <strong>추적이 남아 있는 전 기간</strong>의 온보딩 마감 소요시간입니다
-      (요청자 구분 없이 원격팀이 처리한 모든 건).
+      그래서 아래는 <strong>추적이 남아 있는 전 기간</strong>의 온보딩 마감 소요시간입니다.
       ${ns.time.ack.n ? `이 기간의 착수(첫 확인 이모지)까지는 표본 ${ns.time.ack.n}건 · 중앙값 ${minTxt(ns.time.ack.med)} 입니다.` : ''}</div>
 ${refKeys}
     <div class="note">슬랙은 <strong>이모지가 찍힌 시각을 API 로 주지 않습니다</strong>.
       그래서 대시보드 집계가 10분마다 돌며 이모지가 새로 붙은 걸 발견한 시점으로 역산한 값입니다 — <strong>오차 ±10분</strong>.<br>
       · 새벽 01:00~05:29 에 올라온 글, 집계가 처음 봤을 때 이미 이모지가 있던 글, 올린 사람이 직접 처리한 글은 추적에서 빠집니다.<br>
+      · 요청자 구분 없이 원격팀이 처리한 모든 건이라 위 미설치건 모수와는 다릅니다.<br>
       · 집계 기간을 <strong>${esc(ns.time.src.firstDone || '-')}</strong> 이후로 잡고 다시 돌리면, 미설치건만 추린 소요시간이 이 자리에 채워집니다.</div>
 ${refTable}
 `)}
