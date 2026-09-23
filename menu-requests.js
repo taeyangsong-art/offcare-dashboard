@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2430,
- "updatedAt": "2026-09-23 19:16",
+ "version": 2431,
+ "updatedAt": "2026-09-23 19:29",
  "days": 30,
  "items": [
   {
@@ -61511,27 +61511,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787617322434259"
-  },
-  {
-   "ts": "1787567102.274389",
-   "date": "2026-08-24",
-   "time": "19:25",
-   "store": "오늘은빵먹는날",
-   "biz": "8644400728",
-   "pos": "오케이포스",
-   "content": "음료 뽀로로 1700\n블랙보리 2000\n생수 1500 등록해주세요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787567105.851719",
-   "rfx": 3,
-   "status": "done",
-   "handler": "서상원",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787567102274389"
   }
  ],
  "ocr": {
