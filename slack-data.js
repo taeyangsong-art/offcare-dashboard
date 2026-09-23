@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12745,
+  "version": 12746,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -199633,10 +199633,10 @@ window.SLACK_DATA = {
     "2026-09-23": {
       "counts": {
         "as": {
+          "김현기": 4,
           "김동욱": 7,
           "배선유": 1,
           "고경림": 6,
-          "김현기": 3,
           "송태양": 4,
           "김규빈": 2,
           "심성현": 4
@@ -199662,6 +199662,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:49",
+          "store": "정도시락",
+          "biz": "8751102688",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "전자영수증 설정 방법 안내 및 발송 안내 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "토스포스 내에 전자영수증 설정 변경, 결제 후 전자영수증 발송 방법 안내 완료"
+        },
         {
           "time": "11:43",
           "store": "빠 루앙(pas loin)",
@@ -200203,11 +200214,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 41,
+        "online": 42,
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "11:51"
+      "updatedAt": "11:55"
     }
   },
   "resp": {
@@ -265602,7 +265613,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-23 11:53",
+    "at": "2026-09-23 11:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
