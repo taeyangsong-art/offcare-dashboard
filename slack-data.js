@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12766,
+  "version": 12767,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -199634,7 +199634,7 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김현기": 9,
-          "심성현": 10,
+          "심성현": 11,
           "송태양": 5,
           "김규빈": 4,
           "김동욱": 7,
@@ -199672,6 +199672,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "배민 라이트 정상 실행 중 확인 완료"
+        },
+        {
+          "time": "12:47",
+          "store": "에벤에셀플라워",
+          "biz": "1389028871",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "프론트 유프 온보딩 도움요청드립니다!",
+          "hw": "",
+          "intake": "online",
+          "note": "프린터 온보딩 완료"
         },
         {
           "time": "12:32",
@@ -200380,7 +200391,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 56,
+        "online": 57,
         "offline": 9,
         "unknown": 0
       },
@@ -200577,6 +200588,10 @@ window.SLACK_DATA = {
       "1790038608.680899": {
         "post": "1790038608.680899",
         "lastSeen": 1790108127.224
+      },
+      "1790135400.993529": {
+        "post": "1790135400.993529",
+        "lastSeen": 1790135782.27
       }
     },
     "days": {
@@ -265855,7 +265870,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-23 12:54",
+    "at": "2026-09-23 12:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
