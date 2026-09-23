@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12708,
+  "version": 12709,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -199620,16 +199620,27 @@ window.SLACK_DATA = {
     },
     "2026-09-23": {
       "counts": {
-        "extern": {
-          "김동욱": 1
-        },
         "as": {
-          "송태양": 1,
+          "김동욱": 2,
+          "송태양": 1
+        },
+        "extern": {
           "김동욱": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:30",
+          "store": "나눔 중앙마트",
+          "biz": "1051974605",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "영수증이 기존사용하던것보다 2배정도 길다하시어 조절가능한 부분 있을지 도움부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "영수증 커스텀 불가 안내드림"
+        },
         {
           "time": "09:16",
           "store": "유겐",
@@ -199665,7 +199676,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
+        "online": 2,
         "offline": 2,
         "unknown": 0
       },
@@ -264922,7 +264933,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-23 09:34",
+    "at": "2026-09-23 09:36",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
