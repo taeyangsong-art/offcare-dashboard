@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12724,
+  "version": 12725,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -199620,6 +199620,11 @@ window.SLACK_DATA = {
     },
     "2026-09-23": {
       "counts": {
+        "onboarding": {
+          "고경림": 3,
+          "김동욱": 1,
+          "송태양": 1
+        },
         "as": {
           "고경림": 4,
           "심성현": 2,
@@ -199630,15 +199635,21 @@ window.SLACK_DATA = {
         "extern": {
           "서상원": 1,
           "김동욱": 1
-        },
-        "onboarding": {
-          "김동욱": 1,
-          "송태양": 1,
-          "고경림": 2
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:30",
+          "store": "리멤버",
+          "biz": "1693901614",
+          "cat": "onboarding",
+          "emp": "고경림",
+          "req": "포프(휴대폰) + 터미널2 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "10:26",
           "store": "한국금시장거래소 수원장안점",
@@ -199817,11 +199828,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 13,
+        "online": 14,
         "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "10:31"
+      "updatedAt": "10:32"
     }
   },
   "resp": {
@@ -199986,7 +199997,14 @@ window.SLACK_DATA = {
       },
       "1790127063.333419": {
         "post": "1790127063.333419",
-        "lastSeen": 1790127077.778
+        "lastSeen": 1790127202.063,
+        "r": 1,
+        "day": "2026-09-23",
+        "idx": 5
+      },
+      "1790125204.498489": {
+        "post": "1790125204.498489",
+        "lastSeen": 1790127202.063
       }
     },
     "days": {
@@ -265076,8 +265094,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-23": {
-        "cnt": 5,
-        "sumMin": 15.626013084252678,
+        "cnt": 6,
+        "sumMin": 16.9024644335111,
         "over": 0,
         "items": [
           {
@@ -265124,13 +265142,21 @@ window.SLACK_DATA = {
             "who": "심성현",
             "cat": "as",
             "dmin": 10.1
+          },
+          {
+            "hm": "10:31",
+            "min": 1.3,
+            "store": "공포의 아구찜, 탕",
+            "biz": "3010858250",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-23 10:31",
+    "at": "2026-09-23 10:33",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
