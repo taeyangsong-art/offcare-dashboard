@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12741,
+  "version": 12742,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -192162,11 +192162,11 @@ window.SLACK_DATA = {
                 "cat": "단말기 설치나 초기 과정이 어려움"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
-            "autoNote": "",
-            "doneDate": ""
+            "emp": "지혜",
+            "autoStatus": "처리완료",
+            "autoEmp": "지혜",
+            "autoNote": "• 토스포스, 프론트에 노출되는 광고 관련 불편 • 포스와 프론트에서 off 설정 가능 / 포인트 적립도 미사용 희망 ◦ 다른 작업중이라고하셔서 , [포인트] [토스지원할인이벤트] [결제완료광고] off 경로 솔라피 발송 키인결제 문의 &gt; 키인결제 cat 추가 필요, 렌탈시 월 9900원 추가되며 , 카드사 별 수기 특약 필요할 수 있음 안내 , 기추",
+            "doneDate": "2026-09-23"
           },
           {
             "time": "15:37",
@@ -199633,9 +199633,9 @@ window.SLACK_DATA = {
     "2026-09-23": {
       "counts": {
         "onboarding": {
+          "심성현": 2,
           "배선유": 2,
           "김동욱": 3,
-          "심성현": 1,
           "김현기": 1,
           "고경림": 4,
           "송태양": 1
@@ -199661,6 +199661,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:32",
+          "store": "모던파스타",
+          "biz": "1415001116",
+          "cat": "onboarding",
+          "emp": "심성현",
+          "req": "포스(pc)  프론트 온보딩 도움 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "11:23",
           "store": "푸드더팜(food de PAM)",
@@ -200114,11 +200125,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 35,
+        "online": 36,
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "11:35"
+      "updatedAt": "11:40"
     }
   },
   "resp": {
@@ -200283,21 +200294,17 @@ window.SLACK_DATA = {
       },
       "1790130602.146959": {
         "post": "1790130602.146959",
-        "lastSeen": 1790131063.767,
+        "lastSeen": 1790131292.795,
         "r": 1,
         "day": "2026-09-23",
         "idx": 13
       },
       "1790130763.164179": {
         "post": "1790130763.164179",
-        "lastSeen": 1790131063.767,
+        "lastSeen": 1790131292.795,
         "r": 1,
         "day": "2026-09-23",
         "idx": 14
-      },
-      "1790130600.242249": {
-        "post": "1790130600.242249",
-        "lastSeen": 1790131063.767
       }
     },
     "days": {
@@ -265529,7 +265536,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-23 11:37",
+    "at": "2026-09-23 11:41",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
