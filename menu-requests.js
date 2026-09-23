@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2426,
- "updatedAt": "2026-09-23 17:39",
+ "version": 2427,
+ "updatedAt": "2026-09-23 17:44",
  "days": 30,
  "items": [
   {
@@ -44,7 +44,60 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C3SPWHLF8",
      "from": "댓글",
-     "path": "menu-files/1790152040_878679-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "동해진참치 코스",
+       "name": "동해진참치 VIP",
+       "price": 120000
+      },
+      {
+       "category": "동해진참치 코스",
+       "name": "동해진로얄",
+       "price": 100000
+      },
+      {
+       "category": "동해진참치 코스",
+       "name": "실장스페셜",
+       "price": 80000
+      },
+      {
+       "category": "동해진참치 코스",
+       "name": "참치코스 스페셜",
+       "price": 60000
+      },
+      {
+       "category": "동해진참치 코스",
+       "name": "참치코스 골드",
+       "price": 49000
+      },
+      {
+       "category": "동해진참치 단품",
+       "name": "대 한접시",
+       "price": 180000
+      },
+      {
+       "category": "동해진참치 단품",
+       "name": "중 한접시",
+       "price": 150000
+      },
+      {
+       "category": "동해진참치 단품",
+       "name": "소 한접시",
+       "price": 120000
+      },
+      {
+       "category": "동해진참치 단품",
+       "name": "참치통머리",
+       "price": 100000
+      }
+     ],
+     "path": "menu-files/1790152040_878679-0.png"
+    },
+    {
+     "name": "첨부",
+     "fid": "F0C3UK84G9Y",
+     "from": "댓글",
      "kind": "pos_screen",
      "menu": [
       {
@@ -96,35 +149,35 @@ window.MENU_REQUESTS = {
     },
     {
      "name": "image.png",
-     "fid": "F0C3UK84G9Y",
+     "fid": "F0C3UN6UCCA",
      "from": "댓글",
-     "path": "menu-files/1790152040_878679-1.png",
+     "path": "menu-files/1790152040_878679-2.png",
      "kind": "pos_screen",
      "menu": [
       {
-       "category": "동해진참치 코스",
-       "name": "동해진참치 VIP",
-       "price": 120000
+       "category": "동해진참치 단품",
+       "name": "참치코스 골드 1인분(20PS)",
+       "price": 35000
       },
       {
-       "category": "동해진참치 코스",
-       "name": "동해진로얄",
-       "price": 100000
+       "category": "동해진참치 단품",
+       "name": "참치코스 스페셜 1인분(20PS)",
+       "price": 45000
       },
       {
-       "category": "동해진참치 코스",
-       "name": "실장스페셜",
-       "price": 80000
+       "category": "동해진참치 단품",
+       "name": "실장스페셜 1인분(20PS)",
+       "price": 55000
       },
       {
-       "category": "동해진참치 코스",
-       "name": "참치코스 스페셜",
-       "price": 60000
+       "category": "동해진참치 단품",
+       "name": "동해진로얄 1인분(20PS)",
+       "price": 65000
       },
       {
-       "category": "동해진참치 코스",
-       "name": "참치코스 골드",
-       "price": 49000
+       "category": "동해진참치 단품",
+       "name": "동해진참치 VIP 1인분(20PS)",
+       "price": 75000
       },
       {
        "category": "동해진참치 단품",
@@ -153,8 +206,8 @@ window.MENU_REQUESTS = {
    "replies": [
     "이미지속  바로 아래에 메뉴 추가 부탁드립니다!\n• 참치코스 골드 1인분(20PS) /  35,000원\n• 참치코스 스페셜 1인분(20PS) /  45,000원\n• 실장스페셜 1인분(20PS) / 55,000원\n• 동해진로얄 1인분(20PS) / 65,000원\n• 동해진참치 VIP 1인분(20PS) / 75,000원"
    ],
-   "rc": 2,
-   "lr": "1790152210.409979",
+   "rc": 5,
+   "lr": "1790152971.401579",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
@@ -61506,38 +61559,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787566434409309"
-  },
-  {
-   "ts": "1787560767.453429",
-   "date": "2026-08-24",
-   "time": "17:39",
-   "store": "더치앤빈역삼역점",
-   "biz": "8822700961",
-   "pos": "",
-   "content": "메뉴등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BS853SGKU",
-     "from": "댓글",
-     "path": "menu-files/1787560767_453429-0.png",
-     "kind": "other",
-     "menu": []
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "가격 등록 안되어있는 카테고리(더치) 제외 옵션까지 등록 완료"
-   ],
-   "rc": 2,
-   "lr": "1787564223.439319",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787560767453429"
   }
  ],
  "ocr": {
