@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2409,
- "updatedAt": "2026-09-23 14:42",
+ "version": 2410,
+ "updatedAt": "2026-09-23 14:52",
  "days": 30,
  "items": [
   {
@@ -560,15 +560,25 @@ window.MENU_REQUESTS = {
      "from": "댓글",
      "path": "menu-files/1790136247_556579-0.csv",
      "nj": 1
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3NQE205B",
+     "from": "댓글",
+     "path": "menu-files/1790136247_556579-1.png",
+     "kind": "other",
+     "menu": []
     }
    ],
    "datt": [],
    "replies": [
     "이미지는 나중에 하기로",
-    "옵션지옥"
+    "옵션지옥",
+    "세트상품에 정확히 어떤 옵션이 들어가야하는지 잘 모르셔서 본사미팅때 물어보고 재접수 예정 / 메뉴, 사이드, 옵션은 등록 완료된 상태",
+    "이미지는 느낌대로 넣어보기로..."
    ],
-   "rc": 4,
-   "lr": "1790136384.719129",
+   "rc": 6,
+   "lr": "1790142666.172839",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
@@ -61764,162 +61774,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787552542634909"
-  },
-  {
-   "ts": "1787550533.596749",
-   "date": "2026-08-24",
-   "time": "14:48",
-   "store": "청기와",
-   "biz": "6063813612",
-   "pos": "",
-   "content": "메뉴등록 부탁드려요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BS2PZ26G5",
-     "from": "댓글",
-     "path": "menu-files/1787550533_596749-0.png",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "",
-       "name": "생오리주물럭 (한마리)",
-       "price": 46000
-      },
-      {
-       "category": "",
-       "name": "생오리마늘구이 (한마리)",
-       "price": 46000
-      },
-      {
-       "category": "",
-       "name": "생구이 (한마리)",
-       "price": 44000
-      },
-      {
-       "category": "",
-       "name": "오리훈제 (한마리)",
-       "price": 45000
-      },
-      {
-       "category": "",
-       "name": "오리·닭 한방백숙",
-       "price": 60000
-      },
-      {
-       "category": "",
-       "name": "오리·닭 옻백숙",
-       "price": 65000
-      },
-      {
-       "category": "",
-       "name": "닭도리탕 (국내산)(한마리)",
-       "price": 55000
-      },
-      {
-       "category": "",
-       "name": "오리탕 (국내산)(한마리)",
-       "price": 55000
-      },
-      {
-       "category": "해신탕",
-       "name": "해신탕 (국내산)",
-       "price": 0
-      },
-      {
-       "category": "해신탕",
-       "name": "오리전복탕 (국내산)",
-       "price": 18000
-      },
-      {
-       "category": "해신탕",
-       "name": "해신전골",
-       "price": 0
-      },
-      {
-       "category": "",
-       "name": "양푼찜 등갈비",
-       "price": 0
-      },
-      {
-       "category": "점심특선",
-       "name": "오리된장쌈밥",
-       "price": 14000
-      },
-      {
-       "category": "점심특선",
-       "name": "갈치찌개 (국내산)",
-       "price": 13000
-      },
-      {
-       "category": "점심특선",
-       "name": "갈치구이 (국내산)",
-       "price": 14000
-      },
-      {
-       "category": "점심특선",
-       "name": "소곱창전골 (국내산)",
-       "price": 14000
-      },
-      {
-       "category": "점심특선",
-       "name": "삼겹살 (국내산)(120g)",
-       "price": 13000
-      },
-      {
-       "category": "점심특선",
-       "name": "두루치기(볶음)",
-       "price": 14000
-      },
-      {
-       "category": "후식",
-       "name": "볶음밥",
-       "price": 3000
-      },
-      {
-       "category": "후식",
-       "name": "누룽지",
-       "price": 3000
-      },
-      {
-       "category": "후식",
-       "name": "된장찌개",
-       "price": 3000
-      },
-      {
-       "category": "",
-       "name": "소주",
-       "price": 5000
-      },
-      {
-       "category": "",
-       "name": "맥주",
-       "price": 5000
-      },
-      {
-       "category": "",
-       "name": "막걸리",
-       "price": 4000
-      },
-      {
-       "category": "",
-       "name": "음료수",
-       "price": 2000
-      }
-     ]
-    }
-   ],
-   "datt": [],
-   "replies": [],
-   "rc": 3,
-   "lr": "1787551055.401029",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787550533596749"
   }
  ],
  "ocr": {
