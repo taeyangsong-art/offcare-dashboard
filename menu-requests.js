@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2418,
- "updatedAt": "2026-09-23 16:12",
+ "version": 2419,
+ "updatedAt": "2026-09-23 16:27",
  "days": 30,
  "items": [
   {
@@ -61525,29 +61525,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787557080060139"
-  },
-  {
-   "ts": "1787556432.673429",
-   "date": "2026-08-24",
-   "time": "16:27",
-   "store": "더푸드",
-   "biz": "4300403429",
-   "pos": "토스포스",
-   "content": "토스포스 메뉴 수정 요청드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "커피 탭에서 (행사 X)\n\n• 아이스아메리카노 3500원 \n• 카페라떼 아이스 4500원 \n• 바닐라라떼 아이스 4500원"
-   ],
-   "rc": 2,
-   "lr": "1787556464.376699",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787556432673429"
   }
  ],
  "ocr": {
