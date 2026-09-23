@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2422,
- "updatedAt": "2026-09-23 17:01",
+ "version": 2423,
+ "updatedAt": "2026-09-23 17:25",
  "days": 30,
  "items": [
   {
@@ -61385,60 +61385,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787560767453429"
-  },
-  {
-   "ts": "1787559914.552439",
-   "date": "2026-08-24",
-   "time": "17:25",
-   "store": "맥쓰(MEXX)세계치킨제기역점",
-   "biz": "3464601387",
-   "pos": "",
-   "content": "메뉴 이미지 추가",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "1786713956414.png",
-     "fid": "F0BS5MY0D54",
-     "from": "댓글",
-     "path": "menu-files/1787559914_552439-0.png",
-     "kind": "product_photo",
-     "menu": []
-    },
-    {
-     "name": "20260727_205151.jpg",
-     "fid": "F0BS9JK99U1",
-     "from": "댓글",
-     "path": "menu-files/1787559914_552439-1.jpg",
-     "kind": "product_photo",
-     "menu": []
-    },
-    {
-     "name": "1787054755809.png",
-     "fid": "F0BSBASD51S",
-     "from": "댓글",
-     "path": "menu-files/1787559914_552439-2.png",
-     "kind": "product_photo",
-     "menu": []
-    },
-    {
-     "name": "1787066381685.png",
-     "fid": "F0BRS9ED36K",
-     "from": "댓글",
-     "path": "menu-files/1787559914_552439-3.png",
-     "kind": "product_photo",
-     "menu": []
-    }
-   ],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1787559950.048819",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김동욱",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787559914552439"
   }
  ],
  "ocr": {
