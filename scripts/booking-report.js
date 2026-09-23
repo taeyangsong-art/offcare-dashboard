@@ -42,8 +42,8 @@ const CHANNELS = [
 
 // 이모지 규칙 — fetch-and-tally.js 와 동일하게 유지할 것
 const personMap = { '규빈':'김규빈','선유':'배선유','성현':'심성현','동욱':'김동욱','현기':'김현기','태양':'송태양','기범':'김기범','상원':'서상원','민석':'최민석','경림':'고경림' };
-const catMap = { '원격온보딩':'onboarding', '원격as':'as', '원격명의변경':'transfer', '원격메뉴등록':'menu', '원격voc':'voc', '원격배달':'delivery' };
-const CAT_KO = { onboarding:'온보딩', as:'AS', transfer:'명의변경', menu:'메뉴등록', delivery:'배달', voc:'VOC' };
+const catMap = { '원격온보딩':'onboarding', '원격as':'as', '원격명의변경':'transfer', '원격메뉴등록':'menu', '원격voc':'voc', '원격배달':'delivery', '원격예약':'booking', '예약':'booking' };
+const CAT_KO = { onboarding:'온보딩', as:'AS', booking:'예약', transfer:'명의변경', menu:'메뉴등록', delivery:'배달', voc:'VOC' };
 const NAMES = Object.keys(personMap).join('|');
 const RE_EMP = new RegExp('^원격(' + NAMES + ')$');        // 원격XX (담당자/착수)
 const RE_CONFIRM = new RegExp('^(' + NAMES + ')(_?확인.*)?$'); // XX확인 (옛 규칙 착수)
@@ -311,6 +311,7 @@ function timeStat(list, pick) {
       const names = (m.reactions || []).map(r => r.name);
       let cat = null;
       for (const n of names) if (catMap[n]) { cat = catMap[n]; break; }
+      if (names.some(n => catMap[n] === 'booking')) cat = 'booking';   // 예약 이모지 우선 (fetch-and-tally 와 같은 규칙)
       let emp = null;
       for (const n of names) { const p = n.match(RE_EMP); if (p) { emp = personMap[p[1]]; break; } }
       if (!emp) for (const n of names) { const c = n.match(RE_CONFIRM); if (c) { emp = personMap[c[1]]; break; } }
@@ -349,6 +350,7 @@ function timeStat(list, pick) {
     return [
       { key: 'onboarding', label: '온보딩으로 마감',   n: c(r => r.cat === 'onboarding') },
       { key: 'as',         label: 'AS로 마감',        n: c(r => r.cat === 'as') },
+      { key: 'booking',    label: '예약으로 마감',     n: c(r => r.cat === 'booking') },
       { key: 'transfer',   label: '명의변경으로 마감',  n: c(r => r.cat === 'transfer') },
       { key: 'menu',       label: '메뉴등록으로 마감',  n: c(r => r.cat === 'menu') },
       { key: 'delivery',   label: '배달로 마감',       n: c(r => r.cat === 'delivery') },

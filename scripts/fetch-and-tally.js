@@ -20,7 +20,12 @@ const CHANNELS = [
 ];
 
 const personMap = { '규빈':'김규빈','선유':'배선유','성현':'심성현','동욱':'김동욱','현기':'김현기','태양':'송태양','기범':'김기범','상원':'서상원','민석':'최민석','경림':'고경림' };
-const catMap = { '원격온보딩':'onboarding', '원격as':'as', '원격명의변경':'transfer', '원격메뉴등록':'menu', '원격voc':'voc', '원격배달':'delivery' };
+const catMap = { '원격온보딩':'onboarding', '원격as':'as', '원격명의변경':'transfer', '원격메뉴등록':'menu', '원격voc':'voc', '원격배달':'delivery', '원격예약':'booking', '예약':'booking' };
+/* 예약(2026-09-24~) — 예약 이모지가 찍히면 다른 카테고리 이모지(원격온보딩·원격as…)가 같이 있어도 예약으로 적재한다.
+ * 슬랙 reactions 순서는 '처음 찍힌 순'이라, 우선순위를 안 주면 먼저 찍힌 원격온보딩이 이겨 버린다.
+ * 이모지 이름이 '원격예약' 인지 '예약' 인지 확정 전이라 둘 다 받는다. */
+const workCatOf = names => names.some(n => catMap[n] === 'booking') ? 'booking'
+  : (names.map(n => catMap[n]).find(c => c && c !== 'voc') || null);   // 원격voc는 업무 카테고리로 안 씀(설문 VOC로 별도 집계)
 // 이모지 이름 목록은 personMap에서 자동 생성 — 입·퇴사 시 personMap만 고치면 됨
 const NAMES = Object.keys(personMap).join('|');
 const RE_EMP      = new RegExp('^원격(' + NAMES + ')$');          // 원격OOO (완료 담당자)
@@ -139,7 +144,7 @@ const oldestWide = boundsOf(minDate).oldest;
 
 /* ── 이모지 규칙 전환 (착수 표시: 'XX확인' → '원격XX') ──────────────────────────
  * 팀이 요청글을 잡을 때 찍는 첫 이모지를 'XX확인' 대신 '원격XX' 로 바꿨다.
- * 완료 시 카테고리 이모지(원격as·원격온보딩·원격명의변경·원격배달·원격외주)를 찍는 건 그대로다.
+ * 완료 시 카테고리 이모지(원격as·원격온보딩·원격명의변경·원격배달·원격예약·원격외주)를 찍는 건 그대로다.
  *
  * 옛 규칙: '원격XX' = 완료 담당자 (AS채널에선 카테고리 이모지가 없어도 완료로 적재)
  * 새 규칙: '원격XX' = 착수 표시 (= 예전의 'XX확인'). 완료는 카테고리 이모지·원격외주가 결정.
@@ -279,8 +284,7 @@ async function tallyInto(msgs, ch, counts, pending, done, opts) {
 
     let emp = null;
     for (const n of names) { const pm = n.match(RE_EMP); if (pm) { emp = personMap[pm[1]]; break; } }
-    let emojiCat = null;
-    for (const n of names) { if (catMap[n] && catMap[n] !== 'voc') { emojiCat = catMap[n]; break; } }  // 원격voc는 업무 카테고리로 안 씀(설문 VOC로 별도 집계)
+    const emojiCat = workCatOf(names);
     const hasVocTag = names.includes('원격voc');
     const hasExtern = names.includes('원격외주');
     let confirmPerson = null;
@@ -464,11 +468,11 @@ function trackResp(data, msgs, ch) {
       if (!responded) W[key] = { post: key, lastSeen: nowSec };
       continue;
     }
-    // 카테고리 판정(tallyInto 규칙). 응답·소요시간은 '순수 AS' 적재 → 명변·메뉴등록·배달은 제외.
-    let emojiCat = null;
-    for (const n of names) { if (catMap[n] && catMap[n] !== 'voc') { emojiCat = catMap[n]; break; } }
+    // 카테고리 판정(tallyInto 규칙). 응답·소요시간은 '순수 AS' 적재 → 명변·메뉴등록·배달·예약은 제외.
+    // (예약은 정해 둔 시각에 처리하므로 올린 뒤 기다린 시간이 응답 속도가 아니다)
+    const emojiCat = workCatOf(names);
     const catKey = names.includes('원격외주') ? 'extern' : (emojiCat || (ch && ch.defaultCat) || 'as');
-    if (catKey === 'transfer' || catKey === 'menu' || catKey === 'delivery') { delete W[key]; continue; }
+    if (catKey === 'transfer' || catKey === 'menu' || catKey === 'delivery' || catKey === 'booking') { delete W[key]; continue; }
     const day = kstDate(m.ts);
     if (!day) { delete W[key]; continue; }             // 운영시간 밖(01:00~05:30) — 표본에서 제외
     const mid = (w.lastSeen + nowSec) / 2;             // 이모지는 (lastSeen, now) 사이에 찍힘 → 중간값 추정

@@ -17,7 +17,7 @@ t = t.replace(/\\u([0-9a-fA-F]{4})/g, (m, g) => String.fromCharCode(parseInt(g, 
 t = t.replace(/\\\//g, '/'); // \/ 언이스케이프
 
 const personMap = { '규빈':'김규빈','선유':'배선유','성현':'심성현','동욱':'김동욱','현기':'김현기','태양':'송태양','기범':'김기범','상원':'서상원','민석':'최민석','경림':'고경림' };
-const catMap = { '원격온보딩':'onboarding', '원격as':'as', '원격명의변경':'transfer', '원격메뉴등록':'menu', '원격voc':'voc', '원격배달':'delivery' };
+const catMap = { '원격온보딩':'onboarding', '원격as':'as', '원격명의변경':'transfer', '원격메뉴등록':'menu', '원격voc':'voc', '원격배달':'delivery', '원격예약':'booking', '예약':'booking' };
 // 이모지 이름 목록은 personMap에서 자동 생성 — 입·퇴사 시 personMap만 고치면 됨
 const NAMES = Object.keys(personMap).join('|');
 const RE_EMP      = new RegExp('^원격(' + NAMES + ')$');          // 원격OOO (완료 담당자)
@@ -48,6 +48,7 @@ for (const b of t.split('=== Message from').slice(1)) {
   // 카테고리 이모지
   let catKey = null;
   for (const n of names) { if (catMap[n]) { catKey = catMap[n]; break; } }
+  if (names.some(n => catMap[n] === 'booking')) catKey = 'booking';   // 예약 이모지가 있으면 예약 우선 (fetch-and-tally 와 같은 규칙)
   const hasExtern = names.includes('원격외주');
   // 카테고리 이모지가 없으면 완료가 아니다 — 예전엔 '원격OOO'만 있어도 AS 완료로 쳤지만
   // 이제 '원격OOO'는 착수 표시라, 그대로 두면 잡기만 한 건이 완료로 잡힌다.
