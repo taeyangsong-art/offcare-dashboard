@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2417,
- "updatedAt": "2026-09-23 16:05",
+ "version": 2418,
+ "updatedAt": "2026-09-23 16:12",
  "days": 30,
  "items": [
   {
@@ -23,7 +23,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C4NBL7788",
      "from": "댓글",
-     "path": "menu-files/1790145256_937759-0.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -121,13 +120,13 @@ window.MENU_REQUESTS = {
        "name": "설치류",
        "price": 0
       }
-     ]
+     ],
+     "path": "menu-files/1790145256_937759-0.png"
     },
     {
      "name": "image.png",
      "fid": "F0C3TT8QGN6",
      "from": "댓글",
-     "path": "menu-files/1790145256_937759-1.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -240,13 +239,13 @@ window.MENU_REQUESTS = {
        "name": "빙키티모시 1.36kg",
        "price": 22000
       }
-     ]
+     ],
+     "path": "menu-files/1790145256_937759-1.png"
     },
     {
      "name": "image.png",
      "fid": "F0C4NBMFCV6",
      "from": "댓글",
-     "path": "menu-files/1790145256_937759-2.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -389,13 +388,13 @@ window.MENU_REQUESTS = {
        "name": "가루유산균",
        "price": 25000
       }
-     ]
+     ],
+     "path": "menu-files/1790145256_937759-2.png"
     },
     {
      "name": "image.png",
      "fid": "F0C3CKP5AT1",
      "from": "댓글",
-     "path": "menu-files/1790145256_937759-3.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -508,13 +507,13 @@ window.MENU_REQUESTS = {
        "name": "슈가장최고급(화이트)",
        "price": 96000
       }
-     ]
+     ],
+     "path": "menu-files/1790145256_937759-3.png"
     },
     {
      "name": "image.png",
      "fid": "F0C3CKQ0CTZ",
      "from": "댓글",
-     "path": "menu-files/1790145256_937759-4.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -557,13 +556,13 @@ window.MENU_REQUESTS = {
        "name": "C해먹",
        "price": 6000
       }
-     ]
+     ],
+     "path": "menu-files/1790145256_937759-4.png"
     },
     {
      "name": "image.png",
      "fid": "F0C3VUNRDFT",
      "from": "댓글",
-     "path": "menu-files/1790145256_937759-5.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -701,7 +700,8 @@ window.MENU_REQUESTS = {
        "name": "M둥지베딩",
        "price": 5500
       }
-     ]
+     ],
+     "path": "menu-files/1790145256_937759-5.png"
     },
     {
      "name": "image.png",
@@ -1127,9 +1127,11 @@ window.MENU_REQUESTS = {
     }
    ],
    "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1790145329.281769",
+   "replies": [
+    "AI가 ok 메뉴를 잘 못읽네 오타;"
+   ],
+   "rc": 3,
+   "lr": "1790147482.933799",
    "rfx": 3,
    "status": "done",
    "handler": "서상원",
