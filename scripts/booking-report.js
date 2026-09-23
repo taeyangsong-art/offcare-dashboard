@@ -148,8 +148,87 @@ async function loadUsers() {
 
 const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
 
+/* ── 소요시간 ──────────────────────────────────────────────────────────────
+ * 슬랙 API 는 '이모지가 언제 찍혔는지'를 주지 않는다. conversations.history 의 reactions 에는
+ * 이름·개수·찍은 사람만 있고 시각이 없다. 그래서 여기서 새로 계산할 방법이 없다.
+ * 대신 대시보드 집계(fetch-and-tally.js 의 trackResp)가 10분마다 돌며 스냅샷을 비교해 적어 둔 근사치를 붙인다.
+ *   slack-data.js → SLACK_DATA.resp.days[업무일].items[] = { hm, min, dmin, store, biz, cat }
+ *     min  = 올라온 뒤 첫 확인 이모지까지 (착수)
+ *     dmin = 올라온 뒤 완료(카테고리) 이모지까지 — '온보딩으로 마감' 이면 원격온보딩 이모지까지의 분
+ * 맞추는 열쇠: 업무일 + HH:MM + 사업자번호 (없으면 상호). 두 쪽 모두 같은 원문·같은 정규식에서 뽑은 값이다.
+ *
+ * 한계 (페이지에도 그대로 밝힌다):
+ *   · 해상도 ±폴링 간격(약 10분) — 이모지가 (직전 관측, 지금) 사이에 찍혔다고 보고 중간값을 쓴다
+ *   · dmin(소요)은 추적이 붙은 2026-08-31 적재분부터 있다. 그 전 기간은 착수(min)만 나온다
+ *   · 01:00~05:29 에 올라온 글, 처음 볼 때 이미 이모지가 있던 글, 셀프 처리 건은 추적에서 빠진다
+ */
+const ELAPSED_SRC = path.join(__dirname, '..', 'slack-data.js');
+function loadElapsedIndex() {
+  let resp;
+  try {
+    const win = {};                                     // slack-data.js 는 window.SLACK_DATA 에 넣는 브라우저용 파일
+    new Function('window', fs.readFileSync(ELAPSED_SRC, 'utf8'))(win);
+    resp = win.SLACK_DATA && win.SLACK_DATA.resp;
+  } catch (e) {
+    console.error('  ⚠ slack-data.js 읽기 실패 (' + e.message + ') — 소요시간은 비웁니다.');
+    return null;
+  }
+  if (!resp || !resp.days) { console.error('  ⚠ slack-data.js 에 응답시간 추적(resp)이 없어 소요시간은 비웁니다.'); return null; }
+  const idx = {};
+  let n = 0, withDone = 0, firstDone = '';
+  for (const [day, de] of Object.entries(resp.days)) {
+    for (const it of (de.items || [])) {
+      n++;
+      if (it.dmin != null) { withDone++; if (!firstDone || day < firstDone) firstDone = day; }
+      // 사업자번호가 가장 확실한 열쇠. 안 적힌 글은 상호로 — 적재 쪽에서 30자로 잘리므로 같은 길이로 자른다.
+      for (const tail of [it.biz, (it.store || '').slice(0, 30)]) {
+        if (!tail) continue;
+        const k = day + '|' + it.hm + '|' + tail;
+        if (!(k in idx)) idx[k] = it;                   // 같은 분·같은 매장이 겹치면 첫 건만 (7천 건 중 10여 건)
+      }
+    }
+  }
+  return { idx, n, withDone, firstDone };
+}
+
+const prevDate = d => {
+  const t = new Date(dateUTC(d) - 86400000);
+  return `${t.getUTCFullYear()}-${pad(t.getUTCMonth() + 1)}-${pad(t.getUTCDate())}`;
+};
+// 행에 착수(ackMin)·소요(doneMin) 붙이기. 못 찾으면 그대로 둔다(빈칸으로 표시된다).
+function attachElapsed(row, el) {
+  if (!el) return;
+  const hm = row.stamp.slice(11);
+  const tails = [row.biz, (row.store || '').slice(0, 30)].filter(Boolean);
+  // 적재 쪽 '업무일'은 00:00~00:59 글을 전날로 넘긴다 → 달력 날짜와 하루 전을 모두 본다
+  for (const day of [row.date, prevDate(row.date)]) {
+    for (const t of tails) {
+      const it = el.idx[day + '|' + hm + '|' + t];
+      if (!it) continue;
+      if (it.min != null) row.ackMin = it.min;
+      if (it.dmin != null) row.doneMin = it.dmin;
+      return;
+    }
+  }
+}
+
+/* 분 단위 표본 요약 — 표본이 작을 수 있어 중앙값을 앞세운다(평균은 긴 꼬리 몇 건에 끌려간다). */
+function timeStat(list, pick) {
+  const v = list.map(pick).filter(x => x != null && isFinite(x)).sort((a, b) => a - b);
+  if (!v.length) return { n: 0, buckets: [] };
+  const q = p => v[Math.min(v.length - 1, Math.floor(v.length * p))];
+  return {
+    n: v.length, med: q(0.5), avg: v.reduce((a, b) => a + b, 0) / v.length, p90: q(0.9), max: v[v.length - 1],
+    buckets: [
+      ['15분 이내', x => x <= 15], ['15~30분', x => x > 15 && x <= 30], ['30분~1시간', x => x > 30 && x <= 60],
+      ['1~2시간', x => x > 60 && x <= 120], ['2시간 초과', x => x > 120],
+    ].map(([label, f]) => ({ label, n: v.filter(f).length })),
+  };
+}
+
 (async () => {
   const userIdx = await loadUsers();
+  const elapsed = loadElapsedIndex();   // 이모지까지 걸린 시간(대시보드 폴링 추적치)
   // 작성자 이름 — 사람이면 프로필 이름, 워크플로/봇이면 봇 이름. 원본 표에 그대로 보여준다.
   const authorOf = m => TARGET_IDS[m.user] || (userIdx[m.user] && userIdx[m.user].label)
     || m.username || (m.bot_profile && m.bot_profile.name) || '';
@@ -216,6 +295,7 @@ const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
         emp: emp || '', abs1, abs2, dup, invalid,
         emojis: names.join(' '), who, owner, booked,
       };
+      attachElapsed(row, elapsed);   // 착수(ackMin)·소요(doneMin) — 찾지 못하면 빈칸
       if (booked) rows.push(row);
       if (owner) nsRows.push(row);
     }
@@ -278,6 +358,8 @@ const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
         none:       L.filter(r => !closed(r) && !r.abs1 && !r.abs2).length,
         booked:     L.filter(r => r.booked).length,
         done, open: L.length - done,
+        // 이 사람이 올린 글 중 온보딩으로 마감된 건의 소요시간(올린 뒤 원격온보딩 이모지까지)
+        onbTime: timeStat(L.filter(r => r.cat === 'onboarding'), r => r.doneMin),
       };
     }),
   };
@@ -285,6 +367,19 @@ const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
   ns.statSum = ns.stat.reduce((a, s) => a + s.n, 0);
   ns.done = nsLive.filter(closed).length;
   ns.open = nsLive.length - ns.done;
+  /* 소요시간 — 마감 유형별로 '올라온 뒤 그 이모지가 찍히기까지' 몇 분이었나.
+     온보딩을 먼저 본다(미설치건의 절반이 온보딩으로 마감된다). 표본은 폴링 추적이 닿은 건만이라
+     모수보다 적다 → 커버리지를 같이 보여줘야 숫자를 오해하지 않는다. */
+  ns.time = {
+    src: elapsed ? { n: elapsed.n, withDone: elapsed.withDone, firstDone: elapsed.firstDone } : null,
+    byCat: [['onboarding', '온보딩으로 마감'], ['as', 'AS로 마감']].map(([k, label]) => {
+      const L = nsLive.filter(r => r.cat === k);
+      return { key: k, label, target: L.length, stat: timeStat(L, r => r.doneMin) };
+    }),
+    doneAll: timeStat(nsLive.filter(closed), r => r.doneMin),   // 마감된 건 전체
+    ack: timeStat(nsLive, r => r.ackMin),                       // 착수(첫 확인 이모지)까지 — dmin 없는 기간에도 남는다
+    ackTarget: nsLive.length,
+  };
   ns.unmatched = TARGETS.filter(n => !nsRows.some(r => r.owner === n));   // 한 건도 못 찾은 이름
   ns.authorTop = Object.entries(authorTally).sort((a, b) => b[1] - a[1]).slice(0, 15);
   ns.usersOk = USERS_OK;
@@ -340,12 +435,32 @@ const field = (t, re) => ((t.match(re) || [])[1] || '').trim();
   }
   console.log('  채널별:', JSON.stringify(ns.byCh));
 
+  // ── 미설치건 소요시간 ──
+  const minTxt = m => (m == null ? '—' : (m >= 60 ? Math.floor(m / 60) + '시간 ' + Math.round(m % 60) + '분' : (Math.round(m * 10) / 10) + '분'));
+  console.log('\n  [소요시간] 올라온 뒤 마감 이모지가 찍히기까지 (대시보드 10분 폴링 추정치)');
+  if (!ns.time.src) console.log('    slack-data.js 추적 데이터를 못 읽어 측정값이 없습니다.');
+  else {
+    console.log('    추적 표본 전체 ' + ns.time.src.n + '건 중 소요시간 보유 ' + ns.time.src.withDone
+      + '건 (' + (ns.time.src.firstDone || '-') + ' 적재분부터)');
+    for (const c of ns.time.byCat) {
+      const s = c.stat;
+      console.log('    ' + c.label.padEnd(14) + '대상 ' + String(c.target).padStart(4) + '건 · 표본 ' + String(s.n).padStart(4)
+        + '건 · 중앙값 ' + minTxt(s.med).padStart(9) + ' · 평균 ' + minTxt(s.avg).padStart(9) + ' · p90 ' + minTxt(s.p90));
+      if (s.n) console.log('      분포: ' + s.buckets.filter(b => b.n).map(b => b.label + ' ' + b.n).join(' · '));
+    }
+    console.log('    착수(첫 확인 이모지)까지  대상 ' + ns.time.ackTarget + '건 · 표본 ' + ns.time.ack.n
+      + '건 · 중앙값 ' + minTxt(ns.time.ack.med));
+  }
+
   // ── CSV (엑셀) ──
   const csvEsc = v => { const s = String(v == null ? '' : v); return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
-  const head = ['일시', '채널', '작성자', '상호', '사업자번호', '카테고리 이모지', '담당자', '1차부재', '2차부재', '중복', '잘못올린글', '요청내용', '찍힌 이모지 전체'];
+  const head = ['일시', '채널', '작성자', '상호', '사업자번호', '카테고리 이모지', '담당자', '1차부재', '2차부재', '중복', '잘못올린글',
+    '착수까지(분)', '마감까지(분)', '요청내용', '찍힌 이모지 전체'];
   const cells = r => [
     r.stamp, r.ch, r.who || '', r.store, r.biz, r.catKo, r.emp, r.abs1 ? 'O' : '', r.abs2 ? 'O' : '',
-    r.dup ? 'O' : '', r.invalid ? 'O' : '', r.req, r.emojis,
+    r.dup ? 'O' : '', r.invalid ? 'O' : '',
+    r.ackMin != null ? Math.round(r.ackMin * 10) / 10 : '', r.doneMin != null ? Math.round(r.doneMin * 10) / 10 : '',
+    r.req, r.emojis,
   ];
   const csv = [head.join(',')].concat(rows.map(r => cells(r).map(csvEsc).join(','))).join('\r\n');
   fs.mkdirSync(OUT_DIR, { recursive: true });
@@ -372,6 +487,11 @@ function renderHtml(d) {
   const pctOf = (n, t) => (t ? n / t * 100 : 0).toFixed(1);   // 미설치건은 모수가 달라 분모를 받는다
   const ns = d.ns || { total: 0, rows: [], live: [], stat: [], people: [], byCh: {}, statSum: 0, done: 0, open: 0, booked: 0 };
   const nsNames = ns.people.map(p => p.name).join(' · ');
+  // 소요시간 — '25.3분' / '1시간 8분' 처럼 읽는 단위로 바꾼다. 없으면 —
+  const minTxt = m => (m == null ? '—' : (m >= 60 ? Math.floor(m / 60) + '시간 ' + Math.round(m % 60) + '분' : (Math.round(m * 10) / 10) + '분'));
+  ns.time = ns.time || { src: null, byCat: [], doneAll: { n: 0, buckets: [] }, ack: { n: 0, buckets: [] }, ackTarget: 0 };
+  const onbCat = ns.time.byCat.find(c => c.key === 'onboarding') || { target: 0, stat: { n: 0, buckets: [] } };
+  const onbStat = onbCat.stat;
   // 한 건에 찍힌 이모지를 태그로 — 예약 원본표와 미설치 원본표가 같은 표기를 쓰도록 함수로 뺀다
   const tags = r => `${r.catKo ? `<span class="tag on">${esc(r.catKo)}</span>` : ''}${r.abs2 ? '<span class="tag warn">2차부재</span>' : ''}${r.abs1 ? '<span class="tag">1차부재</span>' : ''}${r.dup ? '<span class="tag">중복</span>' : ''}${r.invalid ? '<span class="tag">잘못올린글</span>' : ''}${!r.catKo && !r.abs1 && !r.abs2 && !r.dup && !r.invalid ? '<span class="tag">없음</span>' : ''}`;
   const key = [
@@ -626,6 +746,85 @@ ${ns.live.length === 0 ? `
         <td class="n" style="font-weight:600">${ns.statSum === ns.live.length ? '모수와 일치' : '불일치'}</td><td></td></tr></tbody>
     </table>
 
+    <h2 style="margin-top:56px;font-size:21px">소요시간 — 올린 뒤 마감 이모지가 찍히기까지</h2>
+    <div style="font-size:14px;color:var(--ink-48)">마감 유형이 <strong>온보딩</strong>인 건은,
+      글이 올라온 시각부터 <strong>원격온보딩</strong> 이모지가 찍힌 시각까지 몇 분 걸렸는지입니다.</div>
+${!ns.time.src ? `
+    <div class="note" style="font-size:17px;margin-top:20px">소요시간 추적 데이터(slack-data.js)를 읽지 못해 이 표는 비어 있습니다.</div>
+` : (onbStat.n ? `
+    <div class="keys" style="margin-top:36px">
+      <div class="key"><div class="kl">온보딩 마감 · 중앙값</div>
+        <div class="kn">${minTxt(onbStat.med)}</div>
+        <div class="kp">표본 ${onbStat.n}건 / 대상 ${onbCat.target}건</div>
+        <div class="kbar"><i style="width:${pctOf(onbStat.n, onbCat.target)}%"></i></div></div>
+      <div class="key"><div class="kl">평균</div>
+        <div class="kn">${minTxt(onbStat.avg)}</div>
+        <div class="kp">가장 오래 걸린 건 ${minTxt(onbStat.max)}</div>
+        <div class="kbar"><i style="width:100%"></i></div></div>
+      <div class="key"><div class="kl">10건 중 9건은</div>
+        <div class="kn">${minTxt(onbStat.p90)}<span style="font-size:20px;font-weight:400"> 안</span></div>
+        <div class="kp">p90 (상위 10%를 뺀 값)</div>
+        <div class="kbar"><i style="width:90%"></i></div></div>
+    </div>
+
+    <table>
+      <thead><tr><th>구분</th><th class="n">대상</th><th class="n">표본</th><th class="n">중앙값</th>
+        <th class="n">평균</th><th class="n">p90</th><th class="n">최대</th></tr></thead>
+      <tbody>${ns.time.byCat.concat([{ label: '마감 전체', target: ns.done, stat: ns.time.doneAll }])
+        .map(c => `<tr>
+        <td>${esc(c.label)}</td>
+        <td class="n">${c.target.toLocaleString()}</td>
+        <td class="n">${c.stat.n.toLocaleString()}</td>
+        <td class="n">${minTxt(c.stat.med)}</td>
+        <td class="n">${minTxt(c.stat.avg)}</td>
+        <td class="n">${minTxt(c.stat.p90)}</td>
+        <td class="n">${minTxt(c.stat.max)}</td>
+      </tr>`).join('')}
+      <tr><td>착수 (첫 확인 이모지)</td>
+        <td class="n">${ns.time.ackTarget.toLocaleString()}</td>
+        <td class="n">${ns.time.ack.n.toLocaleString()}</td>
+        <td class="n">${minTxt(ns.time.ack.med)}</td>
+        <td class="n">${minTxt(ns.time.ack.avg)}</td>
+        <td class="n">${minTxt(ns.time.ack.p90)}</td>
+        <td class="n">${minTxt(ns.time.ack.max)}</td></tr></tbody>
+    </table>
+
+    <h2 style="margin-top:56px;font-size:21px">온보딩 마감 소요시간 분포</h2>
+    <table>
+      <thead><tr><th>구간</th><th class="n">건수</th><th class="n">비중</th><th style="width:38%"></th></tr></thead>
+      <tbody>${onbStat.buckets.map(b => `<tr>
+        <td>${esc(b.label)}</td>
+        <td class="n">${b.n}</td>
+        <td class="n">${pctOf(b.n, onbStat.n)}%</td>
+        <td><span class="bar" style="width:${pctOf(b.n, onbStat.n) * 2.6}px"></span></td>
+      </tr>`).join('')}</tbody>
+    </table>
+${ns.people.some(p => p.onbTime.n) ? `
+    <h2 style="margin-top:56px;font-size:21px">요청자별 온보딩 소요시간</h2>
+    <table>
+      <thead><tr><th>요청자</th><th class="n">온보딩 마감</th><th class="n">표본</th><th class="n">중앙값</th><th class="n">평균</th></tr></thead>
+      <tbody>${ns.people.filter(p => p.onboarding).map(p => `<tr>
+        <td>${esc(p.name)}</td>
+        <td class="n">${p.onboarding}</td>
+        <td class="n">${p.onbTime.n}</td>
+        <td class="n">${minTxt(p.onbTime.med)}</td>
+        <td class="n">${minTxt(p.onbTime.avg)}</td>
+      </tr>`).join('')}</tbody>
+    </table>` : ''}
+
+    <div class="note">슬랙은 <strong>이모지가 찍힌 시각을 API 로 주지 않습니다</strong>.
+      그래서 대시보드 집계가 10분마다 돌며 이모지가 새로 붙은 걸 발견한 시점으로 역산한 값입니다 — <strong>오차 ±10분</strong>.<br>
+      · 소요시간 추적은 <strong>${esc(ns.time.src.firstDone || '-')}</strong> 적재분부터 남아 있어, 그 전 기간은 표본이 비거나 매우 적습니다
+        (전체 추적 ${ns.time.src.n.toLocaleString()}건 중 소요시간 보유 ${ns.time.src.withDone.toLocaleString()}건).<br>
+      · 새벽 01:00~05:29 에 올라온 글, 집계가 처음 봤을 때 이미 이모지가 있던 글, 올린 사람이 직접 처리한 글은 추적에서 빠집니다.<br>
+      · 그래서 <strong>표본 &lt; 대상</strong> 입니다. 위 표의 '표본' 열이 실제로 시간을 재 본 건수입니다.</div>
+` : `
+    <div class="note" style="font-size:17px;margin-top:20px">이 기간에는 소요시간을 잰 표본이 없습니다.
+      소요시간 추적은 <strong>${esc(ns.time.src.firstDone || '-')}</strong> 적재분부터 남아 있습니다 —
+      그 이후 기간으로 다시 돌리면 채워집니다.
+      ${ns.time.ack.n ? `착수(첫 확인 이모지)까지는 표본 ${ns.time.ack.n}건 · 중앙값 ${minTxt(ns.time.ack.med)} 입니다.` : ''}</div>
+`)}
+
     <div class="note">채널 분포 ${Object.entries(ns.byCh).sort((a, b) => b[1] - a[1])
         .map(([c, n]) => `<span class="tag">${esc(c)} ${n}</span>`).join(' ') || '—'}<br>
       이 중 <strong>[예약]</strong> 표기가 함께 달린 건은 ${ns.booked}건입니다 — 그만큼 위 예약 집계와 겹칩니다.
@@ -635,7 +834,8 @@ ${ns.live.length === 0 ? `
       <summary>미설치건 ${ns.rows.length}건 원본 보기</summary>
       <div class="tbl-scroll">
         <table>
-          <thead><tr><th>일시</th><th>요청자</th><th>채널</th><th>상호</th><th>사업자</th><th>이모지</th><th>담당</th><th>요청내용</th></tr></thead>
+          <thead><tr><th>일시</th><th>요청자</th><th>채널</th><th>상호</th><th>사업자</th><th>이모지</th><th>담당</th>
+            <th class="n">착수</th><th class="n">마감까지</th><th>요청내용</th></tr></thead>
           <tbody>${ns.rows.map(r => `<tr>
             <td>${esc(r.stamp.slice(5))}</td>
             <td>${esc(r.owner)}</td>
@@ -644,6 +844,8 @@ ${ns.live.length === 0 ? `
             <td>${esc(r.biz || '-')}</td>
             <td>${tags(r)}</td>
             <td>${esc(r.emp || '-')}</td>
+            <td class="n">${minTxt(r.ackMin)}</td>
+            <td class="n">${minTxt(r.doneMin)}</td>
             <td>${esc(r.req || '-')}</td></tr>`).join('')}</tbody>
         </table>
       </div>
@@ -663,7 +865,10 @@ ${ns.live.length === 0 ? `
       · 이모지가 하나도 없는 건은 <strong>이모지 없음(미처리)</strong> 으로 따로 셌습니다.<br>
       · <strong>미설치건</strong>은 [예약] 표기와 무관하게 <strong>${esc(nsNames)}</strong> 세 분이 올린 글을
         작성자(슬랙 멤버 ID) 기준으로 추린 것입니다. 예약 집계와 모수가 다르고, 일부는 서로 겹칩니다(겹친 건 ${ns.booked}건).
-        마감 여부는 카테고리 이모지(원격온보딩·원격as·원격명의변경·원격메뉴등록·원격배달·원격외주)가 찍혔는지로 판단했습니다.
+        마감 여부는 카테고리 이모지(원격온보딩·원격as·원격명의변경·원격메뉴등록·원격배달·원격외주)가 찍혔는지로 판단했습니다.<br>
+      · <strong>소요시간</strong>은 슬랙이 이모지 시각을 주지 않아 새로 계산할 수 없습니다. 대시보드 집계가 10분마다
+        스냅샷을 비교해 적어 둔 추정치(<code>slack-data.js</code>)를 일시·사업자번호로 맞춰 붙였습니다 — 오차 ±10분,
+        추적이 닿은 건만 표본입니다.
     </div>
     <div class="meta">생성 ${esc(new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 16).replace('T', ' '))} KST
       · scripts/booking-report.js</div>
