@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12737,
+  "version": 12738,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -195700,11 +195700,11 @@ window.SLACK_DATA = {
                 "cat": "단말기 설치나 초기 과정이 어려움"
               }
             ],
-            "emp": "",
-            "autoStatus": "",
-            "autoEmp": "",
+            "emp": "지혜",
+            "autoStatus": "처리완료",
+            "autoEmp": "지혜",
             "autoNote": "• CID 연동 방법 &amp; 오류로 8/24 , 9/8 고객센터 문의주신 매장 • 연동 오류로 토플측 추가 문의했으나, 이미 연동된 사업장이라고만 안내 받으셨고 후속처리 없는 부분 불편 - 개선요청 토스플레이스와 상담하신 내역에 대해서는 확인 어려운 점 양해 명변 영향이 있을 수 있으나, 정확한 내용은 토플로 확인 필요한 점 • 본 상담원이 토플 문의 ",
-            "doneDate": ""
+            "doneDate": "2026-09-23"
           }
         ],
         "praises": [
@@ -199632,6 +199632,14 @@ window.SLACK_DATA = {
     },
     "2026-09-23": {
       "counts": {
+        "onboarding": {
+          "배선유": 1,
+          "김동욱": 3,
+          "심성현": 1,
+          "김현기": 1,
+          "고경림": 4,
+          "송태양": 1
+        },
         "extern": {
           "서상원": 3,
           "김동욱": 2
@@ -199643,13 +199651,6 @@ window.SLACK_DATA = {
           "심성현": 4,
           "송태양": 3,
           "김현기": 2
-        },
-        "onboarding": {
-          "김동욱": 2,
-          "심성현": 1,
-          "김현기": 1,
-          "고경림": 4,
-          "송태양": 1
         },
         "transfer": {
           "송태양": 2
@@ -199670,6 +199671,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / 고치돈 삭제 / 고치돈 땡기네"
+        },
+        {
+          "time": "11:15",
+          "store": "쁘램요가 경주점",
+          "biz": "7451001697",
+          "cat": "onboarding",
+          "emp": "배선유",
+          "req": "포프(휴대폰) 온보딩 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료"
         },
         {
           "time": "11:11",
@@ -199780,6 +199792,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": ""
+        },
+        {
+          "time": "10:45",
+          "store": "피자가기가막혀",
+          "biz": "2220973561",
+          "cat": "onboarding",
+          "emp": "김동욱",
+          "req": "터+프 온보딩 요청 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "터프 온보딩 완료"
         },
         {
           "time": "10:45",
@@ -200069,11 +200092,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 31,
+        "online": 33,
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "11:18"
+      "updatedAt": "11:23"
     }
   },
   "resp": {
@@ -200235,13 +200258,6 @@ window.SLACK_DATA = {
       "1790038608.680899": {
         "post": "1790038608.680899",
         "lastSeen": 1790108127.224
-      },
-      "1790127901.032539": {
-        "post": "1790127901.032539",
-        "lastSeen": 1790129989.921,
-        "r": 1,
-        "day": "2026-09-23",
-        "idx": 8
       }
     },
     "days": {
@@ -265413,7 +265429,8 @@ window.SLACK_DATA = {
             "store": "피자가기가막혀",
             "biz": "2220973561",
             "who": "김동욱",
-            "cat": "as"
+            "cat": "onboarding",
+            "dmin": 37.2
           },
           {
             "hm": "10:45",
@@ -265456,7 +265473,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-23 11:20",
+    "at": "2026-09-23 11:24",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
