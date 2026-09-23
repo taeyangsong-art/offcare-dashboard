@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12709,
+  "version": 12710,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -199624,6 +199624,9 @@ window.SLACK_DATA = {
           "김동욱": 2,
           "송태양": 1
         },
+        "onboarding": {
+          "고경림": 1
+        },
         "extern": {
           "김동욱": 1
         }
@@ -199640,6 +199643,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "영수증 커스텀 불가 안내드림"
+        },
+        {
+          "time": "09:30",
+          "store": "호반한식뷔페",
+          "biz": "5984301518",
+          "cat": "onboarding",
+          "emp": "고경림",
+          "req": "포프(노트북) + 터미널2 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트+터미널2 온보딩완료 사용법안내완료"
         },
         {
           "time": "09:16",
@@ -199676,11 +199690,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 2,
+        "online": 3,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:30"
+      "updatedAt": "09:39"
     }
   },
   "resp": {
@@ -199842,6 +199856,10 @@ window.SLACK_DATA = {
       "1790038608.680899": {
         "post": "1790038608.680899",
         "lastSeen": 1790108127.224
+      },
+      "1790123954.750449": {
+        "post": "1790123954.750449",
+        "lastSeen": 1790123962.198
       }
     },
     "days": {
@@ -264933,7 +264951,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-23 09:36",
+    "at": "2026-09-23 09:39",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
