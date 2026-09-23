@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2395,
- "updatedAt": "2026-09-23 11:41",
+ "version": 2396,
+ "updatedAt": "2026-09-23 11:49",
  "days": 30,
  "items": [
   {
@@ -61464,29 +61464,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787541035648889"
-  },
-  {
-   "ts": "1787539728.301999",
-   "date": "2026-08-24",
-   "time": "11:48",
-   "store": "강창구찹쌀진순대 덕소점",
-   "biz": "2061953558",
-   "pos": "퍼스트포스",
-   "content": "메뉴 가격 수정 및 추가",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "돈까스9000삭제해주시고\n접시추가6000원으로정정해주세요\n\n뼈정식17000\n인삼정식\n19000\n추어탕11000"
-   ],
-   "rc": 2,
-   "lr": "1787539738.208739",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787539728301999"
   }
  ],
  "ocr": {
