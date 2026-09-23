@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12705,
+  "version": 12706,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -199620,12 +199620,38 @@ window.SLACK_DATA = {
     },
     "2026-09-23": {
       "counts": {
+        "extern": {
+          "김동욱": 1
+        },
         "as": {
+          "송태양": 1,
           "김동욱": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:16",
+          "store": "유겐",
+          "biz": "1880603255",
+          "cat": "extern",
+          "emp": "김동욱",
+          "req": "외주",
+          "hw": "",
+          "intake": "offline",
+          "note": ""
+        },
+        {
+          "time": "09:16",
+          "store": "알리오네",
+          "biz": "6703500344",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "QR 연동",
+          "hw": "",
+          "intake": "online",
+          "note": "연동완료"
+        },
         {
           "time": "09:05",
           "store": "강창구찹쌀진순대청송점",
@@ -199639,11 +199665,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 0,
-        "offline": 1,
+        "online": 1,
+        "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "09:05"
+      "updatedAt": "09:16"
     }
   },
   "resp": {
@@ -264896,7 +264922,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-23 09:15",
+    "at": "2026-09-23 09:17",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
