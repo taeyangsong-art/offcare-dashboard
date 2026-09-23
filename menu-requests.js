@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2386,
- "updatedAt": "2026-09-22 18:42",
+ "version": 2387,
+ "updatedAt": "2026-09-23 10:13",
  "days": 30,
  "items": [
   {
@@ -61940,29 +61940,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787535950311249"
-  },
-  {
-   "ts": "1787533715.597499",
-   "date": "2026-08-24",
-   "time": "10:08",
-   "store": "요선염소탕",
-   "biz": "8143301838",
-   "pos": "토스포스",
-   "content": "푸른바다 찜&탕\n죽이요\n돈돈 김치찌개&찜",
-   "special": "매장명을 헬로우푸드로 바꿔 주세요",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "작업 불가, 재접수 요청"
-   ],
-   "rc": 2,
-   "lr": "1787534113.234799",
-   "rfx": 3,
-   "status": "wait",
-   "handler": null,
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787533715597499"
   }
  ],
  "ocr": {
