@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12722,
+  "version": 12723,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -199621,8 +199621,8 @@ window.SLACK_DATA = {
     "2026-09-23": {
       "counts": {
         "as": {
+          "고경림": 3,
           "심성현": 1,
-          "고경림": 2,
           "김현기": 1,
           "김동욱": 2,
           "송태양": 1
@@ -199639,6 +199639,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:20",
+          "store": "용인대석사 엠앤에이취（M &amp; H）태권도",
+          "biz": "1359148268",
+          "cat": "as",
+          "emp": "고경림",
+          "req": "터미널은 결제가 되나 프론트는 결제가 안된다하여 점검부탁드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "터미널 + 프론트2 단독결제 사용매장 결제방법 안내완료"
+        },
         {
           "time": "10:12",
           "store": "주식회사 에스엠씨",
@@ -199784,11 +199795,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 10,
+        "online": 11,
         "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "10:20"
+      "updatedAt": "10:26"
     }
   },
   "resp": {
@@ -199953,10 +199964,14 @@ window.SLACK_DATA = {
       },
       "1790126353.947529": {
         "post": "1790126353.947529",
-        "lastSeen": 1790126719.939,
+        "lastSeen": 1790126842.49,
         "r": 1,
         "day": "2026-09-23",
         "idx": 4
+      },
+      "1790125204.498489": {
+        "post": "1790125204.498489",
+        "lastSeen": 1790126842.49
       }
     },
     "days": {
@@ -265099,7 +265114,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-23 10:25",
+    "at": "2026-09-23 10:27",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
