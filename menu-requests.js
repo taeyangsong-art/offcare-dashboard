@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2397,
- "updatedAt": "2026-09-23 11:58",
+ "version": 2398,
+ "updatedAt": "2026-09-23 12:12",
  "days": 30,
  "items": [
   {
@@ -61384,86 +61384,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787550023237509"
-  },
-  {
-   "ts": "1787541035.648889",
-   "date": "2026-08-24",
-   "time": "12:10",
-   "store": "와사",
-   "biz": "3235600050",
-   "pos": "토스포스",
-   "content": "첫메뉴판 등록",
-   "special": "메일 보낼께요",
-   "drive": [
-    "https://drive.google.com/file/d/1o8EFGLhIPyhO6C6Bm8Rfczwci352AX8Y/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "1o8EFGLhIPyhO6C6Bm8Rfczwci352AX8Y",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "점심메뉴",
-       "name": "카레라이스",
-       "price": 8000
-      },
-      {
-       "category": "점심메뉴",
-       "name": "돈까스 카레",
-       "price": 10000
-      },
-      {
-       "category": "점심메뉴",
-       "name": "치킨 카레",
-       "price": 11000
-      },
-      {
-       "category": "점심메뉴",
-       "name": "고로케 카레",
-       "price": 11000
-      },
-      {
-       "category": "점심메뉴",
-       "name": "멘치카츠 카레",
-       "price": 11000
-      },
-      {
-       "category": "점심메뉴",
-       "name": "새우튀김 카레",
-       "price": 12000
-      },
-      {
-       "category": "점심메뉴",
-       "name": "치즈돈까스 카레",
-       "price": 14000
-      },
-      {
-       "category": "점심메뉴",
-       "name": "냉우동+돈까스",
-       "price": 12000
-      },
-      {
-       "category": "점심메뉴",
-       "name": "가츠동",
-       "price": 11000
-      },
-      {
-       "category": "점심메뉴",
-       "name": "제육덮밥",
-       "price": 12000
-      }
-     ]
-    }
-   ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787541039.765609",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787541035648889"
   }
  ],
  "ocr": {
