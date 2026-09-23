@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12703,
+  "version": 12704,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -199619,12 +199619,28 @@ window.SLACK_DATA = {
       }
     },
     "2026-09-23": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "김동욱": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:05",
+          "store": "강창구찹쌀진순대청송점",
+          "biz": "5510202344",
+          "cat": "as",
+          "emp": "김동욱",
+          "req": "오케이포스 이용중, 금일 날짜로 개점 처리가 안된다고 하셔서 원격 점검 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "전일 마감 후 테이블 수정을 위해 개점처리하셨다가 다시 마감하심. 마감취소하여 23일로 원복해드림"
+        }
+      ],
       "intake": {
         "online": 0,
-        "offline": 0,
+        "offline": 1,
         "unknown": 0
       },
       "updatedAt": "09:05"
@@ -264880,7 +264896,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-23 09:06",
+    "at": "2026-09-23 09:11",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
