@@ -3,10 +3,39 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2402,
- "updatedAt": "2026-09-23 13:45",
+ "version": 2403,
+ "updatedAt": "2026-09-23 13:49",
  "days": 30,
  "items": [
+  {
+   "ts": "1790138890.725719",
+   "date": "2026-09-23",
+   "time": "13:48",
+   "store": "형과아우삼계탕안락점",
+   "biz": "4136200733",
+   "pos": "오케이포스",
+   "content": "들깨삼계탕 추가\n18000\n\n포장메뉴에도 들어가야 함",
+   "special": "",
+   "drive": [
+    "https://drive.google.com/file/d/1e6wibJscig9tcs-5NEEwGoSeVXOrz2ub/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1e6wibJscig9tcs-5NEEwGoSeVXOrz2ub",
+     "kind": "product_photo",
+     "menu": []
+    }
+   ],
+   "replies": [],
+   "rc": 0,
+   "lr": "",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1790138890725719"
+  },
   {
    "ts": "1790137763.132519",
    "date": "2026-09-23",
