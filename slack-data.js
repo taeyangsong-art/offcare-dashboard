@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12747,
+  "version": 12748,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -199634,12 +199634,12 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "김현기": 5,
+          "심성현": 5,
           "김동욱": 7,
           "배선유": 1,
           "고경림": 6,
           "송태양": 4,
-          "김규빈": 2,
-          "심성현": 4
+          "김규빈": 2
         },
         "onboarding": {
           "송태양": 2,
@@ -199672,6 +199672,18 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "속도를 115,200으로 설정 했음 / 9,600 변경 후 정상 출력 확인"
+        },
+        {
+          "time": "11:51",
+          "store": "온찬",
+          "biz": "2951902699",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "별도 보유중인 오케이포스 포스기에서 프론트와 연결이 끊어졌다고 뜨고, 프론트는 네트워크 끊겼다고 나오나 인터넷은 이상없다고 하시어 도움 부탁드립니다!",
+          "hw": "",
+          "urgent": true,
+          "intake": "online",
+          "note": ""
         },
         {
           "time": "11:49",
@@ -200225,11 +200237,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 43,
+        "online": 44,
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "11:55"
+      "updatedAt": "12:01"
     }
   },
   "resp": {
@@ -200391,6 +200403,10 @@ window.SLACK_DATA = {
       "1790038608.680899": {
         "post": "1790038608.680899",
         "lastSeen": 1790108127.224
+      },
+      "1790132463.758149": {
+        "post": "1790132463.758149",
+        "lastSeen": 1790132532.894
       }
     },
     "days": {
@@ -265624,7 +265640,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-23 11:58",
+    "at": "2026-09-23 12:02",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
