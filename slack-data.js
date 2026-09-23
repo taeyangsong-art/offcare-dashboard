@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12751,
+  "version": 12752,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -199633,8 +199633,8 @@ window.SLACK_DATA = {
     "2026-09-23": {
       "counts": {
         "as": {
+          "김현기": 6,
           "심성현": 6,
-          "김현기": 5,
           "김동욱": 7,
           "배선유": 1,
           "고경림": 6,
@@ -199662,6 +199662,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "12:00",
+          "store": "심빛달 몸과마음연구소",
+          "biz": "8339201587",
+          "cat": "as",
+          "emp": "김현기",
+          "req": "포프(노트북) + 터미널2 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "지금 또 급하게 상담이 잡힘, 17시 이후로 재예약"
+        },
         {
           "time": "11:59",
           "store": "소소한오늘",
@@ -200248,7 +200259,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 45,
+        "online": 46,
         "offline": 8,
         "unknown": 0
       },
@@ -200413,14 +200424,14 @@ window.SLACK_DATA = {
       },
       "1790132463.758149": {
         "post": "1790132463.758149",
-        "lastSeen": 1790132898.944,
+        "lastSeen": 1790132966.099,
         "r": 1,
         "day": "2026-09-23",
         "idx": 15
       },
       "1790132744.493529": {
         "post": "1790132744.493529",
-        "lastSeen": 1790132898.944,
+        "lastSeen": 1790132966.099,
         "r": 1,
         "day": "2026-09-23",
         "idx": 16
@@ -265673,7 +265684,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-23 12:08",
+    "at": "2026-09-23 12:09",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
