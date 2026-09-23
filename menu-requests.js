@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2388,
- "updatedAt": "2026-09-23 10:31",
+ "version": 2389,
+ "updatedAt": "2026-09-23 10:49",
  "days": 30,
  "items": [
   {
@@ -61910,29 +61910,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787538510071999"
-  },
-  {
-   "ts": "1787535950.311249",
-   "date": "2026-08-24",
-   "time": "10:45",
-   "store": "포방터 카페",
-   "biz": "1562600701",
-   "pos": "",
-   "content": "메뉴",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "https://w1659946222-hxm266180.slack.com/archives/C0ADC9759KQ/p1787534447248329?thread_ts=···.884189&cid=C0ADC9759KQ https://w1659946222-hxm266180.slack.com/archives/C0ADC9759KQ/p1787534459886959?thread_ts=···.884189&cid=C0ADC9759KQ"
-   ],
-   "rc": 3,
-   "lr": "1787537091.441899",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787535950311249"
   }
  ],
  "ocr": {
