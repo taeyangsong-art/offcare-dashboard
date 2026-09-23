@@ -26,6 +26,22 @@ const catMap = { '원격온보딩':'onboarding', '원격as':'as', '원격명의�
  * 이모지 이름이 '원격예약' 인지 '예약' 인지 확정 전이라 둘 다 받는다. */
 const workCatOf = names => names.some(n => catMap[n] === 'booking') ? 'booking'
   : (names.map(n => catMap[n]).find(c => c && c !== 'voc') || null);   // 원격voc는 업무 카테고리로 안 씀(설문 VOC로 별도 집계)
+
+/* 미설치(2026-09-24~, 과거분은 백필) — 본문에 [예약]·(예약) 표기가 있고 아래 세 분이 올린 글.
+ * 완료로 적재될 글이면 찍힌 카테고리 이모지(원격온보딩·원격as·원격예약…)와 무관하게 'nosetup' 으로 센다.
+ * 외주(원격외주)만은 외주로 둔다. 미처리(부재·확인 후 미완료)로 남으면 pending 의 cat 도 nosetup.
+ * users:read 가 막혀 있어 멤버 ID 를 박아 둔다(booking-report.js 와 같은 값). 워크플로 글은 작성자가 봇이라 '요청자:' 줄로 본다. */
+const RE_BOOKING = /[\[\(（]\s*예약\s*[\]\)）]/;
+const RE_REQUESTER = /요청자\s*[:：]\s*([가-힣]{2,4})/;
+const NOSETUP_IDS = { U03SA42QD55: '김봉수', U0BS7HSKJ65: '최승훈', U0BAKTSNZ9P: '김규리' };
+const NOSETUP_NAMES = Object.values(NOSETUP_IDS);
+function isNoSetup(m) {
+  const text = blocksText(m);
+  if (!RE_BOOKING.test(text)) return false;
+  if (NOSETUP_IDS[m.user]) return true;
+  const q = text.match(RE_REQUESTER);
+  return !!(q && NOSETUP_NAMES.includes(q[1]));
+}
 // 이모지 이름 목록은 personMap에서 자동 생성 — 입·퇴사 시 personMap만 고치면 됨
 const NAMES = Object.keys(personMap).join('|');
 const RE_EMP      = new RegExp('^원격(' + NAMES + ')$');          // 원격OOO (완료 담당자)
@@ -300,6 +316,9 @@ async function tallyInto(msgs, ch, counts, pending, done, opts) {
     const invalidPost = hasX && !!toucher;                                   // 착수 + X → 잘못 올린 글 → 부재/미처리 제외
     const ageSec = now.getTime() / 1000 - parseFloat(m.ts || '0');   // 메시지 게시 후 경과(초) — 확인/부재 유예 판정용
 
+    const noSetup = isNoSetup(m);
+    const pendCat = noSetup ? 'nosetup' : ch.defaultCat;   // 미처리로 남을 때 표시 카테고리
+
     if (hasDup) { dup++; continue; }         // 중복 이모지 → 집계 제외 (재처리는 중복 표시 없으니 별개 건으로 정상 집계됨)
 
     if (hasVocTag && !emojiCat) { continue; }   // 원격voc만 찍힌 순수 VOC 참조 → 업무 집계 제외(설문 VOC로만 관리)
@@ -312,16 +331,16 @@ async function tallyInto(msgs, ch, counts, pending, done, opts) {
       counts.extern[who] = (counts.extern[who] || 0) + 1; externCount++;
       done.push({ time, store, biz, cat: 'extern', emp: who, req, hw, urgent, intake, note: await grabNote(m, 'extern', time, store, biz) });
     } else if (emojiCat || (emp && !ch.requireCat && !newRule)) {   // 카테고리 이모지 있음. (옛 규칙 한정) AS채널은 '원격XX'만 있어도 완료→defaultCat
-      const catKey = emojiCat || ch.defaultCat;
+      const catKey = noSetup ? 'nosetup' : (emojiCat || ch.defaultCat);
       const who = emp || confirmPerson || '미지정';
       counts[catKey] = counts[catKey] || {};
       counts[catKey][who] = (counts[catKey][who] || 0) + 1; completed++;
       done.push({ time, store, biz, cat: catKey, emp: who, req, hw, urgent, intake, note: await grabNote(m, catKey, time, store, biz) });
     } else if (hasAbsent && !invalidPost) {  // 완료·카테고리 이모지 없이 '부재만' (확인+X 잘못올린글 제외)
       // 2차부재(재부재=연락 불가)는 확인필요에서 제외, 1차부재만 — 그것도 1시간 지나야 확인필요로 적재
-      if (absTag !== '2차 부재' && ageSec >= CONFIRM_GRACE_SEC) pending.push({ time, store, biz, handler: doer || '미지정', cat: ch.defaultCat, intake, reasons: [absTag] });
+      if (absTag !== '2차 부재' && ageSec >= CONFIRM_GRACE_SEC) pending.push({ time, store, biz, handler: doer || '미지정', cat: pendCat, intake, reasons: [absTag] });
     } else if (toucher && !invalidPost) { // 착수만 찍힘 → 1시간 지나면 '확인 후 미완료' (착수+X 잘못올린글 제외)
-      if (ageSec >= CONFIRM_GRACE_SEC) pending.push({ time, store, biz, handler: toucher, cat: ch.defaultCat, intake, reasons: ['확인 후 미완료'] });
+      if (ageSec >= CONFIRM_GRACE_SEC) pending.push({ time, store, biz, handler: toucher, cat: pendCat, intake, reasons: ['확인 후 미완료'] });
     }
   }
   return { completed, externCount, dup, latest };

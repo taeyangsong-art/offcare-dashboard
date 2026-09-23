@@ -1552,6 +1552,8 @@ const WORK_CATS = [
   // 예약 — 2026-09-24부터 슬랙 '원격예약'(또는 '예약') 이모지로 적재. 다른 카테고리 이모지보다 우선한다(fetch-and-tally.js workCatOf).
   // WORK_CATS 에 있으므로 원격 총 건수·직원별 표에 자동 합산된다.
   {key:"booking",    name:"예약",     icon:"🗓️", color:"#a2845e"},
+  // 미설치 — [예약]·(예약) 표기 + 김봉수·최승훈·김규리 작성 글. 찍힌 카테고리 이모지보다 우선한다(fetch-and-tally.js isNoSetup).
+  {key:"nosetup",    name:"미설치",   icon:"📦", color:"#bf5af2"},
   {key:"extern",     name:"외주",     icon:"🧩", color:"#8e8e93"},
 ];  // VOC는 고객 설문이라 별도 페이지가 있지만, 확인 담당자 기준 처리량은 직원별 집계에 포함된다
 // 직원별 처리량 차트/범례용 = 업무 카테고리 + VOC.
