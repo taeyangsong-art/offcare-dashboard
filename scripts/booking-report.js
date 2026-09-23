@@ -528,6 +528,7 @@ function timeStat(list, pick) {
 
   fs.writeFileSync(path.join(OUT_DIR, 'booking-report.html'),
     renderHtml({ FROM, TO, total, live, rows, stat, statSum, cross, byEmp, byDate, byCh, scanned, ns }), 'utf8');
+  require('./booking-share').build(OUT_DIR);   // 원본 표·CSV 뺀 외부 공유본
 
   console.log(`\n✅ ${OUT_DIR}/booking-report.html · ${OUT_DIR}/booking-report.csv 생성 (${rows.length}행)`);
 })().catch(e => { console.error(e.message); process.exit(1); });

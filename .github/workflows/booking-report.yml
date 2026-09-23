@@ -4,7 +4,7 @@ name: booking-report (예약 리포트)
 # 슬랙 원문을 다시 읽어야 하는데 SLACK_BOT_TOKEN 이 여기(Actions 시크릿)에만 있어 워크플로로 돌린다.
 #
 # 실행: Actions 탭 → booking-report → Run workflow → 기간 확인 → 실행 (약 1분)
-# 결과: share/booking-report.html · share/booking-report.csv · share/nosetup-report.csv 가 커밋된다
+# 결과: share/booking-report.html · share/booking-report-share.html(외부 공유본) · share/booking-report.csv · share/nosetup-report.csv 가 커밋된다
 #   https://taeyangsong-art.github.io/offcare-dashboard/share/booking-report.html
 on:
   workflow_dispatch:
@@ -46,10 +46,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ -z "$(git status --porcelain share/booking-report.html share/booking-report.csv share/nosetup-report.csv 2>/dev/null)" ]; then
+          if [ -z "$(git status --porcelain share/booking-report.html share/booking-report-share.html share/booking-report.csv share/nosetup-report.csv 2>/dev/null)" ]; then
             echo "변경 없음 — 커밋 생략"
           else
-            git add share/booking-report.html share/booking-report.csv share/nosetup-report.csv
+            git add share/booking-report.html share/booking-report-share.html share/booking-report.csv share/nosetup-report.csv
             git commit -m "chore: 예약 리포트 갱신 (${{ inputs.from_date }} ~ ${{ inputs.to_date }})"
             for i in 1 2 3 4 5; do
               git pull --rebase --autostash origin main && git push && { echo "푸시 성공"; exit 0; }
