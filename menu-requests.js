@@ -3,10 +3,33 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2410,
- "updatedAt": "2026-09-23 14:52",
+ "version": 2411,
+ "updatedAt": "2026-09-23 15:18",
  "days": 30,
  "items": [
+  {
+   "ts": "1790144213.515159",
+   "date": "2026-09-23",
+   "time": "15:16",
+   "store": "라펠리시타(LaFelisita)",
+   "biz": "8280903451",
+   "pos": "",
+   "content": "메뉴등록 요청 / 아이스 +500원 추가 / 옵션말고 별도 상품으로 부탁드러요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [
+    "사진대기중"
+   ],
+   "rc": 2,
+   "lr": "1790144252.096669",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1790144213515159"
+  },
   {
    "ts": "1790141297.045979",
    "date": "2026-09-23",
