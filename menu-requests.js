@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2429,
- "updatedAt": "2026-09-23 18:02",
+ "version": 2430,
+ "updatedAt": "2026-09-23 19:16",
  "days": 30,
  "items": [
   {
@@ -61532,36 +61532,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "서상원",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787567102274389"
-  },
-  {
-   "ts": "1787566434.409309",
-   "date": "2026-08-24",
-   "time": "19:13",
-   "store": "씨씨디(CCD)마산경남대점",
-   "biz": "5062794207",
-   "pos": "",
-   "content": "• <mailto:···|···> / 해당 메일로 메뉴 보냈으며, 빠른 등록 요청 주셨어요.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "Screenshot_20260824_190530_Contacts.jpg",
-     "fid": "F0BS6EYR2MC",
-     "from": "댓글",
-     "kind": "other",
-     "menu": [],
-     "path": "menu-files/1787566434_409309-0.jpg"
-    }
-   ],
-   "datt": [],
-   "replies": [],
-   "rc": 4,
-   "lr": "1787570017.525039",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787566434409309"
   }
  ],
  "ocr": {
