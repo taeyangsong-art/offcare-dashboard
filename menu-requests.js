@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2387,
- "updatedAt": "2026-09-23 10:13",
+ "version": 2388,
+ "updatedAt": "2026-09-23 10:31",
  "days": 30,
  "items": [
   {
@@ -16342,13 +16342,6 @@ window.MENU_REQUESTS = {
        "price": 0
       }
      ]
-    },
-    {
-     "name": "(키오스크) 움버거앤윙스_미리내 메뉴 셋팅_치킨불고기.xlsx.exs",
-     "fid": "F0C24UX47MY",
-     "from": "원글",
-     "path": "menu-files/1789522108_300109-0.exs",
-     "nj": 1
     }
    ],
    "datt": [],
