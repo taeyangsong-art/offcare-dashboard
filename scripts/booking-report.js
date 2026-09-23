@@ -175,11 +175,18 @@ function loadElapsedIndex() {
   }
   if (!resp || !resp.days) { console.error('  ⚠ slack-data.js 에 응답시간 추적(resp)이 없어 소요시간은 비웁니다.'); return null; }
   const idx = {};
-  let n = 0, withDone = 0, firstDone = '';
+  let n = 0, withDone = 0, firstDone = '', lastDone = '';
+  const refBy = {};   // 참고 수치 — 리포트 기간과 무관하게 '추적된 전 기간' 의 소요시간 표본
   for (const [day, de] of Object.entries(resp.days)) {
     for (const it of (de.items || [])) {
       n++;
-      if (it.dmin != null) { withDone++; if (!firstDone || day < firstDone) firstDone = day; }
+      if (it.dmin != null) {
+        withDone++;
+        if (!firstDone || day < firstDone) firstDone = day;
+        if (day > lastDone) lastDone = day;
+        (refBy[it.cat || '?'] = refBy[it.cat || '?'] || []).push(it);
+        (refBy.all = refBy.all || []).push(it);
+      }
       // 사업자번호가 가장 확실한 열쇠. 안 적힌 글은 상호로 — 적재 쪽에서 30자로 잘리므로 같은 길이로 자른다.
       for (const tail of [it.biz, (it.store || '').slice(0, 30)]) {
         if (!tail) continue;
@@ -188,7 +195,7 @@ function loadElapsedIndex() {
       }
     }
   }
-  return { idx, n, withDone, firstDone };
+  return { idx, n, withDone, firstDone, lastDone, refBy };
 }
 
 const prevDate = d => {
@@ -370,8 +377,18 @@ function timeStat(list, pick) {
   /* 소요시간 — 마감 유형별로 '올라온 뒤 그 이모지가 찍히기까지' 몇 분이었나.
      온보딩을 먼저 본다(미설치건의 절반이 온보딩으로 마감된다). 표본은 폴링 추적이 닿은 건만이라
      모수보다 적다 → 커버리지를 같이 보여줘야 숫자를 오해하지 않는다. */
+  /* 참고 수치 — 리포트 기간이 소요시간 추적(2026-08-31~)보다 앞서면 위 표본이 0 이 된다.
+     그때도 "온보딩 마감은 대체로 몇 분이냐"는 답은 줄 수 있어야 해서, 추적된 전 기간 표본을 따로 낸다.
+     요청자 구분 없는 원격팀 전체 수치다 — 미설치건만 추린 값이 아니라는 걸 페이지에 밝힌다. */
+  const ref = elapsed ? {
+    from: elapsed.firstDone, to: elapsed.lastDone,
+    rows: [['onboarding', '온보딩으로 마감'], ['as', 'AS로 마감'], ['all', '마감 전체']].map(([k, label]) => ({
+      key: k, label, stat: timeStat(elapsed.refBy[k] || [], it => it.dmin),
+    })),
+  } : null;
   ns.time = {
     src: elapsed ? { n: elapsed.n, withDone: elapsed.withDone, firstDone: elapsed.firstDone } : null,
+    ref,
     byCat: [['onboarding', '온보딩으로 마감'], ['as', 'AS로 마감']].map(([k, label]) => {
       const L = nsLive.filter(r => r.cat === k);
       return { key: k, label, target: L.length, stat: timeStat(L, r => r.doneMin) };
@@ -492,6 +509,50 @@ function renderHtml(d) {
   ns.time = ns.time || { src: null, byCat: [], doneAll: { n: 0, buckets: [] }, ack: { n: 0, buckets: [] }, ackTarget: 0 };
   const onbCat = ns.time.byCat.find(c => c.key === 'onboarding') || { target: 0, stat: { n: 0, buckets: [] } };
   const onbStat = onbCat.stat;
+  // 추적 전 기간 참고 수치 (요청자 무관). 기간 표본이 0 일 때는 이걸 크게 보여준다.
+  const ref = ns.time.ref;
+  const refOnb = (ref && (ref.rows.find(r => r.key === 'onboarding') || {}).stat) || { n: 0, buckets: [] };
+  // 참고 표 — 기간 표본이 있든 없든 항상 함께 둔다(기간 값과 전체 값을 나란히 읽게)
+  const refTable = !ref || !refOnb.n ? '' : `
+    <h2 style="margin-top:${onbStat.n ? 48 : 56}px;font-size:21px">참고 · 추적 전 기간 기준</h2>
+    <div style="font-size:14px;color:var(--ink-48)">소요시간 추적이 남아 있는 <strong>${esc(ref.from)} ~ ${esc(ref.to)}</strong> 전체 표본입니다.
+      요청자 구분 없이 <strong>원격팀이 처리한 모든 건</strong>이라 위 미설치건 수치와 모수가 다릅니다.</div>
+    <table>
+      <thead><tr><th>구분</th><th class="n">표본</th><th class="n">중앙값</th><th class="n">평균</th><th class="n">p90</th><th class="n">최대</th></tr></thead>
+      <tbody>${ref.rows.filter(r => r.stat.n).map(r => `<tr>
+        <td>${esc(r.label)}</td>
+        <td class="n">${r.stat.n.toLocaleString()}</td>
+        <td class="n">${minTxt(r.stat.med)}</td>
+        <td class="n">${minTxt(r.stat.avg)}</td>
+        <td class="n">${minTxt(r.stat.p90)}</td>
+        <td class="n">${minTxt(r.stat.max)}</td>
+      </tr>`).join('')}</tbody>
+    </table>`;
+  // 참고 수치를 큰 카드로 (기간 표본이 없을 때의 대체 표시)
+  const refKeys = !refOnb.n ? '' : `
+    <div class="keys" style="margin-top:36px">
+      <div class="key"><div class="kl">온보딩 마감 · 중앙값</div>
+        <div class="kn">${minTxt(refOnb.med)}</div>
+        <div class="kp">표본 ${refOnb.n.toLocaleString()}건 · ${esc(ref.from)} ~ ${esc(ref.to)}</div>
+        <div class="kbar"><i style="width:100%"></i></div></div>
+      <div class="key"><div class="kl">평균</div>
+        <div class="kn">${minTxt(refOnb.avg)}</div>
+        <div class="kp">가장 오래 걸린 건 ${minTxt(refOnb.max)}</div>
+        <div class="kbar"><i style="width:100%"></i></div></div>
+      <div class="key"><div class="kl">10건 중 9건은</div>
+        <div class="kn">${minTxt(refOnb.p90)}<span style="font-size:20px;font-weight:400"> 안</span></div>
+        <div class="kp">p90 (상위 10%를 뺀 값)</div>
+        <div class="kbar"><i style="width:90%"></i></div></div>
+    </div>
+    <table>
+      <thead><tr><th>구간</th><th class="n">건수</th><th class="n">비중</th><th style="width:38%"></th></tr></thead>
+      <tbody>${refOnb.buckets.map(b => `<tr>
+        <td>${esc(b.label)}</td>
+        <td class="n">${b.n}</td>
+        <td class="n">${pctOf(b.n, refOnb.n)}%</td>
+        <td><span class="bar" style="width:${pctOf(b.n, refOnb.n) * 2.6}px"></span></td>
+      </tr>`).join('')}</tbody>
+    </table>`;
   // 한 건에 찍힌 이모지를 태그로 — 예약 원본표와 미설치 원본표가 같은 표기를 쓰도록 함수로 뺀다
   const tags = r => `${r.catKo ? `<span class="tag on">${esc(r.catKo)}</span>` : ''}${r.abs2 ? '<span class="tag warn">2차부재</span>' : ''}${r.abs1 ? '<span class="tag">1차부재</span>' : ''}${r.dup ? '<span class="tag">중복</span>' : ''}${r.invalid ? '<span class="tag">잘못올린글</span>' : ''}${!r.catKo && !r.abs1 && !r.abs2 && !r.dup && !r.invalid ? '<span class="tag">없음</span>' : ''}`;
   const key = [
@@ -818,11 +879,19 @@ ${ns.people.some(p => p.onbTime.n) ? `
         (전체 추적 ${ns.time.src.n.toLocaleString()}건 중 소요시간 보유 ${ns.time.src.withDone.toLocaleString()}건).<br>
       · 새벽 01:00~05:29 에 올라온 글, 집계가 처음 봤을 때 이미 이모지가 있던 글, 올린 사람이 직접 처리한 글은 추적에서 빠집니다.<br>
       · 그래서 <strong>표본 &lt; 대상</strong> 입니다. 위 표의 '표본' 열이 실제로 시간을 재 본 건수입니다.</div>
+${refTable}
 ` : `
-    <div class="note" style="font-size:17px;margin-top:20px">이 기간에는 소요시간을 잰 표본이 없습니다.
-      소요시간 추적은 <strong>${esc(ns.time.src.firstDone || '-')}</strong> 적재분부터 남아 있습니다 —
-      그 이후 기간으로 다시 돌리면 채워집니다.
-      ${ns.time.ack.n ? `착수(첫 확인 이모지)까지는 표본 ${ns.time.ack.n}건 · 중앙값 ${minTxt(ns.time.ack.med)} 입니다.` : ''}</div>
+    <div class="note" style="font-size:17px;margin-top:20px">이 집계 기간(${esc(d.FROM)} ~ ${esc(d.TO)})에는 소요시간을 잰 표본이 없습니다 —
+      추적이 <strong>${esc(ns.time.src.firstDone || '-')}</strong> 적재분부터 시작됐기 때문입니다.
+      그래서 아래는 <strong>추적이 남아 있는 전 기간</strong>의 온보딩 마감 소요시간입니다
+      (요청자 구분 없이 원격팀이 처리한 모든 건).
+      ${ns.time.ack.n ? `이 기간의 착수(첫 확인 이모지)까지는 표본 ${ns.time.ack.n}건 · 중앙값 ${minTxt(ns.time.ack.med)} 입니다.` : ''}</div>
+${refKeys}
+    <div class="note">슬랙은 <strong>이모지가 찍힌 시각을 API 로 주지 않습니다</strong>.
+      그래서 대시보드 집계가 10분마다 돌며 이모지가 새로 붙은 걸 발견한 시점으로 역산한 값입니다 — <strong>오차 ±10분</strong>.<br>
+      · 새벽 01:00~05:29 에 올라온 글, 집계가 처음 봤을 때 이미 이모지가 있던 글, 올린 사람이 직접 처리한 글은 추적에서 빠집니다.<br>
+      · 집계 기간을 <strong>${esc(ns.time.src.firstDone || '-')}</strong> 이후로 잡고 다시 돌리면, 미설치건만 추린 소요시간이 이 자리에 채워집니다.</div>
+${refTable}
 `)}
 
     <div class="note">채널 분포 ${Object.entries(ns.byCh).sort((a, b) => b[1] - a[1])

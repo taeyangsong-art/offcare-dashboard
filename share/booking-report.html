@@ -4807,6 +4807,90 @@
         <td class="n" style="font-weight:600">모수와 일치</td><td></td></tr></tbody>
     </table>
 
+
+    <h2 style="margin-top:56px;font-size:21px">소요시간 — 올린 뒤 마감 이모지가 찍히기까지</h2>
+    <div style="font-size:14px;color:var(--ink-48)">마감 유형이 <strong>온보딩</strong>인 건은,
+      글이 올라온 시각부터 <strong>원격온보딩</strong> 이모지가 찍힌 시각까지 몇 분 걸렸는지입니다.
+      소요시간 추적이 남아 있는 <strong>2026-08-31 ~ 2026-09-23</strong> 표본이며,
+      요청자 구분 없이 <strong>원격팀이 처리한 모든 건</strong>이라 위 미설치건 모수와는 다릅니다.</div>
+
+    <div class="keys" style="margin-top:36px">
+      <div class="key"><div class="kl">온보딩 마감 · 중앙값</div>
+        <div class="kn">23.4분</div>
+        <div class="kp">표본 589건 · 2026-08-31 ~ 2026-09-23</div>
+        <div class="kbar"><i style="width:100%"></i></div></div>
+      <div class="key"><div class="kl">평균</div>
+        <div class="kn">30.1분</div>
+        <div class="kp">가장 오래 걸린 건 5시간 35분</div>
+        <div class="kbar"><i style="width:100%"></i></div></div>
+      <div class="key"><div class="kl">10건 중 9건은</div>
+        <div class="kn">54.3분<span style="font-size:20px;font-weight:400"> 안</span></div>
+        <div class="kp">p90 (상위 10%를 뺀 값)</div>
+        <div class="kbar"><i style="width:90%"></i></div></div>
+    </div>
+
+    <table>
+      <thead><tr><th>구분</th><th class="n">표본</th><th class="n">중앙값</th><th class="n">평균</th><th class="n">p90</th><th class="n">최대</th></tr></thead>
+      <tbody><tr>
+        <td>온보딩으로 마감</td>
+        <td class="n">589</td>
+        <td class="n">23.4분</td>
+        <td class="n">30.1분</td>
+        <td class="n">54.3분</td>
+        <td class="n">5시간 35분</td>
+      </tr><tr>
+        <td>AS로 마감</td>
+        <td class="n">2,427</td>
+        <td class="n">16.6분</td>
+        <td class="n">21.8분</td>
+        <td class="n">40.3분</td>
+        <td class="n">6시간 45분</td>
+      </tr><tr>
+        <td>마감 전체</td>
+        <td class="n">3,031</td>
+        <td class="n">17.6분</td>
+        <td class="n">23.4분</td>
+        <td class="n">43.7분</td>
+        <td class="n">6시간 45분</td>
+      </tr></tbody>
+    </table>
+
+    <h2 style="margin-top:56px;font-size:21px">온보딩 마감 소요시간 분포</h2>
+    <table>
+      <thead><tr><th>구간</th><th class="n">건수</th><th class="n">비중</th><th style="width:38%"></th></tr></thead>
+      <tbody><tr>
+        <td>15분 이내</td>
+        <td class="n">131</td>
+        <td class="n">22.2%</td>
+        <td><span class="bar" style="width:57.72px"></span></td>
+      </tr><tr>
+        <td>15~30분</td>
+        <td class="n">247</td>
+        <td class="n">41.9%</td>
+        <td><span class="bar" style="width:108.94px"></span></td>
+      </tr><tr>
+        <td>30분~1시간</td>
+        <td class="n">168</td>
+        <td class="n">28.5%</td>
+        <td><span class="bar" style="width:74.10000000000001px"></span></td>
+      </tr><tr>
+        <td>1~2시간</td>
+        <td class="n">38</td>
+        <td class="n">6.5%</td>
+        <td><span class="bar" style="width:16.900000000000002px"></span></td>
+      </tr><tr>
+        <td>2시간 초과</td>
+        <td class="n">5</td>
+        <td class="n">0.8%</td>
+        <td><span class="bar" style="width:2.08px"></span></td>
+      </tr></tbody>
+    </table>
+
+    <div class="note">슬랙은 <strong>이모지가 찍힌 시각을 API 로 주지 않습니다</strong>.
+      그래서 대시보드 집계가 10분마다 돌며 이모지가 새로 붙은 걸 발견한 시점으로 역산한 값입니다 — <strong>오차 ±10분</strong>.<br>
+      · 소요시간 추적은 <strong>2026-08-31</strong> 적재분부터 남아 있어, 그 전 기간(이 리포트의 8월분)은 아직 표본이 없습니다.<br>
+      · 새벽 01:00~05:29 에 올라온 글, 집계가 처음 봤을 때 이미 이모지가 있던 글, 올린 사람이 직접 처리한 글은 추적에서 빠집니다.</div>
+
     <div class="note">채널 분포 <span class="tag">원격 AS요청 522</span> <span class="tag">메뉴등록 1</span><br>
       이 중 <strong>[예약]</strong> 표기가 함께 달린 건은 412건입니다 — 그만큼 위 예약 집계와 겹칩니다.
       중복·잘못 올린 글 14건은 모수에서 뺐습니다.</div>
