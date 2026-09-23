@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2424,
- "updatedAt": "2026-09-23 17:29",
+ "version": 2425,
+ "updatedAt": "2026-09-23 17:34",
  "days": 30,
  "items": [
+  {
+   "ts": "1790152424.397739",
+   "date": "2026-09-23",
+   "time": "17:33",
+   "store": "린푸드",
+   "biz": "6182371004",
+   "pos": "토스포스",
+   "content": "해물린짬뽕 왕갈비짬뽕 닭다리살튀김짬뽕 굴듬뿍린짬뽕 고구마튀김린짜장 카테고리 면에 넣어주시고\n짬뽕메뉴들은 옵션에 매운맛1단계 2단계 3단계 0단계 넣어주시고 모든메뉴에 곱빼기1000원 옵션도 넣어주세요\n카테고리 밥에는 모든메뉴들앞에 (밥) 붙혀서 매운맛 단계만 옵션 넣어주세요",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 0,
+   "lr": "",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1790152424397739"
+  },
   {
    "ts": "1790152040.878679",
    "date": "2026-09-23",
@@ -18,11 +39,122 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C3SPWHLF8",
+     "from": "댓글",
+     "path": "menu-files/1790152040_878679-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "동해진참치 코스",
+       "name": "동해진참치 VIP",
+       "price": 120000
+      },
+      {
+       "category": "동해진참치 코스",
+       "name": "동해진로얄",
+       "price": 100000
+      },
+      {
+       "category": "동해진참치 코스",
+       "name": "실장스페셜",
+       "price": 80000
+      },
+      {
+       "category": "동해진참치 코스",
+       "name": "참치코스 스페셜",
+       "price": 60000
+      },
+      {
+       "category": "동해진참치 코스",
+       "name": "참치코스 골드",
+       "price": 49000
+      },
+      {
+       "category": "동해진참치 단품",
+       "name": "대 한접시",
+       "price": 180000
+      },
+      {
+       "category": "동해진참치 단품",
+       "name": "중 한접시",
+       "price": 150000
+      },
+      {
+       "category": "동해진참치 단품",
+       "name": "소 한접시",
+       "price": 120000
+      },
+      {
+       "category": "동해진참치 단품",
+       "name": "참치통머리",
+       "price": 100000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3UK84G9Y",
+     "from": "댓글",
+     "path": "menu-files/1790152040_878679-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "동해진참치 코스",
+       "name": "동해진참치 VIP",
+       "price": 120000
+      },
+      {
+       "category": "동해진참치 코스",
+       "name": "동해진로얄",
+       "price": 100000
+      },
+      {
+       "category": "동해진참치 코스",
+       "name": "실장스페셜",
+       "price": 80000
+      },
+      {
+       "category": "동해진참치 코스",
+       "name": "참치코스 스페셜",
+       "price": 60000
+      },
+      {
+       "category": "동해진참치 코스",
+       "name": "참치코스 골드",
+       "price": 49000
+      },
+      {
+       "category": "동해진참치 단품",
+       "name": "대 한접시",
+       "price": 180000
+      },
+      {
+       "category": "동해진참치 단품",
+       "name": "중 한접시",
+       "price": 150000
+      },
+      {
+       "category": "동해진참치 단품",
+       "name": "소 한접시",
+       "price": 120000
+      },
+      {
+       "category": "동해진참치 단품",
+       "name": "참치통머리",
+       "price": 100000
+      }
+     ]
+    }
+   ],
    "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1790152044.941909",
+   "replies": [
+    "이미지속  바로 아래에 메뉴 추가 부탁드립니다!\n• 참치코스 골드 1인분(20PS) /  35,000원\n• 참치코스 스페셜 1인분(20PS) /  45,000원\n• 실장스페셜 1인분(20PS) / 55,000원\n• 동해진로얄 1인분(20PS) / 65,000원\n• 동해진참치 VIP 1인분(20PS) / 75,000원"
+   ],
+   "rc": 2,
+   "lr": "1790152210.409979",
    "rfx": 3,
    "status": "wait",
    "handler": null,
