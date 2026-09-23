@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2419,
- "updatedAt": "2026-09-23 16:27",
+ "version": 2420,
+ "updatedAt": "2026-09-23 16:41",
  "days": 30,
  "items": [
   {
@@ -61481,50 +61481,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787557553283189"
-  },
-  {
-   "ts": "1787557175.359299",
-   "date": "2026-08-24",
-   "time": "16:39",
-   "store": "요선염소탕",
-   "biz": "8143301838",
-   "pos": "토스포스",
-   "content": "요선염소탕 상호를 헬로우푸드로 바꿔 주세요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "토플파에선 변경 완료 그 외 고객센터 문의"
-   ],
-   "rc": 2,
-   "lr": "1787557414.472929",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787557175359299"
-  },
-  {
-   "ts": "1787557080.060139",
-   "date": "2026-08-24",
-   "time": "16:38",
-   "store": "엉터리맥주",
-   "biz": "8363100140",
-   "pos": "오케이포스",
-   "content": "모든칵테일가격₩7000원으로\n품절아닙니다\n안주에 치즈스틱₩5000\n먹태 ₩11000\n한치\n₩13000\n프렌치토스트₩6500\n황태노가리는삭제\n정정해주세요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787557083.181179",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787557080060139"
   }
  ],
  "ocr": {
