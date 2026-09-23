@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12758,
+  "version": 12759,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -200307,7 +200307,7 @@ window.SLACK_DATA = {
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "12:26"
+      "updatedAt": "12:30"
     }
   },
   "resp": {
@@ -200468,7 +200468,14 @@ window.SLACK_DATA = {
       },
       "1790133967.810889": {
         "post": "1790133967.810889",
-        "lastSeen": 1790134040.179
+        "lastSeen": 1790134221.179,
+        "r": 1,
+        "day": "2026-09-23",
+        "idx": 17
+      },
+      "1790134208.320699": {
+        "post": "1790134208.320699",
+        "lastSeen": 1790134221.179
       }
     },
     "days": {
@@ -265558,8 +265565,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-23": {
-        "cnt": 17,
-        "sumMin": 50.12264960606892,
+        "cnt": 18,
+        "sumMin": 52.8371181209882,
         "over": 0,
         "items": [
           {
@@ -265714,13 +265721,21 @@ window.SLACK_DATA = {
             "who": "심성현",
             "cat": "as",
             "dmin": 10.7
+          },
+          {
+            "hm": "12:26",
+            "min": 2.7,
+            "store": "1키로탕수육인동점",
+            "biz": "2641702269",
+            "who": "심성현",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-23 12:27",
+    "at": "2026-09-23 12:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
