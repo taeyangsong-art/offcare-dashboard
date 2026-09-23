@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2413,
- "updatedAt": "2026-09-23 15:34",
+ "version": 2414,
+ "updatedAt": "2026-09-23 15:40",
  "days": 30,
  "items": [
   {
@@ -18,11 +18,1118 @@ window.MENU_REQUESTS = {
    "special": "",
    "drive": [],
    "files": 0,
-   "att": [],
+   "att": [
+    {
+     "name": "image.png",
+     "fid": "F0C4NBL7788",
+     "from": "댓글",
+     "path": "menu-files/1790145256_937759-0.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "동물",
+       "name": "동물",
+       "price": 0
+      },
+      {
+       "category": "동물",
+       "name": "분양박스(소)",
+       "price": 1000
+      },
+      {
+       "category": "동물",
+       "name": "분양박스(대)",
+       "price": 2000
+      },
+      {
+       "category": "동물",
+       "name": "드워프햄스터",
+       "price": 0
+      },
+      {
+       "category": "동물",
+       "name": "골든햄스터",
+       "price": 0
+      },
+      {
+       "category": "동물",
+       "name": "사슴햄스터",
+       "price": 0
+      },
+      {
+       "category": "동물",
+       "name": "예약금",
+       "price": 0
+      },
+      {
+       "category": "동물",
+       "name": "드워프토끼",
+       "price": 0
+      },
+      {
+       "category": "동물",
+       "name": "롭이어토끼",
+       "price": 0
+      },
+      {
+       "category": "동물",
+       "name": "호텔비",
+       "price": 0
+      },
+      {
+       "category": "동물",
+       "name": "기니피그",
+       "price": 0
+      },
+      {
+       "category": "동물",
+       "name": "고슴도치",
+       "price": 0
+      },
+      {
+       "category": "동물",
+       "name": "슈가글라이더",
+       "price": 0
+      },
+      {
+       "category": "동물",
+       "name": "미용",
+       "price": 0
+      },
+      {
+       "category": "동물",
+       "name": "저빌",
+       "price": 0
+      },
+      {
+       "category": "동물",
+       "name": "래트",
+       "price": 0
+      },
+      {
+       "category": "동물",
+       "name": "마우스",
+       "price": 0
+      },
+      {
+       "category": "동물",
+       "name": "친칠라",
+       "price": 0
+      },
+      {
+       "category": "동물",
+       "name": "설치류",
+       "price": 0
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3TT8QGN6",
+     "from": "댓글",
+     "path": "menu-files/1790145256_937759-1.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "사료",
+       "name": "사료싯가",
+       "price": 0
+      },
+      {
+       "category": "사료",
+       "name": "햄스트롱 드워프",
+       "price": 21000
+      },
+      {
+       "category": "사료",
+       "name": "햄스트롱 골든",
+       "price": 22000
+      },
+      {
+       "category": "사료",
+       "name": "p익스",
+       "price": 6000
+      },
+      {
+       "category": "사료",
+       "name": "sw소형새사료",
+       "price": 8000
+      },
+      {
+       "category": "사료",
+       "name": "sw햄스터사료",
+       "price": 7000
+      },
+      {
+       "category": "사료",
+       "name": "sw토끼사료",
+       "price": 7000
+      },
+      {
+       "category": "사료",
+       "name": "sw기니사료",
+       "price": 7500
+      },
+      {
+       "category": "사료",
+       "name": "스페셜슈가사료",
+       "price": 14000
+      },
+      {
+       "category": "사료",
+       "name": "g알팔파사료",
+       "price": 18000
+      },
+      {
+       "category": "사료",
+       "name": "g티모시사료",
+       "price": 18000
+      },
+      {
+       "category": "사료",
+       "name": "g기니사료",
+       "price": 18000
+      },
+      {
+       "category": "사료",
+       "name": "V알팔파사료",
+       "price": 13000
+      },
+      {
+       "category": "사료",
+       "name": "V티모시사료",
+       "price": 13000
+      },
+      {
+       "category": "사료",
+       "name": "V기니픽사료",
+       "price": 13000
+      },
+      {
+       "category": "사료",
+       "name": "브리트친칠라",
+       "price": 32000
+      },
+      {
+       "category": "사료",
+       "name": "도치사료",
+       "price": 23000
+      },
+      {
+       "category": "사료",
+       "name": "리틀원래트사료",
+       "price": 10000
+      },
+      {
+       "category": "사료",
+       "name": "리틀원친칠라사료",
+       "price": 10000
+      },
+      {
+       "category": "사료",
+       "name": "빙키알팔파 1.36kg",
+       "price": 22000
+      },
+      {
+       "category": "사료",
+       "name": "빙키티모시 500g",
+       "price": 12000
+      },
+      {
+       "category": "사료",
+       "name": "빙키티모시 1.36kg",
+       "price": 22000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C4NBMFCV6",
+     "from": "댓글",
+     "path": "menu-files/1790145256_937759-2.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "간식,영양",
+       "name": "간식싯가",
+       "price": 0
+      },
+      {
+       "category": "간식,영양",
+       "name": "sw해바라기",
+       "price": 6500
+      },
+      {
+       "category": "간식,영양",
+       "name": "비타폴스낵",
+       "price": 6500
+      },
+      {
+       "category": "간식,영양",
+       "name": "사과칩",
+       "price": 6000
+      },
+      {
+       "category": "간식,영양",
+       "name": "드롭스",
+       "price": 6500
+      },
+      {
+       "category": "간식,영양",
+       "name": "바나나칩",
+       "price": 6500
+      },
+      {
+       "category": "간식,영양",
+       "name": "파인애플칩",
+       "price": 6500
+      },
+      {
+       "category": "간식,영양",
+       "name": "파파야",
+       "price": 6500
+      },
+      {
+       "category": "간식,영양",
+       "name": "당근칩",
+       "price": 6000
+      },
+      {
+       "category": "간식,영양",
+       "name": "무염국수",
+       "price": 6500
+      },
+      {
+       "category": "간식,영양",
+       "name": "c미네랄해양동물스톤",
+       "price": 6000
+      },
+      {
+       "category": "간식,영양",
+       "name": "버디쿠키",
+       "price": 4500
+      },
+      {
+       "category": "간식,영양",
+       "name": "사과가지",
+       "price": 4000
+      },
+      {
+       "category": "간식,영양",
+       "name": "분유100g",
+       "price": 15000
+      },
+      {
+       "category": "간식,영양",
+       "name": "비타믹스",
+       "price": 6500
+      },
+      {
+       "category": "간식,영양",
+       "name": "빙키사탕수수",
+       "price": 5000
+      },
+      {
+       "category": "간식,영양",
+       "name": "소동물 젤리",
+       "price": 7500
+      },
+      {
+       "category": "간식,영양",
+       "name": "민들레뿌리",
+       "price": 6500
+      },
+      {
+       "category": "간식,영양",
+       "name": "스톤옥수수",
+       "price": 5500
+      },
+      {
+       "category": "간식,영양",
+       "name": "스톤당근",
+       "price": 5500
+      },
+      {
+       "category": "간식,영양",
+       "name": "o파파야(헤어볼)",
+       "price": 18500
+      },
+      {
+       "category": "간식,영양",
+       "name": "딸기껌",
+       "price": 1500
+      },
+      {
+       "category": "간식,영양",
+       "name": "애니유산균",
+       "price": 6500
+      },
+      {
+       "category": "간식,영양",
+       "name": "점보밀웜",
+       "price": 17000
+      },
+      {
+       "category": "간식,영양",
+       "name": "야채믹스",
+       "price": 15000
+      },
+      {
+       "category": "간식,영양",
+       "name": "믹스꽃",
+       "price": 20000
+      },
+      {
+       "category": "간식,영양",
+       "name": "빙키큐브",
+       "price": 5000
+      },
+      {
+       "category": "간식,영양",
+       "name": "가루유산균",
+       "price": 25000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3CKP5AT1",
+     "from": "댓글",
+     "path": "menu-files/1790145256_937759-3.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "케이지",
+       "name": "케이지싯가",
+       "price": 0
+      },
+      {
+       "category": "케이지",
+       "name": "c910케이지",
+       "price": 110000
+      },
+      {
+       "category": "케이지",
+       "name": "c911케이지",
+       "price": 140000
+      },
+      {
+       "category": "케이지",
+       "name": "c911P케이지",
+       "price": 180000
+      },
+      {
+       "category": "케이지",
+       "name": "스마트투명(소)",
+       "price": 78000
+      },
+      {
+       "category": "케이지",
+       "name": "햄스빌드햄고급케이지",
+       "price": 75000
+      },
+      {
+       "category": "케이지",
+       "name": "드햄실속케이지(햄스존)",
+       "price": 42000
+      },
+      {
+       "category": "케이지",
+       "name": "C햄케이지",
+       "price": 75000
+      },
+      {
+       "category": "케이지",
+       "name": "토끼장1단",
+       "price": 145000
+      },
+      {
+       "category": "케이지",
+       "name": "토끼최고급케이지",
+       "price": 199500
+      },
+      {
+       "category": "케이지",
+       "name": "3단와이드케이지",
+       "price": 160000
+      },
+      {
+       "category": "케이지",
+       "name": "도치철장케이지",
+       "price": 55000
+      },
+      {
+       "category": "케이지",
+       "name": "디깅케이지(중)",
+       "price": 75000
+      },
+      {
+       "category": "케이지",
+       "name": "채집통(특)",
+       "price": 10000
+      },
+      {
+       "category": "케이지",
+       "name": "채집통(왕대)",
+       "price": 27000
+      },
+      {
+       "category": "케이지",
+       "name": "딩동펫 기니 울타리",
+       "price": 55000
+      },
+      {
+       "category": "케이지",
+       "name": "우드울타리",
+       "price": 145000
+      },
+      {
+       "category": "케이지",
+       "name": "다람쥐장",
+       "price": 51000
+      },
+      {
+       "category": "케이지",
+       "name": "사각새장(고급형)",
+       "price": 73000
+      },
+      {
+       "category": "케이지",
+       "name": "타원형금장",
+       "price": 40000
+      },
+      {
+       "category": "케이지",
+       "name": "기와새장(금색)",
+       "price": 89000
+      },
+      {
+       "category": "케이지",
+       "name": "슈가장최고급(화이트)",
+       "price": 96000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3CKQ0CTZ",
+     "from": "댓글",
+     "path": "menu-files/1790145256_937759-4.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "은신처",
+       "name": "은신처싯가",
+       "price": 0
+      },
+      {
+       "category": "은신처",
+       "name": "코코넛(대)",
+       "price": 6300
+      },
+      {
+       "category": "은신처",
+       "name": "코코넛사다리",
+       "price": 10000
+      },
+      {
+       "category": "은신처",
+       "name": "기니 우드은신처",
+       "price": 17000
+      },
+      {
+       "category": "은신처",
+       "name": "도치 우드은신처",
+       "price": 16000
+      },
+      {
+       "category": "은신처",
+       "name": "C동물얼굴은신처",
+       "price": 9500
+      },
+      {
+       "category": "은신처",
+       "name": "C슈가포치(소)",
+       "price": 7000
+      },
+      {
+       "category": "은신처",
+       "name": "C해먹",
+       "price": 6000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3VUNRDFT",
+     "from": "댓글",
+     "path": "menu-files/1790145256_937759-5.png",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "위생용품",
+       "name": "위생싯가",
+       "price": 0
+      },
+      {
+       "category": "위생용품",
+       "name": "A햄화장실(소)",
+       "price": 5000
+      },
+      {
+       "category": "위생용품",
+       "name": "pw햄화장실(중)",
+       "price": 6000
+      },
+      {
+       "category": "위생용품",
+       "name": "투명곰목욕실(중)",
+       "price": 7500
+      },
+      {
+       "category": "위생용품",
+       "name": "투명곰목욕실(대)",
+       "price": 9500
+      },
+      {
+       "category": "위생용품",
+       "name": "c사각화장실",
+       "price": 16000
+      },
+      {
+       "category": "위생용품",
+       "name": "c삼각화장실",
+       "price": 14000
+      },
+      {
+       "category": "위생용품",
+       "name": "사각화장실(특대)",
+       "price": 23000
+      },
+      {
+       "category": "위생용품",
+       "name": "드라이샴푸",
+       "price": 13000
+      },
+      {
+       "category": "위생용품",
+       "name": "물샴푸",
+       "price": 13000
+      },
+      {
+       "category": "위생용품",
+       "name": "우드펠렛",
+       "price": 4500
+      },
+      {
+       "category": "위생용품",
+       "name": "ar탈취제",
+       "price": 11000
+      },
+      {
+       "category": "위생용품",
+       "name": "애니탈취제",
+       "price": 10000
+      },
+      {
+       "category": "위생용품",
+       "name": "4B목욕모래",
+       "price": 5000
+      },
+      {
+       "category": "위생용품",
+       "name": "T모래",
+       "price": 5000
+      },
+      {
+       "category": "위생용품",
+       "name": "천연사막모래",
+       "price": 24000
+      },
+      {
+       "category": "위생용품",
+       "name": "화장실모래(중)",
+       "price": 4500
+      },
+      {
+       "category": "위생용품",
+       "name": "도로시배변패드",
+       "price": 12000
+      },
+      {
+       "category": "위생용품",
+       "name": "도자기화장실",
+       "price": 20000
+      },
+      {
+       "category": "위생용품",
+       "name": "발톱깎이",
+       "price": 5500
+      },
+      {
+       "category": "위생용품",
+       "name": "빗",
+       "price": 6000
+      },
+      {
+       "category": "위생용품",
+       "name": "친칠라목욕통",
+       "price": 18500
+      },
+      {
+       "category": "위생용품",
+       "name": "도치2구아크릴화장실(대)",
+       "price": 35000
+      },
+      {
+       "category": "위생용품",
+       "name": "모모팜베딩",
+       "price": 18000
+      },
+      {
+       "category": "위생용품",
+       "name": "모모팜해동지",
+       "price": 8000
+      },
+      {
+       "category": "위생용품",
+       "name": "M소프트베딩 2kg",
+       "price": 16000
+      },
+      {
+       "category": "위생용품",
+       "name": "M둥지베딩",
+       "price": 5500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3MPZPECB",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "외출,계절",
+       "name": "산책싯가",
+       "price": 0
+      },
+      {
+       "category": "외출,계절",
+       "name": "전용램프",
+       "price": 40000
+      },
+      {
+       "category": "외출,계절",
+       "name": "세라믹램프",
+       "price": 14000
+      },
+      {
+       "category": "외출,계절",
+       "name": "갓등(s)",
+       "price": 45000
+      },
+      {
+       "category": "외출,계절",
+       "name": "돼지이동장",
+       "price": 16500
+      },
+      {
+       "category": "외출,계절",
+       "name": "ala이동장",
+       "price": 26000
+      },
+      {
+       "category": "외출,계절",
+       "name": "F이동장(중)",
+       "price": 32000
+      },
+      {
+       "category": "외출,계절",
+       "name": "이동채집통(소)",
+       "price": 8000
+      },
+      {
+       "category": "외출,계절",
+       "name": "C이동장(소)",
+       "price": 15000
+      },
+      {
+       "category": "외출,계절",
+       "name": "우주이동장",
+       "price": 16000
+      },
+      {
+       "category": "외출,계절",
+       "name": "투명돔이동가방",
+       "price": 33000
+      },
+      {
+       "category": "외출,계절",
+       "name": "리스켄넬",
+       "price": 35000
+      },
+      {
+       "category": "외출,계절",
+       "name": "대형이동장",
+       "price": 50000
+      },
+      {
+       "category": "외출,계절",
+       "name": "햄몸줄",
+       "price": 7200
+      },
+      {
+       "category": "외출,계절",
+       "name": "기니몸줄",
+       "price": 11000
+      },
+      {
+       "category": "외출,계절",
+       "name": "토끼몸줄",
+       "price": 21000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C4NBQSBFS",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "식기,급수",
+       "name": "식기싯가",
+       "price": 0
+      },
+      {
+       "category": "식기,급수",
+       "name": "자석거치대",
+       "price": 7000
+      },
+      {
+       "category": "식기,급수",
+       "name": "아크릴자석거치대(소)",
+       "price": 14500
+      },
+      {
+       "category": "식기,급수",
+       "name": "물그릇급수기",
+       "price": 22000
+      },
+      {
+       "category": "식기,급수",
+       "name": "물병(소)",
+       "price": 2500
+      },
+      {
+       "category": "식기,급수",
+       "name": "물병(중)",
+       "price": 3000
+      },
+      {
+       "category": "식기,급수",
+       "name": "물병(대)",
+       "price": 4000
+      },
+      {
+       "category": "식기,급수",
+       "name": "물병(특대)",
+       "price": 7000
+      },
+      {
+       "category": "식기,급수",
+       "name": "세라믹물병꽂이SET",
+       "price": 10000
+      },
+      {
+       "category": "식기,급수",
+       "name": "물병꽂이SET",
+       "price": 6000
+      },
+      {
+       "category": "식기,급수",
+       "name": "우드물병거치대",
+       "price": 12000
+      },
+      {
+       "category": "식기,급수",
+       "name": "F투명식기",
+       "price": 2300
+      },
+      {
+       "category": "식기,급수",
+       "name": "JP햄식기B(소)",
+       "price": 4000
+      },
+      {
+       "category": "식기,급수",
+       "name": "하트쌍식기",
+       "price": 7000
+      },
+      {
+       "category": "식기,급수",
+       "name": "JP과일식기253",
+       "price": 10000
+      },
+      {
+       "category": "식기,급수",
+       "name": "oc38대형식기",
+       "price": 12000
+      },
+      {
+       "category": "식기,급수",
+       "name": "애니햄식기",
+       "price": 6000
+      },
+      {
+       "category": "식기,급수",
+       "name": "JP햄식기G(소)",
+       "price": 4000
+      },
+      {
+       "category": "식기,급수",
+       "name": "JP과일식기254",
+       "price": 10000
+      },
+      {
+       "category": "식기,급수",
+       "name": "건초렉",
+       "price": 17000
+      },
+      {
+       "category": "식기,급수",
+       "name": "건초볼",
+       "price": 7000
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3XLSBJ3E",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "놀이용품",
+       "name": "놀이싯가",
+       "price": 0
+      },
+      {
+       "category": "놀이용품",
+       "name": "C구름다리",
+       "price": 5000
+      },
+      {
+       "category": "놀이용품",
+       "name": "디깅박스",
+       "price": 15000
+      },
+      {
+       "category": "놀이용품",
+       "name": "투명아크릴쳇바퀴",
+       "price": 45000
+      },
+      {
+       "category": "놀이용품",
+       "name": "트릭시20CM",
+       "price": 20000
+      },
+      {
+       "category": "놀이용품",
+       "name": "트릭시28CM",
+       "price": 35000
+      },
+      {
+       "category": "놀이용품",
+       "name": "트릭시33CM",
+       "price": 45000
+      },
+      {
+       "category": "놀이용품",
+       "name": "C바퀴21",
+       "price": 26500
+      },
+      {
+       "category": "놀이용품",
+       "name": "C쳇바퀴28",
+       "price": 27000
+      },
+      {
+       "category": "놀이용품",
+       "name": "C바퀴30",
+       "price": 48000
+      },
+      {
+       "category": "놀이용품",
+       "name": "플라스틱쳇바퀴(소)",
+       "price": 3500
+      },
+      {
+       "category": "놀이용품",
+       "name": "플라스틱쳇바퀴(중)",
+       "price": 6500
+      },
+      {
+       "category": "놀이용품",
+       "name": "깔짚(대)",
+       "price": 9700
+      },
+      {
+       "category": "놀이용품",
+       "name": "우드권투계단",
+       "price": 15000
+      },
+      {
+       "category": "놀이용품",
+       "name": "일자 터널",
+       "price": 3000
+      },
+      {
+       "category": "놀이용품",
+       "name": "T자 터널",
+       "price": 2500
+      },
+      {
+       "category": "놀이용품",
+       "name": "L자 터널",
+       "price": 2000
+      },
+      {
+       "category": "놀이용품",
+       "name": "컬러횟대(대)",
+       "price": 9500
+      },
+      {
+       "category": "놀이용품",
+       "name": "c소져",
+       "price": 7000
+      },
+      {
+       "category": "놀이용품",
+       "name": "출렁다리",
+       "price": 16800
+      },
+      {
+       "category": "놀이용품",
+       "name": "햄스터볼바퀴",
+       "price": 6500
+      },
+      {
+       "category": "놀이용품",
+       "name": "햄볼(M)",
+       "price": 7200
+      },
+      {
+       "category": "놀이용품",
+       "name": "햄볼(L)",
+       "price": 13500
+      }
+     ]
+    },
+    {
+     "name": "image.png",
+     "fid": "F0C3CKSCLET",
+     "from": "댓글",
+     "kind": "pos_screen",
+     "menu": [
+      {
+       "category": "세트싯가",
+       "name": "드햄SET(실속)",
+       "price": 69000
+      },
+      {
+       "category": "세트싯가",
+       "name": "드햄SET(고급)",
+       "price": 135000
+      },
+      {
+       "category": "세트싯가",
+       "name": "드햄SET(최고급)",
+       "price": 180000
+      },
+      {
+       "category": "세트싯가",
+       "name": "골햄SET(실속)",
+       "price": 226000
+      },
+      {
+       "category": "세트싯가",
+       "name": "골햄SET(고급)",
+       "price": 275000
+      },
+      {
+       "category": "세트싯가",
+       "name": "골햄SET(최고급)",
+       "price": 325000
+      },
+      {
+       "category": "세트싯가",
+       "name": "토끼SET(실속)",
+       "price": 83000
+      },
+      {
+       "category": "세트싯가",
+       "name": "토끼SET(고급)",
+       "price": 248000
+      },
+      {
+       "category": "세트싯가",
+       "name": "토끼SET(최고급)",
+       "price": 315000
+      },
+      {
+       "category": "세트싯가",
+       "name": "기니SET(실속)",
+       "price": 83500
+      },
+      {
+       "category": "세트싯가",
+       "name": "기니SET(고급)",
+       "price": 188000
+      },
+      {
+       "category": "세트싯가",
+       "name": "기니SET(최고급)",
+       "price": 278000
+      },
+      {
+       "category": "세트싯가",
+       "name": "도치SET(실속)",
+       "price": 166000
+      },
+      {
+       "category": "세트싯가",
+       "name": "도치SET(고급)",
+       "price": 305000
+      },
+      {
+       "category": "세트싯가",
+       "name": "도치SET(최고급)",
+       "price": 348000
+      },
+      {
+       "category": "세트싯가",
+       "name": "슈가SET(실속)",
+       "price": 76500
+      },
+      {
+       "category": "세트싯가",
+       "name": "슈가SET(고급)",
+       "price": 146000
+      },
+      {
+       "category": "세트싯가",
+       "name": "슈가SET(최고급)",
+       "price": 193000
+      }
+     ]
+    }
+   ],
    "datt": [],
    "replies": [],
-   "rc": 1,
-   "lr": "1790145261.265249",
+   "rc": 2,
+   "lr": "1790145329.281769",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -115,9 +1222,12 @@ window.MENU_REQUESTS = {
    "files": 0,
    "att": [],
    "datt": [],
-   "replies": [],
-   "rc": 0,
-   "lr": "",
+   "replies": [
+    "냅둬유 내가할게염",
+    "아래꺼 ㄱ"
+   ],
+   "rc": 1,
+   "lr": "1790145556.670109",
    "rfx": 3,
    "status": "wait",
    "handler": null,
@@ -61017,837 +62127,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787554081131029"
-  },
-  {
-   "ts": "1787553533.560129",
-   "date": "2026-08-24",
-   "time": "15:38",
-   "store": "룽고(LUNGO)디저트카페",
-   "biz": "1693701264",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "=_UTF-8_B_UmVzaXplZF9JTUdfMjAyNjA4MjRfMT",
-     "fid": "F0BSAJURJQL",
-     "from": "댓글",
-     "path": "menu-files/1787553533_560129-0.jpeg",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "COFFEE",
-       "name": "아메리카노(H)",
-       "price": 3500
-      },
-      {
-       "category": "COFFEE",
-       "name": "아메리카노(I)",
-       "price": 3500
-      },
-      {
-       "category": "COFFEE",
-       "name": "바닐라라떼(H)",
-       "price": 5800
-      },
-      {
-       "category": "COFFEE",
-       "name": "바닐라라떼(I)",
-       "price": 5800
-      },
-      {
-       "category": "COFFEE",
-       "name": "카라멜마끼아또(H)",
-       "price": 5800
-      },
-      {
-       "category": "COFFEE",
-       "name": "카라멜마끼아또(I)",
-       "price": 5800
-      },
-      {
-       "category": "COFFEE",
-       "name": "카페라떼(H)",
-       "price": 5500
-      },
-      {
-       "category": "COFFEE",
-       "name": "카페라떼(I)",
-       "price": 5500
-      },
-      {
-       "category": "COFFEE",
-       "name": "콜드브루디카페인(I)",
-       "price": 5500
-      },
-      {
-       "category": "COFFEE",
-       "name": "샷추가(2샷)",
-       "price": 1000
-      },
-      {
-       "category": "COFFEE",
-       "name": "달고나라떼(H)",
-       "price": 5800
-      },
-      {
-       "category": "COFFEE",
-       "name": "달고나라떼(I)",
-       "price": 5800
-      },
-      {
-       "category": "COFFEE",
-       "name": "콜드브루 디카페인라떼",
-       "price": 5800
-      },
-      {
-       "category": "COFFEE",
-       "name": "카페모카(H)",
-       "price": 5800
-      },
-      {
-       "category": "COFFEE",
-       "name": "카페모카(I)",
-       "price": 5800
-      },
-      {
-       "category": "COFFEE",
-       "name": "마샬추",
-       "price": 4500
-      },
-      {
-       "category": "COFFEE",
-       "name": "오트얼그레이(H)",
-       "price": 6500
-      },
-      {
-       "category": "COFFEE",
-       "name": "오트얼그레이(H)",
-       "price": 6500
-      },
-      {
-       "category": "COFFEE",
-       "name": "아포가토",
-       "price": 5500
-      },
-      {
-       "category": "COFFEE",
-       "name": "마샬추-Big size",
-       "price": 7500
-      },
-      {
-       "category": "COFFEE",
-       "name": "Big size 샷추가 커피(2샷)",
-       "price": 1000
-      },
-      {
-       "category": "COFFEE",
-       "name": "Big size 카페라떼",
-       "price": 8800
-      },
-      {
-       "category": "COFFEE",
-       "name": "헤소크레스",
-       "price": 3500
-      },
-      {
-       "category": "COFFEE",
-       "name": "아메리카노 벅샤(I)스.Big size",
-       "price": 7000
-      },
-      {
-       "category": "COFFEE",
-       "name": "카푸치노",
-       "price": 4500
-      },
-      {
-       "category": "COFFEE",
-       "name": "쫄깃와플",
-       "price": 5000
-      },
-      {
-       "category": "COFFEE",
-       "name": "Big size 바닐라라떼",
-       "price": 9000
-      },
-      {
-       "category": "COFFEE",
-       "name": "골드브라디카페인(바닐라라떼)",
-       "price": 6000
-      },
-      {
-       "category": "COFFEE",
-       "name": "콜드브루디카페인(오트라떼)",
-       "price": 6500
-      },
-      {
-       "category": "COFFEE",
-       "name": "디카페인 라떼 big size",
-       "price": 9000
-      },
-      {
-       "category": "COFFEE",
-       "name": "콜라 마그작리떼",
-       "price": 5800
-      }
-     ]
-    },
-    {
-     "name": "=_UTF-8_B_UmVzaXplZF9JTUdfMjAyNjA4MjRfMT",
-     "fid": "F0BS8SMKS3B",
-     "from": "댓글",
-     "path": "menu-files/1787553533_560129-1.jpeg",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "LATTE",
-       "name": "딸기라떼(I)",
-       "price": 5800
-      },
-      {
-       "category": "LATTE",
-       "name": "초코라떼(H)",
-       "price": 5300
-      },
-      {
-       "category": "LATTE",
-       "name": "초코라떼(I)",
-       "price": 5300
-      },
-      {
-       "category": "LATTE",
-       "name": "고구마라떼(H)",
-       "price": 6000
-      },
-      {
-       "category": "LATTE",
-       "name": "고구마라떼(I)",
-       "price": 6000
-      },
-      {
-       "category": "LATTE",
-       "name": "말차라떼(H)",
-       "price": 5300
-      },
-      {
-       "category": "LATTE",
-       "name": "말차라떼(I)",
-       "price": 5300
-      },
-      {
-       "category": "LATTE",
-       "name": "핫초코",
-       "price": 5000
-      },
-      {
-       "category": "LATTE",
-       "name": "우유",
-       "price": 4500
-      },
-      {
-       "category": "LATTE",
-       "name": "딸기말차라떼(I)",
-       "price": 5800
-      },
-      {
-       "category": "LATTE",
-       "name": "초코마우스라떼(I)",
-       "price": 6800
-      },
-      {
-       "category": "LATTE",
-       "name": "Big size 딸기라떼",
-       "price": 10000
-      },
-      {
-       "category": "LATTE",
-       "name": "딸기찻라떼(I)",
-       "price": 6000
-      },
-      {
-       "category": "LATTE",
-       "name": "밤라떼(I)",
-       "price": 6000
-      },
-      {
-       "category": "LATTE",
-       "name": "밤라떼(H)",
-       "price": 6500
-      },
-      {
-       "category": "LATTE",
-       "name": "흑임자가루라떼",
-       "price": 5500
-      },
-      {
-       "category": "LATTE",
-       "name": "피스타치오라떼(I)",
-       "price": 6800
-      },
-      {
-       "category": "LATTE",
-       "name": "피스타치오라떼(H)",
-       "price": 7000
-      },
-      {
-       "category": "LATTE",
-       "name": "라떼 벡사이즈 추가",
-       "price": 3500
-      }
-     ]
-    },
-    {
-     "name": "=_UTF-8_B_UmVzaXplZF9JTUdfMjAyNjA4MjRfMT",
-     "fid": "F0BS0MDS9D1",
-     "from": "댓글",
-     "path": "menu-files/1787553533_560129-2.jpeg",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "ADE",
-       "name": "레몬에이드",
-       "price": 5900
-      },
-      {
-       "category": "ADE",
-       "name": "자몽에이드",
-       "price": 5900
-      },
-      {
-       "category": "ADE",
-       "name": "청포도에이드",
-       "price": 5900
-      },
-      {
-       "category": "ADE",
-       "name": "패션후르츠에이드",
-       "price": 5900
-      },
-      {
-       "category": "ADE",
-       "name": "블루베리에이드",
-       "price": 5900
-      },
-      {
-       "category": "ADE",
-       "name": "루비에이드",
-       "price": 5900
-      },
-      {
-       "category": "ADE",
-       "name": "Big size 에이드",
-       "price": 8500
-      },
-      {
-       "category": "ADE",
-       "name": "블루레몬에이드",
-       "price": 5900
-      },
-      {
-       "category": "ADE",
-       "name": "피치에이드",
-       "price": 5900
-      },
-      {
-       "category": "ADE",
-       "name": "수제유자청에이드",
-       "price": 0
-      }
-     ]
-    },
-    {
-     "name": "=_UTF-8_B_UmVzaXplZF9JTUdfMjAyNjA4MjRfMT",
-     "fid": "F0BS8SMA9NV",
-     "from": "댓글",
-     "path": "menu-files/1787553533_560129-3.jpeg",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "TEA",
-       "name": "복숭아아이스티",
-       "price": 4000
-      },
-      {
-       "category": "TEA",
-       "name": "유기농 히비스커스",
-       "price": 4800
-      },
-      {
-       "category": "TEA",
-       "name": "유기농 얼그레이",
-       "price": 4800
-      },
-      {
-       "category": "TEA",
-       "name": "유기농 페퍼민트",
-       "price": 4800
-      },
-      {
-       "category": "TEA",
-       "name": "유기농 카모마일",
-       "price": 4800
-      },
-      {
-       "category": "TEA",
-       "name": "유기농 루이보스팁",
-       "price": 4800
-      },
-      {
-       "category": "TEA",
-       "name": "허니자몽블랙티",
-       "price": 5900
-      },
-      {
-       "category": "TEA",
-       "name": "수제자몽차",
-       "price": 5500
-      },
-      {
-       "category": "TEA",
-       "name": "수제레몬차",
-       "price": 5500
-      },
-      {
-       "category": "TEA",
-       "name": "수제 생강차",
-       "price": 5500
-      },
-      {
-       "category": "TEA",
-       "name": "유기농 캐모그라스",
-       "price": 5000
-      },
-      {
-       "category": "TEA",
-       "name": "수제 유자귤차",
-       "price": 5500
-      },
-      {
-       "category": "TEA",
-       "name": "아이스티 팥",
-       "price": 6900
-      },
-      {
-       "category": "TEA",
-       "name": "카모레몬그라스",
-       "price": 4000
-      },
-      {
-       "category": "TEA",
-       "name": "Big size 유기농팁",
-       "price": 7000
-      },
-      {
-       "category": "TEA",
-       "name": "Big 허니자몽블랙티",
-       "price": 7500
-      },
-      {
-       "category": "TEA",
-       "name": "대만주",
-       "price": 6000
-      },
-      {
-       "category": "TEA",
-       "name": "대추쌍차",
-       "price": 9000
-      }
-     ]
-    },
-    {
-     "name": "=_UTF-8_B_UmVzaXplZF9JTUdfMjAyNjA4MjRfMT",
-     "fid": "F0BS8SNFWKB",
-     "from": "댓글",
-     "path": "menu-files/1787553533_560129-4.jpeg",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "스무디&빙수",
-       "name": "망고스무디",
-       "price": 6500
-      },
-      {
-       "category": "스무디&빙수",
-       "name": "블루베리스무디",
-       "price": 6500
-      },
-      {
-       "category": "스무디&빙수",
-       "name": "딸기스무디",
-       "price": 6500
-      },
-      {
-       "category": "스무디&빙수",
-       "name": "키위스무디",
-       "price": 6500
-      },
-      {
-       "category": "스무디&빙수",
-       "name": "타로버블타라떼",
-       "price": 5800
-      },
-      {
-       "category": "스무디&빙수",
-       "name": "밀크버블타라떼",
-       "price": 5800
-      },
-      {
-       "category": "스무디&빙수",
-       "name": "그린버블타라떼",
-       "price": 5800
-      },
-      {
-       "category": "스무디&빙수",
-       "name": "흑당버블티",
-       "price": 5800
-      },
-      {
-       "category": "스무디&빙수",
-       "name": "밀크쉐이크 초코",
-       "price": 5600
-      },
-      {
-       "category": "스무디&빙수",
-       "name": "플레인요거트스무디",
-       "price": 6500
-      },
-      {
-       "category": "스무디&빙수",
-       "name": "구름스무디",
-       "price": 6500
-      },
-      {
-       "category": "스무디&빙수",
-       "name": "블루쿠 크림소다",
-       "price": 6500
-      },
-      {
-       "category": "스무디&빙수",
-       "name": "수박주스",
-       "price": 6500
-      },
-      {
-       "category": "스무디&빙수",
-       "name": "초코라떼",
-       "price": 6700
-      },
-      {
-       "category": "스무디&빙수",
-       "name": "딸바주스",
-       "price": 6500
-      },
-      {
-       "category": "스무디&빙수",
-       "name": "딸바스무디",
-       "price": 6900
-      },
-      {
-       "category": "스무디&빙수",
-       "name": "요볼스 스무디",
-       "price": 6500
-      }
-     ]
-    },
-    {
-     "name": "=_UTF-8_B_UmVzaXplZF9JTUdfMjAyNjA4MjRfMT",
-     "fid": "F0BS6TMSE66",
-     "from": "댓글",
-     "path": "menu-files/1787553533_560129-5.jpeg",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "휘낭시에",
-       "name": "무화과 휘낭시에",
-       "price": 3800
-      },
-      {
-       "category": "휘낭시에",
-       "name": "흑임자 휘낭시에",
-       "price": 3700
-      },
-      {
-       "category": "휘낭시에",
-       "name": "초코 휘낭시에",
-       "price": 3800
-      },
-      {
-       "category": "휘낭시에",
-       "name": "소보로 휘낭시에",
-       "price": 3900
-      },
-      {
-       "category": "휘낭시에",
-       "name": "카카오닙스 휘낭시에",
-       "price": 3900
-      },
-      {
-       "category": "휘낭시에",
-       "name": "오레오 로투스 휘낭시에",
-       "price": 3800
-      },
-      {
-       "category": "휘낭시에",
-       "name": "휘낭시에(마롱&코코넛)",
-       "price": 3800
-      },
-      {
-       "category": "휘낭시에",
-       "name": "누네띠네 휘낭시에",
-       "price": 3800
-      },
-      {
-       "category": "휘낭시에",
-       "name": "후레이크 휘낭시에",
-       "price": 3800
-      },
-      {
-       "category": "휘낭시에",
-       "name": "플레인 휘낭시에",
-       "price": 3500
-      }
-     ]
-    },
-    {
-     "name": "=_UTF-8_B_UmVzaXplZF9JTUdfMjAyNjA4MjRfMT",
-     "fid": "F0BS8SNNZFT",
-     "from": "댓글",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "디저트2",
-       "name": "소금빵",
-       "price": 3300
-      },
-      {
-       "category": "디저트2",
-       "name": "샌드위치",
-       "price": 8500
-      },
-      {
-       "category": "디저트2",
-       "name": "소세지_핫도그",
-       "price": 6500
-      },
-      {
-       "category": "디저트2",
-       "name": "누텔라빵(대)",
-       "price": 5500
-      },
-      {
-       "category": "디저트2",
-       "name": "스콘 (무화과, 얼그레이)",
-       "price": 3500
-      },
-      {
-       "category": "디저트2",
-       "name": "담쟁이 쿠키세트",
-       "price": 450000
-      },
-      {
-       "category": "디저트2",
-       "name": "오란다",
-       "price": 2200
-      },
-      {
-       "category": "디저트2",
-       "name": "롱고 당근케잌",
-       "price": 2900
-      },
-      {
-       "category": "디저트2",
-       "name": "몽블랑",
-       "price": 7000
-      },
-      {
-       "category": "디저트2",
-       "name": "뉴욕버터롤",
-       "price": 4800
-      },
-      {
-       "category": "디저트2",
-       "name": "크루아상",
-       "price": 5000
-      },
-      {
-       "category": "디저트2",
-       "name": "할인판매",
-       "price": 100
-      },
-      {
-       "category": "디저트2",
-       "name": "할인판매",
-       "price": 3800
-      },
-      {
-       "category": "디저트2",
-       "name": "할인판매",
-       "price": 1000
-      },
-      {
-       "category": "디저트2",
-       "name": "할인판매",
-       "price": 5000
-      },
-      {
-       "category": "디저트2",
-       "name": "할인판매",
-       "price": 10000
-      },
-      {
-       "category": "디저트2",
-       "name": "할인판매",
-       "price": 15000
-      },
-      {
-       "category": "디저트2",
-       "name": "할인판매",
-       "price": 20000
-      }
-     ]
-    },
-    {
-     "name": "=_UTF-8_B_UmVzaXplZF9JTUdfMjAyNjA4MjRfMT",
-     "fid": "F0BS8SN9DFT",
-     "from": "댓글",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "케익",
-       "name": "딸기생크림케잌",
-       "price": 7500
-      },
-      {
-       "category": "케익",
-       "name": "초코딸기케익",
-       "price": 7500
-      },
-      {
-       "category": "케익",
-       "name": "바스크치즈케이크",
-       "price": 8000
-      },
-      {
-       "category": "케익",
-       "name": "얼그레이몽케이크",
-       "price": 6900
-      },
-      {
-       "category": "케익",
-       "name": "딸기크레이프 케익",
-       "price": 7000
-      },
-      {
-       "category": "케익",
-       "name": "블루베리크레이프케익",
-       "price": 7000
-      },
-      {
-       "category": "케익",
-       "name": "치즈케익",
-       "price": 7800
-      },
-      {
-       "category": "케익",
-       "name": "얼그레이가토 케익",
-       "price": 6300
-      },
-      {
-       "category": "케익",
-       "name": "홀케익",
-       "price": 54000
-      }
-     ]
-    },
-    {
-     "name": "=_UTF-8_B_UmVzaXplZF9JTUdfMjAyNjA4MjRfMT",
-     "fid": "F0BS32VCS77",
-     "from": "댓글",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "마카롱",
-       "name": "크렌브륄레 통카롱",
-       "price": 3800
-      },
-      {
-       "category": "마카롱",
-       "name": "딸기요거트 통카롱",
-       "price": 3800
-      },
-      {
-       "category": "마카롱",
-       "name": "초코나무숲 통카롱",
-       "price": 3800
-      },
-      {
-       "category": "마카롱",
-       "name": "바닐라마카롱",
-       "price": 3500
-      },
-      {
-       "category": "마카롱",
-       "name": "초코마카롱",
-       "price": 3500
-      },
-      {
-       "category": "마카롱",
-       "name": "돼지바통카롱",
-       "price": 3800
-      },
-      {
-       "category": "마카롱",
-       "name": "딸기마카롱",
-       "price": 3500
-      }
-     ]
-    }
-   ],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1787553563.969899",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787553533560129"
-  },
-  {
-   "ts": "1787553403.568349",
-   "date": "2026-08-24",
-   "time": "15:36",
-   "store": "디저트참잘하는집 송탄역점",
-   "biz": "1103893769",
-   "pos": "토스포스",
-   "content": "토스포스 메뉴 및 사진 등록 요청 드립니다. ( 대형키오스크 함께 사용 중 )",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "f_20e1c3551873.xlsx.exs",
-     "fid": "F0BS8SEJ3B3",
-     "from": "댓글",
-     "path": "menu-files/1787553403_568349-1.exs",
-     "nj": 1
-    },
-    {
-     "name": "f_699651fb573a.xlsx.exs",
-     "fid": "F0BSAJNAL92",
-     "from": "댓글",
-     "path": "menu-files/1787553403_568349-2.exs",
-     "nj": 1
-    }
-   ],
-   "datt": [],
-   "replies": [],
-   "rc": 5,
-   "lr": "1787567583.448619",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787553403568349"
   }
  ],
  "ocr": {
