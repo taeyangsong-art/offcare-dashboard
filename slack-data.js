@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12967,
+  "version": 12968,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210528,11 +210528,22 @@ window.SLACK_DATA = {
     "2026-09-24": {
       "counts": {
         "as": {
-          "송태양": 5
+          "송태양": 6
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:58",
+          "store": "미식공감",
+          "biz": "5560403473",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "오케이포스랑 연동해서 쓰려고 했는데 사용이 좀 어려워서 다시 토스포스로 변경 요청 주셨습니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "• 기존 OKPOS -&gt; 토스포스로 재온보딩 완료입니다 기존 OKPOS - 토스포스로 재온보딩 완료입니다"
+        },
         {
           "time": "09:41",
           "store": "그로리프",
@@ -210592,7 +210603,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 4,
-        "offline": 1,
+        "offline": 2,
         "unknown": 0
       },
       "updatedAt": "10:00",
@@ -210739,10 +210750,6 @@ window.SLACK_DATA = {
         "post": "1790068010.204649",
         "lastSeen": 1790108127.224
       },
-      "1790038908.859219": {
-        "post": "1790038908.859219",
-        "lastSeen": 1790108127.224
-      },
       "1790140500.595239": {
         "post": "1790140500.595239",
         "lastSeen": 1790194530.131,
@@ -210827,7 +210834,10 @@ window.SLACK_DATA = {
       },
       "1790211605.163839": {
         "post": "1790211605.163839",
-        "lastSeen": 1790211621.354
+        "lastSeen": 1790211853.083,
+        "r": 1,
+        "day": "2026-09-24",
+        "idx": 2
       }
     },
     "days": {
@@ -277498,8 +277508,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-24": {
-        "cnt": 2,
-        "sumMin": 8.43514287074407,
+        "cnt": 3,
+        "sumMin": 10.636053888003032,
         "over": 0,
         "items": [
           {
@@ -277519,13 +277529,21 @@ window.SLACK_DATA = {
             "who": "송태양",
             "cat": "as",
             "dmin": 10.1
+          },
+          {
+            "hm": "10:00",
+            "min": 2.2,
+            "store": "BYC박달점",
+            "biz": "1230114537",
+            "who": "송태양",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-24 10:00",
+    "at": "2026-09-24 10:04",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
