@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13043,
+  "version": 13044,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210943,36 +210943,41 @@ window.SLACK_DATA = {
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "15:28",
+      "updatedAt": "15:40",
       "voc": {
-        "responses": 5,
+        "responses": 6,
         "install": {
-          "count": 3,
+          "count": 4,
           "low": 0
         },
         "nps": {
-          "count": 5,
+          "count": 6,
           "low": 1
         },
         "high": {
-          "install": 1,
-          "nps": 1
+          "install": 2,
+          "nps": 2
         },
         "npsDist": {
           "3": 1,
           "9": 3,
-          "10": 1
+          "10": 2
         },
         "installDist": {
           "3": 1,
           "4": 1,
-          "5": 1
+          "5": 2
         },
         "byIndustry": {
+          "요식업": 1,
           "서비스[학원]": 2,
           "서비스[숙박]": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 4,
+            "low": 1
+          },
           "12개월": {
             "total": 1,
             "low": 0
@@ -210980,20 +210985,16 @@ window.SLACK_DATA = {
           "3개월": {
             "total": 1,
             "low": 0
-          },
-          "구매설치": {
-            "total": 3,
-            "low": 1
           }
         },
         "byVan": {
+          "KCP": {
+            "total": 2,
+            "low": 1
+          },
           "KIS": {
             "total": 2,
             "low": 0
-          },
-          "KCP": {
-            "total": 1,
-            "low": 1
           },
           "KOCES": {
             "total": 2,
@@ -211028,6 +211029,18 @@ window.SLACK_DATA = {
           }
         ],
         "praises": [
+          {
+            "time": "15:40",
+            "store": "원시밥상",
+            "storeId": "679321",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "꼼꼼하게 친절히 설명해주셨고 언제든지 문의가능하다하니 안심되었어요. 편해서",
+            "byReaction": false,
+            "doneDate": ""
+          },
           {
             "time": "15:10",
             "store": "캠핑스토리",
@@ -211184,15 +211197,19 @@ window.SLACK_DATA = {
       },
       "1790222973.279209": {
         "post": "1790222973.279209",
-        "lastSeen": 1790231437.587
+        "lastSeen": 1790232078.331
       },
       "1790224243.234329": {
         "post": "1790224243.234329",
-        "lastSeen": 1790231437.587
+        "lastSeen": 1790232078.331
       },
       "1790228933.832719": {
         "post": "1790228933.832719",
-        "lastSeen": 1790231437.587
+        "lastSeen": 1790232078.331
+      },
+      "1790232017.545189": {
+        "post": "1790232017.545189",
+        "lastSeen": 1790232078.331
       }
     },
     "days": {
@@ -278079,7 +278096,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-24 15:30",
+    "at": "2026-09-24 15:41",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
