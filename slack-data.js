@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13037,
+  "version": 13038,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210528,7 +210528,7 @@ window.SLACK_DATA = {
     "2026-09-24": {
       "counts": {
         "as": {
-          "송태양": 27,
+          "송태양": 28,
           "김기범": 1
         },
         "nosetup": {
@@ -210546,6 +210546,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "14:58",
+          "store": "무아쌀식빵 인천동암더샵점",
+          "biz": "3686300726",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "가결제 :가결제_배선유:",
+          "hw": "",
+          "intake": "online",
+          "note": "완료 완료"
+        },
         {
           "time": "14:30",
           "store": "영종포차",
@@ -210905,11 +210916,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 25,
+        "online": 26,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "14:48",
+      "updatedAt": "14:58",
       "voc": {
         "responses": 1,
         "install": {
@@ -211105,15 +211116,15 @@ window.SLACK_DATA = {
       },
       "1790222973.279209": {
         "post": "1790222973.279209",
-        "lastSeen": 1790229259.104
+        "lastSeen": 1790229499.024
       },
       "1790224243.234329": {
         "post": "1790224243.234329",
-        "lastSeen": 1790229259.104
+        "lastSeen": 1790229499.024
       },
       "1790228933.832719": {
         "post": "1790228933.832719",
-        "lastSeen": 1790229259.104
+        "lastSeen": 1790229499.024
       }
     },
     "days": {
@@ -277991,7 +278002,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-24 14:54",
+    "at": "2026-09-24 14:58",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
