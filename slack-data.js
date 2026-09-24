@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13139,
+  "version": 13140,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211348,15 +211348,66 @@ window.SLACK_DATA = {
       }
     },
     "2026-09-25": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "배선유": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "07:35",
+          "store": "드롭탑 음성(남이) 휴게소점",
+          "biz": "3038120748",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "키오스크 전원 불",
+          "hw": "",
+          "intake": "offline",
+          "note": "슬기넴! 요기 키오스크 퀵 보내야하는데 지금도 퀵 부를 수 있나욤? 슬기넴! 요기 키오스크 퀵 보내야하는데 지금도 퀵 부를 수 있나욤? / 선유님 ㅠㅠ 여기 왜 계약서가 없어요? 뭐쓰는거인지 잘 모르겠네용!! 키오스크가 대형키오스크인거죠....?! / 드롭탑은 다 구매라서 계약서가 없어용! 네넵 대형키오스크에여 / 음성휴게소(하행선) 내 관광안내소&amp;"
+        }
+      ],
       "intake": {
         "online": 0,
-        "offline": 0,
+        "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "07:35"
+      "updatedAt": "07:50",
+      "voc": {
+        "responses": 1,
+        "install": {
+          "count": 0,
+          "low": 0
+        },
+        "nps": {
+          "count": 1,
+          "low": 0
+        },
+        "high": {
+          "install": 0,
+          "nps": 1
+        },
+        "npsDist": {
+          "10": 1
+        },
+        "installDist": {},
+        "byIndustry": {},
+        "byTenure": {
+          "6개월": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "byVan": {
+          "DAOU": {
+            "total": 1,
+            "low": 0
+          }
+        },
+        "reasonCounts": {},
+        "alerts": [],
+        "praises": []
+      }
     }
   },
   "resp": {
@@ -278470,7 +278521,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-25 07:45",
+    "at": "2026-09-25 08:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
