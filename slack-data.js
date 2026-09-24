@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12973,
+  "version": 12974,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210545,7 +210545,7 @@ window.SLACK_DATA = {
           "req": "• 캣단말기 사용 중",
           "hw": "",
           "intake": "offline",
-          "note": ""
+          "note": "• 프론트 전원불량으로 터미널로 임시 결제 안내 및 선불 퀵 발송 안내 • 퀵 접수 완료 프론트 전원불량으로 터미널로 임시 결제 안내 및 선불 퀵 발송 안내 퀵 접수 완료 / 프론트 안쓴다더니 -0- / 님 요기에요! 어드민 작성했고 창준님 계시니까 따로 공유는 안드려도되죵? 님 요기에요! 어드민 작성했고 창준님 계시니까 따로 공유는 안드려도되죵?"
         },
         {
           "time": "10:00",
@@ -277562,7 +277562,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-24 10:20",
+    "at": "2026-09-24 10:25",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
