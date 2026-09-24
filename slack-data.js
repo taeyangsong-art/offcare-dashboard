@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13052,
+  "version": 13053,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210987,23 +210987,23 @@ window.SLACK_DATA = {
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "16:21",
+      "updatedAt": "16:35",
       "voc": {
-        "responses": 8,
+        "responses": 9,
         "install": {
           "count": 4,
           "low": 0
         },
         "nps": {
-          "count": 8,
-          "low": 1
+          "count": 9,
+          "low": 2
         },
         "high": {
           "install": 2,
           "nps": 2
         },
         "npsDist": {
-          "3": 1,
+          "3": 2,
           "8": 1,
           "9": 4,
           "10": 2
@@ -211019,6 +211019,10 @@ window.SLACK_DATA = {
           "서비스[숙박]": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 1,
+            "low": 1
+          },
           "6개월": {
             "total": 2,
             "low": 0
@@ -211037,6 +211041,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KOVAN": {
+            "total": 1,
+            "low": 1
+          },
           "KPN": {
             "total": 1,
             "low": 0
@@ -211059,9 +211067,31 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
-          "단말기 설치나 초기 과정이 어려움": 1
+          "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "16:35",
+            "store": "바른미 에스테틱",
+            "storeId": "320328",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "컴퓨터와 연결해야되는점과 입금이너무 늦음",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:10",
             "store": "가기화실",
@@ -211259,19 +211289,19 @@ window.SLACK_DATA = {
       },
       "1790222973.279209": {
         "post": "1790222973.279209",
-        "lastSeen": 1790235204.379
+        "lastSeen": 1790235378.505
       },
       "1790224243.234329": {
         "post": "1790224243.234329",
-        "lastSeen": 1790235204.379
+        "lastSeen": 1790235378.505
       },
       "1790228933.832719": {
         "post": "1790228933.832719",
-        "lastSeen": 1790235204.379
+        "lastSeen": 1790235378.505
       },
       "1790234467.548569": {
         "post": "1790234467.548569",
-        "lastSeen": 1790235204.379,
+        "lastSeen": 1790235378.505,
         "r": 1,
         "day": "2026-09-24",
         "idx": 26
@@ -278196,7 +278226,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-24 16:33",
+    "at": "2026-09-24 16:36",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
