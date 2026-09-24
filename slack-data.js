@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13040,
+  "version": 13041,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210528,8 +210528,8 @@ window.SLACK_DATA = {
     "2026-09-24": {
       "counts": {
         "as": {
-          "송태양": 28,
-          "김기범": 1
+          "김기범": 2,
+          "송태양": 28
         },
         "nosetup": {
           "송태양": 1
@@ -210546,6 +210546,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:00",
+          "store": "소노키라멘 한양대점",
+          "biz": "3031363530",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "포프(노트북) 사용 중, 유프 주방 연결 지원 요청드립니다 (주방선 있다고 함)",
+          "hw": "",
+          "intake": "online",
+          "note": "주방선으로 프론트와 연결하실려고했음 노트북이 바로 옆이라 프린터 USB선으로 연결해드림"
+        },
         {
           "time": "14:58",
           "store": "무아쌀식빵 인천동암더샵점",
@@ -210916,49 +210927,96 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 26,
+        "online": 27,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "15:02",
+      "updatedAt": "15:10",
       "voc": {
-        "responses": 1,
+        "responses": 3,
         "install": {
-          "count": 1,
+          "count": 3,
           "low": 0
         },
         "nps": {
-          "count": 1,
-          "low": 0
+          "count": 3,
+          "low": 1
         },
         "high": {
           "install": 1,
           "nps": 1
         },
         "npsDist": {
+          "3": 1,
+          "9": 1,
           "10": 1
         },
         "installDist": {
+          "3": 1,
+          "4": 1,
           "5": 1
         },
         "byIndustry": {
-          "서비스[학원]": 1
+          "서비스[학원]": 2,
+          "서비스[숙박]": 1
         },
         "byTenure": {
           "구매설치": {
-            "total": 1,
-            "low": 0
+            "total": 3,
+            "low": 1
           }
         },
         "byVan": {
-          "KOCES": {
+          "KCP": {
             "total": 1,
+            "low": 1
+          },
+          "KOCES": {
+            "total": 2,
             "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
-        "praises": []
+        "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 1
+        },
+        "alerts": [
+          {
+            "time": "15:10",
+            "store": "가기화실",
+            "storeId": "628154",
+            "industry": "학원/스포츠/서비스",
+            "indBucket": "서비스[학원]",
+            "install": 3,
+            "nps": 3,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 3,
+                "text": "토스를 처음 설치하는 입장에서 정확한 정보를 알지못해 다른 기기가 설치되 마음이 편치 않음,,,ㅠ,ㅠ",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
+        "praises": [
+          {
+            "time": "15:10",
+            "store": "캠핑스토리",
+            "storeId": "622024",
+            "indBucket": "서비스[숙박]",
+            "emp": "",
+            "install": 4,
+            "nps": 9,
+            "text": "설치과정이 어렵진 않았으나 설치관련 전화준다하고 연락도 없고 기다리다 연락하니 접수된게 없다하며 설치잘하셨네요~하고 좀 그런 응대과정이 별로였습니다 간편하고 단말기 심플하고 예쁘고 비용없고 문제가없습니다",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
       }
     }
   },
@@ -211102,19 +211160,19 @@ window.SLACK_DATA = {
       },
       "1790222973.279209": {
         "post": "1790222973.279209",
-        "lastSeen": 1790230098.494
+        "lastSeen": 1790230461.872
       },
       "1790224243.234329": {
         "post": "1790224243.234329",
-        "lastSeen": 1790230098.494
+        "lastSeen": 1790230461.872
       },
       "1790228933.832719": {
         "post": "1790228933.832719",
-        "lastSeen": 1790230098.494
+        "lastSeen": 1790230461.872
       },
       "1790229727.636669": {
         "post": "1790229727.636669",
-        "lastSeen": 1790230098.494
+        "lastSeen": 1790230461.872
       }
     },
     "days": {
@@ -277992,7 +278050,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-24 15:08",
+    "at": "2026-09-24 15:14",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
