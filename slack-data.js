@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12961,
+  "version": 12962,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210561,7 +210561,7 @@ window.SLACK_DATA = {
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:37",
+      "updatedAt": "09:41",
       "voc": {
         "responses": 1,
         "install": {
@@ -210797,7 +210797,14 @@ window.SLACK_DATA = {
       },
       "1790210253.328009": {
         "post": "1790210253.328009",
-        "lastSeen": 1790210299.689
+        "lastSeen": 1790210538.757,
+        "r": 1,
+        "day": "2026-09-24",
+        "idx": 0
+      },
+      "1790210503.371919": {
+        "post": "1790210503.371919",
+        "lastSeen": 1790210538.757
       }
     },
     "days": {
@@ -277466,11 +277473,26 @@ window.SLACK_DATA = {
             "dmin": 15.3
           }
         ]
+      },
+      "2026-09-24": {
+        "cnt": 1,
+        "sumMin": 2.7649165193239846,
+        "over": 0,
+        "items": [
+          {
+            "hm": "09:37",
+            "min": 2.8,
+            "store": "티티엘티(TTLT)",
+            "biz": "6370303718",
+            "who": "송태양",
+            "cat": "as"
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-24 09:38",
+    "at": "2026-09-24 09:42",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
