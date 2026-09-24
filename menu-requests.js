@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2451,
- "updatedAt": "2026-09-24 13:35",
+ "version": 2452,
+ "updatedAt": "2026-09-24 13:47",
  "days": 30,
  "items": [
   {
@@ -61275,27 +61275,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787635563464349"
-  },
-  {
-   "ts": "1787633093.607129",
-   "date": "2026-08-25",
-   "time": "13:44",
-   "store": "뮌헨",
-   "biz": "5660702429",
-   "pos": "기타",
-   "content": "생맥주,소주,병맥주 모두 5500원\n콜라,사이다 2500원\n청하 7000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787633097.415499",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787633093607129"
   }
  ],
  "ocr": {
