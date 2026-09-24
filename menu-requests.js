@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2458,
- "updatedAt": "2026-09-24 15:02",
+ "version": 2459,
+ "updatedAt": "2026-09-24 15:08",
  "days": 30,
  "items": [
   {
@@ -60911,112 +60911,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787638250100349"
-  },
-  {
-   "ts": "1787637781.068079",
-   "date": "2026-08-25",
-   "time": "15:03",
-   "store": "명동돌판삼겹",
-   "biz": "5032538411",
-   "pos": "",
-   "content": "신규 설치 예정 메뉴 등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BSA08PN2F",
-     "from": "댓글",
-     "path": "menu-files/1787637781_068079-0.png",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "",
-       "name": "생삼겹살",
-       "price": 11000
-      },
-      {
-       "category": "",
-       "name": "목살",
-       "price": 11000
-      },
-      {
-       "category": "",
-       "name": "항정살",
-       "price": 13000
-      },
-      {
-       "category": "",
-       "name": "차돌박이",
-       "price": 12000
-      },
-      {
-       "category": "",
-       "name": "소주",
-       "price": 5000
-      },
-      {
-       "category": "",
-       "name": "맥주",
-       "price": 5000
-      },
-      {
-       "category": "",
-       "name": "음료",
-       "price": 2000
-      },
-      {
-       "category": "",
-       "name": "복분자",
-       "price": 11000
-      },
-      {
-       "category": "",
-       "name": "막걸리",
-       "price": 4000
-      },
-      {
-       "category": "",
-       "name": "볶음밥",
-       "price": 2000
-      },
-      {
-       "category": "",
-       "name": "공기밥",
-       "price": 1000
-      },
-      {
-       "category": "",
-       "name": "소면",
-       "price": 4000
-      },
-      {
-       "category": "",
-       "name": "냉면",
-       "price": 5000
-      },
-      {
-       "category": "",
-       "name": "된장찌개",
-       "price": 1000
-      },
-      {
-       "category": "",
-       "name": "기타",
-       "price": 2000
-      }
-     ]
-    }
-   ],
-   "datt": [],
-   "replies": [],
-   "rc": 2,
-   "lr": "1787637789.622909",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787637781068079"
   }
  ],
  "ocr": {
