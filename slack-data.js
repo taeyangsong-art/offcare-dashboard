@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13035,
+  "version": 13036,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210541,7 +210541,19 @@ window.SLACK_DATA = {
           "송태양": 1
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "13:20",
+          "store": "푸다훠궈",
+          "biz": "5521503142",
+          "handler": "송태양",
+          "cat": "menu",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "done": [
         {
           "time": "14:30",
@@ -210891,11 +210903,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 24,
+        "online": 25,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "14:30",
+      "updatedAt": "14:48",
       "voc": {
         "responses": 1,
         "install": {
@@ -211091,15 +211103,22 @@ window.SLACK_DATA = {
       },
       "1790222973.279209": {
         "post": "1790222973.279209",
-        "lastSeen": 1790228728.064
+        "lastSeen": 1790228960.751
       },
       "1790223600.203999": {
         "post": "1790223600.203999",
-        "lastSeen": 1790228728.064
+        "lastSeen": 1790228960.751,
+        "r": 1,
+        "day": "2026-09-24",
+        "idx": 21
       },
       "1790224243.234329": {
         "post": "1790224243.234329",
-        "lastSeen": 1790228728.064
+        "lastSeen": 1790228960.751
+      },
+      "1790228933.832719": {
+        "post": "1790228933.832719",
+        "lastSeen": 1790228960.751
       }
     },
     "days": {
@@ -277770,9 +277789,9 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-24": {
-        "cnt": 21,
-        "sumMin": 222.2153331995011,
-        "over": 1,
+        "cnt": 22,
+        "sumMin": 309.6187248786291,
+        "over": 2,
         "items": [
           {
             "hm": "09:37",
@@ -277962,19 +277981,27 @@ window.SLACK_DATA = {
             "who": "김기범",
             "cat": "as",
             "dmin": 14.5
+          },
+          {
+            "hm": "13:20",
+            "min": 87.4,
+            "store": "푸다훠궈",
+            "biz": "5521503142",
+            "who": "송태양",
+            "cat": "menu"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-24 14:45",
+    "at": "2026-09-24 14:49",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 4243,
+    "rows": 4246,
     "named": 944,
     "unknownName": 0,
     "beforeStart": 0,
