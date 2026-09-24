@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2434,
- "updatedAt": "2026-09-24 09:45",
+ "version": 2435,
+ "updatedAt": "2026-09-24 09:54",
  "days": 30,
  "items": [
   {
@@ -61467,27 +61467,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787621170606029"
-  },
-  {
-   "ts": "1787619170.650899",
-   "date": "2026-08-25",
-   "time": "09:52",
-   "store": "뮌헨",
-   "biz": "5660702429",
-   "pos": "기타",
-   "content": "후라이드 치킨 21000\n후라이드 윙봉 21000\n텐더치킨&감자튀김 21000\n모둠소시지 18000\n새우감자튀김 18000\n돈가스 18000\n닭모래집 18000\n치즈볼&감자튀김 18000\n모둠어묵탕 18000\n무뼈직화불닭발 18000\n국물떡볶이 18000\n스팸 17000\n두부김치 17000\n감자튀김 17000\n반건조오징어&땅콩 17000\n먹태 17000\n계란말이 15000\n순두부탕 15000\n오징어입 13000\n아귀포&땅콩 12000\n쥐포&땅콩 12000\n콘치즈 12000\n번데기전골 10000\n음료수 2500\n청하 7000\n마늘소스 1000",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787619173.843829",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787619170650899"
   }
  ],
  "ocr": {
