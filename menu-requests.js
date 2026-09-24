@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2438,
- "updatedAt": "2026-09-24 10:20",
+ "version": 2439,
+ "updatedAt": "2026-09-24 10:26",
  "days": 30,
  "items": [
   {
@@ -61479,29 +61479,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787621764744339"
-  },
-  {
-   "ts": "1787621170.606029",
-   "date": "2026-08-25",
-   "time": "10:26",
-   "store": "파머스테이블",
-   "biz": "8434501203",
-   "pos": "토스포스",
-   "content": "바코드 / 메뉴명 / 판매액 등록 부탁드립니다",
-   "special": "바코드 / 메뉴명 / 판매액 등록 부탁드립니다",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "이미지를 pdf로 첨부하심 / jpg로 변환 후 등록 완료 / 다음엔 안해드리"
-   ],
-   "rc": 2,
-   "lr": "1787652074.793339",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787621170606029"
   }
  ],
  "ocr": {
