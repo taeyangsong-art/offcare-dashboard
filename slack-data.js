@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13073,
+  "version": 13074,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211043,16 +211043,16 @@ window.SLACK_DATA = {
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "18:56",
+      "updatedAt": "19:00",
       "voc": {
-        "responses": 11,
+        "responses": 12,
         "install": {
           "count": 5,
           "low": 0
         },
         "nps": {
-          "count": 11,
-          "low": 2
+          "count": 12,
+          "low": 3
         },
         "high": {
           "install": 3,
@@ -211060,6 +211060,7 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "3": 2,
+          "5": 1,
           "8": 1,
           "9": 4,
           "10": 4
@@ -211076,6 +211077,10 @@ window.SLACK_DATA = {
           "서비스[숙박]": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 2,
+            "low": 1
+          },
           "3개월": {
             "total": 2,
             "low": 0
@@ -211091,20 +211096,16 @@ window.SLACK_DATA = {
           "6개월": {
             "total": 2,
             "low": 0
-          },
-          "12개월": {
-            "total": 1,
-            "low": 0
           }
         },
         "byVan": {
+          "KOVAN": {
+            "total": 3,
+            "low": 2
+          },
           "SECTA9": {
             "total": 2,
             "low": 0
-          },
-          "KOVAN": {
-            "total": 2,
-            "low": 1
           },
           "KPN": {
             "total": 1,
@@ -211124,9 +211125,32 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "단말기 설치나 초기 과정이 어려움": 2
         },
         "alerts": [
+          {
+            "time": "18:59",
+            "store": "수아언니네 과일야채",
+            "storeId": "262754",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "툭하면 결제중   짜증나요",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "16:35",
             "store": "바른미 에스테틱",
@@ -211326,26 +211350,33 @@ window.SLACK_DATA = {
       },
       "1790222973.279209": {
         "post": "1790222973.279209",
-        "lastSeen": 1790243778.922
+        "lastSeen": 1790244019.631
       },
       "1790224243.234329": {
         "post": "1790224243.234329",
-        "lastSeen": 1790243778.922
+        "lastSeen": 1790244019.631
       },
       "1790228933.832719": {
         "post": "1790228933.832719",
-        "lastSeen": 1790243778.922
+        "lastSeen": 1790244019.631
       },
       "1790243100.338859": {
         "post": "1790243100.338859",
-        "lastSeen": 1790243778.922,
+        "lastSeen": 1790244019.631,
         "r": 1,
         "day": "2026-09-24",
         "idx": 30
       },
       "1790243762.322239": {
         "post": "1790243762.322239",
-        "lastSeen": 1790243778.922
+        "lastSeen": 1790244019.631,
+        "r": 1,
+        "day": "2026-09-24",
+        "idx": 31
+      },
+      "1790244001.536029": {
+        "post": "1790244001.536029",
+        "lastSeen": 1790244019.631
       }
     },
     "days": {
@@ -278016,8 +278047,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-24": {
-        "cnt": 31,
-        "sumMin": 386.59182869990667,
+        "cnt": 32,
+        "sumMin": 388.8743997176488,
         "over": 2,
         "items": [
           {
@@ -278297,13 +278328,21 @@ window.SLACK_DATA = {
             "biz": "1700501259",
             "who": "김기범",
             "cat": "as"
+          },
+          {
+            "hm": "18:56",
+            "min": 2.3,
+            "store": "오늘도, 예쁘개",
+            "biz": "5524001258",
+            "who": "김기범",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-24 18:56",
+    "at": "2026-09-24 19:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
