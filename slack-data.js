@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12992,
+  "version": 12993,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210527,6 +210527,9 @@ window.SLACK_DATA = {
     },
     "2026-09-24": {
       "counts": {
+        "extern": {
+          "송태양": 1
+        },
         "as": {
           "송태양": 10
         },
@@ -210536,6 +210539,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:50",
+          "store": "주식회사 제이엔와이",
+          "biz": "7748103387",
+          "cat": "extern",
+          "emp": "송태양",
+          "req": "010-3843-3959 외주 설치지원",
+          "hw": "",
+          "intake": "online",
+          "note": "완료링"
+        },
         {
           "time": "10:44",
           "store": "요크 아젤라또크레페",
@@ -210662,11 +210676,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 7,
+        "online": 8,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "11:16",
+      "updatedAt": "11:18",
       "voc": {
         "responses": 1,
         "install": {
@@ -210894,22 +210908,19 @@ window.SLACK_DATA = {
       },
       "1790214104.788689": {
         "post": "1790214104.788689",
-        "lastSeen": 1790216244.091
-      },
-      "1790214634.402879": {
-        "post": "1790214634.402879",
-        "lastSeen": 1790216244.091,
-        "r": 1,
-        "day": "2026-09-24",
-        "idx": 4
+        "lastSeen": 1790216359.204
       },
       "1790215201.249989": {
         "post": "1790215201.249989",
-        "lastSeen": 1790216244.091
+        "lastSeen": 1790216359.204
       },
       "1790216207.798219": {
         "post": "1790216207.798219",
-        "lastSeen": 1790216244.091
+        "lastSeen": 1790216359.204
+      },
+      "1790216306.162609": {
+        "post": "1790216306.162609",
+        "lastSeen": 1790216359.204
       }
     },
     "days": {
@@ -277626,7 +277637,8 @@ window.SLACK_DATA = {
             "store": "주식회사 제이엔와이",
             "biz": "7748103387",
             "who": "송태양",
-            "cat": "as"
+            "cat": "extern",
+            "dmin": 27.8
           },
           {
             "hm": "10:44",
@@ -277642,7 +277654,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-24 11:17",
+    "at": "2026-09-24 11:19",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
