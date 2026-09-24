@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13033,
+  "version": 13034,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210528,7 +210528,8 @@ window.SLACK_DATA = {
     "2026-09-24": {
       "counts": {
         "as": {
-          "송태양": 27
+          "송태양": 27,
+          "김기범": 1
         },
         "nosetup": {
           "송태양": 1
@@ -210552,6 +210553,18 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "고객센터로 전화주신다고 함"
+        },
+        {
+          "time": "14:25",
+          "store": "도봉밀레",
+          "biz": "1190683234",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "멀티패드 재설치 이후 터치 및 실행이 되지 않는다고하여 확인 요청드립니다.",
+          "hw": "",
+          "urgent": true,
+          "intake": "offline",
+          "note": "여기 또 인입..? / 영업 중으로 빠른 연락 요청 주셨습니다.ㅎ..네 / 다음 순서로 안내 완료 / 전 상담 끝나면 연락 드리는 점 양해 / 프론트 + 터미널 사용중 프론트가 키오스크 모드로 되어있어서 프론트 재 온보딩 완료 터+프 조합 완료"
         },
         {
           "time": "14:09",
@@ -210879,7 +210892,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 24,
-        "offline": 6,
+        "offline": 7,
         "unknown": 0
       },
       "updatedAt": "14:30",
@@ -211078,22 +211091,15 @@ window.SLACK_DATA = {
       },
       "1790222973.279209": {
         "post": "1790222973.279209",
-        "lastSeen": 1790228305.415
+        "lastSeen": 1790228540.341
       },
       "1790223600.203999": {
         "post": "1790223600.203999",
-        "lastSeen": 1790228305.415
+        "lastSeen": 1790228540.341
       },
       "1790224243.234329": {
         "post": "1790224243.234329",
-        "lastSeen": 1790228305.415
-      },
-      "1790227551.416149": {
-        "post": "1790227551.416149",
-        "lastSeen": 1790228305.415,
-        "r": 1,
-        "day": "2026-09-24",
-        "idx": 20
+        "lastSeen": 1790228540.341
       }
     },
     "days": {
@@ -277954,20 +277960,21 @@ window.SLACK_DATA = {
             "store": "도봉밀레",
             "biz": "1190683234",
             "who": "김기범",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 14.5
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-24 14:38",
+    "at": "2026-09-24 14:42",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 4240,
+    "rows": 4242,
     "named": 944,
     "unknownName": 0,
     "beforeStart": 0,
