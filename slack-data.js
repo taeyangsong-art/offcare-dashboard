@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12965,
+  "version": 12966,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210528,7 +210528,7 @@ window.SLACK_DATA = {
     "2026-09-24": {
       "counts": {
         "as": {
-          "송태양": 4
+          "송태양": 5
         }
       },
       "pending": [],
@@ -210558,6 +210558,17 @@ window.SLACK_DATA = {
         },
         {
           "time": "09:30",
+          "store": "홍콩반점",
+          "biz": "2241726899",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "배달앱 연동 (쿠팡이츠) 뜨지 않는다고 하셔서 연동 여부 및 확인 요청 부탁드리겠습니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "• 고령으로 영상통화 및 원격불가로 손님중에 젊으신 분 오시면 재연락 주시기로 함 고령으로 영상통화 및 원격불가로 손님중에 젊으신 분 오시면 재연락 주시기로 함"
+        },
+        {
+          "time": "09:30",
           "store": "영종포차",
           "biz": "6023308640",
           "cat": "as",
@@ -210580,11 +210591,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 3,
+        "online": 4,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "09:41",
+      "updatedAt": "09:58",
       "voc": {
         "responses": 1,
         "install": {
@@ -210730,10 +210741,6 @@ window.SLACK_DATA = {
       },
       "1790038908.859219": {
         "post": "1790038908.859219",
-        "lastSeen": 1790108127.224
-      },
-      "1790038608.680899": {
-        "post": "1790038608.680899",
         "lastSeen": 1790108127.224
       },
       "1790140500.595239": {
@@ -277514,7 +277521,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-24 09:54",
+    "at": "2026-09-24 09:59",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
