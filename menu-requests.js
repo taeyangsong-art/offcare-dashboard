@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2464,
- "updatedAt": "2026-09-24 17:12",
+ "version": 2465,
+ "updatedAt": "2026-09-24 17:25",
  "days": 30,
  "items": [
   {
@@ -60551,46 +60551,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787648901114749"
-  },
-  {
-   "ts": "1787646076.017079",
-   "date": "2026-08-25",
-   "time": "17:21",
-   "store": "뮌헨",
-   "biz": "5660702429",
-   "pos": "기타",
-   "content": "켈리,테라,카스,후레시,진로,진로오리지널,처음처럼,새로\n가격모두 5500원으로 수정\n\n무뼈직화불닭발+콘치즈\n29000원으로 가격수정 요망",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BSF6RRRML",
-     "from": "댓글",
-     "path": "menu-files/1787646076_017079-0.png",
-     "kind": "pos_screen",
-     "menu": [
-      {
-       "category": "메뉴",
-       "name": "무뼈불닭발+콘치즈",
-       "price": 29000
-      }
-     ]
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "이건되어잇음",
-    "카스무알콜은 일단 없으니깐 5500원 유지",
-    "솔완"
-   ],
-   "rc": 4,
-   "lr": "1787646247.354149",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787646076017079"
   }
  ],
  "ocr": {
