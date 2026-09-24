@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12956,
+  "version": 12957,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210526,12 +210526,28 @@ window.SLACK_DATA = {
       }
     },
     "2026-09-24": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "송태양": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:00",
+          "store": "용커피 로스터스-1",
+          "biz": "2422400314",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "유선프린터 구매 하시어, 연걸 안내 요청 드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "온보딩 완료입니다"
+        }
+      ],
       "intake": {
         "online": 0,
-        "offline": 0,
+        "offline": 1,
         "unknown": 0
       },
       "updatedAt": "09:00"
@@ -277400,7 +277416,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-24 09:00",
+    "at": "2026-09-24 09:08",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
