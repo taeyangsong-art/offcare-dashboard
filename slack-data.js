@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12996,
+  "version": 12997,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210528,7 +210528,7 @@ window.SLACK_DATA = {
     "2026-09-24": {
       "counts": {
         "as": {
-          "송태양": 12
+          "송태양": 13
         },
         "extern": {
           "송태양": 1
@@ -210561,6 +210561,17 @@ window.SLACK_DATA = {
           "urgent": true,
           "intake": "online",
           "note": "삭제후 재설치 완료입니다"
+        },
+        {
+          "time": "11:00",
+          "store": "연커피",
+          "biz": "5242002031",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "오케이포스 포스기 이용중+터프 / 포스기에서 주문 시 당사 단말기에서<https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1790151869739159| 금액 입력이 아닌>  금액과 함께 결제",
+          "hw": "",
+          "intake": "online",
+          "note": "1시 45분 예약요청으로 예약 완료입니다"
         },
         {
           "time": "10:50",
@@ -210699,11 +210710,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 10,
+        "online": 11,
         "offline": 4,
         "unknown": 0
       },
-      "updatedAt": "11:18",
+      "updatedAt": "11:28",
       "voc": {
         "responses": 1,
         "install": {
@@ -210747,13 +210758,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1790044200.217269": {
-        "post": "1790044200.217269",
-        "lastSeen": 1790108127.224,
-        "r": 1,
-        "day": "2026-09-22",
-        "idx": 26
-      },
       "1790053202.271759": {
         "post": "1790053202.271759",
         "lastSeen": 1790108127.224,
@@ -210931,11 +210935,10 @@ window.SLACK_DATA = {
       },
       "1790214104.788689": {
         "post": "1790214104.788689",
-        "lastSeen": 1790216779.88
-      },
-      "1790215201.249989": {
-        "post": "1790215201.249989",
-        "lastSeen": 1790216779.88
+        "lastSeen": 1790217007.491,
+        "r": 1,
+        "day": "2026-09-24",
+        "idx": 9
       }
     },
     "days": {
@@ -277606,9 +277609,9 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-24": {
-        "cnt": 8,
-        "sumMin": 57.94578664700191,
-        "over": 0,
+        "cnt": 10,
+        "sumMin": 132.63465868632,
+        "over": 1,
         "items": [
           {
             "hm": "09:37",
@@ -277681,13 +277684,30 @@ window.SLACK_DATA = {
             "who": "송태양",
             "cat": "as",
             "dmin": 6.4
+          },
+          {
+            "hm": "11:00",
+            "min": 28.2,
+            "store": "연커피",
+            "biz": "5242002031",
+            "who": "송태양",
+            "cat": "as",
+            "dmin": 28.2
+          },
+          {
+            "hm": "10:41",
+            "min": 46.5,
+            "store": "대박과일야채 돌곶이점",
+            "biz": "3819601838",
+            "who": "송태양",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-24 11:26",
+    "at": "2026-09-24 11:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
