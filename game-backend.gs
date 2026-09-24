@@ -191,6 +191,7 @@ function doGet(e) {
     var p = (e && e.parameter) || {};
     // 경량 변경 확인 — 시트를 건드리지 않고 리비전 숫자만 반환(응답 수십 바이트).
     if (p.action === 'rev') { return json_({ ok: true, rev: readRev_() }); }
+    if (p.action === 'bookings') { return json_(listBookings_(p)); }
     if (p.action) { return handleAuth_(p); }
     // rev 를 블롭보다 '먼저' 읽는다. 반대 순서면 두 읽기 사이에 들어온 쓰기를
     // 클라이언트가 이미 받은 것으로 착각해 그 변경을 영영 놓친다.
@@ -208,6 +209,10 @@ function doPost(e) {
     var raw = '{}';
     if (e && e.postData && e.postData.contents) { raw = e.postData.contents; }
     var body = JSON.parse(raw);
+    // 원격 예약은 공유 블롭과 무관하다 — 블롭을 읽고 쓰지 않고 rev 도 올리지 않는다.
+    // (같은 스크립트 락 안이라 동시에 들어온 예약 두 건이 마지막 한 자리를 같이 차지하지 못한다)
+    if (body.action === 'book') { return json_(createBooking_(body)); }
+    if (body.action === 'cancelBooking') { return json_(cancelBooking_(body)); }
     var cur = readBlob_();
     if (body.patch) { cur = mergePatch_(cur, body.patch); }
     else if (body.game) { cur = body.game; }
@@ -441,4 +446,243 @@ function testSlackWatch() {
       console.log(ch.name + ': 읽기 실패 ❌ ' + e + '  (봇이 채널에 초대돼 있는지 확인)');
     }
   }
+}
+
+/* =========================================================================
+ * 원격 예약 (booking.html)
+ *
+ * 왜 필요한가: 원격 요청을 각자 슬랙에 바로 올리다 보니 같은 시각에 우르르 몰려
+ * 처리 인원이 병목된다. 예약 페이지에서 15분 칸마다 정원을 두고, 예약된 요청은
+ * chat.scheduleMessage 로 '그 시각에' 슬랙 양식 그대로 올라가게 한다.
+ *
+ * 데이터: 스토어 스프레드시트의 'booking' 시트(한 행 = 예약 한 건). 공유 블롭과 분리한다 —
+ *   블롭은 50KB 에 가까워 여러 행으로 쪼개 저장 중이고, 예약은 계속 쌓이는 데이터라서.
+ * 공개 범위: 페이지·저장소가 public 이라 목록 조회(GET)는 유형·시각·상호·요청자만 돌려준다.
+ *   전화번호·주소는 슬랙 메시지와 시트에만 남는다.
+ * 취소: 예약 시 발급한 취소코드가 있어야 한다(예약한 브라우저의 localStorage 에 저장됨).
+ *
+ * 필요한 스크립트 속성: SLACK_BOT_TOKEN (chat:write 권한 + 대상 채널에 봇 초대)
+ * 동작 확인: 편집기에서 testBooking() 실행 → 실행 로그 확인
+ * ========================================================================= */
+
+var BOOKING = {
+  days: 14,                    // 오늘부터 며칠 앞까지 예약을 받을지
+  open: '09:00',               // 첫 칸 시작
+  close: '18:00',              // 마지막 칸은 close - step (17:45)
+  step: 15,                    // 칸 단위(분)
+  closedDays: [],              // 예약 안 받는 요일 (0=일 … 6=토). 예: [0, 6]
+  lunch: { from: '12:00', to: '14:00' },   // 이 시간대는 lunchCap 적용 (to 는 미포함)
+  minLeadMin: 2,               // 시작 몇 분 전까지 예약 가능
+  types: {
+    as:       { label: '원격AS',   channel: 'C09HRUSG4TX', cap: 4, lunchCap: 2 },   // #0_원격_as_요청
+    transfer: { label: '명의변경', channel: 'C09HRUSG4TX', cap: 2, lunchCap: 1 }
+  }
+};
+var BOOKING_SHEET = 'booking';
+var BOOKING_COLS = ['id', 'code', 'date', 'time', 'type', 'postAt', 'channel', 'scheduledId', 'status',
+  'createdAt', 'requester', 'store', 'van', 'onoff', 'contract', 'biz', 'owner', 'ownerPhone',
+  'storePhone', 'addr', 'content', 'cancelledAt'];
+
+function hm_(s) { var a = String(s).split(':'); return parseInt(a[0], 10) * 60 + parseInt(a[1], 10); }
+function pad2_(n) { return ('0' + n).slice(-2); }
+// KST 기준 날짜+시각 → epoch ms. 서버 시간대와 무관하게 계산한다.
+function kstMs_(date, time) {
+  var d = String(date).split('-');
+  return Date.UTC(+d[0], +d[1] - 1, +d[2], 0, hm_(time)) - 9 * 3600000;
+}
+function kstToday_() {
+  var t = new Date(Date.now() + 9 * 3600000);
+  return t.getUTCFullYear() + '-' + pad2_(t.getUTCMonth() + 1) + '-' + pad2_(t.getUTCDate());
+}
+function addDays_(date, n) {
+  var d = String(date).split('-');
+  var t = new Date(Date.UTC(+d[0], +d[1] - 1, +d[2] + n));
+  return t.getUTCFullYear() + '-' + pad2_(t.getUTCMonth() + 1) + '-' + pad2_(t.getUTCDate());
+}
+function dow_(date) { var d = String(date).split('-'); return new Date(Date.UTC(+d[0], +d[1] - 1, +d[2])).getUTCDay(); }
+
+function capOf_(type, time) {
+  var t = BOOKING.types[type];
+  var m = hm_(time);
+  return (m >= hm_(BOOKING.lunch.from) && m < hm_(BOOKING.lunch.to)) ? t.lunchCap : t.cap;
+}
+
+function bookingSheet_() {
+  var ss = store_().getParent();
+  var sh = ss.getSheetByName(BOOKING_SHEET);
+  if (!sh) {
+    sh = ss.insertSheet(BOOKING_SHEET);
+    // 사업자번호·시각이 숫자/날짜로 바뀌어 앞자리 0 이 사라지지 않게 전부 텍스트로
+    sh.getRange(1, 1, sh.getMaxRows(), BOOKING_COLS.length).setNumberFormat('@');
+    sh.getRange(1, 1, 1, BOOKING_COLS.length).setValues([BOOKING_COLS]);
+    sh.setFrozenRows(1);
+  }
+  return sh;
+}
+
+function readBookings_() {
+  var sh = bookingSheet_();
+  var last = sh.getLastRow();
+  if (last < 2) { return []; }
+  var vals = sh.getRange(2, 1, last - 1, BOOKING_COLS.length).getDisplayValues();
+  var out = [];
+  for (var i = 0; i < vals.length; i++) {
+    var r = { _row: i + 2 };
+    for (var c = 0; c < BOOKING_COLS.length; c++) { r[BOOKING_COLS[c]] = vals[i][c]; }
+    out.push(r);
+  }
+  return out;
+}
+
+function publicCfg_() {
+  var types = {};
+  for (var k in BOOKING.types) {
+    var t = BOOKING.types[k];
+    types[k] = { label: t.label, cap: t.cap, lunchCap: t.lunchCap };
+  }
+  return { days: BOOKING.days, open: BOOKING.open, close: BOOKING.close, step: BOOKING.step,
+    closedDays: BOOKING.closedDays, lunch: BOOKING.lunch, minLeadMin: BOOKING.minLeadMin, types: types };
+}
+
+function listBookings_(p) {
+  var from = p.from || kstToday_();
+  var to = p.to || addDays_(kstToday_(), BOOKING.days - 1);
+  var rows = readBookings_();
+  var list = [];
+  for (var i = 0; i < rows.length; i++) {
+    var r = rows[i];
+    if (r.status === 'cancelled' || r.date < from || r.date > to) { continue; }
+    list.push({ id: r.id, date: r.date, time: r.time, type: r.type, store: r.store, requester: r.requester });
+  }
+  return { ok: true, now: Date.now(), today: kstToday_(), cfg: publicCfg_(), bookings: list };
+}
+
+// 한 줄 입력칸: 줄바꿈 제거 + 길이 제한. 시트·목록에는 원문 그대로 두고,
+// 슬랙 제어문자(& < >)는 메시지를 만들 때만 이스케이프한다(멘션·링크로 오해되지 않게).
+function slackEsc_(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+function line_(v, max) { return String(v == null ? '' : v).replace(/[\r\n]+/g, ' ').trim().slice(0, max || 200); }
+
+// 슬랙 원격요청 양식 그대로. 첫 줄의 [예약] 태그는 booking-report.js·fetch-and-tally.js 가 예약건으로 인식하는 표시이고,
+// 봇이 올린 글이라 작성자 대신 '요청자:' 줄로 사람을 가린다(미설치건 집계가 이 줄을 본다).
+function bookingText_(b) {
+  var DOW = ['일', '월', '화', '수', '목', '금', '토'];
+  var d = b.date.split('-');
+  var head = '[예약] ' + (+d[1]) + '/' + (+d[2]) + '(' + DOW[dow_(b.date)] + ') ' + b.time + ' · ' + BOOKING.types[b.type].label;
+  return head + '\n' + slackEsc_([
+    '상호: ' + b.store + (b.van ? ' / ' + b.van : ''),
+    '오프/온라인: ' + b.onoff + (b.contract ? ' / ' + b.contract : ''),
+    '사업자번호 : ' + b.biz,
+    '대표자명 : ' + b.owner,
+    '대표자 전화번호 : ' + b.ownerPhone,
+    '가게 연락처 : ' + b.storePhone,
+    '주소 : ' + b.addr,
+    '내용: ' + b.content,
+    '요청자: ' + b.requester
+  ].join('\n'));
+}
+
+function slackApi_(method, payload) {
+  var token = prop_('SLACK_BOT_TOKEN');
+  if (!token) { return { ok: false, error: 'no_slack_token' }; }
+  var res = UrlFetchApp.fetch('https://slack.com/api/' + method, {
+    method: 'post',
+    contentType: 'application/json; charset=utf-8',
+    headers: { Authorization: 'Bearer ' + token },
+    payload: JSON.stringify(payload),
+    muteHttpExceptions: true
+  });
+  try { return JSON.parse(res.getContentText()); }
+  catch (e) { return { ok: false, error: 'slack_http_' + res.getResponseCode() }; }
+}
+
+function createBooking_(body) {
+  var b = body.booking || {};
+  var type = String(b.type || '');
+  if (!BOOKING.types[type]) { return { ok: false, error: 'bad_type' }; }
+  var date = String(b.date || ''), time = String(b.time || '');
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !/^\d{2}:\d{2}$/.test(time)) { return { ok: false, error: 'bad_slot' }; }
+
+  // 칸 검증: 운영 시간 안, 15분 격자, 예약 가능 기간, 휴무 요일, 시작 임박 아님
+  var m = hm_(time);
+  if (m < hm_(BOOKING.open) || m + BOOKING.step > hm_(BOOKING.close) || (m - hm_(BOOKING.open)) % BOOKING.step) {
+    return { ok: false, error: 'bad_slot' };
+  }
+  var today = kstToday_();
+  if (date < today || date > addDays_(today, BOOKING.days - 1)) { return { ok: false, error: 'out_of_range' }; }
+  if (BOOKING.closedDays.indexOf(dow_(date)) >= 0) { return { ok: false, error: 'closed_day' }; }
+  var postAt = kstMs_(date, time);
+  if (postAt < Date.now() + BOOKING.minLeadMin * 60000) { return { ok: false, error: 'too_late' }; }
+
+  var rec = {
+    type: type, date: date, time: time,
+    requester: line_(b.requester, 20), store: line_(b.store, 60), van: line_(b.van, 30),
+    onoff: line_(b.onoff, 10), contract: line_(b.contract, 20),
+    biz: String(b.biz || '').replace(/\D/g, ''), owner: line_(b.owner, 20),
+    ownerPhone: line_(b.ownerPhone, 20), storePhone: line_(b.storePhone, 20), addr: line_(b.addr, 150),
+    content: String(b.content || '').trim().slice(0, 1000)
+  };
+  if (!rec.requester || !rec.store || !rec.owner || !rec.ownerPhone) { return { ok: false, error: 'missing_field' }; }
+  if (rec.biz.length !== 10) { return { ok: false, error: 'bad_biz' }; }
+
+  // 정원 확인 — doPost 가 스크립트 락을 잡은 상태라 이 확인과 아래 저장 사이에 다른 예약이 끼어들지 못한다
+  var rows = readBookings_();
+  var used = 0;
+  for (var i = 0; i < rows.length; i++) {
+    var r = rows[i];
+    if (r.status !== 'cancelled' && r.date === date && r.time === time && r.type === type) { used++; }
+  }
+  var cap = capOf_(type, time);
+  if (used >= cap) { return { ok: false, error: 'full', used: used, cap: cap }; }
+
+  var channel = BOOKING.types[type].channel;
+  var sres = slackApi_('chat.scheduleMessage', { channel: channel, post_at: Math.floor(postAt / 1000), text: bookingText_(rec) });
+  if (!sres.ok) { return { ok: false, error: 'slack_' + sres.error }; }
+
+  var id = Utilities.getUuid().slice(0, 8);
+  var code = Utilities.getUuid().replace(/-/g, '').slice(0, 12);
+  rec.id = id; rec.code = code; rec.postAt = String(postAt); rec.channel = channel;
+  rec.scheduledId = sres.scheduled_message_id; rec.status = 'scheduled';
+  rec.createdAt = new Date().toISOString(); rec.cancelledAt = '';
+  var row = [];
+  for (var c = 0; c < BOOKING_COLS.length; c++) { row.push(rec[BOOKING_COLS[c]] == null ? '' : String(rec[BOOKING_COLS[c]])); }
+  bookingSheet_().appendRow(row);
+  return { ok: true, id: id, code: code, date: date, time: time, type: type, store: rec.store };
+}
+
+function cancelBooking_(body) {
+  var rows = readBookings_();
+  for (var i = 0; i < rows.length; i++) {
+    var r = rows[i];
+    if (r.id !== String(body.id || '')) { continue; }
+    if (r.code !== String(body.code || '')) { return { ok: false, error: 'bad_code' }; }
+    if (r.status === 'cancelled') { return { ok: true, already: true }; }
+    // 슬랙은 게시 직전(약 1분 안) 예약 메시지 삭제를 거부한다
+    if (+r.postAt <= Date.now() + 60000) { return { ok: false, error: 'already_posted' }; }
+    var sres = slackApi_('chat.deleteScheduledMessage', { channel: r.channel, scheduled_message_id: r.scheduledId });
+    // 슬랙에서 이미 사라진 예약(invalid_scheduled_message_id)은 시트만 정리하면 된다
+    if (!sres.ok && sres.error !== 'invalid_scheduled_message_id') { return { ok: false, error: 'slack_' + sres.error }; }
+    var sh = bookingSheet_();
+    sh.getRange(r._row, BOOKING_COLS.indexOf('status') + 1).setValue('cancelled');
+    sh.getRange(r._row, BOOKING_COLS.indexOf('cancelledAt') + 1).setValue(new Date().toISOString());
+    return { ok: true };
+  }
+  return { ok: false, error: 'not_found' };
+}
+
+// 편집기에서 실행: 토큰·권한·채널 초대 상태를 확인한다. 1시간 뒤로 테스트 예약을 걸었다가 바로 지우므로 채널엔 아무것도 안 올라간다.
+function testBooking() {
+  var token = prop_('SLACK_BOT_TOKEN');
+  console.log('SLACK_BOT_TOKEN: ' + (token ? '있음' : '없음 ❌'));
+  if (!token) { return; }
+  var seen = {};
+  for (var k in BOOKING.types) {
+    var ch = BOOKING.types[k].channel;
+    if (seen[ch]) { continue; }
+    seen[ch] = true;
+    var r = slackApi_('chat.scheduleMessage', { channel: ch, post_at: Math.floor(Date.now() / 1000) + 3600, text: '[예약 테스트] 곧 자동 삭제됩니다' });
+    if (!r.ok) { console.log(ch + ' ❌ ' + r.error + '  (missing_scope → 슬랙 앱에 chat:write 추가 / not_in_channel → 채널에 봇 초대)'); continue; }
+    var d = slackApi_('chat.deleteScheduledMessage', { channel: ch, scheduled_message_id: r.scheduled_message_id });
+    console.log(ch + ' ✅ 예약 가능 (테스트 예약 삭제: ' + (d.ok ? '완료' : d.error) + ')');
+  }
+  console.log('booking 시트: ' + bookingSheet_().getParent().getUrl());
 }
