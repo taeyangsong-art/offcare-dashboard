@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12994,
+  "version": 12995,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210527,11 +210527,11 @@ window.SLACK_DATA = {
     },
     "2026-09-24": {
       "counts": {
+        "as": {
+          "송태양": 11
+        },
         "extern": {
           "송태양": 1
-        },
-        "as": {
-          "송태양": 10
         },
         "onboarding": {
           "송태양": 1
@@ -210539,6 +210539,18 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:16",
+          "store": "왔따쪽갈비 연산직영점",
+          "biz": "5010493257",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "쿠팡이츠 이슈 건으로 삭제후 재설치 안내드렸으나 설치 어려워허셔서 안내 한번 부탁드리겠습니다.  / 강성 고객",
+          "hw": "",
+          "urgent": true,
+          "intake": "online",
+          "note": "삭제후 재설치 완료입니다"
+        },
         {
           "time": "10:50",
           "store": "주식회사 제이엔와이",
@@ -210676,7 +210688,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 8,
+        "online": 9,
         "offline": 4,
         "unknown": 0
       },
@@ -210908,22 +210920,15 @@ window.SLACK_DATA = {
       },
       "1790214104.788689": {
         "post": "1790214104.788689",
-        "lastSeen": 1790216480.346
+        "lastSeen": 1790216599.404
       },
       "1790215201.249989": {
         "post": "1790215201.249989",
-        "lastSeen": 1790216480.346
-      },
-      "1790216207.798219": {
-        "post": "1790216207.798219",
-        "lastSeen": 1790216480.346,
-        "r": 1,
-        "day": "2026-09-24",
-        "idx": 6
+        "lastSeen": 1790216599.404
       },
       "1790216306.162609": {
         "post": "1790216306.162609",
-        "lastSeen": 1790216480.346
+        "lastSeen": 1790216599.404
       }
     },
     "days": {
@@ -277658,14 +277663,15 @@ window.SLACK_DATA = {
             "store": "왔따쪽갈비 연산직영점",
             "biz": "5010493257",
             "who": "송태양",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 5.5
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-24 11:21",
+    "at": "2026-09-24 11:23",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
