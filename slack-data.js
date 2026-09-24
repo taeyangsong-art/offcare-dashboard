@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13045,
+  "version": 13046,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210528,8 +210528,8 @@ window.SLACK_DATA = {
     "2026-09-24": {
       "counts": {
         "as": {
+          "김기범": 3,
           "미지정": 2,
-          "김기범": 2,
           "송태양": 28
         },
         "nosetup": {
@@ -210547,6 +210547,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:42",
+          "store": "더 줌",
+          "biz": "3312700497",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "쿠팡이츠 이슈 '쿠팡이츠 사장님 포털' 들어가셔서 쿠팡이츠 POS 설치 안내 완료 했는데 재설치 되었는지 확인 한번만 부탁 드립니다!!!",
+          "hw": "",
+          "intake": "online",
+          "note": "사장님 포털 들어가서 재설치 하여 지금은 잘된다고함"
+        },
         {
           "time": "15:40",
           "store": "홍콩반점",
@@ -210950,7 +210961,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 29,
+        "online": 30,
         "offline": 7,
         "unknown": 0
       },
@@ -211208,15 +211219,15 @@ window.SLACK_DATA = {
       },
       "1790222973.279209": {
         "post": "1790222973.279209",
-        "lastSeen": 1790232200.91
+        "lastSeen": 1790232319.44
       },
       "1790224243.234329": {
         "post": "1790224243.234329",
-        "lastSeen": 1790232200.91
+        "lastSeen": 1790232319.44
       },
       "1790228933.832719": {
         "post": "1790228933.832719",
-        "lastSeen": 1790232200.91
+        "lastSeen": 1790232319.44
       }
     },
     "days": {
@@ -278112,7 +278123,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-24 15:43",
+    "at": "2026-09-24 15:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
