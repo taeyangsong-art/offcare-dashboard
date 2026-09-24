@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13003,
+  "version": 13004,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210968,7 +210968,10 @@ window.SLACK_DATA = {
       },
       "1790218159.625539": {
         "post": "1790218159.625539",
-        "lastSeen": 1790218221.519
+        "lastSeen": 1790218578.849,
+        "r": 1,
+        "day": "2026-09-24",
+        "idx": 11
       }
     },
     "days": {
@@ -277639,8 +277642,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-24": {
-        "cnt": 11,
-        "sumMin": 134.96376003424328,
+        "cnt": 12,
+        "sumMin": 138.97306771675747,
         "over": 1,
         "items": [
           {
@@ -277741,13 +277744,21 @@ window.SLACK_DATA = {
             "who": "송태양",
             "cat": "as",
             "dmin": 5.8
+          },
+          {
+            "hm": "11:49",
+            "min": 4,
+            "store": "카페발라당",
+            "biz": "6728703439",
+            "who": "송태양",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-24 11:50",
+    "at": "2026-09-24 11:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
