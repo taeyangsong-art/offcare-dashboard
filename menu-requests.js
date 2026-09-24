@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2463,
- "updatedAt": "2026-09-24 16:45",
+ "version": 2464,
+ "updatedAt": "2026-09-24 17:12",
  "days": 30,
  "items": [
   {
@@ -60591,29 +60591,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787646076017079"
-  },
-  {
-   "ts": "1787645549.985539",
-   "date": "2026-08-25",
-   "time": "17:12",
-   "store": "맛나지예 대전유성점",
-   "biz": "4360603116",
-   "pos": "오케이포스",
-   "content": "포스기 메뉴에 선산곱창전골(조리,포장) 10000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "완"
-   ],
-   "rc": 2,
-   "lr": "1787645646.829049",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787645549985539"
   }
  ],
  "ocr": {

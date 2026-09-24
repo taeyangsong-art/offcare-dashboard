@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13057,
+  "version": 13058,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210528,8 +210528,8 @@ window.SLACK_DATA = {
     "2026-09-24": {
       "counts": {
         "as": {
+          "미지정": 4,
           "김기범": 5,
-          "미지정": 3,
           "송태양": 28
         },
         "nosetup": {
@@ -210547,6 +210547,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "17:03",
+          "store": "청담피자(광진점)",
+          "biz": "7113801456",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "• <https://w1659946222-hxm266180.slack.com/archives/C09HRUSG4TX/p1790230631815449?thread_ts=1790229727.636669&amp;cid=C09HRUSG4TX|재인입>",
+          "hw": "",
+          "intake": "online",
+          "note": "포스피드 연동시 필요한 구성 및 케이블 설명 점주님 이해하셨음"
+        },
         {
           "time": "16:21",
           "store": "곱도리탕전문점 연수점",
@@ -210994,7 +211005,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 32,
+        "online": 33,
         "offline": 8,
         "unknown": 0
       },
@@ -211292,19 +211303,15 @@ window.SLACK_DATA = {
       },
       "1790222973.279209": {
         "post": "1790222973.279209",
-        "lastSeen": 1790237058.443
+        "lastSeen": 1790237539.787
       },
       "1790224243.234329": {
         "post": "1790224243.234329",
-        "lastSeen": 1790237058.443
+        "lastSeen": 1790237539.787
       },
       "1790228933.832719": {
         "post": "1790228933.832719",
-        "lastSeen": 1790237058.443
-      },
-      "1790237002.391839": {
-        "post": "1790237002.391839",
-        "lastSeen": 1790237058.443
+        "lastSeen": 1790237539.787
       }
     },
     "days": {
@@ -277975,8 +277982,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-24": {
-        "cnt": 27,
-        "sumMin": 342.7932124694189,
+        "cnt": 28,
+        "sumMin": 347.73859848578775,
         "over": 2,
         "items": [
           {
@@ -278221,13 +278228,22 @@ window.SLACK_DATA = {
             "who": "김기범",
             "cat": "as",
             "dmin": 16.2
+          },
+          {
+            "hm": "17:03",
+            "min": 4.9,
+            "store": "청담피자(광진점)",
+            "biz": "7113801456",
+            "who": "",
+            "cat": "as",
+            "dmin": 4.9
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-24 17:04",
+    "at": "2026-09-24 17:12",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
