@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13047,
+  "version": 13048,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210528,8 +210528,8 @@ window.SLACK_DATA = {
     "2026-09-24": {
       "counts": {
         "as": {
+          "미지정": 3,
           "김기범": 3,
-          "미지정": 2,
           "송태양": 28
         },
         "nosetup": {
@@ -210547,6 +210547,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:00",
+          "store": "공포의 아구찜, 탕",
+          "biz": "3010858250",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "오케이포스 사용 / 주방 주문서 출력 되지 않게 요청 주셨습니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "공기밥, 콜라 미출력 설정 완료, 추후 포스 재시작 전달"
+        },
         {
           "time": "15:42",
           "store": "더 줌",
@@ -210962,7 +210973,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 30,
-        "offline": 7,
+        "offline": 8,
         "unknown": 0
       },
       "updatedAt": "16:00",
@@ -211237,19 +211248,15 @@ window.SLACK_DATA = {
       },
       "1790222973.279209": {
         "post": "1790222973.279209",
-        "lastSeen": 1790233257.858
+        "lastSeen": 1790233974.824
       },
       "1790224243.234329": {
         "post": "1790224243.234329",
-        "lastSeen": 1790233257.858
+        "lastSeen": 1790233974.824
       },
       "1790228933.832719": {
         "post": "1790228933.832719",
-        "lastSeen": 1790233257.858
-      },
-      "1790233208.419999": {
-        "post": "1790233208.419999",
-        "lastSeen": 1790233257.858
+        "lastSeen": 1790233974.824
       }
     },
     "days": {
@@ -277920,8 +277927,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-24": {
-        "cnt": 24,
-        "sumMin": 326.08547724882766,
+        "cnt": 25,
+        "sumMin": 332.8841606020928,
         "over": 2,
         "items": [
           {
@@ -278139,13 +278146,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 2
+          },
+          {
+            "hm": "16:00",
+            "min": 6.8,
+            "store": "공포의 아구찜, 탕",
+            "biz": "3010858250",
+            "who": "",
+            "cat": "as",
+            "dmin": 6.8
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-24 16:01",
+    "at": "2026-09-24 16:13",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
