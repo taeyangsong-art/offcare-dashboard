@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13036,
+  "version": 13037,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210539,21 +210539,12 @@ window.SLACK_DATA = {
         },
         "onboarding": {
           "송태양": 1
+        },
+        "menu": {
+          "송태양": 1
         }
       },
-      "pending": [
-        {
-          "time": "13:20",
-          "store": "푸다훠궈",
-          "biz": "5521503142",
-          "handler": "송태양",
-          "cat": "menu",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
         {
           "time": "14:30",
@@ -210643,6 +210634,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "또세스 제발 / • co팀 전산 문의중 시간양해 안내 co팀 전산 문의중 시간양해 안내 / • 모든카드 결제 불 프론트 공초중 모든카드 결제 불 프론트 공초중"
+        },
+        {
+          "time": "13:20",
+          "store": "푸다훠궈",
+          "biz": "5521503142",
+          "cat": "menu",
+          "emp": "송태양",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "1-2시간 시간 양해 1-2시간 시간 양해 / 등록/솔라피전송 완료에요"
         },
         {
           "time": "13:15",
@@ -211103,22 +211105,15 @@ window.SLACK_DATA = {
       },
       "1790222973.279209": {
         "post": "1790222973.279209",
-        "lastSeen": 1790228960.751
-      },
-      "1790223600.203999": {
-        "post": "1790223600.203999",
-        "lastSeen": 1790228960.751,
-        "r": 1,
-        "day": "2026-09-24",
-        "idx": 21
+        "lastSeen": 1790229259.104
       },
       "1790224243.234329": {
         "post": "1790224243.234329",
-        "lastSeen": 1790228960.751
+        "lastSeen": 1790229259.104
       },
       "1790228933.832719": {
         "post": "1790228933.832719",
-        "lastSeen": 1790228960.751
+        "lastSeen": 1790229259.104
       }
     },
     "days": {
@@ -277988,20 +277983,21 @@ window.SLACK_DATA = {
             "store": "푸다훠궈",
             "biz": "5521503142",
             "who": "송태양",
-            "cat": "menu"
+            "cat": "menu",
+            "dmin": 91.8
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-24 14:49",
+    "at": "2026-09-24 14:54",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 4246,
+    "rows": 4247,
     "named": 944,
     "unknownName": 0,
     "beforeStart": 0,
