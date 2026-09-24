@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2466,
- "updatedAt": "2026-09-24 18:15",
+ "version": 2467,
+ "updatedAt": "2026-09-24 18:31",
  "days": 30,
  "items": [
   {
@@ -60507,29 +60507,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787651446749439"
-  },
-  {
-   "ts": "1787650169.951269",
-   "date": "2026-08-25",
-   "time": "18:29",
-   "store": "뮌헨",
-   "biz": "5660702429",
-   "pos": "기타",
-   "content": "카스무알콜맥주\n5000원으로 가격 수정 부탁드립니다",
-   "special": "- 포스 : 그 외 기타 포스",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "완료"
-   ],
-   "rc": 2,
-   "lr": "1787650244.473899",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787650169951269"
   }
  ],
  "ocr": {
