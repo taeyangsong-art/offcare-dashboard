@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13066,
+  "version": 13067,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210527,6 +210527,10 @@ window.SLACK_DATA = {
     },
     "2026-09-24": {
       "counts": {
+        "onboarding": {
+          "미지정": 1,
+          "송태양": 1
+        },
         "as": {
           "미지정": 5,
           "김기범": 5,
@@ -210538,15 +210542,23 @@ window.SLACK_DATA = {
         "extern": {
           "송태양": 1
         },
-        "onboarding": {
-          "송태양": 1
-        },
         "menu": {
           "송태양": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "17:41",
+          "store": "롤로(Rollo)안산부곡점",
+          "biz": "6630104158",
+          "cat": "onboarding",
+          "emp": "미지정",
+          "req": "태블릿 20%까지 충전되었다고 합니다. 온보딩 부탁 드립니다..!",
+          "hw": "",
+          "intake": "online",
+          "note": "갤럭시북에 온보딩 완료"
+        },
         {
           "time": "17:24",
           "store": "푸다훠궈",
@@ -211016,7 +211028,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 34,
+        "online": 35,
         "offline": 8,
         "unknown": 0
       },
@@ -211307,19 +211319,15 @@ window.SLACK_DATA = {
       },
       "1790222973.279209": {
         "post": "1790222973.279209",
-        "lastSeen": 1790240444.48
+        "lastSeen": 1790240541.298
       },
       "1790224243.234329": {
         "post": "1790224243.234329",
-        "lastSeen": 1790240444.48
+        "lastSeen": 1790240541.298
       },
       "1790228933.832719": {
         "post": "1790228933.832719",
-        "lastSeen": 1790240444.48
-      },
-      "1790239309.428069": {
-        "post": "1790239309.428069",
-        "lastSeen": 1790240444.48
+        "lastSeen": 1790240541.298
       }
     },
     "days": {
@@ -277990,8 +277998,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-24": {
-        "cnt": 29,
-        "sumMin": 361.0362358371417,
+        "cnt": 30,
+        "sumMin": 380.76058468421303,
         "over": 2,
         "items": [
           {
@@ -278254,13 +278262,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 13.3
+          },
+          {
+            "hm": "17:41",
+            "min": 19.7,
+            "store": "롤로(Rollo)안산부곡점",
+            "biz": "6630104158",
+            "who": "",
+            "cat": "onboarding",
+            "dmin": 19.7
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-24 18:01",
+    "at": "2026-09-24 18:02",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
