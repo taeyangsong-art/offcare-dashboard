@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12998,
+  "version": 12999,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210528,7 +210528,7 @@ window.SLACK_DATA = {
     "2026-09-24": {
       "counts": {
         "as": {
-          "송태양": 14
+          "송태양": 15
         },
         "extern": {
           "송태양": 1
@@ -210539,6 +210539,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:28",
+          "store": "남해굴국밥",
+          "biz": "8414100874",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "<https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1790139335676689|메뉴요청> 건 완료되어 껏켰하였으나 확인이 되지 않아 점검 부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "통화중 / 여기 네이버커넥트/유니온사용 타 대리점 이탈입니다 메뉴해주지 마세용!"
+        },
         {
           "time": "11:18",
           "store": "계취",
@@ -210722,7 +210733,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 12,
-        "offline": 4,
+        "offline": 5,
         "unknown": 0
       },
       "updatedAt": "11:28",
@@ -277712,7 +277723,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-24 11:34",
+    "at": "2026-09-24 11:40",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
