@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12968,
+  "version": 12969,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210527,12 +210527,26 @@ window.SLACK_DATA = {
     },
     "2026-09-24": {
       "counts": {
+        "onboarding": {
+          "송태양": 1
+        },
         "as": {
           "송태양": 6
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:00",
+          "store": "BYC박달점",
+          "biz": "1230114537",
+          "cat": "onboarding",
+          "emp": "송태양",
+          "req": "포프(휴대폰) 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "• 온보딩/금액입력결제모드/전자영수증 설정 완료입니다 온보딩/금액입력결제모드/전자영수증 설정 완료입니다"
+        },
         {
           "time": "09:58",
           "store": "미식공감",
@@ -210602,7 +210616,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 4,
+        "online": 5,
         "offline": 2,
         "unknown": 0
       },
@@ -210831,13 +210845,6 @@ window.SLACK_DATA = {
       "1790175723.104489": {
         "post": "1790175723.104489",
         "lastSeen": 1790194530.131
-      },
-      "1790211605.163839": {
-        "post": "1790211605.163839",
-        "lastSeen": 1790211853.083,
-        "r": 1,
-        "day": "2026-09-24",
-        "idx": 2
       }
     },
     "days": {
@@ -277536,14 +277543,15 @@ window.SLACK_DATA = {
             "store": "BYC박달점",
             "biz": "1230114537",
             "who": "송태양",
-            "cat": "as"
+            "cat": "onboarding",
+            "dmin": 5.7
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-24 10:04",
+    "at": "2026-09-24 10:07",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
