@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12959,
+  "version": 12960,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -209058,7 +209058,7 @@ window.SLACK_DATA = {
           "req": "",
           "hw": "",
           "intake": "online",
-          "note": ""
+          "note": "님, 안녕하세요! 오늘 출근하셔서 여쭤봐요...ㅎ 혹시! 메뉴 등록이라고 이모지 찍혀있으면 완료 된건가요? 님, 안녕하세요!"
         },
         {
           "time": "13:51",
@@ -210528,11 +210528,22 @@ window.SLACK_DATA = {
     "2026-09-24": {
       "counts": {
         "as": {
-          "송태양": 1
+          "송태양": 2
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:30",
+          "store": "영종포차",
+          "biz": "6023308640",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "명의변경 진행 중 원격 요청주셔서 요청드립니다:감사합니다꾸벅: 포스기 멈춤 현상",
+          "hw": "",
+          "intake": "online",
+          "note": "금일 오후 2시 30분 재예약 요청"
+        },
         {
           "time": "09:00",
           "store": "용커피 로스터스-1",
@@ -210546,7 +210557,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 1,
         "unknown": 0
       },
@@ -210783,10 +210794,6 @@ window.SLACK_DATA = {
       "1790175723.104489": {
         "post": "1790175723.104489",
         "lastSeen": 1790194530.131
-      },
-      "1790209802.809579": {
-        "post": "1790209802.809579",
-        "lastSeen": 1790209819.704
       }
     },
     "days": {
@@ -277459,7 +277466,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-24 09:30",
+    "at": "2026-09-24 09:34",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
