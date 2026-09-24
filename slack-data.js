@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13104,
+  "version": 13105,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210528,7 +210528,7 @@ window.SLACK_DATA = {
     "2026-09-24": {
       "counts": {
         "as": {
-          "김기범": 14,
+          "김기범": 15,
           "미지정": 5,
           "송태양": 28
         },
@@ -210548,6 +210548,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "23:17",
+          "store": "예밤 뷰티랩",
+          "biz": "8375101102",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "포프(태블릿) 연결끊김으로 인한 재온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "로그아웃 해도 안되서 초기화진행으로 하셔한다고 안내 지금은 퇴근을 하셧다고하여 초기화 진행으로 해보신다고함"
+        },
         {
           "time": "22:57",
           "store": "당구명가",
@@ -211127,11 +211138,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 43,
+        "online": 44,
         "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "22:57",
+      "updatedAt": "23:17",
       "voc": {
         "responses": 12,
         "install": {
@@ -211427,15 +211438,15 @@ window.SLACK_DATA = {
       },
       "1790222973.279209": {
         "post": "1790222973.279209",
-        "lastSeen": 1790259327.127
+        "lastSeen": 1790260241.923
       },
       "1790224243.234329": {
         "post": "1790224243.234329",
-        "lastSeen": 1790259327.127
+        "lastSeen": 1790260241.923
       },
       "1790228933.832719": {
         "post": "1790228933.832719",
-        "lastSeen": 1790259327.127
+        "lastSeen": 1790260241.923
       }
     },
     "days": {
@@ -278448,7 +278459,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-24 23:15",
+    "at": "2026-09-24 23:30",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
