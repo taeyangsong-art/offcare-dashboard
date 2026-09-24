@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13010,
+  "version": 13011,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210528,7 +210528,7 @@ window.SLACK_DATA = {
     "2026-09-24": {
       "counts": {
         "as": {
-          "송태양": 17
+          "송태양": 16
         },
         "extern": {
           "송태양": 1
@@ -210537,19 +210537,20 @@ window.SLACK_DATA = {
           "송태양": 1
         }
       },
-      "pending": [],
-      "done": [
+      "pending": [
         {
           "time": "11:49",
           "store": "카페발라당",
           "biz": "6728703439",
+          "handler": "송태양",
           "cat": "as",
-          "emp": "송태양",
-          "req": "키오스크 고객호출 설정 시 알림톡 (카톡 알림) 호출 버튼이 안뜨신다고 합니다. 확인 한번 부탁드리겠습니다.",
-          "hw": "",
           "intake": "online",
-          "note": "• 태블릿 사용중 • 알림톡 발송 문구 뜸 -&gt; 핸드폰번호 입력 하였는데 고객 호출 버튼이 안생김 • 토플 문의중 태블릿 사용중 알림톡 발송 문구 뜸 - 핸드폰번호 입력 하였는데 고객 호출 버튼이 안생김 토플 문의중"
-        },
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
+      "done": [
         {
           "time": "11:41",
           "store": "오디오씨(ODOC)",
@@ -210758,7 +210759,7 @@ window.SLACK_DATA = {
         "offline": 5,
         "unknown": 0
       },
-      "updatedAt": "11:49",
+      "updatedAt": "13:06",
       "voc": {
         "responses": 1,
         "install": {
@@ -277763,7 +277764,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-24 13:00",
+    "at": "2026-09-24 13:07",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
