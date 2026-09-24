@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2457,
- "updatedAt": "2026-09-24 14:54",
+ "version": 2458,
+ "updatedAt": "2026-09-24 15:02",
  "days": 30,
  "items": [
   {
@@ -94,10 +94,11 @@ window.MENU_REQUESTS = {
    "datt": [],
    "replies": [
     ":pushpin: 1-2시간 시간 양해",
-    "등록/솔라피전송 완료에요"
+    "등록/솔라피전송 완료에요",
+    "• 토스포스에는 시간대별 메뉴설정 불가 안내\n• 키오스크모드 사용한다 하셔서 시간대별로 상품/할인 가신뒤 고객용채널노출 해제하시는 방법이 있음 안내"
    ],
-   "rc": 2,
-   "lr": "1790229240.865139",
+   "rc": 3,
+   "lr": "1790229695.586089",
    "rfx": 3,
    "status": "done",
    "handler": "송태양",
