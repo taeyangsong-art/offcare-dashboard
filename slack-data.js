@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12981,
+  "version": 12982,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210528,7 +210528,7 @@ window.SLACK_DATA = {
     "2026-09-24": {
       "counts": {
         "as": {
-          "송태양": 7
+          "송태양": 8
         },
         "onboarding": {
           "송태양": 1
@@ -210536,6 +210536,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "10:37",
+          "store": "낙산 닭 한마리",
+          "biz": "4373801484",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "• 하이오더 후불으로 함께 사용 중",
+          "hw": "",
+          "intake": "online",
+          "note": "• • 토플문의중 연휴로 인하여 안내까지 지체될 수 있는점 양해 토플문의중 연휴로 인하여 안내까지 지체될 수 있는점 양해 매출리포트 매출 틀어짐 문의 &gt;&gt; 매출리포트 매출 틀어짐 문의"
+        },
         {
           "time": "10:10",
           "store": "도봉밀레",
@@ -210627,7 +210638,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 5,
+        "online": 6,
         "offline": 3,
         "unknown": 0
       },
@@ -210859,15 +210870,18 @@ window.SLACK_DATA = {
       },
       "1790213960.044189": {
         "post": "1790213960.044189",
-        "lastSeen": 1790214320.562
+        "lastSeen": 1790214545.271,
+        "r": 1,
+        "day": "2026-09-24",
+        "idx": 3
       },
       "1790214104.788689": {
         "post": "1790214104.788689",
-        "lastSeen": 1790214320.562
+        "lastSeen": 1790214545.271
       },
       "1790214260.917639": {
         "post": "1790214260.917639",
-        "lastSeen": 1790214320.562
+        "lastSeen": 1790214545.271
       }
     },
     "days": {
@@ -277538,8 +277552,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-24": {
-        "cnt": 3,
-        "sumMin": 10.636053888003032,
+        "cnt": 4,
+        "sumMin": 18.517259073257446,
         "over": 0,
         "items": [
           {
@@ -277568,13 +277582,21 @@ window.SLACK_DATA = {
             "who": "송태양",
             "cat": "onboarding",
             "dmin": 5.7
+          },
+          {
+            "hm": "10:39",
+            "min": 7.9,
+            "store": "부어맛집",
+            "biz": "2010715236",
+            "who": "송태양",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-24 10:45",
+    "at": "2026-09-24 10:49",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
