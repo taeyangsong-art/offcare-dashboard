@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13041,
+  "version": 13042,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210528,6 +210528,7 @@ window.SLACK_DATA = {
     "2026-09-24": {
       "counts": {
         "as": {
+          "미지정": 1,
           "김기범": 2,
           "송태양": 28
         },
@@ -210546,6 +210547,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:02",
+          "store": "청담피자(광진점)",
+          "biz": "7113801456",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "포스피드 프로그램 사용 중 / 본사에서는 토스 단말기랑 연동해서 사용하는 업체도 있다고 들었다고해요.",
+          "hw": "",
+          "intake": "online",
+          "note": "일반 pc 사용중, 프론트 선은 있으나 usb to rs232 선 없으셔서 구매하여 pc 랑 연결하신후 포스피드 연락하여 연동하겠다고 하심"
+        },
         {
           "time": "15:00",
           "store": "소노키라멘 한양대점",
@@ -210927,7 +210939,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 27,
+        "online": 28,
         "offline": 7,
         "unknown": 0
       },
@@ -211160,19 +211172,15 @@ window.SLACK_DATA = {
       },
       "1790222973.279209": {
         "post": "1790222973.279209",
-        "lastSeen": 1790230461.872
+        "lastSeen": 1790230725.261
       },
       "1790224243.234329": {
         "post": "1790224243.234329",
-        "lastSeen": 1790230461.872
+        "lastSeen": 1790230725.261
       },
       "1790228933.832719": {
         "post": "1790228933.832719",
-        "lastSeen": 1790230461.872
-      },
-      "1790229727.636669": {
-        "post": "1790229727.636669",
-        "lastSeen": 1790230461.872
+        "lastSeen": 1790230725.261
       }
     },
     "days": {
@@ -277843,8 +277851,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-24": {
-        "cnt": 22,
-        "sumMin": 309.6187248786291,
+        "cnt": 23,
+        "sumMin": 324.0508887290955,
         "over": 2,
         "items": [
           {
@@ -278044,19 +278052,28 @@ window.SLACK_DATA = {
             "who": "송태양",
             "cat": "menu",
             "dmin": 91.8
+          },
+          {
+            "hm": "15:02",
+            "min": 14.4,
+            "store": "청담피자(광진점)",
+            "biz": "7113801456",
+            "who": "",
+            "cat": "as",
+            "dmin": 14.4
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-24 15:14",
+    "at": "2026-09-24 15:18",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
     "ok": true,
     "error": "",
-    "rows": 4252,
+    "rows": 4253,
     "named": 944,
     "unknownName": 0,
     "beforeStart": 0,
