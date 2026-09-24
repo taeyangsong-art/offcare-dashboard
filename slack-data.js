@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13001,
+  "version": 13002,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210528,7 +210528,7 @@ window.SLACK_DATA = {
     "2026-09-24": {
       "counts": {
         "as": {
-          "송태양": 15
+          "송태양": 16
         },
         "extern": {
           "송태양": 1
@@ -210539,6 +210539,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:41",
+          "store": "오디오씨(ODOC)",
+          "biz": "5971902561",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "• 결제 불가",
+          "hw": "",
+          "intake": "online",
+          "note": "• 코세스 VCAT 모듈 설정 풀려있었음 포트 재설정 후 결제테스트 정상 코세스 VCAT 모듈 설정 풀려있었음 포트 재설정 후 결제테스트 정상"
+        },
         {
           "time": "11:28",
           "store": "남해굴국밥",
@@ -210732,7 +210743,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 12,
+        "online": 13,
         "offline": 5,
         "unknown": 0
       },
@@ -210954,13 +210965,6 @@ window.SLACK_DATA = {
       "1790175723.104489": {
         "post": "1790175723.104489",
         "lastSeen": 1790194530.131
-      },
-      "1790217693.175419": {
-        "post": "1790217693.175419",
-        "lastSeen": 1790217925.198,
-        "r": 1,
-        "day": "2026-09-24",
-        "idx": 10
       }
     },
     "days": {
@@ -277731,14 +277735,15 @@ window.SLACK_DATA = {
             "store": "오디오씨(ODOC)",
             "biz": "5971902561",
             "who": "송태양",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 5.8
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-24 11:45",
+    "at": "2026-09-24 11:49",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
