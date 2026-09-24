@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2467,
- "updatedAt": "2026-09-24 18:31",
+ "version": 2468,
+ "updatedAt": "2026-09-24 18:56",
  "days": 30,
  "items": [
   {
@@ -60482,31 +60482,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김동욱",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787665528482389"
-  },
-  {
-   "ts": "1787651446.749439",
-   "date": "2026-08-25",
-   "time": "18:50",
-   "store": "싹싹김치찜",
-   "biz": "6521203169",
-   "pos": "토스포스",
-   "content": "최초가입건",
-   "special": "평일 11시~5시",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "메뉴 정보 없음 전화",
-    "전화 부재 솔라피 발송",
-    "싹싹김치 :bowl_with_spoon:"
-   ],
-   "rc": 4,
-   "lr": "1787652025.840099",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787651446749439"
   }
  ],
  "ocr": {
