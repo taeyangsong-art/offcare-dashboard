@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13062,
+  "version": 13063,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210528,7 +210528,7 @@ window.SLACK_DATA = {
     "2026-09-24": {
       "counts": {
         "as": {
-          "미지정": 4,
+          "미지정": 5,
           "김기범": 5,
           "송태양": 28
         },
@@ -210547,6 +210547,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "17:24",
+          "store": "푸다훠궈",
+          "biz": "5521503142",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "• 프론트&lt;&gt;유선프린터기 홀에 설치 필요",
+          "hw": "",
+          "intake": "online",
+          "note": "홀 및 주방유프 설정 수정후 출력 정상"
+        },
         {
           "time": "17:03",
           "store": "청담피자(광진점)",
@@ -211005,7 +211016,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 33,
+        "online": 34,
         "offline": 8,
         "unknown": 0
       },
@@ -211296,19 +211307,15 @@ window.SLACK_DATA = {
       },
       "1790222973.279209": {
         "post": "1790222973.279209",
-        "lastSeen": 1790238980.864
+        "lastSeen": 1790239160.049
       },
       "1790224243.234329": {
         "post": "1790224243.234329",
-        "lastSeen": 1790238980.864
+        "lastSeen": 1790239160.049
       },
       "1790228933.832719": {
         "post": "1790228933.832719",
-        "lastSeen": 1790238980.864
-      },
-      "1790238272.598259": {
-        "post": "1790238272.598259",
-        "lastSeen": 1790238980.864
+        "lastSeen": 1790239160.049
       }
     },
     "days": {
@@ -277979,8 +277986,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-24": {
-        "cnt": 28,
-        "sumMin": 347.73859848578775,
+        "cnt": 29,
+        "sumMin": 361.0362358371417,
         "over": 2,
         "items": [
           {
@@ -278234,13 +278241,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 4.9
+          },
+          {
+            "hm": "17:24",
+            "min": 13.3,
+            "store": "푸다훠궈",
+            "biz": "5521503142",
+            "who": "",
+            "cat": "as",
+            "dmin": 13.3
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-24 17:36",
+    "at": "2026-09-24 17:39",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
