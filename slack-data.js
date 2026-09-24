@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13096,
+  "version": 13097,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210528,7 +210528,7 @@ window.SLACK_DATA = {
     "2026-09-24": {
       "counts": {
         "as": {
-          "김기범": 12,
+          "김기범": 13,
           "미지정": 5,
           "송태양": 28
         },
@@ -210548,6 +210548,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "21:05",
+          "store": "이옥자 상회",
+          "biz": "4272502002",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "포프(노트북) 사용 중, 무프W와 유프 중 현재 유프에서 용지 출력이 되지 않는다고 하여 점검 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "cpp3000 USB ab 케이블로 설정 완료"
+        },
         {
           "time": "21:00",
           "store": "임애농원",
@@ -211106,7 +211117,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 42,
-        "offline": 8,
+        "offline": 9,
         "unknown": 0
       },
       "updatedAt": "21:05",
@@ -211405,22 +211416,15 @@ window.SLACK_DATA = {
       },
       "1790222973.279209": {
         "post": "1790222973.279209",
-        "lastSeen": 1790254844.437
+        "lastSeen": 1790255302.403
       },
       "1790224243.234329": {
         "post": "1790224243.234329",
-        "lastSeen": 1790254844.437
+        "lastSeen": 1790255302.403
       },
       "1790228933.832719": {
         "post": "1790228933.832719",
-        "lastSeen": 1790254844.437
-      },
-      "1790251510.773429": {
-        "post": "1790251510.773429",
-        "lastSeen": 1790254844.437,
-        "r": 1,
-        "day": "2026-09-24",
-        "idx": 35
+        "lastSeen": 1790255302.403
       }
     },
     "days": {
@@ -278416,14 +278420,15 @@ window.SLACK_DATA = {
             "store": "이옥자 상회",
             "biz": "4272502002",
             "who": "김기범",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 59.4
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-24 22:00",
+    "at": "2026-09-24 22:08",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
