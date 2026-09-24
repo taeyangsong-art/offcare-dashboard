@@ -3,10 +3,80 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2449,
- "updatedAt": "2026-09-24 13:28",
+ "version": 2450,
+ "updatedAt": "2026-09-24 13:30",
  "days": 30,
  "items": [
+  {
+   "ts": "1790224243.234329",
+   "date": "2026-09-24",
+   "time": "13:30",
+   "store": "TEST",
+   "biz": "1078709701",
+   "pos": "토스포스",
+   "content": "TEST",
+   "special": "아이샵케어 TEST 이미지파일",
+   "drive": [
+    "https://drive.google.com/file/d/1JipxKLWiLoTvTVY7g6URP7anp75FDZ5N/view?usp=drivesdk"
+   ],
+   "files": 0,
+   "att": [],
+   "datt": [
+    {
+     "id": "1JipxKLWiLoTvTVY7g6URP7anp75FDZ5N",
+     "kind": "menu_board",
+     "menu": [
+      {
+       "category": "SIGNATURE LATTE",
+       "name": "3노트라떼 3Note Latte",
+       "price": 5
+      },
+      {
+       "category": "SIGNATURE LATTE",
+       "name": "딥바닐라라떼 Deep Vanilla Latte",
+       "price": 5
+      },
+      {
+       "category": "SIGNATURE LATTE",
+       "name": "딥카페모카 Deep Caffè Mocha",
+       "price": 5
+      },
+      {
+       "category": "SIGNATURE LATTE",
+       "name": "애플민트라떼 Apple Mint Latte",
+       "price": 5
+      },
+      {
+       "category": "SIGNATURE LATTE",
+       "name": "동윤영(凍鴛鴦) Dong Yuenyeung",
+       "price": 5
+      },
+      {
+       "category": "OTHER",
+       "name": "로얄밀크티 Royal Milk Tea",
+       "price": 5
+      },
+      {
+       "category": "OTHER",
+       "name": "쑥라떼 Mugwort Latte",
+       "price": 5
+      },
+      {
+       "category": "OTHER",
+       "name": "초코라떼 Chocolate Latte",
+       "price": 5
+      }
+     ]
+    }
+   ],
+   "replies": [],
+   "rc": 0,
+   "lr": "",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1790224243234329"
+  },
   {
    "ts": "1790223600.203999",
    "date": "2026-09-24",
