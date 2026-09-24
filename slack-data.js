@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13044,
+  "version": 13045,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210528,7 +210528,7 @@ window.SLACK_DATA = {
     "2026-09-24": {
       "counts": {
         "as": {
-          "미지정": 1,
+          "미지정": 2,
           "김기범": 2,
           "송태양": 28
         },
@@ -210547,6 +210547,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:40",
+          "store": "홍콩반점",
+          "biz": "2241726899",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "쿠팡이츠 이슈, 삭제후 재설치 요청 드립니다!(고령으로 따님 오시면 전화주신다고 했는데 안와서 재업로드 해드랴요)",
+          "hw": "",
+          "intake": "online",
+          "note": "따님이 오셔서 삭제후 설치 해주셨다고 하심"
+        },
         {
           "time": "15:02",
           "store": "청담피자(광진점)",
@@ -210939,11 +210950,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 28,
+        "online": 29,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "15:40",
+      "updatedAt": "15:42",
       "voc": {
         "responses": 6,
         "install": {
@@ -211197,19 +211208,15 @@ window.SLACK_DATA = {
       },
       "1790222973.279209": {
         "post": "1790222973.279209",
-        "lastSeen": 1790232078.331
+        "lastSeen": 1790232200.91
       },
       "1790224243.234329": {
         "post": "1790224243.234329",
-        "lastSeen": 1790232078.331
+        "lastSeen": 1790232200.91
       },
       "1790228933.832719": {
         "post": "1790228933.832719",
-        "lastSeen": 1790232078.331
-      },
-      "1790232017.545189": {
-        "post": "1790232017.545189",
-        "lastSeen": 1790232078.331
+        "lastSeen": 1790232200.91
       }
     },
     "days": {
@@ -277880,8 +277887,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-24": {
-        "cnt": 23,
-        "sumMin": 324.0508887290955,
+        "cnt": 24,
+        "sumMin": 326.08547724882766,
         "over": 2,
         "items": [
           {
@@ -278090,13 +278097,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 14.4
+          },
+          {
+            "hm": "15:40",
+            "min": 2,
+            "store": "홍콩반점",
+            "biz": "2241726899",
+            "who": "",
+            "cat": "as",
+            "dmin": 2
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-24 15:41",
+    "at": "2026-09-24 15:43",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
