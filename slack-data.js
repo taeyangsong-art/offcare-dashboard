@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13070,
+  "version": 13071,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210527,14 +210527,14 @@ window.SLACK_DATA = {
     },
     "2026-09-24": {
       "counts": {
+        "as": {
+          "김기범": 6,
+          "미지정": 5,
+          "송태양": 28
+        },
         "onboarding": {
           "미지정": 1,
           "송태양": 1
-        },
-        "as": {
-          "미지정": 5,
-          "김기범": 5,
-          "송태양": 28
         },
         "nosetup": {
           "송태양": 1
@@ -210548,6 +210548,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "18:32",
+          "store": "안강한우114국밥",
+          "biz": "2250926728",
+          "cat": "as",
+          "emp": "김기범",
+          "req": "결제 시도 시 '진행 중 결제' 메시지 확인되며 결제 불가 오류 상황 / 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트 껏켯으로 완료 프론트에서 결제 진행중인 건이 있어요 하면서 오류발생 이였음"
+        },
         {
           "time": "17:41",
           "store": "롤로(Rollo)안산부곡점",
@@ -211028,7 +211039,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 35,
+        "online": 36,
         "offline": 8,
         "unknown": 0
       },
@@ -211315,15 +211326,15 @@ window.SLACK_DATA = {
       },
       "1790222973.279209": {
         "post": "1790222973.279209",
-        "lastSeen": 1790242399.757
+        "lastSeen": 1790242881.072
       },
       "1790224243.234329": {
         "post": "1790224243.234329",
-        "lastSeen": 1790242399.757
+        "lastSeen": 1790242881.072
       },
       "1790228933.832719": {
         "post": "1790228933.832719",
-        "lastSeen": 1790242399.757
+        "lastSeen": 1790242881.072
       }
     },
     "days": {
@@ -278273,7 +278284,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-24 18:33",
+    "at": "2026-09-24 18:41",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
