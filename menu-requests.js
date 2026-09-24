@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2452,
- "updatedAt": "2026-09-24 13:47",
+ "version": 2453,
+ "updatedAt": "2026-09-24 14:26",
  "days": 30,
  "items": [
   {
@@ -61254,27 +61254,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787636447744369"
-  },
-  {
-   "ts": "1787635563.464349",
-   "date": "2026-08-25",
-   "time": "14:26",
-   "store": "뮌헨",
-   "biz": "5660702848",
-   "pos": "기타",
-   "content": "무뼈불닭발+콘치즈\n가격수정\n29000원",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787635566.603239",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787635563464349"
   }
  ],
  "ocr": {

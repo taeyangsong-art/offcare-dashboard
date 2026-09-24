@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13029,
+  "version": 13030,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210540,7 +210540,19 @@ window.SLACK_DATA = {
           "송태양": 1
         }
       },
-      "pending": [],
+      "pending": [
+        {
+          "time": "13:24",
+          "store": "오디오씨(ODOC)",
+          "biz": "5971902561",
+          "handler": "송태양",
+          "cat": "as",
+          "intake": "online",
+          "reasons": [
+            "확인 후 미완료"
+          ]
+        }
+      ],
       "done": [
         {
           "time": "14:00",
@@ -210845,11 +210857,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 21,
+        "online": 22,
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "14:09",
+      "updatedAt": "14:25",
       "voc": {
         "responses": 1,
         "install": {
@@ -211049,22 +211061,26 @@ window.SLACK_DATA = {
       },
       "1790222973.279209": {
         "post": "1790222973.279209",
-        "lastSeen": 1790227159.783
+        "lastSeen": 1790227581.187
       },
       "1790223600.203999": {
         "post": "1790223600.203999",
-        "lastSeen": 1790227159.783
+        "lastSeen": 1790227581.187
       },
       "1790224243.234329": {
         "post": "1790224243.234329",
-        "lastSeen": 1790227159.783
+        "lastSeen": 1790227581.187
       },
       "1790226550.317309": {
         "post": "1790226550.317309",
-        "lastSeen": 1790227159.783,
+        "lastSeen": 1790227581.187,
         "r": 1,
         "day": "2026-09-24",
         "idx": 19
+      },
+      "1790227551.416149": {
+        "post": "1790227551.416149",
+        "lastSeen": 1790227581.187
       }
     },
     "days": {
@@ -277923,7 +277939,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-24 14:19",
+    "at": "2026-09-24 14:26",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
