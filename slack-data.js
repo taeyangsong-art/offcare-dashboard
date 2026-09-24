@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13026,
+  "version": 13027,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210527,6 +210527,9 @@ window.SLACK_DATA = {
     },
     "2026-09-24": {
       "counts": {
+        "nosetup": {
+          "송태양": 1
+        },
         "as": {
           "송태양": 24
         },
@@ -210539,6 +210542,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "14:00",
+          "store": "무아쌀식빵 인천동암더샵점",
+          "biz": "3686300726",
+          "cat": "nosetup",
+          "emp": "송태양",
+          "req": "포프(태블릿) + 유프 온보딩요청드립니다",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료입니다 / 가결제 진행하였으나 오류"
+        },
         {
           "time": "13:36",
           "store": "곱도리탕전문점 연수점",
@@ -210831,11 +210845,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 20,
+        "online": 21,
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "14:00",
+      "updatedAt": "14:09",
       "voc": {
         "responses": 1,
         "install": {
@@ -211042,22 +211056,19 @@ window.SLACK_DATA = {
       },
       "1790222973.279209": {
         "post": "1790222973.279209",
-        "lastSeen": 1790226319.201
+        "lastSeen": 1790226622.894
       },
       "1790223600.203999": {
         "post": "1790223600.203999",
-        "lastSeen": 1790226319.201
+        "lastSeen": 1790226622.894
       },
       "1790224243.234329": {
         "post": "1790224243.234329",
-        "lastSeen": 1790226319.201
+        "lastSeen": 1790226622.894
       },
-      "1790226002.434709": {
-        "post": "1790226002.434709",
-        "lastSeen": 1790226319.201,
-        "r": 1,
-        "day": "2026-09-24",
-        "idx": 17
+      "1790226550.317309": {
+        "post": "1790226550.317309",
+        "lastSeen": 1790226622.894
       }
     },
     "days": {
@@ -277891,7 +277902,8 @@ window.SLACK_DATA = {
             "store": "무아쌀식빵 인천동암더샵점",
             "biz": "3686300726",
             "who": "송태양",
-            "cat": "nosetup"
+            "cat": "nosetup",
+            "dmin": 7.8
           },
           {
             "hm": "13:36",
@@ -277907,7 +277919,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-24 14:05",
+    "at": "2026-09-24 14:10",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
