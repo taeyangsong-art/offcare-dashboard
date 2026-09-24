@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13000,
+  "version": 13001,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210957,7 +210957,10 @@ window.SLACK_DATA = {
       },
       "1790217693.175419": {
         "post": "1790217693.175419",
-        "lastSeen": 1790217740.645
+        "lastSeen": 1790217925.198,
+        "r": 1,
+        "day": "2026-09-24",
+        "idx": 10
       }
     },
     "days": {
@@ -277628,8 +277631,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-24": {
-        "cnt": 10,
-        "sumMin": 132.63465868632,
+        "cnt": 11,
+        "sumMin": 134.96376003424328,
         "over": 1,
         "items": [
           {
@@ -277721,13 +277724,21 @@ window.SLACK_DATA = {
             "who": "송태양",
             "cat": "as",
             "dmin": 50.3
+          },
+          {
+            "hm": "11:41",
+            "min": 2.3,
+            "store": "오디오씨(ODOC)",
+            "biz": "5971902561",
+            "who": "송태양",
+            "cat": "as"
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-24 11:42",
+    "at": "2026-09-24 11:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
