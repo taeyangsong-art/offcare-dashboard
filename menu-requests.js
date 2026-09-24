@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2431,
- "updatedAt": "2026-09-23 19:29",
+ "version": 2432,
+ "updatedAt": "2026-09-24 09:30",
  "days": 30,
  "items": [
   {
@@ -61488,29 +61488,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787619170650899"
-  },
-  {
-   "ts": "1787617322.434259",
-   "date": "2026-08-25",
-   "time": "09:22",
-   "store": "샐러드타임",
-   "biz": "8854001099",
-   "pos": "기타",
-   "content": "월남쌈 가격 변동\n닭가슴살 월남쌈 11,400\n크래미월남쌈 11,400\n불고기 월남쌈 11,900\n(포스, 키오스크 동일)",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "완료"
-   ],
-   "rc": 2,
-   "lr": "1787617434.379269",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787617322434259"
   }
  ],
  "ocr": {
