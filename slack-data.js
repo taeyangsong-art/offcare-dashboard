@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13017,
+  "version": 13018,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210528,7 +210528,7 @@ window.SLACK_DATA = {
     "2026-09-24": {
       "counts": {
         "as": {
-          "송태양": 20
+          "송태양": 21
         },
         "extern": {
           "송태양": 1
@@ -210539,6 +210539,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "13:15",
+          "store": "마장동 대패삼겹&amp;주먹고기",
+          "biz": "3140735620",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "• 유프 온보딩 부탁드립니당 :woman-bowing::skin-tone-2:",
+          "hw": "",
+          "intake": "online",
+          "note": "• cpp-3000 블랙 간헐적 출력불 증상 교체 안내 및 입출고 접수 완료 • 명절 이후 수령 가능함 양해 cpp-3000 블랙 간헐적 출력불 증상 교체 안내 및 입출고 접수 완료 명절 이후 수령 가능함 양해"
+        },
         {
           "time": "13:13",
           "store": "웨이브랩스 광교SK뷰레이크37F",
@@ -210787,11 +210798,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 16,
+        "online": 17,
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "13:20",
+      "updatedAt": "13:27",
       "voc": {
         "responses": 1,
         "install": {
@@ -211012,18 +211023,15 @@ window.SLACK_DATA = {
       },
       "1790222973.279209": {
         "post": "1790222973.279209",
-        "lastSeen": 1790223862.89
-      },
-      "1790223300.373699": {
-        "post": "1790223300.373699",
-        "lastSeen": 1790223862.89,
-        "r": 1,
-        "day": "2026-09-24",
-        "idx": 14
+        "lastSeen": 1790224107.627
       },
       "1790223600.203999": {
         "post": "1790223600.203999",
-        "lastSeen": 1790223862.89
+        "lastSeen": 1790224107.627
+      },
+      "1790224021.574289": {
+        "post": "1790224021.574289",
+        "lastSeen": 1790224107.627
       }
     },
     "days": {
@@ -277830,14 +277838,15 @@ window.SLACK_DATA = {
             "store": "마장동 대패삼겹&amp;주먹고기",
             "biz": "3140735620",
             "who": "송태양",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 11.4
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-24 13:24",
+    "at": "2026-09-24 13:28",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
