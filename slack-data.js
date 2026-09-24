@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13054,
+  "version": 13055,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210998,38 +210998,43 @@ window.SLACK_DATA = {
         "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "16:35",
+      "updatedAt": "16:40",
       "voc": {
-        "responses": 9,
+        "responses": 10,
         "install": {
-          "count": 4,
+          "count": 5,
           "low": 0
         },
         "nps": {
-          "count": 9,
+          "count": 10,
           "low": 2
         },
         "high": {
-          "install": 2,
-          "nps": 2
+          "install": 3,
+          "nps": 3
         },
         "npsDist": {
           "3": 2,
           "8": 1,
           "9": 4,
-          "10": 2
+          "10": 3
         },
         "installDist": {
           "3": 1,
           "4": 1,
-          "5": 2
+          "5": 3
         },
         "byIndustry": {
+          "도소매": 1,
           "요식업": 1,
           "서비스[학원]": 2,
           "서비스[숙박]": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 5,
+            "low": 1
+          },
           "1개월": {
             "total": 1,
             "low": 1
@@ -211037,10 +211042,6 @@ window.SLACK_DATA = {
           "6개월": {
             "total": 2,
             "low": 0
-          },
-          "구매설치": {
-            "total": 4,
-            "low": 1
           },
           "12개월": {
             "total": 1,
@@ -211053,7 +211054,7 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KOVAN": {
-            "total": 1,
+            "total": 2,
             "low": 1
           },
           "KPN": {
@@ -211128,6 +211129,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "16:40",
+            "store": "코코피커",
+            "storeId": "674667",
+            "indBucket": "도소매",
+            "emp": "",
+            "install": 5,
+            "nps": 10,
+            "text": "친절하시고 빠른 답변등 사용하기 편함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "15:46",
             "store": "콜라이드커피",
             "storeId": "414018",
@@ -211169,13 +211182,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1790063049.859139": {
-        "post": "1790063049.859139",
-        "lastSeen": 1790108127.224,
-        "r": 1,
-        "day": "2026-09-22",
-        "idx": 139
-      },
       "1790063648.395509": {
         "post": "1790063648.395509",
         "lastSeen": 1790108127.224,
@@ -211300,15 +211306,15 @@ window.SLACK_DATA = {
       },
       "1790222973.279209": {
         "post": "1790222973.279209",
-        "lastSeen": 1790235498.603
+        "lastSeen": 1790235926.165
       },
       "1790224243.234329": {
         "post": "1790224243.234329",
-        "lastSeen": 1790235498.603
+        "lastSeen": 1790235926.165
       },
       "1790228933.832719": {
         "post": "1790228933.832719",
-        "lastSeen": 1790235498.603
+        "lastSeen": 1790235926.165
       }
     },
     "days": {
@@ -278231,7 +278237,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-24 16:38",
+    "at": "2026-09-24 16:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
