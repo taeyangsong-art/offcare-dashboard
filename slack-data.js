@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 12963,
+  "version": 12964,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -210528,11 +210528,23 @@ window.SLACK_DATA = {
     "2026-09-24": {
       "counts": {
         "as": {
-          "송태양": 2
+          "송태양": 3
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:37",
+          "store": "티티엘티(TTLT)",
+          "biz": "6370303718",
+          "cat": "as",
+          "emp": "송태양",
+          "req": "&gt; • 포스 + 프론트 연동하여 사용 중",
+          "hw": "",
+          "urgent": true,
+          "intake": "online",
+          "note": "• 2건중 9시 16분 결제건 카드사 직취소 안내 및 양해 • 승인번호 및 결제정보 문자전송 완료 2건중 9시 16분 결제건 카드사 직취소 안내 및 양해 승인번호 및 결제정보 문자전송 완료"
+        },
         {
           "time": "09:30",
           "store": "영종포차",
@@ -210557,7 +210569,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
+        "online": 2,
         "offline": 1,
         "unknown": 0
       },
@@ -210795,16 +210807,12 @@ window.SLACK_DATA = {
         "post": "1790175723.104489",
         "lastSeen": 1790194530.131
       },
-      "1790210253.328009": {
-        "post": "1790210253.328009",
-        "lastSeen": 1790210728.187,
-        "r": 1,
-        "day": "2026-09-24",
-        "idx": 0
-      },
       "1790210503.371919": {
         "post": "1790210503.371919",
-        "lastSeen": 1790210728.187
+        "lastSeen": 1790210958.984,
+        "r": 1,
+        "day": "2026-09-24",
+        "idx": 1
       }
     },
     "days": {
@@ -277475,8 +277483,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-24": {
-        "cnt": 1,
-        "sumMin": 2.7649165193239846,
+        "cnt": 2,
+        "sumMin": 8.43514287074407,
         "over": 0,
         "items": [
           {
@@ -277485,6 +277493,15 @@ window.SLACK_DATA = {
             "store": "티티엘티(TTLT)",
             "biz": "6370303718",
             "who": "송태양",
+            "cat": "as",
+            "dmin": 9.8
+          },
+          {
+            "hm": "09:41",
+            "min": 5.7,
+            "store": "그로리프",
+            "biz": "1204001615",
+            "who": "송태양",
             "cat": "as"
           }
         ]
@@ -277492,7 +277509,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-24 09:45",
+    "at": "2026-09-24 09:49",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
