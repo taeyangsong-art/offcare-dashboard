@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13212,
+  "version": 13213,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211350,7 +211350,7 @@ window.SLACK_DATA = {
     "2026-09-25": {
       "counts": {
         "as": {
-          "미지정": 5,
+          "미지정": 6,
           "배선유": 6
         },
         "menu": {
@@ -211359,6 +211359,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "17:00",
+          "store": "어마무시",
+          "biz": "6880603357",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "무프B 용지 교체 이후 연결끊김으로 인한 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "블루투스 스피커 등은 연결되나 프린터는 연결안됨 대체품 발송요청 및 회수요청 완료"
+        },
         {
           "time": "16:05",
           "store": "바바커피",
@@ -211493,7 +211504,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 10,
+        "online": 11,
         "offline": 2,
         "unknown": 0
       },
@@ -211647,15 +211658,11 @@ window.SLACK_DATA = {
       },
       "1790305908.338549": {
         "post": "1790305908.338549",
-        "lastSeen": 1790324421.872
-      },
-      "1790323205.690039": {
-        "post": "1790323205.690039",
-        "lastSeen": 1790324421.872
+        "lastSeen": 1790324543.421
       },
       "1790324366.779919": {
         "post": "1790324366.779919",
-        "lastSeen": 1790324421.872
+        "lastSeen": 1790324543.421
       }
     },
     "days": {
@@ -278666,8 +278673,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-25": {
-        "cnt": 7,
-        "sumMin": 87.8449899593989,
+        "cnt": 8,
+        "sumMin": 109.12759764591853,
         "over": 0,
         "items": [
           {
@@ -278732,13 +278739,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 11.6
+          },
+          {
+            "hm": "17:00",
+            "min": 21.3,
+            "store": "어마무시",
+            "biz": "6880603357",
+            "who": "",
+            "cat": "as",
+            "dmin": 21.3
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-25 17:20",
+    "at": "2026-09-25 17:22",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
