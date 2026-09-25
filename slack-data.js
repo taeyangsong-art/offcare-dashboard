@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13160,
+  "version": 13161,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211350,7 +211350,7 @@ window.SLACK_DATA = {
     "2026-09-25": {
       "counts": {
         "as": {
-          "배선유": 3
+          "배선유": 4
         }
       },
       "pending": [],
@@ -211365,6 +211365,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "프론트 전원 자꾸 꺼짐 / 처음 수령 받았을 때부터 그랬음 1일 3,4회 / 전기 문제 가능성도 안내했으나 동일 멀티탭 사용하는 다른 기기는 문제가 없으니 오픈 전에 교체해달라고 하셔서 월요일 출고 안내"
+        },
+        {
+          "time": "10:26",
+          "store": "라팽크렘",
+          "biz": "3162202389",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "• 토스플레이스 측에서 안내받고 인입",
+          "hw": "",
+          "intake": "online",
+          "note": "진짜 응답없음 상태로 실행 불가 앱, 로그 삭제 후 재부팅 방화벽 설정 관리자권한으로 실행 스마트앱 컨트롤 여부 확인 구 설치파일로 재시도 위 조치 해봤으나 실행 불가 / 장사 가능하도록 포프유(폰) 재온보딩, 12시까지 보안프로그램 삭제하고 조금 더 살펴보기로 함"
         },
         {
           "time": "09:17",
@@ -211390,7 +211401,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 2,
+        "online": 3,
         "offline": 1,
         "unknown": 0
       },
@@ -278559,7 +278570,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-25 11:15",
+    "at": "2026-09-25 11:19",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

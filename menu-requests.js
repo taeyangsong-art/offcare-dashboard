@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2471,
- "updatedAt": "2026-09-25 11:15",
+ "version": 2472,
+ "updatedAt": "2026-09-25 11:19",
  "days": 30,
  "items": [
   {
@@ -60131,31 +60131,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787711824549819"
-  },
-  {
-   "ts": "1787710621.454649",
-   "date": "2026-08-26",
-   "time": "11:17",
-   "store": "움버거",
-   "biz": "1358560825",
-   "pos": "퍼스트포스",
-   "content": "포스에만\n식권 창 만들어주세요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "식권 NEW 카테고리에 입력\n매달 마감하실떄 필요한거라 싯가로 완료요",
-    "008463",
-    "솔완"
-   ],
-   "rc": 4,
-   "lr": "1787711092.870259",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787710621454649"
   }
  ],
  "ocr": {
