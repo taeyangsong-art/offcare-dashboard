@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13164,
+  "version": 13165,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211350,11 +211350,22 @@ window.SLACK_DATA = {
     "2026-09-25": {
       "counts": {
         "as": {
-          "배선유": 4
+          "배선유": 5
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:45",
+          "store": "여수힐링요트(Healing Yacht)",
+          "biz": "2450102888",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "• 결제취소 위해 휴대폰에 토스사장님 온보딩 좀 부탁드리어요... :blob-spin:",
+          "hw": "",
+          "intake": "online",
+          "note": "취소 눌러보니까 프론트에 카드 꽂으라고 잘 뜬대요. 필요하면 다시 전화주신다고 말씀하시고 단선하셨습니다."
+        },
         {
           "time": "11:00",
           "store": "구움집",
@@ -211401,11 +211412,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 3,
+        "online": 4,
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "11:00",
+      "updatedAt": "11:45",
       "voc": {
         "responses": 1,
         "install": {
@@ -278570,7 +278581,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-25 11:45",
+    "at": "2026-09-25 11:49",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
