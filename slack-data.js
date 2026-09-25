@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13245,
+  "version": 13246,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211350,7 +211350,7 @@ window.SLACK_DATA = {
     "2026-09-25": {
       "counts": {
         "as": {
-          "서상원": 4,
+          "서상원": 5,
           "미지정": 8,
           "배선유": 6
         },
@@ -211360,6 +211360,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "21:33",
+          "store": "호텔컬리넌개포",
+          "biz": "3072764601",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "캣프 사용 중, 캣단말기 화면 깨짐 및 커팅 불가 증상으로 인한 점검 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "중고재고 3pl에 있네.. / 창고좀다녀올게요 / 퀵배차부탁드립니다 퀵배차부탁드립니다 / 후불입니다 / 주소 위 주소로 하면 될까요? / 네네 / 배차 중이에요! / 배차 완료"
+        },
         {
           "time": "20:56",
           "store": "루모아 스킨 (LUMOA SKIN)",
@@ -211572,7 +211583,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 17,
-        "offline": 2,
+        "offline": 3,
         "unknown": 0
       },
       "updatedAt": "21:33",
@@ -211712,11 +211723,11 @@ window.SLACK_DATA = {
       },
       "1790305908.338549": {
         "post": "1790305908.338549",
-        "lastSeen": 1790341222.052
+        "lastSeen": 1790341761.856
       },
       "1790324366.779919": {
         "post": "1790324366.779919",
-        "lastSeen": 1790341222.052
+        "lastSeen": 1790341761.856
       }
     },
     "days": {
@@ -278835,7 +278846,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-25 22:00",
+    "at": "2026-09-25 22:09",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
