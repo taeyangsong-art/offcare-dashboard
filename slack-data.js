@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13236,
+  "version": 13237,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211350,7 +211350,7 @@ window.SLACK_DATA = {
     "2026-09-25": {
       "counts": {
         "as": {
-          "서상원": 3,
+          "서상원": 4,
           "미지정": 8,
           "배선유": 6
         },
@@ -211360,6 +211360,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "20:56",
+          "store": "루모아 스킨 (LUMOA SKIN)",
+          "biz": "5260603520",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "포프(데스크탑) 사용 중, 유프 연결끊김으로 인한 온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "수신거부 / 님 한번 더 연결 가능할까요? 별도로 거부된 거 없다고 하시네요 ㅠ 님 한번 더 연결 가능할까요? 별도로 거부된 거 없다고 하시네요 ㅠ / 온보딩 후 유프연결"
+        },
         {
           "time": "19:48",
           "store": "을지로연탄구이",
@@ -211560,7 +211571,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 16,
+        "online": 17,
         "offline": 2,
         "unknown": 0
       },
@@ -211701,11 +211712,11 @@ window.SLACK_DATA = {
       },
       "1790305908.338549": {
         "post": "1790305908.338549",
-        "lastSeen": 1790337621.428
+        "lastSeen": 1790338099.805
       },
       "1790324366.779919": {
         "post": "1790324366.779919",
-        "lastSeen": 1790337621.428
+        "lastSeen": 1790338099.805
       }
     },
     "days": {
@@ -278824,7 +278835,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-25 21:00",
+    "at": "2026-09-25 21:08",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
