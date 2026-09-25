@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13189,
+  "version": 13190,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211350,8 +211350,8 @@ window.SLACK_DATA = {
     "2026-09-25": {
       "counts": {
         "as": {
-          "배선유": 6,
-          "미지정": 1
+          "미지정": 2,
+          "배선유": 6
         },
         "menu": {
           "배선유": 1
@@ -211359,6 +211359,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "14:16",
+          "store": "유",
+          "biz": "6531403021",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "• 유선프린터기 파워가 갑자기 안켜진다고 하시어 확인 한 번 부탁드립니다~ :blob_pray3:",
+          "hw": "",
+          "intake": "online",
+          "note": "전원불량으로 대체품 발송"
+        },
         {
           "time": "13:37",
           "store": "삼영커피",
@@ -211449,7 +211460,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 7,
+        "online": 8,
         "offline": 1,
         "unknown": 0
       },
@@ -211586,11 +211597,7 @@ window.SLACK_DATA = {
       },
       "1790305908.338549": {
         "post": "1790305908.338549",
-        "lastSeen": 1790313440.959
-      },
-      "1790313397.274089": {
-        "post": "1790313397.274089",
-        "lastSeen": 1790313440.959
+        "lastSeen": 1790314161.595
       }
     },
     "days": {
@@ -278601,8 +278608,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-25": {
-        "cnt": 3,
-        "sumMin": 40.72321339050929,
+        "cnt": 4,
+        "sumMin": 47.45659523804982,
         "over": 0,
         "items": [
           {
@@ -278631,13 +278638,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 25.3
+          },
+          {
+            "hm": "14:16",
+            "min": 6.7,
+            "store": "유",
+            "biz": "6531403021",
+            "who": "",
+            "cat": "as",
+            "dmin": 6.7
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-25 14:17",
+    "at": "2026-09-25 14:29",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
