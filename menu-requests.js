@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2482,
- "updatedAt": "2026-09-25 14:50",
+ "version": 2483,
+ "updatedAt": "2026-09-25 15:06",
  "days": 30,
  "items": [
   {
@@ -37,7 +37,6 @@ window.MENU_REQUESTS = {
      "name": "image.png",
      "fid": "F0C4FBFTQU9",
      "from": "댓글",
-     "path": "menu-files/1790308208_864679-2.png",
      "kind": "pos_screen",
      "menu": [
       {
@@ -115,7 +114,8 @@ window.MENU_REQUESTS = {
        "name": "부나하벤 2016 · 8년",
        "price": 26000
       }
-     ]
+     ],
+     "path": "menu-files/1790308208_864679-2.png"
     }
    ],
    "datt": [],
@@ -123,10 +123,11 @@ window.MENU_REQUESTS = {
     "넹~",
     "호에ㅔㅇ",
     "오케이 차근차근해볼게여",
-    "자. 없어져야 하는 7개 카테고리의 이름은 무엇일까욤"
+    "자. 없어져야 하는 7개 카테고리의 이름은 무엇일까욤",
+    "찐완료링"
    ],
-   "rc": 12,
-   "lr": "1790313229.479679",
+   "rc": 13,
+   "lr": "1790316339.731269",
    "rfx": 3,
    "status": "done",
    "handler": "배선유",
