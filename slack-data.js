@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13233,
+  "version": 13234,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211564,22 +211564,23 @@ window.SLACK_DATA = {
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "19:48",
+      "updatedAt": "20:35",
       "voc": {
-        "responses": 6,
+        "responses": 7,
         "install": {
           "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 6,
-          "low": 0
+          "count": 7,
+          "low": 1
         },
         "high": {
           "install": 1,
           "nps": 2
         },
         "npsDist": {
+          "5": 1,
           "8": 2,
           "9": 2,
           "10": 2
@@ -211593,15 +211594,15 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "12개월": {
+            "total": 2,
+            "low": 1
+          },
           "구매설치": {
             "total": 2,
             "low": 0
           },
           "1개월": {
-            "total": 1,
-            "low": 0
-          },
-          "12개월": {
             "total": 1,
             "low": 0
           },
@@ -211615,6 +211616,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 3,
+            "low": 1
+          },
           "KOCES": {
             "total": 2,
             "low": 0
@@ -211623,17 +211628,38 @@ window.SLACK_DATA = {
             "total": 1,
             "low": 0
           },
-          "KIS": {
-            "total": 2,
-            "low": 0
-          },
           "DAOU": {
             "total": 1,
             "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1
+        },
+        "alerts": [
+          {
+            "time": "20:35",
+            "store": "테르엔 산본점",
+            "storeId": "261218",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "종종 오류가 있어서",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
         "praises": [
           {
             "time": "15:47",
@@ -211675,11 +211701,11 @@ window.SLACK_DATA = {
       },
       "1790305908.338549": {
         "post": "1790305908.338549",
-        "lastSeen": 1790335836.544
+        "lastSeen": 1790336726.503
       },
       "1790324366.779919": {
         "post": "1790324366.779919",
-        "lastSeen": 1790335836.544
+        "lastSeen": 1790336726.503
       }
     },
     "days": {
@@ -278798,7 +278824,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-25 20:30",
+    "at": "2026-09-25 20:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
