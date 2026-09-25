@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2490,
- "updatedAt": "2026-09-25 22:45",
+ "version": 2491,
+ "updatedAt": "2026-09-26 06:15",
  "days": 30,
  "items": [
   {
@@ -57242,139 +57242,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787790393515249"
-  },
-  {
-   "ts": "1787778878.223949",
-   "date": "2026-08-27",
-   "time": "06:14",
-   "store": "아마데우스 피아노",
-   "biz": "1249157035",
-   "pos": "",
-   "content": "메뉴등록",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BSHKX7U7R",
-     "from": "댓글",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "주4회",
-       "name": "바이엘",
-       "price": 170000
-      },
-      {
-       "category": "주4회",
-       "name": "체르니 100",
-       "price": 180000
-      },
-      {
-       "category": "주4회",
-       "name": "체르니 30",
-       "price": 190000
-      },
-      {
-       "category": "주4회",
-       "name": "체르니 40/50",
-       "price": 200000
-      },
-      {
-       "category": "주4회",
-       "name": "유치부(40분수업)",
-       "price": 150000
-      },
-      {
-       "category": "주3회",
-       "name": "바이엘",
-       "price": 160000
-      },
-      {
-       "category": "주3회",
-       "name": "체르니 100",
-       "price": 170000
-      },
-      {
-       "category": "주3회",
-       "name": "체르니 30",
-       "price": 180000
-      },
-      {
-       "category": "주3회",
-       "name": "체르니 40/50",
-       "price": 190000
-      },
-      {
-       "category": "주3회",
-       "name": "유치부(40분수업)",
-       "price": 140000
-      },
-      {
-       "category": "주2회",
-       "name": "바이엘",
-       "price": 150000
-      },
-      {
-       "category": "주2회",
-       "name": "체르니 100",
-       "price": 160000
-      },
-      {
-       "category": "주2회",
-       "name": "체르니 30",
-       "price": 170000
-      },
-      {
-       "category": "주2회",
-       "name": "체르니 40/50",
-       "price": 180000
-      },
-      {
-       "category": "주2회",
-       "name": "유치부(40분수업)",
-       "price": 130000
-      },
-      {
-       "category": "주1회",
-       "name": "바이엘",
-       "price": 100000
-      },
-      {
-       "category": "주1회",
-       "name": "체르니 100",
-       "price": 100000
-      },
-      {
-       "category": "주1회",
-       "name": "체르니 30",
-       "price": 100000
-      },
-      {
-       "category": "주1회",
-       "name": "체르니 40/50",
-       "price": 100000
-      },
-      {
-       "category": "주1회",
-       "name": "성인",
-       "price": 120000
-      }
-     ],
-     "path": "menu-files/1787778878_223949-0.png"
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "면세상품으로 등록완"
-   ],
-   "rc": 3,
-   "lr": "1787779347.100009",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김동욱",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787778878223949"
   }
  ],
  "ocr": {
