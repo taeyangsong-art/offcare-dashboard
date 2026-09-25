@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13197,
+  "version": 13198,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211350,7 +211350,7 @@ window.SLACK_DATA = {
     "2026-09-25": {
       "counts": {
         "as": {
-          "미지정": 2,
+          "미지정": 3,
           "배선유": 6
         },
         "menu": {
@@ -211359,6 +211359,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "14:31",
+          "store": "누벨라(NUBELLA)",
+          "biz": "7181502248",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "• 뮤패드 사용 중",
+          "hw": "",
+          "intake": "online",
+          "note": "스피커 블루투스 명칭이 태블릿에 뜨지 않는다고 해요. / 아이폰 / 블루투스 불량으로 원래 사용하던 모델 PT11 로 재발송요청 / 출고 및 반품접수 완료"
+        },
         {
           "time": "14:16",
           "store": "유",
@@ -211460,7 +211471,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 8,
+        "online": 9,
         "offline": 1,
         "unknown": 0
       },
@@ -211504,13 +211515,6 @@ window.SLACK_DATA = {
   },
   "resp": {
     "watch": {
-      "1790143206.495569": {
-        "post": "1790143206.495569",
-        "lastSeen": 1790194530.131,
-        "r": 1,
-        "day": "2026-09-23",
-        "idx": 70
-      },
       "1790144100.498619": {
         "post": "1790144100.498619",
         "lastSeen": 1790194530.131,
@@ -211597,11 +211601,7 @@ window.SLACK_DATA = {
       },
       "1790305908.338549": {
         "post": "1790305908.338549",
-        "lastSeen": 1790315538.015
-      },
-      "1790314297.466569": {
-        "post": "1790314297.466569",
-        "lastSeen": 1790315538.015
+        "lastSeen": 1790316038.895
       }
     },
     "days": {
@@ -278612,8 +278612,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-25": {
-        "cnt": 4,
-        "sumMin": 47.45659523804982,
+        "cnt": 5,
+        "sumMin": 72.30640242099761,
         "over": 0,
         "items": [
           {
@@ -278651,13 +278651,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 6.7
+          },
+          {
+            "hm": "14:31",
+            "min": 24.8,
+            "store": "누벨라(NUBELLA)",
+            "biz": "7181502248",
+            "who": "",
+            "cat": "as",
+            "dmin": 24.8
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-25 14:52",
+    "at": "2026-09-25 15:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
