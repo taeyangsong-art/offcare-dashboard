@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13284,
+  "version": 13285,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211355,22 +211355,11 @@ window.SLACK_DATA = {
           "배선유": 6
         },
         "menu": {
+          "심성현": 1,
           "배선유": 1
         }
       },
-      "pending": [
-        {
-          "time": "17:19",
-          "store": "푸다훠궈",
-          "biz": "5521503142",
-          "handler": "심성현",
-          "cat": "menu",
-          "intake": "online",
-          "reasons": [
-            "확인 후 미완료"
-          ]
-        }
-      ],
+      "pending": [],
       "done": [
         {
           "time": "21:33",
@@ -211448,6 +211437,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "전원 껐켰 후 정상출력"
+        },
+        {
+          "time": "17:19",
+          "store": "푸다훠궈",
+          "biz": "5521503142",
+          "cat": "menu",
+          "emp": "심성현",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "메뉴 등록 완료 / 솔라피 발송"
         },
         {
           "time": "17:00",
@@ -278895,7 +278895,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-26 06:45",
+    "at": "2026-09-26 07:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
