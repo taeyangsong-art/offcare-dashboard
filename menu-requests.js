@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2470,
- "updatedAt": "2026-09-25 10:01",
+ "version": 2471,
+ "updatedAt": "2026-09-25 11:15",
  "days": 30,
  "items": [
   {
@@ -60156,31 +60156,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787710621454649"
-  },
-  {
-   "ts": "1787710499.120559",
-   "date": "2026-08-26",
-   "time": "11:14",
-   "store": "동구 해물된장뚝배기",
-   "biz": "4936000939",
-   "pos": "토스포스",
-   "content": "토스포스 사용 중 - 메뉴 추가 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "소불고기뚝배기 12,000원\n감자탕 12,000원\n아구찜 25,000원 / 35,000원\n해물탕 25,000원 / 35,000원\n해물 파전 10,000원",
-    "아구찜, 해물탕 소/중 문구 없이 요청 주셨습니다.",
-    "넴 감사합니당"
-   ],
-   "rc": 6,
-   "lr": "1787710637.972159",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787710499120559"
   }
  ],
  "ocr": {
