@@ -3,10 +3,39 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2474,
- "updatedAt": "2026-09-25 12:08",
+ "version": 2475,
+ "updatedAt": "2026-09-25 12:52",
  "days": 30,
  "items": [
+  {
+   "ts": "1790308208.864679",
+   "date": "2026-09-25",
+   "time": "12:50",
+   "store": "텍사스",
+   "biz": "8222601374",
+   "pos": "",
+   "content": "메뉴등록",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [
+    {
+     "name": "TEXAS_menu_beer_draft_can_bottle.pdf",
+     "fid": "F0C3XM1SF71",
+     "from": "댓글",
+     "path": "menu-files/1790308208_864679-0.pdf",
+     "nj": 1
+    }
+   ],
+   "datt": [],
+   "replies": [],
+   "rc": 2,
+   "lr": "1790308227.440919",
+   "rfx": 3,
+   "status": "done",
+   "handler": "배선유",
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1790308208864679"
+  },
   {
    "ts": "1790224243.234329",
    "date": "2026-09-24",
