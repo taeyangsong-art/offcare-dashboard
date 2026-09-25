@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13249,
+  "version": 13250,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211586,15 +211586,15 @@ window.SLACK_DATA = {
         "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "21:33",
+      "updatedAt": "22:48",
       "voc": {
-        "responses": 7,
+        "responses": 8,
         "install": {
-          "count": 2,
-          "low": 0
+          "count": 3,
+          "low": 1
         },
         "nps": {
-          "count": 7,
+          "count": 8,
           "low": 1
         },
         "high": {
@@ -211603,26 +211603,29 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "5": 1,
+          "7": 1,
           "8": 2,
           "9": 2,
           "10": 2
         },
         "installDist": {
+          "1": 1,
           "4": 1,
           "5": 1
         },
         "byIndustry": {
+          "요식업": 1,
           "도소매": 1,
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "구매설치": {
+            "total": 3,
+            "low": 1
+          },
           "12개월": {
             "total": 2,
             "low": 1
-          },
-          "구매설치": {
-            "total": 2,
-            "low": 0
           },
           "1개월": {
             "total": 1,
@@ -211638,13 +211641,13 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
-          "KIS": {
+          "KOCES": {
             "total": 3,
             "low": 1
           },
-          "KOCES": {
-            "total": 2,
-            "low": 0
+          "KIS": {
+            "total": 3,
+            "low": 1
           },
           "KSNET": {
             "total": 1,
@@ -211656,9 +211659,32 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "기타 이슈(정산/직원에 대한 불만/호영님출몰)": 1,
           "사용중 오류가 자주 발생함": 1
         },
         "alerts": [
+          {
+            "time": "22:48",
+            "store": "시골집",
+            "storeId": "674280",
+            "industry": "음식점/주점",
+            "indBucket": "요식업",
+            "install": 1,
+            "nps": 7,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "너무 바쁜척 하며 대충 해주고 감",
+                "cat": "기타 이슈(정산/직원에 대한 불만/호영님출몰)"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "20:35",
             "store": "테르엔 산본점",
@@ -211723,11 +211749,11 @@ window.SLACK_DATA = {
       },
       "1790305908.338549": {
         "post": "1790305908.338549",
-        "lastSeen": 1790343929.615
+        "lastSeen": 1790344845.046
       },
       "1790324366.779919": {
         "post": "1790324366.779919",
-        "lastSeen": 1790343929.615
+        "lastSeen": 1790344845.046
       }
     },
     "days": {
@@ -278846,7 +278872,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-25 22:45",
+    "at": "2026-09-25 23:01",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
