@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13181,
+  "version": 13182,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211350,7 +211350,8 @@ window.SLACK_DATA = {
     "2026-09-25": {
       "counts": {
         "as": {
-          "배선유": 5
+          "배선유": 6,
+          "미지정": 1
         },
         "menu": {
           "배선유": 1
@@ -211358,6 +211359,28 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "13:37",
+          "store": "삼영커피",
+          "biz": "1092042343",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "• 프론트 연결이 끊어져 태블릿과 재연결 한 뒤부터 프린터가 미작동",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트 내부 프린터 설정"
+        },
+        {
+          "time": "13:22",
+          "store": "터틀디베이커리(Turtle.D Bakery",
+          "biz": "7215100792",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "*`현재`*",
+          "hw": "",
+          "intake": "online",
+          "note": "com5 로 연결완료"
+        },
         {
           "time": "12:50",
           "store": "텍사스",
@@ -211426,7 +211449,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 5,
+        "online": 7,
         "offline": 1,
         "unknown": 0
       },
@@ -211570,15 +211593,7 @@ window.SLACK_DATA = {
       },
       "1790305908.338549": {
         "post": "1790305908.338549",
-        "lastSeen": 1790311525.646
-      },
-      "1790310154.594519": {
-        "post": "1790310154.594519",
-        "lastSeen": 1790311525.646
-      },
-      "1790311034.346149": {
-        "post": "1790311034.346149",
-        "lastSeen": 1790311525.646
+        "lastSeen": 1790311820.069
       }
     },
     "days": {
@@ -278589,8 +278604,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-25": {
-        "cnt": 1,
-        "sumMin": 4.776974519093831,
+        "cnt": 3,
+        "sumMin": 40.72321339050929,
         "over": 0,
         "items": [
           {
@@ -278601,13 +278616,31 @@ window.SLACK_DATA = {
             "who": "배선유",
             "cat": "as",
             "dmin": 4.8
+          },
+          {
+            "hm": "13:37",
+            "min": 10.6,
+            "store": "삼영커피",
+            "biz": "1092042343",
+            "who": "배선유",
+            "cat": "as",
+            "dmin": 10.6
+          },
+          {
+            "hm": "13:22",
+            "min": 25.3,
+            "store": "터틀디베이커리(Turtle.D Bakery",
+            "biz": "7215100792",
+            "who": "",
+            "cat": "as",
+            "dmin": 25.3
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-25 13:45",
+    "at": "2026-09-25 13:50",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
