@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13203,
+  "version": 13204,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211486,28 +211486,39 @@ window.SLACK_DATA = {
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "15:42",
+      "updatedAt": "15:47",
       "voc": {
-        "responses": 4,
+        "responses": 6,
         "install": {
-          "count": 0,
+          "count": 2,
           "low": 0
         },
         "nps": {
-          "count": 4,
+          "count": 6,
           "low": 0
         },
         "high": {
-          "install": 0,
+          "install": 1,
           "nps": 2
         },
         "npsDist": {
+          "8": 2,
           "9": 2,
           "10": 2
         },
-        "installDist": {},
-        "byIndustry": {},
+        "installDist": {
+          "4": 1,
+          "5": 1
+        },
+        "byIndustry": {
+          "도소매": 1,
+          "서비스[뷰티,헤어]": 1
+        },
         "byTenure": {
+          "구매설치": {
+            "total": 2,
+            "low": 0
+          },
           "1개월": {
             "total": 1,
             "low": 0
@@ -211527,6 +211538,10 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KOCES": {
+            "total": 2,
+            "low": 0
+          },
+          "KSNET": {
             "total": 1,
             "low": 0
           },
@@ -211541,19 +211556,25 @@ window.SLACK_DATA = {
         },
         "reasonCounts": {},
         "alerts": [],
-        "praises": []
+        "praises": [
+          {
+            "time": "15:47",
+            "store": "바비수(vavisoo)",
+            "storeId": "649121",
+            "indBucket": "도소매",
+            "emp": "",
+            "install": 5,
+            "nps": 8,
+            "text": "친절하시고 설명 잘 해주셨어요 편한시스템",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
       }
     }
   },
   "resp": {
     "watch": {
-      "1790146800.838409": {
-        "post": "1790146800.838409",
-        "lastSeen": 1790194530.131,
-        "r": 1,
-        "day": "2026-09-23",
-        "idx": 91
-      },
       "1790147057.893479": {
         "post": "1790147057.893479",
         "lastSeen": 1790147081.312
@@ -211626,7 +211647,7 @@ window.SLACK_DATA = {
       },
       "1790305908.338549": {
         "post": "1790305908.338549",
-        "lastSeen": 1790318727.724
+        "lastSeen": 1790319643.276
       }
     },
     "days": {
@@ -278700,7 +278721,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-25 15:45",
+    "at": "2026-09-25 16:01",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
