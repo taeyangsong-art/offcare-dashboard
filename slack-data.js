@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13250,
+  "version": 13251,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211586,15 +211586,15 @@ window.SLACK_DATA = {
         "offline": 3,
         "unknown": 0
       },
-      "updatedAt": "22:48",
+      "updatedAt": "23:13",
       "voc": {
-        "responses": 8,
+        "responses": 9,
         "install": {
           "count": 3,
           "low": 1
         },
         "nps": {
-          "count": 8,
+          "count": 9,
           "low": 1
         },
         "high": {
@@ -211604,7 +211604,7 @@ window.SLACK_DATA = {
         "npsDist": {
           "5": 1,
           "7": 1,
-          "8": 2,
+          "8": 3,
           "9": 2,
           "10": 2
         },
@@ -211619,6 +211619,10 @@ window.SLACK_DATA = {
           "서비스[뷰티,헤어]": 1
         },
         "byTenure": {
+          "1개월": {
+            "total": 2,
+            "low": 0
+          },
           "구매설치": {
             "total": 3,
             "low": 1
@@ -211626,10 +211630,6 @@ window.SLACK_DATA = {
           "12개월": {
             "total": 2,
             "low": 1
-          },
-          "1개월": {
-            "total": 1,
-            "low": 0
           },
           "3개월": {
             "total": 1,
@@ -211642,7 +211642,7 @@ window.SLACK_DATA = {
         },
         "byVan": {
           "KOCES": {
-            "total": 3,
+            "total": 4,
             "low": 1
           },
           "KIS": {
@@ -211749,11 +211749,11 @@ window.SLACK_DATA = {
       },
       "1790305908.338549": {
         "post": "1790305908.338549",
-        "lastSeen": 1790344845.046
+        "lastSeen": 1790345731.403
       },
       "1790324366.779919": {
         "post": "1790324366.779919",
-        "lastSeen": 1790344845.046
+        "lastSeen": 1790345731.403
       }
     },
     "days": {
@@ -278872,7 +278872,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-25 23:01",
+    "at": "2026-09-25 23:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
