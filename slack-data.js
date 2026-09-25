@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13148,
+  "version": 13149,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211350,11 +211350,22 @@ window.SLACK_DATA = {
     "2026-09-25": {
       "counts": {
         "as": {
-          "배선유": 1
+          "배선유": 2
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "09:17",
+          "store": "먼동이틀때",
+          "biz": "1261797784",
+          "cat": "as",
+          "emp": "배선유",
+          "req": "• 주문서, 영수증 모두 출력 불가 상태",
+          "hw": "",
+          "intake": "online",
+          "note": "젠더 재연결 후 정상출력 확인 / 통신속도 9600으로 원복"
+        },
         {
           "time": "07:35",
           "store": "드롭탑 음성(남이) 휴게소점",
@@ -211368,7 +211379,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 1,
         "unknown": 0
       },
@@ -278521,7 +278532,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-25 09:18",
+    "at": "2026-09-25 09:25",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
