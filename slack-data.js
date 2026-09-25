@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13200,
+  "version": 13201,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211350,7 +211350,7 @@ window.SLACK_DATA = {
     "2026-09-25": {
       "counts": {
         "as": {
-          "미지정": 3,
+          "미지정": 4,
           "배선유": 6
         },
         "menu": {
@@ -211359,6 +211359,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:14",
+          "store": "별궁",
+          "biz": "7913201687",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "포스(태블릿) 사용 중 / 주문서 출력이 되지 않는다고 해요. 재온보딩 부탁 드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "프린터 속도 설정완료"
+        },
         {
           "time": "14:31",
           "store": "누벨라(NUBELLA)",
@@ -211472,7 +211483,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 9,
-        "offline": 1,
+        "offline": 2,
         "unknown": 0
       },
       "updatedAt": "15:14",
@@ -211594,11 +211605,7 @@ window.SLACK_DATA = {
       },
       "1790305908.338549": {
         "post": "1790305908.338549",
-        "lastSeen": 1790316920.424
-      },
-      "1790316896.917589": {
-        "post": "1790316896.917589",
-        "lastSeen": 1790316920.424
+        "lastSeen": 1790317340.541
       }
     },
     "days": {
@@ -278609,8 +278616,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-25": {
-        "cnt": 5,
-        "sumMin": 72.30640242099761,
+        "cnt": 6,
+        "sumMin": 76.19915093978246,
         "over": 0,
         "items": [
           {
@@ -278657,13 +278664,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 24.8
+          },
+          {
+            "hm": "15:14",
+            "min": 3.9,
+            "store": "별궁",
+            "biz": "7913201687",
+            "who": "",
+            "cat": "as",
+            "dmin": 3.9
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-25 15:15",
+    "at": "2026-09-25 15:22",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
