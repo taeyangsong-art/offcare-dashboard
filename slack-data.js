@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13229,
+  "version": 13230,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211350,7 +211350,7 @@ window.SLACK_DATA = {
     "2026-09-25": {
       "counts": {
         "as": {
-          "서상원": 2,
+          "서상원": 3,
           "미지정": 8,
           "배선유": 6
         },
@@ -211360,6 +211360,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "19:48",
+          "store": "을지로연탄구이",
+          "biz": "8645001029",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "홀 프린터기 미작동으로 인한 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "익일 15시30분 예약"
+        },
         {
           "time": "19:30",
           "store": "캔디포유 혼술바 연남점",
@@ -211549,7 +211560,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 15,
+        "online": 16,
         "offline": 2,
         "unknown": 0
       },
@@ -211664,11 +211675,11 @@ window.SLACK_DATA = {
       },
       "1790305908.338549": {
         "post": "1790305908.338549",
-        "lastSeen": 1790333359.724
+        "lastSeen": 1790333479.409
       },
       "1790324366.779919": {
         "post": "1790324366.779919",
-        "lastSeen": 1790333359.724
+        "lastSeen": 1790333479.409
       }
     },
     "days": {
@@ -278787,7 +278798,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-25 19:49",
+    "at": "2026-09-25 19:51",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
