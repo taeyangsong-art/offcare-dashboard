@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13215,
+  "version": 13216,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211350,7 +211350,7 @@ window.SLACK_DATA = {
     "2026-09-25": {
       "counts": {
         "as": {
-          "미지정": 6,
+          "미지정": 7,
           "배선유": 6
         },
         "menu": {
@@ -211359,6 +211359,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "17:36",
+          "store": "압해곱창",
+          "biz": "3053852162",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "프린터기 뚜껑이 안 닫힌다고 합니다. 저번에도 동일 증상이 있었다고 하여 교체 희망하시는데 점검 부탁드려요.",
+          "hw": "",
+          "intake": "online",
+          "note": "전원 껐켰 후 정상출력"
+        },
         {
           "time": "17:00",
           "store": "어마무시",
@@ -211504,11 +211515,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 11,
+        "online": 12,
         "offline": 2,
         "unknown": 0
       },
-      "updatedAt": "17:36",
+      "updatedAt": "17:40",
       "voc": {
         "responses": 6,
         "install": {
@@ -211658,15 +211669,15 @@ window.SLACK_DATA = {
       },
       "1790305908.338549": {
         "post": "1790305908.338549",
-        "lastSeen": 1790325441.627
+        "lastSeen": 1790325680.875
       },
       "1790324366.779919": {
         "post": "1790324366.779919",
-        "lastSeen": 1790325441.627
+        "lastSeen": 1790325680.875
       },
-      "1790325386.492519": {
-        "post": "1790325386.492519",
-        "lastSeen": 1790325441.627
+      "1790325657.960429": {
+        "post": "1790325657.960429",
+        "lastSeen": 1790325680.875
       }
     },
     "days": {
@@ -278677,8 +278688,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-25": {
-        "cnt": 8,
-        "sumMin": 109.12759764591853,
+        "cnt": 9,
+        "sumMin": 112.04023899634679,
         "over": 0,
         "items": [
           {
@@ -278752,13 +278763,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 21.3
+          },
+          {
+            "hm": "17:36",
+            "min": 2.9,
+            "store": "압해곱창",
+            "biz": "3053852162",
+            "who": "",
+            "cat": "as",
+            "dmin": 2.9
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-25 17:37",
+    "at": "2026-09-25 17:41",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
