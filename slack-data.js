@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13175,
+  "version": 13176,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211351,10 +211351,24 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "배선유": 5
+        },
+        "menu": {
+          "배선유": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "12:50",
+          "store": "텍사스",
+          "biz": "8222601374",
+          "cat": "menu",
+          "emp": "배선유",
+          "req": "메뉴등록",
+          "hw": "",
+          "intake": "online",
+          "note": "확인 바랍니다! 확인 바랍니다! 확인 바랍니다! / /"
+        },
         {
           "time": "11:45",
           "store": "여수힐링요트(Healing Yacht)",
@@ -211412,7 +211426,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 4,
+        "online": 5,
         "offline": 1,
         "unknown": 0
       },
@@ -211556,7 +211570,7 @@ window.SLACK_DATA = {
       },
       "1790305908.338549": {
         "post": "1790305908.338549",
-        "lastSeen": 1790308840.699
+        "lastSeen": 1790309060.528
       }
     },
     "days": {
@@ -278585,7 +278599,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-25 13:00",
+    "at": "2026-09-25 13:04",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
