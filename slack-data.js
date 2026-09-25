@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13226,
+  "version": 13227,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211350,7 +211350,7 @@ window.SLACK_DATA = {
     "2026-09-25": {
       "counts": {
         "as": {
-          "서상원": 1,
+          "서상원": 2,
           "미지정": 8,
           "배선유": 6
         },
@@ -211360,6 +211360,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "19:30",
+          "store": "캔디포유 혼술바 연남점",
+          "biz": "1573601584",
+          "cat": "as",
+          "emp": "서상원",
+          "req": "대표 인입 / 직원 번호 알려주심",
+          "hw": "",
+          "intake": "online",
+          "note": "20분후 / 용지 거꾸로 낀증상 매장가서 확인해보시고 연락요청"
+        },
         {
           "time": "18:20",
           "store": "곱도리탕전문점 연수점",
@@ -211538,7 +211549,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 14,
+        "online": 15,
         "offline": 2,
         "unknown": 0
       },
@@ -211653,11 +211664,11 @@ window.SLACK_DATA = {
       },
       "1790305908.338549": {
         "post": "1790305908.338549",
-        "lastSeen": 1790332224.075
+        "lastSeen": 1790332449.605
       },
       "1790324366.779919": {
         "post": "1790324366.779919",
-        "lastSeen": 1790332224.075
+        "lastSeen": 1790332449.605
       }
     },
     "days": {
@@ -278776,7 +278787,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-25 19:30",
+    "at": "2026-09-25 19:34",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
