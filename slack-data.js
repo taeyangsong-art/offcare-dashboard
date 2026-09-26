@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13342,
+  "version": 13343,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211739,7 +211739,7 @@ window.SLACK_DATA = {
     "2026-09-26": {
       "counts": {
         "as": {
-          "미지정": 2,
+          "미지정": 3,
           "심성현": 7
         },
         "menu": {
@@ -211748,6 +211748,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:05",
+          "store": "노이케이크",
+          "biz": "1454601334",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "포프 핸드폰 사용중",
+          "hw": "",
+          "intake": "online",
+          "note": "/ / 점주님이 다시 테스트 하니 현제는 정상이라고하셔서 추후에 에러날수있는 인터넷등 느리거나 끊김 안내 설명드렸습니다."
+        },
         {
           "time": "13:30",
           "store": "올리버",
@@ -211860,19 +211871,19 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 4,
+        "online": 5,
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "15:05",
+      "updatedAt": "15:10",
       "voc": {
-        "responses": 2,
+        "responses": 4,
         "install": {
           "count": 0,
           "low": 0
         },
         "nps": {
-          "count": 2,
+          "count": 4,
           "low": 0
         },
         "high": {
@@ -211880,12 +211891,17 @@ window.SLACK_DATA = {
           "nps": 1
         },
         "npsDist": {
-          "7": 1,
+          "7": 2,
+          "8": 1,
           "10": 1
         },
         "installDist": {},
         "byIndustry": {},
         "byTenure": {
+          "12개월": {
+            "total": 2,
+            "low": 0
+          },
           "6개월": {
             "total": 1,
             "low": 0
@@ -211896,6 +211912,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 2,
+            "low": 0
+          },
           "SECTA9": {
             "total": 1,
             "low": 0
@@ -211928,10 +211948,6 @@ window.SLACK_DATA = {
       "1790348416.269139": {
         "post": "1790348416.269139",
         "lastSeen": 1790367326.242
-      },
-      "1790402745.285619": {
-        "post": "1790402745.285619",
-        "lastSeen": 1790402780.34
       }
     },
     "days": {
@@ -279048,8 +279064,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-26": {
-        "cnt": 8,
-        "sumMin": 40.658389131228134,
+        "cnt": 9,
+        "sumMin": 44.73806214729945,
         "over": 0,
         "items": [
           {
@@ -279123,13 +279139,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 2.3
+          },
+          {
+            "hm": "15:05",
+            "min": 4.1,
+            "store": "노이케이크",
+            "biz": "1454601334",
+            "who": "",
+            "cat": "as",
+            "dmin": 4.1
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-26 15:06",
+    "at": "2026-09-26 15:13",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
