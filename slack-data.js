@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13347,
+  "version": 13348,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211886,37 +211886,46 @@ window.SLACK_DATA = {
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "15:29",
+      "updatedAt": "15:53",
       "voc": {
-        "responses": 6,
+        "responses": 8,
         "install": {
-          "count": 0,
-          "low": 0
+          "count": 1,
+          "low": 1
         },
         "nps": {
-          "count": 6,
-          "low": 1
+          "count": 8,
+          "low": 2
         },
         "high": {
           "install": 0,
-          "nps": 2
+          "nps": 3
         },
         "npsDist": {
+          "0": 1,
           "5": 1,
           "7": 2,
           "8": 1,
-          "10": 2
+          "10": 3
         },
-        "installDist": {},
-        "byIndustry": {},
+        "installDist": {
+          "1": 1
+        },
+        "byIndustry": {
+          "요식업": 1
+        },
         "byTenure": {
+          "구매설치": {
+            "total": 1,
+            "low": 1
+          },
+          "1개월": {
+            "total": 3,
+            "low": 1
+          },
           "6개월": {
             "total": 2,
             "low": 0
-          },
-          "1개월": {
-            "total": 2,
-            "low": 1
           },
           "12개월": {
             "total": 2,
@@ -211924,8 +211933,12 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
-          "KPN": {
+          "KOCES": {
             "total": 2,
+            "low": 1
+          },
+          "KPN": {
+            "total": 3,
             "low": 1
           },
           "KIS": {
@@ -211935,16 +211948,41 @@ window.SLACK_DATA = {
           "SECTA9": {
             "total": 1,
             "low": 0
-          },
-          "KOCES": {
-            "total": 1,
-            "low": 0
           }
         },
         "reasonCounts": {
+          "단말기 설치나 초기 과정이 어려움": 2,
           "필요한 기능이 없거나 몰라서 불편": 1
         },
         "alerts": [
+          {
+            "time": "15:53",
+            "store": "이방인 혼술바 서울 강남역점",
+            "storeId": "682376",
+            "industry": "음식점/주점",
+            "indBucket": "요식업",
+            "install": 1,
+            "nps": 0,
+            "reasons": [
+              {
+                "q": "구매설치",
+                "score": 1,
+                "text": "전기 공사를 동시에 작업하면서 설치 했는데, 단말기 전선을 위해 테이블 타공을 전기기사님이 뚫어주려고 타공 위치를 물어보니, 무심하게 사장님께 물어보세요. 저는 설치 기사라 몰라요. 이렇게 대답하던군요.. 정말 직업 정신 1도 찾아 볼 수 없는 기사님이였습니다.",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              },
+              {
+                "q": "추천의향",
+                "score": 0,
+                "text": "인터넷 설치 기사 및 딘말기 설치 기사님들 모두 물건만 주고 가는 느낌이 너무 많이 들었습니다.",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:18",
             "store": "림아이브로우",
@@ -279204,7 +279242,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-26 15:45",
+    "at": "2026-09-26 16:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
