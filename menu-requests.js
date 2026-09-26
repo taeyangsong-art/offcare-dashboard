@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2501,
- "updatedAt": "2026-09-26 12:45",
+ "version": 2502,
+ "updatedAt": "2026-09-26 13:23",
  "days": 30,
  "items": [
   {
@@ -56111,50 +56111,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787805981057259"
-  },
-  {
-   "ts": "1787804565.880149",
-   "date": "2026-08-27",
-   "time": "13:22",
-   "store": "강창구찹쌀진순대 중계브라운스톤점",
-   "biz": "1673601335",
-   "pos": "",
-   "content": "메뉴 가격 수정 요청 드립니다!",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "식사류/안주류 볶음밥 2,000원 > 3,000원 변경 요청"
-   ],
-   "rc": 2,
-   "lr": "1787804573.669059",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787804565880149"
-  },
-  {
-   "ts": "1787804396.870349",
-   "date": "2026-08-27",
-   "time": "13:19",
-   "store": "바로종합학원",
-   "biz": "5099130538",
-   "pos": "토스포스",
-   "content": "초등영어 17만\n중등영어 25만\n고등영어 25만\n초등영어회화 25만\n미래엔수학 17만",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787804402.404439",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787804396870349"
   }
  ],
  "ocr": {
