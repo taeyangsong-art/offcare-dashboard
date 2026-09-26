@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13344,
+  "version": 13345,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211739,7 +211739,7 @@ window.SLACK_DATA = {
     "2026-09-26": {
       "counts": {
         "as": {
-          "미지정": 3,
+          "미지정": 4,
           "심성현": 7
         },
         "menu": {
@@ -211748,6 +211748,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "15:15",
+          "store": "을지로연탄구이",
+          "biz": "8645001029",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "홀 프린터기 전원 안켜진다고합니다 아답터 점검해주시고 h/w문제면 퀵보내지마시고 택배처리해주세요",
+          "hw": "",
+          "intake": "online",
+          "note": "16시연락요청"
+        },
         {
           "time": "15:05",
           "store": "노이케이크",
@@ -211871,26 +211882,27 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 5,
+        "online": 6,
         "offline": 6,
         "unknown": 0
       },
-      "updatedAt": "15:15",
+      "updatedAt": "15:18",
       "voc": {
-        "responses": 4,
+        "responses": 5,
         "install": {
           "count": 0,
           "low": 0
         },
         "nps": {
-          "count": 4,
-          "low": 0
+          "count": 5,
+          "low": 1
         },
         "high": {
           "install": 0,
           "nps": 1
         },
         "npsDist": {
+          "5": 1,
           "7": 2,
           "8": 1,
           "10": 1
@@ -211898,6 +211910,10 @@ window.SLACK_DATA = {
         "installDist": {},
         "byIndustry": {},
         "byTenure": {
+          "1개월": {
+            "total": 2,
+            "low": 1
+          },
           "12개월": {
             "total": 2,
             "low": 0
@@ -211905,13 +211921,13 @@ window.SLACK_DATA = {
           "6개월": {
             "total": 1,
             "low": 0
-          },
-          "1개월": {
-            "total": 1,
-            "low": 0
           }
         },
         "byVan": {
+          "KPN": {
+            "total": 1,
+            "low": 1
+          },
           "KIS": {
             "total": 2,
             "low": 0
@@ -211925,8 +211941,33 @@ window.SLACK_DATA = {
             "low": 0
           }
         },
-        "reasonCounts": {},
-        "alerts": [],
+        "reasonCounts": {
+          "필요한 기능이 없거나 몰라서 불편": 1
+        },
+        "alerts": [
+          {
+            "time": "15:18",
+            "store": "림아이브로우",
+            "storeId": "497480",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "토스포인트 고객 할인을 해주면 사장에게 입금 되는 개념이 아니라, 어디로 가는지 모르겠습니다. 저한테 입금이 안된다고 하더라구요?",
+                "cat": "필요한 기능이 없거나 몰라서 불편"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          }
+        ],
         "praises": []
       }
     }
@@ -211948,10 +211989,6 @@ window.SLACK_DATA = {
       "1790348416.269139": {
         "post": "1790348416.269139",
         "lastSeen": 1790367326.242
-      },
-      "1790403300.221439": {
-        "post": "1790403300.221439",
-        "lastSeen": 1790403318.679
       }
     },
     "days": {
@@ -279068,8 +279105,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-26": {
-        "cnt": 9,
-        "sumMin": 44.73806214729945,
+        "cnt": 10,
+        "sumMin": 47.027404828866324,
         "over": 0,
         "items": [
           {
@@ -279152,13 +279189,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 4.1
+          },
+          {
+            "hm": "15:15",
+            "min": 2.3,
+            "store": "을지로연탄구이",
+            "biz": "8645001029",
+            "who": "",
+            "cat": "as",
+            "dmin": 2.3
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-26 15:15",
+    "at": "2026-09-26 15:19",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
