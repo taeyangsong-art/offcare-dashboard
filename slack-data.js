@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13317,
+  "version": 13318,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211739,7 +211739,7 @@ window.SLACK_DATA = {
     "2026-09-26": {
       "counts": {
         "as": {
-          "심성현": 3
+          "심성현": 4
         },
         "menu": {
           "심성현": 1
@@ -211747,6 +211747,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:33",
+          "store": "라팽크렘",
+          "biz": "3162202389",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "포프+유프(노트북) / 온보딩 및 배달앱 연동 부탁드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "토스 포스 업데이트 배달 3사 연동, 출력 테스트 완료"
+        },
         {
           "time": "11:25",
           "store": "려원풍천민물장어",
@@ -211793,7 +211804,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 1,
+        "online": 2,
         "offline": 3,
         "unknown": 0
       },
@@ -211830,16 +211841,12 @@ window.SLACK_DATA = {
         "post": "1790348416.269139",
         "lastSeen": 1790367326.242
       },
-      "1790390001.653319": {
-        "post": "1790390001.653319",
-        "lastSeen": 1790390782.924,
-        "r": 1,
-        "day": "2026-09-26",
-        "idx": 3
-      },
       "1790390730.660399": {
         "post": "1790390730.660399",
-        "lastSeen": 1790390782.924
+        "lastSeen": 1790390899.797,
+        "r": 1,
+        "day": "2026-09-26",
+        "idx": 4
       }
     },
     "days": {
@@ -278956,8 +278963,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-26": {
-        "cnt": 4,
-        "sumMin": 15.448936235904695,
+        "cnt": 5,
+        "sumMin": 17.293937917550405,
         "over": 0,
         "items": [
           {
@@ -278993,6 +279000,15 @@ window.SLACK_DATA = {
             "store": "라팽크렘",
             "biz": "3162202389",
             "who": "심성현",
+            "cat": "as",
+            "dmin": 14
+          },
+          {
+            "hm": "11:45",
+            "min": 1.8,
+            "store": "요일밥상",
+            "biz": "4750803304",
+            "who": "심성현",
             "cat": "as"
           }
         ]
@@ -279000,7 +279016,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-26 11:46",
+    "at": "2026-09-26 11:48",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
