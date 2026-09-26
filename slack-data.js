@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13374,
+  "version": 13375,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211739,7 +211739,7 @@ window.SLACK_DATA = {
     "2026-09-26": {
       "counts": {
         "as": {
-          "미지정": 8,
+          "미지정": 9,
           "심성현": 7
         },
         "onboarding": {
@@ -211751,6 +211751,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "20:15",
+          "store": "피자스쿨석계점",
+          "biz": "2170954150",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "캣단말기 사용 중, 용지가 출력되지 않고 겉도는 증상이 있다고 하여 점검 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "DK-9300 출력 고장으로 교체 방문일정 등록"
+        },
         {
           "time": "19:48",
           "store": "치피(chippi)",
@@ -211952,10 +211963,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 11,
-        "offline": 7,
+        "offline": 8,
         "unknown": 0
       },
-      "updatedAt": "20:15",
+      "updatedAt": "20:23",
       "voc": {
         "responses": 17,
         "install": {
@@ -212192,9 +212203,9 @@ window.SLACK_DATA = {
         "post": "1790348416.269139",
         "lastSeen": 1790367326.242
       },
-      "1790421342.021909": {
-        "post": "1790421342.021909",
-        "lastSeen": 1790421379.152
+      "1790421827.020179": {
+        "post": "1790421827.020179",
+        "lastSeen": 1790421955.371
       }
     },
     "days": {
@@ -279311,8 +279322,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-26": {
-        "cnt": 15,
-        "sumMin": 80.84350991249084,
+        "cnt": 16,
+        "sumMin": 86.2641697605451,
         "over": 0,
         "items": [
           {
@@ -279449,13 +279460,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 14.9
+          },
+          {
+            "hm": "20:15",
+            "min": 5.4,
+            "store": "피자스쿨석계점",
+            "biz": "2170954150",
+            "who": "",
+            "cat": "as",
+            "dmin": 5.4
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-26 20:16",
+    "at": "2026-09-26 20:26",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
