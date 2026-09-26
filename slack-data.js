@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13349,
+  "version": 13350,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211738,6 +211738,9 @@ window.SLACK_DATA = {
     },
     "2026-09-26": {
       "counts": {
+        "onboarding": {
+          "미지정": 1
+        },
         "as": {
           "미지정": 4,
           "심성현": 7
@@ -211748,6 +211751,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:08",
+          "store": "엘랑 플라워",
+          "biz": "1534701327",
+          "cat": "onboarding",
+          "emp": "미지정",
+          "req": "포프유(pc) 사용 중 / 프린터기에서 영수증 출력이 안된다고 하셔서 확인 부탁 드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": ""
+        },
         {
           "time": "15:15",
           "store": "을지로연탄구이",
@@ -211882,7 +211896,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 6,
+        "online": 7,
         "offline": 6,
         "unknown": 0
       },
@@ -212027,10 +212041,6 @@ window.SLACK_DATA = {
       "1790348416.269139": {
         "post": "1790348416.269139",
         "lastSeen": 1790367326.242
-      },
-      "1790406491.826259": {
-        "post": "1790406491.826259",
-        "lastSeen": 1790406558.005
       }
     },
     "days": {
@@ -279147,8 +279157,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-26": {
-        "cnt": 10,
-        "sumMin": 47.027404828866324,
+        "cnt": 11,
+        "sumMin": 51.186533848444626,
         "over": 0,
         "items": [
           {
@@ -279240,13 +279250,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 2.3
+          },
+          {
+            "hm": "16:08",
+            "min": 4.2,
+            "store": "엘랑 플라워",
+            "biz": "1534701327",
+            "who": "",
+            "cat": "onboarding",
+            "dmin": 4.2
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-26 16:09",
+    "at": "2026-09-26 16:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
