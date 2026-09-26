@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13367,
+  "version": 13368,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211739,7 +211739,7 @@ window.SLACK_DATA = {
     "2026-09-26": {
       "counts": {
         "as": {
-          "미지정": 6,
+          "미지정": 7,
           "심성현": 7
         },
         "onboarding": {
@@ -211751,6 +211751,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "19:18",
+          "store": "팔팔(88)오리",
+          "biz": "1511200960",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "포프(데스크탑) 사용 중, 포스 아이콘 실행이 되지 않는 문제가 있다고 하여 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "프로그램 재설치 후 정상작동 확인"
+        },
         {
           "time": "18:37",
           "store": "준이네 연남",
@@ -211918,39 +211929,44 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 8,
+        "online": 9,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "19:18",
+      "updatedAt": "19:24",
       "voc": {
-        "responses": 15,
+        "responses": 16,
         "install": {
-          "count": 1,
+          "count": 2,
           "low": 1
         },
         "nps": {
-          "count": 15,
+          "count": 16,
           "low": 4
         },
         "high": {
           "install": 0,
-          "nps": 6
+          "nps": 7
         },
         "npsDist": {
           "0": 1,
           "5": 3,
           "7": 4,
           "8": 1,
-          "10": 6
+          "10": 7
         },
         "installDist": {
-          "1": 1
+          "1": 1,
+          "3": 1
         },
         "byIndustry": {
-          "요식업": 1
+          "요식업": 2
         },
         "byTenure": {
+          "구매설치": {
+            "total": 2,
+            "low": 1
+          },
           "12개월": {
             "total": 5,
             "low": 1
@@ -211963,16 +211979,16 @@ window.SLACK_DATA = {
             "total": 1,
             "low": 0
           },
-          "구매설치": {
-            "total": 1,
-            "low": 1
-          },
           "1개월": {
             "total": 3,
             "low": 1
           }
         },
         "byVan": {
+          "KOCES": {
+            "total": 3,
+            "low": 1
+          },
           "KIS": {
             "total": 4,
             "low": 1
@@ -211987,10 +212003,6 @@ window.SLACK_DATA = {
           },
           "KPN": {
             "total": 4,
-            "low": 1
-          },
-          "KOCES": {
-            "total": 2,
             "low": 1
           },
           "SECTA9": {
@@ -212101,6 +212113,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "19:24",
+            "store": "선구23치킨",
+            "storeId": "675403",
+            "indBucket": "요식업",
+            "emp": "",
+            "install": 3,
+            "nps": 10,
+            "text": "설치가 쉽다고 하지만 저희는 솔직히  나이가 좀 있는지라  기사님께서  오셨어  해줘으면 하는 아쉬움ㅈ이  있네요 같은 조건이면  기기도  무료로  받을수있는곳을  추천할수밖에  없겠죠.  모든조건 다 감사합니다.",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "16:59",
             "store": "마산종말이",
             "storeId": "409023",
@@ -212136,11 +212160,7 @@ window.SLACK_DATA = {
       },
       "1790416800.214409": {
         "post": "1790416800.214409",
-        "lastSeen": 1790417961.437
-      },
-      "1790417910.442869": {
-        "post": "1790417910.442869",
-        "lastSeen": 1790417961.437
+        "lastSeen": 1790418702.105
       }
     },
     "days": {
@@ -279257,8 +279277,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-26": {
-        "cnt": 13,
-        "sumMin": 58.88292238314947,
+        "cnt": 14,
+        "sumMin": 65.90505789915721,
         "over": 0,
         "items": [
           {
@@ -279377,13 +279397,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 3.7
+          },
+          {
+            "hm": "19:18",
+            "min": 7,
+            "store": "팔팔(88)오리",
+            "biz": "1511200960",
+            "who": "",
+            "cat": "as",
+            "dmin": 7
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-26 19:19",
+    "at": "2026-09-26 19:32",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
