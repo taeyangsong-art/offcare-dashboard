@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13363,
+  "version": 13364,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211739,7 +211739,7 @@ window.SLACK_DATA = {
     "2026-09-26": {
       "counts": {
         "as": {
-          "미지정": 5,
+          "미지정": 6,
           "심성현": 7
         },
         "onboarding": {
@@ -211751,6 +211751,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "18:37",
+          "store": "준이네 연남",
+          "biz": "2390903520",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "포프(태블릿) 사용 중, 프린터 설정 후 용지 출력이 되지 않는다고 하여 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트 프린터 연동 완료"
+        },
         {
           "time": "16:53",
           "store": "시골마루",
@@ -211907,7 +211918,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 7,
+        "online": 8,
         "offline": 7,
         "unknown": 0
       },
@@ -212099,10 +212110,6 @@ window.SLACK_DATA = {
       "1790348416.269139": {
         "post": "1790348416.269139",
         "lastSeen": 1790367326.242
-      },
-      "1790415456.918349": {
-        "post": "1790415456.918349",
-        "lastSeen": 1790415502.954
       }
     },
     "days": {
@@ -279219,8 +279226,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-26": {
-        "cnt": 12,
-        "sumMin": 55.14165319999059,
+        "cnt": 13,
+        "sumMin": 58.88292238314947,
         "over": 0,
         "items": [
           {
@@ -279330,13 +279337,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 4
+          },
+          {
+            "hm": "18:37",
+            "min": 3.7,
+            "store": "준이네 연남",
+            "biz": "2390903520",
+            "who": "",
+            "cat": "as",
+            "dmin": 3.7
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-26 18:38",
+    "at": "2026-09-26 18:44",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
