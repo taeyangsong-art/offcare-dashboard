@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13376,
+  "version": 13377,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211739,7 +211739,7 @@ window.SLACK_DATA = {
     "2026-09-26": {
       "counts": {
         "as": {
-          "미지정": 9,
+          "미지정": 10,
           "심성현": 7
         },
         "onboarding": {
@@ -211751,6 +211751,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "20:23",
+          "store": "주식회사 더코르크",
+          "biz": "7918701260",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "터프 사용 중, 포터프(아이패드) 재온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "프론트 케이블 제거 후 아이패드 연동 완료"
+        },
         {
           "time": "20:15",
           "store": "피자스쿨석계점",
@@ -211962,7 +211973,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 11,
+        "online": 12,
         "offline": 8,
         "unknown": 0
       },
@@ -212202,10 +212213,6 @@ window.SLACK_DATA = {
       "1790348416.269139": {
         "post": "1790348416.269139",
         "lastSeen": 1790367326.242
-      },
-      "1790421827.020179": {
-        "post": "1790421827.020179",
-        "lastSeen": 1790422234.006
       }
     },
     "days": {
@@ -279322,8 +279329,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-26": {
-        "cnt": 16,
-        "sumMin": 86.2641697605451,
+        "cnt": 17,
+        "sumMin": 94.88550011316936,
         "over": 0,
         "items": [
           {
@@ -279469,13 +279476,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 5.4
+          },
+          {
+            "hm": "20:23",
+            "min": 8.6,
+            "store": "주식회사 더코르크",
+            "biz": "7918701260",
+            "who": "",
+            "cat": "as",
+            "dmin": 8.6
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-26 20:30",
+    "at": "2026-09-26 20:34",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
