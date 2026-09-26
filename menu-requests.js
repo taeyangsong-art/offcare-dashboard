@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2493,
- "updatedAt": "2026-09-26 07:01",
+ "version": 2494,
+ "updatedAt": "2026-09-26 09:30",
  "days": 30,
  "items": [
   {
@@ -57222,29 +57222,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787794867761159"
-  },
-  {
-   "ts": "1787790393.515249",
-   "date": "2026-08-27",
-   "time": "09:26",
-   "store": "케이핀초반",
-   "biz": "2660303234",
-   "pos": "기타",
-   "content": "주류 카테고리에 '맥주소 3500원' 추가부탁드립니다",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "완료"
-   ],
-   "rc": 2,
-   "lr": "1787790485.854829",
-   "rfx": 3,
-   "status": "done",
-   "handler": "김규빈",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787790393515249"
   }
  ],
  "ocr": {
