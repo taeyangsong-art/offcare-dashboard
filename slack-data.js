@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13314,
+  "version": 13315,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211739,7 +211739,7 @@ window.SLACK_DATA = {
     "2026-09-26": {
       "counts": {
         "as": {
-          "심성현": 2
+          "심성현": 3
         },
         "menu": {
           "심성현": 1
@@ -211747,6 +211747,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:25",
+          "store": "려원풍천민물장어",
+          "biz": "5541502547",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "주방빌지가 카운터에서나온다고 하시어 점검 요청 드립니다. (유플포스)",
+          "hw": "",
+          "intake": "offline",
+          "note": "01080311532 / 스파로스 TS100E 연결 끊김 증상 프린터 재시작, LAN 재연결 후 정상 출력"
+        },
         {
           "time": "11:13",
           "store": "푸다훠궈",
@@ -211783,7 +211794,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 1,
-        "offline": 2,
+        "offline": 3,
         "unknown": 0
       },
       "updatedAt": "11:33"
@@ -211819,16 +211830,12 @@ window.SLACK_DATA = {
         "post": "1790348416.269139",
         "lastSeen": 1790367326.242
       },
-      "1790389548.400629": {
-        "post": "1790389548.400629",
-        "lastSeen": 1790390063.202,
-        "r": 1,
-        "day": "2026-09-26",
-        "idx": 2
-      },
       "1790390001.653319": {
         "post": "1790390001.653319",
-        "lastSeen": 1790390063.202
+        "lastSeen": 1790390417.489,
+        "r": 1,
+        "day": "2026-09-26",
+        "idx": 3
       }
     },
     "days": {
@@ -278945,8 +278952,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-26": {
-        "cnt": 3,
-        "sumMin": 11.470733217398326,
+        "cnt": 4,
+        "sumMin": 15.448936235904695,
         "over": 0,
         "items": [
           {
@@ -278973,6 +278980,15 @@ window.SLACK_DATA = {
             "store": "려원풍천민물장어",
             "biz": "5541502547",
             "who": "심성현",
+            "cat": "as",
+            "dmin": 11.5
+          },
+          {
+            "hm": "11:33",
+            "min": 4,
+            "store": "라팽크렘",
+            "biz": "3162202389",
+            "who": "심성현",
             "cat": "as"
           }
         ]
@@ -278980,7 +278996,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-26 11:34",
+    "at": "2026-09-26 11:40",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
