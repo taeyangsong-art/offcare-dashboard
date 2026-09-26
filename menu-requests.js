@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2503,
- "updatedAt": "2026-09-26 13:48",
+ "version": 2504,
+ "updatedAt": "2026-09-26 14:01",
  "days": 30,
  "items": [
   {
@@ -56053,31 +56053,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787807882266179"
-  },
-  {
-   "ts": "1787806411.278569",
-   "date": "2026-08-27",
-   "time": "13:53",
-   "store": "국밥백서 세종아름점",
-   "biz": "7122501992",
-   "pos": "기타",
-   "content": "",
-   "special": "놓은지 두달이 넘었는데 지난번 사진첨부건 신청으로",
-   "drive": [
-    "https://drive.google.com/open?id=1iyqv0T15GVh-LqFQqhfTgqWWQwpPwHL2"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "금액수정방법, 배경화면 수정방법 가이드 발송"
-   ],
-   "rc": 2,
-   "lr": "1787808682.779899",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787806411278569"
   }
  ],
  "ocr": {
