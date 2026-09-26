@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2494,
- "updatedAt": "2026-09-26 09:30",
+ "version": 2495,
+ "updatedAt": "2026-09-26 10:45",
  "days": 30,
  "items": [
   {
@@ -57184,44 +57184,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787795152446209"
-  },
-  {
-   "ts": "1787794867.761159",
-   "date": "2026-08-27",
-   "time": "10:41",
-   "store": "씨씨디(CCD)마산경남대점",
-   "biz": "5062794207",
-   "pos": "",
-   "content": "• <mailto:···|···> / *25일 수요일* 해당 메일로 메뉴 보냈으며, 빠른 등록 요청 주셨어요.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "image.png",
-     "fid": "F0BT0C7EQUS",
-     "from": "댓글",
-     "kind": "other",
-     "menu": [],
-     "path": "menu-files/1787794867_761159-0.png"
-    },
-    {
-     "name": "image.png",
-     "fid": "F0BT43ADQ0L",
-     "from": "댓글",
-     "kind": "other",
-     "menu": [],
-     "path": "menu-files/1787794867_761159-1.png"
-    }
-   ],
-   "datt": [],
-   "replies": [],
-   "rc": 9,
-   "lr": "1787797225.820179",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787794867761159"
   }
  ],
  "ocr": {
