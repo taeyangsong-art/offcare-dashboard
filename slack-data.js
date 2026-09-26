@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13388,
+  "version": 13389,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211739,7 +211739,7 @@ window.SLACK_DATA = {
     "2026-09-26": {
       "counts": {
         "as": {
-          "미지정": 12,
+          "미지정": 13,
           "심성현": 7
         },
         "onboarding": {
@@ -211751,6 +211751,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "22:00",
+          "store": "Color apgu",
+          "biz": "1448703351",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "포터프 사용 중, 결제 시도 시 생산일련번호 불일치 오류로 인한 점검 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "01031714280 / 프론트 재온보딩 후 정상작동 확인"
+        },
         {
           "time": "20:49",
           "store": "평양순대국",
@@ -211995,7 +212006,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 12,
+        "online": 13,
         "offline": 10,
         "unknown": 0
       },
@@ -212235,10 +212246,6 @@ window.SLACK_DATA = {
       "1790348416.269139": {
         "post": "1790348416.269139",
         "lastSeen": 1790367326.242
-      },
-      "1790427600.769329": {
-        "post": "1790427600.769329",
-        "lastSeen": 1790428526.673
       }
     },
     "days": {
@@ -279355,8 +279362,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-26": {
-        "cnt": 19,
-        "sumMin": 106.52645214398703,
+        "cnt": 20,
+        "sumMin": 123.91977999210359,
         "over": 0,
         "items": [
           {
@@ -279529,13 +279536,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 2.9
+          },
+          {
+            "hm": "22:00",
+            "min": 17.4,
+            "store": "Color apgu",
+            "biz": "1448703351",
+            "who": "",
+            "cat": "as",
+            "dmin": 17.4
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-26 22:15",
+    "at": "2026-09-26 22:19",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
