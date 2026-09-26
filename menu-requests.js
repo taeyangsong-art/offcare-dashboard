@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2514,
- "updatedAt": "2026-09-26 17:15",
+ "version": 2515,
+ "updatedAt": "2026-09-26 17:30",
  "days": 30,
  "items": [
   {
@@ -53801,29 +53801,6 @@ window.MENU_REQUESTS = {
    "status": "wait",
    "handler": null,
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787819463472159"
-  },
-  {
-   "ts": "1787819263.406319",
-   "date": "2026-08-27",
-   "time": "17:27",
-   "store": "일상 가좌점",
-   "biz": "2977800578",
-   "pos": "",
-   "content": "메뉴등록 요청드립니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "일상 신촌점 메뉴 > 가좌점 메뉴 등록 요청하셨었는데\n메뉴 사진이 옮겨져있지않아 사진등록 부탁드리겠습니다!\n\n https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787550023237509"
-   ],
-   "rc": 5,
-   "lr": "1787825947.555849",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787819263406319"
   }
  ],
  "ocr": {
