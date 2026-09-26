@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2507,
- "updatedAt": "2026-09-26 15:15",
+ "version": 2508,
+ "updatedAt": "2026-09-26 15:30",
  "days": 30,
  "items": [
   {
@@ -55207,48 +55207,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787813303399339"
-  },
-  {
-   "ts": "1787812225.449849",
-   "date": "2026-08-27",
-   "time": "15:30",
-   "store": "뚜레쥬르 킨텍스2전시장점",
-   "biz": "1283678896",
-   "pos": "토스포스",
-   "content": "(디저트)추가\n쇼콜라갸또 7000\n(일반빵)변경\n햄야채모닝롤4800 -> 5400",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787812228.286329",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787812225449849"
-  },
-  {
-   "ts": "1787812151.560929",
-   "date": "2026-08-27",
-   "time": "15:29",
-   "store": "뚜레쥬르 킨텍스1전시장",
-   "biz": "1283674814",
-   "pos": "토스포스",
-   "content": "(디저트)추가\n쇼콜라갸또  7000\n(일반빵)변경\n햄야채모닝롤4800 -> 5400",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787812155.659679",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787812151560929"
   }
  ],
  "ocr": {
