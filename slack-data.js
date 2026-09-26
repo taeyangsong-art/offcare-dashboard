@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13379,
+  "version": 13380,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211739,7 +211739,7 @@ window.SLACK_DATA = {
     "2026-09-26": {
       "counts": {
         "as": {
-          "미지정": 10,
+          "미지정": 11,
           "심성현": 7
         },
         "onboarding": {
@@ -211751,6 +211751,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "20:39",
+          "store": "원조소금구이",
+          "biz": "4160328655",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "오케이포스 사용) 사원번호 및 비밀번호 불일치 오류 발생하고 있다고 하여 확인 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "비밀번호 안내 후 로그인 완료"
+        },
         {
           "time": "20:23",
           "store": "주식회사 더코르크",
@@ -211974,10 +211985,10 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 12,
-        "offline": 8,
+        "offline": 9,
         "unknown": 0
       },
-      "updatedAt": "20:39",
+      "updatedAt": "20:49",
       "voc": {
         "responses": 17,
         "install": {
@@ -212214,9 +212225,9 @@ window.SLACK_DATA = {
         "post": "1790348416.269139",
         "lastSeen": 1790367326.242
       },
-      "1790422746.689479": {
-        "post": "1790422746.689479",
-        "lastSeen": 1790423128.147
+      "1790423396.325899": {
+        "post": "1790423396.325899",
+        "lastSeen": 1790423417.999
       }
     },
     "days": {
@@ -279333,8 +279344,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-26": {
-        "cnt": 17,
-        "sumMin": 94.88550011316936,
+        "cnt": 18,
+        "sumMin": 103.65855879386267,
         "over": 0,
         "items": [
           {
@@ -279489,13 +279500,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 8.6
+          },
+          {
+            "hm": "20:39",
+            "min": 8.8,
+            "store": "원조소금구이",
+            "biz": "4160328655",
+            "who": "",
+            "cat": "as",
+            "dmin": 8.8
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-26 20:45",
+    "at": "2026-09-26 20:50",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
