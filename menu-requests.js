@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2502,
- "updatedAt": "2026-09-26 13:23",
+ "version": 2503,
+ "updatedAt": "2026-09-26 13:48",
  "days": 30,
  "items": [
   {
@@ -56078,39 +56078,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787806411278569"
-  },
-  {
-   "ts": "1787805981.057259",
-   "date": "2026-08-27",
-   "time": "13:46",
-   "store": "단군한우",
-   "biz": "2919901706",
-   "pos": "",
-   "content": "바코드 등록 요청 드립니다. ( 운영 가맹점으로 최대한 빠른 등록 요청 주셨습니다.)",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "f_1c6adf80651c.xlsx",
-     "fid": "F0BT4UH10R2",
-     "from": "댓글",
-     "path": "menu-files/1787805981_057259-0.xlsx",
-     "nj": 1
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "단군한우 확인 완료",
-    "안녕하세요, 해당 가맹점 빠른 설치 진행 요청 주시어 한번 더 태그드립니다 :woman-bowing::skin-tone-4:",
-    "+ 저울에서 출력한 바코드 사용 예정입니다!"
-   ],
-   "rc": 5,
-   "lr": "1787808438.127519",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787805981057259"
   }
  ],
  "ocr": {
