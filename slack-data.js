@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13308,
+  "version": 13309,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211739,11 +211739,22 @@ window.SLACK_DATA = {
     "2026-09-26": {
       "counts": {
         "as": {
-          "심성현": 1
+          "심성현": 2
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:08",
+          "store": "형과아우누룽지삼계탕&amp;왕갈비탕 서산점",
+          "biz": "2730403199",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "주방 주문서 미출력 된다고 하셔서 확인 부탁 드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "어댑터 빠짐 재연결 후 정상"
+        },
         {
           "time": "09:42",
           "store": "그리드 베이커리",
@@ -211758,7 +211769,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 0,
-        "offline": 1,
+        "offline": 2,
         "unknown": 0
       },
       "updatedAt": "11:13"
@@ -211794,16 +211805,9 @@ window.SLACK_DATA = {
         "post": "1790348416.269139",
         "lastSeen": 1790367326.242
       },
-      "1790388539.171799": {
-        "post": "1790388539.171799",
-        "lastSeen": 1790388927.378,
-        "r": 1,
-        "day": "2026-09-26",
-        "idx": 0
-      },
       "1790388829.543579": {
         "post": "1790388829.543579",
-        "lastSeen": 1790388927.378
+        "lastSeen": 1790389102.01
       }
     },
     "days": {
@@ -278930,14 +278934,15 @@ window.SLACK_DATA = {
             "store": "형과아우누룽지삼계탕&amp;왕갈비탕 서산점",
             "biz": "2730403199",
             "who": "심성현",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 7.9
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-26 11:15",
+    "at": "2026-09-26 11:18",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
