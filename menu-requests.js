@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2517,
- "updatedAt": "2026-09-26 18:00",
+ "version": 2518,
+ "updatedAt": "2026-09-26 18:30",
  "days": 30,
  "items": [
   {
@@ -53213,29 +53213,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787836337152459"
-  },
-  {
-   "ts": "1787822258.024469",
-   "date": "2026-08-27",
-   "time": "18:17",
-   "store": "큐브릭스카페",
-   "biz": "5850803431",
-   "pos": "",
-   "content": "메뉴 복사 요청",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "··· 삼포돌판 사업장 메뉴 그대로 복사 부탁드립니다."
-   ],
-   "rc": 4,
-   "lr": "1787826196.473889",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787822258024469"
   }
  ],
  "ocr": {
