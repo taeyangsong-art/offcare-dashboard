@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13371,
+  "version": 13372,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211739,7 +211739,7 @@ window.SLACK_DATA = {
     "2026-09-26": {
       "counts": {
         "as": {
-          "미지정": 7,
+          "미지정": 8,
           "심성현": 7
         },
         "onboarding": {
@@ -211751,6 +211751,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "19:48",
+          "store": "치피(chippi)",
+          "biz": "8843101906",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "포프(포스기) 사용 중, 무프W 연결끊김으로 인한 재온보딩 지원 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "토스포스 재온보딩 하셔서 프린터 설정이 없는 상태. 프프 연동 및 무선프린터 설정 후 정상출력 확인"
+        },
         {
           "time": "19:18",
           "store": "팔팔(88)오리",
@@ -211940,7 +211951,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 10,
+        "online": 11,
         "offline": 7,
         "unknown": 0
       },
@@ -212180,10 +212191,6 @@ window.SLACK_DATA = {
       "1790348416.269139": {
         "post": "1790348416.269139",
         "lastSeen": 1790367326.242
-      },
-      "1790419684.405879": {
-        "post": "1790419684.405879",
-        "lastSeen": 1790420441.416
       }
     },
     "days": {
@@ -279300,8 +279307,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-26": {
-        "cnt": 14,
-        "sumMin": 65.90505789915721,
+        "cnt": 15,
+        "sumMin": 80.84350991249084,
         "over": 0,
         "items": [
           {
@@ -279429,13 +279436,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 7
+          },
+          {
+            "hm": "19:48",
+            "min": 14.9,
+            "store": "치피(chippi)",
+            "biz": "8843101906",
+            "who": "",
+            "cat": "as",
+            "dmin": 14.9
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-26 20:01",
+    "at": "2026-09-26 20:05",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
