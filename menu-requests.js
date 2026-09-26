@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2519,
- "updatedAt": "2026-09-26 22:15",
+ "version": 2520,
+ "updatedAt": "2026-09-26 22:30",
  "days": 30,
  "items": [
   {
@@ -53159,37 +53159,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787878240203639"
-  },
-  {
-   "ts": "1787837373.370479",
-   "date": "2026-08-27",
-   "time": "22:29",
-   "store": "로컬페어링",
-   "biz": "5473302107",
-   "pos": "토스포스",
-   "content": "상품 등록 요청\n카테고리는 엑셀 파일에 기재 완료.",
-   "special": "카테고리별 품목 및 수량, 금액 그대로 입력 바랍니다.",
-   "drive": [],
-   "files": 0,
-   "att": [
-    {
-     "name": "5473302107_2026-08-27T13-29-28_1_로컬페어링토스",
-     "fid": "F0BT8EVB6SY",
-     "from": "댓글",
-     "path": "menu-files/1787837373_370479-0.zip",
-     "nj": 1
-    }
-   ],
-   "datt": [],
-   "replies": [
-    "메뉴등록 완료 및 솔라피 발송완료"
-   ],
-   "rc": 3,
-   "lr": "1787838659.108189",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787837373370479"
   }
  ],
  "ocr": {
