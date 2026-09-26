@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13380,
+  "version": 13381,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211739,7 +211739,7 @@ window.SLACK_DATA = {
     "2026-09-26": {
       "counts": {
         "as": {
-          "미지정": 11,
+          "미지정": 12,
           "심성현": 7
         },
         "onboarding": {
@@ -211751,6 +211751,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "20:49",
+          "store": "평양순대국",
+          "biz": "2094900590",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "오케이포스 사용) 결제 진행 시 통신장애 오류 발생으로 인한 점검 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "프론트 재부팅 후 정상작동 확인"
+        },
         {
           "time": "20:39",
           "store": "원조소금구이",
@@ -211985,7 +211996,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 12,
-        "offline": 9,
+        "offline": 10,
         "unknown": 0
       },
       "updatedAt": "20:49",
@@ -212224,10 +212235,6 @@ window.SLACK_DATA = {
       "1790348416.269139": {
         "post": "1790348416.269139",
         "lastSeen": 1790367326.242
-      },
-      "1790423396.325899": {
-        "post": "1790423396.325899",
-        "lastSeen": 1790423417.999
       }
     },
     "days": {
@@ -279344,8 +279351,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-26": {
-        "cnt": 18,
-        "sumMin": 103.65855879386267,
+        "cnt": 19,
+        "sumMin": 106.52645214398703,
         "over": 0,
         "items": [
           {
@@ -279509,13 +279516,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "as",
             "dmin": 8.8
+          },
+          {
+            "hm": "20:49",
+            "min": 2.9,
+            "store": "평양순대국",
+            "biz": "2094900590",
+            "who": "",
+            "cat": "as",
+            "dmin": 2.9
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-26 20:50",
+    "at": "2026-09-26 20:55",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
