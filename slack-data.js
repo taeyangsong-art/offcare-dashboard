@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13365,
+  "version": 13366,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211922,16 +211922,16 @@ window.SLACK_DATA = {
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "19:00",
+      "updatedAt": "19:10",
       "voc": {
-        "responses": 14,
+        "responses": 15,
         "install": {
           "count": 1,
           "low": 1
         },
         "nps": {
-          "count": 14,
-          "low": 3
+          "count": 15,
+          "low": 4
         },
         "high": {
           "install": 0,
@@ -211939,7 +211939,7 @@ window.SLACK_DATA = {
         },
         "npsDist": {
           "0": 1,
-          "5": 2,
+          "5": 3,
           "7": 4,
           "8": 1,
           "10": 6
@@ -211951,13 +211951,13 @@ window.SLACK_DATA = {
           "요식업": 1
         },
         "byTenure": {
-          "6개월": {
+          "12개월": {
             "total": 5,
             "low": 1
           },
-          "12개월": {
-            "total": 4,
-            "low": 0
+          "6개월": {
+            "total": 5,
+            "low": 1
           },
           "3개월": {
             "total": 1,
@@ -211973,13 +211973,13 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "KIS": {
+            "total": 4,
+            "low": 1
+          },
           "NICE": {
             "total": 2,
             "low": 1
-          },
-          "KIS": {
-            "total": 3,
-            "low": 0
           },
           "KSNET": {
             "total": 2,
@@ -211999,10 +211999,33 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
+          "사용중 오류가 자주 발생함": 1,
           "단말기 설치나 초기 과정이 어려움": 3,
           "필요한 기능이 없거나 몰라서 불편": 1
         },
         "alerts": [
+          {
+            "time": "19:10",
+            "store": "아인카페",
+            "storeId": "262964",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "결제 오류만 안뜨면 10점인데 1년동언 3번 오류나서",
+                "cat": "사용중 오류가 자주 발생함"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "16:59",
             "store": "라이즈온음악2관학원",
@@ -212113,7 +212136,7 @@ window.SLACK_DATA = {
       },
       "1790416800.214409": {
         "post": "1790416800.214409",
-        "lastSeen": 1790416818.57
+        "lastSeen": 1790417725.424
       }
     },
     "days": {
@@ -279356,7 +279379,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-26 19:00",
+    "at": "2026-09-26 19:15",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
