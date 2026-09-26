@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13299,
+  "version": 13300,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211737,12 +211737,28 @@ window.SLACK_DATA = {
       }
     },
     "2026-09-26": {
-      "counts": {},
+      "counts": {
+        "as": {
+          "심성현": 1
+        }
+      },
       "pending": [],
-      "done": [],
+      "done": [
+        {
+          "time": "09:42",
+          "store": "그리드 베이커리",
+          "biz": "7010601249",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "키오스크 백화 현상이  있다고 하셔서 원격 점검 부탁드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "재설치 및 테스트 완료"
+        }
+      ],
       "intake": {
         "online": 0,
-        "offline": 0,
+        "offline": 1,
         "unknown": 0
       },
       "updatedAt": "09:42"
@@ -278895,7 +278911,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-26 09:45",
+    "at": "2026-09-26 09:56",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
