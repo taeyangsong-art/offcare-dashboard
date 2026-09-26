@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13353,
+  "version": 13354,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211738,12 +211738,12 @@ window.SLACK_DATA = {
     },
     "2026-09-26": {
       "counts": {
+        "as": {
+          "미지정": 5,
+          "심성현": 7
+        },
         "onboarding": {
           "미지정": 1
-        },
-        "as": {
-          "미지정": 4,
-          "심성현": 7
         },
         "menu": {
           "심성현": 1
@@ -211751,6 +211751,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "16:53",
+          "store": "시골마루",
+          "biz": "1304668196",
+          "cat": "as",
+          "emp": "미지정",
+          "req": "오케이포스) 토스페이 금일 34,000원 결제 건 확인 필요 / 기타결제 항목을 못찾으시어 원격 지원 요청드립니다.",
+          "hw": "",
+          "intake": "offline",
+          "note": "OKPOS에서 간편결제 확인하는방법 안내 함"
+        },
         {
           "time": "16:08",
           "store": "엘랑 플라워",
@@ -211897,30 +211908,30 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 7,
-        "offline": 6,
+        "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "16:53",
+      "updatedAt": "16:59",
       "voc": {
-        "responses": 9,
+        "responses": 11,
         "install": {
           "count": 1,
           "low": 1
         },
         "nps": {
-          "count": 9,
-          "low": 2
+          "count": 11,
+          "low": 3
         },
         "high": {
           "install": 0,
-          "nps": 4
+          "nps": 5
         },
         "npsDist": {
           "0": 1,
-          "5": 1,
+          "5": 2,
           "7": 2,
           "8": 1,
-          "10": 4
+          "10": 5
         },
         "installDist": {
           "1": 1
@@ -211929,6 +211940,10 @@ window.SLACK_DATA = {
           "요식업": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 4,
+            "low": 1
+          },
           "12개월": {
             "total": 3,
             "low": 0
@@ -211940,13 +211955,17 @@ window.SLACK_DATA = {
           "1개월": {
             "total": 3,
             "low": 1
-          },
-          "6개월": {
-            "total": 2,
-            "low": 0
           }
         },
         "byVan": {
+          "KSNET": {
+            "total": 1,
+            "low": 0
+          },
+          "NICE": {
+            "total": 1,
+            "low": 1
+          },
           "KPN": {
             "total": 4,
             "low": 1
@@ -211965,10 +211984,32 @@ window.SLACK_DATA = {
           }
         },
         "reasonCounts": {
-          "단말기 설치나 초기 과정이 어려움": 2,
+          "단말기 설치나 초기 과정이 어려움": 3,
           "필요한 기능이 없거나 몰라서 불편": 1
         },
         "alerts": [
+          {
+            "time": "16:59",
+            "store": "라이즈온음악2관학원",
+            "storeId": "370674",
+            "industry": "",
+            "indBucket": "",
+            "install": null,
+            "nps": 5,
+            "reasons": [
+              {
+                "q": "추천의향",
+                "score": 5,
+                "text": "결제내역에 대해 메모나 표기를 할수없어서 불편하네요. 전표툴을 따로 설치해야하는 불편함과 비용추가가 그렇습니다~",
+                "cat": "단말기 설치나 초기 과정이 어려움"
+              }
+            ],
+            "emp": "",
+            "autoStatus": "",
+            "autoEmp": "",
+            "autoNote": "",
+            "doneDate": ""
+          },
           {
             "time": "15:53",
             "store": "이방인 혼술바 서울 강남역점",
@@ -212020,7 +212061,20 @@ window.SLACK_DATA = {
             "doneDate": ""
           }
         ],
-        "praises": []
+        "praises": [
+          {
+            "time": "16:59",
+            "store": "마산종말이",
+            "storeId": "409023",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 10,
+            "text": "직관적이고 사용하기 편함",
+            "byReaction": false,
+            "doneDate": ""
+          }
+        ]
       }
     }
   },
@@ -212041,10 +212095,6 @@ window.SLACK_DATA = {
       "1790348416.269139": {
         "post": "1790348416.269139",
         "lastSeen": 1790367326.242
-      },
-      "1790409181.254339": {
-        "post": "1790409181.254339",
-        "lastSeen": 1790409198.603
       }
     },
     "days": {
@@ -279161,8 +279211,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-26": {
-        "cnt": 11,
-        "sumMin": 51.186533848444626,
+        "cnt": 12,
+        "sumMin": 55.14165319999059,
         "over": 0,
         "items": [
           {
@@ -279263,13 +279313,22 @@ window.SLACK_DATA = {
             "who": "",
             "cat": "onboarding",
             "dmin": 4.2
+          },
+          {
+            "hm": "16:53",
+            "min": 4,
+            "store": "시골마루",
+            "biz": "1304668196",
+            "who": "",
+            "cat": "as",
+            "dmin": 4
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-26 16:53",
+    "at": "2026-09-26 17:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",

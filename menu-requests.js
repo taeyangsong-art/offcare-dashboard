@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2512,
- "updatedAt": "2026-09-26 16:45",
+ "version": 2513,
+ "updatedAt": "2026-09-26 17:00",
  "days": 30,
  "items": [
   {
@@ -54393,27 +54393,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "김규빈",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787818040405129"
-  },
-  {
-   "ts": "1787817319.685229",
-   "date": "2026-08-27",
-   "time": "16:55",
-   "store": "쏘주맥쭈",
-   "biz": "1921702310",
-   "pos": "오케이포스",
-   "content": "파스타/면 카테고리에\n'누들 크림짬뽕&마늘 바게트' 23,900원 추가해주세요",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787817336.201129",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787817319685229"
   }
  ],
  "ocr": {
