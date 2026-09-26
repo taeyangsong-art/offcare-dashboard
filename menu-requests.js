@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2518,
- "updatedAt": "2026-09-26 18:30",
+ "version": 2519,
+ "updatedAt": "2026-09-26 22:15",
  "days": 30,
  "items": [
   {
@@ -53190,29 +53190,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "최민석",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787837373370479"
-  },
-  {
-   "ts": "1787836337.152459",
-   "date": "2026-08-27",
-   "time": "22:12",
-   "store": "뮌헨",
-   "biz": "5660702429",
-   "pos": "기타",
-   "content": "생맥주5잔\n25000->27500",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "메뉴등록 완료 솔라피 발송완료"
-   ],
-   "rc": 2,
-   "lr": "1787837014.815129",
-   "rfx": 3,
-   "status": "done",
-   "handler": "최민석",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787836337152459"
   }
  ],
  "ocr": {
