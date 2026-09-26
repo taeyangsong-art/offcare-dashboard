@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13369,
+  "version": 13370,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211743,7 +211743,7 @@ window.SLACK_DATA = {
           "심성현": 7
         },
         "onboarding": {
-          "미지정": 1
+          "미지정": 2
         },
         "menu": {
           "심성현": 1
@@ -211761,6 +211761,17 @@ window.SLACK_DATA = {
           "hw": "",
           "intake": "online",
           "note": "프로그램 재설치 후 정상작동 확인"
+        },
+        {
+          "time": "19:00",
+          "store": "내잔 캠퍼스 망원점",
+          "biz": "",
+          "cat": "onboarding",
+          "emp": "미지정",
+          "req": "메뉴 복사 X, 프론트/유프 / 명변 다운로드 요청드립니다.",
+          "hw": "",
+          "intake": "online",
+          "note": "온보딩 완료"
         },
         {
           "time": "18:37",
@@ -211929,11 +211940,11 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 9,
+        "online": 10,
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "19:35",
+      "updatedAt": "19:48",
       "voc": {
         "responses": 17,
         "install": {
@@ -212170,9 +212181,9 @@ window.SLACK_DATA = {
         "post": "1790348416.269139",
         "lastSeen": 1790367326.242
       },
-      "1790416800.214409": {
-        "post": "1790416800.214409",
-        "lastSeen": 1790419528.338
+      "1790419684.405879": {
+        "post": "1790419684.405879",
+        "lastSeen": 1790419701.769
       }
     },
     "days": {
@@ -279424,7 +279435,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-26 19:45",
+    "at": "2026-09-26 19:48",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
