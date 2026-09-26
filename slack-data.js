@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13309,
+  "version": 13310,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211740,10 +211740,24 @@ window.SLACK_DATA = {
       "counts": {
         "as": {
           "심성현": 2
+        },
+        "menu": {
+          "심성현": 1
         }
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:13",
+          "store": "푸다훠궈",
+          "biz": "5221503142",
+          "cat": "menu",
+          "emp": "심성현",
+          "req": "",
+          "hw": "",
+          "intake": "online",
+          "note": "옵션 수정 및 오타 수정 완료"
+        },
         {
           "time": "11:08",
           "store": "형과아우누룽지삼계탕&amp;왕갈비탕 서산점",
@@ -211768,7 +211782,7 @@ window.SLACK_DATA = {
         }
       ],
       "intake": {
-        "online": 0,
+        "online": 1,
         "offline": 2,
         "unknown": 0
       },
@@ -211804,10 +211818,6 @@ window.SLACK_DATA = {
       "1790348416.269139": {
         "post": "1790348416.269139",
         "lastSeen": 1790367326.242
-      },
-      "1790388829.543579": {
-        "post": "1790388829.543579",
-        "lastSeen": 1790389102.01
       }
     },
     "days": {
@@ -278924,8 +278934,8 @@ window.SLACK_DATA = {
         ]
       },
       "2026-09-26": {
-        "cnt": 1,
-        "sumMin": 2.8279200196266174,
+        "cnt": 2,
+        "sumMin": 8.835777032375336,
         "over": 0,
         "items": [
           {
@@ -278936,13 +278946,22 @@ window.SLACK_DATA = {
             "who": "심성현",
             "cat": "as",
             "dmin": 7.9
+          },
+          {
+            "hm": "11:13",
+            "min": 6,
+            "store": "푸다훠궈",
+            "biz": "5221503142",
+            "who": "심성현",
+            "cat": "menu",
+            "dmin": 6
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-26 11:18",
+    "at": "2026-09-26 11:21",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
