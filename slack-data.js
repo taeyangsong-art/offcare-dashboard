@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13364,
+  "version": 13365,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211922,15 +211922,15 @@ window.SLACK_DATA = {
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "18:37",
+      "updatedAt": "19:00",
       "voc": {
-        "responses": 13,
+        "responses": 14,
         "install": {
           "count": 1,
           "low": 1
         },
         "nps": {
-          "count": 13,
+          "count": 14,
           "low": 3
         },
         "high": {
@@ -211940,7 +211940,7 @@ window.SLACK_DATA = {
         "npsDist": {
           "0": 1,
           "5": 2,
-          "7": 3,
+          "7": 4,
           "8": 1,
           "10": 6
         },
@@ -211951,6 +211951,10 @@ window.SLACK_DATA = {
           "요식업": 1
         },
         "byTenure": {
+          "6개월": {
+            "total": 5,
+            "low": 1
+          },
           "12개월": {
             "total": 4,
             "low": 0
@@ -211958,10 +211962,6 @@ window.SLACK_DATA = {
           "3개월": {
             "total": 1,
             "low": 0
-          },
-          "6개월": {
-            "total": 4,
-            "low": 1
           },
           "구매설치": {
             "total": 1,
@@ -211973,6 +211973,10 @@ window.SLACK_DATA = {
           }
         },
         "byVan": {
+          "NICE": {
+            "total": 2,
+            "low": 1
+          },
           "KIS": {
             "total": 3,
             "low": 0
@@ -211980,10 +211984,6 @@ window.SLACK_DATA = {
           "KSNET": {
             "total": 2,
             "low": 0
-          },
-          "NICE": {
-            "total": 1,
-            "low": 1
           },
           "KPN": {
             "total": 4,
@@ -212110,6 +212110,10 @@ window.SLACK_DATA = {
       "1790348416.269139": {
         "post": "1790348416.269139",
         "lastSeen": 1790367326.242
+      },
+      "1790416800.214409": {
+        "post": "1790416800.214409",
+        "lastSeen": 1790416818.57
       }
     },
     "days": {
@@ -279352,7 +279356,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-26 18:44",
+    "at": "2026-09-26 19:00",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
