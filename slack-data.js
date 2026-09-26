@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13318,
+  "version": 13319,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211739,7 +211739,7 @@ window.SLACK_DATA = {
     "2026-09-26": {
       "counts": {
         "as": {
-          "심성현": 4
+          "심성현": 5
         },
         "menu": {
           "심성현": 1
@@ -211747,6 +211747,17 @@ window.SLACK_DATA = {
       },
       "pending": [],
       "done": [
+        {
+          "time": "11:45",
+          "store": "요일밥상",
+          "biz": "4750803304",
+          "cat": "as",
+          "emp": "심성현",
+          "req": "갑자기 포스 키보드 자판이 안된다고 하시어 점검 요청 드립니다. (유플매장)",
+          "hw": "",
+          "intake": "offline",
+          "note": "원격 시 이상 없음 키보드 재장착 후 정상"
+        },
         {
           "time": "11:33",
           "store": "라팽크렘",
@@ -211805,7 +211816,7 @@ window.SLACK_DATA = {
       ],
       "intake": {
         "online": 2,
-        "offline": 3,
+        "offline": 4,
         "unknown": 0
       },
       "updatedAt": "11:45"
@@ -211840,13 +211851,6 @@ window.SLACK_DATA = {
       "1790348416.269139": {
         "post": "1790348416.269139",
         "lastSeen": 1790367326.242
-      },
-      "1790390730.660399": {
-        "post": "1790390730.660399",
-        "lastSeen": 1790390899.797,
-        "r": 1,
-        "day": "2026-09-26",
-        "idx": 4
       }
     },
     "days": {
@@ -279009,14 +279013,15 @@ window.SLACK_DATA = {
             "store": "요일밥상",
             "biz": "4750803304",
             "who": "심성현",
-            "cat": "as"
+            "cat": "as",
+            "dmin": 5.3
           }
         ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-26 11:48",
+    "at": "2026-09-26 11:53",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
