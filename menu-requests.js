@@ -3,10 +3,31 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2496,
- "updatedAt": "2026-09-26 11:00",
+ "version": 2497,
+ "updatedAt": "2026-09-26 11:14",
  "days": 30,
  "items": [
+  {
+   "ts": "1790388829.543579",
+   "date": "2026-09-26",
+   "time": "11:13",
+   "store": "푸다훠궈",
+   "biz": "5221503142",
+   "pos": "토스포스",
+   "content": "1. 평일 점심에\n마라홍탕 클릭 후 기본 , 덜맵게\n토마토탕 클릭 후 기본 , 진하게\n\n2. 주류에 오타 수정 (밑에 사진 첨부)",
+   "special": "",
+   "drive": [],
+   "files": 0,
+   "att": [],
+   "datt": [],
+   "replies": [],
+   "rc": 0,
+   "lr": "",
+   "rfx": 3,
+   "status": "wait",
+   "handler": null,
+   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1790388829543579"
+  },
   {
    "ts": "1790324366.779919",
    "date": "2026-09-25",

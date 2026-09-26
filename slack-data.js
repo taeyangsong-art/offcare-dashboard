@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13306,
+  "version": 13307,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211761,7 +211761,7 @@ window.SLACK_DATA = {
         "offline": 1,
         "unknown": 0
       },
-      "updatedAt": "11:08"
+      "updatedAt": "11:13"
     }
   },
   "resp": {
@@ -211796,7 +211796,14 @@ window.SLACK_DATA = {
       },
       "1790388539.171799": {
         "post": "1790388539.171799",
-        "lastSeen": 1790388558.593
+        "lastSeen": 1790388859.101,
+        "r": 1,
+        "day": "2026-09-26",
+        "idx": 0
+      },
+      "1790388829.543579": {
+        "post": "1790388829.543579",
+        "lastSeen": 1790388859.101
       }
     },
     "days": {
@@ -278911,11 +278918,26 @@ window.SLACK_DATA = {
             "dmin": 5.7
           }
         ]
+      },
+      "2026-09-26": {
+        "cnt": 1,
+        "sumMin": 2.8279200196266174,
+        "over": 0,
+        "items": [
+          {
+            "hm": "11:08",
+            "min": 2.8,
+            "store": "형과아우누룽지삼계탕&amp;왕갈비탕 서산점",
+            "biz": "2730403199",
+            "who": "심성현",
+            "cat": "as"
+          }
+        ]
       }
     }
   },
   "obScan": {
-    "at": "2026-09-26 11:09",
+    "at": "2026-09-26 11:14",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
