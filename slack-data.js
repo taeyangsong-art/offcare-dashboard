@@ -3,7 +3,7 @@
  * GitHub Actions(daily-slack-tally)가 매일 자동 갱신합니다.
  */
 window.SLACK_DATA = {
-  "version": 13368,
+  "version": 13369,
   "days": {
     "2026-07-08": {
       "updatedAt": "22:50",
@@ -211933,15 +211933,15 @@ window.SLACK_DATA = {
         "offline": 7,
         "unknown": 0
       },
-      "updatedAt": "19:24",
+      "updatedAt": "19:35",
       "voc": {
-        "responses": 16,
+        "responses": 17,
         "install": {
           "count": 2,
           "low": 1
         },
         "nps": {
-          "count": 16,
+          "count": 17,
           "low": 4
         },
         "high": {
@@ -211952,7 +211952,7 @@ window.SLACK_DATA = {
           "0": 1,
           "5": 3,
           "7": 4,
-          "8": 1,
+          "8": 2,
           "10": 7
         },
         "installDist": {
@@ -211963,6 +211963,10 @@ window.SLACK_DATA = {
           "요식업": 2
         },
         "byTenure": {
+          "3개월": {
+            "total": 2,
+            "low": 0
+          },
           "구매설치": {
             "total": 2,
             "low": 1
@@ -211975,22 +211979,18 @@ window.SLACK_DATA = {
             "total": 5,
             "low": 1
           },
-          "3개월": {
-            "total": 1,
-            "low": 0
-          },
           "1개월": {
             "total": 3,
             "low": 1
           }
         },
         "byVan": {
-          "KOCES": {
-            "total": 3,
+          "KIS": {
+            "total": 5,
             "low": 1
           },
-          "KIS": {
-            "total": 4,
+          "KOCES": {
+            "total": 3,
             "low": 1
           },
           "NICE": {
@@ -212113,6 +212113,18 @@ window.SLACK_DATA = {
         ],
         "praises": [
           {
+            "time": "19:35",
+            "store": "옥토",
+            "storeId": "503408",
+            "indBucket": "",
+            "emp": "",
+            "install": null,
+            "nps": 8,
+            "text": "사용하기 편하고 설명이 명쾌함",
+            "byReaction": false,
+            "doneDate": ""
+          },
+          {
             "time": "19:24",
             "store": "선구23치킨",
             "storeId": "675403",
@@ -212160,7 +212172,7 @@ window.SLACK_DATA = {
       },
       "1790416800.214409": {
         "post": "1790416800.214409",
-        "lastSeen": 1790418702.105
+        "lastSeen": 1790419528.338
       }
     },
     "days": {
@@ -279412,7 +279424,7 @@ window.SLACK_DATA = {
     }
   },
   "obScan": {
-    "at": "2026-09-26 19:32",
+    "at": "2026-09-26 19:45",
     "source": "sheet",
     "sheet": "1jtCL6xDxExBNiEej6kq25E1NwOOvqHQg5X9Pu20tT_c",
     "start": "2026-08-01",
