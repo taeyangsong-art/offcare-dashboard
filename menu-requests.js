@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2510,
- "updatedAt": "2026-09-26 16:09",
+ "version": 2511,
+ "updatedAt": "2026-09-26 16:30",
  "days": 30,
  "items": [
   {
@@ -54676,29 +54676,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787816342100789"
-  },
-  {
-   "ts": "1787815818.397179",
-   "date": "2026-08-27",
-   "time": "16:30",
-   "store": "SCH 향설관 (탕탕칼제비)",
-   "biz": "4988502390",
-   "pos": "",
-   "content": "SCH 향설관 (컵밥&김밥) >  SCH 향설관 (탕탕칼제비) 메뉴 그대로 복사 요청 주셨습니다. :감사합니다꾸벅:",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [
-    "넵! 천천히 해주셔도 됩니다. 항상 감사합니다. :꾸벅:"
-   ],
-   "rc": 3,
-   "lr": "1787817943.826979",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787815818397179"
   }
  ],
  "ocr": {
