@@ -3,8 +3,8 @@
  * scripts/fetch-menu-requests.js 가 GitHub Actions에서 주기 갱신합니다.
  */
 window.MENU_REQUESTS = {
- "version": 2504,
- "updatedAt": "2026-09-26 14:01",
+ "version": 2505,
+ "updatedAt": "2026-09-26 14:30",
  "days": 30,
  "items": [
   {
@@ -55912,147 +55912,6 @@ window.MENU_REQUESTS = {
    "status": "done",
    "handler": "배선유",
    "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787809380325889"
-  },
-  {
-   "ts": "1787808407.044649",
-   "date": "2026-08-27",
-   "time": "14:26",
-   "store": "엘샤론안양점",
-   "biz": "3757000299",
-   "pos": "토스포스",
-   "content": "메뉴등록",
-   "special": "물건가와 시술가 등록",
-   "drive": [
-    "https://drive.google.com/file/d/1JbOhzN1wQ09IVRF7PwyPEzqL6RYssgWm/view?usp=drivesdk"
-   ],
-   "files": 0,
-   "att": [],
-   "datt": [
-    {
-     "id": "1JbOhzN1wQ09IVRF7PwyPEzqL6RYssgWm",
-     "kind": "menu_board",
-     "menu": [
-      {
-       "category": "생활용품",
-       "name": "원적외선 목드라이기",
-       "price": 150000
-      },
-      {
-       "category": "에센스",
-       "name": "아르간 오일(100ml)",
-       "price": 28000
-      },
-      {
-       "category": "에센스",
-       "name": "모링스 트리트먼트(350ml)",
-       "price": 35000
-      },
-      {
-       "category": "에센스",
-       "name": "헤어팩(영양) 1000ml",
-       "price": 55000
-      },
-      {
-       "category": "염모제",
-       "name": "5호 (블랙) 250ml",
-       "price": 40000
-      },
-      {
-       "category": "염모제",
-       "name": "6호 (자갈) 250ml",
-       "price": 40000
-      },
-      {
-       "category": "염모제",
-       "name": "8호 (밝은갈색) 250ml",
-       "price": 40000
-      },
-      {
-       "category": "염모제",
-       "name": "5호 (블랙) 750ml",
-       "price": 85000
-      },
-      {
-       "category": "염모제",
-       "name": "6호 (자갈) 750ml",
-       "price": 85000
-      },
-      {
-       "category": "염모제",
-       "name": "8호 (밝.갈) 750ml",
-       "price": 85000
-      },
-      {
-       "category": "염모제",
-       "name": "9호 (황.갈) 750ml",
-       "price": 85000
-      },
-      {
-       "category": "헤어샴푸",
-       "name": "탈모방지 천연 샴푸 700ml",
-       "price": 68000
-      },
-      {
-       "category": "헤어샴푸",
-       "name": "약산성 (건성모발용) 1000ml",
-       "price": 45000
-      },
-      {
-       "category": "헤어샴푸",
-       "name": "약산성 (두피 케어,쿨) 1000ml",
-       "price": 45000
-      },
-      {
-       "category": "염색시술",
-       "name": "뿌리 염색(남성)",
-       "price": 20000
-      },
-      {
-       "category": "염색시술",
-       "name": "뿌리 염색(여성)",
-       "price": 23000
-      },
-      {
-       "category": "염색시술",
-       "name": "뿌염 (긴머리)",
-       "price": 25000
-      },
-      {
-       "category": "염색시술",
-       "name": "뿌염 (8주이상)",
-       "price": 30000
-      }
-     ]
-    }
-   ],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787808410.511599",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787808407044649"
-  },
-  {
-   "ts": "1787807882.266179",
-   "date": "2026-08-27",
-   "time": "14:18",
-   "store": "더멀리",
-   "biz": "3976300914",
-   "pos": "토스포스",
-   "content": "안녕이라 그랬어(특별 한정 집 에디션)\t16,800\t4\n빌어먹을, 차가운 심장 (도서전 특별에디션)\t12,000\t2\n아름답고 쓸모없기를 (도서전 특별에디션)\t12,000\t2\n시인선 마스킹테이프\t4,000\t6\n그랬다고 적었다 (동네서점 에디션)\t17,000\t4\n우리가 우리를 우리라고 부를 때\t17,000\t2\n너무 시끄러운 고독(양장본 Hardcover)\t15,000  2\n아무도 미치지 않았다\t\t16,000          2\n이지페이지: 악수도 없이 헤어졌다(큰글자책)16,000  2\n얼어붙은 입\t산지니\t20,000          1\n자화상\t\t15,000                  2\n일인칭 가난(온(on) 시리즈)\t\t14,000  2\n\n 책 추가 부탁드릴게요. \n\n차 종류에 레몬차와 자몽차가 아이스/핫 구분이 안되어 이것도 수정 부탁드립니다! 감사합니다.",
-   "special": "",
-   "drive": [],
-   "files": 0,
-   "att": [],
-   "datt": [],
-   "replies": [],
-   "rc": 1,
-   "lr": "1787807885.515349",
-   "rfx": 3,
-   "status": "done",
-   "handler": "배선유",
-   "link": "https://w1659946222-hxm266180.slack.com/archives/C08740SFT1S/p1787807882266179"
   }
  ],
  "ocr": {
